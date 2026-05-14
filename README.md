@@ -1,8 +1,24 @@
 # workflow-web
 
-Static web layer for publishing Clarvia workflows, checklists, and generated API views.
+**Clarvia helps grieving families navigate the mountain of paperwork after losing a loved one.** This repository powers the public website that makes that guidance accessible, clear, and trustworthy.
 
-This repository contains the public web interface for Clarvia's source-backed bereavement workflow infrastructure.
+🌐 [clarvia.org](https://clarvia.org) · 📋 [Good first issues](https://github.com/clarvia-org/workflow-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) · 📖 [How to contribute](https://github.com/clarvia-org/.github/blob/main/CONTRIBUTING.md)
+
+---
+
+## How to help in under 30 minutes
+
+| Task | Time | Skills needed |
+|---|---|---|
+| [Add ARIA labels for screen readers](https://github.com/clarvia-org/workflow-web/issues/10) | ~30 min | Basic HTML/React |
+| [Add GitHub link to website footer](https://github.com/clarvia-org/workflow-web/issues/11) | ~20 min | Basic React/CSS |
+| [Create a 'Contribute' page](https://github.com/clarvia-org/workflow-web/issues/12) | ~45 min | React/Next.js |
+
+👉 **Browse all [good first issues](https://github.com/clarvia-org/workflow-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)** to find something that fits your skills.
+
+---
+
+Static web layer for publishing Clarvia workflows, checklists, and generated API views.
 
 The web layer should remain thin.
 
