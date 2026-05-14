@@ -1,67 +1,35 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Clarvia",
-    template: "%s | Clarvia"
+  metadataBase: new URL("https://clarvia.org"),
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
-  description:
-    "Open workflow infrastructure for verified, source-backed bereavement administration across Europe.",
-  metadataBase: new URL("https://clarvia.org")
+  openGraph: {
+    siteName: "Clarvia",
+    images: [{ url: "https://clarvia.org/og-image.png", width: 1200, height: 630 }],
+    type: "website",
+  },
 };
 
-const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/methodology", label: "Methodology" },
-  { href: "/coverage", label: "Coverage" },
-  { href: "/workflows/luxembourg", label: "Luxembourg alpha" },
-  { href: "/status", label: "Status" }
-];
-
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-paper text-ink antialiased">
-        <header className="border-b border-line bg-paper">
-          <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-5 md:flex-row md:items-center md:justify-between">
-            <Link href="/" className="text-xl font-semibold tracking-tight">
-              Clarvia
-            </Link>
-
-            <nav aria-label="Main navigation">
-              <ul className="flex flex-wrap gap-4 text-sm text-muted">
-                {navItems.map((item) => (
-                  <li key={item.href}>
-                    <Link href={item.href} className="hover:text-ink">
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-        </header>
-
-        <main>{children}</main>
-
-        <footer className="border-t border-line">
-          <div className="mx-auto grid max-w-6xl gap-4 px-6 py-8 text-sm text-muted md:grid-cols-2">
-            <p>
-              Clarvia provides administrative guidance based on official sources.
-              It is not a substitute for individualized legal advice.
-            </p>
-            <p className="md:text-right">
-              Maintained by CLARVIA ASBL. Source-backed workflow infrastructure
-              for public-interest use.
-            </p>
-          </div>
-        </footer>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer />
+      </head>
+      <body className="min-h-screen text-calm-blue-700 antialiased font-sans flex flex-col" suppressHydrationWarning>
+        {children}
       </body>
     </html>
   );

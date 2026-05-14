@@ -1,30 +1,224 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  color-scheme: light;
+@theme {
+  /* Calm inspired theme */
+  --font-sans: 'Inter', 'system-ui', '-apple-system', sans-serif;
+
+  /* Deep Blues & Navy — text and emphasis */
+  --color-calm-blue-50: #f8fafc;
+  --color-calm-blue-100: #f1f5f9;
+  --color-calm-blue-200: #e2e8f0;
+  --color-calm-blue-300: #cbd5e1;
+  --color-calm-blue-400: #94a3b8;
+  --color-calm-blue-500: #64748b;
+  --color-calm-blue-600: #475569;
+  --color-calm-blue-700: #334155;
+  --color-calm-blue-800: #1e293b;
+  --color-calm-blue-900: #0f172a;
+
+  /* Lilac / Soft Purple */
+  --color-calm-lilac-50: #fbfbfe;
+  --color-calm-lilac-100: #f0f0fa;
+  --color-calm-lilac-200: #e2e1f4;
+  --color-calm-lilac-300: #ccc8ea;
+  --color-calm-lilac-400: #a9a1d8;
+  --color-calm-lilac-500: #887dc3;
+  --color-calm-lilac-600: #7162ae;
+
+  /* Button Colors */
+  --color-btn-blue: #3E73E1;
+  --color-btn-purple: #7162AE;
+
+  --border-radius-pill: 9999px;
+  --border-radius-xl: 1rem;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+/* ── Base ── */
 body {
-  margin: 0;
-  background: #fbfaf7;
-  color: #17211f;
+  font-family: var(--font-sans);
+  font-size: 18px;            /* baseline bump for accessibility */
+  line-height: 1.6;
+  background:
+    linear-gradient(rgba(235, 240, 245, 0.45), rgba(235, 240, 245, 0.25)),
+    url('/sky-bg.jpg') center/cover no-repeat fixed;
+  color: var(--color-calm-blue-800); /* Darkened from 700 for better contrast */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
-a {
-  color: inherit;
+/* Headings — dark navy, like Calm's deep blue headlines */
+h1, h2, h3, h4, h5, h6 {
+  color: #2b3a67;             /* Calm's signature navy */
+  line-height: 1.2;
 }
 
-:focus-visible {
-  outline: 3px solid #2f5f4f;
-  outline-offset: 3px;
+/* ── Primary Button (Calm-style blue pill) ── */
+.btn-primary {
+  background: linear-gradient(135deg, #4479e1, #7c6cbb);
+  color: white;
+  border-radius: var(--border-radius-pill);
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  font-size: 1.125rem;        /* 18px */
+  letter-spacing: 0.01em;
+  box-shadow: 0 4px 14px 0 rgba(113, 98, 174, 0.3);
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(113, 98, 174, 0.45);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(113, 98, 174, 0.3);
+}
+
+/* ── Secondary Button (Outline pill) ── */
+.btn-secondary {
+  background: white;
+  color: var(--color-calm-blue-700);
+  border: 1.5px solid var(--color-calm-blue-200);
+  border-radius: var(--border-radius-pill);
+  transition: all 200ms ease;
+  font-weight: 500;
+  font-size: 1.125rem;        /* 18px */
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-calm-blue-400);
+  background-color: var(--color-calm-blue-50);
+}
+
+/* ── Glass Card ── */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7); /* Slightly more opaque for contrast */
+  backdrop-filter: blur(32px); /* Increased blur */
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 
+    0 10px 40px -10px rgba(31, 38, 135, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9); /* Inner top highlight */
+  border-radius: 1.5rem;
+}
+
+/* ── Smooth transitions (non-layout props only) ── */
+* {
+  transition-property: background-color, border-color, color, opacity, box-shadow, transform;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-calm-blue-200);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-calm-blue-300);
+}
+
+/* ── Status Badges ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--border-radius-pill);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.badge-active {
+  background: rgba(34, 197, 94, 0.12);
+  color: #16a34a;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.badge-build {
+  background: rgba(59, 130, 246, 0.12);
+  color: #2563eb;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+}
+
+.badge-planned {
+  background: rgba(148, 163, 184, 0.12);
+  color: #64748b;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+/* ── Expansion Card ── */
+.expansion-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.expansion-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(135deg, #4479e1, #7c6cbb);
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+/* ── Donation Card ── */
+.donation-iban {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  border: 1.5px dashed var(--color-calm-blue-200);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--color-calm-blue-700);
+}
+
+/* ── Reference Superscript ── */
+.ref-sup {
+  font-size: 0.65em;
+  vertical-align: super;
+  color: var(--color-calm-lilac-500);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ref-sup:hover {
+  color: var(--color-calm-lilac-600);
+  text-decoration: underline;
+}
+
+/* ── Governance check list ── */
+.governance-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.governance-check {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.12);
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-top: 0.15rem;
 }

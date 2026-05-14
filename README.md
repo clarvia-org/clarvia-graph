@@ -62,17 +62,14 @@ If a web page needs administrative content, first check whether that content bel
 
 ## Current status
 
-This repository is in early setup.
+This repository powers the live website at [clarvia.org](https://clarvia.org).
 
-Initial priorities:
+Current pages:
 
-- basic static site structure,
-- Luxembourg alpha checklist page,
-- methodology page,
-- visible source citations,
-- last-verified dates,
-- correction links,
-- and accessibility baseline.
+- Trilingual landing page (English, French, German),
+- Language-aware root redirect,
+- Dynamic sitemap with hreflang alternates,
+- Turnstile-protected feedback, subscribe, and contact forms.
 
 ---
 
@@ -88,12 +85,6 @@ Run locally:
 
 ```bash
 npm run dev
-```
-
-Check types:
-
-```bash
-npm run typecheck
 ```
 
 Lint:
