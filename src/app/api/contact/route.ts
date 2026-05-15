@@ -39,9 +39,17 @@ export async function POST(req: NextRequest) {
       if (!ok) return NextResponse.json({ error: "Bot check failed" }, { status: 403 });
     }
 
+    interface ContactEntry {
+      name: string;
+      email: string;
+      subject: string;
+      message: string;
+      date: string;
+    }
+
     await fs.mkdir(DATA_DIR, { recursive: true });
 
-    let entries: any[] = [];
+    let entries: ContactEntry[] = [];
     try {
       const raw = await fs.readFile(CONTACT_FILE, "utf-8");
       entries = JSON.parse(raw);
@@ -58,7 +66,7 @@ export async function POST(req: NextRequest) {
     await fs.writeFile(CONTACT_FILE, JSON.stringify(entries, null, 2));
 
     return NextResponse.json({ ok: true });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Contact error:", err);
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }

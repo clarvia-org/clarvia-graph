@@ -54,7 +54,7 @@ export async function POST(req: NextRequest) {
     await fs.writeFile(SUBS_FILE, JSON.stringify(subscribers, null, 2));
 
     return NextResponse.json({ ok: true });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error("Subscribe error:", err);
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }

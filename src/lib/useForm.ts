@@ -20,8 +20,8 @@ export function useForm() {
         throw new Error(r.error || "Something went wrong");
       }
       setStatus("sent");
-    } catch (err: any) {
-      setErrorMsg(err.message);
+    } catch (err: unknown) {
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong");
       setStatus("error");
     }
   }, []);

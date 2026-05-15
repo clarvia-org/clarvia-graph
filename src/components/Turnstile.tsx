@@ -11,7 +11,7 @@ export default function Turnstile({ onVerify }: { onVerify: (token: string) => v
   useEffect(() => {
     const render = () => {
       if (!containerRef.current || widgetId.current !== undefined) return;
-      const w = (window as any).turnstile;
+      const w = window.turnstile;
       if (!w) return;
       widgetId.current = w.render(containerRef.current, {
         sitekey: TURNSTILE_SITE_KEY,
@@ -22,11 +22,11 @@ export default function Turnstile({ onVerify }: { onVerify: (token: string) => v
       });
     };
 
-    if ((window as any).turnstile) {
+    if (window.turnstile) {
       render();
     } else {
       const check = setInterval(() => {
-        if ((window as any).turnstile) { render(); clearInterval(check); }
+        if (window.turnstile) { render(); clearInterval(check); }
       }, 200);
       return () => clearInterval(check);
     }
@@ -35,7 +35,7 @@ export default function Turnstile({ onVerify }: { onVerify: (token: string) => v
   useEffect(() => {
     return () => {
       if (widgetId.current !== undefined) {
-        (window as any).turnstile?.remove(widgetId.current);
+        window.turnstile?.remove(widgetId.current);
         widgetId.current = undefined;
       }
     };
