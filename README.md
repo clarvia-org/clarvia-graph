@@ -34,6 +34,8 @@ It does not provide individualized legal advice.
 
 The website exists to make workflow data understandable, accessible, and trustworthy for public use.
 
+The first public service is being built and validated for Luxembourg. The website should present that first service clearly while keeping the architecture ready for multilingual, cross-border, and future European workflow outputs.
+
 ---
 
 ## Responsibilities of this repository
@@ -46,6 +48,7 @@ This repository is responsible for:
 - presenting workflow status clearly,
 - supporting accessibility,
 - generating lightweight public API views where appropriate,
+- presenting future heritage-folder pages clearly and safely,
 - and making correction paths visible.
 
 ---
@@ -62,7 +65,8 @@ This repository should not contain:
 - unpublished reviewer notes,
 - grant documents,
 - partner correspondence,
-- or operationally sensitive material.
+- or operationally sensitive material,
+- storing heritage-folder personal content.
 
 ---
 
