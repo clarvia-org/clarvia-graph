@@ -19,7 +19,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
             <h4 className="text-sm font-semibold text-calm-blue-700 mb-3">
               {l(lang, "Links", "Liens", "Links")}
             </h4>
-            <nav className="flex flex-col gap-2">
+            <nav className="flex flex-col gap-2" aria-label={l(lang, "Footer navigation", "Navigation du pied de page", "Fußzeilennavigation")} >
               {[
                 { label: l(lang, "Home", "Accueil", "Startseite"), href: `/${lang}` },
                 { label: l(lang, "Share your experience", "Partager votre expérience", "Erfahrung teilen"), href: "#experience" },

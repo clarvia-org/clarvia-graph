@@ -62,24 +62,24 @@ export default function FormsSection({ lang }: { lang: Lang }) {
               className="space-y-4"
             >
               <div>
-                <label className="block text-sm font-semibold text-calm-blue-800 mb-1.5">
+                <label htmlFor="fb-hardest"  className="block text-sm font-semibold text-calm-blue-800 mb-1.5">
                   {l(lang, "What was the most difficult part?", "Quelle a été la partie la plus difficile ?", "Was war der schwierigste Teil?")}
                 </label>
-                <textarea rows={3} value={fbHardest} onChange={(e) => setFbHardest(e.target.value)}
+                <textarea rows={3} id="fb-hardest" value={fbHardest} onChange={(e) => setFbHardest(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl border border-calm-blue-200 bg-white text-base text-calm-blue-800 placeholder:text-calm-blue-400 focus:outline-none focus:ring-2 focus:ring-calm-lilac-400 focus:border-transparent resize-none" />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-calm-blue-800 mb-1.5">
+                <label htmlFor="fb-wish"  className="block text-sm font-semibold text-calm-blue-800 mb-1.5">
                   {l(lang, "What would have helped most?", "Qu'est-ce qui vous aurait le plus aidé ?", "Was hätte Ihnen am meisten geholfen?")}
                 </label>
-                <textarea rows={3} value={fbWish} onChange={(e) => setFbWish(e.target.value)}
+                <textarea rows={3} id="fb-wish" value={fbWish} onChange={(e) => setFbWish(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl border border-calm-blue-200 bg-white text-base text-calm-blue-800 placeholder:text-calm-blue-400 focus:outline-none focus:ring-2 focus:ring-calm-lilac-400 focus:border-transparent resize-none" />
               </div>
               <div>
-                <label className="block text-sm font-semibold text-calm-blue-800 mb-1.5">
+                <label htmlFor="fb-email"  className="block text-sm font-semibold text-calm-blue-800 mb-1.5">
                   {l(lang, "Email (optional)", "Adresse e-mail (facultatif)", "E-Mail (optional)")}
                 </label>
-                <input type="email" value={fbEmail} onChange={(e) => setFbEmail(e.target.value)}
+                <input type="email" id="fb-email" value={fbEmail} onChange={(e) => setFbEmail(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl border border-calm-blue-200 bg-white text-base text-calm-blue-800 placeholder:text-calm-blue-400 focus:outline-none focus:ring-2 focus:ring-calm-lilac-400 focus:border-transparent" />
               </div>
               <Turnstile onVerify={setFeedbackToken} />
@@ -150,16 +150,16 @@ export default function FormsSection({ lang }: { lang: Lang }) {
               }}
               className="space-y-3"
             >
-              <input type="text" value={ctName} onChange={(e) => setCtName(e.target.value)} required
+              <input aria-label={l(lang, "Your name", "Votre nom", "Ihr Name")} type="text" value={ctName} onChange={(e) => setCtName(e.target.value)} required
                 placeholder={l(lang, "Your name", "Votre nom", "Ihr Name")}
                 className="w-full px-4 py-3 rounded-xl border border-calm-blue-200 bg-white text-base text-calm-blue-800 placeholder:text-calm-blue-400 focus:outline-none focus:ring-2 focus:ring-calm-lilac-400 focus:border-transparent" />
-              <input type="email" value={ctEmail} onChange={(e) => setCtEmail(e.target.value)} required
+              <input aria-label={l(lang, "Your email", "Votre email", "Ihre E-Mail")} type="email" value={ctEmail} onChange={(e) => setCtEmail(e.target.value)} required
                 placeholder={l(lang, "Your email", "Votre email", "Ihre E-Mail")}
                 className="w-full px-4 py-3 rounded-xl border border-calm-blue-200 bg-white text-base text-calm-blue-800 placeholder:text-calm-blue-400 focus:outline-none focus:ring-2 focus:ring-calm-lilac-400 focus:border-transparent" />
-              <input type="text" value={ctSubject} onChange={(e) => setCtSubject(e.target.value)}
+              <input aria-label={l(lang, "Subject", "Objet", "Betreff")} type="text" value={ctSubject} onChange={(e) => setCtSubject(e.target.value)}
                 placeholder={l(lang, "Subject (optional)", "Objet (facultatif)", "Betreff (optional)")}
                 className="w-full px-4 py-3 rounded-xl border border-calm-blue-200 bg-white text-base text-calm-blue-800 placeholder:text-calm-blue-400 focus:outline-none focus:ring-2 focus:ring-calm-lilac-400 focus:border-transparent" />
-              <textarea rows={3} value={ctMessage} onChange={(e) => setCtMessage(e.target.value)} required
+              <textarea aria-label={l(lang, "Your message", "Votre message", "Ihre Nachricht")} rows={3} value={ctMessage} onChange={(e) => setCtMessage(e.target.value)} required
                 placeholder={l(lang, "Your message", "Votre message", "Ihre Nachricht")}
                 className="w-full px-4 py-3 rounded-xl border border-calm-blue-200 bg-white text-base text-calm-blue-800 placeholder:text-calm-blue-400 focus:outline-none focus:ring-2 focus:ring-calm-lilac-400 focus:border-transparent resize-none" />
               <Turnstile onVerify={setContactToken} />

@@ -23,7 +23,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
         </a>
       </div>
       <div className="inline-flex items-center gap-2 px-4 py-2 mt-2 rounded-full bg-calm-blue-100/50 border border-calm-blue-200/50 text-xs text-calm-blue-500 max-w-xl mx-auto leading-relaxed">
-        <span className="w-2 h-2 rounded-full bg-calm-blue-400"></span>
+        <span aria-hidden="true" className="w-2 h-2 rounded-full bg-calm-blue-400"></span>
         {l(lang,
           "Clarvia is in its build and validation phase. We are not yet publicly launched as a full service.",
           "Clarvia est actuellement en phase de construction et de validation. Le service complet n'est pas encore ouvert au public.",

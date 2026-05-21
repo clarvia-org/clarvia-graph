@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { type Lang, LANGUAGES } from "@/lib/i18n";
+import { type Lang, l,LANGUAGES } from "@/lib/i18n";
 
 import HeroSection from "./sections/HeroSection";
 import ProblemSection from "./sections/ProblemSection";
@@ -25,15 +25,17 @@ export default function LandingPage() {
   return (
     <>
       {/* ═══ Header ═══ */}
-      <header className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative">
-        <Link href={`/${lang}`} className="block">
+      <header aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf")} className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative">
+        <Link href={`/${lang}`} aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite")} className="block">
           <img src="/clarvia-logo.png" alt="Clarvia" className="h-20 w-auto" />
         </Link>
-        <div className="flex items-center gap-2">
-          {LANGUAGES.map((code) => (
+          <nav aria-label={l(lang, "Language switcher", "Sélecteur de langue", "Sprachauswahl")} className="flex items-center gap-2">
+            {LANGUAGES.map((code) => (
             <Link
               key={code}
               href={`/${code}`}
+              aria-label={l(lang, `Switch to ${code.toUpperCase()}`, `Passer en ${code.toUpperCase()}`, `Zu ${code.toUpperCase()} wechseln`)}
+              aria-current={lang === code ? "page" : undefined}
               className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
                 lang === code
                   ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
@@ -43,7 +45,7 @@ export default function LandingPage() {
               {code.toUpperCase()}
             </Link>
           ))}
-        </div>
+        </nav>
       </header>
 
       <main className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
