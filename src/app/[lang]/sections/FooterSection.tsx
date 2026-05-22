@@ -67,6 +67,13 @@ export default function FooterSection({ lang }: { lang: Lang }) {
               "Clarvia ist kein Notfalldienst. Bei unmittelbarer Gefahr für Leben oder Sicherheit rufen Sie 112 in Luxemburg an."
             )}
           </p>
+          <p>
+            {l(lang,
+              "Clarvia is currently built for Luxembourg and planned European jurisdictions. It is not offered in the United States.",
+              "Clarvia est actuellement conçu pour le Luxembourg et des juridictions européennes à venir. Il n'est pas proposé aux États-Unis.",
+              "Clarvia ist derzeit für Luxemburg und geplante europäische Rechtsordnungen entwickelt. Es wird nicht in den Vereinigten Staaten angeboten."
+            )}
+          </p>
         </div>
 
         <div className="text-center text-xs text-calm-blue-500 pt-6 mt-6 border-t border-calm-blue-200/50 space-y-1">
