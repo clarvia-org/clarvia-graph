@@ -72,31 +72,32 @@ export default async function LangLayout({
         }}
       />
       <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Clarvia ASBL",
-      "url": "https://clarvia.org",
-      "logo": "https://clarvia.org/clarvia-logo.png",
-      "description": "Clarvia helps bereaved families navigate administrative processes across Europe.",
-      "foundingDate": "2025",
-      "foundingLocation": {
-        "@type": "Place",
-        "name": "Luxembourg"
-      },
-      "nonprofitStatus": "NonprofitASBL",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Luxembourg"
-      },
-      "sameAs": [
-        "https://github.com/clarvia-org"
-      ]
-    })
-  }}
-/>
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Clarvia ASBL",
+            "url": "https://clarvia.org",
+            "logo": "https://clarvia.org/clarvia-logo.png",
+            "description": "Clarvia helps bereaved families navigate administrative processes across Europe.",
+            "foundingDate": "2025",
+            "foundingLocation": {
+              "@type": "Place",
+              "name": "Luxembourg"
+            },
+            "nonprofitStatus": "NonprofitASBL",
+            "areaServed": {
+              "@type": "Place",
+              "name": "Luxembourg"
+            },
+            "sameAs": [
+              "https://github.com/clarvia-org",
+              "https://clarvia.eu"
+            ]
+          })
+        }}
+      />
       {LANGUAGES.map((l) => (
         <link
           key={l}
