@@ -1,0 +1,30 @@
+# CODEOWNERS - workflow-web
+# These owners are automatically requested for review on PRs
+# that modify the matching paths.
+
+# Core layout and routing
+/src/app/layout.tsx         @TommiLindfors
+/src/app/[lang]/layout.tsx  @TommiLindfors
+/src/app/[lang]/data.ts     @TommiLindfors
+/src/app/page.tsx           @TommiLindfors
+
+# API routes handle form submissions and external services
+/src/app/api/               @TommiLindfors
+
+# Shared libraries (i18n, hooks, types)
+/src/lib/                   @TommiLindfors
+/src/types/                 @TommiLindfors
+
+# Translation data
+/data/                      @TommiLindfors
+
+# Configuration files
+/next.config.ts             @TommiLindfors
+/package.json               @TommiLindfors
+/tsconfig.json              @TommiLindfors
+/eslint.config.mjs          @TommiLindfors
+
+# CI/CD and governance
+/.github/                   @TommiLindfors
+/GOVERNANCE.md              @TommiLindfors
+/SECURITY.md                @TommiLindfors
