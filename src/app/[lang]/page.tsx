@@ -17,6 +17,7 @@ import StageSection from "./sections/StageSection";
 import TrustSection from "./sections/TrustSection";
 import FormsSection from "./sections/FormsSection";
 import FooterSection from "./sections/FooterSection";
+import LatestUpdatesSection from "./sections/LatestUpdatesSection";
 
 export default function LandingPage() {
   const params = useParams();
@@ -61,6 +62,7 @@ export default function LandingPage() {
         <StageSection lang={lang} />
         <TrustSection lang={lang} />
         <FormsSection lang={lang} />
+        <LatestUpdatesSection lang={lang} />
       </main>
 
       <FooterSection lang={lang} />
