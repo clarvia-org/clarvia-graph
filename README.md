@@ -1,6 +1,6 @@
 # workflow-web
 
-**Clarvia helps grieving families navigate the mountain of paperwork after losing a loved one.** This repository powers the public website that makes that guidance accessible, clear, and trustworthy.
+**A thin web layer for Clarvia's open bereavement workflow infrastructure.** This repository renders workflow data from [clarvia-org/workflow-data](https://github.com/clarvia-org/workflow-data) as a free, multilingual public service. It is designed as a reference consumer - the data layer is the primary artifact.
 
 🌐 [clarvia.org](https://clarvia.org) · 📋 [Good first issues](https://github.com/clarvia-org/workflow-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) · 📖 [How to contribute](https://github.com/clarvia-org/.github/blob/main/CONTRIBUTING.md)
 

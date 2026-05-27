@@ -7,7 +7,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   en: {
     title: "Clarvia — Guiding families through what comes next",
     description:
-      "A free, multilingual guide to every administrative step after a loss in Luxembourg. Clear guidance, clear priorities. No family left to figure it out alone.",
+      "Open workflow infrastructure for bereavement administration in Luxembourg and across Europe. Free, multilingual, source-backed guidance to help families navigate every administrative step after a loss.",
   },
   fr: {
     title: "Clarvia — Accompagner les familles dans ce qui suit",

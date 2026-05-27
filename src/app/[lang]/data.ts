@@ -1,4 +1,4 @@
-/* ─── Shared constants for the grant-ready landing page ─── */
+/* ─── Shared constants for the landing page ─── */
 
 export const headlineStyle = {
   fontFamily: "'Playfair Display', Georgia, serif",
@@ -204,7 +204,7 @@ export const NEXT_PHASE = [
   { en: "prepare multilingual content", fr: "préparer le contenu multilingue", de: "mehrsprachige Inhalte vorbereiten" },
   { en: "test the service with users and community partners", fr: "tester le service avec des utilisateurs et des partenaires communautaires", de: "den Dienst mit Nutzern und Partnern testen" },
   { en: "improve accessibility and plain-language guidance", fr: "améliorer l'accessibilité et la rédaction en langage clair", de: "Barrierefreiheit und Verständlichkeit verbessern" },
-  { en: "prepare for a controlled public launch in Luxembourg", fr: "préparer un lancement public contrôlé au Luxembourg", de: "einen kontrollierten öffentlichen Start in Luxemburg vorbereiten" },
+  { en: "prepare for initial public availability in Luxembourg", fr: "préparer la mise à disposition initiale au Luxembourg", de: "die erste öffentliche Bereitstellung in Luxemburg vorbereiten" },
 ];
 
 /* ── Principles ── */
