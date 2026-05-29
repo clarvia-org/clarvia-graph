@@ -105,6 +105,19 @@ export const UPDATES: Update[] = [
   {
     date: "2026-05-07",
     headline: {
+      en: "TSC Real Estate Endorses Clarvia's Mission with Strong Support Letter",
+      fr: "TSC Real Estate soutient la mission de Clarvia avec une lettre de recommandation",
+      de: "TSC Real Estate unterstützt Clarvias Mission mit starkem Empfehlungsschreiben",
+    },
+    body: {
+      en: "Prior to our official registration, TSC Real Estate provided a strong letter of support endorsing Clarvia's mission. As a leading healthcare real estate manager operating across Europe, TSC Real Estate highlighted the public-interest value of our open, source-backed administrative workflow infrastructure. We are incredibly grateful for their early trust and support, which helped validate our plans during the foundation process.",
+      fr: "En amont de notre constitution officielle, TSC Real Estate a fourni une solide lettre de soutien approuvant la mission de Clarvia. En tant que gestionnaire d'actifs immobiliers de santé de premier plan en Europe, TSC Real Estate a souligné la valeur d'intérêt public de notre infrastructure de workflows administratifs ouverts et fondés sur des sources. Nous sommes profondément reconnaissants de leur confiance et de leur soutien précoces, qui ont contribué à valider nos plans durant le processus de fondation.",
+      de: "Noch vor unserer offiziellen Vereinsgründung hat TSC Real Estate ein starkes Unterstützungsschreiben vorgelegt, das Clarvias Mission bekräftigt. Als führender Manager von Gesundheitsimmobilien in Europa hob TSC Real Estate den gemeinnützigen Wert unserer offenen, quellenbasierten Infrastruktur für administrative Workflows hervor. Wir sind unglaublich dankbar für dieses frühe Vertrauen und die Unterstützung, die unsere Pläne während des Gründungsprozesses bestätigt haben.",
+    },
+  },
+  {
+    date: "2026-05-07",
+    headline: {
       en: "Clarvia ASBL Founded in Luxembourg",
       fr: "Clarvia ASBL fondée au Luxembourg",
       de: "Clarvia ASBL in Luxemburg gegründet",
