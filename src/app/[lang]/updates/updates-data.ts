@@ -10,6 +10,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-05-29",
+    headline: {
+      en: "Clarvia Submits Proposal for Reusable Workflow Commons Infrastructure",
+      fr: "Clarvia soumet une proposition pour l'infrastructure des Workflows Communs réutilisables",
+      de: "Clarvia reicht Vorschlag für wiederverwendbare Workflow-Commons-Infrastruktur ein",
+    },
+    body: {
+      en: "Clarvia has submitted a grant proposal to fund the development of our core open-source workflow infrastructure. This project focuses on building the underlying schema design, provenance machinery, validation tooling, and machine-readable export formats that will make up the Clarvia Workflow Commons. By standardizing how administrative procedures are modelled, versioned, and validated, we aim to create a reusable technical foundation that can be adopted across multiple European jurisdictions. We will share further updates once the proposal has been evaluated.",
+      fr: "Clarvia a soumis une demande de subvention pour financer le développement de son infrastructure open source de workflows. Ce projet se concentre sur la création de la structure des schémas sous-jacents, du mécanisme de provenance, des outils de validation et des formats d'exportation lisibles par machine qui constitueront les Workflows Communs de Clarvia. En standardisant la manière dont les démarches administratives sont modélisées, versionnées et validées, notre objectif est de créer une base technique réutilisable pouvant être adoptée dans plusieurs juridictions européennes. Nous partagerons de nouvelles informations dès que la proposition aura été évaluée.",
+      de: "Clarvia hat einen Förderantrag eingereicht, um die Entwicklung unserer Open-Source-Workflow-Infrastruktur zu finanzieren. Dieses Projekt konzentriert sich auf den Aufbau des zugrunde liegenden Schema-Designs, des Herkunfts-Nachweis-Systems, der Validierungswerkzeuge und maschinenlesbarer Exportformate, die die Clarvia Workflow Commons bilden werden. Durch die Standardisierung der Art und Weise, wie Verwaltungsverfahren modelliert, versioniert und validiert werden, wollen wir eine wiederverwendbare technische Grundlage schaffen, die in verschiedenen europäischen Ländern eingesetzt werden kann. Wir werden weitere Updates teilen, sobald der Antrag geprüft wurde.",
+    },
+  },
+  {
     date: "2026-05-25",
     headline: {
       en: "Clarvia Welcomes Its First Core Open-Source Contributor",
