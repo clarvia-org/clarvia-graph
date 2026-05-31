@@ -1,4 +1,71 @@
+# Clarvia robots.txt
+# Clarvia is a Luxembourgish non-profit building open public-interest workflow infrastructure.
+# Public pages, public documentation, and public project context may be crawled.
+# Do not crawl form submissions, admin paths, private paths, or operational endpoints.
+
+Sitemap: https://clarvia.org/sitemap.xml
+
+# AI / LLM discovery files
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai-crawler-policy.txt
+
+# OpenAI: allow search and model-understanding crawlers for public-good project discovery.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Google search and AI controls
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft / Bing
+User-agent: Bingbot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl and other research crawlers
+User-agent: CCBot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# General policy
 User-agent: *
 Allow: /
 
-Sitemap: https://clarvia.org/sitemap.xml
+# Do not crawl operational, private, or submission endpoints.
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /internal/
+Disallow: /_next/
+Disallow: /cdn-cgi/
+Disallow: /forms/
+Disallow: /submit/
+Disallow: /contact/submit
+Disallow: /share-your-experience/submit
+Disallow: /*?token=
+Disallow: /*?email=
+Disallow: /*?preview=
+Disallow: /*?draft=

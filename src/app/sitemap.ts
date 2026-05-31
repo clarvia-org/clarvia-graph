@@ -21,5 +21,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
+  // Subpages: /about, /updates, /contribute
+  const subpages = ["about", "updates", "contribute"];
+  for (const page of subpages) {
+    for (const lang of LANGUAGES) {
+      entries.push({
+        url: `${BASE_URL}/${lang}/${page}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            LANGUAGES.map((l) => [l, `${BASE_URL}/${l}/${page}`])
+          ),
+        },
+      });
+    }
+  }
+
+  // AI and agent context files
+  entries.push({
+    url: `${BASE_URL}/llms.txt`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.3,
+  });
+  entries.push({
+    url: `${BASE_URL}/llms-full.txt`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.3,
+  });
+  entries.push({
+    url: `${BASE_URL}/ai-crawler-policy.txt`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.2,
+  });
+
   return entries;
 }

@@ -50,6 +50,14 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 github.com/clarvia-org
                 <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
               </a>
+              <p className="text-xs text-calm-blue-400 mt-2">
+                {l(lang, "AI and agent context", "Contexte pour IA et agents", "KI- und Agentenkontext")}:{" "}
+                <a href="/llms.txt" className="hover:text-calm-blue-600 transition-colors">/llms.txt</a>
+                {" · "}
+                <a href="/llms-full.txt" className="hover:text-calm-blue-600 transition-colors">/llms-full.txt</a>
+                {" · "}
+                <a href="/ai-crawler-policy.txt" className="hover:text-calm-blue-600 transition-colors">/ai-crawler-policy.txt</a>
+              </p>
             </div>
           </div>
         </div>

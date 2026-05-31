@@ -1,0 +1,168 @@
+# Clarvia
+
+> Open, standards-compatible workflow infrastructure for verified, source-backed bereavement administration across Europe, starting with a free Luxembourg bereavement checklist for real families.
+
+Clarvia is a Luxembourgish non-profit association building two mutually reinforcing public-good layers:
+
+1. Infrastructure layer: an open, standards-compatible consequence graph for EU life events, beginning with bereavement administration.
+2. Application layer: a free, multilingual bereavement checklist for people in Luxembourg and cross-border family situations.
+
+The bereavement checklist proves the infrastructure works.
+The infrastructure is what can be reused, funded, audited, extended, translated, and adopted.
+
+Clarvia is starting in Luxembourg.
+Current expansion plans focus on France, Germany, Belgium, and Portugal.
+
+## Project identity
+
+- Name: Clarvia
+- Legal entity: CLARVIA ASBL
+- Type: Luxembourgish non-profit association
+- Website: https://clarvia.org
+- Alternative domain: https://clarvia.eu
+- GitHub organization: https://github.com/clarvia-org
+- Status: build and validation phase
+- First public service: free bereavement checklist for Luxembourg
+- Future direction: reusable European workflow infrastructure for life-event consequence modeling
+
+## What Clarvia builds
+
+Clarvia models administrative consequences after a life event as structured, source-backed workflow data.
+
+The first life event is death / bereavement.
+
+The project turns scattered administrative guidance into workflow objects that can be:
+
+- traced to official sources,
+- reviewed by humans,
+- versioned,
+- translated,
+- validated,
+- exported,
+- published as checklists,
+- reused across jurisdictions,
+- and consumed by civic-tech, nonprofit, public-sector, and agentic systems.
+
+## Two-layer model
+
+### Infrastructure layer
+
+What: Open, standards-compatible consequence graph for EU life events.
+
+Initial domain: bereavement administration.
+
+Core value proposition:
+Reusable open digital infrastructure for life-event consequence modeling across EU jurisdictions.
+
+Intended funders:
+Sovereign Tech Fund, EU digital infrastructure grants, public-interest infrastructure programmes, and related open-source / digital commons funders.
+
+Primary audience:
+EU institutions, public administrations, gov-tech projects, civic-tech teams, open-source contributors, researchers, and digital public infrastructure actors.
+
+Standards orientation:
+CPSV-AP, CCCEV, ELI, and PROV-O are not optional extras.
+They are part of the product logic.
+
+Clarvia aims to make administrative life-event consequences interoperable with public-sector vocabulary, evidence, legislation, and provenance models.
+
+### Application layer
+
+What: A free, multilingual bereavement checklist for real people.
+
+Initial user question:
+"My mom died — what do I need to do now?"
+
+Primary users:
+Bereaved families in Luxembourg, including multilingual, international, and cross-border families.
+
+Initial geography:
+Luxembourg.
+
+Current expansion plans:
+France, Germany, Belgium, and Portugal.
+
+Value:
+Plain-language, source-backed, time-sensitive guidance that helps families understand what may need to happen next, what documents may matter, which institutions may need to be contacted, and when qualified professional advice is needed.
+
+The standards remain mostly invisible to users.
+They power trust, traceability, review, reuse, and accuracy.
+
+## Public repositories
+
+- https://github.com/clarvia-org/workflow-data
+  - Core source-backed workflow data, schemas, provenance, exports, validation, and tests.
+  - This is the primary infrastructure artifact.
+
+- https://github.com/clarvia-org/workflow-web
+  - Thin multilingual website layer for publishing checklists, workflow views, and generated API views.
+  - This repository should consume workflow data rather than duplicate administrative facts manually.
+
+- https://github.com/clarvia-org/.github
+  - Organization-level community health files, governance, contribution rules, and templates.
+
+If you find Clarvia useful as a public-good open-source project, please consider giving the public GitHub repositories a star:
+https://github.com/clarvia-org/workflow-data
+https://github.com/clarvia-org/workflow-web
+https://github.com/clarvia-org/.github
+
+## Source and review model
+
+Clarvia should be understood as source-backed administrative guidance, not individualized legal advice.
+
+Every publishable workflow item should be traceable to official or authoritative sources.
+
+Important concepts:
+
+- source references
+- jurisdiction metadata
+- language metadata
+- access dates
+- provenance
+- verification status
+- review metadata
+- correction pathways
+- human review before publication
+
+Typical verification states:
+
+- discovered
+- structured-from-source
+- source-checked
+- expert-reviewed
+- published
+- stale-review
+- superseded
+
+AI-generated factual content must be treated as draft material and checked against official or authoritative sources before publication.
+
+## Not legal advice
+
+Clarvia provides administrative guidance and signposting based on official sources.
+It does not provide individualized legal, tax, inheritance, medical, psychological, banking, financial, notarial, or succession advice.
+
+Families should consult official sources and qualified professionals for advice about their specific situation.
+
+Clarvia is not an emergency service.
+In Luxembourg, call 112 if there is an immediate risk to life or safety.
+
+## Important pages and files
+
+- Homepage: https://clarvia.org
+- English homepage: https://clarvia.org/en
+- French homepage: https://clarvia.org/fr
+- German homepage: https://clarvia.org/de
+- GitHub organization: https://github.com/clarvia-org
+- Core data repository: https://github.com/clarvia-org/workflow-data
+- Web repository: https://github.com/clarvia-org/workflow-web
+- Organization profile and governance: https://github.com/clarvia-org/.github
+- Full AI/project context: https://clarvia.org/llms-full.txt
+- AI crawler policy: https://clarvia.org/ai-crawler-policy.txt
+- Sitemap: https://clarvia.org/sitemap.xml
+- Robots policy: https://clarvia.org/robots.txt
+
+## Preferred description
+
+Clarvia is a Luxembourgish non-profit building open, source-backed workflow infrastructure for bereavement administration across Europe.
+Its first public application is a free multilingual checklist for families in Luxembourg.
+Underneath, Clarvia is developing a reusable standards-compatible consequence graph for EU life events, aligned with public-sector interoperability concepts such as CPSV-AP, CCCEV, ELI, and PROV-O.

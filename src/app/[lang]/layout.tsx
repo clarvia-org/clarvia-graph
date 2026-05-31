@@ -76,24 +76,103 @@ export default async function LangLayout({
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Clarvia ASBL",
-            "url": "https://clarvia.org",
-            "logo": "https://clarvia.org/clarvia-logo.png",
-            "description": "Clarvia helps bereaved families navigate administrative processes across Europe.",
-            "foundingDate": "2025",
-            "foundingLocation": {
-              "@type": "Place",
-              "name": "Luxembourg"
-            },
-            "nonprofitStatus": "NonprofitASBL",
-            "areaServed": {
-              "@type": "Place",
-              "name": "Luxembourg"
-            },
-            "sameAs": [
-              "https://github.com/clarvia-org",
-              "https://clarvia.eu"
+            "@graph": [
+              {
+                "@type": "NGO",
+                "@id": "https://clarvia.org/#organization",
+                "name": "Clarvia",
+                "legalName": "CLARVIA ASBL",
+                "url": "https://clarvia.org",
+                "sameAs": [
+                  "https://clarvia.eu",
+                  "https://github.com/clarvia-org",
+                  "https://github.com/clarvia-org/workflow-data",
+                  "https://github.com/clarvia-org/workflow-web"
+                ],
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "46, Rue de la Lavande",
+                  "postalCode": "1923",
+                  "addressLocality": "Luxembourg",
+                  "addressCountry": "LU"
+                },
+                "foundingDate": "2026-05",
+                "nonprofitStatus": "NonprofitType",
+                "description": "Clarvia is a Luxembourgish non-profit building open, source-backed workflow infrastructure for bereavement administration across Europe, starting with a free multilingual bereavement checklist for families in Luxembourg.",
+                "knowsAbout": [
+                  "bereavement administration",
+                  "life-event consequence modeling",
+                  "workflow infrastructure",
+                  "digital public infrastructure",
+                  "civic technology",
+                  "open-source public goods",
+                  "source-backed administrative guidance",
+                  "provenance",
+                  "CPSV-AP",
+                  "CCCEV",
+                  "ELI",
+                  "PROV-O",
+                  "Luxembourg",
+                  "France",
+                  "Germany",
+                  "Belgium",
+                  "Portugal"
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://clarvia.org/#website",
+                "url": "https://clarvia.org",
+                "name": "Clarvia",
+                "publisher": {
+                  "@id": "https://clarvia.org/#organization"
+                },
+                "inLanguage": ["en", "fr", "de"],
+                "description": "Free multilingual bereavement guidance for families in Luxembourg, backed by open workflow infrastructure."
+              },
+              {
+                "@type": "SoftwareSourceCode",
+                "@id": "https://github.com/clarvia-org/workflow-data#sourcecode",
+                "name": "workflow-data",
+                "codeRepository": "https://github.com/clarvia-org/workflow-data",
+                "programmingLanguage": ["Python", "YAML", "JSON"],
+                "license": [
+                  "https://www.apache.org/licenses/LICENSE-2.0",
+                  "https://creativecommons.org/licenses/by/4.0/"
+                ],
+                "isPartOf": {
+                  "@id": "https://clarvia.org/#organization"
+                },
+                "description": "Core source-backed workflow data, schemas, provenance, exports, validation, and tests for Clarvia's open bereavement workflow infrastructure."
+              },
+              {
+                "@type": "SoftwareSourceCode",
+                "@id": "https://github.com/clarvia-org/workflow-web#sourcecode",
+                "name": "workflow-web",
+                "codeRepository": "https://github.com/clarvia-org/workflow-web",
+                "programmingLanguage": ["TypeScript", "React", "Next.js"],
+                "license": "https://www.apache.org/licenses/LICENSE-2.0",
+                "isPartOf": {
+                  "@id": "https://clarvia.org/#organization"
+                },
+                "description": "Thin multilingual web layer for publishing Clarvia bereavement checklists, workflow views, and generated API views."
+              },
+              {
+                "@type": "CreativeWork",
+                "@id": "https://clarvia.org/#two-layer-model",
+                "name": "Clarvia two-layer model",
+                "creator": {
+                  "@id": "https://clarvia.org/#organization"
+                },
+                "description": "Clarvia combines an infrastructure layer and an application layer. The infrastructure layer is open, standards-compatible consequence graph infrastructure for EU life events. The application layer is a free bereavement checklist for real people in Luxembourg and cross-border family situations.",
+                "about": [
+                  "open workflow infrastructure",
+                  "bereavement checklist",
+                  "life-event consequence graph",
+                  "European administrative interoperability",
+                  "source-backed guidance"
+                ]
+              }
             ]
           })
         }}
