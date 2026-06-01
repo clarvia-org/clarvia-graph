@@ -1,6 +1,6 @@
 # workflow-web
 
-**A thin web layer for Clarvia's open bereavement workflow infrastructure.** This repository renders workflow data from [clarvia-org/workflow-data](https://github.com/clarvia-org/workflow-data) as a free, multilingual public service. It is designed as a reference consumer - the data layer is the primary artifact.
+**A thin web layer for Clarvia's open bereavement workflow infrastructure.** This repository renders workflow data as a free, multilingual public service. It is designed as a reference consumer — the data layer is the primary artifact.
 
 🌐 [clarvia.org](https://clarvia.org) · 📋 [Good first issues](https://github.com/clarvia-org/workflow-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) · 📖 [How to contribute](https://github.com/clarvia-org/.github/blob/main/CONTRIBUTING.md)
 
@@ -72,11 +72,11 @@ This repository should not contain:
 
 ## Data source
 
-Published workflow content should be generated from structured data maintained in:
+Published workflow content should be generated from structured data.
 
-[`clarvia-org/workflow-data`](https://github.com/clarvia-org/workflow-data)
+The data infrastructure is moving to [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph), which will produce static JSON web bundles that this repository consumes at build time. During the transition, [`workflow-data`](https://github.com/clarvia-org/workflow-data) remains the current content source.
 
-If a web page needs administrative content, first check whether that content belongs in `workflow-data`.
+If a web page needs administrative content, first check whether that content belongs in the data layer.
 
 ---
 
@@ -141,3 +141,11 @@ See [CONTRIBUTING.md](https://github.com/clarvia-org/.github/blob/main/CONTRIBUT
 Unless otherwise specified, code and tooling in this repository are licensed under [Apache License 2.0](LICENSE).
 
 Content generated from workflow data may be licensed separately under Creative Commons Attribution 4.0 International.
+
+## Related repositories
+
+| Repository | Role |
+|---|---|
+| [clarvia-graph](https://github.com/clarvia-org/clarvia-graph) | Open consequence graph — schemas, validation, sources, exports |
+| [workflow-data](https://github.com/clarvia-org/workflow-data) | Legacy checklist data and migration source |
+| [.github](https://github.com/clarvia-org/.github) | Organization-wide community health files |
