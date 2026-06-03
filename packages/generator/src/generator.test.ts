@@ -7,7 +7,7 @@ import type { Fact } from "./evaluator.js";
 const ROOT_DIR = resolve(import.meta.dirname!, "..", "..", "..");
 
 describe("generateChecklist", () => {
-  it("generates a checklist for LU core bereavement — all facts present", async () => {
+  it("generates a checklist for LU core bereavement — all facts present", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "LU" },
@@ -15,7 +15,7 @@ describe("generateChecklist", () => {
       { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "LU" },
     ];
 
-    const output = await generateChecklist({
+    const output = generateChecklist({
       graph,
       facts,
       lifeEvent: "bereavement",
@@ -44,7 +44,7 @@ describe("generateChecklist", () => {
     );
   });
 
-  it("handles missing facts — death jurisdiction unknown", async () => {
+  it("handles missing facts — death jurisdiction unknown", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       // No jurisdiction fact provided
@@ -52,7 +52,7 @@ describe("generateChecklist", () => {
       { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "LU" },
     ];
 
-    const output = await generateChecklist({
+    const output = generateChecklist({
       graph,
       facts,
       lifeEvent: "bereavement",
@@ -73,13 +73,13 @@ describe("generateChecklist", () => {
     expect(pensionItem?.status).toBe("applies");
   });
 
-  it("filters out consequences for non-matching life events", async () => {
+  it("filters out consequences for non-matching life events", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "LU" },
     ];
 
-    const output = await generateChecklist({
+    const output = generateChecklist({
       graph,
       facts,
       lifeEvent: "marriage", // no records for this
@@ -88,7 +88,7 @@ describe("generateChecklist", () => {
     expect(output.items.length).toBe(0);
   });
 
-  it("returns does_not_apply when condition is false (death in DE, not LU)", async () => {
+  it("returns does_not_apply when condition is false (death in DE, not LU)", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "DE" },
@@ -96,7 +96,7 @@ describe("generateChecklist", () => {
       { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "DE" },
     ];
 
-    const output = await generateChecklist({
+    const output = generateChecklist({
       graph,
       facts,
       lifeEvent: "bereavement",
@@ -106,14 +106,14 @@ describe("generateChecklist", () => {
     expect(output.items.length).toBe(0);
   });
 
-  it("output has correct structure", async () => {
+  it("output has correct structure", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "LU" },
       { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "LU" },
     ];
 
-    const output = await generateChecklist({
+    const output = generateChecklist({
       graph,
       facts,
       lifeEvent: "bereavement",
@@ -128,15 +128,15 @@ describe("generateChecklist", () => {
     expect(output.sections.length).toBeGreaterThan(0);
   });
 
-  it("produces deterministic item IDs for same consequence+task pair", async () => {
+  it("produces deterministic item IDs for same consequence+task pair", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "LU" },
       { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "LU" },
     ];
 
-    const output1 = await generateChecklist({ graph, facts, lifeEvent: "bereavement" });
-    const output2 = await generateChecklist({ graph, facts, lifeEvent: "bereavement" });
+    const output1 = generateChecklist({ graph, facts, lifeEvent: "bereavement" });
+    const output2 = generateChecklist({ graph, facts, lifeEvent: "bereavement" });
 
     // Item IDs should be deterministic (same inputs → same IDs)
     expect(output1.items.map((i) => i.id)).toEqual(

@@ -1,34 +1,30 @@
 /**
- * Three-valued condition evaluator.
+ * Clarvia native three-valued condition evaluator.
  *
- * Evaluates JsonLogic expressions against intake facts.
- * Returns "true", "false", or "unknown" (when a required fact is missing).
+ * Evaluates a JsonLogic-subset expression against scenario facts.
+ * Returns true, false, or "unknown" — unknown is NEVER collapsed to false.
  *
- * Per spec §6: missing_fact_behavior is always "unknown".
+ * Supported operators (v0.1 alpha):
+ *   var, ==, !=, and, or, !, exists, in, >, >=, <, <=
+ *
+ * Three-valued truth table:
+ *   missing var                   → "unknown"
+ *   unknown == value              → "unknown"
+ *   unknown != value              → "unknown"
+ *   and(false, anything)          → false   (short-circuit)
+ *   and(true, unknown)            → "unknown"
+ *   or(true, anything)            → true    (short-circuit)
+ *   or(false, unknown)            → "unknown"
+ *   !(unknown)                    → "unknown"
+ *   exists(missing)               → false
+ *   exists(present)               → true
+ *
+ * Per spec §6.2: missing_fact_behavior is always "unknown".
  */
 
-// json-logic-js is CJS-only — handle interop carefully
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-let _cachedJL: any = null;
+// ── Types ────────────────────────────────────────────────────────────
 
-async function getJsonLogic() {
-  if (_cachedJL) return _cachedJL;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const mod: any = await import("json-logic-js");
-  // CJS interop: check for is_logic (a json-logic-specific method)
-  if (mod.default?.is_logic) {
-    _cachedJL = mod.default;
-  } else if (mod.is_logic) {
-    _cachedJL = mod;
-  } else {
-    // Fallback: try module.exports key from Node CJS interop
-    const me = mod["module.exports"];
-    _cachedJL = me?.is_logic ? me : mod.default ?? mod;
-  }
-  return _cachedJL;
-}
-
-export type TriValue = "true" | "false" | "unknown";
+export type TriValue = true | false | "unknown";
 
 export interface Fact {
   fact_type: string;
@@ -36,14 +32,48 @@ export interface Fact {
   confidence?: string;
 }
 
+// Sentinel value for missing/unresolved variables
+const MISSING = Symbol("MISSING");
+
+// ── Var resolution ───────────────────────────────────────────────────
+
 /**
- * Build a nested data object for JsonLogic evaluation from user facts.
- *
- * json-logic-js uses dots for nested property access, so we convert
- * flat fact_type IDs like "intake_fact.lu.bereavement.jurisdiction_of_death"
- * into nested objects: { intake_fact: { lu: { bereavement: { jurisdiction_of_death: "LU" } } } }
+ * Resolve a dot-path variable from nested data.
+ * Returns MISSING if the path cannot be resolved.
  */
-function buildFactData(facts: Fact[]): Record<string, unknown> {
+function resolveVar(
+  varName: string,
+  data: Record<string, unknown>,
+): unknown {
+  const parts = varName.split(".");
+  let current: unknown = data;
+  for (const part of parts) {
+    if (
+      current === null ||
+      current === undefined ||
+      typeof current !== "object"
+    ) {
+      return MISSING;
+    }
+    if (!(part in (current as Record<string, unknown>))) {
+      return MISSING;
+    }
+    current = (current as Record<string, unknown>)[part];
+  }
+  return current === undefined ? MISSING : current;
+}
+
+// ── Build fact data ──────────────────────────────────────────────────
+
+/**
+ * Build a nested data object from flat fact entries.
+ *
+ * Converts:
+ *   [{ fact_type: "death.place.country", value: "LU" }]
+ * Into:
+ *   { death: { place: { country: "LU" } } }
+ */
+export function buildFactData(facts: Fact[]): Record<string, unknown> {
   const data: Record<string, unknown> = {};
   for (const f of facts) {
     const parts = f.fact_type.split(".");
@@ -60,29 +90,167 @@ function buildFactData(facts: Fact[]): Record<string, unknown> {
   return data;
 }
 
+// ── Core recursive evaluator ─────────────────────────────────────────
+
 /**
- * Check if all "var" references in a JsonLogic expression have values.
- * If any var resolves to undefined, the fact is missing.
+ * Evaluate a JsonLogic-subset expression against nested data.
+ *
+ * Returns:
+ *   - A concrete value (string, number, boolean, array, etc.)
+ *   - MISSING sentinel if a variable cannot be resolved
+ *
+ * The top-level evaluateCondition() converts this to a TriValue.
  */
-function findMissingVars(
+function evaluate(
+  expression: unknown,
+  data: Record<string, unknown>,
+): unknown {
+  // Primitives pass through
+  if (expression === null || expression === undefined) return expression;
+  if (typeof expression !== "object") return expression;
+  if (Array.isArray(expression)) return expression;
+
+  const obj = expression as Record<string, unknown>;
+  const keys = Object.keys(obj);
+  if (keys.length !== 1) return expression;
+
+  const op = keys[0];
+  const rawArgs = obj[op];
+
+  // ── var ────────────────────────────────────────────────────────
+  if (op === "var") {
+    const varName = rawArgs as string;
+    return resolveVar(varName, data);
+  }
+
+  // ── exists ─────────────────────────────────────────────────────
+  if (op === "exists") {
+    const varName = rawArgs as string;
+    const resolved = resolveVar(varName, data);
+    return resolved !== MISSING;
+  }
+
+  // Ensure args is an array
+  const args = Array.isArray(rawArgs) ? rawArgs : [rawArgs];
+
+  // ── ! (not) ────────────────────────────────────────────────────
+  if (op === "!" || op === "not") {
+    const val = evaluate(args[0], data);
+    if (val === MISSING) return MISSING;
+    return !val;
+  }
+
+  // ── and ────────────────────────────────────────────────────────
+  // Three-valued: and(false, anything) → false (short-circuit)
+  //               and(true, unknown) → unknown
+  if (op === "and") {
+    let hasMissing = false;
+    for (const arg of args) {
+      const val = evaluate(arg, data);
+      if (val === MISSING) {
+        hasMissing = true;
+        continue; // don't short-circuit — keep checking for false
+      }
+      if (!val) return false; // false short-circuits
+    }
+    if (hasMissing) return MISSING;
+    return true;
+  }
+
+  // ── or ─────────────────────────────────────────────────────────
+  // Three-valued: or(true, anything) → true (short-circuit)
+  //               or(false, unknown) → unknown
+  if (op === "or") {
+    let hasMissing = false;
+    for (const arg of args) {
+      const val = evaluate(arg, data);
+      if (val === MISSING) {
+        hasMissing = true;
+        continue;
+      }
+      if (val) return true; // true short-circuits
+    }
+    if (hasMissing) return MISSING;
+    return false;
+  }
+
+  // ── == ─────────────────────────────────────────────────────────
+  if (op === "==" || op === "===") {
+    const left = evaluate(args[0], data);
+    const right = evaluate(args[1], data);
+    if (left === MISSING || right === MISSING) return MISSING;
+    // Use loose equality for "==" per JsonLogic convention
+    return left == right;
+  }
+
+  // ── != ─────────────────────────────────────────────────────────
+  if (op === "!=" || op === "!==") {
+    const left = evaluate(args[0], data);
+    const right = evaluate(args[1], data);
+    if (left === MISSING || right === MISSING) return MISSING;
+    return left != right;
+  }
+
+  // ── > ──────────────────────────────────────────────────────────
+  if (op === ">") {
+    const left = evaluate(args[0], data);
+    const right = evaluate(args[1], data);
+    if (left === MISSING || right === MISSING) return MISSING;
+    return (left as number) > (right as number);
+  }
+
+  // ── >= ─────────────────────────────────────────────────────────
+  if (op === ">=") {
+    const left = evaluate(args[0], data);
+    const right = evaluate(args[1], data);
+    if (left === MISSING || right === MISSING) return MISSING;
+    return (left as number) >= (right as number);
+  }
+
+  // ── < ──────────────────────────────────────────────────────────
+  if (op === "<") {
+    const left = evaluate(args[0], data);
+    const right = evaluate(args[1], data);
+    if (left === MISSING || right === MISSING) return MISSING;
+    return (left as number) < (right as number);
+  }
+
+  // ── <= ─────────────────────────────────────────────────────────
+  if (op === "<=") {
+    const left = evaluate(args[0], data);
+    const right = evaluate(args[1], data);
+    if (left === MISSING || right === MISSING) return MISSING;
+    return (left as number) <= (right as number);
+  }
+
+  // ── in ─────────────────────────────────────────────────────────
+  if (op === "in") {
+    const needle = evaluate(args[0], data);
+    const haystack = evaluate(args[1], data);
+    if (needle === MISSING || haystack === MISSING) return MISSING;
+    if (Array.isArray(haystack)) {
+      return haystack.includes(needle);
+    }
+    if (typeof haystack === "string" && typeof needle === "string") {
+      return haystack.includes(needle);
+    }
+    return false;
+  }
+
+  // Unknown operator — treat as unknown
+  return MISSING;
+}
+
+// ── Find missing vars ────────────────────────────────────────────────
+
+/**
+ * Walk the expression tree and collect all var paths that don't resolve.
+ */
+export function findMissingVars(
   expression: unknown,
   data: Record<string, unknown>,
 ): string[] {
   const missing: string[] = [];
-
-  function resolveVar(varName: string): boolean {
-    const parts = varName.split(".");
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let current: any = data;
-    for (const part of parts) {
-      if (current === null || current === undefined || typeof current !== "object") {
-        return false;
-      }
-      if (!(part in current)) return false;
-      current = current[part];
-    }
-    return current !== undefined;
-  }
 
   function walk(node: unknown): void {
     if (node === null || node === undefined) return;
@@ -95,13 +263,29 @@ function findMissingVars(
 
     const obj = node as Record<string, unknown>;
     const keys = Object.keys(obj);
-    if (keys.length === 1 && keys[0] === "var") {
-      const varName = obj["var"] as string;
-      if (!resolveVar(varName)) {
+    if (keys.length !== 1) return;
+
+    const op = keys[0];
+    const rawArgs = obj[op];
+
+    if (op === "var") {
+      const varName = rawArgs as string;
+      if (resolveVar(varName, data) === MISSING) {
         missing.push(varName);
       }
-    } else {
-      for (const v of Object.values(obj)) walk(v);
+      return;
+    }
+
+    if (op === "exists") {
+      // exists doesn't contribute to "missing" — it explicitly tests presence
+      return;
+    }
+
+    // Walk children
+    if (Array.isArray(rawArgs)) {
+      for (const item of rawArgs) walk(item);
+    } else if (rawArgs && typeof rawArgs === "object") {
+      walk(rawArgs);
     }
   }
 
@@ -109,34 +293,33 @@ function findMissingVars(
   return missing;
 }
 
+// ── Public API ───────────────────────────────────────────────────────
+
 /**
  * Evaluate a condition's JsonLogic expression against user facts.
  *
  * Returns:
- * - "true" if the expression evaluates to truthy and all vars are present
- * - "false" if the expression evaluates to falsy and all vars are present
- * - "unknown" if any required var is missing
+ *   - result: true if the expression evaluates to truthy and all vars are present
+ *   - result: false if the expression evaluates to falsy and all vars are present
+ *   - result: "unknown" if any required var is missing
+ *   - missingFacts: list of var paths that could not be resolved
+ *
+ * This function is synchronous — no external library dependency.
  */
-export async function evaluateCondition(
+export function evaluateCondition(
   expression: object,
   facts: Fact[],
-): Promise<{ result: TriValue; missingFacts: string[] }> {
+): { result: TriValue; missingFacts: string[] } {
   const data = buildFactData(facts);
   const missingFacts = findMissingVars(expression, data);
+  const rawResult = evaluate(expression, data);
 
-  if (missingFacts.length > 0) {
+  if (rawResult === MISSING) {
     return { result: "unknown", missingFacts };
   }
 
-  try {
-    const jsonLogic = await getJsonLogic();
-    const result = jsonLogic.apply(expression, data);
-    return {
-      result: result ? "true" : "false",
-      missingFacts: [],
-    };
-  } catch {
-    // If JsonLogic evaluation fails, treat as unknown
-    return { result: "unknown", missingFacts: [] };
-  }
+  return {
+    result: rawResult ? true : false,
+    missingFacts: [],
+  };
 }

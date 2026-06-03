@@ -21,6 +21,9 @@ import type {
 } from "./loader.js";
 import { evaluateCondition, type Fact, type TriValue } from "./evaluator.js";
 
+// Re-export types for convenience
+export type { Fact } from "./evaluator.js";
+
 // ── Output types ─────────────────────────────────────────────────────
 
 export type ItemStatus =
@@ -129,14 +132,9 @@ function conditionResultToStatus(
   result: TriValue,
   missingFacts: string[],
 ): ItemStatus {
-  switch (result) {
-    case "true":
-      return "applies";
-    case "false":
-      return "does_not_apply";
-    case "unknown":
-      return missingFacts.length > 0 ? "needs_fact" : "maybe_applies";
-  }
+  if (result === true) return "applies";
+  if (result === false) return "does_not_apply";
+  return missingFacts.length > 0 ? "needs_fact" : "maybe_applies";
 }
 
 // ── Generate options ─────────────────────────────────────────────────
@@ -152,7 +150,7 @@ export interface GenerateOptions {
 
 // ── The 6-step algorithm ─────────────────────────────────────────────
 
-export async function generateChecklist(opts: GenerateOptions): Promise<ChecklistOutput> {
+export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   const {
     graph,
     facts,
@@ -181,7 +179,7 @@ export async function generateChecklist(opts: GenerateOptions): Promise<Checklis
 
     // Evaluate all trigger conditions (AND logic)
     const conditionRefs = consequence.trigger?.condition_refs ?? [];
-    let overallResult: TriValue = "true";
+    let overallResult: TriValue = true;
     const allMissingFacts: string[] = [];
 
     for (const condRef of conditionRefs) {
@@ -192,26 +190,26 @@ export async function generateChecklist(opts: GenerateOptions): Promise<Checklis
         continue;
       }
 
-      const { result, missingFacts } = await evaluateCondition(
+      const { result, missingFacts } = evaluateCondition(
         condition.expression,
         facts,
       );
 
       allMissingFacts.push(...missingFacts);
 
-      if (result === "false") {
-        overallResult = "false";
+      if (result === false) {
+        overallResult = false;
         break; // short-circuit: one false → whole trigger is false
       }
       if (result === "unknown") {
         overallResult = "unknown";
-        // don't break — keep checking for explicit "false"
+        // don't break — keep checking for explicit false
       }
     }
 
     // If no conditions at all, consequence always applies
     if (conditionRefs.length === 0) {
-      overallResult = "true";
+      overallResult = true;
     }
 
     // Step 4: Expand into checklist items via task templates

@@ -58,7 +58,7 @@ export async function main(): Promise<void> {
   );
 
   console.log(`\nGenerating checklist for life_event="${lifeEvent}" with ${facts.length} facts...`);
-  const output = await generateChecklist({ graph, facts, lifeEvent });
+  const output = generateChecklist({ graph, facts, lifeEvent });
 
   console.log(`\n${"═".repeat(60)}`);
   console.log(` CHECKLIST: ${lifeEvent}`);
