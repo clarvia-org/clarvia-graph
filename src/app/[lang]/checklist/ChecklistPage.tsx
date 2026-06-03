@@ -783,7 +783,9 @@ function ChecklistItemCard({
                   ? l(lang, "Obligation", "Obligation", "Pflicht")
                   : item.consequence_type === "right_or_benefit" || item.consequence_type === "right"
                     ? l(lang, "Right / Benefit", "Droit / Prestation", "Recht / Leistung")
-                    : l(lang, item.consequence_type, item.consequence_type, item.consequence_type)}
+                    : item.consequence_type === "administrative_step"
+                      ? l(lang, "Administrative step", "Démarche administrative", "Verwaltungsschritt")
+                      : l(lang, item.consequence_type, item.consequence_type, item.consequence_type)}
               </span>
             )}
           </div>
