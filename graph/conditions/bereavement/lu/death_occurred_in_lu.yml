@@ -11,9 +11,11 @@ domain: death_registration
 expression_language: jsonlogic
 expression:
   "==":
-    - { "var": "intake_fact.lu.bereavement.jurisdiction_of_death" }
+    - { "var": "death.place.country" }
     - "LU"
 missing_fact_behavior: unknown
+information_concept_refs:
+  - intake_fact.global.bereavement.jurisdiction_of_death
 source_assertion_refs:
   - assertion.lu.guichet_bereavement.death_must_be_declared
 record_valid_from: "2026-06-03"

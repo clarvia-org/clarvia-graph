@@ -10,9 +10,9 @@ describe("generateChecklist", () => {
   it("generates a checklist for LU core bereavement — all facts present", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
-      { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "LU" },
-      { fact_type: "intake_fact.lu.bereavement.date_of_death", value: "2026-01-15" },
-      { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "LU" },
+      { fact_type: "death.place.country", value: "LU" },
+      { fact_type: "death.date", value: "2026-01-15" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
     ];
 
     const output = generateChecklist({
@@ -48,8 +48,8 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       // No jurisdiction fact provided
-      { fact_type: "intake_fact.lu.bereavement.date_of_death", value: "2026-01-15" },
-      { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "LU" },
+      { fact_type: "death.date", value: "2026-01-15" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
     ];
 
     const output = generateChecklist({
@@ -68,7 +68,7 @@ describe("generateChecklist", () => {
 
     expect(deathItem?.status).toBe("needs_fact");
     expect(deathItem?.missing_fact_refs).toContain(
-      "intake_fact.lu.bereavement.jurisdiction_of_death",
+      "death.place.country",
     );
     expect(pensionItem?.status).toBe("applies");
   });
@@ -76,7 +76,7 @@ describe("generateChecklist", () => {
   it("filters out consequences for non-matching life events", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
-      { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "LU" },
+      { fact_type: "death.place.country", value: "LU" },
     ];
 
     const output = generateChecklist({
@@ -91,9 +91,9 @@ describe("generateChecklist", () => {
   it("returns does_not_apply when condition is false (death in DE, not LU)", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
-      { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "DE" },
-      { fact_type: "intake_fact.lu.bereavement.date_of_death", value: "2026-01-15" },
-      { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "DE" },
+      { fact_type: "death.place.country", value: "DE" },
+      { fact_type: "death.date", value: "2026-01-15" },
+      { fact_type: "deceased.pension.jurisdiction", value: "DE" },
     ];
 
     const output = generateChecklist({
@@ -109,8 +109,8 @@ describe("generateChecklist", () => {
   it("output has correct structure", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
-      { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "LU" },
-      { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "LU" },
+      { fact_type: "death.place.country", value: "LU" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
     ];
 
     const output = generateChecklist({
@@ -131,8 +131,8 @@ describe("generateChecklist", () => {
   it("produces deterministic item IDs for same consequence+task pair", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
-      { fact_type: "intake_fact.lu.bereavement.jurisdiction_of_death", value: "LU" },
-      { fact_type: "intake_fact.lu.bereavement.deceased_pension_jurisdiction", value: "LU" },
+      { fact_type: "death.place.country", value: "LU" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
     ];
 
     const output1 = generateChecklist({ graph, facts, lifeEvent: "bereavement" });

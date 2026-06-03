@@ -11,9 +11,11 @@ domain: survivor_pension
 expression_language: jsonlogic
 expression:
   "==":
-    - { "var": "intake_fact.lu.bereavement.deceased_pension_jurisdiction" }
+    - { "var": "deceased.pension.jurisdiction" }
     - "LU"
 missing_fact_behavior: unknown
+information_concept_refs:
+  - intake_fact.global.bereavement.deceased_pension_jurisdiction
 source_assertion_refs:
   - assertion.lu.guichet_bereavement.survivor_pension_available
 record_valid_from: "2026-06-03"
