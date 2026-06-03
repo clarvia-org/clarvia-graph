@@ -1,0 +1,22 @@
+id: condition.xborder.bereavement.survivor_pension.cross_border_pension_applies
+schema_version: "0.1.0"
+title: "Cross-border pension situation (death and pension in different countries)"
+description: >
+  Evaluates whether the death occurred in a different country from where
+  the deceased was pension-insured. If true, cross-border pension coordination
+  procedures under EU regulations may apply.
+condition_type: criterion
+jurisdiction: EU
+life_event: bereavement
+domain: survivor_pension
+expression_language: jsonlogic
+expression:
+  "!=":
+    - { "var": "death.place.country" }
+    - { "var": "deceased.pension.jurisdiction" }
+missing_fact_behavior: unknown
+information_concept_refs: []
+source_assertion_refs: []
+record_valid_from: "2026-06-03"
+authoring_status: draft
+distribution_status: public_open

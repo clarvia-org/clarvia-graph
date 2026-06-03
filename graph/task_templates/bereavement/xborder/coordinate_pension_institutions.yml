@@ -1,0 +1,37 @@
+id: task_template.xborder.bereavement.survivor_pension.coordinate_pension_institutions
+schema_version: "0.1.0"
+title: "Coordinate pension claims between countries"
+description: >
+  When the deceased worked or was insured in multiple EU countries, survivor
+  pension claims may need to be filed with each country's pension institution.
+  Under EU Regulation 883/2004, the competent institution in the country of
+  residence coordinates the process via structured electronic exchange (EESSI).
+action_type: coordinate
+jurisdiction: EU
+jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/EUR"
+life_event: bereavement
+domain: survivor_pension
+target:
+  object_type: cross_border_pension_coordination
+  primary_authority_ref: null
+authority_refs: []
+deadline_refs: []
+evidence_requirements:
+  satisfy_if: all_sets_satisfied
+  sets:
+    - id: core_documents
+      operator: all
+      evidence_type_refs:
+        - evidence_type.global.death_certificate
+        - evidence_type.global.pension_insurance_records
+source_assertion_refs: []
+rendering:
+  checklist_group: cross_border_issues
+  urgency_score: 60
+  dependency_rank: 3
+  user_visible_caveat: >
+    When the deceased worked in multiple EU countries, pension claims may need
+    to be filed in each country
+authoring_status: draft
+distribution_status: public_open
+record_valid_from: "2026-06-03"

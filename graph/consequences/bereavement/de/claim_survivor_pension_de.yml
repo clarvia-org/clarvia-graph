@@ -1,0 +1,26 @@
+id: consequence.de.bereavement.survivor_pension.claim_survivor_pension_de
+schema_version: "0.1.0"
+title: "Survivor may claim pension from Deutsche Rentenversicherung"
+description: >
+  When the deceased was insured under the German statutory pension system,
+  eligible survivors (spouse, registered partner, or children) may have the
+  right to claim a survivor pension (Hinterbliebenenrente) from the Deutsche
+  Rentenversicherung.
+consequence_type: right_or_benefit
+jurisdiction: DE
+jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/DEU"
+life_event: bereavement
+domain: survivor_pension
+trigger:
+  condition_refs:
+    - condition.de.bereavement.survivor_pension.deceased_was_de_insured
+task_template_refs:
+  - task_template.de.bereavement.survivor_pension.file_drv_claim
+source_assertion_refs: []
+authoring_status: draft
+distribution_status: public_open
+confidence: medium
+record_valid_from: "2026-06-03"
+provenance:
+  extraction_method: ai_assisted
+  extracted_at: "2026-06-03T12:00:00Z"

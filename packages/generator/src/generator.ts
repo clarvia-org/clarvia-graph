@@ -20,6 +20,17 @@ import type {
   TaskTemplate,
 } from "./loader.js";
 import { evaluateCondition, type Fact, type TriValue } from "./evaluator.js";
+import { normalizeFacts } from "./normalize.js";
+import {
+  resolveJurisdictionRoles,
+  getRelevantJurisdictions,
+  isCrossBorder,
+  type JurisdictionRoles,
+} from "./jurisdiction-roles.js";
+import {
+  buildExplanationTrace,
+  type ExplanationTrace,
+} from "./explanation.js";
 
 // Re-export types for convenience
 export type { Fact } from "./evaluator.js";
@@ -58,6 +69,7 @@ export interface ChecklistItem {
     assertion_count: number;
     top_tier: string | null;
   } | null;
+  explanation_trace_id?: string;
 }
 
 export interface ChecklistSection {
@@ -72,6 +84,8 @@ export interface ChecklistOutput {
   generated_at: string;
   graph_version: string;
   graph_commit: string | null;
+  jurisdiction_roles: JurisdictionRoles;
+  is_cross_border: boolean;
   summary: {
     item_counts: {
       applies: number;
@@ -83,6 +97,7 @@ export interface ChecklistOutput {
   };
   sections: ChecklistSection[];
   items: ChecklistItem[];
+  explanation_traces: ExplanationTrace[];
 }
 
 // ── Checklist group labels and ordering ──────────────────────────────
@@ -153,7 +168,7 @@ export interface GenerateOptions {
 export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   const {
     graph,
-    facts,
+    facts: rawFacts,
     lifeEvent,
     graphVersion = "0.1.0",
     graphCommit = null,
@@ -163,25 +178,38 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   // Determine reference date for temporal filtering
   const referenceDate = asOfDate ?? new Date().toISOString().slice(0, 10);
 
+  // ─── Step 1: Normalize scenario facts ────────────────────────────
+  const facts = normalizeFacts(rawFacts);
+
+  // ─── Step 2: Resolve jurisdiction roles ──────────────────────────
+  const jurisdictionRoles = resolveJurisdictionRoles(facts);
+  const relevantJurisdictions = getRelevantJurisdictions(jurisdictionRoles);
+  const crossBorder = isCrossBorder(jurisdictionRoles);
+
   const items: ChecklistItem[] = [];
+  const explanationTraces: ExplanationTrace[] = [];
 
-  // Step 1: Graph is already loaded (passed in)
-
-  // Step 2-3: Evaluate conditions → filter consequences
+  // ─── Step 3: Retrieve candidate consequences ────────────────────
+  // Filter by life event, jurisdiction scope, and temporal validity
+  const candidates: Consequence[] = [];
   for (const [, consequence] of graph.consequences) {
     // Filter by life event
     if (consequence.life_event !== lifeEvent) continue;
 
-    // Skip non-valid records (check temporal validity)
-    // For alpha, skip only explicitly expired records
+    // Filter by jurisdiction scope — include if consequence jurisdiction
+    // is in the set of relevant jurisdictions
+    const juris = consequence.jurisdiction?.toUpperCase();
+    if (juris && !relevantJurisdictions.has(juris) && !relevantJurisdictions.has(juris.toLowerCase())) {
+      continue;
+    }
+
+    // Temporal filtering
     if (
       consequence.record_valid_to &&
       consequence.record_valid_to < referenceDate
     ) {
       continue;
     }
-
-    // Skip records that haven't started yet
     if (
       consequence.record_valid_from &&
       consequence.record_valid_from > referenceDate
@@ -189,66 +217,83 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
       continue;
     }
 
-    // Evaluate all trigger conditions (AND logic)
+    candidates.push(consequence);
+  }
+
+  // ─── Step 4: Evaluate conditions ────────────────────────────────
+  // Store per-condition results for explanation traces
+  const conditionResultCache = new Map<string, { result: TriValue; missingFacts: string[] }>();
+
+  for (const consequence of candidates) {
     const conditionRefs = consequence.trigger?.condition_refs ?? [];
     let overallResult: TriValue = true;
     const allMissingFacts: string[] = [];
 
     for (const condRef of conditionRefs) {
-      const condition = graph.conditions.get(condRef);
-      if (!condition) {
-        // Missing condition → unknown
-        overallResult = "unknown";
-        continue;
+      // Check cache first
+      let cached = conditionResultCache.get(condRef);
+      if (!cached) {
+        const condition = graph.conditions.get(condRef);
+        if (!condition) {
+          cached = { result: "unknown", missingFacts: [] };
+        } else {
+          cached = evaluateCondition(condition.expression, facts);
+        }
+        conditionResultCache.set(condRef, cached);
       }
 
-      const { result, missingFacts } = evaluateCondition(
-        condition.expression,
-        facts,
-      );
+      allMissingFacts.push(...cached.missingFacts);
 
-      allMissingFacts.push(...missingFacts);
-
-      if (result === false) {
+      if (cached.result === false) {
         overallResult = false;
-        break; // short-circuit: one false → whole trigger is false
+        break;
       }
-      if (result === "unknown") {
+      if (cached.result === "unknown") {
         overallResult = "unknown";
-        // don't break — keep checking for explicit false
       }
     }
 
-    // If no conditions at all, consequence always applies
     if (conditionRefs.length === 0) {
       overallResult = true;
     }
 
-    // Step 4: Expand into checklist items via task templates
+    // ─── Step 5: Expand into checklist items via task templates ──
     const taskRefs = consequence.task_template_refs ?? [];
 
     if (taskRefs.length === 0) {
-      // Consequence with no tasks — create a bare item
       items.push(
         makeItem(consequence, null, overallResult, allMissingFacts, graph),
       );
     } else {
       for (const taskRef of taskRefs) {
         const template = graph.taskTemplates.get(taskRef);
-        items.push(
-          makeItem(
-            consequence,
-            template ?? null,
-            overallResult,
-            allMissingFacts,
-            graph,
-          ),
+        const item = makeItem(
+          consequence,
+          template ?? null,
+          overallResult,
+          allMissingFacts,
+          graph,
         );
+
+        // Build explanation trace for visible items
+        if (item.status !== "does_not_apply") {
+          const trace = buildExplanationTrace(
+            `trace.${item.id}`,
+            consequence.id,
+            conditionRefs,
+            conditionResultCache,
+            graph,
+          );
+          explanationTraces.push(trace);
+          item.explanation_trace_id = trace.id;
+        }
+
+        items.push(item);
       }
     }
   }
 
-  // Step 5: Sort — first by group order, then by urgency (desc), then by title
+  // Sort — first by group order, then by urgency (desc), then by title
   items.sort((a, b) => {
     const ga = GROUP_ORDER[a.checklist_group]?.order ?? 99;
     const gb = GROUP_ORDER[b.checklist_group]?.order ?? 99;
@@ -256,7 +301,7 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
 
     const ua = a.urgency?.score ?? 0;
     const ub = b.urgency?.score ?? 0;
-    if (ua !== ub) return ub - ua; // higher urgency first
+    if (ua !== ub) return ub - ua;
 
     return a.title.localeCompare(b.title);
   });
@@ -264,16 +309,15 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   // Filter out does_not_apply items from output
   const visibleItems = items.filter((i) => i.status !== "does_not_apply");
 
-  // Step 6: Assemble output
+  // ─── Step 6: Assemble output with summary ──────────────────────
   const counts = {
     applies: visibleItems.filter((i) => i.status === "applies").length,
     maybe_applies: visibleItems.filter((i) => i.status === "maybe_applies")
       .length,
     needs_fact: visibleItems.filter((i) => i.status === "needs_fact").length,
-    professional_review: 0, // TODO: implement
+    professional_review: 0,
   };
 
-  // Build sections from visible items
   const sectionMap = new Map<string, number>();
   for (const item of visibleItems) {
     sectionMap.set(
@@ -296,13 +340,13 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
 
   // Collect unique source refs
   const sourceRefs = new Set<string>();
-  for (const [, c] of graph.consequences) {
-    for (const ref of c.source_assertion_refs ?? []) {
+  for (const consequence of candidates) {
+    for (const ref of consequence.source_assertion_refs ?? []) {
       sourceRefs.add(ref);
     }
   }
 
-  // Deterministic checklist ID: hash of lifeEvent + canonical facts (no timestamp)
+  // Deterministic checklist ID
   const canonicalFacts = JSON.stringify(
     [...facts].sort((a, b) => a.fact_type.localeCompare(b.fact_type)),
   );
@@ -319,12 +363,15 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     generated_at: new Date().toISOString(),
     graph_version: graphVersion,
     graph_commit: graphCommit,
+    jurisdiction_roles: jurisdictionRoles,
+    is_cross_border: crossBorder,
     summary: {
       item_counts: counts,
       source_count: sourceRefs.size,
     },
     sections,
     items: visibleItems,
+    explanation_traces: explanationTraces,
   };
 }
 

@@ -1,0 +1,25 @@
+id: consequence.de.bereavement.death_registration.register_death_de
+schema_version: "0.1.0"
+title: "Death must be registered at the Standesamt"
+description: >
+  When a death occurs in Germany, it must be registered at the Standesamt
+  (registry office) of the district where the death took place. This is a
+  legal obligation under the Personenstandsgesetz (PStG).
+consequence_type: obligation
+jurisdiction: DE
+jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/DEU"
+life_event: bereavement
+domain: death_registration
+trigger:
+  condition_refs:
+    - condition.de.bereavement.death_registration.death_occurred_in_de
+task_template_refs:
+  - task_template.de.bereavement.death_registration.register_death_standesamt
+source_assertion_refs: []
+authoring_status: draft
+distribution_status: public_open
+confidence: medium
+record_valid_from: "2026-06-03"
+provenance:
+  extraction_method: ai_assisted
+  extracted_at: "2026-06-03T12:00:00Z"

@@ -1,0 +1,25 @@
+id: consequence.xborder.bereavement.survivor_pension.coordinate_cross_border_pension
+schema_version: "0.1.0"
+title: "Cross-border pension coordination required"
+description: >
+  When the deceased was pension-insured in a different country from where the
+  death occurred, pension claims may need to be coordinated between the pension
+  institutions of the involved countries under EU Regulation 883/2004.
+consequence_type: administrative_step
+jurisdiction: EU
+jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/EUR"
+life_event: bereavement
+domain: survivor_pension
+trigger:
+  condition_refs:
+    - condition.xborder.bereavement.survivor_pension.cross_border_pension_applies
+task_template_refs:
+  - task_template.xborder.bereavement.survivor_pension.coordinate_pension_institutions
+source_assertion_refs: []
+authoring_status: draft
+distribution_status: public_open
+confidence: medium
+record_valid_from: "2026-06-03"
+provenance:
+  extraction_method: ai_assisted
+  extracted_at: "2026-06-03T12:00:00Z"

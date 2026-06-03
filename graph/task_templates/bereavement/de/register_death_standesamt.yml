@@ -1,0 +1,36 @@
+id: task_template.de.bereavement.death_registration.register_death_standesamt
+schema_version: "0.1.0"
+title: "Register death at Standesamt"
+description: >
+  Register the death at the Standesamt (registry office) of the district where
+  the death occurred. Under the Personenstandsgesetz, this must be done within
+  the legal deadline. Required documents include the medical death certificate
+  (Todesbescheinigung) and identity documents of the deceased.
+action_type: register_death
+jurisdiction: DE
+jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/DEU"
+life_event: bereavement
+domain: death_registration
+target:
+  object_type: death_registration
+  primary_authority_ref: authority.de.standesamt
+authority_refs:
+  - authority.de.standesamt
+deadline_refs: []
+evidence_requirements:
+  satisfy_if: all_sets_satisfied
+  sets:
+    - id: core_documents
+      operator: all
+      evidence_type_refs:
+        - evidence_type.de.todesbescheinigung
+        - evidence_type.de.identity_document_deceased
+source_assertion_refs: []
+rendering:
+  checklist_group: immediate_formalities
+  urgency_score: 90
+  dependency_rank: 1
+  user_visible_caveat: null
+authoring_status: draft
+distribution_status: public_open
+record_valid_from: "2026-06-03"

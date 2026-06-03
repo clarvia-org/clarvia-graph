@@ -1,0 +1,118 @@
+/**
+ * Step 6: Explanation trace generation.
+ *
+ * Produces human-readable explanation traces that link checklist items
+ * to their conditions, sources, and legal basis. Essential for making
+ * alpha output credible to reviewers and grant evaluators.
+ */
+
+import type { LoadedGraph } from "./loader.js";
+import type { TriValue } from "./evaluator.js";
+
+export interface ConditionTrace {
+  condition_ref: string;
+  result: "true" | "false" | "unknown";
+  facts_used: string[];
+}
+
+export interface SourceTrace {
+  source_title: string;
+  publisher: string;
+  official_url: string;
+  assertion_refs: string[];
+}
+
+export interface ExplanationTrace {
+  id: string;
+  why_visible: string[];
+  conditions: ConditionTrace[];
+  sources: SourceTrace[];
+}
+
+/** Build an explanation trace for a checklist item */
+export function buildExplanationTrace(
+  traceId: string,
+  consequenceId: string,
+  conditionRefs: string[],
+  conditionResults: Map<string, { result: TriValue; missingFacts: string[] }>,
+  graph: LoadedGraph,
+): ExplanationTrace {
+  const conditions: ConditionTrace[] = [];
+  const whyVisible: string[] = [];
+
+  for (const ref of conditionRefs) {
+    const result = conditionResults.get(ref);
+    const condition = graph.conditions.get(ref);
+
+    if (result && condition) {
+      const resultStr =
+        result.result === true ? "true" : result.result === false ? "false" : "unknown";
+
+      conditions.push({
+        condition_ref: ref,
+        result: resultStr,
+        facts_used: result.missingFacts.length > 0
+          ? result.missingFacts.map((f) => `${f} (missing)`)
+          : extractVarPaths(condition.expression),
+      });
+
+      if (result.result === true) {
+        whyVisible.push(`${condition.title ?? ref}: satisfied`);
+      } else if (result.result === "unknown") {
+        whyVisible.push(`${condition.title ?? ref}: uncertain — missing facts`);
+      }
+    }
+  }
+
+  // Gather sources from the consequence
+  const consequence = graph.consequences.get(consequenceId);
+  const sources: SourceTrace[] = [];
+  const seenSources = new Set<string>();
+
+  if (consequence) {
+    for (const assertionRef of consequence.source_assertion_refs ?? []) {
+      // Find the source that contains this assertion
+      for (const [, source] of graph.sources ?? new Map()) {
+        if (!seenSources.has(source.id)) {
+          sources.push({
+            source_title: source.title ?? source.id,
+            publisher: source.publisher ?? "Unknown",
+            official_url: source.url ?? "",
+            assertion_refs: [assertionRef],
+          });
+          seenSources.add(source.id);
+        }
+      }
+    }
+  }
+
+  return {
+    id: traceId,
+    why_visible: whyVisible,
+    conditions,
+    sources,
+  };
+}
+
+/** Extract var paths from a JsonLogic expression */
+function extractVarPaths(expression: unknown): string[] {
+  const paths: string[] = [];
+
+  function walk(node: unknown): void {
+    if (!node || typeof node !== "object") return;
+    if (Array.isArray(node)) {
+      for (const item of node) walk(item);
+      return;
+    }
+    const obj = node as Record<string, unknown>;
+    if ("var" in obj && typeof obj.var === "string") {
+      paths.push(obj.var);
+    }
+    for (const val of Object.values(obj)) {
+      walk(val);
+    }
+  }
+
+  walk(expression);
+  return paths;
+}

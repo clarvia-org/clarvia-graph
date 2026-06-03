@@ -1,0 +1,36 @@
+id: task_template.de.bereavement.survivor_pension.file_drv_claim
+schema_version: "0.1.0"
+title: "File survivor pension claim with DRV"
+description: >
+  File a claim for survivor pension (Hinterbliebenenrente) with the Deutsche
+  Rentenversicherung. Eligible survivors include spouses, registered partners,
+  and orphaned children. The claim requires the death certificate, marriage
+  certificate or proof of partnership, and pension insurance documentation.
+action_type: file_claim
+jurisdiction: DE
+jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/DEU"
+life_event: bereavement
+domain: survivor_pension
+target:
+  object_type: survivor_pension_claim
+  primary_authority_ref: authority.de.drv
+authority_refs:
+  - authority.de.drv
+deadline_refs: []
+evidence_requirements:
+  satisfy_if: all_sets_satisfied
+  sets:
+    - id: core_documents
+      operator: all
+      evidence_type_refs:
+        - evidence_type.de.death_certificate
+        - evidence_type.de.marriage_certificate
+source_assertion_refs: []
+rendering:
+  checklist_group: money_and_benefits
+  urgency_score: 65
+  dependency_rank: 2
+  user_visible_caveat: null
+authoring_status: draft
+distribution_status: public_open
+record_valid_from: "2026-06-03"

@@ -100,6 +100,13 @@ export interface IntakeFactType extends GraphRecord {
   cardinality: string;
 }
 
+export interface SourceRecord extends GraphRecord {
+  title: string;
+  url?: string;
+  publisher?: string;
+  jurisdiction: string;
+}
+
 // ── The loaded graph ─────────────────────────────────────────────────
 
 export interface LoadedGraph {
@@ -110,6 +117,7 @@ export interface LoadedGraph {
   authorities: Map<string, Authority>;
   evidenceTypes: Map<string, EvidenceType>;
   intakeFactTypes: Map<string, IntakeFactType>;
+  sources: Map<string, SourceRecord>;
 }
 
 // ── Loader ───────────────────────────────────────────────────────────
@@ -161,6 +169,10 @@ export function loadGraph(rootDir: string): LoadedGraph {
     intakeFactTypes: loadDir<IntakeFactType>(
       rootDir,
       "graph/intake_fact_types/**/*.{yml,yaml}",
+    ),
+    sources: loadDir<SourceRecord>(
+      rootDir,
+      "sources/*/*.{yml,yaml}",
     ),
   };
 }
