@@ -12,6 +12,19 @@ export const UPDATES: Update[] = [
   {
     date: "2026-06-03",
     headline: {
+      en: "Clarvia Launches First Preliminary Alpha Checklist",
+      fr: "Clarvia lance sa première liste de contrôle préliminaire en version alpha",
+      de: "Clarvia veröffentlicht erste vorläufige Alpha-Checkliste",
+    },
+    body: {
+      en: "We have launched the first preliminary, experimental alpha checklist on the Clarvia website to test our underlying consequence graph model. This early release serves as a proof of concept, demonstrating how official public sources can be modeled and evaluated client-side to generate dynamic administrative guidance for bereavement. Available for initial testing under the /checklist route, this alpha version uses a simplified Luxembourg bereavement scenario to verify the end-to-end routing logic before we expand our source coverage.",
+      fr: "Nous avons mis en ligne la première version alpha préliminaire et expérimentale de la liste de démarches sur le site de Clarvia pour tester notre modèle sous-jacent de graphe de conséquences. Cette version initiale sert de preuve de concept, illustrant comment les sources publiques officielles peuvent être modélisées et évaluées côté client pour générer des conseils administratifs dynamiques pour le deuil. Disponible pour des tests initiaux sous la route /checklist, cette version alpha utilise un scénario simplifié de deuil au Luxembourg pour valider la logique de routage de bout en bout avant d'étendre la couverture des sources.",
+      de: "Wir haben die erste vorläufige, experimentelle Alpha-Checkliste auf der Clarvia-Website veröffentlicht, um unser zugrunde liegendes Konsequenz-Graph-Modell zu testen. Diese frühe Version dient als Machbarkeitsnachweis und zeigt, wie offizielle öffentliche Quellen modelliert und clientseitig ausgewertet werden können, um dynamische administrative Unterstützung im Trauerfall zu generieren. Diese Alpha-Version ist für erste Tests unter dem Pfad /checklist verfügbar und nutzt ein vereinfachtes Luxemburger Trauerfallszenario, um die durchgehende Routing-Logik zu verifizieren, bevor wir unsere Quellenabdeckung erweitern.",
+    },
+  },
+  {
+    date: "2026-06-03",
+    headline: {
       en: "Clarvia Joins the Open Invention Network Community",
       fr: "Clarvia rejoint la communauté de l'Open Invention Network",
       de: "Clarvia tritt der Open Invention Network-Gemeinschaft bei",
