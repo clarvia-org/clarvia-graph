@@ -1,0 +1,51 @@
+# Clarvia Source Register
+# Registry of all sources monitored by the graph.
+# See: foundation-spec §18.2
+
+sources:
+  - id: source.lu.guichet_bereavement
+    title: "Dealing with the death of a loved one"
+    title_en: "Dealing with the death of a loved one"
+    url: "https://guichet.public.lu/en/citoyens/life-event/famille-education/deces-proche.html"
+    source_type: government_portal
+    jurisdiction: LU
+    publisher: "Guichet.lu (Luxembourg Government)"
+    languages: [en, fr, de]
+    domain: death_registration
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: true
+      frequency_days: 30
+    verified_at: "2026-05-27"
+    verified_by: HirenGajjar
+
+  - id: source.lu.cnap_survivor_pension
+    title: "Pension de survie"
+    title_en: "Survivor pension"
+    url: "https://www.cnap.lu/informations-generales/pension-de-survie/"
+    source_type: official_guidance
+    jurisdiction: LU
+    publisher: "CNAP (Caisse Nationale d'Assurance Pension)"
+    languages: [fr]
+    domain: survivor_pension
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.lu.cns_death_notification
+    title: "Déclaration de décès à la CNS"
+    title_en: "Death notification to CNS"
+    url: "https://cns.public.lu/fr/assure/vie-privee/deces.html"
+    source_type: official_guidance
+    jurisdiction: LU
+    publisher: "CNS (Caisse Nationale de Santé)"
+    languages: [fr]
+    domain: health_insurance
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null

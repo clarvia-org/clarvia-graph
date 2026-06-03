@@ -1,0 +1,67 @@
+source_id: source.lu.guichet_bereavement
+source_snapshot_id: snapshot.lu.guichet_bereavement.20260603
+assertions:
+  - id: assertion.lu.guichet_bereavement.death_must_be_declared
+    schema_version: "0.1.0"
+    claim_type: legal_scope
+    claim_text: >
+      When a death occurs in Luxembourg, the family must declare the death to
+      the Bureau de l'état civil of the commune where the death took place.
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: death_registration
+    anchor:
+      selector_type: text_quote
+      text_quote: "declare the death to the civil registry office"
+    source_tier: faq
+    record_valid_from: "2026-06-03"
+    review_status: draft
+    confidence: medium
+    provenance:
+      extraction_method: ai_assisted
+      extracted_at: "2026-06-03T12:00:00Z"
+
+  - id: assertion.lu.guichet_bereavement.declaration_within_24h
+    schema_version: "0.1.0"
+    claim_type: deadline
+    claim_text: >
+      The death declaration must be made within 24 hours of the death.
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: death_registration
+    anchor:
+      selector_type: text_quote
+      text_quote: "within 24 hours"
+    extracted_value:
+      duration: "PT24H"
+      starts_from: date_of_death
+    source_tier: faq
+    record_valid_from: "2026-06-03"
+    review_status: draft
+    confidence: medium
+    provenance:
+      extraction_method: ai_assisted
+      extracted_at: "2026-06-03T12:00:00Z"
+
+  - id: assertion.lu.guichet_bereavement.survivor_pension_available
+    schema_version: "0.1.0"
+    claim_type: eligibility_condition
+    claim_text: >
+      The surviving spouse may be entitled to a survivor pension (pension de survie)
+      if the deceased was insured with the Luxembourg pension system.
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: survivor_pension
+    anchor:
+      selector_type: text_quote
+      text_quote: "survivor pension"
+    source_tier: faq
+    record_valid_from: "2026-06-03"
+    review_status: draft
+    confidence: medium
+    provenance:
+      extraction_method: ai_assisted
+      extracted_at: "2026-06-03T12:00:00Z"

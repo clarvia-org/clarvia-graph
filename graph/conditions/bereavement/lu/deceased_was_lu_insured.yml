@@ -1,0 +1,21 @@
+id: condition.lu.bereavement.survivor_pension.deceased_was_lu_insured
+schema_version: "0.1.0"
+title: "Deceased was insured under Luxembourg pension system"
+description: >
+  Evaluates whether the deceased person was insured with the Luxembourg pension
+  system (CNAP). If true, the surviving spouse may be entitled to a survivor pension.
+condition_type: eligibility
+jurisdiction: LU
+life_event: bereavement
+domain: survivor_pension
+expression_language: jsonlogic
+expression:
+  "==":
+    - { "var": "intake_fact.lu.bereavement.deceased_pension_jurisdiction" }
+    - "LU"
+missing_fact_behavior: unknown
+source_assertion_refs:
+  - assertion.lu.guichet_bereavement.survivor_pension_available
+record_valid_from: "2026-06-03"
+authoring_status: draft
+distribution_status: public_open

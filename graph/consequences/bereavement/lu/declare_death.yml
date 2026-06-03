@@ -1,0 +1,26 @@
+id: consequence.lu.bereavement.death_registration.declare_death
+schema_version: "0.1.0"
+title: "Death must be declared to the civil registry"
+description: >
+  When a death occurs in Luxembourg, it must be declared to the Bureau de l'état
+  civil of the commune where the death took place. This is a legal obligation
+  that triggers the issuance of the death certificate.
+consequence_type: obligation
+jurisdiction: LU
+jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/LUX"
+life_event: bereavement
+domain: death_registration
+trigger:
+  condition_refs:
+    - condition.lu.bereavement.death_registration.death_occurred_in_lu
+task_template_refs:
+  - task_template.lu.bereavement.death_registration.file_death_declaration
+source_assertion_refs:
+  - assertion.lu.guichet_bereavement.death_must_be_declared
+authoring_status: draft
+distribution_status: public_open
+confidence: medium
+record_valid_from: "2026-06-03"
+provenance:
+  extraction_method: ai_assisted
+  extracted_at: "2026-06-03T12:00:00Z"

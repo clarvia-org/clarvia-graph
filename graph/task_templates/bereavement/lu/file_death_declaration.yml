@@ -1,0 +1,38 @@
+id: task_template.lu.bereavement.death_registration.file_death_declaration
+schema_version: "0.1.0"
+title: "File death declaration at the commune"
+description: >
+  File the death declaration (déclaration de décès) at the Bureau de l'état civil
+  of the commune where the death occurred. This must be done within the legal
+  deadline. Required documents include the medical death certificate and identity
+  documents.
+action_type: file_declaration
+jurisdiction: LU
+jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/LUX"
+life_event: bereavement
+domain: death_registration
+target:
+  object_type: death_declaration
+  primary_authority_ref: authority.lu.bureau_etat_civil
+authority_refs:
+  - authority.lu.bureau_etat_civil
+deadline_refs:
+  - deadline.lu.bereavement.death_registration.declaration_deadline
+evidence_requirements:
+  satisfy_if: all_sets_satisfied
+  sets:
+    - id: core_documents
+      operator: all
+      evidence_type_refs:
+        - evidence_type.lu.medical_death_certificate
+        - evidence_type.lu.identity_document_deceased
+source_assertion_refs:
+  - assertion.lu.guichet_bereavement.death_must_be_declared
+rendering:
+  checklist_group: immediate_formalities
+  urgency_score: 95
+  dependency_rank: 1
+  user_visible_caveat: null
+authoring_status: draft
+distribution_status: public_open
+record_valid_from: "2026-06-03"

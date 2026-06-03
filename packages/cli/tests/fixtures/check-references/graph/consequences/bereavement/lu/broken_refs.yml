@@ -1,0 +1,15 @@
+id: "consequence.lu.bereavement.survivor_pension.broken_ref"
+schema_version: "0.1.0"
+title: "Consequence with a broken reference"
+consequence_type: "right_or_benefit"
+jurisdiction: "lu"
+life_event: "bereavement"
+domain: "survivor_pension"
+trigger:
+  condition_refs:
+    - condition.lu.bereavement.survivor_pension.does_not_exist
+source_assertion_refs:
+  - assertion.lu_gov.guichet_bereavement.nonexistent_claim
+authoring_status: "draft"
+distribution_status: "public_open"
+record_valid_from: "2025-01-01"

@@ -1,0 +1,21 @@
+id: condition.lu.bereavement.death_registration.death_occurred_in_lu
+schema_version: "0.1.0"
+title: "Death occurred in Luxembourg"
+description: >
+  Evaluates whether the death occurred on Luxembourg territory.
+  If true, Luxembourg death registration obligations apply.
+condition_type: criterion
+jurisdiction: LU
+life_event: bereavement
+domain: death_registration
+expression_language: jsonlogic
+expression:
+  "==":
+    - { "var": "intake_fact.lu.bereavement.jurisdiction_of_death" }
+    - "LU"
+missing_fact_behavior: unknown
+source_assertion_refs:
+  - assertion.lu.guichet_bereavement.death_must_be_declared
+record_valid_from: "2026-06-03"
+authoring_status: draft
+distribution_status: public_open

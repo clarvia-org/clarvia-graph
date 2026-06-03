@@ -1,0 +1,12 @@
+id: intake_fact.lu.bereavement.deceased_pension_jurisdiction
+schema_version: "0.1.0"
+path: deceased_pension_jurisdiction
+label: "Pension jurisdiction of the deceased"
+description: "Which country's pension system the deceased was insured under."
+value_type: jurisdiction_code
+allowed_values_ref: vocab/jurisdictions.yml
+cardinality: one
+required_for:
+  - consequence.lu.bereavement.survivor_pension.claim_survivor_pension
+used_by_condition_refs:
+  - condition.lu.bereavement.survivor_pension.deceased_was_lu_insured

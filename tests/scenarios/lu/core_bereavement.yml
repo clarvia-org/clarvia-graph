@@ -1,0 +1,28 @@
+# Scenario Test: Luxembourg Core Bereavement
+# Basic single-jurisdiction test for death occurring in Luxembourg.
+# Validates the minimum expected consequence graph output.
+
+id: scenario_test.lu.core_bereavement
+schema_version: "0.1.0"
+title: "Luxembourg core — death occurred in Luxembourg, spouse is LU-insured"
+scenario_type: single_jurisdiction
+life_event: bereavement
+countries: [LU]
+
+facts:
+  - fact_type: intake_fact.lu.bereavement.jurisdiction_of_death
+    value: LU
+  - fact_type: intake_fact.lu.bereavement.date_of_death
+    value: "2026-01-15"
+  - fact_type: intake_fact.lu.bereavement.deceased_pension_jurisdiction
+    value: LU
+
+expected_consequence_statuses:
+  consequence.lu.bereavement.death_registration.declare_death: applies
+  consequence.lu.bereavement.survivor_pension.claim_survivor_pension: applies
+
+expected_checklist_groups:
+  immediate_formalities:
+    - task_template.lu.bereavement.death_registration.file_death_declaration
+  money_and_benefits:
+    - task_template.lu.bereavement.survivor_pension.file_cnap_claim

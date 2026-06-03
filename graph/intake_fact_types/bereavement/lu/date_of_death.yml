@@ -1,0 +1,10 @@
+id: intake_fact.lu.bereavement.date_of_death
+schema_version: "0.1.0"
+path: date_of_death
+label: "Date of death"
+description: "The date when the death occurred. Used for deadline calculations."
+value_type: date
+cardinality: one
+required_for:
+  - deadline.lu.bereavement.death_registration.declaration_deadline
+used_by_condition_refs: []
