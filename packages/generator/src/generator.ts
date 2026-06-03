@@ -157,7 +157,11 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     lifeEvent,
     graphVersion = "0.1.0",
     graphCommit = null,
+    asOfDate,
   } = opts;
+
+  // Determine reference date for temporal filtering
+  const referenceDate = asOfDate ?? new Date().toISOString().slice(0, 10);
 
   const items: ChecklistItem[] = [];
 
@@ -172,7 +176,15 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     // For alpha, skip only explicitly expired records
     if (
       consequence.record_valid_to &&
-      consequence.record_valid_to < new Date().toISOString().slice(0, 10)
+      consequence.record_valid_to < referenceDate
+    ) {
+      continue;
+    }
+
+    // Skip records that haven't started yet
+    if (
+      consequence.record_valid_from &&
+      consequence.record_valid_from > referenceDate
     ) {
       continue;
     }
@@ -290,13 +302,19 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     }
   }
 
-  const checklistId = createHash("sha256")
-    .update(`${lifeEvent}::${JSON.stringify(facts)}::${new Date().toISOString()}`)
+  // Deterministic checklist ID: hash of lifeEvent + canonical facts (no timestamp)
+  const canonicalFacts = JSON.stringify(
+    [...facts].sort((a, b) => a.fact_type.localeCompare(b.fact_type)),
+  );
+  const scenarioHash = createHash("sha256")
+    .update(`${lifeEvent}::${canonicalFacts}`)
     .digest("hex")
-    .slice(0, 16);
+    .slice(0, 12);
+
+  const checklistId = `checklist_run.${referenceDate.replace(/-/g, "")}.${scenarioHash}`;
 
   return {
-    id: `checklist.${checklistId}`,
+    id: checklistId,
     life_event: lifeEvent,
     generated_at: new Date().toISOString(),
     graph_version: graphVersion,
