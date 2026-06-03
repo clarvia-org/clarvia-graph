@@ -43,16 +43,17 @@ export function normalizeFacts(facts: Fact[]): Fact[] {
   const normalized: Fact[] = [];
 
   for (const fact of facts) {
+    const val = String(fact.value ?? "");
     // Handle array facts (e.g., work_history.country with multiple values)
     if (COUNTRY_ARRAY_PATHS.has(fact.fact_type)) {
       // Uppercase and deduplicate
-      const values = fact.value.split(",").map((v) => v.trim().toUpperCase());
+      const values = val.split(",").map((v: string) => v.trim().toUpperCase());
       const unique = [...new Set(values)].sort();
       normalized.push({ fact_type: fact.fact_type, value: unique.join(",") });
     } else {
       normalized.push({
         fact_type: fact.fact_type,
-        value: normalizeValue(fact.fact_type, fact.value),
+        value: normalizeValue(fact.fact_type, val),
       });
     }
   }

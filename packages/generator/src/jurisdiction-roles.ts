@@ -44,18 +44,20 @@ export function resolveJurisdictionRoles(facts: Fact[]): JurisdictionRoles {
   };
 
   for (const fact of facts) {
+    const val = String(fact.value ?? "");
+
     // Single-value roles
     const singleRole = ROLE_MAPPING[fact.fact_type];
-    if (singleRole && fact.value && fact.value !== "unknown") {
-      if (!roles[singleRole].includes(fact.value)) {
-        roles[singleRole].push(fact.value);
+    if (singleRole && val && val !== "unknown") {
+      if (!roles[singleRole].includes(val)) {
+        roles[singleRole].push(val);
       }
     }
 
     // Array roles (comma-separated)
     const arrayRole = ARRAY_ROLE_MAPPING[fact.fact_type];
-    if (arrayRole && fact.value) {
-      const values = fact.value.split(",").map((v) => v.trim());
+    if (arrayRole && val) {
+      const values = val.split(",").map((v: string) => v.trim());
       for (const v of values) {
         if (v && v !== "unknown" && !roles[arrayRole].includes(v)) {
           roles[arrayRole].push(v);
