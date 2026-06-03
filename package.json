@@ -15,7 +15,8 @@
     "lint": "eslint . --ext .ts",
     "typecheck": "tsc --noEmit",
     "validate": "pnpm --filter @clarvia/cli run validate",
-    "lint-ids": "pnpm --filter @clarvia/cli run lint-ids"
+    "lint-ids": "pnpm --filter @clarvia/cli run lint-ids",
+    "build-checklist": "pnpm --filter @clarvia/cli run build-checklist"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

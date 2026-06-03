@@ -31,10 +31,11 @@ switch (command) {
     break;
   }
 
-  case "check-references":
-    console.log("clarvia check-references — not yet implemented (Sprint 2)");
-    process.exit(0);
+  case "check-references": {
+    const { main } = await import("./commands/check-references.js");
+    await main();
     break;
+  }
 
   case "check-anchors":
     console.log("clarvia check-anchors — not yet implemented (Sprint 2)");
@@ -60,10 +61,11 @@ switch (command) {
     process.exit(0);
     break;
 
-  case "build-checklist":
-    console.log("clarvia build-checklist — not yet implemented (Sprint 3)");
-    process.exit(0);
+  case "build-checklist": {
+    const { main } = await import("./commands/build-checklist.js");
+    await main();
     break;
+  }
 
   case undefined:
   case "--help":

@@ -1,0 +1,14 @@
+{
+  "name": "@clarvia/generator",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "description": "Clarvia consequence graph evaluator and checklist generator",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "yaml": "^2.7.1",
+    "glob": "^11.0.2",
+    "json-logic-js": "^2.0.5"
+  }
+}

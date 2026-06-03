@@ -11,13 +11,15 @@
   "scripts": {
     "build": "tsc",
     "validate": "node --loader ts-node/esm src/index.ts validate",
-    "lint-ids": "node --loader ts-node/esm src/index.ts lint-ids"
+    "lint-ids": "node --loader ts-node/esm src/index.ts lint-ids",
+    "build-checklist": "node --loader ts-node/esm src/index.ts build-checklist"
   },
   "dependencies": {
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "yaml": "^2.7.1",
-    "glob": "^11.0.2"
+    "glob": "^11.0.2",
+    "@clarvia/generator": "workspace:*"
   },
   "devDependencies": {
     "ts-node": "^10.9.2"
