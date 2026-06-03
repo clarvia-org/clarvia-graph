@@ -33,14 +33,18 @@ interface TaskTemplate {
   id: string;
   title: string;
   action_type: string;
-  authority_refs: string[];
-  deadline_refs: string[];
+  authority_refs?: string[];
+  deadline_refs?: string[];
   evidence_requirements?: {
-    sets: Array<{ evidence_type_refs: string[] }>;
+    satisfy_if?: string;
+    sets: Array<{ id?: string; operator?: string; evidence_type_refs: string[] }>;
   };
   rendering: {
     checklist_group: string;
-    urgency: { score: number; label: string };
+    urgency_score?: number;
+    urgency?: { score: number; label: string };
+    dependency_rank?: number;
+    user_visible_caveat?: string | null;
   };
 }
 
@@ -65,8 +69,16 @@ interface Authority {
 interface Deadline {
   id: string;
   title: string;
+  deadline_type?: string;
   calculation?: {
-    label: string;
+    kind?: string;
+    duration?: string;
+    starts_from_fact?: string;
+    calendar?: string;
+    label?: string;
+    anchor_event?: string;
+    offset_hours?: number;
+    if_weekend_or_holiday?: string;
   };
 }
 
@@ -177,6 +189,18 @@ function evaluateJsonLogic(
     if (left === undefined || right === undefined) return null;
     return left === right;
   }
+  if (op === "!=") {
+    const left = resolveValue(args[0]);
+    const right = resolveValue(args[1]);
+    if (left === undefined || right === undefined) return null;
+    return left != right;
+  }
+  if (op === "!==") {
+    const left = resolveValue(args[0]);
+    const right = resolveValue(args[1]);
+    if (left === undefined || right === undefined) return null;
+    return left !== right;
+  }
   if (op === "and") {
     let hasUnknown = false;
     for (const arg of args) {
@@ -213,6 +237,20 @@ function buildNestedData(facts: Record<string, string>): Record<string, unknown>
     current[parts[parts.length - 1]] = value;
   }
   return data;
+}
+
+/* ── ISO 8601 duration formatter ── */
+function formatDuration(duration: string): string {
+  const match = duration.match(/^P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?$/);
+  if (!match) return duration;
+  const days = match[1] ? parseInt(match[1]) : 0;
+  const hours = match[2] ? parseInt(match[2]) : 0;
+  const minutes = match[3] ? parseInt(match[3]) : 0;
+  const parts: string[] = [];
+  if (days) parts.push(`${days} day${days > 1 ? "s" : ""}`);
+  if (hours) parts.push(`${hours} hour${hours > 1 ? "s" : ""}`);
+  if (minutes) parts.push(`${minutes} minute${minutes > 1 ? "s" : ""}`);
+  return parts.length ? `within ${parts.join(" ")}` : duration;
 }
 
 /* ── The page component ── */
@@ -316,9 +354,17 @@ export default function ChecklistPage() {
           status,
           consequence_type: consequence.consequence_type,
           checklist_group: template.rendering.checklist_group,
-          urgency: template.rendering.urgency,
+          urgency: {
+            score: template.rendering.urgency_score ?? template.rendering.urgency?.score ?? 50,
+            label: template.rendering.urgency?.label ??
+              ((template.rendering.urgency_score ?? 50) >= 90 ? "urgent" :
+               (template.rendering.urgency_score ?? 50) >= 70 ? "important" : "normal"),
+          },
           authority,
-          deadline_label: deadline?.calculation?.label,
+          deadline_label: deadline?.calculation?.label ??
+            (deadline?.calculation?.duration
+              ? formatDuration(deadline.calculation.duration)
+              : deadline?.title),
           evidence,
           missing_facts: missingFacts.length > 0 ? missingFacts : undefined,
         });
@@ -330,7 +376,7 @@ export default function ChecklistPage() {
       const ga = GROUP_ORDER.indexOf(a.checklist_group);
       const gb = GROUP_ORDER.indexOf(b.checklist_group);
       if (ga !== gb) return ga - gb;
-      return b.urgency.score - a.urgency.score;
+      return (b.urgency?.score ?? 0) - (a.urgency?.score ?? 0);
     });
 
     setItems(generated);
@@ -735,7 +781,9 @@ function ChecklistItemCard({
               <span className="capitalize">
                 {item.consequence_type === "obligation"
                   ? l(lang, "Obligation", "Obligation", "Pflicht")
-                  : l(lang, "Right", "Droit", "Recht")}
+                  : item.consequence_type === "right_or_benefit" || item.consequence_type === "right"
+                    ? l(lang, "Right / Benefit", "Droit / Prestation", "Recht / Leistung")
+                    : l(lang, item.consequence_type, item.consequence_type, item.consequence_type)}
               </span>
             )}
           </div>

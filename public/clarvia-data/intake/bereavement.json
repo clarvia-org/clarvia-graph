@@ -2,37 +2,18 @@
   "life_event": "bereavement",
   "questions": [
     {
-      "id": "intake_fact_type.lu.bereavement.jurisdiction_of_death",
-      "path": "intake_fact.lu.bereavement.jurisdiction_of_death",
-      "label": "Jurisdiction where death occurred",
-      "label_en": "In which country did the death occur?",
-      "label_fr": "Dans quel pays le décès a-t-il eu lieu ?",
-      "label_de": "In welchem Land ist der Todesfall eingetreten?",
-      "value_type": "enum",
-      "options": [
-        { "value": "LU", "label_en": "Luxembourg", "label_fr": "Luxembourg", "label_de": "Luxemburg" },
-        { "value": "DE", "label_en": "Germany", "label_fr": "Allemagne", "label_de": "Deutschland" },
-        { "value": "FR", "label_en": "France", "label_fr": "France", "label_de": "Frankreich" },
-        { "value": "BE", "label_en": "Belgium", "label_fr": "Belgique", "label_de": "Belgien" },
-        { "value": "OTHER", "label_en": "Other", "label_fr": "Autre", "label_de": "Anderes" }
-      ]
+      "id": "intake_fact.global.bereavement.deceased_pension_jurisdiction",
+      "path": "deceased.pension.jurisdiction",
+      "label": "Pension jurisdiction of the deceased",
+      "value_type": "jurisdiction_code",
+      "cardinality": "one"
     },
     {
-      "id": "intake_fact_type.lu.bereavement.deceased_pension_jurisdiction",
-      "path": "intake_fact.lu.bereavement.deceased_pension_jurisdiction",
-      "label": "Pension jurisdiction of the deceased",
-      "label_en": "In which country was the deceased insured for pension?",
-      "label_fr": "Dans quel pays la personne décédée était-elle assurée pour la pension ?",
-      "label_de": "In welchem Land war die verstorbene Person rentenversichert?",
-      "value_type": "enum",
-      "options": [
-        { "value": "LU", "label_en": "Luxembourg", "label_fr": "Luxembourg", "label_de": "Luxemburg" },
-        { "value": "DE", "label_en": "Germany", "label_fr": "Allemagne", "label_de": "Deutschland" },
-        { "value": "FR", "label_en": "France", "label_fr": "France", "label_de": "Frankreich" },
-        { "value": "BE", "label_en": "Belgium", "label_fr": "Belgique", "label_de": "Belgien" },
-        { "value": "OTHER", "label_en": "Other", "label_fr": "Autre", "label_de": "Anderes" },
-        { "value": "UNKNOWN", "label_en": "I don't know", "label_fr": "Je ne sais pas", "label_de": "Ich weiß es nicht" }
-      ]
+      "id": "intake_fact.global.bereavement.jurisdiction_of_death",
+      "path": "death.place.country",
+      "label": "Country where the death occurred",
+      "value_type": "jurisdiction_code",
+      "cardinality": "one"
     }
   ]
 }

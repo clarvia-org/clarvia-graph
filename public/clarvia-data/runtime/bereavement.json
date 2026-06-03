@@ -2,54 +2,83 @@
   "life_event": "bereavement",
   "conditions": [
     {
-      "id": "condition.lu.bereavement.death_occurred_in_lu",
-      "title": "Death occurred in Luxembourg",
+      "id": "condition.lu.bereavement.survivor_pension.deceased_was_lu_insured",
+      "title": "Deceased was insured under Luxembourg pension system",
       "expression_language": "jsonlogic",
-      "expression": { "==": [{ "var": "intake_fact.lu.bereavement.jurisdiction_of_death" }, "LU"] },
+      "expression": {
+        "==": [
+          {
+            "var": "deceased.pension.jurisdiction"
+          },
+          "LU"
+        ]
+      },
       "missing_fact_behavior": "unknown"
     },
     {
-      "id": "condition.lu.bereavement.deceased_was_lu_insured",
-      "title": "Deceased was insured in Luxembourg",
+      "id": "condition.lu.bereavement.death_registration.death_occurred_in_lu",
+      "title": "Death occurred in Luxembourg",
       "expression_language": "jsonlogic",
-      "expression": { "==": [{ "var": "intake_fact.lu.bereavement.deceased_pension_jurisdiction" }, "LU"] },
+      "expression": {
+        "==": [
+          {
+            "var": "death.place.country"
+          },
+          "LU"
+        ]
+      },
       "missing_fact_behavior": "unknown"
     }
   ],
   "consequences": [
     {
-      "id": "consequence.lu.bereavement.declare_death",
-      "title": "Obligation to file death declaration",
+      "id": "consequence.lu.bereavement.death_registration.declare_death",
+      "title": "Death must be declared to the civil registry",
       "consequence_type": "obligation",
       "jurisdiction": "LU",
       "trigger": {
-        "life_event": "bereavement",
-        "condition_refs": ["condition.lu.bereavement.death_occurred_in_lu"]
+        "condition_refs": [
+          "condition.lu.bereavement.death_registration.death_occurred_in_lu"
+        ]
       },
-      "task_template_refs": ["task_template.lu.bereavement.file_death_declaration"]
+      "task_template_refs": [
+        "task_template.lu.bereavement.death_registration.file_death_declaration"
+      ],
+      "confidence": "medium"
     },
     {
-      "id": "consequence.lu.bereavement.claim_survivor_pension",
-      "title": "Right to claim survivor pension",
-      "consequence_type": "right",
+      "id": "consequence.lu.bereavement.survivor_pension.claim_survivor_pension",
+      "title": "Surviving spouse may be entitled to a survivor pension",
+      "consequence_type": "right_or_benefit",
       "jurisdiction": "LU",
       "trigger": {
-        "life_event": "bereavement",
-        "condition_refs": ["condition.lu.bereavement.deceased_was_lu_insured"]
+        "condition_refs": [
+          "condition.lu.bereavement.survivor_pension.deceased_was_lu_insured"
+        ]
       },
-      "task_template_refs": ["task_template.lu.bereavement.file_cnap_claim"]
+      "task_template_refs": [
+        "task_template.lu.bereavement.survivor_pension.file_cnap_claim"
+      ],
+      "confidence": "medium"
     }
   ],
   "task_templates": [
     {
-      "id": "task_template.lu.bereavement.file_death_declaration",
+      "id": "task_template.lu.bereavement.death_registration.file_death_declaration",
       "title": "File death declaration at the commune",
       "action_type": "file_declaration",
-      "authority_refs": ["authority.lu.bureau_etat_civil"],
-      "deadline_refs": ["deadline.lu.death_declaration_deadline"],
+      "authority_refs": [
+        "authority.lu.bureau_etat_civil"
+      ],
+      "deadline_refs": [
+        "deadline.lu.bereavement.death_registration.declaration_deadline"
+      ],
       "evidence_requirements": {
+        "satisfy_if": "all_sets_satisfied",
         "sets": [
           {
+            "id": "core_documents",
+            "operator": "all",
             "evidence_type_refs": [
               "evidence_type.lu.medical_death_certificate",
               "evidence_type.lu.identity_document_deceased"
@@ -59,18 +88,24 @@
       },
       "rendering": {
         "checklist_group": "immediate_formalities",
-        "urgency": { "score": 95, "label": "urgent" }
+        "urgency_score": 95,
+        "dependency_rank": 1,
+        "user_visible_caveat": null
       }
     },
     {
-      "id": "task_template.lu.bereavement.file_cnap_claim",
+      "id": "task_template.lu.bereavement.survivor_pension.file_cnap_claim",
       "title": "File survivor pension claim with CNAP",
-      "action_type": "file_claim",
-      "authority_refs": ["authority.lu.cnap"],
-      "deadline_refs": [],
+      "action_type": "submit_application",
+      "authority_refs": [
+        "authority.lu.cnap"
+      ],
       "evidence_requirements": {
+        "satisfy_if": "all_sets_satisfied",
         "sets": [
           {
+            "id": "pension_documents",
+            "operator": "all",
             "evidence_type_refs": [
               "evidence_type.lu.death_certificate",
               "evidence_type.lu.marriage_certificate"
@@ -80,7 +115,9 @@
       },
       "rendering": {
         "checklist_group": "money_and_benefits",
-        "urgency": { "score": 70, "label": "important" }
+        "urgency_score": 70,
+        "dependency_rank": 2,
+        "user_visible_caveat": "Only applicable if the deceased was insured in Luxembourg"
       }
     }
   ],
@@ -92,42 +129,56 @@
     },
     {
       "id": "authority.lu.cnap",
-      "name": "Caisse nationale d'assurance pension",
+      "name": "Caisse Nationale d'Assurance Pension",
       "name_en": "National Pension Insurance Fund"
     }
   ],
   "deadlines": [
     {
-      "id": "deadline.lu.death_declaration_deadline",
+      "id": "deadline.lu.bereavement.death_registration.declaration_deadline",
       "title": "Death declaration deadline",
-      "deadline_type": "relative",
+      "deadline_type": "filing_deadline",
       "calculation": {
-        "anchor_event": "date_of_death",
-        "offset_hours": 24,
-        "label": "within 24 hours"
+        "kind": "relative",
+        "duration": "PT24H",
+        "starts_from_fact": "intake_fact.global.bereavement.date_of_death",
+        "calendar": "civil",
+        "if_weekend_or_holiday": "unknown"
       }
     }
   ],
   "evidence_types": [
     {
       "id": "evidence_type.lu.medical_death_certificate",
-      "canonical_name": "Medical death certificate",
-      "synonyms": ["certificat médical de décès", "ärztliche Todesbescheinigung"]
+      "canonical_name": "Certificat médical de décès",
+      "synonyms": [
+        "Medical death certificate",
+        "Ärztliche Sterbeurkunde"
+      ]
     },
     {
       "id": "evidence_type.lu.identity_document_deceased",
-      "canonical_name": "Identity document of the deceased",
-      "synonyms": ["pièce d'identité du défunt", "Ausweis des Verstorbenen"]
+      "canonical_name": "Document d'identité du défunt",
+      "synonyms": [
+        "Identity document of the deceased",
+        "Personalausweis des Verstorbenen"
+      ]
     },
     {
       "id": "evidence_type.lu.death_certificate",
-      "canonical_name": "Death certificate",
-      "synonyms": ["acte de décès", "Sterbeurkunde"]
+      "canonical_name": "Acte de décès",
+      "synonyms": [
+        "Death certificate",
+        "Sterbeurkunde"
+      ]
     },
     {
       "id": "evidence_type.lu.marriage_certificate",
-      "canonical_name": "Marriage certificate",
-      "synonyms": ["acte de mariage", "Heiratsurkunde"]
+      "canonical_name": "Acte de mariage",
+      "synonyms": [
+        "Marriage certificate",
+        "Heiratsurkunde"
+      ]
     }
   ]
 }
