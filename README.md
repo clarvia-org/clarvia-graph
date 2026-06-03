@@ -97,6 +97,20 @@ Current pages:
 
 ---
 
+## Development model
+
+This repository is the public web layer for Clarvia. It turns structured workflow data into simple, multilingual checklist experiences that families can actually use.
+
+We are developing the web layer in rapid proof-of-concept, alpha, and beta phases using internal resources. This allows us to test the user journey, accessibility, language handling, source display, correction paths, and public feedback loops before formal funding timelines are complete.
+
+This early work is not a replacement for funded development. It is a way to make progress visible, reduce delivery risk, and learn from real implementation.
+
+Future funded phases will focus on improving the public service to a higher standard: accessibility, usability testing, localization, content review, production hardening, security, documentation, performance, and long-term maintainability.
+
+The goal is to test limited, clearly marked public-facing versions where appropriate while identifying what must be validated, improved, and hardened before full public release.
+
+---
+
 ## Development
 
 Install dependencies:
