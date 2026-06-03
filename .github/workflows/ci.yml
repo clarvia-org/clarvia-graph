@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  validate:
+  lint-typecheck-test:
     name: Lint, typecheck, test
     runs-on: ubuntu-latest
 
@@ -30,8 +30,34 @@ jobs:
       - name: Typecheck
         run: pnpm typecheck
 
-      - name: Lint
+      - name: Lint (ESLint)
         run: pnpm lint
 
-      - name: Test
+      - name: Unit tests
         run: pnpm test
+
+  validate-graph:
+    name: Validate graph data
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".node-version"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Schema validation
+        run: pnpm validate
+
+      - name: ID grammar checks
+        run: pnpm lint-ids
+
+      - name: Referential integrity
+        run: pnpm check-references

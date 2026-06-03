@@ -12,7 +12,10 @@
     "build": "tsc",
     "validate": "node --loader ts-node/esm src/index.ts validate",
     "lint-ids": "node --loader ts-node/esm src/index.ts lint-ids",
-    "build-checklist": "node --loader ts-node/esm src/index.ts build-checklist"
+    "check-references": "node --loader ts-node/esm src/index.ts check-references",
+    "build-checklist": "node --loader ts-node/esm src/index.ts build-checklist",
+    "export-json": "node --loader ts-node/esm src/index.ts export-json",
+    "export-web": "node --loader ts-node/esm src/index.ts export-web"
   },
   "dependencies": {
     "ajv": "^8.17.1",

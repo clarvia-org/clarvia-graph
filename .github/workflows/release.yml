@@ -1,0 +1,76 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build and release
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: ".node-version"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run all checks
+        run: |
+          pnpm typecheck
+          pnpm lint
+          pnpm test
+          pnpm validate
+          pnpm lint-ids
+          pnpm check-references
+
+      - name: Export JSON
+        run: pnpm export-json
+
+      - name: Export web bundle
+        run: pnpm export-web
+
+      - name: Create release archive
+        run: |
+          cd .clarvia-output
+          tar -czf ../clarvia-graph-${{ github.ref_name }}.tar.gz .
+          cd ..
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: clarvia-graph-${{ github.ref_name }}.tar.gz
+          generate_release_notes: true
+          body: |
+            ## Clarvia Graph ${{ github.ref_name }}
+
+            This release contains:
+            - `graph-export.json` — full graph data as JSON
+            - `web/manifest.json` — web runtime manifest
+            - `web/intake/*.json` — intake question sets per life event
+            - `web/runtime/*.json` — pre-compiled runtime data per life event
+
+            ### Usage
+
+            Download and extract `clarvia-graph-${{ github.ref_name }}.tar.gz`.
+
+            **For workflow-web integration:**
+            ```bash
+            tar -xzf clarvia-graph-${{ github.ref_name }}.tar.gz -C public/clarvia-data/
+            ```
+
+            **For API/analysis:**
+            ```bash
+            cat graph-export.json | jq '.stats'
+            ```

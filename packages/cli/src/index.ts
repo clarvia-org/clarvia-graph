@@ -67,6 +67,18 @@ switch (command) {
     break;
   }
 
+  case "export-json": {
+    const { main } = await import("./commands/export-json.js");
+    await main();
+    break;
+  }
+
+  case "export-web": {
+    const { main } = await import("./commands/export-web.js");
+    await main();
+    break;
+  }
+
   case undefined:
   case "--help":
   case "-h":
@@ -79,11 +91,13 @@ Commands:
   validate              Validate YAML files against JSON Schemas
   lint-ids              Check ID grammar and length rules
   check-references      Verify all references point to existing records
-  check-anchors         Verify assertion anchors exist in snapshots
-  check-publication-gate  Check publication gate requirements
-  check-contradictions  Detect overlapping conflicting claims
-  test-scenarios        Run scenario regression tests
+  check-anchors         Verify assertion anchors exist in snapshots (planned)
+  check-publication-gate  Check publication gate requirements (planned)
+  check-contradictions  Detect overlapping conflicting claims (planned)
+  test-scenarios        Run scenario regression tests (planned)
   build-checklist       Generate checklist output for test scenarios
+  export-json           Export full graph as JSON
+  export-web            Export web runtime bundle for workflow-web
 
 This is early alpha tooling. Not all commands are implemented yet.
 `);
