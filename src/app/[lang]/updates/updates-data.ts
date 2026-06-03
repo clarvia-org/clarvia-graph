@@ -10,6 +10,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-06-03",
+    headline: {
+      en: "Clarvia Joins the Open Invention Network Community",
+      fr: "Clarvia rejoint la communauté de l'Open Invention Network",
+      de: "Clarvia tritt der Open Invention Network-Gemeinschaft bei",
+    },
+    body: {
+      en: "Clarvia has joined the Open Invention Network (OIN) community, supporting patent non-aggression around open-source software. By participating in this global defensive patent pool, we reinforce our commitment to building open, public-interest infrastructure that remains free and accessible to all.",
+      fr: "Clarvia a rejoint la communauté de l'Open Invention Network (OIN), soutenant la non-agression en matière de brevets autour des logiciels open source. En participant à ce regroupement mondial de défense des brevets, nous renforçons notre engagement à développer une infrastructure ouverte d'intérêt public qui reste libre et accessible à tous.",
+      de: "Clarvia ist der Gemeinschaft des Open Invention Network (OIN) beigetreten, um die Patent-Non-Aggression im Bereich von Open-Source-Software zu unterstützen. Durch unsere Teilnahme an diesem globalen defensiven Patentpool stärken wir unser Engagement für den Aufbau einer offenen, gemeinwohlorientierten Infrastruktur, die für alle frei und zugänglich bleibt.",
+    },
+  },
+  {
     date: "2026-05-29",
     headline: {
       en: "Clarvia Submits Proposal for Reusable Workflow Commons Infrastructure",
