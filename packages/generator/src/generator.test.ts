@@ -124,7 +124,8 @@ describe("generateChecklist", () => {
       lifeEvent: "bereavement",
     });
 
-    expect(output.id).toMatch(/^checklist_run\./);
+    expect(output.id).toMatch(/^checklist\./);
+    expect(output.checklist_run_id).toMatch(/^checklist_run\./);
     expect(output.life_event).toBe("bereavement");
     expect(output.generated_at).toBeTruthy();
     expect(output.graph_version).toBe("0.1.0");
@@ -145,7 +146,8 @@ describe("generateChecklist", () => {
 
     // Checklist ID should be fully deterministic (no timestamp in hash)
     expect(output1.id).toBe(output2.id);
-    expect(output1.id).toMatch(/^checklist_run\.20260603\./);
+    expect(output1.id).toMatch(/^checklist\./);
+    expect(output1.checklist_run_id).toMatch(/^checklist_run\.20260603\d*\./);
 
     // Item IDs should also be deterministic
     expect(output1.items.map((i) => i.id)).toEqual(
@@ -278,4 +280,454 @@ describe("generateChecklist", () => {
     expect(output1.items.length).toBe(output2.items.length);
     expect(output1.id).toBe(output2.id);
   });
+
+  describe("deduplication", () => {
+    it("merges two tasks in the same jurisdiction with a merge strategy", () => {
+      const mockGraph = {
+        consequences: new Map([
+          [
+            "consequence.lu.test1",
+            {
+              id: "consequence.lu.test1",
+              schema_version: "0.1.0",
+              title: "Consequence 1",
+              consequence_type: "obligation",
+              jurisdiction: "LU",
+              life_event: "bereavement",
+              domain: "death_registration",
+              task_template_refs: ["task_template.lu.test_task"],
+              authoring_status: "approved",
+              distribution_status: "public_open",
+              record_valid_from: "2026-06-03",
+            },
+          ],
+          [
+            "consequence.lu.test2",
+            {
+              id: "consequence.lu.test2",
+              schema_version: "0.1.0",
+              title: "Consequence 2",
+              consequence_type: "obligation",
+              jurisdiction: "LU",
+              life_event: "bereavement",
+              domain: "death_registration",
+              task_template_refs: ["task_template.lu.test_task"],
+              authoring_status: "approved",
+              distribution_status: "public_open",
+              record_valid_from: "2026-06-03",
+            },
+          ],
+        ]),
+        taskTemplates: new Map([
+          [
+            "task_template.lu.test_task",
+            {
+              id: "task_template.lu.test_task",
+              schema_version: "0.1.0",
+              title: "Merged Task",
+              action_type: "file_declaration",
+              jurisdiction: "LU",
+              life_event: "bereavement",
+              domain: "death_registration",
+              authoring_status: "approved",
+              distribution_status: "public_open",
+              record_valid_from: "2026-06-03",
+              dedupe: {
+                default_strategy: "merge",
+                dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}",
+              },
+              target: {
+                object_type: "death_declaration",
+              },
+            },
+          ],
+        ]),
+        conditions: new Map(),
+        deadlines: new Map(),
+        authorities: new Map(),
+        evidenceTypes: new Map(),
+        intakeFactTypes: new Map(),
+        sources: new Map(),
+      } as any;
+
+      const output = generateChecklist({
+        graph: mockGraph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+      });
+
+      expect(output.items.length).toBe(1);
+      expect(output.items[0].title).toBe("Merged Task");
+      expect(output.items[0].needed_for).toEqual(["Consequence 1", "Consequence 2"]);
+      expect(output.items[0].jurisdiction_contexts).toEqual(["LU"]);
+    });
+
+    it("does not merge tasks across jurisdictions when strategy is do_not_merge_across_jurisdictions", () => {
+      const mockGraph = {
+        consequences: new Map([
+          [
+            "consequence.lu.test",
+            {
+              id: "consequence.lu.test",
+              schema_version: "0.1.0",
+              title: "LU Consequence",
+              consequence_type: "obligation",
+              jurisdiction: "LU",
+              life_event: "bereavement",
+              domain: "death_registration",
+              task_template_refs: ["task_template.global.test_task"],
+              authoring_status: "approved",
+              distribution_status: "public_open",
+              record_valid_from: "2026-06-03",
+            },
+          ],
+          [
+            "consequence.de.test",
+            {
+              id: "consequence.de.test",
+              schema_version: "0.1.0",
+              title: "DE Consequence",
+              consequence_type: "obligation",
+              jurisdiction: "DE",
+              life_event: "bereavement",
+              domain: "death_registration",
+              task_template_refs: ["task_template.global.test_task"],
+              authoring_status: "approved",
+              distribution_status: "public_open",
+              record_valid_from: "2026-06-03",
+            },
+          ],
+        ]),
+        taskTemplates: new Map([
+          [
+            "task_template.global.test_task",
+            {
+              id: "task_template.global.test_task",
+              schema_version: "0.1.0",
+              title: "Shared Task",
+              action_type: "file_declaration",
+              jurisdiction: "global",
+              life_event: "bereavement",
+              domain: "death_registration",
+              authoring_status: "approved",
+              distribution_status: "public_open",
+              record_valid_from: "2026-06-03",
+              dedupe: {
+                default_strategy: "do_not_merge_across_jurisdictions",
+                dedupe_key_template: "{action_type}.{target.object_type}",
+              },
+              target: {
+                object_type: "death_declaration",
+              },
+            },
+          ],
+        ]),
+        conditions: new Map(),
+        deadlines: new Map(),
+        authorities: new Map(),
+        evidenceTypes: new Map(),
+        intakeFactTypes: new Map(),
+        sources: new Map(),
+      } as any;
+
+      const output = generateChecklist({
+        graph: mockGraph,
+        facts: [
+          { fact_type: "death.place.country", value: "LU" },
+          { fact_type: "deceased.pension.jurisdiction", value: "DE" }, // dummy to make DE relevant too
+        ],
+        lifeEvent: "bereavement",
+      });
+
+      expect(output.items.length).toBe(2);
+      expect(output.items[0].id).not.toBe(output.items[1].id);
+    });
+
+    it("throws an error when an invalid placeholder is used in dedupe_key_template", () => {
+      const mockGraph = {
+        consequences: new Map([
+          [
+            "consequence.lu.test",
+            {
+              id: "consequence.lu.test",
+              schema_version: "0.1.0",
+              title: "LU Consequence",
+              consequence_type: "obligation",
+              jurisdiction: "LU",
+              life_event: "bereavement",
+              domain: "death_registration",
+              task_template_refs: ["task_template.lu.test_task"],
+              authoring_status: "approved",
+              distribution_status: "public_open",
+              record_valid_from: "2026-06-03",
+            },
+          ],
+        ]),
+        taskTemplates: new Map([
+          [
+            "task_template.lu.test_task",
+            {
+              id: "task_template.lu.test_task",
+              schema_version: "0.1.0",
+              title: "Test Task",
+              action_type: "file_declaration",
+              jurisdiction: "LU",
+              life_event: "bereavement",
+              domain: "death_registration",
+              authoring_status: "approved",
+              distribution_status: "public_open",
+              record_valid_from: "2026-06-03",
+              dedupe: {
+                default_strategy: "merge",
+                dedupe_key_template: "{invalid_placeholder}",
+              },
+              target: {
+                object_type: "death_declaration",
+              },
+            },
+          ],
+        ]),
+        conditions: new Map(),
+        deadlines: new Map(),
+        authorities: new Map(),
+        evidenceTypes: new Map(),
+        intakeFactTypes: new Map(),
+        sources: new Map(),
+      } as any;
+
+      expect(() => {
+        generateChecklist({
+          graph: mockGraph,
+          facts: [{ fact_type: "death.place.country", value: "LU" }],
+          lifeEvent: "bereavement",
+        });
+      }).toThrow(/Invalid placeholder/);
+    });
+  });
+
+  describe("temporal filtering", () => {
+    const makeBaseGraph = () => ({
+      consequences: new Map([
+        [
+          "consequence.lu.test",
+          {
+            id: "consequence.lu.test",
+            schema_version: "0.1.0",
+            title: "LU Consequence",
+            consequence_type: "obligation",
+            jurisdiction: "LU",
+            life_event: "bereavement",
+            domain: "death_registration",
+            task_template_refs: ["task_template.lu.test_task"],
+            authoring_status: "approved",
+            distribution_status: "public_open",
+            record_valid_from: "2026-05-01",
+            legal_effective_from: "2026-05-01",
+            source_assertion_refs: ["assertion.test.1"],
+          },
+        ],
+      ]),
+      taskTemplates: new Map([
+        [
+          "task_template.lu.test_task",
+          {
+            id: "task_template.lu.test_task",
+            schema_version: "0.1.0",
+            title: "Test Task",
+            action_type: "file_declaration",
+            jurisdiction: "LU",
+            life_event: "bereavement",
+            domain: "death_registration",
+            authoring_status: "approved",
+            distribution_status: "public_open",
+            record_valid_from: "2026-05-01",
+            deadline_refs: ["deadline.test"],
+          },
+        ],
+      ]),
+      conditions: new Map(),
+      deadlines: new Map([
+        [
+          "deadline.test",
+          {
+            id: "deadline.test",
+            schema_version: "0.1.0",
+            title: "Test Deadline",
+            deadline_type: "filing_deadline",
+            calculation: {
+              kind: "relative",
+              duration: "PT24H",
+            },
+            record_valid_from: "2026-05-01",
+          },
+        ],
+      ]),
+      authorities: new Map(),
+      evidenceTypes: new Map(),
+      intakeFactTypes: new Map(),
+      sources: new Map([
+        [
+          "source.test",
+          {
+            id: "source.test",
+            schema_version: "0.1.0",
+            title: "Test Source",
+            jurisdiction: "LU",
+          },
+        ],
+      ]),
+      assertions: new Map([
+        [
+          "assertion.test.1",
+          {
+            id: "assertion.test.1",
+            schema_version: "0.1.0",
+            claim_type: "deadline",
+            claim_text: "Must declare",
+            source_id: "source.test",
+            source_snapshot_id: "snapshot.test",
+            record_valid_from: "2026-05-01",
+          },
+        ],
+      ]),
+    } as any);
+
+    it("includes consequence when it is within validity and legal effective range", () => {
+      const graph = makeBaseGraph();
+      const output = generateChecklist({
+        graph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+        asOfDate: "2026-06-03",
+        eventDate: "2026-06-03",
+      });
+      expect(output.items.length).toBe(1);
+      expect(output.items[0].source_summary?.assertion_count).toBe(1);
+    });
+
+    it("excludes future consequence by record_valid_from", () => {
+      const graph = makeBaseGraph();
+      graph.consequences.get("consequence.lu.test").record_valid_from = "2026-07-01";
+      const output = generateChecklist({
+        graph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+        asOfDate: "2026-06-03",
+        eventDate: "2026-06-03",
+      });
+      expect(output.items.length).toBe(0);
+    });
+
+    it("excludes expired consequence by record_valid_to", () => {
+      const graph = makeBaseGraph();
+      graph.consequences.get("consequence.lu.test").record_valid_to = "2026-05-15";
+      const output = generateChecklist({
+        graph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+        asOfDate: "2026-06-03",
+        eventDate: "2026-06-03",
+      });
+      expect(output.items.length).toBe(0);
+    });
+
+    it("excludes not-yet-effective consequence by legal_effective_from", () => {
+      const graph = makeBaseGraph();
+      graph.consequences.get("consequence.lu.test").legal_effective_from = "2026-07-01";
+      const output = generateChecklist({
+        graph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+        asOfDate: "2026-06-03",
+        eventDate: "2026-06-03",
+      });
+      expect(output.items.length).toBe(0);
+    });
+
+    it("excludes legally expired consequence by legal_effective_to", () => {
+      const graph = makeBaseGraph();
+      graph.consequences.get("consequence.lu.test").legal_effective_to = "2026-05-15";
+      const output = generateChecklist({
+        graph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+        asOfDate: "2026-06-03",
+        eventDate: "2026-06-03",
+      });
+      expect(output.items.length).toBe(0);
+    });
+
+    it("excludes task template if it does not apply temporally", () => {
+      const graph = makeBaseGraph();
+      graph.taskTemplates.get("task_template.lu.test_task").record_valid_from = "2026-07-01";
+      const output = generateChecklist({
+        graph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+        asOfDate: "2026-06-03",
+        eventDate: "2026-06-03",
+      });
+      // The consequence itself applies, but has no tasks since the only task template doesn't apply
+      expect(output.items.length).toBe(0);
+    });
+
+    it("excludes condition when it does not apply temporally, causing trigger to fail", () => {
+      const graph = makeBaseGraph();
+      graph.consequences.get("consequence.lu.test").trigger = {
+        condition_refs: ["condition.test"],
+      };
+      graph.conditions.set("condition.test", {
+        id: "condition.test",
+        schema_version: "0.1.0",
+        title: "Test Condition",
+        condition_type: "criterion",
+        jurisdiction: "LU",
+        life_event: "bereavement",
+        domain: "death_registration",
+        expression_language: "jsonlogic",
+        expression: { "==": [{ var: "death.place.country" }, "LU"] },
+        missing_fact_behavior: "unknown",
+        record_valid_from: "2026-07-01", // Future condition
+      });
+
+      const output = generateChecklist({
+        graph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+        asOfDate: "2026-06-03",
+        eventDate: "2026-06-03",
+      });
+      expect(output.items.length).toBe(0);
+    });
+
+    it("excludes deadline when it does not apply temporally", () => {
+      const graph = makeBaseGraph();
+      graph.taskTemplates.get("task_template.lu.test_task").rendering = { urgency_score: 70 };
+      graph.deadlines.get("deadline.test").record_valid_from = "2026-07-01";
+      const output = generateChecklist({
+        graph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+        asOfDate: "2026-06-03",
+        eventDate: "2026-06-03",
+      });
+      expect(output.items.length).toBe(1);
+      expect(output.items[0].urgency?.deadline_label).toBeNull();
+    });
+
+    it("excludes source assertion and decreases assertion count when assertion is not valid", () => {
+      const graph = makeBaseGraph();
+      graph.assertions.get("assertion.test.1").record_valid_from = "2026-07-01";
+      const output = generateChecklist({
+        graph,
+        facts: [{ fact_type: "death.place.country", value: "LU" }],
+        lifeEvent: "bereavement",
+        asOfDate: "2026-06-03",
+        eventDate: "2026-06-03",
+      });
+      expect(output.items.length).toBe(1);
+      expect(output.items[0].source_summary?.assertion_count).toBe(0);
+    });
+  });
 });
+

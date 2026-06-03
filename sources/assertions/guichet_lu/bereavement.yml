@@ -13,7 +13,7 @@ assertions:
       domain: death_registration
     anchor:
       selector_type: text_quote
-      text_quote: "declare the death to the civil registry office"
+      text_quote: "declared within 24 hours to the civil registrar's office"
     source_tier: official_guidance
     record_valid_from: "2026-06-03"
     review_status: draft
@@ -57,7 +57,7 @@ assertions:
       domain: survivor_pension
     anchor:
       selector_type: text_quote
-      text_quote: "survivor pension"
+      text_quote: "survivor's pension"
     source_tier: official_guidance
     record_valid_from: "2026-06-03"
     review_status: draft
@@ -65,3 +65,4 @@ assertions:
     provenance:
       extraction_method: ai_assisted
       extracted_at: "2026-06-03T12:00:00Z"
+

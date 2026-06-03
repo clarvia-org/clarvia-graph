@@ -8,6 +8,7 @@
 
 import type { LoadedGraph } from "./loader.js";
 import type { TriValue } from "./evaluator.js";
+import { recordApplies, type TemporalContext } from "./temporal.js";
 
 export interface ConditionTrace {
   condition_ref: string;
@@ -36,6 +37,7 @@ export function buildExplanationTrace(
   conditionRefs: string[],
   conditionResults: Map<string, { result: TriValue; missingFacts: string[] }>,
   graph: LoadedGraph,
+  temporalCtx?: TemporalContext,
 ): ExplanationTrace {
   const conditions: ConditionTrace[] = [];
   const whyVisible: string[] = [];
@@ -71,6 +73,10 @@ export function buildExplanationTrace(
 
   if (consequence) {
     for (const assertionRef of consequence.source_assertion_refs ?? []) {
+      const ass = graph.assertions?.get(assertionRef);
+      if (ass && temporalCtx && !recordApplies(ass, temporalCtx)) {
+        continue;
+      }
       // Find the source that contains this assertion
       for (const [, source] of graph.sources ?? new Map()) {
         if (!seenSources.has(source.id)) {

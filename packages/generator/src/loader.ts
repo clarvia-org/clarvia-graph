@@ -107,6 +107,17 @@ export interface SourceRecord extends GraphRecord {
   jurisdiction: string;
 }
 
+export interface SourceAssertion extends GraphRecord {
+  claim_type: string;
+  claim_text: string;
+  source_id: string;
+  source_snapshot_id: string;
+  record_valid_from: string;
+  record_valid_to?: string | null;
+  legal_effective_from?: string;
+  legal_effective_to?: string | null;
+}
+
 // ── The loaded graph ─────────────────────────────────────────────────
 
 export interface LoadedGraph {
@@ -118,6 +129,7 @@ export interface LoadedGraph {
   evidenceTypes: Map<string, EvidenceType>;
   intakeFactTypes: Map<string, IntakeFactType>;
   sources: Map<string, SourceRecord>;
+  assertions: Map<string, SourceAssertion>;
 }
 
 // ── Loader ───────────────────────────────────────────────────────────
@@ -144,6 +156,29 @@ function loadDir<T extends GraphRecord>(
 }
 
 export function loadGraph(rootDir: string): LoadedGraph {
+  const assertions = new Map<string, SourceAssertion>();
+  const assertionFiles = globSync("sources/assertions/**/*.{yml,yaml}", { cwd: rootDir, absolute: true });
+
+  for (const file of assertionFiles) {
+    try {
+      const raw = readFileSync(file, "utf-8");
+      const doc = parseYaml(raw) as { source_id: string; source_snapshot_id: string; assertions?: SourceAssertion[] };
+      if (doc?.assertions && Array.isArray(doc.assertions)) {
+        for (const ass of doc.assertions) {
+          if (ass.id) {
+            assertions.set(ass.id, {
+              ...ass,
+              source_id: ass.source_id || doc.source_id,
+              source_snapshot_id: ass.source_snapshot_id || doc.source_snapshot_id,
+            });
+          }
+        }
+      }
+    } catch {
+      // Ignore files that fail to load (will be caught by schema validation)
+    }
+  }
+
   return {
     consequences: loadDir<Consequence>(
       rootDir,
@@ -174,5 +209,6 @@ export function loadGraph(rootDir: string): LoadedGraph {
       rootDir,
       "sources/*/*.{yml,yaml}",
     ),
+    assertions,
   };
 }

@@ -137,6 +137,7 @@ export async function runCheckReferences(
   const patterns = [
     "graph/**/*.{yml,yaml}",
     "sources/assertions/**/*.{yml,yaml}",
+    "sources/snapshots/**/*.{yml,yaml}",
   ];
   const files = patterns.flatMap((p: string) =>
     globSync(p, { cwd: rootDir, absolute: true }),

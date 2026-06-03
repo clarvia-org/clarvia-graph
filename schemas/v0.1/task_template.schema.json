@@ -75,7 +75,8 @@
     "authoring_status": { "$ref": "defs/status.schema.json#/$defs/authoring_status" },
     "distribution_status": { "$ref": "defs/status.schema.json#/$defs/distribution_status" },
     "record_valid_from": { "type": "string", "format": "date" },
-    "record_valid_to": { "type": ["string", "null"], "format": "date" }
+    "record_valid_to": { "type": ["string", "null"], "format": "date" },
+    "provenance": { "$ref": "defs/provenance.schema.json#/$defs/provenance" }
   },
   "required": ["id", "schema_version", "title", "action_type", "jurisdiction", "life_event", "domain", "authoring_status", "distribution_status", "record_valid_from"]
 }

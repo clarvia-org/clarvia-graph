@@ -2,12 +2,15 @@ id: snapshot.guichet_lu.bereavement.2026_06_03
 schema_version: "0.1.0"
 source_id: source.guichet_lu.bereavement
 captured_at: "2026-06-03T12:00:00Z"
-capture_method: manual
-content_hash:
-  algorithm: sha256
-  value: "pending_capture"
+capture_method: http_get
+content_hash: "sha256:42dceca3f405d11fc0ead8e01f93231ec74bdbf920594510f168316ee15f92e4"
 archive_uri: "sources/snapshots/html/guichet_lu_bereavement_2026_06_03.html"
 page_url: "https://guichet.public.lu/en/citoyens/life-event/famille-education/deces-proche.html"
-authoring_status: draft
+authoring_status: approved
 distribution_status: public_open
 record_valid_from: "2026-06-03"
+http_status: 200
+captured_by: "software.extractor.v0.1"
+source_last_modified_at: null
+content_type: "text/html"
+

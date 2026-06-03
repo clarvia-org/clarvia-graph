@@ -31,6 +31,7 @@ import {
   buildExplanationTrace,
   type ExplanationTrace,
 } from "./explanation.js";
+import { recordApplies, type TemporalContext } from "./temporal.js";
 
 // Re-export types for convenience
 export type { Fact } from "./evaluator.js";
@@ -80,6 +81,7 @@ export interface ChecklistSection {
 
 export interface ChecklistOutput {
   id: string;
+  checklist_run_id: string;
   life_event: string;
   generated_at: string;
   graph_version: string;
@@ -121,6 +123,7 @@ const GROUP_ORDER: Record<string, { order: number; label: string }> = {
 // ── Deterministic item ID ────────────────────────────────────────────
 
 function makeItemId(
+  scenarioHash: string,
   consequenceId: string,
   taskTemplateId: string,
 ): string {
@@ -128,7 +131,124 @@ function makeItemId(
     .update(`${consequenceId}::${taskTemplateId}`)
     .digest("hex")
     .slice(0, 12);
-  return `item.${hash}`;
+  return `checklist_item.${scenarioHash}.${hash}`;
+}
+
+// ── Deduplication and Merging helpers ────────────────────────────────
+
+interface DedupeConfig {
+  default_strategy?: string;
+  dedupe_key_template?: string;
+}
+
+function resolveDedupeKey(
+  template: (TaskTemplate & { dedupe?: DedupeConfig }) | null,
+  consequence: Consequence,
+): { key: string; strategy: string } {
+  if (!template) {
+    return { key: `consequence.${consequence.id}`, strategy: "do_not_merge" };
+  }
+
+  const dedupe = template.dedupe;
+  if (!dedupe || !dedupe.dedupe_key_template) {
+    return { key: `template.${template.id}`, strategy: "do_not_merge" };
+  }
+
+  const strategy = dedupe.default_strategy || "do_not_merge_across_jurisdictions";
+  let key = dedupe.dedupe_key_template;
+
+  const placeholders = key.match(/\{[a-zA-Z0-9_.]+\}/g) || [];
+  for (const placeholder of placeholders) {
+    const name = placeholder.slice(1, -1);
+    let val: string | null = null;
+    switch (name) {
+      case "action_type":
+        val = template.action_type || null;
+        break;
+      case "jurisdiction":
+        val = consequence.jurisdiction || null;
+        break;
+      case "life_event":
+        val = consequence.life_event || null;
+        break;
+      case "domain":
+        val = consequence.domain || null;
+        break;
+      case "target.object_type":
+        val = template.target?.object_type || null;
+        break;
+      case "target.object_ref":
+        val = template.target?.object_ref || null;
+        break;
+      case "target.subject_role":
+        val = template.target?.subject_role || null;
+        break;
+      case "target.primary_authority_ref":
+        val = template.target?.primary_authority_ref || (template.authority_refs?.[0] ?? null);
+        break;
+      default:
+        throw new Error(`Invalid placeholder in dedupe key template: ${name}`);
+    }
+    key = key.replace(placeholder, String(val ?? "null"));
+  }
+
+  return { key, strategy };
+}
+
+function mergeStatuses(statuses: ItemStatus[]): ItemStatus {
+  if (statuses.includes("blocked")) return "blocked";
+  if (statuses.includes("needs_fact")) return "needs_fact";
+  if (statuses.includes("maybe_applies")) return "maybe_applies";
+  return "applies";
+}
+
+interface ConditionTrace {
+  condition_ref: string;
+  result: "true" | "false" | "unknown";
+  facts_used: string[];
+}
+
+interface SourceTrace {
+  source_title: string;
+  publisher: string;
+  official_url: string;
+  assertion_refs: string[];
+}
+
+function mergeExplanationTraces(
+  traces: ExplanationTrace[],
+  mergedTraceId: string,
+): ExplanationTrace {
+  const why_visible: string[] = [];
+  const conditions: ConditionTrace[] = [];
+  const sources: SourceTrace[] = [];
+
+  const seenConditionRefs = new Set<string>();
+
+  for (const trace of traces) {
+    why_visible.push(...trace.why_visible);
+    for (const cond of trace.conditions) {
+      if (!seenConditionRefs.has(cond.condition_ref)) {
+        conditions.push(cond as any);
+        seenConditionRefs.add(cond.condition_ref);
+      }
+    }
+    for (const src of trace.sources) {
+      const existing = sources.find(s => s.official_url === src.official_url);
+      if (existing) {
+        existing.assertion_refs = [...new Set([...existing.assertion_refs, ...src.assertion_refs])];
+      } else {
+        sources.push({ ...src } as any);
+      }
+    }
+  }
+
+  return {
+    id: mergedTraceId,
+    why_visible: [...new Set(why_visible)],
+    conditions: conditions as any,
+    sources: sources as any,
+  };
 }
 
 // ── Urgency label from score ─────────────────────────────────────────
@@ -161,6 +281,7 @@ export interface GenerateOptions {
   graphVersion?: string;
   graphCommit?: string | null;
   asOfDate?: string;
+  eventDate?: string;
 }
 
 // ── The 6-step algorithm ─────────────────────────────────────────────
@@ -173,6 +294,7 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     graphVersion = "0.1.0",
     graphCommit = null,
     asOfDate,
+    eventDate: optEventDate,
   } = opts;
 
   // Determine reference date for temporal filtering
@@ -181,39 +303,39 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   // ─── Step 1: Normalize scenario facts ────────────────────────────
   const facts = normalizeFacts(rawFacts);
 
+  // Determine event date for temporal filtering
+  const eventDate = optEventDate ?? facts.find(f => f.fact_type === "death.date" || f.fact_type === "death.datetime")?.value ?? referenceDate;
+
+  const temporalCtx: TemporalContext = { asOfDate: referenceDate, eventDate: String(eventDate) };
+
+  // Compute deterministic scenario hash
+  const canonicalFacts = JSON.stringify(
+    [...facts].sort((a, b) => a.fact_type.localeCompare(b.fact_type)),
+  );
+  const scenarioHash = createHash("sha256")
+    .update(`${lifeEvent}::${canonicalFacts}`)
+    .digest("hex")
+    .slice(0, 12);
+
   // ─── Step 2: Resolve jurisdiction roles ──────────────────────────
   const jurisdictionRoles = resolveJurisdictionRoles(facts);
   const relevantJurisdictions = getRelevantJurisdictions(jurisdictionRoles);
   const crossBorder = isCrossBorder(jurisdictionRoles);
 
-  const items: ChecklistItem[] = [];
   const explanationTraces: ExplanationTrace[] = [];
 
   // ─── Step 3: Retrieve candidate consequences ────────────────────
   // Filter by life event, jurisdiction scope, and temporal validity
   const candidates: Consequence[] = [];
   for (const [, consequence] of graph.consequences) {
-    // Filter by life event
     if (consequence.life_event !== lifeEvent) continue;
 
-    // Filter by jurisdiction scope — include if consequence jurisdiction
-    // is in the set of relevant jurisdictions
     const juris = consequence.jurisdiction?.toUpperCase();
     if (juris && !relevantJurisdictions.has(juris) && !relevantJurisdictions.has(juris.toLowerCase())) {
       continue;
     }
 
-    // Temporal filtering
-    if (
-      consequence.record_valid_to &&
-      consequence.record_valid_to < referenceDate
-    ) {
-      continue;
-    }
-    if (
-      consequence.record_valid_from &&
-      consequence.record_valid_from > referenceDate
-    ) {
+    if (!recordApplies(consequence, temporalCtx)) {
       continue;
     }
 
@@ -221,8 +343,17 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   }
 
   // ─── Step 4: Evaluate conditions ────────────────────────────────
-  // Store per-condition results for explanation traces
   const conditionResultCache = new Map<string, { result: TriValue; missingFacts: string[] }>();
+
+  interface CandidateItem {
+    item: ChecklistItem;
+    consequence: Consequence;
+    template: TaskTemplate | null;
+    trace: ExplanationTrace | null;
+    dedupeKey: string;
+    strategy: string;
+  }
+  const candidatesList: CandidateItem[] = [];
 
   for (const consequence of candidates) {
     const conditionRefs = consequence.trigger?.condition_refs ?? [];
@@ -230,12 +361,13 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     const allMissingFacts: string[] = [];
 
     for (const condRef of conditionRefs) {
-      // Check cache first
       let cached = conditionResultCache.get(condRef);
       if (!cached) {
         const condition = graph.conditions.get(condRef);
         if (!condition) {
           cached = { result: "unknown", missingFacts: [] };
+        } else if (!recordApplies(condition, temporalCtx)) {
+          cached = { result: false, missingFacts: [] };
         } else {
           cached = evaluateCondition(condition.expression, facts);
         }
@@ -261,40 +393,167 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     const taskRefs = consequence.task_template_refs ?? [];
 
     if (taskRefs.length === 0) {
-      items.push(
-        makeItem(consequence, null, overallResult, allMissingFacts, graph),
-      );
+      const item = makeItem(scenarioHash, consequence, null, overallResult, allMissingFacts, graph, temporalCtx);
+      let trace: ExplanationTrace | null = null;
+      if (item.status !== "does_not_apply") {
+        trace = buildExplanationTrace(
+          `trace.${item.id}`,
+          consequence.id,
+          conditionRefs,
+          conditionResultCache,
+          graph,
+          temporalCtx,
+        );
+        item.explanation_trace_id = trace.id;
+      }
+      const { key, strategy } = resolveDedupeKey(null, consequence);
+      candidatesList.push({ item, consequence, template: null, trace, dedupeKey: key, strategy });
     } else {
       for (const taskRef of taskRefs) {
         const template = graph.taskTemplates.get(taskRef);
+        if (template && !recordApplies(template, temporalCtx)) {
+          continue;
+        }
         const item = makeItem(
+          scenarioHash,
           consequence,
           template ?? null,
           overallResult,
           allMissingFacts,
           graph,
+          temporalCtx,
         );
 
-        // Build explanation trace for visible items
+        let trace: ExplanationTrace | null = null;
         if (item.status !== "does_not_apply") {
-          const trace = buildExplanationTrace(
+          trace = buildExplanationTrace(
             `trace.${item.id}`,
             consequence.id,
             conditionRefs,
             conditionResultCache,
             graph,
+            temporalCtx,
           );
-          explanationTraces.push(trace);
           item.explanation_trace_id = trace.id;
         }
-
-        items.push(item);
+        const { key, strategy } = resolveDedupeKey(template ?? null, consequence);
+        candidatesList.push({ item, consequence, template: template ?? null, trace, dedupeKey: key, strategy });
       }
     }
   }
 
+  // Deduplicate and merge candidates
+  const groups = new Map<string, CandidateItem[]>();
+  for (const c of candidatesList) {
+    let list = groups.get(c.dedupeKey);
+    if (!list) {
+      list = [];
+      groups.set(c.dedupeKey, list);
+    }
+    list.push(c);
+  }
+
+  const finalItems: ChecklistItem[] = [];
+
+  for (const [, list] of groups.entries()) {
+    const strategy = list[0].strategy;
+    if (strategy === "do_not_merge_across_jurisdictions") {
+      const jurisdictionGroups = new Map<string, CandidateItem[]>();
+      for (const c of list) {
+        const j = c.consequence.jurisdiction.toUpperCase();
+        let sub = jurisdictionGroups.get(j);
+        if (!sub) {
+          sub = [];
+          jurisdictionGroups.set(j, sub);
+        }
+        sub.push(c);
+      }
+
+      for (const [, subList] of jurisdictionGroups.entries()) {
+        mergeOrAdd(subList);
+      }
+    } else if (strategy === "merge") {
+      mergeOrAdd(list);
+    } else {
+      for (const c of list) {
+        if (c.trace) {
+          explanationTraces.push(c.trace);
+        }
+        finalItems.push(c.item);
+      }
+    }
+  }
+
+  function mergeOrAdd(subList: CandidateItem[]): void {
+    if (subList.length === 1) {
+      const c = subList[0];
+      if (c.trace) {
+        explanationTraces.push(c.trace);
+      }
+      finalItems.push(c.item);
+      return;
+    }
+
+    const base = subList[0].item;
+    const baseConsequence = subList[0].consequence;
+    const baseTemplate = subList[0].template;
+
+    const jurisdictions = new Set<string>();
+    const neededFor = new Set<string>();
+    const missingFacts = new Set<string>();
+    const statuses: ItemStatus[] = [];
+    const tracesToMerge: ExplanationTrace[] = [];
+
+    let totalAssertionCount = 0;
+
+    for (const c of subList) {
+      for (const j of c.item.jurisdiction_contexts) jurisdictions.add(j);
+      for (const n of c.item.needed_for) neededFor.add(n);
+      for (const f of c.item.missing_fact_refs) missingFacts.add(f);
+      statuses.push(c.item.status);
+      if (c.trace) {
+        tracesToMerge.push(c.trace);
+      }
+      totalAssertionCount += c.item.source_summary?.assertion_count ?? 0;
+    }
+
+    const mergedStatus = mergeStatuses(statuses);
+
+    const mergedIdentity = subList
+      .map(c => `${c.consequence.id}::${c.template?.id ?? c.consequence.id}`)
+      .sort()
+      .join("|");
+    const mergedGroupHash = createHash("sha256")
+      .update(mergedIdentity)
+      .digest("hex")
+      .slice(0, 12);
+    const mergedItemId = `checklist_item.${scenarioHash}.${mergedGroupHash}`;
+
+    const mergedItem: ChecklistItem = {
+      ...base,
+      id: mergedItemId,
+      status: mergedStatus,
+      jurisdiction_contexts: [...jurisdictions].sort(),
+      needed_for: [...neededFor].sort(),
+      missing_fact_refs: [...missingFacts].sort(),
+      source_summary: {
+        assertion_count: totalAssertionCount,
+        top_tier: null,
+      },
+    };
+
+    if (tracesToMerge.length > 0) {
+      const mergedTraceId = `trace.${mergedItem.id}`;
+      const mergedTrace = mergeExplanationTraces(tracesToMerge, mergedTraceId);
+      explanationTraces.push(mergedTrace);
+      mergedItem.explanation_trace_id = mergedTrace.id;
+    }
+
+    finalItems.push(mergedItem);
+  }
+
   // Sort — first by group order, then by urgency (desc), then by title
-  items.sort((a, b) => {
+  finalItems.sort((a, b) => {
     const ga = GROUP_ORDER[a.checklist_group]?.order ?? 99;
     const gb = GROUP_ORDER[b.checklist_group]?.order ?? 99;
     if (ga !== gb) return ga - gb;
@@ -307,13 +566,12 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   });
 
   // Filter out does_not_apply items from output
-  const visibleItems = items.filter((i) => i.status !== "does_not_apply");
+  const visibleItems = finalItems.filter((i) => i.status !== "does_not_apply");
 
   // ─── Step 6: Assemble output with summary ──────────────────────
   const counts = {
     applies: visibleItems.filter((i) => i.status === "applies").length,
-    maybe_applies: visibleItems.filter((i) => i.status === "maybe_applies")
-      .length,
+    maybe_applies: visibleItems.filter((i) => i.status === "maybe_applies").length,
     needs_fact: visibleItems.filter((i) => i.status === "needs_fact").length,
     professional_review: 0,
   };
@@ -338,27 +596,24 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
         (GROUP_ORDER[b.group]?.order ?? 99),
     );
 
-  // Collect unique source refs
   const sourceRefs = new Set<string>();
   for (const consequence of candidates) {
     for (const ref of consequence.source_assertion_refs ?? []) {
+      const ass = graph.assertions.get(ref);
+      if (ass && !recordApplies(ass, temporalCtx)) {
+        continue;
+      }
       sourceRefs.add(ref);
     }
   }
 
-  // Deterministic checklist ID
-  const canonicalFacts = JSON.stringify(
-    [...facts].sort((a, b) => a.fact_type.localeCompare(b.fact_type)),
-  );
-  const scenarioHash = createHash("sha256")
-    .update(`${lifeEvent}::${canonicalFacts}`)
-    .digest("hex")
-    .slice(0, 12);
-
-  const checklistId = `checklist_run.${referenceDate.replace(/-/g, "")}.${scenarioHash}`;
+  const timestamp = new Date().toISOString().replace(/[-:T]/g, "").slice(0, 14);
+  const runId = `checklist_run.${timestamp}.${scenarioHash}`;
+  const checklistId = `checklist.${scenarioHash}`;
 
   return {
     id: checklistId,
+    checklist_run_id: runId,
     life_event: lifeEvent,
     generated_at: new Date().toISOString(),
     graph_version: graphVersion,
@@ -378,22 +633,22 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
 // ── Item builder ─────────────────────────────────────────────────────
 
 function makeItem(
+  scenarioHash: string,
   consequence: Consequence,
   template: TaskTemplate | null,
   conditionResult: TriValue,
   missingFacts: string[],
   graph: LoadedGraph,
+  temporalCtx: TemporalContext,
 ): ChecklistItem {
   const status = conditionResultToStatus(conditionResult, missingFacts);
 
-  // If status is needs_fact or maybe_applies, move to appropriate group
   let group =
     template?.rendering?.checklist_group ?? "uncertain_needs_confirmation";
   if (status === "needs_fact" || status === "maybe_applies") {
     group = "uncertain_needs_confirmation";
   }
 
-  // Resolve authority name
   let authorityName: string | null = null;
   let authorityRef: string | null = null;
   if (template?.authority_refs?.[0]) {
@@ -402,19 +657,30 @@ function makeItem(
     authorityName = auth?.name_en ?? auth?.name ?? null;
   }
 
-  // Resolve deadline label
   let deadlineLabel: string | null = null;
-  if (template?.deadline_refs?.[0]) {
-    const dl = graph.deadlines.get(template.deadline_refs[0]);
-    if (dl) {
-      deadlineLabel = `${dl.title} (${dl.calculation.duration ?? "unknown"})`;
+  if (template?.deadline_refs) {
+    for (const ref of template.deadline_refs) {
+      const dl = graph.deadlines.get(ref);
+      if (dl && recordApplies(dl, temporalCtx)) {
+        deadlineLabel = `${dl.title} (${dl.calculation.duration ?? "unknown"})`;
+        break;
+      }
     }
   }
 
   const urgencyScore = template?.rendering?.urgency_score ?? null;
 
+  const filteredAssertionRefs = (consequence.source_assertion_refs ?? []).filter(ref => {
+    const ass = graph.assertions?.get(ref);
+    if (ass && !recordApplies(ass, temporalCtx)) {
+      return false;
+    }
+    return true;
+  });
+
   return {
     id: makeItemId(
+      scenarioHash,
       consequence.id,
       template?.id ?? consequence.id,
     ),
@@ -439,7 +705,7 @@ function makeItem(
           authority_ref: authorityRef,
         }
       : null,
-    needed_for: [],
+    needed_for: [consequence.title],
     missing_fact_refs: missingFacts,
     why_maybe:
       status === "maybe_applies"
@@ -448,7 +714,7 @@ function makeItem(
           ? `Missing: ${missingFacts.join(", ")}`
           : null,
     source_summary: {
-      assertion_count: consequence.source_assertion_refs?.length ?? 0,
+      assertion_count: filteredAssertionRefs.length,
       top_tier: null,
     },
   };
