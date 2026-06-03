@@ -4,7 +4,7 @@
  * Given a loaded graph and a set of user facts, produces a ChecklistOutput
  * that can be serialized to YAML/JSON and rendered in a UI.
  *
- * Steps (per spec §8):
+ * Steps (per spec §7.2):
  * 1. Load graph & index
  * 2. Evaluate all conditions against user facts (three-valued)
  * 3. Filter consequences by condition results
