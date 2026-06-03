@@ -207,7 +207,7 @@ export function loadGraph(rootDir: string): LoadedGraph {
     ),
     sources: loadDir<SourceRecord>(
       rootDir,
-      "sources/*/*.{yml,yaml}",
+      "sources/!(assertions|snapshots)/**/*.{yml,yaml}",
     ),
     assertions,
   };

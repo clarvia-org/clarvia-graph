@@ -121,14 +121,27 @@ const GROUP_ORDER: Record<string, { order: number; label: string }> = {
 };
 
 // ── Deterministic item ID ────────────────────────────────────────────
+// Per spec §14.1: hash includes task_template_id, jurisdiction,
+// authority_id, dedupe_group_key, and generator_version.
+
+const GENERATOR_VERSION = "0.1";
 
 function makeItemId(
   scenarioHash: string,
-  consequenceId: string,
   taskTemplateId: string,
+  jurisdiction: string,
+  authorityId: string | null,
+  dedupeGroupKey: string | null,
 ): string {
+  const identity = [
+    taskTemplateId,
+    jurisdiction,
+    authorityId ?? "",
+    dedupeGroupKey ?? "",
+    GENERATOR_VERSION,
+  ].join("::");
   const hash = createHash("sha256")
-    .update(`${consequenceId}::${taskTemplateId}`)
+    .update(identity)
     .digest("hex")
     .slice(0, 12);
   return `checklist_item.${scenarioHash}.${hash}`;
@@ -681,8 +694,10 @@ function makeItem(
   return {
     id: makeItemId(
       scenarioHash,
-      consequence.id,
       template?.id ?? consequence.id,
+      consequence.jurisdiction,
+      template?.authority_refs?.[0] ?? null,
+      null,
     ),
     status,
     title: template?.title ?? consequence.title,

@@ -68,7 +68,7 @@
     "dedupe": {
       "type": ["object", "null"],
       "properties": {
-        "default_strategy": { "type": "string" },
+        "default_strategy": { "type": "string", "enum": ["do_not_merge_across_jurisdictions", "merge"] },
         "dedupe_key_template": { "type": "string" }
       }
     },
