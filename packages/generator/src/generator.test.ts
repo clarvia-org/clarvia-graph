@@ -119,7 +119,7 @@ describe("generateChecklist", () => {
       lifeEvent: "bereavement",
     });
 
-    expect(output.id).toMatch(/^checklist\./);
+    expect(output.id).toMatch(/^checklist_run\./);
     expect(output.life_event).toBe("bereavement");
     expect(output.generated_at).toBeTruthy();
     expect(output.graph_version).toBe("0.1.0");
@@ -128,19 +128,40 @@ describe("generateChecklist", () => {
     expect(output.sections.length).toBeGreaterThan(0);
   });
 
-  it("produces deterministic item IDs for same consequence+task pair", () => {
+  it("produces fully deterministic checklist + item IDs for same inputs", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
       { fact_type: "deceased.pension.jurisdiction", value: "LU" },
     ];
 
-    const output1 = generateChecklist({ graph, facts, lifeEvent: "bereavement" });
-    const output2 = generateChecklist({ graph, facts, lifeEvent: "bereavement" });
+    const output1 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+    const output2 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
 
-    // Item IDs should be deterministic (same inputs → same IDs)
+    // Checklist ID should be fully deterministic (no timestamp in hash)
+    expect(output1.id).toBe(output2.id);
+    expect(output1.id).toMatch(/^checklist_run\.20260603\./);
+
+    // Item IDs should also be deterministic
     expect(output1.items.map((i) => i.id)).toEqual(
       output2.items.map((i) => i.id),
     );
+  });
+
+  it("same facts in different order produce same checklist ID", () => {
+    const graph = loadGraph(ROOT_DIR);
+    const facts1: Fact[] = [
+      { fact_type: "death.place.country", value: "LU" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+    ];
+    const facts2: Fact[] = [
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "death.place.country", value: "LU" },
+    ];
+
+    const output1 = generateChecklist({ graph, facts: facts1, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+    const output2 = generateChecklist({ graph, facts: facts2, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+
+    expect(output1.id).toBe(output2.id);
   });
 });
