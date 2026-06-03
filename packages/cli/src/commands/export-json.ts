@@ -57,7 +57,7 @@ export async function main(): Promise<void> {
     intake_fact_types: mapToArray(graph.intakeFactTypes),
   };
 
-  const outDir = resolve(rootDir, ".clarvia-output");
+  const outDir = resolve(rootDir, "build", "exports", "json");
   mkdirSync(outDir, { recursive: true });
 
   const outPath = resolve(outDir, "graph-export.json");

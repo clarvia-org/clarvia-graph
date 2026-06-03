@@ -10,12 +10,12 @@
   },
   "scripts": {
     "build": "tsc",
-    "validate": "node --loader ts-node/esm src/index.ts validate",
-    "lint-ids": "node --loader ts-node/esm src/index.ts lint-ids",
-    "check-references": "node --loader ts-node/esm src/index.ts check-references",
-    "build-checklist": "node --loader ts-node/esm src/index.ts build-checklist",
-    "export-json": "node --loader ts-node/esm src/index.ts export-json",
-    "export-web": "node --loader ts-node/esm src/index.ts export-web"
+    "validate": "tsx src/index.ts validate",
+    "lint-ids": "tsx src/index.ts lint-ids",
+    "check-references": "tsx src/index.ts check-references",
+    "build-checklist": "tsx src/index.ts build-checklist",
+    "export-json": "tsx src/index.ts export-json",
+    "export-web": "tsx src/index.ts export-web"
   },
   "dependencies": {
     "ajv": "^8.17.1",
@@ -25,6 +25,6 @@
     "@clarvia/generator": "workspace:*"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2"
+    "tsx": "^4.19.4"
   }
 }

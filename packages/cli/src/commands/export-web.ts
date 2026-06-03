@@ -32,7 +32,7 @@ export async function main(): Promise<void> {
   const pkgRaw = readFileSync(resolve(rootDir, "package.json"), "utf-8");
   const pkg = JSON.parse(pkgRaw) as { version: string };
 
-  const webDir = resolve(rootDir, ".clarvia-output", "web");
+  const webDir = resolve(rootDir, "build", "exports", "web");
 
   // Discover life events from consequences
   const lifeEvents = new Set<string>();

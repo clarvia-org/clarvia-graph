@@ -114,9 +114,10 @@ export async function main(): Promise<void> {
 
   // Also output as YAML
   const yamlOutput = JSON.stringify(output, null, 2);
-  const outputPath = resolve(rootDir, ".clarvia-output", "last-checklist.json");
+  const outputDir = resolve(rootDir, "build", "exports", "checklist");
+  const outputPath = resolve(outputDir, "last-checklist.json");
   const { mkdirSync, writeFileSync } = await import("node:fs");
-  mkdirSync(resolve(rootDir, ".clarvia-output"), { recursive: true });
+  mkdirSync(outputDir, { recursive: true });
   writeFileSync(outputPath, yamlOutput);
   console.log(`Full output saved to: ${outputPath}`);
 }
