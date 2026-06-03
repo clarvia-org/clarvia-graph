@@ -1,0 +1,29 @@
+{
+  "name": "clarvia-graph",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "description": "Open consequence graph for source-backed administrative workflows",
+  "license": "EUPL-1.2",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "pnpm@9.15.5",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "validate": "pnpm --filter @clarvia/cli run validate",
+    "lint-ids": "pnpm --filter @clarvia/cli run lint-ids"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.9.1",
+    "eslint": "^10.4.1",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1",
+    "vitest": "^4.1.8"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@clarvia/cli",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "description": "Clarvia Graph validation and build CLI",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "bin": {
+    "clarvia": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "validate": "node --loader ts-node/esm src/index.ts validate",
+    "lint-ids": "node --loader ts-node/esm src/index.ts lint-ids"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.7.1",
+    "glob": "^11.0.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
