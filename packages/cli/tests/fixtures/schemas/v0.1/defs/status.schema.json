@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/defs/status.schema.json",
+  "title": "Clarvia Status Fields",
+  "description": "Shared status field definitions used across record types.",
+  "$defs": {
+    "authoring_status": {
+      "type": "string",
+      "enum": ["draft", "in_review", "changes_requested", "approved", "deprecated", "withdrawn"]
+    },
+    "distribution_status": {
+      "type": "string",
+      "enum": ["public_open", "public_metadata_only", "private_overlay", "restricted_source"]
+    },
+    "monitoring_status": {
+      "type": "string",
+      "enum": ["unmonitored", "monitored", "review_due", "source_changed", "stale", "quarantined"]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["draft", "in_review", "changes_requested", "approved", "rejected", "superseded"]
+    },
+    "confidence": {
+      "type": ["string", "null"],
+      "enum": ["high", "medium", "low", "unassessed", null]
+    },
+    "contradiction_status": {
+      "type": "string",
+      "enum": ["none", "suspected", "in_review", "resolved", "accepted_uncertainty", "quarantined", "superseded"]
+    }
+  }
+}

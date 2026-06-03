@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/form.schema.json",
+  "title": "Clarvia Form",
+  "description": "An official form. Reusable across life events.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^form\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: form.<jurisdiction>.<authority_or_portal>.<slug>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "title": { "type": "string", "minLength": 1 },
+    "title_en": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "jurisdiction": { "type": "string" },
+    "jurisdiction_uri": { "type": ["string", "null"], "format": "uri" },
+    "authority_refs": { "type": "array", "items": { "type": "string" } },
+    "url": { "type": ["string", "null"], "format": "uri" },
+    "languages": { "type": "array", "items": { "type": "string" } },
+    "form_role": {
+      "type": "string",
+      "enum": ["blank_template", "online_application", "completed_submission_evidence"]
+    },
+    "authoring_status": { "$ref": "defs/status.schema.json#/$defs/authoring_status" },
+    "distribution_status": { "$ref": "defs/status.schema.json#/$defs/distribution_status" },
+    "record_valid_from": { "type": "string", "format": "date" },
+    "record_valid_to": { "type": ["string", "null"], "format": "date" }
+  },
+  "required": ["id", "schema_version", "title", "jurisdiction", "form_role", "authoring_status", "distribution_status", "record_valid_from"]
+}

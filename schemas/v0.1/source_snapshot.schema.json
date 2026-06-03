@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/source_snapshot.schema.json",
+  "title": "Clarvia Source Snapshot",
+  "description": "Clarvia's captured copy of a source at a specific point in time.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^snapshot\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: snapshot.<origin>.<source_slug>.<date_stamp>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "source_id": { "type": "string" },
+    "captured_at": { "type": "string", "format": "date-time" },
+    "capture_method": {
+      "type": "string",
+      "enum": ["http_get", "browser_render", "manual_download", "api_call", "other"]
+    },
+    "http_status": { "type": ["integer", "null"] },
+    "content_type": { "type": ["string", "null"] },
+    "content_hash": { "type": "string" },
+    "archive_uri": { "type": "string" },
+    "source_last_modified_at": { "type": ["string", "null"], "format": "date-time" },
+    "captured_by": { "type": ["string", "null"] },
+    "authoring_status": { "$ref": "defs/status.schema.json#/$defs/authoring_status" },
+    "distribution_status": { "$ref": "defs/status.schema.json#/$defs/distribution_status" }
+  },
+  "required": ["id", "schema_version", "source_id", "captured_at", "capture_method", "content_hash", "archive_uri", "authoring_status", "distribution_status"]
+}

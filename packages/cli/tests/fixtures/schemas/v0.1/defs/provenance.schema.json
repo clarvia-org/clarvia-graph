@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/defs/provenance.schema.json",
+  "title": "Clarvia Provenance Fields",
+  "description": "Shared provenance block used on source_assertion, consequence, and task_template.",
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "derived_from_snapshot_ref": {
+          "type": ["string", "null"],
+          "description": "Reference to the source snapshot this record was derived from."
+        },
+        "extraction_method": {
+          "type": "string",
+          "enum": ["manual", "ai_assisted", "automated"]
+        },
+        "extracted_by": {
+          "type": ["string", "null"]
+        },
+        "extracted_at": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "reviewed_by": {
+          "type": ["string", "null"]
+        },
+        "reviewed_at": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      }
+    },
+    "legal_basis_ref": {
+      "type": "object",
+      "properties": {
+        "source_id": { "type": "string" },
+        "source_snapshot_id": { "type": ["string", "null"] },
+        "eli_uri": { "type": ["string", "null"] },
+        "provision_ref": {
+          "type": ["object", "null"],
+          "properties": {
+            "article": { "type": ["string", "null"] },
+            "paragraph": { "type": ["string", "null"] },
+            "point": { "type": ["string", "null"] }
+          }
+        },
+        "fragment_uri": { "type": ["string", "null"] },
+        "quote_anchor": { "$ref": "#/$defs/anchor" }
+      },
+      "required": ["source_id"]
+    },
+    "anchor": {
+      "type": "object",
+      "properties": {
+        "selector_type": {
+          "type": "string",
+          "enum": ["text_quote", "css_selector", "xpath", "page_number", "fragment"]
+        },
+        "text_quote": { "type": ["string", "null"] },
+        "css_selector": { "type": ["string", "null"] },
+        "xpath": { "type": ["string", "null"] },
+        "page_number": { "type": ["integer", "null"] }
+      },
+      "required": ["selector_type"]
+    }
+  }
+}

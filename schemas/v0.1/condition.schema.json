@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/condition.schema.json",
+  "title": "Clarvia Condition",
+  "description": "A structured boolean expression used for routing consequences. Evaluates to true, false, or unknown.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^condition\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: condition.<jurisdiction>.<life_event>.<domain>.<slug>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": ["string", "null"] },
+    "condition_type": {
+      "type": "string",
+      "enum": ["criterion", "constraint", "eligibility", "exclusion"]
+    },
+    "jurisdiction": { "type": "string" },
+    "life_event": { "type": "string" },
+    "domain": { "type": "string" },
+    "information_concept_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "expression_language": {
+      "type": "string",
+      "enum": ["jsonlogic"]
+    },
+    "expression": {
+      "type": "object",
+      "description": "JsonLogic expression. Subset: var, ==, !=, and, or, !, exists, in, >, >=, <, <="
+    },
+    "missing_fact_behavior": {
+      "type": "string",
+      "const": "unknown",
+      "description": "What to return when a required fact is missing. Always: unknown."
+    },
+    "source_assertion_refs": { "type": "array", "items": { "type": "string" } },
+    "legal_basis_refs": {
+      "type": "array",
+      "items": { "$ref": "defs/provenance.schema.json#/$defs/legal_basis_ref" }
+    },
+    "record_valid_from": { "type": "string", "format": "date" },
+    "record_valid_to": { "type": ["string", "null"], "format": "date" },
+    "authoring_status": { "$ref": "defs/status.schema.json#/$defs/authoring_status" },
+    "distribution_status": { "$ref": "defs/status.schema.json#/$defs/distribution_status" }
+  },
+  "required": ["id", "schema_version", "title", "condition_type", "jurisdiction", "life_event", "domain", "expression_language", "expression", "missing_fact_behavior", "authoring_status", "distribution_status", "record_valid_from"]
+}

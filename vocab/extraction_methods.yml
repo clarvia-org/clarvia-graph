@@ -1,0 +1,21 @@
+# Clarvia Controlled Vocabulary: Extraction Methods
+# Used by: provenance block (extraction_method field)
+
+entries:
+  - id: manual
+    label: Manual
+    label_fr: Manuel
+    label_de: Manuell
+    description: Claim extracted entirely by a human reader.
+
+  - id: ai_assisted
+    label: AI-assisted
+    label_fr: Assisté par IA
+    label_de: KI-unterstützt
+    description: Claim extracted with AI assistance. Human approval required before publishing.
+
+  - id: automated
+    label: Automated
+    label_fr: Automatisé
+    label_de: Automatisiert
+    description: Claim extracted by automated pipeline. Human review required for high-risk claims.

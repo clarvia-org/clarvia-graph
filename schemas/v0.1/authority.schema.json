@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/authority.schema.json",
+  "title": "Clarvia Authority",
+  "description": "A government body or institution. Reusable across life events.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^authority\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: authority.<jurisdiction>.<slug>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "name": { "type": "string", "minLength": 1 },
+    "name_en": { "type": ["string", "null"] },
+    "name_de": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "jurisdiction": { "type": "string" },
+    "jurisdiction_uri": { "type": ["string", "null"], "format": "uri" },
+    "function": { "type": ["string", "null"] },
+    "official_site": { "type": ["string", "null"], "format": "uri" },
+    "contact_channels": { "type": "array", "items": { "type": "string" } },
+    "languages": { "type": "array", "items": { "type": "string" } },
+    "authoring_status": { "$ref": "defs/status.schema.json#/$defs/authoring_status" },
+    "distribution_status": { "$ref": "defs/status.schema.json#/$defs/distribution_status" },
+    "record_valid_from": { "type": "string", "format": "date" },
+    "record_valid_to": { "type": ["string", "null"], "format": "date" }
+  },
+  "required": ["id", "schema_version", "name", "jurisdiction", "authoring_status", "distribution_status", "record_valid_from"]
+}

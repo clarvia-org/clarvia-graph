@@ -1,0 +1,33 @@
+# Clarvia Controlled Vocabulary: Change Severity
+# Used by: monitoring (source change classification)
+
+entries:
+  - id: cosmetic
+    label: Cosmetic
+    label_fr: Cosmétique
+    label_de: Kosmetisch
+    action: Log, no action
+
+  - id: non_substantive
+    label: Non-substantive
+    label_fr: Non substantiel
+    label_de: Nicht wesentlich
+    action: review_due, assertions stay approved
+
+  - id: substantive
+    label: Substantive
+    label_fr: Substantiel
+    label_de: Wesentlich
+    action: source_changed, assertions to in_review
+
+  - id: contradiction
+    label: Contradiction
+    label_fr: Contradiction
+    label_de: Widerspruch
+    action: quarantined, publication blocked
+
+  - id: unavailable
+    label: Unavailable
+    label_fr: Indisponible
+    label_de: Nicht verfügbar
+    action: quarantined if persists

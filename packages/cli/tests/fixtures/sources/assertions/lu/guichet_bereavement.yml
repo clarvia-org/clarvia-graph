@@ -1,0 +1,17 @@
+source_id: "source.lu_gov.guichet_bereavement"
+source_snapshot_id: "snapshot.lu_gov.guichet_bereavement.20250101"
+assertions:
+  - id: "assertion.lu_gov.guichet_bereavement.survivors_pension_exists"
+    schema_version: "0.1.0"
+    claim_type: "entitlement_exists"
+    claim_text: "A survivor's pension is available to the surviving spouse."
+    claim_scope:
+      jurisdiction: "lu"
+      life_event: "bereavement"
+      domain: "social_security"
+    anchor:
+      selector_type: "text_quote"
+      text_quote: "pension de survie"
+    source_tier: "official_guidance"
+    record_valid_from: "2025-01-01"
+    review_status: "draft"

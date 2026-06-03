@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/source.schema.json",
+  "title": "Clarvia Source",
+  "description": "An official page, document, law, or form that Clarvia monitors and extracts claims from.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^source\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: source.<origin>.<slug>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "title": { "type": "string", "minLength": 1 },
+    "title_en": { "type": ["string", "null"] },
+    "description": { "type": "string" },
+    "source_type": {
+      "type": "string",
+      "enum": ["statute", "regulation", "consolidated_legislation", "court_decision", "government_portal", "official_guidance", "official_form", "faq", "other"]
+    },
+    "url": { "type": "string", "format": "uri" },
+    "jurisdiction": { "type": "string" },
+    "jurisdiction_uri": { "type": ["string", "null"], "format": "uri" },
+    "languages": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "publisher": { "type": ["string", "null"] },
+    "legal_identifier": {
+      "type": ["object", "null"],
+      "properties": {
+        "scheme": {
+          "type": "string",
+          "enum": ["ELI", "CELEX", "national_law_id", "url_only", "unknown"]
+        },
+        "eli_uri": { "type": ["string", "null"] },
+        "eli_work_uri": { "type": ["string", "null"] },
+        "eli_expression_uri": { "type": ["string", "null"] },
+        "celex": { "type": ["string", "null"] },
+        "local_id": { "type": ["string", "null"] },
+        "type_document": { "type": ["string", "null"] },
+        "type_document_uri": { "type": ["string", "null"] },
+        "date_document": { "type": ["string", "null"], "format": "date" },
+        "first_date_entry_in_force": { "type": ["string", "null"], "format": "date" },
+        "date_no_longer_in_force": { "type": ["string", "null"], "format": "date" },
+        "version_date": { "type": ["string", "null"], "format": "date" },
+        "language": { "type": ["string", "null"] }
+      },
+      "required": ["scheme"]
+    },
+    "authoring_status": { "$ref": "defs/status.schema.json#/$defs/authoring_status" },
+    "distribution_status": { "$ref": "defs/status.schema.json#/$defs/distribution_status" },
+    "record_valid_from": { "type": "string", "format": "date" },
+    "record_valid_to": { "type": ["string", "null"], "format": "date" }
+  },
+  "required": ["id", "schema_version", "title", "source_type", "url", "jurisdiction", "languages", "authoring_status", "distribution_status", "record_valid_from"]
+}

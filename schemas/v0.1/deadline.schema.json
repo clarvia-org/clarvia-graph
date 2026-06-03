@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/deadline.schema.json",
+  "title": "Clarvia Deadline",
+  "description": "A time-bound requirement. Life-event-scoped.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^deadline\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: deadline.<jurisdiction>.<life_event>.<domain>.<slug>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": ["string", "null"] },
+    "deadline_type": {
+      "type": "string",
+      "enum": ["filing_deadline", "appeal_deadline", "payment_deadline", "validity_period", "processing_time"]
+    },
+    "jurisdiction": { "type": "string" },
+    "life_event": { "type": "string" },
+    "domain": { "type": "string" },
+    "calculation": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": ["relative", "absolute", "conditional"]
+        },
+        "duration": { "type": ["string", "null"], "description": "ISO 8601 duration, e.g. P1D, P6M" },
+        "starts_from_fact": { "type": ["string", "null"] },
+        "calendar": {
+          "type": "string",
+          "enum": ["civil", "business", "unknown"]
+        },
+        "if_weekend_or_holiday": {
+          "type": "string",
+          "enum": ["next_business_day", "previous_business_day", "same_day", "unknown"]
+        }
+      },
+      "required": ["kind"]
+    },
+    "exceptions": { "type": "array", "items": { "type": "object" } },
+    "source_assertion_refs": { "type": "array", "items": { "type": "string" } },
+    "legal_basis_refs": {
+      "type": "array",
+      "items": { "$ref": "defs/provenance.schema.json#/$defs/legal_basis_ref" }
+    },
+    "legal_effective_from": { "type": ["string", "null"], "format": "date" },
+    "legal_effective_to": { "type": ["string", "null"], "format": "date" },
+    "record_valid_from": { "type": "string", "format": "date" },
+    "record_valid_to": { "type": ["string", "null"], "format": "date" },
+    "authoring_status": { "$ref": "defs/status.schema.json#/$defs/authoring_status" },
+    "distribution_status": { "$ref": "defs/status.schema.json#/$defs/distribution_status" }
+  },
+  "required": ["id", "schema_version", "title", "deadline_type", "jurisdiction", "life_event", "domain", "calculation", "record_valid_from", "authoring_status", "distribution_status"]
+}

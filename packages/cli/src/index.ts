@@ -19,15 +19,17 @@
 const command = process.argv[2];
 
 switch (command) {
-  case "validate":
-    console.log("clarvia validate — not yet implemented (Sprint 1)");
-    process.exit(0);
+  case "validate": {
+    const { main } = await import("./commands/validate.js");
+    await main();
     break;
+  }
 
-  case "lint-ids":
-    console.log("clarvia lint-ids — not yet implemented (Sprint 1)");
-    process.exit(0);
+  case "lint-ids": {
+    const { main } = await import("./commands/lint-ids.js");
+    await main();
     break;
+  }
 
   case "check-references":
     console.log("clarvia check-references — not yet implemented (Sprint 2)");

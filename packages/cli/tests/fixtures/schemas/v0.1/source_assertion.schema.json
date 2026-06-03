@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/source_assertion.schema.json",
+  "title": "Clarvia Source Assertion Batch",
+  "description": "A batch of specific claims extracted from a source snapshot. Authored in per-source batch files.",
+  "type": "object",
+  "properties": {
+    "source_id": { "type": "string" },
+    "source_snapshot_id": { "type": "string" },
+    "assertions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^assertion\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+            "description": "ID grammar: assertion.<origin>.<source_slug>.<claim_slug>"
+          },
+          "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+          "claim_type": { "type": "string" },
+          "claim_text": { "type": "string", "minLength": 1 },
+          "description": { "type": ["string", "null"] },
+          "claim_scope": {
+            "type": "object",
+            "properties": {
+              "jurisdiction": { "type": "string" },
+              "life_event": { "type": "string" },
+              "domain": { "type": "string" }
+            },
+            "required": ["jurisdiction"]
+          },
+          "anchor": { "$ref": "defs/provenance.schema.json#/$defs/anchor" },
+          "extracted_value": { "type": ["object", "null"] },
+          "source_tier": {
+            "type": "string",
+            "enum": ["statute", "regulation", "consolidated_legislation", "official_guidance", "official_form", "faq", "inferred"]
+          },
+          "legal_basis_refs": {
+            "type": "array",
+            "items": { "$ref": "defs/provenance.schema.json#/$defs/legal_basis_ref" }
+          },
+          "legal_effective_from": { "type": ["string", "null"], "format": "date" },
+          "legal_effective_to": { "type": ["string", "null"], "format": "date" },
+          "record_valid_from": { "type": "string", "format": "date" },
+          "record_valid_to": { "type": ["string", "null"], "format": "date" },
+          "review_status": { "$ref": "defs/status.schema.json#/$defs/review_status" },
+          "confidence": { "$ref": "defs/status.schema.json#/$defs/confidence" },
+          "provenance": { "$ref": "defs/provenance.schema.json#/$defs/provenance" }
+        },
+        "required": ["id", "schema_version", "claim_type", "claim_text", "anchor", "source_tier", "record_valid_from", "review_status"]
+      }
+    }
+  },
+  "required": ["source_id", "source_snapshot_id", "assertions"]
+}

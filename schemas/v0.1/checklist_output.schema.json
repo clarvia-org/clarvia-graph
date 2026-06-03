@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/checklist_output.schema.json",
+  "title": "Clarvia Checklist Output",
+  "description": "Generated checklist output for a scenario. Not authored — produced by the generator.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "checklist_run_id": { "type": "string" },
+    "life_event": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "graph_version": { "type": "string" },
+    "graph_commit": { "type": ["string", "null"] },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "item_counts": {
+          "type": "object",
+          "properties": {
+            "applies": { "type": "integer", "minimum": 0 },
+            "maybe_applies": { "type": "integer", "minimum": 0 },
+            "needs_fact": { "type": "integer", "minimum": 0 },
+            "professional_review": { "type": "integer", "minimum": 0 }
+          }
+        },
+        "source_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "sections": { "type": "array" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["applies", "maybe_applies", "needs_fact", "blocked", "does_not_apply"]
+          },
+          "title": { "type": "string" },
+          "description": { "type": ["string", "null"] },
+          "jurisdiction_contexts": { "type": "array", "items": { "type": "string" } },
+          "checklist_group": { "type": "string" },
+          "urgency": {
+            "type": ["object", "null"],
+            "properties": {
+              "score": { "type": ["integer", "null"] },
+              "label": { "type": ["string", "null"] },
+              "deadline_label": { "type": ["string", "null"] },
+              "overdue": { "type": ["boolean", "null"] }
+            }
+          },
+          "action": { "type": ["object", "null"] },
+          "needed_for": { "type": "array", "items": { "type": "string" } },
+          "missing_fact_refs": { "type": "array", "items": { "type": "string" } },
+          "why_maybe": { "type": ["string", "null"] },
+          "source_summary": { "type": ["object", "null"] },
+          "explanation_trace_id": { "type": ["string", "null"] }
+        },
+        "required": ["id", "status", "title", "checklist_group"]
+      }
+    }
+  },
+  "required": ["id", "life_event", "generated_at", "graph_version", "items"]
+}

@@ -1,0 +1,54 @@
+# Clarvia Controlled Vocabulary: Jurisdictions
+# Used by: all record types (jurisdiction field)
+# Reference: ISO 3166-1 alpha-2 for countries, pseudo-codes for non-country scopes
+
+entries:
+  - id: LU
+    label: Luxembourg
+    label_fr: Luxembourg
+    label_de: Luxemburg
+    uri: "http://publications.europa.eu/resource/authority/country/LUX"
+    spatial_uri: "http://publications.europa.eu/resource/authority/continent/EUROPE"
+    languages: [fr, de, en, lb]
+
+  - id: DE
+    label: Germany
+    label_fr: Allemagne
+    label_de: Deutschland
+    uri: "http://publications.europa.eu/resource/authority/country/DEU"
+    spatial_uri: "http://publications.europa.eu/resource/authority/continent/EUROPE"
+    languages: [de]
+
+  - id: FR
+    label: France
+    label_fr: France
+    label_de: Frankreich
+    uri: "http://publications.europa.eu/resource/authority/country/FRA"
+    spatial_uri: "http://publications.europa.eu/resource/authority/continent/EUROPE"
+    languages: [fr]
+
+  - id: BE
+    label: Belgium
+    label_fr: Belgique
+    label_de: Belgien
+    uri: "http://publications.europa.eu/resource/authority/country/BEL"
+    spatial_uri: "http://publications.europa.eu/resource/authority/continent/EUROPE"
+    languages: [fr, nl, de]
+
+  - id: EU
+    label: European Union
+    label_fr: Union européenne
+    label_de: Europäische Union
+    uri: "http://publications.europa.eu/resource/authority/corporate-body/EU"
+
+  - id: XBORDER
+    label: Cross-border
+    label_fr: Transfrontalier
+    label_de: Grenzüberschreitend
+    description: Cross-border composition logic scope
+
+  - id: GLOBAL
+    label: Global
+    label_fr: Global
+    label_de: Global
+    description: Jurisdiction-neutral reusable concept

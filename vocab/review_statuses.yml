@@ -1,0 +1,33 @@
+# Clarvia Controlled Vocabulary: Review Statuses
+# Used by: source_assertion (review_status field)
+
+entries:
+  - id: draft
+    label: Draft
+    label_fr: Brouillon
+    label_de: Entwurf
+
+  - id: in_review
+    label: In review
+    label_fr: En révision
+    label_de: In Prüfung
+
+  - id: changes_requested
+    label: Changes requested
+    label_fr: Modifications demandées
+    label_de: Änderungen angefordert
+
+  - id: approved
+    label: Approved
+    label_fr: Approuvé
+    label_de: Genehmigt
+
+  - id: rejected
+    label: Rejected
+    label_fr: Rejeté
+    label_de: Abgelehnt
+
+  - id: superseded
+    label: Superseded
+    label_fr: Remplacé
+    label_de: Ersetzt

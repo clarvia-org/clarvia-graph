@@ -1,0 +1,54 @@
+# Clarvia Controlled Vocabulary: Source Tiers
+# Used by: source_assertion (source_tier field)
+# Hierarchy: statute > regulation > consolidated_legislation > official_guidance > official_form > faq > inferred
+
+entries:
+  - id: statute
+    label: Statute
+    label_fr: Loi
+    label_de: Gesetz
+    tier: A
+    default_weight: 100
+
+  - id: regulation
+    label: Regulation
+    label_fr: Règlement
+    label_de: Verordnung
+    tier: A
+    default_weight: 95
+
+  - id: consolidated_legislation
+    label: Consolidated legislation
+    label_fr: Législation consolidée
+    label_de: Konsolidierte Gesetzgebung
+    tier: B
+    default_weight: 85
+
+  - id: official_guidance
+    label: Official administrative guidance
+    label_fr: Guide administratif officiel
+    label_de: Offizielle Verwaltungshinweise
+    tier: C
+    default_weight: 75
+
+  - id: official_form
+    label: Official form or instructions
+    label_fr: Formulaire officiel
+    label_de: Amtliches Formular
+    tier: D
+    default_weight: 65
+
+  - id: faq
+    label: Official FAQ or life-event page
+    label_fr: FAQ officielle
+    label_de: Offizielle FAQ
+    tier: E
+    default_weight: 50
+
+  - id: inferred
+    label: Practical inferred step
+    label_fr: Étape pratique déduite
+    label_de: Abgeleiteter praktischer Schritt
+    tier: F
+    default_weight: 20
+    description: Must be labeled as inferred in output.

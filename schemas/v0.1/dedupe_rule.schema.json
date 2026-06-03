@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/dedupe_rule.schema.json",
+  "title": "Clarvia Dedupe Rule",
+  "description": "Explicit, reviewable deduplication logic for merging similar tasks across consequences.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^dedupe_rule\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: dedupe_rule.<jurisdiction_or_global>.<life_event>.<domain>.<slug>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "rule_type": { "type": "string", "const": "dedupe" },
+    "applies_to_action_type": { "type": "string" },
+    "applies_to_object_type": { "type": ["string", "null"] },
+    "strategy": {
+      "type": "string",
+      "enum": ["merge", "keep_all", "prefer_higher_tier", "prefer_specific"]
+    },
+    "dedupe_key_template": { "type": "string" },
+    "merge": {
+      "type": ["object", "null"],
+      "properties": {
+        "output_title": { "type": ["string", "null"] },
+        "combine": { "type": "array", "items": { "type": "string" } },
+        "preserve": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "human_review_required": { "type": "boolean" }
+  },
+  "required": ["id", "schema_version", "rule_type", "applies_to_action_type", "strategy", "dedupe_key_template"]
+}

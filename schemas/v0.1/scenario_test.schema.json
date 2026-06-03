@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/scenario_test.schema.json",
+  "title": "Clarvia Scenario Test",
+  "description": "Authored regression fixture — scenario facts plus expected outputs.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^scenario_test\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: scenario_test.<scope>.<slug>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "title": { "type": "string", "minLength": 1 },
+    "scenario_type": {
+      "type": "string",
+      "enum": ["single_jurisdiction", "cross_border", "edge_case"]
+    },
+    "life_event": { "type": "string" },
+    "countries": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fact_type": { "type": "string" },
+          "value": {},
+          "confidence": { "type": "string" }
+        },
+        "required": ["fact_type", "value"]
+      },
+      "minItems": 1
+    },
+    "expected_jurisdiction_roles": {
+      "type": ["object", "null"],
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    },
+    "expected_consequence_statuses": {
+      "type": ["object", "null"],
+      "additionalProperties": {
+        "type": "string",
+        "enum": ["applies", "maybe_applies", "does_not_apply", "blocked", "needs_fact"]
+      }
+    },
+    "expected_checklist_groups": {
+      "type": ["object", "null"],
+      "additionalProperties": {
+        "type": "array",
+        "items": { "type": "string" }
+      }
+    }
+  },
+  "required": ["id", "schema_version", "title", "life_event", "countries", "facts"]
+}

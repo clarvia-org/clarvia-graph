@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/composition_rule.schema.json",
+  "title": "Clarvia Composition Rule",
+  "description": "Cross-border composition logic determining how consequences from different jurisdictions compose.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^composition_rule\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: composition_rule.<jurisdiction_or_xborder>.<life_event>.<domain>.<slug>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "rule_type": {
+      "type": "string",
+      "enum": ["additive", "gateway", "dedupe", "override", "conflict", "dependency", "escalation"]
+    },
+    "description": { "type": "string" },
+    "when": {
+      "type": "object",
+      "description": "Condition expression for when this rule fires."
+    },
+    "then": {
+      "type": "object",
+      "description": "Actions to take when the rule fires."
+    },
+    "human_review_required": { "type": "boolean" }
+  },
+  "required": ["id", "schema_version", "rule_type", "description", "when", "then"]
+}

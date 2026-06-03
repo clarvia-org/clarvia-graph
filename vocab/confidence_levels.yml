@@ -1,0 +1,27 @@
+# Clarvia Controlled Vocabulary: Confidence Levels
+# Used by: consequence, source_assertion (confidence field)
+
+entries:
+  - id: high
+    label: High
+    label_fr: Élevé
+    label_de: Hoch
+    description: Official source, exact anchor, unambiguous claim, human approved.
+
+  - id: medium
+    label: Medium
+    label_fr: Moyen
+    label_de: Mittel
+    description: Official source, anchor present, scope/interpretation needs caution.
+
+  - id: low
+    label: Low
+    label_fr: Faible
+    label_de: Niedrig
+    description: Weak source, OCR used, translation uncertain, or claim inferred.
+
+  - id: unassessed
+    label: Unassessed
+    label_fr: Non évalué
+    label_de: Nicht bewertet
+    description: AI/contributor draft not yet reviewed.

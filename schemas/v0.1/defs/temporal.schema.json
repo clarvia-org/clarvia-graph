@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/defs/temporal.schema.json",
+  "title": "Clarvia Temporal Fields",
+  "description": "Shared temporal field definitions used across record types.",
+  "$defs": {
+    "legal_effective_period": {
+      "type": "object",
+      "properties": {
+        "legal_effective_from": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "For which event dates does this rule apply (start)?"
+        },
+        "legal_effective_to": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "For which event dates does this rule apply (end)?"
+        }
+      }
+    },
+    "record_validity": {
+      "type": "object",
+      "properties": {
+        "record_valid_from": {
+          "type": "string",
+          "format": "date",
+          "description": "When was this record version current in the graph (start)?"
+        },
+        "record_valid_to": {
+          "type": ["string", "null"],
+          "format": "date",
+          "description": "When was this record version current in the graph (end)?"
+        }
+      },
+      "required": ["record_valid_from"]
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the schema this record conforms to."
+    },
+    "freshness": {
+      "type": "object",
+      "properties": {
+        "last_checked_at": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "next_review_due": {
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "monitoring_status": {
+          "type": "string",
+          "enum": ["unmonitored", "monitored", "review_due", "source_changed", "stale", "quarantined"]
+        },
+        "stale_after_days": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        }
+      }
+    }
+  }
+}

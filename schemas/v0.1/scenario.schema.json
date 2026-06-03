@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/scenario.schema.json",
+  "title": "Clarvia Scenario",
+  "description": "Runtime/API input schema — scenario facts submitted by a user or client.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "life_event": { "type": "string" },
+    "event_date": { "type": "string", "format": "date" },
+    "as_of_date": { "type": "string", "format": "date" },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fact_type": { "type": "string" },
+          "subject": { "type": ["string", "null"] },
+          "value": {},
+          "confidence": {
+            "type": "string",
+            "enum": ["user_asserted", "user_unknown", "inferred", "system_default"]
+          }
+        },
+        "required": ["fact_type", "value"]
+      }
+    }
+  },
+  "required": ["life_event", "facts"]
+}

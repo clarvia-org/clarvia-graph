@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/consequence.schema.json",
+  "title": "Clarvia Consequence (draft)",
+  "description": "Draft schema for consequence records.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^consequence\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[a-z0-9_]+$"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "title": { "type": "string", "minLength": 1 },
+    "title_en": { "type": ["string", "null"] },
+    "description": { "type": "string" },
+    "jurisdiction": { "type": "string" },
+    "life_event": { "type": "string" },
+    "domain": { "type": "string" },
+    "consequence_type": { "type": "string" },
+    "authoring_status": { "$ref": "defs/status.schema.json#/$defs/authoring_status" },
+    "distribution_status": { "$ref": "defs/status.schema.json#/$defs/distribution_status" },
+    "record_valid_from": { "type": "string", "format": "date" },
+    "record_valid_to": { "type": ["string", "null"], "format": "date" }
+  },
+  "required": ["id", "schema_version", "title", "jurisdiction", "life_event", "domain", "consequence_type", "authoring_status", "distribution_status", "record_valid_from"]
+}

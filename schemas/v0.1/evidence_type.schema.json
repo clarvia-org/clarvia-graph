@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clarvia.eu/schemas/v0.1/evidence_type.schema.json",
+  "title": "Clarvia Evidence Type",
+  "description": "A document type that may be required as evidence. Reusable across life events.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^evidence_type\\.[a-z0-9_]+\\.[a-z0-9_]+$",
+      "description": "ID grammar: evidence_type.<jurisdiction_or_global>.<slug>"
+    },
+    "schema_version": { "$ref": "defs/temporal.schema.json#/$defs/schema_version" },
+    "canonical_name": { "type": "string", "minLength": 1 },
+    "synonyms": { "type": "array", "items": { "type": "string" } },
+    "description": { "type": ["string", "null"] },
+    "jurisdiction": { "type": "string" },
+    "broader": { "type": ["string", "null"] },
+    "jurisdictional_variants": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "authoring_status": { "$ref": "defs/status.schema.json#/$defs/authoring_status" },
+    "distribution_status": { "$ref": "defs/status.schema.json#/$defs/distribution_status" },
+    "record_valid_from": { "type": "string", "format": "date" },
+    "record_valid_to": { "type": ["string", "null"], "format": "date" }
+  },
+  "required": ["id", "schema_version", "canonical_name", "jurisdiction", "authoring_status", "distribution_status", "record_valid_from"]
+}
