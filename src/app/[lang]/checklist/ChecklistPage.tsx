@@ -118,6 +118,7 @@ interface ChecklistItem {
 const GROUP_ORDER = [
   "immediate_formalities",
   "money_and_benefits",
+  "cross_border_issues",
   "legal_and_succession",
   "housing_and_utilities",
   "personal_and_memorial",
@@ -133,6 +134,11 @@ const GROUP_LABELS: Record<string, { en: string; fr: string; de: string }> = {
     en: "Money and benefits",
     fr: "Argent et prestations",
     de: "Geld und Leistungen",
+  },
+  cross_border_issues: {
+    en: "Cross-border issues",
+    fr: "Questions transfrontalières",
+    de: "Grenzüberschreitende Fragen",
   },
   legal_and_succession: {
     en: "Legal and succession",
@@ -263,6 +269,7 @@ export default function ChecklistPage() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [step, setStep] = useState<"intake" | "results">("intake");
   const [items, setItems] = useState<ChecklistItem[]>([]);
+  const [unknownQuestions, setUnknownQuestions] = useState<IntakeQuestion[]>([]);
   const [loading, setLoading] = useState(true);
 
   // Load data
@@ -281,7 +288,16 @@ export default function ChecklistPage() {
   const generateChecklist = useCallback(() => {
     if (!runtime) return;
 
-    // Build nested facts
+    // Check which questions have UNKNOWN answers
+    const unknownQuestions: IntakeQuestion[] = [];
+    for (const [qId, value] of Object.entries(answers)) {
+      if (value === "UNKNOWN") {
+        const question = intake?.questions.find((q) => q.id === qId);
+        if (question) unknownQuestions.push(question);
+      }
+    }
+
+    // Build nested facts (skip UNKNOWN)
     const factMap: Record<string, string> = {};
     for (const [qId, value] of Object.entries(answers)) {
       const question = intake?.questions.find((q) => q.id === qId);
@@ -298,7 +314,10 @@ export default function ChecklistPage() {
       conditionResults.set(condition.id, result);
     }
 
-    // Build checklist items
+    // Build checklist items — but only include items whose conditions
+    // are definitively true. Items that are "needs_fact" because of an
+    // UNKNOWN answer are NOT shown as individual tasks (that would show
+    // every possible alternative). Instead we show a single prompt card.
     const generated: ChecklistItem[] = [];
     const authorityMap = new Map(runtime.authorities.map((a) => [a.id, a]));
     const deadlineMap = new Map(runtime.deadlines.map((d) => [d.id, d]));
@@ -318,7 +337,6 @@ export default function ChecklistPage() {
         }
         if (result === null) {
           status = "needs_fact";
-          // Find which question path maps to this condition
           const condition = runtime.conditions.find((c) => c.id === ref);
           if (condition) {
             const varRefs: string[] = [];
@@ -328,9 +346,13 @@ export default function ChecklistPage() {
         }
       }
 
+      // Skip items that don't apply
       if (status === "does_not_apply") continue;
 
-      // Expand task templates
+      // Skip needs_fact items — we handle these with prompt cards instead
+      if (status === "needs_fact") continue;
+
+      // Expand task templates (only for items that definitively apply)
       for (const templateId of consequence.task_template_refs) {
         const template = runtime.task_templates.find((t) => t.id === templateId);
         if (!template) continue;
@@ -375,11 +397,12 @@ export default function ChecklistPage() {
     generated.sort((a, b) => {
       const ga = GROUP_ORDER.indexOf(a.checklist_group);
       const gb = GROUP_ORDER.indexOf(b.checklist_group);
-      if (ga !== gb) return ga - gb;
+      if (ga !== gb) return (ga === -1 ? 99 : ga) - (gb === -1 ? 99 : gb);
       return (b.urgency?.score ?? 0) - (a.urgency?.score ?? 0);
     });
 
     setItems(generated);
+    setUnknownQuestions(unknownQuestions);
     setStep("results");
   }, [runtime, intake, answers]);
 
@@ -496,10 +519,12 @@ export default function ChecklistPage() {
           <ChecklistResults
             lang={lang}
             items={items}
+            unknownQuestions={unknownQuestions}
             onReset={() => {
               setStep("intake");
               setAnswers({});
               setItems([]);
+              setUnknownQuestions([]);
             }}
           />
         )}
@@ -597,17 +622,18 @@ function IntakeWizard({
 function ChecklistResults({
   lang,
   items,
+  unknownQuestions,
   onReset,
 }: {
   lang: Lang;
   items: ChecklistItem[];
+  unknownQuestions: IntakeQuestion[];
   onReset: () => void;
 }) {
   // Group items by checklist_group
   const groups = GROUP_ORDER.filter((g) => items.some((i) => i.checklist_group === g));
 
-  const appliesCount = items.filter((i) => i.status === "applies").length;
-  const needsFactCount = items.filter((i) => i.status === "needs_fact").length;
+  const appliesCount = items.length;
 
   return (
     <div className="space-y-6">
@@ -630,15 +656,41 @@ function ChecklistResults({
               `${appliesCount} élément${appliesCount > 1 ? "s" : ""} applicable${appliesCount > 1 ? "s" : ""}`,
               `${appliesCount} zutreffende${appliesCount > 1 ? "r" : ""} Punkt${appliesCount > 1 ? "e" : ""}`
             )}
-          {needsFactCount > 0 &&
-            ` · ${needsFactCount} ${l(
-              lang,
-              "need more information",
-              "nécessitent plus d'informations",
-              "benötigen weitere Informationen"
-            )}`}
         </p>
       </div>
+
+      {/* Unknown question prompt cards */}
+      {unknownQuestions.length > 0 && (
+        <div className="space-y-3">
+          <h3 className="text-sm font-bold text-amber-700 uppercase tracking-wide flex items-center gap-2">
+            <span className="w-8 h-px bg-amber-300" />
+            {l(lang, "More information needed", "Informations supplémentaires nécessaires", "Weitere Informationen erforderlich")}
+          </h3>
+          {unknownQuestions.map((q) => (
+            <div
+              key={q.id}
+              className="p-4 rounded-xl border-2 border-amber-200 bg-amber-50/60 backdrop-blur-sm"
+            >
+              <div className="flex items-start gap-3">
+                <span className="text-lg mt-0.5">❓</span>
+                <div>
+                  <p className="text-sm font-semibold text-amber-900">
+                    {lang === "fr" ? q.label_fr : lang === "de" ? q.label_de : q.label_en}
+                  </p>
+                  <p className="text-xs text-amber-700 mt-1">
+                    {l(
+                      lang,
+                      "Your checklist may be incomplete because this answer is unknown. Once you have this information, come back and generate a new checklist.",
+                      "Votre liste pourrait être incomplète car cette réponse est inconnue. Une fois cette information obtenue, revenez générer une nouvelle liste.",
+                      "Ihre Checkliste ist möglicherweise unvollständig, da diese Antwort unbekannt ist. Sobald Sie diese Information haben, erstellen Sie eine neue Checkliste."
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Items by group */}
       {groups.map((group) => {
@@ -659,7 +711,7 @@ function ChecklistResults({
         );
       })}
 
-      {items.length === 0 && (
+      {items.length === 0 && unknownQuestions.length === 0 && (
         <div className="glass-panel p-8 rounded-xl text-center">
           <p className="text-calm-blue-500 text-sm">
             {l(
