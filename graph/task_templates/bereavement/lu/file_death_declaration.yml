@@ -27,7 +27,7 @@ evidence_requirements:
         - evidence_type.lu.medical_death_certificate
         - evidence_type.lu.identity_document_deceased
 source_assertion_refs:
-  - assertion.lu.guichet_bereavement.death_must_be_declared
+  - assertion.guichet_lu.bereavement.death_must_be_declared
 rendering:
   checklist_group: immediate_formalities
   urgency_score: 95

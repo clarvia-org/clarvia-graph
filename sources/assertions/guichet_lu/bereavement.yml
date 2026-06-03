@@ -1,7 +1,7 @@
-source_id: source.lu.guichet_bereavement
-source_snapshot_id: snapshot.lu.guichet_bereavement.20260603
+source_id: source.guichet_lu.bereavement
+source_snapshot_id: snapshot.guichet_lu.bereavement.2026_06_03
 assertions:
-  - id: assertion.lu.guichet_bereavement.death_must_be_declared
+  - id: assertion.guichet_lu.bereavement.death_must_be_declared
     schema_version: "0.1.0"
     claim_type: legal_scope
     claim_text: >
@@ -22,7 +22,7 @@ assertions:
       extraction_method: ai_assisted
       extracted_at: "2026-06-03T12:00:00Z"
 
-  - id: assertion.lu.guichet_bereavement.declaration_within_24h
+  - id: assertion.guichet_lu.bereavement.declaration_within_24h
     schema_version: "0.1.0"
     claim_type: deadline
     claim_text: >
@@ -45,7 +45,7 @@ assertions:
       extraction_method: ai_assisted
       extracted_at: "2026-06-03T12:00:00Z"
 
-  - id: assertion.lu.guichet_bereavement.survivor_pension_available
+  - id: assertion.guichet_lu.bereavement.survivor_pension_available
     schema_version: "0.1.0"
     claim_type: eligibility_condition
     claim_text: >

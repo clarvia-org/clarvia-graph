@@ -16,7 +16,7 @@ trigger:
 task_template_refs:
   - task_template.lu.bereavement.death_registration.file_death_declaration
 source_assertion_refs:
-  - assertion.lu.guichet_bereavement.death_must_be_declared
+  - assertion.guichet_lu.bereavement.death_must_be_declared
 authoring_status: draft
 distribution_status: public_open
 confidence: medium
