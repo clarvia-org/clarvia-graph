@@ -462,23 +462,63 @@ export default function ChecklistPage() {
         <div className="mb-8 p-4 rounded-xl border-2 border-amber-300 bg-amber-50/80 backdrop-blur-sm">
           <div className="flex items-start gap-3">
             <span className="text-xl mt-0.5">⚠️</span>
-            <div>
-              <p className="font-semibold text-amber-900 text-sm">
-                {l(
-                  lang,
-                  "Alpha Prototype — Not Legal Advice",
-                  "Prototype Alpha — Ceci n'est pas un avis juridique",
-                  "Alpha-Prototyp — Keine Rechtsberatung"
-                )}
-              </p>
-              <p className="text-amber-800 text-xs mt-1 leading-relaxed">
-                {l(
-                  lang,
-                  "This is an early technical prototype with very limited coverage. It currently only includes 2 items for Luxembourg. The information shown is for testing purposes only and must not be relied upon. Always consult qualified professionals for legal, tax, and pension matters.",
-                  "Ceci est un prototype technique précoce avec une couverture très limitée. Il ne comprend actuellement que 2 éléments pour le Luxembourg. Les informations affichées sont à des fins de test uniquement et ne doivent pas être utilisées comme référence. Consultez toujours des professionnels qualifiés pour les questions juridiques, fiscales et de pension.",
-                  "Dies ist ein früher technischer Prototyp mit sehr begrenzter Abdeckung. Er enthält derzeit nur 2 Einträge für Luxemburg. Die angezeigten Informationen dienen nur zu Testzwecken und dürfen nicht als Grundlage verwendet werden. Konsultieren Sie immer qualifizierte Fachleute für rechtliche, steuerliche und Rentenangelegenheiten."
-                )}
-              </p>
+            <div className="space-y-3">
+              <div>
+                <p className="font-bold text-amber-950 text-sm">
+                  {l(
+                    lang,
+                    "Alpha Prototype - Not Legal Advice",
+                    "Prototype Alpha - Ceci n'est pas un avis juridique",
+                    "Alpha-Prototyp - Keine Rechtsberatung"
+                  )}
+                </p>
+                <p className="text-amber-900 text-xs mt-1 leading-relaxed">
+                  {l(
+                    lang,
+                    "This is an early alpha prototype of the Clarvia Bereavement Checklist, provided for testing and demonstration only. It dynamically pulls content from the open-source clarvia-graph repository (https://github.com/clarvia-org/clarvia-graph) on GitHub. No sensitive or personal data is included.",
+                    "Il s'agit d'un premier prototype alpha de la liste de contrôle de deuil Clarvia, fourni uniquement à des fins de test et de démonstration. Il récupère dynamiquement le contenu du dépôt open-source clarvia-graph (https://github.com/clarvia-org/clarvia-graph) sur GitHub. Aucune donnée sensible ou personnelle n'est incluse.",
+                    "Dies ist ein früher Alpha-Prototyp der Clarvia-Trauer-Checkliste, der nur zu Test- und Demonstrationszwecken bereitgestellt wird. Er lädt Inhalte dynamisch aus dem Open-Source-Repository clarvia-graph (https://github.com/clarvia-org/clarvia-graph) auf GitHub. Es sind keine sensiblen oder persönlichen Daten enthalten."
+                  )}
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-amber-950 text-xs">
+                  {l(
+                    lang,
+                    "Standards & Licenses",
+                    "Normes & Licences",
+                    "Standards & Lizenzen"
+                  )}
+                </p>
+                <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
+                  {l(
+                    lang,
+                    "Uses native schemas compatible with: CPSV-AP, CCCEV, ELI (planned), PROV-O (planned). Licenses: Code & tooling - EUPL-1.2; Graph data - CC-BY-4.0; Schemas & vocabularies - CC0 or Apache-2.0.",
+                    "Utilise des schémas natifs compatibles avec : CPSV-AP, CCCEV, ELI (prévu), PROV-O (prévu). Licences : Code & outils - EUPL-1.2 ; Données du graphe - CC-BY-4.0 ; Schémas & vocabulaires - CC0 ou Apache-2.0.",
+                    "Verwendet native Schemata, die kompatibel sind mit: CPSV-AP, CCCEV, ELI (geplant), PROV-O (geplant). Lizenzen: Code & Werkzeuge - EUPL-1.2; Graphendaten - CC-BY-4.0; Schemata & Vokabulare - CC0 oder Apache-2.0."
+                  )}
+                </p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-amber-950 text-xs">
+                  {l(
+                    lang,
+                    "Important",
+                    "Important",
+                    "Wichtig"
+                  )}
+                </p>
+                <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
+                  {l(
+                    lang,
+                    "For informational purposes only. Not legal, tax, or professional advice. Always consult qualified professionals. Data provided \"as is\" with no warranties.",
+                    "Uniquement à des fins d'information. Ceci ne constitue pas un conseil juridique, fiscal ou professionnel. Consultez toujours des professionnels qualifiés. Données fournies « en l'état » sans aucune garantie.",
+                    "Nur zu Informationszwecken. Keine Rechts-, Steuer- oder sonstige Fachberatung. Konsultieren Sie immer qualifizierte Fachleute. Die Daten werden ohne Mängelgewähr und ohne Gewährleistungen bereitgestellt."
+                  )}
+                </p>
+              </div>
             </div>
           </div>
         </div>
