@@ -172,6 +172,125 @@ describe("generateChecklist", () => {
     expect(output1.id).toBe(output2.id);
   });
 
+  it("same scenario + same subject produces same checklist item ID", () => {
+    const graph = loadGraph(ROOT_DIR);
+    const facts: Fact[] = [
+      { fact_type: "death.place.country", value: "LU" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+    ];
+
+    const output1 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+    const output2 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+
+    // All items should have resolved_subject_id
+    for (const item of output1.items) {
+      expect(item.resolved_subject_id).toBeDefined();
+      expect(typeof item.resolved_subject_id).toBe("string");
+    }
+
+    // Same inputs produce same IDs
+    expect(output1.items.map(i => i.id)).toEqual(output2.items.map(i => i.id));
+  });
+
+  it("same task but different resolved_subject_id produces different checklist item ID", () => {
+    const graph = loadGraph(ROOT_DIR);
+
+    const facts: Fact[] = [
+      { fact_type: "death.place.country", value: "LU" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+    ];
+
+    // Generate with default subject role (person.deceased)
+    const output1 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+    expect(output1.items.length).toBeGreaterThan(0);
+
+    // Find a template that was actually used — match by title
+    const firstItemTitle = output1.items[0].title;
+    let matchedTemplateKey: string | undefined;
+    for (const [key, tmpl] of graph.taskTemplates.entries()) {
+      if (tmpl.title === firstItemTitle) {
+        matchedTemplateKey = key;
+        break;
+      }
+    }
+    expect(matchedTemplateKey).toBeDefined();
+    const template = graph.taskTemplates.get(matchedTemplateKey!)!;
+
+    // Now change the template's subject_role to survivor
+    const originalRole = template.target?.subject_role;
+    if (!template.target) {
+      template.target = {};
+    }
+    template.target.subject_role = "survivor";
+
+    const output2 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+
+    // Restore original
+    if (template.target) {
+      template.target.subject_role = originalRole ?? undefined;
+    }
+
+    // Find items with person.survivor — these should exist
+    const items2ForTemplate = output2.items.filter(i => i.resolved_subject_id === "person.survivor");
+    expect(items2ForTemplate.length).toBeGreaterThan(0);
+
+    // The same-titled item should have a different ID
+    const item1 = output1.items.find(i => i.title === firstItemTitle)!;
+    const item2 = output2.items.find(i => i.title === firstItemTitle)!;
+    expect(item1.id).not.toBe(item2.id);
+    expect(item1.resolved_subject_id).toBe("person.deceased");
+    expect(item2.resolved_subject_id).toBe("person.survivor");
+  });
+
+  it("missing subject role uses person.deceased fallback", () => {
+    const graph = loadGraph(ROOT_DIR);
+    const facts: Fact[] = [
+      { fact_type: "death.place.country", value: "LU" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+    ];
+
+    const output = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+
+    // All current templates have no subject_role, so all items should use person.deceased fallback
+    for (const item of output.items) {
+      expect(item.resolved_subject_id).toBe("person.deceased");
+    }
+  });
+
+  it("item ID does not include generated_at or consequenceId", () => {
+    const graph = loadGraph(ROOT_DIR);
+    const facts: Fact[] = [
+      { fact_type: "death.place.country", value: "LU" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+    ];
+
+    // Generate at two different wall-clock times — same asOfDate
+    const output1 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+    const output2 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+
+    // Item IDs should be identical (no timestamp/generated_at in hash)
+    expect(output1.items.map(i => i.id)).toEqual(output2.items.map(i => i.id));
+
+    // No item ID should contain a consequence ID prefix
+    for (const item of output1.items) {
+      expect(item.id).not.toContain("consequence.");
+    }
+  });
+
+  it("item ID format remains checklist_item.<scenario_hash>.<task_or_group_hash>", () => {
+    const graph = loadGraph(ROOT_DIR);
+    const facts: Fact[] = [
+      { fact_type: "death.place.country", value: "LU" },
+      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+    ];
+
+    const output = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
+
+    for (const item of output.items) {
+      expect(item.id).toMatch(/^checklist_item\.[a-f0-9]+\.[a-f0-9]+$/);
+    }
+  });
+
   it("cross-border: LU death + DE pension produces items from both jurisdictions", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [

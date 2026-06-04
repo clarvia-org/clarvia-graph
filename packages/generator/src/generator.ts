@@ -47,6 +47,7 @@ export type ItemStatus =
 
 export interface ChecklistItem {
   id: string;
+  resolved_subject_id: string;
   status: ItemStatus;
   title: string;
   description: string | null;
@@ -121,20 +122,22 @@ const GROUP_ORDER: Record<string, { order: number; label: string }> = {
 };
 
 // ── Deterministic item ID ────────────────────────────────────────────
-// Per spec §14.1: hash includes task_template_id, jurisdiction,
-// authority_id, dedupe_group_key, and generator_version.
+// Per spec §14.1: hash includes task_template_id, resolved_subject_id,
+// jurisdiction, authority_id, dedupe_group_key, and generator_version.
 
 const GENERATOR_VERSION = "0.1";
 
 function makeItemId(
   scenarioHash: string,
   taskTemplateId: string,
+  resolvedSubjectId: string,
   jurisdiction: string,
   authorityId: string | null,
   dedupeGroupKey: string | null,
 ): string {
   const identity = [
     taskTemplateId,
+    resolvedSubjectId,
     jurisdiction,
     authorityId ?? "",
     dedupeGroupKey ?? "",
@@ -145,6 +148,31 @@ function makeItemId(
     .digest("hex")
     .slice(0, 12);
   return `checklist_item.${scenarioHash}.${hash}`;
+}
+
+// ── Resolved subject ID ─────────────────────────────────────────────
+// Alpha deterministic mapping from task_template.target.subject_role.
+// Fallback for bereavement: person.deceased.
+
+const SUBJECT_ROLE_MAP: Record<string, string> = {
+  deceased: "person.deceased",
+  survivor: "person.survivor",
+  surviving_spouse: "person.survivor",
+  surviving_partner: "person.survivor",
+  child: "person.child",
+  dependant: "person.dependant",
+  estate: "estate.primary",
+};
+
+function resolveSubjectId(
+  template: TaskTemplate | null,
+): string {
+  const role = template?.target?.subject_role;
+  if (role && SUBJECT_ROLE_MAP[role]) {
+    return SUBJECT_ROLE_MAP[role];
+  }
+  // Bereavement alpha fallback
+  return "person.deceased";
 }
 
 // ── Deduplication and Merging helpers ────────────────────────────────
@@ -690,14 +718,18 @@ function makeItem(
     return true;
   });
 
+  const resolvedSubjectId = resolveSubjectId(template);
+
   return {
     id: makeItemId(
       scenarioHash,
       template?.id ?? consequence.id,
+      resolvedSubjectId,
       consequence.jurisdiction,
       template?.authority_refs?.[0] ?? null,
       null,
     ),
+    resolved_subject_id: resolvedSubjectId,
     status,
     title: template?.title ?? consequence.title,
     description: (template as Record<string, unknown>)?.description as string | null ?? null,
