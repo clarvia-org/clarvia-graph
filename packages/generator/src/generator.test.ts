@@ -147,7 +147,7 @@ describe("generateChecklist", () => {
     // Checklist ID should be fully deterministic (no timestamp in hash)
     expect(output1.id).toBe(output2.id);
     expect(output1.id).toMatch(/^checklist\./);
-    expect(output1.checklist_run_id).toMatch(/^checklist_run\.20260603\d*\./);
+    expect(output1.checklist_run_id).toMatch(/^checklist_run\.\d{14}\./);
 
     // Item IDs should also be deterministic
     expect(output1.items.map((i) => i.id)).toEqual(
