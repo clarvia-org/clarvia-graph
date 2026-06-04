@@ -40,6 +40,12 @@ export interface TaskTemplate extends GraphRecord {
   domain: string;
   authority_refs?: string[];
   deadline_refs?: string[];
+  target?: {
+    object_type?: string;
+    object_ref?: string | null;
+    subject_role?: string | null;
+    primary_authority_ref?: string | null;
+  } | null;
   evidence_requirements?: {
     satisfy_if: string;
     sets: Array<{
