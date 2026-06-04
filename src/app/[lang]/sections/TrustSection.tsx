@@ -56,7 +56,7 @@ export default function TrustSection({ lang }: { lang: Lang }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto mb-6">
           {FOUNDERS.map((f, i) => (
             <div key={i} className="glass-panel p-6 sm:p-8 flex flex-col items-center text-center">
-              <img src={f.photo} alt={f.name} className={`w-24 h-24 rounded-full object-cover border-3 border-white shadow-md mb-4${i === 1 ? " [transform:scaleX(-1)]" : ""}`} />
+              <img src={f.photo} alt={f.name} className={`w-24 h-24 rounded-full object-cover border-3 border-white shadow-md mb-4${i === 1 ? " [transform:scaleX(-1)]" : ""}`} style={f.photo.includes("gunther") ? { objectPosition: "center 20%" } : undefined} />
               <h3 className="text-xl font-semibold mb-1" style={{ color: "#2b3a67" }}>{f.name}</h3>
               <p className="text-sm font-medium text-calm-lilac-500 mb-3">{l(lang, f.title.en, f.title.fr, f.title.de)}</p>
               <p className="text-base text-calm-blue-600 leading-relaxed">{l(lang, f.bio.en, f.bio.fr, f.bio.de)}</p>

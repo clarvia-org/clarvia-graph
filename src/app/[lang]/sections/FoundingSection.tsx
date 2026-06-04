@@ -16,7 +16,7 @@ export default function FoundingSection({ lang }: { lang: Lang }) {
               <p>{l(lang, f.quote2.en, f.quote2.fr, f.quote2.de)}&rdquo;</p>
             </blockquote>
             <div className="mt-6 flex items-center gap-4">
-              <img src={f.photo} alt={f.name} className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" />
+              <img src={f.photo} alt={f.name} className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" style={f.photo.includes("gunther") ? { objectPosition: "center 20%" } : undefined} />
               <div>
                 <p className="font-semibold text-calm-blue-800">{f.name}</p>
                 <p className="text-sm text-calm-blue-500">{l(lang, f.title.en, f.title.fr, f.title.de)}</p>
