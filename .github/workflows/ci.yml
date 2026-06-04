@@ -62,6 +62,18 @@ jobs:
       - name: Referential integrity
         run: pnpm check-references
 
+      - name: Anchor validation
+        run: pnpm check-anchors
+
+      - name: Publication gate
+        run: pnpm check-publication-gate
+
+      - name: Contradiction detection
+        run: pnpm check-contradictions
+
+      - name: Scenario tests
+        run: pnpm test-scenarios
+
       - name: Export JSON (smoke test)
         run: pnpm export-json
 

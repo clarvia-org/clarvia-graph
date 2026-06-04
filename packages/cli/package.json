@@ -13,6 +13,10 @@
     "validate": "tsx src/index.ts validate",
     "lint-ids": "tsx src/index.ts lint-ids",
     "check-references": "tsx src/index.ts check-references",
+    "check-anchors": "tsx src/index.ts check-anchors",
+    "check-publication-gate": "tsx src/index.ts check-publication-gate",
+    "check-contradictions": "tsx src/index.ts check-contradictions",
+    "test-scenarios": "tsx src/index.ts test-scenarios",
     "build-checklist": "tsx src/index.ts build-checklist",
     "export-json": "tsx src/index.ts export-json",
     "export-web": "tsx src/index.ts export-web"

@@ -37,29 +37,29 @@ switch (command) {
     break;
   }
 
-  case "check-anchors":
-    console.log("clarvia check-anchors — not yet implemented (Sprint 2)");
-    process.exit(0);
+  case "check-anchors": {
+    const { main } = await import("./commands/check-anchors.js");
+    await main();
     break;
+  }
 
-  case "check-publication-gate":
-    console.log(
-      "clarvia check-publication-gate — not yet implemented (Sprint 2)"
-    );
-    process.exit(0);
+  case "check-publication-gate": {
+    const { main } = await import("./commands/check-publication-gate.js");
+    await main();
     break;
+  }
 
-  case "check-contradictions":
-    console.log(
-      "clarvia check-contradictions — not yet implemented (Sprint 3)"
-    );
-    process.exit(0);
+  case "check-contradictions": {
+    const { main } = await import("./commands/check-contradictions.js");
+    await main();
     break;
+  }
 
-  case "test-scenarios":
-    console.log("clarvia test-scenarios — not yet implemented (Sprint 3)");
-    process.exit(0);
+  case "test-scenarios": {
+    const { main } = await import("./commands/test-scenarios.js");
+    await main();
     break;
+  }
 
   case "build-checklist": {
     const { main } = await import("./commands/build-checklist.js");
@@ -91,10 +91,10 @@ Commands:
   validate              Validate YAML files against JSON Schemas
   lint-ids              Check ID grammar and length rules
   check-references      Verify all references point to existing records
-  check-anchors         Verify assertion anchors exist in snapshots (planned)
-  check-publication-gate  Check publication gate requirements (planned)
-  check-contradictions  Detect overlapping conflicting claims (planned)
-  test-scenarios        Run scenario regression tests (planned)
+  check-anchors         Verify assertion anchors exist in snapshots
+  check-publication-gate  Check publication gate requirements
+  check-contradictions  Detect overlapping conflicting claims
+  test-scenarios        Run scenario regression tests
   build-checklist       Generate checklist output for test scenarios
   export-json           Export full graph as JSON
   export-web            Export web runtime bundle for workflow-web

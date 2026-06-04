@@ -17,6 +17,10 @@
     "validate": "pnpm --filter @clarvia/cli run validate",
     "lint-ids": "pnpm --filter @clarvia/cli run lint-ids",
     "check-references": "pnpm --filter @clarvia/cli run check-references",
+    "check-anchors": "pnpm --filter @clarvia/cli run check-anchors",
+    "check-publication-gate": "pnpm --filter @clarvia/cli run check-publication-gate",
+    "check-contradictions": "pnpm --filter @clarvia/cli run check-contradictions",
+    "test-scenarios": "pnpm --filter @clarvia/cli run test-scenarios",
     "build-checklist": "pnpm --filter @clarvia/cli run build-checklist",
     "export-json": "pnpm --filter @clarvia/cli run export-json",
     "export-web": "pnpm --filter @clarvia/cli run export-web"
