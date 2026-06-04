@@ -1,0 +1,163 @@
+{
+  "id": "checklist.76e3d57825c7",
+  "checklist_run_id": "checklist_run.20260603120000.76e3d57825c7",
+  "life_event": "bereavement",
+  "generated_at": "2026-06-03T12:00:00.000Z",
+  "graph_version": "0.1.0-alpha.0",
+  "graph_commit": null,
+  "jurisdiction_roles": {
+    "death_place": [
+      "LU"
+    ],
+    "deceased_habitual_residence": [],
+    "survivor_residence": [],
+    "work_or_insurance_state": [
+      "LU"
+    ],
+    "asset_situs": [],
+    "possible_succession_law": [],
+    "possible_pension_authority": [
+      "LU"
+    ]
+  },
+  "is_cross_border": false,
+  "summary": {
+    "item_counts": {
+      "applies": 2,
+      "maybe_applies": 0,
+      "needs_fact": 0,
+      "professional_review": 0
+    },
+    "source_count": 2
+  },
+  "sections": [
+    {
+      "group": "immediate_formalities",
+      "label": "Immediate formalities",
+      "item_count": 1
+    },
+    {
+      "group": "money_and_benefits",
+      "label": "Money and benefits",
+      "item_count": 1
+    }
+  ],
+  "items": [
+    {
+      "id": "checklist_item.76e3d57825c7.4aa7f7dc45f7",
+      "resolved_subject_id": "person.deceased",
+      "status": "applies",
+      "title": "File death declaration at the commune",
+      "description": "File the death declaration (d\u00c3\u00a9claration de d\u00c3\u00a9c\u00c3\u00a8s) at the Bureau de l'\u00c3\u00a9tat civil of the commune where the death occurred. This must be done within the legal deadline. Required documents include the medical death certificate and identity documents.\n",
+      "jurisdiction_contexts": [
+        "LU"
+      ],
+      "checklist_group": "immediate_formalities",
+      "urgency": {
+        "score": 95,
+        "label": "urgent",
+        "deadline_label": "Death declaration deadline (PT24H)",
+        "overdue": null
+      },
+      "action": {
+        "action_type": "file_declaration",
+        "authority_name": "Civil Registry Office",
+        "authority_ref": "authority.lu.bureau_etat_civil"
+      },
+      "needed_for": [
+        "Death must be declared to the civil registry"
+      ],
+      "missing_fact_refs": [],
+      "why_maybe": null,
+      "source_summary": {
+        "assertion_count": 1,
+        "top_tier": null
+      },
+      "explanation_trace_id": "trace.checklist_item.76e3d57825c7.4aa7f7dc45f7"
+    },
+    {
+      "id": "checklist_item.76e3d57825c7.99bbf3e3eacf",
+      "resolved_subject_id": "person.deceased",
+      "status": "applies",
+      "title": "File survivor pension claim with CNAP",
+      "description": "File a claim for survivor pension (pension de survie) with the Caisse Nationale d'Assurance Pension (CNAP). The surviving spouse must submit the required documents and forms.\n",
+      "jurisdiction_contexts": [
+        "LU"
+      ],
+      "checklist_group": "money_and_benefits",
+      "urgency": {
+        "score": 70,
+        "label": "important",
+        "deadline_label": null,
+        "overdue": null
+      },
+      "action": {
+        "action_type": "submit_application",
+        "authority_name": "National Pension Insurance Fund",
+        "authority_ref": "authority.lu.cnap"
+      },
+      "needed_for": [
+        "Surviving spouse may be entitled to a survivor pension"
+      ],
+      "missing_fact_refs": [],
+      "why_maybe": null,
+      "source_summary": {
+        "assertion_count": 1,
+        "top_tier": null
+      },
+      "explanation_trace_id": "trace.checklist_item.76e3d57825c7.99bbf3e3eacf"
+    }
+  ],
+  "explanation_traces": [
+    {
+      "id": "trace.checklist_item.76e3d57825c7.4aa7f7dc45f7",
+      "why_visible": [
+        "Death occurred in Luxembourg: satisfied"
+      ],
+      "conditions": [
+        {
+          "condition_ref": "condition.lu.bereavement.death_registration.death_occurred_in_lu",
+          "result": "true",
+          "facts_used": [
+            "death.place.country"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source_title": "Dealing with the death of a loved one",
+          "publisher": "Guichet.lu (Luxembourg Government)",
+          "official_url": "https://guichet.public.lu/en/citoyens/life-event/famille-education/deces-proche.html",
+          "assertion_refs": [
+            "assertion.guichet_lu.bereavement.death_must_be_declared"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trace.checklist_item.76e3d57825c7.99bbf3e3eacf",
+      "why_visible": [
+        "Deceased was insured under Luxembourg pension system: satisfied"
+      ],
+      "conditions": [
+        {
+          "condition_ref": "condition.lu.bereavement.survivor_pension.deceased_was_lu_insured",
+          "result": "true",
+          "facts_used": [
+            "deceased.pension.jurisdiction"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "source_title": "Dealing with the death of a loved one",
+          "publisher": "Guichet.lu (Luxembourg Government)",
+          "official_url": "https://guichet.public.lu/en/citoyens/life-event/famille-education/deces-proche.html",
+          "assertion_refs": [
+            "assertion.guichet_lu.bereavement.survivor_pension_available"
+          ]
+        }
+      ]
+    }
+  ]
+}

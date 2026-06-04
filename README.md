@@ -2,7 +2,20 @@
 
 **Open consequence graph for source-backed administrative workflows**
 
+[![Try the alpha checklist](https://img.shields.io/badge/🧪_Try_the_alpha_checklist-clarvia.org-blue?style=for-the-badge)](https://clarvia.org/en/checklist)
+
 Clarvia Graph is the technical engine behind [Clarvia](https://clarvia.org). It stores all the official rules and steps for bereavement paperwork across Europe — structured so that apps, websites, and public services can use them automatically. For the simple, family-friendly version, see [clarvia.org](https://clarvia.org).
+
+<details>
+<summary>📸 Alpha checklist preview</summary>
+
+<br>
+
+<img src="docs/images/checklist-alpha-preview.png" alt="Clarvia bereavement checklist — alpha preview" width="720">
+
+> The living demo at [clarvia.org/en/checklist](https://clarvia.org/en/checklist) consumes a static JSON export generated from this graph. See [`exports/example-bereavement-lu.json`](exports/example-bereavement-lu.json) for the exact shape.
+
+</details>
 
 ---
 
@@ -14,7 +27,7 @@ This repository contains:
 - **Graph data** — Source-backed consequences, task templates, conditions, and deadlines
 - **Sources** — Official source registry, captured snapshots, and extracted assertions
 - **Validation** — CLI tooling to validate, build, and test the graph
-- **Exports** — Generated JSON, JSON-LD, CPSV-AP, and web runtime bundles
+- **Exports** — Generated JSON for web consumers ([example](exports/example-bereavement-lu.json)), plus JSON-LD, CPSV-AP, and web runtime bundles
 
 ## Status
 
