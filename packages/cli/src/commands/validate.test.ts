@@ -229,6 +229,136 @@ http_status: 200
     expect(snapshotResult!.errors!.join(" ")).toContain("Hash mismatch for archive file");
   });
 
+  it("validates .html with LF line endings", async () => {
+    const htmlContent = "<html>\n<body>\nsome text\n</body>\n</html>\n";
+    const computedHash = createHash("sha256").update(htmlContent).digest("hex");
+
+    mkdirSync(join(tempDir, "sources", "snapshots", "html"), { recursive: true });
+    writeFileSync(
+      join(tempDir, "sources", "snapshots", "html", "lf_test.html"),
+      htmlContent,
+    );
+    writeFileSync(
+      join(tempDir, "sources", "snapshots", "lf_test.yml"),
+      `id: snapshot.test.lf_test.20250101
+schema_version: "0.1.0"
+source_id: source.test.lf_test
+captured_at: "2025-01-01T12:00:00Z"
+capture_method: http_get
+content_hash: "sha256:${computedHash}"
+archive_uri: "sources/snapshots/html/lf_test.html"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2025-01-01"
+http_status: 200
+`,
+    );
+
+    const { results, ok } = await runValidate({ rootDir: tempDir });
+    const snapshotResult = results.find(r => r.file.includes("lf_test.yml"));
+    expect(snapshotResult?.valid ?? true).toBe(true);
+    expect(ok).toBe(true);
+  });
+
+  it(".html with CRLF produces same canonical hash as LF", async () => {
+    const lfContent = "<html>\n<body>\nsome text\n</body>\n</html>\n";
+    const crlfContent = "<html>\r\n<body>\r\nsome text\r\n</body>\r\n</html>\r\n";
+    const lfHash = createHash("sha256").update(lfContent).digest("hex");
+
+    mkdirSync(join(tempDir, "sources", "snapshots", "html"), { recursive: true });
+    // Write file with CRLF line endings
+    writeFileSync(
+      join(tempDir, "sources", "snapshots", "html", "crlf_test.html"),
+      crlfContent,
+    );
+    // Use the LF hash — validator should normalize CRLF to LF before hashing
+    writeFileSync(
+      join(tempDir, "sources", "snapshots", "crlf_test.yml"),
+      `id: snapshot.test.crlf_test.20250101
+schema_version: "0.1.0"
+source_id: source.test.crlf_test
+captured_at: "2025-01-01T12:00:00Z"
+capture_method: http_get
+content_hash: "sha256:${lfHash}"
+archive_uri: "sources/snapshots/html/crlf_test.html"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2025-01-01"
+http_status: 200
+`,
+    );
+
+    const { results, ok } = await runValidate({ rootDir: tempDir });
+    const snapshotResult = results.find(r => r.file.includes("crlf_test.yml"));
+    expect(snapshotResult?.valid ?? true).toBe(true);
+    expect(ok).toBe(true);
+  });
+
+  it(".txt with CRLF produces same canonical hash as LF", async () => {
+    const lfContent = "line one\nline two\nline three\n";
+    const crlfContent = "line one\r\nline two\r\nline three\r\n";
+    const lfHash = createHash("sha256").update(lfContent).digest("hex");
+
+    mkdirSync(join(tempDir, "sources", "snapshots", "html"), { recursive: true });
+    writeFileSync(
+      join(tempDir, "sources", "snapshots", "html", "crlf_test.txt"),
+      crlfContent,
+    );
+    writeFileSync(
+      join(tempDir, "sources", "snapshots", "crlf_test_txt.yml"),
+      `id: snapshot.test.crlf_txt.20250101
+schema_version: "0.1.0"
+source_id: source.test.crlf_txt
+captured_at: "2025-01-01T12:00:00Z"
+capture_method: http_get
+content_hash: "sha256:${lfHash}"
+archive_uri: "sources/snapshots/html/crlf_test.txt"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2025-01-01"
+http_status: 200
+`,
+    );
+
+    const { results, ok } = await runValidate({ rootDir: tempDir });
+    const snapshotResult = results.find(r => r.file.includes("crlf_test_txt.yml"));
+    expect(snapshotResult?.valid ?? true).toBe(true);
+    expect(ok).toBe(true);
+  });
+
+  it("binary files are hashed as raw bytes without line-ending normalization", async () => {
+    // Create a fake PDF with CRLF bytes — these should NOT be normalized
+    const binaryContent = Buffer.from("%PDF-1.4\r\nfake binary content\r\nwith CRLF\r\n");
+    const rawHash = createHash("sha256").update(binaryContent).digest("hex");
+
+    mkdirSync(join(tempDir, "sources", "snapshots", "pdf"), { recursive: true });
+    writeFileSync(
+      join(tempDir, "sources", "snapshots", "pdf", "test_binary.pdf"),
+      binaryContent,
+    );
+    // Use the raw-byte hash — validator must NOT normalize CRLF for .pdf files
+    writeFileSync(
+      join(tempDir, "sources", "snapshots", "binary_test.yml"),
+      `id: snapshot.test.binary.20250101
+schema_version: "0.1.0"
+source_id: source.test.binary
+captured_at: "2025-01-01T12:00:00Z"
+capture_method: http_get
+content_hash: "sha256:${rawHash}"
+archive_uri: "sources/snapshots/pdf/test_binary.pdf"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2025-01-01"
+http_status: 200
+`,
+    );
+
+    const { results, ok } = await runValidate({ rootDir: tempDir });
+    const snapshotResult = results.find(r => r.file.includes("binary_test.yml"));
+    expect(snapshotResult?.valid ?? true).toBe(true);
+    expect(ok).toBe(true);
+  });
+
   it("fails when http_status is missing", async () => {
     mkdirSync(join(tempDir, "sources", "snapshots"), { recursive: true });
     // http_status is missing in YAML, but notice that source_snapshot.schema.json doesn't list it as required.

@@ -276,13 +276,17 @@ function validateSnapshotsAndAnchors(
           try {
             const expectedHash = contentHash.substring(7).toLowerCase();
             let fileBytes = readFileSync(archivePath);
-            // Normalize CRLF to LF for consistent cross-platform hashing
-            if (archivePath.endsWith(".html") || archivePath.endsWith(".txt")) {
+            // Clarvia convention: text archive content_hash values are computed
+            // over LF-normalized UTF-8 content. Binary archive hashes use raw bytes.
+            // See docs/CONVENTIONS.md.
+            const isTextArchive = archivePath.endsWith(".html") || archivePath.endsWith(".txt");
+            if (isTextArchive) {
               fileBytes = Buffer.from(fileBytes.toString("utf-8").replace(/\r\n/g, "\n"));
             }
             const actualHash = createHash("sha256").update(fileBytes).digest("hex").toLowerCase();
             if (actualHash !== expectedHash) {
-              errors.push(`Hash mismatch for archive file. Expected sha256:${expectedHash}, computed sha256:${actualHash}`);
+              const method = isTextArchive ? " using Clarvia LF-normalized text hashing" : "";
+              errors.push(`Hash mismatch for archive file. Expected sha256:${expectedHash}, computed sha256:${actualHash}${method}`);
             }
           } catch (err: unknown) {
             errors.push(`Error reading archive file: ${(err as Error).message}`);
