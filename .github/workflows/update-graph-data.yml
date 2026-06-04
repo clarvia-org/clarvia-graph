@@ -1,0 +1,86 @@
+name: Update graph data
+
+# Per spec §19.8:
+# workflow-web CI → downloads pinned graph export → copies JSON into public/data/clarvia/
+
+on:
+  # Manual trigger — specify the clarvia-graph release tag
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "clarvia-graph release tag (e.g. v0.1.0-alpha.1)"
+        required: true
+        type: string
+
+  # Automatic trigger from clarvia-graph releases via repository dispatch
+  repository_dispatch:
+    types: [graph-release]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-graph-data:
+    name: Download graph export and open PR
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Determine release tag
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "tag=${{ inputs.release_tag }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=${{ github.event.client_payload.release_tag }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Download web export from clarvia-graph release
+        env:
+          GH_TOKEN: ${{ secrets.GRAPH_READ_TOKEN }}
+        run: |
+          TAG="${{ steps.tag.outputs.tag }}"
+          echo "Downloading web export from clarvia-graph release ${TAG}..."
+
+          gh release download "${TAG}" \
+            --repo clarvia-org/clarvia-graph \
+            --pattern "web-export-*.tar.gz" \
+            --dir /tmp/graph-export
+
+          echo "Extracting..."
+          mkdir -p /tmp/graph-export/web
+          tar xzf /tmp/graph-export/web-export-*.tar.gz -C /tmp/graph-export/web
+
+      - name: Copy into public/clarvia-data/
+        run: |
+          rm -rf public/clarvia-data
+          mkdir -p public/clarvia-data
+          cp -r /tmp/graph-export/web/* public/clarvia-data/
+
+          echo "Updated files:"
+          find public/clarvia-data -type f
+
+      - name: Create PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="${{ steps.tag.outputs.tag }}"
+          BRANCH="auto/graph-data-${TAG}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "${BRANCH}"
+          git add public/clarvia-data/
+          git commit -m "data: update graph export from clarvia-graph ${TAG}"
+          git push origin "${BRANCH}"
+
+          gh pr create \
+            --title "data: update graph export from clarvia-graph ${TAG}" \
+            --body "Automated update of \`public/clarvia-data/\` from [clarvia-graph ${TAG}](https://github.com/clarvia-org/clarvia-graph/releases/tag/${TAG}).
+
+          This PR was created automatically by the \`update-graph-data\` workflow." \
+            --base main \
+            --head "${BRANCH}"
