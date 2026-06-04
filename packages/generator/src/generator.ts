@@ -173,7 +173,7 @@ function resolveDedupeKey(
   const placeholders = key.match(/\{[a-zA-Z0-9_.]+\}/g) || [];
   for (const placeholder of placeholders) {
     const name = placeholder.slice(1, -1);
-    let val: string | null = null;
+    let val: string | null;
     switch (name) {
       case "action_type":
         val = template.action_type || null;
@@ -242,7 +242,7 @@ function mergeExplanationTraces(
     why_visible.push(...trace.why_visible);
     for (const cond of trace.conditions) {
       if (!seenConditionRefs.has(cond.condition_ref)) {
-        conditions.push(cond as any);
+        conditions.push(cond);
         seenConditionRefs.add(cond.condition_ref);
       }
     }
@@ -251,7 +251,7 @@ function mergeExplanationTraces(
       if (existing) {
         existing.assertion_refs = [...new Set([...existing.assertion_refs, ...src.assertion_refs])];
       } else {
-        sources.push({ ...src } as any);
+        sources.push({ ...src });
       }
     }
   }
@@ -259,8 +259,8 @@ function mergeExplanationTraces(
   return {
     id: mergedTraceId,
     why_visible: [...new Set(why_visible)],
-    conditions: conditions as any,
-    sources: sources as any,
+    conditions,
+    sources,
   };
 }
 
@@ -508,8 +508,7 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     }
 
     const base = subList[0].item;
-    const baseConsequence = subList[0].consequence;
-    const baseTemplate = subList[0].template;
+
 
     const jurisdictions = new Set<string>();
     const neededFor = new Set<string>();

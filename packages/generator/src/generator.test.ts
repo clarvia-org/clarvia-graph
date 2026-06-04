@@ -348,7 +348,7 @@ describe("generateChecklist", () => {
         evidenceTypes: new Map(),
         intakeFactTypes: new Map(),
         sources: new Map(),
-      } as any;
+      } as unknown as Parameters<typeof generateChecklist>[0]["graph"];
 
       const output = generateChecklist({
         graph: mockGraph,
@@ -428,7 +428,7 @@ describe("generateChecklist", () => {
         evidenceTypes: new Map(),
         intakeFactTypes: new Map(),
         sources: new Map(),
-      } as any;
+      } as unknown as Parameters<typeof generateChecklist>[0]["graph"];
 
       const output = generateChecklist({
         graph: mockGraph,
@@ -493,7 +493,7 @@ describe("generateChecklist", () => {
         evidenceTypes: new Map(),
         intakeFactTypes: new Map(),
         sources: new Map(),
-      } as any;
+      } as unknown as Parameters<typeof generateChecklist>[0]["graph"];
 
       expect(() => {
         generateChecklist({
@@ -590,7 +590,7 @@ describe("generateChecklist", () => {
           },
         ],
       ]),
-    } as any);
+    } as unknown as Parameters<typeof generateChecklist>[0]["graph"]);
 
     it("includes consequence when it is within validity and legal effective range", () => {
       const graph = makeBaseGraph();
@@ -607,7 +607,7 @@ describe("generateChecklist", () => {
 
     it("excludes future consequence by record_valid_from", () => {
       const graph = makeBaseGraph();
-      graph.consequences.get("consequence.lu.test").record_valid_from = "2026-07-01";
+      graph.consequences.get("consequence.lu.test")!.record_valid_from = "2026-07-01";
       const output = generateChecklist({
         graph,
         facts: [{ fact_type: "death.place.country", value: "LU" }],
@@ -620,7 +620,7 @@ describe("generateChecklist", () => {
 
     it("excludes expired consequence by record_valid_to", () => {
       const graph = makeBaseGraph();
-      graph.consequences.get("consequence.lu.test").record_valid_to = "2026-05-15";
+      graph.consequences.get("consequence.lu.test")!.record_valid_to = "2026-05-15";
       const output = generateChecklist({
         graph,
         facts: [{ fact_type: "death.place.country", value: "LU" }],
@@ -633,7 +633,7 @@ describe("generateChecklist", () => {
 
     it("excludes not-yet-effective consequence by legal_effective_from", () => {
       const graph = makeBaseGraph();
-      graph.consequences.get("consequence.lu.test").legal_effective_from = "2026-07-01";
+      graph.consequences.get("consequence.lu.test")!.legal_effective_from = "2026-07-01";
       const output = generateChecklist({
         graph,
         facts: [{ fact_type: "death.place.country", value: "LU" }],
@@ -646,7 +646,7 @@ describe("generateChecklist", () => {
 
     it("excludes legally expired consequence by legal_effective_to", () => {
       const graph = makeBaseGraph();
-      graph.consequences.get("consequence.lu.test").legal_effective_to = "2026-05-15";
+      graph.consequences.get("consequence.lu.test")!.legal_effective_to = "2026-05-15";
       const output = generateChecklist({
         graph,
         facts: [{ fact_type: "death.place.country", value: "LU" }],
@@ -659,7 +659,7 @@ describe("generateChecklist", () => {
 
     it("excludes task template if it does not apply temporally", () => {
       const graph = makeBaseGraph();
-      graph.taskTemplates.get("task_template.lu.test_task").record_valid_from = "2026-07-01";
+      graph.taskTemplates.get("task_template.lu.test_task")!.record_valid_from = "2026-07-01";
       const output = generateChecklist({
         graph,
         facts: [{ fact_type: "death.place.country", value: "LU" }],
@@ -673,7 +673,7 @@ describe("generateChecklist", () => {
 
     it("excludes condition when it does not apply temporally, causing trigger to fail", () => {
       const graph = makeBaseGraph();
-      graph.consequences.get("consequence.lu.test").trigger = {
+      graph.consequences.get("consequence.lu.test")!.trigger = {
         condition_refs: ["condition.test"],
       };
       graph.conditions.set("condition.test", {
@@ -702,8 +702,8 @@ describe("generateChecklist", () => {
 
     it("excludes deadline when it does not apply temporally", () => {
       const graph = makeBaseGraph();
-      graph.taskTemplates.get("task_template.lu.test_task").rendering = { urgency_score: 70 };
-      graph.deadlines.get("deadline.test").record_valid_from = "2026-07-01";
+      graph.taskTemplates.get("task_template.lu.test_task")!.rendering = { urgency_score: 70 };
+      graph.deadlines.get("deadline.test")!.record_valid_from = "2026-07-01";
       const output = generateChecklist({
         graph,
         facts: [{ fact_type: "death.place.country", value: "LU" }],
@@ -717,7 +717,7 @@ describe("generateChecklist", () => {
 
     it("excludes source assertion and decreases assertion count when assertion is not valid", () => {
       const graph = makeBaseGraph();
-      graph.assertions.get("assertion.test.1").record_valid_from = "2026-07-01";
+      graph.assertions.get("assertion.test.1")!.record_valid_from = "2026-07-01";
       const output = generateChecklist({
         graph,
         facts: [{ fact_type: "death.place.country", value: "LU" }],

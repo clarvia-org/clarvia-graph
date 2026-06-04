@@ -443,7 +443,7 @@ information_concept_refs:
 `,
     );
 
-    const { results, ok } = await runValidate({ rootDir: tempDir });
+    const { ok } = await runValidate({ rootDir: tempDir });
     expect(ok).toBe(true);
   });
 

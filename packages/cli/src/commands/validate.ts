@@ -231,7 +231,7 @@ function validateSnapshotsAndAnchors(
     absolute: true,
   });
 
-  const snapshotMap = new Map<string, { data: any; file: string }>();
+  const snapshotMap = new Map<string, { data: Record<string, unknown>; file: string }>();
 
   function getRel(abs: string): string {
     return relative(rootDir, abs).split("\\").join("/");
@@ -249,7 +249,7 @@ function validateSnapshotsAndAnchors(
     }
   }
 
-  for (const [id, { data, file }] of snapshotMap.entries()) {
+  for (const [, { data, file }] of snapshotMap.entries()) {
     const relPath = getRel(file);
     const errors: string[] = [];
 
@@ -275,13 +275,17 @@ function validateSnapshotsAndAnchors(
         } else {
           try {
             const expectedHash = contentHash.substring(7).toLowerCase();
-            const fileBytes = readFileSync(archivePath);
+            let fileBytes = readFileSync(archivePath);
+            // Normalize CRLF to LF for consistent cross-platform hashing
+            if (archivePath.endsWith(".html") || archivePath.endsWith(".txt")) {
+              fileBytes = Buffer.from(fileBytes.toString("utf-8").replace(/\r\n/g, "\n"));
+            }
             const actualHash = createHash("sha256").update(fileBytes).digest("hex").toLowerCase();
             if (actualHash !== expectedHash) {
               errors.push(`Hash mismatch for archive file. Expected sha256:${expectedHash}, computed sha256:${actualHash}`);
             }
-          } catch (err: any) {
-            errors.push(`Error reading archive file: ${err.message}`);
+          } catch (err: unknown) {
+            errors.push(`Error reading archive file: ${(err as Error).message}`);
           }
         }
       }
@@ -305,9 +309,9 @@ function validateSnapshotsAndAnchors(
 
   for (const file of assertionFiles) {
     const relPath = getRel(file);
-    let rawData: any;
+    let rawData: Record<string, unknown> | null;
     try {
-      rawData = parseYaml(readFileSync(file, "utf-8"));
+      rawData = parseYaml(readFileSync(file, "utf-8")) as Record<string, unknown>;
     } catch {
       continue;
     }
@@ -327,7 +331,7 @@ function validateSnapshotsAndAnchors(
     const archivePath = resolve(rootDir, archiveUri);
     if (!existsSync(archivePath)) continue;
 
-    let archiveContent = "";
+    let archiveContent: string;
     try {
       archiveContent = readFileSync(archivePath, "utf-8");
     } catch {
@@ -379,9 +383,9 @@ function validateSnapshotsAndAnchors(
 
   for (const file of templateFiles) {
     const relPath = getRel(file);
-    let data: any;
+    let data: Record<string, unknown> | null;
     try {
-      data = parseYaml(readFileSync(file, "utf-8"));
+      data = parseYaml(readFileSync(file, "utf-8")) as Record<string, unknown>;
     } catch {
       continue;
     }
@@ -397,7 +401,8 @@ function validateSnapshotsAndAnchors(
     }
 
     if (data.provenance && typeof data.provenance === "object") {
-      const ref = data.provenance.derived_from_snapshot_ref;
+      const prov = data.provenance as Record<string, unknown>;
+      const ref = prov.derived_from_snapshot_ref;
       if (typeof ref !== "string") {
         errors.push("Field provenance.derived_from_snapshot_ref must be a string");
       } else if (!snapshotMap.has(ref)) {
@@ -461,9 +466,9 @@ function validateConditionsAndIntake(
 
   for (const file of conditionFiles) {
     const relPath = getRel(file);
-    let data: any;
+    let data: Record<string, unknown> | null;
     try {
-      data = parseYaml(readFileSync(file, "utf-8"));
+      data = parseYaml(readFileSync(file, "utf-8")) as Record<string, unknown>;
     } catch {
       continue;
     }

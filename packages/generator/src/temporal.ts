@@ -8,7 +8,7 @@ export interface TemporalContext {
   eventDate: string;
 }
 
-export function recordApplies(record: any, ctx: TemporalContext): boolean {
+export function recordApplies(record: Record<string, unknown>, ctx: TemporalContext): boolean {
   if (!record || typeof record !== "object") return true;
 
   // 1. Record validity check (against asOfDate)
