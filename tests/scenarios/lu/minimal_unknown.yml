@@ -1,0 +1,35 @@
+# Scenario Test: Minimal LU death with most facts unknown
+# Only death location known — conditional consequences should be needs_fact.
+# Based on blueprint section K.3.
+
+id: scenario_test.lu.minimal_unknown
+schema_version: "0.1.0"
+title: "Minimal LU death with most facts unknown"
+scenario_type: single_jurisdiction
+life_event: bereavement
+countries: [LU]
+
+facts:
+  - fact_type: death.date
+    value: "2026-06-05"
+  - fact_type: death.place.country
+    value: LU
+
+# Unconditional consequences: applies
+# Conditional consequences with missing facts: needs_fact
+expected_consequence_statuses:
+  consequence.lu.bereavement.death_registration.obtain_medical_death_certificate: applies
+  consequence.lu.bereavement.death_registration.declare_death: applies
+  consequence.lu.bereavement.funeral.arrange_funeral_or_cremation: applies
+  consequence.lu.bereavement.estate_assets.notify_banks_trace_assets: applies
+  consequence.lu.bereavement.succession.engage_notary: applies
+  consequence.lu.bereavement.succession.decide_accept_or_renounce: applies
+  consequence.lu.bereavement.inheritance_tax.file_final_income_tax_return: applies
+  consequence.lu.bereavement.succession.understand_applicable_succession_law: applies
+  consequence.lu.bereavement.employment.claim_bereavement_leave: needs_fact
+  consequence.lu.bereavement.health_insurance.claim_funeral_allowance: needs_fact
+  consequence.lu.bereavement.survivor_pension.claim_survivor_pension: needs_fact
+  consequence.lu.bereavement.employment.notify_ccss_business_matters: needs_fact
+  consequence.lu.bereavement.estate_assets.understand_housing_rights: needs_fact
+  consequence.lu.bereavement.succession.file_inheritance_declaration: needs_fact
+  consequence.lu.bereavement.estate_assets.transfer_vehicle_registration: needs_fact
