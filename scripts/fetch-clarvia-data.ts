@@ -93,25 +93,14 @@ function download(url: string): Promise<Buffer> {
   });
 }
 
-/** Extract a zip buffer to a directory using the `tar` or PowerShell fallback. */
-function extractZip(zipBuffer: Buffer, dest: string): void {
-  // Write zip to a temp file, then extract
-  const tmp = path.join(ROOT, ".clarvia-export-tmp.zip");
-  fs.writeFileSync(tmp, zipBuffer);
+/** Extract a tar.gz buffer to a directory. */
+function extractTarGz(buffer: Buffer, dest: string): void {
+  const tmp = path.join(ROOT, ".clarvia-export-tmp.tar.gz");
+  fs.writeFileSync(tmp, buffer);
 
   try {
     fs.mkdirSync(dest, { recursive: true });
-
-    // Try `unzip` first (Linux/macOS CI), fall back to PowerShell (Windows)
-    try {
-      execSync(`unzip -o "${tmp}" -d "${dest}"`, { stdio: "pipe" });
-    } catch {
-      // PowerShell Expand-Archive
-      execSync(
-        `powershell -NoProfile -Command "Expand-Archive -Force -Path '${tmp}' -DestinationPath '${dest}'"`,
-        { stdio: "pipe" }
-      );
-    }
+    execSync(`tar xzf "${tmp}" -C "${dest}"`, { stdio: "pipe" });
   } finally {
     fs.rmSync(tmp, { force: true });
   }
@@ -143,7 +132,7 @@ async function main(): Promise<void> {
     }
   }
 
-  const assetName = `clarvia-web-export-${version}.zip`;
+  const assetName = `clarvia-web-export-${version}.tar.gz`;
   const url = `https://github.com/clarvia-org/clarvia-graph/releases/download/${version}/${assetName}`;
   console.log(`[fetch-clarvia-data] Downloading ${url}`);
 
@@ -166,7 +155,7 @@ async function main(): Promise<void> {
 
   // Extract
   try {
-    extractZip(zipBuffer, OUT_DIR);
+    extractTarGz(zipBuffer, OUT_DIR);
   } catch (err) {
     console.error(`[fetch-clarvia-data] ✗ Extraction failed: ${err}`);
     process.exit(1);
