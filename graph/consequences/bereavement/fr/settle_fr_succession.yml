@@ -1,0 +1,20 @@
+id: consequence.fr.bereavement.estate_assets.settle_fr_succession
+schema_version: "0.1.0"
+title: "Settle succession for assets in France"
+description: >
+  When the deceased had assets in France, heirs must settle the succession
+  through a French notary for the assets located in France.
+consequence_type: obligation
+jurisdiction: FR
+life_event: bereavement
+domain: estate_assets
+trigger:
+  condition_refs:
+    - condition.fr.bereavement.estate_assets.assets_in_fr
+task_template_refs:
+  - task_template.fr.bereavement.estate_assets.engage_notaire
+source_assertion_refs: []
+authoring_status: draft
+distribution_status: restricted_source
+confidence: low
+record_valid_from: "2026-06-05"

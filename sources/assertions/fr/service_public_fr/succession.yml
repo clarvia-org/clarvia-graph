@@ -1,0 +1,44 @@
+source_id: source.service_public_fr.succession
+source_snapshot_id: snapshot.service_public_fr.succession.2026_06_05
+assertions:
+  - id: assertion.service_public_fr.succession.option_successorale
+    schema_version: "0.1.0"
+    claim_type: legal_scope
+    claim_text: >
+      Les héritiers doivent choisir d'accepter ou de renoncer à la succession
+      (option successorale) dans le cadre du règlement d'une succession en France.
+    claim_scope:
+      jurisdiction: FR
+      life_event: bereavement
+      domain: succession
+    anchor:
+      selector_type: text_quote
+      text_quote: "Accepter ou renoncer à la succession (option successorale)"
+    source_tier: official_guidance
+    record_valid_from: "2026-06-05"
+    review_status: draft
+    confidence: unassessed
+    provenance:
+      extraction_method: ai_assisted
+      extracted_at: "2026-06-05T07:00:00Z"
+
+  - id: assertion.service_public_fr.succession.notaire_obligatoire
+    schema_version: "0.1.0"
+    claim_type: legal_scope
+    claim_text: >
+      Le recours à un notaire peut être obligatoire dans le cadre d'une succession
+      en France, notamment lorsque la succession comporte des biens immobiliers.
+    claim_scope:
+      jurisdiction: FR
+      life_event: bereavement
+      domain: succession
+    anchor:
+      selector_type: text_quote
+      text_quote: "Le recours à un notaire est-il obligatoire dans le cadre d'une succession"
+    source_tier: official_guidance
+    record_valid_from: "2026-06-05"
+    review_status: draft
+    confidence: unassessed
+    provenance:
+      extraction_method: ai_assisted
+      extracted_at: "2026-06-05T07:00:00Z"

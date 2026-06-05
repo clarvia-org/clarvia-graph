@@ -1,0 +1,22 @@
+id: condition.fr.bereavement.estate_assets.assets_in_fr
+schema_version: "0.1.0"
+title: "Deceased had assets in France"
+description: >
+  Evaluates whether the deceased held assets (bank accounts, real estate, etc.)
+  located in France. If true, French succession procedures may apply.
+condition_type: criterion
+jurisdiction: FR
+life_event: bereavement
+domain: estate_assets
+expression_language: jsonlogic
+expression:
+  "==":
+    - { "var": "estate.asset_location.country" }
+    - "FR"
+missing_fact_behavior: unknown
+information_concept_refs:
+  - intake_fact.global.bereavement.estate_asset_country
+source_assertion_refs: []
+record_valid_from: "2026-06-05"
+authoring_status: approved
+distribution_status: public_open

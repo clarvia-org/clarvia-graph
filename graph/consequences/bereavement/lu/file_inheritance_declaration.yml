@@ -1,0 +1,27 @@
+id: consequence.lu.bereavement.succession.file_inheritance_declaration
+schema_version: "0.1.0"
+title: "File inheritance declaration with AED"
+description: >
+  Heirs must file a declaration of inheritance with the Registration Duties,
+  Estates and VAT Authority (AED) within 6 months of the death, when the
+  deceased had their habitual residence in Luxembourg.
+consequence_type: obligation
+jurisdiction: LU
+jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/LUX"
+life_event: bereavement
+domain: succession
+trigger:
+  condition_refs:
+    - condition.lu.bereavement.succession.habitual_residence_lu
+task_template_refs:
+  - task_template.lu.bereavement.succession.file_aed_declaration
+source_assertion_refs:
+  - assertion.guichet_lu.declaration_succession.inheritance_declaration_required
+authoring_status: approved
+distribution_status: public_open
+confidence: medium
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
+  extraction_method: ai_assisted
+  extracted_at: "2026-06-05T07:00:00Z"

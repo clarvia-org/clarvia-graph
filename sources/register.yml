@@ -49,3 +49,33 @@ sources:
     monitoring:
       active: false
     verified_at: null
+
+  - id: source.service_public_fr.succession
+    title: "Règlement d'une succession"
+    title_en: "Settlement of a succession"
+    url: "https://www.service-public.fr/particuliers/vosdroits/N171"
+    source_type: government_portal
+    jurisdiction: FR
+    publisher: "Direction de l'information légale et administrative (DILA)"
+    languages: [fr]
+    domain: succession
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.guichet_lu.declaration_succession
+    title: "Déclaration de succession ou de mutation par décès"
+    title_en: "Declaration of inheritance or transfer on death"
+    url: "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/declaration-succession.html"
+    source_type: government_portal
+    jurisdiction: LU
+    publisher: "Guichet.lu (Luxembourg Government)"
+    languages: [fr]
+    domain: succession
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null

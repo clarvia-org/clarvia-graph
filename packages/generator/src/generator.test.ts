@@ -21,9 +21,12 @@ describe("generateChecklist", () => {
       lifeEvent: "bereavement",
     });
 
-    // Both consequences should apply
-    expect(output.items.length).toBe(2);
-    expect(output.items.every((i) => i.status === "applies")).toBe(true);
+    // Death declaration + survivor pension should apply; LU succession needs fact
+    const appliesItems = output.items.filter((i) => i.status === "applies");
+    expect(appliesItems.length).toBe(2);
+
+    const needsFactItems = output.items.filter((i) => i.status === "needs_fact");
+    expect(needsFactItems.length).toBe(1);
 
     // Death declaration should come first (urgency 95 > 70)
     expect(output.items[0].title).toBe(

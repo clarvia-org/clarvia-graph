@@ -1,0 +1,12 @@
+id: intake_fact.global.bereavement.deceased_habitual_residence
+schema_version: "0.1.0"
+path: deceased.habitual_residence.country
+label: "Country of habitual residence of the deceased"
+description: "The country where the deceased had their habitual residence at the time of death."
+value_type: jurisdiction_code
+allowed_values_ref: vocab/jurisdictions.yml
+cardinality: one
+required_for:
+  - consequence.lu.bereavement.succession.file_inheritance_declaration
+used_by_condition_refs:
+  - condition.lu.bereavement.succession.habitual_residence_lu

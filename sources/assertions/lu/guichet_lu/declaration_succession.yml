@@ -1,0 +1,25 @@
+source_id: source.guichet_lu.declaration_succession
+source_snapshot_id: snapshot.guichet_lu.declaration_succession.2026_06_05
+assertions:
+  - id: assertion.guichet_lu.declaration_succession.inheritance_declaration_required
+    schema_version: "0.1.0"
+    claim_type: legal_scope
+    claim_text: >
+      Après le décès d'une personne qui avait son dernier domicile au Luxembourg,
+      les héritiers et les légataires universels doivent déposer une déclaration
+      de succession auprès de l'Administration de l'enregistrement, des domaines
+      et de la TVA (AED) dans les 6 mois du décès.
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: succession
+    anchor:
+      selector_type: text_quote
+      text_quote: "déposée par écrit dans les 6 mois du décès"
+    source_tier: official_guidance
+    record_valid_from: "2026-06-05"
+    review_status: approved
+    confidence: medium
+    provenance:
+      extraction_method: ai_assisted
+      extracted_at: "2026-06-05T07:00:00Z"

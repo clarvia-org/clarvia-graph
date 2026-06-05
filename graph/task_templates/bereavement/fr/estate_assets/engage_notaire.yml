@@ -1,0 +1,25 @@
+id: task_template.fr.bereavement.estate_assets.engage_notaire
+schema_version: "0.1.0"
+title: "Engage a notary for French assets"
+description: >
+  Contact a French notary (notaire) to handle the succession of assets
+  located in France.
+action_type: engage_professional
+jurisdiction: FR
+life_event: bereavement
+domain: estate_assets
+target:
+  object_type: succession_settlement
+  primary_authority_ref: authority.fr.notaire
+authority_refs:
+  - authority.fr.notaire
+deadline_refs: []
+source_assertion_refs: []
+rendering:
+  checklist_group: estate_and_inheritance
+  urgency_score: 50
+  dependency_rank: 2
+  user_visible_caveat: null
+authoring_status: draft
+distribution_status: restricted_source
+record_valid_from: "2026-06-05"
