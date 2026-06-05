@@ -1,0 +1,21 @@
+id: deadline.lu.bereavement.funeral.funeral_cremation_72h
+schema_version: "0.1.0"
+title: "Complete burial/cremation handling within 72 hours"
+description: >
+  Burial or cremation must generally be handled within 72 hours of the death,
+  unless a special authorisation (dérogation) is obtained from the communal
+  authorities.
+deadline_type: filing_deadline
+jurisdiction: LU
+life_event: bereavement
+domain: funeral
+calculation:
+  kind: relative
+  duration: "PT72H"
+  starts_from_fact: death.datetime
+  calendar: civil
+  if_weekend_or_holiday: unknown
+source_assertion_refs: []
+record_valid_from: "2026-06-05"
+authoring_status: approved
+distribution_status: public_open

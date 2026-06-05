@@ -1,0 +1,20 @@
+id: deadline.lu.bereavement.employment.notify_ccss_8d
+schema_version: "0.1.0"
+title: "Notify CCSS within 8 days"
+description: >
+  The employer or the family must notify the Centre commun de la sécurité
+  sociale (CCSS) of the death within 8 days.
+deadline_type: filing_deadline
+jurisdiction: LU
+life_event: bereavement
+domain: employment
+calculation:
+  kind: relative
+  duration: "P8D"
+  starts_from_fact: death.date
+  calendar: civil
+  if_weekend_or_holiday: unknown
+source_assertion_refs: []
+record_valid_from: "2026-06-05"
+authoring_status: approved
+distribution_status: public_open

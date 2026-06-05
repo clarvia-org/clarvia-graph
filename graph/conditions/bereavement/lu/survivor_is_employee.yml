@@ -1,0 +1,23 @@
+id: condition.lu.bereavement.employment.survivor_is_employee
+schema_version: "0.1.0"
+title: "Survivor is an employee or apprentice"
+description: >
+  Evaluates whether the survivor is currently employed as an employee or
+  apprentice. If true, the survivor may be entitled to bereavement leave.
+condition_type: criterion
+jurisdiction: LU
+life_event: bereavement
+domain: employment
+expression_language: jsonlogic
+expression:
+  "in":
+    - { "var": "survivor.employment_status" }
+    - - "employee"
+      - "apprentice"
+missing_fact_behavior: unknown
+information_concept_refs:
+  - intake_fact.global.bereavement.survivor_employment_status
+source_assertion_refs: []
+record_valid_from: "2026-06-05"
+authoring_status: approved
+distribution_status: public_open

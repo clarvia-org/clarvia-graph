@@ -1,0 +1,20 @@
+id: deadline.lu.bereavement.succession.reflection_40d
+schema_version: "0.1.0"
+title: "Reflect for 40 days after inventory period"
+description: >
+  After the 3-month inventory period, heirs have an additional 40-day
+  reflection period to decide whether to accept or renounce the inheritance.
+deadline_type: validity_period
+jurisdiction: LU
+life_event: bereavement
+domain: succession
+calculation:
+  kind: relative
+  duration: "P40D"
+  starts_from_fact: succession.inventory_period_end_date
+  calendar: civil
+  if_weekend_or_holiday: unknown
+source_assertion_refs: []
+record_valid_from: "2026-06-05"
+authoring_status: approved
+distribution_status: public_open

@@ -1,0 +1,23 @@
+id: condition.lu.bereavement.succession.deceased_owned_real_estate
+schema_version: "0.1.0"
+title: "Estate includes real estate"
+description: >
+  Evaluates whether the estate includes real estate. If true, specific
+  succession steps may be required such as notarial acts and land registry
+  updates.
+condition_type: criterion
+jurisdiction: LU
+life_event: bereavement
+domain: succession
+expression_language: jsonlogic
+expression:
+  "==":
+    - { "var": "estate.real_estate.exists" }
+    - true
+missing_fact_behavior: unknown
+information_concept_refs:
+  - intake_fact.global.bereavement.estate_real_estate_exists
+source_assertion_refs: []
+record_valid_from: "2026-06-05"
+authoring_status: approved
+distribution_status: public_open

@@ -1,13 +1,13 @@
-id: condition.lu.bereavement.survivor_pension.deceased_was_lu_insured
+id: condition.lu.bereavement.health_insurance.deceased_was_lu_health_insured
 schema_version: "0.1.0"
-title: "Deceased was insured or pensioned in Luxembourg"
+title: "Deceased was covered by Luxembourg health insurance"
 description: >
-  Evaluates whether the deceased person was insured with the Luxembourg pension
-  system (CNAP). If true, the surviving spouse may be entitled to a survivor pension.
+  Evaluates whether the deceased was covered by the Luxembourg health insurance
+  system (CNS). If true, survivors may be entitled to a funeral allowance.
 condition_type: criterion
 jurisdiction: LU
 life_event: bereavement
-domain: survivor_pension
+domain: health_insurance
 expression_language: jsonlogic
 expression:
   "==":
@@ -17,6 +17,6 @@ missing_fact_behavior: unknown
 information_concept_refs:
   - intake_fact.global.bereavement.deceased_pension_jurisdiction
 source_assertion_refs: []
-record_valid_from: "2026-06-03"
+record_valid_from: "2026-06-05"
 authoring_status: approved
 distribution_status: public_open

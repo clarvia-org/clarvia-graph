@@ -1,0 +1,28 @@
+id: condition.lu.bereavement.inheritance_tax.aed_declaration_may_be_required
+schema_version: "0.1.0"
+title: "AED declaration may be required"
+description: >
+  Evaluates whether a succession declaration to the AED may be required.
+  This is the case if the deceased had habitual residence in Luxembourg or
+  if the estate includes assets located in Luxembourg.
+condition_type: criterion
+jurisdiction: LU
+life_event: bereavement
+domain: inheritance_tax
+expression_language: jsonlogic
+expression:
+  "or":
+    - "==":
+        - { "var": "deceased.habitual_residence.country" }
+        - "LU"
+    - "in":
+        - "LU"
+        - { "var": "estate.asset_location.country" }
+missing_fact_behavior: unknown
+information_concept_refs:
+  - intake_fact.global.bereavement.deceased_habitual_residence
+  - intake_fact.global.bereavement.estate_asset_country
+source_assertion_refs: []
+record_valid_from: "2026-06-05"
+authoring_status: approved
+distribution_status: public_open

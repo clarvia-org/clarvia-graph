@@ -1,0 +1,20 @@
+id: deadline.lu.bereavement.health_insurance.funeral_allowance_2y
+schema_version: "0.1.0"
+title: "Claim funeral allowance within 2 years"
+description: >
+  The funeral allowance (indemnité funéraire) must be claimed from the CNS
+  within 2 years of the date of payment of the funeral invoice.
+deadline_type: filing_deadline
+jurisdiction: LU
+life_event: bereavement
+domain: health_insurance
+calculation:
+  kind: relative
+  duration: "P2Y"
+  starts_from_fact: funeral_invoice.payment_date
+  calendar: civil
+  if_weekend_or_holiday: unknown
+source_assertion_refs: []
+record_valid_from: "2026-06-05"
+authoring_status: approved
+distribution_status: public_open

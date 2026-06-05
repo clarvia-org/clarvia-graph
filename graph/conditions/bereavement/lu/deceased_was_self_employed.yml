@@ -1,0 +1,27 @@
+id: condition.lu.bereavement.employment.deceased_was_self_employed
+schema_version: "0.1.0"
+title: "Deceased was self-employed or a business owner"
+description: >
+  Evaluates whether the deceased was self-employed or a business owner.
+  If true, additional steps may be required such as notifying the Ministry
+  of the Economy about business permits.
+condition_type: criterion
+jurisdiction: LU
+life_event: bereavement
+domain: employment
+expression_language: jsonlogic
+expression:
+  "or":
+    - "in":
+        - "self_employed"
+        - { "var": "deceased.employment_status" }
+    - "in":
+        - "business_owner"
+        - { "var": "deceased.employment_status" }
+missing_fact_behavior: unknown
+information_concept_refs:
+  - intake_fact.global.bereavement.deceased_employment_status
+source_assertion_refs: []
+record_valid_from: "2026-06-05"
+authoring_status: approved
+distribution_status: public_open
