@@ -53,6 +53,7 @@ interface Consequence {
   title: string;
   consequence_type: string;
   jurisdiction: string;
+  distribution_status?: string;
   trigger: {
     life_event: string;
     condition_refs: string[];
@@ -275,8 +276,8 @@ export default function ChecklistPage() {
   // Load data
   useEffect(() => {
     Promise.all([
-      fetch("/clarvia-data/intake/bereavement.json").then((r) => r.json()),
-      fetch("/clarvia-data/runtime/bereavement.json").then((r) => r.json()),
+      fetch("/data/clarvia/intake/bereavement.json").then((r) => r.json()),
+      fetch("/data/clarvia/runtime/bereavement.json").then((r) => r.json()),
     ]).then(([intakeData, runtimeData]) => {
       setIntake(intakeData);
       setRuntime(runtimeData);
@@ -324,6 +325,9 @@ export default function ChecklistPage() {
     const evidenceMap = new Map(runtime.evidence_types.map((e) => [e.id, e]));
 
     for (const consequence of runtime.consequences) {
+      // Publication gate: skip non-public consequences (safety filter)
+      if (consequence.distribution_status && consequence.distribution_status !== 'public_open' && consequence.distribution_status !== 'public_metadata_only') continue;
+
       // Check all conditions
       const conditionRefs = consequence.trigger.condition_refs ?? [];
       let status: "applies" | "needs_fact" | "does_not_apply" = "applies";

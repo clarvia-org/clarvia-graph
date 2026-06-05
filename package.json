@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "fetch-data": "tsx scripts/fetch-clarvia-data.ts"
   },
   "dependencies": {
     "next": "16.2.7",
@@ -22,6 +23,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.7",
     "tailwindcss": "^4",
+    "tsx": "^4",
     "typescript": "^6"
   },
   "overrides": {
