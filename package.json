@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/fetch-clarvia-data.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
