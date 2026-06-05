@@ -7,7 +7,8 @@
  * Steps (per spec §7.2):
  * 1. Load graph & index
  * 2. Evaluate all conditions against user facts (three-valued)
- * 3. Filter consequences by condition results
+ * 3. Filter consequences by life event, jurisdiction, temporal validity,
+ *    and distribution status (only public_open / public_metadata_only)
  * 4. Expand consequences into checklist items via task templates
  * 5. Sort items by checklist group and urgency
  * 6. Assemble output with summary
@@ -366,10 +367,17 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   const explanationTraces: ExplanationTrace[] = [];
 
   // ─── Step 3: Retrieve candidate consequences ────────────────────
-  // Filter by life event, jurisdiction scope, and temporal validity
+  // Filter by life event, jurisdiction scope, temporal validity,
+  // and distribution status.  Per spec §10.6, only public_open and
+  // public_metadata_only records may appear in generated checklists.
+  const PUBLIC_DISTRIBUTION = new Set(["public_open", "public_metadata_only"]);
   const candidates: Consequence[] = [];
   for (const [, consequence] of graph.consequences) {
     if (consequence.life_event !== lifeEvent) continue;
+
+    if (!PUBLIC_DISTRIBUTION.has(consequence.distribution_status)) {
+      continue;
+    }
 
     const juris = consequence.jurisdiction?.toUpperCase();
     if (juris && !relevantJurisdictions.has(juris) && !relevantJurisdictions.has(juris.toLowerCase())) {

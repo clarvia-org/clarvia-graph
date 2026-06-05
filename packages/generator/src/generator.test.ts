@@ -91,7 +91,7 @@ describe("generateChecklist", () => {
     expect(output.items.length).toBe(0);
   });
 
-  it("returns DE items when death in DE (LU conditions don't apply)", () => {
+  it("returns no DE items when DE consequences are restricted_source", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "DE" },
@@ -105,13 +105,10 @@ describe("generateChecklist", () => {
       lifeEvent: "bereavement",
     });
 
-    // LU conditions are false → LU items filtered out
-    // DE conditions apply → DE items visible
-    const luItems = output.items.filter((i) => i.jurisdiction_contexts.includes("LU"));
-    const deItems = output.items.filter((i) => i.jurisdiction_contexts.includes("DE"));
-    expect(luItems.length).toBe(0);
-    expect(deItems.length).toBeGreaterThan(0);
-    expect(output.is_cross_border).toBe(false); // single jurisdiction
+    // DE consequences are distribution_status: restricted_source,
+    // so the generator filters them out per spec §10.6.
+    // LU conditions are also false → no items at all.
+    expect(output.items.length).toBe(0);
   });
 
   it("output has correct structure", () => {
@@ -294,7 +291,7 @@ describe("generateChecklist", () => {
     }
   });
 
-  it("cross-border: LU death + DE pension produces items from both jurisdictions", () => {
+  it("cross-border: LU death + DE pension produces LU items (DE restricted)", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
@@ -310,15 +307,15 @@ describe("generateChecklist", () => {
 
     expect(output.is_cross_border).toBe(true);
 
-    // Should have LU death registration (death in LU)
+    // Should have LU items (death in LU, public_open)
     const luItems = output.items.filter((i) => i.jurisdiction_contexts.includes("LU"));
     expect(luItems.length).toBeGreaterThan(0);
 
-    // Should have DE pension items (pension in DE)
+    // DE consequences are restricted_source → no DE items in public output
     const deItems = output.items.filter((i) => i.jurisdiction_contexts.includes("DE"));
-    expect(deItems.length).toBeGreaterThan(0);
+    expect(deItems.length).toBe(0);
 
-    // Should have jurisdiction_roles populated
+    // Should still have jurisdiction_roles populated (based on facts, not output)
     expect(output.jurisdiction_roles.death_place).toContain("LU");
     expect(output.jurisdiction_roles.work_or_insurance_state).toContain("DE");
   });

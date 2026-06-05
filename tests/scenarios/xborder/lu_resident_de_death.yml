@@ -20,18 +20,17 @@ facts:
     value: FR
 
 # Expected consequence statuses:
-# - DE death registration: applies (death occurred in DE)
-# - DE survivor pension: applies (deceased was DE-insured)
 # - LU succession: applies (deceased had habitual residence in LU)
-# - FR estate assets: applies (assets in FR, condition evaluates true)
-# - xborder pension: does_not_apply (death.place == pension.jurisdiction, both DE)
 # - LU death declaration: does_not_apply (death did not occur in LU)
 # - LU survivor pension: does_not_apply (deceased was not LU-insured)
+#
+# Note: DE consequences (register_death_de, claim_survivor_pension_de),
+# FR estate consequence (settle_fr_succession), and xborder pension
+# coordination are all distribution_status: restricted_source, so they
+# are excluded from public checklist generation per spec §10.6.
+# They will appear once their source assertions are approved and the
+# consequences are promoted to public_open.
 expected_consequence_statuses:
-  consequence.de.bereavement.death_registration.register_death_de: applies
-  consequence.de.bereavement.survivor_pension.claim_survivor_pension_de: applies
   consequence.lu.bereavement.succession.file_inheritance_declaration: applies
-  consequence.fr.bereavement.estate_assets.settle_fr_succession: applies
-  consequence.xborder.bereavement.survivor_pension.coordinate_cross_border_pension: does_not_apply
   consequence.lu.bereavement.death_registration.declare_death: does_not_apply
   consequence.lu.bereavement.survivor_pension.claim_survivor_pension: does_not_apply
