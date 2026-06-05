@@ -1,0 +1,12 @@
+id: intake_fact.global.bereavement.death_datetime
+schema_version: "0.1.0"
+path: death.datetime
+label: Date and time of death
+description: Date and time used for 24-hour and 72-hour deadline calculations.
+value_type: string
+cardinality: one
+required_for:
+- starter_intake
+- deadline_calculation
+- death_declaration_and_funeral_deadlines
+used_by_condition_refs: []

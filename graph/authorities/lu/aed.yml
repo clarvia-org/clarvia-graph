@@ -1,17 +1,19 @@
 id: authority.lu.aed
 schema_version: "0.1.0"
-name: "Administration de l'enregistrement, des domaines et de la TVA (AED)"
-name_en: "Registration Duties, Estates and VAT Authority"
-description: >
-  The Administration de l'enregistrement, des domaines et de la TVA (AED) is
-  responsible for inheritance declarations, succession duties, and VAT
-  administration in Luxembourg.
+name: Administration de l'enregistrement, des domaines et de la TVA
+name_en: Registration Duties, Estates and VAT Authority
+name_de: Einregistrierungs-, Domänen- und Mehrwertsteuerverwaltung
+description: Authority for succession declarations, wills-register searches, and inheritance/transfer duties.
 jurisdiction: LU
-jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/LUX"
-function: "Succession duties, inheritance declarations, VAT"
-official_site: "https://pfi.public.lu/fr/aed.html"
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+function: registration_estates_tax
+official_site: https://pfi.public.lu/
 contact_channels: []
-languages: [fr, de, lb]
+languages:
+- fr
+- de
+- en
 authoring_status: approved
 distribution_status: public_open
-record_valid_from: "2026-06-05"
+record_valid_from: '2026-06-05'
+record_valid_to: null

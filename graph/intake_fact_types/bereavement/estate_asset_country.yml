@@ -1,12 +1,11 @@
 id: intake_fact.global.bereavement.estate_asset_country
 schema_version: "0.1.0"
 path: estate.asset_location.country
-label: "Country where estate assets are located"
-description: "A country where the deceased held assets (bank accounts, real estate, investments, etc.)."
+label: Countries where estate assets are located
+description: Countries where the deceased owned assets. This is multi-valued.
 value_type: jurisdiction_code
-allowed_values_ref: vocab/jurisdictions.yml
 cardinality: many
 required_for:
-  - consequence.fr.bereavement.estate_assets.settle_fr_succession
+- estate_and_assets
 used_by_condition_refs:
-  - condition.fr.bereavement.estate_assets.assets_in_fr
+- condition.lu.bereavement.inheritance_tax.aed_declaration_may_be_required

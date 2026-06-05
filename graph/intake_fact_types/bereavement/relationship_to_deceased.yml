@@ -1,0 +1,21 @@
+id: intake_fact.global.bereavement.relationship_to_deceased
+schema_version: "0.1.0"
+path: relationship.to_deceased
+label: Relationship to the deceased
+description: Relationship of the user/survivor to the deceased.
+value_type: enum
+cardinality: one
+required_for:
+- starter_intake
+used_by_condition_refs:
+- condition.lu.bereavement.survivor_pension.relationship_eligible_survivor
+- condition.lu.bereavement.family.survivor_is_spouse_or_partner
+allowed_values:
+- surviving_spouse
+- registered_partner
+- child
+- parent
+- sibling
+- other_relative
+- unrelated_person
+- unknown

@@ -1,0 +1,18 @@
+id: intake_fact.global.bereavement.survivor_employment_status
+schema_version: "0.1.0"
+path: survivor.employment_status
+label: Survivor's employment status
+description: Employment status of the user/survivor for bereavement-leave routing.
+value_type: enum
+cardinality: one
+required_for:
+- employment_and_benefits
+used_by_condition_refs:
+- condition.lu.bereavement.employment.survivor_is_employee
+allowed_values:
+- employee
+- apprentice
+- self_employed
+- not_employed
+- retired
+- unknown

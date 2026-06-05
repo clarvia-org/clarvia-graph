@@ -1,0 +1,18 @@
+id: intake_fact.global.bereavement.deceased_employment_status
+schema_version: "0.1.0"
+path: deceased.employment_status
+label: Deceased's employment status
+description: Multi-valued status because a person can be employed and self-employed at the same time.
+value_type: enum
+cardinality: many
+required_for:
+- employment_and_business
+used_by_condition_refs:
+- condition.lu.bereavement.employment.deceased_was_self_employed
+allowed_values:
+- employed
+- self_employed
+- business_owner
+- not_employed
+- retired
+- unknown

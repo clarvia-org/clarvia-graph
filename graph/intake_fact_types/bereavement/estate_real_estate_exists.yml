@@ -1,0 +1,11 @@
+id: intake_fact.global.bereavement.estate_real_estate_exists
+schema_version: "0.1.0"
+path: estate.real_estate.exists
+label: Did the deceased own real estate?
+description: Whether the estate includes immovable property.
+value_type: boolean
+cardinality: one
+required_for:
+- estate_and_assets
+used_by_condition_refs:
+- condition.lu.bereavement.succession.deceased_owned_real_estate

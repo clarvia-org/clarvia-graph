@@ -1,10 +1,12 @@
 id: intake_fact.global.bereavement.date_of_death
 schema_version: "0.1.0"
 path: death.date
-label: "Date of death"
-description: "The date when the death occurred. Used for deadline calculations."
+label: Date of death
+description: Calendar date on which the death occurred.
 value_type: date
 cardinality: one
 required_for:
-  - deadline.lu.bereavement.death_registration.declaration_deadline
+- starter_intake
+- deadline_calculation
+- succession_declaration_deadline
 used_by_condition_refs: []

@@ -1,0 +1,11 @@
+id: intake_fact.global.bereavement.deceased_owned_vehicle
+schema_version: "0.1.0"
+path: deceased.owned_vehicle
+label: Did the deceased own a Luxembourg-registered vehicle?
+description: Whether the deceased owned a vehicle requiring inheritance/registration handling.
+value_type: boolean
+cardinality: one
+required_for:
+- estate_and_assets
+used_by_condition_refs:
+- condition.lu.bereavement.estate_assets.deceased_owned_vehicle

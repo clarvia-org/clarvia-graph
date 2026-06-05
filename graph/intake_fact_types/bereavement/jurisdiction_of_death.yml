@@ -1,12 +1,11 @@
 id: intake_fact.global.bereavement.jurisdiction_of_death
 schema_version: "0.1.0"
 path: death.place.country
-label: "Country where the death occurred"
-description: "ISO 3166-1 alpha-2 code for the jurisdiction where the death took place."
+label: Country where the death occurred
+description: Country in which the death physically occurred.
 value_type: jurisdiction_code
-allowed_values_ref: vocab/jurisdictions.yml
 cardinality: one
 required_for:
-  - consequence.lu.bereavement.death_registration.declare_death
+- starter_intake
 used_by_condition_refs:
-  - condition.lu.bereavement.death_registration.death_occurred_in_lu
+- condition.lu.bereavement.death_registration.death_occurred_in_lu

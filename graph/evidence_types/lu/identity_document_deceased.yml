@@ -1,13 +1,14 @@
 id: evidence_type.lu.identity_document_deceased
 schema_version: "0.1.0"
-canonical_name: "Document d'identité du défunt"
+canonical_name: Document d'identité du défunt
 synonyms:
-  - "Identity document of the deceased"
-  - "Personalausweis des Verstorbenen"
-description: >
-  Identity document (passport, ID card, or residence permit) of the deceased person.
-  Required for the death declaration.
+- identity document of the deceased
+- Ausweisdokument des Verstorbenen
+description: Identity document of the deceased person.
 jurisdiction: LU
-authoring_status: draft
+broader: evidence_type.global.identity_document
+jurisdictional_variants: []
+authoring_status: approved
 distribution_status: public_open
-record_valid_from: "2026-06-03"
+record_valid_from: '2026-06-05'
+record_valid_to: null

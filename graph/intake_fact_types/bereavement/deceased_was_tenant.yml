@@ -1,0 +1,11 @@
+id: intake_fact.global.bereavement.deceased_was_tenant
+schema_version: "0.1.0"
+path: deceased.housing.was_tenant
+label: Was the deceased a tenant?
+description: Whether the deceased held a rental lease at death.
+value_type: boolean
+cardinality: one
+required_for:
+- housing
+used_by_condition_refs:
+- condition.lu.bereavement.estate_assets.deceased_was_tenant

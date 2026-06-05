@@ -1,0 +1,18 @@
+id: intake_fact.global.bereavement.marriage_or_partnership_status
+schema_version: "0.1.0"
+path: marriage_or_partnership.status
+label: Marriage or partnership status
+description: Whether the survivor and deceased were married or in a registered partnership.
+value_type: enum
+cardinality: one
+required_for:
+- pension_and_benefits
+used_by_condition_refs:
+- condition.lu.bereavement.family.survivor_is_spouse_or_partner
+allowed_values:
+- married
+- registered_partnership
+- divorced
+- former_partner
+- not_married_or_partnered
+- unknown

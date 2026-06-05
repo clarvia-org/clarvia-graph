@@ -1,0 +1,11 @@
+id: intake_fact.global.bereavement.survivor_cohabitation_months
+schema_version: "0.1.0"
+path: survivor.cohabitation.months
+label: Months the survivor lived with the deceased
+description: Number of months the survivor lived in domestic community with the deceased.
+value_type: integer
+cardinality: one
+required_for:
+- housing
+used_by_condition_refs:
+- condition.lu.bereavement.estate_assets.cohabitant_lived_six_months
