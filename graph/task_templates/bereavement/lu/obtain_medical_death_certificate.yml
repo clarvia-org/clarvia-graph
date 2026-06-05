@@ -1,0 +1,39 @@
+id: task_template.lu.bereavement.death_registration.obtain_medical_death_certificate
+schema_version: "0.1.0"
+title: Obtain the medical certificate of death
+description: Ask the doctor to establish the medical death declaration/certificate needed by the commune.
+action_type: obtain_document
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: death_registration
+target:
+  object_type: medical_death_certificate
+  object_ref: evidence_type.lu.medical_death_certificate
+  subject_role: deceased
+  primary_authority_ref: authority.lu.bureau_etat_civil
+authority_refs:
+  - authority.lu.bureau_etat_civil
+form_refs: []
+deadline_refs: []
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets: []
+source_assertion_refs: []
+rendering:
+  checklist_group: immediate_formalities
+  urgency_score: 100
+  dependency_rank: 1
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.bereavement.2026_06_03
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

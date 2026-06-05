@@ -1,27 +1,32 @@
 id: consequence.lu.bereavement.succession.file_inheritance_declaration
 schema_version: "0.1.0"
-title: "File inheritance declaration with AED"
-description: >
-  Heirs must file a declaration of inheritance with the Registration Duties,
-  Estates and VAT Authority (AED) within 6 months of the death, when the
-  deceased had their habitual residence in Luxembourg.
+title: File the AED succession declaration and handle inheritance tax
+description: A succession or transfer-on-death declaration may need to be filed with AED.
 consequence_type: obligation
 jurisdiction: LU
-jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/LUX"
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
 life_event: bereavement
-domain: succession
+domain: inheritance_tax
 trigger:
   condition_refs:
-    - condition.lu.bereavement.succession.habitual_residence_lu
+    - condition.lu.bereavement.inheritance_tax.aed_declaration_may_be_required
 task_template_refs:
-  - task_template.lu.bereavement.succession.file_aed_declaration
-source_assertion_refs:
-  - assertion.guichet_lu.declaration_succession.inheritance_declaration_required
+  - task_template.lu.bereavement.inheritance_tax.file_aed_declaration
+source_assertion_refs: []
+standards_export:
+  cccev_requirement:
+    enabled: true
+    requirement_type: administrative_obligation
+  cpsv_public_service:
+    enabled: false
 authoring_status: approved
 distribution_status: public_open
+monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"
 provenance:
-  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
   extraction_method: ai_assisted
-  extracted_at: "2026-06-05T07:00:00Z"
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

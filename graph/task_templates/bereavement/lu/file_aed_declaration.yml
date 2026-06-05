@@ -1,0 +1,49 @@
+id: task_template.lu.bereavement.inheritance_tax.file_aed_declaration
+schema_version: "0.1.0"
+title: File the AED succession declaration and handle inheritance tax
+description: >
+  File the succession or transfer-on-death declaration with AED when required
+  and review likely tax treatment.
+action_type: file_declaration
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: inheritance_tax
+target:
+  object_type: succession_declaration
+  object_ref: evidence_type.lu.succession_declaration
+  subject_role: heir_or_legatee
+  primary_authority_ref: authority.lu.aed
+authority_refs:
+  - authority.lu.aed
+form_refs:
+  - form.lu.aed.wills_register_search
+deadline_refs:
+  - deadline.lu.bereavement.inheritance_tax.succession_declaration_6mo
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets:
+    - id: evidence_set.lu.bereavement.inheritance_tax.file_aed_declaration.standard
+      operator: all
+      evidence_type_refs:
+        - evidence_type.global.death_certificate
+        - evidence_type.lu.succession_declaration
+source_assertion_refs: []
+rendering:
+  checklist_group: estate_and_inheritance
+  urgency_score: 58
+  dependency_rank: 13
+  user_visible_caveat: Direct line and qualifying spouse/partner legal shares can be exempt; extra-legal shares and other heirs need tax review.
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

@@ -1,0 +1,48 @@
+id: task_template.lu.bereavement.inheritance_tax.file_final_income_tax_return
+schema_version: "0.1.0"
+title: File the final income tax return if required
+description: >
+  Use Form 100 / MyGuichet route to report the deceased's taxable income for
+  the relevant tax year if filing is required.
+action_type: submit_application
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: inheritance_tax
+target:
+  object_type: income_tax_return
+  object_ref: form.lu.acd.model_100
+  subject_role: heir_or_tax_representative
+  primary_authority_ref: authority.lu.acd
+authority_refs:
+  - authority.lu.acd
+form_refs:
+  - form.lu.acd.model_100
+deadline_refs:
+  - deadline.lu.bereavement.inheritance_tax.final_tax_return_31dec_next_year
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets:
+    - id: evidence_set.lu.bereavement.inheritance_tax.file_final_income_tax_return.standard
+      operator: all
+      evidence_type_refs:
+        - evidence_type.lu.tax_return_form_100
+source_assertion_refs: []
+rendering:
+  checklist_group: employment_and_tax
+  urgency_score: 35
+  dependency_rank: 15
+  user_visible_caveat: "Corrected from the prompt: current official guidance says 31 December of the year following the tax year, not 31 March."
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

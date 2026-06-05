@@ -1,26 +1,33 @@
 id: consequence.lu.bereavement.survivor_pension.claim_survivor_pension
 schema_version: "0.1.0"
-title: "Surviving spouse may be entitled to a survivor pension"
-description: >
-  The surviving spouse or partner of a person who was insured with the Luxembourg
-  pension system may be entitled to a survivor pension (pension de survie) from
-  CNAP. The claim must be filed within a deadline.
+title: Apply for CNAP survivor pension
+description: A survivor pension may be available and must be applied for formally.
 consequence_type: right_or_benefit
 jurisdiction: LU
-jurisdiction_uri: "http://publications.europa.eu/resource/authority/country/LUX"
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
 life_event: bereavement
 domain: survivor_pension
 trigger:
   condition_refs:
     - condition.lu.bereavement.survivor_pension.deceased_was_lu_insured
+    - condition.lu.bereavement.survivor_pension.relationship_eligible_survivor
 task_template_refs:
   - task_template.lu.bereavement.survivor_pension.file_cnap_claim
-source_assertion_refs:
-  - assertion.guichet_lu.bereavement.survivor_pension_available
+source_assertion_refs: []
+standards_export:
+  cccev_requirement:
+    enabled: true
+    requirement_type: right_or_benefit
+  cpsv_public_service:
+    enabled: true
 authoring_status: approved
 distribution_status: public_open
+monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-03"
 provenance:
   extraction_method: ai_assisted
-  extracted_at: "2026-06-03T12:00:00Z"
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

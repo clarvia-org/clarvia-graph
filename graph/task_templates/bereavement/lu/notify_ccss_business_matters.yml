@@ -1,0 +1,43 @@
+id: task_template.lu.bereavement.employment.notify_ccss_business_matters
+schema_version: "0.1.0"
+title: Notify CCSS and handle business matters
+description: >
+  If the deceased was self-employed or a business owner, notify CCSS and check
+  whether business-permit succession steps are needed.
+action_type: notify_authority
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: employment
+target:
+  object_type: self_employed_cessation
+  subject_role: heir_or_business_successor
+  primary_authority_ref: authority.lu.ccss
+authority_refs:
+  - authority.lu.ccss
+  - authority.lu.ministry_economy_business_permits
+form_refs: []
+deadline_refs:
+  - deadline.lu.bereavement.employment.notify_ccss_8d
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets: []
+source_assertion_refs: []
+rendering:
+  checklist_group: employment_and_tax
+  urgency_score: 78
+  dependency_rank: 5
+  user_visible_caveat: Treat the Ministry of Economy 1-month deadline as TODO until the source anchor is reviewed.
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.bereavement.2026_06_03
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

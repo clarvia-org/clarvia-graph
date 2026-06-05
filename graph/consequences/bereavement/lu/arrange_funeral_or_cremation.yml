@@ -1,19 +1,18 @@
-id: consequence.lu.bereavement.death_registration.declare_death
+id: consequence.lu.bereavement.funeral.arrange_funeral_or_cremation
 schema_version: "0.1.0"
-title: Declare the death to the commune civil registrar
+title: Arrange burial or cremation
 description: >
-  The death must be declared to the civil registrar of the commune where it
-  occurred.
+  Burial or cremation requires civil registrar authorisation and must respect
+  the 24–72 hour timing window.
 consequence_type: administrative_step
 jurisdiction: LU
 jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
 life_event: bereavement
-domain: death_registration
+domain: funeral
 trigger:
-  condition_refs:
-    - condition.lu.bereavement.death_registration.death_occurred_in_lu
+  condition_refs: []
 task_template_refs:
-  - task_template.lu.bereavement.death_registration.file_death_declaration
+  - task_template.lu.bereavement.funeral.arrange_funeral_or_cremation
 source_assertion_refs: []
 standards_export:
   cccev_requirement:
@@ -25,7 +24,7 @@ authoring_status: approved
 distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
-record_valid_from: "2026-06-03"
+record_valid_from: "2026-06-05"
 provenance:
   extraction_method: ai_assisted
   extracted_by: software.extractor.v0.1

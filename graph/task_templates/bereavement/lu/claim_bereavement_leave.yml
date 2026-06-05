@@ -1,0 +1,42 @@
+id: task_template.lu.bereavement.employment.claim_bereavement_leave
+schema_version: "0.1.0"
+title: Claim bereavement leave from your employer
+description: >
+  If you are an employee or apprentice, ask your employer for the statutory
+  special leave that applies to your relationship to the deceased.
+action_type: submit_application
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: employment
+target:
+  object_type: bereavement_leave
+  subject_role: survivor
+  primary_authority_ref: authority.lu.employer
+authority_refs:
+  - authority.lu.employer
+form_refs: []
+deadline_refs:
+  - deadline.lu.bereavement.employment.bereavement_leave_at_event
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets: []
+source_assertion_refs: []
+rendering:
+  checklist_group: employment_and_tax
+  urgency_score: 85
+  dependency_rank: 4
+  user_visible_caveat: Leave is normally taken at the time of the event; duration depends on relationship.
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.bereavement.2026_06_03
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

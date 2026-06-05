@@ -27,9 +27,9 @@ describe("loadGraph", () => {
     );
     expect(consequence).toBeDefined();
     expect(consequence!.title).toBe(
-      "Death must be declared to the civil registry",
+      "Declare the death to the commune civil registrar",
     );
-    expect(consequence!.consequence_type).toBe("obligation");
+    expect(consequence!.consequence_type).toBe("administrative_step");
   });
 
   it("loads condition expressions as objects", () => {

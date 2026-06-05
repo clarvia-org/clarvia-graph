@@ -1,31 +1,28 @@
-id: consequence.lu.bereavement.death_registration.declare_death
+id: consequence.lu.bereavement.succession.decide_accept_or_renounce
 schema_version: "0.1.0"
-title: Declare the death to the commune civil registrar
-description: >
-  The death must be declared to the civil registrar of the commune where it
-  occurred.
-consequence_type: administrative_step
+title: Decide whether to accept, contest, or renounce the inheritance
+description: Heirs are not forced to accept an inheritance and may need to decide their succession option.
+consequence_type: routing_decision
 jurisdiction: LU
 jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
 life_event: bereavement
-domain: death_registration
+domain: succession
 trigger:
-  condition_refs:
-    - condition.lu.bereavement.death_registration.death_occurred_in_lu
+  condition_refs: []
 task_template_refs:
-  - task_template.lu.bereavement.death_registration.file_death_declaration
+  - task_template.lu.bereavement.succession.decide_accept_renounce
 source_assertion_refs: []
 standards_export:
   cccev_requirement:
     enabled: true
-    requirement_type: administrative_obligation
+    requirement_type: routing_decision
   cpsv_public_service:
-    enabled: true
+    enabled: false
 authoring_status: approved
 distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
-record_valid_from: "2026-06-03"
+record_valid_from: "2026-06-05"
 provenance:
   extraction_method: ai_assisted
   extracted_by: software.extractor.v0.1

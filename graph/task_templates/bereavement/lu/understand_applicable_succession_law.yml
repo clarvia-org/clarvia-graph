@@ -1,0 +1,41 @@
+id: task_template.lu.bereavement.succession.understand_applicable_succession_law
+schema_version: "0.1.0"
+title: Understand which succession law may apply
+description: >
+  For Luxembourg/EU cases, note that habitual residence is the normal
+  connector, but a will may choose nationality law.
+action_type: gather_information
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: succession
+target:
+  object_type: succession_law_routing_information
+  subject_role: heir
+  primary_authority_ref: authority.eu.ejustice_portal
+authority_refs:
+  - authority.eu.ejustice_portal
+form_refs: []
+deadline_refs: []
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets: []
+source_assertion_refs: []
+rendering:
+  checklist_group: cross_border_issues
+  urgency_score: 40
+  dependency_rank: 16
+  user_visible_caveat: Display as an information card, not a checkbox. This is not cross-border routing logic for v0.1.
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

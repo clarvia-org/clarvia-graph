@@ -1,0 +1,42 @@
+id: task_template.lu.bereavement.succession.decide_accept_renounce
+schema_version: "0.1.0"
+title: Decide whether to accept, contest, or renounce the inheritance
+description: Review the inheritance options, forced-heirship constraints, and inventory/reflection periods before acting.
+action_type: verify_eligibility
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: succession
+target:
+  object_type: succession_option
+  subject_role: heir
+  primary_authority_ref: authority.lu.district_court_registry
+authority_refs:
+  - authority.lu.district_court_registry
+  - authority.lu.aed
+form_refs: []
+deadline_refs:
+  - deadline.lu.bereavement.succession.inventory_3mo
+  - deadline.lu.bereavement.succession.reflection_40d
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets: []
+source_assertion_refs: []
+rendering:
+  checklist_group: estate_and_inheritance
+  urgency_score: 60
+  dependency_rank: 12
+  user_visible_caveat: This is legal-choice information, not advice; recommend professional review if debts, disputes, or minors are involved.
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

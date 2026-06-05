@@ -1,47 +1,45 @@
-id: task_template.lu.bereavement.survivor_pension.file_cnap_claim
+id: task_template.lu.bereavement.health_insurance.claim_funeral_allowance
 schema_version: "0.1.0"
-title: Apply for the CNAP survivor pension
+title: Claim the CNS funeral allowance
 description: >
-  Submit the CNAP survivor-pension application if the deceased was insured or
-  pensioned in Luxembourg and your relationship may qualify.
+  If the deceased was insured or co-insured in Luxembourg and you advanced
+  funeral costs, submit the claim documents to CNS.
 action_type: submit_application
 jurisdiction: LU
 jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
 life_event: bereavement
-domain: survivor_pension
+domain: health_insurance
 target:
-  object_type: survivor_pension_application
-  object_ref: form.lu.cnap.survivor_pension_application
-  subject_role: survivor
-  primary_authority_ref: authority.lu.cnap
+  object_type: funeral_allowance_claim
+  subject_role: person_who_advanced_funeral_costs
+  primary_authority_ref: authority.lu.cns
 authority_refs:
-  - authority.lu.cnap
-form_refs:
-  - form.lu.cnap.survivor_pension_application
-  - form.lu.cnap.orphan_pension_application
-deadline_refs: []
+  - authority.lu.cns
+form_refs: []
+deadline_refs:
+  - deadline.lu.bereavement.health_insurance.funeral_allowance_2y
 evidence_requirements:
   satisfy_if: any_set_satisfied
   sets:
-    - id: evidence_set.lu.bereavement.survivor_pension.file_cnap_claim.standard
+    - id: evidence_set.lu.bereavement.health_insurance.claim_funeral_allowance.standard
       operator: all
       evidence_type_refs:
+        - evidence_type.lu.funeral_invoice_paid
         - evidence_type.global.death_certificate
-        - evidence_type.global.marriage_certificate
         - evidence_type.global.rib
-        - evidence_type.global.school_certificate
+        - evidence_type.global.proof_of_payment
 source_assertion_refs: []
 rendering:
   checklist_group: money_and_benefits
-  urgency_score: 68
-  dependency_rank: 9
-  user_visible_caveat: Processing-time and trimestre de faveur details still need exact CNAP/legal-source anchoring before display.
+  urgency_score: 70
+  dependency_rank: 8
+  user_visible_caveat: "Amount source conflict: use the newer Guichet amount (1,289.91 EUR) for alpha display, but keep CNS amount assertion in review."
 dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
 authoring_status: approved
 distribution_status: public_open
-record_valid_from: "2026-06-03"
+record_valid_from: "2026-06-05"
 provenance:
   derived_from_snapshot_ref: snapshot.guichet_lu.bereavement.2026_06_03
   extraction_method: ai_assisted

@@ -1,0 +1,51 @@
+id: task_template.lu.bereavement.funeral.arrange_funeral_or_cremation
+schema_version: "0.1.0"
+title: Arrange burial or cremation
+description: >
+  Coordinate funeral or cremation arrangements, including civil registrar
+  authorisation and cremation-specific documents if applicable.
+action_type: contact_professional
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: funeral
+target:
+  object_type: funeral_or_cremation
+  object_ref: evidence_type.lu.burial_or_cremation_authorisation
+  subject_role: survivor
+  primary_authority_ref: authority.lu.bureau_etat_civil
+authority_refs:
+  - authority.lu.bureau_etat_civil
+  - authority.lu.medecin_inspecteur_sante
+form_refs: []
+deadline_refs:
+  - deadline.lu.bereavement.funeral.funeral_cremation_72h
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets:
+    - id: evidence_set.lu.bereavement.funeral.arrange_funeral_or_cremation.standard
+      operator: all
+      evidence_type_refs:
+        - evidence_type.lu.burial_or_cremation_authorisation
+        - evidence_type.lu.cremation_intent_proof
+        - evidence_type.lu.non_violent_death_certificate
+        - evidence_type.lu.pacemaker_certificate
+source_assertion_refs: []
+rendering:
+  checklist_group: immediate_formalities
+  urgency_score: 95
+  dependency_rank: 3
+  user_visible_caveat: "Burial/cremation is normally within 24\u201372 hours; extensions need a m\u00E9decin-inspecteur certificate."
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.bereavement.2026_06_03
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

@@ -1,0 +1,53 @@
+id: task_template.lu.bereavement.estate_assets.transfer_vehicle_registration
+schema_version: "0.1.0"
+title: Transfer or handle vehicle registration
+description: >
+  If the deceased owned a vehicle, prepare AED succession evidence and SNCA
+  registration documents before using or selling it.
+action_type: submit_application
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: estate_assets
+target:
+  object_type: vehicle_registration_transfer
+  object_ref: form.lu.snca.registration_certificate_application
+  subject_role: heir_or_surviving_spouse
+  primary_authority_ref: authority.lu.snca
+authority_refs:
+  - authority.lu.snca
+  - authority.lu.aed
+form_refs:
+  - form.lu.snca.registration_certificate_application
+deadline_refs: []
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets:
+    - id: evidence_set.lu.bereavement.estate_assets.transfer_vehicle_registration.standard
+      operator: all
+      evidence_type_refs:
+        - evidence_type.lu.aed_attestation_succession
+        - evidence_type.lu.vehicle_registration_certificate_part1
+        - evidence_type.lu.vehicle_registration_certificate_part2
+        - evidence_type.lu.valid_insurance_certificate
+        - evidence_type.lu.valid_technical_inspection
+        - evidence_type.lu.transfer_agreement_heirs
+source_assertion_refs: []
+rendering:
+  checklist_group: estate_and_inheritance
+  urgency_score: 45
+  dependency_rank: 14
+  user_visible_caveat: "SNCA uses AED attestation of succession; do not model this as always requiring a notarial acte de notori\u00E9t\u00E9."
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"

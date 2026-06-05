@@ -1,0 +1,44 @@
+id: task_template.lu.bereavement.estate_assets.understand_housing_rights
+schema_version: "0.1.0"
+title: Understand housing and lease rights
+description: If the deceased was a tenant, check whether the lease ends or can transfer to a cohabiting survivor.
+action_type: verify_eligibility
+jurisdiction: LU
+jurisdiction_uri: http://publications.europa.eu/resource/authority/country/LUX
+life_event: bereavement
+domain: estate_assets
+target:
+  object_type: housing_lease_rights
+  subject_role: survivor_or_heir
+  primary_authority_ref: authority.lu.district_court_registry
+authority_refs:
+  - authority.lu.district_court_registry
+form_refs: []
+deadline_refs: []
+evidence_requirements:
+  satisfy_if: any_set_satisfied
+  sets:
+    - id: evidence_set.lu.bereavement.estate_assets.understand_housing_rights.standard
+      operator: all
+      evidence_type_refs:
+        - evidence_type.lu.proof_cohabitation
+        - evidence_type.global.death_certificate
+source_assertion_refs: []
+rendering:
+  checklist_group: estate_and_inheritance
+  urgency_score: 55
+  dependency_rank: 11
+  user_visible_caveat: Lease transfer rules are fact-sensitive; ask landlord/tenant-advice service or legal professional for contested cases.
+dedupe:
+  default_strategy: do_not_merge_across_jurisdictions
+  dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
+authoring_status: approved
+distribution_status: public_open
+record_valid_from: "2026-06-05"
+provenance:
+  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
+  extraction_method: ai_assisted
+  extracted_by: software.extractor.v0.1
+  extracted_at: "2026-06-04T08:00:00Z"
+  reviewed_by: reviewer.founder.001
+  reviewed_at: "2026-06-05T10:00:00Z"
