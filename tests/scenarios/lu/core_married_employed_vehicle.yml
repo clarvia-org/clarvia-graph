@@ -1,0 +1,76 @@
+# Scenario Test: Luxembourg Core — Married employed survivor, vehicle owned
+# Full 15-task test with all facts provided.
+# Based on blueprint section K.1.
+
+id: scenario_test.lu.core_married_employed_vehicle
+schema_version: "0.1.0"
+title: "Core LU married employed survivor, vehicle owned"
+scenario_type: single_jurisdiction
+life_event: bereavement
+countries: [LU]
+
+facts:
+  - fact_type: death.date
+    value: "2026-06-05"
+  - fact_type: death.place.country
+    value: LU
+  - fact_type: deceased.habitual_residence.country
+    value: LU
+  - fact_type: relationship.to_deceased
+    value: surviving_spouse
+  - fact_type: marriage_or_partnership.status
+    value: married
+  - fact_type: deceased.last_social_security_affiliation.country
+    value: LU
+  - fact_type: survivor.employment_status
+    value: employee
+  - fact_type: deceased.employment_status
+    value:
+      - retired
+  - fact_type: deceased.owned_vehicle
+    value: true
+  - fact_type: deceased.housing.was_tenant
+    value: true
+  - fact_type: survivor.cohabitation.months
+    value: 24
+  - fact_type: estate.asset_location.country
+    value:
+      - LU
+
+expected_consequence_statuses:
+  consequence.lu.bereavement.death_registration.obtain_medical_death_certificate: applies
+  consequence.lu.bereavement.death_registration.declare_death: applies
+  consequence.lu.bereavement.funeral.arrange_funeral_or_cremation: applies
+  consequence.lu.bereavement.employment.claim_bereavement_leave: applies
+  consequence.lu.bereavement.estate_assets.notify_banks_trace_assets: applies
+  consequence.lu.bereavement.health_insurance.claim_funeral_allowance: applies
+  consequence.lu.bereavement.survivor_pension.claim_survivor_pension: applies
+  consequence.lu.bereavement.employment.notify_ccss_business_matters: does_not_apply
+  consequence.lu.bereavement.estate_assets.understand_housing_rights: applies
+  consequence.lu.bereavement.succession.engage_notary: applies
+  consequence.lu.bereavement.succession.decide_accept_or_renounce: applies
+  consequence.lu.bereavement.succession.file_inheritance_declaration: applies
+  consequence.lu.bereavement.inheritance_tax.file_final_income_tax_return: applies
+  consequence.lu.bereavement.estate_assets.transfer_vehicle_registration: applies
+  consequence.lu.bereavement.succession.understand_applicable_succession_law: applies
+
+expected_checklist_groups:
+  immediate_formalities:
+    - task_template.lu.bereavement.death_registration.obtain_medical_death_certificate
+    - task_template.lu.bereavement.death_registration.file_death_declaration
+    - task_template.lu.bereavement.funeral.arrange_funeral_or_cremation
+  money_and_benefits:
+    - task_template.lu.bereavement.health_insurance.claim_funeral_allowance
+    - task_template.lu.bereavement.survivor_pension.file_cnap_claim
+  estate_and_inheritance:
+    - task_template.lu.bereavement.estate_assets.notify_banks_trace_assets
+    - task_template.lu.bereavement.succession.engage_notary
+    - task_template.lu.bereavement.succession.decide_accept_renounce
+    - task_template.lu.bereavement.inheritance_tax.file_aed_declaration
+    - task_template.lu.bereavement.estate_assets.understand_housing_rights
+    - task_template.lu.bereavement.estate_assets.transfer_vehicle_registration
+  employment_and_tax:
+    - task_template.lu.bereavement.employment.claim_bereavement_leave
+    - task_template.lu.bereavement.inheritance_tax.file_final_income_tax_return
+  cross_border_issues:
+    - task_template.lu.bereavement.succession.understand_applicable_succession_law

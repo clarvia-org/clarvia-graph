@@ -43,14 +43,21 @@ export function normalizeFacts(facts: Fact[]): Fact[] {
   const normalized: Fact[] = [];
 
   for (const fact of facts) {
-    const val = String(fact.value ?? "");
     // Handle array facts (e.g., work_history.country with multiple values)
     if (COUNTRY_ARRAY_PATHS.has(fact.fact_type)) {
-      // Uppercase and deduplicate
-      const values = val.split(",").map((v: string) => v.trim().toUpperCase());
+      // Uppercase and deduplicate — arrays are always string-based country codes
+      const rawArr = Array.isArray(fact.value) ? fact.value : String(fact.value ?? "").split(",");
+      const values = rawArr.map((v: unknown) => String(v).trim().toUpperCase());
       const unique = [...new Set(values)].sort();
       normalized.push({ fact_type: fact.fact_type, value: unique.join(",") });
+    } else if (typeof fact.value === "boolean" || typeof fact.value === "number") {
+      // Preserve boolean and numeric types — conditions use typed JsonLogic comparisons
+      normalized.push({ fact_type: fact.fact_type, value: fact.value });
+    } else if (Array.isArray(fact.value)) {
+      // Preserve arrays (e.g., employment_status: [self_employed, business_owner])
+      normalized.push({ fact_type: fact.fact_type, value: fact.value });
     } else {
+      const val = String(fact.value ?? "");
       normalized.push({
         fact_type: fact.fact_type,
         value: normalizeValue(fact.fact_type, val),
