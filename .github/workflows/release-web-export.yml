@@ -1,0 +1,41 @@
+name: Release Web Export
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  export-web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Build web export
+        run: pnpm export-web
+
+      - name: Package export artifact
+        run: |
+          cd build/exports/web
+          zip -r ../../../clarvia-web-export-${{ github.event.release.tag_name }}.zip .
+
+      - name: Upload release asset
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload ${{ github.event.release.tag_name }} \
+            clarvia-web-export-${{ github.event.release.tag_name }}.zip \
+            --clobber

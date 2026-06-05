@@ -2,20 +2,46 @@
  * clarvia export-web — Export web runtime bundle for workflow-web.
  *
  * Produces:
- *   .clarvia-output/web/
- *     manifest.json          — index of available life events and jurisdictions
- *     intake/bereavement.json — intake fact types needed for bereavement
+ *   build/exports/web/
+ *     manifest.json            — index of available life events, jurisdictions, version
+ *     intake/bereavement.json  — intake fact types with multilingual labels + options
  *     runtime/bereavement.json — pre-compiled runtime data (conditions, consequences,
  *                                task templates with resolved refs)
+ *
+ * Publication gate: only consequences with distribution_status public_open or
+ * public_metadata_only are included in the export (spec §10.6).
  *
  * The web app loads manifest.json, then lazily loads intake + runtime per life event.
  * The client-side LocalResolver evaluates conditions using the runtime data.
  */
 
 import { resolve } from "node:path";
-import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
+import { mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
+import { execSync } from "node:child_process";
+import { parse as parseYaml } from "yaml";
 import { loadGraph } from "@clarvia/generator";
 import type { LoadedGraph } from "@clarvia/generator";
+
+/** Distribution statuses allowed in public web export. */
+const PUBLIC_DISTRIBUTION = new Set(["public_open", "public_metadata_only"]);
+
+/** Jurisdiction vocab entry shape. */
+interface JurisdictionEntry {
+  id: string;
+  label: string;
+  label_fr?: string;
+  label_de?: string;
+}
+
+/** Load jurisdiction vocab for multilingual labels. */
+function loadJurisdictionVocab(rootDir: string): JurisdictionEntry[] {
+  const vocabPath = resolve(rootDir, "vocab", "jurisdictions.yml");
+  if (!existsSync(vocabPath)) return [];
+  const raw = readFileSync(vocabPath, "utf-8");
+  const doc = parseYaml(raw) as { entries?: JurisdictionEntry[] } | JurisdictionEntry[];
+  if (Array.isArray(doc)) return doc;
+  return doc?.entries ?? [];
+}
 
 export async function main(): Promise<void> {
   const rootDir = resolve(
@@ -32,12 +58,26 @@ export async function main(): Promise<void> {
   const pkgRaw = readFileSync(resolve(rootDir, "package.json"), "utf-8");
   const pkg = JSON.parse(pkgRaw) as { version: string };
 
+  // Get git commit for provenance
+  let gitCommit = "unknown";
+  try {
+    gitCommit = execSync("git rev-parse --short HEAD", { cwd: rootDir })
+      .toString()
+      .trim();
+  } catch {
+    // Not in a git repo — skip
+  }
+
   const webDir = resolve(rootDir, "build", "exports", "web");
 
-  // Discover life events from consequences
+  // Load vocab for multilingual labels
+  const jurisdictionVocab = loadJurisdictionVocab(rootDir);
+
+  // Discover life events from public consequences only
   const lifeEvents = new Set<string>();
   const jurisdictions = new Set<string>();
   for (const [, c] of graph.consequences) {
+    if (!PUBLIC_DISTRIBUTION.has(c.distribution_status)) continue;
     lifeEvents.add(c.life_event);
     jurisdictions.add(c.jurisdiction);
   }
@@ -48,15 +88,17 @@ export async function main(): Promise<void> {
 
   // Generate per-life-event files
   for (const lifeEvent of lifeEvents) {
-    buildIntakeFile(graph, lifeEvent, webDir);
+    buildIntakeFile(graph, lifeEvent, webDir, jurisdictionVocab);
     buildRuntimeFile(graph, lifeEvent, webDir);
   }
 
   // Generate manifest
   const manifest = {
     $schema: "clarvia-web-export/v0.1",
-    version: pkg.version,
-    exported_at: new Date().toISOString(),
+    graph_version: pkg.version,
+    graph_commit: gitCommit,
+    export_version: "0.1.0",
+    generated_at: new Date().toISOString(),
     life_events: [...lifeEvents].map((le) => ({
       id: le,
       intake_url: `intake/${le}.json`,
@@ -71,6 +113,7 @@ export async function main(): Promise<void> {
   );
 
   console.log(`\nWeb export complete:`);
+  console.log(`  Graph version: ${pkg.version} (${gitCommit})`);
   console.log(`  Life events: ${[...lifeEvents].join(", ")}`);
   console.log(`  Jurisdictions: ${[...jurisdictions].join(", ")}`);
   console.log(`  Output: ${webDir}/`);
@@ -83,44 +126,84 @@ export async function main(): Promise<void> {
 
 /**
  * Build intake file — list of questions the UI needs to ask for a life event.
+ * Includes multilingual labels and jurisdiction options from vocab.
  */
 function buildIntakeFile(
   graph: LoadedGraph,
   lifeEvent: string,
   webDir: string,
+  jurisdictionVocab: JurisdictionEntry[],
 ): void {
   // Find all intake fact types referenced by conditions for this life event
-  const factTypeIds = new Set<string>();
+  // (only conditions referenced by public consequences)
+  const publicConditionIds = new Set<string>();
+  for (const [, c] of graph.consequences) {
+    if (c.life_event !== lifeEvent) continue;
+    if (!PUBLIC_DISTRIBUTION.has(c.distribution_status)) continue;
+    for (const ref of c.trigger?.condition_refs ?? []) {
+      publicConditionIds.add(ref);
+    }
+  }
+
+  const factPaths = new Set<string>();
   for (const [, condition] of graph.conditions) {
-    if (condition.life_event !== lifeEvent) continue;
-    // Extract var references from the expression
-    extractVarRefs(condition.expression, factTypeIds);
+    if (!publicConditionIds.has(condition.id) && condition.life_event !== lifeEvent) continue;
+    extractVarRefs(condition.expression, factPaths);
   }
 
   // Resolve to full intake fact type records
-  const questions = [...factTypeIds]
-    .map((id) => {
-      const factType = graph.intakeFactTypes.get(id);
-      if (!factType) {
-        // Try to find by path matching
-        for (const [, ft] of graph.intakeFactTypes) {
-          if (ft.path === id || ft.id === id) return ft;
+  const questions = [...graph.intakeFactTypes.values()]
+    .filter((ft) => factPaths.has(ft.path))
+    .map((q) => {
+      // Build options for jurisdiction_code types from vocab
+      const options: Array<{
+        value: string;
+        label_en: string;
+        label_fr: string;
+        label_de: string;
+      }> = [];
+
+      if (q.value_type === "jurisdiction_code") {
+        // Add real jurisdiction options (exclude meta-jurisdictions)
+        const realJurisdictions = jurisdictionVocab.filter(
+          (j) => !["EU", "XBORDER", "GLOBAL"].includes(j.id),
+        );
+        for (const j of realJurisdictions) {
+          options.push({
+            value: j.id,
+            label_en: j.label,
+            label_fr: j.label_fr ?? j.label,
+            label_de: j.label_de ?? j.label,
+          });
         }
-        return null;
+        // Add "I don't know" option
+        options.push({
+          value: "UNKNOWN",
+          label_en: "I don't know",
+          label_fr: "Je ne sais pas",
+          label_de: "Ich weiß nicht",
+        });
       }
-      return factType;
-    })
-    .filter(Boolean);
+
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const raw = q as any;
+
+      return {
+        id: q.id,
+        path: q.path,
+        label: q.label,
+        label_en: raw.label_en ?? q.label,
+        label_fr: raw.label_fr ?? q.label,
+        label_de: raw.label_de ?? q.label,
+        value_type: q.value_type,
+        cardinality: q.cardinality,
+        ...(options.length > 0 ? { options } : {}),
+      };
+    });
 
   const intake = {
     life_event: lifeEvent,
-    questions: questions.map((q) => ({
-      id: q!.id,
-      path: q!.path,
-      label: q!.label,
-      value_type: q!.value_type,
-      cardinality: q!.cardinality,
-    })),
+    questions,
   };
 
   writeFileSync(
@@ -131,18 +214,29 @@ function buildIntakeFile(
 
 /**
  * Build runtime file — all data needed for client-side evaluation.
+ * Only includes public consequences (per spec §10.6 publication gate).
  */
 function buildRuntimeFile(
   graph: LoadedGraph,
   lifeEvent: string,
   webDir: string,
 ): void {
-  // Filter records by life event
+  // Filter consequences by life event AND distribution_status
   const consequences = [...graph.consequences.values()].filter(
-    (c) => c.life_event === lifeEvent,
+    (c) =>
+      c.life_event === lifeEvent &&
+      PUBLIC_DISTRIBUTION.has(c.distribution_status),
   );
+
+  // Filter conditions to only those referenced by public consequences
+  const referencedConditionIds = new Set<string>();
+  for (const c of consequences) {
+    for (const ref of c.trigger?.condition_refs ?? []) {
+      referencedConditionIds.add(ref);
+    }
+  }
   const conditions = [...graph.conditions.values()].filter(
-    (c) => c.life_event === lifeEvent,
+    (c) => referencedConditionIds.has(c.id),
   );
 
   // Collect referenced task templates, authorities, deadlines, evidence types
@@ -182,6 +276,7 @@ function buildRuntimeFile(
       title: c.title,
       consequence_type: c.consequence_type,
       jurisdiction: c.jurisdiction,
+      distribution_status: c.distribution_status,
       trigger: c.trigger,
       task_template_refs: c.task_template_refs,
       confidence: c.confidence,
@@ -201,11 +296,16 @@ function buildRuntimeFile(
     authorities: [...authorityIds]
       .map((id) => graph.authorities.get(id))
       .filter(Boolean)
-      .map((a) => ({
-        id: a!.id,
-        name: a!.name,
-        name_en: a!.name_en,
-      })),
+      .map((a) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const raw = a as any;
+        return {
+          id: a!.id,
+          name: a!.name,
+          name_en: a!.name_en ?? a!.name,
+          name_de: raw.name_de ?? a!.name,
+        };
+      }),
     deadlines: [...deadlineIds]
       .map((id) => graph.deadlines.get(id))
       .filter(Boolean)
