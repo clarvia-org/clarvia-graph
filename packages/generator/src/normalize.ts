@@ -15,7 +15,7 @@ import type { Fact } from "./evaluator.js";
 const COUNTRY_CODE_PATHS = new Set([
   "death.place.country",
   "deceased.habitual_residence.country",
-  "deceased.pension.jurisdiction",
+  "deceased.last_social_security_affiliation.country",
   "survivor.residence.country",
 ]);
 

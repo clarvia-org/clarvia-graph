@@ -12,7 +12,7 @@ describe("generateChecklist", () => {
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
       { fact_type: "death.date", value: "2026-01-15" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     const output = generateChecklist({
@@ -36,7 +36,7 @@ describe("generateChecklist", () => {
     expect(output.items[0].urgency?.score).toBe(95);
     expect(output.items[0].urgency?.label).toBe("urgent");
     expect(output.items[0].action?.action_type).toBe("file_declaration");
-    expect(output.items[0].action?.authority_name).toBe("Civil Registry Office");
+    expect(output.items[0].action?.authority_name).toBe("Civil registrar's office");
 
     // Survivor pension should come second
     expect(output.items[1].title).toBe("File survivor pension claim with CNAP");
@@ -52,7 +52,7 @@ describe("generateChecklist", () => {
     const facts: Fact[] = [
       // No jurisdiction fact provided
       { fact_type: "death.date", value: "2026-01-15" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     const output = generateChecklist({
@@ -96,7 +96,7 @@ describe("generateChecklist", () => {
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "DE" },
       { fact_type: "death.date", value: "2026-01-15" },
-      { fact_type: "deceased.pension.jurisdiction", value: "DE" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "DE" },
     ];
 
     const output = generateChecklist({
@@ -115,7 +115,7 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     const output = generateChecklist({
@@ -138,7 +138,7 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     const output1 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
@@ -159,10 +159,10 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts1: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
     const facts2: Fact[] = [
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
       { fact_type: "death.place.country", value: "LU" },
     ];
 
@@ -176,7 +176,7 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     const output1 = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
@@ -197,7 +197,7 @@ describe("generateChecklist", () => {
 
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     // Generate with default subject role (person.deceased)
@@ -246,7 +246,7 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     const output = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
@@ -261,7 +261,7 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     // Generate at two different wall-clock times — same asOfDate
@@ -281,7 +281,7 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     const output = generateChecklist({ graph, facts, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
@@ -295,7 +295,7 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "DE" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "DE" },
     ];
 
     const output = generateChecklist({
@@ -324,7 +324,7 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const facts: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     const output = generateChecklist({
@@ -385,11 +385,11 @@ describe("generateChecklist", () => {
     const graph = loadGraph(ROOT_DIR);
     const factsLower: Fact[] = [
       { fact_type: "death.place.country", value: "lu" },
-      { fact_type: "deceased.pension.jurisdiction", value: "lu" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "lu" },
     ];
     const factsUpper: Fact[] = [
       { fact_type: "death.place.country", value: "LU" },
-      { fact_type: "deceased.pension.jurisdiction", value: "LU" },
+      { fact_type: "deceased.last_social_security_affiliation.country", value: "LU" },
     ];
 
     const output1 = generateChecklist({ graph, facts: factsLower, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
@@ -553,7 +553,7 @@ describe("generateChecklist", () => {
         graph: mockGraph,
         facts: [
           { fact_type: "death.place.country", value: "LU" },
-          { fact_type: "deceased.pension.jurisdiction", value: "DE" }, // dummy to make DE relevant too
+          { fact_type: "deceased.last_social_security_affiliation.country", value: "DE" }, // dummy to make DE relevant too
         ],
         lifeEvent: "bereavement",
       });

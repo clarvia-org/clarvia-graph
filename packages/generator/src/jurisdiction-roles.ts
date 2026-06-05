@@ -22,7 +22,7 @@ const ROLE_MAPPING: Record<string, keyof JurisdictionRoles> = {
   "death.place.country": "death_place",
   "deceased.habitual_residence.country": "deceased_habitual_residence",
   "survivor.residence.country": "survivor_residence",
-  "deceased.pension.jurisdiction": "work_or_insurance_state",
+  "deceased.last_social_security_affiliation.country": "work_or_insurance_state",
 };
 
 /** Array facts that map to roles */
