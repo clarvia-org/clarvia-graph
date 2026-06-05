@@ -37,30 +37,28 @@ jobs:
             echo "tag=${{ github.event.client_payload.release_tag }}" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Download web export from clarvia-graph release
-        env:
-          GH_TOKEN: ${{ secrets.GRAPH_READ_TOKEN }}
+      - name: Update CLARVIA_GRAPH_VERSION
         run: |
           TAG="${{ steps.tag.outputs.tag }}"
-          echo "Downloading web export from clarvia-graph release ${TAG}..."
+          echo "${TAG}" > CLARVIA_GRAPH_VERSION
+          echo "Pinned CLARVIA_GRAPH_VERSION to ${TAG}"
 
-          gh release download "${TAG}" \
-            --repo clarvia-org/clarvia-graph \
-            --pattern "web-export-*.tar.gz" \
-            --dir /tmp/graph-export
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
 
-          echo "Extracting..."
-          mkdir -p /tmp/graph-export/web
-          tar xzf /tmp/graph-export/web-export-*.tar.gz -C /tmp/graph-export/web
+      - run: npm ci
 
-      - name: Copy into public/clarvia-data/
+      - name: Fetch clarvia graph data
+        run: npx tsx scripts/fetch-clarvia-data.ts
+
+      - name: Verify data
         run: |
-          rm -rf public/clarvia-data
-          mkdir -p public/clarvia-data
-          cp -r /tmp/graph-export/web/* public/clarvia-data/
-
-          echo "Updated files:"
-          find public/clarvia-data -type f
+          echo "Fetched files:"
+          find public/data/clarvia -type f
+          echo ""
+          cat public/data/clarvia/manifest.json
 
       - name: Create PR
         env:
@@ -73,13 +71,15 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git checkout -b "${BRANCH}"
-          git add public/clarvia-data/
-          git commit -m "data: update graph export from clarvia-graph ${TAG}"
+          git add CLARVIA_GRAPH_VERSION
+          git commit -m "data: bump clarvia-graph to ${TAG}"
           git push origin "${BRANCH}"
 
           gh pr create \
-            --title "data: update graph export from clarvia-graph ${TAG}" \
-            --body "Automated update of \`public/clarvia-data/\` from [clarvia-graph ${TAG}](https://github.com/clarvia-org/clarvia-graph/releases/tag/${TAG}).
+            --title "data: bump clarvia-graph to ${TAG}" \
+            --body "Bumps \`CLARVIA_GRAPH_VERSION\` to \`${TAG}\`.
+
+          Triggered by [clarvia-graph ${TAG}](https://github.com/clarvia-org/clarvia-graph/releases/tag/${TAG}).
 
           This PR was created automatically by the \`update-graph-data\` workflow." \
             --base main \
