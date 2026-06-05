@@ -40,7 +40,7 @@ dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
 authoring_status: approved
-distribution_status: public_open
+distribution_status: public_metadata_only
 record_valid_from: "2026-06-05"
 provenance:
   derived_from_snapshot_ref: snapshot.guichet_lu.bereavement.2026_06_03
