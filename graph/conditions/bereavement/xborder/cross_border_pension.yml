@@ -13,7 +13,7 @@ expression_language: jsonlogic
 expression:
   "!=":
     - { "var": "death.place.country" }
-    - { "var": "deceased.pension.jurisdiction" }
+    - { "var": "deceased.last_social_security_affiliation.country" }
 missing_fact_behavior: unknown
 information_concept_refs:
   - intake_fact.global.bereavement.jurisdiction_of_death

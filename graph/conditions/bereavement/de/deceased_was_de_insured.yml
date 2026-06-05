@@ -12,7 +12,7 @@ domain: survivor_pension
 expression_language: jsonlogic
 expression:
   "==":
-    - { "var": "deceased.pension.jurisdiction" }
+    - { "var": "deceased.last_social_security_affiliation.country" }
     - "DE"
 missing_fact_behavior: unknown
 information_concept_refs:
