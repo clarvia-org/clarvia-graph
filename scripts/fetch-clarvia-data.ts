@@ -127,14 +127,14 @@ async function main(): Promise<void> {
   if (fs.existsSync(MANIFEST)) {
     try {
       const manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf-8"));
-      if (manifest.version === version) {
+      if (manifest.graph_version === version) {
         console.log(
           `[fetch-clarvia-data] public/data/clarvia/manifest.json already matches ${version} — skipping download.`
         );
         return;
       }
       console.log(
-        `[fetch-clarvia-data] Existing manifest version (${manifest.version}) differs from pinned (${version}) — re-downloading.`
+        `[fetch-clarvia-data] Existing manifest version (${manifest.graph_version}) differs from pinned (${version}) — re-downloading.`
       );
     } catch {
       console.log(
@@ -180,7 +180,7 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  let manifest: { version?: string };
+  let manifest: { graph_version?: string };
   try {
     manifest = JSON.parse(fs.readFileSync(MANIFEST, "utf-8"));
   } catch (err) {
@@ -190,15 +190,15 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  if (!manifest.version) {
+  if (!manifest.graph_version) {
     console.error(
-      '[fetch-clarvia-data] ✗ manifest.json is missing a "version" field.'
+      '[fetch-clarvia-data] ✗ manifest.json is missing a "graph_version" field.'
     );
     process.exit(1);
   }
 
   console.log(
-    `[fetch-clarvia-data] ✓ Extracted clarvia web export ${manifest.version} to public/data/clarvia/`
+    `[fetch-clarvia-data] ✓ Extracted clarvia web export ${manifest.graph_version} to public/data/clarvia/`
   );
 }
 
