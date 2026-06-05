@@ -23,7 +23,9 @@
     "test-scenarios": "pnpm --filter @clarvia/cli run test-scenarios",
     "build-checklist": "pnpm --filter @clarvia/cli run build-checklist",
     "export-json": "pnpm --filter @clarvia/cli run export-json",
-    "export-web": "pnpm --filter @clarvia/cli run export-web"
+    "export-web": "pnpm --filter @clarvia/cli run export-web",
+    "capture": "pnpm --filter @clarvia/cli run capture",
+    "extract": "pnpm --filter @clarvia/cli run extract"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

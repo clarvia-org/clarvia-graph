@@ -8,12 +8,14 @@
  * Commands:
  *   validate              JSON Schema validation against YAML graph files
  *   lint-ids              ID grammar and length checks
- *   check-references      Verify all _refs point to existing records (planned)
- *   check-anchors         Verify assertion anchors exist in snapshots (planned)
- *   check-publication-gate  Publication gate validation (planned)
- *   check-contradictions  Flag overlapping conflicting claims (planned)
- *   test-scenarios        Run scenario regression tests (planned)
- *   build-checklist       Generate checklist for test scenarios (planned)
+ *   check-references      Verify all _refs point to existing records
+ *   check-anchors         Verify assertion anchors exist in snapshots
+ *   check-publication-gate  Publication gate validation
+ *   check-contradictions  Flag overlapping conflicting claims
+ *   test-scenarios        Run scenario regression tests
+ *   build-checklist       Generate checklist for test scenarios
+ *   capture               Fetch a source URL and save a snapshot
+ *   extract               Scaffold an assertion batch from a snapshot
  */
 
 const command = process.argv[2];
@@ -79,6 +81,18 @@ switch (command) {
     break;
   }
 
+  case "capture": {
+    const { main } = await import("./commands/capture.js");
+    await main();
+    break;
+  }
+
+  case "extract": {
+    const { main } = await import("./commands/extract.js");
+    await main();
+    break;
+  }
+
   case undefined:
   case "--help":
   case "-h":
@@ -98,6 +112,8 @@ Commands:
   build-checklist       Generate checklist output for test scenarios
   export-json           Export full graph as JSON
   export-web            Export web runtime bundle for workflow-web
+  capture               Fetch a source URL and save a snapshot
+  extract               Scaffold an assertion batch from a snapshot
 
 This is early alpha tooling. Not all commands are implemented yet.
 `);

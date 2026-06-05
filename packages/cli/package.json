@@ -19,7 +19,9 @@
     "test-scenarios": "tsx src/index.ts test-scenarios",
     "build-checklist": "tsx src/index.ts build-checklist",
     "export-json": "tsx src/index.ts export-json",
-    "export-web": "tsx src/index.ts export-web"
+    "export-web": "tsx src/index.ts export-web",
+    "capture": "tsx src/index.ts capture",
+    "extract": "tsx src/index.ts extract"
   },
   "dependencies": {
     "ajv": "^8.17.1",
