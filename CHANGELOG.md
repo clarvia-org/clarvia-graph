@@ -4,36 +4,17 @@ All notable changes to `workflow-web` will be documented in this file.
 
 ---
 
-## [Unreleased]
+## [0.1.0-alpha.0] — 2026-06-03
+
+First public alpha of the Clarvia bereavement checklist at [clarvia.org/en/checklist](https://clarvia.org/en/checklist).
 
 ### Added
 
-- Initial static web scaffold.
-- Landing page.
-- Methodology page.
-- Coverage page.
-- Luxembourg alpha workflow placeholder.
+- Static web scaffold (Next.js).
+- Landing page with project overview.
+- Methodology page explaining the source-backed approach.
+- Coverage page showing jurisdiction status.
+- **Luxembourg alpha bereavement checklist** — interactive, multilingual (EN/FR/DE), consuming `clarvia-graph` JSON exports.
 - Legal disclaimer page.
 - Project status page.
-- Reusable workflow display components.
-- Initial CI validation workflow.
-
-### Changed
-
-- Nothing yet.
-
-### Deprecated
-
-- Nothing yet.
-
-### Removed
-
-- Nothing yet.
-
-### Fixed
-
-- Nothing yet.
-
-### Security
-
-- Nothing yet.
+- Alpha preview badge linking to live checklist.

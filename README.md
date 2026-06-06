@@ -1,5 +1,7 @@
 # workflow-web
 
+[![License: EUPL-1.2](https://img.shields.io/badge/License-EUPL--1.2-blue.svg)](LICENSE)
+
 This is the website that families actually see at [clarvia.org](https://clarvia.org). It turns the structured data from [clarvia-graph](https://github.com/clarvia-org/clarvia-graph) into simple, multilingual checklists that help people navigate bereavement paperwork.
 
 [![Try the alpha checklist](https://img.shields.io/badge/🧪_Try_the_alpha_checklist-clarvia.org-blue?style=for-the-badge)](https://clarvia.org/en/checklist)
@@ -39,7 +41,9 @@ Static web layer for publishing Clarvia workflows, checklists, and generated API
 
 The web layer should remain thin.
 
-Workflow facts, source metadata, deadlines, conditions, and review status should come from [`workflow-data`](https://github.com/clarvia-org/workflow-data), not be duplicated manually in this repository.
+> **Data source transition:** [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph) is now the canonical data engine. [`workflow-data`](https://github.com/clarvia-org/workflow-data) is legacy/migration only. All new checklist data lands in the graph.
+
+Workflow facts, source metadata, deadlines, conditions, and review status come from [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph) exports, not duplicated manually in this repository.
 
 ---
 
