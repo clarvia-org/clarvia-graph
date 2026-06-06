@@ -12,6 +12,19 @@ export const UPDATES: Update[] = [
   {
     date: "2026-06-06",
     headline: {
+      en: "FAIR software compliance - 4 out of 5 recommendations met",
+      fr: "Conformite FAIR - 4 recommandations sur 5 remplies",
+      de: "FAIR-Softwarekonformitaet - 4 von 5 Empfehlungen erfuellt",
+    },
+    body: {
+      en: "Clarvia Graph now meets 4 out of 5 recommendations from fair-software.eu, covering open repository, open license, citation via Zenodo DOI, and a software quality checklist via OpenSSF Best Practices. The only unmet recommendation is registration in a package registry, which does not apply to a data and ontology project. The FAIR badge is now displayed in the clarvia-graph README and the Clarvia organisation profile.",
+      fr: "Clarvia Graph remplit desormais 4 des 5 recommandations de fair-software.eu, couvrant le depot ouvert, la licence ouverte, la citation via un DOI Zenodo et une liste de controle qualite via OpenSSF Best Practices. La seule recommandation non remplie est l'enregistrement dans un registre de paquets, ce qui ne s'applique pas a un projet de donnees et d'ontologie. Le badge FAIR est desormais affiche dans le README de clarvia-graph et dans le profil de l'organisation Clarvia.",
+      de: "Clarvia Graph erfuellt nun 4 der 5 Empfehlungen von fair-software.eu: offenes Repository, offene Lizenz, Zitierbarkeit ueber Zenodo-DOI und eine Qualitaetscheckliste ueber OpenSSF Best Practices. Die einzige nicht erfuellte Empfehlung ist die Registrierung in einem Paketregister, was auf ein Daten- und Ontologieprojekt nicht zutrifft. Das FAIR-Badge wird jetzt im README von clarvia-graph und im Profil der Organisation Clarvia angezeigt.",
+    },
+  },
+  {
+    date: "2026-06-06",
+    headline: {
       en: "Clarvia Graph is now citable - DOI via Zenodo",
       fr: "Clarvia Graph est desormais citable - DOI via Zenodo",
       de: "Clarvia Graph ist jetzt zitierbar - DOI via Zenodo",
