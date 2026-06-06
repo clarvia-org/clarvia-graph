@@ -93,15 +93,6 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                   loading="lazy"
                 />
               </a>
-              {/* Legacy CII URL for tool/crawler detection - links to same project */}
-              <a
-                href="https://bestpractices.coreinfrastructure.org/projects/13112"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-calm-blue-400 hover:text-calm-blue-600 transition-colors"
-              >
-                CII
-              </a>
             </div>
           </div>
           <div>
