@@ -29,9 +29,34 @@ This repository contains:
 - **Validation** — CLI tooling to validate, build, and test the graph
 - **Exports** — Generated JSON for web consumers ([example](exports/example-bereavement-lu.json)), plus JSON-LD, CPSV-AP, and web runtime bundles
 
+## Repository structure
+
+```
+clarvia-graph/
+├── schemas/          # JSON Schema definitions (v0.1)
+├── vocab/            # Controlled vocabularies
+├── graph/            # Consequence graph data (YAML)
+│   ├── authorities/
+│   ├── conditions/
+│   ├── consequences/
+│   ├── task_templates/
+│   └── …
+├── sources/          # Source registry, snapshots, and assertions
+├── translations/     # Locale overlay files
+├── tests/            # Scenario tests and unit tests
+├── exports/          # Generated output (JSON, JSON-LD, web bundles)
+├── packages/         # Workspace packages
+│   ├── cli/          #   @clarvia/cli — validation, build, and export tooling
+│   └── generator/    #   @clarvia/generator — checklist generation engine
+├── docs/             # Foundation specification and guides
+└── build/            # Build output (git-ignored)
+```
+
+The root `package.json` is a [pnpm workspace](https://pnpm.io/workspaces) that orchestrates the packages above. Run `pnpm install` from the root to set up all dependencies.
+
 ## Status
 
-🔒 **Foundation specification locked** — The [foundation spec](https://github.com/clarvia-org/clarvia-graph/wiki) defines the complete data architecture, standards alignment, editorial governance, and extensibility model.
+🔒 **Foundation specification locked** — The [foundation spec](docs/FOUNDATION.md) defines the complete data architecture, standards alignment, editorial governance, and extensibility model.
 
 🚧 **Early implementation in progress** — Proof-of-concept, alpha, and beta work is proceeding with internal resources to validate the foundation before funded hardening, validation, and scale-up phases.
 

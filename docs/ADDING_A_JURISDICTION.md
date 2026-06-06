@@ -1,5 +1,7 @@
 # Adding a Jurisdiction
 
+> Part of the [Clarvia Graph Foundation Specification](FOUNDATION.md).
+
 This guide walks through adding a new country to the Clarvia consequence graph. We use **Belgium (BE)** as the running example, but the steps apply to any jurisdiction.
 
 > **Non-negotiable:** Adding a jurisdiction must not change existing records, weaken publication gates, or break scenario tests for other jurisdictions (spec §21.1).

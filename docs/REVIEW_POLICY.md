@@ -1,5 +1,7 @@
 # Review Policy
 
+> Part of the [Clarvia Graph Foundation Specification](FOUNDATION.md).
+
 This document defines how content is reviewed, approved, and published in the Clarvia consequence graph. It covers the review lifecycle, roles, AI boundaries, and publication gates.
 
 ---

@@ -1,5 +1,7 @@
 # Clarvia Conventions
 
+> Part of the [Clarvia Graph Foundation Specification](FOUNDATION.md).
+
 ## Source snapshot content hashes
 
 `source_snapshot.content_hash` verifies the archived source content saved by Clarvia.

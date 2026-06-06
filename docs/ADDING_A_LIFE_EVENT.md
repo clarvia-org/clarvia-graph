@@ -1,5 +1,7 @@
 # Adding a Life Event
 
+> Part of the [Clarvia Graph Foundation Specification](FOUNDATION.md).
+
 This guide walks through adding a new life event to the Clarvia consequence graph. We use **marriage** as the running example, but the steps apply to any life event.
 
 > **Extension principle (spec §21.1):** Life events extend vertically — a new life event creates its own namespace using the same infrastructure. Adding one must not change existing records, weaken publication gates, or break scenario tests for other life events.

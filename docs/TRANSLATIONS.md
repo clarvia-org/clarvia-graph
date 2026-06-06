@@ -1,5 +1,7 @@
 # Translations
 
+> Part of the [Clarvia Graph Foundation Specification](FOUNDATION.md).
+
 This document explains how multilingual content works in the Clarvia consequence graph — what gets translated, what doesn't, and how to contribute translations.
 
 ---
