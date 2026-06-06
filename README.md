@@ -9,6 +9,8 @@
 
 [![Try the alpha checklist](https://img.shields.io/badge/🧪_Try_the_alpha_checklist-clarvia.org-blue?style=for-the-badge)](https://clarvia.org/en/checklist)
 
+> **Status:** CI passing · [OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112) · Code: EUPL-1.2 · Data: CC-BY-4.0
+
 Clarvia Graph is the technical engine behind [Clarvia](https://clarvia.org). It stores all the official rules and steps for bereavement paperwork across Europe — structured so that apps, websites, and public services can use them automatically. For the simple, family-friendly version, see [clarvia.org](https://clarvia.org).
 
 <details>
