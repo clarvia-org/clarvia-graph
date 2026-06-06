@@ -14,19 +14,34 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 "Kostenlose Orientierung im Trauerfall für Familien in Luxemburg."
               )}
             </p>
-            <a 
-              href="https://www.bestpractices.dev/en/projects/13112/passing" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
-            >
-              <img 
-                src="https://www.bestpractices.dev/projects/13112/badge" 
-                alt="OpenSSF Best Practices" 
-                className="h-6 w-auto"
-                loading="lazy"
-              />
-            </a>
+            <div className="flex items-center gap-3 flex-wrap">
+              <a 
+                href="https://www.bestpractices.dev/en/projects/13112/passing" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <img 
+                  src="https://www.bestpractices.dev/projects/13112/badge" 
+                  alt="OpenSSF Best Practices" 
+                  className="h-6 w-auto"
+                  loading="lazy"
+                />
+              </a>
+              <a 
+                href="https://doi.org/10.5281/zenodo.20572455" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <img 
+                  src="https://zenodo.org/badge/DOI/10.5281/zenodo.20572455.svg" 
+                  alt="DOI: 10.5281/zenodo.20572455" 
+                  className="h-6 w-auto"
+                  loading="lazy"
+                />
+              </a>
+            </div>
           </div>
           <div>
             <h4 className="text-sm font-semibold text-calm-blue-700 mb-3">
