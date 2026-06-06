@@ -12,9 +12,9 @@ export const UPDATES: Update[] = [
   {
     date: "2026-06-06",
     headline: {
-      en: "FAIR software compliance - 4 out of 5 recommendations met",
-      fr: "Conformite FAIR - 4 recommandations sur 5 remplies",
-      de: "FAIR-Softwarekonformitaet - 4 von 5 Empfehlungen erfuellt",
+      en: "FAIR software compliance",
+      fr: "Conformite FAIR",
+      de: "FAIR-Softwarekonformitaet",
     },
     body: {
       en: "Clarvia Graph now meets 4 out of 5 recommendations from fair-software.eu, covering open repository, open license, citation via Zenodo DOI, and a software quality checklist via OpenSSF Best Practices. The only unmet recommendation is registration in a package registry, which does not apply to a data and ontology project. The FAIR badge is now displayed in the clarvia-graph README and the Clarvia organisation profile.",
