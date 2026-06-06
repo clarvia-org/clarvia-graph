@@ -122,5 +122,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get involved.
 
 ## Related repositories
 
-- [workflow-web](https://github.com/clarvia-org/workflow-web) — Consumer web application
-- [workflow-data](https://github.com/clarvia-org/workflow-data) — Legacy checklist data (migration source)
+- [workflow-web](https://github.com/clarvia-org/workflow-web) — Consumer web application at [clarvia.org](https://clarvia.org)
+- [workflow-data](https://github.com/clarvia-org/workflow-data) — Archived. Cross-border source, authority, and corridor data migrated into this graph in June 2026.
+
+## Acknowledgements
+
+[HirenGajjar](https://github.com/HirenGajjar) built the original cross-border bereavement dataset in `workflow-data` — source records, institution registries, and corridor documentation for Belgium, France, Germany, and Portugal. That work materially accelerated the graph's cross-border coverage and now lives here as migrated authority, source, and condition records.
+
