@@ -1,6 +1,6 @@
 # workflow-web
 
-[![License: EUPL-1.2](https://img.shields.io/badge/License-EUPL--1.2-blue.svg)](LICENSE)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
 
 This is the website that families actually see at [clarvia.org](https://clarvia.org). It turns the structured data from [clarvia-graph](https://github.com/clarvia-org/clarvia-graph) into simple, multilingual checklists that help people navigate bereavement paperwork.
 
