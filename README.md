@@ -2,6 +2,8 @@
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
 
+> **Status:** License: Apache-2.0 · Part of the [Clarvia](https://clarvia.org) project ([OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112))
+
 This is the website that families actually see at [clarvia.org](https://clarvia.org). It turns the structured data from [clarvia-graph](https://github.com/clarvia-org/clarvia-graph) into simple, multilingual checklists that help people navigate bereavement paperwork.
 
 [![Try the alpha checklist](https://img.shields.io/badge/🧪_Try_the_alpha_checklist-clarvia.org-blue?style=for-the-badge)](https://clarvia.org/en/checklist)
