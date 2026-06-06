@@ -5,12 +5,14 @@
 [![CI](https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml/badge.svg)](https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml)
 [![License: EUPL-1.2](https://img.shields.io/badge/Code-EUPL--1.2-blue.svg)](LICENSE)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/13112/badge)](https://www.bestpractices.dev/projects/13112)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/13112/badge)](https://www.bestpractices.dev/projects/13112)
 [![License: CC-BY-4.0](https://img.shields.io/badge/Data-CC--BY--4.0-green.svg)](LICENSE-DATA)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20572455.svg)](https://doi.org/10.5281/zenodo.20572455)
+[![fair-software.eu](https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B%20%20%E2%97%8F%20%20%E2%97%8F-green)](https://fair-software.eu)
 
 [![Try the alpha checklist](https://img.shields.io/badge/🧪_Try_the_alpha_checklist-clarvia.org-blue?style=for-the-badge)](https://clarvia.org/en/checklist)
 
-> **Status:** CI passing · [OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112) · Code: EUPL-1.2 · Data: CC-BY-4.0 · [DOI: 10.5281/zenodo.20572455](https://doi.org/10.5281/zenodo.20572455)
+> **Status:** CI passing · [OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112) · Code: EUPL-1.2 · Data: CC-BY-4.0 · [DOI: 10.5281/zenodo.20572455](https://doi.org/10.5281/zenodo.20572455) · [FAIR: 4/5](https://fair-software.eu)
 
 Clarvia Graph is the technical engine behind [Clarvia](https://clarvia.org). It stores all the official rules and steps for bereavement paperwork across Europe — structured so that apps, websites, and public services can use them automatically. For the simple, family-friendly version, see [clarvia.org](https://clarvia.org).
 
