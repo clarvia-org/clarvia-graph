@@ -7,93 +7,13 @@ export default function FooterSection({ lang }: { lang: Lang }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mb-8">
           <div>
             <img src="/clarvia-logo.png" alt="Clarvia" className="h-12 w-auto mb-4" />
-            <p className="text-sm text-calm-blue-600 leading-relaxed mb-4">
+            <p className="text-sm text-calm-blue-600 leading-relaxed">
               {l(lang,
                 "Free bereavement guidance for families in Luxembourg.",
                 "Un accompagnement gratuit pour les familles au Luxembourg après un décès.",
                 "Kostenlose Orientierung im Trauerfall für Familien in Luxemburg."
               )}
             </p>
-            <div className="flex items-center gap-3 flex-wrap">
-              <a 
-                href="https://www.bestpractices.dev/en/projects/13112/passing" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
-              >
-                <img 
-                  src="https://www.bestpractices.dev/projects/13112/badge" 
-                  alt="OpenSSF Best Practices" 
-                  className="h-6 w-auto"
-                  loading="lazy"
-                />
-              </a>
-              <a 
-                href="https://doi.org/10.5281/zenodo.20572455" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
-              >
-                <img 
-                  src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20572455-blue" 
-                  alt="DOI: 10.5281/zenodo.20572455" 
-                  className="h-6 w-auto"
-                  loading="lazy"
-                />
-              </a>
-              <a 
-                href="https://fair-software.eu" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
-              >
-                <img 
-                  src="https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B%20%20%E2%97%8F%20%20%E2%97%8F-green" 
-                  alt="FAIR 4/5" 
-                  className="h-6 w-auto"
-                  loading="lazy"
-                />
-              </a>
-              <a 
-                href="https://github.com/clarvia-org/clarvia-graph/blob/main/LICENSE" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
-              >
-                <img 
-                  src="https://img.shields.io/badge/Code_(graph)-EUPL--1.2-blue.svg" 
-                  alt="License: EUPL-1.2" 
-                  className="h-6 w-auto"
-                  loading="lazy"
-                />
-              </a>
-              <a 
-                href="https://github.com/clarvia-org/workflow-web/blob/main/LICENSE" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
-              >
-                <img 
-                  src="https://img.shields.io/badge/Code_(web)-Apache--2.0-blue.svg" 
-                  alt="License: Apache-2.0" 
-                  className="h-6 w-auto"
-                  loading="lazy"
-                />
-              </a>
-              <a 
-                href="https://github.com/clarvia-org/clarvia-graph/blob/main/LICENSE-DATA" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
-              >
-                <img 
-                  src="https://img.shields.io/badge/Data-CC--BY--4.0-green.svg" 
-                  alt="License: CC-BY-4.0" 
-                  className="h-6 w-auto"
-                  loading="lazy"
-                />
-              </a>
-            </div>
           </div>
           <div>
             <h4 className="text-sm font-semibold text-calm-blue-700 mb-3">
@@ -102,6 +22,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
             <nav className="flex flex-col gap-2" aria-label={l(lang, "Footer navigation", "Navigation du pied de page", "Fußzeilennavigation")} >
               {[
                 { label: l(lang, "Home", "Accueil", "Startseite"), href: `/${lang}` },
+                { label: l(lang, "Checklist", "Liste de démarches", "Checkliste"), href: `/${lang}/checklist` },
                 { label: l(lang, "About", "À propos", "Über uns"), href: `/${lang}/about` },
                 { label: l(lang, "Updates", "Actualités", "Aktuelles"), href: `/${lang}/updates` },
                 { label: l(lang, "Share your experience", "Partager votre expérience", "Erfahrung teilen"), href: "#experience" },
@@ -139,6 +60,102 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 <a href="/ai-crawler-policy.txt" className="hover:text-calm-blue-600 transition-colors">/ai-crawler-policy.txt</a>
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Standards & Licensing Banner */}
+        <div className="border-t border-calm-blue-200/30 pt-6 pb-2 mb-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div className="space-y-1">
+            <h5 className="text-xs font-semibold uppercase tracking-wider text-calm-blue-700">
+              {l(lang, "Standards & Licensing", "Normes & Licences", "Standards & Lizenzen")}
+            </h5>
+            <p className="text-xs text-calm-blue-500 max-w-md leading-relaxed">
+              {l(lang,
+                "Clarvia complies with open science standards and open source licensing models.",
+                "Clarvia respecte les normes de l'open science et les modèles de licences open source.",
+                "Clarvia hält sich an Open-Science-Standards und Open-Source-Lizenzmodelle."
+              )}
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center gap-3 md:justify-end">
+            <a 
+              href="https://www.bestpractices.dev/en/projects/13112/passing" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://www.bestpractices.dev/projects/13112/badge" 
+                alt="OpenSSF Best Practices" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
+              href="https://doi.org/10.5281/zenodo.20572455" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20572455-blue" 
+                alt="DOI: 10.5281/zenodo.20572455" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
+              href="https://fair-software.eu" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B%20%20%E2%97%8F%20%20%E2%97%8F-green" 
+                alt="FAIR 4/5" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
+              href="https://github.com/clarvia-org/clarvia-graph/blob/main/LICENSE" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://img.shields.io/badge/Code_(graph)-EUPL--1.2-blue.svg" 
+                alt="License: EUPL-1.2" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
+              href="https://github.com/clarvia-org/workflow-web/blob/main/LICENSE" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://img.shields.io/badge/Code_(web)-Apache--2.0-blue.svg" 
+                alt="License: Apache-2.0" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
+              href="https://github.com/clarvia-org/clarvia-graph/blob/main/LICENSE-DATA" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://img.shields.io/badge/Data-CC--BY--4.0-green.svg" 
+                alt="License: CC-BY-4.0" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
           </div>
         </div>
 
