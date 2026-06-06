@@ -10,6 +10,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-06-06",
+    headline: {
+      en: "OpenSSF Best Practices badge - 100% passing",
+      fr: "Badge OpenSSF Best Practices - 100% des criteres remplis",
+      de: "OpenSSF Best Practices Badge - 100% bestanden",
+    },
+    body: {
+      en: "clarvia-graph has earned the OpenSSF Best Practices passing badge with a perfect score - 67 out of 67 criteria met. The badge covers security practices, change control, reporting, quality assurance, and analysis. It is one of the most respected signals of project maturity in open source. The badge is now displayed in the clarvia-graph README and the Clarvia organisation profile.",
+      fr: "clarvia-graph a obtenu le badge OpenSSF Best Practices au niveau \"passing\" avec un score parfait - 67 criteres sur 67 remplis. Le badge couvre les pratiques de securite, le controle des modifications, le signalement, l'assurance qualite et l'analyse. C'est l'un des indicateurs de maturite les plus respectes dans le monde du logiciel libre. Le badge est desormais affiche dans le README de clarvia-graph et dans le profil de l'organisation Clarvia.",
+      de: "clarvia-graph hat das OpenSSF Best Practices Badge auf der Stufe \"passing\" mit einem perfekten Ergebnis erhalten - 67 von 67 Kriterien erfuellt. Das Badge deckt Sicherheitspraktiken, Aenderungskontrolle, Berichterstattung, Qualitaetssicherung und Analyse ab. Es ist eines der angesehensten Reifezeichen in der Open-Source-Welt. Das Badge wird jetzt im README von clarvia-graph und im Profil der Organisation Clarvia angezeigt.",
+    },
+  },
+  {
     date: "2026-06-03",
     headline: {
       en: "Clarvia Launches First Preliminary Alpha Checklist",

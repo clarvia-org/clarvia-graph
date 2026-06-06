@@ -7,13 +7,26 @@ export default function FooterSection({ lang }: { lang: Lang }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mb-8">
           <div>
             <img src="/clarvia-logo.png" alt="Clarvia" className="h-12 w-auto mb-4" />
-            <p className="text-sm text-calm-blue-600 leading-relaxed">
+            <p className="text-sm text-calm-blue-600 leading-relaxed mb-4">
               {l(lang,
                 "Free bereavement guidance for families in Luxembourg.",
                 "Un accompagnement gratuit pour les familles au Luxembourg après un décès.",
                 "Kostenlose Orientierung im Trauerfall für Familien in Luxemburg."
               )}
             </p>
+            <a 
+              href="https://www.bestpractices.dev/en/projects/13112/passing" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://www.bestpractices.dev/projects/13112/badge" 
+                alt="OpenSSF Best Practices" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
           </div>
           <div>
             <h4 className="text-sm font-semibold text-calm-blue-700 mb-3">
