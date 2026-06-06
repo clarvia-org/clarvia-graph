@@ -2,6 +2,10 @@
 
 **Open consequence graph for source-backed administrative workflows**
 
+[![CI](https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml/badge.svg)](https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml)
+[![License: EUPL-1.2](https://img.shields.io/badge/Code-EUPL--1.2-blue.svg)](LICENSE)
+[![License: CC-BY-4.0](https://img.shields.io/badge/Data-CC--BY--4.0-green.svg)](LICENSE-DATA)
+
 [![Try the alpha checklist](https://img.shields.io/badge/🧪_Try_the_alpha_checklist-clarvia.org-blue?style=for-the-badge)](https://clarvia.org/en/checklist)
 
 Clarvia Graph is the technical engine behind [Clarvia](https://clarvia.org). It stores all the official rules and steps for bereavement paperwork across Europe — structured so that apps, websites, and public services can use them automatically. For the simple, family-friendly version, see [clarvia.org](https://clarvia.org).
@@ -74,8 +78,9 @@ The intended path is to build quickly, learn from real implementation, and then 
 
 ## Architecture
 
-```
-source → snapshot → assertion → consequence → task_template → checklist_item
+```mermaid
+flowchart LR
+    Source --> Snapshot --> Assertion --> Consequence --> Task["Task template"] --> Item["Checklist item"]
 ```
 
 Every checklist item traces back to an official source. No legal consequence publishes without an approved source assertion.
