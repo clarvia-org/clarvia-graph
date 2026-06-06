@@ -48,7 +48,7 @@ jobs:
           cd ../..
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: clarvia-graph-${{ github.ref_name }}.tar.gz
           generate_release_notes: true
