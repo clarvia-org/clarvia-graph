@@ -1,0 +1,15 @@
+id: intake_fact.global.bereavement.repatriation_requested
+schema_version: "0.1.0"
+path: repatriation.requested
+label: "Family intends to transport the body or ashes to another country"
+description: >
+  Whether the family wishes to transport the deceased's remains (body or
+  cremated ashes) to a country other than where the death occurred. If true,
+  additional cross-border documentation is required including a laissez-passer
+  mortuaire.
+value_type: boolean
+cardinality: one
+required_for:
+  - repatriation_routing
+used_by_condition_refs:
+  - condition.xborder.bereavement.repatriation.repatriation_requested

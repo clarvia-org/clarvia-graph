@@ -1,0 +1,26 @@
+id: condition.xborder.bereavement.repatriation.repatriation_requested
+schema_version: "0.1.0"
+title: "The family intends to transport the body or ashes to another country"
+description: >
+  Evaluates whether the family wishes to transport the deceased's body or
+  ashes to a country other than where the death occurred. Requires a
+  laissez-passer mortuaire (mortuary pass) issued by the commune. For EU
+  countries, the 1973 Strasbourg Convention on the Transfer of Mortal
+  Remains applies. Funeral director typically coordinates documentation.
+  Cremated remains have fewer cross-border restrictions than body transport.
+condition_type: criterion
+jurisdiction: EU
+life_event: bereavement
+domain: repatriation
+expression_language: jsonlogic
+expression:
+  "==":
+    - { "var": "repatriation.requested" }
+    - true
+missing_fact_behavior: unknown
+information_concept_refs:
+  - intake_fact.global.bereavement.repatriation_requested
+source_assertion_refs: []
+record_valid_from: "2026-05-28"
+authoring_status: draft
+distribution_status: public_open
