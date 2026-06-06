@@ -35,11 +35,72 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 <img 
-                  src="https://zenodo.org/badge/DOI/10.5281/zenodo.20572455.svg" 
+                  src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20572455-blue" 
                   alt="DOI: 10.5281/zenodo.20572455" 
                   className="h-6 w-auto"
                   loading="lazy"
                 />
+              </a>
+              <a 
+                href="https://fair-software.eu" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <img 
+                  src="https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B%20%20%E2%97%8F%20%20%E2%97%8F-green" 
+                  alt="FAIR 4/5" 
+                  className="h-6 w-auto"
+                  loading="lazy"
+                />
+              </a>
+              <a 
+                href="https://github.com/clarvia-org/clarvia-graph/blob/main/LICENSE" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <img 
+                  src="https://img.shields.io/badge/Code_(graph)-EUPL--1.2-blue.svg" 
+                  alt="License: EUPL-1.2" 
+                  className="h-6 w-auto"
+                  loading="lazy"
+                />
+              </a>
+              <a 
+                href="https://github.com/clarvia-org/workflow-web/blob/main/LICENSE" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <img 
+                  src="https://img.shields.io/badge/Code_(web)-Apache--2.0-blue.svg" 
+                  alt="License: Apache-2.0" 
+                  className="h-6 w-auto"
+                  loading="lazy"
+                />
+              </a>
+              <a 
+                href="https://github.com/clarvia-org/clarvia-graph/blob/main/LICENSE-DATA" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              >
+                <img 
+                  src="https://img.shields.io/badge/Data-CC--BY--4.0-green.svg" 
+                  alt="License: CC-BY-4.0" 
+                  className="h-6 w-auto"
+                  loading="lazy"
+                />
+              </a>
+              {/* Legacy CII URL for tool/crawler detection - links to same project */}
+              <a
+                href="https://bestpractices.coreinfrastructure.org/projects/13112"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-calm-blue-400 hover:text-calm-blue-600 transition-colors"
+              >
+                CII
               </a>
             </div>
           </div>
