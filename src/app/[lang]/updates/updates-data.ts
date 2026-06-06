@@ -12,6 +12,19 @@ export const UPDATES: Update[] = [
   {
     date: "2026-06-06",
     headline: {
+      en: "Clarvia Graph is now citable - DOI via Zenodo",
+      fr: "Clarvia Graph est desormais citable - DOI via Zenodo",
+      de: "Clarvia Graph ist jetzt zitierbar - DOI via Zenodo",
+    },
+    body: {
+      en: "Clarvia Graph has been archived on Zenodo and assigned a persistent Digital Object Identifier (DOI). Researchers, institutions, and grant reviewers can now formally cite the project in academic publications and funding proposals. Each future release will be automatically archived with a versioned DOI. Record: doi.org/10.5281/zenodo.20572455",
+      fr: "Clarvia Graph a ete archive sur Zenodo et a recu un identifiant d'objet numerique (DOI) persistant. Les chercheurs, institutions et evaluateurs de subventions peuvent desormais citer formellement le projet dans leurs publications academiques et demandes de financement. Chaque future version sera automatiquement archivee avec un DOI versionne. Enregistrement : doi.org/10.5281/zenodo.20572455",
+      de: "Clarvia Graph wurde auf Zenodo archiviert und hat einen persistenten Digital Object Identifier (DOI) erhalten. Forschende, Institutionen und Foerdermittelgutachter koennen das Projekt nun formal in wissenschaftlichen Publikationen und Foerderantraegen zitieren. Jede zukuenftige Version wird automatisch mit einer versionierten DOI archiviert. Eintrag: doi.org/10.5281/zenodo.20572455",
+    },
+  },
+  {
+    date: "2026-06-06",
+    headline: {
       en: "OpenSSF Best Practices badge - 100% passing",
       fr: "Badge OpenSSF Best Practices - 100% des criteres remplis",
       de: "OpenSSF Best Practices Badge - 100% bestanden",
