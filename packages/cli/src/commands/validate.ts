@@ -82,7 +82,7 @@ export async function runValidate(
   const patterns = [
     "graph/**/*.{yml,yaml}",
     "sources/assertions/**/*.{yml,yaml}",
-    "sources/snapshots/**/*.{yml,yaml}",
+    "sources/snapshots/*.{yml,yaml}",
   ];
   const files = patterns.flatMap((p: string) =>
     globSync(p, { cwd: rootDir, absolute: true }),
@@ -221,7 +221,7 @@ function validateSnapshotsAndAnchors(
   rootDir: string,
   results: ValidateResult[],
 ): void {
-  const snapshotFiles = globSync("sources/snapshots/**/*.{yml,yaml}", {
+  const snapshotFiles = globSync("sources/snapshots/*.{yml,yaml}", {
     cwd: rootDir,
     absolute: true,
   });
