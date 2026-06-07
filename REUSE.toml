@@ -2,8 +2,16 @@ version = 1
 
 # SPDX information for the Clarvia Graph project.
 # See https://reuse.software/spec/ for the REUSE specification.
+#
+# License model:
+#   Code, tooling, validators, exporters     -> EUPL-1.2
+#   Graph data, vocabularies, schemas         -> CC-BY-4.0
+#   Documentation, exports                    -> CC-BY-4.0
+#   Source assertions (original Clarvia work) -> EUPL-1.2
+#   Source snapshot metadata (YAML)           -> EUPL-1.2
+#   HTML snapshots (government websites)      -> LicenseRef-Gov-PublicDomain
 
-# ── Source code ──────────────────────────────────────────────────────
+# ── Source code (tooling, validators, exporters) ─────────────────────
 
 [[annotations]]
 path = [
@@ -22,33 +30,73 @@ path = [
   "graph/**/*.yaml",
 ]
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
-SPDX-License-Identifier = "EUPL-1.2"
+SPDX-License-Identifier = "CC-BY-4.0"
 
 # ── Controlled vocabularies ──────────────────────────────────────────
 
 [[annotations]]
 path = "vocab/**/*.yml"
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
-SPDX-License-Identifier = "EUPL-1.2"
+SPDX-License-Identifier = "CC-BY-4.0"
 
-# ── Source records and assertions ────────────────────────────────────
+# ── Schemas ──────────────────────────────────────────────────────────
+
+[[annotations]]
+path = "schemas/**/*.json"
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# ── Source assertions (original Clarvia analytical work) ─────────────
 
 [[annotations]]
 path = [
-  "sources/**/*.yml",
-  "sources/**/*.yaml",
-  "schemas/**/*.json",
+  "sources/assertions/**/*.yml",
+  "sources/assertions/**/*.yaml",
 ]
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
 SPDX-License-Identifier = "EUPL-1.2"
 
-# ── Captured HTML snapshots from Luxembourg government websites ──────
-# These files are archived copies of publicly available government pages.
+# ── Source registry and per-provider records ─────────────────────────
+
+[[annotations]]
+path = [
+  "sources/*.yml",
+  "sources/*.yaml",
+  "sources/**/*.yml",
+]
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "EUPL-1.2"
+
+# ── Source snapshot metadata (YAML capture records) ──────────────────
+
+[[annotations]]
+path = [
+  "sources/snapshots/**/*.yml",
+  "sources/snapshots/**/*.yaml",
+]
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "EUPL-1.2"
+
+# ── Captured HTML snapshots from government websites ─────────────────
+# Archived copies of publicly available government pages from any
+# jurisdiction. The archival act is EUPL-1.2; the page content itself
+# is typically public domain under national law.
 
 [[annotations]]
 path = "sources/snapshots/html/**/*.html"
-SPDX-FileCopyrightText = "Government of Luxembourg (archived by CLARVIA ASBL)"
-SPDX-License-Identifier = "LicenseRef-LU-Gov-PublicDomain"
+SPDX-FileCopyrightText = "Various government agencies (archived by CLARVIA ASBL)"
+SPDX-License-Identifier = "LicenseRef-Gov-PublicDomain"
+
+# ── Documentation and exports ────────────────────────────────────────
+
+[[annotations]]
+path = [
+  "*.md",
+  "docs/**",
+  "exports/**",
+]
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "CC-BY-4.0"
 
 # ── Test scenarios and fixtures ──────────────────────────────────────
 
@@ -57,18 +105,6 @@ path = [
   "tests/**",
   "packages/**/tests/**",
   "packages/**/temp-test-*/**",
-]
-SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
-SPDX-License-Identifier = "EUPL-1.2"
-
-# ── Documentation ────────────────────────────────────────────────────
-
-[[annotations]]
-path = [
-  "*.md",
-  "docs/**",
-  "exports/**",
-  ".zenodo.json",
 ]
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
 SPDX-License-Identifier = "EUPL-1.2"
@@ -82,6 +118,7 @@ path = [
   "pnpm-workspace.yaml",
   "tsconfig.json",
   "vitest.config.ts",
+  "sonar-project.properties",
   ".node-version",
   ".gitignore",
   ".gitattributes",
@@ -99,15 +136,26 @@ path = ".github/**"
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
 SPDX-License-Identifier = "EUPL-1.2"
 
+# ── Citation and metadata ───────────────────────────────────────────
+
+[[annotations]]
+path = [
+  "CITATION.cff",
+  ".zenodo.json",
+]
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "CC-BY-4.0"
+
 # ── License files ───────────────────────────────────────────────────
 
 [[annotations]]
 path = [
   "LICENSE",
+  "LICENSE-DATA",
   "LICENSES/**",
 ]
-SPDX-FileCopyrightText = "European Union, 2007-2016"
-SPDX-License-Identifier = "EUPL-1.2"
+SPDX-FileCopyrightText = "Various (see individual files)"
+SPDX-License-Identifier = "EUPL-1.2 AND CC-BY-4.0 AND LicenseRef-Gov-PublicDomain"
 
 # ── Placeholder and asset files ─────────────────────────────────────
 
@@ -117,7 +165,7 @@ path = [
   "**/*.png",
 ]
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
-SPDX-License-Identifier = "EUPL-1.2"
+SPDX-License-Identifier = "CC-BY-4.0"
 
 # ── REUSE configuration itself ──────────────────────────────────────
 
@@ -125,4 +173,3 @@ SPDX-License-Identifier = "EUPL-1.2"
 path = "REUSE.toml"
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
 SPDX-License-Identifier = "EUPL-1.2"
-

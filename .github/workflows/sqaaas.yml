@@ -1,0 +1,26 @@
+# SPDX-FileCopyrightText: 2025-2026 CLARVIA ASBL, Luxembourg
+# SPDX-License-Identifier: EUPL-1.2
+
+name: SQAaaS Assessment
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sqaaas:
+    name: SQAaaS Quality Assessment
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: SQAaaS Assessment
+        uses: EOSC-synergy/sqaaas-assessment-action@v2
+        with:
+          repo: "https://github.com/clarvia-org/clarvia-graph"
+          branch: "main"

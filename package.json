@@ -12,6 +12,7 @@
     "build": "pnpm -r run build",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "lint": "eslint . --ext .ts",
     "typecheck": "tsc --noEmit",
     "validate": "pnpm --filter @clarvia/cli run validate",
@@ -34,6 +35,7 @@
     "prettier": "^3.8.3",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.60.1",
+    "@vitest/coverage-v8": "^4.1.8",
     "vitest": "^4.1.8"
   }
 }
