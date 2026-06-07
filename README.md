@@ -27,15 +27,11 @@ This is the website that families actually see at [clarvia.org](https://clarvia.
 
 ---
 
-## How to help in under 30 minutes
+## Get involved
 
-| Task | Time | Skills needed |
-|---|---|---|
-| [Add ARIA labels for screen readers](https://github.com/clarvia-org/workflow-web/issues/10) | ~30 min | Basic HTML/React |
-| [Add GitHub link to website footer](https://github.com/clarvia-org/workflow-web/issues/11) | ~20 min | Basic React/CSS |
-| [Create a 'Contribute' page](https://github.com/clarvia-org/workflow-web/issues/12) | ~45 min | React/Next.js |
+We tag approachable tasks — accessibility fixes, small UI improvements, documentation — as **good first issues**. Most can be completed in under an hour.
 
-👉 **Browse all [good first issues](https://github.com/clarvia-org/workflow-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)** to find something that fits your skills.
+👉 **[Browse good first issues](https://github.com/clarvia-org/workflow-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)** to find something that fits your skills.
 
 ---
 
