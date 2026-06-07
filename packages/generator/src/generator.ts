@@ -296,7 +296,7 @@ function mergeExplanationTraces(
 // ── Urgency label from score ─────────────────────────────────────────
 
 function urgencyLabel(score: number | null): string | null {
-  if (score === null || score === undefined) return null;
+  if (score == null) return null;
   if (score >= 90) return "urgent";
   if (score >= 70) return "important";
   if (score >= 40) return "standard";
