@@ -8,32 +8,28 @@ export interface TemporalContext {
   eventDate: string;
 }
 
+/** Returns true if `fieldValue` is after `referenceDate` (ISO string comparison). */
+function isAfterDate(fieldValue: unknown, referenceDate: string): boolean {
+  if (fieldValue === undefined || fieldValue === null) return false;
+  return String(fieldValue) > referenceDate;
+}
+
+/** Returns true if `fieldValue` is on or before `referenceDate` (ISO string comparison). */
+function isOnOrBeforeDate(fieldValue: unknown, referenceDate: string): boolean {
+  if (fieldValue === undefined || fieldValue === null) return false;
+  return String(fieldValue) <= referenceDate;
+}
+
 export function recordApplies(record: Record<string, unknown>, ctx: TemporalContext): boolean {
   if (!record || typeof record !== "object") return true;
 
   // 1. Record validity check (against asOfDate)
-  if (record.record_valid_from !== undefined && record.record_valid_from !== null) {
-    if (String(record.record_valid_from) > ctx.asOfDate) {
-      return false;
-    }
-  }
-  if (record.record_valid_to !== undefined && record.record_valid_to !== null) {
-    if (String(record.record_valid_to) <= ctx.asOfDate) {
-      return false;
-    }
-  }
+  if (isAfterDate(record.record_valid_from, ctx.asOfDate)) return false;
+  if (isOnOrBeforeDate(record.record_valid_to, ctx.asOfDate)) return false;
 
   // 2. Legal effectiveness check (against eventDate)
-  if (record.legal_effective_from !== undefined && record.legal_effective_from !== null) {
-    if (String(record.legal_effective_from) > ctx.eventDate) {
-      return false;
-    }
-  }
-  if (record.legal_effective_to !== undefined && record.legal_effective_to !== null) {
-    if (String(record.legal_effective_to) <= ctx.eventDate) {
-      return false;
-    }
-  }
+  if (isAfterDate(record.legal_effective_from, ctx.eventDate)) return false;
+  if (isOnOrBeforeDate(record.legal_effective_to, ctx.eventDate)) return false;
 
   return true;
 }

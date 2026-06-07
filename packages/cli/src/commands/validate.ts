@@ -6,7 +6,8 @@
  */
 
 import { readFileSync, existsSync } from "node:fs";
-import { resolve, relative } from "node:path";
+import { resolve } from "node:path";
+import { toPosixRel, resolveRootDir, mergeErrors } from "../shared/utils.js";
 import { globSync } from "glob";
 import { parse as parseYaml } from "yaml";
 import type { ErrorObject } from "ajv";
@@ -40,12 +41,7 @@ const DIR_SCHEMA_MAP: Record<string, string> = {
 const SKIP_FILES = new Set([".gitkeep"]);
 const SKIP_PATHS = new Set(["sources/register.yml"]);
 
-// ── helpers ──────────────────────────────────────────────────────────
 
-/** Turn a Windows path into a forward-slash posix-style relative path */
-function toPosixRel(abs: string, root: string): string {
-  return relative(root, abs).split("\\").join("/");
-}
 
 /** Resolve which schema file a YAML data file should validate against. */
 function resolveSchemaFile(relPath: string): string | null {
@@ -233,9 +229,7 @@ function validateSnapshotsAndAnchors(
 
   const snapshotMap = new Map<string, { data: Record<string, unknown>; file: string }>();
 
-  function getRel(abs: string): string {
-    return relative(rootDir, abs).split("\\").join("/");
-  }
+  const getRel = (abs: string): string => toPosixRel(abs, rootDir);
 
   for (const file of snapshotFiles) {
     try {
@@ -295,20 +289,7 @@ function validateSnapshotsAndAnchors(
       }
     }
 
-    if (errors.length > 0) {
-      const existing = results.find(r => r.file === relPath);
-      if (existing) {
-        existing.valid = false;
-        existing.errors = [...(existing.errors ?? []), ...errors];
-      } else {
-        results.push({
-          file: relPath,
-          schema: "source_snapshot.schema.json",
-          valid: false,
-          errors,
-        });
-      }
-    }
+      mergeErrors(results, relPath, "source_snapshot.schema.json", errors);
   }
 
   for (const file of assertionFiles) {
@@ -363,18 +344,7 @@ function validateSnapshotsAndAnchors(
       }
 
       if (errors.length > 0) {
-        const existing = results.find(r => r.file === relPath);
-        if (existing) {
-          existing.valid = false;
-          existing.errors = [...(existing.errors ?? []), ...errors];
-        } else {
-          results.push({
-            file: relPath,
-            schema: "source_assertion.schema.json",
-            valid: false,
-            errors,
-          });
-        }
+        mergeErrors(results, relPath, "source_assertion.schema.json", errors);
       }
     }
   }
@@ -414,20 +384,7 @@ function validateSnapshotsAndAnchors(
       }
     }
 
-    if (errors.length > 0) {
-      const existing = results.find(r => r.file === relPath);
-      if (existing) {
-        existing.valid = false;
-        existing.errors = [...(existing.errors ?? []), ...errors];
-      } else {
-        results.push({
-          file: relPath,
-          schema: "task_template.schema.json",
-          valid: false,
-          errors,
-        });
-      }
-    }
+      mergeErrors(results, relPath, "task_template.schema.json", errors);
   }
 }
 
@@ -449,9 +406,7 @@ function validateConditionsAndIntake(
     absolute: true,
   });
 
-  function getRel(abs: string): string {
-    return relative(rootDir, abs).split("\\").join("/");
-  }
+  const getRel = (abs: string): string => toPosixRel(abs, rootDir);
 
   const intakeIdToPath = new Map<string, string>();
   const intakePathToId = new Map<string, string>();
@@ -519,20 +474,7 @@ function validateConditionsAndIntake(
       }
     }
 
-    if (errors.length > 0) {
-      const existing = results.find(r => r.file === relPath);
-      if (existing) {
-        existing.valid = false;
-        existing.errors = [...(existing.errors ?? []), ...errors];
-      } else {
-        results.push({
-          file: relPath,
-          schema: "condition.schema.json",
-          valid: false,
-          errors,
-        });
-      }
-    }
+      mergeErrors(results, relPath, "condition.schema.json", errors);
   }
 }
 
@@ -593,13 +535,7 @@ function getNormalizedTextContent(html: string): string {
 
 export async function main(): Promise<void> {
   // Walk up from packages/cli/src/commands/ to find the repo root
-  const rootDir = resolve(
-    import.meta.dirname ?? ".",
-    "..",
-    "..",
-    "..",
-    "..",
-  );
+  const rootDir = resolveRootDir(import.meta.dirname);
 
   const { results, ok } = await runValidate({ rootDir });
 

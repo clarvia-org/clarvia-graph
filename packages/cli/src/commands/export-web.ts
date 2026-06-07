@@ -16,6 +16,7 @@
  */
 
 import { resolve } from "node:path";
+import { resolveRootDir } from "../shared/utils.js";
 import { mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
 import { execSync } from "node:child_process";
 import { parse as parseYaml } from "yaml";
@@ -44,13 +45,7 @@ function loadJurisdictionVocab(rootDir: string): JurisdictionEntry[] {
 }
 
 export async function main(): Promise<void> {
-  const rootDir = resolve(
-    import.meta.dirname ?? __dirname,
-    "..",
-    "..",
-    "..",
-    "..",
-  );
+  const rootDir = resolveRootDir(import.meta.dirname ?? __dirname);
 
   console.log(`Loading graph from ${rootDir}...`);
   const graph = loadGraph(rootDir);
@@ -212,6 +207,49 @@ function buildIntakeFile(
   );
 }
 
+/** Collect all transitively referenced entity IDs from consequences. */
+interface TransitiveRefs {
+  conditionIds: Set<string>;
+  taskTemplateIds: Set<string>;
+  authorityIds: Set<string>;
+  deadlineIds: Set<string>;
+  evidenceTypeIds: Set<string>;
+}
+
+function collectTransitiveRefs(
+  consequences: Array<Record<string, unknown>>,
+  graph: LoadedGraph,
+): TransitiveRefs {
+  const conditionIds = new Set<string>();
+  const taskTemplateIds = new Set<string>();
+  const authorityIds = new Set<string>();
+  const deadlineIds = new Set<string>();
+  const evidenceTypeIds = new Set<string>();
+
+  for (const c of consequences) {
+    for (const ref of (c.trigger as Record<string, unknown>)?.condition_refs as string[] ?? []) {
+      conditionIds.add(ref);
+    }
+    for (const ref of c.task_template_refs as string[] ?? []) {
+      taskTemplateIds.add(ref);
+    }
+  }
+
+  for (const id of taskTemplateIds) {
+    const t = graph.taskTemplates.get(id);
+    if (!t) continue;
+    for (const ref of t.authority_refs ?? []) authorityIds.add(ref);
+    for (const ref of t.deadline_refs ?? []) deadlineIds.add(ref);
+    if (t.evidence_requirements) {
+      for (const set of t.evidence_requirements.sets) {
+        for (const ref of set.evidence_type_refs) evidenceTypeIds.add(ref);
+      }
+    }
+  }
+
+  return { conditionIds, taskTemplateIds, authorityIds, deadlineIds, evidenceTypeIds };
+}
+
 /**
  * Build runtime file — all data needed for client-side evaluation.
  * Only includes public consequences (per spec §10.6 publication gate).
@@ -228,39 +266,11 @@ function buildRuntimeFile(
       PUBLIC_DISTRIBUTION.has(c.distribution_status),
   );
 
-  // Filter conditions to only those referenced by public consequences
-  const referencedConditionIds = new Set<string>();
-  for (const c of consequences) {
-    for (const ref of c.trigger?.condition_refs ?? []) {
-      referencedConditionIds.add(ref);
-    }
-  }
+  const refs = collectTransitiveRefs(consequences, graph);
+
   const conditions = [...graph.conditions.values()].filter(
-    (c) => referencedConditionIds.has(c.id),
+    (c) => refs.conditionIds.has(c.id),
   );
-
-  // Collect referenced task templates, authorities, deadlines, evidence types
-  const taskTemplateIds = new Set<string>();
-  const authorityIds = new Set<string>();
-  const deadlineIds = new Set<string>();
-  const evidenceTypeIds = new Set<string>();
-
-  for (const c of consequences) {
-    for (const ref of c.task_template_refs ?? []) taskTemplateIds.add(ref);
-  }
-
-  for (const id of taskTemplateIds) {
-    const t = graph.taskTemplates.get(id);
-    if (t) {
-      for (const ref of t.authority_refs ?? []) authorityIds.add(ref);
-      for (const ref of t.deadline_refs ?? []) deadlineIds.add(ref);
-      if (t.evidence_requirements) {
-        for (const set of t.evidence_requirements.sets) {
-          for (const ref of set.evidence_type_refs) evidenceTypeIds.add(ref);
-        }
-      }
-    }
-  }
 
   const runtime = {
     life_event: lifeEvent,
@@ -281,7 +291,7 @@ function buildRuntimeFile(
       task_template_refs: c.task_template_refs,
       confidence: c.confidence,
     })),
-    task_templates: [...taskTemplateIds]
+    task_templates: [...refs.taskTemplateIds]
       .map((id) => graph.taskTemplates.get(id))
       .filter(Boolean)
       .map((t) => ({
@@ -293,7 +303,7 @@ function buildRuntimeFile(
         evidence_requirements: t!.evidence_requirements,
         rendering: t!.rendering,
       })),
-    authorities: [...authorityIds]
+    authorities: [...refs.authorityIds]
       .map((id) => graph.authorities.get(id))
       .filter(Boolean)
       .map((a) => {
@@ -306,7 +316,7 @@ function buildRuntimeFile(
           name_de: raw.name_de ?? a!.name,
         };
       }),
-    deadlines: [...deadlineIds]
+    deadlines: [...refs.deadlineIds]
       .map((id) => graph.deadlines.get(id))
       .filter(Boolean)
       .map((d) => ({
@@ -315,7 +325,7 @@ function buildRuntimeFile(
         deadline_type: d!.deadline_type,
         calculation: d!.calculation,
       })),
-    evidence_types: [...evidenceTypeIds]
+    evidence_types: [...refs.evidenceTypeIds]
       .map((id) => graph.evidenceTypes.get(id))
       .filter(Boolean)
       .map((e) => ({

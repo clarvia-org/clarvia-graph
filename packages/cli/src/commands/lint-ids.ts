@@ -6,7 +6,7 @@
  */
 
 import { readFileSync } from "node:fs";
-import { resolve, relative } from "node:path";
+import { toPosixRel, resolveRootDir } from "../shared/utils.js";
 import { globSync } from "glob";
 import { parse as parseYaml } from "yaml";
 
@@ -95,10 +95,6 @@ const MAX_ID_LENGTH = 120;
 const WARN_ID_LENGTH = 80;
 
 // ── helpers ──────────────────────────────────────────────────────────
-
-function toPosixRel(abs: string, root: string): string {
-  return relative(root, abs).split("\\").join("/");
-}
 
 function resolveTypeRule(
   relPath: string,
@@ -319,16 +315,50 @@ export async function runLintIds(
   return { results, ok };
 }
 
+// ── output helpers ───────────────────────────────────────────────────
+
+function countIssuesByLevel(
+  results: LintIdResult[],
+  level: "error" | "warn",
+): number {
+  return results.reduce(
+    (n, r) =>
+      n +
+      r.ids.reduce(
+        (m, i) => m + i.issues.filter((iss) => iss.level === level).length,
+        0,
+      ),
+    0,
+  );
+}
+
+function formatFileResult(r: LintIdResult): void {
+  const hasErrors = r.ids.some((i) =>
+    i.issues.some((iss) => iss.level === "error"),
+  );
+  const hasWarns = r.ids.some((i) =>
+    i.issues.some((iss) => iss.level === "warn"),
+  );
+
+  if (!hasErrors && !hasWarns) {
+    console.log(`✔ ${r.file}`);
+    return;
+  }
+
+  const marker = hasErrors ? "✘" : "⚠";
+  console.log(`${marker} ${r.file}`);
+  for (const idResult of r.ids) {
+    for (const iss of idResult.issues) {
+      const icon = iss.level === "error" ? "  ✘" : "  ⚠";
+      console.log(`${icon} [${idResult.id}] ${iss.message}`);
+    }
+  }
+}
+
 // ── CLI entry point ──────────────────────────────────────────────────
 
 export async function main(): Promise<void> {
-  const rootDir = resolve(
-    import.meta.dirname ?? __dirname,
-    "..",
-    "..",
-    "..",
-    "..",
-  );
+  const rootDir = resolveRootDir(import.meta.dirname ?? __dirname);
 
   const { results, ok } = await runLintIds({ rootDir });
 
@@ -340,45 +370,11 @@ export async function main(): Promise<void> {
   }
 
   for (const r of results) {
-    const hasErrors = r.ids.some((i) =>
-      i.issues.some((iss) => iss.level === "error"),
-    );
-    const hasWarns = r.ids.some((i) =>
-      i.issues.some((iss) => iss.level === "warn"),
-    );
-
-    if (!hasErrors && !hasWarns) {
-      console.log(`✔ ${r.file}`);
-    } else {
-      const marker = hasErrors ? "✘" : "⚠";
-      console.log(`${marker} ${r.file}`);
-      for (const idResult of r.ids) {
-        for (const iss of idResult.issues) {
-          const icon = iss.level === "error" ? "  ✘" : "  ⚠";
-          console.log(`${icon} [${idResult.id}] ${iss.message}`);
-        }
-      }
-    }
+    formatFileResult(r);
   }
 
-  const errorCount = results.reduce(
-    (n, r) =>
-      n +
-      r.ids.reduce(
-        (m, i) => m + i.issues.filter((iss) => iss.level === "error").length,
-        0,
-      ),
-    0,
-  );
-  const warnCount = results.reduce(
-    (n, r) =>
-      n +
-      r.ids.reduce(
-        (m, i) => m + i.issues.filter((iss) => iss.level === "warn").length,
-        0,
-      ),
-    0,
-  );
+  const errorCount = countIssuesByLevel(results, "error");
+  const warnCount = countIssuesByLevel(results, "warn");
 
   console.log(`\n${errorCount} error(s), ${warnCount} warning(s).`);
   process.exit(ok ? 0 : 1);

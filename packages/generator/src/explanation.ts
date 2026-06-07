@@ -37,15 +37,12 @@ function triValueToString(value: TriValue): "true" | "false" | "unknown" {
   return "unknown";
 }
 
-/** Build an explanation trace for a checklist item */
-export function buildExplanationTrace(
-  traceId: string,
-  consequenceId: string,
+/** Build condition traces and why_visible messages for the explanation. */
+function buildConditionTraces(
   conditionRefs: string[],
   conditionResults: Map<string, { result: TriValue; missingFacts: string[] }>,
   graph: LoadedGraph,
-  temporalCtx?: TemporalContext,
-): ExplanationTrace {
+): { conditions: ConditionTrace[]; whyVisible: string[] } {
   const conditions: ConditionTrace[] = [];
   const whyVisible: string[] = [];
 
@@ -72,41 +69,61 @@ export function buildExplanationTrace(
     }
   }
 
-  // Gather sources from the consequence
+  return { conditions, whyVisible };
+}
+
+/** Build source traces from a consequence's assertion refs, filtering by temporal context. */
+function buildSourceTraces(
+  consequenceId: string,
+  graph: LoadedGraph,
+  temporalCtx?: TemporalContext,
+): SourceTrace[] {
   const consequence = graph.consequences.get(consequenceId);
-  const sources: SourceTrace[] = [];
+  if (!consequence) return [];
 
-  if (consequence) {
-    // Group assertion refs by their owning source
-    const sourceAssertionMap = new Map<string, string[]>();
+  const sourceAssertionMap = new Map<string, string[]>();
 
-    for (const assertionRef of consequence.source_assertion_refs ?? []) {
-      const ass = graph.assertions?.get(assertionRef);
-      if (ass && temporalCtx && !recordApplies(ass, temporalCtx)) {
-        continue;
-      }
-      // Use the assertion's source_id to find the owning source
-      const sourceId = ass?.source_id;
-      if (sourceId) {
-        const existing = sourceAssertionMap.get(sourceId);
-        if (existing) {
-          existing.push(assertionRef);
-        } else {
-          sourceAssertionMap.set(sourceId, [assertionRef]);
-        }
-      }
+  for (const assertionRef of consequence.source_assertion_refs ?? []) {
+    const ass = graph.assertions?.get(assertionRef);
+    if (ass && temporalCtx && !recordApplies(ass, temporalCtx)) {
+      continue;
     }
-
-    for (const [sourceId, assertionRefs] of sourceAssertionMap) {
-      const source = graph.sources?.get(sourceId);
-      sources.push({
-        source_title: source?.title ?? sourceId,
-        publisher: source?.publisher ?? "Unknown",
-        official_url: source?.url ?? "",
-        assertion_refs: assertionRefs,
-      });
+    const sourceId = ass?.source_id;
+    if (sourceId) {
+      const existing = sourceAssertionMap.get(sourceId);
+      if (existing) {
+        existing.push(assertionRef);
+      } else {
+        sourceAssertionMap.set(sourceId, [assertionRef]);
+      }
     }
   }
+
+  const sources: SourceTrace[] = [];
+  for (const [sourceId, assertionRefs] of sourceAssertionMap) {
+    const source = graph.sources?.get(sourceId);
+    sources.push({
+      source_title: source?.title ?? sourceId,
+      publisher: source?.publisher ?? "Unknown",
+      official_url: source?.url ?? "",
+      assertion_refs: assertionRefs,
+    });
+  }
+
+  return sources;
+}
+
+/** Build an explanation trace for a checklist item */
+export function buildExplanationTrace(
+  traceId: string,
+  consequenceId: string,
+  conditionRefs: string[],
+  conditionResults: Map<string, { result: TriValue; missingFacts: string[] }>,
+  graph: LoadedGraph,
+  temporalCtx?: TemporalContext,
+): ExplanationTrace {
+  const { conditions, whyVisible } = buildConditionTraces(conditionRefs, conditionResults, graph);
+  const sources = buildSourceTraces(consequenceId, graph, temporalCtx);
 
   return {
     id: traceId,

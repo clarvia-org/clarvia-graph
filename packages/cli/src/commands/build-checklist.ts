@@ -10,17 +10,17 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { loadGraph, generateChecklist, type Fact } from "@clarvia/generator";
+import type { ChecklistOutput } from "@clarvia/generator";
+import { resolveRootDir } from "../shared/utils.js";
 
-export async function main(): Promise<void> {
-  const rootDir = resolve(
-    import.meta.dirname ?? __dirname,
-    "..",
-    "..",
-    "..",
-    "..",
-  );
+// ── arg parsing ──────────────────────────────────────────────────────
 
-  const args = process.argv.slice(3);
+interface ParsedArgs {
+  lifeEvent: string;
+  facts: Fact[];
+}
+
+function parseArgs(args: string[], rootDir: string): ParsedArgs {
   let facts: Fact[] = [];
   let lifeEvent = "bereavement";
 
@@ -49,22 +49,19 @@ export async function main(): Promise<void> {
     }
   }
 
-  console.log(`Loading graph from ${rootDir}...`);
-  const graph = loadGraph(rootDir);
-  console.log(
-    `Loaded: ${graph.consequences.size} consequences, ${graph.conditions.size} conditions, ${graph.taskTemplates.size} templates`,
-  );
+  return { lifeEvent, facts };
+}
 
-  console.log(`\nGenerating checklist for life_event="${lifeEvent}" with ${facts.length} facts...`);
-  const output = generateChecklist({ graph, facts, lifeEvent });
+// ── output printing ──────────────────────────────────────────────────
 
+function printChecklist(output: ChecklistOutput, lifeEvent: string): void {
   console.log(`\n${"═".repeat(60)}`);
   console.log(` CHECKLIST: ${lifeEvent}`);
   console.log(`${"═".repeat(60)}`);
 
   if (output.items.length === 0) {
     console.log("\n  No items match the provided facts.\n");
-    process.exit(0);
+    return;
   }
 
   // Print by section
@@ -107,13 +104,36 @@ export async function main(): Promise<void> {
   );
   console.log(`Sources referenced: ${output.summary.source_count}`);
   console.log();
+}
 
-  // Also output as YAML
-  const yamlOutput = JSON.stringify(output, null, 2);
+// ── main ─────────────────────────────────────────────────────────────
+
+export async function main(): Promise<void> {
+  const rootDir = resolveRootDir(import.meta.dirname ?? __dirname);
+
+  const { lifeEvent, facts } = parseArgs(process.argv.slice(3), rootDir);
+
+  console.log(`Loading graph from ${rootDir}...`);
+  const graph = loadGraph(rootDir);
+  console.log(
+    `Loaded: ${graph.consequences.size} consequences, ${graph.conditions.size} conditions, ${graph.taskTemplates.size} templates`,
+  );
+
+  console.log(`\nGenerating checklist for life_event="${lifeEvent}" with ${facts.length} facts...`);
+  const output = generateChecklist({ graph, facts, lifeEvent });
+
+  printChecklist(output, lifeEvent);
+
+  if (output.items.length === 0) {
+    process.exit(0);
+  }
+
+  // Also output as JSON
+  const jsonOutput = JSON.stringify(output, null, 2);
   const outputDir = resolve(rootDir, "build", "exports", "checklist");
   const outputPath = resolve(outputDir, "last-checklist.json");
   const { mkdirSync, writeFileSync } = await import("node:fs");
   mkdirSync(outputDir, { recursive: true });
-  writeFileSync(outputPath, yamlOutput);
+  writeFileSync(outputPath, jsonOutput);
   console.log(`Full output saved to: ${outputPath}`);
 }

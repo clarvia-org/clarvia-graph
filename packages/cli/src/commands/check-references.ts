@@ -10,19 +10,14 @@
  */
 
 import { readFileSync } from "node:fs";
-import { resolve, relative } from "node:path";
 import { globSync } from "glob";
 import { parse as parseYaml } from "yaml";
+import { toPosixRel, resolveRootDir } from "../shared/utils.js";
 
 // Files to skip
 const SKIP_FILES = new Set([".gitkeep"]);
 
-// ── helpers ──────────────────────────────────────────────────────────
 
-/** Turn a Windows path into a forward-slash posix-style relative path */
-function toPosixRel(abs: string, root: string): string {
-  return relative(root, abs).split("\\").join("/");
-}
 
 // ── extract all IDs from a parsed YAML document ──────────────────────
 
@@ -126,14 +121,16 @@ export interface CheckReferencesOptions {
   rootDir: string;
 }
 
-// ── exported runner (tested in isolation) ────────────────────────────
+// ── file loading helper ────────────────────────────────────────────────
 
-export async function runCheckReferences(
-  opts: CheckReferencesOptions,
-): Promise<{ results: CheckRefFileResult[]; warnings: number }> {
-  const { rootDir } = opts;
+interface ParsedFile {
+  relPath: string;
+  data: unknown;
+}
 
-  // ── 1. Collect YAML files ──────────────────────────────────────────
+function loadAndParseFiles(
+  rootDir: string,
+): { parsed: ParsedFile[]; knownIds: Set<string> } {
   const patterns = [
     "graph/**/*.{yml,yaml}",
     "sources/assertions/**/*.{yml,yaml}",
@@ -145,19 +142,9 @@ export async function runCheckReferences(
 
   const dataFiles = files.filter((f: string) => {
     const base = f.split(/[\\/]/).pop()!;
-    if (SKIP_FILES.has(base)) return false;
-    return true;
+    return !SKIP_FILES.has(base);
   });
 
-  if (dataFiles.length === 0) {
-    return { results: [], warnings: 0 };
-  }
-
-  // ── 2. Parse all files and build the ID set ────────────────────────
-  interface ParsedFile {
-    relPath: string;
-    data: unknown;
-  }
   const parsed: ParsedFile[] = [];
   const knownIds = new Set<string>();
 
@@ -179,7 +166,23 @@ export async function runCheckReferences(
     }
   }
 
-  // ── 3. Check refs against the ID set ───────────────────────────────
+  return { parsed, knownIds };
+}
+
+// ── exported runner (tested in isolation) ────────────────────────────
+
+export async function runCheckReferences(
+  opts: CheckReferencesOptions,
+): Promise<{ results: CheckRefFileResult[]; warnings: number }> {
+  const { rootDir } = opts;
+
+  const { parsed, knownIds } = loadAndParseFiles(rootDir);
+
+  if (parsed.length === 0) {
+    return { results: [], warnings: 0 };
+  }
+
+  // Check refs against the ID set
   const results: CheckRefFileResult[] = [];
   let warnings = 0;
 
@@ -205,14 +208,7 @@ export async function runCheckReferences(
 // ── CLI entry point ──────────────────────────────────────────────────
 
 export async function main(): Promise<void> {
-  // Walk up from packages/cli/src/commands/ to find the repo root
-  const rootDir = resolve(
-    import.meta.dirname ?? ".",
-    "..",
-    "..",
-    "..",
-    "..",
-  );
+  const rootDir = resolveRootDir(import.meta.dirname);
 
   const { results, warnings } = await runCheckReferences({ rootDir });
 

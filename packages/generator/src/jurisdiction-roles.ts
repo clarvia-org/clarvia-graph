@@ -31,6 +31,23 @@ const ARRAY_ROLE_MAPPING: Record<string, keyof JurisdictionRoles> = {
   "estate.asset_location.country": "asset_situs",
 };
 
+/** Push `value` into `roles[role]` if not already present and not "unknown". */
+function addToRole(roles: JurisdictionRoles, role: keyof JurisdictionRoles, value: string): void {
+  if (value && value !== "unknown" && !roles[role].includes(value)) {
+    roles[role].push(value);
+  }
+}
+
+/** Apply derived defaults: succession law from habitual residence, pension from work state. */
+function applyDerivedDefaults(roles: JurisdictionRoles): void {
+  if (roles.possible_succession_law.length === 0) {
+    roles.possible_succession_law = [...roles.deceased_habitual_residence];
+  }
+  if (roles.possible_pension_authority.length === 0) {
+    roles.possible_pension_authority = [...roles.work_or_insurance_state];
+  }
+}
+
 /** Resolve jurisdiction roles from normalized facts */
 export function resolveJurisdictionRoles(facts: Fact[]): JurisdictionRoles {
   const roles: JurisdictionRoles = {
@@ -48,35 +65,20 @@ export function resolveJurisdictionRoles(facts: Fact[]): JurisdictionRoles {
 
     // Single-value roles
     const singleRole = ROLE_MAPPING[fact.fact_type];
-    if (singleRole && val && val !== "unknown") {
-      if (!roles[singleRole].includes(val)) {
-        roles[singleRole].push(val);
-      }
+    if (singleRole) {
+      addToRole(roles, singleRole, val);
     }
 
     // Array roles (comma-separated)
     const arrayRole = ARRAY_ROLE_MAPPING[fact.fact_type];
     if (arrayRole && val) {
-      const values = val.split(",").map((v: string) => v.trim());
-      for (const v of values) {
-        if (v && v !== "unknown" && !roles[arrayRole].includes(v)) {
-          roles[arrayRole].push(v);
-        }
+      for (const v of val.split(",").map((s: string) => s.trim())) {
+        addToRole(roles, arrayRole, v);
       }
     }
   }
 
-  // Derived roles:
-  // possible_succession_law defaults to habitual residence
-  if (roles.possible_succession_law.length === 0) {
-    roles.possible_succession_law = [...roles.deceased_habitual_residence];
-  }
-
-  // possible_pension_authority comes from work/insurance state
-  if (roles.possible_pension_authority.length === 0) {
-    roles.possible_pension_authority = [...roles.work_or_insurance_state];
-  }
-
+  applyDerivedDefaults(roles);
   return roles;
 }
 
