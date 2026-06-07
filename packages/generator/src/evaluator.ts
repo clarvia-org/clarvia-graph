@@ -74,14 +74,14 @@ function resolveVar(
  *   { death: { place: { country: "LU" } } }
  */
 export function buildFactData(facts: Fact[]): Record<string, unknown> {
-  const data: Record<string, unknown> = {};
+  const data: Record<string, unknown> = Object.create(null);
   for (const f of facts) {
     const parts = f.fact_type.split(".");
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let current: any = data;
     for (let i = 0; i < parts.length - 1; i++) {
       if (!(parts[i] in current) || typeof current[parts[i]] !== "object") {
-        current[parts[i]] = {};
+        current[parts[i]] = Object.create(null);
       }
       current = current[parts[i]];
     }

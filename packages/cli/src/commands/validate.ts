@@ -563,12 +563,18 @@ function normalizeText(text: string): string {
 }
 
 function getNormalizedTextContent(html: string): string {
-  let text = html.replace(/<!--[\s\S]*?-->/g, "");
+  // Loop to handle crafted/nested comment markers like <!-<!-- -->->
+  let text = html;
+  let prev: string;
+  do {
+    prev = text;
+    text = text.replace(/<!--[\s\S]*?-->/g, "");
+  } while (text !== prev);
   text = text.replace(/<(script|style)[\s\S]*?>[\s\S]*?<\/\1>/gi, " ");
   text = text.replace(/<[^>]+>/g, " ");
   // Decode common HTML entities (aligned with check-anchors.ts)
+  // NOTE: &amp; is decoded last to avoid double-unescaping (e.g. &amp;lt; → &lt; → <)
   text = text.replace(/&nbsp;/gi, " ");
-  text = text.replace(/&amp;/gi, "&");
   text = text.replace(/&lt;/gi, "<");
   text = text.replace(/&gt;/gi, ">");
   text = text.replace(/&quot;/gi, '"');
@@ -579,6 +585,7 @@ function getNormalizedTextContent(html: string): string {
   text = text.replace(/&ldquo;/gi, "\u201D");
   text = text.replace(/&ndash;/gi, "\u2013");
   text = text.replace(/&mdash;/gi, "\u2014");
+  text = text.replace(/&amp;/gi, "&");
   return normalizeText(text);
 }
 

@@ -23,11 +23,10 @@ function toPosixRel(abs: string, root: string): string {
 /** Strip HTML tags from a string, returning text content only. */
 export function stripHtmlTags(html: string): string {
   return html
-    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, " ")
+    .replace(/<script[^>]*>[\s\S]*?<\/script[^>]*>/gi, " ")
+    .replace(/<style[^>]*>[\s\S]*?<\/style[^>]*>/gi, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/&nbsp;/gi, " ")
-    .replace(/&amp;/gi, "&")
     .replace(/&lt;/gi, "<")
     .replace(/&gt;/gi, ">")
     .replace(/&quot;/gi, '"')
@@ -39,6 +38,7 @@ export function stripHtmlTags(html: string): string {
     .replace(/&ndash;/gi, "\u2013")
     .replace(/&mdash;/gi, "\u2014")
     .replace(/&#\d+;/gi, " ")
+    .replace(/&amp;/gi, "&")
     .replace(/\s+/g, " ")
     .trim();
 }
