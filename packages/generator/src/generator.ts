@@ -192,7 +192,7 @@ function resolveDedupeKey(
   }
 
   const dedupe = template.dedupe;
-  if (!dedupe || !dedupe.dedupe_key_template) {
+  if (!dedupe?.dedupe_key_template) {
     return { key: `template.${template.id}`, strategy: "do_not_merge" };
   }
 
@@ -301,6 +301,14 @@ function urgencyLabel(score: number | null): string | null {
   if (score >= 70) return "important";
   if (score >= 40) return "standard";
   return "low";
+}
+
+// ── Why-maybe explanation label ──────────────────────────────────────
+
+function whyMaybeLabel(status: ItemStatus, missingFacts: string[]): string | null {
+  if (status === "maybe_applies") return "Condition could not be fully evaluated";
+  if (status === "needs_fact") return `Missing: ${missingFacts.join(", ")}`;
+  return null;
 }
 
 // ── Map condition TriValue to item status ─────────────────────────────
@@ -569,7 +577,7 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
 
     const mergedIdentity = subList
       .map(c => `${c.consequence.id}::${c.template?.id ?? c.consequence.id}`)
-      .sort()
+      .sort((a, b) => a.localeCompare(b))
       .join("|");
     const mergedGroupHash = createHash("sha256")
       .update(mergedIdentity)
@@ -581,9 +589,9 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
       ...base,
       id: mergedItemId,
       status: mergedStatus,
-      jurisdiction_contexts: [...jurisdictions].sort(),
-      needed_for: [...neededFor].sort(),
-      missing_fact_refs: [...missingFacts].sort(),
+      jurisdiction_contexts: [...jurisdictions].sort((a, b) => a.localeCompare(b)),
+      needed_for: [...neededFor].sort((a, b) => a.localeCompare(b)),
+      missing_fact_refs: [...missingFacts].sort((a, b) => a.localeCompare(b)),
       source_summary: {
         assertion_count: totalAssertionCount,
         top_tier: null,
@@ -761,12 +769,7 @@ function makeItem(
       : null,
     needed_for: [consequence.title],
     missing_fact_refs: missingFacts,
-    why_maybe:
-      status === "maybe_applies"
-        ? "Condition could not be fully evaluated"
-        : status === "needs_fact"
-          ? `Missing: ${missingFacts.join(", ")}`
-          : null,
+    why_maybe: whyMaybeLabel(status, missingFacts),
     source_summary: {
       assertion_count: filteredAssertionRefs.length,
       top_tier: null,

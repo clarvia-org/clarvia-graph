@@ -48,7 +48,7 @@ export function normalizeFacts(facts: Fact[]): Fact[] {
       // Uppercase and deduplicate — arrays are always string-based country codes
       const rawArr = Array.isArray(fact.value) ? fact.value : String(fact.value ?? "").split(",");
       const values = rawArr.map((v: unknown) => String(v).trim().toUpperCase());
-      const unique = [...new Set(values)].sort();
+      const unique = [...new Set(values)].sort((a, b) => a.localeCompare(b));
       normalized.push({ fact_type: fact.fact_type, value: unique.join(",") });
     } else if (typeof fact.value === "boolean" || typeof fact.value === "number") {
       // Preserve boolean and numeric types — conditions use typed JsonLogic comparisons

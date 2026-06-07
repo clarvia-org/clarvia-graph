@@ -9,9 +9,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
-import { loadGraph } from "@clarvia/generator";
-import { generateChecklist } from "@clarvia/generator";
-import type { Fact } from "@clarvia/generator";
+import { loadGraph, generateChecklist, type Fact } from "@clarvia/generator";
 
 export async function main(): Promise<void> {
   const rootDir = resolve(
@@ -78,14 +76,12 @@ export async function main(): Promise<void> {
     );
 
     for (const item of sectionItems) {
-      const statusIcon =
-        item.status === "applies"
-          ? "✔"
-          : item.status === "needs_fact"
-            ? "?"
-            : item.status === "maybe_applies"
-              ? "~"
-              : "✘";
+      const statusIcons: Record<string, string> = {
+        applies: "✔",
+        needs_fact: "?",
+        maybe_applies: "~",
+      };
+      const statusIcon = statusIcons[item.status] ?? "✘";
       const urgencyTag = item.urgency?.label
         ? ` [${item.urgency.label}]`
         : "";

@@ -30,6 +30,13 @@ export interface ExplanationTrace {
   sources: SourceTrace[];
 }
 
+/** Convert a TriValue (true | false | "unknown") to a string label */
+function triValueToString(value: TriValue): "true" | "false" | "unknown" {
+  if (value === true) return "true";
+  if (value === false) return "false";
+  return "unknown";
+}
+
 /** Build an explanation trace for a checklist item */
 export function buildExplanationTrace(
   traceId: string,
@@ -47,8 +54,7 @@ export function buildExplanationTrace(
     const condition = graph.conditions.get(ref);
 
     if (result && condition) {
-      const resultStr =
-        result.result === true ? "true" : result.result === false ? "false" : "unknown";
+      const resultStr = triValueToString(result.result);
 
       conditions.push({
         condition_ref: ref,
