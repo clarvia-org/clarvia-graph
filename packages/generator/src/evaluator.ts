@@ -90,6 +90,106 @@ export function buildFactData(facts: Fact[]): Record<string, unknown> {
   return data;
 }
 
+// ── Operator handlers ────────────────────────────────────────────────
+
+type Data = Record<string, unknown>;
+
+/** Evaluate both sides of a binary expression; return MISSING if either side is. */
+function evalBinaryOp(
+  args: unknown[],
+  data: Data,
+  fn: (a: unknown, b: unknown) => unknown,
+): unknown {
+  const left = evaluate(args[0], data);
+  const right = evaluate(args[1], data);
+  if (left === MISSING || right === MISSING) return MISSING;
+  return fn(left, right);
+}
+
+/** Three-valued NOT: !(MISSING) → MISSING */
+function evalNot(args: unknown[], data: Data): unknown {
+  const val = evaluate(args[0], data);
+  if (val === MISSING) return MISSING;
+  return !val;
+}
+
+/**
+ * Three-valued AND: and(false, anything) → false (short-circuit)
+ *                   and(true, unknown) → unknown
+ */
+function evalAnd(args: unknown[], data: Data): unknown {
+  let hasMissing = false;
+  for (const arg of args) {
+    const val = evaluate(arg, data);
+    if (val === MISSING) {
+      hasMissing = true;
+      continue; // don't short-circuit — keep checking for false
+    }
+    if (!val) return false; // false short-circuits
+  }
+  if (hasMissing) return MISSING;
+  return true;
+}
+
+/**
+ * Three-valued OR: or(true, anything) → true (short-circuit)
+ *                  or(false, unknown) → unknown
+ */
+function evalOr(args: unknown[], data: Data): unknown {
+  let hasMissing = false;
+  for (const arg of args) {
+    const val = evaluate(arg, data);
+    if (val === MISSING) {
+      hasMissing = true;
+      continue;
+    }
+    if (val) return true; // true short-circuits
+  }
+  if (hasMissing) return MISSING;
+  return false;
+}
+
+/** in(needle, haystack): array containment or string containment. */
+function evalIn(args: unknown[], data: Data): unknown {
+  const needle = evaluate(args[0], data);
+  const haystack = evaluate(args[1], data);
+  if (needle === MISSING || haystack === MISSING) return MISSING;
+  if (Array.isArray(haystack)) {
+    return haystack.includes(needle);
+  }
+  if (typeof haystack === "string" && typeof needle === "string") {
+    return haystack.includes(needle);
+  }
+  return false;
+}
+
+/** Operator dispatch map. Each handler receives normalized args + data. */
+const OPERATORS = new Map<
+  string,
+  (args: unknown[], data: Data) => unknown
+>([
+  // Logical
+  ["!", evalNot],
+  ["not", evalNot],
+  ["and", evalAnd],
+  ["or", evalOr],
+
+  // Equality (loose, per JsonLogic convention)
+  ["==", (a, d) => evalBinaryOp(a, d, (l, r) => l == r)],
+  ["===", (a, d) => evalBinaryOp(a, d, (l, r) => l == r)],
+  ["!=", (a, d) => evalBinaryOp(a, d, (l, r) => l != r)],
+  ["!==", (a, d) => evalBinaryOp(a, d, (l, r) => l != r)],
+
+  // Comparison
+  [">", (a, d) => evalBinaryOp(a, d, (l, r) => (l as number) > (r as number))],
+  [">=", (a, d) => evalBinaryOp(a, d, (l, r) => (l as number) >= (r as number))],
+  ["<", (a, d) => evalBinaryOp(a, d, (l, r) => (l as number) < (r as number))],
+  ["<=", (a, d) => evalBinaryOp(a, d, (l, r) => (l as number) <= (r as number))],
+
+  // Membership
+  ["in", evalIn],
+]);
+
 // ── Core recursive evaluator ─────────────────────────────────────────
 
 /**
@@ -103,7 +203,7 @@ export function buildFactData(facts: Fact[]): Record<string, unknown> {
  */
 function evaluate(
   expression: unknown,
-  data: Record<string, unknown>,
+  data: Data,
 ): unknown {
   // Primitives pass through
   if (expression === null || expression === undefined) return expression;
@@ -117,128 +217,20 @@ function evaluate(
   const op = keys[0];
   const rawArgs = obj[op];
 
-  // ── var ────────────────────────────────────────────────────────
+  // var and exists receive rawArgs directly (not wrapped in array)
   if (op === "var") {
-    const varName = rawArgs as string;
-    return resolveVar(varName, data);
+    return resolveVar(rawArgs as string, data);
   }
-
-  // ── exists ─────────────────────────────────────────────────────
   if (op === "exists") {
-    const varName = rawArgs as string;
-    const resolved = resolveVar(varName, data);
-    return resolved !== MISSING;
+    return resolveVar(rawArgs as string, data) !== MISSING;
   }
 
-  // Ensure args is an array
+  // All other operators: normalize args to array and dispatch
+  const handler = OPERATORS.get(op);
+  if (!handler) return MISSING;
+
   const args = Array.isArray(rawArgs) ? rawArgs : [rawArgs];
-
-  // ── ! (not) ────────────────────────────────────────────────────
-  if (op === "!" || op === "not") {
-    const val = evaluate(args[0], data);
-    if (val === MISSING) return MISSING;
-    return !val;
-  }
-
-  // ── and ────────────────────────────────────────────────────────
-  // Three-valued: and(false, anything) → false (short-circuit)
-  //               and(true, unknown) → unknown
-  if (op === "and") {
-    let hasMissing = false;
-    for (const arg of args) {
-      const val = evaluate(arg, data);
-      if (val === MISSING) {
-        hasMissing = true;
-        continue; // don't short-circuit — keep checking for false
-      }
-      if (!val) return false; // false short-circuits
-    }
-    if (hasMissing) return MISSING;
-    return true;
-  }
-
-  // ── or ─────────────────────────────────────────────────────────
-  // Three-valued: or(true, anything) → true (short-circuit)
-  //               or(false, unknown) → unknown
-  if (op === "or") {
-    let hasMissing = false;
-    for (const arg of args) {
-      const val = evaluate(arg, data);
-      if (val === MISSING) {
-        hasMissing = true;
-        continue;
-      }
-      if (val) return true; // true short-circuits
-    }
-    if (hasMissing) return MISSING;
-    return false;
-  }
-
-  // ── == ─────────────────────────────────────────────────────────
-  if (op === "==" || op === "===") {
-    const left = evaluate(args[0], data);
-    const right = evaluate(args[1], data);
-    if (left === MISSING || right === MISSING) return MISSING;
-    // Use loose equality for "==" per JsonLogic convention
-    return left == right;
-  }
-
-  // ── != ─────────────────────────────────────────────────────────
-  if (op === "!=" || op === "!==") {
-    const left = evaluate(args[0], data);
-    const right = evaluate(args[1], data);
-    if (left === MISSING || right === MISSING) return MISSING;
-    return left != right;
-  }
-
-  // ── > ──────────────────────────────────────────────────────────
-  if (op === ">") {
-    const left = evaluate(args[0], data);
-    const right = evaluate(args[1], data);
-    if (left === MISSING || right === MISSING) return MISSING;
-    return (left as number) > (right as number);
-  }
-
-  // ── >= ─────────────────────────────────────────────────────────
-  if (op === ">=") {
-    const left = evaluate(args[0], data);
-    const right = evaluate(args[1], data);
-    if (left === MISSING || right === MISSING) return MISSING;
-    return (left as number) >= (right as number);
-  }
-
-  // ── < ──────────────────────────────────────────────────────────
-  if (op === "<") {
-    const left = evaluate(args[0], data);
-    const right = evaluate(args[1], data);
-    if (left === MISSING || right === MISSING) return MISSING;
-    return (left as number) < (right as number);
-  }
-
-  // ── <= ─────────────────────────────────────────────────────────
-  if (op === "<=") {
-    const left = evaluate(args[0], data);
-    const right = evaluate(args[1], data);
-    if (left === MISSING || right === MISSING) return MISSING;
-    return (left as number) <= (right as number);
-  }
-
-  // ── in ─────────────────────────────────────────────────────────
-  if (op === "in") {
-    const needle = evaluate(args[0], data);
-    const haystack = evaluate(args[1], data);
-    if (needle === MISSING || haystack === MISSING) return MISSING;
-    if (Array.isArray(haystack)) {
-      return haystack.includes(needle);
-    }
-    if (typeof haystack === "string" && typeof needle === "string") {
-      return haystack.includes(needle);
-    }
-    return false;
-  }
-
-  // Unknown operator — treat as unknown
-  return MISSING;
+  return handler(args, data);
 }
 
 // ── Find missing vars ────────────────────────────────────────────────
