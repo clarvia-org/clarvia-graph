@@ -1,0 +1,676 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`golden: checklist output snapshots > scenario: lu/core_bereavement 1`] = `
+{
+  "explanation_traces": [
+    {
+      "conditions": [
+        {
+          "condition_ref": "condition.lu.bereavement.death_registration.death_occurred_in_lu",
+          "facts_used": [
+            "death.place.country",
+          ],
+          "result": "true",
+        },
+      ],
+      "id": "trace.checklist_item.f4207d2c20e0.4aa7f7dc45f7",
+      "sources": [],
+      "why_visible": [
+        "Death occurred in Luxembourg: satisfied",
+      ],
+    },
+  ],
+  "graph_commit": null,
+  "graph_version": "0.1.0",
+  "id": "checklist.f4207d2c20e0",
+  "is_cross_border": false,
+  "items": [
+    {
+      "action": {
+        "action_type": "file_declaration",
+        "authority_name": "Civil registrar's office",
+        "authority_ref": "authority.lu.bureau_etat_civil",
+      },
+      "checklist_group": "immediate_formalities",
+      "description": "File the death declaration at the civil registrar of the commune where death occurred and request enough death-certificate extracts/copies for later procedures.
+",
+      "explanation_trace_id": "trace.checklist_item.f4207d2c20e0.4aa7f7dc45f7",
+      "id": "checklist_item.f4207d2c20e0.4aa7f7dc45f7",
+      "jurisdiction_contexts": [
+        "LU",
+      ],
+      "missing_fact_refs": [],
+      "needed_for": [
+        "Declare the death to the commune civil registrar",
+      ],
+      "resolved_subject_id": "person.deceased",
+      "source_summary": {
+        "assertion_count": 0,
+        "top_tier": null,
+      },
+      "status": "applies",
+      "title": "Register the death at the commune and request death-certificate copies",
+      "urgency": {
+        "deadline_label": "Declare death within 24 hours (PT24H)",
+        "label": "urgent",
+        "overdue": null,
+        "score": 100,
+      },
+      "why_maybe": null,
+    },
+  ],
+  "jurisdiction_roles": {
+    "asset_situs": [],
+    "death_place": [
+      "LU",
+    ],
+    "deceased_habitual_residence": [],
+    "possible_pension_authority": [
+      "LU",
+    ],
+    "possible_succession_law": [],
+    "survivor_residence": [],
+    "work_or_insurance_state": [
+      "LU",
+    ],
+  },
+  "life_event": "bereavement",
+  "sections": [
+    {
+      "group": "immediate_formalities",
+      "item_count": 1,
+      "label": "Immediate formalities",
+    },
+  ],
+  "summary": {
+    "item_counts": {
+      "applies": 1,
+      "maybe_applies": 0,
+      "needs_fact": 0,
+      "professional_review": 0,
+    },
+    "source_count": 0,
+  },
+}
+`;
+
+exports[`golden: checklist output snapshots > scenario: lu/core_married_employed_vehicle 1`] = `
+{
+  "explanation_traces": [
+    {
+      "conditions": [
+        {
+          "condition_ref": "condition.lu.bereavement.death_registration.death_occurred_in_lu",
+          "facts_used": [
+            "death.place.country",
+          ],
+          "result": "true",
+        },
+      ],
+      "id": "trace.checklist_item.fa1b787bb2ac.4aa7f7dc45f7",
+      "sources": [],
+      "why_visible": [
+        "Death occurred in Luxembourg: satisfied",
+      ],
+    },
+  ],
+  "graph_commit": null,
+  "graph_version": "0.1.0",
+  "id": "checklist.fa1b787bb2ac",
+  "is_cross_border": false,
+  "items": [
+    {
+      "action": {
+        "action_type": "file_declaration",
+        "authority_name": "Civil registrar's office",
+        "authority_ref": "authority.lu.bureau_etat_civil",
+      },
+      "checklist_group": "immediate_formalities",
+      "description": "File the death declaration at the civil registrar of the commune where death occurred and request enough death-certificate extracts/copies for later procedures.
+",
+      "explanation_trace_id": "trace.checklist_item.fa1b787bb2ac.4aa7f7dc45f7",
+      "id": "checklist_item.fa1b787bb2ac.4aa7f7dc45f7",
+      "jurisdiction_contexts": [
+        "LU",
+      ],
+      "missing_fact_refs": [],
+      "needed_for": [
+        "Declare the death to the commune civil registrar",
+      ],
+      "resolved_subject_id": "person.deceased",
+      "source_summary": {
+        "assertion_count": 0,
+        "top_tier": null,
+      },
+      "status": "applies",
+      "title": "Register the death at the commune and request death-certificate copies",
+      "urgency": {
+        "deadline_label": "Declare death within 24 hours (PT24H)",
+        "label": "urgent",
+        "overdue": null,
+        "score": 100,
+      },
+      "why_maybe": null,
+    },
+  ],
+  "jurisdiction_roles": {
+    "asset_situs": [
+      "LU",
+    ],
+    "death_place": [
+      "LU",
+    ],
+    "deceased_habitual_residence": [
+      "LU",
+    ],
+    "possible_pension_authority": [
+      "LU",
+    ],
+    "possible_succession_law": [
+      "LU",
+    ],
+    "survivor_residence": [],
+    "work_or_insurance_state": [
+      "LU",
+    ],
+  },
+  "life_event": "bereavement",
+  "sections": [
+    {
+      "group": "immediate_formalities",
+      "item_count": 1,
+      "label": "Immediate formalities",
+    },
+  ],
+  "summary": {
+    "item_counts": {
+      "applies": 1,
+      "maybe_applies": 0,
+      "needs_fact": 0,
+      "professional_review": 0,
+    },
+    "source_count": 0,
+  },
+}
+`;
+
+exports[`golden: checklist output snapshots > scenario: lu/minimal_unknown 1`] = `
+{
+  "explanation_traces": [
+    {
+      "conditions": [
+        {
+          "condition_ref": "condition.lu.bereavement.death_registration.death_occurred_in_lu",
+          "facts_used": [
+            "death.place.country",
+          ],
+          "result": "true",
+        },
+      ],
+      "id": "trace.checklist_item.42651bca300f.4aa7f7dc45f7",
+      "sources": [],
+      "why_visible": [
+        "Death occurred in Luxembourg: satisfied",
+      ],
+    },
+  ],
+  "graph_commit": null,
+  "graph_version": "0.1.0",
+  "id": "checklist.42651bca300f",
+  "is_cross_border": false,
+  "items": [
+    {
+      "action": {
+        "action_type": "file_declaration",
+        "authority_name": "Civil registrar's office",
+        "authority_ref": "authority.lu.bureau_etat_civil",
+      },
+      "checklist_group": "immediate_formalities",
+      "description": "File the death declaration at the civil registrar of the commune where death occurred and request enough death-certificate extracts/copies for later procedures.
+",
+      "explanation_trace_id": "trace.checklist_item.42651bca300f.4aa7f7dc45f7",
+      "id": "checklist_item.42651bca300f.4aa7f7dc45f7",
+      "jurisdiction_contexts": [
+        "LU",
+      ],
+      "missing_fact_refs": [],
+      "needed_for": [
+        "Declare the death to the commune civil registrar",
+      ],
+      "resolved_subject_id": "person.deceased",
+      "source_summary": {
+        "assertion_count": 0,
+        "top_tier": null,
+      },
+      "status": "applies",
+      "title": "Register the death at the commune and request death-certificate copies",
+      "urgency": {
+        "deadline_label": "Declare death within 24 hours (PT24H)",
+        "label": "urgent",
+        "overdue": null,
+        "score": 100,
+      },
+      "why_maybe": null,
+    },
+  ],
+  "jurisdiction_roles": {
+    "asset_situs": [],
+    "death_place": [
+      "LU",
+    ],
+    "deceased_habitual_residence": [],
+    "possible_pension_authority": [],
+    "possible_succession_law": [],
+    "survivor_residence": [],
+    "work_or_insurance_state": [],
+  },
+  "life_event": "bereavement",
+  "sections": [
+    {
+      "group": "immediate_formalities",
+      "item_count": 1,
+      "label": "Immediate formalities",
+    },
+  ],
+  "summary": {
+    "item_counts": {
+      "applies": 1,
+      "maybe_applies": 0,
+      "needs_fact": 0,
+      "professional_review": 0,
+    },
+    "source_count": 0,
+  },
+}
+`;
+
+exports[`golden: checklist output snapshots > scenario: lu/self_employed_property 1`] = `
+{
+  "explanation_traces": [
+    {
+      "conditions": [
+        {
+          "condition_ref": "condition.lu.bereavement.death_registration.death_occurred_in_lu",
+          "facts_used": [
+            "death.place.country",
+          ],
+          "result": "true",
+        },
+      ],
+      "id": "trace.checklist_item.f987a0e5aac0.4aa7f7dc45f7",
+      "sources": [],
+      "why_visible": [
+        "Death occurred in Luxembourg: satisfied",
+      ],
+    },
+  ],
+  "graph_commit": null,
+  "graph_version": "0.1.0",
+  "id": "checklist.f987a0e5aac0",
+  "is_cross_border": false,
+  "items": [
+    {
+      "action": {
+        "action_type": "file_declaration",
+        "authority_name": "Civil registrar's office",
+        "authority_ref": "authority.lu.bureau_etat_civil",
+      },
+      "checklist_group": "immediate_formalities",
+      "description": "File the death declaration at the civil registrar of the commune where death occurred and request enough death-certificate extracts/copies for later procedures.
+",
+      "explanation_trace_id": "trace.checklist_item.f987a0e5aac0.4aa7f7dc45f7",
+      "id": "checklist_item.f987a0e5aac0.4aa7f7dc45f7",
+      "jurisdiction_contexts": [
+        "LU",
+      ],
+      "missing_fact_refs": [],
+      "needed_for": [
+        "Declare the death to the commune civil registrar",
+      ],
+      "resolved_subject_id": "person.deceased",
+      "source_summary": {
+        "assertion_count": 0,
+        "top_tier": null,
+      },
+      "status": "applies",
+      "title": "Register the death at the commune and request death-certificate copies",
+      "urgency": {
+        "deadline_label": "Declare death within 24 hours (PT24H)",
+        "label": "urgent",
+        "overdue": null,
+        "score": 100,
+      },
+      "why_maybe": null,
+    },
+  ],
+  "jurisdiction_roles": {
+    "asset_situs": [
+      "LU",
+    ],
+    "death_place": [
+      "LU",
+    ],
+    "deceased_habitual_residence": [
+      "LU",
+    ],
+    "possible_pension_authority": [
+      "LU",
+    ],
+    "possible_succession_law": [
+      "LU",
+    ],
+    "survivor_residence": [],
+    "work_or_insurance_state": [
+      "LU",
+    ],
+  },
+  "life_event": "bereavement",
+  "sections": [
+    {
+      "group": "immediate_formalities",
+      "item_count": 1,
+      "label": "Immediate formalities",
+    },
+  ],
+  "summary": {
+    "item_counts": {
+      "applies": 1,
+      "maybe_applies": 0,
+      "needs_fact": 0,
+      "professional_review": 0,
+    },
+    "source_count": 0,
+  },
+}
+`;
+
+exports[`golden: checklist output snapshots > scenario: lu/self_employed_property_not_married 1`] = `
+{
+  "explanation_traces": [
+    {
+      "conditions": [
+        {
+          "condition_ref": "condition.lu.bereavement.death_registration.death_occurred_in_lu",
+          "facts_used": [
+            "death.place.country",
+          ],
+          "result": "true",
+        },
+      ],
+      "id": "trace.checklist_item.f987a0e5aac0.4aa7f7dc45f7",
+      "sources": [],
+      "why_visible": [
+        "Death occurred in Luxembourg: satisfied",
+      ],
+    },
+  ],
+  "graph_commit": null,
+  "graph_version": "0.1.0",
+  "id": "checklist.f987a0e5aac0",
+  "is_cross_border": false,
+  "items": [
+    {
+      "action": {
+        "action_type": "file_declaration",
+        "authority_name": "Civil registrar's office",
+        "authority_ref": "authority.lu.bureau_etat_civil",
+      },
+      "checklist_group": "immediate_formalities",
+      "description": "File the death declaration at the civil registrar of the commune where death occurred and request enough death-certificate extracts/copies for later procedures.
+",
+      "explanation_trace_id": "trace.checklist_item.f987a0e5aac0.4aa7f7dc45f7",
+      "id": "checklist_item.f987a0e5aac0.4aa7f7dc45f7",
+      "jurisdiction_contexts": [
+        "LU",
+      ],
+      "missing_fact_refs": [],
+      "needed_for": [
+        "Declare the death to the commune civil registrar",
+      ],
+      "resolved_subject_id": "person.deceased",
+      "source_summary": {
+        "assertion_count": 0,
+        "top_tier": null,
+      },
+      "status": "applies",
+      "title": "Register the death at the commune and request death-certificate copies",
+      "urgency": {
+        "deadline_label": "Declare death within 24 hours (PT24H)",
+        "label": "urgent",
+        "overdue": null,
+        "score": 100,
+      },
+      "why_maybe": null,
+    },
+  ],
+  "jurisdiction_roles": {
+    "asset_situs": [
+      "LU",
+    ],
+    "death_place": [
+      "LU",
+    ],
+    "deceased_habitual_residence": [
+      "LU",
+    ],
+    "possible_pension_authority": [
+      "LU",
+    ],
+    "possible_succession_law": [
+      "LU",
+    ],
+    "survivor_residence": [],
+    "work_or_insurance_state": [
+      "LU",
+    ],
+  },
+  "life_event": "bereavement",
+  "sections": [
+    {
+      "group": "immediate_formalities",
+      "item_count": 1,
+      "label": "Immediate formalities",
+    },
+  ],
+  "summary": {
+    "item_counts": {
+      "applies": 1,
+      "maybe_applies": 0,
+      "needs_fact": 0,
+      "professional_review": 0,
+    },
+    "source_count": 0,
+  },
+}
+`;
+
+exports[`golden: checklist output snapshots > scenario: xborder/lu_resident_de_death 1`] = `
+{
+  "explanation_traces": [],
+  "graph_commit": null,
+  "graph_version": "0.1.0",
+  "id": "checklist.6d051935e6ac",
+  "is_cross_border": true,
+  "items": [],
+  "jurisdiction_roles": {
+    "asset_situs": [
+      "FR",
+    ],
+    "death_place": [
+      "DE",
+    ],
+    "deceased_habitual_residence": [
+      "LU",
+    ],
+    "possible_pension_authority": [
+      "DE",
+    ],
+    "possible_succession_law": [
+      "LU",
+    ],
+    "survivor_residence": [],
+    "work_or_insurance_state": [
+      "DE",
+    ],
+  },
+  "life_event": "bereavement",
+  "sections": [],
+  "summary": {
+    "item_counts": {
+      "applies": 0,
+      "maybe_applies": 0,
+      "needs_fact": 0,
+      "professional_review": 0,
+    },
+    "source_count": 0,
+  },
+}
+`;
+
+exports[`golden: explanation trace shape and ordering > condition result=true → why_visible format 1`] = `
+{
+  "conditions": [
+    {
+      "condition_ref": "condition.death_in_lu",
+      "facts_used": [
+        "death.place.country",
+      ],
+      "result": "true",
+    },
+  ],
+  "id": "trace.1",
+  "sources": [
+    {
+      "assertion_refs": [
+        "assertion.a1",
+        "assertion.a2",
+      ],
+      "official_url": "https://guichet.lu",
+      "publisher": "État du Luxembourg",
+      "source_title": "Government of Luxembourg",
+    },
+  ],
+  "why_visible": [
+    "Death occurred in Luxembourg: satisfied",
+  ],
+}
+`;
+
+exports[`golden: explanation trace shape and ordering > condition result=unknown → why_visible format 1`] = `
+{
+  "conditions": [
+    {
+      "condition_ref": "condition.is_spouse",
+      "facts_used": [
+        "relationship.to_deceased (missing)",
+      ],
+      "result": "unknown",
+    },
+  ],
+  "id": "trace.2",
+  "sources": [
+    {
+      "assertion_refs": [
+        "assertion.a1",
+        "assertion.a2",
+      ],
+      "official_url": "https://guichet.lu",
+      "publisher": "État du Luxembourg",
+      "source_title": "Government of Luxembourg",
+    },
+  ],
+  "why_visible": [
+    "Survivor is spouse: uncertain — missing facts",
+  ],
+}
+`;
+
+exports[`golden: explanation trace shape and ordering > multiple conditions preserve order 1`] = `
+{
+  "conditions": [
+    {
+      "condition_ref": "condition.death_in_lu",
+      "facts_used": [
+        "death.place.country",
+      ],
+      "result": "true",
+    },
+    {
+      "condition_ref": "condition.is_spouse",
+      "facts_used": [
+        "relationship.to_deceased",
+      ],
+      "result": "true",
+    },
+  ],
+  "id": "trace.10",
+  "sources": [
+    {
+      "assertion_refs": [
+        "assertion.a1",
+        "assertion.a2",
+      ],
+      "official_url": "https://guichet.lu",
+      "publisher": "État du Luxembourg",
+      "source_title": "Government of Luxembourg",
+    },
+  ],
+  "why_visible": [
+    "Death occurred in Luxembourg: satisfied",
+    "Survivor is spouse: satisfied",
+  ],
+}
+`;
+
+exports[`golden: explanation trace shape and ordering > source traces grouped by source_id, ordering preserved 1`] = `
+[
+  {
+    "assertion_refs": [
+      "assertion.a1",
+      "assertion.a2",
+    ],
+    "official_url": "https://guichet.lu",
+    "publisher": "État du Luxembourg",
+    "source_title": "Government of Luxembourg",
+  },
+]
+`;
+
+exports[`golden: explanation trace shape and ordering > temporal filtering excludes expired assertions from source traces 1`] = `
+[
+  {
+    "assertion_refs": [
+      "assertion.a2",
+    ],
+    "official_url": "https://guichet.lu",
+    "publisher": "État du Luxembourg",
+    "source_title": "Government of Luxembourg",
+  },
+]
+`;
+
+exports[`golden: jurisdiction role fallbacks > full role resolution snapshot 1`] = `
+{
+  "asset_situs": [
+    "FR",
+  ],
+  "death_place": [
+    "DE",
+  ],
+  "deceased_habitual_residence": [
+    "LU",
+  ],
+  "possible_pension_authority": [
+    "DE",
+  ],
+  "possible_succession_law": [
+    "LU",
+  ],
+  "survivor_residence": [
+    "LU",
+  ],
+  "work_or_insurance_state": [
+    "DE",
+  ],
+}
+`;
