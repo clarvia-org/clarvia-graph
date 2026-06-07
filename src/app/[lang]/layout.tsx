@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { LANGUAGES, type Lang, COUNTRIES, l } from "@/lib/i18n";
+import { LANGUAGES, type Lang } from "@/lib/i18n";
 
 const BASE_URL = "https://clarvia.org";
 
