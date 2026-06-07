@@ -10,6 +10,32 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-06-07",
+    headline: {
+      en: "FSFE REUSE compliance achieved",
+      fr: "Conformite a la specification REUSE de la FSFE",
+      de: "FSFE REUSE-Konformitaet erreicht",
+    },
+    body: {
+      en: "Clarvia Graph is now fully compliant with the FSFE REUSE specification (version 3.3) - every file in the repository carries machine-readable SPDX copyright and license information. REUSE is the licensing standard explicitly recommended by the European Commission for publicly funded open source projects. A CI workflow enforces compliance on every pull request. The REUSE badge is now displayed on the clarvia-graph README and the Clarvia organisation profile.",
+      fr: "Clarvia Graph est desormais entierement conforme a la specification REUSE de la FSFE (version 3.3) - chaque fichier du depot contient des informations de copyright et de licence lisibles par machine au format SPDX. REUSE est la norme de licence explicitement recommandee par la Commission europeenne pour les projets open source finances par des fonds publics. Un workflow CI garantit la conformite a chaque pull request. Le badge REUSE est desormais affiche dans le README de clarvia-graph et dans le profil de l'organisation Clarvia.",
+      de: "Clarvia Graph ist jetzt vollstaendig konform mit der FSFE REUSE-Spezifikation (Version 3.3) - jede Datei im Repository enthaelt maschinenlesbare SPDX-Copyright- und Lizenzinformationen. REUSE ist der Lizenzstandard, der von der Europaeischen Kommission ausdruecklich fuer oeffentlich finanzierte Open-Source-Projekte empfohlen wird. Ein CI-Workflow stellt die Konformitaet bei jedem Pull Request sicher. Das REUSE-Badge wird jetzt im README von clarvia-graph und im Profil der Organisation Clarvia angezeigt.",
+    },
+  },
+  {
+    date: "2026-06-07",
+    headline: {
+      en: "OpenSSF Scorecard enabled for automated security scoring",
+      fr: "OpenSSF Scorecard active pour l'evaluation automatisee de la securite",
+      de: "OpenSSF Scorecard fuer automatisierte Sicherheitsbewertung aktiviert",
+    },
+    body: {
+      en: "Clarvia Graph now runs the OpenSSF Scorecard - an automated tool from the Open Source Security Foundation that evaluates security best practices including branch protection, CI/CD configuration, dependency management, and vulnerability disclosure. Results are published weekly to the OpenSSF API and integrated into GitHub code scanning. The Scorecard badge is now displayed on the clarvia-graph README and the Clarvia organisation profile.",
+      fr: "Clarvia Graph utilise desormais l'OpenSSF Scorecard - un outil automatise de l'Open Source Security Foundation qui evalue les bonnes pratiques de securite, notamment la protection des branches, la configuration CI/CD, la gestion des dependances et la divulgation des vulnerabilites. Les resultats sont publies chaque semaine sur l'API OpenSSF et integres dans l'analyse de code GitHub. Le badge Scorecard est desormais affiche dans le README de clarvia-graph et dans le profil de l'organisation Clarvia.",
+      de: "Clarvia Graph nutzt jetzt die OpenSSF Scorecard - ein automatisiertes Tool der Open Source Security Foundation, das Sicherheitspraktiken wie Branch-Schutz, CI/CD-Konfiguration, Abhaengigkeitsverwaltung und Offenlegung von Schwachstellen bewertet. Die Ergebnisse werden woechentlich an die OpenSSF-API veroeffentlicht und in das GitHub-Code-Scanning integriert. Das Scorecard-Badge wird jetzt im README von clarvia-graph und im Profil der Organisation Clarvia angezeigt.",
+    },
+  },
+  {
     date: "2026-06-06",
     headline: {
       en: "FAIR software compliance",
