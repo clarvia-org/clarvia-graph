@@ -79,6 +79,32 @@ export default function FooterSection({ lang }: { lang: Lang }) {
           </div>
           <div className="flex flex-wrap items-center gap-3 md:justify-end">
             <a 
+              href="https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml/badge.svg" 
+                alt="CI (graph)" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
+              href="https://github.com/clarvia-org/workflow-web/actions/workflows/validate.yml" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://github.com/clarvia-org/workflow-web/actions/workflows/validate.yml/badge.svg" 
+                alt="CI (web)" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
               href="https://www.bestpractices.dev/en/projects/13112/passing" 
               target="_blank" 
               rel="noopener noreferrer" 
