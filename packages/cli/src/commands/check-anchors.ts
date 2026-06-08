@@ -59,23 +59,35 @@ export interface CheckAnchorsOptions {
   rootDir: string;
 }
 
-// ── exported runner (tested in isolation) ────────────────────────────
+// ── internal types ───────────────────────────────────────────────────
 
-export async function runCheckAnchors(
-  opts: CheckAnchorsOptions,
-): Promise<{ results: AnchorResult[]; errors: number }> {
-  const { rootDir } = opts;
+interface SnapshotRecord {
+  id: string;
+  archive_uri: string;
+}
 
-  // ── 1. Load snapshot records (NOT from html/) ──────────────────────
+interface AssertionBatch {
+  source_id?: string;
+  source_snapshot_id?: string;
+  assertions?: Array<{
+    id: string;
+    source_snapshot_id?: string;
+    anchor?: {
+      selector_type?: string;
+      text_quote?: string;
+    };
+    [key: string]: unknown;
+  }>;
+}
+
+// ── extracted helpers ────────────────────────────────────────────────
+
+/** Glob + parse snapshot YAML files into a Map keyed by snapshot id. */
+function loadSnapshotRecords(rootDir: string): Map<string, SnapshotRecord> {
   const snapshotFiles = globSync("sources/snapshots/*.{yml,yaml}", {
     cwd: rootDir,
     absolute: true,
   });
-
-  interface SnapshotRecord {
-    id: string;
-    archive_uri: string;
-  }
 
   const snapshots = new Map<string, SnapshotRecord>();
   for (const file of snapshotFiles) {
@@ -89,26 +101,103 @@ export async function runCheckAnchors(
       // Skip unparseable files
     }
   }
+  return snapshots;
+}
+
+/**
+ * Check a single assertion's anchor against its snapshot HTML.
+ * Returns null if the assertion has no text_quote (caller should skip).
+ * Returns an AnchorResult otherwise, and sets `result.found` accordingly.
+ *
+ * When an HTML file is loaded and stripped, it is cached in `htmlCache`
+ * for subsequent lookups.
+ */
+function checkAssertionAnchor(
+  assertion: NonNullable<AssertionBatch["assertions"]>[number],
+  batch: AssertionBatch,
+  snapshots: Map<string, SnapshotRecord>,
+  htmlCache: Map<string, string>,
+  rootDir: string,
+  relPath: string,
+): AnchorResult | null {
+  if (!assertion.anchor?.text_quote) return null;
+
+  const textQuote = assertion.anchor.text_quote;
+  const snapshotId =
+    assertion.source_snapshot_id ?? batch.source_snapshot_id;
+
+  if (!snapshotId) {
+    return {
+      assertionId: assertion.id,
+      file: relPath,
+      textQuote,
+      snapshotId: "(missing)",
+      found: false,
+      error: "No source_snapshot_id found",
+    };
+  }
+
+  const snapshot = snapshots.get(snapshotId);
+  if (!snapshot) {
+    return {
+      assertionId: assertion.id,
+      file: relPath,
+      textQuote,
+      snapshotId,
+      found: false,
+      error: `Snapshot record not found: ${snapshotId}`,
+    };
+  }
+
+  // Get plain text from HTML
+  let plainText = htmlCache.get(snapshotId);
+  if (plainText === undefined) {
+    const htmlPath = resolve(rootDir, snapshot.archive_uri);
+    try {
+      const html = readFileSync(htmlPath, "utf-8");
+      plainText = stripHtmlTags(html);
+      htmlCache.set(snapshotId, plainText);
+    } catch {
+      return {
+        assertionId: assertion.id,
+        file: relPath,
+        textQuote,
+        snapshotId,
+        found: false,
+        error: `Cannot read HTML: ${snapshot.archive_uri}`,
+      };
+    }
+  }
+
+  // Case-insensitive check
+  const found = plainText
+    .toLowerCase()
+    .includes(textQuote.toLowerCase());
+
+  return {
+    assertionId: assertion.id,
+    file: relPath,
+    textQuote,
+    snapshotId,
+    found,
+  };
+}
+
+// ── exported runner (tested in isolation) ────────────────────────────
+
+export async function runCheckAnchors(
+  opts: CheckAnchorsOptions,
+): Promise<{ results: AnchorResult[]; errors: number }> {
+  const { rootDir } = opts;
+
+  // ── 1. Load snapshot records (NOT from html/) ──────────────────────
+  const snapshots = loadSnapshotRecords(rootDir);
 
   // ── 2. Load assertion batch files ──────────────────────────────────
   const assertionFiles = globSync("sources/assertions/**/*.{yml,yaml}", {
     cwd: rootDir,
     absolute: true,
   });
-
-  interface AssertionBatch {
-    source_id?: string;
-    source_snapshot_id?: string;
-    assertions?: Array<{
-      id: string;
-      source_snapshot_id?: string;
-      anchor?: {
-        selector_type?: string;
-        text_quote?: string;
-      };
-      [key: string]: unknown;
-    }>;
-  }
 
   const results: AnchorResult[] = [];
   let errors = 0;
@@ -129,77 +218,18 @@ export async function runCheckAnchors(
     if (!batch?.assertions || !Array.isArray(batch.assertions)) continue;
 
     for (const assertion of batch.assertions) {
-      if (!assertion.anchor?.text_quote) continue;
+      const result = checkAssertionAnchor(
+        assertion,
+        batch,
+        snapshots,
+        htmlCache,
+        rootDir,
+        relPath,
+      );
+      if (!result) continue;
 
-      const textQuote = assertion.anchor.text_quote;
-      const snapshotId =
-        assertion.source_snapshot_id ?? batch.source_snapshot_id;
-
-      if (!snapshotId) {
-        results.push({
-          assertionId: assertion.id,
-          file: relPath,
-          textQuote,
-          snapshotId: "(missing)",
-          found: false,
-          error: "No source_snapshot_id found",
-        });
-        errors++;
-        continue;
-      }
-
-      const snapshot = snapshots.get(snapshotId);
-      if (!snapshot) {
-        results.push({
-          assertionId: assertion.id,
-          file: relPath,
-          textQuote,
-          snapshotId,
-          found: false,
-          error: `Snapshot record not found: ${snapshotId}`,
-        });
-        errors++;
-        continue;
-      }
-
-      // Get plain text from HTML
-      let plainText = htmlCache.get(snapshotId);
-      if (plainText === undefined) {
-        const htmlPath = resolve(rootDir, snapshot.archive_uri);
-        try {
-          const html = readFileSync(htmlPath, "utf-8");
-          plainText = stripHtmlTags(html);
-          htmlCache.set(snapshotId, plainText);
-        } catch {
-          results.push({
-            assertionId: assertion.id,
-            file: relPath,
-            textQuote,
-            snapshotId,
-            found: false,
-            error: `Cannot read HTML: ${snapshot.archive_uri}`,
-          });
-          errors++;
-          continue;
-        }
-      }
-
-      // Case-insensitive check
-      const found = plainText
-        .toLowerCase()
-        .includes(textQuote.toLowerCase());
-
-      results.push({
-        assertionId: assertion.id,
-        file: relPath,
-        textQuote,
-        snapshotId,
-        found,
-      });
-
-      if (!found) {
-        errors++;
-      }
+      results.push(result);
+      if (!result.found) errors++;
     }
   }
 

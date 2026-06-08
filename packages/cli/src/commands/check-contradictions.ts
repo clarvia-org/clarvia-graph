@@ -36,31 +36,32 @@ export interface CheckContradictionsOptions {
   rootDir: string;
 }
 
-// ── exported runner (tested in isolation) ────────────────────────────
+// ── internal types ───────────────────────────────────────────────────
 
-export async function runCheckContradictions(
-  opts: CheckContradictionsOptions,
-): Promise<{ contradictions: Contradiction[]; reportPath: string }> {
-  const { rootDir } = opts;
+interface LoadedAssertion {
+  id: string;
+  claim_type?: string;
+  claim_text?: string;
+  claim_scope?: {
+    jurisdiction?: string;
+    life_event?: string;
+    domain?: string;
+  };
+  extracted_value?: unknown;
+  [key: string]: unknown;
+}
 
-  // ── 1. Load assertion batch files ──────────────────────────────────
+// ── helpers ──────────────────────────────────────────────────────────
+
+/**
+ * Glob + parse all assertion batch files under sources/assertions/.
+ * Skips unparseable files and assertions without an id.
+ */
+function loadAllAssertions(rootDir: string): LoadedAssertion[] {
   const assertionFiles = globSync("sources/assertions/**/*.{yml,yaml}", {
     cwd: rootDir,
     absolute: true,
   });
-
-  interface LoadedAssertion {
-    id: string;
-    claim_type?: string;
-    claim_text?: string;
-    claim_scope?: {
-      jurisdiction?: string;
-      life_event?: string;
-      domain?: string;
-    };
-    extracted_value?: unknown;
-    [key: string]: unknown;
-  }
 
   const allAssertions: LoadedAssertion[] = [];
 
@@ -82,10 +83,19 @@ export async function runCheckContradictions(
     }
   }
 
-  // ── 2. Group by claim_scope key ────────────────────────────────────
+  return allAssertions;
+}
+
+/**
+ * Group assertions by their claim_scope key: {jurisdiction}.{life_event}.{domain}.
+ * Assertions without a complete claim_scope are skipped.
+ */
+function groupByScopeKey(
+  assertions: LoadedAssertion[],
+): Map<string, LoadedAssertion[]> {
   const scopeGroups = new Map<string, LoadedAssertion[]>();
 
-  for (const ass of allAssertions) {
+  for (const ass of assertions) {
     if (!ass.claim_scope) continue;
     const { jurisdiction, life_event, domain } = ass.claim_scope;
     if (!jurisdiction || !life_event || !domain) continue;
@@ -99,55 +109,86 @@ export async function runCheckContradictions(
     group.push(ass);
   }
 
-  // ── 3. Check for direct_value_conflict ─────────────────────────────
+  return scopeGroups;
+}
+
+/**
+ * Within a scope group, sub-group by claim_type and detect value conflicts.
+ * Returns a Contradiction for each claim_type that has multiple distinct
+ * extracted_value values.
+ */
+function findValueConflicts(
+  scopeKey: string,
+  group: LoadedAssertion[],
+): Contradiction[] {
   const contradictions: Contradiction[] = [];
 
+  // Sub-group by claim_type
+  const byClaimType = new Map<string, LoadedAssertion[]>();
+  for (const ass of group) {
+    if (!ass.claim_type) continue;
+    let sub = byClaimType.get(ass.claim_type);
+    if (!sub) {
+      sub = [];
+      byClaimType.set(ass.claim_type, sub);
+    }
+    sub.push(ass);
+  }
+
+  for (const [claimType, sameType] of byClaimType) {
+    // Only check assertions that have extracted_value
+    const withValue = sameType.filter(
+      (a) => a.extracted_value !== undefined && a.extracted_value !== null,
+    );
+    if (withValue.length < 2) continue;
+
+    // Compare extracted_value — use JSON.stringify for deep comparison
+    const uniqueValues = new Map<string, LoadedAssertion[]>();
+    for (const a of withValue) {
+      const key = JSON.stringify(a.extracted_value);
+      let list = uniqueValues.get(key);
+      if (!list) {
+        list = [];
+        uniqueValues.set(key, list);
+      }
+      list.push(a);
+    }
+
+    if (uniqueValues.size > 1) {
+      contradictions.push({
+        type: "direct_value_conflict",
+        scope_key: scopeKey,
+        claim_type: claimType,
+        assertions: withValue.map((a) => ({
+          id: a.id,
+          extracted_value: a.extracted_value,
+          claim_text: a.claim_text ?? "",
+        })),
+        resolved: false,
+      });
+    }
+  }
+
+  return contradictions;
+}
+
+// ── exported runner (tested in isolation) ────────────────────────────
+
+export async function runCheckContradictions(
+  opts: CheckContradictionsOptions,
+): Promise<{ contradictions: Contradiction[]; reportPath: string }> {
+  const { rootDir } = opts;
+
+  // ── 1. Load assertion batch files ──────────────────────────────────
+  const allAssertions = loadAllAssertions(rootDir);
+
+  // ── 2. Group by claim_scope key ────────────────────────────────────
+  const scopeGroups = groupByScopeKey(allAssertions);
+
+  // ── 3. Check for direct_value_conflict ─────────────────────────────
+  const contradictions: Contradiction[] = [];
   for (const [scopeKey, group] of scopeGroups) {
-    // Sub-group by claim_type
-    const byClaimType = new Map<string, LoadedAssertion[]>();
-    for (const ass of group) {
-      if (!ass.claim_type) continue;
-      let sub = byClaimType.get(ass.claim_type);
-      if (!sub) {
-        sub = [];
-        byClaimType.set(ass.claim_type, sub);
-      }
-      sub.push(ass);
-    }
-
-    for (const [claimType, sameType] of byClaimType) {
-      // Only check assertions that have extracted_value
-      const withValue = sameType.filter(
-        (a) => a.extracted_value !== undefined && a.extracted_value !== null,
-      );
-      if (withValue.length < 2) continue;
-
-      // Compare extracted_value — use JSON.stringify for deep comparison
-      const uniqueValues = new Map<string, LoadedAssertion[]>();
-      for (const a of withValue) {
-        const key = JSON.stringify(a.extracted_value);
-        let list = uniqueValues.get(key);
-        if (!list) {
-          list = [];
-          uniqueValues.set(key, list);
-        }
-        list.push(a);
-      }
-
-      if (uniqueValues.size > 1) {
-        contradictions.push({
-          type: "direct_value_conflict",
-          scope_key: scopeKey,
-          claim_type: claimType,
-          assertions: withValue.map((a) => ({
-            id: a.id,
-            extracted_value: a.extracted_value,
-            claim_text: a.claim_text ?? "",
-          })),
-          resolved: false,
-        });
-      }
-    }
+    contradictions.push(...findValueConflicts(scopeKey, group));
   }
 
   // ── 4. Write report ────────────────────────────────────────────────

@@ -40,24 +40,36 @@ export interface CheckPublicationGateOptions {
   rootDir: string;
 }
 
-// ── exported runner (tested in isolation) ────────────────────────────
+// ── module-level interfaces ──────────────────────────────────────────
 
-export async function runCheckPublicationGate(
-  opts: CheckPublicationGateOptions,
-): Promise<{ violations: GateViolation[] }> {
-  const { rootDir } = opts;
+interface LoadedAssertion {
+  id: string;
+  review_status?: string;
+  anchor?: { selector_type?: string; text_quote?: string };
+  source_id?: string;
+  source_snapshot_id?: string;
+  confidence?: unknown;
+  [key: string]: unknown;
+}
 
-  // ── 1. Load assertions (with batch-level inheritance) ──────────────
-  interface LoadedAssertion {
-    id: string;
-    review_status?: string;
-    anchor?: { selector_type?: string; text_quote?: string };
-    source_id?: string;
-    source_snapshot_id?: string;
-    confidence?: unknown;
-    [key: string]: unknown;
-  }
+interface GateRecord {
+  id: string;
+  authoring_status?: string;
+  distribution_status?: string;
+  source_assertion_refs?: string[];
+  [key: string]: unknown;
+}
 
+interface GateFileEntry {
+  relPath: string;
+  record: GateRecord;
+}
+
+// ── extracted helpers ────────────────────────────────────────────────
+
+function loadAssertionsWithInheritance(
+  rootDir: string,
+): Map<string, LoadedAssertion> {
   const assertions = new Map<string, LoadedAssertion>();
   const assertionFiles = globSync("sources/assertions/**/*.{yml,yaml}", {
     cwd: rootDir,
@@ -89,20 +101,10 @@ export async function runCheckPublicationGate(
     }
   }
 
-  // ── 2. Load consequences and task_templates ────────────────────────
-  interface GateRecord {
-    id: string;
-    authoring_status?: string;
-    distribution_status?: string;
-    source_assertion_refs?: string[];
-    [key: string]: unknown;
-  }
+  return assertions;
+}
 
-  interface GateFileEntry {
-    relPath: string;
-    record: GateRecord;
-  }
-
+function loadGateRecords(rootDir: string): GateFileEntry[] {
   const gateRecords: GateFileEntry[] = [];
 
   const patterns = [
@@ -131,13 +133,100 @@ export async function runCheckPublicationGate(
     }
   }
 
-  // ── 3. Check publication gate rules ────────────────────────────────
+  return gateRecords;
+}
+
+function checkAssertionRefs(
+  record: GateRecord,
+  assertions: Map<string, LoadedAssertion>,
+  relPath: string,
+): GateViolation[] {
+  const violations: GateViolation[] = [];
+  const refs = record.source_assertion_refs;
+
+  if (!Array.isArray(refs)) {
+    return violations;
+  }
+
+  for (const ref of refs) {
+    const ass = assertions.get(ref);
+    if (!ass) {
+      violations.push({
+        recordId: record.id,
+        file: relPath,
+        rule: "assertion_exists",
+        detail: `Referenced assertion not found: ${ref}`,
+      });
+      continue;
+    }
+
+    // review_status === 'approved'
+    if (ass.review_status !== "approved") {
+      violations.push({
+        recordId: record.id,
+        file: relPath,
+        rule: "assertion_review_status",
+        detail: `${ref}: review_status is '${ass.review_status ?? "(missing)"}', expected 'approved'`,
+      });
+    }
+
+    // anchor present
+    if (!ass.anchor) {
+      violations.push({
+        recordId: record.id,
+        file: relPath,
+        rule: "assertion_anchor",
+        detail: `${ref}: anchor is missing`,
+      });
+    }
+
+    // source_id present
+    if (!ass.source_id) {
+      violations.push({
+        recordId: record.id,
+        file: relPath,
+        rule: "assertion_source_id",
+        detail: `${ref}: source_id is missing`,
+      });
+    }
+
+    // source_snapshot_id present
+    if (!ass.source_snapshot_id) {
+      violations.push({
+        recordId: record.id,
+        file: relPath,
+        rule: "assertion_source_snapshot_id",
+        detail: `${ref}: source_snapshot_id is missing`,
+      });
+    }
+
+    // confidence not null/undefined
+    if (ass.confidence == null) {
+      violations.push({
+        recordId: record.id,
+        file: relPath,
+        rule: "assertion_confidence",
+        detail: `${ref}: confidence is null or missing`,
+      });
+    }
+  }
+
+  return violations;
+}
+
+// ── exported runner (tested in isolation) ────────────────────────────
+
+export async function runCheckPublicationGate(
+  opts: CheckPublicationGateOptions,
+): Promise<{ violations: GateViolation[] }> {
+  const { rootDir } = opts;
+
+  const assertions = loadAssertionsWithInheritance(rootDir);
+  const gateRecords = loadGateRecords(rootDir);
+
   const violations: GateViolation[] = [];
 
   for (const { relPath, record } of gateRecords) {
-    // The publication gate only applies to records destined for public
-    // distribution. Records with other statuses are intentionally not
-    // publishable and do not need to pass the gate.
     if (record.distribution_status !== "public_open") {
       continue;
     }
@@ -164,70 +253,7 @@ export async function runCheckPublicationGate(
     }
 
     // Rules on each referenced assertion
-    if (Array.isArray(refs)) {
-      for (const ref of refs) {
-        const ass = assertions.get(ref);
-        if (!ass) {
-          violations.push({
-            recordId: record.id,
-            file: relPath,
-            rule: "assertion_exists",
-            detail: `Referenced assertion not found: ${ref}`,
-          });
-          continue;
-        }
-
-        // review_status === 'approved'
-        if (ass.review_status !== "approved") {
-          violations.push({
-            recordId: record.id,
-            file: relPath,
-            rule: "assertion_review_status",
-            detail: `${ref}: review_status is '${ass.review_status ?? "(missing)"}', expected 'approved'`,
-          });
-        }
-
-        // anchor present
-        if (!ass.anchor) {
-          violations.push({
-            recordId: record.id,
-            file: relPath,
-            rule: "assertion_anchor",
-            detail: `${ref}: anchor is missing`,
-          });
-        }
-
-        // source_id present
-        if (!ass.source_id) {
-          violations.push({
-            recordId: record.id,
-            file: relPath,
-            rule: "assertion_source_id",
-            detail: `${ref}: source_id is missing`,
-          });
-        }
-
-        // source_snapshot_id present
-        if (!ass.source_snapshot_id) {
-          violations.push({
-            recordId: record.id,
-            file: relPath,
-            rule: "assertion_source_snapshot_id",
-            detail: `${ref}: source_snapshot_id is missing`,
-          });
-        }
-
-        // confidence not null/undefined
-        if (ass.confidence == null) {
-          violations.push({
-            recordId: record.id,
-            file: relPath,
-            rule: "assertion_confidence",
-            detail: `${ref}: confidence is null or missing`,
-          });
-        }
-      }
-    }
+    violations.push(...checkAssertionRefs(record, assertions, relPath));
   }
 
   return { violations };

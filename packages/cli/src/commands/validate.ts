@@ -211,7 +211,184 @@ export async function runValidate(
   return { results, ok };
 }
 
-// ── Snapshot and Anchor validation helper ────────────────────────────
+// ── Snapshot map type ────────────────────────────────────────────────
+
+interface SnapshotEntry {
+  data: Record<string, unknown>;
+  file: string;
+}
+
+// ── Snapshot integrity validation ────────────────────────────────────
+
+function validateSnapshotIntegrity(
+  data: Record<string, unknown>,
+  rootDir: string,
+): string[] {
+  const errors: string[] = [];
+
+  if (data.http_status === undefined || data.http_status === null) {
+    errors.push("Missing required field: http_status");
+  }
+
+  const contentHash = data.content_hash;
+  if (typeof contentHash !== "string") {
+    errors.push("Field content_hash must be a string");
+  } else if (contentHash === "pending_capture" || contentHash.startsWith("pending_")) {
+    errors.push(`Field content_hash has pending value: "${contentHash}"`);
+  } else if (!contentHash.startsWith("sha256:")) {
+    errors.push(`Field content_hash must start with "sha256:", got "${contentHash}"`);
+  } else {
+    errors.push(...validateArchiveHash(data, contentHash, rootDir));
+  }
+
+  return errors;
+}
+
+/** Validate archive file hash against content_hash. */
+function validateArchiveHash(
+  data: Record<string, unknown>,
+  contentHash: string,
+  rootDir: string,
+): string[] {
+  const errors: string[] = [];
+  const archiveUri = data.archive_uri;
+
+  if (typeof archiveUri !== "string") {
+    errors.push("Field archive_uri must be a string");
+    return errors;
+  }
+
+  const archivePath = resolve(rootDir, archiveUri);
+  if (!existsSync(archivePath)) {
+    errors.push(`Archive file does not exist at path: ${archiveUri}`);
+    return errors;
+  }
+
+  try {
+    const expectedHash = contentHash.substring(7).toLowerCase();
+    let fileBytes = readFileSync(archivePath);
+    // Clarvia convention: text archive content_hash values are computed
+    // over LF-normalized UTF-8 content. Binary archive hashes use raw bytes.
+    // See docs/CONVENTIONS.md.
+    const isTextArchive = archivePath.endsWith(".html") || archivePath.endsWith(".txt");
+    if (isTextArchive) {
+      fileBytes = Buffer.from(fileBytes.toString("utf-8").replace(/\r\n/g, "\n"));
+    }
+    const actualHash = createHash("sha256").update(fileBytes).digest("hex").toLowerCase();
+    if (actualHash !== expectedHash) {
+      const method = isTextArchive ? " using Clarvia LF-normalized text hashing" : "";
+      errors.push(`Hash mismatch for archive file. Expected sha256:${expectedHash}, computed sha256:${actualHash}${method}`);
+    }
+  } catch (err: unknown) {
+    errors.push(`Error reading archive file: ${(err as Error).message}`);
+  }
+
+  return errors;
+}
+
+// ── Assertion anchor validation ──────────────────────────────────────
+
+function validateAssertionAnchors(
+  file: string,
+  snapshotMap: Map<string, SnapshotEntry>,
+  rootDir: string,
+): { relPath: string; errors: string[] } | null {
+  const getRel = (abs: string): string => toPosixRel(abs, rootDir);
+  const relPath = getRel(file);
+
+  let rawData: Record<string, unknown> | null;
+  try {
+    rawData = parseYaml(readFileSync(file, "utf-8")) as Record<string, unknown>;
+  } catch {
+    return null;
+  }
+
+  if (!rawData || typeof rawData !== "object") return null;
+
+  const snapshotId = rawData.source_snapshot_id;
+  if (typeof snapshotId !== "string") return null;
+
+  const snapshotEntry = snapshotMap.get(snapshotId);
+  if (!snapshotEntry) return null;
+
+  const { data: snapshotData } = snapshotEntry;
+  const archiveUri = snapshotData.archive_uri;
+  if (typeof archiveUri !== "string") return null;
+
+  const archivePath = resolve(rootDir, archiveUri);
+  if (!existsSync(archivePath)) return null;
+
+  let archiveContent: string;
+  try {
+    archiveContent = readFileSync(archivePath, "utf-8");
+  } catch {
+    return null;
+  }
+
+  const normalizedHtmlText = getNormalizedTextContent(archiveContent);
+  const assertions = rawData.assertions;
+  if (!Array.isArray(assertions)) return null;
+
+  const errors: string[] = [];
+  for (const assertion of assertions) {
+    if (!assertion || typeof assertion !== "object") continue;
+    const anchor = assertion.anchor;
+    if (anchor && typeof anchor === "object" && anchor.selector_type === "text_quote") {
+      const textQuote = anchor.text_quote;
+      if (typeof textQuote === "string") {
+        const normalizedQuote = normalizeText(textQuote);
+        if (!normalizedHtmlText.includes(normalizedQuote)) {
+          errors.push(
+            `Assertion "${assertion.id}" anchor text_quote "${textQuote}" not found in snapshot archive "${archiveUri}"`
+          );
+        }
+      }
+    }
+  }
+
+  return errors.length > 0 ? { relPath, errors } : null;
+}
+
+// ── Template provenance validation ───────────────────────────────────
+
+function validateTemplateProvenance(
+  file: string,
+  snapshotMap: Map<string, SnapshotEntry>,
+  rootDir: string,
+): { relPath: string; errors: string[] } | null {
+  const relPath = toPosixRel(file, rootDir);
+
+  let data: Record<string, unknown> | null;
+  try {
+    data = parseYaml(readFileSync(file, "utf-8")) as Record<string, unknown>;
+  } catch {
+    return null;
+  }
+
+  if (!data || typeof data !== "object") return null;
+
+  const errors: string[] = [];
+
+  if (data.distribution_status === "public_open" && data.authoring_status === "approved") {
+    if (!data.provenance) {
+      errors.push("Public and approved task template requires a provenance block");
+    }
+  }
+
+  if (data.provenance && typeof data.provenance === "object") {
+    const prov = data.provenance as Record<string, unknown>;
+    const ref = prov.derived_from_snapshot_ref;
+    if (typeof ref !== "string") {
+      errors.push("Field provenance.derived_from_snapshot_ref must be a string");
+    } else if (!snapshotMap.has(ref)) {
+      errors.push(`provenance.derived_from_snapshot_ref "${ref}" does not resolve to an existing source snapshot`);
+    }
+  }
+
+  return errors.length > 0 ? { relPath, errors } : null;
+}
+
+// ── Snapshot and Anchor validation orchestrator ──────────────────────
 
 function validateSnapshotsAndAnchors(
   rootDir: string,
@@ -227,7 +404,7 @@ function validateSnapshotsAndAnchors(
     absolute: true,
   });
 
-  const snapshotMap = new Map<string, { data: Record<string, unknown>; file: string }>();
+  const snapshotMap = new Map<string, SnapshotEntry>();
 
   const getRel = (abs: string): string => toPosixRel(abs, rootDir);
 
@@ -243,109 +420,18 @@ function validateSnapshotsAndAnchors(
     }
   }
 
+  // 1. Validate snapshot integrity
   for (const [, { data, file }] of snapshotMap.entries()) {
     const relPath = getRel(file);
-    const errors: string[] = [];
-
-    if (data.http_status === undefined || data.http_status === null) {
-      errors.push("Missing required field: http_status");
-    }
-
-    const contentHash = data.content_hash;
-    if (typeof contentHash !== "string") {
-      errors.push("Field content_hash must be a string");
-    } else if (contentHash === "pending_capture" || contentHash.startsWith("pending_")) {
-      errors.push(`Field content_hash has pending value: "${contentHash}"`);
-    } else if (!contentHash.startsWith("sha256:")) {
-      errors.push(`Field content_hash must start with "sha256:", got "${contentHash}"`);
-    } else {
-      const archiveUri = data.archive_uri;
-      if (typeof archiveUri !== "string") {
-        errors.push("Field archive_uri must be a string");
-      } else {
-        const archivePath = resolve(rootDir, archiveUri);
-        if (!existsSync(archivePath)) {
-          errors.push(`Archive file does not exist at path: ${archiveUri}`);
-        } else {
-          try {
-            const expectedHash = contentHash.substring(7).toLowerCase();
-            let fileBytes = readFileSync(archivePath);
-            // Clarvia convention: text archive content_hash values are computed
-            // over LF-normalized UTF-8 content. Binary archive hashes use raw bytes.
-            // See docs/CONVENTIONS.md.
-            const isTextArchive = archivePath.endsWith(".html") || archivePath.endsWith(".txt");
-            if (isTextArchive) {
-              fileBytes = Buffer.from(fileBytes.toString("utf-8").replace(/\r\n/g, "\n"));
-            }
-            const actualHash = createHash("sha256").update(fileBytes).digest("hex").toLowerCase();
-            if (actualHash !== expectedHash) {
-              const method = isTextArchive ? " using Clarvia LF-normalized text hashing" : "";
-              errors.push(`Hash mismatch for archive file. Expected sha256:${expectedHash}, computed sha256:${actualHash}${method}`);
-            }
-          } catch (err: unknown) {
-            errors.push(`Error reading archive file: ${(err as Error).message}`);
-          }
-        }
-      }
-    }
-
-      mergeErrors(results, relPath, "source_snapshot.schema.json", errors);
+    const errors = validateSnapshotIntegrity(data, rootDir);
+    mergeErrors(results, relPath, "source_snapshot.schema.json", errors);
   }
 
+  // 2. Validate assertion anchors
   for (const file of assertionFiles) {
-    const relPath = getRel(file);
-    let rawData: Record<string, unknown> | null;
-    try {
-      rawData = parseYaml(readFileSync(file, "utf-8")) as Record<string, unknown>;
-    } catch {
-      continue;
-    }
-
-    if (!rawData || typeof rawData !== "object") continue;
-
-    const snapshotId = rawData.source_snapshot_id;
-    if (typeof snapshotId !== "string") continue;
-
-    const snapshotEntry = snapshotMap.get(snapshotId);
-    if (!snapshotEntry) continue;
-
-    const { data: snapshotData } = snapshotEntry;
-    const archiveUri = snapshotData.archive_uri;
-    if (typeof archiveUri !== "string") continue;
-
-    const archivePath = resolve(rootDir, archiveUri);
-    if (!existsSync(archivePath)) continue;
-
-    let archiveContent: string;
-    try {
-      archiveContent = readFileSync(archivePath, "utf-8");
-    } catch {
-      continue;
-    }
-
-    const normalizedHtmlText = getNormalizedTextContent(archiveContent);
-    const assertions = rawData.assertions;
-    if (Array.isArray(assertions)) {
-      const errors: string[] = [];
-      for (const assertion of assertions) {
-        if (!assertion || typeof assertion !== "object") continue;
-        const anchor = assertion.anchor;
-        if (anchor && typeof anchor === "object" && anchor.selector_type === "text_quote") {
-          const textQuote = anchor.text_quote;
-          if (typeof textQuote === "string") {
-            const normalizedQuote = normalizeText(textQuote);
-            if (!normalizedHtmlText.includes(normalizedQuote)) {
-              errors.push(
-                `Assertion "${assertion.id}" anchor text_quote "${textQuote}" not found in snapshot archive "${archiveUri}"`
-              );
-            }
-          }
-        }
-      }
-
-      if (errors.length > 0) {
-        mergeErrors(results, relPath, "source_assertion.schema.json", errors);
-      }
+    const result = validateAssertionAnchors(file, snapshotMap, rootDir);
+    if (result) {
+      mergeErrors(results, result.relPath, "source_assertion.schema.json", result.errors);
     }
   }
 
@@ -356,41 +442,74 @@ function validateSnapshotsAndAnchors(
   });
 
   for (const file of templateFiles) {
-    const relPath = getRel(file);
-    let data: Record<string, unknown> | null;
-    try {
-      data = parseYaml(readFileSync(file, "utf-8")) as Record<string, unknown>;
-    } catch {
-      continue;
+    const result = validateTemplateProvenance(file, snapshotMap, rootDir);
+    if (result) {
+      mergeErrors(results, result.relPath, "task_template.schema.json", result.errors);
     }
-
-    if (!data || typeof data !== "object") continue;
-
-    const errors: string[] = [];
-
-    if (data.distribution_status === "public_open" && data.authoring_status === "approved") {
-      if (!data.provenance) {
-        errors.push("Public and approved task template requires a provenance block");
-      }
-    }
-
-    if (data.provenance && typeof data.provenance === "object") {
-      const prov = data.provenance as Record<string, unknown>;
-      const ref = prov.derived_from_snapshot_ref;
-      if (typeof ref !== "string") {
-        errors.push("Field provenance.derived_from_snapshot_ref must be a string");
-      } else if (!snapshotMap.has(ref)) {
-        errors.push(`provenance.derived_from_snapshot_ref "${ref}" does not resolve to an existing source snapshot`);
-      }
-    }
-
-      mergeErrors(results, relPath, "task_template.schema.json", errors);
   }
 }
+
+// ── Condition var path validation ────────────────────────────────────
 
 const NON_INTAKE_CONDITION_VARS = new Set<string>([
   // Allowlist for internal or system variables
 ]);
+
+/** Check condition var paths against intake fact types. */
+function checkConditionVarPaths(
+  varPaths: string[],
+  intakePathToId: Map<string, string>,
+): string[] {
+  const errors: string[] = [];
+  for (const varPath of varPaths) {
+    if (NON_INTAKE_CONDITION_VARS.has(varPath)) continue;
+    if (!intakePathToId.has(varPath)) {
+      errors.push(`Condition references var path "${varPath}" which is not defined in any intake fact type.`);
+    }
+  }
+  return errors;
+}
+
+/** Check concept refs resolve to intake fact types and cover var paths. */
+function checkConceptRefs(
+  conceptRefs: unknown,
+  intakeIdToPath: Map<string, string>,
+  varPaths: string[],
+  intakePathToId: Map<string, string>,
+): string[] {
+  const errors: string[] = [];
+  const referencedPaths = new Set<string>();
+
+  if (conceptRefs && Array.isArray(conceptRefs)) {
+    for (const ref of conceptRefs) {
+      if (typeof ref !== "string") continue;
+
+      const path = intakeIdToPath.get(ref);
+      if (!path) {
+        errors.push(`information_concept_ref "${ref}" does not resolve to any defined intake fact type.`);
+      } else {
+        referencedPaths.add(path);
+      }
+    }
+  } else if (conceptRefs !== undefined) {
+    errors.push("Field information_concept_refs must be an array");
+  }
+
+  for (const varPath of varPaths) {
+    if (NON_INTAKE_CONDITION_VARS.has(varPath)) continue;
+
+    if (!referencedPaths.has(varPath) && intakePathToId.has(varPath)) {
+      const matchingId = intakePathToId.get(varPath);
+      errors.push(
+        `Condition references var path "${varPath}" but does not reference its intake fact type ID "${matchingId}" in information_concept_refs.`
+      );
+    }
+  }
+
+  return errors;
+}
+
+// ── Condition-intake validation orchestrator ─────────────────────────
 
 function validateConditionsAndIntake(
   rootDir: string,
@@ -434,47 +553,13 @@ function validateConditionsAndIntake(
 
     if (!data || typeof data !== "object") continue;
 
-    const errors: string[] = [];
     const varPaths = extractVarPathsFromExpression(data.expression);
+    const errors: string[] = [];
 
-    for (const varPath of varPaths) {
-      if (NON_INTAKE_CONDITION_VARS.has(varPath)) continue;
+    errors.push(...checkConditionVarPaths(varPaths, intakePathToId));
+    errors.push(...checkConceptRefs(data.information_concept_refs, intakeIdToPath, varPaths, intakePathToId));
 
-      if (!intakePathToId.has(varPath)) {
-        errors.push(`Condition references var path "${varPath}" which is not defined in any intake fact type.`);
-      }
-    }
-
-    const conceptRefs = data.information_concept_refs;
-    const referencedPaths = new Set<string>();
-
-    if (conceptRefs && Array.isArray(conceptRefs)) {
-      for (const ref of conceptRefs) {
-        if (typeof ref !== "string") continue;
-
-        const path = intakeIdToPath.get(ref);
-        if (!path) {
-          errors.push(`information_concept_ref "${ref}" does not resolve to any defined intake fact type.`);
-        } else {
-          referencedPaths.add(path);
-        }
-      }
-    } else if (conceptRefs !== undefined) {
-      errors.push("Field information_concept_refs must be an array");
-    }
-
-    for (const varPath of varPaths) {
-      if (NON_INTAKE_CONDITION_VARS.has(varPath)) continue;
-
-      if (!referencedPaths.has(varPath) && intakePathToId.has(varPath)) {
-        const matchingId = intakePathToId.get(varPath);
-        errors.push(
-          `Condition references var path "${varPath}" but does not reference its intake fact type ID "${matchingId}" in information_concept_refs.`
-        );
-      }
-    }
-
-      mergeErrors(results, relPath, "condition.schema.json", errors);
+    mergeErrors(results, relPath, "condition.schema.json", errors);
   }
 }
 
@@ -505,7 +590,7 @@ function normalizeText(text: string): string {
 }
 
 function getNormalizedTextContent(html: string): string {
-  // Loop to handle crafted/nested comment markers like <!-<!-- -->->
+  // Loop to handle crafted/nested comment markers like <!--<!- --> -->
   let text = html;
   let prev: string;
   do {
@@ -562,4 +647,3 @@ export async function main(): Promise<void> {
   );
   process.exit(ok ? 0 : 1);
 }
-
