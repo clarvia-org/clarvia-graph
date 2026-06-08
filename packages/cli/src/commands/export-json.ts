@@ -1,53 +1,60 @@
 /**
  * clarvia export-json — Export the complete graph as a single JSON file.
  *
- * Outputs to .clarvia-output/graph-export.json
+ * Outputs to build/exports/json/graph-export.json
  * Contains all records organized by type, plus metadata.
  */
 
 import { resolve } from "node:path";
 import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
 import { loadGraph } from "@clarvia/generator";
+import { resolveRootDir } from "../shared/utils.js";
 
-export async function main(): Promise<void> {
-  const rootDir = resolve(
-    import.meta.dirname ?? __dirname,
-    "..",
-    "..",
-    "..",
-    "..",
-  );
+export interface ExportResult {
+  outPath: string;
+  stats: {
+    consequences: number;
+    task_templates: number;
+    conditions: number;
+    deadlines: number;
+    authorities: number;
+    evidence_types: number;
+    intake_fact_types: number;
+    total: number;
+  };
+}
 
-  console.log(`Loading graph from ${rootDir}...`);
+export function runExportJson(rootDir: string): ExportResult {
   const graph = loadGraph(rootDir);
 
-  // Read package.json for version
   const pkgRaw = readFileSync(resolve(rootDir, "package.json"), "utf-8");
   const pkg = JSON.parse(pkgRaw) as { version: string };
 
   const mapToArray = <T>(m: Map<string, T>): T[] => [...m.values()];
 
+  const stats = {
+    consequences: graph.consequences.size,
+    task_templates: graph.taskTemplates.size,
+    conditions: graph.conditions.size,
+    deadlines: graph.deadlines.size,
+    authorities: graph.authorities.size,
+    evidence_types: graph.evidenceTypes.size,
+    intake_fact_types: graph.intakeFactTypes.size,
+    total:
+      graph.consequences.size +
+      graph.taskTemplates.size +
+      graph.conditions.size +
+      graph.deadlines.size +
+      graph.authorities.size +
+      graph.evidenceTypes.size +
+      graph.intakeFactTypes.size,
+  };
+
   const exportData = {
     $schema: "clarvia-graph-export/v0.1",
     version: pkg.version,
     exported_at: new Date().toISOString(),
-    stats: {
-      consequences: graph.consequences.size,
-      task_templates: graph.taskTemplates.size,
-      conditions: graph.conditions.size,
-      deadlines: graph.deadlines.size,
-      authorities: graph.authorities.size,
-      evidence_types: graph.evidenceTypes.size,
-      intake_fact_types: graph.intakeFactTypes.size,
-      total:
-        graph.consequences.size +
-        graph.taskTemplates.size +
-        graph.conditions.size +
-        graph.deadlines.size +
-        graph.authorities.size +
-        graph.evidenceTypes.size +
-        graph.intakeFactTypes.size,
-    },
+    stats,
     consequences: mapToArray(graph.consequences),
     task_templates: mapToArray(graph.taskTemplates),
     conditions: mapToArray(graph.conditions),
@@ -63,13 +70,22 @@ export async function main(): Promise<void> {
   const outPath = resolve(outDir, "graph-export.json");
   writeFileSync(outPath, JSON.stringify(exportData, null, 2));
 
-  console.log(`\nExported ${exportData.stats.total} records:`);
-  console.log(`  ${exportData.stats.consequences} consequences`);
-  console.log(`  ${exportData.stats.task_templates} task templates`);
-  console.log(`  ${exportData.stats.conditions} conditions`);
-  console.log(`  ${exportData.stats.deadlines} deadlines`);
-  console.log(`  ${exportData.stats.authorities} authorities`);
-  console.log(`  ${exportData.stats.evidence_types} evidence types`);
-  console.log(`  ${exportData.stats.intake_fact_types} intake fact types`);
+  return { outPath, stats };
+}
+
+export async function main(): Promise<void> {
+  const rootDir = resolveRootDir(import.meta.dirname ?? __dirname);
+
+  console.log(`Loading graph from ${rootDir}...`);
+  const { outPath, stats } = runExportJson(rootDir);
+
+  console.log(`\nExported ${stats.total} records:`);
+  console.log(`  ${stats.consequences} consequences`);
+  console.log(`  ${stats.task_templates} task templates`);
+  console.log(`  ${stats.conditions} conditions`);
+  console.log(`  ${stats.deadlines} deadlines`);
+  console.log(`  ${stats.authorities} authorities`);
+  console.log(`  ${stats.evidence_types} evidence types`);
+  console.log(`  ${stats.intake_fact_types} intake fact types`);
   console.log(`\nSaved to: ${outPath}`);
 }
