@@ -10,6 +10,32 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-06-08",
+    headline: {
+      en: "Continuous code quality analysis via SonarCloud",
+      fr: "Analyse continue de la qualite du code via SonarCloud",
+      de: "Kontinuierliche Codequalitaetsanalyse via SonarCloud",
+    },
+    body: {
+      en: "Clarvia Graph is now continuously analysed by SonarCloud, one of the most widely recognised code quality platforms in the open source ecosystem. Every commit is checked for bugs, security vulnerabilities, code smells, and maintainability issues. SonarCloud is particularly valued as an independent quality signal. The SonarCloud quality gate badge is now displayed in the clarvia-graph README and the Clarvia organisation profile.",
+      fr: "Clarvia Graph est desormais analyse en continu par SonarCloud, l'une des plateformes de qualite de code les plus reconnues dans l'ecosysteme open source. Chaque commit est verifie pour les bugs, les vulnerabilites de securite, les mauvaises pratiques de code et les problemes de maintenabilite. SonarCloud est particulierement apprecie comme signal de qualite independant. Le badge SonarCloud est desormais affiche dans le README de clarvia-graph et dans le profil de l'organisation Clarvia.",
+      de: "Clarvia Graph wird jetzt kontinuierlich von SonarCloud analysiert, einer der anerkanntesten Plattformen fuer Codequalitaet im Open-Source-Oekosystem. Jeder Commit wird auf Bugs, Sicherheitsluecken, Code Smells und Wartbarkeitsprobleme geprueft. SonarCloud wird besonders als unabhaengiges Qualitaetssignal geschaetzt. Das SonarCloud-Badge wird jetzt im README von clarvia-graph und im Profil der Organisation Clarvia angezeigt.",
+    },
+  },
+  {
+    date: "2026-06-08",
+    headline: {
+      en: "Test coverage monitoring via Codecov",
+      fr: "Suivi de la couverture de tests via Codecov",
+      de: "Testabdeckungs-Monitoring via Codecov",
+    },
+    body: {
+      en: "Clarvia Graph now tracks test coverage automatically using Codecov. Every pull request and merge to main measures how much of the codebase is exercised by the test suite, with results reported directly in GitHub. This gives contributors and reviewers immediate visibility into whether changes improve or reduce test coverage. The Codecov badge is now displayed in the clarvia-graph README and the Clarvia organisation profile.",
+      fr: "Clarvia Graph suit desormais automatiquement la couverture de tests grace a Codecov. Chaque pull request et chaque fusion vers main mesure la part du code exercee par la suite de tests, avec des resultats reportes directement dans GitHub. Cela offre aux contributeurs et relecteurs une visibilite immediate sur l'impact des modifications sur la couverture de tests. Le badge Codecov est desormais affiche dans le README de clarvia-graph et dans le profil de l'organisation Clarvia.",
+      de: "Clarvia Graph verfolgt die Testabdeckung jetzt automatisch mit Codecov. Jeder Pull Request und jeder Merge auf main misst, welcher Anteil des Codes durch die Testsuite abgedeckt wird, wobei die Ergebnisse direkt in GitHub angezeigt werden. So sehen Mitwirkende und Reviewer sofort, ob Aenderungen die Testabdeckung verbessern oder verringern. Das Codecov-Badge wird jetzt im README von clarvia-graph und im Profil der Organisation Clarvia angezeigt.",
+    },
+  },
+  {
     date: "2026-06-07",
     headline: {
       en: "FSFE REUSE compliance achieved",

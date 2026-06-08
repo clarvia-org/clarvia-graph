@@ -118,6 +118,58 @@ export default function FooterSection({ lang }: { lang: Lang }) {
               />
             </a>
             <a 
+              href="https://scorecard.dev/#/projects/github.com/clarvia-org/clarvia-graph" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://api.scorecard.dev/projects/github.com/clarvia-org/clarvia-graph/badge" 
+                alt="OpenSSF Scorecard" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
+              href="https://api.reuse.software/info/github.com/clarvia-org/clarvia-graph" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://api.reuse.software/badge/github.com/clarvia-org/clarvia-graph" 
+                alt="REUSE compliant" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
+              href="https://codecov.io/gh/clarvia-org/clarvia-graph" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://codecov.io/gh/clarvia-org/clarvia-graph/graph/badge.svg" 
+                alt="Codecov" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
+              href="https://sonarcloud.io/summary/new_code?id=clarvia-org_clarvia-graph" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
+            >
+              <img 
+                src="https://sonarcloud.io/api/project_badges/measure?project=clarvia-org_clarvia-graph&metric=alert_status" 
+                alt="SonarCloud Quality Gate" 
+                className="h-6 w-auto"
+                loading="lazy"
+              />
+            </a>
+            <a 
               href="https://doi.org/10.5281/zenodo.20572455" 
               target="_blank" 
               rel="noopener noreferrer" 
