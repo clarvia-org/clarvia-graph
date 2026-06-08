@@ -317,7 +317,7 @@ export async function runLintIds(
 
 // ── output helpers ───────────────────────────────────────────────────
 
-function countIssuesByLevel(
+export function countIssuesByLevel(
   results: LintIdResult[],
   level: "error" | "warn",
 ): number {
@@ -332,7 +332,7 @@ function countIssuesByLevel(
   );
 }
 
-function formatFileResult(r: LintIdResult): void {
+export function formatFileResult(r: LintIdResult): void {
   const hasErrors = r.ids.some((i) =>
     i.issues.some((iss) => iss.level === "error"),
   );

@@ -1,6 +1,6 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { resolve } from "node:path";
-import { lintId, extractIds, runLintIds } from "./lint-ids.js";
+import { lintId, extractIds, runLintIds, countIssuesByLevel, formatFileResult } from "./lint-ids.js";
 
 /**
  * Tests for the `clarvia lint-ids` command.
@@ -194,5 +194,70 @@ describe("runLintIds integration", () => {
     const { results } = await runLintIds({ rootDir: FIXTURES_DIR });
     const gitkeep = results.find((r) => r.file.includes(".gitkeep"));
     expect(gitkeep).toBeUndefined();
+  });
+});
+
+// ── unit tests for countIssuesByLevel ────────────────────────────────
+
+describe("countIssuesByLevel", () => {
+  it("returns 0 for empty results", () => {
+    expect(countIssuesByLevel([], "error")).toBe(0);
+    expect(countIssuesByLevel([], "warn")).toBe(0);
+  });
+
+  it("counts errors across files and ids", () => {
+    const results = [
+      {
+        file: "a.yml",
+        ids: [
+          { id: "a.b", issues: [{ level: "error" as const, message: "bad" }] },
+          { id: "a.c", issues: [{ level: "warn" as const, message: "ok" }] },
+        ],
+      },
+      {
+        file: "b.yml",
+        ids: [
+          { id: "b.b", issues: [{ level: "error" as const, message: "bad2" }, { level: "error" as const, message: "bad3" }] },
+        ],
+      },
+    ];
+    expect(countIssuesByLevel(results, "error")).toBe(3);
+    expect(countIssuesByLevel(results, "warn")).toBe(1);
+  });
+});
+
+// ── unit tests for formatFileResult ─────────────────────────────────
+
+describe("formatFileResult", () => {
+  it("prints checkmark for clean file", () => {
+    const spy = vi.spyOn(console, "log").mockImplementation(() => {});
+    formatFileResult({ file: "clean.yml", ids: [{ id: "a.b", issues: [] }] });
+    const output = spy.mock.calls.map(c => c[0]).join("\n");
+    expect(output).toContain("✔ clean.yml");
+    spy.mockRestore();
+  });
+
+  it("prints cross for file with errors", () => {
+    const spy = vi.spyOn(console, "log").mockImplementation(() => {});
+    formatFileResult({
+      file: "bad.yml",
+      ids: [{ id: "bad.id", issues: [{ level: "error", message: "invalid" }] }],
+    });
+    const output = spy.mock.calls.map(c => c[0]).join("\n");
+    expect(output).toContain("✘ bad.yml");
+    expect(output).toContain("✘ [bad.id] invalid");
+    spy.mockRestore();
+  });
+
+  it("prints warning marker for file with only warnings", () => {
+    const spy = vi.spyOn(console, "log").mockImplementation(() => {});
+    formatFileResult({
+      file: "warn.yml",
+      ids: [{ id: "w.id", issues: [{ level: "warn", message: "long" }] }],
+    });
+    const output = spy.mock.calls.map(c => c[0]).join("\n");
+    expect(output).toContain("⚠ warn.yml");
+    expect(output).toContain("⚠ [w.id] long");
+    spy.mockRestore();
   });
 });
