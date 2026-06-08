@@ -19,6 +19,7 @@ import {
   generateChecklist,
   type Fact,
 } from "@clarvia/generator";
+import type { LoadedGraph, Consequence, ChecklistItem } from "@clarvia/generator";
 
 // ── helpers ──────────────────────────────────────────────────────────
 
@@ -48,6 +49,173 @@ export interface TestScenariosOptions {
   rootDir: string;
 }
 
+// ── scenario document shape ──────────────────────────────────────────
+
+interface ScenarioDoc {
+  id: string;
+  title: string;
+  life_event: string;
+  facts: Array<{ fact_type: string; value: unknown }>;
+  expected_consequence_statuses?: Record<string, string>;
+  expected_checklist_groups?: Record<string, string[]>;
+}
+
+// ── parsing ──────────────────────────────────────────────────────────
+
+function parseScenarioFile(
+  file: string,
+  relPath: string,
+): { scenario: ScenarioDoc } | { error: ScenarioResult } {
+  let scenario: ScenarioDoc;
+  try {
+    const raw = readFileSync(file, "utf-8");
+    scenario = parseYaml(raw) as ScenarioDoc;
+  } catch {
+    return {
+      error: {
+        id: "(parse error)",
+        file: relPath,
+        title: "(could not parse)",
+        passed: false,
+        failures: [
+          {
+            check: "parse",
+            expected: "valid YAML",
+            actual: "parse error",
+          },
+        ],
+      },
+    };
+  }
+
+  if (!scenario?.id || !scenario?.life_event || !scenario?.facts) {
+    return {
+      error: {
+        id: scenario?.id ?? "(missing id)",
+        file: relPath,
+        title: scenario?.title ?? "(missing title)",
+        passed: false,
+        failures: [
+          {
+            check: "structure",
+            expected: "id, life_event, facts",
+            actual: "missing required fields",
+          },
+        ],
+      },
+    };
+  }
+
+  return { scenario };
+}
+
+// ── item matching ────────────────────────────────────────────────────
+
+/** Find output items that are relevant to a given consequence. */
+function findRelevantItems(
+  consequence: Consequence,
+  output: { items: ChecklistItem[] },
+): ChecklistItem[] {
+  const taskRefs = consequence.task_template_refs ?? [];
+  return output.items.filter((item) => {
+    for (const taskRef of taskRefs) {
+      if (
+        item.needed_for.includes(consequence.title) ||
+        item.id.includes(taskRef.split(".").pop()!)
+      ) {
+        return true;
+      }
+    }
+    if (taskRefs.length === 0) {
+      return item.needed_for.includes(consequence.title);
+    }
+    return false;
+  });
+}
+
+/** Determine the "strongest" status from a list of relevant items. */
+function determineConsequenceStatus(items: ChecklistItem[]): string {
+  if (items.length === 0) return "does_not_apply";
+
+  const statuses = items.map((i) => i.status);
+  if (statuses.includes("applies")) return "applies";
+  if (statuses.includes("maybe_applies")) return "maybe_applies";
+  if (statuses.includes("needs_fact")) return "needs_fact";
+  return statuses[0];
+}
+
+// ── consequence status checks ────────────────────────────────────────
+
+function checkConsequenceStatuses(
+  expected: Record<string, string>,
+  output: { items: ChecklistItem[] },
+  graph: LoadedGraph,
+): ScenarioFailure[] {
+  const failures: ScenarioFailure[] = [];
+
+  for (const [consequenceId, expectedStatus] of Object.entries(expected)) {
+    const consequence = graph.consequences.get(consequenceId);
+    if (!consequence) {
+      failures.push({
+        check: `consequence_status:${consequenceId}`,
+        expected: expectedStatus,
+        actual: "consequence not found in graph",
+      });
+      continue;
+    }
+
+    const relevantItems = findRelevantItems(consequence, output);
+    const actualStatus = determineConsequenceStatus(relevantItems);
+
+    if (actualStatus !== expectedStatus) {
+      failures.push({
+        check: `consequence_status:${consequenceId}`,
+        expected: expectedStatus,
+        actual: actualStatus,
+      });
+    }
+  }
+
+  return failures;
+}
+
+// ── checklist group checks ───────────────────────────────────────────
+
+function checkChecklistGroups(
+  expected: Record<string, string[]>,
+  output: { items: ChecklistItem[] },
+  graph: LoadedGraph,
+): ScenarioFailure[] {
+  const failures: ScenarioFailure[] = [];
+
+  for (const [groupName, expectedTaskIds] of Object.entries(expected)) {
+    const groupItems = output.items.filter(
+      (item) => item.checklist_group === groupName,
+    );
+    const groupItemTaskIds = new Set<string>();
+
+    for (const item of groupItems) {
+      for (const [id, template] of graph.taskTemplates) {
+        if (template.title === item.title) {
+          groupItemTaskIds.add(id);
+        }
+      }
+    }
+
+    for (const expectedId of expectedTaskIds) {
+      if (!groupItemTaskIds.has(expectedId)) {
+        failures.push({
+          check: `checklist_group:${groupName}`,
+          expected: `contains ${expectedId}`,
+          actual: `not found (group has: ${[...groupItemTaskIds].join(", ") || "empty"})`,
+        });
+      }
+    }
+  }
+
+  return failures;
+}
+
 // ── exported runner (tested in isolation) ────────────────────────────
 
 export async function runTestScenarios(
@@ -73,63 +241,21 @@ export async function runTestScenarios(
 
   for (const file of scenarioFiles) {
     const relPath = toPosixRel(file, rootDir);
+    const parsed = parseScenarioFile(file, relPath);
 
-    interface ScenarioDoc {
-      id: string;
-      title: string;
-      life_event: string;
-      facts: Array<{ fact_type: string; value: unknown }>;
-      expected_consequence_statuses?: Record<string, string>;
-      expected_checklist_groups?: Record<string, string[]>;
-    }
-
-    let scenario: ScenarioDoc;
-    try {
-      const raw = readFileSync(file, "utf-8");
-      scenario = parseYaml(raw) as ScenarioDoc;
-    } catch {
-      results.push({
-        id: "(parse error)",
-        file: relPath,
-        title: "(could not parse)",
-        passed: false,
-        failures: [
-          {
-            check: "parse",
-            expected: "valid YAML",
-            actual: "parse error",
-          },
-        ],
-      });
+    if ("error" in parsed) {
+      results.push(parsed.error);
       failed++;
       continue;
     }
 
-    if (!scenario?.id || !scenario?.life_event || !scenario?.facts) {
-      results.push({
-        id: scenario?.id ?? "(missing id)",
-        file: relPath,
-        title: scenario?.title ?? "(missing title)",
-        passed: false,
-        failures: [
-          {
-            check: "structure",
-            expected: "id, life_event, facts",
-            actual: "missing required fields",
-          },
-        ],
-      });
-      failed++;
-      continue;
-    }
+    const { scenario } = parsed;
 
-    // Convert scenario facts to Fact[]
     const facts: Fact[] = scenario.facts.map((f) => ({
       fact_type: f.fact_type,
       value: f.value,
     }));
 
-    // Run the generator
     const output = generateChecklist({
       lifeEvent: scenario.life_event,
       facts,
@@ -138,115 +264,24 @@ export async function runTestScenarios(
 
     const failures: ScenarioFailure[] = [];
 
-    // ── Check expected_consequence_statuses ───────────────────────
     if (scenario.expected_consequence_statuses) {
-      // Build a map of consequence ID → status from the output
-      // The generator outputs checklist items, not consequences directly.
-      // We need to figure out which consequences apply by looking at the
-      // items' needed_for and the consequence IDs.
-      //
-      // For now, we check against consequence evaluation by looking at
-      // what task_template items got generated (and their statuses).
-      // The consequence status is "applies" if any of its task_template
-      // items have status "applies" or "maybe_applies".
-      //
-      // Alternatively, we can evaluate conditions directly. Since the
-      // generator filters consequences and expands them into items,
-      // if a consequence has items in the output, it "applies".
-
-      for (const [consequenceId, expectedStatus] of Object.entries(
-        scenario.expected_consequence_statuses,
-      )) {
-        const consequence = graph.consequences.get(consequenceId);
-        if (!consequence) {
-          failures.push({
-            check: `consequence_status:${consequenceId}`,
-            expected: expectedStatus,
-            actual: "consequence not found in graph",
-          });
-          continue;
-        }
-
-        // Check if any items in the output are from this consequence's
-        // task templates
-        const taskRefs = consequence.task_template_refs ?? [];
-        const relevantItems = output.items.filter((item) => {
-          // Match by checking if any of the consequence's task templates
-          // produced this item. Items have id based on template id.
-          for (const taskRef of taskRefs) {
-            if (
-              item.needed_for.includes(consequence.title) ||
-              item.id.includes(taskRef.split(".").pop()!)
-            ) {
-              return true;
-            }
-          }
-          // Also check items that come directly from the consequence
-          // (no task templates)
-          if (taskRefs.length === 0) {
-            return item.needed_for.includes(consequence.title);
-          }
-          return false;
-        });
-
-        let actualStatus: string;
-        if (relevantItems.length === 0) {
-          actualStatus = "does_not_apply";
-        } else {
-          // Take the "strongest" status
-          const statuses = relevantItems.map((i) => i.status);
-          if (statuses.includes("applies")) {
-            actualStatus = "applies";
-          } else if (statuses.includes("maybe_applies")) {
-            actualStatus = "maybe_applies";
-          } else if (statuses.includes("needs_fact")) {
-            actualStatus = "needs_fact";
-          } else {
-            actualStatus = statuses[0];
-          }
-        }
-
-        if (actualStatus !== expectedStatus) {
-          failures.push({
-            check: `consequence_status:${consequenceId}`,
-            expected: expectedStatus,
-            actual: actualStatus,
-          });
-        }
-      }
+      failures.push(
+        ...checkConsequenceStatuses(
+          scenario.expected_consequence_statuses,
+          output,
+          graph,
+        ),
+      );
     }
 
-    // ── Check expected_checklist_groups ───────────────────────────
     if (scenario.expected_checklist_groups) {
-      for (const [groupName, expectedTaskIds] of Object.entries(
-        scenario.expected_checklist_groups,
-      )) {
-        const groupItems = output.items.filter(
-          (item) => item.checklist_group === groupName,
-        );
-        const groupItemTaskIds = new Set<string>();
-
-        // Try to identify which task template produced each item.
-        // Items' titles match their task templates' titles.
-        for (const item of groupItems) {
-          // Walk task templates to find a match by title
-          for (const [id, template] of graph.taskTemplates) {
-            if (template.title === item.title) {
-              groupItemTaskIds.add(id);
-            }
-          }
-        }
-
-        for (const expectedId of expectedTaskIds) {
-          if (!groupItemTaskIds.has(expectedId)) {
-            failures.push({
-              check: `checklist_group:${groupName}`,
-              expected: `contains ${expectedId}`,
-              actual: `not found (group has: ${[...groupItemTaskIds].join(", ") || "empty"})`,
-            });
-          }
-        }
-      }
+      failures.push(
+        ...checkChecklistGroups(
+          scenario.expected_checklist_groups,
+          output,
+          graph,
+        ),
+      );
     }
 
     const passed = failures.length === 0;

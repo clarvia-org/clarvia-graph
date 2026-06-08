@@ -150,35 +150,7 @@ function buildIntakeFile(
   const questions = [...graph.intakeFactTypes.values()]
     .filter((ft) => factPaths.has(ft.path))
     .map((q) => {
-      // Build options for jurisdiction_code types from vocab
-      const options: Array<{
-        value: string;
-        label_en: string;
-        label_fr: string;
-        label_de: string;
-      }> = [];
-
-      if (q.value_type === "jurisdiction_code") {
-        // Add real jurisdiction options (exclude meta-jurisdictions)
-        const realJurisdictions = jurisdictionVocab.filter(
-          (j) => !["EU", "XBORDER", "GLOBAL"].includes(j.id),
-        );
-        for (const j of realJurisdictions) {
-          options.push({
-            value: j.id,
-            label_en: j.label,
-            label_fr: j.label_fr ?? j.label,
-            label_de: j.label_de ?? j.label,
-          });
-        }
-        // Add "I don't know" option
-        options.push({
-          value: "UNKNOWN",
-          label_en: "I don't know",
-          label_fr: "Je ne sais pas",
-          label_de: "Ich weiß nicht",
-        });
-      }
+      const options = buildQuestionOptions(q.value_type, jurisdictionVocab);
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const raw = q as any;
@@ -205,6 +177,49 @@ function buildIntakeFile(
     resolve(webDir, "intake", `${lifeEvent}.json`),
     JSON.stringify(intake, null, 2),
   );
+}
+
+/** Build options array for a question. Only jurisdiction_code types get options. */
+function buildQuestionOptions(
+  valueType: string,
+  jurisdictionVocab: JurisdictionEntry[],
+): Array<{
+  value: string;
+  label_en: string;
+  label_fr: string;
+  label_de: string;
+}> {
+  if (valueType !== "jurisdiction_code") return [];
+
+  const options: Array<{
+    value: string;
+    label_en: string;
+    label_fr: string;
+    label_de: string;
+  }> = [];
+
+  // Add real jurisdiction options (exclude meta-jurisdictions)
+  const realJurisdictions = jurisdictionVocab.filter(
+    (j) => !["EU", "XBORDER", "GLOBAL"].includes(j.id),
+  );
+  for (const j of realJurisdictions) {
+    options.push({
+      value: j.id,
+      label_en: j.label,
+      label_fr: j.label_fr ?? j.label,
+      label_de: j.label_de ?? j.label,
+    });
+  }
+
+  // Add "I don't know" option
+  options.push({
+    value: "UNKNOWN",
+    label_en: "I don't know",
+    label_fr: "Je ne sais pas",
+    label_de: "Ich weiß nicht",
+  });
+
+  return options;
 }
 
 /** Collect all transitively referenced entity IDs from consequences. */
