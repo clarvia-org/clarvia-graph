@@ -1,0 +1,48 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`runCheckAnchors characterization > snapshots the full results array for determinism 1`] = `
+[
+  {
+    "assertionId": "assertion.guichet_lu.bereavement.death_must_be_declared",
+    "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.bereavement.2026_06_03",
+    "textQuote": "declared within 24 hours to the civil registrar's office",
+  },
+  {
+    "assertionId": "assertion.guichet_lu.bereavement.declaration_within_24h",
+    "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.bereavement.2026_06_03",
+    "textQuote": "within 24 hours",
+  },
+  {
+    "assertionId": "assertion.guichet_lu.bereavement.survivor_pension_available",
+    "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.bereavement.2026_06_03",
+    "textQuote": "survivor's pension",
+  },
+  {
+    "assertionId": "assertion.guichet_lu.declaration_succession.inheritance_declaration_required",
+    "file": "sources/assertions/lu/guichet_lu/declaration_succession.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.declaration_succession.2026_06_05",
+    "textQuote": "déposée par écrit dans les 6 mois du décès",
+  },
+  {
+    "assertionId": "assertion.service_public_fr.succession.notaire_obligatoire",
+    "file": "sources/assertions/fr/service_public_fr/succession.yml",
+    "found": true,
+    "snapshotId": "snapshot.service_public_fr.succession.2026_06_05",
+    "textQuote": "Le recours à un notaire est-il obligatoire dans le cadre d'une succession",
+  },
+  {
+    "assertionId": "assertion.service_public_fr.succession.option_successorale",
+    "file": "sources/assertions/fr/service_public_fr/succession.yml",
+    "found": true,
+    "snapshotId": "snapshot.service_public_fr.succession.2026_06_05",
+    "textQuote": "Accepter ou renoncer à la succession (option successorale)",
+  },
+]
+`;

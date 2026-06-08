@@ -1,0 +1,843 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`runValidate characterization against real graph > pins exact error messages for any invalid files 1`] = `[]`;
+
+exports[`runValidate characterization against real graph > pins schema assignments for all validated files 1`] = `
+[
+  {
+    "file": "graph/authorities/be/sfp.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/de/drv.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/de/standesamt.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/eu/ejustice_portal.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/fr/carsat.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/fr/notaire.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/fr/scec.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/acd.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/aed.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/bureau_etat_civil.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/ccss.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/chambre_notaires.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/cnap.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/cns.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/cssf.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/district_court_registry.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/employer.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/medecin_inspecteur_sante.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/ministry_economy_business_permits.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/snca.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/lu/vdl_bierger_center.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/authorities/pt/seguranca_social.yml",
+    "schema": "authority.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/de/death_occurred_in_de.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/de/deceased_was_de_insured.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/fr/assets_in_fr.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/aed_declaration_may_be_required.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/cohabitant_lived_six_months.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/death_occurred_in_lu.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/deceased_owned_real_estate.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/deceased_owned_vehicle.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/deceased_was_lu_health_insured.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/deceased_was_lu_insured.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/deceased_was_self_employed.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/deceased_was_tenant.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/habitual_residence_lu.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/relationship_eligible_survivor.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/survivor_is_employee.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/lu/survivor_is_spouse_or_partner.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/xborder/cross_border_pension.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/conditions/bereavement/xborder/repatriation_requested.yml",
+    "schema": "condition.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/de/claim_survivor_pension_de.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/de/register_death_de.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/fr/settle_fr_succession.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/arrange_funeral_or_cremation.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/claim_bereavement_leave.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/claim_funeral_allowance.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/claim_survivor_pension.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/decide_accept_or_renounce.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/declare_death.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/engage_notary.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/file_final_income_tax_return.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/file_inheritance_declaration.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/notify_banks_trace_assets.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/notify_ccss_business_matters.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/obtain_medical_death_certificate.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/transfer_vehicle_registration.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/understand_applicable_succession_law.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/lu/understand_housing_rights.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/consequences/bereavement/xborder/coordinate_cross_border_pension.yml",
+    "schema": "consequence.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/bereavement_leave_at_event.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/death_declaration_deadline.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/final_tax_return_31dec.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/funeral_allowance_2y.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/funeral_cremation_72h.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/inventory_3mo.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/notify_ccss_8d.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/notify_ministry_economy_1mo.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/reflection_40d.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/deadlines/bereavement/lu/succession_declaration_6mo.yml",
+    "schema": "deadline.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/eu/european_certificate_succession.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/global/death_certificate.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/global/identity_document.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/global/marriage_certificate.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/global/proof_of_payment.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/global/rib.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/global/school_certificate.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/acte_de_notoriete.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/aed_attestation_succession.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/burial_or_cremation_authorisation.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/cnap_survivor_pension_form.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/cremation_intent_proof.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/death_certificate.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/funeral_invoice_paid.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/identity_document_deceased.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/livret_de_famille.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/marriage_certificate.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/medical_death_certificate.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/non_violent_death_certificate.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/pacemaker_certificate.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/proof_cohabitation.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/succession_declaration.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/tax_return_form_100.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/transfer_agreement_heirs.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/valid_insurance_certificate.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/valid_technical_inspection.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/vehicle_registration_certificate_part1.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/evidence_types/lu/vehicle_registration_certificate_part2.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/forms/lu/model_100.yml",
+    "schema": "form.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/forms/lu/orphan_pension_application.yml",
+    "schema": "form.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/forms/lu/registration_certificate_application.yml",
+    "schema": "form.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/forms/lu/survivor_pension_application.yml",
+    "schema": "form.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/forms/lu/wills_register_search.yml",
+    "schema": "form.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/date_of_death.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/death_datetime.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/deceased_employment_status.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/deceased_habitual_residence.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/deceased_owned_vehicle.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/deceased_pension_jurisdiction.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/deceased_was_tenant.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/estate_asset_country.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/estate_real_estate_exists.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/jurisdiction_of_death.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/marriage_or_partnership_status.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/relationship_to_deceased.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/repatriation_requested.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/survivor_cohabitation_months.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/intake_fact_types/bereavement/survivor_employment_status.yml",
+    "schema": "intake_fact_type.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/de/file_drv_claim.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/de/register_death_standesamt.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/fr/estate_assets/engage_notaire.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/arrange_funeral_or_cremation.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/claim_bereavement_leave.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/claim_funeral_allowance.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/decide_accept_renounce.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/engage_notary.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/file_aed_declaration.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/file_cnap_claim.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/file_death_declaration.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/file_final_income_tax_return.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/notify_banks_trace_assets.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/notify_ccss_business_matters.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/obtain_medical_death_certificate.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/transfer_vehicle_registration.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/understand_applicable_succession_law.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/lu/understand_housing_rights.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "graph/task_templates/bereavement/xborder/coordinate_pension_institutions.yml",
+    "schema": "task_template.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/fr/service_public_fr/succession.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/guichet_lu/declaration_succession.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/guichet_lu_bereavement_2026_06_03.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/guichet_lu_declaration_succession_2026_06_05.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/service_public_fr_succession_2026_06_05.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+]
+`;
+
+exports[`runValidate characterization against real graph > pins total file count and pass/fail breakdown 1`] = `
+{
+  "invalid": 0,
+  "total": 142,
+  "valid": 142,
+}
+`;
+
+exports[`runValidate characterization against real graph > pins total file count and pass/fail breakdown 2`] = `true`;
+
+exports[`runValidate characterization against real graph > validates condition-intake cross-references exist 1`] = `
+[
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/xborder/repatriation_requested.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/xborder/cross_border_pension.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/survivor_is_spouse_or_partner.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/survivor_is_employee.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/relationship_eligible_survivor.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/habitual_residence_lu.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/deceased_was_tenant.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/deceased_was_self_employed.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/deceased_was_lu_insured.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/deceased_was_lu_health_insured.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/deceased_owned_vehicle.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/deceased_owned_real_estate.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/death_occurred_in_lu.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/cohabitant_lived_six_months.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/lu/aed_declaration_may_be_required.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/fr/assets_in_fr.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/de/deceased_was_de_insured.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "graph/conditions/bereavement/de/death_occurred_in_de.yml",
+    "valid": true,
+  },
+]
+`;
+
+exports[`runValidate characterization against real graph > validates snapshot integrity checks exist 1`] = `
+[
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/service_public_fr_succession_2026_06_05.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/guichet_lu_declaration_succession_2026_06_05.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/guichet_lu_bereavement_2026_06_03.yml",
+    "valid": true,
+  },
+]
+`;
