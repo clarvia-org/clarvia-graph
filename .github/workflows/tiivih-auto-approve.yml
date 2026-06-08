@@ -4,8 +4,12 @@
 name: Register TiiVih approval
 
 on:
+  # PR conversation comment (main comment box)
   issue_comment:
     types: [created]
+  # PR review submission (Review changes → Comment/Approve)
+  pull_request_review:
+    types: [submitted]
 
 permissions:
   contents: read
@@ -15,22 +19,44 @@ jobs:
     name: Submit APPROVED review
     runs-on: ubuntu-latest
 
-    # Only trigger on PR comments (not issue comments) by TiiVih
+    # Only trigger for TiiVih on PRs
     if: >
-      github.event.issue.pull_request != null &&
-      github.event.comment.user.login == 'TiiVih'
+      (
+        github.event_name == 'issue_comment' &&
+        github.event.issue.pull_request != null &&
+        github.event.comment.user.login == 'TiiVih'
+      ) || (
+        github.event_name == 'pull_request_review' &&
+        github.event.review.user.login == 'TiiVih' &&
+        github.event.review.state == 'commented'
+      )
 
     steps:
-      - name: Check comment is exactly "ok" or "ok." (case-insensitive)
-        id: check
+      - name: Extract comment body and PR number
+        id: extract
         env:
-          COMMENT_BODY: ${{ github.event.comment.body }}
+          # Use the right field depending on event type
+          COMMENT_BODY_IC: ${{ github.event.comment.body }}
+          COMMENT_BODY_PR: ${{ github.event.review.body }}
+          PR_NUMBER_IC: ${{ github.event.issue.number }}
+          PR_NUMBER_PR: ${{ github.event.pull_request.number }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
+          if [[ "$EVENT_NAME" == "issue_comment" ]]; then
+            body="$COMMENT_BODY_IC"
+            pr="$PR_NUMBER_IC"
+          else
+            body="$COMMENT_BODY_PR"
+            pr="$PR_NUMBER_PR"
+          fi
+
           # Strip whitespace and newlines, lowercase
-          body=$(echo "$COMMENT_BODY" \
+          body=$(echo "$body" \
             | tr '[:upper:]' '[:lower:]' \
             | tr -d '\r\n' \
             | xargs)
+
+          echo "pr_number=$pr" >> "$GITHUB_OUTPUT"
           if [[ "$body" == "ok" || "$body" == "ok." ]]; then
             echo "approved=true" >> "$GITHUB_OUTPUT"
           else
@@ -38,10 +64,10 @@ jobs:
           fi
 
       - name: Submit APPROVED review as TiiVih
-        if: steps.check.outputs.approved == 'true'
+        if: steps.extract.outputs.approved == 'true'
         env:
           GH_TOKEN: ${{ secrets.TIIVIH_REVIEW_TOKEN }}
-          PR_NUMBER: ${{ github.event.issue.number }}
+          PR_NUMBER: ${{ steps.extract.outputs.pr_number }}
           REPO: ${{ github.repository }}
         run: |
           HEAD_SHA=$(gh api /repos/$REPO/pulls/$PR_NUMBER --jq '.head.sha')
