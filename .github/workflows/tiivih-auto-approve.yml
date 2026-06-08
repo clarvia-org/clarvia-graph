@@ -23,9 +23,11 @@ jobs:
     steps:
       - name: Check comment is exactly "ok" or "ok." (case-insensitive)
         id: check
+        env:
+          COMMENT_BODY: ${{ github.event.comment.body }}
         run: |
           # Strip whitespace and newlines, lowercase
-          body=$(echo "${{ github.event.comment.body }}" \
+          body=$(echo "$COMMENT_BODY" \
             | tr '[:upper:]' '[:lower:]' \
             | tr -d '\r\n' \
             | xargs)
