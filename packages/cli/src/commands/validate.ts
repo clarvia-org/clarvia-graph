@@ -288,14 +288,18 @@ function validateArchiveHash(
 
 // ── Assertion anchor validation ──────────────────────────────────────
 
-function validateAssertionAnchors(
+interface AssertionBatchData {
+  assertions: unknown[];
+  normalizedHtmlText: string;
+  archiveUri: string;
+}
+
+/** Load and resolve an assertion batch file's snapshot and archive content. */
+function loadAssertionBatchData(
   file: string,
   snapshotMap: Map<string, SnapshotEntry>,
   rootDir: string,
-): { relPath: string; errors: string[] } | null {
-  const getRel = (abs: string): string => toPosixRel(abs, rootDir);
-  const relPath = getRel(file);
-
+): AssertionBatchData | null {
   let rawData: Record<string, unknown> | null;
   try {
     rawData = parseYaml(readFileSync(file, "utf-8")) as Record<string, unknown>;
@@ -311,8 +315,7 @@ function validateAssertionAnchors(
   const snapshotEntry = snapshotMap.get(snapshotId);
   if (!snapshotEntry) return null;
 
-  const { data: snapshotData } = snapshotEntry;
-  const archiveUri = snapshotData.archive_uri;
+  const archiveUri = snapshotEntry.data.archive_uri;
   if (typeof archiveUri !== "string") return null;
 
   const archivePath = resolve(rootDir, archiveUri);
@@ -325,21 +328,37 @@ function validateAssertionAnchors(
     return null;
   }
 
-  const normalizedHtmlText = getNormalizedTextContent(archiveContent);
   const assertions = rawData.assertions;
   if (!Array.isArray(assertions)) return null;
 
+  return {
+    assertions,
+    normalizedHtmlText: getNormalizedTextContent(archiveContent),
+    archiveUri: archiveUri as string,
+  };
+}
+
+function validateAssertionAnchors(
+  file: string,
+  snapshotMap: Map<string, SnapshotEntry>,
+  rootDir: string,
+): { relPath: string; errors: string[] } | null {
+  const relPath = toPosixRel(file, rootDir);
+  const batchData = loadAssertionBatchData(file, snapshotMap, rootDir);
+  if (!batchData) return null;
+
   const errors: string[] = [];
-  for (const assertion of assertions) {
+  for (const assertion of batchData.assertions) {
     if (!assertion || typeof assertion !== "object") continue;
-    const anchor = assertion.anchor;
+    const a = assertion as Record<string, unknown>;
+    const anchor = a.anchor as Record<string, unknown> | undefined;
     if (anchor && typeof anchor === "object" && anchor.selector_type === "text_quote") {
       const textQuote = anchor.text_quote;
       if (typeof textQuote === "string") {
         const normalizedQuote = normalizeText(textQuote);
-        if (!normalizedHtmlText.includes(normalizedQuote)) {
+        if (!batchData.normalizedHtmlText.includes(normalizedQuote)) {
           errors.push(
-            `Assertion "${assertion.id}" anchor text_quote "${textQuote}" not found in snapshot archive "${archiveUri}"`
+            `Assertion "${a.id}" anchor text_quote "${textQuote}" not found in snapshot archive "${batchData.archiveUri}"`
           );
         }
       }
@@ -470,13 +489,11 @@ function checkConditionVarPaths(
   return errors;
 }
 
-/** Check concept refs resolve to intake fact types and cover var paths. */
-function checkConceptRefs(
+/** Resolve concept ref IDs to their intake fact paths, collecting errors for missing refs. */
+function resolveConceptRefPaths(
   conceptRefs: unknown,
   intakeIdToPath: Map<string, string>,
-  varPaths: string[],
-  intakePathToId: Map<string, string>,
-): string[] {
+): { referencedPaths: Set<string>; errors: string[] } {
   const errors: string[] = [];
   const referencedPaths = new Set<string>();
 
@@ -495,6 +512,16 @@ function checkConceptRefs(
     errors.push("Field information_concept_refs must be an array");
   }
 
+  return { referencedPaths, errors };
+}
+
+/** Check that all var paths used in a condition are covered by concept refs. */
+function checkVarPathsCoverage(
+  varPaths: string[],
+  referencedPaths: Set<string>,
+  intakePathToId: Map<string, string>,
+): string[] {
+  const errors: string[] = [];
   for (const varPath of varPaths) {
     if (NON_INTAKE_CONDITION_VARS.has(varPath)) continue;
 
@@ -505,7 +532,18 @@ function checkConceptRefs(
       );
     }
   }
+  return errors;
+}
 
+/** Check concept refs resolve to intake fact types and cover var paths. */
+function checkConceptRefs(
+  conceptRefs: unknown,
+  intakeIdToPath: Map<string, string>,
+  varPaths: string[],
+  intakePathToId: Map<string, string>,
+): string[] {
+  const { referencedPaths, errors } = resolveConceptRefPaths(conceptRefs, intakeIdToPath);
+  errors.push(...checkVarPathsCoverage(varPaths, referencedPaths, intakePathToId));
   return errors;
 }
 

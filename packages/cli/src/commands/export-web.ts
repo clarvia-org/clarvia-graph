@@ -231,15 +231,43 @@ interface TransitiveRefs {
   evidenceTypeIds: Set<string>;
 }
 
+/** Collect evidence type refs from a single task template. */
+function collectEvidenceTypeRefs(
+  t: { evidence_requirements?: { sets: Array<{ evidence_type_refs: string[] }> } },
+): string[] {
+  if (!t.evidence_requirements) return [];
+  const refs: string[] = [];
+  for (const set of t.evidence_requirements.sets) {
+    for (const ref of set.evidence_type_refs) refs.push(ref);
+  }
+  return refs;
+}
+
+function collectTaskTemplateRefs(
+  taskTemplateIds: Set<string>,
+  graph: LoadedGraph,
+): { authorityIds: Set<string>; deadlineIds: Set<string>; evidenceTypeIds: Set<string> } {
+  const authorityIds = new Set<string>();
+  const deadlineIds = new Set<string>();
+  const evidenceTypeIds = new Set<string>();
+
+  for (const id of taskTemplateIds) {
+    const t = graph.taskTemplates.get(id);
+    if (!t) continue;
+    for (const ref of t.authority_refs ?? []) authorityIds.add(ref);
+    for (const ref of t.deadline_refs ?? []) deadlineIds.add(ref);
+    for (const ref of collectEvidenceTypeRefs(t)) evidenceTypeIds.add(ref);
+  }
+
+  return { authorityIds, deadlineIds, evidenceTypeIds };
+}
+
 function collectTransitiveRefs(
   consequences: Array<Record<string, unknown>>,
   graph: LoadedGraph,
 ): TransitiveRefs {
   const conditionIds = new Set<string>();
   const taskTemplateIds = new Set<string>();
-  const authorityIds = new Set<string>();
-  const deadlineIds = new Set<string>();
-  const evidenceTypeIds = new Set<string>();
 
   for (const c of consequences) {
     for (const ref of (c.trigger as Record<string, unknown>)?.condition_refs as string[] ?? []) {
@@ -250,17 +278,7 @@ function collectTransitiveRefs(
     }
   }
 
-  for (const id of taskTemplateIds) {
-    const t = graph.taskTemplates.get(id);
-    if (!t) continue;
-    for (const ref of t.authority_refs ?? []) authorityIds.add(ref);
-    for (const ref of t.deadline_refs ?? []) deadlineIds.add(ref);
-    if (t.evidence_requirements) {
-      for (const set of t.evidence_requirements.sets) {
-        for (const ref of set.evidence_type_refs) evidenceTypeIds.add(ref);
-      }
-    }
-  }
+  const { authorityIds, deadlineIds, evidenceTypeIds } = collectTaskTemplateRefs(taskTemplateIds, graph);
 
   return { conditionIds, taskTemplateIds, authorityIds, deadlineIds, evidenceTypeIds };
 }

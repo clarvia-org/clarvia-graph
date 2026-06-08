@@ -589,6 +589,46 @@ function mergeCandidateGroup(
   return mergedItem;
 }
 
+/** Group candidates by their consequence jurisdiction (uppercased). */
+function groupByJurisdiction(
+  list: CandidateItem[],
+): Map<string, CandidateItem[]> {
+  const groups = new Map<string, CandidateItem[]>();
+  for (const c of list) {
+    const j = c.consequence.jurisdiction.toUpperCase();
+    let sub = groups.get(j);
+    if (!sub) {
+      sub = [];
+      groups.set(j, sub);
+    }
+    sub.push(c);
+  }
+  return groups;
+}
+
+/** Process a single dedupe group according to its strategy, returning ChecklistItems. */
+function processDedupeGroup(
+  list: CandidateItem[],
+  strategy: string,
+  scenarioHash: string,
+  explanationTraces: ExplanationTrace[],
+): ChecklistItem[] {
+  if (strategy === "do_not_merge_across_jurisdictions") {
+    const jurisdictionGroups = groupByJurisdiction(list);
+    const items: ChecklistItem[] = [];
+    for (const [, subList] of jurisdictionGroups.entries()) {
+      items.push(mergeCandidateGroup(subList, scenarioHash, explanationTraces));
+    }
+    return items;
+  }
+
+  if (strategy === "merge") {
+    return [mergeCandidateGroup(list, scenarioHash, explanationTraces)];
+  }
+
+  return list.map(c => addSingleCandidate(c, explanationTraces));
+}
+
 /** Apply dedupe strategy to each group and produce final items. */
 function applyDedupeStrategy(
   groups: Map<string, CandidateItem[]>,
@@ -598,29 +638,7 @@ function applyDedupeStrategy(
   const finalItems: ChecklistItem[] = [];
 
   for (const [, list] of groups.entries()) {
-    const strategy = list[0].strategy;
-    if (strategy === "do_not_merge_across_jurisdictions") {
-      const jurisdictionGroups = new Map<string, CandidateItem[]>();
-      for (const c of list) {
-        const j = c.consequence.jurisdiction.toUpperCase();
-        let sub = jurisdictionGroups.get(j);
-        if (!sub) {
-          sub = [];
-          jurisdictionGroups.set(j, sub);
-        }
-        sub.push(c);
-      }
-
-      for (const [, subList] of jurisdictionGroups.entries()) {
-        finalItems.push(mergeCandidateGroup(subList, scenarioHash, explanationTraces));
-      }
-    } else if (strategy === "merge") {
-      finalItems.push(mergeCandidateGroup(list, scenarioHash, explanationTraces));
-    } else {
-      for (const c of list) {
-        finalItems.push(addSingleCandidate(c, explanationTraces));
-      }
-    }
+    finalItems.push(...processDedupeGroup(list, list[0].strategy, scenarioHash, explanationTraces));
   }
 
   return finalItems;

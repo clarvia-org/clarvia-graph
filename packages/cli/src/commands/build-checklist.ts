@@ -20,7 +20,7 @@ interface ParsedArgs {
   facts: Fact[];
 }
 
-function parseArgs(args: string[], rootDir: string): ParsedArgs {
+export function parseArgs(args: string[], rootDir: string): ParsedArgs {
   let facts: Fact[] = [];
   let lifeEvent = "bereavement";
 
@@ -54,7 +54,31 @@ function parseArgs(args: string[], rootDir: string): ParsedArgs {
 
 // ── output printing ──────────────────────────────────────────────────
 
-function printChecklist(output: ChecklistOutput, lifeEvent: string): void {
+const statusIcons: Record<string, string> = {
+  applies: "✔",
+  needs_fact: "?",
+  maybe_applies: "~",
+};
+
+function printItem(item: ChecklistOutput["items"][number]): void {
+  const statusIcon = statusIcons[item.status] ?? "✘";
+  const urgencyTag = item.urgency?.label
+    ? ` [${item.urgency.label}]`
+    : "";
+  console.log(`  ${statusIcon} ${item.title}${urgencyTag}`);
+
+  if (item.action?.authority_name) {
+    console.log(`    → ${item.action.authority_name}`);
+  }
+  if (item.urgency?.deadline_label) {
+    console.log(`    ⏰ ${item.urgency.deadline_label}`);
+  }
+  if (item.why_maybe) {
+    console.log(`    ⚠ ${item.why_maybe}`);
+  }
+}
+
+export function printChecklist(output: ChecklistOutput, lifeEvent: string): void {
   console.log(`\n${"═".repeat(60)}`);
   console.log(` CHECKLIST: ${lifeEvent}`);
   console.log(`${"═".repeat(60)}`);
@@ -73,26 +97,7 @@ function printChecklist(output: ChecklistOutput, lifeEvent: string): void {
     );
 
     for (const item of sectionItems) {
-      const statusIcons: Record<string, string> = {
-        applies: "✔",
-        needs_fact: "?",
-        maybe_applies: "~",
-      };
-      const statusIcon = statusIcons[item.status] ?? "✘";
-      const urgencyTag = item.urgency?.label
-        ? ` [${item.urgency.label}]`
-        : "";
-      console.log(`  ${statusIcon} ${item.title}${urgencyTag}`);
-
-      if (item.action?.authority_name) {
-        console.log(`    → ${item.action.authority_name}`);
-      }
-      if (item.urgency?.deadline_label) {
-        console.log(`    ⏰ ${item.urgency.deadline_label}`);
-      }
-      if (item.why_maybe) {
-        console.log(`    ⚠ ${item.why_maybe}`);
-      }
+      printItem(item);
     }
   }
 
