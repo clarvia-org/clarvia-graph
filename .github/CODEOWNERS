@@ -1,6 +1,13 @@
 # CODEOWNERS - workflow-web
-# These owners are automatically requested for review on PRs
-# that modify the matching paths.
+#
+# Repository ownership
+#
+# The maintainer is the default code owner for all files.
+# Community contributions are reviewed by the maintainer before merge.
+# Maintainer-authored pull requests request async external review via GitHub Actions.
+
+# Default owner for all files
+*                           @TommiLindfors
 
 # Core layout and routing
 /src/app/layout.tsx         @TommiLindfors
