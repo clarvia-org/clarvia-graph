@@ -1,0 +1,32 @@
+# SPDX-FileCopyrightText: 2025-2026 CLARVIA ASBL, Luxembourg
+# SPDX-License-Identifier: EUPL-1.2
+
+name: Request async external review
+
+on:
+  pull_request:
+    types:
+      - opened
+      - ready_for_review
+      - reopened
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  request-review:
+    name: Request @TiiVih review
+    runs-on: ubuntu-latest
+
+    if: >
+      github.event.pull_request.user.login == 'TommiLindfors' &&
+      github.event.pull_request.draft == false
+
+    steps:
+      - name: Request reviewer
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: |
+          gh pr edit "$PR_URL" --add-reviewer TiiVih
