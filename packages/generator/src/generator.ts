@@ -122,6 +122,12 @@ const GROUP_ORDER: Record<string, { order: number; label: string }> = {
   },
 };
 
+// ── Distribution filter ─────────────────────────────────────────────
+// Per spec §10.6, only public_open and public_metadata_only records
+// may appear in generated checklists.
+
+const PUBLIC_DISTRIBUTION = new Set(["public_open", "public_metadata_only"]);
+
 // ── Deterministic item ID ────────────────────────────────────────────
 // Per spec §14.1: hash includes task_template_id, resolved_subject_id,
 // jurisdiction, authority_id, dedupe_group_key, and generator_version.
@@ -334,6 +340,336 @@ export interface GenerateOptions {
   eventDate?: string;
 }
 
+// ── Candidate item (internal pipeline type) ──────────────────────────
+
+interface CandidateItem {
+  item: ChecklistItem;
+  consequence: Consequence;
+  template: TaskTemplate | null;
+  trace: ExplanationTrace | null;
+  dedupeKey: string;
+  strategy: string;
+}
+
+// ── Step 3: Filter candidate consequences ────────────────────────────
+
+function filterCandidateConsequences(
+  graph: LoadedGraph,
+  lifeEvent: string,
+  relevantJurisdictions: Set<string>,
+  temporalCtx: TemporalContext,
+): Consequence[] {
+  const candidates: Consequence[] = [];
+  for (const [, consequence] of graph.consequences) {
+    if (consequence.life_event !== lifeEvent) continue;
+
+    if (!PUBLIC_DISTRIBUTION.has(consequence.distribution_status)) {
+      continue;
+    }
+
+    const juris = consequence.jurisdiction?.toUpperCase();
+    if (juris && !relevantJurisdictions.has(juris) && !relevantJurisdictions.has(juris.toLowerCase())) {
+      continue;
+    }
+
+    if (!recordApplies(consequence, temporalCtx)) {
+      continue;
+    }
+
+    candidates.push(consequence);
+  }
+  return candidates;
+}
+
+// ── Step 4: Evaluate consequence conditions ──────────────────────────
+
+function evaluateConsequenceConditions(
+  consequence: Consequence,
+  conditionResultCache: Map<string, { result: TriValue; missingFacts: string[] }>,
+  graph: LoadedGraph,
+  facts: Fact[],
+  temporalCtx: TemporalContext,
+): { overallResult: TriValue; allMissingFacts: string[] } {
+  const conditionRefs = consequence.trigger?.condition_refs ?? [];
+  let overallResult: TriValue = true;
+  const allMissingFacts: string[] = [];
+
+  for (const condRef of conditionRefs) {
+    let cached = conditionResultCache.get(condRef);
+    if (!cached) {
+      const condition = graph.conditions.get(condRef);
+      if (!condition) {
+        cached = { result: "unknown", missingFacts: [] };
+      } else if (!recordApplies(condition, temporalCtx)) {
+        cached = { result: false, missingFacts: [] };
+      } else {
+        cached = evaluateCondition(condition.expression, facts);
+      }
+      conditionResultCache.set(condRef, cached);
+    }
+
+    allMissingFacts.push(...cached.missingFacts);
+
+    if (cached.result === false) {
+      overallResult = false;
+      break;
+    }
+    if (cached.result === "unknown") {
+      overallResult = "unknown";
+    }
+  }
+
+  if (conditionRefs.length === 0) {
+    overallResult = true;
+  }
+
+  return { overallResult, allMissingFacts };
+}
+
+// ── Step 5: Expand consequence into candidate items ──────────────────
+
+function expandConsequenceToItems(
+  consequence: Consequence,
+  overallResult: TriValue,
+  allMissingFacts: string[],
+  conditionRefs: string[],
+  conditionResultCache: Map<string, { result: TriValue; missingFacts: string[] }>,
+  scenarioHash: string,
+  graph: LoadedGraph,
+  temporalCtx: TemporalContext,
+): CandidateItem[] {
+  const taskRefs = consequence.task_template_refs ?? [];
+  const results: CandidateItem[] = [];
+
+  if (taskRefs.length === 0) {
+    const item = makeItem(scenarioHash, consequence, null, overallResult, allMissingFacts, graph, temporalCtx);
+    let trace: ExplanationTrace | null = null;
+    if (item.status !== "does_not_apply") {
+      trace = buildExplanationTrace(
+        `trace.${item.id}`,
+        consequence.id,
+        conditionRefs,
+        conditionResultCache,
+        graph,
+        temporalCtx,
+      );
+      item.explanation_trace_id = trace.id;
+    }
+    const { key, strategy } = resolveDedupeKey(null, consequence);
+    results.push({ item, consequence, template: null, trace, dedupeKey: key, strategy });
+  } else {
+    for (const taskRef of taskRefs) {
+      const template = graph.taskTemplates.get(taskRef);
+      if (template && !recordApplies(template, temporalCtx)) {
+        continue;
+      }
+      const item = makeItem(
+        scenarioHash,
+        consequence,
+        template ?? null,
+        overallResult,
+        allMissingFacts,
+        graph,
+        temporalCtx,
+      );
+
+      let trace: ExplanationTrace | null = null;
+      if (item.status !== "does_not_apply") {
+        trace = buildExplanationTrace(
+          `trace.${item.id}`,
+          consequence.id,
+          conditionRefs,
+          conditionResultCache,
+          graph,
+          temporalCtx,
+        );
+        item.explanation_trace_id = trace.id;
+      }
+      const { key, strategy } = resolveDedupeKey(template ?? null, consequence);
+      results.push({ item, consequence, template: template ?? null, trace, dedupeKey: key, strategy });
+    }
+  }
+
+  return results;
+}
+
+// ── Deduplication pipeline ───────────────────────────────────────────
+
+/** Group candidates into a Map keyed by their dedupeKey. */
+function groupCandidatesByDedupeKey(
+  candidates: CandidateItem[],
+): Map<string, CandidateItem[]> {
+  const groups = new Map<string, CandidateItem[]>();
+  for (const c of candidates) {
+    let list = groups.get(c.dedupeKey);
+    if (!list) {
+      list = [];
+      groups.set(c.dedupeKey, list);
+    }
+    list.push(c);
+  }
+  return groups;
+}
+
+/** Add a single candidate to the output, pushing its trace if present. */
+function addSingleCandidate(
+  candidate: CandidateItem,
+  explanationTraces: ExplanationTrace[],
+): ChecklistItem {
+  if (candidate.trace) {
+    explanationTraces.push(candidate.trace);
+  }
+  return candidate.item;
+}
+
+/** Merge a group of candidates into a single checklist item. */
+function mergeCandidateGroup(
+  subList: CandidateItem[],
+  scenarioHash: string,
+  explanationTraces: ExplanationTrace[],
+): ChecklistItem {
+  if (subList.length === 1) {
+    return addSingleCandidate(subList[0], explanationTraces);
+  }
+
+  const base = subList[0].item;
+
+
+  const jurisdictions = new Set<string>();
+  const neededFor = new Set<string>();
+  const missingFacts = new Set<string>();
+  const statuses: ItemStatus[] = [];
+  const tracesToMerge: ExplanationTrace[] = [];
+
+  let totalAssertionCount = 0;
+
+  for (const c of subList) {
+    for (const j of c.item.jurisdiction_contexts) jurisdictions.add(j);
+    for (const n of c.item.needed_for) neededFor.add(n);
+    for (const f of c.item.missing_fact_refs) missingFacts.add(f);
+    statuses.push(c.item.status);
+    if (c.trace) {
+      tracesToMerge.push(c.trace);
+    }
+    totalAssertionCount += c.item.source_summary?.assertion_count ?? 0;
+  }
+
+  const mergedStatus = mergeStatuses(statuses);
+
+  const mergedIdentity = subList
+    .map(c => `${c.consequence.id}::${c.template?.id ?? c.consequence.id}`)
+    .sort((a, b) => a.localeCompare(b))
+    .join("|");
+  const mergedGroupHash = createHash("sha256")
+    .update(mergedIdentity)
+    .digest("hex")
+    .slice(0, 12);
+  const mergedItemId = `checklist_item.${scenarioHash}.${mergedGroupHash}`;
+
+  const mergedItem: ChecklistItem = {
+    ...base,
+    id: mergedItemId,
+    status: mergedStatus,
+    jurisdiction_contexts: [...jurisdictions].sort((a, b) => a.localeCompare(b)),
+    needed_for: [...neededFor].sort((a, b) => a.localeCompare(b)),
+    missing_fact_refs: [...missingFacts].sort((a, b) => a.localeCompare(b)),
+    source_summary: {
+      assertion_count: totalAssertionCount,
+      top_tier: null,
+    },
+  };
+
+  if (tracesToMerge.length > 0) {
+    const mergedTraceId = `trace.${mergedItem.id}`;
+    const mergedTrace = mergeExplanationTraces(tracesToMerge, mergedTraceId);
+    explanationTraces.push(mergedTrace);
+    mergedItem.explanation_trace_id = mergedTrace.id;
+  }
+
+  return mergedItem;
+}
+
+/** Apply dedupe strategy to each group and produce final items. */
+function applyDedupeStrategy(
+  groups: Map<string, CandidateItem[]>,
+  scenarioHash: string,
+  explanationTraces: ExplanationTrace[],
+): ChecklistItem[] {
+  const finalItems: ChecklistItem[] = [];
+
+  for (const [, list] of groups.entries()) {
+    const strategy = list[0].strategy;
+    if (strategy === "do_not_merge_across_jurisdictions") {
+      const jurisdictionGroups = new Map<string, CandidateItem[]>();
+      for (const c of list) {
+        const j = c.consequence.jurisdiction.toUpperCase();
+        let sub = jurisdictionGroups.get(j);
+        if (!sub) {
+          sub = [];
+          jurisdictionGroups.set(j, sub);
+        }
+        sub.push(c);
+      }
+
+      for (const [, subList] of jurisdictionGroups.entries()) {
+        finalItems.push(mergeCandidateGroup(subList, scenarioHash, explanationTraces));
+      }
+    } else if (strategy === "merge") {
+      finalItems.push(mergeCandidateGroup(list, scenarioHash, explanationTraces));
+    } else {
+      for (const c of list) {
+        finalItems.push(addSingleCandidate(c, explanationTraces));
+      }
+    }
+  }
+
+  return finalItems;
+}
+
+// ── Step 6: Build sections from visible items ────────────────────────
+
+function buildSections(visibleItems: ChecklistItem[]): ChecklistSection[] {
+  const sectionMap = new Map<string, number>();
+  for (const item of visibleItems) {
+    sectionMap.set(
+      item.checklist_group,
+      (sectionMap.get(item.checklist_group) ?? 0) + 1,
+    );
+  }
+
+  return [...sectionMap.entries()]
+    .map(([group, count]) => ({
+      group,
+      label: GROUP_ORDER[group]?.label ?? group,
+      item_count: count,
+    }))
+    .sort(
+      (a, b) =>
+        (GROUP_ORDER[a.group]?.order ?? 99) -
+        (GROUP_ORDER[b.group]?.order ?? 99),
+    );
+}
+
+// ── Count temporally-valid source refs ───────────────────────────────
+
+function countValidSourceRefs(
+  candidates: Consequence[],
+  graph: LoadedGraph,
+  temporalCtx: TemporalContext,
+): number {
+  const sourceRefs = new Set<string>();
+  for (const consequence of candidates) {
+    for (const ref of consequence.source_assertion_refs ?? []) {
+      const ass = graph.assertions.get(ref);
+      if (ass && !recordApplies(ass, temporalCtx)) {
+        continue;
+      }
+      sourceRefs.add(ref);
+    }
+  }
+  return sourceRefs.size;
+}
+
 // ── The 6-step algorithm ─────────────────────────────────────────────
 
 export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
@@ -372,241 +708,28 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   const relevantJurisdictions = getRelevantJurisdictions(jurisdictionRoles);
   const crossBorder = isCrossBorder(jurisdictionRoles);
 
-  const explanationTraces: ExplanationTrace[] = [];
+  // ─── Step 3: Filter candidate consequences ──────────────────────
+  const candidates = filterCandidateConsequences(graph, lifeEvent, relevantJurisdictions, temporalCtx);
 
-  // ─── Step 3: Retrieve candidate consequences ────────────────────
-  // Filter by life event, jurisdiction scope, temporal validity,
-  // and distribution status.  Per spec §10.6, only public_open and
-  // public_metadata_only records may appear in generated checklists.
-  const PUBLIC_DISTRIBUTION = new Set(["public_open", "public_metadata_only"]);
-  const candidates: Consequence[] = [];
-  for (const [, consequence] of graph.consequences) {
-    if (consequence.life_event !== lifeEvent) continue;
-
-    if (!PUBLIC_DISTRIBUTION.has(consequence.distribution_status)) {
-      continue;
-    }
-
-    const juris = consequence.jurisdiction?.toUpperCase();
-    if (juris && !relevantJurisdictions.has(juris) && !relevantJurisdictions.has(juris.toLowerCase())) {
-      continue;
-    }
-
-    if (!recordApplies(consequence, temporalCtx)) {
-      continue;
-    }
-
-    candidates.push(consequence);
-  }
-
-  // ─── Step 4: Evaluate conditions ────────────────────────────────
+  // ─── Step 4+5: Evaluate conditions + expand to items ────────────
   const conditionResultCache = new Map<string, { result: TriValue; missingFacts: string[] }>();
-
-  interface CandidateItem {
-    item: ChecklistItem;
-    consequence: Consequence;
-    template: TaskTemplate | null;
-    trace: ExplanationTrace | null;
-    dedupeKey: string;
-    strategy: string;
-  }
   const candidatesList: CandidateItem[] = [];
 
   for (const consequence of candidates) {
     const conditionRefs = consequence.trigger?.condition_refs ?? [];
-    let overallResult: TriValue = true;
-    const allMissingFacts: string[] = [];
-
-    for (const condRef of conditionRefs) {
-      let cached = conditionResultCache.get(condRef);
-      if (!cached) {
-        const condition = graph.conditions.get(condRef);
-        if (!condition) {
-          cached = { result: "unknown", missingFacts: [] };
-        } else if (!recordApplies(condition, temporalCtx)) {
-          cached = { result: false, missingFacts: [] };
-        } else {
-          cached = evaluateCondition(condition.expression, facts);
-        }
-        conditionResultCache.set(condRef, cached);
-      }
-
-      allMissingFacts.push(...cached.missingFacts);
-
-      if (cached.result === false) {
-        overallResult = false;
-        break;
-      }
-      if (cached.result === "unknown") {
-        overallResult = "unknown";
-      }
-    }
-
-    if (conditionRefs.length === 0) {
-      overallResult = true;
-    }
-
-    // ─── Step 5: Expand into checklist items via task templates ──
-    const taskRefs = consequence.task_template_refs ?? [];
-
-    if (taskRefs.length === 0) {
-      const item = makeItem(scenarioHash, consequence, null, overallResult, allMissingFacts, graph, temporalCtx);
-      let trace: ExplanationTrace | null = null;
-      if (item.status !== "does_not_apply") {
-        trace = buildExplanationTrace(
-          `trace.${item.id}`,
-          consequence.id,
-          conditionRefs,
-          conditionResultCache,
-          graph,
-          temporalCtx,
-        );
-        item.explanation_trace_id = trace.id;
-      }
-      const { key, strategy } = resolveDedupeKey(null, consequence);
-      candidatesList.push({ item, consequence, template: null, trace, dedupeKey: key, strategy });
-    } else {
-      for (const taskRef of taskRefs) {
-        const template = graph.taskTemplates.get(taskRef);
-        if (template && !recordApplies(template, temporalCtx)) {
-          continue;
-        }
-        const item = makeItem(
-          scenarioHash,
-          consequence,
-          template ?? null,
-          overallResult,
-          allMissingFacts,
-          graph,
-          temporalCtx,
-        );
-
-        let trace: ExplanationTrace | null = null;
-        if (item.status !== "does_not_apply") {
-          trace = buildExplanationTrace(
-            `trace.${item.id}`,
-            consequence.id,
-            conditionRefs,
-            conditionResultCache,
-            graph,
-            temporalCtx,
-          );
-          item.explanation_trace_id = trace.id;
-        }
-        const { key, strategy } = resolveDedupeKey(template ?? null, consequence);
-        candidatesList.push({ item, consequence, template: template ?? null, trace, dedupeKey: key, strategy });
-      }
-    }
+    const { overallResult, allMissingFacts } = evaluateConsequenceConditions(
+      consequence, conditionResultCache, graph, facts, temporalCtx,
+    );
+    candidatesList.push(...expandConsequenceToItems(
+      consequence, overallResult, allMissingFacts, conditionRefs,
+      conditionResultCache, scenarioHash, graph, temporalCtx,
+    ));
   }
 
-  // Deduplicate and merge candidates
-  const groups = new Map<string, CandidateItem[]>();
-  for (const c of candidatesList) {
-    let list = groups.get(c.dedupeKey);
-    if (!list) {
-      list = [];
-      groups.set(c.dedupeKey, list);
-    }
-    list.push(c);
-  }
-
-  const finalItems: ChecklistItem[] = [];
-
-  for (const [, list] of groups.entries()) {
-    const strategy = list[0].strategy;
-    if (strategy === "do_not_merge_across_jurisdictions") {
-      const jurisdictionGroups = new Map<string, CandidateItem[]>();
-      for (const c of list) {
-        const j = c.consequence.jurisdiction.toUpperCase();
-        let sub = jurisdictionGroups.get(j);
-        if (!sub) {
-          sub = [];
-          jurisdictionGroups.set(j, sub);
-        }
-        sub.push(c);
-      }
-
-      for (const [, subList] of jurisdictionGroups.entries()) {
-        mergeOrAdd(subList);
-      }
-    } else if (strategy === "merge") {
-      mergeOrAdd(list);
-    } else {
-      for (const c of list) {
-        if (c.trace) {
-          explanationTraces.push(c.trace);
-        }
-        finalItems.push(c.item);
-      }
-    }
-  }
-
-  function mergeOrAdd(subList: CandidateItem[]): void {
-    if (subList.length === 1) {
-      const c = subList[0];
-      if (c.trace) {
-        explanationTraces.push(c.trace);
-      }
-      finalItems.push(c.item);
-      return;
-    }
-
-    const base = subList[0].item;
-
-
-    const jurisdictions = new Set<string>();
-    const neededFor = new Set<string>();
-    const missingFacts = new Set<string>();
-    const statuses: ItemStatus[] = [];
-    const tracesToMerge: ExplanationTrace[] = [];
-
-    let totalAssertionCount = 0;
-
-    for (const c of subList) {
-      for (const j of c.item.jurisdiction_contexts) jurisdictions.add(j);
-      for (const n of c.item.needed_for) neededFor.add(n);
-      for (const f of c.item.missing_fact_refs) missingFacts.add(f);
-      statuses.push(c.item.status);
-      if (c.trace) {
-        tracesToMerge.push(c.trace);
-      }
-      totalAssertionCount += c.item.source_summary?.assertion_count ?? 0;
-    }
-
-    const mergedStatus = mergeStatuses(statuses);
-
-    const mergedIdentity = subList
-      .map(c => `${c.consequence.id}::${c.template?.id ?? c.consequence.id}`)
-      .sort((a, b) => a.localeCompare(b))
-      .join("|");
-    const mergedGroupHash = createHash("sha256")
-      .update(mergedIdentity)
-      .digest("hex")
-      .slice(0, 12);
-    const mergedItemId = `checklist_item.${scenarioHash}.${mergedGroupHash}`;
-
-    const mergedItem: ChecklistItem = {
-      ...base,
-      id: mergedItemId,
-      status: mergedStatus,
-      jurisdiction_contexts: [...jurisdictions].sort((a, b) => a.localeCompare(b)),
-      needed_for: [...neededFor].sort((a, b) => a.localeCompare(b)),
-      missing_fact_refs: [...missingFacts].sort((a, b) => a.localeCompare(b)),
-      source_summary: {
-        assertion_count: totalAssertionCount,
-        top_tier: null,
-      },
-    };
-
-    if (tracesToMerge.length > 0) {
-      const mergedTraceId = `trace.${mergedItem.id}`;
-      const mergedTrace = mergeExplanationTraces(tracesToMerge, mergedTraceId);
-      explanationTraces.push(mergedTrace);
-      mergedItem.explanation_trace_id = mergedTrace.id;
-    }
-
-    finalItems.push(mergedItem);
-  }
+  // ─── Deduplicate and merge candidates ───────────────────────────
+  const explanationTraces: ExplanationTrace[] = [];
+  const groups = groupCandidatesByDedupeKey(candidatesList);
+  const finalItems = applyDedupeStrategy(groups, scenarioHash, explanationTraces);
 
   // Sort — first by group order, then by urgency (desc), then by title
   finalItems.sort((a, b) => {
@@ -632,36 +755,8 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     professional_review: 0,
   };
 
-  const sectionMap = new Map<string, number>();
-  for (const item of visibleItems) {
-    sectionMap.set(
-      item.checklist_group,
-      (sectionMap.get(item.checklist_group) ?? 0) + 1,
-    );
-  }
-
-  const sections: ChecklistSection[] = [...sectionMap.entries()]
-    .map(([group, count]) => ({
-      group,
-      label: GROUP_ORDER[group]?.label ?? group,
-      item_count: count,
-    }))
-    .sort(
-      (a, b) =>
-        (GROUP_ORDER[a.group]?.order ?? 99) -
-        (GROUP_ORDER[b.group]?.order ?? 99),
-    );
-
-  const sourceRefs = new Set<string>();
-  for (const consequence of candidates) {
-    for (const ref of consequence.source_assertion_refs ?? []) {
-      const ass = graph.assertions.get(ref);
-      if (ass && !recordApplies(ass, temporalCtx)) {
-        continue;
-      }
-      sourceRefs.add(ref);
-    }
-  }
+  const sections = buildSections(visibleItems);
+  const sourceCount = countValidSourceRefs(candidates, graph, temporalCtx);
 
   const timestamp = new Date().toISOString().replace(/[-:T]/g, "").slice(0, 14);
   const runId = `checklist_run.${timestamp}.${scenarioHash}`;
@@ -678,7 +773,7 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     is_cross_border: crossBorder,
     summary: {
       item_counts: counts,
-      source_count: sourceRefs.size,
+      source_count: sourceCount,
     },
     sections,
     items: visibleItems,
