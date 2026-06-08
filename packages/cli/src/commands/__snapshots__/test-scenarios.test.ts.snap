@@ -1,0 +1,48 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`runTestScenarios characterization > pins scenario result count and pass/fail status 2`] = `
+[
+  {
+    "failures": [],
+    "file": "tests/scenarios/xborder/lu_resident_de_death.yml",
+    "id": "scenario_test.xborder.lu_resident_de_death",
+    "passed": true,
+    "title": "Cross-border: LU resident dies in DE with FR assets",
+  },
+  {
+    "failures": [],
+    "file": "tests/scenarios/lu/self_employed_property_not_married.yml",
+    "id": "scenario_test.lu.self_employed_property_not_married",
+    "passed": true,
+    "title": "Self-employed deceased with Luxembourg property, not married",
+  },
+  {
+    "failures": [],
+    "file": "tests/scenarios/lu/self_employed_property.yml",
+    "id": "scenario_test.lu.self_employed_property_not_married",
+    "passed": true,
+    "title": "Self-employed deceased with Luxembourg property, not married",
+  },
+  {
+    "failures": [],
+    "file": "tests/scenarios/lu/minimal_unknown.yml",
+    "id": "scenario_test.lu.minimal_unknown",
+    "passed": true,
+    "title": "Minimal LU death with most facts unknown",
+  },
+  {
+    "failures": [],
+    "file": "tests/scenarios/lu/core_married_employed_vehicle.yml",
+    "id": "scenario_test.lu.core_married_employed_vehicle",
+    "passed": true,
+    "title": "Core LU married employed survivor, vehicle owned",
+  },
+  {
+    "failures": [],
+    "file": "tests/scenarios/lu/core_bereavement.yml",
+    "id": "scenario_test.lu.core_bereavement",
+    "passed": true,
+    "title": "Luxembourg core — death occurred in Luxembourg, spouse is LU-insured",
+  },
+]
+`;
