@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write
+      attestations: write
     steps:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
 
@@ -31,6 +33,11 @@ jobs:
         run: |
           cd build/exports/web
           tar -czf ../../../clarvia-web-export-${{ github.event.release.tag_name }}.tar.gz .
+
+      - name: Attest build provenance
+        uses: actions/attest-build-provenance@e8998f949152b193b063cb0ec769d69d929409be # v2
+        with:
+          subject-path: clarvia-web-export-${{ github.event.release.tag_name }}.tar.gz
 
       - name: Upload release asset
         env:
