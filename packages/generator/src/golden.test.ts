@@ -667,3 +667,548 @@ describe("golden: explanation trace shape and ordering", () => {
     expect(trace).toMatchSnapshot();
   });
 });
+
+// ═══════════════════════════════════════════════════════════════════════
+// Suite 6: Generator pipeline internals
+// ═══════════════════════════════════════════════════════════════════════
+
+describe("golden: generator pipeline internals", () => {
+  const FIXED_AS_OF = "2026-06-03";
+
+  type MockGraph = Parameters<typeof generateChecklist>[0]["graph"];
+
+  /** Build a minimal mock graph for pipeline tests. */
+  function makeBaseGraph(overrides?: {
+    consequences?: Array<[string, Record<string, unknown>]>;
+    taskTemplates?: Array<[string, Record<string, unknown>]>;
+    conditions?: Array<[string, Record<string, unknown>]>;
+    assertions?: Array<[string, Record<string, unknown>]>;
+    sources?: Array<[string, Record<string, unknown>]>;
+  }): MockGraph {
+    return {
+      consequences: new Map(overrides?.consequences ?? []),
+      taskTemplates: new Map(overrides?.taskTemplates ?? []),
+      conditions: new Map(overrides?.conditions ?? []),
+      deadlines: new Map(),
+      authorities: new Map(),
+      evidenceTypes: new Map(),
+      intakeFactTypes: new Map(),
+      sources: new Map(overrides?.sources ?? []),
+      assertions: new Map(overrides?.assertions ?? []),
+    } as unknown as MockGraph;
+  }
+
+  /** Minimal consequence that passes all filters. */
+  function makeConsequence(id: string, extra?: Record<string, unknown>) {
+    return [id, {
+      id,
+      schema_version: "0.1.0",
+      title: `Title of ${id}`,
+      consequence_type: "obligation",
+      jurisdiction: "LU",
+      life_event: "bereavement",
+      domain: "death_registration",
+      authoring_status: "approved",
+      distribution_status: "public_open",
+      record_valid_from: "2026-01-01",
+      ...extra,
+    }] as [string, Record<string, unknown>];
+  }
+
+  /** Minimal task template. */
+  function makeTemplate(id: string, extra?: Record<string, unknown>) {
+    return [id, {
+      id,
+      schema_version: "0.1.0",
+      title: `Task ${id}`,
+      action_type: "file_declaration",
+      jurisdiction: "LU",
+      life_event: "bereavement",
+      domain: "death_registration",
+      authoring_status: "approved",
+      distribution_status: "public_open",
+      record_valid_from: "2026-01-01",
+      ...extra,
+    }] as [string, Record<string, unknown>];
+  }
+
+  // ── 6a. Pipeline stages: candidates → expanded → visible ──────────
+
+  it("6a. does_not_apply items filtered from output, applies and needs_fact kept", () => {
+    // Three consequences: one always true, one always false, one unknown
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.applies", {
+          trigger: { condition_refs: ["cond.true"] },
+          task_template_refs: ["t.applies"],
+        }),
+        makeConsequence("c.false", {
+          trigger: { condition_refs: ["cond.false"] },
+          task_template_refs: ["t.false"],
+        }),
+        makeConsequence("c.unknown", {
+          trigger: { condition_refs: ["cond.unknown"] },
+          task_template_refs: ["t.unknown"],
+        }),
+      ],
+      taskTemplates: [
+        makeTemplate("t.applies", { rendering: { checklist_group: "immediate_formalities", urgency_score: 80 } }),
+        makeTemplate("t.false", { rendering: { checklist_group: "immediate_formalities", urgency_score: 50 } }),
+        makeTemplate("t.unknown", { rendering: { checklist_group: "immediate_formalities", urgency_score: 30 } }),
+      ],
+      conditions: [
+        ["cond.true", {
+          id: "cond.true", title: "Always true",
+          expression: { "==": [{ var: "death.place.country" }, "LU"] },
+        }],
+        ["cond.false", {
+          id: "cond.false", title: "Always false",
+          expression: { "==": [{ var: "death.place.country" }, "XX"] },
+        }],
+        ["cond.unknown", {
+          id: "cond.unknown", title: "Unknown (missing var)",
+          expression: { "==": [{ var: "nonexistent.var" }, "yes"] },
+        }],
+      ],
+    });
+
+    const output = generateChecklist({
+      graph,
+      facts: [{ fact_type: "death.place.country", value: "LU" }],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    });
+
+    // does_not_apply items are NOT in output.items
+    const statuses = output.items.map(i => i.status);
+    expect(statuses).not.toContain("does_not_apply");
+
+    // The "applies" item and "needs_fact" item should be present
+    expect(statuses).toContain("applies");
+    expect(statuses).toContain("needs_fact");
+
+    // summary.item_counts reflects only visible items
+    expect(output.summary.item_counts.applies).toBe(1);
+    expect(output.summary.item_counts.needs_fact).toBe(1);
+    expect(output.summary.item_counts).toMatchInlineSnapshot(`
+      {
+        "applies": 1,
+        "maybe_applies": 0,
+        "needs_fact": 1,
+        "professional_review": 0,
+      }
+    `);
+  });
+
+  // ── 6b. Temporally-valid source refs ──────────────────────────────
+
+  it("6b. source_count excludes expired assertions, item assertion_count reflects temporal filtering", () => {
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.test", {
+          task_template_refs: ["t.test"],
+          source_assertion_refs: ["a.valid", "a.expired"],
+        }),
+      ],
+      taskTemplates: [
+        makeTemplate("t.test"),
+      ],
+      assertions: [
+        ["a.valid", {
+          id: "a.valid", source_id: "s.test",
+          record_valid_from: "2026-01-01",
+        }],
+        ["a.expired", {
+          id: "a.expired", source_id: "s.test",
+          record_valid_from: "2026-01-01",
+          record_valid_to: "2026-05-01", // expired before asOfDate
+        }],
+      ],
+      sources: [
+        ["s.test", { id: "s.test", title: "Source", publisher: "Gov", url: "https://example.com" }],
+      ],
+    });
+
+    const output = generateChecklist({
+      graph,
+      facts: [{ fact_type: "death.place.country", value: "LU" }],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    });
+
+    // Only 1 of 2 assertions is valid
+    expect(output.summary.source_count).toBe(1);
+    expect(output.items[0].source_summary?.assertion_count).toBe(1);
+  });
+
+  // ── 6c. Condition evaluation caching ──────────────────────────────
+
+  it("6c. same condition referenced by 2 consequences produces consistent status", () => {
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.one", {
+          trigger: { condition_refs: ["cond.shared"] },
+          task_template_refs: ["t.one"],
+        }),
+        makeConsequence("c.two", {
+          trigger: { condition_refs: ["cond.shared"] },
+          task_template_refs: ["t.two"],
+        }),
+      ],
+      taskTemplates: [
+        makeTemplate("t.one", { title: "Task One", rendering: { checklist_group: "immediate_formalities", urgency_score: 90 } }),
+        makeTemplate("t.two", { title: "Task Two", rendering: { checklist_group: "immediate_formalities", urgency_score: 80 } }),
+      ],
+      conditions: [
+        ["cond.shared", {
+          id: "cond.shared", title: "Shared condition",
+          expression: { "==": [{ var: "death.place.country" }, "LU"] },
+        }],
+      ],
+    });
+
+    const output = generateChecklist({
+      graph,
+      facts: [{ fact_type: "death.place.country", value: "LU" }],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    });
+
+    // Both items should have the same status (applies), derived from cached condition
+    expect(output.items.length).toBe(2);
+    expect(output.items[0].status).toBe("applies");
+    expect(output.items[1].status).toBe("applies");
+  });
+
+  // ── 6d. Consequence with no task_template_refs ────────────────────
+
+  it("6d. consequence with empty task_template_refs produces item using consequence title", () => {
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.bare", {
+          title: "Bare Consequence Title",
+          task_template_refs: [],
+        }),
+      ],
+    });
+
+    const output = generateChecklist({
+      graph,
+      facts: [{ fact_type: "death.place.country", value: "LU" }],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    });
+
+    expect(output.items.length).toBe(1);
+    expect(output.items[0].title).toBe("Bare Consequence Title");
+    expect(output.items[0].action).toBeNull();
+  });
+
+  // ── 6e. Event date fallback ───────────────────────────────────────
+
+  it("6e. eventDate falls back to death.date fact when not provided", () => {
+    // Consequence with legal_effective_from after the asOfDate but before the death.date
+    // If eventDate correctly falls back to death.date, consequence should apply
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.legal", {
+          task_template_refs: ["t.legal"],
+          legal_effective_from: "2026-03-01",
+        }),
+      ],
+      taskTemplates: [
+        makeTemplate("t.legal"),
+      ],
+    });
+
+    // death.date = "2026-04-01", asOfDate = "2026-06-03"
+    // legal_effective_from = "2026-03-01" ≤ eventDate "2026-04-01" → applies
+    const output = generateChecklist({
+      graph,
+      facts: [
+        { fact_type: "death.place.country", value: "LU" },
+        { fact_type: "death.date", value: "2026-04-01" },
+      ],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      // eventDate NOT provided — should fall back to death.date
+    });
+
+    expect(output.items.length).toBe(1);
+  });
+
+  // ── 6f. Item sorting order ────────────────────────────────────────
+
+  it("6f. items sorted by group order, then urgency desc, then title alpha", () => {
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.1", { task_template_refs: ["t.low_urg"] }),
+        makeConsequence("c.2", { task_template_refs: ["t.high_urg"] }),
+        makeConsequence("c.3", { task_template_refs: ["t.money"] }),
+        makeConsequence("c.4", { task_template_refs: ["t.alpha_a"] }),
+        makeConsequence("c.5", { task_template_refs: ["t.alpha_b"] }),
+      ],
+      taskTemplates: [
+        makeTemplate("t.low_urg", { title: "Low Urgency Task", rendering: { checklist_group: "immediate_formalities", urgency_score: 30 } }),
+        makeTemplate("t.high_urg", { title: "High Urgency Task", rendering: { checklist_group: "immediate_formalities", urgency_score: 90 } }),
+        makeTemplate("t.money", { title: "Money Task", rendering: { checklist_group: "money_and_benefits", urgency_score: 50 } }),
+        makeTemplate("t.alpha_a", { title: "AAA Same Score", rendering: { checklist_group: "money_and_benefits", urgency_score: 50 } }),
+        makeTemplate("t.alpha_b", { title: "ZZZ Same Score", rendering: { checklist_group: "money_and_benefits", urgency_score: 50 } }),
+      ],
+    });
+
+    const output = generateChecklist({
+      graph,
+      facts: [{ fact_type: "death.place.country", value: "LU" }],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    });
+
+    const titles = output.items.map(i => i.title);
+    // immediate_formalities (order 1) before money_and_benefits (order 2)
+    // within immediate_formalities: high urgency (90) before low urgency (30)
+    // within money_and_benefits same urgency: AAA before Money before ZZZ
+    expect(titles).toMatchInlineSnapshot(`
+      [
+        "High Urgency Task",
+        "Low Urgency Task",
+        "AAA Same Score",
+        "Money Task",
+        "ZZZ Same Score",
+      ]
+    `);
+  });
+
+  // ── 6g. Section assembly ──────────────────────────────────────────
+
+  it("6g. sections have correct labels, item_count, and ordering", () => {
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.1", { task_template_refs: ["t.imm1"] }),
+        makeConsequence("c.2", { task_template_refs: ["t.imm2"] }),
+        makeConsequence("c.3", { task_template_refs: ["t.money"] }),
+      ],
+      taskTemplates: [
+        makeTemplate("t.imm1", { title: "Immediate 1", rendering: { checklist_group: "immediate_formalities", urgency_score: 90 } }),
+        makeTemplate("t.imm2", { title: "Immediate 2", rendering: { checklist_group: "immediate_formalities", urgency_score: 80 } }),
+        makeTemplate("t.money", { title: "Money Task", rendering: { checklist_group: "money_and_benefits", urgency_score: 50 } }),
+      ],
+    });
+
+    const output = generateChecklist({
+      graph,
+      facts: [{ fact_type: "death.place.country", value: "LU" }],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    });
+
+    expect(output.sections).toMatchInlineSnapshot(`
+      [
+        {
+          "group": "immediate_formalities",
+          "item_count": 2,
+          "label": "Immediate formalities",
+        },
+        {
+          "group": "money_and_benefits",
+          "item_count": 1,
+          "label": "Money and benefits",
+        },
+      ]
+    `);
+  });
+
+  // ── 6h. Deterministic IDs ─────────────────────────────────────────
+
+  it("6h. same inputs produce same checklist id and item ids", () => {
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.det", { task_template_refs: ["t.det"] }),
+      ],
+      taskTemplates: [
+        makeTemplate("t.det", { title: "Deterministic", rendering: { checklist_group: "immediate_formalities" } }),
+      ],
+    });
+
+    const opts = {
+      graph,
+      facts: [{ fact_type: "death.place.country", value: "LU" }] as Fact[],
+      lifeEvent: "bereavement" as const,
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    };
+
+    const output1 = generateChecklist(opts);
+    const output2 = generateChecklist(opts);
+
+    expect(output1.id).toBe(output2.id);
+    expect(output1.items.map(i => i.id)).toEqual(output2.items.map(i => i.id));
+    // Snapshot the id format
+    expect(output1.id).toMatchInlineSnapshot(`"checklist.0358e3164830"`);
+  });
+
+  // ── 6i. Dedupe strategy: merge ────────────────────────────────────
+
+  it("6i. merge strategy: two candidates with same key merge into one item", () => {
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.merge1", {
+          title: "Merge Consequence 1",
+          task_template_refs: ["t.merged"],
+          source_assertion_refs: ["a.1"],
+        }),
+        makeConsequence("c.merge2", {
+          title: "Merge Consequence 2",
+          task_template_refs: ["t.merged"],
+          source_assertion_refs: ["a.2"],
+        }),
+      ],
+      taskTemplates: [
+        makeTemplate("t.merged", {
+          title: "Merged Task",
+          rendering: { checklist_group: "immediate_formalities", urgency_score: 70 },
+          dedupe: {
+            default_strategy: "merge",
+            dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}",
+          },
+          target: { object_type: "death_declaration" },
+        }),
+      ],
+      assertions: [
+        ["a.1", { id: "a.1", source_id: "s.1", record_valid_from: "2026-01-01" }],
+        ["a.2", { id: "a.2", source_id: "s.1", record_valid_from: "2026-01-01" }],
+      ],
+      sources: [
+        ["s.1", { id: "s.1", title: "Source", publisher: "Gov" }],
+      ],
+    });
+
+    const output = generateChecklist({
+      graph,
+      facts: [{ fact_type: "death.place.country", value: "LU" }],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    });
+
+    // Two consequences merge into one visible item
+    expect(output.items.length).toBe(1);
+    expect(output.items[0].title).toBe("Merged Task");
+    expect(output.items[0].needed_for).toEqual(["Merge Consequence 1", "Merge Consequence 2"]);
+    expect(output.items[0].jurisdiction_contexts).toEqual(["LU"]);
+    // Merged assertion count
+    expect(output.items[0].source_summary?.assertion_count).toBe(2);
+    // Merged explanation trace exists
+    expect(output.explanation_traces.length).toBe(1);
+  });
+
+  // ── 6j. Dedupe strategy: do_not_merge ─────────────────────────────
+
+  it("6j. do_not_merge strategy: same dedupe key keeps items separate", () => {
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.sep1", {
+          title: "Separate 1",
+          task_template_refs: ["t.nomrg1"],
+        }),
+        makeConsequence("c.sep2", {
+          title: "Separate 2",
+          task_template_refs: ["t.nomrg2"],
+        }),
+      ],
+      taskTemplates: [
+        // No dedupe config → default do_not_merge with key template.{id}
+        makeTemplate("t.nomrg1", {
+          title: "Task Separate 1",
+          rendering: { checklist_group: "immediate_formalities", urgency_score: 80 },
+        }),
+        makeTemplate("t.nomrg2", {
+          title: "Task Separate 2",
+          rendering: { checklist_group: "immediate_formalities", urgency_score: 60 },
+        }),
+      ],
+    });
+
+    const output = generateChecklist({
+      graph,
+      facts: [{ fact_type: "death.place.country", value: "LU" }],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    });
+
+    // Items remain separate
+    expect(output.items.length).toBe(2);
+    expect(output.items[0].id).not.toBe(output.items[1].id);
+    const titles = output.items.map(i => i.title).sort();
+    expect(titles).toEqual(["Task Separate 1", "Task Separate 2"]);
+  });
+
+  // ── 6k. Dedupe strategy: do_not_merge_across_jurisdictions ────────
+
+  it("6k. do_not_merge_across_jurisdictions: merges within LU, keeps DE separate", () => {
+    const graph = makeBaseGraph({
+      consequences: [
+        makeConsequence("c.lu1", {
+          title: "LU Consequence 1",
+          jurisdiction: "LU",
+          task_template_refs: ["t.xj"],
+        }),
+        makeConsequence("c.lu2", {
+          title: "LU Consequence 2",
+          jurisdiction: "LU",
+          task_template_refs: ["t.xj"],
+        }),
+        makeConsequence("c.de1", {
+          title: "DE Consequence",
+          jurisdiction: "DE",
+          task_template_refs: ["t.xj"],
+        }),
+      ],
+      taskTemplates: [
+        makeTemplate("t.xj", {
+          title: "Cross-Jurisdiction Task",
+          rendering: { checklist_group: "immediate_formalities", urgency_score: 70 },
+          dedupe: {
+            default_strategy: "do_not_merge_across_jurisdictions",
+            dedupe_key_template: "{action_type}.{target.object_type}",
+          },
+          target: { object_type: "death_declaration" },
+        }),
+      ],
+    });
+
+    const output = generateChecklist({
+      graph,
+      facts: [
+        { fact_type: "death.place.country", value: "LU" },
+        { fact_type: "deceased.last_social_security_affiliation.country", value: "DE" },
+      ],
+      lifeEvent: "bereavement",
+      asOfDate: FIXED_AS_OF,
+      eventDate: FIXED_AS_OF,
+    });
+
+    // LU pair merges into one, DE stays separate → 2 items total
+    expect(output.items.length).toBe(2);
+
+    const luItems = output.items.filter(i => i.jurisdiction_contexts.includes("LU"));
+    const deItems = output.items.filter(i => i.jurisdiction_contexts.includes("DE"));
+
+    expect(luItems.length).toBe(1);
+    expect(deItems.length).toBe(1);
+
+    // Merged LU item has combined needed_for
+    expect(luItems[0].needed_for).toEqual(["LU Consequence 1", "LU Consequence 2"]);
+
+    // DE item is standalone
+    expect(deItems[0].needed_for).toEqual(["DE Consequence"]);
+  });
+});
+
