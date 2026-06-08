@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: 2025-2026 CLARVIA ASBL, Luxembourg
+# SPDX-License-Identifier: EUPL-1.2
+
+name: Register TiiVih approval
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+
+jobs:
+  approve:
+    name: Submit APPROVED review
+    runs-on: ubuntu-latest
+
+    # Only trigger on PR comments (not issue comments) by TiiVih
+    if: >
+      github.event.issue.pull_request != null &&
+      github.event.comment.user.login == 'TiiVih'
+
+    steps:
+      - name: Check comment is exactly "ok" or "ok." (case-insensitive)
+        id: check
+        run: |
+          # Strip whitespace and newlines, lowercase
+          body=$(echo "${{ github.event.comment.body }}" \
+            | tr '[:upper:]' '[:lower:]' \
+            | tr -d '\r\n' \
+            | xargs)
+          if [[ "$body" == "ok" || "$body" == "ok." ]]; then
+            echo "approved=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "approved=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Submit APPROVED review as TiiVih
+        if: steps.check.outputs.approved == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.TIIVIH_REVIEW_TOKEN }}
+          PR_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          HEAD_SHA=$(gh api /repos/$REPO/pulls/$PR_NUMBER --jq '.head.sha')
+          gh api -X POST /repos/$REPO/pulls/$PR_NUMBER/reviews \
+            -f commit_id="$HEAD_SHA" \
+            -f event="APPROVE" \
+            -f body="Approved"
