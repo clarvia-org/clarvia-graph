@@ -127,3 +127,153 @@ sources:
       active: false
     verified_at: "2026-06-04"
     verified_by: HirenGajjar
+
+  - id: source.guichet_lu.funeral_cremation
+    title: "Enterrement ou incinération"
+    title_en: "Burial or cremation"
+    url: "https://guichet.public.lu/fr/citoyens/famille-education/succession/deces/enterrement-incineration.html"
+    source_type: government_portal
+    jurisdiction: LU
+    publisher: "Guichet.lu (Luxembourg Government)"
+    languages: [fr]
+    domain: funeral
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.guichet_lu.accept_renounce_succession
+    title: "Acceptation ou refus d'une succession"
+    title_en: "Accept or renounce a succession"
+    url: "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/acceptation-refus-succession.html"
+    source_type: government_portal
+    jurisdiction: LU
+    publisher: "Guichet.lu (Luxembourg Government)"
+    languages: [fr]
+    domain: succession
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.guichet_lu.inheritance_tax
+    title: "Droits de succession et d'héritage"
+    title_en: "Inheritance and succession tax"
+    url: "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/droits-succession-heritage.html"
+    source_type: government_portal
+    jurisdiction: LU
+    publisher: "Guichet.lu (Luxembourg Government)"
+    languages: [fr]
+    domain: succession_tax
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.guichet_lu.income_tax_return
+    title: "Déclaration d'impôt sur le revenu"
+    title_en: "Income tax return"
+    url: "https://guichet.public.lu/fr/citoyens/fiscalite/declaration-impot-decompte/activite-professionnelle/declaration-revenus/declaration-impot.html"
+    source_type: government_portal
+    jurisdiction: LU
+    publisher: "Guichet.lu (Luxembourg Government)"
+    languages: [fr]
+    domain: income_tax
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.lu.aed_successions
+    title: "Successions"
+    title_en: "Successions"
+    url: "https://pfi.public.lu/fr/successions.html"
+    source_type: official_guidance
+    jurisdiction: LU
+    publisher: "AED (Administration de l'Enregistrement, des Domaines et de la TVA)"
+    languages: [fr]
+    domain: succession_tax
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.lu.acd_form100
+    title: "Formulaires personnes physiques"
+    title_en: "Individual tax return forms"
+    url: "https://impotsdirects.public.lu/fr/formulaires/pers_physiques.html"
+    source_type: official_guidance
+    jurisdiction: LU
+    publisher: "ACD (Administration des Contributions Directes)"
+    languages: [fr]
+    domain: income_tax
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.lu.snca_inherit_vehicle
+    title: "Hériter d'un véhicule"
+    title_en: "Inherit a vehicle"
+    url: "https://snca.public.lu/fr/vehicules/immatriculation/heriter-vehicule.html"
+    source_type: official_guidance
+    jurisdiction: LU
+    publisher: "SNCA (Société Nationale de Circulation Automobile)"
+    languages: [fr]
+    domain: vehicle_registration
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.lu.ccss_cessation
+    title: "Cessation d'activité"
+    title_en: "Self-employed cessation of activity"
+    url: "https://www.ccss.lu/independants/cessation-dactivite/"
+    source_type: official_guidance
+    jurisdiction: LU
+    publisher: "CCSS (Centre Commun de la Sécurité Sociale)"
+    languages: [fr]
+    domain: self_employment
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.lu.cssf_tracing_assets
+    title: "Tracing assets"
+    title_en: "Tracing assets"
+    url: "https://www.cssf.lu/en/customer-complaints/tracing-assets/"
+    source_type: official_guidance
+    jurisdiction: LU
+    publisher: "CSSF (Commission de Surveillance du Secteur Financier)"
+    languages: [en]
+    domain: asset_tracing
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null
+
+  - id: source.eu.ejustice_succession
+    title: "Succession"
+    title_en: "Succession"
+    url: "https://e-justice.europa.eu/166/EN/succession"
+    source_type: government_portal
+    jurisdiction: EU
+    publisher: "European e-Justice Portal"
+    languages: [en]
+    domain: succession
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: null

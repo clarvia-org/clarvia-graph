@@ -710,12 +710,32 @@ exports[`runValidate characterization against real graph > pins schema assignmen
     "valid": true,
   },
   {
+    "file": "sources/snapshots/cns_lu_death_funeral_costs_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/eu_ejustice_succession_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/guichet_lu_accept_renounce_succession_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
     "file": "sources/snapshots/guichet_lu_bereavement_2026_06_03.yml",
     "schema": "source_snapshot.schema.json",
     "valid": true,
   },
   {
     "file": "sources/snapshots/guichet_lu_bereavement_leave_2026_06_04.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/guichet_lu_bereavement_leave_2026_06_10.yml",
     "schema": "source_snapshot.schema.json",
     "valid": true,
   },
@@ -730,6 +750,41 @@ exports[`runValidate characterization against real graph > pins schema assignmen
     "valid": true,
   },
   {
+    "file": "sources/snapshots/guichet_lu_funeral_allowance_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/guichet_lu_funeral_cremation_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/guichet_lu_income_tax_return_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/guichet_lu_inheritance_tax_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/lu_acd_form100_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/lu_cnap_survivor_pension_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/snapshots/lu_snca_inherit_vehicle_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
     "file": "sources/snapshots/service_public_fr_succession_2026_06_05.yml",
     "schema": "source_snapshot.schema.json",
     "valid": true,
@@ -740,8 +795,8 @@ exports[`runValidate characterization against real graph > pins schema assignmen
 exports[`runValidate characterization against real graph > pins total file count and pass/fail breakdown 1`] = `
 {
   "invalid": 0,
-  "total": 146,
-  "valid": 146,
+  "total": 157,
+  "valid": 157,
 }
 `;
 
@@ -851,6 +906,41 @@ exports[`runValidate characterization against real graph > validates snapshot in
   },
   {
     "errorCount": 0,
+    "file": "sources/snapshots/lu_snca_inherit_vehicle_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/lu_cnap_survivor_pension_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/lu_acd_form100_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/guichet_lu_inheritance_tax_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/guichet_lu_income_tax_return_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/guichet_lu_funeral_cremation_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/guichet_lu_funeral_allowance_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
     "file": "sources/snapshots/guichet_lu_funeral_allowance_2026_06_04.yml",
     "valid": true,
   },
@@ -861,12 +951,32 @@ exports[`runValidate characterization against real graph > validates snapshot in
   },
   {
     "errorCount": 0,
+    "file": "sources/snapshots/guichet_lu_bereavement_leave_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
     "file": "sources/snapshots/guichet_lu_bereavement_leave_2026_06_04.yml",
     "valid": true,
   },
   {
     "errorCount": 0,
     "file": "sources/snapshots/guichet_lu_bereavement_2026_06_03.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/guichet_lu_accept_renounce_succession_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/eu_ejustice_succession_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/cns_lu_death_funeral_costs_2026_06_10.yml",
     "valid": true,
   },
   {
