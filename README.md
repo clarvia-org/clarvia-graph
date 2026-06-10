@@ -111,6 +111,8 @@ Clarvia maintains internal Clarvia-native schemas and generates compatibility vi
 - **PROV-O** — W3C Provenance Ontology
 
 > **Planned for next release:** integrate [`prov`](https://github.com/trungdong/prov) Python library for PROV-O exports.
+>
+> **Planned:** use [`SEMICeu/CPSV-AP`](https://github.com/SEMICeu/CPSV-AP) and [`SEMICeu/CCCEV`](https://github.com/SEMICeu/CCCEV) official SHACL shapes as validation targets for CPSV-AP and CCCEV exports.
 
 ## Scope
 
