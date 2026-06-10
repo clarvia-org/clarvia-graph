@@ -125,7 +125,7 @@ export async function runValidate(
       const schema = JSON.parse(readFileSync(schemaPath, "utf-8")) as Record<string, unknown>;
       schemaCache.set(schemaFile, schema);
       // Only add if not already registered (avoid duplicate $id)
-      if (schema["$id"] && !ajv.getSchema(schema["$id"] as string)) {
+      if (typeof schema["$id"] === "string" && !ajv.getSchema(schema["$id"])) {
         ajv.addSchema(schema);
       }
     }
@@ -272,7 +272,7 @@ function validateArchiveHash(
     // See docs/CONVENTIONS.md.
     const isTextArchive = archivePath.endsWith(".html") || archivePath.endsWith(".txt");
     if (isTextArchive) {
-      fileBytes = Buffer.from(fileBytes.toString("utf-8").replace(/\r\n/g, "\n"));
+      fileBytes = Buffer.from(fileBytes.toString("utf-8").replaceAll("\r\n", "\n"));
     }
     const actualHash = createHash("sha256").update(fileBytes).digest("hex").toLowerCase();
     if (actualHash !== expectedHash) {
@@ -334,7 +334,7 @@ function loadAssertionBatchData(
   return {
     assertions,
     normalizedHtmlText: getNormalizedTextContent(archiveContent),
-    archiveUri: archiveUri as string,
+    archiveUri,
   };
 }
 
@@ -502,10 +502,10 @@ function resolveConceptRefPaths(
       if (typeof ref !== "string") continue;
 
       const path = intakeIdToPath.get(ref);
-      if (!path) {
-        errors.push(`information_concept_ref "${ref}" does not resolve to any defined intake fact type.`);
-      } else {
+      if (path) {
         referencedPaths.add(path);
+      } else {
+        errors.push(`information_concept_ref "${ref}" does not resolve to any defined intake fact type.`);
       }
     }
   } else if (conceptRefs !== undefined) {
@@ -594,8 +594,10 @@ function validateConditionsAndIntake(
     const varPaths = extractVarPathsFromExpression(data.expression);
     const errors: string[] = [];
 
-    errors.push(...checkConditionVarPaths(varPaths, intakePathToId));
-    errors.push(...checkConceptRefs(data.information_concept_refs, intakeIdToPath, varPaths, intakePathToId));
+    errors.push(
+      ...checkConditionVarPaths(varPaths, intakePathToId),
+      ...checkConceptRefs(data.information_concept_refs, intakeIdToPath, varPaths, intakePathToId),
+    );
 
     mergeErrors(results, relPath, "condition.schema.json", errors);
   }

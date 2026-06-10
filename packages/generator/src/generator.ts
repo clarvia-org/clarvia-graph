@@ -398,12 +398,14 @@ function evaluateConsequenceConditions(
     let cached = conditionResultCache.get(condRef);
     if (!cached) {
       const condition = graph.conditions.get(condRef);
-      if (!condition) {
-        cached = { result: "unknown", missingFacts: [] };
-      } else if (!recordApplies(condition, temporalCtx)) {
-        cached = { result: false, missingFacts: [] };
+      if (condition) {
+        if (!recordApplies(condition, temporalCtx)) {
+          cached = { result: false, missingFacts: [] };
+        } else {
+          cached = evaluateCondition(condition.expression, facts);
+        }
       } else {
-        cached = evaluateCondition(condition.expression, facts);
+        cached = { result: "unknown", missingFacts: [] };
       }
       conditionResultCache.set(condRef, cached);
     }
@@ -841,10 +843,10 @@ function makeItem(
 
   const filteredAssertionRefs = (consequence.source_assertion_refs ?? []).filter(ref => {
     const ass = graph.assertions?.get(ref);
-    if (ass && !recordApplies(ass, temporalCtx)) {
-      return false;
+    if (!ass || recordApplies(ass, temporalCtx)) {
+      return true;
     }
-    return true;
+    return false;
   });
 
   const resolvedSubjectId = resolveSubjectId(template);

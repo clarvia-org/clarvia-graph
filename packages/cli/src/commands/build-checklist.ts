@@ -9,8 +9,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
-import { loadGraph, generateChecklist, type Fact } from "@clarvia/generator";
-import type { ChecklistOutput } from "@clarvia/generator";
+import { loadGraph, generateChecklist, type Fact, type ChecklistOutput } from "@clarvia/generator";
 import { resolveRootDir } from "../shared/utils.js";
 
 // ── arg parsing ──────────────────────────────────────────────────────

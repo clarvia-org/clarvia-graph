@@ -85,7 +85,7 @@ export function buildFactData(facts: Fact[]): Record<string, unknown> {
       }
       current = current[parts[i]];
     }
-    current[parts[parts.length - 1]] = f.value;
+    current[parts.at(-1)!] = f.value;
   }
   return data;
 }
@@ -311,7 +311,7 @@ export function evaluateCondition(
   }
 
   return {
-    result: rawResult ? true : false,
+    result: !!rawResult,
     missingFacts: [],
   };
 }

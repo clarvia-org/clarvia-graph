@@ -18,8 +18,10 @@ import {
   loadGraph,
   generateChecklist,
   type Fact,
+  type LoadedGraph,
+  type Consequence,
+  type ChecklistItem,
 } from "@clarvia/generator";
-import type { LoadedGraph, Consequence, ChecklistItem } from "@clarvia/generator";
 
 // ── helpers ──────────────────────────────────────────────────────────
 

@@ -87,8 +87,9 @@ export async function runExtract(opts: ExtractOptions): Promise<ExtractResult> {
   const registerRaw = readFileSync(registerPath, "utf-8");
   const register = parseYaml(registerRaw) as SourceRegister;
 
+  const sourceId = snapshotData.source_id;
   const source = register.sources.find(
-    (s) => s.id === snapshotData!.source_id,
+    (s) => s.id === sourceId,
   );
   if (!source) {
     throw new Error(

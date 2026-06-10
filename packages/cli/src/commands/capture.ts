@@ -86,7 +86,7 @@ export async function runCapture(opts: CaptureOptions): Promise<CaptureResult> {
     response.headers.get("content-type") ?? "text/html";
 
   // ── 3. Normalize CRLF → LF ──────────────────────────────────────
-  const normalized = rawText.replace(/\r\n/g, "\n");
+  const normalized = rawText.replaceAll("\r\n", "\n");
 
   // ── 4. Compute SHA-256 hash of LF-normalized UTF-8 bytes ────────
   const hash = createHash("sha256")
