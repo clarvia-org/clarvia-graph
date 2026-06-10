@@ -1,6 +1,6 @@
 # Clarvia Source Register
 # Registry of all sources monitored by the graph.
-# See: foundation-spec §18.2
+# See: foundation-spec ┬º18.2
 
 sources:
   - id: source.guichet_lu.bereavement
@@ -36,12 +36,12 @@ sources:
     verified_at: null
 
   - id: source.lu.cns_death_notification
-    title: "Déclaration de décès à la CNS"
+    title: "D├®claration de d├®c├¿s ├á la CNS"
     title_en: "Death notification to CNS"
     url: "https://cns.public.lu/fr/assure/droits-demarches/dossiers-thematiques/famille/deces-frais-funeraires.html"
     source_type: official_guidance
     jurisdiction: LU
-    publisher: "CNS (Caisse Nationale de Santé)"
+    publisher: "CNS (Caisse Nationale de Sant├®)"
     languages: [fr]
     domain: health_insurance
     life_event: bereavement
@@ -51,12 +51,12 @@ sources:
     verified_at: null
 
   - id: source.service_public_fr.succession
-    title: "Règlement d'une succession"
+    title: "R├¿glement d'une succession"
     title_en: "Settlement of a succession"
     url: "https://www.service-public.fr/particuliers/vosdroits/N171"
     source_type: government_portal
     jurisdiction: FR
-    publisher: "Direction de l'information légale et administrative (DILA)"
+    publisher: "Direction de l'information l├®gale et administrative (DILA)"
     languages: [fr]
     domain: succession
     life_event: bereavement
@@ -66,7 +66,7 @@ sources:
     verified_at: null
 
   - id: source.guichet_lu.declaration_succession
-    title: "Déclaration de succession ou de mutation par décès"
+    title: "D├®claration de succession ou de mutation par d├®c├¿s"
     title_en: "Declaration of inheritance or transfer on death"
     url: "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/declaration-succession.html"
     source_type: government_portal
@@ -81,12 +81,12 @@ sources:
     verified_at: null
 
   - id: source.cns_lu.death_funeral_costs
-    title: "Décès et frais funéraires"
+    title: "D├®c├¿s et frais fun├®raires"
     title_en: "Death and funeral costs"
     url: "https://cns.public.lu/fr/assure/droits-demarches/dossiers-thematiques/famille/deces-frais-funeraires.html"
     source_type: official_guidance
     jurisdiction: LU
-    publisher: "CNS (Caisse Nationale de Santé)"
+    publisher: "CNS (Caisse Nationale de Sant├®)"
     languages: [fr]
     domain: funeral_costs
     life_event: bereavement
@@ -97,7 +97,7 @@ sources:
     verified_by: HirenGajjar
 
   - id: source.guichet_lu.funeral_allowance
-    title: "Indemnité funéraire"
+    title: "Indemnit├® fun├®raire"
     title_en: "Funeral allowance"
     url: "https://guichet.public.lu/fr/citoyens/aides/sante/prestations-survivants/indemnite-funeraire.html"
     source_type: government_portal
@@ -113,7 +113,7 @@ sources:
     verified_by: HirenGajjar
 
   - id: source.guichet_lu.bereavement_leave
-    title: "Congé extraordinaire pour motif personnel"
+    title: "Cong├® extraordinaire pour motif personnel"
     title_en: "Extraordinary leave for personal reasons"
     url: "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/conge-extraordinaire.html"
     source_type: government_portal
@@ -129,7 +129,7 @@ sources:
     verified_by: HirenGajjar
 
   - id: source.guichet_lu.funeral_cremation
-    title: "Enterrement ou incinération"
+    title: "Enterrement ou incin├®ration"
     title_en: "Burial or cremation"
     url: "https://guichet.public.lu/fr/citoyens/famille-education/succession/deces/enterrement-incineration.html"
     source_type: government_portal
@@ -159,7 +159,7 @@ sources:
     verified_at: null
 
   - id: source.guichet_lu.inheritance_tax
-    title: "Droits de succession et d'héritage"
+    title: "Droits de succession et d'h├®ritage"
     title_en: "Inheritance and succession tax"
     url: "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/droits-succession-heritage.html"
     source_type: government_portal
@@ -174,7 +174,7 @@ sources:
     verified_at: null
 
   - id: source.guichet_lu.income_tax_return
-    title: "Déclaration d'impôt sur le revenu"
+    title: "D├®claration d'imp├┤t sur le revenu"
     title_en: "Income tax return"
     url: "https://guichet.public.lu/fr/citoyens/fiscalite/declaration-impot-decompte/activite-professionnelle/declaration-revenus/declaration-impot.html"
     source_type: government_portal
@@ -219,12 +219,12 @@ sources:
     verified_at: null
 
   - id: source.lu.snca_inherit_vehicle
-    title: "Hériter d'un véhicule"
+    title: "H├®riter d'un v├®hicule"
     title_en: "Inherit a vehicle"
     url: "https://snca.public.lu/fr/vehicules/immatriculation/heriter-vehicule.html"
     source_type: official_guidance
     jurisdiction: LU
-    publisher: "SNCA (Société Nationale de Circulation Automobile)"
+    publisher: "SNCA (Soci├®t├® Nationale de Circulation Automobile)"
     languages: [fr]
     domain: vehicle_registration
     life_event: bereavement
@@ -234,12 +234,12 @@ sources:
     verified_at: null
 
   - id: source.lu.ccss_cessation
-    title: "Cessation d'activité"
+    title: "Cessation d'activit├®"
     title_en: "Self-employed cessation of activity"
-    url: "https://www.ccss.lu/independants/cessation-dactivite/"
+    url: "https://ccss.public.lu/fr/independants/commencer-arreter-activite/suspendre-arreter-activite.html"
     source_type: official_guidance
     jurisdiction: LU
-    publisher: "CCSS (Centre Commun de la Sécurité Sociale)"
+    publisher: "CCSS (Centre Commun de la S├®curit├® Sociale)"
     languages: [fr]
     domain: self_employment
     life_event: bereavement
