@@ -56,7 +56,10 @@ export async function main(): Promise<void> {
   // Get git commit for provenance
   let gitCommit = "unknown";
   try {
-    gitCommit = execSync("git rev-parse --short HEAD", { cwd: rootDir })
+    gitCommit = execSync("git rev-parse --short HEAD", { // NOSONAR — hardcoded command, no user input
+      cwd: rootDir,
+      env: { PATH: process.env.PATH ?? "" },
+    })
       .toString()
       .trim();
   } catch {

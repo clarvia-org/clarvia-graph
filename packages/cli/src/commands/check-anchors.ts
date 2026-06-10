@@ -25,7 +25,7 @@ export function stripHtmlTags(html: string): string {
   return html
     .replace(/<script[^>]*>[\s\S]*?<\/script[^>]*>/gi, " ")
     .replace(/<style[^>]*>[\s\S]*?<\/style[^>]*>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
+    .replace(/<[^>]+>/g, " ") // NOSONAR — negated char class [^>]+ cannot backtrack
     .replace(/&nbsp;/gi, " ")
     .replace(/&lt;/gi, "<")
     .replace(/&gt;/gi, ">")

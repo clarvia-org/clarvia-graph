@@ -637,8 +637,9 @@ function getNormalizedTextContent(html: string): string {
     prev = text;
     text = text.replace(/<!--[\s\S]*?-->/g, "");
   } while (text !== prev);
-  text = text.replace(/<(script|style)[\s\S]*?>[\s\S]*?<\/\1>/gi, " ");
-  text = text.replace(/<[^>]+>/g, " ");
+  text = text.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, " ");
+  text = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, " ");
+  text = text.replace(/<[^>]+>/g, " "); // NOSONAR — negated char class [^>]+ cannot backtrack
   // Decode common HTML entities (aligned with check-anchors.ts)
   // NOTE: &amp; is decoded last to avoid double-unescaping (e.g. &amp;lt; → &lt; → <)
   text = text.replace(/&nbsp;/gi, " ");
