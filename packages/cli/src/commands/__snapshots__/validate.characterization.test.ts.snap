@@ -780,6 +780,11 @@ exports[`runValidate characterization against real graph > pins schema assignmen
     "valid": true,
   },
   {
+    "file": "sources/snapshots/lu_cssf_tracing_assets_2026_06_10.yml",
+    "schema": "source_snapshot.schema.json",
+    "valid": true,
+  },
+  {
     "file": "sources/snapshots/lu_snca_inherit_vehicle_2026_06_10.yml",
     "schema": "source_snapshot.schema.json",
     "valid": true,
@@ -795,8 +800,8 @@ exports[`runValidate characterization against real graph > pins schema assignmen
 exports[`runValidate characterization against real graph > pins total file count and pass/fail breakdown 1`] = `
 {
   "invalid": 0,
-  "total": 157,
-  "valid": 157,
+  "total": 158,
+  "valid": 158,
 }
 `;
 
@@ -907,6 +912,11 @@ exports[`runValidate characterization against real graph > validates snapshot in
   {
     "errorCount": 0,
     "file": "sources/snapshots/lu_snca_inherit_vehicle_2026_06_10.yml",
+    "valid": true,
+  },
+  {
+    "errorCount": 0,
+    "file": "sources/snapshots/lu_cssf_tracing_assets_2026_06_10.yml",
     "valid": true,
   },
   {
