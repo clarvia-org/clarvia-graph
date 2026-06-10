@@ -1,0 +1,143 @@
+# SPDX-FileCopyrightText: 2025-2026 CLARVIA ASBL, Luxembourg
+# SPDX-License-Identifier: EUPL-1.2
+
+publiccodeYmlVersion: "0.4"
+
+name: Clarvia Graph
+applicationSuite: Clarvia
+url: "https://github.com/clarvia-org/clarvia-graph"
+landingURL: "https://clarvia.org"
+softwareVersion: "0.1.0-alpha.1"
+releaseDate: "2026-06-06"
+
+platforms:
+  - web
+  - linux
+  - windows
+
+categories:
+  - compliance-management
+  - knowledge-management
+  - workflow-management
+  - data-analytics
+  - data-collection
+
+developmentStatus: beta
+
+softwareType: standalone/other
+
+description:
+  en:
+    localisedName: Clarvia Graph
+    shortDescription: >-
+      Open consequence graph for source-backed administrative workflows across
+      European jurisdictions.
+    longDescription: >-
+      Clarvia Graph is an open-source knowledge graph that models the legal
+      and administrative consequences of life events — starting with
+      bereavement in Luxembourg. It encodes who must do what, when, where,
+      and why, backed by verifiable government sources.
+
+
+      The graph produces structured, machine-readable checklists that guide
+      bereaved families through complex cross-border bureaucracy. Every
+      obligation is linked to its source legislation, official deadline, and
+      responsible authority.
+
+
+      Built on EU interoperability standards (CPSV-AP, CCCEV, ELI), the
+      graph is designed for multi-jurisdiction, multi-language composition.
+      It includes a 9-layer CI validation pipeline, scenario testing,
+      contradiction detection, and automated web export generation.
+    features:
+      - Source-backed consequence graph with verifiable government citations
+      - 9-layer CI validation pipeline (schema, ID grammar, references, contradictions, scenarios)
+      - Cross-border jurisdiction composition (Luxembourg, with EU expansion planned)
+      - Automated checklist generation with computed deadlines
+      - Trilingual support (English, French, German)
+      - Web runtime export for static site consumption
+      - Built on EU standards (CPSV-AP, CCCEV, ELI, Once-Only Principle)
+  fr:
+    localisedName: Clarvia Graph
+    shortDescription: >-
+      Graphe de conséquences ouvert pour des flux administratifs sourcés à
+      travers les juridictions européennes.
+    longDescription: >-
+      Clarvia Graph est un graphe de connaissances open source qui modélise
+      les conséquences juridiques et administratives des événements de vie —
+      en commençant par le deuil au Luxembourg. Il encode qui doit faire
+      quoi, quand, où et pourquoi, en s'appuyant sur des sources
+      gouvernementales vérifiables.
+
+
+      Le graphe produit des listes de contrôle structurées et lisibles par
+      machine qui guident les familles endeuillées à travers la bureaucratie
+      transfrontalière complexe. Chaque obligation est liée à sa
+      législation source, son délai officiel et l'autorité responsable.
+    features:
+      - Graphe de conséquences sourcé avec citations gouvernementales vérifiables
+      - Pipeline de validation CI à 9 couches
+      - Composition juridictionnelle transfrontalière
+      - Génération automatique de listes de contrôle avec délais calculés
+      - Support trilingue (anglais, français, allemand)
+      - Export web pour consommation par site statique
+      - Basé sur les standards UE (CPSV-AP, CCCEV, ELI)
+  de:
+    localisedName: Clarvia Graph
+    shortDescription: >-
+      Offener Konsequenzgraph für quellengestützte Verwaltungsabläufe in
+      europäischen Rechtsordnungen.
+    longDescription: >-
+      Clarvia Graph ist ein Open-Source-Wissensgraph, der die rechtlichen
+      und administrativen Konsequenzen von Lebensereignissen modelliert —
+      beginnend mit dem Trauerfall in Luxemburg. Er kodiert, wer was wann,
+      wo und warum tun muss, gestützt auf überprüfbare Regierungsquellen.
+
+
+      Der Graph erzeugt strukturierte, maschinenlesbare Checklisten, die
+      trauernde Familien durch die komplexe grenzüberschreitende Bürokratie
+      führen. Jede Verpflichtung ist mit ihrer Quellengesetzgebung,
+      offiziellen Frist und zuständigen Behörde verknüpft.
+    features:
+      - Quellengestützter Konsequenzgraph mit überprüfbaren Regierungszitaten
+      - 9-Schichten-CI-Validierungspipeline
+      - Grenzüberschreitende Jurisdiktionskomposition
+      - Automatische Checklistenerstellung mit berechneten Fristen
+      - Dreisprachige Unterstützung (Englisch, Französisch, Deutsch)
+      - Web-Runtime-Export für statische Seitennutzung
+      - Basierend auf EU-Standards (CPSV-AP, CCCEV, ELI)
+
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: CLARVIA ASBL
+  repoOwner: CLARVIA ASBL
+
+maintenance:
+  type: internal
+  contacts:
+    - name: Tommi Rihola
+      email: tommi@clarvia.org
+      affiliation: CLARVIA ASBL
+
+intendedAudience:
+  scope:
+    - government
+    - local-authorities
+    - welfare
+  countries:
+    - lu
+    - eu
+
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - en
+    - fr
+    - de
+
+dependsOn:
+  open:
+    - name: Node.js
+      versionMin: "22"
+    - name: pnpm
+      versionMin: "9"
