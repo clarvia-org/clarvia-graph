@@ -48,6 +48,13 @@ interface TaskTemplate {
   };
 }
 
+interface Source {
+  id: string;
+  title: string;
+  url?: string;
+  publisher?: string;
+}
+
 interface Consequence {
   id: string;
   title: string;
@@ -59,6 +66,7 @@ interface Consequence {
     condition_refs: string[];
   };
   task_template_refs: string[];
+  source_refs?: string[];
 }
 
 interface Authority {
@@ -96,6 +104,7 @@ interface RuntimeData {
   authorities: Authority[];
   deadlines: Deadline[];
   evidence_types: EvidenceType[];
+  sources: Source[];
 }
 
 interface IntakeData {
@@ -113,6 +122,7 @@ interface ChecklistItem {
   deadline_label?: string;
   evidence?: EvidenceType[];
   missing_facts?: string[];
+  sources?: Source[];
 }
 
 /* ── Checklist groups ── */
@@ -248,12 +258,18 @@ function buildNestedData(facts: Record<string, string>): Record<string, unknown>
 
 /* ── ISO 8601 duration formatter ── */
 function formatDuration(duration: string): string {
-  const match = duration.match(/^P(?:(\d+)D)?T?(?:(\d+)H)?(?:(\d+)M)?$/);
+  const match = duration.match(/^P(?:(\d+)Y)?(?:(\d+)M)?(?:(\d+)W)?(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?)?$/);
   if (!match) return duration;
-  const days = match[1] ? parseInt(match[1]) : 0;
-  const hours = match[2] ? parseInt(match[2]) : 0;
-  const minutes = match[3] ? parseInt(match[3]) : 0;
+  const years = match[1] ? parseInt(match[1]) : 0;
+  const months = match[2] ? parseInt(match[2]) : 0;
+  const weeks = match[3] ? parseInt(match[3]) : 0;
+  const days = match[4] ? parseInt(match[4]) : 0;
+  const hours = match[5] ? parseInt(match[5]) : 0;
+  const minutes = match[6] ? parseInt(match[6]) : 0;
   const parts: string[] = [];
+  if (years) parts.push(`${years} year${years > 1 ? "s" : ""}`);
+  if (months) parts.push(`${months} month${months > 1 ? "s" : ""}`);
+  if (weeks) parts.push(`${weeks} week${weeks > 1 ? "s" : ""}`);
   if (days) parts.push(`${days} day${days > 1 ? "s" : ""}`);
   if (hours) parts.push(`${hours} hour${hours > 1 ? "s" : ""}`);
   if (minutes) parts.push(`${minutes} minute${minutes > 1 ? "s" : ""}`);
@@ -323,6 +339,7 @@ export default function ChecklistPage() {
     const authorityMap = new Map(runtime.authorities.map((a) => [a.id, a]));
     const deadlineMap = new Map(runtime.deadlines.map((d) => [d.id, d]));
     const evidenceMap = new Map(runtime.evidence_types.map((e) => [e.id, e]));
+    const sourceMap = new Map(runtime.sources?.map((s) => [s.id, s]) ?? []);
 
     for (const consequence of runtime.consequences) {
       // Publication gate: skip non-public consequences (safety filter)
@@ -374,6 +391,11 @@ export default function ChecklistPage() {
           .map((id) => evidenceMap.get(id))
           .filter(Boolean) as EvidenceType[] | undefined;
 
+        // Resolve sources for this consequence
+        const sources = (consequence.source_refs ?? [])
+          .map((id) => sourceMap.get(id))
+          .filter(Boolean) as Source[];
+
         generated.push({
           id: `${consequence.id}::${template.id}`,
           title: template.title,
@@ -393,6 +415,7 @@ export default function ChecklistPage() {
               : deadline?.title),
           evidence,
           missing_facts: missingFacts.length > 0 ? missingFacts : undefined,
+          sources: sources.length > 0 ? sources : undefined,
         });
       }
     }
@@ -605,42 +628,102 @@ function IntakeWizard({
 
   return (
     <div className="space-y-6">
-      {questions.map((q, idx) => (
-        <div
-          key={q.id}
-          className="glass-panel p-6 rounded-xl transition-all"
-          style={{ animationDelay: `${idx * 100}ms` }}
-        >
-          <label className="block text-sm font-semibold text-calm-blue-800 mb-3">
-            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-calm-blue-100 text-calm-blue-600 text-xs font-bold mr-2">
-              {idx + 1}
-            </span>
-            {lang === "fr" ? q.label_fr : lang === "de" ? q.label_de : q.label_en}
-          </label>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-            {q.options.map((opt) => {
-              const selected = answers[q.id] === opt.value;
-              return (
+      {questions.map((q, idx) => {
+        // Build options based on question type
+        const options = q.options && q.options.length > 0
+          ? q.options
+          : q.value_type === "boolean"
+            ? [
+                { value: "true", label_en: "Yes", label_fr: "Oui", label_de: "Ja" },
+                { value: "false", label_en: "No", label_fr: "Non", label_de: "Nein" },
+                { value: "UNKNOWN", label_en: "I don't know", label_fr: "Je ne sais pas", label_de: "Ich weiß nicht" },
+              ]
+            : null;
+
+        return (
+          <div
+            key={q.id}
+            className="glass-panel p-6 rounded-xl transition-all"
+            style={{ animationDelay: `${idx * 100}ms` }}
+          >
+            <label className="block text-sm font-semibold text-calm-blue-800 mb-3">
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-calm-blue-100 text-calm-blue-600 text-xs font-bold mr-2">
+                {idx + 1}
+              </span>
+              {lang === "fr" ? q.label_fr : lang === "de" ? q.label_de : q.label_en}
+            </label>
+
+            {options ? (
+              /* Button-grid for jurisdiction_code, boolean, and enum with options */
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {options.map((opt) => {
+                  const selected = answers[q.id] === opt.value;
+                  return (
+                    <button
+                      key={opt.value}
+                      onClick={() => onAnswer(q.id, opt.value)}
+                      className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all border ${
+                        selected
+                          ? "bg-calm-blue-800 text-white border-calm-blue-800 shadow-md"
+                          : "bg-white/60 text-calm-blue-700 border-calm-blue-200 hover:border-calm-blue-400 hover:bg-white"
+                      }`}
+                    >
+                      {lang === "fr"
+                        ? opt.label_fr
+                        : lang === "de"
+                          ? opt.label_de
+                          : opt.label_en}
+                    </button>
+                  );
+                })}
+              </div>
+            ) : q.value_type === "integer" ? (
+              /* Numeric input for integer types */
+              <div className="flex gap-2 items-center">
+                <input
+                  type="number"
+                  min="0"
+                  value={answers[q.id] && answers[q.id] !== "UNKNOWN" ? answers[q.id] : ""}
+                  onChange={(e) => onAnswer(q.id, e.target.value || "UNKNOWN")}
+                  placeholder="0"
+                  className="w-32 px-4 py-2.5 rounded-lg text-sm border border-calm-blue-200 bg-white/60 text-calm-blue-800 focus:outline-none focus:border-calm-blue-400 focus:ring-1 focus:ring-calm-blue-400"
+                />
                 <button
-                  key={opt.value}
-                  onClick={() => onAnswer(q.id, opt.value)}
+                  onClick={() => onAnswer(q.id, "UNKNOWN")}
                   className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all border ${
-                    selected
+                    answers[q.id] === "UNKNOWN"
                       ? "bg-calm-blue-800 text-white border-calm-blue-800 shadow-md"
                       : "bg-white/60 text-calm-blue-700 border-calm-blue-200 hover:border-calm-blue-400 hover:bg-white"
                   }`}
                 >
-                  {lang === "fr"
-                    ? opt.label_fr
-                    : lang === "de"
-                      ? opt.label_de
-                      : opt.label_en}
+                  {l(lang, "I don't know", "Je ne sais pas", "Ich weiß nicht")}
                 </button>
-              );
-            })}
+              </div>
+            ) : (
+              /* Fallback: text input for enum without options */
+              <div className="flex gap-2 items-center">
+                <input
+                  type="text"
+                  value={answers[q.id] && answers[q.id] !== "UNKNOWN" ? answers[q.id] : ""}
+                  onChange={(e) => onAnswer(q.id, e.target.value || "UNKNOWN")}
+                  placeholder={l(lang, "Enter value…", "Saisir une valeur…", "Wert eingeben…")}
+                  className="flex-grow px-4 py-2.5 rounded-lg text-sm border border-calm-blue-200 bg-white/60 text-calm-blue-800 focus:outline-none focus:border-calm-blue-400 focus:ring-1 focus:ring-calm-blue-400"
+                />
+                <button
+                  onClick={() => onAnswer(q.id, "UNKNOWN")}
+                  className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all border ${
+                    answers[q.id] === "UNKNOWN"
+                      ? "bg-calm-blue-800 text-white border-calm-blue-800 shadow-md"
+                      : "bg-white/60 text-calm-blue-700 border-calm-blue-200 hover:border-calm-blue-400 hover:bg-white"
+                  }`}
+                >
+                  {l(lang, "I don't know", "Je ne sais pas", "Ich weiß nicht")}
+                </button>
+              </div>
+            )}
           </div>
-        </div>
-      ))}
+        );
+      })}
 
       <button
         onClick={onGenerate}
@@ -881,7 +964,9 @@ function ChecklistItemCard({
                     ? l(lang, "Right / Benefit", "Droit / Prestation", "Recht / Leistung")
                     : item.consequence_type === "administrative_step"
                       ? l(lang, "Administrative step", "Démarche administrative", "Verwaltungsschritt")
-                      : l(lang, item.consequence_type, item.consequence_type, item.consequence_type)}
+                      : item.consequence_type === "routing_decision"
+                        ? l(lang, "Decision point", "Point de décision", "Entscheidungspunkt")
+                        : l(lang, item.consequence_type, item.consequence_type, item.consequence_type)}
               </span>
             )}
           </div>
@@ -897,6 +982,36 @@ function ChecklistItemCard({
                   <ul className="list-disc list-inside mt-1 ml-1">
                     {item.evidence.map((e) => (
                       <li key={e.id}>{e.canonical_name}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {item.sources && item.sources.length > 0 && (
+                <div>
+                  <span className="font-semibold">
+                    {l(lang, "Sources:", "Sources :", "Quellen:")}
+                  </span>
+                  <ul className="mt-1 ml-1 space-y-0.5">
+                    {item.sources.map((s) => (
+                      <li key={s.id} className="flex items-center gap-1">
+                        <span className="text-calm-blue-400">🔗</span>
+                        {s.url ? (
+                          <a
+                            href={s.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline text-calm-blue-600 hover:text-calm-blue-800"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            {s.title}
+                          </a>
+                        ) : (
+                          <span>{s.title}</span>
+                        )}
+                        {s.publisher && (
+                          <span className="text-calm-blue-400">— {s.publisher}</span>
+                        )}
+                      </li>
                     ))}
                   </ul>
                 </div>
