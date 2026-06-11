@@ -44,6 +44,28 @@ function loadJurisdictionVocab(rootDir: string): JurisdictionEntry[] {
   return doc?.entries ?? [];
 }
 
+/** Source register entry shape. */
+interface RegisterSource {
+  id: string;
+  title: string;
+  title_en?: string;
+  url?: string;
+  publisher?: string;
+}
+
+/** Load source register for source attribution in export. */
+function loadSourceRegister(rootDir: string): Map<string, RegisterSource> {
+  const registerPath = resolve(rootDir, "sources", "register.yml");
+  if (!existsSync(registerPath)) return new Map();
+  const raw = readFileSync(registerPath, "utf-8");
+  const doc = parseYaml(raw) as { sources?: RegisterSource[] };
+  const map = new Map<string, RegisterSource>();
+  for (const s of doc?.sources ?? []) {
+    if (s.id) map.set(s.id, s);
+  }
+  return map;
+}
+
 export async function main(): Promise<void> {
   const rootDir = resolveRootDir(import.meta.dirname ?? __dirname);
 
@@ -70,6 +92,7 @@ export async function main(): Promise<void> {
 
   // Load vocab for multilingual labels
   const jurisdictionVocab = loadJurisdictionVocab(rootDir);
+  const registerSources = loadSourceRegister(rootDir);
 
   // Discover life events from public consequences only
   const lifeEvents = new Set<string>();
@@ -87,7 +110,7 @@ export async function main(): Promise<void> {
   // Generate per-life-event files
   for (const lifeEvent of lifeEvents) {
     buildIntakeFile(graph, lifeEvent, webDir, jurisdictionVocab);
-    buildRuntimeFile(graph, lifeEvent, webDir);
+    buildRuntimeFile(graph, lifeEvent, webDir, registerSources);
   }
 
   // Generate manifest
@@ -232,6 +255,7 @@ interface TransitiveRefs {
   authorityIds: Set<string>;
   deadlineIds: Set<string>;
   evidenceTypeIds: Set<string>;
+  sourceIds: Set<string>;
 }
 
 /** Collect evidence type refs from a single task template. */
@@ -271,6 +295,7 @@ function collectTransitiveRefs(
 ): TransitiveRefs {
   const conditionIds = new Set<string>();
   const taskTemplateIds = new Set<string>();
+  const sourceIds = new Set<string>();
 
   for (const c of consequences) {
     for (const ref of (c.trigger as Record<string, unknown>)?.condition_refs as string[] ?? []) {
@@ -279,11 +304,18 @@ function collectTransitiveRefs(
     for (const ref of c.task_template_refs as string[] ?? []) {
       taskTemplateIds.add(ref);
     }
+    // Collect source IDs from assertion refs
+    for (const assertionRef of c.source_assertion_refs as string[] ?? []) {
+      const assertion = graph.assertions.get(assertionRef);
+      if (assertion?.source_id) {
+        sourceIds.add(assertion.source_id);
+      }
+    }
   }
 
   const { authorityIds, deadlineIds, evidenceTypeIds } = collectTaskTemplateRefs(taskTemplateIds, graph);
 
-  return { conditionIds, taskTemplateIds, authorityIds, deadlineIds, evidenceTypeIds };
+  return { conditionIds, taskTemplateIds, authorityIds, deadlineIds, evidenceTypeIds, sourceIds };
 }
 
 /**
@@ -294,6 +326,7 @@ function buildRuntimeFile(
   graph: LoadedGraph,
   lifeEvent: string,
   webDir: string,
+  registerSources: Map<string, RegisterSource>,
 ): void {
   // Filter consequences by life event AND distribution_status
   const consequences = [...graph.consequences.values()].filter(
@@ -317,16 +350,27 @@ function buildRuntimeFile(
       expression: c.expression,
       missing_fact_behavior: c.missing_fact_behavior,
     })),
-    consequences: consequences.map((c) => ({
-      id: c.id,
-      title: c.title,
-      consequence_type: c.consequence_type,
-      jurisdiction: c.jurisdiction,
-      distribution_status: c.distribution_status,
-      trigger: c.trigger,
-      task_template_refs: c.task_template_refs,
-      confidence: c.confidence,
-    })),
+    consequences: consequences.map((c) => {
+      // Resolve assertion refs → unique source IDs for this consequence
+      const consequenceSourceIds = new Set<string>();
+      for (const assertionRef of c.source_assertion_refs ?? []) {
+        const assertion = graph.assertions.get(assertionRef);
+        if (assertion?.source_id) {
+          consequenceSourceIds.add(assertion.source_id);
+        }
+      }
+      return {
+        id: c.id,
+        title: c.title,
+        consequence_type: c.consequence_type,
+        jurisdiction: c.jurisdiction,
+        distribution_status: c.distribution_status,
+        trigger: c.trigger,
+        task_template_refs: c.task_template_refs,
+        confidence: c.confidence,
+        source_refs: [...consequenceSourceIds],
+      };
+    }),
     task_templates: [...refs.taskTemplateIds]
       .map((id) => graph.taskTemplates.get(id))
       .filter(Boolean)
@@ -368,6 +412,15 @@ function buildRuntimeFile(
         id: e!.id,
         canonical_name: e!.canonical_name,
         synonyms: e!.synonyms,
+      })),
+    sources: [...refs.sourceIds]
+      .map((id) => registerSources.get(id))
+      .filter(Boolean)
+      .map((s) => ({
+        id: s!.id,
+        title: s!.title_en ?? s!.title,
+        url: s!.url,
+        publisher: s!.publisher,
       })),
   };
 
