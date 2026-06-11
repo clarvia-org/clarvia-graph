@@ -122,6 +122,12 @@ The goal is to test limited, clearly marked public-facing versions where appropr
 
 ---
 
+## Planned improvements
+
+> **Planned:** evaluate [`next-intl`](https://github.com/amannn/next-intl) for i18n when expanding beyond three languages. The current inline `l()` helper works for EN/FR/DE but does not scale to additional languages without touching every call site.
+
+---
+
 ## Development
 
 Install dependencies:
