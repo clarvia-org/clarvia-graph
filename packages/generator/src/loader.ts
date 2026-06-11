@@ -104,6 +104,7 @@ export interface IntakeFactType extends GraphRecord {
   label: string;
   value_type: string;
   cardinality: string;
+  allowed_values?: string[];
 }
 
 export interface SourceRecord extends GraphRecord {

@@ -176,7 +176,7 @@ function buildIntakeFile(
   const questions = [...graph.intakeFactTypes.values()]
     .filter((ft) => factPaths.has(ft.path))
     .map((q) => {
-      const options = buildQuestionOptions(q.value_type, jurisdictionVocab);
+      const options = buildQuestionOptions(q.value_type, q.allowed_values, jurisdictionVocab);
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const raw = q as any;
@@ -205,9 +205,47 @@ function buildIntakeFile(
   );
 }
 
-/** Build options array for a question. Only jurisdiction_code types get options. */
+/** Human-readable labels for common enum values. */
+const ENUM_LABELS: Record<string, { en: string; fr: string; de: string }> = {
+  // Employment status
+  employee: { en: "Employee", fr: "Salarié(e)", de: "Arbeitnehmer(in)" },
+  apprentice: { en: "Apprentice", fr: "Apprenti(e)", de: "Auszubildende(r)" },
+  self_employed: { en: "Self-employed", fr: "Indépendant(e)", de: "Selbständig" },
+  business_owner: { en: "Business owner", fr: "Chef d'entreprise", de: "Unternehmer(in)" },
+  not_employed: { en: "Not employed", fr: "Sans emploi", de: "Nicht erwerbstätig" },
+  retired: { en: "Retired", fr: "Retraité(e)", de: "Im Ruhestand" },
+  // Relationship
+  surviving_spouse: { en: "Surviving spouse", fr: "Conjoint(e) survivant(e)", de: "Überlebende(r) Ehepartner(in)" },
+  registered_partner: { en: "Registered partner", fr: "Partenaire enregistré(e)", de: "Eingetragene(r) Partner(in)" },
+  child: { en: "Child", fr: "Enfant", de: "Kind" },
+  parent: { en: "Parent", fr: "Parent", de: "Elternteil" },
+  sibling: { en: "Sibling", fr: "Frère/Sœur", de: "Geschwister" },
+  other_relative: { en: "Other relative", fr: "Autre proche", de: "Andere(r) Verwandte(r)" },
+  unrelated_person: { en: "Unrelated person", fr: "Personne sans lien de parenté", de: "Nicht verwandte Person" },
+  // Marital status
+  married: { en: "Married", fr: "Marié(e)", de: "Verheiratet" },
+  registered_partnership: { en: "Registered partnership", fr: "Partenariat enregistré", de: "Eingetragene Partnerschaft" },
+  divorced: { en: "Divorced", fr: "Divorcé(e)", de: "Geschieden" },
+  widowed: { en: "Widowed", fr: "Veuf/Veuve", de: "Verwitwet" },
+  separated: { en: "Separated", fr: "Séparé(e)", de: "Getrennt" },
+  single: { en: "Single", fr: "Célibataire", de: "Ledig" },
+  cohabiting: { en: "Cohabiting (not registered)", fr: "En cohabitation (non enregistrée)", de: "Zusammenlebend (nicht eingetragen)" },
+  // Generic
+  unknown: { en: "I don't know", fr: "Je ne sais pas", de: "Ich weiß nicht" },
+};
+
+/** Humanize a snake_case enum value to Title Case as fallback. */
+function humanizeValue(value: string): string {
+  return value.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+/**
+ * Build options array for a question.
+ * Handles jurisdiction_code (from vocab) and enum (from allowed_values).
+ */
 function buildQuestionOptions(
   valueType: string,
+  allowedValues: string[] | undefined,
   jurisdictionVocab: JurisdictionEntry[],
 ): Array<{
   value: string;
@@ -215,37 +253,47 @@ function buildQuestionOptions(
   label_fr: string;
   label_de: string;
 }> {
-  if (valueType !== "jurisdiction_code") return [];
+  if (valueType === "jurisdiction_code") {
+    const options: Array<{ value: string; label_en: string; label_fr: string; label_de: string }> = [];
 
-  const options: Array<{
-    value: string;
-    label_en: string;
-    label_fr: string;
-    label_de: string;
-  }> = [];
+    // Add real jurisdiction options (exclude meta-jurisdictions)
+    const realJurisdictions = jurisdictionVocab.filter(
+      (j) => !["EU", "XBORDER", "GLOBAL"].includes(j.id),
+    );
+    for (const j of realJurisdictions) {
+      options.push({
+        value: j.id,
+        label_en: j.label,
+        label_fr: j.label_fr ?? j.label,
+        label_de: j.label_de ?? j.label,
+      });
+    }
 
-  // Add real jurisdiction options (exclude meta-jurisdictions)
-  const realJurisdictions = jurisdictionVocab.filter(
-    (j) => !["EU", "XBORDER", "GLOBAL"].includes(j.id),
-  );
-  for (const j of realJurisdictions) {
+    // Add "I don't know" option
     options.push({
-      value: j.id,
-      label_en: j.label,
-      label_fr: j.label_fr ?? j.label,
-      label_de: j.label_de ?? j.label,
+      value: "UNKNOWN",
+      label_en: "I don't know",
+      label_fr: "Je ne sais pas",
+      label_de: "Ich weiß nicht",
+    });
+
+    return options;
+  }
+
+  // Enum types with allowed_values → generate options from values
+  if (valueType === "enum" && allowedValues && allowedValues.length > 0) {
+    return allowedValues.map((v) => {
+      const labels = ENUM_LABELS[v];
+      return {
+        value: v,
+        label_en: labels?.en ?? humanizeValue(v),
+        label_fr: labels?.fr ?? humanizeValue(v),
+        label_de: labels?.de ?? humanizeValue(v),
+      };
     });
   }
 
-  // Add "I don't know" option
-  options.push({
-    value: "UNKNOWN",
-    label_en: "I don't know",
-    label_fr: "Je ne sais pas",
-    label_de: "Ich weiß nicht",
-  });
-
-  return options;
+  return [];
 }
 
 /** Collect all transitively referenced entity IDs from consequences. */

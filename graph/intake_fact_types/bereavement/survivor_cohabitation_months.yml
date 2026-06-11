@@ -1,8 +1,14 @@
 id: intake_fact.global.bereavement.survivor_cohabitation_months
 schema_version: "0.1.0"
 path: survivor.cohabitation.months
-label: Months the survivor lived with the deceased
-description: Number of months the survivor lived in domestic community with the deceased.
+label: How many months were you living with the deceased before their death?
+label_en: How many months were you living with the deceased before their death?
+label_fr: Combien de mois viviez-vous avec le défunt avant son décès ?
+label_de: Wie viele Monate haben Sie vor dem Tod mit dem Verstorbenen zusammengelebt?
+description: >
+  Number of months the survivor was living in domestic community with the
+  deceased immediately before the death. Used to determine housing rights
+  (e.g., right to remain in shared dwelling if >= 6 months).
 value_type: integer
 cardinality: one
 required_for:
