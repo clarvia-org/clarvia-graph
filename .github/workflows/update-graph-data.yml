@@ -43,7 +43,7 @@ jobs:
           echo "${TAG}" > CLARVIA_GRAPH_VERSION
           echo "Pinned CLARVIA_GRAPH_VERSION to ${TAG}"
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: "22"
           cache: "npm"
