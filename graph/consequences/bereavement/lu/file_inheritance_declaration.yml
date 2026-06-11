@@ -12,7 +12,10 @@ trigger:
     - condition.lu.bereavement.inheritance_tax.aed_declaration_may_be_required
 task_template_refs:
   - task_template.lu.bereavement.inheritance_tax.file_aed_declaration
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.inheritance_tax.declaration_needed_for_tax_assessment
+  - assertion.guichet_lu.declaration_succession.inheritance_declaration_required
+  - assertion.lu.aed_successions.heirs_and_legatees_liable
 standards_export:
   cccev_requirement:
     enabled: true
@@ -20,7 +23,7 @@ standards_export:
   cpsv_public_service:
     enabled: false
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

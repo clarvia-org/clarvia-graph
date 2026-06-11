@@ -685,7 +685,27 @@ exports[`runValidate characterization against real graph > pins schema assignmen
     "valid": true,
   },
   {
+    "file": "sources/assertions/eu/eu/ejustice_succession.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
     "file": "sources/assertions/fr/service_public_fr/succession.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/cns_lu/death_funeral_costs.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/guichet_lu/accept_renounce_succession.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/guichet_lu/bereavement_leave.yml",
     "schema": "source_assertion.schema.json",
     "valid": true,
   },
@@ -696,6 +716,61 @@ exports[`runValidate characterization against real graph > pins schema assignmen
   },
   {
     "file": "sources/assertions/lu/guichet_lu/declaration_succession.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/guichet_lu/funeral_allowance.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/guichet_lu/funeral_cremation.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/guichet_lu/income_tax_return.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/guichet_lu/inheritance_tax.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/lu/acd_form100.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/lu/aed_successions.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/lu/ccss_cessation.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/lu/cnap_survivor_pension.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/lu/cns_death_notification.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/lu/cssf_tracing_assets.yml",
+    "schema": "source_assertion.schema.json",
+    "valid": true,
+  },
+  {
+    "file": "sources/assertions/lu/lu/snca_inherit_vehicle.yml",
     "schema": "source_assertion.schema.json",
     "valid": true,
   },
@@ -815,8 +890,8 @@ exports[`runValidate characterization against real graph > pins schema assignmen
 exports[`runValidate characterization against real graph > pins total file count and pass/fail breakdown 1`] = `
 {
   "invalid": 0,
-  "total": 161,
-  "valid": 161,
+  "total": 176,
+  "valid": 176,
 }
 `;
 

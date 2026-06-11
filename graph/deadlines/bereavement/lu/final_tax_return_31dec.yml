@@ -12,7 +12,8 @@ domain: inheritance_tax
 calculation:
   kind: conditional
   calendar: civil
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.income_tax_return.return_due_31_december_following_year
 record_valid_from: "2026-06-05"
 authoring_status: approved
 distribution_status: public_open

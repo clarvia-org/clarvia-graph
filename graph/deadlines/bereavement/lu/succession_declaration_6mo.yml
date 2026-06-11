@@ -15,7 +15,8 @@ calculation:
   starts_from_fact: death.date
   calendar: civil
   if_weekend_or_holiday: unknown
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.declaration_succession.inheritance_declaration_required
 record_valid_from: "2026-06-05"
 authoring_status: approved
 distribution_status: public_open

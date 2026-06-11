@@ -12,7 +12,10 @@ trigger:
     - condition.lu.bereavement.employment.survivor_is_employee
 task_template_refs:
   - task_template.lu.bereavement.employment.claim_bereavement_leave
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.bereavement_leave.employee_entitled_to_extraordinary_leave
+  - assertion.guichet_lu.bereavement_leave.leave_taken_at_event
+  - assertion.guichet_lu.bereavement_leave.employee_must_request_leave
 standards_export:
   cccev_requirement:
     enabled: true
@@ -20,7 +23,7 @@ standards_export:
   cpsv_public_service:
     enabled: true
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

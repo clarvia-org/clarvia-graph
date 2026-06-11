@@ -11,7 +11,9 @@ trigger:
   condition_refs: []
 task_template_refs:
   - task_template.lu.bereavement.succession.understand_applicable_succession_law
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.eu.ejustice_succession.habitual_residence_default_rule
+  - assertion.eu.ejustice_succession.cross_border_single_law_authority
 standards_export:
   cccev_requirement:
     enabled: true
@@ -19,7 +21,7 @@ standards_export:
   cpsv_public_service:
     enabled: false
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

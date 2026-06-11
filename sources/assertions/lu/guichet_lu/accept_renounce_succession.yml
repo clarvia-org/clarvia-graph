@@ -1,0 +1,107 @@
+source_id: source.guichet_lu.accept_renounce_succession
+source_snapshot_id: snapshot.guichet_lu.accept_renounce_succession.2026_06_10
+assertions:
+- id: assertion.guichet_lu.accept_renounce_succession.heirs_not_obliged_to_accept
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Heirs receive the estate when the succession opens, but they are not required to accept it.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: obligés d’accepter la succession
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.accept_renounce_succession.inventory_acceptance_limits_debts
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Accepting a succession under benefit of inventory limits heirs’ liability for estate debts to the value of the assets they receive.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: ne sont tenus du paiement des dettes de la succession
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.accept_renounce_succession.inventory_three_months
+  schema_version: "0.1.0"
+  claim_type: deadline
+  claim_text: >-
+    The inventory period for accepting a succession under benefit of inventory is 3 months from the day of death.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession_option
+  anchor:
+    selector_type: text_quote
+    text_quote: 3 mois pour l'établissement de l'inventaire
+  extracted_value:
+    duration: P3M
+    starts_from: date_of_death
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.accept_renounce_succession.reflection_forty_days
+  schema_version: "0.1.0"
+  claim_type: deadline
+  claim_text: >-
+    The reflection period for exercising the succession option is 40 days after the inventory period.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession_reflection
+  anchor:
+    selector_type: text_quote
+    text_quote: 40 jours pour la réflexion
+  extracted_value:
+    duration: P40D
+    starts_from: inventory_period_end
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.accept_renounce_succession.renunciation_at_court_registry
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    To validly renounce a succession, the heir must do so at the registry of the district court where the succession opened.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: renonciation doit se faire au greffe du tribunal d’arrondissement
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

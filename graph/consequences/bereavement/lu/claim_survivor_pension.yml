@@ -13,7 +13,10 @@ trigger:
     - condition.lu.bereavement.survivor_pension.relationship_eligible_survivor
 task_template_refs:
   - task_template.lu.bereavement.survivor_pension.file_cnap_claim
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.lu.cnap_survivor_pension.cnap_may_pay_survivor_pension
+  - assertion.lu.cnap_survivor_pension.beneficiaries_subject_to_conditions
+  - assertion.guichet_lu.bereavement.survivor_pension_available
 standards_export:
   cccev_requirement:
     enabled: true
@@ -21,7 +24,7 @@ standards_export:
   cpsv_public_service:
     enabled: true
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-03"

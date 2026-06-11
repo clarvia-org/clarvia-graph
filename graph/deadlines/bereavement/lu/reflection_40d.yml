@@ -14,7 +14,8 @@ calculation:
   starts_from_fact: succession.inventory_period_end_date
   calendar: civil
   if_weekend_or_holiday: unknown
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.accept_renounce_succession.reflection_forty_days
 record_valid_from: "2026-06-05"
 authoring_status: approved
 distribution_status: public_open

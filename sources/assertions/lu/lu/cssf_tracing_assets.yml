@@ -1,0 +1,103 @@
+source_id: source.lu.cssf_tracing_assets
+source_snapshot_id: snapshot.lu.cssf_tracing_assets.2026_06_10
+assertions:
+- id: assertion.lu.cssf_tracing_assets.cssf_not_competent_for_asset_tracing
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Requests to trace assets of a deceased person do not fall within the CSSF’s competence.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: do not fall
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cssf_tracing_assets.heirs_contact_banks_directly
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    Heirs should send asset-tracing requests directly to Luxembourg banks and other financial-sector professionals.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: should directly address their requests to the different banks
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cssf_tracing_assets.death_certificate_for_asset_search
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    Asset-tracing requests to banks or financial-sector professionals should attach a death certificate for the deceased relative.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: a death certificate relating to the deceased relative
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cssf_tracing_assets.id_card_and_legal_document_for_asset_search
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    Heirs should attach a certified copy of their identity card and a legal document proving their rights when asking financial institutions about assets.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: a legal document evidencing their rights
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cssf_tracing_assets.representative_proxy_required
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    If heirs are represented, the representative should attach a proxy authorising them to act on the heirs’ behalf.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: a proxy enabling them to act
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

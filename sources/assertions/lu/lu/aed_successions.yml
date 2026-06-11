@@ -1,0 +1,103 @@
+source_id: source.lu.aed_successions
+source_snapshot_id: snapshot.lu.aed_successions.2026_06_10
+assertions:
+- id: assertion.lu.aed_successions.succession_and_mutation_distinguished
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    AED guidance distinguishes between succession duty and transfer duty on death.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: distinction entre le droit de succession et le droit de mutation
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.aed_successions.heirs_and_legatees_liable
+  schema_version: "0.1.0"
+  claim_type: eligibility_condition
+  claim_text: >-
+    The persons liable for succession matters are the heirs and legatees of an estate.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: Les redevables sont les héritiers et les légataires
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.aed_successions.death_transfer_taxes
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Succession and transfer duties on death are taxes on transfers that occur by reason of death.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: sont des impôts sur les transmissions
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.aed_successions.succession_duty_on_luxembourg_inhabitant_estate
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Succession duty is levied on the value of what is received or acquired in the estate of an inhabitant of the Grand Duchy, subject to exceptions.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: dans la succession d’un habitant du Grand-Duché
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.aed_successions.mutation_duty_on_luxembourg_immovables
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Transfer duty on death is levied on the value of Luxembourg immovable property received or acquired because of the death of a person not deemed an inhabitant.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: biens immeubles situés dans le Grand-Duché
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

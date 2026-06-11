@@ -1,0 +1,103 @@
+source_id: source.cns_lu.death_funeral_costs
+source_snapshot_id: snapshot.cns_lu.death_funeral_costs.2026_06_10
+assertions:
+- id: assertion.cns_lu.death_funeral_costs.funeral_indemnity_covers_costs
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    The CNS funeral indemnity is financial aid intended to cover all or part of funeral costs for an insured or co-insured deceased person in Luxembourg.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: health_insurance
+  anchor:
+    selector_type: text_quote
+    text_quote: aide financière destinée à couvrir tout ou partie des frais
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.cns_lu.death_funeral_costs.deceased_must_be_insured_or_coinsured
+  schema_version: "0.1.0"
+  claim_type: eligibility_condition
+  claim_text: >-
+    To qualify for the funeral indemnity, the deceased must have been insured and paid contributions in Luxembourg or have been co-insured for health insurance.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: health_insurance
+  anchor:
+    selector_type: text_quote
+    text_quote: soit avoir été elle-même assurée
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.cns_lu.death_funeral_costs.cns_claim_by_post
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    A person who advanced funeral costs for an insured deceased person can request the CNS funeral indemnity by sending the required documents by post to the CNS.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: health_insurance
+  anchor:
+    selector_type: text_quote
+    text_quote: il me suffit d'envoyer par courrier à la CNS
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.cns_lu.death_funeral_costs.paid_invoices_required
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    The CNS funeral indemnity request must include duly paid and receipted invoices.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: health_insurance
+  anchor:
+    selector_type: text_quote
+    text_quote: les factures dûment payées et acquittées
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.cns_lu.death_funeral_costs.death_certificate_required
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    The CNS funeral indemnity request must include the death certificate.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: health_insurance
+  anchor:
+    selector_type: text_quote
+    text_quote: l'acte de décès
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

@@ -1,0 +1,83 @@
+source_id: source.lu.cnap_survivor_pension
+source_snapshot_id: snapshot.lu.cnap_survivor_pension.2026_06_10
+assertions:
+- id: assertion.lu.cnap_survivor_pension.cnap_may_pay_survivor_pension
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    If an insured person or a recipient of an old-age or invalidity pension dies, the CNAP may pay a survivor pension.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: survivor_pension
+  anchor:
+    selector_type: text_quote
+    text_quote: une pension de survie peut être versée
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cnap_survivor_pension.beneficiaries_subject_to_conditions
+  schema_version: "0.1.0"
+  claim_type: eligibility_condition
+  claim_text: >-
+    Possible beneficiaries of a survivor pension are subject to the applicable award conditions.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: survivor_pension
+  anchor:
+    selector_type: text_quote
+    text_quote: Sous réserve de remplir les conditions
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cnap_survivor_pension.spouse_surviving_partner_or_orphans_listed
+  schema_version: "0.1.0"
+  claim_type: eligibility_condition
+  claim_text: >-
+    The CNAP page lists potential beneficiaries including the surviving spouse, surviving partner and orphans.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: survivor_pension
+  anchor:
+    selector_type: text_quote
+    text_quote: le conjoint survivant
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cnap_survivor_pension.survivor_pension_gender_neutral
+  schema_version: "0.1.0"
+  claim_type: eligibility_condition
+  claim_text: >-
+    A survivor pension may be granted to the survivor regardless of sex.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: survivor_pension
+  anchor:
+    selector_type: text_quote
+    text_quote: quel que soit son sexe
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

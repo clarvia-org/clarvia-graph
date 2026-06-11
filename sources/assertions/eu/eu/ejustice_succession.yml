@@ -1,0 +1,103 @@
+source_id: source.eu.ejustice_succession
+source_snapshot_id: snapshot.eu.ejustice_succession.2026_06_10
+assertions:
+- id: assertion.eu.ejustice_succession.regulation_applies_from_2015_08_17
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    The EU succession rules apply to the succession of people who died on or after 17 August 2015.
+  claim_scope:
+    jurisdiction: EU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: die on or after 17 August 2015
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.eu.ejustice_succession.cross_border_single_law_authority
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    A cross-border succession is intended to be handled coherently under a single law and by one single authority.
+  claim_scope:
+    jurisdiction: EU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: under a single law and by one single authority
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.eu.ejustice_succession.habitual_residence_default_rule
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    In principle, courts in the Member State of the deceased person’s last habitual residence have jurisdiction and that Member State’s law applies.
+  claim_scope:
+    jurisdiction: EU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: last habitual residence will have jurisdiction
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.eu.ejustice_succession.choice_of_nationality_law
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    A person may choose that the law of their country of nationality applies to their succession.
+  claim_scope:
+    jurisdiction: EU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: law of their country of nationality
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.eu.ejustice_succession.ecs_recognised_in_member_states
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    Once issued, the European Certificate of Succession is recognised in all participating Member States without a special procedure.
+  claim_scope:
+    jurisdiction: EU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: recognised in all Member States
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

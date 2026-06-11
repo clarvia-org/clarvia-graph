@@ -11,7 +11,8 @@ trigger:
   condition_refs: []
 task_template_refs:
   - task_template.lu.bereavement.death_registration.obtain_medical_death_certificate
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.funeral_cremation.cremation_medical_certificate_required
 standards_export:
   cccev_requirement:
     enabled: true
@@ -19,7 +20,7 @@ standards_export:
   cpsv_public_service:
     enabled: true
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

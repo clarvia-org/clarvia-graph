@@ -1,0 +1,103 @@
+source_id: source.lu.cns_death_notification
+source_snapshot_id: snapshot.lu.cns_death_notification.2026_06_10
+assertions:
+- id: assertion.lu.cns_death_notification.family_insurance_reexamined_after_death
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    After the death of an insured person, the insurance situation of family members must be reviewed to avoid interruption of rights.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: health_insurance
+  anchor:
+    selector_type: text_quote
+    text_quote: la situation d’assurance des membres de la famille doit être réexaminée
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cns_death_notification.coinsurance_ends_automatically
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Co-insurance ends automatically when the principal insured person dies.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: health_insurance
+  anchor:
+    selector_type: text_quote
+    text_quote: La coassurance prend fin automatiquement avec le décès
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cns_death_notification.coinsurance_not_automatic_for_family
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Co-insurance does not automatically continue for the surviving spouse or for children who were co-insured.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: health_insurance
+  anchor:
+    selector_type: text_quote
+    text_quote: Elle ne se poursuit pas automatiquement
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cns_death_notification.temporary_coverage_steps_may_be_needed
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    While waiting for the pension decision, specific steps may be needed to avoid an interruption of health coverage.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: health_insurance
+  anchor:
+    selector_type: text_quote
+    text_quote: des démarches spécifiques peuvent être nécessaires
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.cns_death_notification.survivor_pension_not_automatic
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    A survivor pension is not granted automatically and must be requested from the CNAP.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: survivor_pension
+  anchor:
+    selector_type: text_quote
+    text_quote: Cette pension n’est pas accordée automatiquement
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

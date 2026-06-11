@@ -14,7 +14,9 @@ trigger:
     - condition.lu.bereavement.employment.deceased_was_self_employed
 task_template_refs:
   - task_template.lu.bereavement.employment.notify_ccss_business_matters
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.lu.ccss_cessation.self_employed_must_notify_ccss
+  - assertion.lu.ccss_cessation.exit_declaration_required_information
 standards_export:
   cccev_requirement:
     enabled: true
@@ -22,7 +24,7 @@ standards_export:
   cpsv_public_service:
     enabled: true
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

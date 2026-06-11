@@ -14,7 +14,9 @@ trigger:
     - condition.lu.bereavement.death_registration.death_occurred_in_lu
 task_template_refs:
   - task_template.lu.bereavement.death_registration.file_death_declaration
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.bereavement.death_must_be_declared
+  - assertion.guichet_lu.bereavement.declaration_within_24h
 standards_export:
   cccev_requirement:
     enabled: true
@@ -22,7 +24,7 @@ standards_export:
   cpsv_public_service:
     enabled: true
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-03"

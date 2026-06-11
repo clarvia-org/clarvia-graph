@@ -11,7 +11,10 @@ trigger:
   condition_refs: []
 task_template_refs:
   - task_template.lu.bereavement.inheritance_tax.file_final_income_tax_return
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.income_tax_return.assessment_taxpayers_must_file
+  - assertion.guichet_lu.income_tax_return.model_100_used
+  - assertion.guichet_lu.income_tax_return.return_due_31_december_following_year
 standards_export:
   cccev_requirement:
     enabled: true
@@ -19,7 +22,7 @@ standards_export:
   cpsv_public_service:
     enabled: true
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

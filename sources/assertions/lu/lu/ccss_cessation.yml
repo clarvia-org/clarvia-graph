@@ -1,0 +1,103 @@
+source_id: source.lu.ccss_cessation
+source_snapshot_id: snapshot.lu.ccss_cessation.2026_06_10
+assertions:
+- id: assertion.lu.ccss_cessation.self_employed_must_notify_ccss
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    A self-employed person who temporarily or permanently stops their activity must inform the CCSS; the same applies to their assisting spouse.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: doit en informer le Centre commun de la sécurité sociale (CCSS)
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.ccss_cessation.exit_declaration_required_information
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    The exit declaration must include the self-employed person’s data, the cessation date, the reason for stopping, and the place, date and signature.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: La déclaration de sortie doit comprendre les informations
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.ccss_cessation.temporary_suspension_exit_declaration
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    A self-employed person or assisting spouse who wants to temporarily suspend the activity must inform the CCSS by completing an exit declaration.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: suspendre temporairement son activité professionnelle doit en informer le CCSS
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.ccss_cessation.activity_stop_exit_declaration
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    A self-employed person or assisting spouse who stops the professional activity sends an exit declaration to the CCSS.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: arrête son activité professionnelle envoie une
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.ccss_cessation.employees_exit_declaration_each
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    If staff must be disaffiliated, the self-employed person acting as employer must submit an exit declaration for each employee to the CCSS.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: déclaration de sortie pour chaque salarié
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

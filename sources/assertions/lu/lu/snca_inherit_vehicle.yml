@@ -1,0 +1,103 @@
+source_id: source.lu.snca_inherit_vehicle
+source_snapshot_id: snapshot.lu.snca_inherit_vehicle.2026_06_10
+assertions:
+- id: assertion.lu.snca_inherit_vehicle.new_registration_certificate_required
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    After the death of a vehicle holder or owner, the surviving spouse or heir must obtain a new registration certificate in their own name before the vehicle is used on public roads.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: doit se faire établir un nouveau certificat d’immatriculation à son nom
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.snca_inherit_vehicle.luxembourg_resident_heir_scope
+  schema_version: "0.1.0"
+  claim_type: eligibility_condition
+  claim_text: >-
+    The inherited-vehicle procedure concerns Luxembourg residents who inherit a used vehicle last registered in Luxembourg.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: hérite un véhicule d'occasion immatriculé
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.snca_inherit_vehicle.registration_application_form_required
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    The registration application must include the completed and signed application for a registration certificate.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: Demande en obtention d'un certificat d'immatriculation
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.snca_inherit_vehicle.succession_attestation_required
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    For inheritance or succession, the file must include a succession attestation issued by the registration and domains administration.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: L'attestation de succession
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.snca_inherit_vehicle.appointment_or_postal_submission
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    The applicant should make an online appointment or send the file by post, preferably by registered mail.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: estate_assets
+  anchor:
+    selector_type: text_quote
+    text_quote: rendez-vous en ligne
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

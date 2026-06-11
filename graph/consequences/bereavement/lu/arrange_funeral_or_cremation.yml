@@ -13,7 +13,10 @@ trigger:
   condition_refs: []
 task_template_refs:
   - task_template.lu.bereavement.funeral.arrange_funeral_or_cremation
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.funeral_cremation.written_authorisation_required
+  - assertion.guichet_lu.funeral_cremation.burial_or_cremation_before_72h
+  - assertion.guichet_lu.funeral_cremation.cremation_authorisation_required
 standards_export:
   cccev_requirement:
     enabled: true
@@ -21,7 +24,7 @@ standards_export:
   cpsv_public_service:
     enabled: true
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

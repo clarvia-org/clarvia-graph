@@ -1,0 +1,85 @@
+source_id: source.guichet_lu.funeral_cremation
+source_snapshot_id: snapshot.guichet_lu.funeral_cremation.2026_06_10
+assertions:
+- id: assertion.guichet_lu.funeral_cremation.written_authorisation_required
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    A burial or deposit of ashes may take place only on the basis of written authorisation from the civil registrar of the commune where the death occurred.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: funeral
+  anchor:
+    selector_type: text_quote
+    text_quote: uniquement sur base d’une autorisation écrite
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.funeral_cremation.burial_or_cremation_before_72h
+  schema_version: "0.1.0"
+  claim_type: deadline
+  claim_text: >-
+    The burial of a human body, and removal of remains for cremation, must take place no later than the 72nd hour after death unless an extension is granted.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: funeral
+  anchor:
+    selector_type: text_quote
+    text_quote: doivent l’être avant la 72
+  extracted_value:
+    duration: PT72H
+    starts_from: date_of_death
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.funeral_cremation.cremation_authorisation_required
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    Cremation of a person who died in Luxembourg requires authorisation from the civil registrar of the place of death.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: funeral
+  anchor:
+    selector_type: text_quote
+    text_quote: ne peut avoir lieu que sur autorisation
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.funeral_cremation.cremation_medical_certificate_required
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    For cremation, a medical certificate must attest that there is no sign or indication of violent death.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: funeral
+  anchor:
+    selector_type: text_quote
+    text_quote: certificat médical attestant qu’il n’existe
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

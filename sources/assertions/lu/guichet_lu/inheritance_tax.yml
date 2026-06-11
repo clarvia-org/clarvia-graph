@@ -1,0 +1,105 @@
+source_id: source.guichet_lu.inheritance_tax
+source_snapshot_id: snapshot.guichet_lu.inheritance_tax.2026_06_10
+assertions:
+- id: assertion.guichet_lu.inheritance_tax.two_inheritance_tax_categories
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Luxembourg fiscal guidance distinguishes two categories of tax on inherited property: succession duties and transfer duties on death.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: 2 catégories d’impôts sur les biens reçus en héritage
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.inheritance_tax.declaration_needed_for_tax_assessment
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    To determine succession or transfer duties on death, heirs and some legatees must file a succession or transfer declaration with the AED.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: déclaration de succession ou de mutation
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.inheritance_tax.aed_sends_payment_request
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    After the declaration, the AED sends the request for payment of the taxes due.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: L'AED envoie ensuite la demande en paiement des impôts dus.
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.inheritance_tax.duties_vary_by_relationship_and_assets
+  schema_version: "0.1.0"
+  claim_type: cost
+  claim_text: >-
+    Succession duties vary depending on the family relationship between the deceased and the heir and the value of the property received.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: succession
+  anchor:
+    selector_type: text_quote
+    text_quote: Les droits de succession varient en fonction
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.inheritance_tax.tax_due_six_weeks_after_request
+  schema_version: "0.1.0"
+  claim_type: deadline
+  claim_text: >-
+    Succession duties should in principle be paid within 6 weeks after receiving the AED payment request.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: inheritance_tax
+  anchor:
+    selector_type: text_quote
+    text_quote: être payés dans les 6 semaines
+  extracted_value:
+    duration: P6W
+    starts_from: aed_payment_request_received
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

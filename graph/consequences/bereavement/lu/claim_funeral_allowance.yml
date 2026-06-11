@@ -14,7 +14,10 @@ trigger:
     - condition.lu.bereavement.health_insurance.deceased_was_lu_health_insured
 task_template_refs:
   - task_template.lu.bereavement.health_insurance.claim_funeral_allowance
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.funeral_allowance.funeral_allowance_flat_rate
+  - assertion.guichet_lu.funeral_allowance.deceased_must_be_health_insured
+  - assertion.cns_lu.death_funeral_costs.funeral_indemnity_covers_costs
 standards_export:
   cccev_requirement:
     enabled: true
@@ -22,7 +25,7 @@ standards_export:
   cpsv_public_service:
     enabled: true
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

@@ -1,0 +1,105 @@
+source_id: source.guichet_lu.bereavement_leave
+source_snapshot_id: snapshot.guichet_lu.bereavement_leave.2026_06_10
+assertions:
+- id: assertion.guichet_lu.bereavement_leave.employee_entitled_to_extraordinary_leave
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Employees and apprentices may benefit from extraordinary leave for personal reasons such as a death.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: vous pouvez bénéficier d’un congé extraordinaire
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.bereavement_leave.leave_taken_at_event
+  schema_version: "0.1.0"
+  claim_type: deadline
+  claim_text: >-
+    Extraordinary leave for bereavement must be taken when the event occurs, except for birth or adoption cases.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: au moment où l’événement se produit
+  extracted_value:
+    duration: P0D
+    starts_from: personal_event
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.bereavement_leave.spouse_partner_death_three_days
+  schema_version: "0.1.0"
+  claim_type: eligibility_condition
+  claim_text: >-
+    The death of a spouse or partner is listed as an event giving entitlement to extraordinary leave; the table gives 3 days for this event.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: Décès du conjoint/partenaire
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.bereavement_leave.first_degree_relative_three_days
+  schema_version: "0.1.0"
+  claim_type: eligibility_condition
+  claim_text: >-
+    The death of a first-degree relative of the employee or of the employee’s spouse or partner is listed as a bereavement-leave event; the table gives 3 days for this event.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: Décès d’un parent au 1
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.bereavement_leave.employee_must_request_leave
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    An employee who wants extraordinary leave must expressly request it from the employer, who cannot refuse it.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: employment
+  anchor:
+    selector_type: text_quote
+    text_quote: vous devez expressément le demander à votre employeur
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

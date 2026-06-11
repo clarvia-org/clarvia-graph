@@ -1,0 +1,85 @@
+source_id: source.guichet_lu.income_tax_return
+source_snapshot_id: snapshot.guichet_lu.income_tax_return.2026_06_10
+assertions:
+- id: assertion.guichet_lu.income_tax_return.assessment_taxpayers_must_file
+  schema_version: "0.1.0"
+  claim_type: legal_scope
+  claim_text: >-
+    Taxpayers subject to tax assessment must report their income by filing a personal income tax return.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: income_tax
+  anchor:
+    selector_type: text_quote
+    text_quote: doivent déclarer leurs revenus
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.income_tax_return.model_100_used
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    The personal income tax return is filed using model 100.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: income_tax
+  anchor:
+    selector_type: text_quote
+    text_quote: modèle 100
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.income_tax_return.return_due_31_december_following_year
+  schema_version: "0.1.0"
+  claim_type: deadline
+  claim_text: >-
+    The income tax return must be submitted by 31 December of the year following the tax year concerned.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: income_tax
+  anchor:
+    selector_type: text_quote
+    text_quote: 31 décembre de l’année qui suit l’année d’imposition concernée
+  extracted_value:
+    duration: P1Y
+    starts_from: tax_year_end
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.guichet_lu.income_tax_return.filing_by_myguichet_or_post
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    If the online assistant cannot be used, the income tax return can be filed electronically through MyGuichet.lu PDF deposit or by post to the competent tax office.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: income_tax
+  anchor:
+    selector_type: text_quote
+    text_quote: par voie électronique via la démarche
+  extracted_value: null
+  source_tier: official_guidance
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'

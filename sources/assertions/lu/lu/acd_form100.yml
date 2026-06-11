@@ -1,0 +1,83 @@
+source_id: source.lu.acd_form100
+source_snapshot_id: snapshot.lu.acd_form100.2026_06_10
+assertions:
+- id: assertion.lu.acd_form100.model_100_required_for_assessment
+  schema_version: "0.1.0"
+  claim_type: document_required
+  claim_text: >-
+    Taxpayers subject to taxation by assessment must complete the model 100 income tax return.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: income_tax
+  anchor:
+    selector_type: text_quote
+    text_quote: déclaration pour l'impôt sur le revenu
+  extracted_value: null
+  source_tier: official_form
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.acd_form100.myguichet_online_filing_available
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    Eligible resident and non-resident taxpayers may file the return online via MyGuichet using LuxTrust.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: income_tax
+  anchor:
+    selector_type: text_quote
+    text_quote: peuvent déposer la déclaration en ligne via MyGuichet
+  extracted_value: null
+  source_tier: official_form
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.acd_form100.pdf_or_postal_filing_available
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    Taxpayers not using the online return may submit the PDF version through MyGuichet or use pre-printed forms sent by post.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: income_tax
+  anchor:
+    selector_type: text_quote
+    text_quote: en envoyant la version PDF via MyGuichet
+  extracted_value: null
+  source_tier: official_form
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
+- id: assertion.lu.acd_form100.email_not_accepted
+  schema_version: "0.1.0"
+  claim_type: procedural_step
+  claim_text: >-
+    The ACD does not accept filing forms by email.
+  claim_scope:
+    jurisdiction: LU
+    life_event: bereavement
+    domain: inheritance_tax
+  anchor:
+    selector_type: text_quote
+    text_quote: courrier électronique (email) n'est pas accepté
+  extracted_value: null
+  source_tier: official_form
+  record_valid_from: '2026-06-10'
+  review_status: approved
+  confidence: medium
+  provenance:
+    extraction_method: ai_assisted
+    extracted_at: '2026-06-11T09:00:00Z'
