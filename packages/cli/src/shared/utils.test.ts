@@ -25,14 +25,16 @@ describe("resolveRootDir", () => {
 });
 
 describe("mergeErrors", () => {
+  type ResultEntry = { file: string; schema: string; valid: boolean; errors?: string[] };
+
   it("does nothing when errors array is empty", () => {
-    const results: Array<{ file: string; schema: string; valid: boolean; errors?: string[] }> = [];
+    const results: ResultEntry[] = [];
     mergeErrors(results, "test.yml", "test.schema.json", []);
     expect(results).toHaveLength(0);
   });
 
   it("creates a new result entry when file is not yet in results", () => {
-    const results: Array<{ file: string; schema: string; valid: boolean; errors?: string[] }> = [];
+    const results: ResultEntry[] = [];
     mergeErrors(results, "test.yml", "test.schema.json", ["Error 1"]);
     expect(results).toEqual([
       { file: "test.yml", schema: "test.schema.json", valid: false, errors: ["Error 1"] },
@@ -40,7 +42,7 @@ describe("mergeErrors", () => {
   });
 
   it("merges errors into existing result entry", () => {
-    const results: Array<{ file: string; schema: string; valid: boolean; errors?: string[] }> = [
+    const results: ResultEntry[] = [
       { file: "test.yml", schema: "test.schema.json", valid: true },
     ];
     mergeErrors(results, "test.yml", "test.schema.json", ["Error 1"]);
@@ -49,7 +51,7 @@ describe("mergeErrors", () => {
   });
 
   it("appends to existing errors", () => {
-    const results: Array<{ file: string; schema: string; valid: boolean; errors?: string[] }> = [
+    const results: ResultEntry[] = [
       { file: "test.yml", schema: "test.schema.json", valid: false, errors: ["Error 1"] },
     ];
     mergeErrors(results, "test.yml", "test.schema.json", ["Error 2"]);

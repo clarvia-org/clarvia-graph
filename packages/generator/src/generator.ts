@@ -503,12 +503,12 @@ function groupCandidatesByDedupeKey(
 ): Map<string, CandidateItem[]> {
   const groups = new Map<string, CandidateItem[]>();
   for (const c of candidates) {
-    let list = groups.get(c.dedupeKey);
-    if (!list) {
-      list = [];
-      groups.set(c.dedupeKey, list);
+    const list = groups.get(c.dedupeKey);
+    if (list) {
+      list.push(c);
+    } else {
+      groups.set(c.dedupeKey, [c]);
     }
-    list.push(c);
   }
   return groups;
 }
@@ -598,12 +598,12 @@ function groupByJurisdiction(
   const groups = new Map<string, CandidateItem[]>();
   for (const c of list) {
     const j = c.consequence.jurisdiction.toUpperCase();
-    let sub = groups.get(j);
-    if (!sub) {
-      sub = [];
-      groups.set(j, sub);
+    const sub = groups.get(j);
+    if (sub) {
+      sub.push(c);
+    } else {
+      groups.set(j, [c]);
     }
-    sub.push(c);
   }
   return groups;
 }
@@ -843,10 +843,7 @@ function makeItem(
 
   const filteredAssertionRefs = (consequence.source_assertion_refs ?? []).filter(ref => {
     const ass = graph.assertions?.get(ref);
-    if (!ass || recordApplies(ass, temporalCtx)) {
-      return true;
-    }
-    return false;
+    return !ass || recordApplies(ass, temporalCtx);
   });
 
   const resolvedSubjectId = resolveSubjectId(template);
@@ -863,7 +860,7 @@ function makeItem(
     resolved_subject_id: resolvedSubjectId,
     status,
     title: template?.title ?? consequence.title,
-    description: (template as Record<string, unknown>)?.description as string | null ?? null,
+    description: (template && "description" in template ? (template as Record<string, unknown>).description as string : null) ?? null,
     jurisdiction_contexts: [consequence.jurisdiction],
     checklist_group: group,
     urgency:

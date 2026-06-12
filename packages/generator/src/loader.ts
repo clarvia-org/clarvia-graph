@@ -152,10 +152,14 @@ function loadDir<T extends GraphRecord>(
     const base = file.split(/[\\/]/).pop()!;
     if (base === ".gitkeep") continue;
 
-    const raw = readFileSync(file, "utf-8");
-    const doc = parseYaml(raw) as T;
-    if (doc?.id) {
-      map.set(doc.id, doc);
+    try {
+      const raw = readFileSync(file, "utf-8");
+      const doc = parseYaml(raw) as T;
+      if (doc && typeof doc.id === "string") {
+        map.set(doc.id, doc);
+      }
+    } catch {
+      // Ignore files that fail to parse (will be caught by schema validation)
     }
   }
 

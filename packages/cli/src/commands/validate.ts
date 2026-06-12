@@ -425,8 +425,6 @@ function validateSnapshotsAndAnchors(
 
   const snapshotMap = new Map<string, SnapshotEntry>();
 
-  const getRel = (abs: string): string => toPosixRel(abs, rootDir);
-
   for (const file of snapshotFiles) {
     try {
       const raw = readFileSync(file, "utf-8");
@@ -441,7 +439,7 @@ function validateSnapshotsAndAnchors(
 
   // 1. Validate snapshot integrity
   for (const [, { data, file }] of snapshotMap.entries()) {
-    const relPath = getRel(file);
+    const relPath = toPosixRel(file, rootDir);
     const errors = validateSnapshotIntegrity(data, rootDir);
     mergeErrors(results, relPath, "source_snapshot.schema.json", errors);
   }
@@ -563,8 +561,6 @@ function validateConditionsAndIntake(
     absolute: true,
   });
 
-  const getRel = (abs: string): string => toPosixRel(abs, rootDir);
-
   const intakeIdToPath = new Map<string, string>();
   const intakePathToId = new Map<string, string>();
 
@@ -581,7 +577,7 @@ function validateConditionsAndIntake(
   }
 
   for (const file of conditionFiles) {
-    const relPath = getRel(file);
+    const relPath = toPosixRel(file, rootDir);
     let data: Record<string, unknown> | null;
     try {
       data = parseYaml(readFileSync(file, "utf-8")) as Record<string, unknown>;
