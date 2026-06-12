@@ -357,10 +357,10 @@ export function formatFileResult(r: LintIdResult): void {
 
 // ── CLI entry point ──────────────────────────────────────────────────
 
-export async function main(): Promise<void> {
+export function main(): void {
   const rootDir = resolveRootDir(import.meta.dirname ?? __dirname);
 
-  const { results, ok } = await runLintIds({ rootDir });
+  const { results, ok } = runLintIds({ rootDir });
 
   if (results.length === 0) {
     console.log(
