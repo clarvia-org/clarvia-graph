@@ -217,7 +217,7 @@ export interface LintIdOptions {
   rootDir: string;
 }
 
-export async function runLintIds(
+export function runLintIds(
   opts: LintIdOptions,
 ): Promise<{ results: LintIdResult[]; ok: boolean }> {
   const { rootDir } = opts;
@@ -240,7 +240,7 @@ export async function runLintIds(
   });
 
   if (dataFiles.length === 0) {
-    return { results: [], ok: true };
+    return Promise.resolve({ results: [], ok: true });
   }
 
   const results: LintIdResult[] = [];
@@ -312,7 +312,7 @@ export async function runLintIds(
   const ok = results.every((r) =>
     r.ids.every((i) => i.issues.every((iss) => iss.level !== "error")),
   );
-  return { results, ok };
+  return Promise.resolve({ results, ok });
 }
 
 // ── output helpers ───────────────────────────────────────────────────
