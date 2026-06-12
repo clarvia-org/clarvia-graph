@@ -196,9 +196,13 @@ export function extractIds(data: unknown): string[] {
     if (typeof record["id"] === "string") {
       ids.push(record["id"]);
     }
-    // Walk into arrays (e.g. assertions[])
+    // Walk into arrays (e.g. assertions[]) and nested objects
     for (const val of Object.values(record)) {
-      if (Array.isArray(val)) walk(val);
+      if (Array.isArray(val)) {
+        walk(val);
+      } else if (val != null && typeof val === "object") {
+        walk(val);
+      }
     }
   }
 
