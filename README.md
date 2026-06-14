@@ -120,6 +120,12 @@ Clarvia maintains internal Clarvia-native schemas and generates compatibility vi
 
 **Designed for extension to:** Additional jurisdictions (Belgium, Netherlands, ...) and life events (birth, relocation, ...) without schema changes.
 
+## Reuse and adaptation
+
+Clarvia Graph is an open, source-backed knowledge graph for administrative consequences — designed so that others can study the architecture, adapt the schemas, and fork for their own regulatory domains.
+
+The provenance chain, three-valued condition logic, publication gate, and EU standards alignment are domain-agnostic patterns. The bereavement/Luxembourg dataset is a working reference implementation. If you are building source-backed regulatory workflows for a different life event or jurisdiction, this repository provides a tested starting point.
+
 ## License
 
 - **Code & tooling:** [EUPL-1.2](LICENSE)
