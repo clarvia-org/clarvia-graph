@@ -488,98 +488,93 @@ export default function ChecklistPage() {
         </nav>
       </header>
 
-      <main className="flex-grow w-full max-w-2xl mx-auto px-4 sm:px-6 py-8 relative z-10">
-        {/* ═══ Alpha banner ═══ */}
-        <div className="mb-8 p-4 rounded-xl border-2 border-amber-300 bg-amber-50/80 backdrop-blur-sm">
-          <div className="flex items-start gap-3">
-            <span className="text-xl mt-0.5">⚠️</span>
-            <div className="space-y-3">
-              <div>
-                <p className="font-bold text-amber-950 text-sm">
-                  {l(
-                    lang,
-                    "Alpha Prototype - Not Legal Advice",
-                    "Prototype Alpha - Ceci n'est pas un avis juridique",
-                    "Alpha-Prototyp - Keine Rechtsberatung"
-                  )}
-                </p>
-                <p className="text-amber-900 text-xs mt-1 leading-relaxed">
-                  {l(
-                    lang,
-                    "This is an early alpha prototype of the Clarvia Bereavement Checklist, provided for testing and demonstration only. It dynamically pulls content from the open-source clarvia-graph repository (https://github.com/clarvia-org/clarvia-graph) on GitHub. No sensitive or personal data is included.",
-                    "Il s'agit d'un premier prototype alpha de la liste de contrôle de deuil Clarvia, fourni uniquement à des fins de test et de démonstration. Il récupère dynamiquement le contenu du dépôt open-source clarvia-graph (https://github.com/clarvia-org/clarvia-graph) sur GitHub. Aucune donnée sensible ou personnelle n'est incluse.",
-                    "Dies ist ein früher Alpha-Prototyp der Clarvia-Trauer-Checkliste, der nur zu Test- und Demonstrationszwecken bereitgestellt wird. Er lädt Inhalte dynamisch aus dem Open-Source-Repository clarvia-graph (https://github.com/clarvia-org/clarvia-graph) auf GitHub. Es sind keine sensiblen oder persönlichen Daten enthalten."
-                  )}
-                </p>
-              </div>
+      <main className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 relative z-10">
+        {/* ═══ Alpha banner + Preview side by side ═══ */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+          {/* Alpha prototype notice */}
+          <div className="p-4 rounded-xl border-2 border-amber-300 bg-amber-50/80 backdrop-blur-sm">
+            <div className="flex items-start gap-3">
+              <span className="text-xl mt-0.5">⚠️</span>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-bold text-amber-950 text-sm">
+                    {l(
+                      lang,
+                      "Alpha Prototype - Not Legal Advice",
+                      "Prototype Alpha - Ceci n'est pas un avis juridique",
+                      "Alpha-Prototyp - Keine Rechtsberatung"
+                    )}
+                  </p>
+                  <p className="text-amber-900 text-xs mt-1 leading-relaxed">
+                    {l(
+                      lang,
+                      "This is an early alpha prototype of the Clarvia Bereavement Checklist, provided for testing and demonstration only. It dynamically pulls content from the open-source clarvia-graph repository (https://github.com/clarvia-org/clarvia-graph) on GitHub. No sensitive or personal data is included.",
+                      "Il s'agit d'un premier prototype alpha de la liste de contrôle de deuil Clarvia, fourni uniquement à des fins de test et de démonstration. Il récupère dynamiquement le contenu du dépôt open-source clarvia-graph (https://github.com/clarvia-org/clarvia-graph) sur GitHub. Aucune donnée sensible ou personnelle n'est incluse.",
+                      "Dies ist ein früher Alpha-Prototyp der Clarvia-Trauer-Checkliste, der nur zu Test- und Demonstrationszwecken bereitgestellt wird. Er lädt Inhalte dynamisch aus dem Open-Source-Repository clarvia-graph (https://github.com/clarvia-org/clarvia-graph) auf GitHub. Es sind keine sensiblen oder persönlichen Daten enthalten."
+                    )}
+                  </p>
+                </div>
 
-              <div>
-                <p className="font-semibold text-amber-950 text-xs">
-                  {l(
-                    lang,
-                    "Standards & Licenses",
-                    "Normes & Licences",
-                    "Standards & Lizenzen"
-                  )}
-                </p>
-                <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
-                  {l(
-                    lang,
-                    "Uses native schemas compatible with: CPSV-AP, CCCEV, ELI (planned), PROV-O (planned). Licenses: Code & tooling - EUPL-1.2; Graph data - CC-BY-4.0; Schemas & vocabularies - CC0 or Apache-2.0.",
-                    "Utilise des schémas natifs compatibles avec : CPSV-AP, CCCEV, ELI (prévu), PROV-O (prévu). Licences : Code & outils - EUPL-1.2 ; Données du graphe - CC-BY-4.0 ; Schémas & vocabulaires - CC0 ou Apache-2.0.",
-                    "Verwendet native Schemata, die kompatibel sind mit: CPSV-AP, CCCEV, ELI (geplant), PROV-O (geplant). Lizenzen: Code & Werkzeuge - EUPL-1.2; Graphendaten - CC-BY-4.0; Schemata & Vokabulare - CC0 oder Apache-2.0."
-                  )}
-                </p>
-              </div>
+                <div>
+                  <p className="font-semibold text-amber-950 text-xs">
+                    {l(
+                      lang,
+                      "Standards & Licenses",
+                      "Normes & Licences",
+                      "Standards & Lizenzen"
+                    )}
+                  </p>
+                  <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
+                    {l(
+                      lang,
+                      "Uses native schemas compatible with: CPSV-AP, CCCEV, ELI (planned), PROV-O (planned). Licenses: Code & tooling - EUPL-1.2; Graph data - CC-BY-4.0; Schemas & vocabularies - CC0 or Apache-2.0.",
+                      "Utilise des schémas natifs compatibles avec : CPSV-AP, CCCEV, ELI (prévu), PROV-O (prévu). Licences : Code & outils - EUPL-1.2 ; Données du graphe - CC-BY-4.0 ; Schémas & vocabulaires - CC0 ou Apache-2.0.",
+                      "Verwendet native Schemata, die kompatibel sind mit: CPSV-AP, CCCEV, ELI (geplant), PROV-O (geplant). Lizenzen: Code & Werkzeuge - EUPL-1.2; Graphendaten - CC-BY-4.0; Schemata & Vokabulare - CC0 oder Apache-2.0."
+                    )}
+                  </p>
+                </div>
 
-              <div>
-                <p className="font-semibold text-amber-950 text-xs">
-                  {l(
-                    lang,
-                    "Important",
-                    "Important",
-                    "Wichtig"
-                  )}
-                </p>
-                <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
-                  {l(
-                    lang,
-                    "For informational purposes only. Not legal, tax, or professional advice. Always consult qualified professionals. Data provided \"as is\" with no warranties.",
-                    "Uniquement à des fins d'information. Ceci ne constitue pas un conseil juridique, fiscal ou professionnel. Consultez toujours des professionnels qualifiés. Données fournies « en l'état » sans aucune garantie.",
-                    "Nur zu Informationszwecken. Keine Rechts-, Steuer- oder sonstige Fachberatung. Konsultieren Sie immer qualifizierte Fachleute. Die Daten werden ohne Mängelgewähr und ohne Gewährleistungen bereitgestellt."
-                  )}
-                </p>
+                <div>
+                  <p className="font-semibold text-amber-950 text-xs">
+                    {l(
+                      lang,
+                      "Important",
+                      "Important",
+                      "Wichtig"
+                    )}
+                  </p>
+                  <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
+                    {l(
+                      lang,
+                      "For informational purposes only. Not legal, tax, or professional advice. Always consult qualified professionals. Data provided \"as is\" with no warranties.",
+                      "Uniquement à des fins d'information. Ceci ne constitue pas un conseil juridique, fiscal ou professionnel. Consultez toujours des professionnels qualifiés. Données fournies « en l'état » sans aucune garantie.",
+                      "Nur zu Informationszwecken. Keine Rechts-, Steuer- oder sonstige Fachberatung. Konsultieren Sie immer qualifizierte Fachleute. Die Daten werden ohne Mängelgewähr und ohne Gewährleistungen bereitgestellt."
+                    )}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <h1
-          className="text-3xl sm:text-4xl font-semibold tracking-tight mb-2"
-          style={headlineStyle}
-        >
-          {l(
-            lang,
-            "Bereavement Checklist",
-            "Liste de démarches en cas de décès",
-            "Checkliste im Trauerfall"
-          )}
-        </h1>
-        <p className="text-calm-blue-500 text-sm mb-8">
-          {l(
-            lang,
-            "Answer a few questions to get a personalised list of administrative steps.",
-            "Répondez à quelques questions pour obtenir une liste personnalisée de démarches administratives.",
-            "Beantworten Sie einige Fragen, um eine personalisierte Liste der Verwaltungsschritte zu erhalten."
-          )}
-        </p>
-
-        {/* ── Checklist Preview Thumbnail ── */}
-        <div className="mb-10 glass-panel p-5 sm:p-6 rounded-xl">
-          <div className="flex flex-col sm:flex-row items-start gap-5">
+          {/* Checklist preview card */}
+          <div className="glass-panel p-4 sm:p-5 rounded-xl flex flex-col">
+            <h3 className="text-sm font-semibold mb-2" style={{ color: "#2b3a67" }}>
+              {l(lang,
+                "What the checklist is being built to look like",
+                "Ce que la liste de démarches est conçue pour devenir",
+                "Wie die Checkliste aussehen soll"
+              )}
+            </h3>
+            <p className="text-[11px] text-calm-blue-500 leading-relaxed mb-3">
+              {l(lang,
+                "The image illustrates the type of step-by-step guidance Clarvia is working to deliver. It is not a finished product — the content, design, and features are still being developed and validated.",
+                "L'image illustre le type d'accompagnement étape par étape que Clarvia travaille à offrir. Il ne s'agit pas d'un produit finalisé — le contenu, le design et les fonctionnalités sont encore en cours de développement et de validation.",
+                "Das Bild zeigt, welche Art von schrittweiser Orientierung Clarvia entwickeln möchte. Es handelt sich nicht um ein fertiges Produkt — Inhalte, Design und Funktionen werden noch entwickelt und geprüft."
+              )}
+            </p>
             <button
               onClick={() => setLightboxOpen(true)}
-              className="group relative flex-shrink-0 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 cursor-zoom-in border border-calm-blue-200/60 w-full sm:w-56"
+              className="group relative flex-grow rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 cursor-zoom-in border border-calm-blue-200/60"
               aria-label={l(lang,
                 "View full checklist preview",
                 "Voir l'aperçu complet de la liste de démarches",
@@ -593,7 +588,7 @@ export default function ChecklistPage() {
                   "Aperçu illustratif de la liste de démarches Clarvia pour le Luxembourg",
                   "Illustrative Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg"
                 )}
-                className="w-full block"
+                className="w-full h-full object-cover object-top block"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-calm-blue-900/0 group-hover:bg-calm-blue-900/10 transition-colors duration-300 flex items-center justify-center">
@@ -605,22 +600,6 @@ export default function ChecklistPage() {
                 {l(lang, "Illustrative", "Illustratif", "Illustrativ")}
               </span>
             </button>
-            <div className="flex-grow min-w-0">
-              <h3 className="text-base sm:text-lg font-semibold mb-2" style={{ color: "#2b3a67" }}>
-                {l(lang,
-                  "What the checklist is being built to look like",
-                  "Ce que la liste de démarches est conçue pour devenir",
-                  "Wie die Checkliste aussehen soll"
-                )}
-              </h3>
-              <p className="text-xs sm:text-sm text-calm-blue-500 leading-relaxed">
-                {l(lang,
-                  "The image illustrates the type of step-by-step guidance Clarvia is working to deliver. It is not a finished product — the content, design, and features are still being developed and validated.",
-                  "L'image illustre le type d'accompagnement étape par étape que Clarvia travaille à offrir. Il ne s'agit pas d'un produit finalisé — le contenu, le design et les fonctionnalités sont encore en cours de développement et de validation.",
-                  "Das Bild zeigt, welche Art von schrittweiser Orientierung Clarvia entwickeln möchte. Es handelt sich nicht um ein fertiges Produkt — Inhalte, Design und Funktionen werden noch entwickelt und geprüft."
-                )}
-              </p>
-            </div>
           </div>
         </div>
 
@@ -660,6 +639,28 @@ export default function ChecklistPage() {
           </div>
         )}
 
+        {/* ═══ Checklist content (centered, narrower) ═══ */}
+        <div className="max-w-2xl mx-auto">
+          <h1
+            className="text-3xl sm:text-4xl font-semibold tracking-tight mb-2"
+            style={headlineStyle}
+          >
+            {l(
+              lang,
+              "Bereavement Checklist",
+              "Liste de démarches en cas de décès",
+              "Checkliste im Trauerfall"
+            )}
+          </h1>
+          <p className="text-calm-blue-500 text-sm mb-8">
+            {l(
+              lang,
+              "Answer a few questions to get a personalised list of administrative steps.",
+              "Répondez à quelques questions pour obtenir une liste personnalisée de démarches administratives.",
+              "Beantworten Sie einige Fragen, um eine personalisierte Liste der Verwaltungsschritte zu erhalten."
+            )}
+          </p>
+
         {step === "intake" && intake && (
           <IntakeWizard
             lang={lang}
@@ -685,6 +686,7 @@ export default function ChecklistPage() {
             }}
           />
         )}
+        </div>{/* end max-w-2xl centering wrapper */}
       </main>
 
       {/* ═══ Footer ═══ */}
