@@ -290,8 +290,8 @@ export default function ChecklistPage() {
   const [loading, setLoading] = useState(true);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
-  const previewThumb = `/checklist-preview-${lang}-thumb.jpg`;
-  const previewFull = `/checklist-preview-${lang}.jpg`;
+  const previewThumb = `/checklist-preview-${lang}-thumb-v2.jpg`;
+  const previewFull = `/checklist-preview-${lang}-v2.jpg`;
 
   // Load data
   useEffect(() => {
