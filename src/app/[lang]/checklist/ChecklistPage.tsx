@@ -288,6 +288,10 @@ export default function ChecklistPage() {
   const [items, setItems] = useState<ChecklistItem[]>([]);
   const [unknownQuestions, setUnknownQuestions] = useState<IntakeQuestion[]>([]);
   const [loading, setLoading] = useState(true);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  const previewThumb = `/checklist-preview-${lang}-thumb.jpg`;
+  const previewFull = `/checklist-preview-${lang}.jpg`;
 
   // Load data
   useEffect(() => {
@@ -569,6 +573,92 @@ export default function ChecklistPage() {
             "Beantworten Sie einige Fragen, um eine personalisierte Liste der Verwaltungsschritte zu erhalten."
           )}
         </p>
+
+        {/* ── Checklist Preview Thumbnail ── */}
+        <div className="mb-10 glass-panel p-5 sm:p-6 rounded-xl">
+          <div className="flex flex-col sm:flex-row items-start gap-5">
+            <button
+              onClick={() => setLightboxOpen(true)}
+              className="group relative flex-shrink-0 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 cursor-zoom-in border border-calm-blue-200/60 w-full sm:w-56"
+              aria-label={l(lang,
+                "View full checklist preview",
+                "Voir l'aperçu complet de la liste de démarches",
+                "Vollständige Vorschau der Checkliste anzeigen"
+              )}
+            >
+              <img
+                src={previewThumb}
+                alt={l(lang,
+                  "Illustrative preview of the Clarvia bereavement checklist for Luxembourg",
+                  "Aperçu illustratif de la liste de démarches Clarvia pour le Luxembourg",
+                  "Illustrative Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg"
+                )}
+                className="w-full block"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-calm-blue-900/0 group-hover:bg-calm-blue-900/10 transition-colors duration-300 flex items-center justify-center">
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm text-calm-blue-700 text-xs font-medium px-3 py-1.5 rounded-full shadow-md">
+                  🔍 {l(lang, "Click to enlarge", "Cliquer pour agrandir", "Klicken zum Vergrößern")}
+                </span>
+              </div>
+              <span className="absolute top-2 right-2 bg-calm-lilac-100/90 backdrop-blur-sm text-calm-lilac-600 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-calm-lilac-200/60 uppercase tracking-wider">
+                {l(lang, "Illustrative", "Illustratif", "Illustrativ")}
+              </span>
+            </button>
+            <div className="flex-grow min-w-0">
+              <h3 className="text-base sm:text-lg font-semibold mb-2" style={{ color: "#2b3a67" }}>
+                {l(lang,
+                  "What the checklist is being built to look like",
+                  "Ce que la liste de démarches est conçue pour devenir",
+                  "Wie die Checkliste aussehen soll"
+                )}
+              </h3>
+              <p className="text-xs sm:text-sm text-calm-blue-500 leading-relaxed">
+                {l(lang,
+                  "The image illustrates the type of step-by-step guidance Clarvia is working to deliver. It is not a finished product — the content, design, and features are still being developed and validated.",
+                  "L'image illustre le type d'accompagnement étape par étape que Clarvia travaille à offrir. Il ne s'agit pas d'un produit finalisé — le contenu, le design et les fonctionnalités sont encore en cours de développement et de validation.",
+                  "Das Bild zeigt, welche Art von schrittweiser Orientierung Clarvia entwickeln möchte. Es handelt sich nicht um ein fertiges Produkt — Inhalte, Design und Funktionen werden noch entwickelt und geprüft."
+                )}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ── Lightbox ── */}
+        {lightboxOpen && (
+          <div
+            className="fixed inset-0 z-[9999] bg-black/70 backdrop-blur-sm flex items-start justify-center overflow-y-auto"
+            onClick={() => setLightboxOpen(false)}
+            role="dialog"
+            aria-modal="true"
+            aria-label={l(lang, "Checklist preview", "Aperçu de la liste de démarches", "Vorschau der Checkliste")}
+          >
+            <button
+              onClick={() => setLightboxOpen(false)}
+              className="fixed top-4 right-4 z-[10000] bg-white/90 backdrop-blur-sm text-calm-blue-700 w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-colors text-xl font-bold"
+              aria-label={l(lang, "Close", "Fermer", "Schließen")}
+            >
+              ✕
+            </button>
+            <div className="fixed top-4 left-4 z-[10000] bg-calm-lilac-100/95 backdrop-blur-sm text-calm-lilac-600 text-xs sm:text-sm font-medium px-4 py-2 rounded-full border border-calm-lilac-200/60 shadow-sm">
+              {l(lang,
+                "Illustrative preview — not a finished product",
+                "Aperçu illustratif — il ne s'agit pas d'un produit finalisé",
+                "Illustrative Vorschau — kein fertiges Produkt"
+              )}
+            </div>
+            <img
+              src={previewFull}
+              alt={l(lang,
+                "Full preview of the Clarvia bereavement checklist for Luxembourg",
+                "Aperçu complet de la liste de démarches Clarvia pour le Luxembourg",
+                "Vollständige Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg"
+              )}
+              className="max-w-4xl w-full my-16 mx-4 rounded-xl shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        )}
 
         {step === "intake" && intake && (
           <IntakeWizard
