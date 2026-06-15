@@ -490,7 +490,7 @@ export default function ChecklistPage() {
 
       <main className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 relative z-10">
         {/* ═══ Alpha banner + Preview side by side ═══ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 items-start">
           {/* Alpha prototype notice */}
           <div className="p-4 rounded-xl border-2 border-amber-300 bg-amber-50/80 backdrop-blur-sm">
             <div className="flex items-start gap-3">
@@ -557,7 +557,7 @@ export default function ChecklistPage() {
           </div>
 
           {/* Checklist preview card */}
-          <div className="glass-panel p-4 sm:p-5 rounded-xl flex flex-col">
+          <div className="glass-panel p-4 sm:p-5 rounded-xl">
             <h3 className="text-sm font-semibold mb-2" style={{ color: "#2b3a67" }}>
               {l(lang,
                 "What the checklist is being built to look like",
@@ -574,7 +574,7 @@ export default function ChecklistPage() {
             </p>
             <button
               onClick={() => setLightboxOpen(true)}
-              className="group relative flex-grow rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 cursor-zoom-in border border-calm-blue-200/60"
+              className="group relative w-full rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 cursor-zoom-in border border-calm-blue-200/60"
               aria-label={l(lang,
                 "View full checklist preview",
                 "Voir l'aperçu complet de la liste de démarches",
@@ -588,7 +588,7 @@ export default function ChecklistPage() {
                   "Aperçu illustratif de la liste de démarches Clarvia pour le Luxembourg",
                   "Illustrative Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg"
                 )}
-                className="w-full h-full object-cover object-top block"
+                className="w-full block"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-calm-blue-900/0 group-hover:bg-calm-blue-900/10 transition-colors duration-300 flex items-center justify-center">
