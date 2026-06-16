@@ -117,8 +117,7 @@
     .slider-window {
       width: 100%;
       max-width: 400px;
-      height: calc(100vh - 160px);
-      min-height: 520px;
+      aspect-ratio: 11 / 15;
       position: relative;
       overflow: hidden;
     }
@@ -753,6 +752,7 @@
     /* Small phone height correction */
     @media (max-width: 480px) and (max-height: 640px) {
       .slider-window {
+        aspect-ratio: auto;
         height: calc(100vh - 150px);
       }
       .page {
