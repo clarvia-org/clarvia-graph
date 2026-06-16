@@ -115,9 +115,10 @@
     }
 
     .slider-window {
-      width: 100%;
-      max-width: 400px;
-      aspect-ratio: 11 / 15;
+      /* Height fills viewport; width derived to match printed 440×600 brochure ratio */
+      height: calc(100vh - 160px);
+      aspect-ratio: 33 / 70;
+      max-width: 100%;
       position: relative;
       overflow: hidden;
     }
@@ -148,7 +149,6 @@
       padding: 36px 30px 24px 30px;
       position: relative;
       overflow: hidden;
-      overflow-y: auto;
       background-image:
         linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(240, 244, 250, 0.82)),
         url('https://clarvia.org/sky-bg.jpg');
@@ -710,9 +710,6 @@
         padding: 16px;
       }
 
-      .slider-window {
-        max-width: 400px;
-      }
 
       .page {
         border-radius: 12px;
@@ -752,8 +749,7 @@
     /* Small phone height correction */
     @media (max-width: 480px) and (max-height: 640px) {
       .slider-window {
-        aspect-ratio: auto;
-        height: calc(100vh - 150px);
+        height: calc(100vh - 130px);
       }
       .page {
         padding: 18px 16px;
