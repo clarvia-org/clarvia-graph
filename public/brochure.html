@@ -116,8 +116,9 @@
 
     .slider-window {
       width: 100%;
-      max-width: 960px; /* 2 * 450px + gap */
-      height: 640px;
+      max-width: 520px;
+      height: calc(100vh - 160px);
+      min-height: 520px;
       position: relative;
       overflow: hidden;
     }
@@ -129,23 +130,16 @@
       transition: transform var(--transition-speed) var(--transition-bezier);
     }
 
-    /* Slide Item (Saves desktop spreads) */
+    /* Slide-item wrappers are flattened so each .page is a direct flex child */
     .slide-item {
+      display: contents;
+    }
+
+    /* Each page fills the slider viewport */
+    .page {
       flex: 0 0 100%;
       width: 100%;
       height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      box-sizing: border-box;
-      transition: opacity var(--transition-speed) ease;
-    }
-
-    /* Elegant Page (The Booklet Page) */
-    .page {
-      width: 440px;
-      height: 600px;
       background-color: var(--color-bg-card);
       border: 1px solid var(--color-border);
       border-radius: 16px;
@@ -155,13 +149,14 @@
       padding: 36px 30px 24px 30px;
       position: relative;
       overflow: hidden;
+      overflow-y: auto;
       background-image:
         linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(240, 244, 250, 0.82)),
         url('https://clarvia.org/sky-bg.jpg');
-      background-size: 880px 600px; /* span across spreads */
+      background-size: cover;
+      background-position: center center;
       background-repeat: no-repeat;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      flex-shrink: 0;
     }
 
     /* Highlight on active elements */
@@ -606,15 +601,7 @@
       padding-top: 8px;
     }
 
-    /* ==========================================================================
-       6. BACKGROUND ALIGNMENT PER PAGE
-       ========================================================================== */
-    .page-1 { background-position: center center; }
-    .page-2 { background-position: left center; }
-    .page-3 { background-position: right center; }
-    .page-4 { background-position: left center; }
-    .page-5 { background-position: right center; }
-    .page-6 { background-position: center center; }
+    /* Background position is uniform (cover + center) for single-page layout */
 
     /* ==========================================================================
        7. INTERACTION CONTROLS (NAVIGATION ARROWS & DOTS)
@@ -707,25 +694,11 @@
     }
 
     /* ==========================================================================
-       8. RESPONSIVE DESIGN (DESKTOP / MOBILE SWITCH)
+       8. RESPONSIVE ADJUSTMENTS
        ========================================================================== */
-    
-    /* DESKTOP/TABLET LANDSCAPE: 2-Page Spreads */
-    @media (min-width: 1025px) {
-      .slider-window {
-        max-width: 910px; /* (440px page * 2) + 30px gap */
-      }
-      .slide-item {
-        display: flex;
-      }
-    }
 
-    /* MOBILE / TABLET PORTRAIT: Single Page Slider */
-    @media (max-width: 1024px) {
-      body {
-        background-size: auto 100%;
-      }
-
+    /* Mobile: smaller header, tighter padding */
+    @media (max-width: 768px) {
       header {
         padding: 12px 16px;
       }
@@ -739,31 +712,14 @@
       }
 
       .slider-window {
-        height: calc(100vh - 170px);
-        min-height: 520px;
-        max-height: 620px;
         max-width: 440px;
       }
 
-      /* display: contents removes the slide-item wrappers from the flex structure */
-      /* this makes individual pages flex children of the track directly! */
-      .slide-item {
-        display: contents;
-      }
-
       .page {
-        flex: 0 0 100%;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        background-size: cover; /* each page has its own cover background */
-        background-position: center center !important;
         border-radius: 12px;
         padding: 24px 20px 20px 20px;
-        overflow-y: auto; /* permit internal page scrolling if device screen is very small */
       }
 
-      /* Adjust font sizes on mobile for sizing safety */
       .panel-title {
         font-size: 1.6rem;
         margin-bottom: 12px;
@@ -812,7 +768,7 @@
 
   <!-- Clean Top Bar -->
   <header>
-    <img class="header-logo" src="https://clarvia.org/clarvia-logo.png" alt="Clarvia ASBL Logo">
+    <a href="https://www.clarvia.org" title="Go to clarvia.org"><img class="header-logo" src="https://clarvia.org/clarvia-logo.png" alt="Clarvia ASBL Logo"></a>
     <div class="header-nav">
       <span class="lang-badge">English</span>
     </div>
@@ -1129,150 +1085,65 @@
 
   <!-- Interactive Slide Navigation Script -->
   <script>
-    let isMobile = window.innerWidth <= 1024;
-    let currentIndex = 0; // slide index (0-3) on desktop, page index (0-5) on mobile
+    const TOTAL_PAGES = 6;
+    let currentIndex = 0;
     
-    // Elements
     const sliderTrack = document.getElementById('sliderTrack');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const dotsContainer = document.getElementById('dotsContainer');
 
-    // Total page/slide configurations
-    function getMobilePageCount() {
-      return 6;
-    }
-
-    function getDesktopSlideCount() {
-      return 4;
-    }
-
-    // Mapping helper when switching viewports
-    function getPageFromSlide(slideIndex) {
-      if (slideIndex === 0) return 0; // page 1
-      if (slideIndex === 1) return 1; // page 2
-      if (slideIndex === 2) return 3; // page 4
-      if (slideIndex === 3) return 5; // page 6
-      return 0;
-    }
-
-    function getSlideFromPage(pageIndex) {
-      if (pageIndex === 0) return 0;
-      if (pageIndex === 1 || pageIndex === 2) return 1;
-      if (pageIndex === 3 || pageIndex === 4) return 2;
-      if (pageIndex === 5) return 3;
-      return 0;
-    }
-
     function initSlider() {
-      isMobile = window.innerWidth <= 1024;
-      
-      // Build indicator dots
       dotsContainer.innerHTML = '';
-      const totalSteps = isMobile ? getMobilePageCount() : getDesktopSlideCount();
-      
-      // Bounds check currentIndex
-      if (currentIndex >= totalSteps) {
-        currentIndex = totalSteps - 1;
-      }
-
-      for (let i = 0; i < totalSteps; i++) {
+      for (let i = 0; i < TOTAL_PAGES; i++) {
         const dot = document.createElement('div');
         dot.className = 'dot' + (i === currentIndex ? ' active' : '');
         dot.addEventListener('click', () => goToIndex(i));
         dotsContainer.appendChild(dot);
       }
-
       updatePosition();
     }
 
     function updatePosition() {
-      const offset = -(currentIndex * 100);
-      sliderTrack.style.transform = `translateX(${offset}%)`;
-
-      // Update active classes on dots
+      sliderTrack.style.transform = `translateX(${-(currentIndex * 100)}%)`;
       const dots = dotsContainer.children;
       for (let i = 0; i < dots.length; i++) {
         dots[i].classList.toggle('active', i === currentIndex);
       }
-
-      // Update Prev/Next buttons
-      const maxIndex = isMobile ? getMobilePageCount() - 1 : getDesktopSlideCount() - 1;
       prevBtn.classList.toggle('disabled', currentIndex === 0);
-      nextBtn.classList.toggle('disabled', currentIndex === maxIndex);
+      nextBtn.classList.toggle('disabled', currentIndex === TOTAL_PAGES - 1);
     }
 
     function nextSlide() {
-      const maxIndex = isMobile ? getMobilePageCount() - 1 : getDesktopSlideCount() - 1;
-      if (currentIndex < maxIndex) {
-        currentIndex++;
-        updatePosition();
-      }
+      if (currentIndex < TOTAL_PAGES - 1) { currentIndex++; updatePosition(); }
     }
 
     function prevSlide() {
-      if (currentIndex > 0) {
-        currentIndex--;
-        updatePosition();
-      }
+      if (currentIndex > 0) { currentIndex--; updatePosition(); }
     }
 
-    function goToIndex(index) {
-      currentIndex = index;
-      updatePosition();
+    function goToIndex(i) {
+      currentIndex = i; updatePosition();
     }
 
-    // Keyboard support
+    // Keyboard
     window.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight' || e.key === ' ') {
-        nextSlide();
-      } else if (e.key === 'ArrowLeft') {
-        prevSlide();
-      }
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      else if (e.key === 'ArrowLeft') prevSlide();
     });
 
-    // Handle Resize (Re-map indexes cleanly)
-    window.addEventListener('resize', () => {
-      const wasMobile = isMobile;
-      isMobile = window.innerWidth <= 1024;
-      
-      if (wasMobile !== isMobile) {
-        if (isMobile) {
-          // Changed from Desktop -> Mobile: map slide index (0-3) to page index (0-5)
-          currentIndex = getPageFromSlide(currentIndex);
-        } else {
-          // Changed from Mobile -> Desktop: map page index (0-5) to slide index (0-3)
-          currentIndex = getSlideFromPage(currentIndex);
-        }
-        initSlider();
-      }
-    });
-
-    // Touch Swipe Gestures
+    // Touch swipe
     let touchStartX = 0;
-    let touchEndX = 0;
-    
     const sliderWindow = document.getElementById('sliderWindow');
-    
     sliderWindow.addEventListener('touchstart', (e) => {
       touchStartX = e.changedTouches[0].screenX;
     }, {passive: true});
-
     sliderWindow.addEventListener('touchend', (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      handleSwipe();
+      const dx = e.changedTouches[0].screenX - touchStartX;
+      if (dx < -50) nextSlide();
+      else if (dx > 50) prevSlide();
     }, {passive: true});
 
-    function handleSwipe() {
-      const swipeThreshold = 50; // pixels
-      if (touchStartX - touchEndX > swipeThreshold) {
-        nextSlide(); // swipe left, show next
-      } else if (touchEndX - touchStartX > swipeThreshold) {
-        prevSlide(); // swipe right, show prev
-      }
-    }
-
-    // Initialize on load
     initSlider();
   </script>
 </body>
