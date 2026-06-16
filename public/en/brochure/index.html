@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clarvia ASBL — Interactive Presentation Brochure</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================================================
+       1. VARIABLES & THEME
+       ========================================================================== */
+    :root {
+      --color-navy-dark: #1e293b;
+      --color-navy-signature: #2b3a67;
+      --color-navy-light: #475569;
+      --color-purple-signature: #7162ae;
+      --color-purple-light: #e2e1f4;
+      --color-blue-accent: #3E73E1;
+      --color-teal-accent: #0d9488;
+      --color-bg-base: #f8fafc;
+      --color-bg-card: rgba(255, 255, 255, 0.88);
+      --color-border: rgba(113, 98, 174, 0.15);
+      
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --transition-speed: 0.5s;
+      --transition-bezier: cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    /* ==========================================================================
+       2. RESET & BASE
+       ========================================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: #f1f5f9;
+      background-image: 
+        linear-gradient(rgba(241, 245, 249, 0.8), rgba(226, 232, 240, 0.6)),
+        url('https://clarvia.org/sky-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: var(--color-navy-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ==========================================================================
+       3. LAYOUT & HEADER
+       ========================================================================== */
+    header {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+    }
+
+    .header-logo {
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .lang-badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: var(--color-purple-light);
+      color: var(--color-purple-signature);
+      border: 1px solid rgba(113, 98, 174, 0.2);
+    }
+
+    /* ==========================================================================
+       4. FLIPBOOK CONTAINER & SLIDER
+       ========================================================================== */
+    .viewport {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      position: relative;
+    }
+
+    .slider-window {
+      width: 100%;
+      max-width: 960px; /* 2 * 450px + gap */
+      height: 640px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider-track {
+      display: flex;
+      height: 100%;
+      width: 100%;
+      transition: transform var(--transition-speed) var(--transition-bezier);
+    }
+
+    /* Slide Item (Saves desktop spreads) */
+    .slide-item {
+      flex: 0 0 100%;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      box-sizing: border-box;
+      transition: opacity var(--transition-speed) ease;
+    }
+
+    /* Elegant Page (The Booklet Page) */
+    .page {
+      width: 440px;
+      height: 600px;
+      background-color: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px -5px rgba(30, 41, 59, 0.1);
+      display: flex;
+      flex-direction: column;
+      padding: 36px 30px 24px 30px;
+      position: relative;
+      overflow: hidden;
+      background-image:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(240, 244, 250, 0.82)),
+        url('https://clarvia.org/sky-bg.jpg');
+      background-size: 880px 600px; /* span across spreads */
+      background-repeat: no-repeat;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    /* Highlight on active elements */
+    .page:hover {
+      box-shadow: 0 15px 35px -5px rgba(30, 41, 59, 0.15);
+    }
+
+    /* Accent top bars */
+    .accent-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+    }
+    .page-color-purple .accent-bar {
+      background: var(--color-purple-signature);
+    }
+    .page-color-blue .accent-bar {
+      background: var(--color-blue-accent);
+    }
+    .page-color-grad .accent-bar {
+      background: linear-gradient(90deg, var(--color-purple-signature), var(--color-blue-accent));
+    }
+
+    /* ==========================================================================
+       5. CONTENT STYLING (MATCHING PRINT SYSTEM)
+       ========================================================================== */
+    .panel-subtitle {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-purple-signature);
+      margin-bottom: 8px;
+    }
+
+    .panel-title {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      color: var(--color-navy-signature);
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    p.intro-text {
+      font-size: 1.05rem;
+      color: var(--color-navy-light);
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    p.body-text {
+      font-size: 0.9rem;
+      color: var(--color-navy-light);
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+
+    .quote-block {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--color-navy-signature);
+      line-height: 1.45;
+      margin: 16px 0;
+      padding-left: 12px;
+      border-left: 3px solid var(--color-purple-signature);
+    }
+
+    /* Stats Grid */
+    .stats-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .stat-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(241, 245, 249, 0.7);
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-navy-signature);
+      min-width: 68px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(113, 98, 174, 0.08);
+      border: 1px solid rgba(113, 98, 174, 0.15);
+      border-radius: 8px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--color-navy-light);
+      line-height: 1.35;
+    }
+
+    /* Icon lists */
+    .icon-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .icon-list-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.85rem;
+      color: var(--color-navy-light);
+      line-height: 1.4;
+    }
+
+    .icon-list-bullet {
+      flex-shrink: 0;
+      color: var(--color-purple-signature);
+      font-weight: bold;
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    /* Glass Panels */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4px 12px rgba(31, 38, 135, 0.03);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+    }
+
+    .glass-card-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-navy-signature);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .glass-card-text {
+      font-size: 0.8rem;
+      color: var(--color-navy-light);
+      line-height: 1.4;
+    }
+
+    /* SVGs */
+    .icon-svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* Founders profiles */
+    .founders-container {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .founder-card {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .founder-img-wrapper {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--color-purple-light);
+      flex-shrink: 0;
+      background-color: #f1f5f9;
+    }
+
+    .founder-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .founder-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .founder-name {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-navy-signature);
+    }
+
+    .founder-role {
+      font-size: 0.75rem;
+      color: var(--color-purple-signature);
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .founder-bio {
+      font-size: 0.75rem;
+      color: var(--color-navy-light);
+      line-height: 1.35;
+    }
+
+    .founder-quote {
+      font-family: var(--font-serif);
+      font-size: 0.75rem;
+      font-style: italic;
+      color: var(--color-navy-signature);
+      margin-top: 4px;
+      line-height: 1.3;
+      padding-left: 8px;
+      border-left: 2px solid var(--color-purple-light);
+    }
+
+    /* Partners */
+    .partner-card {
+      background: white;
+      border: 1px solid rgba(0,0,0,0.04);
+      border-radius: 10px;
+      padding: 12px;
+      margin: 12px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .partner-logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .partner-logo {
+      height: 24px;
+      max-width: 100px;
+      object-fit: contain;
+    }
+
+    .partner-name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-navy-signature);
+    }
+
+    .partner-quote {
+      font-size: 0.775rem;
+      font-style: italic;
+      color: var(--color-navy-light);
+      line-height: 1.35;
+    }
+
+    /* Provenance chain timeline */
+    .prov-chain {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin: 14px 0;
+      padding-left: 8px;
+    }
+
+    .prov-step {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      position: relative;
+    }
+
+    .prov-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      left: 11px;
+      top: 22px;
+      bottom: -10px;
+      width: 1.5px;
+      background-color: var(--color-purple-light);
+    }
+
+    .prov-num {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--color-purple-light);
+      color: var(--color-purple-signature);
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+    }
+
+    .prov-text {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-navy-signature);
+    }
+
+    /* Front Cover Layout */
+    .front-logo-wrapper {
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .front-logo {
+      height: 84px;
+      object-fit: contain;
+    }
+
+    .front-main {
+      margin-top: auto;
+      margin-bottom: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .front-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(113, 98, 174, 0.1);
+      color: var(--color-purple-signature);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 9999px;
+      align-self: flex-start;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .front-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--color-purple-signature);
+    }
+
+    .front-title {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--color-navy-signature);
+      line-height: 1.1;
+    }
+
+    .front-tagline {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--color-purple-signature);
+      line-height: 1.4;
+    }
+
+    .front-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      padding-top: 16px;
+    }
+
+    .front-footer-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .front-footer-rcs {
+      font-size: 0.7rem;
+      color: var(--color-navy-light);
+    }
+
+    .front-footer-url {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-blue-accent);
+      text-decoration: none;
+    }
+
+    .front-footer-qr {
+      width: 52px;
+      height: 52px;
+      border: 1px solid #cbd5e1;
+      padding: 2px;
+      border-radius: 6px;
+      background: white;
+    }
+
+    .front-footer-qr img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    /* Back Cover Layout */
+    .back-footer {
+      margin-top: auto;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      padding-top: 12px;
+      font-size: 0.7rem;
+      color: var(--color-navy-light);
+      line-height: 1.45;
+    }
+
+    .back-footer strong {
+      color: var(--color-navy-signature);
+    }
+
+    .small-footer-note {
+      font-size: 0.7rem;
+      color: var(--color-navy-light);
+      margin-top: auto;
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.04);
+      padding-top: 8px;
+    }
+
+    /* ==========================================================================
+       6. BACKGROUND ALIGNMENT PER PAGE
+       ========================================================================== */
+    .page-1 { background-position: center center; }
+    .page-2 { background-position: left center; }
+    .page-3 { background-position: right center; }
+    .page-4 { background-position: left center; }
+    .page-5 { background-position: right center; }
+    .page-6 { background-position: center center; }
+
+    /* ==========================================================================
+       7. INTERACTION CONTROLS (NAVIGATION ARROWS & DOTS)
+       ========================================================================== */
+    .nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      color: var(--color-navy-signature);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+      transition: all 0.2s ease;
+      z-index: 10;
+      user-select: none;
+    }
+
+    .nav-arrow:hover {
+      background: white;
+      color: var(--color-purple-signature);
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.12);
+      transform: translateY(-50%) scale(1.05);
+    }
+
+    .nav-arrow:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+
+    .nav-arrow.disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .nav-left { left: -16px; }
+    .nav-right { right: -16px; }
+
+    .nav-arrow svg {
+      width: 24px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* Footer & Indicators */
+    .footer-controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      margin-top: 16px;
+      user-select: none;
+    }
+
+    .dots-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #cbd5e1;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .dot.active {
+      background: var(--color-purple-signature);
+      transform: scale(1.3);
+    }
+
+    .instructions-tip {
+      font-size: 0.775rem;
+      color: var(--color-navy-light);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      opacity: 0.7;
+    }
+
+    /* ==========================================================================
+       8. RESPONSIVE DESIGN (DESKTOP / MOBILE SWITCH)
+       ========================================================================== */
+    
+    /* DESKTOP/TABLET LANDSCAPE: 2-Page Spreads */
+    @media (min-width: 1025px) {
+      .slider-window {
+        max-width: 910px; /* (440px page * 2) + 30px gap */
+      }
+      .slide-item {
+        display: flex;
+      }
+    }
+
+    /* MOBILE / TABLET PORTRAIT: Single Page Slider */
+    @media (max-width: 1024px) {
+      body {
+        background-size: auto 100%;
+      }
+
+      header {
+        padding: 12px 16px;
+      }
+
+      .header-logo {
+        height: 38px;
+      }
+
+      .viewport {
+        padding: 16px;
+      }
+
+      .slider-window {
+        height: calc(100vh - 170px);
+        min-height: 520px;
+        max-height: 620px;
+        max-width: 440px;
+      }
+
+      /* display: contents removes the slide-item wrappers from the flex structure */
+      /* this makes individual pages flex children of the track directly! */
+      .slide-item {
+        display: contents;
+      }
+
+      .page {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-size: cover; /* each page has its own cover background */
+        background-position: center center !important;
+        border-radius: 12px;
+        padding: 24px 20px 20px 20px;
+        overflow-y: auto; /* permit internal page scrolling if device screen is very small */
+      }
+
+      /* Adjust font sizes on mobile for sizing safety */
+      .panel-title {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+      }
+
+      p.intro-text {
+        font-size: 0.95rem;
+        margin-bottom: 12px;
+      }
+
+      .quote-block {
+        font-size: 0.95rem;
+        margin: 12px 0;
+      }
+
+      .nav-arrow {
+        width: 48px;
+        height: 48px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+
+      .nav-left { left: 4px; }
+      .nav-right { right: 4px; }
+
+      .nav-arrow svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    /* Small phone height correction */
+    @media (max-width: 480px) and (max-height: 640px) {
+      .slider-window {
+        height: calc(100vh - 150px);
+      }
+      .page {
+        padding: 18px 16px;
+      }
+      .panel-title {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Clean Top Bar -->
+  <header>
+    <img class="header-logo" src="https://clarvia.org/clarvia-logo.png" alt="Clarvia ASBL Logo">
+    <div class="header-nav">
+      <span class="lang-badge">English</span>
+    </div>
+  </header>
+
+  <!-- Interactive Slide Viewport -->
+  <div class="viewport">
+    
+    <!-- Left Navigation Arrow -->
+    <button class="nav-arrow nav-left disabled" id="prevBtn" onclick="prevSlide()" aria-label="Previous Page">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+
+    <!-- Slide Window -->
+    <div class="slider-window" id="sliderWindow">
+      <div class="slider-track" id="sliderTrack">
+
+        <!-- ==========================================
+             SLIDE 0: FRONT COVER (Single)
+             ========================================== -->
+        <div class="slide-item">
+          <section class="page page-1 page-color-purple">
+            <div class="accent-bar"></div>
+            
+            <div class="front-logo-wrapper">
+              <img class="front-logo" src="https://clarvia.org/clarvia-logo.png" alt="Clarvia Logo">
+            </div>
+
+            <div class="front-main">
+              <div class="front-badge">
+                <div class="front-badge-dot"></div>
+                Free &middot; Multilingual &middot; Source-Backed
+              </div>
+              <h1 class="front-title">A clearer path through what comes next.</h1>
+              <p class="front-tagline">Free, multilingual guidance for families after the loss of a loved one.</p>
+              <p class="body-text" style="color: var(--color-navy-signature); font-weight: 500; line-height: 1.45;">
+                Clarvia is a Luxembourg non-profit building free, multilingual, source-backed bereavement guidance - starting in Luxembourg, designed for cross-border European realities.
+              </p>
+              <p class="body-text" style="font-size: 0.775rem; color: var(--color-purple-signature); font-weight: 600; margin-bottom: 0;">
+                For families, communes, social workers, professionals, volunteers, and public-interest funders.
+              </p>
+            </div>
+
+            <div class="front-footer">
+              <div class="front-footer-meta">
+                <span class="front-footer-rcs">Luxembourg Non-Profit (ASBL)</span>
+                <a href="https://www.clarvia.org" class="front-footer-url" target="_blank">www.clarvia.org</a>
+              </div>
+              <div class="front-footer-qr">
+                <img src="https://clarvia.org/qr-clarvia.png" alt="QR Link to Website">
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==========================================
+             SLIDE 1: PROBLEM & SOLUTION (Spread)
+             ========================================== -->
+        <div class="slide-item">
+          <!-- Page 2: The Problem -->
+          <section class="page page-2 page-color-purple">
+            <div class="accent-bar"></div>
+            
+            <h3 class="panel-subtitle">Why Clarvia Exists</h3>
+            <h2 class="panel-title">The Problem</h2>
+
+            <p class="intro-text">
+              Families are grieving, yet must make urgent administrative decisions. The information exists - but it is scattered, technical, and hard to act on at the worst possible moment.
+            </p>
+
+            <div class="quote-block">
+              &ldquo;Families often describe the process as falling into a black box.&rdquo;
+            </div>
+
+            <div class="stats-container">
+              <div class="stat-row">
+                <div class="stat-number">40k+</div>
+                <div class="stat-label"><strong>People closely affected</strong><br>each year in Luxembourg, based on annual deaths and close family contacts.</div>
+              </div>
+              <div class="stat-row">
+                <div class="stat-number">47%</div>
+                <div class="stat-label"><strong>Foreign national residents</strong><br>navigating unfamiliar systems in a second language.</div>
+              </div>
+              <div class="stat-row">
+                <div class="stat-number">24h</div>
+                <div class="stat-label"><strong>To declare a death</strong><br>at the commune - one of many urgent first steps.</div>
+              </div>
+            </div>
+
+            <ul class="icon-list">
+              <li class="icon-list-item">
+                <span class="icon-list-bullet">&#10022;</span>
+                <div><strong>Language barriers</strong> make official processes harder for international families.</div>
+              </li>
+              <li class="icon-list-item">
+                <span class="icon-list-bullet">&#10022;</span>
+                <div><strong>Fragmented responsibilities</strong> across banks, insurers, employers, communes, and pension systems.</div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Page 3: Two Free Tools -->
+          <section class="page page-3 page-color-blue">
+            <div class="accent-bar"></div>
+
+            <h3 class="panel-subtitle">What Clarvia Does</h3>
+            <h2 class="panel-title">Two Free Tools</h2>
+
+            <p class="intro-text">
+              Clarvia is developing two complementary tools - both free, both designed with dignity and privacy in mind.
+            </p>
+
+            <div class="glass-card">
+              <div class="glass-card-title">
+                <svg class="icon-svg" style="color:var(--color-blue-accent);" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                Bereavement Checklist
+              </div>
+              <div class="glass-card-text">
+                Currently available in English, French, and German.
+                <ul style="margin-left:16px; margin-top:4px; list-style-type:circle;">
+                  <li>What to do first</li>
+                  <li>Which documents to collect</li>
+                  <li>Who to notify</li>
+                  <li>When to seek professional advice</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="glass-card" style="padding-bottom: 0; overflow: hidden; margin-bottom: 0;">
+              <div class="glass-card-title">
+                <svg class="icon-svg" style="color:var(--color-blue-accent);" viewBox="0 0 24 24"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg>
+                Heritage Folder
+              </div>
+              <div class="glass-card-text" style="margin-bottom: 8px;">
+                An optional, privacy-conscious space to preserve wishes, memories, documents, contacts, and practical information.
+              </div>
+              <img src="https://clarvia.org/heritage-folder.png" alt="Preserving what matters" style="width: calc(100% + 28px); margin: 4px -14px 0 -14px; height: 130px; object-fit: cover; object-position: center; border-radius: 0 0 12px 12px; display: block;">
+            </div>
+
+            <div class="small-footer-note">
+              Clarvia provides administrative guidance based on official sources. It does not replace legal, tax, or medical advice.
+            </div>
+          </section>
+        </div>
+
+        <!-- ==========================================
+             SLIDE 2: HOW IT WORKS & TEAM (Spread)
+             ========================================== -->
+        <div class="slide-item">
+          <!-- Page 4: How It Works -->
+          <section class="page page-4 page-color-blue">
+            <div class="accent-bar"></div>
+
+            <h3 class="panel-subtitle">Source-Backed &amp; Verifiable</h3>
+            <h2 class="panel-title">How It Works</h2>
+
+            <p class="body-text" style="font-weight: 500;">
+              Clarvia Graph is the open knowledge engine behind the checklist.
+            </p>
+
+            <p class="body-text" style="font-size:0.8rem; margin-bottom: 4px;">Every checklist item follows a verifiable chain:</p>
+
+            <div class="prov-chain">
+              <div class="prov-step">
+                <div class="prov-num">1</div>
+                <div class="prov-text">Official source</div>
+              </div>
+              <div class="prov-step">
+                <div class="prov-num">2</div>
+                <div class="prov-text">Archived snapshot</div>
+              </div>
+              <div class="prov-step">
+                <div class="prov-num">3</div>
+                <div class="prov-text">Extracted assertion</div>
+              </div>
+              <div class="prov-step">
+                <div class="prov-num">4</div>
+                <div class="prov-text">Structured rule</div>
+              </div>
+              <div class="prov-step">
+                <div class="prov-num">5</div>
+                <div class="prov-text">Checklist item</div>
+              </div>
+            </div>
+
+            <p class="body-text" style="font-size:0.8rem; margin-top: 10px;">This means guidance can be validated, corrected, and reused by any public-interest service.</p>
+
+            <div class="glass-card" style="margin-top: 16px; margin-bottom: 0;">
+              <div class="glass-card-title">
+                <svg class="icon-svg" style="color:var(--color-teal-accent);" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+                Privacy by Design
+              </div>
+              <div class="glass-card-text" style="font-size:0.775rem;">
+                Checklist rules run locally in the browser, so sensitive family answers are never sent to Clarvia's servers.
+              </div>
+            </div>
+          </section>
+
+          <!-- Page 5: Leadership -->
+          <section class="page page-5 page-color-purple">
+            <div class="accent-bar"></div>
+
+            <h3 class="panel-subtitle">Who We Are</h3>
+            <h2 class="panel-title">Leadership</h2>
+
+            <p class="body-text">Clarvia is led by voluntary directors. Neither receives remuneration for their directorship.</p>
+
+            <div class="founders-container">
+              <!-- Günther -->
+              <div class="founder-card">
+                <div class="founder-img-wrapper">
+                  <img class="founder-img" src="https://clarvia.org/gunther.png" alt="Günther Schriver">
+                </div>
+                <div class="founder-details">
+                  <div class="founder-name">G&uuml;nther Schriver</div>
+                  <div class="founder-role">Co-Founder &amp; Director</div>
+                  <div class="founder-bio">Former Director of Berlin Red Cross, CEO Anderson Holding AG; 25+ years in healthcare & social services.</div>
+                  <div class="founder-quote">&ldquo;Access to clear support during life's hardest moments should not be a privilege.&rdquo;</div>
+                </div>
+              </div>
+
+              <!-- Tommi -->
+              <div class="founder-card">
+                <div class="founder-img-wrapper">
+                  <img class="founder-img" src="https://clarvia.org/tommi.jfif" alt="Tommi Lindfors">
+                </div>
+                <div class="founder-details">
+                  <div class="founder-name">Tommi Lindfors</div>
+                  <div class="founder-role">Co-Founder &amp; Director</div>
+                  <div class="founder-bio">Fintech automation operator; founder of Bifin Sàrl; board experience across 6 countries; based in Luxembourg.</div>
+                  <div class="founder-quote">&ldquo;No family should have to navigate the bureaucracy of grief alone.&rdquo;</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Get involved -->
+            <div class="glass-card" style="margin-top: 16px; margin-bottom: 0;">
+              <div class="glass-card-title">
+                <svg class="icon-svg" style="color:var(--color-purple-signature);" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                Get Involved
+              </div>
+              <div class="glass-card-text" style="font-size: 0.775rem;">
+                Help verify sources, translate, test checklists, improve accessibility, or contribute on GitHub. No coding required: <strong style="color: var(--color-navy-signature);">clarvia.org/en/contact</strong>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==========================================
+             SLIDE 3: TRUST & TRANSPARENCY (Single / Back Cover)
+             ========================================== -->
+        <div class="slide-item">
+          <section class="page page-6 page-color-grad">
+            <div class="accent-bar"></div>
+
+            <h3 class="panel-subtitle">Built in the Open</h3>
+            <h2 class="panel-title">Trust, Transparency &amp; Public Review</h2>
+
+            <p class="body-text">All of Clarvia's code, data, and methodology are publicly available. Every piece of guidance traces back to official sources and is open to review.</p>
+
+            <div class="partner-card">
+              <div class="partner-logo-container">
+                <img class="partner-logo" src="https://clarvia.org/tsc-logo.jpg" alt="TSC Real Estate Logo">
+                <span class="partner-name">TSC Real Estate - Early Supporter</span>
+              </div>
+              <div class="partner-quote">
+                &ldquo;Clarvia's mission - making essential post-bereavement information accessible, structured and free - is clearly in the public interest.&rdquo;
+              </div>
+            </div>
+
+            <div style="margin-top: 16px; font-size: 0.8rem; color: var(--color-navy-light); display: flex; flex-direction: column; gap: 8px;">
+              <div>
+                <strong style="color: var(--color-navy-signature);">Open source:</strong> EUPL-1.2 &middot; CC-BY-4.0
+              </div>
+              <div>
+                <strong style="color: var(--color-navy-signature);">Public review:</strong> GitHub repositories &middot; Zenodo DOI
+              </div>
+              <div>
+                <strong style="color: var(--color-navy-signature);">Quality signals:</strong> FAIR Software &middot; OpenSSF Best Practices
+              </div>
+            </div>
+
+            <div style="margin-top: 16px; font-size: 0.75rem; color: var(--color-navy-light); border-top: 1px solid rgba(0,0,0,0.05); padding-top: 12px;">
+              <strong style="color: var(--color-navy-signature);">Recognised through nonprofit programmes:</strong><br>
+              GitHub for Nonprofits &middot; Google for Nonprofits &middot; Goodstack
+            </div>
+
+            <div class="back-footer">
+              Clarvia ASBL &middot; 46, Rue de la Lavande, L-1923 Luxembourg &middot; R.C.S. Luxembourg F15680<br>
+              <strong>clarvia.org</strong> &middot; <strong>github.com/clarvia-org</strong>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Right Navigation Arrow -->
+    <button class="nav-arrow nav-right" id="nextBtn" onclick="nextSlide()" aria-label="Next Page">
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+
+    <!-- Slide Indicators & Controls -->
+    <div class="footer-controls">
+      <div class="dots-container" id="dotsContainer">
+        <!-- populated by script -->
+      </div>
+      <div class="instructions-tip">
+        <span>Use Left/Right arrow keys or swipe to flip pages</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Interactive Slide Navigation Script -->
+  <script>
+    let isMobile = window.innerWidth <= 1024;
+    let currentIndex = 0; // slide index (0-3) on desktop, page index (0-5) on mobile
+    
+    // Elements
+    const sliderTrack = document.getElementById('sliderTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotsContainer = document.getElementById('dotsContainer');
+
+    // Total page/slide configurations
+    function getMobilePageCount() {
+      return 6;
+    }
+
+    function getDesktopSlideCount() {
+      return 4;
+    }
+
+    // Mapping helper when switching viewports
+    function getPageFromSlide(slideIndex) {
+      if (slideIndex === 0) return 0; // page 1
+      if (slideIndex === 1) return 1; // page 2
+      if (slideIndex === 2) return 3; // page 4
+      if (slideIndex === 3) return 5; // page 6
+      return 0;
+    }
+
+    function getSlideFromPage(pageIndex) {
+      if (pageIndex === 0) return 0;
+      if (pageIndex === 1 || pageIndex === 2) return 1;
+      if (pageIndex === 3 || pageIndex === 4) return 2;
+      if (pageIndex === 5) return 3;
+      return 0;
+    }
+
+    function initSlider() {
+      isMobile = window.innerWidth <= 1024;
+      
+      // Build indicator dots
+      dotsContainer.innerHTML = '';
+      const totalSteps = isMobile ? getMobilePageCount() : getDesktopSlideCount();
+      
+      // Bounds check currentIndex
+      if (currentIndex >= totalSteps) {
+        currentIndex = totalSteps - 1;
+      }
+
+      for (let i = 0; i < totalSteps; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'dot' + (i === currentIndex ? ' active' : '');
+        dot.addEventListener('click', () => goToIndex(i));
+        dotsContainer.appendChild(dot);
+      }
+
+      updatePosition();
+    }
+
+    function updatePosition() {
+      const offset = -(currentIndex * 100);
+      sliderTrack.style.transform = `translateX(${offset}%)`;
+
+      // Update active classes on dots
+      const dots = dotsContainer.children;
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.toggle('active', i === currentIndex);
+      }
+
+      // Update Prev/Next buttons
+      const maxIndex = isMobile ? getMobilePageCount() - 1 : getDesktopSlideCount() - 1;
+      prevBtn.classList.toggle('disabled', currentIndex === 0);
+      nextBtn.classList.toggle('disabled', currentIndex === maxIndex);
+    }
+
+    function nextSlide() {
+      const maxIndex = isMobile ? getMobilePageCount() - 1 : getDesktopSlideCount() - 1;
+      if (currentIndex < maxIndex) {
+        currentIndex++;
+        updatePosition();
+      }
+    }
+
+    function prevSlide() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updatePosition();
+      }
+    }
+
+    function goToIndex(index) {
+      currentIndex = index;
+      updatePosition();
+    }
+
+    // Keyboard support
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        prevSlide();
+      }
+    });
+
+    // Handle Resize (Re-map indexes cleanly)
+    window.addEventListener('resize', () => {
+      const wasMobile = isMobile;
+      isMobile = window.innerWidth <= 1024;
+      
+      if (wasMobile !== isMobile) {
+        if (isMobile) {
+          // Changed from Desktop -> Mobile: map slide index (0-3) to page index (0-5)
+          currentIndex = getPageFromSlide(currentIndex);
+        } else {
+          // Changed from Mobile -> Desktop: map page index (0-5) to slide index (0-3)
+          currentIndex = getSlideFromPage(currentIndex);
+        }
+        initSlider();
+      }
+    });
+
+    // Touch Swipe Gestures
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    const sliderWindow = document.getElementById('sliderWindow');
+    
+    sliderWindow.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+
+    sliderWindow.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+    }, {passive: true});
+
+    function handleSwipe() {
+      const swipeThreshold = 50; // pixels
+      if (touchStartX - touchEndX > swipeThreshold) {
+        nextSlide(); // swipe left, show next
+      } else if (touchEndX - touchStartX > swipeThreshold) {
+        prevSlide(); // swipe right, show prev
+      }
+    }
+
+    // Initialize on load
+    initSlider();
+  </script>
+</body>
+</html>
