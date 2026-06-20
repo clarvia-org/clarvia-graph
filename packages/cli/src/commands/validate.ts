@@ -235,10 +235,10 @@ function validateSnapshotIntegrity(
     errors.push("Field content_hash must be a string");
   } else if (contentHash === "pending_capture" || contentHash.startsWith("pending_")) {
     errors.push(`Field content_hash has pending value: "${contentHash}"`);
-  } else if (!contentHash.startsWith("sha256:")) {
-    errors.push(`Field content_hash must start with "sha256:", got "${contentHash}"`);
-  } else {
+  } else if (contentHash.startsWith("sha256:")) {
     errors.push(...validateArchiveHash(data, contentHash, rootDir));
+  } else {
+    errors.push(`Field content_hash must start with "sha256:", got "${contentHash}"`);
   }
 
   return errors;

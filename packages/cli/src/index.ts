@@ -29,7 +29,7 @@ switch (command) {
 
   case "lint-ids": {
     const { main } = await import("./commands/lint-ids.js");
-    await main();
+    main();
     break;
   }
 
