@@ -179,11 +179,8 @@ export function loadGraph(rootDir: string): LoadedGraph {
           if (ass && typeof ass === "object" && typeof ass.id === "string") {
             assertions.set(ass.id, {
               ...ass,
-              source_id: typeof ass.source_id === "string" ? ass.source_id : doc.source_id,
-              source_snapshot_id:
-                typeof ass.source_snapshot_id === "string"
-                  ? ass.source_snapshot_id
-                  : doc.source_snapshot_id,
+              source_id: ass.source_id || doc.source_id,
+              source_snapshot_id: ass.source_snapshot_id || doc.source_snapshot_id,
             });
           }
         }
