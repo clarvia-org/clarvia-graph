@@ -236,7 +236,7 @@ const ENUM_LABELS: Record<string, { en: string; fr: string; de: string }> = {
 
 /** Humanize a snake_case enum value to Title Case as fallback. */
 function humanizeValue(value: string): string {
-  return value.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  return value.replaceAll(/_/g, " ").replaceAll(/\b\w/g, (c) => c.toUpperCase());
 }
 
 /**

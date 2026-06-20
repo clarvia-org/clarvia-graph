@@ -399,10 +399,10 @@ function evaluateConsequenceConditions(
     if (!cached) {
       const condition = graph.conditions.get(condRef);
       if (condition) {
-        if (!recordApplies(condition, temporalCtx)) {
-          cached = { result: false, missingFacts: [] };
-        } else {
+        if (recordApplies(condition, temporalCtx)) {
           cached = evaluateCondition(condition.expression, facts);
+        } else {
+          cached = { result: false, missingFacts: [] };
         }
       } else {
         cached = { result: "unknown", missingFacts: [] };
@@ -864,14 +864,14 @@ function makeItem(
     jurisdiction_contexts: [consequence.jurisdiction],
     checklist_group: group,
     urgency:
-      urgencyScore !== null
-        ? {
+      urgencyScore === null
+        ? null
+        : {
             score: urgencyScore,
             label: urgencyLabel(urgencyScore),
             deadline_label: deadlineLabel,
             overdue: null,
-          }
-        : null,
+          },
     action: template
       ? {
           action_type: template.action_type,
