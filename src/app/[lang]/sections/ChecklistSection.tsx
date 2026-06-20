@@ -48,7 +48,7 @@ export default function ChecklistSection({ lang }: { lang: Lang }) {
         {FEATURES.map((f, i) => (
           <div key={i} className="glass-panel p-6 text-center">
             <div className="text-4xl mb-3">{f.icon}</div>
-            <h3 className="text-lg font-semibold mb-2" style={{ color: "#2b3a67" }}>
+            <h3 className="text-lg font-semibold mb-2 text-calm-blue-700">
               {l(lang, f.en_title, f.fr_title, f.de_title)}
             </h3>
             <p className="text-base text-calm-blue-600">{l(lang, f.en, f.fr, f.de)}</p>
