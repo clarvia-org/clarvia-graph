@@ -155,7 +155,7 @@ function loadDir<T extends GraphRecord>(
     try {
       const raw = readFileSync(file, "utf-8");
       const doc = parseYaml(raw) as T;
-      if (doc && typeof doc.id === "string") {
+      if (doc && typeof doc === "object" && typeof doc.id === "string") {
         map.set(doc.id, doc);
       }
     } catch {
