@@ -6,7 +6,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
       <div className="max-w-4xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 mb-8">
           <div>
-            <img src="/clarvia-logo.png" alt="Clarvia" className="h-12 w-auto mb-4" />
+            <img src="/clarvia-logo.png" alt="Clarvia logo" className="h-12 w-auto mb-4" />
             <p className="text-sm text-calm-blue-600 leading-relaxed">
               {l(lang,
                 "Free bereavement guidance for families in Luxembourg.",
