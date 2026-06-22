@@ -31,6 +31,9 @@ export default function LandingPage() {
           <img src="/clarvia-logo.png" alt="Clarvia" className="h-20 w-auto" />
         </Link>
           <nav aria-label={l(lang, "Language switcher", "Sélecteur de langue", "Sprachauswahl")} className="flex items-center gap-2">
+            <a href={`/${lang}/support`} className="btn-secondary inline-flex items-center gap-1.5 px-4 py-2 text-sm mr-3">
+              ♥ {l(lang, "Support", "Soutenir", "Unterstützen")}
+            </a>
             {LANGUAGES.map((code) => (
             <Link
               key={code}

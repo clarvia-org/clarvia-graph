@@ -22,6 +22,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
             <nav className="flex flex-col gap-2" aria-label={l(lang, "Footer navigation", "Navigation du pied de page", "Fußzeilennavigation")} >
               {[
                 { label: l(lang, "Home", "Accueil", "Startseite"), href: `/${lang}` },
+                { label: l(lang, "Support", "Soutenir", "Unterstützen"), href: `/${lang}/support` },
                 { label: l(lang, "Checklist", "Liste de démarches", "Checkliste"), href: `/${lang}/checklist` },
                 { label: l(lang, "About", "À propos", "Über uns"), href: `/${lang}/about` },
                 { label: l(lang, "Updates", "Actualités", "Aktuelles"), href: `/${lang}/updates` },
