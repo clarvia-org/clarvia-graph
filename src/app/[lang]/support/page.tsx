@@ -393,7 +393,7 @@ export default function SupportPage() {
                 key={item.title}
                 className="flex gap-3 items-start p-4 rounded-xl bg-white/40 border border-calm-blue-100"
               >
-                <span className="governance-check mt-0.5" aria-hidden="true">&check;</span>
+                <span className="governance-check mt-0.5" aria-hidden="true">{"\u2713"}</span>
                 <div>
                   <p className="text-sm font-semibold text-calm-blue-800">{item.title}</p>
                   <p className="text-sm text-calm-blue-500 mt-0.5">{item.desc}</p>
