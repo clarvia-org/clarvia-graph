@@ -8,41 +8,47 @@ import { headlineStyle } from "../data";
 
 /* -- Donation tier data -- */
 
-const MONTHLY_TIERS = [
-  { amount: 10, label: "Keep the service free" },
-  { amount: 25, label: "Support multilingual maintenance", default: true },
-  { amount: 50, label: "Fund source-backed updates" },
-  { amount: 100, label: "Founding Circle supporter" },
-];
+function getMonthlyTiers(lang: Lang) {
+  return [
+    { amount: 10, label: l(lang, "Keep the service free", "Aider à garder le service gratuit", "Helfen, den Dienst kostenlos zu halten") },
+    { amount: 25, label: l(lang, "Support multilingual maintenance", "Soutenir la maintenance multilingue", "Mehrsprachige Pflege unterstützen"), default: true },
+    { amount: 50, label: l(lang, "Fund source-backed updates", "Financer les mises à jour fondées sur des sources officielles", "Quellenbasierte Aktualisierungen finanzieren") },
+    { amount: 100, label: l(lang, "Founding Circle supporter", "Membre du Cercle fondateur", "Unterstützer im Gründerkreis") },
+  ];
+}
 
-const ONETIME_TIERS = [
-  { amount: 35, label: "Help maintain official-source references" },
-  { amount: 75, label: "Support workflow validation" },
-  { amount: 150, label: "Fund translation and accessibility work" },
-  { amount: 500, label: "Support a public-service module" },
-];
+function getOnetimeTiers(lang: Lang) {
+  return [
+    { amount: 35, label: l(lang, "Help maintain official-source references", "Aider à maintenir les références aux sources officielles", "Bei der Pflege offizieller Quellenverweise helfen") },
+    { amount: 75, label: l(lang, "Support workflow validation", "Soutenir la validation des parcours", "Die Validierung der Abläufe unterstützen") },
+    { amount: 150, label: l(lang, "Fund translation and accessibility work", "Financer le travail de traduction et d'accessibilité", "Übersetzungs- und Barrierefreiheitsarbeit finanzieren") },
+    { amount: 500, label: l(lang, "Support a public-service module", "Soutenir un module de service public", "Ein gemeinnütziges Servicemodul unterstützen") },
+  ];
+}
 
 /* -- What donations fund -- */
 
-const FUND_ITEMS = [
-  { icon: "\u{1F4C4}", label: "Source review and maintenance" },
-  { icon: "\u{1F30D}", label: "Translation in English, French, and German" },
-  { icon: "\u267F", label: "Accessibility toward WCAG 2.2 AA" },
-  { icon: "\u2713", label: "Workflow validation" },
-  { icon: "\u{1F5A5}\uFE0F", label: "Hosting and infrastructure" },
-  { icon: "\u{1F91D}", label: "Community outreach" },
-];
+function getFundItems(lang: Lang) {
+  return [
+    { icon: "\u{1F4C4}", label: l(lang, "Source review and maintenance", "Vérification et maintenance des sources", "Quellenprüfung und Pflege") },
+    { icon: "\u{1F30D}", label: l(lang, "Translation in English, French, and German", "Traduction en anglais, français et allemand", "Übersetzung auf Englisch, Französisch und Deutsch") },
+    { icon: "\u267F", label: l(lang, "Accessibility toward WCAG 2.2 AA", "Accessibilité conforme à l'objectif WCAG 2.2 AA", "Barrierefreiheit mit Ziel WCAG 2.2 AA") },
+    { icon: "\u2713", label: l(lang, "Workflow validation", "Validation des parcours", "Validierung der Abläufe") },
+    { icon: "\u{1F5A5}\uFE0F", label: l(lang, "Hosting and infrastructure", "Hébergement et infrastructure", "Hosting und Infrastruktur") },
+    { icon: "\u{1F91D}", label: l(lang, "Community outreach", "Sensibilisation et échanges avec la communauté", "Öffentlichkeitsarbeit und Austausch mit der Community") },
+  ];
+}
 
 /* -- Thank-you banner (needs Suspense for useSearchParams) -- */
 
-function ThankYouBanner() {
+function ThankYouBanner({ lang }: { lang: Lang }) {
   const searchParams = useSearchParams();
   const donated = searchParams.get("donated") === "true";
   if (!donated) return null;
   return (
     <div className="mb-8 p-4 rounded-xl bg-green-50 border border-green-200 text-center">
       <p className="text-green-800 font-medium">
-        Thank you for your donation. We will send an acknowledgement to the email address you provided.
+        {l(lang, "Thank you for your donation. We will send an acknowledgement to the email address you provided.", "Merci pour votre don. Nous enverrons un accusé de réception à l'adresse e-mail que vous avez indiquée.", "Vielen Dank für Ihre Spende. Wir senden eine Bestätigung an die von Ihnen angegebene E-Mail-Adresse.")}
       </p>
     </div>
   );
@@ -50,32 +56,34 @@ function ThankYouBanner() {
 
 /* -- Trust elements -- */
 
-const TRUST_ITEMS = [
-  {
-    title: "Registered non-profit",
-    desc: "Clarvia ASBL is registered as a non-profit association under RCS F15680.",
-  },
-  {
-    title: "Free for families",
-    desc: "Clarvia is being built as a public service that families can use for free.",
-  },
-  {
-    title: "Early support has outsized impact",
-    desc: "Clarvia is in its build and validation phase, where each donation directly supports the foundation of the service.",
-  },
-  {
-    title: "Source-backed workflows",
-    desc: "Guidance is built around official sources, structured review, and ongoing maintenance.",
-  },
-  {
-    title: "Privacy-first donor records",
-    desc: "We collect only the information needed to process your gift, acknowledge support, and maintain basic records.",
-  },
-  {
-    title: "Open source",
-    desc: "Clarvia's public GitHub work makes the infrastructure easier to inspect, improve, and maintain.",
-  },
-];
+function getTrustItems(lang: Lang) {
+  return [
+    {
+      title: l(lang, "Registered non-profit", "Association sans but lucratif enregistrée", "Eingetragene Non-Profit-Organisation"),
+      desc: l(lang, "Clarvia ASBL is registered as a non-profit association under RCS F15680.", "Clarvia ASBL est enregistrée comme association sans but lucratif sous le numéro RCS F15680.", "Clarvia ASBL ist als gemeinnützige Vereinigung unter der Nummer RCS F15680 eingetragen."),
+    },
+    {
+      title: l(lang, "Free for families", "Gratuit pour les familles", "Kostenlos für Familien"),
+      desc: l(lang, "Clarvia is being built as a public service that families can use for free.", "Clarvia est conçu comme un service public que les familles pourront utiliser gratuitement.", "Clarvia wird als öffentlicher Dienst aufgebaut, den Familien kostenlos nutzen können."),
+    },
+    {
+      title: l(lang, "Early support has outsized impact", "Un soutien précoce a un impact décisif", "Frühe Unterstützung bewirkt besonders viel"),
+      desc: l(lang, "Clarvia is in its build and validation phase, where each donation directly supports the foundation of the service.", "Clarvia est en phase de développement et de validation, une étape où chaque don contribue directement aux fondations du service.", "Clarvia befindet sich in der Entwicklungs- und Validierungsphase, in der jede Spende direkt zum Fundament des Dienstes beiträgt."),
+    },
+    {
+      title: l(lang, "Source-backed workflows", "Des parcours fondés sur des sources officielles", "Quellenbasierte Abläufe"),
+      desc: l(lang, "Guidance is built around official sources, structured review, and ongoing maintenance.", "Les informations sont construites à partir de sources officielles, d'une revue structurée et d'une maintenance continue.", "Die Orientierungshilfen beruhen auf offiziellen Quellen, strukturierter Prüfung und laufender Pflege."),
+    },
+    {
+      title: l(lang, "Privacy-first donor records", "Des dossiers donateurs respectueux de la confidentialité", "Datensparsame Spenderunterlagen"),
+      desc: l(lang, "We collect only the information needed to process your gift, acknowledge support, and maintain basic records.", "Nous collectons uniquement les informations nécessaires pour traiter votre don, confirmer votre soutien et tenir des registres de base.", "Wir erfassen nur die Informationen, die erforderlich sind, um Ihre Spende zu bearbeiten, Ihre Unterstützung zu bestätigen und grundlegende Unterlagen zu führen."),
+    },
+    {
+      title: l(lang, "Open source", "Open source", "Open Source"),
+      desc: l(lang, "Clarvia's public GitHub work makes the infrastructure easier to inspect, improve, and maintain.", "Les travaux publics de Clarvia sur GitHub rendent l'infrastructure plus facile à examiner, à améliorer et à maintenir.", "Clarvias öffentliche Arbeit auf GitHub macht die Infrastruktur leichter prüfbar, verbesserbar und wartbar."),
+    },
+  ];
+}
 
 export default function SupportPage() {
   const params = useParams();
@@ -86,7 +94,9 @@ export default function SupportPage() {
   const [customAmount, setCustomAmount] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
 
-  const tiers = tab === "monthly" ? MONTHLY_TIERS : ONETIME_TIERS;
+  const tiers = tab === "monthly" ? getMonthlyTiers(lang) : getOnetimeTiers(lang);
+  const fundItems = getFundItems(lang);
+  const trustItems = getTrustItems(lang);
   const activeAmount = isCustom ? (Number(customAmount) || 0) : selectedAmount;
   const isValidAmount = activeAmount >= 1 && activeAmount <= 100000;
 
@@ -106,11 +116,11 @@ export default function SupportPage() {
       if (data.url) {
         window.location.href = data.url;
       } else {
-        alert(data.error || "Something went wrong. Please try bank transfer instead.");
+        alert(data.error || l(lang, "Something went wrong. Please try bank transfer instead.", "Une erreur est survenue. Veuillez plutôt effectuer un virement bancaire.", "Etwas ist schiefgelaufen. Bitte nutzen Sie stattdessen eine Banküberweisung."));
         setIsProcessing(false);
       }
     } catch {
-      alert("Could not connect to the payment service. Please try bank transfer instead.");
+      alert(l(lang, "Could not connect to the payment service. Please try bank transfer instead.", "Impossible de se connecter au service de paiement. Veuillez plutôt effectuer un virement bancaire.", "Die Verbindung zum Zahlungsdienst konnte nicht hergestellt werden. Bitte nutzen Sie stattdessen eine Banküberweisung."));
       setIsProcessing(false);
     }
   }
@@ -155,7 +165,7 @@ export default function SupportPage() {
 
         {/* Thank-you banner after successful donation */}
         <Suspense fallback={null}>
-          <ThankYouBanner />
+          <ThankYouBanner lang={lang} />
         </Suspense>
 
         {/* A. Hero */}
@@ -182,7 +192,7 @@ export default function SupportPage() {
             {l(lang, "What your donation funds", "À quoi sert votre don", "Was Ihre Spende ermöglicht")}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {FUND_ITEMS.map((item) => (
+            {fundItems.map((item) => (
               <div
                 key={item.label}
                 className="glass-panel p-4 text-center hover:scale-[1.02] transition-transform duration-200"
@@ -248,7 +258,7 @@ export default function SupportPage() {
                   &euro;{tier.amount.toLocaleString()}
                   {tab === "monthly" && (
                     <span className="text-sm font-normal text-calm-blue-400">
-                      /mo
+                      {l(lang, "/mo", "/mois", "/Monat")}
                     </span>
                   )}
                 </p>
@@ -401,7 +411,7 @@ export default function SupportPage() {
             {l(lang, "Why support Clarvia", "Pourquoi soutenir Clarvia", "Warum Clarvia unterstützen")}
           </h2>
           <ul className="space-y-3">
-            {TRUST_ITEMS.map((item) => (
+            {trustItems.map((item) => (
               <li
                 key={item.title}
                 className="flex gap-3 items-start p-4 rounded-xl bg-white/40 border border-calm-blue-100 hover:bg-white/60 transition-all hover:shadow-sm"
