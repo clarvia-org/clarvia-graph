@@ -280,6 +280,29 @@ export default function SupportPage() {
               }
             </button>
           </div>
+
+          {/* Manage existing subscription */}
+          <div className="mt-4 text-center">
+            <p className="text-sm text-calm-blue-400">
+              {l(lang,
+                "Already a monthly supporter?",
+                "Already a monthly supporter?",
+                "Already a monthly supporter?"
+              )}{" "}
+              <a
+                href="https://billing.stripe.com/p/login/cNieVd5j90I9dOs2d3b3q00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-calm-lilac-500 hover:text-calm-lilac-600 underline underline-offset-2 transition-colors"
+              >
+                {l(lang,
+                  "Manage your donation",
+                  "Manage your donation",
+                  "Manage your donation"
+                )}
+              </a>
+            </p>
+          </div>
         </section>
 
         {/* D. Bank transfer */}

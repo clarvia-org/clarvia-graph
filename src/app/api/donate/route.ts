@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import Stripe from "stripe";
+import { getStripe } from "@/lib/stripe";
 
 /**
  * POST /api/donate
@@ -14,15 +14,13 @@ import Stripe from "stripe";
  * Returns: { url: string } - the Stripe Checkout URL to redirect the donor to.
  */
 export async function POST(req: NextRequest) {
-  const secretKey = process.env.STRIPE_SECRET_KEY;
-  if (!secretKey) {
+  const stripe = getStripe();
+  if (!stripe) {
     return NextResponse.json(
       { error: "Stripe is not configured. Please try bank transfer." },
       { status: 503 }
     );
   }
-
-  const stripe = new Stripe(secretKey);
 
   let body: { amount?: number; type?: string; lang?: string };
   try {
@@ -50,6 +48,7 @@ export async function POST(req: NextRequest) {
       const session = await stripe.checkout.sessions.create({
         mode: "subscription",
         payment_method_types: ["card"],
+        metadata: { donation_type: "monthly" },
         line_items: [
           {
             price_data: {
@@ -73,6 +72,8 @@ export async function POST(req: NextRequest) {
       const session = await stripe.checkout.sessions.create({
         mode: "payment",
         payment_method_types: ["card"],
+        customer_creation: "always",
+        metadata: { donation_type: "onetime" },
         line_items: [
           {
             price_data: {
