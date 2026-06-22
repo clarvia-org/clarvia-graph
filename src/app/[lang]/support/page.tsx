@@ -82,9 +82,13 @@ export default function SupportPage() {
   const lang = (params.lang as Lang) || "en";
   const [tab, setTab] = useState<"monthly" | "onetime">("monthly");
   const [selectedAmount, setSelectedAmount] = useState<number>(25);
+  const [isCustom, setIsCustom] = useState(false);
+  const [customAmount, setCustomAmount] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
 
   const tiers = tab === "monthly" ? MONTHLY_TIERS : ONETIME_TIERS;
+  const activeAmount = isCustom ? (Number(customAmount) || 0) : selectedAmount;
+  const isValidAmount = activeAmount >= 1 && activeAmount <= 100000;
 
   async function handleCardPayment() {
     setIsProcessing(true);
@@ -93,7 +97,7 @@ export default function SupportPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          amount: selectedAmount,
+          amount: activeAmount,
           type: tab === "monthly" ? "monthly" : "onetime",
           lang,
         }),
@@ -213,7 +217,7 @@ export default function SupportPage() {
           {/* Tab toggle */}
           <div className="flex gap-1 p-1 rounded-full bg-calm-blue-100/60 mb-6 w-fit">
             <button
-              onClick={() => { setTab("monthly"); setSelectedAmount(25); }}
+              onClick={() => { setTab("monthly"); setSelectedAmount(25); setIsCustom(false); setCustomAmount(""); }}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                 tab === "monthly"
                   ? "bg-white text-calm-blue-800 shadow-sm"
@@ -223,7 +227,7 @@ export default function SupportPage() {
               {l(lang, "Monthly", "Monthly", "Monthly")}
             </button>
             <button
-              onClick={() => { setTab("onetime"); setSelectedAmount(75); }}
+              onClick={() => { setTab("onetime"); setSelectedAmount(75); setIsCustom(false); setCustomAmount(""); }}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                 tab === "onetime"
                   ? "bg-white text-calm-blue-800 shadow-sm"
@@ -235,13 +239,13 @@ export default function SupportPage() {
           </div>
 
           {/* Tier cards */}
-          <div className={`grid gap-3 ${tab === "monthly" ? "grid-cols-2" : "grid-cols-2 sm:grid-cols-2"}`}>
+          <div className={`grid gap-3 grid-cols-2`}>
             {tiers.map((tier) => (
               <button
                 key={tier.amount}
-                onClick={() => setSelectedAmount(tier.amount)}
+                onClick={() => { setSelectedAmount(tier.amount); setIsCustom(false); }}
                 className={`glass-panel p-4 text-left cursor-pointer transition-all ${
-                  selectedAmount === tier.amount
+                  !isCustom && selectedAmount === tier.amount
                     ? "ring-2 ring-calm-lilac-400 border-calm-lilac-300"
                     : "hover:ring-1 hover:ring-calm-blue-200"
                 }`}
@@ -259,24 +263,63 @@ export default function SupportPage() {
                 </p>
               </button>
             ))}
+            {/* Custom amount */}
+            <button
+              onClick={() => setIsCustom(true)}
+              className={`glass-panel p-4 text-left cursor-pointer transition-all col-span-2 ${
+                isCustom
+                  ? "ring-2 ring-calm-lilac-400 border-calm-lilac-300"
+                  : "hover:ring-1 hover:ring-calm-blue-200"
+              }`}
+            >
+              {isCustom ? (
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl font-semibold text-calm-blue-800">&euro;</span>
+                  <input
+                    type="number"
+                    min="1"
+                    max="100000"
+                    step="1"
+                    autoFocus
+                    value={customAmount}
+                    onChange={(e) => setCustomAmount(e.target.value)}
+                    onClick={(e) => e.stopPropagation()}
+                    placeholder={l(lang, "Enter amount", "Enter amount", "Enter amount")}
+                    className="w-full text-2xl font-semibold text-calm-blue-800 bg-transparent outline-none placeholder:text-calm-blue-300 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                  />
+                  {tab === "monthly" && customAmount && (
+                    <span className="text-sm font-normal text-calm-blue-400 whitespace-nowrap">/mo</span>
+                  )}
+                </div>
+              ) : (
+                <p className="text-2xl font-semibold text-calm-blue-800 mb-1">
+                  {l(lang, "Custom amount", "Custom amount", "Custom amount")}
+                </p>
+              )}
+              <p className="text-sm text-calm-blue-500 mt-1">
+                {l(lang, "Choose your own amount", "Choose your own amount", "Choose your own amount")}
+              </p>
+            </button>
           </div>
 
           {/* Pay with card button */}
           <div className="mt-6 text-center">
             <button
               onClick={handleCardPayment}
-              disabled={isProcessing}
+              disabled={isProcessing || !isValidAmount}
               className={`btn-primary inline-flex items-center gap-2 px-8 py-4 text-lg ${
-                isProcessing ? "opacity-60 cursor-wait" : ""
+                isProcessing || !isValidAmount ? "opacity-60 cursor-not-allowed" : ""
               }`}
             >
               {isProcessing
                 ? l(lang, "Redirecting...", "Redirecting...", "Redirecting...")
-                : l(lang,
-                    `Donate \u20AC${selectedAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`,
-                    `Donate \u20AC${selectedAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`,
-                    `Donate \u20AC${selectedAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`
-                  )
+                : isValidAmount
+                  ? l(lang,
+                      `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`,
+                      `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`,
+                      `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`
+                    )
+                  : l(lang, "Enter an amount", "Enter an amount", "Enter an amount")
               }
             </button>
           </div>
