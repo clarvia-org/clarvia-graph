@@ -155,7 +155,7 @@ function loadDir<T extends GraphRecord>(
     try {
       const raw = readFileSync(file, "utf-8");
       const doc = parseYaml(raw) as T;
-      if (doc && typeof doc.id === "string") {
+      if (doc && typeof doc === "object" && typeof doc.id === "string") {
         map.set(doc.id, doc);
       }
     } catch {
@@ -176,7 +176,7 @@ export function loadGraph(rootDir: string): LoadedGraph {
       const doc = parseYaml(raw) as { source_id: string; source_snapshot_id: string; assertions?: SourceAssertion[] };
       if (doc?.assertions && Array.isArray(doc.assertions)) {
         for (const ass of doc.assertions) {
-          if (ass.id) {
+          if (ass && typeof ass === "object" && typeof ass.id === "string") {
             assertions.set(ass.id, {
               ...ass,
               source_id: ass.source_id || doc.source_id,
