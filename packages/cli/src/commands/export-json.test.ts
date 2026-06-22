@@ -42,7 +42,9 @@ describe("export-json: runExportJson", () => {
     runExportJson(ROOT_DIR);
     expect(existsSync(outPath)).toBe(true);
 
-    const content = JSON.parse(readFileSync(outPath, "utf-8"));
+    const raw = readFileSync(outPath, "utf-8");
+    expect(() => JSON.parse(raw)).not.toThrow();
+    const content = JSON.parse(raw);
     expect(content.$schema).toBe("clarvia-graph-export/v0.1");
     expect(content.version).toMatch(/^\d+\.\d+\.\d+/);
     expect(content.exported_at).toMatch(
