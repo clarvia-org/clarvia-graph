@@ -66,7 +66,6 @@ export async function POST(req: NextRequest) {
         ],
         success_url: successUrl,
         cancel_url: cancelUrl,
-        submit_type: "donate",
       });
       return NextResponse.json({ url: session.url });
     } else {
