@@ -49,10 +49,10 @@ export async function POST(req: NextRequest) {
 
   // Translated product names for Stripe Checkout line items
   const productName = type === "monthly"
-    ? lang === "fr" ? "Don mensuel a Clarvia ASBL"
+    ? lang === "fr" ? "Don mensuel \u00e0 Clarvia ASBL"
       : lang === "de" ? "Monatliche Spende an Clarvia ASBL"
       : "Monthly donation to Clarvia ASBL"
-    : lang === "fr" ? "Don a Clarvia ASBL"
+    : lang === "fr" ? "Don \u00e0 Clarvia ASBL"
       : lang === "de" ? "Spende an Clarvia ASBL"
       : "Donation to Clarvia ASBL";
 
