@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,8 +23,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Google Consent Mode v2 — defaults must fire before any Google tags */}
-        <script
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer />
+      </head>
+      <body className="min-h-screen text-calm-blue-700 antialiased font-sans flex flex-col" suppressHydrationWarning>
+        {children}
+        {/* Google Consent Mode v2 — must fire before gtag.js loads */}
+        <Script
+          id="gtag-consent"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -43,16 +54,13 @@ export default function RootLayout({
             `,
           }}
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K67M5B4932" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-          rel="stylesheet"
+        <Script
+          id="gtag-js"
+          strategy="beforeInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-K67M5B4932"
         />
-        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer />
-      </head>
-      <body className="min-h-screen text-calm-blue-700 antialiased font-sans flex flex-col" suppressHydrationWarning>
-        {children}
       </body>
     </html>
   );
 }
+
