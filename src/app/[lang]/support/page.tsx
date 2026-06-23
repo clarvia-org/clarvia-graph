@@ -94,7 +94,7 @@ export default function SupportPage() {
   const [customAmount, setCustomAmount] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
 
-  const tiers = tab === "monthly" ? MONTHLY_TIERS : ONETIME_TIERS;
+  const tiers = tab === "monthly" ? getMonthlyTiers(lang) : getOnetimeTiers(lang);
   const activeAmount = isCustom ? (Number(customAmount) || 0) : selectedAmount;
   const isValidAmount = activeAmount >= 1 && activeAmount <= 100000;
 
@@ -234,7 +234,7 @@ export default function SupportPage() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {fundItems.map((item) => (
+            {getFundItems(lang).map((item) => (
               <div
                 key={item.label}
                 className="glass-panel p-4 text-center hover:scale-[1.02] transition-transform duration-200"
@@ -467,7 +467,7 @@ export default function SupportPage() {
             {l(lang, "Why support Clarvia", "Pourquoi soutenir Clarvia", "Warum Clarvia unterstützen")}
           </h2>
           <ul className="space-y-3">
-            {trustItems.map((item) => (
+            {getTrustItems(lang).map((item) => (
               <li
                 key={item.title}
                 className="flex gap-3 items-start p-4 rounded-xl bg-white/40 border border-calm-blue-100 hover:bg-white/60 transition-all hover:shadow-sm"
