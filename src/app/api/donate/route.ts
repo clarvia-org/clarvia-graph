@@ -47,6 +47,23 @@ export async function POST(req: NextRequest) {
   const stripeLocale: Stripe.Checkout.SessionCreateParams["locale"] =
     lang === "fr" ? "fr" : lang === "de" ? "de" : "en";
 
+  // Translated product names for Stripe Checkout line items
+  const productName = type === "monthly"
+    ? lang === "fr" ? "Don mensuel a Clarvia ASBL"
+      : lang === "de" ? "Monatliche Spende an Clarvia ASBL"
+      : "Monthly donation to Clarvia ASBL"
+    : lang === "fr" ? "Don a Clarvia ASBL"
+      : lang === "de" ? "Spende an Clarvia ASBL"
+      : "Donation to Clarvia ASBL";
+
+  const productDesc = type === "monthly"
+    ? lang === "fr" ? `${amount} \u20AC/mois`
+      : lang === "de" ? `${amount} \u20AC/Monat`
+      : `\u20AC${amount}/month`
+    : lang === "fr" ? `Don unique de ${amount} \u20AC`
+      : lang === "de" ? `Einmalige Spende von ${amount} \u20AC`
+      : `\u20AC${amount} one-time donation`;
+
   try {
     if (type === "monthly") {
       // Subscription via Checkout
@@ -60,8 +77,8 @@ export async function POST(req: NextRequest) {
               currency: "eur",
               recurring: { interval: "month" },
               product_data: {
-                name: "Monthly donation to Clarvia ASBL",
-                description: `€${amount}/month - supporting free bereavement guidance infrastructure`,
+                name: productName,
+                description: productDesc,
               },
               unit_amount: amountCents,
             },
@@ -85,8 +102,8 @@ export async function POST(req: NextRequest) {
             price_data: {
               currency: "eur",
               product_data: {
-                name: "Donation to Clarvia ASBL",
-                description: `€${amount} one-time donation - supporting free bereavement guidance infrastructure`,
+                name: productName,
+                description: productDesc,
               },
               unit_amount: amountCents,
             },

@@ -355,20 +355,20 @@ export default function SupportPage() {
                     value={customAmount}
                     onChange={(e) => setCustomAmount(e.target.value)}
                     onClick={(e) => e.stopPropagation()}
-                    placeholder={l(lang, "Enter amount", "Enter amount", "Enter amount")}
+                    placeholder={l(lang, "Enter amount", "Saisir un montant", "Betrag eingeben")}
                     className="w-full text-2xl font-semibold text-calm-blue-800 bg-transparent outline-none placeholder:text-calm-blue-300 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                   {tab === "monthly" && customAmount && (
-                    <span className="text-sm font-normal text-calm-blue-400 whitespace-nowrap">/mo</span>
+                    <span className="text-sm font-normal text-calm-blue-400 whitespace-nowrap">{l(lang, "/mo", "/mois", "/Monat")}</span>
                   )}
                 </div>
               ) : (
                 <p className="text-2xl font-semibold text-calm-blue-800 mb-1">
-                  {l(lang, "Custom amount", "Custom amount", "Custom amount")}
+                  {l(lang, "Custom amount", "Montant libre", "Freier Betrag")}
                 </p>
               )}
               <p className="text-sm text-calm-blue-500 mt-1">
-                {l(lang, "Choose your own amount", "Choose your own amount", "Choose your own amount")}
+                {l(lang, "Choose your own amount", "Choisissez votre propre montant", "W\u00e4hlen Sie Ihren eigenen Betrag")}
               </p>
             </button>
           </div>
@@ -383,14 +383,14 @@ export default function SupportPage() {
               }`}
             >
               {isProcessing
-                ? l(lang, "Redirecting...", "Redirecting...", "Redirecting...")
+                ? l(lang, "Redirecting...", "Redirection...", "Weiterleitung...")
                 : isValidAmount
                   ? l(lang,
                       `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`,
-                      `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`,
-                      `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`
+                      `Donner ${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/mois" : ""} par carte`,
+                      `${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/Monat" : ""} per Karte spenden`
                     )
-                  : l(lang, "Enter an amount", "Enter an amount", "Enter an amount")
+                  : l(lang, "Enter an amount", "Saisir un montant", "Betrag eingeben")
               }
             </button>
           </div>
@@ -423,11 +423,11 @@ export default function SupportPage() {
           <div className="donation-iban">
             <div className="space-y-1.5 text-sm">
               <p><span className="font-semibold text-calm-blue-700">IBAN:</span> <span className="tracking-wide">LT09 3500 0100 1903 8740</span></p>
-              <p><span className="font-semibold text-calm-blue-700">Account holder:</span> Clarvia ASBL</p>
+              <p><span className="font-semibold text-calm-blue-700">{l(lang, "Account holder:", "Titulaire du compte :", "Kontoinhaber:")} </span>Clarvia ASBL</p>
               <p><span className="font-semibold text-calm-blue-700">RCS:</span> F15680</p>
               <p><span className="font-semibold text-calm-blue-700">BIC/SWIFT:</span> EVIULT2VXXX</p>
-              <p><span className="font-semibold text-calm-blue-700">Bank:</span> Paysera LT, UAB</p>
-              <p><span className="font-semibold text-calm-blue-700">Bank address:</span> Pilait&#x117;s pr. 16, Vilnius, LT-04352, Lithuania</p>
+              <p><span className="font-semibold text-calm-blue-700">{l(lang, "Bank:", "Banque :", "Bank:")} </span>Paysera LT, UAB</p>
+              <p><span className="font-semibold text-calm-blue-700">{l(lang, "Bank address:", "Adresse de la banque :", "Bankadresse:")} </span>Pilait&#x117;s pr. 16, Vilnius, LT-04352, {l(lang, "Lithuania", "Lituanie", "Litauen")}</p>
             </div>
             <div className="mt-4 pt-3 border-t border-calm-blue-200/50 space-y-2">
               <p className="text-xs text-calm-blue-500">
