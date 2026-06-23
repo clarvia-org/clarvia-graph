@@ -94,9 +94,7 @@ export default function SupportPage() {
   const [customAmount, setCustomAmount] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
 
-  const tiers = tab === "monthly" ? getMonthlyTiers(lang) : getOnetimeTiers(lang);
-  const fundItems = getFundItems(lang);
-  const trustItems = getTrustItems(lang);
+  const tiers = tab === "monthly" ? MONTHLY_TIERS : ONETIME_TIERS;
   const activeAmount = isCustom ? (Number(customAmount) || 0) : selectedAmount;
   const isValidAmount = activeAmount >= 1 && activeAmount <= 100000;
 
@@ -186,11 +184,55 @@ export default function SupportPage() {
         <section className="mb-12" aria-labelledby="funds-heading">
           <h2
             id="funds-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
+            className="text-xl font-semibold text-calm-blue-800 mb-2"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
             {l(lang, "What your donation funds", "À quoi sert votre don", "Was Ihre Spende ermöglicht")}
           </h2>
+          <p className="text-sm text-calm-blue-500 mb-4">
+            {l(lang,
+              "Every donation goes directly toward building a practical, free public service that reduces confusion and stress after a loss.",
+              "Chaque don contribue directement à la construction d'un service public gratuit et pratique qui aide les familles après la perte d'un proche.",
+              "Jede Spende fliesst direkt in den Aufbau eines kostenlosen öffentlichen Dienstes, der Familien nach dem Verlust eines Angehörigen unterstützt."
+            )}
+          </p>
+
+          {/* Funding goal progress */}
+          <div className="glass-panel p-5 mb-6">
+            <div className="flex items-baseline justify-between mb-2">
+              <p className="text-sm font-semibold text-calm-blue-800">
+                {l(lang, "Current goal", "Objectif actuel", "Aktuelles Ziel")}
+              </p>
+              <p className="text-xs text-calm-blue-400">
+                {l(lang, "Updated weekly", "Mis à jour chaque semaine", "Wöchentlich aktualisiert")}
+              </p>
+            </div>
+            <div className="w-full h-3 rounded-full bg-calm-blue-100 overflow-hidden mb-2">
+              <div
+                className="h-full rounded-full transition-all duration-500"
+                style={{
+                  width: `${Math.min((3800 / 10000) * 100, 100)}%`,
+                  background: "linear-gradient(135deg, #4479e1, #7c6cbb)",
+                }}
+              />
+            </div>
+            <div className="flex items-baseline justify-between">
+              <p className="text-lg font-semibold text-calm-blue-800">
+                &euro;3,800 <span className="text-sm font-normal text-calm-blue-400">{l(lang, "raised", "collectés", "gesammelt")}</span>
+              </p>
+              <p className="text-sm text-calm-blue-500">
+                {l(lang, "of \u20AC10,000 goal", "sur un objectif de 10 000 \u20AC", "von 10.000 \u20AC")}
+              </p>
+            </div>
+            <p className="text-xs text-calm-blue-400 mt-2">
+              {l(lang,
+                "To finalise the prototype, complete translations in English, French and German, and reach full accessibility standards.",
+                "Pour finaliser le prototype, compléter les traductions en anglais, français et allemand, et atteindre les standards d'accessibilité.",
+                "Um den Prototyp fertigzustellen, die Übersetzungen auf Englisch, Französisch und Deutsch abzuschliessen und die Barrierefreiheitsstandards zu erreichen."
+              )}
+            </p>
+          </div>
+
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {fundItems.map((item) => (
               <div
@@ -219,7 +261,7 @@ export default function SupportPage() {
           </h2>
 
           {/* Tab toggle */}
-          <div className="flex gap-1 p-1 rounded-full bg-calm-blue-100/60 mb-6 w-fit">
+          <div className="flex gap-1 p-1 rounded-full bg-calm-blue-100/60 mb-3 w-fit">
             <button
               onClick={() => { setTab("monthly"); setSelectedAmount(25); setIsCustom(false); setCustomAmount(""); }}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
@@ -228,7 +270,7 @@ export default function SupportPage() {
                   : "text-calm-blue-500 hover:text-calm-blue-700"
               }`}
             >
-              {l(lang, "Monthly", "Mensuel", "Monatlich")}
+              {l(lang, "Monthly (recommended)", "Mensuel (recommandé)", "Monatlich (empfohlen)")}
             </button>
             <button
               onClick={() => { setTab("onetime"); setSelectedAmount(75); setIsCustom(false); setCustomAmount(""); }}
@@ -241,6 +283,20 @@ export default function SupportPage() {
               {l(lang, "One-time", "Ponctuel", "Einmalig")}
             </button>
           </div>
+          <p className="text-sm text-calm-blue-400 mb-6">
+            {tab === "monthly"
+              ? l(lang,
+                  "Recurring donations help us plan and move faster.",
+                  "Les dons récurrents nous aident à planifier et à avancer plus vite.",
+                  "Regelmäßige Spenden helfen uns, besser zu planen und schneller voranzukommen."
+                )
+              : l(lang,
+                  "Prefer to give once? You can also make a one-time contribution of any amount.",
+                  "Vous préférez donner une seule fois ? Vous pouvez faire un don ponctuel du montant de votre choix.",
+                  "Lieber einmalig spenden? Sie können auch einen einmaligen Beitrag in beliebiger Höhe leisten."
+                )
+            }
+          </p>
 
           {/* Tier cards */}
           <div className={`grid gap-3 grid-cols-2`}>
@@ -288,7 +344,7 @@ export default function SupportPage() {
                     value={customAmount}
                     onChange={(e) => setCustomAmount(e.target.value)}
                     onClick={(e) => e.stopPropagation()}
-                    placeholder={l(lang, "Enter amount", "Saisir un montant", "Betrag eingeben")}
+                    placeholder={l(lang, "Enter amount", "Enter amount", "Enter amount")}
                     className="w-full text-2xl font-semibold text-calm-blue-800 bg-transparent outline-none placeholder:text-calm-blue-300 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                   />
                   {tab === "monthly" && customAmount && (
@@ -297,11 +353,11 @@ export default function SupportPage() {
                 </div>
               ) : (
                 <p className="text-2xl font-semibold text-calm-blue-800 mb-1">
-                  {l(lang, "Custom amount", "Montant personnalisé", "Eigener Betrag")}
+                  {l(lang, "Custom amount", "Custom amount", "Custom amount")}
                 </p>
               )}
               <p className="text-sm text-calm-blue-500 mt-1">
-                {l(lang, "Choose your own amount", "Choisir votre propre montant", "Eigenen Betrag wählen")}
+                {l(lang, "Choose your own amount", "Choose your own amount", "Choose your own amount")}
               </p>
             </button>
           </div>
@@ -316,14 +372,14 @@ export default function SupportPage() {
               }`}
             >
               {isProcessing
-                ? l(lang, "Redirecting...", "Redirection...", "Weiterleitung...")
+                ? l(lang, "Redirecting...", "Redirecting...", "Redirecting...")
                 : isValidAmount
                   ? l(lang,
                       `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`,
-                      `Faire un don de \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mois" : ""} par carte`,
-                      `\u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/Monat" : ""} per Karte spenden`
+                      `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`,
+                      `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`
                     )
-                  : l(lang, "Enter an amount", "Saisissez un montant", "Geben Sie einen Betrag ein")
+                  : l(lang, "Enter an amount", "Enter an amount", "Enter an amount")
               }
             </button>
           </div>
