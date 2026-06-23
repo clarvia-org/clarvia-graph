@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import Stripe from "stripe";
 import { getStripe } from "@/lib/stripe";
 
 /**
@@ -42,6 +43,10 @@ export async function POST(req: NextRequest) {
   const successUrl = `${baseUrl}/${lang}/support?donated=true`;
   const cancelUrl = `${baseUrl}/${lang}/support`;
 
+  // Map site language to Stripe Checkout locale
+  const stripeLocale: Stripe.Checkout.SessionCreateParams["locale"] =
+    lang === "fr" ? "fr" : lang === "de" ? "de" : "en";
+
   try {
     if (type === "monthly") {
       // Subscription via Checkout
@@ -65,6 +70,7 @@ export async function POST(req: NextRequest) {
         ],
         success_url: successUrl,
         cancel_url: cancelUrl,
+        locale: stripeLocale,
       });
       return NextResponse.json({ url: session.url });
     } else {
@@ -89,6 +95,7 @@ export async function POST(req: NextRequest) {
         ],
         success_url: successUrl,
         cancel_url: cancelUrl,
+        locale: stripeLocale,
         submit_type: "donate",
       });
       return NextResponse.json({ url: session.url });

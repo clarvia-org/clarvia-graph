@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
@@ -93,6 +93,17 @@ export default function SupportPage() {
   const [isCustom, setIsCustom] = useState(false);
   const [customAmount, setCustomAmount] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
+
+  // Reset "Redirecting..." state when user navigates back from Stripe
+  useEffect(() => {
+    function handleVisibilityChange() {
+      if (document.visibilityState === "visible") {
+        setIsProcessing(false);
+      }
+    }
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
+  }, []);
 
   const tiers = tab === "monthly" ? getMonthlyTiers(lang) : getOnetimeTiers(lang);
   const activeAmount = isCustom ? (Number(customAmount) || 0) : selectedAmount;
