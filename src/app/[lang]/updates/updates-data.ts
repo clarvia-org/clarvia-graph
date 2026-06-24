@@ -10,6 +10,32 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-06-24",
+    headline: {
+      en: "GitHub Sponsors now active for Clarvia",
+      fr: "GitHub Sponsors est maintenant actif pour Clarvia",
+      de: "GitHub Sponsors jetzt aktiv fuer Clarvia",
+    },
+    body: {
+      en: "Clarvia is now enrolled in GitHub Sponsors. Anyone who values free, multilingual bereavement guidance can support the project directly through GitHub. Sponsorships help fund development, hosting, and the expansion of Clarvia's checklist to new countries. The Sponsor button is now visible on all Clarvia repositories.",
+      fr: "Clarvia est desormais inscrit sur GitHub Sponsors. Toute personne attachee a un accompagnement administratif gratuit et multilingue en cas de deuil peut soutenir le projet directement via GitHub. Les parrainages contribuent a financer le developpement, l'hebergement et l'extension de la checklist Clarvia a de nouveaux pays. Le bouton Sponsor est desormais visible sur tous les depots Clarvia.",
+      de: "Clarvia ist jetzt bei GitHub Sponsors registriert. Alle, die kostenlose und mehrsprachige Unterstuetzung bei Verwaltungsaufgaben im Trauerfall schaetzen, koennen das Projekt direkt ueber GitHub unterstuetzen. Sponsoring hilft bei der Finanzierung von Entwicklung, Hosting und der Erweiterung der Clarvia-Checkliste auf weitere Laender. Der Sponsor-Button ist jetzt auf allen Clarvia-Repositories sichtbar.",
+    },
+  },
+  {
+    date: "2026-06-22",
+    headline: {
+      en: "Clarvia support page is live",
+      fr: "La page de soutien Clarvia est en ligne",
+      de: "Clarvia-Unterstuetzungsseite ist online",
+    },
+    body: {
+      en: "Clarvia now has a dedicated support page at clarvia.org/en/support. The page accepts one-time and recurring donations via Stripe, available in English, French, and German. All contributions go directly to Clarvia ASBL and help fund development, hosting, and country expansion.",
+      fr: "Clarvia dispose desormais d'une page de soutien dediee sur clarvia.org/fr/support. La page accepte les dons ponctuels et recurrents via Stripe, disponible en anglais, francais et allemand. Toutes les contributions vont directement a Clarvia ASBL et aident a financer le developpement, l'hebergement et l'expansion vers de nouveaux pays.",
+      de: "Clarvia hat jetzt eine eigene Unterstuetzungsseite unter clarvia.org/de/support. Die Seite akzeptiert einmalige und wiederkehrende Spenden ueber Stripe, verfuegbar auf Englisch, Franzoesisch und Deutsch. Alle Beitraege gehen direkt an Clarvia ASBL und helfen bei der Finanzierung von Entwicklung, Hosting und Laendererweiterung.",
+    },
+  },
+  {
     date: "2026-06-08",
     headline: {
       en: "Continuous code quality analysis via SonarCloud",
