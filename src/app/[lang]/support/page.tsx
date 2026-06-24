@@ -48,7 +48,7 @@ function ThankYouBanner({ lang }: { lang: Lang }) {
   return (
     <div className="mb-8 p-4 rounded-xl bg-green-50 border border-green-200 text-center">
       <p className="text-green-800 font-medium">
-        {l(lang, "Thank you for your donation. We will send an acknowledgement to the email address you provided.", "Merci pour votre don. Nous enverrons un accusé de réception à l'adresse e-mail que vous avez indiquée.", "Vielen Dank für Ihre Spende. Wir senden eine Bestätigung an die von Ihnen angegebene E-Mail-Adresse.")}
+        {l(lang, "Thank you for your support! You will receive a receipt from Stripe at the email address you provided.", "Merci pour votre soutien ! Vous recevrez un recu de Stripe a l'adresse e-mail que vous avez indiquee.", "Vielen Dank fuer Ihre Unterstuetzung! Sie erhalten eine Quittung von Stripe an die von Ihnen angegebene E-Mail-Adresse.")}
       </p>
     </div>
   );
