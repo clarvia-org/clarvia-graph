@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 import { headlineStyle } from "../data";
+import FooterSection from "../sections/FooterSection";
 
 /* ── Types ── */
 interface IntakeQuestion {
@@ -696,15 +697,7 @@ export default function ChecklistPage() {
         </div>{/* end max-w-2xl centering wrapper */}
       </main>
 
-      {/* ═══ Footer ═══ */}
-      <footer className="py-8 px-6 text-center text-xs text-calm-blue-400">
-        <p>
-          © {new Date().getFullYear()} CLARVIA ASBL ·{" "}
-          <Link href={`/${lang}/about`} className="underline hover:text-calm-blue-600">
-            {l(lang, "About", "À propos", "Über uns")}
-          </Link>
-        </p>
-      </footer>
+      <FooterSection lang={lang} />
     </>
   );
 }

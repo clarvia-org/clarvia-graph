@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 import { headlineStyle } from "../data";
+import FooterSection from "../sections/FooterSection";
 
 export default function ContributePage() {
   const params = useParams();
@@ -156,6 +157,8 @@ export default function ContributePage() {
         </div>
 
       </main>
+
+      <FooterSection lang={lang} />
     </>
   );
 }

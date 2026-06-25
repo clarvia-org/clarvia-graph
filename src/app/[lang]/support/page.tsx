@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 import { headlineStyle } from "../data";
+import FooterSection from "../sections/FooterSection";
 
 /* -- Donation tier data -- */
 
@@ -553,6 +554,8 @@ export default function SupportPage() {
         </section>
 
       </main>
+
+      <FooterSection lang={lang} />
     </>
   );
 }

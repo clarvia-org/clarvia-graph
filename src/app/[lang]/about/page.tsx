@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 import { headlineStyle } from "../data";
+import FooterSection from "../sections/FooterSection";
 
 const BASE_URL = "https://clarvia.org";
 
@@ -281,6 +282,8 @@ export default async function AboutPage({
         </section>
 
       </main>
+
+      <FooterSection lang={lang} />
     </>
   );
 }

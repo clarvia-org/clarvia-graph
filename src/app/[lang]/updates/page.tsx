@@ -5,6 +5,7 @@ import Link from "next/link";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 import { UPDATES } from "./updates-data";
+import FooterSection from "../sections/FooterSection";
 
 function formatDate(dateStr: string, lang: Lang): string {
   const date = new Date(dateStr + "T00:00:00");
@@ -116,6 +117,8 @@ export default function UpdatesPage() {
         </div>
 
       </main>
+
+      <FooterSection lang={lang} />
     </>
   );
 }
