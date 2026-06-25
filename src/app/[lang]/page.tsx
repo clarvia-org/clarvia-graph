@@ -5,6 +5,7 @@ import Link from "next/link";
 import { type Lang, l,LANGUAGES } from "@/lib/i18n";
 
 import HeroSection from "./sections/HeroSection";
+import VideoSection from "./sections/VideoSection";
 import ProblemSection from "./sections/ProblemSection";
 import ChecklistSection from "./sections/ChecklistSection";
 import LuxembourgFocusSection from "./sections/LuxembourgFocusSection";
@@ -54,6 +55,7 @@ export default function LandingPage() {
 
       <main className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         <HeroSection lang={lang} />
+        <VideoSection lang={lang} />
         <ProblemSection lang={lang} />
         <ChecklistSection lang={lang} />
         <LuxembourgFocusSection lang={lang} />

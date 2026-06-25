@@ -10,6 +10,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-06-25",
+    headline: {
+      en: "Clarvia YouTube channel launched",
+      fr: "Lancement de la chaîne YouTube Clarvia",
+      de: "Clarvia YouTube-Kanal gestartet",
+    },
+    body: {
+      en: "Clarvia now has a YouTube channel to share our journey building practical support for families after loss. The first short introduces our mission — making the invisible admin job after a death more manageable. We plan to post 2–3 short videos per month.",
+      fr: "Clarvia now has a YouTube channel to share our journey building practical support for families after loss. The first short introduces our mission — making the invisible admin job after a death more manageable. We plan to post 2–3 short videos per month.",
+      de: "Clarvia now has a YouTube channel to share our journey building practical support for families after loss. The first short introduces our mission — making the invisible admin job after a death more manageable. We plan to post 2–3 short videos per month.",
+    },
+  },
+  {
     date: "2026-06-24",
     headline: {
       en: "Clarvia's bereavement source register published on data.public.lu",

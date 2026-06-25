@@ -100,7 +100,11 @@ function extractTarGz(buffer: Buffer, dest: string): void {
 
   try {
     fs.mkdirSync(dest, { recursive: true });
-    execSync(`tar xzf "${tmp}" -C "${dest}"`, { stdio: "pipe" });
+    if (process.platform === "win32") {
+      execSync(`python -c "import tarfile; tar = tarfile.open(r'${tmp}'); tar.extractall(r'${dest}'); tar.close()"`, { stdio: "pipe" });
+    } else {
+      execSync(`tar xzf "${tmp}" -C "${dest}"`, { stdio: "pipe" });
+    }
   } finally {
     fs.rmSync(tmp, { force: true });
   }
