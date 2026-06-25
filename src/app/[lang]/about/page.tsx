@@ -3,6 +3,10 @@ import Link from "next/link";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 import FooterSection from "../sections/FooterSection";
+import LuxembourgFocusSection from "../sections/LuxembourgFocusSection";
+import HeritageSection from "../sections/HeritageSection";
+import FoundingSection from "../sections/FoundingSection";
+import StageSection from "../sections/StageSection";
 
 const BASE_URL = "https://clarvia.org";
 
@@ -20,7 +24,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   de: {
     title: "Über Clarvia — Mission, rechtliche Identität und Governance",
     description:
-      "Clarvia ASBL ist ein gemeinnütziger Verein in Luxemburg, der kostenlose, mehrsprachige Trauerbegleitung für Familien aufbaut. Erfahren Sie mehr über unsere Mission, Rechtsstruktur und Arbeitsweise.",
+      "Clarvia ASBL is ein gemeinnütziger Verein in Luxemburg, der kostenlose, mehrsprachige Trauerbegleitung für Familien aufbaut. Erfahren Sie mehr über unsere Mission, Rechtsstruktur und Arbeitsweise.",
   },
 };
 
@@ -64,56 +68,62 @@ export default async function AboutPage({
 
   return (
     <>
-      <header
-        aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf")}
-        className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative"
-      >
-        <Link
-          href={`/${lang}`}
-          aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite")}
-          className="block"
-        >
+      {/* ═══ Header ═══ */}
+      <header aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf")} className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative">
+        <Link href={`/${lang}`} aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite")} className="block">
           <img src="/clarvia-logo.png" alt="Clarvia" className="h-20 w-auto" />
         </Link>
-        <nav
-          aria-label={l(lang, "Language switcher", "Sélecteur de langue", "Sprachauswahl")}
-          className="flex items-center gap-2"
-        >
-          {LANGUAGES.map((code) => (
-            <Link
-              key={code}
-              href={`/${code}/about`}
-              aria-label={l(lang,
-                `Switch to ${code.toUpperCase()}`,
-                `Passer en ${code.toUpperCase()}`,
-                `Zu ${code.toUpperCase()} wechseln`
-              )}
-              aria-current={lang === code ? "page" : undefined}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-                lang === code
-                  ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
-                  : "text-calm-blue-500 hover:bg-white/40"
-              }`}
-            >
-              {code.toUpperCase()}
+        <nav aria-label={l(lang, "Site navigation", "Navigation du site", "Seiten-Navigation")} className="flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
+            <Link href={`/${lang}/checklist`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Checklist", "Checklist", "Checkliste")}
             </Link>
-          ))}
+            <Link href={`/${lang}/about`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors font-bold border-b border-calm-blue-600">
+              {l(lang, "About", "À propos", "Über uns")}
+            </Link>
+            <Link href={`/${lang}/updates`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Updates", "Actualités", "Aktuelles")}
+            </Link>
+            <Link href={`/${lang}/contribute`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Contribute", "Contribuer", "Mitwirken")}
+            </Link>
+          </div>
+          <div className="flex items-center gap-2">
+            <Link href={`/${lang}/support`} className="btn-secondary inline-flex items-center gap-1.5 px-4 py-2 text-sm mr-3">
+              ♥ {l(lang, "Support", "Soutenir", "Unterstützen")}
+            </Link>
+            {LANGUAGES.map((code) => (
+              <Link
+                key={code}
+                href={`/${code}/about`}
+                aria-label={l(lang, `Switch to ${code.toUpperCase()}`, `Passer en ${code.toUpperCase()}`, `Zu ${code.toUpperCase()} wechseln`)}
+                aria-current={lang === code ? "page" : undefined}
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  lang === code
+                    ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
+                    : "text-calm-blue-500 hover:bg-white/40"
+                }`}
+              >
+                {code.toUpperCase()}
+              </Link>
+            ))}
+          </div>
         </nav>
       </header>
 
-      <main className="flex-grow w-full max-w-2xl mx-auto px-4 sm:px-6 py-16 relative z-10">
+      <main className="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 py-16 relative z-10">
 
         <h1
-          className="text-4xl sm:text-5xl font-semibold tracking-tight mb-10"
+          className="text-4xl sm:text-5xl font-semibold tracking-tight mb-10 text-center"
           style={headlineStyle}
         >
           {l(lang, "About Clarvia", "À propos de Clarvia", "Über Clarvia")}
         </h1>
 
-        <section className="mb-12" aria-labelledby="mission-heading">
+        <section className="mb-16" aria-labelledby="mission-heading">
           <h2
             id="mission-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
+            className="text-2xl font-semibold text-calm-blue-800 mb-4"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
             {l(lang, "Our mission", "Notre mission", "Unsere Mission")}
@@ -134,10 +144,10 @@ export default async function AboutPage({
           </p>
         </section>
 
-        <section className="mb-12" aria-labelledby="legal-heading">
+        <section className="mb-16" aria-labelledby="legal-heading">
           <h2
             id="legal-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
+            className="text-2xl font-semibold text-calm-blue-800 mb-4"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
             {l(lang, "Legal identity", "Identité légale", "Rechtliche Identität")}
@@ -186,10 +196,14 @@ export default async function AboutPage({
           </div>
         </section>
 
-        <section className="mb-12" aria-labelledby="how-heading">
+        <section className="mb-16">
+          <FoundingSection lang={lang} />
+        </section>
+
+        <section className="mb-16" aria-labelledby="how-heading">
           <h2
             id="how-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
+            className="text-2xl font-semibold text-calm-blue-800 mb-4"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
             {l(lang, "How it works", "Comment ça fonctionne", "So funktioniert es")}
@@ -238,45 +252,57 @@ export default async function AboutPage({
           </ul>
         </section>
 
-        <section className="mb-12" aria-labelledby="governance-heading">
+        <section className="mb-16">
+          <LuxembourgFocusSection lang={lang} />
+        </section>
+
+        <section className="mb-16">
+          <HeritageSection lang={lang} />
+        </section>
+
+        <section className="mb-16">
+          <StageSection lang={lang} />
+        </section>
+
+        <section className="mb-16" aria-labelledby="governance-heading">
           <h2
             id="governance-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
+            className="text-2xl font-semibold text-calm-blue-800 mb-4"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
             {l(lang, "Governance and transparency", "Gouvernance et transparence", "Governance und Transparenz")}
           </h2>
-          <p className="text-sm text-calm-blue-600 leading-relaxed mb-6">
+          <p className="text-base text-calm-blue-600 leading-relaxed mb-6">
             {l(lang,
               "Clarvia operates openly. Our governance standards, contribution guidelines, and source code are all public.",
               "Clarvia fonctionne de manière ouverte. Nos normes de gouvernance, nos directives de contribution et notre code source sont tous publics.",
               "Clarvia arbeitet transparent. Unsere Governance-Standards, Beitragsrichtlinien und der Quellcode sind alle öffentlich zugänglich."
             )}
           </p>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col sm:flex-row gap-3">
             <a
               href="https://github.com/clarvia-org/.github/blob/main/GOVERNANCE.md"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary inline-flex items-center gap-2 px-6 py-3 text-base"
+              className="btn-secondary inline-flex items-center justify-center gap-2 px-6 py-3 text-base flex-grow text-center"
             >
-              {l(lang, "Read the governance document", "Lire le document de gouvernance", "Governance-Dokument lesen")}
+              {l(lang, "Governance Document", "Document de gouvernance", "Governance-Dokument")}
             </a>
             <a
               href="https://github.com/clarvia-org/.github/blob/main/CONTRIBUTING.md"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary inline-flex items-center gap-2 px-6 py-3 text-base"
+              className="btn-secondary inline-flex items-center justify-center gap-2 px-6 py-3 text-base flex-grow text-center"
             >
-              {l(lang, "Read the contributing guide", "Lire le guide de contribution", "Beitragsleitfaden lesen")}
+              {l(lang, "Contributing Guide", "Guide de contribution", "Beitragsleitfaden")}
             </a>
             <a
               href="https://github.com/clarvia-org"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary inline-flex items-center gap-2 px-6 py-3 text-base"
+              className="btn-secondary inline-flex items-center justify-center gap-2 px-6 py-3 text-base flex-grow text-center"
             >
-              {l(lang, "View our GitHub organisation", "Voir notre organisation GitHub", "GitHub-Organisation ansehen")}
+              {l(lang, "GitHub Organisation", "Organisation GitHub", "GitHub-Organisation")}
             </a>
           </div>
         </section>

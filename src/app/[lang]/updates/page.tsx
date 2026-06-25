@@ -21,29 +21,50 @@ export default function UpdatesPage() {
 
   return (
     <>
-      {/* ═══ Header (matches other pages) ═══ */}
-      <header className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative">
-        <Link href={`/${lang}`} className="block">
+      {/* ═══ Header ═══ */}
+      <header aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf")} className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative">
+        <Link href={`/${lang}`} aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite")} className="block">
           <img src="/clarvia-logo.png" alt="Clarvia" className="h-20 w-auto" />
         </Link>
-        <div className="flex items-center gap-2">
-          {LANGUAGES.map((code) => (
-            <Link
-              key={code}
-              href={`/${code}/updates`}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-                lang === code
-                  ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
-                  : "text-calm-blue-500 hover:bg-white/40"
-              }`}
-            >
-              {code.toUpperCase()}
+        <nav aria-label={l(lang, "Site navigation", "Navigation du site", "Seiten-Navigation")} className="flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
+            <Link href={`/${lang}/checklist`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Checklist", "Checklist", "Checkliste")}
             </Link>
-          ))}
-        </div>
+            <Link href={`/${lang}/about`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "About", "À propos", "Über uns")}
+            </Link>
+            <Link href={`/${lang}/updates`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors font-bold border-b border-calm-blue-600">
+              {l(lang, "Updates", "Actualités", "Aktuelles")}
+            </Link>
+            <Link href={`/${lang}/contribute`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Contribute", "Contribuer", "Mitwirken")}
+            </Link>
+          </div>
+          <div className="flex items-center gap-2">
+            <Link href={`/${lang}/support`} className="btn-secondary inline-flex items-center gap-1.5 px-4 py-2 text-sm mr-3">
+              ♥ {l(lang, "Support", "Soutenir", "Unterstützen")}
+            </Link>
+            {LANGUAGES.map((code) => (
+              <Link
+                key={code}
+                href={`/${code}/updates`}
+                aria-label={l(lang, `Switch to ${code.toUpperCase()}`, `Passer en ${code.toUpperCase()}`, `Zu ${code.toUpperCase()} wechseln`)}
+                aria-current={lang === code ? "page" : undefined}
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  lang === code
+                    ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
+                    : "text-calm-blue-500 hover:bg-white/40"
+                }`}
+              >
+                {code.toUpperCase()}
+              </Link>
+            ))}
+          </div>
+        </nav>
       </header>
 
-      <main className="flex-grow w-full max-w-2xl mx-auto px-4 sm:px-6 py-16 relative z-10">
+      <main className="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 py-16 relative z-10">
 
         {/* ── Page title ── */}
         <h1

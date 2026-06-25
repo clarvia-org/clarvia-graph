@@ -2,20 +2,13 @@
 
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { type Lang, l,LANGUAGES } from "@/lib/i18n";
+import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 
 import HeroSection from "./sections/HeroSection";
 import VideoSection from "./sections/VideoSection";
 import ProblemSection from "./sections/ProblemSection";
 import ChecklistSection from "./sections/ChecklistSection";
-import LuxembourgFocusSection from "./sections/LuxembourgFocusSection";
-import HeritageSection from "./sections/HeritageSection";
-import AccessSection from "./sections/AccessSection";
-import PublicInterestSection from "./sections/PublicInterestSection";
 import TestimonialsSection from "./sections/TestimonialsSection";
-import FoundingSection from "./sections/FoundingSection";
-import StageSection from "./sections/StageSection";
-import TrustSection from "./sections/TrustSection";
 import FormsSection from "./sections/FormsSection";
 import FooterSection from "./sections/FooterSection";
 import LatestUpdatesSection from "./sections/LatestUpdatesSection";
@@ -31,25 +24,41 @@ export default function LandingPage() {
         <Link href={`/${lang}`} aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite")} className="block">
           <img src="/clarvia-logo.png" alt="Clarvia" className="h-20 w-auto" />
         </Link>
-          <nav aria-label={l(lang, "Language switcher", "Sélecteur de langue", "Sprachauswahl")} className="flex items-center gap-2">
-            <a href={`/${lang}/support`} className="btn-secondary inline-flex items-center gap-1.5 px-4 py-2 text-sm mr-3">
-              ♥ {l(lang, "Support", "Soutenir", "Unterstützen")}
-            </a>
-            {LANGUAGES.map((code) => (
-            <Link
-              key={code}
-              href={`/${code}`}
-              aria-label={l(lang, `Switch to ${code.toUpperCase()}`, `Passer en ${code.toUpperCase()}`, `Zu ${code.toUpperCase()} wechseln`)}
-              aria-current={lang === code ? "page" : undefined}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-                lang === code
-                  ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
-                  : "text-calm-blue-500 hover:bg-white/40"
-              }`}
-            >
-              {code.toUpperCase()}
+        <nav aria-label={l(lang, "Site navigation", "Navigation du site", "Seiten-Navigation")} className="flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
+            <Link href={`/${lang}/checklist`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Checklist", "Checklist", "Checkliste")}
             </Link>
-          ))}
+            <Link href={`/${lang}/about`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "About", "À propos", "Über uns")}
+            </Link>
+            <Link href={`/${lang}/updates`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Updates", "Actualités", "Aktuelles")}
+            </Link>
+            <Link href={`/${lang}/contribute`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Contribute", "Contribuer", "Mitwirken")}
+            </Link>
+          </div>
+          <div className="flex items-center gap-2">
+            <Link href={`/${lang}/support`} className="btn-secondary inline-flex items-center gap-1.5 px-4 py-2 text-sm mr-3">
+              ♥ {l(lang, "Support", "Soutenir", "Unterstützen")}
+            </Link>
+            {LANGUAGES.map((code) => (
+              <Link
+                key={code}
+                href={`/${code}`}
+                aria-label={l(lang, `Switch to ${code.toUpperCase()}`, `Passer en ${code.toUpperCase()}`, `Zu ${code.toUpperCase()} wechseln`)}
+                aria-current={lang === code ? "page" : undefined}
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  lang === code
+                    ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
+                    : "text-calm-blue-500 hover:bg-white/40"
+                }`}
+              >
+                {code.toUpperCase()}
+              </Link>
+            ))}
+          </div>
         </nav>
       </header>
 
@@ -58,14 +67,7 @@ export default function LandingPage() {
         <VideoSection lang={lang} />
         <ProblemSection lang={lang} />
         <ChecklistSection lang={lang} />
-        <LuxembourgFocusSection lang={lang} />
-        <HeritageSection lang={lang} />
-        <AccessSection lang={lang} />
-        <PublicInterestSection lang={lang} />
         <TestimonialsSection lang={lang} />
-        <FoundingSection lang={lang} />
-        <StageSection lang={lang} />
-        <TrustSection lang={lang} />
         <FormsSection lang={lang} />
         <LatestUpdatesSection lang={lang} />
       </main>

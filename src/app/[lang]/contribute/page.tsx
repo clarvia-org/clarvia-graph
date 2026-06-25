@@ -5,6 +5,9 @@ import Link from "next/link";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 import FooterSection from "../sections/FooterSection";
+import AccessSection from "../sections/AccessSection";
+import PublicInterestSection from "../sections/PublicInterestSection";
+import TrustSection from "../sections/TrustSection";
 
 export default function ContributePage() {
   const params = useParams();
@@ -12,33 +15,54 @@ export default function ContributePage() {
 
   return (
     <>
-      {/* ═══ Header (matches main page) ═══ */}
-      <header className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative">
-        <Link href={`/${lang}`} className="block">
+      {/* ═══ Header ═══ */}
+      <header aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf")} className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative">
+        <Link href={`/${lang}`} aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite")} className="block">
           <img src="/clarvia-logo.png" alt="Clarvia" className="h-20 w-auto" />
         </Link>
-        <div className="flex items-center gap-2">
-          {LANGUAGES.map((code) => (
-            <Link
-              key={code}
-              href={`/${code}/contribute`}
-              className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-                lang === code
-                  ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
-                  : "text-calm-blue-500 hover:bg-white/40"
-              }`}
-            >
-              {code.toUpperCase()}
+        <nav aria-label={l(lang, "Site navigation", "Navigation du site", "Seiten-Navigation")} className="flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
+            <Link href={`/${lang}/checklist`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Checklist", "Checklist", "Checkliste")}
             </Link>
-          ))}
-        </div>
+            <Link href={`/${lang}/about`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "About", "À propos", "Über uns")}
+            </Link>
+            <Link href={`/${lang}/updates`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
+              {l(lang, "Updates", "Actualités", "Aktuelles")}
+            </Link>
+            <Link href={`/${lang}/contribute`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors font-bold border-b border-calm-blue-600">
+              {l(lang, "Contribute", "Contribuer", "Mitwirken")}
+            </Link>
+          </div>
+          <div className="flex items-center gap-2">
+            <Link href={`/${lang}/support`} className="btn-secondary inline-flex items-center gap-1.5 px-4 py-2 text-sm mr-3">
+              ♥ {l(lang, "Support", "Soutenir", "Unterstützen")}
+            </Link>
+            {LANGUAGES.map((code) => (
+              <Link
+                key={code}
+                href={`/${code}/contribute`}
+                aria-label={l(lang, `Switch to ${code.toUpperCase()}`, `Passer en ${code.toUpperCase()}`, `Zu ${code.toUpperCase()} wechseln`)}
+                aria-current={lang === code ? "page" : undefined}
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  lang === code
+                    ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
+                    : "text-calm-blue-500 hover:bg-white/40"
+                }`}
+              >
+                {code.toUpperCase()}
+              </Link>
+            ))}
+          </div>
+        </nav>
       </header>
 
-      <main className="flex-grow w-full max-w-2xl mx-auto px-4 sm:px-6 py-16 relative z-10">
+      <main className="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 py-16 relative z-10">
 
         {/* ── Title ── */}
         <h1
-          className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6"
+          className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6 text-center"
           style={headlineStyle}
         >
           {l(lang,
@@ -49,7 +73,7 @@ export default function ContributePage() {
         </h1>
 
         {/* ── What is Clarvia ── */}
-        <p className="text-base sm:text-lg text-calm-blue-600 leading-relaxed mb-4">
+        <p className="text-base sm:text-lg text-calm-blue-600 leading-relaxed mb-4 text-center">
           {l(lang,
             "Clarvia is a Luxembourg non-profit building a free, multilingual bereavement guide for families after the loss of a loved one. Every contribution — however small — makes that guidance more accurate, more accessible, and more trustworthy.",
             "Clarvia est une association sans but lucratif luxembourgeoise qui développe un guide gratuit et multilingue pour accompagner les familles en deuil. Chaque contribution, même modeste, rend ce guide plus précis, plus accessible et plus fiable.",
@@ -58,7 +82,7 @@ export default function ContributePage() {
         </p>
 
         {/* ── Non-coder note ── */}
-        <p className="text-sm font-medium text-calm-blue-500 mb-10">
+        <p className="text-sm font-medium text-calm-blue-500 mb-12 text-center">
           {l(lang,
             "No coding experience required. All contributions are welcome.",
             "Aucune expérience en programmation n'est requise. Toutes les contributions sont les bienvenues.",
@@ -67,11 +91,11 @@ export default function ContributePage() {
         </p>
 
         {/* ── Ways to help ── */}
-        <h2 className="text-xl font-semibold text-calm-blue-800 mb-4" style={{ fontFamily: headlineStyle.fontFamily }}>
+        <h2 className="text-2xl font-semibold text-calm-blue-800 mb-4" style={{ fontFamily: headlineStyle.fontFamily }}>
           {l(lang, "Ways you can help", "Comment vous pouvez contribuer", "So können Sie helfen")}
         </h2>
 
-        <ul className="space-y-4 mb-12">
+        <ul className="space-y-4 mb-8">
           {[
             {
               icon: "🔍",
@@ -128,13 +152,12 @@ export default function ContributePage() {
         </ul>
 
         {/* ── CTAs ── */}
-      {/* ── CTAs ── */}
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 mb-16">
           <a
             href="https://github.com/clarvia-org/workflow-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary inline-flex items-center gap-2 px-6 py-3 text-base"
+            className="btn-primary inline-flex items-center justify-center gap-2 px-6 py-3 text-base flex-grow text-center"
           >
             {l(lang,
               "Browse good first issues",
@@ -146,7 +169,7 @@ export default function ContributePage() {
             href="https://github.com/clarvia-org/.github/blob/main/CONTRIBUTING.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary inline-flex items-center gap-2 px-6 py-3 text-base"
+            className="btn-secondary inline-flex items-center justify-center gap-2 px-6 py-3 text-base flex-grow text-center"
           >
             {l(lang,
               "Read the contributing guide",
@@ -154,6 +177,12 @@ export default function ContributePage() {
               "Beitragsleitfaden lesen"
             )}
           </a>
+        </div>
+
+        <div className="space-y-16">
+          <AccessSection lang={lang} />
+          <PublicInterestSection lang={lang} />
+          <TrustSection lang={lang} />
         </div>
 
       </main>
