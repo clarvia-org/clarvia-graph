@@ -1,12 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { type Lang, l } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 
 export default function VideoSection({ lang }: { lang: Lang }) {
-  const [isPlaying, setIsPlaying] = useState(false);
-
   return (
     <section className="mb-20">
       <div className="glass-panel p-8 sm:p-12">
@@ -30,60 +27,27 @@ export default function VideoSection({ lang }: { lang: Lang }) {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://www.youtube.com/channel/UCQt8JlIa-fBlV9s4_6hHsAg/"
+                href="https://www.youtube.com/playlist?list=PLPvk31TQlhyg"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary px-6 py-3 text-base inline-flex items-center gap-2"
               >
                 <span>📺</span>
-                {l(lang, "Subscribe on YouTube", "S'abonner sur YouTube", "Auf YouTube abonnieren")}
+                {l(lang, "Watch Playlist on YouTube", "Voir la playlist sur YouTube", "Playlist auf YouTube ansehen")}
               </a>
             </div>
           </div>
 
           {/* Video player - Right on desktop */}
           <div className="md:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-[280px] aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-white/50 bg-slate-900 group">
-              {!isPlaying ? (
-                <button
-                  onClick={() => setIsPlaying(true)}
-                  className="absolute inset-0 w-full h-full flex flex-col items-center justify-center cursor-pointer group/btn"
-                  aria-label="Play video"
-                >
-                  {/* Thumbnail Image */}
-                  <img
-                    src="https://img.youtube.com/vi/qMbWLmpjJMA/hqdefault.jpg"
-                    alt="YouTube Video Thumbnail"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  {/* Dark Overlay */}
-                  <div className="absolute inset-0 bg-black/35 group-hover:bg-black/20 transition-colors duration-300" />
-                  
-                  {/* Play Button Icon Container */}
-                  <div className="relative z-10 w-16 h-16 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-lg transform transition-all duration-300 group-hover/btn:scale-110 group-hover/btn:bg-white">
-                    {/* SVG Triangle Play Icon */}
-                    <svg
-                      className="w-6 h-6 text-calm-lilac-600 fill-current translate-x-0.5"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  
-                  {/* Watch short label */}
-                  <span className="relative z-10 mt-4 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-sm text-xs font-semibold text-white tracking-wider uppercase border border-white/10 group-hover:bg-black/80 transition-colors">
-                    {l(lang, "Watch Short", "Voir le Short", "Short ansehen")}
-                  </span>
-                </button>
-              ) : (
-                <iframe
-                  src="https://www.youtube-nocookie.com/embed/qMbWLmpjJMA?autoplay=1&rel=0"
-                  title="Clarvia - Follow Our Journey"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full border-0"
-                />
-              )}
+            <div className="relative w-full max-w-[280px] aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-white/50 bg-slate-900">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLPvk31TQlhyg&autoplay=1&mute=1&rel=0"
+                title="Clarvia - Follow Our Journey"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full border-0"
+              />
             </div>
           </div>
           
