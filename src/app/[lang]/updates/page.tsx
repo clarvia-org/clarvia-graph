@@ -118,7 +118,7 @@ export default function UpdatesPage() {
 
               {/* Body */}
               {update.body && (
-                <p className="text-sm sm:text-base text-calm-blue-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-calm-blue-600 leading-relaxed whitespace-pre-line">
                   {update.body[lang]}
                 </p>
               )}

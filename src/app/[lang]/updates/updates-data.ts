@@ -75,6 +75,19 @@ export const UPDATES: Update[] = [
     },
   },
   {
+    date: "2026-06-10",
+    headline: {
+      en: "Clarvia's review team grows with a new organisation member",
+      fr: "L’équipe de relecture de Clarvia s’agrandit avec un nouveau membre",
+      de: "Das Review-Team von Clarvia wächst um ein neues Mitglied",
+    },
+    body: {
+      en: "Clarvia has welcomed a new member to the organisation and the reviewers team. The new reviewer brings independent oversight to pull requests on clarvia-graph, strengthening the project's code review process - a key factor in Clarvia's OpenSSF Scorecard rating. Since joining, the reviewer has approved pull requests covering documentation, CI hardening, refactoring, test coverage, and security fixes. Every Clarvia pull request now benefits from an independent review before merging.",
+      fr: "Clarvia accueille un nouveau membre au sein de l’organisation et de son équipe de relecture. Ce nouveau reviewer apporte un regard indépendant sur les pull requests du dépôt clarvia-graph, ce qui renforce le processus de revue de code du projet. C’est aussi un élément important pour l’évaluation OpenSSF Scorecard de Clarvia.\n\nDepuis son arrivée, il a approuvé des pull requests portant sur la documentation, le renforcement de la CI, le refactoring, la couverture de tests et les correctifs de sécurité. Désormais, chaque pull request Clarvia bénéficie d’une relecture indépendante avant d’être fusionnée.",
+      de: "Clarvia hat ein neues Mitglied in der Organisation und im Review-Team aufgenommen. Der neue Reviewer bringt eine unabhängige Prüfung der Pull Requests im Repository clarvia-graph ein und stärkt damit den Code-Review-Prozess des Projekts. Das ist zugleich ein wichtiger Faktor für die OpenSSF-Scorecard-Bewertung von Clarvia.\n\nSeit seinem Einstieg hat der Reviewer Pull Requests zu Dokumentation, CI-Härtung, Refactoring, Testabdeckung und Sicherheitskorrekturen freigegeben. Damit profitiert nun jeder Pull Request bei Clarvia vor dem Merge von einer unabhängigen Überprüfung.",
+    },
+  },
+  {
     date: "2026-06-08",
     headline: {
       en: "Continuous code quality analysis via SonarCloud",
