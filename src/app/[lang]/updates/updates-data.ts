@@ -10,6 +10,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-06-26",
+    headline: {
+      en: "Clarvia submits project proposal for a free Belgian bereavement guide",
+      fr: "Clarvia soumet un projet pour créer un guide belge gratuit sur les démarches après un décès",
+      de: "Clarvia reicht Projektantrag für einen kostenlosen belgischen Leitfaden nach einem Todesfall ein",
+    },
+    body: {
+      en: "Clarvia has submitted a project proposal to a Belgian philanthropic fund to create a free, practical guide to the first administrative steps after a death in Belgium. The project runs from October 2026 to January 2027. Clarvia finances 45% of the total project cost itself, and the directors contribute their time on an unpaid, voluntary basis on top of that. The guide will cover civil registration, banks, health insurance, pensions, housing, and succession - adapted for Wallonia, Flanders, Brussels, and the German-speaking community. If funded, this will be Clarvia's first expansion beyond Luxembourg.",
+      fr: "Clarvia a soumis une demande de soutien à un fonds philanthropique belge afin de créer un guide gratuit et pratique consacré aux premières démarches administratives après un décès en Belgique. Le projet se déroulera d'octobre 2026 à janvier 2027. Clarvia finance elle-même 45 % du coût total du projet, en plus du temps consacré bénévolement et sans rémunération par les administrateurs. Le guide couvrira l'état civil, les banques, les mutualités, les pensions, le logement et la succession, avec une adaptation pour la Wallonie, la Flandre, Bruxelles et la communauté germanophone. Si le projet est soutenu, il s'agira de la première extension de Clarvia au-delà du Luxembourg.",
+      de: "Clarvia hat bei einem belgischen gemeinnützigen Fonds einen Förderantrag eingereicht, um einen kostenlosen und praktischen Leitfaden zu den ersten administrativen Schritten nach einem Todesfall in Belgien zu erstellen. Das Projekt läuft von Oktober 2026 bis Januar 2027. Clarvia finanziert 45 % der gesamten Projektkosten selbst. Zusätzlich bringen die Vorstandsmitglieder ihre Zeit unbezahlt und ehrenamtlich ein. Der Leitfaden wird Personenstandsangelegenheiten, Banken, Krankenversicherung, Renten, Wohnen und Erbschaft abdecken und für Wallonien, Flandern, Brüssel sowie die Deutschsprachige Gemeinschaft angepasst. Im Falle einer Förderung wäre dies die erste Erweiterung von Clarvia über Luxemburg hinaus.",
+    },
+  },
+  {
     date: "2026-06-25",
     headline: {
       en: "Clarvia YouTube channel launched",
