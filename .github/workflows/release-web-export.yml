@@ -35,7 +35,7 @@ jobs:
           tar -czf ../../../clarvia-web-export-${{ github.event.release.tag_name }}.tar.gz .
 
       - name: Attest build provenance
-        uses: actions/attest-build-provenance@a2bbfa25375fe432b6a289bc6b6cd05ecd0c4c32 # v4.1.0
+        uses: actions/attest-build-provenance@0f67c3f4856b2e3261c31976d6725780e5e4c373 # v4.1.1
         with:
           subject-path: clarvia-web-export-${{ github.event.release.tag_name }}.tar.gz
 
