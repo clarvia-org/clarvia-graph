@@ -69,7 +69,6 @@ export async function POST(req: NextRequest) {
       // Subscription via Checkout
       const session = await stripe.checkout.sessions.create({
         mode: "subscription",
-        payment_method_types: ["card"],
         metadata: { donation_type: "monthly" },
         line_items: [
           {
@@ -94,7 +93,6 @@ export async function POST(req: NextRequest) {
       // One-time payment via Checkout
       const session = await stripe.checkout.sessions.create({
         mode: "payment",
-        payment_method_types: ["card"],
         customer_creation: "always",
         metadata: { donation_type: "onetime" },
         line_items: [

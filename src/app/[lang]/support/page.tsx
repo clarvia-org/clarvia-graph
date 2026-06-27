@@ -4,7 +4,7 @@ import { useState, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
-import { headlineStyle } from "../data";
+import { headlineStyle, TESTIMONIALS } from "../data";
 import FooterSection from "../sections/FooterSection";
 
 /* -- Donation tier data -- */
@@ -31,12 +31,12 @@ function getOnetimeTiers(lang: Lang) {
 
 function getFundItems(lang: Lang) {
   return [
-    { icon: "\u{1F4C4}", label: l(lang, "Source review and maintenance", "Vérification et maintenance des sources", "Quellenprüfung und Pflege") },
-    { icon: "\u{1F30D}", label: l(lang, "Translation in English, French, and German", "Traduction en anglais, français et allemand", "Übersetzung auf Englisch, Französisch und Deutsch") },
-    { icon: "\u267F", label: l(lang, "Accessibility toward WCAG 2.2 AA", "Accessibilité conforme à l'objectif WCAG 2.2 AA", "Barrierefreiheit mit Ziel WCAG 2.2 AA") },
-    { icon: "\u2713", label: l(lang, "Workflow validation", "Validation des parcours", "Validierung der Abläufe") },
-    { icon: "\u{1F5A5}\uFE0F", label: l(lang, "Hosting and infrastructure", "Hébergement et infrastructure", "Hosting und Infrastruktur") },
-    { icon: "\u{1F91D}", label: l(lang, "Community outreach", "Sensibilisation et échanges avec la communauté", "Öffentlichkeitsarbeit und Austausch mit der Community") },
+    { icon: "\u{1F4C4}", label: l(lang, "keep the checklists free for everyone", "garder les listes de démarches gratuites pour tous", "die Checklisten für alle kostenlos halten") },
+    { icon: "\u{1F5A5}\uFE0F", label: l(lang, "explain difficult admin tasks in plain language", "expliquer les démarches administratives complexes dans un langage simple", "schwierige administrative Aufgaben in verständlicher Sprache erklären") },
+    { icon: "\u{1F30D}", label: l(lang, "translate the guidance into more languages", "traduire les conseils dans plus de langues", "die Orientierungshilfen in weitere Sprachen übersetzen") },
+    { icon: "\u267F", label: l(lang, "make the resources easier to read and use", "rendre les ressources plus faciles à lire et à utiliser", "die Materialien einfacher zu lesen und zu nutzen machen") },
+    { icon: "\u2713", label: l(lang, "keep the information reviewed and up to date", "maintenir les informations vérifiées et à jour", "die Informationen geprüft und auf dem neuesten Stand halten") },
+    { icon: "\u{1F91D}", label: l(lang, "help more families find support when they need it", "aider plus de familles à trouver du soutien au moment où elles en ont besoin", "mehr Familien helfen, Unterstützung zu finden, wenn sie sie brauchen") },
   ];
 }
 
@@ -94,6 +94,9 @@ export default function SupportPage() {
   const [isCustom, setIsCustom] = useState(false);
   const [customAmount, setCustomAmount] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [copiedField, setCopiedField] = useState<string | null>(null);
+  const [showBankDetails, setShowBankDetails] = useState(false);
 
   // Reset "Redirecting..." state when user navigates back from Stripe
   useEffect(() => {
@@ -105,6 +108,20 @@ export default function SupportPage() {
     document.addEventListener("visibilitychange", handleVisibilityChange);
     return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
   }, []);
+
+  // Goal progress animation on load
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setProgress((3800 / 10000) * 100);
+    }, 100);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleCopy = (text: string, field: string) => {
+    navigator.clipboard.writeText(text);
+    setCopiedField(field);
+    setTimeout(() => setCopiedField(null), 2000);
+  };
 
   const tiers = tab === "monthly" ? getMonthlyTiers(lang) : getOnetimeTiers(lang);
   const activeAmount = isCustom ? (Number(customAmount) || 0) : selectedAmount;
@@ -180,331 +197,409 @@ export default function SupportPage() {
         </nav>
       </header>
 
-      <main className="flex-grow w-full max-w-2xl mx-auto px-4 sm:px-6 py-16 relative z-10">
+      <main className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 relative z-10">
 
         {/* Thank-you banner after successful donation */}
         <Suspense fallback={null}>
           <ThankYouBanner lang={lang} />
         </Suspense>
 
-        {/* A. Hero */}
-        <h1
-          className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6"
-          style={headlineStyle}
-        >
-          {l(lang, "Support Clarvia", "Soutenir Clarvia", "Clarvia unterstützen")}
-        </h1>
-        <p className="text-lg text-calm-blue-600 leading-relaxed mb-4">
-          {l(lang, "Help build a free, multilingual public service for families after the loss of a loved one.", "Aidez-nous à créer un service public gratuit et multilingue pour accompagner les familles après la perte d’un proche.", "Helfen Sie mit, einen kostenlosen, mehrsprachigen öffentlichen Dienst für Familien nach dem Verlust eines nahestehenden Menschen aufzubauen.")}
-        </p>
-        <p className="text-base text-calm-blue-500 leading-relaxed mb-12">
-          {l(lang, "Clarvia is in its build and validation phase. Your early support helps us lay the foundation: reviewing official sources, translating guidance, improving accessibility, and building trustworthy workflows that families can use for free.", "Clarvia est actuellement en phase de développement et de validation. Votre soutien précoce nous aide à poser les bases du projet : vérifier les sources officielles, traduire les informations, améliorer l’accessibilité et mettre en place des parcours fiables que les familles pourront utiliser gratuitement.", "Clarvia befindet sich derzeit in der Entwicklungs- und Validierungsphase. Ihre frühe Unterstützung hilft uns, das Fundament zu legen: offizielle Quellen zu prüfen, Informationen zu übersetzen, die Barrierefreiheit zu verbessern und vertrauenswürdige Abläufe aufzubauen, die Familien kostenlos nutzen können.")}
-        </p>
+        {/* 2-Column Split Container */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
 
-        {/* B. What your donation funds */}
-        <section className="mb-12" aria-labelledby="funds-heading">
+          {/* LEFT COLUMN: Hero text, image, progress bar, what donations fund */}
+          <div className="lg:col-span-7 space-y-8">
+            <div className="space-y-4">
+              <h1
+                className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4"
+                style={headlineStyle}
+              >
+                {l(lang, "Support Clarvia", "Soutenir Clarvia", "Clarvia unterstützen")}
+              </h1>
+              <p className="text-lg text-calm-blue-600 leading-relaxed font-semibold">
+                {l(lang,
+                  "When a loved one dies, families are often expected to handle paperwork, institutions, deadlines, and cross-border questions while they are still grieving.",
+                  "Lorsqu’un proche décède, les familles doivent souvent s’occuper de démarches administratives, contacter des institutions, respecter des délais et parfois gérer des questions entre plusieurs pays, alors même qu’elles traversent une période difficile.",
+                  "Wenn ein geliebter Mensch stirbt, müssen Familien oft Formulare, Behörden, Fristen und manchmal auch grenzüberschreitende Fragen klären, während sie noch mitten in der Trauer stehen."
+                )}
+              </p>
+              <p className="text-base text-calm-blue-500 leading-relaxed">
+                {l(lang,
+                  "The information exists, but it is scattered across official websites, different jurisdictions, and unclear procedures. Clarvia turns that complexity into free, open-source checklists that show what to do first, what each step unlocks, and what deadlines matter most.",
+                  "Les informations existent, mais elles sont dispersées sur des sites officiels, dans différentes administrations et dans des procédures souvent peu claires. Clarvia transforme cette complexité en listes d’étapes gratuites et open source, qui expliquent quoi faire en premier, quelles démarches en débloquent d’autres et quels délais sont les plus importants.",
+                  "Die Informationen gibt es, aber sie sind über offizielle Websites, verschiedene Zuständigkeiten und oft unklare Abläufe verstreut. Clarvia macht daraus kostenlose Open-Source-Checklisten, die zeigen, was zuerst zu tun ist, welche Schritte andere ermöglichen und welche Fristen besonders wichtig sind."
+                )}
+              </p>
+              <p className="text-base text-calm-blue-500 leading-relaxed">
+                {l(lang,
+                  "Your donation helps make this practical guidance available to everyone, not only to those who can afford lawyers, consultants, or private support.",
+                  "Votre don nous aide à rendre ces informations pratiques accessibles à toutes et tous, pas seulement aux personnes qui peuvent faire appel à des avocats, des consultants ou un accompagnement privé.",
+                  "Ihre Spende hilft dabei, diese praktische Orientierung für alle zugänglich zu machen, nicht nur für Menschen, die sich Anwälte, Berater oder private Unterstützung leisten können."
+                )}
+              </p>
+              <p className="text-base text-calm-blue-500 leading-relaxed italic">
+                {l(lang,
+                  "Most of us will face this responsibility at some point. No one should have to figure it out alone.",
+                  "La plupart d’entre nous devront un jour faire face à ces responsabilités. Personne ne devrait avoir à s’y retrouver seul.",
+                  "Die meisten von uns werden irgendwann vor dieser Aufgabe stehen. Niemand sollte damit allein sein."
+                )}
+              </p>
+            </div>
+
+            {/* Hero Image */}
+            <div className="overflow-hidden rounded-2xl shadow-md border border-white/60 bg-slate-100">
+              <img
+                src="/support-hero.png"
+                alt={l(lang, "Clarvia Support", "Soutien Clarvia", "Clarvia Unterstützung")}
+                className="w-full h-auto object-cover aspect-[16/9]"
+              />
+            </div>
+
+            {/* Funding goal progress */}
+            <div className="glass-panel p-5">
+              <div className="flex items-baseline justify-between mb-2">
+                <p className="text-sm font-semibold text-calm-blue-800">
+                  {l(lang, "Current goal", "Objectif actuel", "Aktuelles Ziel")}
+                </p>
+                <p className="text-xs text-calm-blue-400">
+                  {l(lang, "Updated weekly", "Mis à jour chaque semaine", "Wöchentlich aktualisiert")}
+                </p>
+              </div>
+              <div className="w-full h-3 rounded-full bg-calm-blue-100/80 overflow-hidden mb-2">
+                <div
+                  className="h-full rounded-full transition-all duration-1000 ease-out"
+                  style={{
+                    width: `${progress}%`,
+                    background: "linear-gradient(135deg, #4479e1, #7c6cbb)",
+                  }}
+                />
+              </div>
+              <div className="flex items-baseline justify-between">
+                <p className="text-lg font-semibold text-calm-blue-800">
+                  &euro;3,800 <span className="text-sm font-normal text-calm-blue-400">{l(lang, "raised", "collectés", "gesammelt")}</span>
+                </p>
+                <p className="text-sm text-calm-blue-500">
+                  {l(lang, "of \u20AC10,000 goal", "sur un objectif de 10 000 \u20AC", "von 10.000 \u20AC")}
+                </p>
+              </div>
+            </div>
+
+            {/* What your donation funds */}
+            <div>
+              <h2
+                className="text-xl font-semibold text-calm-blue-800 mb-4"
+                style={{ fontFamily: headlineStyle.fontFamily }}
+              >
+                {l(lang, "Your donation helps us:", "Votre don nous aide à :", "Ihre Spende hilft uns:")}
+              </h2>
+              <div className="grid grid-cols-2 gap-3">
+                {getFundItems(lang).map((item) => (
+                  <div
+                    key={item.label}
+                    className="glass-panel p-4 text-center hover:scale-[1.01] transition-transform duration-200"
+                  >
+                    <div className="w-10 h-10 mx-auto bg-white/50 rounded-full flex items-center justify-center mb-2 shadow-sm border border-white/60">
+                      <span className="text-xl block" aria-hidden="true">{item.icon}</span>
+                    </div>
+                    <p className="text-xs font-semibold text-calm-blue-700">
+                      {item.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+
+          {/* RIGHT COLUMN: Donation Selector Card */}
+          <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-8">
+            <div className="glass-panel p-6 border border-white/80 shadow-lg">
+              <h2
+                className="text-xl font-semibold text-calm-blue-800 mb-4"
+                style={{ fontFamily: headlineStyle.fontFamily }}
+              >
+                {l(lang, "Select Donation Amount", "Sélectionner le montant", "Spendenbetrag wählen")}
+              </h2>
+
+              {/* Tab toggle */}
+              <div className="flex gap-1 p-1 rounded-full bg-calm-blue-100/60 mb-4 w-full">
+                <button
+                  onClick={() => { setTab("monthly"); setSelectedAmount(25); setIsCustom(false); setCustomAmount(""); }}
+                  className={`flex-1 text-center py-2 rounded-full text-sm font-medium transition-all cursor-pointer ${
+                    tab === "monthly"
+                      ? "bg-white text-calm-blue-800 shadow-sm"
+                      : "text-calm-blue-500 hover:text-calm-blue-700"
+                  }`}
+                >
+                  {l(lang, "Monthly", "Mensuel", "Monatlich")}
+                </button>
+                <button
+                  onClick={() => { setTab("onetime"); setSelectedAmount(75); setIsCustom(false); setCustomAmount(""); }}
+                  className={`flex-1 text-center py-2 rounded-full text-sm font-medium transition-all cursor-pointer ${
+                    tab === "onetime"
+                      ? "bg-white text-calm-blue-800 shadow-sm"
+                      : "text-calm-blue-500 hover:text-calm-blue-700"
+                  }`}
+                >
+                  {l(lang, "One-time", "Ponctuel", "Einmalig")}
+                </button>
+              </div>
+
+              {/* Tier cards */}
+              <div className="grid gap-3 grid-cols-2 mb-4">
+                {tiers.map((tier) => (
+                  <button
+                    key={tier.amount}
+                    onClick={() => { setSelectedAmount(tier.amount); setIsCustom(false); }}
+                    className={`glass-panel p-3 text-left cursor-pointer transition-all ${
+                      !isCustom && selectedAmount === tier.amount
+                        ? "ring-2 ring-calm-lilac-400 border-calm-lilac-300 bg-white"
+                        : "hover:ring-1 hover:ring-calm-blue-200"
+                    }`}
+                  >
+                    <p className="text-xl font-semibold text-calm-blue-800">
+                      &euro;{tier.amount.toLocaleString()}
+                      {tab === "monthly" && (
+                        <span className="text-xs font-normal text-calm-blue-400">
+                          {l(lang, "/mo", "/mois", "/Monat")}
+                        </span>
+                      )}
+                    </p>
+                    <p className="text-xs text-calm-blue-500 mt-1 leading-snug">
+                      {tier.label}
+                    </p>
+                  </button>
+                ))}
+
+                {/* Custom amount */}
+                <button
+                  onClick={() => setIsCustom(true)}
+                  className={`glass-panel p-3 text-left cursor-pointer transition-all col-span-2 ${
+                    isCustom
+                      ? "ring-2 ring-calm-lilac-400 border-calm-lilac-300 bg-white"
+                      : "hover:ring-1 hover:ring-calm-blue-200"
+                  }`}
+                >
+                  {isCustom ? (
+                    <div className="flex items-center gap-2">
+                      <span className="text-xl font-semibold text-calm-blue-800">&euro;</span>
+                      <input
+                        type="number"
+                        min="1"
+                        max="100000"
+                        step="1"
+                        autoFocus
+                        value={customAmount}
+                        onChange={(e) => setCustomAmount(e.target.value)}
+                        onClick={(e) => e.stopPropagation()}
+                        placeholder={l(lang, "Enter amount", "Saisir un montant", "Betrag eingeben")}
+                        className="w-full text-xl font-semibold text-calm-blue-800 bg-transparent outline-none placeholder:text-calm-blue-300 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                      />
+                      {tab === "monthly" && customAmount && (
+                        <span className="text-xs font-normal text-calm-blue-400 whitespace-nowrap">{l(lang, "/mo", "/mois", "/Monat")}</span>
+                      )}
+                    </div>
+                  ) : (
+                    <p className="text-xl font-semibold text-calm-blue-800">
+                      {l(lang, "Custom amount", "Montant libre", "Freier Betrag")}
+                    </p>
+                  )}
+                  <p className="text-xs text-calm-blue-500 mt-1">
+                    {l(lang, "Choose your own amount", "Choisissez votre propre montant", "Wählen Sie Ihren eigenen Betrag")}
+                  </p>
+                </button>
+              </div>
+
+              {/* Pay with card button */}
+              <div className="text-center">
+                <button
+                  onClick={handleCardPayment}
+                  disabled={isProcessing || !isValidAmount}
+                  className={`btn-primary w-full py-3.5 text-base flex justify-center items-center gap-2 ${
+                    isProcessing || !isValidAmount ? "opacity-60 cursor-not-allowed" : ""
+                  }`}
+                >
+                  {isProcessing
+                    ? l(lang, "Redirecting...", "Redirection...", "Weiterleitung...")
+                    : isValidAmount
+                      ? l(lang,
+                          `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""}`,
+                          `Donner ${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/mois" : ""}`,
+                          `${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/Monat" : ""} spenden`
+                        )
+                      : l(lang, "Enter an amount", "Saisir un montant", "Betrag eingeben")
+                  }
+                </button>
+              </div>
+
+              {/* Manage existing subscription */}
+              <div className="mt-4 text-center">
+                <p className="text-xs text-calm-blue-400">
+                  {l(lang, "Already a monthly supporter?", "Vous êtes déjà donateur mensuel ?", "Sie unterstützen uns bereits monatlich?")}{" "}
+                  <a
+                    href="https://billing.stripe.com/p/login/cNieVd5j90I9dOs2d3b3q00"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-calm-lilac-500 hover:text-calm-lilac-600 underline underline-offset-2 transition-colors"
+                  >
+                    {l(lang, "Manage your donation", "Gérer votre don", "Spende verwalten")}
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            {/* Bank transfer details card */}
+            <div className="glass-panel p-4 border border-white/60 text-center">
+              <button
+                onClick={() => setShowBankDetails(!showBankDetails)}
+                className="w-full text-sm font-medium text-calm-blue-600 hover:text-calm-blue-800 transition-colors flex items-center justify-center gap-1.5 cursor-pointer outline-none"
+              >
+                <span>{showBankDetails ? "▼" : "▶"}</span>
+                {l(lang, "Prefer a bank transfer?", "Vous préférez un virement bancaire ?", "Lieber per Banküberweisung spenden?")}
+              </button>
+
+              {showBankDetails && (
+                <div className="mt-4 text-left border-t border-calm-blue-100/50 pt-4 animate-fadeIn">
+                  <div className="space-y-2.5 text-xs font-mono bg-white/50 border border-calm-blue-100 rounded-xl p-3.5">
+
+                    {/* IBAN Row */}
+                    <div className="flex justify-between items-center gap-2">
+                      <div className="overflow-x-auto scrollbar-none">
+                        <span className="font-semibold font-sans text-calm-blue-500 mr-1">IBAN:</span>
+                        <span className="tracking-wider select-all">LT09 3500 0100 1903 8740</span>
+                      </div>
+                      <button
+                        onClick={() => handleCopy("LT09 3500 0100 1903 8740", "iban")}
+                        className="flex-shrink-0 text-[10px] px-2 py-1 rounded bg-calm-blue-100 hover:bg-calm-blue-200 text-calm-blue-700 transition-colors font-sans font-medium"
+                      >
+                        {copiedField === "iban" ? l(lang, "Copied!", "Copié !", "Kopiert!") : l(lang, "Copy", "Copier", "Kopieren")}
+                      </button>
+                    </div>
+
+                    {/* BIC Row */}
+                    <div className="flex justify-between items-center gap-2">
+                      <div>
+                        <span className="font-semibold font-sans text-calm-blue-500 mr-1">BIC/SWIFT:</span>
+                        <span className="select-all">EVIULT2VXXX</span>
+                      </div>
+                      <button
+                        onClick={() => handleCopy("EVIULT2VXXX", "bic")}
+                        className="flex-shrink-0 text-[10px] px-2 py-1 rounded bg-calm-blue-100 hover:bg-calm-blue-200 text-calm-blue-700 transition-colors font-sans font-medium"
+                      >
+                        {copiedField === "bic" ? l(lang, "Copied!", "Copié !", "Kopiert!") : l(lang, "Copy", "Copier", "Kopieren")}
+                      </button>
+                    </div>
+
+                    {/* Suggested Reference Row */}
+                    <div className="flex justify-between items-center gap-2">
+                      <div className="overflow-x-auto scrollbar-none">
+                        <span className="font-semibold font-sans text-calm-blue-500 mr-1">Ref:</span>
+                        <span className="select-all">CLARVIA-SUPPORT</span>
+                      </div>
+                      <button
+                        onClick={() => handleCopy("CLARVIA-SUPPORT", "ref")}
+                        className="flex-shrink-0 text-[10px] px-2 py-1 rounded bg-calm-blue-100 hover:bg-calm-blue-200 text-calm-blue-700 transition-colors font-sans font-medium"
+                      >
+                        {copiedField === "ref" ? l(lang, "Copied!", "Copié !", "Kopiert!") : l(lang, "Copy", "Copier", "Kopieren")}
+                      </button>
+                    </div>
+
+                    {/* Text values */}
+                    <div className="text-[11px] font-sans text-calm-blue-600 space-y-1 pt-1.5 border-t border-calm-blue-100/50">
+                      <p><span className="font-medium text-calm-blue-500">{l(lang, "Holder:", "Titulaire :", "Inhaber:")}</span> Clarvia ASBL</p>
+                      <p><span className="font-medium text-calm-blue-500">RCS:</span> F15680</p>
+                      <p><span className="font-medium text-calm-blue-500">{l(lang, "Bank:", "Banque :", "Bank:")}</span> Paysera LT, UAB</p>
+                    </div>
+
+                  </div>
+
+                  <p className="text-[11px] text-calm-blue-400 mt-2.5 leading-snug">
+                    {l(lang,
+                      "Use CLARVIA-SUPPORT and your email as the payment reference so we can send an acknowledgement.",
+                      "Utilisez CLARVIA-SUPPORT et votre e-mail comme référence pour nous permettre de vous envoyer un accusé de réception.",
+                      "Verwenden Sie CLARVIA-SUPPORT und Ihre E-Mail als Referenz, damit wir Ihnen eine Bestätigung senden können."
+                    )}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* GitHub Sponsors card */}
+            <div className="glass-panel p-5 border border-white/60">
+              <h3 className="text-base font-semibold text-calm-blue-800 mb-2">
+                {l(lang, "Sponsor on GitHub", "Sponsoriser sur GitHub", "Auf GitHub sponsern")}
+              </h3>
+              <p className="text-xs text-calm-blue-500 leading-normal mb-3">
+                {l(lang,
+                  "Sponsor Clarvia's open-source workflow data and core public infrastructure via GitHub Sponsors.",
+                  "Soutenez les données de parcours open source et l'infrastructure publique de Clarvia via GitHub Sponsors.",
+                  "Unterstützen Sie Clarvias Open-Source-Ablaufdaten und die öffentliche Infrastruktur über GitHub Sponsors."
+                )}
+              </p>
+              <a
+                href="https://github.com/sponsors/clarvia-org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary w-full py-2.5 text-sm inline-flex items-center justify-center gap-2"
+              >
+                <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" /></svg>
+                {l(lang, "Sponsor on GitHub", "Sponsoriser sur GitHub", "Auf GitHub sponsern")}
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Testimonials block */}
+        <section className="mt-16 pt-12 border-t border-calm-blue-200/50" aria-labelledby="testimonials-heading">
           <h2
-            id="funds-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-2"
+            id="testimonials-heading"
+            className="text-2xl font-semibold text-center text-calm-blue-800 mb-2"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
-            {l(lang, "What your donation funds", "À quoi sert votre don", "Was Ihre Spende ermöglicht")}
-          </h2>
-          <p className="text-sm text-calm-blue-500 mb-4">
             {l(lang,
-              "Every donation goes directly toward building a practical, free public service that reduces confusion and stress after a loss.",
-              "Chaque don contribue directement à la construction d'un service public gratuit et pratique qui aide les familles après la perte d'un proche.",
-              "Jede Spende fliesst direkt in den Aufbau eines kostenlosen öffentlichen Dienstes, der Familien nach dem Verlust eines Angehörigen unterstützt."
+              "Why people support our mission",
+              "Pourquoi certains soutiennent notre mission",
+              "Warum Menschen unsere Mission unterstützen"
+            )}
+          </h2>
+          <p className="text-sm text-calm-blue-500 text-center max-w-2xl mx-auto mb-10 leading-relaxed">
+            {l(lang,
+              "Clarvia is built around real feedback from families navigating administrative challenges after a loss.",
+              "Clarvia est construit à partir de retours réels de familles confrontées aux démarches administratives après un décès.",
+              "Clarvia basiert auf realem Feedback von Familien, die nach einem Verlust administrative Hürden bewältigen mussten."
             )}
           </p>
 
-          {/* Funding goal progress */}
-          <div className="glass-panel p-5 mb-6">
-            <div className="flex items-baseline justify-between mb-2">
-              <p className="text-sm font-semibold text-calm-blue-800">
-                {l(lang, "Current goal", "Objectif actuel", "Aktuelles Ziel")}
-              </p>
-              <p className="text-xs text-calm-blue-400">
-                {l(lang, "Updated weekly", "Mis à jour chaque semaine", "Wöchentlich aktualisiert")}
-              </p>
-            </div>
-            <div className="w-full h-3 rounded-full bg-calm-blue-100 overflow-hidden mb-2">
-              <div
-                className="h-full rounded-full transition-all duration-500"
-                style={{
-                  width: `${Math.min((3800 / 10000) * 100, 100)}%`,
-                  background: "linear-gradient(135deg, #4479e1, #7c6cbb)",
-                }}
-              />
-            </div>
-            <div className="flex items-baseline justify-between">
-              <p className="text-lg font-semibold text-calm-blue-800">
-                &euro;3,800 <span className="text-sm font-normal text-calm-blue-400">{l(lang, "raised", "collectés", "gesammelt")}</span>
-              </p>
-              <p className="text-sm text-calm-blue-500">
-                {l(lang, "of \u20AC10,000 goal", "sur un objectif de 10 000 \u20AC", "von 10.000 \u20AC")}
-              </p>
-            </div>
-            <p className="text-xs text-calm-blue-400 mt-2">
-              {l(lang,
-                "To finalise the prototype, complete translations in English, French and German, and reach full accessibility standards.",
-                "Pour finaliser le prototype, compléter les traductions en anglais, français et allemand, et atteindre les standards d'accessibilité.",
-                "Um den Prototyp fertigzustellen, die Übersetzungen auf Englisch, Französisch und Deutsch abzuschliessen und die Barrierefreiheitsstandards zu erreichen."
-              )}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {getFundItems(lang).map((item) => (
-              <div
-                key={item.label}
-                className="glass-panel p-4 text-center hover:scale-[1.02] transition-transform duration-200"
-              >
-                <div className="w-12 h-12 mx-auto bg-white/50 rounded-full flex items-center justify-center mb-3 shadow-sm border border-white/60">
-                  <span className="text-2xl block" aria-hidden="true">{item.icon}</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            {TESTIMONIALS.map((t, i) => (
+              <div key={i} className="glass-panel p-5 flex flex-col justify-between border border-white/60">
+                <div>
+                  <div className="mb-3">
+                    <img
+                      src={`https://flagcdn.com/w40/${t.flag}.png`}
+                      srcSet={`https://flagcdn.com/w80/${t.flag}.png 2x`}
+                      width={24}
+                      height={18}
+                      alt={t.flag.toUpperCase()}
+                      className="rounded-sm shadow-sm"
+                    />
+                  </div>
+                  <blockquote className="text-sm text-calm-blue-700 leading-relaxed italic">
+                    &ldquo;{l(lang, t.en, t.fr, t.de)}&rdquo;
+                  </blockquote>
                 </div>
-                <p className="text-sm font-medium text-calm-blue-700">
-                  {item.label}
+                <p className="mt-4 text-xs font-semibold text-calm-blue-800 pt-2.5 border-t border-calm-blue-100">
+                  - {l(lang, t.attribution.en, t.attribution.fr, t.attribution.de)}
                 </p>
               </div>
             ))}
           </div>
         </section>
 
-        {/* C. Donation amounts */}
-        <section className="mb-12" aria-labelledby="amounts-heading">
-          <h2
-            id="amounts-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
-            style={{ fontFamily: headlineStyle.fontFamily }}
-          >
-            {l(lang, "Choose an amount", "Choisissez un montant", "Betrag auswählen")}
-          </h2>
-
-          {/* Tab toggle */}
-          <div className="flex gap-1 p-1 rounded-full bg-calm-blue-100/60 mb-3 w-fit">
-            <button
-              onClick={() => { setTab("monthly"); setSelectedAmount(25); setIsCustom(false); setCustomAmount(""); }}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                tab === "monthly"
-                  ? "bg-white text-calm-blue-800 shadow-sm"
-                  : "text-calm-blue-500 hover:text-calm-blue-700"
-              }`}
-            >
-              {l(lang, "Monthly (recommended)", "Mensuel (recommandé)", "Monatlich (empfohlen)")}
-            </button>
-            <button
-              onClick={() => { setTab("onetime"); setSelectedAmount(75); setIsCustom(false); setCustomAmount(""); }}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                tab === "onetime"
-                  ? "bg-white text-calm-blue-800 shadow-sm"
-                  : "text-calm-blue-500 hover:text-calm-blue-700"
-              }`}
-            >
-              {l(lang, "One-time", "Ponctuel", "Einmalig")}
-            </button>
-          </div>
-          <p className="text-sm text-calm-blue-400 mb-6">
-            {tab === "monthly"
-              ? l(lang,
-                  "Recurring donations help us plan and move faster.",
-                  "Les dons récurrents nous aident à planifier et à avancer plus vite.",
-                  "Regelmäßige Spenden helfen uns, besser zu planen und schneller voranzukommen."
-                )
-              : l(lang,
-                  "Prefer to give once? You can also make a one-time contribution of any amount.",
-                  "Vous préférez donner une seule fois ? Vous pouvez faire un don ponctuel du montant de votre choix.",
-                  "Lieber einmalig spenden? Sie können auch einen einmaligen Beitrag in beliebiger Höhe leisten."
-                )
-            }
-          </p>
-
-          {/* Tier cards */}
-          <div className={`grid gap-3 grid-cols-2`}>
-            {tiers.map((tier) => (
-              <button
-                key={tier.amount}
-                onClick={() => { setSelectedAmount(tier.amount); setIsCustom(false); }}
-                className={`glass-panel p-4 text-left cursor-pointer transition-all ${
-                  !isCustom && selectedAmount === tier.amount
-                    ? "ring-2 ring-calm-lilac-400 border-calm-lilac-300"
-                    : "hover:ring-1 hover:ring-calm-blue-200"
-                }`}
-              >
-                <p className="text-2xl font-semibold text-calm-blue-800 mb-1">
-                  &euro;{tier.amount.toLocaleString()}
-                  {tab === "monthly" && (
-                    <span className="text-sm font-normal text-calm-blue-400">
-                      {l(lang, "/mo", "/mois", "/Monat")}
-                    </span>
-                  )}
-                </p>
-                <p className="text-sm text-calm-blue-500">
-                  {tier.label}
-                </p>
-              </button>
-            ))}
-            {/* Custom amount */}
-            <button
-              onClick={() => setIsCustom(true)}
-              className={`glass-panel p-4 text-left cursor-pointer transition-all col-span-2 ${
-                isCustom
-                  ? "ring-2 ring-calm-lilac-400 border-calm-lilac-300"
-                  : "hover:ring-1 hover:ring-calm-blue-200"
-              }`}
-            >
-              {isCustom ? (
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl font-semibold text-calm-blue-800">&euro;</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="100000"
-                    step="1"
-                    autoFocus
-                    value={customAmount}
-                    onChange={(e) => setCustomAmount(e.target.value)}
-                    onClick={(e) => e.stopPropagation()}
-                    placeholder={l(lang, "Enter amount", "Saisir un montant", "Betrag eingeben")}
-                    className="w-full text-2xl font-semibold text-calm-blue-800 bg-transparent outline-none placeholder:text-calm-blue-300 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                  />
-                  {tab === "monthly" && customAmount && (
-                    <span className="text-sm font-normal text-calm-blue-400 whitespace-nowrap">{l(lang, "/mo", "/mois", "/Monat")}</span>
-                  )}
-                </div>
-              ) : (
-                <p className="text-2xl font-semibold text-calm-blue-800 mb-1">
-                  {l(lang, "Custom amount", "Montant libre", "Freier Betrag")}
-                </p>
-              )}
-              <p className="text-sm text-calm-blue-500 mt-1">
-                {l(lang, "Choose your own amount", "Choisissez votre propre montant", "W\u00e4hlen Sie Ihren eigenen Betrag")}
-              </p>
-            </button>
-          </div>
-
-          {/* Pay with card button */}
-          <div className="mt-6 text-center">
-            <button
-              onClick={handleCardPayment}
-              disabled={isProcessing || !isValidAmount}
-              className={`btn-primary inline-flex items-center gap-2 px-8 py-4 text-lg ${
-                isProcessing || !isValidAmount ? "opacity-60 cursor-not-allowed" : ""
-              }`}
-            >
-              {isProcessing
-                ? l(lang, "Redirecting...", "Redirection...", "Weiterleitung...")
-                : isValidAmount
-                  ? l(lang,
-                      `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""} by card`,
-                      `Donner ${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/mois" : ""} par carte`,
-                      `${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/Monat" : ""} per Karte spenden`
-                    )
-                  : l(lang, "Enter an amount", "Saisir un montant", "Betrag eingeben")
-              }
-            </button>
-          </div>
-
-          {/* Manage existing subscription */}
-          <div className="mt-4 text-center">
-            <p className="text-sm text-calm-blue-400">
-              {l(lang, "Already a monthly supporter?", "Vous êtes déjà donateur mensuel ?", "Sie unterstützen uns bereits monatlich?")}{" "}
-              <a
-                href="https://billing.stripe.com/p/login/cNieVd5j90I9dOs2d3b3q00"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-calm-lilac-500 hover:text-calm-lilac-600 underline underline-offset-2 transition-colors"
-              >
-                {l(lang, "Manage your donation", "Gérer votre don", "Spende verwalten")}
-              </a>
-            </p>
-          </div>
-        </section>
-
-        {/* D. Bank transfer */}
-        <section className="mb-12" aria-labelledby="bank-heading">
-          <h2
-            id="bank-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
-            style={{ fontFamily: headlineStyle.fontFamily }}
-          >
-            {l(lang, "Bank transfer", "Virement bancaire", "Banküberweisung")}
-          </h2>
-          <div className="donation-iban">
-            <div className="space-y-1.5 text-sm">
-              <p><span className="font-semibold text-calm-blue-700">IBAN:</span> <span className="tracking-wide">LT09 3500 0100 1903 8740</span></p>
-              <p><span className="font-semibold text-calm-blue-700">{l(lang, "Account holder:", "Titulaire du compte :", "Kontoinhaber:")} </span>Clarvia ASBL</p>
-              <p><span className="font-semibold text-calm-blue-700">RCS:</span> F15680</p>
-              <p><span className="font-semibold text-calm-blue-700">BIC/SWIFT:</span> EVIULT2VXXX</p>
-              <p><span className="font-semibold text-calm-blue-700">{l(lang, "Bank:", "Banque :", "Bank:")} </span>Paysera LT, UAB</p>
-              <p><span className="font-semibold text-calm-blue-700">{l(lang, "Bank address:", "Adresse de la banque :", "Bankadresse:")} </span>Pilait&#x117;s pr. 16, Vilnius, LT-04352, {l(lang, "Lithuania", "Lituanie", "Litauen")}</p>
-            </div>
-            <div className="mt-4 pt-3 border-t border-calm-blue-200/50 space-y-2">
-              <p className="text-xs text-calm-blue-500">
-                {l(lang, "Please use your name or email as the payment reference so we can send an acknowledgement.", "Veuillez indiquer votre nom ou votre adresse e-mail comme référence de paiement afin que nous puissions vous envoyer un accusé de réception.", "Bitte geben Sie Ihren Namen oder Ihre E-Mail-Adresse als Zahlungsreferenz an, damit wir Ihnen eine Bestätigung senden können.")}
-              </p>
-              <p className="text-xs text-calm-blue-400">
-                {l(lang, "Please do not include sensitive family details in the payment reference.", "Veuillez ne pas inclure d’informations familiales sensibles dans la référence du paiement.", "Bitte geben Sie keine sensiblen familiären Informationen in der Zahlungsreferenz an.")}
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* E. GitHub Sponsors */}
-        <section className="mb-12" aria-labelledby="github-heading">
-          <h2
-            id="github-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
-            style={{ fontFamily: headlineStyle.fontFamily }}
-          >
-            {l(lang, "Sponsor on GitHub", "Sponsoriser sur GitHub", "Auf GitHub sponsern")}
-          </h2>
-          <div className="glass-panel p-6">
-            <p className="text-sm text-calm-blue-600 leading-relaxed mb-2">
-              {l(lang, "Support Clarvia's open-source public-interest infrastructure through GitHub Sponsors.", "Soutenez l’infrastructure open source d’intérêt public de Clarvia via GitHub Sponsors.", "Unterstützen Sie Clarvias gemeinwohlorientierte Open-Source-Infrastruktur über GitHub Sponsors.")}
-            </p>
-            <p className="text-sm text-calm-blue-500 leading-relaxed mb-4">
-              {l(lang, "GitHub sponsorship helps fund the source-backed workflow data, validation work, documentation, and maintenance behind Clarvia.", "Le sponsoring GitHub aide à financer les données de parcours fondées sur des sources, le travail de validation, la documentation et la maintenance de Clarvia.", "GitHub-Sponsoring hilft dabei, die quellenbasierten Ablaufdaten, die Validierungsarbeit, die Dokumentation und die laufende Pflege von Clarvia zu finanzieren.")}
-            </p>
-            <a
-              href="https://github.com/sponsors/clarvia-org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary inline-flex items-center gap-2 px-6 py-3 text-base"
-            >
-              <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" /></svg>
-              {l(lang, "Sponsor Clarvia on GitHub", "Sponsoriser Clarvia sur GitHub", "Clarvia auf GitHub sponsern")}
-            </a>
-          </div>
-        </section>
-
-        {/* F. Why support Clarvia */}
-        <section className="mb-12" aria-labelledby="trust-heading">
-          <h2
-            id="trust-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
-            style={{ fontFamily: headlineStyle.fontFamily }}
-          >
-            {l(lang, "Why support Clarvia", "Pourquoi soutenir Clarvia", "Warum Clarvia unterstützen")}
-          </h2>
-          <ul className="space-y-3">
-            {getTrustItems(lang).map((item) => (
-              <li
-                key={item.title}
-                className="flex gap-3 items-start p-4 rounded-xl bg-white/40 border border-calm-blue-100 hover:bg-white/60 transition-all hover:shadow-sm"
-              >
-                <span className="governance-check mt-0.5" aria-hidden="true">{"\u2713"}</span>
-                <div>
-                  <p className="text-sm font-semibold text-calm-blue-800">{item.title}</p>
-                  <p className="text-sm text-calm-blue-500 mt-0.5">{item.desc}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        {/* G. Corporate sponsors */}
-        <section className="mb-12" aria-labelledby="corporate-heading">
+        {/* Corporate sponsors block */}
+        <section className="mt-16 pt-12 border-t border-calm-blue-200/50" aria-labelledby="corporate-heading">
           <h2
             id="corporate-heading"
             className="text-xl font-semibold text-calm-blue-800 mb-4"
@@ -512,58 +607,100 @@ export default function SupportPage() {
           >
             {l(lang, "Corporate sponsors", "Partenaires entreprises", "Unternehmenssponsoren")}
           </h2>
-          <div className="glass-panel p-6">
+          <div className="glass-panel p-6 border border-white/60">
             <p className="text-sm text-calm-blue-600 leading-relaxed mb-3">
-              {l(lang, "Companies supporting Clarvia help build public-interest infrastructure for families after the loss of a loved one.", "Les entreprises qui soutiennent Clarvia contribuent à créer une infrastructure d’intérêt public pour les familles après la perte d’un proche.", "Unternehmen, die Clarvia unterstützen, helfen beim Aufbau einer gemeinwohlorientierten Infrastruktur für Familien nach dem Verlust eines nahestehenden Menschen.")}
+              {l(lang,
+                "Companies supporting Clarvia help build public-interest infrastructure for families after the loss of a loved one.",
+                "Les entreprises qui soutiennent Clarvia contribuent à créer une infrastructure d’intérêt public pour les familles après la perte d’un proche.",
+                "Unternehmen, die Clarvia unterstützen, helfen beim Aufbau einer gemeinwohlorientierten Infrastruktur für Familien nach dem Verlust eines nahestehenden Menschen."
+              )}
             </p>
-            <p className="text-sm text-calm-blue-500 leading-relaxed mb-4">
-              {l(lang, "Sponsors may receive acknowledgement, but sponsorship does not provide influence over guidance, access to user data, referrals, preferential placement, exclusivity, or endorsement.", "Les sponsors peuvent être remerciés publiquement, mais leur soutien ne leur donne aucune influence sur les conseils fournis, aucun accès aux données des utilisateurs, aucune recommandation, aucun placement préférentiel, aucune exclusivité et aucune forme d’approbation.", "Sponsoren können öffentlich genannt werden, erhalten durch ihr Sponsoring jedoch keinen Einfluss auf die Inhalte, keinen Zugang zu Nutzerdaten, keine Vermittlungen, keine bevorzugte Platzierung, keine Exklusivität und keine Empfehlung.")}
+            <p className="text-[11px] text-calm-blue-500 leading-relaxed mb-4">
+              {l(lang,
+                "Sponsors may receive acknowledgement, but sponsorship does not provide influence over guidance, access to user data, referrals, preferential placement, exclusivity, or endorsement.",
+                "Les sponsors peuvent être remerciés publiquement, mais leur soutien ne leur donne aucune influence sur les conseils fournis, aucun accès aux données des utilisateurs, aucune recommandation, aucun placement préférentiel, aucune exclusivité et aucune forme d’approbation.",
+                "Sponsoren können öffentlich genannt werden, erhalten durch ihr Sponsoring jedoch keinen Einfluss auf die Inhalte, keinen Zugang zu Nutzerdaten, keine Vermittlungen, keine bevorzugte Platzierung, keine Exklusivität und keine Empfehlung."
+              )}
             </p>
-            <a
+            <Link
               href={`/${lang}/contact`}
-              className="btn-secondary inline-flex items-center gap-2 px-6 py-3 text-base"
+              className="btn-secondary inline-flex items-center gap-2 px-5 py-2.5 text-sm"
             >
               {l(lang, "Get in touch", "Nous contacter", "Kontakt aufnehmen")}
-            </a>
+            </Link>
           </div>
         </section>
 
-        {/* H. Privacy */}
-        <section className="mb-8" aria-labelledby="privacy-heading">
-          <h2
-            id="privacy-heading"
-            className="text-xl font-semibold text-calm-blue-800 mb-4"
-            style={{ fontFamily: headlineStyle.fontFamily }}
-          >
-            {l(lang, "Privacy", "Confidentialité", "Datenschutz")}
-          </h2>
-          <div className="space-y-3">
-            <p className="text-sm text-calm-blue-500 leading-relaxed">
-              {l(lang, "Your donation supports Clarvia ASBL's mission.", "Votre don soutient la mission de Clarvia ASBL.", "Ihre Spende unterstützt die Mission von Clarvia ASBL.")}
-            </p>
-            <p className="text-sm text-calm-blue-500 leading-relaxed">
-              {l(lang, "We collect only the information needed to process your gift, send an acknowledgement, and maintain basic donor records. Donor records are kept separate from any future family-support usage data.", "Nous collectons uniquement les informations nécessaires au traitement de votre don, à l’envoi d’un accusé de réception et à la tenue de registres donateurs de base. Les registres donateurs sont conservés séparément de toute future donnée liée à l’utilisation des services d’accompagnement des familles.", "Wir erfassen nur die Informationen, die erforderlich sind, um Ihre Spende zu bearbeiten, eine Bestätigung zu senden und grundlegende Spenderunterlagen zu führen. Spenderdaten werden getrennt von möglichen künftigen Nutzungsdaten aus der Familienunterstützung aufbewahrt.")}
-            </p>
-            <p className="text-sm text-calm-blue-400 leading-relaxed">
-              {l(lang, "Please do not include personal family details, health information, or details about a loss in donation references or messages.", "Veuillez ne pas inclure de détails personnels sur votre famille, d’informations de santé ou de détails concernant un décès dans les références ou messages liés à votre don.", "Bitte geben Sie in Zahlungsreferenzen oder Nachrichten zu Ihrer Spende keine persönlichen Familiendetails, Gesundheitsinformationen oder Details zu einem Todesfall an.")}
-            </p>
-          </div>
-        </section>
+        {/* Privacy, FAQ, and Legal Details (Moved lower/bottom alignment) */}
+        <footer className="mt-16 pt-12 border-t border-calm-blue-200/50 space-y-6 text-xs text-calm-blue-500 leading-relaxed" aria-label="Transparency metadata">
 
-        {/* I. Donation acknowledgement */}
-        <section className="mb-12" aria-labelledby="receipt-heading">
-          <div className="p-4 rounded-xl bg-calm-blue-50/60 border border-calm-blue-100">
-            <p className="text-xs font-semibold text-calm-blue-600 mb-1">
-              {l(lang, "Donation acknowledgement", "Accusé de réception du don", "Spendenbestätigung")}
-            </p>
-            <p className="text-xs text-calm-blue-500 leading-relaxed">
-              {l(lang, "Clarvia ASBL does not currently issue tax certificates for donations. Any acknowledgement we send is a confirmation of support, not a tax certificate.", "Clarvia ASBL ne délivre actuellement pas de certificats fiscaux pour les dons. Tout accusé de réception envoyé constitue une confirmation de soutien, et non un certificat fiscal.", "Clarvia ASBL stellt derzeit keine steuerlichen Spendenbescheinigungen aus. Jede von uns gesendete Bestätigung ist eine Bestätigung Ihrer Unterstützung, keine steuerliche Bescheinigung.")}
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {/* Legal / nonprofit info */}
+            <div>
+              <h3 className="font-semibold text-calm-blue-700 mb-1.5">
+                {l(lang, "Nonprofit Status & Registrations", "Statut d'association & Enregistrements", "Gemeinnützigkeit & Registrierungen")}
+              </h3>
+              <p>
+                {l(lang,
+                  "Clarvia ASBL is registered as a non-profit association in Luxembourg under RCS F15680. We operate transparently and build open workflows as a public service.",
+                  "Clarvia ASBL est enregistrée comme association sans but lucratif au Luxembourg sous le numéro RCS F15680. Nous opérons en toute transparence et construisons des parcours ouverts au service du public.",
+                  "Clarvia ASBL ist in Luxemburg als gemeinnützige Vereinigung unter der Nummer RCS F15680 eingetragen. Wir arbeiten transparent und bauen offene Abläufe als öffentlichen Dienst auf."
+                )}
+              </p>
+            </div>
+
+            {/* Donation receipts warning */}
+            <div>
+              <h3 className="font-semibold text-calm-blue-700 mb-1.5">
+                {l(lang, "Donation Acknowledgements", "Accusés de réception des dons", "Spendenbestätigungen")}
+              </h3>
+              <p>
+                {l(lang,
+                  "Clarvia ASBL does not currently issue tax certificates. Any confirmation we send is an acknowledgement of support, not a tax-deductible receipt.",
+                  "Clarvia ASBL ne délivre pas de certificats fiscaux actuellement. Toute confirmation envoyée est un accusé de réception de votre soutien, et non un reçu déductible des impôts.",
+                  "Clarvia ASBL stellt derzeit keine steuerlichen Spendenbescheinigungen aus. Jede Bestätigung ist eine Bestätigung Ihrer Unterstützung, keine abzugsfähige Bescheinigung."
+                )}
+              </p>
+            </div>
+
           </div>
-        </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-calm-blue-100/50">
+
+            {/* Privacy details */}
+            <div>
+              <h3 className="font-semibold text-calm-blue-700 mb-1.5">
+                {l(lang, "Privacy & Donor Records", "Confidentialité & Dossiers donateurs", "Datenschutz & Spenderdaten")}
+              </h3>
+              <p>
+                {l(lang,
+                  "We collect only minimal records required for transaction processing via Stripe. Donation records are strictly isolated from any family support checklist usage data.",
+                  "Nous collectons le minimum nécessaire pour traiter la transaction via Stripe. Les dossiers donateurs sont strictement isolés de toute donnée d'utilisation des listes d'accompagnement.",
+                  "Wir erfassen nur die für die Transaktionsabwicklung über Stripe erforderlichen Mindestdaten. Spenderdaten werden strikt getrennt von Nutzungsdaten der Checklisten aufbewahrt."
+                )}
+              </p>
+            </div>
+
+            {/* Sensitive info warning */}
+            <div>
+              <h3 className="font-semibold text-calm-blue-700 mb-1.5">
+                {l(lang, "Content Warning", "Mise en garde", "Wichtiger Hinweis")}
+              </h3>
+              <p className="text-calm-blue-400">
+                {l(lang,
+                  "Please do not write any health details, personal family records, or information about a deceased person in payment reference fields or support messages.",
+                  "Veuillez ne pas inscrire de détails sur la santé, de données familiales ou d'informations sur un défunt dans les champs de référence de paiement ou messages.",
+                  "Bitte tragen Sie keine Gesundheitsdetails, Familiendaten oder Informationen über einen Verstorbenen in Zahlungsreferenzen oder Nachrichten ein."
+                )}
+              </p>
+            </div>
+
+          </div>
+
+        </footer>
 
       </main>
-
       <FooterSection lang={lang} />
     </>
   );
