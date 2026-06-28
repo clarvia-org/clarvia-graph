@@ -27,7 +27,7 @@ export default function VideoSection({ lang }: { lang: Lang }) {
             </p>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://www.youtube.com/playlist?list=PLPvk31TQlhyg"
+                href="https://www.youtube.com/playlist?list=UUQt8JlIa-fBlV9s4_6hHsAg"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary px-6 py-3 text-base inline-flex items-center gap-2"
@@ -42,8 +42,9 @@ export default function VideoSection({ lang }: { lang: Lang }) {
           <div className="md:col-span-5 flex justify-center">
             <div className="relative w-full max-w-[280px] aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-white/50 bg-slate-900">
               <iframe
-                src="https://www.youtube-nocookie.com/embed/videoseries?list=PLPvk31TQlhyg&autoplay=1&mute=1&rel=0"
+                src="https://www.youtube-nocookie.com/embed/videoseries?list=UUQt8JlIa-fBlV9s4_6hHsAg&autoplay=1&mute=1&rel=0"
                 title="Clarvia - Follow Our Journey"
+                aria-label="Clarvia Follow Our Journey YouTube playlist. The video starts automatically with sound muted. Use the player controls to pause, play, or unmute."
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
                 className="absolute inset-0 w-full h-full border-0"

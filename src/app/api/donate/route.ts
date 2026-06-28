@@ -88,6 +88,13 @@ export async function POST(req: NextRequest) {
         cancel_url: cancelUrl,
         locale: stripeLocale,
       });
+      if (!session.url) {
+        console.error("Stripe session creation returned null URL for monthly donation.");
+        return NextResponse.json(
+          { error: "Could not create payment session. Please try bank transfer." },
+          { status: 500 }
+        );
+      }
       return NextResponse.json({ url: session.url });
     } else {
       // One-time payment via Checkout
@@ -113,6 +120,13 @@ export async function POST(req: NextRequest) {
         locale: stripeLocale,
         submit_type: "donate",
       });
+      if (!session.url) {
+        console.error("Stripe session creation returned null URL for one-time donation.");
+        return NextResponse.json(
+          { error: "Could not create payment session. Please try bank transfer." },
+          { status: 500 }
+        );
+      }
       return NextResponse.json({ url: session.url });
     }
   } catch (err) {

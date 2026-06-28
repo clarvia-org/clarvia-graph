@@ -7,6 +7,10 @@ import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 import { headlineStyle, TESTIMONIALS } from "../data";
 import FooterSection from "../sections/FooterSection";
 
+const STRIPE_BILLING_PORTAL_URL =
+  process.env.NEXT_PUBLIC_STRIPE_BILLING_PORTAL_URL ??
+  "https://billing.stripe.com/p/login/cNieVd5j90I9dOs2d3b3q00";
+
 /* -- Donation tier data -- */
 
 function getMonthlyTiers(lang: Lang) {
@@ -49,41 +53,10 @@ function ThankYouBanner({ lang }: { lang: Lang }) {
   return (
     <div className="mb-8 p-4 rounded-xl bg-green-50 border border-green-200 text-center">
       <p className="text-green-800 font-medium">
-        {l(lang, "Thank you for your support! You will receive a receipt from Stripe at the email address you provided.", "Merci pour votre soutien ! Vous recevrez un recu de Stripe a l'adresse e-mail que vous avez indiquee.", "Vielen Dank fuer Ihre Unterstuetzung! Sie erhalten eine Quittung von Stripe an die von Ihnen angegebene E-Mail-Adresse.")}
+        {l(lang, "Thank you for your support! You will receive a receipt from Stripe at the email address you provided.", "Merci pour votre soutien ! Vous recevrez un reçu de Stripe à l'adresse e-mail que vous avez indiquée.", "Vielen Dank für Ihre Unterstützung! Sie erhalten eine Quittung von Stripe an die von Ihnen angegebene E-Mail-Adresse.")}
       </p>
     </div>
   );
-}
-
-/* -- Trust elements -- */
-
-function getTrustItems(lang: Lang) {
-  return [
-    {
-      title: l(lang, "Registered non-profit", "Association sans but lucratif enregistrée", "Eingetragene Non-Profit-Organisation"),
-      desc: l(lang, "Clarvia ASBL is registered as a non-profit association under RCS F15680.", "Clarvia ASBL est enregistrée comme association sans but lucratif sous le numéro RCS F15680.", "Clarvia ASBL ist als gemeinnützige Vereinigung unter der Nummer RCS F15680 eingetragen."),
-    },
-    {
-      title: l(lang, "Free for families", "Gratuit pour les familles", "Kostenlos für Familien"),
-      desc: l(lang, "Clarvia is being built as a public service that families can use for free.", "Clarvia est conçu comme un service public que les familles pourront utiliser gratuitement.", "Clarvia wird als öffentlicher Dienst aufgebaut, den Familien kostenlos nutzen können."),
-    },
-    {
-      title: l(lang, "Early support has outsized impact", "Un soutien précoce a un impact décisif", "Frühe Unterstützung bewirkt besonders viel"),
-      desc: l(lang, "Clarvia is in its build and validation phase, where each donation directly supports the foundation of the service.", "Clarvia est en phase de développement et de validation, une étape où chaque don contribue directement aux fondations du service.", "Clarvia befindet sich in der Entwicklungs- und Validierungsphase, in der jede Spende direkt zum Fundament des Dienstes beiträgt."),
-    },
-    {
-      title: l(lang, "Source-backed workflows", "Des parcours fondés sur des sources officielles", "Quellenbasierte Abläufe"),
-      desc: l(lang, "Guidance is built around official sources, structured review, and ongoing maintenance.", "Les informations sont construites à partir de sources officielles, d'une revue structurée et d'une maintenance continue.", "Die Orientierungshilfen beruhen auf offiziellen Quellen, strukturierter Prüfung und laufender Pflege."),
-    },
-    {
-      title: l(lang, "Privacy-first donor records", "Des dossiers donateurs respectueux de la confidentialité", "Datensparsame Spenderunterlagen"),
-      desc: l(lang, "We collect only the information needed to process your gift, acknowledge support, and maintain basic records.", "Nous collectons uniquement les informations nécessaires pour traiter votre don, confirmer votre soutien et tenir des registres de base.", "Wir erfassen nur die Informationen, die erforderlich sind, um Ihre Spende zu bearbeiten, Ihre Unterstützung zu bestätigen und grundlegende Unterlagen zu führen."),
-    },
-    {
-      title: l(lang, "Open source", "Open source", "Open Source"),
-      desc: l(lang, "Clarvia's public GitHub work makes the infrastructure easier to inspect, improve, and maintain.", "Les travaux publics de Clarvia sur GitHub rendent l'infrastructure plus facile à examiner, à améliorer et à maintenir.", "Clarvias öffentliche Arbeit auf GitHub macht die Infrastruktur leichter prüfbar, verbesserbar und wartbar."),
-    },
-  ];
 }
 
 export default function SupportPage() {
@@ -117,10 +90,21 @@ export default function SupportPage() {
     return () => clearTimeout(timer);
   }, []);
 
-  const handleCopy = (text: string, field: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedField(field);
-    setTimeout(() => setCopiedField(null), 2000);
+  const handleCopy = async (text: string, field: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedField(field);
+      setTimeout(() => setCopiedField(null), 2000);
+    } catch {
+      alert(
+        l(
+          lang,
+          "Could not copy to clipboard. Please copy manually.",
+          "Impossible de copier dans le presse-papiers. Veuillez copier manuellement.",
+          "Konnte nicht in die Zwischenablage kopieren. Bitte manuell kopieren."
+        )
+      );
+    }
   };
 
   const tiers = tab === "monthly" ? getMonthlyTiers(lang) : getOnetimeTiers(lang);
@@ -437,7 +421,7 @@ export default function SupportPage() {
                 <p className="text-xs text-calm-blue-400">
                   {l(lang, "Already a monthly supporter?", "Vous êtes déjà donateur mensuel ?", "Sie unterstützen uns bereits monatlich?")}{" "}
                   <a
-                    href="https://billing.stripe.com/p/login/cNieVd5j90I9dOs2d3b3q00"
+                    href={STRIPE_BILLING_PORTAL_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-calm-lilac-500 hover:text-calm-lilac-600 underline underline-offset-2 transition-colors"

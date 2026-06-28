@@ -39,13 +39,13 @@ export const UPDATES: Update[] = [
     date: "2026-06-24",
     headline: {
       en: "Clarvia's bereavement source register published on data.public.lu",
-      fr: "Le registre des sources de deuil de Clarvia est publie sur data.public.lu",
-      de: "Clarvias Trauerfall-Quellenregister auf data.public.lu veroeffentlicht",
+      fr: "Le registre des sources de deuil de Clarvia est publié sur data.public.lu",
+      de: "Clarvias Trauerfall-Quellenregister auf data.public.lu veröffentlicht",
     },
     body: {
       en: "Clarvia's first dataset is now published on data.public.lu, Luxembourg's national open data portal. The Bereavement Source Register is a structured, machine-readable registry of official government sources related to bereavement administration in Luxembourg, covering guidance from Guichet.lu, CNAP, CNS, and cross-border jurisdictions. The dataset is published under CC-BY-4.0. Clarvia ASBL is now listed as an organisation on the portal alongside government ministries and public institutions. Dataset: https://data.public.lu/en/datasets/bereavement-source-register-luxembourg/",
-      fr: "Le premier jeu de donnees de Clarvia est desormais publie sur data.public.lu, le portail national de donnees ouvertes du Luxembourg. Le registre des sources de deuil est un repertoire structure et lisible par machine des sources gouvernementales officielles liees aux demarches administratives de deuil au Luxembourg, couvrant les informations de Guichet.lu, CNAP, CNS et les juridictions transfrontalieres. Le jeu de donnees est publie sous licence CC-BY-4.0. Clarvia ASBL est desormais repertoriee comme organisation sur le portail aux cotes des ministeres et institutions publiques. Jeu de donnees : https://data.public.lu/fr/datasets/bereavement-source-register-luxembourg/",
-      de: "Der erste Datensatz von Clarvia ist jetzt auf data.public.lu, dem nationalen Open-Data-Portal Luxemburgs, veroeffentlicht. Das Trauerfall-Quellenregister ist ein strukturiertes, maschinenlesbares Verzeichnis offizieller Regierungsquellen zu Verwaltungsverfahren im Trauerfall in Luxemburg, das Informationen von Guichet.lu, CNAP, CNS und grenzueberschreitenden Zustaendigkeiten umfasst. Der Datensatz ist unter CC-BY-4.0 lizenziert. Clarvia ASBL ist nun als Organisation auf dem Portal neben Ministerien und oeffentlichen Institutionen gelistet. Datensatz: https://data.public.lu/de/datasets/bereavement-source-register-luxembourg/",
+      fr: "Le premier jeu de données de Clarvia est désormais publié sur data.public.lu, le portail national de données ouvertes du Luxembourg. Le registre des sources de deuil est un répertoire structuré et lisible par machine des sources gouvernementales officielles liées aux démarches administratives de deuil au Luxembourg, couvrant les informations de Guichet.lu, CNAP, CNS et les juridictions transfrontalières. Le jeu de données est publié sous licence CC-BY-4.0. Clarvia ASBL est désormais répertoriée comme organisation sur le portail aux côtés des ministères et institutions publiques. Jeu de données : https://data.public.lu/fr/datasets/bereavement-source-register-luxembourg/",
+      de: "Der erste Datensatz von Clarvia ist jetzt auf data.public.lu, dem nationalen Open-Data-Portal Luxemburgs, veröffentlicht. Das Trauerfall-Quellenregister ist ein strukturiertes, maschinenlesbares Verzeichnis offizieller Regierungsquellen zu Verwaltungsverfahren im Trauerfall in Luxemburg, das Informationen von Guichet.lu, CNAP, CNS und grenzüberschreitenden Zuständigkeiten umfasst. Der Datensatz ist unter CC-BY-4.0 lizenziert. Clarvia ASBL ist nun als Organisation auf dem Portal neben Ministerien und öffentlichen Institutionen gelistet. Datensatz: https://data.public.lu/de/datasets/bereavement-source-register-luxembourg/",
     },
   },
   {
@@ -53,7 +53,7 @@ export const UPDATES: Update[] = [
     headline: {
       en: "GitHub Sponsors now active for Clarvia",
       fr: "GitHub Sponsors est maintenant actif pour Clarvia",
-      de: "GitHub Sponsors jetzt aktiv fuer Clarvia",
+      de: "GitHub Sponsors jetzt aktiv für Clarvia",
     },
     body: {
       en: "Clarvia is now enrolled in GitHub Sponsors. Anyone who values free, multilingual bereavement guidance can support the project directly through GitHub. Sponsorships help fund development, hosting, and the expansion of Clarvia's checklist to new countries. The Sponsor button is now visible on all Clarvia repositories.",
