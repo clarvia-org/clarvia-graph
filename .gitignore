@@ -42,3 +42,11 @@ next-env.d.ts
 
 # clarvia data (fetched at build time from clarvia-graph release)
 /public/data/clarvia/
+
+# Local AI IDE tooling (Cursor + Antigravity) — personal setup only
+.cursor/
+.cursorrules
+.cursorignore
+.agent/
+.agents/
+AGENTS.md
