@@ -17,7 +17,11 @@
 
 > **Status:** CI passing · [OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112) · [OpenSSF Scorecard](https://scorecard.dev/#/projects/github.com/clarvia-org/clarvia-graph) · [REUSE compliant](https://api.reuse.software/info/github.com/clarvia-org/clarvia-graph) · [Codecov](https://codecov.io/gh/clarvia-org/clarvia-graph) · [SonarCloud](https://sonarcloud.io/summary/new_code?id=clarvia-org_clarvia-graph) · Code: EUPL-1.2 · Data: CC-BY-4.0 · [DOI: 10.5281/zenodo.20572455](https://doi.org/10.5281/zenodo.20572455) · [FAIR: 4/5](https://fair-software.eu)
 
-Clarvia Graph is the technical engine behind [Clarvia](https://clarvia.org). It stores all the official rules and steps for bereavement paperwork across Europe — structured so that apps, websites, and public services can use them automatically. For the simple, family-friendly version, see [clarvia.org](https://clarvia.org).
+Clarvia Graph is reusable public-interest digital infrastructure. While it serves as the technical engine behind the consumer-facing checklist at [clarvia.org](https://clarvia.org), it is designed as an open, source-backed administrative workflow repository. It structures official rules, deadlines, and requirements for bereavement paperwork so that any application, civic-tech portal, research project, or public service can consume and adapt them automatically.
+
+## Digital Public Good readiness
+
+Clarvia Graph is being prepared for submission to the Digital Public Goods Alliance Registry as open, source-backed administrative workflow infrastructure for bereavement administration. See [DPG.md](DPG.md) for the DPG Standard mapping, open-license information, privacy and do-no-harm boundaries, SDG alignment, and reuse documentation.
 
 <details>
 <summary>📸 Alpha checklist preview</summary>
