@@ -43,9 +43,21 @@ describe("export-json: runExportJson", () => {
     expect(existsSync(outPath)).toBe(true);
 
     const raw = readFileSync(outPath, "utf-8");
-    let content: any;
+    interface ExportedContent {
+      $schema?: string;
+      version?: string;
+      exported_at?: string;
+      consequences?: unknown[];
+      task_templates?: unknown[];
+      conditions?: unknown[];
+      deadlines?: unknown[];
+      authorities?: unknown[];
+      evidence_types?: unknown[];
+      intake_fact_types?: unknown[];
+    }
+    let content = {} as ExportedContent;
     expect(() => {
-      content = JSON.parse(raw);
+      content = JSON.parse(raw) as ExportedContent;
     }).not.toThrow();
     expect(content.$schema).toBe("clarvia-graph-export/v0.1");
     expect(content.version).toMatch(/^\d+\.\d+\.\d+/);
