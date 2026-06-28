@@ -10,6 +10,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-06-28",
+    headline: {
+      en: "Clarvia joins Open Collective for full financial transparency",
+      fr: "Clarvia rejoint Open Collective pour une transparence financière totale",
+      de: "Clarvia nutzt Open Collective für vollständige finanzielle Transparenz",
+    },
+    body: {
+      en: "Clarvia is now active on Open Collective, allowing us to manage and share our finances in public. As a Luxembourg non-profit building public-interest infrastructure, financial transparency is central to our mission. Through Open Collective, supporters can view our real-time budget, track incoming donations, and see exactly how expenses are allocated. All funds raised through the collective directly support our work on free, multilingual bereavement guidance and open workflow tools. View our collective and support us at: https://opencollective.com/clarvia-org",
+      fr: "Clarvia est désormais active sur Open Collective, ce qui nous permet de gérer et de publier nos finances en toute transparence. En tant qu'association sans but lucratif luxembourgeoise engagée dans le développement d'infrastructures d'intérêt public, la transparence financière est essentielle pour nous. Grâce à Open Collective, nos donateurs et partenaires peuvent consulter notre budget en temps réel, suivre les dons reçus et voir précisément comment nos ressources sont allouées. Tous les fonds collectés par ce biais servent directement à financer le développement de notre guide de deuil gratuit et multilingue ainsi que nos outils de workflow ouverts. Découvrez notre collectif et soutenez-nous sur : https://opencollective.com/clarvia-org",
+      de: "Clarvia ist ab sofort auf Open Collective aktiv. Dies ermöglicht uns, unsere Finanzen vollständig öffentlich zu verwalten und offenzulegen. Als gemeinnütziger Luxemburger Verein, der digitale Infrastruktur im öffentlichen Interesse aufbaut, ist finanzielle Transparenz ein zentrales Anliegen für uns. Über Open Collective können Unterstützer und Partner unser Budget in Echtzeit einsehen, eingehende Spenden nachverfolgen und die Verwendung unserer Mittel genau überprüfen. Alle über das Kollektiv gesammelten Gelder fließen direkt in die Pflege unseres kostenlosen, mehrsprachigen Trauerfall-Wegweisers und unserer offenen Workflow-Tools. Besuchen Sie unser Kollektiv und unterstützen Sie uns unter: https://opencollective.com/clarvia-org",
+    },
+  },
+  {
     date: "2026-06-26",
     headline: {
       en: "Clarvia submits project proposal for a free Belgian bereavement guide",
