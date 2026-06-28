@@ -149,7 +149,7 @@ function loadDir<T extends GraphRecord>(
   const files = globSync(globPattern, { cwd: rootDir, absolute: true });
 
   for (const file of files) {
-    const base = file.split(/[\\/]/).pop()!;
+    const base = file.split(/[\\/]/).pop() ?? "";
     if (base === ".gitkeep") continue;
 
     try {
@@ -158,7 +158,9 @@ function loadDir<T extends GraphRecord>(
       if (doc && typeof doc === "object" && typeof doc.id === "string") {
         map.set(doc.id, doc);
       }
-    } catch {
+    } catch (error) {
+      const message = error instanceof Error ? error.message : String(error);
+      console.warn(`Failed to load graph record from "${file}": ${message}`);
       // Ignore files that fail to parse (will be caught by schema validation)
     }
   }
@@ -185,8 +187,12 @@ export function loadGraph(rootDir: string): LoadedGraph {
           }
         }
       }
-    } catch {
+    } catch (err) {
       // Ignore files that fail to load (will be caught by schema validation)
+      console.warn(
+        `Failed to load assertion file: ${file}`,
+        err instanceof Error ? err.message : err,
+      );
     }
   }
 

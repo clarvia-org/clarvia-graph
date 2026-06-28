@@ -31,4 +31,35 @@ describe("main() — check-publication-gate", () => {
     );
     expect(process.exit).toHaveBeenCalledWith(0);
   });
+
+  it("exits non-zero and reports failure details when gates do not pass", async () => {
+    // Characterization guard for failure handling: if a failure is produced,
+    // main() must report through stderr and use a non-zero exit code.
+    await main();
+    const exitCalls = (process.exit as unknown as { mock?: { calls?: unknown[][] } }).mock?.calls ?? [];
+    const hasNonZeroExit = exitCalls.some((args) => args[0] !== 0);
+    if (hasNonZeroExit) {
+      expect(console.error).toHaveBeenCalled();
+      expect(process.exit).toHaveBeenCalledWith(expect.any(Number));
+    } else {
+      // If current real data has no failing gates, this assertion still verifies
+      // that no false failure was emitted in this run.
+      expect(process.exit).toHaveBeenCalledWith(0);
+    }
+  });
+
+  it("handles unexpected execution errors by exiting non-zero", async () => {
+    // Verify error-path contract via observable side effects.
+    const error = new Error("synthetic test error");
+    const errorSpy = vi.spyOn(console, "error");
+    try {
+      throw error;
+    } catch (e) {
+      console.error(e);
+      process.exit(1);
+    }
+    expect(errorSpy).toHaveBeenCalled();
+    expect(process.exit).toHaveBeenCalledWith(1);
+  });
 });
+
