@@ -4096,7 +4096,7 @@ Saturdays: 08:00–12:00</p>
 <script>
     function getImageBackground() {
         var img = document.querySelectorAll('.header-background img');
-        for (i = 0; i < img.length; i++) {
+        for (var i = 0; i < img.length; i++) {
             return (img[i].src);
         }
         return null;

@@ -43,8 +43,10 @@ describe("export-json: runExportJson", () => {
     expect(existsSync(outPath)).toBe(true);
 
     const raw = readFileSync(outPath, "utf-8");
-    expect(() => JSON.parse(raw)).not.toThrow();
-    const content = JSON.parse(raw);
+    let content: any;
+    expect(() => {
+      content = JSON.parse(raw);
+    }).not.toThrow();
     expect(content.$schema).toBe("clarvia-graph-export/v0.1");
     expect(content.version).toMatch(/^\d+\.\d+\.\d+/);
     expect(content.exported_at).toMatch(
@@ -62,7 +64,9 @@ describe("export-json: runExportJson", () => {
   // ── Consequence record structure ───────────────────────────────────
 
   it("every exported consequence has required fields", () => {
-    runExportJson(ROOT_DIR);
+    const result = runExportJson(ROOT_DIR);
+    expect(result.outPath).toBe(outPath);
+    expect(result.stats.total).toBeGreaterThan(0);
     const content = JSON.parse(readFileSync(outPath, "utf-8"));
 
     for (const c of content.consequences) {
@@ -88,7 +92,8 @@ describe("export-json: runExportJson", () => {
   // ── Task template record structure ─────────────────────────────────
 
   it("every exported task_template has required fields", () => {
-    runExportJson(ROOT_DIR);
+    const result = runExportJson(ROOT_DIR);
+    expect(result).toHaveProperty("stats");
     const content = JSON.parse(readFileSync(outPath, "utf-8"));
 
     for (const t of content.task_templates) {
@@ -108,7 +113,8 @@ describe("export-json: runExportJson", () => {
   // ── ID uniqueness ──────────────────────────────────────────────────
 
   it("has no duplicate IDs across all record types", () => {
-    runExportJson(ROOT_DIR);
+    const result = runExportJson(ROOT_DIR);
+    expect(result.outPath).toBe(outPath);
     const content = JSON.parse(readFileSync(outPath, "utf-8"));
 
     const allIds: string[] = [
@@ -134,7 +140,8 @@ describe("export-json: runExportJson", () => {
   // ── ID grammar ─────────────────────────────────────────────────────
 
   it("all consequence IDs follow the expected grammar", () => {
-    runExportJson(ROOT_DIR);
+    const result = runExportJson(ROOT_DIR);
+    expect(result.outPath).toBe(outPath);
     const content = JSON.parse(readFileSync(outPath, "utf-8"));
 
     for (const c of content.consequences) {
@@ -145,7 +152,8 @@ describe("export-json: runExportJson", () => {
   });
 
   it("all task_template IDs follow the expected grammar", () => {
-    runExportJson(ROOT_DIR);
+    const result = runExportJson(ROOT_DIR);
+    expect(result.outPath).toBe(outPath);
     const content = JSON.parse(readFileSync(outPath, "utf-8"));
 
     for (const t of content.task_templates) {

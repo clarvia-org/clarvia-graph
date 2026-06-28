@@ -18,8 +18,11 @@ import { createHash } from "node:crypto";
 import type {
   LoadedGraph,
   Consequence,
-  TaskTemplate,
+  TaskTemplate as LoaderTaskTemplate,
 } from "./loader.js";
+type TaskTemplate = LoaderTaskTemplate & {
+  description?: string;
+};
 import { evaluateCondition, type Fact, type TriValue } from "./evaluator.js";
 import { normalizeFacts } from "./normalize.js";
 import {
@@ -360,6 +363,9 @@ function filterCandidateConsequences(
   temporalCtx: TemporalContext,
 ): Consequence[] {
   const candidates: Consequence[] = [];
+  const normalizedRelevantJurisdictions = new Set(
+    [...relevantJurisdictions].map((j) => j.toUpperCase()),
+  );
   for (const [, consequence] of graph.consequences) {
     if (consequence.life_event !== lifeEvent) continue;
 
@@ -368,7 +374,7 @@ function filterCandidateConsequences(
     }
 
     const juris = consequence.jurisdiction?.toUpperCase();
-    if (juris && !relevantJurisdictions.has(juris) && !relevantJurisdictions.has(juris.toLowerCase())) {
+    if (juris && !normalizedRelevantJurisdictions.has(juris)) {
       continue;
     }
 
@@ -597,7 +603,11 @@ function groupByJurisdiction(
 ): Map<string, CandidateItem[]> {
   const groups = new Map<string, CandidateItem[]>();
   for (const c of list) {
-    const j = c.consequence.jurisdiction.toUpperCase();
+    const rawJurisdiction = c.consequence.jurisdiction;
+    const j =
+      typeof rawJurisdiction === "string" && rawJurisdiction.length > 0
+        ? rawJurisdiction.toUpperCase()
+        : "UNKNOWN";
     const sub = groups.get(j);
     if (sub) {
       sub.push(c);
@@ -860,7 +870,7 @@ function makeItem(
     resolved_subject_id: resolvedSubjectId,
     status,
     title: template?.title ?? consequence.title,
-    description: (template && "description" in template ? (template as Record<string, unknown>).description as string : null) ?? null,
+    description: template?.description ?? null,
     jurisdiction_contexts: [consequence.jurisdiction],
     checklist_group: group,
     urgency:
