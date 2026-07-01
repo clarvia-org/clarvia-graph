@@ -10,6 +10,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-07-01",
+    headline: {
+      en: "Google Workspace for Nonprofits approved and activated for Clarvia",
+      fr: "Google Workspace for Nonprofits activé pour Clarvia",
+      de: "Google Workspace for Nonprofits für Clarvia freigeschaltet",
+    },
+    body: {
+      en: "Clarvia's application for Google Workspace for Nonprofits has been successfully approved and activated.\n\nThis activation gives Clarvia access to professional collaboration, communication, and storage tools at no cost. Following our acceptance into GitHub for Nonprofits and Goodstack verification, this milestone strengthens our operational capacity as a registered non-profit, allowing us to manage administrative workflows and collaborate more effectively as we build free bereavement guidance.",
+      fr: "La candidature de Clarvia au programme Google Workspace for Nonprofits a été officiellement approuvée et activée.\n\nCette activation nous donne accès gratuitement aux outils professionnels de collaboration, de communication et de stockage de Google Workspace. Après notre admission au programme GitHub for Nonprofits et notre vérification par Goodstack, cette étape renforce notre capacité opérationnelle en tant qu'association sans but lucratif. Elle nous permettra de gérer nos flux administratifs et de collaborer plus efficacement au développement de nos guides d'accompagnement gratuits après un décès.",
+      de: "Der Antrag von Clarvia für Google Workspace für Nonprofits wurde erfolgreich genehmigt und freigeschaltet.\n\nDiese Freischaltung ermöglicht Clarvia den kostenlosen Zugriff auf professionelle Tools für Zusammenarbeit, Kommunikation und Datenspeicherung von Google Workspace. Nach der Aufnahme in das Programm GitHub for Nonprofits und der Goodstack-Verifizierung ist dieser Meilenstein ein weiterer wichtiger Schritt zur Stärkung unserer operativen Handlungsfähigkeit als gemeinnütziger Verein. Er hilft uns dabei, administrative Abläufe effizienter zu verwalten und bei der Entwicklung unserer kostenlosen Trauerbegleitung noch besser zusammenzuarbeiten.",
+    },
+  },
+  {
     date: "2026-06-28",
     headline: {
       en: "Clarvia joins Open Collective to make donation-funded work more transparent",
