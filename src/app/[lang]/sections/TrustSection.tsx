@@ -1,5 +1,5 @@
 import { type Lang, l } from "@/lib/i18n";
-import { headlineStyle, SUPPORTER, FOUNDERS, PRINCIPLES } from "../data";
+import { headlineStyle, SUPPORTERS, FOUNDERS, PRINCIPLES } from "../data";
 
 export default function TrustSection({ lang }: { lang: Lang }) {
   return (
@@ -7,39 +7,45 @@ export default function TrustSection({ lang }: { lang: Lang }) {
       {/* ═══ Supported By ═══ */}
       <section className="mb-20">
         <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-10" style={headlineStyle}>
-          {l(lang, "Supported by", "Avec le soutien de", "Unterstützt von")}
+          {l(lang,
+            "Supporters and future pilot partners",
+            "Soutiens et futurs partenaires pilotes",
+            "Unterstützer und zukünftige Pilotpartner"
+          )}
         </h2>
 
-        <div className="glass-panel p-8 sm:p-10 max-w-3xl mx-auto">
-          <div className="flex flex-col sm:flex-row items-center gap-6 mb-6">
-            <a href={SUPPORTER.url} target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
-              <img src={SUPPORTER.logo} alt={SUPPORTER.name} className="h-14 object-contain rounded bg-white px-3 py-2 shadow-sm hover:shadow-md transition-shadow" />
-            </a>
-            <div>
-              <h3 className="text-lg font-semibold mb-1" style={{ color: "#2b3a67" }}>
-                <a href={SUPPORTER.url} target="_blank" rel="noopener noreferrer" className="hover:text-calm-lilac-600 transition-colors">
-                  {SUPPORTER.name}
-                </a>
-              </h3>
-              <p className="text-base text-calm-blue-600 leading-relaxed">
-                {l(lang, SUPPORTER.description.en, SUPPORTER.description.fr, SUPPORTER.description.de)}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {SUPPORTERS.map((supporter, idx) => (
+            <div key={idx} className="glass-panel p-6 sm:p-8 flex flex-col justify-between h-full">
+              <div>
+                <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
+                  <a href={supporter.url} target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
+                    <img src={supporter.logo} alt={supporter.name} className="h-14 object-contain rounded bg-white px-3 py-2 shadow-sm hover:shadow-md transition-shadow" />
+                  </a>
+                  <div className="text-center sm:text-left">
+                    <h3 className="text-lg font-semibold mb-1" style={{ color: "#2b3a67" }}>
+                      <a href={supporter.url} target="_blank" rel="noopener noreferrer" className="hover:text-calm-lilac-600 transition-colors">
+                        {supporter.name}
+                      </a>
+                    </h3>
+                    <p className="text-sm text-calm-blue-600 leading-relaxed">
+                      {l(lang, supporter.description.en, supporter.description.fr, supporter.description.de)}
+                    </p>
+                  </div>
+                </div>
+
+                <blockquote className="bg-calm-lilac-50/60 rounded-xl p-5 border border-calm-lilac-100/60 mb-6">
+                  <p className="text-sm text-calm-blue-700 leading-relaxed italic text-center">
+                    &ldquo;{l(lang, supporter.quote.en, supporter.quote.fr, supporter.quote.de)}&rdquo;
+                  </p>
+                </blockquote>
+              </div>
+
+              <p className="text-xs text-calm-blue-500 leading-relaxed text-center mt-auto pt-2">
+                {l(lang, supporter.thanks.en, supporter.thanks.fr, supporter.thanks.de)}
               </p>
             </div>
-          </div>
-
-          <blockquote className="bg-calm-lilac-50/60 rounded-xl p-5 border border-calm-lilac-100/60 mb-6">
-            <p className="text-base text-calm-blue-700 leading-relaxed italic text-center">
-              &ldquo;{l(lang, SUPPORTER.quote.en, SUPPORTER.quote.fr, SUPPORTER.quote.de)}&rdquo;
-            </p>
-          </blockquote>
-
-          <p className="text-sm text-calm-blue-500 leading-relaxed text-center">
-            {l(lang,
-              "We are grateful for TSC Real Estate's early support for Clarvia's mission to make practical bereavement guidance free and accessible to families.",
-              "Nous remercions TSC Real Estate pour son soutien précoce à la mission de Clarvia : rendre l'accompagnement pratique après un décès gratuit et accessible aux familles.",
-              "Wir danken TSC Real Estate für die frühe Unterstützung von Clarvias Mission, praktische Orientierung im Trauerfall für Familien kostenlos und zugänglich zu machen."
-            )}
-          </p>
+          ))}
         </div>
       </section>
 

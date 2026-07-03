@@ -217,19 +217,49 @@ export const PRINCIPLES = [
   { icon: "🌍", en_title: "Multilingual", fr_title: "Multilingue", de_title: "Mehrsprachig", en: "Designed from the start in English, French, and German to reflect Luxembourg's multilingual reality.", fr: "Conçu dès le départ en anglais, français et allemand pour refléter la réalité multilingue du Luxembourg.", de: "Von Anfang an in Englisch, Französisch und Deutsch konzipiert, um der mehrsprachigen Realität Luxemburgs gerecht zu werden." },
 ];
 
-/* ── Supporter ── */
-export const SUPPORTER = {
-  name: "TSC Real Estate",
-  logo: "/tsc-logo.jpg",
-  url: "https://www.tsc-realestate.de/en/",
-  description: {
-    en: "One of Germany's leading healthcare real estate managers, experienced in the residential care sector, with branches in Luxembourg, Italy, and Spain.",
-    fr: "L'un des principaux gestionnaires allemands d'actifs immobiliers dans le secteur de la santé, avec une solide expérience dans les établissements de soins résidentiels et des implantations au Luxembourg, en Italie et en Espagne.",
-    de: "Einer der führenden deutschen Manager von Gesundheitsimmobilien, erfahren im Bereich stationärer Pflege, mit Niederlassungen in Luxemburg, Italien und Spanien.",
+/* ── Supporters ── */
+export const SUPPORTERS = [
+  {
+    name: "Trauerwee ASBL",
+    logo: "/trauerwee-logo.png",
+    url: "https://trauerwee.lu",
+    description: {
+      en: "A Luxembourg non-profit supporting bereaved children, young people, and their families.",
+      fr: "Une association luxembourgeoise qui accompagne les enfants, les jeunes et les familles endeuillés.",
+      de: "Eine luxemburgische gemeinnützige Organisation, die trauernde Kinder, Jugendliche und Familien begleitet.",
+    },
+    quote: {
+      en: "Trauerwee ASBL is pleased to express its support for the mission and public-interest objectives of Clarvia ASBL. We believe there is clear public value in initiatives that make administrative processes more understandable, more structured, and more predictable.",
+      fr: "Trauerwee ASBL a le plaisir d’exprimer son soutien à la mission et aux objectifs d’intérêt public de Clarvia ASBL. Nous sommes convaincus que les initiatives visant à rendre les démarches administratives plus compréhensibles, plus structurées et plus prévisibles présentent une réelle valeur d’intérêt public.",
+      de: "Trauerwee ASBL freut sich, die Mission und die gemeinwohlorientierten Ziele von Clarvia ASBL zu unterstützen. Wir sind überzeugt, dass Initiativen, die administrative Abläufe verständlicher, strukturierter und vorhersehbarer machen, einen klaren öffentlichen Nutzen haben.",
+    },
+    thanks: {
+      en: "We are grateful for Trauerwee’s support for Clarvia’s public-interest mission and for the important work it does with bereaved children, young people, and families.",
+      fr: "Nous sommes reconnaissants du soutien de Trauerwee à la mission d’intérêt public de Clarvia, ainsi que du travail essentiel qu’elle mène auprès des enfants, des jeunes et des familles endeuillés.",
+      de: "Wir danken Trauerwee für die Unterstützung der gemeinwohlorientierten Mission von Clarvia und für die wichtige Arbeit, die die Organisation für trauernde Kinder, Jugendliche und Familien leistet.",
+    },
   },
-  quote: {
-    en: "We believe that Clarvia's mission - making essential post-bereavement information accessible, structured and free - is clearly in the public interest.",
-    fr: "Nous considérons que la mission de Clarvia - rendre les informations essentielles après un décès accessibles, structurées et gratuites - relève clairement de l'intérêt public.",
-    de: "Wir sind überzeugt, dass Clarvias Ziel, wichtige Informationen nach einem Todesfall zugänglich, strukturiert und kostenlos bereitzustellen, klar im öffentlichen Interesse liegt.",
+  {
+    name: "TSC Real Estate",
+    logo: "/tsc-logo.jpg",
+    url: "https://www.tsc-realestate.de/en/",
+    description: {
+      en: "One of Germany's leading healthcare real estate managers, experienced in the residential care sector, with branches in Luxembourg, Italy, and Spain.",
+      fr: "L'un des principaux gestionnaires allemands d'actifs immobiliers dans le secteur de la santé, avec une solide expérience dans les établissements de soins résidentiels et des implantations au Luxembourg, en Italie et en Espagne.",
+      de: "Einer der führenden deutschen Manager von Gesundheitsimmobilien, erfahren im Bereich stationärer Pflege, mit Niederlassungen in Luxemburg, Italien und Spanien.",
+    },
+    quote: {
+      en: "We believe that Clarvia's mission - making essential post-bereavement information accessible, structured and free - is clearly in the public interest.",
+      fr: "Nous considérons que la mission de Clarvia - rendre les informations essentielles après un décès accessibles, structurées et gratuites - relève clairement de l'intérêt public.",
+      de: "Wir sind überzeugt, dass Clarvias Ziel, wichtige Informationen nach einem Todesfall zugänglich, strukturiert und kostenlos bereitzustellen, klar im öffentlichen Interesse liegt.",
+    },
+    thanks: {
+      en: "We are grateful for TSC Real Estate's early support for Clarvia's mission to make practical bereavement guidance free and accessible to families.",
+      fr: "Nous remercions TSC Real Estate pour son soutien précoce à la mission de Clarvia : rendre l'accompagnement pratique après un décès gratuit et accessible aux familles.",
+      de: "Wir danken TSC Real Estate für die frühe Unterstützung von Clarvias Mission, praktische Orientierung im Trauerfall für Familien kostenlos und zugänglich zu machen.",
+    },
   },
-};
+];
+
+export const SUPPORTER = SUPPORTERS[1];
+
