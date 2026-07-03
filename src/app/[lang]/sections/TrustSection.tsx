@@ -14,34 +14,34 @@ export default function TrustSection({ lang }: { lang: Lang }) {
           )}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
           {SUPPORTERS.map((supporter, idx) => (
             <div key={idx} className="glass-panel p-6 sm:p-8 flex flex-col justify-between h-full">
               <div>
-                <div className="flex flex-col sm:flex-row items-center gap-4 mb-6">
-                  <a href={supporter.url} target="_blank" rel="noopener noreferrer" className="flex-shrink-0">
-                    <img src={supporter.logo} alt={supporter.name} className="h-14 object-contain rounded bg-white px-3 py-2 shadow-sm hover:shadow-md transition-shadow" />
-                  </a>
-                  <div className="text-center sm:text-left">
-                    <h3 className="text-lg font-semibold mb-1" style={{ color: "#2b3a67" }}>
-                      <a href={supporter.url} target="_blank" rel="noopener noreferrer" className="hover:text-calm-lilac-600 transition-colors">
-                        {supporter.name}
-                      </a>
-                    </h3>
-                    <p className="text-sm text-calm-blue-600 leading-relaxed">
-                      {l(lang, supporter.description.en, supporter.description.fr, supporter.description.de)}
-                    </p>
+                <div className="flex flex-col items-center mb-6">
+                  <div className="h-16 flex items-center justify-center mb-4">
+                    <a href={supporter.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-full w-40 bg-white rounded-lg px-4 py-2 shadow-sm border border-calm-blue-100 hover:shadow-md transition-shadow">
+                      <img src={supporter.logo} alt={supporter.name} className="max-h-full max-w-full object-contain" />
+                    </a>
                   </div>
+                  <h3 className="text-lg font-semibold text-center mb-2" style={{ color: "#2b3a67" }}>
+                    <a href={supporter.url} target="_blank" rel="noopener noreferrer" className="hover:text-calm-lilac-600 transition-colors">
+                      {supporter.name}
+                    </a>
+                  </h3>
+                  <p className="text-sm text-calm-blue-600 leading-relaxed text-center md:min-h-[4.5rem] flex items-center justify-center break-words">
+                    {l(lang, supporter.description.en, supporter.description.fr, supporter.description.de)}
+                  </p>
                 </div>
 
                 <blockquote className="bg-calm-lilac-50/60 rounded-xl p-5 border border-calm-lilac-100/60 mb-6">
-                  <p className="text-sm text-calm-blue-700 leading-relaxed italic text-center">
+                  <p className="text-sm text-calm-blue-700 leading-relaxed italic text-center break-words">
                     &ldquo;{l(lang, supporter.quote.en, supporter.quote.fr, supporter.quote.de)}&rdquo;
                   </p>
                 </blockquote>
               </div>
 
-              <p className="text-xs text-calm-blue-500 leading-relaxed text-center mt-auto pt-2">
+              <p className="text-xs text-calm-blue-500 leading-relaxed text-center mt-auto pt-2 border-t border-calm-blue-100/30 break-words">
                 {l(lang, supporter.thanks.en, supporter.thanks.fr, supporter.thanks.de)}
               </p>
             </div>
