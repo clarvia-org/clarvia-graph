@@ -10,6 +10,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-07-05",
+    headline: {
+      en: "Trauerwee ASBL Endorses Clarvia's Mission and Future Pilot",
+      fr: "Trauerwee ASBL soutient la mission et le futur pilote de Clarvia",
+      de: "Trauerwee ASBL unterstützt Clarvias Mission und zukünftiges Pilotprojekt",
+    },
+    body: {
+      en: "Trauerwee ASBL, a Luxembourg non-profit supporting bereaved children, young people, and their families, has expressed its support for the mission and public-interest objectives of Clarvia ASBL, including plans for a future pilot. In their letter of support, Trauerwee highlighted the public value of initiatives that make administrative processes more understandable, structured, and predictable. We are grateful for Trauerwee's support and for the vital work they do with children, youth, and families navigating grief.",
+      fr: "Trauerwee ASBL, une association luxembourgeoise qui accompagne les enfants, les jeunes et les familles endeuillés, a exprimé son soutien à la mission et aux objectifs d'intérêt public de Clarvia ASBL, y compris son intention de participer à un futur projet pilote. Dans sa lettre de soutien, l'association a souligné l'intérêt public d'initiatives visant à rendre les démarches administratives plus compréhensibles, plus structurées et plus prévisibles. Nous sommes reconnaissants du soutien de Trauerwee et du travail essentiel qu'elle mène auprès des familles confrontées au deuil.",
+      de: "Trauerwee ASBL, eine luxemburgische gemeinnützige Organisation, die trauernde Kinder, Jugendliche und Familien begleitet, hat ihre Unterstützung für die Mission und die gemeinwohlorientierten Ziele von Clarvia ASBL bekräftigt und beabsichtigt, sich an einem zukünftigen Pilotprojekt zu beteiligen. In ihrem Unterstützungsschreiben hob die Organisation den öffentlichen Nutzen von Initiativen hervor, die administrative Abläufe verständlicher, strukturierter und vorhersehbarer machen. Wir danken Trauerwee für diese Unterstützung und für die wichtige Arbeit, die sie für trauernde Kinder, Jugendliche und Familien leistet.",
+    },
+  },
+  {
     date: "2026-07-01",
     headline: {
       en: "Google Workspace for Nonprofits approved and activated for Clarvia",
