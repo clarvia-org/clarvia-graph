@@ -55,6 +55,17 @@ authoring_status: draft
 
 CI will reject PRs that set `review_status: approved` or `authoring_status: approved` from external contributors.
 
+## Quality checks
+
+Before opening a pull request, run:
+
+- **Tests** — `pnpm test`
+- **Linting** — `pnpm lint`
+- **Type checking** — `pnpm typecheck`
+- **Graph validation** — `pnpm validate`
+
+Pull requests are expected to pass the same CI checks that run on the main branch and releases.
+
 ## Contributor agreement
 
 We use the [Developer Certificate of Origin (DCO)](https://developercertificate.org/). By submitting a PR, you certify that you have the right to submit the work under the project's licenses.
