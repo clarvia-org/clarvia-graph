@@ -145,6 +145,13 @@ The provenance chain, three-valued condition logic, publication gate, and EU sta
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get involved.
 
+## Supporters and Pilot Partners
+
+We are grateful to the organizations endorsing our public-interest mission and collaborating on practical implementation:
+
+- **[Trauerwee ASBL](https://trauerwee.lu)**: A Luxembourg non-profit supporting bereaved children, young people, and their families. Trauerwee ASBL has formally endorsed our mission and plans to participate in our future bereavement pilot.
+- **[TSC Real Estate](https://www.tsc-realestate.de/en/)**: A leading European healthcare real estate investment manager, supporting Clarvia's mission to make essential post-bereavement administrative information structured, open, and free.
+
 ## Related repositories
 
 - [workflow-web](https://github.com/clarvia-org/workflow-web) — Consumer web application at [clarvia.org](https://clarvia.org)
