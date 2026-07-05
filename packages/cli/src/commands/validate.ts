@@ -135,73 +135,7 @@ export async function runValidate(
   const results: ValidateResult[] = [];
 
   for (const file of dataFiles) {
-    const relPath = toPosixRel(file, rootDir);
-    const schemaFile = resolveSchemaFile(relPath);
-
-    if (!schemaFile) {
-      results.push({
-        file: relPath,
-        schema: "(unknown)",
-        valid: false,
-        errors: [`No schema mapping for path: ${relPath}`],
-      });
-      continue;
-    }
-
-    const schema = schemaCache.get(schemaFile);
-    if (!schema) {
-      results.push({
-        file: relPath,
-        schema: schemaFile,
-        valid: false,
-        errors: [
-          `Schema file not found: schemas/v0.1/${schemaFile} — it may not have been created yet`,
-        ],
-      });
-      continue;
-    }
-
-    let data: unknown;
-    try {
-      const raw = readFileSync(file, "utf-8");
-      data = parseYaml(raw);
-    } catch (err) {
-      results.push({
-        file: relPath,
-        schema: schemaFile,
-        valid: false,
-        errors: [`YAML parse error: ${(err as Error).message}`],
-      });
-      continue;
-    }
-
-    const schemaId = schema["$id"] as string | undefined;
-    const validate = schemaId
-      ? ajv.getSchema(schemaId)
-      : ajv.compile(schema);
-
-    if (!validate) {
-      results.push({
-        file: relPath,
-        schema: schemaFile,
-        valid: false,
-        errors: [`Could not compile schema: ${schemaFile}`],
-      });
-      continue;
-    }
-
-    const valid = validate(data) as boolean;
-    results.push({
-      file: relPath,
-      schema: schemaFile,
-      valid,
-      errors: valid
-        ? undefined
-        : (validate.errors ?? []).map(
-            (e: ErrorObject) =>
-              `${e.instancePath || "/"} ${e.message ?? "unknown error"}`,
-          ),
-    });
+    results.push(validateSingleFile(file, rootDir, schemaCache, ajv));
   }
 
   validateSnapshotsAndAnchors(rootDir, results);
@@ -209,6 +143,78 @@ export async function runValidate(
 
   const ok = results.every((r: ValidateResult) => r.valid);
   return { results, ok };
+}
+
+/** Validate a single YAML file against its mapped schema. */
+function validateSingleFile(
+  file: string,
+  rootDir: string,
+  schemaCache: Map<string, Record<string, unknown>>,
+  ajv: InstanceType<typeof Ajv>,
+): ValidateResult {
+  const relPath = toPosixRel(file, rootDir);
+  const schemaFile = resolveSchemaFile(relPath);
+
+  if (!schemaFile) {
+    return {
+      file: relPath,
+      schema: "(unknown)",
+      valid: false,
+      errors: [`No schema mapping for path: ${relPath}`],
+    };
+  }
+
+  const schema = schemaCache.get(schemaFile);
+  if (!schema) {
+    return {
+      file: relPath,
+      schema: schemaFile,
+      valid: false,
+      errors: [
+        `Schema file not found: schemas/v0.1/${schemaFile} — it may not have been created yet`,
+      ],
+    };
+  }
+
+  let data: unknown;
+  try {
+    const raw = readFileSync(file, "utf-8");
+    data = parseYaml(raw);
+  } catch (err) {
+    return {
+      file: relPath,
+      schema: schemaFile,
+      valid: false,
+      errors: [`YAML parse error: ${(err as Error).message}`],
+    };
+  }
+
+  const schemaId = schema["$id"] as string | undefined;
+  const validate = schemaId
+    ? ajv.getSchema(schemaId)
+    : ajv.compile(schema);
+
+  if (!validate) {
+    return {
+      file: relPath,
+      schema: schemaFile,
+      valid: false,
+      errors: [`Could not compile schema: ${schemaFile}`],
+    };
+  }
+
+  const valid = validate(data) as boolean;
+  return {
+    file: relPath,
+    schema: schemaFile,
+    valid,
+    errors: valid
+      ? undefined
+      : (validate.errors ?? []).map(
+          (e: ErrorObject) =>
+            `${e.instancePath || "/"} ${e.message ?? "unknown error"}`,
+        ),
+  };
 }
 
 // ── Snapshot map type ────────────────────────────────────────────────

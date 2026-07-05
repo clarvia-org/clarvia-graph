@@ -389,9 +389,36 @@ function filterCandidateConsequences(
 
 // ── Step 4: Evaluate consequence conditions ──────────────────────────
 
+type ConditionResult = { result: TriValue; missingFacts: string[] };
+
+/** Resolve a single condition ref, using cache if available. */
+function resolveCondition(
+  condRef: string,
+  conditionResultCache: Map<string, ConditionResult>,
+  graph: LoadedGraph,
+  facts: Fact[],
+  temporalCtx: TemporalContext,
+): ConditionResult {
+  const cached = conditionResultCache.get(condRef);
+  if (cached) return cached;
+
+  const condition = graph.conditions.get(condRef);
+  let resolved: ConditionResult;
+  if (!condition) {
+    resolved = { result: "unknown", missingFacts: [] };
+  } else if (recordApplies(condition, temporalCtx)) {
+    resolved = evaluateCondition(condition.expression, facts);
+  } else {
+    resolved = { result: false, missingFacts: [] };
+  }
+
+  conditionResultCache.set(condRef, resolved);
+  return resolved;
+}
+
 function evaluateConsequenceConditions(
   consequence: Consequence,
-  conditionResultCache: Map<string, { result: TriValue; missingFacts: string[] }>,
+  conditionResultCache: Map<string, ConditionResult>,
   graph: LoadedGraph,
   facts: Fact[],
   temporalCtx: TemporalContext,
@@ -401,28 +428,14 @@ function evaluateConsequenceConditions(
   const allMissingFacts: string[] = [];
 
   for (const condRef of conditionRefs) {
-    let cached = conditionResultCache.get(condRef);
-    if (!cached) {
-      const condition = graph.conditions.get(condRef);
-      if (condition) {
-        if (recordApplies(condition, temporalCtx)) {
-          cached = evaluateCondition(condition.expression, facts);
-        } else {
-          cached = { result: false, missingFacts: [] };
-        }
-      } else {
-        cached = { result: "unknown", missingFacts: [] };
-      }
-      conditionResultCache.set(condRef, cached);
-    }
+    const resolved = resolveCondition(condRef, conditionResultCache, graph, facts, temporalCtx);
+    allMissingFacts.push(...resolved.missingFacts);
 
-    allMissingFacts.push(...cached.missingFacts);
-
-    if (cached.result === false) {
+    if (resolved.result === false) {
       overallResult = false;
       break;
     }
-    if (cached.result === "unknown") {
+    if (resolved.result === "unknown") {
       overallResult = "unknown";
     }
   }
@@ -436,16 +449,19 @@ function evaluateConsequenceConditions(
 
 // ── Step 5: Expand consequence into candidate items ──────────────────
 
-function expandConsequenceToItems(
-  consequence: Consequence,
-  overallResult: TriValue,
-  allMissingFacts: string[],
-  conditionRefs: string[],
-  conditionResultCache: Map<string, { result: TriValue; missingFacts: string[] }>,
-  scenarioHash: string,
-  graph: LoadedGraph,
-  temporalCtx: TemporalContext,
-): CandidateItem[] {
+interface ExpandContext {
+  consequence: Consequence;
+  overallResult: TriValue;
+  allMissingFacts: string[];
+  conditionRefs: string[];
+  conditionResultCache: Map<string, ConditionResult>;
+  scenarioHash: string;
+  graph: LoadedGraph;
+  temporalCtx: TemporalContext;
+}
+
+function expandConsequenceToItems(ctx: ExpandContext): CandidateItem[] {
+  const { consequence, overallResult, allMissingFacts, conditionRefs, conditionResultCache, scenarioHash, graph, temporalCtx } = ctx;
   const taskRefs = consequence.task_template_refs ?? [];
   const results: CandidateItem[] = [];
 
@@ -750,10 +766,10 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     const { overallResult, allMissingFacts } = evaluateConsequenceConditions(
       consequence, conditionResultCache, graph, facts, temporalCtx,
     );
-    candidatesList.push(...expandConsequenceToItems(
+    candidatesList.push(...expandConsequenceToItems({
       consequence, overallResult, allMissingFacts, conditionRefs,
       conditionResultCache, scenarioHash, graph, temporalCtx,
-    ));
+    }));
   }
 
   // ─── Deduplicate and merge candidates ───────────────────────────
