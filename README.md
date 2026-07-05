@@ -147,10 +147,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get involved.
 
 ## Supporters and Pilot Partners
 
-We are grateful to the organizations endorsing our public-interest mission and collaborating on practical implementation:
-
-- **[Trauerwee ASBL](https://trauerwee.lu)**: A Luxembourg non-profit supporting bereaved children, young people, and their families. Trauerwee ASBL has formally endorsed our mission and plans to participate in our future bereavement pilot.
-- **[TSC Real Estate](https://www.tsc-realestate.de/en/)**: A leading European healthcare real estate investment manager, supporting Clarvia's mission to make essential post-bereavement administrative information structured, open, and free.
+We are grateful for the support of ecosystem partners who have endorsed Clarvia’s public-interest mission, including **[Trauerwee ASBL](https://trauerwee.lu/)**, which has expressed its intention to support a future pilot, and **[TSC Real Estate](https://www.tsc-realestate.de/en/)**, which has endorsed our public-interest goals.
 
 ## Related repositories
 
