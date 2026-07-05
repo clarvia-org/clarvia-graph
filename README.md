@@ -106,6 +106,10 @@ Every checklist item traces back to an official source. No legal consequence pub
 - **Static exports**: Consumer apps load generated JSON at build time — no runtime API dependency
 - **Privacy-first**: Client-side condition evaluation, no user data sent to servers
 
+## Software quality and reproducibility
+
+This repository uses automated quality checks for tests, linting, static analysis, dependency and security scanning, documented installation, reproducible examples, citation metadata, licensing information, and archived releases. These checks run in CI on every pull request and release.
+
 ## Standards
 
 Clarvia maintains internal Clarvia-native schemas and generates compatibility views for:
