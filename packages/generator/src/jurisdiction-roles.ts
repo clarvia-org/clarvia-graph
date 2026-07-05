@@ -61,7 +61,7 @@ export function resolveJurisdictionRoles(facts: Fact[]): JurisdictionRoles {
   };
 
   for (const fact of facts) {
-    const val = String(fact.value ?? "");
+    const val = typeof fact.value === "string" ? fact.value : String(fact.value ?? "");
 
     // Single-value roles
     const singleRole = ROLE_MAPPING[fact.fact_type];

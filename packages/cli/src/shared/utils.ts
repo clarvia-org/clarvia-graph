@@ -13,7 +13,7 @@ import { resolve, relative } from "node:path";
  * was duplicated in every CLI command.
  */
 export function toPosixRel(abs: string, root: string): string {
-  return relative(root, abs).split("\\").join("/");
+  return relative(root, abs).replaceAll("\\", "/");
 }
 
 /**

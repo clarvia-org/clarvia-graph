@@ -722,7 +722,7 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
   // Determine event date for temporal filtering
   const eventDate = optEventDate ?? facts.find(f => f.fact_type === "death.date" || f.fact_type === "death.datetime")?.value ?? referenceDate;
 
-  const temporalCtx: TemporalContext = { asOfDate: referenceDate, eventDate: String(eventDate) };
+  const temporalCtx: TemporalContext = { asOfDate: referenceDate, eventDate: typeof eventDate === "string" ? eventDate : String(eventDate) };
 
   // Compute deterministic scenario hash
   const canonicalFacts = JSON.stringify(

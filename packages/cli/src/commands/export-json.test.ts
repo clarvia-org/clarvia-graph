@@ -179,13 +179,13 @@ describe("export-json: runExportJson", () => {
     const result = runExportJson(ROOT_DIR);
     const content = JSON.parse(readFileSync(outPath, "utf-8"));
 
-    expect(content.consequences.length).toBe(result.stats.consequences);
-    expect(content.task_templates.length).toBe(result.stats.task_templates);
-    expect(content.conditions.length).toBe(result.stats.conditions);
-    expect(content.deadlines.length).toBe(result.stats.deadlines);
-    expect(content.authorities.length).toBe(result.stats.authorities);
-    expect(content.evidence_types.length).toBe(result.stats.evidence_types);
-    expect(content.intake_fact_types.length).toBe(
+    expect(content.consequences).toHaveLength(result.stats.consequences);
+    expect(content.task_templates).toHaveLength(result.stats.task_templates);
+    expect(content.conditions).toHaveLength(result.stats.conditions);
+    expect(content.deadlines).toHaveLength(result.stats.deadlines);
+    expect(content.authorities).toHaveLength(result.stats.authorities);
+    expect(content.evidence_types).toHaveLength(result.stats.evidence_types);
+    expect(content.intake_fact_types).toHaveLength(
       result.stats.intake_fact_types,
     );
   });
