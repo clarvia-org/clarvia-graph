@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import { LANGUAGES, type Lang } from "@/lib/i18n";
+import CookieConsent from "@/components/CookieConsent";
+
 
 const BASE_URL = "https://clarvia.org";
 
@@ -187,6 +189,7 @@ export default async function LangLayout({
       ))}
       <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}/en`} />
       {children}
+      <CookieConsent lang={lang as Lang} />
     </>
   );
 }

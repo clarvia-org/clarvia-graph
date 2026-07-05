@@ -28,35 +28,49 @@ export default function RootLayout({
           rel="stylesheet"
         />
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer />
-      </head>
-      <body className="min-h-screen text-calm-blue-700 antialiased font-sans flex flex-col" suppressHydrationWarning>
-        {children}
         {/* Google Consent Mode v2 — must fire before gtag.js loads */}
-        <Script
-          id="gtag-consent"
-          strategy="beforeInteractive"
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              gtag('consent', 'default', {
-                'analytics_storage': 'denied',
-                'ad_storage': 'denied',
-                'ad_user_data': 'denied',
-                'ad_personalization': 'denied',
-                'functionality_storage': 'denied',
-                'personalization_storage': 'denied',
-                'security_storage': 'granted',
-                'wait_for_update': 500
-              });
+              
+              var consentState = {
+                analytics_storage: 'denied',
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                functionality_storage: 'denied',
+                personalization_storage: 'denied',
+                security_storage: 'granted',
+                wait_for_update: 500
+              };
+              
+              try {
+                var saved = localStorage.getItem('clarvia-consent');
+                if (saved) {
+                  var parsed = JSON.parse(saved);
+                  if (parsed && parsed.version === '2026-07-clarvia-consent-v1' && parsed.status === 'granted') {
+                    consentState.analytics_storage = 'granted';
+                    consentState.ad_storage = 'granted';
+                    consentState.ad_user_data = 'granted';
+                  }
+                }
+              } catch (e) {}
+              
+              gtag('consent', 'default', consentState);
+              gtag('set', 'ads_data_redaction', true);
               gtag('js', new Date());
               gtag('config', 'G-K67M5B4932');
             `,
           }}
         />
+      </head>
+      <body className="min-h-screen text-calm-blue-700 antialiased font-sans flex flex-col" suppressHydrationWarning>
+        {children}
         <Script
           id="gtag-js"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-K67M5B4932"
         />
       </body>

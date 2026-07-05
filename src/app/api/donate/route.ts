@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
 
   const amountCents = Math.round(amount * 100);
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://clarvia.org";
-  const successUrl = `${baseUrl}/${lang}/support?donated=true`;
+  const successUrl = `${baseUrl}/${lang}/support?donated=true&session_id={CHECKOUT_SESSION_ID}`;
   const cancelUrl = `${baseUrl}/${lang}/support`;
 
   // Map site language to Stripe Checkout locale
@@ -142,3 +142,46 @@ export async function POST(req: NextRequest) {
     );
   }
 }
+
+/**
+ * GET /api/donate
+ *
+ * Retrieves the status and verified details of a Stripe Checkout Session.
+ */
+export async function GET(req: NextRequest) {
+  const stripe = getStripe();
+  if (!stripe) {
+    return NextResponse.json(
+      { error: "Stripe is not configured." },
+      { status: 503 }
+    );
+  }
+
+  const { searchParams } = new URL(req.url);
+  const sessionId = searchParams.get("session_id");
+
+  if (!sessionId) {
+    return NextResponse.json(
+      { error: "Missing session_id." },
+      { status: 400 }
+    );
+  }
+
+  try {
+    const session = await stripe.checkout.sessions.retrieve(sessionId);
+    return NextResponse.json({
+      id: session.id,
+      payment_status: session.payment_status,
+      status: session.status,
+      amount: session.amount_total ? session.amount_total / 100 : null,
+      currency: session.currency?.toUpperCase(),
+    });
+  } catch (err) {
+    console.error("Failed to retrieve Stripe session:", err);
+    return NextResponse.json(
+      { error: "Invalid or expired session ID." },
+      { status: 400 }
+    );
+  }
+}
+

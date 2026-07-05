@@ -1,4 +1,5 @@
 import { type Lang, l } from "@/lib/i18n";
+import CookieSettingsTrigger from "@/components/CookieSettingsTrigger";
 
 export default function FooterSection({ lang }: { lang: Lang }) {
   return (
@@ -267,7 +268,11 @@ export default function FooterSection({ lang }: { lang: Lang }) {
           <p className="font-medium text-sm">Clarvia ASBL</p>
           <p>RCS Luxembourg F15680</p>
           <p>46, Rue de la Lavande · 1923 Luxembourg</p>
-          <p className="mt-2">clarvia.org · clarvia.eu</p>
+          <p className="mt-2 text-calm-blue-400">
+            {l(lang, "clarvia.org · clarvia.eu", "clarvia.org · clarvia.eu", "clarvia.org · clarvia.eu")}
+            {" · "}
+            <CookieSettingsTrigger lang={lang} />
+          </p>
         </div>
       </div>
     </footer>
