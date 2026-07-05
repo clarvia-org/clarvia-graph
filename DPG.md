@@ -42,7 +42,6 @@ The repository uses a split licensing model depending on the type of asset, full
 Clarvia's first open dataset is published on Luxembourg's national open data portal:
 - **Dataset name**: [Bereavement Source Register — Luxembourg](https://data.public.lu/en/datasets/bereavement-source-register-luxembourg/)
 - **Portal**: data.public.lu
-- **URL**: [https://data.public.lu/en/datasets/bereavement-source-register-luxembourg/](https://data.public.lu/en/datasets/bereavement-source-register-luxembourg/)
 - **License**: CC-BY-4.0
 - **Publisher**: Clarvia ASBL
 
@@ -69,7 +68,7 @@ The repository integrates and targets alignment with the following standards:
 - **CCCEV** (Core Criterion and Core Evidence Vocabulary): Used to define required evidence and certificates.
 - **ELI** (European Legislation Identifier): Links source assertions to formal EU/national legislative acts.
 - **PROV-O** (W3C Provenance Ontology): Traces validation history and source extraction steps. (Planned integration: see TODO in [`docs/FOUNDATION.md`](docs/FOUNDATION.md#standards-alignment)).
-- **FAIR data principles**: Follows the fair-software.eu recommendations (currently 4/5 compliance).
+- **FAIR data principles**: Follows the fair-software.eu recommendations (self-assessed 4/5 as of June 2026; status should be revalidated periodically).
 - **REUSE licensing practice**: Full REUSE compliance with strict machine-readable file headers.
 - **OpenSSF Best Practices**: Registered with the OpenSSF Best Practices badge program (passing).
 

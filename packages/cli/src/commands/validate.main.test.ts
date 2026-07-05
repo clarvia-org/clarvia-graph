@@ -38,7 +38,12 @@ describe("main() — validate", () => {
   beforeEach(() => {
     vi.spyOn(console, "log").mockImplementation(() => {});
     vi.spyOn(console, "error").mockImplementation(() => {});
-    vi.spyOn(process, "exit").mockImplementation((() => undefined) as never);
+    vi
+      .spyOn(process, "exit")
+      .mockImplementation(
+        // eslint-disable-next-line @typescript-eslint/no-empty-function
+        (() => {}) as unknown as typeof process.exit,
+      );
     (globalThis as unknown as MockFsGlobal).__mockFsFail = false;
   });
 
@@ -53,6 +58,7 @@ describe("main() — validate", () => {
     expect(console.log).toHaveBeenCalledWith(
       expect.stringContaining("files passed validation"),
     );
+    expect(console.error).not.toHaveBeenCalled();
     expect(process.exit).toHaveBeenCalledWith(0);
   });
 
@@ -61,7 +67,9 @@ describe("main() — validate", () => {
 
     await main();
 
-    expect(console.error).toHaveBeenCalled();
+    expect(console.error).toHaveBeenCalledWith(
+      expect.stringContaining("mock read error"),
+    );
     expect(process.exit).toHaveBeenCalledWith(1);
   });
 });
