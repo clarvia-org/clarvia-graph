@@ -27,7 +27,7 @@ import {
 
 /** Turn a Windows path into a forward-slash posix-style relative path */
 function toPosixRel(abs: string, root: string): string {
-  return relative(root, abs).split("\\").join("/");
+  return relative(root, abs).replaceAll("\\", "/");
 }
 
 // ── public result types ──────────────────────────────────────────────

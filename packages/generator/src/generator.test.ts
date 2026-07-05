@@ -82,7 +82,7 @@ describe("generateChecklist", () => {
       lifeEvent: "marriage", // no records for this
     });
 
-    expect(output.items.length).toBe(0);
+    expect(output.items).toHaveLength(0);
   });
 
   it("returns no DE items when DE consequences are restricted_source", () => {
@@ -102,7 +102,7 @@ describe("generateChecklist", () => {
     // DE consequences are distribution_status: restricted_source,
     // so the generator filters them out per spec §10.6.
     // LU conditions are also false → no items at all.
-    expect(output.items.length).toBe(0);
+    expect(output.items).toHaveLength(0);
   });
 
   it("output has correct structure", () => {
@@ -308,7 +308,7 @@ describe("generateChecklist", () => {
 
     // DE consequences are restricted_source → no DE items in public output
     const deItems = output.items.filter((i) => i.jurisdiction_contexts.includes("DE"));
-    expect(deItems.length).toBe(0);
+    expect(deItems).toHaveLength(0);
 
     // Should still have jurisdiction_roles populated (based on facts, not output)
     expect(output.jurisdiction_roles.death_place).toContain("LU");
@@ -391,7 +391,7 @@ describe("generateChecklist", () => {
     const output2 = generateChecklist({ graph, facts: factsUpper, lifeEvent: "bereavement", asOfDate: "2026-06-03" });
 
     // After normalization, both should produce the same result
-    expect(output1.items.length).toBe(output2.items.length);
+    expect(output1.items).toHaveLength(output2.items.length);
     expect(output1.id).toBe(output2.id);
   });
 
@@ -470,7 +470,7 @@ describe("generateChecklist", () => {
         lifeEvent: "bereavement",
       });
 
-      expect(output.items.length).toBe(1);
+      expect(output.items).toHaveLength(1);
       expect(output.items[0].title).toBe("Merged Task");
       expect(output.items[0].needed_for).toEqual(["Consequence 1", "Consequence 2"]);
       expect(output.items[0].jurisdiction_contexts).toEqual(["LU"]);
@@ -553,7 +553,7 @@ describe("generateChecklist", () => {
         lifeEvent: "bereavement",
       });
 
-      expect(output.items.length).toBe(2);
+      expect(output.items).toHaveLength(2);
       expect(output.items[0].id).not.toBe(output.items[1].id);
     });
 
@@ -715,7 +715,7 @@ describe("generateChecklist", () => {
         asOfDate: "2026-06-03",
         eventDate: "2026-06-03",
       });
-      expect(output.items.length).toBe(1);
+      expect(output.items).toHaveLength(1);
       expect(output.items[0].source_summary?.assertion_count).toBe(1);
     });
 
@@ -729,7 +729,7 @@ describe("generateChecklist", () => {
         asOfDate: "2026-06-03",
         eventDate: "2026-06-03",
       });
-      expect(output.items.length).toBe(0);
+      expect(output.items).toHaveLength(0);
     });
 
     it("excludes expired consequence by record_valid_to", () => {
@@ -742,7 +742,7 @@ describe("generateChecklist", () => {
         asOfDate: "2026-06-03",
         eventDate: "2026-06-03",
       });
-      expect(output.items.length).toBe(0);
+      expect(output.items).toHaveLength(0);
     });
 
     it("excludes not-yet-effective consequence by legal_effective_from", () => {
@@ -755,7 +755,7 @@ describe("generateChecklist", () => {
         asOfDate: "2026-06-03",
         eventDate: "2026-06-03",
       });
-      expect(output.items.length).toBe(0);
+      expect(output.items).toHaveLength(0);
     });
 
     it("excludes legally expired consequence by legal_effective_to", () => {
@@ -768,7 +768,7 @@ describe("generateChecklist", () => {
         asOfDate: "2026-06-03",
         eventDate: "2026-06-03",
       });
-      expect(output.items.length).toBe(0);
+      expect(output.items).toHaveLength(0);
     });
 
     it("excludes task template if it does not apply temporally", () => {
@@ -782,7 +782,7 @@ describe("generateChecklist", () => {
         eventDate: "2026-06-03",
       });
       // The consequence itself applies, but has no tasks since the only task template doesn't apply
-      expect(output.items.length).toBe(0);
+      expect(output.items).toHaveLength(0);
     });
 
     it("excludes condition when it does not apply temporally, causing trigger to fail", () => {
@@ -811,7 +811,7 @@ describe("generateChecklist", () => {
         asOfDate: "2026-06-03",
         eventDate: "2026-06-03",
       });
-      expect(output.items.length).toBe(0);
+      expect(output.items).toHaveLength(0);
     });
 
     it("excludes deadline when it does not apply temporally", () => {
@@ -825,7 +825,7 @@ describe("generateChecklist", () => {
         asOfDate: "2026-06-03",
         eventDate: "2026-06-03",
       });
-      expect(output.items.length).toBe(1);
+      expect(output.items).toHaveLength(1);
       expect(output.items[0].urgency?.deadline_label).toBeNull();
     });
 
@@ -839,7 +839,7 @@ describe("generateChecklist", () => {
         asOfDate: "2026-06-03",
         eventDate: "2026-06-03",
       });
-      expect(output.items.length).toBe(1);
+      expect(output.items).toHaveLength(1);
       expect(output.items[0].source_summary?.assertion_count).toBe(0);
     });
   });

@@ -46,7 +46,8 @@ export function normalizeFacts(facts: Fact[]): Fact[] {
     // Handle array facts (e.g., work_history.country with multiple values)
     if (COUNTRY_ARRAY_PATHS.has(fact.fact_type)) {
       // Uppercase and deduplicate — arrays are always string-based country codes
-      const rawArr = Array.isArray(fact.value) ? fact.value : String(fact.value ?? "").split(",");
+      const rawStr = typeof fact.value === "string" ? fact.value : String(fact.value ?? "");
+      const rawArr = Array.isArray(fact.value) ? fact.value : rawStr.split(",");
       const values = rawArr.map((v: unknown) => String(v).trim().toUpperCase());
       const unique = [...new Set(values)].sort((a, b) => a.localeCompare(b));
       normalized.push({ fact_type: fact.fact_type, value: unique.join(",") });
@@ -57,7 +58,7 @@ export function normalizeFacts(facts: Fact[]): Fact[] {
       // Preserve arrays (e.g., employment_status: [self_employed, business_owner])
       normalized.push({ fact_type: fact.fact_type, value: fact.value });
     } else {
-      const val = String(fact.value ?? "");
+      const val = typeof fact.value === "string" ? fact.value : String(fact.value ?? "");
       normalized.push({
         fact_type: fact.fact_type,
         value: normalizeValue(fact.fact_type, val),

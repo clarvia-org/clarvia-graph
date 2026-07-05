@@ -878,7 +878,7 @@ describe("golden: generator pipeline internals", () => {
     });
 
     // Both items should have the same status (applies), derived from cached condition
-    expect(output.items.length).toBe(2);
+    expect(output.items).toHaveLength(2);
     expect(output.items[0].status).toBe("applies");
     expect(output.items[1].status).toBe("applies");
   });
@@ -903,7 +903,7 @@ describe("golden: generator pipeline internals", () => {
       eventDate: FIXED_AS_OF,
     });
 
-    expect(output.items.length).toBe(1);
+    expect(output.items).toHaveLength(1);
     expect(output.items[0].title).toBe("Bare Consequence Title");
     expect(output.items[0].action).toBeNull();
   });
@@ -938,7 +938,7 @@ describe("golden: generator pipeline internals", () => {
       // eventDate NOT provided — should fall back to death.date
     });
 
-    expect(output.items.length).toBe(1);
+    expect(output.items).toHaveLength(1);
   });
 
   // ── 6f. Item sorting order ────────────────────────────────────────
@@ -1098,14 +1098,14 @@ describe("golden: generator pipeline internals", () => {
     });
 
     // Two consequences merge into one visible item
-    expect(output.items.length).toBe(1);
+    expect(output.items).toHaveLength(1);
     expect(output.items[0].title).toBe("Merged Task");
     expect(output.items[0].needed_for).toEqual(["Merge Consequence 1", "Merge Consequence 2"]);
     expect(output.items[0].jurisdiction_contexts).toEqual(["LU"]);
     // Merged assertion count
     expect(output.items[0].source_summary?.assertion_count).toBe(2);
     // Merged explanation trace exists
-    expect(output.explanation_traces.length).toBe(1);
+    expect(output.explanation_traces).toHaveLength(1);
   });
 
   // ── 6j. Dedupe strategy: do_not_merge ─────────────────────────────
@@ -1144,7 +1144,7 @@ describe("golden: generator pipeline internals", () => {
     });
 
     // Items remain separate
-    expect(output.items.length).toBe(2);
+    expect(output.items).toHaveLength(2);
     expect(output.items[0].id).not.toBe(output.items[1].id);
     const titles = output.items.map(i => i.title).sort();
     expect(titles).toEqual(["Task Separate 1", "Task Separate 2"]);
@@ -1196,13 +1196,13 @@ describe("golden: generator pipeline internals", () => {
     });
 
     // LU pair merges into one, DE stays separate → 2 items total
-    expect(output.items.length).toBe(2);
+    expect(output.items).toHaveLength(2);
 
     const luItems = output.items.filter(i => i.jurisdiction_contexts.includes("LU"));
     const deItems = output.items.filter(i => i.jurisdiction_contexts.includes("DE"));
 
-    expect(luItems.length).toBe(1);
-    expect(deItems.length).toBe(1);
+    expect(luItems).toHaveLength(1);
+    expect(deItems).toHaveLength(1);
 
     // Merged LU item has combined needed_for
     expect(luItems[0].needed_for).toEqual(["LU Consequence 1", "LU Consequence 2"]);

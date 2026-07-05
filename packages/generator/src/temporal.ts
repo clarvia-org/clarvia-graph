@@ -11,13 +11,15 @@ export interface TemporalContext {
 /** Returns true if `fieldValue` is after `referenceDate` (ISO string comparison). */
 function isAfterDate(fieldValue: unknown, referenceDate: string): boolean {
   if (fieldValue === undefined || fieldValue === null) return false;
-  return String(fieldValue) > referenceDate;
+  const str = typeof fieldValue === "string" ? fieldValue : String(fieldValue);
+  return str > referenceDate;
 }
 
 /** Returns true if `fieldValue` is on or before `referenceDate` (ISO string comparison). */
 function isOnOrBeforeDate(fieldValue: unknown, referenceDate: string): boolean {
   if (fieldValue === undefined || fieldValue === null) return false;
-  return String(fieldValue) <= referenceDate;
+  const str = typeof fieldValue === "string" ? fieldValue : String(fieldValue);
+  return str <= referenceDate;
 }
 
 export function recordApplies(record: Record<string, unknown>, ctx: TemporalContext): boolean {
