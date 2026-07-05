@@ -57,8 +57,8 @@ export const UPDATES: Update[] = [
     },
     body: {
       en: "Clarvia now has a YouTube channel to share our journey building practical support for families after loss. The first short introduces our mission — making the invisible admin job after a death more manageable. We plan to post 2–3 short videos per month.",
-      fr: "Clarvia now has a YouTube channel to share our journey building practical support for families after loss. The first short introduces our mission — making the invisible admin job after a death more manageable. We plan to post 2–3 short videos per month.",
-      de: "Clarvia now has a YouTube channel to share our journey building practical support for families after loss. The first short introduces our mission — making the invisible admin job after a death more manageable. We plan to post 2–3 short videos per month.",
+      fr: "Clarvia dispose désormais d'une chaîne YouTube pour partager notre parcours dans la création d'un soutien pratique aux familles après un deuil. Le premier format court présente notre mission — rendre plus gérable le travail administratif invisible qui suit un décès. Nous prévoyons de publier 2 à 3 courtes vidéos par mois.",
+      de: "Clarvia hat jetzt einen YouTube-Kanal, um unseren Weg beim Aufbau praktischer Unterstützung für Familien nach einem Verlust zu teilen. Das erste Kurzvideo stellt unsere Mission vor — die unsichtbare Verwaltungsarbeit nach einem Todesfall besser handhabbar zu machen. Wir planen, pro Monat 2–3 kurze Videos zu veröffentlichen.",
     },
   },
   {
@@ -83,8 +83,8 @@ export const UPDATES: Update[] = [
     },
     body: {
       en: "Clarvia is now enrolled in GitHub Sponsors. Anyone who values free, multilingual bereavement guidance can support the project directly through GitHub. Sponsorships help fund development, hosting, and the expansion of Clarvia's checklist to new countries. The Sponsor button is now visible on all Clarvia repositories.",
-      fr: "Clarvia est desormais inscrit sur GitHub Sponsors. Toute personne attachee a un accompagnement administratif gratuit et multilingue en cas de deuil peut soutenir le projet directement via GitHub. Les parrainages contribuent a financer le developpement, l'hebergement et l'extension de la checklist Clarvia a de nouveaux pays. Le bouton Sponsor est desormais visible sur tous les depots Clarvia.",
-      de: "Clarvia ist jetzt bei GitHub Sponsors registriert. Alle, die kostenlose und mehrsprachige Unterstuetzung bei Verwaltungsaufgaben im Trauerfall schaetzen, koennen das Projekt direkt ueber GitHub unterstuetzen. Sponsoring hilft bei der Finanzierung von Entwicklung, Hosting und der Erweiterung der Clarvia-Checkliste auf weitere Laender. Der Sponsor-Button ist jetzt auf allen Clarvia-Repositories sichtbar.",
+      fr: "Clarvia est désormais inscrit sur GitHub Sponsors. Toute personne attachée à un accompagnement administratif gratuit et multilingue en cas de deuil peut soutenir le projet directement via GitHub. Les parrainages contribuent à financer le développement, l'hébergement et l'extension de la checklist Clarvia à de nouveaux pays. Le bouton Sponsor est désormais visible sur tous les dépôts Clarvia.",
+      de: "Clarvia ist jetzt bei GitHub Sponsors registriert. Alle, die kostenlose und mehrsprachige Unterstützung bei Verwaltungsaufgaben im Trauerfall schätzen, können das Projekt direkt über GitHub unterstützen. Sponsoring hilft bei der Finanzierung von Entwicklung, Hosting und der Erweiterung der Clarvia-Checkliste auf weitere Länder. Der Sponsor-Button ist jetzt auf allen Clarvia-Repositories sichtbar.",
     },
   },
   {
@@ -96,8 +96,8 @@ export const UPDATES: Update[] = [
     },
     body: {
       en: "Clarvia now has a dedicated support page at clarvia.org/en/support. The page accepts one-time and recurring donations via Stripe, available in English, French, and German. All contributions go directly to Clarvia ASBL and help fund development, hosting, and country expansion.",
-      fr: "Clarvia dispose desormais d'une page de soutien dediee sur clarvia.org/fr/support. La page accepte les dons ponctuels et recurrents via Stripe, disponible en anglais, francais et allemand. Toutes les contributions vont directement a Clarvia ASBL et aident a financer le developpement, l'hebergement et l'expansion vers de nouveaux pays.",
-      de: "Clarvia hat jetzt eine eigene Unterstuetzungsseite unter clarvia.org/de/support. Die Seite akzeptiert einmalige und wiederkehrende Spenden ueber Stripe, verfuegbar auf Englisch, Franzoesisch und Deutsch. Alle Beitraege gehen direkt an Clarvia ASBL und helfen bei der Finanzierung von Entwicklung, Hosting und Laendererweiterung.",
+      fr: "Clarvia dispose désormais d'une page de soutien dédiée sur clarvia.org/fr/support. La page accepte les dons ponctuels et récurrents via Stripe, disponible en anglais, français et allemand. Toutes les contributions vont directement à Clarvia ASBL et aident à financer le développement, l'hébergement et l'expansion vers de nouveaux pays.",
+      de: "Clarvia hat jetzt eine eigene Unterstützungsseite unter clarvia.org/de/support. Die Seite akzeptiert einmalige und wiederkehrende Spenden über Stripe, verfügbar auf Englisch, Französisch und Deutsch. Alle Beiträge gehen direkt an Clarvia ASBL und helfen bei der Finanzierung von Entwicklung, Hosting und Ländererweiterung.",
     },
   },
   {

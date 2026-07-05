@@ -11,6 +11,9 @@ const STRIPE_BILLING_PORTAL_URL =
   process.env.NEXT_PUBLIC_STRIPE_BILLING_PORTAL_URL ??
   "https://billing.stripe.com/p/login/cNieVd5j90I9dOs2d3b3q00";
 
+const CURRENT_RAISED = 3800;
+const FUNDING_GOAL = 10000;
+
 /* -- Donation tier data -- */
 
 function getMonthlyTiers(lang: Lang) {
@@ -85,7 +88,7 @@ export default function SupportPage() {
   // Goal progress animation on load
   useEffect(() => {
     const timer = setTimeout(() => {
-      setProgress((3800 / 10000) * 100);
+      setProgress((CURRENT_RAISED / FUNDING_GOAL) * 100);
     }, 100);
     return () => clearTimeout(timer);
   }, []);

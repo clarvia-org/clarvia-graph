@@ -2,6 +2,17 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { getStripe } from "@/lib/stripe";
 
+function getProductDescription(type: "monthly" | "onetime", lang: string, amount: number): string {
+  if (type === "monthly") {
+    if (lang === "fr") return `${amount} \u20AC/mois`;
+    if (lang === "de") return `${amount} \u20AC/Monat`;
+    return `\u20AC${amount}/month`;
+  }
+  if (lang === "fr") return `Don unique de ${amount} \u20AC`;
+  if (lang === "de") return `Einmalige Spende von ${amount} \u20AC`;
+  return `\u20AC${amount} one-time donation`;
+}
+
 /**
  * POST /api/donate
  *
@@ -56,13 +67,7 @@ export async function POST(req: NextRequest) {
       : lang === "de" ? "Spende an Clarvia ASBL"
       : "Donation to Clarvia ASBL";
 
-  const productDesc = type === "monthly"
-    ? lang === "fr" ? `${amount} \u20AC/mois`
-      : lang === "de" ? `${amount} \u20AC/Monat`
-      : `\u20AC${amount}/month`
-    : lang === "fr" ? `Don unique de ${amount} \u20AC`
-      : lang === "de" ? `Einmalige Spende von ${amount} \u20AC`
-      : `\u20AC${amount} one-time donation`;
+  const productDesc = getProductDescription(type, lang, amount);
 
   try {
     if (type === "monthly") {

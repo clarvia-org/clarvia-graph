@@ -21,7 +21,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   de: {
     title: "Über Clarvia - Mission, rechtliche Identität und Governance",
     description:
-      "Clarvia ASBL is ein gemeinnütziger Verein in Luxemburg, der kostenlose, mehrsprachige Trauerbegleitung für Familien aufbaut. Erfahren Sie mehr über unsere Mission, Rechtsstruktur und Arbeitsweise.",
+      "Clarvia ASBL ist ein gemeinnütziger Verein in Luxemburg, der kostenlose, mehrsprachige Trauerbegleitung für Familien aufbaut. Erfahren Sie mehr über unsere Mission, Rechtsstruktur und Arbeitsweise.",
   },
 };
 
