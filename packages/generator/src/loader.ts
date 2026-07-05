@@ -168,7 +168,8 @@ function loadDir<T extends GraphRecord>(
   return map;
 }
 
-export function loadGraph(rootDir: string): LoadedGraph {
+/** Load and index assertion records from batch files. */
+function loadAssertions(rootDir: string): Map<string, SourceAssertion> {
   const assertions = new Map<string, SourceAssertion>();
   const assertionFiles = globSync("sources/assertions/**/*.{yml,yaml}", { cwd: rootDir, absolute: true });
 
@@ -177,15 +178,7 @@ export function loadGraph(rootDir: string): LoadedGraph {
       const raw = readFileSync(file, "utf-8");
       const doc = parseYaml(raw) as { source_id: string; source_snapshot_id: string; assertions?: SourceAssertion[] };
       if (doc?.assertions && Array.isArray(doc.assertions)) {
-        for (const ass of doc.assertions) {
-          if (ass && typeof ass === "object" && typeof ass.id === "string") {
-            assertions.set(ass.id, {
-              ...ass,
-              source_id: ass.source_id || doc.source_id,
-              source_snapshot_id: ass.source_snapshot_id || doc.source_snapshot_id,
-            });
-          }
-        }
+        indexAssertionBatch(assertions, doc);
       }
     } catch (err) {
       // Ignore files that fail to load (will be caught by schema validation)
@@ -196,6 +189,26 @@ export function loadGraph(rootDir: string): LoadedGraph {
     }
   }
 
+  return assertions;
+}
+
+/** Index individual assertions from a parsed batch document. */
+function indexAssertionBatch(
+  assertions: Map<string, SourceAssertion>,
+  doc: { source_id: string; source_snapshot_id: string; assertions?: SourceAssertion[] },
+): void {
+  for (const ass of doc.assertions!) {
+    if (ass && typeof ass === "object" && typeof ass.id === "string") {
+      assertions.set(ass.id, {
+        ...ass,
+        source_id: ass.source_id || doc.source_id,
+        source_snapshot_id: ass.source_snapshot_id || doc.source_snapshot_id,
+      });
+    }
+  }
+}
+
+export function loadGraph(rootDir: string): LoadedGraph {
   return {
     consequences: loadDir<Consequence>(
       rootDir,
@@ -226,6 +239,6 @@ export function loadGraph(rootDir: string): LoadedGraph {
       rootDir,
       "sources/!(assertions|snapshots)/**/*.{yml,yaml}",
     ),
-    assertions,
+    assertions: loadAssertions(rootDir),
   };
 }

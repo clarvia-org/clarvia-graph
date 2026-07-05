@@ -67,6 +67,20 @@ export interface RefEntry {
 export function extractRefs(data: unknown): RefEntry[] {
   const refs: RefEntry[] = [];
 
+  function collectArrayRefs(key: string, val: unknown[]): void {
+    for (const item of val) {
+      if (typeof item === "string" && item.length > 0) {
+        refs.push({ field: key, target: item });
+      }
+    }
+  }
+
+  function collectSingleRef(key: string, val: unknown): void {
+    if (typeof val === "string" && val.length > 0) {
+      refs.push({ field: key, target: val });
+    }
+  }
+
   function walk(obj: unknown): void {
     if (obj == null || typeof obj !== "object") return;
 
@@ -77,20 +91,10 @@ export function extractRefs(data: unknown): RefEntry[] {
 
     const record = obj as Record<string, unknown>;
     for (const [key, val] of Object.entries(record)) {
-      if (key.endsWith("_refs")) {
-        // Array of IDs
-        if (Array.isArray(val)) {
-          for (const item of val) {
-            if (typeof item === "string" && item.length > 0) {
-              refs.push({ field: key, target: item });
-            }
-          }
-        }
+      if (key.endsWith("_refs") && Array.isArray(val)) {
+        collectArrayRefs(key, val);
       } else if (key.endsWith("_ref")) {
-        // Single ID
-        if (typeof val === "string" && val.length > 0) {
-          refs.push({ field: key, target: val });
-        }
+        collectSingleRef(key, val);
       }
 
       // Recurse into nested objects and arrays regardless
