@@ -70,9 +70,9 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
           <p id="consent-description" className="text-xs text-calm-blue-600 leading-relaxed">
             {l(
               lang,
-              "We use essential technologies to keep this site secure. With your permission, we also use Google Analytics to understand site performance and prepare privacy-conscious donation measurement. You can accept all optional measurement or continue with essential-only settings.",
-              "Nous utilisons des technologies essentielles pour assurer la sécurité du site. Avec votre accord, nous utilisons également Google Analytics afin de comprendre les performances du site et de préparer une mesure respectueuse de la vie privée des dons. Vous pouvez accepter les mesures optionnelles ou continuer avec les paramètres essentiels uniquement.",
-              "Wir verwenden notwendige Technologien, um diese Website sicher zu betreiben. Mit Ihrer Zustimmung verwenden wir außerdem Google Analytics, um die Website-Leistung zu verstehen und eine datenschutzbewusste Spendenmessung vorzubereiten. Sie können alle optionalen Messungen akzeptieren oder nur mit den erforderlichen Einstellungen fortfahren."
+              "We are a non-profit building a free bereavement service. To help us understand site performance and improve our checklists, we use Google Analytics. Accepting optional measurement directly helps our mission — or you can continue with essential-only settings.",
+              "Nous sommes une association sans but lucratif qui développe un service d'accompagnement gratuit. Pour nous aider à comprendre les performances du site et à améliorer nos listes de démarches, nous utilisons Google Analytics. Accepter ces mesures facultatives soutient directement notre mission — ou vous pouvez continuer avec les paramètres essentiels uniquement.",
+              "Wir sind ein gemeinnütziger Verein, der eine kostenlose Orientierungshilfe im Trauerfall entwickelt. Um die Leistung unserer Website besser zu verstehen und unsere Checklisten zu verbessern, nutzen wir Google Analytics. Wenn Sie diesen optionalen Messungen zustimmen, unterstützen Sie unsere Arbeit direkt — oder Sie können nur mit den erforderlichen Einstellungen fortfahren."
             )}
           </p>
         </div>
