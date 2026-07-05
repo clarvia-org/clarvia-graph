@@ -28,6 +28,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 { label: l(lang, "About", "À propos", "Über uns"), href: `/${lang}/about` },
                 { label: l(lang, "Updates", "Actualités", "Aktuelles"), href: `/${lang}/updates` },
                 { label: l(lang, "Presentation Brochure", "Brochure de présentation", "Präsentationsbroschüre"), href: `/${lang}/brochure` },
+                { label: l(lang, "Privacy Policy", "Politique de confidentialité", "Datenschutzerklärung"), href: `/${lang}/privacy` },
                 { label: l(lang, "Share your experience", "Partager votre expérience", "Erfahrung teilen"), href: "#experience" },
                 { label: l(lang, "Contact", "Contact", "Kontakt"), href: "#contact" },
               ].map((link) => (
