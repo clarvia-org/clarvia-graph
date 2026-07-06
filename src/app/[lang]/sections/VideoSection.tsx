@@ -1,9 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { type Lang, l } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 
 export default function VideoSection({ lang }: { lang: Lang }) {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
     <section className="mb-20">
       <div className="glass-panel p-8 sm:p-12">
@@ -41,14 +44,32 @@ export default function VideoSection({ lang }: { lang: Lang }) {
           {/* Video player - Right on desktop */}
           <div className="md:col-span-5 flex justify-center">
             <div className="relative w-full max-w-[280px] aspect-[9/16] rounded-2xl overflow-hidden shadow-xl border border-white/50 bg-slate-900">
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/videoseries?list=UUQt8JlIa-fBlV9s4_6hHsAg&autoplay=1&mute=1&rel=0"
-                title="Clarvia - Follow Our Journey"
-                aria-label="Clarvia Follow Our Journey YouTube playlist. The video starts automatically with sound muted. Use the player controls to pause, play, or unmute."
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full border-0"
-              />
+              {isPlaying ? (
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/videoseries?list=UUQt8JlIa-fBlV9s4_6hHsAg&autoplay=1&mute=0&rel=0"
+                  title="Clarvia - Follow Our Journey"
+                  aria-label="Clarvia Follow Our Journey YouTube playlist."
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full border-0"
+                />
+              ) : (
+                <button
+                  onClick={() => setIsPlaying(true)}
+                  className="absolute inset-0 w-full h-full flex flex-col items-center justify-center p-4 bg-gradient-to-tr from-[#2b3a67] via-slate-800 to-[#7d84b2] group hover:scale-[1.01] active:scale-[0.99] transition-all cursor-pointer"
+                  aria-label={l(lang, "Play video update", "Lire la vidéo d'actualité", "Video-Update abspielen")}
+                >
+                  {/* Play Button Icon */}
+                  <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center shadow-lg group-hover:bg-white/20 group-hover:border-white/50 group-hover:scale-110 transition-all duration-300">
+                    <svg className="w-6 h-6 text-white translate-x-0.5 fill-current" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <span className="mt-4 text-xs font-semibold uppercase tracking-wider text-white/80 group-hover:text-white transition-colors">
+                    {l(lang, "Play Update", "Lire l'actualité", "Update abspielen")}
+                  </span>
+                </button>
+              )}
             </div>
           </div>
           

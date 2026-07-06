@@ -93,6 +93,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml/badge.svg" 
                 alt="CI (graph)" 
                 className="h-6 w-auto"
+                width={90}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -106,6 +108,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://github.com/clarvia-org/workflow-web/actions/workflows/validate.yml/badge.svg" 
                 alt="CI (web)" 
                 className="h-6 w-auto"
+                width={90}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -119,6 +123,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://www.bestpractices.dev/projects/13112/badge" 
                 alt="OpenSSF Best Practices" 
                 className="h-6 w-auto"
+                width={146}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -132,6 +138,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://api.scorecard.dev/projects/github.com/clarvia-org/clarvia-graph/badge" 
                 alt="OpenSSF Scorecard" 
                 className="h-6 w-auto"
+                width={120}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -145,6 +153,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://api.reuse.software/badge/github.com/clarvia-org/clarvia-graph" 
                 alt="REUSE compliant" 
                 className="h-6 w-auto"
+                width={100}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -158,6 +168,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://codecov.io/gh/clarvia-org/clarvia-graph/graph/badge.svg" 
                 alt="Codecov" 
                 className="h-6 w-auto"
+                width={100}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -171,6 +183,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://sonarcloud.io/api/project_badges/measure?project=clarvia-org_clarvia-graph&metric=alert_status" 
                 alt="SonarCloud Quality Gate" 
                 className="h-6 w-auto"
+                width={120}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -184,6 +198,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20572455-blue" 
                 alt="DOI: 10.5281/zenodo.20572455" 
                 className="h-6 w-auto"
+                width={190}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -197,6 +213,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://img.shields.io/badge/fair--software.eu-%E2%97%8F%20%20%E2%97%8F%20%20%E2%97%8B%20%20%E2%97%8F%20%20%E2%97%8F-green" 
                 alt="FAIR 4/5" 
                 className="h-6 w-auto"
+                width={130}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -210,6 +228,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://img.shields.io/badge/Code_(graph)-EUPL--1.2-blue.svg" 
                 alt="License: EUPL-1.2" 
                 className="h-6 w-auto"
+                width={130}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -223,6 +243,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://img.shields.io/badge/Code_(web)-Apache--2.0-blue.svg" 
                 alt="License: Apache-2.0" 
                 className="h-6 w-auto"
+                width={125}
+                height={24}
                 loading="lazy"
               />
             </a>
@@ -236,6 +258,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 src="https://img.shields.io/badge/Data-CC--BY--4.0-green.svg" 
                 alt="License: CC-BY-4.0" 
                 className="h-6 w-auto"
+                width={110}
+                height={24}
                 loading="lazy"
               />
             </a>
