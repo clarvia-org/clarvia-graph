@@ -1,7 +1,7 @@
 /* ─── Shared constants for the landing page ─── */
 
 export const headlineStyle = {
-  fontFamily: "'Playfair Display', Georgia, serif",
+  fontFamily: "var(--font-serif), Georgia, serif",
   color: "#1e2a4f",
   letterSpacing: "-0.02em",
   fontWeight: 700,
@@ -131,7 +131,7 @@ export const FOUNDING_STORIES = [
   {
     name: "Günther Schriver",
     title: { en: "Co-Founder & Director", fr: "Cofondateur et administrateur", de: "Mitgründer und Vorstandsmitglied" },
-    photo: "/gunther.png",
+    photo: "/gunther.webp",
     quote1: {
       en: "Throughout my decades leading social services and senior care, I've seen firsthand how vulnerable families are during a crisis. When you add the complexities of cross-border administration and language barriers, that burden becomes paralyzing.",
       fr: "Au cours de mes décennies à la tête de services sociaux et de structures d'accompagnement des personnes âgées, j'ai vu de près à quel point les familles sont vulnérables en période de crise. Lorsque s'ajoutent la complexité de l'administration transfrontalière et les barrières linguistiques, cette charge peut devenir paralysante.",
@@ -165,7 +165,7 @@ export const FOUNDERS = [
   {
     name: "Günther Schriver",
     title: { en: "Co-Founder & Director", fr: "Cofondateur & administrateur", de: "Mitgründer & Vorstandsmitglied" },
-    photo: "/gunther.png",
+    photo: "/gunther.webp",
     bio: {
       en: "Former Director of the Berlin Red Cross, where he led Social Services overseeing 550+ employees across refugee aid, senior care, and crisis management. Former CEO of Anderson Holding AG, one of Germany's largest senior care groups, where he led an organisation of 3,500 employees. Brings over 25 years of experience in healthcare operations, social services, and cross-border care delivery.",
       fr: "Ancien directeur de la Croix-Rouge de Berlin, où il a dirigé les services sociaux et supervisé plus de 550 salariés dans l'aide aux réfugiés, l'accompagnement des personnes âgées et la gestion de crise. Ancien CEO d'Anderson Holding AG, l'un des plus grands groupes allemands de prise en charge des personnes âgées, où il a dirigé une organisation de 3 500 salariés. Il apporte plus de 25 ans d'expérience dans la gestion d'organisations de santé, les services sociaux et l'accompagnement transfrontalier.",

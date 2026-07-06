@@ -2,7 +2,8 @@
 
 @theme {
   /* Calm inspired theme */
-  --font-sans: 'Inter', 'system-ui', '-apple-system', sans-serif;
+  --font-sans: var(--font-sans), 'system-ui', '-apple-system', sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
 
   /* Deep Blues & Navy — text and emphasis */
   --color-calm-blue-50: #f8fafc;
@@ -40,7 +41,7 @@ body {
   line-height: 1.6;
   background:
     linear-gradient(rgba(235, 240, 245, 0.45), rgba(235, 240, 245, 0.25)),
-    url('/sky-bg.jpg') center/cover no-repeat fixed;
+    url('/sky-bg.webp') center/cover no-repeat fixed;
   color: var(--color-calm-blue-800); /* Darkened from 700 for better contrast */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -105,8 +106,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 1.5rem;
 }
 
-/* ── Smooth transitions (non-layout props only) ── */
-* {
+/* ── Smooth transitions for interactive elements ── */
+a, button, input, textarea, select {
   transition-property: background-color, border-color, color, opacity, box-shadow, transform;
   transition-duration: 150ms;
   transition-timing-function: ease;

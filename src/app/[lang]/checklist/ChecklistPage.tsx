@@ -3,9 +3,11 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { type Lang, l, LANGUAGES } from "@/lib/i18n";
+import { type Lang, l } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 import FooterSection from "../sections/FooterSection";
+import Header from "@/components/Header";
+import Image from "next/image";
 
 /* ── Types ── */
 interface IntakeQuestion {
@@ -457,48 +459,7 @@ export default function ChecklistPage() {
 
   return (
     <>
-      {/* ═══ Header ═══ */}
-      <header aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf")} className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative">
-        <Link href={`/${lang}`} aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite")} className="block">
-          <img src="/clarvia-logo.png" alt="Clarvia" className="h-20 w-auto" />
-        </Link>
-        <nav aria-label={l(lang, "Site navigation", "Navigation du site", "Seiten-Navigation")} className="flex items-center gap-6">
-          <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
-            <Link href={`/${lang}/checklist`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors font-bold border-b border-calm-blue-600">
-              {l(lang, "Checklist", "Checklist", "Checkliste")}
-            </Link>
-            <Link href={`/${lang}/about`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
-              {l(lang, "About", "À propos", "Über uns")}
-            </Link>
-            <Link href={`/${lang}/updates`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
-              {l(lang, "Updates", "Actualités", "Aktuelles")}
-            </Link>
-            <Link href={`/${lang}/contribute`} className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
-              {l(lang, "Contribute", "Contribuer", "Mitwirken")}
-            </Link>
-          </div>
-          <div className="flex items-center gap-2">
-            <Link href={`/${lang}/support`} className="btn-secondary inline-flex items-center gap-1.5 px-4 py-2 text-sm mr-3">
-              ♥ {l(lang, "Support", "Soutenir", "Unterstützen")}
-            </Link>
-            {LANGUAGES.map((code) => (
-              <Link
-                key={code}
-                href={`/${code}/checklist`}
-                aria-label={l(lang, `Switch to ${code.toUpperCase()}`, `Passer en ${code.toUpperCase()}`, `Zu ${code.toUpperCase()} wechseln`)}
-                aria-current={lang === code ? "page" : undefined}
-                className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-                  lang === code
-                    ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
-                    : "text-calm-blue-500 hover:bg-white/40"
-                }`}
-              >
-                {code.toUpperCase()}
-              </Link>
-            ))}
-          </div>
-        </nav>
-      </header>
+      <Header lang={lang} />
 
       <main className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 relative z-10">
         {/* ═══ Alpha banner + Preview side by side ═══ */}
@@ -593,15 +554,16 @@ export default function ChecklistPage() {
                 "Vollständige Vorschau der Checkliste anzeigen"
               )}
             >
-              <img
+              <Image
                 src={previewThumb}
                 alt={l(lang,
                   "Illustrative preview of the Clarvia bereavement checklist for Luxembourg",
                   "Aperçu illustratif de la liste de démarches Clarvia pour le Luxembourg",
                   "Illustrative Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg"
                 )}
+                width={600}
+                height={338}
                 className="w-full block"
-                loading="lazy"
               />
               <div className="absolute inset-0 bg-calm-blue-900/0 group-hover:bg-calm-blue-900/10 transition-colors duration-300 flex items-center justify-center">
                 <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm text-calm-blue-700 text-xs font-medium px-3 py-1.5 rounded-full shadow-md">
@@ -638,13 +600,15 @@ export default function ChecklistPage() {
                 "Illustrative Vorschau — kein fertiges Produkt"
               )}
             </div>
-            <img
+            <Image
               src={previewFull}
               alt={l(lang,
                 "Full preview of the Clarvia bereavement checklist for Luxembourg",
                 "Aperçu complet de la liste de démarches Clarvia pour le Luxembourg",
                 "Vollständige Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg"
               )}
+              width={1200}
+              height={7446}
               className="max-w-4xl w-full my-16 mx-4 rounded-xl shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />

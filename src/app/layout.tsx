@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  weight: ["400", "600"],
+  style: ["normal", "italic"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://clarvia.org"),
@@ -21,12 +35,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-          rel="stylesheet"
-        />
         <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer />
         {/* Google Consent Mode v2 — must fire before gtag.js loads */}
         <script
@@ -36,13 +46,13 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               
               var consentState = {
-                analytics_storage: 'denied',
                 ad_storage: 'denied',
                 ad_user_data: 'denied',
                 ad_personalization: 'denied',
-                functionality_storage: 'denied',
-                personalization_storage: 'denied',
+                analytics_storage: 'denied',
+                functionality_storage: 'granted',
                 security_storage: 'granted',
+                personalization_storage: 'denied',
                 wait_for_update: 500
               };
               
@@ -54,6 +64,8 @@ export default function RootLayout({
                     consentState.analytics_storage = 'granted';
                     consentState.ad_storage = 'granted';
                     consentState.ad_user_data = 'granted';
+                    consentState.ad_personalization = 'granted';
+                    consentState.personalization_storage = 'granted';
                   }
                 }
               } catch (e) {}

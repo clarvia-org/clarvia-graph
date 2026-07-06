@@ -1,4 +1,5 @@
 import { type Lang, l } from "@/lib/i18n";
+import Image from "next/image";
 import { headlineStyle, SUPPORTERS, FOUNDERS, PRINCIPLES } from "../data";
 
 export default function TrustSection({ lang }: { lang: Lang }) {
@@ -20,8 +21,8 @@ export default function TrustSection({ lang }: { lang: Lang }) {
               <div>
                 <div className="flex flex-col items-center mb-6">
                   <div className="h-16 flex items-center justify-center mb-4">
-                    <a href={supporter.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-full w-40 bg-white rounded-lg px-4 py-2 shadow-sm border border-calm-blue-100 hover:shadow-md transition-shadow">
-                      <img src={supporter.logo} alt={supporter.name} className="max-h-full max-w-full object-contain" />
+                    <a href={supporter.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center h-full w-40 bg-white rounded-lg px-4 py-2 shadow-sm border border-calm-blue-100 hover:shadow-md transition-shadow relative">
+                      <Image src={supporter.logo} alt={supporter.name} width={160} height={64} className="max-h-full max-w-full object-contain" />
                     </a>
                   </div>
                   <h3 className="text-lg font-semibold text-center mb-2" style={{ color: "#2b3a67" }}>
@@ -62,7 +63,7 @@ export default function TrustSection({ lang }: { lang: Lang }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto mb-6">
           {FOUNDERS.map((f, i) => (
             <div key={i} className="glass-panel p-6 sm:p-8 flex flex-col items-center text-center">
-              <img src={f.photo} alt={f.name} className={`w-24 h-24 rounded-full object-cover border-3 border-white shadow-md mb-4${i === 1 ? " [transform:scaleX(-1)]" : ""}`} style={f.photo.includes("gunther") ? { objectPosition: "center 20%" } : undefined} />
+              <Image src={f.photo} alt={f.name} width={96} height={96} className={`w-24 h-24 rounded-full object-cover border-3 border-white shadow-md mb-4${i === 1 ? " [transform:scaleX(-1)]" : ""}`} style={f.photo.includes("gunther") ? { objectPosition: "center 20%" } : undefined} />
               <h3 className="text-xl font-semibold mb-1" style={{ color: "#2b3a67" }}>{f.name}</h3>
               <p className="text-sm font-medium text-calm-lilac-500 mb-3">{l(lang, f.title.en, f.title.fr, f.title.de)}</p>
               <p className="text-base text-calm-blue-600 leading-relaxed">{l(lang, f.bio.en, f.bio.fr, f.bio.de)}</p>

@@ -1,12 +1,12 @@
 import { type Lang, l } from "@/lib/i18n";
+import Image from "next/image";
 import { headlineStyle, TESTIMONIALS } from "../data";
 
 /* Use flagcdn.com for reliable flag rendering on all platforms */
 function FlagImg({ code }: { code: string }) {
   return (
-    <img
+    <Image
       src={`https://flagcdn.com/w40/${code}.png`}
-      srcSet={`https://flagcdn.com/w80/${code}.png 2x`}
       width={32}
       height={24}
       alt={code.toUpperCase()}

@@ -57,7 +57,18 @@ export default function FormsSection({ lang }: { lang: Lang }) {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                feedbackForm.submit("/api/feedback", { hardest: fbHardest, wishExisted: fbWish, email: fbEmail, turnstileToken: feedbackToken });
+                feedbackForm.submit(
+                  "/api/feedback",
+                  { hardest: fbHardest, wishExisted: fbWish, email: fbEmail, turnstileToken: feedbackToken },
+                  () => {
+                    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+                      window.gtag("event", "feedback_submit", {
+                        event_category: "engagement",
+                        event_label: "Feedback Form Submit",
+                      });
+                    }
+                  }
+                );
               }}
               className="space-y-4"
             >
@@ -146,7 +157,18 @@ export default function FormsSection({ lang }: { lang: Lang }) {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                contactForm.submit("/api/contact", { name: ctName, email: ctEmail, subject: ctSubject, message: ctMessage, turnstileToken: contactToken });
+                contactForm.submit(
+                  "/api/contact",
+                  { name: ctName, email: ctEmail, subject: ctSubject, message: ctMessage, turnstileToken: contactToken },
+                  () => {
+                    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+                      window.gtag("event", "contact_submit", {
+                        event_category: "engagement",
+                        event_label: "Contact Form Submit",
+                      });
+                    }
+                  }
+                );
               }}
               className="space-y-3"
             >

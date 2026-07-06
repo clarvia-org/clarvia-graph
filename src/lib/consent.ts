@@ -20,17 +20,25 @@ export interface StoredConsent {
 export function updateGoogleConsent(status: ConsentStatus) {
   if (typeof window === "undefined" || !window.gtag) return;
 
-  const granted = status === "granted";
-
-  window.gtag("consent", "update", {
-    analytics_storage: granted ? "granted" : "denied",
-    ad_storage: granted ? "granted" : "denied",
-    ad_user_data: granted ? "granted" : "denied",
-    ad_personalization: "denied", // always denied unless explicitly enabled later
-    functionality_storage: "denied",
-    personalization_storage: "denied",
-    security_storage: "granted",
-  });
+  if (status === "granted") {
+    window.gtag("consent", "update", {
+      ad_storage: "granted",
+      ad_user_data: "granted",
+      ad_personalization: "granted",
+      analytics_storage: "granted",
+      personalization_storage: "granted",
+    });
+  } else {
+    window.gtag("consent", "update", {
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      analytics_storage: "denied",
+      personalization_storage: "denied",
+      functionality_storage: "granted",
+      security_storage: "granted",
+    });
+  }
 }
 
 /**
