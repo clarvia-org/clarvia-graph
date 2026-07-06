@@ -5,10 +5,7 @@
 
 Sitemap: https://clarvia.org/sitemap.xml
 
-# AI / LLM discovery files
-Allow: /llms.txt
-Allow: /llms-full.txt
-Allow: /ai-crawler-policy.txt
+# AI / LLM discovery files (allowed under general policy)
 
 # OpenAI: allow search and model-understanding crawlers for public-good project discovery.
 User-agent: OAI-SearchBot
@@ -53,6 +50,9 @@ Allow: /
 # General policy
 User-agent: *
 Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /ai-crawler-policy.txt
 
 # Do not crawl operational, private, or submission endpoints.
 Disallow: /api/
