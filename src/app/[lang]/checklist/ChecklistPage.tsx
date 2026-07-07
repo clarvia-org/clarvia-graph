@@ -531,13 +531,13 @@ export default function ChecklistPage() {
 
           {/* Checklist preview card */}
           <div className="glass-panel p-4 sm:p-5 rounded-xl">
-            <h3 className="text-sm font-semibold mb-2" style={{ color: "#2b3a67" }}>
+            <div className="text-sm font-semibold mb-2" style={{ color: "#2b3a67" }}>
               {l(lang,
                 "What the checklist is being built to look like",
                 "Ce que la liste de démarches est conçue pour devenir",
                 "Wie die Checkliste aussehen soll"
               )}
-            </h3>
+            </div>
             <p className="text-[11px] text-calm-blue-500 leading-relaxed mb-3">
               {l(lang,
                 "The image illustrates the type of step-by-step guidance Clarvia is working to deliver. It is not a finished product — the content, design, and features are still being developed and validated.",
