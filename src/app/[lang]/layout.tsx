@@ -21,6 +21,11 @@ const META: Record<Lang, { title: string; description: string }> = {
     description:
       "Ein kostenloser, mehrsprachiger Leitfaden für jeden Verwaltungsschritt nach einem Verlust in Luxemburg. Klare Fristen, klare Prioritäten. Keine Familie allein gelassen.",
   },
+  lu: {
+    title: "Clarvia — Familljen duerch dat begleeden, wat als Nächstes kënnt",
+    description:
+      "E gratis, méisproochege Guide fir all administrative Schrëtt no engem Doudesfall zu Lëtzebuerg. Kloer Fristen, kloer Prioritéiten. Keng Famill gëtt eleng gelooss.",
+  }
 };
 
 export async function generateStaticParams() {
@@ -129,7 +134,7 @@ export default async function LangLayout({
                 "publisher": {
                   "@id": "https://clarvia.org/#organization"
                 },
-                "inLanguage": ["en", "fr", "de"],
+                "inLanguage": ["en", "fr", "de", "lu"],
                 "description": "Free multilingual bereavement guidance for families in Luxembourg, backed by open workflow infrastructure."
               },
               {

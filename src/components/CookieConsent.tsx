@@ -65,15 +65,10 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
       <div className="glass-panel shadow-2xl border border-calm-blue-200/50 rounded-2xl p-5 md:p-6 text-sm flex flex-col gap-4">
         <div>
           <h4 id="consent-title" className="font-semibold text-base text-[#2b3a67] mb-1">
-            {l(lang, "Privacy preferences", "Préférences de confidentialité", "Datenschutzeinstellungen")}
+            {l(lang, "Privacy preferences", "Préférences de confidentialité", "Datenschutzeinstellungen", "Dateschutz-Astellungen")}
           </h4>
           <p id="consent-description" className="text-xs text-calm-blue-600 leading-relaxed">
-            {l(
-              lang,
-              "We are a non-profit building a free bereavement service. To help us understand site performance and improve our checklists, we use Google Analytics. Accepting optional measurement directly helps our mission — or you can continue with essential-only settings.",
-              "Nous sommes une association sans but lucratif qui développe un service d'accompagnement gratuit. Pour nous aider à comprendre les performances du site et à améliorer nos listes de démarches, nous utilisons Google Analytics. Accepter ces mesures facultatives soutient directement notre mission — ou vous pouvez continuer avec les paramètres essentiels uniquement.",
-              "Wir sind ein gemeinnütziger Verein, der eine kostenlose Orientierungshilfe im Trauerfall entwickelt. Um die Leistung unserer Website besser zu verstehen und unsere Checklisten zu verbessern, nutzen wir Google Analytics. Wenn Sie diesen optionalen Messungen zustimmen, unterstützen Sie unsere Arbeit direkt — oder Sie können nur mit den erforderlichen Einstellungen fortfahren."
-            )}
+            {l(lang, "We are a non-profit building a free bereavement service. To help us understand site performance and improve our checklists, we use Google Analytics. Accepting optional measurement directly helps our mission — or you can continue with essential-only settings.", "Nous sommes une association sans but lucratif qui développe un service d'accompagnement gratuit. Pour nous aider à comprendre les performances du site et à améliorer nos listes de démarches, nous utilisons Google Analytics. Accepter ces mesures facultatives soutient directement notre mission — ou vous pouvez continuer avec les paramètres essentiels uniquement.", "Wir sind ein gemeinnütziger Verein, der eine kostenlose Orientierungshilfe im Trauerfall entwickelt. Um die Leistung unserer Website besser zu verstehen und unsere Checklisten zu verbessern, nutzen wir Google Analytics. Wenn Sie diesen optionalen Messungen zustimmen, unterstützen Sie unsere Arbeit direkt — oder Sie können nur mit den erforderlichen Einstellungen fortfahren.", "Mir sinn eng ASBL, déi e gratis Service fir Begleedung am Trauerfall opbaut. Fir besser ze verstoen, wéi eis Websäit funktionéiert, an eis Checklëschten ze verbesseren, benotze mir Google Analytics. Wann Dir déi fakultativ Miessungen akzeptéiert, ënnerstëtzt Dir direkt eis Missioun — oder Dir kënnt mat nëmmen den néidegen Astellunge weiderfueren.")}
           </p>
         </div>
 
@@ -82,13 +77,13 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
             onClick={() => handleChoice("denied")}
             className="flex-1 py-2 px-3 border border-calm-blue-200 hover:border-calm-blue-300 text-calm-blue-800 font-medium text-xs rounded-xl bg-white hover:bg-calm-blue-50 transition-all cursor-pointer text-center"
           >
-            {l(lang, "Decline / Essential only", "Refuser / Essentiel uniquement", "Ablehnen / Nur erforderlich")}
+            {l(lang, "Decline / Essential only", "Refuser / Essentiel uniquement", "Ablehnen / Nur erforderlich", "Refuséieren / nëmmen dat Noutwendegt")}
           </button>
           <button
             onClick={() => handleChoice("granted")}
             className="flex-1 py-2 px-3 bg-calm-blue-100 hover:bg-calm-blue-200 hover:border-calm-blue-300 border border-transparent text-calm-blue-900 font-semibold text-xs rounded-xl transition-all cursor-pointer text-center"
           >
-            {l(lang, "Accept all", "Tout accepter", "Alle akzeptieren")}
+            {l(lang, "Accept all", "Tout accepter", "Alle akzeptieren", "Alles akzeptéieren")}
           </button>
         </div>
       </div>

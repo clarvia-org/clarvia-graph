@@ -13,12 +13,12 @@ export default function Header({ lang }: { lang: Lang }) {
   return (
     <>
       <header
-        aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf")}
+        aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf", "Kappberäich vun der Websäit")}
         className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative"
       >
         <Link
           href={`/${lang}`}
-          aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite")}
+          aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite", "Clarvia Startsäit")}
           className="block relative w-40 h-20 transition-transform duration-200 hover:scale-[1.02]"
         >
           <Image
@@ -32,7 +32,7 @@ export default function Header({ lang }: { lang: Lang }) {
         </Link>
 
         <nav
-          aria-label={l(lang, "Site navigation", "Navigation du site", "Seiten-Navigation")}
+          aria-label={l(lang, "Site navigation", "Navigation du site", "Seiten-Navigation", "Navigatioun vun der Websäit")}
           className="flex items-center gap-6"
         >
           {/* Desktop Navigation */}
@@ -41,25 +41,25 @@ export default function Header({ lang }: { lang: Lang }) {
               href={`/${lang}/checklist`}
               className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
-              {l(lang, "Checklist", "Checklist", "Checkliste")}
+              {l(lang, "Checklist", "Checklist", "Checkliste", "Checklëscht")}
             </Link>
             <Link
               href={`/${lang}/about`}
               className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
-              {l(lang, "About", "À propos", "Über uns")}
+              {l(lang, "About", "À propos", "Über uns", "Iwwer eis")}
             </Link>
             <Link
               href={`/${lang}/updates`}
               className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
-              {l(lang, "Updates", "Actualités", "Aktuelles")}
+              {l(lang, "Updates", "Actualités", "Aktuelles", "Neiegkeeten")}
             </Link>
             <Link
               href={`/${lang}/contribute`}
               className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
-              {l(lang, "Contribute", "Contribuer", "Mitwirken")}
+              {l(lang, "Contribute", "Contribuer", "Mitwirken", "Matmaachen")}
             </Link>
           </div>
 
@@ -68,7 +68,7 @@ export default function Header({ lang }: { lang: Lang }) {
               href={`/${lang}/support`}
               className="btn-secondary inline-flex items-center gap-1.5 px-4 py-2 text-sm mr-3"
             >
-              ♥ {l(lang, "Support", "Soutenir", "Unterstützen")}
+              ♥ {l(lang, "Support", "Soutenir", "Unterstützen", "Ënnerstëtzen")}
             </Link>
             {LANGUAGES.map((code) => (
               <Link
@@ -97,7 +97,7 @@ export default function Header({ lang }: { lang: Lang }) {
             onClick={toggleMenu}
             className="md:hidden p-2 rounded-xl text-calm-blue-600 hover:bg-white/40 transition-colors focus:outline-none focus:ring-2 focus:ring-calm-lilac-400 z-50 relative"
             aria-expanded={isOpen}
-            aria-label={l(lang, "Toggle menu", "Menu", "Menü ein-/ausblenden")}
+            aria-label={l(lang, "Toggle menu", "Menu", "Menü ein-/ausblenden", "Menü op- an zouklappen")}
           >
             <svg
               className="w-6 h-6"
@@ -136,42 +136,42 @@ export default function Header({ lang }: { lang: Lang }) {
             onClick={toggleMenu}
             className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
           >
-            {l(lang, "Checklist", "Checklist", "Checkliste")}
+            {l(lang, "Checklist", "Checklist", "Checkliste", "Checklëscht")}
           </Link>
           <Link
             href={`/${lang}/about`}
             onClick={toggleMenu}
             className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
           >
-            {l(lang, "About", "À propos", "Über uns")}
+            {l(lang, "About", "À propos", "Über uns", "Iwwer eis")}
           </Link>
           <Link
             href={`/${lang}/updates`}
             onClick={toggleMenu}
             className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
           >
-            {l(lang, "Updates", "Actualités", "Aktuelles")}
+            {l(lang, "Updates", "Actualités", "Aktuelles", "Neiegkeeten")}
           </Link>
           <Link
             href={`/${lang}/contribute`}
             onClick={toggleMenu}
             className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
           >
-            {l(lang, "Contribute", "Contribuer", "Mitwirken")}
+            {l(lang, "Contribute", "Contribuer", "Mitwirken", "Matmaachen")}
           </Link>
           <Link
             href={`/${lang}/support`}
             onClick={toggleMenu}
             className="btn-primary text-center py-3 text-base mt-4 shadow-md inline-flex items-center justify-center gap-1.5"
           >
-            ♥ {l(lang, "Support Our Mission", "Soutenir notre mission", "Mission unterstützen")}
+            ♥ {l(lang, "Support Our Mission", "Soutenir notre mission", "Mission unterstützen", "Eis Missioun ënnerstëtzen")}
           </Link>
         </nav>
 
         {/* Mobile Language Switcher */}
         <div className="pt-6 border-t border-calm-blue-200/50">
           <p className="text-xs font-semibold uppercase tracking-wider text-calm-blue-400 mb-3">
-            {l(lang, "Language", "Langue", "Sprache")}
+            {l(lang, "Language", "Langue", "Sprache", "Sprooch")}
           </p>
           <div className="flex gap-2">
             {LANGUAGES.map((code) => (

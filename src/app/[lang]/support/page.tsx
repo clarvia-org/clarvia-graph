@@ -25,6 +25,10 @@ export async function generateMetadata({
       title: "Clarvia unterstützen - Helfen Sie uns, die Trauerbegleitung kostenlos zu halten",
       description: "Clarvia ist ein luxemburgischer gemeinnütziger Verein. Ihre Spende hilft uns, unsere kostenlosen, dreisprachigen Checklisten für Familien zu pflegen.",
     },
+    lu: {
+      title: "Clarvia ënnerstëtzen - Hëlleft eis, de Guide fir de Trauerfall gratis ze halen",
+      description: "Clarvia ass eng lëtzebuergesch A.s.b.l. Är Spend hëlleft eis, eis gratis, méisproocheg Checklëschten ze pflegen an d'Familljen z'ënnerstëtzen, wa si se am meeschte brauchen.",
+    },
   };
 
   const meta = META[lang];

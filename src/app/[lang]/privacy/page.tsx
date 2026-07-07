@@ -12,7 +12,7 @@ export async function generateMetadata({
   const { lang: rawLang } = await params;
   const lang = (LANGUAGES.includes(rawLang as Lang) ? rawLang : "en") as Lang;
 
-  const META = {
+  const META: Record<Lang, { title: string; description: string }> = {
     en: {
       title: "Privacy & Cookie Policy - Clarvia",
       description: "Learn how Clarvia ASBL protects your privacy, uses cookies transparently, complies with GDPR, and manages your personal data.",
@@ -25,9 +25,14 @@ export async function generateMetadata({
       title: "Datenschutz- und Cookie-Richtlinie - Clarvia",
       description: "Erfahren Sie, wie Clarvia ASBL Ihre Privatsphäre schützt, Cookies transparent nutzt, die DSGVO einhält und Ihre Daten verwaltet.",
     },
+    lu: {
+      title: "Politique de confidentialité et cookies - Clarvia",
+      description: "Découvrez comment Clarvia ASBL protège votre vie privée, utilise les cookies de manière transparente, respecte le RGPD et gère vos données.",
+    },
   };
 
   const meta = META[lang];
+
 
   return {
     title: meta.title,

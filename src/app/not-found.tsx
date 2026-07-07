@@ -26,20 +26,16 @@ export default function NotFound() {
           className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6"
           style={headlineStyle}
         >
-          {l(lang, "Page not found", "Page introuvable", "Seite nicht gefunden")}
+          {l(lang, "Page not found", "Page introuvable", "Seite nicht gefunden", "Säit net fonnt")}
         </h1>
         <p className="text-base sm:text-lg text-calm-blue-600 leading-relaxed mb-10">
-          {l(lang,
-            "The page you're looking for doesn't exist or has been moved.",
-            "La page que vous recherchez n'existe pas ou a été déplacée.",
-            "Die gesuchte Seite existiert nicht oder wurde verschoben."
-          )}
+          {l(lang, "The page you're looking for doesn't exist or has been moved.", "La page que vous recherchez n'existe pas ou a été déplacée.", "Die gesuchte Seite existiert nicht oder wurde verschoben.", "D'Säit, déi Dir sicht, gëtt et net oder si gouf verréckelt.")}
         </p>
         <Link
           href={`/${lang}`}
           className="btn-primary inline-flex items-center gap-2 px-8 py-4 text-lg"
         >
-          {l(lang, "Go to homepage", "Retour à l'accueil", "Zur Startseite")}
+          {l(lang, "Go to homepage", "Retour à l'accueil", "Zur Startseite", "Op d'Startsäit goen")}
         </Link>
       </main>
     </>

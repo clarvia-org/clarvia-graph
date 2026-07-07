@@ -1,9 +1,8 @@
-import { type Lang } from "@/lib/i18n";
 
 export type Update = {
   date: string;
-  headline: Record<Lang, string>;
-  body?: Record<Lang, string>;
+  headline: { en: string; fr: string; de: string; lu?: string };
+  body?: { en: string; fr: string; de: string; lu?: string };
   logo?: string;
 };
 

@@ -15,7 +15,7 @@ export type PolicyData = {
   sections: PolicySection[];
 };
 
-export const privacyCookiePolicy: Record<Lang, PolicyData> = {
+export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
   en: {
     title: "Privacy & Cookie Policy",
     lastUpdated: "Last updated: 5 July 2026",

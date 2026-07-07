@@ -19,6 +19,11 @@ const META: Record<Lang, { title: string; description: string }> = {
     description:
       "Erstellen Sie eine personalisierte Checkliste für Verwaltungsschritte nach einem Todesfall in Luxemburg. Alpha-Version — früher Prototyp mit begrenzter Abdeckung.",
   },
+  lu: {
+    title: "Checklëscht am Trauerfall (Alpha) — Clarvia",
+    description:
+      "Erstellt eng personaliséiert Checklëscht fir d'administratiiv Schrëtt no engem Doudesfall zu Lëtzebuerg. Alpha-Versioun — fréie Prototyp mat enger limitéierter Ofdeckung.",
+  },
 };
 
 export async function generateMetadata({

@@ -32,7 +32,7 @@ export default function UpdatesPage() {
           className="text-4xl sm:text-5xl font-semibold tracking-tight mb-3"
           style={headlineStyle}
         >
-          {l(lang, "Updates", "Actualités", "Aktuelles")}
+          {l(lang, "Updates", "Actualités", "Aktuelles", "Neiegkeeten")}
         </h1>
         <p className="text-base text-calm-blue-500 mb-12">
           {l(lang,
@@ -96,7 +96,7 @@ export default function UpdatesPage() {
             className="text-sm font-medium text-calm-blue-600 hover:text-calm-blue-800 transition-colors inline-flex items-center gap-1.5"
           >
             <span aria-hidden="true">&larr;</span>
-            {l(lang, "Back to home", "Retour à l'accueil", "Zurück zur Startseite")}
+            {l(lang, "Back to home", "Retour à l'accueil", "Zurück zur Startseite", "Zréck op d'Startsäit")}
           </Link>
         </div>
 

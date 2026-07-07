@@ -9,7 +9,8 @@ import { privacyCookiePolicy } from "./privacy-data";
 
 export default function PrivacyPolicyPage() {
   const params = useParams();
-  const lang = (params.lang as Lang) || "en";
+  const rawLang = (params.lang as Lang) || "en";
+  const lang = rawLang === "lu" ? "fr" : rawLang;
   const data = privacyCookiePolicy[lang];
 
   return (

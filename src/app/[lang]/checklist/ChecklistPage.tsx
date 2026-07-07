@@ -451,7 +451,7 @@ export default function ChecklistPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <p className="text-calm-blue-500 animate-pulse">
-          {l(lang, "Loading…", "Chargement…", "Wird geladen…")}
+          {l(lang, "Loading…", "Chargement…", "Wird geladen…", "Lued…")}
         </p>
       </div>
     );
@@ -471,58 +471,28 @@ export default function ChecklistPage() {
               <div className="space-y-3">
                 <div>
                   <p className="font-bold text-amber-950 text-sm">
-                    {l(
-                      lang,
-                      "Alpha Prototype - Not Legal Advice",
-                      "Prototype Alpha - Ceci n'est pas un avis juridique",
-                      "Alpha-Prototyp - Keine Rechtsberatung"
-                    )}
+                    {l(lang, "Alpha Prototype - Not Legal Advice", "Prototype Alpha - Ceci n'est pas un avis juridique", "Alpha-Prototyp - Keine Rechtsberatung", "Alpha-Prototyp – keng juristesch Berodung")}
                   </p>
                   <p className="text-amber-900 text-xs mt-1 leading-relaxed">
-                    {l(
-                      lang,
-                      "This is an early alpha prototype of the Clarvia Bereavement Checklist, provided for testing and demonstration only. It dynamically pulls content from the open-source clarvia-graph repository (https://github.com/clarvia-org/clarvia-graph) on GitHub. No sensitive or personal data is included.",
-                      "Il s'agit d'un premier prototype alpha de la liste de contrôle de deuil Clarvia, fourni uniquement à des fins de test et de démonstration. Il récupère dynamiquement le contenu du dépôt open-source clarvia-graph (https://github.com/clarvia-org/clarvia-graph) sur GitHub. Aucune donnée sensible ou personnelle n'est incluse.",
-                      "Dies ist ein früher Alpha-Prototyp der Clarvia-Trauer-Checkliste, der nur zu Test- und Demonstrationszwecken bereitgestellt wird. Er lädt Inhalte dynamisch aus dem Open-Source-Repository clarvia-graph (https://github.com/clarvia-org/clarvia-graph) auf GitHub. Es sind keine sensiblen oder persönlichen Daten enthalten."
-                    )}
+                    {l(lang, "This is an early alpha prototype of the Clarvia Bereavement Checklist, provided for testing and demonstration only. It dynamically pulls content from the open-source clarvia-graph repository (https://github.com/clarvia-org/clarvia-graph) on GitHub. No sensitive or personal data is included.", "Il s'agit d'un premier prototype alpha de la liste de contrôle de deuil Clarvia, fourni uniquement à des fins de test et de démonstration. Il récupère dynamiquement le contenu du dépôt open-source clarvia-graph (https://github.com/clarvia-org/clarvia-graph) sur GitHub. Aucune donnée sensible ou personnelle n'est incluse.", "Dies ist ein früher Alpha-Prototyp der Clarvia-Trauer-Checkliste, der nur zu Test- und Demonstrationszwecken bereitgestellt wird. Er lädt Inhalte dynamisch aus dem Open-Source-Repository clarvia-graph (https://github.com/clarvia-org/clarvia-graph) auf GitHub. Es sind keine sensiblen oder persönlichen Daten enthalten.", "Dëst ass en éischten Alpha-Prototyp vun der Clarvia-Checklëscht am Trauerfall, nëmme fir Test- an Demonstratiounszwecker. En zitt den Inhalt dynamesch aus dem Open-Source-Repository clarvia-graph (https://github.com/clarvia-org/clarvia-graph) op GitHub. Keng sensibel oder perséinlech Donnéeë sinn enthalen.")}
                   </p>
                 </div>
 
                 <div>
                   <p className="font-semibold text-amber-950 text-xs">
-                    {l(
-                      lang,
-                      "Standards & Licenses",
-                      "Normes & Licences",
-                      "Standards & Lizenzen"
-                    )}
+                    {l(lang, "Standards & Licenses", "Normes & Licences", "Standards & Lizenzen", "Standarden & Lizenzen")}
                   </p>
                   <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
-                    {l(
-                      lang,
-                      "Uses native schemas compatible with: CPSV-AP, CCCEV, ELI (planned), PROV-O (planned). Licenses: Code & tooling - EUPL-1.2; Graph data - CC-BY-4.0; Schemas & vocabularies - CC0 or Apache-2.0.",
-                      "Utilise des schémas natifs compatibles avec : CPSV-AP, CCCEV, ELI (prévu), PROV-O (prévu). Licences : Code & outils - EUPL-1.2 ; Données du graphe - CC-BY-4.0 ; Schémas & vocabulaires - CC0 ou Apache-2.0.",
-                      "Verwendet native Schemata, die kompatibel sind mit: CPSV-AP, CCCEV, ELI (geplant), PROV-O (geplant). Lizenzen: Code & Werkzeuge - EUPL-1.2; Graphendaten - CC-BY-4.0; Schemata & Vokabulare - CC0 oder Apache-2.0."
-                    )}
+                    {l(lang, "Uses native schemas compatible with: CPSV-AP, CCCEV, ELI (planned), PROV-O (planned). Licenses: Code & tooling - EUPL-1.2; Graph data - CC-BY-4.0; Schemas & vocabularies - CC0 or Apache-2.0.", "Utilise des schémas natifs compatibles avec : CPSV-AP, CCCEV, ELI (prévu), PROV-O (prévu). Licences : Code & outils - EUPL-1.2 ; Données du graphe - CC-BY-4.0 ; Schémas & vocabulaires - CC0 ou Apache-2.0.", "Verwendet native Schemata, die kompatibel sind mit: CPSV-AP, CCCEV, ELI (geplant), PROV-O (geplant). Lizenzen: Code & Werkzeuge - EUPL-1.2; Graphendaten - CC-BY-4.0; Schemata & Vokabulare - CC0 oder Apache-2.0.", "Benotzt natierlech Schemata, déi kompatibel si mat: CPSV-AP, CCCEV, ELI (geplangt), PROV-O (geplangt). Lizenzen: Code & Tools - EUPL-1.2; Graph-Donnéeën - CC-BY-4.0; Schemata & Vokabulairen - CC0 oder Apache-2.0.")}
                   </p>
                 </div>
 
                 <div>
                   <p className="font-semibold text-amber-950 text-xs">
-                    {l(
-                      lang,
-                      "Important",
-                      "Important",
-                      "Wichtig"
-                    )}
+                    {l(lang, "Important", "Important", "Wichtig", "Wichteg")}
                   </p>
                   <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
-                    {l(
-                      lang,
-                      "For informational purposes only. Not legal, tax, or professional advice. Always consult qualified professionals. Data provided \"as is\" with no warranties.",
-                      "Uniquement à des fins d'information. Ceci ne constitue pas un conseil juridique, fiscal ou professionnel. Consultez toujours des professionnels qualifiés. Données fournies « en l'état » sans aucune garantie.",
-                      "Nur zu Informationszwecken. Keine Rechts-, Steuer- oder sonstige Fachberatung. Konsultieren Sie immer qualifizierte Fachleute. Die Daten werden ohne Mängelgewähr und ohne Gewährleistungen bereitgestellt."
-                    )}
+                    {l(lang, "For informational purposes only. Not legal, tax, or professional advice. Always consult qualified professionals. Data provided \"as is\" with no warranties.", "Uniquement à des fins d'information. Ceci ne constitue pas un conseil juridique, fiscal ou professionnel. Consultez toujours des professionnels qualifiés. Données fournies « en l'état » sans aucune garantie.", "Nur zu Informationszwecken. Keine Rechts-, Steuer- oder sonstige Fachberatung. Konsultieren Sie immer qualifizierte Fachleute. Die Daten werden ohne Mängelgewähr und ohne Gewährleistungen bereitgestellt.", "Nëmme fir Informatiounszwecker. Keng juristesch, steierlech oder professionell Berodung. Consultéiert ëmmer qualifizéiert Fachleit. D'Donnéeë ginn \"wéi se sinn\" geliwwert, ouni Garantie.")}
                   </p>
                 </div>
               </div>
@@ -532,46 +502,30 @@ export default function ChecklistPage() {
           {/* Checklist preview card */}
           <div className="glass-panel p-4 sm:p-5 rounded-xl">
             <div className="text-sm font-semibold mb-2" style={{ color: "#2b3a67" }}>
-              {l(lang,
-                "What the checklist is being built to look like",
-                "Ce que la liste de démarches est conçue pour devenir",
-                "Wie die Checkliste aussehen soll"
-              )}
+              {l(lang, "What the checklist is being built to look like", "Ce que la liste de démarches est conçue pour devenir", "Wie die Checkliste aussehen soll", "Wéi d'Checklëscht soll ausgesinn")}
             </div>
             <p className="text-[11px] text-calm-blue-500 leading-relaxed mb-3">
-              {l(lang,
-                "The image illustrates the type of step-by-step guidance Clarvia is working to deliver. It is not a finished product — the content, design, and features are still being developed and validated.",
-                "L'image illustre le type d'accompagnement étape par étape que Clarvia travaille à offrir. Il ne s'agit pas d'un produit finalisé — le contenu, le design et les fonctionnalités sont encore en cours de développement et de validation.",
-                "Das Bild zeigt, welche Art von schrittweiser Orientierung Clarvia entwickeln möchte. Es handelt sich nicht um ein fertiges Produkt — Inhalte, Design und Funktionen werden noch entwickelt und geprüft."
-              )}
+              {l(lang, "The image illustrates the type of step-by-step guidance Clarvia is working to deliver. It is not a finished product — the content, design, and features are still being developed and validated.", "L'image illustre le type d'accompagnement étape par étape que Clarvia travaille à offrir. Il ne s'agit pas d'un produit finalisé — le contenu, le design et les fonctionnalités sont encore en cours de développement et de validation.", "Das Bild zeigt, welche Art von schrittweiser Orientierung Clarvia entwickeln möchte. Es handelt sich nicht um ein fertiges Produkt — Inhalte, Design und Funktionen werden noch entwickelt und geprüft.", "D'Bild weist déi Zort Schrëtt-fir-Schrëtt-Orientéierung, un där Clarvia schafft. Et ass nach kee fäerdege Produit — Inhalt, Design a Funktioune ginn nach entwéckelt a validéiert.")}
             </p>
             <button
               onClick={() => setLightboxOpen(true)}
               className="group relative w-full rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 cursor-zoom-in border border-calm-blue-200/60"
-              aria-label={l(lang,
-                "View full checklist preview",
-                "Voir l'aperçu complet de la liste de démarches",
-                "Vollständige Vorschau der Checkliste anzeigen"
-              )}
+              aria-label={l(lang, "View full checklist preview", "Voir l'aperçu complet de la liste de démarches", "Vollständige Vorschau der Checkliste anzeigen", "Déi komplett Virschau vun der Checklëscht kucken")}
             >
               <Image
                 src={previewThumb}
-                alt={l(lang,
-                  "Illustrative preview of the Clarvia bereavement checklist for Luxembourg",
-                  "Aperçu illustratif de la liste de démarches Clarvia pour le Luxembourg",
-                  "Illustrative Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg"
-                )}
+                alt={l(lang, "Illustrative preview of the Clarvia bereavement checklist for Luxembourg", "Aperçu illustratif de la liste de démarches Clarvia pour le Luxembourg", "Illustrative Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg", "Illustrativ Virschau vun der Clarvia-Checklëscht am Trauerfall fir Lëtzebuerg")}
                 width={600}
                 height={338}
                 className="w-full block"
               />
               <div className="absolute inset-0 bg-calm-blue-900/0 group-hover:bg-calm-blue-900/10 transition-colors duration-300 flex items-center justify-center">
                 <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm text-calm-blue-700 text-xs font-medium px-3 py-1.5 rounded-full shadow-md">
-                  🔍 {l(lang, "Click to enlarge", "Cliquer pour agrandir", "Klicken zum Vergrößern")}
+                  🔍 {l(lang, "Click to enlarge", "Cliquer pour agrandir", "Klicken zum Vergrößern", "Klicke fir ze vergréisseren")}
                 </span>
               </div>
               <span className="absolute top-2 right-2 bg-calm-lilac-100/90 backdrop-blur-sm text-calm-lilac-600 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-calm-lilac-200/60 uppercase tracking-wider">
-                {l(lang, "Illustrative", "Illustratif", "Illustrativ")}
+                {l(lang, "Illustrative", "Illustratif", "Illustrativ", "Illustrativ")}
               </span>
             </button>
           </div>
@@ -584,29 +538,21 @@ export default function ChecklistPage() {
             onClick={() => setLightboxOpen(false)}
             role="dialog"
             aria-modal="true"
-            aria-label={l(lang, "Checklist preview", "Aperçu de la liste de démarches", "Vorschau der Checkliste")}
+            aria-label={l(lang, "Checklist preview", "Aperçu de la liste de démarches", "Vorschau der Checkliste", "Virschau vun der Checklëscht")}
           >
             <button
               onClick={() => setLightboxOpen(false)}
               className="fixed top-4 right-4 z-[10000] bg-white/90 backdrop-blur-sm text-calm-blue-700 w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-colors text-xl font-bold"
-              aria-label={l(lang, "Close", "Fermer", "Schließen")}
+              aria-label={l(lang, "Close", "Fermer", "Schließen", "Zoumaachen")}
             >
               ✕
             </button>
             <div className="fixed top-4 left-4 z-[10000] bg-calm-lilac-100/95 backdrop-blur-sm text-calm-lilac-600 text-xs sm:text-sm font-medium px-4 py-2 rounded-full border border-calm-lilac-200/60 shadow-sm">
-              {l(lang,
-                "Illustrative preview — not a finished product",
-                "Aperçu illustratif — il ne s'agit pas d'un produit finalisé",
-                "Illustrative Vorschau — kein fertiges Produkt"
-              )}
+              {l(lang, "Illustrative preview — not a finished product", "Aperçu illustratif — il ne s'agit pas d'un produit finalisé", "Illustrative Vorschau — kein fertiges Produkt", "Illustrativ Virschau — nach kee fäerdege Produit")}
             </div>
             <Image
               src={previewFull}
-              alt={l(lang,
-                "Full preview of the Clarvia bereavement checklist for Luxembourg",
-                "Aperçu complet de la liste de démarches Clarvia pour le Luxembourg",
-                "Vollständige Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg"
-              )}
+              alt={l(lang, "Full preview of the Clarvia bereavement checklist for Luxembourg", "Aperçu complet de la liste de démarches Clarvia pour le Luxembourg", "Vollständige Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg", "Komplett Virschau vun der Clarvia-Checklëscht am Trauerfall fir Lëtzebuerg")}
               width={1200}
               height={7446}
               className="max-w-4xl w-full my-16 mx-4 rounded-xl shadow-2xl"
@@ -621,20 +567,10 @@ export default function ChecklistPage() {
             className="text-3xl sm:text-4xl font-semibold tracking-tight mb-2"
             style={headlineStyle}
           >
-            {l(
-              lang,
-              "Bereavement Checklist",
-              "Liste de démarches en cas de décès",
-              "Checkliste im Trauerfall"
-            )}
+            {l(lang, "Bereavement Checklist", "Liste de démarches en cas de décès", "Checkliste im Trauerfall", "Checklëscht am Trauerfall")}
           </h1>
           <p className="text-calm-blue-500 text-sm mb-8">
-            {l(
-              lang,
-              "Answer a few questions to get a personalised list of administrative steps.",
-              "Répondez à quelques questions pour obtenir une liste personnalisée de démarches administratives.",
-              "Beantworten Sie einige Fragen, um eine personalisierte Liste der Verwaltungsschritte zu erhalten."
-            )}
+            {l(lang, "Answer a few questions to get a personalised list of administrative steps.", "Répondez à quelques questions pour obtenir une liste personnalisée de démarches administratives.", "Beantworten Sie einige Fragen, um eine personalisierte Liste der Verwaltungsschritte zu erhalten.", "Beäntwert e puer Froen, fir eng personaliséiert Lëscht vun administrativen Démarchen ze kréien.")}
           </p>
 
         {step === "intake" && intake && (
@@ -756,7 +692,7 @@ function IntakeWizard({
                       : "bg-white/60 text-calm-blue-700 border-calm-blue-200 hover:border-calm-blue-400 hover:bg-white"
                   }`}
                 >
-                  {l(lang, "I don't know", "Je ne sais pas", "Ich weiß nicht")}
+                  {l(lang, "I don't know", "Je ne sais pas", "Ich weiß nicht", "Ech weess et net")}
                 </button>
               </div>
             ) : (
@@ -766,7 +702,7 @@ function IntakeWizard({
                   type="text"
                   value={answers[q.id] && answers[q.id] !== "UNKNOWN" ? answers[q.id] : ""}
                   onChange={(e) => onAnswer(q.id, e.target.value || "UNKNOWN")}
-                  placeholder={l(lang, "Enter value…", "Saisir une valeur…", "Wert eingeben…")}
+                  placeholder={l(lang, "Enter value…", "Saisir une valeur…", "Wert eingeben…", "Wäert aginn…")}
                   className="flex-grow px-4 py-2.5 rounded-lg text-sm border border-calm-blue-200 bg-white/60 text-calm-blue-800 focus:outline-none focus:border-calm-blue-400 focus:ring-1 focus:ring-calm-blue-400"
                 />
                 <button
@@ -777,7 +713,7 @@ function IntakeWizard({
                       : "bg-white/60 text-calm-blue-700 border-calm-blue-200 hover:border-calm-blue-400 hover:bg-white"
                   }`}
                 >
-                  {l(lang, "I don't know", "Je ne sais pas", "Ich weiß nicht")}
+                  {l(lang, "I don't know", "Je ne sais pas", "Ich weiß nicht", "Ech weess et net")}
                 </button>
               </div>
             )}
@@ -794,12 +730,7 @@ function IntakeWizard({
             : "bg-calm-blue-100 text-calm-blue-400 cursor-not-allowed"
         }`}
       >
-        {l(
-          lang,
-          "Generate checklist",
-          "Générer la liste de démarches",
-          "Checkliste erstellen"
-        )}
+        {l(lang, "Generate checklist", "Générer la liste de démarches", "Checkliste erstellen", "Checklëscht erstellen")}
       </button>
     </div>
   );
@@ -832,7 +763,7 @@ function ChecklistResults({
             className="text-lg font-semibold text-calm-blue-800"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
-            {l(lang, "Your checklist", "Votre liste de démarches", "Ihre Checkliste")}
+            {l(lang, "Your checklist", "Votre liste de démarches", "Ihre Checkliste", "Är Checklëscht")}
           </h2>
         </div>
         <p className="text-sm text-calm-blue-500">
@@ -851,7 +782,7 @@ function ChecklistResults({
         <div className="space-y-3">
           <h3 className="text-sm font-bold text-amber-700 uppercase tracking-wide flex items-center gap-2">
             <span className="w-8 h-px bg-amber-300" />
-            {l(lang, "More information needed", "Informations supplémentaires nécessaires", "Weitere Informationen erforderlich")}
+            {l(lang, "More information needed", "Informations supplémentaires nécessaires", "Weitere Informationen erforderlich", "Méi Informatiounen néideg")}
           </h3>
           {unknownQuestions.map((q) => (
             <div
@@ -865,12 +796,7 @@ function ChecklistResults({
                     {lang === "fr" ? q.label_fr : lang === "de" ? q.label_de : q.label_en}
                   </p>
                   <p className="text-xs text-amber-700 mt-1">
-                    {l(
-                      lang,
-                      "Your checklist may be incomplete because this answer is unknown. Once you have this information, come back and generate a new checklist.",
-                      "Votre liste pourrait être incomplète car cette réponse est inconnue. Une fois cette information obtenue, revenez générer une nouvelle liste.",
-                      "Ihre Checkliste ist möglicherweise unvollständig, da diese Antwort unbekannt ist. Sobald Sie diese Information haben, erstellen Sie eine neue Checkliste."
-                    )}
+                    {l(lang, "Your checklist may be incomplete because this answer is unknown. Once you have this information, come back and generate a new checklist.", "Votre liste pourrait être incomplète car cette réponse est inconnue. Une fois cette information obtenue, revenez générer une nouvelle liste.", "Ihre Checkliste ist möglicherweise unvollständig, da diese Antwort unbekannt ist. Sobald Sie diese Information haben, erstellen Sie eine neue Checkliste.", "Är Checklëscht ka onvollstänneg sinn, well dës Äntwert onbekannt ass. Wann Dir dës Informatioun hutt, kommt zréck a generéiert eng nei Checklëscht.")}
                   </p>
                 </div>
               </div>
@@ -901,12 +827,7 @@ function ChecklistResults({
       {items.length === 0 && unknownQuestions.length === 0 && (
         <div className="glass-panel p-8 rounded-xl text-center">
           <p className="text-calm-blue-500 text-sm">
-            {l(
-              lang,
-              "No items match your situation based on the answers provided. This may be because the alpha prototype has very limited coverage.",
-              "Aucun élément ne correspond à votre situation sur la base des réponses fournies. Cela peut être dû à la couverture très limitée du prototype alpha.",
-              "Keine Einträge passen zu Ihrer Situation basierend auf den gegebenen Antworten. Dies kann daran liegen, dass der Alpha-Prototyp eine sehr begrenzte Abdeckung hat."
-            )}
+            {l(lang, "No items match your situation based on the answers provided. This may be because the alpha prototype has very limited coverage.", "Aucun élément ne correspond à votre situation sur la base des réponses fournies. Cela peut être dû à la couverture très limitée du prototype alpha.", "Keine Einträge passen zu Ihrer Situation basierend auf den gegebenen Antworten. Dies kann daran liegen, dass der Alpha-Prototyp eine sehr begrenzte Abdeckung hat.", "Keng Elementer passen op Basis vun den uginnene Äntwerten zu Ärer Situatioun. Dat kann dorunner leien, datt den Alpha-Prototyp nach eng ganz limitéiert Ofdeckung huet.")}
           </p>
         </div>
       )}
@@ -917,13 +838,13 @@ function ChecklistResults({
           onClick={onReset}
           className="btn-secondary px-6 py-2.5 text-sm rounded-xl"
         >
-          {l(lang, "Start over", "Recommencer", "Neu starten")}
+          {l(lang, "Start over", "Recommencer", "Neu starten", "Nei ufänken")}
         </button>
         <Link
           href={`/${lang}`}
           className="btn-secondary px-6 py-2.5 text-sm rounded-xl inline-flex items-center"
         >
-          {l(lang, "Back to home", "Retour à l'accueil", "Zurück zur Startseite")}
+          {l(lang, "Back to home", "Retour à l'accueil", "Zurück zur Startseite", "Zréck op d'Startsäit")}
         </Link>
       </div>
     </div>
@@ -945,24 +866,19 @@ function ChecklistItemCard({
       icon: "✔",
       color: "text-emerald-600",
       bg: "bg-emerald-50 border-emerald-200",
-      label: l(lang, "Applies", "Applicable", "Zutreffend"),
+      label: l(lang, "Applies", "Applicable", "Zutreffend", "Trëfft zou"),
     },
     needs_fact: {
       icon: "?",
       color: "text-amber-600",
       bg: "bg-amber-50 border-amber-200",
-      label: l(
-        lang,
-        "More info needed",
-        "Informations supplémentaires nécessaires",
-        "Weitere Informationen nötig"
-      ),
+      label: l(lang, "More info needed", "Informations supplémentaires nécessaires", "Weitere Informationen nötig", "Méi Infoen néideg"),
     },
     does_not_apply: {
       icon: "✘",
       color: "text-calm-blue-400",
       bg: "bg-calm-blue-50 border-calm-blue-200",
-      label: l(lang, "Does not apply", "Non applicable", "Nicht zutreffend"),
+      label: l(lang, "Does not apply", "Non applicable", "Nicht zutreffend", "Trëfft net zou"),
     },
   };
 
@@ -1019,13 +935,13 @@ function ChecklistItemCard({
             {item.consequence_type && (
               <span className="capitalize">
                 {item.consequence_type === "obligation"
-                  ? l(lang, "Obligation", "Obligation", "Pflicht")
+                  ? l(lang, "Obligation", "Obligation", "Pflicht", "Flicht")
                   : item.consequence_type === "right_or_benefit" || item.consequence_type === "right"
-                    ? l(lang, "Right / Benefit", "Droit / Prestation", "Recht / Leistung")
+                    ? l(lang, "Right / Benefit", "Droit / Prestation", "Recht / Leistung", "Recht / Leeschtung")
                     : item.consequence_type === "administrative_step"
-                      ? l(lang, "Administrative step", "Démarche administrative", "Verwaltungsschritt")
+                      ? l(lang, "Administrative step", "Démarche administrative", "Verwaltungsschritt", "Administrativ Démarche")
                       : item.consequence_type === "routing_decision"
-                        ? l(lang, "Decision point", "Point de décision", "Entscheidungspunkt")
+                        ? l(lang, "Decision point", "Point de décision", "Entscheidungspunkt", "Decisiounspunkt")
                         : l(lang, item.consequence_type, item.consequence_type, item.consequence_type)}
               </span>
             )}
@@ -1037,7 +953,7 @@ function ChecklistItemCard({
               {item.evidence && item.evidence.length > 0 && (
                 <div>
                   <span className="font-semibold">
-                    {l(lang, "Documents needed:", "Documents nécessaires :", "Benötigte Dokumente:")}
+                    {l(lang, "Documents needed:", "Documents nécessaires :", "Benötigte Dokumente:", "Néideg Dokumenter:")}
                   </span>
                   <ul className="list-disc list-inside mt-1 ml-1">
                     {item.evidence.map((e) => (
@@ -1049,7 +965,7 @@ function ChecklistItemCard({
               {item.sources && item.sources.length > 0 && (
                 <div>
                   <span className="font-semibold">
-                    {l(lang, "Sources:", "Sources :", "Quellen:")}
+                    {l(lang, "Sources:", "Sources :", "Quellen:", "Quellen:")}
                   </span>
                   <ul className="mt-1 ml-1 space-y-0.5">
                     {item.sources.map((s) => (
@@ -1078,12 +994,7 @@ function ChecklistItemCard({
               )}
               {item.status === "needs_fact" && item.missing_facts && (
                 <p className="text-amber-600">
-                  {l(
-                    lang,
-                    "We need more information to determine if this applies to your situation.",
-                    "Nous avons besoin de plus d'informations pour déterminer si cela s'applique à votre situation.",
-                    "Wir benötigen weitere Informationen, um festzustellen, ob dies auf Ihre Situation zutrifft."
-                  )}
+                  {l(lang, "We need more information to determine if this applies to your situation.", "Nous avons besoin de plus d'informations pour déterminer si cela s'applique à votre situation.", "Wir benötigen weitere Informationen, um festzustellen, ob dies auf Ihre Situation zutrifft.", "Mir brauchen nach méi Informatiounen, fir ze bestëmmen, ob dat op Är Situatioun zoutrëfft.")}
                 </p>
               )}
             </div>
