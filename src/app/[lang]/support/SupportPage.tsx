@@ -407,7 +407,7 @@ export default function SupportPage() {
                   {isProcessing
                     ? l(lang, "Redirecting...", "Redirection...", "Weiterleitung...", "Weiderleedung...")
                     : isValidAmount
-                      ? l(lang, `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""}`, `Donner ${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/mois" : ""}`, `${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/Monat" : ""} spenden`, `${activeAmount.toLocaleString()} \\u20AC${tab === "monthly" ? "/Mount" : ""} spenden`)
+                      ? l(lang, `Donate \u20AC${activeAmount.toLocaleString()}${tab === "monthly" ? "/mo" : ""}`, `Donner ${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/mois" : ""}`, `${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/Monat" : ""} spenden`, `${activeAmount.toLocaleString()} \u20AC${tab === "monthly" ? "/Mount" : ""} spenden`)
                       : l(lang, "Enter an amount", "Saisir un montant", "Betrag eingeben", "Betrag aginn")
                   }
                 </button>
