@@ -5,13 +5,13 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-inter",
   weight: ["300", "400", "500", "600", "700"],
 });
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  variable: "--font-serif",
+  variable: "--font-playfair",
   weight: ["400", "600"],
   style: ["normal", "italic"],
 });
@@ -37,9 +37,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer />
+        <Script
+          id="turnstile-api"
+          src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+          strategy="afterInteractive"
+        />
         {/* Google Consent Mode v2 — must fire before gtag.js loads */}
-        <script
+        <Script
+          id="gtag-consent"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -82,7 +88,7 @@ export default function RootLayout({
         {children}
         <Script
           id="gtag-js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://www.googletagmanager.com/gtag/js?id=G-K67M5B4932"
         />
       </body>
