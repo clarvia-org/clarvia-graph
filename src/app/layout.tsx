@@ -37,15 +37,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <Script
-          id="turnstile-api"
+        <script
           src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
-          strategy="afterInteractive"
+          async
+          defer
         />
         {/* Google Consent Mode v2 — must fire before gtag.js loads */}
-        <Script
-          id="gtag-consent"
-          strategy="beforeInteractive"
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -88,11 +86,12 @@ export default function RootLayout({
         {children}
         <Script
           id="gtag-js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-K67M5B4932"
         />
       </body>
     </html>
   );
 }
+
 
