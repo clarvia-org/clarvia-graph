@@ -66,7 +66,7 @@ export default function UpdatesPage() {
                   className="text-xl font-semibold text-calm-blue-800 leading-snug"
                   style={{ fontFamily: headlineStyle.fontFamily }}
                 >
-                  {update.headline[lang]}
+                  {update.headline[lang] || update.headline.fr || update.headline.en}
                 </h2>
                 {update.logo && (
                   <Image
@@ -82,7 +82,7 @@ export default function UpdatesPage() {
               {/* Body */}
               {update.body && (
                 <p className="text-sm sm:text-base text-calm-blue-600 leading-relaxed whitespace-pre-line">
-                  {update.body[lang]}
+                  {update.body[lang] || update.body.fr || update.body.en}
                 </p>
               )}
             </article>

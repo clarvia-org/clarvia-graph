@@ -4,11 +4,11 @@ import { getStripe } from "@/lib/stripe";
 
 function getProductDescription(type: "monthly" | "onetime", lang: string, amount: number): string {
   if (type === "monthly") {
-    if (lang === "fr") return `${amount} \u20AC/mois`;
+    if (lang === "fr" || lang === "lu") return `${amount} \u20AC/mois`;
     if (lang === "de") return `${amount} \u20AC/Monat`;
     return `\u20AC${amount}/month`;
   }
-  if (lang === "fr") return `Don unique de ${amount} \u20AC`;
+  if (lang === "fr" || lang === "lu") return `Don unique de ${amount} \u20AC`;
   if (lang === "de") return `Einmalige Spende von ${amount} \u20AC`;
   return `\u20AC${amount} one-time donation`;
 }
@@ -56,14 +56,14 @@ export async function POST(req: NextRequest) {
 
   // Map site language to Stripe Checkout locale
   const stripeLocale: Stripe.Checkout.SessionCreateParams["locale"] =
-    lang === "fr" ? "fr" : lang === "de" ? "de" : "en";
+    lang === "fr" || lang === "lu" ? "fr" : lang === "de" ? "de" : "en";
 
   // Translated product names for Stripe Checkout line items
   const productName = type === "monthly"
-    ? lang === "fr" ? "Don mensuel \u00e0 Clarvia ASBL"
+    ? lang === "fr" || lang === "lu" ? "Don mensuel \u00e0 Clarvia ASBL"
       : lang === "de" ? "Monatliche Spende an Clarvia ASBL"
       : "Monthly donation to Clarvia ASBL"
-    : lang === "fr" ? "Don \u00e0 Clarvia ASBL"
+    : lang === "fr" || lang === "lu" ? "Don \u00e0 Clarvia ASBL"
       : lang === "de" ? "Spende an Clarvia ASBL"
       : "Donation to Clarvia ASBL";
 

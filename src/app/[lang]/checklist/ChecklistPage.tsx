@@ -294,8 +294,9 @@ export default function ChecklistPage() {
   const [loading, setLoading] = useState(true);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
-  const previewThumb = `/checklist-preview-${lang}-thumb-v2.jpg`;
-  const previewFull = `/checklist-preview-${lang}-v2.jpg`;
+  const imgLang = lang === "lu" ? "fr" : lang;
+  const previewThumb = `/checklist-preview-${imgLang}-thumb-v2.jpg`;
+  const previewFull = `/checklist-preview-${imgLang}-v2.jpg`;
 
   // Load data
   useEffect(() => {

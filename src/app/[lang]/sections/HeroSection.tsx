@@ -16,7 +16,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
       </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
         <a href="#experience" className="btn-primary inline-flex items-center gap-2 px-8 py-4 text-lg">
-          {l(lang, "Share your experience", "Partager votre expérience", "Erfahrung teilen")}
+          {l(lang, "Share your experience", "Partager votre expérience", "Erfahrung teilen", "Deelt Är Erfarung")}
         </a>
         <a href="#contact" className="btn-secondary inline-flex items-center gap-2 px-6 py-3 text-base">
           {l(lang, "Contact us", "Nous contacter", "Kontakt")}
