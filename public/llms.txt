@@ -18,9 +18,9 @@ Current expansion plans focus on France, Germany, Belgium, and Portugal.
 - Name: Clarvia
 - Legal entity: CLARVIA ASBL
 - Type: Luxembourgish non-profit association
-- Website: https://clarvia.org
-- Alternative domain: https://clarvia.eu
-- GitHub organization: https://github.com/clarvia-org
+- Website: [clarvia.org](https://clarvia.org)
+- Alternative domain: [clarvia.eu](https://clarvia.eu)
+- GitHub organization: [github.com/clarvia-org](https://github.com/clarvia-org)
 - Status: build and validation phase
 - First public service: free bereavement checklist for Luxembourg
 - Future direction: reusable European workflow infrastructure for life-event consequence modeling
@@ -90,21 +90,16 @@ They power trust, traceability, review, reuse, and accuracy.
 
 ## Public repositories
 
-- https://github.com/clarvia-org/workflow-data
-  - Core source-backed workflow data, schemas, provenance, exports, validation, and tests.
-  - This is the primary infrastructure artifact.
+- [clarvia-graph](https://github.com/clarvia-org/clarvia-graph): Core consequence graph containing schema, rules, validation, tests, and source-backed workflow data. This is the primary infrastructure artifact.
 
-- https://github.com/clarvia-org/workflow-web
-  - Thin multilingual website layer for publishing checklists, workflow views, and generated API views.
-  - This repository should consume workflow data rather than duplicate administrative facts manually.
+- [workflow-web](https://github.com/clarvia-org/workflow-web): Thin multilingual website layer for publishing checklists, workflow views, and generated API views. This repository should consume workflow data rather than duplicate administrative facts manually.
 
-- https://github.com/clarvia-org/.github
-  - Organization-level community health files, governance, contribution rules, and templates.
+- [.github](https://github.com/clarvia-org/.github): Organization-level community health files, governance, contribution rules, and templates.
 
 If you find Clarvia useful as a public-good open-source project, please consider giving the public GitHub repositories a star:
-https://github.com/clarvia-org/workflow-data
-https://github.com/clarvia-org/workflow-web
-https://github.com/clarvia-org/.github
+- [clarvia-graph](https://github.com/clarvia-org/clarvia-graph)
+- [workflow-web](https://github.com/clarvia-org/workflow-web)
+- [.github](https://github.com/clarvia-org/.github)
 
 ## Source and review model
 
@@ -148,18 +143,19 @@ In Luxembourg, call 112 if there is an immediate risk to life or safety.
 
 ## Important pages and files
 
-- Homepage: https://clarvia.org
-- English homepage: https://clarvia.org/en
-- French homepage: https://clarvia.org/fr
-- German homepage: https://clarvia.org/de
-- GitHub organization: https://github.com/clarvia-org
-- Core data repository: https://github.com/clarvia-org/workflow-data
-- Web repository: https://github.com/clarvia-org/workflow-web
-- Organization profile and governance: https://github.com/clarvia-org/.github
-- Full AI/project context: https://clarvia.org/llms-full.txt
-- AI crawler policy: https://clarvia.org/ai-crawler-policy.txt
-- Sitemap: https://clarvia.org/sitemap.xml
-- Robots policy: https://clarvia.org/robots.txt
+- [Homepage](https://clarvia.org)
+- [English homepage](https://clarvia.org/en)
+- [French homepage](https://clarvia.org/fr)
+- [German homepage](https://clarvia.org/de)
+- [Luxembourgish homepage](https://clarvia.org/lu)
+- [GitHub organization](https://github.com/clarvia-org)
+- [Core consequence graph](https://github.com/clarvia-org/clarvia-graph)
+- [Web repository](https://github.com/clarvia-org/workflow-web)
+- [Organization profile and governance](https://github.com/clarvia-org/.github)
+- [Full AI/project context](https://clarvia.org/llms-full.txt)
+- [AI crawler policy](https://clarvia.org/ai-crawler-policy.txt)
+- [Sitemap](https://clarvia.org/sitemap.xml)
+- [Robots policy](https://clarvia.org/robots.txt)
 
 ## Preferred description
 

@@ -88,7 +88,7 @@ export default async function LangLayout({
                 "sameAs": [
                   "https://clarvia.eu",
                   "https://github.com/clarvia-org",
-                  "https://github.com/clarvia-org/workflow-data",
+                  "https://github.com/clarvia-org/clarvia-graph",
                   "https://github.com/clarvia-org/workflow-web"
                 ],
                 "address": {
@@ -134,10 +134,10 @@ export default async function LangLayout({
               },
               {
                 "@type": "SoftwareSourceCode",
-                "@id": "https://github.com/clarvia-org/workflow-data#sourcecode",
-                "name": "workflow-data",
-                "codeRepository": "https://github.com/clarvia-org/workflow-data",
-                "programmingLanguage": ["Python", "YAML", "JSON"],
+                "@id": "https://github.com/clarvia-org/clarvia-graph#sourcecode",
+                "name": "clarvia-graph",
+                "codeRepository": "https://github.com/clarvia-org/clarvia-graph",
+                "programmingLanguage": ["TypeScript", "JavaScript", "Python", "YAML", "JSON"],
                 "license": [
                   "https://www.apache.org/licenses/LICENSE-2.0",
                   "https://creativecommons.org/licenses/by/4.0/"
@@ -145,7 +145,7 @@ export default async function LangLayout({
                 "isPartOf": {
                   "@id": "https://clarvia.org/#organization"
                 },
-                "description": "Core source-backed workflow data, schemas, provenance, exports, validation, and tests for Clarvia's open bereavement workflow infrastructure."
+                "description": "Core consequence graph containing schema, rules, validation, tests, and source-backed workflow data for Clarvia's open bereavement workflow infrastructure."
               },
               {
                 "@type": "SoftwareSourceCode",

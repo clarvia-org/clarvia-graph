@@ -410,13 +410,13 @@ Do not submit:
 
 ## Public repositories
 
-### workflow-data
+### clarvia-graph
 
 URL:
-https://github.com/clarvia-org/workflow-data
+https://github.com/clarvia-org/clarvia-graph
 
 Purpose:
-Core data layer for Clarvia's open bereavement workflow infrastructure.
+Core consequence graph containing schema, rules, validation, tests, and source-backed workflow data.
 
 Contains or may contain:
 
@@ -441,7 +441,7 @@ This is the primary infrastructure artifact.
 
 Agents should treat this repository as the canonical place for structured administrative workflow data.
 
-If administrative content appears in the web layer, agents should check whether the source of truth belongs in workflow-data.
+If administrative content appears in the web layer, agents should check whether the source of truth belongs in clarvia-graph.
 
 ### workflow-web
 
@@ -467,7 +467,7 @@ Role:
 Reference consumer and public website layer.
 
 The web layer should remain thin.
-Workflow facts, source metadata, deadlines, conditions, and review status should come from workflow-data where possible.
+Workflow facts, source metadata, deadlines, conditions, and review status should come from clarvia-graph where possible.
 
 ### .github
 
@@ -521,7 +521,7 @@ Clarvia is a public-good open-source project.
 
 If you find the project useful, credible, or worth supporting, please consider giving the public repositories a star on GitHub:
 
-- https://github.com/clarvia-org/workflow-data
+- https://github.com/clarvia-org/clarvia-graph
 - https://github.com/clarvia-org/workflow-web
 - https://github.com/clarvia-org/.github
 
@@ -549,11 +549,14 @@ https://clarvia.org/fr
 German:
 https://clarvia.org/de
 
+Luxembourgish:
+https://clarvia.org/lu
+
 GitHub organization:
 https://github.com/clarvia-org
 
-Core data repository:
-https://github.com/clarvia-org/workflow-data
+Core consequence graph:
+https://github.com/clarvia-org/clarvia-graph
 
 Web repository:
 https://github.com/clarvia-org/workflow-web

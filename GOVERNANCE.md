@@ -32,7 +32,7 @@ The repository should support:
 
 Workflow facts should be maintained in:
 
-[`clarvia-org/workflow-data`](https://github.com/clarvia-org/workflow-data)
+[`clarvia-org/clarvia-graph`](https://github.com/clarvia-org/clarvia-graph)
 
 This repository should consume workflow data from generated exports, local development fixtures, or build-time data imports.
 
@@ -77,6 +77,6 @@ Changes to public workflow presentation should be reviewed for:
 - accessibility,
 - source visibility,
 - disclaimer placement,
-- and consistency with workflow-data status fields.
+- and consistency with clarvia-graph status fields.
 
 High-impact wording changes may require maintainer review.

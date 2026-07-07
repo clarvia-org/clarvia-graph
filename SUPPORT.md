@@ -31,7 +31,7 @@ Examples:
 
 - broken links,
 - unclear documentation,
-- workflow-data questions,
+- clarvia-graph questions,
 - source additions,
 - accessibility issues,
 - bugs in published pages,
@@ -45,7 +45,7 @@ Please do not include personal bereavement cases or sensitive personal informati
 
 Workflow corrections should usually be reported in:
 
-[`clarvia-org/workflow-data`](https://github.com/clarvia-org/workflow-data)
+[`clarvia-org/clarvia-graph`](https://github.com/clarvia-org/clarvia-graph)
 
 Please include:
 
