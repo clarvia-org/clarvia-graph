@@ -27,19 +27,19 @@ export default function TrustSection({ lang }: { lang: Lang }) {
                     </a>
                   </h3>
                   <p className="text-sm text-calm-blue-600 leading-relaxed text-center md:min-h-[4.5rem] flex items-center justify-center break-words">
-                    {l(lang, supporter.description.en, supporter.description.fr, supporter.description.de)}
+                    {l(lang, supporter.description.en, supporter.description.fr, supporter.description.de, (supporter.description as { lu?: string }).lu)}
                   </p>
                 </div>
 
                 <blockquote className="bg-calm-lilac-50/60 rounded-xl p-5 border border-calm-lilac-100/60 mb-6">
                   <p className="text-sm text-calm-blue-700 leading-relaxed italic text-center break-words">
-                    &ldquo;{l(lang, supporter.quote.en, supporter.quote.fr, supporter.quote.de)}&rdquo;
+                    &ldquo;{l(lang, supporter.quote.en, supporter.quote.fr, supporter.quote.de, (supporter.quote as { lu?: string }).lu)}&rdquo;
                   </p>
                 </blockquote>
               </div>
 
               <p className="text-xs text-calm-blue-500 leading-relaxed text-center mt-auto pt-2 border-t border-calm-blue-100/30 break-words">
-                {l(lang, supporter.thanks.en, supporter.thanks.fr, supporter.thanks.de)}
+                {l(lang, supporter.thanks.en, supporter.thanks.fr, supporter.thanks.de, (supporter.thanks as { lu?: string }).lu)}
               </p>
             </div>
           ))}
@@ -57,8 +57,8 @@ export default function TrustSection({ lang }: { lang: Lang }) {
             <div key={i} className="glass-panel p-6 sm:p-8 flex flex-col items-center text-center">
               <Image src={f.photo} alt={f.name} width={96} height={96} className={`w-24 h-24 rounded-full object-cover border-3 border-white shadow-md mb-4${i === 1 ? " [transform:scaleX(-1)]" : ""}`} style={f.photo.includes("gunther") ? { objectPosition: "center 20%" } : undefined} />
               <h3 className="text-xl font-semibold mb-1" style={{ color: "#2b3a67" }}>{f.name}</h3>
-              <p className="text-sm font-medium text-calm-lilac-500 mb-3">{l(lang, f.title.en, f.title.fr, f.title.de)}</p>
-              <p className="text-base text-calm-blue-600 leading-relaxed">{l(lang, f.bio.en, f.bio.fr, f.bio.de)}</p>
+              <p className="text-sm font-medium text-calm-lilac-500 mb-3">{l(lang, f.title.en, f.title.fr, f.title.de, f.title.lu)}</p>
+              <p className="text-base text-calm-blue-600 leading-relaxed">{l(lang, f.bio.en, f.bio.fr, f.bio.de, f.bio.lu)}</p>
             </div>
           ))}
         </div>
@@ -81,10 +81,10 @@ export default function TrustSection({ lang }: { lang: Lang }) {
                 <span className="text-2xl flex-shrink-0">{p.icon}</span>
                 <div>
                   <h3 className="text-base font-semibold mb-1" style={{ color: "#2b3a67" }}>
-                    {l(lang, p.en_title, p.fr_title, p.de_title)}
+                    {l(lang, p.en_title, p.fr_title, p.de_title, p.lu_title)}
                   </h3>
                   <p className="text-sm text-calm-blue-600 leading-relaxed">
-                    {l(lang, p.en, p.fr, p.de)}
+                    {l(lang, p.en, p.fr, p.de, p.lu)}
                   </p>
                 </div>
               </div>

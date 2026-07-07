@@ -22,7 +22,7 @@ export default function HeritageSection({ lang }: { lang: Lang }) {
           {HERITAGE_ITEMS.map((item, i) => (
             <li key={i} className="flex items-baseline gap-2.5 text-base text-calm-blue-600">
               <span className="text-calm-lilac-400 flex-shrink-0 text-sm leading-none">●</span>
-              <span>{l(lang, item.en, item.fr, item.de)}</span>
+              <span>{l(lang, item.en, item.fr, item.de, item.lu)}</span>
             </li>
           ))}
         </ul>

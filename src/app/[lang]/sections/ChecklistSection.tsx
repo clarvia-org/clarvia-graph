@@ -19,7 +19,7 @@ export default function ChecklistSection({ lang }: { lang: Lang }) {
           {CHECKLIST_TOPICS.map((item, i) => (
             <li key={i} className="flex items-baseline gap-2.5 text-base text-calm-blue-600">
               <span className="text-calm-lilac-400 flex-shrink-0 text-sm leading-none">●</span>
-              <span>{l(lang, item.en, item.fr, item.de)}</span>
+              <span>{l(lang, item.en, item.fr, item.de, item.lu)}</span>
             </li>
           ))}
         </ul>
@@ -33,9 +33,9 @@ export default function ChecklistSection({ lang }: { lang: Lang }) {
           <div key={i} className="glass-panel p-6 text-center">
             <div className="text-4xl mb-3">{f.icon}</div>
             <h3 className="text-lg font-semibold mb-2 text-calm-blue-700">
-              {l(lang, f.en_title, f.fr_title, f.de_title)}
+              {l(lang, f.en_title, f.fr_title, f.de_title, f.lu_title)}
             </h3>
-            <p className="text-base text-calm-blue-600">{l(lang, f.en, f.fr, f.de)}</p>
+            <p className="text-base text-calm-blue-600">{l(lang, f.en, f.fr, f.de, f.lu)}</p>
           </div>
         ))}
       </div>

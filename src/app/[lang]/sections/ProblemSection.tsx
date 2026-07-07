@@ -13,10 +13,10 @@ export default function ProblemSection({ lang }: { lang: Lang }) {
           <div key={i} className="glass-panel p-6 sm:p-8 flex flex-col">
             <div className="text-3xl sm:text-4xl font-bold mb-2 text-center" style={{ color: "#7162ae" }}>{s.num}</div>
             <p className="text-base text-calm-blue-700 font-medium text-center mb-3">
-              {l(lang, s.en_label, s.fr_label, s.de_label)}
+              {l(lang, s.en_label, s.fr_label, s.de_label, s.lu_label)}
             </p>
             <p className="text-sm text-calm-blue-600 leading-relaxed mb-4 flex-grow">
-              {l(lang, s.en_detail, s.fr_detail, s.de_detail)}
+              {l(lang, s.en_detail, s.fr_detail, s.de_detail, s.lu_detail)}
             </p>
             <p className="text-xs text-calm-blue-500 pt-3 border-t border-calm-blue-100/50">
               {l(lang, "Source", "Source", "Quelle", "Quell")}:{" "}

@@ -22,13 +22,13 @@ export default function StageSection({ lang }: { lang: Lang }) {
             {PREPARATION_DONE.map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <div className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-calm-lilac-500 border-2 border-calm-lilac-500 text-white">✓</div>
-                <p className="text-base text-calm-blue-600 pt-0.5">{l(lang, item.en, item.fr, item.de)}</p>
+                <p className="text-base text-calm-blue-600 pt-0.5">{l(lang, item.en, item.fr, item.de, item.lu)}</p>
               </div>
             ))}
           </div>
 
           <p className="text-base text-calm-blue-700 font-medium leading-relaxed pt-4 border-t border-calm-blue-100">
-            {l(lang, "The next phase is a focused build and validation project.", "La prochaine étape est une phase ciblée de développement et de validation.", "Die nächste Phase ist ein fokussierter Aufbau- und Validierungsprozess.", "Déi nächst Phas ass e cibléierten Opbau- a Validéierungsprojet.")}
+            {l(lang, "The next phase is a focused build and validation project.", "La prochaine étape ést une phase ciblée de développement et de validation.", "Die nächste Phase ist ein fokussierter Aufbau- und Validierungsprozess.", "Déi nächst Phas ass e cibléierten Opbau- a Validéierungsprojet.")}
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ export default function StageSection({ lang }: { lang: Lang }) {
             {NEXT_PHASE.map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <div className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-white border-2 border-calm-blue-200 text-calm-blue-300" />
-                <p className="text-base text-calm-blue-600 pt-0.5">{l(lang, item.en, item.fr, item.de)}</p>
+                <p className="text-base text-calm-blue-600 pt-0.5">{l(lang, item.en, item.fr, item.de, item.lu)}</p>
               </div>
             ))}
           </div>

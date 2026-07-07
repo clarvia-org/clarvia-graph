@@ -13,14 +13,14 @@ export default function FoundingSection({ lang }: { lang: Lang }) {
         {FOUNDING_STORIES.map((f, i) => (
           <div key={i} className="glass-panel p-8 sm:p-10 flex flex-col">
             <blockquote className="text-base leading-relaxed text-calm-blue-700 space-y-4 flex-grow">
-              <p>&ldquo;{l(lang, f.quote1.en, f.quote1.fr, f.quote1.de)}</p>
-              <p>{l(lang, f.quote2.en, f.quote2.fr, f.quote2.de)}&rdquo;</p>
+              <p>&ldquo;{l(lang, f.quote1.en, f.quote1.fr, f.quote1.de, (f.quote1 as { lu?: string }).lu)}</p>
+              <p>{l(lang, f.quote2.en, f.quote2.fr, f.quote2.de, (f.quote2 as { lu?: string }).lu)}&rdquo;</p>
             </blockquote>
             <div className="mt-6 flex items-center gap-4">
               <Image src={f.photo} alt={f.name} width={48} height={48} className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm" style={f.photo.includes("gunther") ? { objectPosition: "center 20%" } : undefined} />
               <div>
                 <p className="font-semibold text-calm-blue-800">{f.name}</p>
-                <p className="text-sm text-calm-blue-500">{l(lang, f.title.en, f.title.fr, f.title.de)}</p>
+                <p className="text-sm text-calm-blue-500">{l(lang, f.title.en, f.title.fr, f.title.de, f.title.lu)}</p>
               </div>
             </div>
           </div>

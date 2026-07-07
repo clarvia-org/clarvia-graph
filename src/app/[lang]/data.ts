@@ -136,6 +136,7 @@ export const FOUNDING_STORIES = [
       en: "Throughout my decades leading social services and senior care, I've seen firsthand how vulnerable families are during a crisis. When you add the complexities of cross-border administration and language barriers, that burden becomes paralyzing.",
       fr: "Au cours de mes décennies à la tête de services sociaux et de structures d'accompagnement des personnes âgées, j'ai vu de près à quel point les familles sont vulnérables en période de crise. Lorsque s'ajoutent la complexité de l'administration transfrontalière et les barrières linguistiques, cette charge peut devenir paralysante.",
       de: "In meinen Jahrzehnten in leitenden Funktionen in Sozialdiensten und in der Seniorenbetreuung habe ich aus nächster Nähe erlebt, wie verletzlich Familien in Krisenzeiten sind. Wenn dann noch grenzüberschreitende Verwaltung und Sprachbarrieren hinzukommen, wird diese Belastung schnell lähmend.",
+lu: "An deene Joerzéngten, an deenen ech Sozialservicer an d'Seniorebetreiung geleet hunn, hunn ech aus noer Erfarung gesinn, wéi verletzlech Familljen an enger Kris sinn. Wann nach grenziwwerschreidend Verwaltung a Sproochbarriären derbäikommen, kann déi Belaaschtung lähmend ginn.",
     },
     quote2: {
       en: "I founded Clarvia because access to clear, structured support during life's hardest moments shouldn't be a privilege. It must be a given.",
@@ -151,6 +152,7 @@ export const FOUNDING_STORIES = [
       en: "When my mother passed away, my sisters and I were overwhelmed. Even in a straightforward case in our home country, the administrative guides were a maze. In Europe - where families are spread across the globe, speak different languages, and interact with unfamiliar institutions - this burden is amplified beyond reason.",
       fr: "Lorsque ma mère est décédée, mes sœurs et moi avons été dépassés. Même dans un cas simple, dans notre pays d'origine, les guides administratifs formaient un labyrinthe. En Europe – où les familles vivent parfois dans plusieurs pays, parlent différentes langues et doivent traiter avec des institutions inconnues – cette charge devient déraisonnable.",
       de: "Als meine Mutter starb, waren meine Schwestern und ich überfordert. Selbst in einem einfachen Fall in unserem Heimatland waren die Verwaltungsleitfäden ein Labyrinth. In Europa – wo Familien über Ländergrenzen hinweg leben, unterschiedliche Sprachen sprechen und mit unbekannten Institutionen zu tun haben – wird diese Belastung unverhältnismäßig groß.",
+lu: "Wéi meng Mamm gestuerwen ass, ware meng Schwësteren an ech iwwerfuerdert. Och an engem eigentlech einfache Fall an eisem Heemechtsland waren d'administrativ Guiden e richtege Labyrinth. An Europa – wou Familljen iwwer d'Welt verdeelt sinn, verschidde Sprooche schwätzen a mat onbekannten Institutiounen ze dinn hunn – gëtt dës Belaaschtung onmoosslech grouss.",
     },
     quote2: {
       en: "I founded Clarvia to ensure no family has to navigate the bureaucracy of grief alone.",
@@ -164,22 +166,24 @@ export const FOUNDING_STORIES = [
 export const FOUNDERS = [
   {
     name: "Günther Schriver",
-    title: { en: "Co-Founder & Director", fr: "Cofondateur & administrateur", de: "Mitgründer & Vorstandsmitglied" },
+    title: { en: "Co-Founder & Director", fr: "Cofondateur & administrateur", de: "Mitgründer & Vorstandsmitglied" , lu: "Matgrënner & Direkter"},
     photo: "/gunther.webp",
     bio: {
       en: "Former Director of the Berlin Red Cross, where he led Social Services overseeing 550+ employees across refugee aid, senior care, and crisis management. Former CEO of Anderson Holding AG, one of Germany's largest senior care groups, where he led an organisation of 3,500 employees. Brings over 25 years of experience in healthcare operations, social services, and cross-border care delivery.",
       fr: "Ancien directeur de la Croix-Rouge de Berlin, où il a dirigé les services sociaux et supervisé plus de 550 salariés dans l'aide aux réfugiés, l'accompagnement des personnes âgées et la gestion de crise. Ancien CEO d'Anderson Holding AG, l'un des plus grands groupes allemands de prise en charge des personnes âgées, où il a dirigé une organisation de 3 500 salariés. Il apporte plus de 25 ans d'expérience dans la gestion d'organisations de santé, les services sociaux et l'accompagnement transfrontalier.",
       de: "Ehemaliger Direktor des Berliner Roten Kreuzes, wo er die Sozialdienste leitete und mehr als 550 Mitarbeitende in Flüchtlingshilfe, Seniorenbetreuung und Krisenmanagement verantwortete. Ehemaliger CEO der Anderson Holding AG, einer der größten Senior-Care-Gruppen Deutschlands, wo er eine Organisation mit 3.500 Mitarbeitenden führte. Er bringt mehr als 25 Jahre Erfahrung in Gesundheitsorganisationen, sozialen Diensten und grenzüberschreitender Versorgung ein.",
+lu: "Fréiere Direkter vum Berliner Roude Kräiz, wou hien d'Sozialservicer geleet huet a fir iwwer 550 Mataarbechter an der Flüchtlingshëllef, der Seniorebetreiung an dem Krisemanagement verantwortlech war. Fréiere CEO vun Anderson Holding AG, enger vun de gréisste Gruppen am Beräich Seniorebetreiung an Däitschland, wou hien eng Organisatioun mat 3.500 Mataarbechter geleet huet. Hie bréngt méi wéi 25 Joer Erfarung am Betrib vu Gesondheetsstrukturen, a Sozialservicer an an der grenziwwerschreidender Betreiung mat.",
     },
   },
   {
     name: "Tommi Lindfors",
-    title: { en: "Co-Founder & Director", fr: "Cofondateur & administrateur", de: "Mitgründer & Vorstandsmitglied" },
+    title: { en: "Co-Founder & Director", fr: "Cofondateur & administrateur", de: "Mitgründer & Vorstandsmitglied" , lu: "Matgrënner & Direkter"},
     photo: "/tommi.jfif",
     bio: {
       en: "Led a FinTech50 company, held board positions across 6 countries, and built international teams driving growth from startup to scale. Currently Founder & CEO of Bifin Sàrl, applying AI and automation to financial services. Now based in Luxembourg, channelling decades of operational, technology, and AI experience into Clarvia.",
       fr: "A dirigé une entreprise du classement FinTech50, occupé des mandats d'administrateur dans six pays et constitué des équipes internationales capables d'accompagner la croissance, de la start-up au passage à l'échelle. Actuellement fondateur et CEO de Bifin Sàrl, il applique l'IA et l'automatisation aux services financiers. Installé aujourd'hui au Luxembourg, il met des décennies d'expérience opérationnelle, technologique et en IA au service de Clarvia.",
       de: "Leitete ein FinTech50-Unternehmen, hatte Vorstandsmandate in sechs Ländern und baute internationale Teams auf, die Wachstum vom Start-up bis zur Skalierung ermöglichten. Derzeit Gründer und CEO von Bifin Sàrl, wo er KI und Automatisierung im Finanzdienstleistungsbereich einsetzt. Heute in Luxemburg ansässig, bringt er Jahrzehnte an operativer, technologischer und KI-Erfahrung in Clarvia ein.",
+lu: "Huet eng FinTech50-Firma geleet, Verwaltungsrotsmandater a 6 Länner gehat an international Ekippen opgebaut, déi Wuesstem vun der Start-up-Phas bis zur Skaléierung gedriwwen hunn. Hien ass aktuell Grënner & CEO vu Bifin Sàrl a setzt KI an Automatiséierung am Finanzservicerberäich an. Haut zu Lëtzebuerg baséiert, bréngt hien Joerzéngte vun operationeller, technologescher an KI-Erfarung an Clarvia eran.",
     },
   },
 ];

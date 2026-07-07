@@ -32,10 +32,10 @@ export default function TestimonialsSection({ lang }: { lang: Lang }) {
               <FlagImg code={t.flag} />
             </div>
             <blockquote className="text-base text-calm-blue-700 leading-relaxed italic flex-grow">
-              &ldquo;{l(lang, t.en, t.fr, t.de)}&rdquo;
+              &ldquo;{l(lang, t.en, t.fr, t.de, (t as { lu?: string }).lu)}&rdquo;
             </blockquote>
             <p className="mt-4 text-sm font-semibold text-calm-blue-800 pt-3 border-t border-calm-blue-100">
-              - {l(lang, t.attribution.en, t.attribution.fr, t.attribution.de)}
+              - {l(lang, t.attribution.en, t.attribution.fr, t.attribution.de, t.attribution.lu)}
             </p>
           </div>
         ))}
