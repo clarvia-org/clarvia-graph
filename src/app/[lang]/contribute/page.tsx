@@ -24,34 +24,22 @@ export default function ContributePage() {
           className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6 text-center"
           style={headlineStyle}
         >
-          {l(lang,
-            "Help Clarvia help families",
-            "Contribuez à Clarvia pour aider les familles",
-            "Helfen Sie Clarvia, Familien zu unterstützen"
-          )}
+          {l(lang, "Help Clarvia help families", "Contribuez à Clarvia pour aider les familles", "Helfen Sie Clarvia, Familien zu unterstützen", "Hëlleft Clarvia, Familljen ze hëllefen")}
         </h1>
 
         {/* ── What is Clarvia ── */}
         <p className="text-base sm:text-lg text-calm-blue-600 leading-relaxed mb-4 text-center">
-          {l(lang,
-            "Clarvia is a Luxembourg non-profit building a free, multilingual bereavement guide for families after the loss of a loved one. Every contribution — however small — makes that guidance more accurate, more accessible, and more trustworthy.",
-            "Clarvia est une association sans but lucratif luxembourgeoise qui développe un guide gratuit et multilingue pour accompagner les familles en deuil. Chaque contribution, même modeste, rend ce guide plus précis, plus accessible et plus fiable.",
-            "Clarvia ist ein gemeinnütziger Verein in Luxemburg, der einen kostenlosen, mehrsprachigen Leitfaden für trauernde Familien aufbaut. Jeder Beitrag – noch so klein – macht diesen Leitfaden präziser, zugänglicher und vertrauenswürdiger."
-          )}
+          {l(lang, "Clarvia is a Luxembourg non-profit building a free, multilingual bereavement guide for families after the loss of a loved one. Every contribution — however small — makes that guidance more accurate, more accessible, and more trustworthy.", "Clarvia est une association sans but lucratif luxembourgeoise qui développe un guide gratuit et multilingue pour accompagner les familles en deuil. Chaque contribution, même modeste, rend ce guide plus précis, plus accessible et plus fiable.", "Clarvia ist ein gemeinnütziger Verein in Luxemburg, der einen kostenlosen, mehrsprachigen Leitfaden für trauernde Familien aufbaut. Jeder Beitrag – noch so klein – macht diesen Leitfaden präziser, zugänglicher und vertrauenswürdiger.", "Clarvia ass eng lëtzebuergesch Associatioun ouni Gewënnzweck, déi e gratis, méisproochege Guide fir Familljen nom Verloscht vun engem nooste Mënsch opbaut. All Bäitrag – egal wéi kleng – mécht dës Orientéierung méi genee, méi zougänglech a méi vertrauenswierdeg.")}
         </p>
 
         {/* ── Non-coder note ── */}
         <p className="text-sm font-medium text-calm-blue-500 mb-12 text-center">
-          {l(lang,
-            "No coding experience required. All contributions are welcome.",
-            "Aucune expérience en programmation n'est requise. Toutes les contributions sont les bienvenues.",
-            "Keine Programmierkenntnisse erforderlich. Alle Beiträge sind willkommen."
-          )}
+          {l(lang, "No coding experience required. All contributions are welcome.", "Aucune expérience en programmation n'est requise. Toutes les contributions sont les bienvenues.", "Keine Programmierkenntnisse erforderlich. Alle Beiträge sind willkommen.", "Kee Programméierwëssen néideg. All Bäiträg si wëllkomm.")}
         </p>
 
         {/* ── Ways to help ── */}
         <h2 className="text-2xl font-semibold text-calm-blue-800 mb-4" style={{ fontFamily: headlineStyle.fontFamily }}>
-          {l(lang, "Ways you can help", "Comment vous pouvez contribuer", "So können Sie helfen")}
+          {l(lang, "Ways you can help", "Comment vous pouvez contribuer", "So können Sie helfen", "Wéi Dir hëllefe kënnt")}
         </h2>
 
         <ul className="space-y-4 mb-8">
@@ -118,11 +106,7 @@ export default function ContributePage() {
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center justify-center gap-2 px-6 py-3 text-base flex-grow text-center"
           >
-            {l(lang,
-              "Browse good first issues",
-              "Voir les issues accessibles",
-              "Gute erste Issues ansehen"
-            )}
+            {l(lang, "Browse good first issues", "Voir les issues accessibles", "Gute erste Issues ansehen", "Einfach Ufanks-Issuen ukucken")}
           </a>
           <a
             href="https://github.com/clarvia-org/.github/blob/main/CONTRIBUTING.md"
@@ -130,11 +114,7 @@ export default function ContributePage() {
             rel="noopener noreferrer"
             className="btn-secondary inline-flex items-center justify-center gap-2 px-6 py-3 text-base flex-grow text-center"
           >
-            {l(lang,
-              "Read the contributing guide",
-              "Lire le guide de contribution",
-              "Beitragsleitfaden lesen"
-            )}
+            {l(lang, "Read the contributing guide", "Lire le guide de contribution", "Beitragsleitfaden lesen", "De Bäitragsguide liesen")}
           </a>
         </div>
 

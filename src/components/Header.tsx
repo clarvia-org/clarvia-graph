@@ -74,12 +74,7 @@ export default function Header({ lang }: { lang: Lang }) {
               <Link
                 key={code}
                 href={`/${code}`}
-                aria-label={l(
-                  lang,
-                  `Switch to ${code.toUpperCase()}`,
-                  `Passer en ${code.toUpperCase()}`,
-                  `Zu ${code.toUpperCase()} wechseln`
-                )}
+                aria-label={l(lang, `Switch to ${code.toUpperCase()}`, `Passer en ${code.toUpperCase()}`, `Zu ${code.toUpperCase()} wechseln`, `Op ${code.toUpperCase()} wiesselen`)}
                 aria-current={lang === code ? "page" : undefined}
                 className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
                   lang === code

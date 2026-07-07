@@ -769,12 +769,7 @@ function ChecklistResults({
         </div>
         <p className="text-sm text-calm-blue-500">
           {appliesCount > 0 &&
-            l(
-              lang,
-              `${appliesCount} item${appliesCount > 1 ? "s" : ""} applicable`,
-              `${appliesCount} élément${appliesCount > 1 ? "s" : ""} applicable${appliesCount > 1 ? "s" : ""}`,
-              `${appliesCount} zutreffende${appliesCount > 1 ? "r" : ""} Punkt${appliesCount > 1 ? "e" : ""}`
-            )}
+            l(lang, `${appliesCount} item${appliesCount > 1 ? "s" : ""} applicable`, `${appliesCount} élément${appliesCount > 1 ? "s" : ""} applicable${appliesCount > 1 ? "s" : ""}`, `${appliesCount} zutreffende${appliesCount > 1 ? "r" : ""} Punkt${appliesCount > 1 ? "e" : ""}`, `${appliesCount} Element${appliesCount > 1 ? "er" : ""} uwendbar`)}
         </p>
       </div>
 

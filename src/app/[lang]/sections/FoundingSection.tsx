@@ -6,7 +6,7 @@ export default function FoundingSection({ lang }: { lang: Lang }) {
   return (
     <section className="mb-20">
       <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-10" style={headlineStyle}>
-        {l(lang, "Why we founded Clarvia", "Pourquoi nous avons fondé Clarvia", "Warum wir Clarvia gegründet haben")}
+        {l(lang, "Why we founded Clarvia", "Pourquoi nous avons fondé Clarvia", "Warum wir Clarvia gegründet haben", "Firwat mir Clarvia gegrënnt hunn")}
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">

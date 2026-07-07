@@ -5,27 +5,15 @@ export default function ChecklistSection({ lang }: { lang: Lang }) {
   return (
     <section className="mb-20">
       <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-4" style={headlineStyle}>
-        {l(lang,
-          "A free bereavement service for Luxembourg",
-          "Un service gratuit d'accompagnement après décès pour le Luxembourg",
-          "Ein kostenloses Unterstützungsangebot im Trauerfall für Luxemburg"
-        )}
+        {l(lang, "A free bereavement service for Luxembourg", "Un service gratuit d'accompagnement après décès pour le Luxembourg", "Ein kostenloses Unterstützungsangebot im Trauerfall für Luxemburg", "E gratis Service nom Doudesfall fir Lëtzebuerg")}
       </h2>
       <p className="text-base sm:text-lg text-calm-blue-600 text-center max-w-3xl mx-auto mb-10 leading-relaxed">
-        {l(lang,
-          "Clarvia's first project is a free digital service that helps families understand the practical steps after a loss in Luxembourg.",
-          "Le premier projet de Clarvia est un service numérique gratuit qui aide les familles à comprendre les démarches pratiques à effectuer après un décès au Luxembourg.",
-          "Clarvias erstes Projekt ist ein kostenloser digitaler Service, der Familien hilft, die praktischen Schritte nach einem Todesfall in Luxemburg zu verstehen."
-        )}
+        {l(lang, "Clarvia's first project is a free digital service that helps families understand the practical steps after a loss in Luxembourg.", "Le premier projet de Clarvia est un service numérique gratuit qui aide les familles à comprendre les démarches pratiques à effectuer après un décès au Luxembourg.", "Clarvias erstes Projekt ist ein kostenloser digitaler Service, der Familien hilft, die praktischen Schritte nach einem Todesfall in Luxemburg zu verstehen.", "Dem Clarvia säin éischte Projet ass e gratis digitale Service, deen de Familljen hëlleft, déi praktesch Schrëtt nom Doudesfall zu Lëtzebuerg ze verstoen.")}
       </p>
 
       <div className="glass-panel p-8 sm:p-10 max-w-3xl mx-auto mb-8">
         <p className="text-base text-calm-blue-700 font-medium mb-4">
-          {l(lang,
-            "The service will guide families through relevant topics such as:",
-            "Le service guidera les familles à travers des sujets essentiels tels que :",
-            "Der Service wird Familien durch relevante Themen führen, darunter:"
-          )}
+          {l(lang, "The service will guide families through relevant topics such as:", "Le service guidera les familles à travers des sujets essentiels tels que :", "Der Service wird Familien durch relevante Themen führen, darunter:", "De Service féiert d'Familljen duerch wichteg Themen, wéi zum Beispill:")}
         </p>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 mb-6">
           {CHECKLIST_TOPICS.map((item, i) => (
@@ -36,11 +24,7 @@ export default function ChecklistSection({ lang }: { lang: Lang }) {
           ))}
         </ul>
         <p className="text-sm text-calm-blue-500 leading-relaxed pt-4 border-t border-calm-blue-100">
-          {l(lang,
-            "Clarvia will not replace legal, notarial, tax, medical, psychological, banking, financial, or succession advice. It will help families understand where to start, what to prepare, and when to seek professional support.",
-            "Clarvia ne remplace pas les conseils juridiques, notariaux, fiscaux, médicaux, psychologiques, bancaires, financiers ou successoraux. Le service aide les familles à comprendre par où commencer, quoi préparer et à quel moment faire appel à des professionnels qualifiés.",
-            "Clarvia ersetzt keine rechtliche, notarielle, steuerliche, medizinische, psychologische, bankfachliche, finanzielle oder nachlassbezogene Beratung. Der Service hilft Familien zu verstehen, wo sie beginnen können, was vorzubereiten ist und wann professionelle Unterstützung sinnvoll ist."
-          )}
+          {l(lang, "Clarvia will not replace legal, notarial, tax, medical, psychological, banking, financial, or succession advice. It will help families understand where to start, what to prepare, and when to seek professional support.", "Clarvia ne remplace pas les conseils juridiques, notariaux, fiscaux, médicaux, psychologiques, bancaires, financiers ou successoraux. Le service aide les familles à comprendre par où commencer, quoi préparer et à quel moment faire appel à des professionnels qualifiés.", "Clarvia ersetzt keine rechtliche, notarielle, steuerliche, medizinische, psychologische, bankfachliche, finanzielle oder nachlassbezogene Beratung. Der Service hilft Familien zu verstehen, wo sie beginnen können, was vorzubereiten ist und wann professionelle Unterstützung sinnvoll ist.", "Clarvia ersetzt keng juristesch, notariell, steierlech, medezinesch, psychologesch, Bank-, Finanz- oder Successiounsberodung. De Service hëlleft Familljen ze verstoen, wou se ufänke kënnen, wat virzebereeden ass a wéini professionell Ënnerstëtzung sënnvoll ass.")}
         </p>
       </div>
 

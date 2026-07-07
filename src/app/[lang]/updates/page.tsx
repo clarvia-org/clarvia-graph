@@ -35,11 +35,7 @@ export default function UpdatesPage() {
           {l(lang, "Updates", "Actualités", "Aktuelles", "Neiegkeeten")}
         </h1>
         <p className="text-base text-calm-blue-500 mb-12">
-          {l(lang,
-            "Milestones and news from the Clarvia project.",
-            "Étapes clés et actualités du projet Clarvia.",
-            "Meilensteine und Neuigkeiten aus dem Clarvia-Projekt."
-          )}
+          {l(lang, "Milestones and news from the Clarvia project.", "Étapes clés et actualités du projet Clarvia.", "Meilensteine und Neuigkeiten aus dem Clarvia-Projekt.", "Meilesteng an Neiegkeeten aus dem Clarvia-Projet.")}
         </p>
 
         {/* ── Timeline ── */}

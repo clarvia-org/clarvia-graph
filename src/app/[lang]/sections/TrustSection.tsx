@@ -8,11 +8,7 @@ export default function TrustSection({ lang }: { lang: Lang }) {
       {/* ═══ Supported By ═══ */}
       <section className="mb-20">
         <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-10" style={headlineStyle}>
-          {l(lang,
-            "Supporters and future pilot partners",
-            "Soutiens et futurs partenaires pilotes",
-            "Unterstützer und zukünftige Pilotpartner"
-          )}
+          {l(lang, "Supporters and future pilot partners", "Soutiens et futurs partenaires pilotes", "Unterstützer und zukünftige Pilotpartner", "Ënnerstëtzer an zukünfteg Pilotpartner")}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
@@ -53,11 +49,7 @@ export default function TrustSection({ lang }: { lang: Lang }) {
       {/* ═══ Who We Are ═══ */}
       <section className="mb-20">
         <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-10" style={headlineStyle}>
-          {l(lang,
-            "Founded by people with care-sector and technology experience",
-            "Fondé par des personnes issues du secteur du soin et de la technologie",
-            "Gegründet von Menschen mit Erfahrung im Pflegebereich und in der Technologie"
-          )}
+          {l(lang, "Founded by people with care-sector and technology experience", "Fondé par des personnes issues du secteur du soin et de la technologie", "Gegründet von Menschen mit Erfahrung im Pflegebereich und in der Technologie", "Gegrënnt vu Leit mat Erfarung am Fleegesecteur an an der Technologie")}
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto mb-6">
@@ -72,18 +64,14 @@ export default function TrustSection({ lang }: { lang: Lang }) {
         </div>
 
         <p className="text-sm text-calm-blue-500 text-center">
-          {l(lang,
-            "Clarvia's directors serve voluntarily and without remuneration.",
-            "Les administrateurs de Clarvia exercent leur mandat bénévolement et sans rémunération.",
-            "Die Mitglieder des Verwaltungsrats von Clarvia arbeiten ehrenamtlich und unentgeltlich."
-          )}
+          {l(lang, "Clarvia's directors serve voluntarily and without remuneration.", "Les administrateurs de Clarvia exercent leur mandat bénévolement et sans rémunération.", "Die Mitglieder des Verwaltungsrats von Clarvia arbeiten ehrenamtlich und unentgeltlich.", "D'Direktere vu Clarvia schaffen fräiwëlleg an ouni Bezuelung.")}
         </p>
       </section>
 
       {/* ═══ Our Principles ═══ */}
       <section className="mb-20">
         <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-10" style={headlineStyle}>
-          {l(lang, "Built with care", "Conçu avec soin", "Mit Sorgfalt entwickelt")}
+          {l(lang, "Built with care", "Conçu avec soin", "Mit Sorgfalt entwickelt", "Mat Suergfalt opgebaut")}
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">

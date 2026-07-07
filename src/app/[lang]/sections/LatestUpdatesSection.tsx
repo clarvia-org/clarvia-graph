@@ -20,7 +20,7 @@ export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
         className="text-2xl sm:text-3xl font-semibold tracking-tight mb-8"
         style={headlineStyle}
       >
-        {l(lang, "Latest", "Dernières nouvelles", "Aktuelles")}
+        {l(lang, "Latest", "Dernières nouvelles", "Aktuelles", "Neist")}
       </h2>
 
       <div className="space-y-4">
@@ -47,7 +47,7 @@ export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
         href={`/${lang}/updates`}
         className="inline-flex items-center gap-1.5 mt-6 text-sm font-medium text-calm-blue-600 hover:text-calm-blue-800 transition-colors group"
       >
-        {l(lang, "View all updates", "Voir toutes les actualités", "Alle Neuigkeiten anzeigen")}
+        {l(lang, "View all updates", "Voir toutes les actualités", "Alle Neuigkeiten anzeigen", "All Neiegkeeten uweisen")}
         <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
       </Link>
     </section>
