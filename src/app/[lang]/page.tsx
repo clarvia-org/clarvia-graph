@@ -1,8 +1,4 @@
-"use client";
-
-import { useParams } from "next/navigation";
 import { type Lang } from "@/lib/i18n";
-
 import Header from "@/components/Header";
 import HeroSection from "./sections/HeroSection";
 import VideoSection from "./sections/VideoSection";
@@ -13,9 +9,13 @@ import FormsSection from "./sections/FormsSection";
 import FooterSection from "./sections/FooterSection";
 import LatestUpdatesSection from "./sections/LatestUpdatesSection";
 
-export default function LandingPage() {
-  const params = useParams();
-  const lang = (params.lang as Lang) || "en";
+export default async function LandingPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang: rawLang } = await params;
+  const lang = (rawLang as Lang) || "en";
 
   return (
     <>
@@ -32,16 +32,6 @@ export default function LandingPage() {
       </main>
 
       <FooterSection lang={lang} />
-
-      <style jsx>{`
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(8px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-      `}</style>
     </>
   );
 }

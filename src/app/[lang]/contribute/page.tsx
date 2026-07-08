@@ -1,6 +1,3 @@
-"use client";
-
-import { useParams } from "next/navigation";
 import { type Lang, l } from "@/lib/i18n";
 import Header from "@/components/Header";
 import { headlineStyle } from "../data";
@@ -9,9 +6,13 @@ import AccessSection from "../sections/AccessSection";
 import PublicInterestSection from "../sections/PublicInterestSection";
 import TrustSection from "../sections/TrustSection";
 
-export default function ContributePage() {
-  const params = useParams();
-  const lang = (params.lang as Lang) || "en";
+export default async function ContributePage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang: rawLang } = await params;
+  const lang = (rawLang as Lang) || "en";
 
   return (
     <>

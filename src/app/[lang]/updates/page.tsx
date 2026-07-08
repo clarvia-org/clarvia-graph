@@ -1,6 +1,3 @@
-"use client";
-
-import { useParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { type Lang, l } from "@/lib/i18n";
@@ -17,9 +14,13 @@ function formatDate(dateStr: string, lang: Lang): string {
   );
 }
 
-export default function UpdatesPage() {
-  const params = useParams();
-  const lang = (params.lang as Lang) || "en";
+export default async function UpdatesPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang: rawLang } = await params;
+  const lang = (rawLang as Lang) || "en";
 
   return (
     <>
