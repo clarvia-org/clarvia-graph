@@ -1,13 +1,9 @@
-import { Metadata } from "next";
-import BrochureRedirect from "./BrochureRedirect";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: true,
-  },
+export const metadata = {
+  robots: { index: false, follow: true },
 };
 
-export default function Page() {
-  return <BrochureRedirect />;
+export default async function BrochurePage() {
+  redirect("/brochure.html");
 }

@@ -47,7 +47,7 @@ export async function generateMetadata({
     alternates: {
       canonical: `${BASE_URL}/${lang}`,
       languages: Object.fromEntries(
-        LANGUAGES.map((l) => [l, `${BASE_URL}/${l}`])
+        LANGUAGES.map((l) => [l === "lu" ? "lb" : l, `${BASE_URL}/${l}`])
       ),
     },
     openGraph: {
@@ -75,7 +75,7 @@ export default async function LangLayout({
     <>
       <script
         dangerouslySetInnerHTML={{
-          __html: `document.documentElement.lang="${lang}"`,
+          __html: `document.documentElement.lang="${lang === "lu" ? "lb" : lang}"`,
         }}
       />
       <script
@@ -104,7 +104,7 @@ export default async function LangLayout({
                   "addressCountry": "LU"
                 },
                 "foundingDate": "2026-05",
-                "nonprofitStatus": "NonprofitType",
+
                 "description": "Clarvia is a Luxembourgish non-profit building open, source-backed workflow infrastructure for bereavement administration across Europe, starting with a free multilingual bereavement checklist for families in Luxembourg.",
                 "knowsAbout": [
                   "bereavement administration",
@@ -184,15 +184,7 @@ export default async function LangLayout({
           })
         }}
       />
-      {LANGUAGES.map((l) => (
-        <link
-          key={l}
-          rel="alternate"
-          hrefLang={l}
-          href={`${BASE_URL}/${l}`}
-        />
-      ))}
-      <link rel="alternate" hrefLang="x-default" href={`${BASE_URL}/en`} />
+
       {children}
       <CookieConsent lang={lang as Lang} />
     </>

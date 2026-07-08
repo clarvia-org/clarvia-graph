@@ -30,6 +30,8 @@
   --color-btn-blue: #3E73E1;
   --color-btn-purple: #7162AE;
 
+  --color-heading: #2b3a67;
+
   --border-radius-pill: 9999px;
   --border-radius-xl: 1rem;
 }
@@ -50,7 +52,7 @@ body {
 
 /* Headings — dark navy, like Calm's deep blue headlines */
 h1, h2, h3, h4, h5, h6 {
-  color: #2b3a67;             /* Calm's signature navy */
+  color: var(--color-heading);  /* Calm's signature navy */
   line-height: 1.2;
 }
 
@@ -77,6 +79,11 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 8px rgba(113, 98, 174, 0.3);
 }
 
+.btn-primary:focus-visible {
+  outline: 2px solid #4479e1;
+  outline-offset: 2px;
+}
+
 /* ── Secondary Button (Outline pill) ── */
 .btn-secondary {
   background: white;
@@ -92,6 +99,11 @@ h1, h2, h3, h4, h5, h6 {
 .btn-secondary:hover {
   border-color: var(--color-calm-blue-400);
   background-color: var(--color-calm-blue-50);
+}
+
+.btn-secondary:focus-visible {
+  outline: 2px solid var(--color-calm-blue-400);
+  outline-offset: 2px;
 }
 
 /* ── Glass Card ── */
@@ -222,4 +234,18 @@ a, button, input, textarea, select {
   font-size: 0.7rem;
   font-weight: 700;
   margin-top: 0.15rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary:hover {
+    transform: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

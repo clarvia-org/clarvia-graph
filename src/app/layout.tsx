@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
+    <html suppressHydrationWarning className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <script
           src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"

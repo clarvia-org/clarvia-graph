@@ -9,6 +9,7 @@ import Header from "@/components/Header";
 function detectLang(pathname: string): Lang {
   if (pathname.startsWith("/fr")) return "fr";
   if (pathname.startsWith("/de")) return "de";
+  if (pathname.startsWith("/lu")) return "lu";
   return "en";
 }
 

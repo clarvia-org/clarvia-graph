@@ -462,7 +462,7 @@ export default function ChecklistPage() {
     <>
       <Header lang={lang} />
 
-      <main className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 relative z-10">
+      <main id="main-content" className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 relative z-10">
         {/* ═══ Alpha banner + Preview side by side ═══ */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 items-start">
           {/* Alpha prototype notice */}

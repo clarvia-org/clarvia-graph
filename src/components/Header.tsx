@@ -1,14 +1,40 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 
 export default function Header({ lang }: { lang: Lang }) {
   const [isOpen, setIsOpen] = useState(false);
+  const drawerRef = useRef<HTMLDivElement>(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const drawer = drawerRef.current;
+    if (!drawer) return;
+    const focusable = drawer.querySelectorAll<HTMLElement>(
+      'a[href], button, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    first?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") { setIsOpen(false); return; }
+      if (e.key !== "Tab") return;
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last?.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first?.focus();
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [isOpen]);
 
   return (
     <>
@@ -16,6 +42,12 @@ export default function Header({ lang }: { lang: Lang }) {
         aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf", "Kappberäich vun der Websäit")}
         className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative"
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-white focus:text-calm-blue-800 focus:rounded-lg focus:shadow-lg focus:outline-2 focus:outline-calm-blue-400 focus:text-sm focus:font-medium"
+        >
+          {l(lang, "Skip to content", "Aller au contenu", "Zum Inhalt springen")}
+        </a>
         <Link
           href={`/${lang}`}
           aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite", "Clarvia Startsäit")}
@@ -121,6 +153,10 @@ export default function Header({ lang }: { lang: Lang }) {
 
       {/* Mobile Drawer (Calm/Glass aesthetic) */}
       <div
+        ref={drawerRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label={l(lang, "Navigation menu", "Menu de navigation", "Navigationsmenü")}
         className={`fixed top-0 right-0 h-full w-72 max-w-[80vw] bg-white/80 backdrop-blur-xl border-l border-white/50 shadow-2xl z-40 transform transition-transform duration-300 ease-out md:hidden flex flex-col p-6 pt-24 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}

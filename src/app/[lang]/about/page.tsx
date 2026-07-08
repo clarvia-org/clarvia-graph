@@ -73,7 +73,7 @@ export default async function AboutPage({
     <>
       <Header lang={lang} />
 
-      <main className="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 py-16 relative z-10">
+      <main id="main-content" className="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 py-16 relative z-10">
 
         {/* ═══ Page Title ═══ */}
         <h1

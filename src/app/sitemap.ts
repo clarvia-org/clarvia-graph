@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 ? `/${alternateLang}/${page.path}`
                 : `/${alternateLang}`;
 
-              return [alternateLang, `${BASE_URL}${alternatePath}`];
+              return [alternateLang === "lu" ? "lb" : alternateLang, `${BASE_URL}${alternatePath}`];
             })
           ),
         },

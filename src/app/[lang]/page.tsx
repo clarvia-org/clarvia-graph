@@ -21,7 +21,7 @@ export default function LandingPage() {
     <>
       <Header lang={lang} />
 
-      <main className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+      <main id="main-content" className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         <HeroSection lang={lang} />
         <VideoSection lang={lang} />
         <ProblemSection lang={lang} />

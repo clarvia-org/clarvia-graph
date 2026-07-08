@@ -196,7 +196,7 @@ export default function SupportPage() {
     <>
       <Header lang={lang} />
 
-      <main className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 relative z-10">
+      <main id="main-content" className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 relative z-10">
 
         {/* Thank-you banner after successful donation */}
         <Suspense fallback={null}>

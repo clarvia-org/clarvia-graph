@@ -1,13 +1,14 @@
-import { Metadata } from "next";
-import ContactRedirect from "./ContactRedirect";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: true,
-  },
+export const metadata = {
+  robots: { index: false, follow: true },
 };
 
-export default function Page() {
-  return <ContactRedirect />;
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  redirect(`/${lang}#contact`);
 }

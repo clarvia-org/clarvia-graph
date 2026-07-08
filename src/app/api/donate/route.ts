@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { getStripe } from "@/lib/stripe";
+import { rateLimit } from "@/lib/rate-limit";
+
+const limiter = rateLimit("donate", 10, 60_000);
 
 function getProductDescription(type: "monthly" | "onetime", lang: string, amount: number): string {
   if (type === "monthly") {
@@ -26,6 +29,21 @@ function getProductDescription(type: "monthly" | "onetime", lang: string, amount
  * Returns: { url: string } - the Stripe Checkout URL to redirect the donor to.
  */
 export async function POST(req: NextRequest) {
+  const forwarded = req.headers.get("x-forwarded-for");
+  const ip = forwarded?.split(",")[0]?.trim() || "unknown";
+  const { allowed, retryAfterMs } = limiter(ip);
+  if (!allowed) {
+    return Response.json(
+      { error: "Too many requests. Please try again later." },
+      {
+        status: 429,
+        headers: retryAfterMs
+          ? { "Retry-After": String(Math.ceil(retryAfterMs / 1000)) }
+          : undefined,
+      }
+    );
+  }
+
   const stripe = getStripe();
   if (!stripe) {
     return NextResponse.json(

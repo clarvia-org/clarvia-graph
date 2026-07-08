@@ -10,14 +10,14 @@ import { privacyCookiePolicy } from "./privacy-data";
 export default function PrivacyPolicyPage() {
   const params = useParams();
   const rawLang = (params.lang as Lang) || "en";
-  const lang = rawLang === "lu" ? "fr" : rawLang;
-  const data = privacyCookiePolicy[lang];
+  const contentLang = rawLang === "lu" ? "fr" : rawLang;
+  const data = privacyCookiePolicy[contentLang];
 
   return (
     <>
-      <Header lang={lang} />
+      <Header lang={rawLang} />
 
-      <main className="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 py-16 relative z-10">
+      <main id="main-content" className="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 py-16 relative z-10">
         {/* ── Title ── */}
         <h1
           className="text-4xl sm:text-5xl font-semibold tracking-tight mb-2 text-center"
@@ -83,7 +83,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </main>
 
-      <FooterSection lang={lang} />
+      <FooterSection lang={rawLang} />
     </>
   );
 }

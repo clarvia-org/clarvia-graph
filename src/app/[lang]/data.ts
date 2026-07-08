@@ -2,7 +2,7 @@
 
 export const headlineStyle = {
   fontFamily: "var(--font-serif), Georgia, serif",
-  color: "#1e2a4f",
+  color: "var(--color-heading, #2b3a67)",
   letterSpacing: "-0.02em",
   fontWeight: 700,
 };
@@ -75,8 +75,8 @@ export const FEATURES = [
   },
   {
     icon: "🌍",
-    en_title: "Trilingual", fr_title: "Trilingue", de_title: "Dreisprachig", lu_title: "Dräisproocheg",
-    en: "English, French, and German", fr: "Anglais, français et allemand", de: "Englisch, Französisch und Deutsch", lu: "Englesch, Franséisch an Däitsch",
+    en_title: "Multilingual", fr_title: "Multilingue", de_title: "Mehrsprachig", lu_title: "Méisproocheg",
+    en: "English, French, German, and Luxembourgish", fr: "Anglais, français, allemand et luxembourgeois", de: "Englisch, Französisch, Deutsch und Luxemburgisch", lu: "Englesch, Franséisch, Däitsch a Lëtzebuergesch",
   },
 ];
 
