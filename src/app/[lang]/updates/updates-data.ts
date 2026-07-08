@@ -9,6 +9,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-07-08",
+    headline: {
+      en: "Clarvia website adds Luxembourgish language support",
+      fr: "Le site web de Clarvia est désormais disponible en luxembourgeois",
+      de: "Clarvia-Website jetzt auch auf Luxemburgisch verfügbar",
+    },
+    body: {
+      en: "The Clarvia website is now available in Luxembourgish, bringing the total number of supported languages to four alongside English, French, and German.",
+      fr: "Le site web de Clarvia est maintenant disponible en luxembourgeois, portant à quatre le nombre de langues proposées, aux côtés de l’anglais, du français et de l’allemand.",
+      de: "Die Clarvia-Website ist ab sofort auch auf Luxemburgisch verfügbar. Damit unterstützt die Website nun insgesamt vier Sprachen: Englisch, Französisch, Deutsch und Luxemburgisch.",
+    },
+  },
+  {
     date: "2026-07-05",
     headline: {
       en: "Trauerwee ASBL Endorses Clarvia's Mission and Future Pilot",
