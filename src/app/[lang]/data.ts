@@ -4,7 +4,7 @@ export const headlineStyle = {
   fontFamily: "var(--font-serif), Georgia, serif",
   color: "var(--color-heading, #2b3a67)",
   letterSpacing: "-0.02em",
-  fontWeight: 700,
+  fontWeight: 600,
 };
 
 /* ── Luxembourg Stats ── */

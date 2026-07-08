@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Script from "next/script";
 
 const TURNSTILE_SITE_KEY = "0x4AAAAAAC_ookARAIHfv7sG";
 
@@ -41,5 +42,13 @@ export default function Turnstile({ onVerify }: { onVerify: (token: string) => v
     };
   }, []);
 
-  return <div ref={containerRef} className="mt-1" />;
+  return (
+    <>
+      <Script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+        strategy="lazyOnload"
+      />
+      <div ref={containerRef} className="mt-1" />
+    </>
+  );
 }

@@ -3,7 +3,7 @@ import { headlineStyle } from "../data";
 
 export default function HeroSection({ lang }: { lang: Lang }) {
   return (
-    <section className="text-center py-16 sm:py-24 animate-fadeIn">
+    <section className="text-center py-16 sm:py-24">
       <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight mb-8 drop-shadow-sm" style={headlineStyle}>
         {l(lang, "Guiding families through what comes next", "Accompagner les familles dans les démarches qui suivent un décès", "Familien nach einem Todesfall durch die nächsten Schritte begleiten", "Familljen duerch déi nächst Schrëtt begleeden")}
       </h1>
