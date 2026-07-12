@@ -9,6 +9,19 @@ export type Update = {
 /* Newest first */
 export const UPDATES: Update[] = [
   {
+    date: "2026-07-12",
+    headline: {
+      en: "Clarvia moves production infrastructure to carbon-neutral Google Cloud in Stockholm",
+      fr: "Clarvia transfère son infrastructure de production vers Google Cloud Stockholm, neutre en carbone",
+      de: "Clarvia verlagert seine Produktionsinfrastruktur in die klimaneutrale Google-Cloud-Region Stockholm",
+    },
+    body: {
+      en: "Clarvia has migrated its production servers from Hetzner in Nuremberg to Google Cloud in Stockholm, a region powered by 100% carbon-free energy. The move reduces our infrastructure costs, allowing more funds to support our public-interest mission, while strengthening our integration with Google following our acceptance into Google for Nonprofits.",
+      fr: "Clarvia a transféré ses serveurs de production de Hetzner à Nuremberg vers Google Cloud à Stockholm, une région alimentée à 100 % par une énergie sans carbone. Cette migration réduit nos coûts d'infrastructure, ce qui nous permet de consacrer davantage de moyens à notre mission d'intérêt général, tout en renforçant notre intégration avec Google après notre admission au programme Google pour les associations.",
+      de: "Clarvia hat seine Produktionsserver von Hetzner in Nürnberg zu Google Cloud nach Stockholm verlagert. Die Region wird zu 100 % mit CO₂-freier Energie betrieben. Durch den Wechsel sinken unsere Infrastrukturkosten, sodass mehr Mittel für unseren gemeinnützigen Zweck zur Verfügung stehen. Zugleich ist die Migration ein weiterer Schritt in Richtung einer engeren Google-Integration nach unserer Aufnahme in Google for Nonprofits.",
+    },
+  },
+  {
     date: "2026-07-08",
     headline: {
       en: "Clarvia website adds Luxembourgish language support",
