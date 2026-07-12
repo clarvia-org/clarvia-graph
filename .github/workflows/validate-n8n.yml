@@ -1,0 +1,36 @@
+name: Validate n8n workflows
+
+on:
+  pull_request:
+    paths:
+      - "automation/workflows/**"
+      - "automation/scripts/validate-workflows.ts"
+  push:
+    branches:
+      - main
+    paths:
+      - "automation/workflows/**"
+      - "automation/scripts/validate-workflows.ts"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-n8n-workflows:
+    name: Validate n8n workflow JSON
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+
+      - name: Install tsx
+        run: npm install --no-save tsx
+
+      - name: Validate workflows
+        run: npx tsx automation/scripts/validate-workflows.ts
