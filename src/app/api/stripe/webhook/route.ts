@@ -1,175 +1,108 @@
-import { NextRequest, NextResponse } from "next/server";
-import Stripe from "stripe";
+/**
+ * Stripe webhook ingress route — durable inbox/outbox pattern.
+ *
+ * Replaces the previous JSON-file handler with a PostgreSQL-backed
+ * durable ingestion route per blueprint §5.1–5.2.
+ *
+ * Behaviour:
+ *   1. Read raw body and verify Stripe signature.
+ *   2. Single DB transaction: insert webhook_events, webhook_processing,
+ *      and automation_jobs.
+ *   3. Return 200 only after commit.
+ *   4. Use after() for best-effort n8n kick.
+ *
+ * Response codes (§5.1):
+ *   - 400: Missing or invalid signature
+ *   - 200: Valid event committed (new or duplicate)
+ *   - 500: Database unavailable or transaction failure
+ *   - 503: Stripe not configured
+ *
+ * n8n availability must never influence whether Stripe receives a
+ * success response.
+ */
+
+import { after, NextRequest, NextResponse } from "next/server";
+import { createHash } from "node:crypto";
 import { getStripe } from "@/lib/stripe";
-import { promises as fs } from "fs";
-import path from "path";
+import { db } from "@/lib/donation-engine/db";
+import { ingestWebhookEvent } from "@/lib/donation-engine/webhook-inbox";
+import { kickAutomation } from "@/lib/donation-engine/job-queue";
 
 export const runtime = "nodejs";
 
-const DATA_DIR = path.join(process.cwd(), ".data");
-const DONATIONS_FILE = path.join(DATA_DIR, "donations.json");
-
-interface DonationRecord {
-  date: string;
-  email: string;
-  amount: number;
-  currency: string;
-  type: "onetime" | "monthly" | "recurring_charge";
-  stripe_session?: string;
-  stripe_customer: string;
-  stripe_invoice?: string;
-}
-
-async function saveDonation(record: DonationRecord): Promise<void> {
-  await fs.mkdir(DATA_DIR, { recursive: true });
-
-  let entries: DonationRecord[] = [];
-  try {
-    const raw = await fs.readFile(DONATIONS_FILE, "utf-8");
-    entries = JSON.parse(raw);
-  } catch {
-    /* file doesn't exist yet */
-  }
-
-  entries.push(record);
-  await fs.writeFile(DONATIONS_FILE, JSON.stringify(entries, null, 2));
-}
-
-/**
- * POST /api/stripe/webhook
- *
- * Receives Stripe webhook events, verifies signatures, and records donations.
- *
- * Handled events:
- * - checkout.session.completed: Initial one-time or first monthly payment
- * - invoice.payment_succeeded: Subsequent recurring monthly charges
- * - customer.subscription.created / deleted: Logged for monitoring
- */
 export async function POST(req: NextRequest) {
   const stripe = getStripe();
-  if (!stripe) {
+  const secret = process.env.STRIPE_WEBHOOK_SECRET;
+
+  if (!stripe || !secret) {
     return NextResponse.json(
-      { error: "Stripe is not configured." },
-      { status: 503 }
+      { error: "Webhook unavailable" },
+      { status: 503 },
     );
   }
 
-  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
-  if (!webhookSecret) {
-    console.error("STRIPE_WEBHOOK_SECRET is not configured.");
-    return NextResponse.json(
-      { error: "Webhook secret is not configured." },
-      { status: 503 }
-    );
-  }
-
-  // Stripe requires the raw body for signature verification
-  const body = await req.text();
+  const rawBody = await req.text();
   const signature = req.headers.get("stripe-signature");
 
   if (!signature) {
     return NextResponse.json(
-      { error: "Missing stripe-signature header." },
-      { status: 400 }
+      { error: "Missing signature" },
+      { status: 400 },
     );
   }
 
-  let event: Stripe.Event;
+  let event;
+
   try {
-    event = stripe.webhooks.constructEvent(body, signature, webhookSecret);
-  } catch (err) {
-    const message = err instanceof Error ? err.message : "Unknown error";
-    console.error(`Webhook signature verification failed: ${message}`);
+    event = stripe.webhooks.constructEvent(
+      rawBody,
+      signature,
+      secret,
+    );
+  } catch {
     return NextResponse.json(
-      { error: "Invalid signature." },
-      { status: 400 }
+      { error: "Invalid signature" },
+      { status: 400 },
     );
   }
 
-  // Handle events
-  switch (event.type) {
-    case "checkout.session.completed": {
-      const session = event.data.object as Stripe.Checkout.Session;
-      const donationType = session.metadata?.donation_type || "unknown";
-      const amount = session.amount_total
-        ? session.amount_total / 100
-        : 0;
-      const email = session.customer_details?.email || "";
+  const signatureHash = createHash("sha256")
+    .update(signature)
+    .digest("hex");
 
-      console.log(
-        `[webhook] checkout.session.completed: ${donationType} donation of €${amount.toFixed(2)}` +
-          ` (customer: ${session.customer}, email: ${email}, session: ${session.id})`
-      );
+  try {
+    const result = await db.transaction(async (tx) => {
+      return ingestWebhookEvent(tx, {
+        provider: "stripe",
+        externalEventId: event.id,
+        eventType: event.type,
+        apiVersion: event.api_version ?? null,
+        livemode: event.livemode ?? null,
+        occurredAt: event.created ?? null,
+        signatureMetadata: {
+          signature_header_sha256: signatureHash,
+        },
+        rawBody,
+        payload: event,
+      });
+    });
 
-      try {
-        await saveDonation({
-          date: new Date().toISOString(),
-          email,
-          amount,
-          currency: session.currency || "eur",
-          type: donationType === "monthly" ? "monthly" : "onetime",
-          stripe_session: session.id,
-          stripe_customer: String(session.customer || ""),
-        });
-        console.log(`[webhook] Donation record saved for ${email}`);
-      } catch (err) {
-        console.error("[webhook] Failed to save donation record:", err);
-      }
-      break;
+    if (result.jobId) {
+      after(async () => {
+        await kickAutomation(result.jobId).catch(() => undefined);
+      });
     }
 
-    case "invoice.payment_succeeded": {
-      const invoice = event.data.object as Stripe.Invoice;
-      // Only record subscription invoices (recurring charges), not the first one
-      // which is already captured by checkout.session.completed
-      if (invoice.billing_reason === "subscription_cycle") {
-        const amount = invoice.amount_paid ? invoice.amount_paid / 100 : 0;
-        const email = invoice.customer_email || "";
-
-        console.log(
-          `[webhook] invoice.payment_succeeded: recurring charge of €${amount.toFixed(2)}` +
-            ` (customer: ${invoice.customer}, email: ${email}, invoice: ${invoice.id})`
-        );
-
-        try {
-          await saveDonation({
-            date: new Date().toISOString(),
-            email,
-            amount,
-            currency: invoice.currency || "eur",
-            type: "recurring_charge",
-            stripe_customer: String(invoice.customer || ""),
-            stripe_invoice: invoice.id,
-          });
-          console.log(`[webhook] Recurring donation record saved for ${email}`);
-        } catch (err) {
-          console.error("[webhook] Failed to save recurring donation record:", err);
-        }
-      }
-      break;
-    }
-
-    case "customer.subscription.created": {
-      const subscription = event.data.object as Stripe.Subscription;
-      console.log(
-        `[webhook] customer.subscription.created: ${subscription.id}` +
-          ` (customer: ${subscription.customer}, status: ${subscription.status})`
-      );
-      break;
-    }
-
-    case "customer.subscription.deleted": {
-      const subscription = event.data.object as Stripe.Subscription;
-      console.log(
-        `[webhook] customer.subscription.deleted: ${subscription.id}` +
-          ` (customer: ${subscription.customer})`
-      );
-      break;
-    }
-
-    default:
-      console.log(`[webhook] Unhandled event type: ${event.type}`);
+    return NextResponse.json({
+      received: true,
+      duplicate: result.duplicate,
+    });
+  } catch (error) {
+    // Log the error for operational visibility but do not leak internals.
+    console.error("[stripe-webhook] Durable ingestion failed:", error);
+    return NextResponse.json(
+      { error: "Durable ingestion failed" },
+      { status: 500 },
+    );
   }
-
-  return NextResponse.json({ received: true });
 }
