@@ -1,0 +1,181 @@
+{
+  "name": "clarvia.ops.error-handler.v1",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "f0a1b2c3-e001-4a00-8000-000000000001",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [200, 400]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Scrub PII from error execution context.\n// Extracts jobId if the failed execution passed one through.\n\nconst emailPattern = /[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}/g;\n\nfunction scrub(value) {\n  if (typeof value === 'string') {\n    return value.replace(emailPattern, '[REDACTED_EMAIL]');\n  }\n  if (Array.isArray(value)) {\n    return value.map(scrub);\n  }\n  if (value && typeof value === 'object') {\n    const out = {};\n    for (const [k, v] of Object.entries(value)) {\n      out[k] = scrub(v);\n    }\n    return out;\n  }\n  return value;\n}\n\nconst items = $input.all();\nconst results = [];\n\nfor (const item of items) {\n  const execution = item.json.execution || {};\n  const error = item.json.error || {};\n  const workflow = item.json.workflow || {};\n\n  // Attempt to extract jobId from the failed execution's last node output\n  let jobId = null;\n  try {\n    const lastNodeData = execution.data?.resultData?.runData;\n    if (lastNodeData) {\n      for (const nodeName of Object.keys(lastNodeData)) {\n        const runs = lastNodeData[nodeName];\n        for (const run of runs) {\n          const items = run.data?.main?.[0] || [];\n          for (const outputItem of items) {\n            if (outputItem.json?.jobId) {\n              jobId = outputItem.json.jobId;\n            }\n            if (outputItem.json?.auth?.jobId) {\n              jobId = outputItem.json.auth.jobId;\n            }\n            if (outputItem.json?.id && !jobId) {\n              jobId = outputItem.json.id;\n            }\n          }\n        }\n      }\n    }\n  } catch (_) {\n    // Best-effort extraction\n  }\n\n  results.push({\n    json: {\n      jobId,\n      workflowId: workflow.id || null,\n      workflowName: workflow.name || null,\n      errorMessage: scrub(error.message || 'Unknown error'),\n      errorType: error.name || 'UnknownError',\n      executionId: execution.id || null,\n      timestamp: new Date().toISOString()\n    }\n  });\n}\n\nreturn results;"
+      },
+      "id": "f0a1b2c3-e001-4a00-8000-000000000002",
+      "name": "01 Scrub Execution Context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "condition-job-id",
+              "leftValue": "={{ $json.jobId }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "isNotEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "f0a1b2c3-e001-4a00-8000-000000000003",
+      "name": "02 Check Job ID Present",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [680, 400]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=SELECT clarvia.fail_automation_job(\n  '{{ $json.jobId }}'::uuid,\n  'n8n-dispatcher',\n  '{{ $json.errorType }}',\n  '{{ $json.errorMessage }}'\n)",
+        "options": {}
+      },
+      "id": "f0a1b2c3-e001-4a00-8000-000000000004",
+      "name": "03 Update Failed Job",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [920, 300],
+      "credentials": {
+        "postgres": {
+          "id": "cred-pg-auto",
+          "name": "clarvia-postgres-automation"
+        }
+      },
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.CLARVIA_SENTRY_WEBHOOK_URL }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"level\": \"error\",\n  \"logger\": \"n8n.error-handler\",\n  \"event_id\": {{ JSON.stringify($json.executionId || 'unknown') }},\n  \"timestamp\": {{ JSON.stringify($json.timestamp) }},\n  \"message\": {{ JSON.stringify($json.errorMessage) }},\n  \"extra\": {\n    \"workflowId\": {{ JSON.stringify($json.workflowId) }},\n    \"workflowName\": {{ JSON.stringify($json.workflowName) }},\n    \"jobId\": {{ JSON.stringify($json.jobId) }},\n    \"errorType\": {{ JSON.stringify($json.errorType) }}\n  }\n}",
+        "options": {
+          "timeout": 10000
+        }
+      },
+      "id": "f0a1b2c3-e001-4a00-8000-000000000005",
+      "name": "04 Send Sentry Alert",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1160, 400],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "cred-sentry-webhook",
+          "name": "clarvia-sentry-webhook"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "content": "## clarvia.ops.error-handler.v1\n\n**Purpose:** Catches execution errors from all workflows that reference this as their error workflow. Scrubs PII from the error context, optionally updates the failed automation job via PostgreSQL, and sends an operational alert to Sentry.\n\n**Input contract:** n8n Error Trigger payload (execution context, error details, workflow metadata).\n\n**Output contract:** None (terminal workflow).\n\n**Owner:** Clarvia automation team.\n\n**Credentials:**\n- `clarvia-postgres-automation` — PostgreSQL access for fail_automation_job\n- `clarvia-sentry-webhook` — Sentry webhook auth\n\n**Notes:**\n- Job update uses worker name 'n8n-dispatcher' to match the lease owner.\n- Node 03 uses onError: continueRegularOutput so Sentry fires even if the PG call fails (e.g. job already completed).",
+        "width": 440,
+        "height": 380
+      },
+      "id": "f0a1b2c3-e001-4a00-8000-000000000006",
+      "name": "Sticky Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [180, 60]
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "01 Scrub Execution Context",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "01 Scrub Execution Context": {
+      "main": [
+        [
+          {
+            "node": "02 Check Job ID Present",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "02 Check Job ID Present": {
+      "main": [
+        [
+          {
+            "node": "03 Update Failed Job",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "04 Send Sentry Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "03 Update Failed Job": {
+      "main": [
+        [
+          {
+            "node": "04 Send Sentry Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "2",
+  "id": "wf-error-handler-v1",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": [
+    {
+      "name": "ops"
+    },
+    {
+      "name": "error-handling"
+    }
+  ]
+}
