@@ -6,7 +6,7 @@ export type Update = {
   logo?: string;
 };
 
-/* Newest first */
+/* Newest first — sorted by date descending */
 export const UPDATES: Update[] = [
   {
     date: "2026-07-12",
