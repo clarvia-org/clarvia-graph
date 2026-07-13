@@ -52,7 +52,22 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  let body: { amount?: number; type?: string; lang?: string };
+  let body: {
+    amount?: number;
+    type?: string;
+    lang?: string;
+    marketingOptIn?: boolean;
+    consentTextVersion?: string;
+    landingVariant?: string;
+    attribution?: {
+      source?: string;
+      medium?: string;
+      campaign?: string;
+      term?: string;
+      content?: string;
+      gclid?: string;
+    };
+  };
   try {
     body = await req.json();
   } catch {
@@ -87,12 +102,37 @@ export async function POST(req: NextRequest) {
 
   const productDesc = getProductDescription(type, lang, amount);
 
+  // Compile Stripe metadata from incoming body parameters
+  const metadata: Record<string, string> = {
+    donation_type: type,
+    locale: lang,
+  };
+
+  if (body.marketingOptIn !== undefined) {
+    metadata.marketing_opt_in = body.marketingOptIn ? "true" : "false";
+  }
+  if (body.consentTextVersion) {
+    metadata.consent_text_version = body.consentTextVersion;
+  }
+  if (body.landingVariant) {
+    metadata.landing_variant = body.landingVariant;
+  }
+  if (body.attribution) {
+    const attr = body.attribution;
+    if (attr.source) metadata.utm_source = attr.source;
+    if (attr.medium) metadata.utm_medium = attr.medium;
+    if (attr.campaign) metadata.utm_campaign = attr.campaign;
+    if (attr.term) metadata.utm_term = attr.term;
+    if (attr.content) metadata.utm_content = attr.content;
+    if (attr.gclid) metadata.gclid = attr.gclid;
+  }
+
   try {
     if (type === "monthly") {
       // Subscription via Checkout
       const session = await stripe.checkout.sessions.create({
         mode: "subscription",
-        metadata: { donation_type: "monthly" },
+        metadata,
         line_items: [
           {
             price_data: {
@@ -124,7 +164,7 @@ export async function POST(req: NextRequest) {
       const session = await stripe.checkout.sessions.create({
         mode: "payment",
         customer_creation: "always",
-        metadata: { donation_type: "onetime" },
+        metadata,
         line_items: [
           {
             price_data: {
