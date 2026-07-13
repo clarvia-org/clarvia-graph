@@ -113,7 +113,7 @@ export async function ingestWebhookEvent(
       $1,
       $2,
       $3,
-      jsonb_build_object('webhook_event_id', $3)
+      jsonb_build_object('webhook_event_id', $3::uuid)
     )
     RETURNING id
     `,
