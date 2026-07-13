@@ -11,6 +11,19 @@ export const UPDATES: Update[] = [
   {
     date: "2026-07-13",
     headline: {
+      en: "Clarvia joins benevolat.lu to welcome new volunteers",
+      fr: "Clarvia rejoint benevolat.lu pour accueillir de nouveaux bénévoles",
+      de: "Clarvia ist jetzt auf benevolat.lu und sucht neue Freiwillige",
+    },
+    body: {
+      en: "Clarvia is now listed on benevolat.lu, Luxembourg’s national platform for volunteering. Through the platform, we hope to connect with people who want to contribute their skills to a practical public-interest project. Our first opportunity focuses on open-source development, with future roles planned for administrative, legal, and content validation. Volunteers will help us improve free, multilingual guidance for families navigating the procedures that follow the loss of a loved one.",
+      fr: "Clarvia est désormais présente sur benevolat.lu, la plateforme nationale du bénévolat au Luxembourg. Nous souhaitons y rencontrer des personnes prêtes à mettre leurs compétences au service d’un projet concret d’intérêt général. Notre première mission concerne le développement open source. D’autres possibilités suivront dans les domaines de la validation administrative, juridique et éditoriale. Les bénévoles contribueront à améliorer des informations gratuites et multilingues pour les familles confrontées aux démarches après la perte d’un proche.",
+      de: "Clarvia ist ab sofort auf benevolat.lu, Luxemburgs nationaler Plattform für freiwilliges Engagement, vertreten. Dort möchten wir Menschen erreichen, die ihre Fähigkeiten in ein konkretes gemeinnütziges Projekt einbringen wollen. Unsere erste Aufgabe richtet sich an Open-Source-Entwicklerinnen und -Entwickler. Weitere Einsatzmöglichkeiten in der administrativen, rechtlichen und redaktionellen Prüfung sind geplant. Freiwillige helfen uns dabei, kostenlose und mehrsprachige Orientierung für Familien nach dem Tod eines nahestehenden Menschen weiterzuentwickeln.",
+    },
+  },
+  {
+    date: "2026-07-13",
+    headline: {
       en: "Clarvia joins Luxembourg’s leading sustainability network, IMS",
       fr: "Clarvia rejoint IMS, le principal réseau luxembourgeois dédié au développement durable",
       de: "Clarvia wird Mitglied bei IMS, Luxemburgs führendem Nachhaltigkeitsnetzwerk",
