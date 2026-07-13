@@ -9,6 +9,19 @@ export type Update = {
 /* Newest first — sorted by date descending */
 export const UPDATES: Update[] = [
   {
+    date: "2026-07-13",
+    headline: {
+      en: "Clarvia joins Luxembourg’s leading sustainability network, IMS",
+      fr: "Clarvia rejoint IMS, le principal réseau luxembourgeois dédié au développement durable",
+      de: "Clarvia wird Mitglied bei IMS, Luxemburgs führendem Nachhaltigkeitsnetzwerk",
+    },
+    body: {
+      en: "Clarvia has joined IMS Luxembourg, the country’s leading network for corporate responsibility and sustainable development. Membership connects Clarvia with organisations across Luxembourg committed to responsible practices, social impact, and collective action. Through the IMS network, we look forward to learning from experienced partners, contributing our perspective as a public-interest non-profit, and building new collaborations that help make essential support more accessible to families.",
+      fr: "Clarvia a rejoint IMS Luxembourg, le principal réseau du pays consacré à la responsabilité sociétale des entreprises et au développement durable. Cette adhésion nous permet d’échanger avec de nombreuses organisations luxembourgeoises engagées en faveur de pratiques responsables, de l’impact social et de l’action collective. Au sein du réseau IMS, nous souhaitons apprendre de partenaires expérimentés, apporter notre regard d’association d’intérêt général et développer de nouvelles collaborations afin de rendre les services essentiels plus accessibles aux familles.",
+      de: "Clarvia ist IMS Luxembourg beigetreten, dem führenden Netzwerk des Landes für unternehmerische Verantwortung und nachhaltige Entwicklung. Die Mitgliedschaft bringt uns mit Organisationen aus ganz Luxemburg zusammen, die sich für verantwortungsvolles Handeln, gesellschaftliche Wirkung und gemeinsames Engagement einsetzen. Im IMS-Netzwerk möchten wir von erfahrenen Partnern lernen, unsere Perspektive als gemeinnütziger Verein einbringen und neue Kooperationen aufbauen, die Familien den Zugang zu wichtigen Unterstützungsangeboten erleichtern.",
+    },
+  },
+  {
     date: "2026-07-12",
     headline: {
       en: "Clarvia moves production infrastructure to carbon-neutral Google Cloud in Stockholm",
