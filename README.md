@@ -134,6 +134,14 @@ Clarvia Graph is an open, source-backed knowledge graph for administrative conse
 
 The provenance chain, three-valued condition logic, publication gate, and EU standards alignment are domain-agnostic patterns. The bereavement/Luxembourg dataset is a working reference implementation. If you are building source-backed regulatory workflows for a different life event or jurisdiction, this repository provides a tested starting point.
 
+## Funding
+
+Clarvia Graph is maintained by Clarvia ASBL, a Luxembourg-registered nonprofit.
+
+Our current funding needs and contribution channels are published in the project's [`funding.json`](funding.json) manifest.
+
+Current priority: an adoption-ready first release covering stable versioning, documentation, reproducible examples, validation, automated testing, governance, and independent technical review.
+
 ## License
 
 - **Code & tooling:** [EUPL-1.2](LICENSE)
