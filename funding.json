@@ -6,7 +6,7 @@
     "role": "steward",
     "name": "Clarvia ASBL",
     "email": "opensource@clarvia.org",
-    "description": "Clarvia ASBL is a Luxembourg-registered nonprofit developing free and open public-interest infrastructure for navigating complex administrative processes after major life events, beginning with bereavement. Clarvia combines source-backed administrative data, open schemas, validation tooling, and accessible public services. Its first reference implementation helps families understand the practical and administrative steps that follow a death. Clarvia currently has zero paid staff, is supported by six volunteers, and develops its work with feedback from public authorities, nonprofit organisations, and commercial actors in the bereavement sector.",
+    "description": "Clarvia ASBL is a Luxembourg-registered nonprofit developing free and open public-interest infrastructure for navigating complex administrative processes after major life events, beginning with bereavement. Clarvia combines source-backed administrative data, open schemas, validation tooling, and accessible public services. Its first reference implementation helps families understand the practical and administrative steps that follow a death. Clarvia currently has no paid staff. Its three-person core team contributes substantial unpaid time to the project and works within a wider group of six volunteers. Clarvia develops its work with feedback from public authorities, nonprofit organisations, and commercial actors in the bereavement sector.",
     "webpageUrl": {
       "url": "https://clarvia.org"
     }
@@ -20,7 +20,8 @@
         "url": "https://clarvia.org"
       },
       "repositoryUrl": {
-        "url": "https://github.com/clarvia-org/clarvia-graph"
+        "url": "https://github.com/clarvia-org/clarvia-graph",
+        "wellKnown": "https://github.com/clarvia-org/clarvia-graph/blob/main/.well-known/funding-manifest-urls"
       },
       "licenses": [
         "spdx:EUPL-1.2",
@@ -55,7 +56,7 @@
         "status": "active",
         "name": "Clarvia Graph adoption-ready first release",
         "description": "One-time funding to prepare Clarvia Graph for independent evaluation and reuse. The work will produce a stable versioned release, improved installation and contributor documentation, reproducible examples, stronger validation and automated testing, public governance and roadmap documentation, and an independent technical review.",
-        "amount": 20000,
+        "amount": 25000,
         "currency": "USD",
         "frequency": "one-time",
         "channels": [
