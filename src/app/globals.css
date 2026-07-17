@@ -43,11 +43,17 @@ body {
   line-height: 1.6;
   background:
     linear-gradient(rgba(235, 240, 245, 0.45), rgba(235, 240, 245, 0.25)),
-    url('/sky-bg.webp') center/cover no-repeat fixed;
+    url('/sky-bg.webp') center/cover no-repeat scroll;
   color: var(--color-calm-blue-800); /* Darkened from 700 for better contrast */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-attachment: fixed;
+  }
 }
 
 /* Headings — dark navy, like Calm's deep blue headlines */

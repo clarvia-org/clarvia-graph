@@ -1,0 +1,79 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.1.0",
+  "entity": {
+    "type": "organisation",
+    "role": "steward",
+    "name": "Clarvia ASBL",
+    "email": "opensource@clarvia.org",
+    "description": "Clarvia ASBL is a Luxembourg-registered nonprofit developing free and open public-interest infrastructure for navigating complex administrative processes after major life events, beginning with bereavement. Clarvia combines source-backed administrative data, open schemas, validation tooling, and accessible public services. Its first reference implementation helps families understand the practical and administrative steps that follow a death. Clarvia currently has zero paid staff, is supported by six volunteers, and develops its work with feedback from public authorities, nonprofit organisations, and commercial actors in the bereavement sector.",
+    "webpageUrl": {
+      "url": "https://clarvia.org"
+    }
+  },
+  "projects": [
+    {
+      "guid": "clarvia-graph",
+      "name": "Clarvia Graph",
+      "description": "Clarvia Graph is an open, source-backed knowledge graph and toolchain for modelling administrative consequences after major life events. It structures official rules, conditions, deadlines, required documents, responsible authorities, and source evidence so that public services, nonprofit organisations, civic-technology projects, and researchers can generate trustworthy administrative workflows.\n\nThe first reference implementation covers bereavement administration in Luxembourg, including cross-border concepts needed for European workflows. The graph directly powers Clarvia's free, multilingual bereavement checklist at clarvia.org, helping families navigate administrative steps after the loss of a loved one. Every published claim is designed to trace to an authoritative source. The project includes open schemas, controlled vocabularies, graph data, source registries, validation and generation tooling, automated tests, and exports including JSON, JSON-LD, and EU interoperability views.\n\nFunding is sought to prepare Clarvia Graph for independent evaluation and reuse through a stable versioned release, improved installation and contributor documentation, reproducible examples, stronger validation and automated testing, public governance and roadmap documentation, and an independent technical review.",
+      "webpageUrl": {
+        "url": "https://clarvia.org"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/clarvia-org/clarvia-graph"
+      },
+      "licenses": [
+        "spdx:EUPL-1.2",
+        "spdx:CC-BY-4.0"
+      ],
+      "tags": [
+        "knowledge-graph",
+        "civic-tech",
+        "open-data",
+        "public-services",
+        "developer-tools",
+        "data-provenance",
+        "interoperability",
+        "digital-public-good",
+        "government-data",
+        "social-impact"
+      ]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "clarvia-bank",
+        "type": "bank",
+        "address": "https://clarvia.org/en/support",
+        "description": "Bank-transfer details for Clarvia ASBL are published on this page. Institutional funders may contact opensource@clarvia.org for due-diligence and transfer documentation."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "adoption-ready-release",
+        "status": "active",
+        "name": "Clarvia Graph adoption-ready first release",
+        "description": "One-time funding to prepare Clarvia Graph for independent evaluation and reuse. The work will produce a stable versioned release, improved installation and contributor documentation, reproducible examples, stronger validation and automated testing, public governance and roadmap documentation, and an independent technical review.",
+        "amount": 20000,
+        "currency": "USD",
+        "frequency": "one-time",
+        "channels": [
+          "clarvia-bank"
+        ]
+      },
+      {
+        "guid": "general-support",
+        "status": "active",
+        "name": "General open-source support",
+        "description": "Flexible contributions supporting maintenance, documentation, source validation, community participation, infrastructure, and continued development of Clarvia Graph.",
+        "amount": 0,
+        "currency": "USD",
+        "frequency": "one-time",
+        "channels": [
+          "clarvia-bank"
+        ]
+      }
+    ]
+  }
+}
