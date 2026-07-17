@@ -26,16 +26,19 @@
     "export-json": "pnpm --filter @clarvia/cli run export-json",
     "export-web": "pnpm --filter @clarvia/cli run export-web",
     "capture": "pnpm --filter @clarvia/cli run capture",
-    "extract": "pnpm --filter @clarvia/cli run extract"
+    "extract": "pnpm --filter @clarvia/cli run extract",
+    "validate:funding": "tsx scripts/validate-funding.ts"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^26.1.0",
+    "@vitest/coverage-v8": "^4.1.8",
+    "ajv": "^8.17.1",
     "eslint": "^10.6.0",
     "prettier": "^3.9.4",
+    "tsx": "^4.23.0",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.62.1",
-    "@vitest/coverage-v8": "^4.1.8",
     "vitest": "^4.1.8"
   },
   "pnpm": {

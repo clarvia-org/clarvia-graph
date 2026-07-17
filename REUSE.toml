@@ -130,6 +130,20 @@ path = [
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
 SPDX-License-Identifier = "EUPL-1.2"
 
+# ── Funding manifest ────────────────────────────────────────────────
+
+[[annotations]]
+path = "funding.json"
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# ── Standalone scripts ──────────────────────────────────────────────
+
+[[annotations]]
+path = "scripts/**/*.ts"
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "EUPL-1.2"
+
 # ── CI/CD workflows ─────────────────────────────────────────────────
 
 [[annotations]]
