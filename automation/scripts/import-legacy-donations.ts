@@ -20,7 +20,6 @@
  */
 
 import { readFile } from "node:fs/promises";
-import { createHash } from "node:crypto";
 import { join } from "node:path";
 import pg from "pg";
 

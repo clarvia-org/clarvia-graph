@@ -19,7 +19,7 @@
  */
 
 import { readFileSync, readdirSync, existsSync } from "fs";
-import { join, basename } from "path";
+import { join } from "path";
 
 // ── Configuration ────────────────────────────────────────────────
 

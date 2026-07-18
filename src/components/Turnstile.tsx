@@ -5,7 +5,7 @@ import Script from "next/script";
 
 const TURNSTILE_SITE_KEY = "0x4AAAAAAC_ookARAIHfv7sG";
 
-export default function Turnstile({ onVerify }: { onVerify: (token: string) => void }) {
+export default function Turnstile({ onVerify }: { onVerify: (token: string | null) => void }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const widgetId = useRef<string | undefined>(undefined);
 
@@ -17,7 +17,7 @@ export default function Turnstile({ onVerify }: { onVerify: (token: string) => v
       widgetId.current = w.render(containerRef.current, {
         sitekey: TURNSTILE_SITE_KEY,
         callback: onVerify,
-        "expired-callback": () => onVerify(""),
+        "expired-callback": () => onVerify(null),
         theme: "light",
         size: "flexible",
       });

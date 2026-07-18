@@ -504,7 +504,7 @@ BEGIN
       available_at = now() + v_delay,
       dead_lettered_at = CASE
         WHEN v_next_state = 'dead' THEN now()
-        ELSE NULL
+        ELSE dead_lettered_at
       END,
       locked_by = NULL,
       locked_at = NULL,
@@ -993,6 +993,10 @@ CREATE TABLE clarvia.nurture_enrollments (
   cancellation_reason   text,
   created_at            timestamptz NOT NULL DEFAULT now(),
   updated_at            timestamptz NOT NULL DEFAULT now(),
+  -- NOTE: Lifetime uniqueness is intentional: a contact can be enrolled at most once
+  -- per sequence_key, even after completion/cancellation/suppression. If future
+  -- requirements allow re-enrollment, replace this with a migration (for example,
+  -- a partial unique index limited to active enrollments).
   UNIQUE (contact_id, sequence_key)
 );
 
@@ -1015,6 +1019,7 @@ CREATE TABLE clarvia.email_messages (
   template_key          text NOT NULL,
   template_version      integer NOT NULL,
   locale                text NOT NULL
+                          -- Resolved send locale only; map unsupported donor locale 'lu' -> 'fr' before insert/upsert.
                           CHECK (locale IN ('en', 'fr', 'de')),
   idempotency_key       text NOT NULL UNIQUE,
   status                text NOT NULL DEFAULT 'scheduled'

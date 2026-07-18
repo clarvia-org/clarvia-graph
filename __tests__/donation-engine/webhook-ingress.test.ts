@@ -129,8 +129,6 @@ describe("POST /api/stripe/webhook", () => {
   // Test 1: Missing Stripe signature → 400
   // -------------------------------------------------------------------------
   it("returns 400 when stripe-signature header is missing", async () => {
-    const req = createRequest({ signature: null });
-
     // Remove the signature header
     const headersInit = new Headers({ "content-type": "application/json" });
     const reqNoSig = new NextRequest(

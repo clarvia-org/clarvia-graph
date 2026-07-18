@@ -11,14 +11,14 @@ export default function FormsSection({ lang }: { lang: Lang }) {
   const [fbHardest, setFbHardest] = useState("");
   const [fbWish, setFbWish] = useState("");
   const [fbEmail, setFbEmail] = useState("");
-  const [feedbackToken, setFeedbackToken] = useState("");
+  const [feedbackToken, setFeedbackToken] = useState<string | null>("");
 
   const contactForm = useForm();
   const [ctName, setCtName] = useState("");
   const [ctEmail, setCtEmail] = useState("");
   const [ctSubject, setCtSubject] = useState("");
   const [ctMessage, setCtMessage] = useState("");
-  const [contactToken, setContactToken] = useState("");
+  const [contactToken, setContactToken] = useState<string | null>("");
 
   return (
     <>
@@ -51,7 +51,7 @@ export default function FormsSection({ lang }: { lang: Lang }) {
                 e.preventDefault();
                 feedbackForm.submit(
                   "/api/feedback",
-                  { hardest: fbHardest, wishExisted: fbWish, email: fbEmail, turnstileToken: feedbackToken },
+                  { hardest: fbHardest, wishExisted: fbWish, email: fbEmail, turnstileToken: feedbackToken ?? "" },
                   () => {
                     if (typeof window !== "undefined" && typeof window.gtag === "function") {
                       window.gtag("event", "feedback_submit", {
@@ -143,7 +143,7 @@ export default function FormsSection({ lang }: { lang: Lang }) {
                 e.preventDefault();
                 contactForm.submit(
                   "/api/contact",
-                  { name: ctName, email: ctEmail, subject: ctSubject, message: ctMessage, turnstileToken: contactToken },
+                  { name: ctName, email: ctEmail, subject: ctSubject, message: ctMessage, turnstileToken: contactToken ?? "" },
                   () => {
                     if (typeof window !== "undefined" && typeof window.gtag === "function") {
                       window.gtag("event", "contact_submit", {
