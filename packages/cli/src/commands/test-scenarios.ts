@@ -110,7 +110,7 @@ function parseScenarioFile(
 // ── item matching ────────────────────────────────────────────────────
 
 /** Find output items that are relevant to a given consequence. */
-function findRelevantItems(
+export function findRelevantItems(
   consequence: Consequence,
   output: { items: ChecklistItem[] },
 ): ChecklistItem[] {
