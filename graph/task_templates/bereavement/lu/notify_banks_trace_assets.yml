@@ -26,7 +26,9 @@ evidence_requirements:
         - evidence_type.global.death_certificate
         - evidence_type.global.identity_document
         - evidence_type.lu.acte_de_notoriete
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.lu.cssf_tracing_assets.heirs_contact_banks_directly
+  - assertion.lu.cssf_tracing_assets.death_certificate_for_asset_search
 rendering:
   checklist_group: estate_and_inheritance
   urgency_score: 75
@@ -36,7 +38,7 @@ dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 record_valid_from: "2026-06-05"
 provenance:
   derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
