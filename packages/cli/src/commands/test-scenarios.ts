@@ -11,7 +11,7 @@
  */
 
 import { readFileSync } from "node:fs";
-import { resolve, relative } from "node:path";
+import { resolve } from "node:path";
 import { globSync } from "glob";
 import { parse as parseYaml } from "yaml";
 import {
@@ -22,13 +22,9 @@ import {
   type Consequence,
   type ChecklistItem,
 } from "@clarvia/generator";
+import { toPosixRel } from "../shared/utils.js";
 
 // ── helpers ──────────────────────────────────────────────────────────
-
-/** Turn a Windows path into a forward-slash posix-style relative path */
-function toPosixRel(abs: string, root: string): string {
-  return relative(root, abs).replaceAll("\\", "/");
-}
 
 // ── public result types ──────────────────────────────────────────────
 
@@ -114,22 +110,19 @@ function parseScenarioFile(
 // ── item matching ────────────────────────────────────────────────────
 
 /** Find output items that are relevant to a given consequence. */
-function findRelevantItems(
+export function findRelevantItems(
   consequence: Consequence,
   output: { items: ChecklistItem[] },
 ): ChecklistItem[] {
   const taskRefs = consequence.task_template_refs ?? [];
   return output.items.filter((item) => {
+    if (item.needed_for.includes(consequence.title)) {
+      return true;
+    }
     for (const taskRef of taskRefs) {
-      if (
-        item.needed_for.includes(consequence.title) ||
-        item.id.includes(taskRef.split(".").pop()!)
-      ) {
+      if (item.id.includes(taskRef.split(".").pop()!)) {
         return true;
       }
-    }
-    if (taskRefs.length === 0) {
-      return item.needed_for.includes(consequence.title);
     }
     return false;
   });

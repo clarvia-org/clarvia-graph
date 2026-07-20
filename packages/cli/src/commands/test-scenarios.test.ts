@@ -7,7 +7,7 @@
 
 import { describe, it, expect } from "vitest";
 import { resolve } from "node:path";
-import { runTestScenarios } from "./test-scenarios.js";
+import { runTestScenarios, findRelevantItems } from "./test-scenarios.js";
 
 const ROOT_DIR = resolve(import.meta.dirname!, "..", "..", "..", "..");
 
@@ -56,5 +56,51 @@ describe("runTestScenarios characterization", () => {
     );
     // Pin: currently no checklist group failures
     expect(withGroups.length).toMatchInlineSnapshot(`0`);
+  });
+});
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
+describe("findRelevantItems", () => {
+  it("matches item by needed_for", () => {
+    const consequence = {
+      title: "My Consequence",
+    } as any;
+    const output = {
+      items: [
+        { needed_for: ["My Consequence"], id: "task-1" },
+        { needed_for: ["Other"], id: "task-2" },
+      ],
+    } as any;
+    const result = findRelevantItems(consequence, output);
+    expect(result).toEqual([{ needed_for: ["My Consequence"], id: "task-1" }]);
+  });
+
+  it("matches item by task_template_refs when needed_for doesn't match", () => {
+    const consequence = {
+      title: "My Consequence",
+      task_template_refs: ["prefix.task-2"],
+    } as any;
+    const output = {
+      items: [
+        { needed_for: ["Other"], id: "task-1" },
+        { needed_for: ["Other"], id: "task-2" },
+      ],
+    } as any;
+    const result = findRelevantItems(consequence, output);
+    expect(result).toEqual([{ needed_for: ["Other"], id: "task-2" }]);
+  });
+
+  it("handles empty/missing task_template_refs", () => {
+    const consequence = {
+      title: "My Consequence",
+      task_template_refs: undefined,
+    } as any;
+    const output = {
+      items: [
+        { needed_for: ["Other"], id: "task-1" },
+      ],
+    } as any;
+    const result = findRelevantItems(consequence, output);
+    expect(result).toEqual([]);
   });
 });
