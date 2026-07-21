@@ -159,6 +159,7 @@ We are grateful for the support of ecosystem partners who have endorsed Clarvia�
 
 ## Related repositories
 
+- [lex](https://github.com/clarvia-org/lex) — Open legal-data infrastructure — normalized national legislation for AI agents
 - [workflow-web](https://github.com/clarvia-org/workflow-web) — Consumer web application at [clarvia.org](https://clarvia.org)
 - [workflow-data](https://github.com/clarvia-org/workflow-data) — Archived. Cross-border source, authority, and corridor data migrated into this graph in June 2026.
 
