@@ -17,7 +17,7 @@ describe("runCheckAnchors characterization", () => {
 
   it("pins the total result count", () => {
     // Will fail on first run — update with actual value
-    expect(results.length).toMatchInlineSnapshot(`77`);
+    expect(results.length).toMatchInlineSnapshot(`82`);
   });
 
   it("pins the error count", () => {
@@ -29,7 +29,7 @@ describe("runCheckAnchors characterization", () => {
     const notFound = results.filter((r) => !r.found).length;
     expect({ found, notFound }).toMatchInlineSnapshot(`
       {
-        "found": 77,
+        "found": 82,
         "notFound": 0,
       }
     `);
@@ -62,7 +62,10 @@ describe("runCheckAnchors characterization", () => {
         "assertion.guichet_lu.bereavement_leave.first_degree_relative_three_days",
         "assertion.guichet_lu.bereavement_leave.leave_taken_at_event",
         "assertion.guichet_lu.bereavement_leave.spouse_partner_death_three_days",
+        "assertion.guichet_lu.declaration_deces.medical_attestation_required",
         "assertion.guichet_lu.declaration_succession.inheritance_declaration_required",
+        "assertion.guichet_lu.declaration_succession.notary_recommended",
+        "assertion.guichet_lu.declaration_succession.wills_register_search",
         "assertion.guichet_lu.funeral_allowance.allowance_amount_current_index",
         "assertion.guichet_lu.funeral_allowance.death_certificate_extract_required",
         "assertion.guichet_lu.funeral_allowance.deceased_must_be_health_insured",

@@ -164,11 +164,32 @@ exports[`runCheckAnchors characterization > snapshots the full results array for
     "textQuote": "survivor's pension",
   },
   {
+    "assertionId": "assertion.guichet_lu.declaration_deces.medical_attestation_required",
+    "file": "sources/assertions/lu/guichet_lu/declaration_deces.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.declaration_deces.2026_06_05",
+    "textQuote": "le médecin établit une attestation médicale",
+  },
+  {
     "assertionId": "assertion.guichet_lu.declaration_succession.inheritance_declaration_required",
     "file": "sources/assertions/lu/guichet_lu/declaration_succession.yml",
     "found": true,
     "snapshotId": "snapshot.guichet_lu.declaration_succession.2026_06_05",
     "textQuote": "déposée par écrit dans les 6 mois du décès",
+  },
+  {
+    "assertionId": "assertion.guichet_lu.declaration_succession.notary_recommended",
+    "file": "sources/assertions/lu/guichet_lu/declaration_succession.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.declaration_succession.2026_06_05",
+    "textQuote": "n’est pas obligatoire, mais fortement recommandée",
+  },
+  {
+    "assertionId": "assertion.guichet_lu.declaration_succession.wills_register_search",
+    "file": "sources/assertions/lu/guichet_lu/declaration_succession.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.declaration_succession.2026_06_05",
+    "textQuote": "recherche testamentaire dans le registre des dispositions de dernière volonté",
   },
   {
     "assertionId": "assertion.guichet_lu.funeral_allowance.allowance_amount_current_index",
@@ -295,6 +316,20 @@ exports[`runCheckAnchors characterization > snapshots the full results array for
     "found": true,
     "snapshotId": "snapshot.guichet_lu.inheritance_tax.2026_06_10",
     "textQuote": "2 catégories d’impôts sur les biens reçus en héritage",
+  },
+  {
+    "assertionId": "assertion.legilux_lu.bail_habitation.tenant_death_lease_continuation",
+    "file": "sources/assertions/lu/legilux_lu/bail_habitation.yml",
+    "found": true,
+    "snapshotId": "snapshot.legilux_lu.bail_habitation.consolide_20240801",
+    "textQuote": "le contrat de bail continue",
+  },
+  {
+    "assertionId": "assertion.legilux_lu.bail_habitation.tenant_death_lease_termination",
+    "file": "sources/assertions/lu/legilux_lu/bail_habitation.yml",
+    "found": true,
+    "snapshotId": "snapshot.legilux_lu.bail_habitation.consolide_20240801",
+    "textQuote": "le contrat de bail est résilié de plein droit",
   },
   {
     "assertionId": "assertion.lu.acd_form100.email_not_accepted",
