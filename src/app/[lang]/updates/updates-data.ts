@@ -9,6 +9,19 @@ export type Update = {
 /* Newest first — sorted by date descending */
 export const UPDATES: Update[] = [
   {
+    date: "2026-07-21",
+    headline: {
+      en: "Clarvia launches lex - an open-source framework standardising national legislation",
+      fr: "Clarvia lance lex, un framework open source pour standardiser les législations nationales",
+      de: "Clarvia veröffentlicht lex - ein Open-Source-Framework zur Standardisierung nationaler Gesetzestexte",
+    },
+    body: {
+      en: "Clarvia has published lex, a new open-source repository that normalises national legislation into a single, predictable format for AI agents.\n\nRather than requiring agents to parse fragmented government portals, APIs, or PDFs, lex normalises legal texts into standard Markdown paired with byte-identical official source files and SHA-256 verification.\n\nStarting with Luxembourg legal codes, lex includes a CLI and a three-function adapter pattern allowing contributors to add legislation from any country.\n\nView the repository: https://github.com/clarvia-org/lex",
+      fr: "Clarvia a publié lex, un nouveau dépôt open source qui convertit les législations nationales dans un format unique, cohérent et prévisible pour les agents d’intelligence artificielle.\n\nAu lieu de devoir extraire les textes depuis des portails publics fragmentés, des API ou des documents PDF, lex les normalise en Markdown standardisé. Les fichiers sources officiels sont également conservés à l’identique, octet par octet, et vérifiés au moyen de sommes de contrôle SHA-256.\n\nDans sa première version, lex comprend les codes juridiques luxembourgeois, un outil en ligne de commande ainsi qu’un modèle d’adaptateur fondé sur trois fonctions, permettant aux contributeurs d’ajouter la législation de n’importe quel pays.\n\nDécouvrir le dépôt : https://github.com/clarvia-org/lex",
+      de: "Clarvia hat lex veröffentlicht, ein neues Open-Source-Repository, das nationale Gesetzestexte in ein einheitliches und verlässlich strukturiertes Format für KI-Agenten überführt.\n\nAnstatt Inhalte aus fragmentierten Behördenportalen, APIs oder PDF-Dokumenten auslesen zu müssen, stellt lex Gesetzestexte als standardisiertes Markdown bereit. Zusätzlich werden die offiziellen Quelldateien bytegenau gespeichert und mittels SHA-256 verifiziert.\n\nZum Start enthält lex luxemburgische Gesetzbücher, eine Kommandozeilenanwendung sowie ein Adaptermodell mit drei Funktionen, über das Mitwirkende Rechtsvorschriften aus beliebigen Ländern ergänzen können.\n\nRepository ansehen: https://github.com/clarvia-org/lex",
+    },
+  },
+  {
     date: "2026-07-13",
     headline: {
       en: "Clarvia joins benevolat.lu to welcome new volunteers",
