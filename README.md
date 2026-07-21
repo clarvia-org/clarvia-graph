@@ -183,3 +183,4 @@ Content generated from workflow data may be licensed separately under Creative C
 |---|---|
 | [clarvia-graph](https://github.com/clarvia-org/clarvia-graph) | Canonical data engine — schemas, graph data, validation, sources, exports |
 | [.github](https://github.com/clarvia-org/.github) | Organization-wide community health files |
+| [lex](https://github.com/clarvia-org/lex) | Open legal-data infrastructure — normalized national legislation for AI agents |
