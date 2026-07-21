@@ -23,3 +23,44 @@ assertions:
     provenance:
       extraction_method: ai_assisted
       extracted_at: "2026-06-05T07:00:00Z"
+  - id: assertion.guichet_lu.declaration_succession.notary_recommended
+    schema_version: "0.1.0"
+    claim_type: official_guidance
+    claim_text: >
+      L'intervention d'un notaire pour la rédaction de la déclaration
+      n'est pas obligatoire, mais fortement recommandée, surtout dans
+      le cas d'une succession complexe.
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: succession
+    anchor:
+      selector_type: text_quote
+      text_quote: "n\u2019est pas obligatoire, mais fortement recommand\u00e9e"
+    source_tier: official_guidance
+    record_valid_from: "2026-07-21"
+    review_status: approved
+    confidence: high
+    provenance:
+      extraction_method: ai_assisted
+      extracted_at: "2026-07-21T06:00:00Z"
+  - id: assertion.guichet_lu.declaration_succession.wills_register_search
+    schema_version: "0.1.0"
+    claim_type: official_guidance
+    claim_text: >
+      Les héritiers peuvent demander une recherche testamentaire dans
+      le registre des dispositions de dernière volonté auprès de l'AED.
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: succession
+    anchor:
+      selector_type: text_quote
+      text_quote: "recherche testamentaire dans le registre des dispositions de dernière volonté"
+    source_tier: official_guidance
+    record_valid_from: "2026-07-21"
+    review_status: approved
+    confidence: high
+    provenance:
+      extraction_method: ai_assisted
+      extracted_at: "2026-07-21T06:00:00Z"
