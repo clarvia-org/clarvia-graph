@@ -84,6 +84,8 @@ describe("runCheckAnchors characterization", () => {
         "assertion.guichet_lu.inheritance_tax.duties_vary_by_relationship_and_assets",
         "assertion.guichet_lu.inheritance_tax.tax_due_six_weeks_after_request",
         "assertion.guichet_lu.inheritance_tax.two_inheritance_tax_categories",
+        "assertion.legilux_lu.bail_habitation.tenant_death_lease_continuation",
+        "assertion.legilux_lu.bail_habitation.tenant_death_lease_termination",
         "assertion.lu.acd_form100.email_not_accepted",
         "assertion.lu.acd_form100.model_100_required_for_assessment",
         "assertion.lu.acd_form100.myguichet_online_filing_available",
