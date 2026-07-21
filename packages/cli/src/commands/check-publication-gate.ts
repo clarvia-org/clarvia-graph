@@ -1,7 +1,7 @@
 /**
  * clarvia check-publication-gate — Enforce publication gate per spec §10.6.
  *
- * For every consequence and task_template, verifies:
+ * For every consequence, task_template, and deadline, verifies:
  *   - authoring_status === 'approved'
  *   - distribution_status === 'public_open'
  *   - source_assertion_refs is non-empty
@@ -110,6 +110,7 @@ function loadGateRecords(rootDir: string): GateFileEntry[] {
   const patterns = [
     "graph/consequences/**/*.{yml,yaml}",
     "graph/task_templates/**/*.{yml,yaml}",
+    "graph/deadlines/**/*.{yml,yaml}",
   ];
 
   for (const pattern of patterns) {
@@ -273,7 +274,7 @@ export async function main(): Promise<void> {
   const { violations } = await runCheckPublicationGate({ rootDir });
 
   if (violations.length === 0) {
-    console.log("✔ All consequences and task templates pass publication gate.");
+    console.log("✔ All consequences, task templates, and deadlines pass publication gate.");
     process.exit(0);
   }
 
