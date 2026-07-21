@@ -30,7 +30,9 @@ evidence_requirements:
         - evidence_type.lu.medical_death_certificate
         - evidence_type.lu.identity_document_deceased
         - evidence_type.lu.livret_de_famille
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.bereavement.death_must_be_declared
+  - assertion.guichet_lu.bereavement.declaration_within_24h
 rendering:
   checklist_group: immediate_formalities
   urgency_score: 100
@@ -40,7 +42,7 @@ dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 record_valid_from: "2026-06-03"
 provenance:
   derived_from_snapshot_ref: snapshot.guichet_lu.bereavement.2026_06_03

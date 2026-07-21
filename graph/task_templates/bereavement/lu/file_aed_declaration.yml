@@ -28,7 +28,10 @@ evidence_requirements:
       evidence_type_refs:
         - evidence_type.global.death_certificate
         - evidence_type.lu.succession_declaration
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.guichet_lu.declaration_succession.inheritance_declaration_required
+  - assertion.guichet_lu.inheritance_tax.declaration_needed_for_tax_assessment
+  - assertion.lu.aed_successions.heirs_and_legatees_liable
 rendering:
   checklist_group: estate_and_inheritance
   urgency_score: 58
@@ -38,7 +41,7 @@ dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 record_valid_from: "2026-06-05"
 provenance:
   derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05

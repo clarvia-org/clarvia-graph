@@ -20,7 +20,9 @@ deadline_refs: []
 evidence_requirements:
   satisfy_if: any_set_satisfied
   sets: []
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.eu.ejustice_succession.habitual_residence_default_rule
+  - assertion.eu.ejustice_succession.cross_border_single_law_authority
 rendering:
   checklist_group: cross_border_issues
   urgency_score: 40
@@ -30,7 +32,7 @@ dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 record_valid_from: "2026-06-05"
 provenance:
   derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
