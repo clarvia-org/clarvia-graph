@@ -715,11 +715,6 @@ exports[`runValidate characterization against real graph > pins schema assignmen
     "valid": true,
   },
   {
-    "file": "sources/assertions/lu/guichet_lu/declaration_deces.yml",
-    "schema": "source_assertion.schema.json",
-    "valid": true,
-  },
-  {
     "file": "sources/assertions/lu/guichet_lu/declaration_succession.yml",
     "schema": "source_assertion.schema.json",
     "valid": true,
@@ -741,11 +736,6 @@ exports[`runValidate characterization against real graph > pins schema assignmen
   },
   {
     "file": "sources/assertions/lu/guichet_lu/inheritance_tax.yml",
-    "schema": "source_assertion.schema.json",
-    "valid": true,
-  },
-  {
-    "file": "sources/assertions/lu/legilux_lu/bail_habitation.yml",
     "schema": "source_assertion.schema.json",
     "valid": true,
   },
@@ -825,11 +815,6 @@ exports[`runValidate characterization against real graph > pins schema assignmen
     "valid": true,
   },
   {
-    "file": "sources/snapshots/guichet_lu_declaration_deces_2026_06_05.yml",
-    "schema": "source_snapshot.schema.json",
-    "valid": true,
-  },
-  {
     "file": "sources/snapshots/guichet_lu_declaration_succession_2026_06_05.yml",
     "schema": "source_snapshot.schema.json",
     "valid": true,
@@ -856,11 +841,6 @@ exports[`runValidate characterization against real graph > pins schema assignmen
   },
   {
     "file": "sources/snapshots/guichet_lu_inheritance_tax_2026_06_10.yml",
-    "schema": "source_snapshot.schema.json",
-    "valid": true,
-  },
-  {
-    "file": "sources/snapshots/legilux_lu_bail_habitation_consolide_20240801.yml",
     "schema": "source_snapshot.schema.json",
     "valid": true,
   },
@@ -910,8 +890,8 @@ exports[`runValidate characterization against real graph > pins schema assignmen
 exports[`runValidate characterization against real graph > pins total file count and pass/fail breakdown 1`] = `
 {
   "invalid": 0,
-  "total": 180,
-  "valid": 180,
+  "total": 176,
+  "valid": 176,
 }
 `;
 
@@ -1056,11 +1036,6 @@ exports[`runValidate characterization against real graph > validates snapshot in
   },
   {
     "errorCount": 0,
-    "file": "sources/snapshots/legilux_lu_bail_habitation_consolide_20240801.yml",
-    "valid": true,
-  },
-  {
-    "errorCount": 0,
     "file": "sources/snapshots/guichet_lu_inheritance_tax_2026_06_10.yml",
     "valid": true,
   },
@@ -1087,11 +1062,6 @@ exports[`runValidate characterization against real graph > validates snapshot in
   {
     "errorCount": 0,
     "file": "sources/snapshots/guichet_lu_declaration_succession_2026_06_05.yml",
-    "valid": true,
-  },
-  {
-    "errorCount": 0,
-    "file": "sources/snapshots/guichet_lu_declaration_deces_2026_06_05.yml",
     "valid": true,
   },
   {

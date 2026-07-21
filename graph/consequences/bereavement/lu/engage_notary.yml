@@ -13,9 +13,7 @@ trigger:
   condition_refs: []
 task_template_refs:
   - task_template.lu.bereavement.succession.engage_notary
-source_assertion_refs:
-  - assertion.guichet_lu.declaration_succession.notary_recommended
-  - assertion.guichet_lu.declaration_succession.wills_register_search
+source_assertion_refs: []
 standards_export:
   cccev_requirement:
     enabled: true
@@ -23,7 +21,7 @@ standards_export:
   cpsv_public_service:
     enabled: true
 authoring_status: approved
-distribution_status: public_open
+distribution_status: public_metadata_only
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

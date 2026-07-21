@@ -23,9 +23,7 @@ evidence_requirements:
       evidence_type_refs:
         - evidence_type.lu.proof_cohabitation
         - evidence_type.global.death_certificate
-source_assertion_refs:
-  - assertion.legilux_lu.bail_habitation.tenant_death_lease_continuation
-  - assertion.legilux_lu.bail_habitation.tenant_death_lease_termination
+source_assertion_refs: []
 rendering:
   checklist_group: estate_and_inheritance
   urgency_score: 55
@@ -35,10 +33,10 @@ dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
 authoring_status: approved
-distribution_status: public_open
+distribution_status: public_metadata_only
 record_valid_from: "2026-06-05"
 provenance:
-  derived_from_snapshot_ref: snapshot.legilux_lu.bail_habitation.consolide_20240801
+  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
   extraction_method: ai_assisted
   extracted_by: software.extractor.v0.1
   extracted_at: "2026-06-04T08:00:00Z"
