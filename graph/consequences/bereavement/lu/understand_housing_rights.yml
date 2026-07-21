@@ -12,7 +12,9 @@ trigger:
     - condition.lu.bereavement.estate_assets.deceased_was_tenant
 task_template_refs:
   - task_template.lu.bereavement.estate_assets.understand_housing_rights
-source_assertion_refs: []
+source_assertion_refs:
+  - assertion.legilux_lu.bail_habitation.tenant_death_lease_continuation
+  - assertion.legilux_lu.bail_habitation.tenant_death_lease_termination
 standards_export:
   cccev_requirement:
     enabled: true
@@ -20,7 +22,7 @@ standards_export:
   cpsv_public_service:
     enabled: false
 authoring_status: approved
-distribution_status: public_metadata_only
+distribution_status: public_open
 monitoring_status: unmonitored
 confidence: medium
 record_valid_from: "2026-06-05"

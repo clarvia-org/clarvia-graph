@@ -277,3 +277,39 @@ sources:
     monitoring:
       active: false
     verified_at: null
+
+  - id: source.guichet_lu.declaration_deces
+    title: "Déclaration du décès d'un proche"
+    title_en: "Reporting the death of a loved one"
+    url: "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/declaration-deces.html"
+    source_type: government_portal
+    jurisdiction: LU
+    publisher: "Guichet.lu (Luxembourg Government)"
+    languages: [fr]
+    domain: death_registration
+    life_event: bereavement
+    source_role: primary_guidance
+    monitoring:
+      active: false
+    verified_at: "2026-06-05"
+    verified_by: Talizdo
+
+  - id: source.legilux_lu.bail_habitation
+    title: "Loi modifiée du 21 septembre 2006 sur le bail à usage d'habitation"
+    title_en: "Modified law of 21 September 2006 on residential leases"
+    url: "https://legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/consolide/20240801"
+    eli_uri: "http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1"
+    source_type: legislation
+    jurisdiction: LU
+    publisher: "Service central de législation"
+    languages: [fr]
+    domain: housing
+    life_event: bereavement
+    source_role: primary_legislation
+    retrieval:
+      preferred_format: text/html
+      provider: legilux_casemates_filestore
+    monitoring:
+      active: false
+    verified_at: "2026-07-21"
+    verified_by: software.agent.v0.1
