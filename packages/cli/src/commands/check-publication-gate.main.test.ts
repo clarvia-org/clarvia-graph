@@ -27,7 +27,7 @@ describe("main() — check-publication-gate", () => {
     await main();
 
     expect(console.log).toHaveBeenCalledWith(
-      "✔ All consequences and task templates pass publication gate.",
+      "✔ All consequences, task templates, and deadlines pass publication gate.",
     );
     expect(process.exit).toHaveBeenCalledWith(0);
   });
