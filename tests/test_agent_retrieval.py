@@ -182,6 +182,66 @@ Body one.
     assert data["warning"] == "Cite the official source."
 
 
+def test_get_json_serializes_unquoted_yaml_dates(tmp_path: Path) -> None:
+    """Whole-law lex get --json must serialize unquoted YAML dates."""
+    import hashlib
+    import shutil
+    from contextlib import chdir
+
+    from lex.evidence import jsonable_metadata
+
+    src = Path(__file__).parent / "fixtures/sample_dataset"
+    dataset = tmp_path / "dataset"
+    shutil.copytree(src, dataset)
+    md_path = dataset / "countries/xx/laws/sample-law/current.md"
+    source_path = dataset / "countries/xx/laws/sample-law/source.html"
+    sha = hashlib.sha256(source_path.read_bytes()).hexdigest()
+    md_path.write_text(
+        f"""---
+id: xx/sample-law
+country: xx
+title: Test Law of 2026
+language: en
+document_type: law
+status: official_current
+official_id: TEST-2026-001
+source_url: https://example.gov.xx/laws/2026/001
+source_file: source.html
+source_sha256: {sha}
+source_license: CC-BY-4.0
+source_attribution: Test Official Publisher, Testland
+source_terms_url: https://example.gov.xx/terms
+rights_reviewed_at: 2026-01-01
+published_at: 1946-04-29
+consolidated_at: 2004-01-04
+retrieved_at: 2026-07-21T21:21:12Z
+---
+
+# Test Law of 2026
+
+<a id="art-1"></a>
+## Article 1
+
+First provision text.
+""",
+        encoding="utf-8",
+    )
+    meta, _ = parse_frontmatter(md_path.read_text(encoding="utf-8"))
+    assert type(meta["published_at"]).__name__ == "date"
+    assert type(meta["retrieved_at"]).__name__ == "datetime"
+    assert json.dumps(jsonable_metadata(meta))
+
+    runner = CliRunner()
+    with chdir(dataset):
+        result = runner.invoke(main, ["get", "xx/sample-law", "--json"])
+    assert result.exit_code == 0, result.output
+    data = json.loads(result.output)
+    assert set(data.keys()) == {"metadata", "body"}
+    assert data["metadata"]["published_at"] == "1946-04-29"
+    assert data["metadata"]["consolidated_at"] == "2004-01-04"
+    assert data["metadata"]["retrieved_at"] == "2026-07-21T21:21:12Z"
+
+
 def test_search_diacritic_normalization_and_matched_on() -> None:
     runner = CliRunner()
     accented = runner.invoke(

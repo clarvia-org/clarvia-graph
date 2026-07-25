@@ -131,7 +131,7 @@ def _optional_str(meta: dict[str, Any], key: str) -> str | None:
     return text if text else None
 
 
-def _jsonable_meta_value(value: Any) -> Any:
+def jsonable_meta_value(value: Any) -> Any:
     """Coerce YAML-parsed scalars to JSON-serializable forms.
 
     Unquoted frontmatter dates become datetime.date / datetime.datetime via
@@ -144,7 +144,16 @@ def _jsonable_meta_value(value: Any) -> Any:
         return text
     if isinstance(value, date):
         return value.isoformat()
+    if isinstance(value, dict):
+        return {key: jsonable_meta_value(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [jsonable_meta_value(item) for item in value]
     return value
+
+
+def jsonable_metadata(meta: dict[str, Any]) -> dict[str, Any]:
+    """Return a JSON-serializable copy of parsed frontmatter."""
+    return {key: jsonable_meta_value(value) for key, value in meta.items()}
 
 
 def build_provision_evidence(markdown: str, anchor: str) -> dict[str, Any]:
@@ -186,7 +195,7 @@ def build_provision_evidence(markdown: str, anchor: str) -> dict[str, Any]:
         if key == "warning":
             evidence[key] = str(value)
         else:
-            evidence[key] = _jsonable_meta_value(value)
+            evidence[key] = jsonable_meta_value(value)
 
     for key in ("country", "language", "document_type", "status"):
         if key in evidence and evidence[key] is not None:

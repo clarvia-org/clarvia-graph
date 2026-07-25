@@ -10,6 +10,7 @@ from lex.dataset import LawRecord, discover_laws
 from lex.errors import ErrorCode, LexError
 from lex.evidence import (
     build_provision_evidence,
+    jsonable_metadata,
     normalize_for_search,
     search_field_matches,
     search_rank_score,
@@ -206,7 +207,13 @@ def get_cmd(
             click.echo(body, nl=not body.endswith("\n"))
             return
         if as_json:
-            click.echo(json.dumps({"metadata": meta, "body": body}, indent=2, ensure_ascii=False))
+            click.echo(
+                json.dumps(
+                    {"metadata": jsonable_metadata(meta), "body": body},
+                    indent=2,
+                    ensure_ascii=False,
+                )
+            )
             return
         click.echo(text, nl=not text.endswith("\n"))
     except LexError as exc:
