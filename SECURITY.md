@@ -67,3 +67,27 @@ We will make a good-faith effort to:
 ## Public disclosure
 
 Please do not publicly disclose unresolved vulnerabilities before maintainers have had a reasonable opportunity to assess and address them.
+
+---
+
+## Accepted risks
+
+### In-memory API rate limiting (`src/lib/rate-limit.ts`)
+
+**Status:** Accepted for the current single-instance Coolify/Hetzner deployment.
+
+`rateLimit()` uses a process-local `Map`. Limits are not shared across multiple Node processes or serverless instances.
+
+**Why accepted**
+
+- Production website currently runs as one long-lived container; per-process limits are global for that deployment.
+- Contact, subscribe, and feedback already use Cloudflare Turnstile as the primary bot control.
+- Donate only creates Stripe Checkout sessions; Stripe remains the payment gate.
+- A shared store (Redis/Upstash/Postgres) would add infra and ops cost without a current multi-instance need.
+
+**Revisit when**
+
+- The website is scaled to multiple replicas or serverless instances, or
+- Sustained abuse bypasses Turnstile / edge controls.
+
+Until then, scanner findings that only note “in-memory rate limit is not cluster-global” are expected and should not reopen this decision.

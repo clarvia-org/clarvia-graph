@@ -1,3 +1,10 @@
+/**
+ * Process-local sliding-window limiter.
+ *
+ * Not shared across replicas/serverless instances. That is an accepted risk
+ * for the current single-instance Coolify deployment — see SECURITY.md
+ * ("Accepted risks"). Revisit before horizontal scale-out.
+ */
 const limiters = new Map<string, Map<string, number[]>>();
 
 export function rateLimit(
