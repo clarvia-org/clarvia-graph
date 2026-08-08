@@ -40,8 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# clarvia data (fetched at build time from clarvia-graph release)
-/public/data/clarvia/
+# clarvia data: synced from monorepo build/exports/web (see scripts/sync-web-data.ts).
+# Tracked in git so Coolify can build apps/web without re-running the graph toolchain.
+# /public/data/clarvia/ is intentionally NOT ignored.
 
 # Local AI IDE tooling (Cursor + Antigravity) — personal setup only
 .cursor/

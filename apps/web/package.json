@@ -6,13 +6,13 @@
   "license": "Apache-2.0",
   "scripts": {
     "dev": "next dev",
-    "prebuild": "tsx scripts/fetch-clarvia-data.ts",
+    "prebuild": "tsx scripts/sync-web-data.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
     "postinstall": "node scripts/postinstall.js",
-    "fetch-data": "tsx scripts/fetch-clarvia-data.ts"
+    "sync-data": "tsx scripts/sync-web-data.ts"
   },
   "dependencies": {
     "next": "16.2.11",
@@ -35,19 +35,5 @@
     "tsx": "^4.23.5",
     "typescript": "7.0.2",
     "vitest": "4.1.10"
-  },
-  "overrides": {
-    "postcss": ">=8.5.18",
-    "sharp": ">=0.35.0",
-    "brace-expansion@1": "1.1.17",
-    "brace-expansion@5": "5.0.9"
-  },
-  "pnpm": {
-    "overrides": {
-      "postcss": ">=8.5.18",
-      "sharp": ">=0.35.0",
-      "brace-expansion@1": "1.1.17",
-      "brace-expansion@5": "5.0.9"
-    }
   }
 }

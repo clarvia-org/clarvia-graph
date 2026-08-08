@@ -1,6 +1,9 @@
-# workflow-web
+# workflow-web (`apps/web`)
+
+> **Monorepo location:** this app lives in [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph) under `apps/web`. See [`docs/MONOREPO.md`](../../docs/MONOREPO.md).
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
+
 
 > **Status:** License: Apache-2.0 · Part of the [Clarvia](https://clarvia.org) project ([OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112))
 

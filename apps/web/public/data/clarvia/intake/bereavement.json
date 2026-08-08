@@ -1,0 +1,427 @@
+{
+  "life_event": "bereavement",
+  "questions": [
+    {
+      "id": "intake_fact.global.bereavement.survivor_employment_status",
+      "path": "survivor.employment_status",
+      "label": "Survivor's employment status",
+      "label_en": "Survivor's employment status",
+      "label_fr": "Survivor's employment status",
+      "label_de": "Survivor's employment status",
+      "value_type": "enum",
+      "cardinality": "one",
+      "options": [
+        {
+          "value": "employee",
+          "label_en": "Employee",
+          "label_fr": "Salarié(e)",
+          "label_de": "Arbeitnehmer(in)"
+        },
+        {
+          "value": "apprentice",
+          "label_en": "Apprentice",
+          "label_fr": "Apprenti(e)",
+          "label_de": "Auszubildende(r)"
+        },
+        {
+          "value": "self_employed",
+          "label_en": "Self-employed",
+          "label_fr": "Indépendant(e)",
+          "label_de": "Selbständig"
+        },
+        {
+          "value": "not_employed",
+          "label_en": "Not employed",
+          "label_fr": "Sans emploi",
+          "label_de": "Nicht erwerbstätig"
+        },
+        {
+          "value": "retired",
+          "label_en": "Retired",
+          "label_fr": "Retraité(e)",
+          "label_de": "Im Ruhestand"
+        },
+        {
+          "value": "unknown",
+          "label_en": "I don't know",
+          "label_fr": "Je ne sais pas",
+          "label_de": "Ich weiß nicht"
+        }
+      ]
+    },
+    {
+      "id": "intake_fact.global.bereavement.survivor_cohabitation_months",
+      "path": "survivor.cohabitation.months",
+      "label": "How many months were you living with the deceased before their death?",
+      "label_en": "How many months were you living with the deceased before their death?",
+      "label_fr": "Combien de mois viviez-vous avec le défunt avant son décès ?",
+      "label_de": "Wie viele Monate haben Sie vor dem Tod mit dem Verstorbenen zusammengelebt?",
+      "value_type": "integer",
+      "cardinality": "one"
+    },
+    {
+      "id": "intake_fact.global.bereavement.repatriation_requested",
+      "path": "repatriation.requested",
+      "label": "Family intends to transport the body or ashes to another country",
+      "label_en": "Family intends to transport the body or ashes to another country",
+      "label_fr": "Family intends to transport the body or ashes to another country",
+      "label_de": "Family intends to transport the body or ashes to another country",
+      "value_type": "boolean",
+      "cardinality": "one"
+    },
+    {
+      "id": "intake_fact.global.bereavement.relationship_to_deceased",
+      "path": "relationship.to_deceased",
+      "label": "Relationship to the deceased",
+      "label_en": "Relationship to the deceased",
+      "label_fr": "Relationship to the deceased",
+      "label_de": "Relationship to the deceased",
+      "value_type": "enum",
+      "cardinality": "one",
+      "options": [
+        {
+          "value": "surviving_spouse",
+          "label_en": "Surviving spouse",
+          "label_fr": "Conjoint(e) survivant(e)",
+          "label_de": "Überlebende(r) Ehepartner(in)"
+        },
+        {
+          "value": "registered_partner",
+          "label_en": "Registered partner",
+          "label_fr": "Partenaire enregistré(e)",
+          "label_de": "Eingetragene(r) Partner(in)"
+        },
+        {
+          "value": "child",
+          "label_en": "Child",
+          "label_fr": "Enfant",
+          "label_de": "Kind"
+        },
+        {
+          "value": "parent",
+          "label_en": "Parent",
+          "label_fr": "Parent",
+          "label_de": "Elternteil"
+        },
+        {
+          "value": "sibling",
+          "label_en": "Sibling",
+          "label_fr": "Frère/Sœur",
+          "label_de": "Geschwister"
+        },
+        {
+          "value": "other_relative",
+          "label_en": "Other relative",
+          "label_fr": "Autre proche",
+          "label_de": "Andere(r) Verwandte(r)"
+        },
+        {
+          "value": "unrelated_person",
+          "label_en": "Unrelated person",
+          "label_fr": "Personne sans lien de parenté",
+          "label_de": "Nicht verwandte Person"
+        },
+        {
+          "value": "unknown",
+          "label_en": "I don't know",
+          "label_fr": "Je ne sais pas",
+          "label_de": "Ich weiß nicht"
+        }
+      ]
+    },
+    {
+      "id": "intake_fact.global.bereavement.marriage_or_partnership_status",
+      "path": "marriage_or_partnership.status",
+      "label": "Marriage or partnership status",
+      "label_en": "Marriage or partnership status",
+      "label_fr": "Marriage or partnership status",
+      "label_de": "Marriage or partnership status",
+      "value_type": "enum",
+      "cardinality": "one",
+      "options": [
+        {
+          "value": "married",
+          "label_en": "Married",
+          "label_fr": "Marié(e)",
+          "label_de": "Verheiratet"
+        },
+        {
+          "value": "registered_partnership",
+          "label_en": "Registered partnership",
+          "label_fr": "Partenariat enregistré",
+          "label_de": "Eingetragene Partnerschaft"
+        },
+        {
+          "value": "divorced",
+          "label_en": "Divorced",
+          "label_fr": "Divorcé(e)",
+          "label_de": "Geschieden"
+        },
+        {
+          "value": "former_partner",
+          "label_en": "Former Partner",
+          "label_fr": "Former Partner",
+          "label_de": "Former Partner"
+        },
+        {
+          "value": "not_married_or_partnered",
+          "label_en": "Not Married Or Partnered",
+          "label_fr": "Not Married Or Partnered",
+          "label_de": "Not Married Or Partnered"
+        },
+        {
+          "value": "unknown",
+          "label_en": "I don't know",
+          "label_fr": "Je ne sais pas",
+          "label_de": "Ich weiß nicht"
+        }
+      ]
+    },
+    {
+      "id": "intake_fact.global.bereavement.jurisdiction_of_death",
+      "path": "death.place.country",
+      "label": "Country where the death occurred",
+      "label_en": "Country where the death occurred",
+      "label_fr": "Country where the death occurred",
+      "label_de": "Country where the death occurred",
+      "value_type": "jurisdiction_code",
+      "cardinality": "one",
+      "options": [
+        {
+          "value": "LU",
+          "label_en": "Luxembourg",
+          "label_fr": "Luxembourg",
+          "label_de": "Luxemburg"
+        },
+        {
+          "value": "DE",
+          "label_en": "Germany",
+          "label_fr": "Allemagne",
+          "label_de": "Deutschland"
+        },
+        {
+          "value": "FR",
+          "label_en": "France",
+          "label_fr": "France",
+          "label_de": "Frankreich"
+        },
+        {
+          "value": "BE",
+          "label_en": "Belgium",
+          "label_fr": "Belgique",
+          "label_de": "Belgien"
+        },
+        {
+          "value": "UNKNOWN",
+          "label_en": "I don't know",
+          "label_fr": "Je ne sais pas",
+          "label_de": "Ich weiß nicht"
+        }
+      ]
+    },
+    {
+      "id": "intake_fact.global.bereavement.estate_real_estate_exists",
+      "path": "estate.real_estate.exists",
+      "label": "Did the deceased own real estate?",
+      "label_en": "Did the deceased own real estate?",
+      "label_fr": "Did the deceased own real estate?",
+      "label_de": "Did the deceased own real estate?",
+      "value_type": "boolean",
+      "cardinality": "one"
+    },
+    {
+      "id": "intake_fact.global.bereavement.estate_asset_country",
+      "path": "estate.asset_location.country",
+      "label": "Countries where estate assets are located",
+      "label_en": "Countries where estate assets are located",
+      "label_fr": "Countries where estate assets are located",
+      "label_de": "Countries where estate assets are located",
+      "value_type": "jurisdiction_code",
+      "cardinality": "many",
+      "options": [
+        {
+          "value": "LU",
+          "label_en": "Luxembourg",
+          "label_fr": "Luxembourg",
+          "label_de": "Luxemburg"
+        },
+        {
+          "value": "DE",
+          "label_en": "Germany",
+          "label_fr": "Allemagne",
+          "label_de": "Deutschland"
+        },
+        {
+          "value": "FR",
+          "label_en": "France",
+          "label_fr": "France",
+          "label_de": "Frankreich"
+        },
+        {
+          "value": "BE",
+          "label_en": "Belgium",
+          "label_fr": "Belgique",
+          "label_de": "Belgien"
+        },
+        {
+          "value": "UNKNOWN",
+          "label_en": "I don't know",
+          "label_fr": "Je ne sais pas",
+          "label_de": "Ich weiß nicht"
+        }
+      ]
+    },
+    {
+      "id": "intake_fact.global.bereavement.deceased_was_tenant",
+      "path": "deceased.housing.was_tenant",
+      "label": "Was the deceased a tenant?",
+      "label_en": "Was the deceased a tenant?",
+      "label_fr": "Was the deceased a tenant?",
+      "label_de": "Was the deceased a tenant?",
+      "value_type": "boolean",
+      "cardinality": "one"
+    },
+    {
+      "id": "intake_fact.global.bereavement.deceased_pension_jurisdiction",
+      "path": "deceased.last_social_security_affiliation.country",
+      "label": "Last pension/social-security affiliation country",
+      "label_en": "Last pension/social-security affiliation country",
+      "label_fr": "Last pension/social-security affiliation country",
+      "label_de": "Last pension/social-security affiliation country",
+      "value_type": "jurisdiction_code",
+      "cardinality": "one",
+      "options": [
+        {
+          "value": "LU",
+          "label_en": "Luxembourg",
+          "label_fr": "Luxembourg",
+          "label_de": "Luxemburg"
+        },
+        {
+          "value": "DE",
+          "label_en": "Germany",
+          "label_fr": "Allemagne",
+          "label_de": "Deutschland"
+        },
+        {
+          "value": "FR",
+          "label_en": "France",
+          "label_fr": "France",
+          "label_de": "Frankreich"
+        },
+        {
+          "value": "BE",
+          "label_en": "Belgium",
+          "label_fr": "Belgique",
+          "label_de": "Belgien"
+        },
+        {
+          "value": "UNKNOWN",
+          "label_en": "I don't know",
+          "label_fr": "Je ne sais pas",
+          "label_de": "Ich weiß nicht"
+        }
+      ]
+    },
+    {
+      "id": "intake_fact.global.bereavement.deceased_owned_vehicle",
+      "path": "deceased.owned_vehicle",
+      "label": "Did the deceased own a Luxembourg-registered vehicle?",
+      "label_en": "Did the deceased own a Luxembourg-registered vehicle?",
+      "label_fr": "Did the deceased own a Luxembourg-registered vehicle?",
+      "label_de": "Did the deceased own a Luxembourg-registered vehicle?",
+      "value_type": "boolean",
+      "cardinality": "one"
+    },
+    {
+      "id": "intake_fact.global.bereavement.deceased_habitual_residence",
+      "path": "deceased.habitual_residence.country",
+      "label": "Deceased's habitual residence",
+      "label_en": "Deceased's habitual residence",
+      "label_fr": "Deceased's habitual residence",
+      "label_de": "Deceased's habitual residence",
+      "value_type": "jurisdiction_code",
+      "cardinality": "one",
+      "options": [
+        {
+          "value": "LU",
+          "label_en": "Luxembourg",
+          "label_fr": "Luxembourg",
+          "label_de": "Luxemburg"
+        },
+        {
+          "value": "DE",
+          "label_en": "Germany",
+          "label_fr": "Allemagne",
+          "label_de": "Deutschland"
+        },
+        {
+          "value": "FR",
+          "label_en": "France",
+          "label_fr": "France",
+          "label_de": "Frankreich"
+        },
+        {
+          "value": "BE",
+          "label_en": "Belgium",
+          "label_fr": "Belgique",
+          "label_de": "Belgien"
+        },
+        {
+          "value": "UNKNOWN",
+          "label_en": "I don't know",
+          "label_fr": "Je ne sais pas",
+          "label_de": "Ich weiß nicht"
+        }
+      ]
+    },
+    {
+      "id": "intake_fact.global.bereavement.deceased_employment_status",
+      "path": "deceased.employment_status",
+      "label": "Deceased's employment status",
+      "label_en": "Deceased's employment status",
+      "label_fr": "Deceased's employment status",
+      "label_de": "Deceased's employment status",
+      "value_type": "enum",
+      "cardinality": "many",
+      "options": [
+        {
+          "value": "employed",
+          "label_en": "Employed",
+          "label_fr": "Employed",
+          "label_de": "Employed"
+        },
+        {
+          "value": "self_employed",
+          "label_en": "Self-employed",
+          "label_fr": "Indépendant(e)",
+          "label_de": "Selbständig"
+        },
+        {
+          "value": "business_owner",
+          "label_en": "Business owner",
+          "label_fr": "Chef d'entreprise",
+          "label_de": "Unternehmer(in)"
+        },
+        {
+          "value": "not_employed",
+          "label_en": "Not employed",
+          "label_fr": "Sans emploi",
+          "label_de": "Nicht erwerbstätig"
+        },
+        {
+          "value": "retired",
+          "label_en": "Retired",
+          "label_fr": "Retraité(e)",
+          "label_de": "Im Ruhestand"
+        },
+        {
+          "value": "unknown",
+          "label_en": "I don't know",
+          "label_fr": "Je ne sais pas",
+          "label_de": "Ich weiß nicht"
+        }
+      ]
+    }
+  ]
+}

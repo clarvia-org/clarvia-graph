@@ -25,6 +25,12 @@
     "build-checklist": "pnpm --filter @clarvia/cli run build-checklist",
     "export-json": "pnpm --filter @clarvia/cli run export-json",
     "export-web": "pnpm --filter @clarvia/cli run export-web",
+    "sync:web-data": "tsx scripts/sync-web-export.ts",
+    "export-and-sync-web": "pnpm export-web && pnpm sync:web-data",
+    "web:dev": "pnpm --filter @clarvia/workflow-web dev",
+    "web:build": "pnpm --filter @clarvia/workflow-web build",
+    "web:lint": "pnpm --filter @clarvia/workflow-web lint",
+    "web:test": "pnpm --filter @clarvia/workflow-web test",
     "capture": "pnpm --filter @clarvia/cli run capture",
     "extract": "pnpm --filter @clarvia/cli run extract",
     "validate:funding": "tsx scripts/validate-funding.ts"
@@ -45,7 +51,9 @@
     "overrides": {
       "esbuild": ">=0.28.1",
       "fast-uri": ">=3.1.4",
-      "brace-expansion": ">=5.0.8"
+      "brace-expansion": ">=5.0.8",
+      "postcss": ">=8.5.18",
+      "sharp": ">=0.35.0"
     }
   }
 }
