@@ -1,0 +1,86 @@
+name: Update graph data
+
+# Per spec §19.8:
+# workflow-web CI → downloads pinned graph export → copies JSON into public/data/clarvia/
+
+on:
+  # Manual trigger — specify the clarvia-graph release tag
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "clarvia-graph release tag (e.g. v0.1.0-alpha.1)"
+        required: true
+        type: string
+
+  # Automatic trigger from clarvia-graph releases via repository dispatch
+  repository_dispatch:
+    types: [graph-release]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-graph-data:
+    name: Download graph export and open PR
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Determine release tag
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "tag=${{ inputs.release_tag }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=${{ github.event.client_payload.release_tag }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update CLARVIA_GRAPH_VERSION
+        run: |
+          TAG="${{ steps.tag.outputs.tag }}"
+          echo "${TAG}" > CLARVIA_GRAPH_VERSION
+          echo "Pinned CLARVIA_GRAPH_VERSION to ${TAG}"
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      - name: Fetch clarvia graph data
+        run: npx tsx scripts/fetch-clarvia-data.ts
+
+      - name: Verify data
+        run: |
+          echo "Fetched files:"
+          find public/data/clarvia -type f
+          echo ""
+          cat public/data/clarvia/manifest.json
+
+      - name: Create PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="${{ steps.tag.outputs.tag }}"
+          BRANCH="auto/graph-data-${TAG}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "${BRANCH}"
+          git add CLARVIA_GRAPH_VERSION
+          git commit -m "data: bump clarvia-graph to ${TAG}"
+          git push origin "${BRANCH}"
+
+          gh pr create \
+            --title "data: bump clarvia-graph to ${TAG}" \
+            --body "Bumps \`CLARVIA_GRAPH_VERSION\` to \`${TAG}\`.
+
+          Triggered by [clarvia-graph ${TAG}](https://github.com/clarvia-org/clarvia-graph/releases/tag/${TAG}).
+
+          This PR was created automatically by the \`update-graph-data\` workflow." \
+            --base main \
+            --head "${BRANCH}"

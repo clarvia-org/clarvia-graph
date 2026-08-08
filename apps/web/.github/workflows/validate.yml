@@ -1,0 +1,37 @@
+name: Validate workflow-web
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate app
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch clarvia graph data
+        run: npx tsx scripts/fetch-clarvia-data.ts
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
