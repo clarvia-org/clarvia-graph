@@ -1,0 +1,182 @@
+[
+  {
+    "id": "answer_lu_death",
+    "category": "immediate_post_death",
+    "expected_action": "answer",
+    "fixture": "answer_lu_death"
+  },
+  {
+    "id": "clarify_missing_country",
+    "category": "missing_information",
+    "expected_action": "clarify",
+    "fixture": "clarify_missing_country"
+  },
+  {
+    "id": "decline_off_topic",
+    "category": "off_topic",
+    "expected_action": "decline",
+    "fixture": "decline_off_topic"
+  },
+  {
+    "id": "answer_missing_search",
+    "category": "validation",
+    "expected_validation_code": "answer_without_search",
+    "fixture": "answer_missing_search"
+  },
+  {
+    "id": "answer_bad_source",
+    "category": "validation",
+    "expected_validation_code": "unsupported_source_url",
+    "fixture": "answer_bad_source"
+  },
+  {
+    "id": "answer_endorsed_provider",
+    "category": "provider_neutrality",
+    "expected_validation_code": "provider_not_neutral",
+    "fixture": "answer_endorsed_provider"
+  },
+  {
+    "id": "answer_contact_not_in_body",
+    "category": "contacts",
+    "expected_validation_code": "contact_not_in_body",
+    "fixture": "answer_contact_not_in_body"
+  },
+  {
+    "id": "injection_ignore_prompt",
+    "category": "prompt_injection",
+    "expected_action": "decline",
+    "fixture": "injection_ignore_prompt"
+  },
+  {
+    "id": "answer_cross_border",
+    "category": "cross_border",
+    "expected_action": "answer",
+    "fixture": "answer_cross_border"
+  },
+  {
+    "id": "answer_funeral_provider",
+    "category": "provider_request",
+    "expected_action": "answer",
+    "fixture": "answer_funeral_provider"
+  },
+  {
+    "id": "clarify_two_questions",
+    "category": "missing_information",
+    "expected_action": "clarify",
+    "fixture": "clarify_two_questions"
+  },
+  {
+    "id": "answer_eol_prep",
+    "category": "end_of_life_preparation",
+    "expected_action": "answer",
+    "fixture": "answer_eol_prep"
+  },
+  {
+    "id": "answer_emergency_signpost",
+    "category": "immediate_danger",
+    "expected_action": "answer",
+    "fixture": "answer_emergency_signpost"
+  },
+  {
+    "id": "answer_fr_language",
+    "category": "language_fr",
+    "expected_action": "answer",
+    "fixture": "answer_fr_language"
+  },
+  {
+    "id": "answer_de_language",
+    "category": "language_de",
+    "expected_action": "answer",
+    "fixture": "answer_de_language"
+  },
+  {
+    "id": "follow_up_thread",
+    "category": "follow_up",
+    "expected_action": "answer",
+    "fixture": "follow_up_thread"
+  },
+  {
+    "id": "answer_uncited_source",
+    "category": "validation",
+    "expected_validation_code": "uncited_source",
+    "fixture": "answer_uncited_source"
+  },
+  {
+    "id": "decline_with_sources",
+    "category": "validation",
+    "expected_validation_code": "decline_with_sources",
+    "fixture": "decline_with_sources"
+  },
+  {
+    "id": "answer_contact_bad_website",
+    "category": "validation",
+    "expected_validation_code": "unsupported_contact_website",
+    "fixture": "answer_contact_bad_website"
+  },
+  {
+    "id": "answer_recommended_language",
+    "category": "provider_neutrality",
+    "expected_validation_code": "provider_not_neutral",
+    "fixture": "answer_recommended_language"
+  },
+  {
+    "id": "answer_pt_language",
+    "category": "language_pt",
+    "expected_action": "answer",
+    "fixture": "answer_pt_language"
+  },
+  {
+    "id": "answer_belgium",
+    "category": "cross_border",
+    "expected_action": "answer",
+    "fixture": "answer_belgium"
+  },
+  {
+    "id": "answer_germany",
+    "category": "cross_border",
+    "expected_action": "answer",
+    "fixture": "answer_germany"
+  },
+  {
+    "id": "mixed_scope_decline",
+    "category": "mixed_scope",
+    "expected_action": "decline",
+    "fixture": "mixed_scope_decline"
+  },
+  {
+    "id": "answer_will_signpost",
+    "category": "end_of_life_preparation",
+    "expected_action": "answer",
+    "fixture": "answer_will_signpost"
+  },
+  {
+    "id": "answer_pension_notification",
+    "category": "immediate_post_death",
+    "expected_action": "answer",
+    "fixture": "answer_pension_notification"
+  },
+  {
+    "id": "answer_repatriation",
+    "category": "cross_border",
+    "expected_action": "answer",
+    "fixture": "answer_repatriation"
+  },
+  {
+    "id": "clarify_empty_sources_ok",
+    "category": "missing_information",
+    "expected_action": "clarify",
+    "fixture": "clarify_empty_sources_ok"
+  },
+  {
+    "id": "answer_best_provider_language",
+    "category": "provider_neutrality",
+    "expected_validation_code": "provider_not_neutral",
+    "fixture": "answer_best_provider_language"
+  },
+  {
+    "id": "answer_citation_without_source",
+    "category": "validation",
+    "expected_validation_code": "citation_without_source",
+    "fixture": "answer_citation_without_source"
+  }
+]

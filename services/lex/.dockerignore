@@ -1,0 +1,44 @@
+# Never copy credentials or secrets into the build context
+.env
+.env.*
+!.env.example
+*.key
+*-sa-key.json
+credentials.json
+service-account*.json
+
+# Private, non-deployable runtime material
+runtime-private/evals/
+runtime-private/data/
+runtime-private/deploy/
+
+# Real-user data and local logs
+logs/
+*.log
+data/
+
+# Python / tooling caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Tests and docs are not needed at runtime
+tests/
+docs/
+
+# Editor metadata / VCS
+.git/
+.gitignore
+.idea/
+.vscode/
+*.swp
+.DS_Store

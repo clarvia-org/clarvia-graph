@@ -1,8 +1,10 @@
 # lex
 
+> **Monorepo location:** legislation dataset in [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph) under `lex/`. Lex email service is `services/lex/`. See [`docs/MONOREPO.md`](../docs/MONOREPO.md).
+
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://python.org)
-[![CI](https://github.com/clarvia-org/lex/actions/workflows/ci.yml/badge.svg)](https://github.com/clarvia-org/lex/actions)
+[![CI](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex.yml/badge.svg)](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex.yml)
 
 **Current national legislation in one predictable format for AI agents.**
 
