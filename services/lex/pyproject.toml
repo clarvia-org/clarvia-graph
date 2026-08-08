@@ -17,7 +17,7 @@ dependencies = [
     "pydantic==2.10.4",
     "pydantic-settings==2.7.1",
     "markdown-it-py==3.0.0",
-    "bleach==6.2.0",
+    "bleach==6.4.0",
     "tzdata>=2024.1",
     # Google SDKs are imported lazily; the unit suite never needs credentials.
     "google-api-python-client==2.198.0",
