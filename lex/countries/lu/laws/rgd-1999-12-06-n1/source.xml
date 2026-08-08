@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="1999-12-06" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MS"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="1999-12-06" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="1999-12-06" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2002-11-04</scl:jolux><scl:jolux scl:name="dateDocument">1999-12-06</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MS</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/345</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/884</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr</scl:jolux><scl:jolux scl:name="transpositionProcess">http://data.legilux.public.lu/event/etat/trans/1994/51</scl:jolux><scl:jolux scl:name="dateEntryInForce">1999-12-18</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1999/a143</scl:jolux><scl:jolux scl:name="historicalLegalId">1999A25901</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="publicationDate">1999-12-14</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MS</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="transposes">/eli/dir_ue/1994/51/jo</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pr/19990020</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1990/219/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 04/11/2002 : Règlement grand-ducal du 6 décembre 1999 fixant les critères de classement des organismes génétiquement modifiés et de leurs utilisations et définissant les mesures de sécurité et les modalités de confinement relatives à ces utilisations.</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1997/01/13/n1/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1999-143-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1999/a143/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-1999-12-06-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1999-143-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1999/a143/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1999/a143/fr/pdf/eli-etat-leg-memorial-1999-a143-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="1999-12-18" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2002-11-04" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2002/10/17/n1/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/1999/12/06/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2002/10/17/n1/jo" id="rp2" showAs="Règlement grand-ducal du 17 octobre 2002 modifiant le règlement grand-ducal du 6 décembre 1999 fixant les critères de classement des organismes génétiquement modifiés et de leurs utilisations et définissant les mesures de sécurité et les modalités de confinement relatives à ces utilisations."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2002-10-31|2002-10-17|RGD|120">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2002/10/17/n1/jo">Règlement grand-ducal du 17 octobre 2002 modifiant le règlement grand-ducal du 6 décembre 1999 fixant les critères de classement des organismes génétiquement modifiés et de leurs utilisations et définissant les mesures de sécurité et les modalités de confinement relatives à ces utilisations.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 04/11/2002 : Règlement grand-ducal du 6 décembre 1999 fixant les critères de classement des organismes génétiquement modifiés et de leurs utilisations et définissant les mesures de sécurité et les modalités de confinement relatives à ces utilisations.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_1er/19991218</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-12-18</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<heading scl:style-format="b">Champ d’application.</heading>
+<alinea>
+<content>
+<p>Le présent règlement a pour objet</p>
+<ul scl:symbol="dash">
+<li>de fixer les critères en vertu desquels les organismes (OGM), et en particulier les micro-organismes génétiquement modifiés (MGM) sont classés en quatre groupes distincts sur la base de leur pathogénicité et en fonction des risque nul, minime, moyen ou considérable qu’ils présentent pour la santé humaine et l’environnement.</li>
+<li>de définir les critères en vertu desquels les différentes utilisations en milieu confiné les OGM, et en particulier les MGM sont réparties en quatre catégories en fonction du risque de ces utilisations pour la santé humaine et l’environnement.</li>
+</ul>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_2/19991218</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-12-18</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<heading scl:style-format="b">Critères de classement des OGM en groupes de risques.</heading>
+<paragraph id="paragraph_1">
+<num>1.</num>
+<alinea>
+<content>
+<p>Les OGM répondant aux critères définis à l’annexe I sont considérés donner lieu à un risque nul au sens de l’article 6 (1) de la <ref href="/eli/etat/leg/loi/1997/01/13/n1/jo" id="053f2231-c34b-48ed-9ad7-00245dd694d0" scl:verify="true">loi du 13 janvier 1997</ref> précitée. Ils sont à classer au groupe 1.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>2.</num>
+<alinea>
+<content>
+<p>Les groupes de risque 2, 3 et 4 sont constitués par des OGM en particulier des MGM, après une évaluation préalable de la sécurité des buts, des méthodes, des organismes donneurs, récepteurs ou le cas échéant parentaux, des informations génétiques et de l’éventuelle combinaison de ces éléments au sein des nouveaux MGM ou OGM à construire ou à utiliser.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En procédant à cette évaluation, l’utilisateur doit tenir compte des critères fixés à l’annexe II, pour autant qu’ils soient pertinents et ceci pour tous les types de MGM ou OGM prévisibles et nécessaires pour atteindre le(s) but(s) d’une opération particulière.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>3.</num>
+<alinea>
+<content>
+<p>A chaque phase des expérimentations de modification génétique de micro-organismes ou d’organismes, le groupe considéré sera le plus élevé, que ce soit celui de l’organisme donneur, celui de l’organisme récepteur ou éventuellement celui du vecteur ou de l’insert.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si la modification génétique produit un organisme d’un groupe supérieur, c’est ce dernier qui est considéré.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_3/19991218</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-12-18</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<heading scl:style-format="b">Classification des utilisations des OGM.</heading>
+<alinea>
+<content>
+<p>Les utilisations des OGM sont à classer dans une des catégories 1, 2, 3 ou 4 dont il sera question aux articles qui suivent, compte tenu du classement des OGM mis en oeuvre dans un des groupes prévus à l’article 2 <span scl:no-break="true">ci-dessus</span> ainsi que du degré de risque nul, minime, moyen ou considérable que ces opérations peuvent présenter pour la santé humaine et l’environnement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les critères de classement sont déterminés aux articles 5 et 6 ci-après en distinguant entre les opérations mettant en oeuvre des organismes génétiquement modifiés et celles mettant en oeuvre des <span scl:no-break="true">micro-organismes</span> génétiquement modifiés.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_4/19991218</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-12-18</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<heading scl:style-format="b">Opérations mettant en oeuvre des MGM.</heading>
+<paragraph id="paragraph_4">
+<num>1.</num>
+<alinea>
+<content>
+<p>Les opérations mettant en oeuvre des MGM sont classées dans la catégorie 1 quand tous les critères suivants sont remplis: </p>
+<ol scl:symbol="a)">
+<li>le micro-organisme récepteur ou donneur n’est pas susceptible de causer une pathologie chez l’homme, les animaux ou les végétaux;</li>
+<li>le vecteur et l’insert sont de telle nature qu’ils ne puissent pas doter le micro-organisme génétiquement modifié d’un phénotype susceptible de causer une pathologie chez l’homme, les animaux ou les végétaux ou causer des effets négatifs sur l’environnement;</li>
+<li>le micro-organisme génétiquement modifié n’est pas susceptible de causer une pathologie chez l’homme, les animaux ou les végétaux, et n’est pas susceptible de causer des effets négatifs sur l’environnement.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>2.</num>
+<alinea>
+<content>
+<p>Les opérations mettant en oeuvre des MGM sont classées dans le catégorie 2 quand les critères suivants sont remplis, sans qu’elles répondent aux conditions du paragraphe 1 ci-dessus: </p>
+<ol scl:symbol="a)">
+<li>le micro-organisme récepteur et/ou donneur sont des micro-organismes appartenant au groupe 1 ou 2 et ne donnant pas lieu à des micro-organismes du groupe 3 ou 4.</li>
+<li>le vecteur et l’insert sont caractérisés de façon à ce que d’après une évaluation de risque préalable, le micro-organisme génétiquement modifié ne dépasse pas la potentialité de danger du groupe 2 et ne donne pas lieu à des micro-organismes génétiquement modifiés d’un groupe supérieur.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>3.</num>
+<alinea>
+<content>
+<p>Les opérations mettant en oeuvre des MGM sont classées dans la catégorie 3 quand les critères suivantes sont remplis, sans qu’elles répondent aux conditions du paragraphe 1 et 2 ci-dessus:</p>
+<ol scl:symbol="a)">
+<li>le micro-organisme récepteur et/ou donneur sont des micro-organismes appartenant au groupe 1, 2 ou 3 et ne donnant pas lieu à des micro-organismes du groupe 4.</li>
+<li>le vecteur et l’insert sont caractérisés à ce que d’après une évaluation de risque préalable, le <span scl:no-break="true">micro-organisme</span> génétiquement modifié ne dépasse pas la potentialité de danger du groupe 3 et ne donne pas lieu à des micro-organismes génétiquement modifiés du groupe 4.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>4.</num>
+<alinea>
+<content>
+<p>Les opérations mettant en oeuvre des MGM sont classées dans la catégorie 4 quand, pour des raisons fondées celles-ci donnent lieu à un risque élevé pour la santé humaine ou l’environnement. Ceci concerne également les opérations utilisant des virus ou des vecteurs viraux appartenant à la groupe 4 ou celles utilisant des virus ou vecteurs viraux défectifs de la groupe 4 en présence de virus auxiliaires.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_5/19991218</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-12-18</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<heading scl:style-format="b">Opérations mettant en oeuvre des OGM (animaux ou plantes).</heading>
+<paragraph id="paragraph_8">
+<num>1.</num>
+<alinea>
+<content>
+<p>Les opérations mettant en oeuvre des OGM sont classées dans le catégorie 1 quand les critères suivants sont remplis: </p>
+<ol scl:symbol="a)">
+<li>les organismes récepteurs sont des animaux ou plantes qui présentent aucun risque pour la santé humaine ou l’environnement.</li>
+<li>les vecteurs viraux ne doivent pas être transmissibles par voie horizontale.</li>
+<li>les vecteurs et les inserts (provenant de l’organisme donneur ou d’origine synthétique sont bien caractérisés de façon à ce que d’après une évaluation de risque préalable, l’organisme génétiquement modifié ne dépasse pas la potentialité de danger des organismes du groupe 1 et ne donne pas lieu à des OGM d’un groupe supérieur.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>2.</num>
+<alinea>
+<content>
+<p>Les opérations mettant en oeuvre des OGM sont classées dans la catégorie 2 quand les critères suivants sont remplis, sans qu’elles répondent aux conditions du paragraphe 1 ci-dessus:</p>
+<ol scl:symbol="a)">
+<li>les organismes récepteurs sont des animaux ou plantes qui ne présentent qu’un risque faible pour la santé humaine et l’environnement.</li>
+<li>les vecteurs et les inserts (provenant de l’organisme donneur ou d’origine synthétique sont bien caractérisés de façon à ce que d’après une évaluation de risque préalable, l’organisme génétiquement modifié ne dépasse pas la potentialité de danger des organismes de la groupe 2 et ne donne pas lieu à des OGM d’un groupe supérieur.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>3.</num>
+<alinea>
+<content>
+<p>Les opérations mettant en oeuvre des OGM sont classées dans le catégorie 3 quand les critères suivants sont remplis, sans qu’elles répondent aux conditions du paragraphe 1 et 2 ci-dessus: </p>
+<ol scl:symbol="a)">
+<li>les organismes récepteurs sont des animaux ou plantes à partir desquels il y a un risque modéré pour la santé humaine ou l’environnement.</li>
+<li>les vecteurs et les inserts (provenant de l’organisme donneur ou d’origine synthétique sont bien caractérisés de façon à ce que d’après une évaluation de risque préalable, l’organisme génétiquement modifié ne dépasse pas la potentialité de danger des organismes de la groupe 2 et ne donne pas lieu à des OGM d’un groupe supérieur.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>4.</num>
+<alinea>
+<content>
+<p>Les opérations mettant en oeuvre des OGM sont classées dans la catégorie 4 quand, pour des raisons fondées celles-ci donnent lieu à un risque élevé pour la santé humaine ou l’environnement.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_6/19991218</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-12-18</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<heading scl:style-format="b">Mesures de confinement et de sécurité.</heading>
+<alinea>
+<content>
+<p>Afin d’assurer un niveau optimal de sécurité, toute autorisation accordée par le ministre au titre de l’article 11 de la <ref href="/eli/etat/leg/loi/1997/01/13/n1/jo" id="953c975a-e924-4ab1-b430-20f2fd502bd4">loi</ref>, doit prescrire les mesures pertinentes de confinement des opérations définies à l’annexe III. Ces mesures sont considérées comme des exigences minimales qui, selon les circonstances, peuvent être renforcées. Ces mesures ont trait tant aux opérations elles-mêmes qu’aux locaux et bâtiments où elles s’effectuent ainsi qu’aux dispositifs d’échange de l’air et des liquides ainsi que le traitement des déchets.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_7/19991218</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-12-18</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<heading scl:style-format="b">Annexes.</heading>
+<alinea>
+<content>
+<p>Les annexes I, II et III font partie intégrante du présent règlement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1/art_8/19991218</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1999/12/06/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-11-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8. </num>
+<heading scl:style-format="b">Exécution.</heading>
+<alinea>
+<content>
+<p>Notre ministre de la Santé, Notre ministre de l’Environnement, Notre ministre du Travail, Notre ministre l’Agriculture, de la Viticulture et du Développement rural sont chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+</content>
+</alinea>
+</article>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2025-05-06" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2025-05-06" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2025-05-06" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p>Annexe</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p> <mod class="mod-start" for="#pm1"/>Pour visualiser les annexes, veuillez consulter la <ref href="http://data.legilux.public.lu/filestore/eli/etat/leg/rgd/1999/12/06/n1/consolide/20021104/fr/pdf/eli-etat-leg-rgd-1999-12-06-n1-consolide-20021104-fr-pdf.pdf" id="36a58486-bdcf-4b81-a70d-2cb3b8e33d24">version pdf du mémorial</ref>.<mod class="mod-end" for="#pm1"/> <noteRef href="#M1" marker="1"/> </p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

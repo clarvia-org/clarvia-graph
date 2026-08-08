@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "lex",
+  "description": "Current national legislation in one predictable format for AI agents.",
+  "blueprint": "BLUEPRINT.md",
+  "dataset_globs": [
+    "countries/*/laws/*/current.md",
+    "countries/*/laws/*/current.*.md"
+  ],
+  "source_file_pairing": {
+    "pattern": "countries/*/laws/*/source.*",
+    "linked_by": "source_file field in current.md frontmatter"
+  },
+  "frontmatter": {
+    "required": [
+      "id", "country", "title", "language", "document_type", "status",
+      "source_url", "source_file", "source_sha256",
+      "source_license", "source_attribution", "source_terms_url",
+      "rights_reviewed_at", "retrieved_at"
+    ],
+    "optional": [
+      "official_id", "eli_uri", "published_at", "consolidated_at",
+      "source_modified_at", "warning"
+    ],
+    "at_least_one_required": ["official_id", "eli_uri"]
+  },
+  "allowed_status_values": [
+    "official_current",
+    "official_consolidation"
+  ],
+  "allowed_document_types": [
+    "constitution",
+    "code",
+    "law",
+    "regulation",
+    "other"
+  ],
+  "implemented_cli_commands": [
+    "lex list [--country CC] [--language LANG] [--json]",
+    "lex search QUERY [--country CC] [--language LANG] [--json]",
+    "lex get ID [--language LANG] [--provision ANCHOR] [--body] [--json]",
+    "lex source ID [--language LANG] [--verify] [--path-only]",
+    "lex check [PATH] [--json]",
+    "lex update COUNTRY [--id ID] [--dry-run]"
+  ],
+  "error_codes": [
+    "LEX_NOT_FOUND",
+    "LEX_LANGUAGE_NOT_FOUND",
+    "LEX_PROVISION_NOT_FOUND",
+    "LEX_SOURCE_NOT_FOUND",
+    "LEX_HASH_MISMATCH",
+    "LEX_INVALID_DATA",
+    "LEX_AMBIGUOUS_MATCH",
+    "LEX_INVALID_ID",
+    "LEX_INVALID_RIGHTS",
+    "LEX_NETWORK_ERROR",
+    "LEX_SOURCE_CHANGED",
+    "LEX_UNEXPECTED_DELETION"
+  ],
+  "citation_rule": "Always cite the official source (source_url or eli_uri) and official publisher (source_attribution), not lex, as the legal authority. Surface warning when present.",
+  "provision_json": {
+    "command": "lex get ID --provision ANCHOR --json",
+    "provision_id": "{document_id}/{anchor}",
+    "required_fields": [
+      "provision_id", "document_id", "anchor", "country", "language", "title",
+      "document_type", "status", "heading_path", "markdown", "plain_text",
+      "character_count", "word_count", "citation"
+    ],
+    "citation_required": [
+      "label", "document_title", "publisher", "formatted"
+    ],
+    "temporal_passthrough": [
+      "published_at", "consolidated_at", "retrieved_at"
+    ],
+    "forbidden_fields": [
+      "valid_from", "valid_to", "is_current", "applicable_from", "version_type"
+    ],
+    "heading_path": "structural stack from non-anchored non-H1 headings only; provision headings (anchor + following heading) do not update the stack; append selected provision heading"
+  },
+  "search_json": {
+    "matched_on_required": true,
+    "matched_on_fields_order": [
+      "id", "title", "official_id", "eli_uri", "document_type", "heading", "body"
+    ],
+    "normalization": "casefold + diacritic folding + typographic apostrophe normalization on query and haystack; matching only"
+  },
+  "semantics": {
+    "temporal": "current-only; published_at/consolidated_at/retrieved_at are pass-through facts, not legal applicability; no historical versions or point-in-time queries",
+    "coverage": "partial; the filesystem is the coverage list"
+  }
+}

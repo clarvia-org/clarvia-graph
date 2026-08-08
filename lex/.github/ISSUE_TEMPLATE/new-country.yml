@@ -1,0 +1,50 @@
+name: Propose New Country
+description: Propose adding a new country to lex
+title: "[Country]: "
+labels: ["new-country"]
+body:
+  - type: input
+    id: official_source
+    attributes:
+      label: Official Source
+      description: What is the official publisher and entry point?
+    validations:
+      required: true
+  - type: input
+    id: languages
+    attributes:
+      label: Languages
+      description: What are the official languages?
+    validations:
+      required: true
+  - type: input
+    id: formats
+    attributes:
+      label: Machine-Readable Formats
+      description: What formats are available (XML, PDF, HTML)?
+    validations:
+      required: true
+  - type: textarea
+    id: license_assessment
+    attributes:
+      label: License Assessment
+      description: Can we legally redistribute the laws?
+    validations:
+      required: true
+  - type: textarea
+    id: example_laws
+    attributes:
+      label: Example Laws
+      description: Provide URLs for 1-2 example laws
+    validations:
+      required: true
+  - type: dropdown
+    id: reviewer
+    attributes:
+      label: Language Review
+      description: Can you review laws in this language?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true

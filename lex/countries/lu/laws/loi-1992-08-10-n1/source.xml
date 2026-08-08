@@ -1,0 +1,2587 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-07-18" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MECM"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-07-18" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-07-18" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2025-11-29</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/809</scl:jolux><scl:jolux scl:name="dateDocument">2011-07-18</scl:jolux><scl:jolux scl:name="historicalLegalId">2011A1993A</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/459</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/905</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/TC</scl:jolux><scl:jolux scl:name="dateEntryInForce">2011-07-22</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/142</scl:jolux><scl:jolux scl:name="publicationDate">2011-07-18</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="consolidates">/eli/etat/leg/loi/1992/08/10/n1/jo</scl:jolux>
+<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 29/11/2025 : Loi du 10 août 1992 portant création de l’entreprise des postes et télécommunications.</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1997/03/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2000/12/15/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2005/04/25/n4/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/tc/2006/09/20/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2009/12/18/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2011/07/10/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/proj/pl/20040042</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/proj/pl/20090004</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/proj/pl/20110061</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2006/07/31/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1967/06/29/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1986/03/28/n3/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1963/06/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1967/12/04/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1934/10/16/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1936/12/01/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1936/12/01/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1970/03/20/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1987/09/09/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1986/08/27/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1986/03/27/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/rgd/1987/04/26/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1987/07/27/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1990/09/12/n1/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/142/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-tc-2011-07-18-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="memorialPage">1993</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/142/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2011-142-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="memorialPage">1993</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/tc/2011/07/18/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="1992-08-17" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="1997-03-31" id="e10" originatingExpression="true" source="#rp10" type="amendment"/>
+<eventRef date="2000-12-26" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+<eventRef date="2005-05-08" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+<eventRef date="2009-12-26" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+<eventRef date="2011-07-21" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2025-11-29" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2025-11-29" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2025-11-29" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2025-11-29" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/11/20/a511/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/tc/2011/07/18/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2025/11/20/a511/jo" id="rp2" showAs="Loi du 20 novembre 2025 portant modification : 1° de la loi modifiée du 24 mars 1989 sur la Banque et Caisse d’Épargne de l’État, Luxembourg ; 2° de la loi modifiée du 10 août 1992 portant création de l’entreprise des postes et télécommunications. "/>
+<passiveRef href="/eli/etat/leg/loi/2024/10/25/a440/jo" id="rp3" showAs="Loi du 25 octobre 2024 portant modification de la loi modifiée du 10 août 1992 portant création de l’entreprise des postes et télécommunications."/>
+<passiveRef href="/eli/etat/leg/loi/2016/03/15/n1/jo" id="rp4" showAs="Loi du 15 mars 2016 portant modification de la loi modifiée du 10 août 1992 portant création de l'entreprise des postes et télécommunications."/>
+<passiveRef href="/eli/etat/leg/loi/2015/03/25/n1/jo" id="rp5" showAs="Loi du 25 mars 2015 modifiant: 1) la loi modifiée du 16 avril 1979 fixant le statut général des fonctionnaires de l'Etat; 2) la loi modifiée du 9 décembre 2005 déterminant les conditions et modalités de nomination de certains fonctionnaires occupant des fonctions dirigeantes dans les administrations et services de l'Etat; 3) la loi du 16 avril 1979 portant réglementation de la grève dans les services de l'Etat et des établissements publics placés sous le contrôle direct de l'Etat; 4) la loi modifiée du 15 juin 1999 portant organisation de l'Institut national d'administration publique; 5) la loi modifiée du 30 juin 1947 portant organisation du Corps diplomatique; 6) la loi modifiée du 23 juillet 1952 concernant l'organisation militaire et 7) la loi modifiée du 10 août 1992 portant création de l'entreprise des postes et télécommunications."/>
+<passiveRef href="/eli/etat/leg/loi/2011/07/10/n1/jo" id="rp6" showAs="Loi du 10 juillet 2011 modifiant la loi modifiée du 10 août 1992 portant création de l'entreprise des postes et télécommunications."/>
+<passiveRef href="/eli/etat/leg/loi/2009/12/18/n2/jo" id="rp7" showAs="Loi du 18 décembre 2009 modifiant la loi modifiée du 10 août 1992 portant création de l'entreprise des postes et télécommunications."/>
+<passiveRef href="/eli/etat/leg/loi/2005/04/25/n4/jo" id="rp8" showAs="Loi du 25 avril 2005 modifiant certaines dispositions de la loi modifiée du 10 août 1992 portant création de l'entreprise des postes et télécommunications."/>
+<passiveRef href="/eli/etat/leg/loi/2000/12/15/n1/jo" id="rp9" showAs="Loi du 15 décembre 2000 sur les services postaux et les services financiers postaux."/>
+<passiveRef href="/eli/etat/leg/loi/1997/03/21/n1/jo" id="rp10" showAs="Loi du 21 mars 1997 sur les télécommunications."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2025-11-25|2025-11-20|L|511">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/20/a511/jo">Loi du 20 novembre 2025 portant modification : 1° de la loi modifiée du 24 mars 1989 sur la Banque et Caisse d’Épargne de l’État, Luxembourg ; 2° de la loi modifiée du 10 août 1992 portant création de l’entreprise des postes et télécommunications.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 29/11/2025 : Loi du 10 août 1992 portant création de l’entreprise des postes et télécommunications.</p>
+</longTitle>
+</preface>
+<body>
+<title id="titre_ier">
+<num>
+<mod class="mod-start" for="#pm1"/>TITRE I<sup>er</sup>
+</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="n"> <b>DISPOSITIONS GÉNÉRALES</b> </heading>
+<article id="art_1er">
+<num>Art. 1<sup>er</sup>.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est créé un établissement public dénommé «Entreprise des postes et télécommunications». Cet établissement jouit de l’autonomie financière et administrative et est doté de la personnalité juridique. Dans les dispositions qui suivent, il est désigné par les termes «l’entreprise». Dans toutes ses activités, l’entreprise est autorisée à utiliser le titre de «POST Luxembourg».</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’entreprise est placée sous la tutelle du ministre ayant l’Économie dans ses attributions, dénommé ci-après «le ministre».</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2">
+<num>Art. 2.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’entreprise a son siège à Luxembourg.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Pour la réalisation de son objet, l’entreprise peut créer des filiales et établir des succursales, au Luxembourg ou à l’étranger.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3">
+<num>Art. 3.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’entreprise a pour objet la prestation, seule ou en participation:</p>
+<ol scl:symbol="a)">
+<li> <p>de services postaux, en ce compris la levée, le tri, l’acheminement et la distribution des envois de colis, de quelque nature qu’ils soient, et les services logistiques y associés;</p> </li>
+<li> <p>de services de télécommunication et, plus généralement, de services de communications électroniques, ainsi que de services en matière de technologies de l’information et de la communication; et</p> </li>
+<li> <p>de services financiers postaux.</p> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’entreprise peut en outre accomplir toutes prestations et opérations commerciales, financières, industrielles, immobilières et mobilières se rattachant directement ou indirectement à son objet ou qui sont de nature à promouvoir son développement, au Luxembourg ou à l’étranger.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les opérations de l’entreprise sont réputées être des actes de commerce.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les actions judiciaires à soutenir par l’entreprise, soit en demande, soit en défense, sont valablement poursuivies et les exploits pour ou contre elles sont valablement faits au nom de l’entreprise seule.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Tous assignations, citations, significations, notifications, oppositions, sommations et commandements concernant l’entreprise ainsi que tous autres actes de procédure ne sont valablement faits qu’au siège de l’entreprise.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>L’entreprise est liée à l’égard des tiers par les actes accomplis par le directeur général et ceux ayant pouvoir d’agir en son nom et pour son compte, même si ces actes excèdent son objet social, à moins qu’elle ne prouve que le tiers savait que l’acte dépassait l’objet ou qu’il ne pouvait l’ignorer, compte tenu des circonstances.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(7)</num>
+<alinea>
+<content>
+<p>Le directeur général ainsi que ceux ayant pouvoir d’agir au nom et pour le compte de l’entreprise ne contractent cependant aucune obligation personnelle financière relativement aux engagements de l’entreprise sauf les cas prévus par la loi.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>L’entreprise peut être chargée de l’accomplissement de toutes autres missions par des lois ou des règlements ou qui lui sont confiées par décision du Gouvernement en conseil conformément aux dispositions européennes et nationales applicables. Ces dernières missions font l’objet de conventions à conclure entre l’État et l’entreprise qui pourront prévoir une indemnisation des services rendus.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_ii">
+<num>TITRE II</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="n"> <b>ORGANES DE L’ENTREPRISE</b> </heading>
+<article id="art_5">
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Les organes de l’entreprise sont le conseil d’administration et le directeur général. Dans les dispositions qui suivent, le conseil d’administration est désigné par les termes «le conseil».</p>
+</content>
+</alinea>
+</article>
+<chapter id="titre_ii.chapitre_1er">
+<num>Chapitre 1<sup>er</sup>.</num>
+<heading scl:align="center" scl:separator="- " scl:style-format="b">Conseil</heading>
+<article id="art_6">
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Le conseil définit la politique générale de l’entreprise et il contrôle la gestion du directeur général.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<num>Art. 7.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le conseil exerce les attributions suivantes:</p>
+<ol scl:symbol="a.">
+<li> <p>il définit la stratégie de l’entreprise, sur proposition du directeur général, en ce compris la gestion de ses participations;</p> </li>
+<li> <p>il approuve les comptes annuels statutaires et les comptes annuels consolidés de l’entreprise;</p> </li>
+<li> <p>il approuve le recours à l’emprunt pour le financement des investissements;</p> </li>
+<li> <p>il approuve la constitution de sociétés filiales, l’établissement de succursales et la prise de participations dans des sociétés publiques ou privées;</p> </li>
+<li> <p>il approuve la cession de participations;</p> </li>
+<li> <p>il approuve le budget annuel d’investissement;</p> </li>
+<li> <p>il approuve le budget annuel de fonctionnement;</p> </li>
+<li> <p>il approuve l’organigramme général de l’entreprise;</p> </li>
+<li> <p>il approuve les acquisitions, aliénations et échanges d’immeubles dans la mesure où ces transactions sont inférieures ou égales à dix millions d’euros;</p> </li>
+<li> <p>il approuve les conventions à conclure entre l’Etat et l’entreprise et visées à l’article 4;</p> </li>
+<li> <p>il approuve la ou les conventions collectives entre l’entreprise et les membres de son personnel, en ce compris la convention collective visée à l’article 24 paragraphe de la présente loi;</p> </li>
+<li> <p>il approuve l’état des effectifs du personnel;</p> </li>
+<li> <p>il engage et licencie le directeur général relevant du régime de droit privé;</p> </li>
+<li> <p>il définit la politique générale de l’entreprise en matière de services offerts et la politique tarifaire générale en relation avec tous les services;</p> </li>
+<li> <p>il fixe la rémunération du directeur général et des autres directeurs relevant du régime de droit privé, en tenant compte des indemnités, primes, jetons, suppléments de rémunération et autres avantages dont ils peuvent bénéficier, sur base d’une proposition afférente du comité de nomination et de rémunération; et</p> </li>
+<li> <p>il désigne les agents chargés du contrôle interne, définit leurs mandats et reçoit leurs rapports.</p> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>La décision visée à l’article 7 paragraphe 1<sup>er</sup> point e) requiert l’approbation des trois quarts des membres du conseil lorsque la cession de participation envisagée concerne une filiale dont les activités sont en relation directe avec l’objet de l’entreprise tel que défini à l’article 3 paragraphe 1<sup>er</sup>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le conseil est en droit d’obtenir du directeur général tout document et tout renseignement, de procéder à toute vérification nécessaire à l’exercice de ses attributions et de demander des propositions sur les matières dont il a à délibérer.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<num>Art. 8.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le conseil se compose de seize membres.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Huit membres du conseil représentant l’État sont nommés par le Gouvernement en conseil sur proposition du ministre. Au moins trois de ces membres représentent le ministère ayant l’Économie dans ses attributions.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Deux membres indépendants issus de la société civile sont nommés par le Gouvernement en conseil, sur proposition du ministre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Six représentants du personnel sont élus par et parmi le personnel de l’entreprise. Ces sièges sont répartis proportionnellement entre les membres du personnel de l’entreprise employés sous un statut de droit public et ceux employés sous un statut de droit privé selon une clé de répartition à arrêter par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les modalités de l’élection, y compris les conditions de l’électorat actif et passif et les modalités de l’exercice des fonctions des représentants du personnel sont également fixées par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le directeur général ou son remplaçant désigné par lui participe de plein droit avec voix consultative aux réunions du conseil.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le conseil établit son règlement d’ordre intérieur.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(7)</num>
+<alinea>
+<content>
+<p>Le conseil institue en son sein des comités spécialisés, et notamment un comité de nomination et de rémunération, un comité d’audit et un comité des risques. Chaque comité spécialisé établit son propre règlement d’ordre intérieur sur avis conforme du conseil.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(8)</num>
+<alinea>
+<content>
+<p>Le conseil établit la charte de bonne gouvernance de l’entreprise.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_9">
+<num>Art. 9.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sur proposition du ministre, le Gouvernement en conseil désigne parmi les membres représentant l’Etat un président et un vice-président du conseil qui ont pour mission de présider les réunions du conseil.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les délibérations du conseil sont prises à la majorité simple. En cas d’égalité des voix, celle du président ou de son remplaçant est prépondérante.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<num>Art. 10.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le mandat de membre du conseil est incompatible:</p>
+<ul scl:symbol="dash">
+<li> <p>avec la qualité de membre du Gouvernement;</p> </li>
+<li> <p>avec tout mandat d’administrateur ou toute fonction rémunérée auprès d’institutions ou d’entreprises privées qui compromettrait l’indépendance de l’entreprise ou pourrait porter atteinte ou être contraire aux intérêts de cette dernière;</p> </li>
+<li> <p>avec la qualité de membre du personnel, sauf les représentants du personnel.</p> </li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Des parents ou alliés jusqu’au troisième degré inclusivement ne peuvent être simultanément membres du conseil.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_11">
+<num>Art. 11.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>La durée du mandat des membres du conseil est de cinq ans. Leur mandat est renouvelable.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>En cas de vacance d’un siège de membre par suite de décès, de démission, de révocation, d’incapacité durable ou d’incompatibilité, il est pourvu dans le délai d’un mois à la nomination d’un nouveau membre qui achève le mandat de celui qu’il remplace. Pour les représentants du personnel le membre suivant, sur la même liste, achève le mandat de celui qu’il remplace.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>L’incapacité durable est reconnue, si un membre n’a pu assister pendant la durée d’un an aux réunions du conseil.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Tout mandat de membre du conseil cesse de plein droit lorsque ce membre aura atteint l’âge de 72 ans accomplis.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le membre représentant le personnel perd de plein droit son mandat à partir du moment où il n’occupe plus soit définitivement soit temporairement un emploi auprès de l’entreprise ou s’il est appelé à exercer la fonction de membre du comité exécutif.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Un membre du personnel reste éligible s’il bénéficie, tout en restant salarié de l’entreprise, d’un congé syndical le déchargeant partiellement ou totalement de ses fonctions au sein de l’entreprise même.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_12">
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>Au cas où des dissensions graves entravent la bonne marche de l’entreprise, le Gouvernement en conseil, sur proposition du ministre, peut dissoudre le conseil. Cette mesure entraîne le renouvellement de tous les administrateurs endéans un délai de deux mois suivant la dissolution. Elle ne peut être prise de nouveau avant l’expiration d’un délai d’un an à compter du renouvellement intégral.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<num>Art. 13.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les réunions du conseil sont convoquées et présidées, les ordres du jour sont fixés et les délibérations sont dirigées par le président ou, en cas d’empêchement de celui-ci, par le vice-président ou, à défaut, par un représentant désigné par le président.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le conseil se réunit aussi souvent que l’intérêt de l’entreprise l’exige, mais au moins une fois tous les trois mois. Les réunions du conseil doivent être convoquées de façon qu’elles soient tenues dans la huitaine, lorsque le directeur général ou quatre membres au moins le requièrent par une demande écrite indiquant l’ordre du jour proposé et les motifs de la convocation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Tout membre a le droit de faire figurer des propositions à l’ordre du jour. Il doit adresser ses propositions par écrit au président du conseil. Le conseil ne délibère que sur les points portés à l’ordre du jour à moins que l’urgence d’une proposition faite au début de la séance ne soit reconnue par les deux tiers au moins des membres présents.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les délibérations du conseil sont valables si la majorité des membres est présente. Le mandat ne peut être donné qu’à un autre membre du conseil. Un membre du conseil ne peut représenter qu’un seul autre membre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le conseil choisit librement son secrétaire parmi le personnel de l’entreprise. La rémunération du secrétaire du conseil est à charge de l’entreprise.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les indemnités et jetons de présence des membres du conseil et des membres des comités spécialisés visés à l’article 8, paragraphe 7 sont fixés par le Gouvernement en conseil, sur base d’une proposition du comité de nomination et de rémunération transmise par le conseil d’administration au Gouvernement en conseil et sont à charge de l’entreprise. Les frais de voyage et autres frais engagés par le conseil dans l’intérêt de l’entreprise sont également à la charge de celle-ci.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14">
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>Sauf dans les cas où la loi les autorise ou les oblige à relever certains faits, et en dehors des communications que le conseil décide de rendre officielles conformément au règlement intérieur, les membres du conseil, le secrétaire et toute autre personne appelée à assister aux réunions sont tenus de garder le secret des délibérations et des votes du conseil ainsi que de tous documents et renseignements y relatifs.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="titre_ii.chapitre_2">
+<num>Chapitre 2.</num>
+<heading scl:align="center" scl:separator="- " scl:style-format="b">Directeur général</heading>
+<article id="art_15">
+<num>Art. 15.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’entreprise est gérée et dirigée par un directeur général.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le directeur général a le pouvoir de prendre toutes les décisions nécessaires ou utiles à la réalisation de l’objet de l’entreprise, sous réserve des approbations requises en vertu de la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_16">
+<num>Art. 16.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le directeur général est assisté, dans l’exercice de son mandat, par deux directeurs généraux adjoints et plusieurs directeurs, auxquels il délègue la responsabilité d’exercer, soit seuls, soit conjointement, certaines de ses attributions. Ces délégations ne sont susceptibles de subdélégation que si cette faculté est prévue expressément dans l’acte de délégation qui en fixe les conditions et les limites.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le directeur général, les directeurs généraux adjoints et les directeurs ont le statut de droit privé ou le statut de droit public. Les directeurs généraux adjoints et les directeurs qui relèvent du régime privé sont engagés par le directeur général moyennant contrat de travail, sur avis du conseil. Le directeur général, les directeurs généraux adjoints et les directeurs qui ont la qualité de fonctionnaire de l’État sont nommés par arrêté grand-ducal, sur avis du conseil.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Sous réserve d’approbation du Gouvernement en conseil, des indemnités spéciales peuvent être allouées par le conseil aux directeur général, directeurs généraux adjoints et directeurs.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le directeur général, les directeurs généraux adjoints et au moins deux directeurs forment un comité exécutif en vue de la coordination des activités de l’entreprise et de ses filiales.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le comité exécutif établit son règlement d’ordre intérieur sur avis conforme du conseil.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_17">
+<num>Art. 17.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le directeur général soumet à la délibération du conseil toutes propositions relevant de la compétence de cet organe.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le directeur général informe le conseil à intervalles réguliers et une fois au moins tous les trois mois de la marche générale de l’entreprise. Il lui présente un rapport d’ensemble sur les activités actuelles et futures de l’entreprise.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le directeur général transmet au conseil les avis émis par les représentations agréées respectivement légales du personnel dans le cadre des consultations du personnel imposées par la législation.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_18">
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>En cas de démission, licenciement ou révocation du directeur général, ses pouvoirs sont transférés, endéans trois mois et avec faculté de délégation, à un directeur général adjoint désigné par le conseil jusqu’à ce qu’un nouveau directeur général soit engagé ou nommé conformément à la présente loi.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</title>
+<title id="titre_iii">
+<num>TITRE III</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="n"> <b>ORGANISATION DE L’ENTREPRISE</b> </heading>
+<article id="art_19">
+<num>Art. 19.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Afin d’assurer la prestation optimale des activités prévues sous l’article 3 (1), l’organisation de l’entreprise comprend:</p>
+<ol scl:symbol="a)">
+<li> <p>une direction générale;</p> </li>
+<li> <p>une division des postes;</p> </li>
+<li> <p>une division des télécommunications;</p> </li>
+<li> <p>une division des services financiers postaux; et</p> </li>
+<li> <p>un service dédié à l’émission de timbres postaux.</p> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le conseil peut créer de nouveaux services et divisions et en fixer les attributions dans le cadre de l’organigramme fixé par lui et sans préjudice des attributions du directeur général.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</title>
+<title id="titre_iv">
+<num>TITRE IV</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="n"> <b>SURVEILLANCE DE L’ENTREPRISE</b> </heading>
+<article id="art_22">
+<num>Art. 22.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le ministre exerce la haute surveillance sur les activités d’intérêt général de l’entreprise notamment:</p>
+<ol scl:symbol="a)">
+<li> <p>en se faisant communiquer directement toutes les décisions du conseil;</p> </li>
+<li> <p>en se faisant communiquer tous les documents et informations qu’il estime nécessaire;</p> </li>
+<li> <p>en statuant sur celles qui sont sujettes à son approbation.</p> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Des copies des procès-verbaux des réunions du conseil sont transmises au ministre dès leur approbation par le conseil.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le réviseur ou les réviseurs d’entreprises sont nommés pour un terme ne dépassant pas trois ans par le Gouvernement en conseil et sur proposition du conseil. Leur mandat est renouvelable.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le ou les réviseurs ont pour mission de vérifier et de certifier le caractère exact et complet des comptes de l’entreprise. Ils dressent à l’intention du Gouvernement et du conseil un rapport détaillé sur les comptes de l’entreprise à la clôture de l’exercice. Ils peuvent être chargés par le conseil de procéder à des vérifications spécifiques. Leur rémunération est à charge de l’entreprise.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_23">
+<num>Art. 23.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sont soumises à l’approbation du Gouvernement en conseil les décisions du conseil relatives aux matières énumérées à l’article 7, paragraphe 1<sup>er</sup>, points b, c et f.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sont soumises à l’approbation du ministre les décisions du conseil relatives à l’article 7, paragraphe 1<sup>er</sup>, point i si le seuil y prévu est dépassé ainsi que le point m, et à l’article 8, paragraphe 6.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Hormis les décisions faisant l’objet des lois et règlements grand-ducaux le Gouvernement en conseil et le ministre exercent leur droit d’approbation dans les 30 jours qui suivent la réception de la décision du conseil. Passé ce délai, ils sont présumés être d’accord et la décision peut être exécutée.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>En cas de refus d’approbation, à notifier par écrit à l’entreprise avant l’expiration du prédit délai, le conseil délibère à nouveau sur le même objet. Si le différend persiste, le Gouvernement en conseil tranchera définitivement et sans recours.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</title>
+<title id="titre_v">
+<num>TITRE V</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="n"> <b>PERSONNEL</b> </heading>
+<article id="art_24">
+<num>Art. 24.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le régime des agents de l’entreprise est soit un régime de droit public, soit un régime de droit privé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dispositions actuelles et futures du statut général, des régimes des traitements, indemnités et pensions, de la législation sur les fonctionnaires et employés de l’État s’appliquent en principal et accessoires, modalités, délais et recours aux agents respectifs de l’entreprise, sauf les dérogations y apportées par la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les attributions dévolues au Grand-Duc, au Gouvernement en conseil, au Gouvernement, aux ministres ou à l’autorité investie du pouvoir de nomination par les lois applicables aux fonctionnaires et employés de l’État sont exercées, pour les agents soumis au statut général de la fonction publique, par le comité exécutif.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette dévolution s’applique également à la procédure du changement d’administration telle qu’instituée par la <ref href="/eli/etat/leg/loi/2015/03/25/n7/jo" id="d71565c8-b2ee-43ce-8f5f-d658b37f5fcb" scl:verify="true">loi modifiée du 25 mars 2015</ref> fixant les conditions et les modalités selon lesquelles les fonctionnaires de l’État peuvent se faire changer d’administration, si un fonctionnaire de l’entreprise désire le faire, auquel cas le comité exécutif doit donner son accord au changement demandé avant la décision du ministre ayant la Fonction publique dans ses attributions visée par l’article 11 de la <ref href="/eli/etat/leg/loi/2015/03/25/n7/jo" id="21e8ed79-ab4f-40bd-8353-b944b6fb729b">loi susmentionnée</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Par dérogation aux dispositions de la législation et de la réglementation afférente, les conditions et modalités en matière de recrutement, de stage et de formation professionnelle pour les agents soumis au statut général de la fonction publique sont fixées par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>L’entreprise peut engager du personnel sous le régime des salariés tel qu’il est prévu par le <ref href="/eli/etat/leg/code/travail" id="9b8d18a2-eced-4e05-81b5-4c3be5e1aab4">Code du travail</ref>. Une convention collective pourra être conclue, dans les formes prévues au titre VI du livre I<sup>er</sup> du <ref href="/eli/etat/leg/code/travail" id="50308e1a-cc51-4ebb-9797-515665ddb152">Code du travail</ref>, entre l’entreprise et les membres du personnel concerné.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 6, paragraphe 2 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="ae512e1a-ebc3-4e93-8729-3a26b510d362" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’État, les agents de droit public de l’entreprise peuvent être affectés à une fonction au sein d’une filiale de l’entreprise. En cas d’affectation au sein d’une filiale, ils sont placés sous l’autorité opérationnelle de cette filiale en ce qui concerne l’exécution des tâches journalières. Les agents de droit public affectés conservent leur statut d’origine ainsi que tous leurs droits et devoirs afférents.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_24bis">
+<num>Art. 24bis.</num>
+<alinea>
+<content>
+<p>Les fonctionnaires de l’État du groupe de traitement D2, sous-groupe à attributions particulières, exerçant les fonctions de facteur auprès de l’entreprise bénéficient d’une prime de grand risque non pensionnable de 22 points indiciaires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les employés de l’État du groupe d’indemnité D1 exerçant le métier de facteur auprès de l’entreprise bénéficient d’une prime pour sujétions particulières non pensionnable de 24 points indiciaires. Pour ces employés, l’article 22, paragraphe 7, de la <ref href="/eli/etat/leg/loi/2015/03/25/n7/jo" id="824abf25-0050-40da-8fdc-e989a5578359" scl:verify="true">loi modifiée du 25 mars 2015</ref> fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État, ne s’applique pas.</p>
+</content>
+</alinea>
+</article>
+<article id="art_25">
+<num>Art. 25.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le directeur général peut, sur avis conforme du comité de nomination et de rémunération, allouer des suppléments de rémunération non pensionnables aux agents de l’entreprise auxquels sont confiées des fonctions comportant des responsabilités exceptionnelles ou exigeant des qualifications spéciales.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le directeur général peut, sous réserve d’approbation du conseil et du Gouvernement en Conseil, accorder chaque année aux agents de l’entreprise des indemnités pour travaux extraordinaires inhérents à des sujétions spéciales.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_26">
+<num>Art. 26.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les traitements des fonctionnaires, les indemnités des employés et les salaires des salariés sont ordonnancés et liquidés par les soins de l’entreprise suivant respectivement les dispositions légales ou réglementaires régissant le régime des traitements des fonctionnaires de l’Etat et celles du <ref href="/eli/etat/leg/code/travail" id="f19c9cf9-f2da-40c2-83d3-cb0a7b383a68">Code du travail</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les pensions de retraite des fonctionnaires et des employés assimilés aux fonctionnaires sont ordonnancées et liquidées par les soins de l’Etat suivant la législation en vigueur pour les administrations de l’Etat. Un règlement grand-ducal déterminera les modalités de calcul du montant compensatoire à verser à l’Etat par l’entreprise au titre des pensions. A cet effet il est ajouté un article au budget de l’Etat, libellé «Participation de l’entreprise des postes et télécommunications aux pensions de son personnel».</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_27">
+<num>Art. 27.</num>
+<alinea>
+<content>
+<p>Le directeur général définit les postes à responsabilités particulières des différents sous-groupes de traitement. Il désigne de même les agents pouvant occuper ces postes et qui peuvent bénéficier d’une majoration d’échelon conformément aux dispositions législatives applicables aux fonctionnaires de l’Etat.</p>
+</content>
+</alinea>
+</article>
+<article id="art_28">
+<num>Art. 28.</num>
+<alinea>
+<content>
+<p>Les salariés de l’entreprise, qui ont eu la qualité d’ouvrier de l’Etat, conservent leurs droits en matière de suppléments de pension instaurés par l’arrêté du Gouvernement en conseil du 3 mars 1989 aussi longtemps que cette mesure est maintenue en vigueur par le gouvernement.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_vi">
+<num>TITRE VI</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="n"> <b>DISCIPLINE</b> </heading>
+<article id="art_30">
+<num>Art. 30.</num>
+<alinea>
+<content>
+<p>Le directeur général est investi du pouvoir disciplinaire sur les agents de l’entreprise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En ce qui concerne leur régime disciplinaire, les dispositions des articles 31 à 42 ci-après sont applicables aux seuls agents relevant du statut général des fonctionnaires de l’Etat.</p>
+</content>
+</alinea>
+</article>
+<article id="art_31">
+<num>Art. 31.</num>
+<alinea>
+<content>
+<p>Aucune sanction disciplinaire ne peut être appliquée sans instruction disciplinaire préalable conformément aux dispositions qui suivent. La suspension de l’agent ne pourra être prononcée qu’après qu’il aura été entendu en ses explications. Toutes les sanctions, ainsi que la suspension, seront prononcées par le directeur général.</p>
+</content>
+</alinea>
+</article>
+<article id="art_32">
+<num>Art. 32.</num>
+<alinea>
+<content>
+<p>L’instruction disciplinaire appartient à un service d’inspection centrale et à la commission disciplinaire de l’entreprise. Elle ne se fait jamais par l’agent qui a déclenché l’affaire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur général charge l’inspection centrale de procéder à une instruction lorsque des faits, faisant présumer que l‘agent a manqué à ses devoirs au sens du statut général des fonctionnaires de l’État, viennent à sa connaissance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’inspection centrale informe l’agent présumé fautif des faits qui lui sont reprochés avec indication qu’une instruction disciplinaire est ordonnée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_33">
+<num>Art. 33.</num>
+<alinea>
+<content>
+<p>Si l’agent est suspecté d’avoir commis une faute susceptible d’entraîner une sanction disciplinaire grave, l’inspection centrale en informe le directeur général qui peut le suspendre conformément au paragraphe 1<sup>er</sup> de l’article 48 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="98e137ab-86b6-4666-aeea-e7e443897536" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat.</p>
+</content>
+</alinea>
+</article>
+<article id="art_34">
+<num>Art. 34.</num>
+<alinea>
+<content>
+<p>L’agent a le droit de prendre inspection du dossier, de présenter ses observations et de demander un complément d’instruction conformément à l’article 56, paragraphe 4, de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="dec0e114-69cf-4400-ae14-bbb5f8c1c324" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’inspection centrale décide s’il y a lieu de donner suite à cette demande.</p>
+</content>
+</alinea>
+</article>
+<article id="art_35">
+<num>Art. 35.</num>
+<alinea>
+<content>
+<p>Lorsque l’instruction disciplinaire est terminée, l’inspection centrale prend une des décisions suivantes:</p>
+<ol scl:symbol="a)">
+<li> <p>si elle estime que l’application d’une sanction n’est pas indiquée, ou qu’il résulte de l’instruction que l’agent n’a pas manqué à ses devoirs, elle classe l’affaire et en informe le directeur général;</p> </li>
+<li> <p>elle transmet le dossier au directeur général aux fins de décision lorsqu’elle est d’avis que les faits établis par l’instruction constituent un manquement à sanctionner de l’avertissement, de la réprimande ou de l’amende ne dépassant pas les deux dixièmes d’une mensualité brute du traitement de base;</p> </li>
+<li> <p>elle transmet le dossier à la commission disciplinaire lorsqu’elle estime que les faits établis par l’instruction constituent un manquement à réprimer par une sanction plus sévère que celle mentionnée sous b).</p> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_36">
+<num>Art. 36.</num>
+<alinea>
+<content>
+<p>La décision de l’inspection centrale de classer l’affaire ou d’en saisir le directeur général ou la commission disciplinaire est communiquée à l’agent conformément à l’article 58, paragraphe 1<sup>er</sup>, de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="73f7ece0-d3a5-4443-957c-7efe59d3c5b6" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat.</p>
+</content>
+</alinea>
+</article>
+<article id="art_37">
+<num>Art. 37.</num>
+<alinea>
+<content>
+<p>Sauf l’avertissement, la réprimande et l’amende ne dépassant pas les deux dixièmes d’une mensualité brute du traitement de base, aucune sanction disciplinaire ne peut être appliquée sans avis préalable de la commission disciplinaire.</p>
+</content>
+</alinea>
+</article>
+<article id="art_38">
+<num>Art. 38.</num>
+<alinea>
+<content>
+<p>Le directeur général prononce une des sanctions disciplinaires prévues par l’article 47 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="176fe06d-929a-4689-8b2c-bc0802e227d8" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat. Lorsqu’il prend une décision en vertu du point c) de l’article 35 ci-avant, il prend sa décision au vu de l’avis de la commission disciplinaire. Il peut également, s’il y a lieu, classer l’affaire et en informer l’agent concerné par écrit.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par dérogation à l’article 47, paragraphe (4), de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="7a9cb83c-95b2-413c-b2da-995cd6f1e678" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat, la sanction du déplacement vis-à-vis d’un agent de l’entreprise ne pourra pas consister en un changement d’administration de l’entreprise vers une administration étatique.</p>
+</content>
+</alinea>
+</article>
+<article id="art_39">
+<num>Art. 39.</num>
+<alinea>
+<content>
+<p>La décision qui inflige une sanction disciplinaire est motivée et arrêtée par écrit. Elle est communiquée à l’agent concerné, ensemble avec l’avis de la commission disciplinaire s’il y a lieu, suivant l’article 58, paragraphe 1<sup>er</sup>, de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="a9ec0e87-eb73-454d-8b24-c3a9bdb89ec6" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat.</p>
+</content>
+</alinea>
+</article>
+<article id="art_40">
+<num>Art. 40.</num>
+<alinea>
+<content>
+<p>L’agent frappé d’une sanction disciplinaire ou suspendu, peut, dans les trois mois de la notification de la décision, faire recours au tribunal administratif qui statue comme juge du fond.</p>
+</content>
+</alinea>
+</article>
+<article id="art_41">
+<num>Art. 41.</num>
+<alinea>
+<content>
+<p>La commission disciplinaire de l’entreprise est composée de deux juristes dont un interne et un externe, d’un membre du service du personnel, d’un membre des services d’exploitation de l’entreprise, d’un représentant à proposer par la Chambre des fonctionnaires et employés publics et d’un membre externe choisi en raison de ses compétences professionnelles, ainsi que d’un nombre double de suppléants choisis selon les mêmes critères. Les membres de la commission disciplinaire sont nommés par le directeur général pour un terme de 3 ans. Leur mandat peut être renouvelé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La commission disciplinaire arrête son règlement de procédure qui est soumis à l’approbation du directeur général.</p>
+</content>
+</alinea>
+</article>
+<article id="art_42">
+<num>Art. 42.</num>
+<alinea>
+<content>
+<p>Pour tout ce qui n’est pas prévu dans le présent chapitre concernant la discipline, les dispositions de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="69e04500-e291-4a31-9fab-c821124dec1d" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat sont applicables.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_vii">
+<num>TITRE VII</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="n"> <b>DISPOSITIONS FINANCIÈRES</b> </heading>
+<article id="art_43">
+<num>Art. 43.</num>
+<alinea>
+<content>
+<p>Les moyens propres de l’entreprise sont constitués par le capital et les réserves. Le capital appartient à l’Etat.</p>
+</content>
+</alinea>
+</article>
+<article id="art_44">
+<num>Art. 44.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les ressources de l’entreprise sont constituées notamment par:</p>
+<ul scl:symbol="dash">
+<li> <p>les recettes d’exploitation et toute autre recette en rapport avec les activités de l’entreprise;</p> </li>
+<li> <p>les recettes pour services fournis à l’Etat, notamment dans le cadre des missions ayant fait l’objet d’une convention préalable entre l’Etat et l’entreprise;</p> </li>
+<li> <p>les produits des emprunts;</p> </li>
+<li> <p>les donations et legs;</p> </li>
+<li> <p>les produits provenant de participations dans d’autres entreprises;</p> </li>
+<li> <p>les revenus provenant de la gestion de son patrimoine.</p> </li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sans préjudice de ses obligations de service universel, l’entreprise veille à la rentabilité générale de ses services et de sa gestion.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_45">
+<num>Art. 45.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les comptes de l’entreprise sont tenus selon les principes et les modalités de la comptabilité commerciale.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’exercice coïncide avec l’année civile.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Avant la fin du premier trimestre de chaque année, le directeur général soumet les comptes annuels statutaires et les comptes annuels consolidés de l’entreprise, arrêtés au 31 décembre de l’année précédente, à l’approbation du conseil en y joignant le rapport du ou des réviseurs d’entreprises. Après l’approbation des comptes annuels statutaires et des comptes annuels consolidés, le conseil émet une proposition d’affectation du bénéfice disponible.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Pour le 30 avril au plus tard, le conseil soumet les comptes annuels statutaires et les comptes annuels consolidés de l’entreprise, ainsi que sa proposition d’affectation du bénéfice, à l’approbation du Gouvernement en conseil qui les transmet à la Chambre des députés et les fait publier au Mémorial.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’approbation des comptes annuels statutaires et des comptes annuels consolidés par le Gouvernement en conseil donne décharge aux organes de l’entreprise de leur administration et gestion pendant l’exercice écoulé. Si le Gouvernement en conseil n’a pas pris de décision dans le délai de deux mois suivant la réception des comptes, l’approbation des comptes et la décharge sont acquises de plein droit et le solde est reporté à nouveau.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Pour le premier novembre au plus tard de chaque année, le directeur général élabore le budget prévisionnel de l’exercice suivant à arrêter par le conseil pour le premier décembre au plus tard.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Au cours du premier semestre de chaque année, le directeur général élabore un rapport sur les activités de l’entreprise pendant l’exercice écoulé qui sera publié après approbation du conseil.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_46">
+<num>Art. 46.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le bénéfice disponible de l’entreprise est formé du bénéfice net de l’exercice, du report à nouveau éventuel du ou des exercices précédents et des surtaxes perçues pendant l’exercice pour le compte de l’État.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le bénéfice disponible est affecté après la clôture de chaque exercice d’après les règles prévues aux paragraphes ci-après.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sur le bénéfice disponible il est prélevé une somme pour la formation du fonds de réserve destiné à contribuer au financement des investissements de l’entreprise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le montant de cette dotation obligatoire, dans la mesure où le permet le résultat de l’exercice, doit être déterminé annuellement de façon à ce que la somme de la dotation à la réserve et les dotations aux amortissements de l’exercice de la clôture ne puisse être inférieure aux deux tiers du budget d’investissement de l’exercice suivant l’exercice de la clôture.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les déficits sont reportés à nouveau et comblés par les bénéfices ultérieurs.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les surtaxes perçues sur les valeurs postales de bienfaisance ou sur d’autres produits sont versées annuellement à l’État pour répartition à qui de droit.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_47">
+<num>Art. 47.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Dans l’intérêt de la réalisation de la mission de l’entreprise, l’Etat fait un apport en nature et en numéraire. Le Gouvernement en conseil arrête les montants correspondant aux apports en nature sur la base du rapport d’un réviseur d’entreprise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces apports contiennent les propriétés domaniales, les bâtiments y construits ou en voie de construction, les équipements, réseaux, ouvrages divers et les véhicules ainsi qu’une dotation initiale telle que définie à l’article 52.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un relevé qui est joint en annexe à la présente loi et qui en fait partie intégrante énumère les propriétés domaniales faisant l’objet de l’apport susvisé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>En contrepartie de ces apports l’Etat devient détenteur du capital de l’entreprise.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</title>
+<title id="titre_viii">
+<num>TITRE VIII</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="n"> <b>DISPOSITIONS FISCALES</b> </heading>
+<article id="art_50">
+<num>Art. 50.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’entreprise des postes et télécommunications est soumise à l’impôt sur le revenu des collectivités, à l’impôt sur la fortune, à l’impôt foncier ainsi qu’à l’impôt commercial communal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Aux fins de l’application du paragraphe qui précède, les modifications qui suivent sont apportées aux dispositions légales en matière d’impôts directs:</p>
+<ol scl:symbol="(a)">
+<li> <p>A l’article 167, alinéa 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="fd1a1177-f805-4b3a-96f5-afb9dd0fd942" scl:verify="true">loi du 4 décembre 1967</ref> concernant l’impôt sur le revenu, il est ajouté un numéro (6) libellé comme suit: <embeddedText>(6) les sommes correspondant à l’incidence financière des missions spéciales imposées à l’entreprise des postes et télécommunications. Ces sommes sont arrêtées chaque année par le Gouvernement en conseil.</embeddedText> </p>
+</li>
+<li> <p>la dernière phrase du paragraphe 3, alinéa 1<sup>er</sup>, numéro 3 de la <ref href="/eli/etat/leg/ord/1935/02/02/n1/jo" id="00d481ab-5bcd-4d6b-8a07-564d81e8eb10" scl:verify="true">loi du 16 octobre 1934</ref> concernant l’impôt sur la fortune est remplacée par la phrase suivante: <embeddedText>Cette disposition ne s’applique pas aux instituts de crédit, ni à l’entreprise des postes et télécommunications.</embeddedText>
+</p> </li>
+<li> <p>au paragraphe 3, numéro 1 de la <ref href="/eli/etat/leg/loi/1936/12/01/n2/jo" id="bcc95bd2-7b73-460b-bb24-6f7adb14b8bf" scl:verify="true">loi du 1<sup>er</sup> décembre 1936</ref> concernant l’impôt commercial communal, les termes <embeddedText>Die Postverwaltung und</embeddedText> sont biffés.</p> </li>
+<li> <p>les numéros 1 a) et 6 du paragraphe 4 de la <ref href="/eli/etat/leg/loi/1936/12/01/n1/jo" id="2e802582-51f5-4d05-a565-6daed9042685" scl:verify="true">loi du 1<sup>er</sup> décembre 1936</ref> concernant l’impôt foncier sont complétés par la phrase suivante: <embeddedText>cette disposition ne s’applique pas à l’entreprise des postes et télécommunications.</embeddedText>
+</p> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+</title>
+<title id="titre_ix">
+<num>TITRE IX</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="n"> <b>DISPOSITIONS ABROGATOIRES</b> </heading>
+<article id="art_51">
+<num>Art. 51.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sont abrogées:</p>
+<ul scl:symbol="dash">
+<li> <p>la <ref href="/eli/etat/leg/loi/1970/03/20/n1/jo" id="123fb3e3-cb03-4b09-a1f2-f3829853d8b1" scl:verify="true">loi du 20 mars 1970</ref> portant réorganisation de l’administration des Postes et Télécommunications telle qu’elle a été modifiée par la <ref href="/eli/etat/leg/loi/1987/09/09/n1/jo" id="cd802515-7ee9-4ac8-8491-51cd6ec5c7f4" scl:verify="true">loi du 9 septembre 1987</ref> ;</p> </li>
+<li> <p>les dispositions des lois portant organisation de l’administration de l’Enregistrement et des Domaines qui concernent les seules fonctions du contrôleur garde-magasin du timbre en matière de gestion des stocks de valeurs postales.</p> </li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les règlements grand-ducaux et ministériels, pris en vertu de la <ref href="/eli/etat/leg/loi/1970/03/20/n1/jo" id="6ec1ef28-edb6-4e43-bc22-990ae7e0f851" scl:verify="true">loi du 20 mars 1970</ref> précitée, ne sont abrogés qu’au fur et à mesure qu’ils auront été remplacés par des règlements basés sur la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_52">
+<num>Art. 52.</num>
+<alinea>
+<content>
+<p>Le fonds spécial pour les investissements des postes et télécommunications institué par l’article 20 modifié de la loi budgétaire du 23 décembre 1973 est dissous. Le solde du fonds spécial est transféré à l’entreprise après avoir été arrêté par une décision du Gouvernement en conseil.</p>
+</content>
+</alinea>
+</article>
+</title>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2019-11-12" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2019-11-12" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2019-11-12" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+<notes scl:border="50" scl:delim-left="" scl:delim-right="" source="#eli-etat-leg-tc-2011-07-18-n1-jo-fr-xml">
+<note id="note_1_0_0">
+<p>et copropriétaire des parcelles 860 (1/4) et 888/3900 (4/10)</p>
+</note>
+<note id="note_1_0_1">
+<p>terrain également occupé par l’administration des Ponts et Chaussées.</p>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center"> <b>ANNEXE A L’ARTICLE 47 DE LA LOI MODIFIEE DU 10 AOÛT 1992 PORTANT<br/>CREATION DE L’ENTREPRISE DES POSTES ET TELECOMMUNICATIONS</b> </p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p> <b>1. Bureaux de poste</b> </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_6" scl:cols="30 25 35" scl:rows-height="11" width="100">
+<tr>
+<td>
+<p>
+L-5712 ASPELT</p>
+</td>
+<td>
+<p>1, rue du Cimetière</p>
+</td>
+<td>
+<p>Frisange section A Aspelt 2746/4305</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4920 BASCHARAGE</p>
+</td>
+<td>
+<p>22, rue de l’Eau</p>
+</td>
+<td>
+<p>Bascharage section C 138/4933</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6310 BEAUFORT</p>
+</td>
+<td>
+<p>37, Grand-rue</p>
+</td>
+<td>
+<p>Beaufort section C 154/2151</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4477 BELVAUX</p>
+</td>
+<td>
+<p>58, rue de la Poste</p>
+</td>
+<td>
+<p>Sanem section C Belvaux 1233/6325</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8606 BETTBORN</p>
+</td>
+<td>
+<p>7, rue de l’Eglise</p>
+</td>
+<td>
+<p>Bettborn section A 444</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7777 BISSEN</p>
+</td>
+<td>
+<p>3, Grand-rue</p>
+</td>
+<td>
+<p>Bissen section A 1003/1985</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9639 BOULAIDE</p>
+</td>
+<td>
+<p>20, rue Jérôme de Busleyden</p>
+</td>
+<td>
+<p>Boulaide section A 200/5023</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9711 CLERVAUX</p>
+</td>
+<td>
+<p>54, Grand-rue</p>
+</td>
+<td>
+<p>Clervaux section A 74/2442 et 492/2806</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7730 COLMAR-BERG</p>
+</td>
+<td>
+<p>1, rue de Mertzig</p>
+</td>
+<td>
+<p>Colmar-Berg section D 65/1158</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4970 DIPPACH-GARE</p>
+</td>
+<td>
+<p>30, rue des Trois Cantons</p>
+</td>
+<td>
+<p>Dippach section B Bettange 994/1045</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9650 ESCH-SUR-SURE</p>
+</td>
+<td>
+<p>11, rue de la Poste</p>
+</td>
+<td>
+<p>Esch-sur-Sûre section A 484/2388</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-5886 HESPERANGE</p>
+</td>
+<td>
+<p>460, rte de Thionville</p>
+</td>
+<td>
+<p>Hesperange section A 175/5092</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7373 LORENTZWEILER</p>
+</td>
+<td>
+<p>76, rte de Luxembourg</p>
+</td>
+<td>
+<p>Lorentzweiler section A 256/1790</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-1220 LUXEMBOURG</p>
+</td>
+<td>
+<p>38, rue de Beggen</p>
+</td>
+<td>
+<p>Luxembourg section E Eich 31/2123</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8254 MAMER</p>
+</td>
+<td>
+<p>14, rue du Millénaire</p>
+</td>
+<td>
+<p>Mamer section B Mamer-Sud 265/5096</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-5353 OETRANGE</p>
+</td>
+<td>
+<p>15, rue de la Gare</p>
+</td>
+<td>
+<p>Contern section A Oetrange 158/2122</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8824 PERLE</p>
+</td>
+<td>
+<p>36, rue de la Poste</p>
+</td>
+<td>
+<p>Rambrouch section B Perlé 264/3220</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8805 RAMBROUCH</p>
+</td>
+<td>
+<p>18, rue Principale</p>
+</td>
+<td>
+<p>Rambrouch section B 917/3101 et 919/3443</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-5555 REMICH</p>
+</td>
+<td>
+<p>15, place du Marché</p>
+</td>
+<td>
+<p>Remich section B 431/6694</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-3394 ROESER</p>
+</td>
+<td>
+<p>52, Grand-rue</p>
+</td>
+<td>
+<p>Roeser section F 575/1646</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9905 TROISVIERGES</p>
+</td>
+<td>
+<p>42, Grand-rue</p>
+</td>
+<td>
+<p>Troisvierges section F 309/3506</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8705 USELDANGE</p>
+</td>
+<td>
+<p>5, rue de la Gare</p>
+</td>
+<td>
+<p>Useldange section B 314/3293</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7220 WALFERDANGE</p>
+</td>
+<td>
+<p>23, rue de Diekirch</p>
+</td>
+<td>
+<p>Walferdange section A Helmsange 1064/2022</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6868 WECKER</p>
+</td>
+<td>
+<p>20, rue de la Gare</p>
+</td>
+<td>
+<p>Biwer section C 733/5078 et 733/5079</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9990 WEISWAMPACH</p>
+</td>
+<td>
+<p>Maison 87</p>
+</td>
+<td>
+<p>Weiswampach section C 378/6599</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p> <b>2. Bureaux de poste abritant en outre des installations de télécommunication</b> </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_2" scl:cols="30 25 35" scl:rows-height="11" width="100">
+<tr>
+<td>
+<p>L-3238 BETTEMBOURG</p>
+</td>
+<td>
+<p>8, rue de l’indépendance</p>
+</td>
+<td>
+<p>Bettembourg section A 1533/8424</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6210 CONSDORF</p>
+</td>
+<td>
+<p>22, rue de Luxembourg</p>
+</td>
+<td>
+<p>Consdorf section A Consdorf-Ouest 616/2391</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4660 DIFFERDANGE</p>
+</td>
+<td>
+<p>coin r. Michel Rodange/poste</p>
+</td>
+<td>
+<p>Differdange section B 99/7252, 99/4067 et 99/4068</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6450 ECHTERNACH</p>
+</td>
+<td>
+<p>2, rue de Luxembourg</p>
+</td>
+<td>
+<p>Echternach section B 864/4417<noteRef href="#note_1_0_0"/> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4040 ESCH/ALZETTE</p>
+</td>
+<td>
+<p>rue Z. Bernard/rue X. Brasseur</p>
+</td>
+<td>
+<p>Esch/Alzette section A Esch-Nord 1308/10881 et 9259</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9806 HOSINGEN</p>
+</td>
+<td>
+<p>7, rue Principale</p>
+</td>
+<td>
+<p>Hosingen section E 296/3770</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6140 JUNGLINSTER</p>
+</td>
+<td>
+<p>6, rue du Village</p>
+</td>
+<td>
+<p>Junglinster section B 2088/6182</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-3650 KAYL</p>
+</td>
+<td>
+<p>25, Grand-rue</p>
+</td>
+<td>
+<p>Kayl section A 129/8355</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7619 LAROCHETTE</p>
+</td>
+<td>
+<p>8, rue de Medernach</p>
+</td>
+<td>
+<p>Larochette section A 19/1680, 19/1681 et 9/2029</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-1616 LUXEMBOURG</p>
+</td>
+<td>
+<p>38, pl. de la Gare/ 5, r. du Commerce</p>
+</td>
+<td>
+<p>Luxembourg section A Hollerich 405/6950 et 405/6211</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-1118 LUXEMBOURG</p>
+</td>
+<td>
+<p>25, rue Aldringen/ 8a, av. Monterey</p>
+</td>
+<td>
+<p>Luxembourg section F Ville-Haute 201/2166</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-5612 MONDORF/BAINS</p>
+</td>
+<td>
+<p>25, av. Fr. Clement</p>
+</td>
+<td>
+<p>Mondorf section B 731/3331</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4510 OBERCORN</p>
+</td>
+<td>
+<p>19, rue de Belvaux</p>
+</td>
+<td>
+<p>Differdange section C Obercorn 159/4866</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4734 PETANGE</p>
+</td>
+<td>
+<p>13, avenue de la Gare</p>
+</td>
+<td>
+<p>Pétange section A 170/5459</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4818 RODANGE</p>
+</td>
+<td>
+<p>18, avenue Dr Gaasch</p>
+</td>
+<td>
+<p>Pétange section C Rodange 568/4467 et 568/4468</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6910 ROODT-SUR-SYRE</p>
+</td>
+<td>
+<p>4, rue de la Gare</p>
+</td>
+<td>
+<p>Betzdorf section D Roodt/Syre 185/1612, R 187/1398</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-3710 RUMELANGE</p>
+</td>
+<td>
+<p>1, place G.-D. Charlotte</p>
+</td>
+<td>
+<p>Rumelange section A 559</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8440 STEINFORT</p>
+</td>
+<td>
+<p>7, rue de Luxembourg</p>
+</td>
+<td>
+<p>Steinfort section A 496/3257</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8008 STRASSEN</p>
+</td>
+<td>
+<p>142, rte dArlon</p>
+</td>
+<td>
+<p>Strassen section B 371/2590</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-3761 TETANGE</p>
+</td>
+<td>
+<p>9, rue Thomas Byrne</p>
+</td>
+<td>
+<p>Kayl section B Tétange 92/4762</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9410 VIANDEN</p>
+</td>
+<td>
+<p>27, Grand-rue</p>
+</td>
+<td>
+<p>Vianden section B 203/1964 et 201/2309</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6630 WASSERBILLIG</p>
+</td>
+<td>
+<p>5, Grand-rue</p>
+</td>
+<td>
+<p>Mertert section B Wasserbillig 713/3429 et 728/3221</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9534 WILTZ</p>
+</td>
+<td>
+<p>1-7, rte de Kautenbach</p>
+</td>
+<td>
+<p>Wiltz section A 565/3173, 563/3035, 549/2392, 549/3171</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-5480 WORMELDANGE</p>
+</td>
+<td>
+<p>86, rue Principale</p>
+</td>
+<td>
+<p>Wormeldange section C 389/7643</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p> <b>3. Centres de télécommunications</b> </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_3" scl:cols="30 25 35" scl:rows-height="11" width="100">
+<tr>
+<td>
+<p>L-5887 ALZINGEN</p>
+</td>
+<td>
+<p>483, rte de Thionville</p>
+</td>
+<td>
+<p>Hesperange section C Alzingen 860/3146</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6310 BEAUFORT</p>
+</td>
+<td>
+<p>42, Grand-rue</p>
+</td>
+<td>
+<p>Beaufort section B Kosselt 735/2886</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4487 BELVAUX</p>
+</td>
+<td>
+<p>168, rue de Soleuvre</p>
+</td>
+<td>
+<p>Sanem section C Belvaux 631/5657</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9946 BINSFELD</p>
+</td>
+<td>
+<p>Maison 40</p>
+</td>
+<td>
+<p>Weiswampach section F Binsfeld 408/3789</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-3429 DUDELANGE</p>
+</td>
+<td>
+<p>250, rte de Burange</p>
+</td>
+<td>
+<p>Dudelange section B Burange 1131/5597</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4351 ESCH-SUR-ALZETTE</p>
+</td>
+<td>
+<p>69, rue Arthur Useldinger</p>
+</td>
+<td>
+<p>Esch/Alzette section A Esch-Nord 2852/15631</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9087 ETTELBRUCK</p>
+</td>
+<td>
+<p>14, place de l’Hôtel de Ville</p>
+</td>
+<td>
+<p>Ettelbruck section C 422/5108</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-5741 FILSDORF</p>
+</td>
+<td>
+<p>2, rue de Luxembourg</p>
+</td>
+<td>
+<p>Dalheim section D Filsdorf 826/3286</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8354 GARNICH</p>
+</td>
+<td>
+<p>45, rte des Trois Cantons</p>
+</td>
+<td>
+<p>Garnich section B 1180/3842</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9155 GROSBOUS</p>
+</td>
+<td>
+<p>19, rue d’Arlon</p>
+</td>
+<td>
+<p>Grosbous section A 432/3974 et 432/4260</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9752 HAMIVILLE</p>
+</td>
+<td>
+<p>Maison 32</p>
+</td>
+<td>
+<p>Wincrange section F Hamiville 39/2125</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9633 HARLANGE</p>
+</td>
+<td>
+<p>2, Poteau de Harlange</p>
+</td>
+<td>
+<p>Boulaide section B Baschleiden 1378/2910<noteRef href="#note_1_0_1"/> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9659 HEIDERSCHEIDERGRUND</p>
+</td>
+<td>
+<p>1, rue Goebelsmühle</p>
+</td>
+<td>
+<p>Goesdorf section F 595/2676</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7330 HEISDORF</p>
+</td>
+<td>
+<p>81, route de Luxembourg</p>
+</td>
+<td>
+<p>Steinsel section C de Heisdorf 380/2039</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6560 HINKEL</p>
+</td>
+<td>
+<p>15, rue Girsterklaus</p>
+</td>
+<td>
+<p>Rosport section C Hinkel 409/1711</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8281 KEHLEN</p>
+</td>
+<td>
+<p>16, rte d’Olm</p>
+</td>
+<td>
+<p>Kehlen section A 505/5479</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-2417 LUXEMBOURG</p>
+</td>
+<td>
+<p>rue de Reims</p>
+</td>
+<td>
+<p>Luxembourg section A Hollerich 405/6950</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-2761 LUXEMBOURG</p>
+</td>
+<td>
+<p>1, rue Yolande</p>
+</td>
+<td>
+<p>Luxembourg section F Merl-Nord 556/2649 et 556/2813</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9378 MARKENBACH</p>
+</td>
+<td>
+<p>Maison 2a</p>
+</td>
+<td>
+<p>Hoscheid section B Markenbach 1158/3618</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7543 MERSCH</p>
+</td>
+<td>
+<p>4, rue de Larochette</p>
+</td>
+<td>
+<p>Mersch section E Rollingen 233/1857</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9837 NEIDHAUSEN</p>
+</td>
+<td>
+<p>Maison 14</p>
+</td>
+<td>
+<p>Hosingen section G Neidhausen 116/782</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-5351 OETRANGE</p>
+</td>
+<td>
+<p>4, montée d’Oetrange</p>
+</td>
+<td>
+<p>Contern section A Oetrange 17/2206</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4980 RECKANGE/MESS</p>
+</td>
+<td>
+<p>118, rte des Trois Cantons</p>
+</td>
+<td>
+<p>Reckange section B 377/3667</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8509 REDANGE/ATTERT</p>
+</td>
+<td>
+<p>11, rue d’Ell</p>
+</td>
+<td>
+<p>Redange section D 1463/4634 et 1463/4633</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-5539 REMICH</p>
+</td>
+<td>
+<p>3, place Nico Klopp</p>
+</td>
+<td>
+<p>Remich section A des Bois 434/1941</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8821 RIESENHOF</p>
+</td>
+<td>
+<p>1, rte de Martelange</p>
+</td>
+<td>
+<p>Rambrouch section A Bigonville 4611/6435</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7759 ROOST</p>
+</td>
+<td>
+<p>22, rue de Luxembourg</p>
+</td>
+<td>
+<p>Bissen section B 429/3211</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8561 SCHWEBACH</p>
+</td>
+<td>
+<p>1a, Pont de Schwebach</p>
+</td>
+<td>
+<p>Saeul section A Schwebach 240/1021</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6960 SENNINGEN</p>
+</td>
+<td>
+<p>3, chaussée St. Martin</p>
+</td>
+<td>
+<p>Niederanven section B Senningen 303/3789</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6868 WECKER</p>
+</td>
+<td>
+<p>4, rue Haerenberg</p>
+</td>
+<td>
+<p>Biwer section C 721/5322</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p> <b>4. Bâtiments divers</b> </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_4" scl:cols="30 25 35" scl:rows-height="11" width="100">
+<tr>
+<td>
+<p>L-9940 ASSELBORN</p>
+</td>
+<td>
+<p>105, rte de Boxhorn</p>
+</td>
+<td>
+<p>Wincrange section B Asselborn partie 149/4418, 151 et 145/3967</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-4416 BELVAUX</p>
+</td>
+<td>
+<p>Pakebierg</p>
+</td>
+<td>
+<p>Sanem section C Belvaux 572/3510</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7391 BLASCHETTE</p>
+</td>
+<td>
+<p>Chemin de Blaschette</p>
+</td>
+<td>
+<p>Lorentzweiler section B Blaschette 284/536</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9099 INGELDORF</p>
+</td>
+<td>
+<p>Zone industrielle</p>
+</td>
+<td>
+<p>Erpeldange section A Ingeldorf 144/293 et 144/294</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9163 KEHMEN</p>
+</td>
+<td>
+<p>Ewent</p>
+</td>
+<td>
+<p>Bourscheid section E Kehmen 136</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-1490 LUXEMBOURG</p>
+</td>
+<td>
+<p>8, 10 et 12, rue d’Epernay</p>
+</td>
+<td>
+<p>Luxembourg section A Hollerich 405/5838, 5839, 5840</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-2417 LUXEMBOURG</p>
+</td>
+<td>
+<p>rue de Reims / rue d’Epernay</p>
+</td>
+<td>
+<p>Luxembourg section A Hollerich 405/1 et 405/3688</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6840 MACHTUM</p>
+</td>
+<td>
+<p>«Fronay»</p>
+</td>
+<td>
+<p>Flaxweiler section E Oberdonven 209/1961</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9837 NEIDHAUSEN</p>
+</td>
+<td>
+<p>auf der Hâhe</p>
+</td>
+<td>
+<p>Hosingen section C Neidhausen 131/111 et 131/112</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-5241 SANDWEILER</p>
+</td>
+<td>
+<p>25, 27, rue Principale</p>
+</td>
+<td>
+<p>Sandweiler section A 384/4031 et 384/4032</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-3850 SCHIFFLANGE</p>
+</td>
+<td>
+<p>10, avenue de la Libération</p>
+</td>
+<td>
+<p>Schifflange section A 3993/7561</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6586 STEINHEIM</p>
+</td>
+<td>
+<p>Bierwee</p>
+</td>
+<td>
+<p>Rosport section A Steinheim 1180/3577</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9905 TROISVIERGES</p>
+</td>
+<td>
+<p>44, Grand-rue</p>
+</td>
+<td>
+<p>Troisvierges section F 306/3373 et 309/3920</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6868 WECKER</p>
+</td>
+<td>
+<p>4, rue Haerebierg</p>
+</td>
+<td>
+<p>Biwer section C 711/5077, 716, 712/3579 et 720/4572</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p> <b>5. Centres administratifs, copropriétés (millièmes à transférer)</b> </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_5" scl:cols="30 25 35" scl:rows-height="11" width="100">
+<tr>
+<td>
+<p>L-8328 CAP</p>
+</td>
+<td>
+<p>55, rue du Kiem</p>
+</td>
+<td>
+<p>Mamer section E Capellen 255/688</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9237 DIEKIRCH</p>
+</td>
+<td>
+<p>Place Guillaume</p>
+</td>
+<td>
+<p>Diekirch section A 242/7637</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-3490 DUDELANGE</p>
+</td>
+<td>
+<p>16, 18, rue Jean Jaurès</p>
+</td>
+<td>
+<p>Dudelange section C 108/7837</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-9080 ETTELBRUCK</p>
+</td>
+<td>
+<p>20, avenue Lucien Salentiny</p>
+</td>
+<td>
+<p>Ettelbruck section C 1002/5189</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6781 GREVENMACHER</p>
+</td>
+<td>
+<p>1, Schiltzenplatz</p>
+</td>
+<td>
+<p>Grevenmacher section A 2417/6285</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-1110 LUXEMBOURG</p>
+</td>
+<td>
+<p>Aéroport - Findel</p>
+</td>
+<td>
+<p>Niederanven section B Senningen 1272/3746</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-1430 LUXEMBOURG</p>
+</td>
+<td>
+<p>1b, bd Pierre Dupong</p>
+</td>
+<td>
+<p>Luxembourg section E Merl-Sud 951/4963</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-1326 LUXEMBOURG</p>
+</td>
+<td>
+<p>4, rue Auguste Charles</p>
+</td>
+<td>
+<p>Luxembourg section B Bonnevoie 716/8544</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-1210 LUXEMBOURG</p>
+</td>
+<td>
+<p>4, rue Barblé</p>
+</td>
+<td>
+<p>Luxembourg section F Merl-Nord 60/5541</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-2124 LUXEMBOURG</p>
+</td>
+<td>
+<p>111, 113, rue des Maraîchers</p>
+</td>
+<td>
+<p>Luxembourg section C Weimerskirch 516/4268</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-2920 LUXEMBOURG</p>
+</td>
+<td>
+<p>Bâtiment Schumann</p>
+</td>
+<td>
+<p>Luxembourg section D Neudorf 515/3969, 874/4287</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-1499 LUXEMBOURG</p>
+</td>
+<td>
+<p>2, rue du Fort Thungen</p>
+</td>
+<td>
+<p>Luxembourg section D Neudorf 515/4156</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-7520 MERSCH</p>
+</td>
+<td>
+<p>27, rue G.-D. Charlotte</p>
+</td>
+<td>
+<p>Mersch section G 732/4791</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-3919 MONDERCANGE</p>
+</td>
+<td>
+<p>1, rue Arthur Thinnes</p>
+</td>
+<td>
+<p>Mondercange section B 228/3974</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-6940 NIEDERANVEN</p>
+</td>
+<td>
+<p>141, rte de Trèves</p>
+</td>
+<td>
+<p>Niederanven section C Oberanven 1185/4945</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-8510 REDANGE/ATTERT</p>
+</td>
+<td>
+<p>74, Grand-rue</p>
+</td>
+<td>
+<p>Redange section D 121/4736</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>L-3850 SCHIFFLANGE</p>
+</td>
+<td>
+<p>3, av. de la Libération</p>
+</td>
+<td>
+<p>Schifflange section A 3349/9563<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

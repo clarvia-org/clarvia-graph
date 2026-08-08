@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-07-06" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MEN"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-07-06" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-07-06" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2009-07-06</scl:jolux>
+						<scl:jolux scl:name="dateNoLongerInForce">2014-09-14</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1141</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2007-09-07</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a160</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2009A2361A</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/TC</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2009-07-06</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/ns/prov#Entity</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="consolidates">/eli/etat/leg/rgd/2005/08/10/n2/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/2004/06/25/n9/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/rgd/2007/08/24/n8/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/2005/07/25/n2/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Texte coordonné du règlement grand-ducal du 10 août 2005 relatif au fonctionnement du lycée-pilote, tel qu'il a été modifié par le règlement gand-ducal du 24 août 2007.</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2009-160-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a160/fr/pdf/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a160/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-tc-2009-07-06-n2-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2009/07/06/n2/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2009-160-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a160/fr/pdf/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a160/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2009/a160/fr/pdf/eli-etat-leg-memorial-2009-a160-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2009-07-06" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+			</lifecycle>
+			<analysis source="#"/>
+			<references source="#">
+				<original href="/eli/etat/leg/tc/2009/07/06/n2/jo" id="ro1" showAs="Original"/>
+			</references>
+			<notes xmlns:ns3727365="http://www.scl.lu" ns3727365:border="50" source="#eli-etat-leg-tc-2009-07-06-n1-jo-fr-xml">
+				<note id="note_0_0">
+					<p>
+						<b>Art. 2.</b> Les enseignants du lycée-pilote en fonction à l’entrée en vigueur du présent règlement grand-ducal conservent le bénéfice des décharges pour ancienneté qui leur ont été accordées avant l’entrée en vigueur du présent règlement.<br/>
+						<b>Art. 3.</b> Les enseignants du lycée-pilote en fonction à l’entrée en vigueur du présent règlement grand-ducal qui bénéficiaient de deux leçons de décharge pour ancienneté se voient accorder une troisième leçon de décharge pour ancienneté après 25 années de service ou 50 années d’âge.<br/>
+						<b>Art. 4</b>. Le présent règlement grand-ducal sort ses effets à partir de l’année scolaire 2007/2008.</p>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>TEXTE COORDONNE du Règlement grand-ducal du 10 août 2005 relatif au fonctionnement du lycée-pilote, tel qu'il a été modifié par le règlement gand-ducal du 24 août 2007.</p>
+			</longTitle>
+		</preface>
+		<preamble>
+			<formula name="">
+				<p>
+					<ref href="/eli/etat/leg/rgd/2005/08/10/n2/jo" id="debe1d17-bf84-4917-8790-0003f2ec977c">Mém. A-139 du 26.8.2005</ref>, p. 2481</p>
+			</formula>
+			<container name="preamble">
+				<p>modifié par:</p>
+			</container>
+			<container name="considerando">
+				<p>
+					<ref href="/eli/etat/leg/rgd/2007/08/24/n8/jo" id="6fcc389a-2586-4e05-95ec-a28ff80a4b83">Règlement grand-ducal du 24 août 2007</ref> modifiant le <ref href="/eli/etat/leg/rgd/2005/08/10/n2/jo" id="e268185e-2bb2-4375-81f1-e15a59ea4e25">règlement grand-ducal du 10 août 2005</ref> relatif au fonctionnement du lycée-pilote.</p>
+				<p scl:align="center">
+					<i> (<ref href="/eli/etat/leg/rgd/2007/08/24/n8/jo" id="4fc249b6-b638-40c4-aa62-7fb920775668">Mém. A-167 du 3 septembre 2007</ref>, p. 3246)</i>
+				</p>
+				<p scl:align="center" scl:space-after="5" scl:space-before="15">
+					<b>Texte coordonné</b>
+				</p>
+			</container>
+			<formula name=""/>
+		</preamble>
+		<body>
+			<article id="art_1er">
+				<num>Art. 1<sup>er</sup>. </num>
+				<heading>
+					<b>L’organisation de l’enseignement</b>
+				</heading>
+				<paragraph id="paragraph_1">
+					<num>1.</num>
+					<alinea>
+						<content>
+							<p> Dans toutes les branches l’enseignement est dispensé par unités composées de 2 leçons consécutives. </p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_2">
+					<num>2.</num>
+					<alinea>
+						<content>
+							<p> Dans les branches «art et société», «science et technique», «éducation aux valeurs», «sport et santé», l’acquisition des compétences se fait dans le cadre de projets à thème. Un thème donné d’ordre général y est traité dans ses dimensions artistiques, sociétales, éthiques, scientifiques, techniques ainsi que dans son rapport avec la santé et des activités sportives. Chaque projet donne lieu à un travail de recherche individuel et collectif ainsi qu’à une production écrite des élèves. </p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_3">
+					<num>3.</num>
+					<alinea>
+						<content>
+							<p> Les séquences d’étude sont consacrées à la révision des cours et à l’achèvement des projets. Elles sont organisées et supervisées par des éducateurs gradués.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_4">
+					<num>4.</num>
+					<alinea>
+						<content>
+							<p> Les activités complémentaires offrent aux élèves la possibilité de participer à des activités culturelles, sportives, sociales ou manuelles. Elles sont organisées et supervisées par les éducateurs gradués. Les élèves choisissent obligatoirement une activité par trimestre. </p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_5">
+					<num>5.</num>
+					<alinea>
+						<content>
+							<p> L’encadrement des élèves du lycée-pilote comprend:</p>
+							<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash">
+								<li>l’accueil, </li>
+								<li> la disponibilité des équipes pédagogiques,</li>
+								<li> l’orientation scolaire,</li>
+								<li> l’assistance psychologique et sociale,</li>
+								<li> la surveillance.</li>
+							</ul>
+							<p>En période scolaire, le lycée-pilote est ouvert pendant au moins dix heures par jour. Un accueil des élèves est assuré une demi-heure avant le début des cours. Pendant les vacances d’été, le lycée-pilote est ouvert pendant au moins vingt demi-journées.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_2">
+				<num>Art. 2. </num>
+				<heading>
+					<b>Le socle de compétences et les lignes directrices des programmes</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Le socle de compétences à développer dans les différentes branches ainsi que les lignes directrices des programmes d’études des différentes branches indiquant les contenus d’apprentissage, la méthodologie et le nombre de leçons attribuées aux branches sont déterminées aux annexes qui font partie intégrante du présent règlement.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_3">
+				<num>Art. 3. </num>
+				<heading>
+					<b>La participation des élèves et des parents d’élèves à la vie du lycée-pilote</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>En sus des dispositions concernant la représentation des élèves et des parents d’élèves déterminées par la <ref href="/eli/etat/leg/loi/2004/06/25/n9/jo" id="1f955495-ae1f-4459-96ae-1a6e9e148720">loi du 25 juin 2004</ref> portant organisation des lycées et lycées techniques, les élèves et les parents d’élèves sont associés à la vie du lycée-pilote de la manière suivante: </p>
+						<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+							<li>Les élèves participent activement à l’élaboration de leur projet scolaire et personnel. Ils s’informent continuellement de leurs progrès, de leurs faiblesses et de leurs points forts. Ils ont le droit de demander à être entendus à ce sujet par l’équipe pédagogique. </li>
+							<li> Ensemble avec l’équipe pédagogique et plus particulièrement avec les éducateurs gradués, les élèves d’une classe élaborent un code de vie visant à fixer les droits et devoirs de chacun dans un contexte de vie lycéenne fondée sur la coopération et la participation.</li>
+							<li> Les parents qui ont inscrit leur enfant au lycée-pilote sont informés régulièrement des progrès scolaires réalisés par leur enfant. Ils peuvent s’adresser à un membre de l’équipe pédagogique pendant les heures de disponibilité. </li>
+							<li> Les parents sont associés à l’orientation de leur enfant conformément aux dispositions des articles 9 et 10 de la <ref href="/eli/etat/leg/loi/2005/07/25/n2/jo" id="fd2c8e2e-2600-43e4-b9cb-eb9dcdd9d874">loi portant création du lycée pilote</ref>.</li>
+						</ol>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_4">
+				<num>Art. 4. </num>
+				<heading>
+					<b>Le volume de la tâche du personnel enseignant</b>
+				</heading>
+				<paragraph id="paragraph_6">
+					<num>1.</num>
+					<alinea>
+						<content>
+							<p> Le volume de la tâche hebdomadaire réglementaire des professeurs, instituteurs d’enseignement préparatoire, maîtres de cours spéciaux et maîtres d’enseignement technique nommés ou affectés au lycée comporte une partie d’enseignement, fixée à dix-huit leçons, ainsi qu’une partie d’activités au sein du lycée, fixée à douze heures.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p scl:space-before="5">
+								<i>(<ref href="/eli/etat/leg/rgd/2007/08/24/n8/jo" id="7c9b2b95-d73c-4569-91c8-db708d62c641">Règlement grand-ducal du 24 août 2007</ref>)</i>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>«Par dérogation aux dispositions de l’alinéa premier ci-dessus, le volume de dix-huit leçons hebdomadaires à assurer par les professeurs, instituteurs d’enseignement préparatoire, maîtres de cours spéciaux et maîtres d’enseignement technique est réduit en fonction des décharges pour ancienneté de service déterminées ci-après:</p>
+							<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash">
+								<li>après quarante-cinq années d’âge: une décharge d’une leçon normale hebdomadaire; </li>
+								<li>après cinquante années d’âge: une décharge de deux leçons normales hebdomadaires; </li>
+								<li>après cinquante-cinq années d’âge: une décharge de quatre leçons normales hebdomadaires<noteRef href="#note_0_0"/>.»</li>
+							</ul>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour les enseignants bénéficiaires soit d’un congé pour travail à mi-temps, soit d’un service à temps partiel de vingt-cinq, cinquante ou soixante-quinze pour cent d’une tâche complète, les deux parties de la tâche sont réduites dans la même proportion. </p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_7">
+					<num>2.</num>
+					<alinea>
+						<content>
+							<p>La tâche hebdomadaire réglementaire des candidats dans les carrières enseignantes de l’enseignement post-primaire, affectés au lycée, comporte une partie d’enseignement, fixée à treize leçons, ainsi qu’une partie d’activités au sein du lycée, fixée à douze heures.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_8">
+					<num>3.</num>
+					<alinea>
+						<content>
+							<p>Pour les enseignants visés aux paragraphes 1, 2 et 5 les activités au sein du lycée sont organisées par le directeur à raison d’une tâche de douze heures et suivant un horaire individuel pour chaque enseignant. </p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_9">
+					<num>4.</num>
+					<alinea>
+						<content>
+							<p>La tâche hebdomadaire des enseignants stagiaires affectés au lycée est fixée conformément aux dispositions réglementaires en vigueur. </p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_10">
+					<num>5.</num>
+					<alinea>
+						<content>
+							<p> La tâche hebdomadaire des chargés d’éducation engagés sous contrat à durée déterminée et à tâche complète comporte normalement une tâche de dix-huit leçons d’enseignement ainsi qu’un volume hebdomadaire de douze heures d’activités au sein du lycée telles que définies au paragraphe 3 du présent article. </p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_5">
+				<num>Art. 5. </num>
+				<heading>
+					<b>Le volume de la tâche du personnel socio-éducatif</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>La tâche normale des éducateurs gradués qui sont membres des équipes pédagogiques est fixée à quarante heures par semaine. En principe les congés sont pris pendant la période des vacances et des congés scolaires.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>En période scolaire, la tâche hebdomadaire de l’éducateur gradué membre d’une équipe pédagogique est de quarante-quatre heures. </p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les heures supplémentaires cumulées en période scolaire sont récupérées pendant la période des vacances et des congés scolaires.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_6">
+				<num>Art. 6. </num>
+				<heading>
+					<b>Le volume de la tâche des autres personnels</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>La durée normale de travail et le régime des congés des membres du service de psychologie et d’orientation scolaires ainsi que des agents administratifs et techniques sont fixés conformément aux dispositions légales et réglementaires en vigueur pour les fonctionnaires et employés de l’État.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>La durée normale de travail et le régime des congés des ouvriers de l’État sont réglés conformément au contrat collectif des ouvriers de l’État.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_7">
+				<num>Art. 7. </num>
+				<heading>
+					<b>Mise en vigueur</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Notre Ministre de l’Éducation nationale et de la Formation professionnelle est chargée de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+					</content>
+				</alinea>
+			</article>
+		</body>
+	</act>
+</akomaNtoso>

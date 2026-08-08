@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2002-07-25" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MTRE"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2002-07-25" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2002-07-25" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux><scl:jolux scl:name="dateDocument">2002-07-25</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MTRE</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/702</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2002-09-15</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2002/a108</scl:jolux><scl:jolux scl:name="historicalLegalId">2002A27441</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">2002-09-11</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20020129</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1963/06/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1963/06/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1986/03/28/n3/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/1980/02/06/n2/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/1973/06/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1975/06/03/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1977/10/18/n3/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1979/05/24/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1981/07/29/n9/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1993/05/20/n5/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/11/2022 : Loi du 25 juillet 2002 portant réorganisation de l'administration du cadastre et de la topographie.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2002-108-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2002/a108/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2002-07-25-n8-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2002-108-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2002/a108/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2002/a108/fr/pdf/eli-etat-leg-memorial-2002-a108-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2002-07-25" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2022-11-01" id="e13" originatingExpression="true" source="#rp13" type="amendment"/>
+<eventRef date="2022-11-01" id="e12" originatingExpression="true" source="#rp12" type="amendment"/>
+<eventRef date="2022-11-01" id="e11" originatingExpression="true" source="#rp11" type="amendment"/>
+<eventRef date="2022-11-01" id="e10" originatingExpression="true" source="#rp10" type="amendment"/>
+<eventRef date="2022-11-01" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+<eventRef date="2022-11-01" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+<eventRef date="2022-11-01" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+<eventRef date="2022-11-01" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2022-11-01" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2022-11-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2022-11-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2022-11-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/07/08/a520/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2002/07/25/n8/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2021/07/08/a520/jo" id="rp2" showAs="Loi du 8 juillet 2021 portant introduction de l’obligation d’effectuer par voie électronique le dépôt de documents soumis à la formalité de l’enregistrement et de la transcription auprès de l’Administration de l’enregistrement, des domaines et de la TVA et portant modification : 1° de la loi modifiée du 22 frimaire an VII organique de l’enregistrement ; 2° de la loi modifiée du 25 septembre 1905 sur la transcription des droits réels immobiliers ; 3° de la loi modifiée du 25 juillet 2002 portant réorganisation de l’administration du cadastre et de la topographie. "/>
+<passiveRef href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="rp3" showAs="Loi du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2014/09/17/n1/jo" id="rp4" showAs="Règlement grand-ducal du 17 septembre 2014 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2012/10/15/n1/jo" id="rp5" showAs="Règlement grand-ducal du 15 octobre 2012 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l’Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2011/09/02/n1/jo" id="rp6" showAs="Règlement grand-ducal du 2 septembre 2011 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2010/09/14/n5/jo" id="rp7" showAs="Règlement grand-ducal du 14 septembre 2010 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l’Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2009/10/22/n2/jo" id="rp8" showAs="Règlement grand-ducal du 22 octobre 2009 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2008/09/18/n1/jo" id="rp9" showAs="Règlement grand-ducal du 18 septembre 2008 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2007/07/24/n10/jo" id="rp10" showAs="Règlement grand-ducal du 24 juillet 2007 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2005/09/30/n1/jo" id="rp11" showAs="Règlement grand-ducal du 30 septembre 2005 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2003/08/22/n4/jo" id="rp12" showAs="Règlement grand-ducal du 22 août 2003 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l’Etat."/>
+<passiveRef href="/eli/etat/leg/loi/2002/12/05/n1/jo" id="rp13" showAs="Loi du 5 décembre 2002 modifiant la loi du 25 juillet 2002 portant réorganisation de l'administration du cadastre et de la topographie."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2021-07-13|2021-07-08|L|520">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/07/08/a520/jo">Loi du 8 juillet 2021 portant introduction de l’obligation d’effectuer par voie électronique le dépôt de documents soumis à la formalité de l’enregistrement et de la transcription auprès de l’Administration de l’enregistrement, des domaines et de la TVA et portant modification : 1° de la loi modifiée du 22 frimaire an VII organique de l’enregistrement ; 2° de la loi modifiée du 25 septembre 1905 sur la transcription des droits réels immobiliers ; 3° de la loi modifiée du 25 juillet 2002 portant réorganisation de l’administration du cadastre et de la topographie.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle style="11">
+<p>Version consolidée applicable au 01/11/2022 : Loi du 25 juillet 2002 portant réorganisation de l'administration du cadastre et de la topographie.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_1er/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm1"/>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>L'Administration du cadastre et de la topographie est placée sous l'autorité du ministre ayant cette administration dans ses attributions, ci-après désigné «le ministre».</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_2/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>L’administration a les attributions suivantes:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>la publicité en matière de propriété et de copropriété foncières, sur la base de la documentation cadastrale, appelée documentation par la suite, et se composant des registres et des fichiers fonciers ainsi que du plan cadastral se présentant sous forme analogue, numérisée et numérique;</li>
+<li> la conservation, la mise à jour et la rénovation de cette documentation;</li>
+<li> les travaux ayant trait aux limites d’Etat du Grand-Duché de Luxembourg, des cantons, des communes et des sections;</li>
+<li> sans préjudice des compétences conférées à tous les géomètres officiels, la délimitation et le bornage des limites de propriétés, l’établissement de plans de propriété à joindre aux actes et décisions judiciaires, translatifs, déclaratifs, constitutifs ou extinctifs de droits réels immobiliers et les travaux de remembrement urbain et rural lui confiés en vertu des dispositions légales et réglementaires. Toute opération de fixation de nouvelles limites de propriété immobilière, notamment par suite de division, de partage, de morcellement, de lotissement ou d’échange; </li>
+<li>les travaux en matière d’aménagement du territoire en vertu des dispositions légales et réglementaires;</li>
+<li> la création, la gestion, la diffusion, la mise à jour et la conservation des bases de données foncières et topographiques nationales;</li>
+<li> la création, la gestion, la diffusion et la mise à jour d’un registre national des localités et des rues, constitué de la dénomination des localités et des rues et de la numérotation des immeubles construits;</li>
+<li> l’établissement, la gestion, la tenue à jour et la diffusion de la documentation cartographique du territoire se présentant sous forme analogue ou digitale;</li>
+<li> l’établissement, la densification et la conservation des réseaux géodésiques nationaux en planimétrie, en altimétrie et en gravimétrie;</li>
+<li> l’organisation de la partie du stage professionnel à l’administration des géomètres officiels stagiaires.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_3/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>L’immatriculation et la description des immeubles aux nouveaux registres et plans cadastraux se feront sur la base d’une nouvelle mensuration autorisée par le ministre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La nouvelle mensuration du territoire d’une commune ou d’une partie de commune comprend:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>la mise en place d’un canevas de repères fixes rattachés au système géodésique national;</li>
+<li> la mensuration parcellaire et le levé des détails;</li>
+<li> la confection des nouveaux plans cadastraux numériques.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_4/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>La délimitation et le bornage des limites de propriétés sont obligatoires lors de la nouvelle mensuration.</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_5/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Les frais de la nouvelle mensuration sont supportés par l’Etat, les communes et les propriétaires dans les proportions ci-après:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’Etat supporte les frais de l’établissement de la triangulation, la mise en place du canevas de repères fixes, de la mensuration parcellaire, du levé des détails et de la confection des nouveaux registres et plans cadastraux.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les frais de bornage des parcelles sont à charge de la commune pour un quart et des propriétaires pour trois quarts. La fourniture et la pose des bornes se feront sous la surveillance et le contrôle de l’administration.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_6/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Le bornage de propriétés contiguës effectué à la demande des propriétaires fera l’objet d’un procès-verbal de bornage signé par les parties intéressées et soumis obligatoirement à la formalité de l’enregistrement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’administration procède à l’inscription de la contenance comprise entre ces limites dûment bornées dans les fichiers cadastraux.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_7/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les actes et les décisions judiciaires, translatifs, déclaratifs, constitutifs et extinctifs de droits réels immobiliers, de même que les déclarations de succession et de mutation par décès, doivent être accompagnés d’un extrait de la matrice cadastrale et du plan cadastral datant d’un an au maximum.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Lorsque les actes et les décisions judiciaires ont pour effet de fixer de nouvelles limites de propriété, notamment par suite de division, de partage, de lotissement ou d’échange, l’extrait dont il est question au paragraphe qui précède est remplacé par un plan d’arpentage datant d’un an au maximum et établi par un géomètre officiel. Ce plan doit fixer et situer les nouvelles limites obligatoirement abornées. En outre il fournit toutes les données nécessaires relatives aux parcelles et aux lots faisant l’objet desdits actes et décisions judiciaires.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Au cas où le plan dont il est question au paragraphe 2 n’est pas établi par un géomètre officiel relevant de l’administration, il doit porter la mention de validation de la part de cette dernière quant à ses directives. Le géomètre officiel externe à l’administration est tenu à remettre un dossier complet de chaque mesurage à caractère officiel dressé par ses soins, au service compétent de l’administration. Les données des mesurages effectués par tout géomètre officiel sont intégrées dans la documentation cadastrale de l’administration et peuvent être exploitées et publiées suivant les attributions de celle-ci. Les droits d’auteur relatifs à ces données sont cédés gratuitement à l’administration.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(4)</num>
+<alinea>
+<content>
+<p> L’Administration de l’enregistrement, des domaines et de la TVA refuse la formalité aux actes non appuyés des documents visés aux paragraphes ci-dessus et à l’article 10 ci-après, ou appuyés de documents irréguliers, à moins qu’il ne soit constaté dans l’acte qu’en raison de l’urgence, expressément spécifiée, les documents n’ont pas pu être réunis. Dans ce cas spécial ainsi que dans celui de l’inexistence de toute inscription cadastrale ou du plan cadastral concernant la parcelle en cause, le bornage prévu au paragraphe 2 de même que le levé se feront postérieurement, mais au plus tard dans les trois mois de l’acte. A défaut de plans d’arpentage dûment transcrits, l’Administration du cadastre et de la topographie refuse l’immatriculation sur ses registres et plans.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_8/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Les travaux de mensuration et/ou de bornage effectués par l’administration sont exclusivement à la charge des demandeurs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un règlement grand-ducal établira le montant et le mode de perception des taxes.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_9/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>La construction, la transformation et la démolition de bâtiments ou annexes de bâtiments, les changements des biens-fonds qui ne font pas l’objet d’actes translatifs ou déclaratifs de propriétés immobilières, ainsi que les changements de nature de culture et d’exploitation d’un caractère permanent doivent être communiqués pour le 1<sup>er</sup> janvier et le 1<sup>er</sup> juillet de chaque année par les communes à l’administration. </p>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_10/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>Avec l’expédition-minute des actes translatifs, déclaratifs, constitutifs et extinctifs de droits réels immobiliers, telle que visée par la <ref href="/eli/etat/leg/loi/2021/07/08/a520/jo" id="584d2473-0e65-48ba-857c-65e3c27297ef" scl:verify="true">loi du 8 juillet 2021</ref> portant introduction de l’obligation d’effectuer par voie électronique le dépôt de documents soumis à la formalité de l’enregistrement et de la transcription auprès de l’Administration de l’enregistrement, des domaines et de la TVA, les notaires remettent par voie électronique un extrait de l’acte à ladite administration. Le format et la structure des fichiers afférents à cet extrait sont arrêtés et le cas échéant adaptés par l’Administration du cadastre et de la topographie. Cet extrait, certifié exact par le notaire, est établi séparément pour chaque commune et chaque vendeur et mentionne toutes les données nécessaires à l’exécution des mutations cadastrales, telles que la désignation complète des propriétaires, copropriétaires et usufruitiers, avant et après la mutation, la date de naissance des vendeurs et acquéreurs, les numéros de matricule national des vendeurs et acquéreurs, la commune, la section, les numéros de parcelles, l’adresse de la parcelle et/ou le lieu-dit, la nature, la contenance, le prix des immeubles, la désignation cadastrale des lots de copropriété d’un immeuble collectif, les quotes-parts des copropriétaires, les droits réels, les renvois aux plans annexés, les titres de propriété et autres renseignements utiles.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de division en lots ou de changement dans les limites des propriétés ou de fixation contradictoire de limites des propriétés, les notaires ajoutent à ces extraits une copie, signée ne varietur par les parties ou certifiée conforme par le notaire, des plans annexés à l’expédition-minute.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’Administration de l’enregistrement, des domaines et de la TVA transmet un exemplaire de ces extraits et copies de plans à l’Administration du cadastre et de la topographie après l’avoir muni de la relation de l’enregistrement. L’Administration du cadastre et de la topographie peut consulter l’expédition-minute si l’extrait de l’acte ne lui permet pas d’exécuter correctement la mutation cadastrale respective. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les extraits des actes administratifs, des actes authentiques passés en pays étrangers, des décisions judiciaires et des déclarations de succession et de mutation par décès, sont fournis par l’Administration de l’enregistrement, des domaines et de la TVA.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_11/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>Nul ne peut s’opposer à l’exécution sur ses propriétés non closes des travaux de triangulation, de mensuration ou de nivellement entrepris pour le compte de l’Etat ou des communes par les agents de l’administration ou les personnes auxquelles elle délègue ses droits. L’installation de bornes, repères et balises ou l’établissement de signaux élevés ne peuvent être entrepris dans ces propriétés qu’après l’affichage dans les communes et sections intéressées pendant dix jours au moins d’un avis de l’administration indiquant les travaux à exécuter.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’accès aux propriétés closes par un mur ou par des grilles ainsi que l’exécution des travaux mentionnés ci-dessus sur ces propriétés ne peuvent, à défaut d’accord amiable, avoir lieu que cinq jours après une notification aux propriétaires ou aux teneurs de biens-fonds.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les indemnités dues pour le dommage causé par les travaux désignés ci-dessus ou lors de leur exécution sont fixées, soit par arrangement à l’amiable, soit, en cas de désaccord, par le juge de paix compétent pour le canton du fonds assujetti, qui statuera en dernier ressort dans les limites de sa compétence ordinaire et à charge d’appel, quelle que soit la valeur de l’objet en litige. L’action en indemnité est prescrite deux ans à partir du jour où le dommage a été causé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque l’administration entend donner un caractère permanent à certains signaux, bornes et repères, elle notifie sa décision aux propriétaires intéressés. A partir de cette notification, la servitude qui résulte de la présence de ces signaux, bornes et repères, ne peut prendre fin qu’en vertu d’une décision de l’administration. La constitution de cette servitude peut donner lieu au versement d’une indemnité forfaitaire et unique qui sera fixée, soit à l’amiable, soit, en cas de désaccord, par le juge de paix compétent pour le canton du fonds assujetti, qui statuera en dernier ressort dans les limites de sa compétence ordinaire et à charge d’appel, quelle que soit la valeur de l’objet en litige. L’action en indemnité est prescrite deux ans à partir de la notification de la décision de l’administration.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque l’installation de signaux, bornes et repères à caractère permanent comporte une emprise qui dépasse un mètre carré, l’administration peut requérir l’acquisition de la propriété du terrain, soit à l’amiable, soit par voie d’expropriation pour cause d’utilité publique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La destruction, la détérioration et le déplacement des bornes, repères et signaux donnent lieu à l’application de l’article 526 du <ref href="/eli/etat/leg/code/penal" id="693d9eeb-f4bf-472c-a8fe-eb457b8904b8">code pénal</ref>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_12/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>L’exécution technique des mensurations réalisées par le géomètre officiel est réglée par les directives de service de l’administration.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_13/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>L’administration est seule autorisée:</p>
+<ol scl:start="1" scl:symbol="1)">
+<li>à délivrer des extraits et des copies de plans de mesurages ou de documents cadastraux;</li>
+<li> à faire reproduire et à délivrer des cartes dont l’établissement et la tenue à jour lui sont confiés en vertu des dispositions légales et réglementaires ainsi que les clichés photographiques qui ont servi de base à leur établissement;</li>
+<li> à délivrer les données planimétriques, altimétriques et gravimétriques des réseaux géodésiques nationaux;</li>
+<li> à assurer la constitution, la gestion, la distribution et l’octroi de la concession de reproduction des bases de données numériques, issues de la documentation cadastrale et géographique dans le cadre de la banque de données nationale – système d’information du territoire. </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les demandes sollicitant:</p>
+<ol scl:start="1" scl:symbol="1)">
+<li>la délivrance de données cadastrales, topographiques et cartographiques;</li>
+<li> l’accès aux banques de données de l’administration;</li>
+<li> les autres prestations de services; doivent être adressées par écrit au directeur de l’administration.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les tarifs, conditions et modalités de délivrance ou d’accès à appliquer aux prestations et produits susvisés font l’objet d’un règlement grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_14/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<paragraph id="paragraph_5">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’administration est placée sous les ordres d’un directeur secondé par un directeur adjoint qui le remplace en cas de besoin.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le directeur dirige, coordonne et surveille les activités de l’administration.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(3)</num>
+<alinea>
+<content>
+<p>L’administration comprend la direction, le département des services centraux, le département du cadastre et le département de la topographie.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le département des services centraux comprend:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>la division des services administratifs composée du service du personnel, du service de la gestion administrative, du service de la comptabilité, du service de la publicité foncière et géographique, du service des archives et du service du matériel et charroi;</li>
+<li> la division des services techniques composée du service de la vérification et du contrôle, du service de l’informatique, du service photographique, du service des reproductions et du service des missions spéciales.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le département du cadastre comprend:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>la division de la conservation composée du service des documents cadastraux, du service de la copropriété bâtie, du service du registre national des localités et des rues et du service des mutations;</li>
+<li> la division de la mensuration composée des bureaux régionaux et du service des «grands travaux»; </li>
+<li>la division de l’aménagement foncier composée du service du remembrement urbain et rural, du service de l’utilisation du sol et du service de la rénovation cadastrale.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le département de la topographie comprend:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>la division de la documentation géographique composée du service de l’information du territoire et du service de la cartographie;</li>
+<li> la division de la géodésie composée du service des réseaux géodésiques nationaux et du service des limites d’Etat.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Le territoire du pays est divisé en circonscriptions dotées chacune d’un bureau régional. L’étendue et le nombre de ces circonscriptions, leurs sièges et leurs attributions sont fixés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_15/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<paragraph id="paragraph_12">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le cadre du personnel comprend un directeur, un directeur adjoint et des fonctionnaires des différentes catégories de traitement telles que prévues par la <ref href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="82f0e98f-43d9-4620-9669-73810314ae7b" scl:verify="true">loi du 25 mars 2015</ref> fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’Etat.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le cadre prévu ci-avant peut être complété par des stagiaires, des employés et des ouvriers de l’Etat dans la limite des crédits budgétaires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En outre, lors de l’exécution de travaux d’une envergure exceptionnelle, des auxiliaires peuvent être engagés pour la durée de ces travaux.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_16/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<paragraph id="paragraph_14">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sans préjudice des conditions générales d’admission au service de l’Etat, les matières spécifiques d’examen et les conditions particulières d’admission au stage, de nomination et de promotion dans l’administration sont déterminées par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les fonctionnaires de la carrière supérieure de la filière de l’ingénieur ou de celle du chargé d’étudesinformaticien doivent être:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>détenteurs d’un certificat de fin d’études secondaires, luxembourgeois ou étranger reconnu équivalent suivant la réglementation luxembourgeoise en vigueur;</li>
+<li> détenteurs d’un diplôme d’ingénieur portant notamment sur une des spécialités suivantes: géodésie, topographie, photogrammétrie, cartographie, géomatique ou informatique.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ce diplôme doit être délivré par une université ou un établissement d’enseignement supérieur à caractère universitaire après un cycle d’études sur place d’au moins quatre années et être inscrit au registre des diplômes prévu à l’article 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/1963/06/17/n1/jo" id="45a8857c-e0bc-4b4e-979b-592a1c8d1fd3" scl:verify="true">loi du 17 juin 1963</ref> ayant pour objet de protéger les titres d’enseignement supérieur.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Pour être nommés aux fonctions de directeur et de directeur adjoint, les candidats doivent avoir le titre de géomètre officiel.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_17/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<paragraph id="paragraph_17">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sont nommés par le Grand-Duc les fonctionnaires des grades supérieurs à ceux de rédacteur principal ou de technicien principal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_18">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le ministre ayant l’administration dans ses attributions nomme aux autres fonctions.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_18/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>Sont classées comme suit à la rubrique I «Administration générale» de l’annexe A de la <ref href="/eli/etat/leg/loi/1963/06/22/n1/jo" id="29dc236c-6ddb-436a-9ed8-0d8f86a68e56" scl:verify="true">loi modifiée du 22 juin 1963</ref> fixant le régime des traitements des fonctionnaires de l’Etat les fonctions désignées ci-après:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_1" width="50">
+<tr>
+<td>
+<p>le directeur</p>
+</td>
+<td>
+<p>au grade 17</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>le directeur adjoint</p>
+</td>
+<td>
+<p>au grade 16</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>l’ingénieur première classe</p>
+</td>
+<td>
+<p>au grade 16</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>l’ingénieur chef de division</p>
+</td>
+<td>
+<p>au grade 15.</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</article>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_19/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1973/06/21/n1/jo" id="56ae9b72-011c-4c81-9030-1bec3e850383" scl:verify="true">loi du 21 juin 1973</ref> portant organisation de l’administration du cadastre et de la topographie, telle qu’elle a été modifiée par la suite, est abrogée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_20/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<alinea>
+<content>
+<p>L’article 16ter de la <ref href="/eli/etat/leg/loi/1986/03/28/n3/jo" id="255164ae-d6a3-4493-aa4c-219a90888c99" scl:verify="true">loi modifiée du 28 mars 1986</ref> portant harmonisation des conditions et modalités d’avancement dans les différentes carrières des administrations et services de l’Etat est abrogé.</p>
+</content>
+</alinea>
+</article>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8/art_21/20221101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/25/n8</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 21.</num>
+<alinea>
+<content>
+<p>La présente loi entre en vigueur le 1<sup>er</sup> jour du mois suivant celui de sa publication au Mémorial.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+</body>
+</act>
+</akomaNtoso>

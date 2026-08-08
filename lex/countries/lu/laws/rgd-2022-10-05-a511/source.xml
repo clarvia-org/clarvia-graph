@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="single">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#author" href="#mdda"/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+                        <scl:jolux scl:name="dateDocument">2022-10-05</scl:jolux>
+                        <scl:jolux scl:name="publicationDate"/>
+                        <scl:jolux scl:name="responsibilityOf"/>
+                        <scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MCLAMO</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/735</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/479</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/92</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/346</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1402</scl:jolux>
+                        <scl:jolux xmlns="http://www.w3.org/1999/xhtml" xmlns:akoma="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xopusAttr="http://www.xopus.com/xmlns/id/attr" scl:name="dateEntryInForce"/>
+                        <scl:jolux scl:name="dateApplicability">2022-10-14</scl:jolux>
+                    </scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:lg="fra" scl:name="title">Version rectifiée applicable au 14/10/2022 : Règlement grand-ducal du 5 octobre 2022 portant fixation de la date d’ouverture et de clôture des soldes de l’hiver 2022/2023 et de l’été 2023.</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2016/12/23/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2017/06/16/a592/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2022-10-05" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2022-10-14" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rect/2022/10/05/a96/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2022/10/05/a511/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rect/2022/10/05/a96/jo" id="rp2" showAs="Règlement grand-ducal du 5 octobre 2022 portant fixation de la date d’ouverture et de clôture des soldes de l’hiver 2022/2023 et de l’été 2023 - RECTIFICATIF."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2023-02-24|2022-10-05|RECT|96">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rect/2022/10/05/a96/jo">Règlement grand-ducal du 5 octobre 2022 portant fixation de la date d’ouverture et de clôture des soldes de l’hiver 2022/2023 et de l’été 2023 - RECTIFICATIF.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version rectifiée applicable au 14/10/2022 : Règlement grand-ducal du 5 octobre 2022 portant fixation de la date d’ouverture et de clôture des soldes de l’hiver 2022/2023 et de l’été 2023.</p>
+</longTitle>
+</preface>
+<preamble style="show_in_pdf">
+<container name="preamble">
+<p>Nous Henri, Grand-Duc de Luxembourg, Duc de Nassau,</p>
+<p>Vu l’article 1<sup>er</sup>, paragraphe 4, de la <ref href="/eli/etat/leg/loi/2016/12/23/n1/jo" id="4101c4eb-9b61-4b96-af90-7cc3512e0635">loi modifiée du 23 décembre 2016</ref> sur les ventes en soldes et sur trottoir et la publicité trompeuse et comparative ; </p>
+<p>Vu les avis de la Chambre de commerce et de la Chambre des métiers ;</p>
+<p>Vu l’article 1<sup>er</sup>, paragraphe 1<sup>er</sup>, de la <ref href="/eli/etat/leg/loi/2017/06/16/a592/jo" id="d3e1e7c6-02af-4c7a-9a9c-15b994c098fd">loi du 16 juin 2017</ref> sur l’organisation du Conseil d’État et considérant qu’il y a urgence ;</p>
+<p>Sur le rapport de Notre Ministre des Classes moyennes et après délibération du Gouvernement en conseil ;</p>
+</container>
+<formula name="">
+<p>Arrêtons :</p>
+</formula>
+</preamble>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_1er/20221014</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-10-14</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Les dates d’ouverture et de clôture des deux prochaines périodes de vente en solde sont fixées comme suit :</p>
+<ul scl:symbol="dot">
+<li>Soldes de l’hiver 2022/2023 :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<table id="table_1" scl:cols="15 85" scl:cols-align="left left" width="100">
+<tr>
+<td>
+<p>début :</p>
+</td>
+<td>
+<p>lundi, le 2 janvier 2023,</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>clôture :</p>
+</td>
+<td>
+<p>samedi, le 28 janvier 2023 inclus.</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</embeddedStructure>
+</li>
+<li>
+<mod class="mod-start" for="#pm1"/>Soldes de l’été 2023 :<ul scl:symbol="dot">
+<li>début : samedi, le 24 juin 2023,<p>clôture : samedi, le 22 juillet 2023 inclus. <mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_2/20221014</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-10-14</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Notre ministre ayant les Classes moyennes dans ses attributions est chargé de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</article>
+</body>
+<conclusions style="show_in_pdf">
+<p> <signature> <shortTitle>Le Ministre des Classes moyennes, </shortTitle> <person refersTo="">Lex Delles </person> </signature> </p>
+<p> <signature>
+<docDate date="2999-01-01">Palais de Luxembourg, le 5 octobre 2022.</docDate>
+<person refersTo="">Henri</person> </signature> </p>
+</conclusions>
+</act>
+</akomaNtoso>

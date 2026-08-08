@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+    <act contains="originalVersion" name="">
+        <meta>
+            <identification source="#2008A2057A">
+                <FRBRWork>
+                    <FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo"/>
+                    <FRBRuri value=""/>
+                    <FRBRdate date="2008-09-05" name="document"/>
+                    <FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MAE"/>
+                    <FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo/fr"/>
+                    <FRBRuri value=""/>
+                    <FRBRdate date="2008-09-05" name="document"/>
+                    <FRBRauthor as="#author" href=""/>
+                    <FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo/fr/xml"/>
+                    <FRBRuri value=""/>
+                    <FRBRdate date="2008-09-05" name="document"/>
+                    <FRBRauthor as="#author" href=""/>
+                </FRBRManifestation>
+                <scl:JOLUXWork>
+                    <scl:JOLUXComplexWork>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                    </scl:JOLUXComplexWork>
+                    <scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2024-03-12</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                        <scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+                        <scl:jolux scl:name="dateDocument">2008-09-05</scl:jolux>
+                        <scl:jolux scl:name="publicationDate">2008-09-10</scl:jolux>
+                        <scl:jolux scl:name="historicalLegalId">2008A2057A</scl:jolux>
+                        <scl:jolux scl:name="dateEntryInForce">2008-10-01</scl:jolux>
+                        <scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2008/138</scl:jolux>
+                        <scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MAE</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/853</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/158</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+                    </scl:JOLUXLegalResource>
+                </scl:JOLUXWork>
+                <scl:JOLUXExpression>
+                    <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo/fr</scl:jolux>
+                    <scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo</scl:jolux>
+                    <scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+                    <scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 12/03/2024 : Règlement grand-ducal du 5 septembre 2008 relatif à la composition et au fonctionnement \n1. de la commission consultative des étrangers; \n2. de la commission consultative pour travailleurs salariés; \n3. de la commission consultative pour travailleurs indépendants.</scl:jolux>
+                    <scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/2008/08/29/n1/jo</scl:jolux>
+                    <scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/1972/03/28/n3/jo</scl:jolux>
+                </scl:JOLUXExpression>
+                <scl:JOLUXManifestation>
+                    <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo/fr/xml</scl:jolux>
+                    <scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo/fr</scl:jolux>
+                    <scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2008/138/fr/pdf</scl:jolux>
+                    <scl:jolux scl:name="memorialPage">2057</scl:jolux>
+                    <scl:jolux scl:name="memorialSequence">A</scl:jolux>
+                    <scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+                    <scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+                    <scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+                    <scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+                    <scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+                    <scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+                    <scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2008-09-05-n5-jo-fr-xml.xml</scl:jolux>
+                </scl:JOLUXManifestation>
+                <scl:JOLUXManifestation>
+                    <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo/fr/pdf</scl:jolux>
+                    <scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/jo/fr</scl:jolux>
+                    <scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2008/138/fr/pdf</scl:jolux>
+                    <scl:jolux scl:name="memorialPage">2057</scl:jolux>
+                    <scl:jolux scl:name="memorialSequence">A</scl:jolux>
+                    <scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+                    <scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+                    <scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+                    <scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+                    <scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+                    <scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+                    <scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2008/a138/fr/pdf/eli-etat-leg-memorial-2008-a138-fr-pdf.pdf</scl:jolux>
+                </scl:JOLUXManifestation>
+            </identification>
+            <lifecycle source="#">
+                <eventRef date="2008-09-05" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+                <eventRef date="2022-06-06" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+                <eventRef date="2024-03-12" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+            </lifecycle>
+            <analysis source="#">
+                <passiveModifications>
+                    <textualMod id="pm1" incomplete="false" type="substitution">
+                        <source href="/eli/etat/leg/rgd/2022/05/12/a255/jo"/>
+                        <destination href="#art_2_20240312"/>
+                    </textualMod>
+                    <textualMod id="pm2" incomplete="false" type="replacement">
+                        <source href="/eli/etat/leg/rgd/2022/05/12/a255/jo"/>
+                        <destination href="#art_3"/>
+                    </textualMod>
+                    <textualMod id="pm3" incomplete="false" type="substitution">
+                        <source href="/eli/etat/leg/rgd/2022/05/12/a255/jo"/>
+                        <destination href="#art_3"/>
+                    </textualMod>
+                    <textualMod id="pm4" incomplete="false" type="insertion">
+                        <source href="/eli/etat/leg/rgd/2022/05/12/a255/jo"/>
+                        <destination href="#art_4"/>
+                    </textualMod>
+                    <textualMod id="pm5" incomplete="false" type="substitution">
+                        <source href="/eli/etat/leg/rgd/2022/05/12/a255/jo"/>
+                        <destination href="#art_5_20240312"/>
+                    </textualMod>
+                    <textualMod id="pm6" incomplete="false" type="replacement">
+                        <source href="/eli/etat/leg/rgd/2024/02/28/a93/jo"/>
+                        <destination href="#art_3"/>
+                    </textualMod>
+                    <textualMod id="pm7" incomplete="false" type="replacement">
+                        <source href="/eli/etat/leg/rgd/2024/02/28/a93/jo"/>
+                        <destination href="#art_4"/>
+                    </textualMod>
+                    <textualMod id="pm8" incomplete="false" type="replacement">
+                        <source href="/eli/etat/leg/rgd/2024/02/28/a93/jo"/>
+                        <destination href="#art_4"/>
+                    </textualMod>
+                    <textualMod id="pm9" incomplete="false" type="insertion">
+                        <source href="/eli/etat/leg/rgd/2024/02/28/a93/jo"/>
+                        <destination href="#art_4"/>
+                    </textualMod>
+                </passiveModifications>
+            </analysis>
+            <references source="#">
+                <original href="/eli/etat/leg/rgd/2008/09/05/n5/jo" id="ro1" showAs="Original"/>
+                <passiveRef href="/eli/etat/leg/rgd/2022/05/12/a255/jo" id="rp2" showAs="Règlement grand-ducal du 12 mai 2022 portant modification du règlement grand-ducal du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants."/>
+                <passiveRef href="/eli/etat/leg/rgd/2024/02/28/a93/jo" id="rp3" showAs="Règlement grand-ducal du 28 février 2024 portant modification du règlement grand-ducal modifié du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants. "/>
+            </references>
+            <notes scl:type="modification" source="#rp2">
+                <note id="M1" marker="1" refersTo="pm1" title="A|2022-06-02|2022-05-12|RGD|255">
+                    <content>
+                        <p>
+                            <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/05/12/a255/jo">Règlement grand-ducal du 12 mai 2022 portant modification du règlement grand-ducal du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants.</ref>
+                        </p>
+                    </content>
+                </note>
+            </notes>
+            <notes scl:type="modification" source="#rp2">
+                <note id="M2" marker="2" refersTo="pm2" title="A|2022-06-02|2022-05-12|RGD|255">
+                    <content>
+                        <p>
+                            <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/05/12/a255/jo">Règlement grand-ducal du 12 mai 2022 portant modification du règlement grand-ducal du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants.</ref>
+                        </p>
+                    </content>
+                </note>
+            </notes>
+            <notes scl:type="modification" source="#rp2">
+                <note id="M3" marker="3" refersTo="pm3" title="A|2022-06-02|2022-05-12|RGD|255">
+                    <content>
+                        <p>
+                            <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/05/12/a255/jo">Règlement grand-ducal du 12 mai 2022 portant modification du règlement grand-ducal du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants.</ref>
+                        </p>
+                    </content>
+                </note>
+            </notes>
+            <notes scl:type="modification" source="#rp2">
+                <note id="M4" marker="4" refersTo="pm4" title="A|2022-06-02|2022-05-12|RGD|255">
+                    <content>
+                        <p>
+                            <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/05/12/a255/jo">Règlement grand-ducal du 12 mai 2022 portant modification du règlement grand-ducal du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants.</ref>
+                        </p>
+                    </content>
+                </note>
+            </notes>
+            <notes scl:type="modification" source="#rp2">
+                <note id="M5" marker="5" refersTo="pm5" title="A|2022-06-02|2022-05-12|RGD|255">
+                    <content>
+                        <p>
+                            <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/05/12/a255/jo">Règlement grand-ducal du 12 mai 2022 portant modification du règlement grand-ducal du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants.</ref>
+                        </p>
+                    </content>
+                </note>
+            </notes>
+            <notes scl:type="modification" source="#rp3">
+                <note id="M6" marker="6" refersTo="pm6" title="A|2024-03-08|2024-02-28|RGD|93">
+                    <content>
+                        <p>
+                            <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/02/28/a93/jo">Règlement grand-ducal du 28 février 2024 portant modification du règlement grand-ducal modifié du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants.</ref> </p>
+                    </content>
+                </note>
+            </notes>
+            <notes scl:type="modification" source="#rp3">
+                <note id="M7" marker="7" refersTo="pm7" title="A|2024-03-08|2024-02-28|RGD|93">
+                    <content>
+                        <p>
+                            <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/02/28/a93/jo">Règlement grand-ducal du 28 février 2024 portant modification du règlement grand-ducal modifié du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants.</ref> </p>
+                    </content>
+                </note>
+            </notes>
+            <notes scl:type="modification" source="#rp3">
+                <note id="M8" marker="8" refersTo="pm8" title="A|2024-03-08|2024-02-28|RGD|93">
+                    <content>
+                        <p>
+                            <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/02/28/a93/jo">Règlement grand-ducal du 28 février 2024 portant modification du règlement grand-ducal modifié du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants.</ref> </p>
+                    </content>
+                </note>
+            </notes>
+            <notes scl:type="modification" source="#rp3">
+                <note id="M9" marker="9" refersTo="pm9" title="A|2024-03-08|2024-02-28|RGD|93">
+                    <content>
+                        <p>
+                            <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/02/28/a93/jo">Règlement grand-ducal du 28 février 2024 portant modification du règlement grand-ducal modifié du 5 septembre 2008 relatif à la composition et au fonctionnement 1. de la commission consultative des étrangers ; 2. de la commission consultative pour travailleurs salariés ; 3. de la commission consultative pour travailleurs indépendants.</ref> </p>
+                    </content>
+                </note>
+            </notes>
+        </meta>
+        <preface>
+            <longTitle style="11">
+                <p>Version consolidée applicable au 12/03/2024 : Règlement grand-ducal du 5 septembre 2008 relatif à la composition et au fonctionnement </p>
+                <ol scl:symbol="1.">
+                    <li>de la commission consultative des étrangers;</li>
+                    <li>de la commission consultative pour travailleurs salariés;</li>
+                    <li>de la commission consultative pour travailleurs indépendants.</li>
+                </ol>
+            </longTitle>
+        </preface>
+        <body>
+            <article id="art_1er">
+                <scl:JOLUXWork>
+                    <scl:JOLUXComplexWork>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_1er</scl:jolux>
+                    </scl:JOLUXComplexWork>
+                    <scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_1er/20081001</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                        <scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2008-10-01</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+                    </scl:JOLUXLegalResource>
+                </scl:JOLUXWork>
+                <num>Art. 1<sup>er</sup>.</num>
+                <heading>
+                    <b>Définitions</b>
+                </heading>
+                <alinea>
+                    <content>
+                        <p>Au sens du présent règlement grand-ducal on entend par:</p>
+                        <ul scl:space-num="4" scl:symbol="custom">
+                            <li scl:symbol="–">«loi»: la <ref href="/eli/etat/leg/loi/2008/08/29/n1/jo" id="ccb9d224-41e3-4800-a427-014b017df3ad" scl:verify="true">loi du 29 août 2008</ref> sur la libre circulation des personnes et l’immigration;</li>
+                            <li scl:symbol="–">«ministre»: le membre du gouvernement ayant l’immigration dans ses attributions.</li>
+                        </ul>
+                    </content>
+                </alinea>
+            </article>
+            <article id="art_2_20240312" style="del">
+                <scl:JOLUXWork>
+                    <scl:JOLUXComplexWork>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_2</scl:jolux>
+                    </scl:JOLUXComplexWork>
+                    <scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_2/20220606</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                        <scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2022-06-06</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+                    </scl:JOLUXLegalResource>
+                </scl:JOLUXWork>
+                <num>
+                    <mod class="mod-start" for="#pm1"/>
+                    <del>Art. 2.</del>
+                </num>
+                <heading>
+                    <b>
+                        <del>De la commission consultative des étrangers</del>
+                    </b>
+                </heading>
+                <paragraph id="paragraph_1">
+                    <num>
+                        <del>(1)</del>
+                    </num>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>La commission consultative des étrangers se compose de trois membres effectifs, à savoir:</del>
+                            </p>
+                            <ul scl:space-num="4" scl:symbol="custom" style="del">
+                                <li scl:symbol="–" style="del">
+                                    <del>d’un magistrat en fonction;</del>
+                                </li>
+                                <li scl:symbol="–" style="del">
+                                    <del>d’un membre désigné par le ministre ayant l’intégration dans ses attributions;</del>
+                                </li>
+                                <li scl:symbol="–" style="del">
+                                    <del>d’un membre choisi par le ministre en raison de son expérience en matière d’immigration sur base d’une liste présentée par des associations s’occupant de la défense des intérêts des étrangers.</del>
+                                </li>
+                            </ul>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_2">
+                    <num>
+                        <del>(2)</del>
+                    </num>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>Les membres de la commission sont nommés par le ministre pour une durée de trois ans. Le mandat des membres est renouvelable. Des membres suppléants peuvent être nommés.</del>
+                            </p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_3">
+                    <num>
+                        <del>(3)</del>
+                    </num>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>Un délégué du ministre participe sur invitation du président aux débats devant la commission, sans toutefois prendre part aux délibérations. </del>
+                            </p>
+                        </content>
+                    </alinea>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>Un agent délégué par le ministre assiste la commission en qualité de secrétaire. Il n’a pas de voix délibérative.</del>
+                            </p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_4">
+                    <num>
+                        <del>(4)</del>
+                    </num>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>La présidence de la commission est assurée par le magistrat qui dirige les travaux de la commission.</del>
+                            </p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_5">
+                    <num>
+                        <del>(5)</del>
+                    </num>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>La commission est saisie par le ministre. L’étranger est invité par lettre recommandée à se présenter devant la commission. Le délai de convocation est de dix jours ouvrables. La convocation est valablement faite au domicile déclaré de l’étranger ou au domicile élu. L’étranger qui, sans motif reconnu valable par la commission, ne comparaît pas, perd le droit d’être entendu.</del>
+                            </p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_6">
+                    <num>
+                        <del>(6)</del>
+                    </num>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>La procédure devant la commission est orale. Il est loisible à l’étranger de déposer des notes écrites. L’étranger est informé de son droit de choisir un avocat inscrit au tableau de l’un des barreaux établis au Grand-Duché de Luxembourg ou de se faire désigner un avocat par le bâtonnier de l’ordre des avocats. A la demande à formuler au moins cinq jours ouvrables avant la comparution, la commission met un interprète à disposition de l’étranger.</del>
+                            </p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_7">
+                    <num>
+                        <del>(7)</del>
+                    </num>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>Dès réception de la convocation, l’étranger a le droit de demander une copie intégrale de son dossier administratif.</del>
+                            </p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_8">
+                    <num>
+                        <del>(8)</del>
+                    </num>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>L’avis de la commission est motivé et arrêté à la majorité des voix, soit séance tenante, soit à une séance ultérieure dont le président fixe la date. Les délibérations de la commission se tiennent à huis clos.</del>
+                            </p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_9">
+                    <num>
+                        <del>(9)</del>
+                    </num>
+                    <alinea>
+                        <content>
+                            <p>
+                                <del>La commission transmet son avis au ministre dans les huit jours de la prise en délibéré de l’affaire.</del>
+                                <mod class="mod-end" for="#pm1"/>
+                                <noteRef href="#M1" marker="1"/>
+                            </p>
+                        </content>
+                    </alinea>
+                </paragraph>
+            </article>
+            <article id="art_3">
+                <scl:JOLUXWork>
+                    <scl:JOLUXComplexWork>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_3</scl:jolux>
+                    </scl:JOLUXComplexWork>
+                    <scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_3/20240312</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                        <scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2024-03-12</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+                    </scl:JOLUXLegalResource>
+                </scl:JOLUXWork>
+                <num>Art. 3.</num>
+                <heading>
+                    <b>De la commission consultative pour travailleurs salariés</b>
+                </heading>
+                <paragraph id="paragraph_10">
+                    <num>(1)</num>
+                    <alinea>
+                        <content>
+                            <p>La commission consultative pour travailleurs salariés se compose de <mod class="mod-start" for="#pm2"/>neuf<mod class="mod-end" for="#pm2"/>
+                                <noteRef href="#M2" marker="2"/> membres effectifs, à savoir:</p>
+                            <ul scl:space-num="4" scl:symbol="custom">
+                                <li scl:symbol="–">de trois représentants du ministre ayant l’immigration dans ses attributions;</li>
+                                <li scl:symbol="–">d’un représentant du ministre ayant l’économie dans ses attributions;</li>
+                                <li scl:symbol="–" style="del">
+                                    <mod class="mod-start" for="#pm3"/>
+                                    <del>d’un représentant du ministre ayant l’intégration dans ses attributions;</del>
+                                    <mod class="mod-end" for="#pm3"/>
+                                    <noteRef href="#M3" marker="3"/>
+                                </li>
+                                <li scl:symbol="–">d’un représentant du ministre ayant la formation professionnelle dans ses attributions;</li>
+                                <li scl:symbol="–">d’un représentant du ministre ayant la sécurité sociale dans ses attributions;</li>
+                                <li scl:symbol="–">de deux représentants de <mod class="mod-start" for="#pm6"/>l’Agence pour le développement de l’emploi<mod class="mod-end" for="#pm6"/>
+                                    <noteRef href="#M6" marker="6"/>;</li>
+                                <li scl:symbol="–">d’un représentant de l’inspection du travail et des mines.</li>
+                            </ul>
+                        </content>
+                    </alinea>
+                    <alinea>
+                        <content>
+                            <p>En cas de besoin, la commission peut s’adjoindre l’expertise de représentants des ministres ayant respectivement le travail et l’emploi, les classes moyennes, l’agriculture et la viticulture, la recherche et la famille dans leurs attributions, ainsi que de représentants des chambres professionnelles intéressées.</p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_11">
+                    <num>(2)</num>
+                    <alinea>
+                        <content>
+                            <p>Les membres de la commission sont nommés par le ministre pour une durée de trois ans. Le mandat des membres est renouvelable. Des membres suppléants peuvent être nommés.</p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_12">
+                    <num>(3)</num>
+                    <alinea>
+                        <content>
+                            <p>La présidence de la commission, ainsi que la fonction de secrétaire sont assurées par des représentants du ministre.</p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_13">
+                    <num>(4)</num>
+                    <alinea>
+                        <content>
+                            <p>Le président ou son suppléant convoque la commission en indiquant l’ordre du jour.</p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_14">
+                    <num>(5)</num>
+                    <alinea>
+                        <content>
+                            <p>La commission délibère valablement si la majorité de ses membres sont présents. Les avis sont adoptés à la majorité des voix des membres présents. En cas d’égalité des voix, celle du président est prépondérante. Les agents qui assistent la commission en tant qu’expert n’ont pas de voix délibérative.</p>
+                        </content>
+                    </alinea>
+                </paragraph>
+            </article>
+            <article id="art_4">
+                <scl:JOLUXWork>
+                    <scl:JOLUXComplexWork>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_4</scl:jolux>
+                    </scl:JOLUXComplexWork>
+                    <scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_4/20240312</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                        <scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2024-03-12</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+                    </scl:JOLUXLegalResource>
+                </scl:JOLUXWork>
+                <num>Art. 4.</num>
+                <heading>
+                    <b>De la commission consultative pour travailleurs indépendants</b>
+                </heading>
+                <paragraph id="paragraph_15">
+                    <num>(1)</num>
+                    <alinea>
+                        <content>
+                            <p>La commission consultative pour travailleurs indépendants se compose de <mod class="mod-start" for="#pm7"/>six<mod class="mod-end" for="#pm7"/>
+                                <noteRef href="#M7" marker="7"/> membres effectifs, à savoir:</p>
+                            <ul scl:space-num="4" scl:symbol="custom">
+                                <li scl:symbol="–">de deux représentants du ministre ayant l’immigration dans ses attributions;</li>
+                                <li scl:symbol="–">d’un représentant du ministre ayant l’économie dans ses attributions;</li>
+                                <li scl:symbol="–">d’un représentant du ministre ayant les classes moyennes dans ses attributions;</li>
+                                <li scl:symbol="–">d’un représentant du ministre ayant le travail et l’emploi dans ses attributions <mod class="mod-start" for="#pm8"/>;<mod class="mod-end" for="#pm8"/>
+                                    <noteRef href="#M8" marker="8"/>
+                                    <mod class="mod-start" for="#pm9"/>
+                                </li>
+                                <li scl:symbol="–">d’un représentant du ministre ayant le commerce extérieur dans ses attributions.<mod class="mod-end" for="#pm9"/>
+                                    <noteRef href="#M9" marker="9"/>
+                                </li>
+                            </ul>
+                        </content>
+                    </alinea>
+                    <alinea>
+                        <content>
+                            <p>En cas de besoin la commission peut s’adjoindre l’expertise de représentants des ministres ayant respectivement les finances, la recherche, la santé, l’éducation supérieure, la culture, les médias et communications dans leurs attributions, ainsi que de représentants des chambres professionnelles intéressées <mod class="mod-start" for="#pm4"/>et de l’Agence nationale pour la promotion de l’innovation et de la recherche<mod class="mod-end" for="#pm4"/>
+                                <noteRef href="#M4" marker="4"/>.</p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_16">
+                    <num>(2)</num>
+                    <alinea>
+                        <content>
+                            <p>Les membres de la commission sont nommés par le ministre pour une durée de trois ans. Le mandat des membres est renouvelable. Des membres suppléants peuvent être nommés.</p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_17">
+                    <num>(3)</num>
+                    <alinea>
+                        <content>
+                            <p>La présidence de la commission, ainsi que la fonction de secrétaire sont assurées par les représentants du ministre.</p>
+                        </content>
+                    </alinea>
+                </paragraph>
+                <paragraph id="paragraph_18">
+                    <num>(4)</num>
+                    <alinea>
+                        <content>
+                            <p>La commission délibère valablement si la majorité de ses membres sont présents. Les avis sont adoptés à la majorité des voix des membres présents. En cas d’égalité des voix, celle du président est prépondérante. Les agents qui assistent la commission en tant qu’expert n’ont pas de voix délibérative.</p>
+                        </content>
+                    </alinea>
+                </paragraph>
+            </article>
+            <article id="art_5_20240312" style="del">
+                <scl:JOLUXWork>
+                    <scl:JOLUXComplexWork>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_5</scl:jolux>
+                    </scl:JOLUXComplexWork>
+                    <scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_5/20220606</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                        <scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2022-06-06</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+                    </scl:JOLUXLegalResource>
+                </scl:JOLUXWork>
+                <num>
+                    <mod class="mod-start" for="#pm5"/>
+                    <del>Art. 5.</del>
+                </num>
+                <alinea>
+                    <content>
+                        <p>
+                            <del>Les membres de la commission consultative des étrangers ont droit à une indemnité, dont le maximum par séance s’élève à:</del>
+                        </p>
+                        <ul scl:space-num="4" scl:symbol="custom" style="del">
+                            <li scl:symbol="–" style="del">
+                                <del>EUR 50.- pour le président;</del>
+                            </li>
+                            <li scl:symbol="–" style="del">
+                                <del>EUR 25.- pour les membres et le secrétaire.</del>
+                                <mod class="mod-end" for="#pm5"/>
+                                <noteRef href="#M5" marker="5"/>
+                            </li>
+                        </ul>
+                    </content>
+                </alinea>
+            </article>
+            <article id="art_6">
+                <scl:JOLUXWork>
+                    <scl:JOLUXComplexWork>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_6</scl:jolux>
+                    </scl:JOLUXComplexWork>
+                    <scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_6/20081001</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                        <scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2008-10-01</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+                    </scl:JOLUXLegalResource>
+                </scl:JOLUXWork>
+                <num>Art. 6.</num>
+                <alinea>
+                    <content>
+                        <p>Le <ref href="/eli/etat/leg/rgd/1972/03/28/n3">règlement grand-ducal modifié du 28 mars 1972</ref> relatif à la composition, l’organisation et le fonctionnement de la commission consultative en matière de police des étrangers est abrogé.</p>
+                    </content>
+                </alinea>
+            </article>
+            <article id="art_7">
+                <scl:JOLUXWork>
+                    <scl:JOLUXComplexWork>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_7</scl:jolux>
+                    </scl:JOLUXComplexWork>
+                    <scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_7/20081001</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                        <scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2008-10-01</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+                    </scl:JOLUXLegalResource>
+                </scl:JOLUXWork>
+                <num>Art. 7.</num>
+                <alinea>
+                    <content>
+                        <p>Le présent règlement entrera en vigueur le 1<sup>er</sup> octobre 2008.</p>
+                    </content>
+                </alinea>
+            </article>
+            <article id="art_8">
+                <scl:JOLUXWork>
+                    <scl:JOLUXComplexWork>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_8</scl:jolux>
+                    </scl:JOLUXComplexWork>
+                    <scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5/art_8/20081001</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2008/09/05/n5</scl:jolux>
+                        <scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2008-10-01</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+                    </scl:JOLUXLegalResource>
+                </scl:JOLUXWork>
+                <num>Art. 8.</num>
+                <alinea>
+                    <content>
+                        <p>Notre Ministre délégué aux Affaires étrangères et à l’Immigration est chargé de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+                    </content>
+                </alinea>
+            </article>
+        </body>
+    </act>
+</akomaNtoso>

@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="1943-03-31" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFI"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="1943-03-31" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="1943-03-31" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux><scl:jolux scl:name="dateDocument">1943-03-31</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/271</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1316</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">1943-01-05</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1943/a1</scl:jolux><scl:jolux scl:name="historicalLegalId">1943A0001Z</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/ORD</scl:jolux><scl:jolux scl:name="publicationDate">1943-01-01</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/01/2002 : Ordonnance de simplification du 31 mars 1943 (Verordnung über die Erhebung der Gewerbesteuer in vereinfachter Form).</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1943-1-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1943/a1/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-ord-1943-03-31-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1943-1-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1943/a1/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1943/a1/fr/pdf/eli-etat-leg-memorial-1943-a1-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="1943-01-05" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2002-01-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2002-01-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2002-01-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2001/08/01/n15/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/ord/1943/03/31/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2001/12/21/n7/jo" id="rp2" showAs="Loi du 21 décembre 2001 portant réforme de certaines dispositions en matière des impôts directs et indirects."/>
+<passiveRef href="/eli/etat/leg/rgd/2001/08/01/n15/jo" id="rp3" showAs="Règlement grand-ducal du 1er août 2001 relatif au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions réglementaires."/>
+<passiveRef href="/eli/etat/leg/loi/1967/12/11/n2/jo" id="rp4" showAs="Loi du 11 décembre 1967 modifiant la loi de l'impôt commercial."/>
+</references>
+<notes scl:type="modification" source="#rp3">
+<note id="M1" marker="1" refersTo="pm1" title="A|2001-09-18|2001-08-01|RGD|117">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/08/01/n15/jo">Règlement grand-ducal du 1er août 2001 relatif au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions réglementaires.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 01/01/2002 : E. Verordnung über die Erhebung der Gewerbesteuer in vereinfachter Form Vom 31. März 1943.</p>
+<p>Ordonnance de simplification de l’impôt commercial du 31 mars 1943.</p>
+</longTitle>
+</preface>
+<body>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm1"/>Auf Grund der Verordnung zur Vereinfachung der Gewerbebesteuerung vom 19. März 1943 wird verordnet: </p>
+</content>
+</alinea>
+<chapter id="abschnitt_i">
+<num> <span scl:style-format="n">Abschnitt I.</span> </num>
+<heading scl:separator=" "> <br/> <b>Festsetzung, Erhebung und Verteilung der Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital</b> </heading>
+<article id="art_p_1">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_1/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 1</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 1</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Die Festsetzung und die Erhebung der Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital auf Grund des Gewerbesteuergesetzes vom 1. Dezember 1936 obliegen vorbehaltlich des Absatzes 2 ab 1. April 1943 den Steuerkontrollstellen. Vorschriften, die dieser Regelung entgegenstehen, sind ab 1. April 1943 nicht mehr anzuwenden.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Den Gemeindebehörden obliegen für Erhebungszeiträume (§14 Absatz 2 des Gewerbesteuergesetzes), die vor dem 1. April 1943 enden, auch nach dem 31. März 1943 noch die Festsetzung und die Erhebung der Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>bei erstmaliger Festsetzung des einheitlichen Steuermessbetrags (§ 14 Absatz 1 des Gewerbesteuergesetzes) oder des Zerlegungsanteils (§28 Absatz 1 des Gewerbesteuergesetzes),</li>
+<li>bei einer Änderung des einheitlichen Steuermessbetrags oder des Zerlegungsanteils, wenn die Änderung vor dem 1. April 1943 durchgeführt worden ist. Die Gemeindebehörde hat den Steuerbescheid, der der Änderung entspricht, spätestens am 15. Mai 1943 dem Steuerschuldner bekanntzugeben.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_p_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_2/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 2</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 2</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Der einheitliche Steuermessbetrag (§ 14 des Gewerbesteuergesetzes) wird ab dem Kalenderjahr 1943 jeweils für ein Kalenderjahr (Erhebungszeitraum) nach dessen Ablauf festgesetzt. Fällt die Steuerpflicht im Laufe des Kalenderjahres weg, so kann der einheitliche Steuermessbetrag sofort festgesetzt werden.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Massgebend ist der Gewerbeertrag des Kalenderjahres, für das der einheitliche Steuermessbetrag festgesetzt wird. Bei Gewerbetreibenden, die Bücher nach den Vorschriften des Handelsgesetzbuches zu führen verpflichtet sind und solche tatsächlich führen, gilt der Gewerbeertrag als in dem Kalenderjahr bezogen, in dem das Wirtschaftsjahr geendet hat oder die Wirtschaftsjahre geendet haben. </p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_p_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_3/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 3</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 3</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Die Gewerbesteuer wird auf Grund des einheitlichen Steuermessbetrags (§ 2 Absatz I) nach dem Hebesatz festgesetzt und erhoben, der für das Rechnungsjahr festgesetzt ist (§ 16 des Gewerbesteuergesetzes), das in dem Erhebungszeitraum beginnt. Es ist der Hebesatz der Gemeinde massgebend, in der der Gewerbebetrieb am Ende des Kalenderjahres betrieben wird. Ist die Steuerpflicht im Laufe des Kalenderjahres weggefallen, so ist der Hebesatz der Gemeinde massgebend, in der der Gewerbebetrieb zuletzt betrieben worden ist. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Die Gemeinden haben als Hebesatz für die Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital für das Rechnungsjahr 1943 und die folgenden Rechnungsjahre denjenigen Hundertsatz festzusetzen, der sich ergibt, wenn der für das Rechnungsjahr 1942 festgesetzte allgemeine Hebesatz für die Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital auf den nächsten vollen, durch fünf teilbaren Betrag aufgerundet wird. Der Minister des Innern kann im Einvernehmen mit dem Finanzminister eine abweichende Festsetzung zulassen. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Befinden sich am Ende des Kalenderjahres oder im Zeitpunkt des Wegfalls der Steuerpflicht Betriebstätten desselben Gewerbebetriebs in mehreren Gemeinden oder erstreckt sich eine Betriebstätte über mehrere Gemeinden, so wird die Gewerbesteuer auf Grund des einheitlichen Steuermessbetrags (§ 2 Absatz 1) nach dem Hebesatz festgesetzt und erhoben, der sich als gewogener Durchschnitt (Absatz 4) aus den Hebesätzen ergibt die von den beteiligten Gemeinden für das Rechnungsjahr 1942 festgesetzt waren. Dabei ist die Zweigstellensteuer (§ 17 des Gewerbesteuergesetzes) zu berücksichtigen. Mehrbelastungen (§ 3 des Einführungsgesetzes zu den Realsteuergesetzen vom 1. Dezember 1936) bleiben ausser Betracht. Der danach ermittelte Hebesatz ist auf den nächsten vollen, durch fünf teilbaren Hundertsatz aufzurunden. Der Minister des Innern kann im Einvernehmen mit dem Minister der Finanzen den Hebesatz ändern. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Gewogener Durchschnitt im Sinn des Absatzes 3 ist der Durchschnitt der Hebesätze, gewogen nach den Anteilen am einheitlichen Steuermessbetrag, die auf die beteiligten Gemeinden (Absatz 5) entfallen. Für die Ermittlung dieser Anteile sind die Vorschriften der §§ 28 bis 33 des Gewerbesteuergesetzes entsprechend anzuwenden. Anteile am einheitlichen Steuermessbetrag von, nicht mehr als (einhundert RM) eintausend Franken sind dabei auszuscheiden. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Beteiligte Gemeinden im Sinn des Absatzes 4 sind:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>wenn der einheitliche Steuermessbetrag für das Rechnungsjahr 1942 nach den Vorschriften des Gewerbesteuergesetzes zu zerlegen war: die Gemeinden, die an dieser Zerlegung zu beteiligen waren;</li>
+<li>in allen anderen Fällen: die Gemeinden, in denen am Ende des Erhebungszeitraums (§ 2 Absatz 1) Betriebstätten sich befinden oder auf die an diesem Zeitpunkt eine Betriebstätte sich erstreckt. Massgebend ist der Erhebungzeitraum, in dem diese Voraussetzung erstmals erfüllt ist.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_p_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_4/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 4</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 4</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Der Steuerschuldner hat am 10. Februar, 10. Mai, 10. August und 10. November Vorauszahlungen zu entrichten.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Jede Vorauszahlung beträgt grundsätzlich ein Viertel der Steuer, die sich bei der letzten Veranlagung ergeben hat. Die Steuerverwaltung kann die Vorauszahlung der Steuer anpassen, die sich für das laufende Kalenderjahr voraussichtlich ergeben wird.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Die einzelne Vorauszahlung ist auf volle ein Euro nach unten abzurunden. Sie wird nur festgesetzt, wenn sie mindestens zehn Euro beträgt.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_p_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_5/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 5</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 5</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Die nach § 4 für ein Kalenderjahr entrichteten Vorauszahlungen werden auf die Steuerschuld für dieses Kalenderjahr angerechnet.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Ist die Steuerschuld grösser als die Summe der anzurechnenden Vorauszahlungen, so ist der Unterschiedsbetrag innerhalb eines Monats nach Bekanntgabe des Steuerbescheids zu entrichten (Abschlusszahlung). Der Teil der Abschlusszahlung, der den im Kalenderjahr fällig gewordenen, aber nicht entrichteten Vorauszahlungen entspricht, ist sofort zu entrichten.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Ist die Steuerschuld kleiner als die Summe der anzurechnenden Vorauszahlungen, so wird der Unterschiedsbetrag nach Bekanntgabe des Steuerbescheids durch Aufrechnung oder Zurückzahlung ausgeglichen.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_p_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_6/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 6</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 6</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Vereinbarungen auf Grund des § 5 des Einführungsgesetzes zu den Realsteuergesetzen über die Höhe der Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital treten für die Geltungsdauer dieser Verordnung ausser Kraft. Die Laufzeit der Steuervereinbarungen wird dadurch nicht unterbrochen.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Die Vorschrift des § 3 des Einführungsgesetzes zu den Realsteuergesetzen (Mehrbelastung) ist ab 1. April 1943 auf die Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital nicht mehr anzuwenden.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_p_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_7/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 7</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 7</num>
+<alinea>
+<content>
+<p>Das Aufkommen der Gewerbesteuer (§ 1 Absatz 1) wird auf die einzelnen Gemeinden verteilt. Der Verteilung wird das Aufkommen 1942 zugrunde gelegt. Die Gewerbesteuerausgleichzuschüsse (§§ 12 bis 21 des Einführungsgesetzes zu den Realsteuergesetzen) werden in die Verteilung einbezogen. Der Minister des Innern regelt im Einvernehmen mit dem Minister der Finanzen die Verteilung im Verwaltungsweg. </p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="abschnitt_ii">
+<num> <span scl:style-format="n">Abschnitt II.</span> </num>
+<heading scl:separator=" "> <b>
+<br/>Vereinfachungen bei der Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital für Erhebungszeifräume, die vor dem 1. April 1943 enden </b> </heading>
+<article id="art_p_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_8/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 8</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 8</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Steuerfestsetzungen für Erhebungszeiträume, die vor dem 1. April 1943 enden, werden bei Änderung des einheitlichen Steuermessbetrags nicht mehr berichtigt, wenn die Änderung des Steuermessbetrags nach dem 31. März 1943 durchgeführt worden ist. Führt die Änderung des Steuermessbetrags zu einer Erhöhung gegenüber dem ursprünglichen Steuermessbetrag, so ist der Unterschiedsbetrag dem einheitlichen Steuermessbetrag für das Kalenderjahr 1943 zuzuschlagen. Führt die Änderung des Steuermessbetrags zu einer Herabsetzung gegenüber dem ursprünglichen Steuermessbetrag, so ist der Unterschiedsbetrag von dem einheitlichen Steuermessbetrag für das Kalenderjahr 1943 abzuziehen. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Ist der einheitliche Steuermessbetrag für das Kalenderjahr 1943 bereits festgesetzt, so ist der Zuschlag oder der Abzug bei der Festsetzung des einheitlichen Steuermessbetrags zu berücksichtigen, die als nächste für ein späteres Kalenderjahr vorzunehmen ist.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Ist der Zuschlag oder der Abzug weder nach Absatz 1 noch nach Absatz 2 möglich, so setzt die Steuerverwaltung auf Grund des Unterschiedsbetrags zwischen dem zuletzt festgesetzten und dem neuen Steuermessbetrag den Steuerbetrag fest, der gegenüber der letzten Steuerfestsetzung mehr oder weniger zu entrichten ist. Massgebend ist der Hebesatz, der für den betreffenden Erhebungszeitraum von der Gemeinde festgesetzt war, in der zu Beginn dieses Erhebungszeitraums die Geschäftsleitung des Gewerbebetriebs sich befunden hat. Befand sich die Geschäftsleitung im Ausland, so ist der Hebesatz der Gemeinde massgebend, in der sich die wirtschaftlich bedeutendste der inländischen Betriebstätten befand. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Steuerfestsetzungen für Erhebungszeiträume, die vor dem 1. April 1943 enden, werden bei Änderung der Zerlegung des einheitlichen Steuermessbetrags (§§ 28 bis 34 des Gewerbesteuergesetzes) nicht mehr berichtigt, wenn die Änderung der Zerlegung nach dem 31. März 1943 durchgeführt worden ist. Die Steuerverwaltung setzt den Steuerbetrag fest, der auf Grund der neuen Zerlegung an alle beteiligten Gemeinden zusammen mehr oder weniger zu entrichten wäre als auf Grund der vorangegangenen Zerlegung. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Mehrbeträge nach den Absätzen 3 und 4 sind innerhalb eines Monats nach Bekanntgabe des Bescheids an das Steueramt zu zahlen. Zuviel gezahlte Beträge werden vom Steueramt durch Zurückzahlung oder Aufrechnung ausgeglichen.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_p_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_9/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 9</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 9</num>
+<alinea>
+<content>
+<p>Die Steuerbeträge, die der Steuerschuldner in den Fällen des § 8 vor der Steuerfestsetzung durch die Steuerverwaltung an die Gemeinde gezahlt hat, verbleiben in voller Höhe der Gemeinde, an die die Zahlung geleistet worden ist.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="abschnitt_iii">
+<num> <span scl:style-format="n">Abschnitt III.</span> </num>
+<heading scl:separator=" "> <br/> <b>Wegfall der Wandergewerbesteuer</b> </heading>
+<article id="art_p_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_10/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 10</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 10</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Das Gesetz über die Besteuerung des Wandergewerbes vom 10. Dezember 1937 tritt für die Zeit ab 1. Januar 1943 ausser Kraft.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Die Wandergewerbebetriebe unterliegen, soweit sie im Inland betrieben werden, ab 1. Januar 1943 der Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital auf Grund des Gewerbesteuergesetzes vom 1. Dezember 1936.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Unter einem Wandergewerbebetrieb ist ein gewerbliches Unternehmen im Sinn des Einkommensteuergesetzes zu verstehen, zu dessen Ausübung es nach den Vorschriften der Gewerbeordnung und den Ausführungsbestimmungen dazu eines Wandergewerbescheins bedarf. Wird im Rahmen eines einheitlichen Gewerbebetriebs sowohl ein stehendes Gewerbe als auch ein Wandergewerbe betrieben, so ist der Betrieb in vollem Umfang als stehendes Gewerbe zu behandeln. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Die Festsetzung und die Erhebung der Gewerbesteuer für die Wandergewerbebetriebe obliegen, abweichend von der Vorschrift des § 1, schon ab 1. Januar 1943 der Steuerverwaltung.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Der Hebesatz für die Gewerbesteuer der Wandergewerbebetriebe beträgt 240 vom Hundert des einheitlichen Steuermessbetrags. § 3 Absatz 3 letzter Satz gilt entsprechend.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="abschnitt_iv">
+<num> <span scl:style-format="n">Abschnitt IV.</span> </num>
+<heading scl:separator=" "> <br/> <b>Vereinfachung der Lohnsummensteuer</b> </heading>
+<article id="art_p_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_11/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 11</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 11</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Abweichend von der Vorschrift des § 23 Absatz 1 des Gewerbesteuergesetzes ist ab 1. April 1943 Besteuerungsgrundlage die Lohnsumme, die in jedem Kalendervierteljahr an die Arbeitnehmer der in der Gemeinde belegenen Betriebstätte gezahlt worden ist. Die Lohnsummensteuer für ein Kalendervierteljahr ist spätestens am fünfzehnten Tag nach Ablauf des Kalendervierteljahres zu entrichten. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Eine Erklärung über die Berechnungsgrundlagen der Lohnsummensteuer (§ 26 Satz 2 des Gewerbesteuergesetzes) ist der Gemeindebehörde nur noch jeweils für ein Kalendervierteljahr, und zwar spätestens am fünfzehnten Tag nach Ablauf des Kalender Vierteljahres abzugeben.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_p_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_12/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 12</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 12</num>
+<alinea>
+<content>
+<p>Die Vorschriften des § 24 Absatz 3 Ziffern 1 und 2 des Gewerbesteuergesetzes sind ab 1. April 1943 nicht mehr anzuwenden.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="abschnitt_v">
+<num> <span scl:style-format="n">Abschnitt V.</span> </num>
+<heading scl:separator=" "> <br/> <b>Übergangs- und Schlussvorschriften</b> </heading>
+<article id="art_p_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_13/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 13</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 13</num>
+<alinea>
+<content>
+<p>Die Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital bemisst sich für die Zeit vom 1. April bis 31. Dezember 1943 bei stehenden Gewerbebetrieben nach neun Zwölfteln des einheitlichen Steuermessbetrags für das Kalenderjahr 1943. Die Zuschläge oder Abzüge § 8 Absatz 1 gemäss sind daneben in voller Höhe zu berücksichtigen.</p>
+</content>
+</alinea>
+</article>
+<article id="art_p_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1/art_p_14/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/ord/1943/03/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">§ 14</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num scl:align="center">§ 14</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Der Steuerschuldner hat bis zur Bekanntgabe des ersten Steuerbescheids auf Grund dieser Verordnung an das Steueramt zu den im § 4 Absatz 1 bezeichneten Zeitpunkten, erstmals zum 10. Mai 1943, Vorauszahlungen auf die Gewerbesteuer nach dem Gewerbeertrag und dem Gewerbekapital zu entrichten. Die Höhe der Vorauszahlungen bestimmt sich nach § 4 Absatz 2. Waren bei der letzten Veranlagung mehrere Gemeinden hebeberechtigt, so bemessen sich die Vorauszahlungen nach der Steuer, die sich für alle hebeberechtigten Gemeinden zusammen bei der letzten Veranlagung ergeben hat. Die einzelne Vorauszahlung wird nur erhoben, wenn sie mindestens 10 Euro beträgt. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Bei Wandergewerbebetrieben setzt die Steuerverwaltung die Vorauszahlungen fest. Die Vorauszahlungen bemessen sich nach der Steuer, die sich für das Kalenderjahr 1943 voraussichtlich ergeben wird. <mod class="mod-end" for="#pm1"/> <noteRef href="#M1" marker="1"/> </p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

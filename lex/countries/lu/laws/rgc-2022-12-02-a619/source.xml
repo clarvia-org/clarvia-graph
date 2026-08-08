@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#author" href="#mdda"/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGC</scl:jolux>
+                        <scl:jolux scl:name="dateDocument">2022-12-02</scl:jolux>
+                        <scl:jolux scl:name="publicationDate"/>
+                        <scl:jolux scl:name="responsibilityOf"/>
+                        <scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/GOUV</scl:jolux>
+                        <scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel1"/>
+                        <scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/610</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2"/>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/831</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3379</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/59</scl:jolux>
+                        <scl:jolux scl:name="dateEntryInForce">2023-01-01</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+                    </scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:lg="fra" scl:name="title">Version rectifiée applicable au 01/01/2023 : Règlement du Gouvernement en Conseil du 2 décembre 2022 fixant les indemnités prévues aux articles 16, alinéa 1er, 18 et 20, paragraphe 1er, du règlement grand-ducal du 14 juin 2015 sur les frais de route et de séjour ainsi que sur les indemnités de déménagement des fonctionnaires et employés de l’État.</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2015/03/25/n3/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/rgd/2015/06/14/n2/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/agc/2021/12/15/a883/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2022-12-02" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2023-01-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rect/2022/12/02/a644/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rect/2022/12/02/a644/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgc/2022/12/02/a619/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rect/2022/12/02/a644/jo" id="rp2" showAs="Règlement du Gouvernement en Conseil du 2 décembre 2022 fixant les indemnités prévues aux articles 16, alinéa 1er, 18 et 20, paragraphe 1er, du règlement grand-ducal du 14 juin 2015 sur les frais de route et de séjour ainsi que sur les indemnités de déménagement des fonctionnaires et employés de l’État - RECTIFICATIF."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2022-12-21|2022-12-02|RECT|644">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/rect/2022/12/02/a644/jo">Règlement du Gouvernement en Conseil du 2 décembre 2022 fixant les indemnités prévues aux articles 16, alinéa 1er, 18 et 20, paragraphe 1er, du règlement grand-ducal du 14 juin 2015 sur les frais de route et de séjour ainsi que sur les indemnités de déménagement des fonctionnaires et employés de l’État - RECTIFICATIF.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2022-12-21|2022-12-02|RECT|644">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/rect/2022/12/02/a644/jo">Règlement du Gouvernement en Conseil du 2 décembre 2022 fixant les indemnités prévues aux articles 16, alinéa 1er, 18 et 20, paragraphe 1er, du règlement grand-ducal du 14 juin 2015 sur les frais de route et de séjour ainsi que sur les indemnités de déménagement des fonctionnaires et employés de l’État - RECTIFICATIF.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle style="11">
+<p>Version rectifiée applicable au 01/01/2023 : Règlement du Gouvernement en Conseil du 2 décembre 2022 fixant les indemnités prévues aux articles 16, alinéa 1<sup>er</sup>, 18 et 20, paragraphe 1<sup>er</sup>, du règlement grand-ducal du 14 juin 2015 sur les frais de route et de séjour ainsi que sur les indemnités de déménagement des fonctionnaires et employés de l’État.</p>
+</longTitle>
+</preface>
+<preamble class="show_in_pdf" style="show_in_pdf">
+<formula name="">
+<p>Le Gouvernement en Conseil,</p>
+</formula>
+<container name="">
+<p>Vu l’article 29 de la <ref href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="e27a5b0b-cdc2-4aa4-a709-bc019f693eb5">loi modifiée du 25 mars 2015</ref> fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État ;</p>
+<p>Vu les articles 16, alinéa 1<sup>er</sup>, 18 et 20, paragraphe 1<sup>er</sup>, du <ref href="/eli/etat/leg/rgd/2015/06/14/n2/jo" id="fe031793-84af-432e-8e4e-1894b333f070">règlement grand-ducal du 14 juin 2015</ref> sur les frais de route et de séjour ainsi que sur les indemnités de déménagement des fonctionnaires et employés de l’État ;</p>
+<p>Sur proposition du Premier Ministre, Ministre d’État et après délibération ;</p>
+</container>
+<formula name="">
+<p>Arrête :</p>
+</formula>
+</preamble>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_1er/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Les indemnités prévues à l‘article 16, alinéa 1<sup>er</sup>, du <ref href="/eli/etat/leg/rgd/2015/06/14/n2/jo" id="91747b48-d12b-47c4-9ef0-3da78af92125" scl:verify="true">règlement grand-ducal du 14 juin 2015</ref> sur les frais de route et de séjour ainsi que sur les indemnités de déménagement des fonctionnaires et employés de l’État sont fixées comme suit :</p>
+<ol scl:start="1" scl:symbol="1.">
+<li>indemnité de jour : 14 euros ;</li>
+<li>indemnité de nuit : 56 euros.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’indemnité prévue à l’article 18 du <ref href="/eli/etat/leg/rgd/2015/06/14/n2/jo" id="8a79a740-619b-4e12-9236-310b3b2b92ba">même règlement</ref> est fixée à 1 euro.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_2/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> <eop/>Art. 2.</num>
+<alinea>
+<content>
+<p>Les indemnités prévues à l’article 20, paragraphe 1<sup>er</sup>, du <ref href="/eli/etat/leg/rgd/2015/06/14/n2/jo" id="2bb700b5-4d55-4708-a380-4a386fd4f6a8">même règlement</ref> sont fixées comme suit :</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_1" scl:cols="40 30 30" scl:cols-align="left center center" scl:cols-valign="middle" width="100">
+<tr>
+<td scl:align="center">
+<p> <b>Pays ou Lieu de destination</b> </p>
+</td>
+<td>
+<p> <b>Indemnité de jour €</b> </p>
+</td>
+<td>
+<p> <b>Indemnité de nuit €</b> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Albanie</p>
+<p scl:space-tab="15">Tirana</p>
+</td>
+<td>
+<p>30</p>
+<p>45</p>
+</td>
+<td>
+<p>70</p>
+<p> 140</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Allemagne</p>
+<p scl:space-tab="15">Berlin/Munich</p>
+</td>
+<td>
+<p>60</p>
+<p>60</p>
+</td>
+<td>
+<p>195</p>
+<p>220</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Autriche</p>
+<p scl:space-tab="15">Vienne</p>
+</td>
+<td>
+<p>50</p>
+<p>60</p>
+</td>
+<td>
+<p>160</p>
+<p>200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Belgique</p>
+<p scl:space-tab="15">Bruxelles</p>
+</td>
+<td>
+<p>50</p>
+<p>60</p>
+</td>
+<td>
+<p>160</p>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bosnie-Herzégovine</p>
+<p scl:space-tab="15">Sarajevo</p>
+</td>
+<td>
+<p>40</p>
+<p>70</p>
+</td>
+<td>
+<p>90</p>
+<p>160</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bulgarie</p>
+</td>
+<td>
+<p>50</p>
+</td>
+<td>
+<p>180</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Canada</p>
+<p scl:space-tab="15">Ottawa/Montréal/Toronto</p>
+</td>
+<td>
+<p>60</p>
+<p>60</p>
+</td>
+<td>
+<p>170</p>
+<p>190</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Chine</p>
+<p scl:space-tab="15">Pékin</p>
+<p scl:space-tab="15">Hong Kong</p>
+<p scl:space-tab="15">Shanghai</p>
+</td>
+<td>
+<p>60</p>
+<p>80</p>
+<p>80</p>
+<p>70</p>
+</td>
+<td>
+<p>200</p>
+<p>240</p>
+<p>330</p>
+<p>285</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Croatie</p>
+<p scl:space-tab="15">Zagreb, Split</p>
+</td>
+<td>
+<p>40</p>
+<p>70</p>
+</td>
+<td>
+<p>100</p>
+<p>190</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Chypre</p>
+</td>
+<td>
+<p>60</p>
+</td>
+<td>
+<p>210</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Danemark</p>
+<p scl:space-tab="15">Copenhague</p>
+</td>
+<td>
+<p>70</p>
+<p>90</p>
+</td>
+<td>
+<p>200</p>
+<p>230</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Émirats arabes unies</p>
+</td>
+<td>
+<p>80</p>
+</td>
+<td>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Espagne</p>
+<p scl:space-tab="15">Madrid/Barcelone</p>
+</td>
+<td>
+<p>50</p>
+<p>60</p>
+</td>
+<td>
+<p>180</p>
+<p>210</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Estonie</p>
+<p scl:space-tab="15">Tallin</p>
+</td>
+<td>
+<p>35</p>
+<p>55</p>
+</td>
+<td>
+<p>85</p>
+<p>175</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>États-Unis d’Amérique</p>
+<p scl:space-tab="15">New York </p>
+<p scl:space-tab="15">San Francisco</p>
+<p scl:space-tab="15">Washington</p>
+</td>
+<td>
+<p>80</p>
+<p>100</p>
+<p>85</p>
+<p>85</p>
+</td>
+<td>
+<p>170</p>
+<p>260</p>
+<p>230</p>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Finlande</p>
+</td>
+<td>
+<p>80</p>
+</td>
+<td>
+<p>230</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>France</p>
+<p scl:space-tab="15">Paris</p>
+<p scl:space-tab="15">Strasbourg</p>
+</td>
+<td>
+<p>60</p>
+<p>60</p>
+<p>60</p>
+</td>
+<td>
+<p>170</p>
+<p>250</p>
+<p>230</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grèce</p>
+<p scl:space-tab="15">Athènes, Thessalonique</p>
+</td>
+<td>
+<p>50</p>
+<p>50</p>
+</td>
+<td>
+<p>130</p>
+<p>180</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hongrie</p>
+<p scl:space-tab="15">Budapest</p>
+</td>
+<td>
+<p>50</p>
+<p>60</p>
+</td>
+<td>
+<p>120</p>
+<p>200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Inde</p>
+<p scl:space-tab="15">New Delhi/Mumbai/Calcutta</p>
+</td>
+<td>
+<p>60</p>
+<p>60</p>
+</td>
+<td>
+<p>200</p>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Irlande</p>
+<p scl:space-tab="15">Dublin</p>
+</td>
+<td>
+<p>65</p>
+<p>70</p>
+</td>
+<td>
+<p>180</p>
+<p>220</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Italie</p>
+<p scl:space-tab="15">Rome/Venise</p>
+</td>
+<td>
+<p>60</p>
+<p>70</p>
+</td>
+<td>
+<p>180</p>
+<p>220</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Japon</p>
+<p scl:space-tab="15">Tokyo</p>
+</td>
+<td>
+<p>100</p>
+<p>100</p>
+</td>
+<td>
+<p>220</p>
+<p>260</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Kazakhstan</p>
+<p scl:space-tab="15">Astana</p>
+</td>
+<td>
+<p>60</p>
+<p>60</p>
+</td>
+<td>
+<p>180</p>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lettonie</p>
+<p scl:space-tab="15">Riga</p>
+</td>
+<td>
+<p>35</p>
+<p>60</p>
+</td>
+<td>
+<p>110</p>
+<p>180</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Lituanie</p>
+<p scl:space-tab="15">Vilnius</p>
+</td>
+<td>
+<p>45</p>
+<p>55</p>
+</td>
+<td>
+<p>110</p>
+<p>195</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Luxembourg</p>
+<p scl:space-tab="15">Kirchberg</p>
+</td>
+<td>
+<p>60</p>
+<p>60</p>
+</td>
+<td>
+<p>200</p>
+<p>220</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Monaco</p>
+</td>
+<td>
+<p>80</p>
+</td>
+<td>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Norvège</p>
+</td>
+<td>
+<p>80</p>
+</td>
+<td>
+<p>230</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pays-Bas</p>
+<p scl:space-tab="15">La Haye</p>
+</td>
+<td>
+<p>50</p>
+<p>60</p>
+</td>
+<td>
+<p>180</p>
+<p>210</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pologne</p>
+<p scl:space-tab="15">Varsovie</p>
+</td>
+<td>
+<p>50</p>
+<p>60</p>
+</td>
+<td>
+<p>160</p>
+<p>210</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Portugal</p>
+<p scl:space-tab="15">Lisbonne/Porto</p>
+</td>
+<td>
+<p>50</p>
+<p>60</p>
+</td>
+<td>
+<p>150</p>
+<p>185</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>République Tchèque</p>
+<p scl:space-tab="15">Prague</p>
+</td>
+<td>
+<p>40</p>
+<p>60</p>
+</td>
+<td>
+<p>120</p>
+<p>170</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Roumanie</p>
+<p scl:space-tab="15">Bucarest</p>
+</td>
+<td>
+<p>40</p>
+<p>60</p>
+</td>
+<td>
+<p>120</p>
+<p>200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Royaume-Uni</p>
+<p scl:space-tab="15">Londres</p>
+</td>
+<td>
+<p>70</p>
+<p>90</p>
+</td>
+<td>
+<p>200</p>
+<p>280</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Russie</p>
+<p scl:space-tab="15">Moscou</p>
+<p scl:space-tab="15">St. Petersbourg</p>
+</td>
+<td>
+<p>40</p>
+<p>90</p>
+<p>80</p>
+</td>
+<td>
+<p>125</p>
+<p>250</p>
+<p>240</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Singapour</p>
+</td>
+<td>
+<p>80</p>
+</td>
+<td>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Slovaquie</p>
+<p scl:space-tab="15">Bratislava</p>
+</td>
+<td>
+<p>35</p>
+<p>60</p>
+</td>
+<td>
+<p>120</p>
+<p>170</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Slovénie</p>
+<p scl:space-tab="15">Ljubljana</p>
+</td>
+<td>
+<p>40</p>
+<p>60</p>
+</td>
+<td>
+<p>120</p>
+<p>170</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Suède</p>
+</td>
+<td>
+<p>80</p>
+</td>
+<td>
+<p>230</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> <mod class="mod-start" for="#pm1"/>Suisse</p>
+<p scl:space-tab="15">Zurich/Genève/Berne<mod class="mod-end" for="#pm1"/> <noteRef href="#M1" marker="1"/> </p>
+</td>
+<td>
+<p>75</p>
+<p>80</p>
+</td>
+<td>
+<p>220</p>
+<p>240</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> <eop/>Thaïlande</p>
+<p scl:space-tab="15">Bangkok</p>
+</td>
+<td>
+<p>60</p>
+<p>70</p>
+</td>
+<td>
+<p>150</p>
+<p>220</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> <mod class="mod-start" for="#pm2"/>Turquie</p>
+<p scl:space-tab="15">Ankara/Izmira</p>
+<p scl:space-tab="15">Istanbul/Antalya<mod class="mod-end" for="#pm2"/> <noteRef href="#M2" marker="2"/> </p>
+</td>
+<td>
+<p>40</p>
+<p>50</p>
+<p>50</p>
+</td>
+<td>
+<p>130</p>
+<p>220</p>
+<p>230</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ukraine</p>
+<p scl:space-tab="15"> Kiev</p>
+</td>
+<td>
+<p>50</p>
+<p>60</p>
+</td>
+<td>
+<p>120</p>
+<p>220</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Autres</p>
+</td>
+<td>
+<p>70</p>
+</td>
+<td>
+<p>200</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_3/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Pour les pays qui président le Conseil de l’Union européenne, les montants plafonds de l’indemnité de nuit sont augmentés de 10 pour cent pendant la durée de la présidence.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_4/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>Le règlement du <ref href="/eli/etat/leg/agc/2021/12/15/a883/jo" id="5e90b052-3604-4ba2-bea5-2677d0aee29c">Gouvernement en Conseil du 15 décembre 2021</ref> fixant les indemnités prévues aux articles 16, alinéa 1<sup>er</sup>, 18 et 20, paragraphe 1<sup>er</sup>, du <ref href="/eli/etat/leg/rgd/2015/06/14/n2/jo" id="399fba89-6b68-453b-8b37-826e700b7fdf" scl:verify="true">règlement grand-ducal du 14 juin 2015</ref> sur les frais de route et de séjour ainsi que sur les indemnités de déménagement des fonctionnaires et employés de l’État est abrogé.</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_5/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Le présent règlement entre en vigueur le 1<sup>er</sup> janvier 2023.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_6/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Le présent règlement sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</article>
+</body>
+<conclusions class="show_in_pdf" style="show_in_pdf">
+<p> <signature> <docDate date="2022-12-21">Luxembourg, le 2 décembre 2022.</docDate> </signature> <signature> <shortTitle>Les Membres du Gouvernement,</shortTitle> <person refersTo="">Xavier Bettel</person> <person refersTo="">Paulette Lenert</person> <person refersTo="">François Bausch</person> <person refersTo="">Claude Meisch</person> <person refersTo="">Corinne Cahen</person> <person refersTo="">Marc Hansen</person> <person refersTo="">Claude Turmes</person> <person refersTo="">Sam Tanson</person> <person refersTo="">Taina Bofferding</person> <person refersTo="">Lex Delles</person> <person refersTo="">Henri Kox</person> <person refersTo="">Claude Haagen</person> <person refersTo="">Georges Engel</person> <person refersTo="">Joëlle Welfring</person> </signature> </p>
+</conclusions>
+</act>
+</akomaNtoso>

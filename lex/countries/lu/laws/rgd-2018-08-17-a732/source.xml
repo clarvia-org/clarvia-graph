@@ -1,0 +1,3794 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="" scl:page-proof="many">
+		<meta>
+			<identification source="#somebody">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2018-08-17" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MSI"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2018-08-17" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2018-08-17" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2021-08-30</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2018-08-17</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2020-11-17</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-10-21</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2018/a732</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MSI</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/4068</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/555</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/58</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/225</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/381</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/256</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/610</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/944</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1190</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 21/10/2022 : Règlement grand-ducal du 17 août 2018 portant :\n1° détermination de la mise en œuvre du plan d’insertion professionnelle ;\n2° fixation du programme et de la procédure d’examen de la formation professionnelle de base des fonctionnaires stagiaires du cadre policier ;\n3° précision des modalités d’application de l’appréciation des performances professionnelles aux fonctionnaires stagiaires du cadre policier ;\n4° fixation des programmes de formation spéciale, de la durée de la formation spéciale théorique et de l’appréciation des épreuves de l’examen de fin de formation spéciale des fonctionnaires stagiaires du cadre civil de la Police grand-ducale ;\n5° détermination des formalités à remplir par les candidats à l’examen de promotion, du programme de l’examen ainsi que des modalités de classement et des critères de départage en cas d’égalité des notes.</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="titleShort">Règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/15/n1/jo</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/2018/07/18/a621/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/09/30/n7/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1808/11/17/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/1982/03/12/n5/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1999/05/31/n7/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a731/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2000/07/24/n4/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/02/06/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/11/19/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2007/04/27/n4/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117/fr</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2018-08-17-a732-consolide-20201117-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/consolide/20201117/fr</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2018-08-17-a732-consolide-20201117-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2018-08-17" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2020-01-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+				<eventRef date="2020-11-17" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2022-10-21" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_5_20221021"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_5_20221021"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_13"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_15"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_15"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_17"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_17"/>
+					</textualMod>
+					<textualMod id="pm15" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_17"/>
+					</textualMod>
+					<textualMod id="pm16" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_18"/>
+					</textualMod>
+					<textualMod id="pm17" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_19"/>
+					</textualMod>
+					<textualMod id="pm18" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_19"/>
+					</textualMod>
+					<textualMod id="pm19" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_19"/>
+					</textualMod>
+					<textualMod id="pm20" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_20"/>
+					</textualMod>
+					<textualMod id="pm21" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_20"/>
+					</textualMod>
+					<textualMod id="pm22" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_22"/>
+					</textualMod>
+					<textualMod id="pm23" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm24" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm25" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm26" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_5_20221021"/>
+					</textualMod>
+					<textualMod id="pm27" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_5_20221021"/>
+					</textualMod>
+					<textualMod id="pm28" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_7_20221021"/>
+					</textualMod>
+					<textualMod id="pm29" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm30" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a903/jo"/>
+						<destination href="#art_21"/>
+					</textualMod>
+					<textualMod id="pm31" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_5_20221021"/>
+					</textualMod>
+					<textualMod id="pm32" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm33" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm34" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm35" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm36" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+					<textualMod id="pm37" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_10_20221021"/>
+					</textualMod>
+					<textualMod id="pm38" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_11_20221021"/>
+					</textualMod>
+					<textualMod id="pm39" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_12_20221021"/>
+					</textualMod>
+					<textualMod id="pm40" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm41" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_17_20221021"/>
+					</textualMod>
+					<textualMod id="pm42" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_17"/>
+					</textualMod>
+					<textualMod id="pm43" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_18"/>
+					</textualMod>
+					<textualMod id="pm44" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_23_20221021"/>
+					</textualMod>
+					<textualMod id="pm45" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_24"/>
+					</textualMod>
+					<textualMod id="pm46" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm47" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination href="#art_29"/>
+					</textualMod>
+					<textualMod id="pm48" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm49" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm50" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm51" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/11/03/a900/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm52" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_13"/>
+					</textualMod>
+					<textualMod id="pm53" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm54" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm55" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm56" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm57" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm58" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm59" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_15"/>
+					</textualMod>
+					<textualMod id="pm60" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_15"/>
+					</textualMod>
+					<textualMod id="pm61" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_25"/>
+					</textualMod>
+					<textualMod id="pm62" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_26"/>
+					</textualMod>
+					<textualMod id="pm63" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_26"/>
+					</textualMod>
+					<textualMod id="pm64" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_26"/>
+					</textualMod>
+					<textualMod id="pm65" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_26"/>
+					</textualMod>
+					<textualMod id="pm66" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_26"/>
+					</textualMod>
+					<textualMod id="pm67" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_26"/>
+					</textualMod>
+					<textualMod id="pm68" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_26"/>
+					</textualMod>
+					<textualMod id="pm69" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination href="#art_26"/>
+					</textualMod>
+					<textualMod id="pm70" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2022/10/13/a520/jo"/>
+						<destination/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2018/08/08/n2/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2019/12/20/a903/jo" id="rp2" showAs="Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale."/>
+				<passiveRef href="/eli/etat/leg/rgd/2020/11/03/a900/jo" id="rp3" showAs="Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale."/>
+				<passiveRef href="/eli/etat/leg/rgd/2022/10/13/a520/jo" id="rp4" showAs="Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M13" marker="13" refersTo="pm13" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M14" marker="14" refersTo="pm14" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M15" marker="15" refersTo="pm15" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M16" marker="16" refersTo="pm16" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M17" marker="17" refersTo="pm17" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M18" marker="18" refersTo="pm18" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M19" marker="19" refersTo="pm19" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M20" marker="20" refersTo="pm20" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M21" marker="21" refersTo="pm21" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M22" marker="22" refersTo="pm22" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M23" marker="23" refersTo="pm23" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M24" marker="24" refersTo="pm24" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M25" marker="25" refersTo="pm25" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M26" marker="26" refersTo="pm26" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M27" marker="27" refersTo="pm27" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M28" marker="28" refersTo="pm28" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M29" marker="29" refersTo="pm29" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M30" marker="30" refersTo="pm30" title="A|2019-12-28|2019-12-20|RGD|903">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a903/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M31" marker="31" refersTo="pm31" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M32" marker="32" refersTo="pm32" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M33" marker="33" refersTo="pm33" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M34" marker="34" refersTo="pm34" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M35" marker="35" refersTo="pm35" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M36" marker="36" refersTo="pm36" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M37" marker="37" refersTo="pm37" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M38" marker="38" refersTo="pm38" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M39" marker="39" refersTo="pm39" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M40" marker="40" refersTo="pm40" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M41" marker="41" refersTo="pm41" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M42" marker="42" refersTo="pm42" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M43" marker="43" refersTo="pm43" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M44" marker="44" refersTo="pm44" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M45" marker="45" refersTo="pm45" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M46" marker="46" refersTo="pm46" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M47" marker="47" refersTo="pm47" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M48" marker="48" refersTo="pm48" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M49" marker="49" refersTo="pm49" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M50" marker="50" refersTo="pm50" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M51" marker="51" refersTo="pm51" title="A|2020-11-13|2020-11-03|RGD|900">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a900/jo">Règlement grand-ducal du 3 novembre 2020 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M52" marker="52" refersTo="pm52" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M53" marker="53" refersTo="pm53" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M54" marker="54" refersTo="pm54" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M55" marker="55" refersTo="pm55" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M56" marker="56" refersTo="pm56" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M57" marker="57" refersTo="pm57" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M58" marker="58" refersTo="pm58" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M59" marker="59" refersTo="pm59" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M60" marker="60" refersTo="pm60" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M61" marker="61" refersTo="pm61" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M62" marker="62" refersTo="pm62" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M63" marker="63" refersTo="pm63" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M64" marker="64" refersTo="pm64" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M65" marker="65" refersTo="pm65" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M66" marker="66" refersTo="pm66" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M67" marker="67" refersTo="pm67" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M68" marker="68" refersTo="pm68" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M69" marker="69" refersTo="pm69" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M70" marker="70" refersTo="pm70" title="A|2022-10-17|2022-10-13|RGD|520">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/13/a520/jo">Règlement grand-ducal du 13 octobre 2022 portant modification du règlement grand-ducal modifié du 17 août 2018 relatif à la formation du personnel de la Police grand-ducale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:border="50" scl:delim-left="(" scl:delim-right=")" scl:type="document" source="#eli-etat-leg-rgd-2018-08-17-n6-consolide-2022-10-21-fr-xml">
+				<note id="note_0_0_0">
+					<p>ainsi modifié par le règlement grand-ducal du 13 octobre 2022.</p>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="9">
+				<p>Version consolidée applicable au 21/10/2022 : Règlement grand-ducal du 17 août 2018 portant :</p>
+				<ol scl:start="1" scl:symbol="1°">
+					<li>détermination de la mise en œuvre du plan d’insertion professionnelle ;</li>
+					<li>fixation du programme et de la procédure d’examen de la formation professionnelle de base des fonctionnaires stagiaires du cadre policier ;</li>
+					<li>précision des modalités d’application de l’appréciation des performances professionnelles aux fonctionnaires stagiaires du cadre policier ;</li>
+					<li>fixation des programmes de formation spéciale, de la durée de la formation spéciale théorique et de l’appréciation des épreuves de l’examen de fin de formation spéciale des fonctionnaires stagiaires du cadre civil de la Police grand-ducale ;</li>
+					<li>détermination des formalités à remplir par les candidats à l’examen de promotion, du programme de l’examen ainsi que des modalités de classement et des critères de départage en cas d’égalité des notes.</li>
+				</ol>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_1er">
+				<num>
+					<b>Chapitre 1<sup>er</sup>
+					</b>
+				</num>
+				<heading>
+					<b>Le plan d’insertion professionnelle du fonctionnaire stagiaire du cadre policier</b>
+				</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_1er/20180901</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 1<sup>er</sup>.</b>
+					</num>
+					<alinea>
+						<content>
+							<p>Le directeur général de la Police grand-ducale, ci-après désignée « Police », désigne un patron de stage pour chaque fonctionnaire stagiaire du cadre policier admis à la formation professionnelle de base.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le patron de stage peut être choisi parmi les membres du cadre policier appartenant à une autre catégorie de traitement que le fonctionnaire stagiaire du cadre policier.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les patrons de stage suivent une formation déterminée par le directeur général de la Police. Leurs missions sont celles définies à l’article 1<sup>er</sup>, paragraphe 2 du <ref href="/eli/etat/leg/rgd/2015/09/30/n7/jo" id="af89017e-046a-4be4-914a-8a8db6a466a8">règlement grand-ducal du 30 septembre 2015</ref> déterminant la mise en œuvre du plan d’insertion professionnelle des fonctionnaires stagiaires.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_2/20180901</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 2.</b>
+					</num>
+					<alinea>
+						<content>
+							<p>Un livret d’accueil comprenant les informations visées à l’article 2, alinéa 2 du <ref href="/eli/etat/leg/rgd/2015/09/30/n7/jo" id="0ad64610-08fd-4220-be41-51c39917b493">règlement grand-ducal du 30 septembre 2015</ref> déterminant la mise en œuvre du plan d’insertion professionnelle des fonctionnaires stagiaires est remis au fonctionnaire stagiaire du cadre policier au moment de son admission à la formation professionnelle de base.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_3/20180901</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 3.</b>
+					</num>
+					<alinea>
+						<content>
+							<p>Il est constitué pour chaque fonctionnaire stagiaire du cadre policier un carnet de stage qui a pour objet de documenter son évolution au cours de sa formation professionnelle de base.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Sont à insérer dans le carnet de stage, toutes les pièces en relation avec la formation du fonctionnaire stagiaire du cadre policier.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le carnet de stage est tenu par le patron de stage. À la fin de la formation professionnelle de base, le patron de stage transmet le carnet de stage à la direction des ressources humaines de la Police qui l’insère dans le dossier personnel du fonctionnaire stagiaire du cadre policier.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_2">
+				<num>
+					<b>Chapitre</b> <b>2</b>
+				</num>
+				<heading>
+					<b>L’appréciation des performances professionnelles du fonctionnaire stagiaire du cadre policier</b>
+				</heading>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_4/20200101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 4.</b>
+					</num>
+					<alinea>
+						<content>
+							<p>L’appréciation des performances professionnelles du fonctionnaire stagiaire du cadre policier comprend <mod class="mod-start" for="#pm23"/>
+								<del>une appréciation des compétences techniques et</del>
+								<mod class="mod-end" for="#pm23"/>
+								<noteRef href="#M23" marker="23"/> une appréciation des compétences comportementales. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L’appréciation des compétences comportementales se fait <mod class="mod-start" for="#pm24"/>au cours des trois derniers mois<mod class="mod-end" for="#pm24"/>
+								<noteRef href="#M24" marker="24"/> de chaque période de référence.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm25"/>
+								<del>L’appréciation des performances techniques s’effectue au cours de la phase d’initiation pratique.<mod class="mod-end" for="#pm25"/>
+								</del>
+								<noteRef href="#M25" marker="25"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Lorsque l’une des appréciations prévues donne lieu à un niveau de performance 1, le fonctionnaire stagiaire du cadre policier se voit retirer le statut de fonctionnaire stagiaire du cadre policier.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le supérieur hiérarchique visé à l’article 4<i>bis</i> de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="b7853824-b46e-490c-997a-29e9c2dab581">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’État est :</p>
+							<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+								<li>pour les fonctionnaires stagiaires du cadre policier des groupes de traitement B1, C1 et C2, un membre de la direction de l’École de police ;</li>
+								<li>pour les fonctionnaires stagiaires du cadre policier des groupes de la catégorie de traitement A, le directeur central des ressources et compétences.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_5_20221021" style="del">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_5/20201117</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>
+							<del>
+								<mod class="mod-start" for="#pm31"/>Art. 5.</del>
+						</b>
+					</num>
+					<paragraph id="paragraph_1">
+						<num>
+							<del>(1)</del>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<del>Les périodes de référence du fonctionnaire stagiaire du cadre policier de la catégorie de traitement A et des groupes de traitement B1 et C1 sont fixées comme suit :</del>
+								</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°" style="del">
+									<li style="del">
+										<del>première période de référence : première année de la <mod class="mod-start" for="#pm1"/>formation professionnelle de base<mod class="mod-end" for="#pm1"/>
+										</del>
+										<noteRef href="#M1" marker="1"/> ;</li>
+									<li style="del">
+										<del>deuxième période de référence : deuxième année de la <mod class="mod-start" for="#pm2"/>formation professionnelle de base</del>
+										<mod class="mod-end" for="#pm2"/>
+										<noteRef href="#M2" marker="2"/> ;</li>
+									<li style="del">
+										<mod class="mod-start" for="#pm26"/>
+										<del style="del">
+											<del>troisième période de référence : phase d’initiation pratique</del>.<mod class="mod-end" for="#pm26"/>
+										</del>
+										<noteRef href="#M26" marker="26"/>
+									</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_2">
+						<num>
+							<mod class="mod-start" for="#pm27"/>
+							<del>(2)</del>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<del>La période de référence du fonctionnaire stagiaire du cadre policier du groupe de traitement C2 équivaut à la formation professionnelle de base d’un an.</del>
+									<mod class="mod-end" for="#pm27"/>
+									<noteRef href="#M27" marker="27"/>
+									<mod class="mod-end" for="#pm31"/>
+									<noteRef href="#M31" marker="31"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter xmlns:ns3727365="http://www.scl.lu" id="chapitre_3" ns3727365:hidden="false">
+				<num>
+					<b>Chapitre 3</b>
+				</num>
+				<heading>
+					<b>La formation professionnelle de base des fonctionnaires stagiaires du cadre policier</b>
+				</heading>
+				<section id="chapitre_3.section_1re">
+					<num>
+						<b>Section 1<sup>re</sup>
+						</b>
+					</num>
+					<heading>
+						<b> La catégorie de traitement A</b>
+					</heading>
+					<article id="art_6">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_6</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_6/20201117</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 6.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>La <mod class="mod-start" for="#pm3"/>
+									<mod class="mod-start" for="#pm32"/>phase de formation policière théorique et pratique<mod class="mod-end" for="#pm32"/>
+									<noteRef href="#M32" marker="32"/>
+									<mod class="mod-end" for="#pm3"/>
+									<noteRef href="#M3" marker="3"/> des fonctionnaires stagiaires du cadre policier de la catégorie de traitement A comprend une formation dans une école de police à l’étranger, retenue par le ministre ayant la Police grand-ducale dans ses attributions, désigné ci-après par « ministre » sur proposition du directeur général de la Police et une formation complémentaire au Grand-Duché de Luxembourg portant sur la législation, les procédures et techniques policières nationales.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Pendant la <mod class="mod-start" for="#pm4"/>
+									<mod class="mod-start" for="#pm33"/>phase de formation policière théorique et pratique<mod class="mod-end" for="#pm33"/>
+									<noteRef href="#M33" marker="33"/>
+									<mod class="mod-end" for="#pm4"/>
+									<noteRef href="#M4" marker="4"/>, des périodes d’observation pratiques sont organisées dans les unités de police au Grand-Duché de Luxembourg ou à l’étranger.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_7_20221021" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_7</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_7/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<mod class="mod-start" for="#pm28"/>
+								<del>Art. 7.</del>
+							</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<del>Après la réussite de la formation à l’école de police à l’étranger et après avoir suivi la formation complémentaire, les fonctionnaires stagiaires du cadre policier de la catégorie de traitement A sont autorisés à suivre la phase d’initiation pratique.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>La phase d’initiation pratique s’effectue au sein des unités relevant de la direction centrale police administrative et de la direction centrale police judiciaire. Pour les besoins de la formation, la phase d’initiation pratique peut en partie s’effectuer dans des unités ou services de police étrangers.</del>
+									<mod class="mod-end" for="#pm28"/>
+									<noteRef href="#M28" marker="28"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_7">
+						<num>
+							<mod class="mod-start" for="#pm34"/>
+							<u>Art. 7.</u>
+						</num>
+						<alinea>
+							<content>
+								<p>Après la réussite de la formation à l’école de police à l’étranger, les fonctionnaires stagiaires du cadre policier de la catégorie de traitement A sont autorisés à suivre la phase d’initiation pratique.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La phase d’initiation pratique s’effectue au sein des unités relevant de la direction centrale police administrative et de la direction centrale police judiciaire. Pour les besoins de la formation, la phase d’initiation pratique peut en partie s’effectuer dans des unités ou services de police étrangers. <mod class="mod-end" for="#pm34"/>
+									<noteRef href="#M34" marker="34"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_8">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_8</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_8/20180901</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 8.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>Le classement final pour l’admission définitive des fonctionnaires stagiaires du cadre policier de la catégorie de traitement A se fait par groupe de traitement et est déterminé par le résultat final obtenu à l’école de police à l’étranger.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Ce classement équivaut au classement de l’examen de fin de stage tel que prévu par l’article 54 de la <ref href="/eli/etat/leg/loi/2018/07/18/a621/jo" id="e5a8d2ac-4845-488b-9bd5-9c646eddb39c">loi du 18 juillet 2018</ref> sur la Police grand-ducale.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_3.section_2">
+					<num>
+						<b>Section 2</b>
+					</num>
+					<heading>
+						<b>Les groupes de traitement B1 et C1</b>
+					</heading>
+					<article id="art_9">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_9</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_9/20201117</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<mod class="mod-start" for="#pm35"/>
+								<u>Art. 9.</u>
+							</b>
+						</num>
+						<alinea>
+							<content>
+								<p>La phase de formation policière théorique et pratique des fonctionnaires stagiaires du cadre policier des groupes de traitement B1 et C1 est effectuée à l’École de police. Le contenu du programme de formation à accomplir lors de cette phase comprend 1350 heures.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Pendant la phase de formation policière théorique et pratique, des périodes d’observation pratiques sont organisées dans les unités de police au Grand-Duché de Luxembourg ou à l’étranger.<mod class="mod-end" for="#pm35"/>
+									<noteRef href="#M35" marker="35"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_10_20221021" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_10</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_10/20201117</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<mod class="mod-start" for="#pm36"/>
+								<del>Art. 10.</del>
+							</b>
+						</num>
+						<alinea>
+							<content>
+								<p ns3727365:space-after="10">
+									<del>Le programme de l’instruction tactique de base est le suivant :</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<table id="table_1" ns3727365:align="center" ns3727365:cols="30 70" ns3727365:cols-align="center left" width="90">
+									<tr>
+										<td/>
+										<td>
+											<p ns3727365:align="center">
+												<b>
+													<del>Modules</del>
+												</b>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												<del>1</del>
+											</p>
+										</td>
+										<td>
+											<p>
+												<del>Organisation et fonctionnement de la Police</del>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												<del>2</del>
+											</p>
+										</td>
+										<td>
+											<p>
+												<del>Éducation physique et sportive</del>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												<del>3</del>
+											</p>
+										</td>
+										<td>
+											<p>
+												<del>Éléments de base du fonctionnement opérationnel et tactique</del>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												<del>4</del>
+											</p>
+										</td>
+										<td>
+											<p>
+												<del>Initiation théorique et pratique à l'armement et au tir</del>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												<del>5</del>
+											</p>
+										</td>
+										<td>
+											<p>
+												<del>Premiers secours</del>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												<del>6</del>
+											</p>
+										</td>
+										<td>
+											<p>
+												<del>Intégration du stagiaire dans l'environnement et le fonctionnement de la Police</del>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>
+												<del>7</del>
+											</p>
+										</td>
+										<td>
+											<p>
+												<del>Mise en application pratique intermédiaire et finale des compétences acquises</del>
+											</p>
+										</td>
+									</tr>
+								</table>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>Les modules sont notés sur un total de 480 points.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p ns3727365:space-after="0">
+									<del>Les modules 1 à 6 sont notés chacun sur 60 points et le module 7 sur 120 points. Les points sont exprimés par une note arrondie à l’unité supérieure.<mod class="mod-end" for="#pm36"/>
+									</del>
+									<noteRef href="#M36" marker="36"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_11_20221021" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_11</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_11/20201117</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<mod class="mod-start" for="#pm37"/>
+								<del>Art. 11.</del>
+							</b>
+						</num>
+						<paragraph id="paragraph_3">
+							<num>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le fonctionnaire stagiaire du cadre policier des groupes de traitement B1 et C1 qui est empêché de participer aux épreuves du module « éducation physique et sportive » par suite d’un cas de force majeure dûment constaté par le directeur de l’École de police, est autorisé à passer une épreuve spéciale à organiser endéans les deux mois de la clôture de l’instruction tactique de base.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_4">
+							<num>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le fonctionnaire stagiaire du cadre policier, qui pour des raisons médicales dûment constatées par le médecin du travail dans la Fonction publique, n’est pas apte à participer aux épreuves du module « éducation physique et sportive » et qui de ce fait a échoué, peut être autorisé par le ministre, sur avis du directeur général de la Police et du médecin du travail dans la Fonction publique, à participer à l’instruction tactique de base de la session suivante sans devoir se soumettre une nouvelle fois aux épreuves de l’examen-concours prévues à l’article 6 du <ref href="/eli/etat/leg/rgd/2018/08/17/a731/jo" id="614fc50f-a2bd-47ad-8b83-0c54a2eeb02a">règlement grand-ducal du 17 août 2018</ref> déterminant les modalités de recrutement du personnel policier.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Cette réintégration est réservée au fonctionnaire stagiaire du cadre policier qui :</del>
+									</p>
+									<ol ns3727365:start="1" ns3727365:symbol="1°" style="del">
+										<li style="del">
+											<del>présente un certificat médical établi par le médecin du travail dans la Fonction publique suivant les critères retenus à l’article 9 du <ref href="/eli/etat/leg/rgd/2018/08/17/a731/jo" id="7d1fd643-3b75-4af2-9a97-304f977e8a59">règlement grand-ducal du 17 août 2018</ref> déterminant les modalités de recrutement du personnel policier ;</del>
+										</li>
+										<li style="del">
+											<del>remplit les conditions d’admission prévues à l’article 5 du <ref href="/eli/etat/leg/rgd/2018/08/17/a731/jo" id="1668613a-00da-4dd6-be3f-487268820620">règlement grand-ducal du 17 août 2018</ref> déterminant les modalités de recrutement du personnel policier ;</del>
+										</li>
+										<li style="del">
+											<del>réussit dans les quatre semaines précédant le début de l’instruction tactique de base l’épreuve sportive prévue à l’article 10 du <ref href="/eli/etat/leg/rgd/2018/08/17/a731/jo" id="946f553b-af8a-4d98-9f45-391d5e52e25a">règlement grand-ducal du 17 août 2018</ref> déterminant les modalités de recrutement du personnel policier.<mod class="mod-end" for="#pm37"/>
+											</del>
+											<noteRef href="#M37" marker="37"/>
+										</li>
+									</ol>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_12_20221021" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_12</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_12/20201117</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<mod class="mod-start" for="#pm38"/>
+								<del>Art. 12.</del>
+							</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<del>Après la réussite de l’instruction tactique de base, les fonctionnaires stagiaires du cadre policier sont autorisés à suivre la formation policière à l’École de police.</del>
+									<mod class="mod-end" for="#pm38"/>
+									<noteRef href="#M38" marker="38"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_13">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_13</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_13/20201117</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<mod class="mod-start" for="#pm39"/>
+								<u>Art. 13.</u>
+							</b>
+						</num>
+						<paragraph id="paragraph_5">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>La phase de formation policière théorique et pratique à l’École de police comprend des épreuves en cours de formation et un examen par groupe de traitement qui a lieu à la fin de cette formation.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_6">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p ns3727365:space-after="10">Le programme de la phase de formation policière théorique et pratique à l’École de police des fonctionnaires stagiaires du cadre policier des groupes de traitement B1 et C1 est le suivant :</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<table border="1" id="table_2" ns3727365:align="center" ns3727365:cols="30 70" ns3727365:cols-align="center left " width="90">
+										<tr>
+											<td/>
+											<td>
+												<p ns3727365:align="center">
+													<b>Modules</b>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>1</p>
+											</td>
+											<td>
+												<p>Théorie et pratique de l’usage des armes</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>2</p>
+											</td>
+											<td>
+												<p>Techniques policières et de sécurité</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>3</p>
+											</td>
+											<td>
+												<p>Outils et les applications de l'informatique policière</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>4</p>
+											</td>
+											<td>
+												<p>Éducation physique et sportive</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>5</p>
+											</td>
+											<td>
+												<p>Cadre légal des fonctions et missions de police</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>6</p>
+											</td>
+											<td>
+												<p>Théorie et pratique des missions de police administrative</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>7</p>
+											</td>
+											<td>
+												<p>Police judiciaire : Analyse, apprentissage et mise en pratique des éléments de l’enquête judiciaire</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>8</p>
+											</td>
+											<td>
+												<p>Circulation routière : Théorie et pratique</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>9</p>
+											</td>
+											<td>
+												<p>Police et société</p>
+											</td>
+										</tr>
+									</table>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les modules sont notés sur un total de 540 points.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Chaque module est noté sur 60 points et est exprimé par une note arrondie à l’unité supérieure.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les modules 1 à 4 sont sanctionnés par des épreuves en cours de formation.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les modules 5 à 9 sont sanctionnés par des épreuves en cours de formation et par un examen, dont la note arrondie est composée pour moitié des notes non arrondies des épreuves en cours de formation et pour moitié des notes non arrondies de l’examen.<mod class="mod-end" for="#pm39"/>
+										<noteRef href="#M39" marker="39"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_14">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_14</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_14/20221021</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-10-21</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 14.</b>
+						</num>
+						<paragraph id="paragraph_7">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le fonctionnaire stagiaire du cadre policier des groupes de traitement B1 et C1 est ajourné s’il obtient une note finale d’au moins deux tiers du total des points et une note de moins de la moitié du maximum des points dans un ou deux modules.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Il doit se soumettre, sous peine d’échec, dans un délai de deux mois à partir de la date de la notification des résultats, à un examen d’ajournement dans les modules dans lesquels il a obtenu une note de moins de la moitié du maximum des points.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_8">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>En cas d’échec à l’examen d’ajournement, <mod class="mod-start" for="#pm52"/>le fonctionnaire stagiaire du cadre policier se soumet, sous peine d’échec, dans un délai de quatre mois à partir de la notification des résultats de l’examen d’ajournement, à un examen supplémentaire<mod class="mod-end" for="#pm52"/>
+										<noteRef href="#M52" marker="52"/> dans les modules non réussis à l’examen d’ajournement.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_15">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_15</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_15/20221021</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-10-21</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 15.</b>
+						</num>
+						<paragraph id="paragraph_9">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>
+										<mod class="mod-start" for="#pm53"/>Si le<mod class="mod-end" for="#pm53"/>
+										<noteRef href="#M53" marker="53"/> du<noteRef href="#note_0_0_0"/> fonctionnaire stagiaire du cadre policier des groupes de traitement B1 et C1 <del>
+											<mod class="mod-start" for="#pm54"/>est prolongée s’il<mod class="mod-end" for="#pm54"/>
+										</del>
+										<noteRef href="#M54" marker="54"/> obtient :</p>
+									<ol ns3727365:start="1" ns3727365:symbol="1°">
+										<li>une note finale de moins de deux tiers du total des points, ou ;</li>
+										<li>une note de moins de la moitié du maximum des points dans trois ou plus des modules <mod class="mod-start" for="#pm55"/>;<mod class="mod-end" for="#pm55"/>
+											<noteRef href="#M55" marker="55"/>
+										</li>
+									</ol>
+									<p>
+										<mod class="mod-start" for="#pm56"/>il se soumet, sous peine d’échec, dans un délai de six mois à partir de la notification des résultats, à un examen supplémentaire.<mod class="mod-end" for="#pm56"/>
+										<noteRef href="#M56" marker="56"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_10">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Dans l’hypothèse visée au paragraphe 1<sup>er</sup>, point 1°, <mod class="mod-start" for="#pm57"/>
+										<del>la <mod class="mod-start" for="#pm9"/>formation professionnelle de base<mod class="mod-end" for="#pm9"/>
+											<noteRef href="#M9" marker="9"/> est prolongée pour une période de quatre mois durant laquelle<mod class="mod-end" for="#pm57"/>
+										</del>
+										<noteRef href="#M57" marker="57"/> le fonctionnaire stagiaire du cadre policier se soumet à un examen supplémentaire dans les modules dans lesquels il n’a pas obtenu au moins les deux tiers du total des points.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_11">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Dans l’hypothèse visée au paragraphe 1<sup>er</sup>, point 2°, <mod class="mod-start" for="#pm58"/>
+										<del>la <mod class="mod-start" for="#pm10"/>formation professionnelle de base<mod class="mod-end" for="#pm10"/>
+											<noteRef href="#M10" marker="10"/> est prolongée pour une période de quatre mois durant laquelle<mod class="mod-end" for="#pm58"/>
+										</del>
+										<noteRef href="#M58" marker="58"/> le fonctionnaire stagiaire du cadre policier se soumet à un examen supplémentaire dans les modules non réussis.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_16">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_16</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_16/20221021</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-10-21</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 16.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>La réussite de l’examen d’ajournement ou de l’examen supplémentaire vaut réussite de la <mod class="mod-start" for="#pm11"/>
+									<mod class="mod-start" for="#pm59"/>phase de formation policière théorique et pratique<mod class="mod-end" for="#pm59"/>
+									<noteRef href="#M59" marker="59"/>
+									<mod class="mod-end" for="#pm11"/>
+									<noteRef href="#M11" marker="11"/>.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Un échec à l’examen supplémentaire entraine l’échec à la <mod class="mod-start" for="#pm12"/>
+									<mod class="mod-start" for="#pm60"/>phase de formation policière théorique et pratique<mod class="mod-end" for="#pm12">
+										<mod class="mod-end" for="#pm60"/>
+										<noteRef href="#M60" marker="60"/>
+									</mod>
+									<noteRef href="#M12" marker="12"/>.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_17_20221021" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_17</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_17/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm29"/>
+							<b>
+								<del>Art. 17.</del>
+							</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<del>Après la réussite de la phase de formation policière théorique et pratique, les fonctionnaires stagiaires du cadre policier des groupes de traitement B1 et C1 sont autorisés à suivre la phase d’initiation pratique.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>La phase d’initiation pratique s’effectue au sein des unités relevant de la direction centrale police administrative et de la direction centrale police judiciaire. Pour les besoins de la formation, la phase d’initiation pratique peut en partie s’effectuer dans des unités ou services de police à l’étranger.</del>
+									<mod class="mod-end" for="#pm29"/>
+									<noteRef href="#M29" marker="29"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_17">
+						<num>
+							<mod class="mod-start" for="#pm40"/>
+							<u>Art. 17.</u>
+						</num>
+						<alinea>
+							<content>
+								<p>Après la réussite de la phase de formation policière théorique et pratique, les fonctionnaires stagiaires du cadre policier des groupes de traitement B1 et C1 sont autorisés à suivre la phase d’initiation pratique.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La phase d’initiation pratique s’effectue au sein des unités relevant de la direction centrale police administrative et de la direction centrale police judiciaire. Pour les besoins de la formation, la phase d’initiation pratique peut en partie s’effectuer dans des unités ou services de police à l’étranger.<mod class="mod-end" for="#pm40"/>
+									<noteRef href="#M40" marker="40"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_18">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_18</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_18/20201117</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 18.</b>
+						</num>
+						<paragraph id="paragraph_12">
+							<num>
+								<mod class="mod-start" for="#pm41"/>(1)</num>
+							<alinea>
+								<content>
+									<p>Le classement final pour l’admission définitive des fonctionnaires stagiaires du cadre policier B1 et C1 se fait par groupe de traitement et est déterminé par le total des points résultant du total des points de la phase de formation policière théorique et pratique.<mod class="mod-end" for="#pm41"/>
+										<noteRef href="#M41" marker="41"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_13">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Ce classement équivaut au classement de l’examen de fin de stage tel que prévu par l’article 54 de la <ref href="/eli/etat/leg/loi/2018/07/18/a621/jo" id="106cf7da-dc46-4e47-b8e9-7a91fca80d5c">loi du 18 juillet 2018</ref> sur la Police grand-ducale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_14">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Les fonctionnaires stagiaires du cadre policier ayant passé avec succès les examens d’ajournement sont à classer entre eux en fonction du total des points obtenus, à la suite des autres fonctionnaires stagiaires du cadre policier de leur groupe de traitement respectif ayant réussi sans ajournement.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_15">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Les fonctionnaires stagiaires du cadre policier ayant passé avec succès les examens supplémentaires sont à classer entre eux en fonction du total des points obtenus, à la suite des autres fonctionnaires stagiaires du cadre policier de leur groupe de traitement respectif.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+				<section id="chapitre_3.section_3">
+					<num>
+						<b>Section 3</b>
+					</num>
+					<heading>
+						<b>Le groupe de traitement C2</b>
+					</heading>
+					<article id="art_19">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_19</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_19/20201117</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 19.</b>
+						</num>
+						<paragraph id="paragraph_16">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>La <mod class="mod-start" for="#pm13"/>formation professionnelle de base<mod class="mod-end" for="#pm13"/>
+										<noteRef href="#M13" marker="13"/> des fonctionnaires stagiaires du cadre policier du groupe de traitement C2 est effectuée à l’École de police et comprend des épreuves en cours de formation et un examen qui a lieu à la fin de la formation.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Pendant la <mod class="mod-start" for="#pm14"/>formation professionnelle de base<mod class="mod-end" for="#pm14"/>
+										<noteRef href="#M14" marker="14"/>, des périodes d’observation pratiques sont organisées dans les unités de police au Grand-Duché de Luxembourg ou à l’étranger.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_17">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p ns3727365:space-after="10">
+										<mod class="mod-start" for="#pm42"/>Le contenu du programme de formation à accomplir comprend 950 heures.<mod class="mod-end" for="#pm42"/>
+										<noteRef href="#M42" marker="42"/> Le programme de la <mod class="mod-start" for="#pm15"/>formation professionnelle de base<mod class="mod-end" for="#pm15"/>
+										<noteRef href="#M15" marker="15"/> des fonctionnaires stagiaires du cadre policier du groupe de traitement C2 est le suivant :</p>
+									<table border="1" id="table_3" ns3727365:align="center" ns3727365:cols="30 70" ns3727365:cols-align="center left" width="90">
+										<tr>
+											<td/>
+											<td>
+												<p ns3727365:align="center">
+													<b>Modules</b>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>1</p>
+											</td>
+											<td>
+												<p>Théorie et pratique de l’usage des armes</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>2</p>
+											</td>
+											<td>
+												<p>Techniques policières et de sécurité</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>3</p>
+											</td>
+											<td>
+												<p>Outils et les applications de l'informatique policière</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>4</p>
+											</td>
+											<td>
+												<p>Épreuves intégrées de mise en situation</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>5</p>
+											</td>
+											<td>
+												<p>Éducation physique et sportive</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>6</p>
+											</td>
+											<td>
+												<p>Cadre légal des fonctions et missions de police</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>7</p>
+											</td>
+											<td>
+												<p>Théorie et pratique des missions de police administrative</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>8</p>
+											</td>
+											<td>
+												<p>Police judiciaire : Analyse, apprentissage et mise en pratique des éléments de l'enquête judiciaire</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>9</p>
+											</td>
+											<td>
+												<p>Langues (Français, Allemand, Anglais)</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>10</p>
+											</td>
+											<td>
+												<p>Circulation routière : Théorie et pratique</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<p>11</p>
+											</td>
+											<td>
+												<p>Police et société</p>
+											</td>
+										</tr>
+									</table>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les modules sont notés sur un total de 660 points, chaque module étant noté sur 60 points, s’exprimant par une note arrondie.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les modules 1 à 5 sont sanctionnés par des épreuves en cours de formation.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les modules 6 à 11 sont sanctionnés par des épreuves en cours de formation et par un examen, dont la note arrondie est composée pour moitié des notes non-arrondies des épreuves en cours de formation et pour moitié des notes non-arrondies de l’examen.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_20">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_20</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_20/20201117</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 20.</b>
+						</num>
+						<paragraph id="paragraph_18">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le fonctionnaire stagiaire du cadre policier du groupe de traitement C2 est ajourné s’il obtient une note finale d’au moins deux tiers du total des points et une note de moins de la moitié du maximum des points dans un ou deux modules.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Il doit se soumettre, sous peine d’échec, dans un délai de deux mois à partir de la date de la notification des résultats, à un examen d’ajournement dans les modules dans lesquels il a obtenu une note de moins de la moitié du maximum des points<mod class="mod-start" for="#pm43"/>lequel décide de sa réussite définitive<mod class="mod-end" for="#pm43"/>
+										<noteRef href="#M43" marker="43"/>.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_19">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>En cas d’échec à l’examen d’ajournement, la <mod class="mod-start" for="#pm16"/>formation professionnelle de base<mod class="mod-end" for="#pm16"/>
+										<noteRef href="#M16" marker="16"/> est prolongée pour une période de quatre mois durant laquelle le fonctionnaire stagiaire du cadre policier se soumet à un examen supplémentaire dans les modules non réussis à l’examen d’ajournement.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_21">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_21</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_21/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 21.</b>
+						</num>
+						<paragraph id="paragraph_20">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>La <mod class="mod-start" for="#pm17"/>formation professionnelle de base<mod class="mod-end" for="#pm17"/>
+										<noteRef href="#M17" marker="17"/> du fonctionnaire stagiaire du cadre policier du groupe de traitement C2 est prolongée s’il obtient :</p>
+									<ol ns3727365:start="1" ns3727365:symbol="1°">
+										<li>une note finale de moins de deux tiers du total des points, ou ;</li>
+										<li>une note de moins de la moitié du maximum des points dans trois ou plus des modules.</li>
+									</ol>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_21">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Dans l’hypothèse visée au paragraphe 1<sup>er</sup>, point 1°, la <mod class="mod-start" for="#pm18"/>formation professionnelle de base<mod class="mod-end" for="#pm18"/>
+										<noteRef href="#M18" marker="18"/> est prolongée pour une période de quatre mois durant laquelle le fonctionnaire stagiaire du cadre policier se soumet à un examen supplémentaire dans les modules dans lesquels il n’a pas obtenu au moins les deux tiers du total des points.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_22">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Dans l’hypothèse visée au paragraphe 1<sup>er</sup>, point 2°, la <mod class="mod-start" for="#pm19"/>formation professionnelle de base<mod class="mod-end" for="#pm19"/>
+										<noteRef href="#M19" marker="19"/> est prolongée pour une période de quatre mois durant laquelle le fonctionnaire stagiaire du cadre policier se soumettra à un examen supplémentaire dans les modules non réussis.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_22">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_22</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_22/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 22.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>La réussite de l’examen d’ajournement ou de l’examen supplémentaire vaut réussite de la <mod class="mod-start" for="#pm20"/>formation professionnelle de base<mod class="mod-end" for="#pm20"/>
+									<noteRef href="#M20" marker="20"/>.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Un échec à l’examen supplémentaire entraine l’échec à la <mod class="mod-start" for="#pm21"/>formation professionnelle de base<mod class="mod-end" for="#pm21"/>
+									<noteRef href="#M21" marker="21"/>.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_23_20221021" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_23</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_23/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<mod class="mod-start" for="#pm30"/>
+								<del>Art. 23.</del>
+							</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<del>Après la réussite de la phase de formation policière théorique et pratique, les fonctionnaires stagiaires du cadre policier du groupe de traitement C2 sont autorisés à suivre la phase d’initiation pratique.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>La phase d’initiation pratique s’effectue au sein des unités relevant de la direction centrale police administrative. Pour les besoins de la formation, la phase d’initiation pratique peut en partie s’effectuer dans des unités ou services de police à l’étranger.</del>
+									<mod class="mod-end" for="#pm30"/>
+									<noteRef href="#M30" marker="30"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_24">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_24</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_24/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 24.</b>
+						</num>
+						<paragraph id="paragraph_23">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le classement final pour l’admission définitive des fonctionnaires stagiaires du cadre policier du groupe de traitement C2 est déterminé par le total des points de la <mod class="mod-start" for="#pm22"/>formation professionnelle de base<mod class="mod-end" for="#pm22"/>
+										<noteRef href="#M22" marker="22"/>.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_24">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Ce classement équivaut au classement de l’examen de fin de stage tel que prévu par l’article 54 de la <ref href="/eli/etat/leg/loi/2018/07/18/a621/jo" id="a2680789-f4c8-4daa-adc7-57e3e5b4d621">loi du 18 juillet 2018</ref> sur la Police grand-ducale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_25">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Les fonctionnaires stagiaires du cadre policier ayant passé avec succès les examens d’ajournement sont à classer entre eux en fonction du total des points obtenus, à la suite des autres fonctionnaires stagiaires du cadre policier de leur groupe de traitement respectif ayant réussi sans ajournement.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_26">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Les fonctionnaires stagiaires du cadre policier ayant passé avec succès les examens supplémentaires sont à classer entre eux en fonction du total des points obtenus, à la suite des autres fonctionnaires stagiaires du cadre policier de leur groupe de traitement respectif.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+			<chapter id="chapitre_4">
+				<num>
+					<b>Chapitre 4</b>
+				</num>
+				<heading>
+					<b>La formation spéciale des fonctionnaires stagiaires du cadre civil de la Police</b>
+				</heading>
+				<article id="art_25">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_25</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_25/20201117</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>
+							<mod class="mod-start" for="#pm44"/>
+							<u>Art. 25.</u>
+						</b>
+					</num>
+					<alinea>
+						<content>
+							<p>La durée de la formation spéciale théorique des fonctionnaires stagiaires du cadre civil de la Police est fixée à 60 heures et comprend les matières et le nombre d’heures suivants :</p>
+							<table border="1" id="table_8" scl:cols="10 60 30" width="100">
+								<tr>
+									<td>
+										<p>a)</p>
+									</td>
+									<td>
+										<p>Organigramme de la Police</p>
+									</td>
+									<td>
+										<p>3 heures</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>b)</p>
+									</td>
+									<td>
+										<p>Le personnel de la Police</p>
+									</td>
+									<td>
+										<p>3 heures</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>c)</p>
+									</td>
+									<td>
+										<p>La <ref href="/eli/etat/leg/loi/2018/07/18/a621/jo" id="fc2bceff-2092-43b2-8a92-09fa7bd9e969">loi du 18 juillet 2018</ref> sur la Police grand-ducale</p>
+									</td>
+									<td>
+										<p>6 heures</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>d)</p>
+									</td>
+									<td>
+										<p>Les acteurs externes dans le cadre des missions de la Police</p>
+									</td>
+									<td>
+										<p>6 heures</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>e)</p>
+									</td>
+									<td>
+										<p>Les prescriptions de service de la Police</p>
+									</td>
+									<td>
+										<p>2 heures</p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>f)</p>
+									</td>
+									<td>
+										<p>L’organisation et le fonctionnement du service d’affectation du stagiaire </p>
+									</td>
+									<td>
+										<p>40 heures<mod class="mod-end" for="#pm44"/>
+											<noteRef href="#M44" marker="44"/>
+										</p>
+									</td>
+								</tr>
+							</table>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_26">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_26</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_26/20201117</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>
+							<mod class="mod-start" for="#pm45"/>
+							<u>Art. 26.</u>
+						</b>
+					</num>
+					<paragraph id="paragraph_27">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>L’examen de fin de formation spéciale des groupes de traitement A1, A2 et B1 comprend deux parties :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+									<li>une épreuve écrite dans chacune des matières visées à l’article 25 ;</li>
+									<li>la rédaction d’un mémoire sur un sujet en relation avec les attributions du stagiaire.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p scl:space-after="10">L’examen de fin de formation spéciale est noté sur un total de 420 points qui sont répartis comme suit :</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<table border="1" id="table_4" scl:align="left" scl:cols="25 50 25" scl:cols-align="left left left" width="90">
+									<tr>
+										<td rowspan="6">
+											<p>Épreuves écrites </p>
+										</td>
+										<td>
+											<p>L’organigramme de la Police</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Le personnel de la Police</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>La <ref href="/eli/etat/leg/loi/2018/07/18/a621/jo" id="e0293657-c2b1-44ab-993b-9bd83231024d">loi du 18 juillet 2018</ref> sur la Police grand-ducale </p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Les acteurs externes dans le cadre des missions de la Police</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Les prescriptions de service de la Police</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>L’organisation et le fonctionnement du service d’affectation du stagiaire</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Mémoire</p>
+										</td>
+										<td/>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+								</table>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_28">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>L’examen de fin de formation spéciale des groupes de traitement C1, D1, D2 et D3 comporte une épreuve écrite dans chacune des matières visées à l’article 25.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p scl:space-after="10">L’examen de fin de formation spéciale est noté sur un total de 360 points qui sont répartis comme suit :</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<table border="1" id="table_5" scl:align="left" scl:cols="70 30" scl:cols-align="left left" width="90">
+									<tr>
+										<td>
+											<p>L’organigramme de la Police</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Le personnel de la Police</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>La <ref href="/eli/etat/leg/loi/2018/07/18/a621/jo" id="c3534f0d-7f97-4318-94cd-3ca6dca8fbc4">loi du 18 juillet 2018</ref> sur la Police grand-ducale</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Les acteurs externes dans le cadre des missions de la Police</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>Les prescriptions de service de la Police</p>
+										</td>
+										<td>
+											<p>60 points</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>L’organisation et le fonctionnement du service d’affectation du stagiaire</p>
+										</td>
+										<td>
+											<p>60 points<mod class="mod-end" for="#pm45"/>
+												<noteRef href="#M45" marker="45"/>
+											</p>
+										</td>
+									</tr>
+								</table>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_26bis">
+					<num>
+						<mod class="mod-start" for="#pm46"/>
+						<u>Art. 26<i>bis</i>.</u>
+					</num>
+					<paragraph id="paragraph_36">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les matières visées à l’article 25, lettres a) à e) sont organisées par la direction formation et peuvent être organisées en commun pour les fonctionnaires stagiaires de tous les groupes de traitement.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_37">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>La matière visée à l’article 25, lettre f) est organisée par le supérieur hiérarchique du fonctionnaire stagiaire.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_38">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les sessions de formation peuvent comprendre des cours présentiels, des cours à distance, des cours alternant des phases présentielles avec des phases d’autoapprentissage, des cours de travaux dirigés ou des séances d’apprentissage accompagné sur le lieu de travail.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_39">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Le temps de formation spéciale compte comme période d’activité de service.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_40">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Les fonctionnaires stagiaires doivent obligatoirement suivre les matières visées à l’article 25, lettres a) à f). Leur participation aux sessions de formation donne lieu à l’établissement d’une attestation de présence.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_41">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Le mémoire consiste dans un travail écrit sur un sujet en relation avec les attributions du fonctionnaire stagiaire, proposé par son supérieur hiérarchique. Le mémoire doit être rendu au président de la commission au premier jour des épreuves écrites de l’examen. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_42">
+						<num>(7)</num>
+						<alinea>
+							<content>
+								<p>Les épreuves écrites de l’examen sont organisées dans les trois mois qui suivent la fin de la période des formations.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_43">
+						<num>(8)</num>
+						<alinea>
+							<content>
+								<p>Les épreuves écrites peuvent s’effectuer à livre ouvert.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_44">
+						<num>(9)</num>
+						<alinea>
+							<content>
+								<p>L’appréciation de la réussite ou de l’échec à l’examen de fin de formation spéciale se fait conformément à l’article 19 du <ref href="/eli/etat/leg/rgd/2018/10/31/a1199/jo" id="9fc3743c-34c3-4de3-b2a9-dc9208fe80b5">règlement grand-ducal modifié du 31 octobre 2018</ref> portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.<mod class="mod-end" for="#pm46"/>
+									<noteRef href="#M46" marker="46"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_5">
+				<num>
+					<b>Chapitre 5</b>
+				</num>
+				<heading>
+					<b>L’examen de promotion</b>
+				</heading>
+				<section id="chapitre_5.section_1re">
+					<num>
+						<b>Section 1<sup>re</sup>
+						</b>
+					</num>
+					<heading>
+						<b>L'examen de promotion du personnel du cadre policier</b>
+					</heading>
+					<article id="art_27">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_27</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_27/20221021</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-10-21</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<u>
+									<mod class="mod-start" for="#pm61"/>Art. 27.</u>
+							</b>
+						</num>
+						<paragraph id="paragraph_29">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p scl:space-after="10">L’examen de promotion des groupes de traitement B1 et C1 porte sur les modules suivants :</p>
+									<table id="table_9" scl:border-mode="row" scl:cols="9 41 50" width="100">
+										<tr scl:border-bottom-style="solid" scl:border-top-style="solid">
+											<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid">
+												<p>
+													<b>Module 1 : Police Administrative</b>
+												</p>
+											</td>
+											<td scl:border-left-style="solid" scl:border-right-style="solid">
+												<p>
+													<b>100 points</b>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>Les mesures de police administrative</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>La libre circulation des personnes et l’immigration</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>Cabaretage</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>Le maintien de l’ordre</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>L’usage des armes</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr scl:border-bottom-style="solid">
+											<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid">
+												<p>
+													<b>Module 2 : Police Judiciaire</b>
+												</p>
+											</td>
+											<td scl:border-left-style="solid" scl:border-right-style="solid">
+												<p>
+													<b>100 points</b>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> L’application de la procédure pénale</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> Le <ref href="/eli/etat/leg/code/penal" id="9abc2b3f-a99a-4367-8da8-eb433a5a0146">Code pénal</ref>
+												</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> Les stupéfiants</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>Épreuve pratique</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr scl:border-bottom-style="solid">
+											<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid">
+												<p>
+													<b>Module 3 : Application Pratique</b>
+												</p>
+											</td>
+											<td scl:border-left-style="solid" scl:border-right-style="solid">
+												<p>
+													<b>100 points</b>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>Application pratique en cas d’arrestation</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> Conventions et accords internationaux</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> Réflexes pratiques</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>Nouveautés, recommandations, </p>
+												<p>adaptations législatives, </p>
+												<p>règlementaires ou administratives</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid">
+												<p>
+													<b>Total :</b>
+												</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid">
+												<p>
+													<b>300 points</b>
+												</p>
+											</td>
+										</tr>
+									</table>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_30">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p scl:space-after="10">L’examen de promotion du groupe de traitement C2 porte sur les modules suivants :</p>
+									<table id="table_10" scl:border-mode="row" scl:cols="9 41 50" width="100">
+										<tr scl:border-bottom-style="solid" scl:border-top-style="solid">
+											<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid">
+												<p>
+													<b>Module 1 : Police Administrative</b>
+												</p>
+											</td>
+											<td scl:border-left-style="solid" scl:border-right-style="solid">
+												<p>
+													<b>100 points</b>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>Les mesures de police administrative</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>Le maintien de l’ordre</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>L’usage des armes</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr scl:border-bottom-style="solid">
+											<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid">
+												<p>
+													<b>Module 2 : Police Judiciaire</b>
+												</p>
+											</td>
+											<td scl:border-left-style="solid" scl:border-right-style="solid">
+												<p>
+													<b>100 points</b>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> L’application de la procédure pénale</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> Le Code pénal</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> Les stupéfiants</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr scl:border-bottom-style="solid">
+											<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid">
+												<p>
+													<b>Module 3 : Application Pratique</b>
+												</p>
+											</td>
+											<td scl:border-left-style="solid" scl:border-right-style="solid">
+												<p>
+													<b>100 points</b>
+												</p>
+											</td>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> Conventions et accords internationaux</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p> Réflexes pratiques</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid"/>
+											<td>
+												<p>Nouveautés, recommandations, </p>
+												<p>adaptations législatives, </p>
+												<p>règlementaires ou administratives</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid"/>
+										</tr>
+										<tr>
+											<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid">
+												<p>
+													<b>Total :</b>
+												</p>
+											</td>
+											<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid">
+												<p>
+													<b>300 points</b>
+												</p>
+											</td>
+										</tr>
+									</table>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>.<mod class="mod-end" for="#pm61"/>
+										<noteRef href="#M61" marker="61"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_28">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_28</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_28/20221021</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-10-21</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 28.</b>
+						</num>
+						<paragraph id="paragraph_31">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Les candidats qui, tout en ayant obtenu au moins les trois cinquièmes du total des points, n’ont pas obtenu la moitié du maximum des points dans un <mod class="mod-start" for="#pm62"/>
+										<del>ou deux</del>
+										<mod class="mod-end" for="#pm62"/>
+										<noteRef href="#M62" marker="62"/>
+										<mod class="mod-start" for="#pm63"/>module<mod class="mod-end" for="#pm63"/>
+										<noteRef href="#M63" marker="63"/> sont ajournés.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Ils doivent se soumettre, sous peine d’échec, dans un délai de deux mois à partir de la notification des résultats, à un examen supplémentaire dans ce <mod class="mod-start" for="#pm64"/>
+										<del>ou ces</del>
+										<mod class="mod-end" for="#pm64"/>
+										<noteRef href="#M64" marker="64"/>
+										<mod class="mod-start" for="#pm65"/>module<mod class="mod-end" for="#pm65"/>
+										<noteRef href="#M65" marker="65"/>.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>En cas de réussite à l’examen supplémentaire, les candidats ajournés sont classés, entre eux en fonction du total des points obtenus, à la suite des candidats ayant réussi l’épreuve principale. Le candidat a échoué lorsqu’il n’a pas obtenu au moins la moitié du total des points dans <mod class="mod-start" for="#pm66"/>le module dans lequel<mod class="mod-end" for="#pm66"/>
+										<noteRef href="#M66" marker="66"/> il a été ajourné.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_32">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>En cas de note finale identique entre deux ou plusieurs candidats, la note obtenue au <mod class="mod-start" for="#pm67"/>
+										<i>module 1</i>
+										<mod class="mod-end" for="#pm67"/>
+										<noteRef href="#M67" marker="67"/> est déterminante pour départager les candidats. En cas de note identique dans ce module, la note obtenue <mod class="mod-start" for="#pm68"/>
+										<i>au module 2<mod class="mod-end" for="#pm68"/>
+										</i>
+										<noteRef href="#M68" marker="68"/> est déterminante pour départager les candidats. <mod class="mod-start" for="#pm69"/>
+										<i>En cas de note identique dans ce module, la note obtenue au module 3 est déterminante pour départager les candidats.<mod class="mod-end" for="#pm69"/>
+										</i>
+										<noteRef href="#M69" marker="69"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_28bis">
+						<num>
+							<u>
+								<mod class="mod-start" for="#pm70"/>Art. 28<i>bis</i>.</u>
+						</num>
+						<alinea>
+							<content>
+								<p>Une dispense aux épreuves des modules 1 et 2 est accordée par le ministre sur proposition du directeur général de la Police au candidat à l’examen de promotion du groupe de traitement B1, lorsque le candidat a réussi à l’examen de promotion du groupe de traitement C1.<mod class="mod-end" for="#pm70"/>
+									<noteRef href="#M70" marker="70"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_5.section_2">
+					<num>
+						<b>Section 2</b>
+					</num>
+					<heading>
+						<b>L’examen de promotion du personnel du cadre civil</b>
+					</heading>
+					<article id="art_29">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_29</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_29/20180901</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 29.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>Pour le groupe de traitement B1 du cadre civil, l’examen de promotion porte sur un total de 600 points et comporte les modules et points suivants :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:space-before="5" ns3727365:start="1" ns3727365:symbol="1°">
+									<li>Élaboration d’un mémoire en langue française ou allemande en relation avec les attributions dévolues au candidat (300 points). Le sujet et la langue du mémoire sont choisis par le président de la commission d’examen, sur proposition du directeur ou du chef de service du candidat.</li>
+									<li>Droit administratif et international (300 points) comportant cinq matières dont :<p ns3727365:space-before="5">Les matières obligatoires suivantes :</p>
+										<ol ns3727365:start="1" ns3727365:symbol="a)">
+											<li>procédure administrative non contentieuse ;</li>
+											<li>traitements des agents de l’État ;</li>
+											<li>protection des données ;</li>
+										</ol>
+										<p>deux matières, choisies par le président de la commission d’examen sur proposition du directeur ou du chef de service du candidat, parmi les suivantes </p>
+										<ol ns3727365:start="1" ns3727365:symbol="a)">
+											<li>comptabilité de l’État ;</li>
+											<li>marchés publics ;</li>
+											<li>conventions internationales ;</li>
+											<li>droit communautaire ;</li>
+										</ol>
+									</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>chaque matière étant notée sur 60 points.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_30">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_30</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_30/20180901</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 30.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>Pour le groupe de traitement C1 du cadre civil, l’examen de promotion porte sur un total de 300 points et comporte les modules et les points suivants :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+									<li>Élaboration d’un travail de réflexion en langue française ou allemande en relation avec les attributions dévolues au candidat (150 points). Le sujet et la langue du travail sont choisis par le président de la commission d’examen, sur proposition du directeur ou du chef de service du candidat.</li>
+									<li>Droit administratif (150 points) comportant les matières suivantes :<ol ns3727365:start="1" ns3727365:symbol="a)">
+											<li>procédure administrative non contentieuse ;</li>
+											<li>comptabilité de l’État et marchés publics ;</li>
+											<li>protection des données.</li>
+										</ol>
+									</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Chaque matière étant notée sur 50 points.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_31">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_31</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_31/20180901</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 31.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>L’examen de promotion du groupe de traitement D1 du cadre civil est régi par le <ref href="/eli/etat/leg/rgd/1982/03/12/n5/jo" id="c2b99df0-9711-4e43-a91c-ab8223c23155">règlement grand-ducal modifié du 12 mars 1982</ref> déterminant les conditions d’admission, de nomination et de promotion des fonctionnaires de la carrière de l’artisan dans les administrations et services de l’État.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_32">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_32</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_32/20180901</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>Art. 32.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>Pour réussir à l’examen de promotion, les candidats du cadre civil de la Police doivent obtenir au moins les trois cinquièmes du total des points de tous les modules et au moins la moitié du maximum des points dans chaque module.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les candidats qui, tout en ayant obtenu au moins les trois cinquièmes du total des points, ont obtenu une note insuffisante dans un module au maximum, sont ajournés dans ce module. Ils doivent se soumettre, sous peine d’échec, dans un délai de deux mois à partir de la notification des résultats, à un examen supplémentaire dans ce module.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En cas de réussite de l’examen supplémentaire, les candidats ajournés sont classés, entre eux en fonction du total des points obtenus, à la suite des candidats ayant réussi l’épreuve principale. Le candidat a échoué lorsqu’il n’a pas obtenu au moins la moitié du total des points dans le module où il a été ajourné.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+			</chapter>
+			<chapter id="chapitre_6">
+				<num>
+					<b>Chapitre 6</b>
+				</num>
+				<heading>
+					<b>Dispositions communes</b>
+				</heading>
+				<article id="art_33">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_33</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_33/20201117</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 33.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-11-17</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>
+							<mod class="mod-start" for="#pm47"/>
+							<u>Art. 33.</u>
+						</b>
+					</num>
+					<alinea>
+						<content>
+							<p>Les examens prévus au présent règlement ont lieu devant une commission d’examen, ci-après dénommée « commission » qui se compose d’un président, de deux autres membres au moins et d’au moins un secrétaire, nommés par le ministre. Tout membre peut être chargé de la responsabilité de plusieurs épreuves. La commission peut s’adjoindre d’experts qui sont également nommés par le ministre.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour chaque membre effectif, il est nommé un membre suppléant.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Aucun parent ou allié d’un candidat jusqu’au quatrième degré inclus, ni son partenaire au sens de la <ref href="/eli/etat/leg/loi/2004/07/09/n3/jo" id="1e41fef1-713a-4e28-a0a5-c66a178f87d2">loi modifiée du 9 juillet 2004</ref> relative aux effets légaux de certains partenariats ne peut siéger comme président, membre, secrétaire ou expert à une commission.<mod class="mod-end" for="#pm47"/>
+								<noteRef href="#M47" marker="47"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_33bis">
+					<num>
+						<mod class="mod-start" for="#pm48"/>
+						<u>Art. 33<i>bis</i>.</u>
+					</num>
+					<paragraph id="paragraph_45">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Pour chaque commission, le ministre nomme un observateur sur proposition de la Chambre des fonctionnaires et employés publics.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_46">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>L’observateur participe aux travaux de la commission avec voix consultative. Il est convoqué aux réunions et séances de la commission d’examen dans les mêmes formes et dans les mêmes délais que les membres de la commission.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_47">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les décisions de la commission sont valablement prises et ses actes régulièrement posés même si l’observateur dûment convoqué n’a pas pris part aux délibérations, pour quelque motif que ce soit. L’observateur doit obtenir la parole s’il le demande pour présenter des remarques en relation avec l’organisation de l’examen.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_48">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Toutefois, il ne peut d’aucune façon s’immiscer dans le choix des questions ou sujets à poser, ni dans la pondération des points à attribuer aux épreuves ou parties d’épreuves ni dans l’appréciation des réponses par les membres de la commission.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_49">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Pendant les épreuves de l’examen, l’observateur ne peut communiquer d’aucune manière avec les candidats. Lors des interruptions qui séparent les différentes épreuves, l’observateur peut recueillir les remarques et les doléances éventuelles des candidats. Au cas où l’observateur croit avoir constaté une insuffisance ou une irrégularité dans l’organisation matérielle des épreuves, il doit incessamment en informer le président de la commission, en lui parlant seul à seul.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_50">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>L’observateur a le droit de faire acter au procès-verbal de la commission ses remarques relatives à l’organisation de l’examen et au déroulement des épreuves. S’il ne présente pas de remarques particulières, le procès-verbal en fait mention.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_51">
+						<num>(7)</num>
+						<alinea>
+							<content>
+								<p>L’observateur peut également informer directement le ministre par une note écrite s’il a constaté un fait grave pouvant mettre en cause la validité de l’examen.<mod class="mod-end" for="#pm48"/>
+									<noteRef href="#M48" marker="48"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_33ter">
+					<num>
+						<mod class="mod-start" for="#pm49"/>
+						<u>Art. 33<i>ter</i>.</u>
+					</num>
+					<alinea>
+						<content>
+							<p>Le président règle en détail l’organisation de l’examen. À cet effet il peut réunir au préalable la commission.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il est tenu de réunir la commission au préalable :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>si un membre au moins de la commission ou l’observateur en fait la demande ;</li>
+								<li>en cas de changements majeurs dans la composition de la commission ou des modalités d’organisation des examens.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Si la commission n’est pas convoquée au préalable, les membres de la commission et l’observateur sont informés par le président des modalités pratiques relatives à l’examen.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le programme et les modalités de l’examen sont communiqués à chaque candidat inscrit.<mod class="mod-end" for="#pm49"/>
+								<noteRef href="#M49" marker="49"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_33quater">
+					<num>
+						<mod class="mod-start" for="#pm50"/>
+						<u>Art. 33<i>quater</i>.</u>
+					</num>
+					<paragraph id="paragraph_52">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les sujets ou questions des épreuves sont déterminés par le président en concertation avec les membres de la commission.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_53">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le secret relatif aux sujets ou questions doit être observé.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_54">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le président arrête les mesures utiles pour garder l’anonymat des candidats.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_55">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Le président veille à organiser la surveillance appropriée des candidats pendant les épreuves.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_56">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Il peut être procédé à un contrôle d’identité des candidats avant le début des épreuves.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_57">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Les réponses des candidats sont écrites sur des feuilles estampillées.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Par dérogation à l’alinéa précédent, pour les besoins de l’examen, une, plusieurs, ou toutes les épreuves peuvent se faire de manière électronique.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_58">
+						<num>(7)</num>
+						<alinea>
+							<content>
+								<p>Au cours des épreuves, toute communication entre les candidats et avec l’extérieur, de même que toute utilisation d’outils électroniques, d’ouvrages ou de notes autres que ceux qui ont été autorisés préalablement par le président sont interdites. Le candidat fautif est exclu des épreuves sur décision du président. Cette exclusion équivaut à un échec. Dès l’ouverture de l’examen, le candidat est prévenu des suites que toute fraude comportera.<mod class="mod-end" for="#pm50"/>
+									<noteRef href="#M50" marker="50"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_33quinquies">
+					<num>
+						<mod class="mod-start" for="#pm51"/>
+						<u>Art. 33<i>quinquies</i>.</u>
+					</num>
+					<paragraph id="paragraph_59">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>L’évaluation des copies écrites est faite pour chaque matière par deux membres de la commission. Sauf dans le cas d’un nombre exceptionnellement élevé de candidats, les délais de correction ne dépasseront en principe pas quinze jours ouvrables après le déroulement des épreuves.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les notes sont communiquées par les membres de la commission au président qui détermine la moyenne arithmétique obtenue par le candidat dans chaque épreuve. Sans préjudice d’autres dispositions légales ou réglementaires, pour le calcul de la moyenne, les fractions de points sont arrondies à l’unité supérieure.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_60">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Par dérogation au paragraphe 1<sup>er</sup>, l’évaluation des épreuves électroniques peut également se faire de manière anonyme et standardisée.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_61">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>La commission prend ses décisions à la majorité des voix, l’abstention n’étant pas permise. En cas de partage des voix, celle du président est prépondérante.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_62">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les membres de la commission ainsi que l’observateur sont tenus de garder le secret des délibérations.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_63">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Le président de la commission informe les candidats des résultats obtenus.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_64">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Le président transmet au ministre un procès-verbal signé par au moins trois membres de la commission avec les résultats de l’examen.<mod class="mod-end" for="#pm51"/>
+									<noteRef href="#M51" marker="51"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_34">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_34</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_34/20180901</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 34.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 34.</b>
+					</num>
+					<alinea>
+						<content>
+							<p>Le candidat qui est empêché, pour des raisons indépendantes de sa volonté dûment constatées par la commission d’examen, de participer à un examen prévu au présent règlement ou bien d’achever un examen, est admis à participer à une session spéciale.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La date de cette session spéciale est fixée par la commission d’examen de façon à permettre à l’intéressé de participer, en cas d’ajournement, aux épreuves supplémentaires auxquelles doivent se soumettre les candidats ajournés à la session normale.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>En cas de réussite directe à la session spéciale, l’intéressé est classé en fonction du total de ses points obtenus, à la suite des candidats ayant réussi la session normale de l’examen.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>En cas de réussite après ajournement à la session spéciale, l’intéressé est classé en fonction du total de ses points obtenus, parmi les candidats ayant réussi la session normale après ajournement.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour le candidat qui a participé à l’examen, mais qui n’a pas été en mesure d’achever les examens visés à l’alinéa 1<sup>er</sup>, la session spéciale ne porte que sur les épreuves qu’il n’a pu terminer. Les résultats déjà obtenus dans les autres épreuves restent acquis. Toutefois, si le résultat des épreuves déjà subies entraîne l’échec du candidat, celui-ci n’est plus admis à participer à la session spéciale.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le candidat qui ne participe pas à la session spéciale est déchu du bénéfice des mesures visées au présent article.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_35">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_35</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_35/20180901</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 35.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 35.</b>
+					</num>
+					<alinea>
+						<content>
+							<p>Les membres du cadre policier qui désirent occuper un poste dont les connaissances et compétences diffèrent de celles du poste auquel ils sont affectés depuis plus de cinq ans, suivent une formation de remise à niveau dont le contenu est déterminé pour chaque fonctionnaire concerné sur base de la fiche de fonction correspondante.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le fonctionnaire concerné doit avoir suivi ces formations avant sa nomination ou au plus tard dans les six mois qui suivent sa nomination au poste sollicité.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_7">
+				<num>
+					<b>Chapitre 7</b>
+				</num>
+				<heading>
+					<b>Dispositions abrogatoires, transitoires et finales</b>
+				</heading>
+				<article id="art_36">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_36</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_36/20180901</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 36.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 36.</b>
+					</num>
+					<alinea>
+						<content>
+							<p>Sont abrogés :</p>
+							<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+								<li>le <ref href="/eli/etat/leg/rgd/2000/07/24/n4/jo" id="a6fe9029-d63f-4d15-8215-26d6d9a910fb">règlement grand-ducal du 24 juillet 2000</ref> réglant les modalités de l’examen de fin de stage visé à l’article 99 de la <ref href="/eli/etat/leg/loi/1999/05/31/n7/jo" id="d6cb8c65-604c-4370-9122-9859aae576d8">loi du 31 mai 1999</ref> sur la Police et l’Inspection générale de la Police ;</li>
+								<li>le <ref href="/eli/etat/leg/rgd/2001/02/06/n1/jo" id="eebf11e9-bae9-4507-97b7-20bbd017325e">règlement grand-ducal modifié du 6 février 2001</ref> fixant les modalités de fonctionnement de l’École de police ;</li>
+								<li>le <ref href="/eli/etat/leg/rgd/2001/11/19/n1/jo" id="e226db10-66d1-4bc1-afd5-1f4e73ac523c">règlement grand-ducal du 19 novembre 2001</ref> déterminant les conditions et les modalités d’admission au stage, de nomination et d’avancement du personnel du cadre administratif et technique du Corps de la Police Grand-Ducale ;</li>
+								<li>le <ref href="/eli/etat/leg/rgd/2007/04/27/n4/jo" id="9b142345-a04e-46ce-b565-43b727e36fa6">règlement grand-ducal modifié du 27 avril 2007</ref> déterminant les conditions de recrutement, d’instruction et d’avancement du personnel policier.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_37">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_37</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_37/20180901</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 37.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 37.</b>
+					</num>
+					<paragraph id="paragraph_34">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les dispositions suivantes restent applicables aux stagiaires du cadre supérieur de la Police qui ont été admis au stage, aux volontaires de police qui ont été admis au volontariat de police et aux volontaires de l’armée qui ont été admis à l’École de police avant l’entrée en vigueur du présent règlement et ce jusqu’à la fin de la formation respective en cours :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+									<li>les articles 4, 5, 14 à 18, 34 à 38, 57 à 67, 69, 70, paragraphes 5 à 23, 71 et 72, du <ref href="/eli/etat/leg/rgd/2007/04/27/n4/jo" id="9c88414a-1a7e-4660-ae17-c188182984d2">règlement grand-ducal modifié du 27 avril 2007</ref> déterminant les conditions de recrutement, d’instruction et d’avancement du personnel policier ;</li>
+									<li>les articles 6, 13 à 15 du <ref href="/eli/etat/leg/rgd/2001/02/06/n1/jo" id="93e22788-779c-4427-b390-923d428d328e">règlement grand-ducal modifié du 6 février 2001</ref> fixant les modalités de fonctionnement de l’École de police.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_35">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les examens de promotion du cadre policier qui ont lieu au cours de l’année de l’entrée en vigueur du présent règlement sont effectués :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+									<li>en ce qui concerne les inspecteurs de police, conformément aux articles 21 et 22, 70, paragraphes 5 à 23, 71 et 72, du <ref href="/eli/etat/leg/rgd/2007/04/27/n4/jo" id="3cc1b7e2-d63c-4a29-85c8-7cc1aaf0021f">règlement grand-ducal modifié du 27 avril 2007</ref> déterminant les conditions de recrutement, d’instruction et d’avancement du personnel policier ;</li>
+									<li>en ce qui concerne les brigadiers de police, conformément aux articles 41 et 42, 70, paragraphes 5 à 23, 71 et 72 du <ref href="/eli/etat/leg/rgd/2007/04/27/n4/jo" id="03ea354b-b7ac-40e0-8eb5-392140fd9b42">règlement grand-ducal modifié du 27 avril 2007</ref> déterminant les conditions de recrutement, d’instruction et d’avancement du personnel policier.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_38">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_38</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_38/20180901</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 38.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 38.</b>
+					</num>
+					<alinea>
+						<content>
+							<p>La référence au présent règlement se fait sous la forme suivante : « <ref href="???" scl:verify="true">Règlement grand-ducal du 17 août 2018</ref> relatif à la formation du personnel de la Police grand-ducale ».</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_39">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_39</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732/art_39/20180901</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/17/a732</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 39.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-09-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 39.</b>
+					</num>
+					<alinea>
+						<content>
+							<p>Notre ministre de la Sécurité intérieure est chargé de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

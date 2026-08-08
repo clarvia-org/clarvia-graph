@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1990-12-24" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFI"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1990-12-24" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1990-12-24" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo</scl:jolux>
+						<scl:jolux scl:name="dateEndApplicability"/>
+						<scl:jolux scl:name="dateApplicability">2025-01-01</scl:jolux>
+						<scl:jolux scl:name="dateDocument">1990-12-24</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">1990A15591</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3421</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/652</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/749</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">1991-01-04</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1990/a82</scl:jolux>
+						<scl:jolux scl:name="publicationDate">1990-12-31</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr/docx</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1931/05/22/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1967/12/04/n1/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 01/01/2025 : Règlement grand-ducal du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1990/11/09/n1/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1990-82-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1990/a82/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-1990-12-24-n7-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1990-82-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1990/a82/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1990/a82/fr/pdf/eli-etat-leg-memorial-1990-a82-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="1991-01-04" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="1994-10-31" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+				<eventRef date="2002-01-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+				<eventRef date="2006-01-03" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2025-01-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/1994/10/14/n2/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/1994/10/14/n2/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/1994/10/14/n2/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/1994/10/14/n2/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/1994/10/14/n2/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2001/08/01/n15/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2001/08/01/n15/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2001/08/01/n15/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2001/08/01/n15/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2001/08/01/n15/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2001/08/01/n15/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2005/12/23/n9/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2024/12/20/a569/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/1990/12/24/n7/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2024/12/20/a569/jo" id="rp2" showAs="Règlement grand-ducal du 20 décembre 2024 portant modification du règlement grand-ducal modifié du 24 décembre 1990 établissant un régime d’imposition forfaitaire des marins."/>
+				<passiveRef href="/eli/etat/leg/rgd/2005/12/23/n9/jo" id="rp3" showAs="Règlement grand-ducal du 23 décembre 2005 portant modification du règlement grand-ducal modifié du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins (pris sur la base de l'article 109 de la loi du 9 novembre 1990 ayant pour objet la création d'un registre public maritime)."/>
+				<passiveRef href="/eli/etat/leg/rgd/2001/08/01/n15/jo" id="rp4" showAs="Règlement grand-ducal du 1er août 2001 relatif au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions réglementaires."/>
+				<passiveRef href="/eli/etat/leg/rgd/1994/10/14/n2/jo" id="rp5" showAs="Règlement grand-ducal du 14 octobre 1994 modifiant le règlement grand-ducal du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins."/>
+			</references>
+			<notes scl:type="modification" source="#rp5">
+				<note id="M1" marker="1" refersTo="pm1" title="A|1994-10-27|1994-10-14|RGD|92">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/1994/10/14/n2/jo">Règlement grand-ducal du 14 octobre 1994 modifiant le règlement grand-ducal du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp5">
+				<note id="M2" marker="2" refersTo="pm2" title="A|1994-10-27|1994-10-14|RGD|92">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/1994/10/14/n2/jo">Règlement grand-ducal du 14 octobre 1994 modifiant le règlement grand-ducal du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp5">
+				<note id="M3" marker="3" refersTo="pm3" title="A|1994-10-27|1994-10-14|RGD|92">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/1994/10/14/n2/jo">Règlement grand-ducal du 14 octobre 1994 modifiant le règlement grand-ducal du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp5">
+				<note id="M4" marker="4" refersTo="pm4" title="A|1994-10-27|1994-10-14|RGD|92">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/1994/10/14/n2/jo">Règlement grand-ducal du 14 octobre 1994 modifiant le règlement grand-ducal du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp5">
+				<note id="M5" marker="5" refersTo="pm5" title="A|1994-10-27|1994-10-14|RGD|92">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/1994/10/14/n2/jo">Règlement grand-ducal du 14 octobre 1994 modifiant le règlement grand-ducal du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2001-09-18|2001-08-01|RGD|117">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/08/01/n15/jo">Règlement grand-ducal du 1er août 2001 relatif au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions réglementaires.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2001-09-18|2001-08-01|RGD|117">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/08/01/n15/jo">Règlement grand-ducal du 1er août 2001 relatif au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions réglementaires.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2001-09-18|2001-08-01|RGD|117">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/08/01/n15/jo">Règlement grand-ducal du 1er août 2001 relatif au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions réglementaires.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2001-09-18|2001-08-01|RGD|117">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/08/01/n15/jo">Règlement grand-ducal du 1er août 2001 relatif au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions réglementaires.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2001-09-18|2001-08-01|RGD|117">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/08/01/n15/jo">Règlement grand-ducal du 1er août 2001 relatif au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions réglementaires.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2001-09-18|2001-08-01|RGD|117">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/08/01/n15/jo">Règlement grand-ducal du 1er août 2001 relatif au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions réglementaires.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2005-12-30|2005-12-23|RGD|222">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2005/12/23/n9/jo">Règlement grand-ducal du 23 décembre 2005 portant modification du règlement grand-ducal modifié du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins (pris sur la base de l'article 109 de la loi du 9 novembre 1990 ayant pour objet la création d'un registre public maritime).</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M13" marker="13" refersTo="pm13" title="A|2024-12-23|2024-12-20|RGD|569">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/12/20/a569/jo">Règlement grand-ducal du 20 décembre 2024 portant modification du règlement grand-ducal modifié du 24 décembre 1990 établissant un régime d’imposition forfaitaire des marins.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 01/01/2025 : Règlement grand-ducal du 24 décembre 1990 établissant un régime d'imposition forfaitaire des marins.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<section id="section_1re">
+				<num>Section 1<sup>re</sup>.</num><heading scl:separator="- " scl:style-format="b">Définitions</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_1er/19941031</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1994-10-31</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>.</num>
+					<alinea>
+						<content>
+							<p>Au sens du présent règlement on entend</p>
+							<ol scl:symbol="1°">
+								<li>par L.I.R. la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="f955a121-077e-4417-834f-1aa6f05a5bd7" scl:verify="true">loi du 4 décembre 1967</ref> concernant l'impôt sur le revenu; </li>
+								<li>par retenue d'impôt forfaitaire la retenue d'impôt telle qu'elle est prévue par l'article 3 du présent règlement;<mod class="mod-start" for="#pm1"/>
+								</li>
+								<li>par salaires<ol scl:symbol="a)">
+										<li> les rémunérations touchées par le personnel salarié occupé pour le compte d’une entreprise maritime agréée à bord d’un navire exploité en trafic international, <mod class="mod-end" for="#pm1"/>
+											<noteRef href="#M1" marker="1"/>
+										</li>
+										<li>les prestations pécuniaires de maladie versées à ces salariés;<mod class="mod-start" for="#pm2"/>
+										</li>
+									</ol>
+								</li>
+								<li>par salariés les membres du personnel salarié occupé pour le compte d’une entreprise maritime agréée à bord d’un navire exploité en trafic international; <mod class="mod-end" for="#pm2"/>
+									<noteRef href="#M2" marker="2"/>
+									<mod class="mod-start" for="#pm3"/>
+								</li>
+								<li>par employeur<ol scl:symbol="a)">
+										<li>l’entreprise maritime agréée opérant en trafic international,<mod class="mod-end" for="#pm3"/>
+											<noteRef href="#M3" marker="3"/>
+										</li>
+										<li>l'organisme de la sécurité sociale allouant les prestations pécuniaires de maladie; <mod class="mod-start" for="#pm4"/>
+										</li>
+									</ol>
+								</li>
+								<li>par établissement <ol scl:symbol="a)">
+										<li>le siège de direction des entreprises maritimes visées sub 5a ci-dessus,<mod class="mod-end" for="#pm4"/>
+											<noteRef href="#M4" marker="4"/>
+										</li>
+										<li>le siège de l'organisme de la sécurité sociale visé sous 5<sup>o</sup> b ci-dessus.</li>
+									</ol>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="section_2">
+				<num>Section 2.</num><heading scl:separator="- " scl:style-format="b">La retenue d'impôt forfaitaire</heading>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_2/19941031</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1994-10-31</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm5"/>Art. 2.</num>
+					<alinea>
+						<content>
+							<p>Les salaires au sens des articles 95 et 95a <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="cca6db48-36b9-4daf-924a-1f1cc07187b6">L.I.R.</ref> touchés par les salariés non résidents occupés pour le compte d’une entreprise maritime agréée à bord d’un navire exploité en trafic international sont imposés forfaitairement conformément aux dispositions des articles 3 à 16 ci-après.<mod class="mod-end" for="#pm5"/>
+								<noteRef href="#M5" marker="5"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_3/20060103</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2006-01-03</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<alinea>
+						<content>
+							<p>La retenue d'impôt est fixée à 10 % du montant brut du salaire diminué de 10 % et d'un abattement s'élevant à <mod class="mod-start" for="#pm6">
+									<mod class="mod-start" for="#pm12"/>1.</mod>800 euros<mod class="mod-end" for="#pm6"/>
+								<noteRef href="#M6" marker="6"/> par mois ou <mod class="mod-start" for="#pm7"/>72 euros<mod class="mod-end" for="#pm7"/>
+								<noteRef href="#M7" marker="7"/> par jour<mod class="mod-end" for="#pm12"/>
+								<noteRef href="#M12" marker="12"/>, sans prise en considération de la classe d'impôt à retenir si le salaire n'était pas imposé forfaitairement.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_4/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<alinea>
+						<content>
+							<p>Par montant brut du salaire au sens de l'article 3 on entend le salaire brut non diminué des déductions applicables si le salaire n'était pas imposable forfaitairement.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_5/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<paragraph id="paragraph_1">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>La retenue d'impôt forfaitaire vaut imposition définitive dans le chef du salarié et ne donne pas lieu à régularisation sur la base d'un décompte annuel au sens de l'article 145 <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="788f4031-3daa-499c-ad2a-f4daa5faec12">L.I.R.</ref>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_2">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les salaires imposés forfaitairement ne donnent pas lieu à imposition par voie d'assiette au sens de l'article 153 <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="f0747bad-50f7-4e60-a0b4-1e10c43e98be">L.I.R.</ref>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_6/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<alinea>
+						<content>
+							<p>Les salariés soumis à l'imposition forfaitaire du présent règlement sont dispensés de la présentation de la fiche de retenue d'impôt prévue par l'article 143 <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="31cefe9f-161d-459d-93d6-5e94e51a1ea3">L.I.R.</ref>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="section_3">
+				<num>Section 3.</num><heading scl:separator="- " scl:style-format="b">Enregistrement comptable de la retenue d'impôt forfaitaire</heading>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_7/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7.</num>
+					<paragraph id="paragraph_3">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>L'employeur doit tenir au lieu de l'établissement un relevé documentant, par salarié, </p>
+								<ol scl:symbol="a)">
+									<li>le salaire brut alloué, ventilé, suivant le cas, d'après ses différentes composantes;</li>
+									<li>la période pour laquelle le salaire est alloué;</li>
+									<li>la retenue d'impôt dégagée par application des dispositions de l'article 3.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_4">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les inscriptions doivent être faites en caractères usuels. Toutefois les employeurs disposant d'ensembles électroniques ou électromécaniques peuvent être autorisés par le directeur des contributions ou son délégué à mémoriser l'ensemble ou partie des inscriptions sur supports perforés ou magnétiques, à condition que les possibilités de contrôle par l'administration n'en soient pas affectées et que les données mémorisées soient imprimées à la fin de chaque année d'imposition.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_5">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les inscriptions prévues à l'alinéa 1<sup>er</sup> doivent être conservées par les employeurs et les caisses de pension pendant un délai de dix ans à compter de la fin de l'année d'imposition dont il s'agit.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+			<section id="section_4">
+				<num>Section 4.</num><heading scl:separator="- " scl:style-format="b">Déclaration et versement de la retenue d'impôt forfaitaire</heading>
+				<article id="art_8">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_8</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_8/20020101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 8.</num>
+					<paragraph id="paragraph_6">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>L'employeur est tenu de déclarer et de verser l'impôt retenu dans les conditions fixées aux articles 9 et 10.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Une déclaration et, le cas échéant, un versement doivent intervenir au titre de chacune des périodes de déclaration et de versement définies à l'alinéa 2.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_7">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>La période de déclaration et de versement correspond </p>
+								<ol scl:symbol="a)">
+									<li>au mois lorsque la somme des retenues du mois en cause s'élève à au moins <mod class="mod-start" for="#pm8"/>750 euros<mod class="mod-end" for="#pm8"/>
+										<noteRef href="#M8" marker="8"/>;</li>
+									<li>au trimestre lorsque la somme des retenues du mois en cause s'élève à au moins <mod class="mod-start" for="#pm9"/>75 euros<mod class="mod-end" for="#pm9"/>
+										<noteRef href="#M9" marker="9"/>, tout en restant inférieure à <mod class="mod-start" for="#pm10"/>750 euros<mod class="mod-end" for="#pm10"/>
+										<noteRef href="#M10" marker="10"/>;</li>
+									<li>à l'année lorsque la somme des retenues du mois en cause est inférieure à <mod class="mod-start" for="#pm11"/>75 euros<mod class="mod-end" for="#pm11"/>
+										<noteRef href="#M11" marker="11"/>.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Lorsqu'une période de déclaration et de versement plus courte se substitue à une période de déclaration et de versement plus longue, cette dernière se transforme à son tour en une nouvelle période plus courte pour laquelle les retenues en souffrance sont à déclarer distinctement et à verser dans les mêmes délais que ceux applicables à la première période.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_9">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_9</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_9/20250101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2025-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 9.</num>
+					<paragraph id="paragraph_8">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Sans égard aux obligations relatives au versement des retenues, l'employeur est tenu de déclarer ces dernières au bureau de recette dans les dix jours qui suivent la fin de la période de déclaration.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_9">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm13"/>La déclaration est à établir par la procédure électronique mise à la disposition par l’administration et signée par l’employeur ou par une personne mandatée par celui-ci.<mod class="mod-end" for="#pm13"/>
+									<noteRef href="#M13" marker="13"/> Elle comporte obligatoirement, outre la désignation de l'établissement, la période de déclaration et l'affirmation de sincérité.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_10">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>L'absence de retenue au cours d'une période déterminée ne dispense pas l'employeur de l'obligation de déposer une déclaration qui, dans ce cas, doit signaler qu'aucun impôt n'a été retenu.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_11">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>L'employeur qui ne verse plus de salaire soumis à la retenue peut, sur demande, être déchargé de l'obligation de déposer des déclarations périodiques de retenue.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_12">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Le bureau de recette surveille la rentrée ponctuelle des déclarations de retenue d'impôt sur salaires et pensions. Tout retard dans la remise des déclarations peut être sanctionné par l'application du supplément prévu par le § 168, alinéa 2 de la <ref href="/eli/etat/leg/loi/1931/05/22/n1/jo" id="59a88e61-4305-4c0d-be33-b6e666edc2bc">loi générale des impôts</ref>,sans préjudice des astreintes pouvant être prononcées en vertu du § 202 de la <ref href="/eli/etat/leg/loi/1931/05/22/n1/jo" id="521393db-ccd0-4fcb-8697-6232e0648c4e">même loi générale</ref>.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_10">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_10</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_10/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 10.</num>
+					<paragraph id="paragraph_13">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Dans les dix jours qui suivent la fin de chaque période de versement, l'employeur est tenu de verser au bureau de recette l'impôt retenu et déclaré conformément aux dispositions de l'article 8. Toutefois le délai de versement est porté à quatre mois pour l'impôt correspondant aux prestations pécuniaires de maladie à verser par l'Etat pour compte des caisses de maladie.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_14">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le document de versement doit indiquer le numéro fiscal de l'établissement, la mention «retenue sur salaires» et la période de versement.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+			<section id="section_5">
+				<num>Section 5.</num><heading scl:separator="- " scl:style-format="b">Revision comptable</heading>
+				<article id="art_11">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_11</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_11/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 11.</num>
+					<paragraph id="paragraph_15">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le bureau R.T.S. contrôle la régularité des opérations relatives à la retenue d'impôt sur les salaires et à sa déclaration en procédant à des revisions périodiques des pièces comptables documentant les opérations précitées accomplies par les établissements situés dans son rayon de compétence. La cadence des revisions devrait être au moins trisannuelle sans préjudice de revisions extraordinaires, notamment en cas d'irrégularités de la déclaration et du versement de la retenue d'impôt.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_16">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les résultats des revisions sont consignés dans un rapport de revision.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_12">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_12</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_12/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 12.</num>
+					<alinea>
+						<content>
+							<p>La revision a essentiellement pour but de constater si tous les salariés et tous les salaires passibles de retenue, sous quelque forme qu'ils aient été attribués, ont été soumis à la retenue d'impôt selon les dispositions de l'article 3 et si les montants retenus ont été déclarés aux bureaux de recette.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_13">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_13</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_13/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 13.</num>
+					<paragraph id="paragraph_17">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les employeurs sont tenus, lorsqu'ils en sont requis par un reviseur de l'administration justifiant de sa qualité par la présentation de la carte d'identité de service </p>
+								<ol scl:symbol="a)">
+									<li>d'autoriser ce reviseur à pénétrer dans les locaux de l'établissement durant les heures usuelles de service,</li>
+									<li>de mettre à sa disposition un local approprié et les installations nécessaires pour l'accomplissement de sa mission.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_18">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les employeurs ainsi que leurs employés sont tenus de communiquer au reviseur le relevé des salaires visé à l'article 7 ainsi que tous autres documents comptables, dans la mesure où le reviseur estime cette communication nécessaire pour la constatation des rémunérations de toute nature allouées aux salariés.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_19">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les employeurs sont, par ailleurs, tenus </p>
+								<ol scl:symbol="a)">
+									<li>de fournir au reviseur toutes explications permettant d'interpréter de façon exacte les écritures comptables,</li>
+									<li>de donner, sur demande du reviseur, tous renseignements nécessaires pour l'appréciation de la situation fiscale des personnes dont la qualité de salarié dans l'établissement est douteuse.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_20">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les obligations prévues aux trois alinéas qui précèdent incombent également aux personnes étrangères à l'établissement dans l'hypothèse où l'employeur a confié la tenue de la comptabilité des salaires à une personne étrangère à l'entreprise.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_14">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_14</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_14/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 14.</num>
+					<paragraph id="paragraph_21">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les salariés d'un établissement doivent, sur demande du reviseur, renseigner celui-ci sur la nature et le montant de leurs rétributions et lui communiquer tous documents pouvant se trouver en leur possession.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_22">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le reviseur est également autorisé à requérir des personnes visées à l'alinéa 3b de l'article 13 des renseignements propres à éclaircir leur situation fiscale.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_15">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_15</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_15/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 15.</num>
+					<alinea>
+						<content>
+							<p>Les organismes de sécurité sociale et d'allocations familiales sont tenus de prêter leur concours aux services de l'administration chargés de la surveillance et de la revision des opérations relatives à la retenue d'impôt sur les salaires sans qu'ils puissent leur opposer les dispositions des lois sociales interdisant aux organismes en question de divulguer les faits et installations qu'ils parviendront à connaître dans l'accomplissement de leur mission.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_16/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<paragraph id="paragraph_23">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>A défaut de déclaration ou en cas de détermination inexacte de la retenue l'impôt en souffrance est fixé par l'administration qui, conformément aux dispositions des alinéas 4 et 5 de l'article 136 <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="8ec6e794-1a9f-43b7-8144-c6dd9f8e47d8">L.I.R.</ref> et à celles de la <ref href="/eli/etat/leg/loi/1931/05/22/n1/jo" id="4a72e3a6-fa31-46fe-8d24-d954e05ae798">loi générale des impôts</ref>, en réclame le paiement au moyen d'un bulletin écrit, soit de l'employeur, soit du salarié, soit de toute autre personne responsable du paiement de l'impôt.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_24">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le bulletin de la retenue d'impôt sur les salaires et les pensions doit contenir: </p>
+								<ol scl:symbol="a)">
+									<li>le montant de l'impôt à verser;</li>
+									<li>les éléments de la détermination de l'impôt à verser, pour autant qu'ils n'ont pas été communiqués au destinataire du bulletin;</li>
+									<li>l'indication que la fixation est complémentaire si elle ne porte pas sur l'ensemble des retenues dues au titre de la période de fixation;</li>
+									<li>l'indication des modalités de versement de l'impôt;</li>
+									<li>une instruction relative aux voies et moyens de recours.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_25">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>L'émission d'un bulletin de la retenue d'impôt peut être omise pour autant que l'employeur souscrit soit une déclaration de retenue d'impôt, soit une reconnaissance du supplément d'impôt dû sur le rapport de revision, cette dernière étant, quant à ses effets, assimilée à la déclaration de retenue d'impôt.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+			<section id="section_6">
+				<num>Section 6.</num><heading scl:separator="- " scl:style-format="b">Dispositions de mise en vigueur</heading>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_17/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 17.</num>
+					<alinea>
+						<content>
+							<p>Les dispositions du présent règlement sont applicables à partir du 1<sup>er</sup> janvier 1991.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_18">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_18</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7/art_18/19910104</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1990/12/24/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1991-01-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 18.</num>
+					<alinea>
+						<content>
+							<p>Notre Ministre des Finances est chargé de l'exécution du présent règlement qui sera publié au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+		</body>
+	</act>
+</akomaNtoso>

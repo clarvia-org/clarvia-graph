@@ -1,0 +1,2831 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="1999-06-21" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MJ"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="1999-06-21" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="1999-06-21" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2023-09-16</scl:jolux><scl:jolux scl:name="dateDocument">1999-06-21</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MJ</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/568</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/889</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">1999-07-30</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1999/a98</scl:jolux><scl:jolux scl:name="historicalLegalId">1999A18921</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">1999-07-26</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/CHD</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/ns/prov#Entity</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/ppl/19970089</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1986/12/22/n3/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1989/665/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1952/03/01/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1993/03/13/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1931/05/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1977/08/27/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1991/08/10/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1996/11/07/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/argd/1866/08/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1970/02/19/n2/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="titleShort">Loi du 21 juin 1999 portant règlement de procédure devant les juridictions administratives.</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 16/09/2023 : Loi du 21 juin 1999 portant règlement de procédure devant les juridictions administratives et modifiant \n a) la loi générale des impôts,\n b) la loi modifiée du 1er mars 1952 modifiant certaines dispositions relatives aux impôts directs\n c) la loi du 27 août 1977 concernant le statut des fonctionnaires entrés au service d'institutions internationales\n d) la loi modifiée du 10 août 1991 sur la profession d'avocat\n e) la loi modifiée du 13 mars 1993 relative à l'exécution en droit luxembourgeois de la Directive n° 89/665 du Conseil du 21 décembre 1989 portant coordination des dispositions législatives, réglementaires et administratives relatives à l'application des procédures de recours en matière de marchés publics\nf) la loi du 7 novembre 1996 portant organisation des juridictions de l'ordre administratif.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1999-98-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1999/a98/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-1999-06-21-n2-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1999-98-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1999/a98/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1999/a98/fr/pdf/eli-etat-leg-memorial-1999-a98-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="1999-07-30" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2000-08-13" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2023-01-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2023-01-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2023-09-16" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2000/07/28/n3/jo"/>
+<destination href="#art_54"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2022/11/30/a588/jo"/>
+<destination href="#art_34"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2022/11/30/a588/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2022/07/27/a401/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2023/07/20/a457/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/1999/06/21/n2/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2023/07/20/a457/jo" id="rp2" showAs="Loi du 20 juillet 2023 portant modification de : 1° la loi modifiée du 10 août 1991 sur la profession d’avocat ; 2° la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l’ordre administratif ; 3° la loi modifiée du 21 juin 1999 portant règlement de procédure devant les juridictions administratives ; en vue du renforcement des effectifs de la justice administrative et de la numérisation des procédures urgentes devant le tribunal administratif. "/>
+<passiveRef href="/eli/etat/leg/loi/2022/11/30/a588/jo" id="rp3" showAs="Loi du 30 novembre 2022 relative à la concurrence et portant : 1° organisation de l’Autorité nationale de concurrence ; 2° modification de la loi modifiée du 10 août 1991 sur la profession d’avocat ; 3° modification de la loi modifiée du 21 juin 1999 portant règlement de procédure devant les juridictions administratives ; 4° modification de la loi modifiée du 10 février 2015 relative à l’organisation du marché de produits pétroliers ; 5° modification de la loi modifiée du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État ; 6° modification de la loi modifiée du 23 juillet 2016 relative à la profession de l’audit ; 7° modification de la loi du 5 mars 2021 relative à certaines modalités de mise en œuvre du règlement (UE) n° 2019/1150 du Parlement européen et du Conseil du 20 juin 2019 promouvant l’équité et la transparence pour les entreprises utilisatrices de services d’intermédiation en ligne ; 8° modification de la loi du 1er juin 2021 sur les relations entre entreprises au sein de la chaîne d’approvisionnement agricole et alimentaire. "/>
+<passiveRef href="/eli/etat/leg/loi/2022/07/27/a401/jo" id="rp4" showAs="Loi du 27 juillet 2022 portant modification : 1° de la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l’ordre administratif ; 2° de la loi modifiée du 21 juin 1999 portant règlement de la procédure devant les juridictions administratives ; en vue de l’institution d’un recours contre les décisions de sanctions administratives communales. "/>
+<passiveRef href="/eli/etat/leg/loi/2000/07/28/n3/jo" id="rp5" showAs="Loi du 28 juillet 2000 portant modification  - de la loi modifiée du 7 mars 1980 sur l'organisation judiciaire  - de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l'Etat  - de la loi du 21 juin 1999 portant règlement de procédure devant les juridictions administratives  - de la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l'ordre administratif."/>
+</references>
+<notes scl:type="modification" source="#rp5">
+<note id="M1" marker="1" refersTo="pm1" title="A|2000-08-09|2000-07-28|L|71">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2000/07/28/n3/jo">Loi du 28 juillet 2000 portant modification - de la loi modifiée du 7 mars 1980 sur l'organisation judiciaire - de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l'Etat - de la loi du 21 juin 1999 portant règlement de procédure devant les juridictions administratives - de la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l'ordre administratif.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M2" marker="2" refersTo="pm2" title="A|2022-11-30|2022-11-30|L|588">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/11/30/a588/jo">Loi du 30 novembre 2022 relative à la concurrence et portant : 1° organisation de l’Autorité nationale de concurrence ; 2° modification de la loi modifiée du 10 août 1991 sur la profession d’avocat ; 3° modification de la loi modifiée du 21 juin 1999 portant règlement de procédure devant les juridictions administratives ; 4° modification de la loi modifiée du 10 février 2015 relative à l’organisation du marché de produits pétroliers ; 5° modification de la loi modifiée du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État ; 6° modification de la loi modifiée du 23 juillet 2016 relative à la profession de l’audit ; 7° modification de la loi du 5 mars 2021 relative à certaines modalités de mise en œuvre du règlement (UE) n° 2019/1150 du Parlement européen et du Conseil du 20 juin 2019 promouvant l’équité et la transparence pour les entreprises utilisatrices de services d’intermédiation en ligne ; 8° modification de la loi du 1er juin 2021 sur les relations entre entreprises au sein de la chaîne d’approvisionnement agricole et alimentaire.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M3" marker="3" refersTo="pm3" title="A|2022-11-30|2022-11-30|L|588">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/11/30/a588/jo">Loi du 30 novembre 2022 relative à la concurrence et portant : 1° organisation de l’Autorité nationale de concurrence ; 2° modification de la loi modifiée du 10 août 1991 sur la profession d’avocat ; 3° modification de la loi modifiée du 21 juin 1999 portant règlement de procédure devant les juridictions administratives ; 4° modification de la loi modifiée du 10 février 2015 relative à l’organisation du marché de produits pétroliers ; 5° modification de la loi modifiée du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État ; 6° modification de la loi modifiée du 23 juillet 2016 relative à la profession de l’audit ; 7° modification de la loi du 5 mars 2021 relative à certaines modalités de mise en œuvre du règlement (UE) n° 2019/1150 du Parlement européen et du Conseil du 20 juin 2019 promouvant l’équité et la transparence pour les entreprises utilisatrices de services d’intermédiation en ligne ; 8° modification de la loi du 1er juin 2021 sur les relations entre entreprises au sein de la chaîne d’approvisionnement agricole et alimentaire.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp4">
+<note id="M4" marker="4" refersTo="pm4" title="A|2022-07-28|2022-07-27|L|401">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/07/27/a401/jo">Loi du 27 juillet 2022 portant modification : 1° de la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l’ordre administratif ; 2° de la loi modifiée du 21 juin 1999 portant règlement de la procédure devant les juridictions administratives ; en vue de l’institution d’un recours contre les décisions de sanctions administratives communales.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M5" marker="5" refersTo="pm5" title="A|2023-07-27|2023-07-20|L|457">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2023/07/20/a457/jo">Loi du 20 juillet 2023 portant modification de : 1° la loi modifiée du 10 août 1991 sur la profession d’avocat ; 2° la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l’ordre administratif ; 3° la loi modifiée du 21 juin 1999 portant règlement de procédure devant les juridictions administratives ; en vue du renforcement des effectifs de la justice administrative et de la numérisation des procédures urgentes devant le tribunal administratif.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 16/09/2023 : Loi du 21 juin 1999 portant règlement de procédure devant les juridictions administratives et modifiant </p>
+<ol scl:start="1" scl:symbol="a)">
+<li> la loi générale des impôts,</li>
+<li> la loi modifiée du 1<sup>er</sup> mars 1952 modifiant certaines dispositions relatives aux impôts directs,</li>
+<li>la loi du 27 août 1977 concernant le statut des fonctionnaires entrés au service d'institutions internationales,</li>
+<li>la loi modifiée du 10 août 1991 sur la profession d'avocat,</li>
+<li>la loi modifiée du 13 mars 1993 relative à l'exécution en droit luxembourgeois de la Directive No. 89/665 du Conseil du 21 décembre 1989 portant coordination des dispositions législatives, réglementaires et administratives relatives à l'application des procédures de recours en matière de marchés publics,</li>
+<li>la loi du 7 novembre 1996 portant organisation des juridictions de l'ordre administratif.</li>
+</ol>
+</longTitle>
+</preface>
+<body>
+<title id="titre_ier">
+<num>
+<b>Titre I<sup>er</sup>. </b>
+</num>
+<heading scl:separator=" – " scl:style-format="b">
+<b> Instances devant le tribunal administratif</b>
+</heading>
+<chapter id="titre_ier.chapitre_ier">
+<num>
+<b>Chapitre I<sup>er</sup>.</b> </num>
+<heading scl:separator=" – " scl:style-format="b">
+<b> De l’introduction et de l’instruction des instances</b>
+</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_1er/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Tout recours, en matière contentieuse, introduit devant le tribunal administratif, dénommé ci-après «tribunal», est formé par requête signée d’un avocat inscrit à la liste I des tableaux dressés par les conseils des Ordres des avocats.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La requête, qui porte date, contient:</p>
+<ol xmlns:ns1="http://www.scl.lu" ns1:space-item="3" ns1:space-num="5" ns1:start="1" ns1:symbol="custom">
+<li ns1:symbol="–"> les noms, prénoms et domicile du requérant,</li>
+<li ns1:symbol="–">la désignation de la décision contre laquelle le recours est dirigé,</li>
+<li ns1:symbol="–"> l’exposé sommaire des faits et des moyens invoqués,</li>
+<li ns1:symbol="–"> l’objet de la demande, et</li>
+<li ns1:symbol="–"> le relevé des pièces dont le requérant entend se servir.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_2/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p> La requête introductive est déposée au greffe du tribunal, en original et quatre copies. Les pièces énoncées sont jointes en quatre copies. La décision critiquée doit figurer en copie parmi les pièces versées, si le demandeur en dispose; si tel n’est pas le cas, elle est à verser en cours de procédure par celui qui en est détenteur. En cas de recours contre le silence prévu par l’article 4 de la <ref href="/eli/etat/leg/loi/1996/11/07/n1/jo" id="0d711e69-c8b7-49ef-8ee8-bed5aa2623fd">loi du 7 novembre 1996</ref> portant organisation des juridictions de l’ordre administratif, c’est la demande de décision accompagnée le cas échéant d’un récépissé, qui est à joindre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le tribunal peut exiger le dépôt des originaux des pièces. Ce dépôt s’opère moyennant dépôt au greffe du tribunal où les pièces peuvent être consultées sans déplacement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_3/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Au regard des délais de procédure, seule la date du dépôt au greffe est prise en considération.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_4/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p> Sous réserve du paragraphe 2, le requérant fait signifier la requête à la partie défenderesse et aux tiers intéressés, à personne ou à domicile, par exploit d’huissier, dont l’original ou la copie certifiée conforme est déposé sans délai au greffe du tribunal. L’affaire n’est portée au rôle qu’après ce dépôt.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Faute par le requérant d’avoir procédé à la signification de son recours à la partie défenderesse dans le mois du dépôt du recours, celui-ci est caduc.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le dépôt de la requête vaut signification à l’Etat. Il en est de même pour le dépôt des mémoires subséquents.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(4)</num>
+<alinea>
+<content>
+<p>En cas de défaut de signification aux tiers intéressés, le tribunal ordonne leur mise en intervention.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(5)</num>
+<alinea>
+<content>
+<p> Les règles établies pour les significations en matière de procédure civile sont applicables.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_5/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<paragraph id="paragraph_6">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sans préjudice de la faculté, pour l’Etat, de se faire représenter par un délégué, le défendeur et le tiers intéressé sont tenus de constituer avocat et de fournir leur réponse dans le délai de trois mois à dater de la signification de la requête introductive.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La constitution d’avocat se fait soit par acte séparé, soit dans les mémoires en demande ou en défense.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La signature de l’avocat inscrit à la liste I des tableaux des avocats au bas de la requête ou des mémoires vaut constitution et élection de domicile chez lui.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Dès le dépôt au greffe de la constitution d’avocat ou du mémoire en réponse, le greffier transmet sans délai à l’avocat constitué un exemplaire des pièces déposées par le demandeur.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le demandeur peut fournir une réplique dans le mois de la communication de la réponse; la partie défenderesse et le tiers intéressé sont admis à leur tour à dupliquer dans le mois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les délais prévus aux paragraphes 1<sup>er</sup> et 5 sont prévus à peine de forclusion. Ils ne sont pas susceptibles d’augmentation en raison de la distance. Ils sont suspendus entre le 16 juillet et le 15 septembre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Pour des raisons exceptionnelles et dûment motivées, les parties peuvent demander au président du tribunal, au plus tard huit jours avant leur expiration respective, une prorogation unique des délais qui leur sont impartis. La demande est signifiée ou notifiée dans le même délai aux parties adverses. Le président rend une ordonnance non susceptible de recours après avoir entendu les parties ou les avoir dûment appelées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(8)</num>
+<alinea>
+<content>
+<p>Dans les affaires urgentes, les délais peuvent être abrégés par ordonnance du président du tribunal. La demande en abréviation des délais est signifiée ou notifiée aux autres parties. Le président rend une ordonnance non susceptible de recours après avoir entendu les parties ou les avoir dûment appelées.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_6/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Si la partie défenderesse ou un tiers intéressé ne comparaît pas dans le délai prévu à l’article 5, le tribunal statue néanmoins à l’égard de toutes les parties.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_7/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Il ne pourra y avoir plus de deux mémoires de la part de chaque partie, y compris la requête introductive.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Néanmoins, en cas de jugement avant dire droit ou de mesure d’instruction, chaque partie peut encore prendre position par un mémoire supplémentaire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutefois, dans l’intérêt de l’instruction de l’affaire, le président du tribunal ou le président de la chambre appelée à connaître de l’affaire peut ordonner d’office la production de mémoires supplémentaires.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_8/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<paragraph id="paragraph_14">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le dépôt et la signification des mémoires en réponse, en réplique et en duplique produits par les parties autres que le délégué du Gouvernement se font d’après les règles fixées aux articles 2 et 4 pour la requête introductive.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les pièces dont la partie défenderesse ou les tiers intéressés entendent se prévaloir sont énoncées dans leurs mémoires en réponse et déposées au greffe ensemble avec lesdits mémoires. Elles sont communiquées aux autres parties par le greffe.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les mémoires présentés par le délégué du Gouvernement sont déposés au greffe dans les délais prévus à l’article 5 et communiqués aux parties par le greffier.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_17">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le délégué du Gouvernement dépose au greffe, dans les mêmes délais, copie des pièces dont il entend se servir plus particulièrement. Ces pièces sont communiquées aux parties par le greffe.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_18">
+<num>(5)</num>
+<alinea>
+<content>
+<p>L’autorité qui a posé l’acte visé par le recours dépose le dossier au greffe sans autre demande, dans le délai de trois mois à partir de la communication du recours. Les parties peuvent obtenir copie des pièces de ce dossier contre paiement des droits de copie fixés pour frais de justice. Le recouvrement de ces frais est opéré par le receveur de l’Administration de l’enregistrement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_19">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Toute pièce versée après que le juge-rapporteur a commencé son rapport en audience publique est écartée des débats, sauf si le dépôt en est ordonné par le tribunal.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_9/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 1<sup>er</sup> , en cas d’introduction d’un recours par l’Etat, la requête introductive peut être signée par un délégué du Gouvernement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par dérogation à l’article 4, en cas d’introduction d’un recours par l’Etat, le greffier communique, selon les formalités prévues à l’article 34, à la partie défenderesse et au tiers intéressé, copie des mémoires et pièces fournis. La partie défenderesse et le tiers intéressé sont tenus de répondre dans le délai prévu à l’article 5.</p>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_10/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>Les communications entre avocats constitués et entre le délégué du Gouvernement et les avocats constitués peuvent être faites moyennant signification par ministère d’huissier ou notification par voie postale ou par voie directe ou par voie de greffe en ce qui concerne les communications avec le délégué du Gouvernement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La signification est constatée par l’apposition du cachet et de la signature de l’huissier de justice sur l’acte et sa copie avec l’indication de la date et du nom du délégué du Gouvernement ou de l’avocat destinataire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La notification directe s’opère par la remise de l’acte en double exemplaire au délégué du Gouvernement ou à l’avocat destinataire, lequel restitue aussitôt l’un des exemplaires après l’avoir daté et visé.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_11/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<paragraph id="paragraph_20">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le recours n’a pas d’effet suspensif s’il n’en est autrement ordonné par le président du tribunal ou par le juge qui le remplace.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_21">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le sursis à exécution ne peut être décrété qu’à la double condition que, d’une part, l’exécution de la décision attaquée risque de causer au requérant un préjudice grave et définitif et que, d’autre part, les moyens invoqués à l’appui du recours dirigé contre la décision apparaissent comme sérieux. Le sursis est rejeté si l’affaire est en état d’être plaidée et décidée à brève échéance.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_22">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La demande en sursis à exécution est à présenter par requête distincte à adresser au président du tribunal et doit remplir les conditions prévues aux articles 2 et 4.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_23">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le défendeur et le tiers intéressé sont convoqués par les soins du greffe.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_24">
+<num>(5)</num>
+<alinea>
+<content>
+<p>La procédure est orale. L’affaire est plaidée à l’audience à laquelle les parties ont été convoquées. Le président s’assure que le défendeur et le tiers intéressé ont été touchés par la convocation. Sur demande justifiée des parties, il peut accorder des remises.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_25">
+<num>(6)</num>
+<alinea>
+<content>
+<p>L’ordonnance est exécutoire dès sa notification. Elle n’est susceptible d’aucune voie de recours. Elle cesse ses effets lorsque le tribunal a tranché le principal ou une partie du principal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_26">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Le juge qui a connu de la demande d’effet suspensif du recours ne peut plus siéger au fond.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_12/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>Lorsque le tribunal est saisi d’une requête en annulation ou en réformation, le président ou le magistrat qui le remplace peut au provisoire ordonner toutes les mesures nécessaires afin de sauvegarder les intérêts des parties ou des personnes qui ont intérêt à la solution de l’affaire, à l’exclusion des mesures ayant pour objet des droits civils.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La demande est instruite et jugée selon la procédure prévue à l’article 11, paragraphes 3 à 7.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_12bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_12bis/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-09-16</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm5"/>Art. 12<i>bis</i>.</num>
+<paragraph id="paragraph_82">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 2, un recours tendant à l’obtention d’un effet suspensif prévu à l’article 11 ou d’une mesure de sauvegarde prévue à l’article 12 formulé à l’encontre d’une décision émanant de l’État peut également être introduit au greffe du tribunal administratif par voie électronique moyennant téléchargement sur la plateforme d’échanges sécurisés, désignée ci-après « la plateforme ».</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans ce cas, la requête fait l’objet d’une signature électronique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’enregistrement de la requête sur la plateforme vaut signification à l’État. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_83">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les pièces versées à l’appui de la demande sont jointes à la transmission électronique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le relevé des pièces présente, de manière exhaustive, les pièces annexées à la requête par un intitulé comprenant, pour chacune d’elles, un numéro dans un ordre continu et croissant ainsi qu’un libellé explicite.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsqu’une partie entend se servir de pièces qui ne peuvent pas être transmises sous une forme numérisée sur la plateforme, elle les dépose en version non-digitalisée au greffe du tribunal conformément à l’article 2, alinéa 2.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les notes de plaidoiries éventuelles sont transmises par voie électronique. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_84">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La date de réception est la date indiquée sur le bordereau de transmission généré par la plateforme après le dépôt de l’affaire au greffe.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_85">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le greffe du tribunal notifie aux avocats et au délégué du Gouvernement l’ordonnance et les informe par message électronique de l’ordonnance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute communication faite par le greffe par courrier électronique aux avocats et au délégué du Gouvernement s’opère exclusivement par le biais des adresses électroniques professionnelles, qui sont mises à disposition respectivement par les barreaux aux avocats et par l’État au délégué du Gouvernement. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_86">
+<num>(5)</num>
+<alinea>
+<content>
+<p> Une requête tendant à obtenir un sursis à exécution ou une mesure de sauvegarde sur base de l’article 114 de la loi modifiée du 27 août 2008 sur la libre circulation des personnes et l’immigration, qui est déposée conformément au paragraphe 1er du présent article, ne bénéficie d’un effet suspensif immédiat que si elle a été enregistrée sur la plateforme entre 08.00 et 17.00 heures d’un jour ouvrable.<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_13/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<paragraph id="paragraph_27">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sauf dans les cas où les lois ou les règlements fixent un délai plus long ou plus court et sans préjudice des dispositions de la <ref href="/eli/etat/leg/loi/1986/12/22/n3/jo" id="9fe457c3-1f27-49a4-a3ab-ce5c968483ab">loi du 22 décembre 1986</ref> relative au relevé de la déchéance résultant de l’expiration d’un délai imparti pour agir en justice, le recours au tribunal n’est plus recevable après trois mois du jour où la décision a été notifiée au requérant ou du jour où le requérant a pu en prendre connaissance.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_28">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Toutefois si la partie intéressée a adressé un recours gracieux à l’autorité compétente avant l’expiration du délai de recours fixé par la disposition qui précède ou d’autres dispositions législatives ou réglementaires, le délai du recours contentieux est suspendu et un nouveau délai commence à courir à partir de la notification de la nouvelle décision qui intervient à la suite de ce recours gracieux.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_29">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Si un délai de plus de trois mois s’est écoulé depuis la présentation du recours gracieux sans qu’une nouvelle décision ne soit intervenue, le délai du recours contentieux commence à courir à partir de l’expiration du troisième mois. La date du dépôt du recours gracieux est constatée par la notification qui en a été faite ou par un récépissé délivré au requérant par l’autorité administrative compétente ou son préposé. Ce récépissé doit être produit à l’appui du recours contentieux du tribunal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_30">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Si l’administration n’a pas délivré de récépissé, le tribunal apprécie, d’après les éléments du dossier, si le requérant rapporte une preuve certaine qu’un recours gracieux a été introduit par lui à une date déterminée.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_31">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Néanmoins le tiers intéressé peut former incidemment recours alors même qu’il aurait acquiescé à la décision attaquée avant le recours principal.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_14/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>Lorsque, d’après l’examen d’une affaire, il y a lieu d’ordonner des mises en intervention, des enquêtes, des mesures d’instruction exécutées par un technicien, des vérifications d’écritures ou des vérifications personnelles du juge, le tribunal règle la forme et les délais dans lesquels il y est procédé et commet un de ses membres pour procéder à ces actes d’instruction, les recevoir ou les surveiller.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le principe du contradictoire doit en tout état de cause être respecté.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14-1">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_14-1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_14-1/20000813</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14-1.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm4"/>Art. 14-1.</num>
+<paragraph id="paragraph_69">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Par dérogation aux articles 1<sup>er</sup> à 14 les règles procédurales ci-dessous sont applicables aux recours dirigés contre les décisions de sanctions administratives communales visées à l’article 9-1 de la <ref href="/eli/etat/leg/loi/1996/11/07/n1/jo" id="8adc048e-7197-4dc0-81ff-de1a88df7026" scl:verify="true">loi modifiée du 7 novembre 1996</ref> portant organisation des juridictions de l’ordre administratif.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_70">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le recours est introduit sous forme de requête.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_71">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La requête écrite et datée contient :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les noms, prénoms et domicile du requérant ; </li>
+<li>l’objet de la demande ;</li>
+<li>la désignation et la date de la décision contre laquelle le recours est dirigé ;</li>
+<li>l’exposé sommaire des faits et des moyens invoqués ; </li>
+<li>les noms, prénoms et domicile des témoins que le requérant entend appeler le cas échéant ; et</li>
+<li>le relevé des pièces dont le requérant entend se servir.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_72">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le requérant est dispensé du ministère d’avocat à la Cour. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_73">
+<num>(5)</num>
+<alinea>
+<content>
+<p>La requête introductive est déposée au greffe du tribunal administratif, en original et une copie. Les pièces sont jointes en deux copies. La décision critiquée doit figurer en copie parmi les pièces versées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le tribunal administratif peut exiger le dépôt des originaux des pièces. Ce dépôt s’opère moyennant dépôt au greffe du tribunal où les pièces peuvent être consultées sans déplacement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_74">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le dépôt de la requête vaut signification à l’État. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_75">
+<num>(7)</num>
+<alinea>
+<content>
+<p>L’État est représenté par un mandataire qui doit être un fonctionnaire du groupe de traitement A1 relevant du ministère ayant la tutelle de l’autorité administrative ayant pris la décision ou la mesure attaquée. Lorsque l’État entend appeler des témoins, il dépose une liste comprenant les noms, prénoms et domicile des témoins au greffe du tribunal administratif au plus tard quinze jours après le dépôt de la requête.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_76">
+<num>(8)</num>
+<alinea>
+<content>
+<p>La procédure est orale.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_77">
+<num>(9)</num>
+<alinea>
+<content>
+<p>Les parties et leurs témoins sont entendus par le juge à l’audience à laquelle ils ont été convoqués par les soins du greffe par lettre recommandée avec accusé de réception au plus tard quinze jours avant la date de l’audience. La liste de témoins visée au paragraphe 7 est jointe à la convocation adressée aux parties.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si l’État ne comparaît pas, le tribunal statue néanmoins à son égard. Le jugement est contradictoire. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_78">
+<num>(10)</num>
+<alinea>
+<content>
+<p>Les pièces dont les parties entendent se prévaloir doivent être déposées auprès du greffe au plus tard huit jours avant l’audience. Elles sont communiquées aux autres parties par le greffe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans le même délai, l’autorité qui a posé l’acte visé par le recours dépose le dossier au greffe sans autre demande. Les parties peuvent obtenir copie des pièces de ce dossier contre paiement des droits de copie fixés pour frais de justice. Le recouvrement de ces frais est opéré par le receveur de l’Administration de l’enregistrement et des domaines.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_79">
+<num>(11)</num>
+<alinea>
+<content>
+<p>Au regard des délais de procédure, seule la date du dépôt au greffe est prise en considération.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_80">
+<num>(12)</num>
+<alinea>
+<content>
+<p>Les articles 20 et 36 ne sont pas applicables.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_81">
+<num>(13)</num>
+<alinea>
+<content>
+<p>Les décisions sont prononcées en audience publique.<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="titre_ier.chapitre_ii">
+<num>
+<b>Chapitre II.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Des recours contre les actes administratifs à caractère réglementaire</b>
+</heading>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_15/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<alinea>
+<content>
+<p>Les recours dirigés contre les actes administratifs à caractère réglementaire sont introduits et instruits conformément aux dispositions des articles 1<sup>er</sup> à 14, sous réserve des dispositions qui suivent.</p>
+</content>
+</alinea>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_16/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<alinea>
+<content>
+<p> Le délai d’introduction est de trois mois à partir de la publication de l’acte attaqué ou, à défaut de publication, de la notification ou du jour où le requérant en a eu connaissance.</p>
+</content>
+</alinea>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_17/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>Si la décision attaquée est publiée au Mémorial, le demandeur est dispensé de la verser parmi les pièces.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de recours introduit par une association sur base de l’article 7, paragraphe (2) de la <ref href="/eli/etat/leg/loi/1996/11/07/n1/jo" id="51d6648c-ab4b-4282-877f-1846e5a43666">loi du 7 novembre 1996</ref>, celle-ci doit déposer toutes pièces documentant ses qualités de personnalité morale et d’association agréée au voeu de l’article 7, paragraphe (2), alinéa 2 de la <ref href="/eli/etat/leg/loi/1996/11/07/n1/jo" id="dc4a1069-271f-4306-839f-589d6c491c7b">même loi</ref>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_18/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>Le président du tribunal ou le magistrat qui le remplace peut ordonner l’effet suspensif du recours dans les conditions et selon la procédure de l’article 11.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="titre_ier.chapitre_iii">
+<num>
+<b>Chapitre III.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Des incidents en cours d’instruction des affaires</b>
+</heading>
+<part id="titre_ier.chapitre_iii.part_1">
+<heading scl:style-format="i">
+<span scl:style-format="n">
+<i>De l’inscription en faux</i>
+</span>
+</heading>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_19/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<alinea>
+<content>
+<p>Dans le cas de demande en inscription de faux contre une pièce produite, le tribunal fixe le délai dans lequel la partie qui l’a produite est tenue de déclarer si elle entend s’en servir.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si la partie ne satisfait pas à cette ordonnance, ou si elle déclare qu’elle n’entend pas se servir de la pièce, ladite pièce est rejetée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si la partie déclare qu’elle entend se servir de la pièce, le tribunal statue sur le rapport du juge commis, soit en ordonnant qu’il sera sursis à la décision de l’instance principale jusqu’après le jugement sur le faux par le tribunal compétent soit en prononçant la décision définitive, si elle ne dépend pas de la pièce arguée de faux.</p>
+</content>
+</alinea>
+</article>
+</part>
+<part id="titre_ier.chapitre_iii.part_2">
+<heading scl:style-format="i">
+<span scl:style-format="n">
+<i>De l’intervention</i>
+</span>
+</heading>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_20/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<alinea>
+<content>
+<p> L’intervention est formée par une requête, conforme aux dispositions des articles 1<sup>er</sup> et 2, qui est notifiée aux parties, pour y répondre dans le délai fixé par le président du tribunal ou le président de la chambre appelée à connaître de l’affaire principale; néanmoins, la décision de l’affaire principale qui serait instruite ne peut être retardée par une intervention.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque l’intervention est faite après que tous les mémoires prévus par l’article 5 ont été échangés, les parties défenderesses sur intervention peuvent communiquer dans le mois, à peine de forclusion, un mémoire supplémentaire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’intervention n’est plus recevable après que le juge-rapporteur a commencé son rapport en audience publique.</p>
+</content>
+</alinea>
+</article>
+</part>
+<part id="titre_ier.chapitre_iii.part_3">
+<heading scl:style-format="i">
+<span scl:style-format="n">
+<i>Des reprises d’instance et constitution de nouvel avocat</i>
+</span>
+</heading>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_21/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 21.</num>
+<paragraph id="paragraph_32">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Dans les affaires qui ne sont point en état d’être jugées, la procédure est suspendue par la communication du décès de l’une des parties ou par le seul fait du décès, de la démission, de l’interdiction ou de la destitution de son avocat.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_33">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Une affaire est en état d’être jugée lorsque les délais pour échanger les mémoires sont expirés.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_34">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La suspension dure jusqu’à la mise en demeure pour reprendre l’instance ou constituer avocat.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_35">
+<num>(4)</num>
+<alinea>
+<content>
+<p>La reprise d’instance et la constitution de nouvel avocat se fait en conformité avec les articles 5, paragraphe 2 et 10.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_22/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 22.</num>
+<alinea>
+<content>
+<p>L’acte de révocation d’un avocat par la partie est sans effet pour la partie adverse, s’il ne contient pas la constitution d’un autre avocat.</p>
+</content>
+</alinea>
+</article>
+</part>
+<part id="titre_ier.chapitre_iii.part_4">
+<heading>
+<span scl:style-format="n">
+<i>Du désaveu</i>
+</span>
+</heading>
+<article id="art_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_23/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 23.</num>
+<alinea>
+<content>
+<p>Si une partie veut former un désaveu relativement à des actes ou procédures faits en son nom par l’avocat ailleurs qu’au tribunal, et qui peuvent influer sur la décision de la cause qui y est portée, sa demande doit être communiquée aux autres parties. Si le tribunal estime que le désaveu mérite d’être instruit, il renvoie l’instruction et le jugement devant les juges compétents pour y être statué dans le délai qui sera réglé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>A l’expiration de ce délai, il est passé outre au rapport de l’affaire principale sur le vu du jugement du désaveu, ou faute de le rapporter.</p>
+</content>
+</alinea>
+</article>
+</part>
+<part id="titre_ier.chapitre_iii.part_5">
+<heading>
+<span scl:style-format="n">
+<i>De la récusation</i>
+</span>
+</heading>
+<article id="art_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_24/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 24.</num>
+<alinea>
+<content>
+<p>Sont applicables les dispositions relatives à la récusation applicables en matière de procédure civile.</p>
+</content>
+</alinea>
+</article>
+</part>
+<part id="titre_ier.chapitre_iii.part_6">
+<heading>
+<span scl:style-format="n">
+<i>Du désistement</i>
+</span>
+</heading>
+<article id="art_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_25/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 25.</num>
+<alinea>
+<content>
+<p>Le désistement peut être fait par acte signé par le demandeur ou par son mandataire et communiqué à la partie adverse et au tiers intéressé dans les formes de l’article 10.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il emporte de plein droit déchéance du recours et obligation de payer les frais de l’instance.</p>
+</content>
+</alinea>
+</article>
+</part>
+</chapter>
+<chapter id="titre_ier.chapitre_iv">
+<num>
+<b>Chapitre IV.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>De la tenue des audiences et des décisions du tribunal</b>
+</heading>
+<article id="art_26">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_26</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_26/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 26.</num>
+<alinea>
+<content>
+<p>Ceux qui assistent aux audiences, se tiennent découverts, dans le respect et le silence: tout ce que le président ordonne pour le maintien de l’ordre, est exécuté ponctuellement et à l’instant.</p>
+</content>
+</alinea>
+</article>
+<article id="art_27">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_27/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 27.</num>
+<alinea>
+<content>
+<p>Si un ou plusieurs individus interrompent le silence, donnent des signes d’approbation ou d’improbation, soit à la défense des parties, soit aux discours des juges, soit aux interpellations, avertissements ou ordre du président, soit aux jugements ou ordonnances, causent ou excitent du tumulte de quelque manière que ce soit, et si, après l’avertissement du président, ils ne rentrent pas dans l’ordre sur-le-champ, il leur est enjoint de se retirer, et les résistants seront saisis et déposés à l’instant dans la maison d’arrêt pour vingt-quatre heures: ils y seront reçus sur l’exhibition de l’ordre du président, qui sera mentionné au procès-verbal de l’audience; le tout sans préjudice des poursuites pénales devant la juridiction compétente.</p>
+</content>
+</alinea>
+</article>
+<article id="art_28">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_28</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_28/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28.</num>
+<paragraph id="paragraph_36">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le tribunal prend ses décisions sur le rapport d’un de ses membres.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_37">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le rapport est fait en audience publique du tribunal par un de ses membres; après ce rapport, les mandataires des parties ainsi que les délégués du Gouvernement ou les mandataires par lesquels l’Etat est représenté à l’audience, sont entendus dans leurs observations orales.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_38">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La délibération du tribunal n’est pas publique.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_39">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le jugement contient les noms des juges, du délégué du Gouvernement ainsi que des mandataires, les noms, prénoms et demeures des parties, leurs prétentions, l’exposé sommaire des points de fait et de droit, les motifs et le dispositif.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_29">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_29</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_29/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 29.</num>
+<alinea>
+<content>
+<p>L’inobservation des règles de procédure n’entraîne l'irrecevabilité de la demande que si elle a pour effet de porter effectivement atteinte aux droits de la défense.</p>
+</content>
+</alinea>
+</article>
+<article id="art_30">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_30</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_30/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 30.</num>
+<alinea>
+<content>
+<p> Le tribunal ne peut pas statuer sur un moyen soulevé d’office sans avoir préalablement invité les parties à présenter leurs observations.</p>
+</content>
+</alinea>
+</article>
+<article id="art_31">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_31</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_31/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 31.</num>
+<alinea>
+<content>
+<p>Le tribunal, suivant la gravité des circonstances, peut, dans les causes dont il sera saisi, prononcer, même d’office, des injonctions, supprimer des écrits, les déclarer calomnieux et ordonner l’impression et l’affiche de ses jugements.</p>
+</content>
+</alinea>
+</article>
+<article id="art_32">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_32</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_32/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 32.</num>
+<alinea>
+<content>
+<p>Toute partie qui succombera sera condamnée au dépens, sauf au tribunal à laisser la totalité, ou une fraction des dépens à la charge d’une autre partie par décision spéciale et motivée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_33">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_33</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_33/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 33.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 33.</num>
+<alinea>
+<content>
+<p>Lorsqu’il paraît inéquitable de laisser à la charge d’une partie les sommes exposées par elle et non comprises dans les dépens, le juge peut condamner l’autre partie à lui payer le montant qu’il détermine.</p>
+</content>
+</alinea>
+</article>
+<article id="art_34">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_34</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_34/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 34.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 34.</num>
+<paragraph id="paragraph_40">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le greffier notifie aux parties une copie certifiée conforme du jugement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_41">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La notification s’opère par pli fermé et recommandé à la poste, accompagné d’un avis de réception. Le pli est délivré aux mandataires auprès desquels les parties ont élu domicile.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_42">
+<num>(3)</num>
+<alinea>
+<content>
+<p>En cas d’absence d’élection de domicile, la remise est faite en mains propres du destinataire. S’il s’agit d’une personne morale, la remise en mains propres du destinataire est réputée faite lorsque le pli est délivré à son représentant légal, à un fondé de pouvoir de ce dernier ou à toute autre personne habilitée à cet effet.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_43">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Si le destinataire accepte la lettre recommandée, l’agent des postes en fait mention sur l’avis de réception qu’il envoie au greffe. Dans ce cas, la notification est réputée faite le jour de la remise de la lettre recommandée au destinataire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_44">
+<num>(5)</num>
+<alinea>
+<content>
+<p> Si l’agent des postes ne trouve pas le destinataire à l’adresse indiquée et qu’il résulte des constatations qu’il a faites que le destinataire demeure bien à cette adresse, le pli peut être remis à toute autre personne qui s’y trouve, à condition que celle-ci l’accepte, déclare ses nom, prénoms, qualité et adresse et donne récépissé. L’agent des postes en fait mention sur l’avis de réception qu’il envoie au greffe. Le pli ne peut être remis à un enfant qui n’a pas atteint l’âge de quinze ans accomplis. La notification est réputée faite le jour de la remise de la lettre recommandée à la personne qui l’accepte.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_45">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Dans les cas où la notification n’a pu être faite comme il est dit ci-avant, l’agent des postes remet la lettre recommandée avec l’avis de réception au bureau des postes distributeur compétent. Il laisse à l’adresse indiquée ou dans la boîte postale du destinataire un avis l’avertissant que la lettre recommandée n’a pas pu lui être remise en indiquant l’adresse du tribunal ainsi que le bureau des postes où la lettre recommandée doit être retirée dans un délai de sept jours. Si la lettre est retirée dans ce délai, un agent du bureau des postes mentionne la remise sur l’avis de réception qu’il envoie au greffe. Si la lettre recommandée n’est pas retirée par le destinataire dans ce délai, l’agent le mentionne sur l’avis de réception et renvoie la lettre recommandée accompagnée de l’avis de réception au greffe. Dans tous les cas, la notification est réputée faite le jour du dépôt de l’avis par l’agent des postes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_46">
+<num>(7)</num>
+<alinea>
+<content>
+<p> Lorsqu’une partie réside à l’étranger ou n’a ni domicile, ni résidence connus, il est procédé par voie de signification par exploit d’huissier. Les règles établies pour les significations en matière de procédure civile sont applicables.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_47">
+<num>(8)</num>
+<alinea>
+<content>
+<p>Si l’Etat est partie au litige le jugement est notifié aux membres du gouvernement en cause.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_68">
+<num>
+<mod class="mod-start" for="#pm2"/>(8-1)</num>
+<alinea>
+<content>
+<p>Si l’Autorité de concurrence du Grand-Duché de Luxembourg est partie au litige le jugement est notifié au président de l’Autorité de concurrence.<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_48">
+<num>(9)</num>
+<alinea>
+<content>
+<p>Les jugements du tribunal ne sont mis à exécution qu’après avoir été préalablement notifiés aux parties.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_35">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_35</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_35/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 35.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 35.</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 45, si l’exécution de la décision attaquée risque de causer au requérant un préjudice grave et définitif, le tribunal peut, dans un jugement tranchant le principal ou une partie du principal, ordonner l’effet suspensif du recours pendant le délai et l’instance d’appel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La décision ordonnant l’effet suspensif n’est pas susceptible d’appel.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="titre_ier.chapitre_v">
+<num>
+<b>Chapitre V.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Des voies de recours contre les décisions du tribunal</b>
+</heading>
+<part id="titre_ier.chapitre_v.part_1">
+<heading>
+<span scl:style-format="n">
+<i>De la tierce-opposition</i>
+</span>
+</heading>
+<article id="art_36">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_36</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_36/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 36.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 36.</num>
+<alinea>
+<content>
+<p>Ceux qui veulent s’opposer à des décisions du tribunal et lors desquelles ni eux ni ceux qu’ils représentent n’ont été appelés, ne peuvent former leur opposition que par requête en la forme ordinaire; et sur le dépôt qui en sera fait au greffe du tribunal, il sera procédé conformément aux dispositions du chapitre I<sup>er</sup>.</p>
+</content>
+</alinea>
+</article>
+</part>
+<part id="titre_ier.chapitre_v.part_2">
+<heading>
+<span scl:style-format="n">
+<i>De l’appel</i>
+</span>
+</heading>
+<article id="art_37">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_37</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_37/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 37.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 37.</num>
+<alinea>
+<content>
+<p>L’appel contre les décisions du tribunal est instruit devant la Cour administrative suivant les règles énoncées aux articles 38 à 51.</p>
+</content>
+</alinea>
+</article>
+</part>
+</chapter>
+</title>
+<title id="titre_ii">
+<num>
+<b>Titre II.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Instances devant la Cour administrative</b>
+</heading>
+<chapter id="titre_ii.chapitre_i">
+<num>
+<b>Chapitre I.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>De l’appel et de l’instruction sur appel</b>
+</heading>
+<article id="art_38">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_38</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_38/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 38.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 38.</num>
+<alinea>
+<content>
+<p>Sans préjudice des dispositions de la <ref href="/eli/etat/leg/loi/1986/12/22/n3/jo" id="382ebb67-5c75-41a9-8937-a9aedf188391">loi du 22 décembre 1986</ref> relative au relevé de la déchéance résultant de l’expiration d’un délai imparti pour agir en justice, le délai pour interjeter appel contre les jugements du tribunal administratif ou d’une autre juridiction administrative est, sous peine de forclusion, de quarante jours. Le délai n’est pas susceptible d’augmentation en raison de la distance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ce délai court pour toutes les parties du jour où le jugement leur aura été notifié par le greffe de la juridiction de première instance, d’après la procédure prévue par l’article 34.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’intimé peut interjeter appel incident.</p>
+</content>
+</alinea>
+</article>
+<article id="art_39">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_39</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_39/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 39.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 39.</num>
+<paragraph id="paragraph_49">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’appel est interjeté par une requête déposée au greffe de la Cour administrative, dénommée ci-après «Cour», en original et quatre copies et signifiée aux parties ayant figuré en première instance ou y ayant été dûment appelées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_50">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Faute par le requérant de signifier son recours dans le mois du dépôt du recours, celui-ci est caduc.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_51">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le dépôt de la requête d’appel vaut signification à l’Etat. Il en est de même pour le dépôt des mémoires subséquents.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_52">
+<num>(4)</num>
+<alinea>
+<content>
+<p>La requête d’appel doit être signée par un avocat, inscrit à la liste I des tableaux dressés par les conseils des ordres des avocats, ou par le délégué du Gouvernement ayant reçu mandat exprès à cet effet de l’Etat.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_53">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les règles établies pour les significations en matière de procédure civile sont applicables.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_40">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_40</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_40/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 40.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 40.</num>
+<alinea>
+<content>
+<p>La signature de l’avocat ou du délégué du Gouvernement au bas de la requête ou des mémoires vaut constitution et élection de domicile chez lui.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si l’Etat relève appel par voie du délégué du Gouvernement, le mandat du membre du gouvernement dont émane la décision en cause doit figurer en annexe de la requête d’appel, à peine d’irrecevabilité.</p>
+</content>
+</alinea>
+</article>
+<article id="art_41">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_41</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_41/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 41.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 41.</num>
+<paragraph id="paragraph_54">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La requête qui porte date, contient:</p>
+<ul scl:space-item="3" scl:space-num="5" scl:symbol="custom">
+<li scl:symbol="–">les noms, prénoms et domicile de l’appelant,</li>
+<li scl:symbol="–">l’indication du jugement contre lequel appel est interjeté,</li>
+<li scl:symbol="–">l’exposé sommaire des faits et des moyens invoqués,</li>
+<li scl:symbol="–">les prétentions de l’appelant, et</li>
+<li scl:symbol="–"> le relevé des pièces dont il entend se servir.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_55">
+<num>(2)</num>
+<alinea>
+<content>
+<p> Les demandes nouvelles en instance d’appel sont prohibées. En revanche, les moyens nouveaux sont admis.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_56">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le dossier de la première instance, contenant copies des pièces versées en première instance ainsi que du jugement du tribunal, est versé à la Cour par le tribunal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_57">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Pour les pièces nouvelles, il est procédé conformément à l’article 2.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_58">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Toute pièce versée après que le magistrat-rapporteur a commencé son rapport en audience publique est écartée des débats, sauf si le dépôt en est ordonné par la Cour.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_42">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_42</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_42/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 42.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 42.</num>
+<alinea>
+<content>
+<p>Au regard des délais de procédure, seule la date du dépôt au greffe est prise en considération.</p>
+</content>
+</alinea>
+</article>
+<article id="art_43">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_43</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_43/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 43.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 43.</num>
+<alinea>
+<content>
+<p>Aucune intervention volontaire n’est reçue en cas d’appel si ce n’est de la part de ceux qui ont droit de former tierce-opposition.</p>
+</content>
+</alinea>
+</article>
+<article id="art_44">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_44</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_44/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 44.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 44.</num>
+<alinea>
+<content>
+<p>Les jugements qui tranchent dans leur dispositif une partie du principal et ordonnent une mesure d’instruction ou une mesure provisoire peuvent être immédiatement frappés d’appel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il en est de même lorsque le jugement, qui statue sur une exception de procédure, une fin de non-recevoir ou tout autre incident, met fin à l’instance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les autres jugements ne peuvent être frappés d’appel, indépendamment des jugements sur le fond, que dans les cas spécifiés par le législateur.</p>
+</content>
+</alinea>
+</article>
+<article id="art_45">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_45</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_45/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 45.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 45.</num>
+<alinea>
+<content>
+<p>Sans préjudice de la disposition de l’article 35, pendant le délai et l’instance d’appel, il est sursis à l’exécution des jugements ayant annulé ou réformé des décisions attaquées.</p>
+</content>
+</alinea>
+</article>
+<article id="art_46">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_46</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_46/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 46.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 46.</num>
+<paragraph id="paragraph_59">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La partie intimée et le tiers intéressé sont tenus de fournir leur réponse dans le délai d’un mois à dater de la signification de la requête d’appel.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_60">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’appelant peut fournir une réplique dans le mois de la notification de chaque réponse; la partie intimée et le tiers intéressé sont admis à leur tour à dupliquer dans le mois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_61">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les délais qui sont prévus aux paragraphes 1<sup>er</sup> et 2 ci-dessus sont fixés à peine de forclusion. Ils ne sont pas susceptibles d’augmentation en raison de la distance. Ils sont suspendus entre le 16 juillet et le 15 septembre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_62">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Pour des raisons exceptionnelles et dûment motivées, les parties peuvent demander au président de la Cour, au plus tard huit jours avant leur expiration respective, une prorogation unique des délais qui leur sont impartis. La demande est communiquée dans le même délai aux parties adverses. Le président rend une ordonnance non susceptible de recours après avoir entendu les parties ou les avoir dûment appelées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_63">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Dans les affaires urgentes, les délais peuvent être abrégés par ordonnance du président de la Cour. La demande en abréviation des délais est communiquée aux autres parties. Le président rend une ordonnance non susceptible de recours après avoir entendu les parties ou les avoir dûment appelés.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_47">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_47</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_47/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 47.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 47.</num>
+<alinea>
+<content>
+<p>Si la partie intimée ne comparaît pas, la Cour statue néanmoins à son égard.</p>
+</content>
+</alinea>
+</article>
+<article id="art_48">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_48</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_48/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 48.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 48.</num>
+<alinea>
+<content>
+<p>Sauf en cas d’arrêt avant dire droit ou de mesure d’instruction, il ne pourra y avoir plus de deux mémoires de la part de chaque partie, y comprise la requête d’appel. Toutefois, dans l’intérêt de l’instruction de l’affaire, le président de la Cour ou le magistrat présidant la juridiction d’appel peut ordonner d’office la production de mémoires supplémentaires.</p>
+</content>
+</alinea>
+</article>
+<article id="art_49">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_49</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_49/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 49.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 49.</num>
+<alinea>
+<content>
+<p>Le dépôt et la communication des mémoires en réponse, en réplique et en duplique produits par les parties autres que celles représentées par le délégué du Gouvernement se font d’après les règles fixées à l’article 39 pour la requête d’appel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les mémoires présentés par le délégué du Gouvernement, les dispositions prévues à l’article 8, paragraphes 3 à 7 et à l’article 10 sont applicables.</p>
+</content>
+</alinea>
+</article>
+<article id="art_50">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_50</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_50/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 50.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 50.</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 39, en cas d’appel interjeté de la part de l’Etat, le greffier communique, selon les formalités prévues à l’article 34, aux parties en cause en première instance copies de la requête d’appel, des mémoires et pièces fournis. La partie intimée et le tiers intéressé sont tenus de répondre dans le délai prévu à l’article 46.</p>
+</content>
+</alinea>
+</article>
+<article id="art_51">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_51</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_51/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 51.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 51.</num>
+<alinea>
+<content>
+<p>Lorsque, d’après l’examen d’une affaire, il y a lieu d’ordonner des mises en intervention, des enquêtes, des mesures d’instruction exécutées par un technicien, des vérifications d’écritures ou des vérifications personnelles du conseiller, la Cour règle la forme et les délais dans lesquels il y est procédé et commet un de ses membres pour procéder à ces actes d’instruction, les recevoir ou les surveiller.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le principe du contradictoire doit en tout état de cause être respecté.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="titre_ii.chapitre_ii">
+<num>
+<b>Chapitre II.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Des incidents en cours d’instruction des affaires</b>
+</heading>
+<article id="art_52">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_52</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_52/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52.</num>
+<alinea>
+<content>
+<p>Les articles 19 à 25 sont applicables aux instances devant la Cour.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="titre_ii.chapitre_iii">
+<num>
+<b>Chapitre III.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Des décisions de la Cour</b>
+</heading>
+<article id="art_53">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_53</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_53/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 53.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 53.</num>
+<paragraph id="paragraph_64">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La Cour prend ses décisions sur le rapport d’un de ses membres.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_65">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le rapport est fait en audience publique de la Cour par un de ses membres; après ce rapport, les mandataires ainsi que les délégués ou les mandataires par lesquels l’Etat est représenté à l’audience, sont entendus dans leurs observations orales.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_66">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La délibération de la Cour n’est pas publique.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_67">
+<num>(4)</num>
+<alinea>
+<content>
+<p>L’arrêt contient les noms des conseillers, du délégué du gouvernement ainsi que des mandataires, les noms, prénoms et demeures des parties, leurs prétentions, l’exposé sommaire des points de fait et de droit, les motifs et le dispositif.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_54">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_54</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_54/20000813</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 54.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2000-08-13</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 54.</num>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm1"/>Sont applicables à la Cour, les articles 26, 27 et 29 à 34.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="titre_ii.chapitre_iv">
+<num>
+<b>Chapitre IV.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Des voies de recours contre les décisions de la Cour</b>
+</heading>
+<article id="art_55">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_55</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_55/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 55.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 55.</num>
+<alinea>
+<content>
+<p>Les arrêts de la Cour ne sont susceptibles d’aucune voie de recours, si ce n’est de la tierce-opposition qui s’exerce conformément à l’article 36.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</title>
+<title id="titre_iii">
+<num>
+<b>Titre III.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Dispositions spécifiques en matière fiscale</b>
+</heading>
+<article id="art_56">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_56</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_56/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 56.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 56.</num>
+<alinea>
+<content>
+<p>En matière fiscale, les dispositions prévues aux titres I et II sont applicables, sauf les exceptions qui sont prévues aux dispositions des articles suivants.</p>
+</content>
+</alinea>
+</article>
+<article id="art_57">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_57</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_57/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 57.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 57.</num>
+<alinea>
+<content>
+<p>La requête introductive d’instance signée par le requérant ou son mandataire contient outre les indications prévues à l’article 1<sup>er</sup> une élection de domicile au Grand-Duché lorsque le requérant ou son mandataire demeurent à l’étranger.</p>
+</content>
+</alinea>
+</article>
+<article id="art_58">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_58</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_58/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 58.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 58.</num>
+<alinea>
+<content>
+<p>Les demandes nouvelles n’ayant pas figuré dans la réclamation sont prohibées. En revanche, les moyens nouveaux sont admis.</p>
+</content>
+</alinea>
+</article>
+<article id="art_59">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_59</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_59/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 59.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 59.</num>
+<alinea>
+<content>
+<p>La preuve des faits déclenchant l’obligation fiscale appartient à l’administration, la preuve des faits libérant de l’obligation fiscale ou réduisant la cote d’impôt appartient au contribuable.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La charge de la régularité de la procédure fiscale appartient à l’administration.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La preuve peut être rapportée par tous les moyens, hormis le serment.</p>
+</content>
+</alinea>
+</article>
+<article id="art_60">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 60.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 60.</num>
+<alinea>
+<content>
+<p> Le demandeur peut prendre connaissance de tous les documents et pièces versés par l’administration au dossier du litige, y compris ceux contenant des indications relatives aux bénéfices ou revenus de tiers, de telle manière qu’il puisse s’assurer que les points de comparaison retenus par l’administration visent bien des entreprises dont l’activité est comparable à la sienne.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutefois, les communications concernant les entreprises ou personnes nommément désignées ne portent que sur les moyennes de chiffres d’affaires ou de revenus, de façon à respecter le secret professionnel. Ces comparaisons ne sauraient à elles seules justifier des demandes de l’administration.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_iiibis">
+<num>
+<mod class="mod-start" for="#pm3"/>Titre III<i>bis</i>.</num>
+<heading scl:separator=" - " scl:style-format="b">Dispositions spécifiques en matière de concurrence</heading>
+<article id="art_60-1">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60-1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60-1/20000813</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 60-1.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 60-1.</num>
+<alinea>
+<content>
+<p>Lors d’un recours introduit à l’encontre d’une décision rendue par l’Autorité de concurrence du Grand-Duché de Luxembourg dans le cadre de l’exercice des pouvoirs lui attribués par les articles 22, 31, 32, 44, 45, 46, 48, 49, 50, 58 et 60 de la <ref href="/eli/etat/leg/loi/2022/11/30/a588/jo" id="027d55b2-ccb2-4326-8493-214a3b55cdf1" scl:verify="true">loi du 30 novembre 2022</ref> relative à la concurrence, les dispositions prévues aux titres I<sup>er</sup> et II sont applicables, sauf les exceptions qui sont prévues aux dispositions des articles suivants.</p>
+</content>
+</alinea>
+</article>
+<article id="art_60-2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60-2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60-2/20000813</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 60-2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 60-2.</num>
+<alinea>
+<content>
+<p>L’Autorité de concurrence du Grand-Duché de Luxembourg n’est pas tenue de constituer avocat, tel que prévu à l’article 5, paragraphe 1<sup>er</sup>, lors d’un recours introduit à l’encontre d’une décision rendue par celle-ci dans le cadre de l’exercice des pouvoirs lui attribués par les articles 22, 31, 32, 44, 45, 46, 48, 49, 50, 58 et 60 de la <ref href="/eli/etat/leg/loi/2022/11/30/a588/jo" id="cf23ed23-b661-45b4-8002-642757ec3b46" scl:verify="true">loi du 30 novembre 2022</ref> relative à la concurrence.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La transmission par le greffier d’un exemplaire des pièces déposées par le demandeur prévue à l’article 5, paragraphe 4, est adressée au président de l’Autorité de concurrence.</p>
+</content>
+</alinea>
+</article>
+<article id="art_60-3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60-3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60-3/20000813</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 60-3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 60-3.</num>
+<alinea>
+<content>
+<p>Les communications entre avocats constitués et l’Autorité de concurrence du Grand-Duché de Luxembourg peuvent être faites moyennant signification par ministère d’huissier ou notification par voie postale ou par voie directe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La signification est constatée par l’apposition du cachet et de la signature de l’huissier de justice sur l’acte et sa copie avec l’indication de la date et du nom du président de l’Autorité de concurrence. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La notification directe s’opère par la remise de l’acte en double exemplaire au président de l’Autorité de concurrence, lequel restitue aussitôt l’un des exemplaires après l’avoir daté et visé. </p>
+</content>
+</alinea>
+</article>
+<article id="art_60-4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60-4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_60-4/20000813</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 60-4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 60-4.</num>
+<alinea>
+<content>
+<p>Lorsque l’Autorité de concurrence interjette appel sans constituer avocat, la requête d’appel est signée par le président de l’Autorité de concurrence.<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/> </p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_iv">
+<num>
+<b>Titre IV.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Dispositions modificatives, abrogatoires et additionnelles</b>
+</heading>
+<article id="art_61">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_61</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_61/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 61.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 61.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1996/11/07/n1/jo" id="27ea7fb0-dc82-43e7-8188-982a8317d081">loi du 7 novembre 1996</ref> portant organisation des juridictions de l’ordre administratif est modifiée comme suit:</p>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1°">
+<li> Au paragraphe (1<sup>er</sup>) de l’article 7, les termes <embeddedText>La Cour administrative</embeddedText> sont remplacés par les termes <embeddedText>Le tribunal administratif</embeddedText>.</li>
+<li> L’article 7, paragraphe (3) est supprimé.</li>
+<li> Le dernier paragraphe actuel de l’article 7 devient le paragraphe (3) et est remplacé par le texte suivant:<embeddedStructure scl:hide-quote="true">
+<paragraph>
+<num>«(3)</num>
+<alinea>
+<content>
+<p>La décision prononçant l’annulation est publiée de la même manière que l’acte administratif à caractère réglementaire attaqué, dès qu’elle est coulée en force de chose jugée. L’annulation a un caractère absolu, à partir du jour où elle est coulée en force de chose jugée.»</p>
+</content>
+</alinea>
+</paragraph>
+</embeddedStructure>
+</li>
+<li>Un paragraphe (4) nouveau est ajouté à l’article 7, libellé comme suit:<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>«Sauf disposition contraire de la loi, appel peut être interjeté devant la Cour administrative contre les décisions visées au paragraphe 1<sup>er</sup>.»</p>
+</content>
+</alinea>
+</embeddedStructure>
+</li>
+<li> L’article 8, paragraphe (3), point 5 est supprimé.</li>
+<li>A l’article 68, alinéa 2, le terme <embeddedText>premier</embeddedText> est supprimé.</li>
+<li>L’article 98, alinéa (2) est abrogé.</li>
+<li>L’article 99 est abrogé.</li>
+<li>A l’article 100, alinéa (2), les termes <embeddedText>Par dérogation à l’alinéa 1<sup>er</sup>,</embeddedText> sont supprimés.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_62">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_62</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_62/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 62.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 62.</num>
+<alinea>
+<content>
+<p>L’article 10 de la <ref href="/eli/etat/leg/loi/1993/03/13/n2/jo" id="2d91ff63-77b9-4592-ae6e-fa0ce71fe5e5">loi modifiée du 13 mars 1993</ref> relative à l’exécution en droit luxembourgeois de la <ref href="/eli/dir_ue/1989/665/jo" id="3f242111-a79b-4169-b596-5e9b15e60871">directive n° 89/665</ref> du Conseil du 21 décembre 1989 portant coordination des dispositions législatives, réglementaires et administratives relatives à l’application des procédures de recours en matière de marchés publics est remplacé par la disposition suivante:<embeddedStructure scl:hide-quote="true">
+<article>
+<num>
+<b>«Art. 10.</b>
+</num>
+<alinea>
+<content>
+<p>L’ordonnance est exécutoire dès sa notification. Elle n’est susceptible d’aucune voie de recours. Elle cesse ses effets lorsque le tribunal a définitivement statué au fond.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le juge qui a connu de la demande d’effet suspensif du recours ne peut plus siéger au fond.»</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_63">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_63</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_63/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 63.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 63.</num>
+<alinea>
+<content>
+<p>A l’article 1<sup>er</sup>, alinéa 2 de la <ref href="/eli/etat/leg/loi/1977/08/27/n1/jo" id="7418ca2e-9dc6-4732-9aed-d7191e87c642">loi du 27 août 1977</ref> concernant le statut des fonctionnaires au service d’institutions internationales, les mots <embeddedText>les magistrats de l’ordre judiciaire</embeddedText> sont remplacés par ceux de «les magistrats de l’ordre judiciaire et de l’ordre administratif.</p>
+</content>
+</alinea>
+</article>
+<article id="art_64">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_64</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_64/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 64.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 64.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1931/05/22/n1/jo" id="5c324897-ace9-4706-a50c-2863e5e3a44c">loi générale des impôts</ref> est modifée comme suit:</p>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1°">
+<li>Au § 84 A0 le délai de 6 semaines est porté à 3 mois.</li>
+<li>Les § 107 alinéa 7, 107a et 21o alinéa 3 A0 sont abrogés. Les dispositions de la <ref href="/eli/etat/leg/loi/1931/05/22/n1/jo" id="7ee6dc9f-baf3-4961-9c2f-9e3669d386c4">loi générale des impôts</ref> relatives à la contrainte par corps sont abrogées.</li>
+<li>Au § 131 A0 sont intercalés entre les termes <embeddedText>le directeur de l’Administration des contributions directes</embeddedText> et <embeddedText>accordera</embeddedText>, les termes <embeddedText>ou son délégué</embeddedText>.</li>
+<li>Le § 228 A0 est modifié comme suit:<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="a)">
+<li>La référence au § 168 est supprimée.</li>
+<li>La première phrase est complétée comme suit: <embeddedText>ou son délégué</embeddedText>.</li>
+</ol>
+</li>
+<li>Le § 237 A0 est modifié comme suit:<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="a)">
+<li>La référence au § 168 est supprimée.</li>
+<li>Le terme <embeddedText>Finanzbehörden</embeddedText> est remplacé par celui de <embeddedText>Steuerbehörden</embeddedText>.</li>
+<li>Le paragraphe est complété comme suit: <embeddedText>Die Frist beträgt drei Monate.</embeddedText> </li>
+</ol>
+</li>
+<li> L’alinéa 1 du § 245 est rétabli avec le teneur suivante:</li>
+</ol>
+<p>
+<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>«Le délai de recours est de trois mois pour les réclamations (§ 228 A0) et de trois mois au contentieux des actes détachables (§ 237 A0).»</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’alinéa 2 du § 245 A0 est rétabli dans sa version antérieure:<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>«Lorsque le dernier jour du délai est un samedi, un dimanche, un jour férié légal ou un jour férié de rechange, ce délai est prorogé jusqu’au prochain jour ouvrable.»</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<ol scl:start="7" scl:symbol="1°">
+<li>Les alinéas 1 et 4 du § 299 A0 sont abrogés.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans l’alinéa 2, la référence au § 94 Absätze 1 und 2 est supprimée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_65">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_65</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_65/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 65.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 65.</num>
+<alinea>
+<content>
+<p>L’article 7 de la <ref href="/eli/etat/leg/loi/1952/03/01/n1/jo" id="59e85775-9b77-4bc9-8275-7faa5c862a1c">loi du 1<sup>er</sup> mars 1952</ref> modifiant certaines dispositions relatives aux impôts directs est modifié comme suit:</p>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="a)">
+<li>Au deuxième alinéa, le terme <embeddedText>réclamation</embeddedText> est remplacé par celui de <embeddedText>décision</embeddedText>.</li>
+<li>L’article est complété comme suit: <embeddedText>En matière de ventilation (§ 388 A0) le recours est porté directement devant le tribunal.</embeddedText> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_66">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_66</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_66/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 66.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 66.</num>
+<alinea>
+<content>
+<p>Au deuxième tiret du deuxième alinéa du paragraphe (1<sup>er</sup>) de l’article 2 de la <ref href="/eli/etat/leg/loi/1991/08/10/n3/jo" id="6a8ee5e6-4506-4b7c-aadf-2e6064cd329f">loi modifiée du 10 août 1991</ref> sur la profession d’avocat, les termes <embeddedText>avocat inscrit à la liste II des tableaux dressés annuellement par les conseils des ordres des avocats,</embeddedText> sont intercalés entre les termes <embeddedText>assister par un</embeddedText> et <embeddedText>expert-comptable</embeddedText>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_67">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_67</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_67/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 67.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 67.</num>
+<alinea>
+<content>
+<p>L’<ref href="/eli/etat/leg/argd/1866/08/21/n1/jo" id="f867076b-5c40-4efe-a544-2dfb2b952a48">arrêté royal grand-ducal du 21 août 1866</ref> portant règlement de procédure en matière de contentieux devant le Conseil d’Etat, tel qu’il a été modifié dans la suite, est abrogé.</p>
+</content>
+</alinea>
+</article>
+<article id="art_68">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_68</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_68/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 68.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 68.</num>
+<alinea>
+<content>
+<p>La référence à la présente loi pourra se faire sous une forme abrégée en utilisant les termes de «loi portant règlement de procédure devant les juridictions administratives», pour autant que les articles 1<sup>er</sup> à 60, 69 et 70 sont concernés.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_v">
+<num>
+<b>Titre V.</b> </num>
+<heading scl:separator=" – " scl:style-format="b"> <b>Entrée en vigueur et dispositions transitoires</b>
+</heading>
+<article id="art_69">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_69</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_69/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 69.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 69.</num>
+<alinea>
+<content>
+<p>La présente loi entre en vigueur le 16 septembre 1999.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les affaires introduites avant cette date continueront à être instruites selon les anciennes règles de procédure.</p>
+</content>
+</alinea>
+</article>
+<article id="art_70">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_70</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_70/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 70.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 70.</num>
+<alinea>
+<content>
+<p>Toutes les affaires introduites avant l’entrée en vigueur de la présente loi et qui n’ont pas fait l’objet d’un jugement du tribunal administratif avant la fin de l’année judiciaire 1998/1999, seront appelées pendant la deuxième moitié du mois de septembre et la première moitié du mois d’octobre 1999 par le tribunal en vue d’examiner leur degré d’instruction.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les affaires dans lesquelles la partie défenderesse aura communiqué son mémoire de réponse, seront fixées pour plaidoiries, sauf désistement de la part du requérant.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans les affaires dans lesquelles seule la requête introductive aura été communiquée, le tribunal enjoindra par ordonnance non susceptible d’appel, au demandeur de déclarer au greffe, dans un délai d’un mois, à peine de forclusion, s’il entend poursuivre le recours. Dans ce cas, l’affaire sera instruite conformément aux dispositions de la présente loi. Sinon, le demandeur est censé s’être désisté de son recours.</p>
+</content>
+</alinea>
+</article>
+<article id="art_71">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_71</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2/art_71/19990730</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/21/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 71.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1999-07-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 71.</num>
+<alinea>
+<content>
+<p>Les recours introduits devant la Cour administrative à l’encontre des actes administratifs à caractère réglementaire pour lesquels le rapport prévu à l’article 53, paragraphes (1<sup>er</sup>) et (2) n’a pas été présenté et ceux qui ont donné lieu à un jugement d’avant dire droit sont transmis au tribunal administratif sans autre forme de procédure.</p>
+</content>
+</alinea>
+</article>
+</title>
+</body>
+</act>
+</akomaNtoso>

@@ -1,0 +1,2637 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2006-08-11" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFNP"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MI"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MJ"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MS"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MSS"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MT"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2006-08-11" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2006-08-11" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo</scl:jolux><scl:jolux scl:name="dateEndApplicability">2026-04-01</scl:jolux><scl:jolux scl:name="baseAct">null</scl:jolux><scl:jolux scl:name="urgentEvent">null</scl:jolux><scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux><scl:jolux scl:name="dateDocument">2006-08-11</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MI</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MJ</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MS</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MSS</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MT</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/943</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/158</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/478</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/950</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/610</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/824</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr</scl:jolux><scl:jolux scl:name="transpositionProcess">http://data.legilux.public.lu/event/etat/trans/2003/33</scl:jolux><scl:jolux scl:name="dateEntryInForce">2006-09-05</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2006/a154</scl:jolux><scl:jolux scl:name="historicalLegalId">2006A2726A</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">2006-09-01</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MS</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="transposes">/eli/dir_ue/2003/33/jo</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20060011</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1808/11/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1994/06/17/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1985/12/24/n3/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/1995/01/06/n3/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/1989/03/24/n2/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="titleShort">Loi du 11 août 2006 relative à la lutte antitabac</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/01/2026 : Loi du 11 août 2006\n 1. relative à la lutte antitabac;\n 2. modifiant la loi modifiée du 16 avril 1979 fixant le statut général des fonctionnaires de l'Etat;\n 3. modifiant la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux;\n 4. modifiant la loi modifiée du 17 juin 1994 concernant la sécurité et la santé des travailleurs au travail;\n 5. abrogeant la loi modifiée du 24 mars 1989 portant restriction de la publicité en faveur du tabac et de ses produits, interdiction de fumer dans certains lieux et interdiction de la mise sur le marché des tabacs à usage oral.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2006-154-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2006/a154/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2006-08-11-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2006-154-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2006/a154/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2006/a154/fr/pdf/eli-etat-leg-memorial-2006-a154-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2006-09-05" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2018-09-10" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2018-09-10" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2018-09-10" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2026-01-01" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2026-04-01" id="e6" originatingExpression="true" source="#rp5" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2018/08/21/a777/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm7" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm8" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm9" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm10" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm11" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm12" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm13" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm14" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm15" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm16" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm17" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm18" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm19" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm20" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm21" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3ter"/>
+</textualMod>
+<textualMod id="pm22" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3ter"/>
+</textualMod>
+<textualMod id="pm23" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3ter"/>
+</textualMod>
+<textualMod id="pm24" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_3ter"/>
+</textualMod>
+<textualMod id="pm25" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm26" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm27" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm28" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_4octies"/>
+</textualMod>
+<textualMod id="pm29" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_4octies"/>
+</textualMod>
+<textualMod id="pm30" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_4octies"/>
+</textualMod>
+<textualMod id="pm31" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm32" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm33" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_6"/>
+</textualMod>
+<textualMod id="pm34" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_6"/>
+</textualMod>
+<textualMod id="pm35" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm36" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm37" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm38" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm39" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm40" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm41" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm42" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_8"/>
+</textualMod>
+<textualMod id="pm43" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm44" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm45" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm46" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm47" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm48" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm49" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_10"/>
+</textualMod>
+<textualMod id="pm50" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_10"/>
+</textualMod>
+<textualMod id="pm51" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm52" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_11"/>
+</textualMod>
+<textualMod id="pm53" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_11"/>
+</textualMod>
+<textualMod id="pm54" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/11/28/a521/jo"/>
+<destination href="#art_11"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2006/08/11/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2018/08/21/a777/jo" id="rp2" showAs="Loi du 21 août 2018 portant modification : 1° de la loi modifiée du 18 décembre 1987 organisant le centre thermal et de santé de Mondorf-les-Bains ; 2° de la loi modifiée du 26 mars 1992 sur l’exercice et la revalorisation de certaines professions de santé ; 3° de la loi modifiée du 11 août 2006 relative à la lutte antitabac ; 4° de la loi modifiée du 14 juillet 2015 portant création de la profession de psychothérapeute."/>
+<passiveRef href="/eli/etat/leg/loi/2017/06/13/a560/jo" id="rp3" showAs="Loi du 13 juin 2017 transposant la directive 2014/40/UE du Parlement européen et du Conseil du 3 avril 2014 relative au rapprochement des dispositions législatives, réglementaires et administratives des États membres en matière de fabrication, de présentation et de vente des produits du tabac et des produits connexes; abrogeant la directive 2001/37/CE; modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac."/>
+<passiveRef href="/eli/etat/leg/loi/2013/07/18/n1/jo" id="rp4" showAs="Loi du 18 juillet 2013 modifiant la loi du 11 août 2006 relative à la lutte antitabac."/>
+<passiveRef href="/eli/etat/leg/loi/2025/11/28/a521/jo" id="rp5" showAs="Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2018-09-06|2018-08-21|L|777">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2018/08/21/a777/jo">Loi du 21 août 2018 portant modification : 1° de la loi modifiée du 18 décembre 1987 organisant le centre thermal et de santé de Mondorf-les-Bains ; 2° de la loi modifiée du 26 mars 1992 sur l’exercice et la revalorisation de certaines professions de santé ; 3° de la loi modifiée du 11 août 2006 relative à la lutte antitabac ; 4° de la loi modifiée du 14 juillet 2015 portant création de la profession de psychothérapeute.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M2" marker="2" refersTo="pm2" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M3" marker="3" refersTo="pm3" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M4" marker="4" refersTo="pm4" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M5" marker="5" refersTo="pm5" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M6" marker="6" refersTo="pm6" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M7" marker="7" refersTo="pm7" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M8" marker="8" refersTo="pm8" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M9" marker="9" refersTo="pm9" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M10" marker="10" refersTo="pm10" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M11" marker="11" refersTo="pm11" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M12" marker="12" refersTo="pm12" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M13" marker="13" refersTo="pm13" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M14" marker="14" refersTo="pm14" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M15" marker="15" refersTo="pm15" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M16" marker="16" refersTo="pm16" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M17" marker="17" refersTo="pm17" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M18" marker="18" refersTo="pm18" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M19" marker="19" refersTo="pm19" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M20" marker="20" refersTo="pm20" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M21" marker="21" refersTo="pm21" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M22" marker="22" refersTo="pm22" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M23" marker="23" refersTo="pm23" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M24" marker="24" refersTo="pm24" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M25" marker="25" refersTo="pm25" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M26" marker="26" refersTo="pm26" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M27" marker="27" refersTo="pm27" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M28" marker="28" refersTo="pm28" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M29" marker="29" refersTo="pm29" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M30" marker="30" refersTo="pm30" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M31" marker="31" refersTo="pm31" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M32" marker="32" refersTo="pm32" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M33" marker="33" refersTo="pm33" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M34" marker="34" refersTo="pm34" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M35" marker="35" refersTo="pm35" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M36" marker="36" refersTo="pm36" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M37" marker="37" refersTo="pm37" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M38" marker="38" refersTo="pm38" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M39" marker="39" refersTo="pm39" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M40" marker="40" refersTo="pm40" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M41" marker="41" refersTo="pm41" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M42" marker="42" refersTo="pm42" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M43" marker="43" refersTo="pm43" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M44" marker="44" refersTo="pm44" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M45" marker="45" refersTo="pm45" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M46" marker="46" refersTo="pm46" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M47" marker="47" refersTo="pm47" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M48" marker="48" refersTo="pm48" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M49" marker="49" refersTo="pm49" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M50" marker="50" refersTo="pm50" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M51" marker="51" refersTo="pm51" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M52" marker="52" refersTo="pm52" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M53" marker="53" refersTo="pm53" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp5">
+<note id="M54" marker="54" refersTo="pm54" title="A|2025-12-01|2025-11-28|L|521">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/28/a521/jo">Loi du 28 novembre 2025 modifiant la loi modifiée du 11 août 2006 relative à la lutte antitabac en vue de la transposition de la directive déléguée (UE) 2022/2100 de la Commission du 29 juin 2022 modifiant la directive 2014/40/UE du Parlement européen et du Conseil en ce qui concerne le retrait de certaines exemptions pour les produits du tabac chauffés.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 01/01/2026 : Loi du 11 août 2006 </p>
+<ol scl:symbol="1.">
+<li>relative à la lutte antitabac;</li>
+<li>modifiant la loi modifiée du 16 avril 1979 fixant le statut général des fonctionnaires de l’Etat;</li>
+<li>modifiant la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux;</li>
+<li>modifiant la loi modifiée du 17 juin 1994 concernant la sécurité et la santé des travailleurs au travail;</li>
+<li>abrogeant la loi modifiée du 24 mars 1989 portant restriction de la publicité en faveur du tabac et de ses produits, interdiction de fumer dans certains lieux et interdiction de la mise sur le marché des tabacs à usage oral. <sup>1</sup>
+</li>
+</ol>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_1er/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm1"/>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>La présente loi a pour objet, dans l’intérêt de la santé publique, de mettre en œuvre des mesures de lutte antitabac.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_2/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Aux fins de la présente loi, on entend par:</p>
+<ol scl:space-num="8" scl:start="1" scl:symbol="1.">
+<li>
+<mod class="mod-start" for="#pm5" style="li"/>«produits du tabac», tous les produits destinés à être fumés, prisés, sucés ou mâchés, dès lors qu’ils sont, même partiellement, constitués de tabac qu’il soit ou non génétiquement modifié, ainsi que les produits destinés à être fumés même s’ils ne contiennent pas de tabac, à la seule exclusion des cigarettes et produits à fumer qui sont destinés à un usage médicamenteux et qui sont présentés comme supprimant l’envie de fumer ou réduisant l’accoutumance au tabac.</li>
+<li> «tabacs à usage oral», tous les produits destinés à un usage oral, à l’exception de ceux destinés à être fumés ou mâchés, constitués totalement ou partiellement de tabac, sous forme de poudre, de particules fines ou toute combinaison de ces formes – notamment ceux présentés en sachets-portions ou sachets poreux – ou sous une forme évoquant une denrée comestible;</li>
+<li> «publicité», toute forme de communication commerciale qui a pour but ou effet direct ou indirect de promouvoir un produit du tabac;</li>
+<li> «parrainage», toute forme de contribution publique ou privée à un événement, à une activité ou à un individu, ayant pour but ou effet direct ou indirect de promouvoir un produit du tabac;</li>
+<li> «établissement de restauration», tout local accessible au public où des repas sont préparés ou servis pour consommation sur place ou non, et ce même gratuitement,</li>
+<li>«débit de boissons», tout local accessible au public, dont l’activité principale ou accessoire consiste à vendre ou à offrir, même gratuitement des boissons alcooliques ou non, destinées à être consommées sur place ou emportées.</li>
+<li>«produit du tabac sans combustion», un produit du tabac ne faisant appel à aucun processus de combustion, notamment le tabac à mâcher, à priser et à usage oral;</li>
+<li> «nouveau produit du tabac», un produit du tabac qui ne relève d’aucune des catégories suivantes: cigarette, tabac à rouler, tabac à pipe, tabac à pipe à eau, cigare, cigarillo, tabac à mâcher, tabac à priser ou tabac à usage oral;</li>
+<li> «produit à fumer à base de plantes», un produit à base de végétaux, de plantes aromatiques ou de fruits, ne contenant pas de tabac et pouvant être consommé au moyen d’un processus de combustion;</li>
+<li>«produits du tabac à fumer», des produits du tabac qui ne sont pas des produits du tabac sans combustion;</li>
+<li> «cigarette électronique», un produit ou tout composant de ce produit ou dispositif, y compris une cartouche, un réservoir et le dispositif dépourvu de cartouche ou de réservoir, qui peut être utilisé, au moyen d’un embout buccal, pour la consommation de vapeur ou l’inhalation de toute substance contenant ou non de la nicotine; la cigarette électronique pouvant être jetable ou rechargeable au moyen d’un flacon de recharge et un réservoir ou au moyen d’une cartouche à usage unique;</li>
+<li> «flacon de recharge», un récipient renfermant un liquide contenant ou non de la nicotine, qui est utilisé pour recharger une cigarette électronique;</li>
+<li> «ingrédient», le tabac, un additif, ainsi que toute autre substance ou tout autre élément présent dans un produit fini du tabac ou dans des produits connexes, y compris le papier, le filtre, l’encre, les capsules et les colles;</li>
+<li> «émissions», les substances dégagées lorsqu’un produit du tabac ou un produit connexe est utilisé aux fins prévues, telles que les substances contenues dans la fumée ou celles qui sont libérées lors de l’utilisation d’un produit du tabac sans combustion;</li>
+<li> «niveau maximal» «ou «niveau d’émission maximal», la teneur ou l’émission maximale, y compris égale à zéro, d’une substance présente dans un produit du tabac, mesurée en milligrammes; </li>
+<li>«additif», une substance autre que du tabac, qui est ajoutée à un produit du tabac<mod class="mod-start" for="#pm2"/>, à un sachet de nicotine ou à un nouveau produit nicotinique<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/> <mod class="mod-start" for="#pm3"/>à son conditionnement<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/> unitaire ou à tout emballage extérieur;</li>
+<li> «emballage extérieur», tout emballage dans lequel les produits du tabac ou les produits connexes sont mis sur le marché, comprenant une unité de conditionnement ou un ensemble d’unités de conditionnement; les suremballages transparents ne sont pas considérés comme des emballages extérieurs;</li>
+<li> «unité de conditionnement», le plus petit conditionnement individuel d’un produit du tabac ou d’un produit connexe mis sur le marché;</li>
+<li> «tabac à pipe à eau», un produit du tabac pouvant être consommé au moyen d’une pipe à eau. Aux fins de la présente loi et des règlements pris en son exécution, le tabac à pipe à eau est réputé être du tabac à fumer. Si un produit peut être utilisé à la fois dans une pipe à eau et comme tabac à rouler, il est réputé être du tabac à rouler;</li>
+<li> «arôme caractérisant», une odeur ou un goût clairement identifiable autre que celle ou celui du tabac, provenant d’un additif ou d’une combinaison d’additifs, notamment à base de fruits, d’épices, de plantes aromatiques, d’alcool, de confiseries, de menthol ou de vanille, et qui est identifiable avant ou pendant la consommation du produit du tabac;</li>
+<li> «aire de jeux», tout espace spécialement aménagé et équipé pour être utilisé, de façon collective, par des enfants à des fins de jeux;</li>
+<li> «fumer», le fait d’aspirer la fumée dégagée par la combustion d’un produit du tabac ou la vapeur d’une cigarette électronique ou de tout autre dispositif de cette nature.<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/>
+</li>
+<li>
+<mod class="mod-start" for="#pm4" style="li"/>« tabac », les feuilles et toute autre partie naturelle, transformée ou non, de la plante de tabac y compris le tabac expansé et reconstitué ;</li>
+<li>« tabac à pipe », du tabac pouvant être consommé au moyen d’un processus de combustion et destiné exclusivement à être utilisé dans une pipe ;</li>
+<li>« tabac à rouler », du tabac pouvant être utilisé par les consommateurs ou les détaillants pour confectionner des cigarettes ;</li>
+<li>« tabac à mâcher », un produit du tabac sans combustion, exclusivement destiné à être mâché ;</li>
+<li>« tabac à priser », produit à base de tabac sans combustion pouvant être consommé par voie nasale ;</li>
+<li>« goudron », le condensat de fumée brut anhydre et exempt de nicotine ;</li>
+<li>« cigarette », un rouleau de tabac pouvant être consommé au moyen d’un processus de combustion et qui est :<ol scl:start="1" scl:symbol="a)">
+<li>susceptible d’être fumé en l’état et qui n’est pas un cigare ou un cigarillo ;</li>
+<li>glissé dans des tubes à cigarettes par une simple manipulation non industrielle ;</li>
+<li>enveloppé dans des feuilles de papier à cigarettes par une simple manipulation non industrielle ;</li>
+</ol>
+</li>
+<li>« cigare », un rouleau de tabac pouvant être consommé au moyen d’un processus de combustion et qui est :<ol scl:start="1" scl:symbol="a)">
+<li>muni d’une cape extérieure en tabac ;</li>
+<li>rempli d’un mélange battu et muni d’une cape extérieure en tabac, de la couleur normale des cigares, couvrant entièrement le produit, y compris le filtre le cas échéant, mais non l’embout dans le cas des cigares avec embout, lorsque leur masse unitaire, sans filtre ni embout, est égale ou supérieure à 2,3 grammes et égale ou inférieure à 10 grammes et que leur circonférence est égale ou supérieure à 34 millimètres sur au moins un tiers de leur longueur ;</li>
+</ol>
+</li>
+<li>« cigarillo », un type de cigare de petite taille d’un poids maximum de 3 grammes par pièce ;</li>
+<li>« effet de dépendance », le potentiel pharmacologique d’une substance à créer la dépendance, un état qui altère la capacité d’un individu à contrôler son comportement, le plus souvent en induisant un effet de récompense ou une diminution des symptômes de sevrage, ou les deux ;</li>
+<li>« toxicité », la mesure dans laquelle une substance peut produire des effets nocifs sur l’organisme humain, y compris des effets apparaissant dans la durée, généralement en raison d’une consommation ou d’une exposition répétée ou continue ;</li>
+<li>« avertissement sanitaire », un avertissement à propos des effets indésirables sur la santé humaine d’un produit ou à propos d’autres conséquences non souhaitées de sa consommation, y compris les messages d’avertissement, les avertissements sanitaires combinés, les avertissements d’ordre général et les messages d’information ;</li>
+<li>« avertissement sanitaire combiné », un avertissement sanitaire associant un message d’avertissement et une photo ou une illustration correspondante ;</li>
+<li>« vente à distance », toute vente conclue dans le cadre d’un système organisé de vente à distance, sans la présence physique simultanée du vendeur et de l’acheteur, par le recours exclusif à une ou plusieurs techniques de communication à distance, jusqu’au moment, et y compris au moment, où la vente est conclue ;</li>
+<li> « fabricant », toute personne physique ou morale qui fabrique un produit ou fait concevoir ou fabriquer un produit, et commercialise ce produit sous son propre nom ou sa propre marque ;</li>
+<li>« importateur de produits du tabac ou de produits connexes », le propriétaire ou une personne ayant le droit de disposition des produits du tabac ou des produits connexes introduits sur le territoire de l’Union européenne ;</li>
+<li>« détaillant », tout point de vente dans lequel sont mis sur le marché des produits du tabac, y compris par une personne physique ;</li>
+<li>« nicotine », les alcaloïdes nicotiniques ;</li>
+<li>« nouveau produit nicotinique », tout produit ne contenant pas de tabac et constitué même partiellement de nicotine, et destiné à la consommation humaine, à l’exception des dispositifs de sevrage tabagique vendus en pharmacie, des sachets de nicotine ou des cigarettes électroniques ;</li>
+<li>« sachet de nicotine », un produit à usage oral sans tabac, constitué en tout ou en partie de nicotine synthétique ou naturelle, mélangé à des fibres végétales ou à un substrat équivalent, et présenté sous forme de poudre, de fibres, de particules ou de pâte ou d’une combinaison de ces formes en portions de sachets, de sachets poreux ou sous une forme équivalente, sans être destiné à être fumé ;</li>
+<li>« produit du tabac chauffé », un nouveau produit du tabac qui est chauffé pour produire une émission contenant de la nicotine et d’autres produits chimiques, qui est ensuite inhalé par les utilisateurs, et qui, selon ses caractéristiques, est un produit du tabac sans combustion ou un produit du tabac à fumer.<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>
+
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_3/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La publicité en faveur du tabac, de ses produits, de ses ingrédients, des cigarettes électroniques et des flacons de recharge, <mod class="mod-start" for="#pm6"/>des sachets de nicotine ou des nouveaux produits nicotiniques,<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M6" marker="6"/> ainsi que toute distribution gratuite d’un produit du tabac ou d’une cigarette électronique ou d’un flacon de recharge <mod class="mod-start" for="#pm7"/>ou d’un sachet de nicotine ou d’un nouveau produit nicotinique<mod class="mod-end" for="#pm7"/>
+<noteRef href="#M7" marker="7"/> sont interdites.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette interdiction englobe l’utilisation de l’emblème de la marque ou du nom de la marque du tabac ou de produits du tabac ou de la cigarette électronique ou du flacon de recharge <mod class="mod-start" for="#pm8"/>ou du sachet de nicotine ou du nouveau produit nicotinique,<mod class="mod-end" for="#pm8"/>
+<noteRef href="#M8" marker="8"/> ainsi que l’utilisation de toute autre représentation ou mention susceptible de s’y référer sur des objets usuels autres que ceux qui sont directement liés à l’usage du tabac ou de la cigarette électronique <mod class="mod-start" for="#pm9"/>ou du sachet de nicotine ou du nouveau produit nicotinique<mod class="mod-end" for="#pm9"/>
+<noteRef href="#M9" marker="9"/>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette disposition ne s’applique pas aux catégories d’objets présentés sur le marché avant le 9 avril 1989 sous des noms, marques ou emblèmes identiques à ceux du tabac ou de produits du tabac.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Ne sont pas à considérer comme publicité au sens du paragraphe qui précède: </p>
+<ul scl:symbol="dash">
+<li>les panneaux ou enseignes apposés aux fins de les signaler sur les bâtiments des établissements dans lesquels les produits visés par la présente loi sont fabriqués ou entreposés, du moment qu’ils ne contiennent pas d’autre indication que le nom du fabricant ou distributeur, le nom de la marque produite ou distribuée ou une représentation graphique ou photographique de la marque ou de son emballage ou de son emblème; </li>
+<li>la simple indication, sur un véhicule servant ordinairement au commerce du tabac, ou de ses produits ou des cigarettes électroniques et des flacons de recharge, de la dénomination du produit, de sa composition, du nom et de l’adresse du fabricant et, le cas échéant, du distributeur, ainsi que la représentation graphique ou photographique du produit, de son emballage et de l’emblème de la marque.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les dispositions du paragraphe 1<sup>er</sup> ne s’appliquent pas:</p>
+<ul scl:symbol="dash">
+<li>aux publications et services de communication en ligne édités par les organisations professionnelles de producteurs, fabricants et distributeurs des produits du tabac, des cigarettes électroniques et des flacons de recharge réservés à leurs adhérents, ni aux publications professionnelles spécialisées, ni aux services de communication en ligne édités a titre professionnel qui ne sont accessibles qu’aux professionnels de la production, de la fabrication et de la distribution des produits du tabac et des cigarettes électroniques et des flacons de recharge.</li>
+<li>aux publications imprimées et éditées et aux services de communication en ligne mis à disposition du public par des personnes établies dans un pays n’appartenant pas à l’Union européenne, lorsque ces publications et services de communication en ligne ne sont pas principalement destinés au marché communautaire. </li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les dispositions du paragraphe 1<sup>er</sup> ne s’appliquent pas à la publicité faite à l’intérieur des débits de tabac. Dans les commerces offrant en vente également des produits ne relevant pas de la présente loi, la présente dérogation ne vaut que dans les surfaces réservées à la vente des produits du tabac<mod class="mod-start" for="#pm10"/>, des sachets de nicotine et des nouveaux produits nicotiniques,<mod class="mod-end" for="#pm10"/>
+<noteRef href="#M10" marker="10"/> ainsi que des cigarettes électroniques et des flacons de recharge et, dans les commerces ne comportant aucune subdivision en surfaces de vente, à proximité immédiate des étalages exposant des produits du tabac<mod class="mod-start" for="#pm11"/>, des sachets de nicotine, des nouveaux produits nicotiniques<mod class="mod-end" for="#pm11"/>
+<noteRef href="#M11" marker="11"/>, des cigarettes électroniques ou des flacons de recharge.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La publicité autorisée en vertu de l’alinéa qui précède ne peut être effectuée qu’au moyen d’affiches et de panneaux réclames. Elle ne peut s’adresser spécialement à un public de mineurs, ni faire usage d’arguments axés sur la santé, ni comporter un texte, une dénomination ou un signe figuratif laissant croire qu’un produit particulier est moins nocif qu’un autre, ni contenir une représentation d’une personne connue du grand public. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Toute opération de parrainage en faveur du tabac ou de produits du tabac ou de cigarettes électroniques ou de flacons de recharge <mod class="mod-start" for="#pm12"/>ou de sachets de nicotine ou de nouveaux produits nicotiniques<mod class="mod-end" for="#pm12"/>
+<noteRef href="#M12" marker="12"/> est interdite.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_3bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_3bis/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3bis.</num>
+<paragraph id="paragraph_6">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs de produits du tabac sont tenus de transmettre, par marque et par type, à la Direction de la santé; ci-après « la direction » une liste de tous les ingrédients et de leurs quantités utilisés dans la fabrication des produits du tabac, par ordre décroissant du poids de chaque ingrédient inclus dans le produit du tabac, ainsi que les niveaux d’émissions de goudron, de nicotine et de monoxyde de carbone.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm13"/>Les fabricants et les importateurs de sachets de nicotine ou de nouveaux produits nicotiniques sont tenus de transmettre, par marque et par type, à la direction une liste de tous les ingrédients et de leurs quantités utilisés dans la fabrication des produits.<mod class="mod-end" for="#pm13"/>
+<noteRef href="#M13" marker="13"/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les fabricants ou les importateurs informent également la direction si la composition d’un produit est modifiée de telle sorte que cela a une répercussion sur l’information communiquée au titre du présent article.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour un produit du tabac nouveau ou modifié, <mod class="mod-start" for="#pm14"/>ainsi que pour un nouveau produit nicotinique,<mod class="mod-end" for="#pm14"/>
+<noteRef href="#M14" marker="14"/> les informations requises en vertu du présent article sont communiquées avant la mise sur le marché de ce produit.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La liste mentionnée au paragraphe 1<sup>er</sup> est accompagnée d’une déclaration qui comporte des informations portant notamment sur le statut des ingrédients au regard du <ref href="/eli/reg_ue/2006/1907/jo" id="5643b993-9d07-47af-a990-3a11c350d57d">règlement (CE) n° 1907/2006</ref> du 18 décembre 2006 et du <ref href="/eli/reg_ue/2008/1272/jo" id="4ce6c0c0-d990-45c5-a1eb-131a4de513a1">règlement (CE) n° 1272/2008</ref> du 16 décembre 2008, les données toxicologiques, les effets sur la santé du consommateur, l’effet de dépendance des ingrédients, la raison de l’utilisation des ingrédients, ainsi qu’une description générale des additifs utilisés et leurs propriétés.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs de produits du tabac <mod class="mod-start" for="#pm15"/>ainsi que les fabricants et importateurs de sachets de nicotine,<mod class="mod-end" for="#pm15"/>
+<noteRef href="#M15" marker="15"/> communiquent à la direction les études internes et externes concernant le marché et les préférences des groupes de consommateurs, y compris les jeunes et les fumeurs actuels, en matière d’ingrédients et d’émissions, ainsi que des synthèses d’études en vue du lancement de nouveaux produits. Ils déclarent annuellement, avant la fin du premier trimestre, à la direction le volume de leurs ventes pour l’année écoulée, par marque et par type, exprimé en nombre de cigarettes/cigares/cigarillos<mod class="mod-start" for="#pm16"/>, en nombre de sachets de nicotine<mod class="mod-end" for="#pm16"/>
+<noteRef href="#M16" marker="16"/> ou en kilogrammes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Au plus tard dix-huit mois après l’inscription d’un additif sur la liste prioritaire établie suivant décision d’exécution prévue à l’article 6 de la <ref href="/eli/dir_ue/2014/40/jo" id="bd9b9fa6-25c7-4c21-8f09-19028b936022">directive 2014/40/UE</ref> du 3 avril 2014, les fabricants et les importateurs soumettent <mod class="mod-start" for="#pm17"/>
+<del>à la direction</del>
+<mod class="mod-end" for="#pm17"/>
+<noteRef href="#M17" marker="17"/> les études approfondies qu’ils ont réalisées concernant cet additif <mod class="mod-start" for="#pm18"/>à la direction et à la Commission européenne ainsi qu’une copie de celles-ci aux autorités compétentes des États membres dans lesquels un produit du tabac contenant cet additif est mis sur le marché<mod class="mod-end" for="#pm18"/>
+<noteRef href="#M18" marker="18"/>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm19"/>Les études visées à l’alinéa 1<sup>er</sup> visent à examiner pour chaque additif, si celui-ci :</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>contribue à la toxicité ou à l’effet de dépendance des produits en question et si cela a pour conséquence d’augmenter de manière significative ou mesurable la toxicité ou l’effet de dépendance de l’un des produits concernés ;</li>
+<li>produit un arôme caractérisant ;</li>
+<li>facilite l’inhalation ou l’absorption de nicotine ; ou</li>
+<li>conduit à la formation de substances qui ont des propriétés CMR – et en quelles quantités – et si cela a pour effet d’augmenter de manière significative ou mesurable les propriétés CMR de l’un des produits concernés.<mod class="mod-end" for="#pm19"/>
+<noteRef href="#M19" marker="19"/>
+</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm20"/>(4<i>bis</i>)</num>
+<alinea>
+<content>
+<p>Ces études tiennent compte de l’usage prévu des produits concernés et examinent en particulier les émissions résultant du processus de combustion impliquant l’additif concerné. Elles examinent également l’interaction de cet additif avec d’autres ingrédients contenus dans les produits concernés. Les fabricants ou les importateurs qui utilisent un additif identique dans leurs produits du tabac peuvent réaliser une étude conjointe si l’additif est utilisé dans des produits de composition comparable.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4<i>ter</i>)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs établissent un rapport sur les résultats de ces études. Ledit rapport inclut une synthèse et une présentation détaillée rassemblant les publications scientifiques disponibles concernant cet additif et récapitulant les données internes relatives à ses effets. La direction peut demander aux fabricants et aux importateurs des informations complémentaires concernant l’additif concerné. Ces informations complémentaires font partie intégrante du rapport.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4<i>quater</i>)</num>
+<alinea>
+<content>
+<p>Les petites et moyennes entreprises, telles que visées par la <ref href="/eli/etat/leg/loi/2018/08/09/a882/jo" id="41ea950b-14cd-493a-b27c-be023dbc4ffa" scl:verify="true">loi modifiée du 9 août 2018</ref> relative à un régime d’aides en faveur des petites et moyennes entreprises, sont exemptées des obligations relevant des paragraphes 4 à 4<i>ter</i> lorsqu’un rapport sur l’additif concerné est élaboré par un autre fabricant ou un autre importateur.<mod class="mod-end" for="#pm20"/>
+<noteRef href="#M20" marker="20"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les fabricants et importateurs sont tenus de mentionner parmi les informations qu’ils communiquent conformément au paragraphe 1<sup>er</sup>, celles qu’ils estiment relever du secret commercial.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Pour les substances autres que le goudron, la nicotine, le monoxyde de carbone émises par les cigarettes et pour les substances émises par les produits du tabac autres que les cigarettes, les fabricants et les importateurs indiquent les méthodes de mesure des émissions employées.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_3ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_3ter/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3ter.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3ter.</num>
+<paragraph id="paragraph_12">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’étiquetage des unités de conditionnement, tout emballage extérieur ainsi que le produit du tabac<mod class="mod-start" for="#pm21"/>, le sachet de nicotine ou le nouveau produit nicotinique<mod class="mod-end" for="#pm21"/>
+<noteRef href="#M21" marker="21"/> ne peuvent comprendre aucun élément ou dispositif qui:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>contribue à la promotion d’un produit du tabac<mod class="mod-start" for="#pm22"/>, d’un sachet de nicotine ou d’un nouveau produit nicotinique<mod class="mod-end" for="#pm22"/>
+<noteRef href="#M22" marker="22"/> ou incite à sa consommation en donnant une impression erronée quant aux caractéristiques, effets sur la santé, risques ou émissions de ce produit; les étiquettes ne comprennent aucune information sur la teneur en nicotine, en goudron ou en monoxyde de carbone du produit du tabac;</li>
+<li> suggère qu’un produit du tabac<mod class="mod-start" for="#pm23"/>, qu’un sachet de nicotine ou qu’un nouveau produit nicotinique<mod class="mod-end" for="#pm23"/>
+<noteRef href="#M23" marker="23"/> donné est moins nocif que d’autres ou vise à réduire l’effet de certains composants nocifs de la fumée ou présente des propriétés vitalisantes, énergisantes, curatives, rajeunissantes, naturelles, biologiques ou a des effets bénéfiques sur la santé ou le mode de vie;</li>
+<li> évoque un goût, une odeur, tout arôme ou tout autre additif, ou l’absence de ceux-ci;</li>
+<li> ressemble à un produit alimentaire ou cosmétique;</li>
+<li> suggère qu’un produit du tabac<mod class="mod-start" for="#pm24"/>, qu’un sachet de nicotine ou qu’un nouveau produit nicotinique<mod class="mod-end" for="#pm24"/>
+<noteRef href="#M24" marker="24"/> donné est plus facilement biodégradable ou présente d’autres avantages pour l’environnement.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les unités de conditionnement et tout emballage extérieur ne suggèrent aucun avantage économique au moyen de bons imprimés, d’offres de réduction, de distribution gratuite, de promotion ou d’autres offres similaires.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<paragraph id="paragraph_14">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Chaque unité de conditionnement ainsi que tout emballage extérieur de cigarettes, de tabac à rouler<mod class="mod-start" for="#pm25"/>,<mod class="mod-end" for="#pm25"/>
+<noteRef href="#M25" marker="25"/> de tabac à pipe à eau<mod class="mod-start" for="#pm26"/>, de sachets de nicotine, de nouveaux produits du tabac à fumer et de nouveaux produits nicotiniques<mod class="mod-end" for="#pm26"/>
+<noteRef href="#M26" marker="26"/> porte un avertissement général, un message d’information et des avertissements sanitaires combinés. Chaque unité de conditionnement ainsi que tout emballage extérieur d’un produit du tabac à fumer autre que <mod class="mod-start" for="#pm27"/>ceux énumérés à la première phrase<mod class="mod-end" for="#pm27"/>
+<noteRef href="#M27" marker="27"/> porte un avertissement général et un message d’avertissement spécifique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le contenu de l’avertissement général, des messages d’information, du message d’avertissement spécifique et des avertissements sanitaires combinés, les langues employées, les modalités d’impression et de présentation, ainsi que la surface des différentes unités de conditionnement et emballages extérieurs visés à l’alinéa 1er couverte par les avertissements et messages sont déterminés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les niveaux d’émissions maximaux de goudron, de nicotine et de monoxyde de carbone sont fixés par règlement grand-ducal qui fixe en outre les méthodes de mesure de ces émissions.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les mesures des émissions visées à l’alinéa 1<sup>er</sup> sont vérifiées par le Laboratoire national de santé ou par tout laboratoire agréé par le ministre ayant la Santé dans ses attributions. Ces laboratoires, qui n’appartiennent pas à l’industrie du tabac et ne sont pas contrôlés, ni directement ni indirectement par celle-ci, sont contrôlés par la direction. Un règlement grand-ducal précise les conditions d’agrément et de contrôle de ces laboratoires.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4bis/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4bis.</num>
+<paragraph id="paragraph_16">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les unités de conditionnement de produits du tabac sont revêtus d’un identifiant unique, imprimé ou apposé de façon inamovible et indélébile. Cet identifiant n’est ni dissimulé, ni interrompu et permet d’accéder à des données relatives à la fabrication et aux mouvements de ces produits du tabac.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_17">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les personnes concernées par le commerce des produits du tabac, du fabricant au dernier opérateur avant le premier détaillant, enregistrent l’entrée de toutes les unités de conditionnement en leur possession, ainsi que tous les mouvements intermédiaires et la sortie définitive des unités de conditionnement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les personnes qui interviennent dans la chaîne d’approvisionnement des produits du tabac conservent un relevé complet et précis de toutes les opérations concernées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_18">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les fabricants de produits du tabac fournissent à toutes les personnes concernées par le commerce de ces produits, du fabricant au dernier opérateur avant le premier détaillant, y compris les importateurs, entrepôts et sociétés de transport, l’équipement nécessaire pour enregistrer les produits du tabac achetés, vendus, stockés, transportés ou soumis à toute autre manipulation. Cet équipement permet de lire les données enregistrées et de les transmettre sous forme électronique à une installation de stockage de données.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_19">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les informations qui font partie intégrante de l’identifiant unique prévu au paragraphe 1 er, et qui doivent être accessibles électroniquement au moyen d’un lien vers l’identifiant unique, sont précisées par règlement grand-ducal, de même que les modalités d’impression ou d’apposition du dispositif de sécurité.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4ter/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4ter.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4ter.</num>
+<paragraph id="paragraph_20">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs de produits du tabac concluent un contrat de stockage des données accessibles grâce à l’identifiant unique avec un tiers indépendant, dans le but d’héberger l’installation de stockage des données mentionnée à l’article 4bis, paragraphe 3.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_21">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Ce tiers indépendant est approuvé par la Commission européenne, qui prend en considération notamment son indépendance et ses capacités techniques. Il en va de même pour le contrat de stockage de données. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_22">
+<num>(3)</num>
+<alinea>
+<content>
+<p>L’installation de stockage de données est physiquement située sur le territoire de l’Union européenne. La Commission européenne a pleinement accès à cette installation. Les agents habilités des ministères ayant respectivement la Santé et les Finances dans leurs attributions ont pleinement accès aux installations de stockage situées sur le territoire du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_23">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les activités du tiers indépendant sont contrôlées par un auditeur externe, proposé et rémunéré par le fabricant ou l’importateur, et approuvé par la Commission européenne. L’auditeur externe soumet aux ministres ayant respectivement la Santé et les Finances dans leurs attributions et à la Commission européenne un rapport annuel dans lequel sont en particulier évaluées les irrégularités éventuelles liées à l’accès aux données stockées par le tiers indépendant.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_24">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les informations mentionnées au paragraphe 1<sup>er</sup> ne peuvent pas être modifiées ou effacées par un opérateur économique concerné par le commerce des produits du tabac. Ces informations sont enregistrées dans des traitements automatisés de données à caractère personnel dans les conditions de la <ref href="/eli/etat/leg/loi/2002/08/02/n2/jo" id="5a76c8bd-2fda-4fb2-9662-553d15dd72e2" scl:verify="true">loi modifiée du 2 août 2002</ref> relative à la protection des personnes à l’égard du traitement des données à caractère personnel.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4quater">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4quater</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4quater/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4quater.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4quater.</num>
+<alinea>
+<content>
+<p>Sur avis de la Commission nationale pour la protection des données, un règlement peut préciser les normes techniques pour la mise en place et le fonctionnement du système d’identification et de traçabilité prévu aux articles 4bis et 4ter, y compris le marquage à l’aide d’un identifiant unique, l’enregistrement, la transmission, le traitement et le stockage des données et l’accès aux données stockées.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4quinquies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4quinquies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4quinquies/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4quinquies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4quinquies.</num>
+<alinea>
+<content>
+<p>Outre l’identifiant unique mentionné à l’article 4bis, les unités de conditionnements des produits du tabac, mises sur le marché, comportent un dispositif de sécurité infalsifiable, composé d’éléments visibles et invisibles. Le dispositif de sécurité est imprimé ou apposé de façon inamovible et indélébile. Il n’est ni dissimulé, ni interrompu.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4sexies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4sexies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4sexies/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4sexies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4sexies.</num>
+<alinea>
+<content>
+<p>Chaque unité de conditionnement des produits du tabac sans combustion ainsi que tout emballage extérieur doit porter un avertissement sanitaire, dont les modalités de présentation, ainsi que les dimensions et le contenu sont précisés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4septies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4septies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4septies/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4septies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4septies.</num>
+<paragraph id="paragraph_25">
+<num>(1)</num>
+<alinea>
+<content>
+<p/>
+<ol scl:start="1" scl:symbol="a)">
+<li>Chaque unité de conditionnement de produits à fumer à base de plantes ainsi que tout emballage extérieur doit porter un avertissement sanitaire, dont le message et les modalités de présentation sont précisés par règlement grand-ducal.</li>
+<li> Les unités de conditionnement et tout emballage extérieur de produits à fumer à base de plantes ne peuvent comporter aucun des éléments ou dispositifs énoncés à l’article 3ter, paragraphe 1<sup>er</sup>, points a), b) et d), et ne peuvent indiquer que le produit est exempt d’additifs ou d’arômes.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_26">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs de produits à fumer à base de plantes soumettent à la direction une liste de tous les ingrédients, y compris leurs quantités, qui sont utilisés dans la fabrication desdits produits, par marque et par type. Lorsque la composition d’un produit est modifiée de telle sorte que cette modification a une incidence sur les informations communiquées au titre du présent article, les fabricants et les importateurs sont tenus d’en informer la direction. Les informations requises en vertu du présent article sont communiquées avant la mise sur le marché d’un produit à fumer à base de plantes nouveau ou modifié.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4octies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4octies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4octies/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4octies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4octies.</num>
+<paragraph id="paragraph_27">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs de cigarettes électroniques et de flacons de recharge sont tenus de soumettre une notification à la direction concernant tout produit de ce type qu’ils ont l’intention de mettre sur le marché.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_28">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La notification visée au paragraphe 1<sup>er</sup> est soumise sous forme électronique six mois avant la date prévue de mise sur le marché. Une nouvelle notification doit être soumise pour toute modification substantielle du produit.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_29">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La notification visée au paragraphe 1<sup>er</sup> doit contenir, selon qu’elle concerne une cigarette électronique ou un flacon de recharge, les informations suivantes:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>le nom et les coordonnées du fabricant, d’une personne physique ou morale responsable au sein de l’Union européenne et, le cas échéant, de l’importateur dans l’Union européenne;</li>
+<li> une liste de tous les ingrédients contenus dans le produit et des émissions résultant de l’utilisation de ce produit, par marque et par type, avec leurs quantités;</li>
+<li> les données toxicologiques relatives aux ingrédients et aux émissions du produit, y compris lorsqu’ils sont chauffés, en ce qui concerne en particulier leurs effets sur la santé des consommateurs lorsqu’ils sont inhalés et compte tenu, entre autres, de tout effet de dépendance engendré;</li>
+<li> les informations sur le dosage et l’inhalation de nicotine dans des conditions de consommation normales ou raisonnablement prévisibles; </li>
+<li>une description des composants du produit, y compris, le cas échéant, du mécanisme d’ouverture et de recharge de la cigarette électronique ou du flacon de recharge; </li>
+<li>une description du processus de production, en indiquant notamment s’il implique une production en série, et une déclaration selon laquelle le processus de production garantit la conformité aux exigences du présent article;</li>
+<li> une déclaration selon laquelle le fabricant et l’importateur assument l’entière responsabilité de la qualité et de la sécurité du produit lors de sa mise sur le marché et dans des conditions d’utilisation normales ou raisonnablement prévisibles;</li>
+<li> la preuve du paiement de la taxe prévue au paragraphe 4.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_30">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Une taxe de 5.000 euros est due pour toute notification visée au paragraphe 1<sup>er</sup>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La taxe est à acquitter moyennant un versement ou un virement sur un compte bancaire de l’Administration de l’Enregistrement et des Domaines, comprenant indication de l’identité du requérant ainsi que l’objet du virement ou versement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_31">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Lorsque la direction considère que les informations présentées sont incomplètes, elle est habilitée à demander qu’elles soient complétées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_32">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs de cigarettes électroniques et de flacons de recharge soumettent chaque année à la direction:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>des données exhaustives sur les volumes de vente, par marque et par type de produit;</li>
+<li> des informations sur les préférences des différents groupes de consommateurs, y compris les jeunes, les non-fumeurs et les principaux types d’utilisateurs actuels; </li>
+<li>le mode de vente des produits;</li>
+<li>des synthèses de toute étude de marché réalisée à l’égard de ce qui précède, y compris leur traduction en anglais.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm28"/>La direction surveille l’évolution du marché en ce qui concerne les cigarettes électroniques et les flacons de recharge, et notamment tous les éléments indiquant que l’utilisation de ces produits est un point d’entrée, pour les jeunes et les non-fumeurs, d’une dépendance à la nicotine et finalement à la consommation traditionnelle de tabac.<mod class="mod-end" for="#pm28"/>
+<noteRef href="#M28" marker="28"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_33">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs de cigarettes électroniques et de flacons de recharge mettent en place et tiennent à jour un système de collecte d’informations sur tous les effets indésirables présumés de ces produits sur la santé humaine.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si l’un de ces opérateurs économiques considère ou a des raisons de croire que les cigarettes électroniques ou les flacons de recharge qui sont en sa possession et qui sont destinés à être mis sur le marché ou sont mis sur le marché ne sont pas sûrs, ne sont pas de bonne qualité ou ne sont pas conformes à la présente loi, cet opérateur économique prend immédiatement les mesures correctives nécessaires pour mettre le produit concerné en conformité, le retirer ou le rappeler, le cas échéant.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans ces cas, l’opérateur économique est tenu d’informer immédiatement la direction en précisant en particulier les risques pour la santé humaine et la sécurité, toute mesure corrective prise, ainsi que les résultats de ces mesures correctives.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Des informations supplémentaires peuvent être demandées aux opérateurs économiques par la direction sur tout aspect touchant à la sécurité et à la qualité ou à tout effet indésirable éventuel des cigarettes électroniques ou des flacons de recharge.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm29"/>(8)</num>
+<alinea>
+<content>
+<p>Sur demande de la Commission européenne ou des autorités compétentes des autres États membres, la direction met toutes les informations reçues conformément au présent article à la disposition de la Commission européenne et des autres États membres de l’Union européenne.<mod class="mod-end" for="#pm29"/>
+<noteRef href="#M29" marker="29"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm30"/>(9)</num>
+<alinea>
+<content>
+<p>Lorsque la direction constate ou a des motifs raisonnables de croire qu’une cigarette électronique ou un flacon de recharge, tout en étant conforme au présent article, pourrait présenter un risque grave pour la santé humaine, elle prend les mesures provisoires appropriées. Elle informe immédiatement la Commission européenne et les autorités compétentes des autres États membres des mesures prises et communique toute information utile dont elle dispose.<mod class="mod-end" for="#pm30"/>
+<noteRef href="#M30" marker="30"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4nonies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4nonies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4nonies/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4nonies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4nonies.</num>
+<paragraph id="paragraph_34">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le liquide contenant de la nicotine ne peut être mis sur le marché que dans des flacons de recharge spécifiques d’un volume maximal de 10 millilitres, dans des cigarettes électroniques jetables ou dans des cartouches à usage unique. Les cartouches ou les réservoirs ne doivent pas excéder 2 millilitres.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_35">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le liquide contenant de la nicotine ne doit pas contenir de nicotine au-delà de 20 milligrammes par millilitre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_36">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le liquide contenant de la nicotine ne contient pas d’additifs énumérés à l’article 7, paragraphe 3, points c) à g).</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_37">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Ne peuvent être utilisés que des ingrédients de haute pureté pour la fabrication du liquide contenant de la nicotine. Les substances autres que les ingrédients visés à l’article 4 octies, paragraphe 3, point b sont uniquement présentes dans le liquide contenant de la nicotine sous forme de traces, et uniquement lorsque ces traces sont techniquement inévitables au cours de la fabrication.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_38">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Seuls peuvent être utilisés dans le liquide contenant de la nicotine, à l’exception de la nicotine, des ingrédients qui, chauffés ou non, ne présentent pas de risques pour la santé humaine.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_39">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les cigarettes électroniques diffusent les doses de nicotine de manière constante dans des conditions d’utilisation normale.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_40">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Les cigarettes électroniques et les flacons de recharge qui leur sont associés doivent être munis d’un dispositif de sécurité pour enfants et être inviolables. Ils sont protégés contre le bris et les fuites et sont munis d’un dispositif garantissant l’absence de fuite au remplissage.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_41">
+<num>(8)</num>
+<alinea>
+<content>
+<p>Un règlement grand-ducal peut définir les normes techniques relatives au mécanisme de remplissage prévu au paragraphe 7.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4decies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4decies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_4decies/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4decies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4decies.</num>
+<paragraph id="paragraph_42">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les unités de conditionnement des cigarettes électroniques et des flacons de recharge comprennent un dépliant présentant:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>les consignes d’utilisation et de stockage du produit, et notamment une note indiquant que l’utilisation du produit n’est pas recommandée aux jeunes et aux non-fumeurs;</li>
+<li> les contre-indications;</li>
+<li> les avertissements pour les groupes à risque spécifiques;</li>
+<li> les effets indésirables possibles;</li>
+<li> l’effet de dépendance et la toxicité; </li>
+<li>les coordonnées du fabricant ou de l’importateur et d’une personne physique ou morale au sein de l’Union européenne.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_43">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les unités de conditionnement ainsi que tout emballage extérieur des cigarettes électroniques et des flacons de recharge incluent:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>une liste de tous les ingrédients contenus dans le produit par ordre décroissant de leur poids; </li>
+<li>une indication de la teneur en nicotine du produit et la quantité diffusée par dose;</li>
+<li> l’indication du numéro de lot; et </li>
+<li>une recommandation selon laquelle le produit doit être tenu hors de portée des enfants.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_44">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Sans préjudice du paragraphe 2, les unités de conditionnement ainsi que tout emballage extérieur des cigarettes électroniques et des flacons de recharge ne contiennent pas d’éléments ou de dispositifs visés à l’article 3ter, à l’exception du paragraphe 1<sup>er</sup>, points a) et c) de l’article 3ter, concernant les informations sur la teneur en nicotine et sur les arômes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_45">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les unités de conditionnement ainsi que tout emballage extérieur des cigarettes électroniques et des flacons de recharge comportent un avertissement sanitaire dont le message et les modalités de présentation sont précisés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_5/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Le Gouvernement met en place ou subventionne des activités structurées de consultation et d’information, ayant pour mission: </p>
+<ul scl:symbol="dash">
+<li>de sensibiliser le public aux risques pour la santé liés à la consommation de tabac et à l’exposition à la fumée du tabac, ainsi qu’aux avantages du sevrage tabagique et des modes de vie sans tabac;</li>
+<li>
+<mod class="mod-start" for="#pm31" style="li"/>de sensibiliser le public aux risques pour la santé liés à la consommation de sachets de nicotine et de nouveaux produits nicotiniques ;<mod class="mod-end" for="#pm31"/>
+<noteRef href="#M31" marker="31"/>
+</li>
+<li> de fournir au public des informations relatives aux ingrédients des différents produits du tabac<mod class="mod-start" for="#pm32"/>, des sachets de nicotine et des nouveaux produits nicotiniques<mod class="mod-end" for="#pm32"/>
+<noteRef href="#M32" marker="32"/> commercialisés, indiquant les teneurs en substances nocives;</li>
+<li> d’offrir des consultations au public, notamment aux personnes désireuses d’arrêter de fumer.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Des informations de nature sanitaire en rapport avec le tabagisme et une éducation à la santé sont dispensées à tous les niveaux de l’enseignement scolaire.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_6/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<paragraph id="paragraph_46">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est interdit de fumer:</p>
+<ol scl:start="1" scl:symbol="1.">
+<li>à l’intérieur et dans l’enceinte des établissements hospitaliers;</li>
+<li> dans les locaux à usage collectif des institutions accueillant des personnes âgées à des fins d’hébergement, y compris les ascenseurs et corridors;</li>
+<li> dans les salles d’attente des médecins, des médecins-dentistes et des autres professionnels de la santé ainsi que des laboratoires d’analyses médicales;</li>
+<li> dans les pharmacies;</li>
+<li> à l’intérieur des établissements scolaires de tous les types d’enseignement ainsi que dans leur enceinte;</li>
+<li> dans les locaux destinés à accueillir ou à héberger des mineurs âgés de moins de seize ans accomplis; </li>
+<li>dans tous les établissements couverts où sont pratiqués des sports ou des activités de loisirs;</li>
+<li> dans les salles de cinéma, de spectacles et de théâtre ainsi que dans les halls et couloirs des bâtiments qui les abritent;</li>
+<li> dans les musées, galeries d’art, bibliothèques et salles de lecture, ouverts au public;</li>
+<li> dans les halls et salles des bâtiments de l’Etat, des communes et des établissements publics;</li>
+<li> dans tout moyen collectif de transport de personnes, même à l’arrêt ou en stationnement; </li>
+<li>dans les aires de jeux, ainsi que dans toutes les enceintes sportives accueillant des mineurs de moins de 16 ans accomplis, y exerçant une activité sportive; </li>
+<li>
+<ol scl:start="1" scl:symbol="a)">
+<li>dans les établissements de restauration,</li>
+<li> dans les salons de consommation des pâtisseries et des boulangeries dans les établissements de restauration et les salons de consommation des pâtisseries et des boulangeries;</li>
+</ol>
+</li>
+<li>dans les discothèques au sens de la réglementation portant nomenclature et classification des établissements classés, </li>
+<li>dans les galeries marchandes ou commerciales et les salles d’exposition ouvertes au public;</li>
+<li> dans les locaux de vente de tous commerces de denrées alimentaires;</li>
+<li>dans les débits de boissons; </li>
+<li>dans les locaux à usage collectif des établissements d’hébergement, y compris les ascenseurs et corridors.</li>
+<li>dans tout véhicule en présence d’un enfant de moins de douze ans accomplis.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_47">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’interdiction dont question au point 1 du paragraphe 1<sup>er</sup> ne vaut pas dans des fumoirs spécialement aménagés à cette fin par l’exploitant d’un établissement hospitalier ainsi que dans des zones fumeurs aménagées en plein air. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Exception faite de fumoirs aménageables à l’intérieur de services psychiatriques fermés, un seul fumoir peut être admis par établissement hospitalier. Ce fumoir devra être localisé à distance des services et aménagé de façon à ce que la fumée de tabac n’atteigne ni le personnel ni le public. L’accès aux fumoirs est strictement réservé aux patients hospitalisés qui en font la demande. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Une seule zone fumeurs aménagée en plein air peut être admise par établissement hospitalier. Cette zone fumeurs doit être séparée de toute zone d’accès de l’établissement hospitalier. Elle doit être clairement signalée comme espace réservé aux fumeurs.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_48">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Pour les lieux dont question aux points 13 a), 17 et 18 du paragraphe 1<sup>er</sup>, un fumoir peut être installé dans un local isolé à part dans lequel l’interdiction dont question au présent article ne vaut pas.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le fumoir doit être muni d’un système d’extraction de fumée ou d’épuration d’air.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le fumoir doit être conçu et réalisé de manière à réduire au maximum les inconvénients de la fumée vis-à-vis du non-fumeur et ne peut être une zone de transit.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les caractéristiques techniques du système d’extraction de fumée ou d’épuration d’air ainsi que les conditions visées à l’alinéa ci-dessus seront fixées par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La superficie du fumoir ne peut excéder trente pour cent de la superficie totale du local tel que défini <mod class="mod-start" for="#pm33"/>à l’article 2, points 5 et 6, ou<mod class="mod-end" for="#pm33"/>
+<noteRef href="#M33" marker="33"/> des locaux visés au point 18 du paragraphe 1<sup>er</sup>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le fumoir doit être clairement identifié comme local réservé aux fumeurs. Un ou plusieurs signaux rappelant l’interdiction de fumer dans les espaces réservés aux non-fumeurs doivent être posés de telle sorte que toute personne présente puisse en prendre connaissance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’exploitant des lieux est tenu de prendre des mesures empêchant les mineurs d’avoir accès au fumoir.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aucune prestation de service ne peut être délivrée dans le fumoir. Seules des boissons peuvent être emportées dans le fumoir.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’exploitation du fumoir est soumise à l’autorisation préalable du ministre, qui ne l’accorde sur rapport de la direction de la Santé que si les exigences prévues au présent article sont remplies. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La direction de la Santé veille au respect des exigences précitées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_49">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Un panneau avertissant sur les risques encourus par le tabagisme passif doit être placé visiblement à l’entrée des fumoirs et zones fumeurs dont question aux paragraphes 2 et 3.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm34"/>(5)</num>
+<alinea>
+<content>
+<p>Il est interdit de consommer des sachets de nicotine ou des nouveaux produits nicotiniques :</p>
+<ol>
+<li>à l’intérieur des établissements visés au paragraphe 1<sup>er</sup>, point 5 ;</li>
+<li>dans les locaux visés au paragraphe 1<sup>er</sup>, point 6 ;</li>
+<li>dans les aires de jeux et les enceintes sportives visées au paragraphe 1<sup>er</sup>, point 12.<mod class="mod-end" for="#pm34"/>
+<noteRef href="#M34" marker="34"/>
+</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_7/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<paragraph id="paragraph_50">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La mise sur le marché, la vente, la distribution ou l’offre à titre gratuit, la détention en vue de la vente, ainsi que l’importation à des fins commerciales des tabacs à usage oral sont interdites.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_51">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La mise sur le marché, la vente, la distribution ou l’offre à titre gratuit de paquets de moins de vingt <mod class="mod-start" for="#pm35"/>et de plus de cinquante<mod class="mod-end" for="#pm35"/>
+<noteRef href="#M35" marker="35"/> cigarettes, ainsi que des contenants de moins de <mod class="mod-start" for="#pm37"/>30<mod class="mod-end" for="#pm37"/>
+<noteRef href="#M37" marker="37"/> <mod class="mod-start" for="#pm36"/>et de plus de 1.000<mod class="mod-end" for="#pm36"/>
+<noteRef href="#M36" marker="36"/> grammes de tabac à rouler, quel que soit leur conditionnement, sont interdites.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm38"/>(2<i>bis</i>)</num>
+<alinea>
+<content>
+<p>Le nombre de cigarettes par unité de conditionnement correspond à la condition du multiplicateur de cinq pièces.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les quantités des unités de conditionnement pour le tabac à rouler correspondent aux conditions suivantes :</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>Chaque unité de conditionnement dont le poids est compris entre 30 grammes et 50 grammes constitue un multiple de 5 grammes ;</li>
+<li>Chaque unité de conditionnement dont le poids est compris entre 50 grammes et 100 grammes constitue un multiple de 10 grammes ;</li>
+<li>Chaque unité de conditionnement dont le poids est compris entre 100 grammes et 500 grammes constitue un multiple de 25 grammes ;</li>
+<li>Chaque unité de conditionnement dont le poids est compris entre 500 grammes et 1.000 grammes constitue un multiple de 50 grammes.<mod class="mod-end" for="#pm38"/>
+<noteRef href="#M38" marker="38"/>
+</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_52">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Sont interdites la mise sur le marché, la vente, la distribution ou l’offre à titre gratuit de produits du tabac:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>contenant un arôme caractérisant particulier; </li>
+<li>contenant tout dispositif technique permettant de modifier l’odeur ou le goût des produits du tabac ou leur intensité de combustion; </li>
+<li>contenant des vitamines ou d’autres additifs laissant entendre qu’un produit du tabac a des effets bénéfiques sur la santé ou que les risques qu’il présente pour la santé ont été réduits; </li>
+<li>contenant de la caféine, de la taurine ou d’autres additifs et stimulants associés à l’énergie et à la vitalité; </li>
+<li>contenant des additifs qui confèrent des propriétés colorantes aux émissions de fumée; </li>
+<li>contenant des additifs qui facilitent l’inhalation ou l’absorption de nicotine; </li>
+<li>contenant des additifs qui, sans combustion, ont des propriétés cancérogènes, mutagènes ou toxiques pour la reproduction humaine;</li>
+<li> contenant des arômes dans l’un de leurs composants tels que les filtres, le papier, le conditionnement et les capsules, ou tout dispositif technique permettant de modifier l’odeur ou le goût des produits du tabac concernés ou leur intensité de combustion. Les filtres, le papier et les capsules ne doivent pas contenir de tabac ni de nicotine.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les produits du tabac autres que les cigarettes<mod class="mod-start" for="#pm39"/>, les produits du tabac chauffés<mod class="mod-end" for="#pm39"/>
+<noteRef href="#M39" marker="39"/> et le tabac à rouler sont exemptés des interdictions visées aux points a)<mod class="mod-start" for="#pm40"/>, b)<mod class="mod-end" for="#pm40"/>
+<noteRef href="#M40" marker="40"/> et h).</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm41"/>(4)</num>
+<alinea>
+<content>
+<p>Sont interdites la mise sur le marché, la vente, la distribution ou l’offre à titre gratuit de sachets de nicotine contenant soit :</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>plus de 0,048 milligrammes de nicotine par sachet ;</li>
+<li>des additifs qui facilitent l’absorption de nicotine ;</li>
+<li>de la caféine, de la taurine, du CBD ou d’autres additifs et stimulants associés à l’énergie ou à la relaxation.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les sachets de nicotine sont munis d’un dispositif de sécurité pour enfant et sont inviolables.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les fabricants de sachets de nicotine sont tenus d’observer les règles en matière d’hygiène prévues à l’article 4 du <ref href="/eli/reg_ue/2004/852/jo" id="0f3dad1a-7bd6-48f1-a85a-5bab88477702">règlement (CE) n° 852/2004</ref> du Parlement européen et du Conseil du 29 avril 2004 relatif à l’hygiène des denrées alimentaires pour les exploitants du secteur alimentaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Sont également interdites la mise sur le marché, la vente, la distribution ou l’offre à titre gratuit de nouveaux produits nicotiniques contenant plus de 0,048 milligrammes de nicotine par unité de produit ou par gramme de produit lorsque celui-ci n’est pas conditionné sous forme d’unité.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les nouveaux produits nicotiniques sont munis d’un dispositif de sécurité pour enfant et sont inviolables.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les fabricants de nouveaux produits nicotiniques sont tenus d’observer les règles en matière d’hygiène prévues à l’article 4 du <ref href="/eli/reg_ue/2004/852/jo" id="686ef652-cb6b-4b5d-980e-df4f2a5e532a">règlement (CE) n° 852/2004</ref> précité.<mod class="mod-end" for="#pm41"/>
+<noteRef href="#M41" marker="41"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_8/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<paragraph id="paragraph_53">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs de nouveaux produits du tabac soumettent une notification à la direction six mois avant la date prévue de mise sur le marché de tels produits. Cette notification est soumise sous forme électronique. Elle est assortie d’une description détaillée du nouveau produit du tabac concerné ainsi que des instructions de son utilisation. <mod class="mod-start" for="#pm42"/>La direction met à disposition de la Commission européenne les informations reçues en application du présent article.<mod class="mod-end" for="#pm42"/>
+<noteRef href="#M42" marker="42"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_54">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La notification visée au paragraphe 1<sup>er</sup> doit contenir les informations suivantes:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>la liste de tous les ingrédients, avec leurs quantités, utilisés dans la fabrication du nouveau produit du tabac et ses émissions et leurs niveaux, conformément à l’article 4;</li>
+<li> les études scientifiques disponibles sur la toxicité, l’effet de dépendance et l’attractivité du nouveau produit du tabac, en particulier du point de vue de ses ingrédients et de ses émissions;</li>
+<li> les études disponibles, leur synthèse et les analyses de marché au sujet des préférences des différents groupes de consommateurs, y compris les jeunes et les fumeurs actuels;</li>
+<li> d’autres informations utiles disponibles, notamment une analyse risques/bénéfices du produit, ses effets attendus sur l’arrêt de la consommation de tabac, ses effets attendus sur l’initiation à la consommation de tabac ainsi que des prévisions concernant la perception des consommateurs;</li>
+<li> la preuve du paiement de la taxe prévue au paragraphe 4.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_55">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les fabricants et les importateurs de nouveaux produits du tabac soumettent à la direction toute information nouvelle ou actualisée sur les études, recherches et autres informations visées au paragraphe 2, points b) à d). La direction peut exiger des fabricants ou des importateurs de nouveaux produits du tabac qu’ils procèdent à des essais supplémentaires ou qu’ils présentent des informations complémentaires.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_56">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Une taxe de 5.000 euros est due pour toute notification visée au paragraphe 1<sup>er</sup>. La taxe est à acquitter moyennant un versement ou un virement sur un compte bancaire de l’Administration de l’Enregistrement et des Domaines, comprenant indication de l’identité du requérant ainsi que l’objet du virement ou versement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_57">
+<num>(5)</num>
+<alinea>
+<content>
+<p>La mise sur le marché de nouveaux produits du tabac est soumise à autorisation préalable à délivrer par le ministre sur avis de la direction.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_9/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<paragraph id="paragraph_58">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La mise sur le marché, la vente, la détention en vue de la vente et l’importation à des fins commerciales de confiseries et de jouets destinés aux enfants et fabriqués avec la nette intention de donner au produit ou à son emballage l’apparence d’un type de produit du tabac<mod class="mod-start" for="#pm43"/>, d’un sachet de nicotine, d’un nouveau produit nicotinique<mod class="mod-end" for="#pm43"/>
+<noteRef href="#M43" marker="43"/> ou d’une cigarette électronique ou d’une recharge sont interdites. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_59">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Il est interdit de vendre ou d’offrir gratuitement du tabac et des produits du tabac, <mod class="mod-start" for="#pm44"/>des sachets de nicotine, des nouveaux produits nicotiniques,<mod class="mod-end" for="#pm44"/>
+<noteRef href="#M44" marker="44"/> ainsi que des cigarettes électroniques et des flacons de recharge à des mineurs âgés de moins de dix-huit ans accomplis. <mod class="mod-start" for="#pm45"/>En cas de doute quant à la majorité de ses clients, le vendeur exige la présentation d’une pièce d’identité à des fins de vérification.<mod class="mod-end" for="#pm45"/>
+<noteRef href="#M45" marker="45"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_60">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Tout exploitant d’appareils automatiques de distribution délivrant du tabac et des produits du tabac, ainsi que des cigarettes électroniques et des flacons de recharge, <mod class="mod-start" for="#pm46"/>des sachets de nicotine ou des nouveaux produits nicotiniques,<mod class="mod-end" for="#pm46"/>
+<noteRef href="#M46" marker="46"/> est tenu de prendre des mesures empêchant les mineurs âgés de moins de dix-huit ans accomplis d’avoir accès auxdits appareils.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_61">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Tout exploitant d’un débit de tabac ou d’un commerce offrant en vente des produits du tabac, ainsi que des cigarettes électroniques et des flacons de recharge, doit veiller à conserver ces produits de façon à ce que la clientèle ne puisse y avoir accès sans l’aide d’un préposé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_62">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Est interdite la vente à distance de produits du tabac, <mod class="mod-start" for="#pm47"/>de sachets de nicotine, de nouveaux produits nicotiniques,<mod class="mod-end" for="#pm47"/>
+<noteRef href="#M47" marker="47"/> ainsi que de cigarettes électroniques et de flacons de recharge, y compris lorsque l’acquéreur est situé à l’étranger.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sont également interdites l’acquisition, l’introduction en provenance d’un autre État membre de l’Union européenne ou l’importation en provenance de pays tiers de produits du tabac, ainsi que de cigarettes électroniques et de flacons de recharge vendus à distance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm48"/>Ne sont pas visées par les interdictions du présent paragraphe, les transactions entre professionnels et commerçants.<mod class="mod-end" for="#pm48"/>
+<noteRef href="#M48" marker="48"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_10/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>Les infractions aux dispositions des articles 3, <mod class="mod-start" for="#pm49"/>3<i>bis</i>, paragraphe 1<sup>er</sup>, alinéas 1<sup>er</sup> et 2<mod class="mod-end" for="#pm49"/>
+<noteRef href="#M49" marker="49"/>, 3ter, 4bis paragraphe 1<sup>er</sup>, 4ter paragraphe 5, 4quinquies, 4sexies, 4septies, 4octies paragraphes 1<sup>er</sup>, 6 et 7, de l’article 4nonies et des articles 7, 8 paragraphe 1<sup>er</sup> et de l’article 9 de la présente loi, ainsi que les infractions aux dispositions du règlement grand-ducal à prendre en vertu de ses articles 4 et 4sexies, sont punies d’une amende de 251 à 50.000 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les infractions aux dispositions de <mod class="mod-start" for="#pm50"/>l’article 4<i>bis</i>, paragraphe 2, et de<mod class="mod-end" for="#pm50"/>
+<noteRef href="#M50" marker="50"/> l’article 6 de la présente loi sont punies d’une amende de 25 à 250 euros. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’exploitant d’un des établissements visés au paragraphe (1) sous 13 a), 17 et 18 de l’article 6, ou la personne qui le remplace, qui omet délibérément de veiller dans son établissement au respect de l’interdiction énoncée à l’article précité, est puni d’une amende de 251 à 1.000 euros. Est puni de la même peine l’exploitant ou la personne qui le remplace qui installe dans son établissement un fumoir clairement identifié comme local réservé aux fumeurs, mais ne répondant pas aux exigences définies au paragraphe (3) de l’article précité.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de récidive dans les deux ans qui suivent une condamnation définitive, les amendes prévues aux premier alinéa du présent article peuvent être portées au double du maximum. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dispositions du livre 1<sup>er</sup> du <ref href="/eli/etat/leg/code/penal" id="cd2496fc-6d5f-4782-b329-8852b1fc690a">Code pénal</ref> ainsi que les articles 130-1 à 132-1 du <ref href="/eli/etat/leg/code/procedure_penale" id="947f1af5-3000-4f98-acd9-c03a751300c8">Code de procédure pénale</ref> sont applicables aux peines prévues aux premier alinéa du présent article. </p>
+</content>
+</alinea>
+</article>
+<article id="art_10bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_10bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_10bis/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm51"/>Art. 10<i>bis</i>.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sans préjudice de l’article 10 du <ref href="/eli/etat/leg/code/procedure_penale" id="699dbceb-8119-487a-9246-39d7a58e1c0c">Code de procédure pénale</ref>, les infractions aux dispositions de la présente loi sont recherchées et constatées par les fonctionnaires de l’Administration des douanes et accises, ci-après « ADA », à partir du grade de brigadier principal. Les fonctionnaires prémentionnés peuvent procéder à des contrôles relatifs au respect des dispositions de la présente loi.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans l’exercice de leurs fonctions prévues au présent article, les fonctionnaires de l’ADA y visés ont la qualité d’officier de police judiciaire. Ils constatent les infractions par des procès-verbaux faisant foi jusqu’à preuve du contraire. Leur compétence s’étend à tout le territoire du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Avant d’entrer en fonction, ils prêtent devant le Tribunal d’arrondissement de Luxembourg, siégeant en matière civile, le serment suivant : « Je jure de remplir mes fonctions avec intégrité, exactitude et impartialité ».</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les fonctionnaires de l’ADA visés au présent paragraphe doivent avoir suivi une formation professionnelle spéciale portant sur la recherche et la constatation des infractions, sur les dispositions de la présente loi ainsi que sur ses règlements d’exécution.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La formation professionnelle spéciale est organisée par l’ADA dans le cadre de la formation continue des agents de l’État, selon les besoins de l’ADA.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le programme de la formation professionnelle spéciale, qui est théorique, et dont la durée ne peut pas dépasser dix heures, porte sur la recherche et la constatation des infractions au titre de la présente loi et des règlements pris en son exécution. Le contenu du programme de la formation est précisé par règlement grand-ducal. Ce règlement précise également les modalités du contrôle des connaissances, qui est organisé par l’ADA dans les trois mois qui suivent la fin de la période de l’organisation des cours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les épreuves sont corrigées séparément par deux correcteurs. A réussi à l’examen, le candidat qui a obtenu dans chacune des épreuves au moins la moitié du maximum des points, et sous condition que le total des points obtenus soit égal au moins aux deux tiers du total du maximum des points pouvant être obtenus.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas d’échec, le candidat peut se représenter au prochain contrôle des connaissances organisé par l’ADA. Le candidat est libre de participer de nouveau à la formation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les médecins de la direction, qui ont qualité d’officier de police judiciaire au sens de l’article 8 de la <ref href="/eli/etat/leg/loi/1980/11/21/n1/jo" id="0ff4ef9c-0431-4c9b-9fbc-1cc35f0098be" scl:verify="true">loi modifiée du 21 novembre 1980</ref> portant organisation de la Direction de la santé, sont chargés de rechercher et de constater les infractions aux articles 3<i>bis</i>, paragraphes 1<sup>er</sup> et 2, 3<i>ter</i>, 7 et 9 de la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les fonctionnaires de la division de l’inspection sanitaire de la direction portant le titre d’inspecteur sanitaire ont la qualité d’officier de police judiciaire pour constater les infractions aux dispositions de l’article 6, paragraphes 2 à 4.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ils constatent les infractions par des procès-verbaux faisant foi jusqu’à preuve du contraire. Leur compétence s’étend à tout le territoire du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Avant d’entrer en fonction, ils prêtent devant le Tribunal d’arrondissement de Luxembourg, siégeant en matière civile, le serment suivant : « Je jure de remplir mes fonctions avec intégrité, exactitude et impartialité ».</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les fonctionnaires de la division de l’inspection sanitaire visés au présent paragraphe doivent avoir suivi une formation professionnelle spéciale portant sur la recherche et la constatation des infractions aux dispositions de l’article 6, paragraphes 2 à 4.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La formation est organisée par la direction, dans le cadre de la formation continue des agents de l’État, selon les besoins de la division de l’inspection sanitaire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La formation se déroule sur une durée ne pouvant pas dépasser quatre heures. Elle est théorique et porte sur la recherche et la constatation des infractions à l’article 6, paragraphes 2 à 4, de la présente loi, au <ref href="/eli/etat/leg/rgd/2007/01/26/n3/jo" id="64837663-0ca8-4a19-8b1a-af8972559574" scl:verify="true">règlement grand-ducal du 26 janvier 2007</ref> fixant les caractéristiques techniques des systèmes d’extraction ou d’épuration des pièces séparées dans les établissements de restauration et les salons de consommation des pâtisseries et des boulangeries et au <ref href="/eli/etat/leg/rgd/2013/11/27/n1/jo" id="6cf67cc4-49f2-4dfe-92b5-197289a6f830" scl:verify="true">règlement grand-ducal du 27 novembre 2013</ref> fixant les caractéristiques techniques et les modalités de conception des systèmes d’extraction ou d’épuration des fumoirs dans les débits de boissons et dans les locaux à usage collectif des établissements d’hébergement. Le contenu du programme de la formation est précisé par règlement grand-ducal. Ce règlement précise également les modalités du contrôle des connaissances, qui est organisé par la direction dans les trois mois qui suivent la fin de la période de l’organisation des cours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les épreuves sont corrigées séparément par deux correcteurs. A réussi à l’examen, le candidat qui a obtenu dans chacune des épreuves au moins la moitié du maximum des points, et sous condition que le total des points obtenus soit égal au moins aux deux tiers du total du maximum des points pouvant être obtenus.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas d’échec, le candidat peut se représenter au prochain contrôle des connaissances organisé par la direction. Le candidat est libre de participer de nouveau à la formation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les agents municipaux qui ont réussi à l’examen de promotion de leur carrière et qui remplissent les conditions de l’article 15-1<i>bis</i>, paragraphes 2 et 3, du <ref href="/eli/etat/leg/code/procedure_penale" id="0f32f142-edd0-4569-b38a-a999c98623e1">Code de procédure pénale</ref>, recherchent et constatent par procès-verbaux, faisant foi jusqu’à preuve du contraire, les infractions à l’article 6, paragraphes 1<sup>er</sup>, point 12, et 5, point 3, de la présente loi.<mod class="mod-end" for="#pm51"/>
+<noteRef href="#M51" marker="51"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_11/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>En cas <mod class="mod-start" for="#pm52"/>d’infractions<mod class="mod-end" for="#pm52"/>
+<noteRef href="#M52" marker="52"/> punies conformément aux dispositions de <mod class="mod-start" for="#pm53"/>l’article 4<i>bis</i>, paragraphe 2, et de<mod class="mod-end" for="#pm53"/>
+<noteRef href="#M53" marker="53"/> l’article 6 des avertissements taxés peuvent être décernés par les fonctionnaires de la police grand-ducale habilités à cet effet par le directeur général de la police grand-ducale et par les fonctionnaires de l’administration des douanes et accises habilités à cet effet par le directeur de l’administration des douanes et accises.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm54"/>En cas de contraventions punies conformément aux dispositions de l’article 6, paragraphes 1<sup>er</sup>, point 12, et 5, point 3, des avertissements taxés peuvent être décernés par les agents municipaux qui remplissent les conditions de l’article 10<i>bis</i>, paragraphe 4.<mod class="mod-end" for="#pm54"/>
+<noteRef href="#M54" marker="54"/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’avertissement taxé est subordonné à la condition soit que le contrevenant consent à verser immédiatement entre les mains des fonctionnaires préqualifiés la taxe due, soit, lorsque la taxe ne peut pas être perçue sur le lieu même de l’infraction, qu’il s’en acquitte dans le délai lui imparti par sommation. Dans cette deuxième hypothèse le paiement peut notamment se faire dans le bureau de la police grand-ducale, dans le bureau des douanes et accises ou par versement au compte postal ou bancaire indiqué par la même sommation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’avertissement taxé est remplacé par un procès-verbal ordinaire:</p>
+<ol scl:start="1" scl:symbol="1.">
+<li>si le contrevenant n’a pas payé dans le délai imparti;</li>
+<li>si le contrevenant déclare ne pas vouloir ou ne pas pouvoir payer la ou les taxes;</li>
+<li> si le contrevenant a été mineur au moment des faits.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le montant de la taxe ainsi que les modes du paiement sont fixés par règlement grand-ducal qui détermine aussi les modalités d’application du présent article. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les frais de rappel éventuels font partie intégrante de la taxe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le montant à percevoir par avertissement taxé ne peut pas dépasser le maximum de l’amende prévue à l’article 10 alinéa 2.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le versement de la taxe dans un délai de 30 jours, à compter de la constatation de l’infraction, augmentée le cas échéant des frais prévus au cinquième alinéa du présent paragraphe a pour conséquence d’arrêter toute poursuite.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque la taxe a été réglée après ce délai, elle est remboursée en cas d’acquittement, et elle est imputée sur l’amende prononcée et sur les frais de justice éventuels en cas de condamnation. </p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_12/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>Si le contrevenant qui n’a pas sa résidence normale au Luxembourg, ne s’acquitte pas de l’avertissement taxé sur le lieu même de l’infraction, il devra verser aux fonctionnaires de la police grand-ducale ou de l’administration des douanes et accises une somme destinée à couvrir l’amende et les frais de justice éventuels en vue de la consignation de cette somme entre les mains du receveur de l’Enregistrement du siège de la Justice de paix compétente. Un règlement grand-ducal en fixe le montant et les modalités d’application; le montant ne peut pas excéder le double du maximum de l’amende, fixé à l’article 10 alinéa 2.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_13/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>En cas d’infraction aux dispositions de l’article 3 de la présente loi, sont poursuivis comme auteurs principaux: </p>
+<ol scl:start="1" scl:symbol="1.">
+<li>Les producteurs, fabricants et commerçants de tabac, de produits du tabac, de cigarettes électroniques ou de flacons de recharge, ainsi que les exploitants des lieux, à la demande desquels est effectuée la publicité irrégulière.</li>
+<li>l’entrepreneur de publicité qui a prêté son service aux opérations irrégulières;</li>
+<li> celui qui assure la diffusion de la publicité interdite;</li>
+<li> celui qui a diffusé ou fait diffuser dans une salle de spectacle ou autre lieu public ou ouvert au public, dont il assure la direction, la publicité interdite; </li>
+<li>celui qui a laissé apposer une affiche, un panneau ou une enseigne irrégulière sur ou dans un immeuble bâti ou non bâti ou une installation dont il a la jouissance. </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_14/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<paragraph id="paragraph_63">
+<num>(1)</num>
+<alinea>
+<content>
+<p>En cas d’infraction aux dispositions des articles 4, 4sexies et 4septies de la présente loi, sont poursuivis comme auteurs principaux ceux qui fabriquent, mettent sur le marché, importent à des fins commerciales, vendent en gros ou détiennent en vue de la vente en gros des produits du tabac qui:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>sont dépourvus d’un avertissement sanitaire conforme,</li>
+<li> sont dépourvus d’un identifiant unique et d’un dispositif de sécurité infalsifiable. </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_64">
+<num>(2)</num>
+<alinea>
+<content>
+<p>En cas d’infraction aux dispositions de l’article 4 decies de la même loi, sont poursuivis comme auteurs principaux ceux qui fabriquent, mettent sur le marché, importent à des fins commerciales, vendent en gros ou détiennent en vue de la vente en gros des cigarettes électroniques et des flacons de recharge des produits du tabac qui sont dépourvus d’un avertissement sanitaire conforme.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_65">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La vente au détail d’un des produits visés aux paragraphes 1<sup>er</sup> et 2, non conforme aux prédites dispositions, ainsi que d’un produit du tabac non conforme à l’article 7, paragraphe 3, ne sont pas constitutives d’infraction.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_15/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<alinea>
+<content>
+<p>Les contrats relatifs à des activités de publicité ou de parrainage interdites en vertu de la présente loi, mais autorisées avant son entrée en vigueur, peuvent encore être exécutés jusqu’à leur terme, sans que celui-ci puisse se situer plus de deux ans après cette entrée en vigueur. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La disposition de l’alinéa qui précède ne s’applique pas aux contrats relatifs à des activités de publicité ou de parrainage rentrant dans le champ d’application de la <ref href="/eli/dir_ue/2003/33/jo" id="e8369aa0-bdde-4830-91e7-0641f16d534f">directive 2003/33/CE</ref> du Parlement européen et du Conseil du 26 mai 2003 concernant le rapprochement des dispositions législatives, réglementaires et administratives des Etats membres en matière de publicité et de parrainage en faveur des produits du tabac. </p>
+</content>
+</alinea>
+</article>
+<alinea>
+<content>
+<p scl:align="center">
+<b>Dispositions modificatives</b>
+</p>
+</content>
+</alinea>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_17/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>L’article 32 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="6c3e4319-cde4-41a5-beb9-f10b1634c61a" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat est modifié et complété comme suit:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le paragraphe 2 alinéa 1<sup>er</sup> est complété par un point c) libellé comme suit:<embeddedStructure>
+<alinea>
+<content>
+<ol scl:start="3" scl:symbol="a)">
+<li>en prenant les mesures nécessaires afin que les fonctionnaires soient protégés de manière efficace contre les émanations résultant de la consommation de tabac d’autrui.</li>
+</ol>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_18/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>L’article 36, paragraphe 2, alinéa 1 de la <ref href="/eli/etat/leg/loi/1985/12/24/n3/jo" id="07431a14-56ab-4501-bab6-95d19f6a6cbb" scl:verify="true">loi modifiée du 24 décembre 1985</ref> fixant le statut général des fonctionnaires communaux est complété par une lettre c) libellée comme suit:<embeddedStructure>
+<alinea>
+<content>
+<ol scl:start="3" scl:symbol="a)">
+<li>en prenant les mesures nécessaires afin que les fonctionnaires soient protégés de manière efficace contre les émanations résultant de la consommation de tabac d’autrui.</li>
+</ol>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<alinea>
+<content>
+<p scl:align="center">
+<b>Disposition abrogatoire</b> </p>
+</content>
+</alinea>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_19/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1989/03/24/n2/jo" id="d5b7a0ef-abce-417c-8d8d-1521b8595498" scl:verify="true">loi modifiée du 24 mars 1989</ref> portant restriction de la publicité en faveur du tabac et de ses produits, interdiction de fumer dans certains lieux et interdiction de la mise sur le marché des tabacs à usage oral est abrogée. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ses dispositions restent applicables aux contrats visés à l’article 15.</p>
+</content>
+</alinea>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1/art_20/20180910</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-09-10</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<alinea>
+<content>
+<p>La référence à la présente loi pourra se faire sous une forme abrégée en recourant à l’intitulé suivant: «<ref href="???" scl:verify="true">Loi du 11 août 2006</ref> relative à la lutte antitabac».<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+<alinea>
+<content>
+<p scl:font-size="8">___________</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<ol scl:font-size="8" scl:start="1" scl:symbol="1">
+<li>à l’exception: <ol scl:start="1" scl:symbol="1.">
+<li>des articles 4bis, 4ter, 4quinquies et 14, paragraphe 1<sup>er</sup>, point b), qui prennent effet:<ol scl:start="1" scl:symbol="a)">
+<li>le 20 mai 2019 pour les cigarettes et le tabac à rouler;</li>
+<li> le 20 mai 2024 pour les produits du tabac autres que les cigarettes et le tabac à rouler; et</li>
+</ol>
+</li>
+<li>de l’article 7, paragraphe 3 de la <ref href="/eli/etat/leg/loi/2006/08/11/n1/jo" id="c4a41391-39e7-4046-b987-09fd442418d3" scl:verify="true">loi du 11 août 2006</ref> relative à la lutte antitabac, telle que modifiée, qui prend effet le 20 mai 2020 pour les produits du tabac contenant un arôme caractérisant particulier, dont le volume des ventes à l’échelle de l’Union européenne représente trois pourcent ou plus dans une catégorie de produits déterminée</li>
+</ol>
+</li>
+</ol>
+</content>
+</alinea>
+</body>
+</act>
+</akomaNtoso>

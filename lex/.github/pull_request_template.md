@@ -1,0 +1,5 @@
+- [ ] I am entitled to submit the code and project-authored content in this PR.
+- [ ] Every legislative source in this PR is official.
+- [ ] I verified and documented redistribution and attribution terms.
+- [ ] I compared normalized output with the retained official source.
+- [ ] This PR follows BLUEPRINT.md and introduces no unauthorized field or architecture.

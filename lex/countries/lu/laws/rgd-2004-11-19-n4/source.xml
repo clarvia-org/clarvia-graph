@@ -1,0 +1,1861 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2004-11-19" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MS"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2004-11-19" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2004-11-19" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2004-11-19</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MS</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/443</scl:jolux>
+						<scl:jolux scl:name="urgentEvent">0</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/870</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr</scl:jolux>
+						<scl:jolux scl:name="transpositionProcess">http://data.legilux.public.lu/event/etat/trans/2003/94</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2004-12-07</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2004/a192</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2004A28421</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2004-12-03</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr/docx</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="transposes">/eli/dir_ue/2003/94/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1975/11/12/n2/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1983/04/29/n2/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1992/09/22/n2/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 05/02/2019 : Règlement grand-ducal du 19 novembre 2004 relatif à la fabrication, la distribution et le courtage de médicaments.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1975/08/04/n4/jo</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1995/01/06/n4/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2004-192-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2004/a192/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2004-11-19-n4-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2004-192-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2004/a192/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2004/a192/fr/pdf/eli-etat-leg-memorial-2004-a192-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2004-12-07" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2006-10-21" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+				<eventRef date="2019-02-05" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+				<eventRef date="2019-02-05" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+				<eventRef date="2019-02-05" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+				<eventRef date="2019-02-05" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2019-02-05" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/01/13/a52/jo"/>
+						<destination/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2004/11/19/n4/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2019/01/13/a52/jo" id="rp2" showAs="Règlement grand-ducal du 13 janvier 2019 modifiant : 1° le règlement grand-ducal modifié du 15 décembre 1992 relatif à la mise sur le marché des médicaments ; 2° le règlement grand-ducal modifié du 19 novembre 2004 relatif à la fabrication, la distribution et le courtage de médicaments."/>
+				<passiveRef href="/eli/etat/leg/rgd/2018/05/09/a395/jo" id="rp3" showAs="Règlement grand-ducal du 9 mai 2018 modifiant le règlement grand-ducal modifié du 19 novembre 2004 relatif à la fabrication, la distribution et le courtage des médicaments."/>
+				<passiveRef href="/eli/etat/leg/rgd/2013/04/09/n1/jo" id="rp4" showAs="Règlement grand-ducal du 9 avril 2013 modifiant:  1) le règlement grand-ducal modifié du 15 décembre 1992 relatif à la mise sur le marché des médicaments;  2) le règlement grand-ducal modifié du 19 novembre 2004 concernant la fabrication de médicaments, les bonnes pratiques de fabrication de médicaments et les bonnes pratiques de fabrication de médicaments expérimentaux à usage humain."/>
+				<passiveRef href="/eli/etat/leg/rgd/2012/09/10/n3/jo" id="rp5" showAs="Règlement grand-ducal du 10 septembre 2012 modifiant le règlement grand-ducal modifié du 15 décembre 1992 relatif à la mise sur le marché des médicaments et le règlement grand-ducal modifié du 19 novembre 2004 concernant la fabrication de médicaments, les bonnes pratiques de fabrication de médicaments et les bonnes pratiques de fabrication de médicaments expérimentaux à usage humain."/>
+				<passiveRef href="/eli/etat/leg/rgd/2007/01/10/n1/jo" id="rp6" showAs="Règlement grand-ducal du 10 janvier 2007 modifiant aux fins de transposition de la directive 2005/28/CE du 8 avril 2005 fixant des principes et des lignes directrices détaillées relatifs à l'application de bonnes pratiques cliniques en ce qui concerne les médicaments expérimentaux à usage humain, ainsi que les exigences pour l'octroi de l'autorisation de fabriquer ou d'importer ces médicaments:  - le règlement grand-ducal du 19 novembre 2004 concernant la fabrication de médicaments, les bonnes pratiques de fabrications de médicaments et les bonnes pratiques de fabrications de médicaments expérimentaux à usage humain;  - le règlement grand-ducal du 30 mai 2005 relatif à l'application de bonnes pratiques cliniques dans la conduite d'essais cliniques de médicaments à usage humain."/>
+				<passiveRef href="/eli/etat/leg/rgd/2006/09/26/n1/jo" id="rp7" showAs="Règlement grand-ducal du 26 septembre 2006 modifiant:  - le règlement grand-ducal modifié du 15 décembre 1992 relatif à la mise sur le marché des médicaments,  - le règlement grand-ducal modifié du 15 janvier 1993 relatif à la mise sur le marché des médicaments vétérinaires,  - le règlement grand-ducal du 19 novembre 2004 concernant la fabrication de médicaments, les bonnes pratiques de fabrication de médicaments et les bonnes pratiques de fabrication de médicaments expérimentaux à usage humain."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2019-02-01|2019-01-13|RGD|52">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/01/13/a52/jo">Règlement grand-ducal du 13 janvier 2019 modifiant : 1° le règlement grand-ducal modifié du 15 décembre 1992 relatif à la mise sur le marché des médicaments ; 2° le règlement grand-ducal modifié du 19 novembre 2004 relatif à la fabrication, la distribution et le courtage de médicaments.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>
+					<mod class="mod-start" for="#pm4"/>Version consolidée applicable au 05/02/2019 : Règlement grand-ducal du 19 novembre 2004 relatif à la fabrication, la distribution et le courtage de médicaments.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_ier">
+				<num>Chapitre I<sup>er</sup>.</num>
+				<heading scl:separator=" -" scl:style-format="b"> Autorisation de fabrication de médicaments à usage humain ou vétérinaire</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_1er/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er. </scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>. </num>
+					<heading scl:style-format="b">Demande d’autorisation de fabrication</heading>
+					<alinea>
+						<content>
+							<p>Les indications que doit contenir la demande en obtention de l’autorisation de fabrication présentée conformément à l’article 3 de la <ref href="/eli/etat/leg/loi/1975/08/04/n4/jo" id="2c603d89-cf53-4bcb-a254-d8a89f11a410">loi du 4 août 1975</ref> concernant la fabrication et l’importation des médicaments sont les suivantes:</p>
+							<ol scl:symbol="1.">
+								<li>les noms, prénoms ou raison sociale, le domicile ou siège social du demandeur; </li>
+								<li>la désignation du ou des endroits où les opérations sont effectuées;</li>
+								<li>la nature de ces opérations;</li>
+								<li>la liste des médicaments qui seront fabriqués ainsi que le type de ces fabrications;</li>
+								<li>la description des locaux, de l’outillage industriel et de l’appareillage scientifique dont dispose le demandeur; il ajoutera un plan au 1/50e des ateliers, laboratoires et locaux servant à la fabrication et à la conservation des médicaments; </li>
+								<li>la qualification du personnel technique que le demandeur emploie.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La Division de la Pharmacie et des Médicaments s’assure qu’une copie de toute autorisation émise est transmise à l’Agence européenne des médicaments. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La Division de la Pharmacie et des Médicaments enregistre les informations prévues à l’alinéa 1 dans la banque de données visée à l’article 7-1, paragraphe 5.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_2/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2. </scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2. </num>
+					<heading scl:style-format="b">Pharmacien responsable de la fabrication</heading>
+					<alinea>
+						<content>
+							<p>Le pharmacien responsable de la fabrication prévu à l’article 4 de la <ref href="/eli/etat/leg/loi/1975/08/04/n4/jo" id="4002cec3-455d-409a-a867-bef00b07527c">loi du 4 août 1975</ref> concernant la fabrication et l’importation des médicaments au Grand-Duché de Luxembourg est tenu:</p>
+							<ol scl:symbol="1.">
+								<li>d’analyser ou de faire analyser sous sa surveillance effective les matières premières; </li>
+								<li>de surveiller la fabrication y compris le conditionnement et l’apposition des étiquettes;</li>
+								<li>de prendre toutes les mesures nécessaires pour éviter des substitutions ou des souillures des matières premières, des produits semi-fabriqués et des produits finis;</li>
+								<li>d’analyser ou de faire analyser sous sa surveillance effective le lot terminé;</li>
+								<li>de faire effectuer par un laboratoire agréé les contrôles et analyses pour lesquels il ne dispose pas de l’appareillage scientifique adéquat et pour lesquels le détenteur d’autorisation a reçu une dérogation du ministre ayant la Santé dans ses attributions, désigné ci-après par «le ministre»;</li>
+								<li>de tenir un document pour chaque lot de fabrication. Ce document reprendra notamment le nom du médicament, le numéro de lot, la composition, la quantité de matières premières utilisées avec le numéro de protocole d’analyse correspondant, la quantité fabriquée, la date du début et de la fin de fabrication. Ce document, qui doit être tenu à jour au fur et à mesure des opérations effectuées, accompagnera la fabrication du médicament jusques et y compris l’apposition des étiquettes légales et portera la signature du pharmacien responsable;</li>
+								<li>le pharmacien responsable consigne dans le document visé sub 6. les opérations et analyses de contrôle effectuées, ainsi que leurs résultats. II résume ces derniers par les mots «conforme» ou «non conforme» et signe ses conclusions;</li>
+								<li>
+									<p>le pharmacien responsable veille à ce qu’un échantillon représentatif soit prélevé de toutes les matières premières utilisées ainsi que des produits finis dont il atteste la conformité. Ces échantillons seront scellés et devront être suffisants pour en effectuer l’analyse.</p>
+									<p>En ce qui concerne le produit fini, l’échantillon devra être représentatif du lot de fabrication et sera constitué d’au moins un exemplaire du conditionnement tel qu’il est mis sur le marché. Les échantillons seront convenablement conservés et tenus à la disposition des pharmaciens-inspecteurs de la Direction de la Santé pendant la durée de validité du médicament et au maximum pendant cinq ans.</p>
+								</li>
+								<li>de s’assurer si le personnel employé par le détenteur de l’autorisation a la qualification requise pour effectuer les opérations qui lui sont imparties. </li>
+								<li>de respecter les principes et lignes directrices relatifs aux bonnes pratiques de fabrication des médicaments et d’utiliser seulement en tant que matières premières des substances actives fabriquées conformément aux lignes directrices détaillées relatives aux bonnes pratiques de fabrication des matières premières.<p>Au sens du présent règlement on entend par «substance active»: toute substance ou tout mélange de substances destiné à être utilisé pour la fabrication d’un médicament et qui, lorsqu’utilisé pour sa production, devient un composant actif dudit médicament exerçant une action pharmacologique, immunologique ou métabolique en vue de restaurer, corriger ou modifier des fonctions physiologiques, ou d’établir un diagnostic médical.</p>
+								</li>
+								<li>de s’assurer dans le cas de médicaments en provenance de pays tiers, même si la fabrication a été effectuée dans la Communauté, que chaque lot de fabrication importé a fait l’objet, dans un État membre, d’une analyse qualitative complète, d’une analyse quantitative d’au moins toutes les substances actives et de tous les autres essais ou vérifications nécessaires pour assurer la qualité des médicaments dans le respect des exigences retenues pour l’autorisation de mise sur le marché.</li>
+								<li> de veiller, dans le cas de médicaments destinés à être mis sur le marché dans l’Union européenne, à ce que les dispositifs de sécurité visés à l’article 10, paragraphe 1<sup>er</sup>, point o) du <ref href="/eli/etat/leg/rgd/1992/12/15/n1/jo" id="695de3de-01a9-4221-b63a-bdc483ad5a88">règlement grand-ducal modifié du 15 décembre 1992</ref> relatif à la mise sur le marché des médicaments, aient été apposés sur l’emballage.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_3/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3. </scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3. </num>
+					<heading scl:style-format="b">Obligations du détenteur d’autorisation</heading>
+					<alinea>
+						<content>
+							<p>Le détenteur d’une autorisation de fabrication est tenu: </p>
+							<ol scl:symbol="1.">
+								<li>de notifier sans retard au ministre par lettre recommandée à la poste l’identité et l’adresse du pharmacien qu’il désire engager, la date de son entrée en service ou de la cessation de ses fonctions;</li>
+								<li>de prendre toutes les dispositions utiles pour que le pharmacien responsable puisse assumer pleinement sa mission;</li>
+								<li>de ne pas livrer les médicaments fabriqués avant que la qualité et la conformité aux lois et règlements en aient été attestés par le pharmacien responsable dans le document prévu à l’article 2 sub 6 ou par un laboratoire agréé conformément à l’article 7 ci-après;</li>
+								<li>de veiller à ce que le médicament qu’il fournit soit convenablement conditionné et scellé de telle sorte que le conditionnement ou le récipient renfermant le médicament ne puisse être ouvert sans que le scellé soit endommagé de façon apparente.</li>
+								<li>d’informer immédiatement le ministre de la Santé et le titulaire de l’autorisation de mise sur le marché de toute information indiquant que les médicaments couverts par son autorisation de fabrication sont falsifiés ou soupçonnés de l’être, que ces produits soient distribués via la chaîne d’approvisionnement légale ou par des moyens illégaux, y compris la vente illégale au moyen de services de la société de l’information;</li>
+								<li>de vérifier que les fabricants, les importateurs ou les distributeurs auprès de qui il obtient des substances actives sont enregistrés auprès de l’autorité compétente de l’Etat membre dans lequel ils sont établis;</li>
+								<li>de vérifier l’authenticité et la qualité des substances actives et des excipients. Au sens du présent règlement on entend par «excipient»: tout composant d’un médicament, autre qu’une substance active et les matériaux d’emballage.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_4/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4. </scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4. </num>
+					<heading scl:style-format="b">Absence, remplacement et cessation d’activité du pharmacien responsable</heading>
+					<alinea>
+						<content>
+							<p>Le pharmacien responsable absent ou empêché sera remplacé par un autre pharmacien responsable agréé. Sauf dans le cas où le remplacement a été réglé au préalable dans la demande d’autorisation, la Direction de la Santé devra être immédiatement informée par lettre recommandée à la poste de la date du commencement et de la fin probable du remplacement.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Tout pharmacien remplaçant engage sa responsabilité pour les actes professionnels qu’il pose.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>A titre exceptionnel, le ministre peut accorder des dérogations ne dépassant pas 30 jours aux détenteurs d’autorisation qui justifieraient de l’impossibilité momentanée de se conformer aux dispositions prévues par l’article 4 de la <ref href="/eli/etat/leg/loi/1975/08/04/n4/jo" id="4c1b8a5a-cceb-4c2a-89cd-3a8f4c4191dc">loi du 4 août 1975</ref> précitée, pour cause de maladie ou d’indisponibilité prolongée du pharmacien responsable, à condition que le fabricant confie à un laboratoire agréé les contrôles de la qualité et de la conformité des médicaments prévus à l’article 2 ci-dessus.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le pharmacien responsable doit de même signaler au ministre, par lettre recommandée à la poste, toute cessation d’activité auprès d’un détenteur d’autorisation.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_5/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5. </scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5. </num>
+					<heading scl:style-format="b">Cumul des fonctions de détenteur d’autorisation et de pharmacien-responsable </heading>
+					<alinea>
+						<content>
+							<p>Le détenteur d’autorisation qui est lui-même pharmacien responsable peut exercer cette fonction dans sa propre entreprise. En ce cas il doit remplir les obligations qui s’y rapportent.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_6/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6. </scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6. </num>
+					<heading scl:style-format="b">Conservation des contrôles</heading>
+					<alinea>
+						<content>
+							<p>Le détenteur d’une autorisation de fabrication est tenu de conserver à la disposition des pharmaciens inspecteurs de la Direction de la Santé pendant 5 ans les documents relatifs aux contrôles visés à l’article 2 sub. 6.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7. </scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7. </num>
+					<heading scl:style-format="b">Laboratoire de contrôle agréé</heading>
+					<alinea>
+						<content>
+							<p>A la demande du détenteur de l’autorisation, le ministre peut permettre que les analyses des médicaments prévues à l’article 2 sub. 1 et 4 ci-dessus soient confiées à un laboratoire agréé, notamment quand le détenteur de l’autorisation ne dispose pas de l’appareillage nécessaire.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour être agréé par l’autorité compétente, le laboratoire doit:</p>
+							<ul scl:symbol="dash">
+								<li>disposer du matériel et des locaux appropriés; </li>
+								<li>être sous la direction effective d’un pharmacien occupé à temps plein;</li>
+								<li>disposer du personnel scientifique et des techniciens indispensables.</li>
+							</ul>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_7-1">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7_-1</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7_-1/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.-1.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num> Art. 7.-1.</num>
+					<heading scl:style-format="b">Inspections et contrôles.</heading>
+					<paragraph id="paragraph_35">
+						<num>1.</num>
+						<alinea>
+							<content>
+								<p>La Division de la Pharmacie et des Médicaments s’assure, par des inspections répétées, et, si nécessaire, par des inspections inopinées, ainsi que, s’il y a lieu, en demandant à un laboratoire officiel pour le contrôle des médicaments ou à un laboratoire désigné à cet effet d’effectuer des analyses sur des échantillons ou en ayant recours à tout expert dûment qualifié, que les prescriptions légales concernant les médicaments sont respectées.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Elle met également en place un système de surveillance prévoyant des inspections effectuées à une fréquence appropriée, en fonction du risque, dans les locaux des fabricants, des importateurs ou des distributeurs de substances actives établis sur son territoire, et un suivi effectif de ces inspections.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les pharmaciens-inspecteurs de la Division de la Pharmacie et des Médicaments peuvent aussi procéder à des inspections inopinées dans les locaux des fabricants de substances actives utilisées comme matières premières dans la fabrication de médicaments, des titulaires d’autorisation de mise sur le marché, des fabricants ou importateurs d’excipients, ou des courtiers en médicaments, lorsqu’ils considèrent qu’il y a des raisons de penser que les dispositions du présent règlement , y compris les principes et les lignes directrices de bonnes pratiques de fabrication ne sont pas respectés. Ces inspections peuvent également avoir lieu à la demande expresse du fabricant lui-même, à la demande d’un autre Etat membre, de la Commission ou de l’Agence européenne des médicaments.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Sans préjudice des pouvoirs conférés par d’autres dispositions légales, les pharmaciens-inspecteurs sont habilités à:</p>
+								<ol scl:start="1" scl:symbol="a)">
+									<li>procéder à des inspections des établissements commerciaux ou de fabrication de médicaments ou de substances actives ou d’excipients utilisées comme matières premières dans la fabrication des médicaments ainsi que des laboratoires chargés par le titulaire de l’autorisation de fabrication d’effectuer des contrôles;</li>
+									<li>prélever des échantillons notamment en vue d’analyses indépendantes par un laboratoire officiel pour le contrôle des médicaments ou par un laboratoire désigné à cet effet par le ministre de la Santé ou l’autorité compétente d’un autre Etat membre;</li>
+									<li>examiner tous les documents se rapportant à l’objet des inspections;</li>
+									<li>inspecter les locaux, les archives, les documents et le dossier permanent du système de pharmacovigilance des titulaires d’autorisations de mise sur le marché ou de toute entreprise chargée par le titulaire de l’autorisation de mise sur le marché de réaliser les activités visées au chapitre 5-1 du <ref href="/eli/etat/leg/rgd/1992/12/15/n1/jo" id="73f7289c-5f8a-4453-887d-85a7a820ef16">règlement grand-ducal du 15 décembre 1992</ref> relatif à la mise sur le marché des médicaments.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_36">
+						<num>2.</num>
+						<alinea>
+							<content>
+								<p>Après chacune des inspections visées au paragraphe 1<sup>er</sup>, les pharmaciens-inspecteurs compétents font rapport sur le respect par le fabricant des principes et des lignes directrices de bonnes pratiques de fabrication et de bonnes pratiques de distribution ou, le cas échéant, des exigences liées à la pharmacovigilance. La teneur de ces rapports est communiquée au fabricant ou au titulaire de l’autorisation de mise sur le marché qui a fait l’objet de l’inspection, qui peut émettre ses observations y relatives par écrit avant l’adoption définitive du rapport. Ce rapport peut sur demande motivée, être envoyé aux autorités compétentes d’un autre État membre ou à l’Agence par voie électronique.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_37">
+						<num>3.</num>
+						<alinea>
+							<content>
+								<p>Sans préjudice des éventuels accords conclus entre la Communauté et un pays tiers, le ministre peut demander à un fabricant établi dans un pays tiers de se soumettre à une inspection visée au paragraphe 1.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_38">
+						<num>4.</num>
+						<alinea>
+							<content>
+								<p>Dans les quatre-vingt-dix jours suivant une inspection visée au paragraphe 1, un certificat de bonnes pratiques de fabrication est délivré à un fabricant si l’inspection aboutit à la conclusion que ce fabricant respecte les principes et lignes directrices de bonnes pratiques de fabrication prévus par la législation communautaire.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Si les inspections sont effectuées dans le cadre de la procédure de certification aux monographies de la pharmacopée européenne, un certificat de conformité est établi, s’il y a lieu.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_39">
+						<num>5.</num>
+						<alinea>
+							<content>
+								<p>La Division de la Pharmacie et des Médicaments consigne les certificats de bonnes pratiques de fabrication délivrés, ainsi que les constats de non-respect des prescriptions légales et/ou des principes et lignes directrices de bonnes pratiques de fabrication ou de bonne distribution prévus par la législation de l’Union dans la banque de données communautaire tenue par l’Agence, au nom de la Communauté.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_40">
+						<num>6.</num>
+						<alinea>
+							<content>
+								<p>Si l’inspection visée au paragraphe 1<sup>er</sup>, point d), conclut que le titulaire de l’autorisation de mise sur le marché ne respecte pas le système de pharmacovigilance tel que décrit dans le dossier permanent du système de pharmacovigilance et les dispositions du chapitre 5.-1, du <ref href="/eli/etat/leg/rgd/1992/12/15/n1/jo" id="7e70cd9a-a320-4e10-b123-50f7df71220b">règlement grand-ducal du 15 décembre 1992</ref> relatif à la mise sur le marché des médicaments, la Division de la Pharmacie et des Médicaments signale ces défaillances au titulaire en question en lui donnant la possibilité de présenter des observations.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les autres États membres, l’Agence et la Commission en sont informés.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_7-1bis">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-1bis</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-1bis/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7-1bis.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7-1bis.</num>
+					<heading scl:style-format="b">Notification de fabrication, d’importation ou de distribution de substances actives</heading>
+					<paragraph id="paragraph_41">
+						<num>1.</num>
+						<alinea>
+							<content>
+								<p>Les importateurs, les fabricants et les distributeurs de substances actives qui sont établis au Luxembourg enregistrent leur activité auprès du ministre de la Santé.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_42">
+						<num>2.</num>
+						<alinea>
+							<content>
+								<p>Le formulaire d’enregistrement comprend les renseignements suivants:</p>
+								<ol scl:start="1" scl:symbol="a)">
+									<li>le nom, la raison sociale et l’adresse permanente;</li>
+									<li>les substances actives à importer, fabriquer ou distribuer; </li>
+									<li>les caractéristiques des locaux et des équipements techniques utilisés dans le cadre de leur activité.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_43">
+						<num>3.</num>
+						<alinea>
+							<content>
+								<p>Les personnes visées au paragraphe 1<sup>er</sup> transmettent le formulaire d’enregistrement au ministre de la Santé au moins soixante jours avant la date prévue pour le commencement de leur activité.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_44">
+						<num>4.</num>
+						<alinea>
+							<content>
+								<p>Le ministre de la Santé peut, sur la base d’une évaluation du risque, décider de procéder à une inspection. Si l’autorité compétente notifie au requérant, dans les soixante jours suivant la réception du formulaire d’enregistrement, qu’une inspection sera effectuée, le requérant ne peut pas commencer son activité avant que le ministre de la Santé ne lui ait notifié qu’il peut le faire. Si, dans les soixante jours suivant la réception du formulaire d’enregistrement, le ministre de la Santé n’a pas notifié au requérant qu’une inspection sera effectuée, le requérant peut commencer son activité.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_45">
+						<num>5.</num>
+						<alinea>
+							<content>
+								<p>Les personnes visées au paragraphe 1<sup>er</sup> communiquent annuellement au ministre de la Santé un inventaire des changements qui ont eu lieu concernant les renseignements fournis dans le formulaire d’enregistrement. Tout changement susceptible d’avoir une incidence sur la qualité ou la sécurité des substances actives fabriquées, importées ou distribuées doit être immédiatement notifié.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_46">
+						<num>6.</num>
+						<alinea>
+							<content>
+								<p>Les personnes visées au paragraphe 1<sup>er</sup> qui avaient commencé leur activité avant le 2 janvier 2013 transmettent le formulaire d’enregistrement au ministre de la Santé au plus tard le 2 mars 2013.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_47">
+						<num>7.</num>
+						<alinea>
+							<content>
+								<p>Le ministre de la Santé enregistre les renseignements donnés conformément au paragraphe 2 du présent article dans une banque de données de l’Union européenne, gérée par l’Agence européenne des médicaments instituée par le <ref href="/eli/reg_ue/2004/726/jo" id="536ec097-689a-4850-8920-428c05415967">règlement (CE) n° 726/2004</ref>, au nom de l’Union. </p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_7-1ter">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-1ter</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-1ter/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7-1ter.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7-1ter.</num>
+					<heading scl:style-format="b">Médicaments qui ne sont pas destinés à être mis sur le marché de l’Union et qui présentent un risque de falsification.</heading>
+					<paragraph id="paragraph_48">
+						<alinea>
+							<content>
+								<p>
+									<b>1. </b>Les médicaments qui sont introduits dans l’Union européenne mais ne sont pas destinés à être mis sur le marché de l’Union ne sont pas mis en circulation s’il y a suffisamment d’éléments permettant de soupçonner une falsification de ces médicaments. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_49">
+						<num>2.</num>
+						<alinea>
+							<content>
+								<p>Les critères à prendre en considération et les vérifications à effectuer lors de l’évaluation de la falsification potentielle des médicaments qui sont introduits dans l’Union mais qui ne sont pas destinés à être mis sur le marché sont publiés par la Commission européenne au Journal officiel de l’Union européenne et applicables au Luxembourg.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_ibis">
+				<num>Chapitre I bis</num>
+				<heading scl:separator=" – " scl:style-format="b">Autorisation de fabrication ou d’importation de médicaments expérimentaux à usage humain</heading>
+				<article id="chapter_1bis__art_7-1" wId="chapter_1bis__art_7-1">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-1</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-1/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7-1.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7-1.</num>
+					<heading scl:style-format="b">Demande d’autorisation</heading>
+					<paragraph id="paragraph_50">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>La demande d’autorisation doit spécifier:</p>
+								<ol scl:start="1" scl:symbol="a)">
+									<li>les types de médicaments et les formes pharmaceutiques à fabriquer ou importer. Sont visés par la désignation «types de médicaments»: les produits sanguins, produits immunologiques, produits de thérapie cellulaire, produits de thérapie génique, produits biotechnologiques, produits d’origine humaine ou animale, produits à base de plantes, produits homéopathiques, produits radiopharmaceutiques et produits contenant des substances actives chimiques;</li>
+									<li>les opérations de fabrication ou d’importation concernées; </li>
+									<li>le cas échéant notamment en cas d’inactivation d’agents viraux ou non conventionnels, le procédé de fabrication; </li>
+									<li>l’endroit où les médicaments doivent être fabriqués ou disposer, pour leur fabrication ou leur importation, de locaux, de l’équipement technique et de possibilités de contrôle appropriés et suffisants. </li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_51">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le demandeur fournit à l’appui de sa demande des pièces justificatives suffisantes. Les agents de la Direction de la Santé chargés par le ministre de l’enquête administrative contrôlent la conformité des renseignements fournis avant toute autorisation.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_7-2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-2/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7-2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7-2.</num>
+					<heading scl:style-format="b">Pharmacien responsable</heading>
+					<paragraph id="paragraph_52">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le demandeur doit documenter qu’il dispose en permanence d’au moins un pharmacien responsable. Les articles 3 et 4 ci-avant sont applicables par analogie.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_53">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le pharmacien responsable doit veiller:</p>
+								<ol scl:start="1" scl:symbol="a)">
+									<li>dans le cas de médicaments expérimentaux fabriqués au Luxembourg, que chaque lot de médicament a été fabriqué et contrôlé conformément aux exigences du chapitre deux ci-après, au dossier de spécification du produit et à la demande d’autorisation;</li>
+									<li>dans le cas de médicaments expérimentaux fabriqués dans un pays tiers, que chaque lot de fabrication a été fabriqué et contrôlé selon des normes de bonnes pratiques de fabrication au moins équivalentes à celles prévues par la législation en matière de fabrication de médicaments et de médicaments expérimentaux, conformément au dossier de spécification du produit et que chaque lot de fabrication a été contrôlé conformément à la demande d’autorisation;</li>
+									<li>dans le cas d’un médicament expérimental qui est un médicament de comparaison en provenance de pays tiers et ayant une autorisation de mise sur le marché, lorsque la documentation attestant que chaque lot de fabrication a été fabriqué selon des normes de bonnes pratiques de fabrication au moins équivalentes à celles précitées ne peut être obtenue, que chaque lot de fabrication a fait l’objet de toutes les analyses, essais ou vérifications pertinents et nécessaires pour confirmer sa qualité conformément à la demande d’autorisation.<p>Si les points a), b) ou c) sont respectés dans un autre Etat membre, les médicaments expérimentaux sont dispensés des contrôles ultérieurs lorsqu’ils sont importés au Luxembourg, accompagnés des certificats de libération des lots signés par la personne qualifiée.</p>
+									</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_54">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Dans tous les cas, le pharmacien responsable doit attester dans un registre ou un document équivalent, que chaque lot de fabrication répond aux dispositions du présent article. Ledit registre ou document équivalent doit être tenu à jour au fur et à mesure des opérations effectuées et mis à la disposition de la Direction de la Santé pendant un période de 5 ans.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_55">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>L’autorisation est délivrée avant l’écoulement d’un délai de quatre-vingt-dix jours depuis la réception d’une demande jugée valable. Ce délai est suspendu lorsque des précisions complémentaires sont demandées.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_7-3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-3/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7-3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7-3.</num>
+					<heading scl:style-format="b">Obligations associées à l’autorisation</heading>
+					<paragraph id="paragraph_56">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>L’autorisation peut être assortie, pour garantir le respect des conditions du présent chapitre, de certaines obligations imposées soit à l’occasion de son octroi, soit postérieurement à sa délivrance. Elle s’applique uniquement aux locaux indiqués dans la demande et aux types de médicaments et formes pharmaceutiques spécifiés dans la même demande.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_57">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le titulaire de l’autorisation doit au moins respecter les obligations suivantes: </p>
+								<ol scl:start="1" scl:symbol="a)">
+									<li>disposer du personnel répondant aux exigences légales en matière à la fois de fabrication et de contrôle;</li>
+									<li>ne céder les médicaments expérimentaux/autorisés qu’en conformité avec la législation nationale ou le cas échéant celle de l’Etat membre de destination concerné; </li>
+									<li>informer préalablement le ministre de toute modification qu’il désirerait apporter aux renseignements fournis à l’appui de la demande;</li>
+									<li>permettre aux médecins et pharmaciens-inspecteurs de la Direction de la Santé et aux agents et experts spécialement désignés par le ministre d’accéder à ses locaux à tout moment; </li>
+									<li>respecter les principes et lignes directrices de bonnes pratiques de fabrication des médicaments et les lignes directrices détaillées conformes aux principes visés dans la version la plus récente disponible, publiée par la Commission dans le document «La réglementation des médicaments dans l’Union européenne». La Direction de la Santé, Division de la Pharmacie et des Médicaments, tient à disposition du demandeur ces lignes directrices détaillées.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_7-4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_7-4/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7-4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7-4.</num>
+					<heading scl:style-format="b">Suspension ou révocation de l’autorisation </heading>
+					<alinea>
+						<content>
+							<p>Le ministre peut suspendre ou révoquer l’autorisation, en totalité ou en partie, si le titulaire de l’autorisation cesse, à un moment quelconque, de satisfaire aux exigences applicables.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_ii">
+				<num>Chapitre II.</num>
+				<heading scl:separator="- " scl:style-format="b">Principes et lignes directrices de bonnes pratiques de fabrication concernant les substances actives, les médicaments et médicaments expérimentaux à usage humain</heading>
+				<article id="art_8">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_8</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_8/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 8.</num>
+					<heading scl:style-format="b">Champ d’application</heading>
+					<alinea>
+						<content>
+							<p>Le présent chapitre établit les principes et lignes directrices des bonnes pratiques de fabrication pour les médicaments et pour les médicaments expérimentaux à usage humain.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_9">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_9</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_9/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 9.</num>
+					<heading scl:style-format="b">Définitions</heading>
+					<alinea>
+						<content>
+							<p>Au sens du présent chapitre on entend par:</p>
+							<ul scl:symbol="dash">
+								<li>«personne qualifiée»: le pharmacien responsable de la fabrication ou l’investigateur responsable d’un essai clinique de médicaments à usage humain; </li>
+								<li>«assurance de qualité pharmaceutique»: la somme totale des mesures d’organisation prises afin de garantir que les médicaments et/ou les médicaments expérimentaux sont de la qualité requise pour l’usage auquel ils sont destinés; </li>
+								<li>bonnes pratiques de fabrication: l’élément d’assurance de la qualité qui garantit que les médicaments sont fabriqués, importés et contrôlés de façon cohérente selon les normes de qualité adaptées à l’usage auquel ils sont destinés;</li>
+								<li>«procédure d’insu»: le camouflage délibéré de l’identité d’un médicament expérimental conformément aux instructions du promoteur;</li>
+								<li>«levée de l’insu»: la communication de l’identité d’un médicament camouflé.</li>
+								<li>fabricant: toute personne se livrant à des activités de fabrication pour lesquelles l’autorisation visée à l’article 3 la <ref href="/eli/etat/leg/loi/1975/08/04/n4/jo" id="180deb60-a3be-4053-8cb8-cfa84194544f">loi modifiée du 4 août 1975</ref> concernant la fabrication et l’importation de médicaments est exigée;</li>
+								<li>système de qualité pharmaceutique: la somme totale des mesures d’organisation prises afin de garantir que les médicaments sont de la qualité requise pour l’usage auquel ils sont destinés.</li>
+							</ul>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_10">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_10</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_10/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 10.</num>
+					<heading scl:style-format="b">Inspections</heading>
+					<paragraph id="paragraph_1">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>La Direction de la santé s’assure, par des inspections répétées telles que visées à l’article 7.-1., que les fabricants autorisés conformément à l’article 3 de la <ref href="/eli/etat/leg/loi/1975/08/04/n4/jo" id="0e9d4e5e-1f76-4f17-b4ad-1c07cbbb7cf4">loi modifiée du 4 août 1975</ref> concernant la fabrication et l’importation des médicaments respectent les principes et lignes directrices relatifs aux bonnes pratiques de fabrication établis au présent chapitre.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_2">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Pour l’interprétation des principes et lignes directrices relatifs aux bonnes pratiques de fabrication, les fabricants et les autorités compétentes prennent en compte les lignes directrices détaillées visées à l’article 11. Dans le cas des médicaments de thérapie innovante, les lignes directrices sur les bonnes pratiques de fabrication spécifiques aux médicaments de thérapie innovante visées à l’article 5 du <ref href="/eli/reg_ue/2007/1394/jo" id="a97793e2-bbed-4df6-acc0-4cc16a291098">règlement (CE) n° 1394/2007</ref> du Parlement européen et du Conseil du 13 novembre 2007 concernant les médicaments de thérapie innovante et modifiant la <ref href="/eli/dir_ue/2001/83/jo" id="8f0c6356-7dd6-405b-a100-488740a71d9b">directive 2001/83/CE</ref> ainsi que le <ref href="/eli/reg_ue/2004/726/jo" id="f74a3ca2-c8fc-4c9d-8719-69742b7667d1">règlement (CE) n° 726/2004</ref> sont prises en compte.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_3">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>La Direction de la santé établit et applique lors de l’exécution des inspections un système de qualité correctement conçu auquel se conforment le personnel et l’encadrement des pharmaciens-inspecteurs. Le système de qualité est actualisé si nécessaire.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_11">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_11</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_11/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 11.</num>
+					<heading scl:style-format="b">Conformité avec les bonnes pratiques de fabrication</heading>
+					<paragraph id="paragraph_4">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le fabricant s’assure que les opérations de fabrication sont réalisées conformément aux bonnes pratiques de fabrication et à l’autorisation de fabrication.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le fabricant utilise seulement des substances actives fabriquées conformément aux principes de bonnes pratiques de fabrication des substances actives et distribuées conformément aux bonnes pratiques de distribution des substances actives. A cette fin, le fabricant vérifie que le fabricant et les distributeurs des substances actives respectent les bonnes pratiques de fabrication et de distribution en réalisant des audits sur les sites de fabrication et de distribution du fabricant et des distributeurs des substances actives. Le fabricant procède à cette vérification soit par lui-même soit, sans préjudice des responsabilités qui lui incombent en vertu du présent règlement, par l’intermédiaire d’une entité agissant en son nom, par contrat.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le fabricant veille à ce que les excipients soient appropriés pour une utilisation dans des médicaments en déterminant quelles sont les bonnes pratiques de fabrication appropriées. Cette détermination est effectuée sur la base d’une évaluation formalisée du risque, conformément aux lignes directrices de la Commission européenne applicables en la matière. Cette évaluation du risque tient compte des exigences imposées par d’autres systèmes de qualité appropriés, ainsi que de la source et de l’utilisation prévue des excipients, et de précédents cas de défauts de qualité. Le titulaire de l’autorisation de fabrication veille à ce que les bonnes pratiques de fabrication appropriées ainsi déterminées soient appliquées. Le titulaire de l’autorisation de fabrication documente les mesures prises en vertu du présent alinéa.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les principes et lignes directrices de bonnes pratiques de fabrication et de distribution pour les substances actives et les lignes directrices relatives à l’évaluation formalisée du risque visant à déterminer les bonnes pratiques de fabrication appropriées pour les excipients visées à l’alinéa 1 sont publiés par la Commission européenne au Journal officiel de l’Union européenne et applicables au Luxembourg.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les dispositions prévues aux alinéas 1 à 4 s’appliquent également aux médicaments destinés uniquement à l’exportation.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Pour les médicaments importés de pays tiers, la Direction de la santé s’assure qu’ils ont été fabriqués selon des normes au moins équivalentes aux normes de bonnes pratiques de fabrication établies dans l’Union européenne et par des fabricants dûment autorisés.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_5">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Lorsque les médicaments et les médicaments expérimentaux sont importés à partir de pays tiers, l›importateur s›assure que les médicaments ont été fabriqués conformément à des normes au moins équivalentes aux bonnes pratiques de fabrication établies par la Communauté.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En outre, un importateur de médicaments s›assure que ceux-ci ont été fabriqués par des fabricants dûment autorisés. Un importateur de médicaments expérimentaux s›assure que ceux-ci ont été fabriqués par un fabricant notifié aux autorités compétentes et accepté par elles à cette fin.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_12">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_12</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_12/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 12.</num>
+					<heading scl:style-format="b">Respect de l’autorisation de mise sur le marché</heading>
+					<paragraph id="paragraph_6">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le fabricant s’assure que toutes les opérations de fabrication de médicaments soumis à une autorisation de mise sur le marché sont réalisées conformément à l’information fournie dans la demande d’autorisation de mise sur le marché acceptée par les autorités compétentes.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dans le cas de médicaments expérimentaux, le fabricant s’assure que toutes les opérations de fabrication sont réalisées conformément à l’information donnée par le promoteur en application de la réglementation applicable en matière d’essais cliniques. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_7">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le fabricant révise régulièrement ses méthodes de fabrication à la lumière des progrès scientifiques et techniques et de la mise au point du médicament expérimental.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Si une modification du dossier d’autorisation de mise sur le marché ou une modification de l’autorisation requise en vertu de la réglementation applicable en matière d’essais cliniques est nécessaire, la demande de modification est soumise aux autorités compétentes.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_13">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_13</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_13/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 13.</num>
+					<heading scl:style-format="b">Système de qualité pharmaceutique</heading>
+					<alinea>
+						<content>
+							<p>Le fabricant établit, applique et entretient un système de qualité pharmaceutique efficace, impliquant la participation active de la direction et du personnel des différents services concernés.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_14">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_14</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_14/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 14.</num>
+					<heading scl:style-format="b">Personnel </heading>
+					<paragraph id="paragraph_8">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le fabricant est tenu d’avoir à sa disposition, sur chaque site de fabrication ou d’importation, un personnel en nombre suffisant et possédant les compétences et les qualifications appropriées pour atteindre l’objectif du système de qualité pharmaceutique.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_9">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les obligations des membres du personnel de direction et d’encadrement, y compris des personnes qualifiées, responsables de la mise en oeuvre des bonnes pratiques de fabrication, sont définies dans des descriptions des tâches. Les relations hiérarchiques de ces personnes sont définies dans un organigramme. Les organigrammes et les descriptions des tâches sont approuvés suivant les procédures internes du fabricant.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_10">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le personnel visé au paragraphe 2 est investi de l’autorité nécessaire pour exercer correctement ses responsabilités.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_11">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Le personnel reçoit initialement puis de façon répétée une formation, dont l’efficacité est vérifiée, couvrant en particulier les aspects théoriques et pratiques du concept d’assurance de la qualité et de bonnes pratiques de fabrication et comprenant, le cas échéant, les exigences particulières pour la fabrication de médicaments expérimentaux. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_12">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Des programmes d’hygiène adaptés aux activités sont établis et observés. Ils comportent, en particulier, des procédures relatives à la santé, à l’hygiène et à l’habillement du personnel.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_15">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_15</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_15/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 15.</num>
+					<heading scl:style-format="b">Locaux et équipements</heading>
+					<paragraph id="paragraph_13">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les locaux et les équipements de fabrication sont implantés, conçus, construits, adaptés et entretenus en fonction des opérations pour lesquelles ils sont destinés.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_14">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les locaux et les équipements de fabrications sont disposés, conçus et exploités de manière à réduire à un minimum le risque d’erreur et à permettre un nettoyage et un entretien efficaces pour éviter toute contamination, contamination croisée et, en règle générale, tout effet nocif sur la qualité du produit.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_15">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les locaux, le matériel et l’appareillage destinés à la fabrication, au transport et à la conservation des matières premières, produits semi-fabriqués et produits finis sont disposés, conçus et exploités de manière à ce qu’ils ne puissent pas altérer la nature de ceux-ci.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_16">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les locaux et les équipements destinés à être utilisés pour des opérations de fabrication qui sont décisives pour la qualité des produits sont soumis à des conditions et à une homologation appropriées. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_17">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Pendant le cours des opérations autorisées les locaux ne peuvent servir à d’autres fins.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_16/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<heading scl:style-format="b">Documentation</heading>
+					<paragraph id="paragraph_18">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Tout fabricant met en place et maintient un système de documentation sur la base des spécifications, des formules de fabrication, des instructions de fabrication et de conditionnement, des procédures et des enregistrements couvrant les différentes opérations de fabrication effectuées. Les documents sont clairs, exempts d’erreurs et tenus à jour. Le fabricant dispose de procédures préétablies relatives aux opérations et aux conditions générales de fabrication et de documents particuliers à la fabrication de chaque lot. Cet ensemble de documents permet de retracer l’histoire de chaque lot fabriqué et des modifications apportées au cours de la mise au point d’un médicament expérimental.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dans le cas d’un médicament, les documents relatifs à un lot sont conservés au moins un an après la date de péremption du lot concerné et au moins cinq ans après l’attestation visée à l’article 2 du présent règlement si ce délai est plus long.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dans le cas d’un médicament expérimental, les documents relatifs à un lot sont conservés au moins cinq ans après l’achèvement ou l’interruption formelle du dernier essai clinique durant lequel le lot a été utilisé. Le promoteur ou le titulaire de l’autorisation de mise sur le marché, s’il s’agit de deux personnes différentes, est chargé de veiller à ce que les documents soient conservés comme exigé pour l’autorisation de mise sur le marché, conformément à la réglementation afférente, s’ils sont requis pour une autorisation ultérieure de mise sur le marché.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_19">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Lorsque l’usage de documents écrits est remplacé par des systèmes de traitement électroniques, photographiques ou autres, le fabricant doit d’abord valider les systèmes en prouvant que les données seront correctement conservées pendant la période envisagée. Les données conservées de cette façon sont facilement restituées de façon lisible et transmises sur demande aux autorités compétentes. Les données mémorisées sur support électronique sont protégées par des méthodes telles que la réalisation de copies de secours et le transfert sur un autre système de mémorisation de façon à ce qu’elles ne risquent pas d’être perdues ou endommagées, et une piste de vérification est tenue à jour.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_17/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 17.</num>
+					<heading scl:style-format="b">Production </heading>
+					<paragraph id="paragraph_20">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les différentes opérations de production sont réalisées conformément à des instructions et procédures préétablies et dans le respect des bonnes pratiques de fabrication. Des moyens suffisants et adaptés sont disponibles pour effectuer les contrôles en cours de fabrication. Tous les écarts dans le procédé et tous les défauts dans le produit sont documentés et font l’objet d’investigations approfondies.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_21">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Des mesures appropriées à caractère technique et/ou organisationnel sont prises pour éviter les contaminations croisées et les substitutions. Dans le cas des médicaments expérimentaux, un soin particulier est apporté à la manipulation des produits durant et après toute opération de la procédure d’insu.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_22">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Dans le cas des médicaments, toute fabrication nouvelle ou modification importante d’un procédé de fabrication d’un médicament est validée. Les phases critiques des procédés de fabrication sont régulièrement revalidées.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_23">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Dans le cas des médicaments expérimentaux, le procédé de fabrication est validé dans son intégralité dans la mesure où cela est nécessaire, en prenant en compte le stade de la mise au point du produit. Au moins les étapes critiques du procédé, par exemple, la stérilisation, sont validées. Toutes les étapes de la conception et de la mise au point du procédé de fabrication sont intégralement documentées.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_18">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_18</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_18/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 18.</num>
+					<heading scl:style-format="b">Contrôle de la qualité</heading>
+					<paragraph id="paragraph_24">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le fabricant établit et maintient un système de contrôle de la qualité placé sous l’autorité d’une personne possédant les qualifications requises et indépendante de la production.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Cette personne a à sa disposition ou peut accéder à un ou plusieurs laboratoires de contrôle de la qualité possédant les effectifs et les équipements nécessaires pour procéder à l’examen et aux essais nécessaires des matières de base, des matériaux d’emballage et aux essais des produits intermédiaires et finis. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_25">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Dans le cas des médicaments, y compris ceux importés de pays tiers, le recours à des laboratoires externes peut être autorisé conformément à l’article 7 du présent règlement.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dans le cas des médicaments expérimentaux, le promoteur doit veiller à ce que le laboratoire externe respecte l’autorisation obtenue en vertu de la réglementation applicable en matière d’essais cliniques. En cas d’importation de pays tiers, le contrôle analytique n’est pas obligatoire.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_26">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Au cours du contrôle final du produit fini avant sa libération en vue de sa vente ou de sa distribution ou de son utilisation dans des essais cliniques, le système de contrôle de la qualité prend en compte, en plus des résultats d’analyses, des informations essentielles comme les conditions de production, les résultats des contrôles effectués pendant le processus, l’examen des documents de fabrication et la conformité du produit à ces spécifications, y compris l’emballage final fini.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_27">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Des échantillons de chaque lot de médicaments finis sont conservés au moins un an après la date de péremption. Dans le cas d’un médicament expérimental, des échantillons suffisants de chaque lot de produits formulés en vrac et des principaux éléments de l’emballage utilisé pour chaque lot de produits finis sont conservés pendant au moins deux années après l’achèvement ou l’interruption officielle du dernier essai clinique dans lequel le lot a été utilisé si ce délai est plus long.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Des échantillons des matières de base, autres que des solvants, des gaz et de l’eau, utilisées dans le processus de fabrication sont conservés pendant au moins deux années après la libération du produit.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Cette période peut être raccourcie si la période de stabilité de la matière, indiquée dans la spécification correspondante, est plus courte. Tous ces échantillons sont conservés à la disposition des autorités compétentes.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>D’autres conditions peuvent être définies, en accord avec la Direction de la Santé pour l’échantillonnage et la conservation de certaines matières de base et de certains produits fabriqués individuellement ou en petites quantités, ou lorsque leur stockage pourrait poser des problèmes particuliers.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_18bis">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_18bis</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_18bis/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18bis.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 18bis.</num>
+					<heading scl:style-format="b">Opérations externalisées</heading>
+					<paragraph id="paragraph_58">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Toute opération de fabrication ou d’importation, ou liée à la fabrication ou à l’importation, qui est externalisée fait l’objet d’un contrat écrit.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_59">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le contrat visé au paragraphe premier définit clairement les obligations de chaque partie, notamment les bonnes pratiques de fabrication à suivre par le contractant, ainsi que la façon dont la personne qualifiée visée à l’article 4 de la <ref href="???" scl:verify="true">loi modifiée du 4 avril 1975</ref> concernant la fabrication et l’importation de médicaments, responsable de la certification de chaque lot, doit exercer ses responsabilités.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_60">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Un contractant ne sous-traite pas lui-même tout ou partie du travail qui lui a été confié en vertu du contrat sans l’autorisation écrite du donneur d’ordre.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_61">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Le cocontractant respecte les principes et lignes directrices des bonnes pratiques de fabrication applicables aux opérations concernées et se soumet aux inspections des autorités compétentes prévues à l’article 10.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_19">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_19</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_19/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 19.</num>
+					<heading scl:style-format="b">Contrat d’entreprise</heading>
+					<paragraph id="paragraph_28">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Toute opération de fabrication, ou liée à la fabrication, qui est réalisée sous contrat, fait l’objet d’un contrat écrit. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_29">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le contrat définit clairement les obligations de chaque partie et notamment les bonnes pratiques de fabrication à suivre par le contractant et la façon dont la personne qualifiée responsable de la certification de chaque lot doit exercer ses responsabilités.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_30">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Un contractant ne sous-traite pas lui-même tout ou partie du travail qui lui a été confié en vertu du contrat sans y avoir été autorisé par le donneur d’ordre.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_31">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Le contractant respecte les principes et lignes directrices des bonnes pratiques de fabrication qui le concernent et se soumet aux inspections effectuées par les pharmaciens-inspecteurs de la Direction de la Santé.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_20">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_20</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_20/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 20.</num>
+					<heading scl:style-format="b">Réclamations, rappel de produits et levée d’insu d’urgence</heading>
+					<paragraph id="paragraph_32">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Dans le cas de médicaments bénéficiant d’une autorisation de mise sur le marché, le fabricant met en oeuvre un système d’enregistrement et de traitement des réclamations ainsi qu’un système efficace pour rappeler rapidement et à tout moment les médicaments présents dans le circuit de distribution. Toute réclamation concernant un défaut est enregistrée et étudiée par le fabricant. Le fabricant informe la Direction de la Santé de tout défaut qui pourrait être à l’origine d’un rappel de médicament ou d’une restriction anormale de l’offre et, dans toute la mesure du possible, il indique les pays de destination.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Tout rappel par le fabricant est à notifier à la Direction de la Santé, en indiquant les raisons du rappel si ces raisons concernent l’efficacité du médicament ou la protection de la santé publique. La Direction de la Santé en informe l’agence européenne pour l’évaluation des médicaments, ainsi que l’Organisation mondiale de la santé, s’il y a lieu.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_33">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Dans le cas de médicaments expérimentaux, le fabricant, en collaboration avec le promoteur, met en oeuvre un système d’enregistrement et de traitement des réclamations ainsi qu’un système efficace pour rappeler rapidement et à tout moment des médicaments expérimentaux qui sont déjà entrés dans le circuit de distribution. Le fabricant enregistre et examine toute réclamation concernant un défaut et informe l’autorité compétente de tout défaut qui pourrait être à l’origine d’un rappel de médicament ou d’une restriction anormale de l’offre.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Pour les médicaments expérimentaux, il relève tous les sites d’essais et, dans toute la mesure du possible, il indique les pays de destination.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dans le cas d’un médicament expérimental pour lequel une autorisation de mise sur le marché a été délivrée, le fabricant du médicament expérimental, en collaboration avec le promoteur, informe le titulaire de l’autorisation de mise sur le marché de tout défaut qui pourrait avoir trait au médicament autorisé.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_34">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le promoteur met en oeuvre une procédure d’urgence d’identification rapide des produits mis en insu lorsque cela est nécessaire pour un rappel rapide visé au paragraphe 2. Le promoteur veille à ce que la procédure ne révèle l’identité du produit mis en insu qu’en cas de stricte nécessité.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_21">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_21</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_21/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 21.</num>
+					<heading scl:style-format="b">Auto-inspection</heading>
+					<alinea>
+						<content>
+							<p>Le fabricant procède à des auto-inspections répétées dans le cadre du système d'assurance de la qualité en vue de contrôler la mise en œuvre et le respect des bonnes pratiques de fabrication et de proposer les mesures correctives nécessaires. Il est tenu un registre de ces inspections et de toute mesure corrective </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22.</num>
+					<heading scl:style-format="b">Étiquetage</heading>
+					<alinea>
+						<content>
+							<p>Le fabricant procède à des auto-inspections répétées dans le cadre du système d’assurance de la qualité en vue de contrôler la mise en oeuvre et le respect des bonnes pratiques de fabrication et de proposer les mesures correctives nécessaires. Il est tenu un registre de ces inspections et de toute mesure corrective </p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_iibis">
+				<num>Chapitre IIbis.</num>
+				<heading scl:separator="- " scl:style-format="b">Distribution en gros et courtage de médicaments</heading>
+				<article id="art_22bis">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22bis</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22bis/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22bis.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22bis.</num>
+					<paragraph id="paragraph_62">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Tout distributeur autre que le titulaire de l’autorisation de mise sur le marché qui importe un médicament d’un autre Etat membre de l’Union européenne notifie son intention d’importer ce médicament au titulaire de l’autorisation de mise sur le marché et au ministre de la Santé.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_63">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Pour les médicaments bénéficiant d’une autorisation en vertu du <ref href="/eli/reg_ue/2004/726/jo" id="366a6b40-317f-4d73-acd5-c7ab4f9da81e">règlement (CE) n° 726/2004</ref>, le distributeur adresse la notification prévue au paragraphe 1<sup>er</sup> du présent article au titulaire de l’autorisation de mise sur le marché et à l’Agence européenne des médicaments instituée par le même règlement CE.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_22ter">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22ter</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22ter/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22ter.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22ter.</num>
+					<alinea>
+						<content>
+							<p>La direction de la Santé enregistre les informations relatives aux autorisations d’exercer l’activité de grossiste en médicaments dans une banque de données de l’Union européenne, gérée par l’Agence européenne des médicaments instituée par le <ref href="/eli/reg_ue/2004/726/jo" id="494b403e-f3e8-4153-904a-32e264144a2d">règlement (CE) n° 726/2004</ref>, au nom de l’Union.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22quater">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22quater</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22quater/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22quater.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22quater.</num>
+					<alinea>
+						<content>
+							<p>Le titulaire d’une autorisation de distribution conserve une documentation soit sous forme de factures <span scl:no-break="true">d’achat-ventes</span> ou sous forme informatisée, soit sous toute autre forme, comportant pour toute transaction d’entrée, de sortie ou de courtage de médicaments au moins les renseignements suivants:</p>
+							<ul scl:symbol="dash">
+								<li>la date,</li>
+								<li>la dénomination du médicament,</li>
+								<li>la quantité reçue, fournie ou ayant fait l’objet d’un courtage,</li>
+								<li>le nom et l’adresse du fournisseur ou du destinataire, selon le cas,</li>
+								<li>le numéro de lot des médicaments, au moins pour les médicaments portant les dispositifs de sécurité visés à l’article 10, paragraphe 1<sup>er</sup>, point o) du <ref href="/eli/etat/leg/rgd/1992/12/15/n1/jo" id="e65bc2e2-af4f-4e6a-98f4-658b06aa441e">règlement grand-ducal modifié du 15 décembre 1992</ref> relatif à la mise sur le marché des médicaments.</li>
+							</ul>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22quinquies">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22quinquies</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22quinquies/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22quinquies.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22quinquies.</num>
+					<alinea>
+						<content>
+							<p> Le titulaire d’une autorisation de distribution est tenu: </p>
+							<ol scl:start="1" scl:symbol="a)">
+								<li>de vérifier que les médicaments reçus n’ont pas été falsifiés en contrôlant les dispositifs de sécurité sur l’emballage extérieur, conformément aux exigences établies dans le <ref href="/eli/reg_ue/2016/161/jo" id="a04213f0-f9aa-4529-a512-5ac9961d8620">règlement délégué (UE) 2016/161</ref> de la Commission complétant la <ref href="/eli/dir_ue/2001/83/jo" id="fa377fa8-fcb4-4cd1-8b35-dcede0d6f438">directive 2001/83/CE</ref> du Parlement européen et du Conseil en fixant les modalités des dispositifs de sécurité figurant sur l’emballage des médicaments à usage humain au Journal officiel de l’Union européenne.</li>
+								<li>de maintenir un système de qualité établissant les responsabilités, les procédures et les mesures de gestion du risque en ce qui concerne ses activités.</li>
+								<li>d’informer immédiatement le ministre de la Santé et, le cas échéant, le titulaire de l’autorisation de mise sur le marché des médicaments qu’il reçoit ou qui lui sont proposés et qu’il identifie comme étant falsifiés ou qu’il soupçonne d’être falsifiés.</li>
+								<li>de vérifier les dispositifs de sécurité et de désactiver l’identifiant unique d’un médicament, sur décision du ministre de la Santé et pour des raisons particulières de la chaîne d’approvisionnement, avant de le délivrer à l’une des personnes ou institutions suivantes :<ul scl:symbol="dash">
+										<li>les personnes autorisées ou habilitées à délivrer des médicaments au public, qui n’exercent pas leur activité dans un établissement de santé ou dans une pharmacie ;</li>
+										<li>les vétérinaires et les détaillants de médicaments vétérinaires ;</li>
+										<li>les praticiens de l’art dentaire ;</li>
+										<li>les optométristes et opticiens ; </li>
+										<li>le personnel paramédical et les médecins urgentistes ;</li>
+										<li>les forces armées, la police et d’autres institutions gouvernementales qui conservent des stocks de médicaments aux fins de la protection civile et de la lutte contre les catastrophes ;</li>
+										<li>les universités et autres établissements d’enseignement supérieur qui utilisent des médicaments à des fins de recherche et d’éducation, à l’exception des établissements de santé ;</li>
+										<li>les établissements pénitentiaires ; </li>
+										<li>les écoles ;</li>
+										<li>les hospices ;</li>
+										<li>les maisons de soins.</li>
+									</ul>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22sexies">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22sexies</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22sexies/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22sexies.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22sexies.</num>
+					<paragraph id="paragraph_64">
+						<num>1.</num>
+						<alinea>
+							<content>
+								<p>Les substances actives ne peuvent être importées que si les conditions suivantes sont remplies:</p>
+								<ol scl:start="1" scl:symbol="a)">
+									<li>les substances actives ont été fabriquées conformément à des normes de bonnes pratiques de fabrication visées à l’article 11, paragraphe 1<sup>er</sup> au moins équivalentes à celles visées à l’article 11, paragraphe 1<sup>er</sup>; et</li>
+									<li>les substances actives sont accompagnées d’une confirmation écrite de l’autorité compétente du pays tiers exportateur attestant que:<ol scl:start="1" scl:symbol="i)">
+											<li>les normes de bonnes pratiques de fabrication applicables à l’établissement qui fabrique la substance active exportée sont au moins équivalentes à celles visées à l’article 11, paragraphe 1<sup>er</sup>;</li>
+											<li>l’établissement de fabrication concerné fait l’objet de contrôles réguliers, stricts et transparents et de mesures efficaces d’exécution des bonnes pratiques de fabrication, y compris d’inspections répétées et inopinées, garantissant une protection de la santé publique au moins équivalente à celle assurée par l’Union européenne; et</li>
+											<li>dans le cas où une non-conformité serait constatée, les informations relatives à cette constatation seront immédiatement communiquées à l’Union européenne par le pays tiers exportateur.</li>
+										</ol>
+									</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Cette confirmation écrite s’entend sans préjudice des obligations visées à l’article 11, paragraphe 1<sup>er</sup>.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_65">
+						<num>2.</num>
+						<alinea>
+							<content>
+								<p>L’exigence visée au paragraphe 1, point b), du présent article ne s’applique pas si le pays exportateur figure dans la liste visée à l’article 111ter de la <ref href="/eli/dir_ue/2001/83/jo" id="56835928-e108-4d66-bb49-97aca7080f6c">directive 2001/83/CE</ref> du Parlement européen et du Conseil du 6 novembre 2001 instituant un code communautaire relatif aux médicaments à usage humain.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_66">
+						<num>3.</num>
+						<alinea>
+							<content>
+								<p>A titre exceptionnel et en cas de nécessité afin d’assurer la disponibilité des médicaments, lorsqu’un établissement de fabrication d’une substance active destinée à l’exportation a été inspecté par la direction de la Santé et s’est révélé conforme aux principes et lignes directrices de bonnes pratiques de fabrication visés à l’article 11, paragraphe 1<sup>er</sup>, l’exigence énoncée au paragraphe 1<sup>er</sup>, point b), du présent article peut être levée par un Etat membre pour une période ne dépassant pas la validité du certificat de bonnes pratiques de fabrication. En cas d’usage de cette possibilité de dérogation, le ministre de la Santé le notifie à la Commission européenne.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_22septies">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22septies</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22septies/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22septies.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22septies.</num>
+					<alinea>
+						<content>
+							<p>Lorsque le médicament est obtenu auprès d’un autre grossiste, le titulaire de l’autorisation de distribution en gros doit vérifier que le grossiste qui a fourni le médicament respecte les principes et les lignes directrices de bonnes pratiques de distribution. Cela implique de vérifier qu’il détient une autorisation de distribution en gros.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Lorsque le médicament est obtenu auprès du fabricant ou de l’importateur, le titulaire de l’autorisation de distribution en gros doit vérifier que le fabricant ou l’importateur détient une autorisation de fabrication.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Lorsqu’un médicament est obtenu par courtage, le titulaire de l’autorisation de distribution en gros doit vérifier que le courtier impliqué satisfait aux exigences fixées par le présent règlement.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22octies">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22octies</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22octies/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22octies.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22octies.</num>
+					<alinea>
+						<content>
+							<p>Pour toute fourniture de médicaments à un pharmacien, le titulaire d’une autorisation de distribution en gros doit joindre tout document permettant de connaître:</p>
+							<ul scl:symbol="dash">
+								<li>la date,</li>
+								<li>le nom et la forme pharmaceutique du médicament,</li>
+								<li>la quantité fournie,</li>
+								<li>le nom et l’adresse du fournisseur et du destinataire,</li>
+								<li>le numéro de lot des médicaments, au moins pour les médicaments portant des dispositifs de sécurité visés à l’article 10, paragraphe 1<sup>er</sup>, point o) du <ref href="/eli/etat/leg/rgd/1992/12/15/n1/jo" id="5274887f-2f16-4b67-afea-afd21c455b00">règlement grand-ducal modifié du 15 décembre 1992</ref> relatif à la mise sur le marché des médicaments.</li>
+							</ul>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22nonies">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22nonies</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22nonies/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22nonies.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22nonies.</num>
+					<alinea>
+						<content>
+							<p>Les exigences de l’article 22octies s’appliquent à la fourniture de médicaments à des personnes de pays tiers autorisées ou habilitées à délivrer des médicaments au public.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22decies">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22decies</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22decies/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22decies.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22decies.</num>
+					<paragraph id="paragraph_67">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les personnes exerçant des activités de courtage de médicaments veillent à ce que les médicaments objets du courtage soient couverts par une autorisation de mise sur le marché accordée en vertu du <ref href="/eli/reg_ue/2004/726/jo" id="ed73aa0c-fc80-453f-b220-7fd724b545f2">règlement (CE) n° 726/2004</ref> ou par le ministre de la Santé. Au sens du présent règlement on entend par «courtage de médicaments»: toute activité liée à la vente ou à l’achat de médicaments, à l’exception de la distribution en gros, qui ne comprend pas de manipulation physique et qui consiste à négocier, indépendamment et au nom d’une personne physique ou morale.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les personnes exerçant des activités de courtage de médicaments ont une adresse permanente et des coordonnées dans l’Union européenne afin de permettre aux autorités compétentes de les identifier et de les situer avec exactitude, de communiquer avec elles et de surveiller leurs activités.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_68">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Seules les personnes enregistrées auprès de l’autorité compétente de l’Etat membre où est située l’adresse permanente visée au paragraphe 1<sup>er</sup> peuvent exercer des activités de courtage de médicaments. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_69">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Pour être enregistré au Luxembourg, les personnes intéressées soumettent au ministre de la Santé leur nom et leur raison sociale ainsi que leur adresse permanente. Elles communiquent sans retard injustifié au ministre de la Santé toute modification de ces informations.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_70">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les personnes exerçant des activités de courtage de médicaments qui avaient commencé leurs activités avant le 2 janvier 2013 s’enregistrent auprès du ministre de la Santé au plus tard le 2 mars 2013.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_71">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Le ministre de la Santé consigne les informations visées au paragraphe 3 dans un registre accessible au public.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_72">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Sont applicables au Luxembourg, les lignes directrices concernant les bonnes pratiques de distribution publiées par la Commission européenne au Journal officiel de l’Union européenne comprenant des dispositions spécifiques relatives au courtage.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_73">
+						<num>(7)</num>
+						<alinea>
+							<content>
+								<p>Le présent article s’entend sans préjudice de l’article 7-1.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_22undecies">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22undecies</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22undecies/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22undecies.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22undecies.</num>
+					<alinea>
+						<content>
+							<p>Les personnes exerçant des activités de courtage de médicaments sont tenues:</p>
+							<ol scl:start="1" scl:symbol="a)">
+								<li>de posséder un plan d’urgence qui garantisse la mise en œuvre effective de toute action de retrait du marché ordonnée par le ministre de la Santé ou engagée en coopération avec le fabricant du médicament concerné ou le titulaire de l’autorisation de mise sur le marché pour ledit médicament;</li>
+								<li>conserver une documentation soit sous forme de factures d’achats-ventes ou sous forme informatisée, soit sous toute autre forme, comportant pour toute transaction de courtage de médicaments au moins les renseignements suivants:<ul scl:symbol="dash">
+										<li>la date,</li>
+										<li>la dénomination du médicament,</li>
+										<li>la quantité reçue, fournie ou ayant fait l’objet d’un courtage,</li>
+										<li>le nom et l’adresse du fournisseur ou du destinataire, selon le cas,</li>
+										<li>le numéro de lot des médicaments, au moins pour les médicaments portant les dispositifs de sécurité visés à l’article 10, paragraphe 1<sup>er</sup>, point o);</li>
+									</ul>
+								</li>
+								<li>tenir la documentation visée au point b) à la disposition des pharmaciens-inspecteurs une période de cinq ans;</li>
+								<li>se conformer aux principes et aux lignes directrices concernant les bonnes pratiques de distribution prévues à l’article 22decies, paragraphe 6;</li>
+								<li>maintenir un système de qualité établissant les responsabilités, les procédures et les mesures de gestion du risque en ce qui concerne leurs activités;</li>
+								<li>informer immédiatement le ministre de la Santé et, le cas échéant, le titulaire de l’autorisation de mise sur le marché des médicaments qu’ils reçoivent ou qui leur sont proposés et qu’ils identifient comme étant falsifiés ou qu’ils soupçonnent d’être falsifiés.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22duodecies">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22duodecies</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_22duodecies/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22duodecies.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22duodecies.</num>
+					<alinea>
+						<content>
+							<p>Si une personne exerçant des activités de courtage de médicaments ne se conforme pas aux exigences énoncées à l’article 22decies, le ministre de la Santé peut décider de la rayer du registre visé au paragraphe 3. Le ministre de la Santé en informe ladite personne.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_iii">
+				<num>Chapitre III.</num>
+				<heading scl:separator=" - " scl:style-format="b">Dispositions pénales et abrogatoires</heading>
+				<article id="art_23">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_23</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_23/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 23.</num>
+					<heading scl:style-format="b">Dispositions pénales</heading>
+					<alinea>
+						<content>
+							<p>Les infractions aux dispositions du présent règlement seront punies des peines prévues par l’article 14 de la <ref href="/eli/etat/leg/loi/1975/08/04/n4/jo" id="3665c3ea-94b0-46d8-8180-db8bdf1b4c57">loi du 4 août 1975</ref> concernant la fabrication et l’importation des médicaments.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_24">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_24</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_24/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 24.</num>
+					<heading scl:style-format="b">Disposition abrogatoire</heading>
+					<alinea>
+						<content>
+							<p>Le <ref href="/eli/etat/leg/rgd/1975/11/12/n2/jo" id="b05cf247-2c19-4aae-877f-4d4c767c96b8">règlement grand-ducal du 12 novembre 1975</ref> portant exécution de la <ref href="/eli/etat/leg/loi/1975/08/04/n4/jo" id="9c77d499-43ed-4dcd-8106-5311f1cb3d40">loi du 4 août 1975</ref> concernant la fabrication et l’importation des médicaments est abrogé. Ce texte reste d’application aux infractions commises sous son empire.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_25">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_25</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4/art_25/20190205</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2004/11/19/n4</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-02-05</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 25.</num>
+					<alinea>
+						<content>
+							<p>Notre Ministre de la Santé et Notre Ministre de la Justice sont chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Mémorial.<mod class="mod-end" for="#pm4"/>
+								<noteRef href="#M4" marker="4"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

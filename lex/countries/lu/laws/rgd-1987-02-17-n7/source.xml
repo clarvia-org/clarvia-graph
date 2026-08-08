@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2012-04-18" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MENV"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2012-04-18" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2012-04-18" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1/jo</scl:jolux><scl:jolux scl:name="dateDocument">2012-04-18</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MENV</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/498</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/913</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2012-04-14</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2012/a73</scl:jolux><scl:jolux scl:name="historicalLegalId">2012A0794A</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/TC</scl:jolux><scl:jolux scl:name="publicationDate">2012-04-18</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="consolidates">/eli/etat/leg/rgd/1987/02/17/n7/jo</scl:jolux>
+<scl:jolux scl:name="titleAlternative">TEXTE COORDONNÉ du RGD modifié du 17 février 1987</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Règlement grand-ducal modifié du 17 février 1987 sur l'identification des «menues embarcations», - TEXTE COORDONNÉ</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2012-73-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2012/a73/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-tc-2012-04-18-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/04/18/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2012-73-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2012/a73/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2012/a73/fr/pdf/eli-etat-leg-memorial-2012-a73-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<analysis source="#"/>
+<notes scl:border="50" scl:page-footer="true" scl:type="document" source="#eli-etat-leg-tc-2012-04-18-n1-jo-fr-xml">
+<note id="note_0_0_0">
+<p>Intitulé modifié par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="315f71fd-577b-4ee9-9e48-519d4760389a">règl. g.-d. du 10 décembre 1997</ref>. </p>
+</note>
+<note id="note_0_0_1">
+<p>Complété par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/1993/08/10/n1/jo" id="534b845c-ffe8-4107-8344-1cd687480188">règl. g.-d. du 10 août 1993</ref>.</p>
+</note>
+<note id="note_0_0_2">
+<p> Abrogé par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/2012/03/16/n14/jo" id="92039e46-01bd-48c3-b0b2-db712c307350">règl. g.-d. du 16 mars 2012</ref>.</p>
+</note>
+<note id="note_0_0_3">
+<p>Modifié par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/2012/03/16/n14/jo" id="45864b38-fa1c-4d4b-9435-fdedfae7eae3">règl. g.-d. du 16 mars 2012</ref>.</p>
+</note>
+<note id="note_0_0_4">
+<p>Modifié par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="57f7e45d-bdaf-4d24-b82d-f22dab640609">règl. g.-d. du 10 décembre 1997</ref>.</p>
+</note>
+<note id="note_0_0_5">
+<p> Abrogé par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="230d5e63-a2fc-4b5a-9749-74f88280862b">règl. g.-d. du 10 décembre 1997</ref>.</p>
+</note>
+</notes>
+<notes scl:border="50" scl:page-footer="true" scl:type="document" source="#eli-etat-leg-tc-2012-04-18-n1-jo-fr-xml">
+<note id="note_0_1_0">
+<p>Modifié par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="0abab50c-e760-4941-9c33-9e773bd60062">règl. g.-d. du 10 décembre 1997</ref>.</p>
+</note>
+<note id="note_0_1_1">
+<p> Abrogé par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/2012/03/16/n14/jo" id="4a222760-60be-4f30-a867-4100748c0eac">règl. g.-d. du 16 mars 2012</ref>.</p>
+</note>
+<note id="note_0_1_2">
+<p>Complété par le <ref href="/eli/etat/leg/rgd/1993/08/10/n1/jo" id="26bbe88f-9802-4319-86bf-30ddb7ade71b">règl. g.-d. du 10 août 1993</ref>.</p>
+</note>
+<note id="note_0_1_3">
+<p>Modifié implicitement par la <ref href="/eli/etat/leg/loi/2001/08/01/n16/jo" id="464d4e20-0989-4c06-94d1-40ba27b00408">loi du 1<sup>er</sup> août 2001</ref> relative au basculement en euro (Mém. A - 117 du 18 septembre 2001, p. 2440).</p>
+</note>
+<note id="note_0_1_4">
+<p>Abrogé par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="911c6020-e46a-4234-9818-880e7ca0eec1">règl. g.-d. du 10 décembre 1997</ref>.</p>
+</note>
+<note id="note_0_1_5">
+<p> Modifié par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/2012/03/16/n14/jo" id="1258ef94-e47b-4b7e-a16e-a6b3e6e6eff9">règl. g.-d. du 16 mars 2012</ref>.</p>
+</note>
+</notes>
+<notes scl:border="50" scl:page-footer="true" scl:type="document" source="#eli-etat-leg-tc-2012-04-18-n1-jo-fr-xml">
+<note id="note_0_2_0">
+<p>Modifié par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="ec6d177f-6d41-45e5-a6b1-e887b33cebed">règl. g.-d. du 10 décembre 1997</ref>.</p>
+</note>
+<note id="note_0_2_1">
+<p>Modifié par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/2012/03/16/n14/jo" id="a1c7a55c-7e69-4a4d-992d-475f3445209e">règl. g.-d. du 16 mars 2012</ref>.</p>
+</note>
+</notes>
+<notes scl:border="50" scl:page-footer="true" scl:type="document" source="#eli-etat-leg-tc-2012-04-18-n1-jo-fr-xml">
+<note id="note_0_3_0">
+<p>Modifié par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="f1327a76-3080-436a-a8ee-2db08ae52728">règl. g.-d. du 10 décembre 1997</ref>.</p>
+</note>
+<note id="note_0_3_1">
+<p> Modifié implicitement par la <ref href="/eli/etat/leg/loi/2001/08/01/n16/jo" id="79ba54f8-0382-45e9-abc2-5a1f8ba2f8b2">loi du 1<sup>er</sup> août 2001</ref> relative au basculement en euro (Mém. A - 117 du 18 septembre 2001, p. 2440).</p>
+</note>
+<note id="note_0_3_2">
+<p>Modifié par le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/2012/03/16/n14/jo" id="8155b699-7568-4399-89a7-01778bbbfccd">règl. g.-d. du 16 mars 2012</ref>.</p>
+</note>
+<note id="note_0_3_3">
+<p>Abrogé par le <ref href="/eli/etat/leg/rgd/1997/12/10/n2/jo" id="727da972-6338-4cfb-9315-411888ab6e13">règl. g.-d. du 10 décembre 1997</ref>.</p>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p> Règlement grand-ducal modifié du 17 février 1987 sur l'identification des «menues embarcations»<noteRef href="#note_0_0_0"/>, - TEXTE COORDONNÉ</p>
+</longTitle>
+</preface>
+<body>
+<alinea>
+<content>
+<p scl:align="center">(<ref href="http://www.legilux.lu/eli/etat/leg/rgd/1987/02/17/n7/jo" id="119ecad7-a168-419e-a364-64e15538ada6">Mém. A - 34</ref> du 20 mai 1987, p. 488)</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>modifié par:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<ref href="/eli/etat/leg/rgd/1993/08/10/n1/jo" id="af328d45-5708-4c14-a6aa-ed703ace4f6d">Règlement grand-ducal du 10 août 1993</ref>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:space-tab="15">(Mém. A - 77 du 22 septembre 1993, p. 1462)</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<ref href="/eli/etat/leg/rgd/1997/12/10/n2/jo" id="8bd19042-0075-4b6e-bfaf-3446fb90b9bd">Règlement grand-ducal du 10 décembre 1997</ref>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:space-tab="15">(Mém. A - 99 du 23 décembre 1997, p. 3237)</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<ref href="/eli/etat/leg/rgd/2012/03/16/n14/jo" id="772d0374-3fd7-4fd4-bb4c-9bb1e66be05c">Règlement grand-ducal du 16 mars 2012</ref>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:space-tab="15">(Mém. A - 69 du 10 avril 2012, p. 762)</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:align="center">
+<b>Texte coordonné au 10 avril 2012</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:align="center">
+<b>Version applicable à partir du 14 avril 2012</b>
+</p>
+</content>
+</alinea>
+<article id="art_1er">
+<num>Art. 1<sup>er</sup>.</num>
+<heading scl:style-format="b">Définitions</heading>
+<paragraph id="paragraph_1">
+<num>I.</num>
+<alinea>
+<content>
+<p>Une menue embarcation est tout bâtiment, dont la longueur maximale de la coque, gouvernail et beaupré non compris, est inférieure à 20 mètres ou dont le port en lourd ou le déplacement ne dépasse pas 20 tonnes «métriques»<noteRef href="#note_0_0_1"/>, à l’exception:</p>
+<ul scl:symbol="custom">
+<li scl:symbol="–"> des bâtiments construits ou aménagés pour remorquer, pousser ou mener à couple des bâtiments autres que les menues embarcations;</li>
+<li scl:symbol="–">de ceux qui sont autorisés au transport de plus de 12 passagers appelés bateaux à passagers;</li>
+<li scl:symbol="–">des bacs.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="c58fc1c7-02a8-43d7-8b3e-46ed6b983c9b">Règl. g.-d. du 10 décembre 1997</ref>)</i>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>II.</num>
+<alinea>
+<content>
+<p>«La définition ci-avant ne concerne pas les bâtiments de plaisance lors de l’application de la <ref href="/eli/etat/leg/loi/1997/09/23/n1/jo" id="47387bbb-5bf4-4c23-a68f-031245e0cb24">loi du 23 septembre 1997</ref> portant réglementation de la navigation de plaisance et portant modification de certaines autres dispositions légales.»</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2">
+<num>Art. 2.</num>
+<heading scl:style-format="b">Généralités</heading>
+<alinea>
+<content>
+<p>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="dedd1214-e180-47b8-978f-6d6b5f7c3e87">Règl. g.-d. du 10 décembre 1997</ref>)</i> </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>«Peuvent être identifiées au registre (...)<noteRef href="#note_0_0_2"/> tel que défini par l’article 8 ci-après, les menues embarcations appartenant pour plus de la moitié en propriété à un ou plusieurs ressortissants de l’Union européenne ou à une ou plusieurs personnes morales ayant leur siège social dans un Etat membre de l’Union européenne, disposant d’un établissement stable à Luxembourg.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Peuvent également être identifiées à ce registre les menues embarcations appartenant pour plus de la moitié en propriété à une ou plusieurs personnes non-ressortissants de l’Union européenne si cette ou ces personnes ont leur domicile respectivement siège social au Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les menues embarcations à voile ou à moteur identifiées conformément au présent article doivent porter une marque officielle d’identification attribuée par le «ministre ayant les Transports dans ses attributions, ci-après désigné «le ministre»<noteRef href="#note_0_0_3"/> ou son délégué. Cette marque est uniquement valable sur les cours et plans d’eau, à l’exception des eaux maritimes.»</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<num>Art. 3.</num>
+<heading scl:style-format="b">Nature et apposition de la marque officielle d’identification</heading>
+<alinea>
+<content>
+<p>La marque officielle d’identification se compose des lettres latines LG suivies d’un chiffre arabe. La séparation des lettres LG et du chiffre se fait moyennant un trait d’union.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La marque d’identification attribuée est peinte ou attachée en lettres latines et chiffres arabes de couleur claire sur fond sombre ou de couleur sombre sur fond clair aux deux côtés du beaupré de la «menue embarcation»<noteRef href="#note_0_0_4"/>. Les lettres et les chiffres doivent avoir une hauteur d’au moins 10 centimètres, la largeur des traits étant d’au moins 1 centimètre. Le propriétaire ou détenteur veille à ce que le signe distinctif reste parfaitement lisible. (…)<noteRef href="#note_0_0_5"/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La «menue embarcation»<noteRef href="#note_0_0_4"/> peut afficher en dehors de la marque officielle d’identification un nom ou une devise, sans que ces formules puissent donner lieu à confusion avec la marque officielle d’identification.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<num>Art. 4.</num>
+<heading scl:style-format="b">Attribution des marques officielles d’identification</heading>
+<alinea>
+<content>
+<p>La demande d’attribution d’une marque officielle d’identification sera adressée par le propriétaire ou détenteur d’une «menue embarcation»<noteRef href="#note_0_1_0"/> au (…)<noteRef href="#note_0_1_1"/> Service de la Navigation. La demande doit contenir les nom et prénoms, la profession, le domicile et les lieu et date de naissance du propriétaire ou détenteur. Elle doit être accompagnée d’une facture ou d’un autre document en tenant lieu «ainsi que par une attestation d’assurance - responsabilité civile telle que prévue par l’article 10 ci-dessous; si le propriétaire ou le détenteur de la «menue embarcation»<noteRef href="#note_0_1_0"/> est une personne morale, copie des statuts doit être jointe à la demande.»<noteRef href="#note_0_1_2"/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="a697f3ef-a7de-4430-b67b-06ce9233e252">Règl. g.-d. du 10 décembre 1997</ref>)</i> </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>«Une taxe de «12 euros»<noteRef href="#note_0_1_3"/> sera perçue lors de la présentation des demandes d’attribution d’une marque officielle d’identification d’une menue embarcation. La même taxe sera perçue lors de la présentation d’une demande en obtention d’un duplicata du certificat d’identification ou d’une prorogation dudit certificat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les taxes ci-avant désignées sont acquittées au moyen de timbres mobiles «Droit de chancellerie» fournis par l’Administration de l’Enregistrement et des Domaines.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les timbres mobiles sont apposés sur les demandes tenues à disposition des requérants.»</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<num>Art. 5.</num>
+<heading scl:style-format="b">Conditions d’octroi</heading>
+<alinea>
+<content>
+<p>L’attribution de la marque officielle d’identification est subordonnée à la condition que la «menue embarcation»<noteRef href="#note_0_1_0"/> ne soit pas enregistrée à l’étranger.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le propriétaire ou le détenteur de la «menue embarcation»<noteRef href="#note_0_1_0"/> est tenu de prévenir tout de suite par écrit le (…)<noteRef href="#note_0_1_1"/> Service de la Navigation - de toute modification survenue dans les conditions ayant justifié la délivrance du certificat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<eop/>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/1993/08/10/n1/jo" id="6dcd42cc-15e7-45da-b2b1-0af861b3d52d">Règl. g.-d. du 10 août 1993</ref>)</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>«L’administration peut, en cas de besoin, exiger copie d’un certificat de jaugeage respectivement d’un certificat de navigabilité ou d’agréation de la «menue embarcation»<noteRef href="#note_0_1_0"/> ainsi qu’un certificat de résidence du propriétaire ou du détenteur».</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<num>Art. 6.</num>
+<heading scl:style-format="b">Certificat d’identification</heading>
+<alinea>
+<content>
+<p>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/2012/03/16/n14/jo" id="cc440f48-9499-4925-a87c-fc065f93f1a7">Règl. g.-d. du 16 mars 2012</ref>)</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>«Un certificat d’identification dont le modèle est arrêté par le ministre est délivré au propriétaire ou détenteur.»</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ledit certificat a une validité de cinq ans.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le certificat d’identification doit se trouver à bord de la «menue embarcation»<noteRef href="#note_0_1_0"/> et être présenté sur demande aux agents de la police générale et aux fonctionnaires du Service de la Navigation chargés de la surveillance de la navigation. (…)<noteRef href="#note_0_1_4"/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un duplicata du certificat d’identification, désigné comme tel, est délivré en cas de perte, de destruction ou de vol dûment établis par une déclaration officielle.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/1993/08/10/n1/jo" id="d4677dbc-f86f-40da-be0d-aa97c0fc6631">Règl. g.-d. du 10 août 1993</ref>)</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>«Le «ministre»<noteRef href="#note_0_1_5"/> ou son délégué peut délivrer un certificat d’identification valable pour une durée inférieure à cinq ans dans des cas particuliers tels que pour les bateaux de démonstration.»</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<num>Art. 7.</num>
+<heading scl:style-format="b">Cessation de validité de la marque d’identification</heading>
+<alinea>
+<content>
+<p>La marque d’identification attribuée n’est plus valable:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>en cas de changement de propriétaire ou de détenteur de la «menue embarcation»<noteRef href="#note_0_1_0"/>;</li>
+<li>en cas de vol, destruction, exportation ou mise hors usage de la «menue embarcation»<noteRef href="#note_0_1_0"/>;</li>
+<li>en cas de changement des caractéristiques techniques ou du nom ou de la devise de la «menue embarcation»<noteRef href="#note_0_1_0"/>; </li>
+<li>en cas de changement de domicile du propriétaire ou du détenteur; </li>
+<li>en cas de dépassement de la durée de validité ou de non-prorogation du certificat;</li>
+<li>si, à la suite d’une procédure administrative, le signe distinctif a été rayé d’office du registre.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans ces cas le certificat d’identification est à retourner endéans le délai d’un mois et avec indication des motifs au (…)<noteRef href="#note_0_1_1"/> Service de la Navigation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les cas où il est constaté par l’administration que la marque officielle d’identification a perdu sa validité en vertu des dispositions sous a) à f) ci-dessus ou s’il est positivement établi que les conditions d’octroi ne sont plus remplies, la marque officielle d’identification est rayée d’office du registre. En vertu de leur annulation, les certificats d’identification en question sont retirés par le «ministre»<noteRef href="#note_0_1_5"/> ou son délégué.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<num>Art. 8.</num>
+<heading scl:style-format="b">Registre d’identification</heading>
+<alinea>
+<content>
+<p>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/2012/03/16/n14/jo" id="5eda68ef-6ea2-47f6-8e74-9305d0efcc84">Règl. g.-d. du 16 mars 2012</ref>)</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>«Il est créé un registre des menues embarcations, nommé ci-après «registre». Le registre est placé sous l’autorité du ministre et géré par le Service de la navigation qui est le responsable du traitement des données qui y figurent.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le registre des menues embarcations a pour finalité la gestion des marques officielles attribuées aux menues embarcations en vue de leur identification, ainsi que leur suivi administratif.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les menues embarcations sont inscrites sur le registre sous un numéro d’ordre d’une série continue.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les indications suivantes sont portées sur le registre:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li> la marque officielle d’identification et le numéro d’ordre;</li>
+<li> les nom, prénoms, profession, date et lieu de naissance, domicile ou résidence du ou des propriétaires ou détenteurs de menues embarcations circulant sous le couvert d’une marque d’identification luxembourgeoise et, s’il s’agit d’une personne morale, le nom, le siège social et l’adresse de l’établissement ainsi que les nom, prénoms, domicile et résidence des personnes autorisées à engager la personne morale;</li>
+<li>les caractéristiques techniques des menues embarcations;</li>
+<li> les dates de l’identification, du renouvellement ou de la prorogation de la marque officielle d’identification.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les données relatives aux menues embarcations restent inscrites dans le registre pendant la durée de validité de la marque d’identification. Lorsque la validité de celle-ci cesse, conformément à l’article 7, la menue embarcation est radiée du registre et les données la concernant sont archivées pendant cinq ans. Le titulaire de la marque d’identification peut demander à tout moment et sans frais un extrait concernant l’inscription ou la radiation de son embarcation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre désigne nommément les agents autorisés à accéder au registre d’identification des menues embarcations.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans l’exercice de leurs missions, les autorités judiciaires ainsi que les membres de la Police grand-ducale peuvent, sur demande auprès du Service de la Navigation, prendre connaissance des données du registre. Cette demande ne peut être refusée. Le STATEC peut également prendre connaissance des données du registre sur demande auprès du Service de la navigation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Des données anonymisées du registre peuvent être communiquées si elles sont demandées par demande motivée à des fins de recherche, d’analyse ou statistique. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La publication d’informations anonymisées du registre par le Service de la navigation ou le ministre est autorisée dans le cadre des rapports à adresser aux autorités compétentes.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute personne qui, à quelque titre que ce soit, participe à la gestion ou à la tenue du registre est tenue d’en respecter le caractère confidentiel.»</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<num>Art. 9.</num>
+<heading scl:style-format="b">Contrôle</heading>
+<alinea>
+<content>
+<p>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/1993/08/10/n1/jo" id="6f3ec6eb-726a-4fd8-a7b7-d9f0363ecfc2">Règl. g.-d. du 10 août 1993</ref>)</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>«Toute «menue embarcation»<noteRef href="#note_0_2_0"/> identifiée au registre d’identification peut, à tout moment, faire l’objet d’un contrôle de conformité technique ou administrative. A cette fin le «ministre»<noteRef href="#note_0_2_1"/> ou son délégué peut ordonner la présentation de la «menue embarcation»<noteRef href="#note_0_2_0"/> en un lieu et à une date déterminés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le certificat d’identification peut être retiré par le «ministre»<noteRef href="#note_0_2_1"/> ou son délégué si l’autorité compétente a constaté que les dispositions du présent règlement ne sont plus respectées».</p>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<num>Art. 10.</num>
+<heading scl:style-format="b">Assurance obligatoire</heading>
+<alinea>
+<content>
+<p>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/1993/08/10/n1/jo" id="16fbf323-4caa-42b0-8a6f-f10a40fbbec3">Règl. g.-d. du 10 août 1993</ref>)</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>«Toute «menue embarcation»<noteRef href="#note_0_2_0"/> établie ou circulant sur les cours et plans d’eau du Grand-Duché de Luxembourg doit être couverte par une assurance - responsabilité civile; une attestation doit certifier qu’une assurance - responsabilité civile a été conclue et elle doit être présentée sur demande aux autorités de contrôle et de surveillance prévues à l’article 6 ci-dessus.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les contrats d’assurance garantissant la responsabilité civile de l’assuré du chef de dommages causés aux personnes et aux biens par la «menue embarcation»<noteRef href="#note_0_2_0"/> assurée, doivent satisfaire aux conditions minimales suivantes:</p>
+<ol scl:start="1" scl:symbol="1)">
+<li>La compagnie d’assurance assure le preneur d’assurance, le propriétaire, le détenteur ou toute personne dûment autorisée à conduire la «menue embarcation»<noteRef href="#note_0_2_0"/> ainsi que les passagers à titre gratuit, chaque fois qu’est engagé leur responsabilité civile, contre les conséquences pécuniaires de la responsabilité civile qu’ils peuvent encourir à raison de dommages corporels et matériels causés à des tiers.</li>
+<li>Par tiers au sens du point 1) précédent il faut entendre toute personne autre que:<ol scl:start="1" scl:symbol="a)">
+<li> le preneur d’assurance et le détenteur de la «menue embarcation»<noteRef href="#note_0_2_0"/> ayant occasionné le dommage;</li>
+<li>la personne qui assume la conduite de la «menue embarcation»<noteRef href="#note_0_2_0"/> au moment où le dommage est causé ainsi que tout assuré dont la responsabilité est engagée dans la réparation du dommage;</li>
+<li>le conjoint des personnes mentionnées sous a) et b);</li>
+<li>les parents et alliés en ligne directe des personnes énumérées ci-dessus à la condition qu’ils habitent sous le toit de celles-ci et soient entretenues de leurs deniers.</li>
+</ol>
+<p>Toutefois l’exclusion ne s’applique pas pour les lésions corporelles, dans les cas prévus sous a), c) et d), lorsque la «menue embarcation»<noteRef href="#note_0_3_0"/> désignée est conduite par une personne qui n’est ni le conjoint, ni le parent ou l’allié en ligne directe de la personne lésée.</p>
+</li>
+<li>La garantie minimum du contrat d’assurance doit être de «2.500.000 euros»<noteRef href="#note_0_3_1"/> par événement assuré avec limitation à «250.000 euros»<noteRef href="#note_0_3_1"/> pour les dégâts matériels.<p>Elle peut être limitée à «50.000 euros»<noteRef href="#note_0_3_1"/> pour les dégâts matériels dus à des pollutions par hydrocarbures. Les pollutions non accidentelles sont exclues de l’assurance.</p>
+</li>
+<li>La garantie doit être valable pour tous les cours et plans d’eau du territoire du Grand-Duché de Luxembourg ouverts à la navigation.</li>
+<li> Sont exclus de l’assurance, sauf convention contraire, les dommages causés lors de la participation de la «menue embarcation»<noteRef href="#note_0_3_0"/> à moteur assurée à des courses et concours de vitesse, de durée, d’adresse ou de régularité, ainsi qu’aux essais préparatifs de ces courses et concours.</li>
+<li>Toute expiration, annulation, résiliation, suspension du contrat ou de la garantie, quelle que soit leur cause, ne produit ses effets à l’encontre des personnes lésées que seize jours après réception par le «ministre»<noteRef href="#note_0_3_2"/> de la notification afférente à lui adressée par lettre recommandée de l’assureur. Cette notification par lettre recommandée peut être remplacée par un accusé de réception du «ministre»<noteRef href="#note_0_3_2"/> ou de son délégué.</li>
+<li>L’attestation d’assurance à délivrer par l’assureur à la demande du preneur d’assurance doit porter les mentions suivantes:<ul scl:symbol="custom">
+<li scl:symbol="–"> Nom et prénom du propriétaire ou détenteur de la «menue embarcation»<noteRef href="#note_0_3_0"/>
+</li>
+<li scl:symbol="–"> Son domicile</li>
+<li scl:symbol="–">Genre de l’embarcation</li>
+<li scl:symbol="–">Constructeur/marque</li>
+<li scl:symbol="–"> Type</li>
+<li scl:symbol="–">Puissance CV/KW</li>
+<li scl:symbol="–">Marque d’identification</li>
+<li scl:symbol="–">Période de validité de l’attestation d’assurance</li>
+<li scl:symbol="–">Numéro de police</li>
+<li scl:symbol="–">Référence au présent règlement grand-ducal».</li>
+</ul>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<num>Art. 11.</num>
+<heading scl:style-format="b">Sanctions</heading>
+<alinea>
+<content>
+<p>Les infractions aux prescriptions du présent règlement grand-ducal sont punies conformément à l’article 4 de la <ref href="/eli/etat/leg/loi/1984/06/28/n1/jo" id="970167d5-d5ca-439e-b7b2-9d5d557f6974">loi du 28 juin 1984</ref> portant réglementation de la police de la navigation intérieure, des sports nautiques et de la natation.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<num>Art. 12.</num>
+<heading scl:style-format="b">Dispositions finales</heading>
+<alinea>
+<content>
+<p>Les marques officielles d’identification non valables sont à enlever de la «menue embarcation»<noteRef href="#note_0_3_0"/>. En cas de changement de propriétaire ou de détenteur, le Service de la Navigation peut attribuer, sur demande et à condition que l’ancien certificat ait été retourné, l’ancienne marque officielle d’identification.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les «menues embarcations»<noteRef href="#note_0_3_0"/> circulant ou établies sur les cours et plans d’eau du Grand-Duché de Luxembourg et appartenant à des personnes domiciliées à l’étranger ne sont pas soumises aux dispositions du présent règlement, mais doivent satisfaire à la réglementation de leur pays d’origine ou être couvertes soit par un certificat international délivré par le Gouvernement de leur pays ou par un organisme agréé par ce Gouvernement, soit par une carte internationale établie par des organismes qualifiés du pays où il n’est pas délivré de certificat international. Toutefois l’article 10 du présent règlement leur reste applicable.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>
+<i>(<ref href="http://legilux.lu/eli/etat/leg/rgd/1997/12/10/n2/jo" id="0106a675-3e1c-4b68-a162-99f8bb52a5b1">Règl. g.-d. du 10 décembre 1997</ref>)</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>«Notre Ministre des Transports et Notre Ministre des Finances sont chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Mémorial.»</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>(…)<noteRef href="#note_0_3_3"/>
+</p>
+</content>
+</alinea>
+</article>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-01-13" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-01-13" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-01-13" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">ANNEXE</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p>Pour visualiser l'annexe, veuillez consulter la version pdf du <ref href="https://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2012/a73/fr/pdf/eli-etat-leg-memorial-2012-a73-fr-pdf.pdf" id="23276219-cf28-48e8-bbdc-2005d500f2f0">Mémorial</ref>.</p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

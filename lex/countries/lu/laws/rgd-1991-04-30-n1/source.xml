@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="" scl:page-proof="many">
+		<meta>
+			<identification source="#1991A06121">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1991-04-30" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MSP"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1991-04-30" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1991-04-30" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="dateDocument">1991-04-30</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2021-05-24</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">1991A06121</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2020-02-11</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1991/28</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MSP</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/785</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/199</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 11/02/2020 : Règlement grand-ducal du 30 avril 1991 concernant l'octroi d'un congé sportif.</scl:jolux>
+					<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/PR/19890065</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/1976/03/26/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rect/1983/04/11/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/1977/10/11/n2/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/tc/1983/03/15/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/1983/03/11/n1/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">612</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-1991-04-30-n1-consolide-20200211-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/consolide/20200211/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">612</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-1991-04-30-n1-consolide-20200211-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="1991-04-30" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2020-02-11" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2020-02-11" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#"/>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/1991/04/30/n1/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2020/01/31/a58/jo" id="rp3" showAs="Règlement grand-ducal du 31 janvier 2020 modifiant : 1° le règlement grand-ducal modifié du 9 mai 1990 portant organisation du Conseil supérieur de l’éducation physique et des sports ; 2° le règlement grand-ducal modifié du 30 avril 1991 concernant l’octroi d’un congé sportif ; 3° le règlement grand-ducal du 23 décembre 2016 concernant les subsides accordés aux clubs sportifs affiliés auprès d’une fédération sportive agréée. "/>
+				<passiveRef href="/eli/etat/leg/rgd/2011/09/13/n4/jo" id="rp2" showAs="Règlement grand-ducal du 13 septembre 2011 modifiant le règlement grand-ducal du 30 avril 1991 concernant l'octroi d'un congé sportif."/>
+			</references>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 11/02/2020 : Règlement grand-ducal du 30 avril 1991 concernant l’octroi d’un congé sportif.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_1er">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_1er</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_1er/20200211</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 1<sup>er</sup>.</num>
+				<alinea>
+					<content>
+						<p>Le congé sportif institué par l’article 15 de la <ref href="/eli/etat/leg/loi/2005/08/03/n2/jo" id="9a7072fe-013b-4d87-8295-4f5b1e0481e9">loi du 3 août 2005</ref> concernant le sport est octroyé conformément aux conditions et modalités du présent règlement par le ministre ayant dans ses attributions le sport, appelé ci-après le ministre compétent.</p>
+					</content>
+				</alinea>
+			</article>
+			<chapter id="chapitre_a">
+				<num>
+					<b>Chapitre A.</b>
+				</num>
+				<heading scl:style-format="b">
+					<b>Champ d’application</b>
+				</heading>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_2/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<alinea>
+						<content>
+							<p>Sont pris en considération pour l’octroi du congé sportif </p>
+							<ol scl:start="1" scl:symbol="A)">
+								<li scl:space-num="6">en ce qui concerne les sportifs d’élite et leur personnel d’encadrement <ul scl:symbol="dash">
+										<li>les compétitions figurant au programme officiel des Jeux Olympiques et Jeux Paralympiques d’été et d’hiver ainsi que celles des programmes de démonstration autorisés par le Comité International Olympique; </li>
+										<li>les compétitions mondiales et européennes organisées par les fédérations internationales compétentes ou avec leur coopération et réservées, sur le plan individuel ou collectif, aux sélections ou équipes nationales des catégories d’âge auxquelles elles s’adressent; </li>
+										<li>les compétitions internationales comprenant tant les phases finales que qualificatives et les stages auxquels les sportifs d’élite sont inscrits par le comité olympique et sportif luxembourgeois ou leur fédération et qui ont pour but d’améliorer leurs performances et de parfaire leur préparation; </li>
+									</ul>
+								</li>
+								<li scl:space-num="6">en ce qui concerne les juges et arbitres <ul scl:symbol="dash">
+										<li>les compétitions et stages définis sous A), </li>
+										<li>les formations internationales aux diplômes des degrés supérieurs.</li>
+									</ul>
+								</li>
+								<li scl:space-num="6">pour les dirigeants techniques et administratifs <ul scl:symbol="dash">
+										<li>la participation aux réunions, au plan mondial ou européen, des organes, commissions ou groupes de travail statutaires des fédérations sportives internationales, du mouvement olympique, des instances sportives intergouvernementales et des organisations sportives non gouvernementales; </li>
+										<li>l’organisation au Grand-Duché de Luxembourg des manifestations sportives officielles au plan mondial ou européen et de réunions prévues à l’alinéa précédent; </li>
+										<li>la participation à des cours de perfectionnement pour dirigeants techniques et administratifs organisés au plan mondial ou européen. </li>
+									</ul>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_3/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<alinea>
+						<content>
+							<p>Le congé sportif est limité à douze jours par an et par bénéficiaire. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le Gouvernement peut déroger à la limitation de douze jours sur proposition motivée du ministre compétent pour les membres d’un modèle spécial de préparation des cadres nationaux appuyé par l’État et le C.O.S.L., pour les membres du cadre de sportifs d’élite et pour les sportifs d’élite qui préparent une participation olympique ou paralympique. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le même principe est applicable aux dirigeants techniques et au personnel d’encadrement des sportifs en question. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il peut être dérogé à la limitation de 12 jours pour les arbitres appelés par les instances sportives internationales à officier à l’occasion de compétitions internationales officielles ainsi que pour le perfectionnement de leur degré de formation. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le congé pour dirigeants est par ailleurs limité à cinquante jours ouvrables par an et par organisme auquel les bénéficiaires sont affiliés.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_b">
+				<num>
+					<b>Chapitre B.</b>
+				</num>
+				<heading scl:style-format="b"> Détermination des bénéficiaires </heading>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_4/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<alinea>
+						<content>
+							<p>Pour pouvoir bénéficier du congé sportif: </p>
+							<ul xmlns:ns1="http://www.scl.lu" ns1:symbol="dash">
+								<li>les sportifs d’élite et les juges ou arbitres doivent être titulaires, en qualité non-professionnelle, d’une licence d’affiliation à une fédération nationale agréée, et être qualifiés, en application des règlements du Comité International Olympique ou de la fédération internationale compétente, pour représenter le Grand-Duché de Luxembourg aux compétitions désignées à l’article 2 ci-avant. </li>
+								<li>les dirigeants doivent exercer au sein du Comité Olympique et Sportif Luxembourgeois ou d’une fédération agréée une fonction bénévole soit en vertu des statuts de l’organisme auquel ils sont affiliés, soit en exécution d’une délégation spéciale donnée à cet effet.</li>
+							</ul>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_5/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<alinea>
+						<content>
+							<p>Le nombre des sportifs pouvant bénéficier du congé sportif pour la participation aux compétitions et aux stages désignés à l’article 2 ci-avant, est limité au nombre maximum d’engagements, les remplaçants compris, auquel le Comité Olympique et Sportif Luxembourgeois ou la fédération nationale intéressée ont droit d’après les règlements du Comité International Olympique ou de la fédération internationale compétente.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_6/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<alinea>
+						<content>
+							<p>A l’occasion de la participation aux compétitions, le personnel d’encadrement pouvant bénéficier du congé sportif ne peut pas dépasser </p>
+							<ul xmlns:ns1="http://www.scl.lu" ns1:symbol="dash">
+								<li>quatre personnes pour un groupe de dix sportifs ou moins; </li>
+								<li>cinq personnes pour un groupe de onze sportifs ou plus. </li>
+							</ul>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour autant que des sportifs de sports différents participent aux Jeux Olympiques et aux Jeux Paralympiques, il peut être dérogé à ces limitations.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_c">
+				<num>
+					<b>Chapitre C.</b>
+				</num>
+				<heading scl:style-format="b"> Procédure administrative à suivre en vue de l’octroi du congé sportif </heading>
+				<article id="art_7-1" wId="art_7-1">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_7/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7.</num>
+					<alinea>
+						<content>
+							<p>Les demandes en vue de l’octroi sportif sont introduites auprès du ministère compétent par le Comité Olympique et Sportif Luxembourgeois ou par la fédération nationale compétente. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Lorsque la demande émane de la fédération nationale compétente, le Comité Olympique et Sportif Luxembourgeois est appelé à émettre son avis. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_8">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_8</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_8/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 8.</num>
+					<alinea>
+						<content>
+							<p>Les demandes sont à présenter sur une formule mise à la disposition du Comité Olympique et Sportif Luxembourgeois et des fédérations sportives.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Cette demande doit contenir </p>
+							<ul scl:symbol="dash">
+								<li>des données quant à l’état civil et professionnel de l’intéressé;</li>
+								<li>des données concernant l’objet pour lequel le congé est sollicité. </li>
+							</ul>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>En outre cette demande doit indiquer </p>
+							<ol scl:start="1" scl:symbol="a)">
+								<li> pour le personnel d’encadrement: <ul scl:symbol="dash">
+										<li>une spécification de ses fonctions techniques ou administratives;</li>
+										<li>une justification de la nécessité de ses services dans l’intérêt d’un ou plusieurs sportifs d’élite; </li>
+									</ul>
+								</li>
+								<li>pour le dirigeant une spécification de ses fonctions administratives ou techniques au sein de l’organisme demandeur. </li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_9">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_9</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_9/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 9.</num>
+					<alinea>
+						<content>
+							<p>Les demandes sont introduites au moins un mois avant la date de l’événement pour lequel le congé est sollicité. Dans le même délai et par les soins de l’organisme demandeur, copie de chaque demande concernant un membre de son personnel est adressée à l’employeur de l’intéressé pour lui permettre de présenter ses observations au ministre compétent. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_10">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_10</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_10/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 10.</num>
+					<alinea>
+						<content>
+							<p>Le ministre accepte ou rejette la demande, et fixe, le cas échéant, la durée du congé sportif.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_11">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_11</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_11/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 11.</num>
+					<alinea>
+						<content>
+							<p>Le congé sportif accordé en vue de la participation à un stage de préparation peut faire l’objet d’une objection de la part de l’employeur si l’absence de l’intéressé risque d’avoir une répercussion préjudiciable sur l’entreprise ou le service. L’objection motivée doit être notifiée par écrit à l’intéressé, à l’organisme demandeur et au ministre compétent. Celui-ci statue à bref délai. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Si dans les huit jours de la notification prévue par l’article 9 l’employeur n’a pas fait d’objection motivée, la décision ministérielle acceptant la demande est définitive.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_d">
+				<num>
+					<b>Chapitre D.</b>
+				</num>
+				<heading scl:style-format="b"> Dispositions spéciales </heading>
+				<article id="art_12">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_12</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_12/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 12.</num>
+					<alinea>
+						<content>
+							<p>Le congé sportif est considéré comme temps de travail effectif. Pendant la durée du congé sportif, les dispositions légales en matière de sécurité sociale et de protection du travail restent applicables. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_13">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_13</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_13/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 13.</num>
+					<alinea>
+						<content>
+							<p>La durée du congé sportif ne peut être imputée sur le congé annuel tel qu’il est fixé par la loi ou par une convention spéciale. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_14">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_14</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_14/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 14.</num>
+					<alinea>
+						<content>
+							<p>Sauf accord de l’employeur, le congé sportif ne peut pas être cumulé avec une période de congé annuel pour le cas où il en résulterait une absence continue dépassant la durée totale du congé annuel dû. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_15">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_15</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_15/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 15.</num>
+					<alinea>
+						<content>
+							<p>Le congé sportif peut être fractionné. </p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_e">
+				<num>
+					<b>Chapitre E.</b>
+				</num>
+				<heading scl:style-format="b"> Détermination des indemnités et des modalités de paiement </heading>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_16/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<alinea>
+						<content>
+							<p>Dans le secteur public, les bénéficiaires du congé sportif continuent, pendant la durée du congé, à toucher leur rémunération et à jouir des avantages attachés à leur fonction. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Sont considérées comme relevant du secteur public au titre du présent règlement les personnes dont la rémunération est à charge du budget de l’État. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_17/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 17.</num>
+					<alinea>
+						<content>
+							<p>Dans les autres secteurs, hormis le secteur public tel que défini à l’article 16, les bénéficiaires du congé sportif ont droit, pour chaque journée de congé, à une indemnisation compensatoire égale au salaire journalier moyen tel qu’il est défini par la législation en vigueur portant réglementation uniforme du congé annuel payé des salariés du secteur privé, sans que le montant puisse dépasser quatre cents pourcent (400%) du salaire social minimum pour travailleurs non-qualifiés. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_18">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_18</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_18/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 18.</num>
+					<alinea>
+						<content>
+							<p>Les personnes exerçant une activité professionnelle indépendante bénéficient d’une indemnité compensatoire fixée par analogie avec celle de l’indemnité prévue à l’article 17.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_19">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_19</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_19/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 19.</num>
+					<alinea>
+						<content>
+							<p>Aux ayants droit salariés, l’indemnité compensatoire est payée par l’employeur. Celui-ci touche de la part de l’État le montant de l’indemnité et la part patronale des cotisations sociales au vu d’une déclaration afférente. L’indemnité compensatoire revenant aux ayants droit visés à l’article 18 est payée directement par l’État sur base d’une déclaration.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_f">
+				<num>
+					<b>Chapitre F.</b>
+				</num>
+				<heading scl:style-format="b"> Dispositions finales </heading>
+				<article id="art_20">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_20</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_20/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 20.</num>
+					<alinea>
+						<content>
+							<p>Dans le mois qui suit la manifestation ou la réunion ayant donné lieu à l’octroi d’un congé sportif ou au paiement d’une indemnité compensatoire, le Comité Olympique et Sportif Luxembourgeois ou la fédération sportive concernée confirme par écrit la participation du bénéficiaire à la compétition ou le stage en question.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_23">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_23</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_23/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 23.</num>
+					<alinea>
+						<content>
+							<p/>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_21">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_21</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1/art_21/20200211</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1991/04/30/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-02-11</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 21.</num>
+					<alinea>
+						<content>
+							<p>Notre Ministre des Sports et Notre Ministre des Finances seront chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

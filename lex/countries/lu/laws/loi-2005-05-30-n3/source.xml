@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2005-05-30" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/ME"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2005-05-30" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2005-05-30" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2021-12-26</scl:jolux><scl:jolux scl:name="dateDocument">2005-05-30</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/650</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2005-07-01</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2005/a73</scl:jolux><scl:jolux scl:name="historicalLegalId">2005A11621</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">2005-06-07</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20030154</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1807/09/15/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1808/11/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1972/01/27/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1997/03/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1986/03/27/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1986/03/28/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1963/06/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/2000/07/24/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/2000/12/15/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/2001/04/06/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 26/12/2021 : Loi du 30 mai 2005 portant:\n1) organisation de l'Institut Luxembourgeois de Régulation;\n2) modification de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l'Etat.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2005-73-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2005/a73/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2005-05-30-n3-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2005-73-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2005/a73/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2005/a73/fr/pdf/eli-etat-leg-memorial-2005-a73-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2005-07-01" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2021-12-26" id="e13" originatingExpression="true" source="#rp13" type="amendment"/>
+<eventRef date="2021-12-26" id="e12" originatingExpression="true" source="#rp12" type="amendment"/>
+<eventRef date="2021-12-26" id="e11" originatingExpression="true" source="#rp11" type="amendment"/>
+<eventRef date="2021-12-26" id="e10" originatingExpression="true" source="#rp10" type="amendment"/>
+<eventRef date="2021-12-26" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+<eventRef date="2021-12-26" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+<eventRef date="2021-12-26" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+<eventRef date="2021-12-26" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2021-12-26" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2021-12-26" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2021-12-26" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2021-12-26" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/12/17/a927/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2005/05/30/n3/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2021/12/17/a927/jo" id="rp2" showAs="Loi du 17 décembre 2021 portant transposition de la directive (UE) 2018/1972 du Parlement européen et du Conseil du 11 décembre 2018 établissant le code des communications électroniques européen et portant modification de la loi modifiée du 30 mai 2005 portant : 1) organisation de l’Institut Luxembourgeois de Régulation ; 2) modification de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’État. "/>
+<passiveRef href="/eli/etat/leg/loi/2015/06/19/n5/jo" id="rp3" showAs="Loi du 19 juin 2015 modifiant  - la loi modifiée du 1er août 2007 relative à l'organisation du marché de l'électricité;  - la loi modifiée du 30 mai 2005 portant 1) organisation de l'Institut Luxembourgeois de Régulation; 2) modification de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2014/09/17/n1/jo" id="rp4" showAs="Règlement grand-ducal du 17 septembre 2014 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2013/07/30/n9/jo" id="rp5" showAs="Règlement grand-ducal du 30 juillet 2013 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2012/10/15/n1/jo" id="rp6" showAs="Règlement grand-ducal du 15 octobre 2012 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l’Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2011/09/02/n1/jo" id="rp7" showAs="Règlement grand-ducal du 2 septembre 2011 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/loi/2010/07/26/n8/jo" id="rp8" showAs="Loi du 26 juillet 2010 portant modification de la loi modifiée du 30 mai 2005 portant:  1) organisation de l'Institut Luxembourgeois de Régulation;  2) modification de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l'Etat."/>
+<passiveRef href="/eli/etat/leg/loi/2009/12/18/n17/jo" id="rp9" showAs="Loi du 18 décembre 2009 relative à la profession de l'audit et: – portant transposition de la directive 2006/43/CE du Parlement européen et du Conseil du 17 mai 2006 concernant les contrôles légaux des comptes annuels et des comptes consolidés et modifiant les directives 78/660/CEE et 83/349/CEE du Conseil, et abrogeant la directive 84/253/CEE du Conseil, – portant organisation de la profession de l'audit, – modifiant certaines autres dispositions légales, et – portant abrogation de la loi modifiée du 28 juin 1984 portant organisation de la profession de réviseur d'entreprises."/>
+<passiveRef href="/eli/etat/leg/rgd/2007/07/24/n10/jo" id="rp10" showAs="Règlement grand-ducal du 24 juillet 2007 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/loi/2007/08/01/n13/jo" id="rp11" showAs="Loi du 1er août 2007 1) relative à l’organisation du marché de l’électricité; 2) instaurant un poste de Commissaire du Gouvernement à l’Energie; 3) abrogeant - la loi modifiée du 14 décembre 1967 portant institution d’un poste de Commissaire du Gouvernement, portant création d’un service de l’énergie de l’Etat et concernant l’exploitation des centrales hydro-électriques d’Esch-sur-Sûre et de Rosport; - la loi du 4 janvier 1928 concernant l’établissement et l’exploitation des réseaux de distribution d’énergie électrique dans le Grand-Duché de Luxembourg approuvant la convention de concession du 11 novembre 1927 ainsi que ses annexes; - la loi du 30 juin 1927 approuvant le contrat de fourniture de courant du 11 avril 1927 pour l’électrification du Grand-Duché de Luxembourg; - la loi du 2 février 1924 concernant les distributions d’énergie électrique dans le Grand-Duché de Luxembourg; - la loi modifiée du 24 juillet 2000 relative à l’organisation du marché de l’électricité; et 4) modifiant - la loi du 30 mai 2005 portant 1) organisation de l’Institut Luxembourgeois de Régulation; 2) modification de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’Etat; - la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2006/07/31/n3/jo" id="rp12" showAs="Règlement grand-ducal du 31 juillet 2006 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2005/09/30/n1/jo" id="rp13" showAs="Règlement grand-ducal du 30 septembre 2005 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2021-12-22|2021-12-17|L|927">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/17/a927/jo">Loi du 17 décembre 2021 portant transposition de la directive (UE) 2018/1972 du Parlement européen et du Conseil du 11 décembre 2018 établissant le code des communications électroniques européen et portant modification de la loi modifiée du 30 mai 2005 portant : 1) organisation de l’Institut Luxembourgeois de Régulation ; 2) modification de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’État.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 26/12/2021 : Loi du 30 mai 2005 portant: </p>
+<ol scl:symbol="1)">
+<li>organisation de l'Institut Luxembourgeois de Régulation;</li>
+<li>modification de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l'Etat.</li>
+</ol>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_1er/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm1"/>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>L'Institut Luxembourgeois de Régulation, désigné ci-après par le terme «Institut», est un établissement public indépendant doté de la personnalité juridique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il est placé sous l'autorité du ministre ayant dans ses attributions les relations avec l'Institut, ci-après désigné par le terme «ministre».</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il jouit de l'autonomie financière et administrative.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Son siège est établi à Luxembourg. Il peut être transféré dans toute autre localité du Luxembourg par décision du conseil.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_2/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>L’Institut exerce en toute indépendance les missions de régulation des secteurs économiques, entreprises et opérateurs dans le cadre et dans les limites des pouvoirs lui accordés par les lois et règlements qui régissent ces secteurs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les règlements adoptés par l’Institut conformément aux dispositions de ces lois sont publiés au Mémorial et sur le site Internet de l’Institut. Ces règlements sont applicables quatre jours après leur publication au Mémorial, à moins qu’ils ne déterminent une entrée en vigueur plus tardive.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_3/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>La régulation des secteurs se fait dans l'intérêt public. Elle n'a pas pour objet de garantir les intérêts individuels des opérateurs et/ou personnes physiques ou morales tombant sous la surveillance de l'Institut.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Pour que la responsabilité civile de l'Institut pour des dommages individuels subis par des opérateurs ou des professionnels surveillés, par leurs clients ou par des tiers puisse être engagée, il doit être prouvé que le dommage a été causé par une négligence grave dans le choix et l'application des moyens mis en oeuvre pour l'accomplissement de la mission de service public de l'Institut.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_4/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L'Institut récupère la contrepartie de ses frais du personnel en service et de ses frais de fonctionnement conformément aux dispositions des lois et règlements qui déterminent les secteurs économiques sous sa régulation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>L'Institut est exempt de tous droits, impôts et taxes au profit de l'Etat et des communes, à l'exception de la taxe sur la valeur ajoutée.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_5/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Les organes de l'Institut sont le conseil et la direction.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans l’exercice des pouvoirs et dans l’accomplissement des missions et des devoirs qui leur ont été conférés dans le domaine de la régulation, ni l’Institut Luxembourgeois de Régulation, ni un membre de ses organes ne peuvent solliciter ni accepter des instructions des institutions ou organes de l’Union européenne, des gouvernements des Etats membres ou de tout autre organe.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_6/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Le conseil a les compétences suivantes: </p>
+<ol scl:symbol="a)">
+<li>Il arrête le budget et les comptes annuels de l'Institut.</li>
+<li>Il émet un avis sur les orientations générales relatives aux conditions et tarifs de l'Institut, notamment celles ayant trait aux conditions de remboursement des frais de personnel et de fonctionnement de l'Institut par les opérateurs et les personnes surveillées.</li>
+<li>Il nomme le réviseur aux comptes de l’Institut.</li>
+<li>Il peut charger le réviseur d’entreprises agréé chargé du contrôle des comptes de vérifications spécifiques.</li>
+<li>Il approuve le règlement d'ordre intérieur de la direction.</li>
+<li>Il approuve les actes de disposition à prendre par la direction ainsi que les actes d'administration pouvant grever significativement le budget.</li>
+<li>Il émet un avis sur les candidats aux postes de la direction.</li>
+<li>Il approuve l'état des effectifs.</li>
+<li>Il autorise les indemnités, primes, suppléments de rémunération et autres avantages concédés à la direction et au personnel.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_7/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le conseil se compose de sept membres, dont un président et un vice-président, nommés par le Grand-Duc sur proposition du Gouvernement en conseil.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les nominations interviennent pour une période de cinq ans et sont renouvelables une fois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>La nomination d'un nouveau membre en remplacement d'un membre démissionnaire, décédé ou qui se trouve dans une incapacité durable d'exercer ses fonctions doit être faite le plus tôt possible selon les modalités prévues aux paragraphes précédents. Les remplaçants sont nommés pour le reste de la période du mandat de celui qu'ils remplacent.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_8/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Le Gouvernement en conseil fixe les indemnités des membres du conseil, lesquelles sont à charge de l'Institut.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_9/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le conseil est convoqué par le président ou en cas d'empêchement de ce dernier, par le vice-président. Il doit être convoqué à la demande de trois membres au moins ou à la demande de la direction de l'Institut.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les délibérations du conseil sont valables si la majorité des membres est présente. Le mandat ne peut être donné qu'à un membre du conseil. Un membre du conseil ne peut représenter qu'un seul autre membre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le conseil se dotera d'un règlement d'ordre intérieur.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Sauf décision contraire du conseil, la direction assiste aux réunions du conseil avec voix consultative.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le conseil choisit son secrétaire parmi les agents de l'Institut.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_10/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>En dehors des communications que le conseil décide de rendre officielles, les membres du conseil et toute personne appelée à assister aux réunions sont tenus au secret des délibérations.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les membres du conseil doivent être juridiquement distincts et fonctionnellement indépendants de toutes les organisations ou entreprises tombant sous la surveillance de l'Institut. Ils ne peuvent avoir aucun intérêt dans ces organisations ou entreprises autrement que comme consommateurs finaux ou dans le cadre d'une gestion normale de leur patrimoine personnel, sous peine des sanctions prévues à l'article 245 du <ref href="/eli/etat/leg/code/penal" id="eb32a3ea-aa1d-4e95-86e8-6a013c712e2a">Code pénal</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Pendant la durée de leur mandat, un membre du Conseil ne peut être suspendu ou révoqué qu’en cas d’inconduite ou lorsqu’il ne répond plus aux conditions fixées par le paragraphe (2) ci-avant. La suspension ou la révocation intervient sur proposition du Gouvernement en conseil.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_11/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>La direction est l'autorité exécutive supérieure de l'Institut. Elle représente l'Institut judiciairement et extrajudiciairement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Elle est composée d’un directeur et de deux à quatre membres dont le directeur est le supérieur hiérarchique. Les membres sont autorisés à porter le titre de directeur adjoint. Pour pouvoir être nommé membre de la direction, il faut remplir les conditions prescrites pour l’accès aux fonctions de la carrière supérieure auprès des administrations de l’Etat conformément à la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="f49e58c4-50f6-459e-bf3c-34a9bdc689a4">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres de la direction sont nommés par le Grand-Duc pour une durée de sept ans. Les mandats sont renouvelables.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pendant la durée de leur mandat, les membres de la direction ne peuvent être suspendus, révoqués ou déplacés qu’en cas d’infirmité ou d’inconduite. La suspension, la révocation ou le déplacement intervient sur proposition du conseil, après avoir entendu l’intéressé en ses explications et moyens de défense. L’intéressé peut demander la publication au Mémorial des motifs de la décision</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les membres de la direction ont la qualité de fonctionnaires de l'Etat en ce qui concerne leur statut, leur traitement et leur régime de pension.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>En cas de non-renouvellement du mandat d'un membre de la direction, celui-ci devient conseiller général auprès de l'Institut avec maintien de son statut et de son niveau de rémunération de base, à l'exception des indemnités spéciales attachées à sa fonction antérieure. Il peut faire l'objet d'un changement d'administration dans une administration ou dans un autre établissement public, conformément à l'article 6 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="11227272-9d4a-4843-85c3-1695d6448854">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les rémunérations et autres indemnités des membres de la direction et des conseillers généraux sont à charge de l'Institut.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_11bis">
+<num>Art. 11bis.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le directeur de l’Institut et les membres de la direction sont nommés parmi des personnes dont l’autorité et l’expérience professionnelle sont reconnues, sur la base de leurs qualifications, de leurs compétences, de leurs connaissances ainsi que de leur expérience et à la suite d’une procédure de sélection ouverte et transparente de manière à assurer la continuité du processus décisionnel.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le directeur de l’Institut et les membres de la direction ne peuvent être congédiés en cours de mandat que s’ils ne remplissent plus les conditions requises pour exercer leurs fonctions, qui sont fixées à l’article 11, paragraphe 2.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>La décision de congédier le directeur de l’Institut et les membres de la direction est rendue publique au moment du congédiement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur congédié de l’Institut et les membres de la direction congédiés reçoivent un exposé des motifs. Dans le cas où l’exposé des motifs n’est pas publié, il est publié à la demande de cette personne. </p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_12/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>La direction prend ses décisions en tant que collège. Elle se dotera d'un règlement d'ordre intérieur pris à l'unanimité de ses membres. Avant d'entrer en vigueur, ce règlement doit être approuvé par le conseil et transmis pour information au Gouvernement en conseil.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>La direction élabore les mesures et prend les décisions requises pour l'accomplissement de la mission conférée à l'Institut par la présente loi. Elle est responsable des rapports et propositions que ses attributions l'obligent à adresser au conseil et au Gouvernement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Elle est compétente pour prendre, dans les limites de la présente loi, les actes d'administration et de disposition nécessaires ou utiles à l'accomplissement de la mission de l'Institut et à son organisation.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_13/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le cadre du personnel de l'Institut comprend dans l'ordre hiérarchique, les fonctions et emplois suivants: </p>
+<ol>
+<li>Dans la carrière supérieure de l’administration, grade de computation de la bonification d’ancienneté: grade 12:<ul scl:symbol="dash">
+<li>un directeur;</li>
+<li> des premiers conseillers de direction;</li>
+<li> huit conseillers de direction première classe et/ou ingénieurs première classe;</li>
+<li> huit conseillers de direction et/ou ingénieurs-chefs de division;</li>
+<li> des conseillers de direction adjoints et/ou des ingénieurs principaux;</li>
+<li> des attachés de direction premiers en rang et/ou des ingénieurs-inspecteurs;</li>
+<li> des attachés de direction et/ou des ingénieurs;</li>
+<li> des stagiaires ayant le titre d’attaché d’administration et/ou des stagiaires ayant le titre d’ingénieur-stagiaire.</li>
+</ul> </li>
+<li> <p>Dans la carrière moyenne de l'administration, grade de computation de la bonification d'ancienneté: grade 7: carrière de l'ingénieur-technicien: </p> <ul scl:symbol="dash">
+<li>deux ingénieurs-techniciens inspecteurs principaux premiers en rang;</li>
+<li> trois ingénieurs-techniciens inspecteurs principaux;</li>
+<li> des ingénieurs-techniciens inspecteurs;</li>
+<li> des ingénieurs-techniciens principaux;</li>
+<li> des ingénieurs-techniciens;</li>
+<li> des ingénieurs-techniciens stagiaires.</li>
+</ul> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La promotion aux fonctions supérieures à celle d’ingénieur technicien principal est subordonnée à la réussite d’un examen de promotion.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsqu’un emploi d’une fonction de promotion n’est pas occupé, le nombre des emplois d’une fonction inférieure au grade de la même carrière pourra être temporairement augmenté en conséquence.</p>
+<ol scl:start="3" scl:symbol="1.">
+<li>Dans la carrière moyenne de l’administration, grade de computation de la bonification d’ancienneté: grade 7: carrière du rédacteur:<ul scl:symbol="dash">
+<li>un inspecteur principal premier en rang;</li>
+<li> deux inspecteurs principaux;</li>
+<li> un inspecteur;</li>
+<li> des chefs de bureau;</li>
+<li> des chefs de bureau adjoints;</li>
+<li> des rédacteurs principaux;</li>
+<li> des rédacteurs;</li>
+<li> des rédacteurs stagiaires.</li>
+</ul>
+</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La promotion aux fonctions supérieures à celle de rédacteur principal est subordonnée à la réussite d’un examen de promotion.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsqu’un emploi d’une fonction de promotion n’est pas occupé, le nombre des emplois d’une fonction inférieure au grade de la même carrière pourra être temporairement augmenté en conséquence.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<ol scl:start="4" scl:symbol="1.">
+<li>Dans la carrière inférieure de l’administration, grade de computation de la bonification d’ancienneté: grade 4: carrière de l’expéditionnaire administratif<span scl:no-break="true">:</span> <ul scl:symbol="dash">
+<li>un premier commis technique principal ou commis technique principal;</li>
+<li> des commis techniques;</li>
+<li> des commis techniques adjoints;</li>
+<li> des expéditionnaires techniques;</li>
+<li> des candidats-expéditionnaires techniques.</li>
+</ul>
+</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La promotion aux fonctions supérieures à celle de commis adjoint est subordonnée à la réussite d’un examen de promotion.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsqu’un emploi d’une fonction de promotion n’est pas occupé, le nombre des emplois d’une fonction inférieure au grade de la même carrière pourra être temporairement augmenté en conséquence.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans la carrière inférieure de l'administration, grade de computation de la bonification d'ancienneté: grade 4: carrière de l'expéditionnaire-informaticien:</p>
+<ul scl:symbol="dash">
+<li>des premiers commis-informaticiens principaux</li>
+<li>des commis-informaticiens principaux</li>
+<li>des commis-informaticiens</li>
+<li>des commis-informaticiens adjoints</li>
+<li>des expéditionnaires-informaticiens</li>
+<li>des candidats-expéditionnaires-informaticiens</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La promotion aux fonctions supérieures à celle de commis-informaticien adjoint est subordonnée à la réussite d’un examen de promotion.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsqu’un emploi d’une fonction de promotion n’est pas occupé, le nombre des emplois d’une fonction inférieure au grade de la même carrière pourra être temporairement augmenté en conséquence.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans la carrière de l’administration, grade de computation de la bonification d’ancienneté: grade 4: carrière de l’expéditionnaire technique:</p>
+<ul scl:symbol="dash">
+<li>des premiers commis techniques principaux</li>
+<li>des commis techniques principaux</li>
+<li>des commis techniques</li>
+<li>des commis techniques adjoints</li>
+<li>des expéditionnaires techniques;</li>
+<li>des candidats-expéditionnaires techniques.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La promotion aux fonctions supérieures à celle de commis technique adjoint est subordonnée à la réussite d'un examen de promotion.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsqu'un emploi d'une fonction de promotion n'est pas occupé, le nombre des emplois d'une fonction inférieure au grade de la même carrière pourra être temporairement augmenté en conséquence.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le cadre du personnel prévu au paragraphe (1) peut être complété par des employés de l'Etat ou par des ouvriers de l'Etat si le bon fonctionnement du service l'exige, dans les limites des crédits budgétaires.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Un règlement grand-ducal fixe le nombre limite pour le cadre du personnel de l'Institut.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_14/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sont nommés par le Grand-Duc les fonctionnaires de la carrière supérieure et ceux de la carrière moyenne aux fonctions supérieures aux grades de rédacteur principal et d'ingénieur technicien principal. Le Ministre nomme aux autres fonctions.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Avant d'entrer en fonctions, ils prêtent entre les mains du Ministre ou de son délégué, le serment qui suit: «Je jure fidélité au Grand-Duc, obéissance à la Constitution et aux lois de l'Etat. Je promets de remplir mes fonctions avec intégrité, exactitude et impartialité.»</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Hormis les personnes recrutées sur base de l'article 13(2) de la présente loi, les membres du personnel de l'Institut sont des fonctionnaires de l'Etat, leur statut général étant régi par les dispositions légales afférentes régissant les fonctionnaires de l'Etat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La rémunération des employés de l'Etat est fixée conformément à la <ref href="/eli/etat/leg/loi/1972/01/27/n2/jo" id="4d5c3966-5cfb-4998-9d1d-c7259be8dc98">loi modifiée du 27 janvier 1972</ref> fixant le régime des employés occupés dans les administrations et services de l'Etat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La rémunération des ouvriers de l'Etat est fixée conformément au contrat collectif des ouvriers de l'Etat fixant le régime des salaires des ouvriers occupés dans les administrations et services de l'Etat.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les rémunérations et autres indemnités de tous les fonctionnaires, employés et ouvriers sont à charge de l'Institut. Leurs pensions sont à charge de l'Etat s'ils bénéficient du régime de pension des fonctionnaires de l'Etat.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Sans préjudice des conditions générales d'admission au service de l'Etat, et pour autant qu'elles ne soient pas fixées par la présente loi, les conditions particulières d'admission au stage, de nomination et d'avancement tout comme le cadre du personnel de l'Institut sont déterminés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les fonctionnaires engagés auprès de l'Institut selon les dispositions de la <ref href="/eli/etat/leg/loi/1986/03/27/n1/jo" id="8db6d162-826f-42f6-9da7-75313de22d2b">loi modifiée du 27 mars 1986</ref> fixant les conditions et les modalités selon lesquelles le fonctionnaire de l'Etat peut se faire changer d'administration sont intégrés dans le cadre tel qu'il est fixé par le premier règlement grand-ducal y afférent pris en exécution du paragraphe (5) ci-avant.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(7)</num>
+<alinea>
+<content>
+<p>Des cours spécifiques de recyclage et de perfectionnement pour accéder aux allongements de grades et aux promotions dans les différentes carrières peuvent être organisés par l'Institut sous sa responsabilité.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(8)</num>
+<alinea>
+<content>
+<p>Les membres du personnel de l'Institut doivent être juridiquement distincts et fonctionnellement indépendants de toutes les organisations ou entreprises tombant sous la surveillance de l'Institut. Ils ne peuvent avoir aucun intérêt dans ces organisations ou entreprises autrement que comme consommateurs finaux ou dans le cadre d'une gestion normale de leur patrimoine personnel, sous peine des sanctions prévues à l'article 245 du <ref href="/eli/etat/leg/code/penal" id="8b9466f5-f91c-4e66-8ccd-0bbc6cbc0eea">Code pénal</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(9)</num>
+<alinea>
+<content>
+<p>L'Institut peut, en accord avec le conseil, dans des cas déterminés et ponctuels, faire appel à des experts externes dont les prestations sont définies et rémunérées sur base contractuelle.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_15/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sans préjudice de l’article 23 du <ref href="/eli/etat/leg/code/procedure_penale" id="ef1dcc21-5150-424e-8ec7-f2422b840196">Code de procédure pénale</ref>, toutes les personnes exerçant ou ayant exercé une activité pour l’Institut, ainsi que les réviseurs d’entreprises agréés ou experts mandatés par l’Institut, sont tenus au secret professionnel et passibles des peines prévues à l’article 458 du <ref href="/eli/etat/leg/code/penal" id="f9d10201-9d40-4825-a89a-e01e5a99bade">Code pénal</ref> en cas de violation de ce secret. Ce secret implique que les informations confidentielles qu'ils reçoivent à titre professionnel ne peuvent être divulguées à quelque personne ou autorité que ce soit, excepté sous une forme sommaire ou agrégée de façon que les personnes soumises à surveillance ne puissent pas être identifiées, sans préjudice des cas relevant du droit pénal en cas de violation de ce secret.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Par dérogation à l'interdiction de divulgation et de communication prévue au paragraphe précédent et à l'article 458 du <ref href="/eli/etat/leg/code/penal" id="eb4421d6-ad51-4508-957d-73ef8e96ee68">Code pénal</ref>, la direction de l'Institut est autorisée, pendant l'exercice de son activité, à communiquer aux autorités et services publics les informations et documents nécessaires à ceux-ci pour l'exercice de leur surveillance, à condition que ces autorités, organes et personnes tombent sous un secret professionnel équivalent à celui visé au paragraphe (1) du présent article.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Par dérogation à l'interdiction de divulgation et de communication prévue au paragraphe (1) du présent article et à l'article 458 du <ref href="/eli/etat/leg/code/penal" id="469aaa5d-a00b-486a-afc3-29cc4d4b62d3">Code pénal</ref>, la direction de l'Institut est autorisée, pendant l'exercice de son activité, à communiquer aux autorités de régulation des autres Etats membres ainsi qu'à la Commission européenne les informations et documents nécessaires à ceux-ci pour l'exercice de leur surveillance, à condition que ces autorités, organes et personnes tombent sous un secret professionnel équivalent à celui visé au paragraphe (1) du présent article et dans la mesure où ces autorités, organes et personnes accordent les mêmes informations à l'Institut.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_16/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L'Institut tient une comptabilité appropriée à la nature et l'étendue de ses activités conformément aux dispositions légales du Livre1<sup>er</sup> du <ref href="/eli/etat/leg/code/commerce" id="573297ad-6f8b-4c4b-b51f-c979e3724f69">Code de commerce</ref> modifié.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>L'Institut tient une comptabilité séparée distincte par activité pour chacune des fonctions de régulation soumises à son autorité.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_17/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L'exercice financier de l'Institut coïncide avec l'année civile.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Avant le 31 mars de chaque année, la direction soumet à l’approbation du conseil le bilan et le compte de profits et pertes et les états financiers analytiques arrêtés au 31 décembre de l’exercice précédent, ensemble avec son rapport d’activité et le rapport du réviseur d’entreprise agréé. Les comptes annuels sont publiés au Mémorial.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Avant la fin de chaque exercice, la direction soumet à l'approbation du conseil le budget des recettes et des dépenses pour l'exercice à venir.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_19/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le réviseur d’entreprises est nommé pour une période de trois années; son mandat est renouvelable une fois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le réviseur a pour mission de vérifier et de certifier le caractère exact et complet des comptes de l’Institut. Il dresse à l’intention du conseil un rapport détaillé sur les comptes de l’Institut à la clôture de l’exercice financier.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_21/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 21.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L'Institut est autorisé à procéder à l'établissement de statistiques dans le cadre de sa mission et à collecter à cet effet les données nécessaires auprès des opérateurs et/ou organismes et/ou personnes physiques ou morales tombant sous sa surveillance.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les données individuelles ainsi recueillies tombent sous le secret professionnel des organes et du personnel de l'Institut.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Toutefois l'Institut est autorisé à publier les statistiques qu'il établit, à condition que la publication ne contienne pas et ne permette pas de conclure à des données individuelles, à l'exception des statistiques limitativement énumérées par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_22/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 22.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1963/06/22/n1/jo" id="f8126e9e-570f-43f6-9c99-4d4e6ce3ae6f">loi modifiée du 22 juin 1963</ref> fixant le régime des traitements des fonctionnaires de l'Etat est complétée comme suit:</p>
+</content>
+</alinea>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L'article 22 est modifié comme suit:</p>
+<ul scl:symbol="dash">
+<li>à la section VI sub 21° la mention <embeddedText>le conseiller de direction à l'Institut Luxembourgeois de Régulation</embeddedText> est remplacée par <embeddedText>le conseiller de direction première classe à l'Institut Luxembourgeois de Régulation</embeddedText>;</li>
+<li>à la section VI sub 22° et à la section VII a) alinéa 11 la mention <embeddedText>conseiller de direction à l'Institut Luxembourgeois de Régulation</embeddedText> est remplacée par <embeddedText>premier conseiller de direction à l'Institut Luxembourgeois de Régulation</embeddedText>.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>A l'annexe D – Détermination – tableau I «Administration générale» a) est ajoutée au grade 18, grade de computation de la bonification d'ancienneté 12, la fonction <embeddedText>directeur auprès de l'Institut Luxembourgeois de Régulation</embeddedText>;</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_23/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 23.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>La carrière de l'attaché de direction, nommé le 2 mars 1998 auprès de l'Institut, est reconstituée en supposant que la promotion au grade 13 à la fonction d'attaché de direction premier en rang est intervenue avec effet au 1<sup>er</sup> juin 1999 et la promotion au grade 14 à la fonction de conseiller de direction adjoint avec effet au 1<sup>er</sup> octobre 2002.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>La carrière de l'ingénieur technicien, nommé le 30 septembre 1997 auprès de l'Institut, promu au grade 10 à la fonction d'ingénieur technicien principal le 29 mai 1998 et au grade 11 à la fonction d'ingénieur technicien-inspecteur le 25 mai 2001 est reconstituée, en supposant que la promotion au grade 12 à la fonction d'ingénieur technicien-inspecteur principal est intervenue avec effet au 1<sup>er</sup> juin 2002.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>La carrière de l'expéditionnaire administratif, nommé le 21 mars 2002 auprès de l'Institut, promu au grade 6 à la fonction de commis adjoint le 14 novembre 1996 et au grade 7 à la fonction de commis le 16 décembre 1999, est reconstituée, en supposant que la promotion au grade 8 à la fonction de commis principal est intervenue avec effet au 1<sup>er</sup> décembre 2002.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_24/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 24.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sans préjudice quant à l'application des dispositions ci-dessous, le personnel actuellement en fonction auprès de l'Institut maintient ses droits au regard de son classement, de son ancienneté, de sa rémunération et de son droit à pension ou retraite.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les règlements grand-ducaux et décisions de l'Institut pris en vertu du Titre VIII de la <ref href="/eli/etat/leg/loi/1997/03/21/n1/jo" id="bac74467-16c2-42e6-93a0-8068a4aa9d4a">loi modifiée du 21 mars 1997</ref> sur les télécommunications restent en vigueur jusqu'à ce qu'il y soit pourvu par des dispositions nouvelles.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les membres du personnel énumérés ci-après, n'ayant pas encore su se présenter à l'examen de carrière, peuvent être dispensés de l'examen-concours, du stage ainsi que de l'examen de fin de stage, à condition de se soumettre à un examen spécial dont les conditions et modalités sont fixées par règlement grand-ducal: </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>1 - L'employé de l'Etat titulaire d'un diplôme d'ingénieur technicien homologué affecté au service de l'Institut depuis le 1<sup>er</sup> août 1997. En vue de l'application des dispositions de la <ref href="/eli/etat/leg/loi/1986/03/28/n3/jo" id="bc6cd905-5738-4b4d-a851-54b5ae5b3160">loi du 28 mars 1986</ref> portant harmonisation des conditions et modalités d'avancement dans les différentes carrières des administrations et services de l'Etat, sa première nomination dans la carrière moyenne de l'ingénieur technicien est censée être intervenue le 31 juillet 1999.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2 - L'employée de l'Etat titulaire d'un diplôme de fin d'études secondaires, affectée au service de l'Institut depuis le 1<sup>er</sup> août 1997. En vue de l'application des dispositions de la <ref href="/eli/etat/leg/loi/1986/03/28/n3/jo" scl:verify="true">loi du 28 mars 1986</ref> portant harmonisation des conditions et modalités d'avancement dans les différentes carrières des administrations et services de l'Etat, sa première nomination dans la carrière moyenne du rédacteur est censée être intervenue le 31 juillet 1999.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3 - L'employé de l'Etat titulaire d'un certificat d'enseignement secondaire homologué, affecté au service de l'Institut depuis le 15 janvier 2001 (depuis le 1<sup>er</sup> novembre 1998 au service de l'Etat). En vue de l'application des dispositions de la <ref href="/eli/etat/leg/loi/1986/03/28/n3/jo" scl:verify="true">loi du 28 mars 1986</ref> portant harmonisation des conditions et modalités d'avancement dans les différentes carrières des administrations et services de l'Etat, sa première nomination dans la carrière moyenne du rédacteur est censée être intervenue le 14 janvier 2003.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>4 - L'employée de l'Etat titulaire d'un diplôme de fin d'études secondaires techniques, affectée au service de l'Institut depuis le 27 mars 2001 (depuis le 2 mars 1998 au service de l'Etat). En vue de l'application des dispositions de la <ref href="/eli/etat/leg/loi/1986/03/28/n3/jo" scl:verify="true">loi du 28 mars 1986</ref> portant harmonisation des conditions et modalités d'avancement dans les différentes carrières des administrations et services de l'Etat, sa première nomination dans la carrière moyenne du rédacteur est censée être intervenue le 26 mars 2003.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>5 - L'employé de l'Etat titulaire d'un certificat d'aptitude professionnelle, affecté au service de l'Institut depuis le 19 janvier 1998. En vue de l'application des dispositions de la <ref href="/eli/etat/leg/loi/1986/03/28/n3/jo" scl:verify="true">loi du 28 mars 1986</ref> portant harmonisation des conditions et modalités d'avancement dans les différentes carrières des administrations et services de l'Etat, sa première nomination dans la carrière inférieure de l'expéditionnaire technique est censée être intervenue le 18 janvier 2000.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_25/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 25.</num>
+<alinea>
+<content>
+<p>Le mandat des membres du conseil en fonction au moment de l'entrée en vigueur de la présente loi est prorogé de deux ans.</p>
+</content>
+</alinea>
+</article>
+<article id="art_26">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_26</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_26/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 26.</num>
+<alinea>
+<content>
+<p>Sont abrogés:</p>
+<ol scl:symbol="(1)">
+<li>L'article 38 de la <ref href="/eli/etat/leg/loi/2000/12/15/n1/jo" id="d748a5a4-eca2-40d4-adeb-6c94b16d1fff">loi du 15 décembre 2000</ref> sur les services postaux et les services financiers postaux;</li>
+<li>L'article 27 (1) et (3) et l'article 32 de la <ref href="/eli/etat/leg/loi/2000/07/24/n3/jo" id="285abe1f-5d18-4d0f-949b-2369d3ddcf58">loi du 24 juillet 2000</ref> relative à l'organisation du marché de l'électricité;</li>
+<li>L'article 33 (1) et (4) de la <ref href="/eli/etat/leg/loi/2001/04/06/n1/jo" id="42a6901a-55cf-426e-97ec-6cfc16b8b63a">loi du 6 avril 2001</ref> relative à l'organisation du marché du gaz naturel.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_27">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3/art_27/20050701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2005/05/30/n3</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 27.</num>
+<alinea>
+<content>
+<p>La présente loi entre en vigueur le premier jour du mois qui suit sa publication au Mémorial.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+</body>
+</act>
+</akomaNtoso>

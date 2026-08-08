@@ -1,0 +1,2581 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2001-08-01" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFI"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2001-08-01" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2001-08-01" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux><scl:jolux scl:name="dateDocument">2001-08-01</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/601</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/819</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="dateEntryInForce">2002-01-01</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/a117</scl:jolux><scl:jolux scl:name="publicationDate">2001-09-18</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/ns/prov#Entity</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20000140</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/agd/1938/12/17/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/agd/1944/11/08/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/agd/1945/05/12/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1915/08/10/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1916/08/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1921/01/31/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1956/08/24/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1961/06/30/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1971/12/29/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1997/02/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1997/12/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/1997/1103/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1798/12/12/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1801/03/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1804/03/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1808/11/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1848/12/26/n5/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1882/02/15/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1885/05/19/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1898/06/10/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1908/04/21/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1920/08/07/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1925/07/20/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1925/12/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1928/04/21/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1929/07/31/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1931/05/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1934/10/16/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1934/10/16/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1936/12/01/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1936/12/01/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1953/06/26/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1954/05/26/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1955/02/14/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1963/06/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1967/12/04/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1968/02/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1977/04/20/n7/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1977/07/12/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1978/11/30/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1979/02/12/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1979/02/25/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1982/03/18/n5/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1983/03/15/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1983/07/07/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1984/06/13/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1988/03/30/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1988/11/24/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1988/12/13/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1989/06/29/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1992/04/14/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1993/04/05/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1993/07/27/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1993/12/22/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1994/12/23/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1996/12/24/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1998/08/03/n10/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1998/12/10/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1998/12/10/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1999/06/08/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/2000/07/28/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/rgd/1998/08/03/n4/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/rgd/1974/03/21/n2/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/01/2002 : Loi du 1er août 2001 relative au basculement en euro le 1er janvier 2002 et modifiant certaines dispositions législatives.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2001-117-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/a117/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2001-08-01-n16-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2001-117-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/a117/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2001/a117/fr/pdf/eli-etat-leg-memorial-2001-a117-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2002-01-01" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2002-01-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2001/12/21/n7/jo"/>
+<destination href="#art_72"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2001/08/01/n16/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2001/12/21/n7/jo" id="rp2" showAs="Loi du 21 décembre 2001 portant réforme de certaines dispositions en matière des impôts directs et indirects."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2001-12-27|2001-12-21|L|157">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2001/12/21/n7/jo">Loi du 21 décembre 2001 portant réforme de certaines dispositions en matière des impôts directs et indirects.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 01/01/2002 : Loi du 1<sup>er</sup> août 2001 relative au basculement en euro le 1<sup>er</sup> janvier 2002 et modifiant certaines dispositions législatives.</p>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_i">
+<num>
+<b>Chapitre I :</b> </num>
+<heading scl:separator=" ">
+<b>Dispositions d’ordre général</b>
+</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_1er/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Dans tous les instruments juridiques, à savoir les dispositions législatives et réglementaires, les actes administratifs, les décisions de justice, les contrats, les actes juridiques unilatéraux, les instruments de paiement autres que les billets et les pièces, et tous les autres instruments ayant des effets juridiques, les montants monétaires exprimés en franc au 31 décembre 2001 sont convertis au moment de l’entrée en vigueur de la présente loi en euro suivant les règles de conversion définies par le <ref href="/eli/reg_ue/1997/1103/jo" id="4408dde7-23d6-48bb-9eb3-45dd908e25e2">règlement (CE) n° 1103/97</ref> du Conseil du 17 juin 1997 fixant certaines dispositions relatives à l'introduction de l'euro, pour autant qu’il n’en est pas autrement disposé par la présente loi ou par le règlement grand-ducal pris en son exécution.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_2/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Dans tout instrument juridique au sens de l'article 1<sup>er</sup> de la présente loi, les montants indexés sont déterminés en procédant d’abord à la conversion en euro des montants de base, et en appliquant l’indexation par la suite. Le résultat de la conversion en euro sur lequel est appliqué l’indexation doit comporter au moins deux décimales de plus que le montant de base en franc.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_3/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Dans le cadre des déclarations faites par l'administré à l'administration publique, les différences éventuelles se rapportant à la période transitoire et résultant de la comparaison du calcul réalisé par le déclarant ayant opté pour l’euro sur base des montants convertis en euro, et du même calcul réalisé par l’administration publique sur base de montants en franc, ne peuvent donner lieu à contestation de la part de l'administration publique, même si les différences sont supérieures à la marge de tolérance prévue à l’article 6 de la <ref href="/eli/etat/leg/loi/1998/12/10/n1/jo" id="e08b964d-e1cb-4510-8c62-85eb9377fd6f">loi du 10 décembre 1998</ref> relative aux différences résultant de l’application des règles d’arrondi, pour autant que les règles communautaires de conversion et d’arrondi soient respectées.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_4/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>Lors de la conversion par l'administration publique de données statistiques, historiques ou similaires, les différences éventuelles résultant de la conversion en euro d’au moins deux montants monétaires exprimés à l’origine dans une monnaie nationale participante à l’euro et la conversion en euro de la somme de ces mêmes montants monétaires ne peuvent faire l’objet d’aucune contestation, pour autant que les règles communautaires de conversion et d’arrondi soient respectées.</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_5/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Le Grand-Duc est habilité à procéder par règlement grand-ducal à l’adoption des mesures nécessaires à l’adaptation au passage à l’euro des montants exprimés en francs figurant dans les textes réglementaires. </p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_ii">
+<num>
+<b>Chapitre II :</b>
+</num>
+<heading scl:separator=" ">
+<b>Dispositions relatives aux amendes</b>
+</heading>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_6/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6. </num>
+<alinea>
+<content>
+<p>Le taux des amendes libellées en franc à prononcer par les tribunaux répressifs de droit commun en euro est multiplié par 0,025, sauf en ce qui concerne les amendes de droit spécial dont le taux est déterminé d’après le chiffre des droits fraudés ou d’après la valeur de l’objet de l’infraction. Dans les cas où la multiplication précitée aboutit à un montant comprenant des décimales, le montant est arrondi à l’euro supérieur.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_7/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Les articles 9, 16, 26, 30(1), 76, 77, 78 et 566 du <ref href="/eli/etat/leg/code/penal" id="76d7b989-6605-4be3-8347-3db3c4ca0dfa">code pénal</ref> sont modifiés comme suit :</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>
+<embeddedStructure scl:hide-quote="true">
+<article>
+<num>« <b>Art. 9.</b>
+</num>
+<alinea>
+<content>
+<p>L’amende en matière criminelle est de 251 euros au moins. » </p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</li>
+<li>
+<embeddedStructure scl:hide-quote="true">
+<article>
+<num>« <b>Art. 16.</b>
+</num>
+<alinea>
+<content>
+<p>L’amende en matière correctionnelle est de 251 euros au moins. »</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</li>
+<li>
+<embeddedStructure scl:hide-quote="true">
+<article>
+<num>« <b>Art. 26.</b>
+</num>
+<alinea>
+<content>
+<p>L’amende en matière de police est de 25 euros au moins et de 250 euros au plus, sauf les cas où la loi en dispose autrement. »</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</li>
+<li>
+<embeddedStructure scl:hide-quote="true">
+<article>
+<num> « <b>Art. 30. </b>
+</num>
+<paragraph>
+<num>(1).</num>
+<alinea>
+<content>
+<p>La durée de la contrainte par corps est d’un jour par 50 euros d’amende. Pour les amendes inférieures à 50 euros, la contrainte par corps sera d’un jour. »</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</embeddedStructure>
+</li>
+<li>
+<embeddedStructure scl:hide-quote="true">
+<article>
+<num>« <b>Art. 76.</b>
+</num>
+<alinea>
+<content>
+<p>L’amende en matière criminelle peut être réduite, sans qu’elle puisse être en aucun cas inférieure à 251 euros. »</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</li>
+<li>
+<embeddedStructure scl:hide-quote="true">
+<article>
+<num>«<b> Art. 77.</b>
+</num>
+<alinea>
+<content>
+<p>Les coupables dont la peine criminelle a été commuée en un emprisonnement peuvent être condamnés à une amende de 251 à 10.000 euros. »</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</li>
+<li>
+<embeddedStructure scl:hide-quote="true">
+<article>
+<num>« <b>Art. 78.</b>
+</num>
+<alinea>
+<content>
+<p>S’il existe des circonstances atténuantes, la peine d’emprisonnement peut ne pas être prononcée et l’amende peut être réduite au-dessous de 251 euros, sans qu’elle puisse être inférieure à 25 euros. » </p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</li>
+<li>
+<embeddedStructure scl:hide-quote="true">
+<article>
+<num> « <b>Art. 566.</b>
+</num>
+<alinea>
+<content>
+<p>Lorsque, dans les cas prévus par les quatre chapitres qui précèdent, il existe des circonstances atténuantes, l’amende peut être réduite, sans qu’elle puisse en aucun cas, être inférieure à 25 euros ».</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_8/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Les articles 8 et 9, alinéa 3 de la <ref href="/eli/etat/leg/loi/1992/04/14/n3/jo" id="1a9fa2e6-a033-4cf2-b908-3ad0315977bb" scl:verify="true">loi du 14 avril 1992</ref> instituant un code disciplinaire et pénal pour la marine sont modifiés comme suit :</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>
+<embeddedStructure scl:hide-quote="true" scl:space-before="-3">
+<article>
+<num>« <b>Art. 8.</b>
+</num>
+<alinea>
+<content>
+<p>Les peines correctionnelles sont l’emprisonnement de huit jours à cinq ans et l’amende de 251 euros au moins » ;</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</li>
+<li>à l’article 9 alinéa 3, le montant de 3000 francs est remplacé par celui de 75 euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_9/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>Sauf disposition en sens contraire, les amendes administratives, civiles, fiscales et disciplinaires prévues par la loi sont à convertir de la même manière que les amendes pénales.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_iii">
+<num>
+<b>Chapitre III :</b>
+</num>
+<heading scl:separator=" ">
+<b>Dispositions relatives aux timbres</b>
+</heading>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_10/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les taxes ou les droits dont le paiement ou l’acquittement se font au moyen de timbres sont arrondis, après conversion stricte, à l’euro inférieur le plus proche à l’exception des dérogations prévues par la présente loi et ses dispositions d’exécution.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Lorsque après conversion stricte la taxe ou le droit à payer ou à acquitter est inférieur à un euro, la taxe ou le droit est arrondi à 10 cents pour les montants strictement inférieurs à 50 cents et à 50 cents pour les montants supérieurs à 50 cents.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_11/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>Les valeurs d’affranchissement marquées en francs luxembourgeois sur les timbres ordinaires et sur les timbres spéciaux sont remplacées par des montants en euro suivant des règles d’arrondissement décrites à l’article précédent.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_12/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>Les timbres ordinaires et les timbres spéciaux qui comptent des valeurs d’affranchissement en francs luxembourgeois pourront encore être utilisés pendant une période de six mois après l’entrée en vigueur de la présente loi.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_13/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>Les dispositions légales et réglementaires concernant le timbre sont abrogées en ce qu’elles sont contraires à la présente loi.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_iv">
+<num>
+<b>Chapitre IV :</b> </num>
+<heading scl:separator=" ">
+<b>Modification de certaines dispositions législatives</b>
+</heading>
+<section id="chapitre_iv.section_i">
+<num>
+<b>
+<i>Section I : </i>
+</b>
+</num>
+<heading scl:separator=" ">
+<b>
+<i>Finances</i>
+</b>
+</heading>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_14/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14. </num>
+<alinea>
+<content>
+<p>A l’article 39 paragraphe 2 de la <ref href="/eli/etat/leg/loi/1993/04/05/n1/jo" id="db8357d8-a12d-44e8-b865-54a8bf34a3ad" scl:verify="true">loi modifiée du 5 avril 1993</ref> relative au secteur financier, les termes de <embeddedText>500.000 francs</embeddedText> sont remplacés par les termes de <embeddedText>10.000 euros</embeddedText>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_15/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<paragraph id="paragraph_3">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La date d’échéance fixée au 31 décembre 2001 de toute obligation contractuelle incombant à un professionnel du secteur financier au sens de l’alinéa 3 du présent paragraphe est avancée au 28 décembre 2001. Ces obligations contractuelles seront exécutées selon les conditions applicables le 28 décembre 2001. La présente disposition s’applique aux obligations contractuelles tant en principal qu’en accessoires, notamment aux intérêts qui cesseront de courir le 28 décembre 2001.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les autres débiteurs d’une obligation contractuelle venant à échéance le 31 décembre 2001 et dont l’exécution requiert l’intervention d’un professionnel du secteur financier ne seront pas en défaut du seul fait de l’impossibilité d’exécuter cette obligation à l’échéance ; ils pourront valablement se libérer aux conditions initialement convenues le premier jour ouvrable suivant le 31 décembre 2001.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La notion de professionnel du secteur financier est étendue aux établissements de crédit, aux autres professionnels du secteur financier au sens du chapitre 2 de la partie I de la <ref href="/eli/etat/leg/loi/1993/04/05/n1/jo" id="3801c50d-a1ac-4a3d-b6b2-dcb0e28565fb" scl:verify="true">loi modifiée du 5 avril 1993</ref> relative au secteur financier, aux organismes de placement collectif, aux sociétés de gestion de fonds communs de placement, aux fonds de pension sous forme de sepcav ou d’assep, aux établissements commerciaux bénéficiant d’un accès professionnel au marché financier, aux organismes internationaux à caractère public opérant dans le secteur financier ainsi qu’aux organismes à caractère public et aux professionnels du secteur financier chargés de la compensation et du règlement de paiement ou d’opérations financières.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Nonobstant le paragraphe 1<sup>er</sup>, les contrats qui prévoient une date d’échéance de rechange autre que le 28 décembre 2001 en remplacement du 31 décembre 2001 sont valables. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le paragraphe 1<sup>er</sup> ne fait pas obstacle à ce que, après l’entrée en vigueur des présentes dispositions, des parties conviennent, avec l’accord du professionnel du secteur financier dont l’intervention est requise, de maintenir ou de fixer l’échéance de leurs obligations contractuelles au 31 décembre 2001.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les dispositions de l’article 15 qui précèdent entrent en vigueur le 1<sup>er</sup> jour après la publication au Mémorial de la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</section>
+<section id="chapitre_iv.section_ii">
+<num>
+<b>
+<i>Section II :</i>
+</b>
+</num>
+<heading scl:separator=" ">
+<b>
+<i>Contributions Directes</i>
+</b>
+</heading>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_16/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="1523cc86-4e69-4e18-a00c-3f2bb0135f7e" scl:verify="true">loi du 4 décembre 1967</ref> concernant l’impôt sur le revenu est modifiée comme suit:</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>à l’article 32bis (4), le montant de 100.000 francs est remplacé par celui de 2.400 euros;</li>
+<li>à l’article 34, la limite de trente-cinq mille francs est remplacée par celle de 870 euros;</li>
+<li>aux articles 99 n° 3, 99bis, alinéa (3), 131 (1) et 141, le montant de dix mille francs est remplacé par celui de 250 euros;</li>
+<li>à l’article 104 (2), le terme <embeddedText>francs</embeddedText> est remplacé par <embeddedText>euros</embeddedText>;</li>
+<li>à l’article 105bis (3), les montants de 3.900 et 117.000 sont remplacés respectivement par ceux de 99 et 2.970 euros;</li>
+<li>à l’article 107 (1) et (2), les montants de vingt et un mille, mille sept cent cinquante, douze mille, mille et quatre-vingts francs sont remplacés respectivement par ceux de 540, 45, 300, 25 et 2 euros;</li>
+<li>à l’article 107bis, les montants de <embeddedText>15.600 et 1.300 francs</embeddedText> sont remplacés respectivement par <embeddedText>396 et 33 euros</embeddedText>;</li>
+<li>à l’article 109 (1), les montants de 27.000 francs et de vingt millions de francs sont remplacés respectivement par ceux de 672 et 500.000 euros;</li>
+<li>à l’article 109bis (2), le montant de 768.000 francs est remplacé par celui de 19.080 euros; </li>
+<li>à l’article 110 (3), le montant de 48.000 francs est remplacé par celui de 1.200 euros;</li>
+<li>à l’article 111 (5), le montant de 27.000 francs est remplacé par celui de 672 euros;</li>
+<li>à l’article 111bis (1), les montants de 48.000 et 96.000 francs sont remplacés respectivement par ceux de 1.200 et 2.400 euros;</li>
+<li>à l’article 113 (1) et (2), les termes de <embeddedText>dix-huit mille francs</embeddedText> et le montant de 18.000 francs sont remplacés par les termes de <embeddedText>quatre cent quatre-vingts euros</embeddedText> et le montant de 480 euros;</li>
+<li>à l’article 115 n° 9 et 10, le montant de 500.000 francs est remplacé par celui de 12.500 euros;</li>
+<li>à l’article 115 n° 13, les montants de 90.000, 135.000, 180.000 et 45.000 sont remplacés respectivement par 2.250, 3.400, 4.500 et 1.120 euros;</li>
+<li>à l’article 115 n° 15, le montant de 60.000 francs est remplacé par celui de 1.500 euros;</li>
+<li>à l’article 124 (1), l’expression <embeddedText>au franc inférieur</embeddedText> est remplacée par <embeddedText>au multiple inférieur d’un euro </embeddedText>;</li>
+<li>à l’article 124 (2), le montant de 300 francs est remplacé par celui de 10 euros;</li>
+<li>à l’article 126 (2), le montant de mille francs est remplacé par celui de 100 euros;</li>
+<li>à l’article 127 (4), les montants de 400.000, 800.000, 1.200.000, 1.600.000, 2.000.000 et 2.400.000 francs sont remplacés respectivement par 10.000, 20.000, 30.000, 40.000, 50.000 et 60.000 euros;</li>
+<li>à l’article 127bis (2) et (3), le montant de 139.200 francs est remplacé par celui de 3.480 euros;</li>
+<li>à l’article 127ter (2), les montants de 77.400 et 6.450 francs sont remplacés respectivement par ceux de 1.920 et 160 euros; </li>
+<li> à l’article 128 (1), le montant de 90.000 francs est remplacé par celui de 2.250 euros;</li>
+<li>à l’article 128bis, le montant de 3.000.000 francs est remplacé par celui de 75.000 euros;</li>
+<li>aux articles 129 et 129a, les montants de 24.000 et 2.000 francs sont remplacés respectivement par ceux de 600 et 50 euros;</li>
+<li>à l’article 129b, les montants de 180.000 et 15.000 francs sont remplacés respectivement par ceux de 4.500 et 375 euros;</li>
+<li>à l’article 129c paragraphe 4 (2), le montant de 60.000 francs est remplacé par celui de 1.500 euros;</li>
+<li>à l’article 130, les montants de 400.000, 1.000.000, 2.000.000, 3.000.000 et 4.000.000 de francs sont remplacés respectivement par ceux de 10.000, 25.000, 50.000, 75.000 et 100.000 euros;</li>
+<li>à l’article 131 (1), le montant de dix mille francs est remplacé par celui de 250 euros ; </li>
+<li>à l’article 137 (3), le montant de 24.000 francs est remplacé par celui de 600 euros;</li>
+<li>à l’article 141, le montant de dix mille francs est remplacé par celui de 250 euros ;</li>
+<li>à l’article 152bis, les montants de 75.000 (paragraphe 3(2)), 35.000 (paragraphe 7(2) n<sup>°</sup>4) et 6.000.000 (paragraphe 7 (3)), sont remplacés respectivement par ceux de 1.850, 870 et 150.000 euros;</li>
+<li>à l’article 153, les montants de 18.000, 60.000 et 36.000 francs sont remplacés respectivement par ceux de 450, 1.500 et 900 euros;</li>
+<li>à l’article 154 (2), le montant de dix francs est remplacé par celui d’un euro;</li>
+<li>à l’article 166 (1), le montant de 50 millions de francs est remplacé par celui de 1.200.000 euros;</li>
+<li>à l’article 167 (1) 3a, le montant de 200.000 francs est remplacé par celui de 5.000 euros;</li>
+<li>à l’article 173, le montant de mille francs est remplacé par celui de 100 euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_17/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>Au paragraphe 11 (3) de la <ref href="/eli/etat/leg/loi/1936/12/01/n2/jo" id="8572ce48-6562-46a3-90dc-1aacbe7d3d3e">loi modifiée du 1<sup>er</sup> décembre 1936</ref> concernant l’impôt commercial communal, les montants de mille, un million deux cent mille et sept cent mille francs sont remplacés respectivement par ceux de 100, 30.000 et 17.500 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_18/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>La <ref href="https://legilux.public.lu/eli/etat/leg/loi/1934/10/16/n1/jo" id="4dc18626-e491-4702-ba03-a4a2dad06a46">loi du 16 octobre 1934</ref> concernant l’impôt sur la fortune est modifiée comme suit:</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>à l’alinéa (2) du paragraphe 4, le montant de 20.000 francs est remplacé par celui de 1.000 euros ;</li>
+<li>au paragraphe 5, les montants de 100.000, 150.000 et 1.000.000 de francs sont remplacés respectivement par 2.500, 3.800 et 25.000 euros;</li>
+<li>aux paragraphes 6 et 7, les montants de 100.000, 200.000 et 500.000 francs sont remplacés respectivement par les montants de 2.500, 5.000 et 12.500 euros;</li>
+<li>au paragraphe 13, le montant de 3.000.000 francs est remplacé par celui de 75.000 euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_19/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<alinea>
+<content>
+<p> La <ref href="/eli/etat/leg/loi/1931/05/22/n1/jo" id="3d56080e-dbb0-4961-a01f-59b29353266a">loi générale des impôts</ref> est modifiée comme suit:</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>au paragraphe 123, alinéas (3) et (4), les termes de <embeddedText>hundert Franken</embeddedText> sont remplacés par ceux de <embeddedText>10 Euro</embeddedText>;</li>
+<li>au paragraphe 161, alinéa (1) numéro 1. les montants de 2.000.000, 500.000, 1.000.000, et 60.000 francs sont remplacés respectivement par ceux de 50.000, 12.500, 25.000 et 1.500 euros;</li>
+<li>au paragraphe 203, alinéa (1), les termes de <embeddedText>hunderttausend Franken</embeddedText> sont remplacés par ceux de <embeddedText>2.500 Euro </embeddedText>.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_20/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1934/10/16/n3/jo" id="c77e94a0-d668-4df2-824a-2d12c944a847" scl:verify="true">loi modifiée du 16 octobre 1934</ref> sur l’évaluation des biens et valeurs – Bewertungsgesetz (BewG) est modifiée comme suit :</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>au paragraphe 22, alinéa (1) numéro 1, les montants de 200.000 et 1.000 francs sont remplacés respectivement par ceux de 5.000 et 25 euros ;</li>
+<li>au paragraphe 22, alinéa (1) numéro 2, les montants de 100.000 et 2.000.000 francs sont remplacés respectivement par ceux de 2.500 et 50.000 euros ;</li>
+<li>au paragraphe 60, alinéa (1) numéro 4, le montant de 50 millions de francs est remplacé par 1.200.000 euros ;</li>
+<li>au paragraphe 67, alinéa (1) numéros 2. et 8, le montant de 100.000 francs est remplacé par celui de 2.500 euros; </li>
+<li>au paragraphe 67, alinéa (1) numéro 6, le montant de 200.000 francs est remplacé par celui de 5.000 euros ; </li>
+<li>au paragraphe 67, alinéa (1) numéro 9, le montant de 50.000 francs est remplacé par celui de 1.250 euros ;</li>
+<li>au paragraphe 67, alinéa (1) numéro 10, le montant de 500.000 francs est remplacé par celui de 12.500 euros;</li>
+<li>au paragraphe 67, alinéa (1) numéro 11. point b), le montant de 1.000.000 de francs est remplacé par celui de 25.000 euros ; </li>
+<li>au paragraphe 67, alinéa (2), le montant de 1.400.000 francs est remplacé par celui de 35.000 euros ;</li>
+<li>le paragraphe 25 aura la teneur suivante:<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Les valeurs unitaires des propriétés foncières sont arrondies au multiple inférieur de 25 euros, celles des capitaux et des droits d’exploitation au multiple inférieur de 250 euros. »</p>
+</content>
+</alinea>
+</embeddedStructure>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_21/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 21.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1936/12/01/n1/jo" id="c1e62256-060d-4a8c-983b-a268ff5da79b">loi sur l’impôt foncier</ref> – Grundsteuergesetz (GrStG) vom 1. Dezember 1936 est modifiée comme suit:</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>au paragraphe 21quater, points a) et b), le montant de 1.000 francs est remplacé chaque fois par celui de 25 euros ;</li>
+<li>au paragraphe 22, alinéa (2) numéros 1 et 2, les montants de 2.200 et 4.400 francs sont remplacés respectivement par ceux de 55 et 110 euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_22/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 22.</num>
+<alinea>
+<content>
+<p>L’article 4, chiffre 3°, 2ème phrase de la <ref href="/eli/etat/leg/loi/1977/04/20/n7/jo" id="7b3f0189-6731-429c-affd-420a56c559da" scl:verify="true">loi du 20 avril 1977</ref> relative à l’exploitation des jeux de hasard et des paris relatifs aux épreuves sportives, est modifié comme suit:<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« les taxes fixes ne pourront dépasser la somme de six cents euros ».</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_iv.section_iii">
+<num>
+<b>
+<i>Section III :</i>
+</b>
+</num>
+<heading scl:separator=" ">
+<b>
+<i>Douanes et Accises</i>
+</b>
+</heading>
+<article id="art_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_23/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 23.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1989/06/29/n1/jo" id="585209ac-b011-47e3-baf1-7322045d314c" scl:verify="true">loi du 29 juin 1989</ref> portant réforme du régime des cabarets est modifiée comme suit :</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>à l’article 1<sup>er</sup>, les termes de <embeddedText>2.500 francs dans les communes de moins de 1000 habitants</embeddedText> sont remplacés par ceux de <embeddedText>60 euros dans les communes de moins de 1000 habitants </embeddedText>, les termes de <embeddedText>5.000 francs dans les communes de 1000 à moins de 5.000 habitants</embeddedText> sont remplacés par ceux de <embeddedText>120 euros dans les communes de 1000 à moins de 5.000 habitants</embeddedText> et les termes de <embeddedText>10.000 francs dans les communes de 5.000 habitants et plus</embeddedText> sont remplacés par ceux de <embeddedText>240 euros dans les communes de 5.000 habitants et plus</embeddedText> ;</li>
+<li>à l’article 6 paragraphes 3 et 7, le montant de 90.000 francs est remplacé par celui de 2.200 euros ;</li>
+<li>à l’article 6 paragraphe 1 b, les termes de <embeddedText>au paiement d’une taxe d’établissement variant de 100.000 à 200.000 francs suivant l’importance de l’établissement projeté et de la localité où le débit sera établi</embeddedText> sont remplacés par ceux de <embeddedText>au paiement d’une taxe d’établissement variant de 2.400 à 4.900 euros suivant l’importance de l’établissement projeté et de la localité où le débit sera établi</embeddedText> ;</li>
+<li>à l’article 8 paragraphe 1, les termes de « L’exploitation d’un débit de boissons alcooliques est subordonnée au paiement au mois de janvier de chaque année ou au plus tard avant l’ouverture d’une taxe annuelle de<ul scl:symbol="dash">
+<li>1.000 francs dans les communes de moins de 1.000 habitants</li>
+<li>2.000 francs dans les communes de 1.000 à moins de 5.000 habitants ;</li>
+<li>3.000 francs dans les communes de 5.000 habitants et plus. » sont remplacés par ceux de « L’exploitation d’un débit de boissons alcooliques est subordonnée au paiement au mois de janvier de chaque année ou au plus tard avant l’ouverture d’une taxe annuelle de :</li>
+<li>24 euros dans les communes de moins de 1.000 habitants ;</li>
+<li>49 euros dans les communes de 1.000 à moins de 5.000 habitants ;</li>
+<li>74 euros dans les communes de 5.000 habitants et plus ».</li>
+</ul>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_iv.section_iv">
+<num>
+<b>
+<i>Section IV :</i>
+</b>
+</num>
+<heading scl:separator=" ">
+<i>
+<b>Enregistrement et Domaines</b>
+</i>
+</heading>
+<article id="art_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_24/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 24.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1920/08/07/n3/jo" id="325d5821-e91b-4d4b-bcab-4a5ed9f310d7" scl:verify="true">loi du 7 août 1920</ref>, portant majoration des droits d’enregistrement, de timbre, de succession, etc est modifiée comme suit :</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>d’une manière générale, les taux en matière de droits d’enregistrement, de droits d’hypothèques et de droit de succession, exprimés en centimes par francs ou francs par francs sont à remplacer par des pourcentages ;</li>
+<li>à l’article 37, les droits d’enregistrement sont fixés comme suit :<p>les droits de 20 centimes par 100 francs sont remplacés par 0,2%</p>
+<p>les droits de 25 centimes par 100 francs sont remplacés par 0,25% </p>
+<p>les droits de 50 centimes par 100 francs sont remplacés par 0,5%</p>
+<p>les droits de 1 franc par 100 francs sont remplacés par 1%</p>
+<p>les droits de 1.50 francs par 100 francs sont remplacés par 1,5%</p>
+<p>les droits de 2 francs par 100 francs sont remplacés par 2%</p>
+<p>les droits de 2.50 francs par 100 francs sont remplacés par 2,5%</p>
+<p>les droits de 4 francs par 100 francs sont remplacés par 4%</p>
+<p>les droits de 5 francs par 100 francs sont remplacés par 5%</p>
+<p>les droits de 7 francs par 100 francs sont remplacés par 7%</p>
+<p>les droits de 8 francs par 100 francs sont remplacés par 8%</p>
+<p>les droits de 12 francs par 100 francs sont remplacés par 12%</p>
+<p>les droits d’hypothèques sont fixés comme suit :</p>
+<p>les droits de 50 centimes par 1000 francs sont remplacés par 0,05% </p>
+<p>les droits de 50 centimes par 100 francs sont remplacés par 0,5%</p>
+<p>les droits de 1 francs par 100 francs sont remplacés par 1%.</p>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_25/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 25.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1984/06/13/n1/jo" id="6fae2296-433e-443d-bcdd-7f20683a2b4d" scl:verify="true">loi du 13 juin 1984</ref> portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre est modifiée comme suit : </p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>il est ajouté un nouvel article 8 bis dont la teneur est la suivante :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Pour la computation des dixièmes prévus par les <ref href="https://legilux.public.lu/eli/etat/leg/loi/1916/08/18/n1/jo" id="e7ca1b4a-e87a-44f1-97b2-05d2cea90173">lois des 18 août 1916</ref> et <ref href="https://legilux.public.lu/eli/etat/leg/loi/1921/01/31/n1/jo" id="16c1fa30-e81d-48e2-b5dc-04b1727f18d7">31 janvier 1921</ref>, le barème tel qu’il résulte des dispositions des <ref href="https://legilux.public.lu/eli/etat/leg/loi/1916/08/18/n1/jo" id="bbb726ab-65bf-4b4c-9bf6-ab610d9b61f8">lois des 18 août 1916</ref>, <ref href="https://legilux.public.lu/eli/etat/leg/loi/1921/01/31/n1/jo" id="aa988e2f-4416-46d3-a87b-2339b909a8d0">31 janvier 1921</ref> et <ref href="https://legilux.public.lu/eli/etat/leg/loi/1984/06/13/n1/jo" id="aa893f9d-b7ab-46f8-a34c-09d45469d65c">13 juin 1984</ref> est remplacé par le barème suivant:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table scl:align="center" scl:cols="20 30 25 20 5" scl:cols-align="right right right right right" scl:rows-height="12" width="100">
+<tr>
+<td>
+<p>10.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>20.000 €</p>
+</td>
+<td>
+<p>1/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>20.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>30.000 €</p>
+</td>
+<td>
+<p>2/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>30.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p> 40.000 €</p>
+</td>
+<td>
+<p>3/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>40.000 € </p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>50.000 €</p>
+</td>
+<td>
+<p>4/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>50.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>75.000 €</p>
+</td>
+<td>
+<p>5/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>75.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>100.000 €</p>
+</td>
+<td>
+<p>6/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>100.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>150.000 €</p>
+</td>
+<td>
+<p>7/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>150.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p> 200.000 €</p>
+</td>
+<td>
+<p>8/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>200.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p> 250.000 €</p>
+</td>
+<td>
+<p>9/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>250.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>380.000 €</p>
+</td>
+<td>
+<p>12/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>380.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>500.000 €</p>
+</td>
+<td>
+<p>13/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>500.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p> 620.000 €</p>
+</td>
+<td>
+<p>14/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>620.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p> 750.000 €</p>
+</td>
+<td>
+<p>15/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>750.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>870.000 €</p>
+</td>
+<td>
+<p>16/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>870.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>1.000.000 €</p>
+</td>
+<td>
+<p>17/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>1.000.000 € </p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p> 1.250.000 €</p>
+</td>
+<td>
+<p>18/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>1.250.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p>1.500.000 €</p>
+</td>
+<td>
+<p>19/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>1.500.000 €</p>
+</td>
+<td>
+<p>sans dépasser</p>
+</td>
+<td>
+<p> 1.750.000 €</p>
+</td>
+<td>
+<p>20/10</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td>
+<p>1.750.000 €</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td/>
+<td>
+<p> 22/10</p>
+</td>
+<td>
+<p>» ;</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</embeddedStructure>
+</li>
+<li>à l’art. 9, le montant de 50.000 francs est remplacé par celui de 1.250 euros ;</li>
+<li>à l’art. 10, le montant de 1.500.000 francs est remplacé par celui de 38.000 euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_26">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_26</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_26/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 26.</num>
+<alinea>
+<content>
+<p>A l’article 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/1929/07/31/n1/jo" id="58394f96-cd45-4be5-b87c-b8de10156c6a" scl:verify="true">loi du 31 juillet 1929</ref> sur le régime fiscal des sociétés de participations financières (Holding Companies), les termes de <embeddedText>deux francs par mille francs</embeddedText> et <embeddedText>25 centimes par mille francs</embeddedText> sont remplacés respectivement par les termes <embeddedText>0,2 pour cent</embeddedText> et <embeddedText>0,025 pour cent</embeddedText>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_27">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_27/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 27.</num>
+<alinea>
+<content>
+<p>A l’article 5 de la <ref href="/eli/etat/leg/loi/1978/11/30/n1/jo" id="7bdad9e2-8c31-495f-a47a-f582ec7b58e5" scl:verify="true">loi du 30 novembre 1978</ref> modifiant certaines dispositions de l’impôt sur le revenu, de l’impôt de fonctionnement des sociétés de participations financières et du droit de timbre, les termes <embeddedText>20 centimes pour cent francs</embeddedText> sont remplacés par les termes <embeddedText>0,2 pour cent </embeddedText>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_28">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_28</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_28/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28.</num>
+<alinea>
+<content>
+<p>A l’article 5 de la <ref href="/eli/etat/leg/loi/1996/12/24/n2/jo" id="449f7829-9ce5-4b0e-93c4-3a6ae58fb163" scl:verify="true">loi du 24 décembre 1996</ref> portant modification de certaines dispositions en matière des impôts directs et indirects, les termes de <embeddedText>six centimes par cent francs</embeddedText>, <embeddedText>deux centimes par cent francs</embeddedText> et <embeddedText>un centime par cent francs</embeddedText> sont remplacés respectivement par les termes de <embeddedText>0,06 pour cent </embeddedText>, <embeddedText>0,02 pour cent</embeddedText> et <embeddedText>0,01 pour cent</embeddedText>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_29">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_29</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_29/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 29.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1979/02/12/n1/jo" id="a438e14f-5974-4828-b360-98b6397dbe0a" scl:verify="true">loi modifiée du 12 février 1979</ref> concernant la taxe sur la valeur ajoutée est modifiée comme suit : </p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>à l'article 14, paragraphe 4, le montant de quatre millions deux cent mille francs est remplacé par le montant de cent mille euros ;</li>
+<li>à l'article 18, paragraphe 2, le montant de quatre cent mille francs est remplacé par le montant de dix mille euros ;</li>
+<li>à l'article 55, paragraphe 1, sous a) et b), les montants de cinquante mille francs et de cent francs sont remplacés respectivement par les montants de mille deux cents euros et de deux euros quarante cents ;</li>
+<li>à l'article 56ter, paragraphes 7 et 9, le montant de dix mille francs est remplacé par le montant de deux cent cinquante euros ;</li>
+<li>à l'article 57, paragraphes 1 et 2, les montants de quatre cent mille francs, un million de francs et six mille francs sont remplacés respectivement par les montants de dix mille euros, vingt-cinq mille euros et cent cinquante euros ;</li>
+<li>à l'article 77, paragraphes 1 et 2, les montants de deux mille francs, quatre mille francs et deux cent mille francs sont remplacés respectivement par les montants de cinquante euros, cent euros et cinq mille euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_30">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_30</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_30/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 30.</num>
+<alinea>
+<content>
+<p>Le troisième alinéa de l’article 109 de la <ref href="/eli/etat/leg/loi/1988/03/30/n1/jo" id="9389b8e7-8b59-4d56-bb7e-32c7fdd5f5d5" scl:verify="true">loi modifiée du 30 mars 1988</ref> relative aux organismes de placement collectif est modifié comme suit : <embeddedText>En outre, il peut être perçu par l’administration de l’enregistrement une amende fiscale de 0,2% sur le montant intégral des avoirs des organismes </embeddedText>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_31">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_31</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_31/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 31.</num>
+<alinea>
+<content>
+<p>L’article 13, Titre 1, article 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/1994/12/23/n1/jo" id="08b466a0-4cce-455d-aa3e-874420aa8006" scl:verify="true">loi du 23 décembre 1994</ref> concernant le budget des recettes et des dépenses de l’Etat pour l’exercice 1995 est modifié comme suit :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Le droit fixe d’enregistrement est porté à douze euros. Il peut être porté au-delà par règlement grand-ducal sans cependant dépasser vingt-quatre euros. Le montant du droit proportionnel ne peut pas être inférieur au droit fixe. »</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_32">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_32</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_32/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 32.</num>
+<alinea>
+<content>
+<p>A l’article 1<sup>er</sup> troisième alinéa sub 2° de la <ref href="/eli/etat/leg/loi/1929/07/31/n1/jo" id="7beac727-80cf-406b-ac89-04e16b20d95e" scl:verify="true">loi du 31 juillet 1929</ref> sur le régime fiscal des sociétés de participations financières (holding companies), les termes de deux mille francs sont remplacés par ceux de 48 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_33">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_33</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_33/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 33.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 33.</num>
+<alinea>
+<content>
+<p>A l’article 1<sup>er </sup>alinéa 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/1977/07/12/n2/jo" id="fcfea300-286b-4148-b488-815c0e29a8e5" scl:verify="true">loi du 12 juillet 1977</ref> modifiant et complétant</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>la <ref href="/eli/etat/leg/loi/1929/07/31/n1/jo" id="8bfe4182-9eb5-410e-9cd2-c6b46084c146" scl:verify="true">loi du 31 juillet 1929</ref> sur le régime fiscal des sociétés de participations financières (holding companies) modifiée par l’article 21 de la <ref href="/eli/etat/leg/loi/1971/12/29/n2/jo" id="7343e4a5-647e-4cf8-96a6-1e7392d50d1f" scl:verify="true">loi du 29 décembre 1971</ref> et</li>
+<li>l’<ref href="/eli/etat/leg/agd/1938/12/17/n2/jo" id="e69ccb5e-65ce-4ad7-bc81-0bcbeee88936">arrêté grand-ducal du 17 décembre 1938</ref> sur le régime fiscal des sociétés de participations financières (holding companies) qui reçoivent des apports comprenant l’avoir d’une société étrangère s’élevant à un milliard au moins, modifié par l’article 22 de la <ref href="/eli/etat/leg/loi/1971/12/29/n2/jo" id="7f2290b0-1348-48b7-baef-ebeabd11057f" scl:verify="true">loi du 29 décembre 1971</ref>
+</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>les termes de <embeddedText>un million de francs</embeddedText> et de <embeddedText>dix millions de francs</embeddedText> sont remplacés par ceux de <embeddedText>24.000 euros</embeddedText> respectivement par <embeddedText>240.000 euros</embeddedText>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_34">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_34</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_34/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 34.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 34.</num>
+<alinea>
+<content>
+<p>A l’article 106 de la <ref href="/eli/etat/leg/loi/1988/03/30/n1/jo" id="d8d880ed-718a-4170-8c68-cc00278d728e" scl:verify="true">loi modifiée du 30 mars 1988</ref> relative aux organismes de placement collectif, les termes de <embeddedText>cinquante mille (50.000.-) francs</embeddedText> sont remplacés par ceux de <embeddedText>1.200 euros</embeddedText>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_35">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_35</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_35/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 35.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 35.</num>
+<alinea>
+<content>
+<p>A l’article 86 de la <ref href="/eli/etat/leg/loi/1999/06/08/n3/jo" id="b91f5486-d32d-44ab-ae3f-b6306167c1c3" scl:verify="true">loi du 8 juin 1999</ref> créant les fonds de pension à capital variable (sepcav) et d’association d’épargne-pension (assep), les termes de cinquante mille (50.000.-) francs sont remplacés par ceux de 1.200 euros.</p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_iv.section_v">
+<num>
+<b>
+<i>Section V :</i>
+</b> </num>
+<heading scl:separator=" ">
+<b>
+<i>Economie</i>
+</b>
+</heading>
+<article id="art_36">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_36</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_36/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 36.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 36.</num>
+<alinea>
+<content>
+<p>A l’article 6 paragraphe 1 point d) de la <ref href="/eli/etat/leg/loi/1993/12/22/n2/jo" id="be7cf543-6db1-4dc8-a07c-7b93af32c75c" scl:verify="true">loi du 22 décembre 1993</ref> ayant pour objet la relance de l’investissement dans l’intérêt du développement économique, le montant de cinq cent millions de francs est remplacé par celui de douze millions cinq cent mille euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_37">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_37</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_37/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 37.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 37.</num>
+<alinea>
+<content>
+<p>A l’article 12 de la <ref href="/eli/etat/leg/loi/1993/07/27/n2/jo" id="8a096ea0-9b92-44d6-8e9c-4772377fb6f7" scl:verify="true">loi du 27 juillet 1993</ref> ayant pour objet le développement et la diversification économiques et l’amélioration de la structure générale de l’équilibre régional de l’économie telle qu’elle a été modifiée par la <ref href="/eli/etat/leg/loi/1997/02/21/n1/jo" id="15207416-9179-4193-9947-f0318d22e389" scl:verify="true">loi du 21 février 1997</ref>, les termes de <embeddedText>600 (six cents) millions de francs</embeddedText> sont remplacés par ceux de <embeddedText>15 (quinze) millions d’euros</embeddedText>. </p>
+</content>
+</alinea>
+</article>
+<article id="art_38">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_38</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_38/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 38.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 38.</num>
+<alinea>
+<content>
+<p>A l’article 8, alinéa 8 de la <ref href="/eli/etat/leg/loi/1983/07/07/n1/jo" id="18943690-8ca6-4bd3-b9ab-5eca7792bfa3" scl:verify="true">loi du 7 juillet 1983</ref> modifiant la <ref href="/eli/etat/leg/loi/1961/06/30/n1/jo" id="7ff47f28-216c-43e0-8209-2e318cf0cce4" scl:verify="true">loi du 30 juin 1961</ref> ayant pour objet, entre autres, d’abroger et de remplacer l’<ref href="/eli/etat/leg/agd/1944/11/08/n1/jo" id="f2a8ba82-49c4-49f1-98f1-8e684e296d27">arrêté grand-ducal du 8 novembre 1944</ref> portant création d’un office des prix, le montant de cinquante mille francs est remplacé par le montant de mille deux cent cinquante euros.</p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_iv.section_vi">
+<num>
+<b>
+<i>Section VI :</i>
+</b> </num>
+<heading scl:separator=" ">
+<b>
+<i>Environnement</i>
+</b>
+</heading>
+<article id="art_39">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_39</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_39/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 39.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 39.</num>
+<alinea>
+<content>
+<p>A l’article 13 alinéa 6 de la <ref href="/eli/etat/leg/loi/1925/07/20/n1/jo" id="267e17dc-d127-4302-bc49-0673729ab4fa" scl:verify="true">loi du 20 juillet 1925</ref> sur l’amodiation de la chasse et l’indemnisation des dégâts causés par le gibier telle qu’elle a été modifiée par la <ref href="/eli/etat/leg/loi/1997/12/22/n1/jo" id="1b981191-7f3f-4384-a483-d1b1ebd2b2d4" scl:verify="true">loi du 22 décembre 1997</ref>, les montants de 7.500 francs, 2.800 francs et 900 francs sont remplacés par ceux de 185 euros, 69 euros et 22 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_40">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_40</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_40/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 40.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 40.</num>
+<alinea>
+<content>
+<p>L’alinéa 8 de l’article 13 de la <ref href="/eli/etat/leg/loi/1925/07/20/n1/jo" id="6d4680b2-45e7-455c-b15d-b841b02f6b2f" scl:verify="true">loi du 20 juillet 1925</ref> sur l’amodiation de la chasse et l’indemnisation des dégâts causés par le gibier telle qu’elle a été modifiée par la <ref href="/eli/etat/leg/loi/1956/08/24/n1/jo" id="17666f1d-17fc-4ec3-a288-f867a9350876" scl:verify="true">loi du 24 août 1956</ref> est abrogé et remplacé comme suit :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Si la recette annuelle et le fonds de réserve ne suffisent pas au paiement intégral des indemnités et des frais, l’Etat fera l’avance des fonds nécessaires et les droits supplémentaires prévus ci-avant pourront être augmentés par règlement grand-ducal ».</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_41">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_41</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_41/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 41.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 41.</num>
+<alinea>
+<content>
+<p>L’article 5 de la <ref href="/eli/etat/leg/loi/1885/05/19/n3/jo" id="a3c02638-ab04-4341-a310-073334751015" scl:verify="true">loi du 19 mai 1885</ref> sur la chasse telle qu’elle a été modifiée et complétée par la suite est abrogé et remplacé comme suit :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Les permis de chasse valables pour un an seront passibles d’un droit de 19 euros. Les avis requis sont dispensés des droits de timbre et d’enregistrement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les permis de chasse de cinq jours, il sera perçu un droit de 4 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les permis de chasse d’un jour, il sera perçu un droit de chasse de 2 euros ».</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_42">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_42</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_42/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 42.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 42.</num>
+<alinea>
+<content>
+<p>L’article 2 de la <ref href="/eli/etat/leg/loi/1988/11/24/n1/jo" id="7dc1d432-e866-45dd-adcc-091376719521" scl:verify="true">loi modifiée du 24 novembre 1988</ref> concernant les taxes à percevoir sur les demandes en obtention des formules prescrites pour le transfert de déchets est remplacé comme suit : <embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Aucune des taxes prévues à l’article 1<sup>er</sup> ne pourra être ni inférieure à 2 euros ni supérieure à 12 euros. »</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_iv.section_vii">
+<num>
+<b>
+<i>Section VII :</i>
+</b>
+</num>
+<heading scl:separator=" ">
+<b>
+<i>Fonction Publique :</i>
+</b>
+</heading>
+<article id="art_43">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_43</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_43/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 43. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 43. </num>
+<alinea>
+<content>
+<p>L’article 9 bis paragraphe 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/2000/07/28/n1/jo" id="5780a4f7-cb46-411b-8883-073b309cb4a5" scl:verify="true">loi du 28 juillet 2000</ref> modifiant et complétant la <ref href="/eli/etat/leg/loi/1963/06/22/n1/jo" id="446df9d1-f970-4624-8fa9-63125b53de77" scl:verify="true">loi modifiée du 22 juin 1963</ref> fixant le régime des traitements des fonctionnaires de l’Etat est modifié comme suit :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Le fonctionnaire en activité de service bénéficie d’une allocation de repas dont le montant net, déduction faite d’un impôt forfaitaire libératoire de quatorze pour cent, est fixé à cent dix euros par mois. L’allocation n’est pas cumulable avec tout autre avantage en nature ou en espèces, analogue ou comparable. L’allocation de repas, non pensionnable, est exempte de cotisations d’assurance sociale. »</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_44">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_44</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_44/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 44.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 44.</num>
+<alinea>
+<content>
+<p>L’article 11 paragraphe 6 de la <ref href="/eli/etat/leg/loi/1963/06/22/n1/jo" id="28cdcefd-fa09-4a7f-925c-1423a2bb3bd7" scl:verify="true">loi modifiée du 22 juin 1963</ref> fixant le régime des traitements des fonctionnaires de l’Etat prend la teneur suivante :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Les chiffres résultant de l’application de la présente loi et de celle visée à l’article 2, paragraphe 2 ci-dessus sont établis en euros à deux décimales près, l’arrondi étant pratiqué conformément aux règles prévues à l’article 5 du <ref href="/eli/reg_ue/1997/1103/jo" id="98ed4ded-d55d-428c-b657-450b12675e2f">règlement (CE) N° 1103/97</ref> du Conseil du 17 juin 1997 fixant certaines dispositions relatives à l’introduction de l’euro».</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_45">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_45</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_45/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 45.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 45.</num>
+<alinea>
+<content>
+<p>L’article 37 première phrase de la <ref href="/eli/etat/leg/loi/1954/05/26/n2/jo" id="38b4d53d-6139-49ad-adc5-e4459e7dca0e" scl:verify="true">loi modifiée du 26 mai 1954</ref> réglant les pensions des fonctionnaires de l’Etat prend la teneur suivante :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Les pensions sont établies en euros à deux décimales près, l’arrondi étant pratiqué conformément aux règles prévues à l’article 5 du <ref href="https://legilux.public.lu/eli/reg_ue/1997/1103/jo" id="517c70ac-25c1-468f-9a96-dc3661fc8269">règlement (CE) N° 1103/97</ref> du Conseil du 17 juin 1997 fixant certaines dispositions relatives à l’introduction de l’euro ». </p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_46">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_46</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_46/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 46.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 46.</num>
+<alinea>
+<content>
+<p>L’article 65 première phrase de la <ref href="/eli/etat/leg/loi/1998/08/03/n10/jo" id="4dfeea0a-3a57-441b-b5a5-6f08a7ce3bb9" scl:verify="true">loi du 3 août 1998</ref> instituant des régimes de pension spéciaux pour les fonctionnaires de l’Etat et des communes ainsi que pour les agents de la Société nationale des Chemins de Fer luxembourgeois prend la teneur suivante :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Les pensions sont établies en euros à deux décimales près, l’arrondi étant pratiqué conformément aux règles prévues à l’article 5 du <ref href="https://legilux.public.lu/eli/reg_ue/1997/1103/jo" id="5d9de42b-33d0-47bb-8d85-d6cc269f8680">règlement (CE) N° 1103/97</ref> du Conseil du 17 juin 1997 fixant certaines dispositions relatives à l’introduction de l’euro ».</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_iv.section_viii">
+<num>
+<b>
+<i>Section VIII : </i>
+</b>
+</num>
+<heading scl:separator=" ">
+<b>
+<i>Intérieur :</i>
+</b>
+</heading>
+<article id="art_47">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_47</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_47/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 47.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 47.</num>
+<alinea>
+<content>
+<p>A l’article 106 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="dedd33b4-f46e-48e2-8236-6093916606ea">loi communale du 13 décembre 1988</ref> telle qu’elle a été modifiée par la suite, le montant de 300.000 francs qui figure aux points 1°, 2°, 4°, 10° et 11° est remplacé par celui de 7.500 euros et le montant de 150.000 francs qui figure au point 3° est remplacé par celui de 3.800 euros. </p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_iv.section_ix">
+<num>
+<b>
+<i>Section IX :</i>
+</b> </num>
+<heading scl:separator=" ">
+<b>
+<i>Justice</i>
+</b>
+</heading>
+<article id="art_48">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_48</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_48/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 48.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 48.</num>
+<alinea>
+<content>
+<p>A l’article 1834 du <ref href="/eli/etat/leg/code/civil" id="ce14abf2-e5b4-40f2-adac-3fdd5202b855">Code civil</ref>, le montant de cent cinquante francs est remplacé par le montant de 3,75 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_49">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_49</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_49/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 49.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 49.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1983/03/15/n2/jo" id="15646732-fb63-432c-8f82-fc334be95a99" scl:verify="true">loi modifiée du 15 mars 1983</ref> sur les armes et munitions est modifiée comme suit :</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>à l’article 23, alinéa 2, le montant de cent francs est remplacé par celui de deux euros et quarante cents et celui de mille francs par celui de vingt-quatre euros ;</li>
+<li> à l’article 25, le montant de cinq cents francs est remplacé par celui de douze euros et celui de cinq mille francs par celui de cent vingt euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_50">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_50</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_50/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 50.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 50.</num>
+<alinea>
+<content>
+<p>A l’article 16 de la <ref href="/eli/etat/leg/loi/1928/04/21/n2/jo" id="a42e8216-7399-4c5d-a0f7-cbe6c242308a" scl:verify="true">loi modifiée du 21 avril 1928</ref> sur les associations et les fondations sans but lucratif telle que modifiée, le montant de cinq cent mille francs est remplacé par le montant de douze mille cinq cents euros. </p>
+</content>
+</alinea>
+</article>
+<article id="art_51">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_51</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_51/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 51.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 51.</num>
+<alinea>
+<content>
+<p>L’article 39 de la <ref href="/eli/etat/leg/loi/1968/02/22/n1/jo" id="69327537-43df-4dd6-bd0e-6a1e872b97f1" scl:verify="true">loi du 22 février 1968</ref> sur la nationalité luxembourgeoise est modifié comme suit : <embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Les certificats sont passibles d'un droit dont le montant est fixé par règlement grand-ducal et qui ne pourra être supérieur à douze euros ».</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_52">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_52</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_52/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52.</num>
+<alinea>
+<content>
+<p>A l’article 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/1882/02/15/n1/jo" id="3af469bd-01c6-4f2f-a44c-983185b97c30" scl:verify="true">loi du 15 février 1882</ref> sur les loteries, le montant de deux cent cinquante mille francs est remplacé par le montant de six mille deux cent cinquante euros. </p>
+</content>
+</alinea>
+</article>
+<article id="art_53">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_53</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_53/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 53.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 53.</num>
+<alinea>
+<content>
+<p>A l’article 27 de la <ref href="/eli/etat/leg/loi/1955/02/14/n1/jo" id="07e7ca0a-e9a8-427a-97cd-63fc82aa779b" scl:verify="true">loi modifiée du 14 février 1955</ref> portant modification et coordination des dispositions légales et réglementaires en matière de baux à loyer, le montant de trente mille francs est remplacé par le montant de sept cent cinquante euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_54">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_54</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_54/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 54.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 54.</num>
+<alinea>
+<content>
+<p>A l’article 2 de la <ref href="/eli/etat/leg/loi/1898/06/10/n3/jo" id="7ec54f5d-e6f6-46aa-8300-6075b7226387" scl:verify="true">loi modifiée du 10 juin 1898</ref> concernant les dégâts accidentels causés à la propriété superficiaire par les travaux d’exploitation des mines, minières et carrières, le montant de trente mille francs est remplacé par le montant de sept cent cinquante euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_55">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_55</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_55/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 55.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 55.</num>
+<alinea>
+<content>
+<p>A l’article 14 de la <ref href="/eli/etat/leg/loi/1908/04/21/n3/jo" id="e8701aae-1759-4571-8e67-3024c2de4987" scl:verify="true">loi modifiée du 21 avril 1908</ref> concernant les vices rédhibitoires des animaux domestiques, le montant de trente mille francs est remplacé par le montant de sept cent cinquante euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_56">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_56</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_56/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 56.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 56.</num>
+<alinea>
+<content>
+<p>Aux articles 2, 3, 25 et 129 du <ref href="/eli/etat/leg/code/procedure_civile" id="db2a63c3-f813-4111-9a5e-c0c8f1274878">Nouveau Code de procédure civile</ref>, le montant de 30.000 francs est remplacé par celui de sept cent cinquante euros et le montant de 400.000 francs par celui de dix mille euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_57">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_57</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_57/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 57.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 57.</num>
+<alinea>
+<content>
+<p>Aux articles 2, 3 et 22 du titre préliminaire du <ref href="/eli/etat/leg/code/procedure_civile" id="354e5aac-6102-42d7-94da-0413eaa26a60">Code de procédure civile</ref> et à l’article 48 du <ref href="/eli/etat/leg/code/procedure_civile" id="4c9e6e4f-d355-4354-b831-184721eefd18">Code de procédure civile</ref>, le montant de trente mille francs est remplacé par celui de sept cent cinquante euros et le montant de quatre cent mille francs par celui de dix mille euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_58">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_58</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_58/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 58.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 58.</num>
+<alinea>
+<content>
+<p>Les dispositions des articles 40 à 44 de la présente loi sont applicables aux instances de premier degré ainsi qu’aux instances d’appel qui sont introduites à partir de la date d’entrée en vigueur de la présente loi, à condition toutefois, en ce qui concerne les instances d’appel, que le jugement attaqué n’ait pas été lui-même rendu antérieurement à cette date.</p>
+</content>
+</alinea>
+</article>
+<article id="art_59">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_59</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_59/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 59.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 59.</num>
+<alinea>
+<content>
+<p>Les affaires civiles et commerciales contradictoires pendantes devant les tribunaux d’arrondissement qui tombent sous la compétence des juges de paix d’après les dispositions de la présente loi seront transférées aux justices de paix territorialement compétentes par les soins des greffes respectifs, si les mandataires de toutes les parties en cause en font la demande par lettre conjointe sur papier libre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si la demande est faite par le mandataire d’une seule partie, les autres parties ou leurs mandataires seront convoqués avec lui au cabinet du président de la chambre concernée qui statuera par note au plumitif après avoir entendu les comparants.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le greffier de la justice de paix convoquera les parties à l’audience, conformément à l’article 74-2 du <ref href="/eli/etat/leg/code/procedure_civile" id="c628191e-0b90-4bf9-861d-79563710de54">Code de procédure civile</ref> et l'article 170 du <ref href="/eli/etat/leg/code/procedure_civile" id="aea75663-0e42-4d11-ba9c-879f034ed5b4">Nouveau Code de procédure civile</ref>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_60">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_60</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_60/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 60.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 60.</num>
+<alinea>
+<content>
+<p>A l’article 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/1953/06/26/n2/jo" id="5d41d60b-3e36-4fa1-9e20-90515a5c9f1a" scl:verify="true">loi du 26 juin 1953</ref> portant fixation des taxes à percevoir en matière de cartes d’identité pour étrangers, le montant de 1.200 fr. est remplacé par le montant de 29 euros, le montant de 1.080 fr. par celui de 26 euros, celui de 120 fr. par celui de 3 euros, celui de 400 fr. par celui de 9 euros, celui de 320 fr. par celui de 7 euros et celui de 80 fr. par celui de 2 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_61">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_61</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_61/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 61.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 61.</num>
+<alinea>
+<content>
+<p>A l’article 3 de la <ref href="/eli/etat/leg/loi/1982/03/18/n5/jo" id="c5b23a1e-eb62-41db-8116-283f816ab110" scl:verify="true">loi du 18 mars 1982</ref> relative aux changements de noms et de prénoms et modifiant l’article 10 de l’<ref href="/eli/etat/leg/agd/1945/05/12/n2/jo" id="03b810a1-cb24-430e-99b9-f8ffe9f21370">arrêté grand-ducal du 12 mai 1945</ref> portant nouvelle fixation de certains droits de timbre et des droits de chancellerie, l’expression <embeddedText>de 2.500 à 7.500 francs</embeddedText> est remplacée par l’expression de <embeddedText>61 à 185 euros</embeddedText>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_62">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_62</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_62/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 62.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 62.</num>
+<alinea>
+<content>
+<p>L’article 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/1998/12/10/n1/jo" id="a5e32ccf-8cf9-41a2-a3f5-e87adc6a0f6e" scl:verify="true">loi du 10 décembre 1998</ref> relative- à la conversion par les sociétés commerciales de leur capital en euros et modifiant la <ref href="/eli/etat/leg/loi/1915/08/10/n1/jo" id="e701110a-67f8-462d-948f-962b8583d32a" scl:verify="true">loi du 10 août 1915</ref> concernant les sociétés commerciales telle que modifiée- aux différences résultant de l’application des règles d’arrondi est complétée comme suit : <embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Par dérogation à l’article 1<sup>er</sup>, paragraphe (1), le conseil d’administration ou le ou les gérants peuvent être autorisés à procéder jusqu’au 30 juin 2002 au plus tard à une augmentation de capital dans les limites prévues au paragraphe (1) par décision, actée sous seing privé, de l’assemblée générale, ou, dans le cas des sociétés à responsabilité limitée n’ayant pas plus de 25 associés, des associés, prise avant cette date. »</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_iv.section_x">
+<num>
+<b>
+<i>Section X : </i>
+</b>
+</num>
+<heading scl:separator=" ">
+<b>
+<i>Logement</i>
+</b>
+</heading>
+<article id="art_63">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_63</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_63/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 63.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 63.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1979/02/25/n3/jo" id="c140a1dd-0399-48fc-8858-cce3b867a19c" scl:verify="true">loi modifiée du 25 février 1979</ref> concernant l’aide au logement est modifiée comme suit :</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>à l’article 9 alinéa 2, le montant de cinq cent mille francs est remplacé par celui de douze mille cinq cents euros; </li>
+<li>à l’article 12bis, le montant de 75.000 francs est remplacé par celui de 1.900 euros ;</li>
+<li>à l’article 56 alinéa 2, le montant de quatre milliards cinq cent millions de francs est remplacé par celui de cent douze millions d’euros ;</li>
+<li>à l’article 57, le montant de 1 milliard de francs est remplacé par celui de vingt-cinq millions d’euros ;</li>
+<li>à l’article 65 alinéa 3, le montant d’un million de francs est remplacé par celui de vingt-cinq mille euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_64">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_64</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_64/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 64.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 64.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1998/12/10/n2/jo" id="9f0e4e73-e2da-422f-960a-1e49f0860813">loi du 10 décembre 1998</ref> portant création de l’établissement public dénommé « Fonds d’assainissement de la cité Syrdall » est modifiée comme suit :</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>à l’article 7 alinéas 1<sup>er</sup> et 2, le montant de trois cent millions de francs est à remplacé par celui de sept millions cinq cent mille euros ;</li>
+<li>à l’article 9, le montant de dix millions de francs est remplacé par celui de deux cent cinquante mille euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_iv.section_xi">
+<num>
+<b>
+<i>Section XI :</i>
+</b>
+</num>
+<heading scl:separator=" ">
+<b>
+<i>Sécurité Sociale</i>
+</b>
+</heading>
+<article id="art_65">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_65</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_65/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 65. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 65. </num>
+<alinea>
+<content>
+<p>Le <ref href="/eli/etat/leg/code/securite_sociale" id="d8841d38-c7cc-4b0b-9071-e94c58287df2">Code des assurances sociales</ref> est modifié comme suit :</p>
+<ol scl:start="1" scl:symbol="(1)">
+<li>à l’article 83, alinéa 2, le montant de trente mille francs est remplacé par celui de 750 euros ;</li>
+<li>à l’art 100, la deuxième phrase du 1<sup>er</sup> alinéa prend la teneur suivante :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Les paiements sont effectués en euros à deux décimales près. Les fractions de cents sont arrondies vers le haut si elles sont supérieures ou égales à cinq millièmes d’euros. Les fractions de cents sont arrondies vers le bas si elles sont strictement inférieures à cinq millièmes d’euros » ; </p>
+</content>
+</alinea>
+</embeddedStructure>
+</li>
+<li>l’art 208, alinéa 1 est complété de la façon suivante :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Les paiements sont effectués en euros à deux décimales près. Les fractions de cents sont arrondies vers le haut si elles sont supérieures ou égales à cinq millièmes d’euros. Les fractions de cents sont arrondies vers le bas si elles sont strictement inférieures à cinq millièmes d’euros » ;</p>
+</content>
+</alinea>
+</embeddedStructure>
+</li>
+<li>à l’article 278, alinéa 1, le montant de trente mille francs est remplacé par celui de 750 euros ;</li>
+<li>à l’article 294, alinéa 3, le montant de trente mille francs est remplacé par celui de 750 euros ;</li>
+<li>à l’article 312, alinéa 1, le montant de dix mille francs est remplacé par celui de 251 euros ;</li>
+<li>l’article 315, alinéas 1 et 2 prend la teneur suivante :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« Sont punis d’un emprisonnement d’un mois à cinq ans et d’une amende de 251 euros à 15.000 euros, à moins qu’une peine plus forte ne résulte d’une autre disposition légale, ceux qui ont frauduleusement amené les organismes de sécurité sociale à fournir des prestations, une pension, des secours ou d’autres avantages qui n’étaient pas dus ou n’étaient dus qu’en partie.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La tentative de ce délit sera punie d’un emprisonnement de huit jours à deux ans et d’une amende de 251 euros à 10.000 euros. »</p>
+</content>
+</alinea>
+</embeddedStructure>
+</li>
+<li>l’article 332, alinéa 3 prend la teneur suivante :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« La cotisation individuelle est comptée en euros à deux décimales près. Les fractions de cents sont arrondies vers le haut si elles sont supérieures ou égales à cinq millièmes d’euros. Les fractions de cents sont arrondies vers le bas si elles sont strictement inférieures à cinq millièmes d’euros. » ;</p>
+</content>
+</alinea>
+</embeddedStructure>
+</li>
+<li>à l’article 382, alinéa 3, le montant de trente mille francs est remplacé par celui de 750 euros.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</section>
+</chapter>
+<chapter id="chapitre_v">
+<num>
+<b>Chapitre V :</b>
+</num>
+<heading scl:separator=" ">
+<b>Dispositions transitoires :</b>
+</heading>
+<article id="art_66">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_66</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_66/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 66.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 66.</num>
+<alinea>
+<content>
+<p> « Pour les unités économiques relevant de la propriété foncière dont la valeur unitaire a été fixée avant le 1<sup>er</sup> janvier 2002, la contrevaleur en euros des valeurs unitaires sera déterminée par application du taux de change à la valeur arrondie de ces mêmes valeurs unitaires. La contrevaleur en euros est arrondie à l’euro inférieur. »</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_vi">
+<num>
+<b>Chapitre VI :</b>
+</num>
+<heading scl:separator=" ">
+<b>Dispositions abrogatoires</b>
+</heading>
+<alinea>
+<content>
+<p>Sont abrogées les dispositions suivantes :</p>
+</content>
+</alinea>
+<article id="art_67">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_67</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_67/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 67.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 67.</num>
+<paragraph id="paragraph_7">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’article 2 de la <ref href="/eli/etat/leg/loi/1801/03/18/n1/jo" id="936a9a87-fb9e-467a-a939-8b876fbc8eb3">loi du 27 ventôse an IX</ref> relative à la perception des droits d’enregistrement est abrogé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’article 3 de la <ref href="/eli/etat/leg/loi/1801/03/18/n1/jo" id="2fe5cbef-f5b4-4508-b256-a15851a886a2">loi du 27 ventôse an IX</ref> relative à la perception des droits d’enregistrement est abrogé.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_68">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_68</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_68/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 68.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 68.</num>
+<paragraph id="paragraph_9">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’article 6 de la <ref href="/eli/etat/leg/loi/1848/12/26/n5/jo" id="6cff7a75-dc5b-4aa6-a3c3-1a73214c9c79" scl:verify="true">loi du 26 décembre 1848</ref> réduisant en francs les droits de timbre, d’enregistrement, de greffe, d’hypothèques ainsi que les amendes y relatives, fixés en florins est abrogé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(2)</num>
+<alinea>
+<content>
+<p> L’article 8 de la <ref href="/eli/etat/leg/loi/1848/12/26/n5/jo" id="80ca5d47-5aae-4979-82b0-8b24076a969a" scl:verify="true">loi du 26 décembre 1848</ref> réduisant en francs les droits de timbre, d’enregistrement, de greffe, d’hypothèques ainsi que les amendes y relatives fixés en florins est abrogé.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_69">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_69</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_69/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 69.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 69.</num>
+<alinea>
+<content>
+<p>L’article 5 de la l<ref href="/eli/etat/leg/loi/1798/12/12/n1/jo" id="3b347a6d-dec0-41f0-b6bc-0764050f2440">oi du 22 frimaire an VII</ref>, organique de l’enregistrement est abrogé.</p>
+</content>
+</alinea>
+</article>
+<article id="art_70">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_70</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_70/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 70.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 70.</num>
+<alinea>
+<content>
+<p>L’article 137 du <ref href="/eli/etat/leg/code/procedure_penale" id="731fa538-8e90-4a23-9efa-1f5321977bb2">Code d’instruction criminelle</ref> est abrogé.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_vii">
+<num>
+<b>Chapitre VII : </b>
+</num>
+<heading scl:separator=" ">
+<b>Dispositions finales</b>
+</heading>
+<article id="art_71">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_71</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_71/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 71. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 71. </num>
+<alinea>
+<content>
+<p>La référence à la présente loi pourra se faire sous une forme abrégée en utilisant les termes « loi relative au basculement en euro ».</p>
+</content>
+</alinea>
+</article>
+<article id="art_72">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_72</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16/art_72/20020101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/08/01/n16</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 72.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 72.</num>
+<alinea>
+<content>
+<p> La présente loi entre en vigueur le 1<sup>er</sup> janvier 2002. </p>
+<p>
+<mod class="mod-start" for="#pm1"/>Par dérogation aux dispositions de la présente loi, les montants monétaires exprimés en francs dans des textes légaux et réglementaires relevant de la compétence de l’Administration des contributions directes, sont – pour autant que de besoin – convertis en euro par application du taux de change strict (1 euro = 40,3399 francs) dans la mesure où ces montants sont en relation avec une imposition de l’année d’imposition 2001 ou d’une année d’imposition antérieure.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

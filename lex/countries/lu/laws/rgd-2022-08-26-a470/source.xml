@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#author" href="#mdda"/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+                        <scl:jolux scl:name="dateDocument">2022-08-26</scl:jolux>
+                        <scl:jolux scl:name="publicationDate"/>
+                        <scl:jolux scl:name="responsibilityOf"/>
+                        <scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/621</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/974</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/25</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1412</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/4009</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/800</scl:jolux>
+                        <scl:jolux xmlns="http://www.w3.org/1999/xhtml" xmlns:akoma="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:xopusAttr="http://www.xopus.com/xmlns/id/attr" scl:name="dateEntryInForce"/>
+                        <scl:jolux scl:name="dateApplicability">2022-08-30</scl:jolux>
+                    </scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:lg="fra" scl:name="title">Version rectifiée applicable au 30/08/2022 : Règlement grand-ducal du 26 août 2022 fixant les calendriers des vacances et congés scolaires pour les années scolaires 2022/2023, 2023/2024 et 2024/2025.</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2004/06/25/n9/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2007/07/11/n2/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2009/02/06/n3/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2006/07/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2016/02/26/n1/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2022/05/27/a250/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2018/07/20/a664/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2017/06/16/a592/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2015/03/25/n3/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2021/06/14/a452/jo</scl:jolux>
+<scl:jolux scl:name="titleShort">Règlement grand-ducal du 26 août 2022 fixant les calendriers des vacances et congés scolaires pour les années scolaires 2022/2023, 2023/2024 et 2024/2025.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2022-08-26" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2022-08-30" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rect/2022/08/26/a474/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2022/08/26/a470/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rect/2022/08/26/a474/jo" id="rp2" showAs="Règlement grand-ducal du 26 août 2022 fixant les calendriers des vacances et congés scolaires pour les années scolaires 2022/2023, 2023/2024 et 2024/2025 - RECTIFICATIF."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2022-08-30|2022-08-26|RECT|474">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rect/2022/08/26/a474/jo">Règlement grand-ducal du 26 août 2022 fixant les calendriers des vacances et congés scolaires pour les années scolaires 2022/2023, 2023/2024 et 2024/2025 - RECTIFICATIF.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version rectifiée applicable au 30/08/2022 : Règlement grand-ducal du 26 août 2022 fixant les calendriers des vacances et congés scolaires pour les années scolaires 2022/2023, 2023/2024 et 2024/2025.</p>
+</longTitle>
+</preface>
+<preamble class="show_in_pdf" style="show_in_pdf">
+<container name="">
+<p>Nous Henri, Grand-Duc de Luxembourg, Duc de Nassau,</p>
+<p>Vu la <ref href="/eli/etat/leg/loi/2004/06/25/n9/jo" id="85a15cf3-d76c-4dae-9c96-9aa28b54f27c" scl:verify="true">loi modifiée du 25 juin 2004</ref> portant organisation des lycées, et notamment son article 10 ;</p>
+<p>Vu la <ref href="/eli/etat/leg/loi/2007/07/11/n2/jo" id="4ad60c01-4ac1-42fb-9e50-22ee24a13a1c" scl:verify="true">loi modifiée du 11 juillet 2007</ref> portant a) approbation de l’Accord entre le Gouvernement du Grand-Duché de Luxembourg et le Gouvernement de la Sarre concernant la création d’un établissement d’enseignement secondaire germano-luxembourgeois, signé à Perl, le 4 décembre 2006 ; b) approbation du Protocole entre le Gouvernement du Grand-Duché de Luxembourg et le « Landkreis Merzig-Wadern » sur les immeubles existants et sur le financement des projets immobiliers ainsi que des dépenses courantes du « Deutsch-Luxemburgisches Schengen-Lyzeum Perl », signé à Perl, le 4 décembre 2006, et notamment son article 4 ;</p>
+<p>Vu la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="4c9c2a4f-844b-4e05-ad8c-08db45f280f5" scl:verify="true">loi modifiée du 6 février 2009</ref> portant organisation de l’enseignement fondamental, et notamment son article 38 ;</p>
+<p>Vu la <ref href="/eli/etat/leg/loi/2018/07/20/a664/jo" id="6bf2f84d-b54d-4eb0-9f44-14cfdc63ac93" scl:verify="true">loi du 20 juillet 2018</ref> portant création de Centres de compétences en psycho-pédagogie spécialisée en faveur de l’inclusion scolaire, et notamment son article 16 ;</p>
+<p>Vu la <ref href="/eli/etat/leg/loi/2006/07/21/n1/jo" id="0ae452bd-2778-4339-97ed-c92dceee40b8" scl:verify="true">loi modifiée du 21 juillet 2006</ref> autorisant le Gouvernement à organiser des classes internationales préparant au diplôme du baccalauréat international ;</p>
+<p>Vu la <ref href="/eli/etat/leg/loi/2016/02/26/n1/jo" id="b4f7c819-9287-4ede-be6a-d5843b890730" scl:verify="true">loi modifiée du 26 février 2016</ref> portant création d’une école internationale publique à Differdange ;</p>
+<p>Vu la <ref href="/eli/etat/leg/loi/2022/05/27/a250/jo" id="9cd93f03-6eb2-488e-8e19-35463604c39a" scl:verify="true">loi du 27 mai 2022</ref> portant : 1° organisation de l’enseignement musical dans le secteur communal ; 2° modification de la <ref href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="4399dece-c243-4be3-a617-ee39cee3e799" scl:verify="true">loi modifiée du 25 mars 2015</ref> fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État et notamment son article 2 ;</p>
+<p>Vu l’avis de la Chambre des salariés ;</p>
+<p>Les avis de la Chambre d’agriculture, de la Chambre de commerce, de la Chambre des fonctionnaires et employés publics, et de la Chambre des métiers ayant été demandés ;</p>
+<p>Vu l’article 1<sup>er</sup>, paragraphe 1<sup>er</sup>, de la <ref href="/eli/etat/leg/loi/2017/06/16/a592/jo" id="e21e960d-c0eb-47da-b4f7-8787a3fe3e18" scl:verify="true">loi du 16 juin 2017</ref> sur l’organisation du Conseil d’État et considérant qu’il y a urgence ;</p>
+<p>Sur le rapport de Notre Ministre de l’Éducation nationale, de l’Enfance et de la Jeunesse et après délibération du Gouvernement en conseil ;</p>
+</container>
+<formula name="">
+<p>Arrêtons :</p>
+</formula>
+</preamble>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_1er/20220830</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Le début et la fin de l’année scolaire et les calendriers des vacances et congés scolaires au Grand-Duché de Luxembourg sont fixés comme suit :</p>
+<ol scl:space-item="3" scl:start="1" scl:symbol="1°">
+<li>Pour l’année scolaire 2022/2023, l’année débute le jeudi 15 septembre 2022 et finit le vendredi 14 juillet 2023 et le calendrier est le suivant :<ol scl:space-item="3" scl:start="1" scl:symbol="a)">
+<li>le congé de la Toussaint commence le samedi 29 octobre 2022 et finit le dimanche 6 novembre 2022 ;</li>
+<li>les vacances de Noël commencent le samedi 24 décembre 2022 et finissent le dimanche 8 janvier 2023 ;</li>
+<li>le congé de Carnaval commence le samedi 11 février 2023 et finit le dimanche 19 février 2023 ;</li>
+<li>les vacances de Pâques commencent le samedi 1<sup>er</sup> avril 2023 et finissent le dimanche 16 avril 2023 ;</li>
+<li>jour férié légal : lundi 1<sup>er</sup> mai 2023 ;</li>
+<li>jour férié légal de la Journée de l’Europe : mardi 9 mai 2023 ;</li>
+<li>jour de congé pour l’Ascension : jeudi 18 mai 2023 ;</li>
+<li>le congé de la Pentecôte commence le samedi 27 mai 2023 et finit le dimanche 4 juin 2023 ;</li>
+<li>jour de congé pour la célébration publique de l’anniversaire de S.A.R. le Grand-Duc : vendredi 23 juin 2023 ;</li>
+<li>les vacances d’été commencent le samedi 15 juillet 2023 et finissent le jeudi 14 septembre 2023.</li>
+</ol>
+</li>
+<li>Pour l’année scolaire 2023/2024, l’année débute le vendredi 15 septembre 2023 et finit le lundi 15 juillet 2024 et le calendrier est le suivant :<ol scl:space-item="3" scl:start="1" scl:symbol="a)">
+<li> le congé de la Toussaint commence le samedi 28 octobre 2023 et finit le dimanche 5 novembre 2023 ;</li>
+<li>les vacances de Noël commencent le samedi 23 décembre 2023 et finissent le dimanche 7 janvier 2024 ;</li>
+<li>le congé de Carnaval commence le samedi 10 février 2024 et finit le dimanche 18 février 2024 ;</li>
+<li>les vacances de Pâques commencent le samedi 30 mars 2024 et finissent le dimanche 14 avril 2024 ;</li>
+<li>jour férié légal : mercredi le 1<sup>er</sup> mai 2024 ;</li>
+<li>jour férié légal de la Journée de l’Europe / jour de congé pour l’Ascension : jeudi 9 mai 2024 ;</li>
+<li>jour de congé pour le lundi de Pentecôte : lundi 20 mai 2024 ;</li>
+<li>le congé de la Pentecôte commence le samedi 25 mai 2024 et finit le dimanche 2 juin 2024 ;</li>
+<li>les vacances d’été commencent le mardi 16 juillet 2024 et finissent le dimanche 15 septembre 2024.</li>
+</ol>
+</li>
+<li>Pour l’année scolaire 2024/2025, l’année débute le lundi 16 septembre 2024 et finit le mardi 15 juillet 2025 et le calendrier est le suivant :<ol scl:space-item="3" scl:start="1" scl:symbol="a)">
+<li> le congé de la Toussaint commence le samedi 26 octobre 2024 et finit le dimanche 3 novembre 2024 ;</li>
+<li>les vacances de Noël commencent le samedi 21 décembre 2024 et finissent le dimanche 5 janvier 2025 ;</li>
+<li>le congé de Carnaval commence le samedi 15 février 2025 et finit le dimanche 23 février 2025 ;</li>
+<li>les vacances de Pâques commencent le samedi 5 avril 2025 et finissent le dimanche 20 avril 2025 ;</li>
+<li>jour férié légal le lundi de Pâques : lundi 21 avril 2025 ;</li>
+<li>jour férié légal : jeudi 1<sup>er</sup> mai 2025 ;</li>
+<li>jour férié légal de la Journée de l’Europe : vendredi 9 mai 2025 ;</li>
+<li>le congé de la Pentecôte commence le samedi 24 mai 2025 et finit le dimanche 1<sup>er</sup> juin 2025 ;</li>
+<li>jour férié légal le lundi de Pentecôte : lundi 9 juin 2025 ;</li>
+<li>jour de congé pour la célébration publique de l’anniversaire de S.A.R. le Grand-Duc : lundi 23 juin 2025 ;</li>
+<li>les vacances d’été commencent le mercredi 16 juillet 2025 et finissent le dimanche 14 septembre 2025.</li>
+</ol>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_2/20220830</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Par dérogation aux dispositions de l’article 1<sup>er</sup>, la date de début et de fin de l’année scolaire et les calendriers des vacances et congés scolaires au « Deutsch-Luxemburgisches Schengen-Lyzeum Perl » sont fixés comme suit :</p>
+<ol scl:space-item="3" scl:start="1" scl:symbol="1°">
+<li>Pour l’année scolaire 2022/2023, l’année débute le lundi 5 septembre 2022 et finit le vendredi 21 juillet 2023 et le calendrier est le suivant :<ol scl:space-item="3" scl:start="1" scl:symbol="a)">
+<li>jour de congé pour la fête nationale allemande : lundi 3 octobre 2022 ;</li>
+<li>le congé de la Toussaint commence le samedi 29 octobre 2022 et finit le dimanche 6 novembre 2022 ;</li>
+<li>les vacances de Noël commencent le samedi 24 décembre 2022 et finissent le dimanche 8 janvier 2023 ;</li>
+<li>le congé de Carnaval commence le samedi 11 février 2023 et finit le dimanche 19 février 2023 ;</li>
+<li>les vacances de Pâques commencent le samedi 1<sup>er</sup> avril 2023 et finissent le mercredi 12 avril 2023 ;</li>
+<li>jour férié légal : lundi 1<sup>er</sup> mai 2023 ;</li>
+<li>jour férié de la Journée de l’Europe : mardi 9 mai 2023 ;</li>
+<li>jour de congé pour l’Ascension : jeudi 18 mai 2023 ;</li>
+<li>le congé de la Pentecôte commence le samedi 27 mai 2023 et finit le dimanche 4 juin 2023 ;</li>
+<li>jour de congé pour la Fête-Dieu : jeudi 8 juin 2023 ;</li>
+<li>jour de congé pour la célébration publique de l’anniversaire de S.A.R. le Grand-Duc : vendredi 23 juin 2023 ;</li>
+<li>les vacances d’été commencent le samedi 22 juillet 2023 et finissent le dimanche 10 septembre 2023.</li>
+</ol>
+</li>
+<li>Pour l’année scolaire 2023/2024, l’année débute le lundi 11 septembre 2023 et finit le vendredi 12 juillet 2024 et le calendrier est le suivant :<ol scl:space-item="3" scl:start="1" scl:symbol="a)">
+<li>jour de congé pour la fête nationale allemande : mardi 3 octobre 2023 ;</li>
+<li>le congé de la Toussaint commence le samedi 28 octobre 2023 et finit le dimanche 5 novembre 2023 ;</li>
+<li>les vacances de Noël commencent le samedi 23 décembre 2023 et finissent le dimanche 7 janvier 2024 ;</li>
+<li>le congé de Carnaval commence le samedi 10 février 2024 et finit le dimanche 18 février 2024 ;</li>
+<li>les vacances de Pâques commencent le samedi 23 mars 2024 et finissent le dimanche 7 avril 2024 ;</li>
+<li>jour férié légal : mercredi 1<sup>er</sup> mai 2024 ;</li>
+<li>jour férié de la Journée de l’Europe / jour de congé pour l’Ascension : jeudi 9 mai 2024 ;</li>
+<li>le congé de la Pentecôte commence le samedi 25 mai 2024 et finit le dimanche 7 juin 2024 ;</li>
+<li>les vacances d’été commencent le samedi 13 juillet 2024 et finissent le dimanche 1<sup>er</sup> septembre 2024.</li>
+</ol>
+</li>
+<li>Pour l’année scolaire 2024/2025, l’année débute le lundi 2 septembre 2024 et finit le vendredi 4 juillet 2025 et le calendrier est le suivant :<ol scl:space-item="3" scl:start="1" scl:symbol="a)">
+<li>jour de congé pour la fête nationale allemande : le jeudi 3 octobre 2024 ;</li>
+<li>jour de congé pour la Toussaint : vendredi 1<sup>er</sup> novembre 2024 ;</li>
+<li>jour de congé pour vendredi saint : vendredi 18 avril 2025 ;</li>
+<li>jour férié légal le lundi de Pâques : lundi 21 avril 2025 ;</li>
+<li>jour férié légal : le jeudi 1<sup>er</sup> mai 2025 ;</li>
+<li>jour férié légal de la Journée de l’Europe : vendredi 9 mai 2025 ;</li>
+<li>jour de congé pour l’Ascension : jeudi 29 mai 2025 ;</li>
+<li>jour de congé pour lundi de Pentecôte : lundi 9 juin 2025 ;</li>
+<li>jour de congé pour la Fête-Dieu : jeudi 19 juin 2025 ;</li>
+<li>jour de congé pour la célébration publique de l’anniversaire de S.A.R. le Grand-Duc : lundi 23 juin 2025 ;</li>
+<li>les vacances d’été commencent le samedi 5 juillet 2025 et finissent le dimanche 25 août 2025.</li>
+</ol>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_3/20220830</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Par dérogation aux dispositions de l’article 1<sup>er</sup>, le début et la fin de l’année scolaire à « l’École internationale de Differdange et Esch-sur-Alzette » sont fixés comme suit :</p>
+<ol scl:space-item="3" scl:start="1" scl:symbol="1°">
+<li>Pour l’année scolaire 2022/2023, l’année débute le lundi 5 septembre 2022 et finit le vendredi 7 juillet 2023 ;</li>
+<li>Pour l’année scolaire 2023/2024, l’année débute le lundi 4 septembre 2023 et finit le vendredi 5 juillet 2024 ;</li>
+<li>Pour l’année scolaire 2024/2025, l’année débute le jeudi 5 septembre 2024 et finit le vendredi 4 juillet 2025.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_4/20220830</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>Par dérogation aux dispositions de l’article 1<sup>er</sup>, la date de début et de fin de l’année scolaire et les calendriers des vacances et congés scolaires dans l’enseignement musical sont fixés comme suit :</p>
+<ol scl:space-item="3" scl:start="1" scl:symbol="1°">
+<li>Pour l’année scolaire 2022/2023, l’année débute le jeudi 15 septembre 2022 et finit le samedi 15 juillet 2023 et le calendrier est le suivant :<ol scl:space-item="3" scl:start="1" scl:symbol="a)">
+<li>le congé de la Toussaint commence le dimanche 30 octobre 2022 et finit le dimanche 6 novembre 2022 ;</li>
+<li>les vacances de Noël commencent le samedi 24 décembre 2022 et finissent le dimanche 8 janvier 2023 ;</li>
+<li>le congé de Carnaval commence le dimanche 12 février 2023 et finit le dimanche 19 février 2023 ;</li>
+<li>les vacances de Pâques commencent le dimanche 2 avril 2023 et finissent le dimanche 16 avril 2023 ;</li>
+<li>jour férié légal : lundi 1<sup>er</sup> mai 2023 ;</li>
+<li>jour férié légal de la Journée de l’Europe : mardi 9 mai 2023 ;</li>
+<li>jour de congé pour l’Ascension : jeudi 18 mai 2023 ;</li>
+<li>le congé de la Pentecôte commence le dimanche 28 mai 2023 et finit le dimanche 4 juin 2023 ;</li>
+<li>jour de congé pour la célébration publique de l’anniversaire de S.A.R. le Grand-Duc : vendredi 23 juin 2023 ;</li>
+<li>les vacances d’été commencent le dimanche 16 juillet 2023 et finissent le jeudi 14 septembre 2023.</li>
+</ol>
+</li>
+<li>Pour l’année scolaire 2023/2024, l’année débute le vendredi 15 septembre 2023 et finit le lundi 15 juillet 2024 et le calendrier est le suivant :<ol scl:space-item="3" scl:start="1" scl:symbol="a)">
+<li> le congé de la Toussaint commence le dimanche 29 octobre 2023 et finit le dimanche 5 novembre 2023 ;</li>
+<li>les vacances de Noël commencent le dimanche 24 décembre 2023 et finissent le dimanche 7 janvier 2024 ;</li>
+<li>le congé de Carnaval commence le dimanche 11 février 2024 et finit le dimanche 18 février 2024 ;</li>
+<li>les vacances de Pâques commencent le dimanche 31 mars 2024 et finissent le dimanche 14 avril 2024 ;</li>
+<li>jour férié légal : mercredi le 1<sup>er</sup> mai 2024 ;</li>
+<li>jour férié légal de la Journée de l’Europe / jour de congé pour l’Ascension : jeudi 9 mai 2024 ;</li>
+<li>jour de congé pour le lundi de Pentecôte : lundi 20 mai 2024 ;<mod class="mod-start" for="#pm1"/>
+</li>
+<li>le congé de la Pentecôte commence le dimanche 26 mai 2024 et finit le dimanche 2 juin 2024 ;<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</li>
+<li>les vacances d’été commencent le mardi 16 juillet 2024 et finissent le dimanche 15 septembre 2024.</li>
+</ol>
+</li>
+<li>Pour l’année scolaire 2024/2025, l’année débute le lundi 16 septembre 2024 et finit le mardi 15 juillet 2025 et le calendrier est le suivant :<ol scl:space-item="3" scl:start="1" scl:symbol="a)">
+<li> le congé de la Toussaint commence le dimanche 27 octobre 2024 et finit le dimanche 3 novembre 2024 ;</li>
+<li>les vacances de Noël commencent le dimanche 22 décembre 2024 et finissent le dimanche 5 janvier 2025 ;</li>
+<li>le congé de Carnaval commence le dimanche 16 février 2025 et finit le dimanche 23 février 2025 ;</li>
+<li>les vacances de Pâques commencent le dimanche 6 avril 2025 et finissent le dimanche 20 avril 2025 ;</li>
+<li>jour férié légal le lundi de Pâques : lundi 21 avril 2025 ;</li>
+<li>jour férié légal : jeudi 1<sup>er</sup> mai 2025 ;</li>
+<li>jour férié légal de la Journée de l’Europe : vendredi 9 mai 2025 ;</li>
+<li>le congé de la Pentecôte commence le dimanche 25 mai 2025 et finit le dimanche 1<sup>er</sup> juin 2025 ;</li>
+<li>jour férié légal le lundi de Pentecôte : lundi 9 juin 2025 ;</li>
+<li>jour de congé pour la célébration publique de l’anniversaire de S.A.R. le Grand-Duc : lundi 23 juin 2025 ;</li>
+<li>les vacances d’été commencent le mercredi 16 juillet 2025 et finissent le dimanche 14 septembre 2025.</li>
+</ol>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_5/20220830</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Le <ref href="/eli/etat/leg/rgd/2021/06/14/a452/jo" id="81882be5-4ba0-4f1c-9b51-0e7b23c44ff0">règlement grand-ducal du 14 juin 2021</ref> fixant les calendriers des vacances et congés scolaires pour les années scolaires 2021/2022, 2022/2023 et 2023/2024 est abrogé.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_6/20220830</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>La référence au présent règlement se fait sous la forme suivante : « <i>
+<ref href="???" scl:verify="true">règlement grand-ducal du 26 août 2022</ref> fixant les calendriers des vacances et congés scolaires pour les années scolaires 2022/2023, 2023/2024 et 2024/2025.</i> »</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_7/20220830</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Notre ministre ayant l’Éducation nationale et l’Enseignement musical dans ses attributions est chargé de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</article>
+</body>
+<conclusions class="show_in_pdf" style="show_in_pdf">
+<p>
+<signature>
+<shortTitle>Le Ministre de l'Éducation nationale,<br/>de l'Enfance et de la Jeunesse,</shortTitle>
+<person refersTo="">Claude Meisch</person>
+</signature>
+</p>
+<p>
+<signature>
+<docDate date="2023-03-08">Cabasson, le 26 août 2022.</docDate>
+<person refersTo="">Henri</person>
+</signature>
+</p>
+</conclusions>
+</act>
+</akomaNtoso>

@@ -1,0 +1,5417 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2003-02-24" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MENV"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2003-02-24" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2003-02-24" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux><scl:jolux scl:name="dateDocument">2003-02-24</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MENV</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/289</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/913</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr</scl:jolux><scl:jolux scl:name="transpositionProcess">http://data.legilux.public.lu/event/etat/trans/1999/31</scl:jolux><scl:jolux scl:name="dateEntryInForce">2003-03-11</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2003/a34</scl:jolux><scl:jolux scl:name="historicalLegalId">2003A05461</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="publicationDate">2003-03-07</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MENV</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="transposes">/eli/dir_ue/1999/31/jo</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pr/20010102</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/rgd/1996/12/11/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/rgd/1996/12/16/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/rgd/1996/12/16/n3/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/1993/259/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 14/06/2022 : Règlement grand-ducal du 24 février 2003 concernant la mise en décharge des déchets.</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1993/07/29/n9/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1994/06/17/n4/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1999/06/10/n5/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1976/06/21/n1/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2003-34-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2003/a34/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2003-02-24-n2-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2003-34-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2003/a34/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2003/a34/fr/pdf/eli-etat-leg-memorial-2003-a34-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2003-03-11" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2022-06-14" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+<eventRef date="2022-06-14" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2022-06-14" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2022-06-14" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2022-06-14" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2022-06-14" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/06/09/a273/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2003/02/24/n2/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2022/06/09/a273/jo" id="rp2" showAs="Règlement grand-ducal du 9 juin 2022 modifiant le règlement grand-ducal modifié du 24 février 2003 concernant la mise en décharge des déchets."/>
+<passiveRef href="/eli/etat/leg/rgd/2018/05/15/a399/jo" id="rp3" showAs="Règlement grand-ducal du 15 mai 2018 établissant les listes de projets soumis à une évaluation des incidences sur l’environnement."/>
+<passiveRef href="/eli/etat/leg/rgd/2017/01/25/a191/jo" id="rp4" showAs="Règlement grand-ducal du 25 janvier 2017 modifiant le règlement grand-ducal modifié du 24 février 2003 concernant la mise en décharge des déchets."/>
+<passiveRef href="/eli/etat/leg/rgd/2012/06/28/n5/jo" id="rp5" showAs="Règlement grand-ducal du 28 juin 2012 complétant les annexes I, II et III du règlement grand-ducal modifié du 24 février 2003 concernant la mise en décharge des déchets."/>
+<passiveRef href="/eli/etat/leg/rgd/2008/05/22/n9/jo" id="rp6" showAs="Règlement grand-ducal du 22 mai 2008 modifiant le règlement grand-ducal modifié du 24 février 2003 concernant la mise en décharge des déchets."/>
+<passiveRef href="/eli/etat/leg/rgd/2006/02/17/n1/jo" id="rp7" showAs="Règlement grand-ducal du 17 février 2006 modifiant le règlement grand-ducal du 24 février 2003 concernant la mise en décharge des déchets."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2022-06-10|2022-06-09|RGD|273">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/06/09/a273/jo">Règlement grand-ducal du 9 juin 2022 modifiant le règlement grand-ducal modifié du 24 février 2003 concernant la mise en décharge des déchets.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>
+<mod class="mod-start" for="#pm1"/>Version consolidée applicable au 14/06/2022 : Règlement grand-ducal du 24 février 2003 concernant la mise en décharge des déchets.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_1er/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<heading>
+<b>Objet</b>
+</heading>
+<alinea>
+<content>
+<p>Le présent règlement a pour objet de soutenir la transition vers une économie circulaire, dans le respect de la hiérarchie des déchets et dans le respect des dispositions relatives à l’élimination des déchets prévues par la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="ff4fc2ef-197c-46ef-880c-97aae541cbb0">loi modifiée du 21 mars 2012</ref> relative aux déchets, pour assurer une réduction progressive de la mise en décharge des déchets, en particulier des déchets qui se prêtent au recyclage ou à toute autre valorisation, et, par des exigences techniques et opérationnelles strictes applicables aux déchets et aux décharges, de prévoir des mesures et procédures visant à prévenir ou à réduire autant que possible les effets négatifs de la mise en décharge des déchets sur l’environnement, et notamment la pollution des eaux de surface, des eaux souterraines, du sol et de l’air et sur l’environnement de la planète, y compris l’effet de serre, ainsi que les risques qui en résultent pour la santé humaine, pendant toute la durée de vie de la décharge.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_2/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<heading>
+<b>Champ d'application</b>
+</heading>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>Le présent règlement s'applique à toute décharge où l'élimination des déchets se fait par dépôt sur ou dans la terre, y comprises les décharges internes où le producteur procède à l'élimination des déchets sur le lieu de production et les sites où sont stockés les déchets pour une durée supérieure à un an.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Sont exclus du champ d'application du présent règlement:</p>
+<ul scl:symbol="dash">
+<li>les épandages sur les sols de boues, y compris les boues d'épuration et les boues résultant d'opérations de dragage ainsi que de matières analogues dans un but de fertilisation ou d'amendement;</li>
+<li>l'utilisation dans les décharges de déchets inertes appropriés pour des travaux d'aménagement ou de réhabilitation et de remblai ou à des fins de construction;</li>
+<li>le dépôt de boues de dragage non dangereuses le long de petites voies d'eau, après leur extraction de celles-ci, et de boues non dangereuses dans les eaux de surface, y compris le lit et son sous-sol;</li>
+<li>le dépôt de terre non polluée ou de déchets inertes non dangereux provenant de la prospection et de l'extraction, du traitement et du stockage de ressources minérales, ainsi que de l'exploitation de carrières.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>3.</num>
+<alinea>
+<content>
+<p>La gestion des déchets provenant des industries extractives implantées sur la terre ferme, c’est-à-dire des déchets résultant de la prospection, de l’extraction, y compris au stade de la préproduction, du traitement et du stockage de ressources minérales, ainsi que de l’exploitation des carrières est exclue du champ d’application du présent règlement lorsqu’elle relève du champ d’application d’autres actes législatifs ou règlementaires.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_3/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<heading>
+<b>Définitions</b>
+</heading>
+<alinea>
+<content>
+<p>Aux fins du présent règlement, et en sus des définitions figurant dans la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="203c72db-4dd2-4574-aaa0-e01a97e621e9">loi modifiée du 21 mars 2012</ref> relative aux déchets,on entend par :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>« stockage souterrain » : un site permanent de stockage des déchets dans une cavité géologique profonde telle qu’un emine de sel ou de potassium ;</li>
+<li>« décharge » ; un site d’élimination des déchets par dépôt des déchets sur ou dans la terre (c’est-à-dire en sous-sol), y compris :<ul scl:symbol="dash">
+<li>les décharges internes (c’est-à-dire les décharges où un producteur de déchets procède lui-même à l’élimination des déchets sur le lieu de production),<p>et</p>
+</li>
+<li> un site permanent (c’est-à-dire pour une durée supérieure à un an) utilisé pour stocker temporairement les déchets à l’exclusion,</li>
+<li> des installations où les déchets sont déchargés afin de permettre leur préparation à un transport ultérieur en vue d’une valorisation, d’un traitement ou d’une élimination en un endroit différent,<p>et</p>
+</li>
+<li> du stockage des déchets avant valorisation ou traitement pour une durée inférieure à trois ans en règle générale,<p>ou</p>
+</li>
+<li> du stockage des déchets avant élimination pour une durée inférieure à un an ;</li>
+</ul>
+</li>
+<li>« traitement » : les processus physiques, thermiques, chimiques ou biologiques, y compris le tri, qui modifient les caractéristiques des déchets de manière à en réduire le volume ou le caractère dangereux, à en faciliter la manipulation ou à en favoriser la valorisation ;</li>
+<li> « lixiviat » : tout liquide filtrant par percolation des déchets mis en décharge et s’écoulant d’une décharge ou contenu dans celle-ci ;</li>
+<li> « gaz de décharge » : tous les gaz produits par les déchets mis en décharge ;</li>
+<li> « éluat » : la solution obtenue lors de tests de lessivage simulés en laboratoire ;</li>
+<li> « exploitant » : la personne physique ou morale responsable de la décharge ; cette personne peut changer entre la phase de préparation et celle de la gestion après désaffectation ;</li>
+<li>« déchet biodégradable » : tout déchet pouvant subir une décomposition anaérobie ou aérobie, comme les déchets alimentaires et les déchets de jardin, ainsi que le papier et le carton ;</li>
+<li> « déchet liquide » : tout déchet sous forme liquide notamment les eaux usées, mais à l’exclusion des boues ;</li>
+<li> « demandeur » : la personne présentant une demande d’autorisation pour l’exploitation d’une décharge ;</li>
+<li>« autorité compétente » : le membre du Gouvernement ayant l’Environnement dans ses attributions ;</li>
+<li> « administration » : l’Administration de l’environnement.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_5/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<heading>
+<b>Catégories de décharges</b>
+</heading>
+<alinea>
+<content>
+<p>Les décharges sont divisées en quatre classes conformément à l'annexe II du présent règlement, à savoir:</p>
+<ul scl:symbol="dash">
+<li>décharges pour déchets dangereux;</li>
+<li>décharges pour déchets non dangereux;</li>
+<li>décharges pour déchets inertes du type A;</li>
+<li> décharges pour déchets inertes du type B.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’annexe V au présent règlement précise les principes de sécurité pour le stockage souterrain ainsi que les critères d’admission des déchets en stockage souterrain.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aux fins d’application du présent règlement, l’annexe VI établit les critères de distinction entre une décharge pour déchets inertes et un remblai constitué de déchets inertes.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_6</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_6/20220614</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<heading>
+<b> Traitement, réduction des quantités mises en décharge et déchets non admis dans les décharges</b>
+</heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>La quantité de déchets biodégradables mis en décharge doit être réduite. À cet effet, ces déchets doivent faire l’objet d’un tri et d’une collecte sélective à la source ainsi que d’un traitement préalable à la mise en décharge.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces mesures ne s’appliquent pas aux sites permanents où des déchets biodégradables sont rassemblés en vue de leur transfert vers une installation de valorisation tout en évitant des processus de biodégradation en anaérobie.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>La quantité de déchets municipaux biodégradables mis en décharge doit être réduite selon le calendrier de réduction suivant :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>réduction au plus tard au 16 juillet 2006 à un taux maximal de 75 pour cent (en poids) de la totalité des déchets municipaux biodégradables produits en 1995 sur le territoire des communes qui procèdent à l’élimination par mise en décharge ;</li>
+<li> réduction au plus tard au 16 juillet 2009 à un taux maximal de 50 pour cent (en poids) de la totalité des déchets municipaux biodégradables produits en 1995 sur le territoire des communes qui procèdent à l’élimination par mise en décharge ;</li>
+<li>réduction au plus tard au 16 juillet 2016 à un taux maximal de 35 pour cent (en poids) de la totalité des déchets municipaux biodégradables produits en 1995 sur le territoire des communes qui procèdent à l’élimination par mise en décharge.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>La quantité de déchets municipaux mis en décharge doit être ramenée à 10 pour cent au moins de la quantité totale de déchets municipaux produite (en poids) pour l’année 2025.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La mise en décharge de déchets municipaux est interdite à partir du 1<sup>er</sup> janvier 2030.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Ne sont pas admis dans une décharge :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les déchets liquides ;</li>
+<li> les déchets qui, dans les conditions de mise en décharge, sont explosifs, corrosifs, comburants, facilement inflammables ou inflammables, conformément aux définitions afférentes de l’annexe V de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="c526e5a2-ef0b-4713-af33-d42faa4b7b2c">loi modifiée du 21 mars 2012</ref> relative aux déchets ;</li>
+<li> les déchets hospitaliers et autres déchets cliniques provenant d’établissements médicaux ou vétérinaires et qui sont infectieux au sens de l’annexe V de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="940894c2-a19b-42b0-a7f1-894f067d1cf5">loi modifiée du 21 mars 2012</ref> relative aux déchets ainsi que les déchets sous forme de substances chimiques non identifiées ou nouvelles qui proviennent d’activités de recherche et de développement ou d’enseignement, et dont les effets sur l’homme ou sur l’environnement ne sont pas connus ;</li>
+<li> les pneus usés entiers, à compter de l’entrée en vigueur du présent règlement, à l’exclusion des pneus utilisés en tant que matériaux servant à l’aménagement de la décharge, et les pneus usés broyés ;</li>
+<li> tout autre type de déchets ne répondant pas aux critères d’admission définis à l’annexe II ;</li>
+<li>les déchets qui ont été collectés séparément pour la préparation en vue de la réutilisation et le recyclage conformément aux articles 14, paragraphe 1<sup>er</sup>, et 25 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="ee197e70-5ef6-48a9-9bd7-5481abd4d77f">loi modifiée du 21 mars 2012</ref> relative aux déchets, à l’exception des déchets issus d’opérations de traitement ultérieures de déchets collectés séparément pour lesquels la mise en décharge produitle meilleur résultat sur le plan de l’environnement conformément à l’article 9 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="8c8fb61f-fa2e-45d5-8269-05c57cc54f7e">loi précitée du 21 mars 2012</ref>.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Il est interdit de procéder à une dilution ou à un mélange des déchets dans le seul but de satisfaire aux critères d’admission des déchets. </p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6bis">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_6bis</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_6bis/20220614</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 6bis.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6<i>bis</i>.</num>
+<heading>
+<b>Règles applicables au calcul visant à évaluer l’atteinte des objectifs</b>
+</heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Aux fins du calcul visant à déterminer si l’objectif fixé à l’article 6, paragraphe 3, a été atteint :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>le poids des déchets municipaux générés et orientés vers la mise en décharge est calculé au cours d’une année civile donnée ;</li>
+<li>le poids des déchets résultant d’opérations de traitement préalables au recyclage ou à d’autres types de valorisation des déchets municipaux, comme le tri et le tri mécano-biologique, et qui sont ensuite mis en décharge, est inclus dans le poids des déchets municipaux rapportés comme ayant été mis en décharge ;</li>
+<li> le poids des déchets municipaux qui sont soumis à des opérations d’incinération et le poids des déchets produits par les opérations de stabilisation de la fraction biodégradable des déchets municipaux pour être ensuite mis en décharge sont rapportés comme ayant été mis en décharge ;</li>
+<li> le poids des déchets produits au cours du recyclage ou d’autres opérations de valorisation de déchets municipaux, et qui sont ultérieurement mis en décharge, n’est pas inclus dans le poids des déchets municipaux rapportés comme ayant été mis en décharge.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Un système efficace de contrôle de qualité et de traçabilité des déchets municipaux mis en décharge est mis en place par l’administration afin de garantir que les conditions énoncées au paragraphe 1<sup>er</sup> sont remplies.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Dans le cas où les déchets municipaux sont expédiés dans un autre État membre ou exportés au départ de l’Union aux fins de la mise en décharge, conformément au <ref href="/eli/reg_ue/2006/1013/jo" id="0ce4afe6-0fd9-44bc-853a-8bd274640c21">règlement (CE) n° 1013/2006</ref> du Parlement européen et du Conseil du 14 juin 2006 concernant les transferts de déchets, tel que modifié, ils sont comptabilisés dans la quantité de déchets mis en décharge au Grand-Duché de Luxembourg, conformément au paragraphe 1<sup>er</sup>.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_7/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<heading>
+<b>Déchets admis dans les différentes catégories de décharges</b>
+</heading>
+<alinea>
+<content>
+<ol scl:start="1" scl:symbol="a)">
+<li>Seuls les déchets déjà traités sont mis en décharge. Cette disposition ne peut s’appliquer aux déchets inertes pour lesquels un traitement n’est pas réalisable techniquement ou à tous autres déchets pour lesquels un tel traitement ne contribue pas à la réalisation des objectifs du présent règlement, fixés à l’article 1<sup>er</sup>, par une réduction des quantités de déchets ou des risques pour la santé humaine ou l’environnement.<p>Les mesures prises conformément au présent point ne doivent pas compromettre la réalisation des objectifs de la législation relative aux déchets, notamment ceux concernant la hiérarchie des déchets et l’augmentation de la préparation en vue de la réutilisation et du recyclage.</p>
+</li>
+<li>Seuls les déchets dangereux répondant aux critères arrêtés à l'annexe II du présent règlement sont dirigés vers une décharge pour déchets dangereux.</li>
+<li>Les décharges destinées aux déchets non dangereux peuvent être utilisées pour la mise en décharge:<ol scl:start="1" scl:symbol="1)">
+<li>des déchets municipaux;</li>
+<li>des déchets non dangereux de toute autre origine qui satisfont aux critères d'admission des déchets dans les décharges pour déchets non dangereux fixés conformément à l'annexe II;</li>
+<li>des déchets dangereux stables et non réactifs (par exemple solidifiés ou vitrifiés) dont le comportement en matière de production de lixiviats est équivalent à celui des déchets non dangereux visés au point 2) et qui satisfont aux critères d'admission pertinents fixés conformément à l'annexe II. Ces déchets dangereux ne sont pas mis en décharge dans des unités destinées aux déchets non dangereux biodégradables.</li>
+</ol>
+</li>
+<li>Les décharges pour déchets inertes ne peuvent accepter que des déchets inertes répondant aux critères arrêtés par l'annexe II du présent règlement.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_8/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<heading>
+<b>Demande d'autorisation</b>
+</heading>
+<alinea>
+<content>
+<p>Aux fins d'application du présent règlement, la demande d'autorisation introduite pour une décharge au titre de la <ref href="/eli/etat/leg/loi/1999/06/10/n5/jo" id="e8405d11-2ed8-4e59-b599-81795e340614" scl:verify="true">loi du 10 juin 1999</ref> relative aux établissements classés, de la <ref href="/eli/etat/leg/loi/1994/06/17/n4/jo" id="1a27d463-0d98-4bb3-9858-f4de04efc8d3" scl:verify="true">loi modifiée du 17 juin 1994</ref> et, selon les cas, de la <ref href="/eli/etat/leg/loi/1993/07/29/n9/jo" id="44f23588-da36-477c-a050-1767faed054f" scl:verify="true">loi modifiée du 29 juillet 1993</ref> concernant la protection et la gestion de l'eau contient, le cas échéant, les données supplémentaires suivantes:</p>
+<ol scl:symbol="a.">
+<li>la description des types de déchets à déposer, leur origine et leur quantité totale;</li>
+<li>la capacité projetée de la décharge;</li>
+<li>Les caractéristiques hydrogéologiques et géologiques du site ainsi que le modelage de la décharge aux fins d'une meilleure intégration dans le paysage environnant;</li>
+<li>le plan proposé pour l'exploitation, la surveillance et le contrôle de la décharge avec renseignements sur le personnel, sur les modalités d'acceptation des déchets ainsi que sur les procédures de contrôle des déchets lors de leur acceptation;</li>
+<li>le plan proposé pour la désaffectation de la décharge et sa gestion et sa vocation après cette désaffectation;</li>
+<li>un plan d'intervention en cas de sinistre;</li>
+<li>la garantie financière ou tout autre moyen équivalent à fournir par l'exploitant de la décharge.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'administration élabore des formulaires de demande types adaptés aux différentes catégories de décharge.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le dossier de demande doit être accompagné d'une évaluation des incidences sur l'environnement dans la mesure où une telle évaluation est requise par l'application des critères de l'annexe IV.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Après l'aboutissement d'une demande d'autorisation, ces informations sont mises à la disposition des autorités communautaires compétentes en matière de statistiques lorsque celles-ci le demandent à des fins statistiques.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_9/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<heading>
+<b>Conditions spéciales à remplir par l'exploitant d'une décharge</b>
+</heading>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>La gestion du site d'une décharge doit être assurée par une personne physique techniquement compétente qui assume la formation professionnelle et technique du personnel y employé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>L'exploitant doit prendre les mesures nécessaires pour éviter les accidents liés à l'exploitation de la décharge et en limiter les conséquences.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>3.</num>
+<alinea>
+<content>
+<p>L'exploitant doit, avant les opérations de mise en décharge des déchets, prendre les dispositions appropriées, sous forme d'une garantie financière ou de tout moyen équivalent, pour faire en sorte que les obligations (y compris les dispositions relatives à la gestion après désaffectation) contractées au titre de l'autorisation soient exécutées et que les procédures de désaffectation requises par l'article 14 soient suivies.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette garantie, ou son équivalent, sera maintenue aussi longtemps que l'exigeront les opérations d'entretien et de gestion du site désaffecté, conformément à l'article 14 paragraphe 3).</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>4.</num>
+<alinea>
+<content>
+<p>L'exploitant doit, avant les opérations de mise en décharge des déchets, faire réceptionner le site sous le contrôle de l'administration par un organisme agréé sans que ceci ne diminue en rien la responsabilité de l'exploitant en vertu de l'autorisation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>5.</num>
+<alinea>
+<content>
+<p>Le projet de décharge doit être conforme avec le plan général de gestion des déchets et, le cas échéant, avec un plan sectoriel de gestion des déchets, tels qu’établis au titre de la <ref href="/eli/etat/leg/loi/1994/06/17/n4/jo" id="5793e028-e7ef-40fe-94d0-31e86c74562b">loi modifiée du 17 juin 1994</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_10/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<heading>
+<b>Contenu de l'autorisation</b>
+</heading>
+<alinea>
+<content>
+<p>Aux fins d'application du présent règlement, l'autorisation délivrée au titre des législations visées à l'article 8 doit, le cas échéant, contenir au moins les indications suivantes:</p>
+<ol scl:symbol="a)">
+<li>la catégorie de la décharge;</li>
+<li>la liste des déchets dont le dépôt est autorisé et leur quantité totale;</li>
+<li>les conditions à respecter pour la préparation de la décharge, les opérations de mise en décharge, les procédures de surveillance et de contrôle, y compris les plans d'intervention ainsi que celles ayant trait aux opérations de désaffectation du site et de gestion après désaffectation;</li>
+<li>l'obligation pour l'exploitant d'adresser un rapport annuel à l'administration concernant les types et quantités de déchets éliminés et le résultat des opérations de contrôle et de surveillance à effectuer.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_11/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<heading>
+<b>Coût de la mise en décharge</b>
+</heading>
+<alinea>
+<content>
+<p>La totalité des coûts d'installation et d'exploitation d'un site de décharge, y compris, dans la mesure du possible, les coûts de la garantie financière ou de son équivalent visés à l'article 9, paragraphe 3., et les coûts estimés de la désaffectation du site et de son entretien après désaffectation doivent être couverts par le prix exigé par l'exploitant pour l'élimination de tout type de déchets dans cette décharge. Pour les décharges pour déchets dangereux et les décharges pour déchets non dangereux, la période à prendre en compte pour l'entretien du site après désaffectation est d'au moins trente ans; pour les décharges pour déchets inertes, cette période est d'au moins cinq ans.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sous réserve des exigences de la législation concernant la liberté d'accès à l'information en matière d'environnement, la transparence en matière de collecte et l'utilisation de toutes les informations nécessaires concernant les coûts doivent être assurées.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_12/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<heading>
+<b>Procédure d'admission des déchets</b>
+</heading>
+<alinea>
+<content>
+<ol scl:symbol="a)">
+<li>L'exploitant de la décharge doit vérifier avant l'admission des déchets sur le site de la décharge ou lors de la première d'une série de livraisons d'un même type de déchets que les déchets peuvent y être admis pour être conformes à la fois aux conditions de l'autorisation d'exploitation et aux critères d'admission prévus par l'annexe II du présent règlement;</li>
+<li>L'exploitant de la décharge doit procéder:<ul scl:symbol="dash">
+<li>à la vérification des documents relatifs aux déchets, notamment des documents requis, selon les cas, par le <ref href="/eli/reg_ue/1993/259/jo" id="5e0025e9-6b25-4b81-be9b-9b01330fb99c">règlement (CEE) modifié N° 259/93</ref> du Conseil du 1<sup>er</sup> février 1993 concernant la surveillance et le contrôle des transferts de déchets à l'intérieur, à l'entrée et à la sortie de la Communauté européenne, tel qu'exécuté par le <ref href="/eli/etat/leg/rgd/1996/12/16/n2/jo" id="bdcc66b0-0ca3-4a3b-9815-15b45375b43f" scl:verify="true">règlement grand-ducal modifié du 16 décembre 1996</ref>, ou par le <ref href="/eli/etat/leg/rgd/1996/12/16/n2/jo" id="62e9655b-798e-43ac-ae5a-4ab6ed08a864" scl:verify="true">règlement grand-ducal modifié du 16 décembre 1996</ref> concernant le transfert national de déchets;</li>
+<li>à l'inspection visuelle des déchets à l'entrée et au point de dépôt et, le cas échéant, la vérification de leur conformité à la description fournie dans les documents transmis par le détenteur. Si des échantillons représentatifs doivent être prélevés au titre de l'annexe II, point 3, niveau 3, le prélèvement est effectué conformément à l'annexe II, point 5. Ces échantillons sont conservés pendant un an au moins. Les résultats des analyses sont conservés.</li>
+<li>à la tenue d'un registre où sont inscrites les quantités et les caractéristiques des déchets déposés, ainsi que l'origine, la date de livraison, l'identité du producteur ou du ramasseur dans le cas de déchets municipaux, et, dans le cas de déchets dangereux, l'emplacement précis de ceux-ci sur le site. Ces informations sont mises à la disposition des autorités nationales et communautaires compétentes en matière de statistiques, lorsqu'elles le demandent à des fins statistiques;</li>
+</ul> </li>
+<li>L'exploitant de la décharge doit toujours produire un accusé de réception écrit de chaque livraison admise sur le site;</li>
+<li>Sans préjudice d'autres dispositions légales et réglementaires, l'exploitant doit notifier à l'administration si des déchets n'ont pas été acceptés dans une décharge et indiquer les motifs de ce refus.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_13/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<heading>
+<b>Procédures de contrôle et de surveillance en phase d'exploitation</b>
+</heading>
+<alinea>
+<content>
+<p>Pendant la phase d'exploitation d'une décharge, l'exploitant doit:</p>
+<ol scl:symbol="a)">
+<li>mettre en oeuvre le programme de contrôle et de surveillance prévu à l'annexe III du présent règlement;</li>
+<li>notifier à l'administration les effets néfastes sur l'environnement révélés par les procédures de contrôle et de surveillance;</li>
+<li>se conformer, à ses frais, au calendrier et aux mesures correctives ordonnées par l'autorité compétente.</li>
+<li>communiquer à l’administration, au moins une fois par an et sur la base de données agrégées, tous les résultats des procédures de surveillance et de contrôle dans le but de démontrer le respect des conditions de l’autorisation et d’accroître les connaissances concernant le comportement des déchets dans les décharges;</li>
+<li>veiller à ce que le contrôle des opérations d'analyse effectuées dans le cadre des procédures de contrôle et de surveillance et/ou des analyses visées à l'article 12, point b) soit réalisé par des laboratoires agréés à cet effet par l'autorité compétente.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_14/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<heading>
+<b>Procédure de désaffectation et de gestion après désaffectation</b>
+</heading>
+<paragraph>
+<num>1)</num>
+<alinea>
+<content>
+<p>La désaffectation d'une décharge de déchets ou d'une partie de celle-ci a lieu:</p>
+<ol scl:symbol="a)">
+<li>sur décision motivée de l'autorité compétente;</li>
+<li>sur demande expresse de l'exploitant;</li>
+<li>à l'expiration du terme fixé par l'autorisation d'exploitation.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2)</num>
+<alinea>
+<content>
+<p>La décision de désaffectation d'une décharge, ou d'une partie de celle-ci, par l'autorité compétente intervient sur base d'inspections des lieux et d'évaluation des rapports de l'exploitant par l'administration.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette procédure ne libère pas l'exploitant de la responsabilité résultant de l'autorisation d'exploitation accordée.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>3)</num>
+<alinea>
+<content>
+<p>Après la désaffectation définitive d'une décharge, l'exploitant doit assurer l'entretien, la surveillance et le contrôle de la décharge désaffectée ainsi que la surveillance et l'analyse des gaz de décharge et des lixiviats du site et des nappes d'eaux souterraines situées à proximité, conformément à l'annexe III. L'exploitant notifie à l'administration les effets néfastes sur l'environnement révélés par les procédures de contrôle et se conforme à la décision de l'autorité compétente concernant la nature et le calendrier des mesures correctives à prendre. L'exploitant de la décharge reste responsable de ces travaux aussi longtemps que l'administration estime qu'une décharge est susceptible d'entraîner un danger pour l'environnement.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_15/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<heading>
+<b>Décharges existantes</b>
+</heading>
+<paragraph>
+<num>a)</num>
+<alinea>
+<content>
+<p>L'exploitant d'une décharge de déchets autorisée ou en activité doit dans les meilleurs délais présenter pour approbation à l'autorité compétente un plan d'aménagement du site de la décharge accompagné des données énumérées à l'article 9 et des mesures nécessaires pour se conformer aux exigences générales arrêtées par l'annexe I du présent règlement, à l'exception de celles exposées au point 1. de la même annexe.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>b)</num>
+<alinea>
+<content>
+<p>L'autorité compétente, sur la base du plan d'aménagement présenté par l'exploitant, décide soit la continuation de l'exploitation de la décharge en la conformant aux dispositions du présent règlement, soit sa désaffectation définitive.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>c)</num>
+<alinea>
+<content>
+<p>Les décharges autorisées à continuer leur exploitation doivent se conformer aux présentes dispositions, à l'exception de celles exposées à l'annexe I, point 1., pour le 16 juillet 2009 au plus tard.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>d)</num>
+<alinea>
+<content>
+<p>Les dispositions des articles 5, 6, et 12 ainsi que l'annexe II s'appliquent aux décharges pour déchets dangereux à partir du 16 juillet 2003.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dispositions de l'article 7 s'appliquent aux décharges pour déchets dangereux à partir du 16 juillet 2004.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_16/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<heading>
+<b>Entrée en vigueur</b>
+</heading>
+<alinea>
+<content>
+<p>Le présent règlement entre en vigueur le jour de sa publication au Mémorial.</p>
+</content>
+</alinea>
+</article>
+<article id="art_17_exécution">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_17_exécution</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2/art_17_exécution/20030311</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2003/02/24/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17. Exécution</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-03-11</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17. Exécution</num>
+<alinea>
+<content>
+<p>Notre Ministre de l‘Environnement et Notre Ministre de l'Intérieur sont chargés, chacun en ce qui le concerne, de l‘exécution du présent règlement qui sera publié au Mémorial.</p>
+</content>
+</alinea>
+</article>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-03-31" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-03-31" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-03-31" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<b>ANNEXE I</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p scl:align="center">
+<b>EXIGENCES GENERALES POUR TOUTES LES CATEGORIES DE DECHARGES</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>1. Emplacement</b>
+</p>
+<ol scl:start="1" scl:symbol="custom">
+<li scl:symbol="1.1.">La détermination du site d’une décharge doit tenir compte d’exigences concernant:</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<ol scl:space-num="8" scl:start="1" scl:symbol="a)">
+<li>la distance entre les limites du site et les zones d’habitation ou de loisirs, les voies d’eau et plans d’eau ainsi que les sites agricoles ou urbains;</li>
+<li> l’existence d’eaux souterraines ou de zones naturelles protégées dans la zone;</li>
+<li> la géologie et l’hydrogéologie de la zone;</li>
+<li> les risques d’inondations, d’affaissements ou de glissements de terrain;</li>
+<li> la protection du patrimoine naturel ou culturel de la zone.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<ol scl:start="1" scl:symbol="custom">
+<li scl:symbol="1.2.">La décharge ne peut être autorisée que si, vu les caractéristiques du site au regard des exigences mentionnées ci-dessus ou les mesures correctives envisagées, la décharge ne présente pas de risque grave pour l’environnement.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>2. Maîtrise des eaux et gestion des lixiviats</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Compte tenu des caractéristiques de la décharge et des conditions météorologiques, des mesures appropriées sont prises, en vue:</p>
+<ul scl:symbol="dash">
+<li>de limiter les quantités d’eau dues aux précipitations s’infiltrant dans la masse des déchets mis en décharge,</li>
+<li> d’empêcher les eaux de surface et/ou souterraines de s’infiltrer dans les déchets mis en décharge,</li>
+<li> de recueillir les eaux contaminées et les lixiviats;</li>
+<li> de traiter les eaux contaminées et les lixiviats recueillis dans la décharge afin qu’ils atteignent la qualité requise pour pouvoir être rejetés.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dispositions ci-dessus ne sont pas obligatoires pour les décharges de déchets inertes.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>3. Protection du sol et des eaux</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>3.1. Généralités</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute décharge doit être située, conçue et exploitée de manière à remplir les conditions requises pour prévenir la pollution du sol, des eaux souterraines ou des eaux de surface. Outre les conditions générales mentionnées ci-dessous, les actes d'autorisation fixent les conditions spécifiques auxquelles doivent répondre les décharges pour la réalisation de cet objectif.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>3.2. Décharges pour déchets non dangereux et décharges pour déchets dangereux</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2.1. Les lixiviats sont recueillis de manière efficace, en temps opportun et dans les conditions requises, conformément au point 2. La protection du sol, des eaux souterraines et des eaux de surface doit être assurée, pendant la phase d’exploitation/activité, par une barrière géologique assortie d’un revêtement de base étanche et, pendant les phases d’inactivité ou après la désaffectation, par une barrière géologique assortie d’un revêtement de surface étanche.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2.2. Il y a une barrière géologique lorsque les conditions géologiques et hydrogéologiques en dessous et à proximité d’une décharge offrent une capacité d’atténuation suffisante pour éviter tout risque pour le sol et les eaux souterraines.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La base et les côtés de la décharge doivent être constitués d’une couche minérale répondant à des exigences de perméabilité et d’épaisseur dont l’effet combiné, en termes de protection du sol, des eaux souterraines et des eaux de surface, est au moins équivalent à celui résultant des exigences suivantes:</p>
+<ul scl:symbol="dash">
+<li>décharge pour déchets dangereux: K <u>&lt;</u> 1,0 x 10 <sup>– 9</sup> m/s; épaisseur <u>&gt;</u> 5 m,</li>
+<li> décharge pour déchets non dangereux: K <u>&lt;</u> 1,0 x 10<sub>b</sub>
+<sup> – 9</sup> m/s; épaisseur <u>&gt;</u> 2 m,</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La couche minérale doit présenter un pouvoir d'absorption élevé de substances polluantes. Elle doit présenter un aspect homogène sur l'ensemble de la surface destinée à accueillir la décharge.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2.3. Dans les cas où la barrière géologique ne répond pas naturellement aux conditions précitées, elle doit être complétée artificiellement et renforcée par d’autres moyens offrant une protection équivalente. Une barrière géologique artificielle ne doit pas avoir moins de 0,5 m d’épaisseur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2.4. La décharge - doit être aménagée de façon à ce que - après tassement du sous-sol dû au poids de la décharge la distance entre la base de la décharge et le niveau le plus élevé possible de la surface de la nappe d'eaux souterraines ou de la surface de pression des eaux souterraines en cas d'eaux souterraines libres ou tendues (selon DIN 4049, partie 1, édition septembre 1979) soit d'au moins un mètre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2.5. Outre la barrière géologique décrite ci-dessus, un système d’étanchéité et de récupération des lixiviats doit être ajouté conformément aux principes énoncés ci-après, de manière à assurer la plus faible accumulation possible de lixiviats à la base de la décharge. Ce système d'étanchement doit comporter au moins les éléments suivants:</p>
+<ul scl:symbol="dot">
+<li>Revêtement étanche artificiel: Le revêtement étanche artificiel doit être constitué d'un film synthétique en polyéthylène de haute densité d'une épaisseur minimale de 2,5 mm. Le matériel utilisé doit être agréé en tant que tel par un organisme officiel spécialisé dans l'agréation de matériaux destinés à être utilisés dans la construction de décharges.</li>
+<li> Couche de drainage <u>&gt;</u> 0,5 m: La couche de drainage doit avoir un coefficient de perméabilité k &gt; 10<sup>-3</sup> m/s.<p>La surface du système d'étanchement doit être profilée en forme de toiture. Après tassement du système d'étanchement, sa surface doit avoir une pente en travers de &gt; 3% et une pente en long de &gt; 1%.</p>
+</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2.6. En fin d'exploitation d'une décharge, respectivement d'une partie d'une décharge, un système d’étanchéité de surface doit être réalisé. Ce système doit comporter au moins les éléments suivants:</p>
+<ul scl:symbol="dot">
+<li>Couche de drainage des gaz: Son épaisseur ne doit pas être inférieure à 50 cm. La teneur en carbonate de calcium ne doit pas dépasser le taux de 10% en masse de l'ensemble de la couche de drainage. La couche de drainage peut ne pas être requise lorsqu'il est prouvé que la décharge n'a pas accepté de déchets biodégradables. Au cas où une couche d'égalisage d'une épaisseur minimale de 50 cm est mise en place en dessous de la couche de drainage des gaz, cette dernière ne doit pas avoir une épaisseur inférieure à 30 cm.</li>
+<li>Couche minérale imperméable: L'épaisseur de la couche minérale ne doit pas être inférieure à 0,5 m. Elle doit présenter un coefficient de perméabilité k &lt; 5*10<sup>-10</sup> m/s pour i=30 (valeur de laboratoire.)</li>
+<li> Revêtement étanche artificiel: Cette couche synthétique doit être constituée en polyéthylène de haute densité et doit avoir une épaisseur minimale de 2,5 mm.</li>
+<li> Couche de drainage: Son épaisseur doit être <u>&gt;</u> 0,5 m. Son coefficient de perméabilité ne doit pas être inférieur à 1*10<sup>-3</sup> m/s.</li>
+<li> Couche de terre de revêtement: Son épaisseur minimale est de 1 m. Elle doit être plantée de façon appropriée. Elle doit être conçue de façon à offrir une protection optimale du système d'étanchement des racines et du gel. Les plantations doivent offrir une protection optimale contre l'érosion des eaux de ruissellement et du vent.<p>Après tassement de la base du système d'étanchement, les pentes doivent être <u>&gt;</u> 5%.</p>
+</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2.8. Dans la mesure du possible, toutes percées de canalisations, de tuyaux ou de puits de dégazage à travers les systèmes d’étanchement doivent être réalisées de façon contrôlable et réparable.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2.9. L’ensemble des systèmes d’étanchement, de collecte et d’évacuation des lixiviats, de collecte et d’évacuation des gaz ainsi que toutes les installations connexes doivent être réalisés par des hommes de l’art selon la meilleure technologie disponible et dont l’application n’entraîne pas de coûts excessifs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2.10. Des systèmes d’étanchement autres que ceux mentionnés ci-dessus peuvent être mis en œuvre. De même des matériaux autres que ceux mentionnés peuvent être utilisés. Toutefois, la preuve doit être fournie que respectivement ces systèmes ou ces matériaux sont au moins équivalents aux systèmes prescrits et présentent les mêmes garanties d’imperméabilité, de résistance chimique et physique, de longévité et de flexibilité.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>
+<eop/>3.3. Décharges pour déchets inertes</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.3.1. Pour les décharges pour déchets inertes, une barrière géologique de la base et des côtés de la décharge est donnée lorsqu’elles sont constituées d’une couche minérale répondant à des exigences de perméabilité et d’épaisseur dont l’effet combiné, en termes de protection du sol, des eaux souterraines et des eaux de surface est au moins équivalent à un degré de perméabilité k <u>&lt;</u> 1,0*10<sup>-7</sup> et une épaisseur <u>&gt;</u> 1 m.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans les cas où la barrière géologique ne répond pas naturellement aux conditions précitées, elle doit être complétée artificiellement et renforcée par d’autres moyens offrant une protection équivalente. Une barrière géologique artificielle ne doit pas avoir moins de 0,5 m d’épaisseur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au cas où une barrière géologique n’existe pas, la décharge ne peut accepter que les déchets repris en annexe II, point 2.1.2.1.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.3.2. Le recouvrement d‘une décharge pour déchets inertes doit se faire en fonction de la vocation du site après désaffectation telle que fixée par l'acte autorisant l'implantation et l'exploitation de la décharge.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour le cas où ce recouvrement doit se faire moyennant une couche de terres, celles-ci doivent satisfaireaux valeurs limites reprises sous le point 2.1.2.3 de l’annexe II.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>4. Maîtrise des gaz</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>4.1. Des mesures appropriées sont prises afin de limiter l’accumulation et la migration des gaz de décharge (annexe III).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>4.2. Les gaz de décharge sont recueillis dans toutes les décharges recevant des déchets biodégradables et doivent être traités et utilisés. Si les gaz ne peuvent être utilisés pour produire de l’énergie, ils doivent être brûlés dans des torches.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>4.3. La collecte, le traitement et l’utilisation des gaz de décharge au titre du point 4.2. sont réalisés de manière à réduire au maximum les dommages ou les dégradations causés à l’environnement et les risques pour la santé humaine.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>5. Nuisances et dangers</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Des mesures sont prises afin de réduire les nuisances et les dangers pouvant résulter de la décharge:</p>
+<ul scl:symbol="dot">
+<li>émissions d’odeurs et de poussières,</li>
+<li> matériaux emportés par le vent,</li>
+<li> bruit et mouvements de véhicules,</li>
+<li> oiseaux, animaux nuisibles et insectes,</li>
+<li> formation d’aérosols,</li>
+<li> incendies.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La décharge doit être aménagée et gérée de telle sorte que les matières (p. ex. détritus) provenant du site ne puissent se disperser sur les voies publique et les zones environnantes ou souiller celles-ci.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>6. Stabilité</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il convient de disposer les déchets sur le site de manière à assurer la stabilité de la masse des déchets et des structures associées, et en particulier à éviter les glissements. Si une barrière artificielle est établie, il faut s’assurer que le substrat géologique, compte tenu de la morphologie de la décharge, est suffisamment stable pour empêcher un tassement risquant d’endommager la barrière.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>7. Clôtures</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La décharge doit être protégée pour empêcher le libre accès au site. Les grilles doivent être fermées à clef en dehors des heures de travail. Le système de contrôle et d’accès à chaque décharge devrait comporter un programme de mesures permettant de détecter et de décourager les dépôts illégaux sur le site.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>8. Stockage temporaire de mercure métallique</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aux fins du stockage temporaire de mercure métallique pendant plus d’un an, les exigences suivantes s’appliquent:</p>
+<ul scl:symbol="dash">
+<li>le mercure métallique doit être stocké séparément des autres déchets,</li>
+<li> les conteneurs doivent être conservés dans des cuves dotées d’un revêtement approprié de façon à ne présenter aucune fissure ni interstice et à être imperméables au mercure métallique; ces cuves doivent offrir un volume de confinement adapté à la quantité de mercure stockée,</li>
+<li> le site de stockage doit être doté de barrières naturelles ou aménagées appropriées pour protéger l’environnement contre les émissions de mercure et offrant un volume de confinement adapté à la quantité totale de mercure stockée,</li>
+<li> le sol du site de stockage doit être recouvert d’un matériau d’étanchéité résistant au mercure; une pente avec puisard doit être prévue,</li>
+<li> le site de stockage doit être équipé d’un système de protection contre l’incendie,</li>
+<li> le stockage doit être réalisé de façon à permettre de retrouver facilement tous les conteneurs.</li>
+</ul>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+<attachment id="attachment_2">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-03-31" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-03-31" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-03-31" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<b>ANNEXE II</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p scl:align="center">
+<b>CRITERES ET PROCEDURES D’ADMISSION DES DECHETS</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b> Introduction</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La présente annexe définit la procédure uniforme de classification et d’admission des déchets lors de leur admission sur une décharge pour déchets.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le point 1 de la présente annexe définit la procédure visant à déterminer l’admissibilité des déchets dans les décharges. Cette procédure comprend la caractérisation de base, la vérification de la conformité et la vérification sur place.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le point 2 de la présente annexe fixe les critères d’admission pour chaque catégorie de décharge. Un déchet ne peut être admis dans une décharge que s’il remplit les critères d’admission de la catégorie de décharge qui lui correspond, comme cela est défini au point 2 de l’annexe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le point 3 de la présente annexe énumère les méthodes à utiliser pour l’échantillonnage et l’analyse des déchets.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sans préjudice de la législation en vigueur, les critères et procédures définis à la présente annexe ne s’appliquent pas aux déchets résultant de la prospection, de l’extraction, du traitement et du stockage de ressources minérales et de l’exploitation de carrières si ces déchets sont stockés sur site. En l’absence de réglementation spécifique, les critères et procédures définis, le cas échéant, au niveau national sont applicables.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>1. PROCEDURE D’ADMISSION DES DECHETS DANS LES DECHARGES</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>1.1. <b>Caractérisation de base</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La caractérisation de base est la première étape de la procédure d’admission; elle consiste à caractériser globalement les déchets en rassemblant toutes les informations nécessaires à une élimination sûre des déchets à long terme. La caractérisation de base est requise pour chaque type de déchets.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.1.1.</i>
+<b>
+<i> Les fonctions de la caractérisation de base sont les suivantes:</i>
+</b>
+</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>Informations de base concernant le déchet (type et origine, composition, consistance, lixiviation et autres propriétés caractéristiques).</li>
+<li>Informations de base permettant de comprendre le comportement du déchet en décharge et les possibilités de traitement au sens de l’article 7, point a) du présent règlement.</li>
+<li> Evaluation du déchet par rapport aux valeurs limites.</li>
+<li>Détermination de variables clés (paramètres critiques) pour la vérification de la conformité ainsi que des possibilités de simplification des essais correspondants (en vue d’une réduction sensible du nombre de paramètres à mesurer, mais uniquement après la fourniture des informations appropriées). La caractérisation peut permettre d’établir des corrélations entre la caractérisation de base et les résultats des méthodes d’essai simplifiées et de déterminer la fréquence des essais de vérification de la conformité.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si la caractérisation de base d’un déchet montre qu’il remplit les critères correspondant à une catégorie de décharge définie au point 2 de la présente annexe, ce déchet est jugé admissible dans cette catégorie de décharge. Dans le cas contraire, le déchet ne peut être admis dans cette catégorie de décharge.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le producteur des déchets concernés ou, à défaut, la personne responsable de leur gestion est responsable de l’exactitude des informations fournies en vue de leur caractérisation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’exploitant tient un registre des informations requises pendant une période qui doit durer au moins jusqu’au moment où l’autorité compétente a libéré l’exploitant du suivi et du contrôle de la décharge après sa désaffectation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>
+<eop/>1.1.2</i>. <i>
+<b>Les exigences fondamentales en vue de la caractérisation de base d’un déchet sont les suivantes:</b>
+</i>
+</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>Source et origine du déchet.</li>
+<li> Informations concernant le processus de production du déchet (description et caractéristiques des matières premières et des produits).</li>
+<li> Description du traitement appliqué au déchet, conformément à l’article 7, point a) du présent règlement, ou présentation des motifs expliquant pourquoi ce traitement n’est pas jugé nécessaire.</li>
+<li>Données concernant la composition du déchet et son comportement à la lixiviation, le cas échéant. </li>
+<li>Apparence du déchet (odeur, couleur, apparence physique).</li>
+<li>Code selon la liste européenne de déchets conformément au <ref href="/eli/etat/leg/rgd/2002/11/13/n2/jo" id="f3e80fd2-0bb7-4222-9237-c8b8736253bf">règlement grand-ducal du 13 novembre 2002</ref> remplaçant a) l’annexe I de la <ref href="/eli/etat/leg/loi/1994/06/17/n4/jo" id="ae0bf3bf-2089-4894-8dcb-daec4c07b91b">loi modifiée du 17 juin 1994</ref> relative à la prévention et à la gestion des déchets; b) l’annexe IV du <ref href="/eli/etat/leg/rgd/1996/12/11/n1/jo" id="5b14945c-7e94-458e-86c4-07b148e45118">règlement grand-ducal du 11 décembre 1996</ref> relatif aux déchets dangereux</li>
+<li> Pour les déchets dangereux, en cas d’entrées miroirs: propriétés qui rendent ce déchet dangereux, conformément à l’annexe III de la <ref href="/eli/dir_ue/1991/689/jo" id="01ae2682-4c3a-466a-9d5b-e4d82a295171">directive 91/689/CE</ref>.</li>
+<li> Informations prouvant que le déchet n’est pas couvert par les exclusions visées à l’article 6, paragraphe 3, du présent règlement.</li>
+<li>Catégorie de décharge dans laquelle le déchet peut être admis.</li>
+<li> Au besoin, précautions supplémentaires à prendre au niveau de la décharge.</li>
+<li> Vérification visant à déterminer si le déchet peut être recyclé ou valorisé.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.1.3. </i>
+<b>
+<i>Essais</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En règle générale, tout déchet doit faire l’objet d’essais visant à obtenir les informations susmentionnées. Outre son comportement à la lixiviation, la composition du déchet doit être connue ou précisée par des essais. Les essais utilisés pour la caractérisation de base doivent toujours inclure les essais relatifs à la vérification de la conformité.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le contenu de la caractérisation, l’ampleur des essais en laboratoire requis et les relations entre la caractérisation de base et la vérification de la conformité dépendent du type de déchets.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Une distinction peut être établie entre:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>les déchets régulièrement produits dans le cadre d’un même procédé;</li>
+<li> les déchets dont la production n’est pas régulière.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les caractérisations mentionnées aux points a) et b) fournissent des informations qui peuvent être directement comparées aux critères d’admission dans la catégorie de décharge correspondantes; des informations descriptives peuvent également être fournies (en ce qui concerne par exemple les conséquences de leur dépôt avec des déchets municipaux)</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>a) Déchets régulièrement produits dans le cadre du même processus</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il s’agit de déchets spécifiques et constants régulièrement produits dans le cadre du même procédé, dans lequel:</p>
+<ul scl:symbol="dash">
+<li>l’installation et le procédé à l’origine des déchets sont bien connus et les matériaux entrant dans le procédé ainsi que le procédé lui-même sont bien définis;</li>
+<li> l’exploitant de l’installation fournit toutes les informations nécessaires et informe l’exploitant de la décharge des modifications apportées au procédé (en particulier en ce qui concerne les matériaux qui y entrent).</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le procédé est mis en œuvre souvent dans une seule installation. Mais les déchets peuvent aussi provenir d’installations différentes, s’ils peuvent être identifiés comme un flux unique présentant des caractéristiques communes, à l’intérieur de limites connues (par exemple, les mâchefers résultant de l’incinération des déchets municipaux).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour ce type de déchets, la caractérisation de base comprend les exigences fondamentales énumérées au point 1.1.2., et plus particulièrement les points suivants:</p>
+<ul scl:symbol="dash">
+<li>plage de composition des déchets individuels;</li>
+<li>plage et variabilité des propriétés caractéristiques;</li>
+<li> le cas échéant, les propriétés de lixiviation des déchets;</li>
+<li>les variables clés devant faire l’objet d’essais réguliers.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si des déchets issus du même procédé sont produits dans différentes installations, des informations doivent être fournies en ce qui concerne le champ de l’évaluation. Par conséquent, un nombre suffisant de mesures doit être effectué pour montrer la plage et la variabilité des propriétés caractéristiques du déchet. On peut alors considérer que le déchet en question est caractérisé et il ne sera plus ensuite soumis qu’à une vérification de conformité, à moins que des modifications significatives n’interviennent dans les processus de production des déchets.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les déchets issus du même procédé et produits dans une même installation, les résultats des mesures ne peuvent montrer que des variations mineures des propriétés des déchets par rapport aux valeurs limites correspondantes. On peut alors considérer que le déchet en question est caractérisé et il ne sera plus ensuite soumis qu’à une vérification de la conformité, à moins que des modifications significatives n’interviennent dans le processus de production des déchets.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les propriétés des déchets issus d’installations de regroupement ou de mélange des déchets, des déchets issus de centres de transfert ou des flux de déchets collectés en mélange peuvent varier considérablement. Ce facteur doit être pris en compte lors de la caractérisation de base. Ce type de déchets peut relever du point b).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>b) Déchets dont la production n’est pas régulière</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il s’agit de déchets qui ne sont pas régulièrement produits dans le cadre d’un même procédé à l’intérieur d’une même installation et qui ne font pas partie d’un flux de déchets bien caractérisé. Chaque lot issu de ce type de déchets devra faire l’objet d’une caractérisation. Cette caractérisation de base comprend les exigences fondamentales d’une caractérisation de base. Comme chaque lot produit doit être caractérisé, aucune vérification de la conformité n’est requise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.1.4.</i> <b>
+<i>Cas dans lesquels les essais ne sont pas requis</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il est possible de ne pas effectuer les essais correspondant à la caractérisation de base dans les cas suivants:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>le déchet concerné figure sur une liste de déchets pour lesquels des essais ne sont pas requis, conformément au point 2 de la présente annexe;</li>
+<li> toutes les informations nécessaires à la caractérisation de base sont connues et dûment justifiées, et l’autorité compétente en est pleinement satisfaite;</li>
+<li>le déchet fait partie d’un type de déchets pour lesquels il est difficile dans la pratique de réaliser des essais ou pour lequel on ne dispose pas de procédures d’essai ni de critères d’admission appropriés. Ce cas doit être justifié et étayé par des documents, qui précisent notamment les motifs pour lesquels les déchets sont jugés admissibles dans cette catégorie de décharge.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>1.2. <b>Vérification de la conformité</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Quand un déchet a été jugé admissible dans une catégorie de décharge à l’issue de la caractérisation de base, conformément au point 1, ce déchet est ensuite soumis à une vérification de sa conformité visant à déterminer s’il est conforme aux résultats de la caractérisation de base et aux critères appropriés d’admission définis au point 2.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La vérification de la conformité vise à réaliser des contrôles périodiques des flux de déchets réguliers.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les paramètres appropriés qui doivent faire l’objet d’essais sont déterminés dans la caractérisation de base. Ces paramètres doivent correspondre aux informations comprises dans la caractérisation de base; seul un contrôle portant sur les paramètres critiques (variables clés), définis dans la caractérisation de base, est nécessaire. Le contrôle doit montrer que le déchet satisfait aux valeurs limites fixées pour les paramètres critiques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les essais utilisés pour la vérification de la conformité sont choisis parmi ceux utilisés pour la caractérisation de base. Ces essais comprennent au moins un essai de lixiviation. A cet effet, les méthodes visées au point 3 seront utilisées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets exemptés des obligations d’essai pour la caractérisation de base, visés au point 1.1.4 a) et c), sont également exemptés des essais de vérification de la conformité. Ils doivent néanmoins faire l’objet d’une vérification de leur conformité avec les informations sur la caractérisation de base autres que les essais.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La vérification de la conformité est effectuée au moins une fois par an et l’exploitant doit, dans tous les cas, veiller à ce que sa portée et sa fréquence soient conformes à celles déterminées par la caractérisation de base.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les résultats des essais sont inscrits dans des registres et conservés pendant une période qui doit durer au moins jusqu’au moment où l’autorité compétente a libéré l’établissement du suivi et du contrôle après sa désaffectation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>1.3. <b>Vérification sur place</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaque chargement de déchets admis dans une décharge fait l’objet d’une inspection au moins organoleptique avant et après le déchargement. Les documents requis doivent être vérifiés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les déchets stockés par un producteur de déchets dans une décharge dont il a la responsabilité, cette vérification peut s’effectuer au point de départ des déchets.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets peuvent être admis dans une décharge s’ils sont les mêmes que ceux ayant déjà fait l’objet d’une caractérisation de base et d’une vérification de conformité et dont la description figure dans les documents d’accompagnement. Dans le cas contraire, les déchets ne doivent pas être admis.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les exigences détaillées relatives aux essais de vérification sur place, et lorsque c’est pertinent, les méthodes d’essai rapides sont fixés par les autorisations.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lors de la livraison, des échantillons sont prélevés périodiquement. Les échantillons prélevés sont conservés après l’admission des déchets pendant une période d’au moins un an.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>2. CRITERES D’ADMISSION DES DECHETS</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le présent point définit les critères d’admission des déchets dans chaque catégorie de décharge, y compris les critères applicables au stockage souterrain.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans certaines circonstances, des valeurs limites jusqu’à trois fois plus élevées peuvent être admises pour les paramètres spécifiques visés au présent point, autres que le carbone organique total sur éluat aux points 2.1.2.1, lettre a), 2.1.2.2, lettre a), 2.2.2, lettre d), 2.3.1 et 2.4, lettre d), les BTEX, les PCB et les hydrocarbures aux points 2.1.2.1, lettre b) et 2.1.2.2, lettre b), le carbone organique total (COT) et le pH au point 2.3.2 et le COT au point 2.4, lettre c), et en limitant l’accroissement possible de la valeur limite pour le COT aux points 2.1.2.1, lettre b), et 2.1.2.2, lettre b), à un maximum de deux fois la valeur limite, si les émissions y compris les lixiviats de la décharge, en tenant compte des limites fixées pour les paramètres spécifiques correspondants visés au présent point, ne présentent aucun risque supplémentaire pour l’environnement, selon ce qui ressort d’une évaluation des risques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’autorité compétente délivre, au cas par cas, une autorisation pour certains déchets précis pour la décharge concernée, compte tenu des caractéristiques de ladite décharge et de ses environs, laquelle définit les critères de conformité aux valeurs limites.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>D’une façon générale, les déchets qui présentent une constitution telle qu’ils mettent en cause la stabilité de la décharge (déchets liquides, déchets pulvérulents, déchets boueux non pelletables, etc.) ne peuvent pas être acceptés sur une décharge.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.1. <b>Critères d’admission dans des décharges pour déchets inertes</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>2.1.1. </i>
+<b>
+<i>Liste des déchets admissibles sans essai dans des décharges pour déchets inertes</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets figurant sur la liste succincte suivante peuvent être admis sans essai dans une décharge pour déchets inertes.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il doit s’agir d’un même flux (une seule source) d’un même type de déchets. Différents déchets figurant sur cette liste peuvent être admis ensemble, à condition qu’ils proviennent de la même source.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de présomption de contamination (résultant de la vérification sur place conformément au point 1.3. ci-dessus ou de la connaissance de l’origine des déchets), il convient de réaliser des essais ou de refuser les déchets concernés. Si un déchet appartenant à une catégorie figurant sur la liste est contaminé de sorte à dépasser une ou plusieurs des valeurs limites figurant au point 2.1.2. ci-dessous ou contient d’autres matières ou substances telles que des métaux, de l’amiante, des matières plastiques, des substances chimiques, etc., dans une proportion autre que négligeable, il ne peut être admis dans une décharge pour déchets inertes.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de doute concernant la conformité du déchet avec la définition des déchets inertes donnée à l’article 3, point e) du présent règlement et avec les critères visés au point 2.1.2. ou concernant une éventuelle contamination du déchet, des essais doivent être réalisés. À cet effet, les méthodes visées au point 3 seront utilisées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_13" scl:cols="15 35 50" scl:cols-align="left justify justify" width="100">
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Code CED </b>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Description</b>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Restrictions</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 01 01</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Béton</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Uniquement déchets de C &amp; D triés (*)</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 01 02</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Briques</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Uniquement déchets de C &amp; D triés (*)</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 01 03</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Tuiles et céramiques </p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Uniquement déchets de C &amp; D triés (*)</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 01 07</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Mélanges de béton, briques, tuiles et céramique</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Uniquement déchets de C &amp; D triés (*)</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 05 04</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Terres et cailloux autres que ceux visés à la rubrique 17 05 03</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>A l’exclusion de la terre végétale et de la tourbe; à l’exclusion de la terre et des pierres provenant de sites contaminés</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>20 02 02</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Terre et pierres</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Provenant uniquement de déchets de jardins et de parcs; à l’exclusion de la terre végétale et de la tourbe</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" scl:align="justify">
+<ul scl:font-size="8" scl:symbol="custom">
+<li scl:symbol="(*)"> Déchets de construction et de démolition triés (déchets de C &amp; D) pouvant contenir en très faibles quantités d’autres types de matériaux ( tels que des métaux, des matières plastiques, des substances organiques, du bois, du caoutchouc, etc.) résultant des travaux de constructionou de démolition et qui n’ont pas pu être séparés des déchets minéraux sans efforts exceptionnels. L’origine de ces déchets doit être connue.</li>
+</ul>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<ul scl:symbol="dash">
+<li>Aucun déchet de C &amp; D provenant de bâtiments contaminés par des substances dangereuses inorganiques ou organiques, par exemple du fait de procédés de fabrication utilisés dans les bâtiments, de la pollution du sol, du stockage et de l’utilisation de pesticides ou d’autres substances dangereuses, etc., à moins que la preuve soit fournie que le bâtiment démoli n’était pas pollué ou que des travaux de décontamination ont eu lieu préalablement à la démolition.</li>
+<li> Aucun déchet de C &amp; D provenant de bâtiments traités, couverts ou peints avec des matériaux contenant des substances dangereuses en quantité significative.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets ne figurant pas sur cette liste doivent faire l’objet d’essais, conformément au point 1, en vue de déterminer s’ils remplissent les critères d’admission dans les décharges pour déchets inertes définis au point 2.1.2</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>2.1.2. </i>
+<b>
+<i>Valeurs limites applicables aux déchets admissibles dans les décharges pour déchets inertes</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.1.2.1. Les décharges pour déchets inertes du type A</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les décharges pour déchets inertes du type A sont caractérisées par l’absence d’une barrière géologique telle que décrite à l’annexe I, point 3.3.1.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La distance de la base de la décharge vers le niveau le plus élevé de la nappe phréatique ne doit pas être inférieur à 1 mètre</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets doivent satisfaire aux valeurs limites suivantes:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<eop/>a) valeurs limites en matière de lixiviation</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_14" scl:cols="50 20 30" scl:cols-align="left center center" scl:rows-height="12" width="80">
+<tr>
+<td>
+<p>
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>As</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.04</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ba</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cd</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.005</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cr total</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.075</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cu</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.15</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hg</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.001</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mo</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ni</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pb</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sb</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.05</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Se</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.02</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Zn</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Chlorures</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fluorures</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>1.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sulfates</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>1.500</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Indice phénolique</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.05</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>pH</p>
+</td>
+<td/>
+<td>
+<p>5 - 12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Conductivité électrique</p>
+</td>
+<td>
+<p>µS/cm</p>
+</td>
+<td>
+<p>1.500</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>b) valeurs limites pour le contenu total</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Outre les valeurs limites de lixiviation visées à la lettre a) ci-dessus, les déchets inertes doivent satisfaire aux valeurs limites supplémentaires figurant ci-dessous:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_15" scl:cols="50 20 30" scl:cols-align="left center center" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HC C10-C40</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>300</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HAP EPA 16</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>COT</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>30000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>BTEX</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCB7</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>0.2</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>c) valeurs en cas d’étanchement de la surface valeurs en cas de présence d’une nappe phréatique</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au cas où pour une décharge donnée, la distance de la base de la décharge vers le niveau le plus élevé de la nappe phréatique est inférieure à 1 mètre, des valeurs limites plus sévères que celles mentionnées aux points 2.1.2.1, lettre a) et b) ci-dessus peuvent être prescrites dans l’autorisation respective telle que prévue à l’article 10.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.1.2.2. Les décharges pour déchets inertes du type B</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les décharges pour déchets inertes du type B sont caractérisées par la présence d’une barrière géologique telle que décrite à l’annexe I, point 3.3.1.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets doivent satisfaire aux valeurs limites suivantes:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<eop/>a) valeurs limites en matière de lixiviation</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_16" scl:cols="50 20 30" scl:cols-align="left center center" scl:rows-height="12" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>As</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.06</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ba</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cd</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.01</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cr total</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cu</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hg</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.002</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mo</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ni</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pb</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.15</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sb</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Se</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.04</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Zn</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.6</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Chlorures</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fluorures</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>2.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sulfates</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>1500</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Indice phénolique</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>pH</p>
+</td>
+<td/>
+<td>
+<p>5 – 12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Conductivité électrique</p>
+</td>
+<td>
+<p>µS/cm</p>
+</td>
+<td>
+<p>3000</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>b) valeurs limites pour le contenu total</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Outre les valeurs limites de lixiviation visées à la lettre a), ci-dessus, les déchets inertes doivent satisfaire aux valeurs limites supplémentaires figurant ci-dessous</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_17" scl:cols="50 20 30" scl:cols-align="left center center" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HC C10-C40</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>500</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HAP EPA 16</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>30</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>COT</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>30000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>BTEX</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCB7</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.1.2.3. La couche de recouvrement</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les terres doivent satisfaire aux valeurs limites suivantes:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>a) valeurs limites en matière de lixiviation</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_18" scl:cols="50 20 30" scl:cols-align="left center center" scl:rows-height="12" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HC C10-C40</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HAP EPA 16</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.001</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>As</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.01</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cd</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.002</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cr total</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.03</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cu</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.05</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hg</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.0002</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ni</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.05</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pb</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.04</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Zn</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Chlorures</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>150</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sulfates</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>240</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Indice phénolique</p>
+</td>
+<td>
+<p>mg/l</p>
+</td>
+<td>
+<p>&lt; 0.01</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>pH</p>
+</td>
+<td/>
+<td>
+<p>5 - 9</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Conductivité électrique</p>
+</td>
+<td>
+<p>µS/cm</p>
+</td>
+<td>
+<p>500</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>b) valeurs limites pour le contenu total</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Outre les valeurs limites de lixiviation visées au point a) ci-dessus, les déchets inertes doivent satisfaire aux valeurs limites supplémentaires figurant ci-dessous:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_19" scl:cols="50 20 30" scl:cols-align="left center center" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HC C10-C40</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>HAP EPA 16</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Benzo(a)pyrène</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>0.4</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>COT</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>10000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>As</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>40</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cd</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cr total</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cu</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>150</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hg</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ni</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pb</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>250</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Zn</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>360</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>BTEX</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>PCB7</p>
+</td>
+<td>
+<p>mg/kg</p>
+</td>
+<td>
+<p>0.02</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.1.2.4. Remarques supplémentaires</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>Le dépassement des valeurs limites susmentionnées peut être accepté pour les déchets inscrits au CED sous les numéros 17 05 04 (Terres et cailloux autres que ceux visés à la rubrique 17 05 03) et 20 02 02 (Terre et pierres) dans la mesure où ces dépassements résultent de la présence naturelle de ces substances dans les déchets inertes et pour autant que ces déchets proviennent de la région où la décharge est située;</li>
+<li> Lorsqu’en fonction de l’origine du déchet, il existe des présomptions relatives à la présence d’autres substances ou éléments que ceux mentionnés ci-dessus, l’acceptation du déchet est subordonnée à l’avis préalable de l’Administration de l’environnement, qui peut requérir une analyse de ces paramètres du déchet;</li>
+<li>Pour les déchets des catégories 17 05 04 et 20 02 02, le contrôle des critères d’admission est requis dans la mesure où ces déchets proviennent de terrains sur lesquels des travaux d’assainissement ont ou ont eu lieu.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.2. <b>Critères d’admission dans des décharges pour déchets non dangereux</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>2.2.1. </i>
+<i>
+<b>Déchets admissibles sans essai dans des décharges pour déchets non dangereux</b>
+</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets suivants peuvent être admis sans essai dans les décharges pour déchets non dangereux.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_20" scl:cols="15 35 50" scl:cols-align="left justify justify" width="100">
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p scl:align="center">
+<b>Code CED</b>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p scl:align="center">
+<b>Description</b>
+</p>
+</td>
+<td scl:align="center" scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Restrictions</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 01 01 </p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Béton</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Uniquement déchets de C &amp; D triés(*)</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 01 02</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Briques</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Uniquement déchets de C &amp; D triés(*)</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 01 03</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Tuiles et céramiques </p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Uniquement déchets de C &amp; D triés(*)</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 01 07</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Mélanges de béton, briques, tuiles et céramique</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Uniquement déchets de C &amp; D triés(*)</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>17 05 04</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Terres et cailloux autres que ceux visés à la rubrique 17 05 03</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>À l’exclusion de la terre végétale et de la tourbe; à l’exclusion de la terre et des pierres provenant de sites contaminés</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>19 08 01</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Déchets de dégrillage</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>19 08 02</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Déchets de dégrillage</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>20 02 02</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Terre et pierres</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Provenant uniquement de déchets de jardins et de parcs; à l’exclusion de la terre végétale et de la tourbe</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>20 03 01</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Déchets municipaux en mélange</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>20 03 02</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Déchets de marchés</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>20 03 03</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Déchets de nettoyage des rues</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>20 03 07</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Déchets encombrants</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+</tr>
+<tr>
+<td colspan="3" scl:align="justify">
+<ol scl:font-size="8" scl:start="1" scl:symbol="custom">
+<li scl:symbol="(*)">Déchets de construction et de démolition triés (déchets de C &amp; D) pouvant contenir en très faibles quantités d’autres types de matériaux (tels que des métaux, des matières plastiques, des substances organiques, du bois, du caoutchouc, etc.) résultant des travaux de construction ou de démolition et qui n’ont pas pu être séparés des déchets minéraux sans efforts exceptionnels. L’origine de ces déchets doit être connue.</li>
+</ol>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces déchets ne peuvent pas être admis s’ils sont contaminés dans une proportion susceptible d’accroître le risque lié aux déchets au point de justifier leur élimination dans d’autres décharges. Ils ne peuvent pas être admis dans les mêmes unités que ceux dans lesquels les déchets dangereux stables et non réactifs sont acceptés, conformément à l’article 7, point c) 3), du présent règlement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets inscrits au CED sous les numéros 19 08 01 (Déchets de dégrillage), 19 08 02 (Déchets de désablage), 20 03 01 (Déchets municipaux en mélange), 20 03 02 (Déchets de marchés), 20 03 03 (Déchets de nettoyage des rues) et 20 03 07 (Déchets encombrants) ne peuvent être admis s’ils n’ont pas été soumis au préalable à un traitement conforme à l’article 7 6, point a) du présent règlement. Au plus tard pour le 1<sup>er</sup> janvier 2007, la preuve est à apporter qu’après traitement, l’activité respiratoire (AT4) de ces déchets est réduite au moins à une valeur de 10 mg O<sub>2</sub>/g de la matière sèche et que le carbone organique total sur éluat COT est inférieur ou égal à 250 mg/l.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>2.2.2.</i> <b>
+<i>Valeurs limites pour les déchets non dangereux</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les valeurs limites suivantes s’appliquent:</p>
+<ul scl:symbol="dot">
+<li>aux déchets non dangereux qui ne sont pas explicitement mentionnés au point 2.2.1.,</li>
+<li>aux déchets gereux admis dans la même unité que des déchets dangereux stables et non réactifs.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>a) valeurs limites en matière de solidité</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_21" scl:cols="50 20 30" scl:cols-align="left center center" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Résistance au cisaillement </p>
+</td>
+<td>
+<p>kN/m<sup>2</sup>
+</p>
+</td>
+<td>
+<p>&gt;= 25</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Déformation axiale</p>
+</td>
+<td>
+<p>%</p>
+</td>
+<td>
+<p>&gt;= 20</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Résistance à la rupture uniaxiale</p>
+</td>
+<td>
+<p>kN/m<sup>2</sup>
+</p>
+</td>
+<td>
+<p>&gt;= 50</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>b) valeur limite en substances lipophiles extractibles</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_22" scl:cols="50 20 30" scl:cols-align="left center center" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Substances lypophiles extractibles</p>
+</td>
+<td>
+<p>% poids </p>
+</td>
+<td>
+<p>0.8</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>c) teneur maximale en matière organique</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_23" scl:cols="50 20 30" scl:cols-align="left center center" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>COT</p>
+</td>
+<td>
+<p>% </p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si cette valeur est dépassée, une valeur limite plus élevée peut être admise à condition que la valeur limite de 300 mg/l pour la carbone organique total sur éluat soit respectée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>d) valeur limite en matière de lixiviation</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_24" scl:cols="50 20 30" scl:cols-align="left center center" scl:rows-height="12" width="80">
+<tr>
+<td scl:align="center">
+<p>
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>As</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ba</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>20</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cd</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cr total </p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>2.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cr VI</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cu</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hg</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.02</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mo</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>3.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ni</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pb</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sb</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Se</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ta</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p/>
+</td>
+</tr>
+<tr>
+<td>
+<p>Zn</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Chlorures</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>8.500</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fluorures</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>25</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sulphates</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>7.000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ammonium-N </p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>200</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cyanures libres </p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p/>
+</td>
+<td>
+<p/>
+</td>
+<td>
+<p/>
+</td>
+</tr>
+<tr>
+<td>
+<p>PH</p>
+</td>
+<td>
+<p/>
+</td>
+<td>
+<p>5.5 - 13</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Conductivité électrique</p>
+</td>
+<td>
+<p>uS/cm</p>
+</td>
+<td>
+<p>50.000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Partie soluble</p>
+</td>
+<td>
+<p>%</p>
+</td>
+<td>
+<p>6</p>
+</td>
+</tr>
+<tr>
+<td>
+<p/>
+</td>
+<td>
+<p/>
+</td>
+<td>
+<p/>
+</td>
+</tr>
+<tr>
+<td>
+<p>Indice phénolique</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>50</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>AOX</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>1.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>COT</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>250</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>2.2.3. </i>
+<b>
+<i>Déchets de plâtre</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les matériaux non dangereux à base de plâtre devraient être éliminés uniquement dans des décharges pour déchets non dangereux, dans des unités dans lesquels aucun déchet biodégradable n’est admis. Les valeurs limites fixées aux points 2.3.1 et 2.3.2 pour le COT et le COT sur éluat s’appliquent aux déchets mis en décharge avec des matériaux à base de plâtre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.3. <b>Critères d’admission de déchets dangereux dans des décharges pour déchets non dangereux, conformément à l’article 6, point c) 3) du présent règlement</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par déchet «stable et non réactif», on entend un déchet dont le comportement à la lixiviation n’évolue pas de manière défavorable à long terme, dans des conditions de mise en décharge données ou en cas d’accidents prévisibles, que ce soit:</p>
+<ul scl:symbol="dot">
+<li>par l’évolution du déchet en tant que tel (par exemple, biodégradation),</li>
+<li> sous l’effet des conditions ambiantes à long terme (par exemple eau, air, température, contraintes mécaniques),</li>
+<li> sous l’effet d’autres déchets (notamment de produits de déchets tels que les lixiviats et les gaz).</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>2.3.1</i>. <b>
+<i>Valeurs limites en matière de lixiviation</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les valeurs limites de lixiviation qui s’appliquent aux déchets dangereux admissibles dans les décharges pour les déchets non dangereux sont celles mentionnées au point 2.2.2. de la présente annexe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>2.3.2</i>. <b>
+<i>Autres critères</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Outre les valeurs limites de lixiviation dont référence au point 2.3.1, les déchets doivent satisfaire aux critères supplémentaires suivants:</p>
+<table id="table_25" scl:cols="40 30 30" scl:cols-align="left center left" width="100">
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>COT</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>5%(*)</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>pH</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>6 au minimum</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>CNA (capacité de neutralisation acide)</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>À évaluer</p>
+</td>
+<td/>
+</tr>
+<tr>
+<td colspan="3" scl:align="justify">
+<ul scl:font-size="8" scl:symbol="custom">
+<li scl:symbol="(*)">Si cette valeur est dépassée, une valeur limite plus élevée peut être admise par l’autorité compétente à condition que la valeur limite de 100 mg/l soit respectée pour le COT sur éluat, à la propre valeur de pH du matériau.</li>
+</ul>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>2.3.3.</i> <b>
+<i>Déchets d’amiante</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les matériaux de construction contenant de l’amiante et les autres déchets d’amiante appropriés peuvent être admis sans essai dans les décharges pour déchets non dangereux, conformément à l’article 7, pointc) 3), du présent règlement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les décharges qui reçoivent des matériaux de construction contenant de l’amiante et d’autres déchets d’amiante appropriés doivent satisfaire aux exigences suivantes:</p>
+<ul scl:symbol="dot">
+<li>les déchets ne contiennent pas de substances dangereuses autres que de l’amiante liée, incluant des fibres liées par un liant ou emballées dans du plastique,</li>
+<li> la décharge accepte uniquement des matériaux de construction contenant de l’amiante et d’autres déchets d’amiante appropriés. Ces déchets peuvent également être entreposés dans une unité distincte dans une décharge pour déchets non dangereux, si l’unité est suffisamment confinée,</li>
+<li>les déchets sont conditionnés dans des emballages appropriés,</li>
+<li> afin d’éviter la dispersion des fibres, la zone de stockage est recouverte chaque jour par des matériaux appropriés. Toute opération de compactage cette zone de stockage est interdite,</li>
+<li> la décharge ou l’unité sont recouvertes d’une couche finale afin d’éviter la dispersion des fibres,</li>
+<li> la décharge ou l’unité ne doivent faire l’objet d’aucune opération susceptible d’entraîner une libération des fibres (par exemple par le perçage de trous),</li>
+<li> après la fermeture de la décharge ou de l’unité, un plan indiquant l’emplacement des déchets d’amiante est conservé,</li>
+<li> des mesures appropriées sont prises après la fermeture de la décharge pour limiter les éventuelles utilisations du sol, afin d’éviter tout contact humain avec les déchets.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les décharges qui reçoivent uniquement des matériaux de construction contenant de l’amiante, les exigences définies à l’annexe I, points 3.2.2, 3.2.3, 3.2.5. et 3.2.6. du règlement peuvent être réduites si les conditions énoncées ci-dessus sont remplies.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<eop/>2.4. <b>Critères d’admission des déchets dans les décharges pour déchets dangereux</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les valeurs limites fixées ci-dessous s’appliquent aux déchets admissibles dans les décharges pour déchets dangereux.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>a) valeurs limites en matière de solidité</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_26" scl:cols="50 20 30" scl:cols-align="left center center" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Résistance au cisaillement </p>
+</td>
+<td>
+<p>kN/m<sup>2</sup>
+</p>
+</td>
+<td>
+<p>&gt;= 25</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Déformation axiale</p>
+</td>
+<td>
+<p>%</p>
+</td>
+<td>
+<p>&gt;= 20</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Résistance à la rupture uniaxiale</p>
+</td>
+<td>
+<p>kN/m<sup>2</sup>
+</p>
+</td>
+<td>
+<p>&gt;= 50</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>b) valeur limite en substances lipophiles extractibles</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_27" scl:cols="50 20 30" scl:cols-align="left center center" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Substances lypophiles extractibles</p>
+</td>
+<td>
+<p>% poids </p>
+</td>
+<td>
+<p>4</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>c) teneur maximale en matière organique</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_28" scl:cols="50 20 30" scl:cols-align="left center center" width="80">
+<tr>
+<td>
+<p scl:align="center">
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>COT</p>
+</td>
+<td>
+<p>% </p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si cette valeur est dépassée, une valeur limite plus élevée peut être admise à condition que la valeur limite de 200 mg/l pour le carbone organique total sur éluat soit respectée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>d) valeurs limites en matières de lixiviation</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_29" scl:cols="50 20 30" scl:cols-align="left center center" scl:rows-height="12" width="80">
+<tr>
+<td scl:align="center">
+<p>
+<b>Paramètre</b>
+</p>
+</td>
+<td>
+<p>
+<b>Unité</b>
+</p>
+</td>
+<td>
+<p>
+<b>Valeur limite</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>As</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ba</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>60</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cd</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cr total </p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>15</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cr VI</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.5</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cu</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Hg</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>0.1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mo</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ni</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pb</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sb</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Se</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Zn</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p/>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p/>
+</td>
+</tr>
+<tr>
+<td>
+<p>Chlorures</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>10.000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fluorures</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>50</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sulphates</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>10.000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ammonium-N </p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>1.000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Nitrites</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p/>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cyanures libres </p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p/>
+</td>
+<td>
+<p/>
+</td>
+<td>
+<p/>
+</td>
+</tr>
+<tr>
+<td>
+<p>ph</p>
+</td>
+<td>
+<p/>
+</td>
+<td>
+<p>4 - 13</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Conductivité électrique</p>
+</td>
+<td>
+<p>uS/cm </p>
+</td>
+<td>
+<p>100.000</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Partie soluble</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p/>
+</td>
+<td>
+<p> </p>
+</td>
+<td>
+<p/>
+</td>
+</tr>
+<tr>
+<td>
+<p>Indice phénolique</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>100</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>AOX</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>COT</p>
+</td>
+<td>
+<p>mg/l </p>
+</td>
+<td>
+<p>320</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>e) autres critères</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En outre, la capacité de neutralisation acide (CNA) est à évaluer.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.5. <b>Critères de stockage souterrain</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour l’admission de déchets en stockage souterrain, une évaluation spécifique de la sécurité du site envisagé doit être effectuée, conformément à l’annexe A. Un déchet ne peut être admis que s’il est compatible avec l’évaluation spécifique de la sécurité du site.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Seuls les déchets qui remplissent les critères visés au point 2.1 peuvent être admis dans les stockages souterrains pour déchets inertes.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Seuls les déchets qui remplissent les critères visés au point 2.2 ou 2.3 peuvent être admis dans les stockages souterrains pour déchets non dangereux.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Seuls les déchets compatibles avec l’évaluation spécifique de la sécurité du site concerné peuvent être admis dans un stockage souterrain pour déchets dangereux. Dans ce cas, les critères visés au point 2.4 ne s’appliquent pas.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets doivent toutefois être soumis à la procédure d’admission définie au point 1.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.6. <b>Exigences spécifiques applicables au mercure métallique</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aux fins du stockage temporaire de mercure métallique pendant plus d’un an, les exigences ci-après s’appliquent..</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>A. Composition du mercure</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le mercure métallique doit être conforme aux spécifications suivantes:</p>
+<ul scl:symbol="dash">
+<li>teneur en mercure supérieure à 99,9% en poids,</li>
+<li> absence d’impuretés susceptibles de corroder le carbone ou l’acier inoxydable (par exemple, solution d’acide nitrique, solutions chlorurées).</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>B. Confinement</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les conteneurs servant au stockage du mercure métallique doivent être résistants à la corrosion et aux chocs. Ils doivent donc de préférence être exempts de soudures. Les conteneurs doivent en particulier répondre aux spécifications suivantes:</p>
+<ul scl:symbol="dash">
+<li>matériau constituant le conteneur: acier ordinaire (ASTM A36 au minimum) ou acier inoxydable (AISI 304, 316L), </li>
+<li>les conteneurs doivent être étanches aux gaz et aux liquides, </li>
+<li>la paroi externe des conteneurs doit pouvoir résister aux conditions de stockage,</li>
+<li> le modèle de conteneur doit réussir l’épreuve de chute et les épreuves d’étanchéité décrites dans les chapitres 6.1.5.3 et 6.1.5.4 des Recommandations relatives au transport des marchandises dangereuses, Manuel d’épreuves et de critères des Nations unies.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le taux de remplissage du conteneur doit être au maximum de 80% en volume, afin de préserver un espace vide suffisant et d’éviter toute fuite ou déformation permanente du conteneur en cas de dilatation du liquide sous l’effet de températures élevées</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>C. Procédures d’admission</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Seuls sont admis les conteneurs accompagnés d’un certificat et conformes aux exigences énoncées au présent point.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les procédures d’admission doivent respecter les conditions suivantes:</p>
+<ul scl:symbol="dash">
+<li>seul est admis le mercure métallique répondant aux critères d’admission minimaux susmentionnés,</li>
+<li> les conteneurs doivent faire l’objet d’une inspection visuelle avant stockage; les conteneurs endommagés, qui fuient ou qui sont corrodés ne sont pas admis,</li>
+<li>les conteneurs doivent être porteurs d’une empreinte durable (réalisée par poinçonnage), indiquant le numéro d’identification du conteneur, le matériau dont il est constitué, le poids du conteneur à vide, la référence du fabricant et la date de fabrication,</li>
+<li> une plaque fixée à demeure sur le conteneur doit mentionner le numéro d’identification du certificat.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>D. Certificat</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le certificat visé sous C doit mentionner les éléments suivants:</p>
+<ul scl:symbol="dash">
+<li>le nom et l’adresse du producteur des déchets,</li>
+<li> le nom et l’adresse de la personne responsable du remplissage,</li>
+<li> le lieu et la date de remplissage,</li>
+<li> la quantité de mercure,</li>
+<li> la pureté du mercure et, le cas échéant, une description des impuretés, ainsi que le rapport d’analyse,</li>
+<li> la confirmation que le conteneur a servi exclusivement au transport/stockage de mercure,</li>
+<li> le numéro d’identification du conteneur,</li>
+<li> toute observation particulière.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les certificats doivent être délivrés par le producteur des déchets ou à défaut par la personne responsable de leur gestion.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>3. METHODES D’ECHANTILLONNAGE ET D’ESSAI</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En règle générale, les échantillonnages et les essais pour la caractérisation de base et la vérification de la conformité sont effectués par des personnes agréées conformément aux dispositions de la <ref href="/eli/etat/leg/loi/1993/04/21/n3/jo" id="92a9e18b-419b-4fe7-8f53-79da7c22c90d">loi du 21 avril 1993</ref> relative à l’agrément de personnes physiques ou morales privées ou publiques, autres que l’État pour l’accomplissement de tâches techniques d’étude et de vérification dans le domaine de l’environnement. Les laboratoires doivent avoir une expérience avérée dans le domaine des essais et des analyses portant sur les déchets et doivent disposer d’un système efficace d’assurance qualité.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Nonobstant ce qui précède et sur avis préalable de l’administration, l’échantillonnage peut être effectué par les producteurs de déchets ou les exploitants, à condition que des personnes agréées, indépendantes et qualifiées telles que mentionnées ci-dessus exercent une surveillance suffisante pour que les objectifs du présent règlement soient atteints.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il en est de même pour les essais sur les déchets qui peuvent être effectués par les producteurs de déchets ou les exploitants s’ils ont mis en place un système approprié d’assurance qualité, comportant des vérifications périodiques réalisées de manière indépendante par un organisme agréé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les méthodes suivantes seront utilisées:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>a) Echantillonnage</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour l’échantillonnage des déchets réalisé pour la caractérisation de base, la vérification de la conformité et la vérification sur place, un plan d’échantillonnage sera élaboré conformément à la première partie de la norme sur l’échantillonnage actuellement développée par le CEN.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>b) Propriétés générales des déchets</i>
+</p>
+<table id="table_30" scl:cols="15 85" scl:cols-align="left justify" width="100">
+<tr>
+<td>
+<p>EN 13137:</p>
+</td>
+<td>
+<p>Dosage du COT dans les déchets, boues et sédiments</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>prEN 14346:</p>
+</td>
+<td>
+<p>Calcul de la teneur en matière sèche à partir de la détermination du résidu sec ou de la teneur en eau</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>
+<eop/>c) Essais de lixiviation</i>
+</p>
+<table id="table_31" scl:cols="15 85" scl:cols-align="left justify" width="100">
+<tr>
+<td>
+<p>prEN 14405:</p>
+</td>
+<td>
+<p>Essai de comportement à la lixiviation — Essai de percolation à écoulement ascendant (on utilisece dernier pour les constituants inorganiques)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>EN 12457/1-4:</p>
+</td>
+<td>
+<p>Lixiviation — Essai de conformité pour la lixiviation des déchets fragmentés et des boues</p>
+<p>Partie 1: L/S = 2 l/kg et granulométrie &lt; 4 mm</p>
+<p>Partie 2: L/S = 10 l/kg et granulométrie &lt; 4 mm</p>
+<p>Partie 3: L/S = 2 l/kg et = 8 l/kg et granulométrie &lt; 4 mm</p>
+<p>Partie 4: L/S = 10 l/kg et granulométrie &lt; 10 mm</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>d) Digestion des déchets non traités</i>
+</p>
+<table id="table_32" scl:cols="15 85" scl:cols-align="left justify" width="100">
+<tr>
+<td>
+<p>EN 13657:</p>
+</td>
+<td>
+<p>Digestion en vue de la détermination ultérieure de la part des éléments solubles dans l’eau régale contenus dans les déchets (cette digestion partielle des déchets solides est réalisée avant l’analyse élémentaire, ce qui laisse la matrice de silicate intacte)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>EN 13656: </p>
+</td>
+<td>
+<p>Digestion assistée par micro-ondes avec un mélange d’acides fluorhydrique (HF), nitrique (HNO3) et chlorhydrique (HCl) pour la détermination ultérieure d’éléments contenus dans les déchets (digestion totale des déchets solides réalisée avant l’analyse élémentaire)</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>e) Analyse</i>
+</p>
+<table id="table_33" scl:cols="15 85" scl:cols-align="left justify" width="100">
+<tr>
+<td>
+<p>ENV 12506:</p>
+</td>
+<td>
+<p>Analyse des éluats — Détermination du pH et dosage de As, Ba, Cd, Cl, Co, Cr VI, Cu, Mo, Ni, NO<sub>2</sub>, Pb, S total, SO<sub>4</sub>, V et Zn (analyse des constituants inorganiques des déchets solides et/ou de leurs éluats et éléments majeurs, mineurs et en trace)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ENV 13370: </p>
+</td>
+<td>
+<p>Analyse chimique des éluats — Détermination de: ammonium, AOX, conductivité, Hg, «indice phénol», COT, CN aisément libérables, F [analyse des constituants inorganiques des déchets solides et/ou de leurs éluats (anions)]</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>prEN 14039:</p>
+</td>
+<td>
+<p>Détermination de la teneur en hydrocarbures par chromatographie en phase gazeuse dans la plage C10-C40</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette liste sera modifiée lorsque d’autres normes du CEN seront disponibles.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les méthodes appliquées aux essais et aux analyses pour lesquels les méthodes du CEN ne sont pas (encore) disponibles, peuvent être utilisées sur avis préalable de l’administration.</p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+<attachment id="attachment_3">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-03-31" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-03-31" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-03-31" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<b>ANNEXE III</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p scl:align="center">
+<b>PROCÉDURES DE CONTRÔLE ET DE SURVEILLANCE PENDANT LES PHASES D'EXPLOITATION ET D'ENTRETIEN DU SITE DÉSAFFECTÉ</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>1. Introduction</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'objectif de la présente annexe est d'indiquer les procédures minimales de contrôle à mettre en oeuvre pour vérifier que:</p>
+<ul scl:symbol="dash">
+<li>le déchet a été admis en vue de son élimination conformément aux critères fixés pour la catégorie de décharges concernée,</li>
+<li> les processus dans la décharge se déroulent de la manière souhaitée,</li>
+<li> les systèmes de protection de l'environnement fonctionnent pleinement comme prévu,</li>
+<li> les conditions de l'autorisation accordée pour la décharge sont remplies.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les exigences détaillées sont fixées de façon spécifique dans les autorisations respectives conformément aux dispositions de l'article 10 du présent règlement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>2. Données météorologiques</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La collecte des données météorologiques se fait par le réseau météorologique national. Il doit être fait référence à la station météorologique la plus proche. Le cas échéant, l'installation d'une station météorologique sur le site même de la décharge peut être fixé par arrêté ministériel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au moins les données suivantes sont à recueillir:</p>
+<table id="table_6" scl:cols="5 29 33 33" width="100">
+<tr>
+<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Exploitation</b>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Après désaffectation</b>
+</p>
+</td>
+</tr>
+<tr scl:border-top-style="solid">
+<td scl:border-bottom-style="solid" scl:border-left-style="solid">
+<p>1.1. </p>
+</td>
+<td scl:border-bottom-style="solid">
+<p>Volume des précipitations</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Quotidiennement</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Quotidiennement, en plus des valeurs mensuelles</p>
+</td>
+</tr>
+<tr scl:border-bottom-style="solid" scl:border-top-style="solid">
+<td scl:border-bottom-style="solid" scl:border-left-style="solid">
+<p>1.2. </p>
+</td>
+<td scl:border-bottom-style="solid">
+<p>Température (min., max., <br/>14 00 h HEC) </p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Quotidiennement</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Moyenne mensuelle</p>
+</td>
+</tr>
+<tr scl:border-bottom-style="solid" scl:border-top-style="solid">
+<td scl:border-left-style="solid">
+<p>1.3. </p>
+</td>
+<td>
+<p>Direction et force du vent prédominant Windes</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Quotidiennement</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Non requis</p>
+</td>
+</tr>
+<tr scl:border-bottom-style="solid">
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-top-style="solid">
+<p>1.4. </p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-top-style="solid">
+<p>Evaporation (lysimètre)<sup>(1)</sup>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Quotidiennement</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Quotidiennement, en plus des valeurs mensuelles</p>
+</td>
+</tr>
+<tr scl:border-bottom-style="solid">
+<td scl:border-bottom-style="solid" scl:border-left-style="solid">
+<p>1.5. </p>
+</td>
+<td scl:border-bottom-style="solid">
+<p>Humidité atmosphérique <br/>(14 00 h HEC)</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Quotidiennement</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Moyenne mensuelle</p>
+</td>
+</tr>
+<tr>
+<td colspan="4" scl:valign="middle">
+<p scl:font-size="8">
+<sup>(1)</sup> Ou par d'autres méthodes appropriées</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>3. Données relatives aux rejets: contrôle des eaux, des lixiviats et des gaz</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Des échantillons des lixiviats et des eaux de surface doivent être recueillis à des endroits représentatifs. Le prélèvement des échantillons et les mesures (volume et composition) des lixiviats doivent être réalisés séparément au moins à chaque point où un lixiviat est rejeté du site. (Référence: directives générales pour les méthodes de prélèvement, document ISO 5667-2 (1991).)</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le contrôle des eaux de surface éventuelles est effectué à deux points au moins, un en amont de la décharge et un en aval.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Préalablement à la mise en service de la décharge, l'exploitant doit présenter à l'administration un plan indiquant les différents emplacements de prélèvement des échantillons d'eau.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le contrôle des gaz doit être représentatif de chaque section de la décharge.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La fréquence minimale des prélèvements d'échantillons et des analyses est indiquée dans le tableau ci-après</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les lixiviats et les eaux, un échantillon représentatif de la composition moyenne est prélevé pour la surveillance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_7" scl:cols="5 29 33 33" width="100">
+<tr>
+<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Exploitation</b>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Après désaffectation<sup>(2)</sup>
+</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid">
+<p>3.1.</p>
+</td>
+<td>
+<p>Volume de lixiviat</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>En continu</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Tous les six mois</p>
+</td>
+</tr>
+<tr>
+<td scl:border-left-style="solid">
+<p>3.2.</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-top-style="solid">
+<p>Composition du lixiviat <sup>(1)</sup>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Trimestriellement</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Trimestriellement</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-top-style="solid">
+<p>3.3.</p>
+</td>
+<td>
+<p>Volume et composition des eaux de surface <sup>(6)</sup> </p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Trimestriellement</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Trimestriellement</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-top-style="solid">
+<p>3.4.</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-top-style="solid">
+<p>Emissions potentielles de gaz et pression atmosphérique<sup> (3)</sup> (CH<sub>4</sub>, O<sub>2</sub>, CO<sub>2</sub>, H<sub>2</sub>S, H<sub>2</sub>, etc) </p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Mensuellement <sup>(2) (4)</sup>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Tous les six mois <sup>(5)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<ol scl:font-size="8" scl:start="1" scl:symbol="(1)">
+<li>Les paramètres à mesurer et les substances à analyser varient en fonction de la composition des déchets déposés. Les paramètres sont fixés dans les autorisations respectives et reflètent les caractéristiques des déchets en matière de lixiviation.</li>
+<li> Pour les décharges pour déchets inertes en exploitation et pour les décharges désaffectées, si l'évaluation des données indique que l'on obtient les mêmes résultats avec des intervalles plus longs, la fréquence peut être adaptée. Toutefois une campagne de mesures doit être effectuée une fois par an.</li>
+<li> Ces mesures concernent principalement les déchets contenant des matières organiques.</li>
+<li> CH<sub>4</sub>, CO<sub>2</sub>, O<sub>2</sub>, régulièrement, les autres gaz suivant la fréquence nécessaire, compte tenu de la composition des déchets déposés, pour refléter les propriétés de ces derniers en matière de lixiviation.</li>
+<li> Outre la composition des gaz, l'efficacité du système d'extraction doit être vérifiée régulièrement</li>
+<li>En fonction des caractéristiques du site de mise en décharge, une dérogation de cette obligation peut être fixée dans l'autorisation.</li>
+</ol>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les points 3.1 et 3.2 ne s'appliquent que dans le cas où les lixiviats sont recueillis (annexe I point 2).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>4. Protection des eaux souterraines</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>4.1. Prélèvement d'échantillons</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les mesures doivent pouvoir fournir des informations sur les eaux souterraines susceptibles d'être affectées par les activités de la décharge. Il y a au moins un point de mesure dans la zone d'arrivée et deux dans la région de sortie des eaux souterraines. Ces chiffres peuvent être augmentés sur la base d'une enquête hydrogéologique spécifique et pour déceler rapidement tout écoulement accidentel de lixiviat dans les eaux souterraines.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le prélèvement d'échantillons doit être effectué au moins en trois emplacements avant le remplissage afin de fixer des valeurs de référence pour les futurs prélèvements d'échantillons. Référence: Prélèvement d'échantillons - Eaux souterraines, ISO 5667, partie 11, 1993.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>4.2. Surveillance</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les paramètres à analyser dans les échantillons prélevés sont à fixer dans les autorisations respectives en fonction de la composition prévue du lixiviat et de la qualité des eaux souterraines dans la région. Lors de la sélection des paramètres d'analyse, il conviendrait de tenir compte de la mobilité dans la zone des eaux souterraines. Les paramètres pourraient inclure des paramètres indicateurs permettant de détecter rapidement tout changement de la qualité des eaux.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au moins les paramètres suivants sont à analyser:</p>
+<ul scl:symbol="dot">
+<li>pH, conductivité électrique, température;</li>
+<li> chlorures, fluorures, sulfates, nitrates, nitrites;</li>
+<li> sodium, potassium, ammonium;</li>
+<li> cyanures libres;</li>
+<li> DCO;</li>
+<li> métaux lourds: cuivre, zinc, plomb, cadmium, chrome, mercure, arsenic;</li>
+<li> TOC, phénoles, hydrocarbures.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<eop/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_11" scl:cols="34 33 33" width="100">
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>En phase d'exploitation</b>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>
+<b>Après désaffectation</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Niveau des eaux souterraines</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Tous les six mois <sup>(1)</sup>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Tous les six mois <sup>(1)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Composition des eaux souterraines</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Trimestriellement <sup>(2) (3)</sup>
+</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Trimestriellement <sup>(2) (3)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<ol xmlns:a0="http://www.scl.lu" a0:font-size="8" a0:start="1" a0:symbol="(1)">
+<li>Si les niveaux des eaux souterraines fluctuent, la fréquence doit être augmentée.</li>
+<li> Si de grandes fluctuations sont constatées, la fréquence de prélèvement doit être adaptée.</li>
+<li>Lorsqu'un seuil de déclenchement est atteint (voir point C), il est nécessaire de procéder à une vérification en prélevant un nouveau échantillon. Si le résultat est confirmé, un plan d'intervention (prévu dans l'autorisation) doit être mis en oeuvre.</li>
+</ol>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>4.3 Seuils de déclenchement</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans le cas des eaux souterraines, on devrait considérer qu'il y a des effets néfastes importants sur l'environnement au sens des articles 13 et 14 du présent règlement, lorsqu'une analyse d'un échantillon d'eaux souterraines révèle un changement significatif de la qualité de l'eau. Le seuil de déclenchement doit être déterminé en tenant compte des formations hydrogéologiques spécifiques sur le site de la décharge et de la qualité des eaux souterraines et doit, dans la mesure du possible, être indiqué dans l'autorisation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les observations doivent être évaluées au moyen de tableaux de contrôle comportant des règles et des niveaux de contrôle bien définis pour chaque puits situé en contrebas. Les niveaux de contrôle doivent être déterminés en fonction des variations locales de la qualité des eaux souterraines.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>5. Topographie du site: données relatives à la masse des déchets mis en décharge</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_12" scl:cols="7 31 31 31" width="100">
+<tr>
+<td colspan="2" scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Exploitation</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Après désaffectation</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>5.1.</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Structure et composition de la masse des déchets mis en décharge (1) </p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Annuellement</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid"/>
+</tr>
+<tr>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>5.2.</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Tassement de la masse de déchets mis en décharge (2)</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Annuellement</p>
+</td>
+<td scl:border-bottom-style="solid" scl:border-left-style="solid" scl:border-right-style="solid" scl:border-top-style="solid">
+<p>Annuellement</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<ol scl:font-size="8" scl:start="1" scl:symbol="(1)">
+<li>Données pour le descriptif de la décharge en question: surface occupée par les déchets, phases exploitées, quantité et nature des différentes catégories de déchets ainsi que la capacité de décharge encore disponible. Ces chiffres sont à fournir à l'administration moyennant un rapport annuel.</li>
+<li> Ces chiffres sont à fournir à l'administration moyennant un rapport annuel sauf pour les décharges pour déchets inertes.</li>
+</ol>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>6. Exigences spécifiques applicables au mercure métallique</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aux fins du stockage temporaire de mercure métallique pendant plus d’un an, les exigences ci-après s’appliquent.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>A. Exigences de surveillance, d’inspection et d’intervention d’urgence</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un système de surveillance continue des vapeurs de mercure, d’une sensibilité au moins égale à 0,02 mg mercure/m<sup>3</sup>, doit être installé sur le site de stockage. Des capteurs doivent être placés au niveau du sol et à hauteur d’homme. Le système doit être équipé d’un dispositif d’alarme visuelle et sonore. Il doit faire l’objet d’un entretien annuel. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le site de stockage et les conteneurs doivent faire l’objet d’une inspection visuelle par une personne habilitée au moins une fois par mois. Lorsqu’une fuite est détectée, l’exploitant doit immédiatement prendre toutes les mesures nécessaires pour éviter toute émission de mercure dans l’environnement et rétablir les conditions de stockage du mercure en toute sécurité.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute fuite doit être considérée comme ayant d’importants effets néfastes sur l’environnement, comme énoncé à l’article 13, point b).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Des plans d’urgence et des équipements de protection appropriés à la manipulation du mercure métallique doivent être disponibles sur le site.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>B. Tenue de registres</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Tous les documents contenant les informations visées au point 6 de l’annexe II ainsi que sous A au présent point, y compris les certificats accompagnant les conteneurs et les relevés mentionnant le déstockage et l’expédition du mercure métallique après un stockage temporaire, sa destination et le traitement qu’il est prévu de lui appliquer, doivent être conservés pendant au moins trois ans après la fin du stockage.</p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+<attachment id="attachment_4">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-04-03" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-04-03" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-04-03" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<b>ANNEXE V</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p scl:align="center">
+<b>EVALUATION DE LA SECURITE EN MATIERE DE STOCKAGE SOUTERRAIN</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>1. PRINCIPES DE SECURITE POUR LE STOCKAGE SOUTERRAIN: TOUS TYPES DE STOCKAGE</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>1.1. <b>Importance de la barrière géologique</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’isolement des déchets par rapport à la biosphère est l’objectif ultime de l’élimination finale des déchets en stockage souterrain. Les déchets, la barrière géologique et les cavités, y compris toute structure artificielle, constituent un système qui, ajouté à tous les autres aspects techniques, doit satisfaire aux exigences correspondantes.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour répondre aux exigences de la directive-cadre sur l’eau (<ref href="/eli/dir_ue/2000/60/jo" id="4882457e-81e8-4b77-8df6-bd78074c4892">2000/60/CE</ref>), il convient de démontrer la sécurité à long terme de l’installation (point 1.2.7). L’article 11, paragraphe 3, point j), de la <ref href="/eli/dir_ue/2000/60/jo" id="8e24f00d-db7a-4452-be27-ba9afb87fbf7">directive 2000/60/CE</ref> établit une interdiction générale du rejet direct de polluants dans les eaux souterraines. L’article 4, paragraphe 1, point b) i), de la <ref href="/eli/dir_ue/2000/60/jo" id="a08f32c8-869c-4948-90b0-0c46bd4361ee">directive 2000/60/CE</ref> dispose que les Etats membres doivent prendre les mesures nécessaires pour prévenir la détérioration de l’état de toutes les masses d’eau souterraines.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>1.2. <b>Évaluation des risques spécifique à un site</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’évaluation des risques suppose d’identifier:</p>
+<ul scl:symbol="dash">
+<li>le danger (en l’espèce, les déchets déposés),</li>
+<li> les cibles (en l’espèce, la biosphère et éventuellement les eaux souterraines),</li>
+<li> les voies par lesquelles les substances provenant des déchets peuvent atteindre la biosphère,</li>
+<li> l’évaluation de l’impact des substances susceptibles d’atteindre la biosphère.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les critères d’admission en stockage souterrain doivent notamment être liés à l’analyse de la roche hôte, c’est pourquoi il est confirmé qu’aucune des conditions relatives aux sites définies à l’annexe I du règlement grand-ducal «décharge» (à l’exception de l’annexe I, paragraphes 2, 3, 4, et 5) ne s’applique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les critères d’admission en stockage souterrain ne peuvent être définis qu’à partir des conditions locales. Il faut donc démontrer que l’horizon géologique est de nature à permettre un stockage, c’est-à-dire évaluer les risques liés au confinement, en tenant compte du système global comprenant les déchets, les structures et les cavités artificielles et la formation géologique encaissante.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’évaluation spécifique des risques liés au site de l’installation doit être effectuée à la fois pour les phases d’exploitation et de post exploitation. Sur la base de ces évaluations, les mesures de contrôle et de sécurité qui s’imposent ainsi que les critères d’admission sont définis.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Une analyse intégrée de l’évaluation de la performance est préparée; cette analyse comprend notamment:</p>
+<ol scl:start="1" scl:symbol="1)">
+<li>une évaluation géologique;</li>
+<li> une évaluation géomécanique;</li>
+<li> une évaluation hydrogéologique;</li>
+<li> une évaluation géochimique;</li>
+<li> une évaluation des incidences sur la biosphère;</li>
+<li>une évaluation de la phase d’exploitation;</li>
+<li> une évaluation à long terme;</li>
+<li> une évaluation de l’incidence de toutes les installations situées à la surface du site.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.2.1</i>. <b>
+<i>Evaluation géologique</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Des recherches ou une connaissance approfondies des données géologiques du site sont nécessaires. Ce travail comprend des études et des analyses portant sur les types de roches, les sols et la topographie. L’évaluation géologique devrait démontrer l’adéquation du site à un stockage souterrain. L’emplacement, la fréquence et la structure de toute faille ou fracture observée dans les couches géologiques environnantes et l’incidence éventuelle d’une activité sismique sur ces structures doivent notamment être étudiés. Les autres emplacements envisageables pour le site doivent aussi être pris en compte</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.2.2</i>. <b>
+<i>Evaluation géomécanique</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La stabilité des cavités doit être démontrée par des études et des évaluations appropriées. Les déchets stockés sont pris en compte dans cette évaluation. Il convient systématiquement d’analyser les processus et d’étayer cette analyse par une documentation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La démonstration devrait porter sur les points suivants:</p>
+<ol scl:start="1" scl:symbol="1)">
+<li>pendant et après la formation des cavités, aucune déformation importante susceptible d’altérer la mise en œuvre du stockage souterrain ou d’ouvrir une voie vers la biosphère ne devrait se produire dans la cavité elle-même ou à la surface de la terre;</li>
+<li> la résistance à la déformation de la cavité est suffisante pour empêcher son effondrement pendant l’exploitation;</li>
+<li>les matériaux entreposés doivent avoir la stabilité nécessaire compatible avec les propriétés géomécaniques de la roche hôte.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.2.3</i>. <b>
+<i>Evaluation hydrogéologique</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Une étude approfondie des propriétés hydrogéologiques est nécessaire pour évaluer la configuration de l’écoulement des eaux souterraines dans les strates environnantes, sur la base d’informations relatives à la conductivité hydraulique de la formation géologique encaissante, de ses fractures et des gradients hydrauliques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.2.4</i>. <b>
+<i>Evaluation géochimique</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Une étude approfondie de la roche et de la composition des eaux souterraines est nécessaire pour évaluer la composition actuelle des eaux souterraines et leur évolution possible dans le temps, la nature et la quantité des minéraux comblant les fractures, ainsi qu’une description minéralogique quantitative de la roche hôte. Il convient d’évaluer l’incidence de la variabilité sur le système géochimique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.2.5</i>. <b>
+<i>Evaluation des incidences sur la biosphère</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il convient de réaliser une étude concernant les incidences éventuelles du stockage souterrain sur la biosphère. Des études de référence doivent être menées pour définir le niveau des substances concernées dans le milieu naturel local.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.2.6</i>. <b>
+<i>Evaluation de la phase d’exploitation</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour la phase d’exploitation, l’analyse doit démontrer les points suivants</p>
+<ol scl:start="1" scl:symbol="1)">
+<li>la stabilité des cavités, déjà visée au point 1.2.2.;</li>
+<li> l’absence de risque inacceptable d’ouverture d’une voie de transfert entre les déchets et la biosphère;</li>
+<li> l’absence de risque inacceptable susceptible d’affecter le fonctionnement de l’installation.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lors de la démonstration de la sécurité pendant la phase d’exploitation, une analyse systématique du fonctionnement de l’installation doit être menée sur la base de données spécifiques relatives à l’inventaire des déchets, à la gestion de l’installation et au programme d’activités. Il convient de démontrer que les déchets ne provoqueront dans la roche aucune réaction chimique ou physique susceptible d’altérer sa résistance et son étanchéité et de représenter un danger pour le stockage lui-même. Pour ces raisons, outre les déchets interdits par l’article 6, paragraphe 3, du présent règlement, les déchets spontanément inflammables dans les conditions de stockage prévues (température, humidité), les produits gazeux, les déchets volatils, les déchets collectés sous forme de mélanges indéfinissables ne doivent pas être acceptés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les incidents particuliers susceptibles de créer une voie de transfert entre les déchets et la biosphère pendant la phase d’exploitation doivent être identifiés. Il convient de résumer et de classer les différents types de risques opérationnels envisageables dans des catégories spécifiques. Leurs incidences éventuelles doivent faire l’objet d’une évaluation. Il convient de démontrer l’absence de risque inacceptable lié à la rupture du confinement. Des mesures d’urgence doivent être prévues.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>
+<eop/>1.2.7</i>. <b>
+<i>Evaluation à long terme</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En vue d’atteindre les objectifs de la mise en décharge durable, l’évaluation des risques doit porter sur le long terme. Il convient de s’assurer qu’aucune voie de transfert ne sera créé vers la biosphère à long terme après l’exploitation du site de stockage souterrain.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les protections du dépôt souterrain (par exemple la qualité des déchets, les structures artificielles, les ouvrages de consolidation et d’obturation des puits et des forages), la performance de la roche hôte, les strates environnantes et les roches de recouvrement doivent faire l’objet d’une évaluation quantitative sur le long terme et d’une évaluation fondée sur des données spécifiques au site ou sur des hypothèses suffisamment larges. Les conditions géochimiques et hydrogéologiques telles que l’écoulement des eaux souterraines (points 1.2.3 et 1.2.4), l’efficacité des barrières, l’atténuation naturelle ainsi que la lixiviation des déchets stockés doivent être prises en considération.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il convient de démontrer la sécurité à long terme du site de stockage souterrain par une évaluation de la sécurité, qui comprend une description de l’état initial du site à un moment déterminé (par exemple, à sa fermeture) puis un scénario décrivant les évolutions majeures prévues dans le temps géologique. Enfin, il faut évaluer les conséquences de la libération des substances concernées hors du stockage souterrain, dans le cadre de différents scénarios reflétant l’évolution à long terme envisageable pour la biosphère, la géosphère et le site de stockage souterrain.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le revêtement des conteneurs et des cavités ne doit pas être pris en compte lors de l’évaluation des risques à longterme liés au dépôt de déchets, en raison de leur durée de vie limitée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.2.8</i>. <b>
+<i>Evaluation de l’incidence des installations de réception en surface</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Même si les déchets amenés au site sont destinés à être mis en stockage souterrain, ils sont déchargés, contrôlés et éventuellement stockés en surface avant d’atteindre leur destination finale. Les installations de réception doivent être conçues et exploitées de manière à prévenir toute atteinte à la santé des personnes et à l’environnement local.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Elles doivent remplir les mêmes conditions que toute autre installation de réception de déchets.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>1.2.9</i>. <b>
+<i>Evaluation des autres risques</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En vue d’assurer la protection des travailleurs, les déchets ne doivent être déposés en stockage souterrain que si ce site est séparé de manière sûre des activités minières. Les déchets ne doivent pas être acceptés s’ils contiennent ou risquent de produire des substances dangereuses susceptibles de porter atteinte à la santé des personnes, par exemple des germes pathogènes de maladies transmissibles.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2. CRITERES D’ADMISSION EN STOCKAGE SOUTERRAIN APPLICABLES A TOUS LES TYPES DE STOCKAGE SOUTERRAINS</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.1. <b>Déchets exclus</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Conformément aux points 1.2.1 à 1.2.8, les déchets susceptibles de subir des transformations physiques, chimiques ou biologiques indésirables après leur dépôt ne doivent pas être éliminés en stockage souterrain. Les déchets concernés sont les suivants:</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>les déchets visés à l’article 6, paragraphe 3, du présent règlement;</li>
+<li> les déchets et leurs conteneurs susceptibles de réagir au contact de l’eau ou de la roche hôte, dans les conditions de stockage données, et d’entraîner:<ul scl:symbol="dash">
+<li>une variation de volume,</li>
+<li> la production de substances ou de gaz auto-inflammables, toxiques ou explosifs, ou</li>
+<li> toute autre réaction susceptible de mettre en danger la sécurité opérationnelle et/ou l’intégrité de la barrière.</li>
+</ul>
+<p>Les déchets qui risquent de réagir les uns au contact des autres doivent être définis et classés dans des groupes de compatibilité; les différents groupes de compatibilité doivent être physiquement séparés au moment du stockage;</p>
+</li>
+<li>les déchets biodégradables;</li>
+<li> les déchets ayant une odeur âcre;</li>
+<li> les déchets susceptibles de produire un mélange air - gaz toxique ou explosif. Il s’agit en particulier des déchets qui donnent lieu à:<ul scl:symbol="dash">
+<li>des concentrations de gaz toxique, du fait des pressions partielles de leurs composants,</li>
+<li> des concentrations supérieures de plus de 10 % à la concentration correspondant à la limite inférieure d’explosibilité, lorsqu’ils sont saturés à l’intérieur d’un conteneur;</li>
+</ul>
+</li>
+<li>les déchets ayant une stabilité insuffisante compte tenu des conditions géomécaniques;</li>
+<li> les déchets auto-inflammables ou spontanément inflammables dans les conditions de stockage données, les produits gazeux, les déchets volatils, les déchets collectés sous forme de mélanges indéfinissables;</li>
+<li> les déchets contenant ou susceptibles de libérer des germes pathogènes de maladies transmissibles [cas déjà prévu à l’article 6, paragraphe 3, point c) du présent règlement.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.2. <b>Liste des déchets admissibles en stockage souterrain</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets inertes ainsi que les déchets dangereux et non dangereux qui ne relèvent pas des points 2.1 et 2.2 sont admissibles en stockage souterrain.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.3. <b>Evaluation spécifique des risques liés au site</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’admission des déchets sur un site spécifique doit être soumise à une évaluation des risques spécifique de ce site.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’évaluation spécifique décrite au point 1.2 pour les déchets admissibles en stockage souterrain doit démontrer que le niveau de confinement par rapport à la biosphère est acceptable. Les critères doivent être remplis compte tenu des conditions de stockage.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>2.4. <b>Conditions d’admission</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets ne peuvent être entreposés que dans un stockage souterrain si ce site est séparé de manière sûre des activités minières.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les déchets qui risquent de réagir les uns au contact des autres doivent être définis et classés dans des groupes de compatibilité; les différents groupes de compatibilité doivent être physiquement séparés au moment du stockage.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3. REMARQUES COMPLEMENTAIRES: MINES DE SEL</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.1. <b>Importance de la barrière géologique</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les principes de sécurité relatifs aux mines de sel accordent un double rôle à la roche qui entoure les déchets:</p>
+<ul scl:symbol="dash">
+<li>elle joue le rôle de roche hôte dans laquelle les déchets sont encapsulés,</li>
+<li> à l’instar des strates de roche imperméables sus-jacentes et sous-jacentes (anhydrite, par exemple), elle joue le rôle de barrière géologique destinée à empêcher les eaux souterraines de pénétrer dans la décharge et, le cas échéant, à contenir efficacement les liquides ou les gaz susceptibles de s’échapper du site de décharge. Lorsque cette barrière géologique est percée de puits et de forages, ces derniers doivent être scellés pendant le fonctionnement des installations pour prévenir la pénétration d’eau et ils doivent être hermétiquement fermés lorsque la décharge souterraine n’est plus exploitée. Si l’extraction minérale se poursuit après la fermeture de la décharge, la zone de décharge doit alors être scellée par un barrage hydrauliquement imperméable, construit en tenant compte de la pression hydraulique effective calculée en fonction de la profondeur, afin que l’eau susceptible de s’infiltrer dans la mine encore exploitée ne puisse pas pénétrer dans la zone de décharge,</li>
+<li> dans les mines de sel, on estime que le sel permet un confinement total. Les déchets ne peuvent alors entrer au contact de la biosphère que si un accident ou un événement géologique, tel qu’un mouvement de l’écorce terrestre ou un phénomène d’érosion (lié par exemple à la hausse du niveau de la mer), se produit. Les déchets sont peu susceptibles d’évoluer en cours de stockage, et il convient d’envisager les conséquences de ce type de scénarios.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>3.2. <b>Evaluation à long terme</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La sécurité à long terme d’un stockage souterrain établi dans une roche saline doit être principalement démontrée par la désignation de cette roche comme roche barrière. La roche saline répond à l’exigence d’imperméabilité aux gaz et aux liquides, d’encapsulage des déchets en raison de son comportement convergent et de confinement total des déchets à la fin du processus de transformation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le comportement convergent de la roche n’est donc pas incompatible avec l’exigence de stabilité des cavités pendant la phase opérationnelle. La stabilité est importante pour garantir la sécurité de fonctionnement des installations et pour maintenir l’intégrité de la barrière géologique sans limite temporelle, afin d’assurer une protection constante de la biosphère. Les déchets doivent être isolés en permanence de la biosphère. L’affaissement contrôlé des roches de recouvrement ou les autres défauts envisageables à long terme ne sont acceptables que s’il peut être démontré que ces transformations n’entraîneront pas de failles, que l’intégrité de la barrière sera maintenue et qu’aucune voie susceptible d’entraîner un contact entre l’eau et les déchets ou une migration des déchets ou de leurs composants vers la biosphèrene se formera.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>4. REMARQUES COMPLEMENTAIRES: ROCHES DURES</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par «stockage profond dans des roches dures», on entend un stockage souterrain à plusieurs centaines de mètres de profondeur, les «roches dures» recouvrant différentes roches ignées (par exemple le granit ou le gneiss), ainsi que des roches sédimentaires telles que le calcaire et le grès.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>4.1. <b>Principes de sécurité</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un stockage profond en roche dure est envisageable pour éviter d’imposer aux générations futures la responsabilité des déchets en question, puisque les structures de ce type doivent être passives et ne nécessitent pas de maintenance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En outre, ces structures ne doivent pas faire obstacle à la valorisation des déchets ou à la mise en œuvre ultérieure de mesures correctives. Elles doivent également être conçues de manière à assurer que les atteintes ou la responsabilité environnementales liées aux activités des générations actuelles ne re tomberont pas sur les générations futures.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les principes de sécurité du stockage souterrain des déchets accordent une place essentielle au concept de l’isolement des déchets par rapport à la biosphère, ainsi qu’à l’atténuation naturelle de tout polluant émis par les déchets. Pour certains types de substances et de déchets dangereux, il est apparu nécessaire de protéger la société et l’environnement contre un risque d’exposition importante sur de longues périodes. Une longue période recouvre plusieurs milliers d’années. Ces niveaux de protection peuvent être atteints par un stockage profond en roche dure. Le stockage profond de déchets dans des roches dures peut se faire dans des mines désaffectées, dans lesquelles les activités minières ont cessé, ou dans de nouvelles installations de stockage.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de stockage en roche dure, un confinement total n’est pas envisageable. Le stockage souterrain doit donc être conçu de manière à ce que l’atténuation naturelle des strates environnantes limite l’effet des polluants de sorte qu’ils n’exercent aucun effet négatif irréversible sur l’environnement. En d’autres termes, la capacité de l’environnement proche d’atténuer et de dégrader les polluants déterminera l’acceptabilité d’une fuite provenant d’une installation de ce type.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour répondre aux exigences de la directive-cadre <ref href="/eli/dir_ue/2000/60/jo" id="a1aaa744-e072-46ac-b6d9-aec7f7363b37">2000/60/CE</ref> sur l’eau, il convient de démontrer la sécurité à long terme de l’installation (point 1.2.7). Les caractéristiques d’un système de stockage profond doivent être évaluées de manière globale, en tenant compte du fonctionnement cohérent des différentes composantes du système. Le stockage profond en roche dure se situe sous la surface de la nappe phréatique. L’article 11, paragraphe 3, point j), de la directive établit une interdiction générale du rejet direct de polluants dans les eaux souterraines. L’article 4, paragraphe 1, point b) i), de la directive dispose que les Etats membres doivent prendre les mesures nécessaires pour prévenir la détérioration de l’état de toutes les masses d’eau souterraines. Le stockage profond en roche dure respecte cette exigence en assurant qu’aucun rejet de substance dangereuse provenant du stockage n’atteigne la biosphère, pas plus que la partie supérieure de la nappe phréatique ouverte sur la biosphère, en quantité ou dans des concentrations susceptibles d’avoir des conséquences dommageables. Par conséquent, les voies d’écoulement d’eau vers la biosphère et à l’intérieur de la biosphère doivent faire l’objet d’une évaluation. Il convient d’évaluer les incidences de la variabilité des conditions sur le système hydrogéologique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<eop/>Du gaz peut se former dans un stockage profond en roche dure en raison de la détérioration à long terme des déchets, des emballages et des structures artificielles. Ce facteur doit donc être pris en compte lors de la conception d’installations de stockage profond en roche dure.</p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+<attachment id="attachment_5">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-04-03" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-04-03" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-04-03" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<b>ANNEXE VI</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p scl:align="center">
+<b>CRITERES DE DISTINCTION ENTRE UNE DECHARGE POUR DECHETS INERTES ET UN REMBLAI CONSTITUE DE DECHETS INERTES</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’article 3, g) du présent règlement définit les décharges comme étant notamment des sites d’élimination des déchets par dépôt des déchets sur ou dans la terre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Certains dépôts, en particulier de déchets inertes, sont réalisés non pas dans le but de l’élimination, mais en vue de réaliser un objectif autre déterminé. Les déchets ne sont alors pas éliminés mais valorisés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La pratique montre qu’une distinction entre un dépôt qui constitue une opération d’élimination et un dépôt qui constitue une opération de valorisation n’est pas toujours facile à faire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En fonction de la classification du dépôt, les dispositions du présent règlement sont applicables ou non.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La présente annexe donne certains critères qui permettent de faire cette distinction.</p>
+<ol scl:start="1" scl:symbol="A)">
+<li>Un dépôt constitue une <b>opération de valorisation</b> lorsque qu’il vise à atteindre un objectif autre que l’évacuation de déchets inertes. Le dépôt doit avoir une utilité directe déterminée et conditionnée par un besoin plausible et manifeste. L’objectif doit être souhaité et déclaré de façon explicite par son promoteur.<p>La réalisation de l’objectif souhaité doit se faire le plus vite que possible. Le délai maximal de réalisation du dépôt ne peut donc pas dépasser la durée qui est techniquement raisonnable.</p>
+<p>A défaut de la disponibilité de déchets appropriés, l’objectif recherché doit être réalisé moyennant l’utilisation de matières premières. </p>
+<p>De tels objectifs peuvent être:</p>
+<ul scl:symbol="dash">
+<li>la création d’un écran anti-bruit le long d’une route ou d’une zone industrielle;</li>
+<li> la création d’une plate-forme en vue de l’implantation d’une zone d’activités;</li>
+<li> la création d’une plate-forme auprès d’exploitations agricoles pour permettre une meilleure circulation des engins ou pour entreposer des produits;</li>
+<li> la création d’un talus pour la construction d’une route ou d’une ligne de chemins de fer.</li>
+</ul>
+<p>Un tel dépôt est communément appelé <b>remblai</b>. Il n’est pas soumis aux dispositions du présent règlement.</p>
+</li>
+<li>Un dépôt constitue une <b>opération d’élimination</b> lorsque la finalité primaire de l’opération consiste dans l’évacuation de déchets. Il n’y a pas de besoin imminent autre que celui de l’élimination de déchets qui est la base de la décision de réaliser les dépôts.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il n’y a pas de limite temporelle dans laquelle le dépôt doit être réalisé et qui serait conditionné par le souhait de conduire le dépôt à sa vocation finale.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’avancement des dépôts est exclusivement conditionné par les quantités de déchets proposées. A défaut de déchets, il n’y a pas d’acquisition de matières premières pour continuer la réalisation du dépôt.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans ces conditions, un dépôt constitue une <b>décharge</b> au titre du présent règlement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette appréciation n’est pas changée si après désaffectation de la décharge, le site sera conduit à une nouvelle destination (p. ex. zone d’activités, zone industrielle , zone forestière ou agricole après reconstitution du paysage pour une décharge installée dans une carrière, etc.).<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

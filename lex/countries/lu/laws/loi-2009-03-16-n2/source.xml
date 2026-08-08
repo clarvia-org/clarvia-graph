@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-03-16" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MS"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-03-16" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-03-16" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-03-07</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2009-03-16</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MS</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/158</scl:jolux>
+						<scl:jolux scl:name="urgentEvent">0</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1557</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3295</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3296</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2009-03-20</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a46</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2009A0615A</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2009-03-16</scl:jolux>
+						<scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/CHD</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr/docx</scl:jolux>
+					<scl:jolux scl:name="draft">/eli/etat/proj/ppl/20020021</scl:jolux>
+					<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 07/03/2021 : Loi du 16 mars 2009 sur l'euthanasie et l'assistance au suicide.</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2009-46-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a46/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2009-03-16-n2-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2009-46-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a46/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2009/a46/fr/pdf/eli-etat-leg-memorial-2009-a46-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2009-03-20" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2021-03-07" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2021/03/02/a167/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2021/03/02/a167/jo"/>
+						<destination/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/loi/2009/03/16/n2/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/loi/2021/03/02/a167/jo" id="rp2" showAs="Loi du 2 mars 2021 modifiant : 1° la loi du 16 mars 2009 sur l’euthanasie et l’assistance au suicide ; 2° la loi modifiée du 24 juillet 2014 relative aux droits et obligations du patient. "/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2021-03-03|2021-03-02|L|167">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/03/02/a167/jo">Loi du 2 mars 2021 modifiant : 1° la loi du 16 mars 2009 sur l’euthanasie et l’assistance au suicide ; 2° la loi modifiée du 24 juillet 2014 relative aux droits et obligations du patient.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2021-03-03|2021-03-02|L|167">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/03/02/a167/jo">Loi du 2 mars 2021 modifiant : 1° la loi du 16 mars 2009 sur l’euthanasie et l’assistance au suicide ; 2° la loi modifiée du 24 juillet 2014 relative aux droits et obligations du patient.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 07/03/2021 : Loi du 16 mars 2009 sur l'euthanasie et l'assistance au suicide.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_i">
+				<num>Chapitre I</num><heading scl:separator=" - ">Dispositions générales</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_1er/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>.</num>
+					<alinea>
+						<content>
+							<p>Pour l'application de la présente loi, il y a lieu d'entendre par euthanasie l'acte, pratiqué par un médecin, qui met intentionnellement fin à la vie d'une personne à la demande expresse et volontaire de celle-ci.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Par assistance au suicide il y a lieu d'entendre le fait qu'un médecin aide intentionnellement une autre personne à se suicider ou procure à une autre personne les moyens à cet effet, ceci à la demande expresse et volontaire de celle-ci.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_ii">
+				<num>Chapitre II</num><heading scl:separator=" - ">La demande d'euthanasie ou d'assistance au suicide, conditions et procédure</heading>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_2/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<paragraph id="paragraph_1">
+						<num>1.</num>
+						<alinea>
+							<content>
+								<p>N'est pas sanctionné pénalement et ne peut donner lieu à une action civile en dommages-intérêts le fait par un médecin de répondre à une demande d'euthanasie ou d'assistance au suicide, si les conditions de fond suivantes sont remplies: </p>
+								<ol scl:symbol="1)">
+									<li>le patient est majeur capable et conscient au moment de sa demande;</li>
+									<li>la demande est formulée de manière volontaire, réfléchie et, le cas échéant, répétée, et elle ne résulte pas d'une pression extérieure;</li>
+									<li>le patient se trouve dans une situation médicale sans issue et fait état d'une souffrance physique ou psychique constante et insupportable sans perspective d'amélioration, résultant d'une affection accidentelle ou pathologique;</li>
+									<li>la demande du patient d'avoir recours à une euthanasie ou une assistance au suicide est consignée par écrit.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_2">
+						<num>2.</num>
+						<alinea>
+							<content>
+								<p>Le médecin doit dans tous les cas, avant de procéder à une euthanasie ou une aide au suicide, respecter les conditions de forme et de procédure suivantes:</p>
+								<ol scl:symbol="1)">
+									<li>informer le patient de son état de santé et de son espérance de vie, se concerter avec le patient sur sa demande d'euthanasie ou d'assistance au suicide et évoquer avec lui les possibilités thérapeutiques encore envisageables ainsi que les possibilités qu'offrent les soins palliatifs et leurs conséquences. Il doit arriver à la conviction que la demande du patient est volontaire et qu'aux yeux du patient il n'y a aucune autre solution acceptable dans sa situation. Les entretiens sont consignés au dossier médical, la consignation valant preuve de l'information;</li>
+									<li>s'assurer de la persistance de la souffrance physique ou psychique du patient et de sa volonté exprimée récemment respectivement réitérée. A cette fin, il mène avec le patient plusieurs entretiens, espacés d'un délai raisonnable au regard de l'évolution de l'état du patient;</li>
+									<li>consulter un autre médecin quant au caractère grave et incurable de l'affection, en précisant les raisons de la consultation. Le médecin consulté prend connaissance du dossier médical, examine le patient et s'assure du caractère constant, insupportable et sans perspective d'amélioration de sa souffrance physique ou psychique. Il rédige un rapport concernant ses constatations. Le médecin consulté doit être impartial, tant à l'égard du patient qu'à l'égard du médecin traitant et être compétent quant à la pathologie concernée. Le médecin traitant informe le patient concernant les résultats de cette consultation;</li>
+									<li>sauf opposition du patient, s'entretenir de sa demande avec l'équipe soignante en contact régulier avec le patient ou des membres de celle-ci;</li>
+									<li>sauf opposition du patient, s'entretenir de sa demande avec la personne de confiance que celui-ci désigne dans ses dispositions de fin de vie ou au moment de sa demande d'euthanasie ou d'assistance au suicide;</li>
+									<li>s'assurer que le patient a eu l'occasion de s'entretenir de sa demande avec les personnes qu'il souhaitait rencontrer;</li>
+									<li>s'informer auprès de la Commission Nationale de Contrôle et d'Evaluation si des dispositions de fin de vie au nom du patient y sont enregistrées.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La demande du patient doit être actée par écrit. Le document est rédigé, daté et signé par le patient lui-même. S'il se trouve dans l'impossibilité physique permanente de rédiger et de signer sa demande, cette dernière est actée par écrit par une personne majeure de son choix.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Cette personne mentionne le fait que le patient n'est pas en état de formuler sa demande par écrit et en indique les raisons. Dans ce cas, la demande est actée par écrit et signée par le patient ou la personne qui a rédigé la demande en présence du médecin traitant dont le nom devra également être indiqué dans le document. Ce document doit être versé au dossier médical.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le patient peut révoquer sa demande à tout moment, auquel cas le document est retiré du dossier médical et restitué au patient.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>L'ensemble des demandes formulées par le patient, ainsi que les démarches du médecin traitant et leur résultat, y compris le(s) rapport(s) du (des) médecin(s) consulté(s), sont consignés régulièrement dans le dossier médical du patient.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_3/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<alinea>
+						<content>
+							<p>Le médecin traitant peut, s'il en éprouve le besoin, se faire accompagner voire conseiller par un expert de son choix et verser l'avis ou l'attestation de l'intervention de ce dernier au dossier du patient. S'il s'agit d'une expertise médicale, l'avis ou l'attestation est versé au dossier du patient.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_iii">
+				<num>Chapitre III</num><heading scl:separator=" - ">Des dispositions de fin de vie</heading>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_4/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<paragraph id="paragraph_3">
+						<num>1.</num>
+						<alinea>
+							<content>
+								<p>Toute personne majeure et capable peut, pour le cas où elle ne pourrait plus manifester sa volonté, consigner par écrit dans des dispositions de fin de vie les circonstances et conditions dans lesquelles elle désire subir une euthanasie si le médecin constate:</p>
+								<ul scl:symbol="dash">
+									<li>qu'elle est atteinte d'une affection accidentelle ou pathologique grave et incurable,</li>
+									<li>qu'elle est inconsciente,</li>
+									<li>et que cette situation est irréversible selon l'état actuel de la science.</li>
+								</ul>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les dispositions de fin de vie peuvent comprendre par ailleurs un volet spécifique où le déclarant fixe les dispositions à prendre quant au mode de sépulture et à la cérémonie de ses funérailles.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dans les dispositions de fin de vie, le déclarant peut désigner une personne de confiance majeure, qui met le médecin traitant au courant de la volonté du déclarant selon ses dernières déclarations à son égard.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les dispositions de fin de vie peuvent être faites à tout moment. Elles doivent être constatées par écrit, datées et signées par le déclarant.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_4">
+						<num>2.</num>
+						<alinea>
+							<content>
+								<p>Si la personne qui souhaite rédiger des dispositions de fin de vie est dans l'impossibilité physique permanente de rédiger et de signer, ses dispositions de fin de vie peuvent être actées par écrit par une personne majeure de son choix.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les dispositions de fin de vie se feront en présence de deux témoins majeurs. Les dispositions de fin de vie doivent alors préciser que le déclarant ne peut pas rédiger et signer, et en énoncer les raisons. Les dispositions de fin de vie doivent être datées et signées par la personne qui a acté par écrit la déclaration, par les témoins et, le cas échéant, par la personne de confiance.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Une attestation médicale certifiant cette impossibilité physique permanente est jointe aux dispositions de fin de vie.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les dispositions de fin de vie seront enregistrées, dans le cadre d'un système officiel d'enregistrement systématique des dispositions de fin de vie auprès de la Commission Nationale de Contrôle et d'Evaluation.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les dispositions de fin de vie peuvent être réitérées, retirées ou adaptées à tout moment. La Commission Nationale de Contrôle et d'Evaluation est tenue de demander une fois tous les cinq ans, à partir de la demande d'enregistrement, la confirmation de la volonté du déclarant. Tous les changements doivent être enregistrés auprès de la Commission Nationale de Contrôle et d'Evaluation. Toutefois, aucune euthanasie ne peut être pratiquée si, à la suite des démarches qu'il est amené à faire en vertu du paragraphe 3 qui suit, le médecin obtient connaissance d'une manifestation de volonté du patient postérieure aux dispositions de fin de vie dûment enregistrées, au moyen de laquelle il retire son souhait de subir une euthanasie.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Tout médecin traitant un patient en fin de vie ou un patient se trouvant dans une situation médicale sans issue est tenu de s'informer auprès de la Commission Nationale de Contrôle et d'Evaluation si des dispositions de fin de vie au nom du patient y sont enregistrées.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les modalités relatives à l'enregistrement des dispositions de fin de vie ainsi qu'à l'accès de ces dispositions par les médecins en charge d'une personne en fin de vie peuvent être déterminées par règlement grand-ducal.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Ce règlement pourra proposer une formule de disposition de fin de vie dont les déclarants peuvent se servir.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_5">
+						<num>3.</num>
+						<alinea>
+							<content>
+								<p>N'est pas sanctionné pénalement et ne peut donner lieu à une action civile en dommages-intérêts, le fait par un médecin de répondre à une demande d'euthanasie à la suite de dispositions de fin de vie telles que prévues aux paragraphes 1<sup>er</sup> et 2, si le médecin constate:</p>
+								<ol scl:symbol="1)">
+									<li>que le patient est atteint d'une affection accidentelle ou pathologique grave et incurable,</li>
+									<li>qu'il est inconscient,</li>
+									<li>que cette situation est irréversible selon l'état actuel de la science.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le médecin doit, dans tous les cas et avant de procéder à l'euthanasie, respecter les conditions de forme et de procédure suivantes: </p>
+								<ol scl:symbol="1)">
+									<li>consulter un autre médecin quant à l'irréversibilité de la situation médicale du patient, en l'informant des raisons de cette consultation. Le médecin consulté prend connaissance du dossier médical et examine le patient. Il rédige un rapport de ses constatations. Si une personne de confiance est désignée dans les dispositions de fin de vie, le médecin traitant met cette personne de confiance au courant des résultats de cette consultation. Le médecin consulté doit être impartial à l'égard du patient ainsi qu'à l'égard du médecin traitant et être compétent quant à la pathologie concernée;</li>
+									<li>s'il existe une équipe soignante en contact régulier avec le patient, s'entretenir du contenu des dispositions de fin de vie avec l'équipe soignante ou des membres de celle-ci;</li>
+									<li>si les dispositions de fin de vie désignent une personne de confiance, s'entretenir avec elle de la volonté du patient;</li>
+									<li>si les dispositions de fin de vie désignent une personne de confiance, s'entretenir de la volonté du patient avec les proches du patient que la personne de confiance désigne.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les dispositions de fin de vie ainsi que l'ensemble des démarches du médecin traitant et leur résultat, y compris le rapport du médecin consulté, sont consignés dans le dossier médical du patient.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_iv">
+				<num>Chapitre IV</num><heading scl:separator=" - ">La déclaration officielle</heading>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_5/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<alinea>
+						<content>
+							<p>Le médecin qui pratique une euthanasie ou une assistance au suicide doit remettre, dans les huit jours, le document d'enregistrement visé à l'article 7, dûment complété, à la Commission Nationale de Contrôle et d'Evaluation visée à l'article 6 de la présente loi.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_v">
+				<num>Chapitre V</num><heading scl:separator=" - ">La Commission Nationale de Contrôle et d'Evaluation</heading>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_6/20210307</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2021-03-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<paragraph id="paragraph_6">
+						<num>1.</num>
+						<alinea>
+							<content>
+								<p>Il est institué une Commission Nationale de Contrôle et d'Evaluation de l'application de la présente loi, ci-après dénommée «la Commission».</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_7">
+						<num>2.</num>
+						<alinea>
+							<content>
+								<p>La Commission se compose de neuf membres, désignés sur base de leurs connaissances et de leur expérience dans les matières qui relèvent de la compétence de la Commission.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Trois membres sont docteurs en médecine. Un membre est proposé par le Collège médical. L'organisation la plus représentative des médecins et médecins-dentistes propose deux membres dont un possède une qualification et une expérience spécifique relative au traitement de la douleur.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Trois membres sont juristes, dont un avocat à la Cour proposé par le conseil de l'Ordre des Avocats, un magistrat proposé par la Cour supérieure de Justice et un professeur en droit de l'Université du Luxembourg.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Un membre est issu des professions de santé et proposé par le Conseil supérieur de certaines professions de santé.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Deux membres sont représentants d'une organisation ayant comme objet la défense des droits du patient.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Faute par un des organismes prémentionnés de procéder à une proposition dans le délai imparti, le ministre ayant la Santé dans ses attributions procédera à la proposition faisant défaut.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les membres de la Commission sont nommés par le Grand-Duc pour une durée de trois ans. Le mandat est renouvelable trois fois.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm1"/>Il est désigné pour chacun des membres ci-avant un membre suppléant dans les conditions et selon les modalités prévues pour la désignation du membre effectif.<mod class="mod-end" for="#pm1"/>
+									<noteRef href="#M1" marker="1"/>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La qualité de membre de la Commission est incompatible avec le mandat de député ou la qualité de membre du gouvernement ou du Conseil d'Etat. La Commission élit parmi ses membres un président. La Commission ne peut délibérer valablement qu'à condition qu'au moins sept de ses membres soient présents. Elle prend ses décisions à la majorité simple.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_8">
+						<num>3.</num>
+						<alinea>
+							<content>
+								<p>La Commission établit son règlement d'ordre intérieur.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_7/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7.</num>
+					<alinea>
+						<content>
+							<p>La Commission établit un document de déclaration officielle qui doit être complété par le médecin et adressé à la Commission chaque fois qu'il pratique une euthanasie.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ce document est composé de deux volets. Le premier volet doit être scellé par le médecin. Il contient les données suivantes:</p>
+							<ul scl:symbol="dash">
+								<li>les nom, prénoms, domicile du patient;</li>
+								<li>les nom, prénoms, code médecin et domicile du médecin traitant;</li>
+								<li>les nom, prénoms, code médecin et domicile du (des) médecin(s) qui a (ont) été consulté(s) concernant la demande d'euthanasie ou d'assistance au suicide;</li>
+								<li>les nom, prénoms, domicile et qualité de toutes les personnes consultées par le médecin traitant, ainsi que la date de ces consultations;</li>
+								<li>s'il existait des dispositions de fin de vie et qu'ils désignaient une personne de confiance, les nom et prénoms de la personne de confiance qui est intervenue.</li>
+							</ul>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ce premier volet est confidentiel. Il est transmis par le médecin à la Commission. Il ne peut être consulté qu'après une décision, telle que visée à l'alinéa suivant du présent article. Ce volet ne peut en aucun cas servir de base à la mission d'évaluation de la Commission.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le deuxième volet est également confidentiel et contient les données suivantes:</p>
+							<ul scl:symbol="dash">
+								<li>s'il existe des dispositions de fin de vie ou une demande d'euthanasie ou de suicide assisté;</li>
+								<li>l'âge et le sexe du patient;</li>
+								<li>la mention de l'affection accidentelle ou pathologique grave et incurable dont souffrait le patient;</li>
+								<li>la nature de la souffrance qui était constante et insupportable;</li>
+								<li>les raisons pour lesquelles cette souffrance a été qualifiée sans perspective d'amélioration;</li>
+								<li>les éléments qui ont permis de s'assurer que la demande a été formulée de manière volontaire, réfléchie et répétée et sans pressions extérieures;</li>
+								<li>la procédure suivie par le médecin;</li>
+								<li>la qualification du ou des médecins consultés, l'avis et les dates de ces consultations;</li>
+								<li>la qualité des personnes et de l'expert éventuellement consultés par le médecin, et les dates de ces consultations;</li>
+								<li>les circonstances précises dans lesquelles le médecin traitant a pratiqué l'euthanasie ou l'assistance au suicide et par quels moyens.</li>
+							</ul>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_8">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_8</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_8/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 8.</num>
+					<alinea>
+						<content>
+							<p>La Commission examine le document de déclaration officielle dûment complété que lui communique le médecin. Elle vérifie, sur base du deuxième volet du document d'enregistrement, si les conditions et la procédure prévues par la présente loi ont été respectées.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>En cas de doute, la Commission peut décider, à la majorité simple de sept membres présents au moins, de lever l'anonymat. Elle prend alors connaissance du premier volet du document. Elle peut demander au médecin traitant de lui communiquer tous les éléments du dossier médical relatifs à l'euthanasie ou à l'assistance au suicide.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Elle se prononce dans un délai de deux mois.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Lorsque, par décision prise à la majorité des voix de sept membres présents au moins, la Commission estime que les conditions prévues au paragraphe 2 de l'article 2 par la présente loi ne sont pas respectées, elle communique sa décision motivée au médecin traitant et envoie le dossier complet ainsi qu'une copie de la décision motivée au Collège médical. Ce dernier se prononce dans un délai d'un mois. Le Collège médical décidera à la majorité de ses membres s'il y a lieu à poursuite disciplinaire. En cas de non-respect d'une des conditions prévues au paragraphe 1 de l'article 2 de la présente loi, la Commission transmet le dossier au Parquet.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_9">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_9</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_9/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 9.</num>
+					<alinea>
+						<content>
+							<p>La Commission établit à l'attention de la Chambre des Députés, la première fois endéans les deux ans de l'entrée en vigueur de la présente loi, et, par la suite, tous les deux ans: </p>
+							<ol scl:symbol="a)">
+								<li>un rapport statistique basé sur les informations recueillies dans le second volet du document d'enregistrement que les médecins remettent complété en vertu de l'article 8;</li>
+								<li>un rapport contenant une description et une évaluation de l'application de la présente loi;</li>
+								<li>le cas échéant, des recommandations susceptibles de déboucher sur une initiative législative et/ou d'autres mesures concernant l'exécution de la présente loi.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour l'accomplissement de ces missions, la Commission peut recueillir toutes les informations utiles auprès des diverses autorités et institutions. Les renseignements recueillis par la Commission sont confidentiels.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Aucun de ces documents ne peut contenir l'identité d'aucune personne citée dans les dossiers remis à la Commission dans le cadre du contrôle prévu à l'article 8.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La Commission peut décider de communiquer des informations statistiques et purement techniques, à l'exclusion de toutes données à caractère personnel, aux équipes de recherche qui en feraient la demande motivée.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Elle peut entendre des experts.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_10">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_10</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_10/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 10.</num>
+					<alinea>
+						<content>
+							<p>Pour l'accomplissement de sa mission, la Commission, peut recourir au personnel administratif mis à sa disposition par l'administration gouvernementale.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_11">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_11</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_11/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 11.</num>
+					<alinea>
+						<content>
+							<p>Les frais de fonctionnement de la Commission Nationale de Contrôle et d'Evaluation sont à charge du budget de l'Etat.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_12">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_12</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_12/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 12.</num>
+					<alinea>
+						<content>
+							<p>Quiconque prête son concours, en quelque qualité que ce soit, à l'application de la présente loi, est tenu de respecter la confidentialité des données qui lui sont confiées dans l'exercice de sa mission et qui ont trait à l'exercice de celle-ci.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_13">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_13</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_13/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 13.</num>
+					<alinea>
+						<content>
+							<p>Dans les six mois du dépôt du premier rapport et, le cas échéant, des recommandations de la Commission, visés à l'article 9, la Chambre des Députés organise un débat à ce sujet. Ce délai de six mois est suspendu pendant la période de dissolution de la Chambre des Députés et/ou d'absence de gouvernement ayant la confiance de la Chambre des Députés.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_vi">
+				<num>Chapitre VI</num><heading scl:separator=" - ">Disposition modificative</heading>
+				<article id="art_14">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_14</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_14/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 14.</num>
+					<alinea>
+						<content>
+							<p>Est introduit dans le <ref href="/eli/etat/leg/code/penal" id="7276e854-8bc5-4c0c-84b6-f1bb7fb299a3">Code pénal</ref> un article 397-1 nouveau ainsi libellé:<mod>
+									<quotedText>
+										<embeddedStructure>
+											<article>
+												<num>
+													<u>Art. 397-1.</u>
+												</num>
+												<alinea>
+													<content>
+														<p>Ne tombe pas sous le champ d'application de la présente section le fait par un médecin de répondre à une demande d'euthanasie ou d'assistance au suicide dans le respect des conditions de fond visées à la <ref href="/eli/etat/leg/loi/2009/03/16/n2/jo" id="031c601c-993a-443a-8e50-3aeed39fb5de" scl:verify="true">loi du 16 mars 2009</ref> sur l'euthanasie et l'assistance au suicide.</p>
+													</content>
+												</alinea>
+											</article>
+										</embeddedStructure>
+									</quotedText>
+								</mod>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_vii">
+				<num>Chapitre VII</num><heading scl:separator=" - ">Dispositions particulières</heading>
+				<article id="art_15">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_15</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_15/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 15.</num>
+					<alinea>
+						<content>
+							<p>Aucun médecin n'est tenu de pratiquer une euthanasie ou une assistance au suicide.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Aucune autre personne ne peut être tenue de participer à une euthanasie ou une assistance au suicide.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Si le médecin consulté refuse de pratiquer une euthanasie ou une assistance au suicide, il est tenu d'en informer le patient et/ou la personne de confiance, s'il en existe une, dans les 24 heures en précisant les raisons de son refus.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le médecin qui refuse de donner suite à une demande d'euthanasie ou d'assistance au suicide est tenu, à la demande du patient ou de la personne de confiance, de communiquer le dossier médical du patient au médecin désigné par ce dernier ou par la personne de confiance.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_15bis">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_15bis</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_15bis/20210307</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15bis.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2021-03-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm2"/>Art. 15<i>bis</i>.</num>
+					<alinea>
+						<content>
+							<p>La personne décédée à la suite d’une euthanasie ou d’une assistance au suicide dans le respect des dispositions de la présente loi est réputée décédée de mort naturelle pour ce qui concerne l’exécution des contrats auxquels elle était partie.<mod class="mod-end" for="#pm2"/>
+								<noteRef href="#M2" marker="2"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_viii">
+				<num>Chapitre VIII</num><heading scl:separator=" - ">Disposition transitoire</heading>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2/art_16/20090320</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/03/16/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-03-20</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<alinea>
+						<content>
+							<p>Le ministre ayant dans ses attributions la Santé peut procéder, par dépassement des nombres limite fixés dans la loi budgétaire, à l'engagement de deux agents pour les besoins de l'application de la présente loi.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

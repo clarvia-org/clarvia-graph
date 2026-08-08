@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="1985-02-22" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MS"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="1985-02-22" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="1985-02-22" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo</scl:jolux><scl:jolux scl:name="dateEndApplicability"/><scl:jolux scl:name="dateApplicability">2026-05-29</scl:jolux><scl:jolux scl:name="dateDocument">1985-02-22</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MS</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/126</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/763</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr</scl:jolux><scl:jolux scl:name="transpositionProcess">http://data.legilux.public.lu/event/etat/trans/1984/500</scl:jolux><scl:jolux scl:name="dateEntryInForce">1985-03-05</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1985/a10</scl:jolux><scl:jolux scl:name="historicalLegalId">1985A01781</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="publicationDate">1985-03-01</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="transposes">/eli/dir_ue/1984/500/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/rgd/1978/04/13/n3/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1984/500/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 29/05/2026 : Règlement grand-ducal du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1953/09/25/n1/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1985-10-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1985/a10/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-1985-02-22-n2-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1985-10-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1985/a10/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1985/a10/fr/pdf/eli-etat-leg-memorial-1985-a10-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="1985-03-05" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2006-10-08" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2026-05-29" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2006/09/15/n1/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2006/09/15/n1/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2006/09/15/n1/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm7" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm8" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm9" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm10" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm11" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_3bis"/>
+</textualMod>
+<textualMod id="pm12" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm13" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm14" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm15" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination href="#art_6"/>
+</textualMod>
+<textualMod id="pm16" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm17" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm18" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm19" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm20" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm21" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2026/05/19/a252/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/1985/02/22/n2/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2026/05/19/a252/jo" id="rp2" showAs="Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires. "/>
+<passiveRef href="/eli/etat/leg/rgd/2006/09/15/n1/jo" id="rp3" showAs="Règlement grand-ducal du 15 septembre 2006 modifiant le règlement grand-ducal du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires."/>
+</references>
+<notes scl:type="modification" source="#rp3">
+<note id="M1" marker="1" refersTo="pm1" title="A|2006-10-04|2006-09-15|RGD|176">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2006/09/15/n1/jo">Règlement grand-ducal du 15 septembre 2006 modifiant le règlement grand-ducal du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M2" marker="2" refersTo="pm2" title="A|2006-10-04|2006-09-15|RGD|176">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2006/09/15/n1/jo">Règlement grand-ducal du 15 septembre 2006 modifiant le règlement grand-ducal du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M3" marker="3" refersTo="pm3" title="A|2006-10-04|2006-09-15|RGD|176">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2006/09/15/n1/jo">Règlement grand-ducal du 15 septembre 2006 modifiant le règlement grand-ducal du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M4" marker="4" refersTo="pm4" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M5" marker="5" refersTo="pm5" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M6" marker="6" refersTo="pm6" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M7" marker="7" refersTo="pm7" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M8" marker="8" refersTo="pm8" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M9" marker="9" refersTo="pm9" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M10" marker="10" refersTo="pm10" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M11" marker="11" refersTo="pm11" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M12" marker="12" refersTo="pm12" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M13" marker="13" refersTo="pm13" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M14" marker="14" refersTo="pm14" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M15" marker="15" refersTo="pm15" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M16" marker="16" refersTo="pm16" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M17" marker="17" refersTo="pm17" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M18" marker="18" refersTo="pm18" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M19" marker="19" refersTo="pm19" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M20" marker="20" refersTo="pm20" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M21" marker="21" refersTo="pm21" title="A|2026-05-27|2026-05-19|RGD|252">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2026/05/19/a252/jo">Règlement grand-ducal du 19 mai 2026 modifiant le règlement grand-ducal modifié du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 29/05/2026 : Règlement grand-ducal du 22 février 1985 concernant les objets céramiques destinés à entrer en contact avec les denrées alimentaires.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_1er/20260529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Sans préjudice des dispositions du <ref href="/eli/etat/leg/rgd/1991/05/14/n1/jo" id="4e675313-1354-4ca3-bca9-a146aef0c29c">
+<mod class="mod-start" for="#pm1"/>règlement grand-ducal modifié du 14 mai 1991</ref> concernant les matériaux et objets destinés à entrer en contact avec les denrées alimentaires<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>, le présent règlement s’applique aux objets céramiques destinés à entrer en contact avec les denrées alimentaires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il concerne la <mod class="mod-start" for="#pm4"/>libération<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/> éventuelle de plomb et de cadmium par les objets céramiques qui, à l’état de produits finis, sont destinés à être mis en contact ou sont mis en contact, conformément à leur destination, avec les denrées alimentaires.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_2/19850305</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1985-03-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>On entend par « objets céramiques » les objets fabriqués à partir d’un mélange de matières inorganiques d’une teneur généralement élevée en argile ou en silicate auxquelles sont ajoutées éventuellement de faibles quantités de matières organiques. Ces objets sont d’abord formés et la forme obtenue est fixée de façon permanente par cuisson. Ils peuvent être vitrifiés, émaillés et/ou décorés.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_3/20260529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>Les quantités de plomb et de cadmium <mod class="mod-start" for="#pm5"/>libérées<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/> par les objets céramiques ne doivent pas dépasser les limites fixées aux paragraphes 4 et 5 du présent article.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Les quantités de plomb et de cadmium <mod class="mod-start" for="#pm6"/>libérées<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M6" marker="6"/> par les objets céramiques sont déterminées à l’aide d’un essai dont les conditions sont prévues à l’annexe I et à l’aide de la méthode décrite à l’annexe II.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>3.</num>
+<alinea>
+<content>
+<p>Lorsqu’un objet céramique est constitué d’un récipient muni d’un couvercle en céramique, la limite de plomb et/ou de cadmium à ne pas dépasser (mg/dm<sup>2</sup> ou <mod class="mod-start" for="#pm7"/>mg/l<mod class="mod-end" for="#pm7"/>
+<noteRef href="#M7" marker="7"/>) est celle qui s’applique au récipient seul.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le récipient seul et la surface interne du couvercle sont essayés séparément et dans les mêmes conditions.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La somme des deux taux d’extraction du plomb et/ou du cadmium ainsi obtenue est rapportée, selon le cas, à la surface ou au volume du seul récipient.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>4.</num>
+<alinea>
+<content>
+<p>Un objet céramique est considéré comme étant conforme aux prescriptions du présent règlement si les quantités de plomb et/ou de cadmium extraites lors de l’essai effectué dans les conditions prévues aux annexes I et II ne dépassent pas les limites <mod class="mod-start" for="#pm8"/>de libération spécifique<mod class="mod-end" for="#pm8"/>
+<noteRef href="#M8" marker="8"/> suivantes:<eop/>
+</p>
+<table border="1" id="table_1" scl:cols="34 33 33" scl:cols-align="justify" width="100">
+<tr>
+<td>
+<p scl:align="center">
+<mod class="mod-start" for="#pm9"/>-     Catégorie 1</p>
+</td>
+<td>
+<p>Pb </p>
+</td>
+<td>
+<p>Cd </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Objets non remplissables et objets remplissables dont la profondeur interne mesurée entre le point le plus bas et le plan horizontal passant par le bord supérieur est inférieure ou égale à 25 mm</p>
+</td>
+<td>
+<p>6 μg/dm<sup>2</sup> </p>
+</td>
+<td>
+<p>4 μg/dm<sup>2</sup> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p scl:align="center">-    Catégorie 2</p>
+</td>
+<td/>
+<td/>
+</tr>
+<tr scl:height="35">
+<td>
+<p>Tous autres objets remplissables </p>
+</td>
+<td>
+<p>30 μg/l</p>
+</td>
+<td>
+<p>20 μg/l </p>
+</td>
+</tr>
+<tr>
+<td>
+<p scl:align="center">-    Catégorie 3</p>
+</td>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>
+<p>Ustensiles de cuisson ; emballages et récipients de stockage ayant une capacité supérieure à 3 litres</p>
+</td>
+<td>
+<p>10 μg/l </p>
+</td>
+<td>
+<p>7 μg/l<mod class="mod-end" for="#pm9"/>
+<noteRef href="#M9" marker="9"/>
+</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>5.</num>
+<alinea>
+<content>
+<p>Lorsqu’un objet ne dépasse pas les quantités de plomb et de cadmium indiquées au paragraphe 4 de plus de 50%, cet objet est cependant considéré comme étant conforme aux prescriptions du présent règlement si trois objets au moins, identiques sur le plan de la forme, des dimensions, de la décoration et du vernis, sont soumis à un essai effectué dans les conditions prévues aux annexes I et II, que les quantités de plomb et/ou de cadmimum extraites de ces objets ne dépassent pas en moyenne les limites fixées et que chacun de ces objets ne dépasse pas ces limites de plus de 50%.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_3bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_3bis/20260529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm2"/>Art. 3<i>bis</i>.</num>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>Aux différents stades de leur commercialisation jusque et y compris la vente au consommateur final, les objets céramiques non encore mis en contact avec des denrées alimentaires sont accompagnés d’une déclaration écrite conformément à l’article 16 du <ref href="/eli/reg_ue/2004/1935/jo" id="d3426bd6-aa51-4daa-8486-e29c4b94bd4c">règlement (CE) n° 1935/2004</ref> du Parlement européen et du Conseil, publié au Journal Officiel de l’Union européenne N° L 77 du 16 mars 2001.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette déclaration est émise par le fabricant ou par un vendeur établi dans <mod class="mod-start" for="#pm10"/>l’Union européenne<mod class="mod-end" for="#pm10"/>
+<noteRef href="#M10" marker="10"/>, et contient les informations mentionnées à l’annexe III du présent règlement. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm11"/>La documentation permettant de démontrer que les objets céramiques respectent les limites de libération spécifique de plomb et de cadmium fixées à l’article 3 est mise, sur demande, à la disposition des autorités compétentes par le fabricant ou l’importateur dans l’Union européenne. Cette documentation contient soit les résultats de l’analyse effectuée et décrit les conditions d’essai, soit les calculs ou estimations des valeurs de migration d’après les méthodes d’analyse décrites à l’article 3<i>ter</i>, et indique le nom et l’adresse de l’entité qui a procédé à l’opération.<mod class="mod-end" for="#pm11"/>
+<noteRef href="#M11" marker="11"/>
+<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_3ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_3ter/20260529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3ter.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm12"/>Art. 3<i>ter</i>.</num>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>En ce qui concerne la méthode d’analyse permettant de déterminer la libération de plomb et de cadmium par les objets céramiques, les valeurs de migration peuvent être calculées ou estimées par l’exploitant qui met les objets sur le marché, tenant compte, le cas échéant, des éléments suivants :</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>La composition des substances utilisées dans la fabrication des objets céramiques concernés, telles que fabriquées par le fabricant ou attestées par la documentation de ses fournisseurs ; </li>
+<li>L’utilisation ou non, dans la fabrication des objets céramiques en question, de substances contenant du plomb ou du cadmium, qui sont destinées à ou susceptibles d’entrer en contact avec des denrées alimentaires ou avec la bouche, ou leur utilisation dans une autre partie des objets céramiques, telle que l’intérieur, le sous-émail ou l’extérieur ; </li>
+<li>Documentation ou informations supplémentaires des fournisseurs, en ce compris des instructions sur les processus de fabrication pour les applications en contact avec les denrées alimentaires ;</li>
+<li>Essais réalisés sur des matériaux ou des objets similaires, en ce compris des essais visant à déterminer la libération maximale par partie de surface lorsque certaines techniques de décoration ou certains matériaux sont utilisés, ou des essais sur un lot du même matériau ou objet ;</li>
+<li>La possibilité lors du processus de fabrication de contrôler la qualité de l’objet céramique final, en ce compris le contrôle de la composition des substances utilisées dans sa fabrication, le contrôle du processus de fabrication, y compris les conditions d’émaillage ou de décoration et de cuisson, la possibilité de contrôler les variations entre les objets et les lots d’objets, ainsi que la possibilité d’éviter la contamination par des substances créées lors de la fabrication de matériaux ou d’objets non destinés à entrer en contact avec des denrées alimentaires.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Si l’application du paragraphe 1<sup>er</sup> ne permet pas de fournir une assurance suffisante du respect des dispositions de l’article 3, paragraphe 4, l’article 3, paragraphe 2, s’applique.<mod class="mod-end" for="#pm12"/>
+<noteRef href="#M12" marker="12"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_4/20260529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>Les modifications à apporter aux annexes I et II en fonction de l’évolution des connaissances scientifiques et techniques peuvent être arrêtées par un règlement à prendre par le <mod class="mod-start" for="#pm13"/>ministre ayant l’Alimentation dans ses attributions.<mod class="mod-end" for="#pm13"/>
+<noteRef href="#M13" marker="13"/>, suite à des directives CEE.</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_5/20260529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm14"/>Art. 5.</num>
+<alinea>
+<content>
+<p>Il est interdit de fabriquer, d’importer, de détenir ou de transporter en vue de la vente, d’offrir en vente, de vendre, de céder à titre onéreux ou gratuit des objets céramiques non conformes aux prescriptions du présent règlement.<mod class="mod-end" for="#pm14"/>
+<noteRef href="#M14" marker="14"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_6/20260529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm15"/>Art. 6.</num>
+<alinea>
+<content>
+<p>Le ministre peut prononcer une amende administrative à l’encontre de l’exploitant agissant en violation des articles suivants du présent règlement, conformément à l’article 13, paragraphe 1<sup>er</sup>, de la <ref href="/eli/etat/leg/loi/2026/04/02/a177/jo" id="b17a06fc-0b0c-4a42-8fc1-8f019f8ccb02" scl:verify="true">loi du 2 avril 2026</ref> relative aux denrées alimentaires et aux matériaux et objets destinés à entrer en contact avec des denrées alimentaires :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>l’article 3, paragraphe 4 ;</li>
+<li>l’article 3<i>bis</i> ;</li>
+<li>l’article 3<i>ter</i> ;</li>
+<li>l’article 5.<mod class="mod-end" for="#pm15"/>
+<noteRef href="#M15" marker="15"/>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_6bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_6bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_6bis/20260529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm16"/>Art. 6<i>bis</i>.</num>
+<alinea>
+<content>
+<p>Aux objets céramiques au sens du présent règlement sont assimilés les objets céramiques légalement fabriqués ou mis sur le marché dans un État membre de l’Union européenne n’appartenant pas au Benelux ou dans un État non membre de l’Union européenne partie à un traité d’union douanière, ou légalement fabriqués dans un État partie à un traité de zone de libre-échange liant les pays du Benelux, et qui répondent à des exigences offrant un niveau de protection au moins équivalent à celui résultant des exigences visées par le présent règlement.<mod class="mod-end" for="#pm16"/>
+<noteRef href="#M16" marker="16"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2/art_7/19850305</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/02/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">1985-03-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Notre Ministre de la Santé et Notre Ministre de la Justice sont chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+</content>
+</alinea>
+</article>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-05-28" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-05-28" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-05-28" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<span scl:style-format="n">
+<i>
+<mod class="mod-start" for="#pm3"/>ANNEXE I</i>
+</span>
+</p>
+<p scl:align="center">
+<b>RÈGLES DE BASE POUR LA DÉTERMINATION DE LA <mod class="mod-start" for="#pm17"/>LIBÉRATION<mod class="mod-end" for="#pm17"/>
+<noteRef href="#M17" marker="17"/> DU PLOMB ET DU CADMIUM </b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<ol scl:space-item="10" scl:start="1" scl:symbol="custom">
+<li scl:symbol="1.">
+<b>Liquide d’essai («Simulant»)</b>
+<p scl:space-before="5">Acide acétique à 4 % (v/v), en solution aqueuse fraîchement préparée.</p>
+</li>
+<li scl:symbol="2.">
+<b>Conditions d’essai</b>
+</li>
+<li scl:symbol="2.1.">Effectuer l’essai à une température de 22 ± 2 °C et pour une durée de 24 ± 0,5 heures.</li>
+<li scl:symbol="2.2.">Lorsque seule la <mod class="mod-start" for="#pm18"/>libération<mod class="mod-end" for="#pm18"/>
+<noteRef href="#M18" marker="18"/> de plomb est à déterminer, couvrir l’échantillon par un moyen de protection approprié et l’exposer aux conditions normales d’éclairage en laboratoire.<p scl:space-before="5">Lorsque la <mod class="mod-start" for="#pm19"/>libération<mod class="mod-end" for="#pm19"/>
+<noteRef href="#M19" marker="19"/> de cadmium ou du plomb et du cadmium est à déterminer, couvrir l’échantillon de façon à assurer que la surface à soumettre à l’essai soit tenue dans l’obscurité totale.</p>
+</li>
+<li scl:symbol="3.">
+<b>Remplissage</b>
+</li>
+<li scl:symbol="3.1.">
+<i>Échantillon remplissable</i>
+<p scl:space-before="5">Remplir l’objet avec de la solution d’acide acétique à 4 % (v/v), jusqu’à 1 mm au maximum du point de débordement, distance mesurée à partir du bord supérieur de l’échantillon.</p>
+<p scl:space-before="5">Toutefois, dans le cas des échantillons présentant un bord plat ou faiblement incliné, remplir l’échantillon de manière que la distance entre la surface du liquide et le point de débordement soit au maximum de 6 mm mesurés le long du bord incliné.</p>
+</li>
+<li scl:symbol="3.2.">
+<i>Échantillon non remplissable</i>
+<p scl:space-before="5">Recouvrir d’abord d’une couche protectrice appropriée, capable de résister à l’action de la solution d’acide acétique à 4 % (v/v), la surface de l’échantillon qui n’est pas destinée à entrer en contact avec les denrées alimentaires. Immerger ensuite l’échantillon dans un récipient contenant un volume connu de solution d’acide acétique de façon que la surface destinée à entrer en contact avec les denrées alimentaires soit entièrement recouverte par le liquide d’essai.</p>
+</li>
+<li scl:symbol="4.">
+<b>Détermination de la surface</b>
+<p scl:space-before="5">La surface des objets de la catégorie 1 est équivalente à la surface du ménisque constitué par la surface libre du liquide obtenu en respectant les conditions de remplissage prévues au point 3.</p>
+</li>
+</ol>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+<attachment id="attachment_2">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-05-28" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-05-28" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-05-28" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<span scl:style-format="n">
+<i>ANNEXE II</i>
+</span>
+</p>
+<p scl:align="center">
+<b>MÉTHODES D’ANALYSE POUR LA DÉTERMINATION DE LA <b>
+<mod class="mod-start" for="#pm20"/>LIBÉRATION<mod class="mod-end" for="#pm20"/>
+<noteRef href="#M20" marker="20"/>
+</b> DE PLOMB ET DE CADMIUM</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<ol xmlns:ns1="http://www.scl.lu" ns1:space-item="10" ns1:start="1" ns1:symbol="custom">
+<li ns1:symbol="1.">
+<b>Objet et domaine d’application</b>
+<p ns1:space-before="5">La méthode permet de déterminer la migration spécifique du plomb et/ou du cadmium.</p>
+</li>
+<li ns1:symbol="2.">
+<b>Principe</b>
+<p ns1:space-before="5">La détermination de la migration spécifique du plomb et/ou du cadmium est effectuée par une méthode d’analyse instrumentale répondant aux critères de performance énoncés au point 4.</p>
+</li>
+<li ns1:symbol="3.">
+<b>Réactifs</b>
+<ul ns1:space-before="5" ns1:space-item="5" ns1:space-tab="0" ns1:symbol="custom">
+<li ns1:symbol="–">Tous les réactifs doivent être de qualité analytique, sauf spécifications contraires.</li>
+<li ns1:symbol="–">Lorsqu’il est fait mention d’eau, il s’agit toujours d’eau distillée ou d’eau de qualité équivalente.</li>
+</ul>
+</li>
+<li ns1:symbol="3.1.">
+<i>Acide acétique à 4 % (v/v), solution aqueuse</i> <p ns1:space-before="5">Ajouter 40 ml d’acide acétique glacial à de l’eau et compléter à 1 000 ml.</p>
+</li>
+<li ns1:symbol="3.2.">
+<i>Solutions étalons</i>
+<p ns1:space-before="5">Préparer des solutions étalons contenant respectivement 1 000 mg/l de plomb et au moins 500 mg/l de cadmium dans une solution d’acide acétique à 4 %, telle que visée au point 3.1.</p>
+</li>
+<li ns1:symbol="4.">
+<b>Critères de performance de la méthode d’analyse instrumentale</b>
+</li>
+<li ns1:symbol="4.1.">La limite de détection du plomb et du cadmium doit être égale ou inférieure à:<ul ns1:space-before="5" ns1:space-item="5" ns1:space-tab="0" ns1:symbol="custom">
+<li ns1:symbol="–">0,1 mg/l pour le plomb,</li>
+<li ns1:symbol="–">0,01 mg/l pour le cadmium.</li>
+</ul>
+<p ns1:space-after="5" ns1:space-before="5">La limite de détection est définie comme la concentration de l’élément dans la solution d’acide acétique à 4 %, telle que visée au point 3.1, qui donne un signal égal à deux fois le bruit de fond de l’appareil.</p>
+</li>
+<li ns1:symbol="4.2."> La limite de quantification du plomb et du cadmium doit être égale ou inférieure à:<ul ns1:space-before="5" ns1:space-item="5" ns1:symbol="custom">
+<li ns1:symbol="–"> 0,2 mg/l pour le plomb,</li>
+<li ns1:symbol="–">0,02 mg/l pour le cadmium.</li>
+</ul>
+</li>
+<li ns1:symbol="4.3.">
+<i>Récupération</i>. La récupération du plomb et du cadmium ajoutés à la solution d’acide acétique à 4 %, telle que visée au point 3.1, doit être comprise entre 80 et 120 % de la quantité ajoutée.</li>
+<li ns1:symbol="4.4.">
+<i>Spécificité</i>. La méthode d’analyse instrumentale utilisée doit être exempte d’interférences dues à la matrice et spectrales.</li>
+<li ns1:symbol="5.">
+<b>Méthode</b>
+</li>
+<li ns1:symbol="5.1.">
+<i>Préparation de l’échantillon</i>
+<p ns1:space-before="5">L’échantillon doit être propre et dépourvu de graisse ou autre matière susceptible d’affecter l’essai.</p>
+<p ns1:space-before="5">Laver l’échantillon avec une solution contenant un détergent liquide de type ménager à une température d’environ 40 °C. Rincer l’échantillon tout d’abord à l’eau courante puis à l’eau distillée ou de qualité équivalente. Égoutter et sécher de façon à éviter toute souillure. Ne plus manipuler la surface à soumettre à l’essai après qu’elle aura été nettoyée.</p>
+</li>
+<li ns1:symbol="5.2.">
+<i>Détermination du plomb et/ou du cadmium</i>
+<ul ns1:space-before="5" ns1:space-item="5" ns1:space-tab="0" ns1:symbol="custom">
+<li ns1:symbol="–"> L’échantillon ainsi préparé est soumis à l’essai dans les conditions prévues à l’annexe I.</li>
+<li ns1:symbol="–">Avant de prélever la solution d’essai pour la détermination du plomb et/ ou du cadmium, homogénéiser le contenu de l’échantillon selon une méthode appropriée qui évite toute perte de la solution ou abrasion éventuelle de la surface en essai.</li>
+<li ns1:symbol="–">Effectuer un essai à blanc sur le réactif utilisé pour chaque série de déterminations.</li>
+<li ns1:symbol="–"> Effectuer les déterminations de plomb et/ou de cadmium dans des conditions appropriées.</li>
+</ul>
+</li>
+</ol>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+<attachment id="attachment_3">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-05-28" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-05-28" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2026-05-28" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<span scl:style-format="n">
+<i>ANNEXE III</i>
+</span>
+</p>
+<p scl:align="center">
+<span scl:style-format="n">DÉCLARATION DE CONFORMITÉ</span>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p>La déclaration écrite visée à l’article 3 <i>bis</i>, paragraphe 1, contient les informations suivantes:</p>
+<ol scl:space-item="5" scl:start="1" scl:symbol="1)">
+<li>identité et adresse de la société qui fabrique l’objet céramique fini et de l’importateur qui l’introduit dans la Communauté;</li>
+<li>identité de l’objet céramique;</li>
+<li>date de la déclaration; </li>
+<li>confirmation du fait que l’objet céramique est conforme aux prescriptions du présent règlement et du <ref href="/eli/reg_ue/2004/1935/jo" id="fdcf8926-8fbc-42e1-9e32-6f9174220acf">règlement (CE) no 1935/2004</ref>.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La déclaration écrite permet d’identifier facilement les objets pour lesquels elle est émise et est renouvelée lorsque des modifications substantielles de la production induisent des changements sur le plan de la <mod class="mod-start" for="#pm21"/>libération<mod class="mod-end" for="#pm21"/>
+<noteRef href="#M21" marker="21"/> du plomb et du cadmium.<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/>
+</p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#2001A08591">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2001-02-23" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MI"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2001-02-23" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2001-02-23" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2023-02-01</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2001-02-23</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2020-10-17</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2001A08591</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2017-09-05</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/36</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MI</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/746</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/560</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 01/02/2023 : Loi du 23 février 2001 concernant les syndicats de communes.</scl:jolux>
+					<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/PL/19960049</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 05/09/2017 : Loi du 23 février 2001 concernant les syndicats de communes.</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1988/12/13/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/loi/1958/12/23/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/loi/1900/02/14/n5/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/loi/1981/07/29/n3/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905/fr</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2001-02-23-n2-consolide-20170905-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/consolide/20170905/fr</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2001-02-23-n2-consolide-20170905-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2001-02-23" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2015-10-03" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2017-09-05" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+				<eventRef date="2023-02-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_7"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_7"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_7"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_7"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_11"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_11"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_18"/>
+					</textualMod>
+					<textualMod id="pm15" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2015/09/02/n1/jo"/>
+						<destination href="#art_19"/>
+					</textualMod>
+					<textualMod id="pm16" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2017/08/02/a776/jo"/>
+						<destination href="#art_7"/>
+					</textualMod>
+					<textualMod id="pm17" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2017/08/02/a776/jo"/>
+						<destination href="#art_7bis"/>
+					</textualMod>
+					<textualMod id="pm18" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2017/08/02/a776/jo"/>
+						<destination href="#art_13"/>
+					</textualMod>
+					<textualMod id="pm19" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2023/01/06/a30/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm20" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2023/01/06/a30/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm21" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2023/01/06/a30/jo"/>
+						<destination href="#art_17"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/loi/2001/02/23/n2/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/loi/2017/08/02/a776/jo" id="rp2" showAs="Loi du 2 août 2017 portant modification de la loi modifiée du 23 février 2001 concernant les syndicats de communes."/>
+				<passiveRef href="/eli/etat/leg/loi/2015/09/02/n1/jo" id="rp3" showAs="Loi du 2 septembre 2015 portant abolition des districts, modifiant &#10;1. la loi communale modifiée du 13 décembre 1988; &#10;2. le Code pénal; &#10;3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; &#10;4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; &#10;5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; &#10;6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; &#10;7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; &#10;8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; &#10;9. la loi modifiée du 10 août 1993 relative aux parcs naturels; &#10;10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; &#10;11. la loi du 23 février 2001 concernant les syndicats de communes; &#10;12. la loi électorale modifiée du 18 février 2003; &#10;13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re"/>
+				<passiveRef href="/eli/etat/leg/loi/2023/01/06/a30/jo" id="rp4" showAs="Loi du 6 janvier 2023 portant modification : 1° de la loi communale modifiée du 13 décembre 1988 ; 2° de l’article 2045 du Code civil ; 3° de la loi du 11 juillet 1957 portant réglementation du camping ; 4° de la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux ; 5° de la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l’ordre administratif ; 6° de la loi modifiée du 23 février 2001 concernant les syndicats de communes ; 7° de la loi électorale modifiée du 18 février 2003 ; 8° de la loi modifiée du 8 avril 2018 sur les marchés publics ; 9° de la loi modifiée du 24 juin 2020 portant introduction de mesures temporaires relatives à la loi communale modifiée du 13 décembre 1988 et à la loi modifiée du 27 mars 2018 portant organisation de la sécurité civile dans le cadre de la lutte contre le Covid-19. "/>
+			</references>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M13" marker="13" refersTo="pm13" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M14" marker="14" refersTo="pm14" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M15" marker="15" refersTo="pm15" title="A|2015-09-09|2015-09-02|L|174">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo">Loi du 2 septembre 2015 portant abolition des districts, modifiant 1. la loi communale modifiée du 13 décembre 1988; 2. le Code pénal; 3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; 4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; 5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; 6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; 7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; 8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; 9. la loi modifiée du 10 août 1993 relative aux parcs naturels; 10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; 11. la loi du 23 février 2001 concernant les syndicats de communes; 12. la loi électorale modifiée du 18 février 2003; 13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M16" marker="16" refersTo="pm16" title="A|2017-09-01|2017-08-02|L|776">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/08/02/a776/jo">Loi du 2 août 2017 portant modification de la loi modifiée du 23 février 2001 concernant les syndicats de communes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M17" marker="17" refersTo="pm17" title="A|2017-09-01|2017-08-02|L|776">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/08/02/a776/jo">Loi du 2 août 2017 portant modification de la loi modifiée du 23 février 2001 concernant les syndicats de communes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M18" marker="18" refersTo="pm18" title="A|2017-09-01|2017-08-02|L|776">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/08/02/a776/jo">Loi du 2 août 2017 portant modification de la loi modifiée du 23 février 2001 concernant les syndicats de communes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M19" marker="19" refersTo="pm19" title="A|2023-01-19|2023-01-06|L|30">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2023/01/06/a30/jo">Loi du 6 janvier 2023 portant modification : 1° de la loi communale modifiée du 13 décembre 1988 ; 2° de l’article 2045 du Code civil ; 3° de la loi du 11 juillet 1957 portant réglementation du camping ; 4° de la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux ; 5° de la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l’ordre administratif ; 6° de la loi modifiée du 23 février 2001 concernant les syndicats de communes ; 7° de la loi électorale modifiée du 18 février 2003 ; 8° de la loi modifiée du 8 avril 2018 sur les marchés publics ; 9° de la loi modifiée du 24 juin 2020 portant introduction de mesures temporaires relatives à la loi communale modifiée du 13 décembre 1988 et à la loi modifiée du 27 mars 2018 portant organisation de la sécurité civile dans le cadre de la lutte contre le Covid-19.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M20" marker="20" refersTo="pm20" title="A|2023-01-19|2023-01-06|L|30">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2023/01/06/a30/jo">Loi du 6 janvier 2023 portant modification : 1° de la loi communale modifiée du 13 décembre 1988 ; 2° de l’article 2045 du Code civil ; 3° de la loi du 11 juillet 1957 portant réglementation du camping ; 4° de la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux ; 5° de la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l’ordre administratif ; 6° de la loi modifiée du 23 février 2001 concernant les syndicats de communes ; 7° de la loi électorale modifiée du 18 février 2003 ; 8° de la loi modifiée du 8 avril 2018 sur les marchés publics ; 9° de la loi modifiée du 24 juin 2020 portant introduction de mesures temporaires relatives à la loi communale modifiée du 13 décembre 1988 et à la loi modifiée du 27 mars 2018 portant organisation de la sécurité civile dans le cadre de la lutte contre le Covid-19.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M21" marker="21" refersTo="pm21" title="A|2023-01-19|2023-01-06|L|30">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2023/01/06/a30/jo">Loi du 6 janvier 2023 portant modification : 1° de la loi communale modifiée du 13 décembre 1988 ; 2° de l’article 2045 du Code civil ; 3° de la loi du 11 juillet 1957 portant réglementation du camping ; 4° de la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux ; 5° de la loi modifiée du 7 novembre 1996 portant organisation des juridictions de l’ordre administratif ; 6° de la loi modifiée du 23 février 2001 concernant les syndicats de communes ; 7° de la loi électorale modifiée du 18 février 2003 ; 8° de la loi modifiée du 8 avril 2018 sur les marchés publics ; 9° de la loi modifiée du 24 juin 2020 portant introduction de mesures temporaires relatives à la loi communale modifiée du 13 décembre 1988 et à la loi modifiée du 27 mars 2018 portant organisation de la sécurité civile dans le cadre de la lutte contre le Covid-19.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p> Version consolidée applicable au 01/02/2023 : Loi du 23 février 2001 concernant les syndicats de communes.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<section id="titre_i">
+				<num>TITRE I</num><heading scl:separator="" scl:style-format="b"><br/>De la nature, de l'objet et de la constitution des syndicats de communes
+				</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_1er/20151003</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-10-03</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>.</num>
+					<alinea>
+						<content>
+							<p>Lorsque les conseils communaux de deux ou de plusieurs communes ont fait connaître, par des délibérations concordantes, leur volonté d'associer les communes qu'ils représentent, en vue d'oeuvres ou de services d'intérêt communal, ainsi que leur adhésion à toutes les conditions statutaires, et qu'ils ont décidé de consacrer à ces oeuvres ou à ces services les ressources nécessaires, les délibérations prises sont transmises <mod class="mod-start" for="#pm1"/>
+								<del>par le commissaire de district<mod class="mod-end" for="#pm1"/>
+								</del>
+								<noteRef href="#M1" marker="1"/> au ministre de l'Intérieur. Un arrêté grand-ducal, rendu sur avis du Conseil d'Etat, autorise la création de l'association qui prend la dénomination de syndicat de communes.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Des communes autres que celles qui furent initialement membres peuvent être admises à faire partie du syndicat avec le consentement des deux tiers au moins des communes déjà syndiquées. Ces dernières fixent, en accord avec le conseil communal ou les conseils communaux intéressés, les conditions auxquelles s'opère l'adhésion.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Au cas où cette adhésion n'est pas accompagnée d'un changement des statuts du syndicat, les délibérations prises par les conseils communaux des communes déjà membres et des communes non encore membres sont soumises à l'approbation du Grand-Duc.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Lorsque l'adhésion implique en même temps une modification des statuts la procédure prévue à l'alinéa 1<sup>er</sup> du présent article est d'application.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_2/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<alinea>
+						<content>
+							<p>L'arrêté d'institution peut autoriser les communes à se constituer en syndicat à vocation multiple. Il en fixe clairement les objectifs.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_3/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<alinea>
+						<content>
+							<p>Les communes ou les syndicats de communes luxembourgeois peuvent être autorisés selon les procédures prévues par la présente loi à participer à des organismes publics étrangers dotés de la personnalité juridique dans les conditions fixées par des conventions internationales. Réciproquement, des communes ou des regroupements de communes étrangers peuvent s'associer avec des communes luxembourgeoises dans un syndicat de communes créé par arrêté grand-ducal, dans la mesure où leur droit interne le permet.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_4/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<alinea>
+						<content>
+							<p>Les syndicats de communes sont des établissements publics investis de la personnalité juridique.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_5/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<alinea>
+						<content>
+							<p>Les statuts du syndicat font partie intégrante de l'arrêté d'institution et doivent mentionner au moins:</p>
+							<ol scl:symbol="1°">
+								<li>la dénomination du syndicat;</li>
+								<li>la définition précise de son objet ou de ses objets;</li>
+								<li>son siège social, qui est établi dans une des communes membres;</li>
+								<li>sa durée;</li>
+								<li>la désignation des communes membres;</li>
+								<li>la composition des organes du syndicat;</li>
+								<li>le nombre des délégués des communes membres au sein des organes du syndicat, ainsi que la pondération éventuelle des votes de chaque commune membre;</li>
+								<li>la détermination des apports et des engagements;</li>
+								<li>les conditions de retrait du syndicat par une commune membre;</li>
+								<li>l'affectation des excédents d'exploitation éventuels réalisés par le syndicat;</li>
+								<li>l'affectation de l'actif et du passif en cas de dissolution du syndicat.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Toute modification des statuts doit être approuvée par toutes les communes membres et suivre la même procédure que celle prévue à l'article 1<sup>er</sup> pour la création du syndicat de communes.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="titre_ii">
+				<num>TITRE II</num><heading scl:separator="" scl:style-format="b">
+						<br/>Des organes des syndicats de communes
+				</heading>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_6/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<alinea>
+						<content>
+							<p>Les organes d'un syndicat de communes sont le comité, le président et le bureau.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les attributions du comité sont celles qui incombent à un conseil communal dans une commune. Les attributions respectivement du président et du bureau sont celles qui sont exercées respectivement par le bourgmestre et le collège des bourgmestre et échevins dans une commune, à l'exception des fonctions que la Constitution ou la loi confient à ces derniers dans leur qualité d'organes de l'Etat.</p>
+						</content>
+					</alinea>
+				</article>
+				<section id="titre_ii.chapitre_1er">
+					<num>Chapitre 1<sup>er</sup></num><heading scl:separator=" - " scl:style-format="b">Le comité</heading>
+					<article id="art_7">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_7</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_7/20170905</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2017-09-05</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<mod class="mod-start" for="#pm16"/>Art. 7.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>Le syndicat est administré par un comité. Ce comité est constitué d’après les règles suivantes :</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Sauf dispositions statutaires contraires du syndicat, chaque commune est représentée au sein du comité par un délégué choisi parmi les membres élus de son conseil communal. Le délégué est élu au scrutin secret par le conseil communal concerné dans les formes établies par les articles 18, 19, 32, 33 et 34 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="0b001ab7-97ed-4ae7-b9c5-baf2de4e3480">loi communale modifiée du 13 décembre 1988</ref>.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le délégué du conseil communal suit ordinairement le sort de l’assemblée communale quant à la durée de son mandat. Les délégués qui ont démissionné de leur mandat de conseiller communal ou dont le mandat de conseiller communal a cessé continuent l’exercice de leurs fonctions, sauf en cas de privation du droit d’éligibilité en vertu d’une disposition légale ou d’une décision de l’autorité judiciaire coulée en force de chose jugée ou en cas d’exercice de fonctions incompatibles avec le mandat de conseiller communal trente jours après la mise en demeure qui a été notifiée au conseiller communal par le ministre de l’Intérieur ou le collège des bourgmestre et échevins conformément à l’article 10 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="d3ebe0a8-48b3-4e1f-9260-3de16359061c">loi communale modifiée du 13 décembre 1988</ref>.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le comité du syndicat est renouvelé à la suite des élections générales des conseils communaux dans les trois mois qui suivent l’installation des conseillers élus. En cas de renouvellement intégral du conseil communal d’une commune membre par suite de dissolution ou de démission de tous ses membres, le nouveau conseil procède, dans les trois mois de son installation, à la désignation du délégué au sein du comité du syndicat. Les délégués sortants sont rééligibles.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le conseil communal peut à tout moment remplacer le délégué par l’élection d’un nouveau délégué dans les mêmes formes.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En cas de vacance, il est pourvu au remplacement du délégué dans le délai de trois mois.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En cas de vacance par suite de décès, de démission ou de perte du mandat de conseiller communal tel que prévu à l’alinéa 3, le délégué élu en remplacement achève le mandat de celui qu’il remplace.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Si un conseil, après une mise en demeure par le ministre de l’Intérieur, néglige ou refuse de nommer le ou les délégués, la représentation de la commune au sein du syndicat se fait suivant l’ordre établi aux articles 40, 42 et 64 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="9869905c-015f-4cde-aa52-244a18cc282b">loi communale modifiée du 13 décembre 1988</ref>.<mod class="mod-end" for="#pm16"/>
+									<noteRef href="#M16" marker="16"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_7bis">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_7bis</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_7bis/20170905</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 7bis.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2017-09-05</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<b>
+								<mod class="mod-start" for="#pm17"/>Art. 7bis.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>Au cas où les statuts prévoient qu’un délégué représente plusieurs communes, il est désigné par les membres des conseils communaux des communes représentées par un vote par correspondance sur base de bulletins de vote établis par le ministre de l’Intérieur sur proposition des conseils communaux.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Jusqu’au premier jour du quatrième mois qui suit celui des élections générales des conseils communaux, ceux-ci proposent au ministre des candidats dans les formes établies par les articles 18, 19, 32, 33 et 34 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="29ce8f35-3dd1-4452-a944-be4e69377e66">loi communale modifiée du 13 décembre 1988</ref>. Chaque conseil communal concerné a le choix, soit de proposer comme candidat un de ses membres, soit de proposer un membre du conseil communal d’une autre commune concernée, soit de renoncer à toute proposition de candidat. Si un seul et même candidat est proposé pour un poste de délégué, celui-ci est déclaré élu par le ministre de l’Intérieur. Les propositions tardives ne sont pas prises en compte.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le ministre de l’Intérieur inscrit sur des bulletins de vote les candidats qui lui sont proposés par les conseils communaux et les transmet aux communes dans un délai de quinze jours au plus tard à partir du premier jour du quatrième mois précité. Le ministre de l’Intérieur transmet à chaque commune autant de bulletins de vote munis des nom et prénoms des candidats proposés et d’enveloppes électorales que le conseil communal compte de membres, estampillés et portant l’indication du ministère de l’Intérieur et du poste de délégué au comité du syndicat de communes auquel le vote doit pourvoir.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le collège des bourgmestre et échevins, soit envoie sous pli recommandé avec accusé de réception, soit remet contre récépissé à chaque conseiller communal un bulletin de vote et une enveloppe électorale.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les conseillers communaux remplissent les bulletins de vote et les placent dans les enveloppes électorales qu’ils transmettent aussitôt au collège des bourgmestre et échevins. Celles-ci sont transmises ensemble par envoi recommandé au ministre de l’Intérieur dans un délai de quinze jours à partir de la réception des bulletins de vote et des enveloppes électorales conformément à l’alinéa 3. Les enveloppes transmises de manière tardive ne sont pas prises en compte, la date de l’envoi recommandé faisant foi.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le ministre de l’Intérieur installe un bureau de vote composé de fonctionnaires qu’il a sous ses ordres dont un assure la fonction de président. Le bureau de vote procède au dépouillement du scrutin dès réception des bulletins de vote des conseillers communaux des communes représentées par un délégué commun.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Chaque conseil communal peut désigner, parmi ses membres non candidats, un observateur qui assiste aux opérations de dépouillement.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les candidats sont élus à la majorité simple. En cas de partage des voix, il est procédé par tirage au sort par le président du bureau de vote.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le ministre de l’Intérieur communique aux communes et aux syndicats de communes les résultats du scrutin sous forme d’un relevé des délégués communs élus aussitôt que les opérations de dépouillement sont clôturées. Le relevé des délégués élus vaut titre d’admission au comité du syndicat.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Si le conseil communal d’une ou de plusieurs des communes représentées par un délégué commun n’est pas installé jusqu’au premier jour du troisième mois qui suit celui des élections générales des conseils communaux, le ministre de l’Intérieur suspend l’établissement des bulletins de vote en attendant que tous les conseils communaux aient proposé un candidat dans le délai d’un mois à partir de la date d’installation du dernier conseil communal sans préjudice des dispositions de l’alinéa 2.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Si les conseils communaux ou les membres des conseils communaux, après une mise en demeure par le ministre de l’Intérieur, négligent de proposer des candidats ou d’élire un délégué, la représentation de ces communes au sein du syndicat se fait par l’intermédiaire de celle de ces communes qui a la population la plus élevée et suivant l’ordre établi aux articles 40, 42 et 64 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="ef28b9f0-623d-4f7c-a389-421142f28299">loi communale modifiée du 13 décembre 1988</ref>.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le délégué qui représente plusieurs communes peut être remplacé sur proposition du conseil communal d’une ou de plusieurs communes concernées. Cette proposition est notifiée au ministre de l’Intérieur et aux autres communes représentées par le délégué. Dans le délai d’un mois à partir de la notification, les conseils communaux proposent des candidats pour le remplacement. La procédure est la même que pour la désignation d’un délégué.<mod class="mod-end" for="#pm17"/>
+									<noteRef href="#M17" marker="17"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_8">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_8</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_8/20010329</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 8.</num>
+						<alinea>
+							<content>
+								<p>Les conditions de validité des délibérations du comité, de la convocation, de l'ordre et de la tenue des séances, les conditions d'annulation de ses délibérations et de recours sont celles que fixe la législation en vigueur pour les conseils communaux.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les indemnités des membres du bureau sont fixées par le comité sous l'approbation du ministre de l'Intérieur. Les jetons de présence des membres du comité du syndicat sont arrêtés sous l'approbation du ministre de l'Intérieur. Un règlement grand-ducal peut arrêter les maxima de ces indemnités et jetons de présence.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_9">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_9</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_9/20151003</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2015-10-03</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 9.</num>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm6"/>Dans le mois qui suit la signature du procès-verbal d’une réunion du comité du syndicat par les membres, le président du syndicat communique ce procès-verbal aux membres du comité, au ministre de l’Intérieur et aux bourgmestres des communes membres; ces derniers le mettent immédiatement à la disposition des conseillers communaux à la maison communale.<mod class="mod-end" for="#pm6"/>
+									<noteRef href="#M6" marker="6"/>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dans le mois qui suit l'arrêté du budget, par le ministre de l'Intérieur, une copie du budget est adressée aux bourgmestres des communes membres qui la mettent immédiatement à la disposition des conseillers communaux des communes membres à la maison communale.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dans le mois qui suit l'arrêté du compte par le ministre de l'Intérieur, une copie du compte, accompagnée d'un rapport sur les activités du syndicat pendant l'exercice visé, est adressée aux bourgmestres des communes membres qui la mettent immédiatement à la disposition des conseillers communaux à la maison communale.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_10">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_10</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_10/20010329</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 10.</num>
+						<alinea>
+							<content>
+								<p>Les délégués des communes au sein d'un syndicat de communes peuvent être appelés par les conseils communaux qu'ils représentent à rendre compte de leur action au sein du comité et à communiquer les informations relatives aux activités du syndicat</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_11">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_11</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_11/20151003</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2015-10-03</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 11.</num>
+						<alinea>
+							<content>
+								<p>Tout habitant d'une commune membre et toute personne intéressée a le droit de prendre connaissance et copie, le cas échéant contre remboursement, à la maison communale des communes membres, des délibérations du comité, à l'exception de celles qui furent prises à huis clos, aussi longtemps que le comité n'a pas décidé de les rendre publiques. </p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le même droit ne peut en aucun cas et sous aucun prétexte être refusé au ministre de l'Intérieur <mod class="mod-start" for="#pm7"/>et aux fonctionnaires que celui-ci a chargés de prendre connaissance et copie des délibérations visées à l’alinéa 1<mod class="mod-end" for="#pm7"/>
+									<noteRef href="#M7" marker="7"/>.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm8"/>Le syndicat doit fournir aux fonctionnaires dont question à l’alinéa 2 tous les renseignements qu’il possède et dont ceux-ci ont besoin pour remplir leur mission.<mod class="mod-end" for="#pm8"/>
+									<noteRef href="#M8" marker="8"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="titre_ii.chapitre_2">
+					<num>Chapitre 2</num><heading scl:separator=" - " scl:style-format="b">Le président</heading>
+					<article id="art_12">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_12</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_12/20010329</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 12.</num>
+						<alinea>
+							<content>
+								<p>Le comité élit pour la durée du mandat le président parmi ses membres. Le mandat du président est révocable.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="titre_ii.chapitre_3">
+					<num>Chapitre 3</num><heading scl:separator=" - " scl:style-format="b">Le bureau</heading>
+					<article id="art_13">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_13</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_13/20170905</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2017-09-05</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 13.</num>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm18"/>Le comité élit, parmi ses membres, les membres de son bureau, dans les formes établies par les articles 18, 19, 32, 33 et 34 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="d52b4954-6f23-4137-b702-60ee6633b6af">loi communale modifiée du 13 décembre 1988</ref>. Sauf dispositions contraires des statuts du syndicat de communes, le bureau se compose de trois membres au moins, dont le président du comité, qui est d’office président du bureau, un vice-président et un membre. Sauf décès, démission, révocation ou autre empêchement, le mandat des membres du bureau prend fin en même temps que celui du comité. En cas de renouvellement du comité, les membres du bureau sortant continuent l’exercice de leurs fonctions jusqu’à leur remplacement.<mod class="mod-end" for="#pm18"/>
+									<noteRef href="#M18" marker="18"/>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les règles relatives au fonctionnement du bureau sont celles que fixe la législation en vigueur pour le collège des bourgmestre et échevins.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_14">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_14</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_14/20151003</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2015-10-03</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 14.</num>
+						<alinea>
+							<content>
+								<p>Le bureau convoque le comité aussi souvent que l'exigent les affaires comprises dans les attributions du syndicat et au moins deux fois par an. Il est obligé de convoquer le comité, soit sur invitation du ministre de l'Intérieur<del>
+										<mod class="mod-start" for="#pm9"/> ou du commissaire de district<mod class="mod-end" for="#pm9"/>
+									</del>
+									<noteRef href="#M9" marker="9"/>, soit à la demande motivée d'un tiers au moins des membres du comité ou des conseils communaux des communes membres. </p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Sauf le cas d'urgence, la convocation du comité se fait par écrit et à domicile au moins quinze jours avant celui de la réunion. Elle mentionne le lieu, le jour et l'heure de la réunion et contient l'ordre du jour. Une copie de la convocation est adressée dans le délai prémentionné aux bourgmestres des communes membres qui en informent par écrit dans les trois jours les conseillers communaux. <mod class="mod-start" for="#pm10"/>Une copie de la convocation est adressée dans le même délai au ministre de l’Intérieur.<mod class="mod-end" for="#pm10"/>
+									<noteRef href="#M10" marker="10"/>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Pour chaque point à l'ordre du jour, les documents, actes et pièces afférents peuvent être consultés au siège du syndicat sans déplacement par les membres du comité du syndicat de communes ainsi que par les conseillers communaux des communes membres du syndicat durant le délai prévu à l'alinéa 2 du présent article. Il peut en être pris copie, le cas échéant contre remboursement.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+			</section>
+			<section id="titre_iii">
+				<num>TITRE III</num><heading scl:separator="" scl:style-format="b"><br/>De l'administration des syndicats de communes
+				</heading>
+				<article id="art_15">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_15</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_15/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 15.</num>
+					<alinea>
+						<content>
+							<p>Le syndicat peut engager du personnel administratif et technique suivant ses besoins.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_16/20230201</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2023-02-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<alinea>
+						<content>
+							<p>Il y a dans chaque syndicat un secrétaire-rédacteur et un receveur dont les fonctions sont nettement séparées.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ces postes pourront être occupés par des fonctionnaires engagés le cas échéant à mi-temps.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Deux ou trois syndicats de communes respectivement une commune et un ou deux syndicats peuvent <mod class="mod-start" for="#pm19"/>
+								<del>être autorisés par le ministre de l'Intérieur à</del>
+								<mod class="mod-end" for="#pm19"/>
+								<noteRef href="#M19" marker="19"/> avoir un secrétaire ou un receveur en commun, occupé à temps plein ou à mi-temps.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les décisions relatives aux nominations provisoire et définitive, à la démission, aux peines disciplinaires, sauf l'avertissement et la réprimande, à la réglementation du service, à la part de chaque commune dans la rémunération du secrétaire commun sont prises conformément aux articles 19 et 32 à 34 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="f1db7721-d53b-4b80-a3d0-2cd8afbc760f">loi communale</ref> par le conseil communal de la commune et/ou par les comités des syndicats de communes concernés, <mod class="mod-start" for="#pm11"/>réunis sous la présidence du fonctionnaire que le ministre de l’Intérieur a désigné à ces fins<mod class="mod-end" for="#pm11"/>
+								<noteRef href="#M11" marker="11"/> et votant séparément.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Si le candidat est déjà en possession d'une nomination provisoire ou définitive dans l'un des syndicats concernés ou dans une commune, la nouvelle nomination lui sera conférée uniquement soit par le comité du ou des syndicats, soit par le conseil communal de la commune concernée.</p>
+							<p>
+								<mod class="mod-start" for="#pm12"/>
+								<del>Dans les cas où les syndicats ou la commune sont situés dans des districts différents, la réunion est présidée par le commissaire du district dans lequel est situé le syndicat avec la population la plus nombreuse.</del>
+								<mod class="mod-end" for="#pm12"/>
+								<noteRef href="#M12" marker="12"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm20"/>
+								<del>Les décisions afférentes sont sujettes à l'approbation du ministre de l'Intérieur.</del>
+								<mod class="mod-end" for="#pm20"/>
+								<noteRef href="#M20" marker="20"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le secrétaire ou le receveur en commun prête serment <mod class="mod-start" for="#pm13"/>entre les mains du fonctionnaire désigné par le ministre de l’Intérieur en vue de présider l’assemblée<mod class="mod-end" for="#pm13"/>
+								<noteRef href="#M13" marker="13"/>.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le service du secrétaire ou du receveur en commun est contrôlé par le ou les comités des syndicats voire par le collège des bourgmestre et échevins de la commune intéressée.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>A défaut de titulaire à l'un de ces postes les fonctions de secrétaire-rédacteur et de receveur d'un syndicat sont exercées par le secrétaire et le receveur de la commune-siège du syndicat.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_17/20230201</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2023-02-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 17.</num>
+					<alinea>
+						<content>
+							<p>Les conditions d'admission, de promotion, de démission, de rémunération ainsi que les droits et devoirs des fonctionnaires, employés et ouvriers des syndicats de communes sont ceux déterminés par la loi pour le personnel des communes et sont fixés dans les limites de la loi, par les délibérations du comité du syndicat<mod class="mod-start" for="#pm21"/>
+								<del> approuvées par le ministre de l'Intérieur<mod class="mod-end" for="#pm21"/>
+								</del>
+								<noteRef href="#M21" marker="21"/>.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="titre_iv">
+				<num>TITRE IV</num><heading scl:separator="" scl:style-format="b"><br/>De la tutelle</heading>
+				<article id="art_18">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_18</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_18/20151003</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-10-03</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 18.</num>
+					<alinea>
+						<content>
+							<p>Les lois et règlements concernant la tutelle des communes sont applicables aux syndicats de communes.</p>
+							<p>
+								<mod class="mod-start" for="#pm14"/>
+								<del>Dans les cas où les communes membres sont situées dans des districts différents, le syndicat ressortit au commissariat du district auquel appartient la commune-siège du syndicat de communes.<mod class="mod-end" for="#pm14"/>
+								</del>
+								<noteRef href="#M14" marker="14"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_19">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_19</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_19/20151003</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-10-03</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 19.</num>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm15"/>Le ministre de l’Intérieur a entrée au comité et au bureau. Il est toujours entendu quand il le demande. Il peut en charger un fonctionnaire qu’il a désigné à ces fins.<mod class="mod-end" for="#pm15"/>
+								<noteRef href="#M15" marker="15"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="titre_v">
+				<num>TITRE V</num><heading scl:separator="" scl:style-format="b"><br/>Des dispositions financières</heading>
+				<article id="art_20">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_20</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_20/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 20.</num>
+					<alinea>
+						<content>
+							<p>Les syndicats de communes sont soumis aux règles de comptabilité fixées à leur égard dans la loi communale.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le budget du syndicat pourvoit aux dépenses de création et de fonctionnement des établissements ou services pour lesquels le syndicat est constitué.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les recettes de ce budget comprennent:</p>
+							<ol scl:symbol="1)">
+								<li>la contribution des communes membres constituée par les apports et engagements fixés dans les délibérations initiales des conseils communaux telles qu'elles ont été le cas échéant modifiées par la suite. Cette contribution est obligatoire pour lesdites communes pendant la durée de l'association et dans la limite des nécessités du service commun, telle que les délibérations des conseils communaux l'ont déterminée;</li>
+								<li>le revenu des biens meubles et immeubles du syndicat;</li>
+								<li>les sommes qu'il reçoit en échange d'un service rendu ainsi que toute autre recette en rapport avec les activités du syndicat;</li>
+								<li>les subventions de l'Etat et des communes;</li>
+								<li>les produits des dons ou legs;</li>
+								<li>les produits des emprunts en ce qui concerne les syndicats de communes visés à l'article 23.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_21">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_21</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_21/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 21.</num>
+					<alinea>
+						<content>
+							<p>Les communes membres du syndicat ne peuvent s'engager que divisément et jusqu'à concurrence d'un impact financier déterminé.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Toute décision des organes du syndicat qui entraîne pour les communes des obligations supplémentaires ou une diminution de leurs droits, dépassant de vingt pour cent leur engagement en capital, présuppose quant à son exécution une modification des statuts à effectuer conformément aux dispositions de l'article 5 ci-dessus. Pour les syndicats visés à l'article 23 le montant du recours à des fonds étrangers sera adapté en même temps. Le cas échéant la garantie communale sera également révisée par les conseils communaux concernés.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_22</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_22/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22.</num>
+					<alinea>
+						<content>
+							<p>Tout projet à réaliser par un syndicat de communes est à financer intégralement par le syndicat. Toutefois les syndicats de communes peuvent préfinancer par recours au crédit les subventions de l'Etat dont les conditions et modalités, notamment le montant, le terme et l'échéancier sont arrêtées par écrit par l'autorité allouant l'aide et le ministre ayant le budget dans ses attributions. Dans ce cas les montants ainsi versés sont à imputer sur le découvert.</p>
+							<p>L'engagement du subside ne devient effectif qu'après acceptation de ces conditions et modalités par le comité du syndicat de communes.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_23">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_23</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_23/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 23.</num>
+					<alinea>
+						<content>
+							<p>Les syndicats de communes ayant pour objet la fourniture d'eau potable, l'assainissement d'eaux, la gestion des déchets ou la construction et l'exploitation d'un crématoire peuvent recourir à l'emprunt pour financer leurs dépenses d'investissement en relation avec ces fonctions.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Sans préjudice des dispositions de l'article 21, alinéa 2, le pourcentage que le recours à l'emprunt peut représenter ne pourra dépasser soixante-cinq pour cent de l'apport nécessaire à charge des communes. La quote-part de chaque commune dans le recours à l'emprunt est portée à la connaissance de chaque conseil communal qui peut dans un délai de trois mois après cette communication décider de renoncer à l'emprunt et de verser sa quote-part en capital.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour les syndicats ayant pour objet de construire, d'exploiter et d'entretenir un hôpital le recours à l'emprunt se limite à la somme garantie par l'Union des Caisses de Maladie.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="titre_vi">
+				<num>TITRE VI</num><heading scl:separator="" scl:style-format="b"><br/>De la durée, de la prorogation, de la dissolution et de la liquidation du syndicat de communes</heading>
+				<article id="art_24">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_24</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_24/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 24.</num>
+					<alinea>
+						<content>
+							<p>Le syndicat est formé soit pour une durée indéterminée, soit pour une durée déterminée par les statuts du syndicat qui font partie intégrante de l'arrêté d'institution.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>A l'expiration du terme et à moins de dispositions contraires prévues par les statuts, le syndicat formé à durée déterminée est prorogé par tacite reconduction pour un terme identique à celui initialement fixé. Toutefois, chaque commune membre a la faculté de ne pas s'engager au-delà du terme fixé. Dans ce cas, le conseil communal de la commune concernée exprime sa volonté de finir l'engagement dans une délibération qu'il fait parvenir au président du syndicat au moins six mois avant l'échéance du terme. Il appartient alors aux communes membres qui souhaitent une prorogation du syndicat de procéder à un changement des statuts conformément à l'article 5 de la présente loi et ceci dans les trois mois qui suivent le terme initialement fixé.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le syndicat de communes est dissous par arrêté grand-ducal, soit sur proposition du comité du syndicat et avec le consentement de tous les conseils communaux intéressés, soit sur la demande motivée de la majorité desdits conseils.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il peut être dissous d'office par un arrêté grand-ducal, le Conseil d'Etat entendu en son avis.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L'arrêté de dissolution détermine, sous la réserve des droits des tiers, les conditions dans lesquelles s'opère la liquidation du syndicat.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_25">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_25</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_25/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 25.</num>
+					<alinea>
+						<content>
+							<p>Une commune peut se retirer du syndicat avec le consentement des deux tiers des autres communes membres. Celles-ci fixent, en accord avec le conseil communal intéressé, les conditions auxquelles s'opère le retrait.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les délibérations afférentes des conseils communaux sont soumises à l'approbation du Grand-Duc.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_26">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_26</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_26/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 26.</num>
+					<alinea>
+						<content>
+							<p>A moins que les statuts en disposent autrement, la dissolution d'un syndicat est opérée selon les règles ci-après:</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>En cas de dissolution avant terme ou de non-prorogation la ou les communes respectivement l'entité juridique appelée à exercer l'activité précédemment confiée au syndicat de communes est tenue de reprendre, à dire d'experts, les installations ou établissements du syndicat. Les biens reviennent cependant gratuitement à la commune ou aux communes dans la mesure où ils ont été financés par celle ou celles-ci. L'affectation des installations et établissements à usage commun ainsi que les charges y afférentes doivent faire l'objet d'un accord entre les parties. La commune qui se retire à l'échéance du terme lors que le syndicat de communes décide de se proroger a le droit de recevoir sa part dans le syndicat telle qu'elle résultera du bilan de l'exercice social au cours duquel le retrait devient effectif.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La reprise de l'activité du syndicat de communes par la ou les communes respectivement par une autre entité juridique ne prend cours qu'à partir du moment où tous les montants dus au syndicat de communes ont été effectivement payés à ce dernier. L'activité continue entre-temps à être exercée par celui-ci, étant donné qu'il est réputé exister pour sa liquidation.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Toutes les pièces qui émanent d'un syndicat de communes dissous mentionneront qu'il est en liquidation.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les éventuels conflits qui surgiraient lors de la dissolution du syndicat seront portés devant le tribunal administratif.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="titre_vii">
+				<num>TITRE VII</num><heading scl:separator="" scl:style-format="b"><br/>Dispositions transitoires et abrogatoires</heading>
+				<article id="art_27">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_27</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_27/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 27.</num>
+					<alinea>
+						<content>
+							<p>Toute disposition de statuts de syndicats de communes contraire à la présente loi est abrogée d'office à l'entrée en vigueur de la présente loi. Pour la bonne forme tous les syndicats existant au moment de l'entrée en vigueur de la présente loi et dont les statuts ne sont pas conformes aux dispositions de cette loi doivent se mettre en conformité lors de la première modification des statuts mais au plus tard trois ans après l'entrée en vigueur de la présente loi.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L'article 15 est appliqué sans préjudice pour les secrétaires-receveurs nommés avant la mise en vigueur de la présente loi.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La situation des secrétaires et receveurs nommés avant l'entrée en vigueur de la présente loi, et qui n'ont été engagés ni à temps plein ni à mi-temps, doit être régularisée dans les trois ans de cette entrée en vigueur.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_28">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_28</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/art_28/20010329</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2001-03-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 28.</num>
+					<alinea>
+						<content>
+							<p>Est abrogée la <ref href="/eli/etat/leg/loi/1900/02/14/n5/jo" id="8c06e663-6e33-4974-905d-eaaa20af8b52" scl:verify="true">loi du 14 février 1900</ref> concernant la création des syndicats de communes, telle qu'elle a été modifiée par la suite.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+		</body>
+	</act>
+</akomaNtoso>

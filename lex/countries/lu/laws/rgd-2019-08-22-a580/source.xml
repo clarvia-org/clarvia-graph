@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#somebody">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2019-08-22" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MEN"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2019-08-22" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2019-08-22" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/jo</scl:jolux><scl:jolux scl:name="publicationDate">2019-08-23</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="dateDocument">2019-08-22</scl:jolux><scl:jolux scl:name="dateEntryInForce">2019-08-27</scl:jolux><scl:jolux scl:name="dateApplicability">2022-10-16</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2019/a580</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/830</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/944</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/621</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/793</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/467</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/333</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/114</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/555</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/273</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/jo/fr</scl:jolux>
+<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 16/10/2022 : Règlement grand-ducal du 22 août 2019\n\n1) déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ;\n2) modifiant\n1. le règlement grand-ducal modifié du 7 avril 2011 déterminant 1. les conditions d’admission au stage, les modalités du stage ainsi que les conditions de nomination des éducateurs et éducateurs gradués intervenant dans l’enseignement fondamental ou affectés aux lycées, au Centre de psychologie et d’orientation scolaires, à l’Action locale pour jeunes, à l’École de la 2e Chance et au Centre national de formation professionnelle continue ; 2. les modalités de l’examen de promotion de l’éducateur ;\n2. le règlement grand-ducal du 30 septembre 2014 déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l’enseignement fondamental d’obtenir l’autorisation d’enseigner en tant qu’instituteur dans les quatre cycles ;\n3) abrogeant\n1. le règlement grand-ducal modifié du 11 juin 1985 portant fixation des indemnités dues aux membres des commissions pour les examens de fin de stage des enseignants de l’enseignement secondaire et de l’enseignement secondaire technique ;\n2. le règlement grand-ducal modifié du 3 août 2010 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l’enseignement postprimaire ;\n3. le règlement grand-ducal modifié du 16 mars 2012 déterminant pour les chargés d’éducation des lycées et lycées techniques 1. l’échelle d’évaluation par le directeur, 2. les modalités d’organisation et le programme de la formation en cours d’emploi, 3. les modalités d’obtention du certificat de qualification sanctionnant la formation en cours d’emploi ;\n4. le règlement grand-ducal du 23 août 2018 déterminant les modalités des épreuves et des formations théorique et pratique prévues à l’article 20bis de la loi modifiée du 6 février 2009 concernant le personnel de l’enseignement fondamental.\n</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="titleShort">Règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement. </scl:jolux>
+<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/2015/07/30/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/07/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2009/02/06/n4/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/1985/06/11/n2/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2010/08/03/n3/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2012/03/16/n6/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/08/25/n2/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/23/a793/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2019/a580/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">1</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2019-08-22-a580-jo-fr-xml.xml</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2019-08-22" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2022-10-16" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm7" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm8" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm9" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm10" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm11" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm12" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm13" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/rgd/2022/10/05/a515/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2019/08/14/n3/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2022/10/05/a515/jo" id="rp2" showAs="Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant  a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M3" marker="3" refersTo="pm3" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M4" marker="4" refersTo="pm4" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M5" marker="5" refersTo="pm5" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M6" marker="6" refersTo="pm6" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M7" marker="7" refersTo="pm7" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M8" marker="8" refersTo="pm8" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M9" marker="9" refersTo="pm9" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M10" marker="10" refersTo="pm10" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M11" marker="11" refersTo="pm11" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M12" marker="12" refersTo="pm12" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M13" marker="13" refersTo="pm13" title="A|2022-10-12|2022-10-05|RGD|515">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2022/10/05/a515/jo">Règlement grand-ducal du 5 octobre 2022 1° modifiant a) le règlement grand-ducal du 22 août 2019 déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; b) le règlement grand-ducal du 22 février 2021 fixant les programmes de la formation spéciale et les modalités de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive des fonctionnaires stagiaires relevant des différentes catégories de traitement auprès de l’Institut de formation de l’Éducation nationale ; et 2° abrogeant a) le règlement grand-ducal du 7 juin 2015 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l'enseignement postprimaire ; b) le règlement grand-ducal du 14 mars 2017 fixant les missions, les conditions et les modalités de l’affectation des instituteurs spécialisés en développement scolaire ; c) le règlement grand-ducal du 29 août 2017 déterminant les modalités d’admission au statut de fonctionnaire de l’État des employés de l’État relevant du sous-groupe enseignement.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle style="6">
+<p>Version consolidée applicable au 16/10/2022 : Règlement grand-ducal du 22 août 2019</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1)">
+<li>déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ;</li>
+<li>modifiant<ol ns3727365:start="1" ns3727365:symbol="1.">
+<li>le règlement grand-ducal modifié du 7 avril 2011 déterminant 1. les conditions d’admission au stage, les modalités du stage ainsi que les conditions de nomination des éducateurs et éducateurs gradués intervenant dans l’enseignement fondamental ou affectés aux lycées, au Centre de psychologie et d’orientation scolaires, à l’Action locale pour jeunes, à l’École de la 2<sup>e</sup> Chance et au Centre national de formation professionnelle continue ; 2. les modalités de l’examen de promotion de l’éducateur ;</li>
+<li>le règlement grand-ducal du 30 septembre 2014 déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l’enseignement fondamental d’obtenir l’autorisation d’enseigner en tant qu’instituteur dans les quatre cycles ; </li>
+</ol>
+</li>
+<li>abrogeant <ol ns3727365:start="1" ns3727365:symbol="1.">
+<li>le règlement grand-ducal modifié du 11 juin 1985 portant fixation des indemnités dues aux membres des commissions pour les examens de fin de stage des enseignants de l’enseignement secondaire et de l’enseignement secondaire technique ;</li>
+<li>le règlement grand-ducal modifié du 3 août 2010 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l’enseignement postprimaire ;</li>
+<li>le règlement grand-ducal modifié du 16 mars 2012 déterminant pour les chargés d’éducation des lycées et lycées techniques 1. l’échelle d’évaluation par le directeur, 2. les modalités d’organisation et le programme de la formation en cours d’emploi, 3. les modalités d’obtention du certificat de qualification sanctionnant la formation en cours d’emploi ;</li>
+<li>le règlement grand-ducal du 23 août 2018 déterminant les modalités des épreuves et des formations théorique et pratique prévues à l’article 20bis de la loi modifiée du 6 février 2009 concernant le personnel de l’enseignement fondamental.</li>
+</ol>
+</li>
+</ol>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_1er">
+<num>
+<b>Chapitre 1<sup>er</sup>
+</b> </num>
+<heading scl:separator="– "> <b>Référentiel des compétences professionnelles des enseignants stagiaires et des employés</b>
+</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_1er/20221016</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-10-16</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Conformément aux dispositions des articles 14 et 70 de la <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="c9f0d635-75d9-4843-a2ba-050e42599d71">loi modifiée du 30 juillet 2015</ref> portant création d’un Institut de formation de l’éducation nationale, dénommée ci-après « <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="806820ae-41c7-4f0b-b772-e9cf3c621319">loi du 30 juillet 2015</ref> », les neuf domaines de compétences professionnelles à développer pendant le stage des enseignants fonctionnaires et pendant <mod class="mod-start" for="#pm1"/>la période d’initiation<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/> des employés enseignants sont définis par un référentiel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les neuf domaines de compétences professionnelles sont constitués des compétences suivantes qui précisent les objectifs de formation et les critères d’évaluation :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+<li>Agir en professionnel :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Contribuer à l’éducation des élèves, affronter les dilemmes éthiques de la profession et faire preuve de conscience professionnelle<ol ns3727365:start="1" ns3727365:symbol="i)">
+<li>dans le respect de la personne et des convictions de chaque élève et des parents d’élèves ;</li>
+<li>dans le respect de la solidarité et de l’équité entre les élèves ;</li>
+<li>dans le respect de la liberté d’opinion ;</li>
+<li>dans le respect de la confidentialité liée à l’environnement professionnel (élèves, parents d’élèves, institution et personnel des établissements scolaires) ;</li>
+<li>dans son engagement à promouvoir l’épanouissement de l’élève.</li>
+</ol>
+</li>
+<li>Avoir le sens des responsabilités<ol ns3727365:start="1" ns3727365:symbol="i)">
+<li>dans le cadre des obligations réglementaires et des textes officiels en tant que fonctionnaire ou employé de l’État ;</li>
+<li>dans le suivi de l’évolution du système éducatif ;</li>
+<li>dans sa volonté de s’inscrire dans un processus de formation tout au long de la vie.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Inscrire son action dans une dynamique collective :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Participer au développement de l’établissement scolaire.</li>
+<li>Inscrire son action au-delà de l’espace-classe pour décloisonner l’apprentissage.</li>
+<li>Mobiliser les dispositifs d’aide - internes et externes à l’établissement scolaire - en cas de difficultés d’apprentissage.</li>
+</ol>
+</li>
+<li>Coopérer avec les parents d’élèves :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Instaurer une relation d’échange avec les parents d’élèves.</li>
+<li>Nourrir le dialogue d’éléments pertinents liés à l’évolution de l’élève.</li>
+</ol>
+</li>
+<li>Concevoir et mettre en œuvre des situations d’apprentissage :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Enseigner sur la base des principes d’une approche par compétences.</li>
+<li>Maîtriser les conditions d’un enseignement efficace et différencié.</li>
+</ol>
+</li>
+<li>Organiser le fonctionnement du groupe-classe :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Établir un cadre de travail stimulant et sécurisant propice à l’apprentissage.</li>
+<li>Organiser et gérer de manière efficace et équilibrée un groupe-classe.</li>
+</ol>
+</li>
+<li>Évaluer les apprentissages :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Placer l’évaluation au service des apprentissages.</li>
+<li>Communiquer les résultats des évaluations de façon compréhensible auprès de tous les acteurs concernés : élèves, parents d’élèves, équipes pédagogiques.</li>
+</ol>
+</li>
+<li>Maîtriser les savoirs psychopédagogiques et disciplinaires :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Maîtriser les bases du développement psychologique de l’enfant et de l’adolescent.</li>
+<li>Maîtriser les savoirs disciplinaires enseignés.</li>
+<li>Savoir mobiliser les compétences transversales.</li>
+</ol>
+</li>
+<li>Communiquer avec les élèves et les partenaires internes et externes à l’établissement scolaire :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Communiquer de manière régulière, consensuelle et cohérente dans le respect des règles d’usage, auprès des élèves et des partenaires internes et externes.</li>
+</ol>
+</li>
+<li>Maîtriser les technologies de l’information et de la communication appliquées à l’enseignement (TICE) :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Intégrer de manière adaptée les technologies de l’information et de la communication dans ses pratiques pédagogiques.</li>
+</ol>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_2/20221016</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-10-16</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Conformément aux dispositions des articles 15 et 71 de la <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="ed353295-01a3-4311-a48c-134c764ce288">loi du 30 juillet 2015</ref>, les neuf domaines de compétences professionnelles à développer pendant le stage des fonctionnaires du personnel éducatif et psycho-social ainsi que pendant <mod class="mod-start" for="#pm2"/>la période d’initiation<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/> des employés du personnel éducatif et psycho-social sont définis par un référentiel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les neuf domaines de compétences professionnelles sont constitués des compétences suivantes qui précisent les objectifs de formation et les critères d’évaluation :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+<li>Agir en professionnel :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Contribuer à l’éducation des enfants et des jeunes, affronter les dilemmes éthiques de la profession et faire preuve de conscience professionnelle<ol ns3727365:start="1" ns3727365:symbol="i)">
+<li>dans le respect de la personne et des convictions de chaque enfant, de chaque jeune ainsi que de leurs parents ;</li>
+<li>dans le respect de la solidarité et de l’équité entre les enfants et entre les jeunes ;</li>
+<li>dans le respect de la liberté d’opinion ;</li>
+<li>dans le respect de la confidentialité liée à l’environnement professionnel (enfants, jeunes, parents, institution et personnel des établissements) ;</li>
+<li>dans son engagement à promouvoir l’épanouissement de l’enfant ou du jeune.</li>
+</ol>
+</li>
+<li>Avoir le sens des responsabilités<ol ns3727365:start="1" ns3727365:symbol="i)">
+<li>dans le cadre des obligations réglementaires et des textes officiels en tant que fonctionnaire ou employé de l’État ;</li>
+<li>dans le suivi de l’évolution du système éducatif et psycho-social ;</li>
+<li>dans sa volonté de s’inscrire dans un processus de formation tout au long de la vie.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Inscrire son action pédagogique dans une dynamique collective :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Coopérer en équipe multiprofessionnelle.</li>
+<li>Participer au développement de l’équipe.</li>
+<li>Participer au développement conceptuel et organisationnel de l’établissement.</li>
+</ol>
+</li>
+<li>Développer les partenariats et instaurer un dialogue avec le milieu familial et social des enfants et des jeunes :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Planifier et mettre en œuvre dans un esprit de respect et d’ouverture des mesures de soutien adaptées aux familles en intégrant les ressources du milieu social.</li>
+<li>Communiquer avec les personnes issues du milieu familial et social des enfants et des jeunes.</li>
+</ol>
+</li>
+<li>Stimuler et soutenir les processus de développement des enfants et des jeunes :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Développer et gérer la relation pédagogique avec les enfants et les jeunes.</li>
+<li>Baser l’action éducative et psycho-sociale sur la compréhension du monde à travers le savoir, le savoir-faire et les valeurs.</li>
+<li>Développer la personnalité des enfants et des jeunes par le développement de leurs facultés de perception et d’expression motrices, langagières et créatives.</li>
+<li>Promouvoir le développement et l’éducation des enfants et des jeunes dans une vue inclusive et systémique.</li>
+<li>Favoriser la participation des enfants et des jeunes en basant son action professionnelle sur leurs intérêts et besoins.</li>
+<li>Organiser l’apprentissage des enfants et des jeunes en groupe sur un mode coopératif.</li>
+</ol>
+</li>
+<li>Considérer la pluralité des contextes sociaux et des biographies des enfants et des jeunes :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Considérer la diversité et l’individualité du développement de chaque enfant et jeune.</li>
+<li>Considérer les spécificités socio-économiques, linguistiques, culturelles, religieuses, familiales et sexuelles des enfants et des jeunes.</li>
+<li>Viser une participation équitable à la vie en société des enfants et des jeunes, indépendamment de leurs origines et de leurs milieux de vie.</li>
+</ol>
+</li>
+<li>Coopérer en réseau pour aménager les transitions :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Organiser les transitions dans le processus de développement des enfants et des jeunes.</li>
+<li>Coopérer avec les services d’aide socio-éducative.</li>
+</ol>
+</li>
+<li>Maîtriser les savoirs psychopédagogiques et disciplinaires :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Connaître les fondements du développement, de l’éducation et de la socialisation de l’enfant et de l’adolescent.</li>
+<li>Savoir observer et analyser les milieux de vie des enfants et des jeunes pour orienter son action socio-éducative aux ressources des enfants et des jeunes.</li>
+<li>Connaître les fondements de la dynamique des groupes.</li>
+</ol>
+</li>
+<li>Avoir une posture et une pratique réflexives par une réflexion dans et sur l’action :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Adopter une démarche réflexive sur son propre agir, en situation ou après l’action, pour mobiliser des savoirs théoriques à acquérir ou déjà acquis.</li>
+<li>S’intéresser à soi en tant qu’acteur dans toute situation professionnelle vécue pour mieux se connaître et mieux connaître sa manière d’agir dans des circonstances données.</li>
+</ol>
+</li>
+<li>Maîtriser les technologies de l’information et de la communication et les intégrer à l’exercice de la pratique professionnelle :<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>Intégrer de manière adaptée les technologies de l’information et de la communication dans ses pratiques professionnelles.</li>
+</ol>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_2">
+<num>
+<b>Chapitre 2 </b>
+</num>
+<heading scl:separator="– ">
+<b> Composition et fonctionnement de la commission de validation prévue à l’article 44 de la loi du 30 juillet 2015</b>
+</heading>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_3/20221016</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-10-16</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>La commission de validation prévue à l’article 44, paragraphe 7, de la <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="80183992-5bbb-4df5-9660-3f9f4f6ddea9">loi du 30 juillet 2015</ref> comprend :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+<li>le directeur de l’Institut ;<mod class="mod-start" for="#pm3"/>
+</li>
+<li>les trois responsables de division des stages de l’Institut ;<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/>
+</li>
+<li>quatre formateurs ;</li>
+<li>deux conseillers didactiques.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres de la commission de validation sont nommés par le ministre ayant l’Éducation nationale, l’Enfance et la Jeunesse dans ses attributions, ci-après « ministre », pour une durée de trois ans et leur mandat est renouvelable.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La commission ne peut délibérer valablement qu’en présence <mod class="mod-start" for="#pm4"/>d’au moins six de ses membres<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>. La commission de validation statue à la majorité des voix des membres présents. En cas de partage des voix, celle du directeur de l’Institut est prépondérante.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La commission de validation arrête son règlement interne sur approbation du ministre.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_3">
+<num>
+<b>Chapitre 3 </b>
+</num>
+<heading scl:separator="– "> <b>Composition et fonctionnement des commissions consultatives prévues au chapitre 2, section 19 de la loi du 30 juillet 2015</b>
+</heading>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_4/20221016</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-10-16</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les membres des commissions consultatives visées au chapitre 2, section 19, article 62 de la <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="eddf7969-c942-4b67-9a8e-c239bb894e33">loi du 30 juillet 2015</ref> sont nommés par le ministre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La commission consultative de réduction de stage et de dispense de formation des stagiaires visés à l’article 5 <mod class="mod-start" for="#pm5"/>et des employés visés à l’article 66, sous-groupe de l’enseignement fondamental,<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/> de la <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="a8274ba4-7206-42d8-b466-cbe91ab54241">loi du 30 juillet 2015</ref> comprend cinq membres :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+<li>deux représentants du ministre ;</li>
+<li>le directeur de l’Institut ;</li>
+<li>le <mod class="mod-start" for="#pm6"/>responsable<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M6" marker="6"/> de la division du stage des enseignants de l’enseignement fondamental de l’Institut ;</li>
+<li>un directeur de région.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La commission consultative de réduction de stage et de dispense de formation des stagiaires visés aux articles 6 et 7 <mod class="mod-start" for="#pm7"/>et des employés visés à l’article 66, sous-groupe de l’enseignement secondaire,<mod class="mod-end" for="#pm7"/>
+<noteRef href="#M7" marker="7"/> de la <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="136bafe9-31b3-4daa-8343-5ff2cd238c6d">loi du 30 juillet 2015</ref> comprend cinq membres :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+<li>deux représentants du ministre ;</li>
+<li>le directeur de l’Institut ;<mod class="mod-start" for="#pm8"/>
+</li>
+<li>le responsable de la division du stage des enseignants de l’enseignement secondaire et des formateurs d’adultes de l’Institut ;<mod class="mod-end" for="#pm8"/>
+<noteRef href="#M8" marker="8"/>
+</li>
+<li>un directeur d’établissement.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(4)</num>
+<alinea>
+<content>
+<p>La commission consultative de réduction de stage et de dispense de formation des stagiaires visés à l’article 8 <mod class="mod-start" for="#pm9"/>et des employés visés à l’article 67<mod class="mod-end" for="#pm9"/>
+<noteRef href="#M9" marker="9"/> de la <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="7563e11f-0556-4930-9682-23034aac2069">loi du 30 juillet 2015</ref> comprend six membres :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+<li>deux représentants du ministre ;</li>
+<li>le directeur de l’Institut ;</li>
+<li>le <mod class="mod-start" for="#pm10"/>responsable<mod class="mod-end" for="#pm10"/>
+<noteRef href="#M10" marker="10"/> de la division du stage du personnel éducatif et psycho-social de l’Institut ;</li>
+<li>un directeur de région ;</li>
+<li>un directeur d’établissement.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les membres des commissions consultatives sont nommés pour une durée de trois ans et leur mandat est renouvelable.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_5/20221016</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-10-16</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<paragraph id="paragraph_6">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le ministre désigne le président et le secrétaire de chacune des commissions consultatives.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les commissions prévues à l’article 4 paragraphes 2 et 3, ne peuvent délibérer valablement qu’en présence <mod class="mod-start" for="#pm11"/>d’au moins trois de leurs membres<mod class="mod-end" for="#pm11"/>
+<noteRef href="#M11" marker="11"/>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La commission prévue à l’article 4, paragraphe 4, ne peut délibérer valablement qu’en présence <mod class="mod-start" for="#pm12"/>d’au moins quatre de ses membres<mod class="mod-end" for="#pm12"/>
+<noteRef href="#M12" marker="12"/>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les commissions consultatives statuent à la majorité des voix des membres présents. En cas de partage des voix, celle du président est prépondérante.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Si elles le jugent nécessaire, les commissions peuvent s’adjoindre un ou plusieurs experts à titre consultatif.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les commissions consultatives arrêtent leur règlement interne sur approbation du ministre.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_4_20221016">
+<num>
+<b>
+<mod class="mod-start" for="#pm13"/>
+<del>Chapitre 4</del> </b>
+</num>
+<heading scl:separator=" ">
+<b>
+<del> Composition et fonctionnement de la commission consultative prévue à la section 9 du chapitre 3 de la loi du 30 juillet 2015</del>
+</b>
+</heading>
+<article id="art_6_20221016" style="del">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_6/20190901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<del>Art. 6.</del>
+</num>
+<paragraph id="paragraph_10">
+<num>
+<del>(1)</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>La commission consultative prévue au chapitre 3, section 9, article 88 de la <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="fb86dd65-badb-4854-b992-4d620c02739e">loi du 30 juillet 2015</ref> comprend cinq membres nommés par le ministre :</del>
+</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°" style="del">
+<li style="del">
+<del>un représentant du ministre ;</del>
+</li>
+<li style="del">
+<del>les trois chefs de division de l’Institut ;</del>
+</li>
+<li style="del">
+<del>le directeur de l’Institut.</del>
+</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>Les membres de la commission consultative sont nommés pour une durée de trois ans et leur mandat est renouvelable.</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>Le ministre désigne le président et le secrétaire de la commission consultative. La commission ne peut délibérer valablement qu’en présence de trois de ses membres. La commission consultative statue à la majorité des voix des membres présents. En cas de partage des voix, celle du président est prépondérante.</del>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>
+<del>(2)</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>Si elle le juge nécessaire, la commission peut s’adjoindre un ou plusieurs experts à titre consultatif.</del> </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>
+<del>(3)</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>La commission consultative arrête son règlement interne sur approbation du ministre.</del>
+<mod class="mod-end" for="#pm13"/>
+<noteRef href="#M13" marker="13"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_5">
+<num>
+<b>Chapitre 5 </b>
+</num>
+<heading scl:separator="– "> <b>Modification du règlement grand-ducal modifié du 7 avril 2011 déterminant 1. les conditions d’admission au stage, les modalités du stage ainsi que les conditions de nomination des éducateurs et éducateurs gradués intervenant dans l’enseignement fondamental ou affectés aux lycées, au Centre de psychologie et d’orientation scolaires, à l’Action locale pour jeunes, à l’École de la 2<sup>e</sup> Chance et au Centre national de formation professionnelle continue; 2. les modalités de l’examen de promotion de l’éducateur</b>
+</heading>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_7/20190901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>L’intitulé du <ref href="/eli/etat/leg/rgd/2011/04/07/n3/jo" id="30dffbc7-d888-49fc-93b6-1854a370fb2f">règlement grand-ducal modifié du 7 avril 2011</ref> déterminant 1. les conditions d’admission au stage, les modalités du stage ainsi que les conditions de nomination des éducateurs et éducateurs gradués intervenant dans l’enseignement fondamental ou affectés aux lycées, au Centre de psychologie et d’orientation scolaires, à l’Action locale pour jeunes, à l’École de la 2<sup>e</sup> Chance et au Centre national de formation professionnelle continue; 2. les modalités de l’examen de promotion de l’éducateur est remplacé par l’intitulé suivant :<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>« <ref href="/eli/etat/leg/rgd/2011/04/07/n3/jo" id="72a803c1-d424-4852-9b83-01cc709f6ed2">Règlement grand-ducal modifié du 7 avril 2011</ref> déterminant les modalités de l’examen de promotion de l’éducateur »</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_8/20190901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>L’article 1<sup>er</sup> du <ref href="/eli/etat/leg/rgd/2011/04/07/n3/jo" id="f9db2c9a-df7a-462c-88bd-03c5d64edf56">règlement grand-ducal modifié du 7 avril 2011</ref> déterminant les modalités de l’examen de promotion de l’éducateur est remplacé par la disposition suivante :<embeddedStructure>
+<article>
+<num>
+<u>Art. 1<sup>er</sup>.</u> </num>
+<heading>Champ d’application</heading>
+<alinea>
+<content>
+<p>Le présent règlement fixe les modalités de l’examen de promotion de l’éducateur intervenant dans les établissements scolaires et socio-éducatifs de l’Éducation nationale.</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_9/20190901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>Les articles 2 à 10 du même règlement grand-ducal sont abrogés.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_6">
+<num>
+<b>Chapitre 6 </b>
+</num>
+<heading scl:separator="– ">
+<b> Modification du règlement grand-ducal modifié du 30 septembre 2014 déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l’enseignement fondamental d’obtenir l’autorisation d’enseigner en tant qu’instituteur dans les quatre cycles</b>
+</heading>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_10/20190901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>À l’article 15, paragraphe 8, du <ref href="/eli/etat/leg/rgd/2014/09/30/n2/jo" id="4eeb4126-bee3-4be8-afad-8f1504203538">règlement grand-ducal modifié du 30 septembre 2014</ref> déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l’enseignement fondamental d’obtenir l’autorisation d’enseigner en tant qu’instituteur dans les quatre cycles, les termes <embeddedText>81, paragraphe 3</embeddedText> sont remplacés par ceux de <embeddedText>44, paragraphe 7</embeddedText>. </p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_7">
+<num>
+<b>Chapitre 7 </b>
+</num>
+<heading scl:separator="– ">
+<b>Dispositions abrogatoires</b>
+</heading>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_11/20190901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>Sont abrogés : </p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+<li>le <ref href="/eli/etat/leg/rgd/1985/06/11/n2/jo" id="8a98f850-9eae-4222-b7ac-1993f2c5c0fe">règlement grand-ducal modifié du 11 juin 1985</ref> portant fixation des indemnités dues aux membres des commissions pour les examens de fin de stage des enseignants de l’enseignement secondaire et de l’enseignement secondaire technique ;</li>
+<li>le <ref href="/eli/etat/leg/rgd/2010/08/03/n3/jo" id="4242bea4-c323-4e53-a1b9-f0bb2aa60ab5">règlement grand-ducal modifié du 3 août 2010</ref> concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l’enseignement postprimaire ; </li>
+<li>le <ref href="/eli/etat/leg/rgd/2012/03/16/n6/jo" id="91d9e405-760a-4731-87ca-99f29311df3c">règlement grand-ducal modifié du 16 mars 2012</ref> déterminant pour les chargés d’éducation des lycées et lycées techniques 1. l’échelle d’évaluation par le directeur, 2. les modalités d’organisation et le programme de la formation en cours d’emploi, 3. les modalités d’obtention du certificat de qualification sanctionnant la formation en cours d’emploi ;</li>
+<li>le <ref href="/eli/etat/leg/rgd/2015/08/25/n2/jo" id="d802db90-847f-421b-b0f5-88a1318d7f2c">règlement grand-ducal modifié du 25 août 2015</ref> déterminant 1. le référentiel des compétences professionnelles, 2. les décharges accordées aux enseignants stagiaires, aux employés et aux intervenants, 3. la composition et le fonctionnement des jurys et commissions d’évaluation, 4. la composition et le fonctionnement des commissions de validation, 5. les indemnités des évaluateurs, des membres de jurys et de la commission du bilan de fin de formation à la pratique professionnelle, 6. la composition et le fonctionnement des commissions consultatives du stage des fonctionnaires-stagiaires et de la période de stage des employés de l’Éducation nationale ;</li>
+<li>le <ref href="/eli/etat/leg/rgd/2018/08/23/a793/jo" id="cac01ba4-1925-4dfe-ac63-2d817c22e148">règlement grand-ducal du 23 août 2018</ref> déterminant les modalités des épreuves et des formations théorique et pratique prévues à l’article 20bis de la <ref href="/eli/etat/leg/loi/2009/02/06/n4/jo" id="1336749c-0aeb-48d2-b6cf-3f9d523f25bd">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_8">
+<num>
+<b>Chapitre 8 </b>
+</num>
+<heading scl:separator="–"> <b>Dispositions finales</b>
+</heading>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_12/20190901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>La référence au présent règlement se fait sous la forme suivante : « <ref href="???" scl:verify="true">règlement grand-ducal du 22 août 2019</ref> déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement. »</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_13/20190901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>Le présent règlement entre en vigueur le 1<sup>er</sup> septembre 2019.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580/art_14/20190901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2019/08/22/a580</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>Notre ministre ayant l’Éducation nationale, l’Enfance et la Jeunesse dans ses attributions est chargé de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

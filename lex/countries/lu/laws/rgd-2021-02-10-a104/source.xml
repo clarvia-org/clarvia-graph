@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="" scl:page-proof="many">
+		<meta>
+			<identification source="#somebody">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2021-02-10" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MS"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2021-02-10" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2021-02-10" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2021-04-15</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2021-02-10</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2021-03-09</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-03-09</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2021/a104</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MS</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3360</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3299</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3303</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3300</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3123</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3359</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1002</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/906</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1001</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3104</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3189</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3170</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/4064</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/949</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 09/03/2021 : Règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2 et abrogeant le règlement grand-ducal du 3 novembre 2020 fixant les conditions de réalisation de prélèvements nasopharyngés, oropharyngés, buccaux ou salivaires afin de réaliser des tests diagnostiques ou de dépistage de l’infection par virus SARS-CoV-2.</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="titleShort">Règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2.</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/1984/07/16/n1/jo</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/1990/01/16/n1/jo</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/2018/08/01/a705/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2017/06/16/a592/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1992/03/26/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2020/11/03/a882/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309/fr</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2021-02-10-a104-consolide-20210309-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/consolide/20210309/fr</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2021-02-10-a104-consolide-20210309-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2021-02-10" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2021-03-09" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2021/03/05/a173/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2021/03/05/a173/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2021/03/05/a173/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2021/03/05/a173/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2021/03/05/a173/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2021/03/05/a173/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2021/03/05/a173/jo"/>
+						<destination/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2021/02/10/a104/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2021/03/05/a173/jo" id="rp2" showAs="Règlement grand-ducal du 5 mars 2021 modifiant le règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2021-03-05|2021-03-05|RGD|173">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/03/05/a173/jo">Règlement grand-ducal du 5 mars 2021 modifiant le règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2021-03-05|2021-03-05|RGD|173">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/03/05/a173/jo">Règlement grand-ducal du 5 mars 2021 modifiant le règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2021-03-05|2021-03-05|RGD|173">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/03/05/a173/jo">Règlement grand-ducal du 5 mars 2021 modifiant le règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2021-03-05|2021-03-05|RGD|173">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/03/05/a173/jo">Règlement grand-ducal du 5 mars 2021 modifiant le règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2021-03-05|2021-03-05|RGD|173">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/03/05/a173/jo">Règlement grand-ducal du 5 mars 2021 modifiant le règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2021-03-05|2021-03-05|RGD|173">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/03/05/a173/jo">Règlement grand-ducal du 5 mars 2021 modifiant le règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2021-03-05|2021-03-05|RGD|173">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/03/05/a173/jo">Règlement grand-ducal du 5 mars 2021 modifiant le règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 09/03/2021 : Règlement grand-ducal du 10 février 2021 fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2 et abrogeant le règlement grand-ducal du 3 novembre 2020 fixant les conditions de réalisation de prélèvements nasopharyngés, oropharyngés, buccaux ou salivaires afin de réaliser des tests diagnostiques ou de dépistage de l’infection par virus SARS-CoV-2.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_1er">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_1er</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_1er/20210309</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-03-09</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 1<sup>er</sup>.</num>
+				<alinea>
+					<content>
+						<p>Au sens du présent règlement, on entend par :</p>
+						<ol scl:space-item="5" scl:space-num="5" scl:start="1" scl:symbol="1°">
+							<li>« prélèvement », le prélèvement nasopharyngé, oropharyngé, buccal ou salivaire à des fins de dépistage ou diagnostiques du virus SARS-CoV-2 ;</li>
+							<li>« test rapide », un test manuel à orientation diagnostique de l’infection au virus SARS-CoV-2 et utilisant une technique d’analyse simplifiée consistant en un prélèvement qui sera ensuite déposé sur une bandelette ou un tube contenant un réactif.</li>
+						</ol>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>
+							<mod class="mod-start" for="#pm1"/>Le <ref href="http://legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/jo" id="c2ef4207-9cb2-461a-badc-d7cab421a639">présent règlement</ref> ne s’applique pas aux dispositifs d’autodiagnostic servant au dépistage du SARS-CoV-2 et que le fabriquant destine à être utilisés par une personne profane.<mod class="mod-end" for="#pm1"/>
+							<noteRef href="#M1" marker="1"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_2">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_2/20210215</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-02-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 2.</num>
+				<alinea>
+					<content>
+						<p>Un prélèvement peut être réalisé chez toute personne, soit dans son intérêt et pour son seul bénéfice, soit dans un objectif de santé publique, après l’avoir informée et avoir recueilli son consentement libre et éclairé. </p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>L’information visée à l’alinéa 1<sup>er</sup> porte sur l’objectif et le déroulement du test, ainsi que sur la méthode de communication du résultat et la procédure qui sera suivie en cas de test positif.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_3">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_3</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_3/20210309</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-03-09</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 3.</num>
+				<paragraph id="paragraph_1">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Sont autorisés à réaliser un prélèvement au sens de l’article 1<sup>er</sup>, point 1°, nécessaire pour réaliser l’examen de détection du génome du SARS-CoV-2 par le test RT-PCR :</p>
+							<ol scl:space-item="5" scl:start="1" scl:symbol="custom">
+								<li scl:symbol="1° ">les médecins <mod class="mod-start" for="#pm2"/>;<mod class="mod-end" for="#pm2"/>
+									<noteRef href="#M2" marker="2"/>
+								</li>
+								<li scl:symbol="2° ">les personnes exerçant une profession de santé telle que visée par la <ref href="/eli/etat/leg/loi/1992/03/26/n1/jo" id="56e43c00-9cab-48ad-ad57-64c688ce5231">loi modifiée du 26 mars 1992</ref> sur l’exercice et la revalorisation de certaines professions de santé ; </li>
+								<li scl:symbol="3° ">
+									<mod class="mod-start" for="#pm3"/>les pharmaciens ; <mod class="mod-end" for="#pm3"/>
+									<noteRef href="#M3" marker="3"/>
+								</li>
+								<li scl:symbol="4° ">
+									<mod class="mod-start" for="#pm4"/>les psychothérapeutes ;<mod class="mod-end" for="#pm4"/>
+									<noteRef href="#M4" marker="4"/>
+								</li>
+								<li scl:symbol="5° ">
+									<mod class="mod-start" for="#pm5"/>les psychologues ; <mod class="mod-end" for="#pm5"/>
+									<noteRef href="#M5" marker="5"/>
+								</li>
+								<li scl:symbol="6° ">
+									<mod class="mod-start" for="#pm6"/>les pompiers volontaires ou professionnels affectés au Corps grand-ducal d’incendie et de secours.<mod class="mod-end" for="#pm6"/>
+									<noteRef href="#M6" marker="6"/>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_2">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Préalablement à la réalisation d’un prélèvement, les personnes visées à l’article 3, points 2° à 5° doivent avoir subi une formation validée par le ministre ayant la Santé dans ses attributions. Le contenu de cette formation est fixé à l’annexe I du présent règlement grand-ducal.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_4">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_4</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_4/20210215</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-02-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 4.</num>
+				<paragraph id="paragraph_3">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les tests rapides au sens de l’article 1<sup>er</sup>, point 2°, peuvent être réalisés par toute personne physique à condition qu’elle ait reçu une formation validée par le ministre ayant la Santé dans ses attributions, et dont le contenu est fixé à l’annexe II du présent règlement grand-ducal.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La validation de la formation vaut habilitation à réaliser les tests rapides dans un intérêt de santé publique et pour le compte de la Direction de la santé.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_4">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Par dérogation à l’article 2, alinéa 1<sup>er</sup>, les personnes visées au paragraphe 1<sup>er</sup> ne peuvent réaliser des prélèvements dans le cadre des tests rapides pour détecter une infection au virus SARS.CoV-2 que sur des mineurs de 15 ans accomplis ou plus au moment de la réalisation du test.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_5">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Les tests rapides au sens de l’article 1<sup>er</sup>, point 2°, sont des tests nominatifs.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_6">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>Toute personne qui, lors de la réalisation d’un test rapide au sens de l’article 1<sup>er</sup>, point 2°, constate un résultat positif, est tenue d’en faire la déclaration le jour même au directeur de la santé ou à son délégué. Cette déclaration comprend au moins les données individuelles suivantes : </p>
+							<ol scl:space-item="5" scl:space-num="5" scl:start="1" scl:symbol="1°">
+								<li>nom, prénom et adresse du patient ;</li>
+								<li>date de naissance du patient ; </li>
+								<li>date du test ;</li>
+								<li>date des premiers symptômes ; </li>
+								<li>source d’infection, si celle-ci est connue.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_5">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_5</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_5/20210215</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-02-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 5.</num>
+				<alinea>
+					<content>
+						<p>Le <ref href="/eli/etat/leg/rgd/2020/11/03/a882/jo" id="4e521bc7-32b3-415c-b6f4-ac1ffffdfe74">règlement grand-ducal du 3 novembre 2020</ref> fixant les conditions de réalisation de prélèvements nasopharyngés, oropharyngés, buccaux ou salivaires afin de réaliser des tests diagnostiques ou de dépistage de l’infection par virus SARS-CoV-2, est abrogé. </p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_6">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_6</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_6/20210215</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-02-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 6.</num>
+				<alinea>
+					<content>
+						<p>La référence au présent règlement grand-ducal se fait sous la forme suivante : « <ref href="???" scl:verify="true">règlement grand-ducal du 10 février 2021</ref> fixant les conditions de réalisation des tests de dépistage ou diagnostique de l’infection par virus SARS-CoV-2 ».</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_7">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_7</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104/art_7/20210215</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/02/10/a104</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-02-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 7.</num>
+				<alinea>
+					<content>
+						<p>Le ministre ayant la Santé dans ses attributions est chargé de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+					</content>
+				</alinea>
+			</article>
+		</body>
+		<attachments>
+			<attachment id="attachment_1">
+				<doc name="">
+					<meta>
+						<identification source="">
+							<FRBRWork>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2021-02-09" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRcountry value=""/>
+							</FRBRWork>
+							<FRBRExpression>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2021-02-09" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRlanguage language=""/>
+							</FRBRExpression>
+							<FRBRManifestation>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2021-02-09" name=""/>
+								<FRBRauthor href=""/>
+							</FRBRManifestation>
+						</identification>
+					</meta>
+					<preface>
+						<longTitle>
+							<p>
+								<b>Annexe I</b>
+							</p>
+						</longTitle>
+					</preface>
+					<mainBody>
+						<alinea>
+							<content>
+								<p>
+									<b>
+										<i>Formation théorique</i>
+									</b>
+								</p>
+								<ul scl:symbol="dash">
+									<li>Notions d’anatomie et de physiologie de la sphère ORL (20 minutes)</li>
+									<li>Notions de prévention des maladies infectieuses et d’hygiène (20 minutes)</li>
+									<li>Notions de virologie et de biologie moléculaire (20 minutes)</li>
+								</ul>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<b>
+										<i>Formation pratique</i>
+									</b>
+								</p>
+								<ul scl:symbol="dash">
+									<li>Apprentissage pratique du geste de prélèvement sous supervision par une personne expérimentée (3 heures)</li>
+								</ul>
+							</content>
+						</alinea>
+					</mainBody>
+				</doc>
+			</attachment>
+			<attachment id="attachment_2">
+				<doc name="">
+					<meta>
+						<identification source="">
+							<FRBRWork>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2021-02-09" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRcountry value=""/>
+							</FRBRWork>
+							<FRBRExpression>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2021-02-09" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRlanguage language=""/>
+							</FRBRExpression>
+							<FRBRManifestation>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2021-02-09" name=""/>
+								<FRBRauthor href=""/>
+							</FRBRManifestation>
+						</identification>
+					</meta>
+					<preface>
+						<longTitle>
+							<p>
+								<b>Annexe II</b>
+							</p>
+						</longTitle>
+					</preface>
+					<mainBody>
+						<alinea>
+							<content>
+								<p>
+									<b>
+										<i>Formation en six modules thématiques</i>
+									</b>, à savoir : </p>
+								<ul scl:symbol="dash">
+									<li>La base réglementaire et les recommandations</li>
+									<li>
+										<mod class="mod-start" for="#pm7"/>La<mod class="mod-end" for="#pm7"/>
+										<noteRef href="#M7" marker="7"/> mise en place et la gestion d’un espace de test</li>
+									<li>Les étapes avant le test (EPI)</li>
+									<li>Le contenu et l’utilisation du kit </li>
+									<li>La logistique après le test</li>
+									<li>La lecture et l’interprétation des résultats (60 minutes en tout) </li>
+								</ul>
+							</content>
+						</alinea>
+					</mainBody>
+				</doc>
+			</attachment>
+		</attachments>
+	</act>
+</akomaNtoso>

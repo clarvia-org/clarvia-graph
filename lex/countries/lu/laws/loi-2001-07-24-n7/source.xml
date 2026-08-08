@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#2001A20401">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2001-07-24" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MAC"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2001-07-24" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2001-07-24" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo</scl:jolux><scl:jolux scl:name="dateEndApplicability"/><scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="dateDocument">2001-07-24</scl:jolux><scl:jolux scl:name="publicationDate">2001-08-20</scl:jolux><scl:jolux scl:name="historicalLegalId">2001A20401</scl:jolux><scl:jolux scl:name="dateEntryInForce">2001-08-23</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/103</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MAC</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/817</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/459</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo/fr</scl:jolux>
+<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 23/12/2022 : Loi du 24 juillet 2001 portant création d'un établissement public nommé Centre Culturel de Rencontre Abbaye de Neumünster.</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Loi du 24 juillet 2001 portant création d'un établissement public nommé Centre Culturel de Rencontre Abbaye de Neumünster.</scl:jolux>
+<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/PL/20000123</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1984/06/28/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/loi/1967/12/04/n1/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/103/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">2040</scl:jolux>
+<scl:jolux scl:name="memorialSequence">1</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2001-07-24-n7-jo-fr-xml.xml</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/103/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">2040</scl:jolux>
+<scl:jolux scl:name="memorialSequence">1</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2001/a103/fr/pdf/eli-etat-leg-memorial-2001-a103-fr-pdf.pdf</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2001-07-24" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2003-05-18" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2010-02-23" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2022-12-23" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2003/04/25/n2/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2009/12/18/n17/jo"/>
+<destination href="#art_8"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2009/12/18/n17/jo"/>
+<destination href="#art_8"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2022/12/16/a635/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2001/07/24/n7/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2022/12/16/a635/jo" id="rp2" showAs="Loi du 16 décembre 2022 portant création d’un établissement public nommé « Kultur | lx - Arts Council Luxembourg » et instauration d’un régime d’aides financières et portant modification : 1° de la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 2° de la loi modifiée du 24 juillet 2001 portant création d’un établissement public nommé « Centre Culturel de Rencontre Abbaye de Neumünster » ; 3° de la loi du 26 mai 2004 portant création d’un établissement public nommé « Centre de Musiques Amplifiées » ; 4° de la loi du 16 décembre 2011 portant réorganisation de l’établissement public nommé « Salle de concerts Grande-Duchesse Joséphine-Charlotte » et de la Fondation Henri Pensis. "/>
+<passiveRef href="/eli/etat/leg/loi/2009/12/18/n17/jo" id="rp3" showAs="Loi du 18 décembre 2009 relative à la profession de l'audit et: – portant transposition de la directive 2006/43/CE du Parlement européen et du Conseil du 17 mai 2006 concernant les contrôles légaux des comptes annuels et des comptes consolidés et modifiant les directives 78/660/CEE et 83/349/CEE du Conseil, et abrogeant la directive 84/253/CEE du Conseil, – portant organisation de la profession de l'audit, – modifiant certaines autres dispositions légales, et – portant abrogation de la loi modifiée du 28 juin 1984 portant organisation de la profession de réviseur d'entreprises."/>
+<passiveRef href="/eli/etat/leg/loi/2003/04/25/n2/jo" id="rp4" showAs="Loi du 25 avril 2003 modifiant  1) la loi du 19 avril 1996 autorisant le Gouvernement à participer comme membre fondateur, à accorder une aide financière annuelle à la  Fondation Henri Pensis  et modifiant la loi du 4 décembre 1967 concernant l'impôt sur le revenu  2) la loi du 9 janvier 1998 portant transposition de la directive 93/7/CEE du 15 mars 1993 relative à la restitution des biens culturels ayant quitté illicitement le territoire d'un Etat membre de l'Union européenne et transposition de la directive 2001/38/CE du 5 juin 2001 modifiant la directive prémentionnée  3) loi du 24 juillet 2001 portant création d'un établissement public nommé  Centre Culturel de Rencontre Abbaye de Neumünster ."/>
+</references>
+<notes scl:type="modification" source="#rp4">
+<note id="M1" marker="1" refersTo="pm1" title="A|2003-05-14|2003-04-25|L|64">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2003/04/25/n2/jo">Loi du 25 avril 2003 modifiant 1) la loi du 19 avril 1996 autorisant le Gouvernement à participer comme membre fondateur, à accorder une aide financière annuelle à la Fondation Henri Pensis et modifiant la loi du 4 décembre 1967 concernant l'impôt sur le revenu 2) la loi du 9 janvier 1998 portant transposition de la directive 93/7/CEE du 15 mars 1993 relative à la restitution des biens culturels ayant quitté illicitement le territoire d'un Etat membre de l'Union européenne et transposition de la directive 2001/38/CE du 5 juin 2001 modifiant la directive prémentionnée 3) loi du 24 juillet 2001 portant création d'un établissement public nommé Centre Culturel de Rencontre Abbaye de Neumünster .</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M2" marker="2" refersTo="pm2" title="A|2010-02-19|2009-12-18|L|22">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2009/12/18/n17/jo">Loi du 18 décembre 2009 relative à la profession de l'audit et: – portant transposition de la directive 2006/43/CE du Parlement européen et du Conseil du 17 mai 2006 concernant les contrôles légaux des comptes annuels et des comptes consolidés et modifiant les directives 78/660/CEE et 83/349/CEE du Conseil, et abrogeant la directive 84/253/CEE du Conseil, – portant organisation de la profession de l'audit, – modifiant certaines autres dispositions légales, et – portant abrogation de la loi modifiée du 28 juin 1984 portant organisation de la profession de réviseur d'entreprises.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M3" marker="3" refersTo="pm3" title="A|2010-02-19|2009-12-18|L|22">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2009/12/18/n17/jo">Loi du 18 décembre 2009 relative à la profession de l'audit et: – portant transposition de la directive 2006/43/CE du Parlement européen et du Conseil du 17 mai 2006 concernant les contrôles légaux des comptes annuels et des comptes consolidés et modifiant les directives 78/660/CEE et 83/349/CEE du Conseil, et abrogeant la directive 84/253/CEE du Conseil, – portant organisation de la profession de l'audit, – modifiant certaines autres dispositions légales, et – portant abrogation de la loi modifiée du 28 juin 1984 portant organisation de la profession de réviseur d'entreprises.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M4" marker="4" refersTo="pm4" title="A|2022-12-19|2022-12-16|L|635">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/12/16/a635/jo">Loi du 16 décembre 2022 portant création d’un établissement public nommé « Kultur | lx - Arts Council Luxembourg » et instauration d’un régime d’aides financières et portant modification : 1° de la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 2° de la loi modifiée du 24 juillet 2001 portant création d’un établissement public nommé « Centre Culturel de Rencontre Abbaye de Neumünster » ; 3° de la loi du 26 mai 2004 portant création d’un établissement public nommé « Centre de Musiques Amplifiées » ; 4° de la loi du 16 décembre 2011 portant réorganisation de l’établissement public nommé « Salle de concerts Grande-Duchesse Joséphine-Charlotte » et de la Fondation Henri Pensis.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 23/12/2022 : Loi du 24 juillet 2001 portant création d'un établissement public nommé « Centre Culturel de Rencontre Abbaye de Neumünster ».</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_1er/20010823</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2001-08-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Il est créé un établissement public sous la dénomination «Centre Culturel de Rencontre Abbaye de Neumünster», ci-après désigné «établissement».</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'établissement dispose de la personnalité juridique et jouit de l'autonomie financière et administrative, sous la tutelle du ministre ayant la culture dans ses attributions.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le siège de l'établissement est fixé à Luxembourg.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_2/20010823</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2001-08-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L'établissement a pour mission:</p>
+<ul scl:symbol="dash">
+<li>de mettre en place et de développer au sein de l'ancienne abbaye de Neumünster, réhabilitée et mise en valeur, un Centre Culturel porteur d'un projet culturel et artistique autour du thème de l'identité culturelle luxembourgeoise et de sa rencontre avec les autres cultures;</li>
+<li>de promouvoir le contact entre les acteurs culturels et socio-culturels luxembourgeois et étrangers d'une part, ainsi que le contact entre ces acteurs et le public d'autre part;</li>
+<li>d'assurer une activité de production artistique, culturelle et intellectuelle et d'en promouvoir une large diffusion;</li>
+<li>de développer à l'intention d'un large public une importante capacité d'accueil et de services.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>A cet effet, il est appelé à:</p>
+<ul scl:symbol="dash">
+<li>accueillir dans des cadres appropriés des artistes et créateurs luxembourgeois et étrangers en leur offrant la possibilité d'y être hébergés et d'y travailler;</li>
+<li>mettre à disposition des instituts et associations à vocation culturelle et socioculturelle des localités pour leur permettre de développer leurs activités notamment à caractère interrégional et international;</li>
+<li>organiser, coproduire et promouvoir des manifestations et spectacles culturels, socio-culturels ou autres;</li>
+<li>organiser et promouvoir des conférences et des séminaires;</li>
+<li>collaborer au sein de réseaux culturels européens et internationaux;</li>
+<li>gérer et exploiter dans le cadre des missions lui attribuées les immeubles mis à sa disposition par l'Etat, à savoir l'ancienne abbaye Neumünster et ses annexes, inscrites au cadastre de la Ville de Luxembourg suivant relevé joint en annexe à la présente loi dont il fait partie intégrante.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>En vue de l'exécution de sa mission, l'établissement est autorisé à conclure des conventions avec des personnes physiques ou morales, à s'associer avec des partenaires des secteurs public ou privé, personnes physiques ou morales, ainsi qu'à adhérer à des organisations nationales ou internationales.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_3/20010823</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2001-08-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<paragraph id="paragraph_4">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L'établissement est administré par un conseil d'administration de neuf membres nommés et révoqués par le Grand-Duc sur proposition du Conseil de Gouvernement dont:</p>
+<ul scl:symbol="dash">
+<li>quatre membres représentant le ministre de tutelle;</li>
+<li>un membre représentant le ministre ayant le budget dans ses attributions;</li>
+<li>trois membres choisis par le ministre de tutelle parmi des personnalités de la société civile compétentes en matière culturelle et de gestion d'entreprise;</li>
+<li>un représentant de la Ville de Luxembourg.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Ne peuvent devenir membres du conseil d'administration le ou les fonctionnaires qui, en vertu de leurs fonctions, sont appelés à surveiller ou à contrôler l'établissement ou qui, en vertu des pouvoirs leur délégués, approuvent des actes administratifs de l'établissement ou signent des ordonnances de paiement ou toute autre pièce administrative entraînant une dépense de l'Etat en faveur de l'établissement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le président et le vice-président du conseil d'administration sont désignés par le Conseil de Gouvernement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le conseil d'administration peut choisir un secrétaire administratif hors de son sein.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les membres du conseil d'administration sont nommés pour un terme de cinq ans, renouvelable à son terme.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le conseil d'administration peut à tout moment être révoqué par le Grand-Duc. Par ailleurs, le Grand-Duc peut révoquer un membre avant l'expiration de son mandat sur proposition du ministre de tutelle, le conseil d'administration entendu en son avis.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(7)</num>
+<alinea>
+<content>
+<p>En cas de démission, de décès ou de révocation avant terme du mandat d'un administrateur, il est pourvu à son remplacement par la nomination d'un nouveau membre qui achève le mandat de celui qu'il remplace. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(8)</num>
+<alinea>
+<content>
+<p>Le conseil d'administration a la faculté de recourir à l'avis d'experts s'il le juge nécessaire. Les experts peuvent assister avec voix consultative aux réunions du conseil d'administration, si celui-ci le leur demande.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>(9)</num>
+<alinea>
+<content>
+<p>Les indemnités et jetons de présence des membres et participants aux réunions du conseil d'administration sont fixés par le Conseil de Gouvernement et sont à charge de l'établissement.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_4/20010823</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2001-08-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>Le conseil d'administration se réunit sur convocation de son président aussi souvent que les intérêts de l'établissement l'exigent. Il doit être convoqué à la demande de deux de ses membres et au moins une fois tous les trois mois. Le délai de convocation est de cinq jours, sauf le cas d'urgence à apprécier par le président. La convocation indique l'ordre du jour.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le conseil d'administration ne peut valablement délibérer que si la majorité de ses membres est présente et il décide à la majorité simple des voix des membres présents. En cas d'égalité des voix, le vote de celui qui assure la présidence est prépondérant.</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_5/20010823</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2001-08-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Le conseil d'administration prend toutes les décisions en relation avec la gestion de l'établissement, sous réserve de l'approbation du ministre de tutelle pour ce qui est des points suivants: </p>
+<ol scl:symbol="a)">
+<li>la politique générale de l'établissement dans l'accomplissement de sa mission;</li>
+<li>l'engagement et le licenciement du directeur et du personnel dirigeant;</li>
+<li>la grille des emplois et leur classification ainsi que le niveau de rémunération du personnel;</li>
+<li>l'acceptation et le refus des dons et legs;</li>
+<li>les budgets d'exploitation et d'investissement et les comptes de fin d'exercice;</li>
+<li>les acquisitions, aliénations et échanges d'immeubles et leur affectation, les travaux de construction et les grosses réparations ainsi que les conditions de baux à contracter;</li>
+<li>les conventions à conclure avec l'Etat;</li>
+<li>les actions judiciaires qui sont intentées et défendues au nom de l'établissement par le président du conseil d'administration qui représente l'établissement dans tous les actes publics et privés.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le conseil d'administration élabore un règlement d'ordre intérieur déterminant les modalités de son fonctionnement. Ce règlement est soumis à l'approbation du ministre de tutelle.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le conseil d'administration arrête annuellement le budget de l'établissement et le soumet au ministre de tutelle avant le premier avril de l'année précédant l'exercice en question.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_6/20010823</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2001-08-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Le conseil d'administration est assisté par du personnel qui est lié à l'établissement par un contrat de louage de services de droit privé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le conseil d'administration définit les attributions administratives et financières du directeur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur assiste aux réunions du conseil d'administration avec voix consultative sur demande du conseil d'administration.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_6bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_6bis/20221223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm4"/>
+<u>Art. 6<i>bis</i>
+</u>.
+</num>
+<paragraph id="paragraph_18">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le développement de l’établissement fait l’objet d’une convention pluriannuelle. La convention pluriannuelle est conclue entre l’État et l’établissement pour une durée de quatre ans. Cette convention pluriannuelle est établie sur la base d’un programme pluriannuel arrêté par le conseil d’administration et portant sur sa politique générale, ses choix stratégiques, ses objectifs, ses indicateurs de performance, ses activités et son organisation interne. Elle détermine les moyens financiers et les effectifs en personnel nécessaires pour la mise en œuvre des activités de l’établissement et définit les engagements financiers de l’État.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_19">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le directeur rend compte régulièrement au conseil d’administration de l’exécution des engagements contractés par l’établissement dans le cadre de la convention pluriannuelle.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_20">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Un rapport sur l’exécution de la convention pluriannuelle est adressé annuellement au ministre de tutelle.<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_7/20010823</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2001-08-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Les ressources de l'établissement sont notamment: </p>
+<ol scl:symbol="a)">
+<li>des recettes pour prestations et services fournis;</li>
+<li>des contributions financières, allouées à charge du budget de l'Etat, à titre de participation aux frais de fonctionnement de l'établissement;</li>
+<li>des dons et legs en espèce et en nature;</li>
+<li>des revenus provenant de la gestion de son patrimoine.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_8/20100223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2010-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<paragraph id="paragraph_13">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les comptes de l'établissement sont tenus selon les principes et les modalités de la comptabilité commerciale. L'exercice coïncide avec l'année civile. A la clôture de chaque exercice, le directeur établit un projet de bilan et un projet de compte de profits et pertes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_14">
+<num>(2)</num>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm2"/>Un réviseur d’entreprises agréé, désigné par le Gouvernement en conseil, est chargé de contrôler les comptes de l’établissement et la régularité des opérations effectuées et des écritures comptables.<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/> Le réviseur d'entreprise doit remplir les conditions requises par la <ref href="/eli/etat/leg/loi/1984/06/28/n2/jo" id="c77a16c2-12ba-4523-a38e-e219cbc0f1fe" scl:verify="true">loi du 28 juin 1984</ref> portant organisation de la profession de réviseur d'entreprise. Son mandat est d'une durée de trois ans et il est renouvelable. Sa rémunération est à charge de l'établissement. Il remet son rapport au conseil d'administration pour le quinze mars. Il peut être chargé par le conseil d'administration de procéder à des vérifications spécifiques.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(3)</num>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm3"/>Pour le premier mai au plus tard, le conseil d’administration présente au Gouvernement les comptes de fin d’exercice accompagnés d’un rapport circonstancié sur la situation et le fonctionnement de l’établissement, ainsi que du rapport du réviseur d’entreprises agréé.<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(4)</num>
+<alinea>
+<content>
+<p>La décharge du conseil d'administration est donnée par le Gouvernement en conseil et elle est acquise de plein droit si ce dernier n'a pas pris de décision dans le délai de deux mois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_17">
+<num>(5)</num>
+<alinea>
+<content>
+<p>L'établissement est soumis au contrôle de la Cour des comptes quant à l'emploi conforme des concours financiers public qui lui sont affectés.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7/art_9/20030518</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2001/07/24/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2003-05-18</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>L'établissement est affranchi de tous impôts et taxes au profit de l'Etat et des communes à l'exception de la taxe sur la valeur ajoutée et des taxes rémunératoires et sous réserve qu'en matière d'impôt sur le revenu des collectivités et de l'impôt commercial, l'établissement reste passible de l'impôt dans la mesure où il exerce une activité à caractère industriel ou commercial. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'application de l'article 150 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="d60eea52-edf5-4256-b6b4-9170f9a85838" scl:verify="true">loi du 4 décembre 1967</ref> concernant l'impôt sur le revenu est étendue à l'établissement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les actes passés au nom et en faveur de l'établissement sont exempts des droits de timbre, d'enregistrement, d'hypothèque et de succession.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dons en espèces alloués à l'établissement sont déductibles dans le chef du donateur à titre de dépenses spéciales dans les limites et conditions prévues par les articles 109 et 112 de <mod class="mod-start" for="#pm1"/>la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="6643aa73-0de7-403f-8ec4-ff33197264fc" scl:verify="true">loi du 4 décembre 1967</ref>
+<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/> concernant l'impôt sur le revenu. A cet effet, l'article 122, alinéa 1<sup>er</sup>, numéro 1 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="d181ffb9-7f20-4a6c-9a96-41afa7ea92e2">loi précitée</ref> est complété par l'ajout des termes «…, au Centre Culturel de Rencontre Abbaye de Neumünster».</p>
+</content>
+</alinea>
+</article>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2023-02-03" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2023-02-03" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2023-02-03" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center" scl:style-format="n">ANNEXE: (article 2)</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p scl:align="center">
+<b>
+<i>Commune de Luxembourg</i>
+</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:align="center">Section - LC - de Grund</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_1" scl:cols="49 17 17 17" scl:cols-align="left center center center" scl:space-tab="1" width="100">
+<tr>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="0" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1"/>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="0" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="0" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1"/>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="0" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="0" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1">
+<p>Contenance</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="0" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1"/>
+</tr>
+<tr>
+<td>
+<p scl:space-tab="10">Partie numéro</p>
+</td>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>a</p>
+</td>
+<td>
+<p>ca</p>
+</td>
+</tr>
+<tr>
+<td>
+<p scl:space-tab="10">146/371</p>
+</td>
+<td>
+<p>00</p>
+</td>
+<td>
+<p>95</p>
+</td>
+<td>
+<p>85</p>
+</td>
+</tr>
+<tr>
+<td>
+<p scl:space-tab="10">147/190</p>
+</td>
+<td>
+<p>00</p>
+</td>
+<td>
+<p>13</p>
+</td>
+<td>
+<p>20</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

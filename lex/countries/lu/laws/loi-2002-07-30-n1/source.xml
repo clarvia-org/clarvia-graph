@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2002-07-30" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFI"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2002-07-30" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2002-07-30" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2025-07-01</scl:jolux><scl:jolux scl:name="dateDocument">2002-07-30</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1444</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3434</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/52</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1316</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2002-08-05</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2002/a82</scl:jolux><scl:jolux scl:name="historicalLegalId">2002A17181</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">2002-08-01</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20020119</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1913/12/23/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1948/01/28/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1906/05/29/n4/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1934/10/16/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1967/12/04/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1979/02/12/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1990/12/06/n2/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/07/2025 : Loi du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l'acquisition de terrains à bâtir et d'immeubles d'habitation, et portant modification: \n 1. de la loi modifiée du 29 mai 1906 sur les habitations à bon marché; \n 2. de la loi modifiée du 16 octobre 1934 concernant l'évaluation des biens et valeurs; \n 3. de la loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu: \n 4. de la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; \n 5. de la loi du 6 décembre 1990 portant réforme de certaines dispositions en matière des impôts directs et indirects.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2002-82-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2002/a82/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2002-07-30-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2002-82-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2002/a82/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2002/a82/fr/pdf/eli-etat-leg-memorial-2002-a82-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2002-08-05" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2005-01-01" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2008-11-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2013-01-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2023-03-07" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2025-07-01" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2004/12/21/n1/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2008/10/22/n1/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2008/10/22/n1/jo"/>
+<destination href="#art_11"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2012/12/21/n2/jo"/>
+<destination href="#art_8"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2023/05/16/a235/jo"/>
+<destination href="#art_6"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/07/03/a279/jo"/>
+<destination href="#art_6"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2002/07/30/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2023/05/16/a235/jo" id="rp2" showAs="Loi du 16 mai 2023 modifiant la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l’acquisition de terrains à bâtir et d’immeubles d’habitation."/>
+<passiveRef href="/eli/etat/leg/loi/2012/12/21/n2/jo" id="rp3" showAs="Loi du 21 décembre 2012 portant modification: - de la loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu; - de la loi modifiée du 16 octobre 1934 concernant l'impôt sur la fortune; - de la loi générale des impôts modifiée du 22 mai 1931 («Abgabenordnung»); - de la loi modifiée du 30 juin 1976 portant 1. création d'un fonds pour l'emploi; 2. réglementation de l'octroi des indemnités de chômage complet; - de la loi modifiée du 22 décembre 2006 promouvant le maintien dans l'emploi et définissant des mesures spéciales en matière de sécurité sociale et de politique de l'environnement; - de la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; - de la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l'acquisition de terrains à bâtir et d'immeubles d'habitation."/>
+<passiveRef href="/eli/etat/leg/loi/2008/10/22/n1/jo" id="rp4" showAs="Loi du 22 octobre 2008 portant: 1. promotion de l'habitat et création d'un pacte logement avec les communes, 2. sur le droit d'emphytéose et le droit de superficie, 3. modification a) de la loi modifiée du 16 octobre 1934 concernant l'évaluation des biens et valeurs; b) de la loi modifiée du 1er décembre 1936 sur l'impôt foncier; c) de la loi modifiée du 25 février 1979 concernant l'aide au logement; d) de la loi modifiée du 10 décembre 1998 portant création de l'établissement public dénommé «Fonds d'assainissement de la Cité Syrdall»; e) de la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l'acquisition de terrains à bâtir et d'immeubles d'habitation; f) de la loi modifiée du 19 juillet 2004 concernant l'aménagement communal et le développement urbain; g) de la loi du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil."/>
+<passiveRef href="/eli/etat/leg/loi/2004/12/21/n1/jo" id="rp5" showAs="Loi du 21 décembre 2004 concernant le budget des recettes et des dépenses de l'Etat pour l'exercice 2005."/>
+<passiveRef href="/eli/etat/leg/loi/2025/07/03/a279/jo" id="rp6" showAs="Loi du 3 juillet 2025 modifiant la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l’acquisition de terrains à bâtir et d’immeubles d’habitation."/>
+</references>
+<notes scl:type="modification" source="#rp5">
+<note id="M1" marker="1" refersTo="pm1" title="A|2004-12-28|2004-12-21|L|204">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2004/12/21/n1/jo">Loi du 21 décembre 2004 concernant le budget des recettes et des dépenses de l'Etat pour l'exercice 2005.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp4">
+<note id="M2" marker="2" refersTo="pm2" title="A|2008-10-27|2008-10-22|L|159">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2008/10/22/n1/jo">Loi du 22 octobre 2008 portant: 1. promotion de l'habitat et création d'un pacte logement avec les communes, 2. sur le droit d'emphytéose et le droit de superficie, 3. modification a) de la loi modifiée du 16 octobre 1934 concernant l'évaluation des biens et valeurs; b) de la loi modifiée du 1er décembre 1936 sur l'impôt foncier; c) de la loi modifiée du 25 février 1979 concernant l'aide au logement; d) de la loi modifiée du 10 décembre 1998 portant création de l'établissement public dénommé «Fonds d'assainissement de la Cité Syrdall»; e) de la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l'acquisition de terrains à bâtir et d'immeubles d'habitation; f) de la loi modifiée du 19 juillet 2004 concernant l'aménagement communal et le développement urbain; g) de la loi du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp4">
+<note id="M3" marker="3" refersTo="pm3" title="A|2008-10-27|2008-10-22|L|159">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2008/10/22/n1/jo">Loi du 22 octobre 2008 portant: 1. promotion de l'habitat et création d'un pacte logement avec les communes, 2. sur le droit d'emphytéose et le droit de superficie, 3. modification a) de la loi modifiée du 16 octobre 1934 concernant l'évaluation des biens et valeurs; b) de la loi modifiée du 1er décembre 1936 sur l'impôt foncier; c) de la loi modifiée du 25 février 1979 concernant l'aide au logement; d) de la loi modifiée du 10 décembre 1998 portant création de l'établissement public dénommé «Fonds d'assainissement de la Cité Syrdall»; e) de la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l'acquisition de terrains à bâtir et d'immeubles d'habitation; f) de la loi modifiée du 19 juillet 2004 concernant l'aménagement communal et le développement urbain; g) de la loi du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M4" marker="4" refersTo="pm4" title="A|2012-12-28|2012-12-21|L|270">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2012/12/21/n2/jo">Loi du 21 décembre 2012 portant modification: - de la loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu; - de la loi modifiée du 16 octobre 1934 concernant l'impôt sur la fortune; - de la loi générale des impôts modifiée du 22 mai 1931 («Abgabenordnung»); - de la loi modifiée du 30 juin 1976 portant 1. création d'un fonds pour l'emploi; 2. réglementation de l'octroi des indemnités de chômage complet; - de la loi modifiée du 22 décembre 2006 promouvant le maintien dans l'emploi et définissant des mesures spéciales en matière de sécurité sociale et de politique de l'environnement; - de la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; - de la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l'acquisition de terrains à bâtir et d'immeubles d'habitation.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M5" marker="5" refersTo="pm5" title="A|2023-05-17|2023-05-16|L|235">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2023/05/16/a235/jo">Loi du 16 mai 2023 modifiant la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l’acquisition de terrains à bâtir et d’immeubles d’habitation.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp6">
+<note id="M6" marker="6" refersTo="pm6" title="A|2025-07-04|2025-07-03|L|279">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/07/03/a279/jo">Loi du 3 juillet 2025 modifiant la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l’acquisition de terrains à bâtir et d’immeubles d’habitation.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle style="11">
+<p>Version consolidée applicable au 01/07/2025 : Loi du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l'acquisition de terrains à bâtir et d'immeubles d'habitation, et portant modification: </p>
+<ol scl:symbol="1.">
+<li>de la loi modifiée du 29 mai 1906 sur les habitations à bon marché;</li>
+<li>de la loi modifiée du 16 octobre 1934 concernant l'évaluation des biens et valeurs;</li>
+<li>de la loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu;</li>
+<li>de la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée;</li>
+<li>de la loi du 6 décembre 1990 portant réforme de certaines dispositions en matière des impôts directs et indirects.</li>
+</ol>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_1er">
+<num>Chapitre 1<sup>er</sup>.</num>
+<heading scl:separator=" " scl:style-format="bi"> Mesures en matière d'impôts directs, destinées à encourager la mise sur le marché de terrains à bâtir et d'immeubles d'habitation</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_1er/20050101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2005-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Pour les <mod class="mod-start" for="#pm1"/>années d'imposition 2002 à 2007<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>, les contribuables, personnes physiques, considérés comme exploitants d'une entreprise commerciale ayant pour objet le lotissement dans une zone d'habitation de terrains agricoles ou d'autres terrains en terrains à bâtir, relevant de l'article 14, numéros 1 et 2 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="ddb52eb2-6229-4ee9-991c-25e844fd14b1">loi modifiée du 4 décembre 1967</ref> concernant l'impôt sur le revenu, désignée ci-après «<ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="87651ca0-eb61-4df7-ba78-37339fe5d703">loi concernant l'impôt sur le revenu</ref>», bénéficient du régime d’imposition temporaire spécial défini dans les conditions et suivant les modalités du présent article.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les terrains doivent avoir fait l'objet d'un apport à l'entreprise en vue d'un lotissement. Au moment de l'apport des terrains, l'acquisition à titre onéreux doit remonter à au moins 10 années. Lorsque l'apporteur a acquis les terrains à titre gratuit, la date d'acquisition à considérer est celle de l'acquisition par le détenteur antérieur ayant acquis le bien en dernier lieu à titre onéreux. Si les terrains de l'entreprise ne répondent que partiellement aux conditions d'apport et de durée, il y a lieu de déterminer la quote-part des terrains susceptible de bénéficier des mesures du présent article sur la base du rapport entre la surface de ces terrains et de la surface totale des terrains appliqué à la surface des terrains vendus.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>En cas d'aliénation de la pleine propriété d'un ou de plusieurs terrains à bâtir résultant d'un lotissement qui répond aux conditions des alinéas 1 et 2, les terrains sont, sur demande du contribuable, réputés prélevés à la valeur comptable de l'actif net investi et transférés dans le patrimoine privé de l'exploitant, préalablement à l'acte de transmission de la propriété. Les revenus provenant de l'aliénation de ces terrains sont imposables aux termes de l'article 99ter de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="82e2f03d-8ca1-40f6-9a45-6c90b5000213">loi concernant l'impôt sur le revenu</ref>. Les dispositions de l'article 102 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="42ca9777-7b91-4042-b124-25b3a9761902">loi concernant l'impôt sur le revenu</ref> sont applicables, à l'exception du transfert des plus-values prévu par l'article 102, alinéa 8 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="263f78ef-1802-4f3c-933b-a285b348b863">loi concernant l'impôt sur le revenu</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les dispositions de l'alinéa 3, 1<sup>ère</sup> phrase sont d'application correspondante, si la pleine propriété des terrains est transmise par donation, à raison d'un terrain par bénéficiaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(5)</num>
+<alinea>
+<content>
+<p>En vue de la construction d'un immeuble destiné au moins à raison de 50 pour cent à des fins de logement, le contribuable peut, sur demande, prélever à la valeur comptable le terrain à bâtir résultant d'un lotissement qui répond aux conditions des alinéas 1 et 2, et le transférer dans son patrimoine privé au moment d'entamer les travaux de construction de l'immeuble sur le terrain prélevé. Si à la fin de la troisième année d'imposition qui suit l'année du transfert du terrain dans le patrimoine privé, l'immeuble n'est pas achevé ou n'est pas affecté au moins à raison de 50 pour cent à des fins de logement, il est procédé, au titre de l'année d'imposition du prélèvement, à une imposition rectificative du bénéfice de l'entreprise de lotissement et du revenu du contribuable. L'imposition rectificative tient alors compte d'un prélèvement du terrain respectivement à la valeur d'exploitation ou à la valeur estimée de réalisation.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_2/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<paragraph id="paragraph_6">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Pour les années d'imposition visées à l'article 1<sup>er</sup> le champ d’application de l'abattement prévu à l'article 130, alinéa 4 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="f643895c-241a-46ae-8c32-cadee761d5f1">loi concernant l'impôt sur le revenu</ref> est étendu aux revenus nets réalisés aux termes de l'article 99bis de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="2c8a0af3-5ca7-4852-a4dc-61994ba4e166">même loi</ref> par un contribuable, personne physique. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les revenus nets réalisés au titre des années d'imposition visées à l'article 1<sup>er</sup> par un contribuable, personne physique, aux termes des articles 99bis, alinéa 1, lettre a) et 99ter de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="50385979-0da4-46a2-8a9c-2b76558ae46d">loi concernant l'impôt sur le revenu</ref> sont à considérer comme revenus extraordinaires imposables par application de l'article 131, alinéa 1, lettre d) de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="fed7ee55-8454-4dbb-b29b-a9fa186b1833">même loi</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_3/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<paragraph id="paragraph_8">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Pour les années d'imposition visées à l'article 1<sup>er</sup>, les contribuables qui ne remplissent pas toutes les conditions de l'article 1<sup>er</sup>, alinéas 1 et 2 et qui réalisent lors de l’aliénation de la pleine propriété de terrains à bâtir situés dans une zone d’habitation un bénéfice rentrant dans une des trois premières catégories de revenus de l’article 10 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="8eb6e632-2a9b-4318-9f85-81f48019a056">loi concernant l'impôt sur le revenu</ref>, peuvent bénéficier, sur demande, d’une exemption de 25 pour cent du bénéfice provenant de cette aliénation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le bénéfice au sens de l’alinéa 1<sup>er</sup> est constitué par la différence entre le prix de réalisation, diminué des frais de réalisation et de la valeur comptable du terrain aliéné.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les dispositions des alinéas précédents sont d’application correspondante, si des contribuables au sens de l’article 159 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="2d06f97f-91f8-421f-80c5-30a32251cc8d">loi concernant l'impôt sur le revenu</ref> et des organismes collectifs non résidents réalisent des revenus au sens des articles 99bis et 99ter de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="52d63dd1-0944-4fd9-80e6-4648d1537227">loi concernant l'impôt sur le revenu</ref> lors de l’aliénation de la pleine propriété de terrains à bâtir situés dans une zone d’habitation.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_2">
+<num>Chapitre 2:</num>
+<heading scl:separator=" " scl:style-format="bi"> Droits d'enregistrement et de transcription pour l'acquisition d'habitations personnelles</heading>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_4/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>Lors de l'acquisition d'un immeuble destiné à servir d'habitation, il est accordé sous les limites et conditions déterminées ci-après, à tout acquéreur, un abattement portant sur les droits d’enregistrement et de transcription.</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_5/20081101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Au sens de la présente loi, on entend par:<mod class="mod-start" for="#pm2"/>
+</p>
+<ol scl:symbol="a)">
+<li>«acquisition»:<ul scl:symbol="dash">
+<li>l'acquisition d'un immeuble ou de fractions d'immeuble soit en pleine propriété, soit en nue-propriété ou en usufruit aboutissant à la réunion de ces deux droits sur la même tête, avec le cas échéant, les dépendances, effectuée par vente, adjudication, licitation, partage ou échange avec retours ou plus-values,</li>
+<li>la constitution ou l'aliénation du droit d'emphytéose,</li>
+<li>la constitution ou l'aliénation du droit de superficie;<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/>
+</li>
+</ul>
+</li>
+<li> « immeuble destiné à servir d’habitation», l’immeuble ou les parts indivises d’un même immeuble ainsi que la place à bâtir située dans une zone d’habitation et sur laquelle il peut être érigé immédiatement une construction en vertu d’un règlement sur les bâtisses, servant ou devant servir d’habitation principale, personnelle et effective à son propriétaire.</li>
+<li>« acquéreur », toute personne physique, qui, au moment de la passation de l’acte notarié, est<ul scl:symbol="dash">
+<li>soit résidente au Grand-Duché de Luxembourg et inscrite au bureau de la population d'une commune,</li>
+<li>soit non encore résidente mais qui s’engage à prendre la qualité de résident dans l’immeuble acquis dans les délais et sous les conditions fixés aux articles 8 et 10 ci-après. </li>
+</ul> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_6/20250701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Le montant de l’abattement, appelé crédit d’impôt, ne peut être supérieur à <mod class="mod-start" for="#pm5"/>
+<mod class="mod-start" for="#pm6"/>40 000<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M6" marker="6"/> euros<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/> pour chaque acquéreur.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_7/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Le bénéfice de l’abattement est subordonné à la condition que l’acte notarié contienne:</p>
+<ul scl:symbol="dash">
+<li>la requête afférente de l’acquéreur;</li>
+<li>l’engagement de l’acquéreur d’occuper personnellement l’immeuble dans les délais et pendant la durée prévus par la présente loi, de ne pas l’affecter à un autre usage pendant cette période et de rembourser le montant de l’abattement accordé en cas de non-respect des conditions prévues par la présente loi;</li>
+<li>l'engagement de l’acquéreur de déclarer par écrit à l’administration, dans le délai de trois mois, toute cession ou tout changement de l’affectation de l’immeuble concerné. </li>
+</ul>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_8/20130101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2013-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Le crédit d’impôt est celui en vigueur lors de la passation de l'acte notarié. Il est appliqué jusqu’à concurrence du montant des droits d’enregistrement et de transcription dus sur l’acte notarié à l’exclusion d’intérêts ou de droits et taxes perçus ou à percevoir à titre de sanctions ou d’amendes, sans pouvoir dépasser le montant visé à l’article 6.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<eop/>L’imputation du crédit d’impôt est opérée:</p>
+<ul scl:symbol="dash">
+<li>pour les personnes résidentes au moment de la passation de l’acte notarié: lors de la formalité de l’enregistrement et de la transcription de l’acte;</li>
+<li>pour les personnes non encore résidentes au moment de la passation de l’acte notarié: lors de l’occupation réelle de l’immeuble dans les délais fixés à l’article 10. Dans ce cas la restitution du montant correspondant à l’abattement ne se fait que sur demande écrite, appuyée du certificat de résidence.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de pluralité d’acquéreurs, l’imputation est opérée proportionnellement à la part de chaque acquéreur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le droit d’enregistrement à percevoir ne peut être inférieur à cent euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm4"/>Sont assimilées aux personnes résidentes les personnes dont la résidence se trouve dans l’un des Etats de l’Espace économique européen.<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_9/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>Pour l'ensemble de ses acquisitions au sens de la présente loi, un acquéreur ne peut bénéficier que du montant maximum du crédit d’impôt en vigueur lors de la dernière acquisition.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le montant de l'abattement qui est sollicité par un acquéreur n'ayant pas épuisé la totalité du crédit d’impôt lors d'acquisitions antérieures ne peut dépasser la différence entre le montant maximum du crédit d’impôt visé à l'article 6 et le montant accordé lors d'acquisitions antérieures.</p>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_10/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>L'occupation doit être effective dans un délai de deux ans à compter de la date de l'acte notarié d'acquisition. Ce délai est fixé à quatre ans en cas d’acquisition d’une place à bâtir ou d’un immeuble en voie de construction.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutefois ces délais peuvent être prorogés par décision du directeur de l’administration de l’enregistrement et des domaines pour des cas d’exception et suivant qu’il sera jugé nécessaire au vu d’une demande écrite et dûment motivée, présentée par le bénéficiaire de l’abattement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’inobservation des délais ci-dessus fixés respectivement prorogés donne lieu au remboursement total de l’abattement accordé pour l’opération concernée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_11/20081101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm3"/>Art. 11.</num>
+<alinea>
+<content>
+<p>La durée d'occupation est fixée à une période ininterrompue de deux ans au moins. Toutefois, le Directeur de l'Administration de l'enregistrement et des domaines peut dispenser de cette condition dans les cas où celle-ci ne peut être respectée pour des raisons de force majeure ou à la suite d'une situation telle que:</p>
+<ul scl:symbol="dash">
+<li>la maladie de l'acquéreur rendant impossible l'occupation de l'immeuble, dûment constatée par certificat médical;</li>
+<li>la vente forcée de l'immeuble;</li>
+<li>l'expropriation pour cause d'utilité publique;</li>
+<li>le décès du conjoint;</li>
+<li>le divorce ou la dissolution du partenariat légal.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La location même partielle de l'immeuble, la cession de l'immeuble et l'interruption de l'occupation intervenues endéans les deux ans donnent lieu au remboursement total de l'abattement accordé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si néanmoins l'interruption de l'occupation résulte de l'obligation pour l'acquéreur de transférer le lieu de sa résidence pour des raisons professionnelles et indépendantes de sa volonté, il pourra être accordé par le Directeur de l'Administration de l'enregistrement et des domaines dispense du remboursement sous condition que l'occupation de l'immeuble soit reprise dès le retour de l'acquéreur et jusqu'au parachèvement d'une durée d'occupation totale de deux ans.<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/>
+<eop/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_12/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>L’acquéreur est pareillement tenu au remboursement total de l’abattement accordé:</p>
+<ol scl:symbol="a)">
+<li>dans le cas d’une expertise fiscale prévue par l’article 45 de la <ref href="/eli/etat/leg/loi/1913/12/23/n1/jo" id="b6487053-d4fb-498c-b17f-51f355014ebe">loi du 23 décembre 1913</ref> concernant la révision de la législation qui régit les impôts dont le recouvrement est attribué à l’administration de l’enregistrement et des domaines, si la plus-value constatée par le rapport des experts est égale ou supérieure à un huitième, soit du prix ou de la valeur vénale déclarée; </li>
+<li>en cas de dissimulations établies, visées par la section première de la <ref href="/eli/etat/leg/loi/1948/01/28/n2/jo" id="1c1bf831-b8d8-46a6-92e5-e253b6229093">loi du 28 janvier 1948</ref>, tendant à assurer la juste et exacte perception des droits d’enregistrement et de succession.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_13/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>Dans tous les cas où il y a lieu au remboursement de l’abattement en vertu des articles 10, 11 et 12, <span scl:no-break="true">celui-ci</span> est restitué à l’administration de l’enregistrement et des domaines avec les intérêts légaux à partir du jour de l’octroi. Le recouvrement se fait comme en matière d’enregistrement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un nouvel abattement n'est accordé qu'à l'acquéreur ayant rempli entièrement les conditions de remboursement prévues à l'alinéa précédent.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_14/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>Le montant de la réduction des droits d’enregistrement et de transcription accordée à partir de l’entrée en vigueur de la présente loi aux bénéficiaires de la faveur fiscale sous le régime des dispositions légales citées à l’article 18 ci-après, est imputé sur le crédit d’impôt prévu à la présente loi.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les bénéficiaires des dispositions de la présente loi ayant procédé à des acquisitions à partir du 7 mai 2002 jusqu’à l’abrogation des anciennes dispositions citées à l’article 18 ci-après, sont obligés d’adresser une demande écrite au receveur compétent en vue d’un remboursement éventuel des droits. Ils signeront, en présence du receveur, une déclaration ayant pour objet l’acceptation des conditions prévues dans la présente loi. Aucun remboursement ne sera effectué sans l’accomplissement de cette formalité. </p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_3">
+<num>Chapitre 3.</num>
+<heading scl:separator=" " scl:style-format="bi"> Dispositions modificatives et abrogatoires</heading>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_15/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<alinea>
+<content>
+<p> La <ref href="/eli/etat/leg/loi/1934/10/16/n3/jo" id="dad4f715-8bd1-4d79-a294-ec4d1ac299c7">loi modifiée du 16 octobre 1934</ref> concernant l'évaluation des biens et valeurs est complétée par l'ajout du paragraphe suivant:<mod> <quotedText> <embeddedStructure>
+<paragraph>
+<num>§ 8bis.</num>
+<alinea>
+<content>
+<p>Date du transfert à titre onéreux d'un droit réel immobilier</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La date du transfert à titre onéreux d'un droit réel portant sur un bien immobilier est la date de l'acte notarié ou la date du jugement en tenant lieu ou la date de l'acte administratif en tenant lieu. Lorsque le transfert documenté dans l'acte notarié, ou dans le jugement en tenant lieu, ou dans l'acte administratif en tenant lieu, est affecté par une condition suspensive ou résolutoire, ou par un terme, les paragraphes 4 à 8 s'appliquent aux situations respectives.</p>
+</content>
+</alinea>
+</paragraph>
+</embeddedStructure> </quotedText> </mod> </p>
+<p>Les dispositions du présent article s’appliquent à tous les transferts à titre onéreux de droits réels immobiliers opérés à partir de l’entrée en vigueur de la présente loi.</p>
+</content>
+</alinea>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_16/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<alinea>
+<content>
+<p>Avec effet à partir de l'année d'imposition 2002, la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="1d8d45e3-ed08-45e4-8042-19f2c0a8d6c1">loi modifiée du 4 décembre 1967</ref> concernant l'impôt sur le revenu est complétée par l'ajout d'un article 32ter de la teneur suivante:<mod> <quotedText> <embeddedStructure>
+<article>
+<num>Art. 32<i>ter</i>.</num>
+<alinea>
+<content>
+<p>Un amortissement accéléré au taux de 6 pour cent est admis à l'endroit d'immeubles ou parties d'immeubles bâtis, affectés au logement locatif, lorsque l'achèvement remonte au début de l'exercice d'exploitation à moins de 6 ans.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces dispositions sont d'application correspondante aux dépenses d'investissement effectuées en cas de rénovation d'un logement ancien, à condition qu'elles dépassent 20 pour cent du prix d'acquisition ou de revient du bâtiment.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'amortissement accéléré n'est toutefois pas permis, lorsque l'exploitant a opté pour l'amortissement séparé des parties constitutives de l'immeuble.</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure> </quotedText> </mod> </p>
+</content>
+</alinea>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_17/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1979/02/12/n1/jo" id="e1f61791-50f1-4708-add6-9c8a251d0004">loi modifiée du 12 février 1979</ref> concernant la taxe sur la valeur ajoutée est modifiée comme suit:</p>
+<ol scl:symbol="1.">
+<li>Il est ajouté à l’annexe B un point 22° ayant la teneur suivante:<embeddedStructure>
+<ol scl:symbol="custom">
+<li scl:symbol="22°"> <p>Certains travaux de création et de rénovation effectués dans l’intérêt d’un logement affecté à des fins d’habitation principale dans les limites et les conditions à déterminer par règlement grand-ducal.</p> </li>
+</ol>
+</embeddedStructure> <mod/> </li>
+<li> <ol scl:symbol="a)">
+<li> Il est ajouté à l’article 61 un paragraphe 6 dont la teneur est la suivante:<mod> <quotedText> <embeddedStructure>
+<paragraph>
+<num>6. 1.</num>
+<alinea>
+<content>
+<p>L’application du taux super-réduit aux travaux de création et de rénovation visés à l’annexe B, point 22, de la présente loi, est soumise à autorisation de la part de l’administration de l’enregistrement et des domaines. A cette fin, l’assujetti doit, avant la réalisation de tels travaux, introduire, selon les modalités et la forme prescrites par l’administration, une demande à ladite administration. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Avant le quinzième jour de chaque trimestre civil, l’assujetti doit transmettre au bureau d’imposition compétent, selon les modalités et dans la forme prescrites par l’administration, une liste indiquant les détails des factures émises pendant le trimestre précédent et se rapportant à des travaux de création et de rénovation soumis au taux super-réduit de 3 pour cent. </p>
+</content>
+</alinea>
+</paragraph>
+</embeddedStructure> </quotedText> </mod> </li>
+<li>L’ancien paragraphe 6 de l’article 61 devient le nouveau paragraphe 7.</li>
+</ol> </li>
+<li>A l’article 37, paragraphe 2, deuxième alinéa, les termes <embeddedText>francs luxembourgeois</embeddedText> sont remplacés par les termes <embeddedText>euros</embeddedText>.</li>
+<li>A l’article 54, paragraphe 1, point b), les termes <embeddedText>et qui n’ont pas fait agréer un représentant responsable conformément aux dispositions de l’article 66</embeddedText> sont supprimés.</li>
+<li> A l’article 88, deuxième alinéa, le terme <embeddedText>ministériel</embeddedText> est remplacé par le terme <embeddedText>grand-ducal</embeddedText>.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_18/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>L'article 13, alinéa 2 de la <ref href="/eli/etat/leg/loi/1906/05/29/n4/jo" id="242c5f2b-f890-47a7-b297-ed1f38c50012">loi modifiée du 29 mai 1906</ref> sur les habitations à bon marché et l'article 9 de la <ref href="/eli/etat/leg/loi/1990/12/06/n2/jo" id="8a778c76-2136-40f9-b64e-8e9a9e094ce3">loi du 6 décembre 1990</ref> portant réforme de certaines dispositions en matière des impôts directs et indirects sont abrogés.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_4">
+<num>Chapitre 4.</num>
+<heading scl:separator=" " scl:style-format="bi"> Dispositions finales</heading>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_19/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<alinea>
+<content>
+<p>La référence à la présente loi pourra se faire sous une forme abrégée en utilisant les termes de «<ref href="???" scl:verify="true">loi du 30 juillet 2002</ref> déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l'acquisition de terrains à bâtir et d'immeubles d’habitation.»</p>
+</content>
+</alinea>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1/art_20/20020805</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2002/07/30/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-08-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<alinea>
+<content>
+<p> Les dispositions du chapitre 2 sont applicables aux acquisitions d’immeubles destinés à servir d’habitation documentées par acte notarié passé après le 7 mai 2002. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dispositions de l'article 17 entrent en vigueur le 1<sup>er</sup> novembre 2002.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

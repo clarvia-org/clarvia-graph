@@ -1,0 +1,2241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1967-08-16" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MTP"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1967-08-16" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1967-08-16" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-12-21</scl:jolux>
+						<scl:jolux scl:name="dateDocument">1967-08-16</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MTP</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/977</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">1967-08-27</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1967/a57</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">1967A08681</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+						<scl:jolux scl:name="publicationDate">1967-08-23</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1863/01/10/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1859/12/17/n5/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1879/06/18/n2/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1904/05/16/n3/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 21/12/2021 : Loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1967-57-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1967/a57/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-1967-08-16-n1-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1967-57-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1967/a57/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1967/a57/fr/pdf/eli-etat-leg-memorial-1967-a57-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="1967-08-16" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="1972-09-24" id="e21" originatingExpression="true" source="#rp21" type="amendment"/>
+				<eventRef date="1979-08-13" id="e20" originatingExpression="true" source="#rp20" type="amendment"/>
+				<eventRef date="1980-12-31" id="e19" originatingExpression="true" source="#rp19" type="amendment"/>
+				<eventRef date="1986-09-10" id="e18" originatingExpression="true" source="#rp18" type="amendment"/>
+				<eventRef date="1995-09-12" id="e17" originatingExpression="true" source="#rp17" type="amendment"/>
+				<eventRef date="1997-08-22" id="e16" originatingExpression="true" source="#rp16" type="amendment"/>
+				<eventRef date="1998-06-13" id="e15" originatingExpression="true" source="#rp15" type="amendment"/>
+				<eventRef date="1999-01-01" id="e14" originatingExpression="true" source="#rp14" type="amendment"/>
+				<eventRef date="2002-07-16" id="e13" originatingExpression="true" source="#rp13" type="amendment"/>
+				<eventRef date="2004-01-04" id="e12" originatingExpression="true" source="#rp12" type="amendment"/>
+				<eventRef date="2006-01-01" id="e11" originatingExpression="true" source="#rp11" type="amendment"/>
+				<eventRef date="2007-04-01" id="e10" originatingExpression="true" source="#rp10" type="amendment"/>
+				<eventRef date="2008-04-21" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+				<eventRef date="2009-06-08" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+				<eventRef date="2010-01-01" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+				<eventRef date="2013-09-10" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+				<eventRef date="2017-12-22" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+				<eventRef date="2018-04-24" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+				<eventRef date="2018-09-21" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2021-12-21" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1972/08/29/n1/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1972/08/29/n1/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1972/08/29/n1/jo"/>
+						<destination href="#art_17"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1972/08/29/n1/jo"/>
+						<destination href="#art_18"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1972/08/29/n1/jo"/>
+						<destination href="#art_19"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1979/06/22/n1/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1980/12/02/n2/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1980/12/02/n2/jo"/>
+						<destination href="#art_37"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1986/08/31/n1/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm15" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1986/08/31/n1/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm17" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1986/08/31/n1/jo"/>
+						<destination href="#art_19"/>
+					</textualMod>
+					<textualMod id="pm18" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1995/07/31/n8/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm19" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1995/07/31/n8/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm20" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1995/07/31/n8/jo"/>
+						<destination href="#art_14bis"/>
+					</textualMod>
+					<textualMod id="pm21" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/1997/07/27/n8/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm23" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination href="#art_15"/>
+					</textualMod>
+					<textualMod id="pm24" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination href="#art_36"/>
+					</textualMod>
+					<textualMod id="pm25" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm26" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm27" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm28" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm33" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm34" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm35" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination href="#art_14bis"/>
+					</textualMod>
+					<textualMod id="pm36" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/1998/05/26/n1/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm39" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2002/06/06/n1/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm42" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2007/03/13/n3/jo"/>
+						<destination href="#art_14bis"/>
+					</textualMod>
+					<textualMod id="pm43" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2007/03/13/n3/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm44" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2008/03/18/n4/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm45" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2009/05/29/n4/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm46" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2009/05/29/n4/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm47" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2009/12/21/n1/jo"/>
+						<destination href="#art_36"/>
+					</textualMod>
+					<textualMod id="pm49" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2013/07/30/n5/jo"/>
+						<destination href="#art_12"/>
+					</textualMod>
+					<textualMod id="pm50" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2017/12/15/a1072/jo"/>
+						<destination href="#art_37"/>
+					</textualMod>
+					<textualMod id="pm51" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2018/04/17/a271/jo"/>
+						<destination href="#art_12"/>
+					</textualMod>
+					<textualMod id="pm53" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2021/12/15/a878/jo"/>
+						<destination/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/loi/1967/08/16/n1/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/loi/2021/12/15/a878/jo" id="rp2" showAs="Loi du 15 décembre 2021 concernant le reclassement partiel de la voirie et la reprise par l’État d’une série de chemins vicinaux et portant modification de l’article 6bis de la loi modifiée du 16 août 1967 ayant pour objet la création d’une grande voirie de communication et d’un fonds des routes."/>
+				<passiveRef href="/eli/etat/leg/loi/2018/08/21/a830/jo" id="rp3" showAs="Loi du 21 août 2018 relative à l’aménagement du contournement routier de Bascharage et portant modification de la loi modifiée du 16 août 1967 ayant pour objet la création d’une grande voirie de communication et d’un fonds des routes."/>
+				<passiveRef href="/eli/etat/leg/loi/2018/04/17/a271/jo" id="rp4" showAs="Loi du 17 avril 2018 concernant l’aménagement du territoire et modifiant : 1. la loi modifiée du 16 août 1967 ayant pour objet la création d’une grande voirie de communication et d’un fonds des routes ; 2. la loi modifiée du 15 mars 1979 sur l’expropriation pour cause d’utilité publique ; 3. la loi modifiée du 19 juillet 2004 concernant l’aménagement communal et le développement urbain."/>
+				<passiveRef href="/eli/etat/leg/loi/2017/12/15/a1072/jo" id="rp5" showAs="Loi du 15 décembre 2017 relative à la mise à 2 x 3 voies de l’autoroute A3."/>
+				<passiveRef href="/eli/etat/leg/loi/2013/07/30/n5/jo" id="rp6" showAs="Loi du 30 juillet 2013 concernant l'aménagement du territoire et modifiant:  1. la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes;  2. la loi modifiée du 15 mars 1979 sur l'expropriation pour cause d'utilité publique;  3. la loi du 10 août 1993 relative aux parcs naturels;  4. la loi modifiée du 19 juillet 2004 concernant l'aménagement communal et le développement urbain."/>
+				<passiveRef href="/eli/etat/leg/loi/2009/12/21/n1/jo" id="rp7" showAs="Loi du 21 décembre 2009 sur les permissions de voirie et modifiant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes."/>
+				<passiveRef href="/eli/etat/leg/loi/2009/05/29/n4/jo" id="rp8" showAs="Loi du 29 mai 2009 portant modification de la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes."/>
+				<passiveRef href="/eli/etat/leg/loi/2008/03/18/n4/jo" id="rp9" showAs="Loi du 18 mars 2008 relative à l'aménagement du contournement routier de Junglinster."/>
+				<passiveRef href="/eli/etat/leg/loi/2007/03/13/n3/jo" id="rp10" showAs="Loi du 13 mars 2007 portant  - 1. transposition en droit luxembourgeois en matière d'infrastructures de transport de la directive 97/11/CE du Conseil du 3 mars 1997 modifiant la directive 85/337/CEE concernant l'évaluation des incidences de certains projets publics et privés sur l'environnement  - 2. modification de la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes, telle que modifiée   - 3. modification de la loi du 10 mai 1995 relative à la gestion de l'infrastructure ferroviaire, telle que modifiée."/>
+				<passiveRef href="/eli/etat/leg/loi/2005/12/23/n4/jo" id="rp11" showAs="Loi du 23 décembre 2005 concernant le budget des recettes et des dépenses de l'Etat pour l'exercice 2006."/>
+				<passiveRef href="/eli/etat/leg/loi/2003/12/19/n13/jo" id="rp12" showAs="Loi du 19 décembre 2003 ayant pour objet la mise en place d'un Centre de Contrôle du Trafic."/>
+				<passiveRef href="/eli/etat/leg/loi/2002/06/06/n1/jo" id="rp13" showAs="Loi du 6 juin 2002 modifiant et complétant  1) la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes;  2) la loi modifiée du 17 décembre 1859 sur la police des chemins de fer."/>
+				<passiveRef href="/eli/etat/leg/loi/1998/12/21/n1/jo" id="rp14" showAs="Loi du 21 décembre 1998 concernant le budget des recettes et des dépenses de l'Etat pour l'exercice 1999."/>
+				<passiveRef href="/eli/etat/leg/loi/1998/05/26/n1/jo" id="rp15" showAs="Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes."/>
+				<passiveRef href="/eli/etat/leg/loi/1997/07/27/n8/jo" id="rp16" showAs="Loi du 27 juillet 1997 autorisant le Gouvernement à procéder à la construction d'une route reliant Luxembourg à Ettelbruck."/>
+				<passiveRef href="/eli/etat/leg/loi/1995/07/31/n8/jo" id="rp17" showAs="Loi du 31 juillet 1995 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes."/>
+				<passiveRef href="/eli/etat/leg/loi/1986/08/31/n1/jo" id="rp18" showAs="Loi du 31 août 1986 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes."/>
+				<passiveRef href="/eli/etat/leg/loi/1980/12/02/n2/jo" id="rp19" showAs="Loi du 2 décembre 1980 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes, telle qu'elle a été modifiée par les lois du 29 août 1972 et du 22 juin 1979."/>
+				<passiveRef href="/eli/etat/leg/loi/1979/06/22/n1/jo" id="rp20" showAs="Loi du 22 juin 1979 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un Fonds des Routes, telle qu'elle a été modifiée par la loi du 29 août 1972."/>
+				<passiveRef href="/eli/etat/leg/loi/1972/08/29/n1/jo" id="rp21" showAs="Loi du 29 août 1972 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes."/>
+			</references>
+			<notes scl:type="modification" source="#rp21">
+				<note id="M2" marker="2" refersTo="pm2" title="A|1972-09-20|1972-08-29|L|57">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1972/08/29/n1/jo">Loi du 29 août 1972 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp21">
+				<note id="M3" marker="3" refersTo="pm3" title="A|1972-09-20|1972-08-29|L|57">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1972/08/29/n1/jo">Loi du 29 août 1972 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp21">
+				<note id="M5" marker="5" refersTo="pm5" title="A|1972-09-20|1972-08-29|L|57">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1972/08/29/n1/jo">Loi du 29 août 1972 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp21">
+				<note id="M6" marker="6" refersTo="pm6" title="A|1972-09-20|1972-08-29|L|57">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1972/08/29/n1/jo">Loi du 29 août 1972 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp21">
+				<note id="M7" marker="7" refersTo="pm7" title="A|1972-09-20|1972-08-29|L|57">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1972/08/29/n1/jo">Loi du 29 août 1972 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp20">
+				<note id="M8" marker="8" refersTo="pm8" title="A|1979-08-09|1979-06-22|L|66">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1979/06/22/n1/jo">Loi du 22 juin 1979 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un Fonds des Routes, telle qu'elle a été modifiée par la loi du 29 août 1972.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp19">
+				<note id="M10" marker="10" refersTo="pm10" title="A|1980-12-27|1980-12-02|L|85">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1980/12/02/n2/jo">Loi du 2 décembre 1980 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes, telle qu'elle a été modifiée par les lois du 29 août 1972 et du 22 juin 1979.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp19">
+				<note id="M12" marker="12" refersTo="pm12" title="A|1980-12-27|1980-12-02|L|85">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1980/12/02/n2/jo">Loi du 2 décembre 1980 modifiant et complétant la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes, telle qu'elle a été modifiée par les lois du 29 août 1972 et du 22 juin 1979.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp18">
+				<note id="M14" marker="14" refersTo="pm14" title="A|1986-09-06|1986-08-31|L|69">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1986/08/31/n1/jo">Loi du 31 août 1986 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp18">
+				<note id="M15" marker="15" refersTo="pm15" title="A|1986-09-06|1986-08-31|L|69">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1986/08/31/n1/jo">Loi du 31 août 1986 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp18">
+				<note id="M17" marker="17" refersTo="pm17" title="A|1986-09-06|1986-08-31|L|69">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1986/08/31/n1/jo">Loi du 31 août 1986 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp17">
+				<note id="M18" marker="18" refersTo="pm18" title="A|1995-09-08|1995-07-31|L|73">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1995/07/31/n8/jo">Loi du 31 juillet 1995 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp17">
+				<note id="M19" marker="19" refersTo="pm19" title="A|1995-09-08|1995-07-31|L|73">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1995/07/31/n8/jo">Loi du 31 juillet 1995 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp17">
+				<note id="M20" marker="20" refersTo="pm20" title="A|1995-09-08|1995-07-31|L|73">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1995/07/31/n8/jo">Loi du 31 juillet 1995 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp16">
+				<note id="M21" marker="21" refersTo="pm21" title="A|1997-08-18|1997-07-27|L|60">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1997/07/27/n8/jo">Loi du 27 juillet 1997 autorisant le Gouvernement à procéder à la construction d'une route reliant Luxembourg à Ettelbruck.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M23" marker="23" refersTo="pm23" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M24" marker="24" refersTo="pm24" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M25" marker="25" refersTo="pm25" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M26" marker="26" refersTo="pm26" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M27" marker="27" refersTo="pm27" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M28" marker="28" refersTo="pm28" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M33" marker="33" refersTo="pm33" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M34" marker="34" refersTo="pm34" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M35" marker="35" refersTo="pm35" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp15">
+				<note id="M36" marker="36" refersTo="pm36" title="A|1998-06-09|1998-05-26|L|41">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/1998/05/26/n1/jo">Loi du 26 mai 1998 modifiant et complétant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp13">
+				<note id="M39" marker="39" refersTo="pm39" title="A|2002-07-12|2002-06-06|L|69">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2002/06/06/n1/jo">Loi du 6 juin 2002 modifiant et complétant 1) la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes; 2) la loi modifiée du 17 décembre 1859 sur la police des chemins de fer.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp10">
+				<note id="M42" marker="42" refersTo="pm42" title="A|2007-03-28|2007-03-13|L|44">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2007/03/13/n3/jo">Loi du 13 mars 2007 portant - 1. transposition en droit luxembourgeois en matière d'infrastructures de transport de la directive 97/11/CE du Conseil du 3 mars 1997 modifiant la directive 85/337/CEE concernant l'évaluation des incidences de certains projets publics et privés sur l'environnement - 2. modification de la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes, telle que modifiée - 3. modification de la loi du 10 mai 1995 relative à la gestion de l'infrastructure ferroviaire, telle que modifiée.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp10">
+				<note id="M43" marker="43" refersTo="pm43" title="A|2007-03-28|2007-03-13|L|44">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2007/03/13/n3/jo">Loi du 13 mars 2007 portant - 1. transposition en droit luxembourgeois en matière d'infrastructures de transport de la directive 97/11/CE du Conseil du 3 mars 1997 modifiant la directive 85/337/CEE concernant l'évaluation des incidences de certains projets publics et privés sur l'environnement - 2. modification de la loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes, telle que modifiée - 3. modification de la loi du 10 mai 1995 relative à la gestion de l'infrastructure ferroviaire, telle que modifiée.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp9">
+				<note id="M44" marker="44" refersTo="pm44" title="A|2008-04-17|2008-03-18|L|50">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2008/03/18/n4/jo">Loi du 18 mars 2008 relative à l'aménagement du contournement routier de Junglinster.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp8">
+				<note id="M45" marker="45" refersTo="pm45" title="A|2009-06-04|2009-05-29|L|122">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/29/n4/jo">Loi du 29 mai 2009 portant modification de la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp8">
+				<note id="M46" marker="46" refersTo="pm46" title="A|2009-06-04|2009-05-29|L|122">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/29/n4/jo">Loi du 29 mai 2009 portant modification de la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp7">
+				<note id="M47" marker="47" refersTo="pm47" title="A|2009-12-28|2009-12-21|L|259">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2009/12/21/n1/jo">Loi du 21 décembre 2009 sur les permissions de voirie et modifiant la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp6">
+				<note id="M49" marker="49" refersTo="pm49" title="A|2013-09-06|2013-07-30|L|160">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2013/07/30/n5/jo">Loi du 30 juillet 2013 concernant l'aménagement du territoire et modifiant: 1. la loi modifiée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes; 2. la loi modifiée du 15 mars 1979 sur l'expropriation pour cause d'utilité publique; 3. la loi du 10 août 1993 relative aux parcs naturels; 4. la loi modifiée du 19 juillet 2004 concernant l'aménagement communal et le développement urbain.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:border="50" scl:delim-left="(" scl:delim-right=")" scl:type="document" source="#eli-etat-leg-loi-1967-08-16-n18-consolide-2013-09-10-fr-xml">
+				<note id="note_0_0_0">
+					<p>En vertu de la loi du 30 juillet 2013, Mémorial A 160, l'article 12 de la loi modifiée du 16 août 1967 est complété par les alinéas 2 et 3. Cependant, il s'agit des alinéas 2, 3 et 4. - En cours de rectification.</p>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp5">
+				<note id="M50" marker="50" refersTo="pm50" title="A|2017-12-18|2017-12-15|L|1072">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1072/jo">Loi du 15 décembre 2017 relative à la mise à 2 x 3 voies de l’autoroute A3.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M51" marker="51" refersTo="pm51" title="A|2018-04-20|2018-04-17|L|271">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2018/04/17/a271/jo">Loi du 17 avril 2018 concernant l’aménagement du territoire et modifiant : 1. la loi modifiée du 16 août 1967 ayant pour objet la création d’une grande voirie de communication et d’un fonds des routes ; 2. la loi modifiée du 15 mars 1979 sur l’expropriation pour cause d’utilité publique ; 3. la loi modifiée du 19 juillet 2004 concernant l’aménagement communal et le développement urbain.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:border="50" scl:delim-left="(" scl:delim-right=")" scl:type="document" source="#eli-etat-leg-loi-1967-08-16-n20-consolide-2018-04-24-fr-xml">
+				<note id="note_0_1_0" marker="2">
+					<p>En vertu de la loi du 17 avril 2018, Mémorial A 271, l'alinéa 3 de l'article 12 de la loi modifiée du 16 août 1967 est modifié. Cependant, il s'agit des alinéas 3 et 4. - En cours de rectification.</p>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M53" marker="53" refersTo="pm53" title="A|2021-12-17|2021-12-15|L|878">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/15/a878/jo">Loi du 15 décembre 2021 concernant le reclassement partiel de la voirie et la reprise par l’État d’une série de chemins vicinaux et portant modification de l’article 6bis de la loi modifiée du 16 août 1967 ayant pour objet la création d’une grande voirie de communication et d’un fonds des routes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 21/12/2021 : Loi du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<title id="title_1">
+				<heading>Titre I<sup>er</sup>
+				</heading>
+				<section id="title_1.section_a">
+					<num>a </num>
+					<heading scl:separator="—" scl:style-format="b"> Voirie et statut</heading>
+					<article id="art_1er">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_1er</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_1er/19670827</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 1<sup>er</sup>.</num>
+						<alinea>
+							<content>
+								<p>Le Gouvernement est autorisé à établir une grande voirie de communication conformément au programme général énoncé à l´article 6 et aux plans à arrêter par le Grand-Duc aux termes de l´article 9. Les travaux de construction de cette voirie sont déclarés d´utilité publique.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_2">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_2</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_2/19670827</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 2.</num>
+						<alinea>
+							<content>
+								<p>L´établissement, la modification et l´exploitation de cette voirie ressortissent exclusivement à l´Etat.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La circulation sur cette voirie fait l´objet de règlements d´administration publique spéciaux.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_3">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_3</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_3/19670827</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 3.</num>
+						<alinea>
+							<content>
+								<p>La nouvelle voirie, à laquelle des parties de la voirie existante peuvent être incorporées, est établie dans la mesure du possible à l´écart des centres d´habitation avec des aménagements spéciaux ou des ouvrages d´art assurant la jonction aux voies d´accès et de départ.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le domaine de la nouvelle voirie s´établit conformément à l´article 9 alinéas 2 et 3. A l´intérieur de ce domaine la voirie proprement dite est bordée des deux côtés d´une bande de sécurité large de douze mètres. Au-delà du bord extérieur du domaine de la nouvelle voirie toute voie d´accès ou de départ est bordée de la même manière sur une longueur de cent mètres.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Jusqu´à cette distance les voies d´accès ou de départ et leurs bandes de sécurité font partie intégrante du domaine de la voie principale.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_4">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_4</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_4/20100101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2010-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm39"/>Art. 4.</num>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm47"/>Nul ne peut établir des installations ou des constructions sur le domaine de cette voirie et il ne peut, à quelque titre que ce soit, être établi d'autres accès à ce domaine que ceux qui sont ou seront aménagés par l'Etat, en application de l'alinéa 1<sup>er</sup> de l'article 3. La même interdiction s'applique aux contournements d'agglomérations et aux tronçons de route reliant un échangeur à la voirie normale de l'Etat.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les riverains de ces domaines ne jouissent pas des droits reconnus aux riverains de la voirie normale de l'Etat, particulièrement du droit d'accès.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Des constructions aux travaux autres que ceux exécutés pour le compte de l'Etat ou en vertu des dispositions de l'article 6, alinéa 4 de la présente loi, ne peuvent se faire qu'à une distance de vingt-cinq mètres pour les axes routiers relevant de la grande voirie et de quinze mètres pour les contournements d'agglomérations et tronçons de route reliant un échangeur à la voirie normale de l'Etat à des conditions faisant respecter les prescriptions qui précèdent. La largeur des zones non aedificandi en question est comptée à partir de la limite du domaine public.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>A l'intérieur de la distance de respectivement vingt-cinq ou quinze mètres, les travaux nécessaires d'entretien et de conservation de constructions existantes sont sujets à permission de voirie. Tous autres travaux de construction et de transformation sont défendus, y compris</p>
+								<ul scl:symbol="dash">
+									<li>l'aménagement de places de parcage pour compte d'établissements commerciaux, artisanaux, industriels ou administratifs, publics ou privés;</li>
+									<li>la construction de voies de desserte;</li>
+									<li>la réalisation d'aires de stockage de tout genre.<mod class="mod-end" for="#pm47"/>
+										<noteRef href="#M47" marker="47"/>
+									</li>
+								</ul>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Sans pareille autorisation, la tolérance visée à l'alinéa 3 de l'article 4bis de la présente loi ne peut être mise à profit pour des aménagements nouveaux à faire au-delà de la distance de vingt-cinq mètres.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_4bis">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_4bis</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_4bis/20020716</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 4bis.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2002-07-16</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 4bis.</num>
+						<alinea>
+							<content>
+								<p>Un règlement grand-ducal peut déterminer les tronçons de route, leurs raccordements au réseau routier ainsi que l'adaptation de celui-ci aux caractéristiques de ces tronçons pour lesquels les conditions inscrites aux articles 3 et 4 de la présente loi ne sont pas applicables. Dans ce cas, les dispositions légales et réglementaires régissant le statut de la voirie publique s'appliquent.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Des parties de la voirie existante, à déterminer par règlement grand-ducal, peuvent être assimilées à la voirie à créer en exécution de la présente loi.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>A la suite de cette assimilation, les articles 2 et 4 de la présente loi deviennent applicables à ces parties. Cependant, les accès et départs existants sont maintenus à titre de tolérance. La suppression de ces accès et départs donne droit à dédommagement.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_5">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_5</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_5/20020716</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2002-07-16</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 5.</num>
+						<alinea>
+							<content>
+								<p>Par dérogation aux interdictions prévues à l'article 4 de la présente loi, tout opérateur de télécommunications, tout gestionnaire de réseaux de transport d'électricité et d'entreprise de transport de gaz naturel exploitant un service public en vertu d'une disposition légale ou réglementaire lui accordant un droit d'usage du domaine public de l'Etat, peut être autorisé à faire usage du domaine public de la grande voirie pour établir des câbles, lignes aériennes et équipements connexes et à exécuter tous les travaux y afférents dans le respect de la destination de ce domaine ainsi que des règles de sécurité et de police qui en régissent l'utilisation.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Ce droit d'utilisation intervient dans le cadre d'une permission de voirie à délivrer par le ministre des Travaux publics. Cette permission de voirie règle les conditions techniques de l'implantation des installations et équipements et de la réalisation des travaux ainsi que les conditions de maintien, d'entretien et de modification du réseau.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>L'utilisation conjointe d'installations et d'équipements d'un usager du domaine public de la grande voirie, sous la réserve expresse que cette utilisation ne compromette pas la mission propre de service public de celui-ci, peut être imposée par le ministre des Travaux publics aux conditions techniques et financières de la permission de voirie à délivrer.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les personnes physiques ou morales investies d'une mission de service public en vertu d'une disposition légale ou réglementaire peuvent être autorisées par le ministre des Travaux publics à faire usage de la zone arrêtée à l'article 4, alinéa 3 pour l'implantation de leurs installations et équipements connexes.<mod class="mod-end" for="#pm39"/>
+									<noteRef href="#M39" marker="39"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="title_1.section_b">
+					<num>b </num>
+					<heading scl:separator="—" scl:style-format="b"> Exécution</heading>
+					<article id="art_6">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_6</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_6/20171222</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2017-12-22</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm2"/>Art. 6.</num>
+						<alinea>
+							<content>
+								<p>Le programme général d'établissement d'une grande voirie de communication est le suivant, les noms des localités citées n'indiquant pas nécessairement les localités proprement dites, mais les environs de celles-ci:</p>
+								<ul scl:symbol="dash">
+									<li>une nouvelle route d'Esch-sur-Alzette à Luxembourg, entre Lallange et Hollerich (Place St Pierre et Paul), et son raccordement à la ceinture de contournement de la ville de Luxembourg;</li>
+									<li>une ceinture de contournement de la ville de Luxembourg;<mod class="mod-start" for="#pm50"/>
+									</li>
+									<li>une nouvelle route de Luxembourg-frontière française, partant de la gare centrale de la Ville de Luxembourg vers Bettembourg-Dudelange (direction Thionville), son raccordement à la ceinture de contournement de la Ville de Luxembourg et sa jonction, à la frontière, à la grande voirie française ainsi que la mise à 2x3 voies de l’A3 entre la ceinture de contournement de la Ville de Luxembourg et la frontière française ;<mod class="mod-end" for="#pm50"/>
+										<noteRef href="#M50" marker="50"/>
+									</li>
+									<li>une nouvelle route de Luxembourg à Arlon (E9), entre la frontière belge (au Sud d'Arlon) et la ceinture de contournement de la ville de Luxembourg, son raccordement à celle-ci près de Strassen, et sa jonction, à la frontière, à la grande voirie belge;<mod class="mod-start" for="#pm26"/>
+										<mod class="mod-start" for="#pm8"/>
+									</li>
+									<li style="del">
+										<del>une nouvelle jonction entre le pont Grande-Duchesse Charlotte à Luxembourg-Ville et le boulevard de contournement de la Ville de Luxembourg près de Strassen, ses raccordements au réseau routier existant, ainsi que l'adaptation de celui-ci à la caractéristique de cette jonction.</del>
+										<mod class="mod-end" for="#pm8"/>
+										<noteRef href="#M8" marker="8"/>
+										<mod class="mod-end" for="#pm26"/>
+										<noteRef href="#M26" marker="26"/>
+										<mod class="mod-start" for="#pm14"/>
+										<mod class="mod-start" for="#pm18"/>
+									</li>
+									<li>une collectrice du Sud, reliant entre elles les principales localités du bassin minier de Rodange à Bettembourg, sa jonction au réseau autoroutier existant, ses raccordements aux principaux sites industriels de la région et sa liaison, aux frontières respectives, aux réseaux routiers allemand et belge.<mod class="mod-end" for="#pm18"/>
+										<noteRef href="#M18" marker="18"/>
+										<mod class="mod-end" for="#pm14"/>
+										<noteRef href="#M14" marker="14"/>
+										<mod class="mod-start" for="#pm21"/>
+									</li>
+									<li style="del">
+										<del>une nouvelle route de Luxembourg à Ettelbruck, partant de la ceinture de contournement de la ville de Luxembourg (Strassen), avec raccordement à la voirie de la vallée de l'Alzette, dans la région de Heisdorf-Lorentzweiler et de Mersch, et à la voirie du Nord du pays, à partir du contournement de la ville d'Ettelbruck, dans les régions de Feulen-bas (direction de Doncols-Bastogne) et de Friedhof-Diekirch (direction de Wemperhardt-Eupen);</del>
+										<mod class="mod-end" for="#pm21"/>
+										<noteRef href="#M21" marker="21"/>
+									</li>
+									<li>une nouvelle route de Luxembourg (Senningerberg) à la frontière allemande (au Nord de Wasserbillig), son raccordement au port de Mertert, et sa jonction, à la frontière, à la grande voirie allemande (direction Trêves);<mod class="mod-start" for="#pm44"/>
+									</li>
+									<li>l'achèvement de la route Echternach-Luxembourg (E29), avec sa jonction, à partir de Waldhof, au plateau de Kirchberg, et le contournement de la ville d'Echternach et de Junglinster<mod class="mod-end" for="#pm44"/>
+										<noteRef href="#M44" marker="44"/>
+									</li>
+									<li style="del">
+										<mod class="mod-start" for="#pm27"/>
+										<del>le raccordement de l'actuelle route de Longwy-Rodange à Luxembourg, à partir de Findelserhof (Bertrange), à la ceinture de contournement de la ville de Luxembourg (au sud de Strassen), et à la route d'Arlon, à Luxembourg-ville.</del>
+										<mod class="mod-end" for="#pm27"/>
+										<noteRef href="#M27" marker="27"/>
+										<mod class="mod-start" for="#pm10"/>
+									</li>
+									<li>une nouvelle jonction souterraine entre le Viaduc et la Côte d'Eich à Luxembourg, ses raccordements au réseau routier existant, ainsi que l'adaptation de celui-ci aux caractéristiques de cette jonction<mod class="mod-end" for="#pm10"/>
+										<noteRef href="#M10" marker="10"/>
+									</li>
+									<li>
+										<mod class="mod-start" for="#pm28"/>Le raccordement de la route d'Arlon (E9) à Strassen respectivement à l'autoroute Luxembourg-Bruxelles au niveau de l'échangeur du Bridel et à la ceinture de contournement de la Ville de Luxembourg au niveau de l'échangeur de Helfent<mod class="mod-end" for="#pm28"/>
+										<noteRef href="#M28" marker="28"/>
+									</li>
+								</ul>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>L'établissement de la grande voirie comprend les études préparatoires et définitives, l'acquisition des immeubles, la construction, le parachèvement et l'équipement des chaussées et ouvrages d'art, le raccordement à la voirie existante, ainsi que le rétablissement des communications interrompues par la nouvelle voirie, y compris les chemins d'exploitation agricoles et forestiers. <mod class="mod-start" for="#pm15"/>Sont visés également l'établissement, l'aménagement ou l'adaptation de tronçons de route et d'ouvrages d'art raccordés à la grande voirie pour autant qu'ils ont pour objet le contournement de centres d'habitation dont ils décongestionnent les artères et contribuent à améliorer la qualité de vie des habitants.<mod class="mod-end" for="#pm15"/>
+									<noteRef href="#M15" marker="15"/>
+									<mod class="mod-start" for="#pm19"/>Il en est de même des voies de contournement qui s'inscrivent dans un concept routier de liaison interrégionale.<mod class="mod-end" for="#pm19"/>
+									<noteRef href="#M19" marker="19"/>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm34"/>L’équipement de la grande voirie de communication comprend la mise en place d’un centre de contrôle du trafic qui recueille toutes les informations nécessaires tant sur la situation du trafic que sur l’état des infrastructures autoroutières et de leurs équipements afin de les transmettre aux instances publiques compétentes respectivement aux usagers des routes.<mod class="mod-end" for="#pm34"/>
+									<noteRef href="#M34" marker="34"/>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>L'équipement inclut notamment la signalisation et le balisage, l'éclairage, les dispositifs de sécurité, les plantations, ainsi que toutes les installations annexes, nécessitées par la grande voirie, telles que les bâtiments et emplacements pour l'entreposage du matériel d'entretien de la voirie, les aires aménagées en parcs d'arrêt et de passage à la frontière.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En outre, des emplacements peuvent être aménagés afin d'être loués dans l'intérêt notamment de l'établissement de postes de distribution de carburants, de services de dépannage et d'entretien des voitures automobiles et de lieux de restauration et/ou d'hébergement.<mod class="mod-end" for="#pm2"/>
+									<noteRef href="#M2" marker="2"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_6bis">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_6bis</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_6bis/20211221</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 6bis.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2021-12-21</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm53"/>Art. 6<i>bis</i>.</num>
+						<alinea>
+							<content>
+								<p>Le programme des contournements d’agglomérations et tronçons de route reliant un échangeur à la voirie normale de l’État est le suivant :</p>
+								<ol scl:start="1" scl:symbol="1°">
+									<li>le contournement de Bous sur la N2 entre les P.K. 18,500 et 19,570 ;</li>
+									<li>le contournement de Sandweiler sur la N2 entre son intersection avec le CR234 à l’ouest de Sandweiler et son intersection avec la N28 à l’est de Sandweiler et sur la N28 entre les P.K. 0,000 et 0,800 ;</li>
+									<li>le contournement de Junglinster sur la N11 entre le P.K. 12,200 et le P.K. 15,100 ;</li>
+									<li>le contournement de Dippach-Gare sur la N13 entre le P.K. 9,200 et le P.K. 11,200 ;</li>
+									<li>la transversale de Clervaux sur la N18 entre la N7 au P.K. 60,260 et la N18 au P.K. 7,320 ;</li>
+									<li>le contournement de Pétange et de Rodange sur la N31 entre son intersection avec la N5 au lieu-dit « Biff » et le P.K. 33,180 ;</li>
+									<li>la N32 entre le CR178 au P.K. 6,400 au lieu-dit « Uerschterhaff » et le CR174 au P.K. 4,205 à Differdange ;</li>
+									<li>la N34 entre ses intersections avec la N6 au lieu-dit « Tossebierg » et la N5 au lieu-dit « Helfenterbruck » ;</li>
+									<li>la N34A entre ses intersections avec la N34 au lieu-dit « Bourmicht » et le CR230 au P.K. 2,880 ;</li>
+									<li>le contournement de Bertrange sur la N35 entre ses intersections avec la N5 au lieu-dit « Greivelserbarrière » et la N34 ;</li>
+									<li>le contournement sud de Bridel sur le CR181 entre le P.K. 6,400 et l’intersection avec le CR215 au lieu-dit « Biergerkräiz » ;</li>
+									<li>le contournement de Bascharage entre le P.K. 14.250 sur la N5 et sa jonction avec l’A13.<mod class="mod-end" for="#pm53"/>
+										<noteRef href="#M53" marker="53"/>
+									</li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_7">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_7</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_7/19670827</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 7.</num>
+						<alinea>
+							<content>
+								<p>Ces travaux sont exécutés selon l´ordre de priorités résultant de l´octroi des crédits nécessaires dans le cadre annuel du budget de l´Etat.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_8">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_8</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_8/19670827</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 8.</num>
+						<alinea>
+							<content>
+								<p>L´Etat est autorisé à poursuivre l´acquisition et l´expropriation pour cause d´utilité publique des immeubles nécessaires à la construction et à l´aménagement de la voirie objet de la présente loi.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_9">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_9</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_9/19720924</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1972-09-24</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm3"/>Art. 9.</num>
+						<alinea>
+							<content>
+								<p>Les plans des parcelles et la liste des propriétaires à exproprier sont approuvés par règlement grand-ducal, le Conseil d'Etat entendu en son avis.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les plans parcellaires établissent des zones d'une largeur de quarante-cinq mètres destinées à recevoir la voirie, et des zones d'une largeur de cent cinquante mètres pour l'aménagement des points d'accès et de départ, des détournements des routes et des chemins existants, et pour permettre de tenir compte, le cas échéant, de la configuration particulière du terrain.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La largeur de cette zone peut être portée exceptionnellement à deux cent cinquante mètres pour l'aménagement de carrefours particulièrement difficiles.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En outre, les plans parcellaires peuvent indiquer les terrains situés en dehors des zones définies aux alinéas qui précèdent, dont l'acquisition s'avère nécessaire, soit pour l'aménagement des emplacements prévus à l'article 6, alinéas 3 et 4, soit pour l'emprunt ou le dépôt de terres, soit pour le dépôt de matériaux de construction.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dès l'expiration du délai d'un mois prévu à l'article 10, nul ne peut, dans les zones ainsi délimitées:</p>
+								<ul scl:symbol="dash">
+									<li>construire, reconstruire ou transformer les constructions existantes;</li>
+									<li>modifier le relief du sol par des travaux de déblai ou de remblai;</li>
+									<li>boiser ou déboiser.</li>
+								</ul>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Dans les cas motivés exclusivement par des travaux de conservation et d'entretien, le Ministre des travaux publics peut déroger aux dispositions de l'alinéa qui précède.<mod class="mod-end" for="#pm3"/>
+									<noteRef href="#M3" marker="3"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_10">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_10</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_10/19670827</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 10.</num>
+						<alinea>
+							<content>
+								<p>Il est envoyé à chaque collège des bourgmestre et échevins des communes sur le territoire desquelles se trouvent les biens grevés, une copie de l´arrêté prévu à l´article 9 alinéa 1<sup>er</sup>, ainsi qu´une copie des plans parcellaires de ces biens.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Quinze jours au plus tard à dater de la réception, le collège tient ces pièces à la disposition du public pendant un mois. Le public en est informé dans les formes usitées pour les publications officielles.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il est justifié de l´accomplissement de ces formalités ainsi que des dates auxquelles il a été satisfait par un certificat écrit du collège des bourgmestre et échevins.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_11">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_11</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_11/19670827</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 11.</num>
+						<alinea>
+							<content>
+								<p> Lors de l´expropriation, il n´est pas tenu compte de la plus-value des biens expropriés résultant des changements qui y furent apportés après l´expiration du délai d´un mois prévu à l´article précédent, à moins que ces changements n´aient été autorisés conformément aux dispositions de l´article 9. </p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_12">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_12</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_12/20180424</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2018-04-24</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 12.</num>
+						<alinea>
+							<content>
+								<p>Pour le calcul de l´indemnité, la valeur des biens à exproprier doit être prise en considération au moment de l´expiration du délai d´un mois prévu par l´article 10; le moment de cette prise en considération ne peut cependant précéder de plus de trois ans le jour de la requête en expropriation.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm49"/>Cependant, quelle que soit la nature des biens, il ne peut être tenu compte, même lorsqu'ils sont constatés par des actes de vente, des changements de valeur subis depuis la date de référence visée à l'alinéa suivant, s'ils sont provoqués par la perspective de modifications aux règles d'utilisation des sols découlant de plans directeurs sectoriels ou de plans d'occupation du sol.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm51"/>Les biens à exproprier sont estimés en prenant seule en considération la valeur du bien telle qu’elle était le jour avant la première publication au Journal officiel du Grand-Duché de Luxembourg :</p>
+								<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash">
+									<li>soit de la décision du Gouvernement en conseil prise en vertu de l’article 12, paragraphe 2 de la <ref href="/eli/etat/leg/loi/2018/04/17/a271/jo" id="326faf88-95d3-4fab-a04c-e22141b9d238">loi du 17 avril 2018</ref> concernant l’aménagement du territoire ;</li>
+									<li>soit de la décision du Gouvernement en conseil prise en vertu de l’article 19, paragraphe 2 de la <ref href="/eli/etat/leg/loi/2018/04/17/a271/jo" id="1e25f803-da61-481d-9b53-68cbb5845431">loi précitée du 17 avril 2018</ref>.</li>
+								</ul>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il est cependant tenu compte de l’évolution générale du prix des biens.<mod class="mod-end" for="#pm51"/>
+									<noteRef href="#M51" marker="51"/>
+									<noteRef href="#note_0_1_0"/>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il est cependant tenu compte de l'évolution générale du prix des biens.<mod class="mod-end" for="#pm49"/>
+									<noteRef href="#M49" marker="49"/> <noteRef href="#note_0_0_0"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_13">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_13</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_13/19670827</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 13.</num>
+						<alinea>
+							<content>
+								<p>Les fonctionnaires de l´administration de l´enregistrement et des domaines ont qualité pour fixer l´indemnité de commun accord avec les intéressés pour autant que la valeur de la parcelle particulière à acquérir <span scl:no-break="true">n´excède</span> pas 6.197,34 euros.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Au-delà de cette limite les acquisitions sont faites par le comité d´acquisition dont la composition et le fonctionnement feront l´objet d´un règlement d´administration publique.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>A défaut d´accord il est procédé conformément aux dispositions du titre III ci-après. Lors d´une comparution ordonnée au cours d´une instance judiciaire en application de ce titre III, l´Etat est valablement représenté par un fonctionnaire de l´administration de l´enregistrement et des domaines.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_14">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_14</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_14/19670827</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 14.</num>
+						<alinea>
+							<content>
+								<p>Les acquisitions et les emprises feront l´objet d´actes administratifs à recevoir par l´administration de <span scl:no-break="true">l´enregistrement</span> et des domaines.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_14bis_20211221" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_14bis</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_14bis/20070401</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 14bis.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2007-04-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm20"/>
+							<mod class="mod-start" for="#pm42"/>
+							<del>Art. 14<i>bis</i>.</del>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm35"/>
+									<del>L’inscription de tout projet de construction prévue à l’annexe 1 de la présente loi est subordonnée à l’élaboration préalable d’une étude d’évaluation des incidences sur l’environnement naturel et l’environnement humain.<mod class="mod-end" for="#pm35"/>
+									</del>
+									<noteRef href="#M35" marker="35"/>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>Cette étude, effectuée sous l'autorité du ministre ayant dans ses attributions l'aménagement général du territoire en collaboration avec les autres départements ministériels intéressés, est intégrée dans les documents introduits dans la procédure législative après avoir parcouru la procédure suivante: l'avant-projet sommaire doit être complété par une étude d'évaluation des incidences sur l'environnement étayée de la justification de l'opportunité du projet de construction et du choix de la ou des variantes; la détermination du tracé ne peut être arrêtée qu'après consultation publique.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>Le contenu de l'étude d'évaluation et la procédure de la consultation publique sont fixés par règlement grand-ducal.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>Cette étude, complétée par le résultat de l'enquête publique, orientera le Gouvernement dans le choix du tracé définitif.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>Le dossier afférent doit obligatoirement comprendre une étude d'impact détaillée déterminant les mesures compensatoires à définir par le Ministre de l'Environnement et à arrêter par le Gouvernement en Conseil. Les mesures compensatoires susceptibles d'être intégrées dans la réalisation du projet routier sont reprises dans les plans des parcelles sujettes à emprise.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>Les travaux relatifs aux mesures compensatoires sont déclarés d'utilité publique.</del>
+									<mod class="mod-end" for="#pm20">
+										<mod class="mod-end" for="#pm42"/>
+										<noteRef href="#M42" marker="42"/>
+									</mod>
+									<noteRef href="#M20" marker="20"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="title_1.section_c">
+					<num>c </num>
+					<heading scl:separator="—" scl:style-format="b"> Dispositions pénales</heading>
+					<article id="art_15">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_15</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_15/19980613</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">1998-06-13</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm23"/>Art. 15.</num>
+						<alinea>
+							<content>
+								<p> Les infractions aux dispositions des articles 4, 5 et 9 de la présente loi sont punies d'une amende de 251 à 12.500 euros.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Indépendamment de la peine, le tribunal ordonne d'office la remise des lieux en leur état antérieur aux frais du condamné et dans le délai qu’il lui impartit. Faute par le condamné de s'y être conformé dans le délai fixé, le ministre ayant dans ses attributions les travaux publics y pourvoira aux frais du condamné. Ce dernier sera contraint au remboursement de la dépense par état taxé et rendu exécutoire par le juge de paix saisi par requête.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les infractions prévues par la présente loi seront poursuivies et jugées conformément aux dispositions de la <ref href="/eli/etat/leg/loi/1973/02/26/n6/jo" id="1c80f2b9-b190-48ae-9bd6-673738842557" scl:verify="true">loi modifiée du 26 février 1973</ref> portant extension de la compétence des tribunaux de police en matière répressive<mod class="mod-end" for="#pm23"/>
+									<noteRef href="#M23" marker="23"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+			</title>
+			<title id="titre_ii">
+				<num>Titre II.</num>
+				<heading scl:separator=" —"> <b>Création et fonctionnement du fonds des routes</b>
+				</heading>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_16/20090608</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm45"/> Art. 16. </num>
+					<alinea>
+						<content>
+							<p>Il est institué un fonds spécial, dénommé «Fonds des routes».</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les dépenses occasionnées par la réalisation du programme général d'établissement d'une grande voirie de communication, prévu à <ref href="/eli/etat/leg/loi/1967/08/16/n1">l'article 6, alinéa 1<sup>er</sup>
+								</ref> , ainsi que celles relatives à la remise en état de cette même voirie et les frais de maintenance et d'entretien du centre de contrôle du trafic sont imputables au Fonds des routes.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Peuvent également être imputées à charge du Fonds des routes les dépenses relatives à des travaux:</p>
+							<ul scl:symbol="dash">
+								<li>de construction, de reconstruction, de remplacement, de réhabilitation et d'assainissements, ainsi que d'entretien des ouvrages d'art et hydrauliques de l'Etat,</li>
+								<li>de construction de routes nationales et de chemins repris,</li>
+								<li>de redressement et d'aménagement de la chaussée, d'amélioration et de réfection des revêtements des routes nationales et des chemins repris,</li>
+								<li>de construction et de réfection de toute piste cyclable faisant partie du réseau national de pistes cyclables mis en place par la <ref href="/eli/etat/leg/loi/1999/07/06/n1">loi du 6 juillet 1999</ref> portant création d'un réseau national de pistes cyclables,</li>
+								<li>d'aménagement de couloirs pour bus avec dispositifs de signalisation,</li>
+								<li>d'aménagement de plates-formes intermodales et de gares routières.</li>
+							</ul>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le Ministre des Travaux Publics ordonnance les montants versés au Fonds des routes.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le Fonds des routes est alimenté:</p>
+							<ol scl:symbol="a)">
+								<li>par des dotations budgétaires; </li>
+								<li>par des recettes d'emprunts; </li>
+								<li>par le produit de la vente d'immeubles acquis dans le cadre du programme précité et rendus disponibles après l'établissement de la grande voirie; </li>
+								<li>par les remboursements effectués par la République fédérale d'Allemagne conformément à l'article 7 de la convention entre le Grand-Duché de Luxembourg et la République fédérale d'Allemagne concernant la jonction des autoroutes et la construction d'un pont frontalier sur la Moselle dans la région de Perl et de Schengen signée à Luxembourg, le 18 avril 1994, et approuvée par la <ref href="/eli/etat/leg/loi/1995/08/18/n1">loi du 18 août 1995</ref>.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les sommes dont question sub b), c) et d) de l'alinéa qui précède sont portées directement en recette au Fonds des routes.<mod class="mod-end" for="#pm45"/>
+								<noteRef href="#M45" marker="45"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_16bis">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_16bis</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_16bis/20090608</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16bis.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm46"/> Art. 16bis. </num>
+					<alinea>
+						<content>
+							<p>Il est créé un comité de gestion du fonds chargé de conseiller le ministre, placé sous l'autorité du Ministre, composé de:</p>
+							<ul scl:symbol="dash">
+								<li>cinq délégués du ministre dont deux délégués de l'Administration des Ponts et Chaussées;</li>
+								<li>un délégué du ministre ayant dans ses attributions le budget.</li>
+							</ul>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le comité est présidé par un délégué du ministre.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Un règlement grand-ducal précise les modalités de fonctionnement de ce comité.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le comité de gestion a pour mission:</p>
+							<ul scl:symbol="dash">
+								<li>la planification pluriannuelle des dépenses du fonds;</li>
+								<li>l'ajustement du rythme des dépenses aux disponibilités financières du fonds;</li>
+								<li>la coordination des projets;</li>
+								<li>la présentation d'un rapport annuel sur l'exécution et le financement des travaux.</li>
+							</ul>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le comité de gestion peut recueillir tous les renseignements nécessaires à l'appréciation des dossiers qui lui sont soumis et se faire assister par des experts.<mod class="mod-end" for="#pm46"/>
+								<noteRef href="#M46" marker="46"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_17/19720924</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1972-09-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm5"/>Art. 17.</num>
+					<alinea>
+						<content>
+							<p>Suivant les besoins résultant de la réalisation du programme général d'établissement d'une grande voirie de communication, conformément à l'ordre de priorité défini en vertu de l'article 7, le Gouvernement est autorisé à contracter pour le compte de l'Etat, un emprunt pour un montant global de 24.789.352,48 euros.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les conditions et modalités de l'emprunt, notamment les montants des différentes tranches ainsi que leurs époques d'émission, font l'objet de règlements à prendre par le Ministre des finances. Ces règlements peuvent prévoir que les intérêts de l'emprunt sont exempts, en tout ou en partie, des impôts présents et futurs.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les crédits nécessaires à la couverture des charges des emprunts contractés et à contracter dans l'intérêt de l'alimentation du Fonds des routes sont inscrits chaque année au budget des dépenses de l'Etat.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L'état des emprunts contractés est publié annuellement sous un titre particulier à la situation de la dette publique, aux annexes du projet de la loi concernant le budget des recettes et des dépenses de l'Etat.<mod class="mod-end" for="#pm5"/>
+								<noteRef href="#M5" marker="5"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_18">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_18</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_18/19720924</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1972-09-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm6"/>Art. 18.</num>
+					<alinea>
+						<content>
+							<p>Aux fins visées par l'article 7, le Gouvernement joint chaque année au projet de loi concernant le budget des recettes et des dépenses de l'Etat: </p>
+							<ol scl:symbol="a)">
+								<li>un relevé récapitulatif des programmes exécutés pendant les divers exercices clos, ainsi qu'un compte rendu des recettes et des dépenses y relatives imputées au Fonds des routes au cours des mêmes exercices;</li>
+								<li>un exposé des programmes exécutés pendant l'exercice courant et projetés pour l'exercice suivant, ainsi qu'un état estimatif des dépenses occasionnées par l'exécution de ces programmes annuels et des recettes nécessaires à leur financement.<mod class="mod-end" for="#pm6"/>
+									<noteRef href="#M6" marker="6"/>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_19">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_19</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_19/19860910</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1986-09-10</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm7"/>Art. 19.</num>
+					<alinea>
+						<content>
+							<p>L'établissement, la modification et l'exploitation de la grande voirie de communication sont réalisés sous l'autorité immédiate du Ministre des travaux publics, avec le concours des services administratifs et techniques de l'Etat. <mod class="mod-start" for="#pm17"/>En cas de besoin et par dérogation aux dispositions de la <ref href="/eli/etat/leg/loi/1974/05/15/n1/jo" id="c226719e-d36e-47ff-9308-454100c59867">loi du 15 mai 1974</ref> portant réorganisation de l'administration des ponts et chaussées, le Ministre des travaux publics bénéficie dans les conditions et suivant les modalités qu'il détermine du concours de ceux des membres et services de cette administration dont la collaboration directe lui semble nécessaire.<mod class="mod-end" for="#pm17"/>
+								<noteRef href="#M17" marker="17"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le Ministre des travaux publics peut s'assurer, avec l'accord du Conseil de Gouvernement, tous autres concours nécessaires à la réalisation du programme général de création d'une grande voirie de communication. Il peut notamment engager, par contrat conclu pour une durée déterminée, du personnel expert en la matière, dont un expert-administrateur chargé d'une mission de coordination. Les frais y relatifs sont supportés par le Fonds des routes.<mod class="mod-end" for="#pm7"/>
+								<noteRef href="#M7" marker="7"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</title>
+			<title id="titre_iii">
+				<num>Titre III.</num>
+				<heading scl:separator=" —"> <b>Expropriation</b>
+				</heading>
+				<article id="art_20">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_20</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_20/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 20.</num>
+					<alinea>
+						<content>
+							<p>Lorsqu´il est constaté par arrêté grand-ducal que la prise de possession immédiate d´un ou de plusieurs immeubles est indispensable pour la réalisation des travaux visés à l´article 1<sup>er</sup> de la présente loi, <span scl:no-break="true">l´expropriation</span> de ces immeubles est poursuivie conformément aux règles ci-après.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_21">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_21</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_21/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 21.</num>
+					<alinea>
+						<content>
+							<p>Les expropriations décrétées successivement sont, pour l´appréciation de la valeur des biens expropriés, considérées comme formant un tout.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_22</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_22/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22.</num>
+					<alinea>
+						<content>
+							<p>A défaut d´accord entre parties, l´expropriant dépose l´arrêté grand-ducal visé à l´article 20, le plan des parcelles et la liste des propriétaires à exproprier au greffe du tribunal d´arrondissement de la situation des biens, où les parties intéressées pourront en prendre communication sans frais jusqu´à la fixation définitive de l´indemnité.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_23">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_23</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_23/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 23.</num>
+					<alinea>
+						<content>
+							<p>Information de ce dépôt sera donnée aux propriétaires et usufruitiers desdites parcelles, par exploit contenant assignation à jour fixe, aux fins de voir procéder au règlement des indemnités et ordonner l´envoi en possession.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L´exploit portera en tête copie de l´arrêté grand-ducal visé à l´article 20 et mentionnera les sommes que <span scl:no-break="true">l´expropriant</span> offre pour l´acquisition de l´immeuble.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le délai de l´assignation sera de huitaine.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Dans le cas où il y aurait des tiers intéressés à titre de bail ou d´antichrèse, d´usage ou d´habitation, le propriétaire sera tenu de les appeler en cause pour concourir s´ils le trouvent bon, en ce qui les concerne, aux opérations des évaluations, sinon il restera seul chargé envers eux des indemnités que ces derniers pourraient réclamer. Les mêmes intéressés pourront intervenir volontairement jusqu´à la fixation définitive des indemnités. Les indemnités des tiers intéressés ainsi appelés ou intervenants seront réglées en la même forme que celles dues aux propriétaires.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_24">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_24</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_24/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 24.</num>
+					<alinea>
+						<content>
+							<p>La cause sera appelée à l´audience indiquée par l´ajournement. Si la partie assignée a constitué ou constitue avoué, il sera procédé toute affaire cessante comme il sera dit à l´article suivant. Si elle n´a pas constitué avoué, le défaillant sera réassigné par un huissier commis, au jour fixé par le tribunal, sans qu´il soit besoin de lever le jugement.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L´instruction sera réputée contradictoire à l´égard des parties qui n´auraient pas constitué avoué sur la réassignation ou de celles qui, après avoir constitué, ne se trouveraient pas représentées aux audiences ou actes de procédure ultérieurs.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_25">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_25</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_25/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 25.</num>
+					<alinea>
+						<content>
+							<p>A l´audience indiquée par l´article précédent, le tribunal examinera si le plan des emprises s´applique à la propriété dont l´expropriation est poursuivie.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les défendeurs seront tenus de déclarer s´ils acceptent les offres d´indemnité faites par la partie poursuivante; s´ils n´acceptent pas ces offres, ils devront indiquer le montant de leurs prétentions. Ils proposeront en même temps, à peine de déchéance, toutes les exceptions qu´ils croiraient pouvoir opposer. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Aucune nullité pour vice de forme ne pourra être opposée que s´il est justifié que l´inobservation de la formalité même substantielle aura eu pour effet de porter atteinte aux intérêts de la partie qui l´invoque.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il ne pourra être accordé qu´une seule remise.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le tribunal statuera sur le tout par un seul jugement, rendu séance tenante ou au plus tard à la prochaine audience qu´il désignera.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_26">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_26</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_26/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 26.</num>
+					<alinea>
+						<content>
+							<p>Si le tribunal décide que l´action n´a pas été intentée régulièrement, que les formes prescrites par la loi <span scl:no-break="true">n´ont</span> pas été observées et que leur violation a eu pour effet de porter atteinte aux intérêts de la partie qui l´invoque, ou que le plan des emprises n´est pas applicable à la propriété dont <span scl:no-break="true">l´expropriation</span> est poursuivie, il déclarera qu´il n´y a pas lieu de procéder ultérieurement.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_27">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_27</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_27/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 27.</num>
+					<alinea>
+						<content>
+							<p>Lorsque le tribunal fait droit à la requête de l´expropriant, il fixe dans le même jugement par voie d´évaluation sommaire, le montant des indemnités provisionnelles que l´expropriant devra payer à titre global, à chacune des parties défenderesses. Le montant de ces indemnités ne peut être inférieur à quatre-vingt-dix pour-cent de la somme offerte par l´expropriant.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Par le même jugement le tribunal nommera un ou trois experts chargés de dresser l´état descriptif des immeubles et d´évaluer ceux-ci. Il commettra un juge pour faire rapport et pour se rendre sur les lieux avec les parties et les experts aux jour, heure et lieu qui seront indiqués au même jugement.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le greffe du tribunal adressera à l´expropriant dans les dix jours l´expédition du jugement.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ce jugement ainsi que celui rendu en conformité de l´article précédent n´est susceptible d´aucun recours.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le jugement constatant l´accomplissement régulier des formalités est transcrit à la diligence de l´expropriant sur le registre du conservateur des hypothèques compétent et produit, à l´égard des tiers, les mêmes effets que la transcription d´un acte de cession.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_28">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_28</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_28/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 28.</num>
+					<alinea>
+						<content>
+							<p>En vertu du jugement et sans qu´il soit besoin de le faire signifier au préalable, l´expropriant dépose à la caisse des consignations, dans le mois du prononcé du jugement, la somme fixée par le juge.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La caisse transmet à l´expropriant, dans les cinq jours du dépôt, une copie certifiée conforme du certificat de dépôt de l´indemnité provisionnelle.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Sur le vu du jugement et du certificat délivré après la date de la transcription de ce jugement, constatant que l´immeuble exproprié est libre d´hypothèque, le préposé à la caisse des consignations sera tenu de remettre aux ayants droit le montant de l´indemnité consignée, s´il n´existe aucune saisie-arrêt ou opposition sur les deniers consignés.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>A défaut de produire ces certificats ou de rapporter mainlevée des saisies-arrêts ou oppositions ou encore lorsque le jugement fixant l´indemnité n´aura pas réglé les droits respectifs du propriétaire, de l´usufruitier ou des tiers intervenants, le paiement ne pourra avoir lieu que sur ordonnance du président du tribunal saisi.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_29">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_29</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_29/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 29.</num>
+					<alinea>
+						<content>
+							<p>La prononciation du jugement prévu par l´article 27 vaudra signification tant à avoué qu´à partie; dans les trois jours de cette prononciation le greffier sera tenu de délivrer à la partie poursuivante un extrait du jugement contenant les conclusions des parties, les motifs et les dispositifs sans qu´il soit besoin d´enregistrement préalable.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Dans les trois jours suivants, cet extrait sera signifié aux experts avec sommation de se rendre sur les lieux aux jour, heure et lieu indiqués au jugement.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les experts prêteront serment sur les lieux contentieux ès-mains du juge-délégué, qui remplacera ceux qui feraient défaut ou contre lesquels il admettrait des causes de récusation par les personnes dont les parties conviennent entre elles ou, qu´à leur défaut, il désignera d´office. Il sera dressé procès-verbal par le <span scl:no-break="true">juge-délégué.</span>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les parties remettront aux experts les documents qu´elles croiront utiles à l´appréciation de l´indemnité.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_30">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_30</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_30/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 30.</num>
+					<alinea>
+						<content>
+							<p>Aussitôt après la visite des lieux, le ou les experts établissent l´état descriptif des lieux.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L´expropriant, les propriétaires et usufruitiers, ainsi que les tiers intervenants peuvent assister à ces opérations et faire consigner dans cet état toutes observations utiles. Mention de leur présence y est également faite.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les tiers intéressés à titre de bail, d´antichrèse, d´usage ou d´habitation, qui ne sont pas intervenus devant le tribunal, sont recevables à intervenir lors de l´établissement de l´état descriptif, mais sans qu´il en résulte aucun retard pour les opérations.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L´état descriptif des lieux est déposé au greffe dans les quinze jours qui suivent la visite des lieux. Ce délai peut être prorogé de quinze jours par ordonnance du président du tribunal.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le jour même du dépôt, le ou les experts envoient à l´expropriant, par lettre recommandée, le nombre de copies certifiées conformes de l´état descriptif nécessaires pour la signification aux parties en cause.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_31">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_31</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_31/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 31.</num>
+					<alinea>
+						<content>
+							<p>Après avoir signifié par exploit d´huissier à toutes parties défenderesses et intervenantes une copie certifiée conforme </p>
+							<ol scl:symbol="1°">
+								<li>du jugement fixant le montant de l´indemnité provisionnelle,</li>
+								<li> du certificat de dépôt de l´indemnité provisionnelle à la caisse des consignations,</li>
+								<li> de l´état descriptif des lieux,</li>
+							</ol>
+							<p>l´expropriant peut se faire envoyer en possession du bien exproprié par ordonnance du président du tribunal.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Cette ordonnance est apposée au bas de la requête. Elle sera exécutoire sur minute et avant <span scl:no-break="true">l´enregistrement.</span>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_32">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_32</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_32/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 32.</num>
+					<alinea>
+						<content>
+							<p>Le ou les experts commis par le tribunal en vertu de l´article 27 déposent au greffe un rapport contenant <span scl:no-break="true">l´évaluation</span> motivée des indemnités qu´ils proposent ainsi que tous renseignements utiles à la détermination de celle-ci.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ce dépôt a lieu dans le délai de trente jours qui suivent la visite des lieux. Ce délai peut être prorogé de trente jours par ordonnance du président du tribunal.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le jour même du dépôt, le ou les experts envoient, par lettre recommandée, aux parties copie certifiée conforme de leur rapport. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_33">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_33</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_33/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 33.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 33.</num>
+					<alinea>
+						<content>
+							<p scl:space-before="5">Le ou les experts peuvent être révoqués à la requête de la partie la plus diligente, lorsqu´ils n´ont pas, dans les délais prévus, déposé l´état descriptif des lieux ou leur rapport d´expertise. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ces dispositions sont applicables sans préjudice des dommages-intérêts dont le ou les experts seraient tenus à l´égard des parties.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Par la même décision le tribunal commet un ou de nouveaux experts aux fins d´établir l´état descriptif des lieux et le rapport d´expertise dans les délais prévus aux articles 30 et 32. Le ou les experts entendent les parties avant le dépôt de leur rapport.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_34">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_34</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_34/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 34.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 34.</num>
+					<alinea>
+						<content>
+							<p scl:space-before="2">La cause sera appelée et plaidée à la première audience civile qui suivra le dépôt au greffe, sans qu´il y ait lieu à signification du procès-verbal et du rapport des experts.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il ne pourra être accordé qu´une seule remise.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il sera fait rapport par le juge commis; les parties seront entendues et le jugement qui déterminera l´indemnité sera prononcé dans la huitaine des plaidoiries.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Une expédition en est adressée à l´expropriant dans les quinze jours du prononcé.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_35">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_35</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_35/19670827</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 35.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1967-08-27</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 35.</num>
+					<alinea>
+						<content>
+							<p scl:space-before="2">Si le montant de l´indemnité excède celui de l´indemnité provisionnelle, l´expropriant dépose dans le mois du prononcé du jugement à la caisse des consignations le supplément d´indemnité.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Dans les dix jours qui suivent le dépôt, il signifie par exploit d´huissier aux parties défenderesses et intervenantes une copie certifiée conforme:</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>du jugement fixant le montant de l´indemnité;</li>
+								<li>du certificat de dépôt à la caisse des consignations du supplément d´indemnité.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>A défaut, l´exproprié peut, en vertu du même jugement, exiger que l´expropriant suspende l´occupation des immeubles.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le retrait des sommes déposées à la caisse des consignations a lieu dans les conditions prévues aux alinéas 3 et 4 de l´article 28, sans que toutefois la production d´un nouveau certificat hypothécaire puisse être exigée.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_36">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_36</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_36/19980613</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 36.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1998-06-13</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm24"/>Art. 36.</num>
+					<alinea>
+						<content>
+							<p scl:space-before="2">Pour autant qu'il n'en est autrement disposé par la présente loi, seront applicables les articles 37, 38, 39, 40, 41, 42, 46, 48, 49, 51, 52 et 53 de la <ref href="/eli/etat/leg/loi/1979/03/15/n3/jo" id="94478503-03ac-4cfb-b3d2-b73fe6b76ed6" scl:verify="true">loi du 15 mars 1979</ref> sur l'expropriation pour cause d'utilité publique<mod class="mod-end" for="#pm24"/>
+								<noteRef href="#M24" marker="24"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_37">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_37</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_37/19801231</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 37.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1980-12-31</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm12"/>Art. 37.</num>
+					<alinea>
+						<content>
+							<p scl:space-before="2">Les prescriptions contenues au présent titre III s'appliquent également aux cas où l'expropriation du seul sous-sol s'avère nécessaire<mod class="mod-end" for="#pm12"/>
+								<noteRef href="#M12" marker="12"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_38">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_38</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_38/19980613</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 38.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1998-06-13</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm25"/>Art. 38.</num>
+					<alinea>
+						<content>
+							<p scl:space-before="2">L'article II: - dispositions transitoires -, de la <ref href="/eli/etat/leg/loi/1972/08/29/n1/jo" id="3c9db15f-28ff-465b-a202-965622ea7027" scl:verify="true">loi du 29 août 1972</ref> modifiant et complétant la <ref href="/eli/etat/leg/loi/1967/08/16/n1/jo" id="11571a23-eb82-4c68-a5c0-0f7bf91751b3" scl:verify="true">loi du 16 août 1967</ref> ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes, est abrogé<mod class="mod-end" for="#pm25"/>
+								<noteRef href="#M25" marker="25"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_39">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_39</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1/art_39/19980613</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1967/08/16/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 39.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2007-04-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm33"/>Art. 39.</num>
+					<alinea>
+						<content>
+							<p scl:space-before="2">Le Grand-Duc est habilité à coordonner le texte de la loi modifiée et complétée du 16 août 1967 ayant pour objet la création d'une grande voirie de communication et d'un fonds des routes. La numérotation des titres, chapitres, articles, paragraphes et alinéas, même non modifiés, pourra être changée. Le Grand-Duc est habilité à adapter les références y contenues.<mod class="mod-end" for="#pm33"/>
+								<noteRef href="#M33" marker="33"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</title>
+		</body>
+		<attachments>
+			<attachment id="attachment_1" style="del">
+				<doc name="">
+					<meta>
+						<identification source="">
+							<FRBRWork>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2023-04-28" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRcountry value=""/>
+							</FRBRWork>
+							<FRBRExpression>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2023-04-28" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRlanguage language=""/>
+							</FRBRExpression>
+							<FRBRManifestation>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2023-04-28" name=""/>
+								<FRBRauthor href=""/>
+							</FRBRManifestation>
+						</identification>
+					</meta>
+					<preface>
+						<longTitle>
+							<p scl:align="center" scl:style-format="n">
+								<mod class="mod-start" for="#pm36"/>
+								<mod class="mod-start" for="#pm43"/>
+								<del>ANNEXE 1</del>
+							</p>
+						</longTitle>
+					</preface>
+					<mainBody>
+						<alinea>
+							<content>
+								<ol scl:start="1" scl:symbol="1." style="del">
+									<li style="del">
+										<del>Raffineries de pétrole brut ( à l’exclusion des entreprises fabriquant uniquement des lubrifiants à partir de pétrole brut ) ainsi que les installations de gazéification et de liquéfaction d’au moins 500 tonnes de charbon ou de schiste bitumineux par jour.</del>
+									</li>
+									<li style="del">
+										<del>Centrales thermiques et autres installations de combustion d’une puissance calorifique d’au moins 300 MW ainsi que les centrales nucléaires et autres réacteurs nucléaires ( à l’exception des installations de recherche pour la production et la transformation des matières fissiles et fertiles, dont la puissance maximale ne dépasse pas 1kW de durée permanente thermique).</del>
+									</li>
+									<li style="del">
+										<del>Installations destinées exclusivement à stocker en permanence ou à éliminer définitivement des déchets radioactifs.</del>
+									</li>
+									<li style="del">
+										<del>Usines intégrées de première fusion de la fonte et de l’acier.</del>
+									</li>
+									<li style="del">
+										<del>Installations destinées à l’extraction d’amiante ainsi qu’au traitement et à la transformation d’amiante et de produits contenant de l’amiante : pour les produits en amiante-ciments, une production annuelle de plus de 20.000 tonnes de produits finis : pour les garnitures de friction, une production annuelle de plus de 50 tonnes de produits finis; pour les autres utilisations de l’amiante, une utilisation de plus de 200 tonnes par an.</del>
+									</li>
+									<li style="del">
+										<del>Installations chimiques intégrées.</del>
+									</li>
+									<li style="del">
+										<del> Construction d’autoroutes, de voies rapides (1), de voies pour le trafic à grande distance des chemins de fer ainsi que d’aéroports (2) dont la piste de décollage et d’atterrissage a une longueur de 2.100 mètres ou plus.</del>
+									</li>
+									<li style="del">
+										<del>Ports de commerce maritime ainsi que les voies navigables et les ports de navigation intérieure permettant l’accession de bateaux supérieurs à 1.350 tonnes. </del>
+									</li>
+									<li style="del">
+										<del> Installations d’élimination des déchets toxiques et dangereux par incinération, traitement chimique ou stockage à terre.</del>
+									</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>______</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>(1) La notion de « voies rapides » au sens de la présente annexe correspond à la définition donnée par l’accord européen du 15 novembre 1975 sur les grandes routes de trafic international. </del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>(2) La notion d’ « aéroports » au sens de la présente annexe correspond à la définition donnée par la convention de Chicago de 1944 constituant l’Organisation de l’aviation civile internationale (annexe 14).<mod class="mod-end" for="#pm43"/>
+									</del>
+									<noteRef href="#M43" marker="43"/>
+									<mod class="mod-end" for="#pm36"/>
+									<noteRef href="#M36" marker="36"/>
+								</p>
+							</content>
+						</alinea>
+					</mainBody>
+				</doc>
+			</attachment>
+		</attachments>
+	</act>
+</akomaNtoso>

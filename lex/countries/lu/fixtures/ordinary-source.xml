@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+  <act name="Code civil" scl:uri="http://eli.legilux.public.lu/eli/etat/leg/code/civil">
+    <meta>
+			<identification source="#http://data.legilux.public.lu/eli/etat/leg/code/civil/20251226">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/code/civil/20251226"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2020-01-01" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MJ"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/code/civil/20251226/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2020-01-01" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/code/civil/20251226/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2020-01-01" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil/20251226</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1804/03/21/n1</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/CODE</scl:jolux>
+						<scl:jolux scl:name="version">1</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2025-12-26</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2023-08-24</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MJ</scl:jolux>
+						<scl:jolux scl:name="personInCharge">Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Code</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:jolux xmlns="http://www.w3.org/1999/xhtml" xmlns:xopusAttr="http://www.xopus.com/xmlns/id/attr" xmlns:m="http://www.w3.org/1998/Math/MathML" scl:name="dateEntryInForce"/>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil/20251226/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/code/civil/20251226</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Code civil</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="titleShort">Code civil</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil/20251226/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/code/civil/20251226/fr</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-code-civil-2025-12-26-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+		</meta>
+    <preface>
+			<longTitle>
+				<p>Code civil</p>
+			</longTitle>
+		</preface>
+    <body>
+      <title id="title_1" scl:hidden="false">
+				<num>TITRE PRELIMINAIRE.</num>
+				<heading>
+De la publication, des effets et de l'application des lois en général
+<docNumber> (Décrété le 5 mars 1803. Promulgué le 15 du même mois.) </docNumber>
+				</heading>
+				<article id="art_1er" scl:uri="/eli/etat/leg/code/civil/art_1">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil/art_1</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil/art_1/20180401</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1804/03/21/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-04-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<scl:indexterms>
+						<scl:indexterm>
+							<scl:label>Promulgation des lois</scl:label>
+						</scl:indexterm>
+						<scl:indexterm>
+							<scl:label>Lois</scl:label>
+						</scl:indexterm>
+					</scl:indexterms>
+					<num>Art. 1er.</num>
+					<alinea>
+						<content>
+							<p>Les lois sont exécutoires dans tout le territoire luxembourgeois, en vertu de la promulgation qui en est faite par le Grand-Duc.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Elles seront exécutées dans chaque partie du Grand-Duché, du moment où la promulgation en pourra être connue.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+Al. 3 implicitement abrogé par
+<ref href="/eli/etat/leg/argd/1842/10/22/n2/jo">arr. gr.-d. 22 octobre 1842</ref>
+.
+</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_2" scl:uri="/eli/etat/leg/code/civil/art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil/art_2/20180401</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1804/03/21/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-04-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<scl:indexterms>
+						<scl:indexterm>
+							<scl:label>Rétroactivité</scl:label>
+							<scl:indexterms>
+								<scl:indexterm>
+									<scl:label>- lois</scl:label>
+								</scl:indexterm>
+							</scl:indexterms>
+						</scl:indexterm>
+						<scl:indexterm>
+							<scl:label>Lois</scl:label>
+						</scl:indexterm>
+						<scl:indexterm>
+							<scl:label>Effet rétroactif</scl:label>
+							<scl:indexterms>
+								<scl:indexterm>
+									<scl:label>- des lois</scl:label>
+								</scl:indexterm>
+							</scl:indexterms>
+						</scl:indexterm>
+					</scl:indexterms>
+					<num>Art. 2.</num>
+					<alinea>
+						<content>
+							<p>La loi ne dispose que pour l'avenir; elle n'a point d'effet rétroactif.</p>
+						</content>
+					</alinea>
+				</article>
+				</title>
+      <title id="title_fixture_art13">
+        <num>Titre de test.</num>
+        <heading>Article 13 fixture</heading>
+        <article id="art_13" scl:uri="/eli/etat/leg/code/civil/art_13">
+							<scl:JOLUXWork>
+								<scl:JOLUXComplexWork>
+									<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil/art_13</scl:jolux>
+								</scl:JOLUXComplexWork>
+								<scl:JOLUXLegalResource>
+									<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/code/civil/art_13/20180401</scl:jolux>
+									<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1804/03/21/n1</scl:jolux>
+									<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+									<scl:jolux scl:name="dateApplicability">2018-04-01</scl:jolux>
+									<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+								</scl:JOLUXLegalResource>
+							</scl:JOLUXWork>
+							<scl:indexterms>
+								<scl:indexterm>
+									<scl:label>Etrangers</scl:label>
+								</scl:indexterm>
+								<scl:indexterm>
+									<scl:label>Citoyen (qualité de)</scl:label>
+								</scl:indexterm>
+							</scl:indexterms>
+							<num>Art. 13.</num>
+							<alinea>
+								<content>
+									<p>L'étranger qui aura été admis par l'autorisation du Grand-Duc à établir son domicile dans le Luxembourg, y jouira de tous les droits civils, tant qu'il continuera d'y résider.</p>
+								</content>
+							</alinea>
+						</article>
+      </title>
+    </body>
+  </act>
+</akomaNtoso>

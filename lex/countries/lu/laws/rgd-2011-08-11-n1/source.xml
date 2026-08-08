@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-08-11" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MEN"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-08-11" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-08-11" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo</scl:jolux><scl:jolux scl:name="dateEndApplicability"/><scl:jolux scl:name="dateApplicability">2030-09-15</scl:jolux><scl:jolux scl:name="dateDocument">2011-08-11</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1546</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2011-09-15</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a178</scl:jolux><scl:jolux scl:name="historicalLegalId">2011A2990A</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="publicationDate">2011-08-22</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pr/20110142</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2009/08/26/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/trep/2009/09/03/n4/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 15/09/2030 : Règlement grand-ducal du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental.</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2009/02/06/n3/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2011-178-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a178/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2011-08-11-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2011-178-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a178/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2011/a178/fr/pdf/eli-etat-leg-memorial-2011-a178-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2011-09-15" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2023-08-21" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+<eventRef date="2023-08-21" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+<eventRef date="2023-08-21" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+<eventRef date="2023-08-21" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2023-08-21" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2023-08-21" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2023-08-21" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2026-01-02" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2026-09-15" id="e10" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2027-09-15" id="e11" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2028-09-15" id="e12" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2029-09-15" id="e13" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2030-09-14" id="e14" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2030-09-15" id="e15" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/15/a528/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2025/12/22/a640/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2025/12/22/a640/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2025/12/22/a640/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/rgd/2025/12/22/a640/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2011/08/11/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2025/12/22/a640/jo" id="rp2" showAs="Règlement grand-ducal du 22 décembre 2025 portant modification : 1° du règlement grand-ducal modifié du 14 mai 2009 déterminant les informations relatives à l’organisation scolaire que les communes ou les comités des syndicats scolaires intercommunaux doivent fournir au ministre ayant l’Éducation nationale dans ses attributions ainsi que les modalités de leur transmission ; 2° du règlement grand-ducal modifié du 6 juillet 2009 déterminant les modalités d’évaluation des élèves ainsi que le contenu du dossier d’évaluation ; 3° du règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental. "/>
+<passiveRef href="/eli/etat/leg/rgd/2023/08/15/a528/jo" id="rp3" showAs="Règlement grand-ducal du 15 août 2023 modifiant le règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental."/>
+<passiveRef href="/eli/etat/leg/rgd/2022/08/04/a455/jo" id="rp4" showAs="Règlement grand-ducal du 4 août 2022 modifiant le règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental."/>
+<passiveRef href="/eli/etat/leg/rgd/2022/07/08/a353/jo" id="rp5" showAs="Règlement grand-ducal du 8 juillet 2022 modifiant le règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental."/>
+<passiveRef href="/eli/etat/leg/rgd/2021/08/06/a618/jo" id="rp6" showAs="Règlement grand-ducal du 6 août 2021 modifiant le règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental."/>
+<passiveRef href="/eli/etat/leg/rgd/2020/08/19/a699/jo" id="rp7" showAs="Règlement grand-ducal du 19 août 2020 modifiant le règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental."/>
+<passiveRef href="/eli/etat/leg/rgd/2017/08/02/a697/jo" id="rp8" showAs="Règlement grand-ducal du 2 août 2017 modifiant 1. le règlement grand-ducal du 14 mai 2009 déterminant les informations relatives à l’organisation scolaire que les communes ou les comités des syndicats scolaires intercommunaux doivent fournir au ministre ayant l’Éducation nationale dans ses attributions ainsi que les modalités de leur transmission ; 2. le règlement grand-ducal du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental ; 3. le règlement grand-ducal du 27 juin 2016 déterminant le détail des critères de classement ainsi que les modalités des procédures d’affectation et de réaffectation des candidats à un poste d’instituteur dans l’enseignement fondamental ; et abrogeant le règlement grand-ducal du 27 avril 2009 fixant les modalités d’inscription au cours d’éducation morale et sociale et au cours d’instruction religieuse et morale ainsi que les modalités d’organisation du cours d’éducation morale et sociale aux 2e, 3e et 4e cycles de l’enseignement fondamental."/>
+<passiveRef href="/eli/etat/leg/trep/2014/09/04/n12/jo" id="rp9" showAs="REPUBLICATION du Règlement grand-ducal du 11 août 2011 fixant le plan d'études pour les quatre cycles de l'enseignement fondamental."/>
+</references>
+<notes scl:type="modification" source="#rp3">
+<note id="M1" marker="1" refersTo="pm1" title="A|2023-08-21|2023-08-15|RGD|528">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/15/a528/jo">Règlement grand-ducal du 15 août 2023 modifiant le règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2025-12-29|2025-12-22|RGD|640">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2025/12/22/a640/jo">Règlement grand-ducal du 22 décembre 2025 portant modification : 1° du règlement grand-ducal modifié du 14 mai 2009 déterminant les informations relatives à l’organisation scolaire que les communes ou les comités des syndicats scolaires intercommunaux doivent fournir au ministre ayant l’Éducation nationale dans ses attributions ainsi que les modalités de leur transmission ; 2° du règlement grand-ducal modifié du 6 juillet 2009 déterminant les modalités d’évaluation des élèves ainsi que le contenu du dossier d’évaluation ; 3° du règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M3" marker="3" refersTo="pm3" title="A|2025-12-29|2025-12-22|RGD|640">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2025/12/22/a640/jo">Règlement grand-ducal du 22 décembre 2025 portant modification : 1° du règlement grand-ducal modifié du 14 mai 2009 déterminant les informations relatives à l’organisation scolaire que les communes ou les comités des syndicats scolaires intercommunaux doivent fournir au ministre ayant l’Éducation nationale dans ses attributions ainsi que les modalités de leur transmission ; 2° du règlement grand-ducal modifié du 6 juillet 2009 déterminant les modalités d’évaluation des élèves ainsi que le contenu du dossier d’évaluation ; 3° du règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M4" marker="4" refersTo="pm4" title="A|2025-12-29|2025-12-22|RGD|640">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2025/12/22/a640/jo">Règlement grand-ducal du 22 décembre 2025 portant modification : 1° du règlement grand-ducal modifié du 14 mai 2009 déterminant les informations relatives à l’organisation scolaire que les communes ou les comités des syndicats scolaires intercommunaux doivent fournir au ministre ayant l’Éducation nationale dans ses attributions ainsi que les modalités de leur transmission ; 2° du règlement grand-ducal modifié du 6 juillet 2009 déterminant les modalités d’évaluation des élèves ainsi que le contenu du dossier d’évaluation ; 3° du règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M5" marker="5" refersTo="pm5" title="A|2025-12-29|2025-12-22|RGD|640">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2025/12/22/a640/jo">Règlement grand-ducal du 22 décembre 2025 portant modification : 1° du règlement grand-ducal modifié du 14 mai 2009 déterminant les informations relatives à l’organisation scolaire que les communes ou les comités des syndicats scolaires intercommunaux doivent fournir au ministre ayant l’Éducation nationale dans ses attributions ainsi que les modalités de leur transmission ; 2° du règlement grand-ducal modifié du 6 juillet 2009 déterminant les modalités d’évaluation des élèves ainsi que le contenu du dossier d’évaluation ; 3° du règlement grand-ducal modifié du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p scl:space-after="20">
+<mod class="mod-start" for="#pm1"/>Version consolidée applicable au 15/09/2030 : Règlement grand-ducal du 11 août 2011 fixant le plan d’études pour les quatre cycles de l’enseignement fondamental.<br/>
+</p>
+<p>
+<i>Les dispositions de l’article 1<sup>er</sup>, de l’article 2, points 1° et 2<b>° </b>et de l’article 3, points 1° et 3°, du <ref href="/eli/etat/leg/rgd/2025/12/22/a640/jo" id="d9dd6013-5ee8-424f-a0a3-d59a1aea5389" scl:verify="to_remove">règlement grand-ducal du 22 décembre 2025 (Mémorial A - N° 640 du 29 décembre 2025)</ref> entrent en vigueur selon le calendrier suivant :</i>
+</p>
+<p/>
+<ol>
+<li>
+<i>pour les classes du cycle 1.2, à partir du 15 septembre 2026 ;</i>
+</li>
+<li>
+<i>pour les classes du cycle 2.1, à partir du 15 septembre 2027 ;</i>
+</li>
+<li>
+<i>pour les classes du cycle 2.2, à partir du 15 septembre 2028 ;</i>
+</li>
+<li>
+<i>pour les classes du cycle 3.1, à partir du 15 septembre 2029 ;</i>
+</li>
+<li>
+<i>pour les classes du cycle 3.2, à partir du 15 septembre 2030.</i>
+</li>
+</ol>
+<p>
+<i>L’article 2, point 3° entre en vigueur le 14 septembre 2028 et l’article 3, point 2° entre en vigueur le 14 septembre 2030.</i>
+</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_1er/20110915</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-09-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Le plan d’études de l’enseignement fondamental est constitué de trois parties différentes jointes en annexe, portant sur les socles de compétences, les programmes et les grilles des horaires hebdomadaires. Les trois annexes font partie intégrante du présent règlement.</p>
+<ol scl:symbol="(1)">
+<li>À l’annexe 1 figurent les socles de compétences à atteindre à la fin de chaque cycle d’apprentissage par les élèves, les niveaux de compétence intermédiaires à franchir au cours des quatre cycles d’apprentissage ainsi que les niveaux de compétence pouvant être atteints après la maîtrise des socles du quatrième cycle.</li>
+<li>À l’annexe 2 figurent les programmes relatifs aux enseignements à dispenser dans les différents domaines de développement et d’apprentissage de l’enseignement fondamental. Les programmes comprennent les compétences à développer au cours des quatre cycles d’apprentissage, des exemples de descripteurs illustrant les performances attendues des élèves au cours d’un cycle, ainsi que les contenus se rapportant au développement des différentes compétences.</li>
+<li>Les grilles des horaires hebdomadaires des différentes branches relatives aux domaines de développement et d’apprentissage de l’enseignement fondamental figurent à l’annexe 3. </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_2/20110915</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-09-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Les objectifs généraux de l’enseignement fondamental définis à l’article 6 de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="015c2126-ecc1-4f23-90e7-d3902b9166e6">loi du 6 février 2009</ref> portant organisation de l’enseignement fondamental sont visés par le développement des compétences transversales figurant à l’annexe 2 qui est à intégrer dans tous les domaines de développement et d’apprentissage. À cette fin, les enseignants organisent leurs activités d’apprentissage de manière structurée en ayant recours, dans toute la mesure du possible, à des situations diversifiées et transdisciplinaires, favorisant l’autonomie des élèves.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_3/20110915</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-09-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Au cycle 1, la langue d’enseignement employée est le luxembourgeois.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_4/20260915</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-09-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm3"/>Au cycle 2, la langue d’enseignement employée dans le domaine de développement et d’apprentissage relatif à l’alphabétisation est soit la langue allemande, soit la langue française en fonction du choix opéré par les parents conformément à l’article 21<i>bis</i> de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="09047c6f-b697-427a-b05c-c625635d8b64" scl:verify="true">loi modifiée du 6 février 2009</ref> portant organisation de l’enseignement fondamental.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aux cycles 2, 3 et 4, l’allemand est la langue d’enseignement employée dans le domaine de développement et d’apprentissage relatif à l’apprentissage de la langue allemande. Le français est la langue d’enseignement employée dans le domaine de développement et d’apprentissage relatif à l’apprentissage de la langue française.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le luxembourgeois est la langue d’enseignement employée dans le domaine de développement et d’apprentissage relatif à la langue luxembourgeoise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans les domaines relatifs aux mathématiques, à l’éveil aux sciences, aux sciences naturelles et humaines, au cours vie et société, à l’expression corporelle, la psychomotricité, les sports et la santé, à l’éveil à l’esthétique, à la création et à la culture, les arts et la musique, le luxembourgeois, l’allemand et le français peuvent être employés en tant que langues d’enseignement. Toutefois, les explications écrites sont données et rédigées en allemand et en français.<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_4bis" style="del">
+<num>
+<mod class="mod-start" for="#pm5"/>
+<del>
+<def>Art. 4</def>
+</del>
+<i>
+<del>bis</del>
+</i>.</num>
+<alinea>
+<content>
+<p>
+<del>Sans préjudice de l’article 4, le français peut être utilisé comme langue d’enseignement employée dans les domaines de développement et d’apprentissage relatifs à l’alphabétisation, la langue française, les mathématiques, l’éveil aux sciences, les sciences naturelles et humaines à :</del>
+</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>
+<del>l’école fondamentale Oberkorn de la Ville de Differdange ;</del>
+</li>
+<li>
+<del>l’école fondamentale Deich de la Ville de Dudelange ;</del>
+</li>
+<li>
+<del>l’école fondamentale Fielser Schoul de la commune de Larochette, et</del>
+</li>
+<li>
+<del>l’école fondamentale Nelly Stein de la commune de Schifflange,</del>
+</li>
+</ol>
+<p>
+<del>participant à un projet pilote mené par le SCRIPT tel que prévu par l’article 4, paragraphe 1<sup>er</sup>, point 1, de la <ref href="/eli/etat/leg/loi/1993/10/07/n1/jo" id="6e6cb215-0f43-4b44-8924-2ddce74e9a01">loi modifiée du 7 octobre 1993</ref> ayant pour objet a) la création d’un Service de Coordination de la Recherche et de l’Innovation pédagogiques et technologiques ; b) la création d’un « Centre de Gestion Informatique de l’Éducation » ; c) l’institution d’un Conseil scientifique.</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>Dans le contexte de ce projet pilote mené par le SCRIPT, l’allemand est la langue d’enseignement employée pour l’apprentissage de l’allemand.</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<def>
+<del>Dans les domaines relatifs à l’expression corporelle, la psychomotricité, les sports et la santé, l’éveil à l’esthétique, à la création et à la culture, les arts et la musique, le luxembourgeois, l’allemand et le français peuvent être employés en tant que langues d’enseignement. Toutefois, les explications écrites sont rédigées en allemand et en français.<mod class="mod-end" for="#pm5"/>
+</del>
+</def>
+<noteRef href="#M5" marker="5"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_4ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_4ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_4ter/20260915</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4ter.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-09-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm4"/>Art. 4<i>ter</i>.</num>
+<alinea>
+<content>
+<p>Aux cycles 2, 3 et 4, les élèves sont répartis dans des classes composées d’élèves dont les parents ont opté pour le français comme langue d’alphabétisation et d’élèves dont les parents ont opté pour l’allemand comme langue d’alphabétisation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aux cycles 2 et 3, des groupes, composés d’élèves dont les parents ont opté pour la même langue d’alphabétisation sont créés pour le domaine d’apprentissage de la langue d’alphabétisation et de la deuxième langue. Des groupes, composés d’élèves dont les parents ont opté pour la même langue d’alphabétisation peuvent être créés pour le domaine d’apprentissage des mathématiques en prenant en compte les réalités locales et lorsque cela est jugé pédagogiquement pertinent.<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_5/20260102</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-02</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Des recommandations pédagogiques et didactiques relatives à l’application des programmes des différents domaines d’apprentissage des quatre cycles de l’enseignement fondamental sont arrêtées par le ministre ayant l’Éducation nationale dans ses attributions, l’avis du Collège des <mod class="mod-start" for="#pm2"/>directeurs de région<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/> ayant été demandé. </p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_6/20110915</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-09-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>La liste du matériel recommandé par le ministre ayant l’Éducation nationale dans ses attributions et avisé par la Commission scolaire nationale est publiée chaque année avant le 1<sup>er</sup> juillet sur le site Internet du ministère de l’Éducation nationale ou par tout autre moyen approprié.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6bis">
+<num>Art. 6<i>bis</i>.</num>
+<alinea>
+<content>
+<p>Des activités connexes au plan d’études, organisées sous forme de cours de rattrapage pour les élèves des cycles 2, 3 et 4 de l’enseignement fondamental pendant la période allant du 31 août au 11 septembre 2020, sont mises en œuvre selon les principes suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>Les élèves des cycles 2, 3 et 4.1 bénéficient dans une école de leur commune de cours de rattrapage facultatifs et gratuits pendant la période allant du 31 août au 11 septembre 2020 ;</li>
+<li>La durée des cours de rattrapage est d’une semaine pour les élèves du cycle 2, 3, et 4.1, à l’exception des cours de rattrapage de mathématiques du cycle 4.1 qui ont une durée de deux semaines ;</li>
+<li>Un cours de rattrapage en mathématiques et un cours de rattrapage en langue allemande sont organisés pour les élèves du cycle 2 ;</li>
+<li>Un cours de rattrapage en mathématiques et un cours de rattrapage en langues allemande et française sont organisés pour les élèves du cycle 3 ;</li>
+<li>Un cours de rattrapage en mathématiques, un cours de rattrapage en langue allemande et un cours de rattrapage en langue française sont organisés pour les élèves du cycle 4.1 ;</li>
+<li>Les cours de rattrapage sont tenus les lundis, mercredis et vendredis de 8.00 à 10.00 heures, de 10.15 à 12.15 heures et de 14.00 à 16.00 heures et les mardis et jeudis de 8.00 à 10.00 heures et de 10.15 à 12.15 heures. Les horaires des cours peuvent être adaptés pour les besoins des mesures sanitaires à prendre dans le cadre de la pandémie du Covid-19 ;</li>
+<li>Les cours de rattrapage sont assurés par le personnel enseignant de l’école.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_6ter">
+<num>Art. 6<i>ter</i>.</num>
+<alinea>
+<content>
+<p>Des activités connexes au plan d’études, organisées sous forme de cours de rattrapage pour les élèves des cycles 2, 3 et 4 de l’enseignement fondamental pendant la période allant du 30 août 2021 au 10 septembre 2021, sont mises en œuvre selon les principes suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>Les élèves des cycles 2, 3 et 4.1 bénéficient, dans une école de leur commune, de cours de rattrapage facultatifs et gratuits ;</li>
+<li>La durée des cours de rattrapage est d’une semaine pour les élèves des cycles 2, 3, et 4.1, à l’exception des cours de rattrapage de mathématiques du cycle 4.1 qui ont une durée de deux semaines ;</li>
+<li>Un cours de rattrapage en mathématiques et un cours de rattrapage en langue allemande sont organisés pour les élèves du cycle 2 ;</li>
+<li>Un cours de rattrapage en mathématiques et un cours de rattrapage en langues allemande et française sont organisés pour les élèves du cycle 3 ;</li>
+<li>Un cours de rattrapage en mathématiques, un cours de rattrapage en langue allemande et un cours de rattrapage en langue française sont organisés pour les élèves du cycle 4.1 ;</li>
+<li>Les cours de rattrapage sont tenus les lundis, mercredis et vendredis de 8.00 à 10.00 heures, de 10.15 à 12.15 heures et de 14.00 à 16.00 heures et les mardis et jeudis de 8.00 à 10.00 heures et de 10.15 à 12.15 heures. Les horaires des cours peuvent être adaptés pour les besoins des mesures sanitaires à prendre dans le cadre de la pandémie du Covid-19 ;</li>
+<li>Les cours de rattrapage sont assurés par le personnel enseignant de l’école, de la commune ou mis à disposition par l’État.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_6quater">
+<num>Art. 6<i>quater</i>.</num>
+<alinea>
+<content>
+<p>Des activités connexes au plan d’études, organisées sous forme d’activités guidées, sont mises en œuvre, pour les élèves des cycles 2 à 4.1 de l’enseignement fondamental, pendant la période allant du 29 août 2022 au 9 septembre 2022, selon les principes suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>Les élèves des cycles 2 à 4.1 bénéficient, dans une école de leur commune, d’activités guidées facultatives et gratuites ;</li>
+<li>La durée des activités guidées est d’une semaine pour les élèves des cycles 2 à 4.1, à l’exception des activités guidées de mathématiques du cycle 4.1 qui ont une durée de deux semaines ;</li>
+<li>Une activité guidée en mathématiques et une activité guidée en langue allemande sont organisées pour les élèves du cycle 2 ;</li>
+<li>Une activité guidée en mathématiques et une activité guidée en langues allemande et française sont organisées pour les élèves du cycle 3 ;</li>
+<li>Une activité guidée en mathématiques, une activité guidée en langue allemande et une activité guidée en langue française sont organisées pour les élèves du cycle 4.1 ;</li>
+<li>Les activités guidées sont tenues les lundis, mercredis et vendredis de 8.00 à 10.00 heures, de 10.15 à 12.15 heures et de 14.00 à 16.00 heures et les mardis et jeudis de 8.00 à 10.00 heures et de 10.15 à 12.15 heures. ;</li>
+<li>Les activités guidées sont assurées par le personnel enseignant de l’école, de la commune ou mis à disposition par l’État. </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_6quinquies">
+<num>Art. 6<i>quinquies</i>.</num>
+<alinea>
+<content>
+<p>Des activités connexes au plan d’études, organisées sous forme d’activités guidées, sont mises en œuvre, pour les élèves des cycles 2 à 4.1 de l’enseignement fondamental, pendant la période allant du 4 septembre 2023 au 14 septembre 2023, selon les principes suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les élèves des cycles 2 à 4.1 bénéficient, dans une école de leur commune de résidence, d’activités guidées facultatives et gratuites ;</li>
+<li>une activité guidée en mathématiques et une activité guidée en langue allemande sont organisées pour les élèves du cycle 2 ;</li>
+<li>une activité guidée en mathématiques et une activité guidée en langues allemande et française sont organisées pour les élèves du cycle 3 ;</li>
+<li>une activité guidée en mathématiques, une activité guidée en langue allemande et en langue française sont organisées pour les élèves du cycle 4.1 ;</li>
+<li>les activités guidées sont assurées par du personnel mis à disposition par l’État.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_7/20110915</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-09-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Le <ref href="/eli/etat/leg/rgd/2009/08/26/n1/jo" id="c5db9f69-b8d6-4485-95ac-a8225317002b">règlement grand-ducal du 26 août 2009</ref> fixant le plan d’études pour les quatre cycles de l’enseignement fondamental est abrogé. </p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_8/20110915</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-09-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Les dispositions du présent règlement grand-ducal sont applicables à partir de la rentrée scolaire 2011/2012.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1/art_9/20110915</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/08/11/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-08-21</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>Notre Ministre de l’Éducation nationale et de la Formation professionnelle est chargée de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+</content>
+</alinea>
+</article>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2024-03-07" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2024-03-07" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2024-03-07" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<b>Annexes 1 et 2</b>
+</p>
+<p scl:align="center">Pour visualiser les annexes, veuillez consulter la <ref href="https://legilux.public.lu/filestore/eli/etat/leg/memorial/2011/a178/fr/pdf/eli-etat-leg-memorial-2011-a178-fr-pdf.pdf" id="254f100c-35bd-4551-ae46-4cad037544e2" scl:verify="to_remove">version PDF</ref> du Mémorial.</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p scl:align="center">
+<b>Annexe 3 – Grilles des horaires hebdomadaires</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>Cycle 1</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les équipes pédagogiques veilleront à prévoir pour chaque semaine des situations d’apprentissage qui couvrent l’ensemble des domaines de développement et d’apprentissage définis à l’article 7, alinéa 1 de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="0bdadb84-8ac4-4965-ab4a-c5078bc61faa">loi du 6 février 2009</ref> portant organisation de l’enseignement fondamental et qui sont réparties sur 26 leçons hebdomadaires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>Cycle 2</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_1" scl:cols="50 20 30" scl:cols-align="left center center" scl:cols-valign="middle middle middle" width="100">
+<tr>
+<td/>
+<td>
+<p>Nombre annuel leçons</p>
+</td>
+<td>
+<p>Nombre moyen</p>
+<p> de leçons par semaine </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Alphabétisation, langue allemande, langue française et ouverture aux langues</p>
+</td>
+<td>
+<p scl:space-after="10">360 </p>
+<p>(306 + 54)*</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mathématiques</p>
+</td>
+<td>
+<p>216 </p>
+</td>
+<td>
+<p>6 </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Éveil aux sciences</p>
+</td>
+<td>
+<p>108</p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Langue luxembourgeoise</p>
+</td>
+<td>
+<p>36</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>« Vie et sociétés »</p>
+</td>
+<td>
+<p>72</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Eveil à l’esthétique, à la création et à la culture, arts et musique</p>
+</td>
+<td>
+<p>108</p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Expression corporelle, psychomotricité, sports et santé</p>
+</td>
+<td>
+<p>108</p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Total</p>
+</td>
+<td>
+<p>1008 leçons</p>
+</td>
+<td>
+<p>28 leçons</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La répartition hebdomadaire des leçons sera fonction de la planification de l’équipe pédagogique de cycle, dans le respect des volumes annuels fixés pour chacun des domaines et des besoins des enfants.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>* 54 leçons de langue française pendant le 2<sup>ème</sup> semestre de la deuxième année du cycle 2</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>Cycle 3 </b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_2" scl:cols="50 20 30" scl:cols-align="left center center" scl:cols-valign="middle middle middle" width="100">
+<tr>
+<td/>
+<td>
+<p>Nombre annuel leçons</p>
+</td>
+<td>
+<p>Nombre moyen</p>
+<p> de leçons par semaine </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Langue allemande, langue française et ouverture aux langues</p>
+</td>
+<td>
+<p>432</p>
+</td>
+<td>
+<p>12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mathématiques</p>
+</td>
+<td>
+<p>180</p>
+</td>
+<td>
+<p>5 </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Éveil aux sciences</p>
+</td>
+<td>
+<p>72</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Langue luxembourgeoise</p>
+</td>
+<td>
+<p>36</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>« Vie et sociétés »</p>
+</td>
+<td>
+<p>72</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Éveil à l’esthétique, à la création et à la culture, arts et musique</p>
+</td>
+<td>
+<p>108</p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Expression corporelle, psychomotricité, sports et santé</p>
+</td>
+<td>
+<p>108</p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Total</p>
+</td>
+<td>
+<p>1008 leçons</p>
+</td>
+<td>
+<p>28 leçons</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La répartition hebdomadaire des leçons sera fonction de la planification de l’équipe pédagogique de cycle, dans le respect des volumes annuels fixés pour chacun des domaines et des besoins des enfants.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>Cycle 4</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_3" scl:cols="50 20 30" scl:cols-align="left center center" scl:cols-valign="middle middle middle" width="100">
+<tr>
+<td/>
+<td>
+<p>Nombre annuel leçons</p>
+</td>
+<td>
+<p>Nombre moyen</p>
+<p> de leçons par semaine </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Langue allemande, langue française et ouverture aux langues</p>
+</td>
+<td>
+<p>432</p>
+</td>
+<td>
+<p>12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mathématiques</p>
+</td>
+<td>
+<p>180</p>
+</td>
+<td>
+<p>5 </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sciences naturelles</p>
+</td>
+<td>
+<p>36</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sciences humaines</p>
+</td>
+<td>
+<p>72</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Langue luxembourgeoise</p>
+</td>
+<td>
+<p>36</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>« Vie et sociétés »</p>
+</td>
+<td>
+<p>72</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Éveil à l’esthétique, à la création et à la culture, arts et musique</p>
+</td>
+<td>
+<p>108</p>
+</td>
+<td>
+<p>3</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Expression corporelle, psychomotricité, sports et santé </p>
+</td>
+<td>
+<p>72</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Total</p>
+</td>
+<td>
+<p>1008 leçons</p>
+</td>
+<td>
+<p>28 leçons</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La répartition hebdomadaire des leçons sera fonction de la planification de l’équipe pédagogique de cycle, dans le respect des volumes annuels fixés pour chacun des domaines et des besoins des enfants.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

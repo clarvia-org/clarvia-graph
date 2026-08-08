@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-07-10" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MECM"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-07-10" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-07-10" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2022-07-31</scl:jolux><scl:jolux scl:name="dateDocument">2011-07-10</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/945</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2011-07-31</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a156</scl:jolux><scl:jolux scl:name="historicalLegalId">2011A2742A</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">2011-07-28</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20080237</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1987/03/09/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1986/03/28/n3/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1963/06/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/1967/04/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/2006/04/19/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1982/08/16/n4/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/1962/07/09/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 31/07/2022 : Loi du 10 juillet 2011 portant organisation de l’Institut national de la statistique et des études économiques et modifiant la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’Etat.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2011-156-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a156/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2011-07-10-n5-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2011-156-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a156/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2011/a156/fr/pdf/eli-etat-leg-memorial-2011-a156-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2011-07-31" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2012-10-18" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2013-08-06" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2014-09-22" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2015-10-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2022-07-31" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2015/03/25/n3/jo"/>
+<destination href="#art_20"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2022/07/15/a398/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2011/07/10/n5/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2022/07/15/a398/jo" id="rp2" showAs="Loi du 15 juillet 2022 portant modification : 1° de la loi communale modifiée du 13 décembre 1988 ; 2° de la loi modifiée du 10 juillet 2011 portant organisation de l’Institut national de la statistique et des études économiques et modifiant la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’État ; 3° de la loi modifiée du 19 juin 2013 relative à l’identification des personnes physiques. "/>
+<passiveRef href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="rp3" showAs="Loi du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2014/09/17/n1/jo" id="rp4" showAs="Règlement grand-ducal du 17 septembre 2014 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2013/07/30/n9/jo" id="rp5" showAs="Règlement grand-ducal du 30 juillet 2013 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+<passiveRef href="/eli/etat/leg/rgd/2012/10/15/n1/jo" id="rp6" showAs="Règlement grand-ducal du 15 octobre 2012 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l’Etat."/>
+</references>
+<notes scl:type="modification" source="#rp3">
+<note id="M1" marker="1" refersTo="pm1" title="A|2015-03-31|2015-03-25|L|59">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/03/25/n3/jo">Loi du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’Etat.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2022-07-27|2022-07-15|L|398">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/07/15/a398/jo">Loi du 15 juillet 2022 portant modification : 1° de la loi communale modifiée du 13 décembre 1988 ; 2° de la loi modifiée du 10 juillet 2011 portant organisation de l’Institut national de la statistique et des études économiques et modifiant la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’État ; 3° de la loi modifiée du 19 juin 2013 relative à l’identification des personnes physiques.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 31/07/2022 : Loi du 10 juillet 2011 portant organisation de l’Institut national de la statistique et des études économiques et modifiant la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’Etat.</p>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_1er">
+<num>
+<b>Chapitre 1<sup>er</sup>
+</b>
+<i>
+<b>.</b>
+</i> </num>
+<heading scl:separator="–" scl:style-format="b"> <i>
+<b>Attributions</b>
+</i>
+</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_1er/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Il est institué sous l’autorité du ministre ayant l’Economie dans ses attributions un Institut national de la statistique et des études économiques, désigné ci-après par l’acronyme «STATEC».</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_2/20220731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Le STATEC a pour mission: </p>
+<ol scl:symbol="1.">
+<li>de constituer un système d’information statistique accessible au public, notamment sur la structure et l’activité du pays en procédant, par enquêtes ou exploitation de fichiers administratifs, à l’élaboration de statistiques concernant notamment des phénomènes démographiques, économiques, sociaux et environnementaux ainsi qu’en centralisant les données statistiques dont les organismes publics disposent en raison de leurs attributions;</li>
+<li>d’établir les comptes nationaux, globaux ou sectoriels;</li>
+<li>d’établir, ensemble avec la Banque centrale du Luxembourg, la balance des paiements et les comptes financiers et de garantir leur cohérence méthodologique conformément aux règles européennes et internationales, les modalités de la collaboration faisant l’objet d’un accord entre le Gouvernement et la Banque centrale du Luxembourg;</li>
+<li>d’établir et de gérer une «Centrale des bilans» constituée de données issues des comptes annuels des entreprises et d’en publier les informations;</li>
+<li>de réaliser les recensements de la population, du logement et des bâtiments <mod class="mod-start" for="#pm2"/>en collaboration avec les communes<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/>, la date et les modalités de ces recensements étant fixées par règlement grand-ducal;</li>
+<li>de faire des études et analyses dans le domaine de la méthodologie statistique et des procédures statistiques et d’en publier les résultats;</li>
+<li>de rassembler une documentation générale concernant les statistiques, ainsi que les théories et les faits démographiques, économiques et sociaux;</li>
+<li>de représenter le Luxembourg en tant qu’autorité nationale de statistique auprès des autorités statistiques étrangères, communautaires et internationales.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_3/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Le STATEC assure en concertation avec le Comité des statistiques publiques la coordination du système statistique national.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il assure l’harmonisation des méthodes, définitions et nomenclatures statistiques et veille à l’application des normes européennes et internationales en la matière.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_4/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>Le STATEC est chargé, en outre, sans préjudice des attributions spéciales réservées par la loi à d’autres organismes publics: </p>
+<ol>
+<li>d’élaborer des prévisions économiques, globales ou sectorielles, à court et à moyen terme et d’apporter, le cas échéant, son concours technique à l’élaboration de telles prévisions. A cet effet, le STATEC développe ou contribue au développement des outils statistiques et économétriques, notamment des modèles macroéconomiques servant à établir ces prévisions, adaptés aux particularités du pays et conformes aux normes internationales en vigueur;</li>
+<li>d’élaborer des projections économiques, sociales et démographiques, globales ou sectorielles, à long terme et d’apporter, le cas échéant, son concours à l’élaboration de telles projections;</li>
+<li>d’étudier les mouvements conjoncturels ainsi que les changements structurels de l’économie et de publier les résultats de ces études;</li>
+<li>de faire des études et analyses générales ou spéciales dans les domaines économique, démographique, social et environnemental et d’en publier les résultats;</li>
+<li>de réaliser des recherches scientifiques dans le domaine de la modélisation des faits économiques, démographiques, sociaux et environnementaux et d’en publier les résultats.<p>Le STATEC est autorisé à entreprendre, dans le domaine qui le concerne et sous réserve de l’approbation du ministre ayant l’Economie dans ses attributions et le comité de coordination interministériel pour la recherche et le développement technologique demandé en son avis pour chaque projet, des activités de R&amp;D conformément aux dispositions du titre I de la <ref href="/eli/etat/leg/loi/1987/03/09/n1/jo" id="c9cc278e-8fb3-4c71-ba01-e3592a63ff7d">loi du 9 mars 1987</ref> ayant pour objet 1. l’organisation de la recherche et du développement technologique dans le secteur public et 2. le transfert de technologie et la coopération scientifique et technique entre les entreprises et le secteur public.</p>
+<p>Le STATEC est autorisé à publier des études ou des travaux de recherche contribuant à l’analyse scientifique de l’économie et de la société luxembourgeoises.</p>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_2">
+<num>
+<b>Chapitre 2.</b>
+</num>
+<heading scl:separator=" –" scl:style-format="b"> <i>
+<b>Organisation</b>
+</i>
+</heading>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_5/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Le STATEC est dirigé par un directeur, qui en est le chef d’administration et qui a sous ses ordres le personnel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur est assisté d’un directeur adjoint auquel il peut déléguer certaines de ses attributions et qui le remplace en cas d’absence.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_6/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Sur proposition du directeur du STATEC, le ministre ayant l’Economie dans ses attributions détermine, en prenant en considération les besoins nationaux et les obligations statistiques européennes et internationales et le Conseil supérieur de la statistique, demandé en son avis, les orientations générales du programme de travail du STATEC, tant en matière statistique que pour les études et les travaux de recherche.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_7/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Dans le cadre de ses attributions le STATEC peut collaborer avec des centres de recherche économique et sociale au Luxembourg et à l’étranger. Il peut les charger de travaux d’enquêtes, de recherches et d’études.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_8/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Il est institué auprès du ministre ayant l’Economie dans ses attributions un Comité des statistiques publiques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le Comité est composé de représentants des administrations, ministères, établissements publics et observatoires mis en place par les pouvoirs publics établissant et diffusant des statistiques ou qui détiennent, de par leurs attributions, des données utilisées ou utilisables pour l’établissement des statistiques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le Comité a pour mission: </p>
+<ol scl:symbol="1.">
+<li>de coordonner les programmes statistiques des différents administrations, ministères, établissements publics et observatoires et d’en assurer le suivi afin d’en améliorer l’efficacité et la qualité, d’alléger la charge de réponse globale ainsi que de satisfaire, dans les délais prévus, aux obligations européennes et internationales;</li>
+<li>d’analyser les besoins des utilisateurs en matière de statistiques et d’analyses économiques, sociales et environnementales;</li>
+<li>de donner son avis sur tout projet de réglementation pouvant avoir des répercussions sur le système statistique national;</li>
+<li>de donner son avis sur tout projet d’enquête statistique d’organismes privés à réaliser moyennant des subventions publiques.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le Comité est présidé par le directeur du STATEC. Il dispose de l’appui administratif et technique du STATEC.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un règlement grand-ducal précise la composition du comité et en détermine l’organisation et le fonctionnement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_9/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>Il est créé auprès du ministre ayant l’Economie dans ses attributions un Conseil supérieur de la statistique dont les membres sont choisis parmi les utilisateurs et les fournisseurs de données statistiques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le Conseil exerce des fonctions consultatives auprès du STATEC et peut donner son avis sur les travaux et décisions du Comité des statistiques publiques. Il émet des propositions en vue de l’élaboration de statistiques présentant un intérêt général et en vue d’améliorer les travaux statistiques du système statistique national.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La composition, l’organisation et le fonctionnement du Conseil supérieur de la statistique et le mode d’indemnisation de ses membres sont déterminés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_10/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>Il est institué un Conseil scientifique auprès du STATEC. Il se compose de trois membres reconnus pour leur compétence dans un des domaines des missions du STATEC. Les membres sont nommés pour une durée renouvelable de 5 ans par le Gouvernement en Conseil sur proposition du ministre ayant la Recherche dans ses attributions. Les indemnités des membres du Conseil scientifique sont fixées par le Gouvernement en Conseil. Le directeur du STATEC assiste avec voix délibérative aux réunions du Conseil scientifique. Le Conseil scientifique se dote d’un règlement de fonctionnement interne.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le Conseil scientifique a pour mission d’évaluer et d’aviser les analyses, études et travaux de recherche du STATEC. Il donne son avis sur toutes les questions qui lui sont soumises par le ministre ayant l’Economie dans ses attributions et peut de sa propre initiative faire des recommandations au même ministre.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_3">
+<num>
+<b>Chapitre 3.</b> </num>
+<heading scl:separator="–" scl:style-format="b"> <b>
+<i>Procédures et méthodes</i>
+</b>
+</heading>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_11/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>Dans l’exercice de ses missions définies à l’article 2 et à l’article 4, paragraphes 2 et 4, le STATEC bénéficie de l’indépendance scientifique et professionnelle.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur du STATEC détermine les méthodes, les normes et les procédures statistiques ainsi que le contenu et la date de diffusion des publications statistiques. Il peut faire réaliser toute autre enquête, étude ou recherche urgente non inscrite dans le programme de travail, dans la limite des moyens disponibles.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’établissement des statistiques et le choix des sources et des techniques statistiques se font en fonction de considérations statistiques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les méthodes et procédures statistiques employées sont documentées et prennent en compte des normes scientifiques reconnues sur le plan européen et international. La documentation concernant les méthodes et les procédures statistiques utilisées est mise à la disposition du public.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le STATEC se donne un Code de bonnes pratiques conforme aux exigences et aux normes de qualité européennes et internationales. Ce code est accessible au public.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_12/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>Dans le choix du mode de collecte de données le STATEC privilégie l’exploitation des fichiers administratifs. Il ne recourt à des enquêtes ou recensements que si l’exploitation des fichiers administratifs s’avère impossible ou n’est pas susceptible de fournir des informations statistiques fiables et pertinentes.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Afin de limiter le nombre d’enquêtes, le transfert et l’échange de données entre les composantes du système statistique national sont autorisés suivant les modalités déterminées au sein du Comité des statistiques publiques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le STATEC informe d’une manière adéquate les redevables de l’information statistique sur les finalités poursuivies.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_13/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>Les administrations publiques, les communes et les établissements publics ainsi que toutes les personnes physiques ou morales sont tenues de fournir les renseignements statistiques demandés par le STATEC dans les délais fixés dans sa requête.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>A moins d’une mention expresse du caractère facultatif, l’obligation de répondre s’attache à toute demande d’information du STATEC se fondant sur le programme statistique national ou sur des programmes statistiques européens et internationaux.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans le cadre des missions prévues à l’article 2, le STATEC a un droit d’accès aux informations, même individuelles, contenues dans les fichiers et bases de données des administrations et services publics, collectées dans le cadre de leurs attributions administratives.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour établir les statistiques sur les accidents de la circulation routière, le STATEC obtient communication des procès-verbaux dressés à l’occasion des accidents avec dégâts corporels. Le traitement des données ne porte que sur les faits liés aux accidents, à l’exclusion de toute donnée nominative.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_14/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>En cas de non-respect de l’obligation statistique énoncée à l’article 13, le service enquêteur dispose d’un droit d’investigation exercé par les agents ou les mandataires du STATEC; ceux-ci munis d’un mandat délivré par le directeur du STATEC, peuvent demander accès à l’information statistique lorsque celle-ci n’est pas fournie dans les délais fixés ou s’il s’avère nécessaire d’en vérifier l’exactitude.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les fonctionnaires ou agents chargés de la collecte directe peuvent requérir l’assistance des autorités administratives.</p>
+</content>
+</alinea>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_15/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<alinea>
+<content>
+<p>Le refus de fournir les renseignements demandés, le refus de les fournir dans le délai prescrit ainsi que le fait de fournir intentionnellement des renseignements inexacts ou incomplets est passible d’une amende de 251 euros à 2.500 euros. Le paiement de l’amende ne dispense pas de la fourniture de l’information demandée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_16/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<alinea>
+<content>
+<p>Le STATEC garantit la non-divulgation de données à caractère confidentiel lors de la diffusion de résultats statistiques, à l’exception de la statistique du commerce extérieur. Pour cette dernière, les données détaillées qui permettent l’identification indirecte d’un exportateur ou d’un importateur résidant ne sont rendues confidentielles qu’à la demande de l’opérateur économique concerné, adressée au STATEC.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les données utilisées pour la production de statistiques sont considérées comme confidentielles lorsqu’elles permettent l’identification, directe ou indirecte, d’une personne physique ou morale ou comportent un risque de divulgation d’informations individuelles. Pour déterminer si une personne physique ou morale est identifiable, il est tenu compte de tous les moyens dont on pourrait raisonnablement admettre qu’ils puissent être utilisés par un tiers pour identifier ladite personne. Toutefois, les données qui sont tirées de sources accessibles au public et qui restent accessibles conformément à la législation ne sont pas considérées comme confidentielles. Il en est de même en cas d’autorisation expresse du redevable de l’information statistique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque l’accomplissement de ses missions ou les finalités statistiques poursuivies exigent l’utilisation de données d’unités statistiques identifiables, le traitement se fait dans le respect des droits et libertés fondamentales des personnes concernées. L’accès à ces données est réservé aux seules personnes chargées d’établir ces statistiques. Dès que l’identification des unités statistiques et tout particulièrement des personnes physiques n’est plus nécessaire dans la chaîne de production des statistiques, les données seront anonymisées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le STATEC peut accorder, à des fins scientifiques, l’accès, dans ses locaux, à des données confidentielles. La recevabilité de la demande et l’autorisation d’accès à des fins scientifiques aux données confidentielles sont subordonnées à l’examen du bien-fondé et de l’intérêt scientifique des projets de recherche pour lesquels l’autorisation est sollicitée, ainsi qu’à l’examen de la qualification scientifique du ou des demandeurs. Les modalités d’accès sont déterminées par le STATEC. Les études et résultats des recherches susceptibles d’être publiés ou diffusés sont vérifiés par le STATEC pour éviter la divulgation de données confidentielles.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les renseignements individualisables ne peuvent en aucun cas être divulgués.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les fonctionnaires et les personnes chargés de recueillir les renseignements ou de collaborer aux travaux statistiques sont personnellement responsables de la stricte observation des dispositions qui précèdent; l’article 458 du <ref href="/eli/etat/leg/code/penal" id="ab2957c4-47e5-4123-8324-c3b672654005">Code pénal</ref> leur est applicable, sans préjudice des sanctions disciplinaires éventuelles.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dispositions du présent article s’appliquent par analogie aux autres organismes faisant partie du système statistique national.</p>
+</content>
+</alinea>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_17/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>Les renseignements recueillis ne pourront être utilisés qu’à des fins statistiques, à savoir exclusivement pour l’établissement de statistiques ou l’élaboration d’analyses et d’études statistiques, économiques et sociales.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ils ne peuvent donner lieu à une utilisation administrative, judiciaire, fiscale ou de contrôle des répondants, à moins que ces derniers n’aient sans équivoque donné leur consentement à ce que les données soient utilisées à ces fins.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_18/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>Les statistiques, études et analyses élaborées par le STATEC dans le cadre de ses missions définies aux articles 2 et 4 sont accessibles à tous les utilisateurs en respectant le principe d’impartialité dans la diffusion de l’information.</p>
+</content>
+</alinea>
+</article>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_19/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<alinea>
+<content>
+<p>Nulle enquête statistique présentant un intérêt général ne peut se faire par un organisme public ou privé sans avoir été notifiée au préalable au STATEC, sous réserve de l’application sans préjudice des attributions statistiques dévolues, en la matière, à d’autres organismes publics nationaux ou internationaux. Dans le cas d’une enquête d’intérêt général, les questionnaires destinés à recueillir les renseignements, que ce soit par voie écrite, orale ou par tout autre moyen de communication, sont notifiés au STATEC. Le STATEC en accuse réception dans les sept jours ouvrables. Les questionnaires utilisés portent mention de la notification. Le STATEC a le droit de publier son avis sur les enquêtes notifiées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le STATEC tient un registre des enquêtes notifiées qui est accessible aux membres du Comité des statistiques publiques et du Conseil supérieur de la statistique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les résultats statistiques obtenus sur la base de toute enquête d’intérêt général sont communiqués au STATEC.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_4">
+<num>
+<b>Chapitre 4.</b>
+</num>
+<heading scl:separator=" –" scl:style-format="b"> <b>
+<i>Personnel</i>
+</b>
+</heading>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_20/20151001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2015-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm1"/>Art. 20.</num>
+<alinea>
+<content>
+<p>Le cadre du personnel comprend un directeur, un directeur adjoint et des fonctionnaires des différentes catégories de traitement telles que prévues par la <ref href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="b8342776-4038-4df6-a2fe-0a877a8d3e74">loi du 25 mars 2015</ref> fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’Etat.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_21/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 21.</num>
+<alinea>
+<content>
+<p>Le cadre du personnel du STATEC peut être complété par des stagiaires, des employés et des ouvriers de l’Etat suivant les besoins du service conformément aux procédures applicables à tous les engagements au service de l’Etat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En outre, lors de l’exécution de travaux d’une envergure exceptionnelle, des employés temporaires ou des experts peuvent être engagés pour la durée de ces travaux et dans les limites des crédits budgétaires.</p>
+</content>
+</alinea>
+</article>
+<article id="art_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_22/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 22.</num>
+<alinea>
+<content>
+<p>Sont nommés par le Grand-Duc les fonctionnaires des grades supérieurs au grade 8. Le ministre ayant l’Economie dans ses attributions nomme aux autres emplois.</p>
+</content>
+</alinea>
+</article>
+<article id="art_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_23/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 23.</num>
+<alinea>
+<content>
+<p>Les modalités du stage ainsi que le programme de l’examen de fin de stage et de l’examen de promotion seront déterminées par règlement grand-ducal sans préjudice de l’application des règles générales relatives au statut des fonctionnaires de l’Etat.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_5">
+<num>
+<b>Chapitre 5.</b>
+</num>
+<heading scl:separator=" –" scl:style-format="b"> <i>
+<b>Dispositions additionnelles</b>
+</i>
+</heading>
+<article id="art_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_24/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 24.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1963/06/22/n1/jo">loi modifiée du 22 juin 1963</ref> fixant le régime des traitements des fonctionnaires de l’Etat est adaptée comme suit: </p>
+<ol>
+<li>A l’annexe A «Classification des fonctions», la rubrique «I. Administration générale» est complétée comme suit: au grade 16 est ajoutée la mention <embeddedText>Institut national de la statistique et des études économiques – directeur adjoint</embeddedText>.</li>
+<li>A l’annexe D, la rubrique «I. Administration générale», sous la dénomination de la carrière supérieure de l’administration; grade de computation de la bonification d’ancienneté 12, grade de début de carrière grade 16, est complétée derrière les termes de «de l’Inspection du Travail et des Mines» par la mention <embeddedText>de l’Institut national de la statistique et des études économiques</embeddedText>.</li>
+<li>A l’article 22, section IV, est ajoutée au premier alinéa du point 8° derrière les termes de «le directeur adjoint de l’Inspection du Travail et des Mines» la mention <embeddedText>le directeur adjoint de l’Institut national de la statistique et des études économiques</embeddedText>.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_6">
+<num>
+<b>Chapitre 6.</b> </num>
+<heading scl:separator="–" scl:style-format="b"> <i>
+<b>Disposition abrogatoire</b>
+</i>
+</heading>
+<article id="art_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_25/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 25.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1962/07/09/n1/jo">loi modifiée du 9 juillet 1962</ref> portant institution d’un service central de la statistique et des études économiques est abrogée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La dénomination de <embeddedText>Service central de la statistique et des études économiques</embeddedText> est à remplacer dans l’ensemble des textes légaux et réglementaires par la dénomination <embeddedText>Institut national de la statistique et des études économiques</embeddedText>.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_7">
+<num>
+<b>Chapitre 7.</b>
+</num>
+<heading scl:separator=" –" scl:style-format="b"> <i>
+<b>Dispositions transitoires</b>
+</i>
+</heading>
+<article id="art_26">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_26</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_26/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 26.</num>
+<alinea>
+<content>
+<p>Les fonctionnaires suivants admis à la carrière supérieure à partir du 16 janvier 2004 bénéficieront d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC ou d’une autre administration ou service de l’Etat: </p>
+<ol>
+<li>Le fonctionnaire-chargé d’études, détenteur du diplôme de maîtrise d’Histoire et docteur en histoire et civilisation de l’Institut Universitaire Européen, admis au stage dans la carrière du chargé d’études auprès du STATEC à partir du 16 janvier 2004 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employé de l’Etat de la carrière S à partir du 1<sup>er</sup> décembre 1998. Il est placé hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> décembre 2000, au grade 13 le 1<sup>er</sup> décembre 2003 et au grade 14 le 1<sup>er</sup> décembre 2006. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>Le fonctionnaire-chargé d’études, détenteur des diplômes de la maîtrise de sciences économiques, mention économie et gestion de l’entreprise, et de «doctor of philosophy in management», admis au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> septembre 2005 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employé de l’Etat de la carrière S à partir du 1<sup>er</sup> septembre 1999. Il est placé hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> septembre 2001, au grade 13 le 1<sup>er</sup> septembre 2004 et au grade 14 le 1<sup>er</sup> septembre 2007. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>Le fonctionnaire-chargé d’études, détenteur du diplôme de «Lizentiat der Staatswissenschaften» et du grade de «CEMS Master», admis au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> mai 2006 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employé de l’Etat de la carrière S à partir du 1<sup>er</sup> février 2000. Il est placé hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> février 2002, au grade 13 le 1<sup>er</sup> février 2005 et au grade 14 le 1<sup>er</sup> février 2008. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>Le fonctionnaire-chargé d’études, détenteur du diplôme de maîtrise en sciences économiques, mention économie internationale, admis au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> septembre 2006 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employé de l’Etat de la carrière S à partir du 16 octobre 2000. Il est placé hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> novembre 2002, au grade 13 le 1<sup>er</sup> novembre 2005 et au grade 14 le 1<sup>er</sup> novembre 2008. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>La fonctionnaire-chargée d’études, détentrice du diplôme de la maîtrise en sciences économiques, mention monnaie-finance, admise au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> septembre 2006 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employée de l’Etat de la carrière S à partir du 1<sup>er</sup> mars 2003. EIle est placée hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> mars 2005 et au grade 13 le 1<sup>er</sup> mars 2008. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>Le fonctionnaire-chargé d’études, détenteur du grade de licencié en administration des affaires, admis au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> septembre 2006 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employé de l’Etat de la carrière S à partir du 1<sup>er</sup> février 2002. Il est placé hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> février 2004 et au grade 13 le 1<sup>er</sup> février 2007. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>Le fonctionnaire-chargé d’études, détenteur du grade de licencié en sciences économiques, admis au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> septembre 2006 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employé de l’Etat de la carrière S à partir du 1<sup>er</sup> décembre 2002. Il est placé hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> décembre 2004 et au grade 13 le 1<sup>er</sup> décembre 2007. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>La fonctionnaire-chargée d’études, détentrice du grade de licenciée en sciences de gestion, admise au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> septembre 2006 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employée de l’Etat de la carrière S à partir du 15 septembre 2000. Elle est placée hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> octobre 2002, au grade 13 le 1<sup>er</sup> octobre 2005 et au grade 14 le 1<sup>er</sup> octobre 2008. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>Le fonctionnaire-chargé d’études, détenteur du diplôme de licence en sciences économiques, admis au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> septembre 2006 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employé de l’Etat de la carrière S à partir du 1<sup>er</sup> février 2000. Il est placé hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> février 2002, au grade 13 le 1<sup>er</sup> février 2005 et au grade 14 le 1<sup>er</sup> février 2008. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>La fonctionnaire-chargée d’études, détentrice du grade de licenciée en sciences commerciales et financières, admise au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> avril 2007 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employée de l’Etat de la carrière S à partir du 1<sup>er</sup> mars 2003. Elle est placée hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> mars 2005 et au grade 13 le 1<sup>er</sup> mars 2008. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>Le fonctionnaire-chargé d’études, détenteur du diplôme de la maîtrise de sciences économiques, mention analyse et politique économiques, admis au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> juin 2008 bénéficiera, à condition d’avoir réussi à l’examen de fin de stage prévu pour sa carrière, d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employé de l’Etat de la carrière S à partir du 1<sup>er</sup> mars 2003. Il est placé hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> mars 2005 et au grade 13 le 1<sup>er</sup> mars 2008. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>La fonctionnaire-chargée d’études, détentrice du grade de licenciée en sciences commerciales et consulaires, admise au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> septembre 2006 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employée de l’Etat de la carrière S à partir du 15 avril 2005. Elle est placée hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> mai 2007. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>Le fonctionnaire-chargée d’études, détentrice du grade de «Diplom-Volkswirtin», admise au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> septembre 2006 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employée de l’Etat de la carrière S à partir du 15 octobre 2005. Elle est placée hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> novembre 2007. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>La fonctionnaire-chargée d’études, détentrice du grade académique de «Diplom-Mathematikerin», admise au stage dans la carrière du chargé d’études auprès du STATEC à partir du 25 octobre 2006 bénéficiera, sous condition d’avoir réussi à l’examen de fin de stage de sa carrière, d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du STATEC en tant qu’employée de l’Etat de la carrière S à partir du 1<sup>er</sup> avril 2006. Elle est placée hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> avril 2008. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+<li>Le fonctionnaire-chargé d’études, détenteur des diplômes de maîtrise d’économétrie et d’études supérieures spécialisées en technique statistique et informatique, admis au stage dans la carrière du chargé d’études auprès du STATEC à partir du 1<sup>er</sup> mai 2007 bénéficiera d’une reconstitution de carrière à partir de la première date d’entrée au service auprès du Ministère des Affaires étrangères en tant qu’employé de l’Etat de la carrière S à partir du 1<sup>er</sup> janvier 2004. Il est placé hors cadre et, pour la fixation de la carrière, il est admis que la nomination définitive au grade 12 a eu lieu le 1<sup>er</sup> janvier 2006, au grade 13 le 1<sup>er</sup> janvier 2009 et aura lieu au grade 14 le 1<sup>er</sup> janvier 2012. Les avancements subséquents sont subordonnés aux dispositions légales et réglementaires de sa carrière.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_27">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5/art_27/20110731</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/07/10/n5</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-07-31</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 27.</num>
+<alinea>
+<content>
+<p>Les employés de l’Etat du STATEC énumérés au présent paragraphe peuvent accéder au statut de fonctionnaire pendant une période transitoire de 7 ans à compter de la date d’entrée en vigueur de la présente loi selon les modalités suivantes: </p>
+<ol>
+<li>Les trois employés de l’Etat, détenteurs du diplôme de fin d’études secondaires, engagés à l’Institut belgo-Iuxembourgeois du change (IBLC) et ayant prêté serment entre les mains du Ministre luxembourgeois compétent, ayant réussi leur examen de promotion, admis au service du STATEC en qualité d’employés de la carrière D à partir du 1<sup>er</sup> avril 1994, peuvent obtenir une nomination à la fonction d’inspecteur principal premier en rang hors cadre avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage, à condition de réussir l’examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal.</li>
+<li>L’employée de l’Etat, détentrice du diplôme de la maîtrise de sciences économiques, engagée auprès du STATEC à partir du 1<sup>er</sup> mars 2002 est admissible à la carrière du chargé d’études hors cadre en vertu de ses études et de ses diplômes à partir du moment où elle aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employée. Elle est dispensée de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur du grade de licencié en sciences économiques, engagé auprès du STATEC à partir du 1<sup>er</sup> mai 2003 est admissible à la carrière du chargé d’études hors cadre en vertu de ses études et de ses diplômes à partir du moment où il aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employé. Il est dispensé de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur du grade de licencié en sciences économiques, engagé auprès du STATEC à partir du 1<sup>er</sup> septembre 2001 est admissible à la carrière du chargé d’études hors cadre en vertu de ses études et de ses diplômes à partir du moment où il aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employé. Il est dispensé de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur des diplômes de licencié en sciences mathématiques et d’études complémentaires en administration des entreprises, engagé auprès du STATEC à partir du 1<sup>er</sup> mars 2000 est admissible à la carrière du chargé d’études hors cadre en vertu de ses études et de ses diplômes à partir du moment où il aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employé. Il est dispensé de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur des diplômes de maîtrise en sciences économiques mention économie d’entreprise, d’études supérieures européennes, d’études postuniversitaires en gestion de l’information, d’études supérieures spécialisées en gestion des administrations et services publics, engagé auprès du STATEC à partir du 15 février 2002 est admissible à la carrière du chargé d’études hors cadre en vertu de ses études et de ses diplômes à partir du moment où il aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employé. Il est dispensé de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur des diplômes de licencié en sciences économiques, engagé auprès du STATEC à partir du 1<sup>er</sup> février 2000 est admissible à la carrière du chargé d’études hors cadre en vertu de ses études et de ses diplômes à partir du moment où il aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employé. Il est dispensé de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employée de l’Etat, détentrice du diplôme de maîtrise de sciences économiques, engagée auprès du STATEC à partir du 15 janvier 2002 est admissible à la carrière du chargé d’études hors cadre en vertu de ses études et de ses diplômes à partir du moment où elle aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employée. Elle est dispensée de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur du diplôme «Diplom-Informatiker», engagé auprès du STATEC à partir du 1<sup>er</sup> avril 2004 est admissible à la carrière du chargé d’études-informaticien hors cadre en vertu de ses études et de ses diplômes à partir du moment où il aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employé. Il est dispensé de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur du diplôme «Bachelor of Science with Second Class Honours in Computing», engagé auprès du STATEC à partir du 1<sup>er</sup> mars 2004 est admissible à la carrière du chargé d’études-informaticien hors cadre en vertu de ses études et de ses diplômes à partir du moment où il aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employé. Il est dispensé de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur du diplôme «Bachelor of Science with Second Class Honours in Computing Science (Artificial Intelligence)», engagé auprès du STATEC à partir du 16 août 2005 est admissible à la carrière du chargé d’études-informaticien hors cadre en vertu de ses études et de ses diplômes à partir du moment où il aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employé. Il est dispensé de l’examen d’admission au stage, du stage et de l’examen d’admission définitive, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur du diplôme d’ingénieur technicien en électrotechnique, assimilé au diplôme d’ingénieur industriel, engagé auprès du STATEC à partir du 1<sup>er</sup> juin 1992 est admissible à la carrière d’ingénieur technicien en vertu de ses études et de ses diplômes au moment de l’entrée en vigueur de la présente loi. Il est placé hors cadre au moment de la nomination à moins qu’il n’existe pas d’autres fonctionnaires de la même carrière dans le cadre. Il est dispensé de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur du diplôme d’ingénieur technicien en électrotechnique, assimilé au diplôme d’ingénieur industriel, engagé auprès du STATEC à partir du 1<sup>er</sup> octobre 1995 est admissible à la carrière d’ingénieur technicien en vertu de ses études et de ses diplômes. Il est placé hors cadre au moment de la nomination à moins qu’il n’existe pas d’autres fonctionnaires de la même carrière dans le cadre. Il est dispensé de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen de carrière et l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employée de l’Etat, détentrice du diplôme de fin d’études secondaires techniques, engagée auprès du STATEC à partir du 1<sup>er</sup> octobre 1995 en qualité d’employée mi-temps de la carrière D est admissible à la carrière du rédacteur hors cadre en vertu de ses études et de ses diplômes. Elle est dispensée de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employée de l’Etat, détentrice du diplôme de fin d’études secondaires, engagée auprès du STATEC à partir du 17 mars 1997 en qualité d’employée mi-temps de la carrière D est admissible à la carrière du rédacteur hors cadre en vertu de ses études et de ses diplômes. Elle est dispensée de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen de carrière et l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employée de l’Etat, détentrice du diplôme de fin d’études de l’Ecole de Commerce et de Gestion, engagée auprès du STATEC à partir du 15 octobre 1996 en qualité d’employée mi-temps de la carrière D est admissible à la carrière du rédacteur hors cadre en vertu de ses études et de ses diplômes. Elle est dispensée de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen de carrière et l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employée de l’Etat, détentrice du diplôme de fin d’études moyennes, engagée auprès du STATEC à partir du 1<sup>er</sup> février 2002 en qualité d’employée de la carrière C est admissible à la carrière de l’expéditionnaire hors cadre en vertu de ses études et de ses diplômes à partir du moment où elle aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employée. Elle est dispensée de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen de carrière et l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employée de l’Etat, détentrice du diplôme de fin d’études de l’Ecole des Arts et Métiers – section Beaux Arts, engagée auprès du STATEC à partir du 10 mai 1982 en qualité d’employée de la carrière C est admissible à la carrière de l’expéditionnaire hors cadre sous réserve de remplir les conditions d’études. Elle est dispensée de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen de carrière et l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur du certificat d’aptitude professionnelle dans le métier de mécanicien d’autos, engagé auprès du STATEC à partir du 1<sup>er</sup> mai 1993 en qualité d’employé de la carrière B est admissible à la carrière de l’expéditionnaire technique en vertu de ses études et de ses diplômes. Il est placé hors cadre au moment de la nomination à moins qu’il n’existe pas d’autres fonctionnaires de la même carrière dans le cadre. Il est dispensé de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employée de l’Etat, détentrice du certificat de fin d’études primaires, engagée auprès du STATEC à partir du 1<sup>er</sup> novembre 1999 en qualité d’employée de la carrière A est admissible à la carrière du concierge en vertu de ses études et de ses diplômes à partir du moment où elle aura accompli dix années de service, à temps plein ou à temps partiel, auprès de l’Etat en qualité d’employée. Elle est placée hors cadre au moment de la nomination à moins qu’il n’existe pas d’autres fonctionnaires de la même carrière dans le cadre. Elle est dispensée de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.</li>
+<li>L’employé de l’Etat, détenteur du certificat d’aptitude professionnelle dans le métier d’électronicien, engagé auprès du STATEC à partir du 1<sup>er</sup> avril 1997 en qualité d’employé de la carrière B1 est admissible à la carrière de l’expéditionnaire technique en vertu de ses études et de ses diplômes. Il est placé hors cadre au moment de la nomination à moins qu’il n’existe pas d’autres fonctionnaires de la même carrière dans le cadre. Il est dispensé de l’examen d’admission au stage, du stage, de l’examen d’admission définitive et de l’examen de promotion, à condition de réussir l’examen spécial dont l’organisation et la matière sont déterminées par règlement grand-ducal.<p>Pour la reconstitution des carrières des agents fonctionnarisés en vertu du présent article, les dispositions de l’article 7, paragraphe 6, de la <ref href="/eli/etat/leg/loi/1963/06/22/n1/jo" id="0656eccf-8677-4c4d-8014-3242b8d9ae2c">loi modifiée du 22 juin 1963</ref> fixant le régime des traitements des fonctionnaires de l’Etat ne sont pas applicables et les années passées au service de l’Etat, déduction faite d’une période de stage de 2 ans, sont mises en compte aux intéressés pour l’application des dispositions des articles 8 et 22 de la <ref href="/eli/etat/leg/loi/1963/06/22/n1/jo" id="120026d8-8cc3-41e1-80e0-b66bfeefba11">même loi</ref> et celle de l’article 5 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="393dd7cf-a927-41c3-a5ef-33e771783aeb">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat ainsi que pour tous les avancements automatiques prévus par d’autres lois et règlements grand-ducaux. Les agents ainsi fonctionnarisés sont classés dans leur nouvelle carrière au grade correspondant à celui auquel ils étaient classés en qualité d’employé de l’Etat au moment de la fonctionnarisation.</p>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

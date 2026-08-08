@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-11-15" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFA"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-11-15" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-11-15" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2011-11-15</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFA</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1077</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2011-11-26</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a236</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2011A4000A</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2011-11-22</scl:jolux>
+						<scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MFA</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/ns/prov#Entity</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="draft">/eli/etat/proj/pr/20110103</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1928/04/21/n2/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1995/03/29/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2004/06/25/n2/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2007/06/26/n1/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 01/01/2020 : Règlement grand-ducal du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2008/12/16/n5/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2011-236-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a236/fr/pdf/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a236/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2011-11-15-n1-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2011-236-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a236/fr/pdf/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a236/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2011/a236/fr/pdf/eli-etat-leg-memorial-2011-a236-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2011-11-15" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2017-05-26" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+				<eventRef date="2020-01-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2017/05/17/a500/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_5"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_10"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_10"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_11"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_12"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_14"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_15"/>
+					</textualMod>
+					<textualMod id="pm15" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm16" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_17"/>
+					</textualMod>
+					<textualMod id="pm17" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/12/a908/jo"/>
+						<destination href="#art_27"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2011/11/15/n1/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2017/05/17/a500/jo" id="rp2" showAs="Règlement grand-ducal du 17 mai 2017 modifiant le règlement grand-ducal du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités."/>
+				<passiveRef href="/eli/etat/leg/rgd/2019/12/12/a908/jo" id="rp3" showAs="Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues. "/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2017-05-22|2017-05-17|RGD|500">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a500/jo">Règlement grand-ducal du 17 mai 2017 modifiant le règlement grand-ducal du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M13" marker="13" refersTo="pm13" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M14" marker="14" refersTo="pm14" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M15" marker="15" refersTo="pm15" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M16" marker="16" refersTo="pm16" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M17" marker="17" refersTo="pm17" title="A|2019-12-28|2019-12-12|RGD|908">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/12/a908/jo">Règlement grand-ducal du 12 décembre 2019 modifiant : 1° le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 2° le règlement grand-ducal modifié du 2 septembre 2011 1. fixant les conditions d’application et modalités d’exécution relatives au contrat d’accueil et d’intégration 2. modifiant le règlement grand-ducal du 15 mai 2001 fixant le montant du droit d’inscription à payer lors de l’admission à un cours d’éducation des adultes organisé par le Service de la Formation des Adultes 3. modifiant le règlement grand-ducal du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes 4. modifiant le règlement grand-ducal du 3 août 2010 fixant les montants des droits d’inscription à payer lors de l’admission à un cours organisé par l’Institut national des langues ; 3° le règlement grand-ducal du 15 novembre 2011 relatif à l’organisation et au fonctionnement des commissions consultatives communales d’intégration ; 4° le règlement grand-ducal modifié du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités ; 5° le règlement grand-ducal du 23 avril 2013 ayant pour objet 1. de fixer le montant du droit d’inscription à payer lors de l’admission à un cours d’intérêt général organisé par le Service de la formation des adultes et 2. de modifier le règlement grand-ducal modifié du 31 mars 2000 ayant pour objet 1) de fixer les modalités des contrats conventionnant des cours pour adultes et les conditions d’obtention d’un label de qualité et d’une subvention 2) de créer une Commission Consultative à l’Éducation des Adultes ; 6° le règlement grand-ducal du 27 juin 2018 fixant le montant des droits d’inscription aux cours organisés par l’Institut national des langues.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 01/01/2020 : Règlement grand-ducal du 15 novembre 2011 portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_i">
+				<num>
+					<b>Chapitre I.</b>
+				</num>
+				<heading scl:separator=" ">
+					<b>Répartition des représentants des étrangers au Conseil national pour étrangers</b>
+				</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_1er/20111126</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>.</num>
+					<paragraph id="paragraph_1">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Sur base de l’importance proportionnelle des diverses nationalités présentes dans la population de résidence la plus récente du Grand-Duché de Luxembourg calculée par </p>
+								<p>e service central de la statistique et des études économiques, le nombre de représentants de pays qui font partie de l’Union européenne est fixé à 15.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_2">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le nombre des représentants de pays ne faisant pas partie de l’Union européenne est fixé à 7.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_2/20170526</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<paragraph id="paragraph_3">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm1"/>Les représentants des Etats membres de l’Union européenne se répartissent comme suit:</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<img id="img_1" scl:img-height="449px" scl:img-width="620px" src="data:image/png;base64,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" width="100"/>
+									<mod class="mod-end" for="#pm1"/>
+									<noteRef href="#M1" marker="1"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_4">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Pour le Portugal, la France, l’Italie, la Belgique, l’Allemagne, le Royaume-Uni et les Pays-Bas, il y a autant de membres suppléants que de membres effectifs.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_5">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Pour l’ensemble des autres Etats membres de l’Union européenne, il y a 5 membres effectifs et 5 membres suppléants qui sont proposés dans l’ordre du nombre de voix obtenues, étant donné que les 5 candidats ayant obtenu le plus de voix sont proposés comme membres effectifs, sans qu’il ne puisse y avoir plus d’un membre effectif ou suppléant proposé par Etat.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_3/20111126</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<alinea>
+						<content>
+							<p> Pour l’ensemble des Etats hors Union européenne, il y a 7 membres effectifs et 7 membres suppléants qui sont proposés dans l’ordre du nombre de voix obtenues, étant donné que les 7 candidats ayant obtenu le plus de voix sont proposés comme membres effectifs, sans qu’il ne puisse y avoir plus d’un membre effectif ou suppléant proposé par Etat.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_4/20111126</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<paragraph id="paragraph_6">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Pour chaque membre du Conseil national pour étrangers, ci-après désigné «le conseil», il est nommé un suppléant. Le suppléant siège en lieu et place du membre effectif en cas d’empêchement de ce dernier. Des jetons de présence sont accordés aux membres effectifs et suppléants. Les membres suppléants ne touchent de jetons que pour les réunions auxquelles ils assistent en remplacement d’un membre effectif empêché. Une indemnité est versée au secrétaire du conseil.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_7">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les membres effectifs du conseil peuvent décider de se réunir en présence des membres suppléants pour des questions qui revêtent une importance particulière. Dans ces réunions, seuls les membres effectifs ou les membres qui siègent en lieu et place d’un membre effectif ont le droit de vote.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En cas de décès ou de démission d’un membre du conseil, son suppléant le remplace jusqu’au renouvellement du conseil.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_8">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le mandat individuel d’un représentant des étrangers prend fin, hormis le cas de décès ou de démission, dès qu’il acquiert la nationalité luxembourgeoise. Il en est de même en cas de transfert du domicile en dehors du territoire du Grand-Duché de Luxembourg. Dans ces cas, un membre suppléant remplace d’office le membre effectif. Le membre suppléant est remplacé suivant les dispositions prévues aux articles 25 et suivants, de façon à respecter les modalités de représentation fixées aux articles précédents.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_ii">
+				<num>
+					<b>Chapitre II.</b>
+				</num>
+				<heading scl:separator=" ">
+					<b>Associations admises à proposer les représentants des étrangers<br/>au ministre ayant dans ses attributions l’Intégration</b>
+				</heading>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_5/20200101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<alinea>
+						<content>
+							<p> Sont admises à proposer les représentants des étrangers au ministre ayant dans ses attributions l’Intégration, désigné par la suite «le ministre», d’après les modalités ci-après désignées:</p>
+							<ol scl:start="1" scl:symbol="a)">
+								<li>les associations des étrangers ayant une activité sociale, culturelle ou sportive, l’association des étrangers étant celle dont soit la majorité des membres fondateurs, soit la majorité des membres actuels, sont d’une nationalité autre que luxembourgeoise; </li>
+								<li>les associations œuvrant, à titre principal, en faveur des étrangers.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les associations visées à l’alinéa qui précède doivent être inscrites auprès <mod class="mod-start" for="#pm2"/>du département de l’intégration du Ministère de la famille, de l’intégration et à la Grande Région, ci-après « Ministère »<mod class="mod-end" for="#pm2"/>
+								<noteRef href="#M2" marker="2"/> au plus tard le quinzième jour avant le jour du scrutin et avoir produit le rapport d’activité annuel de l’exercice précédant le vote du nouveau conseil ainsi que la liste actuelle des membres.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_6/20200101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<alinea>
+						<content>
+							<p>Sont inscrites auprès <mod class="mod-start" for="#pm3"/>du Ministère<mod class="mod-end" for="#pm3"/>
+								<noteRef href="#M3" marker="3"/> en vue d’exercer le droit de vote pour le conseil, les associations visées à l’article 5 ci-dessus, à condition qu’elles soient constituées conformément aux dispositions de la <ref href="/eli/etat/leg/loi/1928/04/21/n2/jo" id="c08631c3-0972-4e3c-b888-fda8f3ea9fdf">loi modifiée du 21 avril 1928</ref> sur les associations et les fondations sans but lucratif et que les statuts aient été publiés selon les dispositions de la même loi.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La demande d’inscription se fait sur papier libre, adressée <mod class="mod-start" for="#pm4"/>au Ministère<mod class="mod-end" for="#pm4"/>
+								<noteRef href="#M4" marker="4"/> en joignant:</p>
+							<ol scl:start="1" scl:symbol="1.">
+								<li>une copie de l’acte de constitution </li>
+								<li> une copie attestant la publication des statuts au Mémorial, Recueil des Sociétés et Associations </li>
+								<li> la liste des administrateurs désignés en conformité des statuts pour l’exercice en cours.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm5"/>Le Ministère<mod class="mod-end" for="#pm5"/>
+								<noteRef href="#M5" marker="5"/> donne acte à l’association de son inscription en cas de décision positive.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le refus d’inscription est dûment motivé.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La liste des inscriptions est révisée annuellement.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_iii">
+				<num>
+					<b>Chapitre III.</b>
+				</num>
+				<heading scl:separator=" ">
+					<b>Modalités de désignation des candidats</b>
+				</heading>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_7/20111126</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7.</num>
+					<alinea>
+						<content>
+							<p>Les représentants des étrangers à proposer au ministre sont élus parmi les personnes figurant sur les listes de candidats déclarés, sauf ce qui est prévu aux articles 26 et suivants.</p>
+						</content>
+					</alinea>
+				</article>
+				<section id="chapitre_iii.section_1">
+					<num>1.</num><heading scl:separator=" " scl:style-format="bi">Les candidatures</heading>
+					<article id="art_8">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_8</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_8/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 8.</num>
+						<alinea>
+							<content>
+								<p>Pour être candidat sur une liste électorale, il faut:</p>
+								<ol scl:start="1" scl:symbol="1.">
+									<li>être d’une nationalité autre que luxembourgeoise </li>
+									<li> être âgé de 18 ans accomplis le jour du scrutin </li>
+									<li> être domicilié au Grand-Duché de Luxembourg </li>
+									<li> ne pas être placé sous un régime de tutelle des majeurs </li>
+									<li>ne pas avoir subi de condamnation à une peine criminelle ou une condamnation en matière correctionnelle emportant privation du droit de vote.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La candidature peut être posée par la personne concernée elle-même ou par une ou plusieurs associations inscrites auprès <mod class="mod-start" for="#pm6"/>du Ministère<mod class="mod-end" for="#pm6"/>
+									<noteRef href="#M6" marker="6"/> avec l’accord écrit du concerné.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_9">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_9</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_9/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 9.</num>
+						<alinea>
+							<content>
+								<p>Au moins 40 jours avant la date fixée pour le scrutin, <mod class="mod-start" for="#pm7"/>le Ministère<mod class="mod-end" for="#pm7"/>
+									<noteRef href="#M7" marker="7"/> fait un appel aux candidatures par publication dans les principaux quotidiens paraissant au Grand-Duché de Luxembourg, ainsi que dans les principaux journaux étrangers édités au Luxembourg et, en cas de besoin, par radio ou télédiffusion sur les chaînes s’adressant spécialement aux étrangers résidant au Luxembourg.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>L’appel aux candidatures paraît également sur le site internet <mod class="mod-start" for="#pm8"/>du Ministère<mod class="mod-end" for="#pm8"/>
+									<noteRef href="#M8" marker="8"/> et sur le guichet en ligne du Grand-Duché de Luxembourg.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_10">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_10</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_10/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 10.</num>
+						<alinea>
+							<content>
+								<p>Les candidats figurant sur les listes doivent se déclarer ou être déclarés auprès <mod class="mod-start" for="#pm9"/>du Ministère<mod class="mod-end" for="#pm9"/>
+									<noteRef href="#M9" marker="9"/> au moins huit jours avant la date fixée pour le scrutin. La déclaration marque les nom, prénom, nationalité, date de naissance, domicile et profession du candidat. Elle porte engagement de sa part de ne pas retirer sa candidature. Elle est datée et signée.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La déclaration de candidature est accompagnée:</p>
+								<ol scl:start="1" scl:symbol="1.">
+									<li>d’un acte de naissance </li>
+									<li> d’une pièce documentant la nationalité du candidat </li>
+									<li> d’un extrait du casier judiciaire.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La liste des candidats déclarés est affichée <mod class="mod-start" for="#pm10"/>au Ministère<mod class="mod-end" for="#pm10"/>
+									<noteRef href="#M10" marker="10"/> du quinzième jour précédant les élections jusqu’au jour fixé pour les élections. Elle est provisoire jusqu’au huitième jour précédant les élections où elle est arrêtée définitivement. Elle peut être consultée par tout intéressé.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_11">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_11</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_11/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 11.</num>
+						<alinea>
+							<content>
+								<p>Celui qui ne remplit pas les conditions des articles 8 et 10 ci-dessus n’est pas éligible. </p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Si l’éligibilité d’un candidat, du point de vue des condamnations encourues, paraît être douteuse, le <mod class="mod-start" for="#pm11"/>ministre<mod class="mod-end" for="#pm11"/>
+									<noteRef href="#M11" marker="11"/> fait réviser d’urgence les conditions d’éligibilité par le Parquet et invite le candidat à présenter ses observations. Lorsque sur le vu des extraits de casier judiciaire ou de tout autre renseignement produit par le Parquet, l’inéligibilité est constatée, le directeur doit rayer le candidat en question de la liste.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_iii.section_2">
+					<num>2.</num><heading scl:separator=" " scl:style-format="bi">Constitution du bureau de vote</heading>
+					<article id="art_12">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_12</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_12/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 12.</num>
+						<alinea>
+							<content>
+								<p>Le bureau de vote est nommé par le ministre. </p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il est composé de 5 membres, à savoir:</p>
+								<ul scl:symbol="none">
+									<li>3 fonctionnaires ou employés <mod class="mod-start" for="#pm12"/>du Ministère<mod class="mod-end" for="#pm12"/>
+										<noteRef href="#M12" marker="12"/>
+									</li>
+									<li>2 représentants des étrangers à proposer par les membres sortants du conseil.</li>
+								</ul>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Ni les candidats, ni leurs parents ou alliés jusqu’au deuxième degré inclusivement, ne peuvent siéger comme membre du bureau de vote.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le président du bureau de vote est désigné par le ministre.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le bureau de vote établit une proposition de règlement d’ordre relatif au déroulement des opérations électorales pouvant contenir des instructions pour les électeurs.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Ce règlement est arrêté par le ministre.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_iii.section_3">
+					<num>3.</num><heading scl:separator=" " scl:style-format="bi">Scrutin</heading>
+					<article id="art_13">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_13</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_13/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 13.</num>
+						<alinea>
+							<content>
+								<p> Le jour du scrutin est fixé par le ministre.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_14">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_14</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_14/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 14.</num>
+						<alinea>
+							<content>
+								<p>Chaque association inscrite auprès <mod class="mod-start" for="#pm13"/>du Ministère<mod class="mod-end" for="#pm13"/>
+									<noteRef href="#M13" marker="13"/> a le droit de vote et dispose d’autant de voix qu’il y a de représentants à désigner.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_15">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_15</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_15/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 15.</num>
+						<alinea>
+							<content>
+								<p>Chacune des associations désigne par information écrite à faire parvenir <mod class="mod-start" for="#pm14"/>au Ministère<mod class="mod-end" for="#pm14"/>
+									<noteRef href="#M14" marker="14"/> au plus tard le quinzième jour avant la date du scrutin, les nom, prénom, profession, nationalité et domicile de son mandataire ayant qualité de voter en son nom. Ce dernier ne peut pas figurer sur la liste des candidatures.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_16">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_16</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_16/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 16.</num>
+						<alinea>
+							<content>
+								<p>Les mandataires visés à l’article 15 sont convoqués par les soins <mod class="mod-start" for="#pm15"/>du Ministère<mod class="mod-end" for="#pm15"/>
+									<noteRef href="#M15" marker="15"/> au moins huit jours avant le scrutin. </p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_17">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_17</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_17/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 17.</num>
+						<alinea>
+							<content>
+								<p>Le jour du scrutin, l’assemblée des mandataires représentant les associations inscrites auprès <mod class="mod-start" for="#pm16"/>du Ministère<mod class="mod-end" for="#pm16"/>
+									<noteRef href="#M16" marker="16"/> est présidée par le président du bureau de vote.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_18">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_18</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_18/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 18.</num>
+						<alinea>
+							<content>
+								<p>Les bulletins de vote comportant les nom, prénom, nationalité et domicile de tous les candidats éligibles sont distribués aux mandataires. </p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_19">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_19</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_19/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 19.</num>
+						<alinea>
+							<content>
+								<p> Les candidats ont le droit d’assister et de se présenter aux mandataires des associations durant un laps de temps prédéfini ne pouvant excéder 5 minutes par personne.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_20">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_20</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_20/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 20.</num>
+						<alinea>
+							<content>
+								<p>Les présentations faites, il est procédé au vote. Les opérations de vote sont secrètes et s’effectuent dans un cadre adapté à garantir le secret des votes.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_21">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_21</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_21/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 21.</num>
+						<alinea>
+							<content>
+								<p>Le vote s’effectue au scrutin majoritaire plurinominal à un tour.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_22">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_22</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_22/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 22.</num>
+						<alinea>
+							<content>
+								<p>Chaque mandataire dispose de 22 voix conformément à l’article 14.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Nul ne peut être mandataire de plus d’une association.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Chaque candidat ne peut obtenir qu’une seule voix.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_23">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_23</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_23/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 23.</num>
+						<alinea>
+							<content>
+								<p>Sont nuls:</p>
+								<ol scl:start="1" scl:symbol="1.">
+									<li>les bulletins qui expriment plus de suffrages qu’il n’y a de représentants à élire </li>
+									<li> les bulletins qui ne contiennent l’expression d’aucun suffrage </li>
+									<li> les bulletins dont les formes et dimensions auraient été altérées, qui contiendraient à l’intérieur un papier ou un objet quelconque ou dont l’auteur pourrait être rendu reconnaissable par un signe, une rature ou une marque quelconque.</li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_24">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_24</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_24/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 24.</num>
+						<alinea>
+							<content>
+								<p> Les membres du bureau de vote recueillent tous les bulletins exprimés dans une urne spécialement destinée à ces fins.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_25">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_25</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_25/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 25.</num>
+						<alinea>
+							<content>
+								<p>Le dépouillement des bulletins est public et se fait par proclamation orale en assemblée à la suite du vote. Les candidats ayant obtenu le plus de voix dans chacun des compartiments définis aux articles 1 à 4 sont représentants effectifs proposés, les suivants sont représentants suppléants proposés.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En cas d’égalité des voix, le départage se fait par tirage au sort. </p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_26">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_26</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_26/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 26.</num>
+						<alinea>
+							<content>
+								<p>Pour autant que le scrutin ne dégage pas le nombre de représentants effectifs et suppléants visés aux articles 1 à 4, soit par manque de candidats, soit par défaut de voix obtenues, le ministre, après avoir consulté les associations d’étrangers ayant participé au vote et sur leur proposition, nomme les représentants manquants.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_27">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_27</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_27/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 27.</num>
+						<alinea>
+							<content>
+								<p>Les représentants effectifs et suppléants désignés selon les articles qui précèdent sont proposés au nom des associations ayant participé au vote par l’intermédiaire <mod class="mod-start" for="#pm17"/>du Ministère<mod class="mod-end" for="#pm17"/>
+									<noteRef href="#M17" marker="17"/> au ministre.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_28">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_28</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_28/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 28.</num>
+						<alinea>
+							<content>
+								<p>Les représentants effectifs et suppléants des étrangers sont nommés respectivement membres effectifs et membres suppléants du conseil pour une durée de cinq ans par le ministre au vu des propositions lui transmises conformément à l’article 27.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_29">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_29</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_29/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 29.</num>
+						<alinea>
+							<content>
+								<p>En cas de démission, de décès ou d’acquisition de la nationalité luxembourgeoise par des représentants effectifs et suppléants ainsi proposés et sous réserve de nomination par le ministre compétent, les candidats venant après ceux qui ont été désignés membres effectifs et membres suppléants, sont appelés, suivant le rang des voix obtenues, à prendre la place des membres défaillants, jusqu’à épuisement des candidatures. En cas d’épuisement d’icelles, il est procédé conformément aux dispositions de l’article 26.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les membres ainsi nommés achèveront le mandat de leur prédécesseur.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_30">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_30</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_30/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 30.</num>
+						<alinea>
+							<content>
+								<p>Le <ref href="/eli/etat/leg/rgd/1995/03/29/n1/jo" id="b7dc5050-4667-424f-8853-db11ac05b7a4">règlement grand-ducal modifié du 29 mars 1995</ref> portant détermination des modalités de désignation des représentants des étrangers au Conseil national pour étrangers, ainsi que leur répartition par nationalités est abrogé.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_31">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_31</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_31/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 31.</num>
+						<alinea>
+							<content>
+								<p>Le présent règlement entre en vigueur le jour de sa publication au Mémorial.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_32">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_32</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1/art_32/20111126</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/11/15/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-11-26</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 32.</num>
+						<alinea>
+							<content>
+								<p>Notre Ministre de la Famille et de l’Intégration est chargée de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

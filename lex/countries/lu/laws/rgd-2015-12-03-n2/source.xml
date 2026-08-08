@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2015-12-03" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MECM"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2015-12-03" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2015-12-03" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-08-24</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2015-12-03</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/113</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/205</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3095</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3361</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/816</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2015-12-12</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2015/a228</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2015A4867B</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2015-12-08</scl:jolux>
+						<scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="draft">/eli/etat/proj/pr/20140230</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/agd/1955/11/23/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/2004/06/29/n1/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 24/08/2020 : Règlement grand-ducal du 3 décembre 2015 relatif à l'infrastructure publique liée à la mobilité électrique.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2007/08/01/n13/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2015-228-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2015/a228/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2015-12-03-n2-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2015-228-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2015/a228/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2015/a228/fr/pdf/eli-etat-leg-memorial-2015-a228-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2015-12-03" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2018-11-23" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2020-08-24" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2018/11/13/a1047/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2018/11/13/a1047/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2018/11/13/a1047/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2018/11/13/a1047/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2018/11/13/a1047/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2018/11/13/a1047/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/08/19/a700/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/08/19/a700/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/08/19/a700/jo"/>
+						<destination href="#art_5"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/08/19/a700/jo"/>
+						<destination href="#art_5"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/08/19/a700/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/08/19/a700/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/08/19/a700/jo"/>
+						<destination href="#art_10"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2015/12/03/n2/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2020/08/19/a700/jo" id="rp2" showAs="Règlement grand-ducal du 19 août 2020 modifiant le règlement grand-ducal modifié du 3 décembre 2015 relatif à l’infrastructure publique liée à la mobilité électrique."/>
+				<passiveRef href="/eli/etat/leg/rgd/2018/11/13/a1047/jo" id="rp3" showAs="Règlement grand-ducal du 13 novembre 2018 relatif aux infrastructures pour carburants alternatifs et modifiant le règlement grand-ducal du 3 décembre 2015 relatif à l'infrastructure publique liée à la mobilité électrique."/>
+			</references>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2018-11-19|2018-11-13|RGD|1047">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/11/13/a1047/jo">Règlement grand-ducal du 13 novembre 2018 relatif aux infrastructures pour carburants alternatifs et modifiant le règlement grand-ducal du 3 décembre 2015 relatif à l'infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2018-11-19|2018-11-13|RGD|1047">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/11/13/a1047/jo">Règlement grand-ducal du 13 novembre 2018 relatif aux infrastructures pour carburants alternatifs et modifiant le règlement grand-ducal du 3 décembre 2015 relatif à l'infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2018-11-19|2018-11-13|RGD|1047">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/11/13/a1047/jo">Règlement grand-ducal du 13 novembre 2018 relatif aux infrastructures pour carburants alternatifs et modifiant le règlement grand-ducal du 3 décembre 2015 relatif à l'infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2018-11-19|2018-11-13|RGD|1047">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/11/13/a1047/jo">Règlement grand-ducal du 13 novembre 2018 relatif aux infrastructures pour carburants alternatifs et modifiant le règlement grand-ducal du 3 décembre 2015 relatif à l'infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2018-11-19|2018-11-13|RGD|1047">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/11/13/a1047/jo">Règlement grand-ducal du 13 novembre 2018 relatif aux infrastructures pour carburants alternatifs et modifiant le règlement grand-ducal du 3 décembre 2015 relatif à l'infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2018-11-19|2018-11-13|RGD|1047">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/11/13/a1047/jo">Règlement grand-ducal du 13 novembre 2018 relatif aux infrastructures pour carburants alternatifs et modifiant le règlement grand-ducal du 3 décembre 2015 relatif à l'infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2020-08-20|2020-08-19|RGD|700">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/08/19/a700/jo">Règlement grand-ducal du 19 août 2020 modifiant le règlement grand-ducal modifié du 3 décembre 2015 relatif à l’infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2020-08-20|2020-08-19|RGD|700">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/08/19/a700/jo">Règlement grand-ducal du 19 août 2020 modifiant le règlement grand-ducal modifié du 3 décembre 2015 relatif à l’infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2020-08-20|2020-08-19|RGD|700">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/08/19/a700/jo">Règlement grand-ducal du 19 août 2020 modifiant le règlement grand-ducal modifié du 3 décembre 2015 relatif à l’infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2020-08-20|2020-08-19|RGD|700">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/08/19/a700/jo">Règlement grand-ducal du 19 août 2020 modifiant le règlement grand-ducal modifié du 3 décembre 2015 relatif à l’infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2020-08-20|2020-08-19|RGD|700">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/08/19/a700/jo">Règlement grand-ducal du 19 août 2020 modifiant le règlement grand-ducal modifié du 3 décembre 2015 relatif à l’infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2020-08-20|2020-08-19|RGD|700">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/08/19/a700/jo">Règlement grand-ducal du 19 août 2020 modifiant le règlement grand-ducal modifié du 3 décembre 2015 relatif à l’infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M13" marker="13" refersTo="pm13" title="A|2020-08-20|2020-08-19|RGD|700">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/08/19/a700/jo">Règlement grand-ducal du 19 août 2020 modifiant le règlement grand-ducal modifié du 3 décembre 2015 relatif à l’infrastructure publique liée à la mobilité électrique.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 24/08/2020 : Règlement grand-ducal du 3 décembre 2015 relatif à l’infrastructure publique liée à la mobilité électrique. </p>
+			</longTitle>
+		</preface>
+		<body>
+			<section id="chapitre_ier">
+				<num>Chapitre I<sup>er</sup></num><heading scl:align="center" scl:separator="- " scl:style-format="n">Définitions</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_1er/20200824</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-08-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>.</num>
+					<alinea>
+						<content>
+							<p>Aux fins du présent règlement grand-ducal, on entend par: </p>
+							<ol scl:symbol="a)">
+								<li>«borne de charge»: un dispositif électrique, connecté directement ou indirectement au réseau de distribution basse ou moyenne tension, permettant à un utilisateur final de procéder à la recharge de son véhicule électrique en le connectant sur l’un de ses points de charge;</li>
+								<li>«borne de charge publique»: une borne de charge installée par les gestionnaires de réseau de distribution et faisant partie de l’infrastructure publique liée à la mobilité électrique conformément à la <ref href="/eli/etat/leg/loi/2007/08/01/n13/jo" id="bbd0d0e7-fd53-4aac-b81c-ad57a6e44d7b" scl:verify="true">loi modifiée du 1<sup>er</sup> août 2007</ref> relative à l’organisation du marché de l’électricité<mod class="mod-start" for="#pm1"/>, et à laquelle les utilisateurs ont accès de façon non discriminatoire. L’accès non discriminatoire à cette borne n’empêche pas d’imposer certaines conditions en termes d’authentification, d’utilisation et de paiement<mod class="mod-end" for="#pm1"/>
+									<noteRef href="#M1" marker="1"/>;</li>
+								<li>«fournisseur physique»: un fournisseur choisi et mandaté par les gestionnaires de réseau de distribution pour la fourniture en électricité de toutes les bornes de charge publiques;</li>
+								<li>«fournisseur de service de charge»: une personne physique ou morale proposant à l’utilisateur un service de charge. Il peut s’agir d’un fournisseur ou d’un opérateur de toute autre nature lié contractuellement à un fournisseur pour couvrir la fourniture d’électricité nécessaire à l’offre d’un service de charge;</li>
+								<li>«infrastructure publique liée à la mobilité électrique»: l’ensemble composé par toutes les bornes de charge publiques, y inclus le système central commun;</li>
+								<li>«système de remboursement»: un mécanisme qui permet de réaffecter les coûts relatifs aux consommations d’électricité des utilisateurs finals fournie par le fournisseur physique aux fournisseurs de service de charge que les utilisateurs finals ont choisi. La réaffectation des coûts consiste en un paiement au fournisseur physique par chacun des fournisseurs de service de charge concernés des montants correspondants à l’électricité consommée par leurs utilisateurs finals sur les bornes de charge alimentées par le fournisseur physique;</li>
+								<li>«ministres»: le ministre ayant l’Énergie dans ses attributions et le ministre ayant les Transports dans ses attributions;</li>
+								<li>«point de charge»: une interface sur la borne de charge qui permet d’effectuer la charge lente, accélérée ou rapide d’un véhicule électrique;</li>
+								<li>«charge lente»: l’alimentation directe en électricité d’un véhicule électrique à une puissance inférieure ou égale à 3,7 kW;</li>
+								<li>«charge accélérée»: l’alimentation directe en électricité d’un véhicule électrique à une puissance supérieure à 3,7 kW et inférieure ou égale à 22 kW;</li>
+								<li>«charge rapide»: l’alimentation directe en électricité d’un véhicule électrique à une puissance supérieure à 22 kW;</li>
+								<li>«système central commun»: solution informatique commune, comprenant matériel et logiciel, utilisée ensemble par les gestionnaires de réseau de distribution pour gérer électroniquement les bornes de charge publiques et pour fournir les fonctionnalités informatiques requises aux utilisateurs de l’infrastructure publique liée à la mobilité électrique;</li>
+								<li>«point d’intérêt communal»: pôle d’attraction d’une commune tel que les quartiers centraux d’une localité, zones d’activité, infrastructures scolaires, sites touristiques, culturels ou sportifs, hôpitaux, commerces, mairies et administrations;</li>
+								<li>«emplacement de stationnement public»: espace sur la voie publique destiné au stationnement d’automobiles au sens de l’<ref href="/eli/etat/leg/agd/1955/11/23/n1/jo" id="1b1c9626-215b-4c50-9ee1-b3b7c20fad13">arrêté grand-ducal modifié du 23 novembre 1955</ref> portant règlement de la circulation sur toutes les voies publiques;</li>
+								<li>«parking public»: espace ouvert à la circulation publique et spécifiquement aménagé pour le parcage d’automobiles au sens de l’arrêté grand-ducal modifié du 23 novembre 1955 portant règlement de la circulation sur toutes les voies publiques;</li>
+								<li>«parking relais»: parking public duquel les usagers peuvent emprunter un service de transports publics par rail ou un service régulier de transports publics par route au sens de la <ref href="/eli/etat/leg/loi/2004/06/29/n1">loi modifiée du 29 juin 2004</ref> sur les transports publics;</li>
+								<li>«parking de co-voiturage»: parking public destiné à la pratique du co-voiturage.
+<mod class="mod-start" for="#pm7"/>
+								</li>
+								<li>« aire de service autoroutière » : aire de repos ou de ravitaillement ouverte à la circulation publique et aménagée en bordure d’une autoroute. Le terme « autoroute » s’entend tel que défini à l’article 2, point 1.6., de l’<ref href="/eli/etat/leg/agd/1955/11/23/n1/jo" id="4fe35981-3757-4582-bea3-e24ccda7c13b">arrêté grand-ducal modifié du 23 novembre 1955</ref> portant règlement de la circulation sur toutes les voies publiques ;</li>
+								<li>« aire de service routière » : aire de repos ou de ravitaillement ouverte à la circulation publique et aménagée en bordure d’une route pour véhicules automoteurs. Les termes « route pour véhicules automoteurs » s’entendent tels que définis à l’article 2, point 1.7., de l’<ref href="/eli/etat/leg/agd/1955/11/23/n1/jo" id="f5b37cc0-92a3-4e4a-a4e4-dc08854a0ac9">arrêté grand-ducal modifié du 23 novembre 1955</ref> portant règlement de la circulation sur toutes les voies publiques.<mod class="mod-end" for="#pm7"/>
+									<noteRef href="#M7" marker="7"/>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="chapitre_ii">
+				<num>Chapitre II </num><heading scl:align="center" scl:separator="- " scl:style-format="n">Tâches des gestionnaires de réseau de distribution</heading>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_2/20181123</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-11-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<alinea>
+						<content>
+							<p>Dans le cadre du déploiement d’une infrastructure publique liée à la mobilité électrique sur le territoire défini par leur concession, les gestionnaires de réseau de distribution sont investis des tâches suivantes:</p>
+							<ol>
+								<li>assurer l’installation, l’exploitation et l’évolution des bornes de charge publiques et du système central commun;</li>
+								<li>assurer la maintenance préventive et curative des bornes de charge publiques et du système central commun;</li>
+								<li>entretenir en conditions opérationnelles et en état propre l’infrastructure publique liée à la mobilité électrique;</li>
+								<li>désigner, suivant des critères transparents, au moins tous les trois ans un fournisseur comme fournisseur physique;</li>
+								<li>gérer les moyens d’identification des utilisateurs finals;</li>
+								<li>gérer et mettre à disposition des fournisseurs de service de charge un service de réservation des points de charge faisant partie de l’infrastructure publique liée à la mobilité électrique;</li>
+								<li>gérer le système de remboursement et les relations avec les fournisseurs physiques et les fournisseurs de service de charge qui en résultent;</li>
+								<li>offrir aux utilisateurs finals des services d’informations techniques et organisationnelles ainsi que des informations sur la localisation et la disponibilité des points de charge des bornes de charge publiques sur leur site internet ; <mod class="mod-start" for="#pm2"/>Lorsqu’elles existent, les données relatives aux points de charge peuvent comprendre des informations sur leur accessibilité en temps réel ainsi que des informations historiques et en temps réel en matière de recharge ;<mod class="mod-end" for="#pm2"/>
+									<noteRef href="#M2" marker="2"/>
+								</li>
+								<li>mettre à la disposition de la Police grand-ducale, des services de secours et des agents des administrations communales des services techniques nécessaires dans le cadre de la sécurité et de la surveillance des emplacements;</li>
+								<li>mettre à disposition l’espace publicitaire sur les bornes de charge publiques et/ou le cas échéant sur les panneaux attenants. Les recettes nettes éventuelles issues de cette activité publicitaire sont à considérer entièrement comme éléments réducteurs de coûts et sont à prendre en considération lors du calcul des tarifs d’utilisation des réseaux.</li>
+							</ol>
+							<p>Ces tâches sont exécutées aux conditions économiquement les plus avantageuses et, le cas échéant, en coopération avec les propriétaires ou exploitants des emplacements sur lesquels les bornes de charge publiques sont installées.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_3/20181123</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2018-11-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm3"/>Art. 3.</num>
+					<alinea>
+						<content>
+							<p>Dans la mesure où la bonne réalisation des prestations énumérées à l’article 2 n’est pas remise en cause, les gestionnaires de réseau de distribution sont tenus d’intégrer sans frais dans le système central commun et sur une base non discriminatoire des bornes de charge qui sont établies par des personnes publiques ou privées sur des emplacements ouverts au public. Ces bornes de charge doivent répondre aux caractéristiques fonctionnelles et techniques minimales définies dans le présent règlement grand-ducal et sous réserve du respect des contraintes techniques, fonctionnelles et organisationnelles définies par les gestionnaires de réseau. Ces bornes de charge doivent être gérées par le même système central commun mis en place pour les bornes de charge publiques. Dans le même sens, des bornes de charge qui sont installées sur des emplacements qui ne sont pas accessibles au public peuvent être intégrées, contre payement d’une redevance d’entrée et sous réserve du respect des contraintes techniques, fonctionnelles et organisationnelles définies par les gestionnaires de réseau, dans le système central commun.<mod class="mod-end" for="#pm3"/>
+								<noteRef href="#M3" marker="3"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="chapitre_iii">
+				<num>Chapitre III </num><heading scl:align="center" scl:separator="- " scl:style-format="n">Spécifications techniques des bornes de charge publiques et du système central commun</heading>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_4/20200824</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-08-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<paragraph id="paragraph_1">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm8"/>Toute borne de charge publique à courant alternatif (CA) est équipée de deux points de charge.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Toute borne de charge publique est connectée à un compteur intelligent conformément aux modalités définies à l’article 29 de la <ref href="/eli/etat/leg/loi/2007/08/01/n13/jo" id="d3bfa1d4-1141-40b5-af6d-b0aa80fb2605">loi modifiée du 1<sup>er</sup> août 2007</ref> relative à l’organisation du marché de l’électricité.<mod class="mod-end" for="#pm8"/>
+									<noteRef href="#M8" marker="8"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_2">
+						<num>
+							<mod class="mod-start" for="#pm4"/>(2)</num>
+						<alinea>
+							<content>
+								<p>Les points de charge lente et accélérée d’une borne de charge publique ou d’une borne de charge ouverte au public sont équipés d’un connecteur de « type 2 », suivant la norme EN62196-2.<mod class="mod-end" for="#pm4"/>
+									<noteRef href="#M4" marker="4"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_17">
+						<num>
+							<mod class="mod-start" for="#pm5"/>(2<i>bis</i>)</num>
+						<alinea>
+							<content>
+								<p>Les points de charge rapide alimentés en courant alternatif (CA) sont équipés, à des fins d’interopérabilité, au minimum de connecteurs de « type 2 », tels que décrits dans la norme EN62196-2.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les points de charge rapide alimentés en courant continu (CC) sont équipés, à des fins d’interopérabilité, au minimum de connecteurs du système de chargement combiné de type « Combo 2 », tels que décrits dans la norme EN62196-3.<mod class="mod-end" for="#pm5"/>
+									<noteRef href="#M5" marker="5"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_3">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les bornes de charge publiques doivent être équipées d’un moyen de contrôle d’accès qui doit permettre de lire l’identifiant de l’utilisateur final au moins par le moyen d’un badge d’identification par radiofréquence (RFID).</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_18">
+						<num>
+							<mod class="mod-start" for="#pm6"/>(3<i>bis</i>)</num>
+						<alinea>
+							<content>
+								<p>Les bornes de charge publiques prévoient, en outre, la possibilité d’une recharge ad hoc pour les utilisateurs de véhicules électriques sans souscription d’un contrat avec un fournisseur de service de charge.<mod class="mod-end" for="#pm6"/>
+									<noteRef href="#M6" marker="6"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_4">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Dans leur communication avec le système central commun, les bornes de charge publiques doivent être capables de:</p>
+								<ol>
+									<li>transmettre des demandes d’identification;</li>
+									<li>recevoir l’autorisation de charge émise par le système central commun après demande d’identification;</li>
+									<li>transmettre les données de consommation à la fin de chaque opération de charge;</li>
+									<li>transmettre leur statut dès qu’une opération de charge est lancée (borne occupée) puis à la fin de la charge (borne libre);</li>
+									<li>recevoir un ordre de réservation.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_5">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Les bornes de charge publiques doivent être suffisamment adaptables pour permettre à terme des ajouts de fonctionnalités ou de services ainsi qu’un changement du type de prise.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_6">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Le système central commun doit être capable de:</p>
+								<ol>
+									<li>recevoir une demande d’identification;</li>
+									<li>transmettre une autorisation de charge suite à une demande d’identification;</li>
+									<li>recevoir les données de consommation;</li>
+									<li>recevoir les données concernant le statut des points de charge (libre/utilisé);</li>
+									<li>le cas échéant, émettre un ordre de réservation d’un point de charge par un utilisateur final;</li>
+									<li>émettre un ordre de blocage/déblocage d’un point de charge.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+			<section id="chapitre_iv">
+				<num>Chapitre IV </num><heading scl:align="center" scl:separator="- " scl:style-format="n">Installation de bornes de charge publiques</heading>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_5/20200824</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-08-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<paragraph id="paragraph_7">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le nombre maximal de bornes de charge publiques à être installées et mises en service sur <mod class="mod-start" for="#pm9"/>les parkings relais, parkings de co-voiturage, aires de service autoroutières ainsi que les aires de service routières<mod class="mod-end" for="#pm9"/>
+									<noteRef href="#M9" marker="9"/> est fixé à 400.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_8">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les gestionnaires de réseau de distribution installent et mettent en service les bornes de charge publiques sur <mod class="mod-start" for="#pm10"/>les parkings relais, parkings de co-voiturage, aires de service autoroutières ainsi que les aires de service routières<mod class="mod-end" for="#pm10"/>
+									<noteRef href="#M10" marker="10"/> prévus par le plan d’implantation général visé à l’article 8 avant le 31 juillet 2017 sur au moins 50 pour cent des sites opérationnels sur le territoire défini par leur concession, sur au moins 80 pour cent de ces sites avant le 31 juillet 2019 et sur 100 pour cent de ces sites avant le 31 décembre 2020.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_6/20151212</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-12-12</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<paragraph id="paragraph_9">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le nombre maximal de bornes de charge publiques à être installées et mises en service sur les emplacements de stationnement publics respectivement les parkings publics dans les communes du Grand-Duché de Luxembourg est fixé à 400.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_10">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les gestionnaires de réseau de distribution installent et mettent en service, sur le territoire défini par leur concession, au moins 25 pour cent des bornes de charge publiques sur les emplacements de stationnement publics et les parkings publics prévues par le plan d’implantation général sur le territoire défini par leur concession avant le 31 juillet 2017, au moins 60 pour cent de ces bornes avant le 31 juillet 2019 et 100 pour cent de ces bornes avant le 31 décembre 2020.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_7/20151212</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-12-12</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7.</num>
+					<alinea>
+						<content>
+							<p>Tout au long de la période de déploiement, les gestionnaires de réseau de distribution s’efforcent de déployer les bornes de charge publiques prévues dans le plan d’implantation général d’une manière à assurer une répartition homogène dans le temps dans les régions du territoire défini par leur concession.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_8">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_8</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_8/20200824</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-08-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 8.</num>
+					<paragraph id="paragraph_11">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le ministre ayant l’Énergie dans ses attributions et le ministre ayant les Transports dans ses attributions publient un plan d’implantation général définissant <mod class="mod-start" for="#pm11"/>les parkings relais, parkings de co-voiturage, aires de service autoroutières ainsi que les aires de service routières qui sont éligibles pour l’installation des bornes de charge publiques, le nombre maximal de bornes pouvant être installées sur chacun de ces parkings et aires de service, ainsi que le type de charge ou la puissance minimale par point de charge à prévoir<mod class="mod-end" for="#pm11"/>
+									<noteRef href="#M11" marker="11"/>. En outre, ce plan définit pour chaque commune le nombre maximal de bornes de charge publiques qui sont éligibles pour l’installation sur les parkings publics respectivement emplacements de stationnement publics de la commune respective.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_12">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Un plan d’implantation détaillé est élaboré par le gestionnaire de réseau de distribution concerné en concertation avec les propriétaires <mod class="mod-start" for="#pm12"/>les parkings relais, parkings de co-voiturage, aires de service autoroutières ainsi que les aires de service routières<mod class="mod-end" for="#pm12"/>
+									<noteRef href="#M12" marker="12"/> concernés. De même un plan d’implantation détaillé par commune est élaboré par le gestionnaire de réseau de distribution concerné en concertation avec l’administration communale respective en ce qui concerne l’installation des bornes de charge publiques sur des emplacements de stationnement publics, respectivement parkings publics dans cette commune.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_13">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Ces plans d’implantation détaillés sont établis sur base du plan d’implantation général visé au paragraphe 1<sup>er</sup> suivant la méthode visée au paragraphe 4 par chaque gestionnaire de réseau de distribution pour le territoire défini par sa concession. Ces plans reprennent la localisation précise, le type de charge, la date prévisible d’installation pour chaque borne de charge publique ainsi que le nombre total de bornes de charge publiques consenti par les parties prenantes visées au paragraphe 2 qui sera installé.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_14">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les parties prenantes visées au paragraphe 2 proposent dans une première étape, en cohérence avec les critères visés à l’article 10, des localisations potentielles ainsi que le type de charge pour les bornes de charge publiques prévues par le plan d’implantation général visé au paragraphe 1<sup>er</sup>. Par la suite, le gestionnaire de réseau de distribution élabore une estimation des coûts d’acquisition et d’installation pour chaque localisation potentielle et la compare avec les coûts forfaitaires visés à l’article 9, paragraphe 1<sup>er</sup>. Les gestionnaires de réseau de distribution concernés définissent sur base de ces estimations la localisation finale des bornes de charge publiques prévues par le plan d’implantation général tout en tenant compte des modalités visées par l’article 10. La date prévisible d’installation des bornes est définie conjointement entre le gestionnaire de réseau de distribution concerné et les parties prenantes tout en tenant compte des contraintes techniques, organisationnelles, et autres auxquelles les acteurs sont soumis.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_9">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_9</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_9/20151212</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-12-12</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 9.</num>
+					<paragraph id="paragraph_15">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Dans les six mois suivant l’entrée en vigueur du présent règlement grand-ducal, les gestionnaires de réseau de distribution doivent proposer conjointement au régulateur des coûts forfaitaires d’acquisition d’une borne de charge publique en fonction du type de charge ainsi que des coûts forfaitaires d’installation d’une telle borne de charge publique en fonction de leur emplacement et de leur type de charge. Ces propositions de coûts forfaitaires sont approuvées par le régulateur dans le cadre de l’acceptation des tarifs d’utilisation du réseau conformément à l’article 20 de la <ref href="/eli/etat/leg/loi/2007/08/01/n13/jo" id="8defb7ef-bf5a-4616-bb8e-0952126bfb9d" scl:verify="true">loi modifiée du 1<sup>er</sup> août 2007</ref> relative à l’organisation du marché de l’électricité.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_16">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les frais réels encourus par chaque gestionnaire de réseau pour le déploiement des bornes de charge publiques définies dans le plan d’implantation général sont pris en compte dans le calcul de ses tarifs d’utilisation de réseau ou de services accessoires sur base de la méthode de détermination des tarifs d’utilisation des réseaux telle que visée à l’article 20 de la <ref href="/eli/etat/leg/loi/2007/08/01/n13/jo" id="a8af668b-80d2-4ec5-98e2-190252e6f87f" scl:verify="true">loi modifiée du 1<sup>er</sup> août 2007</ref> relative à l’organisation du marché de l’électricité jusqu’à concurrence de la somme des coûts forfaitaires d’installation et d’acquisition des bornes de charge publiques installées.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_10">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_10</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_10/20200824</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-08-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 10.</num>
+					<alinea>
+						<content>
+							<p>Les critères suivants doivent être respectés pour l’installation des bornes de charge publiques:</p>
+							<ol>
+								<li>
+									<mod class="mod-start" for="#pm13"/>une place de stationnement est assignée à chaque point de charge d’une borne de charge publique et réservée aux voitures électriques<mod class="mod-end" for="#pm13"/>
+									<noteRef href="#M13" marker="13"/> pour se raccorder aux points de charge au sens de l’arrêté grand-ducal modifié du 23 novembre 1955 portant règlement de la circulation sur toutes les voies publiques;</li>
+								<li>les bornes de charge publiques doivent être aménagées sur les emplacements de stationnement publics et parkings publics à proximité (&lt;300 m) des points d’intérêts communaux;</li>
+								<li>les bornes de charge publiques doivent être accessibles aux utilisateurs pendant les heures d’ouverture des parkings respectifs;</li>
+								<li>les bornes de charge publiques doivent être aménagées sur les parkings à un endroit proche de l’accès carrossable et facilement visible pour les utilisateurs potentiels;</li>
+								<li>le type de charge à prévoir est en fonction de la localisation des bornes, sous réserve de la faisabilité technique et de coûts raisonnables. Sur les parkings relais respectivement parkings de co-voiturage, la charge lente est à privilégier. Sur les autres emplacements, le type de charge est à choisir en fonction de la durée de chargement moyenne attendu respectivement de la limitation de durée de stationnement sur cet emplacement.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="chapitre_v">
+				<num>Chapitre V </num><heading scl:align="center" scl:separator="- " scl:style-format="n">Disposition finale</heading>
+				<article id="art_11">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_11</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2/art_11/20151212</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/03/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-12-12</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 11.</num>
+					<alinea>
+						<content>
+							<p>Notre Ministre de l’Économie et Notre Ministre du Développement durable et des Infrastructures sont chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+		</body>
+	</act>
+</akomaNtoso>

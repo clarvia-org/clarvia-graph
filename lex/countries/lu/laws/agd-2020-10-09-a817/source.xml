@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="" scl:page-proof="many">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2020-10-09" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/ME"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2020-10-09" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2020-10-09" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-04-04</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2020-10-09</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/110</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1327</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/21</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/230</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/417</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/610</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1126</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/4192</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/837</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/AGD</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2020-10-09</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2020/a817</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2020-10-09</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/ns/prov#Entity</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr/pdfa</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr/docx</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1999/06/08/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/2004/06/15/n5/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/2005/12/09/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1952/07/23/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1999/06/08/n2/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/2015/03/25/n3/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/rgd/2015/09/30/n3/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/constitution/1868/10/17/n1/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 04/04/2022 : Arrêté grand-ducal du 9 octobre 2020 portant institution de la Maison du Grand-Duc.</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2020/a817/fr/pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2020/a817/fr/pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2020-10-09" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2022-04-04" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/agd/2022/04/01/a157/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/agd/2020/10/09/a817/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/agd/2022/04/01/a157/jo" id="rp2" showAs="Arrêté grand-ducal du 1er avril 2022 portant modification de l’arrêté grand-ducal du 9 octobre 2020 portant institution de la Maison du Grand-Duc."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2022-04-04|2022-04-01|AGD|157">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/agd/2022/04/01/a157/jo">Arrêté grand-ducal du 1er avril 2022 portant modification de l’arrêté grand-ducal du 9 octobre 2020 portant institution de la Maison du Grand-Duc.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 04/04/2022 : Arrêté grand-ducal du 9 octobre 2020 portant institution de la Maison du Grand-Duc.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_1er">
+				<num>
+					<b>Chapitre 1<sup>er</sup>
+					</b>
+				</num>
+				<heading>
+					<b>Institution, mission et personnel de la Maison du Grand-Duc</b>
+				</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_1er/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>.</num>
+					<alinea>
+						<content>
+							<p>Sous l’égide du Grand-Duc, il est institué une Maison du Grand-Duc.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_2/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<alinea>
+						<content>
+							<p>La Maison du Grand-Duc a pour mission de fournir au Grand-Duc le soutien administratif et logistique nécessaire à l’exercice de la fonction de Chef de l’État.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_3/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<alinea>
+						<content>
+							<p>La Maison du Grand-Duc est placée sous la responsabilité du Maréchal de la Cour, désigné ci-après « le Maréchal ».</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_4/20220404</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2022-04-04</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<paragraph id="paragraph_1">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le cadre du personnel de la Maison du Grand-Duc comprend un Maréchal, un Conseiller du Grand-Duc, quatre directeurs et des fonctionnaires des différentes catégories de traitement telles que prévues par la <ref href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="c90b4568-c0de-4b56-9cc7-d190a1480364" scl:verify="true">loi modifiée du 25 mars 2015</ref> fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le cadre du personnel peut être complété par des fonctionnaires stagiaires, des employés et salariés de l’État dans la limite des crédits budgétaires.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_2">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le Maréchal, le Conseiller du Grand-Duc et les directeurs ont la qualité de fonctionnaires et sont nommés par le Grand-Duc.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm1"/>Sans préjudice de l’alinéa 1<sup>er</sup>, le Maréchal peut également être engagé sous le régime de l’employé de l’État sur base de l’article 33 de la <ref href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="698e2eea-d7a4-4700-9280-050137798ba1">loi précitée du 25 mars 2015</ref>.<mod class="mod-end" for="#pm1"/>
+									<noteRef href="#M1" marker="1"/>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Pour être nommé à l’une de ces fonctions, il faut être de nationalité luxembourgeoise, remplir les conditions d’études pour l’accès au groupe de traitement A1, tels que définis par le <ref href="/eli/etat/leg/rgd/2015/09/30/n3/jo" id="11d2823e-8c21-4f0e-bfcf-81c1edd5bc3a" scl:verify="true">règlement grand-ducal modifié du 30 septembre 2015</ref> fixant les conditions et modalités d’inscription et d’organisation des examens-concours d’admission au stage dans les administrations et services de l’État et avoir l’honorabilité nécessaire ainsi que l’expérience adéquate pour l’exercice de ces fonctions.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il faut être titulaire d’une habilitation de sécurité « TRÈS SECRET » telle que prévue par la <ref href="/eli/etat/leg/loi/2004/06/15/n5/jo" id="ca3c25f2-902b-4270-b8fa-a2f1219287f6" scl:verify="true">loi modifiée du 15 juin 2004</ref> relative à la classification des pièces et aux habilitations de sécurité.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_3">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Avant d’entrer en fonction, le Maréchal, le Conseiller du Grand-Duc et les directeurs prêtent serment entre les mains du Grand-Duc ou, en cas d’empêchement, du Ministre d’État délégué à cette fin conformément à l’article 3 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="f835c2af-1501-434d-9f19-909befa668ff" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’État.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_4">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les membres de l’Armée luxembourgeoise occupant des postes au sein de la Maison du Grand-Duc sont régis par la <ref href="/eli/etat/leg/loi/1952/07/23/n1/jo" id="6a9edf4f-d66e-48f4-b438-1679326b9316" scl:verify="true">loi modifiée du 23 juillet 1952</ref> concernant l’organisation militaire.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Pendant la période pendant laquelle il occupe l’une des fonctions prévues à l’article 10, paragraphe 1<sup>er</sup>, l’aide de camp affecté au Grand-Duc est classé au grade F16 prévu par la <ref href="http://legilux.public.lu/eli/etat/leg/loi/2015/03/25/n3/jo" id="492a3500-c250-4969-a2ac-397e3b26c71d" scl:verify="true">loi précitée du 25 mars 2015</ref>.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_5">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Dans la limite des crédits budgétaires la Maison du Grand-Duc peut recourir à des experts qui concourent à l’accomplissement de sa mission sur base de contrats de prestation de services à conclure par le Maréchal.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_5/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<paragraph id="paragraph_6">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>La protection rapprochée du Chef de l’État et des Membres de Sa Famille est assurée par des agents de la Police grand-ducale, membres de l’Unité spéciale.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_7">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>La sécurité du Palais Grand-Ducal, du Château de Colmar Berg et du Château de Fischbach est assurée par les services de la Police grand-ducale.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_8">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les modalités pratiques de la mission de protection rapprochée et de la sécurité du Palais Grand-Ducal, du Château de Colmar Berg et du Château de Fischbach sont agréées par le Maréchal et le Directeur général de la Police grand-ducale.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_6/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<paragraph id="paragraph_9">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>La Maison du Grand-Duc publie au premier semestre de chaque année un rapport d’activités couvrant, pour l’exercice précédent, les activités officielles du Grand-Duc, du Grand-Duc Héritier et de leurs Membres de Famille ayant participé à des événements officiels.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_10">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Dans le cadre du rapport d’activités, la Maison du Grand-Duc rend également compte de l’exécution du budget lui alloué pour l’exercice en question.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_11">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Une version schématique de l’organigramme est publiée sur le site Internet de la Maison du Grand-Duc.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_2">
+				<num>
+					<b>Chapitre 2 </b>
+				</num>
+				<heading>
+					<b>Maréchal de la Cour</b>
+				</heading>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_7/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<b>Art. 7.</b>
+					</num>
+					<paragraph id="paragraph_12">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Dans l’exercice de ses fonctions, le Maréchal représente le Grand-Duc.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_13">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Il a la charge d’organiser les activités officielles du Grand-Duc dans l’exercice de ses fonctions de Chef de l’État.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_14">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Il représente la Maison du Grand-Duc à l’égard des tiers et en justice, en demande ou en défense.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_15">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Il est chargé des relations entre la Cour grand-ducale et le Gouvernement.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_16">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Il organise les audiences au niveau national et international et les visites d’État au Luxembourg et à l’étranger, et en assure le suivi.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_17">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Il est en charge des activités publiques du Grand-Duc Héritier et des Membres de Famille visés à l’article 6, paragraphe 1<sup>er</sup>.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_18">
+						<num>(7)</num>
+						<alinea>
+							<content>
+								<p>Il est en charge de la communication externe et interne de la Maison du Grand-Duc. </p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_8">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_8</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_8/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 8.</num>
+					<alinea>
+						<content>
+							<p>Le Maréchal a sous ses ordres le personnel de la Maison du Grand-Duc. Il exerce à l’égard du personnel de la Maison du Grand-Duc les pouvoirs conférés au chef d’administration par la législation applicable aux agents de l’État.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_9">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_9</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_9/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 9.</num>
+					<alinea>
+						<content>
+							<p>Le Maréchal est classé au grade S1 prévu par la <ref href="http://legilux.public.lu/eli/etat/leg/loi/2015/03/25/n3/jo" id="9b1fa1eb-62e4-4de5-876b-25856247720a" scl:verify="true">loi précitée du 25 mars 2015</ref>.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_3">
+				<num>
+					<b>Chapitre 3 </b>
+				</num>
+				<heading>
+					<b>Comité de direction</b>
+				</heading>
+				<article id="art_10">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_10</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_10/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 10.</num>
+					<paragraph id="paragraph_19">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le Maréchal est assisté d’un Comité de direction comprenant, outre le Maréchal, le Directeur du Bureau du Maréchal, le Conseiller du Grand-Duc, le Directeur Administration, Finances et Ressources humaines, le Directeur Organisation et Sécurité et le Directeur des Régies et Infrastructures.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_20">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le Comité de direction se réunit sur initiative et sous la présidence du Maréchal qui en fixe l’ordre du jour.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_11">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_11</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_11/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 11.</num>
+					<paragraph id="paragraph_21">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le Maréchal peut consentir aux membres du Comité de direction des délégations de signature en matière administrative et financière pour les affaires relevant de ses compétences conformément aux dispositions qui suivent.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_22">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les délégations de signature sont écrites.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_23">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le Maréchal donne communication de ses délégations de signature sur demande aux services publics intéressés.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_24">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les délégations de signature sont révocables à tout moment. Elles prennent fin avec la cessation des pouvoirs du Maréchal.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_12">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_12</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_12/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 12.</num>
+					<alinea>
+						<content>
+							<p>Sans préjudice des dispositions de l’article 4, paragraphe 4, le Directeur du Bureau du Maréchal, le Conseiller du Grand-Duc, le Directeur Administration, Finances et Ressources humaines, le Directeur Organisation et Sécurité et le Directeur des Régies et Infrastructures sont classés au grade 17 prévu par la <ref href="http://legilux.public.lu/eli/etat/leg/loi/2015/03/25/n3/jo" id="a195b0c4-1131-455b-99d7-e72e05f98ef0" scl:verify="true">loi précitée du 25 mars 2015</ref> et sont régies par la <ref href="/eli/etat/leg/loi/2005/12/09/n1/jo" id="774d733b-5360-4665-a3eb-b005d46ce60b" scl:verify="true">loi modifiée du 9 décembre 2005</ref> déterminant les conditions et modalités de nomination de certains fonctionnaires occupant des fonctions dirigeantes dans les administrations et services de l’État.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L’article 17 de la <ref href="http://legilux.public.lu/eli/etat/leg/loi/2015/03/25/n3/jo" id="6c384c93-9bb5-4ba8-8621-908eb797dd45" scl:verify="true">loi précitée du 25 mars 2015</ref> leur est également applicable.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_13">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_13</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_13/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 13.</num>
+					<paragraph id="paragraph_25">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le Directeur du Bureau du Maréchal est l’adjoint du Maréchal. Il dirige le Bureau du Maréchal et les fonctions y rattachées. En cas d’absence du Maréchal il agit comme remplaçant et préside le Comité de direction.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_26">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le Conseiller du Grand-Duc conseille et informe le Grand-Duc sur l’actualité politique, économique et sociale et les grands dossiers nationaux et internationaux.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_27">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le Directeur Administration, Finances et Ressources humaines a dans ses compétences l’administration générale, la comptabilité, les finances, les ressources humaines et les technologies de l’information de la Maison du Grand-Duc.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il prépare le budget de la Maison du Grand-Duc et veille à son exécution, conformément au chapitre 5.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il est responsable de la gestion des ressources humaines de la Maison du Grand-Duc. Il développe une politique de bien-être du personnel et sera responsable de sa mise en œuvre.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il veille au respect par les agents de la Maison du Grand-Duc de la législation en vigueur en matière de protection des données à caractère personnel.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il est responsable de la mise en place des systèmes informatiques appropriés au sein de la Maison du Grand-Duc.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_28">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Le Directeur Organisation et Sécurité est responsable de la coordination du service des aides de camp, du service de la protection rapprochée et du service de protection des lieux de la Maison du Grand-Duc.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_29">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Le Directeur des Régies et Infrastructures est responsable de la coordination et du fonctionnement des régies du Palais Grand-Ducal, du Château de Colmar Berg et du Château de Fischbach. Il gère le parc automobile de la Maison du Grand-Duc et les plans de mission des chauffeurs. Il est en charge des infrastructures.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_4">
+				<num>
+					<b>Chapitre 4 </b>
+				</num>
+				<heading>
+					<b>Comité de coordination</b>
+				</heading>
+				<article id="art_14">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_14</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_14/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 14.</num>
+					<alinea>
+						<content>
+							<p>Il est créé un Comité de coordination chargé des missions suivantes :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>le suivi du bon fonctionnement de la Maison du Grand-Duc dans l’esprit du présent arrêté ;</li>
+								<li>la coordination des relations entre le Grand-Duc et le Gouvernement ;</li>
+								<li>l’approbation de l’avant-projet de budget de la Maison du Grand-Duc ;</li>
+								<li>l’approbation de l’organigramme fonctionnel et personnel de la Maison du Grand-Duc, y inclus les éventuels amendements, tels que proposés par le Maréchal ;</li>
+								<li>l’exercice, à l’égard du personnel de la Maison du Grand-Duc, des pouvoirs conférés au Ministre du ressort par la législation applicable aux agents de l’État ;</li>
+								<li>l’approbation de la publication des communications d’ordre institutionnel de la Maison du Grand-Duc ;</li>
+								<li>l’établissement d’un inventaire des biens, propriété des Membres de la Famille grand-ducale, qui contribuent à l’exercice de la fonction du Chef de l’État et pour lesquels l’État prend en charge les frais d’entretien, de réparation et de rénovation.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_15">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_15</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_15/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 15.</num>
+					<paragraph id="paragraph_30">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le Comité de coordination est co-présidé par le Maréchal et le Secrétaire général du Conseil de Gouvernement. Les co-présidents peuvent s’adjoindre des collaborateurs et des experts.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_31">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le Comité peut être assisté d’un secrétaire désigné de commun accord par les co-présidents.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_16/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<paragraph id="paragraph_32">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le Comité de coordination se réunit au moins six fois par an sur l’initiative de l’un de ses co-présidents. Les réunions peuvent se tenir par téléconférence.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_33">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les décisions du Comité de coordination sont prises d’un commun accord par les co-présidents.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_17/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 17.</num>
+					<paragraph id="paragraph_34">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le Maréchal saisit le Comité de coordination de toute demande de renforcement ou de remplacement d’effectifs. Après vérification de la description de poste en question par rapport à l’organigramme, le Comité de coordination saisit le Ministre d’État des demandes et des prévisions d’effectifs ainsi que du nombre d’effectifs engagés, afin qu’il puisse en être tenu compte dans l’élaboration des propositions de la Commission d’économies et de rationalisation relatives au renforcement de personnel au service de l’État dans le cadre de la procédure budgétaire.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_35">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le Maréchal veille à la publication des postes vacants, déterminés et budgétisés selon la procédure prévue au paragraphe 1<sup>er</sup>. Il soumet les dossiers des candidats sélectionnés au Comité de coordination pour approbation avant leur engagement.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_36">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Toute demande de changement d’affectation ou de changement d’administration émanant du Maréchal et concernant un agent de la Maison du Grand-Duc est soumise pour approbation au Comité de coordination.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_5">
+				<num>
+					<b>Chapitre 5 </b>
+				</num>
+				<heading>
+					<b>Budget</b>
+				</heading>
+				<article id="art_18">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_18</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_18/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 18.</num>
+					<paragraph id="paragraph_37">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les fonds nécessaires au fonctionnement de la Maison du Grand-Duc sont à charge des crédits inscrits au budget de l’État.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_38">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le budget alloué à la Maison du Grand-Duc est exécuté conformément à la <ref href="/eli/etat/leg/loi/1999/06/08/n2/jo" id="d8bc23fe-130c-4dc7-9406-7cbbe3435bf5">loi modifiée du 8 juin 1999</ref> sur le budget, la comptabilité et la trésorerie de l’État, y inclus en ce qui concerne le contrôle de son exécution par la Direction du contrôle financier en appliquant les modalités des procédures communes fixées par le Ministre des Finances. En application de la <ref href="/eli/etat/leg/loi/1999/06/08/n1/jo" id="abf5930e-562a-4045-bc00-ac8081a4fff5" scl:verify="true">loi modifiée du 8 juin 1999</ref> portant organisation de la Cour des comptes, la Cour des comptes examine la légalité et la régularité des dépenses de la Maison du Grand-Duc. Le Maréchal revêt le rôle d’ordonnateur.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_39">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>L’avant-projet de budget de la Maison du Grand-Duc pour l’exercice budgétaire suivant est soumis par le Maréchal au Comité de coordination. Le Secrétaire général du Conseil de Gouvernement soumet l’avant-projet de budget approuvé par le Comité de coordination à l’Inspection générale des finances pour inclusion dans le projet de loi concernant le budget des recettes et des dépenses de l’État pour l’exercice budgétaire suivant et la programmation financière des exercices budgétaires suivants conformément à la lettre circulaire budgétaire.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_19">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_19</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_19/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 19.</num>
+					<alinea>
+						<content>
+							<p>L’État prend en charge les frais d’entretien, de gros entretien, de sécurisation et de rénovation relatifs au Château de Fischbach pour les périodes pendant lesquelles il sert de domicile au Grand-Duc Héritier, au Lieutenant-Représentant ou à l’Ancien Grand-Duc.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_20">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_20</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_20/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 20.</num>
+					<alinea>
+						<content>
+							<p>En cas d’aliénation d’un bien qui est la propriété des Membres de la Famille grand-ducale et pour lequel l’État a pris en charge des frais d’entretien, de réparation ou de rénovation conformément à l’article 14, point 7°, l’Administration des Biens du Grand-Duc rembourse au Trésor public le montant correspondant aux frais d’entretien, de réparation ou de rénovation pris en charge par l’État, en tenant compte de la dépréciation de valeur due à l’usage et au temps, suivant une table d’amortissement agréée par le Comité de coordination et gérée par la Maison du Grand-Duc. Ce remboursement est effectué dans les deux mois qui suivent la date de l’aliénation en question.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_6">
+				<num>
+					<b>Chapitre 6 </b>
+				</num>
+				<heading>
+					<b>Dispositions transitoires</b>
+				</heading>
+				<article id="art_21">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_21</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_21/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 21.</num>
+					<paragraph id="paragraph_40">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le personnel au service de la Cour grand-ducale disposant d’un contrat de travail conclu avec l’Administration des Biens du Grand-Duc au jour de l’entrée en vigueur du présent arrêté et dont le poste figure dans l’organigramme arrêté selon la procédure prévue à l’article 14, point 4, est repris par la Maison du Grand-Duc selon les conditions prévues par le présent arrêté, au plus tard au 30 juin 2021. À cette fin, la date d’entrée en service auprès de la Cour grand-ducale est considérée comme date d’entrée en service en tant qu’agent de l’État.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_41">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les agents de la Police grand-ducale affectés à la protection rapprochée au moment de l’entrée en vigueur du présent arrêté sont intégrés dans l’Unité spéciale de la Police grand-ducale.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_7">
+				<num>
+					<b>Chapitre 7 </b>
+				</num>
+				<heading>
+					<b>Dispositions finales</b>
+				</heading>
+				<article id="art_22">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_22</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_22/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22.</num>
+					<alinea>
+						<content>
+							<p>Les paragraphes 2 et 3 de l’article 18 s’appliquent à partir du 1<sup>er</sup> janvier 2021.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_23">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_23</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_23/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 23.</num>
+					<alinea>
+						<content>
+							<p>Les paragraphes 1<sup>er</sup> et 2 de l’article 6 s’appliquent à partir du 1<sup>er</sup> janvier 2022.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_24">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_24</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817/art_24/20201009</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/agd/2020/10/09/a817</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-10-09</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 24.</num>
+					<alinea>
+						<content>
+							<p>Notre Premier Ministre, Ministre d’État est chargé de l’exécution du présent arrêté qui sera publié au Journal officiel du Grand-Duché de Luxembourg et qui entrera en vigueur le jour de sa publication.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

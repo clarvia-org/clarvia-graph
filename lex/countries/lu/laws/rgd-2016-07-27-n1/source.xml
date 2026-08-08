@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2016-07-27" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MSS"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2016-07-27" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2016-07-27" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-04-29</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2016-07-27</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2016A2454A</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MSS</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1530</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/394</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/669</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/831</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/937</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo/fr</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2016-08-01</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2016/a145</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2016-07-29</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1985/06/19/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1989/12/22/n2/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/rgd/1999/03/19/n5/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/rgd/1981/12/11/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1977/12/08/n2/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1977/12/08/n3/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1985/12/20/n4/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1985/12/20/n5/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1985/12/20/n6/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1994/09/30/n2/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1995/03/18/n4/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2007/02/20/n3/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2008/09/11/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2010/12/30/n9/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1979/05/26/n6/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1980/10/08/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1985/12/20/n3/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1987/09/23/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2010/10/07/n1/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 29/04/2020 : Règlement grand-ducal du 27 juillet 2016 portant exécution de certaines dispositions du Livre IV du Code de la sécurité sociale.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1925/12/17/n1/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2016-145-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2016/a145/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2016-07-27-n1-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2016-145-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2016/a145/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2016/a145/fr/pdf/eli-etat-leg-memorial-2016-a145-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2016-07-27" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2019-01-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2020-04-29" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2018/12/05/a1113/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2018/12/05/a1113/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2018/12/05/a1113/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2020/04/29/a344/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2016/07/27/n1/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2020/04/29/a344/jo" id="rp2" showAs="Règlement grand-ducal du 29 avril 2020 modifiant le règlement grand-ducal modifié du 27 juillet 2016 portant exécution de certaines dispositions du Livre IV du Code de la sécurité sociale."/>
+				<passiveRef href="/eli/etat/leg/rgd/2018/12/05/a1113/jo" id="rp3" showAs="Règlement grand-ducal du 5 décembre 2018 modifiant le règlement grand-ducal du 27 juillet 2016 portant exécution de certaines dispositions du Livre IV du Code de la sécurité sociale et portant abrogation du règlement grand-ducal du 30 avril 2004 portant sur les modalités des consultations complémentaires pouvant être exécutées par la sage-femme."/>
+			</references>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2018-12-11|2018-12-05|RGD|1113">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/12/05/a1113/jo">Règlement grand-ducal du 5 décembre 2018 modifiant le règlement grand-ducal du 27 juillet 2016 portant exécution de certaines dispositions du Livre IV du Code de la sécurité sociale et portant abrogation du règlement grand-ducal du 30 avril 2004 portant sur les modalités des consultations complémentaires pouvant être exécutées par la sage-femme.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2018-12-11|2018-12-05|RGD|1113">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/12/05/a1113/jo">Règlement grand-ducal du 5 décembre 2018 modifiant le règlement grand-ducal du 27 juillet 2016 portant exécution de certaines dispositions du Livre IV du Code de la sécurité sociale et portant abrogation du règlement grand-ducal du 30 avril 2004 portant sur les modalités des consultations complémentaires pouvant être exécutées par la sage-femme.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2018-12-11|2018-12-05|RGD|1113">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/12/05/a1113/jo">Règlement grand-ducal du 5 décembre 2018 modifiant le règlement grand-ducal du 27 juillet 2016 portant exécution de certaines dispositions du Livre IV du Code de la sécurité sociale et portant abrogation du règlement grand-ducal du 30 avril 2004 portant sur les modalités des consultations complémentaires pouvant être exécutées par la sage-femme.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2020-04-29|2020-04-29|RGD|344">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/04/29/a344/jo">Règlement grand-ducal du 29 avril 2020 modifiant le règlement grand-ducal modifié du 27 juillet 2016 portant exécution de certaines dispositions du Livre IV du Code de la sécurité sociale.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 29/04/2020 : Règlement grand-ducal du 27 juillet 2016 portant exécution de certaines dispositions du Livre IV du Code de la sécurité sociale.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<section id="section_1" wId="section_1">
+				<heading scl:align="left" scl:style-format="b">Détermination des frais de route et de séjour des personnes dont les enfants sont examinés en vue de l'octroi de l'allocation spéciale supplémentaire prévue à l'article 274 du Code de la sécurité sociale</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_1er/20160801</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2016-08-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>.</num>
+					<paragraph id="paragraph_1">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les frais de route et de séjour des personnes que la Caisse pour l'avenir des enfants fait examiner et réexaminer en vue de l'octroi de l'allocation spéciale supplémentaire sont à charge de la Caisse pour l'avenir des enfants, dénommée par la suite «la caisse».</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_2">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Aux frais de transport s'ajoute, s'il y a lieu, une indemnité de repas ne pouvant pas dépasser 10 euros.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_3">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>La personne qui doit quitter la commune où elle réside pour répondre à la convocation du médecin conseil de la caisse, a droit au remboursement du prix effectif du billet de voyage aller et retour par la voie la plus économique, du point de départ le plus près de sa résidence au point d'arrivée le plus convenable situé dans la commune où elle a été convoquée.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_4">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>La personne qui est reconnue médicalement comme étant dans l'impossibilité de se déplacer autrement qu'en voiture, bénéficie, lorsqu'elle est transportée par la voiture des parents, d'une indemnité kilométrique de 0,20 euros par km parcouru et lorsqu'elle a été transportée en taxi, du remboursement, sur présentation d'une pièce justificative, de ses dépenses réelles et nécessaires.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_5">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Lorsqu'il s'agit d'une personne reconnue médicalement comme ne pouvant voyager seule, le tiers qui l'accompagne a droit, pour autant que ces frais ont été réellement exposés et que l'intéressé n'a pas utilisé sa voiture privée, dans les mêmes conditions, au remboursement de ses frais de transport et à l'indemnité de repas visés a aux alinéas précédents.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_6">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>La demande de remboursement des frais de transport et de repas doit obligatoirement être certifiée sincère et véritable.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+			<section id="section_2" wId="section_2">
+				<heading scl:align="left" scl:style-format="b">Modalités des examens médicaux et de l'examen dentaire de la femme enceinte et de l'examen postnatal de la mère ainsi que sur le carnet de maternité</heading>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_2/20160801</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2016-08-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<paragraph id="paragraph_7">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le premier des cinq examens auxquels la femme enceinte se soumet pendant sa grossesse doit être effectué avant la fin du troisième mois de la grossesse.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Cet examen médical a pour but d'établir:</p>
+								<ul scl:symbol="custom">
+									<li scl:symbol="–">l'âge de la grossesse, repérant la date des dernières règles et le jour probable du terme, quarante semaines plus tard;</li>
+									<li scl:symbol="–">le poids et la taille de la femme enceinte;</li>
+									<li scl:symbol="–">le dosage du fer sérique et de la glycémie; le bilan cytochimique des urines;</li>
+									<li scl:symbol="–">les antécédents médicaux (constatation d'une cardiopathie, d'une hypertension artérielle), familiaux, chirurgicaux, gynécologiques et obstétriques;</li>
+									<li scl:symbol="–">le profil socio-biologique de la future mère, éventuellement complété par une visite ou enquête de l'assistante d'hygiène sociale ou de l'assistante sociale.</li>
+								</ul>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le médecin procède en outre aux analyses nécessaires en vue de la détection des anticorps anti-HBS.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>A la fin de l'examen le médecin remet son carnet de maternité à la future mère.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_8">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>En cas de nécessité, le médecin peut ordonner la recherche des anticorps antitoxoplasmiques et, le cas échéant, un examen radiologique pulmonaire radiographique ou radiophotographique, à l'exclusion de tout examen radioscopique.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La répétition de l'examen sérologique en vue de la recherche de la syphilis est recommandée, à moins que cet examen ait été pratiqué dans les six mois précédents.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_9">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le deuxième examen a lieu au plus tard dans la deuxième quinzaine du quatrième mois et porte sur:</p>
+								<ul scl:symbol="custom">
+									<li scl:symbol="–">l'état de santé général, le bien-être physique et psychique;</li>
+									<li scl:symbol="–">la révision des états pathologiques ou des risques éventuellement décelés au premier examen;</li>
+									<li scl:symbol="–">la croissance utérine et foetale;</li>
+									<li scl:symbol="–">le dépistage de l'existence possible de complications obstétricales (hémorragies vaginales).</li>
+								</ul>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_10">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Le troisième examen a lieu au cours du sixième mois. Il porte sur:</p>
+								<ul scl:symbol="custom">
+									<li scl:symbol="–">l'état de santé général, le bien-être physique et psychique;</li>
+									<li scl:symbol="–">la révision des états pathologiques ou des risques éventuellement décelés au premier examen;</li>
+									<li scl:symbol="–">la croissance utérine et foetale (grossesse gémellaire, malnutrition foetale, etc.);</li>
+									<li scl:symbol="–">le dépistage de l'existence possible de complications obstétricales (hémorragies vaginales, pré-éclampsie);</li>
+									<li scl:symbol="–">le dosage du fer sérique et de la glycémie; le bilan cytochimique des urines;</li>
+									<li scl:symbol="–">le dépistage de signes biologiques ou cliniques de menace d'accouchement prématuré;</li>
+									<li scl:symbol="–">la présence d'une éventuelle infection générale ou localisée;</li>
+									<li scl:symbol="–">le dépistage d'une disproportion foeto-pelvienne.</li>
+								</ul>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_11">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Le quatrième examen prénatal se situe dans les quinze premiers jours du huitième mois de grossesse. En dehors des objectifs définis pour les examens précédents, il est plus particulièrement orienté vers le dépistage de la toxémie gravidique et la recherche des causes possibles de dystocie.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_12">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Le dernier examen prénatal a lieu dans les quinze premiers jours du neuvième mois de grossesse et comporte également le dépistage de la toxémie gravidique et la recherche des causes possibles de dystocie et d'anomalies de présentation. Il est en outre plus particulièrement orienté vers la prévention des morts foetales tardives.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_13">
+						<num>(7)</num>
+						<alinea>
+							<content>
+								<p>Au cours de chacun des examens médicaux, la prise de poids et celle de la tension artérielle ainsi que la recherche de l'albumine et du glucose doivent être obligatoirement effectuées.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_14">
+						<num>(8)</num>
+						<alinea>
+							<content>
+								<p>Au cours de ces examens il est recommandé au médecin de mettre la future mère au courant de l'histoire naturelle de la grossesse, tant sur le plan physique que psychologique, et d'attirer son attention sur le danger que présentent pour le foetus la consommation de cigarettes et de boissons alcoolisées, la prise incontrôlée de médicaments, l'exposition aux différents agents physiques.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_15">
+						<num>(9)</num>
+						<alinea>
+							<content>
+								<p>Le médecin lui rappelle les règles d'hygiène de la gestation, en particulier l'importance d'une alimentation complète et bien équilibrée.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_16">
+						<num>(10)</num>
+						<alinea>
+							<content>
+								<p>L'examen dentaire a lieu dès que la femme enceinte est au courant de son état et au plus tard avant la fin du cinquième mois.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_17">
+						<num>(11)</num>
+						<alinea>
+							<content>
+								<p>La prévention des incompatibilités sanguines foeto-maternelles par l'utilisation des gammaglobulines anti-D doit</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>être obligatoirement effectuée le plus tôt possible chez toute femme Rh négative et qui vient de mettre au monde un enfant Rh positif.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_18">
+						<num>(12)</num>
+						<alinea>
+							<content>
+								<p>L'examen postnatal de la mère a lieu dans les dix semaines qui suivent l'accouchement, mais au plus tôt après l'expiration des deux premières semaines qui suivent l'accouchement. Il permet de vérifier si l'état de santé de la mère a été modifié par la grossesse et comporte à cet effet un examen clinique général et un examen gynécologique.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_19">
+						<num>(13)</num>
+						<alinea>
+							<content>
+								<p>Si de l'avis du médecin-examinateur la femme enceinte nécessite, en raison de son état de santé ou de sa situation, une protection particulière, il en avise le médecin-inspecteur de la circonscription, qui peut charger une assistante d'hygiène sociale ou une assistante sociale de visiter la femme à domicile. L'assistante conseille la femme enceinte sur les mesures et les précautions particulières à prendre et en fait rapport au médecin-examinateur et au médecin-inspecteur.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_20">
+						<num>(14)</num>
+						<alinea>
+							<content>
+								<p>Le médecin-examinateur consigne les résultats de l'examen auquel il a procédé dans le carnet de maternité dont toute femme enceinte est pourvue. Ce carnet est délivré à la future mère lors du premier examen médical. A cet effet le ministre ayant la Santé dans ses attributions met des carnets de maternité à la disposition des médecins.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le carnet de maternité a le format DIN A5. Il comporte en chacune des langues française, allemande, anglaise, italienne, espagnole et portugaise des conseils à l'intention de la femme enceinte. Le carnet rappelle pour chacun des cinq examens médicaux ainsi que pour l'examen dentaire et pour l'examen postnatal les investigations auxquelles le médecin-examinateur doit procéder. Le médecin transcrit ses observations aux endroits prévus à cet effet. Il peut en outre y annoter ses observations supplémentaires ainsi que ses recommandations.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_21">
+						<num>(15)</num>
+						<alinea>
+							<content>
+								<p>La périodicité des examens prescrits n'est pas une condition d'attribution de l'allocation prénatale et de l'allocation de naissance proprement dite.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+			<section id="section_3" wId="section_3">
+				<heading scl:align="left" scl:style-format="b">Modalités des examens médicaux des enfants en bas âge, sur la périodicité de ces examens et sur le modèle du carnet de santé et les inscriptions qui devront y être portées obligatoirement</heading>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_3/20200429</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2020-04-29</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<paragraph id="paragraph_22">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Tout enfant doit être soumis par celui des parents ou toute autre personne qui en a la garde, à deux examens périnatals et à quatre examens médicaux subséquents jusqu'à l'âge de deux ans.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Ces examens, en vue desquels les médecins-examinateurs recevront un carnet d'instructions du ministère ayant la Santé dans ses attributions, constituent des bilans de santé.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_23">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les examens périnatals sont effectués dans la maternité où l'enfant est né ou dans un service hospitalier de pédiatrie dans lequel l'enfant a été transféré. Les quatre examens subséquents sont effectués soit dans un service hospitalier de pédiatrie, soit dans un centre médico-social spécialement équipé à cet effet, soit dans un cabinet médical; cependant le premier de ces quatre examens peut aussi être effectué dans la maternité où l'enfant est né.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il est procédé à un test audiométrique par les soins du Service audiophonologique de la Direction de la Santé, soit dans la maternité où l'enfant est né, soit dans les locaux du prédit service.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_24">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les examens périnatals ont lieu le premier dans les quarante-huit heures qui suivent la naissance, le second à la sortie de la maternité, ou, dans le cas où l'enfant reste à la maternité ou dans un service de pédiatrie, entre le cinquième et dixième jour à partir de sa naissance.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les quatre examens subséquents ont lieu:</p>
+								<ul scl:symbol="custom">
+									<li scl:symbol="–">le premier à l'âge de 3 à 8 semaines</li>
+									<li scl:symbol="–">le deuxième à l'âge de 4 à 6 mois</li>
+									<li scl:symbol="–">le troisième à l'âge de 9 à 12 mois</li>
+									<li scl:symbol="–">le quatrième à l'âge de 21 à 24 mois.</li>
+								</ul>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le médecin qui procède au 2<sup>ème</sup> des examens subséquents vérifie l'accomplissement du test audiométrique dont question à l'article qui précède, sur base d'une attestation établie par le chargé de direction du Service audiophonologique et versée par la personne qui accompagne l'enfant.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_25">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Le carnet de santé, dans lequel le médecin examinateur consignera les résultats des examens auxquels il a procédé, est un document personnel, destiné à la sauvegarde et à l'épanouissement de la santé de son titulaire. Il est confidentiel et ne concerne que le titulaire ou la personne qui en a la garde pendant sa minorité, ainsi que le médecin examinateur et tous les autres médecins auxquels le titulaire le présentera lors de consultations ultérieures.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_26">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>L'officier de l'état civil du lieu de naissance, après avoir dressé l'acte de naissance, délivre le carnet de santé revêtu du numéro de l'acte de naissance précédé du nom de la commune et suivi de l'année en cours, au déclarant qui devra le remettre de suite au père ou, à défaut de père, à la mère ou à la personne qui a la garde du nouveau-né.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_27">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Lors de chacun des examens prévus au présent règlement la personne qui accompagne l'enfant présentera le carnet de santé au médecin-examinateur.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_28">
+						<num>(7)</num>
+						<alinea>
+							<content>
+								<p>Le médecin qui effectue le premier examen périnatal remplira les pages relatives aux antécédents familiaux de l'enfant.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il transcrira à l'endroit prévu à cet effet les observations utiles figurant dans le carnet de maternité; faute de carnet de maternité il procédera à l'anamnèse nécessaire. Aux pages prévues à cet effet il transcrira les résultats des examens auxquels il a procédé.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il fera parvenir au médecin-inspecteur de la circonscription les doubles de ces inscriptions sur les tirés-à-part du carnet fournis à cet effet à la maternité.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_29">
+						<num>(8)</num>
+						<alinea>
+							<content>
+								<p>Le ou les médecins qui procèdent aux quatre examens subséquents inscriront de même aux pages correspondantes les observations qu'ils jugent utiles ou nécessaires et transmettront le double des inscriptions au médecin-inspecteur de la circonscription sur les fiches détachables du carnet.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_30">
+						<num>(9)</num>
+						<alinea>
+							<content>
+								<p>Le carnet de santé aura le format DIN A5. La première page de couverture sera numérotée.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le carnet sera rédigé en langue française, à l'exception des textes qui s'adressent directement au titulaire ou à celui qui en a la garde, et qui sont rédigés en allemand et en français.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_40">
+						<num>
+							<mod class="mod-start" for="#pm4"/>(10)</num>
+						<alinea>
+							<content>
+								<p>La périodicité des examens prescrits n’est pas une condition d’attribution de l’allocation postnatale.<mod class="mod-end" for="#pm4"/>
+									<noteRef href="#M4" marker="4"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+			<section id="section_4" wId="section_4">
+				<heading scl:align="left" scl:style-format="b">Modalités des consultations complémentaires pouvant être exécutées par la sage-femme</heading>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_4/20190101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<paragraph id="paragraph_31">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Sans préjudice des dispositions du <ref href="/eli/etat/leg/rgd/1981/12/11/n1">règlement grand-ducal modifié du 11 décembre 1981</ref> réglementant les études et les attributions de la profession de sage-femme, les consultations complémentaires pouvant être exécutées par une sage-femme au cours de la grossesse ou au cours du post-partum ou pendant la période d'allaitement maternel ont pour objet de contribuer à la surveillance de la grossesse ainsi que de transmettre aux parents ou futurs parents des connaissances adéquates pour assurer au quotidien le bien-être de leur enfant.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_32">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Dans le cadre de cette transmission de gestes et de pratiques courants la sage-femme établit un programme de préparation individualisée. Elle donne notamment des informations sur la physiologie et les modifications physiques et psychiques en rapport avec la grossesse et fournit des explications et des conseils en matière d'hygiène, d'alimentation et de protection de la mère ou future mère et de l'enfant né ou à naître.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_33">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Au cours du post-partum et de la période d'allaitement maternel, la prestation de consultations complémentaires par la sage-femme a notamment pour but de faciliter le passage de la maternité au domicile ainsi que l'adaptation au nouvel environnement tout comme la poursuite de l'allaitement et de contribuer à la surveillance des suites de couches de la femme accouchée.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La sage-femme preste tous soins et conseils utiles permettant d'élever le nouveau-né dans les meilleures conditions, et elle conseille la mère pendant toute la période de l'allaitement au sein.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Pour la réalisation des objectifs énumérés au présent article, la sage-femme collabore avec tout autre prestataire de soins de santé ainsi qu'avec tout intervenant du domaine social.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_34">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les consultations complémentaires à exécuter par la sage-femme dans le cadre du présent règlement sont au nombre de deux, dont <mod class="mod-start" for="#pm1"/>la première<mod class="mod-end" for="#pm1"/>
+									<noteRef href="#M1" marker="1"/> a lieu au cours de la grossesse et <mod class="mod-start" for="#pm2"/>la seconde<mod class="mod-end" for="#pm2"/>
+									<noteRef href="#M2" marker="2"/> au cours du post-partum.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_35">
+						<num>
+							<mod class="mod-start" for="#pm3"/>
+							<del>(5)</del>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<del>Le coût des consultations complémentaires correspond au coefficient de 6,50 points. Le montant du coût s'obtient en multipliant le coefficient par la valeur de la lettre-clé correspondant à la nomenclature des sages-femmes.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>Les coefficient et lettre-clé dont question ci-dessus sont ceux prévus à l'article 65 du <ref href="/eli/etat/leg/code/securite_sociale" id="cc3c341b-cc95-42c4-802c-312067e8a6fa">Code de la sécurité sociale</ref>.</del>
+								</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>
+									<del>Le coût des consultations complémentaires, ainsi que celui de l'indemnité de déplacement et des frais de voyage, est à charge de l'Etat. L'indemnité de déplacement ainsi que les frais de voyage sont calculés conformément aux dispositions du <ref href="/eli/etat/leg/rgd/1999/03/19/n5">règlement grand-ducal du 19 mars 1999</ref> concernant la nomenclature des actes et services des sages-femmes pris en charge par l'assurance-maladie. Les modifications y relatives que subira ce règlement seront d'application.<mod class="mod-end" for="#pm3"/>
+									</del>
+									<noteRef href="#M3" marker="3"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_36">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Les consultations complémentaires visées par le présent règlement ne sont pas prises en compte pour l'obtention de l'allocation de naissance.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_37">
+						<num>(7)</num>
+						<alinea>
+							<content>
+								<p>La sage-femme consigne ses observations dans le carnet de maternité ainsi que dans le carnet de santé prévus aux articles respectivement aux articles 277 (2) et 280 (3) du <ref href="/eli/etat/leg/code/securite_sociale" id="4cbfd8bd-2bda-406c-95db-b8644e1119c1">Code de la sécurité sociale</ref>.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+			<section id="section_5" wId="section_5">
+				<heading scl:align="left" scl:style-format="b">Composition du Conseil arbitral et du Conseil supérieur de la sécurité sociale</heading>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_5/20160801</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2016-08-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<alinea>
+						<content>
+							<p>En exécution de l'article 315 (7) du <ref href="/eli/etat/leg/code/securite_sociale" id="178b6473-3b34-48d9-b965-4d2f3fe07be8">Code de la sécurité sociale</ref>, la composition du Conseil arbitral et du Conseil supérieur de la sécurité sociale à l'effet de statuer sur les contestations pouvant naître entre la Caisse pour l'avenir des enfants, d'une part, et les assujettis ou ceux qui prétendent à une prestation familiale, d'autre part, se fait suivant les dispositions de l'article 17 de la <ref href="/eli/etat/leg/loi/1989/12/22/n2/jo" id="d3f48bec-f7a8-463f-9c8d-1149be467691" scl:verify="true">loi du 22 décembre 1989</ref> ayant pour objet la coordination des régimes de pension.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="section_6" wId="section_6">
+				<heading scl:align="left" scl:style-format="b">Fixation de l'assiette et des modalités de paiement des cotisations en matière d'allocation familiale pour les salariés relevant des régimes de pension statutaires</heading>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_6/20160801</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2016-08-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<paragraph id="paragraph_38">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>L'assiette des cotisations pour les salariés relevant des régimes de pension statutaires est constituée par les éléments pensionnables des traitements dans les limites du minimum et du maximum cotisable fixé aux alinéas 2 à 4 de l'article 241 du <ref href="/eli/etat/leg/code/securite_sociale" id="ec3ced25-1b77-4da2-b8a5-5261296c0f93">Code de la sécurité sociale</ref>.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_39">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les cotisations sont payables à l'échéance des traitements et salaires, sauf dérogation à accorder par le comité directeur de la Caisse pour l'avenir des enfants.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+			<section id="section_7" wId="section_7">
+				<heading scl:style-format="b">Dispositions abrogatoires</heading>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_7/20160801</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2016-08-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7.</num>
+					<alinea>
+						<content>
+							<p>Sont abrogés:</p>
+							<ul scl:symbol="custom">
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/1977/12/08/n2">Règlement grand-ducal du 8 décembre 1977</ref> portant sur les modalités des examens médicaux et de l'examen dentaire de la femme enceinte et de l'examen postnatal de la mère ainsi que sur le carnet de maternité;</li>
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/1977/12/08/n3">Règlement grand-ducal du 8 décembre 1977</ref> portant sur les modalités des examens médicaux des enfants en bas âge, sur la périodicité de ces examens et sur le modèle du carnet de santé et les inscriptions qui devront y être portées obligatoirement;</li>
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/1985/12/20/n3">Règlement grand-ducal du 20 décembre 1985</ref> portant fixation de l'assiette et des modalités de paiement des cotisations en matière d'allocations familiales pour les salariés relevant des régimes de pension statutaires;</li>
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/1985/12/20/n6">Règlement grand-ducal du 20 décembre 1985</ref> portant fixation des cotisations à verser à la caisse nationale des prestations familiales par les personnes exerçant une profession libérale, industrielle, commerciale ou artisanale et par les personnes n'exerçant pas de profession;</li>
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/1985/12/20/n4">Règlement grand-ducal du 20 décembre 1985</ref> ayant pour objet de prévenir et de restreindre le cumul des prestations familiales luxembourgeoises avec celles prévues aux mêmes fins par un régime non luxembourgeois;</li>
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/1985/12/20/n5">Règlement grand-ducal du 20 décembre 1985</ref> déterminant la composition du conseil arbitral et du conseil supérieur des assurances sociales en exécution de l'article 31 de la <ref href="/eli/etat/leg/loi/1985/06/19/n1/jo" id="492fcd30-4c56-40ae-96f3-a4cfdf147e66" scl:verify="true">loi du 19 juin 1985</ref> concernant les allocations familiales et portant création de la caisse nationale des prestations familiales;</li>
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/1994/09/30/n2">Règlement grand-ducal du 30 septembre 1994</ref> portant fixation des cotisations à verser à la caisse nationale des prestations familiales par les personnes exerçant une profession agricole ou viticole;</li>
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/1995/03/18/n4">Règlement grand-ducal du 18 mars 1995</ref> portant exécution de l'article 3 de la <ref href="/eli/etat/leg/loi/1985/06/19/n1/jo" id="d6215d38-8b26-4cb0-b924-9e05c05e5f4b" scl:verify="true">loi modifiée du 19 juin 1985</ref> concernant les allocations familiales et portant création de la caisse nationale des prestations familiales;</li>
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/2010/12/30/n9">Règlement grand-ducal du 30 décembre 2010</ref> fixant les modalités de paiement du boni pour enfant;</li>
+								<li scl:symbol="–">le <ref href="/eli/etat/leg/rgd/2010/10/07/n1">Règlement grand-ducal du 7 octobre 2010</ref> ayant pour objet de déterminer les conditions d'application de l'octroi des allocations familiales en faveur des élèves dépassant l'âge de dix-huit ans.</li>
+							</ul>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="section_8" wId="section_8">
+				<heading scl:style-format="b">Entrée en vigueur</heading>
+				<article id="art_8">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_8</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_8/20160801</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2016-08-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 8.</num>
+					<alinea>
+						<content>
+							<p>Le présent règlement grand-ducal entre en vigueur le premier jour du mois qui suit sa publication au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_9">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_9</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1/art_9/20160801</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/07/27/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2016-08-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 9.</num>
+					<alinea>
+						<content>
+							<p>Notre Ministre de la Famille et de l'Intégration est chargée de l'exécution du présent règlement qui sera publié au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+		</body>
+	</act>
+</akomaNtoso>

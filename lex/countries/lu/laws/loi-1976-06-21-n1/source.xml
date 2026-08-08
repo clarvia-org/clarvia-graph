@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-05-10" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MENV"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-05-10" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-05-10" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1/jo</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1469</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2011-05-10</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MENV</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/7</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/913</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2011-05-14</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a88</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2011A1416A</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/TC</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2011-05-10</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="consolidates">/eli/etat/leg/loi/1976/06/21/n1/jo</scl:jolux>
+					<scl:jolux scl:name="titleAlternative">TC - Loi du 21 juin 1976 - lutte contre la pollution</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">TEXTE COORDONNE de la Loi modifiée du 21 juin 1976 relative à la lutte contre la pollution de l’atmosphère.</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1992/08/10/n4/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1993/07/27/n4/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1993/07/29/n9/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1998/03/17/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/2011/04/29/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1808/11/17/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1963/03/25/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1982/08/11/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1996/11/07/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1994/06/13/n2/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/2001/08/01/n16/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a88/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-tc-2011-05-10-n1-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2011/05/10/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a88/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2011/a88/fr/pdf/eli-etat-leg-memorial-2011-a88-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2011-05-10" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+			</lifecycle>
+			<analysis source="#"/>
+			<references source="#">
+				<original href="/eli/etat/leg/tc/2011/05/10/n1/jo" id="ro1" showAs="Original"/>
+			</references>
+			<notes scl:border="50" scl:delim-left="(" scl:delim-right=")" scl:page-footer="true" scl:type="document" source="#eli-etat-leg-tc-2011-05-10-n1-jo-fr-xml">
+				<note id="note_0_0_0">
+					<p>Numérotation introduite par la <ref href="/eli/etat/leg/loi/1998/03/17/n1/jo" id="e6f8ffc4-6466-49eb-a4ea-e50f65e9ed43">loi du 17 mars 1998</ref>.
+</p>
+				</note>
+				<note id="note_0_0_1">
+					<p>Modifié implicitement par l’article 100 de la <ref href="/eli/etat/leg/loi/1996/11/07/n1/jo" id="e7bda2d6-9ef7-4d9f-b31e-50042b0e1acd">loi du 7 novembre 1996</ref> portant organisation des juridictions de l’ordre administratif (Mém. <ref href="https://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1996/a79/fr/pdf/eli-etat-leg-memorial-1996-a79-fr-pdf.pdf" id="913cf070-6fa6-495f-bc18-6fee0cdc6676">A – 79 du 19 novembre 1996</ref>, p. 2262).</p>
+				</note>
+				<note id="note_0_0_2">
+					<p>Modifié implicitement par la <ref href="/eli/etat/leg/loi/1994/06/13/n2/jo" id="78357d73-2b22-490a-bf2f-860cfacf9614">loi du 13 juin 1994</ref> relative au régime des peines (Mém. <ref href="http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1994/a59/fr/pdf/eli-etat-leg-memorial-1994-a59-fr-pdf.pdf" id="4535d824-bc10-49b9-b78b-82677b7fd367">A – 59 du 7 juillet 1994</ref>, p. 1096) et par la <ref href="/eli/etat/leg/loi/2001/08/01/n16/jo" id="c4e8ef15-086f-4b73-8be0-d773d94e0ca5">Loi du 1<sup>er</sup> août 2001</ref> relative au basculement en euro (Mém. <ref href="http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2001/a117/fr/pdf/eli-etat-leg-memorial-2001-a117-fr-pdf.pdf" id="b64c6dd6-e286-4b73-8b1b-9803f2981b6e">A – 117 du 18 septembre 2001</ref>, p. 2440).</p>
+				</note>
+				<note id="note_0_0_3">
+					<p>Modifié implicitement par la <ref href="/eli/etat/leg/loi/1994/06/13/n2/jo" id="370c77eb-0c40-40c3-b567-153cba5cae24">loi du 13 juin 1994</ref> relative au régime des peines (Mém. <ref href="http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1994/a59/fr/pdf/eli-etat-leg-memorial-1994-a59-fr-pdf.pdf" id="66b14ac3-4992-4be3-b4b4-d8c33d2f96f7">A – 59 du 7 juillet 1994</ref>, p. 1096).</p>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>TEXTE COORDONNE de la Loi modifiée du 21 juin 1976 relative à la lutte contre la pollution de l’atmosphère,</p>
+			</longTitle>
+		</preface>
+		<preamble>
+			<container name="preamble">
+				<p scl:align="center">(Mém. <ref href="/eli/etat/leg/loi/1976/06/21/n1/jo" id="02a4755d-4d29-4022-9f70-8cb18db48604">A – 35 du 1<sup>er</sup> juillet 1976</ref>, p. 605)</p>
+				<p>modifiée par:</p>
+				<p>
+					<ref href="/eli/etat/leg/loi/1992/08/10/n4/jo" id="55cc0c51-c4e7-435e-8a40-d6d482a92229">Loi du 10 août 1992</ref>
+				</p>
+				<p scl:space-tab="15">(Mém. <ref href="http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1992/a71/fr/pdf/eli-etat-leg-memorial-1992-a71-fr-pdf.pdf" id="6441136a-2fee-4a26-870a-8051c5b62910">A – 71 du 28 septembre 1992</ref>, p. 2204) </p>
+				<p>
+					<ref href="/eli/etat/leg/loi/1993/07/27/n4/jo" id="b6a765e4-cfd2-431b-8d84-3b393b465af1">Loi du 27 juillet 1993</ref>
+				</p>
+				<p scl:space-tab="15">(Mém. <ref href="http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1993/a57/fr/pdf/eli-etat-leg-memorial-1993-a57-fr-pdf.pdf" id="9bd86cbf-03df-40c6-b30b-db8eda3ad62b">A – 57 du 28 juillet 1993</ref>, p. 1099)</p>
+				<p>
+					<ref href="/eli/etat/leg/loi/1993/07/29/n9/jo" id="003d798c-28bf-4ed8-be81-edc0a3e357f6">Loi du 29 juillet 1993</ref>
+				</p>
+				<p scl:space-tab="15">(Mém. <ref href="http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1993/a70/fr/pdf/eli-etat-leg-memorial-1993-a70-fr-pdf.pdf" id="8851d6d7-e79e-4618-acdc-c0fd1eb9db18">A – 70 du 6 septembre 1993</ref>, p. 1302)</p>
+				<p>
+					<ref href="/eli/etat/leg/loi/1998/03/17/n1/jo" id="6ab3aa68-1c67-4495-8d4a-f80361b0f020">Loi du 17 mars 1998</ref>
+				</p>
+				<p scl:space-tab="15">(Mém. <ref href="http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1998/a26/fr/pdf/eli-etat-leg-memorial-1998-a26-fr-pdf.pdf" id="fd016dac-741d-445b-86b0-8ed86b27634f">A – 26 du 3 avril 1998</ref>, p. 403) </p>
+				<p>
+					<ref href="/eli/etat/leg/loi/2011/04/29/n1/jo" id="2abd8254-506a-4327-aa08-694194ef4797">Loi du 29 avril 2011</ref>.</p>
+				<p scl:space-tab="15"> (Mém. <ref href="http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2011/a88/fr/pdf/eli-etat-leg-memorial-2011-a88-fr-pdf.pdf" id="ccb3602c-d718-4e6e-817d-72b91b37cd72">A – 88 du 10 mai 2011</ref>, p. 1386)</p>
+				<p scl:align="center" scl:font-size="12" scl:space-before="15">
+					<b>Texte coordonné</b>
+				</p>
+			</container>
+		</preamble>
+		<body>
+			<article id="art_1er">
+				<num>Art. 1<sup>er</sup>.</num>
+				<alinea>
+					<content>
+						<p> On entend par pollution de l’atmosphère, au sens de la présente loi, toute émission dans l’air, quelle qu’en soit la source, de substances gazeuses, liquides ou solides, en quantités et à des concentrations susceptibles de causer une gêne anormale à l’homme ou de porter atteinte à sa santé, de nuire aux animaux ou aux plantes ou de causer un dommage aux biens et aux sites.</p>
+					</content>
+				</alinea>
+			</article>
+			<alinea>
+				<content>
+					<p>
+						<i>(<ref href="/eli/etat/leg/loi/1998/03/17/n1/jo" id="0da7a5be-26fb-41ef-938e-c685b7938112">Loi du 17 mars 1998</ref>)</i>
+					</p>
+				</content>
+			</alinea>
+			<article id="art_2">
+				<num>
+					<span scl:style-format="n">«</span>Art. 2. </num>
+				<alinea>
+					<content>
+						<p>Des règlements grand-ducaux, à prendre sur avis du Conseil d’Etat, fixent les mesures à prendre en vue de surveiller, prévenir, réduire ou supprimer la pollution de l’atmosphère.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>
+							<i>(<ref href="/eli/etat/leg/loi/2011/04/29/n1/jo" id="645442b0-503d-4ec0-90c4-9ed21826cf9d">Loi du 29 avril 2011</ref>)</i>
+						</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>«Des règlements grand-ducaux peuvent:»</p>
+						<ol scl:start="1" scl:symbol="1.">
+							<li>déterminer les cas et conditions dans lesquels l’émission de substances gazeuses, liquides ou solides dans l’atmosphère est interdite ou limitée,</li>
+						</ol>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>
+							<i>(<ref href="/eli/etat/leg/loi/2011/04/29/n1/jo" id="611a10de-76ee-4f2e-b677-bd01df47f8f3">Loi du 29 avril 2011</ref>)</i>
+						</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<ol scl:start="1" scl:symbol="custom">
+							<li scl:symbol="«2."> fixer en conséquence des objectifs concernant la qualité de l’air ambiant sous forme de valeurs limites ou valeurs cibles ainsi que, le cas échéant, de seuils d’alerte ou seuils d’information, d’objectifs à long terme, de niveaux critiques, et pour les poussières fines, d’objectifs nationaux de réduction de l’exposition et d’obligations en matière de concentration relative à l’exposition;</li>
+							<li scl:symbol="3."> fixer, le cas échéant, une marge de dépassement temporaire de la valeur limite pour tenir compte des niveaux effectifs d’un polluant déterminé et des délais nécessaires pour mettre en œuvre les mesures visant à améliorer la qualité de l’air ambiant ainsi que les conditions et modalités de report des délais fixés pour atteindre certaines valeurs limites ou d’exemption de l’obligation d’appliquer celles-ci.<p scl:space-before="2"> Cette marge peut être réduite selon les modalités définies pour chaque polluant en vue d’atteindre la valeur limite arrêtée dans le délai qui lui est particulier;» </p>
+							</li>
+							<li scl:symbol="4."> réglementer ou interdire tout état ou toute activité généralement quelconque susceptible d’entraîner une pollution atmosphérique, et en particulier la mise en service, l’exploitation ou l’utilisation par certains établissements industriels, commerciaux, artisanaux et agricoles, d’appareils ou de dispositifs d’installations de combustion et de véhicules à moteur;</li>
+							<li scl:symbol="5."> prescrire l’évaluation de la qualité de l’air ambiant au moyen de réseaux ou de stations individuelles de mesurage;</li>
+							<li scl:symbol="6."> imposer et réglementer le placement et l’utilisation d’appareils ou de dispositifs en vue de prévenir ou de combattre la pollution;<p scl:space-tab="-20">
+									<i>(<ref href="/eli/etat/leg/loi/2011/04/29/n1/jo" id="21dfcc17-bc45-476b-8256-b787432ab911">Loi du 29 avril 2011</ref>)</i>
+								</p>
+							</li>
+							<li scl:symbol="«7.">
+								<ul scl:symbol="custom">
+									<li scl:symbol="–"> établir des plans relatifs à la qualité de l’air;</li>
+									<li scl:symbol="–"> établir des plans d’action à court terme; </li>
+									<li scl:symbol="–"> établir la cartographie des zones et agglomérations, ainsi que le nombre et l’emplacement des points de prélèvement pour tout le territoire national;»</li>
+								</ul>
+							</li>
+							<li scl:symbol="8.">organiser un système de contrôle et de réglage périodique des installations de combustion domestiques et fixer le prix de ce réglage, qui est à charge de l’utilisateur de l’installation.»</li>
+						</ol>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_3">
+				<num>Art. 3.</num>
+				<alinea>
+					<content>
+						<p>
+							<i>(<ref href="/eli/etat/leg/loi/1993/07/27/n4/jo" id="8b5e0fac-c294-41a5-8b4b-6a2eb6502204">Loi du 27 juillet 1993</ref>)</i> «Les infractions à la présente loi et à ses règlements d’exécution sont recherchées et constatées par les officiers de la police judiciaire, les agents de la gendarmerie et de la police, les agents de l’Administration des douanes et accises ainsi que par les ingénieurs, les laborantins, les chimistes, les ingénieurs-techniciens et les expéditionnaires techniques de l’Administration de l’Environnement, le personnel supérieur d’inspection et le personnel technique de la carrière moyenne de l’Inspection du Travail et des Mines, le directeur et le chef du service technique de la station de contrôle pour véhicules automoteurs.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les fonctionnaires de l’Administration de l’Environnement, de l’Inspection du Travail et des Mines et de la station de contrôle pour véhicules automoteurs ont, dans l’accomplissement de ces fonctions, la qualité d’officiers de police judiciaire. Leur compétence s’étend sur tout le territoire du Grand-Duché.»</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Avant d’entrer en fonction ils prêtent devant le tribunal d’arrondissement de leur domicile le serment suivant: «Je jure de remplir mes fonctions avec intégrité, exactitude et impartialité.» L’article 456 du <ref href="/eli/etat/leg/code/penal" id="9ddd638e-724f-4221-8908-cebf7ec43afd">code pénal</ref> leur est applicable.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Dans la suite les agents énumérés à l’alinéa premier du présent article sont désignés sous la dénomination commune «agents».</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_4">
+				<num>Art. 4.</num>
+				<alinea>
+					<content>
+						<p>Les agents peuvent pénétrer de jour et de nuit dans les établissements dont ils ont des raisons de croire qu’il s’y commet une infraction à la loi ou aux règlements relatifs à la lutte contre la pollution de l’atmosphère, à l’exclusion toutefois des locaux destinés à l’habitation.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>
+							<i>(<ref href="/eli/etat/leg/loi/1993/07/29/n9/jo" id="d6b2f3e9-f4c4-4a30-8c6e-af034584760b">Loi du 29 juillet 1993</ref>)</i>
+						</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>«Cette disposition n’est pas applicable aux locaux d’habitation. Toutefois, et sans préjudice des dispositions de l’article 33 (19) du <ref href="/eli/etat/leg/code/procedure_penale" id="dd68a7f1-932b-494c-87f0-ad161800f60f">Code d’instruction criminelle</ref>, s’il existe des indices graves faisant présumer que l’origine d’une infraction à la loi et aux règlements pris pour son exécution se trouve dans des locaux destinés à l’habitation, il peut être procédé à la visite domiciliaire entre six heures et demie et vingt heures par deux de ces agents, agissant en vertu d’un mandat du juge d’instruction.»</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_5">
+				<num>Art. 5.</num>
+				<alinea>
+					<content>
+						<p> Les agents peuvent procéder au contrôle de tout état ou activité généralement quelconque susceptible de causer une pollution de l’atmosphère interdite; ils peuvent notamment, en présence des intéressés ou ceux-ci dûment appelés, mesurer les émissions de substances dans l’atmosphère. Les personnes concernées sont autorisées à se faire assister par un expert de leur choix, sans que cette possibilité puisse retarder l’action des agents. <i>(<ref href="/eli/etat/leg/loi/1993/07/27/n4/jo" id="e6dead6b-4642-4e0e-888d-b8258687d9ee">Loi du 27 juillet 1993</ref>) </i>«Ils ont le droit de prélever des échantillons des produits sur lesquels s’exerce le contrôle. Ils ont également accès à toutes les données et à tous documents relatifs aux substances et produits visés par la présente loi et ses règlements d’exécution.»</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Ces derniers peuvent également procéder ou faire procéder à des essais d’appareils ou de dispositifs susceptibles de créer une pollution ou destinés à la combattre.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les exploitants responsables d’un établissement ainsi que leurs préposés, les propriétaires et locataires d’une habitation privée, les propriétaires et usagers d’un véhicule à moteur ainsi que toutes personnes responsables d’un état ou d’une activité généralement quelconque présumés être à l’origine d’une pollution atmosphérique interdite, sont tenus, à la réquisition des agents, de faciliter les opérations auxquelles ceux-ci procèdent en vertu de la présente loi.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Tout propriétaire ou usager d’un véhicule automoteur est tenu de mettre son véhicule à la disposition des agents pendant le temps nécessaire à son contrôle.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>En cas de condamnation, les frais occasionnés par les mesures prises en vertu du présent article sont mis à charge des propriétaires, exploitants ou usagers. Dans tous les autres cas, ces frais sont supportés par l’Etat.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Des règlements grand-ducaux spécifient les pouvoirs des agents, fixent les modalités et les conditions selon lesquelles sont effectués les mesurages et essais faits en vertu du présent article et arrêtent toute autre mesure de contrôle que l’exécution de la présente loi rend nécessaire.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_6">
+				<num>Art. 6.</num>
+				<alinea>
+					<content>
+						<ol scl:space-num="10" scl:start="8" scl:symbol="custom">
+							<li>
+								<p>
+									<span style="li_symbol">«1.»<noteRef href="#note_0_0_0" style="num"/>
+									</span>
+									<i> (<ref href="/eli/etat/leg/loi/1993/07/29/n9/jo" id="21b8c626-4216-4979-992c-9c05570c6621">Loi du 29 juillet 1993</ref>)</i> «En cas de pollution atmosphérique interdite, imminente ou consommée, le membre du Gouvernement ayant dans ses attributions la protection de l’environnement peut prendre les mesures urgentes que la situation requiert et notamment prohiber l’utilisation d’appareils ou de dispositifs et interdire toute activité susceptible d’être à l’origine de cette pollution.</p>
+								<p>Les mesures prescrites en vertu de l’alinéa qui précède auront un caractère provisoire et deviendront caduques si, dans un délai de huit jours à dater de la décision, elles ne sont pas confirmées par le ministre compétent en raison de la matière, la ou les personnes contre qui les mesures ont été prises entendues ou appelées.</p>
+								<p>Dans les quarante jours de la notification, par lettre recommandée, de la décision de confirmation, un recours est ouvert devant le «tribunal administratif, qui statuera comme juge du fond»<noteRef href="#note_0_0_1"/>.»</p>
+							</li>
+						</ol>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>
+							<i>(<ref href="/eli/etat/leg/loi/2011/04/29/n1/jo" id="bef1388e-613e-4c31-b726-56ef35175d94">Loi du 29 avril 2011</ref>)</i>
+						</p>
+						<ol scl:space-num="10" scl:start="8" scl:symbol="custom">
+							<li scl:symbol="«2.">Lorsque les objectifs de qualité de l’air ambiant tels que fixés par règlement grand-ducal pris en application de l’article 2 risquent d’être dépassés ou sont dépassés, le membre du Gouvernement ayant dans ses attributions l’environnement déclenche des mesures propres à limiter l’ampleur et les effets de la pointe de pollution sur la population et l’environnement.<p scl:space-before="2">Ces mesures peuvent comporter, selon les cas, un dispositif de restriction ou de suspension des activités concourant aux pointes de pollution, et notamment de limitation de la circulation des véhicules et de réduction des émissions des sources fixes et mobiles.</p>
+								<p>Ces mesures sont précisées dans le cadre d’un plan arrêté par règlement grand-ducal pris en application de l’article 2.7.</p>
+								<p>Le public est informé de manière appropriée desdites mesures notamment par la radio, la télévision et la presse.»</p>
+							</li>
+						</ol>
+					</content>
+				</alinea>
+			</article>
+			<article id="art7">
+				<num>Art.7.</num>
+				<alinea>
+					<content>
+						<p>
+							<i>(Abrogé par la <ref href="/eli/etat/leg/loi/1993/07/29/n9/jo" id="477d16b2-7f6c-4790-9bba-679c74057ee2">loi 29 juillet 1993</ref>)</i>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_8">
+				<num>Art. 8.</num>
+				<alinea>
+					<content>
+						<p>Dans le cadre des règlements grand-ducaux pris en vertu de l’article 2 de la présente loi, le membre du Gouvernement ayant dans ses attributions l’environnement est chargé de coordonner l’action des autorités en matière de lutte contre la pollution atmosphérique.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_9">
+				<num>Art. 9.</num>
+				<alinea>
+					<content>
+						<p> Sans préjudice des peines prévues par d’autres dispositions légales, les infractions à la présente loi et aux règlements pris en son exécution sont punies d’un emprisonnement de huit jours à six mois et d’une amende de «251 à 20.000 euros»<noteRef href="#note_0_0_2"/>
+
+ ou d’une de ces peines seulement.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>En cas de récidive dans les deux ans, les peines prévues à l’alinéa 1<sup>er</sup> du présent article peuvent être portées au double.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les dispositions du livre premier du <ref href="/eli/etat/leg/code/penal" id="3be6e6a3-7b5d-4882-9275-d4acb4b48a72">code pénal</ref>, ainsi que «les articles 130-1 à 132-1 du <ref href="/eli/etat/leg/code/procedure_penale" id="f1604083-26bb-4545-94ea-880c95b1ae45">code d’instruction criminelle</ref>»<noteRef href="#note_0_0_3"/>, sont applicables.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_10">
+				<num>Art. 10.</num>
+				<alinea>
+					<content>
+						<p> La présente loi n’est pas applicable à la pollution de l’atmosphère due aux radiations ionisantes qui sont régies par la <ref href="/eli/etat/leg/loi/1963/03/25/n1/jo" id="657a8fd4-a14f-4fe7-aa09-ca797c3b1ed7">loi du 25 mars 1963</ref> concernant la protection de la population contre les dangers résultant des radiations ionisantes.</p>
+					</content>
+				</alinea>
+			</article>
+			<alinea>
+				<content>
+					<p>
+						<i>(<ref href="/eli/etat/leg/loi/1992/08/10/n4/jo" id="a8d364fe-2c5f-4d55-afb3-54883a4381a6">Loi du 10 août 1992</ref>)</i>
+					</p>
+				</content>
+			</alinea>
+			<article id="art_11">
+				<num>
+					<span scl:style-format="n">«</span>Art. 11. </num>
+				<alinea>
+					<content>
+						<p> Les associations agréées en application de l’article 43 de la <ref href="/eli/etat/leg/loi/1982/08/11/n1/jo" id="ba90a151-9635-446b-8e09-200077b337da">loi modifiée du 11 août 1982</ref> concernant la protection de la nature et des ressources naturelles peuvent exercer les droits reconnus à la partie civile en ce qui concerne les faits constituant une infraction au sens de la présente loi et portant un préjudice direct ou indirect aux intérêts collectifs qu’elles ont pour objet de défendre, même si elles ne justifient pas d’un intérêt matériel et même si l’intérêt collectif dans lequel elles agissent se couvre entièrement avec l’intérêt social dont la défense est assurée par le ministère public.»</p>
+					</content>
+				</alinea>
+			</article>
+		</body>
+	</act>
+</akomaNtoso>

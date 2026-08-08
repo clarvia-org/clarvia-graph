@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#author" href="#mdda"/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="dateDocument">2022-07-15</scl:jolux><scl:jolux scl:name="publicationDate"/><scl:jolux scl:name="responsibilityOf"/><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1248</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/842</scl:jolux><scl:jolux scl:name="subjectLevel2">http://publications.europa.eu/resource/authority/country/RUS</scl:jolux><scl:jolux scl:name="subjectLevel2">http://publications.europa.eu/resource/authority/country/UKR</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/72</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/14</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/630</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/809</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1341</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/960</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/834</scl:jolux><scl:jolux scl:name="dateEntryInForce">2022-07-15</scl:jolux><scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 01/01/2023 : Loi du 15 juillet 2022 visant à mettre en place un régime d’aides sous forme de garanties en faveur de l’économie luxembourgeoise à la suite de l’agression de la Russie contre l’Ukraine.</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2011/09/02/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1967/12/04/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1993/04/05/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/2014/651/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2020/12/19/a1072/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2018/06/27/a603/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/2013/1407/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2020/04/18/a307/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/projet/pl/20220037</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2022-07-15" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2023-01-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2022/12/23/a687/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2022/12/23/a687/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2022/12/23/a687/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2022/12/23/a687/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2022/07/15/a357/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2022/12/23/a687/jo" id="rp2" showAs="Loi du 23 décembre 2022 portant modification de la loi du 15 juillet 2022 visant à mettre en place un régime d’aides sous forme de garanties en faveur de l’économie luxembourgeoise à la suite de l’agression de la Russie contre l’Ukraine."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2022-12-23|2022-12-23|L|687">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/12/23/a687/jo">Loi du 23 décembre 2022 portant modification de la loi du 15 juillet 2022 visant à mettre en place un régime d’aides sous forme de garanties en faveur de l’économie luxembourgeoise à la suite de l’agression de la Russie contre l’Ukraine.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2022-12-23|2022-12-23|L|687">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/12/23/a687/jo">Loi du 23 décembre 2022 portant modification de la loi du 15 juillet 2022 visant à mettre en place un régime d’aides sous forme de garanties en faveur de l’économie luxembourgeoise à la suite de l’agression de la Russie contre l’Ukraine.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M3" marker="3" refersTo="pm3" title="A|2022-12-23|2022-12-23|L|687">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/12/23/a687/jo">Loi du 23 décembre 2022 portant modification de la loi du 15 juillet 2022 visant à mettre en place un régime d’aides sous forme de garanties en faveur de l’économie luxembourgeoise à la suite de l’agression de la Russie contre l’Ukraine.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M4" marker="4" refersTo="pm4" title="A|2022-12-23|2022-12-23|L|687">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/12/23/a687/jo">Loi du 23 décembre 2022 portant modification de la loi du 15 juillet 2022 visant à mettre en place un régime d’aides sous forme de garanties en faveur de l’économie luxembourgeoise à la suite de l’agression de la Russie contre l’Ukraine.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle style="11">
+<p>Version consolidée applicable au 01/01/2023 : Loi du 15 juillet 2022 visant à mettre en place un régime d’aides sous forme de garanties en faveur de l’économie luxembourgeoise à la suite de l’agression de la Russie contre l’Ukraine.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_1er/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<heading>
+<b>Objet et champ d’application</b>
+</heading>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’État met en place un régime d’aides sous forme de garantie sur les prêts accordés par les établissements de crédit entre le 1<sup>er</sup> mai 2022 et le <mod class="mod-start" for="#pm1"/>31 décembre 2023<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/> en faveur des entreprises qui ont des besoins en liquidités en raison des conséquences économiques de l’agression de la Russie contre l’Ukraine.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sont exclus du champ d’application de la présente loi les entreprises suivantes :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les entreprises qui font l’objet d’une procédure collective d’insolvabilité en vertu du droit national qui leur est applicable ;</li>
+<li>les entreprises dont l’activité principale consiste dans la promotion, la détention, la location et le négoce d’immeubles ;</li>
+<li>les entreprises dont l’activité principale est la détention de participations dans d’autres sociétés ;</li>
+<li>les employeurs qui ont été condamnés à au moins deux reprises pour contraventions aux dispositions interdisant le travail clandestin ou aux dispositions interdisant l’emploi des ressortissants de pays tiers en séjour irrégulier, au cours des quatre dernières années précédant le jugement de la juridiction compétente, sont exclus du bénéfice de la présente loi pendant une durée de trois années à compter de la date de ce jugement.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_2/20220715</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<heading>
+<b>Définitions</b>
+</heading>
+<alinea>
+<content>
+<p>Aux fins de la présente loi, on entend par :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>« entreprise » :<ol scl:start="1" scl:symbol="a)">
+<li>les entreprises commerciales, artisanales ou industrielles disposant d’une autorisation d’établissement délivrée en application de la <ref href="/eli/etat/leg/loi/2011/09/02/n1/jo" id="7c6c740a-db0a-4750-afe1-78a5f3248155" scl:verify="true">loi modifiée du 2 septembre 2011</ref> réglementant l’accès aux professions d’artisan, de commerçant, d’industriel ainsi qu’à certaines professions libérales ;</li>
+<li>les personnes physiques ou morales établies au Grand-Duché de Luxembourg qui exercent à titre principal et d’une façon indépendante une des activités visées à l’article 91, alinéa 1<sup>er</sup>, numéro 1, de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="6ea00968-feea-4b3d-abd7-42610b721dbe" scl:verify="true">loi modifiée du 4 décembre 1967</ref> concernant l’impôt sur le revenu ;</li>
+</ol>
+</li>
+<li>« établissement de crédit » : tout établissement de crédit de droit luxembourgeois au sens de l’article 1<sup>er</sup>, point 12), de la <ref href="/eli/etat/leg/loi/1993/04/05/n1/jo" id="ab734eae-8984-4cc8-9d28-c99e7d71c80b" scl:verify="true">loi modifiée du 5 avril 1993</ref> relative au secteur financier ;</li>
+<li>« grande entreprise » : toute entreprise ne remplissant pas les critères énoncés à l’annexe I du <ref href="/eli/reg_ue/2014/651/jo" id="63c49f0a-3acf-432a-a4a3-faecfd042d49" scl:verify="true">règlement (UE) n° 651/2014</ref> du 17 juin 2014 déclarant certaines catégories d’aides compatibles avec le marché intérieur en application des articles 107 et 108 du <ref href="http://data.europa.eu/eli/treaty/tfeu_2016/oj" id="c2c93d77-0fb8-4c01-99d9-5cd4c86fee5a">traité</ref> ;</li>
+<li>« moyenne entreprise » : toute entreprise qui occupe moins de 250 personnes et dont le chiffre d’affaires annuel n’excède pas 50 000 000 euros ou dont le total du bilan annuel n’excède pas 43 000 000 euros et répondant aux critères énoncés à l’annexe I du <ref href="/eli/reg_ue/2014/651/jo" id="b8ca4ffb-941b-4787-9d63-979cfb9a97c8" scl:verify="true">règlement (UE) n° 651/2014</ref> précité ;</li>
+<li>« petite entreprise » : toute entreprise qui occupe moins de 50 personnes et dont le chiffre d’affaires annuel ou le total du bilan annuel n’excède pas 10 000 000 euros et répondant aux critères énoncés à l’annexe I du <ref href="/eli/reg_ue/2014/651/jo" id="91adc189-7310-4896-8652-b55dc5979f65" scl:verify="true">règlement (UE) n° 651/2014</ref> précité ;</li>
+<li>« prêt » : toute ligne de crédit, crédit d’investissement ou facilité de caisse.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_3/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<heading>
+<b>Conditions d’éligibilité du prêt et modalités de la garantie</b>
+</heading>
+<paragraph id="paragraph_3">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’État accorde une garantie sur des prêts accordés par des établissements de crédit, entre le 1<sup>er</sup> mai 2022 et le <mod class="mod-start" for="#pm2"/>31 décembre 2023<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/>, en faveur des entreprises qui ont des besoins en liquidités en raison des conséquences économiques de l’agression de la Russie contre l’Ukraine, selon les conditions définies ci<span scl:no-break="true">-</span>après.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La garantie de l’État porte sur des prêts aux investissements et des prêts de fonds de roulement ayant une durée maximale de six ans.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le montant maximal des prêts éligibles à la garantie de l’État s’élève à :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>15 pour cent du chiffre d’affaires annuel total moyen réalisé par l’entreprise au cours des trois derniers exercices clôturés ; ou</li>
+<li>50 pour cent des coûts de l’énergie de l’entreprise au cours des douze mois précédant le mois pendant lequel la notification est effectuée à la Trésorerie de l’État en application de l’article 4, paragraphe 1<sup>er</sup>.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque la requérante est, respectivement, en existence depuis moins de trois ans ou douze mois, les seuils figurant à l’alinéa 1<sup>er</sup> sont calculés sur la base de sa durée d’existence au moment de la notification à la Trésorerie de l’État en application de l’article 4, paragraphe 1<sup>er</sup>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm3"/>Pour les entreprises qui sont des fournisseurs de gaz naturel et d’électricité au sens de l’article 1<sup>er</sup>, paragraphe 14, de la <ref href="/eli/etat/leg/loi/2007/08/01/n14/jo" id="2c49e57c-4c2a-4026-8e21-1285cf9717c9" scl:verify="true">loi modifiée du 1<sup>er</sup> août 2007</ref> relative à l’organisation du marché du gaz naturel et de l’article 1<sup>er</sup>, paragraphe 20, de la <ref href="/eli/etat/leg/loi/2007/08/01/n13/jo" id="89eeb7c1-ee33-4894-995e-82874786c7e7" scl:verify="true">loi modifiée du 1<sup>er</sup> août 2007</ref> relative à l’organisation du marché de l’électricité, le montant maximal prévu à l’alinéa 1<sup>er</sup> peut être augmenté dans la limite nécessaire pour couvrir leurs besoins en liquidités pendant les 6 mois suivant l’octroi de la garantie. Les besoins en liquidités sont appréciés sur la base d’une auto-certification.<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le contrat de prêt prévoit que son montant soit immédiatement exigible en cas de détection, postérieurement à l’octroi du prêt, du non-respect du cahier des charges constitué de l’ensemble des conditions visées dans la présente loi, notamment en raison de la fourniture, par l’emprunteur, d’une information intentionnellement erronée à l’établissement de crédit ou à la Trésorerie de l’État.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(5)</num>
+<alinea>
+<content>
+<p>La garantie de l’État couvre un pourcentage du montant du capital du prêt restant dû jusqu’à l’échéance du prêt, sauf à ce qu’elle soit appelée avant lors d’un évènement de crédit. Ce pourcentage est fixé à 90 pour cent, sous réserve que les pertes soient réparties proportionnellement et sous les mêmes conditions entre l’État et l’établissement de crédit.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Lorsque le montant du prêt diminue au fil du temps, le montant de la garantie diminue proportionnellement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Le montant indemnisable, auquel s’applique la quotité garantie pour déterminer les sommes dues par l’État au titre de sa garantie, correspond à la perte constatée, le cas échant, postérieurement à l’exercice par l’établissement de crédit de toutes les voies de droit amiables ou judiciaires, dans la mesure où elles auront pu normalement s’exercer, et à défaut, l’assignation auprès de la juridiction compétente en vue de l’ouverture d’une procédure collective, faisant suite à un évènement de crédit.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour le calcul de ce montant indemnisable :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>dans le cadre d’une restructuration, dans un cadre judiciaire ou amiable, de la créance garantie donnant lieu à une perte actuarielle, il est tenu compte, le cas échéant, de la valeur des créances détenues par l’établissement de crédit postérieurement à la restructuration de la créance ;</li>
+<li>dans le cadre d’une procédure collective, le montant indemnisable est calculé à la clôture de ladite procédure en déduisant les sommes recouvrées par l’établissement de crédit.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(8)</num>
+<alinea>
+<content>
+<p>En cas de survenance d’un évènement de crédit dans les deux mois suivants le décaissement du prêt, la garantie de l’État ne peut être mise en jeu.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(9)</num>
+<alinea>
+<content>
+<p>La garantie est rémunérée selon un barème qui dépend de la taille de l’entreprise et de la maturité du prêt qu’elle couvre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les petites et moyennes entreprises, la prime de garantie est fixée à :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>25 points de base pour une maturité maximale d’un an ;</li>
+<li>50 points de base pour une maturité maximale de trois ans ;</li>
+<li>100 points de base pour une maturité maximale de six ans.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les grandes entreprises, la prime de garanties est fixée à :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>50 points de base pour une maturité maximale d’un an ;</li>
+<li>100 points de base pour une maturité maximale de trois ans ;</li>
+<li>200 points de base pour une maturité maximale de six ans.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les commissions de garantie, supportées par l’emprunteur, sont perçues pour la quotité garantie par la Trésorerie de l’État auprès de l’établissement prêteur, une première fois à l’octroi de la garantie, et une seconde fois, le cas échéant, lors de l’exercice par l’emprunteur d’une éventuelle clause permettant d’amortir le prêt sur une période additionnelle calculée en nombre d’années, dans la limite d’une durée totale de six ans.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>(10)</num>
+<alinea>
+<content>
+<p>L’établissement de crédit doit démontrer, en cas de demande de mise en jeu de la garantie, qu’après l’octroi du prêt couvert par cette garantie, le niveau des concours qu’il détenait vis-à-vis de l’emprunteur était supérieur au niveau des concours qu’il apportait à ce dernier à la date du 1<sup>er</sup> mai 2022, corrigé des réductions intervenues entre ces deux dates et résultant de l’échéancier contractuel antérieur au 1<sup>er</sup> mai 2022 ou d’une décision de l’emprunteur.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(11)</num>
+<alinea>
+<content>
+<p>Aucune garantie au titre de la présente loi n’est octroyée à des entreprises faisant l’objet de mesures restrictives de l’Union européenne adoptées par les actes juridiques visés à l’article 1<sup>er</sup>, point 2°, de la <ref href="/eli/etat/leg/loi/2020/12/19/a1072/jo" id="f522bf06-27fa-4d13-ad34-17e8ec6d016b" scl:verify="true">loi du 19 décembre 2020</ref> relative à la mise en œuvre de mesures restrictives en matière financière et l’article 19, paragraphe 1<sup>er</sup>, point 2, de la <ref href="/eli/etat/leg/loi/2018/06/27/a603/jo" id="f7ef4fe9-0395-43d0-9bf6-73eb0bb6994a" scl:verify="true">loi du 27 juin 2018</ref> relative au contrôle des exportations, y inclus :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les personnes, entités ou organismes spécifiquement désignés dans les actes juridiques instituant ces mesures restrictives ;</li>
+<li>les entreprises détenues ou contrôlées par des personnes, entités ou organismes ciblées par les mesures restrictives adoptées par l’Union européenne ;</li>
+<li>les entreprises présentes dans des secteurs ciblés par les mesures restrictives adoptées par l’Union européenne, dans la mesure où l’aide porterait atteinte aux objectifs des mesures restrictives pertinentes.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_4/20230101</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<heading>
+<b>Modalités d’octroi</b>
+</heading>
+<paragraph id="paragraph_14">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’établissement de crédit qui souhaite faire bénéficier un prêt de la garantie de l’État notifie à la Trésorerie de l’État, l’octroi de ce prêt via un système unique dédié que met à disposition de l’établissement de crédit la Trésorerie de l’État dans le cadre d’une convention à conclure entre ces derniers.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Pour les besoins de cette notification, les établissements de crédit, dans les conditions particulières relatives aux prêts qui bénéficient de la garantie de l’État, peuvent demander une dérogation à l’article 41 de la <ref href="/eli/etat/leg/loi/1993/04/05/n1/jo" id="4b6b213b-36d0-439b-993d-6f2b845ca6e9" scl:verify="true">loi modifiée du 5 avril 1993</ref> relative au secteur financier.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les établissements de crédit ont l’obligation d’informer au préalable les entreprises auxquelles ils accordent des prêts du traitement des données à caractère personnel les concernant qui sera opéré par la Trésorerie de l’État dans le cadre de la présente loi et sont tenus de recueillir à cet effet l’accord exprès des entreprises concernées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_17">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Dans le cas où la Trésorerie de l’État reçoit une notification de plusieurs prêts consentis à une même entreprise, la garantie de l’État est acquise dans l’ordre chronologique d’octroi de ces prêts, et dans la limite que leur montant cumulé reste inférieur au montant maximal des prêts éligibles à la garantie visé à l’article 3, paragraphe 3.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_18">
+<num>(5)</num>
+<alinea>
+<content>
+<p>La garantie de l’État doit être octroyée au plus tard le <mod class="mod-start" for="#pm4"/>31 décembre 2023<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_5/20220715</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<heading>
+<b>Cumul</b>
+</heading>
+<alinea>
+<content>
+<p>La garantie prévue par la présente loi ne peut pas, pour le même prêt sous-jacent, être cumulée avec d’autres aides d’État sous forme de garanties, y compris celles tombant sous le <ref href="/eli/reg_ue/2013/1407/jo" id="b8717f81-794b-4f80-a0a1-4fcb3f4a717d" scl:verify="true">règlement (UE) n° 1407/2013</ref> de la Commission du 18 décembre 2013 relatif à l’application des articles 107 et 108 du <ref href="http://data.europa.eu/eli/treaty/tfeu_2016/oj" id="19b3510d-2a47-437a-b7f6-3af193ff29c8">traité sur le fonctionnement de l’Union européenne</ref> aux aides de minimis ou la <ref href="/eli/etat/leg/loi/2020/04/18/a307/jo" id="ec82ea4b-c1e8-4e5d-a2c3-88e4d680cf55" scl:verify="true">loi modifiée du 18 avril 2020</ref> visant à mettre en place un régime de garantie en faveur de l’économie luxembourgeoise dans le cadre de la pandémie Covid-19.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_6/20220715</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<heading>
+<b>Transparence</b>
+</heading>
+<alinea>
+<content>
+<p>Toute garantie individuelle octroyée sur base de la présente loi supérieure à 100 000 euros ou supérieure à 10 000 euros dans le secteur agricole primaire ou de la pêche est publiée sur le site de transparence de la Commission européenne au plus tard douze mois après son octroi et conformément à l’annexe III du <ref href="/eli/reg_ue/2014/651/jo" id="332ec665-8df4-4a34-b703-d9bc92567691" scl:verify="true">règlement (UE) n° 651/2014</ref> de la Commission du 17 juin 2014 déclarant certaines catégories d’aides compatibles avec le marché intérieur en application des articles 107 et 108 du <ref href="http://data.europa.eu/eli/treaty/tfeu_2016/oj" id="932ba018-9a4a-48ed-a31a-85052687ba60">traité sur le fonctionnement de l’Union européenne</ref>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_7/20220715</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<heading>
+<b>Perte du bénéfice de la garantie et restitution</b>
+</heading>
+<paragraph id="paragraph_19">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’entreprise perd le bénéfice de l’intégralité ou d’une partie de l’aide prévue à l’article 3 lorsque, après son octroi, il s’avère qu’elle a fourni une information intentionnellement erronée à l’établissement de crédit ou à la Trésorerie de l’État.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_20">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La perte du bénéfice de l’aide implique le remboursement immédiat du prêt, augmentée des intérêts légaux applicables au moment de l’octroi, avant l’expiration d’un délai de trois mois à partir de la date de la décision de restitution, sauf si celle-ci prévoit à cet effet un autre délai.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_21">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Seule la Trésorerie de l’État peut constater les faits entraînant la perte du bénéfice de l’aide prévue à l’article 3.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_8/20220715</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<heading>
+<b>Disposition budgétaire</b>
+</heading>
+<alinea>
+<content>
+<p>Le montant total des garanties prévues à l’article 3 ne peut dépasser 500 000 000 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_9/20220715</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<heading>
+<b>Disposition pénale</b>
+</heading>
+<alinea>
+<content>
+<p>Les personnes qui ont obtenu un des avantages prévus par la présente loi sur base de renseignements sciemment inexacts ou incomplets sont passibles des peines prévues à l’article 496 du <ref href="/eli/etat/leg/code/penal" id="55c2b403-14cf-4ebd-a87a-b1b9a6a09a66">Code pénal</ref>, sans préjudice de la restitution de l’aide prévue à l’article 7.</p>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">/art_10/20220715</scl:jolux>
+<scl:jolux scl:name="isMemberOf"/>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<heading>
+<b>Entrée en vigueur</b>
+</heading>
+<alinea>
+<content>
+<p>La présente loi entre en vigueur le jour de sa publication au Journal officiel du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</article>
+</body>
+</act>
+</akomaNtoso>
