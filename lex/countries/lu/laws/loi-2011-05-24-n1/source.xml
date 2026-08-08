@@ -1,0 +1,1827 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#2011A1694A">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-05-24" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MECM"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-05-24" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2011-05-24" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo</scl:jolux><scl:jolux scl:name="dateEndApplicability"/><scl:jolux scl:name="dateApplicability">2025-11-25</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="dateDocument">2011-05-24</scl:jolux><scl:jolux scl:name="publicationDate">2011-05-26</scl:jolux><scl:jolux scl:name="historicalLegalId">2011A1694A</scl:jolux><scl:jolux scl:name="dateEntryInForce">2011-05-29</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/108</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/966</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1544</scl:jolux><scl:jolux scl:name="transpositionProcess">http://data.legilux.public.lu/event/etat/trans/2006/123</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 25/11/2025 : Loi du 24 mai 2011 relative aux services dans le marché intérieur.</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Loi du 24 mai 2011 relative aux services dans le marché intérieur.</scl:jolux>
+<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/PL/20090077</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2003/12/19/n11/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1996/11/07/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2004/01/19/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1994/06/17/n4/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/10/n5/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2002/83/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1996/71/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1998/5/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2005/36/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/1998/08/03/n4/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1992/07/03/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1976/06/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2004/38/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/1968/1612/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1973/239/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2006/43/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/1993/259/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1976/06/21/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1964/221/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2004/18/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2003/54/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2002/58/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2002/19/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2002/20/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2002/21/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1998/34/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1997/67/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1968/151/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1996/9/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2003/55/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1957/11/30/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1995/46/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2002/22/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2006/48/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/1971/1408/jo</scl:jolux>
+<scl:jolux scl:name="transposes">http://data.legilux.public.lu/eli/dir_ue/2006/123/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/108/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">1694</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2011-05-24-n1-jo-fr-xml.xml</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/108/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">1694</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2011/a108/fr/pdf/eli-etat-leg-memorial-2011-a108-fr-pdf.pdf</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2011-05-30" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2012-04-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2021-12-06" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2025-11-25" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2012/03/21/n1/jo"/>
+<destination href="#art_11"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/11/19/a833/jo"/>
+<destination href="#art_32"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2021/11/19/a833/jo"/>
+<destination href="#art_32"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2021/11/19/a833/jo"/>
+<destination href="#art_32"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/11/19/a833/jo"/>
+<destination href="#art_32"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2025/11/20/a507/jo"/>
+<destination href="#art_32"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2011/05/24/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2021/11/19/a833/jo" id="rp2" showAs="Loi du 19 novembre 2021 portant modification : 1° du Code de la consommation ; 2° de la loi modifiée du 11 avril 1983 portant réglementation de la mise sur le marché et de la publicité des médicaments ; 3° de la loi modifiée du 27 juillet 1991 sur les médias électroniques ; 4° de la loi modifiée du 14 août 2000 relative au commerce électronique ; 5° de la loi modifiée du 24 mai 2011 relative aux services dans le marché intérieur ; 6° de la loi modifiée du 23 octobre 2011 relative à la concurrence ; 7° de la loi modifiée du 23 décembre 2016 sur les ventes en soldes et sur trottoir et la publicité trompeuse et comparative ; en vue de la mise en œuvre du règlement (UE) 2017/2394 du Parlement européen et du Conseil du 12 décembre 2017 sur la coopération entre les autorités nationales chargées de veiller à l’application de la législation en matière de protection des consommateurs et abrogeant le règlement (CE) n° 2006/2004. "/>
+<passiveRef href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="rp3" showAs="Loi du 21 mars 2012 relative à la gestion des déchets, et modifiant 1. la loi du 31 mai 1999 portant institution d'un fonds pour la protection de l'environnement; 2. la loi du 25 mars 2005 relative au fonctionnement et au financement de l'action SuperDrecksKëscht; 3. la loi du 19 décembre 2008 a) relative aux piles et accumulateurs ainsi qu'aux déchets de piles et d'accumulateurs b) modifiant la loi modifiée du 17 juin 1994 relative à la prévention et à la gestion des déchets; 4. la loi du 24 mai 2011 relative aux services dans le marché intérieur."/>
+<passiveRef href="/eli/etat/leg/loi/2025/11/20/a507/jo" id="rp4" showAs="Loi du 20 novembre 2025 portant modification : 1° du Code de la consommation ; 2° de la loi modifiée du 11 avril 1983 portant réglementation de la mise sur le marché et de la publicité des spécialités pharmaceutiques et des médicaments préfabriqués ; 3° de la loi modifiée du 27 juillet 1991 sur les médias électroniques ; 4° de la loi modifiée du 27 juillet 1997 sur le contrat d’assurance ; 5° de la loi modifiée du 14 août 2000 relative au commerce électronique ; 6° de la loi modifiée du 24 mai 2011 relative aux services dans le marché intérieur ; 7° de la loi modifiée du 23 décembre 2016 sur les ventes en soldes et sur trottoir et la publicité trompeuse et comparative ; 8° de la loi du 26 juin 2019 relative à certaines modalités d’application et à la sanction du règlement (UE) 2018/302 du Parlement européen et du Conseil du 28 février 2018 visant à contrer le blocage géographique injustifié et d’autres formes de discrimination fondée sur la nationalité, le lieu de résidence ou le lieu d’établissement des clients dans le marché intérieur, et modifiant les règlements (CE) n° 2006/2004 et (UE) 2017/2394 et la directive 2009/22/CE, en vue de la transposition de la directive (UE) 2020/1828 du Parlement européen et du Conseil du 25 novembre 2020 relative aux actions représentatives visant à protéger les intérêts collectifs des consommateurs et abrogeant la directive 2009/22/CE.  "/>
+</references>
+<notes scl:type="modification" source="#rp3">
+<note id="M1" marker="1" refersTo="pm1" title="A|2012-03-28|2012-03-21|L|60">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2012/03/21/n1/jo">Loi du 21 mars 2012 relative à la gestion des déchets, et modifiant 1. la loi du 31 mai 1999 portant institution d'un fonds pour la protection de l'environnement; 2. la loi du 25 mars 2005 relative au fonctionnement et au financement de l'action SuperDrecksKëscht; 3. la loi du 19 décembre 2008 a) relative aux piles et accumulateurs ainsi qu'aux déchets de piles et d'accumulateurs b) modifiant la loi modifiée du 17 juin 1994 relative à la prévention et à la gestion des déchets; 4. la loi du 24 mai 2011 relative aux services dans le marché intérieur.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2021-12-02|2021-11-19|L|833">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/11/19/a833/jo">Loi du 19 novembre 2021 portant modification : 1° du Code de la consommation ; 2° de la loi modifiée du 11 avril 1983 portant réglementation de la mise sur le marché et de la publicité des médicaments ; 3° de la loi modifiée du 27 juillet 1991 sur les médias électroniques ; 4° de la loi modifiée du 14 août 2000 relative au commerce électronique ; 5° de la loi modifiée du 24 mai 2011 relative aux services dans le marché intérieur ; 6° de la loi modifiée du 23 octobre 2011 relative à la concurrence ; 7° de la loi modifiée du 23 décembre 2016 sur les ventes en soldes et sur trottoir et la publicité trompeuse et comparative ; en vue de la mise en œuvre du règlement (UE) 2017/2394 du Parlement européen et du Conseil du 12 décembre 2017 sur la coopération entre les autorités nationales chargées de veiller à l’application de la législation en matière de protection des consommateurs et abrogeant le règlement (CE) n° 2006/2004.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M3" marker="3" refersTo="pm3" title="A|2021-12-02|2021-11-19|L|833">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/11/19/a833/jo">Loi du 19 novembre 2021 portant modification : 1° du Code de la consommation ; 2° de la loi modifiée du 11 avril 1983 portant réglementation de la mise sur le marché et de la publicité des médicaments ; 3° de la loi modifiée du 27 juillet 1991 sur les médias électroniques ; 4° de la loi modifiée du 14 août 2000 relative au commerce électronique ; 5° de la loi modifiée du 24 mai 2011 relative aux services dans le marché intérieur ; 6° de la loi modifiée du 23 octobre 2011 relative à la concurrence ; 7° de la loi modifiée du 23 décembre 2016 sur les ventes en soldes et sur trottoir et la publicité trompeuse et comparative ; en vue de la mise en œuvre du règlement (UE) 2017/2394 du Parlement européen et du Conseil du 12 décembre 2017 sur la coopération entre les autorités nationales chargées de veiller à l’application de la législation en matière de protection des consommateurs et abrogeant le règlement (CE) n° 2006/2004.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M4" marker="4" refersTo="pm4" title="A|2021-12-02|2021-11-19|L|833">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/11/19/a833/jo">Loi du 19 novembre 2021 portant modification : 1° du Code de la consommation ; 2° de la loi modifiée du 11 avril 1983 portant réglementation de la mise sur le marché et de la publicité des médicaments ; 3° de la loi modifiée du 27 juillet 1991 sur les médias électroniques ; 4° de la loi modifiée du 14 août 2000 relative au commerce électronique ; 5° de la loi modifiée du 24 mai 2011 relative aux services dans le marché intérieur ; 6° de la loi modifiée du 23 octobre 2011 relative à la concurrence ; 7° de la loi modifiée du 23 décembre 2016 sur les ventes en soldes et sur trottoir et la publicité trompeuse et comparative ; en vue de la mise en œuvre du règlement (UE) 2017/2394 du Parlement européen et du Conseil du 12 décembre 2017 sur la coopération entre les autorités nationales chargées de veiller à l’application de la législation en matière de protection des consommateurs et abrogeant le règlement (CE) n° 2006/2004.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M5" marker="5" refersTo="pm5" title="A|2021-12-02|2021-11-19|L|833">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/11/19/a833/jo">Loi du 19 novembre 2021 portant modification : 1° du Code de la consommation ; 2° de la loi modifiée du 11 avril 1983 portant réglementation de la mise sur le marché et de la publicité des médicaments ; 3° de la loi modifiée du 27 juillet 1991 sur les médias électroniques ; 4° de la loi modifiée du 14 août 2000 relative au commerce électronique ; 5° de la loi modifiée du 24 mai 2011 relative aux services dans le marché intérieur ; 6° de la loi modifiée du 23 octobre 2011 relative à la concurrence ; 7° de la loi modifiée du 23 décembre 2016 sur les ventes en soldes et sur trottoir et la publicité trompeuse et comparative ; en vue de la mise en œuvre du règlement (UE) 2017/2394 du Parlement européen et du Conseil du 12 décembre 2017 sur la coopération entre les autorités nationales chargées de veiller à l’application de la législation en matière de protection des consommateurs et abrogeant le règlement (CE) n° 2006/2004.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp4">
+<note id="M6" marker="6" refersTo="pm6" title="A|2025-11-21|2025-11-20|L|507">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/11/20/a507/jo">Loi du 20 novembre 2025 portant modification : 1° du Code de la consommation ; 2° de la loi modifiée du 11 avril 1983 portant réglementation de la mise sur le marché et de la publicité des spécialités pharmaceutiques et des médicaments préfabriqués ; 3° de la loi modifiée du 27 juillet 1991 sur les médias électroniques ; 4° de la loi modifiée du 27 juillet 1997 sur le contrat d’assurance ; 5° de la loi modifiée du 14 août 2000 relative au commerce électronique ; 6° de la loi modifiée du 24 mai 2011 relative aux services dans le marché intérieur ; 7° de la loi modifiée du 23 décembre 2016 sur les ventes en soldes et sur trottoir et la publicité trompeuse et comparative ; 8° de la loi du 26 juin 2019 relative à certaines modalités d’application et à la sanction du règlement (UE) 2018/302 du Parlement européen et du Conseil du 28 février 2018 visant à contrer le blocage géographique injustifié et d’autres formes de discrimination fondée sur la nationalité, le lieu de résidence ou le lieu d’établissement des clients dans le marché intérieur, et modifiant les règlements (CE) n° 2006/2004 et (UE) 2017/2394 et la directive 2009/22/CE, en vue de la transposition de la directive (UE) 2020/1828 du Parlement européen et du Conseil du 25 novembre 2020 relative aux actions représentatives visant à protéger les intérêts collectifs des consommateurs et abrogeant la directive 2009/22/CE.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 25/11/2025 : Loi du 24 mai 2011 relative aux services dans le marché intérieur.</p>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_1er">
+<num>Chapitre 1<sup>er</sup> </num>
+<heading scl:separator=" – " scl:style-format="b">
+<i>Dispositions générales</i>
+</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_1er/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<heading scl:style-format="bi">Champ d’application</heading>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La présente loi s’applique aux services fournis par les prestataires ayant leur établissement soit au Luxembourg, soit dans un autre Etat membre de l’Union européenne ou de l’Espace économique européen.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La présente loi ne s’applique pas aux activités suivantes::</p>
+<ol scl:symbol="a)">
+<li>les services d’intérêt général non économiques;</li>
+<li>les services financiers tels que ceux ayant trait à la banque, au crédit, à l’assurance et à la réassurance, aux retraites professionnelles ou individuelles, aux titres, aux fonds d’investissements, aux paiements et aux conseils en investissement, y compris les services énumérés à l’annexe I de la <ref href="/eli/dir_ue/2006/48" id="f02f0294-2316-4493-8484-5d91febc15b0">directive 2006/48/CE</ref>;</li>
+<li>les services et réseaux de communications électroniques ainsi que les ressources et services associés pour ce qui concerne les matières régies par les textes nationaux transposant les directives <ref href="/eli/dir_ue/2002/19">2002/19/CE</ref>, <ref href="/eli/dir_ue/2002/20">2002/20/CE</ref>, <ref href="/eli/dir_ue/2002/21">2002/21/CE</ref>, <ref href="/eli/dir_ue/2002/22">2002/22/CE</ref> et <ref href="/eli/dir_ue/2002/58">2002/58/CE</ref>;</li>
+<li>les services dans le domaine des transports, y compris les services portuaires, qui entrent dans le champ d’application du titre VI du <ref href="http://data.europa.eu/eli/treaty/tfeu_2016/oj" id="8214a5c2-94a3-458f-88b1-94302d635b44">traité sur le fonctionnement de l’Union européenne</ref>;</li>
+<li>les services des agences de travail intérimaire;</li>
+<li>les services de soins de santé, qu’ils soient ou non assurés dans le cadre d’établissements de soins et indépendamment de la manière dont ils sont organisés et financés ou de leur nature publique ou privée;</li>
+<li>les services audiovisuels, y compris les services cinématographiques, quel que soit leur mode de production, de distribution et de transmission, et la radiodiffusion sonore;</li>
+<li>les activités de jeux d’argent impliquant des mises ayant une valeur monétaire dans les jeux de hasard, y compris les loteries, les casinos et les transactions portant sur des paris;</li>
+<li>les activités participant à l’exercice de l’autorité publique conformément à l’article 51 du <ref href="http://data.europa.eu/eli/treaty/tfeu_2016/oj" id="dc030ab8-e83a-4ad2-9118-d5a48df9de62">traité sur le fonctionnement de l’Union européenne</ref>;</li>
+<li>les services sociaux relatifs au logement social, à l’aide à l’enfance et à l’aide aux familles et aux personnes se trouvant de manière permanente ou temporaire dans une situation de besoin qui sont assurés par l’Etat, par des prestataires mandatés par l’Etat ou par des associations caritatives reconnues comme telles par l’Etat;</li>
+<li>les services de sécurité privée;</li>
+<li>les services fournis par les notaires et les huissiers de justice.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La présente loi ne s’applique pas en matière fiscale.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_2/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<heading scl:style-format="bi">Définitions</heading>
+<alinea>
+<content>
+<p>Aux fins de la présente loi, on entend par: </p>
+<ol scl:symbol="a)">
+<li>«service», toute activité économique non salariée, exercée normalement contre rémunération, visée à l’article 57 du <ref href="http://data.europa.eu/eli/treaty/tfeu_2016/oj" id="a2488e9a-0628-4891-98c8-31fb6ecc658f">traité sur le fonctionnement de l’Union européenne</ref>;</li>
+<li>«Etat membre», Etat membre de l’Union européenne ou de l’Espace économique européen (EEE);</li>
+<li>«prestataire», toute personne physique ressortissante d’un Etat membre ou toute personne morale visée à l’article 54 du <ref href="http://data.europa.eu/eli/treaty/tfeu_2016/oj" id="2e3aa5bd-267c-4e24-bb6f-828ca0630311">traité sur le fonctionnement de l’Union européenne</ref> et établie dans un Etat membre, qui offre ou fournit un service;</li>
+<li>«destinataire», toute personne physique ressortissante d’un Etat membre ou qui bénéficie de droits qui lui sont conférés par des actes communautaires, ou toute personne morale établie dans un Etat membre, qui, à des fins professionnelles ou non, utilise ou souhaite utiliser un service;</li>
+<li>«Etat membre d’établissement», l’Etat membre sur le territoire duquel le prestataire du service concerné a son établissement;</li>
+<li>«établissement», l’exercice effectif d’une activité économique visée à l’article 49 du <ref href="http://data.europa.eu/eli/treaty/tfeu_2016/oj" id="929c190f-b918-45b6-8fac-5ba3c03f20e6">traité sur le fonctionnement de l’Union européenne</ref> par le prestataire pour une durée indéterminée et au moyen d’une infrastructure stable à partir de laquelle la fourniture de services est réellement assurée;</li>
+<li>«régime d’autorisation», toute procédure qui a pour effet d’obliger un prestataire ou un destinataire à faire une démarche auprès d’une autorité compétente en vue d’obtenir un acte formel ou une décision implicite relative à l’accès à une activité de service ou à son exercice;</li>
+<li>«exigence», toute obligation, interdiction, condition ou limite prévue dans les dispositions législatives, réglementaires ou administratives ou découlant de la jurisprudence, des pratiques administratives, des règles des ordres professionnels ou des règles collectives d’associations professionnelles ou autres organisations professionnelles adoptées dans l’exercice de leur autonomie juridique; les normes issues de conventions collectives négociées par les partenaires sociaux ne sont pas en tant que telles, considérées comme des exigences au sens de la présente loi;</li>
+<li>«raisons impérieuses d’intérêt général», des raisons reconnues comme telles par la jurisprudence de la Cour de justice des Communautés européennes, qui incluent les justifications suivantes: l’ordre public, la sécurité publique, la santé publique, la préservation de l’équilibre financier du système de sécurité sociale, la protection des consommateurs, des destinataires de services et des travailleurs, la loyauté des transactions commerciales, la lutte contre la fraude, la protection de l’environnement et de l’environnement urbain, la santé des animaux, la propriété intellectuelle, la conservation du patrimoine national historique et artistique, des objectifs de politique sociale et des objectifs de politique culturelle;</li>
+<li>«autorité compétente», tout organe ou toute instance ayant, dans un Etat membre, un rôle de contrôle ou de réglementation des activités de services, notamment les autorités administratives, y compris les tribunaux agissant à ce titre, les ordres professionnels et les associations ou autres organismes professionnels qui, dans le cadre de leur autonomie juridique, réglementent de façon collective l’accès aux activités de services ou leur exercice;</li>
+<li>«Etat membre où le service est fourni», l’Etat membre où le service est fourni par un prestataire établi dans un autre Etat membre;</li>
+<li>«profession réglementée», une activité ou un ensemble d’activités professionnelles visées par les textes nationaux transposant l’article 3, paragraphe (1), point a), de la <ref href="/eli/dir_ue/2005/36" id="a704e31f-423d-4fb1-8ac0-efaf0aacc4f9">directive 2005/36/CE</ref>;</li>
+<li>«communication commerciale», toute forme de communication destinée à promouvoir, directement ou indirectement, les biens, les services ou l’image d’une entreprise, d’une organisation ou d’une personne ayant une activité commerciale, industrielle, artisanale ou exerçant une profession réglementée. Ne constituent pas en tant que telles des communications commerciales:<ul scl:space-num="4" scl:symbol="custom">
+<li scl:symbol="–">les informations permettant l’accès direct à l’activité de l’entreprise, de l’organisation ou de la personne, notamment un nom de domaine ou une adresse de courrier électronique,</li>
+<li scl:symbol="–">les communications relatives aux biens, aux services ou à l’image de l’entreprise, de l’organisation ou de la personne élaborées d’une manière indépendante, en particulier lorsqu’elles sont fournies sans contrepartie financière.</li>
+</ul>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_3/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<heading scl:style-format="bi">Règle de conflits</heading>
+<alinea>
+<content>
+<p>Si les dispositions de la présente loi sont en conflit avec une autre disposition nationale, pour autant que cette disposition transpose une disposition spécifique prévue par une directive communautaire, ou avec une disposition contenue dans un règlement communautaire qui régit des aspects spécifiques liés à l’accès à une activité de services ou à son exercice dans des secteurs spécifiques ou pour des professions spécifiques, l’autre disposition nationale ou la disposition concernée du règlement communautaire prévaut.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_2">
+<num>Chapitre 2</num>
+<heading scl:separator=" – " scl:style-format="b">
+<i>La simplification des procédures et formalités applicables aux prestataires</i>
+</heading>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_4/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<heading scl:style-format="bi">Forme des documents requis</heading>
+<paragraph id="paragraph_4">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Lorsque les autorités compétentes demandent à un prestataire ou à un destinataire de services de fournir un certificat, une attestation ou tout autre document prouvant qu’une exigence a été satisfaite, elles n’imposent pas la fourniture de traductions certifiées. L’obligation de présenter une traduction certifiée est remplie par la remise d’une traduction simple.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le présent article ne s’applique pas aux documents visés par les textes nationaux transposant l’article 7, paragraphe 2, et l’article 50 de la <ref href="/eli/dir_ue/2005/36" id="668c3591-d51c-4943-a2f8-939f5452e22d">directive 2005/36/CE</ref> du Parlement européen et du Conseil du 7 septembre 2005 relative à la reconnaissance des qualifications professionnelles, l’article 45, paragraphe 3, et les articles 46, 49 et 50 de la <ref href="/eli/dir_ue/2004/18" id="9826db39-087d-405d-9622-af8c414facac">directive 2004/18/CE</ref> du Parlement européen et du Conseil du 31 mars 2004 relative à la coordination des procédures de passation des marchés publics de travaux, de fournitures et de services, l’article 3, paragraphe 2, de la <ref href="/eli/dir_ue/1998/5" id="3146f177-c8d4-4f14-9b6c-71007dd15bff">directive 98/5/CE</ref> du Parlement européen et du Conseil du 16 février 1998 visant à faciliter l’exercice permanent de la profession d’avocat dans un Etat membre autre que celui où la qualification a été acquise, la première <ref href="/eli/dir_ue/1968/151" id="1bd0592e-cd7d-4833-b0b2-bbb8e46a334f">directive 68/151/CEE</ref> du Conseil du 9 mars 1968 tendant à coordonner, pour les rendre équivalentes, les garanties qui sont exigées, dans les Etats membres, des sociétés au sens de l’article 58 deuxième alinéa du <ref href="http://data.europa.eu/eli/treaty/tfeu_2016/oj" id="7d109103-44cb-4edb-a3d2-6607097e22a2">traité</ref>, pour protéger les intérêts tant des associés que des tiers ou la onzième <ref href="/eli/dir_ue/1989/666" id="217e90de-80f2-4b7e-97b5-c4ae99cf9a63">directive 89/666/CEE</ref> du Conseil du 21 décembre 1989 concernant la publicité des succursales créées dans un Etat membre par certaines formes de société relevant du droit d’un autre Etat.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_5/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<heading scl:style-format="bi">Guichet unique physique</heading>
+<paragraph id="paragraph_6">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le Gouvernement met en place un ou plusieurs guichets uniques physiques à travers lesquels les prestataires de services peuvent accomplir l’ensemble des procédures et formalités nécessaires à l’accès aux activités de services, en particulier les déclarations, notifications ou demandes nécessaires aux fins d’autorisation auprès des autorités compétentes y compris les demandes d’inscription dans les registres, rôles, bases de données ou à un ordre ou une association professionnels ainsi que les demandes d’autorisation nécessaires à l’exercice d’une activité de service.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le Gouvernement peut, par convention, déléguer la mission d’assurer un guichet unique physique, notamment à la Chambre de Commerce et à la Chambre des Métiers.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Un règlement grand-ducal peut préciser les critères d’application du présent article.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_6/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<heading scl:style-format="bi">Guichet unique électronique</heading>
+<paragraph id="paragraph_8">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le Gouvernement met en place une plateforme d’échange avec les citoyens et les entreprises qui est facilement accessible à distance et par voie électronique à tous les prestataires et destinataires de services.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Des procédures et formalités nécessaires à l’accès aux activités de services, en particulier les déclarations, notifications ou demandes nécessaires aux fins d’autorisation auprès des autorités compétentes, y compris les demandes d’inscription dans les registres, rôles, bases de données ou à un ordre ou une association professionnels ainsi que les demandes d’autorisation nécessaires à l’exercice d’une activité de service peuvent être accomplies par l’intermédiaire du guichet unique électronique.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Pour les procédures et formalités accomplies par la voie du guichet unique électronique, le délai d’instruction administrative commence à courir dès que la réception du dossier en vue de l’accès ou de l’exercice d’une activité de services est dûment constatée par l’autorité compétente soit au moyen d’un horodatage apposé sur le dossier électronique par un prestataire accrédité, soit par la certification de l’envoi recommandé électronique.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Un règlement grand-ducal peut préciser les critères d’application du présent article. </p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_3">
+<num>Chapitre 3</num>
+<heading scl:separator=" – " scl:style-format="b">
+<i>Liberté d’établissement des prestataires</i>
+</heading>
+<section id="chapitre_3.section_1">
+<num>Section 1</num>
+<heading scl:separator=" – " scl:style-format="b">
+<i>Autorisations</i>
+</heading>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_7/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<heading scl:style-format="bi">Régimes d’autorisation</heading>
+<paragraph id="paragraph_12">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’accès à une activité de service et son exercice ne peut être subordonné à un régime d’autorisation que si les conditions suivantes sont réunies: </p>
+<ol scl:symbol="a)">
+<li>le régime d’autorisation n’est pas discriminatoire à l’égard du prestataire visé;</li>
+<li>la nécessité d’un régime d’autorisation est justifiée par une raison impérieuse d’intérêt général;</li>
+<li>l’objectif poursuivi ne peut pas être réalisé par une mesure moins contraignante, notamment parce qu’un contrôle a posteriori interviendrait trop tardivement pour avoir une efficacité réelle.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La présente section ne s’applique pas aux aspects des régimes d’autorisation qui sont régis directement ou indirectement par d’autres textes nationaux de transposition de directives ou règlements communautaires.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_8/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<heading scl:style-format="bi">Conditions d’octroi de l’autorisation</heading>
+<paragraph id="paragraph_14">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les régimes d’autorisation doivent reposer sur des critères qui encadrent l’exercice du pouvoir d’appréciation des autorités compétentes afin que celui-ci ne soit pas utilisé de manière arbitraire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les critères visés au paragraphe (1) sont: </p>
+<ol scl:symbol="a)">
+<li>non discriminatoires;</li>
+<li>justifiés par une raison impérieuse d’intérêt général;</li>
+<li>proportionnels à cet objectif d’intérêt général;</li>
+<li>clairs et non ambigus;</li>
+<li>objectifs;</li>
+<li>rendus publics à l’avance;</li>
+<li>transparents et accessibles.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les conditions d’octroi de l’autorisation pour un nouvel établissement ne doivent pas faire double emploi avec les exigences et les contrôles équivalents ou essentiellement comparables en raison de leur finalité, auxquels est déjà soumis le prestataire dans un autre Etat membre ou au Luxembourg.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_17">
+<num>(4)</num>
+<alinea>
+<content>
+<p>L’autorisation doit permettre au prestataire d’avoir accès à l’activité de services ou de l’exercer sur l’ensemble du territoire national, y compris par la création d’agences, de succursales, de filiales ou de bureaux, sauf lorsqu’une autorisation propre à chaque implantation ou une limitation de l’autorisation à une partie spécifique du territoire national est justifiée par une raison impérieuse d’intérêt général.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_18">
+<num>(5)</num>
+<alinea>
+<content>
+<p>L’autorisation est octroyée dès qu’un examen approprié des conditions de son octroi a établi que ces conditions étaient remplies.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_19">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le présent article ne remet pas en cause la répartition des compétences locales pour délivrer les autorisations relevant de leur compétence.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_9/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<heading scl:style-format="bi">Durée de l’autorisation</heading>
+<paragraph id="paragraph_20">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’autorisation est accordée au prestataire pour une durée illimitée, sauf si: </p>
+<ol scl:symbol="a)">
+<li>l’autorisation fait l’objet d’un renouvellement automatique ou est subordonnée seulement à l’accomplissement continu d’exigences;</li>
+<li>
+<p>le nombre d’autorisations disponibles est limité par une raison impérieuse d’intérêt général; </p>
+</li>
+</ol>
+<p>ou</p>
+<ol scl:start="3" scl:symbol="a)">
+<li>une durée limitée de l’autorisation est justifiée par une raison impérieuse d’intérêt général.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_21">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le paragraphe (1) ne vise pas le délai maximal avant la fin duquel le prestataire doit effectivement commencer son activité après y avoir été autorisé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_22">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le prestataire a l’obligation d’informer le guichet unique concerné des changements suivants: </p>
+<ol scl:symbol="a)">
+<li>la création de filiales ayant des activités tombant dans le champ d’application du régime d’autorisation;</li>
+<li>des modifications dans la situation du prestataire ayant pour conséquence que les conditions d’octroi ne sont plus remplies.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_23">
+<num>(4)</num>
+<alinea>
+<content>
+<p>L’autorisation est retirée si les conditions d’octroi ne sont plus réunies.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_10/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<heading scl:style-format="bi">Sélection entre plusieurs candidats</heading>
+<paragraph id="paragraph_24">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Lorsque le nombre d’autorisations disponibles pour une activité donnée est limité en raison de la rareté des ressources naturelles ou des capacités techniques utilisables, les autorités compétentes appliquent une procédure de sélection entre les candidats potentiels qui prévoit toutes les garanties d’impartialité et de transparence, notamment la publicité adéquate de l’ouverture de la procédure, de son déroulement et de sa clôture.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_25">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Dans les cas visés au paragraphe (1), l’autorisation est octroyée pour une durée limitée appropriée et ne doit pas faire l’objet d’une procédure de renouvellement automatique, ni prévoir tout autre avantage en faveur du prestataire dont l’autorisation vient juste d’expirer ou des personnes ayant des liens particuliers avec ledit prestataire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_26">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Sous réserve du paragraphe (1) et des articles 7 et 8, il peut être tenu compte, lors de l’établissement des règles pour la procédure de sélection, de considérations liées à la santé publique, à des objectifs de politique sociale, à la santé et à la sécurité des salariés ou des personnes indépendantes, à la protection de l’environnement, à la préservation du patrimoine culturel et autres raisons impérieuses d’intérêt général, conformément au droit communautaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_27">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les procédures de sélection entre plusieurs candidats peuvent être précisées par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_11/20120401</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2012-04-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<heading scl:style-format="bi">Les procédures et formalités d’autorisation</heading>
+<paragraph id="paragraph_28">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les procédures et formalités prévues aux paragraphes (2) et suivants sont traitées avec objectivité et impartialité.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_29">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Toute demande d’autorisation fait l’objet d’un accusé de réception indiquant: </p>
+<ol scl:symbol="a)">
+<li>le délai visé au paragraphe (4);</li>
+<li>les voies de recours;</li>
+<li>s’il y a lieu, la mention qu’en l’absence de réponse dans le délai prévu, éventuellement prolongé, l’autorisation est considérée comme octroyée de plein droit conformément au paragraphe (7).</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_30">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Lorsque le dossier d’une demande d’autorisation n’est pas complet, l’administration compétente invite, dans un délai de quinze jours, le requérant à compléter le dossier tout en lui notifiant le relevé de l’ensemble des pièces à fournir. En cas de demande incomplète ou d’irrecevabilité d’une demande, le demandeur en est informé dans les plus brefs délais.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_31">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les demandes sont traitées dans un délai raisonnable, qui est fixé et rendu public à l’avance. Sauf dispositions légales contraires, ce délai ne peut pas dépasser trois mois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_32">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Ce délai commence à courir à partir du moment où tous les documents nécessaires ont été fournis à l’autorité compétente.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_33">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Lorsque la complexité du dossier le justifie, l’autorité compétente peut prolonger le délai prévu au paragraphe (4) une seule fois et pour une durée limitée. La décision de prolongation du délai ainsi que sa durée est dûment motivée et notifiée au demandeur avant l’expiration du délai initial.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_34">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Par dérogation à la <ref href="/eli/etat/leg/loi/1996/11/07/n1/jo" id="19de3f41-6740-4847-a869-b4cbec9ca91b">loi modifiée du 7 novembre 1996</ref> relative à la procédure devant les juridictions administratives, et sauf dispositions légales spéciales contraires justifiées par une raison impérieuse d’intérêt général, y compris l’intérêt légitime d’une tierce partie, les prestataires peuvent considérer en cas d’absence de réponse dans le délai prévu aux paragraphes (4) et (6) leur demande d’autorisation comme acceptée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>A l’initiative de l’intéressé, l’autorité compétente émet sans délai les documents relatifs à l’autorisation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_35">
+<num>(8)</num>
+<alinea>
+<content>
+<p>Les dispositions du paragraphe (7) ne s’appliquent pas: </p>
+<ol scl:symbol="a)">
+<li>
+<p>aux activités de services portant en tout ou en partie sur la fabrication ou le commerce d’armes;</p>
+</li>
+</ol>
+<p>et</p>
+<ol scl:start="2" scl:symbol="a)">
+<li>aux activités et établissements visés par: <mod class="mod-start" for="#pm1"/>
+<ol scl:symbol="1)">
+<li>l’article 30 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="25d50e7c-1fde-4fdd-ad57-7f76d41d0e8a">loi du 21 mars 2012</ref> relative aux déchets.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</li>
+<li>la <ref href="/eli/etat/leg/loi/1999/06/10/n5">loi modifiée du 10 juin 1999</ref> relative aux établissements classés;</li>
+<li>la <ref href="/eli/etat/leg/loi/2004/01/19/n1">loi modifiée du 19 janvier 2004</ref> concernant la protection de la nature et des ressources naturelles;</li>
+<li>la <ref href="/eli/etat/leg/loi/1976/06/21/n1/jo" id="69da9972-5713-418e-b403-679c11c80446">loi modifiée du 21 juin 1976</ref> relative à la lutte contre la pollution de l’atmosphère;</li>
+<li>la <ref href="/eli/etat/leg/loi/1976/06/21/n2/jo" id="a4314740-13bd-413c-9e4d-14d9db0dafe7">loi modifiée du 21 juin 1976</ref> relative à la lutte contre le bruit.</li>
+</ol>
+</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+</section>
+<section id="chapitre_3.section_2">
+<num>Section 2</num>
+<heading scl:separator=" – " scl:style-format="b">
+<i>Exigences interdites ou soumises à évaluation</i>
+</heading>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_12/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<heading scl:style-format="bi">Exigences interdites</heading>
+<alinea>
+<content>
+<p>L’accès à une activité de services ou son exercice ne peut pas être subordonné au respect de l’une des exigences suivantes:</p>
+<ol scl:symbol="(1)">
+<li>les exigences discriminatoires fondées directement ou indirectement sur la nationalité ou, en ce qui concerne les sociétés, l’emplacement du siège statutaire, en particulier: <ol scl:symbol="a)">
+<li>l’exigence de nationalité pour le prestataire, son personnel, les personnes détenant du capital social ou les membres des organes de gestion ou de surveillance du prestataire,</li>
+<li>l’exigence d’être résident pour le prestataire, son personnel, les personnes détenant du capital social ou les membres des organes de gestion ou de surveillance du prestataire;</li>
+</ol>
+</li>
+<li>l’interdiction d’avoir un établissement dans plus d’un Etat membre ou d’être inscrit dans les registres ou dans les ordres ou les associations professionnels de plus d’un Etat membre;</li>
+<li>les limites à la liberté du prestataire de choisir entre un établissement à titre principal ou à titre secondaire, en particulier l’obligation pour le prestataire d’avoir son établissement principal au Luxembourg, ou les limites à la liberté de choisir entre l’établissement sous forme d’agence, de succursale ou de filiale;</li>
+<li>les conditions de réciprocité avec l’Etat membre où le prestataire a déjà un établissement, à l’exception de celles prévues dans les textes nationaux de transposition de directives ou règlements communautaires en matière d’énergie;</li>
+<li>l’application au cas par cas d’un test économique consistant à subordonner l’octroi de l’autorisation à la preuve de l’existence d’un besoin économique ou d’une demande du marché, à évaluer les effets économiques potentiels ou actuels de l’activité ou à évaluer l’adéquation de l’activité avec les objectifs de programmation économique fixés par l’autorité compétente; cette interdiction ne concerne pas les exigences en matière de programmation qui ne poursuivent pas des objectifs de nature économique mais relèvent de raisons impérieuses d’intérêt général;</li>
+<li>l’intervention directe ou indirecte d’opérateurs concurrents, y compris au sein d’organes consultatifs, dans l’octroi d’autorisations ou dans l’adoption d’autres décisions des autorités compétentes, à l’exception des ordres et associations professionnels ou autres organisations qui agissent en tant qu’autorité compétente; cette interdiction ne s’applique ni à la consultation d’organismes tels que les chambres de commerce ou les partenaires sociaux sur des questions autres que des demandes d’autorisation individuelles ni à une consultation du public;</li>
+<li>l’obligation de constituer ou de participer à une garantie financière ou de souscrire une assurance auprès d’un prestataire ou d’un organisme établi au Luxembourg. Ceci ne porte pas atteinte à la possibilité d’exiger une couverture d’assurance ou des garanties financières en tant que telles et ne porte pas atteinte aux exigences relatives à la participation à un fonds collectif de compensation, par exemple pour les membres d’ordres ou organisations professionnels;</li>
+<li>l’obligation d’avoir été préalablement inscrit pendant une période donnée dans les registres tenus sur le territoire luxembourgeois ou d’avoir exercé précédemment l’activité pendant une période donnée au Luxembourg.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_13/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<heading scl:style-format="bi">Exigences à évaluer</heading>
+<paragraph id="paragraph_36">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Toute exigence concernant l’accès à une activité de services et son exercice visée au paragraphe (2), doit être compatible avec les conditions visées au paragraphe (3). Le cas échéant, cette disposition législative, réglementaire ou règle administrative doit être adaptée afin d’être rendue compatible avec ces conditions.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_37">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les exigences visées au paragraphe (1), qui doivent être non discriminatoires, sont les suivantes: </p>
+<ol scl:symbol="a)">
+<li>les limites quantitatives ou territoriales sous forme, notamment, de limites fixées en fonction de la population ou d’une distance géographique minimum entre prestataires;</li>
+<li>les exigences qui imposent au prestataire d’être constitué sous une forme juridique particulière;</li>
+<li>les exigences relatives à la détention du capital d’une société;</li>
+<li>les exigences autres que celles relatives aux matières couvertes par les textes nationaux transposant la <ref href="/eli/dir_ue/2005/36" id="6b983716-7bf5-4363-855e-10aab6f3ac4f">directive 2005/36/CE</ref> ou que celles prévues dans d’autres textes nationaux de transposition de directives ou règlements communautaires, qui réservent l’accès à l’activité de service concernée à des prestataires particuliers en raison de la nature spécifique de l’activité;</li>
+<li>l’interdiction de disposer de plus d’un établissement sur le territoire luxembourgeois;</li>
+<li>les exigences qui imposent un nombre minimum de salariés;</li>
+<li>les tarifs obligatoires minimum et/ou maximum que doit respecter le prestataire;</li>
+<li>l’obligation pour le prestataire de fournir, conjointement à son service, d’autres services spécifiques.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_38">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les exigences visées au paragraphe (2) doivent remplir les conditions suivantes: </p>
+<ol scl:symbol="a)">
+<li>non-discrimination: les exigences ne sont pas directement ou indirectement discriminatoires en fonction de la nationalité ou, en ce qui concerne les sociétés, de l’emplacement de leur siège statutaire;</li>
+<li>nécessité: les exigences sont justifiées par une raison impérieuse d’intérêt général;</li>
+<li>proportionnalité: les exigences doivent être propres à garantir la réalisation de l’objectif poursuivi, ne pas aller au-delà de ce qui est nécessaire pour atteindre cet objectif et d’autres mesures moins contraignantes ne doivent pas permettre d’atteindre le même résultat.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_39">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les paragraphes (1), (2) et (3) ne s’appliquent à la législation dans le domaine des services d’intérêt économique général que dans la mesure où l’application de ces paragraphes ne fait pas échec à l’accomplissement, en droit ou en fait, de la mission particulière qui leur a été confiée.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_40">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Toute nouvelle disposition législative, réglementaire ou administrative remplissant les conditions du paragraphe (3) qui prévoit des exigences visées au paragraphe (2) ainsi que les raisons de son adoption sont notifiées à la Commission européenne.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La notification d’une norme ou réglementation technique conformément au texte national transposant la <ref href="/eli/dir_ue/1998/34" id="dd1c2d6c-d50f-40b1-9488-716251efaea3" scl:verify="true">directive 98/34/CE</ref> vaut respect de l’obligation de notification prévue par la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</section>
+</chapter>
+<chapter id="chapitre_4">
+<num>Chapitre 4</num>
+<heading scl:separator=" – " scl:style-format="b">
+<i>Libre prestation des services</i>
+</heading>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_14/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<heading scl:style-format="bi">Libre prestation des services</heading>
+<paragraph id="paragraph_41">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La libre prestation des services en provenance d’un autre Etat membre ne peut être restreinte.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_42">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’accès à une activité de service ou son exercice ne peut être subordonné à des exigences qui ne satisfont pas aux principes de: </p>
+<ol scl:symbol="a)">
+<li>non-discrimination: l’exigence ne peut être directement ou indirectement discriminatoire en raison de la nationalité ou, dans le cas de personnes morales, en raison de l’Etat membre dans lequel elles sont établies;</li>
+<li>nécessité: l’exigence doit être justifiée par des raisons d’ordre public, de sécurité publique, de santé publique ou de protection de l’environnement;</li>
+<li>proportionnalité: l’exigence doit être propre à garantir la réalisation de l’objectif poursuivi et ne pas aller au-delà de ce qui est nécessaire pour atteindre cet objectif.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_43">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les paragraphes (1) et (2) ne concernent pas les règles nationales en matière de conditions d’emploi, y compris celles énoncées dans les conventions collectives appliquées à tous les services prestés sur le territoire national conformément au droit communautaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_44">
+<num>(4)</num>
+<alinea>
+<content>
+<p>La libre prestation de services par un prestataire établi dans un autre Etat membre ne peut pas être restreinte par l’imposition de l’une des exigences suivantes: </p>
+<ol scl:symbol="a)">
+<li>l’obligation pour le prestataire d’avoir un établissement sur le territoire luxembourgeois;</li>
+<li>l’obligation pour le prestataire d’obtenir une autorisation des autorités compétentes luxembourgeoises, y compris une inscription dans un registre ou auprès d’un ordre ou d’une association professionnels existant, sauf dans les cas visés par la présente loi ou par d’autres textes nationaux de transposition de directives ou règlements communautaires;</li>
+<li>l’interdiction pour le prestataire de se doter sur le territoire luxembourgeois d’une certaine forme ou d’un certain type d’infrastructure, y compris d’un bureau ou d’un cabinet d’avocats, dont le prestataire a besoin pour fournir les services en question;</li>
+<li>l’application d’un régime contractuel particulier entre le prestataire et le destinataire qui empêche ou limite la prestation de service à titre indépendant;</li>
+<li>l’obligation, pour le prestataire, de posséder un document d’identité spécifique à l’exercice d’une activité de service délivré par les autorités compétentes luxembourgeoises;</li>
+<li>les exigences affectant l’utilisation d’équipements et de matériel qui font partie intégrante de la prestation du service, à l’exception de celles nécessaires à la santé et la sécurité au travail;</li>
+<li>les restrictions à la libre prestation des services visées à l’article 17.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_15/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<heading scl:style-format="bi">Dérogations supplémentaires à la libre prestation de services</heading>
+<alinea>
+<content>
+<p>L’article 14 ne s’applique pas: </p>
+<ol scl:space-num="7" scl:symbol="1)">
+<li>aux services d’intérêt économique général qui sont fournis dans un autre Etat membre notamment:<ol scl:symbol="a)">
+<li>dans le secteur postal, aux services couverts par les textes nationaux transposant la <ref href="/eli/dir_ue/1997/67" id="43b978f8-e751-4c86-8c29-81ce14791759">directive 97/67/CE</ref> du Parlement européen et du Conseil du 15 décembre 1997 concernant des règles communes pour le développement du marché intérieur des services postaux de la Communauté et l’amélioration de la qualité du service;</li>
+<li>dans le secteur de l’électricité, aux services couverts par les textes nationaux transposant la <ref href="/eli/dir_ue/2003/54" id="695b50f6-a56c-4205-9df4-fd9a1c3978a7">directive 2003/54/CE</ref> du Parlement européen et du Conseil du 26 juin 2003 concernant des règles communes pour le marché intérieur de l’électricité;</li>
+<li>dans le secteur du gaz, aux services couverts par les textes nationaux transposant la <ref href="/eli/dir_ue/2003/55" id="46c32338-f1ad-4375-ab79-0cb6da40be05">directive 2003/55/CE</ref> du Parlement européen et du Conseil du 26 juin 2003 concernant des règles communes pour le marché intérieur du gaz naturel;</li>
+<li>aux services de distribution et de fourniture d’eau et aux services de traitement des eaux usées;</li>
+<li>au traitement des déchets;</li>
+</ol>
+</li>
+<li>aux matières couvertes par les textes nationaux transposant la <ref href="/eli/dir_ue/1996/71" id="11672978-4f6a-46d5-87ca-8b82308e79e8">directive 96/71/CE</ref> du Parlement européen et du Conseil du 16 décembre 1996 concernant le détachement de travailleurs effectué dans le cadre d’une prestation de services;</li>
+<li>aux matières couvertes par les textes nationaux transposant la <ref href="/eli/dir_ue/1995/46" id="c8118fff-4e29-4dff-9b56-76858ff3c7ec">directive 95/46/CE</ref> du Parlement européen et du Conseil du 24 octobre 1995 relative à la protection des personnes physiques à l’égard du traitement des données à caractère personnel et à la libre circulation de ces données;</li>
+<li>aux matières couvertes par les textes nationaux transposant la <ref href="/eli/dir_ue/1977/249" id="cbd06bdf-dea3-4679-a410-be88be9c1bc8">directive 77/249/CEE</ref> du Conseil du 22 mars 1977 tendant à faciliter l’exercice effectif de la libre prestation des services par les avocats;</li>
+<li>aux activités de recouvrement judiciaire des dettes;</li>
+<li>aux matières couvertes par les textes nationaux transposant le titre II de la <ref href="/eli/dir_ue/2005/36" id="87b5902a-bd84-4d3c-a2a3-b1d53068313c" scl:verify="true">directive 2005/36/CE</ref> du Parlement européen et du Conseil du 7 septembre 2005 relative à la reconnaissance des qualifications professionnelles ainsi qu’aux exigences en vigueur dans l’Etat membre où le service est fourni, qui réservent une activité à une profession particulière;</li>
+<li>aux matières couvertes par le <ref href="/eli/reg_ue/1971/1408">règlement (CEE) N<sup>o</sup> 1408/71</ref> du Conseil du 14 juin 1971 relatif à l’application des régimes de sécurité sociale aux travailleurs salariés, aux travailleurs non salariés et aux membres de leur famille qui se déplacent à l’intérieur de la Communauté;</li>
+<li>en ce qui concerne les formalités administratives relatives à la libre circulation des personnes et à leur résidence, aux matières couvertes par les textes nationaux transposant les dispositions de la <ref href="/eli/dir_ue/2004/38" id="c2e24d3e-ace6-44ab-9c85-842bbf1eb9ed">directive 2004/38/CE</ref> du Parlement européen et du Conseil du 29 avril 2004 relative au droit des citoyens de l’Union et des membres de leurs familles de circuler et de séjourner librement sur le territoire des Etats membres, modifiant le <ref href="/eli/reg_ue/1968/1612">règlement (CEE) N<sup>o</sup> 1612/68</ref> et abrogeant les directives <ref href="/eli/dir_ue/1964/221">64/221/CEE</ref>, <ref href="/eli/dir_ue/1968/360">68/360/CEE</ref>, <ref href="/eli/dir_ue/1972/194">72/194/CEE</ref>, <ref href="/eli/dir_ue/1973/148">73/148/CEE</ref>, <ref href="/eli/dir_ue/1975/34" id="1b01023e-5d0d-438b-8700-735871d65d94">75/34/CEE</ref>, <ref href="/eli/dir_ue/1975/35">75/35/CEE</ref>, <ref href="/eli/dir_ue/1990/364">90/364/CEE</ref>, <ref href="/eli/dir_ue/1990/365">90/365/CEE</ref> et <ref href="/eli/dir_ue/1993/96">93/96/CEE</ref> qui précisent les démarches administratives que les bénéficiaires doivent entreprendre auprès des autorités compétentes de l’Etat membre où le service est fourni;</li>
+<li>en ce qui concerne les ressortissants de pays tiers qui se déplacent dans un autre Etat membre dans le cadre d’une prestation de service, à la faculté des Etats membres de requérir un visa ou un permis de séjour pour les ressortissants de pays tiers qui ne sont pas couverts par le régime de reconnaissance mutuelle prévu à l’article 21 de la convention d’application de l’<ref href="https://eur-lex.europa.eu/legal-content/FR/ALL/?uri=CELEX%3A42000A0922%2802%29" id="7b52bf12-055b-4bf7-9004-285a2a581819">Accord de Schengen du 14 juin 1985</ref> relatif à la suppression graduelle des contrôles aux frontières communes, ni à la faculté des Etats membres d’imposer aux ressortissants de pays tiers de se manifester auprès des autorités compétentes de l’Etat membre où le service est fourni au moment de leur entrée sur le territoire ou ultérieurement;</li>
+<li>en ce qui concerne les transferts de déchets, aux matières couvertes par le <ref href="/eli/reg_ue/1993/259">règlement (CEE) N<sup>o </sup>259/93</ref> du Conseil du 1<sup>er</sup> février 1993 concernant la surveillance et le contrôle des transferts de déchets à l’entrée et à la sortie de la Communauté européenne;</li>
+<li>aux droits d’auteur et droits voisins, aux droits visés par les textes nationaux transposant la <ref href="/eli/dir_ue/1987/54" id="0b843b71-10e4-44b0-a2bf-48bd14d8dae9">directive 87/54/CEE</ref> du Conseil du 16 décembre 1986 concernant la protection juridique des topographies de produits semiconducteurs et par la <ref href="/eli/dir_ue/1996/9" id="73eb988f-84df-4bd6-9889-0994e732cc37">directive 96/9/CE</ref> du Parlement européen et du Conseil, du 11 mars 1996, concernant la protection juridique des bases de données ainsi qu’aux droits de propriété industrielle;</li>
+<li>aux actes pour lesquels la loi requiert l’intervention d’un notaire;</li>
+<li>aux matières couvertes par les textes nationaux transposant la <ref href="/eli/dir_ue/2006/43" id="c0ee2cdb-e45c-4e8c-adc3-fbf32a5c5919">directive 2006/43/CE</ref> du Parlement européen et du Conseil du 17 mai 2006 concernant les contrôles légaux des comptes annuels et des comptes consolidés;</li>
+<li>à l’immatriculation des véhicules pris en leasing dans un autre Etat membre;</li>
+<li>aux dispositions relatives aux obligations contractuelles et non contractuelles, y compris la forme des contrats, déterminées conformément aux règles du droit international privé.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_16/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<heading scl:style-format="bi">Dérogations dans des cas individuels</heading>
+<paragraph id="paragraph_45">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 14 et uniquement dans des circonstances exceptionnelles, le ministre du ressort peut prendre à l’encontre d’un prestataire ayant son établissement dans un autre Etat membre, des mesures relatives à la sécurité des services, et ce conformément aux conditions et procédures qui sont d’application pour la prise de mesures similaires envers des prestataires qui ont leur établissement au Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_46">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les mesures visées au paragraphe (1) ne peuvent être prises que dans le respect de la procédure d’assistance mutuelle prévue à l’article 31 de la présente loi et si les conditions suivantes sont réunies: </p>
+<ol scl:symbol="a)">
+<li>les dispositions nationales en vertu desquelles les mesures sont prises n’ont pas fait l’objet d’une harmonisation communautaire dans le domaine de la sécurité des services;</li>
+<li>les mesures sont plus protectrices pour le destinataire que celles que prendrait l’Etat membre d’établissement en vertu de ses dispositions nationales;</li>
+<li>l’Etat membre d’établissement n’a pas pris de mesures ou a pris des mesures insuffisantes par rapport à celles visées à l’article 31, paragraphe (2) de la présente loi;</li>
+<li>les mesures sont proportionnées.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_5">
+<num>Chapitre 5</num>
+<heading scl:separator=" – " scl:style-format="b">
+<i>Droits des destinataires de services</i>
+</heading>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_17/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<heading scl:style-format="bi">Restrictions interdites</heading>
+<alinea>
+<content>
+<p>L’utilisation d’un service fourni par un prestataire ayant son établissement dans un autre Etat membre ne peut être restreinte.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_18/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<heading scl:style-format="bi">Non-discrimination</heading>
+<paragraph id="paragraph_47">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les destinataires ne sont pas soumis à des exigences discriminatoires fondées sur leur nationalité ou leur lieu de résidence.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_48">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les conditions générales d’accès à un service, qui sont mises à la disposition du public par le prestataire, ne contiennent pas de conditions discriminatoires en raison de la nationalité ou du lieu de résidence du destinataire, sans que cela ne porte atteinte à la possibilité de prévoir des différences dans les conditions d’accès lorsque ces conditions sont directement justifiées par des critères objectifs.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_19/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<heading scl:style-format="bi">Informations précontractuelles</heading>
+<paragraph id="paragraph_49">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les prestataires mettent à la disposition des destinataires les informations suivantes: </p>
+<ol scl:symbol="a)">
+<li>leur nom, leur statut et leur forme juridique, l’adresse géographique à laquelle le prestataire a son établissement et les coordonnées permettant d’entrer en contact rapidement et de communiquer directement avec eux, le cas échéant par voie électronique;</li>
+<li>le numéro d’immatriculation du Registre de Commerce et des Sociétés, le cas échéant;</li>
+<li>dans le cas où l’activité est soumise à un régime d’autorisation, les coordonnées de l’autorité compétente;</li>
+<li>leur numéro d’identification à la taxe sur la valeur ajoutée;</li>
+<li>le cas échéant, l’ordre professionnel auprès duquel le prestataire est inscrit, le titre professionnel et l’Etat membre dans lequel il a été octroyé;</li>
+<li>les conditions générales et les clauses générales dans le cas où le prestataire en utilise;</li>
+<li>l’existence, dans le cas où le prestataire en utilise, de clauses contractuelles concernant la législation applicable au contrat et/ou concernant la juridiction compétente;</li>
+<li>l’existence de toute garantie après-vente éventuelle, non imposée par la loi;</li>
+<li>le prix du service, lorsque le prix est déterminé au préalable par le prestataire pour un type de service donné;</li>
+<li>les principales caractéristiques du service, si elles ne ressortent pas déjà du contexte;</li>
+<li>l’assurance ou les garanties imposées par la loi, en particulier les coordonnées de l’assureur ou du garant et la couverture géographique.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_50">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les informations visées au paragraphe (1), selon le choix du prestataire: </p>
+<ol scl:symbol="a)">
+<li>sont communiquées par le prestataire de sa propre initiative;</li>
+<li>sont facilement accessibles au destinataire sur le lieu de la prestation ou de conclusion du contrat;</li>
+<li>sont facilement accessibles au destinataire par voie électronique, au moyen d’une adresse communiquée par le prestataire;</li>
+<li>figurent dans tout document d’information du prestataire, fourni au destinataire, présentant de manière détaillée leurs services.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_51">
+<num>(3)</num>
+<alinea>
+<content>
+<p>A la demande du destinataire, les prestataires communiquent les informations supplémentaires suivantes: </p>
+<ol scl:symbol="a)">
+<li>lorsque le prix n’est pas déterminé au préalable par le prestataire pour un type de service donné, le prix du service ou, lorsqu’un prix exact ne peut pas être indiqué, la méthode de calcul du prix permettant au destinataire de vérifier ce dernier, ou un devis suffisamment détaillé;</li>
+<li>en ce qui concerne les professions réglementées, une référence aux règles professionnelles applicables et aux moyens d’y avoir accès;</li>
+<li>des informations sur leurs activités pluridisciplinaires et partenariats qui sont directement liés au service concerné et sur les mesures prises pour éviter les conflits d’intérêts. Ces informations figurent dans tout document d’information dans lequel les prestataires présentent de manière détaillée leurs services;</li>
+<li>les éventuels codes de conduite auxquels le prestataire est soumis ainsi que l’adresse à laquelle ces codes peuvent être consultés par voie électronique, en en précisant les versions linguistiques disponibles;</li>
+<li>lorsque le prestataire est soumis à un code de conduite, ou est membre d’une association ou d’un organisme professionnels qui prévoit le recours à des moyens extrajudiciaires de règlement des litiges, des informations à cet égard. Les prestataires doivent indiquer les moyens d’accéder à des informations détaillées sur les caractéristiques et les conditions de recours à ces moyens extrajudiciaires de règlement des litiges.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_52">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les informations que doit fournir le prestataire visées au présent chapitre sont mises à disposition ou communiquées de manière claire et non ambiguë, en temps utile avant la conclusion du contrat, ou avant la prestation du service lorsqu’il n’y a pas de contrat écrit.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_20/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<heading scl:style-format="bi">Politique de qualité</heading>
+<paragraph id="paragraph_53">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’Institut Luxembourgeois de la Normalisation, de l’Accréditation, de la Sécurité et qualité des produits et services (ILNAS) encourage les prestataires à garantir la qualité des services en particulier à travers: </p>
+<ol scl:symbol="a)">
+<li>la certification ou l’évaluation de leurs activités par des organismes indépendants ou accrédités;</li>
+<li>l’élaboration de chartes de qualité ou la participation aux chartes ou labels de qualité élaborés par des organismes professionnels au niveau communautaire;</li>
+<li>leur participation aux formations et forums portant sur la gestion de la qualité.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_54">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les informations sur la signification et les critères d’attribution des labels et autres marques de qualité relatives aux services sont facilement accessibles par les prestataires et les destinataires. Les demandes et procédures en obtention des labels et autres marques de qualité sont instruites conformément à l’article 4.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_21/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 21.</num>
+<heading scl:style-format="bi">Assurances et garanties professionnelles</heading>
+<paragraph id="paragraph_55">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les assurances ou garanties professionnelles que des dispositions particulières législatives imposent aux prestataires, dont les services présentent un risque direct et particulier pour la santé ou la sécurité du destinataire ou d’un tiers ou pour la sécurité financière du destinataire, ne sont pas exigées lorsque le prestataire est déjà assuré dans l’Etat membre dans lequel il est établi ou lorsqu’il dispose d’une garantie équivalente ou essentiellement comparable pour ce qui est de sa finalité et de la couverture qu’elle offre sur le plan du risque assuré, de la somme assurée ou du plafond de garantie ainsi que des activités éventuellement exclues de la couverture. Dans le cas où l’équivalence n’est que partielle, une garantie complémentaire peut être exigée pour couvrir les éléments qui ne sont pas déjà couverts. Lorsque la loi impose à un prestataire établi au Luxembourg de souscrire une assurance responsabilité professionnelle ou de fournir une autre forme de garantie, sont acceptées comme preuves suffisantes les attestations de couverture émises par des établissements de crédit ou des assureurs établis dans d’autres Etats membres.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_56">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le paragraphe (1) n’affecte pas les assurances professionnelles ou les systèmes de garantie prévus dans d’autres textes nationaux transposant des directives communautaires ou dans des règlements communautaires.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_57">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Aux fins du présent article, on entend par:</p>
+<ul scl:space-num="4" scl:symbol="custom">
+<li scl:symbol="–">«risque direct et particulier», un risque résultant directement de la fourniture du service;</li>
+<li scl:symbol="–">«santé et sécurité», par rapport à un destinataire ou à un tiers, la prévention du décès ou d’un dommage corporel grave;</li>
+<li scl:symbol="–">«sécurité financière», par rapport à un destinataire, la prévention de pertes importantes en capitaux ou en valeur d’un bien;</li>
+<li scl:symbol="–">«assurance responsabilité professionnelle», une assurance souscrite par un prestataire pour couvrir, à l’égard des destinataires et, le cas échéant, des tiers, sa responsabilité éventuelle en cas de dommages résultant de la prestation du service.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_22/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 22.</num>
+<heading scl:style-format="bi">Communications commerciales des professions réglementées</heading>
+<paragraph id="paragraph_58">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les interdictions totales visant les communications commerciales des professions réglementées sont abrogées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_59">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les communications commerciales faites par les professions réglementées respectent les règles professionnelles, conformes au droit communautaire, qui visent notamment l’indépendance, la dignité et l’intégrité de la profession ainsi que le secret professionnel, en fonction de la spécificité de chaque profession. Les règles professionnelles en matière de communications commerciales doivent être non discriminatoires, justifiées par une raison impérieuse d’intérêt général et proportionnées.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_23/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 23.</num>
+<heading scl:style-format="bi">Activités pluridisciplinaires</heading>
+<paragraph id="paragraph_60">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les prestataires ne sont pas soumis à des exigences qui les obligent à exercer exclusivement une activité spécifique ou qui limitent l’exercice conjoint ou en partenariat d’activités différentes.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Peuvent toutefois être soumis à de telles exigences: </p>
+<ol scl:symbol="a)">
+<li>les professions réglementées, dans la mesure où cela est justifié pour garantir le respect de règles de déontologie différentes en raison de la spécificité de chaque profession, et nécessaire pour garantir l’indépendance et l’impartialité de ces professions;</li>
+<li>les prestataires qui fournissent des services de certification, d’accréditation, de contrôle technique, de tests ou d’essais, dans la mesure où ces exigences sont justifiées pour garantir leur indépendance et leur impartialité.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_61">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les activités pluridisciplinaires entre les prestataires visés au paragraphe (1), points a) et b), sont permises à condition: </p>
+<ol scl:symbol="a)">
+<li>qu’il n’y ait pas de conflits d’intérêts et d’incompatibilités entre certaines activités;</li>
+<li>que l’indépendance et l’impartialité qu’exigent certaines activités soit assurée;</li>
+<li>que les règles de déontologie des différentes activités soient compatibles entre elles, en particulier en matière de secret professionnel.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_24/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 24.</num>
+<heading scl:style-format="bi">Règlement des litiges</heading>
+<paragraph id="paragraph_62">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les prestataires fournissent leurs coordonnées, notamment une adresse postale, un numéro de télécopie ou une adresse électronique ainsi qu’un numéro de téléphone, où tous les destinataires, y compris ceux résidant dans un autre Etat membre, peuvent leur adresser directement une réclamation ou leur demander des informations sur le service fourni. Les prestataires fournissent leur domiciliation légale si celle-ci ne correspond pas à leur adresse habituelle aux fins de correspondance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les prestataires répondent aux réclamations visées au premier alinéa dans les plus brefs délais.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_63">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La preuve du respect de l’obligation d’information et de l’exactitude des informations visées à l’article 19 incombe au prestataire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_64">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Lorsqu’une garantie financière est nécessaire pour l’exécution d’une décision judiciaire, sont reconnues comme équivalentes les garanties constituées auprès d’un établissement de crédit ou d’un assureur établi dans un autre Etat membre. Ces établissements de crédit doivent être agréés dans un Etat membre conformément aux textes nationaux transposant la <ref href="/eli/dir_ue/2006/48" id="00bb6a71-974f-45c2-8105-98333ae06960">directive 2006/48/CE</ref> du Parlement européen et du Conseil du 14 juin 2006 concernant l’accès à l’activité des établissements de crédit et son exercice, et ces assureurs doivent être agréés dans un Etat membre, selon le cas, conformément aux textes nationaux transposant la première <ref href="/eli/dir_ue/1973/239" id="ee27bfeb-5f60-4210-aad9-717aebe1e0e0">directive 73/239/CEE</ref> du Conseil du 24 juillet 1973 portant coordination des dispositions législatives, réglementaires et administratives concernant l’accès à l’activité de l’assurance directe autre que l’assurance sur la vie, et son exercice ou aux textes nationaux transposant la <ref href="/eli/dir_ue/2002/83" id="aeba6485-b4c9-42b5-bb53-19faac616c7c">directive 2002/83/CE</ref> du Parlement européen et du Conseil du 5 novembre 2002 concernant l’assurance directe sur la vie.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_65">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les prestataires soumis à un code de conduite, ou membres d’une association ou d’un organisme professionnels, qui prévoit le recours à des moyens de règlement extrajudiciaire des litiges, en informent le destinataire et le mentionnent dans tout document. Ils présentent de manière détaillée leurs services, en indiquant les moyens d’accéder à des informations détaillées sur les caractéristiques et les conditions d’utilisation de ces moyens.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_6">
+<num>Chapitre 6</num>
+<heading scl:separator=" – " scl:style-format="b">
+<i>Coopération administrative transfrontalière</i>
+</heading>
+<article id="art_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_25/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 25.</num>
+<heading scl:style-format="bi">Assistance mutuelle – obligations générales</heading>
+<paragraph id="paragraph_66">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les autorités compétentes prêtent assistance à leurs homologues des autres Etats membres et coopèrent avec ceux-ci afin d’assurer le contrôle des prestataires et de leurs services.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_67">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les demandes d’information et les demandes de procéder à des vérifications, inspections et enquêtes en vertu du présent chapitre sont dûment motivées, en particulier en précisant la raison de la demande. Les informations échangées ne sont utilisées qu’aux fins pour lesquelles elles ont été demandées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_68">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Sur initiative d’une autorité compétente luxembourgeoise, les prestataires de services agissent diligemment pour contribuer au respect des obligations générales d’assistance mutuelle en vertu du présent chapitre, en particulier en lui communiquant toute information qui leur est sollicitée pour le contrôle légal de leurs activités. Les informations demandées par les autorités compétentes luxembourgeoises servent à répondre aux demandes d’information et aux demandes de procéder à des vérifications, inspections ou enquêtes conformément au paragraphe (3).</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_69">
+<num>(4)</num>
+<alinea>
+<content>
+<p>En cas de difficultés à satisfaire une demande d’information ou à procéder à des vérifications, inspections ou enquêtes, l’autorité compétente interrogée avertit dans les meilleurs délais l’autorité compétente de l’Etat membre demandeur en vue de trouver une solution.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_70">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les autorités compétentes luxembourgeoises fournissent, dans les plus brefs délais et par voie électronique, les informations demandées par les autorités compétentes d’autres Etats membres ou par la Commission européenne.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_71">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les autorités compétentes luxembourgeoises communiquent à la Commission européenne des informations sur les cas où des autorités compétentes d’autres Etats membres ne remplissent pas leur obligation d’assistance mutuelle.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_26">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_26</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_26/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 26.</num>
+<heading scl:style-format="bi">Assistance mutuelle – obligations générales incombant à l’Etat membre d’établissement</heading>
+<paragraph id="paragraph_72">
+<num>(1)</num>
+<alinea>
+<content>
+<p>En ce qui concerne les prestataires établis au Luxembourg prestant des services dans un autre Etat membre, les autorités compétentes luxembourgeoises fournissent les informations demandées par les autorités compétentes d’un autre Etat membre et, en particulier, confirment qu’un prestataire est bien établi au Luxembourg et, qu’à leur connaissance, ce prestataire n’y exerce pas ses activités de manière illégale.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_73">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les autorités compétentes luxembourgeoises procèdent aux vérifications, inspections et enquêtes demandées par les autorités compétentes d’un autre Etat membre dans les limites de compétence leur conférées par les lois nationales respectives et informent ces dernières des résultats obtenus et, le cas échéant, des mesures prises. Les autorités compétentes luxembourgeoises appliquent les mesures de contrôle et d’enquête prévues par la loi lorsque ces mesures s’avèrent nécessaires pour répondre à la demande d’une autorité compétente d’un autre Etat membre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_74">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Dès lors que les autorités compétentes luxembourgeoises ont connaissance, dans le chef d’un prestataire établi au Luxembourg qui fournit des services dans d’autres Etats membres, d’un comportement ou d’actes précis qui, à leur connaissance, pourraient causer un préjudice grave pour la santé ou pour la sécurité des personnes ou pour l’environnement, elles en informent les autorités compétentes des autres Etats membres et la Commission européenne dans les plus brefs délais.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_27">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_27/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 27.</num>
+<heading scl:style-format="bi">Contrôle en cas de déplacement temporaire d’un prestataire vers le Luxembourg</heading>
+<paragraph id="paragraph_75">
+<num>(1)</num>
+<alinea>
+<content>
+<p>En ce qui concerne les exigences qui peuvent être imposées conformément aux articles 14 ou 15, les autorités compétentes luxembourgeoises sont responsables du contrôle de l’activité du prestataire établi dans un autre Etat membre sur le territoire luxembourgeois. Conformément au droit communautaire et en vertu des lois nationales, les autorités compétentes luxembourgeoises: </p>
+<ol scl:symbol="a)">
+<li>prennent toutes les mesures légales afin d’assurer que le prestataire se conforme aux exigences qui ont trait à l’accès à l’activité de service et son exercice;</li>
+<li>procèdent aux vérifications, inspections et enquêtes légales pour contrôler le service fourni.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_76">
+<num>(2)</num>
+<alinea>
+<content>
+<p>En ce qui concerne les exigences autres que celles visées au paragraphe (1), lorsqu’un prestataire se rend temporairement au Luxembourg pour y fournir un service sans y être établi, les autorités compétentes luxembourgeoises participent au contrôle du prestataire conformément aux paragraphes (3) et (4).</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_77">
+<num>(3)</num>
+<alinea>
+<content>
+<p>À la demande de l’Etat membre d’établissement, les autorités compétentes luxembourgeoises procèdent aux vérifications, inspections et enquêtes nécessaires au contrôle effectif par les autorités compétentes de l’Etat membre d’établissement. Elles interviennent dans les limites des compétences qui leur sont conférées par la loi. Elles peuvent, dans ce cas, décider des mesures les plus appropriées à prendre dans chaque cas d’espèce pour répondre à la demande de l’Etat membre d’établissement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_78">
+<num>(4)</num>
+<alinea>
+<content>
+<p>De leur propre initiative, les autorités compétentes luxembourgeoises ne peuvent procéder à des vérifications, inspections et enquêtes sur place que si ces dernières sont non discriminatoires, ne sont pas motivées par le fait qu’il s’agit d’un prestataire ayant son établissement dans un autre Etat membre et sont proportionnées.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_28">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_28</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_28/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28.</num>
+<heading scl:style-format="bi">Contrôle en cas de déplacement temporaire du prestataire dans un autre Etat membre</heading>
+<paragraph id="paragraph_79">
+<num>(1)</num>
+<alinea>
+<content>
+<p>En ce qui concerne les cas non couverts par l’article 27, paragraphe (1), les autorités compétentes luxembourgeoises veillent à ce que le respect des exigences en matière de prestation de services soit contrôlé conformément aux pouvoirs leurs conférés par la loi, en particulier au lieu d’établissement du prestataire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_80">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les autorités compétentes luxembourgeoises ne s’abstiennent pas d’effectuer des contrôles ou de prendre des mesures d’exécution au motif que le service a été fourni ou a causé des dommages dans un autre Etat membre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_81">
+<num>(3)</num>
+<alinea>
+<content>
+<p>L’obligation visée au paragraphe (1) n’implique pas le devoir de procéder à des vérifications et des contrôles factuels sur le territoire de l’Etat membre où le service est fourni. Ces vérifications et contrôles sont effectués par les autorités compétentes de l’Etat membre dans lequel le prestataire opère temporairement, à la demande des autorités compétentes luxembourgeoises, conformément à l’article 27.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_29">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_29</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_29/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 29.</num>
+<heading scl:style-format="bi">Mécanisme d’alerte</heading>
+<alinea>
+<content>
+<p>Lorsque des circonstances ou des faits graves et précis en rapport avec une activité de service et susceptibles de causer un préjudice grave à la santé ou à la sécurité des personnes ou à l’environnement sur son territoire ou sur le territoire d’autres Etats membres sont portés à la connaissance des autorités compétentes luxembourgeoises, ces dernières en informent les autorités compétentes de l’Etat membre d’établissement, les autorités compétentes des autres Etats membres concernés et la Commission européenne, dans les plus brefs délais.</p>
+</content>
+</alinea>
+</article>
+<article id="art_30">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_30</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_30/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 30.</num>
+<heading scl:style-format="bi">Informations sur l’honorabilité des prestataires</heading>
+<paragraph id="paragraph_82">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les autorités compétentes luxembourgeoises communiquent, à la demande d’une autorité compétente d’un autre Etat membre, dans le respect de la législation nationale, les informations relatives aux actions disciplinaires ou administratives ou aux sanctions pénales et aux décisions relatives à l’insolvabilité ou à des faillites frauduleuses qui ont été prises à l’encontre d’un prestataire donné et qui concernent directement les compétences du prestataire ou sa fiabilité professionnelle. L’autorité compétente qui communique ces informations en informe le prestataire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute demande adressée ou reçue par une autorité compétente luxembourgeoise conformément au premier alinéa doit être dûment motivée et, en particulier, préciser les raisons de la demande d’information.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_83">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les sanctions et actions visées au paragraphe (1) ne sont communiquées que lorsqu’il s’agit d’une décision définitive. En ce qui concerne les autres décisions exécutoires visées au paragraphe (1), l’autorité compétente luxembourgeoise saisie précise s’il s’agit d’une décision définitive ou si un recours a été introduit contre la décision, auquel cas elle indique la date à laquelle la décision sur le recours devrait être rendue.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les autorités compétentes indiquent les dispositions nationales en vertu desquelles le prestataire a été sanctionné ou condamné.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_84">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La communication des informations visées aux paragraphes (1) et (2) doit se faire dans le respect des règles relatives à la protection des données à caractère personnel et des droits garantis aux personnes condamnées ou sanctionnées, y compris dans le cas des ordres professionnels. Les informations publiques à cet égard doivent être accessibles aux consommateurs.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_31">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_31</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_31/20110529</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2011-05-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 31.</num>
+<heading scl:style-format="bi">Assistance mutuelle en cas de dérogation dans des cas individuels</heading>
+<paragraph id="paragraph_85">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Lorsqu’une autorité compétente luxembourgeoise envisage de prendre une mesure conformément à l’article 16, la procédure prévue aux paragraphes (2) à (5) du présent article s’applique sans préjudice d’une procédure judiciaire, y compris la procédure précontentieuse et les actes accomplis dans le cadre d’une enquête pénale.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_86">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’autorité compétente visée au paragraphe (1) demande à l’autorité compétente de l’Etat membre d’établissement de prendre des mesures à l’encontre du prestataire concerné en fournissant toutes les informations pertinentes sur le service en cause et les circonstances de l’espèce. L’autorité compétente de l’Etat membre d’établissement vérifie dans les plus brefs délais si le prestataire exerce légalement ses activités ainsi que les faits à l’origine de la demande. Elle communique dans les plus brefs délais, à l’autorité compétente luxembourgeoise qui a fait la demande, les mesures prises ou envisagées ou, le cas échéant, les raisons pour lesquelles elle n’a pas pris de mesures.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_87">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Après la communication de l’autorité compétente de l’Etat membre d’établissement visée au paragraphe (2), deuxième alinéa, l’autorité compétente luxembourgeoise notifie à la Commission européenne et à l’autorité compétente de l’Etat membre d’établissement son intention de prendre des mesures en indiquant: </p>
+<ol scl:symbol="a)">
+<li>les raisons pour lesquelles elle estime que les mesures prises ou envisagées par l’autorité de l’Etat membre d’établissement ne sont pas adéquates;</li>
+<li>les raisons pour lesquelles elle estime que les mesures qu’elle envisage de prendre respectent les conditions prévues à l’article 16.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_88">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les mesures ne peuvent être prises qu’après un délai de quinze jours ouvrables après la notification prévue au paragraphe (3).</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_89">
+<num>(5)</num>
+<alinea>
+<content>
+<p>En cas d’urgence, l’autorité compétente luxembourgeoise qui envisage de prendre une mesure peut déroger aux paragraphes (2), (3) et (4). Dans ce cas, les mesures sont notifiées dans les plus brefs délais à la Commission européenne et à l’autorité compétente de l’Etat membre d’établissement, en indiquant les raisons pour lesquelles elle estime qu’il y a urgence.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_7">
+<num>Chapitre 7</num>
+<heading scl:separator=" – " scl:style-format="b">
+<i>Actions en cessation</i>
+
+</heading>
+<article id="art_32" style="del">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_32</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1/art_32/20251125</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-11-25</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<del>
+<mod class="mod-start" for="#pm6"/>Art. 32.</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>Le magistrat présidant la Chambre du tribunal d’arrondissement siégeant en matière commerciale à la requête <mod class="mod-start" for="#pm3"/>d’un groupement professionnel ou <mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/>des organisations visées par <mod class="mod-start" for="#pm2"/>l’article L. 313-1 et suivant du <ref href="/eli/etat/leg/code/consommation" id="86ca147a-d22c-4390-8c96-061b451f6f3b">Code de la consommation</ref>, ou du ministre ayant la Protection des consommateurs dans ses attributions<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/>, peut ordonner toute mesure destinée à faire cesser tout acte contraire aux dispositions de la présente loi ou aux règlements d’application y afférentes et qui porte atteinte aux intérêts collectifs des consommateurs.</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>
+<mod class="mod-start" for="#pm4"/>Le magistrat présidant la Chambre du tribunal d’arrondissement siégeant en matière commerciale à la requête d’un groupement professionnel, ou du Conseil de la concurrence, peut ordonner toute mesure destinée à faire cesser ou à interdire tout acte contraire aux dispositions de la présente loi ou aux règlements d’application y afférents et qui porte atteinte aux intérêts collectifs des entreprises.<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>
+</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>
+<mod class="mod-start" for="#pm5"/>L’action est introduite selon la procédure applicable en matière de référé. Le magistrat présidant la Chambre du tribunal d’arrondissement siégeant en matière commerciale statue comme juge du fond.</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>L’appel est introduit, dans les quinze jours à partir de la signification de la décision, selon la procédure prévue en matière de référé.<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/>
+</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>Sont également applicables les articles 2059 à 2066 du <ref href="/eli/etat/leg/code/civil" id="e7adeb29-310f-4588-a1a9-57033f773a26">Code civil</ref>.</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>L’affichage de la décision peut être ordonné à l’intérieur ou à l’extérieur des installations de vente du contrevenant et aux frais de celui-ci. La décision précise la durée de l’affichage et elle peut également ordonner la publication, en totalité ou par extrait, aux frais du contrevenant, par la voie des journaux ou de toute autre manière.</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>Il ne peut être procédé à l’affichage et à la publication qu’en vertu d’une décision judiciaire coulée en force de chose jugée.</del>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<del>Tout manquement aux injonctions ou interdictions portées par une décision judiciaire prononcée en vertu du présent article et coulée en force de chose jugée est puni d’une amende de 251 à 50.000 euros.<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M6" marker="6"/>
+</del>
+</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

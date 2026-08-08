@@ -1,0 +1,144 @@
+"""FastAPI application for the Lex email service.
+
+Phase 2 implements discovery and the worker lease. Phase 3 adds MIME parsing,
+deterministic gates, template replies, and rate limiting. Phase 4 completes the
+model pipeline and sends Lex replies when all gates pass.
+
+Responses never expose configuration, secrets, message content, or stack
+traces.
+"""
+
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
+from fastapi import Depends, FastAPI, Header, HTTPException, Request, status
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel, Field
+
+from app import __version__
+from app.config import Settings, get_settings
+from app.domain.errors import MissingDependencyError, NotImplementedForPhase
+from app.infrastructure.factory import build_adapters
+from app.logging import configure_logging
+from app.services.poller import Poller
+from app.services.processor import Processor
+from app.services.retention import RetentionWorker
+
+if TYPE_CHECKING:
+    from app.infrastructure.factory import Adapters
+
+INTERNAL_TOKEN_HEADER = "X-Lex-Internal-Token"
+
+
+class ProcessRequest(BaseModel):
+    """Body of a Cloud Tasks processing request: identifiers only."""
+
+    gmail_message_id: str = Field(min_length=1)
+    thread_id: str | None = None
+
+
+def create_app(
+    settings: Settings | None = None, *, adapters: Adapters | None = None
+) -> FastAPI:
+    settings = settings or get_settings()
+    configure_logging(settings.log_level)
+    resolved = adapters or build_adapters(settings)
+
+    app = FastAPI(
+        title="Clarvia Lex email service",
+        version=__version__,
+        docs_url=None,
+        redoc_url=None,
+        openapi_url=None,
+    )
+
+    poller = Poller(
+        settings=settings,
+        gmail=resolved.gmail,
+        tasks=resolved.tasks,
+        state=resolved.state,
+        clock=resolved.clock,
+    )
+    processor = Processor(
+        settings=settings,
+        state=resolved.state,
+        gmail=resolved.gmail,
+        rate_limit=resolved.rate_limit,
+        daily_usage=resolved.daily_usage,
+        llm=resolved.llm,
+        clock=resolved.clock,
+    )
+    retention = RetentionWorker(
+        settings=settings,
+        state=resolved.state,
+        rate_limit=resolved.rate_limit,
+        daily_usage=resolved.daily_usage,
+        gmail=resolved.gmail,
+        clock=resolved.clock,
+    )
+
+    def require_internal_token(
+        token: str | None = Header(default=None, alias=INTERNAL_TOKEN_HEADER),
+    ) -> None:
+        """Optional shared-secret gate for the internal endpoints.
+
+        Cloud Run IAM (OIDC from Cloud Scheduler and Cloud Tasks) is the primary
+        control. When ``INTERNAL_AUTH_TOKEN`` is configured this adds a second
+        check; when it is unset the endpoints rely on IAM alone, which keeps
+        local runs and tests usable.
+        """
+        expected = settings.internal_auth_token
+        if expected and token != expected:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED, detail="unauthorized"
+            )
+
+    @app.exception_handler(NotImplementedForPhase)
+    async def _not_implemented_handler(
+        _request: Request, exc: NotImplementedForPhase
+    ) -> JSONResponse:
+        # Stable, non-sensitive body. No config, secrets, or stack trace.
+        return JSONResponse(
+            status_code=501,
+            content={"detail": "not_implemented_in_current_phase", "code": exc.code},
+        )
+
+    @app.exception_handler(MissingDependencyError)
+    async def _missing_dependency_handler(
+        _request: Request, exc: MissingDependencyError
+    ) -> JSONResponse:
+        return JSONResponse(
+            status_code=500,
+            content={"detail": "backend_dependency_missing", "code": exc.module_name},
+        )
+
+    # Cloud Run reserves paths ending in "z" (e.g. /healthz); use /health.
+    @app.get("/health")
+    async def health() -> dict[str, str]:
+        return {
+            "status": "ok",
+            "version": __version__,
+            "prompt_version": settings.prompt_version,
+            "schema_version": settings.schema_version,
+        }
+
+    @app.post("/internal/poll", dependencies=[Depends(require_internal_token)])
+    async def internal_poll() -> dict[str, int | str]:
+        return poller.run().as_dict()
+
+    @app.post("/internal/process", dependencies=[Depends(require_internal_token)])
+    async def internal_process(payload: ProcessRequest) -> dict[str, int | str]:
+        result = processor.run(
+            gmail_message_id=payload.gmail_message_id, thread_id=payload.thread_id
+        )
+        return result.as_dict()
+
+    @app.post("/internal/retention", dependencies=[Depends(require_internal_token)])
+    async def internal_retention() -> dict[str, int]:
+        return retention.run().as_dict()
+
+    return app
+
+
+app = create_app()

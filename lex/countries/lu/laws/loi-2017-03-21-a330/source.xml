@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#somebody">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2017-03-21" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MENV"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2017-03-21" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2017-03-21" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2017-03-27</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2022-06-14</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MENV</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/913</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/289</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2017-03-31</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2017/a330</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/jo/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 14/06/2022 : Loi du 21 mars 2017 relative aux emballages et aux déchets d'emballages.</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1976/769/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1991/155/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1993/105/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1993/67/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1994/62/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1999/45/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2000/21/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/code/instruction_criminelle</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/code/penal</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2012/03/21/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/1993/793/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/1994/1488/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/2006/1013/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/2006/1907/jo</scl:jolux>
+					<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/pl/20160091</scl:jolux>
+					<scl:jolux scl:name="transposes">http://data.legilux.public.lu/eli/dir_ue/2015/720/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/jo/fr</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2017/a330/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="memorialPage">1</scl:jolux>
+					<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2017-03-21-a330-jo-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2017-03-21" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2022-06-14" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_5_reduction_de_la_consommation_de_sacs_en_plastique"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_7_systemes_de_reprise_de_collecte_et_de_valorisation"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_8_responsables_d_emballages_et_organismes_agrees"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_10"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_12"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_13_20220614"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_15"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_17_recherche_et_constatation_des_infractions"/>
+					</textualMod>
+					<textualMod id="pm15" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_18_pouvoirs_et_prerogatives_de_controle"/>
+					</textualMod>
+					<textualMod id="pm16" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_19"/>
+					</textualMod>
+					<textualMod id="pm17" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_20"/>
+					</textualMod>
+					<textualMod id="pm18" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_21"/>
+					</textualMod>
+					<textualMod id="pm19" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_21"/>
+					</textualMod>
+					<textualMod id="pm20" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination href="#art_24"/>
+					</textualMod>
+					<textualMod id="pm21" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm22" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/06/09/a270/jo"/>
+						<destination/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/loi/2017/03/21/a330/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/loi/2022/06/09/a270/jo" id="rp2" showAs="Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M13" marker="13" refersTo="pm13" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M14" marker="14" refersTo="pm14" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M15" marker="15" refersTo="pm15" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M16" marker="16" refersTo="pm16" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M17" marker="17" refersTo="pm17" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M18" marker="18" refersTo="pm18" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M19" marker="19" refersTo="pm19" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M20" marker="20" refersTo="pm20" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M21" marker="21" refersTo="pm21" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M22" marker="22" refersTo="pm22" title="A|2022-06-10|2022-06-09|L|270">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/09/a270/jo">Loi du 9 juin 2022 modifiant la loi du 21 mars 2017 relative aux emballages et aux déchets d’emballages.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 14/06/2022 : Loi du 21 mars 2017 relative aux emballages et aux déchets d'emballages.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_1er">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_1er_objectifs</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_1er_objectifs/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1er. Objectifs </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num><mod class="mod-start" for="#pm1"/><u>Art. 1<sup>er</sup>.</u></num><heading><u><b>Objectifs</b></u></heading>
+				<alinea>
+					<content>
+						<p>La présente loi prévoit des mesures visant, comme première priorité, la prévention de déchets d’emballages et, comme autres principes fondamentaux, le réemploi et la préparation à la réutilisation d’emballages, le recyclage et les autres formes de valorisation des déchets d’emballages et, partant, la réduction de l’élimination finale de ces déchets afin de contribuer à la transition vers une économie circulaire.<mod class="mod-end" for="#pm1"/>
+							<noteRef href="#M1" marker="1"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_2">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_2_champ_d_application</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_2_champ_d_application/20170331</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 2. Champ d’application </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2017-03-31</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 2.</num><heading><b>Champ d’application</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>La présente loi s’applique à tous les emballages mis sur le marché luxembourgeois et à tous les déchets d’emballages, qu’ils soient utilisés ou mis au rebut par les industries, les commerces, les bureaux, les ateliers, les services, les ménages ou à tout autre niveau, quels que soient les matériaux dont ils sont constitués.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_3">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_3_definitions</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_3_definitions/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 3. Définitions </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm2"/>
+					<u>Art. 3.</u></num><heading><u><b>Définitions</b>
+					</u>
+				</heading>
+				<alinea>
+					<content>
+						<p>Aux fins de la présente loi, on entend par :</p>
+						<ol scl:start="1" scl:symbol="custom">
+							<li scl:symbol="1°">« acteurs économiques » : dans le domaine de l’emballage, les fournisseurs de matériaux d’emballage, fabricants, transformateurs, remplisseurs et utilisateurs, importateurs, commerçants et distributeurs, autorités publiques et organismes publics ;</li>
+							<li scl:symbol="2°">« accord environnemental » : tout accord formel entre le ministre ayant l’Environnement dans ses attributions, ci-après « ministre », et les responsables d’emballages ou organismes agréés qui doit être ouvert à tous les acteurs économiques souhaitant se conformer aux conditions fixées par l’accord afin de contribuer à la réalisation des objectifs visés à l’article 1<sup>er</sup> ;</li>
+							<li scl:symbol="3°">« conditionnement » : l’action de placer une denrée alimentaire dans une enveloppe ou dans un contenant en contact direct avec la denrée concernée ;</li>
+							<li scl:symbol="4°">« déchet d’emballage » : tout emballage ou matériau d’emballage couvert par la définition des déchets figurant à l’article 4 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="558324f1-cf27-40e3-a030-5807a9e176bf" scl:verify="true">loi modifiée du 21 mars 2012</ref> relative aux déchets, ci-après « <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="3d1da31a-b623-454f-8347-c3cafeed716c" scl:verify="true">loi du 21 mars 2012</ref> », à l’exclusion des résidus de production ;</li>
+							<li scl:symbol="5°">« déchet d’emballage ménager » : un déchet d’emballage constituant un déchet municipal ménager au sens de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="7ce140b7-2126-4c17-818e-58a4526e63a9" scl:verify="true">loi du 21 mars 2012</ref> ;</li>
+							<li scl:symbol="6°">« déchet d’emballage non ménager » : un déchet d’emballage constituant un déchet municipal non ménager au sens de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="aa071177-3c80-412a-8504-d14a4e21f455" scl:verify="true">loi du 21 mars 2012</ref> ;</li>
+							<li scl:symbol="7°">« emballage » : tout produit constitué de matériaux de toute nature, destiné à contenir et à protéger des marchandises données, allant des matières premières aux produits finis, à permettre leur manutention et leur acheminement du producteur au consommateur ou à l’utilisateur, et à assurer leur présentation.<p>Tous les articles à jeter, utilisés aux mêmes fins, doivent être considérés comme des emballages.</p>
+								<p>L’emballage est uniquement constitué de :</p>
+								<ol scl:start="1" scl:symbol="a)">
+									<li>l’emballage de vente ou emballage primaire, c’est-à-dire l’emballage conçu de manière à constituer au point de vente une unité de vente pour l’utilisateur final ou le consommateur ;</li>
+									<li>l’emballage de groupage ou emballage secondaire, c’est-à-dire l’emballage conçu de manière à constituer au point de vente un groupe d’un certain nombre d’unités de vente, qu’il soit vendu tel quel à l’utilisateur final ou au consommateur, ou qu’il serve seulement à garnir les présentoirs au point de vente ; il peut être enlevé du produit sans en modifier les caractéristiques ;</li>
+									<li>l’emballage de transport ou emballage tertiaire, c’est-à-dire l’emballage conçu de manière à faciliter la manutention et le transport d’un certain nombre d’unités de vente ou d’emballages de groupage en vue d’éviter leur manipulation physique et les dommages liés au transport. L’emballage de transport ne comprend pas les conteneurs de transport routier, ferroviaire, maritime et aérien.</li>
+								</ol>
+								<p>La définition de la notion d’ « emballages » doit reposer en outre sur les critères suivants :</p>
+								<ol scl:start="1" scl:symbol="i.">
+									<li>Un article est considéré comme un emballage s’il correspond à la définition susmentionnée, sans préjudice d’autres fonctions que l’emballage pourrait également avoir, à moins que l’article ne fasse partie intégrante d’un produit et qu’il ne soit nécessaire pour contenir, soutenir ou conserver ce produit durant tout son cycle de vie et que tous les éléments ne soient destinés à être utilisés, consommés ou éliminés ensemble ;</li>
+									<li>Les articles conçus pour être remplis au point de vente et les articles à usage unique vendus, remplis ou conçus pour être remplis au point de vente sont considérés comme des emballages pour autant qu’ils jouent un rôle d’emballage et qu’ils constituent des emballages de service ;</li>
+									<li>Les composants d’emballages et les éléments auxiliaires intégrés à l’emballage sont considérés comme des parties de l’emballage auquel ils sont intégrés. Les éléments auxiliaires accrochés directement ou fixés à un produit et qui jouent un rôle d’emballage sont considérés comme des emballages, à moins qu’ils ne fassent partie intégrante d’un produit et que tous les éléments ne soient destinés à être consommés ou éliminés ensemble.</li>
+								</ol>
+								<p>Les articles énumérés à l’annexe I de la <ref href="/eli/dir_ue/1994/62/jo" id="bb722dc8-0cc9-4ccf-8118-343538f98a82" scl:verify="true">directive 94/62/CE</ref> du Parlement européen et du Conseil du 20 décembre 1994 relative aux emballages et aux déchets d’emballages telle que modifiée par les actes délégués de la Commission européenne pris en conformité avec l’article 19, paragraphe 2, et l’article 21<i>bis</i>
+									<i> de <ref href="/eli/dir_ue/1994/62/jo" id="732453e3-9aed-4f46-a2d1-dc564c92594e">cette directive</ref>
+									</i> sont des exemples illustrant l’application de ces critères ;</p>
+							</li>
+							<li scl:symbol="8°">« emballage réemployable » : un emballage qui a été conçu, créé et mis sur le marché pour pouvoir accomplir pendant son cycle de vie plusieurs trajets ou rotations en étant rempli à nouveau ou réemployé pour un usage identique à celui pour lequel il a été conçu ;</li>
+							<li scl:symbol="9°">« emballage composite » : un emballage composé de deux ou plusieurs couches de matériaux différents qui ne peuvent être séparées à la main et forment une seule unité, composé d’un récipient intérieur et d’une coque extérieure, qui est rempli, entreposé, transporté et vidé comme tel ;</li>
+							<li>
+								<p>
+									<span style="li_symbol">9°<i>bis</i>
+									</span>
+								</p> « emballage de service » : tout emballage primaire ou secondaire, utilisé au point de mise à disposition de biens ou de services aux consommateurs ;</li>
+							<li scl:symbol="10°">« gestion centralisée » : le système qui consiste pour un organisme agréé à prendre en charge des déchets d’emballages à partir d’un point de collecte par apport volontaire en vue de les soumettre au recyclage ;</li>
+							<li scl:symbol="11°">« gestion des déchets d’emballages » : la gestion des déchets, telle que définie à l’article 4 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="c9ee4956-e4ab-46e3-b405-dcd5021e0729" scl:verify="true">loi du 21 mars 2012</ref> ;</li>
+							<li scl:symbol="12°">« matériau d’emballage » : toute matière simple ou composée d’origine naturelle ou artificielle composant un emballage ;</li>
+							<li scl:symbol="13°">« organisme agréé » : la personne morale agréée conformément à la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="4caeb8d1-708f-4b13-9266-df4f39fb0330" scl:verify="true">loi du 21 mars 2012</ref> qui prend à sa charge les obligations de la responsabilité élargie des producteurs ; </li>
+							<li scl:symbol="14°">« plastique » un matériau constitué d’un polymère tel que défini à l’article 3, point 5, du <ref href="/eli/reg_ue/2006/1907/jo" id="0b7f2124-5759-4f6b-96d2-fd7f6126bdf1">règlement (CE) n° 1907/2006</ref> du Parlement européen et du Conseil du 18 décembre 2006 concernant l’enregistrement, l’évaluation et l’autorisation des substances chimiques, ainsi que les restrictions applicables à ces substances (REACH), instituant une agence européenne des produits chimiques, modifiant la <ref href="/eli/dir_ue/1999/45/jo" id="6e822500-62f3-45b4-9f39-ea5fa42f715e" scl:verify="true">directive 1999/45/CE</ref> et abrogeant le <ref href="/eli/reg_ue/1993/793/jo" id="be4bcecf-3fc1-4e31-a247-3872be4358bb">règlement (CEE) n° 793/93</ref> du Conseil et le <ref href="/eli/reg_ue/1994/1488/jo" id="f9eae44b-03d3-4b89-a2bd-08a6e6ff9c48">règlement (CE) n° 1488/94</ref> de la Commission ainsi que la <ref href="/eli/dir_ue/1976/769/jo" id="55287228-008a-442c-a991-bb3014d35062">directive 76/769/CEE</ref> du Conseil et les <ref href="/eli/dir_ue/1991/155/jo" id="5f7039d2-1a3c-4888-97ec-151f93e7a7f8">directives 91/155/CEE</ref>, <ref href="/eli/dir_ue/1993/67/jo" id="09248a3e-4fc2-498f-9280-9c4e5aa4b69c">93/67/CEE</ref>, <ref href="/eli/dir_ue/1993/105/jo" id="78d5db37-1874-4561-96bb-081f247a5c4e">93/105/CE</ref> et <ref href="/eli/dir_ue/2000/21/jo" id="7f83f2e1-8b78-454a-918e-982bd69492c5">2000/21/CE</ref> de la Commission, auquel des additifs ou d’autres substances peuvent avoir été ajoutés, et qui est capable de jouer le rôle de composant structurel principal de sacs ;</li>
+							<li scl:symbol="15°">« recyclage organique » : le traitement aérobie (compostage) ou anaérobie (biométhanisation), par des microorganismes et dans des conditions contrôlées, des parties biodégradables des déchets d’emballages, avec production d’amendements organiques stabilisés ou de méthane. L’enfouissement en décharge ne peut être considéré comme une forme de recyclage organique ;</li>
+							<li scl:symbol="16°">« responsable d’emballages » : toute personne physique ou morale<ol scl:start="1" scl:symbol="a)">
+									<li>établie au Grand-Duché de Luxembourg qui, à titre professionnel, remplit ou vend directement au Grand-Duché de Luxembourg, quelle que soit la technique de vente utilisée, y compris par le biais de contrats à distance tels que définis à l’article L. 222-1 du <ref href="/eli/etat/leg/code/consommation" id="69c4f66b-9c43-433f-8e1f-84c11f78bcbb">Code de la consommation</ref>, et met sur le marché luxembourgeois des produits emballés ; ou </li>
+									<li>qui est le premier acteur à réceptionner, à titre professionnel, des produits emballés importés au Grand-Duché de Luxembourg par toute personne physique ou morale établie ou non au Grand-Duché de Luxembourg, quelle que soit la technique de vente utilisée, y compris par le biais de contrats à distance tels que définis à l’article L. 222-1 du <ref href="https://legilux.public.lu/eli/etat/leg/code/consommation" id="df2895cc-4e4c-40df-817c-14dc84b6b6b2">Code de la consommation</ref>, et met sur le marché luxembourgeois des produits emballés ; ou</li>
+									<li>établie en dehors du Grand-Duché de Luxembourg qui, à titre professionnel, vend des produits emballés au Grand-Duché de Luxembourg directement à des ménages ou à des utilisateurs autres que des ménages, quelle que soit la technique de vente utilisée, y compris par le biais de contrats à distance tels que définis à l’article L. 222-1 du <ref href="https://legilux.public.lu/eli/etat/leg/code/consommation" id="f4c6ee90-3459-4394-a10f-fd38b0c09a8b">Code de la consommation</ref> ;</li>
+								</ol>
+								<p>En ce qui concerne les emballages de service, est considéré comme responsable d’emballages toute personne qui à titre professionnel et en vue de leur mise sur le marché luxembourgeois produit ou importe des emballages de service ;</p>
+							</li>
+							<li scl:symbol="17°">« sacs en plastique » : les sacs, avec ou sans poignées, composés de plastique, qui sont fournis aux consommateurs dans les points de vente de marchandises ou de produits ;</li>
+							<li scl:symbol="18°">« sacs en plastique légers » : les sacs en plastique d’une épaisseur inférieure à 50 microns ;</li>
+							<li scl:symbol="19°">« sacs en plastique très légers » : les sacs en plastique d’une épaisseur inférieure à 15 microns nécessaires à des fins d’hygiène ou fournis comme emballage primaire pour les denrées alimentaires en vrac lorsque cela contribue à prévenir le gaspillage alimentaire ;</li>
+							<li scl:symbol="20°">« sacs en plastique oxodégradables » : les sacs en plastique composés de matières plastiques contenant des additifs qui catalysent la fragmentation des matières plastiques en microfragments ;</li>
+							<li scl:symbol="21°">« système de consigne » : le système de reprise par lequel l’acquéreur verse une somme d’argent qui lui est restituée lorsque l’emballage utilisé est rapporté ;</li>
+							<li scl:symbol="22°">« taux de part de marché » : pourcentage, pour une période donnée, des emballages pour liquides alimentaires comportant au numérateur le volume de liquides alimentaires mis sur le marché, emballés dans des emballages réemployables et consommés sur le territoire national et au dénominateur le volume total des liquides alimentaires mis sur le marché et consommés sur le territoire national ;</li>
+							<li scl:symbol="23°">« taux de recyclage » : pourcentage, pour une période donnée, des déchets d’emballages comportant au numérateur le poids des déchets d’emballages effectivement soumis à recyclage et au dénominateur le poids total des emballages valorisables mis sur le marché luxembourgeois par un responsable d’emballages et consommés sur le territoire national.<p>La présente définition ne couvre pas les emballages soumis au réemploi au sens de la présente loi ;</p>
+							</li>
+							<li scl:symbol="24°">« taux de valorisation » : pourcentage, pour une période donnée, des déchets d’emballages comportant au numérateur le poids des déchets d’emballages effectivement soumis à valorisation et au dénominateur le poids total des emballages valorisables mis sur le marché luxembourgeois par un responsable d’emballages et consommés sur le territoire national ;<p>La présente définition ne couvre pas les emballages soumis au réemploi au sens de la présente loi ;</p>
+							</li>
+							<li scl:symbol="25°">« valorisation énergétique » : l’utilisation de déchets d’emballages combustibles en tant que moyen de production d’énergie, par incinération directe avec ou sans autres déchets, mais avec récupération de la chaleur.</li>
+						</ol>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les définitions des termes « déchets », « déchets municipaux », « déchets municipaux ménagers », « déchets municipaux non ménagers », « gestion des déchets », « collecte », « collecte séparée », « mise à disposition sur le marché », « mise sur le marché », « prévention », « réemploi », « préparation à la réutilisation », « traitement », « valorisation », « recyclage », « recyclage de qualité élevée », « élimination », « centre de ressources » et « régime de responsabilité élargie des producteurs » figurant à l’article 4 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="c2c63d76-ffb8-46b0-822c-1c0da93ae014" scl:verify="true">loi du 21 mars 2012</ref> s’appliquent.<mod class="mod-end" for="#pm2"/>
+							<noteRef href="#M2" marker="2"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_4">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_4_prevention_et_reutilisation_et_accords_environnementaux</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_4_prevention_et_reutilisation_et_accords_environnementaux/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 4. Prévention et réutilisation et accords environnementaux </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 4.</num><heading><b>Prévention et réutilisation et accords environnementaux</b>
+				</heading>
+				<paragraph id="paragraph_1">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm3"/>Outre les mesures destinées à prévenir la production de déchets d’emballages, arrêtées conformément à l’article 9 et sans préjudice du paragraphe 2, le ministre peut conclure des accords environnementaux qui respectent les objectifs visés à l’article 1<sup>er </sup>et visent essentiellement à réduire l’impact environnemental des emballages et à empêcher la production de déchets d´emballages. Ces accords peuvent prévoir des campagnes d’information et de sensibilisation du public.<mod class="mod-end" for="#pm3"/>
+								<noteRef href="#M3" marker="3"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>En ce qui concerne la production d’emballages et d’autres produits, les accords environnementaux peuvent encourager l’emploi de matériaux provenant de déchets d’emballages recyclés, en améliorant les conditions du marché pour ces matériaux.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>En ce qui concerne les emballages pour liquides alimentaires et autres produits, les accords environnementaux peuvent déterminer les conditions et modalités de promotion de la production et de la mise sur le marché d’emballages réutilisables et viser des objectifs relatifs à des taux de part de marché. La présente loi ne préjudicie pas au maintien ou l’instauration de régimes garantissant la réutilisation des emballages, sous la forme d’un système de consigne ou sous une autre forme appropriée et en conformité avec les objectifs visés à l’article 1<sup>er</sup>.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_2">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>D’autres mesures de prévention, y compris des études et des projets pilotes, peuvent être déterminées par le plan national de gestion des déchets et, le cas échéant, un plan spécifique en application de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo">loi du 21 mars 2012</ref>.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_5">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_5_reduction_de_la_consommation_de_sacs_en_plastique</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_5_reduction_de_la_consommation_de_sacs_en_plastique/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 5. Réduction de la consommation de sacs en plastique </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<u>
+						<mod class="mod-start" for="#pm4"/>Art. 5.</u></num><heading><u>Réduction d'emballages</u>
+				</heading>
+				<paragraph id="paragraph_40">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>En vue de réduire durablement la consommation d’emballages sur le territoire luxembourgeois :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>le niveau de la consommation annuelle des sacs en plastique légers ne doit pas dépasser quatre-vingt-dix sacs unités par personne au 31 décembre 2019 et quarante unités par personne au 31 décembre 2025. Les sacs en plastique très légers au sens de l’article 3, point 5, en sont exclus ;</li>
+								<li>aucun sac en plastique n’est fourni gratuitement dans les points de vente de marchandises ou de produits. Les sacs en plastique très légers au sens de l’article 3, point 5, en sont exclus ;</li>
+								<li>à compter du 1<sup>er</sup> janvier 2025, les produits à usage unique repris à l’annexe I, partie A de la <ref href="???" scl:verify="true">loi du 9 juin 2022</ref> relative à l’évaluation des incidences de certains produits en plastique sur l’environnement et les sacs, indépendamment de la taille, du mode de consommation et du matériel les composant ne peuvent être fournis gratuitement dans les points de vente de marchandises ou de produits.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_41">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Le coût des emballages visés au paragraphe 1<sup>er</sup>, points 2° et 3° doit être affiché séparément au point de vente.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Lorsque le prix de vente affiché pour une marchandise ou un produit déterminé contient le coût de l’emballage dont il est question au paragraphe 1<sup>er</sup>, point 3°, une réduction du montant correspondant au coût de cet emballage est accordée à la personne qui renonce à cet emballage.<mod class="mod-end" for="#pm4"/>
+								<noteRef href="#M4" marker="4"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_5bis">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_5bis_reemploi</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_5bis_reemploi/20170331</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 5bis. Réemploi</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm5"/>
+					<u>Art. 5<i>bis</i>.</u></num><heading><u>Réemploi</u>
+				</heading>
+				<alinea>
+					<content>
+						<p>Conformément à la hiérarchie des déchets établie à l’article 9 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="8dae31d7-e799-486d-926f-63b6b51e0177" scl:verify="true">loi du 21 mars 2012</ref>, le ministre peut conclure des accords environnementaux pour encourager l’augmentation de la part d’emballages réemployables mis sur le marché et des systèmes de réemploi des emballages qui soient respectueux de l’environnement.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Ces accords peuvent inclure, entre autres :</p>
+						<ol scl:start="1" scl:symbol="1°">
+							<li>le recours à des systèmes de consigne ;</li>
+							<li>la définition d’objectifs qualitatifs ou quantitatifs ;</li>
+							<li>le recours à des mesures d’incitation économiques ;</li>
+							<li>la définition d’un pourcentage minimal d’emballages réemployables mis sur le marché chaque année pour chaque flux d’emballages.<mod class="mod-end" for="#pm5"/>
+								<noteRef href="#M5" marker="5"/>
+							</li>
+						</ol>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_6">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_6_valorisation_et_recyclage</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_6_valorisation_et_recyclage/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 6. Valorisation et recyclage </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm6"/>
+					<u>Art. 6.</u></num><heading><u><b> Valorisation et recyclage</b>
+					</u>
+				</heading>
+				<paragraph id="paragraph_42">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les responsables d’emballages sont tenus d’atteindre les objectifs minima suivants : </p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>65 pour cent en poids des déchets d’emballages sont valorisés ou incinérés dans des installations d’incinération des déchets avec valorisation énergétique ;</li>
+								<li>60 pour cent en poids des déchets d’emballages sont recyclés avec les objectifs minimaux de recyclage suivants pour les matériaux contenus dans les déchets d’emballages : 60 pour cent en poids pour le verre, 60 pour cent en poids pour le papier et le carton, 50 pour cent en poids pour les métaux, 22,5 pour cent en poids pour les plastiques, en comptant exclusivement les matériaux qui sont recyclés sous forme de plastiques et 15 pour cent en poids pour le bois ;</li>
+								<li>au plus tard le 31 décembre 2025, au minimum 65 pour cent en poids de tous les déchets d’emballages sont recyclés ;</li>
+								<li>au plus tard le 31 décembre 2025, les objectifs minimaux de recyclage suivants doivent être atteints pour les matières spécifiques suivantes contenues dans les déchets d’emballages :<ol scl:start="1" scl:symbol="a)">
+										<li>50 pour cent en poids pour le plastique ;</li>
+										<li>25 pour cent en poids pour le bois ;</li>
+										<li>70 pour cent en poids pour les métaux ferreux ;</li>
+										<li>50 pour cent en poids pour l’aluminium ;</li>
+										<li>70 pour cent en poids pour le verre ;</li>
+										<li>75 pour cent en poids pour le papier et le carton.</li>
+									</ol>
+								</li>
+								<li>au plus tard le 31 décembre 2030, au minimum 70 pour cent en poids de tous les déchets d’emballages ont recyclés ;</li>
+								<li>au plus tard le 31 décembre 2030, les objectifs minimaux de recyclage suivants doivent être atteints pour les matières spécifiques contenues dans les déchets d’emballages :<ol scl:start="1" scl:symbol="a)">
+										<li>55 pour cent en poids pour le plastique ;</li>
+										<li>30 pour cent en poids pour le bois ;</li>
+										<li>80 pour cent en poids pour les métaux ferreux ;</li>
+										<li>60 pour cent en poids pour l’aluminium ;</li>
+										<li>75 pour cent en poids pour le verre ;</li>
+										<li>85 pour cent en poids pour le papier et le carton.</li>
+									</ol>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_43">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Sans préjudice de l’article 14, l’administration de l’environnement veille à ce que ces obligations et objectifs fassent l’objet d’une campagne d’information destinée au grand public et aux acteurs économiques.<mod class="mod-end" for="#pm6"/>
+								<noteRef href="#M6" marker="6"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_6bis">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_6bis_regles_applicables_au_calcul_visant_a_evaluer_l_atteinte_des</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_6bis_regles_applicables_au_calcul_visant_a_evaluer_l_atteinte_des/20170331</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 6bis. Règles applicables au calcul visant à évaluer l'atteinte des </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<u>
+						<mod class="mod-start" for="#pm7"/>Art. 6<i>bis</i>.</u></num><heading><b>Règles applicables au calcul visant à évaluer l'atteinte des objectifs</b>
+				</heading>
+				<paragraph id="paragraph_44">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Aux fins du calcul visant à déterminer si les objectifs fixés à l’article 6, paragraphe 1<sup>er</sup>, points 3 à 6, ont été atteints :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>le poids des déchets d’emballages produits et recyclés est calculé au cours d’une année civile donnée. La quantité de déchets d’emballages produits peut être considérée comme égale à la quantité d’emballages mis sur le marché au cours de la même année ;</li>
+								<li>le poids des déchets d’emballages recyclés est calculé comme étant le poids des emballages devenus déchets qui, après avoir été soumis à toutes les opérations nécessaires de contrôle, de tri et autres opérations préliminaires nécessaires pour retirer les déchets qui ne sont pas visés par les procédés de retraitement ultérieurs et assurer un recyclage de qualité élevée, entrent dans l’opération de recyclage au cours de laquelle les déchets sont effectivement retraités en produits, matières ou substances.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_45">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Aux fins du paragraphe 1<sup>er</sup>, point 1, le poids des déchets d’emballages recyclés est mesuré lorsque les déchets entrent dans l’opération de recyclage.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Par dérogation à l’alinéa 1<sup>er</sup>, le poids des déchets d’emballages recyclés peut être mesuré à la sortie de toute opération de tri, à condition que :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>ces déchets, après être sortis de l’opération de tri, soient ensuite recyclés ;</li>
+								<li>le poids des matières ou des substances qui sont retirées par d’autres opérations précédant celle de recyclage et qui ne sont pas ensuite recyclées ne soit pas compris dans le poids des déchets déclarés comme ayant été recyclés.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_46">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Pour garantir que les règles de calcul sont respectées et que toutes les informations sont bien transmises à l’administration de l’environnement, un registre électronique est mis en place conformément à l’article 34 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="58246a32-11a4-4684-a4da-f2681b420626" scl:verify="true">loi du 21 mars 2012</ref>.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_47">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>La quantité de déchets d’emballages ayant cessé d’être des déchets à l’issue d’une opération de préparation avant d’être retraités peut être considérée comme recyclée pour autant que ces déchets soient destinés à être ensuite retraités en produits, matières ou substances aux fins de la fonction initiale ou à d’autres fins. Toutefois, les déchets cessant d’être des déchets qui sont destinés à être utilisés comme combustible ou autre moyen de produire de l’énergie, ou à être incinérés, remblayés ou mis en décharge, ne sont pas pris en compte pour l’atteinte des objectifs de recyclage.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_48">
+					<num>(5)</num>
+					<alinea>
+						<content>
+							<p>Aux fins du calcul visant à déterminer si les objectifs fixés à l’article 6, paragraphe 1<sup>er</sup>, points 3) à 6), ont été atteints, l'administration de l’environnement peut prendre en compte le recyclage des métaux séparés après l’incinération des déchets, en proportion de la quantité de déchets d’emballages incinérés et pour autant que les métaux recyclés répondent à certains critères de qualité énoncés dans l’acte d’exécution adopté en vertu de l’article 11<i>bis</i>, paragraphe 9, de la <ref href="/eli/dir_ue/2008/98/jo" id="03280a5d-4a87-463b-8563-a10ccb1aaf6b" scl:verify="true">directive 2008/98/CE</ref> du Parlement européen et du Conseil du 19 novembre 2008 relative aux déchets et abrogeant certaines directives.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_49">
+					<num>(6)</num>
+					<alinea>
+						<content>
+							<p>Les déchets d’emballages expédiés dans un autre État membre de l’Union européenne à des fins de recyclage dans cet État membre sont pris en compte pour la réalisation des objectifs fixés à l’article 6, paragraphe 1<sup>er</sup>, points 3 à 6, au Luxembourg.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_50">
+					<num>(7)</num>
+					<alinea>
+						<content>
+							<p>Les déchets d’emballages exportés au départ de l’Union européenne ne sont pas pris en compte dans le calcul visant à évaluer l’atteinte des objectifs fixés à l’article 6, paragraphe 1<sup>er</sup>, sauf si les conditions du paragraphe 3 sont remplies et si, conformément au <ref href="/eli/reg_ue/2006/1013/jo" id="1507f78c-c500-4147-b2ca-797f53682aa2">règlement (CE) n° 1013/2006</ref> du Parlement européen et du Conseil du 14 juin 2006 concernant les transferts de déchets, l’exportateur est en mesure de prouver que le transfert des déchets est conforme aux exigences dudit règlement et que le traitement des déchets d’emballages en dehors de l’Union européenne s’est déroulé dans des conditions qui sont pour l’essentiel équivalentes aux exigences applicables en vertu de la législation en matière d'environnement.<mod class="mod-end" for="#pm7"/>
+								<noteRef href="#M7" marker="7"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_7">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_7_systemes_de_reprise_de_collecte_et_de_valorisation</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_7_systemes_de_reprise_de_collecte_et_de_valorisation/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 7. Systèmes de reprise, de collecte et de valorisation </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<u>
+						<mod class="mod-start" for="#pm8"/>Art. 7.</u></num><heading>
+					<b>Systèmes de reprise, de collecte et de valorisation</b>
+				</heading>
+				<paragraph id="paragraph_51">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Afin d’atteindre les objectifs visés à l’article 1<sup>er</sup> et conformément au paragraphe 2, les responsables d’emballages sont tenus d’assurer tout en se conformant aux prescriptions d’hygiène :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>la reprise ou la collecte des emballages utilisés ou des déchets d’emballages provenant du consommateur, de tout autre utilisateur final ou du flux de déchets, en vue de les diriger vers les solutions de gestion des déchets les plus appropriées ;</li>
+								<li>le réemploi, la préparation en vue de la réutilisation ou la valorisation, y compris le recyclage, des emballages ou des déchets d’emballages collectés.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ces systèmes sont ouverts à la participation des acteurs économiques des secteurs concernés et à la participation des autorités publiques compétentes. Ils s’appliquent également aux produits importés, de manière non discriminatoire, y compris en ce qui concerne les modalités prévues et les tarifs éventuellement imposés pour l’accès aux systèmes, et sont conçus de manière à éviter des entraves aux échanges ou des distorsions de concurrence.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_52">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>En vue de réduire au minimum l’élimination des déchets d’emballages sous forme de déchets municipaux et d’atteindre un niveau élevé de collecte séparée des déchets d’emballages, les dispositions ci-dessous s’appliquent :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>pour les déchets d’emballages ménagers :<p>Sans préjudice des obligations des communes ou syndicats de communes chargés de la gestion des déchets municipaux ménagers au titre de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="970ec841-a8c6-4553-8c5c-af7ab5c294a0" scl:verify="true">loi du 21 mars 2012</ref>, les communes ou syndicats de communes doivent assurer la disponibilité des systèmes de collecte séparée. Les communes ou syndicats de communes doivent assurer, le cas échéant en collaboration avec les organismes agréés, la disponibilité et l’accessibilité d’infrastructures publiques de collecte séparée des déchets d’emballages ménagers permettant aux détenteurs finals d’au moins rapporter gratuitement ces déchets d’emballages.</p>
+									<p>Les organismes agréés sont autorisés à organiser et à exploiter des systèmes de reprise de déchets d’emballages ménagers, alternatifs ou complémentaires à condition que ces systèmes soient conformes aux objectifs de la présente loi, garantissant la même couverture territoriale que les systèmes mis en place par les communes ou syndicats de communes et assurent au moins la reprise gratuite des déchets d’emballages ménagers.</p>
+									<p>Les utilisateurs d’emballages ménagers sont tenus de se servir des systèmes de reprise de collecte séparée de déchets d’emballages ménagers qui leurs sont mis à disposition par les communes ou syndicats de communes ou par les organismes agréés.</p>
+								</li>
+								<li>pour les déchets d’emballages non ménagers :<p>Les responsables d’emballages non ménagers assurent la collecte et la valorisation de ces déchets dans le cadre d’un régime de responsabilité élargie des producteurs tel que mentionné à l’article 8 de la présente loi.</p>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_53">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Les établissements ou entreprises visés à l’article 30, paragraphe 1<sup>er</sup> de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="dc6b3075-d77f-496a-9329-817f5b3dd58e" scl:verify="true">loi du 21 mars 2012</ref> ne peuvent collecter ou transporter des déchets d’emballages constituant des déchets ménagers que dans la mesure où ils sont mandatés à cet effet par les organismes agréés.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_54">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>Les emballages de boissons servant à la consommation humaine et qui sont mis sur le marché luxembourgeois sont soumis à un système de consigne national unique. Le montant de la consigne varie en fonction de la nature de l’emballage entre 10 centimes et 1 euro. La date et les modalités de mise en œuvre du système de consigne sont définies par voie de règlement grand-ducal.<mod class="mod-end" for="#pm8"/>
+								<noteRef href="#M8" marker="8"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_8">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_8_responsables_d_emballages_et_organismes_agrees</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_8_responsables_d_emballages_et_organismes_agrees/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 8. Responsables d’emballages et organismes agréés </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<u>
+						<mod class="mod-start" for="#pm9"/>Art. 8.</u></num><heading>
+					<b>Responsables d’emballages et organismes agréés</b>
+				</heading>
+				<paragraph id="paragraph_55">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Afin de répondre aux obligations lui incombant dans le cadre de la présente loi ainsi qu’à celles découlant de la loi relative à la réduction des incidences de certains produits en plastique sur l’environnement, le responsable d’emballages est soumis au régime de responsabilité élargie des producteurs dont il est question à l’article 19 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="287ba41d-0c4d-4f83-955e-5e3e07ce29ee" scl:verify="true">loi du 21 mars 2012</ref>. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour les emballages ménagers réemployables pour lesquels il existe un système de reprise, il peut charger contractuellement un organisme agréé de l’exécution en tout ou en partie de cette obligation. Pour les autres emballages ménagers, il doit charger contractuellement un organisme agréé de l’exécution de cette obligation. Pour les emballages non ménagers, il doit charger contractuellement un organisme agréé de l’exécution en tout ou en partie de ces obligations.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_56">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Pour les déchets d’emballages qui sont couverts par la gestion centralisée, les organismes agréés assurent, chacun en ce qui le concerne, le financement de la gestion des déchets, y compris les opérations de préparation à la réutilisation, à partir du point de collecte par apport volontaire.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour les déchets d’emballages qui ne tombent pas sous la gestion centralisée, les modalités de l’intervention financière des organismes agréés dans la collecte séparée de ces déchets est déterminée d’un commun accord entre ces organismes et les communes concernées.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L’intégralité des coûts de gestion des déchets, y compris les opérations de préparation à la réutilisation, doivent être couverts par les contributions des responsables d’emballages.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_57">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>En outre, l’organisme agréé est tenu :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>de calculer les cotisations de ses contractants en vue de financer le coût afférent des collectes existantes et à créer, du tri des déchets d’emballages collectés, des opérations de préparation à la réutilisation, du traitement des déchets d’emballages, ainsi que les coûts d’information aux détenteurs de déchets et de transmission et collecte des informations. Les coûts pris en compte ne peuvent pas excéder les coûts nécessaires à un service économiquement efficace.</li>
+								<li>de conclure un contrat avec les communes ou syndicats de communes chargés de la gestion des déchets municipaux ménagers, lequel définit les conditions et modalités techniques de collecte des déchets d’emballages concernés et de prise en charge des déchets d’emballages.<p>En aucun cas, le contrat ne saurait porter préjudice aux compétences des communes ou syndicats de communes chargés de la gestion des déchets municipaux ménagers en la matière.</p>
+								</li>
+								<li>de communiquer au ministre, annuellement et dans le cadre du rapport visé à l’article 35, paragraphe 2 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="217fd095-a0b7-499a-9c5b-1ddcf2ad08c8" scl:verify="true">loi du 21 mars 2012</ref>, les contrats conclus avec les communes ou syndicats de communes chargés de la gestion des déchets municipaux ménagers.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_58">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>La gestion des déchets d’emballages doit se faire dans le respect de la hiérarchie des déchets visée à l’article 9 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="7bf11836-4534-4252-96ac-b65fcc3ad86a" scl:verify="true">loi du 21 mars 2012</ref>.<mod class="mod-end" for="#pm9"/>
+								<noteRef href="#M9" marker="9"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_9">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_9_exigences_essentielles</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_9_exigences_essentielles/20170331</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 9. Exigences essentielles </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2017-03-31</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 9.</num><heading><b>Exigences essentielles</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Un emballage ne peut être mis sur le marché luxembourgeois que s’il répond à toutes les exigences essentielles visées à l’annexe I.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_10">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_10_systeme_d_identification</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_10_systeme_d_identification/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 10. Système d’identification </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<u>
+						<mod class="mod-start" for="#pm10"/>Art. 10.</u></num><heading><b>Système d’identification</b></heading>
+				<paragraph id="paragraph_13">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>En vue de faciliter la collecte, le réemploi, la préparation à la réutilisation et la valorisation, y compris le recyclage, les emballages indiquent la nature des matériaux d’emballage utilisés afin d’en permettre l’identification et la classification par le secteur concerné sur base de la <ref href="http://data.europa.eu/eli/dec/1997/129/oj" id="fcfa8dbd-d650-494a-8044-5e4ce1e0b8bd">décision 97/129/CE</ref> de la Commission du 28 janvier 1997 établissant le système d’identification des matériaux d’emballage, conformément à la <ref href="/eli/dir_ue/1994/62/jo" id="e80b04f9-f96b-4307-b76b-543742151749" scl:verify="true">directive 94/62/CE</ref> du Parlement européen et du Conseil relative aux emballages et aux déchets d’emballages.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_14">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Le marquage approprié est apposé soit sur l’emballage lui-même, soit sur l’étiquette. Il doit être clairement visible et facilement lisible. Le marquage doit avoir une durée de vie appropriée, y compris lorsque l’emballage est ouvert.<mod class="mod-end" for="#pm10"/>
+								<noteRef href="#M10" marker="10"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_11">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_11_niveaux_de_concentration_de_metaux_lourds_presents_dans_les_emballages</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_11_niveaux_de_concentration_de_metaux_lourds_presents_dans_les_emballages/20170331</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 11. Niveaux de concentration de métaux lourds présents dans les emballages </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2017-03-31</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 11.</num><heading><b>Niveaux de concentration de métaux lourds présents dans les emballages</b>
+				</heading>
+				<paragraph id="paragraph_15">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>La somme des niveaux de concentration en plomb, cadmium, mercure et chrome hexavalent présents dans l’emballage ou dans ses éléments ne doit pas dépasser 100 ppm en poids.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_16">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Les niveaux de concentration visés au paragraphe 1<sup>er</sup> ne s’appliquent pas aux emballages composés entièrement de verre cristal.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_12">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_12_systemes_d_information</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_12_systemes_d_information/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 12. Systèmes d'information </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 12.</num><heading><b>Systèmes d'information</b>
+				</heading>
+				<paragraph id="paragraph_17">
+					<num>
+						<mod class="mod-start" for="#pm11"/>(1)</num>
+					<alinea>
+						<content>
+							<p>Les banques de données visées à l’annexe III de la <ref href="/eli/dir_ue/1994/62/jo" id="98fea2e6-9bab-4b21-aab6-3c4c75ff49c1" scl:verify="true">directive 94/62/CE</ref> du Parlement européen et du Conseil du 20 décembre 1994 relative aux emballages et aux déchets d’emballages telle que modifiée sont gérées par l’administration de l’environnement. Elles comprennent les données basées sur cette annexe et fournissent des informations sur l’ampleur, les caractéristiques et l’évolution des flux d’emballages et de déchets d’emballages, y compris les informations relatives au caractère toxique ou dangereux des matériaux d’emballage et des éléments utilisés pour leur fabrication.<mod class="mod-end" for="#pm11"/>
+								<noteRef href="#M11" marker="11"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_18">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Les acteurs économiques concernés doivent fournir à l'Administration de l'environnement les données fiables concernant leur secteur qui sont requises en vertu du présent article. L'Administration de l'environnement tient compte des problèmes particuliers auxquels doivent faire face les petites et moyennes entreprises pour fournir des données détaillées.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_13_20220614" style="del">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_13_commission_de_suivi_pluripartite</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_13_commission_de_suivi_pluripartite/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 13. Commission de suivi pluripartite </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm12"/>
+					<del>Art. 13.</del></num><heading><del><b>Commission de suivi pluripartite</b>
+					</del>
+				</heading>
+				<alinea>
+					<content>
+						<p>
+							<del>La Commission de suivi pluripartite instituée en application de l’article 19, paragraphe 9, de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo">loi du 21 mars 2012</ref> assume le rôle de Commission de suivi pluripartite pour les besoins de la présente loi.<mod class="mod-end" for="#pm12"/>
+							</del>
+							<noteRef href="#M12" marker="12"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_14">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_14_informations_pour_les_utilisateurs_d_emballages</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_14_informations_pour_les_utilisateurs_d_emballages/20170331</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 14. Informations pour les utilisateurs d’emballages </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2017-03-31</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 14.</num><heading><b>Informations pour les utilisateurs d’emballages</b>
+				</heading>
+				<paragraph id="paragraph_19">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les responsables d’emballages ou les organismes agréés doivent, chacun en ce qui le concerne, informer les utilisateurs d’emballages, y compris les consommateurs, sur :</p>
+							<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1)">
+								<li>les possibilités de prévention des déchets d’emballages;</li>
+								<li>les systèmes de retour, de collecte et de valorisation à leur disposition et leur contribution à la réutilisation, à la valorisation et au recyclage des emballages et des déchets d’emballages;</li>
+								<li>les incidences néfastes pour l’environnement d’une consommation excessive de sacs en plastique;</li>
+								<li>les éléments appropriés des plans de gestion des emballages et des déchets d’emballages qui soit font partie du plan national de gestion des déchets soit font l’objet d’un plan spécifique en application de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo">loi du 21 mars 2012</ref>.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_20">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Les personnes qui mettent en vente des produits emballés veillent à ce que le consommateur final soit informé de manière appropriée dans les points de vente respectivement sur le caractère réutilisable ou valorisable, y compris recyclable, de l’emballage et sur le système de reprise, y compris notamment la collecte de l’emballage.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_21">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Les mesures d’information dont question aux paragraphes 1 et 2 sont complétées, le cas échéant, par des campagnes de sensibilisation menées en collaboration avec l’Administration de l’environnement.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_15">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_15_rapports</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_15_rapports/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 15. Rapports </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<u>
+						<mod class="mod-start" for="#pm13"/>Art. 15.</u></num><heading>
+					<b>Rapports</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Chaque responsable d’emballage qui a mis sur le marché des sacs en plastique légers doit déclarer auprès de l’organisme agréé auquel il a adhéré la quantité annuelle de ces sacs.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>L’organisme agréé doit rapporter ces quantités à l’administration de l’environnement dans le cadre du rapport visé à l’article 35, paragraphe 2 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo" id="1b356392-167b-4f42-9ddf-ec890c6b4815" scl:verify="true">loi du 21 mars 2012</ref>. Les sacs en plastique très légers au sens de l’article 3, point 17 en sont exclus.<mod class="mod-end" for="#pm13"/>
+							<noteRef href="#M13" marker="13"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_16">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_16_controles_a_effectuer</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_16_controles_a_effectuer/20170331</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 16. Contrôles à effectuer </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2017-03-31</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 16.</num><heading><b>Contrôles à effectuer</b> </heading>
+				<paragraph id="paragraph_22">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>La vérification du rapport annuel se fait conformément aux dispositions de l'article 35, paragraphe 2 de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo">loi du 21 mars 2012</ref>.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Aux fins de contrôle, les responsables d'emballages ou les organismes agréés sont tenus de mettre à la disposition du réviseur d'entreprises agréé toutes les pièces, comptables et autres et les éléments de calcul ayant servi de base auxdits rapports.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les honoraires du contrôle par le réviseur d'entreprises agréé sont à charge des responsables d'emballages ou du ou des organismes agréés.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_23">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Les résultats du contrôle effectué par le réviseur d'entreprise agréé doivent être transmis sans délai par le réviseur d’entreprises à l’Administration de l’environnement.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_17">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_17_recherche_et_constatation_des_infractions</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_17_recherche_et_constatation_des_infractions/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 17. Recherche et constatation des infractions </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm14"/>Art. 17.</num><heading><b>Recherche et constatation des infractions</b>
+				</heading>
+				<paragraph id="paragraph_59">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les agents de l’Administration des douanes et accises à partir du grade de brigadier principal et les fonctionnaires et employés des groupes de traitement A1, A2 et B1 de l’Administration de l’environnement peuvent être chargés de constater les infractions à la présente loi et aux règlements pris en son exécution.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Dans l’exercice de leur fonction, les agents de l’Administration des douanes et accises et les agents de l’administration de l’environnement ont la qualité d’officiers de police judiciaire. Ils constatent les infractions par des procès-verbaux faisant foi jusqu’à preuve du contraire.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_60">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Les agents visés au paragraphe 1<sup>er</sup> doivent avoir suivi une formation professionnelle spéciale portant sur la recherche et la constatation des infractions. Le programme et la durée de la formation ainsi que les modalités de contrôle des connaissances sont précisés par règlement grand-ducal.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Avant d’entrer en fonction, ils prêtent devant le Tribunal d’arrondissement de Luxembourg, siégeant en matière civile, le serment suivant :</p>
+							<p>« Je jure de remplir mes fonctions avec intégrité, exactitude et impartialité. »</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L’article 458 du <ref href="/eli/etat/leg/code/penal" id="67c3bebb-af5a-4c87-94a3-82d2878cdc3c">Code pénal</ref> est applicable. <mod class="mod-end" for="#pm14"/>
+								<noteRef href="#M14" marker="14"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_18">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_18_pouvoirs_et_prerogatives_de_controle</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_18_pouvoirs_et_prerogatives_de_controle/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 18. Pouvoirs et prérogatives de contrôle </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm15"/>
+					<u>Art. 18.</u></num><heading><b>Pouvoirs et prérogatives de contrôle</b>
+				</heading>
+				<paragraph id="paragraph_61">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les personnes visées à l’article 17 ont accès, de jour et de nuit et sans notification préalable, aux installations, locaux, terrains, aménagements et moyens de transport assujettis à la présente loi et aux règlements pris en vue de son exécution. </p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_62">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Les dispositions du paragraphe 1<sup>er</sup> ne sont pas applicables aux locaux qui servent à l’habitation.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Toutefois, et sans préjudice de l’article 33<u>,</u> paragraphe 1<sup>er</sup> du <ref href="/eli/etat/leg/code/procedure_penale" id="da6cd932-a88f-4aab-8a36-f24f4bf322e6">Code de procédure pénale</ref>, s’il existe des indices graves faisant présumer que l’origine de l’infraction se trouve dans les locaux destinés à l’habitation, il peut être procédé à la visite domiciliaire entre six heures et demie et vingt-quatre heures par un officier de police judiciaire, membre de la Police grand-ducale ou agent au sens de l’article 45, agissant en vertu d’un mandat du juge d’instruction.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_63">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Dans l’exercice des attributions prévues aux paragraphes 1<sup>er</sup> et 2, les agents concernés sont autorisés :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>à recevoir communication de tous les écritures et documents relatifs aux emballages et déchets d’emballages visés par la présente loi ;</li>
+								<li>à prélever ou à faire prélever, aux fins d’examen ou d’analyse, des échantillons des emballages et déchets d’emballages visés par la présente loi. Une partie de l’échantillon, cachetée ou scellée, est remise à l’exploitant de l’installation, du site ou du moyen de transport ou au détenteur pour le compte de celui-ci à moins que celui-ci n’y renonce expressément ou que des raisons techniques s’y opposent ;</li>
+								<li>à saisir et, au besoin, mettre sous scellés les emballages et déchets d’emballages visés par la présente loi ainsi que les écritures et documents les concernant.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_64">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>Toute personne faisant l’objet des mesures prévues au paragraphe 3 ainsi que les personnes qui les remplacent sont tenues, à la réquisition des fonctionnaires chargés de ces mesures, de faciliter les opérations auxquelles ceux-ci procèdent.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les personnes visées à l’alinéa 1<sup>er</sup> peuvent assister à ces opérations.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_65">
+					<num>(5)</num>
+					<alinea>
+						<content>
+							<p>Il est dressé procès-verbal des constatations et opérations.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_66">
+					<num>(6)</num>
+					<alinea>
+						<content>
+							<p>Les frais occasionnés par les mesures prises en vertu du présent article sont compris dans les frais de justice dont ils suivent le sort.<mod class="mod-end" for="#pm15"/>
+								<noteRef href="#M15" marker="15"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_19">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_19_sanctions_penales</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_19_sanctions_penales/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 19. Sanctions pénales </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm16"/>Art. 19.</num><heading><b>Sanctions pénales</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Sont punis d’une peine d’emprisonnement de huit jours à trois ans et d’une amende de 251 euros à 750 000 euros ou d’une de ces peines seulement, les infractions à l’article 6, paragraphe 1<sup>er</sup>, l’article 7, paragraphe 1<sup>er</sup>, alinéa 1<sup>er</sup> et paragraphe 3, l’article 9 et l’article 11, paragraphe 1<sup>er</sup>.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les mêmes peines s’appliquent en cas d’entrave aux mesures ou de non-respect des mesures administratives imposées en vertu de l’article 21.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Sont punis d’une peine d’emprisonnement de huit jours à six mois et d’une amende de 251 euros à 150 000 euros ou d’une de ces peines seulement les infractions à l’article 8, paragraphe 1<sup>er</sup>, alinéa 2, paragraphe 2 et paragraphe 4.<mod class="mod-end" for="#pm16"/>
+							<noteRef href="#M16" marker="16"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_20">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_20_amendes_administratives</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_20_amendes_administratives/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 20. Amendes administratives </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm17"/>Art. 20.</num><heading><b>Amendes administratives</b>
+				</heading>
+				<paragraph id="paragraph_34">
+					<alinea>
+						<content>
+							<p>Le ministre peut infliger une amende administrative de 250 euros à 10 000 euros en cas de violation de l’article 5, paragraphes 1<sup>er</sup> et 2, de l’article 7, paragraphe 2, point 1°, alinéa 3, de l’article 8, paragraphe 3, point 3°, de l’article 10, paragraphe 2, de l’article 12 paragraphe 2, de l’article 14, paragraphe 1<sup>er</sup>, de l’article 15 ou de l’article 16, paragraphe 2.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les amendes sont payables dans les deux mois de la notification de la décision écrite.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les amendes administratives sont perçues par l’Administration de l’enregistrement, des domaines et de la TVA. Le recouvrement se fait comme en matière de droits d’enregistrement.<mod class="mod-end" for="#pm17"/>
+								<noteRef href="#M17" marker="17"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_21">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_21_mesures_administratives</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_21_mesures_administratives/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 21. Mesures administratives </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 21.</num><heading><b>Mesures administratives</b>
+				</heading>
+				<paragraph id="paragraph_37">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>En cas de non-respect des dispositions sanctionnées à l’article 19<mod class="mod-start" for="#pm18"/>
+								<def>
+									<del>, paragraphe 1<sup>er</sup>
+									</del> <mod class="mod-end" for="#pm18"/>
+								</def>
+								<noteRef href="#M18" marker="18"/>de la présente loi, le ministre peut :</p>
+							<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1)">
+								<li>impartir au responsable d’emballages, à l’organisme agréé ou à une autre personne concernée un délai dans lequel ces derniers doivent se conformer à ces dispositions, délai qui ne peut être supérieur à deux ans;<mod class="mod-start" for="#pm19"/>
+								</li>
+								<li>faire suspendre, en tout ou en partie l’activité de responsable d’emballages ou d’organisme agréé, l’exploitation de l’installation ou faire fermer l’installation en tout ou en partie et apposer des scellés ou interdire la mise sur le marché ou imposer le retrait du marché des emballages et déchets d’emballages visés par la présente loi.<mod class="mod-end" for="#pm19"/>
+									<noteRef href="#M19" marker="19"/>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_38">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Tout intéressé peut demander l’application des mesures visées au paragraphe 1<sup>er</sup>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_39">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Les mesures énumérées au paragraphe 1<sup>er</sup> sont levées lorsque le responsable d’emballages, l’organisme agréé ou une autre personne concernée se sont conformés.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_22">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_22_voies_de_recours</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_22_voies_de_recours/20170331</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 22. Voies de recours </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2017-03-31</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 22.</num><heading><b>Voies de recours</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Contre les décisions prises en vertu de la présente loi, un recours au fond est ouvert devant le Tribunal administratif. Ce recours doit être intenté sous peine de déchéance dans un délai de quarante jours à compter de la notification de la décision. Le recours est également ouvert aux associations et organisations visées à l’article 23.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_23">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_23_droit_d_agir_en_justice_des_associations_ecologiques_agreees</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_23_droit_d_agir_en_justice_des_associations_ecologiques_agreees/20170331</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 23. Droit d’agir en justice des associations écologiques agréées </scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2017-03-31</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 23.</num><heading><b>Droit d’agir en justice des associations écologiques agréées</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Les associations et organisations agréées en application de la <ref href="/eli/etat/leg/loi/2012/03/21/n1/jo">loi du 21 mars 2012</ref> peuvent exercer les droits reconnus à la partie civile en ce qui concerne les faits constituant une infraction au sens de la présente loi et portant un préjudice direct ou indirect aux intérêts collectifs qu’elles ont pour objet de défendre, même si elles ne justifient pas d’un intérêt matériel et même si l’intérêt collectif dans lequel elles agissent se couvre entièrement avec l’intérêt social dont la défense est assurée par le ministère public. Il en est de même des associations et organisations de droit étranger dotées de la person­nalité morale qui exercent leurs activités statutaires dans le domaine de la protection de l’environnement.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_24">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_24</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330/art_24/20220614</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/03/21/a330</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-06-14</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm20"/>Art. 24.</num>
+				<alinea>
+					<content>
+						<p>Modifications de l’annexe I de la <ref href="/eli/dir_ue/1994/62/jo" id="453d0470-f131-4cf9-9452-df6d7bf8badb" scl:verify="true">directive 94/62/CE</ref> du Parlement européen et du Conseil du 20 décembre 1994 relative aux emballages et aux déchets d’emballages telle que modifiée par les actes délégués de la Commission européenne pris en conformité avec l’article 19, paragraphe 2 et l’article 21<i>bis</i>, de <ref href="/eli/dir_ue/1994/62/jo" id="1106551f-d6d4-49bc-a2ec-4efeb6b30637">cette directive</ref>.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les modifications de l’annexe I de la <ref href="/eli/dir_ue/1994/62/jo" id="719fe3c5-29b1-48f0-abd2-5c72941bedf0" scl:verify="true">directive 94/62/CE</ref> du Parlement européen et du Conseil du 20 décembre 1994 relative aux emballages et aux déchets d’emballages telle que modifiée par les actes délégués de la Commission européenne pris en conformité avec l’article 19, paragraphe 2 et l’article 21<i>bis</i> de cette directive s’appliquent avec effet au jour de la date de l’entrée en vigueur des actes afférents de la Commission européenne.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Le ministre publie un avis au Journal officiel du Grand–Duché de Luxembourg, renseignant sur les modifications ainsi intervenues, en y ajoutant une référence à l’acte publié au Journal officiel de l’Union européenne.<mod class="mod-end" for="#pm20"/>
+							<noteRef href="#M20" marker="20"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+		</body>
+		<attachments>
+			<attachment id="attachment_1">
+				<doc name="">
+					<meta>
+						<identification source="">
+							<FRBRWork>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2017-02-13" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRcountry value=""/>
+							</FRBRWork>
+							<FRBRExpression>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2017-02-13" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRlanguage language=""/>
+							</FRBRExpression>
+							<FRBRManifestation>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2017-02-13" name=""/>
+								<FRBRauthor href=""/>
+							</FRBRManifestation>
+						</identification>
+					</meta>
+					<preface>
+						<longTitle>
+							<p scl:align="center">
+								<b>ANNEXE I</b>
+							</p>
+							<p scl:align="center">
+								<b>
+									<br/>Exigences essentielles portant sur la composition et le caractère réutilisable et valorisable (notamment recyclable) des emballages</b>
+							</p>
+						</longTitle>
+					</preface>
+					<mainBody>
+						<alinea>
+							<content>
+								<p scl:align="center">
+									<b>1) Exigences portant sur la fabrication et la composition de l’emballage</b>
+								</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="a)">
+									<li>L’emballage sera fabriqué de manière à limiter son volume et son poids au minimum nécessaire pour assurer le niveau requis de sécurité, d’hygiène et d’acceptabilité aussi bien pour le produit emballé que pour le consommateur.<mod class="mod-start" for="#pm21"/>
+									</li>
+									<li>L’emballage sera conçu, fabriqué et commercialisé de manière à permettre son réemploi ou sa valorisation, y compris son recyclage, conformément à la hiérarchie des déchets, et à réduire au minimum ses incidences sur l’environnement lors de l’élimination des déchets d’emballages ou ses résidus d’opérations de gestion des déchets d’emballages.<mod class="mod-end" for="#pm21"/>
+										<noteRef href="#M21" marker="21"/>
+									</li>
+									<li>L’emballage sera fabriqué en veillant à réduire au minimum la teneur en substances et matières nuisibles et autres substances dangereuses du matériau d’emballage et de ses éléments, en ce qui concerne leur présence dans les émissions, les cendres ou le lixiviat qui résultent de l’incinération ou de la mise en décharge des emballages ou des résidus d’opérations de gestion des déchets d’emballages.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p scl:align="center">
+									<b>
+										<br/>2) Exigences portant sur le caractère réutilisable d’un emballage</b>
+								</p>
+								<p>
+									<br/>L’emballage doit répondre simultanément aux exigences suivantes :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="a)">
+									<li>ses propriétés physiques et ses caractéristiques lui permettent de supporter plusieurs trajets ou rotations dans les conditions d’utilisation normalement prévisibles,</li>
+									<li>il est possible de traiter l’emballage utilisé pour satisfaire aux exigences en matière de santé et de sécurité des travailleurs,</li>
+									<li>les exigences propres à l’emballage valorisable au moment où l’emballage cesse d’être réutilisé, devenant ainsi un déchet, sont respectées.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p scl:align="center">
+									<b>
+										<br/>3) Exigences portant sur le caractère valorisable d’un emballage</b>
+								</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="a)">
+									<li>Emballage valorisable par recyclage de matériaux<br/>L’emballage doit être fabriqué de manière à permettre qu’un certain pourcentage en poids des matériaux utilisés soit recyclé pour la production de biens commercialisables, dans le respect des normes en vigueur dans l’union européenne. La fixation de ce pourcentage peut varier en fonction du type de matériau constituant l’emballage.</li>
+									<li>Emballage valorisable par valorisation énergétique<br/>Les déchets d’emballages traités en vue de leur valorisation énergétique auront une valeur calorifique minimale inférieure permettant d’optimiser la récupération d’énergie.</li>
+									<li>Emballage valorisable par compostage<br/>Les déchets d’emballages traités en vue du compostage doivent être suffisamment biodégradables pour ne pas faire obstacle à la collecte séparée ni au processus ou à l’activité de compostage dans lequel (laquelle) ils sont introduits.<mod class="mod-start" for="#pm22"/>
+									</li>
+									<li>Emballage biodégradable<br/>Les déchets d’emballages biodégradables doivent être de nature à pouvoir subir une décomposition physique, chimique, thermique ou biologique telle que la plus grande partie du compost obtenu se décompose finalement en dioxyde de carbone, en biomasse et en eau. Les emballages plastiques oxodégradables ne sont pas considérés comme biodégradables.<mod class="mod-end" for="#pm22"/>
+										<noteRef href="#M22" marker="22"/>
+									</li>
+								</ol>
+								<p> </p>
+							</content>
+						</alinea>
+					</mainBody>
+				</doc>
+			</attachment>
+			<attachment id="attachment_2">
+				<doc name="">
+					<meta>
+						<identification source="">
+							<FRBRWork>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2017-02-15" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRcountry value=""/>
+							</FRBRWork>
+							<FRBRExpression>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2017-02-15" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRlanguage language=""/>
+							</FRBRExpression>
+							<FRBRManifestation>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2017-02-15" name=""/>
+								<FRBRauthor href=""/>
+							</FRBRManifestation>
+						</identification>
+					</meta>
+					<preface>
+						<longTitle>
+							<p scl:align="center">
+								<b>
+									<eop/>ANNEXE II</b>
+							</p>
+							<p scl:align="center">
+								<br/>
+								<b>Accord environnemental</b>
+							</p>
+						</longTitle>
+					</preface>
+					<mainBody>
+						<alinea>
+							<content>
+								<p>Les accords environnementaux prévus à la présente loi sont soumis aux règles suivantes :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1)">
+									<li>Les accords doivent préciser leurs objectifs et leur durée.</li>
+									<li>Les accords et les résultats atteints par leur application sont à la disposition du public et communiqués à la Commission européenne par le ministre.</li>
+									<li>L’application des accords fait l’objet d’un contrôle régulier de la part de l’administration.</li>
+									<li>Les accords contiennent des mesures et sanctions en cas de non-respect de leurs dispositions.</li>
+									<li>Les accords sont conclus pour une période déterminée qui ne peut excéder cinq ans. Ils ne sont pas renouvelables par tacite reconduction.</li>
+									<li>Les accords prennent fin soit à l’échéance du terme pour lequel ils ont été conclus, soit à la réalisation de leurs objectifs, soit d’un commun accord des parties.</li>
+								</ol>
+							</content>
+						</alinea>
+					</mainBody>
+				</doc>
+			</attachment>
+		</attachments>
+	</act>
+</akomaNtoso>

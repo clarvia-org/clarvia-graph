@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2014-10-08" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFI"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2014-10-08" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2014-10-08" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2015-08-02</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2014-10-08</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3450</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/204</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/681</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2014-10-18</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a192</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2014A3768B</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2014-10-14</scl:jolux>
+						<scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="draft">/eli/etat/proj/pr/20140045</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2005/11/24/n2/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2008/10/31/n3/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2013/08/27/n5/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 02/08/2015 : Règlement grand-ducal du 8 octobre 2014 concernant les modalités d'agrément et d'exercice des intermédiaires d'assurances et de réassurances ainsi que des professionnels du secteur de l'assurance.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1991/12/06/n2/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2014-192-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a192/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2014-10-08-n1-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2014-192-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a192/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2014/a192/fr/pdf/eli-etat-leg-memorial-2014-a192-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2014-10-08" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2015-08-02" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2015/07/27/n1/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2015/07/27/n1/jo"/>
+						<destination href="#chapter_3"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2015/07/27/n1/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2015/07/27/n1/jo"/>
+						<destination href="#art_17"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2014/10/08/n1/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2015/07/27/n1/jo" id="rp2" showAs="Règlement grand-ducal du 27 juillet 2015 portant modification du règlement grand-ducal du 8 octobre 2014 concernant les modalités d'agrément et d'exercice des intermédiaires d'assurances et de réassurances ainsi que des professionnels du secteur de l'assurance."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2015-07-29|2015-07-27|RGD|146">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/07/27/n1/jo">Règlement grand-ducal du 27 juillet 2015 portant modification du règlement grand-ducal du 8 octobre 2014 concernant les modalités d'agrément et d'exercice des intermédiaires d'assurances et de réassurances ainsi que des professionnels du secteur de l'assurance.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2015-07-29|2015-07-27|RGD|146">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/07/27/n1/jo">Règlement grand-ducal du 27 juillet 2015 portant modification du règlement grand-ducal du 8 octobre 2014 concernant les modalités d'agrément et d'exercice des intermédiaires d'assurances et de réassurances ainsi que des professionnels du secteur de l'assurance.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2015-07-29|2015-07-27|RGD|146">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/07/27/n1/jo">Règlement grand-ducal du 27 juillet 2015 portant modification du règlement grand-ducal du 8 octobre 2014 concernant les modalités d'agrément et d'exercice des intermédiaires d'assurances et de réassurances ainsi que des professionnels du secteur de l'assurance.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2015-07-29|2015-07-27|RGD|146">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/07/27/n1/jo">Règlement grand-ducal du 27 juillet 2015 portant modification du règlement grand-ducal du 8 octobre 2014 concernant les modalités d'agrément et d'exercice des intermédiaires d'assurances et de réassurances ainsi que des professionnels du secteur de l'assurance.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 02/08/2015 : Règlement grand-ducal du 8 octobre 2014 concernant les modalités d'agrément et d'exercice des intermédiaires d'assurances et de réassurances ainsi que des professionnels du secteur de l'assurance.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_1er">
+				<num>Chapitre 1<sup>er </sup>
+				</num>
+				<heading scl:style-format="bi">Les intermédiaires d’assurances ou de réassurances</heading>
+				<section id="chapitre_1er.section_1">
+					<num>Section 1</num><heading scl:align="left" scl:separator=" - " scl:style-format="b">Le courtage d'assurances ou de réassurances</heading>
+					<article id="art_1er">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_1er</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_1er/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 1<sup>er</sup>.</num>
+						<heading scl:style-format="b">Demande d'agrément</heading>
+						<paragraph id="paragraph_1">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>La demande d'agrément de courtier ou de société de courtage d'assurances ou de réassurances, établie à l'attention du ministre, est à envoyer au Commissariat.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_2">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>La demande d'agrément de dirigeant de société de courtage, établie à l'attention du ministre, est à envoyer au Commissariat par la société de courtage sous la responsabilité de laquelle il travaillera. </p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_21">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>La demande d'agrément de sous-courtier, établie à l'attention du ministre, est à envoyer au Commissariat en double exemplaire par la société de courtage d'assurances ou de réassurances sous la responsabilité de laquelle il travaillera.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_2">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_2</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_2/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 2.</num>
+						<heading scl:style-format="b">Contrat d'assurance couvrant la responsabilité civile professionnelle</heading>
+						<paragraph id="paragraph_3">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le contrat d'assurance couvrant la responsabilité civile professionnelle, visé à l'article 108-3 de la <ref href="/eli/etat/leg/loi/1991/12/06/n2/jo" id="624f143e-bb57-4eda-baa4-e541cbb4e9ac" scl:verify="true">loi modifiée du 6 décembre 1991</ref> sur le secteur des assurances, doit être prouvé par écrit et doit comporter une garantie minimale de la couverture, réservée à l'activité d'intermédiation d'assurances ou de réassurances, de 1.250.000 euros par sinistre et de 1.900.000 euros globalement par année. Cette garantie doit couvrir au moins tout le territoire de l'Union européenne.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_4">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Toute franchise éventuelle doit être inopposable à la personne lésée.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_3">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_3</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_3/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 3.</num>
+						<heading scl:style-format="b">Changement d'adresse</heading>
+						<paragraph id="paragraph_5">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Les courtiers d'assurances ou de réassurances sont tenus de signaler sans délai tout changement d'adresse professionnelle et privée au Commissariat.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les dirigeants de société de courtage d'assurances ou de réassurances sont tenus de signaler sans délai tout changement de siège social de la société de courtage ainsi que de leur adresse privée au Commissariat.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les sous-courtiers d'assurances sont tenus de signaler sans délai tout changement de leur adresse professionnelle et privée au Commissariat.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_6">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Toute notification par le ministre ou le Commissariat destinée à une des personnes agréées visée au paragraphe 1<sup>er</sup> est valablement faite à la dernière adresse qui a été ainsi communiquée.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_4">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_4</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_4/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 4.</num>
+						<heading scl:style-format="b">Transfert d'agrément</heading>
+						<alinea>
+							<content>
+								<p>Le transfert d'agrément pour un dirigeant de société de courtage d'assurances ou de réassurances ou un souscourtier d'assurances se fait par voie de demande de retrait d'agrément telle que visée à l'article 5 suivie d'une demande à présenter par la nouvelle société de courtage ou le nouveau courtier pour lequel le sous-courtier entend effectuer des opérations d'assurances.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_5">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_5</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_5/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 5.</num>
+						<heading scl:style-format="b">Demande de retrait d'agrément</heading>
+						<paragraph id="paragraph_7">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>La demande de retrait d'agrément de courtier d'assurances ou de réassurances, établie à l'attention du ministre, est à envoyer au Commissariat.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_8">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>La demande de retrait d'agrément de société de courtage d'assurances ou de réassurances, établie à l'attention du ministre, est à envoyer au Commissariat. Elle doit être accompagnée d'une copie de la décision d'arrêter l'activité d'intermédiation en assurances ou en réassurances émanant des organes sociaux.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_9">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>La demande de retrait d'agrément de dirigeant de société de courtage, établie à l'attention du ministre, est à envoyer au Commissariat en double exemplaire par le dirigeant de société de courtage concerné ou par la société de courtage pour compte de qui il détient son agrément.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Si la demande de retrait est présentée par le dirigeant de société de courtage, la société de courtage concernée peut présenter ses observations dans la quinzaine de la réception de la notification du Commissariat relative à cette demande.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_10">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>La demande de retrait d’agrément de sous-courtier, établie à l’attention du ministre, est à envoyer au Commissariat en double exemplaire soit par le sous-courtier concerné soit par la société de courtage ou le courtier d’assurances pour compte de qui il détient son agrément. </p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Si la demande de retrait est présentée par le sous-courtier, le dirigeant agréé de la société de courtage ou le courtier d'assurances concerné peut présenter ses observations dans la quinzaine de la réception de la notification du Commissariat relative à cette demande.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Si la demande de retrait est présentée par le dirigeant agréé de la société de courtage ou le courtier d'assurances, le sous-courtier concerné peut présenter ses observations dans la quinzaine de la réception de la notification du Commissariat relative à cette demande.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_6">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_6</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_6/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 6.</num>
+						<heading scl:style-format="b">Décès du courtier d'assurances ou de réassurances</heading>
+						<alinea>
+							<content>
+								<p>Les héritiers et légataires d’un courtier d’assurances ou de réassurances décédé pourront assumer provisoirement la gestion du portefeuille pendant une période n’excédant pas six mois, sauf prorogation accordée par le Commissariat. Ils devront, endéans un délai de six semaines à partir du jour de l’ouverture de la succession du défunt, désigner un représentant unique qui, sur sa demande, à établir à l’attention du Commissariat, reçoit une autorisation provisoire pour la période en question, pour autant qu’il soit couvert par un contrat d’assurance couvrant sa responsabilité civile professionnelle conformément à l’article 2. </p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Toute personne qui, à l'expiration de l'autorisation provisoire, continue à faire des opérations d'assurances sans l'agrément du ministre s'expose aux sanctions prévues par la <ref href="/eli/etat/leg/loi/1991/12/06/n2/jo" id="b27e30f1-65a5-4aef-ab37-81b0c5540877" scl:verify="true">loi modifiée du 6 décembre 1991</ref> sur le secteur des assurances.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_1er.section_2">
+					<num>Section 2</num><heading scl:align="left" scl:separator=" - " scl:style-format="b">Les agents et les agences d'assurances</heading>
+					<article id="art_7">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_7</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_7/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 7.</num>
+						<heading scl:style-format="b">Demande d'agrément</heading>
+						<alinea>
+							<content>
+								<p>La demande d'agrément d'agent ou d'agence d'assurances, établie à l'attention du ministre, est à envoyer au Commissariat en double exemplaire par l'entreprise d'assurances concernée.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_8">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_8</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_8/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art 8.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art 8.</num>
+						<heading scl:style-format="i">Changement d'adresse et de titre</heading>
+						<paragraph id="paragraph_11">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Les entreprises d'assurances sont tenues de signaler sans délai tout changement d'adresse professionnelle et privée d'un agent d'assurances au Commissariat.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Toute notification par le ministre ou le Commissariat destinée à un agent d'assurances est valablement faite à la dernière adresse qui a été ainsi communiquée.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_12">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Les entreprises d'assurances sont tenues de signaler sans délai tout changement de titre conféré à une agence ou à un agent d'assurances, conformément à l'article 106, paragraphe 3 de la <ref href="/eli/etat/leg/loi/1991/12/06/n2/jo" id="b8d3dec9-f218-49cc-8bf2-40a075c394a1" scl:verify="true">loi modifiée du 6 décembre 1991</ref> sur le secteur des assurances.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_9">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_9</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_9/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 9.</num>
+						<heading scl:style-format="b">Transfert d'agrément</heading>
+						<alinea>
+							<content>
+								<p>Le transfert d'agrément pour une agence ou un agent d'assurances se fait par voie de demande de retrait d'agrément telle que visée à l'article 10 suivie d'une demande à présenter par la nouvelle entreprise d'assurances pour laquelle l'agent entend effectuer des opérations d'assurances.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_10">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_10</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_10/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 10.</num>
+						<heading scl:style-format="b">Demande de retrait d'agrément</heading>
+						<paragraph id="paragraph_13">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>La demande de retrait d'agrément, établie à l'attention du ministre, est à envoyer au Commissariat en double exemplaire par l'agent concerné ou par l'entreprise d'assurances pour compte de laquelle il détient son agrément.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Si la demande de retrait est présentée par l'agent, l'entreprise d'assurances concernée peut présenter ses observations dans la quinzaine de la réception de la notification du Commissariat relative à cette demande.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Si la demande de retrait est présentée par l'entreprise d'assurances, l'agent concerné peut présenter ses observations dans la quinzaine de la réception de la notification du Commissariat relative à cette demande.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_14">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>La demande de retrait d'agrément, établie à l'attention du ministre, est à envoyer au Commissariat en double exemplaire par le représentant, personne physique, de l'agence d'assurances concernée ou par l'entreprise d'assurances pour compte de laquelle l'agence d'assurances détient son agrément.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Si la demande de retrait est présentée par l'agence, l'entreprise d'assurances concernée peut présenter ses observations dans la quinzaine de la réception de la notification du Commissariat relative à cette demande.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Si la demande de retrait est présentée par l'entreprise d'assurances, le représentant, personne physique, de l'agence d'assurances concernée peut présenter ses observations dans la quinzaine de la réception de la notification du Commissariat relative à cette demande.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_11">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_11</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_11/20141018</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 11.</num>
+						<heading scl:style-format="b">Décès de l'agent d'assurances</heading>
+						<alinea>
+							<content>
+								<p>Les héritiers et légataires d'un agent décédé pourront assumer provisoirement la gestion du portefeuille pendant une période n'excédant pas six mois, sauf prorogation accordée par le Commissariat. Ils devront, endéans un délai de six semaines à partir du jour de l'ouverture de la succession du défunt, désigner un représentant unique qui, sur sa demande à établir à l'attention du Commissariat, reçoit une autorisation provisoire pour la période en question.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Toute personne qui, à l'expiration de l'autorisation provisoire, continue à faire des opérations d'assurances sans l'agrément du ministre s'expose aux sanctions prévues par la <ref href="/eli/etat/leg/loi/1991/12/06/n2/jo" id="d54d1d2b-daa0-4dff-ad50-0f8760f33924" scl:verify="true">loi modifiée du 6 décembre 1991</ref> sur le secteur des assurances.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+			</chapter>
+			<chapter id="chapitre_2">
+				<num>Chapitre 2 </num>
+				<heading scl:style-format="bi"> Les professionnels du secteur de l'assurance et leurs dirigeants</heading>
+				<article id="art_12">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_12</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_12/20141018</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 12.</num>
+					<heading scl:style-format="b">Demande d'agrément</heading>
+					<alinea>
+						<content>
+							<p>La demande d'agrément de professionnel du secteur de l'assurance («PSA»), personne physique, ou de dirigeant de PSA, établie à l'attention du ministre, est à envoyer au Commissariat.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_13">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_13</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_13/20141018</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 13.</num>
+					<heading scl:style-format="b">Contrat d'assurance couvrant la responsabilité civile professionnelle</heading>
+					<paragraph id="paragraph_15">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le contrat d'assurance couvrant la responsabilité civile professionnelle, visé à l'article 103-5 de la <ref href="/eli/etat/leg/loi/1991/12/06/n2/jo" id="11185428-7288-4715-83ff-1d99c53f9bab" scl:verify="true">loi modifiée du 6 décembre 1991</ref> sur le secteur des assurances, doit être prouvé par écrit et doit comporter une garantie minimale de la couverture:</p>
+								<ul scl:symbol="custom">
+									<li scl:symbol="– ">de 50.000 euros par sinistre et de 500.000 euros globalement par année pour les PSA personnes physiques, et</li>
+									<li scl:symbol="– ">de 125.000 euros par sinistre et de 1.250.000 euros globalement par année pour les PSA personnes morales.</li>
+								</ul>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_16">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Toute franchise éventuelle doit être inopposable à la personne lésée.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_14">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_14</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_14/20141018</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 14.</num>
+					<heading scl:style-format="b">Changement d'adresse</heading>
+					<paragraph id="paragraph_17">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les PSA, personnes physiques, sont tenus de signaler sans délai tout changement d'adresse professionnelle et privée au Commissariat.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les dirigeants de PSA sont tenus de signaler sans délai tout changement de siège social du PSA, personne morale, au Commissariat.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_18">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Toute notification par le ministre ou le Commissariat destinée à un PSA, personne physique ou morale, ou à un dirigeant de PSA est valablement faite à la dernière adresse professionnelle qui a été ainsi communiquée.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_15">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_15</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_15/20141018</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-10-18</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 15.</num>
+					<heading scl:style-format="b">Demande de retrait d'agrément</heading>
+					<paragraph id="paragraph_19">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>La demande de retrait d'agrément de PSA, personne physique, ou de dirigeant de PSA, établie à l'attention du ministre, est à envoyer au Commissariat.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_20">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>La demande de retrait d'agrément de PSA, personne morale, établie à l'attention du ministre, est à envoyer au Commissariat. Elle doit être accompagnée d'une copie de la décision d'arrêter l'activité de PSA émanant des organes sociaux.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_3">
+				<num>
+					<mod class="mod-start" for="#pm1"/>Chapitre 3</num>
+				<heading scl:separator=" – " scl:style-format="bi">Jurys d’examen.</heading>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_16/20150802</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-08-02</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<heading scl:style-format="b">Le jury d’examen pour l’épreuve d’aptitude pour candidats dirigeants de sociétés de courtage d’assurances ou de réassurances et candidats courtiers d’assurances ou de réassurances.</heading>
+					<paragraph id="paragraph_22">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>L’épreuve d’aptitude pour candidats courtiers d’assurances ou de réassurances et pour candidats dirigeants de sociétés de courtage d’assurances ou de réassurances a lieu devant un jury composé de trois membres, dont deux fonctionnaires du Commissariat et une personne choisie en vertu de sa qualification professionnelle.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_23">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le ministre nomme les trois membres effectifs du jury. Il désigne le président parmi les membres du jury qui sont des fonctionnaires du Commissariat. Il nomme également trois membres suppléants dont deux fonctionnaires du Commissariat et une personne choisie en vertu de sa qualification professionnelle.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En cas d’empêchement du président, ses fonctions sont assumées par le représentant du Commissariat le plus élevé en rang.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_24">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le secrétariat du jury est assuré par un secrétaire et un secrétaire suppléant qui sont désignés par le ministre parmi les fonctionnaires du Commissariat. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_25">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les membres effectifs et suppléants du jury, le secrétaire et le secrétaire suppléant sont nommés pour une durée de trois ans. Les nominations sont renouvelables.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_17/20150802</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-08-02</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 17.</num>
+					<heading scl:style-format="b">Le jury d’examen pour l’épreuve d’aptitude pour candidats agents d’assurances et candidats sous-courtiers d’assurances.</heading>
+					<paragraph id="paragraph_26">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>L’épreuve d’aptitude pour candidats agents d’assurances et candidats sous-courtiers d’assurances a lieu devant un jury composé de quatre membres, dont deux fonctionnaires du Commissariat et deux personnes représentant le secteur des assurances. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_27">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le ministre nomme les quatre membres effectifs du jury. Il désigne le président parmi les membres du jury qui sont des fonctionnaires du Commissariat. Il nomme également quatre membres suppléants dont deux fonctionnaires du Commissariat et deux personnes représentant le secteur des assurances.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En cas d’empêchement du président, ses fonctions sont assumées par le représentant du Commissariat le plus élevé en rang.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_28">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le secrétariat du jury est assuré par un secrétaire et un secrétaire suppléant qui sont désignés par le ministre parmi les fonctionnaires du Commissariat. </p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_29">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les membres effectifs et suppléants du jury sont nommés pour une durée de trois ans. Les nominations sont renouvelables.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_18">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_18</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_18/20150802</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-08-02</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 18.</num>
+					<heading scl:style-format="b">Le jury d’examen pour l’épreuve d’aptitude pour candidats à certaines fonctions dirigeantes ou candidats à l’agrément de régleurs de sinistres.</heading>
+					<paragraph id="paragraph_30">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>L’épreuve d’aptitude pour:</p>
+								<ol scl:start="1" scl:symbol="a)">
+									<li>dirigeant d’entreprise d’assurances;</li>
+									<li> dirigeant d’entreprises de réassurance;</li>
+									<li> dirigeant de société de gestion d’entreprises captives d’assurances;</li>
+									<li> dirigeant de société de gestion d’entreprises d’assurances en run-off;</li>
+									<li> dirigeant de société de gestion d’entreprises de réassurance;</li>
+									<li> dirigeant de société de gestion de portefeuille d’assurance;</li>
+									<li> dirigeant de régleur de sinistre et</li>
+									<li> régleur de sinistre;</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>a lieu devant un jury composé de trois membres qui sont des fonctionnaires du Commissariat.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_31">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Le ministre nomme les trois membres effectifs du jury dont il en désigne un comme président. Il nomme également trois membres suppléants.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>En cas d’empêchement du président, ses fonctions sont assumées par le fonctionnaire du Commissariat le plus élevé en rang.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_32">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Le secrétariat du jury est assuré par un secrétaire et un secrétaire suppléant qui sont désignés par le ministre parmi les fonctionnaires du Commissariat.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_33">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les membres effectifs et suppléants du jury, le secrétaire et le secrétaire suppléant sont nommés pour une durée de trois ans. Les nominations sont renouvelables.<mod class="mod-end" for="#pm1"/>
+									<noteRef href="#M1" marker="1"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_4">
+				<num>Chapitre <mod class="mod-start" for="#pm2"/>4<mod class="mod-end" for="#pm2"/>
+					<noteRef href="#M2" marker="2"/> </num>
+				<heading scl:style-format="bi"> Dispositions finales</heading>
+				<article id="art_19">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_16/20150802</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-08-02</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. <mod class="mod-start" for="#pm3"/>19<mod class="mod-end" for="#pm3"/>
+						<noteRef href="#M3" marker="3"/>.</num>
+					<heading scl:style-format="b">Disposition abrogatoire</heading>
+					<alinea>
+						<content>
+							<p>Le <ref href="/eli/etat/leg/rgd/2005/11/24/n2">règlement grand-ducal modifié du 24 novembre 2005</ref> concernant les modalités d'agrément et d'exercice des intermédiaires d'assurances et de réassurances est abrogé.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_20">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1/art_17/20150802</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/10/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2015-08-02</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. <mod class="mod-start" for="#pm4"/>20<mod class="mod-end" for="#pm4"/>
+						<noteRef href="#M4" marker="4"/>.</num>
+					<heading scl:style-format="b">Disposition exécutoire</heading>
+					<alinea>
+						<content>
+							<p>Notre Ministre des Finances est chargé de l'exécution du présent règlement qui sera publié au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

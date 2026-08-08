@@ -1,0 +1,2956 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="1948-01-31" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MTR"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="1948-01-31" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="1948-01-31" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo</scl:jolux><scl:jolux scl:name="dateEndApplicability"/><scl:jolux scl:name="dateApplicability">2026-05-01</scl:jolux><scl:jolux scl:name="dateDocument">1948-01-31</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MTR</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/879</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/957</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3389</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3464</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/162</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">1948-02-18</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1948/a11</scl:jolux><scl:jolux scl:name="historicalLegalId">1948A02031</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">1948-02-14</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1879/01/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1808/11/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/agd/1944/05/25/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/05/2026 : Loi du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1948-11-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1948/a11/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-1948-01-31-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1948-11-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1948/a11/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1948/a11/fr/pdf/eli-etat-leg-memorial-1948-a11-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="1948-02-18" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2024-12-23" id="e17" originatingExpression="true" source="#rp17" type="amendment"/>
+<eventRef date="2024-12-23" id="e16" originatingExpression="true" source="#rp16" type="amendment"/>
+<eventRef date="2024-12-23" id="e15" originatingExpression="true" source="#rp15" type="amendment"/>
+<eventRef date="2024-12-23" id="e14" originatingExpression="true" source="#rp14" type="amendment"/>
+<eventRef date="2024-12-23" id="e13" originatingExpression="true" source="#rp13" type="amendment"/>
+<eventRef date="2024-12-23" id="e12" originatingExpression="true" source="#rp12" type="amendment"/>
+<eventRef date="2024-12-23" id="e11" originatingExpression="true" source="#rp11" type="amendment"/>
+<eventRef date="2024-12-23" id="e10" originatingExpression="true" source="#rp10" type="amendment"/>
+<eventRef date="2024-12-23" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+<eventRef date="2024-12-23" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+<eventRef date="2024-12-23" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2024-12-23" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+<eventRef date="2024-12-23" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2024-12-23" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2024-12-23" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2024-12-23" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2025-12-22" id="e19" originatingExpression="true" source="#rp19" type="amendment"/>
+<eventRef date="2025-12-26" id="e18" originatingExpression="true" source="#rp18" type="amendment"/>
+<eventRef date="2026-05-01" id="e20" originatingExpression="true" source="#rp20" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2024/12/18/a541/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/17/a585/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/17/a585/jo"/>
+<destination href="#art_24ter"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a620/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a620/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a620/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm7" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2025/12/19/a620/jo"/>
+<destination href="#art_13"/>
+</textualMod>
+<textualMod id="pm8" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a620/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm9" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a620/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm10" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a620/jo"/>
+<destination href="#art_24ter"/>
+</textualMod>
+<textualMod id="pm11" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2026/04/02/a215/jo"/>
+<destination href="#art_42bis"/>
+</textualMod>
+<textualMod id="pm12" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2026/04/02/a215/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm13" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2026/04/02/a215/jo"/>
+<destination href="#art_43"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/1948/01/31/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2024/12/18/a541/jo" id="rp2" showAs="Loi du 18 décembre 2024 portant modification de l’article 7 de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne."/>
+<passiveRef href="/eli/etat/leg/loi/2023/04/01/a202/jo" id="rp3" showAs="Loi du 1er avril 2023 portant modification de : 1° la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile 2° la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne. "/>
+<passiveRef href="/eli/etat/leg/loi/2022/11/21/a682/jo" id="rp4" showAs="Loi du 21 novembre 2022 portant modification de : 1° la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne ; 2° de la loi modifiée du 27 mars 2018 portant organisation de la sécurité civile ; 3° de la loi modifiée du 21 décembre 2007 portant création de l’Administration de la navigation aérienne. "/>
+<passiveRef href="/eli/etat/leg/loi/2021/03/29/a350/jo" id="rp5" showAs="Loi du 29 mars 2021 portant introduction d’un article 42bis dans la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne."/>
+<passiveRef href="/eli/etat/leg/loi/2019/12/20/a874/jo" id="rp6" showAs="Loi du 20 décembre 2019 portant modification de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne."/>
+<passiveRef href="/eli/etat/leg/loi/2019/12/20/a875/jo" id="rp7" showAs="Loi du 20 décembre 2019 portant modification 1) de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne ; 2) de la loi du 23 mai 2012 portant transposition de la directive 2009/12/CE du Parlement européen et du Conseil du 11 mars 2009 sur les redevances aéroportuaires et portant modification : 1) de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne ; 2) de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile."/>
+<passiveRef href="/eli/etat/leg/loi/2018/08/01/a789/jo" id="rp8" showAs="Loi du 1er août 2018 portant modification 1° du Code pénal ; 2° du Code de procédure pénale ; 3° du Nouveau Code de procédure civile ; 4° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne ; 5° de la loi modifiée du 19 février 1973 concernant la vente de substances médicamenteuses et la lutte contre la toxicomanie ; 6° de la loi modifiée du 10 août 1991 sur la profession d’avocat ; 7° de la loi modifiée du 17 mars 1992 portant 1. approbation de la Convention des Nations Unies contre le trafic illicite de stupéfiants et de substances psychotropes, faite à Vienne, le 20 décembre 1988 ; 2. modifiant et complétant la loi du 19 février 1973 concernant la vente de substances médicamenteuses et la lutte contre la toxicomanie ; 3. modifiant et complétant certaines dispositions du Code d’instruction criminelle ; 8° de la loi modifiée du 14 juin 2001 portant 1. approbation de la Convention du Conseil de l'Europe relative au blanchiment, au dépistage, à la saisie et à la confiscation des produits du crime, faite à Strasbourg, le 8 novembre 1990 ; 2. modification de certaines dispositions du code pénal ; 3. modification de la loi du 17 mars 1992 1. portant approbation de la Convention des Nations-Unies contre le trafic illicite de stupéfiants et de substances psychotropes, faite à Vienne, le 20 décembre 1988 ; 2. modifiant et complétant la loi du 19 février 1973 concernant la vente de substances médicamenteuses et la lutte contre la toxicomanie ; 3. modifiant et complétant certaines dispositions du Code d’instruction criminelle, en vue d’adapter le régime de confiscation."/>
+<passiveRef href="/eli/etat/leg/loi/2018/08/01/a755/jo" id="rp9" showAs="Loi du 1er août 2018 portant modification de 1) la loi modifiée du 21 décembre 2007 portant création de l’Administration de la navigation aérienne ; 2) la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne."/>
+<passiveRef href="/eli/etat/leg/loi/2012/12/26/n10/jo" id="rp10" showAs="Loi du 26 décembre 2012 portant approbation de la Convention du Conseil de l’Europe sur la prévention du terrorisme, signée à Varsovie, le 16 mai 2005, et modifiant – le Code pénal;  – le Code d’instruction criminelle;  – la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne;  – la loi modifiée du 11 avril 1985 portant approbation de la Convention sur la protection physique des matières nucléaires, ouverte à la signature à Vienne et à New York en date du 3 mars 1980; et – la loi modifiée du 14 avril 1992 instituant un code disciplinaire et pénal pour la marine."/>
+<passiveRef href="/eli/etat/leg/loi/2012/05/23/n1/jo" id="rp11" showAs="Loi du 23 mai 2012 portant transposition de la directive 2009/12/CE du Parlement européen et du Conseil du 11 mars 2009 sur les redevances aéroportuaires et portant modification:  1) de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne;  2) de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l'accès au marché de l'assistance en escale à l'aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l'aviation civile, et c) d'instituer une Direction de l'Aviation Civile."/>
+<passiveRef href="/eli/etat/leg/loi/2010/10/27/n1/jo" id="rp12" showAs="Loi du 27 octobre 2010 portant renforcement du cadre légal en matière de lutte contre le blanchiment et contre le financement du terrorisme; portant organisation des contrôles du transport physique de l'argent liquide entrant au, transitant par ou sortant du Grand-Duché de Luxembourg; relative à la mise en oeuvre de résolutions du Conseil de Sécurité des Nations Unies et d'actes adoptés par l'Union européenne comportant des interdictions et mesures restrictives en matière financière à l'encontre de certaines personnes, entités et groupes dans le cadre de la lutte contre le financement du terrorisme; modifiant: 1. le Code pénal; 2. le Code d'instruction criminelle; 3. la loi modifiée du 7 mars 1980 sur l'organisation judiciaire; 4. la loi modifiée du 12 novembre 2004 relative à la lutte contre le blanchiment et contre le financement du terrorisme; 5. la loi modifiée du 19 février 1973 concernant la vente de substances médicamenteuses et la lutte contre la toxicomanie; 6. la loi modifiée du 11 avril 1985 portant approbation de la Convention sur la protection physique des matières nucléaires, ouverte à la signature à Vienne et à New York en date du 3 mars 1980; 7. la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne; 8. la loi du 20 juin 2001 sur l'extradition; 9. la loi du 17 mars 2004 relative au mandat d'arrêt européen et aux procédures de remise entre Etats membres de l'Union européenne; 10. la loi du 8 août 2000 sur l'entraide judiciaire internationale en matière pénale; 11. la loi modifiée du 23 décembre 1998 portant création d'une commission de surveillance du secteur financier; 12. la loi modifiée du 5 avril 1993 relative au secteur financier; 13. la loi modifiée du 6 décembre 1991 sur le secteur des assurances; 14. la loi modifiée du 9 décembre 1976 relative à l'organisation du notariat; 15. la loi modifiée du 10 août 1991 sur la profession d'avocat; 16. la loi modifiée du 10 juin 1999 relative à l'organisation de la profession d'expert-comptable; 17. la loi du 18 décembre 2009 relative à la profession de l'audit; 18. la loi modifiée du 20 avril 1977 relative à l'exploitation des jeux de hasard et des paris relatifs aux épreuves sportives; 19. la loi modifiée du 17 mars 1992 portant approbation de la Convention des Nations Unies contre le trafic illicite de stupéfiants et de substances psychotropes, faite à Vienne, le 20 décembre 1988; 20. la loi modifiée du 14 juin 2001 portant approbation de la Convention du Conseil de l'Europe relative au blanchiment, au dépistage, à la saisie et à la confiscation des produits du crime, faite à Strasbourg, le 8 novembre 1990; 21. la loi modifiée du 20 mars 1970 portant réorganisation de l'Administration de l'enregistrement et des domaines."/>
+<passiveRef href="/eli/etat/leg/loi/2009/06/05/n7/jo" id="rp13" showAs="Loi du 5 juin 2009 ayant pour objet de modifier:  1) la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne;  2) la loi modifiée du 19 mai 1999 ayant pour objet  a) de réglementer l'accès au marché de l'assistance en escale à l'aéroport de Luxembourg,  b) de créer un cadre réglementaire dans le domaine de la sûreté de l'aviation civile, et  c) d'instituer une Direction de l'Aviation Civile;  3) la loi du 26 juillet 2002 sur la police et sur l'exploitation de l'aéroport de Luxembourg ainsi que sur la construction d'une nouvelle aérogare."/>
+<passiveRef href="/eli/etat/leg/loi/2003/08/12/n14/jo" id="rp14" showAs="Loi du 12 août 2003 portant   1) répression du terrorisme et de son financement   2) approbation de la Convention internationale pour la répression du financement du terrorisme, ouverte à la signature à New York en date du 10 janvier 2000."/>
+<passiveRef href="/eli/etat/leg/loi/1991/12/20/n1/jo" id="rp15" showAs="Loi du 20 décembre 1991 concernant le budget des recettes et des dépenses de l'Etat pour l'exercice 1992."/>
+<passiveRef href="/eli/etat/leg/loi/1978/05/19/n3/jo" id="rp16" showAs="Loi du 19 mai 1978 modifiant la loi du 31 janvier 1948 relative à la réglementation de la navigation aérienne, et concernant la fausse alerte."/>
+<passiveRef href="/eli/etat/leg/loi/1973/03/14/n4/jo" id="rp17" showAs="Loi du 14 mars 1973 modifiant l'article 39, 1er alinéa de la loi du 31 janvier 1948 relative à la réglementation de la navigation aérienne."/>
+<passiveRef href="/eli/etat/leg/loi/2025/12/19/a620/jo" id="rp18" showAs="Loi du 19 décembre 2025 portant modification : 1° de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile ; 2° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne. "/>
+<passiveRef href="/eli/etat/leg/loi/2025/12/17/a585/jo" id="rp19" showAs="Loi du 17 décembre 2025 portant modification de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne."/>
+<passiveRef href="/eli/etat/leg/loi/2026/04/02/a215/jo" id="rp20" showAs="Loi du 2 avril 2026 portant modification : 1° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne ; 2° de la loi du 31 mai 2021 relative aux licences des contrôleurs de la circulation aérienne et aux prestataires de service de navigation aérienne. "/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2024-12-19|2024-12-18|L|541">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/12/18/a541/jo">Loi du 18 décembre 2024 portant modification de l’article 7 de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp19">
+<note id="M2" marker="2" refersTo="pm2" title="A|2025-12-18|2025-12-17|L|585">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/17/a585/jo">Loi du 17 décembre 2025 portant modification de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp19">
+<note id="M3" marker="3" refersTo="pm3" title="A|2025-12-18|2025-12-17|L|585">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/17/a585/jo">Loi du 17 décembre 2025 portant modification de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp18">
+<note id="M4" marker="4" refersTo="pm4" title="A|2025-12-22|2025-12-19|L|620">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a620/jo">Loi du 19 décembre 2025 portant modification : 1° de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile ; 2° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp18">
+<note id="M5" marker="5" refersTo="pm5" title="A|2025-12-22|2025-12-19|L|620">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a620/jo">Loi du 19 décembre 2025 portant modification : 1° de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile ; 2° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp18">
+<note id="M6" marker="6" refersTo="pm6" title="A|2025-12-22|2025-12-19|L|620">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a620/jo">Loi du 19 décembre 2025 portant modification : 1° de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile ; 2° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp18">
+<note id="M7" marker="7" refersTo="pm7" title="A|2025-12-22|2025-12-19|L|620">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a620/jo">Loi du 19 décembre 2025 portant modification : 1° de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile ; 2° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp18">
+<note id="M8" marker="8" refersTo="pm8" title="A|2025-12-22|2025-12-19|L|620">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a620/jo">Loi du 19 décembre 2025 portant modification : 1° de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile ; 2° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp18">
+<note id="M9" marker="9" refersTo="pm9" title="A|2025-12-22|2025-12-19|L|620">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a620/jo">Loi du 19 décembre 2025 portant modification : 1° de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile ; 2° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp18">
+<note id="M10" marker="10" refersTo="pm10" title="A|2025-12-22|2025-12-19|L|620">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a620/jo">Loi du 19 décembre 2025 portant modification : 1° de la loi modifiée du 19 mai 1999 ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile ; 2° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp20">
+<note id="M11" marker="11" refersTo="pm11" title="A|2026-04-27|2026-04-02|L|215">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2026/04/02/a215/jo">Loi du 2 avril 2026 portant modification : 1° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne ; 2° de la loi du 31 mai 2021 relative aux licences des contrôleurs de la circulation aérienne et aux prestataires de service de navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp20">
+<note id="M12" marker="12" refersTo="pm12" title="A|2026-04-27|2026-04-02|L|215">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2026/04/02/a215/jo">Loi du 2 avril 2026 portant modification : 1° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne ; 2° de la loi du 31 mai 2021 relative aux licences des contrôleurs de la circulation aérienne et aux prestataires de service de navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp20">
+<note id="M13" marker="13" refersTo="pm13" title="A|2026-04-27|2026-04-02|L|215">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2026/04/02/a215/jo">Loi du 2 avril 2026 portant modification : 1° de la loi modifiée du 31 janvier 1948 relative à la réglementation de la navigation aérienne ; 2° de la loi du 31 mai 2021 relative aux licences des contrôleurs de la circulation aérienne et aux prestataires de service de navigation aérienne.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 01/05/2026 : Loi du 31 janvier 1948 relative à la réglementation de la navigation aérienne.</p>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_ier">
+<num> <b>
+<mod class="mod-start" for="#pm1"/>Chapitre I<sup>er</sup>.</b> </num>
+<heading scl:separator="-"> <b>Dispositions générales.</b> </heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_1er/20251226</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 1er. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-12-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 1<sup>er</sup>. </num>
+<alinea>
+<content>
+<p>Pour l’application de la présente loi, sont réputés Aéronefs, tous appareils pouvant se soutenir dans l’atmosphère grâce aux réactions de l’air.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aéronefs d’Etat, les aéronefs militaires et les autres aéronefs appartenant à l’Etat ou mis à sa disposition et affectés exclusivement à des missions d’intérêt public.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aéronefs privés, tous aéronefs à l’exclusion des aéronefs d’Etat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Exploitant d’un aéronef, toute personne qui en a la disposition et qui en fait usage pour son propre compte; au cas où le nom de l’exploitant n’est pas inscrit au registre aéronautique ou sur toute autre pièce officielle, le propriétaire est réputé être exploitant jusqu’à preuve du contraire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Commandant, toute personne investie de cette qualité par l’exploitant ou, à son défaut, le pilote.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aérodrome, soit tout centre de trafic aérien, y compris les installations nécessaires à ce trafic, soit tout terrain ou surface d’eau aménagés, même temporairement, pour l’atterrissage et l’envol des aéronefs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les termes « zone délimitée », « zone de sûreté à accès réglementé » et « parties critiques » sont à comprendre au sens défini par le <ref href="/eli/reg_ue/2008/300/jo" id="f25a1a05-6a65-49f9-8663-0dd565dfbdb0">règlement (CE) n° 300/2008</ref> du Parlement européen et du Conseil du 11 mars 2008 relatif à l’instauration de règles communes dans le domaine de la sûreté de l’aviation civile et abrogeant le <ref href="/eli/reg_ue/2002/2320/jo" id="a3643f24-67e9-432c-9c1a-f05a8f7999d7">règlement (CE) n° 2320/2002</ref>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sauf dispositions contraires et sans préjudice aux dispositions de l’article 17ter de la <ref href="/eli/etat/leg/loi/1999/05/19/n1/jo" id="bd88804f-b048-448b-b5e9-2baeabc5cc32" scl:verify="true">loi modifiée du 19 mai 1999</ref> ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile, les dispositions de la présente loi et les dispositions prises en son exécution sont applicables aux aéronefs privés ainsi qu’aux aéronefs d’État.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les règlements grand-ducaux pris en exécution de la présente loi et portant sur les aéronefs, leur exploitation, leur personnel de bord et leurs mécaniciens, ainsi que la navigation et la circulation aériennes peuvent comporter des dispositions différentes selon que celles-ci s’appliquent aux aéronefs privés ou aux aéronefs d’État.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_2/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 2. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 2. </num>
+<alinea>
+<content>
+<p>La circulation des aéronefs nationaux au-dessus du territoire du Grand-Duché est libre, sauf les restrictions, résultant de la présente loi et celles qui seront édictées par arrêté grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_3/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 3. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 3. </num>
+<alinea>
+<content>
+<p>La circulation des aéronefs étrangers au-dessus du territoire du Grand-Duché est subordonnée à l’autorisation du Ministre des Transports.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette autorisation n’est pas requise pour la circulation des aéronefs immatriculés dans les Etats avec lesquels ont été conclus des accords de réciprocité sur la matière.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’atterrissage et le survol du Grand-Duché par les aéronefs militaires et les aéronefs d’Etat étrangers sont subordonnés à l’autorisation du ministre ayant la défense dans ses attributions.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_4/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 4. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 4. </num>
+<alinea>
+<content>
+<p>Le survol de tout ou partie du territoire du Grand-Duché peut-être interdit par arrêté grand-ducal aux aéronefs tant nationaux qu’étrangers.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le commandant qui aura enfreint les prescriptions visées à l’alinéa précédent est tenu d’atterrir sur l’aérodrome douanier luxembourgeois le plus proche ou sur celui qui lui sera indiqué.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>S’il est aperçu qu’il est engagé sur une zone interdite, il doit donner le signal de détresse et atterrir aussitôt.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>S’il ne s’en est pas aperçu, il est tenu d’atterrir aussitôt qu’il y aura été invité.</p>
+</content>
+</alinea>
+</article>
+<article id="art_4bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_4bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_4bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 4bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 4<i>bis</i>. </num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sans préjudice du Traité relatif à l’établissement du bloc d’espace aérien fonctionnel « Europe Central » entre la République fédérale d’Allemagne, le Royaume de Belgique, la République française, le Grand-Duché de Luxembourg, le Royaume des Pays-Bas et la Confédération Suisse, fait à Bruxelles, le 2 décembre 2010 et de sa loi d’approbation, le ministre:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<ol scl:symbol="a)">
+<li> <p>désigne conformément à l’article 8 du <ref href="/eli/reg_ue/2004/550/jo" id="43d8d345-4968-4d21-9681-7dfcf331cbb0">règlement (CE) n° 550/2004</ref> modifié du 10 mars 2004 relatif à la fourniture de services de navigation aérienne dans le ciel unique européen, un ou plusieurs prestataires de services de circulation aérienne pour fournir les services de circulation aérienne dans l’espace aérien relevant de sa responsabilité;</p> </li>
+<li>peut désigner conformément à l’article 9 du <ref href="/eli/reg_ue/2004/550/jo" id="5b9332ae-0d4c-4c65-abfc-fda097f1a270">règlement (CE) n° 550/2004</ref> modifié du 10 mars 2004 relatif à la fourniture de services de navigation aérienne dans le ciel unique européen, un ou plusieurs prestataires de services météorologiques pour fournir sur une base exclusive, tout ou partie des données météorologiques pour la totalité ou une partie de l’espace aérien relevant de sa responsabilité;</li>
+<li>désigne conformément à l’article 4 du <ref href="https://legilux.public.lu/eli/reg_ue/2014/139/jo" id="21e60209-3e28-4da4-a45b-104bf2e8c721">règlement (UE) n° 139/2014</ref> du 12 février 2014 établissant des exigences et des procédures administratives relatives aux aérodromes conformément au <ref href="/eli/reg_ue/2008/216/jo" id="ca7945d4-9e0c-4090-bd5a-44e022da2d96">règlement (CE) n° 216/2008</ref>, un ou plusieurs exploitants d’aérodrome pour fournir tout ou partie des services liés à la maintenance et à la gestion d’un aérodrome relevant de sa responsabilité;</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les désignations font l’objet d’une publication au Journal officiel et sont communiquées aux autorités compétentes.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_5/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 5. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 5. </num>
+<alinea>
+<content>
+<p>Les arrêtés grand-ducaux qui, dans des circonstances exceptionnelles, interdiront provisoirement la circulation des aéronefs au-dessus de certaines zones du territoire ou prendront toutes autres mesures urgentes avec effet immédiat, détermineront les modes de publicité, tels la radiophonie ou l’affichage sur les aérodromes, par lesquels ils seront portés, en raison de l’urgence, à la connaissance des intéressés.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_6/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 6. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 6. </num>
+<alinea>
+<content>
+<p>Lorsqu’un itinéraire est imposé pour les aéronefs traversant, sans atterrissage prévu, le territoire du Grand-Duché, ceux-ci sont tenus de suivre l’itinéraire prescrit et s’ils en ont l’obligation, de se faire reconnaître par signaux à leur passage au-dessus des points désignés à cet effet. S’ils en reçoivent l’ordre, ils sont tenus d’atterrir sur l’aérodrome douanier le plus proche.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_7/20251226</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 7. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-12-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 7. </num>
+<paragraph id="paragraph_3">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Seront édictées par règlement grand-ducal, toutes prescriptions réglementaires intéressant la navigation aérienne, et notamment celles relatives aux aéronefs, à leur personnel de bord, <mod class="mod-start" for="#pm4"/>aux aéronefs sans équipage à bord, à leur exploitation et aux pilotes à distance,<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/> à la navigation et à la circulation aériennes, au domaine et aux services publics affectés à cette navigation et à cette circulation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Peuvent être perçues par l’organisme désigné à l’article 2 de la <ref href="/eli/etat/leg/loi/2002/07/26/n2/jo" id="01f7f0f5-3bc1-46c1-bead-834c88385b0c" scl:verify="true">loi du 26 juillet 2002</ref> sur la police et l’exploitation de l’aéroport de Luxembourg ainsi que sur la construction d’une nouvelle aérogare les redevances aéroportuaires telles que définies à l’article 2, paragraphe 3, de la <ref href="/eli/etat/leg/loi/2012/05/23/n1/jo" id="f555ab05-9848-48fa-b8ea-454c47b90966" scl:verify="true">loi du 23 mai 2012</ref> portant transposition de la <ref href="https://legilux.public.lu/eli/dir_ue/2009/12/jo" id="97fe70da-2a45-43b5-9a9a-c05002aa2bf9">directive 2009/12/CE</ref> du Parlement européen et du Conseil du 11 mars 2009 sur les redevances aéroportuaires et portant modification : 1) de la <ref href="/eli/etat/leg/loi/1948/01/31/n1/jo" id="00f61602-d30f-4599-91e4-55b43bc6baa7" scl:verify="true">loi modifiée du 31 janvier 1948</ref> relative à la réglementation de la navigation aérienne ; 2) de la <ref href="/eli/etat/leg/loi/1999/05/19/n1/jo" id="3ba572cc-224a-42c7-901c-3a42ebc98ac2" scl:verify="true">loi modifiée du 19 mai 1999</ref> ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et de c) d’instituer une Direction de l’Aviation Civile.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Peut être perçue par l’Administration de la navigation aérienne toute redevance en relation avec la prestation de services de navigation aérienne.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le montant des redevances prévues à l’alinéa 2 est fixé par règlement grand-ducal sur proposition de l’entité prestataire de ces services et après consultation du comité des usagers instauré par la <ref href="/eli/etat/leg/loi/1999/05/19/n1/jo" id="ea924daa-1509-4c73-a2dd-99c5dbf08d86" scl:verify="true">loi modifiée du 19 mai 1999</ref> ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’Aviation Civile.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Peuvent être perçus des taxes, redevances et droits concernant tous les actes d’agrément, de validation, de certification ou d’autorisation que la Direction de l’aviation civile est appelée à délivrer dans le cadre de ses missions concernant:</p>
+<ol scl:symbol="a.">
+<li>la navigabilité des aéronefs;</li>
+<li>l’émission, la validation, le renouvellement et la revalidation des licences et des qualifications du personnel de conduite d’aéronefs et des mécaniciens navigants voire des licences et des qualifications des contrôleurs de la circulation aérienne;</li>
+<li>l’émission et le renouvellement des licences des mécaniciens d’avions;</li>
+<li>les agréments des entités chargées de la formation au vol et de la formation aux qualifications de type;</li>
+<li>les agréments des ateliers d’entretien technique;</li>
+<li>l’émission, la validation et le renouvellement des licences de transporteurs aériens et des certificats de transporteurs aériens (AOC – Air operator certificate);</li>
+<li>l’autorisation de travail aérien;</li>
+<li>l’autorisation d’atterrissage et de décollage hors d’aérodrome;</li>
+<li>la manifestation aérienne;</li>
+<li>la désignation des agents habilités et des expéditeurs connus;</li>
+<li>la désignation des entreprises de transport aérien aux fins de l’exploitation des services agréés suivant les accords de services aériens;</li>
+<li>les autorisations ou les dérogations spécifiques à la réglementation relative à la navigation aérienne;</li>
+<li>l’autorisation d’exploitation d’hélistations.</li>
+<li>l’exploitation des aéronefs et les opérations aériennes.</li>
+<li>
+<mod class="mod-start" for="#pm5" style="li"/>l’exploitation des aéronefs sans équipage à bord.<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/>
+</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le montant de ces taxes, redevances et droits ainsi que leurs modalités de perception sont fixés par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le montant unitaire de la taxe, de la redevance ou du droit à percevoir ne pourra en aucun cas dépasser 50.000 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les taxes dues en vertu de ce règlement grand-ducal sont perçues par l’Agence Luxembourgeoise pour la Sécurité Aérienne (ALSA) au profit de l’Administration de l’enregistrement et des domaines.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les redevances dues en vertu de ce règlement grand-ducal sont perçues par l’ALSA.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_7bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_7bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_7bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 7bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 7<i>bis</i>. </num>
+<paragraph id="paragraph_6">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le personnel de conduite d’aéronefs ainsi que les mécaniciens navigants doivent, en vue de l’exercice de cette activité, justifier de la qualification requise et être titulaire d’une licence.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le directeur de l’aviation civile peut agréer les personnes morales ou physiques chargées de la formation au vol et de la formation aux qualifications de type. Le même agrément peut être délivré pour effectuer des travaux d’entretien technique sur des aéronefs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les organismes agréés exercent leur mission de formation sous la direction et la surveillance de la Direction de l’aviation civile.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En vue de son agrément, toute personne physique doit présenter les garanties nécessaires d’honorabilité et de qualification professionnelle.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les personnes morales l’honorabilité s’apprécie sur la base des antécédents judiciaires des personnes physiques chargées de la gestion et de la direction.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En vue de son agrément, la personne requérante doit en outre fournir la preuve de sa qualification professionnelle qui s’apprécie sur la base de la disponibilité des ressources humaines et des infrastructures et équipements requis en vue de l’exécution de la mission, sur la base de la formation et de l’expérience professionnelles du personnel effectivement chargé de dispenser la formation afférente. L’intéressé doit disposer des structures et des procédés internes nécessaires pour pouvoir exercer en permanence un contrôle approprié de l’adéquation des moyens humains et techniques en place. Un règlement grand-ducal précise les critères de la qualification professionnelle des personnes agréées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Tout changement susceptible d’affecter les conditions d’honorabilité ou de qualification professionnelle oblige la personne agréée ou, dans le cas d’une personne morale, le ou les dirigeants, d’en informer le directeur de l’aviation civile dans la semaine suivant ce changement et d’indiquer comment le respect des conditions de l’agrément est assuré à titre transitoire. Dans les deux mois qui suivent, la personne agréée est tenue de se mettre en conformité avec les exigences de son agrément et d’introduire une demande de modification de ce dernier.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de non-respect des conditions de l’agrément, le directeur de l’aviation civile peut procéder au retrait temporaire ou définitif de celui-ci.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les critères de validité des licences ainsi que les conditions relatives à la qualification et à l’octroi, à la revalidation et au renouvellement sont fixés par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il en est de même des conditions de reconnaissance des licences et autorisations délivrées par les autorités étrangères, des conditions d’aptitude médicale des candidats et des modalités de formation et d’examen prévues en vue de l’obtention, de la revalidation et du renouvellement des licences et qualifications.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le directeur de l’aviation civile délivre les licences, les qualifications associées, les validations et conversions et les autorisations du personnel navigant ainsi que les agréments prévus au paragraphe (2) du présent article. Il peut refuser leur octroi, restreindre leur emploi ou leur validité, les suspendre et les retirer, refuser leur restitution ou leur renouvellement:</p>
+<ol scl:symbol="a.">
+<li>si l’intéressé ne répond pas ou ne répond plus aux conditions légales et réglementaires requises pour les licences, qualifications associées, validations, conversions ou autorisations et agréments;</li>
+<li>si l’intéressé souffre d’infirmités ou de troubles susceptibles d’entraver ses aptitudes et capacités requises;</li>
+<li>si l’intéressé refuse de produire au directeur de l’aviation civile un certificat médical récent établi par un médecin agréé ou de faire inscrire une limitation éventuelle sur sa licence, sa qualification, sa validation, sa conversion, son autorisation ou son agrément;</li>
+<li>s’il est constaté que la licence, la qualification, la validation, la conversion, l’autorisation, l’agrément ou le certificat médical a été obtenu à l’aide de déclarations inexactes ou par l’usage de moyens frauduleux;</li>
+<li>si l’intéressé échoue à un examen de contrôle des connaissances ou aptitudes requises;</li>
+<li>s’il est constaté à charge de l’intéressé des faits d’inhabileté, de maladresse, de négligence ou de condamnations pénales suffisamment graves pour faire admettre qu’il n’offre pas ou plus les garanties nécessaires pour garantir la sécurité ou la sûreté aériennes ainsi que la sécurité des personnes et des biens;</li>
+<li>s’il existe à l’encontre de l’intéressé des indices laissant présumer qu’il constitue une menace pour la sécurité ou la sûreté aériennes;</li>
+<li>si l’intéressé a fait l’objet d’une condamnation judiciaire devenue irrévocable pour infraction à la réglementation aérienne, à la sécurité ou à la sûreté aérienne;</li>
+<li>s’il est constaté que l’intéressé présente des signes manifestes d’alcoolisme ou d’intoxication de nature à compromettre l’exercice normal de ses fonctions, la sécurité aérienne ou la sécurité des personnes et des biens.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_7ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_7ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_7ter/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 7ter. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 7<i>ter</i>. </num>
+<paragraph id="paragraph_10">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Nul ne peut exploiter un aérodrome, une hélistation ou un terrain de vol sans autorisation préalable du directeur de l’aviation civile.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Nul ne peut atterrir ou décoller en dehors d’un aérodrome, d’une hélistation ou d’un terrain de vol sauf autorisation préalable du directeur de l’aviation civile, ou sauf en cas de force majeure.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(2)</num>
+<alinea>
+<content>
+<p>En vue de son autorisation, tout exploitant ou opérateur présente les garanties nécessaires d’honorabilité.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les personnes morales l’honorabilité s’apprécie sur la base des antécédents judiciaires des personnes physiques chargées de la gestion et de la direction.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>(3)</num>
+<alinea>
+<content>
+<p>L’exploitant ou l’opérateur garantit que l’utilisation de l’aérodrome, de l’hélistation ou du terrain de vol se fait en toute sécurité. Lorsque cette sécurité ne peut plus être garantie, il prend toutes les mesures nécessaires pour limiter les risques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’exploitant ou l’opérateur dispose des structures et des procédés internes nécessaires pour pouvoir exercer en permanence un contrôle approprié de l’adéquation des moyens humains et techniques en place.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les critères d’obtention et de validité des autorisations prévues au paragraphe 1<sup>er</sup> ainsi que les exigences techniques et opérationnelles y relatives sont précisés par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les privilèges énoncés dans l’autorisation peuvent être limités par rapport aux circonstances techniques et opérationnelles spécifiques à l’aérodrome, l’hélistation ou le terrain de vol.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_14">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Toute modification susceptible d’affecter un élément substantiel de l’exploitation de l’aérodrome, de l’hélistation ou du terrain de vol est notifiée à la Direction de l’aviation civile dans les meilleurs délais, et fait l’objet d’une approbation préalable, et, le cas échéant, d’une modification de l’autorisation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de non-respect de cette obligation de notification, l’autorisation peut être limitée, suspendue ou retirée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute cessation totale des activités liées à l’aérodrome, à l’hélistation ou au terrain de vol est immédiatement notifiée à la Direction de l’aviation civile, et l’autorisation est restituée à la Direction de l’aviation civile.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le directeur de l’aviation civile délivre les autorisations prévues au présent article. Il peut refuser leur octroi, restreindre leur emploi ou leur validité, les suspendre et les retirer, refuser leur restitution ou leur renouvellement dans l’un des cas suivants :</p>
+<ol scl:symbol="1°">
+<li>si l’exploitant ou l’opérateur ne répond pas ou ne répond plus aux conditions légales et réglementaires requises ;</li>
+<li>s’il est constaté que l’autorisation a été obtenue à l’aide de déclarations inexactes ou par l’usage de moyens frauduleux ;</li>
+<li>si l’exploitant ou l’opérateur ne respecte pas les obligations légales et règlementaires découlant de son autorisation, ainsi que les privilèges énoncés dans son autorisation ;</li>
+<li>s’il est constaté à charge de l’exploitant ou de l’opérateur des faits d’inhabileté, de maladresse, de négligence ou de condamnations pénales suffisamment graves pour faire admettre qu’il n’offre pas ou plus les garanties nécessaires pour garantir la sécurité ou la sûreté aériennes ainsi que la sécurité des personnes et des biens ;</li>
+<li>s’il existe à l’encontre de l’exploitant ou de l’opérateur des indices laissant présumer que son activité constitue une menace pour la sécurité ou la sûreté aériennes ;</li>
+<li>si l’exploitant ou l’opérateur a fait l’objet d’une condamnation judiciaire devenue irrévocable pour infraction à la réglementation aérienne, à la sécurité ou à la sûreté aérienne.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_8/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 8. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 8. </num>
+<alinea>
+<content>
+<p>L’immatriculation d’un aéronef opérée conformément aux prescriptions édictées en exécution de la présente loi lui confère la nationalité luxembourgeoise.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_9/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 9. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 9. </num>
+<alinea>
+<content>
+<p>Les naissances, décès et disparitions se produisant à bord des aéronefs luxembourgeois en cours de vol sont réputés survenus sur le territoire du Grand-Duché.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les formalités relatives à la constatation officielle de ces naissances, décès et disparitions ainsi qu’à leur transmission aux autorités luxembourgeoises seront déterminées par arrêté grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_10/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 10. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 10. </num>
+<alinea>
+<content>
+<p>Toutes les dispositions légales en vigueur relatives à l’importation, à l’exportation et au transit des marchandises par terre et par eau sont applicables aux entrées, aux sorties et au transit par voie aérienne. Des prescriptions réglementaires spécialement appropriées au trafic aérien peuvent être édictées par voie d’arrêté grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les aéronefs utilisés pour un séjour temporaire sur le territoire du Grand-Duché peuvent être admis en franchise provisoire des droits moyennant les conditions à déterminer par le Ministre des Finances. Celui-ci fixe également les conditions auxquelles il est permis de réimporter, en exemption des droits, les aéronefs utilisés pour des voyages à l’étranger.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_11/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 11. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 11. </num>
+<alinea>
+<content>
+<p>Les rapports de droit qui se forment entre personnes se trouvant à bord d’un aéronef en vol sont réputés s’être formés sur le territoire du pays dont l’aéronef possède la nationalité, à moins que les intéressés ne soient convenus de l’application d’une loi déterminée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque les tribunaux luxembourgeois sont compétents, le tribunal du lieu de l’atterrissage pourra être valablement saisi.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_11bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_11bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 11bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 11<i>bis</i>. </num>
+<alinea>
+<content>
+<p>Par dérogation à la <ref href="/eli/etat/leg/loi/1984/02/24/n1/jo" id="f2dc4a79-6285-4ba7-b938-606c4e0bbacd" scl:verify="true">loi du 24 février 1984</ref> sur le régime des langues, les règles internationales en matière aéronautique à incorporer en droit national peuvent être publiées en langue anglaise.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_11ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_11ter/20251226</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11ter.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-12-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm8"/>Art. 11<i>ter</i>.</num>
+<alinea>
+<content>
+<p>Dans l’exercice de leurs missions de police judiciaire et de police administrative, les membres de la Police ayant la qualité d’officier ou d’agent de police judiciaire ou d’officier ou d’agent de police administrative ont accès direct, par un système informatique, au registre des exploitants d’aéronefs sans équipage à bord tenu par la Direction de l’aviation civile en vertu du <ref href="/eli/reg_ue/2019/947/jo" id="bf938d9d-6fcc-4d1a-b49c-ae867e6f09ce">règlement d’exécution (UE) 2019/947</ref> de la Commission du 24 mai 2019 concernant les règles et procédures applicables à l’exploitation d’aéronefs sans équipage à bord, tel que modifié. Il en est de même pour les membres du cadre civil de la Police qui assurent une mission de support dans le cadre d’une mission de police judiciaire ou de police administrative, nommément désignés par le ministre sur proposition du directeur général de la Police grand-ducale, en fonction de leurs attributions spécifiques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les données à caractère personnel du registre visé à l’alinéa 1<sup>er</sup> accessibles sont déterminées par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le système informatique par lequel l’accès direct est opéré est aménagé de sorte que :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les membres de la Police visés à l’alinéa 1<sup>er</sup> ne puissent consulter le registre auquel ils ont accès qu’en indiquant leur identifiant numérique personnel et un motif de consultation ;</li>
+<li>les informations relatives aux membres de la Police ayant procédé à la consultation ainsi que les informations consultées, la date et l’heure de la consultation soient enregistrées et conservées pendant un délai de trois ans, afin que le motif de la consultation puisse être retracé. Les données à caractère personnel consultées doivent avoir un lien direct avec les faits ayant motivé la consultation.<mod class="mod-end" for="#pm8"/>
+<noteRef href="#M8" marker="8"/>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_ii">
+<num> <b>Chapitre II.</b> </num>
+<heading scl:separator="-"> <b>Dispositions pénales.</b> </heading>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_12/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 12. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 12. </num>
+<alinea>
+<content>
+<p>Sera puni d’une amende de 25 à 500 euros:</p>
+<ol scl:symbol="1°">
+<li>Tout commandant qui aura entrepris un vol sans avoir à bord les documents prescrits par les règlements;</li>
+<li>Tout commandant qui aura contrevenu aux prescriptions réglementaires relatives à la tenue des documents de bord ou de tous autres intéressant l’aéronef;</li>
+<li>Tout exploitant d’un aéronef qui ne produira pas, sur la réquisition des autorités compétentes, les carnets de route et livrets de moteurs et d’appareils intéressant un aéronef pendant la durée prescrite pour la conservation de ces documents.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_13" style="del">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_13/20251226</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 13. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-12-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm7"/> <del>Art. 13.</del> </num>
+<alinea>
+<content>
+<p>
+<del>Sera puni des peines prévues à l’article précédent quiconque en contravention aux prescriptions réglementaires, aux ordres ou instructions régulièrement donnés par les agents compétents, aura transporté à bord d’un aéronef un appareil photographique ou cinématographique ou aura fait usage de ces appareils. Seront en outre confisqués les appareils photographiques et cinématographiques saisis.</del>
+<mod class="mod-end" for="#pm7"/>
+<noteRef href="#M7" marker="7"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_13bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_13bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_13bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 13bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 13<i>bis</i>. </num>
+<alinea>
+<content>
+<p>Sera puni d’une amende de 25 à 250 euros celui qui empêche, lors d’inspections ou de contrôles inhérents à la sûreté ou à la sécurité aériennes, les agents visés à l’article 19bis de la <ref href="/eli/etat/leg/loi/1999/05/19/n1/jo" id="62a1fb68-47d9-4706-8d69-a97ea40715a9" scl:verify="true">loi modifiée du 19 mai 1999</ref> ayant pour objet a) de réglementer l’accès au marché de l’assistance en escale à l’aéroport de Luxembourg, b) de créer un cadre réglementaire dans le domaine de la sûreté de l’aviation civile, et c) d’instituer une Direction de l’aviation civile, d’accéder dans les aérodromes ou leurs dépendances ainsi qu’à tout aéronef, ou qui refuse de présenter les documents ou les pièces exigés par les mêmes agents dans le cadre de leur mission d’inspection ou de contrôle.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_13ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_13ter/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 13ter. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 13<i>ter</i>. </num>
+<alinea>
+<content>
+<p>Sera punie d’une peine d’emprisonnement de 8 jours à un an et d’une amende de 251 à 12.500 euros ou d’une de ces peines seulement, toute personne qui brouille ou perturbe les moyens de communication réservés à l’usage aéronautique.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 14. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 14. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un mois et d’une amende de 251 à 1 250, ou d’une de ces peines seulement, quiconque aura pénétré ou circulé sur un aérodrome ou dans la zone d’un aérodrome non ouverts au public ou aura, sans autorisation, usé d’un aérodrome à des fins auxquelles il n’est pas destiné.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La peine sera d’un mois à un an et l’amende de 1 000 à 5.000 euros, si le fait a été commis à l’aide d’escalade, d’effraction ou de fausse clef, s’il a été commis pendant la nuit ou dans une intention frauduleuse ou à dessin de nuire ou à l’aide de violence ou de menaces.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 14bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 14<i>bis</i>. </num>
+<paragraph id="paragraph_16">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sera punie d’une peine d’emprisonnement de huit jours à un an et d’une amende de 251 à 12 500 euros ou d’une de ces peines seulement, toute personne transportant à bord d’un aéronef, dans une zone délimitée, dans une zone de sûreté à accès réglementé ou dans les parties critiques de l’aéroport de Luxembourg des armes à feu, des armes de spectacle, des armes incendiaires, des armes blanches et objets coupants, des armes non à feu, des appareils à effet paralysant, des instruments contondants, des substances explosives et inflammables et des liquides prohibés par le droit de l’Union européenne.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La tentative du délit prévu à l’alinéa précédent sera punie des mêmes peines.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_17">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sera punie d’une amende de 25 euros à 250 euros toute personne qui n’effectue pas les contrôles de sûreté prévus par le droit communautaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_18">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Sera punie d’une amende de 25 euros à 250 euros toute personne qui contrairement aux dispositions applicables en matière de sûreté aérienne:</p>
+<ol scl:symbol="a.">
+<li>ne soumet pas les passagers à une inspection-filtrage telle que prévue par le droit communautaire;</li>
+<li>omet de procéder ou n’effectue pas des fouilles de sûreté dans les aéronefs avant chaque décollage;</li>
+<li>n’assure pas le maintien de la stérilité de l’aéronef jusqu’à l’embarquement, pendant tout son déroulement et la préparation du départ;</li>
+<li>n’effectue pas la surveillance requise pour empêcher l’accès aux aéronefs en service ou hors service par des personnes non autorisées;</li>
+<li>ne ferme pas les portes de la cabine ou ne retire pas les passerelles téléscopiques et escaliers ventraux de l’aéronef hors service;</li>
+<li>n’appose pas de scellés ou de témoins d’intégrité sur les portes de l’aéronef hors service;</li>
+<li>n’utilise pas des scellés numérotés et contrôlés individuellement;</li>
+<li>ne vérifie pas les scellés, avant la mise en service de l’aéronef, afin de déceler d’éventuelles manipulations;</li>
+<li>n’effectue pas de fouille avant l’entrée en service de l’aéronef, au cas où les scellés sont brisés;</li>
+<li>n’assure pas la stérilité des bagages de cabine et de soute afin d’empêcher tout accès non autorisé;</li>
+<li>ne s’assure pas que les bagages soient correctement identifiés à l’extérieur pour qu’un lien puisse être établi avec les passagers concernés;</li>
+<li>ne s’assure pas que le passager auquel les bagages appartiennent soit enregistré à bord du vol sur lequel ses bagages sont transportés;</li>
+<li>ne s’assure pas qu’avant d’être embarqués, les bagages de soute soient gardés dans une zone de l’aéroport à laquelle seules des personnes autorisées aient accès;</li>
+<li>ne retire pas de l’aéronef les bagages d’un passager qui, enregistré sur un vol, ne se trouve par la suite pas à bord de l’aéronef;</li>
+<li>omet d’identifier les bagages de soute confiés comme bagages accompagnés ou bagages non accompagnés.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14ter/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 14ter. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 14<i>ter</i>. </num>
+<paragraph id="paragraph_19">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Toute personne circulant dans une zone délimitée, dans une zone de sûreté à accès réglementé ou dans les parties critiques de l’aéroport de Luxembourg qui ne dispose pas d’une autorisation d’accès valable est punie d’une amende de 25 à 250 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute personne ne disposant pas d’une autorisation d’accès valable sera reconduite en dehors des zones délimitées et des zones de sûreté à accès réglementé par les fonctionnaires de la Police grand-ducale.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute personne circulant dans les zones délimitées, dans les zones de sûreté à accès réglementé ou dans les parties critiques de l’aéroport et qui ne porte pas sa carte d’identité aéroportuaire ou son laissez-passer journalier de façon visible pendant toute la durée du séjour est punie d’une amende de 25 à 250 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute personne circulant dans une zone délimitée, dans une zone de sûreté à accès réglementé ou les parties critiques de l’aéroport autres que celles à laquelle elle a un droit d’accès avec sa carte d’identité aéroportuaire ou son laissez-passer journalier est punie d’une amende de 25 à 250 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute personne titulaire d’une carte d’identité aéroportuaire accompagnant plus que le nombre de personnes autorisées titulaires de laissez-passer journaliers dans les zones délimitées, dans les zones de sûreté à accès réglementé ou dans les parties critiques de l’aéroport est punie d’une amende de 25 à 250 euros.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_20">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Tout conducteur d’un véhicule pénétrant dans les zones délimitées ou dans les zones de sûreté à accès réglementé de l’aéroport et qui n’affiche pas, pendant toute la période du séjour, de façon visible son laissez-passer journalier, sa carte d’identité aéroportuaire ou son laissez-passer pour véhicule est puni d’une amende de 25 à 250 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Tout conducteur titulaire d’un laissez-passer pour véhicule et circulant non accompagné par une personne titulaire d’une carte d’identité aéroportuaire dans les zones délimitées ou dans les zones de sûreté à accès réglementé de l’aéroport est puni d’une amende de 25 à 250 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Tout conducteur titulaire d’une autorisation d’accès ou d’un laissez-passer pour véhicule et circulant dans une zone délimitée ou dans une zone de sûreté à accès réglementé de l’aéroport autre que celle à laquelle il a un droit d’accès avec son véhicule est puni d’une amende de 25 à 250 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute personne titulaire d’un laissez-passer journalier circulant dans des parties de l’aéroport auxquelles elle n’a pas accès à défaut d’être accompagnée par une personne titulaire d’une carte d’identité aéroportuaire est punie d’une amende de 25 à 250 euros.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_21">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Toute personne qui circule avec un véhicule dans les zones délimitées, dans les zones de sûreté à accès réglementé ou dans les parties critiques de l’aéroport de Luxembourg, sans respecter les règles de circulation applicables dans l’enceinte aéroportuaire et affichées visiblement aux accès est punie d’une amende de 25 à 250 euros.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14quater">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14quater</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14quater/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 14quater. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 14<i>quater</i>. </num>
+<alinea>
+<content>
+<p>Sera punie d’une amende de 300 euros à 3 000 euros toute personne qui abandonne son bagage dans l’enceinte de l’aéroport si cet abandon entraîne l’intervention de la force publique, d’un service public ou de tout autre service de surveillance ou de sauvetage. Cette amende présente le caractère d’une peine de police.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14quinquies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14quinquies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_14quinquies/20251222</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14quinquies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-12-22</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm2"/>Art. 14<i>quinquies</i>.</num>
+<alinea>
+<content>
+<p>Sera puni d’une amende de 500 euros, tout commandant qui ne transmet pas la déclaration générale requise en vertu du point 2.3.1 de l’annexe VI du <ref href="/eli/reg_ue/2016/399/jo" id="808a8d0c-e9bc-4e28-9ccb-08746c770aeb">règlement (UE) 2016/399</ref> du Parlement européen et du Conseil du 9 mars 2016 concernant un code de l’Union relatif au régime de franchissement des frontières par les personnes (code frontières Schengen), tel que modifié.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de récidive dans le délai d’un an, l’amende est portée à 1 000 euros.<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_15/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 15. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 15. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un an et d’une amende de 251 à 5.000 euros ou d’une de ces peines seulement:</p>
+<ol scl:symbol="1°">
+<li>Tout commandant qui aura atterri ou pris le départ hors d’un aérodrome sans l’autorisation préalable de l’autorité compétente;</li>
+<li>Tout commandant qui aura entrepris un vol au moyen d’un aéronef non immatriculé ou non pourvu soit d’une licence, soit d’un certificat de navigabilité ou dont la licence ou le certificat de navigabilité a cessé d’être valable;</li>
+<li>Tout commandant qui, sans avoir obtenu les autorisations nécessaires, aura affecté un aéronef, soit au transport rémunéré des personnes ou des choses, soit à un travail aérien tel que vol d’apprentissage, prise de vues, publicité ou propagande.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sera puni des mêmes peines l’exploitant qui aura sciemment permis l’envol ou l’atterrissage.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>S’il y avait un passager à bord, le maximum de la peine d’emprisonnement sera élevé à trois ans et le maximum de l’amende porté à 15.000 euros. La peine d’emprisonnement sera toujours prononcée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_15bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_15bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_15bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 15bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 15<i>bis</i>. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un an et d’une amende de 251 euros à 5 000 euros ou d’une de ces peines seulement :</p>
+<ol scl:symbol="1°">
+<li>toute personne exploitant ou opérant un aérodrome, une hélistation ou un terrain de vol sans disposer de l’autorisation requise en vertu de l’article 7ter ;</li>
+<li>tout exploitant ou opérateur ne respectant pas les limitations apportées à son autorisation en vertu de l’article 7ter, paragraphe 6.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_16/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 16. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 16. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un an et d’une amende de 251 à 5.000 euros ou d’une de ces peines seulement, toute personne qui aura frauduleusement détruit les livres ou documents de bord ou tout autre document relatif à un aéronef avant l’expiration de la durée de validité des documents ou du terme pendant lequel ils doivent être conservés.</p>
+</content>
+</alinea>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_17/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 17. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 17. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un mois et d’une amende de 251 à 5.000 euros ou d’une de ces peines seulement, tout commandant d’un aéronef en vol ne portant pas les marques distinctives qui lui sont assignées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si le fait est involontaire, la peine d’amende sera seule prononcée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de trois mois à cinq ans et d’une amende de 500 à 15.000 euros, tout commandant qui aura sciemment altéré ou caché les marques distinctives assignées à un aéronef ou qui aura fait usage d’un aéronef dont les marques distinctives ont été sciemment altérées ou cachées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sera puni des mêmes peines, l’exploitant de l’aéronef qui en aura sciemment permis l’envol.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_18/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 18. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 18. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un an et d’une amende de 251 à 5.000 euros ou d’une de ces peines seulement, quiconque aura piloté un aéronef sans être titulaire des brevets et licences de capacité requis par les lois et règlements.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’emprisonnement sera de quinze jours au moins et l’amende de 1.500 euros au moins, si, au moment du délit, un passager se trouvait à bord de l’aéronef.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sera puni des mêmes peines, quiconque aura, de quelque manière que ce soit, facilité ou favorisé le délit visé aux alinéas précédents.</p>
+</content>
+</alinea>
+</article>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_19/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 19. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 19. </num>
+<alinea>
+<content>
+<p>Sera puni d’une amende de 251 à 5.000 euros et d’un emprisonnement de huit jours à cinq ans, quiconque, sans l’autorisation de l’exploitant, se sera servi d’un aéronef ou aura tenté de s’en servir.</p>
+</content>
+</alinea>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_20/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 20. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 20. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de quinze jours à un an et d’une amende de 500 à 5.000 euros ou d’une de ces peines seulement, tout commandant qui aura pris la conduite d’un aéronef malgré le retrait de sa licence.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’emprisonnement sera de trois mois et l’amende de 5.000 euros au moins, si, au moment du délit, un passager se trouvait à bord. La peine d’emprisonnement sera toujours prononcée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_21/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 21. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 21. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à trois ans et d’une amende de 251 à 15.000 euros ou d’une de ces peines seulement, tout commandant qui aura contrevenu aux prescriptions des arrêtés pris en exécution de l’article 4 de la présente loi.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans le cas de fuite ou de refus d’atterrir, il sera condamné à un emprisonnement de six mois à cinq ans et à une amende de 5.000 à 15.000 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_22/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 22. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 22. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un an et d’une amende de 500 à 5.000 euros ou d’une de ces peines seulement, tout commandant qui contreviendra aux dispositions réglementaires relatives aux feux et signaux ainsi qu’à la circulation des aéronefs.</p>
+</content>
+</alinea>
+</article>
+<article id="art_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_23/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 23. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 23. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un an et d’une amende de 251 à 5.000 euros ou d’une de ces peines seulement, tout commandant qui aura embarqué ou débarqué des passagers ou des marchandises en contravention aux prescriptions réglementaires.</p>
+</content>
+</alinea>
+</article>
+<article id="art_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_24/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 24. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 24. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un an et d’une amende de 251 à 5.000 euros ou d’une de ces peines seulement, tout commandant qui aura survolé une agglomération ou tout autre lieu fréquenté au moment du vol, tel que plage, hippodrome ou stade, à une altitude inférieure à celle qui est prescrite par les règlements.</p>
+</content>
+</alinea>
+</article>
+<article id="art_24bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_24bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_24bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 24bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 24<i>bis</i>. </num>
+<alinea>
+<content>
+<p>Un règlement grand-ducal fixera les trajectoires utilisées pour l’approche et le décollage d’aéronefs à l’aéroport de Luxembourg.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les infractions aux dispositions concernant les trajectoires à utiliser pour l’approche et le décollage d’aéronefs à l’aéroport de Luxembourg sont punies d’une amende de 25 euros à 250 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de récidive dans le délai d’un an, le maximum de l’amende est porté à 500 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_24ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_24ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_24ter/20251226</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 24ter. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-12-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 24<i>ter</i>. </num>
+<paragraph id="paragraph_22">
+<num>(1)</num>
+<alinea>
+<content>
+<p>En cas de contraventions punies conformément aux dispositions des articles 12, 13bis, 14bis, 14ter, 14quater<mod class="mod-start" for="#pm3"/>, 14<i>quinquies</i>
+<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/> et 24bis<mod class="mod-start" for="#pm10"/>, ainsi que 32<i>bis</i>
+<mod class="mod-end" for="#pm10"/>
+<noteRef href="#M10" marker="10"/>, des avertissements taxés peuvent être décernés par les fonctionnaires de la Police grand-ducale habilités à cet effet par le directeur général de la Police grand-ducale.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_23">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’avertissement taxé est subordonné à la condition que le contrevenant consente à verser immédiatement entre les mains des fonctionnaires préqualifiés la taxe due, soit, lorsque la taxe ne peut pas être perçue sur le lieu même de l’infraction, qu’il s’acquitte dans le délai lui imparti par sommation. Dans cette deuxième hypothèse le paiement peut se faire dans le bureau de la Police grand-ducale ou par versement au compte postal ou bancaire indiqué dans la sommation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_24">
+<num>(3)</num>
+<alinea>
+<content>
+<p>L’avertissement taxé est remplacé par un procès-verbal ordinaire:</p>
+<ol scl:symbol="i.">
+<li>si le contrevenant n’a pas payé dans le délai imparti;</li>
+<li>si le contrevenant déclare ne pas vouloir ou ne pas pouvoir payer la taxe;</li>
+<li>si le contrevenant a été mineur au moment des faits.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_25">
+<num>(4)</num>
+<alinea>
+<content>
+<p>En cas de concours réel, il y a autant d’avertissements taxés qu’il y a de contraventions constatées. En cas de concours idéal, la taxe la plus élevée est seule perçue.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_26">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le montant de la taxe ainsi que les modes de paiement sont fixés par règlement grand-ducal qui détermine également les modalités d’application. Les frais de rappel éventuels font partie intégrante de la taxe.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_27">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le montant à percevoir par avertissement taxé ne peut dépasser le maximum des amendes prévues dans la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_28">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Le versement de la taxe dans un délai de 30 jours à compter de la constatation de l’infraction, augmentée le cas échéant des frais prévus au paragraphe (5) a pour conséquence d’arrêter toute poursuite. Lorsque la taxe a été réglée après ce délai, elle est remboursée en cas d’acquittement, et elle est imputée sur l’amende prononcée et sur les frais de justice éventuels en cas de condamnation. Dans ce cas, le paiement ne préjudicie pas au sort d’une action en justice.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_25/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 25. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 25. </num>
+<alinea>
+<content>
+<p>Seront punis des peines prévues à l’article précédent:</p>
+<ol scl:symbol="1°">
+<li>Tout commandant qui, sans nécessité, effectue un vol ou une manoeuvre de nature à mettre en danger les personnes embarquées à bord de l’aéronef ou les personnes et les biens à la surface du sol;</li>
+<li>Quiconque, sans autorisation, aura utilisé un aéronef pour effectuer des exercices de gymnastique ou d’équilibre.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_26">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_26</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_26/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 26. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 26. </num>
+<alinea>
+<content>
+<p>Sera puni des mêmes peines celui qui aura effectué au-dessus d’une agglomération ou de la partie d’un aérodrome ouverte au public des vols comportant des évolutions périlleuses et inutiles pour la bonne marche de l’appareil.</p>
+</content>
+</alinea>
+</article>
+<article id="art_27">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_27/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 27. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 27. </num>
+<alinea>
+<content>
+<p>Seront punies d’une amende de 500 à 15.000 euros et d’un emprisonnement de huit jours à un an ou d’une de ces peines seulement, toutes personnes qui, sans autorisation, auront organisé des spectacles ou exhibitions comportant des évolutions d’aéronefs, des exercices périlleux ou des demonstrations de descentes en parachute, ainsi que celles ayant contribué à ces spectacles exhibitions, exercices ou démonstrations.</p>
+</content>
+</alinea>
+</article>
+<article id="art_28">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_28</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_28/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 28. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 28. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à un an et d’une amende de 251 à 5.000 euros ou d’une de ces peines seulement:</p>
+<ol scl:symbol="1°">
+<li>Quiconque se sera trouvé à bord d’un aéronef sans pouvoir y justifier sa présence par un titre de transport régulier ou par l’assentiment de l’exploitant ou du commandant;</li>
+<li>Quiconque ne se sera pas conformé ou aura refusé de se conformer aux instructions données par le commandant ou par son préposé en vue de la sécurité de l’aéronef ou de celles des personnes transpottées;</li>
+<li>Quiconque pénètre dans un aéronef soit en état d’ivresse, soit sous l’influence de stupéfiant ou se met dans cet état pendant la navigation.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de récidive dans le délai de cinq ans, la peine d’emprisonnement sera toujours prononcée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_28bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_28bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_28bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 28bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 28<i>bis</i>. </num>
+<paragraph id="paragraph_29">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Toute personne qui, dans l’exercice de ses fonctions, accède et circule dans les zones délimitées, dans les zones de sûreté à accès réglementé ou dans les parties critiques de l’aéroport de Luxembourg, sous influence d’alcool ou sous influence d’une des substances visées à l’alinéa 1<sup>er</sup> du paragraphe (4), est punie d’une peine d’emprisonnement de huit jours à trois ans et d’une amende de 500 euros à 10.000 euros ou d’une de ces peines seulement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_30">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Est punie des peines prévues au paragraphe (1), toute personne y visée qui présente des signes manifestes d’influence d’alcool ou qui, même en l’absence de signes manifestes d’influence d’alcool, a consommé des boissons alcooliques en quantité telle que le taux d’alcool est d’au moins 0,5 g d’alcool par litre de sang ou de 0,25 mg d’alcool par litre d’air expiré.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par dérogation aux dispositions de l’alinéa 1<sup>er</sup> du présent paragraphe, le minimum de la peine d’emprisonnement et le maximum de la peine d’amende prévues au paragraphe (1) sont portés à respectivement 1 an et 25.000 euros pour tout membre du personnel navigant, qui, dans l’exercice de ses fonctions à l’intérieur des zones délimitées, des zones de sûreté à accès réglementé de l’aéroport ou à bord de l’aéronef, présente des signes manifestes d’influence d’alcool, ou qui, même en l’absence de signes manifestes d’influence d’alcool, a consommé des boissons alcooliques en quantité telle que le taux d’alcool est d’au moins de 0,1 g d’alcool par litre de sang ou de 0,05 mg d’alcool par litre d’air expiré.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de récidive dans un délai de 3 ans de l’infraction prévue aux deux alinéas précédents, le minimum de la peine d’emprisonnement est porté à 2 ans et le maximum de l’amende à 100.000 euros ou à une de ces peines seulement. Dans ce cas, une interdiction d’exercer l’activité professionnelle dont il s’agit peut être prononcée pour un terme n’excédant pas 5 ans.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_31">
+<num>(3)</num>
+<alinea>
+<content>
+<p>S’il existe un indice grave faisant présumer qu’une personne visée au paragraphe (1) se trouve dans un des états visés au paragraphe (2), cette personne doit se soumettre à un examen sommaire de l’haleine à effectuer par les membres de la police grand-ducale.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si cet examen est concluant, l’imprégnation alcoolique est déterminée par un examen de l’air expiré au moyen d’appareils homologués. Les critères à remplir par les appareils servant à l’examen sommaire de l’haleine et les appareils destinés à déterminer le taux d’alcool par l’analyse de l’air expiré ainsi que les conditions d’homologation et de contrôle de ces appareils sont ceux fixés par l’article 12, paragraphe 7, de la <ref href="/eli/etat/leg/loi/1955/02/14/n3/jo" id="ac764a48-b8ad-4161-9683-2d4f962241a0" scl:verify="true">loi modifiée du 14 février 1955</ref> concernant la réglementation de la circulation sur toutes les voies publiques. Le membre de la Police grand-ducale en notifie immédiatement le résultat à la personne faisant l’objet de cette vérification. Il avise la personne qu’elle peut demander, à titre de preuve contraire, à être soumise à une prise de sang. Il est tenu compte d’une élimination adéquate d’alcool par l’organisme entre le moment de l’examen de l’air expiré et celui de la prise de sang.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si la personne concernée, pour des raisons de santé, demande à être présentée à un médecin ou si la consultation d’un médecin s’avère nécessaire, l’imprégnation alcoolique peut être déterminée par une prise de sang.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si la personne concernée n’est pas apte à se soumettre à un examen sommaire de l’haleine ou à un examen de l’air expiré, elle devra se soumettre à une prise de sang, ou, dans l’impossibilité constatée par un médecin de ce faire, à un examen médical à l’effet de constater si elle présente des signes manifestes d’ivresse ou d’influence de l’alcool.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En l’absence d’un examen sommaire de l’haleine, d’un examen de l’air expiré, d’une prise de sang ou d’un examen médical, l’ivresse ou l’influence de l’alcool peut être établie par tous les autres moyens de preuve prévus en matière pénale.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Même en l’absence de tout indice grave visé au premier alinéa du présent paragraphe, toute personne visée au paragraphe (1) qui est impliquée dans un accident est astreinte à subir des vérifications destinées à établir son état alcoolique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le procureur d’Etat peut requérir les membres de la police grand-ducale de soumettre, aux dates et heures et dans les zones délimitées ou dans les zones de sûreté à accès réglementé qu’il déterminera, toute personne visée au paragraphe (1) à l’examen sommaire visé au premier alinéa du présent paragraphe, même en l’absence de tout indice grave visé au même alinéa et en l’absence d’un accident. Si cet examen est concluant, l’imprégnation alcoolique est déterminée par un examen de l’air expiré au moyen des appareils visés au point 1 du paragraphe 7 de l’article 12 de la <ref href="/eli/etat/leg/loi/1955/02/14/n3/jo" id="f180d35f-48e8-4c33-b237-464304aac84a" scl:verify="true">loi précitée du 14 février 1955</ref>. Le membre de la police grand-ducale en notifie immédiatement le résultat à la personne faisant l’objet de cette vérification. Il avise la personne qu’elle peut demander à titre de preuve contraire à être soumise à une prise de sang. Il est tenu compte d’une élimination adéquate d’alcool par l’organisme entre le moment de l’examen de l’air expiré et celui de la prise de sang.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si la personne concernée n’est pas apte à se soumettre à un examen sommaire de l’haleine ou à un examen de l’air expiré, elle devra se soumettre à une prise de sang, ou, dans l’impossibilité constatée par un médecin de ce faire, à un examen médical à l’effet de constater si elle présente des signes manifestes d’ivresse ou d’influence de l’alcool.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’examen de l’air expiré, la prise de sang et l’examen médical sont ordonnés soit par le juge d’instruction, soit par le procureur d’Etat, soit par les membres de la police grand-ducale. L’examen de l’air expiré est effectué par les membres de la police grand-ducale. L’examen médical ne peut être effectué que par un médecin autorisé à exercer la profession de médecin au Grand-Duché de Luxembourg. Un règlement grand-ducal détermine les personnes qui, en dehors de ces médecins, sont habilitées à effectuer la prise de sang, ainsi que les conditions sous lesquelles la prise de sang doit intervenir.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_32">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Sera punie des peines visées au paragraphe (1), toute personne visée au paragraphe (1), dont l’organisme comporte la présence d’une des substances énumérées ci-après: THC, amphétamine, méthamphétamine, MDMA, MDA, morphine, cocaïne ou benzoylecgonine et dont le taux sérique est égal ou supérieur à:</p>
+</content>
+</alinea>
+<alinea scl:align="center">
+<content>
+<table border="1" id="table_1">
+<tr>
+<td>
+<p> <b>Substance</b> </p>
+</td>
+<td>
+<p> <b>Taux (ng/mL)</b> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>THC</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Amphétamine</p>
+</td>
+<td>
+<p>25</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Méthamphétamine</p>
+</td>
+<td>
+<p>25</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MDMA</p>
+</td>
+<td>
+<p>25</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MDA</p>
+</td>
+<td>
+<p>25</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Morphine (libre)</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cocaïne</p>
+</td>
+<td>
+<p>25</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Benzoylecgonine</p>
+</td>
+<td>
+<p>25</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’analyse de sang consiste en une détermination quantitative dans le plasma au moyen de techniques de chromatographie liquide ou gazeuse couplées à la spectrométrie de masse avec usage de standards internes deutérés pour une ou plusieurs des substances visées ci-dessus.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>S’il existe un indice grave faisant présumer qu’une des personnes visées au paragraphe (1) se trouve sous l’influence d’une des substances prévues à l’alinéa 1<sup>er</sup> du présent paragraphe, les membres de la police grand-ducale procèdent à un test qui consiste en:</p>
+<ol scl:symbol="a)">
+<li>la constatation, au moyen d’une batterie de tests standardisés, de signes extérieurs confirmant la présomption d’influence d’une des substances visées à l’alinéa 1<sup>er</sup> du présent paragraphe, et;</li>
+<li>si les tests visés sous a) constatent plusieurs signes extérieurs, dont au moins un dans les signes corporels et un dans les tests sur la répartition de l’attention, les membres de la police grand-ducale soumettent la personne concernée à un examen de la sueur ou de la salive. Le choix de l’un des types d’examen précités est laissé à l’appréciation des membres de la police grand-ducale.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p> Les conditions de reconnaissance et d’utilisation des tests de la salive et de la sueur et les critères de la batterie de tests standardisés servant à déterminer l’état alcoolique ou la présence de stupéfiants dans l’organisme ou la consommation de substances médicamenteuses de toute personne qui, dans l’exercice de ses fonctions, accède et circule dans les zones délimitées ou dans les zones de sûreté à accès réglementé ainsi que les modalités de la prise de sang, de la prise d’urine et des examens médicaux ainsi que les procès-verbaux à remplir à l’occasion d’une prise de sang, d’une prise d’urine ou d’un examen médical sont ceux fixés à l’article 12, paragraphe 7, de la <ref href="/eli/etat/leg/loi/1955/02/14/n3/jo" id="3ed7c4d9-b2ee-4563-89c4-fa3f952d3f38" scl:verify="true">loi précitée du 14 février 1955</ref>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si les tests visés à l’alinéa précédent s’avèrent être concluants quant à la présence dans l’organisme d’au moins une des substances prévues à l’alinéa 1<sup>er</sup> du présent paragraphe, cet état sera déterminé par une prise de sang et une prise d’urine. La quantité de sang doit être de 15 ml au moins. En cas d’impossibilité de procéder à une prise d’urine, la quantité de sang sera augmentée du double. Le résultat de la prise de sang fait foi.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas d’impossibilité constatée par un médecin de procéder à une prise de sang, la personne concernée doit se soumettre à un examen médical à l’effet de constater si elle se trouve sous l’emprise d’une des substances prévues à l’alinéa 1<sup>er</sup> du présent paragraphe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute personne visée au paragraphe (1) qui est impliquée dans un accident survenu dans une zone délimitée ou dans une zone de sûreté à accès réglementé de l’aéroport de Luxembourg et qui a causé des dommages corporels est astreinte à subir les vérifications destinées à établir la présence dans l’organisme d’une des substances prévues à l’alinéa 1<sup>er</sup> du présent paragraphe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Peut également être astreinte à subir des vérifications destinées à établir la présence dans l’organisme d’une des substances prévues à l’alinéa 1<sup>er</sup> toute personne visée au paragraphe (1) qui est impliquée dans un accident survenu dans une zone délimitée ou dans une zone de sûreté à accès réglementé de l’aéroport de Luxembourg et n’ayant pas causé des dommages corporels.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le procureur d’Etat peut requérir les membres de la police grand-ducale de soumettre, aux dates et heures, et dans les zones délimitées ou dans les zones de sûreté à accès réglementé qu’il déterminera, toute personne visée aux tests visés à l’alinéa 2 du présent paragraphe, même en l’absence de tout indice grave visé au même alinéa et en l’absence d’accident.Si ces tests laissent présumer la présence dans l’organisme d’une des substances prévues à l’alinéa 1<sup>er</sup> du présent paragraphe, cet état sera déterminé par une prise de sang et une prise d’urine. En cas d’impossibilité constatée par un médecin de procéder à une prise de sang, la personne concernée devra se soumettre à un examen médical à l’effet de constater si elle se trouve sous l’emprise d’une des substances prévues à l’alinéa 1<sup>er</sup> du présent paragraphe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La prise d’urine, la prise de sang et l’examen médical sont ordonnés, soit par le juge d’instruction, soit par le procureur d’Etat, soit par les membres de la police grand-ducale.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’examen médical ne peut être effectué que par un médecin autorisé à exercer sa profession au Grand-Duché de Luxembourg. Un règlement grand-ducal détermine les personnes qui, en dehors de ces médecins, sont habilitées à effectuer la prise de sang et la prise d’urine, ainsi que les conditions sous lesquelles la prise de sang et la prise d’urine doivent intervenir.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les mêmes peines s’appliquent à toute personne visée au paragraphe (1) impliquée dans un accident et qui a consommé des substances médicamenteuses à caractère toxique, soporifique ou psychotrope, dosées de manière à rendre ou à pouvoir rendre dangereux l’accès et la circulation dans les zones délimitées ou dans les zones de sûreté à accès réglementé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_33">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Toute personne qui, dans les conditions du présent article, a refusé de se prêter soit à l’examen sommaire de l’haleine ou à l’examen de la sueur ou de la salive, soit à la batterie de tests standardisés pour la détection des substances visées à l’alinéa 1<sup>er</sup> du paragraphe (4), soit à l’examen de l’air expiré, soit à la prise de sang ou à la prise d’urine, soit à l’examen médical, est punie des peines prévues au paragraphe (1), à l’exception des membres du personnel navigant qui sont punis des peines prévues à l’alinéa 2 du paragraphe (2).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les frais de l’examen sommaire de l’haleine, de l’examen de la sueur ou de la salive, de l’examen de l’air expiré, des tests standardisés pour la détection des substances visées à l’alinéa 3 du paragraphe (4), de la prise et de l’analyse d’urine, de la prise et de l’analyse du sang et de l’examen médical, ainsi que les frais de déplacement et d’établissement de procès-verbaux sont compris dans les frais de justice dont ils suivent le sort.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_34">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Dans tous les cas où le test de l’haleine, de l’examen de la sueur ou de la salive est concluant, la personne visée se voit interdire l’accès ou elle sera obligée de quitter instantanément l’aéronef, les zones délimitées ou les zones de sûreté à accès réglementé. Il en est de même lorsque la personne visée refuse de se soumettre aux tests prévisés.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_29">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_29</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_29/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 29. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 29. </num>
+<alinea>
+<content>
+<p>Sera puni d’une amende de 500 à 5.000 euros, quiconque aura, d’un aéronef en vol, projeté ou laissé tomber un objet susceptible de causer un dommage à autrui.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sera puni de la réclusion de cinq à dix ans, quiconque aura, illicitement et intentionnellement :</p>
+<ol scl:symbol="1°">
+<li>libéré ou déchargé à partir d’un aéronef en service une arme biologique, chimique ou nucléaire, des matières explosives ou radioactives, ou des substances semblables, d’une manière qui provoque ou est susceptible de provoquer la mort, ou de causer des dommages corporels graves ou des dégâts graves à des biens ou à l’environnement ;</li>
+<li>utilisé contre un aéronef ou à bord d’un aéronef en service une arme biologique, chimique ou nucléaire, ou des matières explosives ou radioactives, ou des substances semblables, d’une manière qui provoque ou est susceptible de provoquer la mort, ou de causer des dommages corporels graves ou des dégâts graves à des biens ou à l’environnement ;</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>utilisé un aéronef en service dans le but de provoquer la mort ou de causer des dommages corporels graves ou des dégâts graves à des biens ou à l’environnement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_30">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_30</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_30/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 30. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 30. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement d’un an à cinq ans et d’une amende de 5 000 à 10 000 euros ou d’une de ces peines seulement, quiconque aura, sans autorisation, transporté au moyen d’un aéronef ou aura embarqué à bord d’un aéronef, en vue de transport :</p>
+<ol scl:symbol="1°">
+<li>des munitions ou du matériel de guerre ;</li>
+<li>des armes biologiques, chimiques ou nucléaires, des matières brutes ou produits fissiles spéciaux, ou des équipements ou matières spécialement conçus ou préparés pour le traitement, l’utilisation ou la production de produits fissiles spéciaux lorsque ces matières, produits ou équipements sont destinés à une activité relative aux explosifs nucléaires ou à toute autre activité nucléaire ;</li>
+<li>des équipements, matières ou logiciels, ou des technologies connexes qui contribuent de manière significative à la conception, à la fabrication ou au lancement d’une arme biologique, chimique ou nucléaire ; ou</li>
+<li>tout autre objet ou matière dont le transport par air est interdit ou soumis à des restrictions.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_31">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_31</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_31/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 31. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 31. </num>
+<alinea>
+<content>
+<p>§ 1<sup>er</sup>. Sera puni de la réclusion de cinq à dix ans:</p>
+<ol scl:symbol="1)">
+<li>Celui qui aura volontairement compromis la navigabilité ou la sécurité de vol d’un aéronef privé ou d’Etat;</li>
+<li>Celui qui, sans droit, par violence, ruse ou menace, s’empare d’un aéronef privé ou d’Etat ou en exerce le contrôle ou le détourne de sa route ou tente de commettre l’un de ces faits.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>§ 2. La peine sera celle de la réclusion de dix à quinze ans si l’infraction prévue au paragraphe premier, 1) et 2), a causé des lésions corporelles ou une maladie.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>§ 3. La peine sera celle de la réclusion de quinze à vingt ans:</p>
+<ol scl:symbol="1)">
+<li>1) Si l’infraction prévue au paragraphe 1<sup>er</sup>, 1) et 2) a causé soit une maladie paraissant incurable, soit une incapacité permanente de travail personnel, soit la perte de l’usage absolu d’un organe, soit une mutilation grave;</li>
+<li>2) Si l’infraction prévue au paragraphe 1<sup>er</sup>, 1) et 2) a eu pour conséquence directe la destruction de l’aéronef ou son endommagement grave.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>§ 4. Si l’infraction prévue au paragraphe 1<sup>er</sup>, 1) et 2) a entraîné la mort d’une personne, le coupable sera puni de la réclusion à vie.</p>
+</content>
+</alinea>
+</article>
+<article id="art_31-1">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_31-1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_31-1/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 31-1. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 31-1. </num>
+<paragraph id="paragraph_35">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sera puni de la réclusion de cinq à dix ans, celui qui, illicitement et intentionnellement, à l’aide d’un dispositif, d’une substance ou d’une arme :</p>
+<ol scl:symbol="1°">
+<li>aura commis un acte de violence à l’encontre d’une personne se trouvant à bord d’un aéronef en vol, si cet acte est de nature à compromettre la sécurité de cet aéronef ; ou</li>
+<li>aura commis à l’encontre d’une personne, dans un aéroport servant à l’aviation civile internationale, un acte de violence qui cause ou est de nature à causer des blessures graves ou la mort ; ou</li>
+<li>aura détruit ou endommagé gravement les installations d’un aéroport servant à l’aviation civile internationale ou des aéronefs qui ne sont pas en service et qui se trouvent dans l’aéroport, ou aura interrompu les services de l’aéroport, si cet acte compromet ou est de nature à compromettre la sécurité dans cet aéroport ; ou</li>
+<li>aura détruit un aéronef en service ou causé à un tel aéronef des dommages qui le rendent inapte au vol ou qui sont de nature à compromettre sa sécurité en vol ; ou</li>
+<li>aura placé ou fera placer sur un aéronef en service, par quelque moyen que ce soit, un dispositif ou des substances propres à détruire ledit aéronef ou à lui causer des dommages qui le rendent inapte au vol ou qui sont de nature à compromettre sa sécurité en vol.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_36">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La peine sera celle de la réclusion de dix à quinze ans si l’infraction prévue au paragraphe 1<sup>er</sup> a causé des lésions corporelles ou une maladie.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_37">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La peine sera celle de la réclusion de quinze à vingt ans:</p>
+<ol scl:symbol="1)">
+<li>Si l’infraction prévue au paragraphe 1<sup>er</sup> a causé soit une maladie paraissant incurable, soit une incapacité permanente de travail personnel, soit la perte de l’usage absolu d’un organe, soit une mutilation grave;</li>
+<li>Si l’infraction prévue au paragraphe 1<sup>er</sup> a eu pour conséquence directe la destruction des installations de l’aéroport ou de l’aéronef, ou son endommagement grave.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_38">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Si l’infraction prévue au paragraphe 1<sup>er</sup> a entraîné la mort d’une personne, le coupable sera puni de la réclusion à vie.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_32">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_32</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_32/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 32. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 32. </num>
+<alinea>
+<content>
+<p>Sera puni d’un emprisonnement de huit jours à six mois et d’une amende de 251 à 1.500 euros ou d’une de ces peines seulement, quiconque, involontairement ou par défaut de prévoyance ou de précautions, aura commis un fait de nature à mettre en péril les personnes se trouvant à bord d’un aéronef.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>S’il est résulté de l’accident des lésions corporelles, le coupable sera puni d’un emprisonnement d’un mois à trois ans et d’une amende de 251 à 5.000 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si l’accident a causé la mort, l’emprisonnement sera de six mois à cinq ans et l’amende de 500 à 5.000 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_32bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_32bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_32bis/20251226</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 32bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-12-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm6"/>Art. 32<i>bis</i>.</num>
+<alinea>
+<content>
+<p>Sera puni d’une amende de 25 euros à 250 euros :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>tout pilote à distance qui aura entrepris un vol avec un aéronef sans équipage à bord sans avoir sur lui les documents légalement prescrits ;</li>
+<li>tout pilote à distance qui aura entrepris un vol au moyen d’un aéronef sans équipage à bord ne répondant pas aux exigences techniques du <ref href="/eli/reg_ue/2019/947/jo" id="7a7bf5f3-47c8-44a0-bdbb-1d523159f0c3">règlement d’exécution (UE) 2019/947</ref> de la Commission du 24 mai 2019 concernant les règles et procédures applicables à l’exploitation d’aéronefs sans équipage à bord ;</li>
+<li>tout pilote à distance opérant un aéronef sans équipage à bord sans disposer des compétences requises par le <ref href="/eli/reg_ue/2019/947/jo" id="1e41186d-fe8f-458b-9c32-17818bddbebe">règlement d’exécution (UE) 2019/947</ref> susmentionné ;</li>
+<li>tout pilote à distance opérant un aéronef sans équipage à bord pour un exploitant qui ne s’est pas enregistré tandis qu’il devait le faire ;</li>
+<li>tout pilote à distance ne respectant pas les exigences techniques ou opérationnelles de la catégorie « ouverte » prévues par le <ref href="/eli/reg_ue/2019/947/jo" id="d13286a9-47c8-4257-a45d-b92c0678dea2">règlement d’exécution (UE) 2019/947</ref> susmentionné ;</li>
+<li>tout pilote à distance opérant un aéronef sans équipage à bord pour un exploitant n’ayant pas obtenu une autorisation spécifique tandis qu’il en avait besoin ou ne respectant pas les termes de l’autorisation spécifique que l’exploitant a obtenu ;</li>
+<li>tout pilote à distance ne respectant pas les conditions applicables aux zones géographiques nationales pour les aéronefs sans équipage à bord ;</li>
+<li>tout pilote à distance opérant un aéronef sans équipage à bord et présentant des signes manifestes d’influence de substances psychotropes ou d’alcool, ou lorsqu’il est inapte à accomplir ses tâches du fait d’une blessure, de la fatigue, d’un traitement médical ou d’une maladie ;</li>
+<li>tout pilote à distance qui, par l’usage d’un aéronef sans équipage à bord, a projeté ou laissé tomber un objet ayant causé un dommage à autrui ;</li>
+<li>tout pilote à distance qui n’a pas fait descendre son aéronef sans équipage à bord ou qui n’a pas obtempéré aux injonctions conformément à l’article 38<i>bis</i>.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sera puni des mêmes peines l’exploitant d’aéronefs sans équipage à bord qui aura sciemment permis les opérations sanctionnées par l’alinéa 1<sup>er</sup>, points 2° à 10°.<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M6" marker="6"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_33">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_33</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_33/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 33. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 33. </num>
+<alinea>
+<content>
+<p>Les infractions aux dispositions des arrêtés grand-ducaux pris en exécution de cette loi pourront être punies d’un emprisonnement ne dépassant pas un an et d’une amende ne dépassant pas 5.000 euros ou d’une de ces peines seulement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les infractions aux décisions du Ministre des Transports pourront être punies d’un emprisonnement de huit jours à un an et d’une amende de 251 à 1 000 euros ou d’une de ces peines seulement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_34">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_34</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_34/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 34. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 34. </num>
+<alinea>
+<content>
+<p>Toute personne qui, condamnée pour une infraction prévue par la présente loi ou par les arrêtés pris pour son exécution, commettra une nouvelle infraction à ces lois ou arrêtés dans un délai de cinq ans à compter du jour ou elle a subi ou prescrit sa peine, pourra être condamnée à une peine double du maximum porté contre l’infraction.</p>
+</content>
+</alinea>
+</article>
+<article id="art_35">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_35</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_35/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 35. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 35. </num>
+<alinea>
+<content>
+<p>Toutefois en cas de délit, le tribunal pourra décider qu’il n’y a pas lieu d’appliquer les articles 31 et 32 du <ref href="/eli/etat/leg/code/penal" id="c99becb5-331f-4e94-844a-4a670e1000c3">Code pénal</ref>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_36">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_36</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_36/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 36. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 36. </num>
+<alinea>
+<content>
+<p>Les pénalités prévues par la présente loi sont édictées sans préjudice de l’application de celles prévues par d’autres lois pénales ou fiscales.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Elles seront, en outre, appliquées sans préjudice des sanctions administratives ou disciplinaires et des dommages-intérêts, s’il y a lieu.</p>
+</content>
+</alinea>
+</article>
+<article id="art_37">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_37</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_37/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 37. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 37. </num>
+<alinea>
+<content>
+<p>Les infractions commises à bord d’un aéronef luxembourgeois privé ou d’État sont réputées commises au Grand-Duché et peuvent y être poursuivies même si l’auteur ou le complice présumé ne se trouve pas sur le territoire du Grand-Duché.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La compétence territoriale s’étend aux aéronefs non immatriculés au Luxembourg, lorsque l’aéronef à bord duquel l’infraction est commise atterrit sur le territoire national et lorsque l’auteur présumé de l’infraction se trouve à bord de cet aéronef, ou lorsque la sécurité de l’aéronef ou des personnes ou des biens à bord, ou le bon ordre et la discipline à bord, sont compromis.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les présentes dispositions relatives à la compétence territoriale s’appliquent sans préjudice des articles 5 à 7-4 du <ref href="/eli/etat/leg/code/procedure_penale" id="e864b5f1-193d-45aa-ae56-18d893c9674e">Code de procédure pénale</ref>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pourront encore être poursuivis au Grand-Duché les auteurs et les complices des infractions visées à l’article 31 de la présente loi si les infractions ont été commises à bord d’un aéronef donné en location sans équipage à une personne qui a le siège principal de son exploitation ou, à défaut, sa résidence permanente au Grand-Duché, ou encore si les auteurs ou les complices présumés de ces infractions se trouvent sur le territoire luxembourgeois.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_iii">
+<num> <b>Chapitre III.</b> </num>
+<heading scl:separator="-"> <b>Dispositions de police.</b> </heading>
+<article id="art_38">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_38</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_38/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 38. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 38. </num>
+<alinea>
+<content>
+<p>Les aéronefs dont les documents de bord prescrits par les règlements ne sont pas produits ou dont les marques d’immatriculation, ne concordent pas avec celles du certificat d’immatriculation, pourront être retenus aux frais et risques de l’exploitant, par les autorités chargées de la surveillance et de la police de la navigation aérienne jusqu’à ce que l’identité de l’appareil ou de l’exploitant ait été établie.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les aéronefs qui ne satisfont pas aux prescriptions relatives à la navigabilité ou pour lesquels les péages, taxes, redevances ou droits réglementaires n’auront pas été liquidés, pourront de même être retenus dans les conditions fixées par les règlements jusqu’à ce que ces prescriptions soient exécutées.</p>
+</content>
+</alinea>
+</article>
+<article id="art_38bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_38bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_38bis/20251226</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 38bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-12-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm9"/>Art. 38<i>bis</i>.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le pilote à distance fait descendre son aéronef sans équipage à bord à toute réquisition des agents visés à l’article 39<i>bis</i>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le pilote à distance obtempère aux injonctions des agents visés à l’article 39<i>bis</i> :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>lors de contrôles du respect des exigences légales et règlementaires effectués par ces agents ;</li>
+<li>lors de la constatation d’infractions à l’article 32<i>bis</i> ;</li>
+<li>en cas de mise en danger de personnes ou de biens au sol ou en l’air.<mod class="mod-end" for="#pm9"/>
+<noteRef href="#M9" marker="9"/>
+</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_39">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_39</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_39/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 39. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 39. </num>
+<alinea>
+<content>
+<p>Les officiers et les agents de police judiciaire de la Police grand-ducale peuvent procéder ou faire procéder sous leur contrôle et leur responsabilité dans les zones délimitées ou dans les zones de sûreté à accès réglementé de l’aéroport de Luxembourg à l’inspection-filtrage de toutes personnes et de leurs objets, bagages ou véhicules.Les fonctionnaires de l’Administration des douanes et accises peuvent procéder ou faire procéder dans les zones délimitées ou dans les zones de sûreté à accès réglementé de l’aéroport de Luxembourg à l’inspection-filtrage des marchandises.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les agents visés aux deux alinéas qui précèdent peuvent interdire à toute personne qui s’oppose à l’inspection-filtrage ou au contrôle, d’accéder ou de rester dans une zone délimitée ou dans une zone de sûreté à accès réglementé voire d’accéder ou de demeurer à bord d’un aéronef.</p>
+</content>
+</alinea>
+</article>
+<article id="art_39bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_39bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_39bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 39bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 39<i>bis</i>. </num>
+<paragraph id="paragraph_39">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Outre les officiers et agents de police judiciaire de la Police grand-ducale, les fonctionnaires de la carrière supérieure de la Direction de l’aviation civile constatent, par des procès-verbaux, les infractions à la présente loi et aux règlements d’application.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ce même pouvoir revient aux agents de l’Administration des douanes et accises qui, dans l’exercice de leurs compétences douanières, viennent à constater des infractions à la présente loi ou aux règlements d’exécution.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_40">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Dans l’exercice de leurs fonctions, les fonctionnaires de la carrière supérieure de la Direction de l’aviation civile ont qualité d’officier de police judiciaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_41">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les fonctionnaires visés au paragraphe (2) doivent avoir suivi au préalable une formation professionnelle spéciale sur la recherche et les constatations d’infractions ainsi que sur les dispositions pénales de la législation réglementant la navigation aérienne. Le programme et la durée de la formation ainsi que les modalités de contrôle des connaissances sont arrêtés par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Avant d’entrer en fonction, ils prêtent devant le président du tribunal d’arrondissement de Luxembourg le serment suivant: «Je jure de remplir mes fonctions avec intégrité, exactitude et impartialité».</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’article 458 du <ref href="/eli/etat/leg/code/penal" id="4fc0c215-8602-4d0c-8c2c-7b0935e8e11d">Code pénal</ref> leur est applicable.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_39ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_39ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_39ter/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 39ter. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 39<i>ter</i>. </num>
+<paragraph id="paragraph_42">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les fonctionnaires visés à l’article 39bis, paragraphe (1), alinéa 1<sup>er</sup>, peuvent accéder de jour et de nuit aux installations, locaux, terrains, aménagements et moyens de transport soumis à la présente loi et aux règlements pris en son exécution, s’il existe des indices graves faisant présumer une infraction à la présente loi et à ses règlements d’exécution.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les propriétaires et exploitants concernés doivent être avertis préalablement des actions de contrôle en question.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_43">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les dispositions du paragraphe (1) ne sont pas applicables aux locaux qui servent à l’habitation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutefois, et sans préjudice de l’article 33 (1) du code de procédure pénale, s’il existe des indices graves faisant présumer que l’origine de l’infraction se trouve dans les locaux destinés à l’habitation, il peut être procédé à la visite domiciliaire entre six heures et demi et vingt heures par deux officiers de police judiciaire au sens de l’article 39bis, agissant en vertu d’un mandat du juge d’instruction.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_44">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Dans l’exercice des attributions prévues aux paragraphes (1) et (2), les fonctionnaires concernés sont autorisés:</p>
+<ol scl:symbol="a)">
+<li>à recevoir communication de tous livres, manuels, registres, fichiers, documents, autorisations, licences, plans de sécurité ou de sûreté des aérodromes, des infrastructures aéroportuaires et des aéronefs et de toute pièce pour autant qu’elle soit pertinente pour la prévention, la recherche et la constatation d’infractions à la sécurité et à la sûreté aériennes;</li>
+<li>à prélever ou à faire prélever, aux fins d’examen et d’analyse, des échantillons de produits, matières, substances, articles ou pièces en relation avec la sécurité et la sûreté aériennes. Une partie de l’échantillon, cachetée et scellée, est remise à l’exploitant, au propriétaire ou au détenteur du produit, de la matière, de la substance, de l’article ou de la pièce qui a fait l’objet du contrôle effectué, à moins que celui-ci n’y renonce expressément ou que des raisons techniques ne s’y opposent;</li>
+<li>à saisir et, au besoin, à mettre sous scellés, les échantillons visés sous b) ainsi que les documents visés sous a).</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_45">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Tout exploitant d’aérodrome, d’héliport, d’infrastructures aéroportuaires ou de l’aéronef, tout propriétaire, détenteur ou occupant des dépendances, installations, terrains ou aménagements faisant l’objet des mesures prévues au paragraphe (3) ainsi que les personnels qui les remplacent sont tenus à la réquisition des fonctionnaires chargés de ces mesures, de faciliter les opérations auxquelles ceux-ci procèdent. Ils peuvent assister à ces opérations.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_46">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Il est dressé procès-verbal des constatations et des opérations.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_47">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les frais occasionnés par les mesures prises en vertu du présent article sont compris dans les frais de justice dont ils suivent le sort.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_39quater">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_39quater</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_39quater/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 39quater. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 39<i>quater</i>. </num>
+<paragraph id="paragraph_48">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le directeur de l’aviation civile agrée les agents de sûreté de l’entité gestionnaire de l’aéroport ou des opérateurs aériens exécutant des missions de sûreté à l’Aéroport de Luxembourg qui répondent aux critères requis de qualification et de formation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par missions de sûreté il y a lieu de considérer les missions de contrôle des accès aux zones délimitées ou aux zones à accès réglementé de l’Aéroport de Luxembourg, les missions d’inspection-filtrage des personnes, des bagages, des marchan-</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>dises ou autres fournitures ainsi que des véhicules pénétrant dans les zones précitées, les missions de protection et de fouille des aéronefs ainsi que les missions de surveillance des zones précitées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’agrément détermine de manière précise les missions de sûreté et les équipements de sûreté pour lesquels l’agent de sûreté est spécialement habilité.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de non-respect des conditions de l’agrément, le directeur de l’aviation civile peut procéder au retrait temporaire ou définitif de celui-ci.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_49">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les critères de qualification et de formation initiale et récurrente desdits agents de sûreté sont fixés par règlement grand- ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_50">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Dans le cadre de l’inspection-filtrage des personnes, des bagages, des marchandises ou des véhicules pénétrant dans les zones à accès réglementé, effectuée aux termes de l’article 39 de la présente loi, les agents de sûreté de l’entité gestionnaire de l’aéroport dûment agréés sont autorisés à se faire exhiber à ces fins une pièce d’identité et à procéder à l’inspection- filtrage des personnes, de leurs véhicules et de leurs effets transportés entrant dans les zones à accès réglementé aux fins d’empêcher l’accès d’objets prohibés dans lesdites zones ou dans les aéronefs.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_51">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les agents de sûreté visés au paragraphe (3) interdisent à toute personne qui s’oppose aux mesures d’inspection-filtrage ou qui détient un objet prohibé d’accéder dans les zones à accès réglementé de l’aéroport de Luxembourg voire d’accéder à bord d’un aéronef.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_40">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_40</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_40/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 40. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 40. </num>
+<alinea>
+<content>
+<p>Les agents assermentés rechercheront et constateront par des procès-verbaux toutes les infractions dans les aérodromes et leurs dépendances et à bord des aéronefs ainsi que les infractions aux lois et règlements concernant la navigation aérienne. Les procès-verbaux feront foi jusqu’à preuve contraire et seront transmis sans délai au procureur d’Etat ou à l’officier du ministère public près le tribunal de police compétent.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La compétence de ces agents assermentés s’étendra à tout le territoire du Grand-Duché.</p>
+</content>
+</alinea>
+</article>
+<article id="art_42">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_42</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_42/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 42. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 42. </num>
+<paragraph id="paragraph_52">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Dans le cadre du système national de comptes rendus obligatoires d’évènements, la Direction de l’aviation civile est l’autorité compétente pour collecter, évaluer, diffuser et protéger les informations d’évènements définis par le droit communautaire comme ayant eu ou étant susceptibles d’avoir une incidence sur la sécurité aérienne et qui n’ont pas donné lieu à un accident ou à un incident grave d’aéronef.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_53">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Aux fins de garantir la confidentialité des informations et sans préjudice des dispositions relatives à la poursuite des infractions à la loi pénale, aucune action civile, commerciale, disciplinaire ou relative à des rapports de droit de travail n’est intentée en ce qui concerne les infractions involontaires, commises par défaut de prévoyance ou de précaution, et qui ont été signalées dans le cadre du système national de comptes rendus obligatoires d’évènements ou de comptes rendus volontaires d’évènements, sauf dans les cas de négligence grave.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_54">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le présent article s’applique sans préjudice des dispositions relatives à l’accès à l’information par les autorités de poursuite pénale et par les autorités judiciaires.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_42bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_42bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_42bis/20260501</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 42bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 42<i>bis</i>. </num>
+<paragraph id="paragraph_55">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le ministre ayant la Navigation et les transports aériens dans ses attributions peut infliger :</p>
+<ol scl:symbol="1°">
+<li>1° une amende de 1 250 euros à 5 000 euros à toute entité établie sur le territoire du Grand-Duché de Luxembourg qui se trouve soumise aux exigences du <ref href="https://legilux.public.lu/eli/reg_ue/2014/376/jo" id="e4f8e007-cf7f-4ea0-bbd2-b8bb4327619b">règlement (UE) n° 376/2014</ref> du Parlement européen et du Conseil du 3 avril 2014 concernant les comptes rendus, l’analyse et le suivi d’événements dans l’aviation civile, modifiant le <ref href="https://legilux.public.lu/eli/reg_ue/2010/996/jo" id="30251fc2-1354-4ff5-937a-b03428c8a596">règlement (UE) n° 996/2010</ref> du Parlement européen et du Conseil et abrogeant la <ref href="https://legilux.public.lu/eli/dir_ue/2003/42/jo" id="5d1581c6-2284-49c2-a14e-a85df4eb6bb2">directive 2003/42/CE</ref> du Parlement européen et du Conseil et les règlements de la Commission <ref href="/eli/reg_ue/2007/1321/jo" id="939e3acb-6b43-459c-bc47-b05e562078be">(CE) n° 1321/2007</ref> et <ref href="/eli/reg_ue/2007/1330/jo" id="98b1e129-55b4-4004-8317-dd6eb5843092">(CE) n° 1330/2007</ref>, qui ne respecte pas les exigences prévues à l’article 16, paragraphe 11 du <ref href="https://legilux.public.lu/eli/reg_ue/2014/376/jo" id="84afefdc-ffd4-42cb-93a2-2668b64dc939">règlement (UE) n° 376/2014</ref> précité ;</li>
+<li>2° une amende de 2 500 euros à 10 000 euros à toute entité établie sur le territoire du Grand-Duché de Luxembourg qui se trouve soumise aux exigences du <ref href="https://legilux.public.lu/eli/reg_ue/2014/376/jo" id="e590de89-0ca8-45a5-900f-0d51b27ffee9">règlement (UE) n° 376/2014</ref> précité ne respectant pas les dispositions de l’article 42, paragraphe 2.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_56">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’amende ne peut être infligée que si l’entité a été préalablement mise à même de présenter ses observations. À cet effet, elle est invitée par lettre recommandée avec avis de réception à prendre inspection du dossier et faire valoir ses observations, le tout dans un délai qui ne peut être inférieur à un mois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_57">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les décisions du ministre ayant la Navigation et les transports aériens dans ses attributions sont susceptibles d’un recours en réformation devant le tribunal administratif, dans le délai d’un mois à partir de leur notification.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm11"/>(4)</num>
+<alinea>
+<content>
+<p>Le recouvrement des amendes est confié à l’Administration de l’enregistrement, des domaines et de la TVA. Il se fait comme en matière d’enregistrement.<mod class="mod-end" for="#pm11"/>
+<noteRef href="#M11" marker="11"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_42ter">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_42ter</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_42ter/20260501</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 42ter.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2026-05-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm12"/>Art. 42<i>ter</i>.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le ministre ayant la Navigation et les transports aériens dans ses attributions peut infliger une amende de 1 250 à 5 000 euros à tout prestataire de services de navigation aérienne ou à tout organisme de gestion des aéroports qui n’aura pas respecté les articles 6, 8 et 10 du <ref href="/eli/reg_ue/2010/255/jo" id="b9626900-ee5b-4284-a0d2-16b98eeb0a60">règlement (UE) n° 255/2010</ref> de la Commission du 25 mars 2010 établissant des règles communes relatives à la gestion des courants de trafic aérien, tel que modifié.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre ayant la Navigation et les transports aériens dans ses attributions peut infliger une amende de 2 500 à 10 000 euros à tout exploitant d’aéronef qui aura invoqué une exemption d’un créneau de départ de gestion des courants de trafic aérien, ci-après « exemption ATFM », dont il ne dispose pas ou qui n’aura pas respecté les privilèges et limitations de l’exemption ATFM lui accordée conformément au <ref href="/eli/reg_ue/2010/255/jo" id="edeb72fa-a935-4e9b-9204-da66fe4d914d">règlement (UE) n° 255/2010</ref> précité.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre ayant la Navigation et les transports aériens dans ses attributions peut infliger une amende de 1 250 à 5 000 euros à tout prestataire de services de navigation aérienne qui n’aura pas respecté les articles 11 et 12 du <ref href="/eli/reg_ue/2010/255/jo" id="a978f962-b611-4b81-8c16-891fa418e37a">règlement (UE) n° 255/2010</ref> précité.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le ministre ayant la Navigation et les transports aériens dans ses attributions peut infliger une amende de 5 000 à 20 000 euros à toute partie prenante opérationnelle désignée dans l’annexe du <ref href="/eli/reg_ue/2021/116/jo" id="30b154e6-98c8-41f0-b58e-e69e6a6fa8a1">règlement d’exécution (UE) 2021/116</ref> de la Commission du 1<sup>er</sup> février 2021 sur la mise en place du premier projet commun de soutien à la mise en œuvre du plan directeur européen de gestion du trafic aérien prévu par le <ref href="/eli/reg_ue/2004/550/jo" id="554e6abc-2641-4564-9510-3c9fb118b7c1">règlement (CE) n° 550/2004</ref> du Parlement européen et du Conseil, modifiant le <ref href="/eli/reg_ue/2013/409/jo" id="0f671e01-f2e7-487c-b977-2a33fa0d4ab5">règlement d’exécution (UE) n° 409/2013</ref> de la Commission et abrogeant le <ref href="/eli/reg_ue/2014/716/jo" id="f53a8efd-18f6-4022-8d57-17fc63d21fcb">règlement d’exécution (UE) n° 716/2014</ref> de la Commission, qui n’aura pas respecté l’article 3 <ref href="/eli/reg_ue/2021/116/jo" id="006f6339-8698-47a5-9254-4c2b8416eaae">dudit règlement</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le ministre ayant la Navigation et les transports aériens dans ses attributions peut infliger une amende de 2 500 à 10 000 euros à tout prestataire de services de navigation aérienne, à tout usager de l’espace aérien ou à tout organisme de gestion des aéroports qui n’aura pas contribué ou participé aux projets communs établis par la Commission européenne conformément au <ref href="/eli/reg_ue/2024/2803/jo" id="98394305-51da-40d4-aabb-1cdfd832ccdc">règlement (UE) 2024/2803</ref> du Parlement européen et du Conseil du 23 octobre 2024 relatif à la mise en œuvre du ciel unique européen (refonte).</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les amendes visées aux paragraphes 1<sup>er</sup> à 3 ne peuvent être infligées que si la personne ou l’entité concernée a été préalablement mise à même de présenter ses observations. À cet effet, elle est invitée par lettre recommandée avec avis de réception à prendre inspection du dossier et faire valoir ses observations, le tout dans un délai qui ne peut être inférieur à un mois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les mesures prises par le ministre en vertu des paragraphes 1<sup>er</sup> à 3 sont susceptibles d’un recours en réformation devant le Tribunal administratif.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le recouvrement des amendes est confié à l’Administration de l’enregistrement, des domaines et de la TVA. Il se fait comme en matière d’enregistrement. <mod class="mod-end" for="#pm12"/>
+<noteRef href="#M12" marker="12"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_43">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_43</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_43/20260501</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 43. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-05-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 43. </num>
+<paragraph id="paragraph_58">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La Direction de l’aviation civile est l’autorité compétente pour l’application des dispositions relatives aux personnes handicapées et des personnes à mobilité réduite lorsqu’elles font des voyages aériens.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_59">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le ministre ayant les Transports aériens dans ses attributions peut infliger une amende de 2.500 euros à 10.000 euros à tout transporteur aérien, son agent ou un organisateur de voyages qui refuse, pour cause de handicap ou de mobilité réduite, d’accepter une réservation pour un vol au départ de l’aéroport de Luxembourg ou d’embarquer une personne handicapée ou une personne à mobilité réduite, si cette personne dispose d’un billet et d’une réservation valables à moins que le transporteur aérien, son agent ou l’organisateur de voyages ne puisse établir une des causes de dérogation énumérées à l’article 4 du <ref href="/eli/reg_ue/2006/1107/jo" id="47476818-587d-498b-98b5-608b619fa267">règlement (CE) n° 1107/2006</ref> du Parlement européen et du Conseil du 5 juillet 2006 concernant les droits des personnes handicapées et des personnes à mobilité réduite lorsqu’elles font des voyages aériens.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_60">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le ministre ayant les Transports aériens dans ses attributions peut infliger une amende de 1.250 euros à 5.000 euros à tout transporteur aérien ou son agent qui ne met pas à disposition, sous les formes accessibles et au moins dans les mêmes langues que l’information mise à disposition des autres passagers, les règles de sécurité qu’il applique au transport de personnes handicapées et de personnes à mobilité réduite, ainsi que les éventuelles restrictions à leur transport ou à celui de leur équipement de mobilité en raison de la taille de l’aéronef ainsi qu’à tout organisateur de voyages qui ne met pas à disposition les règles de sécurité et les restrictions concernant les vols inclus dans les voyages, vacances et circuits à forfait qu’il organise, vend ou offre à la vente.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_61">
+<num>(4)</num>
+<alinea>
+<content>
+<p>L’amende ne peut être infligée que si le transporteur aérien, ou son agent, ou l’organisateur de voyages ont été préalablement mis à même de présenter leurs observations. A cet effet, ils sont invités par lettre recommandée avec avis de réception à prendre inspection du dossier et faire valoir leurs observations, le tout dans un délai qui ne peut être inférieur à un mois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_62">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les décisions du ministre sont susceptibles d’un recours en réformation devant le tribunal administratif, dans le délai d’un mois à partir de la notification.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm13"/>(6)</num>
+<alinea>
+<content>
+<p>Le recouvrement des amendes est confié à l’Administration de l’enregistrement, des domaines et de la TVA. Il se fait comme en matière d’enregistrement.<mod class="mod-end" for="#pm13"/>
+<noteRef href="#M13" marker="13"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_43bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_43bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1/art_43bis/20241223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1948/01/31/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title"> Art. 43bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-12-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> Art. 43<i>bis</i>. </num>
+<paragraph id="paragraph_63">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La Communauté des Transports est l’autorité compétente pour l’application des dispositions relatives à la liberté de tarification des transporteurs aériens et des principes d’information et de non-discrimination à l’égard des passagers en exécution du <ref href="/eli/reg_ue/2008/1008/jo" id="b3c071de-32cf-4033-a605-0aea4c82d9dc">règlement (CE) n° 1008/2008</ref> du 24 septembre 2008 établissant des règles communes pour l’exploitation des services aériens dans la Communauté.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_64">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le ministre ayant les Transports aériens dans ses attributions peut infliger une amende de 2.500 euros à 10.000 euros à tout transporteur aérien, son agent ou tout autre vendeur de billets qui publie ou propose les tarifs de passagers ou de fret pour les services aériens au départ de l’aéroport de Luxembourg sans préciser les conditions applicables ou sans préciser le prix définitif à payer à tout moment, incluant outre le tarif de passager ou de fret l’ensemble des taxes, redevances, suppléments et droits applicables inévitables et prévisibles à la date de la publication, y compris les redevances aéroportuaires, la redevance de sûreté ou carburant si celles-ci sont ajoutées au tarif passager ou fret.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_65">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le ministre ayant les Transports aériens dans ses attributions peut infliger une amende de 1.250 euros à 5.000 euros à tout transporteur aérien, son agent ou tout autre vendeur de billets qui ne publie ou communique pas les suppléments de prix optionnels de façon claire, transparente et non équivoque au début de touteréservation ou qui ne s’assure pas que ces suppléments fassent l’objet d’une démarche explicite d’acceptation de la part du client.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_66">
+<num>(4)</num>
+<alinea>
+<content>
+<p>L’amende ne peut être infligée que si le transporteur aérien, son agent, ou tout autre vendeur de billets ont été préalablement mis à même de présenter leurs observations. A cet effet, ils sont invités par lettre recommandée avec avis de réception à prendre inspection du dossier et faire valoir leurs observations, le tout dans un délai qui ne peut être inférieur à un mois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_67">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les décisions du ministre sont susceptibles d’un recours en réformation devant le tribunal administratif, dans le délai d’un mois à partir de la notification.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

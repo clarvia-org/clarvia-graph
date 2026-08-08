@@ -1,0 +1,1483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-10-15" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MAV"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-10-15" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-10-15" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2025-06-14</scl:jolux><scl:jolux scl:name="dateDocument">2021-10-15</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MAV</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3436</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/443</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/893</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="dateEntryInForce">2021-11-07</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2021/a760</scl:jolux><scl:jolux scl:name="publicationDate">2021-11-03</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/ns/prov#Entity</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr/pdfa</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="transposes">/eli/dir_ue/2019/990/jo</scl:jolux>
+<scl:jolux scl:name="transposes">/eli/dir_ue/2020/177/jo</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/projet/pr/20160265</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1993/85/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1998/57/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/2000/29/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/2006/91/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/2007/33/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/2014/1143/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/2014/652/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1969/464/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1974/647/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/2013/228/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/2016/2031/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1992/105/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1993/09/02/n5/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 14/06/2025 : Règlement grand-ducal du 15 octobre 2021 relatif à la commercialisation des plants de légumes et des matériels de multiplication de légumes autres que les semences.</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2008/03/18/n1/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2021/a760/fr/pdf</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2021/a760/fr/pdf</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2021-11-07" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2025-06-14" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2025/06/04/a215/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2021/10/15/a760/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2025/06/04/a215/jo" id="rp2" showAs="Règlement grand-ducal du 4 juin 2025 modifiant le règlement grand-ducal du 15 octobre 2021 relatif à la commercialisation des plants de légumes et des matériels de multiplication de légumes autres que les semences."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2025-06-10|2025-06-04|RGD|215">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2025/06/04/a215/jo">Règlement grand-ducal du 4 juin 2025 modifiant le règlement grand-ducal du 15 octobre 2021 relatif à la commercialisation des plants de légumes et des matériels de multiplication de légumes autres que les semences.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 14/06/2025 : Règlement grand-ducal du 15 octobre 2021 relatif à la commercialisation des plants de légumes et des matériels de multiplication de légumes autres que les semences.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_1er/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le présent règlement s’applique à la commercialisation des plants de légumes et des matériels de multiplication de légumes autres que les semences.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le présent règlement s’applique aux genres et espèces énumérés à l’annexe I ainsi qu’à leurs hybrides. Il s’applique également aux porte-greffes et autres parties de plantes d’autres genres ou espèces que ceux énumérés à l’annexe I, ou de leurs hybrides, si des matériels issus de genres ou d’espèces énumérés sur cette liste, ou de leurs hybrides sont ou doivent être greffés sur eux.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le présent règlement ne s’applique pas aux plants et aux matériels de multiplication dont il est prouvé qu’ils sont destinés à l’exportation vers des pays tiers de l’Union européenne, s’ils sont correctement identifiés comme tels et suffisamment isolés, sans préjudice des règles phytosanitaires fixées par le <ref href="/eli/reg_ue/2016/2031/jo" id="1d7f4226-56fe-4b78-a7f0-f54636931d91">règlement (UE) 2016/2031</ref> du Parlement européen et du Conseil du 26 octobre 2016 relatif aux mesures de protection contre les organismes nuisibles aux végétaux, modifiant les règlements du Parlement européen et du Conseil <ref href="/eli/reg_ue/2013/228/jo" id="7d76fdb9-3e1e-4327-89e8-94be42cb4d08">(UE) n° 228/2013</ref>, <ref href="/eli/reg_ue/2014/652/jo" id="a5d867e4-b1f6-4fc5-a308-7f29eeb2f33f">(UE) n° 652/2014</ref> et <ref href="/eli/reg_ue/2014/1143/jo" id="495f1726-6d38-4acf-8817-efdb91a21d94">(UE) n° 1143/2014</ref> et abrogeant les <ref href="/eli/dir_ue/1969/464/jo" id="647ad6e0-cd58-4f22-97bb-7ff7a621cce5">directives du Conseil 69/464/CEE</ref>, <ref href="/eli/dir_ue/1974/647/jo" id="1e35c668-a3a4-4008-8c80-685318624856">74/647/CEE</ref>, <ref href="/eli/dir_ue/1993/85/jo" id="d907bf9d-74b5-4e97-8d05-6bc4307f8cc3">93/85/CEE</ref>, <ref href="/eli/dir_ue/1998/57/jo" id="9fa7b97b-1bb5-4866-96ff-74287f6f8007">98/57/CE</ref>, <ref href="/eli/dir_ue/2000/29/jo" id="0639497d-a4ea-4a62-a79f-71bfb58eea62">2000/29/CE</ref>, <ref href="/eli/dir_ue/2006/91/jo" id="77352b30-e055-478b-8339-68ff4b21740f">2006/91/CE</ref> et <ref href="/eli/dir_ue/2007/33/jo" id="87b67cf3-69ec-41a7-b573-c9467669d7e5">2007/33/CE</ref>, ci-après le « <ref href="/eli/reg_ue/2016/2031/jo" id="599b7e4e-0849-4cc5-83ea-36fbd75de004">règlement (UE) 2016/2031</ref> ».</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_2/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Aux fins du présent règlement, on entend par :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>« matériels de multiplication » : les parties de plantes et tous matériels de plantes, y compris les porte-greffes, destinés à la multiplication et à la production de légumes ;</li>
+<li>« plants » : les plantes entières et les parties de plantes, comprenant dans le cas de plantes greffées, le greffon, destinées à être plantées en vue de la production de légumes ;</li>
+<li>« fournisseur » : toute personne physique ou morale qui exerce professionnellement au moins l’une des activités suivantes ayant trait aux matériels de multiplication ou aux plants : reproduction, production, protection et/ou traitement et commercialisation ;</li>
+<li>« commercialisation » : maintien à disposition ou en stock, exposition ou offre à la vente, vente et/ou livraison à une autre personne, sous quelque forme que ce soit, de matériels de multiplication ou de plants ;</li>
+<li>« ministre » : le ministre ayant l’Agriculture dans ses attributions ; </li>
+<li>« organisme officiel responsable » : l’Administration des services techniques de l’agriculture, service de l’horticulture ;</li>
+<li>« inspection officielle » : l’inspection effectuée par l’organisme officiel responsable ;</li>
+<li>« déclaration officielle » : la déclaration faite par l’organisme officiel responsable ou sous sa responsabilité ; </li>
+<li>« lot » : un certain nombre d’éléments d’un produit unique, identifiable par l’homogénéité de sa composition et de son origine ;</li>
+<li>« laboratoire » : une entité de droit public ou privé effectuant des analyses et établissant un diagnostic correct permettant au producteur de contrôler la qualité de la production.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_3/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<paragraph id="paragraph_4">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les matériels de multiplication de légumes et les plants de légumes se révèlent, au moins sur la base d’une inspection visuelle, pratiquement exempts sur le lieu de production de tous les organismes nuisibles énumérés à l’annexe II pour les matériels de multiplication et les plants correspondants.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La présence d’organismes réglementés non de quarantaine, ci-après « ORNQ », sur les matériels de multiplication de légumes et les plants de légumes qui sont commercialisés ne dépasse pas, au moins sur la base d’une inspection visuelle, les seuils respectifs fixés à l’annexe II.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les matériels de multiplication de légumes et les plants de légumes se révèlent, lors de l’inspection visuelle, pratiquement exempts de tout organisme nuisible, autre que les organismes nuisibles énumérés à l’annexe II pour les matériels de multiplication et les plants correspondants, qui réduit la valeur d’utilisation et la qualité des matériels de multiplication de légumes et des plants de légumes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les matériels de multiplication de légumes et les plants de légumes satisfont également aux prescriptions concernant les organismes de quarantaine de l’Union européenne, les organismes de quarantaine de zone protégée et les ORNQ prévues dans le <ref href="https://legilux.public.lu/eli/reg_ue/2016/2031/jo" id="c47bc8ad-c0e6-4521-bf79-95f7a1aeb467">règlement (UE) 2016/2031</ref> et dans les actes d’exécution adoptés en application de ce règlement, y compris aux mesures adoptées en application de l’article 30, paragraphe 1<sup>er</sup>, dudit règlement.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_4/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<paragraph id="paragraph_8">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les fournisseurs prennent toutes les mesures nécessaires pour assurer le respect des normes fixées par le présent règlement à tous les stades de la production et de la commercialisation des matériels de multiplication et des plants de légumes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Aux fins du paragraphe 1<sup>er</sup>, les fournisseurs effectuent eux-mêmes, ou font effectuer par un fournisseur agréé ou par l’organisme officiel responsable, des contrôles reposant sur les principes suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>identification des points critiques de leur processus de production sur la base des méthodes de production utilisées ;</li>
+<li>élaboration et mise en œuvre de méthodes de surveillance et de contrôle des points critiques visés au point 1° ;</li>
+<li>prélèvement d’échantillons à analyser dans un laboratoire agréé par l’organisme officiel responsable, destinés à vérifier le respect des normes fixées par la présente loi ;</li>
+<li>enregistrement par écrit, ou par un autre moyen de conservation durable, des données visées aux points 1°, 2° et 3°, et tenue d’un registre de la production et de la commercialisation des plants et des matériels de multiplication, à tenir à la disposition de l’organisme officiel responsable. Ces documents et registres devront être conservés pendant une période d’au moins un an.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutefois, les fournisseurs dont l’activité dans ce domaine se limite à la simple distribution de matériels de multiplication de plants de légumes produits et emballés en dehors de leur établissement sont seulement tenus de tenir un registre ou de garder des traces durables des opérations d’achat et de vente ou de livraison de tels produits.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le présent paragraphe ne s’applique pas aux fournisseurs dont l’activité dans ce domaine se limite à la livraison de petites quantités de matériels de multiplication et de plants de légumes aux consommateurs finaux non professionnels.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Si les résultats de leurs propres contrôles ou les informations dont disposent les fournisseurs visés au paragraphe 1<sup>er</sup> révèlent la présence d’un ou de plusieurs des organismes nuisibles visés par le <ref href="https://legilux.public.lu/eli/reg_ue/2016/2031/jo" id="d7446d14-4fdf-4e10-8cbe-498b4610a371">règlement (UE) 2016/2031</ref>, ou dans une quantité supérieure à celle normalement escomptée pour satisfaire aux normes, de ceux spécifiés à l’article 3, ces fournisseurs en informent immédiatement l’organisme officiel responsable et prennent les mesures que ce dernier leur indique ou toute autre mesure nécessaire pour réduire le risque d’une dissémination des organismes nuisibles en question. Les fournisseurs tiennent un registre de toutes les apparitions d’organismes nuisibles dans leurs locaux et de toutes les mesures prises à ce sujet.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_5/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<paragraph id="paragraph_11">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’organisme officiel responsable accorde l’agrément aux fournisseurs après avoir constaté que leurs méthodes de production et leurs établissements répondent aux prescriptions de la présente loi en ce qui concerne la nature des activités qu’ils exercent. Si un fournisseur décide d’exercer des activités autres que celles pour lesquelles il a été agréé, l’agrément doit être renouvelé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’organisme officiel responsable accorde l’agrément aux laboratoires après avoir constaté que ces laboratoires, leurs méthodes et leurs établissements répondent aux prescriptions du présent règlement compte tenu des activités de contrôle qu’ils exercent. Si un laboratoire décide d’exercer des activités autres que celles pour lesquelles il a été agréé, l’agrément doit être renouvelé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La surveillance et le contrôle des fournisseurs, des établissements et des laboratoires sont effectués régulièrement par l’organisme officiel responsable, qui a librement accès à tous les locaux des établissements pour assurer le respect des prescriptions du présent règlement.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_6/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<paragraph id="paragraph_14">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les contrôles des fournisseurs visés à l’article 5, paragraphe 3, ont lieu au moins une fois par an à un moment approprié et visent le respect des principes définis à l’article 4, paragraphe 2, points 1° à 4°, compte tenu de la nature particulière de la ou des activités des fournisseurs. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(2)</num>
+<alinea>
+<content>
+<p>En ce qui concerne l’identification des points critiques du processus de production visé à l’article 4, paragraphe 2, point 1° et la tenue des livres visée à l’article 4, paragraphe 2, point 4°, l’organisme officiel responsable exerce une surveillance et un contrôle sur le fournisseur afin de s’assurer que celui-ci :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>continue de tenir compte des points critiques ci-après, selon les cas :<ol scl:space-num="5" scl:start="1" scl:symbol="a)">
+<li>la qualité du matériel de multiplication et des plants de légumes utilisés pour le démarrage du processus de production ;</li>
+<li>le semis, le repiquage, le bouturage et la plantation du matériel de multiplication et des plantes ;</li>
+<li>le respect les prescriptions du <ref href="https://legilux.public.lu/eli/reg_ue/2016/2031/jo" id="d2f4c89b-8d8e-4160-9355-ba250b3c1f41">règlement (UE) 2016/2031</ref> ; </li>
+<li>le plan et la méthode de culture ;</li>
+<li>l’entretien général des végétaux cultivés ;</li>
+<li>les opérations de multiplication ;</li>
+<li>les opérations de récolte ;</li>
+<li>l’hygiène ;</li>
+<li>les traitements ;</li>
+<li>l’emballage ;</li>
+<li>le stockage ;</li>
+<li>le transport ;</li>
+<li>les tâches administratives.</li>
+</ol>
+</li>
+<li>tient effectivement des livres qui permettent audit organisme officiel responsable de disposer d’informations complètes sur :<ol scl:start="1" scl:symbol="a)">
+<li>les plantes et autres objets :<ol scl:start="1" scl:symbol="i)">
+<li>achetés à des fins de stockage ou de plantation sur place</li>
+<li>en production</li>
+<li>expédiés à des tiers</li>
+</ol>
+</li>
+<li>tout traitement chimique appliqué aux plantes,<br/>et conserve les pièces et documents y afférents pendant au moins un an ;</li>
+</ol>
+</li>
+<li>se tient personnellement à la disposition dudit organisme officiel responsable ou lui désigne une autre personne possédant une expérience technique adéquate de la production végétale et des questions sanitaires y afférentes ;</li>
+<li>procède aux observations visuelles nécessaires et opportunes d’une manière agréée par ledit organisme officiel responsable ;</li>
+<li>garantit aux personnes habilitées à agir pour le compte dudit organisme officiel responsable l’accès à ses installations, en particulier à des fins d’inspection et/ou d’échantillonnage, ainsi qu’aux livres et documents y afférents visés à la lettre b) ;</li>
+<li>coopère de toute autre manière avec ledit organisme officiel responsable.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(3)</num>
+<alinea>
+<content>
+<p>En ce qui concerne l’établissement et l’application des méthodes de surveillance et de contrôle des points critiques visés à l’article 4, paragraphe 2, point 2°, l’organisme officiel responsable exerce une surveillance et un contrôle sur le fournisseur afin de s’assurer que celui-ci poursuit l’application, s’il y a lieu, desdites méthodes, en accordant une attention particulière à :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>l’existence et l’utilisation effective de méthodes de contrôle de chacun des points critiques cités au paragraphe 2 ;</li>
+<li>la fiabilité de ces méthodes ;</li>
+<li>la convenance de ces méthodes pour l’appréciation du contenu des modalités de production et de commercialisation, y compris le volet administratif ;</li>
+<li>l’aptitude du personnel du fournisseur à effectuer ces contrôles.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_17">
+<num>(4)</num>
+<alinea>
+<content>
+<p>En ce qui concerne le prélèvement d’échantillons à des fins d’analyse dans un laboratoire agréé visé à l’article 4, paragraphe 2, point 3°, l’organisme officiel responsable exerce une surveillance et un contrôle sur le fournisseur afin d’assurer, s’il y a lieu, que :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>des échantillons sont prélevés aux différents stades de la production et en respectant la fréquence établie par l’organisme officiel responsable au moment de la vérification des méthodes de production en vue de l’octroi de l’agrément ;</li>
+<li>le mode de prélèvement des échantillons est techniquement correct et s’appuie sur une formule statistique fiable, compte tenu de la nature de l’analyse à effectuer ;</li>
+<li>les personnes chargées du prélèvement des échantillons ont la compétence requise à cet effet ;</li>
+<li>l’analyse des échantillons est confiée à un laboratoire qui a été agréé à cet effet par l’organisme officiel responsable en vertu de l’article 5, paragraphe 2.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_7/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<paragraph id="paragraph_18">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les matériels de multiplication et les plants de légumes ne peuvent être commercialisés que par des fournisseurs agréés et à condition de satisfaire aux prescriptions des articles 3, 8, 9, 10 et 11.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_19">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sans préjudice des dispositions fixées par le <ref href="https://legilux.public.lu/eli/reg_ue/2016/2031/jo" id="552ef14c-af66-4eb4-b6c4-5643e85addca">règlement (UE) 2016/2031</ref>, le paragraphe 1<sup>er</sup> ne s’applique pas aux matériels de multiplication et aux plants de légumes destinés à :</p>
+<ol scl:start="1" scl:symbol="a)">
+<li>des essais ou à des fins scientifiques ;</li>
+<li>des travaux de sélection ; ou</li>
+<li>des mesures visant à la conservation de la diversité génétique.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_8/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Les matériels doivent avoir l’identité appropriée et présenter un degré de pureté adéquat quant au genre ou à l’espèce et présenter une identité et une pureté variétales suffisantes.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_9/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<paragraph id="paragraph_20">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sans préjudice de l’article 1<sup>er</sup>, paragraphe 3, les matériels de multiplication et les plants de légumes qui appartiennent aux genres ou aux espèces énumérés à l’annexe I et qui sont également couverts par le règlement grand-ducal fixant les conditions de commercialisation des semences de légumes, ne sont commercialisés que s’ils appartiennent à une variété admise qui est inscrite au catalogue commun des variétés des espèces de légumes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_21">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sans préjudice de l’article 1<sup>er</sup>, paragraphe 3, les matériels de multiplication et les plants de légumes qui appartiennent aux genres ou aux espèces énumérés à l’annexe I et qui ne sont pas couverts le règlement grand-ducal fixant les conditions de commercialisation des semences de légumes, ne sont commercialisés que s’ils appartiennent à une variété admise qui est inscrite au catalogue commun des variétés des espèces de légumes ou à une variété admise officiellement dans au moins un État membre de l’Union européenne.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_10/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<paragraph id="paragraph_22">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les matériels de multiplication et les plants de légumes doivent être effectivement exempts de tout défaut susceptible de réduire leur qualité de matériels de multiplication ou de plants.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_23">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les matériels doivent présenter la vigueur et les dimensions requises pour servir de plants ou de matériels de reproduction de légumes. En outre, leurs racines, tiges et feuilles doivent être convenablement proportionnées.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_11/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<paragraph id="paragraph_24">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Durant la végétation, ainsi que lors de l’arrachage ou du prélèvement des greffons sur le matériel parental, les matériels de multiplication et les plants de légumes sont maintenus en lots séparés.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_25">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Si des matériels de multiplication ou des plants de légumes d’origines différentes sont assemblés ou mélangés lors de l’emballage, du stockage, du transport ou de la livraison, le fournisseur consigne sur un registre les données suivantes : composition du lot et origine de ses différents composants.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_26">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Des inspections officielles sont effectuées afin de vérifier le respect des prescriptions des paragraphes 1<sup>er</sup> et 2.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_12/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<paragraph id="paragraph_27">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sans préjudice de l’article 7 et de l’article 11, paragraphe 2, les matériels de multiplication et les plants de légumes ne sont commercialisés qu’en lots suffisamment homogènes et s’ils sont accompagnés d’un document émis par le fournisseur conformément à l’article 13. Si une déclaration officielle figure sur ce document, elle devra être clairement distincte de tous les autres éléments contenus dans ce document.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_28">
+<num>(2)</num>
+<alinea>
+<content>
+<p>En cas de fourniture par le détaillant, à un consommateur final non professionnel, de matériels de multiplication et de plants de légumes, les prescriptions en matière d’étiquetage visées au paragraphe 1<sup>er</sup> peuvent être réduites à une information appropriée sur le produit.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_13/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<paragraph id="paragraph_29">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le document du fournisseur visé à l’article 12, paragraphe 1<sup>er</sup> doit être constitué d’un matériau approprié, ne jamais avoir été utilisé et être imprimé dans au moins une des langues officielles de l’Union européenne. II doit contenir les éléments d’information suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>la mention : « qualité CEE » ;</li>
+<li>la mention « Grand-Duché de Luxembourg » ou le code « LU » ;</li>
+<li>la mention « Administration des services techniques de l’agriculture » ;</li>
+<li>le numéro d’enregistrement ou d’agrément ;</li>
+<li>le nom du fournisseur ;</li>
+<li>le numéro individuel de série, de semaine ou de lot ;</li>
+<li>la date d’établissement du document du fournisseur ; </li>
+<li>le numéro de référence du lot de semences lorsqu’il s’agit de jeunes plants produits directement à partir de semences commercialisées conformément par la règlementation applicable à la commercialisation des semences de légumes ; </li>
+<li>le nom commun, ou le nom botanique si le matériel est accompagné d’un passeport phytosanitaire conformément à la <ref href="/eli/dir_ue/1992/105/jo" id="8652a378-e515-4432-80ac-4a02bdf65e1c">directive 92/105/CEE</ref> de la Commission ;</li>
+<li>la dénomination de la variété ; lorsqu’il s’agit d’un porte-greffe, la dénomination de la variété ou sa désignation ;</li>
+<li>la quantité ;</li>
+<li>lorsqu’il s’agit de matériel importé d’un pays tiers conformément à l’article 15, le nom du pays d’origine (récolte).</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le numéro de référence visé au point 8° doit être fourni, sur demande, à l’organisme officiel responsable.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_30">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Lorsque les matériels sont accompagnés d’un passeport phytosanitaire tel que prévu par le <ref href="https://legilux.public.lu/eli/reg_ue/2016/2031/jo" id="36ecbb2d-10de-44a7-b8bd-ca159dbe9d12">règlement (UE) 2016/2031</ref>, ce passeport peut, si le fournisseur le souhaite, constituer le document du fournisseur visé au paragraphe 1<sup>er</sup>. Néanmoins, la mention « qualité CEE » est obligatoire, ainsi que celle de l’organisme officiel responsable et celle de la dénomination de la variété. Lorsqu’il s’agit de matériels importés d’un pays tiers conformément à l’article 15, le nom du pays de récolte doit aussi être mentionné. Ces renseignements peuvent figurer sur le passeport phytosanitaire proprement dit, mais séparément.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_14/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>Sont dispensés :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>de l’application de l’article 12, les petits producteurs dont la totalité de la production et de la vente de matériels de multiplication et de plants de légumes est destinée, pour un usage final, à des personnes sur le marché local qui ne sont pas engagées professionnellement dans la production de végétaux (circulation locale) ;</li>
+<li>des contrôles prévus à l’article 4, paragraphe 1<sup>er</sup> et de l’inspection officielle visée à l’article 11, paragraphe 3 et à l’article 16, la circulation locale de matériels de multiplication et de plants de légumes produits par des personnes ainsi exemptées.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_15/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<alinea>
+<content>
+<p>Sans préjudice des dispositions du <ref href="https://legilux.public.lu/eli/reg_ue/2016/2031/jo" id="c8daa1a1-15bc-438a-b2c1-d60adc4600b4">règlement (UE) 2016/2031</ref>, l’organisme officiel responsable peut appliquer à l’importation de matériels de multiplication et de plants de légumes en provenance de pays tiers à l’Union européenne, des conditions au moins équivalentes aux prescriptions de l’article 3. Si de telles conditions ne sont pas prévues à l’article 3, les conditions applicables à l’importation doivent être au moins équivalentes à celles qui s’appliquent à la production nationale.</p>
+</content>
+</alinea>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_16/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<alinea>
+<content>
+<p>Les matériels de multiplication et les plants de légumes font l’objet, au cours de leur production et de leur commercialisation, d’une inspection officielle effectuée par sondage et destinée à établir que les prescriptions et les conditions énoncées dans le présent règlement ont été respectées.</p>
+</content>
+</alinea>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_17/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>L’organisme officiel responsable effectue des essais et, le cas échéant, des tests sur des échantillons, afin de vérifier que les plants de légumes et les matériels de multiplication de légumes satisfont aux exigences et aux conditions fixées par le présent règlement, y compris celles d’ordre phytosanitaire.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_18/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>Les infractions aux dispositions du présent règlement sont punies conformément aux articles 16 et 17 de la <ref href="/eli/etat/leg/loi/2008/03/18/n1/jo" id="5bedafce-1526-496d-abbf-2197c28cf426" scl:verify="true">loi du 18 mars 2008</ref> sur la commercialisation des semences et plants ainsi que sur la coexistence des cultures génétiquement modifiées, conventionnelles et biologiques.</p>
+</content>
+</alinea>
+</article>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_19/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-11-07</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<alinea>
+<content>
+<p>Le <ref href="/eli/etat/leg/rgd/1993/09/02/n5/jo" id="72c2cabb-68c4-47bf-8b53-fe0a24268390" scl:verify="true">règlement grand-ducal modifié du 2 septembre 1993</ref> concernant la commercialisation des plantes maraîchères et des matériels de multiplication de plantes maraîchères autres que les semences est abrogé.</p>
+</content>
+</alinea>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760/art_20/20211107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/15/a760</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-06-14</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<alinea>
+<content>
+<p>Notre ministre ayant l’Agriculture dans ses attributions est chargé de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</article>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-10-15" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-10-15" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-10-15" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<b>Annexe I</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p scl:align="center">
+<b>Liste des genres et des espèces visés à l’article 1<sup>er</sup>, paragraphe 2</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>
+<i>Allium cepa </i>
+</i>L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe Cepa (oignon, échalion) </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe Aggregatum (échalote) </p>
+<p>
+<i>
+<i>Allium fistulosum </i>
+</i>L. (ciboule) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Allium porrum </i>
+</i>L. (poireau) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Allium sativum </i>
+</i>L. (ail) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Allium schoenoprasum</i>
+</i> L. (ciboulette) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Anthriscus cerefolium </i>
+</i>(L.) Hoffm. (cerfeuil) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Apium </i>
+<i>graveolens</i> </i>L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Céleri </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Céleri-rave </p>
+<p>
+<i>
+<i>Asparagus officinalis </i>
+</i>L. (asperge) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Beta vulgaris </i>
+</i>L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe de la Betterave potagère (betterave rouge, y compris Cheltenham beet) </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe de la Bette (poirée ou carde) </p>
+<p>
+<i>
+<i>Brassica oleracea</i>
+</i> L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Chou frisé </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Chou-fleur </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Chou pommé (chou rouge et chou blanc) </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Choux de Bruxelles </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Chou-rave </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Chou de Milan </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Chou brocoli (types « calabrais » et « à jets ») </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Chou palmier </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Chou tronchuda (chou portugais) <i>Brassica rapa </i>L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Chou chinois </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Navet-légume </p>
+<p>
+<i>
+<i>Capsicum annuum </i>
+</i>L. (piment ou poivron) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Cichorium endivia </i>
+</i>L. (chicorée frisée/scarole) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Cichorium intybus </i>
+</i>L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe de la Chicorée witloof </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe de la Chicorée à feuilles (chicorée à larges feuilles ou chicorée italienne) </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe de la Chicorée industrielle (racine) </p>
+<p>
+<i>
+<i>Citrullus lanatus</i>
+</i> (Thunb.) Matsum. et Nakai (pastèque) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Cucumis melo</i>
+</i> L. (melon) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Cucumis sativus</i>
+</i> L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Concombre </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Cornichon </p>
+<p>
+<i>
+<i>Cucurbita maxima</i>
+</i> Duchesne (potiron) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Cucurbita pepo</i>
+</i> L. (courge, y compris la citrouille mature et le pâtisson, ou courgette, y compris le pâtisson immature) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Cynara cardunculus</i>
+</i> L<i>. </i>
+</p>
+<p scl:space-tab="10">
+<i> — </i>Groupe de l’Artichaut </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Cardon </p>
+<p>
+<i>
+<i>Daucus carota</i>
+</i> L. (carotte et carotte fourragère) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Foeniculum vulgare</i>
+</i> Mill. (fenouil) </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe Azoricum </p>
+<p>
+<i>
+<i>Lactuca sativa</i>
+</i> L. (laitue) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Solanum lycopersicum</i>
+</i> L. (tomate) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Petroselinum crispum</i>
+</i> (Mill.) Nyman ex A. W. Hill </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Persil à feuilles </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Persil tubéreux </p>
+<p>
+<i>
+<i>Phaseolus coccineus</i>
+</i> L. (haricot d’Espagne) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Phaseolus vulgaris</i>
+</i> L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Haricot nain </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Haricot à rames </p>
+<p>
+<i>
+<i>Pisum sativum</i>
+</i> L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Pois rond </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Pois ridé </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Pois mange-tout </p>
+<p>
+<i>
+<i>Raphanus sativus</i>
+</i> L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Radis </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du Radis noir </p>
+<p>
+<i>
+<i>Rheum rhabarbarum</i>
+</i> L. (rhubarbe) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Scorzonera hispanica</i>
+</i> L. (scorsonère ou salsifi noir) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Solanum melongena</i>
+</i> L. (aubergine) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Spinacia oleracea</i>
+</i> L. (épinard) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Valerianella locusta</i>
+</i> (L.) Laterr. (mâche) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Vicia faba</i>
+</i> L. (fève) </p>
+<p scl:space-tab="10">
+<i> — </i>toutes les variétés </p>
+<p>
+<i>
+<i>Zea mays</i>
+</i> L. </p>
+<p scl:space-tab="10">
+<i> — </i>Groupe du maïs doux </p>
+<p scl:space-tab="10">
+<i>— </i>Groupe du maïs à éclater</p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+<attachment id="attachment_2">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-10-15" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-10-15" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-10-15" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<b>Annexe II</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p scl:align="center">
+<b>ORNQ concernant les matériels de multiplication et les plants de légumes</b>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_1" scl:cols="30 30 40" width="100">
+<tr>
+<td colspan="3" scl:align="center" scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="100">
+<p>
+<b>Bactéries</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:valign="middle" scl:width="30">
+<p>
+<b>ORNQ ou symptômes causés par l’ORNQ</b>
+</p>
+</td>
+<td scl:align="center" scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:valign="middle" scl:width="30">
+<p>
+<b>Matériels de multiplication et plants de légumes (genre ou espèce)</b>
+</p>
+</td>
+<td scl:align="center" scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:valign="middle" scl:width="40">
+<p>
+<b>Seuil pour la présence de l’ORNQ sur les matériels de multiplication et les plants de légumes (%)</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="30">
+<p>
+<i>Clavibacter michiganensis</i> ssp. <i>michiganensis</i> (Smith) Davis <i>et al</i>. [CORBMI]</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1">
+<p>
+<i>Solanum lycopersicum</i> L.</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="40">
+<p scl:align="center">0</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="30">
+<p>
+<i>Xanthomonas euvesicatoria </i>Jones <i>et al</i>. [XANTEU]</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="30">
+<p>
+<i>Capsicum annuum</i> L., </p>
+<p>
+<i>Solanum lycopersicum</i> L.</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="40">
+<p scl:align="center">0</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="30">
+<p>
+<i>Xanthomonas gardneri </i>(ex Šutič 1957) Jones <i>et al</i>. [XANTGA]</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="30">
+<p>
+<i>Capsicum annuum</i> L., </p>
+<p>
+<i>Solanum lycopersicum</i> L.</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="40">
+<p scl:align="center">0</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="30">
+<p>
+<i>Xanthomonas perforans </i>Jones <i>et al</i>. [XANTPF]</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="30">
+<p>
+<i>Capsicum annuum</i> L., </p>
+<p>
+<i>Solanum lycopersicum</i> L.</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="40">
+<p scl:align="center">0</p>
+</td>
+</tr>
+<tr>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="30">
+<p>
+<i>Xanthomonas vesicatoria </i>(ex Doidge) Vauterin <i>et al</i>. [XANTVE]</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="30">
+<p>
+<i>Capsicum annuum</i> L., </p>
+<p>
+<i>Solanum lycopersicum</i> L.</p>
+</td>
+<td scl:border-bottom-color="#000000" scl:border-bottom-style="solid" scl:border-bottom-width="1" scl:border-left-color="#000000" scl:border-left-style="solid" scl:border-left-width="1" scl:border-right-color="#000000" scl:border-right-style="solid" scl:border-right-width="1" scl:border-top-color="#000000" scl:border-top-style="solid" scl:border-top-width="1" scl:width="40">
+<p scl:align="center">0</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<eop/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_2" scl:cols="30 30 40" width="100">
+<tr>
+<td colspan="3" scl:width="100">
+<p scl:align="center">
+<b>Champignons et oomycètes</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle" scl:width="30">
+<p>
+<b>ORNQ ou symptômes causés par l’ORNQ</b>
+</p>
+</td>
+<td scl:align="center" scl:valign="middle" scl:width="30">
+<p>
+<b>Matériels de multiplication et plants de légumes (genre ou espèce)</b>
+</p>
+</td>
+<td id="2" scl:align="center" scl:valign="middle" scl:width="40">
+<p>
+<b>Seuil pour la présence de l’ORNQ sur les matériels de multiplication et les plants de légumes (%)</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:width="30">
+<p>
+<i>Fusarium</i> Link (genre anamorphique) [1FUSAG] autre que <i>Fusarium oxysporum</i> f. sp. <i>albedinis</i> (Kill. &amp; Maire) W.L. Gordon [FUSAAL] et <i>Fusarium circinatum </i>Nirenberg &amp; O’Donnell [GIBBCI]</p>
+</td>
+<td scl:width="30">
+<p>
+<i>Asparagus officinalis</i> L.</p>
+</td>
+<td id="2" scl:align="center" scl:width="40">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td scl:width="30">
+<p>
+<i>Helicobasidium brebissonii </i>(Desm.) Donk [HLCBBR]</p>
+</td>
+<td scl:width="30">
+<p>
+<i>Asparagus officinalis</i> L.</p>
+</td>
+<td id="2" scl:align="center" scl:width="40">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td scl:width="30">
+<p>
+<i>Stromatinia cepivora </i>Berk. [SCLOCE]</p>
+</td>
+<td scl:width="30">
+<p>
+<i>Allium cepa</i> L., <i>Allium fistulosum</i> L.,<i> Allium porrum </i>L<i>., Allium sativum</i> L.</p>
+</td>
+<td id="2" scl:align="center" scl:width="40">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td scl:width="30">
+<p>
+<i>Verticillium dahliae </i>Kleb. [VERTDA]</p>
+</td>
+<td scl:width="30">
+<p>
+<i>Cynara cardunculus</i> L.</p>
+</td>
+<td id="2" scl:align="center" scl:width="40">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td colspan="3" scl:width="100">
+<p scl:align="center">
+<b>Nématodes</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle" scl:width="30">
+<p>
+<b>ORNQ ou symptômes causés par l’ORNQ</b>
+</p>
+</td>
+<td scl:align="center" scl:valign="middle" scl:width="30">
+<p>
+<b>Matériels de multiplication et plants de légumes (genre ou espèce)</b>
+</p>
+</td>
+<td id="2" scl:align="center" scl:valign="middle" scl:width="40">
+<p>
+<b>Seuil pour la présence de l’ORNQ sur les matériels de multiplication et les plants de légumes (%)</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:width="30">
+<p>
+<i>Ditylenchus dipsaci </i>(Kuehn) Filipjev [DITYDI]</p>
+</td>
+<td scl:width="30">
+<p>
+<i>Allium cepa</i> L., <i>Allium sativum </i>L.</p>
+</td>
+<td id="2" scl:align="center" scl:width="40">
+<p>0</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<eop/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_3" scl:cols="30 30 40" width="100">
+<tr>
+<td colspan="3" scl:align="center" scl:width="100">
+<p>
+<b>Virus, viroïdes, maladies apparentées aux viroses et phytoplasmes</b>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:width="30">
+<p>
+<b>ORNQ ou symptômes causés par l’ORNQ</b>
+</p>
+</td>
+<td scl:width="30">
+<p>
+<b>Matériels de multiplication et plants de légumes (genre ou espèce)</b>
+</p>
+</td>
+<td scl:align="center" scl:width="40">
+<p>
+<b>Seuil pour la présence de l’ORNQ sur les matériels de multiplication et les plants de légumes (%)</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Virus de la striure du poireau [LYSV00]</p>
+</td>
+<td>
+<p>
+<i>Allium sativum</i> L.</p>
+</td>
+<td scl:align="center">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Virus de la bigarrure de l’oignon [OYDV00]</p>
+</td>
+<td>
+<p>
+<i>Allium cepa</i> L., <i>Allium sativum </i>L. </p>
+</td>
+<td scl:align="center">
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Viroïde du tubercule en fuseau de la pomme de terre [PSTVD0]</p>
+</td>
+<td>
+<p>
+<i>Capsicum annuum</i> L., <i>Solanum lycopersicum</i> L.</p>
+</td>
+<td scl:align="center">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<mod class="mod-start" for="#pm1"/>Tomato brown rugose fruit virus [ToBRFV]</p>
+</td>
+<td>
+<p>
+<i>Capsicum annuum</i> L., à l’exception des semences appartenant à une variété connue pour être résistante au ToBRFV</p>
+<p>
+<i>Solanum lycopersicum</i> L. et ses hybrides</p>
+</td>
+<td scl:align="center">
+<p>0 %<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Tospovirus de la maladie bronzée de la tomate [TSWV00]</p>
+</td>
+<td>
+<p>
+<i>Capsicum annuum </i>L.<i>, Lactuca sativa </i>L.<i>, Solanum lycopersicum </i>L.<i>, Solanum melongena </i>L.</p>
+</td>
+<td scl:align="center">
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Virus des feuilles jaunes en cuillère de la tomate [TYLCV0]</p>
+</td>
+<td>
+<p>
+<i>Solanum lycopersicum </i>L.</p>
+</td>
+<td scl:align="center">
+<p>0</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

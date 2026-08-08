@@ -4,12 +4,16 @@ version = 1
 # See https://reuse.software/spec/ for the REUSE specification.
 #
 # License model:
-#   Code, tooling, validators, exporters     -> EUPL-1.2
-#   Graph data, vocabularies, schemas         -> CC-BY-4.0
-#   Documentation, exports                    -> CC-BY-4.0
-#   Source assertions (original Clarvia work) -> EUPL-1.2
-#   Source snapshot metadata (YAML)           -> EUPL-1.2
-#   HTML snapshots (government websites)      -> LicenseRef-Gov-PublicDomain
+#   Graph code, tooling, validators, exporters     -> EUPL-1.2
+#   Graph data, vocabularies, schemas              -> CC-BY-4.0
+#   Documentation, exports                         -> CC-BY-4.0
+#   Source assertions (original Clarvia work)      -> EUPL-1.2
+#   Source snapshot metadata (YAML)                -> EUPL-1.2
+#   HTML snapshots (government websites)           -> LicenseRef-Gov-PublicDomain
+#   apps/web (former workflow-web)                 -> Apache-2.0
+#   lex project-authored code/docs                 -> Apache-2.0
+#   lex legislation corpus (official sources)      -> CC-BY-4.0 (per-country source_license)
+#   services/lex (Lex email, public-safe)          -> Apache-2.0
 
 # ── Source code (tooling, validators, exporters) ─────────────────────
 
@@ -177,7 +181,7 @@ path = [
   "LICENSES/**",
 ]
 SPDX-FileCopyrightText = "Various (see individual files)"
-SPDX-License-Identifier = "EUPL-1.2 AND CC-BY-4.0 AND LicenseRef-Gov-PublicDomain"
+SPDX-License-Identifier = "EUPL-1.2 AND CC-BY-4.0 AND Apache-2.0 AND LicenseRef-Gov-PublicDomain"
 
 # ── Placeholder and asset files ─────────────────────────────────────
 
@@ -195,3 +199,53 @@ SPDX-License-Identifier = "CC-BY-4.0"
 path = "REUSE.toml"
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
 SPDX-License-Identifier = "EUPL-1.2"
+
+# ── apps/web (former workflow-web; Apache-2.0) ───────────────────────
+
+[[annotations]]
+path = [
+  "apps/web/**",
+]
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "Apache-2.0"
+
+# ── lex project-authored code, schemas, docs, config ─────────────────
+
+[[annotations]]
+path = [
+  "lex/src/**",
+  "lex/scripts/**",
+  "lex/tests/**",
+  "lex/schemas/**",
+  "lex/docs/**",
+  "lex/.github/**",
+  "lex/*.md",
+  "lex/*.toml",
+  "lex/*.json",
+  "lex/*.lock",
+  "lex/.gitignore",
+  "lex/.gitattributes",
+  "lex/LICENSE",
+  "lex/NOTICE",
+]
+SPDX-FileCopyrightText = "2026 Clarvia"
+SPDX-License-Identifier = "Apache-2.0"
+
+# ── lex legislation corpus (official sources; not Apache-relicensed) ─
+# Per-country source.yml records source_license (LU: CC-BY-4.0).
+
+[[annotations]]
+path = [
+  "lex/countries/**",
+]
+SPDX-FileCopyrightText = "Official publishers as recorded in lex/countries/*/source.yml; curated by Clarvia"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# ── services/lex (Lex email public-safe tree) ────────────────────────
+
+[[annotations]]
+path = [
+  "services/lex/**",
+]
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "Apache-2.0"

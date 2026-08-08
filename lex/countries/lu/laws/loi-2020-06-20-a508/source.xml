@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="" scl:page-proof="many">
+		<meta>
+			<identification source="#somebody">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2020-06-20" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MECM"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2020-06-20" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2020-06-20" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2021-03-23</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2020-06-20</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2020-12-16</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-12-16</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2020/a508</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3299</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3303</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3300</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3123</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/237</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/14</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/916</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3317</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/870</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/604</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3180</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/915</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/809</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3305</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 16/12/2020 : Loi du 20 juin 2020 visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19.</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2011/09/02/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/2014/651/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/2013/1407/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/17/a544/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2009/06/05/n8/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+					<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/projet/pl/20170239</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">1</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2020-06-20-a508-consolide-20201216-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/consolide/20201216/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">1</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2020-06-20-a508-consolide-20201216-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2020-06-20" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2020-12-16" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2020/12/19/a1034/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2020/12/19/a1034/jo"/>
+						<destination href="#art_5"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2020/12/19/a1034/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2020/12/19/a1034/jo"/>
+						<destination href="#art_7"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2020/12/19/a1034/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2020/12/19/a1034/jo"/>
+						<destination href="#art_12bis"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/loi/2020/06/20/a508/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/loi/2020/12/19/a1034/jo" id="rp2" showAs="Loi du 19 décembre 2020 portant modification : 1° de la loi du 18 avril 2020 visant à mettre en place un régime de garantie en faveur de l’économie luxembourgeoise dans le cadre de la pandémie de Covid-19 ; 2° de la loi du 20 juin 2020 visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19 ; 3° de la loi du 24 juillet 2020 visant à stimuler les investissements des entreprises dans l’ère du Covid-19. "/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2020-12-21|2020-12-19|L|1034">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2020/12/19/a1034/jo">Loi du 19 décembre 2020 portant modification : 1° de la loi du 18 avril 2020 visant à mettre en place un régime de garantie en faveur de l’économie luxembourgeoise dans le cadre de la pandémie de Covid-19 ; 2° de la loi du 20 juin 2020 visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19 ; 3° de la loi du 24 juillet 2020 visant à stimuler les investissements des entreprises dans l’ère du Covid-19.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2020-12-21|2020-12-19|L|1034">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2020/12/19/a1034/jo">Loi du 19 décembre 2020 portant modification : 1° de la loi du 18 avril 2020 visant à mettre en place un régime de garantie en faveur de l’économie luxembourgeoise dans le cadre de la pandémie de Covid-19 ; 2° de la loi du 20 juin 2020 visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19 ; 3° de la loi du 24 juillet 2020 visant à stimuler les investissements des entreprises dans l’ère du Covid-19.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2020-12-21|2020-12-19|L|1034">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2020/12/19/a1034/jo">Loi du 19 décembre 2020 portant modification : 1° de la loi du 18 avril 2020 visant à mettre en place un régime de garantie en faveur de l’économie luxembourgeoise dans le cadre de la pandémie de Covid-19 ; 2° de la loi du 20 juin 2020 visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19 ; 3° de la loi du 24 juillet 2020 visant à stimuler les investissements des entreprises dans l’ère du Covid-19.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2020-12-21|2020-12-19|L|1034">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2020/12/19/a1034/jo">Loi du 19 décembre 2020 portant modification : 1° de la loi du 18 avril 2020 visant à mettre en place un régime de garantie en faveur de l’économie luxembourgeoise dans le cadre de la pandémie de Covid-19 ; 2° de la loi du 20 juin 2020 visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19 ; 3° de la loi du 24 juillet 2020 visant à stimuler les investissements des entreprises dans l’ère du Covid-19.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2020-12-21|2020-12-19|L|1034">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2020/12/19/a1034/jo">Loi du 19 décembre 2020 portant modification : 1° de la loi du 18 avril 2020 visant à mettre en place un régime de garantie en faveur de l’économie luxembourgeoise dans le cadre de la pandémie de Covid-19 ; 2° de la loi du 20 juin 2020 visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19 ; 3° de la loi du 24 juillet 2020 visant à stimuler les investissements des entreprises dans l’ère du Covid-19.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2020-12-21|2020-12-19|L|1034">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2020/12/19/a1034/jo">Loi du 19 décembre 2020 portant modification : 1° de la loi du 18 avril 2020 visant à mettre en place un régime de garantie en faveur de l’économie luxembourgeoise dans le cadre de la pandémie de Covid-19 ; 2° de la loi du 20 juin 2020 visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19 ; 3° de la loi du 24 juillet 2020 visant à stimuler les investissements des entreprises dans l’ère du Covid-19.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 16/12/2020 : Loi du 20 juin 2020 visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_1er">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_1er</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_1er/20200101</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 1<sup>er</sup>.</num>
+				<heading>
+					<b>Champ d’application</b>
+				</heading>
+				<paragraph id="paragraph_1">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>L’État, représenté par le ministre ayant l’Économie dans ses attributions, désigné ci-après par « ministre », peut octroyer des aides en faveur des entreprises qui disposent d’une autorisation d’éta­blissement délivrée en application de la <ref href="/eli/etat/leg/loi/2011/09/02/n1/jo" id="3c8c32ab-78a6-4c97-bfc6-4936a3428fac" scl:verify="true">loi modifiée du 2 septembre 2011</ref> réglementant l’accès aux professions d’artisan, de commerçant, d’industriel ainsi qu’à certaines professions indépendantes et qui portent un projet permettant de lutter contre la pandémie Covid-19.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_2">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Sont exclus du champ d’application de la présente loi :</p>
+							<ol scl:space-num="5" scl:start="1" scl:symbol="1°">
+								<li>les entreprises qui étaient en difficulté avant le 1<sup>er</sup> janvier 2020 conformément à l’article 2, paragraphe 18, du <ref href="/eli/reg_ue/2014/651/jo" id="a5ecaa96-0d1e-4d34-b078-e0d282893683" scl:verify="true">règlement (UE) n° 651/2014</ref> de la Commission du 17 juin 2014 déclarant certaines catégories d’aides compatibles avec le marché intérieur en application des articles 107 et 108 du traité sur le fonctionnement de l’Union européenne ;</li>
+								<li>les employeurs qui ont été condamnés à au moins deux reprises pour contraventions aux dispositions interdisant le travail clandestin ou aux dispositions interdisant l’emploi de ressortissants de pays tiers en séjour irrégulier, au cours des quatre dernières années précédant le jugement de la juridiction compétente.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_2">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_2/20200101</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 2.</num>
+				<heading>
+					<b>Définitions</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Aux fins de la présente loi, on entend par :</p>
+						<ol scl:start="1" scl:symbol="1°">
+							<li>« actifs incorporels » : les actifs n’ayant aucune forme physique ni financière, tels que les brevets, les licences, le savoir-faire ou d’autres types de propriété intellectuelle ;</li>
+							<li>« collaboration effective » : une collaboration entre au moins deux parties indépendantes l’une de l’autre et visant à échanger des connaissances ou des technologies, ou à atteindre un objectif commun, fondée sur une division du travail impliquant que les parties définissent conjointement la portée du projet collaboratif, contribuent à sa réalisation, et en partagent les risques et les résul­tats. Une ou plusieurs parties peuvent supporter l’intégralité des coûts du projet et donc soustraire d’autres parties à tout risque financier. Les contrats de recherche et la fourniture de services de recherche ne sont pas considérés comme des formes de collaboration ;</li>
+							<li>« clôture du projet » : soit la fin des travaux liés au projet de recherche et développement bénéficiant de l’aide, soit la première production liée au projet d’investissement bénéficiant de l’aide ;</li>
+							<li>« début du projet » : soit le début des travaux de recherche et développement, soit le début des travaux de construction liés à l’investissement, soit le premier engagement juridiquement contraignant de commande d’équipement ou tout autre engagement rendant l’investissement irréversible, selon l’événement qui se produit en premier. L’achat de terrains et les préparatifs, tels que l’obtention d’autorisations et la réalisation d’études de faisabilité, ne sont pas considérés comme le début des travaux. Dans le cas des rachats, le début des travaux est le moment de l’acquisition des actifs directement liés à l’établissement acquis ;</li>
+							<li>« développement expérimental » : l’acquisition, l’association, la mise en forme et l’utilisation de connaissances et d’aptitudes scientifiques, technologiques, commerciales et autres pertinentes en vue de développer des produits, des procédés ou des services nouveaux ou améliorés. Il peut aussi s’agir, par exemple, d’activités visant la définition théorique et la planification de produits, de procédés ou de services nouveaux, ainsi que la consignation des informations qui s’y rapportent.<p>Le développement expérimental peut comprendre la création de prototypes, la démonstration, l’élaboration de projets pilotes, les essais et la validation de produits, de procédés ou de services nouveaux ou améliorés dans des environnements représentatifs des conditions de la vie réelle, lorsque l’objectif premier est d’apporter des améliorations supplémentaires, au niveau technique, aux produits, procédés ou services qui ne sont pas en grande partie fixés. Il peut comprendre la création de prototypes et de projets pilotes commercialement exploitables qui sont nécessaire­ment les produits commerciaux finals et qui sont trop onéreux à produire pour être utilisés unique­ment à des fins de démonstration et de validation.</p>
+								<p>Le développement expérimental ne comprend pas les modifications de routine ou périodiques apportées à des produits, lignes de production, procédés de fabrication et services existants ;</p>
+							</li>
+							<li>« étude de faisabilité » : l’évaluation et l’analyse du potentiel d’un projet, qui visent à soutenir le processus décisionnel en révélant de façon objective et rationnelle les forces et les faiblesses du projet, ainsi que les perspectives et les menaces qu’il suppose, et qui précisent les ressources nécessaires pour le mener à bien et en évaluent, en définitive, les chances de succès ;</li>
+							<li>« frais de personnel » : les coûts liés aux chercheurs, aux techniciens et aux autres personnels d’appui dans la mesure où ils sont employés pour le projet concerné ;</li>
+							<li>« innovation de procédé » : la mise en œuvre d’une méthode de production ou de distribution nouvelle ou sensiblement améliorée (cette notion impliquant des changements significatifs d’ordre technique, matériel ou logiciel), ce qui exclut les changements ou améliorations mineurs, les accroissements de capacités de production ou de service obtenus par l’adjonction de systèmes de fabrication ou de systèmes logistiques qui sont très analogues à ceux déjà en usage, la cessation de l’utilisation d’un procédé, le simple remplacement ou l’extension de l’équipement, les changements découlant uniquement de variations du prix des facteurs, la production personnalisée, l’adaptation aux marchés locaux, les modifications saisonnières, régulières et autres changements cycliques et le commerce de produits nouveaux ou sensiblement améliorés ;</li>
+							<li>« intensité de l’aide » : le montant brut de l’aide exprimé en pourcentage des coûts admissibles d’un projet avant impôts ou autres prélèvements ;</li>
+							<li>« production de produits pertinents pour la lutte contre le Covid-19 » : la production de médica­ments, y compris de vaccins, et de traitements médicaux pertinents, de leurs produits intermé­diaires, de principes pharmaceutiques actifs et les matières premières; de dispositifs médicaux, d’équipement hospitalier et médical, dont des appareils de ventilation, des vêtements et équipe­ments de protection et des outils de diagnostic, et des matières premières nécessaires; de désinfec­tants et de leurs produits intermédiaires ainsi que des matières premières chimiques nécessaires à leur production et des outils de collecte et de traitement des données » ;</li>
+							<li>« projet de recherche et développement lié à la lutte contre le Covid-19 » : la recherche et le déve­loppement sur les vaccins, les médicaments et les traitements, les dispositifs médicaux et l’équi­pement hospitalier et médical, les désinfectants, ainsi que les vêtements et l’équipement de protection, de même que les innovations de procédé permettant une fabrication efficiente des produits nécessaires ;</li>
+							<li>« recherche et développement » : les travaux de création entrepris de façon systématique en vue d’accroître la somme de connaissances ainsi que l’utilisation de cette somme de connaissances pour de nouvelles applications, qu’il s’agisse de produits, de services, de procédés, de méthodes ou d’organisations ;</li>
+							<li>« recherche fondamentale » : des travaux expérimentaux ou théoriques entrepris essentiellement en vue d’acquérir de nouvelles connaissances sur les fondements de phénomènes ou de faits obser­vables, sans envisager aucune application ni utilisation commerciales directes ;</li>
+							<li>« recherche industrielle » : la recherche planifiée ou des enquêtes critiques visant à acquérir de nouvelles connaissances et aptitudes en vue de mettre au point de nouveaux produits, procédés ou services, ou d’entraîner une amélioration notable de produits, procédés ou services existants. Elle comprend la création de composants de systèmes complexes et peut inclure la construction de prototypes dans un environnement de laboratoire ou dans un environnement à interfaces simulées vers les systèmes existants, ainsi que des lignes pilotes, lorsque c’est nécessaire pour la recherche industrielle, et notamment pour la validation de technologies génériques ;</li>
+							<li>« valeur finale du projet » : la valeur comptable de l’actif corporel et incorporel résultant de l’in­vestissement du projet au moment de la cessation de la production de produits pertinents pour la lutte contre le Covid-19 ou au plus tard cinq ans après l’achèvement du projet.</li>
+						</ol>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_3">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_3</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_3/20201216</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-12-16</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 3.</num>
+				<heading>
+					<b>Aide en faveur des projets de recherche et développement liés à la lutte contre le Covid-19</b>
+				</heading>
+				<paragraph id="paragraph_3">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Lorsqu’une entreprise réalise un projet de recherche et développement lié à la lutte contre le Covid-19, le ministre peut lui attribuer une aide dont l’intensité, calculée sur la base des coûts admissibles du projet, ne pourra pas dépasser les plafonds fixés ci-après :</p>
+							<ol scl:space-num="5" scl:start="1" scl:symbol="1°">
+								<li>100 pour cent pour les projets de recherche fondamentale ;</li>
+								<li>
+									<mod class="mod-start" for="#pm1"/>60 pour cent<mod class="mod-end" for="#pm1"/>
+									<noteRef href="#M1" marker="1"/> pour les projets de recherche industrielle ou de développement expérimental.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_31">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>En cas de collaboration effective transfrontalière avec une autre entreprise ou un autre organisme de recherche, l’intensité de l’aide prévue au paragraphe 1<sup>er</sup>, point 2°, peut être majorée de quinze points de pourcentage. Il en va de même pour les projets de recherche et développement bénéficiant d’une aide d’au moins deux États membres de l’Espace économique européen.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_32">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>L’intensité de l’aide doit être arrêtée pour chaque entreprise bénéficiaire de l’aide, notamment dans le cas des projets de collaboration.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_33">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>L’entreprise doit s’engager à octroyer des licences non-exclusives à des conditions de pleine concurrence et de manière non discriminatoire à des tiers intéressés de l’Espace économique européen.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_4">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_4</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_4/20200101</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 4.</num>
+				<heading>
+					<b>Coûts admissibles des projets de recherche et développement liés à la lutte contre le Covid-19</b>
+				</heading>
+				<paragraph id="paragraph_34">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les coûts suivants sont admissibles au titre d’une aide :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>les frais de personnel ;</li>
+								<li>les coûts liés aux équipements numériques et informatiques, aux outils de diagnostic, aux outils de collecte et de traitement des données, aux services de recherche et développement, aux essais précliniques et cliniques (phases d’essai I-II), à l’obtention, à la validation et à la défense des brevets et autres actifs incor­porels, à l’obtention des évaluations de conformité ou autorisations nécessaires à la mise sur le marché de vaccins et de médicaments, de dispositifs médicaux, d’équipement hospitalier et médical, de désinfectants et d’équipement de protection individuel nouveaux et améliorés. Lorsque des équi­pements ne sont pas utilisés pendant toute leur durée de vie dans le cadre du projet, seuls les coûts d’amortissement correspondant à la durée du projet, calculés conformément aux principes comp­tables généralement admis, sont jugés admissibles ;</li>
+								<li>les coûts des bâtiments et des terrains, dans la mesure où et aussi longtemps qu’ils sont utilisés pour le projet. En ce qui concerne les bâtiments, seuls les coûts d’amortissement correspondant à la durée du projet, calculés conformément aux principes comptables généralement admis, sont jugés admis­sibles. Pour ce qui est des terrains, les frais de cession commerciale ou les coûts d’investissement effectivement supportés sont admissibles ;</li>
+								<li>les coûts de la recherche contractuelle ou de services de recherche, des connaissances et des brevets achetés ou pris sous licence auprès de sources extérieures à des conditions de pleine concurrence, ainsi que les coûts des services de conseil et des services équivalents utilisés exclusivement aux fins du projet ;</li>
+								<li>les frais généraux additionnels et les autres frais d’exploitation, notamment les coûts des matériaux, fournitures et produits similaires, supportés directement du fait du projet.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_35">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Les coûts suivants ne sont pas admissibles au titre d’une aide au profit de projets de recherche et développement liés à la lutte contre le Covid-19 :</p>
+							<ol scl:start="1" scl:symbol="1°">
+								<li>les frais et dépenses en rapport avec la commercialisation des résultats de projets de recherche et développement liés à la lutte contre le Covid-19;</li>
+								<li>les intérêts en rapport avec le financement d’un projet de recherche et développement lié à la lutte contre le Covid-19.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_36">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Tous les coûts admissibles doivent être alloués à l’une ou plusieurs des catégories spécifiques de recherche et de développement retenues à l’article 3.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_5">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_5</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_5/20201216</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-12-16</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 5.</num>
+				<heading>
+					<b>Aide à l’investissement en faveur de la production de produits pertinents pour la lutte contre le Covid-19</b>
+				</heading>
+				<paragraph id="paragraph_10">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Lorsqu’une entreprise réalise un projet d’investissement lié à la production de produits perti­nents pour la lutte contre le Covid-19, le ministre peut lui attribuer une aide dont l’intensité ne peut pas dépasser <mod class="mod-start" for="#pm2"/>60 pour cent<mod class="mod-end" for="#pm2"/>
+								<noteRef href="#M2" marker="2"/> des coûts admissibles.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_11">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Sont admissibles les coûts d’investissement liés à la production de produits pertinents pour la lutte contre le Covid-19, tels que des médi­caments, y compris les vaccins, et des traitements médicaux, leurs produits intermédiaires, les principes pharmaceutiques actifs et les matières premières; des dispositifs médicaux, de l’équipement hospitalier et médical, dont les appareils de ventilation, les vêtements et équipements de protection et les outils de diagnostic, et des matières premières nécessaires ; des désinfectants et de leurs produits intermé­diaires ainsi que des matières premières chimiques nécessaires à leur production et des outils de collecte et de traitement des données. Les coûts liés aux essais de mise en service des nouvelles installations de production sont aussi admissibles.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_12">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Le projet d’investissement doit être clôturé au plus tard six mois après l’octroi de l’aide. Seul le ministre peut constater si le projet a été clôturé endéans le délai. Lorsque celui-ci n’est pas respecté, l’entreprise doit rembourser, par mois de retard, 25 pour cent du montant de l’aide octroyée, sauf si le retard est dû à des facteurs indépendants de la volonté de l’entreprise bénéficiaire de l’aide.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_13">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>L’intensité de l’aide peut être augmentée de quinze points de pourcentage des coûts admissibles si le projet d’investissement est clôturé endéans les deux mois qui suivent la date d’octroi de l’aide ou si un autre État membre de l’Espace économique européen octroie une aide pour les mêmes coûts admissibles.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_14">
+					<num>(5)</num>
+					<alinea>
+						<content>
+							<p>Une garantie de couverture à hauteur de 30 pour cent des pertes peut être octroyée en plus de l’aide à l’investissement sur demande de l’entreprise. La garantie de couverture de pertes est émise dans un délai d’un mois à compter de la date à laquelle l’entreprise en a fait la demande.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le montant de la perte couverte par la garantie est fixé au plus tard cinq ans après la clôture du projet. Il correspond à la différence entre la somme des coûts d’inves­tissement admissibles, du coût d’opportunité de 10 pour cent par an sur le coût d’investissement sur maximum cinq ans, et du coût d’exploitation pour la même période, d’une part, et la somme de la subvention en capital susvisée ainsi que toute autre aide accordée dans le cadre du même projet d’investissement, des revenus sur la période de maximum cinq ans et de la valeur finale du projet, d’autre part.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Au plus tard quinze mois après le cinquième anniversaire de la date de clôture du projet, l’entreprise doit soumettre au ministre les comptes annuels approuvés, y compris une comptabilité séparée pour le projet d’investissement en question, portant sur la période maximale de cinq ans à compter de la date de clôture du projet. Si l’entreprise cesse la production avant, elle doit soumettre au ministre, au plus tard quinze mois après la date de cessation de la production, les comptes annuels approuvés, y compris la comptabilité séparée pour le projet d’investissement, portant sur la période à compter de la date de clôture du projet jusqu’à la date de la cessation de la production.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le montant de la perte couverte par la garantie ne peut pas excéder 500 000 euros par projet lorsque la production a été maintenue pendant au moins cinq ans depuis la date de clôture du projet. Si l’entreprise cesse la production avant, ce montant est calculé au pro rata.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_6">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_6</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_6/20201216</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-12-16</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 6.</num>
+				<heading>
+					<b>Modalités de la demande</b>
+				</heading>
+				<paragraph id="paragraph_15">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>La présente loi s’applique exclusivement aux aides ayant un effet incitatif. Une aide est réputée avoir un effet incitatif lorsque le début du projet a eu lieu après le 31 janvier 2020.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Lorsque le début du projet a eu lieu entre le 1<sup>er</sup> janvier 2020 et le 1<sup>er</sup> février 2020, l’aide est réputée avoir un effet incitatif si elle permet d’accélérer les travaux déjà en cours ou si la portée du projet peut être élargie. Dans ces cas, seuls les coûts supplémentaires liés aux efforts d’accélération ou à l’élargissement de la portée du projet sont admissibles.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_16">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>La demande d’aide doit être soumise au plus tard le <mod class="mod-start" for="#pm3"/>31 mai 2021<mod class="mod-end" for="#pm3"/>
+								<noteRef href="#M3" marker="3"/> et doit contenir au moins les informations suivantes :</p>
+							<ol scl:space-num="5" scl:start="1" scl:symbol="1°">
+								<li>le nom et la taille de l’entreprise conformément à l’annexe I du <ref href="/eli/reg_ue/2014/651/jo" id="7dd48e16-caf8-4ede-b4a6-14ea6f43094d" scl:verify="true">règlement (UE) n° 651/2014</ref> précité ;</li>
+								<li>une description du projet explicitant sa pertinence pour la lutte contre le Covid-19 ;</li>
+								<li>la date de début et de fin du projet ;</li>
+								<li>une description des modalités de valorisation économique des résultats du projet en cas de projet de recherche et développement et du potentiel économique ;</li>
+								<li>la localisation du projet ;</li>
+								<li>une liste des coûts du projet ;</li>
+								<li>le montant de l’aide nécessaire pour le projet, l’activité ou de l’investissement et des opérations connexes ; </li>
+								<li>les termes et conditions d’un projet de collaboration effective, indiquant notamment les contributions à ses coûts, le partage des risques et des résultats, la diffusion des résultats, les règles d’attribution de la propriété intellectuelle et l’accès à celle-ci, si applicable ;</li>
+								<li>une justification, le cas échéant, du besoin d’une garantie de couverture des pertes liée à l’investis­sement.</li>
+							</ol>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La demande d’aide peut contenir toute autre pièce que l’entreprise requérante estime utile afin de permettre au ministre d’apprécier le bien-fondé de sa demande.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_7">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_7</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_7/20201216</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-12-16</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 7.</num>
+				<heading>
+					<b>Modalités de l’octroi de l’aide</b>
+				</heading>
+				<paragraph id="paragraph_17">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les aides prévues aux articles 3 et 5, paragraphes 1<sup>er</sup> et 5, prennent la forme d’une subvention en capital.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_18">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Le ministre peut s’entourer de tous renseignements utiles concernant le projet, l’activité ou l’investissement et les opérations connexes, ou entendre les requérants en leurs explications, requérir, le cas échéant, la présentation d’un plan d’affaires ou de pièces équivalentes et se faire assister par des experts.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_19">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>La subvention en capital est versée après l’achèvement du projet en question. Toutefois, un ou plusieurs acomptes pourront être liquidés au fur et à mesure de la réalisation des investissements en vue desquels l’aide a été octroyée.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_20">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>L’aide doit être octroyée au plus tard le <mod class="mod-start" for="#pm4"/>30 juin 2021<mod class="mod-end" for="#pm4"/>
+								<noteRef href="#M4" marker="4"/>.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_8">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_8</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_8/20200101</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 8.</num>
+				<heading>
+					<b>Règles de cumul</b>
+				</heading>
+				<paragraph id="paragraph_21">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les aides prévues aux articles 3 et 5 ne peuvent pas être cumulées pour les mêmes coûts admissibles.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_22">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Pour les mêmes coûts admissibles, les aides définies aux articles 3 et 5 ne sont pas cumulables avec :</p>
+							<ol scl:space-num="5" scl:start="1" scl:symbol="1°">
+								<li>les aides de minimis conformément au <ref href="/eli/reg_ue/2013/1407/jo" id="d651b95c-ec58-4d58-a064-2ad73b3d8532" scl:verify="true">règlement (UE) n° 1407/2013</ref> de la Commission du 18 décembre 2013 relatif à l’application des articles 107 et 108 du traité aux aides de minimis, pour autant que le cumul conduit à dépasser l’intensité d’aide maximale prévue par le régime applicable ;</li>
+								<li>les aides prévues par la <ref href="/eli/etat/leg/loi/2017/05/17/a544/jo" id="661ece62-d62d-4967-ba43-ec4793ab4ac0" scl:verify="true">loi modifiée du 17 mai 2017</ref> relative à la promotion de la recherche, du développement et de l’innovation, pour autant que le cumul conduit à dépasser l’intensité d’aide maximale prévue par le régime applicable ;</li>
+								<li>tout autre financement public, y compris le financement de l’Union européenne, pour autant que le cumul conduit à dépasser l’intensité d’aide maximale prévue par le régime applicable.</li>
+							</ol>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_23">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Les aides prévues à l’article 5 ne peuvent pas être cumulées avec une autre aide à l’investissement pour les mêmes coûts admissibles.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_9">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_9</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_9/20201216</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-12-16</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 9.</num>
+				<heading>
+					<b>Transparence</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Toute aide individuelle <mod class="mod-start" for="#pm5"/>supérieure à 100 000 euros<mod class="mod-end" for="#pm5"/>
+							<noteRef href="#M5" marker="5"/> octroyée sur base des articles 3 et 5 est publiée sur le site de transparence de la Commission européenne au plus tard douze mois après son octroi et conformément à l’annexe III du <ref href="http://legilux.lu/eli/reg_ue/2014/651/jo" id="fce7213d-fae2-4b01-88d4-07a01d4c02c8">règlement (UE) n° 651/2014</ref> précité.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_10">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_10</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_10/20200101</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 10.</num>
+				<heading>
+					<b>Dispositions financière et budgétaire</b>
+				</heading>
+				<paragraph id="paragraph_24">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Le versement des aides prévues à l’article 3 sont imputés sur le Fonds de l’innovation tel que prévu par l’article 29, point c) de la <ref href="/eli/etat/leg/loi/2009/06/05/n8/jo" id="93cf84d3-f9c9-42c0-881b-dbaae11edf9e" scl:verify="true">loi modifiée du 5 juin 2009</ref> relative à la promotion de la recherche, du développement et de l’innovation.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_25">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Le versement des aides prévues à l’article 5 se fait dans la limite des crédits prévus par la loi budgétaire annuelle.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_11">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_11</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_11/20200101</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 11.</num>
+				<heading>
+					<b>Sanction et restitution</b>
+				</heading>
+				<paragraph id="paragraph_26">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>L’entreprise bénéficiaire d’une aide prévue aux articles 3 et 5 doit restituer l’aide si, avant la clôture du projet d’investissement ou de recherche et développement, il abandonne ou cède à des tiers, sans justification de raisons objectives, tout ou partie du projet, ou s’il gère le projet de façon impropre ou non conforme aux règles généralement admises de gestion, ou encore s’il modifie fondamentalement les objectifs et les méthodes dudit projet.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_27">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>La perte d’une aide consentie à une entreprise peut également intervenir si, avant l’expiration d’un délai de cinq ans à partir du versement intégral de la subvention en capital, il aliène les investisse­ments en vue desquels l’aide a été accordée ou s’il ne les utilise pas ou cesse de les utiliser aux fins et conditions prévues ou s’il abandonne ou cède à des tiers, sans justification de raisons objectives ou sans respecter la condition prévue à l’article 3, paragraphe 4, tout ou partie des résultats du projet de recherche et développement.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_28">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>L’entreprise bénéficiaire doit restituer l’aide prévue aux articles 3 et 5 lorsqu’après son octroi, une incompatibilité avec la présente loi est constatée.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_29">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>Dans chacun de ces cas, seul le ministre peut constater les faits entraînant la perte des aides prévues aux articles 3 et 5 et l’entreprise doit rembourser le montant des aides versées, augmenté des intérêts légaux applicables avant l’expiration d’un délai de trois mois à partir de la date de la décision ministérielle de remboursement, sauf si celle-ci prévoit à cet effet un autre délai.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_30">
+					<num>(5)</num>
+					<alinea>
+						<content>
+							<p>Le bénéfice des aides prévues par la présente loi n’est pas perdu lorsque l’aliénation, l’abandon ou le changement d’affectation ou les conditions d’utilisation prévues évoqués ci-avant ont été approu­vés préalablement par le ministre et sont la conséquence de force majeure ou de circonstances indé­pendantes de la volonté de l’entreprise bénéficiaire de l’aide.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_12">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_12</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_12/20200101</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 12.</num>
+				<heading>
+					<b>Disposition pénale</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Les personnes qui ont obtenu un des avantages prévus par la présente loi sur base de renseignements sciemment inexacts ou incomplets sont passibles des peines prévues à l’article 496 du <ref href="/eli/etat/leg/code/penal" id="a720ddbb-c115-45a6-98cd-8838799caeee">Code pénal</ref>, sans préjudice de la restitution des avantages et de la décision d’exclusion prévues à l’article 11.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_12bis">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_12bis_disposition_transitoire</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_12bis_disposition_transitoire/20201216</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 12bis. Disposition transitoire</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-12-16</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm6"/>Art. 12<i>bis</i>.</num>
+				<heading>Disposition transitoire</heading>
+				<alinea>
+					<content>
+						<p>Les demandes d’aides soumises avant le 16 décembre 2020 sont traitées selon les conditions prévues avant l’entrée en vigueur de la <ref href="???" scl:verify="true">loi du 19 décembre 2020</ref> portant modification : 1° de la <ref href="/eli/etat/leg/loi/2020/04/18/a307/jo" id="d7539bc6-81ad-4e06-9bf8-396bd3db5da5">loi du 18 avril 2020</ref> visant à mettre en place un régime de garantie en faveur de l’économie luxembourgeoise dans le cadre de la pandémie de Covid-19 ; 2° de la <ref href="/eli/etat/leg/loi/2020/06/20/a508/jo" id="f9778572-d3e0-46c7-85cb-e6ecb59a1571">loi du 20 juin 2020</ref> visant à mettre en place un régime d’aides en faveur des projets liés à la lutte contre la pandémie de Covid-19 ; 3° de la <ref href="/eli/etat/leg/loi/2020/07/24/a640/jo" id="adad0a76-235d-4992-8288-6cf69f3b4f3b">loi du 24 juillet 2020</ref> visant à stimuler les investissements des entreprises dans l’ère du Covid-19, à l’exception de l’article 7, paragraphe 4.<mod class="mod-end" for="#pm6"/>
+							<noteRef href="#M6" marker="6"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_13">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_13</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508/art_13/20200101</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2020/06/20/a508</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<eop/>Art. 13.</num>
+				<heading>
+					<b>Entrée en vigueur</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>La présente loi produit ses effets au 1<sup>er</sup> janvier 2020.</p>
+					</content>
+				</alinea>
+			</article>
+		</body>
+	</act>
+</akomaNtoso>

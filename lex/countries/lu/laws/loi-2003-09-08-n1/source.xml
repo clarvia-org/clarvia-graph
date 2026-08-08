@@ -1,0 +1,1503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2003-09-08" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MEC"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2003-09-08" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2003-09-08" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MT</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MJ</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MI</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2003-09-08</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEC</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/654</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/975</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2018-08-03</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2003/148</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2003A29821</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2018-08-03</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2021-12-23</scl:jolux>
+						<scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MEC</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 03/08/2018 : Loi du 8 septembre 2003 sur la violence domestique portant modification\n 1) de la loi du 31 mai 1999 sur la police et l'inspection générale de la police;\n 2) du code pénal;\n 3) du code d'instruction criminelle;\n 4) du nouveau code de procédure civile.</scl:jolux>
+					<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/pl/20010068</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1998/09/08/n4/jo</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/loi/1997/07/19/n1/jo</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/loi/1999/05/31/n7/jo</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/rgd/1998/08/03/n4/jo</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/loi/1808/11/17/n1/jo</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/code/instruction_criminelle/20161001</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/code/penal/20160710</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/code/penal/20170401</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/code/procedure_civile/20150901</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/code/procedure_penale/20170401</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/code/procedure_penale/20170527</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/code/procedure_penale/20170703</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2003-09-08-n1-consolide-20180803-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803/fr</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2003-09-08-n1-consolide-20180803-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/consolide/20180803/fr</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2003-09-08" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2013-09-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2018-08-03" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2013/07/30/n1/jo"/>
+						<destination href="#art_ier"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2013/07/30/n1/jo"/>
+						<destination href="#art_ii"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2013/07/30/n1/jo"/>
+						<destination href="#art_iii"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2013/07/30/n1/jo"/>
+						<destination href="#art_iv"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2018/07/20/a631/jo"/>
+						<destination href="#art_ier"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2018/07/20/a631/jo"/>
+						<destination href="#art_ii"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2018/07/20/a631/jo"/>
+						<destination href="#art_ii"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/loi/2003/09/08/n1/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/loi/2018/07/20/a631/jo" id="rp2" showAs="Loi du 20 juillet 2018 portant approbation de la Convention du Conseil de l’Europe sur la prévention et la lutte contre la violence à l’égard des femmes et la violence domestique, signée à Istanbul le 11 mai 2011 et modifiant 1) le Code pénal ; 2) le Code de procédure pénale ; 3) la loi modifiée du 8 septembre 2003 sur la violence domestique ; 4) la loi modifiée du 29 août 2008 sur la libre circulation des personnes et l’immigration."/>
+				<passiveRef href="/eli/etat/leg/loi/2013/07/30/n1/jo" id="rp3" showAs="Loi du 30 juillet 2013 portant modification  1. de la loi du 8 septembre 2003 sur la violence domestique;  2. de la loi modifiée du 31 mai 1999 sur la Police et l'Inspection générale de la Police;  3. du Code pénal;  4. du Nouveau Code de procédure civile."/>
+			</references>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2013-08-07|2013-07-30|L|150">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2013/07/30/n1/jo">Loi du 30 juillet 2013 portant modification 1. de la loi du 8 septembre 2003 sur la violence domestique; 2. de la loi modifiée du 31 mai 1999 sur la Police et l'Inspection générale de la Police; 3. du Code pénal; 4. du Nouveau Code de procédure civile.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2013-08-07|2013-07-30|L|150">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2013/07/30/n1/jo">Loi du 30 juillet 2013 portant modification 1. de la loi du 8 septembre 2003 sur la violence domestique; 2. de la loi modifiée du 31 mai 1999 sur la Police et l'Inspection générale de la Police; 3. du Code pénal; 4. du Nouveau Code de procédure civile.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2013-08-07|2013-07-30|L|150">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2013/07/30/n1/jo">Loi du 30 juillet 2013 portant modification 1. de la loi du 8 septembre 2003 sur la violence domestique; 2. de la loi modifiée du 31 mai 1999 sur la Police et l'Inspection générale de la Police; 3. du Code pénal; 4. du Nouveau Code de procédure civile.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2013-08-07|2013-07-30|L|150">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2013/07/30/n1/jo">Loi du 30 juillet 2013 portant modification 1. de la loi du 8 septembre 2003 sur la violence domestique; 2. de la loi modifiée du 31 mai 1999 sur la Police et l'Inspection générale de la Police; 3. du Code pénal; 4. du Nouveau Code de procédure civile.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2018-07-30|2018-07-20|L|631">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2018/07/20/a631/jo">Loi du 20 juillet 2018 portant approbation de la Convention du Conseil de l’Europe sur la prévention et la lutte contre la violence à l’égard des femmes et la violence domestique, signée à Istanbul le 11 mai 2011 et modifiant 1) le Code pénal ; 2) le Code de procédure pénale ; 3) la loi modifiée du 8 septembre 2003 sur la violence domestique ; 4) la loi modifiée du 29 août 2008 sur la libre circulation des personnes et l’immigration.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2018-07-30|2018-07-20|L|631">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2018/07/20/a631/jo">Loi du 20 juillet 2018 portant approbation de la Convention du Conseil de l’Europe sur la prévention et la lutte contre la violence à l’égard des femmes et la violence domestique, signée à Istanbul le 11 mai 2011 et modifiant 1) le Code pénal ; 2) le Code de procédure pénale ; 3) la loi modifiée du 8 septembre 2003 sur la violence domestique ; 4) la loi modifiée du 29 août 2008 sur la libre circulation des personnes et l’immigration.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2018-07-30|2018-07-20|L|631">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2018/07/20/a631/jo">Loi du 20 juillet 2018 portant approbation de la Convention du Conseil de l’Europe sur la prévention et la lutte contre la violence à l’égard des femmes et la violence domestique, signée à Istanbul le 11 mai 2011 et modifiant 1) le Code pénal ; 2) le Code de procédure pénale ; 3) la loi modifiée du 8 septembre 2003 sur la violence domestique ; 4) la loi modifiée du 29 août 2008 sur la libre circulation des personnes et l’immigration.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 03/08/2018 : Loi du 8 septembre 2003 sur la violence domestique portant modification</p>
+				<ol scl:start="1" scl:symbol="1)">
+					<li>de la loi du 31 mai 1999 sur la police et l'inspection générale de la police;</li>
+					<li>du code pénal;</li>
+					<li>du code d'instruction criminelle;</li>
+					<li>du nouveau code de procédure civile.</li>
+				</ol>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_ier">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_ier</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_ier/20180803</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. Ier.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2018-08-03</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm1"/>
+					<u>Art. I<sup>er</sup>.</u>
+				</num>
+				<paragraph id="paragraph_1">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Dans le cadre de ses missions de prévention des infractions et de protection des personnes, la police, avec l'autorisation du procureur d'Etat, expulse de leur domicile et de ses dépendances les personnes contre lesquelles il existe des indices qu'elles se préparent à commettre à l'égard d'une personne, avec laquelle elles cohabitent dans un cadre familial, une infraction contre la vie ou l'intégrité physique, ou qu'elles se préparent à commettre à nouveau à l'égard de cette personne, déjà victime, une infraction contre la vie ou l'intégrité physique.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La personne qui fait l’objet d’une mesure d’expulsion ne peut exciper d’éventuels droits réels ou personnels par rapport au domicile pour s’opposer à la mesure.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La personne expulsée est informée de son droit de formuler un recours contre la mesure d’expulsion selon les modalités prévues aux articles 1017-1 et 1017-2 du <ref href="https://legilux.public.lu/eli/etat/leg/code/procedure_civile/20210916" id="394ddc94-c03b-45cd-84dc-27b7830acf9e">Nouveau Code de procédure civile</ref>. Ce recours n’a pas d’effet suspensif.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_2">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>L’expulsion emporte interdiction pour la personne expulsée d’entrer au domicile et à ses dépendances, de prendre contact, oralement, par écrit ou par personne interposée, avec la personne protégée et de s’en approcher. La police a le droit de vérifier le respect de ces interdictions.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Si la nécessité se présente pour la personne expulsée d’entrer au domicile ou à ses dépendances, nonobstant l’interdiction visée à l’alinéa 1, elle ne peut le faire qu’en présence d’un agent de la police.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_3">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>La police donne à la personne qui fait l’objet de la mesure d’expulsion la possibilité d’emmener les objets personnels dont elle a un besoin urgent et de s’informer sur ses possibilités d’hébergement.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L’intéressé communique à la police l’adresse à laquelle il peut être joint. S’il ne peut ou ne veut fournir d’adresse, il est réputé faire élection de domicile à l’administration communale du lieu du domicile, notamment pour les besoins des convocations et des notifications prévues aux articles 1017-3 et 1017-4 du Nouveau Code de procédure civile et pour ceux de la signification d’une éventuelle assignation en vertu de l’article 1017-9 du <ref href="https://legilux.public.lu/eli/etat/leg/code/procedure_civile/20210916" id="4c796ab2-1b4a-4951-ac2b-abab66f93cfe">Nouveau Code de procédure civile</ref>, et la police l’en informe. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>En outre, la police se fait remettre toutes les clés et autres appareils conçus pour l’ouverture des portes donnant accès au domicile et à ses dépendances et avise l’intéressé que s’il s’introduit ou tente de s’introduire dans son domicile ou ses dépendances, nonobstant la mesure d’expulsion, il s’expose aux sanctions pénales prévues par l’article 439 du <ref href="https://legilux.public.lu/eli/etat/leg/code/penal/20210430" id="ba3f8c4a-bbf1-4117-8000-1232664ca701">Code pénal</ref>. </p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_4">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p> Lorsque l’intéressé refuse d’obtempérer volontairement à la mesure d’expulsion ou de remettre les clés et autres appareils conçus pour l’ouverture des portes, la police est autorisée à recourir au besoin à la force pour l’expulser ou pour s’emparer des clés et autres appareils conçus pour l’ouverture des portes.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_5">
+					<num>(5)</num>
+					<alinea>
+						<content>
+							<p>L’expulsion fait l’objet d’un procès-verbal à dresser incontinent par les agents de la police et à transmettre au procureur d’Etat. Ce procès-verbal mentionne notamment:</p>
+							<ul scl:symbol="dash">
+								<li>les indices à la base de la mesure d’expulsion;</li>
+								<li>le jour et l’heure de la mesure ordonnée; </li>
+								<li>l’adresse fournie par la personne expulsée permettant de la joindre.</li>
+							</ul>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Si l’exécution de la mesure ordonnée a dû être assurée par la force, il en est fait mention au procès-verbal.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le procès-verbal mentionne toutes autres déclarations que la personne expulsée entend faire.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le procès-verbal est présenté à la personne expulsée pour signature. Copie lui est remise. En cas de refus de signer ou en cas de refus d’accepter la remise de la copie, mention est faite du refus et des motifs de celui-ci.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Copie du procès-verbal est également remise à la personne à protéger. Si cette personne, pour des motifs de fait ou de droit, n’est pas à même de se voir remettre une copie, et s’il n’y a aucune autre personne à même de recevoir la copie en lieu et place de la personne à protéger, mention en est faite.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_6">
+					<num>(6)</num>
+					<alinea>
+						<content>
+							<p>La mesure d’expulsion prend fin de plein droit à 17.00 heures le quatorzième jour suivant celui de son entrée en vigueur, sauf si la personne protégée a introduit une requête en prolongation suivant les formalités prévues par l’article 1017-2 du <ref href="https://legilux.public.lu/eli/etat/leg/code/procedure_civile/20210916" id="816d9551-455b-4a62-9b20-9c2d8ff04c46">Nouveau Code de procédure civile</ref>.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>A l’expiration de la mesure d’expulsion et en l’absence d’une interdiction de retour au domicile prononcée sur base des articles 1017-1 et suivants du Nouveau Code de procédure civile, la police restitue les clés et autres appareils conçus pour l’ouverture des portes à l’intéressé qui les réclame.<mod class="mod-end" for="#pm1"/>
+								<noteRef href="#M1" marker="1"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_19">
+					<num>
+						<mod class="mod-start" for="#pm5"/>(7)</num>
+					<alinea>
+						<content>
+							<p>Au cas où l’expulsion n’est pas accordée par le procureur d’État, la police remet aux personnes cohabitant dans un cadre familial, une fiche informative sur les services prenant en charge des victimes adultes et mineures et les services prenant en charge des auteurs de violence domestique ainsi que les mesures légales disponibles, dans une langue qu’elles comprennent.<mod class="mod-end" for="#pm5"/>
+								<noteRef href="#M5" marker="5"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_ii">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_ii</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_ii/20180803</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. II.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2018-08-03</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<u>
+						<mod class="mod-start" for="#pm2"/>Art. II.</u>
+				</num>
+				<paragraph id="paragraph_16">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Le jour de l’entrée en vigueur de la mesure d’expulsion, la police informe un service d’assistance aux victimes de violence domestique de la mesure d’expulsion. Le parquet lui transmet une copie des documents concernant l’expulsion.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm7"/>Tout enfant victime directe ou victime indirecte, vivant dans le ménage doit être pris en charge par un service d’assistance aux victimes de violence domestique, spécialisé dans la prise en charge d’enfants victimes de violences.<mod class="mod-end" for="#pm7"/>
+								<noteRef href="#M7" marker="7"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Est visé par l’expression «service d’assistance aux victimes de violence domestique», tout organisme de droit privé ou public dont l’objet consiste à assister, guider et conseiller des personnes victimes de violence domestique, <mod class="mod-start" for="#pm6"/>y compris les enfants victimes directes et victimes indirectes de violence domestique,<mod class="mod-end" for="#pm6"/>
+								<noteRef href="#M6" marker="6"/> en recherchant activement leur contact.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L’organisme doit posséder, pour l’exercice des activités visées ci-dessus, un agrément écrit en application de la <ref href="/eli/etat/leg/loi/1998/09/08/n4/jo" id="1ef7a24c-25c3-47d2-89e7-9a6e41fc64cf" scl:verify="true">loi du 8 septembre 1998</ref> réglant les relations entre l’Etat et les organismes œuvrant dans les domaines social, familial et thérapeutique. Outre les conditions légales prévues à l’article 2 de la <ref href="/eli/etat/leg/loi/1998/09/08/n4/jo" id="57c18499-9db0-425a-abf0-c90fc302ad33" scl:verify="true">loi du 8 septembre 1998</ref> précitée et les conditions réglementaires prises en exécution de cette loi, l’organisme doit garantir que ses activités s’effectuent en collaboration avec la police, les instances judiciaires et autres instances étatiques compétentes, compte tenu de la spécificité des rôles qui leur sont respectivement dévolus, ainsi que dans le respect de la volonté et de la dignité de la personne protégée.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Toute personne qui, à un titre quelconque, participe aux activités d’un service d’assistance aux victimes de violence domestique, obtient ou reçoit communication de données personnelles en application du présent article, est tenue au secret professionnel aux conditions et sous les peines de l’article 458 du <ref href="https://legilux.public.lu/eli/etat/leg/code/penal/20210430" id="91839dff-7f35-47bb-a09d-84646daad1c4">Code pénal</ref>.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_17">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>De même, la police informe de la mesure d’expulsion un service prenant en charge les auteurs de violence domestique. Le parquet lui transmet une copie des documents concernant l’expulsion.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Est visé par l’expression «service prenant en charge les auteurs de violence domestique» tout organisme de droit privé ou public dont l’objet consiste à offrir une prise en charge psychologique contre la violence et des structures de contact et d’intervention proactive pour tout auteur de violence domestique au sens de la présente loi.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il travaille en collaboration avec le service d’assistance aux victimes de violence domestique.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>S’appliquent, le cas échant, par application analogique, les dispositions des alinéas 3 et 4 du paragraphe 1<sup>er</sup> précédent.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_18">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p> La police informe également la personne expulsée de son obligation de se présenter, endéans sept jours à compter du jour de l’entrée en vigueur de la mesure d’expulsion, auprès d’un service prenant en charge les auteurs de violence domestique. En cas de non-présentation de la personne expulsée endéans ce délai, le service prenant en charge les auteurs de violence domestique la contacte et la convoque en vue d’un entretien.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le service prenant en charge les auteurs de violence domestique fait un rapport au parquet.<mod class="mod-end" for="#pm2"/>
+								<noteRef href="#M2" marker="2"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_iii">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_iii</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_iii/20130901</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. III.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2013-09-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<u>
+						<mod class="mod-start" for="#pm3"/>Art. III.</u>
+				</num>
+				<alinea>
+					<content>
+						<p> Le ministre ayant dans ses attributions la Justice, la police, le Ministère public, les services d’assistance aux victimes de violence domestique et les services prenant en charge les auteurs de violence domestique établissent chaque année des statistiques ventilées par sexe, âge et relation entre auteur et victime et indiquant pour chaque rubrique l’existence ou l’absence d’une situation de cohabitation entre l’auteur et la victime, chacun pour ce qui le concerne, notamment, sur le nombre de plaintes, dénonciations, mesures d’expulsion, autres types d’intervention policière, interventions sociales, poursuites et condamnations pour les infractions visées aux articles suivants: </p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>327 à 330 combinés à l’article 330-1,</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>372 à 377,</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>393; 394; 395; 396; 397,</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>401bis,</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>409,</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>434 à 438, combiné à l’article 438-1 et</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>439 alinéa 2 du Code pénal</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>ainsi, que sur les mesures visées aux articles 1017-1 à 1017-12 du <ref href="https://legilux.public.lu/eli/etat/leg/code/procedure_civile/20210916" id="e504c6cc-7ab9-49ce-9237-f923fb472674">Nouveau Code de procédure civile</ref>.<mod class="mod-end" for="#pm3"/>
+							<noteRef href="#M3" marker="3"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_iv">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_iv</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_iv/20130901</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. IV.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2013-09-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<u>
+						<mod class="mod-start" for="#pm4"/>Art. IV.</u>
+				</num>
+				<alinea>
+					<content>
+						<p>Il est créé un comité de coopération entre les professionnels dans le domaine de la lutte contre la violence, dénommé ci-après le Comité de coopération, composé de représentants d’instances étatiques compétentes pour la mise en œuvre de la présente loi, ainsi que de représentants des services agréés d’assistance aux victimes de violence domestique et de représentants des services agréés prenant en charge les auteurs de violence domestique. Le Comité de coopération est chargé de centraliser et d’étudier les statistiques visées à l’article précédent, d’examiner la mise en œuvre et les éventuels problèmes d’application pratique des articles Ier à III de la présente loi, des articles 1017-1 à 1017-12 du <ref href="https://legilux.public.lu/eli/etat/leg/code/procedure_civile/20210916" id="1383eb80-f382-42e5-8077-d789d387ebe9">Nouveau Code de procédure civile</ref> et de l’article 3-1 du <ref href="https://legilux.public.lu/eli/etat/leg/code/procedure_civile/20210916" id="0767f613-7cc3-478e-a210-de6e44f81dfc">Code d’instruction criminelle</ref> et de soumettre au Gouvernement les propositions qu’il juge utile. Un règlement grand-ducal fixe sa composition, son organisation et son mode de fonctionnement.<mod class="mod-end" for="#pm4"/>
+							<noteRef href="#M4" marker="4"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<part id="part_1" wId="part_1">
+				<heading scl:separator=" ">
+					<b>Dispositions modificatives</b>
+				</heading>
+				<article id="art_v">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_v</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_v/20031007</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. V.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-10-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. V.</num>
+					<alinea>
+						<content>
+							<p>L’alinéa 2 de l’article 33 de la <ref href="/eli/etat/leg/loi/1999/05/31/n7/jo" id="86578ca5-4157-4f52-b479-bcf69f64afc6">loi du 31 mai 1999</ref> sur la Police et l’Inspection générale de la Police est remplacé comme suit:<embeddedStructure scl:hide-quote="true">
+									<alinea>
+										<content>
+											<p>«A cet effet, elle assure une surveillance générale et des contrôles dans les lieux qui lui sont légalement accessibles, exerce les attributions définies par les articles I à III de la <ref href="/eli/etat/leg/loi/2003/09/08/n1/jo" id="99b17c98-61dd-472f-bbe5-0170c5b3b190">loi du 8 septembre 2003</ref> sur la violence domestique, exécute des mesures de police administrative et prend des mesures matérielles de police administrative de sa compétence.»</p>
+										</content>
+									</alinea>
+								</embeddedStructure>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_vi">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_vi</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_vi/20031007</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. VI.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-10-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. VI.</num>
+					<alinea>
+						<content>
+							<p>Le <ref href="/eli/etat/leg/code/penal" id="632f2e45-fcb8-407b-a8cf-c303ca5451b9">Code pénal</ref> est modifié et complété comme suit:</p>
+						</content>
+					</alinea>
+					<paragraph id="paragraph_7">
+						<num>
+							<b>1°.</b>
+						</num>
+						<alinea>
+							<content>
+								<p> L’article 329 est remplacé comme suit:<embeddedStructure scl:hide-quote="true">
+										<article>
+											<num>
+												<b>«Art. 329</b>
+											</num>
+											<alinea>
+												<content>
+													<p>La menace par gestes ou emblèmes d’un attentat contre les propriétés, punissable d’une peine criminelle, sera punie d’un emprisonnement de huit jours à trois mois et d’une amende de 251 euros à 1.000 euros.</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>La menace par gestes ou emblèmes d’un attentat contre les personnes, punissable d’une peine criminelle ou d’une peine d’emprisonnement d’au moins six mois, sera punie d’un emprisonnement de trois mois à un an et d’une amende de 251 euros à 3.000 euros. »</p>
+												</content>
+											</alinea>
+										</article>
+									</embeddedStructure>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_8">
+						<num>
+							<b>2°.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<b>A la suite de l’article 330 est inséré un nouvel article 330-1 dont la teneur est la suivante:</b>
+									<embeddedStructure scl:hide-quote="true">
+										<article>
+											<num>
+												<b>«Art. 330-1.</b>
+											</num>
+											<alinea>
+												<content>
+													<p>Le minimum des peines portées par les articles 327, 329 et 330 sera élevé conformément à l’article 266, si le coupable a commis la menace d’attentat à l’égard</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>1° du conjoint ou conjoint divorcé, de la personne avec laquelle il vit ou a vécu habituellement;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>2° d’un ascendant légitime ou naturel ou de ses père ou mère adoptifs;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>3° d’un descendant légitime, naturel ou adoptif;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>4° d’un frère ou d’une sœur;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>5° d’un ascendant légitime ou naturel, des père ou mère adoptifs, d’un descendant, d’un frère ou d’une sœur d’une personne visée sub 1°;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>6° d’une personne dont la particulière vulnérabilité, due à son âge, à une maladie, à une infirmité, à une déficience physique ou psychique ou à un état de grossesse, est apparente ou connue de leur auteur;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>7° d’une personne qui est tenue à son égard par des liens de subordination.»</p>
+												</content>
+											</alinea>
+										</article>
+									</embeddedStructure>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_9">
+						<num>
+							<b>3°.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<b>Avant le dernier alinéa de l’article 377 est inséré un nouvel alinéa, libellé comme suit:</b>
+									<embeddedStructure scl:hide-quote="true">
+										<alinea>
+											<content>
+												<p>«Si la victime est</p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>1° le conjoint ou le conjoint divorcé, la personne avec laquelle le coupable vit ou a vécu habituellement,</p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>2° un ascendant légitime, naturel ou adoptif du coupable; </p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>3° un frère ou une sœur;</p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>4° un ascendant légitime ou naturel, les père ou mère adoptifs, un descendant, un frère ou une sœur d’une personne visée sub 1°.»</p>
+											</content>
+										</alinea>
+									</embeddedStructure>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_10">
+						<num>
+							<b>4°.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<b>L’article 409 est remplacé comme suit:</b>
+									<embeddedStructure scl:hide-quote="true">
+										<article>
+											<num>
+												<b>«Art. 409.</b>
+											</num>
+											<alinea>
+												<content>
+													<p>Sera puni d’un emprisonnement de six mois à cinq ans et d’une amende de 251 euros à 5.000 euros, quiconque aura volontairement fait des blessures ou porté des coups </p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>1° au conjoint ou conjoint divorcé, à la personne avec laquelle il vit ou a vécu habituellement;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>2° à un ascendant légitime ou naturel ou ses père ou mère adoptifs;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>3° à un descendant légitime, naturel ou adoptif de quatorze ans ou plus;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>4° à un frère ou une sœur;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>5° à un ascendant légitime ou naturel, aux père ou mère adoptifs, à un descendant de quatorze ans accomplis, à un frère ou à une sœur d’une personne visée sub 1°;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>6° à une personne dont la particulière vulnérabilité, due à son âge, à une maladie, à une infirmité, à une déficience physique ou psychique ou à un état de grossesse, est apparente ou connue de leur auteur;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>7° à une personne qui est tenue à son égard par des liens de subordination.</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>Lorsque les coups ou blessures ont été prémédités, les peines seront un emprisonnement de un an à cinq ans et une amende de 501 euros à 5.000 euros.</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>S’il est résulté des coups ou blessures volontaires visés à l’alinéa 1er une maladie ou une incapacité de travail personnel, les peines seront un emprisonnement de 1 an à 5 ans et une amende de 501 euros à 25.000 euros en l’absence de préméditation et, dans le cas contraire, la réclusion de 5 ans à 10 ans et une amende de 1.000 euros à 30.000 euros.</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>S’il est résulté des coups ou blessures volontaires visés à l’alinéa 1er soit une maladie paraissant incurable, soit une incapacité permanente de travail personnel, soit la perte de l’usage absolu d’un organe, soit une mutilation grave, les peines seront la réclusion de 10 ans à 15 ans et une amende de 2.500 euros à 50.000 euros en l’absence de préméditation et, dans le cas contraire, la réclusion de 15 ans à 20 ans et une amende de 3.000 euros à 50.000 euros.</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>Si les coups ou blessures volontaires visés à l’alinéa 1er ont causé la mort, sans intention de la donner, le coupable sera puni de la réclusion de 20 ans à 30 ans, en l’absence de préméditation de ces actes de violence, et de la réclusion à vie, dans le cas contraire. </p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>Si les coups ou blessures volontaires visés au présent article ont été commis à l’encontre d’une personne avec laquelle le coupable cohabite, le tribunal pourra en outre prononcer contre le condamné l’ensemble ou une partie des interdictions suivantes:</p>
+													<ul scl:space-item="5" scl:symbol="dash">
+														<li>l’interdiction de s’approcher du logement de la victime de plus d’une distance à déterminer;</li>
+														<li> l’interdiction de prendre contact avec la victime;</li>
+														<li>l’interdiction de s’approcher de la victime de plus d’une distance à déterminer.»</li>
+													</ul>
+												</content>
+											</alinea>
+										</article>
+									</embeddedStructure>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_11">
+						<num>
+							<b>5°</b>
+							<b>.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<b>A la suite de l’article 438 est inséré un article 438-1 libellé comme suit:</b>
+									<embeddedStructure scl:hide-quote="true">
+										<article>
+											<num>
+												<b>«Art. 438-1.</b>
+											</num>
+											<alinea>
+												<content>
+													<p>Dans les cas mentionnés aux articles 434 à 438, le minimum des peines portées par ces articles sera élevé conformément à l’article 266, lorsque le coupable a commis le crime ou le délit envers</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>1° son conjoint ou conjoint divorcé, la personne avec laquelle il vit ou a vécu habituellement;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>2° un ascendant légitime ou naturel ou ses père ou mère adoptifs; </p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>3° un descendant légitime, naturel ou adoptif;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>4° un frère ou une sœur;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>5° un ascendant légitime ou naturel, les père ou mère adoptifs, un descendant, un frère ou une sœur d’une personne visée sub 1°;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>6° une personne dont la particulière vulnérabilité, due à son âge, à une maladie, à une infirmité, à une déficience physique ou psychique ou à un état de grossesse, est apparente ou connue de leur auteur;</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>7° une personne qui est tenue à son égard par des liens de subordination. »</p>
+												</content>
+											</alinea>
+										</article>
+									</embeddedStructure>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_12">
+						<num>
+							<b>6°.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<b> L’article 439 est complété par un nouvel alinéa rédigé comme suit:</b>
+									<embeddedStructure scl:hide-quote="true">
+										<alinea>
+											<content>
+												<p>«Sera puni d’un emprisonnement de six mois à cinq ans et d’une amende de 501 euros à 5.000 euros, celui qui se sera introduit ou aura tenté de s’introduire dans une maison, un appartement, une chambre ou un logement habités par une personne avec laquelle il a cohabité, ou leurs dépendances, soit à l’aide de menaces ou de violences contre les personnes, soit au moyen d’effraction, d’escalade ou de fausses clefs, soit même au moyen des clefs s’il agit en violation d’une mesure d’expulsion régie par l’article I<sup>er</sup> de la <ref href="/eli/etat/leg/loi/2003/09/08/n1/jo" id="e45f35fb-7c43-4f27-9332-2a4c13f05c87">loi du 8 septembre 2003</ref> sur la violence domestique, d’une ordonnance de référé attribuant provisoirement le logement commun à son époux, d’une ordonnance lui interdisant le retour au domicile conformément à l’article 1017-1 ou 1017-7 du <ref href="/eli/etat/leg/code/procedure_civile" id="557f32f2-33cf-4f49-8015-1f3e3f4d64ec">nouveau Code de procédure civile</ref>.» </p>
+											</content>
+										</alinea>
+									</embeddedStructure>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_13">
+						<num>
+							<b>7°.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<b>L’article 448 est complété par un nouvel alinéa dont la teneur est la suivante:</b>
+									<embeddedStructure scl:hide-quote="true">
+										<alinea>
+											<content>
+												<p>«Lorsque le coupable a commis le délit envers</p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>1° son conjoint ou conjoint divorcé ou la personne avec laquelle il vit ou a vécu habituellement;</p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>2° un ascendant légitime ou naturel ou ses père ou mère adoptifs; </p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>3° un descendant légitime, naturel ou adoptif;</p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>4° un frère ou une sœur;</p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>5° un ascendant légitime ou naturel, les père ou mère adoptifs, un descendant, un frère ou une sœur d’une personne visée sub 1°; </p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>6° une personne dont la particulière vulnérabilité, due à son âge, à une maladie, à une infirmité, à une déficience physique ou psychique ou à un état de grossesse, est apparente ou connue de leur auteur;</p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>7° une personne qui est tenue à son égard par des liens de subordination</p>
+											</content>
+										</alinea>
+										<alinea>
+											<content>
+												<p>le minimum des peines portées par le premier alinéa sera élevé conformément à l’article 266.»</p>
+											</content>
+										</alinea>
+									</embeddedStructure>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_vii">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_vii</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_vii/20031007</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. VII.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-10-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. VII.</num>
+					<alinea>
+						<content>
+							<p>Le <ref href="/eli/etat/leg/code/procedure_penale" id="007f3710-8839-43fd-86e8-5e74537897a6">Code d’instruction criminelle</ref> est modifié et complété comme suit:</p>
+						</content>
+					</alinea>
+					<paragraph id="paragraph_14">
+						<num>
+							<b>1°.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>A la suite de l’article 3 actuel est inséré un nouvel article 3-1 libellé comme suit:<embeddedStructure scl:hide-quote="true">
+										<article>
+											<num>
+												<b>«Art. 3-1.</b>
+											</num>
+											<alinea>
+												<content>
+													<p>Toute association, d’importance nationale, dotée de la personnalité morale et agréée par le ministre de la Justice peut exercer les droits reconnus à la partie civile en ce qui concerne les faits constituant une infraction au sens des articles 375, 401 bis ou 409 du <ref href="/eli/etat/leg/code/penal" id="16134b9a-ef0d-4320-b34a-3de00aa796d1">Code pénal</ref> ou des articles 444 (2), 453, 454, 455, 456, 457, 457-1, 457-2, 457- 3 et 457-4 du <ref href="/eli/etat/leg/code/penal" id="66ba96f1-aa2a-4813-a317-65f60f5aa604">Code pénal</ref> et portant un préjudice direct ou indirect aux intérêts collectifs qu’elles ont pour objet de défendre, même si elles ne justifient pas d’un intérêt matériel ou moral et même si l’intérêt collectif dans lequel elles agissent se couvre entièrement avec l’intérêt social dont la défense est assurée par le ministère public.</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>Quand il s’agit d’une infraction au sens des articles 444 (2), 453, 454, 455, 456, 457, 457-1, 457-2, 457-3 et 457-4 du <ref href="/eli/etat/leg/code/penal" id="12ac0a92-6974-4312-9338-a6d92ec0db75">Code pénal</ref> commise envers des personnes considérées individuellement ou encore d’une infraction au sens des articles 375, 401bis ou 409 du <ref href="/eli/etat/leg/code/penal" id="498ba80d-3029-493f-a930-fe1a5b08d078">Code pénal</ref>, l’association ne pourra exercer par voie principale les droits reconnus à la partie civile qu’à la condition que ces personnes déclarent expressément et par écrit ne pas s’y opposer.»</p>
+												</content>
+											</alinea>
+										</article>
+									</embeddedStructure>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_15">
+						<num>
+							<b>2°.</b>
+						</num>
+						<alinea>
+							<content>
+								<p>L’article 24 (5) est remplacé comme suit:<embeddedStructure scl:hide-quote="true">
+										<paragraph>
+											<num>
+												<b>«(5)</b>
+											</num>
+											<alinea>
+												<content>
+													<p> Le procureur d’Etat peut préalablement à sa décision sur l’action publique décider de recourir à une médiation s’il lui apparaît qu’une telle mesure est susceptible d’assurer la réparation du dommage causé à la victime, ou bien de mettre fin au trouble résultant de l’infraction ou encore de contribuer au reclassement de l’auteur de l’infraction. Toutefois, le recours à la médiation est exclu en présence d’infractions à l’égard de personnes avec lesquelles l’auteur cohabite.</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>Le médiateur est tenu au secret professionnel. »</p>
+												</content>
+											</alinea>
+										</paragraph>
+									</embeddedStructure>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_viii">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_viii</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_viii/20031007</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. VIII.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-10-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. VIII.</num>
+					<alinea>
+						<content>
+							<p>
+								<b>Le <ref href="/eli/etat/leg/code/procedure_civile" id="cec3f97c-e466-4c7a-b960-9dfea1aec7f6">nouveau Code de procédure civile</ref> est modifié et complété comme suit: </b>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Dans la deuxième partie, au livre I<sup>er</sup>, à la suite du titre VII intitulé « De l’intervention de justice quant aux droits des époux », est inséré un nouveau titre VII bis intitulé « De l’intervention de justice en cas de violence domestique » libellé comme suit:<embeddedStructure scl:hide-quote="true">
+									<title id="part_1.article_art_viii.alinea_2.content_1.p_1.embeddedStructure_1.titre_viibis">
+										<num>
+											<b>«Titre VII bis.</b>
+										</num>
+										<heading scl:align="left" scl:style-format="b">
+											<b>De l’intervention de justice en cas de violence domestique</b>
+										</heading>
+										<section id="part_1.article_art_viii.alinea_2.content_1.p_1.embeddedStructure_1.titre_viibis.section_1">
+											<num>
+												<b>Section 1:</b>
+											</num>
+											<heading scl:separator=" ">
+												<b>De l’interdiction de retour au domicile consécutive à l’expulsion -<br/> mesure de police administrative</b>
+											</heading>
+											<article>
+												<num>
+													<b>Art. 1017-1.</b>
+												</num>
+												<alinea>
+													<content>
+														<p>Dans les cas où l’une des personnes énumérées à l’alinéa suivant a bénéficié de la protection d’une mesure d’expulsion fondée sur l’article I<sup>er</sup> de la <ref href="/eli/etat/leg/loi/2003/09/08/n1/jo" id="d4c5573a-f5fe-45de-bdd1-aab393e47cc6">loi du 8 septembre 2003</ref> sur la violence domestique, elle peut, par simple requête, demander au président du tribunal d’arrondissement de prononcer à l’égard de la personne expulsée une interdiction de retour au domicile pour une période maximale de trois mois consécutive à l’expiration de la mesure d’expulsion, et ce sans égard aux éventuels droits réels ou personnels de la personne expulsée par rapport au domicile.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>Sont habilités à formuler pareille demande,</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>1° le conjoint de la personne expulsée ou la personne avec laquelle la personne expulsée vit habituellement, les ascendants et descendants légitimes, naturels ou adoptifs, de la personne expulsée;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>2° les ascendants légitimes, naturels ou adoptifs, les descendants légitimes, naturels ou adoptifs mineurs ou atteints d’un handicap, du conjoint de la personne expulsée ou de la personne avec laquelle la personne expulsée vit habituellement,</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>à condition d’avoir cohabité avec la personne expulsée avant son expulsion et de justifier du fait que le domicile satisfait leurs besoins urgents de logement.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>L’interdiction visée au premier alinéa prend fin de plein droit dès qu’une décision intervient pour régler la résidence des époux durant l’instance en divorce. </p>
+													</content>
+												</alinea>
+											</article>
+											<article>
+												<num>
+													<b>Art. 1017-2.</b>
+												</num>
+												<alinea>
+													<content>
+														<p>La requête doit être présentée au plus tard le dixième jour suivant l’entrée en vigueur de la mesure d’expulsion fondée sur l’article Ier de la <ref href="/eli/etat/leg/loi/2003/09/08/n1/jo" id="2143915d-6f3d-43ef-ac92-0329c4b822fb">loi du 8 septembre 2003</ref> sur la violence domestique précitée. Si la demande a été introduite en conformité des dispositions du présent alinéa, l’expulsion continuera à produire ses effets en attendant l’ordonnance du président à intervenir. </p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>Elle est formée au greffe par l’intéressé ou par son mandataire et consignée sur un registre spécial, sur papier non timbré, tenu au greffe du tribunal.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>La déclaration contient, sous peine de nullité:</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>1° les noms, prénoms, professions des parties demanderesse et défenderesse;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>2° le domicile dont question ainsi que l’adresse que la partie défenderesse a communiquée à la Police en application de l’article Ier (3), alinéa 2 de la <ref href="/eli/etat/leg/loi/2003/09/08/n1/jo" id="2fd6b12b-a72d-431a-a101-1d56b947c0e2">loi du 8 septembre 2003</ref> sur la violence domestique, à moins qu’elle n’ait omis de le faire, auquel cas la mention du domicile suffit;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>3° l’objet de la demande et l’exposé des moyens.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>A la requête est jointe la copie du procès-verbal dressé au moment de l’expulsion. </p>
+													</content>
+												</alinea>
+											</article>
+											<article>
+												<num>
+													<b>Art. 1017-3.</b>
+												</num>
+												<alinea>
+													<content>
+														<p>Le greffier convoque les parties par lettre recommandée à la poste en leur faisant connaître les jour, heure et lieu de l’audience. Il y joint une copie de la requête pour le défendeur. La convocation contient, à peine de nullité la mention de l’article 80 alinéa 1<sup>er</sup>. Copie de la convocation est également envoyée à la police. </p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>L’audience pourra être fixée à un jour férié ou à un jour habituellement chômé.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>Il est statué d’urgence sur la demande par ordonnance du président. </p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>L’ordonnance prononçant l’interdiction de retour au domicile est exécutoire par provision et sans caution, sur minute et avant enregistrement.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>L’ordonnance est notifiée par la voie du greffe. Le greffier envoie également copie de l’ordonnance à la Police.</p>
+													</content>
+												</alinea>
+											</article>
+											<article>
+												<num>
+													<b>«Art. 1017-4.</b>
+												</num>
+												<alinea>
+													<content>
+														<p>L’ordonnance peut être frappée d’appel dans un délai de quinze jours à partir de la notification.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>L’appel est porté devant la Cour d’appel. Il est formé par le dépôt d’une requête motivée au greffe du tribunal d’arrondissement. La date du dépôt est inscrite par le greffier sur l’original de la requête. Dans les trois jours du dépôt de la requête, le dossier est transmis à la Cour d’appel. L’appel est jugé selon la même procédure qu’en première instance.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>En cas de défaut, l’ordonnance est susceptible d’opposition dans un délai de huit jours à partir de la notification, lequel court simultanément avec le délai d’appel. L’opposition consiste dans une déclaration à faire au greffe du tribunal d’arrondissement.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>L’arrêt rendu sur l’appel n’est pas susceptible d’opposition.»</p>
+													</content>
+												</alinea>
+											</article>
+											<article>
+												<num>
+													<b>Art. 1017-5.</b>
+												</num>
+												<paragraph>
+													<num>
+														<b>(1)</b>
+													</num>
+													<alinea>
+														<content>
+															<p>Les parties seront tenues de comparaître en personne ou par un avocat.</p>
+														</content>
+													</alinea>
+												</paragraph>
+												<paragraph>
+													<num>
+														<b>(2)</b>
+													</num>
+													<alinea>
+														<content>
+															<p> Les parties peuvent se faire assister ou représenter par:</p>
+															<ol scl:space-item="3" scl:start="1" scl:symbol="none">
+																<li>un avocat,</li>
+																<li>leur conjoint ou la personne avec laquelle elles vivent habituellement,</li>
+																<li>leurs parents ou alliés en ligne directe,</li>
+																<li>leurs parents ou alliés en ligne collatérale jusqu’au troisième degré inclus,</li>
+																<li>les personnes exclusivement attachées à leur service personnel ou à leur entreprise,</li>
+																<li>un collaborateur d’un service d’assistance aux victimes de violence domestique.</li>
+															</ol>
+														</content>
+													</alinea>
+													<alinea>
+														<content>
+															<p>Le représentant s’il n’est avocat doit justifier d’un pouvoir spécial.</p>
+														</content>
+													</alinea>
+												</paragraph>
+											</article>
+											<article>
+												<num>
+													<b>Art. 1017-6.</b>
+												</num>
+												<alinea>
+													<content>
+														<p>Le président peut, à la demande de la partie requérante, prononcer des condamnations à des astreintes.</p>
+													</content>
+												</alinea>
+											</article>
+										</section>
+										<section id="part_1.article_art_viii.alinea_2.content_1.p_1.embeddedStructure_1.titre_viibis.section_2">
+											<num>
+												<b>Section 2:</b>
+											</num>
+											<heading scl:separator=" ">
+												<b>De diverses autres interdictions et injonctions en matière de violence</b>
+											</heading>
+											<article>
+												<num>
+													<b>Art. 1017-7.</b>
+												</num>
+												<alinea>
+													<content>
+														<p>Lorsqu’une personne rend intolérable pour une personne proche la continuation de la vie commune, soit parce qu’elle l’agresse ou la menace de l’agresser soit parce qu’elle a à son encontre un comportement qui porte gravement atteinte à sa santé psychique, le président du tribunal d’arrondissement lui enjoint, sur la demande de la personne concernée, de quitter le domicile et ses dépendances et lui interdit d’y retourner avant l’expiration d’un délai maximal de trois mois, et ce sans égard aux éventuels droits réels ou personnels de la partie défenderesse par rapport au domicile.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>Sont habilités à formuler pareille demande,</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>1° le conjoint ou la personne avec laquelle la personne défenderesse vit habituellement, les ascendants et descendants légitimes, naturels ou adoptifs;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>2° les ascendants légitimes, naturels ou adoptifs, les descendants légitimes, naturels ou adoptifs mineurs ou atteints d’un handicap, du conjoint ou de la personne avec laquelle la partie défenderesse vit habituellement,</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>à condition de justifier du fait que le domicile satisfait leurs besoins urgents de logement et qu’elles cohabitent ou ont cohabité avec la partie défenderesse au cours des trois mois précédant la demande.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>L’interdiction visée au premier alinéa prend fin de plein droit dès qu’une décision intervient pour régler la résidence des époux durant l’instance en divorce. </p>
+													</content>
+												</alinea>
+											</article>
+											<article>
+												<num>
+													<b>Art. 1017-8.</b>
+												</num>
+												<alinea>
+													<content>
+														<p>Lorsqu’une personne agresse ou menace d’agresser une personne proche ou lorsqu’elle a à son encontre un comportement qui porte gravement atteinte à sa santé psychique et lui rend ainsi intolérable toute rencontre avec elle, le président du tribunal d’arrondissement prononce, sur la demande de la personne concernée, tout ou partie des injonctions ou interdictions énumérées ci-après, à condition qu’elles ne vont pas à l’encontre d’intérêts fondamentaux et légitimes de la partie défenderesse:</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>- l’interdiction de prendre contact avec la partie demanderesse;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>- l’interdiction d’envoyer des messages à la partie demanderesse;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>- l’interdiction de s’approcher de la partie demanderesse de plus d’une distance à définir;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>- l’interdiction d’établir son domicile dans le même quartier que la partie demanderesse;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>- l’interdiction de fréquenter certains endroits;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>- l’interdiction d’emprunter certains itinéraires;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>- l’interdiction, renouvelable, pour une durée à fixer par le Président, d’héberger son ou ses enfants ou de voir son enfant ou ses enfants en-dehors d’une structure spécialisée désignée par lui en attendant toute autre décision judiciaire à intervenir en matière de droit de garde et de visite; </p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>- l’injonction de laisser la partie demanderesse entrer au domicile commun pour enlever ses affaires personnelles.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>Sont habilités à formuler pareille demande </p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>1° le conjoint ou conjoint divorcé, la personne avec laquelle la partie défenderesse vit ou a vécu habituellement, les ascendants légitimes, naturels ou adoptifs, les descendants légitimes, naturels ou adoptifs;</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>2° les ascendants légitimes, naturels ou adoptifs, les descendants légitimes, naturels ou adoptifs mineurs ou atteints d’un handicap du conjoint ou du conjoint divorcé ou de la personne avec laquelle la partie défenderesse vit ou a vécu habituellement.</p>
+													</content>
+												</alinea>
+											</article>
+											<article>
+												<num>
+													<b>Art. 1017-9.</b>
+												</num>
+												<alinea>
+													<content>
+														<p>La demande est portée par voie d’assignation à une audience tenue au jour et à l’heure indiquée par le président. L’audience peut être tenue un jour férié ou un jour habituellement chômé.</p>
+													</content>
+												</alinea>
+												<alinea>
+													<content>
+														<p>L’assignation est dispensée des droits de timbre et d’enregistrement et de la formalité de l’enregistrement.</p>
+													</content>
+												</alinea>
+											</article>
+											<article>
+												<num>
+													<b>Art. 1017-10.</b>
+												</num>
+												<paragraph>
+													<num>
+														<b>(1)</b>
+													</num>
+													<alinea>
+														<content>
+															<p>Les parties seront tenues de comparaître en personne ou par un avocat.</p>
+														</content>
+													</alinea>
+												</paragraph>
+												<paragraph>
+													<num>
+														<b>(2)</b>
+													</num>
+													<alinea>
+														<content>
+															<p>Les parties peuvent se faire assister ou représenter par:</p>
+															<ol scl:space-item="3" scl:start="1" scl:symbol="none">
+																<li>un avocat,</li>
+																<li>leur conjoint ou la personne avec laquelle elles vivent habituellement,</li>
+																<li>leurs parents ou alliés en ligne directe,</li>
+																<li>leurs parents ou alliés en ligne collatérale jusqu’au troisième degré inclus,</li>
+																<li>les personnes exclusivement attachées à leur service personnel ou à leur entreprise,</li>
+																<li>un collaborateur d’un service d’assistance aux victimes de violence domestique.</li>
+															</ol>
+														</content>
+													</alinea>
+													<alinea>
+														<content>
+															<p>Le représentant s'il n'est avocat doit justifier d'un pouvoir spécial.</p>
+														</content>
+													</alinea>
+												</paragraph>
+											</article>
+											<article>
+												<num>
+													<b>Art. 1017-11.</b>
+												</num>
+												<alinea>
+													<content>
+														<p> Il est statué d’urgence sur la demande.</p>
+													</content>
+												</alinea>
+											</article>
+											<article>
+												<num>
+													<b>Art. 1017-12.</b>
+												</num>
+												<alinea>
+													<content>
+														<p> Sont applicables les dispositions des articles 938 à 940.»</p>
+													</content>
+												</alinea>
+											</article>
+										</section>
+									</title>
+								</embeddedStructure>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</part>
+			<part id="part_2" wId="part_2">
+				<heading scl:separator=" ">
+					<b>Dispositions abrogatoires</b>
+				</heading>
+				<article id="art_ix">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_1</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_1/20031007</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">«Art. IX.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-10-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>«Art. IX.</num>
+					<alinea>
+						<content>
+							<p> L’article VI de la <ref href="/eli/etat/leg/loi/1997/07/19/n1/jo" id="1839b8dc-d381-4eaa-acc4-fa85aa91dad1">loi du 19 juillet 1997</ref> complétant le <ref href="/eli/etat/leg/code/penal" id="7cf10b32-db35-4e5b-ba3c-d4df23fda9f0">code pénal</ref> en modifiant l’incrimination du révisionnisme et d’autres agissements fondés sur des discriminations illégales est abrogé.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_x">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_x</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_x/20031007</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. X.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-10-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. X.</num>
+					<alinea>
+						<content>
+							<p>L’article 413 du <ref href="/eli/etat/leg/code/penal" id="6cc6df0f-9904-49a6-a7c5-c7f46a059603">Code pénal</ref> est abrogé.</p>
+						</content>
+					</alinea>
+				</article>
+			</part>
+			<part id="part_3" wId="part_3">
+				<heading scl:separator=" ">
+					<b>Dispositions finales</b>
+				</heading>
+				<article id="art_xi">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_xi</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_xi/20031007</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. XI.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-10-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. XI.</num>
+					<alinea>
+						<content>
+							<p>Dans toute disposition légale ou réglementaire future, la référence à la présente loi pourra se faire sous une forme abrégée en utilisant les termes « loi sur la violence domestique ».</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_xii">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_xii</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1/art_xii/20031007</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2003/09/08/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. XII.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-10-07</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. XII.</num>
+					<alinea>
+						<content>
+							<p>La présente loi entrera en vigueur le premier du mois suivant celui de son insertion au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+			</part>
+		</body>
+	</act>
+</akomaNtoso>

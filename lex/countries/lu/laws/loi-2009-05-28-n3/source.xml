@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#2009A1756A">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-05-28" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MI"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-05-28" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-05-28" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-06-03</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2009-05-28</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2020-10-12</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2009A1756A</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2011-06-03</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/125</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MI</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/746</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/979</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 03/06/2011 : Loi du 28 mai 2009 portant fusion des communes de Clervaux, de Heinerscheid et de Munshausen.</scl:jolux>
+					<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/PL/20090038</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 03/06/2011 : Loi du 28 mai 2009 portant fusion des communes de Clervaux, de Heinerscheid et de Munshausen.</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1988/12/13/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2003/02/18/n2/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2001/02/23/n2/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">1756</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2009-05-28-n3-consolide-20110603-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/consolide/20110603/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">1756</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2009-05-28-n3-consolide-20110603-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2009-05-28" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2011-06-03" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2011/05/24/n5/jo"/>
+						<destination href="#art_12"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/loi/2009/05/28/n3/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/loi/2011/05/24/n5/jo" id="rp2" showAs="Loi du 24 mai 2011 portant modification de la loi du 28 mai 2009 portant fusion des communes de Clervaux, de Heinerscheid et de Munshausen."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2011-05-30|2011-05-24|L|110">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2011/05/24/n5/jo">Loi du 24 mai 2011 portant modification de la loi du 28 mai 2009 portant fusion des communes de Clervaux, de Heinerscheid et de Munshausen.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 03/06/2011 : Loi du 28 mai 2009 portant fusion des communes de Clervaux, de Heinerscheid et de Munshausen.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_1er">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_1er</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_1er/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 1<sup>er</sup>.</num>
+				<alinea>
+					<content>
+						<p>Les communes de Clervaux, de Heinerscheid et de Munshausen sont fusionnées en une nouvelle commune dénommée «Commune de Clervaux».</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_2">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_2/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 2.</num>
+				<alinea>
+					<content>
+						<p>Le siège de la nouvelle commune est fixé à Clervaux.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_3">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_3</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_3/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 3.</num>
+				<alinea>
+					<content>
+						<p>Le collège des bourgmestre et échevins de la nouvelle commune comprend un bourgmestre et trois échevins. Le nombre des échevins sera ramené à deux après le renouvellement intégral des conseils communaux de 2023.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_4">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_4</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_4/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 4.</num>
+				<paragraph id="paragraph_1">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Le conseil communal de la nouvelle commune se compose de treize conseillers. Le nombre de conseillers sera mis en concordance avec le nombre de conseillers prévu par la loi électorale lors du renouvellement intégral des conseils communaux de 2023.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_2">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Le premier conseil de la commune de Clervaux sera élu lors des élections communales ordinaires qui auront lieu le 9 octobre 2011 conformément aux dispositions de l'article 13 ci-après.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_5">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_5</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_5/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 5.</num>
+				<alinea>
+					<content>
+						<p>Les règlements communaux qui existent dans les communes au jour de la fusion sont maintenus en vigueur pour le territoire pour lequel ils ont été édictés jusqu'à leur remplacement par des règlements communs.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_6">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_6</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_6/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 6.</num>
+				<paragraph id="paragraph_3">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les fonctionnaires, employés communaux, employés privés et ouvriers des communes de Clervaux, de Heinerscheid et de Munshausen ainsi que les ouvriers du syndicat intercommunal pour la construction, l'entretien et le fonctionnement d'une école régionale avec centre sportif à Reuler sont pris en charge par la nouvelle commune.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_4">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Ils continuent d'être soumis aux dispositions de leurs statuts et contrats et d'être rémunérés dans les mêmes conditions que s'ils étaient dans leur commune ou dans leur syndicat d'origine. Ils conservent dans la nouvelle commune leurs droits acquis et l'ensemble des avantages dont ils bénéficiaient et notamment les mêmes possibilités d'avancement, d'échelons et de grades, de durée de carrière ainsi que les mêmes modalités de rémunération que dans leur commune ou dans leur syndicat d'origine.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_7">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_7</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_7/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 7.</num>
+				<alinea>
+					<content>
+						<p>La nouvelle commune succède à tous les biens, droits, charges et obligations des communes fusionnées et du syndicat intercommunal pour la construction, l'entretien et le fonctionnement d'une école régionale avec centre sportif à Reuler. Ce syndicat sera dissous conformément aux dispositions de la <ref href="/eli/etat/leg/loi/2001/02/23/n2">loi du 23 février 2001</ref> concernant les syndicats de communes.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_8">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_8</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_8/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 8.</num>
+				<paragraph id="paragraph_5">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les offices sociaux des communes fusionnées sont dissous au jour de l'installation de l'office social de la nouvelle commune.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_6">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Le nouvel office social succède à tous les biens, droits, charges et obligations des offices dissous.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_9">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_9</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_9/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 9.</num>
+				<paragraph id="paragraph_7">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>La nouvelle commune bénéficie d'une aide spéciale de l'Etat s'élevant à 2.500 euros par habitant de la nouvelle commune. Le nombre d'habitants à considérer est celui qui existe le 1<sup>er</sup> janvier 2012.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_8">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Cette aide est destinée prioritairement à contribuer au financement des projets suivants:</p>
+							<ul>
+								<li>la construction d'une maison relais pour enfants près du centre scolaire intercommunal;</li>
+								<li>la construction d'un nouveau hall pour le service technique communal;</li>
+								<li>l'amélioration des infrastructures d'approvisionnement en eau potable;</li>
+								<li>la remise en état, respectivement la construction des stations d'épuration de Urspelt, Weicherdange, Mecher, Roder et Clervaux;</li>
+								<li>la création d'une infrastructure de loisirs à couvert;</li>
+								<li>la création d'une zone d'activités économiques à caractère régional.</li>
+							</ul>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_9">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>L'aide spéciale prévue au paragraphe (1) est liquidée par tranches au cours d'une période de dix ans à partir du 1<sup>er</sup> janvier 2012, ceci au fur et à mesure de la réalisation des projets énoncés au paragraphe (2). Des avances peuvent être accordées à partir de l'entrée en vigueur de la présente loi pour des projets en voie de réalisation, dans la limite des crédits budgétaires.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_10">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>Cette aide spéciale s'ajoute aux aides qui sont normalement accordées par l'Etat pour des projets similaires, susceptibles d'être subventionnés sur la base de réglementations concernant les subventions aux communes.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_10">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_10</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_10/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 10.</num>
+				<alinea>
+					<content>
+						<p>Il est procédé au 1<sup>er</sup> janvier 2012 à une fixation nouvelle de toutes les propriétés agricoles et forestières de la commune de Clervaux sans égard aux variations de valeur. Lors de cette fixation nouvelle les propriétés des trois communes fusionnées appartenant à un même propriétaire sont fondues en une seule unité selon les règles actuelles relatives à la détermination de la valeur unitaire.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_11">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_11</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_11/20090608</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 11.</num>
+				<alinea>
+					<content>
+						<p>Lorsqu'une disposition légale ou réglementaire de nature fiscale relative à des communes fait référence à des critères ou valeurs d'années antérieures de ces mêmes communes, la référence vise, s'il s'agit de la commune de Clervaux, les critères ou valeurs moyens ou globaux des trois communes ayant existé antérieurement.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_12">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_12</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_12/20110603</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-06-03</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 12.</num>
+				<alinea>
+					<content>
+						<p>Sans préjudice des dispositions qui figurent aux articles 3 et 4, la présente loi entre en vigueur dès l'entrée en fonction du conseil communal de la nouvelle commune suivant les modalités prévues à l'article 14 de la présente loi et au plus tard le 1<sup>er</sup> janvier 2012.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>
+							<mod class="mod-start" for="#pm1"/>En matière d'impôts directs relevant de la compétence de l'Administration des contributions directes, la présente loi ne sort ses effets qu'à partir du 1<sup>er</sup> janvier 2012. A défaut de fixation de taux communaux pour la nouvelle commune, les taux en matière d'impôt foncier et d'impôt commercial communal s'élèvent d'office à partir de l'année d'imposition 2012, pour l'ensemble du territoire de la nouvelle commune, aux différents taux les moins élevés arrêtés dans une des communes fusionnées.<mod class="mod-end" for="#pm1"/>
+							<noteRef href="#M1" marker="1"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<section id="section_1" wId="section_1">
+				<heading>Dispositions transitoires</heading>
+				<article id="art_13">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_13</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_13/20090608</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 13.</num>
+					<paragraph id="paragraph_11">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Pendant une période transitoire qui s'étendra sur la période correspondant à deux mandats du conseil communal et se terminera à l'occasion des élections communales ordinaires de 2023, la commune de Clervaux sera composée de trois sections électorales, à savoir la section de Clervaux formée par le territoire de l'ancienne commune de Clervaux, la section de Heinerscheid formée par le territoire de l'ancienne commune de Heinerscheid et la section de Munshausen formée par le territoire de l'ancienne commune de Munshausen. La section de Clervaux sera représentée au conseil communal par cinq conseillers, les sections de Heinerscheid et de Munshausen chacune par quatre conseillers. A partir des élections communales ordinaires de 2023 les trois sections sont réunies en une seule section électorale.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_12">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Pendant la période transitoire visée au paragraphe (1), l'élection du conseil communal de la commune de Clervaux sera organisée suivant le système de la majorité relative conformément aux dispositions de la <ref href="/eli/etat/leg/loi/2003/02/18/n2">loi électorale modifiée du 18 février 2003</ref>, sous réserve des règles qui suivent. </p>
+								<ol scl:symbol="1.">
+									<li>Pour les besoins de la cause les termes «transfert du domicile d'un membre du conseil communal hors du territoire de la commune» qui figurent au 1<sup>er</sup> alinéa de l'article 189 sont remplacés par les termes «transfert du domicile d'un membre du conseil communal hors du territoire de la section de commune».</li>
+									<li>La condition de résidence de six mois fixée par l'article 192 pour être éligible est remplie en l'occurrence par les personnes qui ont leur résidence habituelle depuis six mois respectivement dans les sections de Clervaux, de Heinerscheid ou de Munshausen, telles que ces sections sont définies au point (1) ci-dessus.</li>
+									<li>Par dérogation au deuxième alinéa de l'article 207, le bulletin de vote classe séparément et par ordre alphabétique les candidats présentés pour chaque section de commune et indique le nombre des conseillers à élire pour chaque section.</li>
+									<li>A l'article 221, le terme «la commune» englobe en l'occurrence les sections de Clervaux, de Heinerscheid et de Munshausen.</li>
+									<li>L'article 222 est remplacé pour les besoins de la cause par le texte suivant: «L'attribution des sièges est opérée séparément pour chaque section de commune. Les candidats sont élus suivant les voix obtenues jusqu'à ce que tous les sièges à pourvoir dans chaque section soient occupés.»</li>
+									<li>L'article 223 s'applique séparément à chaque section de commune.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_13">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Par une délibération soumise à l'approbation du ministre de l'Intérieur, le conseil communal de la nouvelle commune de Clervaux pourra décider de ramener la durée de la période transitoire à un seul mandat du conseil communal.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_14">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>L'élection du premier conseil communal de Clervaux sera organisée dans les communes de Clervaux, de Heinerscheid et de Munshausen le 9 octobre 2011 conformément aux dispositions de la loi électorale modifiée du 18 février 2003, sous réserve des règles qui suivent. </p>
+								<ol scl:symbol="1.">
+									<li>Les communes de Clervaux, de Heinerscheid et de Munshausen qui vont constituer la nouvelle commune de Clervaux, forment une seule circonscription électorale. Les électeurs des communes de Clervaux, de Heinerscheid et de Munshausen concourent ensemble à l'élection du conseil communal de Clervaux.</li>
+									<li>Le bureau principal de la circonscription définie au point ci-dessus est le premier bureau de vote de la commune de Clervaux.</li>
+									<li>Les affichages à la maison communale prévus notamment par les articles 61 et 206 de la loi communale se font aux maisons communales de Clervaux, de Heinerscheid et de Munshausen.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_14">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_14</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_14/20090608</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 14.</num>
+					<paragraph id="paragraph_15">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Le conseil communal de la commune de Clervaux entrera en fonction dès que les nominations et les assermentations du bourgmestre et des échevins et les assermentations de la majorité des conseillers auront été opérées.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_16">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les membres des conseils communaux de Clervaux, de Heinerscheid et de Munshausen cessent leurs activités dès l'entrée en fonction du conseil communal de Clervaux. Le conseil communal de Clervaux, issu des élections du 9 octobre 2011, reprendra dès son entrée en fonction les activités des anciens conseils communaux de Clervaux, de Heinerscheid et de Munshausen.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_15">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_15</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_15/20090608</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 15.</num>
+					<paragraph id="paragraph_17">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les trois secrétaires communaux actuellement en fonction dans les communes de Clervaux, de Heinerscheid et de Munshausen sont maintenus dans leurs fonctions dans la nouvelle commune. Le collège des bourgmestre et échevins répartit les tâches légales du secrétaire communal entre les trois secrétaires, sous l'approbation du ministre de l'Intérieur. Les tâches non expressément attribuées à l'un ou à l'autre secrétaire par le collège des bourgmestre et échevins sont assumées par le plus ancien en rang des trois secrétaires.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_18">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les deux premiers postes de secrétaire qui deviendront vacants pour quelque raison que ce soit, seront attribués à une autre carrière du secteur communal par une décision du conseil communal soumise à l'approbation du ministre de l'Intérieur.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_16/20090608</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<alinea>
+						<content>
+							<p>Le conseil communal de la nouvelle commune nomme un receveur communal parmi les receveurs des communes fusionnées.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3/art_17/20090608</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 17.</num>
+					<alinea>
+						<content>
+							<p>L'élection et l'installation des membres de l'office social de la nouvelle commune ont lieu avant le 1<sup>er</sup> juillet 2012 conformément aux modalités prévues par la loi.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+		</body>
+	</act>
+</akomaNtoso>

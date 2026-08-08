@@ -1,0 +1,2941 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-05-20" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MSP"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-05-20" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2021-05-20" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux><scl:jolux scl:name="dateDocument">2021-05-20</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MSP</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/114</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/307</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/381</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/439</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/555</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/797</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1197</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/785</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo/fr</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="dateEntryInForce">2021-07-01</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2021/a422</scl:jolux><scl:jolux scl:name="publicationDate">2021-06-08</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/ns/prov#Entity</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo/fr/pdfa</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/projet/pr/20160215</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/2016/679/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/rgd/1985/04/30/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/rgd/2015/06/14/n2/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1980/08/09/n11/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1990/01/16/n2/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1990/01/16/n4/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1979/02/12/n4/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/10/2023 : Règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives.</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1988/11/29/n1/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2005/08/03/n2/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2021/a422/fr/pdf</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2021/a422/fr/pdf</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2021-05-20" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2023-10-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm7" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm8" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_8"/>
+</textualMod>
+<textualMod id="pm9" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm10" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm11" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm12" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm13" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_12"/>
+</textualMod>
+<textualMod id="pm14" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_25"/>
+</textualMod>
+<textualMod id="pm15" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_31"/>
+</textualMod>
+<textualMod id="pm16" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_34"/>
+</textualMod>
+<textualMod id="pm17" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_38"/>
+</textualMod>
+<textualMod id="pm18" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_42"/>
+</textualMod>
+<textualMod id="pm19" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_46"/>
+</textualMod>
+<textualMod id="pm20" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_48"/>
+</textualMod>
+<textualMod id="pm21" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_49"/>
+</textualMod>
+<textualMod id="pm22" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_50"/>
+</textualMod>
+<textualMod id="pm23" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_50"/>
+</textualMod>
+<textualMod id="pm24" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_50"/>
+</textualMod>
+<textualMod id="pm25" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_51"/>
+</textualMod>
+<textualMod id="pm26" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_51"/>
+</textualMod>
+<textualMod id="pm27" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_51"/>
+</textualMod>
+<textualMod id="pm28" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_52"/>
+</textualMod>
+<textualMod id="pm29" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_53_20231001"/>
+</textualMod>
+<textualMod id="pm30" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_54"/>
+</textualMod>
+<textualMod id="pm31" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_54"/>
+</textualMod>
+<textualMod id="pm32" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_55"/>
+</textualMod>
+<textualMod id="pm33" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_58"/>
+</textualMod>
+<textualMod id="pm34" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_58"/>
+</textualMod>
+<textualMod id="pm35" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_58"/>
+</textualMod>
+<textualMod id="pm36" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm37" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm38" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm39" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_53_20231001"/>
+</textualMod>
+<textualMod id="pm40" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_54"/>
+</textualMod>
+<textualMod id="pm41" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_54"/>
+</textualMod>
+<textualMod id="pm42" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/rgd/2023/08/29/a590/jo"/>
+<destination href="#art_55"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2021/05/20/a422/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2023/08/29/a590/jo" id="rp2" showAs="Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives. "/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M3" marker="3" refersTo="pm3" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M4" marker="4" refersTo="pm4" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M5" marker="5" refersTo="pm5" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M6" marker="6" refersTo="pm6" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M7" marker="7" refersTo="pm7" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M8" marker="8" refersTo="pm8" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M9" marker="9" refersTo="pm9" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M10" marker="10" refersTo="pm10" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M11" marker="11" refersTo="pm11" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M12" marker="12" refersTo="pm12" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M13" marker="13" refersTo="pm13" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M14" marker="14" refersTo="pm14" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M15" marker="15" refersTo="pm15" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M16" marker="16" refersTo="pm16" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M17" marker="17" refersTo="pm17" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M18" marker="18" refersTo="pm18" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M19" marker="19" refersTo="pm19" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M20" marker="20" refersTo="pm20" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M21" marker="21" refersTo="pm21" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M22" marker="22" refersTo="pm22" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M23" marker="23" refersTo="pm23" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M24" marker="24" refersTo="pm24" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M25" marker="25" refersTo="pm25" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M26" marker="26" refersTo="pm26" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M27" marker="27" refersTo="pm27" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M28" marker="28" refersTo="pm28" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M29" marker="29" refersTo="pm29" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M30" marker="30" refersTo="pm30" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M31" marker="31" refersTo="pm31" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M32" marker="32" refersTo="pm32" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M33" marker="33" refersTo="pm33" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M34" marker="34" refersTo="pm34" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M35" marker="35" refersTo="pm35" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M36" marker="36" refersTo="pm36" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M37" marker="37" refersTo="pm37" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M38" marker="38" refersTo="pm38" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M39" marker="39" refersTo="pm39" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M40" marker="40" refersTo="pm40" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M41" marker="41" refersTo="pm41" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M42" marker="42" refersTo="pm42" title="A|2023-09-19|2023-08-29|RGD|590">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/08/29/a590/jo">Règlement grand-ducal du 29 août 2023 modifiant 1° le règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives 2° le règlement grand-ducal du 16 janvier 1990 portant restructuration des cours de formation des juges et arbitres dans l’intérêt des fédérations et sociétés sportives.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:border="50" scl:delim-left="(" scl:delim-right=")" scl:type="document" source="#eli-etat-leg-rgd-2021-05-20-n5-consolide-2023-10-01-fr-xml">
+<note id="note_0_0_0">
+<p>En vertu de l'article 1<sup>er</sup>, point 1°, du règlement grand-ducal du 29 août 2023, A-590 du 19 septembre 2023, « dans l’ensemble du dispositif, le terme  « ENEPS »  est remplacé par le terme  « INAPS » ». Or, à l'article 58 du règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives, il y a lieu d'entendre « ENEPS ».</p>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 01/10/2023 : Règlement grand-ducal du 20 mai 2021 relatif à la détermination et à l’organisation des formations des cadres techniques et administratifs pour les différentes formes d’activités sportives.</p>
+</longTitle>
+</preface>
+<body>
+<title id="titre_ier">
+<num>Titre I<sup>er</sup> </num>
+<heading scl:align="left" scl:style-format="b"> <b>L’organisation des formations</b>
+</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_1er/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Pour l’application du présent règlement, on entend par :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>« brevet » : un document certifiant l’accomplissement d’une étape intermédiaire avant l’obtention d’un brevet d’État clôturant la formation de base ;</li>
+<li>« brevet d’État » : un document délivré par l’État, représenté par le ministre ayant les Sports dans ses attributions, ci-après « ministre », qui atteste la clôture de chaque formation de base, moyenne, supérieure et avancée ;</li>
+<li>« cadres administratifs » : les personnes physiques qui sont chargées de la gestion ou de la direction, ou qui contribuent à la gestion ou à la direction, sur le plan administratif, des fédérations sportives agréées et de leurs clubs sportifs affiliés ;</li>
+<li>« cadres techniques » : les personnes physiques qui sont chargées de l’encadrement technique des sportifs au niveau des fédérations sportives agréées, de leurs clubs sportifs affiliés, des partenaires tiers, ainsi que de toute personne intéressée intervenant dans le domaine du sport. Il s’agit des personnes suivantes :<ol scl:start="1" scl:symbol="a)">
+<li>les entraîneurs des différentes disciplines sportives ;</li>
+<li>les entraîneurs en préparation physique ;</li>
+<li>les préparateurs en motricité ;</li>
+<li>les moniteurs sportifs ;</li>
+</ol>
+</li>
+<li>« convention de coopération cadre » : une convention conclue entre l’État, représenté par le ministre, et la fédération sportive agréée ou le partenaire tiers concerné, visant à régler la collaboration au moins dans les domaines visés à l’article 4 et intégrant le programme cadre ;</li>
+<li>« convention de coopération spécifique » : une convention conclue entre l’État, représenté par le ministre, et la fédération sportive agréée ou le partenaire tiers concerné, visant à arrêter la planification du déroulement de chaque partie de la formation et des examens correspondants ;</li>
+<li>« formation initiale » : la formation, théorique et pratique, organisée par l’<mod class="mod-start" for="#pm1"/>INAPS<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>, qui vise à procurer les connaissances et compétences nécessaires aux cadres techniques et administratifs ;</li>
+<li>« formation continue » : le recyclage et le perfectionnement par une formation permanente des connaissances et compétences acquises par les cadres techniques et administratifs lors de la formation initiale dans un ou plusieurs domaines de spécialisation ;</li>
+<li>« partenaires tiers » : des structures et associations autres que les fédérations sportives agréées et leurs clubs sportifs affiliés, agissant dans le domaine du sport, de l’éducation et des loisirs ;</li>
+<li>« programme cadre » : un programme, publié par règlement ministériel, visant à régler les domaines visés aux articles 3, 4, points 3° à 7°, 5, point 4°, 15, paragraphe 1<sup>er</sup>, 17, 19, paragraphe 1<sup>er</sup>, 30 à 32, 34, 35, 37 à 39, 41 à 43 et 45 à 47 <mod class="mod-start" for="#pm36"/>;<mod class="mod-end" for="#pm36"/>
+<noteRef href="#M36" marker="36"/>
+<mod class="mod-start" for="#pm37"/>
+</li>
+<li>« assistant technique de sécurité » : une personne qui assiste le chargé de cours, en cas de besoin et pour des raisons de sécurité, dans le cadre d’une partie spécialisée ou pratique d’une formation.<mod class="mod-end" for="#pm37"/>
+<noteRef href="#M37" marker="37"/>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_2/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les formations initiales sont sanctionnées soit par un brevet, soit par un brevet d’État portant la dénomination de la formation, le niveau de compétence, le niveau de certification et la spécialisation correspondante. La spécialisation peut se faire dès la formation de base dans une discipline sportive ou dans un des domaines de spécialisation définis par la commission des programmes afférente visée à l’article 5.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>À chaque brevet ou brevet d’État est associé une licence établie par l’<mod class="mod-start" for="#pm2"/>INAPS<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/>, ci-après « licence <mod class="mod-start" for="#pm3"/>INAPS<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/> », ayant une durée de validité par cycles de trois ans. Par dérogation, la validité de la première licence <mod class="mod-start" for="#pm4"/>INAPS<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/> commence à courir le jour de son établissement et se termine le 31 décembre de la troisième année suivant l’année de l’établissement de la licence <mod class="mod-start" for="#pm5"/>INAPS<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/>. Le renouvellement de la validité de chaque licence <mod class="mod-start" for="#pm6"/>INAPS<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M6" marker="6"/> se fait par cycles de trois ans suivant l’accomplissement d’une formation continue conformément aux dispositions du titre IV.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_3/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Toute demande d’inscription aux différentes formations initiales et continues est à adresser par voie postale ou par voie électronique à l’<mod class="mod-start" for="#pm7"/>INAPS<mod class="mod-end" for="#pm7"/>
+<noteRef href="#M7" marker="7"/>. Elle fait l’objet d’une évaluation par la commission des programmes afférente. L’intéressé est informé par écrit de son admission ou de son refus d’admission sur base des articles 30, 31, 34, 37, 38, 41, 42, 45 ou 46, dans la limite des places disponibles définies dans la convention de coopération cadre ou dans le programme cadre selon les critères suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>la capacité des locaux disponibles ;</li>
+<li>les ressources humaines disponibles ;</li>
+<li>la discipline sportive ou la spécialisation en cause.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_4/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>La convention de coopération cadre contient obligatoirement des dispositions couvrant les domaines suivants et destinées à encadrer l’organisation des formations :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>analyse des besoins et de l’offre en formation ;</li>
+<li>rappel de la politique de la fédération en matière de formations pour tout partenariat avec une fédération sportive agréée ou de la politique de coopération en matière de formation pour tout partenariat avec des tiers, si applicable ;</li>
+<li>définition de la structure générale du contenu des parties commune, spécialisée et pratique et des unités de formation respectives ;</li>
+<li>élaboration des programmes de formation ;</li>
+<li>définition de l’âge minimum pour l’inscription à une formation ; </li>
+<li>établissement des procédures d’évaluation des demandes d’inscription ;</li>
+<li>définition des examens des parties commune, spécialisée et pratique de la formation ainsi que des modalités y relatives ;</li>
+<li> plan de financement.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_5/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<paragraph id="paragraph_3">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Des commissions des programmes sont instaurées pour chaque formation. Elles ont pour mission :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>d’assurer l’élaboration, le suivi, l’évaluation et le développement continus des différentes formations, initiales et continues ; </li>
+<li>de préparer l’élaboration, la mise en place et l’application pratique des programmes cadre visés à l’article 8 et des conventions de coopération spécifiques visées à l’article 7 ; </li>
+<li>dans le cadre des homologations, de préparer l’établissement des contenus et compétences requis par niveau de compétence dans une discipline sportive ou une spécialisation et de donner des avis sur demande de la commission des homologations et des dispenses ; </li>
+<li>de délibérer suite aux examens, conformément au mode de fonctionnement fixé dans la convention de coopération cadre ou dans le programme cadre et de soumettre le résultat de ces délibérations au ministre.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Chaque commission des programmes est composée de trois à cinq personnes désignées conformément à l’article 27, paragraphe 1<sup>er</sup>.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_6/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Une convention de coopération cadre est conclue au début du partenariat ou de la coopération pour une durée maximale de quatre ans, renouvelable.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_7/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Une convention de coopération spécifique est conclue avant le début de la partie commune, spécialisée et pratique d’une formation.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_8/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Pour les formations organisées par l’<mod class="mod-start" for="#pm8"/>INAPS<mod class="mod-end" for="#pm8"/>
+<noteRef href="#M8" marker="8"/> seule, un programme cadre est établi avant le début de la formation pour une durée maximale de quatre ans, renouvelable.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_ii">
+<num>Titre II </num>
+<heading scl:align="left" scl:style-format="b"> <b>Homologations et dispenses</b>
+</heading>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_9/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<paragraph id="paragraph_5">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Des homologations nationales de brevets ou de diplômes délivrés par un autre organisme au Luxembourg ou à l’étranger peuvent être établies par le ministre, sur avis de la commission consultative en application du <ref href="/eli/etat/leg/rgd/1985/04/30/n2/jo" id="e09ca15a-cd0a-4f77-9e49-b4f984d8c88d" scl:verify="true">règlement grand-ducal du 30 avril 1985</ref> concernant la commission consultative instituée avec la création de l’École nationale de l’éducation physique et des sports, ci-après « <ref href="/eli/etat/leg/rgd/1985/04/30/n2/jo" id="fb1b48fc-d724-4aca-b136-37dcb0a2a459">règlement grand-ducal de 1985</ref> ».</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Une licence <mod class="mod-start" for="#pm9"/>INAPS<mod class="mod-end" for="#pm9"/>
+<noteRef href="#M9" marker="9"/> est établie par l’<mod class="mod-start" for="#pm10"/>INAPS<mod class="mod-end" for="#pm10"/>
+<noteRef href="#M10" marker="10"/> parallèlement à l’homologation d’un brevet ou d’un brevet d’État. La durée de validité de la première licence <mod class="mod-start" for="#pm11"/>INAPS<mod class="mod-end" for="#pm11"/>
+<noteRef href="#M11" marker="11"/> commence à courir le jour de son établissement et se termine le 31 décembre de l’année suivant l’année de son établissement. Le renouvellement de la validité de chaque licence <mod class="mod-start" for="#pm12"/>INAPS<mod class="mod-end" for="#pm12"/>
+<noteRef href="#M12" marker="12"/> subséquente se fait par cycles de trois ans suivant l’accomplissement d’une formation continue conformément aux dispositions du titre IV.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_10/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>Des dispenses de tout ou partie d’un ou de plusieurs modules peuvent être accordées par le ministre, sur avis de la commission consultative en application du <ref href="/eli/etat/leg/rgd/1985/04/30/n2/jo" id="b7f4fda1-48e6-4aea-ae6f-7a90bbc25e72">règlement grand-ducal de 1985</ref>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_11/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>Il est instauré une commission des homologations et des dispenses, composée de trois personnes désignées par le ministre conformément à l’article 27, paragraphe 2.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_12/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<paragraph id="paragraph_7">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le niveau de l’homologation à un brevet ou un brevet d’État conformément à l’article 14, ainsi que l’étendue d’une dispense sont établis, sur avis de la commission des homologations et des dispenses, par voie de comparaison entre la durée et le contenu de la formation effectuée et celle organisée par l’<mod class="mod-start" for="#pm13"/>INAPS<mod class="mod-end" for="#pm13"/>
+<noteRef href="#M13" marker="13"/>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de besoin, le ministre peut demander l’avis des fédérations sportives agréées ou des partenaires tiers concernés.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’homologation ou la dispense peut être subordonnée à un supplément d’épreuve sur avis de la commission consultative en application des dispositions du <ref href="/eli/etat/leg/rgd/1985/04/30/n2/jo" id="c8ba2a20-81f3-4727-a1df-a3eacc774bea">règlement grand-ducal de 1985</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La demande d’homologation doit être accompagnée de tous les renseignements nécessaires à son appréciation, comprenant au moins les pièces suivantes :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li> copie des diplômes pour lesquels une homologation est sollicitée ; </li>
+<li>copie du curriculum détaillant le contenu des formations suivies ; </li>
+<li>copie des relevés des notes obtenues ; </li>
+<li>copie d’une pièce d’identité en cours de validité.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+</title>
+<title id="titre_iii">
+<num>Titre III </num>
+<heading scl:align="left" scl:style-format="b"> <b>Formations initiales</b>
+</heading>
+<chapter id="titre_iii.chapitre_1er">
+<num>Chapitre 1<sup>er</sup> </num>
+<heading scl:align="left" scl:style-format="b">
+<b> Dispositions communes</b>
+</heading>
+<section id="titre_iii.chapitre_1er.section_1re">
+<num>Section 1<sup>re</sup> </num>
+<heading scl:align="left" scl:style-format="b"> <b>Structure</b>
+</heading>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_13/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<paragraph id="paragraph_10">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les formations initiales sont subdivisées en quatre niveaux de compétences :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>la formation de base ; </li>
+<li>la formation moyenne ;</li>
+<li>la formation avancée ; </li>
+<li>la formation supérieure.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Par dérogation au paragraphe 1<sup>er</sup>, la formation initiale des entraîneurs en préparation physique est subdivisée en trois niveaux de compétence :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>la formation moyenne ; </li>
+<li>la formation avancée ; </li>
+<li>la formation supérieure.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les différents niveaux de compétence sont sanctionnés par des brevets d’État délivrés par le ministre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au cours de la formation de base, les certifications intermédiaires dénommées brevets, visées à l’article 14, points 1° et 2°, peuvent être délivrées.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_14/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>La structure des niveaux de certification est la suivante :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>le brevet LUXQF 1 ;</li>
+<li>le brevet LUXQF 2 ;</li>
+<li>le brevet d’État LUXQF 3, qui clôture la formation de base ;</li>
+<li>le brevet d’État LUXQF 4, qui clôture la formation moyenne ;</li>
+<li>le brevet d’État LUXQF 5, qui clôture la formation avancée ;</li>
+<li>le brevet d’État LUXQF 6, qui clôture la formation supérieure.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_15/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<paragraph id="paragraph_13">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les formations initiales comportent selon la discipline sportive, le niveau de compétence ou la spécialisation du brevet d’État, une partie commune, une partie spécialisée et une partie pratique, qui sont subdivisées en un ou plusieurs modules. Un module se compose d’un nombre défini d’unités de formation qui correspondent chacune à cinquante minutes de cours effectif.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un module peut être pris en compte pour différentes spécialisations ou pour différents niveaux de compétence tel que défini dans la convention de coopération cadre ou dans le programme cadre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_14">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le fonctionnement et le déroulement des modules relevant de chaque partie sont fixés par règlement ministériel.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_16/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<paragraph id="paragraph_15">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La partie pratique comprend obligatoirement un stage sous la direction d’un patron de stage et la rédaction d’un dossier de stage.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Au cours de la formation de base, la partie pratique ne peut se faire qu’après la réussite de la partie commune et de la partie spécialisée. À partir de la formation moyenne, la partie pratique peut se faire simultanément à la partie spécialisée.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_17">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Dans tous les cas, l’admission à l’examen final est subordonnée à la réussite de tous les modules de chaque partie et à la remise du dossier de stage.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</section>
+<section id="titre_iii.chapitre_1er.section_2">
+<num>Section 2 </num>
+<heading scl:align="left" scl:style-format="b">
+<b> Modalités de l’examen</b>
+</heading>
+<subsection id="titre_iii.chapitre_1er.section_2.sous-section_1re">
+<num>Sous-section 1<sup>re</sup> </num>
+<heading scl:style-format="b"> <b>Généralités</b>
+</heading>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_17/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>Chaque module des parties commune, spécialisée et pratique en vue de l’obtention du brevet d’État par niveau de compétence doit être clôturé séparément. Au moins un des modules par partie par niveau de compétence doit être sanctionné par la réussite à un examen tel que défini dans la convention de coopération cadre ou dans le programme cadre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaque formation est clôturée par un examen final.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_18/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>Le fonctionnement et le déroulement des examens relatifs aux modules relevant de chaque partie sont fixés par règlement ministériel.</p>
+</content>
+</alinea>
+</article>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_19/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<paragraph id="paragraph_18">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les coefficients relatifs aux différents modules de chaque partie sont déterminés dans la convention de coopération cadre ou dans le programme cadre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_19">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La moyenne pondérée du ou des examens sanctionnant les différents modules relatifs aux parties commune, spécialisée et pratique est définie comme note partielle commune, note partielle spécialisée et note partielle pratique.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_20/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<alinea>
+<content>
+<p>La réussite d’un module est valable pour une durée illimitée.</p>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_1er.section_2.sous-section_2">
+<num>Sous-section 2 </num>
+<heading scl:style-format="b"> <b>Modalités de réussite des parties commune, spécialisée et pratique</b>
+</heading>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_21/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 21.</num>
+<alinea>
+<content>
+<p>A réussi, le candidat qui a obtenu dans chaque examen au moins 50 pour cent des points.</p>
+</content>
+</alinea>
+</article>
+<article id="art_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_22/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 22.</num>
+<alinea>
+<content>
+<p>Est ajourné, le candidat qui a obtenu moins de 50 pour cent des points dans un examen par module. Il a droit à un examen d’ajournement par module où il doit obtenir au moins 50 pour cent des points. Le candidat ayant réussi l’examen d’ajournement se voit attribuer une note équivalente à 50 pour cent des points, qui est prise en compte pour le calcul de la note finale et l’attribution de la mention.</p>
+</content>
+</alinea>
+</article>
+<article id="art_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_23/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 23.</num>
+<alinea>
+<content>
+<p>Est refusé, le candidat qui a obtenu moins de 50 pour cent des points à l’examen d’ajournement.</p>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_1er.section_2.sous-section_3">
+<num>Sous-section 3 </num>
+<heading scl:style-format="b">
+<b> Note finale</b>
+</heading>
+<article id="art_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_24/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 24.</num>
+<paragraph id="paragraph_20">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La note finale obtenue par le candidat se compose des notes partielles commune, spécialisée et pratique, dont les coefficients sont 0,25, 0,25 et 0,50 respectivement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_21">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Par dérogation au paragraphe 1<sup>er</sup>, en l’absence de partie commune ou spécialisée, un coefficient d’un tiers est affecté à la partie commune ou spécialisée tel qu’applicable et un coefficient de deux tiers est affecté à la partie pratique.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_25/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 25.</num>
+<alinea>
+<content>
+<p>La note finale est actée soit dans une attestation de réussite, soit dans une attestation d’échec, communiquée sans délai au candidat, le cas échéant avec la première licence <mod class="mod-start" for="#pm14"/>INAPS<mod class="mod-end" for="#pm14"/>
+<noteRef href="#M14" marker="14"/>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_26">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_26</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_26/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 26.</num>
+<alinea>
+<content>
+<p>Les mentions suivantes sont décernées aux candidats :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>la mention « satisfaisant » si le candidat totalise au moins 50 pour cent des points de la note finale ; </li>
+<li>la mention « assez bien » si le candidat totalise au moins 60 pour cent des points de la note finale ;</li>
+<li>la mention « bien » si le candidat totalise au moins 70 pour cent des points de la note finale ;</li>
+<li>la mention « très bien » si le candidat totalise au moins 80 pour cent des points de la note finale ;</li>
+<li>la mention « excellent » si le candidat totalise au moins 90 pour cent des points de la note finale.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+</section>
+<section id="titre_iii.chapitre_1er.section_3">
+<num>Section 3 </num>
+<heading scl:align="left" scl:style-format="b">
+<b> Nominations</b>
+</heading>
+<article id="art_27">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_27/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 27.</num>
+<paragraph id="paragraph_22">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les nominations des chargés de cours, des patrons de stage et des membres des commissions des programmes sont faites par voie d’arrêté ministériel, pour une durée de deux ans, renouvelable.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_23">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les membres de la commission des homologations et des dispenses sont nommés par voie d’arrêté ministériel, pour une durée de quatre ans, renouvelable.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_24">
+<num>(3)</num>
+<alinea>
+<content>
+<p>En cas de vacance d’un poste visé aux paragraphes 1<sup>er</sup> et 2 en cours de mandat, un remplaçant peut être nommé par voie d’arrêté ministériel pour terminer le mandat de celui qu’il remplace.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_28">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_28</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_28/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28.</num>
+<alinea>
+<content>
+<p>Les chargés de cours intervenant au niveau des formations initiales, les patrons de stage, les membres des commissions des programmes et les membres de la commission des homologations et des dispenses ont droit au remboursement de leurs frais de route conformément aux dispositions du <ref href="/eli/etat/leg/rgd/2015/06/14/n2/jo" id="895d636c-4706-4edc-b359-c957c392937e" scl:verify="true">règlement grand-ducal du 14 juin 2015</ref> sur les frais de route et de séjour ainsi que sur les indemnités de déménagement des fonctionnaires et employés de l’État.</p>
+</content>
+</alinea>
+</article>
+</section>
+</chapter>
+<chapter id="titre_iii.chapitre_2">
+<num>Chapitre 2 </num>
+<heading scl:align="left" scl:style-format="b"> <b>Dispositions spécifiques</b>
+</heading>
+<section id="titre_iii.chapitre_2.section_1re">
+<num>Section 1<sup>re</sup> </num>
+<heading scl:align="left" scl:style-format="b"> <b>Formation initiale des entraîneurs des différentes disciplines sportives</b>
+</heading>
+<subsection id="titre_iii.chapitre_2.section_1re.sous-section_1re">
+<num>Sous-section 1<sup>re</sup> </num>
+<heading scl:style-format="b"> <b>Généralités, volume horaire et certifications</b>
+</heading>
+<article id="art_29">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_29</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_29/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 29.</num>
+<alinea>
+<content>
+<p>La formation initiale des entraîneurs est subdivisée en quatre niveaux de compétence :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>La formation de base, qui :<ol scl:start="1" scl:symbol="a)">
+<li>vise à l’obtention d’un brevet pour entraîneur-assistant LUXQF 1 pour tout candidat ayant passé un ou plusieurs modules et totalisant au moins douze unités de formation ;</li>
+<li>vise à l’obtention d’un brevet pour entraîneur-assistant LUXQF 2 pour tout candidat ayant passé un ou plusieurs modules et totalisant au moins cinquante-deux unités de formation ;</li>
+<li>est clôturée par le brevet d’État pour entraîneur LUXQF 3 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre et totalisant au moins cent vingt unités de formation.</li>
+</ol>
+</li>
+<li>La formation moyenne, qui est clôturée par le brevet d’État pour entraîneur LUXQF 4 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre et totalisant au moins cent vingt unités de formation, comptabilisant ainsi un minimum de deux cent quarante unités de formation depuis le début de la formation de base.</li>
+<li>La formation avancée, qui est clôturée par le brevet d’État pour entraîneur LUXQF 5 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre et totalisant au moins cent quarante-cinq unités de formation, comptabilisant ainsi un minimum de trois cent quatre-vingt-cinq unités de formation depuis le début de la formation de base.</li>
+<li>La formation supérieure, qui est clôturée par le brevet d’État pour entraîneur LUXQF 6 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre et totalisant au moins neuf cent quinze unités de formation, comptabilisant ainsi un minimum de mille trois cents unités de formation depuis le début de la formation de base.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_1re.sous-section_2">
+<num>Sous-section 2 </num>
+<heading scl:style-format="b"> <b>Conditions d’admission</b>
+</heading>
+<article id="art_30">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_30</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_30/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 30.</num>
+<paragraph id="paragraph_25">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Pour s’inscrire à la partie commune ou spécialisée de la formation de base, le candidat doit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>disposer d’un certificat médical d’aptitude au sport en cours de validité délivré par le service médico-sportif tel que visé à l’article 11 de la <ref href="/eli/etat/leg/loi/2005/08/03/n2/jo" id="5218f235-5a76-4647-87a0-89d1543a8621" scl:verify="true">loi modifiée du 3 août 2005</ref> concernant le sport ou, à défaut, présenter un certificat médical récent attestant l’absence de contre-indication médicale à participer activement aux unités de formation selon les exigences de la discipline sportive fixées dans la convention de coopération cadre ; </li>
+<li>répondre aux exigences d’aptitude technique fixées dans la convention de coopération cadre ; </li>
+<li>suivre la formation préliminaire prévue dans la convention de coopération cadre.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_26">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Pour s’inscrire à la partie pratique de la formation de base qui est clôturée par un brevet d’État d’entraîneur, le candidat doit avoir atteint l’âge de dix-sept ans au moins. Il doit avoir atteint l’âge de dix-huit ans au moins au moment de l’admission à l’examen final. Les conditions visées au paragraphe 1<sup>er</sup>, points 1° à 3° restent applicables.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_31">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_31</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_31/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 31.</num>
+<alinea>
+<content>
+<p>Pour s’inscrire aux formations moyenne, avancée et supérieure, le candidat doit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>avoir atteint l’âge de dix-huit ans au moins ;</li>
+<li>être en possession du brevet d’État ou de l’homologation correspondante sanctionnant la formation du niveau inférieur ;</li>
+<li>être en possession de la licence <mod class="mod-start" for="#pm15"/>INAPS<mod class="mod-end" for="#pm15"/>
+<noteRef href="#M15" marker="15"/> en cours de validité du niveau inférieur ;</li>
+<li>disposer d’un certificat médical d’aptitude au sport en cours de validité délivré par le service médico-sportif ou, à défaut, présenter un certificat médical récent attestant l’absence de contre-indication médicale à participer activement aux unités de formation selon les exigences de la discipline sportive fixées dans la convention de coopération cadre ; </li>
+<li>répondre aux exigences d’aptitude technico-tactique fixées dans la convention de coopération cadre ; </li>
+<li>suivre la formation préliminaire ou avoir obtenu le pourcentage déterminé à la note finale du brevet d’État inférieur ou lors d’une épreuve d’admission, tel que prévu dans la convention de coopération cadre.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_1re.sous-section_3">
+<num>Sous-section 3 </num>
+<heading scl:style-format="b"> <b>Contenu de la formation</b>
+</heading>
+<article id="art_32">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_32</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_32/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 32.</num>
+<alinea>
+<content>
+<p>La formation initiale comprend obligatoirement les domaines thématiques suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les principes généraux du développement à long terme, ainsi que leurs adaptations spécifiques à la discipline sportive en question ;</li>
+<li>la planification d’une séance d’entraînement, de cycles d’entraînement à court, moyen et long terme, ainsi que d’un programme sportif annuel ;</li>
+<li>la méthodologie et la didactique générale et spécifique ;</li>
+<li>les aspects personnels et pédagogiques du sportif et de l’entraîneur ; </li>
+<li>l’apprentissage et la transmission de compétences techniques et tactiques, adaptés à l’âge et au niveau du sportif ;</li>
+<li>les connaissances générales et théoriques de la discipline sportive ;</li>
+<li>l’entraînement de la motricité générale et spécifique ;</li>
+<li>la préparation physique générale et spécifique à la discipline sportive en question sur base des facteurs déterminant les performances spécifiques d’un sportif ;</li>
+<li>les aspects mentaux et psychologiques ;</li>
+<li>les principes généraux relatifs aux premiers secours ; </li>
+<li>les principes généraux relatifs à l’inclusion ; </li>
+<li>le rôle et la déontologie de l’entraîneur, y compris des considérations d’éthique.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+</section>
+<section id="titre_iii.chapitre_2.section_2">
+<num>Section 2 </num>
+<heading scl:align="left" scl:style-format="b"> <b>Formation initiale des entraîneurs en préparation physique</b>
+</heading>
+<subsection id="titre_iii.chapitre_2.section_2.sous-section_1re">
+<num>Sous-section 1<sup>re</sup> </num>
+<heading scl:style-format="b"> <b>Généralités, volume horaire et certifications</b>
+</heading>
+<article id="art_33">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_33</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_33/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 33.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 33.</num>
+<alinea>
+<content>
+<p>La formation initiale des entraîneurs en préparation physique est subdivisée en trois niveaux de compétence :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>La formation moyenne, qui est clôturée par le brevet d’État pour entraîneur en préparation physique LUXQF 4 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par le programme cadre et totalisant au moins cent vingt unités de formation, comptabilisant ainsi un minimum de deux cent quarante unités de formation depuis le début de la formation de base. </li>
+<li>La formation avancée, qui est clôturée par le brevet d’État pour entraîneur en préparation physique LUXQF 5 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par le programme cadre et totalisant au moins cent quarante-cinq unités de formation, comptabilisant ainsi un minimum de trois cent quatre-vingt-cinq unités de formation depuis le début de la formation de base. </li>
+<li>La formation supérieure, qui est clôturée par le brevet d’État pour entraîneur en préparation physique LUXQF 6 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par le programme cadre et totalisant au moins neuf cent quinze unités de formation, comptabilisant ainsi un minimum de mille trois cents unités de formation depuis le début de la formation de base.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_2.sous-section_2">
+<num>Sous-section 2 </num>
+<heading scl:style-format="b"> <b>Conditions d’admission</b>
+</heading>
+<article id="art_34">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_34</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_34/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 34.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 34.</num>
+<alinea>
+<content>
+<p>Pour s’inscrire aux formations moyenne, avancée et supérieure, le candidat doit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>avoir atteint l’âge de dix-huit ans au moins ;</li>
+<li>être en possession d’un brevet d’État pour entraîneur LUXQF 3 au moins ou d’un brevet d’État pour moniteur sportif LUXQF 3 au moins ou des homologations correspondantes ;</li>
+<li>être en possession de la licence <mod class="mod-start" for="#pm16"/>INAPS<mod class="mod-end" for="#pm16"/>
+<noteRef href="#M16" marker="16"/> en cours de validité du niveau inférieur ;</li>
+<li>disposer d’un certificat médical d’aptitude au sport en cours de validité délivré par le service médico-sportif ou, à défaut, présenter un certificat médical récent attestant l’absence de contre-indication médicale à participer activement aux unités de formation selon les exigences fixées dans le programme cadre ; </li>
+<li>répondre aux exigences d’aptitude technique fixées dans le programme cadre ; </li>
+<li>suivre la formation préliminaire ou avoir obtenu le pourcentage déterminé à la note finale du brevet d’État inférieur ou lors d’une épreuve d’admission, tel que prévu dans le programme cadre.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_2.sous-section_3">
+<num>Sous-section 3 </num>
+<heading scl:style-format="b"> <b>Contenu de la formation</b>
+</heading>
+<article id="art_35">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_35</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_35/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 35.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 35.</num>
+<alinea>
+<content>
+<p>La formation initiale comprend obligatoirement les domaines thématiques suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les principes généraux du développement à long terme ; </li>
+<li>la physiologie de l’effort et l’entraînement des différentes qualités athlétiques ;</li>
+<li>la méthodologie et la didactique de l’entraînement des différentes qualités athlétiques ;</li>
+<li>le profilage et l’analyse des facteurs de la performance des disciplines sportives ;</li>
+<li>la planification des séances de préparation physique en tant que partie intégrante du programme d’entraînement et de compétition des sportifs ;</li>
+<li>la mise en place du travail physique associé, dissocié et intégré à l’entraînement spécifique ;</li>
+<li>la nutrition, la diététique et les stratégies de récupération et de régénération ;</li>
+<li>la prévention et la réathlétisation ;</li>
+<li>les aspects mentaux et psychologiques ;</li>
+<li>les aspects personnels et pédagogiques du sportif et de l’entraîneur en préparation physique ; </li>
+<li>les principes généraux relatifs à l’inclusion ; </li>
+<li>le rôle et la déontologie de l’entraîneur en préparation physique, y compris des considérations d’éthique.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+</section>
+<section id="titre_iii.chapitre_2.section_3">
+<num>Section 3 </num>
+<heading scl:align="left" scl:style-format="b"> <b>Formation initiale des préparateurs en motricité</b>
+</heading>
+<subsection id="titre_iii.chapitre_2.section_3.sous-section_1re">
+<num>Sous-section 1<sup>r</sup>
+<sup>e</sup> </num>
+<heading scl:style-format="b"> <b>Généralités, volume horaire et certifications</b>
+</heading>
+<article id="art_36">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_36</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_36/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 36.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 36.</num>
+<alinea>
+<content>
+<p>La formation initiale des préparateurs en motricité est subdivisée en quatre niveaux de compétence :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>La formation de base, qui :<ol scl:start="1" scl:symbol="a)">
+<li>vise à l’obtention d’un brevet pour préparateur-assistant en motricité LUXQF 1 pour tout candidat ayant passé un ou plusieurs modules et totalisant au moins douze unités de formation ;</li>
+<li>vise à l’obtention d’un brevet pour préparateur-assistant en motricité LUXQF 2 pour tout candidat ayant passé un ou plusieurs modules et totalisant au moins cinquante-deux unités de formation ;</li>
+<li>est clôturée par le brevet d’État pour préparateur en motricité LUXQF 3 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins cent vingt unités de formation.</li>
+</ol>
+</li>
+<li>La formation moyenne, qui est clôturée par le brevet d’État pour préparateur en motricité LUXQF 4 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins cent vingt unités de formation, comptabilisant ainsi un minimum de deux cent quarante unités de formation depuis le début de la formation de base. </li>
+<li>La formation avancée, qui est clôturée par le brevet d’État pour préparateur en motricité LUXQF 5 pour tout candidat ayant clôturé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins cent quarante-cinq unités de formation, comptabilisant ainsi un minimum de trois cent quatre-vingt-cinq unités de formation depuis le début de la formation de base. </li>
+<li>La formation supérieure, qui est clôturée par le brevet d’État pour préparateur en motricité LUXQF 6 pour tout candidat ayant clôturé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins neuf cent quinze unités de formation, comptabilisant ainsi un minimum de mille trois cents unités de formation depuis le début de la formation de base.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_3.sous-section_2">
+<num>Sous-section 2 </num>
+<heading scl:style-format="b"> <b>Conditions d’admission</b>
+</heading>
+<article id="art_37">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_37</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_37/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 37.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 37.</num>
+<paragraph id="paragraph_27">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Pour s’inscrire à la partie commune ou spécialisée de la formation de base, le candidat doit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>disposer d’un certificat médical d’aptitude au sport en cours de validité délivré par le service médico-sportif ou, à défaut, présenter un certificat médical récent attestant l’absence de contre-indication médicale à participer activement aux unités de formation selon les exigences fixées dans la convention de coopération cadre ou dans le programme cadre ; </li>
+<li>répondre aux exigences d’aptitude technique fixées dans la convention de coopération cadre ou dans le programme cadre ; </li>
+<li>suivre la formation préliminaire prévue dans la convention de coopération cadre ou dans le programme cadre.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_28">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Pour s’inscrire à la partie pratique de la formation de base clôturée par un brevet d’État pour préparateur en motricité, le candidat doit avoir atteint l’âge de dix-sept ans au moins. Il doit avoir atteint l’âge de dix-huit ans au moins au moment de l’admission à l’examen final. Les conditions visées au paragraphe 1<sup>er</sup>, points 1° à 3° restent applicables.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_38">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_38</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_38/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 38.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 38.</num>
+<alinea>
+<content>
+<p>Pour s’inscrire aux formations moyenne, avancée et supérieure, le candidat doit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>avoir atteint l’âge de dix-huit ans au moins ; </li>
+<li>être en possession du brevet d’État ou de l’homologation correspondante sanctionnant la formation du niveau inférieur ;</li>
+<li>être en possession de la licence <mod class="mod-start" for="#pm17"/>INAPS<mod class="mod-end" for="#pm17"/>
+<noteRef href="#M17" marker="17"/> en cours de validité du niveau inférieur ;</li>
+<li>disposer d’un certificat médical d’aptitude au sport en cours de validité délivré par le service médico-sportif ou, à défaut, présenter un certificat médical récent attestant l’absence de contre-indication médicale à participer activement aux unités de formation selon les exigences fixées dans la convention de coopération cadre ou dans le programme cadre ; </li>
+<li>répondre aux exigences d’aptitude technique fixées dans la convention de coopération cadre ou dans le programme cadre ; </li>
+<li>suivre la formation préliminaire ou avoir obtenu le pourcentage déterminé à la note finale du brevet d’État inférieur ou lors d’une épreuve d’admission, tel que prévu dans la convention de coopération cadre ou dans le programme cadre.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_3.sous-section_3">
+<num>Sous-section 3 </num>
+<heading scl:style-format="b"> <b>Contenu de la formation</b>
+</heading>
+<article id="art_39">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_39</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_39/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 39.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 39.</num>
+<alinea>
+<content>
+<p>La formation initiale comprend obligatoirement les domaines thématiques suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les principes généraux du développement à long terme ;</li>
+<li>le rôle et la déontologie du préparateur en motricité, y compris des considérations d’éthique ; </li>
+<li>le développement des jeunes du point de vue psycho-social, émotionnel, moteur, physique et cognitif ;</li>
+<li>l’observation et l’analyse du mouvement ; </li>
+<li>la méthodologie et la didactique de la transmission de compétences en matière de motricité et de littératie physique ;</li>
+<li>les aspects personnels et pédagogiques de l’enfant et du préparateur en motricité ; </li>
+<li>les principes généraux relatifs aux premiers secours ;</li>
+<li>les principes généraux relatifs à l’inclusion.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+</section>
+<section id="titre_iii.chapitre_2.section_4">
+<num>Section 4 </num>
+<heading scl:align="left" scl:style-format="b"> <b>Formation initiale des moniteurs sportifs</b>
+</heading>
+<subsection id="titre_iii.chapitre_2.section_4.sous-section_1re">
+<num>Sous-section 1<sup>re</sup> </num>
+<heading scl:style-format="b"> <b>Généralités, volume horaire et certifications</b>
+</heading>
+<article id="art_40">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_40</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_40/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 40.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 40.</num>
+<alinea>
+<content>
+<p>La formation initiale des moniteurs sportifs est subdivisée en quatre niveaux de compétence :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>La formation de base, qui :<ol scl:start="1" scl:symbol="a)">
+<li>vise à l’obtention d’un brevet pour moniteur sportif-assistant LUXQF 1 pour tout candidat ayant passé un ou plusieurs modules et totalisant au moins douze unités de formation ;</li>
+<li>vise à l’obtention d’un brevet pour moniteur sportif-assistant LUXQF 2 pour tout candidat ayant passé un ou plusieurs modules et totalisant au moins cinquante-deux unités de formation ;</li>
+<li>est clôturée par le brevet d’État pour moniteur sportif LUXQF 3 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins cent vingt unités de formation.</li>
+</ol>
+</li>
+<li>La formation moyenne, qui est clôturée par le brevet d’État pour moniteur sportif LUXQF 4 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins cent vingt unités de formation, comptabilisant ainsi un minimum de deux cent quarante unités de formation depuis le début de la formation de base. </li>
+<li>La formation avancée, qui est clôturée par le brevet d’État pour moniteur sportif LUXQF 5 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins cent quarante-cinq unités de formation, comptabilisant ainsi un minimum de trois cent quatre-vingt-cinq unités de formation depuis le début de la formation de base.</li>
+<li>La formation supérieure, qui est clôturée par le brevet d’État pour moniteur sportif LUXQF 6 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins neuf cent quinze unités de formation, comptabilisant ainsi un minimum de mille trois cents unités de formation depuis le début de la formation de base.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_4.sous-section_2">
+<num>Sous-section 2 </num>
+<heading scl:style-format="b"> <b>Conditions d’admission</b>
+</heading>
+<article id="art_41">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_41</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_41/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 41.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 41.</num>
+<paragraph id="paragraph_29">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Pour s’inscrire à la partie commune ou spécialisée de la formation de base, le candidat doit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>disposer d’un certificat médical d’aptitude au sport en cours de validité délivré par le service médico-sportif ou, à défaut, présenter un certificat médical récent attestant l’absence de contre-indication médicale à participer activement aux unités de formation selon les exigences fixées dans la convention de coopération cadre ou dans le programme cadre ; </li>
+<li>répondre aux exigences d’aptitude technique fixées dans la convention de coopération cadre ou dans le programme cadre ; </li>
+<li>suivre la formation préliminaire prévue dans la convention de coopération cadre ou dans le programme cadre.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_30">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Pour s’inscrire à la partie pratique de la formation de base clôturée par un brevet d’État pour moniteur sportif, le candidat doit avoir atteint l’âge de dix-sept ans au moins. Il doit avoir atteint l’âge de dix-huit ans au moins au moment d’admission à l’examen final. Les conditions visées au paragraphe 1<sup>er</sup>, points 1° à 3° restent applicables.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_42">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_42</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_42/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 42.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 42.</num>
+<alinea>
+<content>
+<p>Pour s’inscrire aux formations moyenne, avancée et supérieure, le candidat doit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>avoir atteint l’âge de dix-huit ans au moins ;</li>
+<li>être en possession du brevet d’État ou de l’homologation correspondante sanctionnant la formation du niveau inférieur ;</li>
+<li>être en possession de la licence <mod class="mod-start" for="#pm18"/>INAPS<mod class="mod-end" for="#pm18"/>
+<noteRef href="#M18" marker="18"/> en cours de validité du niveau inférieur ;</li>
+<li>disposer d’un certificat médical d’aptitude au sport en cours de validité délivré par le service médico-sportif ou, à défaut, présenter un certificat médical récent attestant l’absence de contre-indication médicale à participer activement aux unités de formation selon les exigences fixées dans la convention de coopération cadre ou dans le programme cadre ; </li>
+<li>répondre aux exigences d’aptitude technique fixées dans la convention de coopération cadre ou dans le programme cadre ; </li>
+<li>suivre la formation préliminaire ou avoir obtenu le pourcentage déterminé à la note finale du brevet d’État inférieur ou lors d’une épreuve d’admission, tel que prévu dans la convention de coopération cadre ou dans le programme cadre.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_4.sous-section_3">
+<num>Sous-section 3 </num>
+<heading scl:style-format="b"> <b>Contenu de la formation</b>
+</heading>
+<article id="art_43">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_43</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_43/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 43.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 43.</num>
+<alinea>
+<content>
+<p>La formation initiale comprend obligatoirement les domaines thématiques suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les principes généraux du développement à long terme ; </li>
+<li>la physiologie de l’effort et l’entraînement des différentes qualités athlétiques ;</li>
+<li>l’organisation et la planification d’une séance d’activité physique et sportive ;</li>
+<li>la méthodologie, la didactique et les aspects sécuritaires de l’animation des activités et disciplines sportives de loisir ;</li>
+<li>les aspects motivationnels et psychologiques ;</li>
+<li>les aspects légaux et juridiques et la responsabilité dans le domaine du sport ;</li>
+<li>les principes généraux relatifs aux premiers secours ; </li>
+<li>les principes généraux relatifs à l’inclusion ; </li>
+<li>les aspects personnels et pédagogiques du pratiquant et du moniteur sportif ; </li>
+<li>le rôle et la déontologie du moniteur sportif, y compris des considérations d’éthique.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+</section>
+<section id="titre_iii.chapitre_2.section_5">
+<num>Section 5 </num>
+<heading scl:align="left" scl:style-format="b"> <b>Formation initiale des cadres administratifs dans le secteur du sport</b>
+</heading>
+<subsection id="titre_iii.chapitre_2.section_5.sous-section_1re">
+<num>Sous-section 1<sup>re</sup> </num>
+<heading scl:style-format="b"> <b>Généralités, volume horaire et certifications</b>
+</heading>
+<article id="art_44">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_44</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_44/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 44.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 44.</num>
+<alinea>
+<content>
+<p>La formation initiale des cadres administratifs dans le secteur du sport est subdivisée en quatre niveaux de compétence :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>La formation de base, qui :<ol scl:start="1" scl:symbol="a)">
+<li>vise à l’obtention d’un brevet pour cadre administratif-assistant dans le secteur du sport LUXQF 1 pour tout candidat ayant passé un ou plusieurs modules et totalisant au moins douze unités de formation ;</li>
+<li>vise à l’obtention d’un brevet pour cadre administratif-assistant dans le secteur du sport LUXQF 2 pour tout candidat ayant passé un ou plusieurs modules et totalisant au moins cinquante-deux unités de formation ;</li>
+<li>est clôturée par le brevet d’État pour cadre administratif dans le secteur du sport LUXQF 3 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins cent vingt unités de formation.</li>
+</ol>
+</li>
+<li>La formation moyenne, qui est clôturée par le brevet d’État pour cadre administratif dans le secteur du sport LUXQF 4 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins cent vingt unités de formation, comptabilisant ainsi un minimum de deux cent quarante unités de formation depuis le début de la formation de base. </li>
+<li>La formation avancée, qui est clôturée par le brevet d’État pour cadre administratif dans le secteur du sport LUXQF 5 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins cent quarante-cinq unités de formation, comptabilisant ainsi un minimum de trois cent quatre-vingt-cinq unités de formation depuis le début de la formation de base. </li>
+<li>La formation supérieure, qui est clôturée par le brevet d’État pour cadre administratif dans le secteur du sport LUXQF 6 pour tout candidat ayant passé tous les modules des parties commune, spécialisée et pratique tels que prévus par la convention de coopération cadre ou le programme cadre et totalisant au moins neuf cent quinze unités de formation, comptabilisant ainsi un minimum de mille trois cents unités de formation depuis le début de la formation de base.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_5.sous-section_2">
+<num>Sous-section 2 </num>
+<heading scl:style-format="b"> <b>Conditions d’admission</b>
+</heading>
+<article id="art_45">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_45</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_45/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 45.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 45.</num>
+<paragraph id="paragraph_31">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Pour s’inscrire à la partie commune ou spécialisée de la formation de base, le candidat doit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>avoir atteint l’âge de seize ans au moins ; </li>
+<li>suivre la formation préliminaire prévue dans la convention de coopération cadre ou dans le programme cadre.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_32">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Pour s’inscrire à la partie pratique de la formation de base clôturée par un brevet d’État pour cadre administratif dans le secteur du sport, le candidat doit avoir atteint l’âge de dix-sept ans au moins. Il doit avoir atteint l’âge de dix-huit ans au moins au moment d’admission à l’examen final. La condition visée au paragraphe 1<sup>er</sup>, point 2° reste applicable.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_46">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_46</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_46/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 46.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 46.</num>
+<alinea>
+<content>
+<p>Pour s’inscrire aux formations moyenne, avancée et supérieure, le candidat doit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>avoir atteint l’âge de dix-huit ans au moins ;</li>
+<li>être en possession du brevet d’État ou de l’homologation correspondante sanctionnant la formation du niveau inférieur ;</li>
+<li>être en possession de la licence <mod class="mod-start" for="#pm19"/>INAPS<mod class="mod-end" for="#pm19"/>
+<noteRef href="#M19" marker="19"/> en cours de validité du niveau inférieur ; </li>
+<li>suivre la formation préliminaire ou avoir obtenu le pourcentage déterminé à la note finale du brevet d’État inférieur ou lors d’une épreuve d’admission, tel que prévu dans la convention de coopération cadre ou dans le programme cadre.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+<subsection id="titre_iii.chapitre_2.section_5.sous-section_3">
+<num>Sous-section 3 </num>
+<heading scl:style-format="b"> <b>Contenu de la formation</b>
+</heading>
+<article id="art_47">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_47</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_47/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 47.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 47.</num>
+<alinea>
+<content>
+<p>La formation initiale comprend obligatoirement les domaines thématiques suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les principes généraux du développement à long terme ; </li>
+<li>les rôles et responsabilités des cadres techniques et administratifs ; </li>
+<li>la déontologie, y compris des considérations d’éthique, des cadres techniques et administratifs ; </li>
+<li>la structure du sport luxembourgeois ;</li>
+<li>les aspects financiers des fédérations sportives agréées et des clubs sportifs affiliés ;</li>
+<li>les aspects légaux et juridiques et la responsabilité dans le domaine du sport ;</li>
+<li>le marketing et le sponsoring dans le domaine du sport ;</li>
+<li>les relations publiques dans le domaine du sport ;</li>
+<li>la communication interne et externe ; </li>
+<li>les principes généraux relatifs à la gestion des ressources humaines ;</li>
+<li>la gestion stratégique et la gouvernance dans le domaine du sport ;</li>
+<li>la gestion et l’organisation d’évènements sportifs.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</subsection>
+</section>
+</chapter>
+</title>
+<title id="titre_iv">
+<num>Titre IV </num>
+<heading scl:align="left" scl:style-format="b"> <b>Formation continue </b>
+</heading>
+<article id="art_48">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_48</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_48/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 48.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 48.</num>
+<alinea>
+<content>
+<p>L’élaboration, le suivi, l’évaluation et le développement des formations continues organisées ou coorganisées par l’<mod class="mod-start" for="#pm20"/>INAPS<mod class="mod-end" for="#pm20"/>
+<noteRef href="#M20" marker="20"/>, sont assurés par les commissions des programmes dans leurs domaines d’expertise respectifs.</p>
+</content>
+</alinea>
+</article>
+<article id="art_49">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_49</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_49/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 49.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 49.</num>
+<alinea>
+<content>
+<p>La prolongation de toute licence <mod class="mod-start" for="#pm21"/>INAPS<mod class="mod-end" for="#pm21"/>
+<noteRef href="#M21" marker="21"/> délivrée conformément à l’article 2, paragraphe 2, se fait par cycles de trois ans allant du 1<sup>er</sup> janvier au 31 décembre, ci-après « cycle », pendant lequel le candidat doit suivre vingt-quatre unités de formation continue.</p>
+</content>
+</alinea>
+</article>
+<article id="art_50">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_50</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_50/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 50.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 50.</num>
+<alinea>
+<content>
+<p>Une licence <mod class="mod-start" for="#pm22"/>INAPS<mod class="mod-end" for="#pm22"/>
+<noteRef href="#M22" marker="22"/>, dont la durée de validité est venue à échéance avant que le titulaire n’ait accompli les unités de formation continue nécessaires, est seulement prolongée au moment de l’accomplissement du nombre total des unités de formation continue requises. La nouvelle licence <mod class="mod-start" for="#pm23"/>INAPS<mod class="mod-end" for="#pm23"/>
+<noteRef href="#M23" marker="23"/> couvrant le ou les cycles précédents est établie par l’<mod class="mod-start" for="#pm24"/>INAPS<mod class="mod-end" for="#pm24"/>
+<noteRef href="#M24" marker="24"/> après l’accomplissement du nombre manquant d’unités de formation du ou des cycles précédents.</p>
+</content>
+</alinea>
+</article>
+<article id="art_51">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_51</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_51/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 51.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 51.</num>
+<paragraph id="paragraph_33">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les unités de formation relevant des formations initiales du niveau de certification supérieur sont prises en compte pour la formation continue du niveau de certification inférieur.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_34">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le contenu de la formation continue est déterminé en fonction du brevet ou brevet d’État par le directeur de l’<mod class="mod-start" for="#pm25"/>INAPS<mod class="mod-end" for="#pm25"/>
+<noteRef href="#M25" marker="25"/>, sur proposition de la fédération sportive agréée concernée ou de la commission des programmes afférente.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_35">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Une même formation continue peut prolonger la durée de validité d’une ou de plusieurs licences <mod class="mod-start" for="#pm26"/>INAPS<mod class="mod-end" for="#pm26"/>
+<noteRef href="#M26" marker="26"/> relatives à des brevets ou brevets d’État de niveau de certification et de spécialisation différents.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_36">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Des formations continues dispensées à l’étranger ou par des fédérations sportives agréées ou des partenaires tiers peuvent être reconnues comme formation continue, à condition d’avoir été préalablement validées par le directeur de l’<mod class="mod-start" for="#pm27"/>INAPS<mod class="mod-end" for="#pm27"/>
+<noteRef href="#M27" marker="27"/>, sur avis de la commission des programmes respective.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_52">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52.</num>
+<alinea>
+<content>
+<p>La prolongation d’une première licence <mod class="mod-start" for="#pm28"/>INAPS<mod class="mod-end" for="#pm28"/>
+<noteRef href="#M28" marker="28"/> obtenue suite à l’homologation d’un brevet ou d’un brevet d’État conformément à l’article 9, se fait en suivant, pendant la période de sa validité, un module spécifique de huit unités de formation portant sur les spécificités du sport luxembourgeois et les principes généraux du développement à long terme.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute prolongation ultérieure est soumise aux articles 49 et 50.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_ivbis">
+<num>
+<b>
+<mod class="mod-start" for="#pm38"/>Titre IV<i>bis</i>
+</b>
+</num>
+<heading scl:align="left" scl:separator=" ">
+<b>
+<b>– </b>Dispositions financières</b>
+</heading>
+<article id="art_52bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52bis/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>bis</i>.</num>
+<alinea>
+<content>
+<p>Pour l’organisation d’une partie de formation par l’INAPS, le nombre minimum de candidats inscrits et ayant procédé à la planification des modules au plus tard vingt-et-un jours de calendrier avant la date de début du premier module est fixé à sept.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si, quinze jours de calendrier avant la date de début du premier module, le nombre minimum de sept candidats n’est pas atteint, la fédération sportive agréée ou le partenaire tiers peut néanmoins décider de procéder à l’organisation de la partie de formation. Dans ce cas, l’INAPS prend en charge les frais de formation équivalant au prorata du nombre de candidats présents.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>À défaut, l’INAPS peut annuler la partie de la formation jusqu’à quatorze jours de calendrier avant la date de début du premier module. </p>
+</content>
+</alinea>
+</article>
+<article id="art_52ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52ter/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52ter.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>ter</i>.</num>
+<alinea>
+<content>
+<p>Les frais relatifs à l’organisation d’une formation initiale conformément à une convention de coopération cadre sont pris en charge par l’INAPS comme suit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les frais générés par l’indemnisation de l’intervention de chargés de cours dans la partie commune et spécialisée à hauteur de 1,20 chargés de cours par unité de formation et par tranche de 14 quatorze candidats ;</li>
+<li>les frais générés par l’indemnisation d’un patron de stage par candidat intervenant dans la partie pratique ;</li>
+<li> les frais générés par l’indemnisation d’un assistant technique de sécurité par tranche de quatorze candidats.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_52quater">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52quater</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52quater/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52quater.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>quater</i>.</num>
+<alinea>
+<content>
+<p>Les frais relatifs à l’organisation d’une formation continue destinée à la prolongation de la licence INAPS sont pris en charge par l’INAPS comme suit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>les frais générés par l’indemnisation de l’intervention de chargés de cours à hauteur de 1,20 chargés de cours par unité de formation et par tranche de quatorze candidats ;</li>
+<li>les frais générés par l’indemnisation d’un assistant technique de sécurité par tranche de quatorze candidats.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_52quinquies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52quinquies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52quinquies/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52quinquies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>quinquies</i>.</num>
+<paragraph id="paragraph_42">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’inscription à une formation initiale de cadre technique ou de cadre administratif donne lieu au paiement à l’INAPS, par le candidat, de frais d’inscription fixés comme suit :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>200 euros pour une formation de base LUXQF 3 ; </li>
+<li>200 euros pour une formation moyenne LUXQF 4 ; </li>
+<li>250 euros pour une formation avancée LUXQF 5 ; </li>
+<li>500 euros pour une formation supérieure LUXQF 6.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_43">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’inscription à une formation continue organisée par l’INAPS est gratuite pour tout détenteur d’un brevet, d’un brevet d’État ou d’une homologation nationale.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_52sexies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52sexies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52sexies/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52sexies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>sexies</i>.</num>
+<paragraph id="paragraph_44">
+<num>(1)</num>
+<alinea>
+<content>
+<p>En cas d’annulation de sa participation à un module d’une formation vingt-huit jours de calendrier avant la date de début du module en question, le candidat obtient crédit des frais d’inscription payés. Sur demande adressée à l’INAPS, un remboursement aura lieu.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_45">
+<num>(2)</num>
+<alinea>
+<content>
+<p>En cas d’empêchement du candidat à participer à un module de formation avant le début ou au cours de la formation sur présentation d’un certificat justifiant d’un congé spécial tel que défini aux articles L.121-6, paragraphe 2, L. 233-16 ou L. 234-50 du <ref href="/eli/etat/leg/code/travail" id="5ba75a42-cd16-412d-b4f6-498db9634cd8">Code du travail</ref> ou aux articles 28-3, 28-5 ou 28-7 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="8100007a-398a-410b-95af-8fb868b9e228" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’État, le candidat obtient crédit des frais d’inscription payés. Sur demande adressée à l’INAPS, un remboursement aura lieu.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_46">
+<num>(3)</num>
+<alinea>
+<content>
+<p>En cas de désistement non justifié selon le paragraphe 2 par le candidat au cours de la formation et pour la suite de la formation, aucun remboursement ni crédit des frais d’inscription payés n’est obtenu.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_47">
+<num>(4)</num>
+<alinea>
+<content>
+<p>En cas d’annulation ou de report de la formation par l’INAPS, le candidat obtient crédit des frais d’inscription payés. Sur demande adressée à l’INAPS, un remboursement aura lieu.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_52septies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52septies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52septies/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52septies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>septies</i>.</num>
+<alinea>
+<content>
+<p>La taxe de traitement administratif à acquitter par le demandeur d’une dispense ou d’une homologation est fixée à 50 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_52octies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52octies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52octies/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52octies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>octies</i>.</num>
+<paragraph id="paragraph_48">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les chargés de cours intervenant dans les formations organisées par l’INAPS ont droit aux tarifs suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>Le tarif horaire pour la tenue des cours et des examens est fixé comme suit :<ol scl:start="1" scl:symbol="a)">
+<li>60 euros pour un détenteur d’un brevet d’État de niveau LUXQF 3 ou équivalent et d’une licence INAPS en cours de validité ; </li>
+<li>75 euros pour un détenteur d’un brevet d’État de niveau LUXQF 4 ou équivalent et d’une licence INAPS en cours de validité ; </li>
+<li>90 euros pour un détenteur d’un brevet d’État de niveau LUXQF 5 ou équivalent et d’une licence INAPS en cours de validité ; </li>
+<li>110 euros pour un détenteur d’un brevet d’État de niveau LUXQF 6 ou équivalent et d’une licence INAPS en cours de validité ou détenteur d’un diplôme universitaire de niveau bachelor ou supérieur dans la spécialisation enseignée.</li>
+</ol>
+</li>
+<li>L’indemnité de correction d’un examen écrit est fixée à 20 euros par exemplaire corrigé.</li>
+<li>L’indemnité de correction d’un dossier de stage est fixée à 60 euros par exemplaire corrigé.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_49">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les patrons de stage ont droit aux tarifs forfaitaires suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>215 euros par candidat au niveau de la formation de base ou moyenne ;</li>
+<li>360 euros par candidat au niveau de la formation avancée ou supérieure.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_50">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les concepteurs d’une formation ou d’une partie de formation ont droit au tarif horaire de 60 euros.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_51">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les indemnités visées aux paragraphes 1<sup>er</sup> à 3 sont cumulables.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_52nonies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52nonies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52nonies/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52nonies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>nonies</i>.</num>
+<alinea>
+<content>
+<p>Les assistants techniques de sécurité ont droit au tarif horaire de 50 euros.</p>
+</content>
+</alinea>
+</article>
+<article id="art_52decies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52decies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52decies/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52decies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>decies</i>.</num>
+<alinea>
+<content>
+<p>Les membres des commissions des programmes ont droit à un jeton de présence équivalant à 25 euros par réunion de la commission des programmes.</p>
+</content>
+</alinea>
+</article>
+<article id="art_52undecies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52undecies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52undecies/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52undecies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>undecies</i>.</num>
+<paragraph id="paragraph_52">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La participation financière de l’INAPS aux formations initiales de niveau LUXQF 3 à 6 ou équivalent effectuées à l’étranger par les personnes visées à l’article 17, paragraphe 1<sup>er</sup>, de la <ref href="/eli/etat/leg/loi/2023/07/29/a589/jo" id="7eb5acb1-0b45-4405-8a72-346b5d0db961">loi du 29 juillet 2023</ref> portant création de l’Institut national de l’activité physique et des sports est fixée à 80 pour cent des frais de participation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_53">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La participation financière de l’INAPS aux formations continues effectuées à l’étranger pour la prolongation d’une licence attachée à un brevet d’État de niveau LUXQF 3 à 6 par les personnes visées à l’article 17, paragraphe 2, de la <ref href="https://legilux.public.lu/eli/etat/leg/loi/2023/07/29/a589/jo" id="1d669bf8-2add-4aba-b1f5-b25421a6861f">loi précitée du 29 juillet 2023</ref>, est fixée à 50 pour cent des frais de participation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_54">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La participation financière de l’INAPS comprend les frais d’inscription, ainsi que les frais de route et de séjour, dans la limite des montants équivalant aux pourcentages définis aux paragraphes 1<sup>er</sup> et 2 et dans la limite du montant maximal fixé à l’article 17, paragraphe 3, de la <ref href="https://legilux.public.lu/eli/etat/leg/loi/2023/07/29/a589/jo" id="9d4dd702-5e5a-4a6b-a21f-b80171477be6">loi précitée du 29 juillet 2023</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_55">
+<num>(4)</num>
+<alinea>
+<content>
+<p>La participation financière de l’INAPS visée aux paragraphes 1<sup>er</sup> et 2 est accordée par niveau de formation par périodes de douze mois, conformément aux conditions fixées à l’article 17 de la <ref href="https://legilux.public.lu/eli/etat/leg/loi/2023/07/29/a589/jo" id="4fcf620f-9c61-48cb-b485-6bb236ae835b">loi précitée du 29 juillet 2023</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_52duodecies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52duodecies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_52duodecies/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 52duodecies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 52<i>duodecies</i>.</num>
+<alinea>
+<content>
+<p>Les tarifs visés aux articles 52<i>octies</i>, 52<i>nonies</i> et 52<i>decies</i> correspondent à la valeur 877,04 de l’indice du coût de la vie. Ils sont adaptés chaque 1<sup>er</sup> janvier aux variations de l’indice du coût de la vie en vigueur à cette date et valent jusqu’au 31 décembre de l’année en cours.<mod class="mod-end" for="#pm38"/>
+<noteRef href="#M38" marker="38"/>
+</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_v">
+<num>Titre V </num>
+<heading scl:align="left" scl:style-format="b"> <b>Registre électronique </b>
+</heading>
+<article id="art_53_20231001" style="del">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_53</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_53/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 53.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm39"/>
+<del>Art. 53.</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>Il est établi sous l’autorité du ministre un registre électronique, ci-après « registre des brevets », qui a pour finalités l’organisation, la gestion et le suivi administratif des formations initiales et continues, visant à l’obtention des différents brevets, brevets d’État, homologations et licences <mod class="mod-start" for="#pm29"/>INAPS<mod class="mod-end" for="#pm29"/>
+<noteRef href="#M29" marker="29"/> y afférentes, ainsi que des dispenses accordées.</del>
+<mod class="mod-end" for="#pm39"/>
+<noteRef href="#M39" marker="39"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_54">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_54</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_54/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 54.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 54.</num>
+<alinea>
+<content>
+<p>Le registre des brevets <mod class="mod-start" for="#pm40"/>créé par l’article 5 de la <ref href="/eli/etat/leg/loi/2023/07/29/a589/jo" id="b69324a8-2aaf-44a7-ab26-12fe9988149a">loi précitée du 29 juillet 2023</ref>
+<mod class="mod-end" for="#pm40"/>
+<noteRef href="#M40" marker="40"/> est subdivisé en trois parties, qui contiennent les données suivantes :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>La première partie relative au candidat à la formation, contenant le nom, les prénoms, le numéro d’identification national, l’adresse, le numéro de téléphone, l’adresse email, le lieu, la date et les intitulés des unités de formation initiale et continue suivies, ainsi que les modules passés relatifs aux parties commune, spécialisée et pratique.</li>
+<li>La deuxième partie relative aux brevets et brevets d’État délivrés, aux dispenses et aux homologations de brevets, de brevets d’État et de diplômes, ainsi qu’aux licences <mod class="mod-start" for="#pm30"/>INAPS<mod class="mod-end" for="#pm30"/>
+<noteRef href="#M30" marker="30"/> y associées, contenant le nom, les prénoms de la personne détenteur du brevet ou du brevet d’État, le numéro d’identification national, l’adresse, la dénomination du brevet ou du brevet d’État ou le niveau d’homologation correspondant, ainsi que la durée de validité de la licence <mod class="mod-start" for="#pm31"/>INAPS<mod class="mod-end" for="#pm31"/>
+<noteRef href="#M31" marker="31"/> y associée. </li>
+<li>La troisième partie relative aux chargés de cours, aux patrons de stage <mod class="mod-start" for="#pm41"/>
+<del>et aux membres des commissions des programmes<mod class="mod-end" for="#pm41"/>
+</del>
+<noteRef href="#M41" marker="41"/>, contenant le nom, les prénoms, le numéro d’identification national, le statut professionnel, l’adresse, le numéro de téléphone, l’adresse email, le numéro de compte bancaire, l’intitulé et la date de l’unité de formation dont le chargé de cours ou le patron de stage étaient en charge et, le cas échéant, la fédération sportive agréée respectivement le partenaire tiers pour le compte duquel ils agissent.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_55">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_55</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_55/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 55.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 55.</num>
+<paragraph id="paragraph_37">
+<num>
+<mod class="mod-start" for="#pm42"/>
+<del>(1)</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>Le ministre a la qualité de responsable du traitement au sens du <ref href="/eli/reg_ue/2016/679/jo" id="7eb2a5b5-6e8c-4e3e-9384-b44a33f7b45d">règlement (UE) 2016/679</ref>.</del>
+<mod class="mod-end" for="#pm42"/>
+<noteRef href="#M42" marker="42"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_38">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le directeur de l’<mod class="mod-start" for="#pm32"/>INAPS<mod class="mod-end" for="#pm32"/>
+<noteRef href="#M32" marker="32"/> est chargé en tant que gestionnaire de l’inscription, de la sauvegarde et de la gestion administrative du registre électronique. Le gestionnaire a la qualité de sous-traitant du fichier au sens du <ref href="/eli/reg_ue/2016/679/jo" id="74f30318-3723-4aa9-a037-1bffe86463d4">règlement (UE) 2016/679</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_39">
+<num>(3)</num>
+<alinea>
+<content>
+<p>L’accès aux fichiers est sécurisé et les informations relatives à la personne ayant procédé à la consultation, aux informations consultées, à la date, à l’heure et la référence du dossier, ainsi qu’au motif précis de la consultation peuvent être retracés.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</title>
+<title id="titre_vi">
+<num>Titre VI </num>
+<heading scl:align="left" scl:style-format="b"> <b>Dispositions abrogatoires et transitoires</b>
+</heading>
+<article id="art_56">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_56</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_56/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 56.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 56.</num>
+<alinea>
+<content>
+<p>Sont abrogés : </p>
+<ol scl:start="1" scl:symbol="1°">
+<li>le <ref href="/eli/etat/leg/rgd/1979/02/12/n4/jo" id="9b756c0b-c8f7-4f82-a16e-739d330e3294" scl:verify="true">règlement grand-ducal du 12 février 1979</ref> portant organisation des cours de formation générale de base et spécialisée des moniteurs, entraîneurs et cadres techniques assimilés des fédérations et sociétés sportives dans le cadre de l’École Nationale de l’Éducation Physique et des Sports ; </li>
+<li>le <ref href="/eli/etat/leg/rgd/1980/08/09/n11/jo" id="2ee346ee-bd11-4d0a-9cea-c35f346dd659" scl:verify="true">règlement grand-ducal du 9 août 1980</ref> fixant les modalités d’organisation des cours de formation spécialisée des cadres techniques des fédérations et sociétés sportives ; </li>
+<li>le <ref href="/eli/etat/leg/rgd/1990/01/16/n2/jo" id="f890a726-de82-4528-b6ef-8bb810ad700f" scl:verify="true">règlement grand-ducal du 16 janvier 1990</ref> portant restructuration des cours de formation des entraîneurs dans l’intérêt des fédérations et sociétés sportives ; </li>
+<li>le <ref href="/eli/etat/leg/rgd/1990/01/16/n4/jo" id="519586c3-f7f4-44c3-a3fc-d845acacbe80" scl:verify="true">règlement grand-ducal du 16 janvier 1990</ref> portant restructuration de la formation des animateurs de sport-loisir.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_57">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_57</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_57/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 57.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 57.</num>
+<alinea>
+<content>
+<p>Les conventions de coopération cadre et spécifique, ainsi que les programmes cadre et spécifique doivent être établis et signés au 31 décembre 2022 au plus tard. Au cas où les conventions de coopération cadre et spécifique ou les programmes cadre et spécifique ne sont pas finalisés jusqu’à cette date, des conventions de coopération cadre et spécifique et des programmes cadre et spécifique transitoires sont établis, reprenant au moins les points visés à l’article 4, points 3° et 5° à 8°.</p>
+</content>
+</alinea>
+</article>
+<article id="art_58">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_58</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_58/20231001</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 58.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2023-10-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 58.</num>
+<paragraph id="paragraph_40">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Toute personne détenteur d’un brevet ou d’un brevet d’État délivré ou homologué par l’<mod class="mod-start" for="#pm33"/>INAPS<mod class="mod-end" for="#pm33"/>
+<noteRef href="#M33" marker="33"/> <noteRef href="#note_0_0_0"/> avant l’entrée en vigueur du présent règlement, peut demander par écrit une homologation conformément à l’article 9 et leur intégration dans la nouvelle structure des certifications conformément aux articles 13 et 14.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_41">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Une licence <mod class="mod-start" for="#pm34"/>INAPS<mod class="mod-end" for="#pm34"/>
+<noteRef href="#M34" marker="34"/> est automatiquement établie et délivrée au demandeur. La durée de validité de la première licence <mod class="mod-start" for="#pm35"/>INAPS<mod class="mod-end" for="#pm35"/>
+<noteRef href="#M35" marker="35"/> <noteRef href="#note_0_0_0"/> couvre la période commençant à la date d’entrée en vigueur du présent règlement et se termine le 31 décembre 2024.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_59">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_59</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_59/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 59.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 59.</num>
+<alinea>
+<content>
+<p>Les dispositions du présent règlement sont applicables à toutes les formations débutant après son entrée en vigueur. Les formations en cours avant l’entrée en vigueur du présent règlement restent régies par les textes suivants :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>le <ref href="/eli/etat/leg/rgd/1990/01/16/n2/jo" id="1e7a444a-f01a-4334-a006-2f82afa74d4f" scl:verify="true">règlement grand-ducal du 16 janvier 1990</ref> portant restructuration des cours de formation des entraîneurs dans l’intérêt des fédérations et sociétés sportives, et </li>
+<li>le <ref href="/eli/etat/leg/rgd/1990/01/16/n4/jo" id="7bab31c2-7688-4b0e-8de1-828951cd07e1" scl:verify="true">règlement grand-ducal du 16 janvier 1990</ref> portant restructuration de la formation des animateurs de sport-loisir.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les brevets ou brevets d’État délivrés à la suite des formations visées à l’alinéa 1<sup>er</sup>, mais après l’entrée en vigueur du présent règlement, sont homologués conformément à l’article 9.</p>
+</content>
+</alinea>
+</article>
+<article id="art_60">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_60</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_60/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 60.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 60.</num>
+<alinea>
+<content>
+<p>Le présent règlement entre en vigueur le premier jour du mois qui suit sa publication au Journal officiel du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</article>
+<article id="art_61">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_61</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422/art_61/20210701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2021/05/20/a422</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 61.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 61.</num>
+<alinea>
+<content>
+<p>Notre ministre ayant les Sports dans ses attributions est chargé de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</article>
+</title>
+</body>
+</act>
+</akomaNtoso>

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1953-06-26" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFI"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1953-06-26" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="1953-06-26" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2003-12-01</scl:jolux>
+						<scl:jolux scl:name="dateDocument">1953-06-26</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1348</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/795</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">1953-06-30</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1953/a39</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">1953A07671</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+						<scl:jolux scl:name="publicationDate">1953-06-26</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr/docx</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1948/05/21/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1804/03/21/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1872/05/08/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/loi/1913/07/29/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/agd/1948/07/21/n1/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 01/12/2003 : Loi du 26 juin 1953 concernant la désignation des personnes et des biens dans les actes à transcrire ou à inscrire au bureau des hypothèques.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1932/07/14/n1/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1953-39-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1953/a39/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-1953-06-26-n1-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1953-39-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1953/a39/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1953/a39/fr/pdf/eli-etat-leg-memorial-1953-a39-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="1953-06-26" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2003-12-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/loi/2003/11/11/n1/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2003/11/11/n1/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/loi/1953/06/26/n1/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/loi/2003/11/11/n1/jo" id="rp2" showAs="Loi du 11 novembre 2003 relative à la publicité foncière et portant modification  - de la loi du 26 juin 1953 concernant la désignation des personnes et des biens dans les actes à transcrire ou à inscrire au bureau des hypothèques; - de la loi du 30 mars 1979 organisant l'identification numérique des personnes physiques et morales;  - de la loi du 9 août 1980 relative à l'inscription des testaments."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2003-11-18|2003-11-11|L|163">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2003/11/11/n1/jo">Loi du 11 novembre 2003 relative à la publicité foncière et portant modification - de la loi du 26 juin 1953 concernant la désignation des personnes et des biens dans les actes à transcrire ou à inscrire au bureau des hypothèques; - de la loi du 30 mars 1979 organisant l'identification numérique des personnes physiques et morales; - de la loi du 9 août 1980 relative à l'inscription des testaments.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2003-11-18|2003-11-11|L|163">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2003/11/11/n1/jo">Loi du 11 novembre 2003 relative à la publicité foncière et portant modification - de la loi du 26 juin 1953 concernant la désignation des personnes et des biens dans les actes à transcrire ou à inscrire au bureau des hypothèques; - de la loi du 30 mars 1979 organisant l'identification numérique des personnes physiques et morales; - de la loi du 9 août 1980 relative à l'inscription des testaments.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 01/12/2003 : Loi du 26 juin 1953 concernant la désignation des personnes et des biens dans les actes à transcrire ou à inscrire au bureau des hypothèques.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<section id="titre_ier">
+				<num><i>Titre I<sup>er</sup>.</i></num>
+				<heading/>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_1er/20031201</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-12-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>.</num>
+					<paragraph id="paragraph_1">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les fonctionnaires et officiers publics sont tenus de certifier d'après les registres de l'état civil ou les livrets de famille, soit dans le corps, soit au pied de tous actes pouvant donner lieu à transcription ou à inscription, le nom, le lieu et la date de naissance de ceux des vendeurs, des échangistes, des copartageants, des donateurs, des acquéreurs, des bailleurs et des propriétaires d'immeubles grevés ou saisis qui sont nés dans le Grand-Duché. Ils indiqueront en outre le prénom usuel déclaré par les parties. Si le prénom usuel déclaré par les parties ne figure pas parmi les prénoms inscrits au registre de l'état civil, les fonctionnaires et officiers publics sont tenus de certifier tous les prénoms dans l'ordre de l'état civil avant le prénom usuel ou à sa suite.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_2">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Si le vendeur, l'échangiste, le copartageant, le donateur, l'acquéreur, le bailleur ou le propriétaire d'immeubles grevés ou saisis est né à l'étranger et qu'un extrait des registres de l'état civil ne puisse être produit avant la transcription ou l'inscription, les fonctionnaires et officiers publics certifieront les nom, date et lieu de naissance d'après le livret de famille, l'extrait d'un acte transcrit, le passeport ou toute autre pièce d'identité. Ils indiqueront en outre le prénom usuel déclaré par les parties et si celui-ci ne figure pas à la pièce d'identité produite, ils certifieront, avant le prénom usuel ou à sa suite, tous les prénoms dans l'ordre y indiqué. Le certificat mentionnera la pièce qui aura servi à constater l'identité des parties.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_3">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Si le vendeur, l'échangiste, le copartageant, le donateur, l'acquéreur, le bailleur ou le propriétaire grevé, né et domicilié à l'étranger, comparaît par mandataire et que celui-ci ne puisse produire avant la transcription ou l'inscription un extrait des registres de l'état civil ou l'une des pièces visées à l'alinéa 2, les fonctionnaires et officiers publics certifieront les indications requises sur la base d'une déclaration du mandant ou du mandataire couchée soit dans le corps soit au pied de la procuration.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_4">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Pour les actes sous seing privé ayant date certaine avant le 1<sup>er</sup> février 1939, l'identité des parties sera certifié par un notaire au pied de l'acte sous seing privé de la manière prévue au présent article.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_5">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Les actes authentiques passés en pays étrangers ne pourront donner lieu à transcription ou à inscription que s'ils sont conformes aux dispositions qui précèdent.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_6">
+						<num>(6)</num>
+						<alinea>
+							<content>
+								<p>Les expéditions, extraits et bordereaux présentés au conservateur des hypothèques reproduiront les nom, prénoms, date et lieu de naissance tels qu'ils ont été certifiés avec indication de la pièce ayant servi à l'identification.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_7">
+						<num>(7)</num>
+						<alinea>
+							<content>
+								<p>Pour les jugements assujettis à la transcription ou donnant lieu à inscription, l'identité des parties sera certifiée de la manière prévue au présent article par un avoué, huissier ou greffier au pied de l'expédition ou du bordereau. Pour les inscriptions judiciaires de l'Etat, l'identité des parties sera certifiée au pied du bordereau par le fonctionnaire ayant qualité pour requérir l'inscription.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_8">
+						<num>(8)</num>
+						<alinea>
+							<content>
+								<p>En cas d'inscription d'une hypothèque légale et, en cas de renouvellement ou de rectification d'une inscription prise avant l'entrée en vigueur de la présente loi, un extrait de l'acte de naissance du propriétaire grevé sera joint au bordereau. Toutefois, s'il ne peut être produit un extrait des registres de l'état civil constatant le lieu et la date de naissance du propriétaire grevé né à l'étranger, il y sera suppléé soit par un extrait d'un acte transcrit, soit par une pièce d'identité délivrée par un agent diplomatique ou consulaire du pays d'origine de l'intéressé. Pour les inscriptions à requérir au profit de l'Etat, il suffira de mentionner au bordereau la pièce ayant servi à l'identification.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_9">
+						<num>(9)</num>
+						<alinea>
+							<content>
+								<p>Les alinéas 7 et 8 sont applicables à toute autre transcription ou inscription non visée par les dispositions qui précèdent.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_29">
+						<num>
+							<mod class="mod-start" for="#pm1"/>(9bis)</num>
+						<alinea>
+							<content>
+								<p>L’identification nominative des personnes est complétée, dans tous les actes pouvant donner lieu à transcription ou à inscription, par le numéro d’identité des personnes visées au présent article sous (1), (2) et (3), attribué suivant les dispositions de la <ref href="/eli/etat/leg/loi/1979/03/30/n1/jo" id="3f016073-e559-459e-bae6-af9bb8c9bbb1">loi du 30 mars 1979</ref> organisant l’identification numérique des personnes physiques et morales.<mod class="mod-end" for="#pm1"/>
+									<noteRef href="#M1" marker="1"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_10">
+						<num>(10)</num>
+						<alinea>
+							<content>
+								<p>Au cas où l'identité des parties ne peut être constatée selon l'un des modes prévus aux alinéas qui précèdent, le président du tribunal d'arrondissement de la situation des biens statuera sur l'identification des parties sur simple déclaration verbal et dispensera, le cas échéant, de l'indication de la date et du lieu de naissance, par une ordonnance rendue sur requête et exécutoire sur minute. Si tous les immeubles ne sont pas situés dans le même arrondissement, une seule ordonnance suffira. Les expéditions des actes notariés et des jugements qui seront déposés au bureau de la conservation des hypothèques aux fins de transcription, reproduiront l'ordonnance en copie certifiée conforme par un fonctionnaire ou un officier public. Pour la formalité de l'inscription la copie certifiée conforme de l'ordonnance sera jointe au bordereau.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_11">
+						<num>(11)</num>
+						<alinea>
+							<content>
+								<p>A défaut d'exécution des dispositions qui précèdent, la formalité pourra être refusée par le conservateur, sauf recours contre ce refus auprès du président du tribunal qui statuera en référé par une ordonnance non susceptible d'appel ou d'opposition et exécutoire sur minute, le tout sans préjudice de l'application, par le juge du fond, de l'article 2202 du <ref href="/eli/etat/leg/code/civil" id="32116c5b-fbfd-4a77-ba22-233121edbdde">Code civil</ref>.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_12">
+						<num>(12)</num>
+						<alinea>
+							<content>
+								<p>Les certificats et documents produits pour établir l'identité des parties seront exempts de la formalité de l'enregistrement.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_13">
+						<num>(13)</num>
+						<alinea>
+							<content>
+								<p>Les extraits des registres de l'état civil et autres documents produits pour établir l'identité des parties au point de vue hypothécaire seront exempts du droit de timbre. Si'ls émanent d'une autorité constituée du Grand-Duché, ils porteront l'indication de leur destination et la défense de les utiliser à d'autres fins.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_14">
+						<num>(14)</num>
+						<alinea>
+							<content>
+								<p>Sans préjudice de l'application de l'article 2196 du <ref href="/eli/etat/leg/code/civil" id="5f7a8abe-fbab-4b7a-8027-c6dd56c9e4db">Code civil</ref>, la désignation d'une personne ne comprenant pas le lieu et la date de naissance dans les réquisitions ayant trait aux actes et bordereaux transcrits ou inscrits après l'entrée en vigueur de la présente loi est réputée désignation insuffisante, dans le sens de l'article 2197 alinéa 2 du <ref href="/eli/etat/leg/code/civil" id="4d3bbc2c-d857-4547-9b41-ffb52c8da215">Code civil</ref>, si l'absence ou l'inexactitude de ces énonciations a été la cause de l'omission ou de l'erreur du conservateur.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_2/19530630</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1953-06-30</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<paragraph id="paragraph_15">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les officiers publics et les fonctionnaires, chargés de donner l'authenticité aux actes, auront pour devoir d'indiquer le titre de propriété des vendeurs, échangistes, donateurs et copartageants, avec les bureau, date, volume et numéro de la transcription pour le cas où le titre de propriété est constitué par un acte transcrit.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_16">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les actes emportant privilège ou hypothèque ainsi que les bordereaux énonceront la commune de la situation, la section, le lieu-dit, le numéro et la contenance du cadastre ainsi que la nature des biens grevés. Si, en cas de lotissement ou de morcellement, ces données ne suffisent pas à désigner spécialement et d'une manière précise les dits biens, le titre de propriété des propriétaires grevés sera également indiqué.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_17">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les dispositions de l'alinéa qui précèdent ne s'appliquent pas aux inscriptions qui sont dispensées de la spécification des biens grevés.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_3/19530630</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1953-06-30</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<alinea>
+						<content>
+							<p>L'omission ou l'erreur, dans les actes transcrits ou dans les bordereaux d'inscription, portant sur une ou plusieurs des énonciations prévues par la présente loi ou prescrites par les dispositions en vigueur en matière de publicité des droits réels immobiliers n'entraînera la nullité de la transcription ou de l'inscription que lorsqu'il en résultera un préjudice au détriment des tiers. La nullité ne pourra être demandée que par ceux auxquels l'omission ou l'irrégularité porterait préjudice, et les tribunaux pourront, selon la nature et l'étendue du préjudice, annuler la transcription ou l'inscription ou en réduire l'effet.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_4/20031201</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2003-12-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<paragraph id="paragraph_18">
+						<num>
+							<mod class="mod-start" for="#pm2"/>(1)</num>
+						<alinea>
+							<content>
+								<p>La rectification des erreurs ou omissions relatives aux prénoms, date et lieu de naissance, ainsi qu’au numéro d’identité prévu par la <ref href="/eli/etat/leg/loi/1979/03/30/n1/jo" id="c3eaac2e-56f8-4355-9ce9-5fe11ea92440">loi du 30 mars 1979</ref> organisant l’identification numérique des personnes physiques et morales visés à l’article 1<sup>er</sup>, pourra être demandée par tout intéressé dans les conditions prévues par la législation sur la protection des personnes à l’égard du traitement des données à caractère personnel.<mod class="mod-end" for="#pm2"/>
+									<noteRef href="#M2" marker="2"/>
+								</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_19">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>La rectification se fera par un acte modificatif dressé à la requête de l'intéressé soit par les fonctionnaires et officiers publics ayant reçu l'acte primitif soit par ceux qui sont dépositaires de la minute.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_20">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Sur réquisition des fonctionnaires et officiers publics, le conservateur des hypothèques inscrira en marge de l'acte transcrit ou du bordereau inscrit les indications rectifiées. Cette réquisition, couchée sur le timbre spécial prescrit en matière de transcription ou d'inscription, précisera la transcription ou l'inscription à émarger.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_5/19530630</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1953-06-30</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<paragraph id="paragraph_21">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>A l'exception des hypothèques légales prises au profit des mineurs, les inscriptions dispensées du renouvellement, actuellement existantes, cesseront de produire leurs effets, si, avant l'expiration du délai de 10 ans à compter du jour de l'entrée en vigueur de la présente loi, aucune inscription complémentaire contenant les données requises à l'article 1<sup>er</sup>, n'a été prise. Cette inscription complémentaire sera émargée par le conservateur des hypothèques au bordereau principal. Le bordereau complémentaire prévisera l'inscription à émarger.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_22">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>La justification de ces données se fera conformément à l'alinéa 8 de l'article 1<sup>er</sup> et les pièces y visées seront jointes au bordereau. Les administrations publiques et la Caisse d'Epargne de l'Etat, en tant que créanciers requérants, sont dispensées de la production de ces pièces.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_23">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Dispense d'identification pourra être accordée de la manière prévue à l'alinéa 10 de l'art. 1<sup>er</sup>. Dans ce cas, le requérant joindra l'ordonnance présidentielle en original ou en copie certifiée conforme par un fonctionnaire ou un officier public.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_24">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>En cas d'erreur ou d'omission dans l'accomplissement des formalités prévues au présent article, les dispositions des articles 3 et 4 trouveront leur application.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_6/19530630</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1953-06-30</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<alinea>
+						<content>
+							<p>La date de l'entrée en vigueur des dispositions qui précèdent sera fixée par arrêté du Ministre des Finances et du Ministre de la Justice.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="titre_ii">
+				<num><span scl:style-format="n">
+						<i>Titre</i> II.</span></num><heading/>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_7/19530630</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1953-06-30</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7.</num>
+					<alinea>
+						<content>
+							<p>Un règlement d'administration publique déterminera les conditions de fonds et de forme d'après lesquelles le livret de famille sera uniformément établi par les communes.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il fixera la date à partir de laquelle le livret de famille pourra servir à la certification de l'identité des personnes conformément aux dispositions de l'article 1<sup>er</sup> de la présente loi.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_8">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_8</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_8/19530630</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1953-06-30</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 8.</num>
+					<alinea>
+						<content>
+							<p>La copie des documents de la conservation des hypothèques pourra être délivrée en photocopie suivant les conditions à déterminer par un règlement d'administration publique.</p>
+						</content>
+					</alinea>
+				</article>
+			</section>
+			<section id="titre_iii">
+				<num>
+					<span scl:style-format="n">
+						<i>Titre</i> III.</span>
+				</num><heading/>
+				<article id="art_9">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_9</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1/art_9/19530630</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1953/06/26/n1</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">1953-06-30</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 9.</num>
+					<paragraph id="paragraph_25">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Les employés actuellement au service de l'Administration de l'Enregistrement - bureau des hypothèques à Luxembourg - pourront être nommés définitivement à l'emploi d'expéditionnaire à condition qu'ils aient à leur actif au moins 15 années de service à l'Administration.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_26">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Pour l'application de cette disposition les titulaires actuels sont dispensés des conditions générales prévues par la <ref href="/eli/etat/leg/loi/1932/07/14/n1/jo" id="8edfc461-1325-4044-bcb5-12f6b91cdbcd" scl:verify="true">loi du 14 juillet 1932</ref> modifiant et complétant la <ref href="/eli/etat/leg/loi/1872/05/08/n1/jo" id="465122bf-3ef3-48ff-a33d-e21f6b0a0b09" scl:verify="true">loi du 8 mai 1872</ref>, sur les droits et devoirs des fonctionnaires de l'Etat, ainsi que certaines dispositions de celle du 29 juillet 1913, concernant les traitements.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_27">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>En cas de nomination définitive, les années passées au service de l'Administration, déduction faite d'une période de stage de 3 années, seront portées en compte pour la fixation du traitement, sans que toutefois ce traitement puisse être inférieur à l'indemnité dont les titulaires jouissent actuellement.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_28">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Dans le cadre des dispositions spéciales prévues aux articles 16, 17 et 29 de la <ref href="/eli/etat/leg/loi/1948/05/21/n1/jo" id="30ff675f-dd52-45b0-8bdd-ca9f6f78a046" scl:verify="true">loi du 21 mai 1948</ref>, portant revision générale des traitements des fonctionnaires et employés et allocation de suppléments de pensions aux retraités de l'Etat, les intéressés pourront également bénéficier de l'arrêté grand-ducal du 21 juillet 1948 portant dispense des conditions prévues par la <ref href="/eli/etat/leg/loi/1948/05/21/n1/jo" id="b45f726c-b7e3-4fd0-b3a4-d2b8616e05d1" scl:verify="true">loi du 21 mai 1948</ref> en faveur des expéditionnaires et des agents leurs assimilés qui sont actuellement au service de l'Etat.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</section>
+		</body>
+	</act>
+</akomaNtoso>

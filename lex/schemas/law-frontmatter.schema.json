@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Lex Law Frontmatter",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]{2}/[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "document_type": {
+      "type": "string",
+      "enum": ["constitution", "code", "law", "regulation", "other"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["official_current", "official_consolidation"]
+    },
+    "official_id": {
+      "type": "string"
+    },
+    "eli_uri": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "source_file": {
+      "type": "string"
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_license": {
+      "type": "string"
+    },
+    "source_attribution": {
+      "type": "string"
+    },
+    "source_terms_url": {
+      "type": "string"
+    },
+    "rights_reviewed_at": {
+      "type": "string"
+    },
+    "published_at": {
+      "type": "string"
+    },
+    "consolidated_at": {
+      "type": "string"
+    },
+    "source_modified_at": {
+      "type": "string"
+    },
+    "retrieved_at": {
+      "type": "string"
+    },
+    "warning": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "country",
+    "title",
+    "language",
+    "document_type",
+    "status",
+    "source_url",
+    "source_file",
+    "source_sha256",
+    "source_license",
+    "source_attribution",
+    "source_terms_url",
+    "rights_reviewed_at",
+    "retrieved_at"
+  ],
+  "anyOf": [
+    { "required": ["official_id"] },
+    { "required": ["eli_uri"] }
+  ]
+}

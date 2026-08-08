@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2001-12-21" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MENV"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2001-12-21" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2001-12-21" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2025-11-29</scl:jolux><scl:jolux scl:name="dateDocument">2001-12-21</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MENV</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/156</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/913</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr</scl:jolux><scl:jolux scl:name="transpositionProcess">http://data.legilux.public.lu/event/etat/trans/2000/14</scl:jolux><scl:jolux scl:name="dateEntryInForce">2002-01-04</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/a161</scl:jolux><scl:jolux scl:name="historicalLegalId">2001A33801</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="publicationDate">2001-12-31</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MENV</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://www.w3.org/ns/prov#Entity</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="transposes">/eli/dir_ue/2000/14/jo</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pr/20000165</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1998/37/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1988/04/01/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1988/09/28/n6/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1989/06/01/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1989/06/01/n2/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1989/06/01/n3/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1989/06/01/n4/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1989/06/01/n5/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1989/06/01/n6/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1990/03/05/n5/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1992/07/08/n3/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1996/12/08/n3/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rect/1989/07/13/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 29/11/2025 : Règlement grand-ducal du 21 décembre 2001 portant application de la directive 2000/14/CE du Parlement Européen et du Conseil du 8 mai 2000 concernant le rapprochement des législations des Etats membres relatives aux émissions sonores dans l'environnement des matériels destinés à être utilisés à l'extérieur des bâtiments.</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1976/06/21/n2/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2001-161-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/a161/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2001-12-21-n7-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2001-161-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2001/a161/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2001/a161/fr/pdf/eli-etat-leg-memorial-2001-a161-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2002-01-04" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2006-04-30" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2025-11-29" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2006/04/19/n1/jo"/>
+<destination href="#art_13"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/rgd/2025/10/31/a474/jo"/>
+<destination href="#art_17"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2001/12/21/n7/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2025/10/31/a474/jo" id="rp2" showAs="Règlement grand-ducal du 31 octobre 2025 modifiant le règlement grand-ducal modifié du 21 décembre 2001 portant application de la directive 2000/14/CE du Parlement Européen et du Conseil du 8 mai 2000 concernant le rapprochement des législations des États membres relatives aux émissions sonores dans l’environnement des matériels destinés à être utilisés à l’extérieur des bâtiments."/>
+<passiveRef href="/eli/etat/leg/rgd/2006/04/19/n1/jo" id="rp3" showAs="Règlement grand-ducal du 19 avril 2006 modifiant l’article 13 du règlement grand-ducal du 21 décembre 2001 portant application de la directive 2000/14/CE du Parlement européen et du Conseil du 8 mai 2000 concernant le rapprochement des législations des États membres relatives aux émissions sonores dans l’environnement des matériels destinés à être utilisés à l’extérieur des bâtiments."/>
+</references>
+<notes scl:type="modification" source="#rp3">
+<note id="M1" marker="1" refersTo="pm1" title="A|2006-04-26|2006-04-19|RGD|73">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2006/04/19/n1/jo">Règlement grand-ducal du 19 avril 2006 modifiant l’article 13 du règlement grand-ducal du 21 décembre 2001 portant application de la directive 2000/14/CE du Parlement européen et du Conseil du 8 mai 2000 concernant le rapprochement des législations des États membres relatives aux émissions sonores dans l’environnement des matériels destinés à être utilisés à l’extérieur des bâtiments.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2025-11-10|2025-10-31|RGD|474">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2025/10/31/a474/jo">Règlement grand-ducal du 31 octobre 2025 modifiant le règlement grand-ducal modifié du 21 décembre 2001 portant application de la directive 2000/14/CE du Parlement Européen et du Conseil du 8 mai 2000 concernant le rapprochement des législations des États membres relatives aux émissions sonores dans l’environnement des matériels destinés à être utilisés à l’extérieur des bâtiments.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 29/11/2025 : Règlement grand-ducal du 21 décembre 2001 portant application de la directive 2000/14/CE du Parlement Européen et du Conseil du 8 mai 2000 concernant le rapprochement des législations des Etats membres relatives aux émissions sonores dans l'environnement des matériels destinés à être utilisés à l'extérieur des bâtiments.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_1er/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<heading>
+<b>Objectifs</b>
+</heading>
+<alinea>
+<content>
+<p>Le présent règlement vise les normes d’émissions sonores, les procédures d’évaluation de la conformité, de marquage, de documentation technique et de collecte de données concernant les émissions sonores dans l’environnement des matériels destinés à être utilisés à l’extérieur des bâtiments.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_2/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<heading>
+<b> Champ d’application </b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Le présent règlement s’applique aux matériels destinés à être utilisés à l’extérieur des bâtiments, qui sont énumérés aux articles 13 et 14 et définis à l’annexe I. Le présent règlement ne s’applique qu’aux matériels mis sur le marché ou mis en service comme entités complètes prêtes à l’emploi. Les accessoires sans moteur séparément mis sur le marché, ou mis en service en sont exclus, à l’exception des brise-béton, des marteauxpiqueurs à main et des brise-roche hydrauliques.</li>
+<li>Sont exclus du champ d’application du présent règlement : <ul scl:space-before="1" scl:space-item="3" scl:space-num="5" scl:symbol="dash">
+<li>tous les matériels principalement destinés au transport de marchandises ou de personnes par route, rail, air ou voies d’eau,</li>
+<li> les matériels spécialement conçus et construits à l’usage de l'armée ou de la police ainsi que pour les services d’urgence.</li>
+</ul>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_3/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<heading>
+<b>Définitions</b>
+</heading>
+<alinea>
+<content>
+<p>Aux fins du présent règlement, on entend par :</p>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="a)">
+<li>« matériels destinés à être utilisés à l’extérieur des bâtiments » : toutes les machines définies à l’article 1er, paragraphe 2, de la <ref href="/eli/dir_ue/1998/37/jo" id="fce4258f-2192-4be9-a6a0-26118f1991d3">directive 98/37/CE</ref> du Parlement européen et du Conseil du 22 juin 1998 concernant le rapprochement des législations des Etats membres relatives aux machines automotrices ou pouvant être déplacées et destinées, indépendamment de leur(s) élément(s) moteur(s), selon leur type, à être utilisées en plein air, et qui contribuent à l’exposition au bruit dans l’environnement. L’utilisation de matériels dans une enceinte n’affectant pas du tout ou pas significativement la transmission du son (par exemple sous une tente, sous un toit de protection contre la pluie ou dans la carcasse d’un bâtiment) est considérée comme une utilisation à l’extérieur des bâtiments. Sont également considérés comme des matériels destinés à être utilisés à l’extérieur des bâtiments les matériels non motorisés destinés à une application industrielle ou environnementale, selon le type, en plein air et qui contribuent au bruit dans l’environnement . Tous ces types de matériel sont ci-après dénommés « matériels » ;</li>
+<li>« procédures d’évaluation de la conformité » : les procédures fixées dans les annexes V à VIII, fondées sur la <ref href="/eli/dec/1993/465/jo" id="be0954f5-2b77-41b5-afc4-eb4cacaf0b66">décision 93/465/CEE</ref> ; </li>
+<li>« marquage » : l’apposition, de manière visible, lisible et indélébile, du marquage « CE », définie dans la <ref href="/eli/dec/1993/465/jo" id="5b602cbf-ba1b-4097-b4cc-2da399a4e475">décision 93/465/CEE</ref>, et accompagnée de l’indication du niveau de puissance acoustique garanti ;</li>
+<li>« niveau de puissance acoustique LWA » : le niveau de puissance acoustique affecté d’un coefficient de pondération A et mesuré en dB par rapport à 1 pW, tel que défini dans les normes EN ISO 3744 : 1995 et EN ISO 3746 : 1995 ;</li>
+<li>« niveau de puissance acoustique mesuré » : un niveau de puissance acoustique déterminé d’après les mesures définies à l’annexe III ; les valeurs mesurées peuvent être déterminées soit sur la base d’une seule machine représentative de ce type de matériel, soit d’après la moyenne de plusieurs machines ;</li>
+<li>« niveau de puissance acoustique garanti » : un niveau de puissance acoustique déterminé conformément aux exigences énoncées à l’annexe III en incluant les incertitudes liées aux variations de la production et aux procédures de mesure, et dont le fabricant ou son mandataire établi dans la Communauté confirme qu’il n’est pas dépassé, d’après les instruments techniques utilisés et signalés dans la documentation technique.</li>
+<li>« Ministre » : le membre du Gouvernement ayant dans ses attributions l’environnement.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_4/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<heading>
+<b>Annexes</b>
+</heading>
+<alinea>
+<content>
+<p>Font partie intégrante du présent règlement les annexes suivantes :</p>
+<table id="table_1" scl:cols="15 75" scl:cols-align="left left" scl:rows-height="12" width="100">
+<tr>
+<td>
+<p>Annexe I :</p>
+</td>
+<td>
+<p>Définitions des matériels</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Annexe II :</p>
+</td>
+<td>
+<p> Déclaration de conformité CE</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Annexe III :</p>
+</td>
+<td>
+<p>Méthode de mesurage du bruit aérien émis par les matériels utilisés à l’extérieur des bâtiments</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Annexe IV :</p>
+</td>
+<td>
+<p>Modèles du marquage de conformité « CE » et de l’indication du niveau de puissance acoustique garanti</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Annexe V :</p>
+</td>
+<td>
+<p>Contrôle interne de la production </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Annexe VI :</p>
+</td>
+<td>
+<p>Contrôle interne de la production avec évaluation de la documentation technique et contrôle périodique</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Annexe VII :</p>
+</td>
+<td>
+<p>Vérification à l’unité</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Annexe VIII :</p>
+</td>
+<td>
+<p> Assurance de la qualité complète </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Annexe IX :</p>
+</td>
+<td>
+<p> Critères minimaux devant être pris en considération pour la notification des organismes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Annexe X :</p>
+</td>
+<td>
+<p> Vérification à l’unité </p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_5/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<heading>
+<b>Mise sur le marché</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Le matériel visé à l’article 2, paragraphe 1, n’est mis sur le marché ou mis en service que si le fabricant ou son mandataire établi dans la Communauté garantit que :<ul scl:space-before="1" scl:space-item="3" scl:space-num="5" scl:symbol="dash">
+<li>ledit matériel satisfait aux exigences du présent règlement en matière d’émissions sonores dans l’environnement</li>
+<li>les procédures d’évaluation de la conformité visées à l’article 15 ont été appliquées,</li>
+<li>le matériel porte le marquage « CE » ainsi que l’indication du niveau de puissance acoustique garanti et est accompagné d’une déclaration de conformité CE.</li>
+</ul>
+</li>
+<li>Si ni le fabricant ni son mandataire ne sont établis dans la Communauté, les obligations du présent règlement incombent à toute personne qui met le matériel sur le marché ou le met en service dans la Communauté. </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_6/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<heading>
+<b>Surveillance du marché</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Les matériels visés à l’article 2, paragraphe 1, ne peuvent être mis sur le marché ou mis en service que s’ils sont conformes aux dispositions du présent règlement, s’ils portent le marquage « CE » et l’indication du niveau de puissance acoustique garanti et s’ils sont accompagnés d’une déclaration de conformité CE.</li>
+<li>L’Administration de l’Environnement est chargée de régler les problèmes d’ordre technique que peut engendrer l’application du présent règlement. Elle coopère en la matière avec les autorités compétentes des autres Etats membres de l’Union européenne.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_7/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<heading>
+<b>Libre circulation</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Ne peuvent être interdites, limitées ou empêchées la mise sur le marché ou la mise en service sur le territoire luxembourgeois de matériels visés à l’article 2, paragraphe 1, qui sont conformes aux dispositions du présent règlement, qui portent le marquage « CE » ainsi que l’indication du niveau de puissance acoustique garanti et qui sont accompagnés d’une déclaration de conformité CE.</li>
+<li>N’est pas interdite l’exposition, lors des foires commerciales, de démonstrations, d’expositions ou de manifestations similaires, de matériels visés à l’article 2, paragraphe 1, non conformes aux dispositions du présent règlement à condition qu’un panneau bien visible indique clairement que les matériels en question ne sont pas conformes, et qu’ils ne soient pas mis sur le marché ou mis en service tant qu’ils n’ont pas été mis en conformité par le fabricant ou son mandataire établi dans la Communauté. Lors des démonstrations, des mesures de sécurité adéquates doivent être prises conformément aux exigences fixées par l’Administration de l’Environnement afin d’assurer la protection des personnes.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_8/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<heading>
+<b>Présomption de conformité</b>
+</heading>
+<alinea>
+<content>
+<p>Le matériel visé à l’article 2, paragraphe 1, qui porte le marquage « CE » ainsi que l’indication du niveau de puissance acoustique garanti et qui est accompagné de la déclaration de conformité est présumé conforme à l’intégralité des dispositions du présent règlement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_9/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<heading>
+<b>Déclaration de conformité CE</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Le fabricant d’un matériel visé à l’article 2, paragraphe 1, ou son mandataire établi dans la Communauté dresse pour chaque type de matériel fabriqué une déclaration de conformité CE attestant que celui-ci est conforme aux dispositions du présent règlement ; cette déclaration de conformité contient au minimum les éléments indiqués à l’annexe II.</li>
+<li>La déclaration de conformité est établie ou traduite en langue française ou allemande lorsque le matériel est mis sur le marché ou mis en service sur le territoire luxembourgeois.</li>
+<li>Le fabricant d’un matériel visé à l’article 2, paragraphe 1, ou son mandataire établi dans la Communauté conserve un spécimen de la déclaration de conformité CE pendant dix ans à compter de la date de dernière fabrication du matériel ainsi que la documentation technique prévue à l’annexe V, point 3, à l’annexe VI, point 3, à l’annexe VII, point 2 et à l’annexe VIII, points 3.1 et 3.3.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_10/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<heading>
+<b>Non-conformité du matériel</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Lorsque l’Administration de l’Environnement constate que du matériel visé à l’article 2, paragraphe 1, et mis sur le marché ou mis en service ne respecte pas les exigences du présent règlement, le Ministre prend toutes les mesures nécessaires pour que le fabricant ou son mandataire établi dans la Communauté mette ledit matériel en conformité avec les dispositions du présent règlement.</li>
+<li>Si<ol scl:space-before="1" scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="a)">
+<li>les valeurs limites visées à l’article 13 sont dépassées ou</li>
+<li> que la non-conformité aux dispositions du présent règlement se prolonge en dépit des mesures prises conformément au paragraphe 1,</li>
+</ol>
+<p>le Ministre prend toutes les mesures nécessaires pour limiter ou interdire la mise sur le marché ou la mise en service du matériel en question ou pour veiller à ce que le matériel soit retiré du marché. La Commission européenne et les autres Etats membres de l’Union européenne sont immédiatement informés des mesures prises. La Commission européenne procède aux consultations et informations conformément à l’article 9 de la <ref href="/eli/dir_ue/2000/14/jo" id="7c48bd98-6dad-4659-a4e6-91a1cae9fd42">directive 2000/14/CE</ref>.</p>
+</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_11/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<heading>
+<b>Décision de limitation de la mise sur le marché ou de la mise en service</b>
+</heading>
+<alinea>
+<content>
+<p>Toute décision prise en application du présent règlement qui limite la mise sur le marché ou la mise en service de matériel couvert par le présent règlement indique les raisons exactes qui la motivent. La mesure prise est notifiée dès que possible à la partie concernée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_12/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<heading>
+<b>Marquage</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Le matériel visé à l’article 2, paragraphe 1 qui est mis sur le marché ou mis en service et qui est conforme aux dispositions du présent règlement porte le marquage « CE » de conformité. Ce marquage se compose des lettres « CE » sous la forme indiquée à l’annexe IV.</li>
+<li> Le marquage « CE » est accompagné de l’indication du niveau de puissance acoustique garanti. Un modèle de cette indication figure à l’annexe IV.</li>
+<li>Le marquage « CE » de conformité et l’indication du niveau de puissance acoustique garanti sont apposés de manière visible, lisible et indélébile sur chaque matériel.</li>
+<li>L’apposition sur le matériel de marquages ou d’inscriptions susceptibles d’induire en erreur quant à la signification ou la forme du marquage « CE » ou à l’indication du niveau de puissance acoustique garanti est interdite. Tout autre marquage peut être apposé sur le matériel, à condition de ne pas réduire la visibilité, ni la lisibilité du marquage « CE » et de l’indication du niveau de puissance acoustique garanti.</li>
+<li> Lorsque le matériel visé à l’article 2, paragraphe 1, est soumis au présent règlement et, pour d’autres aspects, à d’autres directives qui prévoient aussi l’apposition du marquage « CE », le marquage indique que ledit matériel satisfait également aux dispositions de ces directives. Toutefois, si une ou plusieurs de ces directives permet au fabricant de choisir, pendant une période transitoire, les modalités qu’il souhaite appliquer, le marquage « CE » indique que le matériel satisfait uniquement aux dispositions des directives appliquées par le fabricant. En l’occurrence, il y a lieu de citer, dans les documents, les spécifications ou les notices exigées par ces directives et accompagnant le matériel, les références des directives en question telles qu’elles sont publiées au Journal Officiel des Communautés européennes. </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_13/20060430</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-04-30</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<heading>
+<b>Matériels soumis à des limites d’émission sonore</b>
+</heading>
+<alinea>
+<content>
+<p>Le niveau de puissance acoustique garanti des matériels énumérés ci-après ne peut dépasser le niveau de puissance acoustique admissible fixé dans le tableau suivant des valeurs limites :</p>
+<ul scl:space-item="2" scl:space-num="5" scl:symbol="dash">
+<li>monte-matériaux (à moteur à combustion interne)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 3. Mesure : annexe III, partie B, point 3</i>
+</p>
+</li>
+<li>engins de compactage (uniquement rouleaux compacteurs vibrants et non vibrants, plaques vibrantes et pilonneuses vibrantes) <p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 8. Mesure : annexe III, partie B, point 8</i>
+</p>
+</li>
+<li> motocompresseurs (&lt; 350 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 9. Mesure : annexe III, partie B, point 9</i>
+</p>
+</li>
+<li> brise-béton et marteaux-piqueurs à main<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 10. Mesure : annexe III, partie B, point 10</i>
+</p>
+</li>
+<li>treuils de chantier (à moteur à combustion interne)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 12. Mesure : annexe III, partie B, point 12</i>
+</p>
+</li>
+<li> bouteurs (&lt; 500 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 16. Mesure : annexe III, partie B, point 16</i>
+</p>
+</li>
+<li> tombereaux (&lt; 500 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 18. Mesure : annexe III, partie B, point 18</i>
+</p>
+</li>
+<li>pelles hydrauliques ou à câbles (&lt; 500 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 20. Mesure : annexe III, partie B, point 20</i>
+</p>
+</li>
+<li>chargeuses-pelleteuses (&lt; 500 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 21. Mesure : annexe III, partie B, point 21</i>
+</p>
+</li>
+<li>niveleuses (&lt; 500 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 23. Mesure : annexe III, partie B, point 23 </i>
+</p>
+</li>
+<li>groupes hydrauliques<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 29. Mesure : annexe III, partie B, point 29</i>
+</p>
+</li>
+<li>compacteurs de remblais et de déchets à godet, de type chargeuse (&lt; 500 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 31. Mesure : annexe III, partie B, point 31</i>
+</p>
+</li>
+<li>tondeuses à gazon (à l’exclusion des matériels agricoles et forestiers et des dispositifs multi-usage dont le principal élément motorisé possède une puissance installée supérieure à 20 kW) <p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 32. Mesure : annexe III, partie B, point 32</i>
+</p>
+</li>
+<li>coupe-gazon/coupe bordures<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 33. Mesure : annexe III, partie B, point 33</i>
+</p>
+</li>
+<li>chariots élévateurs en porte-à-faux à moteur à combustion interne (à l’exclusion des « autres chariots en porte-à-faux » tels que définis à l’annexe I, point 36, deuxième tiret, d’une capacité nominale ne dépassant pas 10 tonnes)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 36. Mesure : annexe III, partie B, point 36</i>
+</p>
+</li>
+<li> chargeuses (&lt; 500 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 37. Mesure : annexe III, partie B, point 37 </i>
+</p>
+</li>
+<li> grues mobiles<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 38. Mesure : annexe III, partie B, point 38</i>
+</p>
+</li>
+<li>motobineuses/motoculteurs (&lt; 3 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 40. Mesure : annexe III, partie B, point 40</i>
+</p>
+</li>
+<li>finisseurs (à l’exclusion des finisseurs équipés d’une poutre lisseuse à forte capacité de compactage)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 41. Mesure : annexe III, partie B, point 41 </i>
+</p>
+</li>
+<li>groupes électrogènes de puissance (&lt; 400 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 45. Mesure : annexe III, partie B, point 45</i>
+</p>
+</li>
+<li>grues à tour<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 53. Mesure : annexe III, partie B, point 53</i>
+</p>
+</li>
+<li>groupes électrogènes de soudage<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 57. Mesure : annexe III, partie B, point 57 </i>
+</p>
+</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<table border="1" id="table_3" scl:cols="40 20 20 20" scl:cols-align="left center" scl:cols-nb="4" scl:cols-valign="top middle" width="100">
+<tr>
+<th scl:align="center" scl:valign="middle">
+<p>
+<span scl:style-format="n">
+<mod class="mod-start" for="#pm1"/>Type de matériel</span>
+</p>
+</th>
+<th scl:align="center" scl:valign="middle">
+<p>
+<span scl:style-format="n">Puissance nette installée P, en kW Puissance électrique P<sub>el</sub> en kW <sup>(1)</sup> Masse m de l’appareil, en kg Largeur decoupe L, en cm</span> </p>
+</th>
+<th colspan="2" scl:align="center" scl:valign="middle">
+<p>
+<span scl:style-format="n">Niveau admissible de puissance <br/>acoustique en dB/1 pW</span>
+</p>
+</th>
+</tr>
+<tr>
+<td scl:width="40"/>
+<td scl:width="20"/>
+<td scl:width="20">
+<p>Phase I à compter du 3 janvier 2002</p>
+</td>
+<td scl:width="20">
+<p>Phase II à compter du 3 janvier 2006</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p>Engins de compactage (rouleaux compacteurs vibrants et plaques et pilonneuses vibrantes)</p>
+</td>
+<td>
+<p>P ≤ 8</p>
+</td>
+<td>
+<p>108</p>
+</td>
+<td>
+<p>105 <sup>(2)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>8 &lt; P ≤ 70</p>
+</td>
+<td>
+<p>109</p>
+</td>
+<td>
+<p>106 <sup>(2)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>P &gt; 70</p>
+</td>
+<td>
+<p>89 + 11 lg P</p>
+</td>
+<td>
+<p>86 + 11 lg P <sup>(2)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>Bouteurs, chargeuses, chargeuses-pelleteuses sur chenilles</p>
+</td>
+<td>
+<p>P ≤ 55</p>
+</td>
+<td>
+<p>106</p>
+</td>
+<td>
+<p>103 <sup>(2)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>P &gt; 55</p>
+</td>
+<td>
+<p>87 + 11 lg P</p>
+</td>
+<td>
+<p>84 + 11 lg P <sup>(2)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>Bouteurs, chargeuses, chargeuses-pelleteuses sur roues, tombereaux, niveleuses, compacteurs de remblais et de déchets de type chargeuse, chariots élévateurs en porte-à-faux à moteur à combustion interne, grues mobiles, engins de compactage (rouleaux compacteurs non vibrants), finisseurs, groupes de puissance hydraulique </p>
+</td>
+<td>
+<p>P ≤ 55</p>
+</td>
+<td>
+<p>104</p>
+</td>
+<td>
+<p>101 <sup>(2) (3)</sup> </p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>P &gt; 55</p>
+</td>
+<td>
+<p>85 + 11 lg P</p>
+</td>
+<td>
+<p>82 + 11 lg P <sup>(2) (3)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>Pelles, monte-matériaux, treuils de chantier, motobineuses</p>
+</td>
+<td>
+<p>P ≤ 15</p>
+</td>
+<td>
+<p>96</p>
+</td>
+<td>
+<p>93</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>P &gt; 15</p>
+</td>
+<td>
+<p>83 + 11 lg P </p>
+</td>
+<td>
+<p>80 + 11 lg P</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p>Brise-béton et marteaux-piqueurs à main</p>
+</td>
+<td>
+<p>m ≤ 15</p>
+</td>
+<td>
+<p>107</p>
+</td>
+<td>
+<p>105</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>15 &lt; m &lt; 30</p>
+</td>
+<td>
+<p>94 + 11 lg m</p>
+</td>
+<td>
+<p>92 + 11 lg m <sup>(2)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>m ≥ 30</p>
+</td>
+<td>
+<p>96 + 11 lg m</p>
+</td>
+<td>
+<p>94 + 11 lg m</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grues à tour</p>
+</td>
+<td/>
+<td>
+<p>98 + lg P</p>
+</td>
+<td>
+<p>96 + lg P</p>
+</td>
+</tr>
+<tr>
+<td rowspan="3">
+<p>Groupes électrogènes de soudage et de puissance</p>
+</td>
+<td>
+<p>P<sub>el</sub> ≤ 2</p>
+</td>
+<td>
+<p>97 + lg P<sub>el</sub>
+</p>
+</td>
+<td>
+<p>95 + lg P<sub>el</sub>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>2 &lt; P<sub>el</sub> ≤ 10</p>
+</td>
+<td>
+<p>98 + lg P<sub>el</sub>
+</p>
+</td>
+<td>
+<p>96 + lg P<sub>el</sub>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>10 &gt; P<sub>el</sub>
+</p>
+</td>
+<td>
+<p>97 + lg P<sub>el</sub>
+</p>
+</td>
+<td>
+<p>95 + lg P<sub>el</sub>
+</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2">
+<p>Motocompresseurs</p>
+</td>
+<td>
+<p>P ≤ 15</p>
+</td>
+<td>
+<p>99</p>
+</td>
+<td>
+<p>97</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>P &gt; 15</p>
+</td>
+<td>
+<p>97 + 2 lg P</p>
+</td>
+<td>
+<p>95 + 2 lg P</p>
+</td>
+</tr>
+<tr>
+<td rowspan="4">
+<p>Tondeuses à gazon, coupe-gazon/coupe-bordures</p>
+</td>
+<td>
+<p>L ≤ 50</p>
+</td>
+<td>
+<p>96</p>
+</td>
+<td>
+<p>94 <sup>(2)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>50 &lt; L ≤ 70</p>
+</td>
+<td>
+<p>100</p>
+</td>
+<td>
+<p>98</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>70 &lt; L ≤ 120</p>
+</td>
+<td>
+<p>100</p>
+</td>
+<td>
+<p>98 <sup>(2)</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td scl:align="center" scl:valign="middle">
+<p>L &gt; 120</p>
+</td>
+<td>
+<p>105</p>
+</td>
+<td>
+<p>103 <sup>(2)</sup>
+</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_2" scl:cols="3 97" scl:cols-align="justify" scl:font-size="8" width="100">
+<tr>
+<td>
+<p scl:font-size="6">(1)</p>
+</td>
+<td>
+<p>P<sub>el</sub> pour les groupes électrogènes de soudage: courant de soudage conventionnel multiplié par le voltage de charge conventionnel pour la plus faible valeur du taux de travail donnée par le fabricant. </p>
+</td>
+</tr>
+<tr>
+<td/>
+<td>
+<p>P<sub>el</sub> pour les groupes électrogènes de puissance: énergie primaire selon la norme ISO 8528-1:1993, point 13.3.2. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p scl:font-size="6">(2) </p>
+</td>
+<td>
+<p>
+<eop/>Les chiffres de la phase II sont indicatifs uniquement pour les types de matériels suivants: </p>
+<ul scl:space-num="6" scl:symbol="custom">
+<li scl:symbol="—">rouleaux compacteurs à conducteur à pied,</li>
+<li scl:symbol="—"> plaques vibrantes (&gt; 3 kW),</li>
+<li scl:symbol="—"> pilonneuses vibrantes,</li>
+<li scl:symbol="—"> bouteurs (sur chenilles d’acier),</li>
+<li scl:symbol="—"> chargeuses (sur chenilles d’acier &gt; 55 kW),</li>
+<li scl:symbol="—"> chariots élévateurs en porte-à-faux à moteur à combustion interne,</li>
+<li scl:symbol="—"> finisseurs équipés d’une poutre lisseuse comportant un dispositif de compactage,</li>
+<li scl:symbol="—"> brise-béton et marteaux-piqueurs à main à moteur à combustion interne (15&lt;m&lt;30)</li>
+<li scl:symbol="—"> tondeuses à gazon, coupe-gazon/coupe-bordures.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td/>
+<td>
+<p>Les chiffres définitifs dépendront de la modification de la directive à la suite du rapport visé à l’article 20, paragraphe 1. En l’absence de modification, les chiffres de la phase I resteront applicables durant la phase II.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p scl:font-size="6">(3)</p>
+</td>
+<td>
+<p>Pour les grues mobiles monomoteurs, les chiffres de la phase I demeurent applicables jusqu’au 3 janvier 2008. Au-delà de cette date, les chiffres de la phase II s’appliquent.</p>
+</td>
+</tr>
+<tr>
+<td/>
+<td>
+<p>Le niveau de puissance acoustique admissible est arrondi par défaut ou par excès au nombre entier le plus proche (pour moins de 0,5, l’entier inférieur; pour 0,5 ou plus, l’entier supérieur).<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_14/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<heading>
+<b>Matériels soumis uniquement au marquage du niveau sonore</b>
+</heading>
+<alinea>
+<content>
+<p>Le niveau de puissance acoustique garanti des matériels énumérés ci-après est soumis uniquement au marquage du niveau sonore :</p>
+<ul scl:space-item="2" scl:space-num="5" scl:symbol="dash">
+<li> plates-formes élévatrices à moteur à combustion interne<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 1. Mesure : annexe III, partie B, point 1 </i>
+</p>
+</li>
+<li>débroussailleuses<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 2. Mesure : annexe III, partie B, point 2 </i>
+</p>
+</li>
+<li>monte-matériaux (à moteur électrique)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 3. Mesure : annexe III, partie B, point 3</i>
+</p>
+</li>
+<li>scies à ruban de chantier<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 4. Mesure : annexe III, partie B, point 4</i>
+</p>
+</li>
+<li>scies circulaires à table de chantier<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 5. Mesure : annexe III, partie B, point 5</i>
+</p>
+</li>
+<li>scies à chaîne portables<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 6. Mesure : annexe III, partie B, point 6</i>
+</p>
+</li>
+<li>véhicules combinés pour le rinçage à haute pression et la vidange par aspiration<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 7. Mesure : annexe III, partie B, point 7</i>
+</p>
+</li>
+<li> engins de compactage (uniquement les pilonneuses à explosion)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 8. Mesure : annexe III, partie B, point 8 </i>
+</p>
+</li>
+<li>malaxeurs à béton ou à mortier<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 11. Mesure : annexe III, partie B, point 11 </i>
+</p>
+</li>
+<li>treuils de chantier (à moteur électrique)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 12. Mesure : annexe III, partie B, point 12</i>
+</p>
+</li>
+<li> machines pour la transport et la projection de béton ou de mortier<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 13. Mesure : annexe III, partie B, point 13</i>
+</p>
+</li>
+<li>convoyeurs à bande<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 14. Mesure : annexe III, partie B, point 14</i>
+</p>
+</li>
+<li>matériels frigorifiques embarqués<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 15. Mesure : annexe III, partie B, point 15</i>
+</p>
+</li>
+<li>appareils de forage<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 17. Mesure : annexe III, partie B, point 17 </i>
+</p>
+</li>
+<li>matériels de chargement/déchargement de réservoirs ou de silos embarqués<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 19. Mesure : annexe III, partie B, point 19</i>
+</p>
+</li>
+<li>conteneurs à verre<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 22. Mesure : annexe III, partie B, point 22</i>
+</p>
+</li>
+<li>coupe-herbes/coupe-bordures<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 24. Mesure : annexe III, partie B, point 24</i>
+</p>
+</li>
+<li>taille-haies<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 25. Mesure : annexe III, partie B, point 25 </i>
+</p>
+</li>
+<li>véhicules de rinçage à haute pression <p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 26. Mesure : annexe III, partie B, point 26</i>
+</p>
+</li>
+<li>nettoyeurs à jet d’eau haute pression<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 27. Mesure : annexe III, partie B, point 27 </i>
+</p>
+</li>
+<li>brise-roche hydrauliques<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 28. Mesure : annexe III, partie B, point 28</i>
+</p>
+</li>
+<li>découpeurs de joints<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 30. Mesure : annexe III, partie B, point 30</i>
+</p>
+</li>
+<li>souffleurs de feuilles<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 34. Mesure : annexe III, partie B, point 34</i>
+</p>
+</li>
+<li>aspirateurs de feuilles<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 35. Mesure : annexe III, partie B, point 35</i>
+</p>
+</li>
+<li>chariots élévateurs en porte-à-faux à moteur à combustion interne (uniquement les « autres chariots en porte-à-faux ») tels que définis à l’annexe I, point 36, deuxième tiret, d’une capacité nominale ne dépassant pas 10 tonnes) <p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 36. Mesure : annexe III, partie B, point 36</i>
+</p>
+</li>
+<li>conteneurs roulants à déchets<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 39. Mesure : annexe III, partie B, point 39</i>
+</p>
+</li>
+<li>finisseurs (équipés d’une poutre lisseuse à forte capacité de compactage)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 41. Mesure : annexe III, partie B, point 41 </i>
+</p>
+</li>
+<li>engins de battage <p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 42. Mesure : annexe III, partie B, point 42 </i>
+</p>
+</li>
+<li>poseurs de canalisations<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 43. Mesure : annexe III, partie B, point 43 </i>
+</p>
+</li>
+<li>engins de damage de piste<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 44. Mesure : annexe III, partie B, point 44</i>
+</p>
+</li>
+<li>groupes électrogènes (<u>&gt;</u> 400 kW)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 45. Mesure : annexe III, partie B, point 45</i>
+</p>
+</li>
+<li> balayeuses<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 46. Mesure : annexe III, partie B, point 46</i>
+</p>
+</li>
+<li> bennes à ordures ménagères<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 47. Mesure : annexe III, partie B, point 47</i>
+</p>
+</li>
+<li> engins de fraisage de chaussée<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 48. Mesure : annexe III, partie B, point 48</i>
+</p>
+</li>
+<li>scarificateurs<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 49. Mesure : annexe III, partie B, point 49</i>
+</p>
+</li>
+<li>broyeurs<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 50. Mesure : annexe III, partie B, point 50</i>
+</p>
+</li>
+<li>déneigeuses à outils rotatifs (automotrices, accessoires exclus)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 51. Mesure : annexe III, partie B, point 51</i>
+</p>
+</li>
+<li> véhicules de vidange par aspiration<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 52. Mesure : annexe III, partie B, point 52</i>
+</p>
+</li>
+<li> trancheuses<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 54. Mesure : annexe III, partie B, point 54</i>
+</p>
+</li>
+<li>camion-malaxeur <p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 55. Mesure : annexe III, partie B, point 55</i>
+</p>
+</li>
+<li>Groupe motopompe à eau (non destiné à une utilisation sous eau)<p scl:space-after="5" scl:space-before="5">
+<i>Définition : annexe I, point 56. Mesure : annexe III, partie B, point 56</i>
+</p>
+</li>
+</ul>
+</content>
+</alinea>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_15/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<heading>
+<b>Evaluation de la conformité</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Avant de mettre sur le marché ou de mettre en service du matériel visé à l’article 13, le fabricant ou son mandataire établi dans la Communauté soumet chaque type de matériel à l’une des procédures d’évaluation de la conformité suivantes :<ul scl:space-before="5" scl:space-item="3" scl:space-num="5" scl:symbol="dash">
+<li>soit la procédure de contrôle interne de la production, avec évaluation de la documentation technique et contrôle périodique, visée à l’annexe VI,</li>
+<li>soit la procédure de vérification à l’unité visée à l’annexe VII,</li>
+<li>soit la procédure d’assurance qualité complète visée à l’annexe VIII.</li>
+</ul>
+</li>
+<li>Avant de mettre sur le marché ou de mettre en service du matériel visé à l’article 14, le fabricant ou son mandataire établi dans la Communauté soumet chaque type de matériel à la procédure de contrôle interne de la production visée à l’annexe V.</li>
+<li>Sur demande motivée, la Commission européenne et tout autre Etat membre de l’Union européenne peuvent obtenir toutes les informations utilisées lors de la procédure d’évaluation de la conformité concernant un type de matériel, et notamment la documentation technique prévue à l’annexe V, point 3, à l’annexe VI, point 3, à l’annexe VII, point 2 et à l’annexe VIII, points 3.1 et 3.3. </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_16/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<heading>
+<b>Organismes notifiés</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Le Ministre désigne des organismes qui sont chargés d’effectuer ou de superviser les procédures d’évaluation de la conformité visées à l’article 15, paragraphe 1.<p scl:space-before="2">Ne sont désignés que des organismes qui satisfont aux critères énoncés à l’annexe IX. Le fait qu’un organisme satisfasse aux critères de l’annexe IX n’implique pas que le Ministre soit obligé de désigner cet organisme.</p>
+</li>
+<li>Sont notifiés à la Commission européenne et aux autres Etats membres de l’Union européenne, les organismes désignés ainsi que les tâches spécifiques et les procédures d’examen qu’ils ont été chargés d’effectuer et les numéros d’identification que la Commission européenne leur a préalablement attribués.</li>
+<li>Le Ministre retire la notification s’il constate que l’organisme ne satisfait plus aux critères visés à l’annexe IX. La Commission européenne et les autres Etats membres de l’Union européenne en sont informés immédiatement.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_17" style="del">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_17/20251129</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-11-29</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm2"/>
+<del>Art. 17.</del>
+</num>
+<heading>
+<b>
+<del>Collecte de données relatives au bruit</del>
+</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1." style="del">
+<li style="del">
+<del>Le fabricant ou son mandataire établi dans la Communauté envoie à l’autorité responsable de l’Etat membre de l’Union européenne où il réside ou de l’Etat membre de l’Union européenne où il met sur le marché ou met en service le matériel visé à l’article 2, paragraphe 1, ainsi qu’à la Commission européenne, une copie de la déclaration de conformité CE pour chaque type de matériel visé à l’article 2, paragraphe 1.</del>
+</li>
+<li style="del">
+<del>La Commission européenne rassemble les données et publie les informations afférentes conformément à l’article 16 de la <ref href="/eli/dir_ue/2000/14/jo" id="52d492b2-075d-4c6c-ba0c-754f79e0c505">directive 2000/14/CE</ref>.<mod class="mod-end" for="#pm2"/>
+</del>
+<noteRef href="#M2" marker="2"/> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_18/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<heading>
+<b>Dispositions abrogatoires</b>
+</heading>
+<alinea>
+<content>
+<ol scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="1.">
+<li>Sont abrogés à compter de l'entrée en vigueur du présent règlement:<p scl:space-before="5">le <ref href="/eli/etat/leg/rgd/1988/04/01/n1/jo" id="f16bb79e-5191-47fc-bbed-ff47bcda4b1d">règlement grand-ducal modifié du 1er avril 1988</ref> concernant le niveau de puissance acoustique admissible des tondeuses à gazon</p>
+<p scl:space-before="5">le <ref href="/eli/etat/leg/rgd/1988/09/28/n6/jo" id="bafb4211-9ce9-49c0-82bd-2dfab9970ae1">règlement grand-ducal modifié du 28 septembre 1988</ref> relatif aux matériels et engins de chantier</p>
+<p scl:space-before="5">le <ref href="/eli/etat/leg/rgd/1989/06/01/n1/jo" id="53eba1c1-a9b3-49b1-a7a6-db4570e39bbe">règlement grand-ducal du 1er juin 1989</ref> relatif à la détermination de l’émission sonore des engins et matériels de chantier</p>
+<p scl:space-before="5">le <ref href="/eli/etat/leg/rgd/1989/06/01/n2/jo" id="c7009f15-acfc-48ff-9853-e9d2675d236e">règlement grand-ducal du 1er juin 1989</ref> relatif au niveau de puissance acoustique admissible des motocompresseurs</p>
+<p scl:space-before="5">le <ref href="/eli/etat/leg/rgd/1989/06/01/n3/jo" id="7a14f8b8-4aa1-4266-8183-f607e38ba16f">règlement grand-ducal du 1er juin 1989</ref> relatif au niveau de puissance acoustique admissible des grues à tours</p>
+<p scl:space-before="5">le <ref href="/eli/etat/leg/rgd/1989/06/01/n4/jo" id="acbfa3b8-1bd2-4464-995c-bf4b854d537f">règlement grand-ducal du 1er juin 1989</ref> relatif au niveau de puissance acoustique admissible des groupes électrogènes de soudage;</p>
+<p scl:space-before="5">le <ref href="/eli/etat/leg/rgd/1989/06/01/n5/jo" id="264e0b11-3e57-45c4-85e4-df5b175a9be9">règlement grand-ducal du 1er juin 1989</ref> relatif au niveau de puissance acoustique admissible des groupes électrogènes de puissance</p>
+<p scl:space-before="5">le <ref href="/eli/etat/leg/rgd/1989/06/01/n6/jo" id="01baf168-8a63-43a3-b968-77a7d2dca5c9">règlement grand-ducal du 1er juin 1989</ref> relatif au niveau de puissance acoustique admissible des brise-béton et des marteaux piqueurs utilisés à la main</p>
+<p scl:space-before="5">le <ref href="/eli/etat/leg/rgd/1992/07/08/n3/jo" id="5166ae77-d121-4c39-8e87-66d39d2fc7cb">règlement grand-ducal modifié du 8 juillet 1992</ref> relatif à :</p>
+<ol scl:space-before="5" scl:space-item="3" scl:space-num="5" scl:start="1" scl:symbol="a)">
+<li> la limitation des émissions sonores des pelles hydrauliques et à câbles, des bouteurs, des chargeuses et des chargeuses-pelleteuses,</li>
+<li>la modification du <ref href="/eli/etat/leg/rgd/1988/09/28/n6/jo" id="8e4924b0-f2ea-4198-8fec-207dc3e0ee71">règlement grand-ducal du 28 septembre 1988</ref> relatif aux matériels et engins de chantier</li>
+</ol>
+</li>
+<li>Les attestations d’examen de type délivrées en application des règlements mentionnés au paragraphe 1 et les mesures de matériels effectuées en application desdits règlements peuvent servir à établir la domentation technique prévue à l’annexe V, point 3, à l’annexe VI, point 3, à l’annexe VII, point 2 et à l’annexe VIII, points 3.1 et 3.3 du présent règlement.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_19/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<heading>
+<b>Entrée en vigueur</b>
+</heading>
+<alinea>
+<content>
+<p>Le présent règlement entre en vigueur le jour de sa publication au Mémorial.</p>
+</content>
+</alinea>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7/art_20/20020104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2001/12/21/n7</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2002-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<heading>
+<b>Exécution</b>
+</heading>
+<alinea>
+<content>
+<p>Notre Ministre de l’Environnement est chargé de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+</content>
+</alinea>
+</article>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2022-09-23" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2022-09-23" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2022-09-23" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p>Annexe</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p>Pour visualiser les annexes, veuillez consulter la version pdf du <ref href="https://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2001/a161/fr/pdf/eli-etat-leg-memorial-2001-a161-fr-pdf.pdf" id="6957342e-8450-464a-ad21-3982e373293b">Mémorial</ref>.</p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

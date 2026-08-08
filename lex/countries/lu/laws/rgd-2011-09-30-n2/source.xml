@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#2011A3668B">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-09-30" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/CHP"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-09-30" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-09-30" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/722</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MCLAMO</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2011-09-30</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2021-11-18</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2011A3668B</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2021-10-24</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2021-10-24</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/208</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/721</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/10</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 24/10/2021 : Règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 24/10/2021 : Règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</scl:jolux>
+					<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/PR/20100279</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/2011/09/02/n2/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2010/10/26/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2006/11/10/n2/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">3668</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2011-09-30-n2-consolide-20211024-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/consolide/20211024/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">3668</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2011-09-30-n2-consolide-20211024-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2011-09-30" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2021-10-24" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2021/10/20/a737/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2021/10/20/a737/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2021/10/20/a737/jo"/>
+						<destination href="#art_13"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2021/10/20/a737/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2021/10/20/a737/jo"/>
+						<destination href="#art_16"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2021/10/20/a737/jo"/>
+						<destination href="#art_18"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2021/10/20/a737/jo"/>
+						<destination href="#art_21_20211024"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2011/09/30/n2/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2021/10/20/a737/jo" id="rp2" showAs="Règlement grand-ducal du 20 octobre 2021 portant modification du règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2021-10-20|2021-10-20|RGD|737">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/20/a737/jo">Règlement grand-ducal du 20 octobre 2021 portant modification du règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2021-10-20|2021-10-20|RGD|737">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/20/a737/jo">Règlement grand-ducal du 20 octobre 2021 portant modification du règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2021-10-20|2021-10-20|RGD|737">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/20/a737/jo">Règlement grand-ducal du 20 octobre 2021 portant modification du règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2021-10-20|2021-10-20|RGD|737">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/20/a737/jo">Règlement grand-ducal du 20 octobre 2021 portant modification du règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2021-10-20|2021-10-20|RGD|737">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/20/a737/jo">Règlement grand-ducal du 20 octobre 2021 portant modification du règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2021-10-20|2021-10-20|RGD|737">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/20/a737/jo">Règlement grand-ducal du 20 octobre 2021 portant modification du règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2021-10-20|2021-10-20|RGD|737">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/10/20/a737/jo">Règlement grand-ducal du 20 octobre 2021 portant modification du règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 24/10/2021 : Règlement grand-ducal du 30 septembre 2011 portant organisation de la procédure électorale pour la Chambre des Métiers.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_i">
+				<num>
+					<b>Chapitre I. </b>
+				</num>
+				<heading scl:style-format="b">
+					<b>Bureau électoral</b>
+				</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_1er/20211024</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2021-10-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm1"/>
+						<u>Art. 1<sup>er</sup>.</u>
+					</num>
+					<alinea>
+						<content>
+							<p>Le bureau électoral est institué au plus tard cent trente jours avant le scrutin. Il siège dans les locaux mis à disposition par l’État ou par la Chambre des métiers.<mod class="mod-end" for="#pm1"/>
+								<noteRef href="#M1" marker="1"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_2/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<alinea>
+						<content>
+							<p>Le bureau électoral est un organe collégial dont les décisions sont prises à la majorité des voix des membres présents; en cas d'égalité des voix exprimés, celle du président est prépondérante. En cas d'empêchement du président, les fonctions de celui-ci sont assumées par le vice-président.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_3/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<alinea>
+						<content>
+							<p>Ne peuvent siéger au bureau électoral les membres sortants de la Chambre des Métiers, les candidats ainsi que leurs parents ou alliés jusqu'au deuxième degré compris.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_4/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<alinea>
+						<content>
+							<p>Les membres du bureau électoral ont droit à une indemnité qui est fixée à 5 euros, indice 100, par heure de travail effectif.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_ii">
+				<num>
+					<b>Chapitre II. </b>
+				</num>
+				<heading scl:style-format="b">
+					<b>Candidatures</b>
+				</heading>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_5/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<alinea>
+						<content>
+							<p>Le bureau électoral désigne ceux de ses membres qui sont chargés d'enregistrer les candidatures. Celles-ci sont enregistrées dans l'ordre de leur présentation. Un récépissé est délivré au candidat au moment du dépôt de sa candidature.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_6/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<alinea>
+						<content>
+							<p>Le candidat qui veut retirer sa candidature notifie sa décision au bureau électoral par courrier recommandé avec accusé de réception, avant l'expiration du délai pour le dépôt des candidatures.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_7/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7.</num>
+					<alinea>
+						<content>
+							<p>A l'expiration du délai pour la présentation des candidatures le bureau électoral arrête les listes des candidats présentés pour les différents groupes électoraux, avec indication pour chaque candidat de ses nom, prénoms, profession, et, lorsque le candidat est le titulaire de l'autorisation d'établissement pour compte d'une personne morale, la dénomination de celle-ci.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_iii">
+				<num>
+					<b>Chapitre III. </b>
+				</num>
+				<heading scl:style-format="b">
+					<b>Opérations électorales</b>
+				</heading>
+				<section id="chapitre_iii.section_i">
+					<num><span scl:style-format="n">
+							<i>Section I. </i>
+						</span></num><heading scl:separator=" ">
+						
+						<span scl:style-format="n">
+							<i>Des bulletins</i>
+						</span>
+					</heading>
+					<article id="art_8">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_8</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_8/20111008</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 8.</num>
+						<alinea>
+							<content>
+								<p>A l'expiration du délai fixé pour le dépôt des candidatures le bureau électoral formule les bulletins de vote qui doivent varier de couleur suivant les différents groupes électoraux.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Pour chaque groupe électoral, les candidats sont portés sur des bulletins suivant l'ordre alphabétique de leurs noms. A la suite du nom figure le prénom de chaque candidat et, le cas échéant, la dénomination de la personne morale ou de la succursale. A la suite des noms ou de la dénomination, une case est réservée à l'expression du vote, selon le modèle annexé au présent règlement.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_9">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_9</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_9/20111008</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 9.</num>
+						<alinea>
+							<content>
+								<p>Le papier devant servir à la confection des bulletins est fourni par le Centre des technologies de l'information de l'Etat et est timbré par ses soins avant d'être remis au bureau électoral.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les bulletins employés au bureau électoral pour un même groupe électoral doivent être identiques, sous le rapport du papier, du format et de l'impression. L'emploi de tous autres bulletins est interdit.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_iii.section_ii">
+					<num>
+						<i>
+							<mod class="mod-start" for="#pm2"/>Section II</i>
+						<i>. </i>
+					</num>
+					<heading scl:separator=" ">
+						<i>Des enveloppes</i>
+					</heading>
+					<article id="art_10">
+						<num>
+							<u>Art. 10.</u>
+						</num>
+						<alinea>
+							<content>
+								<p>On entend par :</p>
+								<table id="table_1" scl:cols="40 60" scl:cols-align="left justify" width="100">
+									<tr>
+										<td>
+											<p>1° enveloppe électorale :</p>
+										</td>
+										<td>
+											<p>l’enveloppe dans laquelle est inséré le bulletin de vote et qui porte l’indication « Élections pour la Chambre des métiers, <ref href="/eli/etat/leg/loi/2011/09/02/n2/jo" id="ca8f5a4f-77ca-4874-9c74-509891efa20f" scl:verify="true">loi du 2 septembre 2011</ref> », ainsi que la désignation du groupe pour lequel l’élection a lieu.</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2° enveloppe de transmission :</p>
+										</td>
+										<td>
+											<p>l’enveloppe avec laquelle l’électeur renvoie l’enveloppe électorale à l’adresse du président du bureau électoral et qui renseigne dans l’angle inférieur gauche le groupe, le numéro d’ordre, le nom, les prénoms et l’adresse de l’électeur.</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>3° enveloppe d’envoi :</p>
+										</td>
+										<td>
+											<p>l’enveloppe avec laquelle le bureau électoral envoie aux électeurs les documents pour le vote, et qui porte dans l’angle supérieur gauche l’adresse du président du bureau de vote.</p>
+										</td>
+									</tr>
+								</table>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le format, l’adressage et l’affranchissement des enveloppes électorales doivent être conformes aux instructions de la Convention postale universelle telles que définies par l’Union postale universelle.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_iii.section_iii">
+					<num><span scl:style-format="n">
+							<i>Section III.</i>
+						</span></num><heading scl:separator=" ">
+						 <span scl:style-format="n">
+							<i>Du vote</i>
+						</span>
+					</heading>
+					<article id="art_10bis">
+						<num>
+							<u>Art. 10<i>bis.</i>
+							</u>
+						</num>
+						<alinea>
+							<content>
+								<p>Au plus tard quinze jours avant le scrutin, le président du bureau électoral fait parvenir, sous la forme d’une simple lettre, à chaque électeur un bulletin de vote et une notice contenant les instructions pour les électeurs.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les bulletins de vote sont placés dans l’enveloppe électorale, laissée ouverte. L’enveloppe de transmission, laissée également ouverte, est jointe à l’envoi.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le tout est inséré dans l’enveloppe d’envoi à l’adresse de l’électeur.<mod class="mod-end" for="#pm2"/>
+									<noteRef href="#M2" marker="2"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_11">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_11</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_11/20111008</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 11.</num>
+						<alinea>
+							<content>
+								<p>Chaque électeur dispose d'autant de suffrages qu'il y a de membres effectifs à élire dans le groupe électoral en question. L'expression du vote se fait par une croix apposée dans la case réservée à cet effet.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Toute croix, même imparfaite, exprime valablement le vote, à moins que l'intention de rendre le bulletin reconnaissable ne soit manifeste.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_12">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_12</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_12/20111008</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 12.</num>
+						<alinea>
+							<content>
+								<p>Toute marque, toute inscription, signature, rature ou signe quelconque apportés au bulletin de vote entraînent l'annulation de celui-ci par le bureau électoral.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_13">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_13</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_13/20211024</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2021-10-24</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 13.</num>
+						<alinea>
+							<content>
+								<p>
+									<mod class="mod-start" for="#pm3"/>L’électeur place le bulletin plié, le tampon à l’extérieur, dans l’enveloppe électorale qu’il ferme. Il glisse celle-ci dans l’enveloppe de transmission, ferme le pli, et le remet à la poste, sous la forme d’une simple lettre, au plus tard le jour du scrutin.<mod class="mod-end" for="#pm3"/>
+									<noteRef href="#M3" marker="3"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_14">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_14</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_14/20111008</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 14.</num>
+						<alinea>
+							<content>
+								<p>L'électeur qui, par inadvertance, a détérioré le bulletin à lui remis, peut en demander un autre par écrit au président, en joignant le premier qui est aussitôt détruit. Il en est fait mention au procès-verbal de l'élection.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_15">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_15</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_15/20111008</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 15.</num>
+						<alinea>
+							<content>
+								<p>Après la clôture du scrutin le bureau électoral fait le récolement des bulletins non employés dans les différents groupes électoraux. Ces bulletins sont immédiatement détruits. Le nombre en est mentionné au procès-verbal.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+			</chapter>
+			<chapter id="chapitre_iv">
+				<num>
+					<b>Chapitre IV.</b>
+				</num>
+				<heading scl:style-format="b">
+					<b>Du dépouillement du scrutin</b>
+				</heading>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_16/20211024</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2021-10-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm4"/>Les bulletins envoyés après la date limite fixée à l’article 13 sont exclus d’office, le cachet de la poste faisant foi.<mod class="mod-end" for="#pm4"/>
+								<noteRef href="#M4" marker="4"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm5"/>Dans les cinq jours après la date limite d’expédition des bulletins, le bureau électoral se réunit et classe les envois qui lui sont parvenus par groupes. Les membres du bureau électoral pointent sur les listes électorales respectivement les noms et les dénominations des votants.<mod class="mod-end" for="#pm5"/>
+								<noteRef href="#M5" marker="5"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ils ouvrent ensuite les enveloppes adressées au président, en retirent les enveloppes contenant les bulletins de vote et détruisent les enveloppes ayant servi à l'expédition au président. Il est ensuite procédé au dépouillement en ouvrant les enveloppes contenant les bulletins, et en retirant ceux-ci.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le nombre des votants et celui des bulletins recueillis sont inscrits au procès-verbal. Si une enveloppe contient plusieurs bulletins, ceux-ci seront nuls. Mention en sera faite au procès-verbal.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_17/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 17.</num>
+					<alinea>
+						<content>
+							<p>Les bulletins sont dépliés par l'un des scrutateurs qui les remet au président. Celui-ci, ou s'il est empêché, le vice-président, énonce les suffrages attribués aux différents candidats, remet les bulletins à un autre membre du bureau qui les vérifie et qui les classe sur deux tas, selon bulletins valables et bulletins nuls.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Deux des scrutateurs font le recensement des suffrages et en tiennent note, chacun séparément.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_18">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_18</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_18/20211024</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2021-10-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 18.</num>
+					<alinea>
+						<content>
+							<p>Sont nuls: </p>
+							<ol scl:start="1" scl:symbol="1.">
+								<li>les bulletins autres que ceux envoyés ou remis aux électeurs par le bureau électoral;</li>
+								<li>les bulletins ne contenant l'expression d'aucun suffrage;</li>
+								<li>les bulletins contenant plus de suffrages qu'il n'y a de membres à élire;</li>
+								<li>les bulletins sur lesquels le votant se sera fait connaître et notamment ceux portant une marque ou un signe distinctif quelconque, ceux renfermés dans une enveloppe marquée ou dans une enveloppe autre que celle délivrée par le président;</li>
+								<li style="del">
+									<mod class="mod-start" for="#pm6"/>
+									<del>les bulletins dont l'enveloppe extérieure ne porte pas la signature<mod class="mod-end" for="#pm6"/>
+									</del>
+									<noteRef href="#M6" marker="6"/>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_19">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_19</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_19/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 19.</num>
+					<alinea>
+						<content>
+							<p>Lorsque tous les bulletins d'un groupe ont été dépouillés, les autres membres du bureau les examinent et présentent leurs observations et réclamations.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les bulletins contestés sont ajoutés aux bulletins valables s'ils sont admis comme tels par décision du bureau. Les contestations et les décisions sont actées au procès-verbal.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_20">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_20</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_20/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 20.</num>
+					<alinea>
+						<content>
+							<p>Le bureau arrête pour les différents groupes électoraux le nombre des votants, celui des bulletins nuls et des bulletins valables, ainsi que le nombre des suffrages obtenus par chaque candidat. Le tout est inscrit au procès-verbal.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_21_20211024" style="del">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_21</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_21/20211024</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2021-10-24</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm7"/>
+						<del>Art. 21.</del>
+					</num>
+					<alinea>
+						<content>
+							<p>
+								<del>Les différents sièges de membres effectifs, respectivement de membres suppléants sont attribués aux candidats ayant obtenu le plus grand nombre de suffrages valables. En cas d'égalité de suffrages, l'élection est acquise au candidat le plus âgé.</del>
+								<mod class="mod-end" for="#pm7"/>
+								<noteRef href="#M7" marker="7"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_22</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_22/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22.</num>
+					<alinea>
+						<content>
+							<p>Le procès-verbal est signé séance tenante par les membres du bureau et par le secrétaire.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>A l'expiration des délais prévus pour l'introduction des recours, tous les documents relatifs à l'élection sont détruits, à l'exception des procès-verbaux.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_v">
+				<num>
+					<b>Chapitre V.</b>
+				</num>
+				<heading scl:style-format="b">
+					<b>Prorogation des délais</b>
+				</heading>
+				<article id="art_23">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_23</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_23/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 23.</num>
+					<alinea>
+						<content>
+							<p>Lorsque le délai fixé par le présent règlement pour faire une déclaration, un acte ou un dépôt expire un dimanche ou un jour férié légal, les déclarations, actes ou dépôts sont faits le premier jour ouvrable suivant le dimanche ou le jour férié légal.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_vi">
+				<num>
+					<b>Chapitre VI.</b>
+				</num>
+				<heading scl:style-format="b">
+					<b>Dispositions finales</b>
+				</heading>
+				<article id="art_24">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_24</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_24/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 24.</num>
+					<alinea>
+						<content>
+							<p>Le <ref href="/eli/etat/leg/rgd/2006/11/10/n2/jo" id="e08e9ff1-b401-4bdc-a911-0466b81cf867">règlement grand-ducal du 10 novembre 2006</ref> portant règlement de la procédure électorale pour la Chambre des Métiers est abrogé.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_25">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_25</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2/art_25/20111008</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/09/30/n2</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-10-08</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 25.</num>
+					<alinea>
+						<content>
+							<p>Notre Ministre des Classes moyennes et du Tourisme est chargée de l'exécution du présent règlement qui sera publié au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+		<attachments>
+			<attachment id="attachment_1">
+				<doc name="">
+					<meta>
+						<identification source="">
+							<FRBRWork>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2021-10-21" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRcountry value=""/>
+							</FRBRWork>
+							<FRBRExpression>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2021-10-21" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRlanguage language=""/>
+							</FRBRExpression>
+							<FRBRManifestation>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2021-10-21" name=""/>
+								<FRBRauthor href=""/>
+							</FRBRManifestation>
+						</identification>
+					</meta>
+					<preface>
+						<longTitle>
+							<p scl:align="center">
+								<b>Modèle du bulletin de vote</b>
+							</p>
+						</longTitle>
+					</preface>
+					<mainBody>
+						<alinea>
+							<content>
+								<p scl:align="center">
+									<img id="img_1" scl:img-height="10cm" scl:img-width="18cm" src="data:image/png;base64,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"/>
+								</p>
+							</content>
+						</alinea>
+					</mainBody>
+				</doc>
+			</attachment>
+		</attachments>
+	</act>
+</akomaNtoso>

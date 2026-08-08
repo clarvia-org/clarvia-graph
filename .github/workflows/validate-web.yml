@@ -1,0 +1,55 @@
+name: Validate web
+
+on:
+  pull_request:
+    paths:
+      - "apps/web/**"
+      - "pnpm-lock.yaml"
+      - "pnpm-workspace.yaml"
+      - "package.json"
+      - ".github/workflows/validate-web.yml"
+  push:
+    branches: [main]
+    paths:
+      - "apps/web/**"
+      - "pnpm-lock.yaml"
+      - "pnpm-workspace.yaml"
+      - "package.json"
+      - ".github/workflows/validate-web.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate apps/web
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: pnpm/action-setup@0ebf47130e4866e96fce0953f49152a61190b271 # v6
+
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v6
+        with:
+          node-version-file: ".node-version"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Ensure web data (export + sync if needed)
+        run: |
+          if [ ! -f apps/web/public/data/clarvia/manifest.json ]; then
+            pnpm export-and-sync-web
+          fi
+
+      - name: Lint
+        continue-on-error: true
+        run: pnpm web:lint
+
+      - name: Test
+        run: pnpm web:test
+
+      - name: Build
+        run: pnpm web:build

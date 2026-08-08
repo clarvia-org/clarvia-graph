@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#somebody">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-05" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MECM"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-05" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-05" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2021-12-19</scl:jolux><scl:jolux scl:name="publicationDate">2017-05-12</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="dateDocument">2017-05-05</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/443</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/279</scl:jolux><scl:jolux scl:name="dateEntryInForce">2017-05-16</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2017/a484</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/jo/fr</scl:jolux>
+<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 19/12/2021 : Loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) 2019/1148 du Parlement européen et du Conseil du 20 juin 2019 relatif à la commercialisation et l’utilisation de précurseurs d’explosifs, modifiant le règlement (CE) n° 1907/2006 et abrogeant le règlement (UE) n° 98/2013</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/code/instruction_criminelle/20161001</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/code/penal/20170401</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1808/11/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/2013/98/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/code/procedure_penale</scl:jolux>
+<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/04/n2/jo</scl:jolux>
+<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/pl/20160172</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2017/a484/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">1</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2017-05-05-a484-jo-fr-xml.xml</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2017-05-05" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2021-12-19" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/12/14/a871/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/12/14/a871/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2021/12/14/a871/jo"/>
+<destination href="#art_2_20211219"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/12/14/a871/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/12/14/a871/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/12/14/a871/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm7" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/12/14/a871/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm8" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2021/12/14/a871/jo"/>
+<destination href="#art_6"/>
+</textualMod>
+<textualMod id="pm9" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2021/12/14/a871/jo"/>
+<destination href="#art_7_20211219"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2017/05/05/a484/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2021/12/14/a871/jo" id="rp2" showAs="Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS. "/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2021-12-15|2021-12-14|L|871">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/14/a871/jo">Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2021-12-15|2021-12-14|L|871">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/14/a871/jo">Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M3" marker="3" refersTo="pm3" title="A|2021-12-15|2021-12-14|L|871">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/14/a871/jo">Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M4" marker="4" refersTo="pm4" title="A|2021-12-15|2021-12-14|L|871">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/14/a871/jo">Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M5" marker="5" refersTo="pm5" title="A|2021-12-15|2021-12-14|L|871">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/14/a871/jo">Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M6" marker="6" refersTo="pm6" title="A|2021-12-15|2021-12-14|L|871">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/14/a871/jo">Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M7" marker="7" refersTo="pm7" title="A|2021-12-15|2021-12-14|L|871">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/14/a871/jo">Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M8" marker="8" refersTo="pm8" title="A|2021-12-15|2021-12-14|L|871">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/14/a871/jo">Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M9" marker="9" refersTo="pm9" title="A|2021-12-15|2021-12-14|L|871">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2021/12/14/a871/jo">Loi du 14 décembre 2021 portant modification de : 1° la loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) n° 98/2013 du Parlement européen et du Conseil du 15 janvier 2013 sur la commercialisation et l’utilisation de précurseurs d’explosifs ; 2° la loi modifiée du 4 juillet 2014 portant réorganisation de l’ILNAS.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle style="11">
+<p>Version consolidée applicable au 19/12/2021 : <mod class="mod-start" for="#pm1"/>Loi du 5 mai 2017 concernant certaines modalités d’application et les sanctions du règlement (UE) 2019/1148 du Parlement européen et du Conseil du 20 juin 2019 relatif à la commercialisation et l’utilisation de précurseurs d’explosifs, modifiant le règlement (CE) n° 1907/2006 et abrogeant le règlement (UE) n° 98/2013<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_1er/20211219</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-12-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm2"/>
+<u>Art. 1<sup>er</sup>.</u>
+</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le Haut-Commissariat à la Protection nationale, ci-après « Haut-Commissariat », exerce les attributions d’autorité compétente aux fins de l’application du <ref href="/eli/reg_ue/2019/1148/jo" id="75b0d345-aa84-4c80-911a-9fb787a9332b">règlement (UE) 2019/1148</ref> du Parlement européen et du Conseil du 20 juin 2019 relatif à la commercialisation et l’utilisation de précurseurs d’explosifs, modifiant le <ref href="/eli/reg_ue/2006/1907/jo" id="2ab7b02d-0efc-4389-af24-1ff45302339c">règlement (CE) n° 1907/2006</ref> et abrogeant le <ref href="/eli/reg_ue/2013/98/jo" id="60148d16-641e-4f0a-9dd5-cda37a7d17b0">règlement (UE) n° 98/2013</ref>, ci-après « <ref href="/eli/reg_ue/2019/1148/jo" id="3a817b5b-36d2-4db2-a00b-b5718cb2b695">règlement (UE) 2019/1148</ref> ».</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les dispositions du paragraphe 1<sup>er</sup> s’entendent sans préjudice des attributions de la Police grand-ducale au titre de point de contact national en ce qui concerne l’article 9 du <ref href="/eli/reg_ue/2019/1148/jo" id="4dab50ad-f42d-49a5-aa0a-3b54596114f8">règlement (UE) 2019/1148</ref> et l’article 3 de la présente loi.<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2_20211219" style="del">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_2/20211219</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-12-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm3"/>
+<del>Art. 2.</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>Les étiquettes visées à l’article 5 du <ref href="/eli/reg_ue/2013/98/jo">règlement (UE) n° 98/2013</ref> sont rédigées en langue française ou allemande.<mod class="mod-end" for="#pm3"/>
+</del>
+<noteRef href="#M3" marker="3"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_3/20211219</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-12-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<u>
+<mod class="mod-start" for="#pm4"/>Art. 3.</u>
+</num>
+<paragraph id="paragraph_3">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La Police grand-ducale est désignée point de contact national au Grand-Duché de Luxembourg pour le signalement par les opérateurs économiques :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>des transactions suspectes et des tentatives de transactions suspectes concernant des précurseurs d’explosifs réglementés ;</li>
+<li>de toute disparition importante et de tout vol important de précurseurs d’explosifs réglementés.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le point de contact national informe les autorités judiciaires compétentes afin qu’une enquête puisse être menée, le cas échéant, sur les circonstances précises dans lesquelles ont eu lieu les transactions, disparitions ou vols. Il utilise le système d’alerte rapide d’Europol pour que les auteurs de vols soient plus facilement retrouvés et que les autorités compétentes des autres États membres de l’Union européenne soient averties de menaces éventuelles.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les lignes directrices visées à l’article 12, paragraphe 1<sup>er</sup>, du <ref href="/eli/reg_ue/2019/1148/jo" id="de3ae353-dfb9-4d5b-bdef-2d08990981f5">règlement (UE) 2019/1148</ref> sont diffusées sur les sites internet du Haut-Commissariat et de la Police grand-ducale.<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_4/20211219</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-12-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>Sans préjudice de l’article 10 du <ref href="/eli/etat/leg/code/procedure_penale">
+<mod class="mod-start" for="#pm5"/>Code de procédure pénale</ref>
+<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/>, les infractions à la présente loi et aux règlements pris en son exécution sont constatées par les fonctionnaires de l’Administration des douanes et accises à partir du grade de brigadier principal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les fonctionnaires visés à l’alinéa 1<sup>er</sup> doivent avoir suivi une formation professionnelle spéciale portant sur la recherche et la constatation des infractions ainsi que sur les dispositions pénales de la présente loi. Le programme et la durée de la formation ainsi que les modalités de contrôle des connaissances sont arrêtés par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans l’exercice de leurs fonctions relatives à la présente loi, les fonctionnaires ainsi désignés de l’Administration des douanes et accises ont la qualité d’officiers de police judiciaire. Ils constatent les infractions par des procès-verbaux faisant foi jusqu’à preuve du contraire. Leur compétence s’étend à tout le territoire du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Avant d’entrer en fonction, ils prêtent devant le tribunal d’arrondissement de leur domicile, siégeant en matière civile, le serment suivant: „Je jure de remplir mes fonctions avec intégrité, exactitude et impartialité“.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’article 458 du <ref href="/eli/etat/leg/code/penal/">Code pénal</ref> leur est applicable.</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_5/20211219</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-12-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<paragraph id="paragraph_5">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les fonctionnaires de la Police grand-ducale et les personnes visées à l’article 4 ont accès aux locaux, installations, sites et moyens de transport et dans tous lieux où sont fabriqués, manipulés, entreposés ou vendus des biens visés par la présente loi et les règlements pris en son exécution. Ils peuvent pénétrer de jour et de nuit, lorsqu’il existe des indices graves faisant présumer une infraction à la présente loi et aux règlements pris en son exécution, dans les locaux, installations, sites, moyens de transport et lieux visés ci-dessus. Ils signalent leur présence au chef du local, de l’installation ou du site ou à celui qui le remplace. Celui-ci a le droit de les accompagner lors de la visite.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutefois, et sans préjudice de l’article 33, paragraphe 1<sup>er</sup>, du <ref href="/eli/etat/leg/code/procedure_penale">
+<mod class="mod-start" for="#pm6"/>Code de procédure pénale</ref>
+<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M6" marker="6"/>, s’il existe des indices graves faisant présumer que l’origine de l’infraction se trouve dans les locaux destinés à l’habitation, il peut être procédé à la visite domiciliaire entre six heures et demie et vingt heures par deux officiers de police judiciaire, membres de la Police grand-ducale ou agents au sens de l’article 4, agissant en vertu d’un mandat du juge d’instruction.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>
+<mod class="mod-start" for="#pm7"/>(2)</num>
+<alinea>
+<content>
+<p>Dans les mêmes conditions, les fonctionnaires de la Police grand-ducale et les personnes visées à l’article 4 sont autorisés :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>à procéder ou à faire procéder à des essais de substances, de mélanges, d’articles, d’appareils, d’équipements et de technologies visés par la présente loi ;</li>
+<li>à demander communication de tous livres, documentation professionnelle, registres et fichiers relatifs à une installation, activité, opération ou produit visés par le <ref href="/eli/reg_ue/2019/1148/jo" id="d88d3924-4095-43f0-9c5b-15d994a82fa2">règlement (UE) 2019/1148</ref>, en vue d’en vérifier la conformité, à les copier ou à établir des extraits ;</li>
+<li>à prélever ou à faire prélever, aux fins d’examen ou d’analyse, des échantillons de produits, matières ou substances fabriqués, utilisés, manipulés, stockés, déposés ou extraits ;</li>
+<li>à saisir et, au besoin, à mettre sous séquestre les appareils, dispositifs, produits, matières ou substances destinés à être introduits, mis à disposition, détenus ou utilisés en violation du <ref href="/eli/reg_ue/2019/1148/jo" id="8aca7ef0-13d2-4580-943a-45ca360c2d8d">règlement (UE) 2019/1148</ref> ou de la présente loi ;</li>
+<li>à prendre copie des pièces et à prendre copie ou à retenir les documents et correspondances qui établissent ou concourent à établir une infraction au <ref href="/eli/reg_ue/2019/1148/jo" id="eb39b8e1-e458-4e1e-ac1f-9f254bea0504">règlement (UE) 2019/1148</ref> ou à la présente loi, et à dresser, des pièces retenues, un inventaire dont ils remettent une copie, signée par eux, au propriétaire ou au détenteur.<mod class="mod-end" for="#pm7"/>
+<noteRef href="#M7" marker="7"/>
+</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_6/20211219</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-12-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<u>
+<mod class="mod-start" for="#pm8"/>Art. 6.</u>
+</num>
+<alinea>
+<content>
+<p>Est puni d’une peine de réclusion de cinq à dix ans et d’une amende de 25 000 à 1 000 000 euros, ou d’une de ces peines seulement :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>le fait par un membre du grand public d’introduire sur le territoire luxembourgeois, d’acquérir, de détenir ou d’utiliser des précurseurs d’explosifs soumis à restrictions, en infraction à l’article 5 du <ref href="/eli/reg_ue/2019/1148/jo" id="ad11cdda-9065-4c34-afb5-7e8fec06ff6e">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un opérateur économique de mettre à disposition d’un membre du grand public des précurseurs d’explosifs soumis à restrictions, en infraction à l’article 5 du <ref href="/eli/reg_ue/2019/1148/jo" id="024d41ab-76d1-4d7f-bf7c-b28605b759a4">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un opérateur économique ou une place de marché en ligne de ne pas signaler une transaction suspecte ou une tentative de transaction suspecte, en infraction à l’article 9, paragraphes 1<sup>er</sup> et 4, du <ref href="/eli/reg_ue/2019/1148/jo" id="298945c9-d954-4d64-af67-e4e45faef055">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un opérateur économique ou une place de marché en ligne de ne pas mettre en place des procédures appropriées, raisonnables et proportionnées pour détecter des transactions suspectes, en infraction à l’article 9, paragraphe 2, du <ref href="/eli/reg_ue/2019/1148/jo" id="724a34a3-9fb7-48ef-bf8c-c93a3535c620">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un opérateur économique ou un utilisateur professionnel de ne pas signaler une disparition importante ou un vol important de précurseurs d’explosifs réglementés, en infraction à l’article 9, paragraphe 5, du <ref href="/eli/reg_ue/2019/1148/jo" id="fa6dee7f-cc08-4d71-b4f8-9ba580b60091">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un opérateur économique mettant un précurseur d’explosif faisant l’objet de restrictions à la disposition d’un autre opérateur économique, de ne pas informer ce dernier que l’acquisition, l’introduction, la détention ou l’utilisation de ce précurseur d’explosif faisant l’objet de restrictions par des membres du grand public est soumise à restriction, en infraction à l’article 7, paragraphe 1<sup>er</sup>, alinéa 1<sup>er</sup>, du <ref href="/eli/reg_ue/2019/1148/jo" id="f7f297e6-67b2-4276-9878-3717723a8b25">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un opérateur économique mettant un précurseur d’explosif réglementé à la disposition d’un autre opérateur économique, de ne pas informer ce dernier que l’acquisition, l’introduction, la détention ou l’utilisation de ce précurseur d’explosif réglementé par des membres du grand public est soumise à des obligations de signalement, en infraction à l’article 7, paragraphe 1<sup>er</sup>, alinéa 2, du <ref href="/eli/reg_ue/2019/1148/jo" id="dea81749-adec-401a-908a-23c6c1b8b3a7">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un marché en ligne, lorsqu’il met à disposition des précurseurs d’explosifs réglementés au moyen de ses services, de ne pas prendre des mesures pour faire en sorte que ses utilisateurs soient informés des obligations qui leur incombent, en infraction à l’article 7, paragraphe 3, du <ref href="/eli/reg_ue/2019/1148/jo" id="e1125257-4cd6-47f6-9a43-755f19ab9bde">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un opérateur économique mettant un précurseur d’explosif faisant l’objet de restrictions à la disposition d’un utilisateur professionnel ou d’un autre opérateur économique, de ne pas demander pour chaque transaction les informations requises à l’article 8, paragraphe 2, du <ref href="/eli/reg_ue/2019/1148/jo" id="e5d106e9-e94a-408b-9270-35c997e743ac">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un opérateur économique mettant un précurseur d’explosif faisant l’objet de restrictions à la disposition d’un utilisateur professionnel ou d’un autre opérateur économique, de ne pas signaler une transaction ou une tentative de transaction, en infraction à l’article 8, paragraphe 3, du <ref href="/eli/reg_ue/2019/1148/jo" id="2b31da87-e654-4901-b1af-747b5a650ec1">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un opérateur économique mettant un précurseur d’explosif faisant l’objet de restrictions à la disposition d’un utilisateur professionnel ou d’un autre opérateur économique, de ne pas conserver les informations et de ne pas les rendre disponibles pour un contrôle, en infraction à l’article 8, paragraphe 4, du <ref href="/eli/reg_ue/2019/1148/jo" id="8e2c5516-8edc-44b0-8ea1-48440da91307">règlement (UE) 2019/1148</ref> ;</li>
+<li>le fait par un marché en ligne, lorsqu’il met à disposition des précurseurs d’explosifs faisant l’objet de restrictions, de ne pas prendre des mesures pour faire en sorte que ses utilisateurs respectent les obligations qui leur incombent, en infraction à l’article 8, paragraphe 5, du <ref href="/eli/reg_ue/2019/1148/jo" id="5069e419-217b-4956-8dae-c048c908c9ca">règlement (UE) 2019/1148</ref>
+<mod class="mod-end" for="#pm8"/>
+<noteRef href="#M8" marker="8"/>.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_7_20211219" style="del">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_7/20211219</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-12-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm9"/>
+<del>Art. 7.</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>Est puni d’une peine d’emprisonnement allant de six mois à cinq ans et d’une amende de 7.500 à 75.000 euros, ou d’une de ces peines seulement, le fait par un opérateur économique mettant un précurseur d’explosif faisant l’objet de restrictions à la disposition d’un membre du grand public, de ne pas apposer une étiquette appropriée sur le conditionnement, ou de ne pas vérifier qu’une telle étiquette a été apposée, en infraction à l’article 5 du <ref href="/eli/reg_ue/2013/98/jo">règlement (UE) n° 98/2013</ref> et à l’article 2 de la présente loi.<mod class="mod-end" for="#pm9"/>
+</del>
+<noteRef href="#M9" marker="9"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484/art_8/20170516</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/05/05/a484</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-16</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<eop/>Art. 8.</num>
+<alinea>
+<content>
+<p>L’article 8, paragraphe 4, de la <ref href="/eli/etat/leg/loi/2014/07/04/n2/jo">loi modifiée du 4 juillet 2014</ref> portant réorganisation de l’ILNAS est complété par le point 31° suivant:<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>«31° aux précurseurs d’explosifs».</p>
+</content>
+</alinea>
+</embeddedStructure>
+</p>
+</content>
+</alinea>
+</article>
+</body>
+</act>
+</akomaNtoso>

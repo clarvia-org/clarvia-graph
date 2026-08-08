@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-05-28" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MEN"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-05-28" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2009-05-28" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2024-01-01</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2009-05-28</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/10</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux>
+						<scl:jolux scl:name="urgentEvent">0</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1546</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2009-09-14</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a132</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2009A1874A</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2009-06-12</scl:jolux>
+						<scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/2004/02/skos/core#Concept</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr/docx</scl:jolux>
+					<scl:jolux scl:name="draft">/eli/etat/proj/pr/20090012</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1963/12/23/n2/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/1988/01/22/n3/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 01/01/2024 : Règlement grand-ducal du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2009/02/06/n3/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2009-132-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a132/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2009-05-28-n3-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2009-132-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2009/a132/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2009/a132/fr/pdf/eli-etat-leg-memorial-2009-a132-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2009-05-28" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2009-09-14" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+				<eventRef date="2013-07-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+				<eventRef date="2014-09-15" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2024-01-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/21/n1/jo"/>
+						<destination href="#art_22"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_5"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_5"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_6"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_7"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_12"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_13_20240101"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_18"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_21"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2014/03/24/n9/jo"/>
+						<destination href="#art_9"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2024/08/27/a385/jo"/>
+						<destination href="#art_22"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2009/05/28/n3/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2024/08/27/a385/jo" id="rp2" showAs="Règlement grand-ducal du 27 août 2024 portant augmentation de quinze pour cent des différents accessoires et indemnités versés aux agents de l’État dans le cadre du fonctionnement des commissions d’examen et d’autres commissions étatiques."/>
+				<passiveRef href="/eli/etat/leg/rgd/2014/03/24/n9/jo" id="rp3" showAs="Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres."/>
+				<passiveRef href="/eli/etat/leg/rgd/2013/06/21/n1/jo" id="rp4" showAs="Règlement grand-ducal du 21 juin 2013 portant réduction des différents accessoires et indemnités versés dans le cadre du fonctionnement des commissions d'examen et d'autres commissions étatiques."/>
+				<passiveRef href="/eli/etat/leg/trep/2009/09/03/n14/jo" id="rp5" showAs="REPUBLICATION du Règlement grand-ducal du 28 mai 2009 concernant les modalités d’élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres."/>
+			</references>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2013-06-27|2013-06-21|RGD|108">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/21/n1/jo">Règlement grand-ducal du 21 juin 2013 portant réduction des différents accessoires et indemnités versés dans le cadre du fonctionnement des commissions d'examen et d'autres commissions étatiques.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M13" marker="13" refersTo="pm13" title="A|2014-04-14|2014-03-24|RGD|61">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/03/24/n9/jo">Règlement grand-ducal du 24 mars 2014 modifiant le règlement grand-ducal modifié du 28 mai 2009 concernant les modalités d'élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M14" marker="14" refersTo="pm14" title="A|2024-08-28|2024-08-27|RGD|385">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/08/27/a385/jo">Règlement grand-ducal du 27 août 2024 portant augmentation de quinze pour cent des différents accessoires et indemnités versés aux agents de l’État dans le cadre du fonctionnement des commissions d’examen et d’autres commissions étatiques.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 01/01/2024 : Règlement grand-ducal du 28 mai 2009 concernant les modalités d’élection des membres du personnel enseignant à la commission scolaire nationale, le fonctionnement de celle-ci ainsi que les décharges et indemnités de ses membres.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_i">
+				<num>Chapitre I.</num><heading scl:separator=" " scl:style-format="b">De l’élection des délégués du personnel enseignant</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_25</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_25/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title"> Art. 1 er . </scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num> Art. 1<sup>er</sup> . </num>
+					<alinea>
+						<content>
+							<p>L’élection des délégués du personnel enseignant à la commission scolaire nationale a lieu tous les cinq ans, dans la première moitié du mois de décembre à une date à arrêter par le membre du Gouvernement ayant l’Éducation nationale dans ses attributions et désigné ci-après par le terme «le ministre». </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les élections ont lieu par correspondance.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_2/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<alinea>
+						<content>
+							<p> Sont électeurs les instituteurs désignés à l’article 2 de la <ref href="/eli/etat/leg/loi/2009/02/06/n4/jo" id="62b2abda-9475-4903-b5c9-f316a2ffb768">loi du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le ministre arrête la liste des électeurs avant le 15 octobre. Il nomme le président du bureau électoral.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_3/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<alinea>
+						<content>
+							<p>Le ministre publie sur le site internet du ministère ou par tout autre moyen approprié, pour le 15 octobre au plus tard, la date de l’élection, la liste des électeurs, le délai dans lequel les déclarations des candidatures doivent être parvenues au ministre ainsi que le nom et l’adresse du président du bureau électoral.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_4/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<alinea>
+						<content>
+							<p> Les électeurs peuvent réclamer contre la composition du corps électoral. Ils doivent présenter, dans les dix jours qui suivent la publication de la liste, leur réclamation motivée par écrit au ministre qui en décide.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_5/20140915</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-09-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<alinea>
+						<content>
+							<p>Sont éligibles les personnes figurant sur la liste électorale mentionnée à l’article 2.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour être recevables, les déclarations de candidature doivent être adressées par lettre recommandée au président du bureau électoral. Elles portent la signature du candidat ou de la candidate et indiquent ses nom et prénoms <mod class="mod-start" for="#pm2"/>et le lieu de travail<mod class="mod-end" for="#pm2"/>
+								<noteRef href="#M2" marker="2"/>. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm3"/>Les syndicats des enseignants peuvent présenter une liste de quatre candidats signée du président et des quatre candidats.<mod class="mod-end" for="#pm3"/>
+								<noteRef href="#M3" marker="3"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Aussitôt passé le délai pour la présentation des candidatures, le président du bureau électoral publie la liste des candidats par tout moyen approprié.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>S’il y a quatre ou moins de candidats, ils sont proclamés élus sans autres formalités.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Si aucune candidature n’est présentée dans le délai requis, le ministre reporte l’élection à une date ultérieure et ouvre un nouveau délai pour la déclaration des candidatures.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_6/20140915</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-09-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<alinea>
+						<content>
+							<p> Pour les élections, il est constitué un bureau électoral. Pour ce faire, le président nomme un secrétaire et quatre scrutateurs. <mod class="mod-start" for="#pm4"/>Le président peut décider la création d'un bureau électoral accessoire et désigner à cet effet un vice-président, un secrétaire adjoint ainsi que quatre scrutateurs supplémentaires.<mod class="mod-end" for="#pm4"/>
+								<noteRef href="#M4" marker="4"/> Il choisit en outre des suppléants en nombre suffisant.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Aucun candidat ne peut faire partie du bureau électoral.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_7">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_7</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_7/20140915</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-09-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 7.</num>
+					<alinea>
+						<content>
+							<p>Au moins dix jours avant les élections, le président du bureau électoral transmet un bulletin de vote à chaque électeur par simple lettre à la poste.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm5"/>Le bulletin de vote indique les listes introduites par les syndicats des candidats classés dans l'ordre alphabétique.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L'ordre de liste sur les bulletins de vote correspond au classement selon ordre alphabétique des acronymes des syndicats, suivi des candidatures individuelles regroupées par ordre alphabétique. Pour chaque candidat est indiqué le nom, le prénom et le lieu de travail ainsi qu'une case affectée au vote. En tête de chaque liste est placé un cercle à côté de l'acronyme du syndicat des enseignants de la liste en question.<mod class="mod-end" for="#pm5"/>
+								<noteRef href="#M5" marker="5"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le bulletin, qui est plié en quatre, à angle droit, est marqué du sceau du ministère.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il est placé dans une première enveloppe neutre, laissée ouverte et ne portant que l’indication «Élection pour la commission scolaire nationale» et la date des élections.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Une deuxième enveloppe, également ouverte, est jointe à l’envoi et porte l’adresse du président du bureau électoral ainsi que le numéro d’inscription sur la liste électorale et une mention relative à l’affranchissement postal.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le tout est enfermé, ensemble avec des instructions aux électeurs, dans une troisième enveloppe à l’adresse de l’électeur.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les réclamations pour défaut d’envoi doivent être présentées au plus tard le quatrième jour avant les élections au président du bureau électoral qui envoie aussitôt un bulletin à l’électeur. Il en est de même si l’électeur a détérioré son bulletin ou l’enveloppe de renvoi. Dans les deux cas le procès-verbal en fait mention.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_8">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_8</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_8/20140915</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-09-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 8.</num>
+					<alinea>
+						<content>
+							<p>Chaque électeur dispose de quatre voix.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm6"/>Il vote soit en inscrivant une croix dans la case prévue derrière le nom des candidats auxquels il donne sa voix, soit en inscrivant une croix ou en noircissant le cercle placé en tête d'une liste.<mod class="mod-end" for="#pm6"/>
+								<noteRef href="#M6" marker="6"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il place ensuite le bulletin, plié en quatre, l’estampille se trouvant à l’extérieur, dans la première enveloppe neutre, qu’il ferme. </p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il glisse celle-ci dans la seconde enveloppe, portant l’adresse du président du bureau électoral. Il indique lisiblement, à la place réservée à cet effet de cette seconde enveloppe, ses nom et prénoms, le lieu de sa résidence et y appose sa signature. Il ferme l’enveloppe et la remet à la poste, dans un délai suffisant pour qu’elle puisse parvenir au président du bureau électoral dans le délai fixé.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_9">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_9</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_9/20140915</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-09-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 9.</num>
+					<alinea>
+						<content>
+							<p> Le jour du scrutin, le président remet au bureau électoral les enveloppes qu’il a reçues. Aucune enveloppe n’est plus admise après cette opération, à moins qu’elle n’ait été remise à la poste l’avant-veille du jour du scrutin.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm7"/>
+								<del>Les noms des votants sont pointés par le secrétaire sur la liste des électeurs.</del>
+								<mod class="mod-end" for="#pm7"/>
+								<noteRef href="#M7" marker="7"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm13"/>Les enveloppes extérieures sont classées par numéro d'ordre et ouvertes. Les enveloppes intérieures en sont retirées et placées dans une urne.<mod class="mod-end" for="#pm13"/>
+								<noteRef href="#M13" marker="13"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Si l’envoi n’est pas conforme aux dispositions de l’article 8, le vote est considéré comme nul et l’enveloppe est détruite immédiatement avec son contenu. Il en est fait mention au procès-verbal dressé par le secrétaire.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le nombre de votants est inscrit au procès-verbal. Aucune enveloppe n’est plus admise après cette opération quelle que soit la date de la remise à la poste.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Il sera ensuite procédé au dépouillement des bulletins. Les enveloppes sont retirées de l’urne et sont ouvertes.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm8"/>Le président répartit les bulletins de vote entre les bureau et bureau accessoire. Le président respectivement le vice-président lit successivement les bulletins à haute voix. Les suffrages sont notés à la fois par le secrétaire, respectivement le secrétaire-adjoint, et un autre membre respectivement du bureau et du bureau accessoire.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Après dépouillement de tous les bulletins, le bureau totalise les résultats des bureau et bureau accessoire.<mod class="mod-end" for="#pm8"/>
+								<noteRef href="#M8" marker="8"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Outre le nombre des votants, le bureau électoral détermine le nombre des bulletins blancs, le nombre des suffrages valablement exprimés et le nombre des voix obtenues par chaque candidat. Il en est fait mention au procès-verbal.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_10">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_10</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_10/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 10.</num>
+					<alinea>
+						<content>
+							<p> Est nul </p>
+							<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="a)">
+								<li>tout bulletin non conforme ou expédié d’une manière non conforme aux prescriptions du présent règlement; </li>
+								<li> tout bulletin qui est marqué par une signature, inscription, rature ou tout autre signe distinctif.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_11">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_11</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_11/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 11.</num>
+					<alinea>
+						<content>
+							<p> L’élection a lieu à la pluralité des voix. En cas de parité des voix, la date de l’entrée en service décide; si l’admission a eu lieu à la même date, le candidat le plus âgé l’emporte.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour l’application des dispositions de l’alinéa qui précède, les admissions à la fonction suite à une même session sont censées porter la même date.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le résultat du vote est immédiatement proclamé par le président.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_12">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_12</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_12/20140915</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-09-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 12.</num>
+					<alinea>
+						<content>
+							<p>Le procès-verbal des opérations est signé par tous les membres du bureau électoral et envoyé au ministre; <mod class="mod-start" for="#pm9"/>les enveloppes extérieures classées par numéro d'ordre sont enliassées en un paquet et jointes aux bulletins de vote regroupés tel que décrit ci-dessous.<mod class="mod-end" for="#pm9"/>
+								<noteRef href="#M9" marker="9"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les bulletins de vote enliassés en trois paquets, l’un contenant les bulletins valables pour les candidats, le deuxième les bulletins blancs, le troisième, les bulletins nuls sont tenus à disposition du ministre dans des contenants scellés par le président, jusqu’au surlendemain de l’expiration du délai prévu pour les réclamations. Ils sont détruits dans la suite. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_13_20240101" style="del">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_13</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_13/20140915</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-09-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>
+						<mod class="mod-start" for="#pm10"/>
+						<del>Art. 13.</del>
+					</num>
+					<alinea>
+						<content>
+							<p>
+								<del> Tout électeur a le droit d’assister aux opérations électorales, sans pouvoir toutefois examiner les bulletins ni entraver les travaux du bureau.<mod class="mod-end" for="#pm10"/>
+								</del>
+								<noteRef href="#M10" marker="10"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_14">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_14</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_14/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 14.</num>
+					<alinea>
+						<content>
+							<p>Tout électeur peut réclamer contre les résultats proclamés. La réclamation doit, sous peine de nullité, parvenir par écrit le dixième jour au plus tard après celui de la proclamation du résultat, au ministre qui en décide.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_15">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_15</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_15/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 15.</num>
+					<alinea>
+						<content>
+							<p>Si l’élection est annulée, le ministre fixe la date de la nouvelle élection à bref délai.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_ii">
+				<num>Chapitre II.</num><heading scl:separator=" " scl:style-format="b">Du fonctionnement</heading>
+				<article id="art_16">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_16</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_16/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 16.</num>
+					<alinea>
+						<content>
+							<p>La commission scolaire nationale se réunit sur convocation du président et chaque fois que le ministre ou un tiers des membres effectifs de la commission le demandent. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_17">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_17</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_17/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 17.</num>
+					<alinea>
+						<content>
+							<p> La convocation, accompagnée de l’ordre du jour, est communiquée au moins cinq jours avant la séance aux membres effectifs. Le président arrête l’ordre du jour qui comprend obligatoirement tout point dont la mise à l’ordre du jour est demandée par écrit par le ministre ou par ou moins un tiers des membres effectifs.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_18">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_18</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_18/20140915</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-09-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 18.</num>
+					<alinea>
+						<content>
+							<p>La commission scolaire nationale <mod class="mod-start" for="#pm11"/>peut constituer<mod class="mod-end" for="#pm11"/>
+								<noteRef href="#M11" marker="11"/> lors de sa première réunion un bureau qui comprend le président, le secrétaire et d’autres membres de la commission dont le nombre est fixé par le ministre.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Le bureau représente la commission scolaire nationale vis-à-vis du ministre et en toute occasion utile. Il organise les travaux de la commission, en prépare les réunions plénières et garantit le suivi des affaires qui tombent sous l’attribution de la commission.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_19">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_19</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_19/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 19.</num>
+					<alinea>
+						<content>
+							<p>La commission scolaire nationale peut constituer des groupes de travail chargés de l’étude de problèmes particuliers. Chaque groupe de travail élit parmi ses membres un président et un rapporteur. Les conclusions auxquelles aboutissent les groupes de travail sont soumises à la Commission scolaire nationale en plénière.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_20">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_20</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_20/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 20.</num>
+					<alinea>
+						<content>
+							<p>La commission scolaire nationale se donne un règlement d’ordre intérieur.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Elle peut charger un fonctionnaire des travaux administratifs.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_21">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_21</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_21/20140915</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2014-09-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 21.</num>
+					<alinea>
+						<content>
+							<p> L’instituteur, membre de la commission scolaire nationale, bénéficie d’une décharge hebdomadaire de <mod class="mod-start" for="#pm12"/>2 leçons<mod class="mod-end" for="#pm12"/>
+								<noteRef href="#M12" marker="12"/> de sa tâche d’enseignement.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_22">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_22</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_22/20240101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2024-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 22.</num>
+					<alinea>
+						<content>
+							<p> Les membres, le fonctionnaire chargé des travaux administratifs ainsi que les représentants et experts ont droit par séance à un jeton de présence qui s’élève à <mod class="mod-start" for="#pm1"/>
+								<mod class="mod-start" for="#pm14"/>21,38<mod class="mod-end" for="#pm1">
+									<mod class="mod-end" for="#pm14"/>
+									<noteRef href="#M14" marker="14"/>
+								</mod>
+								<noteRef href="#M1" marker="1"/> €. Le président ainsi que le secrétaire bénéficient d’un double jeton. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_23">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_23</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_23/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2009-09-14</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 23.</num>
+					<alinea>
+						<content>
+							<p> Le présent règlement entre en vigueur pour la rentrée 2009/2010.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p> Le <ref href="/eli/etat/leg/rgd/1963/12/23/n2/jo" id="8ac72f96-9451-4b65-a6fe-2d1525eb13cb">règlement grand-ducal du 23 décembre 1963</ref> fixant le mode d’élection des délégués du personnel enseignant à la commission d’instruction est abrogé. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_24">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_24</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3/art_24/20090914</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2009/05/28/n3</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2013-07-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 24.</num>
+					<alinea>
+						<content>
+							<p>Notre Ministre de l’Éducation nationale et de la Formation professionnelle est chargée de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

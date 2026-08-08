@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="1962-07-31" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MI"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="1962-07-31" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="1962-07-31" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2026-03-03</scl:jolux><scl:jolux scl:name="dateDocument">1962-07-31</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MI</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/320</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/334</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/111</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">1962-09-01</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1962/a47</scl:jolux><scl:jolux scl:name="historicalLegalId">1962A08981</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">1962-08-28</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/argd/1872/06/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1900/02/14/n5/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1920/04/06/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1859/12/17/n5/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1879/06/18/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1904/05/16/n3/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 03/03/2026 : Loi du 31 juillet 1962 ayant pour objet le renforcement de l’alimentation en eau potable au Grand-Duché de Luxembourg à partir du réservoir d’Esch-sur-Sûre.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1962-47-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1962/a47/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-1962-07-31-n2-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1962-47-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1962/a47/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1962/a47/fr/pdf/eli-etat-leg-memorial-1962-a47-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="1962-09-01" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2016-07-15" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2016-07-15" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2016-07-15" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2016-07-15" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2026-03-03" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2016/07/05/n7/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2026/02/25/a95/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2026/02/25/a95/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2026/02/25/a95/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2026/02/25/a95/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2026/02/25/a95/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm7" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2026/02/25/a95/jo"/>
+<destination href="#art_14"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/1962/07/31/n2/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2016/07/05/n7/jo" id="rp2" showAs="Loi du 5 juillet 2016 modifiant la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l'alimentation en eau potable au Grand-Duché de Luxembourg à partir du réservoir d'Esch-sur-Sûre."/>
+<passiveRef href="/eli/etat/leg/loi/2008/12/19/n17/jo" id="rp3" showAs="Loi du 19 décembre 2008 relative à l'eau modifiant  1. la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement l'alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d'Esch-sur-Sûre;  2. la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l'Etat;  3. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures;  4. la loi modifiée du 10 juin 1999 relative aux établissements classés;  5. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des ressources naturelles;  6. la loi modifiée du 19 juillet 2004 concernant l'aménagement communal et le développement urbain;  ..."/>
+<passiveRef href="/eli/etat/leg/loi/1989/03/31/n4/jo" id="rp4" showAs="Loi du 31 mars 1989 portant modification de la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l'alimentation en eau potable du Grand- Duché de Luxembourg à partir du réservoir d'Esch-sur-Sûre."/>
+<passiveRef href="/eli/etat/leg/loi/1966/05/03/n1/jo" id="rp5" showAs="Loi du 3 mai 1966 portant modification des articles 3 et 13 de la loi du 31 juillet 1962 ayant pour objet le renforcement de l'alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d'Esch-sur-Sûre."/>
+<passiveRef href="/eli/etat/leg/loi/2026/02/25/a95/jo" id="rp6" showAs="Loi du 25 février 2026 modifiant la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l’alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d’Esch-sur-Sûre."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2016-07-11|2016-07-05|L|124">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2016/07/05/n7/jo">Loi du 5 juillet 2016 modifiant la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l'alimentation en eau potable au Grand-Duché de Luxembourg à partir du réservoir d'Esch-sur-Sûre.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp6">
+<note id="M2" marker="2" refersTo="pm2" title="A|2026-02-27|2026-02-25|L|95">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2026/02/25/a95/jo">Loi du 25 février 2026 modifiant la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l’alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d’Esch-sur-Sûre.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp6">
+<note id="M3" marker="3" refersTo="pm3" title="A|2026-02-27|2026-02-25|L|95">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2026/02/25/a95/jo">Loi du 25 février 2026 modifiant la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l’alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d’Esch-sur-Sûre.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp6">
+<note id="M4" marker="4" refersTo="pm4" title="A|2026-02-27|2026-02-25|L|95">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2026/02/25/a95/jo">Loi du 25 février 2026 modifiant la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l’alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d’Esch-sur-Sûre.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp6">
+<note id="M5" marker="5" refersTo="pm5" title="A|2026-02-27|2026-02-25|L|95">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2026/02/25/a95/jo">Loi du 25 février 2026 modifiant la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l’alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d’Esch-sur-Sûre.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp6">
+<note id="M6" marker="6" refersTo="pm6" title="A|2026-02-27|2026-02-25|L|95">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2026/02/25/a95/jo">Loi du 25 février 2026 modifiant la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l’alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d’Esch-sur-Sûre.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp6">
+<note id="M7" marker="7" refersTo="pm7" title="A|2026-02-27|2026-02-25|L|95">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2026/02/25/a95/jo">Loi du 25 février 2026 modifiant la loi modifiée du 31 juillet 1962 ayant pour objet le renforcement de l’alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d’Esch-sur-Sûre.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 03/03/2026 : Loi du 31 juillet 1962 ayant pour objet le renforcement de l’alimentation en eau potable du Grand-Duché de Luxembourg à partir du réservoir d’Esch-sur-Sûre.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_1er/20260303</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-03-03</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm1"/>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>L’État, le syndicat des eaux du sud, le syndicat de distribution d’eau des Ardennes, le syndicat pour la distribution de l’eau dans la région de l’est, le syndicat des eaux du centre et la ville de Luxembourg sont autorisés à se constituer en syndicat pour l’établissement, l’entretien et l’exploitation de tous les ouvrages, installations mécaniques et canalisations destinés à la conduite d’eau potable provenant des eaux puisées dans le réservoir d’Esch-sur-Sûre<mod class="mod-start" for="#pm2"/>, d’une station de potabilisation d’eau de la Moselle<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/> et de captage d’eaux souterraines. <mod class="mod-start" for="#pm3"/>Le syndicat est autorisé à mettre en place des installations pour la production d’énergies renouvelables.<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour autant qu’il n’y est pas dérogé par la présente loi, les dispositions de la <ref href="/eli/etat/leg/loi/2001/02/23/n2/jo" id="a3d189bf-4fa9-4fba-9a64-6bd8801d4d34">loi du 23 février 2001</ref> concernant les syndicats de communes sont applicables à ce syndicat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm4"/>L’État est représenté au sein du comité du syndicat par neuf délégués, dont :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>deux du ministre ayant les Affaires communales dans ses attributions ;</li>
+<li> deux du ministre ayant les Finances dans ses attributions ;</li>
+<li> deux du ministre ayant l’Environnement dans ses attributions ;</li>
+<li> un du ministre ayant la Santé dans ses attributions ;</li>
+<li> un du ministre ayant les Travaux publics dans ses attributions ;</li>
+<li> un du ministre ayant l’Agriculture dans ses attributions.<mod class="mod-end" for="#pm4"/>
+<noteRef href="#M4" marker="4"/>
+</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm5"/>L’un de ces délégués, à l’exclusion du délégué du ministre ayant l’Agriculture dans ses attributions, assume la présidence du comité. Il est désigné par le Gouvernement en conseil.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le délégué du ministre ayant l’Agriculture dans ses attributions dispose d’une voix consultative.<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M5" marker="5"/>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaque fois qu’il y aura renouvellement des conseils communaux à la suite d’élections générales, il sera procédé à la désignation d’un nouveau comité.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_2/20260303</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-03-03</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm6"/>Les syndicats de communes peuvent adhérer au syndicat sur leur demande.<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M6" marker="6"/> La décision d’adhésion est prise pour les communes par le conseil communal et pour les syndicats de communes par le comité de ces syndicats. Le comité du syndicat détermine les conditions et modalités de leur admission, qui sont approuvées par le Gouvernement en Conseil.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour des raisons techniques ou économiques, cette admission peut être étendue, par voie de règlement grand-ducal, à d’autres communes ou syndicats de communes de la même région, après consultation des communes ou syndicats concernés et du SEBES.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les délibérations qui précèdent prennent les mesures propres à maintenir le principe de la parité de voix entre les membres délégués de l’État et du secteur communal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’adhésion des nouveaux membres est faite pour toute la durée du syndicat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaque membre du syndicat peut nommer des suppléants au même nombre que ses délégués effectifs au syndicat.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_3/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Durant la période de construction précédant la mise en exploitation des installations le siège du syndicat est fixé à Luxembourg. Après cette période, il sera transféré sur le territoire de la commune d’Esch-sur-Sûre. Le montant de ce transfert sera déterminé par arrêté du ministre de l’Intérieur.</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_5/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Le syndicat jouit de l’exemption de l’impôt commercial communal et de l’impôt sur le revenu des collectivités.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_6/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Le syndicat est autorisé à créer à partir du réservoir d’Esch-sur-Sûre les installations de conduite de l’eau vers les différentes parties du pays; il est encore autorisé à construire et à exploiter une station de traitement de l’eau, selon des plans à approuver par les Ministres de l’Intérieur et des Travaux publics.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_7/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Aux fins visées par l’article 6 le syndicat est habilité à faire gratuitement usage du domaine public et privé de l’État et des communes pour l’établissement, l’entretien et l’exploitation de tous ouvrages destinés à l’adduction de l’eau au réservoir.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_8/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>L’exécution des travaux à réaliser par le syndicat pourra être confié aux services et administrations techniques des ministères représentés au syndicat.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_9/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>Les travaux, installations mécaniques et ouvrages nécessaires à l’établissement et à l’exploitation de la conduite d’eau sont déclarés d’utilité publique et dispensés de l’autorisation prévue par l’<ref href="/eli/etat/leg/argd/1872/06/17/n1/jo" id="545b3a95-8f0e-4f7d-82fe-6e6ada8cc7ac">arrêté royal grand-ducal du 17 juin 1872</ref> concernant le régime de certains établissements dangereux, insalubres ou incommodes.</p>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_10/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>S’il y a lieu à expropriation, il y est procédé conformément aux dispositions de la <ref href="/eli/etat/leg/loi/1979/03/15/n3/jo" id="0bf5c4df-09b3-4b8b-9fc8-b843c56d7216">loi du 15 mars 1979</ref> sur l’expropriation pour cause d’utilité publique au nom et aux frais de l’exploitant.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_11/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>Le syndicat aura en outre le droit:</p>
+<ul scl:symbol="dash">
+<li>d’installer des canalisations d’eau dans des terrains privés, non bâtis; </li>
+<li>d’assurer la surveillance de ces canalisations; </li>
+<li>de procéder aux travaux d’entretien et de réfection.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’exécution des travaux prévus sous le numéro 1 ci-dessus doit être précédée d’une notification directe aux intéressés et d’une enquête dont la procédure sera déterminée par règlement grand-ducal. Elle ne peut avoir lieu qu’après approbation du projet de détail des tracés par les Ministres de l’Intérieur et des Travaux publics.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sans préjudice des droits résultant de l’établissement des canalisations dans un terrain ouvert et non bâti, le propriétaire peut le clôturer, y élever des constructions et y faire des plantations ou en exploiter le sous-sol.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Six mois avant d’entreprendre les travaux de clôture, de construction, de plantation ou d’exploitation du sous-sol, le propriétaire devra en informer le syndicat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les indemnités dues pour le dommage résultant de l’exercice des droits prévus sub 1 à 3 ci-dessus sont fixées, soit par arrangement à l’amiable, soit en cas de désaccord, par le juge de paix du canton du fonds assujetti qui statuera en dernier ressort dans les limites de sa compétence ordinaire et à charge d’appel, quelle que soit la valeur de l’objet en litige.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_12/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>Toute infraction à l’avant-dernier alinéa de l’art. 11 et aux règlements d’administration publique pris en exécution de la présente loi sera punie d’un emprisonnement de huit jours à trois mois et d’une amende de 251 à 5.000 euros ou une de ces peines seulement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La disposition de l’article 523 du <ref href="/eli/etat/leg/code/penal" id="46f5e1a6-371f-431d-9847-9a3430df72ad">code pénal</ref> est applicable aux faits de dégradation ou de destruction volontaire des ouvrages et des installations mécaniques créées par le syndicat et servant au stockage, au transport et à la distribution de l’eau.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’article 563, 5°, du <ref href="/eli/etat/leg/code/penal" id="4b3fff72-a598-4354-96e9-73695294f289">code pénal</ref> est applicable à ceux qui, par défaut de précaution, auront involontairement détruit ou dégradé les ouvrages et installations visés à l’alinéa qui précède.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le livre 1<sup>er</sup> du <ref href="/eli/etat/leg/code/penal" id="3f5e6bd0-efa5-4b91-b765-8a31a2e670a9">code pénal</ref> et les articles 130-1 à 132-1 du <ref href="/eli/etat/leg/code/procedure_penale" id="92724977-67dc-435c-979b-2facbe7141e3">code d’instruction criminelle</ref> sont applicables aux infractions prévues par la présente loi.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_13/20160715</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2016-07-15</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>Les dépenses résultant de l’exécution des travaux projetés sont à charge du syndicat. L’État en supportera la moitié.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le syndicat fera l’avance de la part de l’État. Ce dernier en fera le remboursement en capital et intérêts au moyen de crédits qui seront inscrits aux budgets de différents exercices.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’État est autorisé à garantir pour un montant total ne pouvant dépasser 9.915.741 euros les emprunts à contracter par le syndicat, soit à l’intérieur du pays, soit à l’étranger.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le Gouvernement est autorisé à participer jusqu’à concurrence de 50 % au financement des ouvrages visés à l’alinéa 2 de l’article 6.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2/art_14/20260303</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1962/07/31/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-03-03</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm7"/>Art. 14.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le budget et le budget rectifié votés par le comité du syndicat ainsi que le bilan et le compte de profits et pertes votés par le bureau du syndicat, sont transmis sans retard par le bureau du syndicat aux ministres ayant respectivement les Affaires communales, les Finances et l’Environnement dans leurs attributions.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les ministres ayant respectivement les Finances et l’Environnement dans leurs attributions examinent le budget, le budget rectifié, le bilan et le compte de profits et pertes, et font parvenir leurs avis respectifs au ministre ayant les Affaires communales dans ses attributions, dans les trente jours qui suivent le jour de la transmission du budget, du budget rectifié, du bilan et du compte de profits et pertes, visée à l’alinéa 1<sup>er</sup>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre ayant les Affaires communales dans ses attributions redresse et arrête le budget et le budget rectifié, après avoir pris connaissance des avis visés à l’alinéa 2. À défaut d’avis dans le délai visé à l’alinéa 2, il peut passer outre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre ayant les Affaires communales dans ses attributions vérifie le bilan et le compte de profits et pertes après avoir pris connaissance des avis visés à l’alinéa 2. À défaut d’avis dans le délai visé à l’alinéa 2, il peut passer outre. Le ministre ayant les Affaires communales dans ses attributions redresse les écritures non conformes à la loi et arrête définitivement les comptes arrêtés provisoirement par le comité du syndicat.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le ministre ayant les Affaires communales dans ses attributions demande l’avis des ministres ayant respectivement les Finances et l’Environnement dans leurs attributions avant de proposer ou d’arrêter d’office un budget limité dans les conditions de l’article 125 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="b3b01d21-3c54-4a9a-ad2f-9d4cae4ea160">loi communale modifiée du 13 décembre 1988</ref> ou de porter d’office au budget le paiement d’une dépense obligatoire que le comité du syndicat aurait cherché d’éluder. Les ministres ayant respectivement les Finances et l’Environnement dans leurs attributions font parvenir leurs avis respectifs dans un délai de trente jours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>À défaut d’avis dans le délai visé à l’alinéa 1<sup>er</sup>, le ministre ayant les Affaires communales dans ses attributions peut passer outre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le ministre ayant les Affaires communales dans ses attributions demande l’avis des ministres ayant respectivement les Finances et l’Environnement dans leurs attributions avant d’autoriser le syndicat à créer un fonds de réserves. Les ministres ayant respectivement les Finances et l’Environnement dans leurs attributions font parvenir leurs avis respectifs dans un délai de trente jours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>À défaut d’avis dans le délai visé à l’alinéa 1<sup>er</sup>, le ministre ayant les Affaires communales dans ses attributions peut passer outre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les délibérations du comité du syndicat dont l’application est susceptible de grever le budget de l’État sont transmises sans retard par le bureau du syndicat aux ministres ayant respectivement les Affaires communales, les Finances et l’Environnement dans leurs attributions.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les ministres ayant respectivement les Finances et l’Environnement dans leurs attributions donnent leurs avis respectifs au ministre ayant les Affaires communales dans ses attributions dans un délai d’un mois à partir de la transmission, visée à l’alinéa 1<sup>er</sup>. Passé ce délai, il peut approuver les délibérations.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>À défaut d’avis dans le délai visé à l’alinéa 2, le ministre ayant les Affaires communales dans ses attributions peut passer outre.<mod class="mod-end" for="#pm7"/>
+<noteRef href="#M7" marker="7"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_15">
+<num>Art. 15.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est institué un comité d’accompagnement pour chaque projet d’investissement faisant l’objet d’une loi spéciale autorisant la participation financière de l’État.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Ce comité se compose de représentants du ministre ayant la Gestion de l’eau dans ses attributions, du ministre ayant le Budget dans ses attributions, du ministre ayant l’Intérieur dans ses attributions et du syndicat SEBES.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le comité peut se faire assister par des experts.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le comité est présidé par un représentant du ministre ayant la Gestion de l’eau dans ses attributions.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le comité a pour mission de suivre la mise au point des projets d’investissement et leur exécution sur les plans technique, financier et budgétaire. Il peut à cet effet adresser ses observations sous forme de rapports au ministre ayant la Gestion de l’eau dans ses attributions.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Un règlement grand-ducal précise les modalités de fonctionnement du comité.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</body>
+</act>
+</akomaNtoso>

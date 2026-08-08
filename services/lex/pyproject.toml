@@ -1,0 +1,96 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lex-email-service"
+version = "0.1.0"
+description = "Clarvia Lex automated bereavement and end-of-life information email service (Phase 1 scaffold)."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Clarvia" }]
+
+dependencies = [
+    "fastapi==0.115.6",
+    "uvicorn[standard]==0.34.0",
+    "pydantic==2.10.4",
+    "pydantic-settings==2.7.1",
+    "markdown-it-py==3.0.0",
+    "bleach==6.2.0",
+    "tzdata>=2024.1",
+    # Google SDKs are imported lazily; the unit suite never needs credentials.
+    "google-api-python-client==2.198.0",
+    "google-auth==2.56.2",
+    "google-cloud-firestore==2.28.0",
+    "google-cloud-tasks==2.23.0",
+    "openai==1.84.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.4",
+    "pytest-cov==6.0.0",
+    "mypy==1.14.1",
+    "ruff==0.8.6",
+    "httpx==0.28.1",
+    "types-bleach==6.2.0.20241123",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+src = ["app", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4", "PL"]
+ignore = ["PLR2004", "PLR0913"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["PLR2004", "S101"]
+# Approved email constants are reproduced verbatim from the blueprint and must
+# not be reflowed; long lines are intentional.
+"app/email/templates.py" = ["E501"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_any_generics = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true
+show_error_codes = true
+files = ["app", "tests"]
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["app"]
+branch = true
+omit = [
+    # Protocol interfaces: abstract method stubs inflate branch miss noise.
+    "app/domain/ports.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "^\\s*\\.\\.\\.$",
+    "if TYPE_CHECKING:",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]

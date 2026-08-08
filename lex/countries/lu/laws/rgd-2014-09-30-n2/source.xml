@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2014-09-30" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MEN"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2014-09-30" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2014-09-30" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux><scl:jolux scl:name="dateDocument">2014-09-30</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/61</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1546</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2014-10-14</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a190</scl:jolux><scl:jolux scl:name="historicalLegalId">2014A3752A</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="publicationDate">2014-10-10</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pr/20140093</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2005/12/09/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2006/07/13/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2009/02/06/n4/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1925/12/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1963/06/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2009/02/06/n3/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1968/08/16/n2/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1973/03/14/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1990/09/04/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/09/2019 : Règlement grand-ducal du 30 septembre 2014 déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l'enseignement fondamental d'obtenir l'autorisation d'enseigner en tant qu'instituteur dans les quatre cycles.</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2013/07/18/n3/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2014-190-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a190/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2014-09-30-n2-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2014-190-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a190/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2014/a190/fr/pdf/eli-etat-leg-memorial-2014-a190-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2014-10-14" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2019-09-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2019-09-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2019-09-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2018/08/23/a793/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2014/09/30/n2/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2019/08/22/a580/jo" id="rp2" showAs="Règlement grand-ducal du 22 août 2019  1) déterminant les modalités pratiques du stage, du cycle de formation de début de carrière, du certificat de formation pédagogique et de la période d’approfondissement ; 2) modifiant 1. le règlement grand-ducal modifié du 7 avril 2011 déterminant 1. les conditions d’admission au stage, les modalités du stage ainsi que les conditions de nomination des éducateurs et éducateurs gradués intervenant dans l’enseignement fondamental ou affectés aux lycées, au Centre de psychologie et d’orientation scolaires, à l’Action locale pour jeunes, à l’École de la 2e Chance et au Centre national de formation professionnelle continue ; 2. les modalités de l’examen de promotion de l’éducateur ; 2. le règlement grand-ducal du 30 septembre 2014 déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l’enseignement fondamental d’obtenir l’autorisation d’enseigner en tant qu’instituteur dans les quatre cycles ; 3) abrogeant 1. le règlement grand-ducal modifié du 11 juin 1985 portant fixation des indemnités dues aux membres des commissions pour les examens de fin de stage des enseignants de l’enseignement secondaire et de l’enseignement secondaire technique ; 2. le règlement grand-ducal modifié du 3 août 2010 concernant la formation théorique et pratique ainsi que la période probatoire des enseignants de l’enseignement postprimaire ; 3. le règlement grand-ducal modifié du 16 mars 2012 déterminant pour les chargés d’éducation des lycées et lycées techniques 1. l’échelle d’évaluation par le directeur, 2. les modalités d’organisation et le programme de la formation en cours d’emploi, 3. les modalités d’obtention du certificat de qualification sanctionnant la formation en cours d’emploi ; 4. le règlement grand-ducal du 23 août 2018 déterminant les modalités des épreuves et des formations théorique et pratique prévues à l’article 20bis de la loi modifiée du 6 février 2009 concernant le personnel de l’enseignement fondamental. "/>
+<passiveRef href="/eli/etat/leg/rgd/2018/08/23/a793/jo" id="rp3" showAs="Règlement grand-ducal du 23 août 2018 déterminant les modalités des épreuves et des formations théorique et pratique prévues à l’article 20bis de la loi modifiée du 6 février 2009 concernant le personnel de l’enseignement fondamental, et modifiant 1. le règlement grand-ducal modifié du 30 septembre 2014 déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l’enseignement fondamental d’obtenir l’autorisation d’enseigner en tant qu’instituteur dans les quatre cycles 2. le règlement grand-ducal du 25 août 2015 déterminant 1. le référentiel des compétences professionnelles, 2. les décharges accordées aux enseignants stagiaires, aux employés et aux intervenants,  3. la composition et le fonctionnement des jurys et commissions d’évaluation, 4. la composition et le fonctionnement des commissions de validation, 5. les indemnités des évaluateurs, des membres de jurys et de la commission du bilan de fin de formation à la pratique professionnelle, 6. la composition et le fonctionnement des commissions consultatives du stage des fonctionnaires-stagiaires et de la période de stage des employés de l’Éducation nationale."/>
+<passiveRef href="/eli/etat/leg/rgd/2015/08/25/n1/jo" id="rp4" showAs="Règlement grand-ducal du 25 août 2015 déterminant les tarifs horaires des formateurs et les indemnités des évaluateurs intervenant à l'Institut de formation de l'éducation nationale et modifiant  1. le règlement grand-ducal du 14 mai 2009 déterminant  1. les programmes ainsi que les modalités des épreuves des formations théorique et pratique sanctionnées par le certificat de formation des chargés de cours, membres de la réserve de suppléants pour l'enseignement fondamental;  2. les indemnités  a. des formateurs intervenant dans le cadre de la formation sanctionnée par le certificat de formation;  b. des membres du jury d'examen  2. le règlement grand-ducal du 16 mars 2012 déterminant pour les chargés d'éducation des lycées et lycées techniques  1. l'échelle d'évaluation par le directeur,  2. les modalités d'organisation et le programme de la formation en cours d'emploi,  3. les modalités d'obtention du certificat de qualification sanctionnant la formation en cours d'emploi  3. le règlement grand-ducal du 30 septembre 2014 déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l'enseignement fondamental d'obtenir l'autorisation d'enseigner en tant qu'instituteur dans les quatre cycles."/>
+</references>
+<notes scl:type="modification" source="#rp3">
+<note id="M1" marker="1" refersTo="pm1" title="A|2018-09-12|2018-08-23|RGD|793">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/08/23/a793/jo">Règlement grand-ducal du 23 août 2018 déterminant les modalités des épreuves et des formations théorique et pratique prévues à l’article 20bis de la loi modifiée du 6 février 2009 concernant le personnel de l’enseignement fondamental, et modifiant 1. le règlement grand-ducal modifié du 30 septembre 2014 déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l’enseignement fondamental d’obtenir l’autorisation d’enseigner en tant qu’instituteur dans les quatre cycles 2. le règlement grand-ducal du 25 août 2015 déterminant 1. le référentiel des compétences professionnelles, 2. les décharges accordées aux enseignants stagiaires, aux employés et aux intervenants, 3. la composition et le fonctionnement des jurys et commissions d’évaluation, 4. la composition et le fonctionnement des commissions de validation, 5. les indemnités des évaluateurs, des membres de jurys et de la commission du bilan de fin de formation à la pratique professionnelle, 6. la composition et le fonctionnement des commissions consultatives du stage des fonctionnaires-stagiaires et de la période de stage des employés de l’Éducation nationale.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>
+<mod class="mod-start" for="#pm1"/>Version consolidée applicable au 01/09/2019 : Règlement grand-ducal du 30 septembre 2014 déterminant les modalités de formations et des épreuves permettant à des agents intervenant dans l'enseignement fondamental d'obtenir l'autorisation d'enseigner en tant qu'instituteur dans les quatre cycles.</p>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_1er">
+<num>Chapitre 1<sup>er</sup>
+</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Formation théorique</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_1er</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_1er/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Les candidats briguant une autorisation d’enseigner comme instituteur aux deuxième, troisième et quatrième cycles de l’enseignement fondamental, détenteurs soit du brevet d’aptitude pédagogique, option préscolaire, ou du certificat d’études pédagogiques, option éducation préscolaire, soit d’un diplôme étranger d’études supérieures préparant à la profession d’instituteur habilitant à enseigner au premier cycle d’apprentissage de l’enseignement fondamental, suivent une formation théorique de 100 heures de cours sur la pédagogie, la didactique et l’évaluation des domaines de développement et d’apprentissage des deuxième, troisième et quatrième cycles de l’enseignement fondamental, à savoir sur:</p>
+<ol scl:symbol="1.">
+<li> <p>le langage, la langue luxembourgeoise et l’éveil aux langues, la langue allemande et l’alphabétisation, la langue française (36 heures);</p> </li>
+<li> <p>les mathématiques (16 heures);</p> </li>
+<li> <p>l’éveil aux sciences et les sciences humaines et naturelles (12 heures);</p> </li>
+<li> <p>l’expression créatrice, l’éveil à l’esthétique et à la culture dans les domaines des arts plastiques et de la musique (12 heures);</p> </li>
+<li> <p>l’expression corporelle, la psychomotricité, les sports et la santé (12 heures);</p> </li>
+<li> <p>la vie en commun et les valeurs (12 heures).</p> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_2</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_2/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Les candidats briguant une autorisation d’enseigner comme instituteur au premier cycle de l’enseignement fondamental, détenteurs soit du brevet d’aptitude pédagogique, option primaire, ou du certificat d’études pédagogiques, option primaire, soit d’un diplôme étranger d’études supérieures préparant à la profession d’instituteur habilitant à enseigner aux deuxième, troisième et quatrième cycles d’apprentissage de l’enseignement fondamental, suivent une formation théorique de 100 heures dont 20 heures de cours portent sur la psychologie du développement de l’enfant de 3 à 6 ans et 20 heures de cours sur l’identification et la prise en charge de troubles particuliers du langage. 60 heures de cours portent sur la pédagogie, la didactique et l’évaluation des domaines de développement et d’apprentissage du premier cycle de l’enseignement fondamental, à savoir sur:</p>
+<ol scl:symbol="1.">
+<li> <p>le langage, la langue luxembourgeoise et l’éveil aux langues (20 heures);</p> </li>
+<li> <p>le raisonnement logique et mathématique (8 heures);</p> </li>
+<li> <p>la découverte du monde et l’éveil aux sciences (8 heures);</p> </li>
+<li> <p>la psychomotricité, l’expression corporelle et la santé (8 heures);</p> </li>
+<li> <p>l’expression créatrice, l’éveil à l’esthétique et à la culture dans les domaines des arts plastiques et de la musique (8 heures);</p> </li>
+<li> <p>la vie en commun et les valeurs (8 heures).</p> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_3</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_3/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Les cours de la formation théorique sont organisés par l’Institut de formation de l’éducation nationale, dénommé ci-après « l’Institut ». Ils sont assurés par des formateurs proposés par l’Institut et nommés par le ministre ayant l’Éducation nationale dans ses attributions, dénommé ci-après « le ministre ».</p>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_4</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_4/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>À la demande du candidat pouvant faire valoir une formation dans une ou plusieurs branches ou un ou plusieurs domaines de développement et d’apprentissage énoncés aux articles 1<sup>er</sup> et 2, des dispenses peuvent être accordées par le ministre pour la fréquentation des cours ainsi que pour la passation des épreuves y relatives.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_2">
+<num>Chapitre 2</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Formation pratique.</heading>
+<article id="art_5">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_5</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_5/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>La formation pratique prend la forme d’un accompagnement par un tuteur et d’observations dans la classe du tuteur ou d’un autre enseignant.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_6</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_6/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>La formation pratique des candidats visés à l’article 1<sup>er</sup> porte sur 30 leçons d’enseignement direct à prester au sein des deuxième, troisième et quatrième cycles d’apprentissage de l’enseignement fondamental. Elle est répartie de façon égale entre les trois cycles.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La formation pratique des candidats visés à l’article 2 porte sur 30 leçons d’enseignement à prester au sein du premier cycle d’apprentissage de l’enseignement fondamental.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_7</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_7/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Le tuteur est proposé par le directeur de région parmi les enseignants fonctionnaires admis à la fonction d’instituteur. Il est nommé par le ministre pour la durée de la formation.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_8</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_8/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Le candidat soumet la proposition d’organisation de la formation pratique pour accord au directeur de région concerné.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_3">
+<num>Chapitre 3</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Épreuves</heading>
+<article id="art_10">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_10</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_10/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>La formation théorique prévue aux articles 1<sup>er</sup> et 2 est sanctionnée par quatre épreuves.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces épreuves prennent la forme de productions écrites qui documentent la préparation, la mise en œuvre, l’évaluation et l’analyse réflexive des leçons d’enseignement suivantes :</p>
+<ol scl:symbol="1°">
+<li> <p>deux leçons en lien avec le domaine visé à l’article 1<sup>er</sup>, point 1<sup>er</sup> respectivement à l’article 2, point 1<sup>er</sup> ;</p> </li>
+<li> <p>une leçon en lien avec le domaine visé à l’article 1<sup>er</sup>, point 2., respectivement à l’article 2, point 2. ;</p> </li>
+<li> <p>une leçon au choix du candidat en lien avec un des domaines visés à l’article 1<sup>er</sup>, points 3 à 6, respectivement à l’article 2, points 3 à 6.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour le candidat qui brigue l’autorisation d’enseigner comme instituteur aux deuxième, troisième et quatrième cycles d’apprentissage de l’enseignement fondamental, les épreuves de la formation théorique portent sur au moins deux cycles d’apprentissage différents de l’enseignement fondamental.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaque épreuve de la formation théorique est évaluée par un formateur désigné par le directeur de l’Institut et est notée sur vingt points.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_11</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_11/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>La formation pratique est sanctionnée par une inspection.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour le candidat qui brigue l’autorisation d’enseigner comme instituteur aux deuxième, troisième et quatrième cycles d’apprentissage de l’enseignement fondamental, l’inspection a lieu dans une classe du deuxième, troisième ou quatrième cycle d’apprentissage de l’enseignement fondamental.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour le candidat qui brigue l’autorisation d’enseigner comme instituteur au premier cycle d’apprentissage de l’enseignement fondamental, l’inspection a lieu dans une classe du premier cycle d’apprentissage de l’enseignement fondamental.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’inspection est cotée sur 30 points et se compose :</p>
+<ol scl:symbol="1.">
+<li> <p>d’une observation de classe assurée par un directeur de région et le tuteur du candidat ;</p> </li>
+<li> <p>de l’évaluation d’une préparation de leçon par un directeur de région et le tuteur du candidat ;</p> </li>
+<li> <p>d’un entretien à l’issue de l’observation de classe entre le directeur de région, le tuteur du candidat et le candidat.</p> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_14</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_14/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>Les sujets des épreuves des activités d’apprentissage sont communiqués au candidat vingt-quatre heures avant l’épreuve. Le candidat est dispensé d’assurer ses cours la veille et le jour de l’épreuve.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_4">
+<num>Chapitre 4</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Autorisations d’enseigner</heading>
+<article id="art_15">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_15</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_15/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>La formation est évaluée lors d’une première session. En cas d’échec, le candidat peut se présenter à une seconde session.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le candidat qui, lors de la première session, a obtenu au moins la moitié du total des points pouvant être obtenus aux épreuves de la formation théorique et au moins la moitié du total des points pouvant être obtenus à l’épreuve de la formation pratique a réussi la formation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le candidat qui, lors de la première session, n’a pas obtenu au moins la moitié du total des points pouvant être obtenus à l’ensemble des épreuves de la formation théorique présente, lors de la seconde session, une version remaniée des épreuves dans lesquelles il n’a pas obtenu au moins la moitié des points pouvant être obtenus.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les résultats obtenus, lors de cette seconde session, sont mis en compte avec les résultats des épreuves dans lesquelles le candidat a obtenu lors de la première session au moins la moitié des points pouvant être obtenus.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le candidat qui, lors de la première session, n’a pas obtenu au moins la moitié du total des points pouvant être obtenus à l’épreuve de la formation pratique se présente à la seconde session de cette épreuve.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le candidat qui, lors de la seconde session, a obtenu au moins la moitié du total des points pouvant être obtenus aux épreuves de la formation théorique et au moins la moitié du total des points pouvant être obtenus à l’épreuve de la formation pratique a réussi la formation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le candidat qui a échoué à la formation est autorisé à se présenter une nouvelle fois à la formation et aux épreuves sanctionnant la formation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(7)</num>
+<alinea>
+<content>
+<p>Dans le cas de l’octroi d’une dispense d’une épreuve, les résultats des autres épreuves sont ramenés de manière proportionnelle au nombre total des points pouvant être obtenus.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(8)</num>
+<alinea>
+<content>
+<p>La commission de validation prévue à l’article 44, paragraphe 7, de la <ref href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="e3a6d9b2-ac79-4ce8-98e6-b1511ddf0882">loi modifiée du 30 juillet 2015</ref> portant création d’un Institut de formation de l’éducation nationale valide les résultats à l’issue de la première et de la seconde session de la formation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(9)</num>
+<alinea>
+<content>
+<p>La décision de la commission de validation est transmise par voie écrite au candidat, au directeur de région et au ministre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(10)</num>
+<alinea>
+<content>
+<p>Le candidat qui a réussi à la formation théorique et à la formation pratique obtient l’autorisation d’enseigner en tant qu’instituteur soit au premier cycle, soit aux deuxième, troisième et quatrième cycles d’apprentissage de l’enseignement fondamental.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_5">
+<num>Chapitre 5</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Décharge accordée au candidat, tarifs horaires des formateurs et indemnités des évaluateurs</heading>
+<article id="art_16bis">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_16bis</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_16bis/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 16bis.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16<i>bis</i>.</num>
+<alinea>
+<content>
+<p>Les candidats visés aux articles 1<sup>er</sup> et 2 bénéficient pendant la durée de la formation d’une décharge de deux leçons d’enseignement hebdomadaire par rapport à la tâche normale des instituteurs, telle que définie dans le <ref href="/eli/etat/leg/rgd/2009/03/23/n1/jo" id="d04172c8-e3cc-46cc-a608-85e2e13ebfb5">règlement grand-ducal modifié du 23 mars 2009</ref> fixant la tâche des instituteurs de l’enseignement fondamental.</p>
+</content>
+</alinea>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_17</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_17/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>Le tarif horaire applicable aux formateurs intervenant dans la formation théorique est celui fixé par le <ref href="/eli/etat/leg/rgd/2015/08/25/n1/jo" id="d79e550c-5011-4f75-8026-02da8d0b26c7">règlement grand-ducal du 25 août 2015</ref> déterminant les tarifs horaires des formateurs et les indemnités des évaluateurs intervenant à l’Institut de formation de l’éducation nationale.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le formateur qui évalue une épreuve de la formation théorique prévue à l’article 10 a droit, par épreuve de la formation théorique évaluée, à une indemnité forfaitaire fixée à 12 euros N.I. 100.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur de région et le tuteur qui évaluent une épreuve de la formation pratique prévue à l’article 11 ont chacun droit, par épreuve de la formation pratique évaluée, à une indemnité forfaitaire fixée à 35 euros N.I. 100.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le tuteur qui suit un candidat pendant la formation pratique prévue à l’article 5 a droit, par trimestre et par candidat, à une indemnité forfaitaire fixée à 40 euros N.I. 100.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+	<scl:JOLUXComplexWork>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_18</scl:jolux>
+	</scl:JOLUXComplexWork>
+	<scl:JOLUXLegalResource>
+		<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2/art_18/20190901</scl:jolux>
+		<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2014/09/30/n2</scl:jolux>
+		<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+		<scl:jolux scl:name="dateApplicability">2019-09-01</scl:jolux>
+		<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+	</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>Notre Ministre de l’Éducation nationale, de l’Enfance et de la Jeunesse et Notre Ministre des Finances sont chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Mémorial.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

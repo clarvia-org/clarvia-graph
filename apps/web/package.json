@@ -1,0 +1,39 @@
+{
+  "name": "@clarvia/workflow-web",
+  "description": "Thin web layer for Clarvia's open bereavement workflow infrastructure",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "tsx scripts/sync-web-data.ts",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "postinstall": "node scripts/postinstall.js",
+    "sync-data": "tsx scripts/sync-web-data.ts"
+  },
+  "dependencies": {
+    "next": "16.2.11",
+    "pg": "8.22.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "stripe": "^22.3.2",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.1.2",
+    "@types/pg": "8.20.4",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.3",
+    "@typescript/typescript6": "^6.0.2",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.2.12",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.5",
+    "typescript": "7.0.2",
+    "vitest": "4.1.10"
+  }
+}

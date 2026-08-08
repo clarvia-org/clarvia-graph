@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="1817-12-27" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MJ"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="1817-12-27" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="1817-12-27" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2022-07-24</scl:jolux><scl:jolux scl:name="dateDocument">1817-12-27</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MJ</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/895</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/981</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1504</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/2264</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/2314</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/2329</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/374</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1319</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">1817-01-07</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/1817/a3</scl:jolux><scl:jolux scl:name="historicalLegalId">1817A0003Z</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">1817-01-03</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1804/03/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1807/09/15/n2/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 24/07/2022 : Loi du 27 Décembre 1817, pour la perception du Droit de Succession.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1817-3-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1817/a3/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-1817-12-27-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-1817-3-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/1817/a3/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/1817/a3/fr/pdf/eli-etat-leg-memorial-1817-a3-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="1817-01-07" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2018-01-01" id="e10" originatingExpression="true" source="#rp10" type="amendment"/>
+<eventRef date="2018-01-01" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+<eventRef date="2018-01-01" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+<eventRef date="2018-01-01" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+<eventRef date="2018-01-01" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2018-01-01" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2018-01-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2018-01-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2022-07-24" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2017/12/15/a1097/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2022/07/20/a370/jo"/>
+<destination href="#article_3"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2022/07/20/a370/jo"/>
+<destination href="#article_3"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/1817/12/27/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2022/07/20/a370/jo" id="rp2" showAs="Loi du 20 juillet 2022 portant modification de : 1° la loi modifiée du 19 décembre 2008 ayant pour objet la coopération interadministrative et judiciaire et le renforcement des moyens de l’Administration des contributions directes, de l’Administration de l’enregistrement et des domaines et de l’Administration des douanes et accises et portant modification de - la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; - la loi générale des impôts (« Abgabenordnung ») ; - la loi modifiée du 17 avril 1964 portant réorganisation de l’Administration des contributions directes; - la loi modifiée du 20 mars 1970 portant réorganisation de l’Administration de l’enregistrement et des domaines; - la loi modifiée du 27 novembre 1933 concernant le recouvrement des contributions directes et des cotisations d’assurance sociale ; 2° la loi modifiée du 27 décembre 1817 sur la perception du droit de succession ; 3° la loi modifiée du 7 août 1920 portant majoration des droits d’enregistrement, de timbre, de succession, etc. "/>
+<passiveRef href="/eli/etat/leg/loi/2017/12/15/a1097/jo" id="rp3" showAs="Loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2018 et modifiant : 1° le Code de la sécurité sociale ; 2° le Code du Travail ; 3° la loi modifiée du 27 décembre 1817 sur le droit de succession ; 4° la loi modifiée du 16 octobre 1934 sur l’évaluation des biens et valeurs ; 5° la loi modifiée du 16 octobre 1934 concernant l’impôt sur la fortune ; 6° la loi modifiée d’adaptation fiscale du 16 octobre 1934 ; 7° la loi modifiée du 1er décembre 1936 concernant l’impôt commercial ; 8° la loi modifiée du 17 avril 1964 portant réorganisation de l’administration des contributions directes ; 9° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 10° la loi modifiée du 10 mars 1969 portant institution d’une inspection générale des finances ; 11° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 12° la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre ;  13° la loi modifiée du 23 décembre 1998 portant création de deux établissements publics dénommés 1) Centres, foyers et services pour personnes âgées ; 2) Centres de gériatrie ; 14° la loi modifiée du 9 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 15° la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2002 ; 16° la loi modifiée du 4 juillet 2008 sur la jeunesse; 17° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 18° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 19° la loi du 25 novembre 2014 prévoyant la procédure applicable à l’échange de renseignements sur demande en matière fiscale ; 20° la loi modifiée du 27 juin 2016 concernant le soutien au développement durable des zones rurales ; 21° la loi du 29 juin 2016 portant modification d’une disposition en matière d’impôts directs ; 22° la loi du 14 décembre 2016 portant création d’un Fonds de dotation globale des communes."/>
+<passiveRef href="/eli/etat/leg/loi/2016/12/23/n11/jo" id="rp4" showAs="Loi du 23 décembre 2016 portant mise en oeuvre de la réforme fiscale 2017 et portant modification  - de la loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu;  - de la loi modifiée du 16 octobre 1934 concernant l'mpôt sur la fortune;  - de la loi modifiée du 1er décembre 1936 concernant l'impôt commercial;  - de la loi modifiée du 24 décembre 1996 portant introduction d'une bonification d'impôt sur le revenu en cas d'embauchage de chômeurs;  - de la loi d'adaptation fiscale modifiée du 16 octobre 1934 («Steueranpassungsgesetz);  - de la loi générale des impôts modifiée du 22 mai 1931 («Abgabenordnung»);  - de la loi rectificative du 19 décembre 2014 concernant le budget des recettes et des dépenses de l'Etat pour l'exercice 2015;  - de la loi modifiée du 23 décembre 2005 portant introduction d'une retenue à la source libératoire sur certains intérêts produits par l'épargne mobilière;  - de la loi du 19 décembre 2008 ayant pour objet la coopération interadministrative et judiciaire et le renforcement des moyens de l'Administration des contributions directes, de l'Administration de l'enregistrement et des domaines, de l'Administration des douanes et accises et portant modification de  · la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; · la loi générale des impôts («Abgabenordnung»); · la loi modifiée du 17 avril 1964 portant réorganisation de l'Administration des contributions directes; · la loi modifiée du 20 mars 1970 portant réorganisation de l'Administration de l'enregistrement et des domaines; · la loi modifiée du 27 novembre 1933 concernant le recouvrement des contributions directes et des cotisations d'assurance sociale; - de la loi du 30 juillet 1983 portant création d'une taxe sur le loto; - de la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; - du Code pénal; - de la loi modifiée du 8 août 2000 sur l'entraide judiciaire internationale en matière pénale; - de la loi du 27 août 1997 portant approbation du Protocole additionnel à la Convention européenne d'entraide judiciaire en matière pénale, signé à Strasbourg, le 17 mars 1978; - de la loi du 27 juin 2016 concernant le soutien au développement durable; - de la loi modifiée du 22 frimaire an VII organique de l'enregistrement; - de la loi modifiée du 13 brumaire an VII organique du timbre; - de la loi modifiée du 27 décembre 1817 sur le droit de succession; - de la loi modifiée du 23 décembre 1913 concernant la révision de la législation qui régit les impôts dont le recouvrement est attribué à l'administration de l'enregistrement et des domaines; - de la loi modifiée du 7 août 1920, portant majoration des droits d'enregistrement, de timbre, de succession, etc.; - de la loi modifiée du 28 janvier 1948 tendant à assurer la juste et exacte perception des droits d'enregistrement et de succession; - de la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d'enregistrement, de succession et de timbre; - de l'ordonnance royale grand-ducale du 23 septembre 1841 sur le timbre, l'enregistrement et les droits de succession; - de la loi modifiée du 19 juin 2013 relative à l'identification des personnes physiques; - de la loi modifiée du 25 février 1979 concernant l'aide au logement; - de la loi modifiée du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil."/>
+<passiveRef href="/eli/etat/leg/loi/2010/08/03/n3/jo" id="rp5" showAs="Loi du 3 août 2010 portant modification  - de la loi du 9 juillet 2004 relative aux effets légaux de certains partenariats  - du Code du travail  - de la loi modifiée du 16 avril 1979 fixant le statut général des fonctionnaires de l’Etat  - de la loi modifiée du 26 mai 1954 réglant les pensions des fonctionnaires de l’Etat  - de la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux  - de la loi modifiée du 7 août 1920 portant majoration des droits d’enregistrement, de timbre, de succession  - de la loi modifiée du 27 décembre 1817 sur le droit de succession et  - de la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre."/>
+<passiveRef href="/eli/etat/leg/loi/2009/12/18/n8/jo" id="rp6" showAs="Loi du 18 décembre 2009 relative aux droits de succession et de mutation par décès et modifiant  - la loi modifiée du 27 décembre 1817 sur le droit de succession  - la loi modifiée du 7 août 1920, sur la majoration des droits d'enregistrement, de timbre, de succession  - la loi du 31 janvier 1921 concernant modification de l'article 22 de la loi du 7 août 1920, sur la majoration des droits d'enregistrement, de timbre, de succession  - la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d'enregistrement, de succession et de timbre."/>
+<passiveRef href="/eli/etat/leg/loi/2004/07/09/n3/jo" id="rp7" showAs="Loi du 9 juillet 2004 relative aux effets légaux de certains partenariats."/>
+<passiveRef href="/eli/etat/leg/loi/1984/06/13/n1/jo" id="rp8" showAs="Loi du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d'enregistrement, de succession et de timbre."/>
+<passiveRef href="/eli/etat/leg/loi/1913/12/23/n1/jo" id="rp9" showAs="Loi du 23 décembre 1913 concernant la révision de la législation qui régit les impôts dont le recouvrement est attribué à l'administration de l'enregistrement et des domaines."/>
+<passiveRef href="/eli/etat/leg/ordr/1841/09/23/n1/jo" id="rp10" showAs="Ordonnance royale grand-ducale du 23 septembre 1841, concernant le timbre et l'enregistrement."/>
+</references>
+<notes scl:type="modification" source="#rp3">
+<note id="M1" marker="1" refersTo="pm1" title="A|2017-12-20|2017-12-15|L|1097">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1097/jo">Loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2018 et modifiant : 1° le Code de la sécurité sociale ; 2° le Code du Travail ; 3° la loi modifiée du 27 décembre 1817 sur le droit de succession ; 4° la loi modifiée du 16 octobre 1934 sur l’évaluation des biens et valeurs ; 5° la loi modifiée du 16 octobre 1934 concernant l’impôt sur la fortune ; 6° la loi modifiée d’adaptation fiscale du 16 octobre 1934 ; 7° la loi modifiée du 1er décembre 1936 concernant l’impôt commercial ; 8° la loi modifiée du 17 avril 1964 portant réorganisation de l’administration des contributions directes ; 9° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 10° la loi modifiée du 10 mars 1969 portant institution d’une inspection générale des finances ; 11° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 12° la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre ; 13° la loi modifiée du 23 décembre 1998 portant création de deux établissements publics dénommés 1) Centres, foyers et services pour personnes âgées ; 2) Centres de gériatrie ; 14° la loi modifiée du 9 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 15° la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2002 ; 16° la loi modifiée du 4 juillet 2008 sur la jeunesse; 17° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 18° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 19° la loi du 25 novembre 2014 prévoyant la procédure applicable à l’échange de renseignements sur demande en matière fiscale ; 20° la loi modifiée du 27 juin 2016 concernant le soutien au développement durable des zones rurales ; 21° la loi du 29 juin 2016 portant modification d’une disposition en matière d’impôts directs ; 22° la loi du 14 décembre 2016 portant création d’un Fonds de dotation globale des communes.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2022-07-20|2022-07-20|L|370">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/07/20/a370/jo">Loi du 20 juillet 2022 portant modification de : 1° la loi modifiée du 19 décembre 2008 ayant pour objet la coopération interadministrative et judiciaire et le renforcement des moyens de l’Administration des contributions directes, de l’Administration de l’enregistrement et des domaines et de l’Administration des douanes et accises et portant modification de - la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; - la loi générale des impôts (« Abgabenordnung ») ; - la loi modifiée du 17 avril 1964 portant réorganisation de l’Administration des contributions directes; - la loi modifiée du 20 mars 1970 portant réorganisation de l’Administration de l’enregistrement et des domaines; - la loi modifiée du 27 novembre 1933 concernant le recouvrement des contributions directes et des cotisations d’assurance sociale ; 2° la loi modifiée du 27 décembre 1817 sur la perception du droit de succession ; 3° la loi modifiée du 7 août 1920 portant majoration des droits d’enregistrement, de timbre, de succession, etc.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M3" marker="3" refersTo="pm3" title="A|2022-07-20|2022-07-20|L|370">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/07/20/a370/jo">Loi du 20 juillet 2022 portant modification de : 1° la loi modifiée du 19 décembre 2008 ayant pour objet la coopération interadministrative et judiciaire et le renforcement des moyens de l’Administration des contributions directes, de l’Administration de l’enregistrement et des domaines et de l’Administration des douanes et accises et portant modification de - la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; - la loi générale des impôts (« Abgabenordnung ») ; - la loi modifiée du 17 avril 1964 portant réorganisation de l’Administration des contributions directes; - la loi modifiée du 20 mars 1970 portant réorganisation de l’Administration de l’enregistrement et des domaines; - la loi modifiée du 27 novembre 1933 concernant le recouvrement des contributions directes et des cotisations d’assurance sociale ; 2° la loi modifiée du 27 décembre 1817 sur la perception du droit de succession ; 3° la loi modifiée du 7 août 1920 portant majoration des droits d’enregistrement, de timbre, de succession, etc.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 24/07/2022 : Loi du 27 Décembre 1817, pour la perception du Droit de Succession.</p>
+</longTitle>
+<container name="disclaimer">
+<p>
+<i>Cette version consolidée a été élaborée sous la responsabilité de l'Administration de l'enregistrement, des domaines et de la TVA.</i>
+</p>
+</container>
+</preface>
+<body>
+<title id="titre_i">
+<num scl:align="left">
+<mod class="mod-start" for="#pm1"/>TITRE  I</num>
+<heading scl:align="left" scl:separator=" – " scl:style-format="b">DISPOSITIONS GÉNÉRALES</heading>
+<article id="article_1">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_1/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">ART.  Ier.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 1</num>
+<alinea>
+<content>
+<p>Il sera perçu, à titre de droit de succession, un impôt sur la valeur de tout ce qui sera recueilli ou acquis dans la succession d’un habitant du <i>Grand-Duché</i> décédé après le 31 décembre 1817.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Est réputé habitant<i> du Grand-Duché</i>, pour l’application de la présente loi, celui qui y a établi son domicile ou le siège de sa fortune.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il sera pareillement perçu à titre de droit de mutation, un impôt sur la valeur des biens immeubles situés dans <i>le Grand-Duché</i>, recueillis ou acquis en propriété ou en usufruit, par le décès de quelqu’un qui n’y est pas réputé habitant, et décédant après le 31 décembre 1817.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le tout néanmoins sauf les exceptions ci-après établies, et sous les modifications suivantes.</p>
+</content>
+</alinea>
+</article>
+<article id="article_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_2/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 2</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 2</num>
+<alinea>
+<content>
+<p>Le droit de succession et celui de mutation, s’il n’y a des dispositions à ce contraires, seront supportés par les héritiers, légataires et donataires, chacun pour ce qu’il recueille ou acquiert.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les héritiers et les légataires universels dans la succession d’un habitant <i>du Grand-Duché</i>, sont tenus envers l’État, tant du droit dû pour la totalité de la succession, que des amendes encourues pour contravention à la présente loi, chacun en proportion de la part qu’il recueille ou acquiert.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les légataires à titre universels, les légataires particuliers et les donataires sont tenus envers l’État du droit de succession et des amendes, chacun pour ce qu’il a recueilli, et sauf son recours pour la restitution des amendes contre celui par le fait duquel elles sont encourues.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les exécuteurs testamentaires, les curateurs de successions vacantes, les tuteurs pour leurs pupilles, et les curateurs d’interdits pour leurs administrés, sont tenus envers l’État pour le droit de succession et les amendes, en tant qu’il a dépendu d’eux de se conformer à la présente loi.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dispositions contenues dans cet article, sont également applicables à ce qui concerne le droit de mutation.</p>
+</content>
+</alinea>
+</article>
+<article id="article_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_3/20220724</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 3</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-07-24</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 3</num>
+<alinea>
+<content>
+<p scl:align="left">A compter du jour du décès, le trésor public a, pour le droit de succession, un privilège général sur tous les biens meubles délaissés par le défunt, ayant rang immédiatement après ceux mentionnés aux articles 2101 et 2102 du Code civil et à l’article 191 du Code de commerce. Tous les immeubles délaissés par le défunt dans <i>le Grand-Duché</i> sont, à compter du jour du décès, légalement hypothéqués pour le droit de succession et pour celui de mutation, sans qu’il soit besoin pour cette hypothèque d’aucune inscription sur les registres des conservateurs des hypothèques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ce privilège et cette hypothèque légale sont éteints au dernier jour du <mod class="mod-start" for="#pm2"/>vingt-quatrième<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/> mois qui suit celui dans lequel échoit le délai fixé pour la déclaration par la présente loi, ou prolongé sur demande écrite par le directeur de l’administration de l’enregistrement et des domaines, si avant ladite époque le préposé n’a pas commencé des poursuites judiciaires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au moyen du paiement du droit de succession et de celui de mutation effectué avant le dernier jour dudit <mod class="mod-start" for="#pm3"/>vingt-quatrième<mod class="mod-end" for="#pm3"/>
+<noteRef href="#M3" marker="3"/> mois, l’hypothèque légale sera également éteinte, mais seulement quant aux immeubles qui auraient été aliénés ou donnés en hypothèque à des tiers, avant que le préposé ait commencé des poursuites judiciaires pour le recouvrement du supplément des droits qui, par suite de déclaration incomplète, pourrait encore être dû.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans le cas, où avant d’avoir acquitté le droit de succession ou de mutation, les intéressés voudraient aliéner ou hypothéquer quelqu’immeuble affranchi de l’hypothèque légale, ils pourront en faire la demande à l’employé qui sera désigné dans la province par le département des impositions indirectes. Leur demande sera admise si le trésor public a d’ailleurs, ou s’il lui est donné sûreté suffisante pour le montant de ce qui est dû.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il ne sera pas préjudicié par le droit de privilège et d’hypothèque légale susmentionné aux droits <span scl:no-break="true">précédemment</span> acquis à des tiers.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_ii">
+<num scl:align="left">TITRE II</num>
+<heading scl:align="left" scl:separator=" – " scl:style-format="b">DE LA DÉCLARATION ET DE L’ÉVALUATION DES BIENS RECUEILLIS OU ACQUIS</heading>
+<article id="article_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_4/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 4</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 4</num>
+<alinea>
+<content>
+<p>Les héritiers et les légataires universels dans la succession d’un habitant <i>du Grand-Duché</i>, sont tenus d’en faire la déclaration par écrit au bureau du droit de succession dans le ressort duquel le défunt a eu, dans <i>le Grand-Duché</i>, son dernier domicile ; cette déclaration énoncera la nature et la valeur de tout ce qui fait partie de la succession, avec désignation, quant aux immeubles, de la commune et de leur situation, et avec indication de leur contenance pour les propriétés non bâties, en autant qu’elle est connue aux parties déclarantes ; de plus, toutes les dettes composant le passif de la succession ; les noms des héritiers, légataires et donataires ; le degré de parenté entre eux et le défunt, et la part recueillie ou acquise par chacun ; en outre, au cas que la succession soit, en tout ou en partie, recueillie en vertu de disposition testamentaire, quels seraient les héritiers appelés par la loi. Cette dernière indication ne sera pas nécessaire, si la succession est dans la totalité passible du droit de quinze pour cent.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les héritiers, légataires ou donataires d’immeubles situés dans le <i>Grand-Duché</i>, et délaissés par quelqu’un qui n’y est pas réputé habitant, fourniront au bureau du droit de succession ou de mutation dans le ressort duquel les biens sont situés, la déclaration de la nature des biens, de leur situation, contenance et valeur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les successions d’habitants <i>du Grand-Duché</i>, recueillies en ligne directe ou dont la valeur totale, déduction faite des dettes, ne s’élève pas au-delà de 1250 euros, la déclaration se bornera à la désignation :</p>
+<ol scl:start="1" scl:symbol="custom">
+<li scl:symbol="1°.">Des héritiers et des immeubles qui leur sont échus, et qui sont situés dans <i>le Grand-Duché</i>.</li>
+<li scl:symbol="2°.">Des légataires et donataires, et de ce que chacun d’eux recueille ou acquiert.</li>
+<li scl:symbol="3°.">De ce qui doit être déclaré aux termes de l’article 6.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans une succession non passible d’aucun droit, il sera fourni une déclaration négative à condition de l’absence d’immeuble laissé par le défunt.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La déclaration de la succession d’un habitant <i>du Grand-Duché</i>, énoncera en outre, si le défunt a eu l’usufruit de quelques biens, et dans le cas de l’affirmative, en quoi ils consistent, avec indication de ceux qui sont parvenus à la jouissance de la pleine propriété ; le tout en tant que les parties déclarantes peuvent en avoir connaissance.</p>
+</content>
+</alinea>
+</article>
+<article id="article_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_5/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 5</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 5</num>
+<alinea>
+<content>
+<p>Celui qui, par le décès de l’usufruitier, parvient à la jouissance de la pleine propriété, est tenu d’en faire la déclaration au bureau du droit de succession où précédemment l’acquisition de l’usufruit par décès a été déclarée, et ce de la manière prescrite par l’article 4 et dans le délai fixé par l’article 9.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque du vivant de l’usufruitier, l’usufruit se réunit à la nue-propriété, l’usufruitier et celui qui parvient à la jouissance de la pleine propriété, seront tenus chacun d’en faire la déclaration de la même manière, au bureau du droit de succession où a été précédemment faite la déclaration de l’usufruit acquis par décès. Dans ce cas, le jour auquel la réunion a eu lieu et l’endroit où l’acte ou la convention a été faite, s’il en existe, seront pour ce qui regarde le délai de la déclaration, l’estimation et l’application générale de la présente loi, considérés comme le jour et le lieu du décès.</p>
+</content>
+</alinea>
+</article>
+<article id="article_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_6/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 6</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 6</num>
+<alinea>
+<content>
+<p>Lorsque là où les fidéicommis subsistent encore, un bien grevé de fidéicommis passe par décès au substitué, ou si le décès opère mutation de propriété d’un bien dont un autre a l’usufruit, les parties déclarantes, dans la succession d’un habitant <i>du Grand-Duché</i>, en feront la déclaration, de la manière prescrite par l’article 4 et dans le délai fixé par l’article 9.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans le cas où du vivant de l’héritier fiduciaire, le bien grevé du fidéicommis passe au substitué, les dispositions contenues dans le dernier alinéa de l’article précédent seront applicables à l’héritier fiduciaire ainsi qu’au substitué.</p>
+</content>
+</alinea>
+</article>
+<article id="article_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_7/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 7</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 7</num>
+<alinea>
+<content>
+<p>L’acceptation d’une succession sous bénéfice d’inventaire n’exempte pas de l’obligation de faire la déclaration des biens de la manière et dans les délais prescrits par la présente loi.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>A défaut, les dispositions de l’article 10 seront également applicables.</p>
+</content>
+</alinea>
+</article>
+<article id="article_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_8/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 8</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 8</num>
+<alinea>
+<content>
+<p>Il sera fait, dans la déclaration, élection d’un seul domicile dans le ressort du bureau du droit de succession ou de mutation où la déclaration est reçue ; et ce pour toutes les actions et poursuites que le préposé sera tenu d’intenter en vertu de la présente loi, soit contre les héritiers, soit contre les légataires, soit contre les donataires, exécuteurs testamentaires, tuteurs ou curateurs.</p>
+</content>
+</alinea>
+</article>
+<article id="article_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_9/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 9</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 9</num>
+<alinea>
+<content>
+<p>Le délai pour la déclaration sera : si le décès a lieu dans le territoire du <i>Grand-Duché</i>, de six mois ; dans toute autre partie de l’Europe, de huit mois ; en Amérique, de douze mois ; en Afrique ou en Asie, de vingt-quatre mois, à dater du jour du décès.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les délais de huit, douze et vingt-quatre mois sont réduits à six mois, à dater du jour de la prise de possession, si le défunt étant mort à l’étranger, les héritiers, donataires ou légataires, ou les tuteurs ou curateurs, se mettent en possession ou dans la gestion de tout ou partie de la succession, avant que le dernier semestre du délai pour la déclaration ait commencé à courir.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les délais peuvent être prolongés par décision du directeur de l’administration de l’enregistrement et des domaines suivant qu’il sera jugé nécessaire au vu d’une demande écrite présentée par un héritier présomptif.</p>
+</content>
+</alinea>
+</article>
+<article id="article_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_10/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 10</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 10</num>
+<alinea>
+<content>
+<p>Si les déclarations ne sont pas faites auxdits bureaux, et dans les délais prescrits ou prolongés par décision directoriale, ceux qui y sont tenus d’après la présente loi, seront sommés péremptoirement par le ministère d’un huissier, à l’effet de la faire dans les quinze jours qui suivront l’insinuation, et il sera en sus payé, au profit de l’État, un dixième du droit dû, ainsi que les frais de la sommation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si le délai fixé par cette sommation est expiré sans que la déclaration ait été faite, le préposé décernera une contrainte contre le redevable en retard aux fins de payer une somme à y exprimer, sauf à en régulariser définitivement le montant, d’après ce qui sera trouvé dû suivant la liquidation du droit. Le montant du droit dû sera augmenté de la moitié à titre d’amende.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans le cas où la déclaration omise a rapport à une succession, ou à un objet non passible du droit de succession, il sera dû une amende de 25 euros pour chaque semaine de retard, après les quinze jours de la sommation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si, pour la succession d’un habitant <i>du Grand-Duché</i>, la déclaration omise a rapport à un usufruit éteint par décès, ou à une dévolution de biens grevés de fidéicommis, les contrevenants seront tenus tant du droit de succession que de l’amende, sauf à exercer leur recours, pour le droit de succession <span scl:no-break="true">seulement</span>, contre celui qui est venu à la jouissance de la pleine propriété, ou à qui les biens grevés de fidéicommis sont dévolus.</p>
+</content>
+</alinea>
+</article>
+<article id="article_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_11/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 11</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 11</num>
+<alinea>
+<content>
+<p>La valeur des objets composant l’actif de la succession d’un habitant <i>du Grand-Duché</i>, ainsi que celle des biens immeubles assujettis au droit de mutation, sont déterminées ainsi qu’il suit :</p>
+<ol scl:start="1" scl:symbol="a.">
+<li>Pour les immeubles, par leur valeur vénale au jour du décès.</li>
+<li>Pour les créances hypothécaires inscrites, par le montant du capital et des intérêts dus au jour du décès, où à estimer par les parties déclarantes.</li>
+<li>Pour les rentes emphytéotiques, rentes foncières perpétuelles, rentes, prestations connues sous le nom de beklemmingen, chijnsen et thijnsen, et autres prestations semblables établies sur des immeubles à perpétuité ou pour un temps illimité, à raison d’un capital formé de vingt fois la rente ou prestation annuelle.<p>Les rentes et prestations stipulés payables en grains, fruits ou autres objets ayant une valeur appréciable, seront évaluées sur le taux moyen des mercuriales des quatorze dernières années du marché le plus voisin de la situation des biens, déduction faite des deux plus fortes et des deux plus basses. A défaut de mercuriales, elles seront évaluées par les parties déclarantes.</p>
+</li>
+<li>Pour les effets publics, les actions et les intérêts, par le capital représentant leur valeur au jour du décès.<p>Le capital des effets publics, des actions et des intérêts, est réglé d’après le prix-courant publié par ordre du Gouvernement dans la semaine du décès ; quant aux effets, actions et intérêts qui ne seraient pas notés sur le prix-courant, le capital sera évalué par les parties déclarantes.</p>
+</li>
+<li>Pour les rentes viagères, à raison de la rente annuelle, multipliée par le nombre d’années de vie de celui sur la tête de qui elles sont créées, et ce d’après le calcul suivant :<ul scl:space-tab="0" scl:symbol="none">
+<li>Depuis 1 jusqu’à 20 ans, on compte 10 années de vie.</li>
+<li>Au-dessus de 20 jusqu’à 30 ans, on compte 9 années de vie.</li>
+<li>Au-dessus de 30 jusqu’à 40 ans, on compte 8 années de vie.</li>
+<li>Au-dessus de 40 jusqu’à 50 ans, on compte 7 années de vie.</li>
+<li>Au-dessus de 50 jusqu’à 55 ans, on compte 6 années de vie.</li>
+<li>Au-dessus de 55 jusqu’à 60 ans, on compte 5 années de vie.</li>
+<li>Au-dessus de 60 jusqu’à 65 ans, on compte 4 années de vie.</li>
+<li>Au-dessus de 65 jusqu’à 70 ans, on compte 3 années de vie.</li>
+<li>Au-dessus de 70 jusqu’à 75 ans, on compte 2 années de vie.</li>
+<li>Au-dessus de 75 ans, on compte 1 année de vie.</li>
+</ul>
+<p>À l’égard des tontines, contrats de survie et prébendes, là où celles-ci subsistent encore, on considérera comme produit annuel celui de la dernière année qui a précédé le décès. Ils seront au reste évalués en capital, sur le pied des rentes viagères ; et pour autant qu’ils consistent en objets en nature, on se conformera pour leur évaluation, à ce qui est prescrit à cet égard à la lettre c.</p>
+</li>
+<li>Pour les navires, barques et bateaux, par leur valeur vénale au jour du décès, à estimer par les parties déclarantes.<p>Seront compris dans l’estimation la manœuvre dormante et courante, et tout ce qui, pour autant qu’on sache, se trouve à bord et fait partie de la succession.</p>
+</li>
+<li>Pour toutes les créances non comprises sub litteris b ou d, soit qu’il en existe quelque acte ou non, par la valeur du capital et des intérêts dus au jour du décès, à estimer par les parties déclarantes.</li>
+<li>Pour les autres biens meubles et les rentes perpétuelles non hypothéquées, par leur valeur au jour du décès, à fixer par les parties déclarantes.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les parties déclarantes pourront faire estimer la valeur des objets exprimés sous les lettres a, b, f et h par experts, sur le pied prescrit ci-après à l’article 16.</p>
+</content>
+</alinea>
+</article>
+<article id="article_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_12/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 12</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 12</num>
+<alinea>
+<content>
+<p>Les dettes composant le passif de la succession d’un habitant <i>du Grand-Duché</i>, se borneront, pour la liquidation du droit de succession :</p>
+<ol scl:start="1" scl:symbol="a.">
+<li>Aux dettes à charge du défunt, constatés par les actes qui en existent ou autres preuves légales, et aux intérêts dus au jour du décès.</li>
+<li>Aux dettes relatives à la profession du défunt, telles qu’elles existent au jour du décès.</li>
+<li>Aux dettes relatives à la dépense domestique, au jour du décès.</li>
+<li>Aux charges publiques, provinciales ou communales, aux impositions pour l’entretien des polders, des moulins à pomper l’eau et autres contributions de cette nature, au jour du décès.</li>
+<li>Aux frais funéraires.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="article_12bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_12bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_12bis/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 12bis</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 12bis</num>
+<alinea>
+<content>
+<p>Sont admises au passif, pour la liquidation du droit de mutation, en cas de décès d’une personne qui n’est pas réputée habitant du Grand-Duché :</p>
+<ol scl:start="1" scl:symbol="1.">
+<li>Les dettes garanties par les biens immeubles visés à l’article 1<sup>er </sup>;</li>
+<li>Les dettes contractées pour l’acquisition, l’amélioration ou la conservation des biens </li>
+<li>immeubles visés à l’article 1<sup>er </sup>;</li>
+</ol>
+<p>telles qu’elles existent au jour du décès.</p>
+</content>
+</alinea>
+</article>
+<article id="article_12ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_12ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_12ter/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 12ter</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 12ter</num>
+<alinea>
+<content>
+<p>L’admission au passif des dettes visées à l’article 12bis :</p>
+<ul scl:symbol="dash">
+<li>Ne se fait qu’au regard de l’existence d’actes ou d’autres preuves légales établissant leur existence au jour du décès ainsi que la réalité de leur lien avec les biens immeubles visés à l’article 1<sup>er </sup>;</li>
+<li>N’est pas retenue dans les cas prévus à l’alinéa 3 de l’article 56 de la loi modifiée du 23 décembre 1913 concernant la révision de la législation qui régit les impôts dont le recouvrement est attribué à l’administration de l’enregistrement et des domaines.</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’administration a la faculté d’exiger des déclarants la production d’une attestation émanant du créancier certifiant qu’une dette portée au passif existait à la charge du défunt au jour de son décès.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’attestation reste annexée à la déclaration de mutation par décès.</p>
+</content>
+</alinea>
+</article>
+<article id="article_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_13/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 13</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 13</num>
+<alinea>
+<content>
+<p>Pendant six semaines, à partir du jour de la déclaration, les parties déclarantes seront admises à rectifier les déclarations en plus ou en moins par une déclaration supplémentaire, sans qu’il puisse être exigé aucune amende.</p>
+</content>
+</alinea>
+</article>
+<article id="article_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_14/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 14</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 14</num>
+<alinea>
+<content>
+<p>Si les parties déclarantes rectifient la première déclaration par une déclaration supplémentaire, sans qu’il ait été fait des poursuites judiciaires, il ne pourra être exigé aucune amende ; mais si des poursuites judiciaires ont commencé pour avoir celé des biens, fait double emploi de quelques dettes, déclaré des dettes qui ne formaient pas partie du passif de la succession, ou pour ne pas avoir porté à la valeur déterminée par la présente loi, les possessions à l’étranger, ou les biens meubles mentionnés à l’article 11, litt. f, g et h, il sera payé pour les objets celés, pour les dettes portées au- dessus de leur juste montant, ou pour ce qui aura été insuffisamment déclaré, outre le droit de succession dû, deux fois autant à titre d’amende. Les parties déclarantes seront cependant libérées de l’amende, s’il est prouvé qu’il n’y a pas de leur faute.</p>
+</content>
+</alinea>
+</article>
+<article id="article_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_15/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 15</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 15</num>
+<alinea>
+<content>
+<p>S’il est reconnu que la valeur des immeubles situés dans le <i>Grand-Duché</i>, ou celle des biens meubles mentionnés à l’article 11, sub litteris b, c, d et e, n’a pas été déclarée conformément à la présente loi, le droit de succession ou celui de mutation dû pour l’excédent devra être acquitté, et en outre une somme égale en sus, à titre d’amende, si cet excédant surpasse d’un huitième ou davantage la valeur déclarée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il sera pareillement encouru une amende égale à la somme qui reste due pour droit de succession ou de mutation, si, dans la déclaration on a celé ou mal déclaré au préjudice du trésor public, quelque legs ou don, ou un degré de parenté.</p>
+</content>
+</alinea>
+</article>
+<article id="article_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_16/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 16</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 16</num>
+<alinea>
+<content>
+<p>Si la valeur des immeubles situés dans le <i>Grand-Duché</i> paraît n’avoir pas été déclarée conformément à la teneur de l’article 11 sub littera a, et que l’insuffisance de la déclaration ne puisse être autrement constatée, le préposé pourra requérir une expertise. Ceci pourra également avoir lieu pour des <span scl:no-break="true">créances</span> hypothécaires sur des biens situés dans <i>le Grand-Duché</i>, lorsque la valeur déclarée paraît insuffisante et que l’insuffisance ne peut être autrement constatée. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les parties déclarantes pourront faire constater par expertise, soit pour le tout, soit pour une partie, la valeur des biens meubles et immeubles situés dans <i>le Grand-Duché</i> mentionnés à l’article 11 sous les lettres a, b, f et h, avant d’en faire la déclaration. A cet effet, elles en feront la demande par exploit d’huissier au préposé chez qui la déclaration doit être faite, avec nomination de leur expert et <span scl:no-break="true">sommation</span> d’en nommer un dans la huitaine, le tout au reste conformément au contenu de cet article, dont toutes les dispositions seront applicables, à l’exception cependant, que tous les frais seront à la charge des parties déclarantes. La valeur fixée par les experts, sera portée dans la déclaration et l’effet en sera, qu’il ne pourra plus, relativement à la valeur, être fait aucune recherche de la part de <span scl:no-break="true">l’administration</span>.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_iii">
+<num scl:align="left">TITRE III</num>
+<heading scl:align="left" scl:separator=" – " scl:style-format="b">DE LA QUOTITÉ DU DROIT DE SUCCESSION APPLICATION ; DU PAIEMENT ET DES EXEMPTIONS</heading>
+<article id="article_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_27/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 18ok d’avoir supprimé les articles 17 et 20, le 3°. de l’article 24 et le 2°. de l’article 26 ?</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 18</num>
+<alinea>
+<content>
+<p>Le droit de succession est assis sur le montant net de ce que chacun recueille ou acquiert, déduction faite de la part qu’il doit supporter dans les dettes mentionnées à l’article 12.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le droit de mutation est assis sur la valeur du bien déterminée par l’article 11, sans distraction de charges autres que les dettes établies conformément à l’article 12bis ainsi qu’à l’article 12ter.</p>
+</content>
+</alinea>
+</article>
+<article id="article_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_19/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 19</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 19</num>
+<alinea>
+<content>
+<p>Pour les pensions ou rétributions périodiques, le droit de succession sera perçu sur le montant cumulé pendant tout le temps, pour lequel l’héritier, légataire ou donataire, en est chargé. Cette cumulation ne pourra cependant dans aucun cas excéder vingt fois le montant annuel. Pour les pensions <span scl:no-break="true">ou</span> rétributions viagères, le capital sera calculé sur le nombre d’années de vie, ainsi qu’il est dit à l’article 11, litt. e de la présente loi ; et si la durée est illimitée, elles seront portées en capital par vingt fois le montant annuel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans tous les cas, le droit sera prélevé de la succession, sauf la faculté de déduire sur le paiement de la pension ou rétribution périodiquement la portion du capital, proportionnée au temps d’après lequel le droit doit être calculé avec les intérêts échus à raison de cinq pour cent par an.</p>
+</content>
+</alinea>
+</article>
+<article id="article_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_21/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 21</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 21</num>
+<alinea>
+<content>
+<p>Si, là où les fidéicommis subsistent encore, quelque bien grevé de fidéicommis passe au substitué, le droit de succession sera dû suivant le degré de parenté entre le substitué et l’auteur du fidéicommis.</p>
+</content>
+</alinea>
+</article>
+<article id="article_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_22/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 22</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 22</num>
+<alinea>
+<content>
+<p>Lorsque les parties déclarantes annoncent dans leur déclaration d’être incertaines à l’égard du degré de parenté, ou de la personne qui hérite, ou de la quotité que les héritiers auraient recueillie ab intestat, il sera perçu le droit le plus élevé qui pourrait être dû suivant le degré des héritiers ou autres bénéficiés de la succession ; sans préjudice néanmoins du recours à exercer par la partie intéressée en restitution de ce qui sera postérieurement trouvé avoir été payé au-delà de ce qui était dû.</p>
+</content>
+</alinea>
+</article>
+<article id="article_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_23/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 23</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 23</num>
+<alinea>
+<content>
+<p>Le droit de succession, celui de mutation et les amendes doivent être acquittés ainsi qu’ils sont liquidés par le préposé en vertu de la loi et conformément à la déclaration. Il ne peut être fait aucune <span scl:no-break="true">modération</span> ou restitution des droits, si ce n’est dans le cas où la loi aurait été mal appliquée. Dans ce cas la partie intéressée est admise à demander restitution, et l’État est obligé de la faire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le droit de succession et celui de mutation ainsi que les amendes devront être acquittés endéans les six semaines, à compter du jour de la signification de la demande en paiement qui, après l’expiration des six semaines accordées pour la rectification de la déclaration, sera faite à la requête du préposé chargé du recouvrement des droits de succession et de mutation, par exploit d’huissier notifié au domicile élu par les parties déclarantes, et en cas de non-déclaration, à celui d’un des héritiers, légataires ou donataires, exécuteurs testamentaires, tuteurs ou curateurs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>A défaut de paiement dans le délai prescrit, il sera payé à titre d’amende, un dixième des droits dus et en outre les frais de l’exploit.</p>
+</content>
+</alinea>
+</article>
+<article id="article_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_24/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 24</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 24</num>
+<alinea>
+<content>
+<p>Est exempt du droit de succession et de mutation par décès :</p>
+<ol scl:start="1" scl:symbol="custom">
+<li scl:symbol="1°.">Tout ce qui est recueilli ou acquis, en ligne directe ;</li>
+<li scl:symbol="2°.">Tout ce qui est recueilli ou acquis entre époux ;</li>
+<li scl:symbol="4°.">Tout ce qui est recueilli ou acquis dans la succession, si la totalité de la valeur de la succession, distraction faite des dettes, ne s’élève pas au-delà de 1250 euros.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’impôt ne pourra toutefois pas excéder la moitié du montant de l’actif net qui dépasse la limite indiquée à l’alinéa qui précède.</p>
+</content>
+</alinea>
+</article>
+</title>
+<title id="titre_iv">
+<num scl:align="left">TITRE IV</num>
+<heading scl:align="left" scl:separator=" – " scl:style-format="b">DES POURSUITES ET INSTANCES, ET DES PRESCRIPTIONS</heading>
+<article id="article_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_25/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 25</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 25</num>
+<alinea>
+<content>
+<p>Jusqu’à ce qu’il soit ultérieurement statué à cet égard par la loi, l’instruction des instances à suivre, soit par les préposés pour le recouvrement des droits et le paiement des amendes, dus en vertu de la présente loi, soit par les parties intéressées pour restitution de droits et amendes perçus, et généralement en tous autres cas, se fera sans le ministère d’avoués ou procureurs, de la manière usitée et prescrite dans les différentes provinces du <i>Grand-Duché</i>, par les lois et règlements actuels, en matière d’enregistrement.</p>
+</content>
+</alinea>
+</article>
+<article id="article_26">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_26</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1/art_26/18170107</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/1817/12/27/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Article 26</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Article 26</num>
+<alinea>
+<content>
+<p>Il y aura prescription :</p>
+<ol scl:start="1" scl:symbol="custom">
+<li scl:symbol="1°.">Pour la demande du droit de succession, de celui de mutation et des amendes, à défaut de déclaration, après cinq années, à compter du jour où les délais fixés pour la déclaration par l’article 9, seront expirés.</li>
+<li scl:symbol="3°.">Pour la demande d’expertise d’immeubles situés dans <i>le Grand-Duché</i> et des créances hypothécaires, ainsi que pour la demande du droit de succession, de celui de mutation et des amendes à cause d’insuffisance dans la déclaration des biens immeubles situés dans <i>le Grand-Duché</i> ou des objets mentionnés à l’article 11 sub litteris b, c, d et e, après deux années, à compter du jour de la déclaration.</li>
+<li scl:symbol="4°.">Pour la demande en restitution des droits et amendes payés, après deux années à compter du jour du paiement.</li>
+<li scl:symbol="5°.">Pour le recouvrement de l’amende encourue, faute de paiement dans le délai fixé par l’article 23, après une année, à compter du jour de la signification de la demande en paiement, faite par le préposé chargé du recouvrement des droits de succession et de mutation. </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les prescriptions seront suspendues par des poursuites judiciaires commencées avant l’expiration des délais ; mais elles seront acquises irrévocablement, si les poursuites commencées sont discontinuées pendant une année et que le délai de la prescription soit expiré.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+</title>
+</body>
+</act>
+</akomaNtoso>

@@ -1,0 +1,2334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#2006A3150A">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2006-09-21" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MCMT"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2006-09-21" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2006-09-21" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+                        <scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo</scl:jolux>
+                        <scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MCLAMO</scl:jolux>
+                        <scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+                        <scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+                        <scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+                        <scl:jolux scl:name="dateDocument">2006-09-21</scl:jolux>
+                        <scl:jolux scl:name="publicationDate">2006-10-02</scl:jolux>
+                        <scl:jolux scl:name="historicalLegalId">2006A3150A</scl:jolux>
+                        <scl:jolux scl:name="dateEntryInForce">2006-10-05</scl:jolux>
+                        <scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2006/175</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/864</scl:jolux>
+                        <scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/688</scl:jolux>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+                        <scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+                    </scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 01/08/2024 : Loi du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil.</scl:jolux>
+<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/PL/20030244</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1998/09/08/n4/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1988/12/13/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1967/12/04/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1979/02/25/n3/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/1998/08/03/n4/jo</scl:jolux>
+<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/loi/1982/06/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/loi/1987/08/27/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/tc/1987/08/27/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rect/1992/12/28/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/loi/1992/03/17/n2/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/loi/1955/02/14/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/tc/1992/11/16/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/amin/1955/02/17/n1/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2006/175/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">3150</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2006-09-21-n1-jo-fr-xml.xml</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2006/175/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">3150</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2006-175-fr-pdf.pdf</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2006-09-21" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2008-11-01" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+<eventRef date="2015-10-03" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+<eventRef date="2015-11-01" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2017-01-01" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2017-09-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2018-09-18" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2020-01-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2024-08-01" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm5" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2015/08/05/n3/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2015/08/05/n3/jo"/>
+<destination href="#art_27"/>
+</textualMod>
+<textualMod id="pm8" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2017/08/02/a734/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm9" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2018/08/31/a823/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm10" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2019/12/04/a907/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm11" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm12" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm13" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm14" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm15" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm16" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm17" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm18" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_5"/>
+</textualMod>
+<textualMod id="pm19" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_6_20240801"/>
+</textualMod>
+<textualMod id="pm20" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm21" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_11"/>
+</textualMod>
+<textualMod id="pm22" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_12"/>
+</textualMod>
+<textualMod id="pm23" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_12"/>
+</textualMod>
+<textualMod id="pm24" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination href="#art_19"/>
+</textualMod>
+<textualMod id="pm25" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2024/07/23/a311/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2006/09/21/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2019/12/04/a907/jo" id="rp2" showAs="Loi du 4 décembre 2019 portant création de l’Office national de l’accueil (ONA) et portant modification de : 1° la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° la loi modifiée du 16 décembre 2008 concernant l’intégration des étrangers au Grand-Duché de Luxembourg ; 3° la loi modifiée du 18 décembre 2015 relative à l’accueil des demandeurs de protection internationale et de protection temporaire. "/>
+<passiveRef href="/eli/etat/leg/loi/2018/08/31/a823/jo" id="rp3" showAs="Loi du 31 août 2018 1° du Code du travail ; 2° de la loi modifiée du 25 février 1979 concernant l'aide au logement ; 3° de la loi modifiée du 19 juillet 1991 portant création d'un Service de la formation des adultes et donnant un statut légal au Centre de langues Luxembourg ; 4° de la loi modifiée du 6 janvier 1996 sur la coopération au développement ; 5° de la loi modifiée du 31 mai 1999 portant création d'un fonds national de la recherche dans le secteur public ; 6° de la loi modifiée du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil ; 7° de la loi du 12 décembre 2016 portant création des sociétés d'impact sociétal."/>
+<passiveRef href="/eli/etat/leg/loi/2017/08/02/a734/jo" id="rp4" showAs="Loi du 2 août 2017 portant modification de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil."/>
+<passiveRef href="/eli/etat/leg/loi/2016/12/23/n11/jo" id="rp5" showAs="Loi du 23 décembre 2016 portant mise en oeuvre de la réforme fiscale 2017 et portant modification  - de la loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu;  - de la loi modifiée du 16 octobre 1934 concernant l'mpôt sur la fortune;  - de la loi modifiée du 1er décembre 1936 concernant l'impôt commercial;  - de la loi modifiée du 24 décembre 1996 portant introduction d'une bonification d'impôt sur le revenu en cas d'embauchage de chômeurs;  - de la loi d'adaptation fiscale modifiée du 16 octobre 1934 («Steueranpassungsgesetz);  - de la loi générale des impôts modifiée du 22 mai 1931 («Abgabenordnung»);  - de la loi rectificative du 19 décembre 2014 concernant le budget des recettes et des dépenses de l'Etat pour l'exercice 2015;  - de la loi modifiée du 23 décembre 2005 portant introduction d'une retenue à la source libératoire sur certains intérêts produits par l'épargne mobilière;  - de la loi du 19 décembre 2008 ayant pour objet la coopération interadministrative et judiciaire et le renforcement des moyens de l'Administration des contributions directes, de l'Administration de l'enregistrement et des domaines, de l'Administration des douanes et accises et portant modification de  · la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; · la loi générale des impôts («Abgabenordnung»); · la loi modifiée du 17 avril 1964 portant réorganisation de l'Administration des contributions directes; · la loi modifiée du 20 mars 1970 portant réorganisation de l'Administration de l'enregistrement et des domaines; · la loi modifiée du 27 novembre 1933 concernant le recouvrement des contributions directes et des cotisations d'assurance sociale; - de la loi du 30 juillet 1983 portant création d'une taxe sur le loto; - de la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; - du Code pénal; - de la loi modifiée du 8 août 2000 sur l'entraide judiciaire internationale en matière pénale; - de la loi du 27 août 1997 portant approbation du Protocole additionnel à la Convention européenne d'entraide judiciaire en matière pénale, signé à Strasbourg, le 17 mars 1978; - de la loi du 27 juin 2016 concernant le soutien au développement durable; - de la loi modifiée du 22 frimaire an VII organique de l'enregistrement; - de la loi modifiée du 13 brumaire an VII organique du timbre; - de la loi modifiée du 27 décembre 1817 sur le droit de succession; - de la loi modifiée du 23 décembre 1913 concernant la révision de la législation qui régit les impôts dont le recouvrement est attribué à l'administration de l'enregistrement et des domaines; - de la loi modifiée du 7 août 1920, portant majoration des droits d'enregistrement, de timbre, de succession, etc.; - de la loi modifiée du 28 janvier 1948 tendant à assurer la juste et exacte perception des droits d'enregistrement et de succession; - de la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d'enregistrement, de succession et de timbre; - de l'ordonnance royale grand-ducale du 23 septembre 1841 sur le timbre, l'enregistrement et les droits de succession; - de la loi modifiée du 19 juin 2013 relative à l'identification des personnes physiques; - de la loi modifiée du 25 février 1979 concernant l'aide au logement; - de la loi modifiée du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil."/>
+<passiveRef href="/eli/etat/leg/loi/2015/08/05/n3/jo" id="rp6" showAs="Loi du 5 août 2015 modifiant la loi modifiée du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil."/>
+<passiveRef href="/eli/etat/leg/loi/2015/09/02/n1/jo" id="rp7" showAs="Loi du 2 septembre 2015 portant abolition des districts, modifiant &#10;1. la loi communale modifiée du 13 décembre 1988; &#10;2. le Code pénal; &#10;3. la loi du 28 décembre 1883 concernant les associations syndicales pour l'exécution de travaux de drainage, d'irrigation, etc.; &#10;4. la loi du 4 mars 1896, concernant l'expropriation par zône pour cause d'utilité publique; &#10;5. la loi modifiée du 14 février 1955 concernant la réglementation de la circulation sur toutes les voies publiques; &#10;6. la loi modifiée du 28 juin 1976 portant réglementation de la pêche dans les eaux intérieures; &#10;7. la loi du 8 décembre 1981 sur les réquisitions en cas de conflit armé, de crise internationale grave ou de catastrophe; &#10;8. la loi modifiée du 24 décembre 1985 fixant le statut général des fonctionnaires communaux; &#10;9. la loi modifiée du 10 août 1993 relative aux parcs naturels; &#10;10. la loi modifiée du 31 mai 1999 portant création d'un corps de police grand-ducale et d'une inspection générale de la police; &#10;11. la loi du 23 février 2001 concernant les syndicats de communes; &#10;12. la loi électorale modifiée du 18 février 2003; &#10;13. la loi modifiée du 19 janvier 2004 concernant la protection de la nature et des re"/>
+<passiveRef href="/eli/etat/leg/loi/2008/10/22/n1/jo" id="rp8" showAs="Loi du 22 octobre 2008 portant: 1. promotion de l'habitat et création d'un pacte logement avec les communes, 2. sur le droit d'emphytéose et le droit de superficie, 3. modification a) de la loi modifiée du 16 octobre 1934 concernant l'évaluation des biens et valeurs; b) de la loi modifiée du 1er décembre 1936 sur l'impôt foncier; c) de la loi modifiée du 25 février 1979 concernant l'aide au logement; d) de la loi modifiée du 10 décembre 1998 portant création de l'établissement public dénommé «Fonds d'assainissement de la Cité Syrdall»; e) de la loi modifiée du 30 juillet 2002 déterminant différentes mesures fiscales destinées à encourager la mise sur le marché et l'acquisition de terrains à bâtir et d'immeubles d'habitation; f) de la loi modifiée du 19 juillet 2004 concernant l'aménagement communal et le développement urbain; g) de la loi du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil."/>
+<passiveRef href="/eli/etat/leg/loi/2024/07/23/a311/jo" id="rp9" showAs="Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil. "/>
+</references>
+<notes scl:border="50" scl:delim-left="(" scl:delim-right=")" scl:page-footer="true" scl:type="document" source="#eli-etat-leg-loi-2006-09-21-n7-consolide-2015-10-03-fr-xml">
+<note id="note_0_0_0">
+<p>En vertu de l'article XV. de la loi du 2 septembre 2015 ( <ref href="https://legilux.public.lu/eli/etat/leg/loi/2015/09/02/n1/jo" id="8a4ebc2c-0a74-449c-ac07-84a0deb57750">Mémorial A-174 du 9 septembre 2015</ref>), il y a lieu de remplacer l'article 7, paragraphe (5), alinéa 3 de la loi du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil. Or, le paragraphe 5 de ladite loi n'a qu'un seul alinéa. </p>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp6">
+<note id="M4" marker="4" refersTo="pm5" title="A|2015-09-01|2015-08-05|L|169">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/08/05/n3/jo">Loi du 5 août 2015 modifiant la loi modifiée du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp6">
+<note id="M5" marker="5" refersTo="pm6" title="A|2015-09-01|2015-08-05|L|169">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2015/08/05/n3/jo">Loi du 5 août 2015 modifiant la loi modifiée du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp4">
+<note id="M7" marker="7" refersTo="pm8" title="A|2017-08-16|2017-08-02|L|734">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/08/02/a734/jo">Loi du 2 août 2017 portant modification de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M8" marker="8" refersTo="pm9" title="A|2018-09-14|2018-08-31|L|823">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2018/08/31/a823/jo">Loi du 31 août 2018 1° du Code du travail ; 2° de la loi modifiée du 25 février 1979 concernant l'aide au logement ; 3° de la loi modifiée du 19 juillet 1991 portant création d'un Service de la formation des adultes et donnant un statut légal au Centre de langues Luxembourg ; 4° de la loi modifiée du 6 janvier 1996 sur la coopération au développement ; 5° de la loi modifiée du 31 mai 1999 portant création d'un fonds national de la recherche dans le secteur public ; 6° de la loi modifiée du 21 septembre 2006 sur le bail à usage d'habitation et modifiant certaines dispositions du Code civil ; 7° de la loi du 12 décembre 2016 portant création des sociétés d'impact sociétal.</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M9" marker="9" refersTo="pm10" title="A|2019-12-28|2019-12-04|L|907">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2019/12/04/a907/jo">Loi du 4 décembre 2019 portant création de l’Office national de l’accueil (ONA) et portant modification de : 1° la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° la loi modifiée du 16 décembre 2008 concernant l’intégration des étrangers au Grand-Duché de Luxembourg ; 3° la loi modifiée du 18 décembre 2015 relative à l’accueil des demandeurs de protection internationale et de protection temporaire.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M10" marker="10" refersTo="pm11" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M11" marker="11" refersTo="pm12" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M12" marker="12" refersTo="pm13" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M13" marker="13" refersTo="pm14" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M14" marker="14" refersTo="pm15" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M15" marker="15" refersTo="pm16" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M16" marker="16" refersTo="pm17" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M17" marker="17" refersTo="pm18" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M18" marker="18" refersTo="pm19" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M19" marker="19" refersTo="pm20" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M20" marker="20" refersTo="pm21" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M21" marker="21" refersTo="pm22" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M22" marker="22" refersTo="pm23" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M23" marker="23" refersTo="pm24" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp9">
+<note id="M24" marker="24" refersTo="pm25" title="A|2024-07-25|2024-07-23|L|311">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2024/07/23/a311/jo">Loi du 23 juillet 2024 portant modification : 1° de la loi modifiée du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil ; 2° de l’article 1714 du Code civil.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 01/08/2024 : Loi du 21 septembre 2006 sur le bail à usage d’habitation et modifiant certaines dispositions du Code civil.</p>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_ier">
+<num>Chapitre I<sup>er</sup>.</num>
+<heading scl:align="center" scl:separator=" – " scl:style-format="b"> Dispositions générales</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_1er/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les baux à usage d’habitation sont régis par les articles 1713 à 1762-2 du <ref href="/eli/etat/leg/code/civil" id="51809786-0ef3-4a99-b4b3-8b4978d6f5ae">Code civil</ref> sous réserve des règles particulières instituées par la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sous réserve des dispositions des articles 16 à 18, la présente loi s’applique exclusivement à la location<del>
+<mod class="mod-start" for="#pm11"/>, par un contrat de bail écrit ou verbal</del>
+<mod class="mod-end" for="#pm11"/>
+<noteRef href="#M10" marker="10"/>, de logements à usage d’habitation à des personnes physiques, quelle que soit l’affectation stipulée dans le contrat de bail, sauf opposition justifiée par le bailleur en cas de réaffectation par le locataire en cours de contrat.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>
+<mod class="mod-start" for="#pm5"/>(3)</num>
+<alinea>
+<content>
+<p>La loi ne s’applique pas: </p>
+<ol scl:symbol="a)">
+<li>aux immeubles affectés à un usage commercial, administratif, industriel, artisanal ou affectés à l’exercice d’une profession libérale;</li>
+<li>aux résidences secondaires;</li>
+<li>aux locaux ne formant pas l’accessoire du logement;</li>
+<li>aux chambres d’hôtel;<mod class="mod-start" for="#pm10"/>
+</li>
+<li>aux structures d’hébergement réservées au logement provisoire de demandeurs de protection internationale, de réfugiés et de personnes pouvant bénéficier de la protection subsidiaire visés par la <ref href="/eli/etat/leg/loi/2015/12/18/n15/jo" id="7753aecc-82e1-4382-8001-76ef14578fed" scl:verify="true">loi du 18 décembre 2015</ref> relative à la protection internationale et à la protection temporaire ;<mod class="mod-end" for="#pm10"/>
+<noteRef href="#M9" marker="9"/>
+</li>
+<li>aux logements meublés ou non-meublés dans des structures d’hébergement spéciales telles que maisons de retraite, centres intégrés pour personnes âgées, centres de gériatrie, centres pour personnes handicapées, et notamment les logements meublés ou non-meublés dans les structures d’hébergement tombant sous la <ref href="/eli/etat/leg/loi/1998/09/08/n4">loi modifiée du 8 septembre 1998</ref> réglant les relations entre l’Etat et les organismes œuvrant dans les domaines social, familial et thérapeutique;<mod class="mod-start" for="#pm9"/>
+</li>
+<li>aux logements meublés ou non-meublés mis à disposition de personnes physiques à titre d’aide sociale par un promoteur public au sens de l’article 16, alinéa 1<sup>er</sup> , de la <ref href="/eli/etat/leg/loi/1979/02/25/n3/jo" id="0a898998-9f78-4c45-9870-f5f9023110ae">loi modifiée du 25 février 1979</ref> concernant l’aide au logement, un office social, une association sans but lucratif, une fondation ou une socié té d’impact socié tal régie par la <ref href="/eli/etat/leg/loi/2016/12/12/n1/jo" id="c12ce5ad-3600-4269-bca0-df2f8f7a1eca">loi modifiée du 12 décembre 2016</ref> portant création des sociétés d’impact socié tal et dont le capital social est constitué à 100 pour cent de parts d’impact, œuvrant dans le domaine du logement.<mod class="mod-end" for="#pm9"/>
+<noteRef href="#M8" marker="8"/>
+</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutefois, pour les immeubles visés au point a), les dispositions prévues par le chapitre V concernant le règlement des litiges et celles prévues par le chapitre VIII concernant les dispositions finales, abrogatoires et transitoires sont applicables. Pour les structures d’hébergement et logements visés aux points e), et g), les dispositions prévues par le chapitre V concernant le règlement des litiges sont applicables.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les articles 3 à 11 et 15 ne s’appliquent pas aux logements locatifs prévus par les articles 27 à 30ter de la <ref href="/eli/etat/leg/loi/1979/02/25/n3">loi modifiée du 25 février 1979</ref> concernant l’aide au logement. Toutefois, ils sont applicables aux logements locatifs désignés à l’article 28, alinéa 4, de la <ref href="/eli/etat/leg/loi/1979/02/25/n3/jo" id="acb6102b-1e2d-478e-ad74-6f939f476bac">loi modifiée du 25 février 1979</ref> concernant l’aide au logement.<mod class="mod-end" for="#pm5"/>
+<noteRef href="#M4" marker="4"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Toute cession de bail portant sur des baux à usage d’habitation n’est interdite qu’en cas de stipulation contractuelle expresse dans le contrat de bail.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dispositions des articles 3 à 11 s’appliquent également aux relations entre locataires principaux et sous<span scl:no-break="true">-</span>locataires ou cessionnaires.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_ibis">
+<num>
+<mod class="mod-start" for="#pm12"/>Chapitre I<i>bis </i>
+</num>
+<heading scl:style-format="b"> De la colocation</heading>
+<article id="art_2bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2bis/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2<i>bis</i>.</num>
+<alinea>
+<content>
+<p>La colocation désigne la location d’un même logement par plusieurs locataires, appelés colocataires, qui optent, avec l’accord exprès du bailleur, pour l’application des règles spécifiques de la colocation en signant au plus tard à la date de signature du contrat de bail un pacte de colocation tel que prévu par l’article 2<i>ter</i>, et est formalisée par la conclusion par écrit d’un contrat de bail unique entre les locataires et le bailleur, dans lequel la date de signature dudit pacte est reprise. Le logement pris en location comprend au minimum une pièce d’habitation ou un local sanitaire qui soit commun à tous les colocataires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La location consentie exclusivement à des époux ou à des partenaires liés par un partenariat tel que prévu par la <ref href="/eli/etat/leg/loi/2004/07/09/n3/jo" id="a05e7e2b-e7c0-4d30-a7c3-ae607a195361" scl:verify="true">loi modifiée du 9 juillet 2004</ref> relative aux effets légaux de certains partenariats n’est pas à considérer comme une colocation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les dispositions prévues par le présent chapitre sont d’ordre public.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Une colocation peut également être conclue si le bailleur habite lui-même dans l’immeuble dont une partie est mise en location via un contrat de bail. Dans cette hypothèse, le bailleur occupant, qui n’est pas lui-même un colocataire, indique dans le contrat de bail le montant de sa part dans les frais de la vie en colocation.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2ter/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2ter.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2<i>ter</i>.</num>
+<paragraph id="paragraph_53">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les colocataires établissent par écrit un pacte de colocation afin de formaliser les aspects de la vie en communauté et les modalités pratiques de cette forme de location.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_54">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le pacte prévoit des dispositions réglant au minimum les points suivants :</p>
+<ol scl:space-before="-2" scl:start="1" scl:symbol="1°">
+<li>la répartition du loyer entre colocataires lorsque celle-ci n’est pas prévue par le contrat de bail ;</li>
+<li> la répartition des charges communes entre colocataires ;</li>
+<li> l’inventaire des biens meubles précisant leur propriétaire ;</li>
+<li> les modalités de conclusion des contrats d’approvisionnement et d’assurance relatifs au bien loué ;</li>
+<li> les modalités d’arrivée, de départ et de remplacement d’un colocataire, y compris la forme de notification du congé aux autres colocataires ;</li>
+<li> les conditions de constitution et de récupération de la garantie locative ;</li>
+<li> les modalités de résolution des conflits entre les colocataires.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le pacte prévoit en outre l’obligation de procéder à un état des lieux intermédiaire lors du départ anticipé d’un colocataire afin de déterminer les responsabilités de chacun et de ventiler les frais de réparation locative.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_55">
+<num>(3)</num>
+<alinea>
+<content>
+<p>En cas de départ anticipé d’un colocataire, une adaptation du pacte est signée par les autres colocataires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>À l’arrivée d’un nouveau colocataire, celui-ci signe un avenant au pacte de colocation conjointement avec les autres colocataires.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_56">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les obligations découlant du contrat de bail pour lequel ledit pacte ne prévoit pas leur répartition entre les différents colocataires sont à répartir à parts égales entre les différents colocataires.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2quater">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2quater</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2quater/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2quater.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2<i>quater</i>.</num>
+<alinea>
+<content>
+<p>Les colocataires sont tenus solidairement vis-à-vis du bailleur des obligations qui résultent du contrat de bail.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2quinquies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2quinquies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2quinquies/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2quinquies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2<i>quinquies</i>.</num>
+<paragraph id="paragraph_57">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Lorsque l’ensemble des colocataires mettent fin au bail en même temps, le congé est signé par chacun d’entre eux et notifié au bailleur par lettre recommandée avec avis de réception. Le délai de résiliation est de trois mois.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_58">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Lorsqu’un colocataire souhaite se libérer de ses obligations avant le terme du bail, il le notifie simultanément au bailleur et à ses colocataires moyennant un préavis de trois mois. La notification au bailleur est faite par lettre recommandée avec avis de réception.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ce colocataire est tenu, avant l’expiration de son préavis, de chercher un colocataire remplaçant, selon les modalités définies dans le pacte de colocation visé à l’article 2<i>ter</i>. Les autres colocataires ou le bailleur peuvent également proposer un candidat remplaçant. À défaut d’avoir présenté un candidat remplaçant, le colocataire sortant doit pouvoir démontrer avoir effectué une recherche active et suffisante en vue de trouver un nouveau colocataire. La publication dans la quinzaine du début du préavis d’une annonce en vue de la recherche d’un colocataire remplaçant dans deux médias publiant des offres immobilières relatives au marché luxembourgeois est à considérer comme une recherche active et suffisante au sens du présent article.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_59">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Lorsque l’ensemble des parties marquent leur accord sur un nouveau colocataire, elles signent conjointement avec ce dernier un avenant au contrat de bail initial.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_60">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Lorsqu’au moins la moitié des colocataires signataires du bail ont donné leur congé dans un intervalle de trois mois, le bailleur peut mettre fin au contrat de bail dans un délai d’un mois à partir de la notification du dernier congé d’un colocataire concerné, et ce moyennant un délai de résiliation de trois mois, par lettre recommandée avec avis de réception, adressée à chaque colocataire.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2sexies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2sexies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_2sexies/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2sexies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2<i>sexies</i>.</num>
+<alinea>
+<content>
+<p>Le colocataire sortant est délié pour le futur de ses obligations résultant du contrat de bail ou du pacte de colocation :</p>
+<ol scl:space-before="-2" scl:start="1" scl:symbol="1°">
+<li>à la date de signature de l’avenant visé à l’article 2<i>quinquies</i>, paragraphe 3 ;</li>
+<li> à la date d’expiration du préavis de trois mois sous condition qu’il a démontré avoir effectué une recherche active et suffisante au sens de l’article 2<i>quinquies</i>, paragraphe 2, alinéa 2 ;</li>
+<li> ou au plus tard à l’expiration d’un délai de trois mois après la date d’expiration du préavis.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:space-after="-10">L’engagement de la personne qui s’est portée initialement caution pour le colocataire sortant s’éteint à la même date.<mod class="mod-end" for="#pm12"/>
+<noteRef href="#M11" marker="11"/>
+</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_ii">
+<num>Chapitre II.</num>
+<heading scl:align="center" scl:separator=" – " scl:style-format="b"> De la fixation du loyer et des charges</heading>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_3/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<paragraph id="paragraph_4">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La location d’un logement à usage d’habitation ne peut rapporter au bailleur un revenu annuel dépassant un taux de 5 % du capital investi dans le logement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm13"/>Le montant de la somme des loyers perçus pour un logement de l’ensemble des colocataires conformément au chapitre I<i>bis</i> ne peut être supérieur au montant du loyer maximal déterminé conformément à l’alinéa 1<sup>er</sup>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le montant de la somme des loyers payés par les locataires dans le cadre d’une location à baux multiples d’un immeuble ou d’une partie d’immeuble comprenant deux ou plusieurs chambres ou logements loués individuellement à des locataires indépendants les uns des autres ne peut être supérieur à la limite du loyer annuel maximal prévu à l’alinéa 1<sup>er</sup>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans le cas d’un logement meublé, le bailleur peut demander chaque mois, en plus du loyer proprement dit, un supplément de loyer pour le mobilier. Ce supplément de loyer, qui est indiqué séparément du loyer dans le contrat de bail, ne peut dépasser 1,5 pour cent du montant total des factures des meubles garnissant le logement loué. Uniquement les meubles dont les factures datent de moins de dix ans au jour de la conclusion du bail ou de l’adaptation du loyer peuvent être pris en considération pour ce supplément.<mod class="mod-end" for="#pm13"/>
+<noteRef href="#M12" marker="12"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(2)</num>
+<alinea>
+<content>
+<p>A défaut d’accord entre parties, le capital investi est celui engagé:</p>
+<ul scl:space-item="3" scl:space-num="5" scl:symbol="custom">
+<li scl:symbol="–">dans la construction initiale du logement et de ses dépendances telles que garages, emplacements de stationnement, jardin, grenier et cave, qui sont mis à la disposition du locataire et dont le coût est établi au jour de leur achèvement;</li>
+<li scl:symbol="–">dans les travaux d’amélioration, dont le coût est établi au jour de l’achèvement des travaux, lesquels ne peuvent comporter des réparations locatives ou de menu entretien;</li>
+<li scl:symbol="–">dans le terrain sur lequel l’habitation est sise, dont le coût est fixé à celui du jour de son acquisition; le prix du terrain peut toutefois également être fixé forfaitairement par le bailleur à 20 % du capital investi.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Ce capital investi est réévalué au jour de la conclusion du bail ou au jour de l’adaptation du loyer par multiplication avec le coefficient correspondant du tableau des coefficients de réévaluation prévus par l’article 102, alinéa 6, de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="8d836150-6b4a-4ba2-84c0-35b45a309bf1">loi modifiée du 4 décembre 1967</ref> concernant l’impôt sur le revenu.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si la construction du logement remonte à quinze ans ou plus, le capital investi réévalué déterminé d’après les modalités formulées ci-avant, à l’exception du prix du terrain sur lequel l’habitation est construite, frais de l’acte compris, qui ne sont pas pris en compte pour le calcul de la décote, est diminué de 2 % par période de deux années supplémentaires, à moins que le bailleur ne prouve avoir investi des frais équivalents dans l’entretien ou la réparation du logement. Ces frais sont également réévalués selon les modalités prévues par l’alinéa 1<sup>er</sup>. Au cas où les frais investis n’atteignent pas le montant correspondant de la décote, ils sont compensés avec la décote. Au cas où ils excèdent la décote opérée, ils sont reportés sur les décotes ultérieures.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Dans le cas où le capital investi défini ci-avant ne peut pas être déterminé sur base de pièces justificatives et s’il y a désaccord entre le bailleur et le locataire sur le montant du loyer, la partie la plus diligente chargera un expert assermenté en bâtiment qui procédera à l’évaluation du capital investi, réévalué et décoté.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutefois, en cas d’aliénation à titre onéreux, le prix d’acquisition indiqué dans l’acte authentique translatif de propriété, et les frais de l’acte, sont présumés correspondre au jour de la signature de l’acte au capital investi, réévalué et décoté.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans le cas où la prédite évaluation ou la présomption prévue à l’alinéa 2 est contestée par la partie qui aura prouvé qu’elle ne saurait manifestement correspondre à la valeur marchande comparable, sans pour autant que cette partie ne puisse établir le véritable capital investi, la commission des loyers, saisie conformément à l’article 8, détermine le capital investi compte tenu de la valeur du terrain, du volume de l’immeuble loué, de la surface louée, de la qualité de l’équipement, de l’état d’entretien ou de réparation du logement, et de la finition du logement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>
+<mod class="mod-start" for="#pm14"/>(5)</num>
+<alinea>
+<content>
+<p>Le loyer ou le supplément de loyer pour le mobilier de tout logement à usage d’habitation, fixés en vertu des dispositions qui précèdent du présent article, soit de l’accord des parties, soit par la commission des loyers, soit judiciairement, ne peuvent faire l’objet d’une adaptation que tous les deux ans.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette période de deux ans ne prend pas fin par suite d’un changement de bailleur. Elle prend fin de plein droit s’il y a changement de locataire sans préjudice des dispositions de l’article 13, alinéa 1<sup>er</sup>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La hausse du loyer ne peut pas dépasser 10 pour cent. Si, en cas d’une augmentation du loyer de plus de 10 pour cent, le locataire adresse une réclamation par lettre recommandée au bailleur, la part du loyer dépassant la hausse de 10 pour cent n’est pas due à partir du premier terme suivant la date de cette réclamation.<mod class="mod-end" for="#pm14"/>
+<noteRef href="#M13" marker="13"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_4/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm15"/>Art. 4.</num>
+<alinea>
+<content>
+<p>Dans les cas où le bailleur offre un ou plusieurs services au locataire, le bailleur opère dans le contrat de bail une distinction entre le montant du loyer mensuel et le montant du coût mensuel de chaque autre service proposé au locataire.<mod class="mod-end" for="#pm15"/>
+<noteRef href="#M14" marker="14"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_5/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<paragraph id="paragraph_9">
+<num>
+<mod class="mod-start" for="#pm16"/>(1)</num>
+<alinea>
+<content>
+<p>La conclusion du bail ne peut être liée au paiement de sommes autres que le loyer. Sous peine de nullité, tout bail est établi par écrit, qui stipule au moins :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>l’identité complète de toutes les parties contractantes ;</li>
+<li> la date de prise d’effet du bail ;</li>
+<li> la désignation de toutes les pièces et parties d’immeuble couvrant l’objet du bail, ainsi que l’adresse et la référence cadastrale de l’objet du bail ;</li>
+<li> le montant du loyer sans les charges ;</li>
+<li> le montant des acomptes sur les charges ou du forfait pour charges éventuelles ;</li>
+<li> le supplément de loyer pour le mobilier, en cas d’un logement meublé ;</li>
+<li> le montant de la garantie locative éventuellement stipulée ;</li>
+<li> l’indication que les parties contractantes ont la possibilité de saisir la commission des loyers conformément à l’article 8 en cas de litige sur la fixation du loyer.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas d’intervention d’un agent immobilier ou d’un autre tiers dans la location d’un logement à usage d’habitation, les frais et honoraires de ces personnes sont partagés par moitié entre le bailleur et le locataire.<mod class="mod-end" for="#pm16"/>
+<noteRef href="#M15" marker="15"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Il est toutefois permis aux parties de convenir d’une garantie locative, qui ne pourra dépasser <mod class="mod-start" for="#pm17"/>deux<mod class="mod-end" for="#pm17"/>
+<noteRef href="#M16" marker="16"/> mois de loyer, pour garantir le paiement du loyer ou des autres obligations découlant du contrat de bail.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de stipulation d’une garantie locative, un constat écrit et contradictoire des lieux doit être signé au plus tard le jour de l’entrée en jouissance des lieux par le locataire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le bailleur ne peut refuser, même après la conclusion du bail, une garantie locative sous forme d’une garantie bancaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_61">
+<num>
+<mod class="mod-start" for="#pm18"/>(2<i>bis</i>)</num>
+<alinea>
+<content>
+<p>Lorsque à la fin du bail, l’état des lieux de sortie est conforme à l’état des lieux d’entrée, sauf usure et vétusté normale, et que le bailleur n’a pas de revendication en matière d’arriérés de loyer ou de dégâts locatifs, la moitié de la garantie locative est à restituer dans un délai maximal d’un mois à partir de la remise en mains propres, ou par lettre recommandée avec avis de réception, des clés au bailleur ou à son mandataire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La régularisation définitive et la restitution du solde de la garantie locative, déduction faite, le cas échéant, des sommes restant encore dues au bailleur, pour autant qu’elles sont dûment justifiées, sont effectuées au plus tard dans le mois qui suit soit la réception des décomptes relatifs aux charges locatives que le bailleur est tenu de demander auprès des différents services et administrations au plus tard un mois après la fin du bail soit l’approbation définitive des comptes annuels de l’immeuble lors de la prochaine assemblée générale des copropriétaires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Peu importe le type de logement mis en location, si l’état des lieux d’entrée n’est pas conforme à l’état des lieux de sortie, sauf usure ou vétusté normale, ou en cas d’une contestation du bailleur, ce dernier peut retenir de la garantie locative non seulement les sommes qui lui restent encore dues mais également toute somme dont celui-ci pourrait être tenu, en lieu et place du locataire, sous réserve qu’elle soit dûment justifiée par le bailleur endéans le prédit délai maximal d’un mois par des pièces à l’appui.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>À défaut de restitution dans les délais prévus et à partir d’une mise en demeure par lettre recommandée avec avis de réception adressée par le locataire au bailleur ou à son mandataire, la partie du dépôt de garantie restant due au locataire est majorée d’une somme égale à 10 pour cent du loyer mensuel en principal, pour chaque période mensuelle commencée en retard. Cette majoration n’est pas due lorsque le défaut de restitution dans les délais résulte d’un motif imputable au locataire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de transfert de propriété d’un immeuble loué en tout ou en partie, les garanties sont transférées de plein droit au nouveau propriétaire. Toute convention contraire n’a d’effet qu’entre les parties au transfert de propriété.<mod class="mod-end" for="#pm18"/>
+<noteRef href="#M17" marker="17"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le bailleur ne peut mettre à charge du locataire que les montants qu’il justifie avoir déboursés lui-même pour le compte du locataire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ne peuvent être mis à charge du locataire que les frais exposés pour la consommation d’énergie, pour l’entretien courant du logement et des parties communes, pour les menues réparations ainsi que les taxes liées à l’usage du logement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le bailleur peut exiger le versement d’acomptes appropriés sur ces frais. Ces acomptes peuvent être adaptés aux frais réellement exposés pour compte du locataire au cours des exercices antérieurs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les charges communes à plusieurs logements sont réparties annuellement selon un mode de computation à convenir entre les parties en cause.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si les frais mis en compte résultent d’un décompte d’un immeuble soumis au statut de la copropriété approuvé en assemblée générale conformément à la législation relative au statut de la copropriété des immeubles bâtis, les positions de ce décompte à charge du locataire par application de la présente loi sont présumées justifiées et échues. La preuve contraire est admise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de demande du locataire, le bailleur est tenu de lui communiquer une copie des extraits du règlement de copropriété concernant la destination de l’immeuble, la jouissance et l’usage des parties privatives et communes et précisant la quote-part afférente du lot loué dans chacune des catégories de charges.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les acomptes sur charges peuvent également être fixés forfaitairement par les parties si ce forfait correspond à la consommation et aux charges normales du locataire. Il pourra être adapté au cours du bail.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il est permis aux parties de convenir au cours du bail de modifier le régime des acomptes soit vers un régime forfaitaire soit du régime forfaitaire à un régime par acomptes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Les clauses de valeur conventionnelles qui diffèrent du régime prévu par la présente loi perdront leur effet à partir du premier terme suivant la date d’une réclamation adressée par lettre recommandée au bailleur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutes autres stipulations inscrites dans les contrats de bail et destinées à priver d’effet une disposition de la présente loi sont nulles de plein droit.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6_20240801" style="del">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_6/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm19"/>
+<del>Art. 6.</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>Les articles 3 à 5 ne s’appliquent pas aux logements avec confort moderne, non-standard:</del> </p>
+<ol scl:space-item="3" scl:symbol="a.">
+<li style="del">
+<del>dont le loyer mensuel est supérieur à 269 euros, valeur au nombre cent de l’indice pondéré du coût de la vie au 1<sup>er</sup> janvier 1948; ou</del>
+</li>
+<li style="del">
+<del>dont le capital investi, fixé conformément à l’article 3, paragraphes (2), (3) et (4):</del>
+<ul scl:space-before="3" scl:space-item="3" scl:space-num="5" scl:symbol="custom">
+<li scl:symbol="–" style="del">
+<del>par m² de surface utile, calculée conformément aux dispositions prévues par la législation sur la publicité foncière en matière de copropriété, d’un logement faisant partie d’une copropriété est supérieur à 618 euros, valeur au nombre cent de l’indice des prix de la construction en 1970; ou</del>
+</li>
+<li scl:symbol="–" style="del">
+<del>par m² de surface utile d’habitation, calculée conformément aux dispositions prévues par la législation concernant l’aide au logement, des maisons unifamiliales est supérieur à 450 euros, valeur au nombre indice cent de l’indice des prix de la construction en 1970;</del>
+</li>
+</ul> </li>
+</ol>
+<p>
+<del>à condition que le contrat de bail stipule clairement qu’il s’agit d’un des logements visés au présent article et qu’il n’est pas soumis aux articles 3 à 5.<mod class="mod-end" for="#pm19"/>
+</del>
+<noteRef href="#M18" marker="18"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_7/20170901</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-09-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm8"/>
+<span scl:style-format="n">
+<b>Art. 7.</b>
+</span>
+</num>
+<paragraph id="paragraph_14">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Dans les communes de 6.000 habitants et plus, il est institué une ou plusieurs commissions des loyers.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Plusieurs commissions des loyers sont instituées pour l’ensemble des communes de moins de 6.000 habitants. Un règlement grand-ducal détermine la zone de compétence territoriale et le siège de ces commissions des loyers.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_48">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les missions de la commission des loyers, dénommée ci-après « commission », sont définies par les dispositions de la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_49">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Chaque commission se compose d'un président et de deux assesseurs. Il y a autant de membres suppléants que de membres effectifs. Les membres effectifs et suppléants sont nommés pour une durée de six ans. Leurs mandats sont renouvelables.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'un des assesseurs est choisi parmi les bailleurs et l'autre parmi les locataires. Il en est de même de leurs suppléants respectifs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les commissions sont renouvelées à la suite des élections générales des conseils communaux dans les trois mois qui suivent l’installation des conseillers élus. En cas de renouvellement intégral du conseil communal d’une commune de 6.000 habitants et plus par suite de dissolution ou de démission de tous ses membres, le nouveau conseil procède, dans les trois mois de son installation, au renouvellement de la commission.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les communes de 6.000 habitants et plus, les membres effectifs et suppléants sont désignés par le conseil communal. Le président de chaque commission et son suppléant sont choisis pour autant que possible parmi les membres du conseil communal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les communes de moins de 6.000 habitants, le président de la commission est désigné par le ministre ayant le Logement dans ses attributions parmi les fonctionnaires qu’il a sous ses ordres. Les membres assesseurs effectifs et suppléants des commissions sont désignés par un vote par correspondance sur base de bulletins de vote établis par le ministre ayant l’Intérieur dans ses attributions sur proposition des conseils communaux concernés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Jusqu’au premier jour du quatrième mois qui suit celui des élections générales des conseils communaux, ceux-ci proposent au ministre ayant l’Intérieur dans ses attributions des candidats dans les formes établies par les articles 18, 19, 32, 33 et 34 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="d680465a-46b9-40f0-b1f6-52bf2b0c77f1">loi communale modifiée du 13 décembre 1988</ref>. Chaque conseil communal concerné a le choix soit de proposer un candidat aux fonctions de membre effectif respectivement de membre suppléant parmi les personnes qui sont bailleurs et un autre candidat aux fonctions de membre effectif respectivement de membre suppléant parmi les personnes qui sont locataires, chaque fois domiciliés sur le territoire d’une des communes faisant partie de la zone de compétence territoriale de la commission, soit de renoncer à toute proposition de candidat. Si un seul et même candidat est proposé pour un poste de membre de la commission, celui-ci est déclaré élu par le ministre ayant l’Intérieur dans ses attributions. Les propositions tardives ne sont pas prises en compte.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre ayant l’Intérieur dans ses attributions inscrit sur des bulletins de vote les candidats qui lui sont proposés par les conseils communaux et les transmet aux communes dans un délai de quinze jours au plus tard à partir du premier jour du quatrième mois. Le ministre ayant l’Intérieur dans ses attributions transmet à chaque commune autant de bulletins de vote munis des nom et prénoms des candidats proposés et d’enveloppes électorales que le conseil communal compte de membres, estampillés et portant l’indication du ministère de l’Intérieur et du poste de membre à la commission à laquelle le vote doit pourvoir.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le collège des bourgmestre et échevins soit envoie sous pli recommandé avec accusé de réception, soit remet contre récépissé à chaque conseiller communal un bulletin de vote et une enveloppe électorale.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les conseillers communaux remplissent les bulletins de vote et les placent dans les enveloppes électorales qu’ils transmettent aussitôt au collège des bourgmestre et échevins. Celles-ci sont recueillies par le collège des bourgmestre et échevins pour être transmises ensemble par envoi recommandé au ministre ayant l’Intérieur dans ses attributions dans un délai de quinze jours à partir de la réception des bulletins de vote et des enveloppes électorales. Les enveloppes transmises de manière tardive ne sont pas prises en compte, la date de l’envoi recommandé faisant foi.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre ayant l’Intérieur dans ses attributions installe un bureau de vote composé de fonctionnaires qu’il a sous ses ordres, dont un assure la fonction de président. Le bureau de vote procède au dépouillement du scrutin dès réception des bulletins de vote des conseillers communaux des communes faisant partie de la zone de compétence territoriale d’une commission. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaqueconseil communalpeutdésigner,parmi ses membresnoncandidats,unobservateurquiassiste aux opérations de dépouillement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats sont élus à la majorité simple. En cas de partage des voix, il est procédé par tirage au sort par le président du bureau de vote.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre ayant l’Intérieur dans ses attributions communique au ministre ayant le Logement dans ses attributions et aux communes concernées les résultats du scrutin sous forme d’un relevé des membres élus aussitôt que les opérations de dépouillement sont clôturées. Le relevé des membres élus vaut titre d’admission à la commission concernée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si le conseil communal d’une commune de moins de 6.000 habitants faisant partie de la zone de compétence territoriale d’une commission n’est pas installé jusqu’au 31 décembre de l’année des élections générales des conseils communaux, le ministre ayant l’Intérieur dans ses attributions suspend l’établissement des bulletins de vote en attendant que tous les conseils communaux aient proposé un candidat dans le délai d’un mois à partir de la date d’installation du dernier conseil communal sans préjudice des dispositions de l’alinéa 5.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsqu’un assesseur perd sa qualité respectivement de bailleur ou de locataire, il est de plein droit démissionnaire de la commission. Il est pourvu à son remplacement dans les formes et selon la procédure de désignation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les présidents et les membres assesseurs des commissions peuvent être remplacés. Le remplacement d’un membre d’une commission d’une commune de 6.000 habitants et plus est fait par délibération du conseil communal. Le remplacement du président d’une commission regroupant plusieurs communes de moins de 6.000 habitants est fait par le ministre ayant le Logement dans ses attributions. Le remplacement d’un assesseur est opéré sur proposition d’une des communes de la zone de compétence territoriale de la commission. Cette proposition est notifiée au ministre ayant l’Intérieur dans ses attributions, au ministre ayant le Logement dans ses attributions et aux autres communes concernées. Dans le délai d’un mois à partir de la notification, les conseils communaux proposent des candidats pour le remplacement, qui a lieu selon la procédure de désignation. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de vacance d’un poste de membre effectif ou suppléant d’une commission par suite de décès, de démission ou pour toute autre cause, il est pourvu au remplacement du poste vacant dans le délai de trois mois selon la procédure de désignation. Le remplaçant achève le terme du mandat de celui qu’il remplace.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_50">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Dans les communes de 6.000 habitants et plus, le lieu de réunion de la commission est un local approprié mis à disposition par l’administration communale concernée. Pour chaque commission regroupant des communes de moins de 6.000 habitants, un local approprié est mis à disposition par l’administration communale du lieu du siège de la commission.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_51">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Dans les communes de 6.000 habitants et plus, le secrétaire de la commission est désigné par le conseil communal parmi les fonctionnaires communaux.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les autres commissions, le ministre ayant le Logement dans ses attributions désigne le secrétaire parmi les fonctionnaires qu’il a sous ses ordres. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_52">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Dans les communes de 6.000 habitants et plus, les indemnités revenant aux membres et au secrétaire de la commission ainsi que les autres frais de fonctionnement de la commission sont à charge de la commune.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les autres commissions, les indemnités revenant aux membres et au secrétaire de la commission ainsi que les autres frais de fonctionnement sont répartis de façon égale entre les communes concernées.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les montants des indemnités revenant aux membres et au secrétaire de la commission sont fixés par règlement grand-ducal. <mod class="mod-end" for="#pm8"/>
+<noteRef href="#M7" marker="7"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_8/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>La partie qui se croira fondée en vertu des dispositions de la présente loi à demander une augmentation ou une réduction du loyer devra d’abord notifier son intention à l’autre partie par écrit, sous peine d’irrecevabilité de la requête devant la commission. Si un accord n’a pu être obtenu endéans un mois, le réclamant pourra adresser une requête au collège des bourgmestre et échevins de la commune du lieu de situation du logement. Le collège des bourgmestre et échevins transmettra sans délai la requête à la commission compétente.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaque requête précisera l’objet de la demande. Elle ne sera pas recevable pendant les six premiers mois du bail.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les parties seront convoquées par la commission par lettre recommandée avec accusé de réception qui contiendra outre les jour, heure et lieu pour se présenter devant la commission une copie de la requête introductive de la partie requérante. La convocation sera faite au moins à huitaine. Si une partie n’est pas touchée personnellement, la commission des loyers reconvoquera les parties à quinzaine, le tout sous peine de nullité. La deuxième convocation est valablement faite à domicile.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_9/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<paragraph id="paragraph_20">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les parties comparaîtront en personne ou par fondé de pouvoir devant la commission aux jour, heure et lieu indiqués dans la convocation et présenteront leurs observations.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_21">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La commission pourra s’entourer de tous les renseignements qu’elle jugera convenir avant de déterminer le loyer. Elle pourra notamment prendre inspection des lieux loués.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Exceptionnellement, la commission pourra se faire assister par un expert. Les frais de cette intervention seront avancés par la partie requérante et ventilés entre les parties dans la décision de la commission ou, en cas de recours, par le tribunal saisi en tenant compte de l’issue de la procédure.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_22">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La commission s’efforcera de concilier les parties.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>S’il y a conciliation, il sera dressé procès-verbal des conditions de l’arrangement. Ce procès-verbal sera signé par les parties ou leurs fondés de pouvoir et par le président de la commission.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de non-conciliation ou de non-comparution de l’une des parties, la commission déterminera le loyer dû et/ou les avances sur charges d’après les règles établies par les articles 3 à 5.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_23">
+<num>(4)</num>
+<alinea>
+<content>
+<p>En cas de détermination du loyer, le procès-verbal contiendra l’évaluation du logement par rapport aux critères légaux et réglementaires et le montant du loyer.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le procès-verbal sera signé par les membres de la commission et une copie sera notifiée aux parties par lettre recommandée dans le plus bref délai avec indication des voies et du délai de recours ainsi que de la manière dans laquelle il doit être présenté, faute de quoi le délai pour introduire un recours contre la décision conformément à l’article 10 ne court pas.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_24">
+<num>
+<mod class="mod-start" for="#pm20"/>(5)</num>
+<alinea>
+<content>
+<p>La commission rend sa décision dans un délai de trois mois à partir de la transmission de la requête à la commission. Si la commission ne peut pas ou plus siéger au vu d’une vacance de poste d’un des assesseurs de la commission ou si aucune décision n’est rendue endéans ce délai, le requérant pourra saisir directement le juge de paix.<mod class="mod-end" for="#pm20"/>
+<noteRef href="#M19" marker="19"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_25">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les parties peuvent convenir de charger la commission d’une mission d’arbitrage auquel cas la décision s’imposera aux parties et sera susceptible d’exécution directe.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_10/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>Contre la détermination du loyer par la commission, il est ouvert une action devant le juge de paix du lieu de la situation du logement. Cette action devra être formée, à peine de déchéance, dans le mois de la notification du procès-verbal de la commission. Elle sera introduite, instruite et jugée conformément à la procédure prévue aux articles 19 à 25. La copie du procès-verbal de la commission sera jointe à la requête.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si aucun recours n’est introduit suite à la notification de la décision de la commission dans les délais fixés, il est présumé d’une manière irréfragable que la décision de la commission est acceptée de part et d’autre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La décision du juge de paix pourra être frappée d’opposition ou d’appel dans les formes et délais prévus aux articles 23 et 25.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_11/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>La détermination du loyer par la commission des loyers ou par le juge ne peut produire ses effets qu’à partir du premier terme venant à échoir après la date à laquelle le collège des bourgmestre et échevins compétent a été saisi de la requête conformément à l’article 8.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm21"/>
+<del>Lorsque, en application des dispositions de la présente loi, le loyer est augmenté de plus de 10% suite à une décision de la commission des loyers ou sur un recours en justice, la hausse s’applique par tiers annuels. Le locataire aura toutefois le droit de dénoncer le bail, nonobstant toute convention contraire, moyennant un délai de résiliation de trois mois.</del>
+<mod class="mod-end" for="#pm21"/>
+<noteRef href="#M20" marker="20"/>
+</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_iii">
+<num>Chapitre III.</num>
+<heading scl:align="center" scl:separator=" – " scl:style-format="b"> De la durée du contrat de bail</heading>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_12/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<paragraph id="paragraph_26">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le contrat de bail peut être conclu à durée déterminée ou indéterminée. <mod class="mod-start" for="#pm22"/>
+<del>En l’absence d’un écrit, il est présumé conclu à durée indéterminée.<mod class="mod-end" for="#pm22"/>
+</del>
+<noteRef href="#M21" marker="21"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_27">
+<num>(2)</num>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm23"/>Tout contrat de bail visé par la présente loi, qui vient à cesser pour n’importe quelle cause, est prorogé à durée indéterminée à moins que<mod class="mod-end" for="#pm23"/>
+<noteRef href="#M22" marker="22"/>: </p>
+<ol scl:space-item="3" scl:space-num="5" scl:symbol="a.">
+<li>le bailleur déclare avoir besoin des lieux loués pour les occuper lui-même ou pour les faire occuper de manière effective par un parent ou allié jusqu’au troisième degré inclusivement;</li>
+<li>le locataire ne remplisse pas ses obligations;</li>
+<li>il existe d’autres motifs graves et légitimes à établir par le bailleur; le transfert de propriété du logement ne vaut pas motif grave et légitime.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_28">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 1736 du <ref href="/eli/etat/leg/code/civil" id="b579e990-c61b-48c3-8325-2c7d3f0cca22">Code civil</ref>, le délai de résiliation dans les cas prévus au paragraphe (2), point a, est de six mois. La lettre de résiliation doit être écrite, motivée et accompagnée, le cas échéant, de pièces afférentes et s’effectuer par voie de lettre recommandée à la poste avec avis de réception. Elle doit mentionner, sous peine de nullité, le texte du présent paragraphe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans les trois mois de l’avis de réception à la poste, le locataire peut, sous peine de forclusion, demander une prolongation du délai de résiliation au juge de paix. En l’absence de cette demande, le bailleur peut demander au juge de paix une décision autorisant le déguerpissement forcé du locataire après l’écoulement du délai de résiliation de six mois. Toutefois, le locataire pourra encore introduire une demande en sursis à l’exécution de la décision, conformément aux articles 16 à 18. Dans ce cas, le déguerpissement du logement par le locataire doit impérativement avoir lieu au plus tard quinze mois après la date d’envoi de la lettre de résiliation du bail. La décision autorisant le déguerpissement forcé du locataire ne sera pas susceptible d’opposition ou d’appel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de demande de prolongation du délai de résiliation, les parties seront convoquées dans les deux mois à l’audience. Sauf si la demande est sérieusement contestable ou contestée, le juge de paix accordera une prolongation du délai au locataire à condition que celui-ci justifie avant l’expiration du délai initial de six mois, par voie de pièces, soit être en train de construire ou de transformer un logement lui appartenant, soit avoir loué un logement en construction ou en transformation, soit avoir fait des démarches utiles et étendues en vue de la recherche d’un nouveau logement. La prolongation du délai ne pourra en aucun cas dépasser de douze mois la date d’expiration du délai initial de six mois. La faveur du sursis, prévue aux articles 16 à 18, ne sera plus applicable. La décision accordant ou refusant la prolongation du délai vaudra de droit titre exécutoire en vue d’un déguerpissement forcé du locataire après l’écoulement du délai. Elle n’est pas susceptible d’opposition ou d’appel.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_29">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Lorsqu’un logement a été mis, même à titre gratuit, à la disposition d’une personne uniquement en raison d’un contrat de travail intervenu entre parties, le déguerpissement de l’occupant peut être ordonné par le juge de paix si l’employeur prouve que le contrat de travail a pris fin.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au cas où l’occupant reste en possession du logement après la cessation du contrat de travail, il est tenu de payer une indemnité d’occupation du logement à fixer conformément aux dispositions de l’article 3.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_30">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 1743 du <ref href="/eli/etat/leg/code/civil" id="e125457b-523d-4821-a983-b9cd16c4f655">Code civil</ref>, l’acquéreur d’un logement loué en tout ou en partie ne peut expulser le locataire dont le bail n’a pas date certaine avant son acte d’acquisition, mais qui avait été mis en possession des lieux avant cette date à moins que l’une des conditions définies au paragraphe (2) ne soit réalisée.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_31">
+<num>(6)</num>
+<alinea>
+<content>
+<p>L’acquéreur d’un logement loué qui veut occuper le logement lui-même ou par un parent ou allié jusqu’au troisième degré inclusivement, doit envoyer au locataire une lettre recommandée de résiliation du contrat de bail dans les trois mois de l’acquisition du logement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans ce cas, les dispositions prévues au paragraphe (3) sont applicables, sauf que le déguerpissement du logement par le locataire doit impérativement avoir lieu au plus tard douze mois après la date d’envoi de la lettre de résiliation du bail.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_13/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>En cas d’abandon du domicile par le locataire ou en cas de décès du locataire, le contrat de bail continue à durée indéterminée:</p>
+<ul scl:space-item="3" scl:space-num="5" scl:symbol="custom">
+<li scl:symbol="–">au profit du conjoint ayant cohabité avec le locataire ou du partenaire ayant fait une déclaration de partenariat avec le locataire et ayant vécu en couple avec celui-ci;</li>
+<li scl:symbol="–">au profit des descendants, des ascendants ou du concubin, qui vivaient avec lui en communauté domestique depuis au moins six mois à la date de l’abandon du domicile ou du décès et qui avaient déclaré leur domicile à la commune dans le logement pendant cette période.</li>
+</ul>
+<p>En cas de demandes multiples, le juge se prononce en fonction des intérêts en présence.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les droits du bailleur contre le locataire ayant abandonné le logement ne sont pas affectés par ces dispositions.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>A défaut de personnes remplissant les conditions prévues au présent article, le contrat de bail est résilié de plein droit par le décès du locataire.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_14/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>Sauf cas de force majeure, l’ancien locataire a droit à des dommages-intérêts si, dans les trois mois qui suivent son départ, les lieux ne sont pas occupés aux fins invoquées comme motif de la résiliation du bail soit dans l’acte de dénonciation du bail, soit dans la requête introductive d’instance, soit dans le jugement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le délai de trois mois est suspendu pendant la durée des travaux de rénovation et de transformation entrepris de manière effective.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si le tribunal constate que le motif invoqué pour empêcher la prorogation légale était dolosif, le locataire a droit à des dommages-intérêts qui ne peuvent être inférieurs au montant des loyers d’une année.</p>
+</content>
+</alinea>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_15/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15.</num>
+<alinea>
+<content>
+<p>Le locataire dont le bail court depuis au moins dix-huit ans bénéficie d’un droit de préemption sur le logement loué, à moins que celui-ci ne fasse l’objet d’une vente par adjudication publique ou qu’il ne soit cédé à un membre de la famille du bailleur parent ou allié jusqu’au troisième degré inclusivement ou qu’il ne fasse l’objet d’une cession gratuite.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le bailleur adresse au locataire par voie de lettre recommandée l’offre de vente. Dans cette offre, le bailleur doit avertir le locataire qu’il a le droit de faire une contre-proposition. Le locataire dispose d’un mois pour user de son droit et pour faire éventuellement une contre-proposition. Son silence vaut refus de l’offre. Si le locataire a formulé une demande en obtention d’un prêt auprès d’un établissement financier établi au Grand<span scl:no-break="true">-</span>Duché, ce délai est prorogé d’un mois. Le logement ne peut être vendu à un tiers qu’à un prix supérieur à celui offert par le locataire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le droit de préemption peut uniquement être exercé si le locataire a loué tout l’immeuble, respectivement si l’appartement qu’il a loué est placé sous le régime de la copropriété.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de vente du logement à un tiers acheteur en dépit du droit de préemption existant dans le chef du locataire, le locataire lésé peut réclamer des dommages-intérêts au vendeur qui ne pourront être inférieurs au montant des loyers d’une année.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_iv">
+<num>Chapitre IV.</num>
+<heading scl:align="center" scl:separator=" – " scl:style-format="b"> De la protection des personnes condamnées à déguerpir de leur logement</heading>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_16/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<alinea>
+<content>
+<p>Le juge de paix, siégeant en matière de bail à loyer, peut ordonner à la requête de la partie condamnée au déguerpissement, qu’il s’agisse d’un locataire ou d’un occupant sans droit ni titre, qu’il sera sursis à l’exécution de la décision.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le sursis ne pourra dépasser trois mois, mais il pourra être prorogé à deux reprises, chaque fois pour une durée maximum de trois mois. Le sursis ne sera accordé que si, en raison des circonstances, le requérant paraît mériter cette faveur et qu’il prouve avoir effectué des démarches utiles et étendues pour trouver un nouveau logement, à moins que le sursis ne soit incompatible avec le besoin personnel de l’autre partie.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le juge de paix fixe la contrepartie pécuniaire due par la partie condamnée à déguerpir pendant la durée du sursis en raison de son maintien provisoire dans les lieux, en tenant compte du dommage qui en résulte pour le bailleur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si après une condamnation au déguerpissement en première instance, l’appel de la partie condamnée à déguerpir est déclaré irrecevable ou nul, ou si le déguerpissement est confirmé en instance d’appel, quel que soit le délai accordé par le juge d’appel à la partie condamnée au déguerpissement, cette partie ne pourra plus introduire une demande en sursis à l’exécution de la décision.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute demande en sursis ou en prorogation de sursis est irrecevable s’il s’est écoulé un délai supérieur à un an entre le jour de l’introduction de la procédure judiciaire et l’expiration du délai de déguerpissement fixé dans le jugement prononçant la condamnation ou dans l’ordonnance accordant un précédent sursis.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par dérogation à l’alinéa qui précède et sous réserve des dispositions prévues par l’article 12, paragraphes (3) et (6), toute demande en sursis ou en prorogation de sursis est encore irrecevable à l’expiration du délai de douze mois à partir de la date où l’acquéreur d’un immeuble loué a informé le locataire par lettre recommandée, respectivement à l’expiration du délai de quinze mois à partir de la date où le bailleur a informé le locataire par lettre recommandée, qu’il veut occuper l’immeuble lui-même ou par un de ses parents ou alliés jusqu’au troisième degré inclusivement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_17/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>La demande en sursis sera formée par simple requête à déposer au greffe de la justice de paix. Les parties seront convoquées pour la première audience utile.</p>
+<p>La décision sur la demande sera constatée par simple note au plumitif. Cette décision n’est susceptible d’aucun recours.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_18/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>Si le délai de déguerpissement accordé à l’occupant par la décision est supérieur à quinze jours, la demande en sursis est à introduire, à peine de déchéance, au plus tard trois jours avant l’expiration de ce délai. La demande en prolongation du sursis est à introduire, à peine de déchéance, au plus tard trois jours avant l’expiration du sursis. Il y sera statué incessamment. Néanmoins, la demande aura un effet suspensif.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_v">
+<num>Chapitre V.</num>
+<heading scl:align="center" scl:separator=" – " scl:style-format="b"> Du règlement des litiges</heading>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_19/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19.</num>
+<alinea>
+<content>
+<p>Le juge de paix est compétent, même si le titre est contesté, pour connaître de toutes les contestations <mod class="mod-start" for="#pm24"/>entre bailleurs, locataires ou colocataires<mod class="mod-end" for="#pm24"/>
+<noteRef href="#M23" marker="23"/> relatives à l’existence et à l’exécution des baux d’immeubles.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le juge de paix compétent est celui de la situation du logement faisant l’objet du bail en litige.</p>
+</content>
+</alinea>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_20/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<alinea>
+<content>
+<p>La demande portée devant le juge de paix conformément à l’article 3, 3° du <ref href="/eli/etat/leg/code/procedure_civile" id="5a853985-b06b-4e8c-94cc-a6edc18761da">Nouveau Code de procédure civile</ref> sera formée par simple requête sur papier libre à déposer au greffe de la justice de paix en autant d’exemplaires qu’il y a de parties en cause.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La requête énoncera les nom, prénom, profession et domicile des parties. Elle indiquera sommairement les moyens invoqués à l’appui de la demande et précisera l’objet de celle-ci.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La date du dépôt de la demande est marquée par les soins du greffier sur un registre de papier non timbré tenu au greffe. Ce registre sera coté et paraphé par le juge de paix. Le greffier y inscrira également la date des lettres recommandées prévues par la présente loi.</p>
+</content>
+</alinea>
+</article>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_21/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 21.</num>
+<alinea>
+<content>
+<p>Le greffier convoquera les parties par lettre recommandée à la poste avec avis de réception. Il y joindra une copie de la requête pour chaque défendeur. La lettre indiquera les nom, prénom, profession et domicile du demandeur, l’objet de la demande, le jour et l’heure de l’audience fixée pour les débats par le juge de paix au délai minimum de huit jours. La convocation contiendra en outre et à peine de nullité les mentions prescrites à l’article 80 du <ref href="/eli/etat/leg/code/procedure_civile" id="f632e6ef-eaf2-4df7-9e04-13760af87233">Nouveau Code de procédure civile</ref>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_22/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 22.</num>
+<alinea>
+<content>
+<p>Pour l’instruction et le jugement des affaires, la procédure ordinaire prévue en matière de justice de paix, pour autant qu’il n’y est pas dérogé par les dispositions de la présente loi, sera suivie.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsqu’il y a lieu à enquête ou expertise, le greffier citera les témoins et les experts par lettre recommandée avec avis de réception. La lettre précisera l’objet de l’enquête ou de l’expertise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans les quinze jours du prononcé, le greffier notifiera aux parties par lettre recommandée une copie sur papier libre du jugement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_23/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 23.</num>
+<alinea>
+<content>
+<p>Si l’une des parties ne comparaît ni en personne, ni par mandataire, le juge de paix statuera conformément aux dispositions des articles 74 à 89 du <ref href="/eli/etat/leg/code/procedure_civile" id="1626e866-6759-4fa5-bf18-ff52047af678">Nouveau Code de procédure civile</ref>. La partie défaillante pourra faire opposition, par déclaration au greffe, dans les quinze jours de la notification prévue à l’article 22, alinéa 3. Dans ce cas, la convocation se fera conformément aux dispositions de l’article 21.</p>
+</content>
+</alinea>
+</article>
+<article id="art_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_24/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 24.</num>
+<alinea>
+<content>
+<p>Le juge de paix peut prendre par ordonnance toutes mesures provisoires, et notamment fixer le loyer provisoire. Sont applicables les articles 15, 16 et 17 du <ref href="/eli/etat/leg/code/procedure_civile" id="e6ba7859-ba59-4811-915e-74a6ee42dde5">Nouveau Code de procédure civile</ref>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_25/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 25.</num>
+<alinea>
+<content>
+<p>L’appel sera porté devant le tribunal d’arrondissement. Il devra être interjeté, sous peine de nullité, dans un délai de quarante jours à partir de la notification du jugement s’il est contradictoire et, si le jugement est rendu par défaut, dans un délai de quarante jours à partir du jour où l’opposition ne sera plus recevable. La procédure ordinaire prévue en matière commerciale s’applique tant pour l’introduction de l’appel que pour l’instruction et le jugement de l’affaire.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_vi">
+<num>Chapitre VI.</num>
+<heading scl:align="center" scl:separator=" – " scl:style-format="b">Des missions incombant aux autorités communales</heading>
+<article id="art_26">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_26</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_26/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 26.</num>
+<alinea>
+<content>
+<p>Les administrations communales ont la mission d’assurer dans la mesure du possible le logement de toutes les personnes qui ont leur domicile sur le territoire de la commune.</p>
+</content>
+</alinea>
+</article>
+<article id="art_27">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_27/20151101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2015-11-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm6"/>Art. 27.</num>
+<alinea>
+<content>
+<p>Le conseil communal peut, par règlement communal, obliger les propriétaires des immeubles et parties d’immeubles non occupés destinés à servir de logement sis sur le territoire de la commune à les déclarer à l’administration communale dans le délai fixé par ledit conseil.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les infractions aux dispositions de l’alinéa précédent sont punies d’une peine d’amende comprise entre 1 et 250 euros.<mod class="mod-end" for="#pm6"/>
+<noteRef href="#M5" marker="5"/>
+</p>
+</content>
+</alinea>
+</article>
+<article id="art_28">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_28</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_28/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28.</num>
+<alinea>
+<content>
+<p>Chaque commune est autorisée à demander annuellement auprès des bailleurs, donnant en location un ou plusieurs logements sis sur le territoire de la commune, respectivement auprès des locataires d’un logement sis sur le territoire de la commune, des renseignements relatifs au montant du loyer et des charges locatives à payer au bailleur ainsi qu’au type et à la surface en m² du logement loué.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces renseignements peuvent être utilisés pour l’établissement d’un cadastre des loyers afin de connaître le niveau moyen des loyers demandés pour les différents types de logements dans une commune ou dans une partie de celle-ci.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La demande de renseignements est faite moyennant un formulaire mis à la disposition des bailleurs, respectivement des locataires, par les autorités communales. Elle doit être retournée, dûment remplie et signée par chaque bailleur ou locataire destinataire aux autorités communales dans le délai indiqué sur le formulaire, faute de quoi le destinataire défaillant pourra être puni à une amende dont le montant est fixé par règlement communal conformément aux dispositions de la loi communale.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de demande du ministre ayant le Logement dans ses attributions, les résultats des renseignements récoltés dans une commune donnée sont communiqués au ministre par les autorités communales.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_vii">
+<num>Chapitre VII.</num>
+<heading scl:align="center" scl:separator=" – " scl:style-format="b"> Des mesures spéciales pour la sauvegarde des biens meubles <br/>des personnes condamnées à déguerpir</heading>
+<article id="art_29">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_29</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_29/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 29.</num>
+<paragraph id="paragraph_35">
+<num>(1)</num>
+<alinea>
+<content>
+<p>En cas d’expulsion forcée d’une personne condamnée à déguerpir des lieux qu’elle occupe, les biens meubles se trouvant dans ces lieux sont transportés, aux frais de la personne expulsée qui doit en faire l’avance, au lieu qu’elle désigne.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_36">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Si la personne expulsée ne désigne aucun lieu de dépôt, si elle refuse ou si elle n’est pas à même de faire l’avance des frais de transport, l’huissier chargé de l’exécution du jugement de déguerpissement fait transporter les biens meubles aux frais de la personne expulsée, avancés par la commune du lieu d’expulsion en cas de demande de l’huissier, dans le local visé à l’article 30.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_37">
+<num>(3)</num>
+<alinea>
+<content>
+<p>L’huissier de justice dresse, aux frais de la personne expulsée, un procès-verbal contenant l’inventaire des biens transportés et la description sommaire de leur état. Il remet une copie du procès-verbal à la personne expulsée et à l’administration communale concernée.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_30">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_30</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_30/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 30.</num>
+<paragraph id="paragraph_38">
+<num>(1)</num>
+<alinea>
+<content>
+<p>La commune prend en charge, dans un local approprié, l’entreposage des biens meubles des personnes expulsées dans les conditions de l’article 29, paragraphe (2). Elle peut faire détruire les biens périssables, insalubres ou dangereux et refuser d’entreposer les biens dont la conservation causerait des difficultés ou des frais anormaux.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_39">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le dépôt dans le local visé à l’alinéa qui précède peut être assujetti au paiement d’une redevance à fixer par la commune.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_40">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Sauf convention écrite contraire entre la commune et la personne expulsée, les biens entreposés doivent être retirés dans un délai de trois mois à partir de la date du dépôt, contre paiement des frais de transport avancés par la commune et des redevances de dépôt redues. La commune peut renoncer à exiger de la personne expulsée le paiement de ces frais et redevances.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_41">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Après l’expiration de ce délai, la commune adresse, par lettre recommandée, à la personne expulsée une sommation de retirer ses biens. Si par suite un délai de trois mois s’est écoulé sans que ni la personne expulsée ni la partie saisissante ne se soient manifestées auprès de l’administration communale, la commune peut adresser, par lettre recommandée, à la personne expulsée et à la partie saisissante une ultime sommation de retirer les biens dans un délai de quinze jours, avec l’indication que, faute d’y obtempérer, il est présumé d’une manière irréfragable que tant la personne expulsée que la partie saisissante ont renoncé à réclamer la délivrance des biens entreposés. La commune est alors autorisée à procéder à la vente des biens se trouvant dans le local de dépôt, sinon à en disposer autrement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_42">
+<num>(5)</num>
+<alinea>
+<content>
+<p>La commune retient sur le produit de la vente les frais et autres dépenses mentionnés au paragraphe (3). Le solde est versé à la caisse des consignations. Le propriétaire des effets et meubles ou ses ayants droit pourront en obtenir le versement pendant une période de dix ans. Passé ce délai, il est acquis à la commune.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_viii">
+<num>Chapitre VIII.</num>
+<heading scl:align="center" scl:separator=" – " scl:style-format="b">Dispositions finales, abrogatoires et transitoires</heading>
+<article id="art_31">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_31</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_31/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 31.</num>
+<alinea>
+<content>
+<p>Dans le livre III du <ref href="/eli/etat/leg/code/civil" id="910a3615-6b6a-46b7-a23d-0cd0a95baab7">Code civi</ref>l, le chapitre II «Du louage des choses» du titre VIII est modifié comme suit: </p>
+<ol scl:space-item="3" scl:space-num="5" scl:symbol="1°">
+<li> <p>L’article 1762-5, alinéa 2, du <ref href="/eli/etat/leg/code/civil" id="684cdc6b-ad75-4c61-8042-24cd8466d465">Code civil</ref> aura désormais la teneur suivante:<embeddedStructure scl:hide-quote="true">
+<alinea>
+<content>
+<p>«Ceux-ci sont choisis par les parties ou sinon désignés à la requête de la partie la plus diligente par le juge de paix de la situation de l’immeuble». </p>
+</content>
+</alinea>
+</embeddedStructure> </p> </li>
+<li> <p>Un nouvel article 1762-8 est inséré au <ref href="/eli/etat/leg/code/civil" id="b4bbefcf-67ae-460b-a666-1c955a62b5ab">Code civil</ref>, lequel aura la teneur suivante:<embeddedStructure scl:hide-quote="true">
+<article>
+<num>«<u>Art. 1762-8.</u> </num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le preneur commerçant, industriel, artisan ou fermier, dont le bail vient à cesser pourra demander deux sursis successifs, chacun de six mois au maximum. Ces demandes seront déposées au greffe de la justice de paix, à peine de déchéance, deux mois au plus tard avant l’expiration du bail ou du premier sursis.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si le délai-congé conventionnel est égal ou inférieur à deux mois, la demande en sursis peut encore être déposée dans les huit jours de la notification du congé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si le premier sursis accordé par le juge est égal ou inférieur à deux mois, la demande en obtention d’un deuxième sursis devra être déposée au plus tard huit jours avant l’expiration du premier sursis.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les demandes en sursis sont dispensées du préliminaire de conciliation. Le juge de paix saisi aura compétence pour fixer le loyer pendant la durée des sursis. Le sursis sera refusé si le bailleur prouve qu’il a besoin de l’immeuble pour l’exploiter lui-même ou pour le faire exploiter par ses descendants ou pour d’autres causes graves et légitimes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>En cas de décès d’un preneur, titulaire d’un contrat de bail commercial, artisanal ou à ferme, le contrat de bail est maintenu dans le chef du repreneur à condition que le repreneur maintienne l’exploitation commerciale, artisanale ou agricole et qu’il ait un lien de famille jusqu’au cinquième degré inclusivement avec le preneur défunt, sinon qu’il soit le conjoint ou le concubin du preneur défunt.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Sont à considérer dans l’application du présent article comme locaux à usage commercial ou industriel les immeubles dont le bail prévoit expressément pareille affectation, ceux qui sont destinés par leur nature à l’exercice d’un commerce ou d’une industrie et ceux dans lesquels cette activité est exercé à titre principal.».</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</embeddedStructure> </p> </li>
+<li> <p scl:space-after="3">Il est inséré une section III libellé <embeddedText>Section III. – Des règles particulières aux baux commerciaux</embeddedText>. Elle comprendra les articles 1762-3 à 1762-8.</p> </li>
+<li>La section III <embeddedText>Des règles particulières aux baux à ferme</embeddedText>, comprenant les articles 1763 à 1778, deviendra la section IV du titre VIII.</li>
+<li> <p>L’article 1736 du <ref href="/eli/etat/leg/code/civil" id="1dd8831d-3e91-436c-a9ea-94e454061708">Code civil</ref> est modifié comme suit:<embeddedStructure scl:hide-quote="true">
+<article>
+<num>«<u>Art. 1736.</u> </num>
+<alinea>
+<content>
+<p>Si le bail a été fait sans écrit ou si le contrat est stipulé à durée indéterminée, l’une des parties ne pourra donner congé à l’autre qu’en observant les délais fixés par l’usage des lieux.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le délai de résiliation d’un contrat de bail d’habitation est de trois mois, sauf clause contraire dans le contrat de bail écrit prévoyant un délai supérieur à trois mois.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le délai de résiliation pour un contrat de bail commercial ou un contrat de bail mixte est de six mois, sauf clause contraire prévue dans le contrat de bail écrit.». </p>
+</content>
+</alinea>
+</article>
+</embeddedStructure> </p> </li>
+<li> <p>L’article 1758 du <ref href="/eli/etat/leg/code/civil" id="2c42f9e1-b989-4322-89ba-4dc27e409854">Code civil</ref> aura désormais la teneur suivante:<embeddedStructure scl:hide-quote="true">
+<article>
+<num>«<u>Art. 1758.</u> </num>
+<alinea>
+<content>
+<p>Le bail d’un logement est censé être fait à durée indéterminée s’il n’est pas spécifié dans le contrat de bail écrit pour quelle durée les parties ont voulu se lier.».</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure> </p> </li>
+<li> <p>L’article 1761 du <ref href="/eli/etat/leg/code/civil" id="eaaa29fd-efe8-45c6-8ad2-99716d7ded13">Code civil</ref> est remplacé comme suit:<embeddedStructure scl:hide-quote="true">
+<article>
+<num>«<u>Art. 1761.</u> </num>
+<alinea>
+<content>
+<p>Le bailleur ne peut résilier le contrat de bail à durée déterminée, encore qu’il déclare vouloir occuper par lui-même la maison louée, s’il n’y a eu convention contraire.».</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure> </p> </li>
+<li> <p>L’article 1762 du <ref href="/eli/etat/leg/code/civil" id="ead99f1f-05aa-4423-bd5c-661423677b87">Code civil</ref> est modifié comme suit:<embeddedStructure scl:hide-quote="true">
+<article>
+<num>«<u>Art. 1762.</u> </num>
+<alinea>
+<content>
+<p>S’il a été convenu dans le contrat de bail à durée déterminée ou à durée indéterminée que le bailleur pourrait venir occuper la maison, il est tenu de notifier d’avance un congé soit aux époques déterminées par le contrat de bail, soit moyennant congé notifié dans les délais prévus à l’article 1736.». </p>
+</content>
+</alinea>
+</article>
+</embeddedStructure> </p> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_32">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_32</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_32/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 32.</num>
+<paragraph id="paragraph_43">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’article 37 de la <ref href="/eli/etat/leg/loi/1982/06/18/n1/jo" id="4a6759d7-5e1e-4f34-8793-dbf358a4e1a4">loi modifiée du 18 juin 1982</ref> portant réglementation du bail à ferme est à modifier comme suit:<embeddedStructure scl:hide-quote="true">
+<article>
+<num>«<u>Art. 37.</u> </num>
+<alinea>
+<content>
+<p>Les articles 20 à 25 de la <ref href="/eli/etat/leg/loi/2006/09/21/n1/jo" id="51270785-b3d4-4408-b564-b976b41cf1bd">loi du 21 septembre 2006</ref> sur le bail à usage d’habitation et modifiant certaines dispositions du <ref href="/eli/etat/leg/code/civil" id="af9628d6-9214-4b50-bc06-2e649f2781af">Code civil</ref> sont applicables en matière de bail à ferme.».</p>
+</content>
+</alinea>
+</article>
+</embeddedStructure> </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_44">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Dans tous les textes de loi et de règlement, la référence à la <ref href="/eli/etat/leg/loi/1955/02/14/n1/jo" id="b98b5568-e4a2-446b-8f1c-7deb5b17401e">loi du 14 février 1955</ref> portant modification et coordination des dispositions légales et réglementaires en matière de bail à loyer s’entend comme référence aux dispositions de la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_33">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_33</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_33/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 33.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 33.</num>
+<alinea>
+<content>
+<p>Les dispositions prévues par les articles 31 et 32 sont applicables aux contrats en cours à partir de la date d’entrée en vigueur de la présente loi. Elles s’appliquent aux demandes pendantes devant les commissions des loyers ou devant les juridictions au moment de l’entrée en vigueur de la présente loi.</p>
+</content>
+</alinea>
+</article>
+<article id="art_33bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_33bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_33bis/20240801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 33bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>
+<mod class="mod-start" for="#pm25"/>Art. 33<i>bis</i>.</num>
+<paragraph id="paragraph_62">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les articles 2<i>bis</i> à 2<i>sexies</i> de la présente loi ne sont applicables qu’aux contrats de bail de colocation conclus après l’entrée en vigueur de la <ref href="/eli/etat/leg/loi/2024/07/23/a311/jo" id="dd23f49b-8670-4eb7-9c38-6254ebfc4a61" scl:verify="true">loi du 23 juillet 2024</ref> modifiant la <ref href="/eli/etat/leg/loi/2006/09/21/n1/jo" id="d665c3d4-1914-494d-b9aa-5c6d57de21d9" scl:verify="true">loi modifiée du 21 septembre 2006</ref> sur le bail à usage d’habitation et modifiant certaines dispositions du <ref href="/eli/etat/leg/code/civil" id="435bd7d3-cd57-4e17-b7af-dc2fcc6272a5">Code civil</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_63">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’article 3, paragraphes 1<sup>er</sup>, alinéas 2 à 4, et 5, alinéa 3, de la présente loi n’est applicable qu’à partir de la prochaine adaptation du loyer pour les contrats de bail à usage d’habitation conclus avant l’entrée en vigueur de la <ref href="/eli/etat/leg/loi/2024/07/23/a311/jo" id="fb6b5330-9e93-4beb-ace7-6bbe66d85f13" scl:verify="true">loi précitée du 23 juillet 2024</ref>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les articles 4, 5, paragraphe 1<sup>er</sup>, alinéa 1<sup>er</sup>, deuxième phrase, et alinéa 2, 12, paragraphe 1<sup>er</sup>, et 31, de la présente loi, ne sont applicables qu’aux contrats de bail à usage d’habitation conclus après l’entrée en vigueur de la <ref href="/eli/etat/leg/loi/2024/07/23/a311/jo" id="49d14684-f5f7-4904-aa2d-8d08b8e848f7" scl:verify="true">loi précitée du 23 juillet 2024</ref>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les articles 5, paragraphes 1<sup>er</sup> et 2, 12, paragraphe 1<sup>er</sup>, deuxième phrase, et 31 de la présente loi continuent à s’appliquer dans leur teneur ayant existé avant l’entrée en vigueur de la <ref href="/eli/etat/leg/loi/2024/07/23/a311/jo" id="ae9e8ae2-fc4e-43ab-b3d3-0d7a5cfc081c" scl:verify="true">loi précitée du 23 juillet 2024</ref> aux baux verbaux et aux contrats de bail à usage d’habitation conclus avant l’entrée en vigueur de la <ref href="/eli/etat/leg/loi/2024/07/23/a311/jo" id="00acc78c-c8a4-4310-95b6-9da1f8cccc55" scl:verify="true">loi précitée du 23 juillet 2024</ref>.<mod class="mod-end" for="#pm25"/>
+<noteRef href="#M24" marker="24"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_34">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_34</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_34/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 34.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 34.</num>
+<paragraph id="paragraph_45">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sont abrogées:</p>
+<ul scl:space-item="3" scl:space-num="5" scl:symbol="custom">
+<li scl:symbol="–">la <ref href="/eli/etat/leg/loi/1955/02/14/n1/jo" id="eba808ae-46ba-407a-a905-baa521b86882">loi modifiée du 14 février 1955</ref> portant modification et coordination des dispositions légales et réglementaires en matière de baux à loyer;</li>
+<li scl:symbol="–">les articles IV et V de la <ref href="/eli/etat/leg/loi/1987/08/27/n1/jo" id="a07e222c-a723-44be-a04c-0ea24cc2c2ac">loi du 27 août 1987</ref> portant réforme de la législation sur les baux à loyer.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_46">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Par dérogation au paragraphe (1), premier tiret, l’article 6 de la <ref href="/eli/etat/leg/loi/1955/02/14/n1/jo" id="d20dd72b-3fd7-4829-9601-d4937c71734b">loi modifiée du 14 février 1955</ref> restera d’application aussi longtemps que le règlement grand-ducal prévu à l’article 7, paragraphes (1) et (6), de la présente loi n’est pas entré en vigueur.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_47">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Par dérogation au paragraphe (1), les contrats de bail conclus avant l’entrée en vigueur de la loi et portant sur des logements de luxe visés par l’article 5 de la <ref href="/eli/etat/leg/loi/1955/02/14/n1/jo" id="a91b6fb6-2779-4882-bff7-e60d6f8256bc">loi modifiée du 14 février 1955</ref> portant modification et coordination des dispositions légales et réglementaires en matière de baux à loyer continuent à courir jusqu’à l’expiration du bail.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_35">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_35</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_35/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 35.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 35.</num>
+<alinea>
+<content>
+<p>Les loyers convenus avant l’entrée en vigueur de la loi ne peuvent être adaptés au niveau résultant de l’application de la présente loi qu’après une notification écrite au locataire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le locataire occupant un logement en vertu d’un contrat de bail conclu avant l’entrée en vigueur de la présente loi dispose d’un délai de réflexion de trois mois, à partir de la demande en augmentation du loyer du bailleur en application des dispositions introduites par la présente loi, pour dénoncer le contrat de bail. S’il dénonce le contrat de bail, aucune adaptation du loyer ne peut lui être imposée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque le locataire ne dénonce pas le contrat de bail et si l’augmentation du loyer demandée dépasse 10 %, la hausse s’applique par tiers annuels.</p>
+</content>
+</alinea>
+</article>
+<article id="art_36">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_36</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/art_36/20061005</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 36.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2006-10-05</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 36.</num>
+<alinea>
+<content>
+<p>La présente loi entre en vigueur le premier jour du mois qui suit sa publication au Mémorial.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

@@ -1,0 +1,2083 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#somebody">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MT"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2021-03-23</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/648</scl:jolux><scl:jolux scl:name="publicationDate">2017-05-22</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="dateDocument">2017-05-17</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MT</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/943</scl:jolux><scl:jolux scl:name="dateEntryInForce">2017-05-26</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2017/a498</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo/fr</scl:jolux>
+<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 23/03/2021 : Règlement grand-ducal du 17 mai 2017 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des salariés aux risques dus aux agents physiques (champs électromagnétiques).</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/1989/391/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/dir_ue/2004/40/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1990/01/16/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/1994/11/04/n3/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/1996/04/02/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/1996/08/11/n12/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/2016/11/14/n2/jo</scl:jolux>
+<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/pr/20160251</scl:jolux>
+<scl:jolux scl:name="transposes">http://data.legilux.public.lu/eli/dir_ue/2013/35/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/2006/07/31/n2/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2017/a498/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">1</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2017-05-17-a498-jo-fr-xml.xml</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/jo/fr</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2017/a498/fr/pdf</scl:jolux>
+<scl:jolux scl:name="memorialPage">1</scl:jolux>
+<scl:jolux scl:name="memorialSequence">A</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/rgd/2017/05/17/a498/jo/fr/pdfa/eli-etat-leg-rgd-2017-05-17-a498-jo-fr-pdfa.pdf</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2017-05-17" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2021-03-23" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2021/03/17/a222/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2021/03/17/a222/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2017/05/17/a498/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2021/03/17/a222/jo" id="rp2" showAs="Règlement grand-ducal du 17 mars 2021 modifiant le règlement grand-ducal du 17 mai 2017 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des salariés aux risques dus aux agents physiques (champs électromagnétiques)."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2021-03-19|2021-03-17|RGD|222">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/03/17/a222/jo">Règlement grand-ducal du 17 mars 2021 modifiant le règlement grand-ducal du 17 mai 2017 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des salariés aux risques dus aux agents physiques (champs électromagnétiques).</ref>
+</p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2021-03-19|2021-03-17|RGD|222">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2021/03/17/a222/jo">Règlement grand-ducal du 17 mars 2021 modifiant le règlement grand-ducal du 17 mai 2017 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des salariés aux risques dus aux agents physiques (champs électromagnétiques).</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle style="11">
+<p>Version consolidée applicable au 23/03/2021 : Règlement grand-ducal du 17 mai 2017 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des salariés aux risques dus aux agents physiques (champs électromagnétiques).</p>
+</longTitle>
+</preface>
+<body>
+<chapter xmlns:ns3727365="http://www.scl.lu" id="chapitre_1er" ns3727365:hidden="false">
+<num>
+<b>Chapitre 1<sup>er</sup>
+</b>
+</num>
+<heading>
+<b>Objet, champ d’application et définitions</b>
+</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_1er/20170526</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<heading>
+<b>Objet et champ d’application</b>
+</heading>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le présent règlement grand-ducal fixe des prescriptions minimales en matière de protection des salariés contre les risques pour leur santé et leur sécurité résultant ou susceptibles de résulter d’une exposition à des champs électromagnétiques au travail.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le présent règlement grand-ducal couvre l’ensemble des effets biophysiques connus, directs et indirects, produits par des champs électromagnétiques.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les valeurs limites d’exposition (« VLE ») fixées dans le présent règlement grand-ducal ne couvrent que les liens scientifiquement bien établis entre les effets biophysiques directs à court terme et l’exposition aux champs électromagnétiques.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le présent règlement grand-ducal ne couvre pas les effets à long terme potentiels.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le présent règlement grand-ducal ne couvre pas les risques découlant d’un contact avec des conducteurs sous tension.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_2/20170526</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<heading>
+<b>Définitions</b>
+</heading>
+<alinea>
+<content>
+<p>Aux fins du présent règlement grand-ducal, on entend par :</p>
+<ol ns3727365:start="1" ns3727365:symbol="1.">
+<li>«champs électromagnétiques»: des champs électriques statiques, des champs magnétiques statiques et des champs électriques, magnétiques et électromagnétiques variant dans le temps dont les fréquences vont jusqu’à 300 GHz;</li>
+<li>«effets biophysiques directs»: des effets sur l’organisme humain directement causés par sa présence dans un champ électromagnétique, y compris:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>des effets thermiques, tels que l’échauffement des tissus dû à l’absorption par ces derniers d’énergie provenant des champs électromagnétiques;</li>
+<li>des effets non thermiques ou athermiques, tels que la stimulation des muscles, des nerfs ou des organes sensoriels. Ces effets sont susceptibles d’être nocifs pour la santé mentale et physique des salariés exposés. En outre, la stimulation des organes sensoriels peut occasionner des symptômes passagers tels que vertiges ou phosphènes. Ces effets sont susceptibles de causer une gêne temporaire ou d’altérer les facultés cognitives ou d’autres fonctions cérébrales ou musculaires et peuvent, par conséquent, affecter la capacité du salarié à travailler en toute sécurité (c’est-à-dire présenter des risques pour la sécurité); ainsi que</li>
+<li>des courants induits dans les membres; </li>
+</ol>
+</li>
+<li>«effets indirects»: des effets causés par la présence d’un objet dans un champ électromagnétique et pouvant entraîner un risque pour la sécurité ou la santé, tels que: <ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>une interférence avec des équipements et dispositifs médicaux électroniques, y compris des stimulateurs cardiaques et d’autres implants ou dispositifs médicaux portés à même le corps;</li>
+<li>le risque de projection d’objets ferromagnétiques dans des champs magnétiques statiques; </li>
+<li>l’amorçage de dispositifs électro-explosifs (détonateurs);</li>
+<li>des incendies et explosions résultant de l’inflammation de matériaux inflammables par des étincelles causées par des champs induits, des courants de contact ou des décharges d’étincelles; ainsi que</li>
+<li>des courants de contact;</li>
+</ol>
+</li>
+<li>« expert agréé » : une ou plusieurs personnes physiques ou morales, de droit privé ou de droit public, agréées dans le cadre des compétences et attributions de l’Inspection du travail et des mines et conformément aux conditions d’agrément visées à l’article L.614-7 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>;</li>
+<li>«valeurs limites d’exposition (« VLE »)»: des valeurs établies sur la base de considérations biophysiques et biologiques, notamment sur la base des effets directs aigus et à court terme scientifiquement bien établis, c’est-à-dire des effets thermiques et la stimulation électrique des tissus;</li>
+<li>«VLE relatives aux effets sur la santé»: les « VLE » au-dessus desquelles les salariés sont susceptibles de subir des effets nocifs pour la santé, tels qu’un échauffement thermique ou une stimulation des tissus nerveux et musculaires;</li>
+<li>«VLE relatives aux effets sensoriels»: les « VLE » au-dessus desquelles les salariés sont susceptibles de présenter un trouble passager des perceptions sensorielles, ainsi que des changements mineurs des fonctions cérébrales;</li>
+<li>«valeurs déclenchant l’action (« VA »)»: les niveaux opérationnels fixés afin de simplifier le processus permettant de démontrer que les « VLE » applicables sont respectées ou, lorsqu’il y a lieu, afin de prendre les mesures de protection ou de prévention appropriées telles qu’elles sont établies dans le présent règlement grand-ducal;</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La terminologie sur les « VA » utilisée dans l’annexe II est la suivante :</p>
+<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>pour les champs électriques, les «VA basses» et les «VA hautes» sont les niveaux en lien avec les mesures spécifiques de protection ou de prévention établies dans le présent règlement grand-ducal; et</li>
+<li>pour les champs magnétiques, les «VA basses» sont les niveaux en lien avec les « VLE » relatives aux effets sensoriels et les «VA hautes» sont les niveaux en lien avec les « VLE » relatives aux effets sur la santé.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_3/20210323</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2021-03-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<heading>
+<b>Valeurs limites d’exposition et valeurs déclenchant l’action</b>
+</heading>
+<paragraph id="paragraph_6">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les grandeurs physiques relatives à l’exposition à des champs électromagnétiques sont indiquées dans l’annexe I. Les « VLE » relatives aux effets sur la santé, les « VLE » relatives aux effets sensoriels et les « VA » sont définies dans les annexes II et III.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’employeur veille à ce que l’exposition des salariés aux champs électromagnétiques soit limitée aux « VLE » relatives aux effets sur la santé et aux « VLE » relatives aux effets sensoriels établies à l’annexe II pour les effets non thermiques ou athermiques, et établies à l’annexe III pour les effets thermiques. Le respect des « VLE » relatives aux effets sur la santé et des « VLE » relatives aux effets sensoriels doit être établi en recourant aux procédures d’évaluation des expositions pertinentes visées à l’article 4. Lorsque l’exposition des salariés aux <mod class="mod-start" for="#pm1"/>champs électromagnétiques<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/> dépasse les « VLE », l’employeur prend immédiatement des mesures conformément à l’article 5, paragraphe 8.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Lorsqu’il est démontré que les « VA » pertinentes établies aux annexes II et III ne sont pas dépassées, l’employeur est réputé respecter les « VLE » relatives aux effets sur la santé ainsi que les « VLE » relatives aux effets sensoriels. Lorsque l’exposition dépasse les « VA », l’employeur prend des mesures conformément à l’article 5, paragraphe 2, à moins que l’évaluation effectuée conformément à l’article 4, paragraphes 1<sup>er</sup>, 2 et 3, ne démontre que les « VLE » pertinentes ne sont pas dépassées et que les risques pour la sécurité peuvent être écartés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Nonobstant le premier alinéa, l’exposition peut dépasser :</p>
+<ol ns3727365:start="1" ns3727365:symbol="1.">
+<li>les « VA » basses pour les champs électriques (annexe II, tableau B1), lorsqu’un tel dépassement est justifié par la pratique ou le procédé utilisé, pour autant, soit que les « VLE » relatives aux effets sensoriels (annexe II, tableau A3) ne soient pas dépassées, soit que:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>les « VLE » relatives aux effets sur la santé (annexe II, tableau A2) ne soient pas dépassées;</li>
+<li>les décharges d’étincelles et des courants de contacts excessifs (annexe II, tableau B3) soient évités grâce aux mesures de protection spécifiques prévues à l’article 5, paragraphe 6; et</li>
+<li>les salariés aient été informés des situations visées à l’article 6, point 6.</li>
+</ol>
+</li>
+<li>les « VA » basses pour les champs magnétiques (annexe II, tableau B2), lorsqu’un tel dépassement est justifié par la pratique ou le procédé utilisé, y compris en ce qui concerne la tête et le tronc, pendant le temps de travail, et pour autant, soit que les « VLE » relatives aux effets sensoriels (annexe II, tableau A3) ne soient pas dépassées, soit que:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>les « VLE » relatives aux effets sensoriels ne soient dépassées que de manière temporaire;</li>
+<li>les « VLE » relatives aux effets sur la santé (annexe II, tableau A2) ne soient pas dépassées;</li>
+<li>des mesures soient prises conformément à l’article 5, paragraphe 9, en cas de symptômes passagers au titre du point 1 dudit paragraphe; et</li>
+<li>les salariés aient été informés des situations visées à l’article 6, point 6.</li>
+</ol>
+</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Nonobstant les paragraphes 2 et 3, l’exposition peut dépasser:</p>
+<ol ns3727365:start="1" ns3727365:symbol="1.">
+<li>les « VLE » relatives aux effets sensoriels (annexe II, tableau A1) pendant le temps de travail, lorsque la pratique ou le procédé utilisé le justifient, pour autant que:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>le dépassement ne soit que temporaire;</li>
+<li>les VLE relatives aux effets sur la santé (annexe II, tableau A1) ne soient pas dépassées;</li>
+<li>des mesures de protection spécifiques aient été prises conformément à l’article 5, paragraphe 7;</li>
+<li>des mesures soient prises conformément à l’article 5, paragraphe 9, en cas de symptômes passagers au titre du point 2 dudit paragraphe; et</li>
+<li>les salariés aient été informés des situations visées à l’article 6, point 6;</li>
+</ol>
+</li>
+<li>les « VLE » relatives aux effets sensoriels (annexe II, tableau A3, et annexe III, tableau A2) pendant la période de travail, lorsque la pratique ou le procédé utilisé le justifient et pour autant que:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>le dépassement ne soit que temporaire;</li>
+<li>les « VLE » relatives aux effets sur la santé (annexe II, tableau A2, et annexe III, tableaux A1 et A3) ne soient pas dépassées;</li>
+<li>des mesures soient prises conformément à l’article 5, paragraphe 9, en cas de symptômes passagers au titre du point 1 dudit paragraphe; et</li>
+<li>les salariés aient été informés des situations visées à l’article 6, point 6.</li>
+</ol>
+</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_2">
+<num>
+<b>Chapitre 2 </b>
+</num>
+<heading>
+<b>Obligations des employeurs</b>
+</heading>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_4/20170526</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<heading>
+<b>Évaluation des risques et détermination de l’exposition</b>
+</heading>
+<paragraph id="paragraph_10">
+<num>(1)</num>
+<alinea>
+<content>
+<p>En exécutant les obligations définies à l’article L.312-2, paragraphe 4 et à l’article L.312-5, paragraphe 1<sup>er</sup> du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>, l’employeur évalue tous les risques pour les salariés dus aux champs électromagnétiques sur le lieu de travail et, si nécessaire, mesure ou calcule les niveaux des champs électromagnétiques auxquels les salariés sont exposés.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Aux fins de l’évaluation prévue au paragraphe 1<sup>er</sup>, l’employeur répertorie et évalue les champs électromagnétiques sur le lieu de travail, en tenant compte des guides pratiques pertinents élaborés par la Commission en application de l’article 14 de la <ref href="/eli/dir_ue/2013/35/jo">directive 2013/35/UE</ref> du Parlement européen et du Conseil du 26 juin 2013 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des travailleurs aux risques dus aux agents physiques (champs électromagnétiques) ainsi que d’autres normes ou lignes directrices en la matière, y compris des bases de données relatives aux expositions.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si l’employeur se réfère à d’autres normes ou lignes directrices en la matière, y compris des bases de données relatives aux expositions, il répertorie et évalue les champs électromagnétiques selon ces dernières. Dans ce cas, cette analyse doit être avisée par un expert agrée agissant dans le cadre des compétences et attributions de l’Inspection du travail et des mines.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Nonobstant les obligations de l’employeur au titre du présent article, l’employeur est également habilité, s’il y a lieu, à tenir compte des niveaux d’émission et d’autres données pertinentes relatives à la sécurité fournis par le fabricant ou le distributeur, pour l’équipement, y compris une évaluation des risques, si cela est applicable aux conditions d’exposition sur le lieu de travail ou d’installation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>(3)</num>
+<alinea>
+<content>
+<p>S’il s’avère impossible d’établir de manière fiable, en fonction d’informations facilement accessibles, que les VLE sont respectées, l’évaluation de l’exposition est effectuée sur la base de mesures ou de calculs. En pareil cas, l’évaluation tient compte des incertitudes liées aux mesures ou aux calculs, telles que des erreurs numériques, la modélisation des sources, la géométrie spectrale et les propriétés électriques des tissus et des matériaux, déterminées conformément aux bonnes pratiques applicables. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(4)</num>
+<alinea>
+<content>
+<p>L’employeur veille à ce que l’évaluation, la mesure et les calculs visés aux paragraphes 1<sup>er</sup>, 2 et 3 soient programmés et effectués par des services ou personnes compétents, à des intervalles appropriés, en tenant compte en particulier des articles L.312-3 et L.312-7 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>. Les données issues de l’évaluation, de la mesure ou du calcul du niveau d’exposition peuvent être consultées par l’inspectorat de l’Inspection du travail et des mines, les médecins de la Direction de la santé, les salariés désignés, et le cas échéant, les représentants du personnel ainsi que les salariés directement concernés de l’entreprise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces données sont conservées par l’employeur sous forme de papier pendant une durée de 30 ans au moins. Si l’employeur cesse d’exister, et la conservation des données ne peut être garantie, ces données sont à transmettre à l’Association d’assurance accident qui les conserve pendant une durée de 30 ans. </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_14">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Lorsque l’évaluation des risques est effectuée en vertu de l’article L.312-2, paragraphe 4 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>, l’employeur prête une attention particulière aux éléments suivants :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>les « VLE » relatives aux effets sur la santé, les «VLE » relatives aux effets sensoriels et les « VA » visées à l’article 3 et aux annexes II et III ;</li>
+<li>la fréquence, le niveau, la durée et le type d’exposition, y compris la répartition dans l’organisme du salarié et dans l’espace de travail;</li>
+<li>tous les effets biophysiques directs;</li>
+<li>toute incidence sur la santé et la sécurité des salariés à risques particuliers, notamment les salariés portant des dispositifs médicaux implantés, actifs ou passifs tels que des stimulateurs cardiaques, des défibrillateurs, des stimulateurs neurologiques, des valves neurologiques, des prothèses auditives, les salariés portant à même le corps des dispositifs médicaux, tels que les pompes à insuline, et les femmes enceintes;</li>
+<li>tout effet indirect;</li>
+<li>l’existence d’équipements de remplacement conçus pour réduire le niveau d’exposition aux champs électromagnétiques;</li>
+<li>des informations appropriées obtenues du médecin du travail prévu par les articles L.325-1 à L.325-4 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>;</li>
+<li>les informations communiquées par le fabriquant de l’équipement;</li>
+<li>d’autres informations pertinentes concernant la santé et la sécurité; </li>
+<li>des sources d’exposition multiples;</li>
+<li>l’exposition simultanée à des champs de fréquences multiples.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Sur les lieux de travail ouverts au public, il n’est pas nécessaire de procéder à l’évaluation de l’exposition si une évaluation a déjà été effectuée conformément aux dispositions relatives à la limitation de l’exposition du public aux champs électromagnétiques, si les restrictions énoncées dans ces dispositions sont respectées pour les salariés et si tout risque pour la santé et la sécurité est exclu. Ces conditions sont réputées réunies lorsque des équipements conçus pour un usage public sont utilisés conformément à l’usage auquel ils sont destinés.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(7)</num>
+<alinea>
+<content>
+<p>L’employeur dispose d’une évaluation des risques conformément à l’article L.312-5, paragraphe 1<sup>er</sup>, point 1 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>, et il détermine les mesures à prendre conformément à l’article 5. L’évaluation des risques peut comporter des justifications écrites apportées par l’employeur pour faire valoir que la nature et l’ampleur des risques liés aux champs électromagnétiques ne nécessitent pas une évaluation plus complète des risques. L’évaluation des risques est régulièrement mise à jour, lorsque des changements importants, susceptibles de la rendre caduque, tels que des modifications des dispositions légales, réglementaires et administratives, des changements significatifs en ce qui concerne les meilleurs techniques disponibles en la matière, sont intervenus ou lorsque les résultats de la surveillance de la santé visés à l’article 7 en démontrent la nécessité.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_5/20170526</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<heading>
+<b>Dispositions visant à éviter ou à réduire les risques</b>
+</heading>
+<paragraph id="paragraph_17">
+<num>(1)</num>
+<alinea>
+<content>
+<p>En tenant compte des progrès techniques et de la disponibilité de mesures de contrôle de la production de champs électromagnétiques à la source, l’employeur prend les mesures nécessaires pour garantir que les risques résultant des champs électromagnétiques sur le lieu de travail soient éliminés ou réduits au minimum.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La réduction des risques résultant de l’exposition à des champs électromagnétiques repose sur les principes généraux de prévention figurant à l’article L.312-2, paragraphe 2, du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_18">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sur la base de l’évaluation des risques visée à l’article 4, lorsque les « VA » pertinentes visées à l’article 3 et aux annexes II et III sont dépassées, et à moins que l’évaluation effectuée conformément à l’article 4, paragraphes 1<sup>er</sup>, 2 et 3, ne démontre que les « VLE » pertinentes ne sont pas dépassées et que tout risque pour la sécurité peut être exclu, l’employeur établit et met en œuvre un plan d’action qui inclut des mesures techniques ou organisationnelles visant à empêcher que l’exposition ne dépasse les « VLE » relatives aux effets sur la santé et les « VLE » relatives aux effets sensoriels, en tenant notamment compte des éléments suivants:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>d’autres méthodes de travail nécessitant une exposition moindre à des champs électromagnétiques;</li>
+<li>le choix d’équipements émettant des champs électromagnétiques moins intenses, en tenant compte du travail à effectuer;</li>
+<li>des mesures techniques visant à réduire l’émission de champs électromagnétiques, y compris, lorsque c’est nécessaire, le recours à des mécanismes de verrouillage, de blindage ou à des mécanismes similaires de protection de la santé;</li>
+<li>des mesures appropriées en matière de délimitation et d’accès tels que des signaux, un étiquetage, un marquage au sol, des barrières, afin de limiter ou de contrôler l’accès;</li>
+<li>en cas d’exposition à des champs électriques, des mesures et procédures permettant de gérer les décharges d’étincelles et les courants de contact grâce à des moyens techniques et à la formation des salariés;</li>
+<li>des programmes appropriés de maintenance des équipements de travail, du lieu de travail et des postes de travail;</li>
+<li>la conception et l’agencement des lieux et postes de travail;</li>
+<li>des limitations de la durée et de l’intensité de l’exposition; et</li>
+<li>la disponibilité d’équipements appropriés de protection individuelle.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_19">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Sur la base de l’évaluation des risques visée à l’article 4, l’employeur élabore et applique un plan d’action qui comprend des mesures techniques ou organisationnelles afin d’éviter tout risque pour les salariés à risques particuliers et tout risque lié aux effets indirects visés à l’article 4.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_20">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Outre la transmission des informations visées à l’article 6, l’employeur adapte, en vertu de l’article L.314-1 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>, les mesures visées au présent article aux exigences des salariés à risques particuliers et, le cas échéant, aux évaluations des risques individuelles, notamment à l’égard des salariés ayant déclaré qu’ils portent un dispositif médical implanté actif ou passif tel qu’un stimulateur cardiaque, un défibrillateur, un stimulateur neurologique, des valves neurologiques, des prothèses auditives ou qu’ils portent à même le corps un dispositif médical annexe tel qu’une pompe à insuline, ou à l’égard des salariées enceintes ayant informé leur employeur de leur état.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_21">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Sur la base de l’évaluation des risques visée à l’article 4, les lieux de travail où les salariés sont susceptibles d’être exposés à des champs électromagnétiques dépassant les « VA » font l’objet d’une signalisation adéquate, conformément aux annexes II et III et au <ref href="/eli/etat/leg/rgd/2016/11/14/n2/jo">règlement grand-ducal du 14 novembre 2016</ref> concernant les prescriptions minimales pour la signalisation de sécurité et de santé au travail. Les lieux en question sont identifiés et leur accès est limité s’il y a lieu. Lorsque l’accès à ces lieux est convenablement restreint pour d’autres motifs et que les salariés sont informés des risques que présentent les champs électromagnétiques, la signalisation et les restrictions d’accès propres aux champs électromagnétiques ne sont pas requis.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_22">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Lorsque l’article 3, paragraphe 3, point 1, s’applique, des mesures de protection spécifiques sont prises, telles que la formation des salariés conformément à l’article 6 et l’utilisation de moyens techniques et de mesures de protection, par exemple la mise à la terre des ouvrages, la liaison entre les salariés et les ouvrages (liaison équipotentielle) et, en fonction des besoins et conformément à l’article 4, paragraphe 1<sup>er</sup>, point a), du <ref href="/eli/etat/leg/rgd/1994/11/04/n3/jo">règlement grand-ducal du 4 novembre 1994</ref> concernant les prescriptions minimales de sécurité et de santé pour l’utilisation par les travailleurs au travail d’équipements de protection individuelle, l’utilisation de chaussures isolantes, de gants et de vêtements de protection.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_23">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Lorsque l’article 3, paragraphe 4, point 1, s’applique, des mesures de protection spécifiques, telles que le contrôle des mouvements, sont prises.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_24">
+<num>(8)</num>
+<alinea>
+<content>
+<p>Les salariés ne sont pas soumis à des expositions supérieures aux « VLE » applicables aux effets sur la santé et aux « VLE » applicables aux effets sensoriels, à moins que les conditions prévues, soit à l’article 9, points 1 ou 3, soit à l’article 3, paragraphes 3 ou 4, ne soient remplies. Si, en dépit des mesures prises par l’employeur, les « VLE » relatives aux effets sur la santé et les « VLE » relatives aux effets sensoriels sont dépassées, l’employeur prend immédiatement des mesures pour ramener l’exposition au-dessous de celles-ci. L’employeur détermine et consigne les causes du dépassement des « VLE » relatives aux effets sur la santé et des « VLE » relatives aux effets sensoriels et modifie en conséquence les mesures de protection et de prévention afin d’éviter tout nouveau dépassement. Les mesures de protection et de prévention modifiées peuvent être consultées par l’inspectorat de l’Inspection du travail et des mines, les médecins de la Direction de la santé, les salariés désignés, et le cas échéant les représentants du personnel ainsi que les salariés directement concernés de l’entreprise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les mesures de protection et de prévention sont conservées par l’employeur sous forme de papier pendant une durée de 30 ans au moins. Si l’employeur cesse d’exister, et la conservation des données ne peut être garantie, ces données sont à transmettre à l’Association d’assurance accident qui les conserve pendant une durée de 30 ans.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_25">
+<num>(9)</num>
+<alinea>
+<content>
+<p>Lorsque l’article 3, paragraphes 3 et 4, s’appliquent, et lorsque le salarié signale l’apparition des symptômes passagers, l’employeur met à jour, si nécessaire, l’évaluation des risques et les mesures préventives. Les symptômes passagers peuvent inclure:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>des perceptions sensorielles et des effets sur le fonctionnement du système nerveux central dans la tête suscités par des champs magnétiques variant dans le temps; et</li>
+<li>des effets du champ magnétique statique, tels que des vertiges et des nausées.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_6/20170526</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<heading>
+<b>Information et formation des salariés</b>
+</heading>
+<alinea>
+<content>
+<p>Sans préjudice des articles L.312-6 et L.312-8 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>, l’employeur veille à ce que les salariés qui sont susceptibles d’être exposés à des champs électromagnétiques sur le lieu de travail ou leurs représentants reçoivent toute information nécessaire et une formation en rapport avec le résultat de l’évaluation des risques prévue à l’article 4, notamment en ce qui concerne :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>les mesures prises en application du présent règlement grand-ducal;</li>
+<li>les valeurs et les concepts relatifs aux « VLE » et aux « VA », les risques potentiels associés et les mesures de prévention prises;</li>
+<li>les effets indirects potentiels de l’exposition;</li>
+<li>les résultats de l’évaluation, de la mesure ou des calculs des niveaux d’exposition aux champs électromagnétiques effectués en application de l’article 4;</li>
+<li>la manière de dépister les effets nocifs d’une exposition sur la santé et de les signaler;</li>
+<li>la possibilité de symptômes passagers et de sensations liés aux effets sur le système nerveux central ou périphérique;</li>
+<li>les circonstances dans lesquelles les salariés ont droit à une surveillance de la santé;</li>
+<li>des pratiques professionnelles sûres permettant de réduire les risques résultant d’une exposition;</li>
+<li>les salariés à risques particuliers visés à l’article 4, paragraphe 5, point 4, et à l’article 5, paragraphes 3 et 4.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_3">
+<num>
+<b>Chapitre 3 </b>
+</num>
+<heading>
+<b>Dispositions diverses</b>
+</heading>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_7/20170526</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<heading>
+<b>Surveillance de la santé</b>
+</heading>
+<paragraph id="paragraph_26">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Afin de prévenir et de détecter le plus rapidement possible tout effet nocif sur la santé résultant de l’exposition à des champs électromagnétiques, une surveillance appropriée de la santé des salariés est assurée conformément aux articles L.326-1 à L.327-2 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>. Des dossiers médicaux ainsi que la disponibilité de ceux-ci sont prévus conformément au <ref href="/eli/etat/leg/rgd/1996/04/02/n1/jo" id="3ed6b018-f3e0-4c54-aa9c-ac40d8b319c2">règlement grand-ducal du 2 avril 1996</ref> relatif au personnel, aux locaux et à l’équipement des services de santé au travail.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_27">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Conformément à l’article L.326-4 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref> et au <ref href="/eli/etat/leg/rgd/1996/04/02/n1/jo">règlement grand-ducal du 2 avril 1996</ref> relatif au personnel, aux locaux et à l’équipement des services de santé au travail, les résultats de la surveillance médicale sont conservés sous une forme appropriée le temps nécessaire pour permettre leur consultation ultérieure, dans le respect des exigences relatives à la confidentialité. Les salariés individuels ont, à leur demande, le droit d’accéder à leurs dossiers médicaux personnels.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si tout effet indésirable ou inattendu sur la santé est signalé par un salarié, ou lorsqu’une exposition supérieure aux « VLE » est détectée, l’employeur veille à ce que le salarié concerné puisse bénéficier d’examens médicaux ou d’une surveillance médicale appropriés, conformément aux articles L.326-1 à L.327-1 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces examens ou cette surveillance doivent avoir lieu pendant le temps de travail, et les coûts y afférents sont à la charge de l’employeur. Le temps consacré par les salariés pendant les heures de travail aux examens précités est considéré comme temps de travail.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_8/20170526</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<heading>
+<b>Sanctions</b>
+</heading>
+<paragraph id="paragraph_28">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Est puni d’une ou des peines prévues à l’article L.314-4 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>l’employeur qui par infraction à l’article 3, paragraphe 2, ne veille pas à ce que l’exposition des salariés aux champs électromagnétiques soit limitée aux « VLE » relatives aux effets sur la santé et aux « VLE » relatives aux effets sensoriels établies à l’annexe II pour les effets non thermiques ou athermiques, et établies à l’annexe III pour les effets thermiques, à l’exception des dérogations visées à cet article;</li>
+<li>l’employeur qui par infraction à l’article 3, paragraphe 2, ne prend pas immédiatement et conformément à l’article 5, paragraphe 8, des mesures pour remédier au dépassement des « VLE »;</li>
+<li>l’employeur qui par infraction à l’article 3, paragraphe 3, ne prend pas les mesures prévues conformément à l’article 5, paragraphe 2, lorsque l’exposition dépasse les « VA », à l’exception des dérogations visées à cet article;</li>
+<li>l’employeur qui par infraction à l’article 4, paragraphe 1<sup>er</sup>, n’évalue pas tous les risques pour les salariés dus aux champs électromagnétiques sur le lieu de travail et, si nécessaire, ne mesure pas ou ne calcule pas les niveaux des champs électromagnétiques auxquels les salariés sont exposés;</li>
+<li>l’employeur qui par infraction à l’article 4, paragraphe 4, ne veille pas à ce que l’évaluation, la mesure et les calculs visés aux paragraphes 1<sup>er</sup>, 2 et 3 soient programmés et effectués par des services ou personnes compétents, à des intervalles appropriés;</li>
+<li>l’employeur qui par infraction à l’article 4, paragraphe 4, alinéa 2, ne conserve pas les informations y visées sous forme de papier pendant une durée de 30 ans au moins;</li>
+<li>l’employeur qui par infraction à l’article 4, paragraphe 4, alinéa 2, ne transmet pas les informations y visées à l’Association d’assurance accidents;</li>
+<li>l’employeur qui par infraction à l’article 4, paragraphe 5, ne prête pas une attention particulière aux éléments cités à l’article en question lors de l’évaluation des risques y prévue;</li>
+<li>l’employeur qui par infraction à l’article 4, paragraphe 7, ne dispose pas de l’évaluation des risques et ne détermine pas les mesures à prendre y visées;</li>
+<li>l’employeur qui par infraction à l’article 4, paragraphe 7, ne met pas à jour l’évaluation des risques dans les cas y définis;</li>
+<li>l’employeur qui par infraction à l’article 5, paragraphe 1<sup>er</sup>, ne prend pas les mesures nécessaires pour garantir que les risques résultant des champs électromagnétiques sur le lieu de travail soient éliminés ou réduits au minimum;</li>
+<li>l’employeur qui par infraction à l’article 5 paragraphe 2, n’établit et ne met pas en œuvre le plan d’action y prévu en tenant compte des éléments énumérés;</li>
+<li>l’employeur qui par infraction à l’article 5 paragraphe 3, n’élabore et n’applique pas le plan d’action y prévu concernant les salariés à risques particuliers;</li>
+<li>l’employeur qui par infraction à l’article 5 paragraphe 4, n’adapte pas les mesures y visées aux exigences des salariés à risques particuliers et, le cas échéant, aux évaluations des risques individuels à l’égard des salariés y visés ou à l’égard des salariées enceintes ayant informé leur employeur de leur état;</li>
+<li>l’employeur qui par infraction à l’article 5, paragraphe 5, n’appose pas la signalisation adéquate y prévue;</li>
+<li>l’employeur qui par infraction à l’article 5, paragraphe 6, ne prend pas les mesures de protection spécifiques y visées;</li>
+<li>l’employeur qui par infraction à l’article 5, paragraphe 7, ne prend pas les mesures de protection spécifiques y visées;</li>
+<li>l’employeur qui par infraction à l’article 5, paragraphe 8, en cas de dépassement des « VLE » y visés, ne prend pas immédiatement des mesures pour ramener l’exposition au-dessous de celles-ci;</li>
+<li>l’employeur qui par infraction à l’article 5, paragraphe 8, ne détermine et ne consigne pas les causes du dépassement y visé et ne modifie pas en conséquence les mesures de protection et de prévention;</li>
+<li>l’employeur qui par infraction à l’article 5, paragraphe 8, alinéa 2, ne conserve pas les informations y visées sous forme de papier pendant une durée de 30 ans au moins;</li>
+<li>l’employeur qui par infraction à l’article 5, paragraphe 8, alinéa 2, ne transmet pas les informations y visées à l’Association d’assurance accidents;</li>
+<li>l’employeur qui par infraction à l’article 5, paragraphe 9, ne met pas à jour l’évaluation des risques et les mesures préventives;</li>
+<li>l’employeur qui par infraction à l’article 6, ne veille pas à ce que les personnes y visées reçoivent toute information nécessaire ainsi que la formation y prévues;</li>
+<li>l’employeur qui par infraction à l’article 7, paragraphe 2, alinéa 2, ne veille pas à ce que le salarié concerné puisse bénéficier d’examens médicaux ou d’une surveillance médicale appropriés, conformément aux articles L.326-1 à L.327-1 du <ref href="/eli/etat/leg/loi/2006/07/31/n2/jo">Code du travail</ref>;</li>
+<li>l’employeur qui par infraction à l’article 7, paragraphe 2, alinéa 3, ne rend pas possible ces examens ou cette surveillance pendant les heures de travail ou ne prend pas en charge les coûts y afférents.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_9/20170526</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<heading>
+<b>Dérogations</b>
+</heading>
+<alinea>
+<content>
+<p>Par dérogation à l’article 3, mais sans préjudice de l’article 5, paragraphe 1<sup>er</sup>, les dispositions suivantes s’appliquent: </p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>L’exposition peut dépasser les « VLE » si elle est liée à l’installation, à l’essai, à l’utilisation, au développement, à l’entretien d’équipements d’imagerie par résonance magnétique (IRM) destinés aux soins aux patients dans le secteur de la santé ou si elle est liée à la recherche dans ce domaine, pour autant que toutes les conditions suivantes soient remplies:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>l’évaluation des risques effectuée conformément à l’article 4 a montré que les « VLE » sont dépassées;</li>
+<li>compte tenu de l’état des connaissances du moment, toutes les mesures techniques ou organisationnelles ont été appliquées;</li>
+<li>les circonstances du dépassement des « VLE » sont dûment justifiées;</li>
+<li>les caractéristiques du lieu de travail, de l’équipement de travail ou des pratiques de travail ont été prises en compte; et </li>
+<li>l’employeur démontre que lessalariés sont encore protégés contre les effets nocifs pour la santé et les risques pour la sécurité, y compris en veillant à ce que les instructions fournies par le fabricant en vue d’une utilisation sûre conformément à la <ref href="/eli/etat/leg/loi/1990/01/16/n1/jo">loi du 16 janvier 1990</ref> relative aux dispositifs médicaux ainsi qu’au <ref href="/eli/etat/leg/rgd/1996/08/11/n12/jo">règlement grand-ducal modifié du 11 août 1996</ref> relatif aux dispositifs médicaux soient suivies;</li>
+</ol>
+</li>
+<li>La Direction de la santé, l’Inspection du travail et des mines, le Service national de la sécurité dans la fonction publique, l’Administration des services médicaux du secteur public ou le Service de santé de l’armée luxembourgeoise, chacun en ce qui le concerne peuvent autoriser la mise en œuvre d’un système de protection équivalent ou plus spécifique pour le personnel travaillant dans des installations militaires opérationnelles ou participant à des activités militaires, y compris des exercices militaires internationaux conjoints, pour autant qu’il permette de prévenir les effets nocifs pour la santé et les risques pour la sécurité;</li>
+<li>La Direction de la santé et l’Inspection du travail et des mines, chacun en ce qui le concerne peuvent autoriser, dans des circonstances dûment justifiées et aussi longtemps qu’elles le restent, un dépassement temporaire des « VLE » dans des secteurs spécifiques ou pour des activités spécifiques en dehors du champ d’application des points 1 et 2. Aux fins du présent point, on entend par « circonstances dûment justifiées » les circonstances dans lesquelles les conditions suivantes sont remplies:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>l’évaluation des risques effectuée conformément à l’article 4 a montré que les « VLE » sont dépassées;</li>
+<li>compte tenu de l’état des connaissances du moment, toutes les mesures techniques ou organisationnelles ont été appliquées;</li>
+<li>les caractéristiques particulières du lieu de travail, du matériel de travail ou des pratiques de travail ont été prises en compte; et</li>
+<li>l’employeur démontre que les salariés sont toujours protégés contre les effets nocifs pour la santé et les risques pour la sécurité, notamment en utilisant des normes et des lignes directrices comparables, plus spécifiques et reconnues au niveau international.</li>
+</ol>
+</li>
+<li>Aux fins des dérogations citées aux points 1 à 3, l’employeur est tenu de faire constater par un expert agréé agissant dans le cadre des compétences et attributions de l’Inspection du travail et des mines la conformité et l’exactitude des mesures mises en œuvre par rapport aux conditions du présent article.</li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_4">
+<num>
+<b>Chapitre 4</b>
+</num>
+<heading>
+<b>Dispositions finales</b>
+</heading>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498/art_10/20170526</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/05/17/a498</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-05-26</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<heading>
+<b>Exécution</b>
+</heading>
+<alinea>
+<content>
+<p>Notre Ministre du Travail, de l’Emploi et de l’Economie sociale et solidaire et Notre Ministre de la Santé sont chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+<attachments>
+<attachment id="attachment_1">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center" scl:space-after="15">
+<b>
+<u>ANNEXE I</u>
+</b>
+</p>
+<p scl:align="center" scl:space-after="15">
+<b>GRANDEURS PHYSIQUES RELATIVES À L’EXPOSITION À DES CHAMPS ÉLECTROMAGNÉTIQUES</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<p>Les grandeurs physiques suivantes sont utilisées pour décrire l’exposition à des champs électromagnétiques. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’intensité de champ électrique (E) est une grandeur vectorielle qui correspond à la force exercée sur une particule chargée, indépendamment de son déplacement dans l’espace. Elle est exprimée en volt par mètre (Vm<sup>–1</sup>). Une distinction doit être opérée entre le champ électrique ambiant et le champ électrique présent dans le corps (in situ) résultant de l’exposition au champ électrique ambiant.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le courant induit dans les extrémités (I<sub>L</sub>) est le courant traversant les membres d’une personne exposée à des champs électromagnétiques dans la gamme de fréquences comprises entre 10 et 110 MHz résultant du contact avec un objet dans un champ électromagnétique ou du flux de courants capacitifs induits dans le corps exposé. Il est exprimé en ampères (A). </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le courant de contact (I<sub>C</sub>) est un courant qui apparaît lorsqu’une personne entre en contact avec un objet dans un champ électromagnétique. Il est exprimé en ampères (A). Un courant de contact d’état stable se produit lorsqu’une personne est en contact continu avec un objet dans un champ électromagnétique. Au cours de l’établissement dudit contact, une décharge d’étincelles accompagnée de courants passagers associés est susceptible de se former</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La charge électrique (Q) est une quantité appropriée utilisée pour la décharge d’étincelles; elle est exprimée en coulombs (C).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’intensité de champ magnétique (H) est une grandeur vectorielle qui, avec l’induction magnétique, définit un champ magnétique en tout point de l’espace. Elle est exprimée en ampère par mètre (Am<sup>–1</sup>). </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’induction magnétique (densité de flux magnétique) (B) est une grandeur vectorielle définie en termes de force exercée sur des charges circulantes, exprimée en tesla (T). En espace libre et dans les matières biologiques, l’induction magnétique et l’intensité de champ magnétique peuvent être utilisées indifféremment selon l’équivalence intensité de champ magnétique H de 1 Am<sup>–1</sup> = induction magnétique B de 4π 10 <sup>–7</sup> T (soit environ 1,25 microtesla).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La densité de puissance (S) est une grandeur appropriée utilisée pour des hyperfréquences lorsque la profondeur de pénétration dans le corps est faible. Il s’agit du quotient de la puissance rayonnée incidente perpendiculaire à une surface par l’aire de cette surface; elle est exprimée en watt par m<sup>2</sup> (Wm<sup>–2</sup>).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’absorption spécifique (AS) de l’énergie est une énergie absorbée par une unité de masse de tissus biologiques; elle est exprimée en joule par kilogramme (Jkg<sup>–1</sup>). Dans le présent règlement grand-ducal, elle est utilisée pour limiter les effets des rayonnements micro-ondes pulsés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le débit d’absorption spécifique (DAS) de l’énergie moyenne sur l’ensemble du corps ou sur une partie quelconque du corps est le débit avec lequel l’énergie est absorbée par unité de masse du tissu du corps; il est exprimé en watt par kilogramme (Wkg<sup>–1</sup>). Le DAS «corps entier» est une mesure largement acceptée pour établir le rapport entre les effets thermiques nocifs et l’exposition aux radiofréquences. Outre le DAS «moyenne sur le corps entier», des valeurs de DAS local sont nécessaires pour évaluer et limiter un dépôt excessif d’énergie dans des petites parties du corps résultant de conditions d’exposition spéciales. Citons comme exemples de ces conditions: un individu exposé à une radiofréquence dans la gamme inférieure des MHz (un poste de chauffage diélectrique, par exemple) et des individus exposés dans le champ proche d’une antenne.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Parmi ces grandeurs, l’induction magnétique (B), les courants de contact (IC), les courants induits dans les extrémités (I<sub>L</sub>), l’intensité de champ électrique (E), l’intensité de champ magnétique (H) et la densité de puissance (S) peuvent être mesurés directement. </p>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+<attachment id="attachment_2">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center" scl:space-after="15">
+<u>
+<eop/>
+<b>Annexe II</b>
+</u>
+</p>
+<p scl:align="center" scl:space-after="15">
+<b>EFFETS NON THERMIQUES</b>
+</p>
+<p scl:align="center" scl:space-after="15">
+<b>VALEURS LIMITES D’EXPOSITION ET VALEURS DÉCLENCHANT L’ACTION DANS LA GAMME DE FRÉQUENCES COMPRISES ENTRE 0 Hz ET 10 MHz</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="A.">
+<li>VALEURS LIMITES D’EXPOSITION (VLE)</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VLE inférieures à 1 Hz (tableau A1) sont des limites pour le champ magnétique statique qui n’est pas affecté par les tissus du corps. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VLE pour des fréquences comprises entre 1 Hz et 10 MHz (tableau A2) sont des limites pour les champs électriques induits dans le corps du fait de l’exposition à des champs électriques et magnétiques variant dans le temps.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>VLE pour une induction magnétique externe comprise entre 0 Hz et 1 Hz.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La VLE relative aux effets sensoriels est la VLE pour des conditions de travail normales (tableau A1); elle est liée à des vertiges et à d’autres effets physiologiques ayant trait à des troubles de l’organe de l’équilibre chez l’homme dus principalement au déplacement dans un champ magnétique statique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La VLE relative aux effets sur la santé dans des conditions de travail contrôlées (tableau A1) est applicable à titre temporaire au cours d’une période de travail lorsque cela est justifié par la pratique ou le procédé, pour autant que des mesures préventives telles que le contrôle des mouvements et l’information des salariés aient été adoptées. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau A1</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VLE pour une induction magnétique externe (B0) comprise entre 0 Hz et 1 Hz</b>
+</p>
+<table border="1" id="table_23" scl:cols="50 50" width="100">
+<tr>
+<td>
+<p/>
+</td>
+<td>
+<p>VLE relative aux effets sensoriels</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Conditions de travail normales</p>
+</td>
+<td>
+<p>2 T</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Exposition localisée de membres</p>
+</td>
+<td>
+<p>8 T</p>
+</td>
+</tr>
+<tr>
+<td>
+<p/>
+</td>
+<td>
+<p>VLE relative aux effets sur la santé</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Conditions de travail contrôlées</p>
+</td>
+<td>
+<p>8 T</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>VLE relatives aux effets sur la santé pour une intensité de champ électrique interne dans la gamme de fréquences comprises entre 1 Hz et 10 MHz. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VLE relatives aux effets sur la santé (tableau A2) sont liées à une stimulation électrique de tous les tissus du système nerveux central et périphérique à l’intérieur du corps, y compris la tête.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau A2</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VLE relatives aux effets sur la santé pour une intensité de champ électrique interne dans la gamme de fréquences comprises entre 1 Hz et 10 MHz</b>
+</p>
+<table border="1" id="table_24" scl:cols="50 50" width="100">
+<tr>
+<td>
+<p>Gamme de fréquences</p>
+</td>
+<td>
+<p>VLE relative aux effets sur la santé</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 Hz ≤ f &lt; 3 kHz</p>
+</td>
+<td>
+<p>1,1 Vm<sup>– 1</sup> (crête)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 kHz ≤ f ≤ 10 MHz</p>
+</td>
+<td>
+<p>3,8 ×10 <sup>– 4</sup> f Vm<sup>– 1</sup> (crête)</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_3" scl:cols="15 85" width="100">
+<tr>
+<td>
+<p>Note A2-1:</p>
+</td>
+<td>
+<p>f est la fréquence exprimée en hertz (Hz).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Note A2-2:</p>
+</td>
+<td>
+<p>les VLE relatives aux effets sur la santé pour le champ électrique interne sont des valeurs </p>
+<p>de crête spatiales dans l’ensemble du corps du sujet exposé.</p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note A2-3: </p>
+</td>
+<td>
+<p>Les VLE sont des valeurs de crête dans le temps qui sont égales aux valeurs moyennes </p>
+<p>quadratiques (Rms) multipliées par la √2 pour les champs sinusoïdaux. Dans le cas de champs non-sinusoïdaux, l’évaluation de l’exposition effectuée conformément à l’article 4 est fondée sur la méthode de mesure utilisant la technique de crête pondérée (filtrage dans le domaine temporel), expliquée dans le guide pratique visé à l’article 14 de la <ref href="/eli/dir_ue/2013/35/jo">directive 2013/35/UE</ref> du Parlement européen et du Conseil du 26 juin 2013 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des travailleurs aux risques dus aux agents physiques (champs électromagnétiques); d’autres procédures d’évaluation de l’exposition scientifiquement démontrées et validées peuvent néanmoins être appliquées, pour autant qu’elles mènent à des résultats approximativement équivalents et comparables.</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>VLE relatives aux effets sensoriels pour une intensité de champ électrique interne dans la gamme de fréquences comprises entre 1 Hz et 400 Hz.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VLE relatives aux effets sensoriels (tableau A3) sont liées à des effets du champ électrique sur le système nerveux central dans la tête, c’est-à-dire à des phosphènes rétiniens ou à des modifications mineures passagères de certaines fonctions cérébrales.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>
+<mod class="mod-start" for="#pm2"/>Tableau A3</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VLE relatives aux effets sensoriels pour une intensité de champ électrique interne dans la gamme de fréquences comprises entre 1 Hz et 400 Hz</b>
+</p>
+<table border="1" id="table_25" scl:cols="50 50" width="100">
+<tr scl:border-color="black">
+<td>
+<p>Gamme de fréquences</p>
+</td>
+<td>
+<p>VLE relative aux effets sensoriels</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 Hz ≤ f &lt; 10 Hz</p>
+</td>
+<td>
+<p>0,7/f Vm <sup>– 1</sup> (crête)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>10 Hz ≤ f &lt; 25 Hz</p>
+</td>
+<td>
+<p>0,07 Vm <sup>– 1</sup> (crête)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>25 Hz ≤ f ≤ 400 Hz</p>
+</td>
+<td>
+<p>0,0028 f Vm <sup>– 1 </sup>(crête)</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_5" scl:cols="15 85" width="100">
+<tr>
+<td>
+<p>Note A3-1:</p>
+</td>
+<td>
+<p>f est la fréquence exprimée en hertz (Hz).</p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note A3-2: </p>
+</td>
+<td>
+<p>les VLE relatives aux effets sensoriels pour le champ électrique interne sont des valeurs de crête spatiales dans la tête du sujet exposé.</p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note A3-3:</p>
+</td>
+<td>
+<p>les VLE sont des valeurs de crête dans le temps qui sont égales aux valeurs moyennes quadratiques (Rms) multipliées par la √2 pour les champs sinusoïdaux. Dans le cas de champs non-sinusoïdaux, l’évaluation de l’exposition effectuée conformément à l’article 4 est fondée sur la méthode de mesure utilisant la technique de crête pondérée (filtrage dans le domaine temporel), expliquée dans le guide pratique visé à l’article 14 de la <ref href="/eli/dir_ue/2013/35/jo" id="b765f987-edaa-479f-bbcd-8494c9d37856">directive 2013/35/UE</ref> du Parlement européen et du Conseil du 26 juin 2013 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des travailleurs aux risques dus aux agents physiques (champs électromagnétiques) (vingtième directive particulière au sens de l’article 16, paragraphe 1, de la <ref href="/eli/dir_ue/1989/391/jo" id="840d80ba-bc5f-4eee-8a3a-d66c983a41ec">directive 89/391/CEE</ref>) et abrogeant la <ref href="/eli/dir_ue/2004/40/jo" id="5bc8e6ab-d0f8-4513-b6b0-8a9a0f2bfaec">directive 2004/40/CE</ref> ; d’autres procédures d’évaluation de l’exposition scientifiquement démontrées et validées peuvent néanmoins être appliquées, pour autant qu’elles mènent à des résultats approximativement équivalents et comparables.<mod class="mod-end" for="#pm2"/>
+<noteRef href="#M2" marker="2"/> </p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p/>
+</content>
+</alinea>
+<alinea>
+<content>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="2" ns3727365:symbol="A.">
+<li>VALEURS DÉCLENCHANT L’ACTION (VA)</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les quantités et valeurs physiques ci-après sont utilisées pour définir les valeurs déclenchant l’action (VA), dont le niveau est établi de manière à assurer, par une évaluation simplifiée, le respect des VLE pertinentes ou des valeurs à partir desquelles les mesures de protection ou de prévention pertinentes précisées à l’article 5 doivent être prises:</p>
+<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash">
+<li>VA(E) basse et VA(E) haute pour une intensité de champ électrique E de champs électriques variant dans le temps (voir tableau B1),</li>
+<li>VA(B) basse et VA(B) haute pour une induction magnétique B de champs magnétiques variant dans </li>
+<li>le temps (voir tableau B2),</li>
+<li>VA(I<sub>C</sub>) pour les courants de contact (voir tableau B3), </li>
+<li>VA(B<sub>0</sub>) pour une induction magnétique de champs magnétiques statiques (voir tableau B4). </li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VA correspondent aux valeurs des champs électriques ou magnétiques calculées ou mesurées sur le lieu de travail en l’absence du salarié. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Valeurs déclenchant l’action (VA) pour une exposition à des champs électriques .</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VA basses (tableau B1) pour un champ électrique externe sont fondées sur le maintien du champ électrique interne sous les VLE (tableaux A2 et A3) et la limitation des décharges d’étincelles dans l’environnement de travail. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En dessous de la VA haute, le champ électrique interne ne dépasse pas les VLE (tableaux A2 et A3) et les décharges d’étincelles dérangeantes sont évitées, à condition que soient prises les mesures de protection visées à l’article 5, paragraphe 6.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau B1</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VA pour une exposition à des champs électriques compris entre 1 Hz et 10 MHz</b>
+</p>
+<table border="1" id="table_6" scl:cols="33 34 33" width="100">
+<tr scl:border-color="black">
+<td scl:border-color="black">
+<p>Gamme de fréquences</p>
+</td>
+<td>
+<p>VA(E) basse pour intensité de champ électrique [Vm<sup>– 1</sup>] (Rms)</p>
+</td>
+<td>
+<p>VA(E) haute pour intensité de champ électrique [Vm<sup>– 1</sup>] (Rms)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 ≤ f &lt; 25 Hz </p>
+</td>
+<td>
+<p>2,0 ×10 <sup>4</sup> </p>
+</td>
+<td>
+<p>2,0 × 10 <sup>4 </sup>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>25 ≤ f &lt; 50 Hz </p>
+</td>
+<td>
+<p>5,0 × 10 <sup>5</sup> /f </p>
+</td>
+<td>
+<p>2,0 × 10 <sup>4 </sup>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>50 Hz ≤ f &lt; 1,64 kHz </p>
+</td>
+<td>
+<p>5,0 × 10 <sup>5</sup> /f </p>
+</td>
+<td>
+<p>1,0 × 10 <sup>6</sup> /f</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1,64 ≤ f &lt; 3 kHz </p>
+</td>
+<td>
+<p>5,0 ×10 <sup>5</sup> /f </p>
+</td>
+<td>
+<p>6,1 × 10 <sup>2</sup> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 kHz ≤ f ≤ 10 MHz </p>
+</td>
+<td>
+<p>1,7 × 10 <sup>2</sup> </p>
+</td>
+<td>
+<p>6,1 × 10 <sup>2 </sup>
+</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_7" scl:cols="15 85" width="100">
+<tr>
+<td>
+<p>Note B1-1:</p>
+</td>
+<td>
+<p> f est la fréquence exprimée en hertz (Hz). </p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note B1-2:</p>
+</td>
+<td>
+<p>La VA (E) basse et la VA (E) haute sont des valeurs moyennes quadratiques (Rms) de l’intensité du champ électrique égales aux valeurs de crête divisées par la √2 pour des champs sinusoïdaux. Dans le cas d’un champ non-sinusoïdal, l’évaluation de l’exposition effectuée conformément à l’article 4 est fondée sur la méthode de mesure utilisant la technique de crête pondérée (filtrage dans le domaine temporel), expliquée dans le guide pratique, visé à l’article 14 de la <ref href="/eli/dir_ue/2013/35/jo">directive 2013/35/UE</ref> du Parlement européen et du Conseil du 26 juin 2013 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des travailleurs aux risques dus aux agents physiques (champs électromagnétiques); d’autres procédures d’évaluation de l’exposition scientifiquement démontrées et validées peuvent néanmoins être appliquées, pour autant qu’elles mènent à des résultats approximativement équivalents et comparables.</p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note B1-3:</p>
+</td>
+<td>
+<p>Les VA représentent les valeurs maximales calculées ou mesurées à la position du corps du salarié. Cela entraîne une évaluation prudente de l’exposition et un respect automatique des VLE dans toutes les conditions d’exposition non-uniformes. Afin de simplifier l’évaluation du respect des VLE, effectuée conformément à l’article 4, dans des conditions non-uniformes particulières, des critères de calcul pour la moyenne spatiale des champs mesurés, fondés sur une dosimétrie bien établie, seront fixés dans les guides pratiques visés à l’article 14 de la <ref href="/eli/dir_ue/2013/35/jo">directive 2013/35/UE</ref> du Parlement européen et du Conseil du 26 juin 2013 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des travailleurs aux risques dus aux agents physiques (champs électromagnétiques). Dans le cas d’une source très localisée située à une distance de quelques centimètres du corps, le respect des VLE est déterminé au cas par cas par dosimétrie.</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Valeurs déclenchant l’action (VA) pour une exposition à des champs magnétiques .</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VA basses (tableau B2) sont, pour les fréquences inférieures à 400 Hz, dérivées des VLE relatives aux effets sensoriels (tableau A3), et pour les fréquences supérieures à 400 Hz, dérivées des VLE relatives aux effets sur la santé pour un champ électrique interne (tableau A2).</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VA hautes (tableau B2) sont dérivées des VLE relatives aux effets sur la santé pour un champ électrique interne lié à une stimulation électrique des tissus du système nerveux périphérique et autonome dans la tête et le tronc (tableau A2). Le respect des VA hautes garantit le non-dépassement des VLE relatives aux effets sur la santé, mais n’exclut pas les effets liés aux phosphènes rétiniens et à des modifications passagères mineures de l’activité cérébrale, si l’exposition de la tête excède la VA basse pour des expositions à des fréquences inférieures ou égales à 400 Hz. Dans ce cas, l’article 5, paragraphe 6, s’applique. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VA pour une exposition de membres sont dérivées des VLE relatives aux effets sur la santé pour un champ électrique interne lié à une stimulation électrique des tissus à l’intérieur des membres en tenant compte du fait que le champ magnétique est couplé plus faiblement aux membres qu’au corps tout entier.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau B2</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VA pour une exposition à des champs magnétiques compris entre 1 Hz et 10 MHz</b>
+</p>
+<table border="1" id="table_8" scl:cols="25 25 25 25" width="100">
+<tr scl:border-color="black">
+<td scl:border-color="black" scl:valign="top">
+<p>Gamme de fréquences</p>
+</td>
+<td scl:valign="top">
+<p>VA(B) basse pour induction magnétique [μT] (Rms)</p>
+</td>
+<td scl:valign="top">
+<p>VA(B) haute pour induction magnétique [μT] (Rms)</p>
+</td>
+<td>
+<p>VA pour induction magnétique pour une exposition des membres à un champ magnétique localisé [μT] (Rms)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 ≤ f &lt; 8 Hz </p>
+</td>
+<td>
+<p>2,0 × 10 <sup>5</sup> /f <sup>2</sup> </p>
+</td>
+<td>
+<p>3,0 × 10 <sup>5</sup> /f </p>
+</td>
+<td>
+<p>9,0 × 10 <sup>5</sup> /f </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>8 ≤ f &lt; 25 Hz </p>
+</td>
+<td>
+<p>2,5 × 10 <sup>4</sup> /f </p>
+</td>
+<td>
+<p>3,0 × 10 <sup>5</sup> /f </p>
+</td>
+<td>
+<p>9,0 × 10 <sup>5</sup> /f </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>25 ≤ f &lt; 300 Hz </p>
+</td>
+<td>
+<p>1,0 × 10 <sup>3</sup> </p>
+</td>
+<td>
+<p>3,0 × 10 <sup>5</sup> /f </p>
+</td>
+<td>
+<p>9,0 × 10 <sup>5</sup> /f </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>300 Hz ≤ f &lt; 3 kHz </p>
+</td>
+<td>
+<p>3,0 × 10 <sup>5</sup> /f </p>
+</td>
+<td>
+<p>3,0 × 10 <sup>5</sup> /f </p>
+</td>
+<td>
+<p>9,0 × 10 <sup>5</sup> /f </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 kHz ≤ f ≤ 10 MHz</p>
+</td>
+<td>
+<p>1,0 × 10 <sup>2</sup> </p>
+</td>
+<td>
+<p>1,0 × 10 <sup>2 </sup>
+</p>
+</td>
+<td>
+<p>3,0 × 10 <sup>2 </sup>
+</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_9" scl:cols="15 85" width="100">
+<tr>
+<td>
+<p>Note B2-1:</p>
+</td>
+<td>
+<p>f est la fréquence exprimée en hertz (Hz). </p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note B2-2:</p>
+</td>
+<td>
+<p>Les VA basses et les VA hautes sont des valeurs moyennes quadratiques (Rms) égales aux valeurs de crête divisées par la √2 pour des champs sinusoïdaux. Dans le cas de champs non-sinusoïdaux, l’évaluation de l’exposition effectuée conformément à l’article 4 est fondée sur la méthode de mesure utilisant la technique de crête pondérée (filtrage dans le domaine temporel), expliquée dans les guides pratiques visés à l’article 14 de la <ref href="/eli/dir_ue/2013/35/jo">directive 2013/35/UE</ref> du Parlement européen et du Conseil du 26 juin 2013 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des travailleurs aux risques dus aux agents physiques (champs électromagnétiques); d’autres procédures d’évaluation de l’exposition scientifiquement démontrées et validées peuvent néanmoins être appliquées, pour autant qu’elles mènent à des résultats approximativement équivalents et comparables.</p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note B2-3:</p>
+</td>
+<td>
+<p>Les VA pour une exposition à des champs magnétiques représentent les valeurs maximales à la position du corps du salarié. Cela entraîne une évaluation prudente de l’exposition et un respect automatique des VLE dans toutes les conditions d’exposition non-uniformes. Afin de simplifier l’évaluation du respect des VLE, effectuée conformément à l’article 4, dans des conditions non-uniformes particulières, des critères de calcul de la moyenne spatiale des champs mesurés, fondés sur une dosimétrie bien établie, seront fixés dans le guide pratique évoqué à l’article 14 de la <ref href="/eli/dir_ue/2013/35/jo">directive 2013/35/UE</ref> du Parlement européen et du Conseil du 26 juin 2013 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des travailleurs aux risques dus aux agents physiques (champs électromagnétiques). Dans le cas d’une source très localisée située à une distance de quelques centimètres du corps, le champ électrique induit est déterminé au cas par cas par dosimétrie.</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau B3</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VA pour un courant de contact I<sub>C</sub>
+</b>
+</p>
+<table border="1" id="table_10" scl:cols="50 50" width="100">
+<tr>
+<td>
+<p>Fréquence</p>
+</td>
+<td>
+<p>VA (I<sub>C</sub>) courant de contact d’état stable [mA] (Rms)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>jusqu’à 2,5 kHz</p>
+</td>
+<td>
+<p>1,0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2,5 ≤ f &lt; 100 kHz</p>
+</td>
+<td>
+<p>0,4 f</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>100 kHz ≤ f ≤ 10 000 kHz</p>
+</td>
+<td>
+<p>40</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_11" scl:cols="15 85" width="100">
+<tr>
+<td>
+<p>Note B3-1:</p>
+</td>
+<td>
+<p> f est la fréquence exprimée en kilohertz (kHz).</p>
+</td>
+</tr>
+</table>
+<p>Valeurs déclenchant l’action (VA) pour une induction magnétique de champs magnétiques statiques</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau B4</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VA pour une induction magnétique de champs magnétiques statiques</b>
+</p>
+<table border="1" id="table_12" scl:cols="50 50" width="100">
+<tr scl:border-color="black">
+<td>
+<p>Risques</p>
+</td>
+<td>
+<p>AL(B<sub>0</sub>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Interférence avec des dispositifs actifs implantés tels que des stimulateurs cardiaques</p>
+</td>
+<td>
+<p>0,5 mT</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Risque d’attraction et de projection dans le champ périphérique de sources de champs intenses (&gt; 100 mT)</p>
+</td>
+<td scl:valign="top">
+<p>3 mT</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+<attachment id="attachment_3">
+<doc name="">
+<meta>
+<identification source="">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name=""/>
+<FRBRauthor href=""/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name=""/>
+<FRBRauthor href=""/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-05-17" name=""/>
+<FRBRauthor href=""/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p scl:align="center">
+<b>
+<u>
+<eop/>ANNEXE III</u>
+</b>
+</p>
+<p scl:align="center">
+<b>EFFETS THERMIQUES</b>
+</p>
+<p scl:align="center">
+<b>VALEURS LIMITES D’EXPOSITION ET VALEURS DÉCLENCHANT L’ACTION DANS LA GAMME DE FRÉQUENCES COMPRISES ENTRE 100 kHz ET 300 GHz</b>
+</p>
+</longTitle>
+</preface>
+<mainBody>
+<alinea>
+<content>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="A.">
+<li>VALEURS LIMITES D’EXPOSITION (VLE) </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VLE relatives aux effets sur la santé pour les fréquences comprises entre 100 kHz et 6 GHz (tableau A1) sont les valeurs limites d’énergie et de puissance absorbée par unité de masse de tissu corporel générées par l’exposition à des champs électriques et magnétiques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VLE relatives aux effets sensoriels pour les fréquences comprises entre 0,3 et 6 GHz (tableau A2) sont les valeurs limites d’énergie absorbée dans une petite masse de tissu à l’intérieur de la tête provenant de l’exposition à des champs électromagnétiques. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VLE relatives aux effets sur la santé pour les fréquences supérieures à 6 GHz (tableau A3) sont les valeurs limites de densité de puissance d’une onde électromagnétique incidente sur la surface du corps.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau A1</i>
+</p>
+<table border="1" id="table_13" scl:cols="50 50" width="100">
+<tr scl:border-color="black" scl:border-type="none">
+<td colspan="2" scl:border-color="black" scl:border-type="simple">
+<p>
+<b>VLE relatives aux effets sur la santé pour une exposition à des champs électromagnétiques ayant des fréquences comprises entre 100 kHz et 6 GHz</b>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>VLE relative aux effets sur la santé</p>
+</td>
+<td>
+<p>Valeurs moyennes de DAS mesurées sur un intervalle de 6 minutes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>VLE liée à l’échauffement de l’ensemble du corps exprimée en moyenne DAS du corps</p>
+</td>
+<td scl:valign="top">
+<p>0,4 Wkg <sup>–1</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>VLE liée à l’échauffement localisé de la tête et du tronc, exprimée sous la forme de DAS localisé du corps</p>
+</td>
+<td scl:valign="top">
+<p>10 Wkg <sup>–1</sup>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>VLE liée à l’échauffement localisé des membres, exprimée sous la forme de DAS localisé des membres</p>
+</td>
+<td>
+<p>20 Wkg <sup>–1</sup>
+</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_14" scl:cols="15 85" width="100">
+<tr>
+<td scl:valign="top">
+<p>Note A1-1: </p>
+</td>
+<td>
+<p>la masse retenue pour évaluer le DAS moyen localisé est de 10 g de tissu contigu; le DAS maximal ainsi obtenu devrait être la valeur utilisée pour l’estimation de l’exposition. Ces 10g de tissu doivent être une masse de tissu contigu aux propriétés électriques pratiquement homogènes. En précisant qu’il doit s’agir d’une masse de tissu contigu, on reconnaît que ce concept peut être utilisé dans la dosimétrie informatique, mais peut présenter des difficultés pour les mesures physiques directes. Une simple masse de tissu, de forme cubique ou sphérique peut être utilisée.</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>VLE relatives aux effets sensoriels pour les fréquences comprises entre 0,3 et 6 GHz </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette VLE relative aux effets sensoriels (tableau A2) est liée à la prévention des effets auditifs causés par des expositions de la tête à des rayonnements micro-ondes pulsés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau A2</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VLE relatives aux effets sensoriels pour une exposition à des champs électromagnétiques compris entre 0,3 et 6 GHz</b>
+</p>
+<table border="1" id="table_15" scl:cols="50 50" width="100">
+<tr>
+<td>
+<p>Gamme de fréquences</p>
+</td>
+<td>
+<p>Absorption spécifique (AS) d’énergie localisée</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>0,3 ≤ f ≤ 6 GHz</p>
+</td>
+<td>
+<p>10 mJkg <sup>–1</sup>
+</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_16" scl:cols="15 85" width="100">
+<tr>
+<td>
+<p>Note A2-1:</p>
+</td>
+<td>
+<p> La masse retenue pour évaluer l’AS localisée est de 10 g de tissus.</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau A3</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VLE relatives aux effets sur la santé pour une exposition à des champs électromagnétiques compris entre 6 et 300 GHz</b>
+</p>
+<table border="1" id="table_17" scl:cols="50 50" width="100">
+<tr>
+<td>
+<p>Gamme de fréquences</p>
+</td>
+<td>
+<p>VLE relatives aux effets sur la santé liées à la densité de puissance </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6 GHz ≤ f ≤ 300 GHz </p>
+</td>
+<td>
+<p>50 Wm <sup>–2</sup>
+</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_18" scl:cols="15 85" width="100">
+<tr>
+<td scl:valign="top">
+<p>Note A3-1: </p>
+</td>
+<td>
+<p>La densité de puissance moyenne est mesurée sur une surface exposée de 20 cm<sup>2</sup>. La valeur moyenne de la densité spatiale maximale de puissance, calculée pour 1 cm<sup>2</sup>, ne devrait pas dépasser 20 fois la valeur de 50 Wm<sup>–2</sup>. La moyenne des densités de puissance comprises entre 6 et 10 GHz doit être mesurée sur un intervalle de temps de 6 minutes. Les densités de puissance moyennes pour des fréquences supérieures à 10 GHz sont calculées sur un intervalle de temps de 68/f <sup>1,05</sup> minutes (f étant la fréquence exprimée en GHz) afin de compenser une baisse progressive de la profondeur de pénétration au fur et à mesure que la fréquence augmente. </p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="2" ns3727365:symbol="A.">
+<li>VALEURS DÉCLENCHANT L’ACTION (VA)</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les quantités et valeurs physiques ci-après sont utilisées pour définir les valeurs déclenchant l’action (VA), dont le niveau est établi de manière à assurer, par une évaluation simplifiée, le respect des VLE pertinentes ou des valeurs à partir desquelles les mesures de protection ou de prévention pertinentes précisées à l’article 5 doivent être prises:</p>
+<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash">
+<li>VA(E) pour l’intensité de champ électrique E d’un champ électrique variant dans le temps (voir tableau B1),</li>
+<li>VA(B) pour l’induction magnétique B d’un champ magnétique variant dans le temps (voir tableau B1),</li>
+<li>VA(S) pour la densité de puissance des ondes électromagnétiques (voir tableau B1),</li>
+<li>VA(I<sub>C</sub>) pour les courants de contact (voir tableau B2),</li>
+<li>VA(I<sub>L</sub>) pour les courants induits dans les extrémités (voir tableau B2).</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les VA correspondent aux valeurs de champ calculées ou mesurées sur le lieu de travail en l’absence du salarié, sous forme de valeur maximale à la position du corps ou de la partie spécifiée du corps. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Valeurs déclenchant l’action (VA) pour une exposition à des champs électriques et magnétiques</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>VA(E) et VA(B) sont dérivées des DAS ou des VLE (tableaux A1 et A3) sur la base des seuils liés aux effets thermiques internes causés par l’exposition à des champs électriques et magnétiques (externes). </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau B1</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VA pour une exposition à des champs électriques et magnétiques compris entre 100 kHz et 300 GHz</b>
+</p>
+<table border="1" id="table_19" scl:cols="25 25 25 25" width="100">
+<tr scl:border-color="black">
+<td scl:valign="top">
+<p>Gamme de fréquences</p>
+</td>
+<td>
+<p>VA(E) pour intensité de champ électrique [Vm<sup>–1</sup>] (Rms)</p>
+</td>
+<td scl:valign="top">
+<p>VA(B) pour induction magnétique [μT] (Rms)</p>
+</td>
+<td>
+<p>VA(S) pour densité de puissance</p>
+<p> (Wm<sup>–2</sup>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>100 kHz ≤ f &lt; 1 MHz</p>
+</td>
+<td>
+<p>6,1 × 10 <sup>2</sup>
+</p>
+</td>
+<td>
+<p>2,0 × 10 <sup>6</sup> /f</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 ≤ f &lt; 10 MHz</p>
+</td>
+<td>
+<p>6,1 × 10 <sup>8 </sup>/f</p>
+</td>
+<td>
+<p>2,0 × 10 <sup>6</sup> /f</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>10 ≤ f &lt; 400 MHz</p>
+</td>
+<td>
+<p>61</p>
+</td>
+<td>
+<p>0,2</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>400 MHz ≤ f &lt; 2 GHz</p>
+</td>
+<td>
+<p>3 × 10 <sup>–3</sup> f <sup>½</sup>
+</p>
+</td>
+<td>
+<p>1,0 × 10 <sup>–5</sup> f <sup>½</sup>
+</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2 ≤ f &lt; 6 GHz</p>
+</td>
+<td>
+<p>1,4 × 10 <sup>2</sup>
+</p>
+</td>
+<td>
+<p>4,5 × 10 <sup>–1</sup>
+</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6 ≤ f≤ 300 GHz</p>
+</td>
+<td>
+<p>1,4 × 10 <sup>2</sup>
+</p>
+</td>
+<td>
+<p>4,5 × 10 <sup>–1</sup>
+</p>
+</td>
+<td>
+<p>50</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_20" scl:cols="15 85" width="100">
+<tr>
+<td>
+<p>Note B1-1:</p>
+</td>
+<td>
+<p>f est la fréquence exprimée en hertz (Hz).</p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note B1-2:</p>
+</td>
+<td>
+<p>[VA(E)] <sup>2</sup> et [VA(B)] <sup>2</sup> moyennes doivent être calculées sur un intervalle de temps de 6 minutes. Pour les impulsions RF, la densité de puissance de crête moyenne calculée sur la durée d’impulsion n’excède pas 1 000 fois la valeur VA(S) correspondante. Pour les champs de fréquences multiples, l’analyse est fondée sur une sommation, comme expliqué dans le guide pratique visé à l’article 14 de la <ref href="/eli/dir_ue/2013/35/jo">directive 2013/35/UE</ref> du Parlement européen et du Conseil du 26 juin 2013 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des travailleurs aux risques dus aux agents physiques (champs électromagnétiques).</p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note B1-3: </p>
+</td>
+<td>
+<p>VA(E) et VA(B) représentent les valeurs maximales calculées ou mesurées à la position du corps du salarié. Cela entraîne une évaluation prudente de l’exposition et un respect automatique des VLE dans toutes les conditions d’exposition non-uniformes. Afin de simplifier l’évaluation du respect des VLE, effectuée conformément à l’article 4, dans des conditions non-uniformes particulières, des critères de calcul de la moyenne spatiale des champs mesurés, fondés sur une dosimétrie bien établie, seront fixés dans les guides pratiques visés à l’article 14 de la <ref href="/eli/dir_ue/2013/35/jo">directive 2013/35/UE</ref> du Parlement européen et du Conseil du 26 juin 2013 concernant les prescriptions minimales de sécurité et de santé relatives à l’exposition des travailleurs aux risques dus aux agents physiques (champs électromagnétiques). Dans le cas d’une source très localisée située à une distance de quelques centimètres du corps, le respect des VLE est déterminé au cas par cas par dosimétrie.</p>
+</td>
+</tr>
+<tr>
+<td scl:valign="top">
+<p>Note B1-4:</p>
+</td>
+<td>
+<p>La densité de puissance moyenne est mesurée sur une surface exposée de 20 cm<sup>2</sup>. La valeur moyenne de la densité spatiale maximale de puissance, calculée pour 1 cm<sup>2</sup>, ne devrait pas dépasser 20 fois la valeur de 50 Wm <sup>–2</sup>. La moyenne des densités de puissance comprises entre 6 et 10 GHz doit être mesurée sur un intervalle de temps de 6 minutes. Les densités de puissance moyennes supérieures à 10 GHz sont calculées sur un intervalle de temps de 68/f <sup>1,05</sup> minutes (f étant la fréquence exprimée en GHz) afin de compenser une baisse progressive de la profondeur de pénétration au fur et à mesure que la fréquence augmente. </p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<i>Tableau B2</i>
+</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>
+<b>VA pour les courants de contact d’état stable variant dans le temps et les courants induits dans les extrémités</b>
+</p>
+<table border="1" id="table_21" scl:cols="33 34 33" width="100">
+<tr>
+<td scl:valign="top">
+<p>Gamme de fréquences</p>
+</td>
+<td scl:valign="top">
+<p>Courant de contact d’état stable, VA(I<sub>C</sub>) [mA] (Rms)</p>
+</td>
+<td scl:valign="top">
+<p>Courant induit dans une extrémité quelconque, VA(I<sub>L</sub>) [mA] (Rms)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>100 kHz ≤ f &lt; 10 MHz</p>
+</td>
+<td>
+<p>40</p>
+</td>
+<td>
+<p>—</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>10 MHz ≤ f ≤ 110 MHz</p>
+</td>
+<td>
+<p>40</p>
+</td>
+<td>
+<p>100</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+<alinea>
+<content>
+<table id="table_22" scl:cols="15 85" width="100">
+<tr>
+<td>
+<p>Note B2-1:</p>
+</td>
+<td>
+<p>[VA(I<sub> L</sub>)] <sup>2 </sup>moyenne doit être calculée sur un intervalle de temps de 6 minutes.</p>
+</td>
+</tr>
+</table>
+</content>
+</alinea>
+</mainBody>
+</doc>
+</attachment>
+</attachments>
+</act>
+</akomaNtoso>

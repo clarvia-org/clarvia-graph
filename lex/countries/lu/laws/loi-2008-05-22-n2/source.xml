@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2008-05-22" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MENV"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2008-05-22" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2008-05-22" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux><scl:jolux scl:name="dateDocument">2008-05-22</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MENV</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/105</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/913</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/3399</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr</scl:jolux><scl:jolux scl:name="transpositionProcess">http://data.legilux.public.lu/event/etat/trans/2001/42</scl:jolux><scl:jolux scl:name="dateEntryInForce">2008-07-01</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2008/a82</scl:jolux><scl:jolux scl:name="historicalLegalId">2008A1154A</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">2008-06-11</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MENV</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="transposes">/eli/dir_ue/2001/42/jo</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20070107</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1992/43/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1993/04/21/n3/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1999/06/10/n5/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2004/01/19/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/dir_ue/1979/409/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 08/06/2009 : Loi du 22 mai 2008 relative à l’évaluation des incidences de certains plans et programmes sur l’environnement.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2008-82-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2008/a82/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2008-05-22-n2-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2008-82-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2008/a82/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2008/a82/fr/pdf/eli-etat-leg-memorial-2008-a82-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2008-07-01" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2009-06-08" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2009/05/29/n5/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2008/05/22/n2/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2009/05/29/n5/jo" id="rp2" showAs="Loi du 29 mai 2009 portant  1. transposition en droit luxembourgeois en matière d'infrastructures de transport de la directive 97/11/CE du Conseil du 3 mars 1997 modifiant la directive 85/337/CEE concernant l'évaluation des incidences de certains projets publics et privés sur l'environnement  2. modification de la loi du 22 mai 2008 relative à l'évaluation des incidences de certains plans et programmes sur l'environnement  3. modification de la loi du 19 janvier 2004 sur la protection de la nature et des ressources naturelles."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2009-06-04|2009-05-29|L|122">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2009/05/29/n5/jo">Loi du 29 mai 2009 portant  1. transposition en droit luxembourgeois en matière d’infrastructures de transport de la directive 97/11/CE du Conseil du 3 mars 1997 modifiant la directive 85/337/CEE concernant l’évaluation des incidences de certains projets publics et privés sur l’environnement  2. modification de la loi du 22 mai 2008 relative à l’évaluation des incidences de certains plans et programmes sur l’environnement  3. modification de la loi du 19 janvier 2004 sur la protection de la nature et des ressources naturelles.</ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 08/06/2009 : Loi du 22 mai 2008 relative à l’évaluation des incidences de certains plans et programmes sur l’environnement.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_1er/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<heading scl:style-format="b">Définitions</heading>
+<alinea>
+<content>
+<p>Au sens de la présente loi, on entend par: </p>
+<ol scl:symbol="a)">
+<li>«plans et programmes»: les plans et programmes, y compris ceux qui sont cofinancés par la Communauté européenne, ainsi que leurs modifications:<ul scl:symbol="dash">
+<li>élaborés et/ou adoptés par une autorité au niveau national ou communal ou élaborés par une autorité en vue de leur adoption par la Chambre des Députés ou par le Gouvernement, par le biais d’une procédure législative, et</li>
+<li>exigés par des dispositions législatives, réglementaires ou administratives;</li>
+</ul> </li>
+<li>«évaluation environnementale»: l’élaboration, sous la responsabilité de l’autorité responsable du plan ou programme, d’un rapport sur les incidences environnementales, la réalisation de consultations, la prise en compte dudit rapport et des résultats des consultations lors de la prise de décision, ainsi que la communication d’informations sur la décision, conformément aux articles 4 à 10;</li>
+<li>«rapport sur les incidences environnementales»: la partie de la documentation relative au plan ou programme contenant les informations prévues à l’article 5;</li>
+<li>«ministre»: le membre du gouvernement ayant la protection de l’environnement dans ses attributions;</li>
+<li>«autorité responsable du plan ou programme»: une autorité au niveau national ou communal qui prend l’initiative d’élaborer un plan ou programme au sens de la présente loi;</li>
+<li>«public»: une ou plusieurs personnes physiques ou morales, ainsi que les associations et groupes rassemblant ces personnes.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_2/20090608</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2009-06-08</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<heading scl:style-format="b">Evaluation environnementale</heading>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>Les plans et programmes visés aux paragraphes 2, 3 et 4 sont soumis préalablement à leur adoption à une évaluation environnementale.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Sous réserve du paragraphe 3, une évaluation environnementale est effectuée pour tous les plans et programmes: </p>
+<ol scl:symbol="a)">
+<li>qui sont élaborés pour les secteurs de l’agriculture, de la sylviculture, de la pêche, de l’énergie, de l’industrie, des transports, de la gestion des déchets, de la gestion de l’eau, des télécommunications, du tourisme, de l’aménagement du territoire urbain et rural ou de l’affectation des sols et qui définissent le cadre dans lequel la mise en œuvre des projets énumérés aux annexes I et II de la <ref href="/eli/dir_ue/1985/337">directive modifiée 85/337/CEE</ref> concernant l’évaluation des incidences de certains projets publics et privés sur l’environnement pourra être autorisée à l’avenir, ou</li>
+<li>pour lesquels, étant donné les incidences qu’ils sont susceptibles d’avoir sur des sites, une évaluation est requise en vertu de l’article 12 de la <ref href="/eli/etat/leg/loi/2004/01/19/n1" id="a209e605-abfd-4bc1-b229-424b98d392c6">loi modifiée du 19 janvier 2004</ref> concernant la protection de la nature et des ressources naturelles.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>3.</num>
+<alinea>
+<content>
+<p>Les plans et programmes visés au paragraphe 2 qui déterminent l’utilisation de petites zones au niveau local et des modifications mineures des plans et programmes visés au paragraphe 2 ne sont obligatoirement soumis à une évaluation environnementale que lorsque l’autorité responsable du plan ou programme estime, le ministre entendu en son avis, qu’ils sont susceptibles d’avoir des incidences notables sur l’environnement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>4.</num>
+<alinea>
+<content>
+<p>Pour les plans et programmes, autres que ceux visés au paragraphe 2, qui définissent le cadre dans lequel la mise en œuvre des projets pourra être autorisée à l’avenir, l’autorité responsable du plan ou programme détermine, le ministre entendu en son avis, s’ils sont susceptibles d’avoir des incidences notables sur l’environnement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm1"/>5.</num>
+<alinea>
+<content>
+<p>Un règlement grand-ducal pourra déterminer les plans et programmes visés aux paragraphes 2, 3 et 4 ainsi que les modalités d’évaluation y relatives.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>6.</num>
+<alinea>
+<content>
+<p>Dans les cas visés aux paragraphes 3 et 4, il est procédé à un examen au cas par cas, conformément aux critères pertinents fixés à l’article 3 de la présente loi.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>7.</num>
+<alinea>
+<content>
+<p>Les conclusions prises en vertu du paragraphe 6, y compris les raisons de ne pas réaliser une évaluation environnementale conformément aux articles 4 à 10, font l’objet d’une publicité sur support électronique ainsi que d’une publication par extrait dans au moins quatre quotidiens imprimés et publiés au Luxembourg.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>8.</num>
+<alinea>
+<content>
+<p>Les plans et programmes suivants ne sont pas couverts par la présente loi: </p>
+<ol scl:symbol="a)">
+<li>les plans et programmes destinés uniquement à des fins de défense nationale et de protection civile,</li>
+<li>les plans et programmes financiers ou budgétaires.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_3/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<heading scl:style-format="b">Critères déterminant les incidences sur l’environnement</heading>
+<alinea>
+<content>
+<p>L’ampleur des incidences d’un plan ou programme sur l’environnement est déterminée sur base des critères suivants.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les caractéristiques des plans et programmes comportent notamment:</p>
+<ul scl:symbol="dash">
+<li>la mesure dans laquelle le plan ou programme concerné définit un cadre pour d’autres projets ou activités, en ce qui concerne la localisation, la nature, la taille et les conditions de fonctionnement ou par une allocation de ressources,</li>
+<li>la mesure dans laquelle un plan ou un programme influence d’autres plans ou programmes, y compris ceux qui font partie d’un ensemble hiérarchisé,</li>
+<li>l’adéquation entre le plan ou le programme et l’intégration des considérations environnementales, en vue notamment de promouvoir un développement durable,</li>
+<li>les problèmes environnementaux liés au plan ou au programme,</li>
+<li>l’adéquation entre le plan ou le programme et la mise en œuvre de la législation communautaire relative à l’environnement (par exemple les plans et programmes touchant à la gestion des déchets et à la protection de l’eau).</li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les caractéristiques des incidences et de la zone susceptible d’être touchée concernent notamment:</p>
+<ul scl:symbol="dash">
+<li>la probabilité, la durée, la fréquence et le caractère réversible des incidences,</li>
+<li>le caractère cumulatif des incidences,</li>
+<li>la nature transfrontalière des incidences,</li>
+<li>les risques pour la santé humaine ou pour l’environnement (à cause d’accidents, par exemple),</li>
+<li>la magnitude et l’étendue spatiale géographique des incidences (zone géographique et taille de la population susceptible d’être touchée),</li>
+<li>la valeur et la vulnérabilité de la zone susceptible d’être touchée, en raison: <ol scl:symbol="a)">
+<li>de caractéristiques naturelles ou d’un patrimoine culturel particuliers,</li>
+<li>d’un dépassement des normes de qualité environnementales ou des valeurs limites,</li>
+<li>de l’exploitation intensive des sols,</li>
+</ol> </li>
+<li>les incidences pour des zones ou des paysages jouissant d’un statut de protection reconnu au niveau national, communautaire ou international.</li>
+</ul>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_4/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<heading scl:style-format="b">Obligations générales</heading>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>L’évaluation environnementale visée à l’article 2 est effectuée par l’autorité responsable du plan ou programme pendant l’élaboration du plan ou du programme et avant qu’il ne soit adopté ou soumis à la procédure législative ou réglementaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Les exigences résultant de la présente loi sont intégrées ou insérées dans des procédures régissant l’adoption de plans et de programmes à moins que lesdites procédures ne contiennent des exigences au moins équivalentes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>3.</num>
+<alinea>
+<content>
+<p>Lorsque les plans et programmes font partie d’un ensemble hiérarchisé, l’évaluation environnementale est effectuée à différents niveaux de l’ensemble hiérarchisé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>4.</num>
+<alinea>
+<content>
+<p>Les frais engendrés par l’évaluation environnementale sont à charge de l’autorité responsable du plan ou programme.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_5/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<heading scl:style-format="b">Rapport sur les incidences environnementales: principe et contenu</heading>
+<alinea>
+<content>
+<p>Lorsqu’une évaluation environnementale est requise en vertu de l’article 2, un rapport sur les incidences environnementales est élaboré, dans lequel les incidences notables probables de la mise en œuvre du plan ou du programme, ainsi que les solutions de substitution raisonnables tenant compte des objectifs et du champ d’application géographiques du plan ou du programme, sont identifiées, décrites et évaluées suivant les dispositions de l’alinéa 2.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sous réserve des paragraphes 1 et 2 de l’article 6, les informations à fournir en vertu du présent article sont les suivantes: </p>
+<ol scl:symbol="a)">
+<li>un résumé du contenu, les objectifs principaux du plan ou du programme et les liens avec d’autres plans et programmes pertinents;</li>
+<li>les aspects pertinents de la situation environnementale ainsi que son évolution probable si le plan ou programme n’est pas mis en œuvre;</li>
+<li>les caractéristiques environnementales des zones susceptibles d’être touchées de manière notable;</li>
+<li>les problèmes environnementaux liés au plan ou au programme, en particulier ceux qui concernent les zones revêtant une importance particulière pour l’environnement telles que celles désignées conformément aux <ref href="/eli/dir_ue/1979/409" id="7c909536-b3b1-4c25-ae70-e3035cf3bc9d">directives 79/409/CEE</ref> et <ref href="/eli/dir_ue/1992/43">92/43/CEE</ref>;</li>
+<li>les objectifs de la protection de l’environnement, établis au niveau international, communautaire ou national, qui sont pertinents pour le plan ou le programme et la manière dont ces objectifs et les considérations environnementales ont été pris en considération au cours de leur élaboration;</li>
+<li>les effets notables probables sur l’environnement incluant les effets secondaires, cumulatifs, synergiques, à court, à moyen et à long termes, permanents et temporaires, tant positifs que négatifs, et comprenant les thèmes de la diversité biologique, de la population, de la santé humaine, de la faune, de la flore, des sols, des eaux, de l’air, des facteurs climatiques, des biens matériels, du patrimoine culturel, architectural et archéologique, des paysages et des interactions entre ces facteurs;</li>
+<li>les mesures envisagées pour éviter, réduire et, dans la mesure du possible, compenser toute incidence négative notable de la mise en œuvre du plan ou du programme sur l’environnement;</li>
+<li>une déclaration résumant les raisons pour lesquelles les autres solutions envisagées ont été sélectionnées, et une description de la manière dont l’évaluation a été effectuée, y compris toute difficulté rencontrée (les déficiences techniques ou le manque de savoir-faire) lors de la collecte des informations requises;</li>
+<li>une description des mesures de suivi envisagées conformément à l’article 11;</li>
+<li>un résumé non technique des informations visées aux points ci-dessus.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_6/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<heading scl:style-format="b">Rapport sur les incidences environnementales: modalités</heading>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>Le rapport sur les incidences environnementales élaboré conformément aux dispositions de l’article 5, alinéa 1 contient les informations qui peuvent être raisonnablement exigées, compte tenu des connaissances et des méthodes d’évaluation existantes, du contenu et du degré de précision du plan ou du programme, du stade atteint dans le processus de décision et du fait qu’il peut être préférable d’évaluer certains aspects à d’autres stades de ce processus afin d’éviter une répétition de l’évaluation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le rapport précité est élaboré par une personne physique ou morale, privée ou publique, agréée en vertu de la <ref href="/eli/etat/leg/loi/1993/04/21/n3/jo" id="a4782aee-7e2c-46e2-91cf-6b54eb2d9d9a">loi du 21 avril 1993</ref> relative à l’agrément de personnes physiques ou morales privées ou publiques, autres que l’Etat, pour l’établissement de tâches techniques d’étude et de vérification dans le domaine de l’environnement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Les renseignements utiles concernant les incidences des plans et programmes sur l’environnement obtenus à d’autres niveaux de décision ou en vertu d’autres dispositions peuvent être utilisés pour fournir les informations énumérées à l’article 5.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>3.</num>
+<alinea>
+<content>
+<p>Le ministre décide ou donne son avis, selon les cas, de/sur l’ampleur et le degré de précision des informations que le rapport sur les incidences environnementales doit contenir. Les autres autorités ayant des responsabilités spécifiques en matière d’environnement sont également entendues en leur avis.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_7/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<heading scl:style-format="b">Consultations</heading>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>Avant que le plan ou programme ne soit adopté ou ne soit soumis à la procédure législative ou réglementaire, le projet de plan ou de programme et le rapport sur les incidences environnementales sont mis à la disposition du public. L’objet, un résumé du projet de plan ou programme ainsi qu’un résumé non technique du rapport sur les incidences environnementales sont publiés sur support informatique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’objet du projet de plan ou de programme et du rapport sur les incidences environnementales y relatif est porté à la connaissance du public simultanément avec la publicité sur support électronique par voie de publication par extrait dans au moins quatre quotidiens imprimés et publiés au Luxembourg. A dater du jour de cette publication, le dossier complet peut être consulté auprès de l’autorité responsable du plan ou programme pendant trente jours par tous les intéressés qui peuvent émettre leurs observations et suggestions par le biais dudit support électronique ou transmettre leurs observations écrites directement à l’autorité responsable du plan ou programme au plus tard dans les quarante-cinq jours qui suivent le début de la publication. La publicité sur support électronique peut être complétée par des réunions d’information convoquées à l’initiative de l’autorité responsable du plan ou programme.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Simultanément aux formalités dont question au paragraphe 1, les projets de plans ou de programmes ainsi que le rapport afférent sur les incidences environnementales sont à soumettre pour avis au ministre ainsi qu’aux autres autorités ayant des responsabilités spécifiques en matière d’environnement qui ont été entendus en leur avis en vertu des dispositions de l’article 6, paragraphe 3.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_8/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<heading scl:style-format="b">Consultations transfrontières</heading>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>Lorsque la mise en oeuvre d’un projet de plan ou de programme relevant du champ d’application de la présente loi est susceptible d’avoir des incidences notables sur l’environnement dans un autre Etat membre, ou lorsqu’un autre Etat membre susceptible d’être touché de manière notable en exprime la demande, une copie du projet de plan ou de programme ainsi qu’une copie du rapport sur les incidences environnementales sont transmises à l’autre Etat membre avant que ledit plan ou programme ne soit adopté ou soumis à la procédure législative ou réglementaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Dans le cadre des relations bilatérales des deux Etats, il sera veillé à ce que</p>
+<ul scl:symbol="dash">
+<li>les autorités et le public de l’Etat dont le territoire est susceptible d’être touché de manière notable, soient informés et aient la possibilité de communiquer leur avis dans un délai raisonnable,</li>
+<li>la décision prise sur le projet de plan ou de programme soit communiquée à l’Etat en question.</li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>3.</num>
+<alinea>
+<content>
+<p>Les consultations entre Etats membres portent sur les incidences transfrontières probables du projet de plan ou de programme et sur les mesures envisagées pour réduire ou éliminer ces incidences.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_9/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<heading scl:style-format="b">Eléments à prendre en considération dans le cadre de la prise de décision</heading>
+<alinea>
+<content>
+<p>Le rapport sur les incidences environnementales élaboré conformément aux articles 5 et 6, les observations et suggestions exprimées en vertu de l’article 7 ainsi que les résultats des consultations transfrontalières effectuées au titre de l’article 8 sont pris en considération pendant l’élaboration du projet de plan ou programme concerné et avant que celui-ci ne soit adopté ou soumis à la procédure législative ou réglementaire.</p>
+</content>
+</alinea>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_10/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<heading scl:style-format="b">Information sur la décision</heading>
+<alinea>
+<content>
+<p>Le public ainsi que le ministre et les autres autorités ayant des responsabilités spécifiques en matière d’environnement qui ont été entendus en leur avis en vertu des dispositions de l’article 6, paragraphe 3 sont informés de l’adoption d’un plan ou programme.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La publicité est effectuée sur support électronique et par voie de publication par extrait dans au moins quatre quotidiens imprimés et publiés au Luxembourg.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans ce cadre, sont mis à disposition dans un délai d’un mois à partir de la date d’adoption du plan ou programme: </p>
+<ol scl:symbol="a)">
+<li>le plan ou le programme tel qu’il a été adopté;</li>
+<li>un exposé résumant la manière dont les considérations environnementales ont été intégrées dans le plan ou le programme et dont le rapport sur les incidences environnementales élaboré conformément aux articles 5 et 6, les observations et suggestions exprimées en vertu de l’article 7 et les résultats des consultations effectuées au titre de l’article 8 ont été pris en considération comme le prévoit l’article 9, ainsi que les raisons du choix du plan ou du programme tel qu’adopté, compte tenu des autres solutions raisonnables qui avaient été envisagées;</li>
+<li>les mesures arrêtées concernant le suivi conformément à l’article 11.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_11/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<heading scl:style-format="b">Suivi</heading>
+<paragraph>
+<num>1.</num>
+<alinea>
+<content>
+<p>Afin d’identifier à un stade précoce les impacts négatifs imprévus résultant de la mise en œuvre d’un plan ou programme et d’être en mesure d’engager les actions correctrices qu’elle juge appropriées, l’autorité responsable de la mise en œuvre assure le suivi des incidences imprévues éventuelles sur l’environnement du plan ou programme concerné.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>2.</num>
+<alinea>
+<content>
+<p>Les modalités relatives au suivi visé au paragraphe 1<sup>er</sup> sont fixées par règlement grand-ducal. Ce règlement grand-ducal détermine en outre dans quelles conditions le ministre peut prendre l’initiative de cette identification ou l’engagement des actions correctrices précitées.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_12/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<heading scl:style-format="b">Voies de recours</heading>
+<alinea>
+<content>
+<p>Un recours en annulation est ouvert devant le tribunal administratif contre les décisions prises au titre respectivement de l’article 2, paragraphe 7 et de l’article 6, paragraphe 3.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ce recours doit être introduit sous peine de déchéance dans un délai de quarante jours à compter de la publication visée respectivement à l’article 2, paragraphe 7 et à l’article 7, paragraphe 1.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le recours est également ouvert aux associations d’importance nationale dotées de la personnalité morale et agréées en application de l’article 29 de la <ref href="/eli/etat/leg/loi/1999/06/10/n5/jo" id="e5eb8ef0-70df-49c6-9b7b-4065b54d43c2">loi modifiée du 10 juin 1999</ref> relative aux établissements classés. Les prédites associations sont réputées avoir un intérêt personnel.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_13/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<heading scl:style-format="b">Comité interministériel</heading>
+<alinea>
+<content>
+<p>Il est institué un comité interministériel chargé d’assister le ministre dans l’accomplissement de ses tâches en vertu de la présente loi. Sa composition et son fonctionnement sont précisés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2/art_14/20080701</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2008/05/22/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2008-07-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<heading scl:style-format="b">Entrée en vigueur et dispositions transitoires</heading>
+<alinea>
+<content>
+<p>La présente loi entre en vigueur le premier jour du mois qui suit sa publication au Mémorial.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Elle s’applique aux projets de plans ou de programmes qui, selon les cas,</p>
+<ul scl:symbol="dash">
+<li>n’ont pas encore fait l’objet d’un projet de loi ou de règlement approuvé par le Gouvernement en Conseil,</li>
+<li>n’ont pas encore été adoptés par une autorité.</li>
+</ul>
+</content>
+</alinea>
+</article>
+</body>
+</act>
+</akomaNtoso>

@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2014-07-24" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MESR"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2014-07-24" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2014-07-24" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux><scl:jolux scl:name="dateDocument">2014-07-24</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MESR</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/14</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/808</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2014-08-01</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a139</scl:jolux><scl:jolux scl:name="historicalLegalId">2014A2188A</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">2014-07-31</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MESR</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20140043</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1960/01/13/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1993/09/14/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1925/12/17/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1953/05/20/n7/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1967/12/04/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2008/08/29/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/2000/06/22/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/trep/2013/09/13/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/2005/04/04/n2/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/loi/2013/07/19/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/08/2022 : Loi du 24 juillet 2014 concernant l'aide financière de l'Etat pour études supérieures.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2014-139-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a139/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2014-07-24-n1-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2014-139-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a139/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2014/a139/fr/pdf/eli-etat-leg-memorial-2014-a139-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2014-08-01" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2022-08-01" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2022-08-01" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2022-08-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2022-08-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2022-08-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2022/06/29/a317/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2014/07/24/n1/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2022/06/29/a317/jo" id="rp2" showAs="Loi du 29 juin 2022 portant transposition de certaines mesures prévues par l’« Accord entre le Gouvernement et l’Union des Entreprises luxembourgeoises et les organisations syndicales LCGB et CGFP » du 31 mars 2022 et modifiant : 1° le Code de la sécurité sociale ; 2° le titre Ier de la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 12 septembre 2003 relative aux personnes handicapées ; 4° la loi modifiée du 24 juillet 2014 concernant l’aide financière de l’État pour études supérieures ; 5° l’article 3, paragraphe 7, de la loi modifiée du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État ; 6° la loi modifiée du 23 juillet 2016 portant modification 1. du Code de la sécurité sociale ; 2. de la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu, et abrogeant la loi modifiée du 21 décembre 2007 concernant le boni pour enfant ; 7° la loi modifiée du 28 juillet 2018 relative au revenu d’inclusion sociale. "/>
+<passiveRef href="/eli/etat/leg/loi/2021/07/21/a559/jo" id="rp3" showAs="Loi du 21 juillet 2021 portant modification de la loi modifiée du 24 juillet 2014 concernant l’aide financière de l’État pour études supérieures."/>
+<passiveRef href="/eli/etat/leg/loi/2020/07/17/a643/jo" id="rp4" showAs="Loi du 17 juillet 2020 portant modification de la loi modifiée du 24 juillet 2014 concernant l’aide financière de l’État pour études supérieures."/>
+<passiveRef href="/eli/etat/leg/loi/2019/10/26/a732/jo" id="rp5" showAs="Loi du 26 octobre 2019 portant modification de la loi modifiée du 24 juillet 2014 concernant l’aide financière de l’État pour études supérieures."/>
+<passiveRef href="/eli/etat/leg/loi/2016/07/23/n10/jo" id="rp6" showAs="Loi du 23 juillet 2016 portant modification de la loi du 24 juillet 2014 concernant l'aide financière de l'Etat pour études supérieures."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2022-06-29|2022-06-29|L|317">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/06/29/a317/jo">Loi du 29 juin 2022 portant transposition de certaines mesures prévues par l’« Accord entre le Gouvernement et l’Union des Entreprises luxembourgeoises et les organisations syndicales LCGB et CGFP » du 31 mars 2022 et modifiant : 1° le Code de la sécurité sociale ; 2° le titre Ier de la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 12 septembre 2003 relative aux personnes handicapées ; 4° la loi modifiée du 24 juillet 2014 concernant l’aide financière de l’État pour études supérieures ; 5° l’article 3, paragraphe 7, de la loi modifiée du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État ; 6° la loi modifiée du 23 juillet 2016 portant modification 1. du Code de la sécurité sociale ; 2. de la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu, et abrogeant la loi modifiée du 21 décembre 2007 concernant le boni pour enfant ; 7° la loi modifiée du 28 juillet 2018 relative au revenu d’inclusion sociale.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>
+<mod class="mod-start" for="#pm1"/>Version consolidée applicable au 01/08/2022 : Loi du 24 juillet 2014 concernant l'aide financière de l'Etat pour études supérieures.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_1er/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<heading scl:style-format="b">Objet de la loi</heading>
+<alinea>
+<content>
+<p>La présente loi a pour objet de faciliter l'accès aux études supérieures par l'allocation d'une aide financière sous la forme de bourses, de prêts avec charge d'intérêts et de subventions d'intérêts.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>A l'exception des majorations visées à l'article 6, paragraphes 1<sup>er</sup> et 2, qui sont allouées par année académique, l'aide financière sous forme de bourses et de prêts est accordée par semestre académique par le ministre ayant dans ses attributions l'enseignement supérieur, désigné par la suite par le terme «le ministre», sur demande écrite de l'étudiant à présenter pour chaque semestre dans les délais et les formes à fixer par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'année académique commence le 1<sup>er</sup> août et se termine le 31 juillet de l'année suivante. Le semestre d'hiver commence le 1<sup>er</sup> août et se termine le 31 janvier de l'année suivante, le semestre d'été commence le 1<sup>er</sup> février et se termine le 31 juillet de la même année.</p>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_2/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<heading scl:style-format="b">Eligibilité</heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Pour être éligible à l'aide financière dans le cadre de la présente loi, l'étudiant doit être inscrit à temps plein ou à temps partiel dans un cycle d'études supérieures dont la réussite confère un diplôme, titre, certificat ou grade de l'enseignement supérieur correspondant aux lois et règlements régissant l'enseignement supérieur de l'Etat où le titre est conféré. Le cycle d'études doit être reconnu par l'autorité compétente de cet Etat comme relevant de son système d'enseignement supérieur.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>L'étudiant à temps partiel est inscrit à un programme d'enseignement supérieur pour suivre un volume exprimé, soit en crédits ECTS et compris entre au moins 15 crédits ECTS et au plus 17 crédits ECTS par semestre, soit en une durée équivalente au moins à la moitié de la durée minimale de la formation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Sont également éligibles les élèves de l'enseignement secondaire et de l'enseignement secondaire technique qui ont été autorisés par le ministre ayant la formation professionnelle dans ses attributions à suivre leur formation professionnelle à l'étranger.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_3/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<heading scl:style-format="b">Bénéficiaires</heading>
+<alinea>
+<content>
+<p>Peuvent bénéficier de l'aide financière de l'Etat pour études supérieures, les étudiants et élèves définis à l'article 2, désignés ci-après par le terme «l'étudiant», et qui remplissent une des conditions suivantes:</p>
+</content>
+</alinea>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>être ressortissant luxembourgeois ou membre de famille d'un ressortissant luxembourgeois et être domicilié au Grand-Duché de Luxembourg, ou</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>être ressortissant d'un autre Etat membre de l'Union européenne ou d'un des autres Etats parties à l'Accord sur l'espace économique européen et de la Confédération suisse et séjourner, conformément au chapitre 2 de la <ref href="/eli/etat/leg/loi/2008/08/29/n1/jo" id="88bf58d5-78ce-437f-a419-dcf2d10b9d74" scl:verify="true">loi modifiée du 29 août 2008</ref> sur la libre circulation des personnes et l'immigration, au Grand-Duché de Luxembourg en qualité de travailleur salarié, de travailleur non salarié, de personne qui garde ce statut ou de membre de famille de l'une des catégories de personnes qui précèdent, ou avoir acquis le droit de séjour permanent, ou</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>jouir du statut du réfugié politique au sens de l'article 23 de la convention relative au statut de réfugié politique faite à Genève le 28 juillet 1951 et être domicilié au Grand-Duché de Luxembourg, ou</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>être ressortissant d'un Etat tiers ou être apatride au sens de l'article 23 de la Convention relative au statut des apatrides faite à New York le 28 septembre 1954, être domicilié au Grand-Duché de Luxembourg et y avoir résidé effectivement pendant 5 ans au moins ou avoir obtenu le statut de résident de longue durée avant la présentation de la première demande et être soit détenteur d'un diplôme ou d'un certificat de fin d'études secondaires luxembourgeois ou reconnu équivalent par le ministre ayant dans ses attributions l'éducation nationale, soit éligible au titre de l'article 2, paragraphe 4 de la présente loi</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>pour les étudiants non résidents au Grand-Duché de Luxembourg:</p>
+<ol scl:symbol="a)">
+<li> <p>être un travailleur ressortissant luxembourgeois ou ressortissant de l'Union européenne ou d'un autre Etat partie à l'Accord sur l'espace économique européen ou de la Confédération suisse employé ou exerçant son activité au Grand-Duché de Luxembourg au moment de sa demande pour l'aide financière pour études supérieures; ou</p> </li>
+<li> <p>être un enfant de travailleur ressortissant luxembourgeois ou ressortissant de l'Union européenne ou d'un autre Etat partie à l'Accord sur l'espace économique européen ou de la Confédération suisse employé ou exerçant son activité au Grand-Duché de Luxembourg au moment de la demande par l'étudiant pour l'aide financière pour études supérieures à condition que ce travailleur continue à contribuer à l'entretien de l'étudiant et que ce travailleur ait été employé ou ait exercé son activité au Grand-Duché de Luxembourg pendant une durée cumulée d'au moins cinq ans au moment de la demande de l'aide financière pour études supérieures par l'étudiant pendant une période de référence de dix ans à compter rétroactivement à partir de la date de la demande pour l'obtention de l'aide financière pour études supérieures. Est visé également l'enfant faisant partie d'un ménage dont le conjoint ou partenaire du parent remplit les conditions énumérées dans le présent paragraphe. Au sens du présent article, le terme partenaire désigne toute personne ayant fait inscrire au répertoire civil un partenariat au sens de la <ref href="/eli/etat/leg/loi/2004/07/09/n3/jo" id="96e2b4cb-1557-44fe-a6a9-697d634edcd7" scl:verify="true">loi modifiée du 9 juillet 2004</ref> relative aux effets de certains partenariats ; ou</p> </li>
+<li> <p>être un enfant de travailleur ressortissant luxembourgeois ou ressortissant de l'Union européenne ou d'un autre État partie à l'Accord sur l'espace économique européen ou de la Confédération suisse employé ou exerçant son activité au Grand-Duché de Luxembourg au moment de la demande par l'étudiant pour l'aide financière pour études supérieures à condition que ce travailleur continue à contribuer à l'entretien de l'étudiant et que ce travailleur ait été employé ou ait exercé son activité au Grand-Duché de Luxembourg pendant une durée cumulée d'au moins dix ans au moment de la demande de l'aide financière pour études supérieures par l'étudiant ; ou</p> </li>
+<li> <p>être un enfant de travailleur ressortissant luxembourgeois ou ressortissant de l'Union européenne ou d'un autre État partie à l'Accord sur l'espace économique européen ou de la Confédération suisse employé ou exerçant son activité au Grand-Duché de Luxembourg au moment de la demande par l'étudiant pour l'aide financière pour études supérieures à condition que ce travailleur continue à contribuer à l'entretien de l'étudiant et répondre à une des conditions ci-après :</p> <ol scl:symbol="1°">
+<li> <p>avoir été inscrit pendant au moins cinq années d'études cumulées :</p> <ol scl:symbol="i.">
+<li> <p>dans un établissement public ou privé dispensant l'enseignement fondamental, l'enseignement secondaire ou la formation professionnelle initiale et situé sur le territoire du Grand-Duché de Luxembourg ; ou</p> </li>
+<li> <p>au « Deutsch-Luxemburgisches Schengen-Lyzeum Perl » ; ou</p> </li>
+<li> <p>dans un programme d'études offert par l'Université du Luxembourg et menant au grade de bachelor, de master ou de docteur ou au diplôme d'études spécialisées en médecine ; ou</p> </li>
+<li> <p>dans un programme d'études menant au brevet de technicien supérieur et accrédité par le ministre en vertu des dispositions du titre II de la <ref href="/eli/etat/leg/loi/2009/06/19/n1/jo" id="2717756a-8ed4-4cd7-a31b-17c54920044d" scl:verify="true">loi modifiée du 19 juin 2009</ref> portant organisation de l'enseignement supérieur ; ou</p> </li>
+<li> <p>dans un programme d'études accrédité offert par un établissement d'enseignement supérieur étranger établi sur le territoire du Grand-Duché de Luxembourg et accrédité par le ministre en vertu des dispositions du titre III de la <ref href="/eli/etat/leg/loi/2009/06/19/n1/jo" id="26fdc575-c319-49f9-ae4c-5aad123c7093" scl:verify="true">loi modifiée du 19 juin 2009</ref> portant organisation de l'enseignement supérieur ; ou</p> </li>
+</ol> </li>
+<li> <p>avoir séjourné au Grand-Duché de Luxembourg au titre d'une des conditions visées aux paragraphes 1<sup>er</sup>, 2, 3 ou 4 pendant une durée cumulée d'au moins cinq années au moment de la demande de l'aide financière pour études supérieures par l'étudiant.</p> </li>
+</ol> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'étudiant qui séjourne au Grand-Duché de Luxembourg principalement dans le cadre de ses études et qui dispose d'un revenu ne dépassant pas la limite inférieure prévue à l'article 11 de la présente loi est traité, dans le cadre de l'article 4 et de l'article 8 de la présente loi, comme étudiant non résident au Grand-Duché de Luxembourg.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Est considéré comme travailleur au sens du présent article celui qui bénéficie de l'un des statuts suivants:</p>
+<ol scl:symbol="a)">
+<li> <p>travailleur qui exerce des activités salariées réelles et effectives, à l'exclusion d'activités tellement réduites qu'elles se présentent comme purement marginales ou accessoires;</p> </li>
+<li> <p>travailleur qui exerce des activités non salariées réelles et effectives, à l'exclusion d'activités tellement réduites qu'elles se présentent comme purement marginales ou accessoires, affilié obligatoirement et d'une manière continue au Grand-Duché de Luxembourg en vertu de l'article 1<sup>er</sup>, point 4) du <ref href="/eli/etat/leg/code/securite_sociale" id="d4a13af2-3601-4825-9823-fd61a40c5ccd">Code de la sécurité sociale</ref>;</p> </li>
+<li> <p>personne qui garde le statut de travailleur ou qui fait partie des catégories suivantes: personne bénéficiaire d'une pension ou d'une rente due au titre de la législation luxembourgeoise et travailleur bénéficiant d'une pension d'invalidité aux termes de l'article 187 du <ref href="/eli/etat/leg/code/securite_sociale" id="6343c330-58b9-404f-8aaa-e9c18fb9d9bf">Code des assurances sociales</ref>.</p> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_4/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<heading scl:style-format="b">Bourses</heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les catégories de bourses sont les suivantes:</p>
+<ol scl:symbol="1.">
+<li> <p>Bourse de base: la bourse de base est accessible à l'étudiant qui satisfait aux critères des articles 2 et 3 de la présente loi. Le montant par semestre est fixé à mille cent quarante-deux euros.</p> </li>
+<li> <p>Bourse de mobilité: la bourse de mobilité est accessible à l'étudiant qui satisfait aux critères des articles 2 et 3 de la présente loi et qui est inscrit dans un programme d'enseignement en dehors des frontières nationales du pays de résidence du ménage dont il fait partie et qui apporte la preuve qu'il supporte les frais inhérents à une prise de location d'un logement. Le montant par semestre est fixé à mille quatre cent vingt euros.</p> </li>
+<li> <p>Bourse sur critères sociaux: la bourse sur critères sociaux est accessible à l'étudiant qui satisfait aux critères des articles 2 et 3 de la présente loi et dont le revenu total annuel du ménage dont il fait partie est inférieur ou égal à quatre fois et demie le montant brut du salaire social minimum annuel pour salariés non qualifiés. Par revenu total annuel, il faut entendre le revenu imposable tel qu'il est défini à l'article 7 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="0664aef0-6253-4f70-93b9-458520b10026" scl:verify="true">loi modifiée du 4 décembre 1967</ref> concernant l'impôt sur le revenu. Est ajouté, le cas échéant, l'abattement de cession prévu à l'article 130 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="517eaf51-2af8-41ed-a696-9df9edbfbc01">même loi</ref>.</p> <p>Les montants, par semestre, des sous-catégories de bourses sur critères sociaux sont échelonnés comme suit:</p> <ol scl:symbol="a)">
+<li> <p>revenu total annuel inférieur à une fois le salaire social minimum annuel pour salariés non qualifiés: deux mille deux cent dix euros;</p> </li>
+<li> <p>revenu total annuel compris entre une fois et une fois et demie le salaire social minimum annuel pour salariés non qualifiés: mille huit cent soixante-dix euros;</p> </li>
+<li> <p>revenu total annuel compris entre une fois et demie et deux fois le salaire social minimum annuel pour salariés non qualifiés: mille cinq cent cinquante-trois euros;</p> </li>
+<li> <p>revenu total annuel compris entre deux fois et deux fois et demie le salaire social minimum annuel pour salariés non qualifiés: mille deux cent soixante-six euros;</p> </li>
+<li> <p>revenu total annuel compris entre deux fois et demie et trois fois le salaire social minimum annuel pour salariés non qualifiés: neuf cent quatre-vingts euros;</p> </li>
+<li> <p>revenu total annuel compris entre trois fois et trois fois et demie le salaire social minimum annuel pour salariés non qualifiés: six cent quatre-vingt-treize euros;</p> </li>
+<li> <p>revenu total annuel compris entre trois fois et demie et quatre fois et demie le salaire social minimum annuel pour salariés non qualifiés: trois cent cinquante-deux euros.</p> </li>
+</ol> </li>
+<li> <p>Bourse familiale: la bourse familiale est accessible à l'étudiant si parallèlement un ou plusieurs autres enfants, faisant partie du même ménage que lui, tombent sous le champ d'application de la présente loi. Le montant par semestre est fixé à deux cent soixante-quatorze euros.</p> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les différentes catégories de bourses sont cumulables.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les montants définis au présent article correspondent à la cote d'application 877,01 de l'indice des prix à la consommation national au 1<sup>er</sup> avril 2022 et varient proportionnellement à l'évolution de la cote d'application de l'échelle mobile des salaires. Chaque augmentation ou diminution de la cote d'application de l'échelle mobile des salaires de 2,5% au cours d'une année académique se traduit par une adaptation dans la même proportion de ces montants au début de l'année académique suivante.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Sans préjudice des dispositions qui précèdent, les montants adaptés sont arrondis à l'unité inférieure.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_5/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<heading scl:style-format="b">Prêts</heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le montant du prêt garanti par l'Etat avec charge d'intérêts et avec subvention d'intérêts se compose d'un prêt de base de trois mille deux cent cinquante euros par semestre. Le prêt de base de l'étudiant ne bénéficiant pas de la totalité de la bourse sur critères sociaux définie à l'article 4, paragraphe 1<sup>er</sup>, point 3 de la présente loi peut être majoré du montant maximal défini à l'article 4, paragraphe 1<sup>er</sup>, point 3a) duquel est déduit le montant de la bourse sur critères sociaux accordée.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le taux d'intérêt applicable au prêt étudiant et pris en charge par l'Etat est le taux d'intérêt prêteur à 6 mois EURIBOR + 0,5%, diminué de 2% au maximum à charge de l'étudiant, sans toutefois pouvoir être inférieur à 0%. Il est ajusté au 30 juin et au 31 décembre de chaque année.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les intérêts échus sur les prêts visés au paragraphe 2 sont payables à l'institut de crédit par l'étudiant les 30 juin et 31 décembre de chaque année. Ces intérêts commencent à courir dès la mise à disposition des prêts par l'institut de crédit.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Deux années après la fin ou l'arrêt des études, toutes les avances faites par l'institut de crédit à l'étudiant sont consolidées en un prêt unique soit au 30 juin, soit au 31 décembre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Sans préjudice des dispositions de l'article 10, la durée de remboursement des prêts ne peut dépasser une période de dix ans.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Si un délai de remboursement est accordé en vertu de l'article 10, le délai s'ajoute à la période maximale de remboursement définie au paragraphe 5 du présent article.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(7)</num>
+<alinea>
+<content>
+<p>Les conditions d'octroi des prêts ainsi que les modalités de leur remboursement et du paiement des intérêts y relatifs font l'objet d'une convention à conclure entre l'Etat et un ou plusieurs instituts de crédit. Dans le cadre de cette convention, l'Etat s'engage à supporter, sous forme de subventions, une partie des intérêts en rapport avec l'allocation des prêts.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(8)</num>
+<alinea>
+<content>
+<p>L'aide financière accordée sous forme de prêt fait l'objet d'un prêt contracté par l'étudiant auprès d'un des instituts de crédit qui sont parties à la convention visée au paragraphe précédent.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(9)</num>
+<alinea>
+<content>
+<p>L'Etat se porte garant du capital ainsi que des intérêts et accessoires redus par l'étudiant. Les modalités d'application de la garantie de l'Etat sont arrêtées par la convention visée au paragraphe 7.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(10)</num>
+<alinea>
+<content>
+<p>Si l'Etat a dû rembourser l'institut de crédit, il est subrogé dans les droits de celui-ci.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(11)</num>
+<alinea>
+<content>
+<p>Le recouvrement des sommes redues est assuré par les soins de l'Administration de l'enregistrement et des domaines suivant la procédure prévue en matière de recouvrement des droits d'enregistrement.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_6/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<heading scl:style-format="b">Majorations</heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les frais d'inscription jusqu'à concurrence de trois mille huit cents euros par année académique sont divisés en deux et ajoutés à raison de cinquante pour cent à la bourse de base et à raison de cinquante pour cent au prêt.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Une majoration de deux mille euros par année académique est allouée à l'étudiant qui se trouve dans une situation grave et exceptionnelle et qui est confronté à des charges extraordinaires; cette majoration est ajoutée à raison de cinquante pour cent à la bourse de base et à raison de cinquante pour cent au prêt. Elle est décidée par le ministre après avis de la commission consultative prévue à l'article 10.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_7/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<heading scl:style-format="b">Liquidation de l'aide financière</heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les bourses et les prêts sont alloués et liquidés en deux tranches semestrielles par année académique en cours. La bourse définie à l'article 4, paragraphe 1<sup>er</sup>, point 4, est liquidée en une seule tranche uniquement au semestre d'été.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les conditions d'octroi énoncées aux articles 2 et 3 de la présente loi doivent obligatoirement être remplies au 30 novembre pour une demande d'aide financière pour le semestre d'hiver et au 30 avril pour le semestre d'été de l'année académique en cours.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>La liquidation de l'aide est soumise à la production de certificats ou d'autres pièces déterminés par règlement grand-ducal attestant que les conditions de l'octroi de l'aide sont remplies.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>L'étudiant inscrit en premier cycle peut bénéficier de bourses et de prêts pour un nombre de semestres d'études dépassant de deux unités au maximum la durée officiellement prévue pour l'accomplissement du cycle d'études dans lequel il est inscrit.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>L'étudiant inscrit en deuxième cycle peut bénéficier de bourses et de prêts pour le nombre de semestres d'études officiellement prévus pour l'accomplissement du cycle d'études dans lequel il est inscrit. Ce nombre est augmenté soit de deux unités au cas où l'étudiant a accompli le premier cycle dans la durée officiellement prévue pour l'accomplissement de ce cycle d'études, soit d'une unité au cas où l'étudiant a dépassé d'une unité la durée officiellement prévue pour l'accomplissement du premier cycle d'études.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>L'étudiant inscrit en cycle unique peut bénéficier de bourses et de prêts pour un nombre de semestres d'études dépassant de deux unités la durée officiellement prévue pour l'accomplissement du cycle d'études dans lequel il est inscrit.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(7)</num>
+<alinea>
+<content>
+<p>L'aide financière sous forme de bourses et de prêts pour des études dans le cycle «formation à la recherche» est accordée pour une durée maximale de huit semestres.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(8)</num>
+<alinea>
+<content>
+<p>Lorsque l'étudiant veut terminer son premier cycle, son deuxième cycle ou son cycle unique d'études resté inachevé, il peut bénéficier de l'intégralité de l'aide financière sous forme de prêt pour deux semestres supplémentaires au maximum.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(9)</num>
+<alinea>
+<content>
+<p>Lorsque l'étudiant a terminé avec succès ses études de premier ou de deuxième cycle, il peut bénéficier de l'aide financière pour suivre de nouvelles études en premier ou en deuxième cycle dans un autre programme d'enseignement. Cette possibilité ne lui est accordée qu'une seule fois.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'étudiant tombant sous le champ d'application de l'article 2, paragraphe 4 de la présente loi et ayant terminé avec succès sa formation professionnelle peut bénéficier de l'aide financière une seule fois pour suivre une nouvelle formation professionnelle.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(10)</num>
+<alinea>
+<content>
+<p>En cas de résultats jugés gravement insuffisants sur base de critères de progression, d'assiduité aux cours et de présence aux examens, l'octroi de l'aide financière est refusé par le ministre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour l'appréciation de ces critères, l'étudiant bénéficiaire de l'aide financière peut être amené à rapporter la preuve de son assiduité aux cours, aux travaux pratiques ou dirigés, de la réalisation des stages obligatoires intégrés à la formation et de sa présence aux examens et concours correspondant à son programme d'enseignement supérieur. Cette preuve peut être rapportée par tout moyen.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour pouvoir bénéficier de l'aide financière à la troisième année de ses études de premier cycle, l'étudiant doit avoir rempli une des conditions suivantes:</p>
+<ol scl:symbol="a)">
+<li> <p>avoir validé 60 crédits ECTS au moins lors des deux premières années d'études dans le même programme d'enseignement supérieur;</p> </li>
+<li> <p>avoir validé 30 crédits ECTS au minimum au plus tard après la deuxième année d'études, à condition de s'être réorienté après la première inscription à un programme d'enseignement supérieur;</p> </li>
+<li> <p>être inscrit en deuxième année du programme d'enseignement supérieur, qui est défini en termes de durée d'études.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'étudiant qui, après deux années d'études, est inscrit en première année d'un programme d'enseignement supérieur se voit refuser l'aide financière quels que soient les résultats obtenus.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(11)</num>
+<alinea>
+<content>
+<p>Additionnellement aux dispositions des paragraphes 4, 5, 6 et 7 du présent article, l'étudiant en situation de handicap reconnue peut bénéficier de bourses et de prêts pour un nombre maximum de deux semestres supplémentaires par cycle pour des études de premier cycle, de deuxième cycle et dans le cycle «formation à la recherche», et pour un nombre maximum de quatre semestres supplémentaires pour des études de cycle unique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par dérogation aux dispositions du paragraphe 10 du présent article, le contrôle de la progression de l'étudiant en situation de handicap reconnue est réalisé au plus tard après trois années de ses études de premier cycle.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au sens de la présente loi, il y a lieu d'entendre par handicap une altération substantielle, durable ou définitive, d'une ou de plusieurs fonctions physiques, mentales, sensorielles, cognitives ou psychiques entravant une progression normale dans les études.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La reconnaissance du handicap est subordonnée à une décision du ministre, sur avis de la commission consultative prévue à l'article 10 de la présente loi. Cette décision fixe également la durée supplémentaire d'attribution de l'aide financière, ainsi que le délai de report du contrôle de la progression de l'étudiant dans ses études de premier cycle.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les documents à fournir par l'étudiant en vue de la reconnaissance de la situation de handicap sont définis par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(12)</num>
+<alinea>
+<content>
+<p>Par dérogation aux paragraphes 4, 5, 6, 7 et 8, les dispositions ci-après s'appliquent à l'étudiant ayant été inscrit pendant le semestre d'été 2019/2020 dans un cycle d'études supérieures éligible au titre de l'article 2 :</p>
+<ol scl:symbol="1°">
+<li> <p>L'étudiant inscrit en premier cycle peut bénéficier de bourses et de prêts pour un nombre de semestres d'études dépassant de trois unités au maximum la durée officiellement prévue pour l'accomplissement du cycle d'études dans lequel il est inscrit.</p> </li>
+<li> <p>L'étudiant inscrit en deuxième cycle peut bénéficier de bourses et de prêts pour le nombre de semestres d'études officiellement prévus pour l'accomplissement du cycle d'études dans lequel il est inscrit. Ce nombre est augmenté soit de trois unités au cas où l'étudiant a accompli le premier cycle dans la durée officiellement prévue pour l'accomplissement de ce cycle d'études, soit de deux unités au cas où l'étudiant a dépassé d'une unité la durée officiellement prévue pour l'accomplissement du premier cycle d'études, soit d'une unité au cas où l'étudiant a dépassé de deux unités la durée officiellement prévue pour l'accomplissement du premier cycle d'études.</p> </li>
+<li> <p>L'étudiant inscrit en cycle unique peut bénéficier de bourses et de prêts pour un nombre de semestres d'études dépassant de trois unités la durée officiellement prévue pour l'accomplissement du cycle d'études dans lequel il est inscrit.</p> </li>
+<li> <p>L'étudiant inscrit dans le cycle de formation à la recherche peut bénéficier de bourses et de prêts pour une durée maximale de neuf semestres.</p> </li>
+<li> <p>Lorsque l'étudiant veut terminer son premier cycle, son deuxième cycle ou son cycle unique d'études resté inachevé, il peut bénéficier de l'intégralité de l'aide financière sous forme d'un prêt pour un semestre supplémentaire.</p> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(12<i>bis</i>)</num>
+<alinea>
+<content>
+<p>L'étudiant ayant été inscrit pendant le semestre d'été 2019/2020 ou pendant l'année académique 2020/2021 ou pendant l'année académique 2021/2022 dans un cycle d'études supérieures éligible au titre de l'article 2 peut bénéficier d'une aide financière sous forme de bourses et de prêts pendant un semestre supplémentaire à la durée maximale d'attribution définie respectivement aux paragraphes 4, 5, 6 et 7, sous condition de ne pas avoir bénéficié des dispositions du paragraphe 12 avant la date du 1<sup>er</sup> août 2021 et de ne pas avoir bénéficié d'une augmentation d'au moins un semestre de la durée officiellement prévue pour l'accomplissement du cycle d'études visé suite à une décision afférente des autorités compétentes prise en relation avec la situation sanitaire due à la pandémie Covid-19.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le semestre supplémentaire à la durée maximale d'attribution définie respectivement aux paragraphes 4, 5, 6 et 7 n'est accordé qu'une seule fois au total et pour un seul cycle d'études dans lequel l'étudiant a été inscrit pendant la période visée à l'alinéa 1<sup>er</sup>, quel que soit le nombre de cycles d'études dans lesquels l'étudiant a été inscrit pendant cette période.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par dérogation au paragraphe 8, lorsque l'étudiant ayant été inscrit pendant le semestre d'été 2019/2020 ou pendant l'année académique 2020/2021 ou pendant l'année académique 2021/2022 dans un cycle d'études supérieures éligible au titre de l'article 2 veut terminer son premier cycle, son deuxième cycle ou son cycle unique d'études resté inachevé et pour lequel il a déjà bénéficié soit, au titre du paragraphe 12 ou du présent paragraphe, d'une aide financière sous forme de bourses et de prêts pendant un semestre supplémentaire à la durée maximale d'attribution définie respectivement aux paragraphes 4, 5 et 6, soit d'une augmentation d'au moins un semestre de la durée officiellement prévue pour l'accomplissement du cycle d'études visé suite à une décision afférente des autorités compétentes prise en relation avec la situation sanitaire due à la pandémie Covid-19, il peut bénéficier de l'intégralité de l'aide financière sous forme d'un prêt pour un semestre supplémentaire.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(13)</num>
+<alinea>
+<content>
+<p>Par dérogation au paragraphe 10, l'étudiant qui a été inscrit pendant l'année académique 2019/2020 ou pendant l'année académique 2020/2021 ou pendant l'année académique 2021/2022 dans un cycle d'études supérieures éligible au titre de l'article 2 et qui ne s'est pas réorienté après l'année académique 2021/2022 doit avoir rempli une des conditions suivantes pour pouvoir bénéficier de l'aide financière à la quatrième année de ses études de premier cycle :</p>
+<ol scl:symbol="1°">
+<li> <p>avoir validé 60 crédits ECTS au moins lors des trois premières années d'études dans le même programme d'enseignement supérieur ;</p> </li>
+<li> <p>avoir validé 30 crédits ECTS au minimum au plus tard après la troisième année d'études, à condition de s'être réorienté après la première inscription à un programme d'enseignement supérieur ;</p> </li>
+<li> <p>être inscrit en deuxième année du programme d'enseignement supérieur, qui est défini en termes de durée d'études.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'étudiant qui a été inscrit pendant l'année académique 2019/2020 ou pendant l'année académique 2020/2021 ou pendant l'année académique 2021/2022 dans un cycle d'études supérieures éligible au titre de l'article 2 et qui, après trois années d'études, est inscrit en première année d'un programme d'enseignement supérieur se voit refuser l'aide financière quels que soient les résultats obtenus.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(14)</num>
+<alinea>
+<content>
+<p>Par dérogation aux dispositions des paragraphes 11, alinéa 2, et 13, le contrôle de la progression de l'étudiant en situation de handicap reconnue telle que définie au paragraphe 11 et ayant été inscrit pendant l'année académique 2019/2020 ou pendant l'année académique 2020/2021 ou pendant l'année académique 2021/2022 dans un cycle d'études supérieures éligible au titre de l'article 2 et qui ne s'est pas réorienté après l'année académique 2021/2022 est réalisé au plus tard après quatre années de ses études de premier cycle.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_8/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<heading scl:style-format="b">Dispositions anticumul</heading>
+<alinea>
+<content>
+<p>L'aide financière allouée sur base de la présente loi n'est pas cumulable avec les avantages suivants attribuables dans l'Etat de résidence du ménage dont l'étudiant fait partie:</p>
+<ol scl:symbol="a)">
+<li> <p>les aides financières pour études supérieures et autres aides équivalentes;</p> </li>
+<li> <p>tout avantage financier dont bénéficie l'étudiant ou le ménage dont il fait partie et découlant du fait que le demandeur de l'aide financière est un étudiant au sens de la présente loi.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ne sont pas visées par les dispositions du présent article les bourses ayant leur fondement dans un mérite particulier de l'étudiant ainsi que les bourses ayant leur fondement dans un programme international visant à favoriser la mobilité internationale des étudiants.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'étudiant est tenu d'effectuer les démarches nécessaires pour obtenir les aides définies à l'alinéa 1<sup>er</sup>, points a) et b) du présent article dans le pays de résidence du ménage dont il fait partie dans le respect des procédures y définies et de produire les certificats émis par les autorités compétentes du pays concerné, indiquant le montant des aides financières et autres avantages financiers auxquels lui-même ou le ménage dont il fait partie peuvent avoir droit de la part des autorités de l'Etat de résidence du ménage visé, respectivement le motif du refus. Le montant précité est déduit de l'aide financière accordée sur base de la présente loi. L'absence des certificats précités entraîne un refus de l'aide financière.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toute forme d'aide financière et tout autre avantage financier, remboursables ou non remboursables, dont pourrait bénéficier l'étudiant dans le pays de résidence du ménage dont il fait partie sont intégralement déduits, sur base semestrielle, des montants remboursables ou des montants non remboursables de l'aide financière du premier et du deuxième semestre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La nature des documents à produire est définie par règlement grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_9/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<heading scl:style-format="b">Restitution de l'indu et contrôle</heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les aides accordées en application de la présente loi doivent être restituées immédiatement lorsqu'elles ont été obtenues au moyen de déclarations que le bénéficiaire savait inexactes ou incomplètes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Pour l'aide accordée sous forme de bourses, le bénéficiaire doit en outre payer des intérêts au taux légal à partir du jour du paiement jusqu'au jour de la restitution.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les personnes qui ont obtenu une des aides prévues par la présente loi sur la base de renseignements qu'elles savaient inexacts ou incomplets sont passibles des peines prévues à l'article 496 du <ref href="/eli/etat/leg/code/penal" id="0022408d-57ed-483d-8ec1-519463a05613">code pénal</ref>.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_10/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<heading scl:style-format="b">Commission consultative</heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est institué une commission consultative composée de membres nommés par le ministre et dont la composition et le fonctionnement sont déterminés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Sur avis de la commission consultative et par décision conjointe, le ministre ayant l'enseignement supérieur dans ses attributions et le ministre ayant le budget dans ses attributions peuvent prendre les mesures suivantes à l'égard d'étudiants qui se trouvent dans une situation grave et exceptionnelle et qui sont confrontés à des charges extraordinaires:</p>
+<ul scl:symbol="dash">
+<li> <p>augmenter le montant de l'aide financière annuelle conformément aux dispositions de l'article 6, paragraphe 2 de la présente loi;</p> </li>
+<li> <p>accorder des délais pour le remboursement des prêts;</p> </li>
+<li> <p>dispenser partiellement ou totalement du remboursement des prêts; dans ce cas, l'Etat se charge du remboursement du solde.</p> </li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2<i>bis</i>)</num>
+<alinea>
+<content>
+<p>Sur avis de la commission consultative, le ministre peut prendre les mesures suivantes telles que visées à l'article 7, paragraphe 11 de la présente loi:</p>
+<ul scl:symbol="dash">
+<li> <p>reconnaître la situation de handicap d'un étudiant;</p> </li>
+<li> <p>accorder une majoration de la durée supplémentaire d'attribution de l'aide financière;</p> </li>
+<li> <p>accorder le report du contrôle de la progression de l'étudiant dans ses études de premier cycle.</p> </li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le ministre ayant l'enseignement supérieur dans ses attributions peut demander à la commission consultative de lui donner un avis sur toutes autres questions qu'il juge utile de lui soumettre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les membres de la commission consultative sont tenus de garder le secret des faits dont ils obtiennent connaissance dans l'exercice de leurs fonctions. L'article 458 du <ref href="/eli/etat/leg/code/penal" id="762f93c8-0261-44e5-837b-2829a9cf2d8c">code pénal</ref> leur est applicable.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_11/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<heading scl:style-format="b">L'étudiant ayant un revenu propre</heading>
+<alinea>
+<content>
+<p>Par dérogation aux dispositions des articles 4 et 5 ci-avant, l'étudiant disposant d'un revenu total annuel propre tel que défini à l'article 4, paragraphe 1<sup>er</sup>, point 3, et supérieur au salaire social minimum annuel pour salariés non qualifiés peut bénéficier de l'allocation d'une aide financière sous forme de prêt uniquement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'étudiant ayant un revenu total annuel supérieur à trois fois et demie le salaire social minimum annuel pour salariés non qualifiés est exclu du bénéfice de l'aide financière pour études supérieures.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_11bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_11bis/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11bis.</num>
+<heading scl:style-format="b">Echange de données entre administrations</heading>
+<alinea>
+<content>
+<p>Les institutions de sécurité sociale peuvent être appelées à fournir aux services compétents du ministre toutes informations nécessaires à l'instruction des demandes d'attribution ou de prorogation de l'aide financière de l'Etat pour études supérieures.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre nomme l'agent autorisé à accéder à la banque de données nominatives communes entre la Caisse nationale des prestations familiales, le ministère de l'Enseignement supérieur et de la Recherche, le Service national de la jeunesse, le Centre commun de la sécurité sociale et l'Administration des contributions directes, telle que prévue à l'alinéa 5 de l'article 122 de la <ref href="/eli/etat/leg/loi/1967/12/04/n1/jo" id="b50b15a5-2fa4-4056-8203-4b89c661ffd2" scl:verify="true">loi modifiée du 4 décembre 1967</ref> concernant l'impôt sur le revenu.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_12/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<heading scl:style-format="b">Disposition abrogatoire</heading>
+<alinea>
+<content>
+<p>La présente loi abroge la <ref href="/eli/etat/leg/loi/2000/06/22/n1/jo" id="ae27cb0e-0497-4d7c-b698-df94432dd3f2" scl:verify="true">loi modifiée du 22 juin 2000</ref> concernant l'aide financière de l'Etat pour études supérieures.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1/art_13/20220801</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/24/n1</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2022-08-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<heading scl:style-format="b">Entrée en vigueur</heading>
+<alinea>
+<content>
+<p>La présente loi entre en vigueur le 1<sup>er</sup> août 2014.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+</body>
+</act>
+</akomaNtoso>

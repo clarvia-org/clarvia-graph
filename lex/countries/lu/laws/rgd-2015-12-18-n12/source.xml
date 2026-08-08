@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2015-12-18" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MEN"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2015-12-18" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2015-12-18" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2020-05-22</scl:jolux><scl:jolux scl:name="dateDocument">2015-12-18</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/944</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/61</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1546</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2016-01-02</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2015/a261</scl:jolux><scl:jolux scl:name="historicalLegalId">2015A6273A</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux><scl:jolux scl:name="publicationDate">2015-12-29</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pr/20150169</scl:jolux>
+<scl:jolux scl:name="titleAlternative">Stage d'instituteur de l'enseignement fondamental</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1984/02/24/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/rgd/2009/03/09/n1/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/trep/2009/09/03/n24/jo</scl:jolux>
+<scl:jolux scl:name="repeals">/eli/etat/leg/trep/2014/09/04/n29/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 22/05/2020 : Règlement grand-ducal du 18 décembre 2015 déterminant les modalités du concours réglant l'admission au stage préparant à la fonction d'instituteur de l'enseignement fondamental.</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2009/02/06/n4/jo</scl:jolux>
+<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2015-261-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2015/a261/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2015-12-18-n12-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2015/12/18/n12/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2015-261-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2015/a261/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2015/a261/fr/pdf/eli-etat-leg-memorial-2015-a261-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2016-01-02" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2020-05-22" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2020-05-22" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2020-05-22" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2020-05-22" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/rgd/2020/05/15/a429/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/rgd/2015/12/18/n12/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/rgd/2020/05/15/a429/jo" id="rp2" showAs="Règlement grand-ducal du 15 mai 2020 modifiant 1° le règlement grand-ducal modifié du 6 juillet 2009 déterminant les modalités d’évaluation des élèves ainsi que le contenu du dossier d’évaluation ; 2° le règlement grand-ducal modifié du 18 décembre 2015 déterminant les modalités du concours réglant l’admission au stage préparant à la fonction d’instituteur de l’enseignement fondamental ; 3° le règlement grand-ducal modifié du 11 janvier 2017 déterminant les modalités d’admission dans les classes de 7e de l’enseignement secondaire. "/>
+<passiveRef href="/eli/etat/leg/rgd/2020/04/01/a276/jo" id="rp3" showAs="Règlement grand-ducal du 1er avril 2020 modifiant le règlement grand-ducal modifié du 18 décembre 2015 déterminant les modalités du concours réglant l’admission au stage préparant à la fonction d’instituteur de l’enseignement fondamental."/>
+<passiveRef href="/eli/etat/leg/rgd/2018/06/22/a519/jo" id="rp4" showAs="Règlement grand-ducal du 22 juin 2018 modifiant : 1° le règlement grand-ducal modifié du 18 décembre 2015 déterminant les modalités du concours réglant l'admission au stage préparant à la fonction d'instituteur de l'enseignement fondamental ; 2° le règlement grand-ducal du 2 août 2017 déterminant les détails des critères de classement ainsi que les modalités des procédures d’affectation et de réaffectation des membres de la réserve des auxiliaires éducatifs de l’enseignement fondamental."/>
+<passiveRef href="/eli/etat/leg/rgd/2017/03/22/a380/jo" id="rp5" showAs="Règlement grand-ducal du 22 mars 2017 modifiant le règlement grand-ducal du 18 décembre 2015 déterminant les modalités du concours réglant l’admission au stage préparant à la fonction d’instituteur de l’enseignement fondamental."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2020-05-22|2020-05-15|RGD|429">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/05/15/a429/jo">Règlement grand-ducal du 15 mai 2020 modifiant 1° le règlement grand-ducal modifié du 6 juillet 2009 déterminant les modalités d’évaluation des élèves ainsi que le contenu du dossier d’évaluation ; 2° le règlement grand-ducal modifié du 18 décembre 2015 déterminant les modalités du concours réglant l’admission au stage préparant à la fonction d’instituteur de l’enseignement fondamental ; 3° le règlement grand-ducal modifié du 11 janvier 2017 déterminant les modalités d’admission dans les classes de 7e de l’enseignement secondaire. </ref>
+</p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 22/05/2020 : Règlement grand-ducal du 18 décembre 2015 déterminant les modalités du concours réglant l’admission au stage préparant à la fonction d’instituteur de l’enseignement fondamental. </p>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_1er">
+<num>
+<mod class="mod-start" for="#pm1"/>Chapitre 1<sup>er</sup>
+</num>
+<heading scl:align="center" scl:style-format="b">Les critères d’admissibilité au concours.</heading>
+<article id="art_1er">
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Est admissible aux épreuves du concours réglant l’admission au stage préparant à la fonction d’instituteur, à condition d’avoir passé avec succès les épreuves préliminaires au concours définies à l’article 2 :</p>
+<ol scl:symbol="1°">
+<li> <p>le détenteur du bachelor professionnel en sciences de l’éducation délivré par l’Université du Luxembourg ;</p> </li>
+<li> <p>le détenteur d’un diplôme étranger d’études supérieures préparant à la profession d’instituteur, conforme aux dispositions des directives CE relatives à la reconnaissance des qualifications professionnelles ;</p> </li>
+<li> <p>le détenteur d’un diplôme étranger d’études supérieures préparant à la profession d’instituteur, délivré par une institution située dans un pays qui n’est pas membre de l’Union Européenne et reconnu par le ministre ayant l’Enseignement supérieur dans ses attributions ;</p> </li>
+<li> <p>le détenteur d’un diplôme délivré par un établissement d’enseignement supérieur reconnu par l’État et sanctionnant l’accomplissement avec succès d’un bachelor en lien avec un des objectifs de l’enseignement fondamental définis aux articles 6 et 7 de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="9d6b634d-4bb5-400a-9e95-b0c7a9c022af" scl:verify="true">loi modifiée du 6 février 2009</ref> portant organisation de l’enseignement fondamental ou de son équivalent et admis à la réserve de suppléants prévus à l’article 16, point 2, lettre c), de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="ec337187-d899-4c41-8553-b9a84c4b07fa" scl:verify="true">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental ;</p> </li>
+<li> <p>les candidats ayant débuté le dernier semestre des études menant à l’obtention d’un des diplômes visés aux points 1 à 3.</p> </li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_2">
+<num>Chapitre 2</num>
+<heading scl:align="center" scl:style-format="b">Les épreuves préliminaires au concours.</heading>
+<section id="chapitre_2.section_1ère">
+<num>Section 1<sup>ère</sup>
+</num>
+<heading scl:align="center" scl:style-format="n">Généralités.</heading>
+<article id="art_2">
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>Les épreuves préliminaires, auxquelles les candidats doivent se présenter et réussir préalablement aux épreuves du concours, visent à vérifier les connaissances dans les trois langues visées à l’article 3 de la <ref href="/eli/etat/leg/loi/1984/02/24/n1/jo" id="79afe310-96e8-434d-a327-928c2884619e" scl:verify="true">loi du 24 février 1984</ref> sur le régime des langues.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces épreuves ne donnent pas lieu à un classement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<num>Art. 3.</num>
+<alinea>
+<content>
+<p>Les épreuves de langues visent à vérifier si les candidats ont acquis les compétences requises pour enseigner dans les domaines de développement et d’apprentissage de l’école fondamentale luxembourgeoise en employant les langues respectives. Elles comportent, chaque fois, une épreuve écrite et une épreuve orale évaluées séparément.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour chaque épreuve de langues réussie, une attestation est délivrée aux candidats.</p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_2.section_2">
+<num>Section 2</num>
+<heading scl:align="center" scl:style-format="n">L’organisation des épreuves préliminaires.</heading>
+<article id="art_4">
+<num>Art. 4.</num>
+<alinea>
+<content>
+<p>Au cours de chaque année scolaire, deux sessions peuvent être organisées dont les dates sont fixées par le ministre ayant l’Éducation nationale dans ses attributions, désigné ci-après par «le ministre».</p>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>Il est institué un jury appelé à procéder aux opérations des épreuves préliminaires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le jury est composé de quinze membres effectifs au moins et de trois membres suppléants au moins, nommés par le ministre qui désigne le président et le secrétaire parmi les membres effectifs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le jury se réunit en séance préliminaire pour fixer le détail des opérations des épreuves, les contenus, les questions et les critères d’évaluation des épreuves de langues.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du jury sont tenus au secret des délibérations.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats sont informés des modalités et programmes des épreuves.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Nul ne peut, en qualité de membre d’un jury, prendre part à l’examen d’un parent ou allié jusqu’au quatrième degré inclus.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du jury ont droit, par candidat et par épreuve, à une indemnité forfaitaire fixée à 2,11 euros correspondant au nombre 100 de l’indice pondéré au coût de la vie au 1<sup>er</sup> janvier 1948.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<num>Art. 6.</num>
+<alinea>
+<content>
+<p>Peuvent s’inscrire aux sessions respectives :</p>
+<ol scl:symbol="1°">
+<li> <p>les candidats détenteurs d’un des diplômes énumérés à l’article 1<sup>er</sup>, points 1° à 3°, et les candidats inscrits à une formation menant à un de ces diplômes ;</p> </li>
+<li> <p>les candidats prévus à l’article 1<sup>er</sup>, point 4°.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les demandes de participation sont faites moyennant un formulaire dont la forme est arrêtée par le ministre. Les dates des épreuves et les délais dans lesquels les demandes de participation doivent parvenir au ministre sont publiés sur le site internet du Ministère de l’Éducation nationale, de l’Enfance et de la Jeunesse, désigné ci-après par « ministère ».</p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_2.section_3">
+<num>Section 3</num>
+<heading scl:align="center" scl:style-format="n">Le déroulement des épreuves préliminaires.</heading>
+<article id="art_7">
+<num>Art. 7.</num>
+<alinea>
+<content>
+<p>Toute épreuve écrite est évaluée par deux membres du jury au moins. Les épreuves orales ne peuvent avoir lieu qu’en présence de trois membres du jury au moins.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaque épreuve est cotée sur vingt points. Une note inférieure à dix points est considérée comme note insuffisante.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats qui échouent dans une des épreuves de langues, orale ou écrite, doivent refaire l’épreuve orale ou écrite de cette langue lors d’une session ultérieure.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Pendant les épreuves, toute communication entre les candidats et avec l’extérieur, de même que toute utilisation d’ouvrages ou de notes, autres que ceux autorisés préalablement par le jury, sont interdites.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats fautifs sont exclus des épreuves préliminaires. Ils peuvent se présenter une nouvelle fois lors d’une session ultérieure. Le nombre des participations aux épreuves préliminaires n’est pas limité.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>Le candidat pouvant attester la fréquentation, pendant au moins dix années scolaires, d’établissements publics ou privés appliquant les programmes de l’enseignement public luxembourgeois, conformément à la législation concernant l’organisation de l’enseignement fondamental et de l’enseignement postprimaire peut être dispensé des épreuves de luxembourgeois.</p>
+</content>
+</alinea>
+</article>
+</section>
+</chapter>
+<chapter id="chapitre_3">
+<num>Chapitre 3</num>
+<heading scl:align="center" scl:style-format="b">Les épreuves du concours.</heading>
+<section id="chapitre_3.section_1ère">
+<num>Section 1<sup>ère</sup>
+</num>
+<heading scl:align="center" scl:style-format="n">L’organisation du concours.</heading>
+<article id="art_10">
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>Les épreuves du concours comportent:</p>
+<ol scl:symbol="custom">
+<li> <p> <span class="li_symbol">1.</span>Pour l’option C1 : une épreuve écrite sur la pédagogie et la didactique des domaines de développement et d’apprentissage du cycle 1 de l’enseignement fondamental. Cette épreuve est à documents ouverts. Les candidats peuvent choisir de rédiger l’épreuve en langue allemande ou en langue française, indépendamment de la langue dans laquelle la ou les questions sont posées.</p> </li>
+<li> <p> <span class="li_symbol">1bis.</span> Pour l’option C2-C4 : une épreuve écrite sur la pédagogie et la didactique des domaines de développement et d’apprentissage des cycles 2, 3 et 4 de l’enseignement fondamental. Cette épreuve est à documents ouverts. Les candidats peuvent choisir de rédiger l’épreuve en langue allemande ou en langue française, indépendamment de la langue dans laquelle la ou les questions sont posées.</p> </li>
+<li> <p> <span class="li_symbol">2.</span>une épreuve écrite portant sur la culture luxembourgeoise. Les candidats peuvent choisir de rédiger l’épreuve en langue allemande ou en langue française, indépendamment de la langue dans laquelle la ou les questions sont posées.</p> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>Au cours de chaque année scolaire, le ministre organise une session du concours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Par dérogation aux dispositions de l’alinéa précédent, pour l’année scolaire 2020/2021, le ministre peut organiser une ou plusieurs sessions du concours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les demandes d’admission sont faites moyennant un formulaire dont la forme est arrêtée par le ministre. La date des épreuves et le délai dans lequel les demandes d’admission au concours doivent parvenir au ministre sont publiés sur le site internet du ministère.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>L’admission au concours est prononcée par le ministre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats briguant ou disposant de la qualification pour enseigner au premier cycle de l’enseignement fondamental se présentent aux épreuves de l’option C1.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats briguant ou disposant de la qualification pour enseigner aux deuxième, troisième et quatrième cycles de l’enseignement fondamental se présentent aux épreuves de l’option C2 - C4.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats briguant ou disposant de la qualification d’enseigner dans les quatre cycles de l’enseignement fondamental peuvent se présenter aux épreuves des deux options.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats visés par l’article 1<sup>er</sup>, point 4, se présentent aux épreuves de l’option correspondant à leur formation conformément à l’article 20<i>bis</i> de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="1f43686f-27f8-44d2-829f-150899fd5233" scl:verify="true">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L’épreuve visée à l’article 10, point 2 est commune aux options C1 et C2 - C4.</p>
+</content>
+</alinea>
+</article>
+<article id="art_13">
+<num>Art. 13.</num>
+<alinea>
+<content>
+<p>Il est institué un jury appelé à procéder aux opérations du concours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le jury est composé de quinze membres effectifs au moins et de trois membres suppléants au moins, nommés par le ministre qui désigne le président et le secrétaire parmi les membres effectifs.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le jury se réunit en séance préliminaire pour fixer le détail des opérations du concours, les contenus, les questions et les critères d’évaluation des épreuves.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du jury sont tenus au secret des délibérations.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats sont informés des modalités et programmes des épreuves ainsi que des documents autorisés aux épreuves du concours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Nul ne peut, en qualité de membre d’un jury, prendre part à l’examen d’un parent ou allié jusqu’au quatrième degré inclus.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du jury ont droit, par candidat et par copie corrigée, à une indemnité forfaitaire fixée à 2,11 euros correspondant au nombre 100 de l’indice pondéré au coût de la vie au 1<sup>er</sup> janvier 1948.</p>
+</content>
+</alinea>
+</article>
+</section>
+<section id="chapitre_3.section_2">
+<num>Section 2</num>
+<heading scl:align="center" scl:style-format="n">Le déroulement du concours.</heading>
+<article id="art_14">
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>Chaque épreuve est évaluée par deux membres du jury au moins et est cotée sur vingt points.</p>
+</content>
+</alinea>
+</article>
+<article id="art_15">
+<num>Art. 15.</num>
+<alinea>
+<content>
+<p>Pendant les épreuves, toute communication entre les candidats et avec l’extérieur, de même que toute utilisation d’ouvrages ou de notes, autres que ceux autorisés préalablement par le jury, sont interdites.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les candidats fautifs sont exclus du concours. Cette exclusion équivaut à un échec. Ils peuvent se présenter une nouvelle fois lors d’une session ultérieure. Le nombre des participations aux épreuves du concours n’est pas limité.</p>
+</content>
+</alinea>
+</article>
+</section>
+</chapter>
+<chapter id="chapitre_4">
+<num>Chapitre 4</num>
+<heading scl:align="center" scl:style-format="b">Le classement des candidats au concours.</heading>
+<article id="art_16">
+<num>Art. 16.</num>
+<alinea>
+<content>
+<p>Le candidat ayant participé aux épreuves des deux options fait parvenir, par formulaire arrêté par le ministre, son choix quant à l’option préférée. Le ministre fixe le délai pour exprimer ce choix. Le délai se situe avant l’établissement des classements par les jurys. Le choix du candidat est irrévocable.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour l’établissement du classement, le jury ne considère que :</p>
+<ol scl:symbol="1°">
+<li> <p>les candidats visés à l’article 1<sup>er</sup>, points 1 à 3 ;</p> </li>
+<li> <p>les candidats visés à l’article 1<sup>er</sup>, point 4, ayant remis leur certificat de formation pédagogique prévu à l’article 20bis de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="ea57dda1-bfee-4f57-8911-23038a23abfa" scl:verify="true">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental ;</p> </li>
+<li> <p>les candidats visés à l’article 1<sup>er</sup>, point 5, ayant remis leur diplôme d’instituteur, tel que mentionné à l’article 1<sup>er</sup>, points 1 à 3, ou, à défaut, une attestation de réussite de leur formation.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre fixe la date limite à laquelle les candidats sont tenus de compléter leur demande ; à défaut, ils doivent se présenter à une nouvelle session du concours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le jury établit, par ordre de mérite, un classement séparé pour tous les candidats de l’option C1 et un classement séparé pour tous les candidats de l’option C2 - C4.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de classement en rang utile dans chacune des deux options, le choix préalablement exprimé du candidat conditionne le classement dans lequel figure le candidat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas d’égalité des points totalisés par plusieurs candidats, ceux-ci sont départagés d’après les notes obtenues aux épreuves prises individuellement, ceci dans l’ordre de leur énumération à l’article 10. En cas de nouvelle égalité, ces candidats seront départagés par tirage au sort.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le classement en rang utile des candidats, conformément à l’article 5 de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="6535f9d2-941d-45c7-b985-c92a340c3c6c" scl:verify="true">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental, vaut pour l’admission au stage préparant à la fonction d’instituteur l’année scolaire subséquente au concours et permet le choix d’un poste correspondant à son classement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_17">
+<num>Art. 17.</num>
+<alinea>
+<content>
+<p>Le président du jury communique, à chaque candidat pris en considération pour le classement, les résultats obtenus aux épreuves du concours.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<num>Art. 18.</num>
+<alinea>
+<content>
+<p>À la clôture des opérations, le président du jury remet au ministre un rapport sur la session. Ce rapport contient le classement, les noms des candidats admissibles au stage préparant à la fonction d’instituteur, les notes obtenues par les candidats dans les différentes épreuves et les questionnaires.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_5">
+<num>Chapitre 5</num>
+<heading scl:align="center" scl:style-format="b">Dispositions transitoires et finales.</heading>
+<article id="art_19">
+<num>Art. 19.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 1<sup>er</sup>, sont admissibles au concours, les détenteurs des certificats et diplômes énumérés à l’article 46, points 1 à 4, de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="8836d328-dc0f-49ac-a3a6-378646b0c8d4" scl:verify="true">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental. L’admission au concours est soumise aux conditions et restrictions établies par le même article 46.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Par dérogation à l’article 6, peuvent s’inscrire aux sessions respectives des épreuves préliminaires du concours, les détenteurs des certificats et diplômes énumérés à l’article 46, points 1 à 4, de la <ref href="/eli/etat/leg/loi/2009/02/06/n3/jo" id="0299b8ae-e1a6-4231-b942-de0da22939fa" scl:verify="true">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental, sous réserve de l’application des restrictions fixées par le même article 46. Les dispositions de l’article 9 leur sont applicables.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_20">
+<num>Art. 20.</num>
+<alinea>
+<content>
+<p>Les candidats visés à l’article 19, paragraphe 1<sup>er</sup>, ne peuvent accéder au stage préparant à la fonction d’instituteur que pour un poste soit du premier cycle, soit des deuxième, troisième ou quatrième cycles de l’enseignement fondamental. Leur classement en rang utile à l’issue du concours ne vaut que pour l’accès au stage pour un poste d’instituteur correspondant à leur qualification.</p>
+</content>
+</alinea>
+</article>
+<article id="art_21">
+<num>Art. 21.</num>
+<alinea>
+<content>
+<p>Est dispensé des épreuves préliminaires de langues, le candidat qui a réussi les épreuves en question ou qui en a été dispensé avant l’entrée en vigueur du présent règlement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_22">
+<num>Art. 22.</num>
+<alinea>
+<content>
+<p>Le <ref href="/eli/etat/leg/rgd/2009/03/09/n1/jo" id="e9faa30a-c0bb-4856-a08a-b4957efa7c30" scl:verify="true">règlement grand-ducal modifié du 9 mars 2009</ref> déterminant les modalités du concours réglant l’accès à la fonction d’instituteur de l’enseignement fondamental est abrogé.</p>
+</content>
+</alinea>
+</article>
+<article id="art_23">
+<num>Art. 23.</num>
+<alinea>
+<content>
+<p>Notre Ministre de l’Éducation nationale, de l’Enfance et de la Jeunesse et Notre Ministre des Finances sont chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Mémorial.<mod class="mod-end" for="#pm1"/>
+<noteRef href="#M1" marker="1"/>
+</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

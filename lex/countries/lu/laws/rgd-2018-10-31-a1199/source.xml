@@ -1,0 +1,3517 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="" scl:page-proof="many">
+		<meta>
+			<identification source="#somebody">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2018-10-31" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFOPU"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2018-10-31" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2018-10-31" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2018-12-28</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2018-10-31</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2020-01-01</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2020-09-08</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+						<scl:jolux scl:name="dateEndApplicability"/>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2018/a1199</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFOPU</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/944</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/589</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/555</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/610</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/381</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/238</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 08/09/2020 : Règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État, et portant modification\n1° du règlement grand-ducal modifié du 13 avril 1984 déterminant la procédure des commissions d'examen du concours d'admission au stage, de l'examen de fin de stage et de l'examen de promotion dans les administrations et services de l'État ; et\n2° du règlement grand-ducal modifié du 27 octobre 2000 déterminant à l’Institut national d’administration publique 1. l’organisation de la commission de coordination, 2. la collaboration avec les administrations et établissements publics de l’État et 3. la collaboration avec le Ministère de l’Intérieur et les administrations et établissements publics des communes.</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="titleShort">Règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/1999/06/15/n1/jo</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/2015/03/25/n8/jo</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/rgd/1984/04/13/n7/jo</scl:jolux>
+					<scl:jolux scl:name="modifies">http://data.legilux.public.lu/eli/etat/leg/rgd/2000/10/27/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2017/06/16/a592/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2004/07/09/n3/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/2015/03/25/n8/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/rgd/2000/10/27/n2/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101/fr</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2018-10-31-a1199-consolide-20200101-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/consolide/20200101/fr</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2018-10-31-a1199-consolide-20200101-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2018-10-31" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2020-01-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2020-09-08" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_10"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_10"/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#chapter_2"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_22"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_22"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_22"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_25"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_29_20200908"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#chapter_2"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_30_20200908"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_31_20200908"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_32_20200908"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_33_20200908"/>
+					</textualMod>
+					<textualMod id="pm15" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_34_20200908"/>
+					</textualMod>
+					<textualMod id="pm16" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_35_20200908"/>
+					</textualMod>
+					<textualMod id="pm17" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#chapter_2"/>
+					</textualMod>
+					<textualMod id="pm18" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_36_20200908"/>
+					</textualMod>
+					<textualMod id="pm19" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#chapter_2"/>
+					</textualMod>
+					<textualMod id="pm20" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/12/20/a901/jo"/>
+						<destination href="#art_37_20200908"/>
+					</textualMod>
+					<textualMod id="pm21" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2020/09/04/a757/jo"/>
+						<destination href="#art_18"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2018/10/31/n4/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2020/09/04/a757/jo" id="rp2" showAs="Règlement grand-ducal du 4 septembre 2020 fixant les modalités et les matières de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive ainsi que de l’examen de promotion des différentes catégories de traitement auprès de l’Administration gouvernementale et portant modification :  1° du règlement grand-ducal modifié du 13 avril 1984 déterminant la procédure des commissions d’examen de l’examen de fin de formation spéciale pendant le stage et de l’examen de promotion dans les administrations et services de l’État ;  2° du règlement grand-ducal modifié du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État. "/>
+				<passiveRef href="/eli/etat/leg/rgd/2019/12/20/a901/jo" id="rp3" showAs="Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État."/>
+			</references>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M13" marker="13" refersTo="pm13" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M14" marker="14" refersTo="pm14" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M15" marker="15" refersTo="pm15" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M16" marker="16" refersTo="pm16" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M17" marker="17" refersTo="pm17" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M18" marker="18" refersTo="pm18" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M19" marker="19" refersTo="pm19" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M20" marker="20" refersTo="pm20" title="A|2019-12-28|2019-12-20|RGD|901">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/12/20/a901/jo">Règlement grand-ducal du 20 décembre 2019 modifiant le règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M21" marker="21" refersTo="pm21" title="A|2020-09-04|2020-09-04|RGD|757">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2020/09/04/a757/jo">Règlement grand-ducal du 4 septembre 2020 fixant les modalités et les matières de l’examen de fin de stage sanctionnant la formation spéciale en vue de l’admission définitive ainsi que de l’examen de promotion des différentes catégories de traitement auprès de l’Administration gouvernementale et portant modification : 1° du règlement grand-ducal modifié du 13 avril 1984 déterminant la procédure des commissions d’examen de l’examen de fin de formation spéciale pendant le stage et de l’examen de promotion dans les administrations et services de l’État ; 2° du règlement grand-ducal modifié du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="9">
+				<p>Version consolidée applicable au 08/09/2020 : Règlement grand-ducal du 31 octobre 2018 portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État, et portant modification</p>
+				<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+					<li>du règlement grand-ducal modifié du 13 avril 1984 déterminant la procédure des commissions d'examen du concours d'admission au stage, de l'examen de fin de stage et de l'examen de promotion dans les administrations et services de l'État ; et</li>
+					<li>du règlement grand-ducal modifié du 27 octobre 2000 déterminant à l’Institut national d’administration publique 1. l’organisation de la commission de coordination, 2. la collaboration avec les administrations et établissements publics de l’État et 3. la collaboration avec le Ministère de l’Intérieur et les administrations et établissements publics des communes.</li>
+				</ol>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_1er">
+				<num>
+					<b>Chapitre 1<sup>er </sup>
+					</b>
+				</num>
+				<heading>
+					<b>Organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État</b>
+				</heading>
+				<section id="chapitre_1er.section_1ère">
+					<num>
+						<b>Section 1<sup>ère </sup>
+						</b>
+					</num>
+					<heading>
+						<b>Formations organisées dans le cadre de la formation générale</b>
+					</heading>
+					<article id="art_1er">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_1er</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_1er/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 1<sup>er</sup>.</num>
+						<alinea>
+							<content>
+								<p>Dans le cadre de la formation générale, les fonctionnaires stagiaires suivent :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+									<li>un ensemble de formations appelées « formations du tronc commun », obligatoires pour tous les stagiaires, conformément à l’article 3, et</li>
+									<li>un ensemble de formations appelées « formations au choix », à déterminer individuellement pour chaque stagiaire par le chef d’administration ou son délégué conformément à l’article 4. </li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_2">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_2</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_2/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 2.</num>
+						<alinea>
+							<content>
+								<p>La formation générale peut être organisée sous forme de :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+									<li>cours présentiels ;</li>
+									<li>cours en ligne ;</li>
+									<li>études personnelles ; ou</li>
+									<li>en mode alternant cours présentiels, cours en ligne ou études personnelles.</li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_3">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_3</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_3/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 3.</num>
+						<paragraph id="paragraph_1">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Une formation du tronc commun est organisée par l’Institut national d’administration publique, ci-après l’« Institut », pour chacune des matières suivantes :</p>
+									<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+										<li>Connaissances générales de l’État, comprenant les sujets suivants :<ol ns3727365:start="1" ns3727365:symbol="a)">
+												<li>Histoire du Grand-Duché de Luxembourg ;</li>
+												<li>Éléments constitutifs de l’État luxembourgeois ;</li>
+												<li>Système institutionnel luxembourgeois ;</li>
+												<li>Introduction générale au droit luxembourgeois.</li>
+											</ol>
+										</li>
+										<li>Droits et obligations des agents publics, comprenant les sujets suivants :<ol ns3727365:start="1" ns3727365:symbol="a)">
+												<li>Parcours professionnel ;</li>
+												<li>Rémunération ;</li>
+												<li>Organisation du temps de travail ;</li>
+												<li>Droits et devoirs statutaires.</li>
+											</ol>
+										</li>
+										<li>Principes de gestion publique, comprenant les sujets suivants :<ol ns3727365:start="1" ns3727365:symbol="a)">
+												<li>Valeurs et principes de bonne conduite administrative ;</li>
+												<li>Principes généraux d’organisation et de gestion ;</li>
+												<li>Finances publiques ;</li>
+												<li>Administration digitale.</li>
+											</ol>
+										</li>
+										<li>Communication et compétences comportementales, comprenant les sujets suivants :<ol ns3727365:start="1" ns3727365:symbol="a)">
+												<li>Principes de communication sur le lieu de travail ;</li>
+												<li>Accueil et communication externe.</li>
+											</ol>
+										</li>
+									</ol>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>La durée totale des formations du tronc commun s’élève à 60 heures.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Pour chaque matière, l’Institut propose au ministre ayant dans ses attributions la Fonction publique, ci-après le « ministre », un programme détaillé, la forme d’organisation et le nombre d’heures associées à la formation qui est compris entre 3 heures et 18 heures.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les propositions ainsi élaborées sont approuvées par le ministre et le détail est publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_2">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>L’inscription du stagiaire à une formation du tronc commun est faite par le chef d’administration ou son délégué.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_3">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Le chef d’administration assure que le stagiaire bénéficie pour le volet de la formation suivi sous forme d’études personnelles ou de cours en ligne d’une dispense de service considérée comme période d’activité de service équivalant au nombre d’heures de formation associées à ce volet avant sa participation à l’épreuve de l’examen de fin de formation générale concernée.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_4">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Lorsque le stagiaire est absent lors d’une ou de plusieurs demi-journées de cours présentiel, il est tenu de transmettre à l’Institut, au plus tard le jour ouvrable suivant le début de son absence, un certificat indiquant la raison dûment justifiée de son absence. Le chargé de direction de l’Institut, ci-après le « chargé de direction », en informe le chef d’administration dont relève le stagiaire qui doit lui permettre une nouvelle inscription à ce cours présentiel lorsqu’il le souhaite. À défaut de certificat indiquant la raison dûment justifiée d’absence présenté dans le délai imparti ou de nouvelle inscription, le stagiaire est considéré comme ayant suivi intégralement la formation du tronc commun.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_4">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_4</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_4/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 4.</num>
+						<paragraph id="paragraph_5">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le stagiaire suit des formations au choix à déterminer par le chef d’administration ou son délégué parmi les matières énumérées à l’annexe du présent règlement pour un nombre total <mod class="mod-start" for="#pm1"/>de 30 heures de formation au moins<mod class="mod-end" for="#pm1"/>
+										<noteRef href="#M1" marker="1"/>.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Pour chaque matière, l’Institut propose au ministre un programme détaillé, la forme d’organisation et le nombre d’heures associées à la formation qui est compris entre 3 heures et 90 heures.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les propositions ainsi élaborées sont approuvées par le ministre et le détail est publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_6">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>L’inscription du stagiaire à des formations au choix est faite par le chef d’administration ou son délégué.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_7">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Pour la mise en compte intégrale des heures de formation d’une formation au choix, le stagiaire est obligé de participer à l’ensemble des heures de formation.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Lorsque, dans le cadre d’une formation au choix, le stagiaire a suivi un nombre d’heures de formation supérieur ou égal à soixante-quinze pour cent par rapport à la durée totale de cette formation, les demi-journées au sens de l’article 5 réellement suivies sont prises en compte pour le calcul du nombre total d’heures de formation au choix.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Lorsque, dans le cadre d’une formation au choix, le stagiaire a suivi un nombre d’heures de formation inférieur au pourcentage précité à l’alinéa précédent, aucune heure de formation n’est prise en compte pour le calcul du nombre total d’heures de formation au choix.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_8">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Le chef d’administration ou son délégué peut demander que des formations organisées par les administrations et établissements publics de l’État soient assimilées à des formations au choix dans les matières énumérées à l’annexe.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>La demande écrite est à adresser au ministre. Le ministre prend une décision, le chargé de direction entendu en son avis.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Une telle demande d’assimilation doit mentionner :</p>
+									<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+										<li>le sujet de la formation accompagné d’un bref descriptif ;</li>
+										<li>l’organisme ayant assuré la formation ;</li>
+										<li>la date et le lieu du déroulement de la formation ; et</li>
+										<li>la durée effective de la formation.</li>
+									</ol>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>La demande d’assimilation doit en outre être accompagnée d’une attestation émise par l’organisme ayant assuré la formation et attestant que le stagiaire a effectivement participé à la formation en question.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_5">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_5</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_5/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 5.</num>
+						<alinea>
+							<content>
+								<p>Une journée de formation, quelle que soit sa forme au sens de l’article 2, compte pour 6 heures de formation et est considérée comme une journée d’activité de service de 8 heures.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Une demi-journée de formation, quelle que soit sa forme au sens de l’article 2, compte pour 3 heures de formation et est considérée comme une demi-journée d’activité de service de 4 heures.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_6">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_6</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_6/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 6.</num>
+						<alinea>
+							<content>
+								<p>Le temps de formation générale est considéré comme période d’activité de service.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_7">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_7</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_7/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 7.</num>
+						<alinea>
+							<content>
+								<p>Sur demande du chef d’administration, une dispense de la participation à une ou plusieurs formations du tronc commun ou d’un certain nombre d’heures de formation au choix peut être accordée au stagiaire par le chargé de direction pour des raisons exceptionnelles dûment motivées.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_8">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_8</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_8/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 8.</num>
+						<paragraph id="paragraph_9">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le chargé de direction certifie le nombre d’heures de formation suivies par le stagiaire.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_10">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Ce certificat est communiqué au président de la commission de coordination de l’Institut, au stagiaire, à son patron de stage et au délégué à la formation de l’administration ou de l’établissement public concerné, et est inséré par le patron de stage au carnet de stage du stagiaire.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+				<section id="chapitre_1er.section_2">
+					<num>
+						<b>Section 2 </b>
+					</num>
+					<heading>
+						<b>Examen de fin de stage</b>
+					</heading>
+					<article id="art_9">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_9</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_9/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 9.</num>
+						<alinea>
+							<content>
+								<p>L’examen de fin de stage des stagiaires comprend un examen de fin de formation générale organisé par l’Institut et un examen de fin de formation spéciale organisé par les administrations et établissements publics de l’État.</p>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_1er.section_3">
+					<num>
+						<b>Section 3 </b>
+					</num>
+					<heading>
+						<b>Examen de fin de formation générale</b>
+					</heading>
+					<article id="art_10">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_10</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_10/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 10.</num>
+						<paragraph id="paragraph_11">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>L’examen de fin de formation générale sanctionne les formations du tronc commun et comprend pour chaque formation une épreuve d’examen écrite.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_12">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>L’inscription du stagiaire aux épreuves d’examen est faite par le chef d’administration ou son délégué.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<mod class="mod-start" for="#pm2"/>L’inscription du stagiaire à une formation du tronc commun organisée sous forme de cours présentiel, de manière intégrale ou le combinant avec un cours en ligne ou des études personnelles, vaut d’office inscription du stagiaire à l’épreuve d’examen concernée.<mod class="mod-end" for="#pm2"/>
+										<noteRef href="#M2" marker="2"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_13">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Sur demande du chef d’administration, une dispense d’une ou de plusieurs épreuves de l’examen de fin de formation générale peut être accordée au stagiaire par le ministre pour des raisons exceptionnelles dûment motivées.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<mod class="mod-start" for="#pm3"/>Dans ce cas, la décision de dispenser ce stagiaire aussi de la participation aux formations correspondantes peut également être accordée, en même temps et sans demande supplémentaire, par le ministre pour des raisons exceptionnelles dûment motivées.<mod class="mod-end" for="#pm3"/>
+										<noteRef href="#M3" marker="3"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_14">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Le maximum de points à attribuer s’élève pour chaque épreuve de l’examen de fin de formation générale à 60 points. Est considérée comme une note suffisante un nombre total de points supérieur ou égal à 30.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_11">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_11</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_11/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 11.</num>
+						<alinea>
+							<content>
+								<p>Lors des différentes épreuves de l’examen de fin de formation générale, il peut être procédé à un contrôle d’identité des stagiaires.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_12">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_12</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_12/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 12.</num>
+						<alinea>
+							<content>
+								<p>Au cours des épreuves de l’examen de fin de formation générale, toute communication entre les stagiaires ou les employés visés au chapitre 2 et avec le dehors, de même que toute utilisation d’ouvrages, d’outils électroniques ou de notes autres que ceux qui ont été autorisés préalablement par le chargé de direction sont interdites.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le stagiaire qui contrevient à l’une de ces interdictions au cours d’une épreuve de l’examen de fin de formation générale a d’office subi un échec à l’examen de fin de formation générale.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_13">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_13</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_13/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 13.</num>
+						<paragraph id="paragraph_15">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>A réussi à l’examen de fin de formation générale le stagiaire qui a obtenu au moins les deux tiers du nombre total des points pouvant être obtenus dans le cadre de cet examen et une note suffisante dans chacune des épreuves de l’examen de fin de formation générale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_16">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>A échoué à l’examen de fin de formation générale le stagiaire qui n’a pas obtenu au moins les deux tiers du nombre total des points pouvant être obtenus dans le cadre de cet examen ou qui a obtenu une note insuffisante dans plus d’une épreuve de l’examen de fin de formation générale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_17">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Est ajourné à une épreuve de l’examen de fin de formation générale le stagiaire qui a obtenu au moins les deux tiers du nombre total des points pouvant être obtenus dans le cadre de cet examen et une seule note insuffisante dans l’épreuve de l’examen de fin de formation générale concernée.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_18">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>A échoué à l’examen de fin de formation générale le stagiaire qui n’a pas obtenu une note suffisante dans la matière dans laquelle il a été ajourné.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_19">
+							<num>(5)</num>
+							<alinea>
+								<content>
+									<p>Un échec à l’examen de fin de formation générale entraîne pour le stagiaire la possibilité de se présenter une seconde fois à cet examen.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_20">
+							<num>(6)</num>
+							<alinea>
+								<content>
+									<p>Le fait pour le stagiaire de ne pas se présenter une seconde fois à l’examen de fin de formation générale ou de subir un deuxième échec à l’examen de fin de formation générale est éliminatoire.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_21">
+							<num>(7)</num>
+							<alinea>
+								<content>
+									<p>Lorsque le stagiaire est absent lors d’une épreuve de l’examen de fin de formation générale, il est tenu de transmettre à l’Institut, au plus tard le jour ouvrable suivant, un certificat indiquant la raison dûment justifiée de son absence. Le chargé de direction en informe le chef d’administration dont relève le stagiaire qui l’inscrit à une nouvelle épreuve de l’examen de fin de formation générale de la formation du tronc commun concernée. À défaut de certificat indiquant la raison dûment justifiée d’absence présenté dans le délai imparti, le stagiaire obtient d’office seulement 1 point pour cette épreuve de l’examen de fin de formation générale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_14">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_14</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_14/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 14.</num>
+						<paragraph id="paragraph_22">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le ministre constitue une ou plusieurs commissions d’examen et y nomme au moins quatre chargés de cours des formations du tronc commun.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Chaque membre de la commission d’examen ne peut assurer la responsabilité que d’une seule formation du tronc commun.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_23">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>L’arrêté de nomination du ministre désigne le président de la commission d’examen, le secrétaire et leurs suppléants respectifs.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_24">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Aucun parent ou allié d’un stagiaire jusqu’au quatrième degré inclus, ni son partenaire au sens de la <ref href="/eli/etat/leg/loi/2004/07/09/n3/jo" id="0d52a4c6-ca65-44e5-b8ce-c9ed3f4e52ef">loi modifiée du 9 juillet 2004</ref> relative aux effets légaux de certains partenariats ne peut siéger comme président, membre ou secrétaire à une commission d’examen.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_25">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Pour chaque commission d’examen, le ministre nomme, sur proposition de la Chambre des fonctionnaires et employés publics, un observateur. L’observateur est convoqué aux réunions et séances de la commission d’examen dans les mêmes formes et dans les mêmes délais que les membres de la commission d’examen.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Il a le droit de participer aux travaux de la commission d’examen et cela avec voix consultative.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les décisions de la commission d’examen sont valablement prises et ses actes régulièrement posés même si l’observateur dûment convoqué n’a pas pris part aux délibérations.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>L’observateur obtient la parole s’il la demande pour présenter des remarques en relation avec l’organisation de l’examen. Toutefois, il ne peut d’aucune façon s’immiscer dans la détermination et le choix des questions à poser, ni dans la pondération des points à attribuer aux différentes questions, ni dans l’appréciation des réponses par les membres de la commission d’examen.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Pendant les épreuves de l’examen de fin de formation générale, l’observateur ne peut communiquer d’aucune manière avec les stagiaires.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Lors des interruptions qui séparent les différentes épreuves de l’examen de fin de formation générale, l’observateur peut recueillir les remarques et les doléances éventuelles des stagiaires.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Au cas où l’observateur croit avoir constaté une insuffisance ou une irrégularité dans l’organisation matérielle des épreuves de l’examen de fin de formation générale, il informe incessamment le président de la commission d’examen, en lui parlant seul à seul.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Il peut faire acter au procès-verbal de la commission d’examen ses remarques relatives à l’organisation de l’examen de fin de formation générale et au déroulement des épreuves de l’examen de fin de formation générale.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Si l’observateur ne présente pas de remarque particulière, le procès-verbal en fait mention.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>L’observateur peut également informer directement le ministre par une note écrite s’il a constaté un fait grave pouvant mettre en cause la validité de l’examen.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_15">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_15</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_15/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 15.</num>
+						<paragraph id="paragraph_26">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le président de la commission d’examen fixe l’ensemble des dates des épreuves de l’examen de fin de formation générale et les délais en rapport avec l’organisation pratique de l’examen. Il en informe les membres de la commission d’examen et l’observateur.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_27">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Pour chaque épreuve de l’examen de fin de formation générale, le président de la commission d’examen établit un questionnaire en sélectionnant des questions dans un catalogue de questions concernant la formation du tronc commun concernée. Ces catalogues de questions sont élaborés au préalable par la commission d’examen.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Le secret des questions sélectionnées par le président est à observer jusqu’au début de l’épreuve de l’examen de fin de formation générale concernée. Toute violation de ce secret équivaut à une violation de l’article 11 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="27900373-6213-4bde-8e5c-b0c91d3d9833">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’État.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_16">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_16</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_16/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 16.</num>
+						<paragraph id="paragraph_28">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le président de la commission d’examen convoque la commission d’examen.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_29">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Les délibérations des commissions d’examen sont secrètes.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_30">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Chaque commission d’examen prend ses décisions à la majorité des voix, l’abstention n’étant pas admise. En cas de partage des voix, celle du président est prépondérante.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_31">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>La commission d’examen détermine le déroulement des épreuves de l’examen de fin de formation générale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_32">
+							<num>(5)</num>
+							<alinea>
+								<content>
+									<p>Pour chaque stagiaire, la commission d’examen arrête le nombre total de points obtenus dans les différentes épreuves de l’examen de fin de formation générale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_33">
+							<num>(6)</num>
+							<alinea>
+								<content>
+									<p>Sur base du nombre total de points obtenus par le stagiaire dans toutes les épreuves de l’examen de fin de formation générale, la commission d’examen prononce soit la réussite, soit l’ajournement, soit l’échec du stagiaire à l’examen de fin de formation générale.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Un procès-verbal est dressé, qui renseigne :</p>
+									<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+										<li>le nombre total de points pouvant être obtenus par chaque stagiaire pour chaque épreuve de l’examen de fin de formation générale ;</li>
+										<li>le nombre de points obtenus par chaque stagiaire pour chaque épreuve de l’examen de fin de formation générale ;</li>
+										<li>le nombre total de points pouvant être obtenus par chaque stagiaire dans le cadre de l’examen de fin de formation générale ;</li>
+										<li>le nombre total des points obtenus par chaque stagiaire dans le cadre de l’examen de fin de formation générale ; et</li>
+										<li>pour chaque stagiaire le prononcé de la commission d’examen concernant la réussite, l’ajournement ou l’échec à l’examen de fin de formation générale.</li>
+									</ol>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Ce procès-verbal est signé par au moins trois membres de la commission d’examen.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_34">
+							<num>(7)</num>
+							<alinea>
+								<content>
+									<p>Les points obtenus dans chacune des épreuves de l’examen de fin de formation générale et le prononcé de la commission d’examen concernant la réussite, l’ajournement ou l’échec y relatif sont communiqués au stagiaire, à son patron de stage et au délégué à la formation de l’administration ou de l’établissement public concerné, et sont insérés par le patron de stage au carnet de stage du stagiaire.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+				<section id="chapitre_1er.section_4">
+					<num>
+						<b>Section 4 </b>
+					</num>
+					<heading>
+						<b>Examen de fin de formation spéciale</b>
+					</heading>
+					<article id="art_17">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_17</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_17/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 17.</num>
+						<alinea>
+							<content>
+								<p>La partie de la formation spéciale pendant le stage est sanctionnée par un examen de fin de formation spéciale organisé par les administrations et établissements publics de l’État dont relève le stagiaire.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_18">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_18</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_18/20200908</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-09-08</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm21"/>
+							<u>Art. 18.</u>
+						</num>
+						<paragraph id="paragraph_91">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Est admissible à l’examen de fin de formation spéciale, le stagiaire qui a suivi l’intégralité des formations de la formation spéciale prévues.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_92">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Par dérogation au paragraphe 1<sup>er</sup>, le stagiaire est admissible à l’examen de fin de formation spéciale :</p>
+									<ol scl:start="1" scl:symbol="1°">
+										<li>en cas de dispense de la participation à une ou plusieurs formations de la formation spéciale, accordée au stagiaire par le chef d’administration pour des raisons exceptionnelles dûment motivées ;</li>
+										<li>en cas d’absence, lorsqu’elle est considérée comme justifiée par le président de la commission d’examen sur base d’un certificat qui lui a été transmis par le stagiaire au plus tard le jour ouvrable suivant le début de son absence.</li>
+									</ol>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_93">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>L’admissibilité à l’examen de fin de formation spéciale peut être prononcée, même si le stagiaire n’a pas encore passé l’examen de fin de formation générale à l’Institut.<mod class="mod-end" for="#pm21"/>
+										<noteRef href="#M21" marker="21"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_19">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_19</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_19/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 19.</num>
+						<paragraph id="paragraph_35">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le maximum de points à attribuer s’élève pour chaque épreuve de l’examen de fin de formation spéciale à 60 points. Est considérée comme une note suffisante un nombre total de points supérieur ou égal à 30.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_36">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>A réussi à l’examen de fin de formation spéciale le stagiaire qui a obtenu au moins les deux tiers du nombre total des points pouvant être obtenus dans le cadre de cet examen et une note suffisante dans chacune des épreuves de l’examen de fin de formation spéciale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_37">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>A échoué à l’examen de fin de formation spéciale le stagiaire qui n’a pas obtenu au moins les deux tiers du nombre total des points pouvant être obtenus dans le cadre de cet examen ou qui a obtenu une note insuffisante dans plus d’une épreuve de l’examen de fin de formation spéciale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_38">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Est ajourné à une épreuve de l’examen de fin de formation spéciale le stagiaire qui a obtenu au moins les deux tiers du nombre total des points pouvant être obtenus dans le cadre de cet examen et une seule note insuffisante dans l’épreuve de l’examen de fin de formation spéciale concernée.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_39">
+							<num>(5)</num>
+							<alinea>
+								<content>
+									<p>A échoué à l’examen de fin de formation spéciale le stagiaire qui n’a pas obtenu une note suffisante dans la matière dans laquelle il a été ajourné.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_40">
+							<num>(6)</num>
+							<alinea>
+								<content>
+									<p>Un échec à l’examen de fin de formation spéciale entraîne pour le stagiaire la possibilité de se présenter une seconde fois à cet examen.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_41">
+							<num>(7)</num>
+							<alinea>
+								<content>
+									<p>Le fait pour le stagiaire de ne pas se présenter une seconde fois à l’examen de fin de formation spéciale ou de subir un deuxième échec à l’examen de fin de formation spéciale est éliminatoire.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_42">
+							<num>(8)</num>
+							<alinea>
+								<content>
+									<p>Lorsque le stagiaire est absent lors d’une épreuve de l’examen de fin de formation spéciale, il est tenu de transmettre au chef d’administration dont relève le stagiaire, au plus tard le jour ouvrable suivant, un certificat indiquant la raison dûment justifiée de son absence. Le chef d’administration l’inscrit à une nouvelle épreuve de l’examen de fin de formation spéciale de la formation concernée. À défaut de certificat indiquant la raison dûment justifiée d’absence présenté dans le délai imparti, le stagiaire obtient d’office seulement 1 point pour cette épreuve de l’examen de fin de formation spéciale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_20">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_20</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_20/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 20.</num>
+						<paragraph id="paragraph_43">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Une commission d’examen au sens du <ref href="/eli/etat/leg/rgd/1984/04/13/n7/jo" id="47702a2f-939b-421e-8b97-7ccb2b72f855">règlement grand-ducal modifié du 13 avril 1984</ref> déterminant la procédure des commissions d'examen du concours d'admission au stage, de l'examen de fin de stage et de l'examen de promotion dans les administrations et services de l'État est instituée par le chef d’administration ou d’établissement public dont relève le stagiaire.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_44">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>La commission d’examen détermine le déroulement des épreuves de l’examen de fin de formation spéciale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_45">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Pour chaque stagiaire, la commission d’examen arrête le nombre total de points obtenus dans les différentes épreuves de l’examen de fin de formation spéciale.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_46">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Sur base du nombre total de points obtenus par le stagiaire dans toutes les épreuves de l’examen de fin de formation spéciale, la commission d’examen prononce soit la réussite, soit l’ajournement, soit l’échec du stagiaire pour l’examen de fin de formation spéciale.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Un procès-verbal est dressé, qui renseigne :</p>
+									<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+										<li>le nombre total de points pouvant être obtenus par chaque stagiaire pour chaque épreuve de l’examen de fin de formation spéciale,</li>
+										<li>le nombre de points obtenus par chaque stagiaire pour chaque épreuve de l’examen de fin de formation spéciale,</li>
+										<li>le nombre total de points pouvant être obtenus par chaque stagiaire dans le cadre de l’examen de fin de formation spéciale,</li>
+										<li>le nombre total des points obtenus par chaque stagiaire dans le cadre de l’examen de fin de formation spéciale, et</li>
+										<li>pour chaque stagiaire le prononcé de la commission d’examen concernant la réussite, l’ajournement ou l’échec à l’examen de fin de formation spéciale.</li>
+									</ol>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Ce procès-verbal est signé par au moins la moitié des membres de la commission d’examen présents.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_47">
+							<num>(5)</num>
+							<alinea>
+								<content>
+									<p>Les points obtenus dans chacune des épreuves de l’examen de fin de formation spéciale et le prononcé de la commission d’examen concernant la réussite, l’ajournement ou l’échec y relatif sont communiqués au stagiaire, à son patron de stage et au délégué à la formation de l’administration ou de l’établissement public concerné, et sont insérés par le patron de stage au carnet de stage du stagiaire.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+				<section id="chapitre_1er.section_5">
+					<num>
+						<b>Section 5 </b>
+					</num>
+					<heading>
+						<b>Mise en compte des résultats des deux parties de l’examen de fin de stage</b>
+					</heading>
+					<article id="art_21">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_21</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_21/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 21.</num>
+						<paragraph id="paragraph_48">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Deux mois au moins avant la fin du stage du stagiaire, les procès-verbaux des commissions d’examen établis dans le cadre de l’examen de fin de formation générale et dans le cadre de l’examen de la fin de formation spéciale sont communiqués par les commissions d’examen respectives au président de la commission de coordination de l’Institut.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_49">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Après avoir obtenu la communication des procès-verbaux prévus au paragraphe 1<sup>er</sup>, ainsi que du certificat du chargé de direction prévu à l’article 8, la commission de coordination de l’Institut procède à la mise en compte des nombres totaux de points obtenus dans le cadre de l’examen de fin de formation générale et de l’examen de fin de formation spéciale. Pour ce calcul, l’examen de fin de formation générale et l’examen de fin de formation spéciale ont une pondération égale.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Pour tout calcul, les fractions de points sont arrondies en faveur du stagiaire.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_50">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Le procès-verbal de la commission de coordination de l’Institut est communiqué au stagiaire, à son patron de stage et au délégué à la formation de l’administration ou de l’établissement public concerné, et est inséré par le patron de stage dans le carnet de stage du stagiaire.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+			<chapter id="chapitre_2">
+				<num>
+					<b>Chapitre 2 </b>
+				</num>
+				<heading>
+					<b>Organisation de la formation de début de carrière des employés de l’État</b>
+				</heading>
+				<section id="chapitre_2.section_1ère_20200908">
+					<num>
+						<b>
+							<mod class="mod-start" for="#pm4"/>
+							<del>Section 1<sup>ère</sup>
+							</del>
+							<del> </del>
+						</b>
+					</num>
+					<heading>
+						<del>
+							<b>Formations organisées dans le cadre de la formation de début de carrière</b>
+							<mod class="mod-end" for="#pm4"/>
+						</del>
+						<noteRef href="#M4" marker="4"/>
+					</heading>
+					<article id="art_22">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_22</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_22/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 22.</num>
+						<paragraph id="paragraph_51">
+							<num>
+								<mod class="mod-start" for="#pm5"/>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>La formation de début de carrière à l’Institut est fixée à 128 heures.</del>
+										<mod class="mod-end" for="#pm5"/>
+										<noteRef href="#M5" marker="5"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_52">
+							<num>
+								<mod class="mod-start" for="#pm6"/>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<mod class="mod-end" for="#pm6"/>
+										<noteRef href="#M6" marker="6"/>Dans <mod class="mod-start" for="#pm7"/>le cadre de la formation de début de carrière<mod class="mod-end" for="#pm7"/>
+										<noteRef href="#M7" marker="7"/>, les employés suivent :</p>
+									<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+										<li>un ensemble de formations appelées « formations du tronc commun », obligatoires pour tous les employés, conformément à l’article 24, et</li>
+										<li>un ensemble de formations appelées « formations au choix », à déterminer individuellement pour chaque employé par le chef d’administration ou son délégué conformément à l’article 25.</li>
+									</ol>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_23">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_23</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_23/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 23.</num>
+						<alinea>
+							<content>
+								<p>La formation de début de carrière peut être organisée sous forme de :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+									<li>cours présentiels ;</li>
+									<li>cours en ligne ;</li>
+									<li>études personnelles ; ou</li>
+									<li>en mode alternant cours présentiels, cours en ligne ou études personnelles.</li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_24">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_24</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_24/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 24.</num>
+						<paragraph id="paragraph_53">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Une formation du tronc commun est organisée par l’Institut pour chacune des matières suivantes :</p>
+									<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+										<li>Connaissances générales de l’État, comprenant les sujets suivants :<ol ns3727365:start="1" ns3727365:symbol="a)">
+												<li>Histoire du Grand-Duché de Luxembourg ;</li>
+												<li>Éléments constitutifs de l’État luxembourgeois ;</li>
+												<li>Système institutionnel luxembourgeois ;</li>
+												<li>Introduction générale au droit luxembourgeois.</li>
+											</ol>
+										</li>
+										<li>Droits et obligations des agents publics, comprenant les sujets suivants :<ol ns3727365:start="1" ns3727365:symbol="a)">
+												<li>Parcours professionnel ;</li>
+												<li>Rémunération ;</li>
+												<li>Organisation du temps de travail ;</li>
+												<li>Droits et devoirs statutaires.</li>
+											</ol>
+										</li>
+										<li>Principes de gestion publique, comprenant les sujets suivants :<ol ns3727365:start="1" ns3727365:symbol="a)">
+												<li>Valeurs et principes de bonne conduite administrative ;</li>
+												<li>Principes généraux d’organisation et de gestion ;</li>
+												<li>Finances publiques ;</li>
+												<li>Administration digitale.</li>
+											</ol>
+										</li>
+										<li>Communication et compétences comportementales, comprenant les sujets suivants :<ol ns3727365:start="1" ns3727365:symbol="a)">
+												<li>Principes de communication sur le lieu de travail ;</li>
+												<li>Accueil et communication externe.</li>
+											</ol>
+										</li>
+									</ol>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>La durée totale des formations du tronc commun s’élève à 60 heures.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Pour chaque matière, l’Institut propose au ministre un programme détaillé, la forme d’organisation et le nombre d’heures associées à la formation qui est compris entre 3 heures et 18 heures.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les propositions ainsi élaborées sont approuvées par le ministre et le détail est publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_54">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>L’inscription de l’employé à une formation du tronc commun est faite par le chef d’administration ou son délégué.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_55">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Le chef d’administration assure que l’employé bénéficie pour le volet de la formation suivi sous forme d’études personnelles ou de cours en ligne d’une dispense de service considérée comme période d’activité de service équivalant au nombre d’heures de formation associées à ce volet avant sa participation à l’épreuve de contrôle des connaissances concernée.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_56">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Lorsque l’employé est absent lors d’une ou de plusieurs demi-journées de cours présentiel, il est tenu de transmettre à l’Institut, au plus tard le jour ouvrable suivant le début de son absence, un certificat indiquant la raison dûment justifiée de son absence. Le chargé de direction en informe le chef d’administration dont relève l’employé qui doit lui permettre une nouvelle inscription à ce cours présentiel lorsqu’il le souhaite. À défaut de certificat indiquant la raison dûment justifiée d’absence présenté dans le délai imparti ou de nouvelle inscription, l’employé est considéré comme ayant suivi intégralement la formation du tronc commun.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_25">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_25</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_25/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 25.</num>
+						<paragraph id="paragraph_57">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>L’employé suit des formations au choix à déterminer par le chef d’administration ou son délégué parmi les matières énumérées à l’annexe du présent règlement pour un nombre total d’heures de formation correspondant au moins au nombre <mod class="mod-start" for="#pm8"/>de 30 heures de formation au moins<mod class="mod-end" for="#pm8"/>
+										<noteRef href="#M8" marker="8"/>.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Pour chaque matière, l’Institut propose au ministre un programme détaillé, la forme d’organisation et le nombre d’heures associées à la formation qui est compris entre 3 heures et 90 heures.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Les propositions ainsi élaborées sont approuvées par le ministre et le détail est publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_58">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>L’inscription de l’employé à des formations au choix est faite par le chef d’administration ou son délégué.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_59">
+							<num>(3)</num>
+							<alinea>
+								<content>
+									<p>Pour la mise en compte intégrale des heures de formation d’une formation au choix, l’employé est obligé de participer à l’ensemble des heures de formation.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Lorsque, dans le cadre d’une formation au choix, l’employé a suivi un nombre d’heures de formation supérieur ou égal à soixante-quinze pour cent par rapport à la durée totale de cette formation, les demi-journées au sens de l’article 26 réellement suivies sont prises en compte pour le calcul du nombre total d’heures de formation au choix.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Lorsque, dans le cadre d’une formation au choix, l’employé a suivi un nombre d’heures de formation inférieur au pourcentage précité à l’alinéa précédent, aucune heure de formation n’est prise en compte pour le calcul du nombre total d’heures de formation au choix.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_60">
+							<num>(4)</num>
+							<alinea>
+								<content>
+									<p>Le chef d’administration ou son délégué peut demander que des formations organisées par les administrations et établissements publics de l’État soient assimilées à des formations au choix dans les matières énumérées à l’annexe.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>La demande écrite est à adresser au ministre. Le ministre prend une décision, le chargé de direction entendu en son avis.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>Une telle demande d’assimilation doit mentionner :</p>
+									<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+										<li>le sujet de la formation accompagné d’un bref descriptif ;</li>
+										<li>l’organisme ayant assuré la formation ;</li>
+										<li>la date et le lieu du déroulement de la formation ; et</li>
+										<li>la durée effective de la formation.</li>
+									</ol>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>La demande d’assimilation doit en outre être accompagnée d’une attestation émise par l’organisme ayant assuré la formation et attestant que l’employé a effectivement participé à la formation en question.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_26">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_26</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_26/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 26.</num>
+						<alinea>
+							<content>
+								<p>Une journée de formation, quelle que soit sa forme au sens de l’article 23, compte pour 6 heures de formation et est considérée comme une journée d’activité de service de 8 heures.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Une demi-journée de formation, quelle que soit sa forme au sens de l’article 23, compte pour 3 heures de formation et est considérée comme une demi-journée d’activité de service de 4 heures.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_27">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_27</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_27/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 27.</num>
+						<alinea>
+							<content>
+								<p>Le temps de formation de début de carrière est considéré comme période d’activité de service.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_28">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_28</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_28/20190101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 28.</num>
+						<alinea>
+							<content>
+								<p>Sur demande du chef d’administration, une dispense de la participation à une ou plusieurs formations du tronc commun ou d’un certain nombre d’heures de formation au choix peut être accordée à l’employé par le chargé de direction pour des raisons exceptionnelles dûment motivées.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_29_20200908" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_29</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_29/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm9"/>
+							<del>Art. 29.</del>
+						</num>
+						<paragraph id="paragraph_61">
+							<num>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le chargé de direction certifie le nombre d’heures de formation suivies par l’employé.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_62">
+							<num>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Ce certificat est communiqué au président de la commission de coordination de l’Institut, à l’employé, à sa personne de référence et au délégué à la formation de l’administration ou de l’établissement public concerné.</del>
+										<mod class="mod-end" for="#pm9"/>
+										<noteRef href="#M9" marker="9"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+				<section id="chapitre_2.section_2contrôle_des_connaissances_20200908">
+				<num scl:align="center">
+							<mod class="mod-end" for="#pm10"/>
+						<noteRef href="#M10" marker="10"/><del>
+								<b>Section 2</b>
+							</del>
+							<b>
+								<del>Contrôle des connaissances</del>
+							</b>
+						</num>
+					<article id="art_30_20200908" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_30</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_30/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm11"/>
+							<del>Art. 30.</del>
+						</num>
+						<paragraph id="paragraph_63">
+							<num>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le contrôle des connaissances sanctionne les formations du tronc commun et comprend pour chaque formation une épreuve de contrôle des connaissances écrite qui est organisée par l’Institut.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_64">
+							<num>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>L’inscription de l’employé aux épreuves de contrôle des connaissances est faite par le chef d’administration ou son délégué.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_65">
+							<num>
+								<del>(3)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Sur demande du chef d’administration, une dispense d’une ou de plusieurs épreuves de contrôle des connaissances peut être accordée à l’employé par le ministre pour des raisons exceptionnelles dûment motivées.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_66">
+							<num>
+								<del>(4)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le maximum de points à attribuer s’élève pour chaque épreuve de contrôle des connaissances à 60 points.</del>
+										<mod class="mod-end" for="#pm11"/>
+										<noteRef href="#M11" marker="11"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_31_20200908" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_31</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_31/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm12"/>
+							<del>Art. 31.</del>
+						</num>
+						<alinea>
+							<content>
+								<p>
+									<del>Lors des différentes épreuves de contrôle des connaissances, il peut être procédé à un contrôle d’identité des employés.<mod class="mod-end" for="#pm12"/>
+									</del>
+									<noteRef href="#M12" marker="12"/>
+								</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_32_20200908" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_32</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_32/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm13"/>
+							<del>Art. 32.</del>
+						</num>
+						<paragraph id="paragraph_67">
+							<num>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Au cours des épreuves de contrôle des connaissances, toute communication entre les stagiaires visés au chapitre 1<sup>er</sup> ou employés et avec le dehors, de même que toute utilisation d’ouvrages, d’outils électroniques ou de notes autres que ceux qui ont été autorisés préalablement par le chargé de direction sont interdites.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>L’employé qui contrevient à l’une de ces interdictions au cours d’une épreuve de contrôle des connaissances obtient d’office seulement 1 point pour chaque épreuve de ce contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_68">
+							<num>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Lorsque l’employé est absent lors d’une épreuve de contrôle des connaissances, il est tenu de transmettre à l’Institut, au plus tard le jour ouvrable suivant, un certificat indiquant la raison dûment justifiée de son absence. Le chargé de direction en informe le chef d’administration dont relève l’employé qui l’inscrit à une nouvelle épreuve de contrôle des connaissances de la formation du tronc commun concernée. À défaut de certificat indiquant la raison dûment justifiée d’absence présenté dans le délai imparti, l’employé obtient d’office seulement 1 point pour cette épreuve de contrôle des connaissances.<mod class="mod-end" for="#pm13"/>
+										</del>
+										<noteRef href="#M13" marker="13"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_33_20200908" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_33</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_33/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 33.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm14"/>
+							<del>Art. 33.</del>
+						</num>
+						<paragraph id="paragraph_69">
+							<num>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le ministre constitue une ou plusieurs commissions de contrôle des connaissances et y nomme au moins quatre chargés de cours des formations du tronc commun.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Chaque membre de la commission de contrôle des connaissances ne peut assurer la responsabilité que d’une seule formation du tronc commun.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_70">
+							<num>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>L’arrêté de nomination du ministre désigne le président de la commission de contrôle des connaissances, le secrétaire et leurs suppléants respectifs.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_71">
+							<num>
+								<del>(3)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Aucun parent ou allié d’un employé jusqu’au quatrième degré inclus, ni son partenaire au sens de la <ref href="/eli/etat/leg/loi/2004/07/09/n3/jo" id="90bf99d2-6417-48ab-b8c6-994aceaeb4c5">loi modifiée du 9 juillet 2004</ref> relative aux effets légaux de certains partenariats ne peut siéger comme président, membre ou secrétaire à une commission de contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_72">
+							<num>
+								<del>(4)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Pour chaque commission de contrôle des connaissances, le ministre nomme, sur proposition de la Chambre des fonctionnaires et employés publics, un observateur. L’observateur est convoqué aux réunions et séances de la commission de contrôle des connaissances dans les mêmes formes et dans les mêmes délais que les membres de la commission de contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Il a le droit de participer aux travaux de la commission de contrôle des connaissances et cela avec voix consultative.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Les décisions de la commission de contrôle des connaissances sont valablement prises et ses actes régulièrement posés même si l’observateur dûment convoqué n’a pas pris part aux délibérations.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>L’observateur obtient la parole s’il la demande pour présenter des remarques en relation avec l’organisation du contrôle des connaissances. Toutefois, il ne peut d’aucune façon s’immiscer dans la détermination et le choix des questions à poser, ni dans la pondération des points à attribuer aux différentes questions, ni dans l’appréciation des réponses par les membres de la commission de contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Pendant les épreuves de contrôle des connaissances, l’observateur ne peut communiquer d’aucune manière avec les employés.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Lors des interruptions qui séparent les différentes épreuves de contrôle des connaissances, l’observateur peut recueillir les remarques et les doléances éventuelles des employés.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Au cas où l’observateur croit avoir constaté une insuffisance ou une irrégularité dans l’organisation matérielle des épreuves de contrôle des connaissances, il informe incessamment le président de la commission de contrôle des connaissances, en lui parlant seul à seul.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Il peut faire acter au procès-verbal de la commission de contrôle des connaissances ses remarques relatives à l’organisation du contrôle des connaissances et au déroulement des épreuves de contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Si l’observateur ne présente pas de remarque particulière, le procès-verbal en fait mention.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>L’observateur peut également informer directement le ministre par une note écrite s’il a constaté un fait grave pouvant mettre en cause la validité du contrôle des connaissances.<mod class="mod-end" for="#pm14"/>
+										</del>
+										<noteRef href="#M14" marker="14"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_34_20200908" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_34</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_34/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 34.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm15"/>
+							<del>Art. 34.</del>
+						</num>
+						<paragraph id="paragraph_73">
+							<num>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le président de la commission de contrôle des connaissances fixe l’ensemble des dates des épreuves de contrôle des connaissances et les délais en rapport avec l’organisation pratique du contrôle des connaissances. Il en informe les membres de la commission de contrôle des connaissances et l’observateur.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_74">
+							<num>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Pour chaque épreuve de contrôle des connaissances, le président de la commission de contrôle des connaissances établit un questionnaire en sélectionnant des questions dans un catalogue de questions concernant la formation du tronc commun concernée. Ces catalogues de questions sont élaborés au préalable par la commission de contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Le secret des questions sélectionnées par le président est à observer jusqu’au début de l’épreuve de contrôle des connaissances concernée. Toute violation de ce secret équivaut à une violation de l’article 11 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="231b3128-d280-45b9-86f8-b4a0db6bb2d1">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’État.<mod class="mod-end" for="#pm15"/>
+										</del>
+										<noteRef href="#M15" marker="15"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+					<article id="art_35_20200908" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_35</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_35/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 35.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm16"/>
+							<del>Art. 35.</del>
+						</num>
+						<paragraph id="paragraph_75">
+							<num>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le président de la commission de contrôle des connaissances convoque la commission de contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_76">
+							<num>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Les délibérations des commissions de contrôle des connaissances sont secrètes.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_77">
+							<num>
+								<del>(3)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Chaque commission de contrôle des connaissances prend ses décisions à la majorité des voix, l’abstention n’étant pas admise. En cas de partage des voix, celle du président est prépondérante.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_78">
+							<num>
+								<del>(4)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>La commission de contrôle des connaissances détermine le déroulement des épreuves de contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_79">
+							<num>
+								<del>(5)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Pour chaque employé, la commission de contrôle des connaissances arrête le nombre total de points obtenus dans les différentes épreuves de contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Un procès-verbal est dressé, qui renseigne :</del>
+									</p>
+									<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°" style="del">
+										<li style="del">
+											<del>le nombre total de points pouvant être obtenus par chaque employé pour chaque épreuve de contrôle des connaissances ;</del>
+										</li>
+										<li>
+											<del>le nombre de points obtenus par chaque employé pour chaque épreuve de contrôle des connaissances ;</del>
+										</li>
+										<li>
+											<del>le nombre total de points pouvant être obtenus par chaque employé dans le cadre du contrôle des connaissances ; et</del>
+										</li>
+										<li>
+											<del>le nombre total des points obtenus par chaque employé dans le cadre du contrôle des connaissances.</del>
+										</li>
+									</ol>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Ce procès-verbal est signé par au moins trois membres de la commission de contrôle des connaissances.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_80">
+							<num>
+								<del>(6)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Les points obtenus dans chacune des épreuves du contrôle des connaissances sont communiqués à l’employé, à sa personne de référence et au délégué à la formation de l’administration ou de l’établissement public concerné.<mod class="mod-end" for="#pm16"/>
+										</del>
+										<noteRef href="#M16" marker="16"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+				<section id="chapitre_2.section_3rapport_d’aptitude_professionnelle_20200908">
+						<num scl:align="center">
+							<mod class="mod-end" for="#pm17"/>
+								<noteRef href="#M17" marker="17"/><del>
+								<b>Section 3</b>
+							</del>
+							<del>
+								<b>Rapport d’aptitude professionnelle</b>
+							</del>
+						</num>
+					<article id="art_36_20200908" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_36</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_36/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 36.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm18"/>
+							<del>Art. 36.</del>
+						</num>
+						<paragraph id="paragraph_81">
+							<num>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le sujet du rapport d’aptitude professionnelle au sens de l’article 20, paragraphe 3, de la <ref href="/eli/etat/leg/loi/2015/03/25/n8/jo" id="fad81fe1-f713-4ed9-8eab-1bd0ba8b07aa">loi modifiée du 25 mars 2015</ref> déterminant le régime et les indemnités des employés de l’État, est arrêté, sur proposition de l’employé, par le supérieur hiérarchique direct de l’employé endéans la première année de stage de l’employé conformément à l’article 20 de la <ref href="/eli/etat/leg/loi/2015/03/25/n8/jo" id="28714bd0-5e8f-4e24-9a63-55d0c5760d58">loi du 25 mars 2015</ref> déterminant le régime et les indemnités des employés de l’État.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_82">
+							<num>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>L’appréciation du rapport d’aptitude professionnelle se fait par le supérieur hiérarchique direct de l’employé et par le chef d’administration ou son délégué.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Le maximum des points à attribuer au rapport est fixé à 60 points.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>L’employé qui n’a pas remis son rapport endéans la période fixée par son supérieur hiérarchique direct se voit attribuer 1 point sur 60.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Les points obtenus par l’employé dans le cadre du rapport d’aptitude professionnelle sont communiqués à l’employé concerné, à sa personne de référence et au délégué à la formation de l’administration ou de l’établissement public concerné.<mod class="mod-end" for="#pm18"/>
+										</del>
+										<noteRef href="#M18" marker="18"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+				<section id="chapitre_2.section_4__mise_en_compte_des_résultats_du_contrôle_des_connaissances_et_du_rapport_d’aptitude_professionnelle_20200908">
+					<num scl:align="center">
+							<mod class="mod-end" for="#pm19"/>
+						<noteRef href="#M19" marker="19"/><del>
+								<b>Section 4 </b>
+								<del> </del>
+							</del>
+							<b>
+								<del>Mise en compte des résultats du contrôle des connaissances et du rapport d’aptitude professionnelle</del>
+							</b>
+						</num>
+					<article id="art_37_20200908" style="del">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_37</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_37/20200101</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 37.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2020-01-01</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>
+							<mod class="mod-start" for="#pm20"/>
+							<del>Art. 37.</del>
+						</num>
+						<paragraph id="paragraph_83">
+							<num>
+								<del>(1)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Deux mois au moins avant la fin de la période de stage de l’employé conformément à l’article 20 de la <ref href="/eli/etat/leg/loi/2015/03/25/n8/jo" id="722a6e47-c313-4b00-9a83-3946a66a6838">loi du 25 mars 2015</ref> déterminant le régime et les indemnités des employés de l’État, le procès-verbal de la commission de contrôle des connaissances établi dans le cadre du contrôle des connaissances, ainsi que les points obtenus dans le cadre du rapport d’aptitude professionnelle sont communiqués respectivement par la commission de contrôle des connaissances et par le chef d’administration au président de la commission de coordination de l’Institut.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_84">
+							<num>
+								<del>(2)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Après avoir obtenu la communication du procès-verbal et des points prévus au paragraphe 1<sup>er</sup>, ainsi que du certificat du chargé de direction prévu à l’article 29, la commission de coordination de l’Institut procède à la mise en compte des nombres totaux de points obtenus dans le cadre du contrôle des connaissances et du rapport d’aptitude professionnelle. Pour ce calcul, le contrôle des connaissances et le rapport d’aptitude professionnelle ont une pondération égale.</del>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>
+										<del>Pour tout calcul, les fractions de points sont arrondies en faveur de l’employé.</del>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_85">
+							<num>
+								<del>(3)</del>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<del>Le procès-verbal de la commission de coordination de l’Institut est communiqué à l’employé, à sa personne de référence et au délégué à la formation de l’administration ou de l’établissement public concerné.<mod class="mod-end" for="#pm20"/>
+										</del>
+										<noteRef href="#M20" marker="20"/>
+									</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+			<chapter id="chapitre_3">
+				<num>
+					<b>Chapitre 3 </b>
+				</num>
+				<heading>
+					<b>Relation entre l’Institut et les chargés de cours</b>
+				</heading>
+				<article id="art_38">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_38</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_38/20190101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 38.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 38.</num>
+					<paragraph id="paragraph_86">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Sur proposition des chargés de cours, le ministre procède tous les trois ans à la nomination :</p>
+								<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+									<li>d’un délégué chargé de représenter les chargés de cours intervenant au niveau de la formation générale du personnel de l’État dans la commission administrative de l’Institut et</li>
+									<li>de deux délégués chargés de représenter les chargés de cours intervenant au niveau de la formation générale du personnel de l’État dans la commission de coordination de l’Institut.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_87">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les chargés de cours se tiennent informés sur l’évolution des méthodes et techniques pédagogiques et didactiques. À cet effet, ils suivent des formations spécifiques dans ce domaine.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>L’Institut peut procéder ou faire procéder périodiquement à une évaluation des chargés de cours.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le résultat de ces évaluations est porté à leur connaissance.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le cas échéant, le chargé de direction peut proposer au ministre la révocation d’un chargé de cours.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+			</chapter>
+			<chapter id="chapitre_4">
+				<num>
+					<b>Chapitre 4 </b>
+				</num>
+				<heading>
+					<b>Dispositions modificatives, abrogatoire et transitoires</b>
+				</heading>
+				<article id="art_39">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_39</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_39/20190101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 39.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 39.</num>
+					<alinea>
+						<content>
+							<p>Le <ref href="/eli/etat/leg/rgd/1984/04/13/n7/jo" id="4d6364c5-408b-411e-8fab-df59f30a2b92">règlement grand-ducal modifié du 13 avril 1984</ref> déterminant la procédure des commissions d'examen du concours d'admission au stage, de l'examen de fin de stage et de l'examen de promotion dans les administrations et services de l'État est modifié comme suit :</p>
+							<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+								<li>À l’intitulé, les termes <embeddedText>du concours d’admission au stage, de l’examen de fin de stage</embeddedText> sont remplacés par <embeddedText>de l’examen de fin de formation spéciale pendant le stage</embeddedText> ;</li>
+								<li>À l’article 1<sup>er</sup>, les termes <embeddedText>de l’examen de fin de stage</embeddedText> sont remplacés par <embeddedText>de l’examen de fin de formation spéciale pendant le stage</embeddedText>.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_40">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_40</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_40/20190101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 40.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 40.</num>
+					<alinea>
+						<content>
+							<p>Le <ref href="/eli/etat/leg/rgd/2000/10/27/n1/jo" id="007f3192-268e-40cb-9ffe-44df9b17d2c6">règlement grand-ducal modifié du 27 octobre 2000</ref> déterminant à l’Institut national d’administration publique 1. l’organisation de la commission de coordination, 2. la collaboration avec les administrations et établissements publics de l’État et 3. la collaboration avec le Ministère de l’Intérieur et les administrations et établissements publics des communes est modifié comme suit :</p>
+							<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+								<li>l’article 2, paragraphe III, est abrogé ;</li>
+								<li>l’article 4 est remplacé par la disposition suivante :<embeddedStructure ns3727365:hide-quote="true">
+										<article>
+											<num>« <u>Art. 4.</u>
+											</num>
+											<alinea>
+												<content>
+													<p>Le ministre ayant dans ses attributions la Fonction publique nomme les membres de la commission.</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>Le chargé de direction de l’Institut préside la commission. La commission désigne son vice-président.</p>
+												</content>
+											</alinea>
+											<alinea>
+												<content>
+													<p>Le président désigne le secrétaire de la commission et le cas échéant un secrétaire adjoint. » ; et</p>
+												</content>
+											</alinea>
+										</article>
+									</embeddedStructure>
+								</li>
+								<li>le Chapitre I. du Titre II. est abrogé.</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_41">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_41</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_41/20190101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 41.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 41.</num>
+					<alinea>
+						<content>
+							<p>Le <ref href="/eli/etat/leg/rgd/2000/10/27/n2/jo" id="c34a1c4f-04bb-49e1-942c-4156ad7068d8">règlement grand-ducal modifié du 27 octobre 2000</ref> déterminant l’organisation à l’Institut national d’administration publique de la division de la formation pendant le stage du personnel de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière pour les employés de l’État est abrogé.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_42">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_42</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_42/20190101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 42.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 42.</num>
+					<alinea>
+						<content>
+							<p>Pour les stagiaires ou employés qui ont commencé leur formation générale sous le régime du <ref href="/eli/etat/leg/rgd/2000/10/27/n2/jo" id="769db194-3dff-4da1-948a-b92eb40af44a">règlement grand-ducal modifié du 27 octobre 2000</ref> déterminant l’organisation à l’Institut national d’administration publique de la division de la formation pendant le stage du personnel de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière pour les employés de l’État, les dispositions du présent règlement grand-ducal s’appliquent, sous réserve des dispositions transitoires suivantes :</p>
+							<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1°">
+								<li>Pour les stagiaires qui ont réussi à l’examen théorique de l’examen de fin de formation générale et pour les employés qui ont participé au contrôle des connaissances :<ol ns3727365:start="1" ns3727365:symbol="a)">
+										<li>le nombre total des points obtenus dans le cadre de l’examen de fin de formation générale ou du contrôle des connaissances est repris dans le cadre de la mise en compte des résultats des deux parties de l’examen de fin de stage ou des résultats du contrôle des connaissances et du rapport d’aptitude professionnelle ;</li>
+										<li>le nombre d’heures de formation suivies dans le cadre de la formation générale sous le régime du <ref href="/eli/etat/leg/rgd/2000/10/27/n2/jo" id="69476c95-656f-483e-8b17-ca05a8fb06b7">règlement grand-ducal modifié du 27 octobre 2000</ref> précité à l’alinéa 1<sup>er</sup> est pris en compte pour le nombre total d’heures de formation à suivre sous le régime du présent règlement grand-ducal.</li>
+									</ol>
+								</li>
+								<li>Pour les stagiaires qui n’ont pas encore réussi à l’examen théorique de l’examen de fin de formation générale ou pour les employés qui n’ont pas encore participé au contrôle des connaissances :<ol ns3727365:start="1" ns3727365:symbol="a)">
+										<li>ils sont obligés à suivre l’intégralité des formations du tronc commun pour une durée totale de 60 heures ;</li>
+										<li>le nombre d’heures de formation déjà suivies dans le cadre de la formation générale sous le régime du <ref href="/eli/etat/leg/rgd/2000/10/27/n2/jo" id="1525c864-ae1f-4892-91ec-fae1bdb8882b">règlement grand-ducal modifié du 27 octobre 2000</ref> précité à l’alinéa 1<sup>er</sup> est pris en compte pour le nombre total d’heures de formation à suivre sous le régime du présent règlement grand-ducal.</li>
+									</ol>
+								</li>
+							</ol>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_5">
+				<num>
+					<b>Chapitre 5 </b>
+				</num>
+				<heading>
+					<b>Dispositions finales</b>
+				</heading>
+				<article id="art_43">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_43</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_43/20190101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 43.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 43.</num>
+					<alinea>
+						<content>
+							<p>La référence au présent règlement se fait sous la forme suivante : « <ref href="???" scl:verify="true">règlement grand-ducal du 31 octobre 2018</ref> portant organisation de la formation pendant le stage pour les fonctionnaires stagiaires de l’État et des établissements publics de l’État ainsi que du cycle de formation de début de carrière des employés de l’État ».</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_44">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_44</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199/art_44/20190101</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2018/10/31/a1199</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 44.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2019-01-01</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 44.</num>
+					<alinea>
+						<content>
+							<p>Les Membres du Gouvernement sont chargés, chacun en ce qui le concerne, de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+		<attachments>
+			<attachment id="attachment_1">
+				<doc name="">
+					<meta>
+						<identification source="">
+							<FRBRWork>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2018-11-07" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRcountry value=""/>
+							</FRBRWork>
+							<FRBRExpression>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2018-11-07" name=""/>
+								<FRBRauthor href=""/>
+								<FRBRlanguage language=""/>
+							</FRBRExpression>
+							<FRBRManifestation>
+								<FRBRthis value=""/>
+								<FRBRuri value=""/>
+								<FRBRdate date="2018-11-07" name=""/>
+								<FRBRauthor href=""/>
+							</FRBRManifestation>
+						</identification>
+					</meta>
+					<preface>
+						<longTitle>
+							<p scl:align="center">
+								<b>Annexe</b>
+							</p>
+						</longTitle>
+					</preface>
+					<mainBody>
+						<alinea>
+							<content>
+								<p scl:space-after="20">Les matières des formations au choix au sens des articles 4 et 25 sont les suivantes :</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<table id="table_1" scl:cols="5 95" scl:cols-align="left left">
+									<tr>
+										<td colspan="2">
+											<p>
+												<b>I. Dans le domaine « Connaissances générales » :</b>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>1°</p>
+										</td>
+										<td>
+											<p>Europe : histoire de l’intégration européenne</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2°</p>
+										</td>
+										<td>
+											<p>Europe : l’actualité</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>3°</p>
+										</td>
+										<td>
+											<p>Europe : le fonctionnement</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>4°</p>
+										</td>
+										<td>
+											<p>Grand-Duché de Luxembourg : économie</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>5°</p>
+										</td>
+										<td>
+											<p>Grand-Duché de Luxembourg : histoire</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>6°</p>
+										</td>
+										<td>
+											<p>Grand-Duché de Luxembourg : image de marque</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>7°</p>
+										</td>
+										<td>
+											<p>Grand-Duché de Luxembourg : institutions et société</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>8°</p>
+										</td>
+										<td>
+											<p>Grand-Duché de Luxembourg : justice</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>9°</p>
+										</td>
+										<td>
+											<p>Grand-Duché de Luxembourg : sécurité sociale</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>10°</p>
+										</td>
+										<td>
+											<p>Grand-Duché de Luxembourg : statistiques</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>11°</p>
+										</td>
+										<td>
+											<p>Institutions européennes et internationales</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>12°</p>
+										</td>
+										<td>
+											<p>Le Luxembourg et la Grande Région</p>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="1">
+											<p/>
+										</td>
+										<td>
+											<p/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p>
+												<b>II. Dans le domaine « Droit » :</b>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>1°</p>
+										</td>
+										<td>
+											<p>Accès à la législation</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2°</p>
+										</td>
+										<td>
+											<p>Droit administratif</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>3°</p>
+										</td>
+										<td>
+											<p>Droit civil</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>4°</p>
+										</td>
+										<td>
+											<p>Droit commercial</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>5°</p>
+										</td>
+										<td>
+											<p>Droit constitutionnel</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>6°</p>
+										</td>
+										<td>
+											<p>Droit de l’Union européenne</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>7°</p>
+										</td>
+										<td>
+											<p>Droit de la sécurité sociale</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>8°</p>
+										</td>
+										<td>
+											<p>Droit du travail</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>9°</p>
+										</td>
+										<td>
+											<p>Droit fiscal</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>10°</p>
+										</td>
+										<td>
+											<p>Droits d'auteur au Luxembourg</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>11°</p>
+										</td>
+										<td>
+											<p>Introduction générale au droit</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>12°</p>
+										</td>
+										<td>
+											<p>Marchés publics</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>13°</p>
+										</td>
+										<td>
+											<p>Méthodes et techniques législatives</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>14°</p>
+										</td>
+										<td>
+											<p>Responsabilité civile de l’État</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p/>
+										</td>
+										<td>
+											<p/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p>
+												<b>III. Dans le domaine « Droits et devoirs des agents publics » :</b>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>1°</p>
+										</td>
+										<td>
+											<p>Discipline dans la fonction publique</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2°</p>
+										</td>
+										<td>
+											<p>Diversité dans la fonction publique</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>3°</p>
+										</td>
+										<td>
+											<p>Ergonomie</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>4°</p>
+										</td>
+										<td>
+											<p>Politiques de l’égalité des chances</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>5°</p>
+										</td>
+										<td>
+											<p>Protection des personnes à l'égard du traitement de données à caractère personnel</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>6°</p>
+										</td>
+										<td>
+											<p>Santé au travail</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>7°</p>
+										</td>
+										<td>
+											<p>Sécurité dans la Fonction publique</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>8°</p>
+										</td>
+										<td>
+											<p>Système de rémunération dans l’administration publique</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>9°</p>
+										</td>
+										<td>
+											<p>Système de pension des agents publics</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p/>
+										</td>
+										<td>
+											<p/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p>
+												<b>IV. Dans le domaine « Gestion publique » :</b>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>1°</p>
+										</td>
+										<td>
+											<p>Accueil du public</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2°</p>
+										</td>
+										<td>
+											<p>Budget et comptabilité de l’État</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>3°</p>
+										</td>
+										<td>
+											<p>Conduite de réunion</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>4°</p>
+										</td>
+										<td>
+											<p>Développement de l’organisation</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>5°</p>
+										</td>
+										<td>
+											<p>Évaluation d’impact et simplification administrative</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>6°</p>
+										</td>
+										<td>
+											<p>Gestion d’équipe</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>7°</p>
+										</td>
+										<td>
+											<p>Gestion de la documentation</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>8°</p>
+										</td>
+										<td>
+											<p>Gestion de la qualité</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>9°</p>
+										</td>
+										<td>
+											<p>Gestion de projets</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>10°</p>
+										</td>
+										<td>
+											<p>Gestion des réclamations</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>11°</p>
+										</td>
+										<td>
+											<p>Gestion des ressources humaines</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>12°</p>
+										</td>
+										<td>
+											<p>Gestion du changement</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>13°</p>
+										</td>
+										<td>
+											<p>Éthique et intégrité dans l’administration</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>14°</p>
+										</td>
+										<td>
+											<p>Lecture rapide et efficace</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>15°</p>
+										</td>
+										<td>
+											<p>Plates-formes officielles d'échange de données</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>16°</p>
+										</td>
+										<td>
+											<p>Principes de co-création et de gestion participative</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>17°</p>
+										</td>
+										<td>
+											<p>Prise de notes et comptes rendus</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>18°</p>
+										</td>
+										<td>
+											<p>Techniques de management</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>19°</p>
+										</td>
+										<td>
+											<p>Techniques de négociation</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p/>
+										</td>
+										<td>
+											<p/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p>
+												<b>V. Dans le domaine « Communication » :</b>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>1°</p>
+										</td>
+										<td>
+											<p>Communication avec le citoyen</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2°</p>
+										</td>
+										<td>
+											<p>Communication interne</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>3°</p>
+										</td>
+										<td>
+											<p>Communication non verbale</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>4°</p>
+										</td>
+										<td>
+											<p>Communication avec des personnes en situation de handicap</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>5°</p>
+										</td>
+										<td>
+											<p>Parler en public</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>6°</p>
+										</td>
+										<td>
+											<p>Techniques de communication</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>7°</p>
+										</td>
+										<td>
+											<p>Techniques de médiation</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>8°</p>
+										</td>
+										<td>
+											<p>Techniques de présentation</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>9°</p>
+										</td>
+										<td>
+											<p>Travail en équipe</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>10°</p>
+										</td>
+										<td>
+											<p>Usage de médias sociaux</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p/>
+										</td>
+										<td>
+											<p/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p>
+												<b>VI. Dans le domaine « Informatique » :</b>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>1°</p>
+										</td>
+										<td>
+											<p>Essentiel sur l'ordinateur</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2°</p>
+										</td>
+										<td>
+											<p>Essentiel sur le web</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>3°</p>
+										</td>
+										<td>
+											<p>Traitement de texte</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>4°</p>
+										</td>
+										<td>
+											<p>Tableur</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>5°</p>
+										</td>
+										<td>
+											<p>Bases de données</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>6°</p>
+										</td>
+										<td>
+											<p>Présentation</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>7°</p>
+										</td>
+										<td>
+											<p>Collaboration en ligne</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>8°</p>
+										</td>
+										<td>
+											<p>Sécurité informatique</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>9°</p>
+										</td>
+										<td>
+											<p>Traitement d’images</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>10°</p>
+										</td>
+										<td>
+											<p>Maîtrise du clavier</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p/>
+										</td>
+										<td>
+											<p/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p>
+												<b>VII. Dans le domaine « Langage administratif » :</b>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>1°</p>
+										</td>
+										<td>
+											<p>Allemand</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2°</p>
+										</td>
+										<td>
+											<p>Anglais</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>3°</p>
+										</td>
+										<td>
+											<p>Français</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>4°</p>
+										</td>
+										<td>
+											<p>Luxembourgeois</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>5°</p>
+										</td>
+										<td>
+											<p>Portugais</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p/>
+										</td>
+										<td>
+											<p/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<p>
+												<b>VIII. Dans le domaine « Sécurité sur le lieu de travail » :</b>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>1°</p>
+										</td>
+										<td>
+											<p>Premier secours</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>2°</p>
+										</td>
+										<td>
+											<p>Défibrillation semi-automatique</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>3°</p>
+										</td>
+										<td>
+											<p>Lutte et prévention contre l'incendie</p>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<p>4°</p>
+										</td>
+										<td>
+											<p>Premiers secours psychologiques</p>
+										</td>
+									</tr>
+								</table>
+							</content>
+						</alinea>
+					</mainBody>
+				</doc>
+			</attachment>
+		</attachments>
+	</act>
+</akomaNtoso>

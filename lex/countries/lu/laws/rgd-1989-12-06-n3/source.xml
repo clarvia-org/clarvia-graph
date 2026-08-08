@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2012-05-03" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MI"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2012-05-03" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2012-05-03" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2012-05-03</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MI</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/426</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/738</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2012-05-07</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2012/a84</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2012A0935A</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2012-05-03</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="consolidates">/eli/etat/leg/rgd/1989/12/06/n3/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 01/08/2024 : Règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2012/a84/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-tc-2012-05-03-n1-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2012/a84/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2012/a84/fr/pdf/eli-etat-leg-memorial-2012-a84-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="1989-12-06" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="1994-05-24" id="e10" originatingExpression="true" source="#rp10" type="amendment"/>
+				<eventRef date="1996-12-25" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+				<eventRef date="2005-12-26" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+				<eventRef date="2009-02-23" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+				<eventRef date="2012-05-07" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+				<eventRef date="2015-01-02" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+				<eventRef date="2023-03-13" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+				<eventRef date="2023-04-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2024-08-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm6" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2023/03/03/a116/jo"/>
+						<destination href="#art_10_20240801"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2023/01/06/a31/jo"/>
+						<destination href="#art_3bis"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2023/01/06/a31/jo"/>
+						<destination href="#art_3bis"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2024/07/24/a325/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2024/07/24/a325/jo"/>
+						<destination href="#art_3_20240801"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2024/07/24/a325/jo"/>
+						<destination href="#art_3bis"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2024/07/24/a325/jo"/>
+						<destination href="#art_3bis"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2024/07/24/a325/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm15" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2024/07/24/a325/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm16" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2024/07/24/a325/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm17" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2024/07/24/a325/jo"/>
+						<destination href="#art_8"/>
+					</textualMod>
+					<textualMod id="pm18" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2024/07/24/a325/jo"/>
+						<destination href="#art_3bis"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/1989/12/06/n3/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2024/07/24/a325/jo" id="rp2" showAs="Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux."/>
+				<passiveRef href="/eli/etat/leg/rgd/2023/01/06/a31/jo" id="rp3" showAs="Règlement grand-ducal du 6 janvier 2023 portant modification : 1° du règlement grand-ducal modifié du 21 octobre 1987 concernant le temps de travail et les congés des fonctionnaires communaux ; 2° du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestre, échevins et conseillers communaux ; 3° du règlement grand-ducal modifié du 25 septembre 1998 fixant les conditions de formation, d’admission aux emplois et de rémunération des chargés de cours des établissements d’enseignement musical du secteur communal ; 4° du règlement grand-ducal du 8 novembre 2010 portant exécution de la loi du 18 décembre 2009 organisant l’aide sociale ; 5° du règlement grand-ducal modifié du 28 juillet 2017 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires communaux ; 6° du règlement grand-ducal modifié du 28 juillet 2017 déterminant le régime et les indemnités des employés communaux ; 7° du règlement grand-ducal modifié du 8 avril 2018 portant exécution de la loi du 8 avril 2018 sur les marchés publics et portant modification du seuil prévu à l’article 106 point 10° de la loi communale modifiée du 13 décembre 1988."/>
+				<passiveRef href="/eli/etat/leg/rgd/2023/03/03/a116/jo" id="rp4" showAs="Règlement grand-ducal du 3 mars 2023 portant modification : 1° du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux ; 2° du règlement grand-ducal modifié du 13 février 2009 arrêtant les maxima des indemnités des bourgmestres et des échevins. "/>
+				<passiveRef href="/eli/etat/leg/rgd/2014/12/23/n7/jo" id="rp5" showAs="Règlement grand-ducal du 23 décembre 2014 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux."/>
+				<passiveRef href="/eli/etat/leg/rgd/2012/04/25/n1/jo" id="rp6" showAs="Règlement grand-ducal du 25 avril 2012 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux."/>
+				<passiveRef href="/eli/etat/leg/rgd/2009/02/13/n3/jo" id="rp7" showAs="Règlement grand-ducal du 13 février 2009 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux."/>
+				<passiveRef href="/eli/etat/leg/rgd/2005/12/14/n1/jo" id="rp8" showAs="Règlement grand-ducal du 14 décembre 2005 portant modification du règlement grand-ducal du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux tel qu'il a été modifié par la suite."/>
+				<passiveRef href="/eli/etat/leg/rgd/1996/12/08/n1/jo" id="rp9" showAs="Règlement grand-ducal du 8 décembre 1996 portant modification du règlement grand-ducal du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux tel qu'il a été modifié par la suite."/>
+				<passiveRef href="/eli/etat/leg/rgd/1994/04/19/n5/jo" id="rp10" showAs="Règlement grand-ducal du 19 avril 1994 modifiant celui du 8 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux."/>
+			</references>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2023-03-09|2023-03-03|RGD|116">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/03/03/a116/jo">Règlement grand-ducal du 3 mars 2023 portant modification : 1° du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux ; 2° du règlement grand-ducal modifié du 13 février 2009 arrêtant les maxima des indemnités des bourgmestres et des échevins.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2023-01-19|2023-01-06|RGD|31">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/01/06/a31/jo">Règlement grand-ducal du 6 janvier 2023 portant modification : 1° du règlement grand-ducal modifié du 21 octobre 1987 concernant le temps de travail et les congés des fonctionnaires communaux ; 2° du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestre, échevins et conseillers communaux ; 3° du règlement grand-ducal modifié du 25 septembre 1998 fixant les conditions de formation, d’admission aux emplois et de rémunération des chargés de cours des établissements d’enseignement musical du secteur communal ; 4° du règlement grand-ducal du 8 novembre 2010 portant exécution de la loi du 18 décembre 2009 organisant l’aide sociale ; 5° du règlement grand-ducal modifié du 28 juillet 2017 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires communaux ; 6° du règlement grand-ducal modifié du 28 juillet 2017 déterminant le régime et les indemnités des employés communaux ; 7° du règlement grand-ducal modifié du 8 avril 2018 portant exécution de la loi du 8 avril 2018 sur les marchés publics et portant modification du seuil prévu à l’article 106 point 10° de la loi communale modifiée du 13 décembre 1988.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2023-01-19|2023-01-06|RGD|31">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2023/01/06/a31/jo">Règlement grand-ducal du 6 janvier 2023 portant modification : 1° du règlement grand-ducal modifié du 21 octobre 1987 concernant le temps de travail et les congés des fonctionnaires communaux ; 2° du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestre, échevins et conseillers communaux ; 3° du règlement grand-ducal modifié du 25 septembre 1998 fixant les conditions de formation, d’admission aux emplois et de rémunération des chargés de cours des établissements d’enseignement musical du secteur communal ; 4° du règlement grand-ducal du 8 novembre 2010 portant exécution de la loi du 18 décembre 2009 organisant l’aide sociale ; 5° du règlement grand-ducal modifié du 28 juillet 2017 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires communaux ; 6° du règlement grand-ducal modifié du 28 juillet 2017 déterminant le régime et les indemnités des employés communaux ; 7° du règlement grand-ducal modifié du 8 avril 2018 portant exécution de la loi du 8 avril 2018 sur les marchés publics et portant modification du seuil prévu à l’article 106 point 10° de la loi communale modifiée du 13 décembre 1988.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2024-07-31|2024-07-24|RGD|325">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/07/24/a325/jo">Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2024-07-31|2024-07-24|RGD|325">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/07/24/a325/jo">Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2024-07-31|2024-07-24|RGD|325">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/07/24/a325/jo">Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2024-07-31|2024-07-24|RGD|325">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/07/24/a325/jo">Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M14" marker="14" refersTo="pm14" title="A|2024-07-31|2024-07-24|RGD|325">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/07/24/a325/jo">Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M15" marker="15" refersTo="pm15" title="A|2024-07-31|2024-07-24|RGD|325">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/07/24/a325/jo">Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M16" marker="16" refersTo="pm16" title="A|2024-07-31|2024-07-24|RGD|325">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/07/24/a325/jo">Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M17" marker="17" refersTo="pm17" title="A|2024-07-31|2024-07-24|RGD|325">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/07/24/a325/jo">Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M18" marker="18" refersTo="pm18" title="A|2024-07-31|2024-07-24|RGD|325">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2024/07/24/a325/jo">Règlement grand-ducal du 24 juillet 2024 portant modification du règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 01/08/2024 : Règlement grand-ducal modifié du 6 décembre 1989 concernant le congé politique des bourgmestres, échevins et conseillers communaux.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_1er">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_1er</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_1er/20120507</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2012-05-07</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 1<sup>er</sup>.</num>
+				<alinea>
+					<content>
+						<p>Les agents visés à l’article 78 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="59278a36-c462-44da-9d2c-c9c85714b7b6">loi communale du 13 décembre 1988</ref> ont droit à un congé politique dans les cas et selon les modalités fixés ci-après.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_2">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_2/20240801</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm9"/>Art. 2.</num>
+				<alinea>
+					<content>
+						<p>Le congé politique de ces agents, lorsqu’ils remplissent les fonctions respectivement de bourgmestre, d’échevin ou de conseiller, comprend le nombre maximum de jours de travail ou de parties de jours de travail par semaine indiqué ci-après :</p>
+						<ol scl:start="1" scl:symbol="1°">
+							<li>dans les communes qui ne comptent pas plus de 999 habitants : 11 heures pour le bourgmestre, 6 heures pour chacun des échevins et 3 heures pour chacun des conseillers ;</li>
+							<li>dans les communes qui comptent 1.000 à 2.999 habitants : 15 heures pour le bourgmestre, 8 heures pour chacun des échevins et 3 heures pour chacun des conseillers ;</li>
+							<li>dans les communes qui comptent 3.000 à 5.999 habitants : 24 heures pour le bourgmestre, 12 heures pour chacun des échevins et 5 heures pour chacun des conseillers ;</li>
+							<li>dans les communes qui comptent 6.000 à 9.999 habitants : 40 heures pour le bourgmestre, 18 heures pour chacun des échevins et 5 heures pour chacun des conseillers ;</li>
+							<li>dans les communes qui comptent 10.000 à 14.999 habitants : 40 heures pour le bourgmestre, 24 heures pour chacun des échevins et 5 heures pour chacun des conseillers ; </li>
+							<li>dans les communes qui comptent 15.000 à 19.999 habitants : 40 heures pour le bourgmestre, 24 heures pour chacun des échevins et 5 heures pour chacun des conseillers ;</li>
+							<li>dans les communes qui comptent 20.000 et plus : 40 heures pour le bourgmestre, 24 heures pour chacun des échevins et 8 heures pour chacun des conseillers ;</li>
+							<li>dans la commune fusionnée de Groussbus-Wal, pendant la période transitoire telle que définie à l’article 9 de la <ref href="/eli/etat/leg/loi/2023/03/03/a115/jo" id="a8beb699-b4c3-4098-bd8a-04d03791a1ea" scl:verify="true">loi du 3 mars 2023</ref> portant fusion des communes de Grosbous et de Wahl : 24 heures pour le bourgmestre et 12 heures pour chacun des échevins.</li>
+						</ol>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Le nombre d’habitants correspond à la population réelle par commune déterminée sur base du registre national des personnes physiques au 1<sup>er</sup> janvier de l’année concernée.<mod class="mod-end" for="#pm9"/>
+							<noteRef href="#M9" marker="9"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_3_20240801" style="del">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_3</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_3/20240801</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm10"/>
+					<del>Art. 3.</del>
+				</num>
+				<alinea>
+					<content>
+						<p>
+							<del>Pour les agents qui remplissent un mandat de conseiller communal, le congé politique comprend le nombre maximum de jours de travail ou de parties de jours de travail par semaine indiqué ci-après:</del>
+						</p>
+						<ul scl:symbol="custom">
+							<li scl:symbol="–" style="del">
+								<del>dans les communes qui votent d’après le système de la majorité relative: 3 heures;</del>
+							</li>
+							<li scl:symbol="–" style="del">
+								<del style="show_in_pdf">dans les communes qui votent d’après le système de la représentation proportionnelle: 5 heures.</del>
+								<mod class="mod-end" for="#pm10"/>
+								<noteRef href="#M10" marker="10"/>
+							</li>
+						</ul>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_3bis">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_3bis</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_3bis/20240801</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 3bis.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 3<i>bis</i>.</num>
+				<paragraph id="paragraph_1">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Par dérogation <mod class="mod-start" for="#pm11"/>à l’article 2<mod class="mod-end" for="#pm11"/>
+								<noteRef href="#M11" marker="11"/>, un supplément de <mod class="mod-start" for="#pm12"/>15<mod class="mod-end" for="#pm12"/>
+								<noteRef href="#M12" marker="12"/> heures de congé politique par semaine au maximum est institué pour chaque conseil communal selon les modalités suivantes.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_2">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Le conseil communal fixe par délibération la répartition du supplément de congé politique entre les agents visés à l’article 1<sup>er </sup>et les personnes visées à l’article 8. <mod class="mod-start" for="#pm7"/>
+								<del>qui ont été désignés comme délégués dans les syndicats de communes dont la commune est membre<mod class="mod-end" for="#pm7"/>
+								</del>
+								<noteRef href="#M7" marker="7"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm8"/>
+								<del>Lors de cette répartition, il sera tenu compte par ordre de priorité décroissant, de l’envergure nationale, régionale ou intercommunale du syndicat concerné.</del>
+								<mod class="mod-end" for="#pm8"/>
+								<noteRef href="#M8" marker="8"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_3">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Le collège des bourgmestre et échevins délivre à chaque élu communal concerné, sur base d’une expédition de la délibération conforme à l’article 26 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="4aff004c-2b88-464f-83ad-39a3542b1572">loi communale</ref>, un certificat portant la date de délivrance et renseignant sur le nombre supplémentaire d’heures de congé politique lui accordé.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ce certificat sert comme titre justificatif auprès de l’employeur.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>L’agent concerné est tenu de signaler immédiatement à son employeur tout changement ayant une incidence sur le supplément de congé politique qui lui a été accordé.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_4">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p> Le droit au congé politique commence le 1<sup>er</sup> du mois qui suit la date de délivrance du certificat précité. <mod class="mod-start" for="#pm18"/>
+								<del>et prend fin le jour de la cessation du mandat au syndicat de communes</del>
+								<mod class="mod-end" for="#pm18"/>
+								<noteRef href="#M18" marker="18"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_5">
+					<num>(5)</num>
+					<alinea>
+						<content>
+							<p>En aucun cas, le total du congé politique ne saurait dépasser un maximum de 40 heures par semaine.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_4">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_4</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_4/20240801</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 4.</num>
+				<alinea>
+					<content>
+						<p>Les nombres maxima de jours de travail ou de parties de jours de travail par semaine indiqués aux articles 2<mod class="mod-start" for="#pm14"/>
+							<del>, 3</del>
+							<mod class="mod-end" for="#pm14"/>
+							<noteRef href="#M14" marker="14"/> et 3<i>bis</i> ci-dessus s’appliquent aux agents concernés lorsqu’ils exercent une activité professionnelle à plein temps.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Lorsqu’ils n’exercent l’activité professionnelle salariée qu’à temps partiel, les nombres maxima d’heures de congé politique prévues à ce titre sont adaptés proportionnellement au temps de travail de l’agent. Le solde des heures effectivement dues aux termes des articles 2<mod class="mod-start" for="#pm15"/>
+							<del>, 3</del>
+							<mod class="mod-end" for="#pm15"/>
+							<noteRef href="#M15" marker="15"/> et 3<i>bis</i> est bonifié aux intéressés conformément aux dispositions de l’art. 8 ci-dessous.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_5">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_5</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_5/20120507</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2012-05-07</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 5.</num>
+				<alinea>
+					<content>
+						<p>Le congé politique visé aux articles qui précèdent ne peut être utilisé par les agents que pour l’exercice des missions qui découlent directement de l’accomplissement de leurs mandats ou de leurs fonctions.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>L’agent ayant droit au congé politique prend ce congé à sa convenance par jour de travail ou partie de jour de travail. Il ne peut toutefois reporter le congé d’une année de calendrier à l’autre.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_6">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_6</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_6/20120507</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2012-05-07</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 6.</num>
+				<alinea>
+					<content>
+						<p>Le congé politique est considéré comme temps de travail effectif. Pendant la durée du congé politique, les dispositions légales en matière de sécurité sociale et de protection de l’emploi restent applicables.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>La durée du congé politique ne peut pas être imputée sur le congé annuel de récréation tel qu’il est fixé par la loi ou par une convention spéciale.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les bénéficiaires du congé politique continuent, pendant la durée du congé, à toucher leur rémunération et à jouir des avantages attachés à leur activité professionnelle.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_7">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_7</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_7/20120507</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2012-05-07</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 7.</num>
+				<alinea>
+					<content>
+						<p>Le remboursement à l’employeur de l’agent visé à l’article 80 de la <ref href="/eli/etat/leg/loi/1988/12/13/n1/jo" id="6986ceec-eeeb-41e3-8d4f-4a1c45f536c3">loi communale</ref> est effectué une fois par an par l’intermédiaire du fonds des dépenses communales sur base d’une déclaration à présenter au Ministère de l’Intérieur au plus tard le 30 septembre de l’année qui suit celle pour laquelle le remboursement est demandé.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Faute d’avoir présenté la déclaration de remboursement à cette date, le droit au remboursement pour l’année en question est déchu.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>La déclaration est faite sur une fiche que chaque agent reçoit du collège des bourgmestre et échevins de la commune où il exerce son mandat et qu’il remet à son employeur qui la remplit et qui signe la déclaration et la demande de remboursement.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>L’exactitude des indications de la fiche est certifiée par la signature de l’agent intéressé.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_8">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_8</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_8/20240801</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2024-08-01</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 8.</num>
+				<alinea>
+					<content>
+						<p>Les membres actifs des professions indépendantes ainsi que les personnes sans profession ne bénéficiant pas d’un régime statutaire, âgés de moins de 65 ans, qui sont bourgmestre, échevin ou conseiller communal sont indemnisés pour le temps qu’ils consacrent à l’exercice de leurs mandats ou fonctions dans les limites fixées par les articles 2<mod class="mod-start" for="#pm16"/>
+							<del>, 3</del>
+							<mod class="mod-end" for="#pm16"/>
+							<noteRef href="#M16" marker="16"/>, 3<i>bis</i> et 4 du présent règlement.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Le montant de l’indemnité horaire est fixé forfaitairement au <mod class="mod-start" for="#pm17"/>quadruple<mod class="mod-end" for="#pm17"/>
+							<noteRef href="#M17" marker="17"/> du salaire social minimum pour travailleurs qualifiés.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_9">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_9</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_9/20120507</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2012-05-07</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 9.</num>
+				<alinea>
+					<content>
+						<p>Le paiement de l’indemnité à l’intéressé est effectué une fois par an par l’intermédiaire du fonds des dépenses communales sur base d’une déclaration à présenter au Ministère de l’Intérieur au plus tard le 30 septembre de l’année qui suit celle pour laquelle l’indemnisation est demandée.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Faute d’avoir présenté la déclaration d’indemnisation à cette date, le droit à l’indemnisation pour l’année en question est déchu.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>La déclaration est faite sur une fiche que chaque intéressé reçoit du collège des bourgmestre et échevins de la commune où il exerce son mandat. L’intéressé remplit et signe la déclaration et la demande de paiement.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_10_20240801" style="del">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_10</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_10/20230313</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2023-03-13</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm6"/>
+					<del>Art. 10.</del>
+				</num>
+				<alinea>
+					<content>
+						<p>
+							<del>Les déclarations de remboursement ou d’indemnisation de congé politique concernant les années 1989 à 1995 doivent être présentées au Ministère de l’Intérieur au plus tard le 31 décembre 1996.</del>
+						</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>
+							<del>Faute d’avoir présenté une déclaration y relative dans ce délai, le droit au remboursement ou à l’indemnisation de congé politique est déchu.<mod class="mod-end" for="#pm6"/>
+							</del>
+							<noteRef href="#M6" marker="6"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_11">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_11</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1/art_11/20120507</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/tc/2012/05/03/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2012-05-07</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 11.</num>
+				<alinea>
+					<content>
+						<p>Notre Ministre de l’Intérieur est chargé de l’exécution du présent règlement qui est publié au Mémorial et qui entre en vigueur le 1<sup>er</sup> janvier 1989.</p>
+					</content>
+				</alinea>
+			</article>
+		</body>
+	</act>
+</akomaNtoso>

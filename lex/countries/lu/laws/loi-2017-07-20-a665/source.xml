@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="many">
+<meta>
+<identification source="#somebody">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221"/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-07-12" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MECM"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-07-12" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2017-07-12" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221</scl:jolux><scl:jolux scl:name="publicationDate">2021-09-29</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="dateDocument">2017-07-12</scl:jolux><scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux><scl:jolux scl:name="dateApplicability">2026-01-04</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MECM</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/809</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/14</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/237</scl:jolux><scl:jolux scl:name="dateEntryInForce">2020-12-21</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2017/a665</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221/fr</scl:jolux>
+<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 04/01/2026 : Loi du 20 juillet 2017 ayant pour objet la mise en place d'un régime d'aide à l'investissement à finalité régionale.</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1879/06/18/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/2013/1407/jo</scl:jolux>
+<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/reg_ue/2014/651/jo</scl:jolux>
+<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/pl/20150189</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221/fr/xml</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221/fr</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2017-07-12-a665-consolide-20201221-fr-xml.xml</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221/fr/pdf</scl:jolux>
+<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/consolide/20201221/fr</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2017-07-12-a665-consolide-20201221-fr-pdf.pdf</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2017-07-28" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2017-12-25" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+<eventRef date="2020-01-01" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2020-12-21" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2026-01-04" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm2" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2017/12/15/a1108/jo"/>
+<destination href="#art_2_champ_d_application"/>
+</textualMod>
+<textualMod id="pm3" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2017/12/15/a1108/jo"/>
+<destination href="#art_2_champ_d_application"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2017/12/15/a1108/jo"/>
+<destination href="#art_3_procedure_de_la_demande_d_aide"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2017/12/15/a1108/jo"/>
+<destination href="#art_8_couts_admissibles"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2017/12/15/a1108/jo"/>
+<destination href="#art_1er"/>
+</textualMod>
+<textualMod id="pm7" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2020/12/19/a1033/jo"/>
+<destination href="#art_2"/>
+</textualMod>
+<textualMod id="pm8" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2020/12/19/a1033/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm9" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2020/12/19/a1033/jo"/>
+<destination href="#art_4"/>
+</textualMod>
+<textualMod id="pm10" incomplete="false" type="substitution">
+<source href="/eli/etat/leg/loi/2025/12/08/a645/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2017/07/12/a665/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2017/12/15/a1108/jo" id="rp2" showAs="Loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement et modifiant 1. la loi du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ; 2. la loi du 20 juillet 2017 ayant pour objet la mise en place d'un régime d'aide à l'investissement à finalité régionale."/>
+<passiveRef href="/eli/etat/leg/loi/2020/12/19/a1033/jo" id="rp3" showAs="Loi du 19 décembre 2020 portant modification : 1° de la loi modifiée du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ; 2° de la loi modifiée du 20 juillet 2017 ayant pour objet la mise en place d’un régime d’aide à l’investissement à finalité régionale ; 3° de la loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement ; 4° de la loi du 9 août 2018 relative à un régime d’aides en faveur des petites et moyennes entreprises. "/>
+<passiveRef href="/eli/etat/leg/loi/2025/12/08/a645/jo" id="rp4" showAs="Loi du 8 décembre 2025 ayant pour objet le renouvellement du régime d’aides à la protection de l’environnement et du climat et modifiant : 1° la loi modifiée du 20 juillet 2017 ayant pour objet la mise en place d’un régime d’aide à l’investissement à finalité régionale ; 2° la loi du 15 juillet 2022 instaurant un régime d’aides dans le contexte du système d’échange de quotas d’émission de gaz à effet de serre pour la période 2021-2030. "/>
+<passiveRef href="/eli/etat/leg/loi/2020/12/19/a1061/jo" id="rp5" showAs="Loi du 19 décembre 2020 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2021 et modifiant :  1° la loi modifiée du 23 décembre 1913 concernant la révision de la législation qui régit les impôts dont le recouvrement est attribué à l’administration de l’enregistrement et des domaines ; 2° la loi générale des impôts modifiée du 22 mai 1931 (« Abgabenordnung ») ; 3° la loi modifiée du 27 novembre 1933 concernant le recouvrement des contributions directes, des droits d'accise sur l'eau-de-vie et des cotisations d'assurance sociale ; 4° la loi modifiée du 9 juillet 1937 sur l’impôt sur les assurances ; 5° la loi modifiée du 1er février 1939 sur l'impôt dans l'intérêt du service d'incendie ; 6° la loi modifiée du 28 janvier 1948 tendant à assurer la juste et exacte perception des droits d’enregistrement et de succession ; 7° la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’État ; 8° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 9° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 10° la loi modifiée du 25 février 1979 concernant l’aide au logement ; 11° la loi modifiée du 14 mai 1997 relative à la participation à des institutions financières internationales ; 12° la loi modifiée du 27 juillet 1997 sur le contrat d’assurance ; 13° la loi modifiée du 28 avril 1998 portant a) harmonisation de l’enseignement musical dans le secteur communal ; b) modification de l’article 5 de la loi du 24 mai 1989 sur le contrat de travail ; c) modification de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l’État ; 14° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 15° la loi modifiée du 11 mai 2007 relative à la création d’une société de gestion de patrimoine familial (« SPF ») ; 16° la loi modifiée du 16 décembre 2008 concernant l’intégration des étrangers au Grand-Duché de Luxembourg ; 17° la loi du 19 décembre 2008 portant révision du régime applicable à certains actes de société en matière de droits d’enregistrement, portant transposition de la directive 2008/7/CE du Conseil du 12 février 2008 concernant les impôts indirects frappant les rassemblements de capitaux, modifiant : la loi modifiée du 7 août 1920, portant majoration des droits d'enregistrement, de timbre, de succession, etc., la loi modifiée du 20 décembre 2002 concernant les organismes de placement collectif, la loi du 22 mars 2004 relative à la titrisation, la loi modifiée du 15 juin 2004 relative à la société d'investissement en capital à risque (SICAR), la loi modifiée du 13 juillet 2005 relative aux institutions de retraite professionnelle sous forme de sepcav et assep, la loi du 13 février 2007 relative aux fonds d'investissement spécialisés, et abrogeant la loi modifiée du 29 décembre 1971 concernant l'impôt frappant les rassemblements de capitaux dans les sociétés civiles et commerciales et portant révision de certaines dispositions législatives régissant la perception des droits d'enregistrement ; 18° la loi modifiée du 17 décembre 2010 concernant les organismes de placement collectif ; 19° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 20° la loi modifiée du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État ; 21° la loi du 23 juillet 2016 portant création d’un impôt dans l’intérêt des services de secours ; 22° la loi modifiée du 23 décembre 2016 1. instituant un régime d’aides pour la promotion de la durabilité, de l’utilisation rationnelle de l’énergie et des énergies renouvelables dans le domaine du logement; 2. modifiant la loi modifiée du 23 décembre 2004 établissant un système d'échange de quotas d'émission de gaz à effet de serre ; 23° la loi modifiée du 20 juillet 2017 ayant pour objet la mise en place d’un régime d’aide à l’investissement à finalité régionale ; 24° la loi modifiée du 28 juillet 2018 relative au revenu d’inclusion sociale ; 25° la loi du 15 décembre 2020 relative au climat  et portant abrogation de la loi modifiée du 22 décembre 1993 ayant pour objet la relance de l'investissement dans l'intérêt du développement économique. "/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M2" marker="2" refersTo="pm2" title="A|2017-12-21|2017-12-15|L|1108">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1108/jo">Loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement et modifiant\n1. la loi du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ;\n2. la loi du 20 juillet 2017 ayant pour objet la mise en place d'un régime d'aide à l'investissement à finalité régionale.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M3" marker="3" refersTo="pm3" title="A|2017-12-21|2017-12-15|L|1108">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1108/jo">Loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement et modifiant\n1. la loi du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ;\n2. la loi du 20 juillet 2017 ayant pour objet la mise en place d'un régime d'aide à l'investissement à finalité régionale.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M4" marker="4" refersTo="pm4" title="A|2017-12-21|2017-12-15|L|1108">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1108/jo">Loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement et modifiant\n1. la loi du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ;\n2. la loi du 20 juillet 2017 ayant pour objet la mise en place d'un régime d'aide à l'investissement à finalité régionale.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M5" marker="5" refersTo="pm5" title="A|2017-12-21|2017-12-15|L|1108">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1108/jo">Loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement et modifiant\n1. la loi du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ;\n2. la loi du 20 juillet 2017 ayant pour objet la mise en place d'un régime d'aide à l'investissement à finalité régionale.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M6" marker="6" refersTo="pm6" title="A|2017-12-21|2017-12-15|L|1108">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1108/jo">Loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement et modifiant 1. la loi du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ; 2. la loi du 20 juillet 2017 ayant pour objet la mise en place d'un régime d'aide à l'investissement à finalité régionale.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M7" marker="7" refersTo="pm7" title="A|2020-12-21|2020-12-19|L|1033">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2020/12/19/a1033/jo">Loi du 19 décembre 2020 portant modification : 1° de la loi modifiée du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ; 2° de la loi modifiée du 20 juillet 2017 ayant pour objet la mise en place d’un régime d’aide à l’investissement à finalité régionale ; 3° de la loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement ; 4° de la loi du 9 août 2018 relative à un régime d’aides en faveur des petites et moyennes entreprises.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M8" marker="8" refersTo="pm8" title="A|2020-12-21|2020-12-19|L|1033">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2020/12/19/a1033/jo">Loi du 19 décembre 2020 portant modification : 1° de la loi modifiée du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ; 2° de la loi modifiée du 20 juillet 2017 ayant pour objet la mise en place d’un régime d’aide à l’investissement à finalité régionale ; 3° de la loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement ; 4° de la loi du 9 août 2018 relative à un régime d’aides en faveur des petites et moyennes entreprises.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M9" marker="9" refersTo="pm9" title="A|2020-12-21|2020-12-19|L|1033">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2020/12/19/a1033/jo">Loi du 19 décembre 2020 portant modification : 1° de la loi modifiée du 17 mai 2017 relative à la promotion de la recherche, du développement et de l’innovation ; 2° de la loi modifiée du 20 juillet 2017 ayant pour objet la mise en place d’un régime d’aide à l’investissement à finalité régionale ; 3° de la loi du 15 décembre 2017 relative à un régime d’aides à la protection de l’environnement ; 4° de la loi du 9 août 2018 relative à un régime d’aides en faveur des petites et moyennes entreprises.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp4">
+<note id="M10" marker="10" refersTo="pm10" title="A|2025-12-31|2025-12-08|L|645">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/08/a645/jo">Loi du 8 décembre 2025 ayant pour objet le renouvellement du régime d’aides à la protection de l’environnement et du climat et modifiant : 1° la loi modifiée du 20 juillet 2017 ayant pour objet la mise en place d’un régime d’aide à l’investissement à finalité régionale ; 2° la loi du 15 juillet 2022 instaurant un régime d’aides dans le contexte du système d’échange de quotas d’émission de gaz à effet de serre pour la période 2021-2030.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle style="11">
+<p>Version consolidée applicable au 04/01/2026 : Loi du 20 juillet 2017 ayant pour objet la mise en place d'un régime d'aide à l'investissement à finalité régionale.</p>
+</longTitle>
+</preface>
+<body>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_1er/20171225</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er. Définitions.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-12-25</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>. </num>
+<heading> <b>Définitions.</b> </heading>
+<alinea>
+<content>
+<p>Aux fins de la présente loi, on entend par:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:space-num="10" ns3727365:start="1" ns3727365:symbol="custom">
+<li ns3727365:symbol="1.">Actifs corporels: les actifs consistant en des terrains, des bâtiments, des machines et des équipements.</li>
+<li ns3727365:symbol="2.">Actifs incorporels: les actifs n’ayant aucune forme physique ni financière tels que les brevets, les licences, le savoir-faire ou d’autres types de propriété intellectuelle.</li>
+<li ns3727365:symbol="3.">Activité identique ou similaire: toute activité relevant de la même catégorie de la nomenclature statistique des activités économiques NACE.</li>
+<li ns3727365:symbol="4.">Début des travaux: soit le début des travaux de construction liés à l’investissement, soit le premier engagement juridiquement contraignant de commande d’équipement ou tout autre engagement rendant l’investissement irréversible, selon l’évènement qui se produit en premier. L’achat de terrains et les préparatifs tels que l’obtention d’autorisations et la réalisation d’études de faisabilité ne sont pas considérés comme le début des travaux. Dans le cas des rachats, il s’agit du moment de l’acquisition des actifs directement liés à l’établissement acquis.</li>
+<li> <p> <span style="li_symbol"> <mod class="mod-start" for="#pm6"/>4<i>bis</i> </span> </p>Délocalisation : un transfert, en tout ou en partie, d’une activité identique ou similaire d’un établissement situé sur le territoire d’une partie contractante à l’accord Espace économique européen vers l’établissement dans lequel est effectué l’investissement bénéficiant d’une aide sur le territoire d’une autre partie contractante à l’accord Espace économique européen. Il y a transfert si le produit ou le service dans l’établissement initial et l’établissement bénéficiant de l’aide a au moins en partie les mêmes finalités et répond aux demandes ou aux besoins du même type de consommateurs et que des emplois sont supprimés dans une activité identique ou similaire dans un des établissements initiaux du bénéficiaire dans l’Espace économique européen.<mod class="mod-end" for="#pm6"/> <noteRef href="#M6" marker="6"/> </li>
+<li ns3727365:symbol="5.">Etablissement: toute entreprise:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>de production ou de transformation de biens ou;</li>
+<li>de prestation de services relevant d’une branche d’activité reconnue comme ayant une influence motrice sur le développement économique ou;</li>
+<li>ayant des activités de recherche.</li>
+</ol> </li>
+<li ns3727365:symbol="6.">Grande entreprise: toute entreprise ne remplissant pas les critères d’une petite ou moyenne entreprise.</li>
+<li ns3727365:symbol="7.">Investissement initial:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>tout investissement dans des actifs corporels et incorporels se rapportant:<ul ns3727365:symbol="dash">
+<li>à la création d’un établissement ou;</li>
+<li>à l’extension des capacités d’un établissement existant ou;</li>
+<li>à la diversification de la production d’un établissement vers des produits qu’il ne produisait pas auparavant ou;</li>
+<li>à un changement fondamental de l’ensemble du processus de production d’un établissement existant;</li>
+</ul> </li>
+<li>toute acquisition d’actifs appartenant à un établissement qui a fermé, ou aurait fermé sans cette acquisition, et qui est racheté par un investisseur non lié au vendeur. La simple acquisition des parts d’une entreprise n’est pas considérée comme un investissement initial.</li>
+</ol> </li>
+<li ns3727365:symbol="8.">Petite ou moyenne entreprise: toute entreprise remplissant les critères énoncés à l’annexe I du <ref href="/eli/reg_ue/2014/651/jo" id="e7ed7ea0-1787-45c6-87f7-89c05f3ed297">règlement (UE) n° 651/20</ref> de la Commission du 17 juin 2014 déclarant certaines catégories d’aides compatibles avec le marché intérieur en application des articles 107 et 108 du traité.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_2/20201221</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2. Champ d’application.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2020-12-21</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2. </num>
+<heading> <b>Champ d’application.</b> </heading>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’Etat peut accorder à un établissement une aide à l’investissement à finalité régionale en faveur d’un investissement initial à réaliser dans l’une des régions citées à l’article 3 et qui:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>présente un intérêt régional spécifique, ou;</li>
+<li>a une influence motrice sur le développement économique de la région dans laquelle il est mis en œuvre, ou;</li>
+<li>contribue à une meilleure répartition géographique des activités économiques.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le régime d’aides à l’investissement à finalité régionale mis en place par la présente loi n’est pas applicable aux établissements relevant:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>du secteur de la sidérurgie;</li>
+<li>du secteur du charbon;</li>
+<li>du secteur des fibres synthétiques;</li>
+<li>du secteur de la construction navale;</li>
+<li>des transports et des infrastructures correspondantes;</li>
+<li>du secteur de la production et de la distribution d’énergie et des infrastructures énergétiques;</li>
+<li>du secteur de la pêche et de l’aquaculture;</li>
+<li>du secteur de l’agriculture.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Ne peuvent pas bénéficier des aides à l’investissement à finalité régionale:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="custom">
+<li ns3727365:symbol="1.">les entreprises en difficulté. Une entreprise en difficulté est une entreprise remplissant au moins une des conditions suivantes:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>s’il s’agit d’une société anonyme, d’une société à responsabilité limitée ou d’une société en commandite par actions, autre qu’une PME en existence depuis moins de trois ans, lorsque plus de la moitié de son capital social souscrit a disparu en raison des pertes accumulées. Tel est le cas lorsque la déduction des pertes accumulées des réserves (et de tous les autres éléments généralement considérés comme relevant des fonds propres de la société) conduit à un montant cumulé négatif qui excède la moitié du capital social souscrit. Le capital social comprend, le cas échéant, les primes d’émission;</li>
+<li>s’il s’agit d’une société en nom collectif ou d’une société en commandite simple, autre qu’une PME en existence depuis moins de trois ans, lorsque plus de la moitié des fonds propres, tels qu’ils sont inscrits dans les comptes de la société, a disparu en raison des pertes accumulées;</li>
+<li>lorsque l’entreprise fait l’objet d’une procédure collective d’insolvabilité ou remplit les conditions de soumission à une procédure collective d’insolvabilité à la demande de ses créanciers;</li>
+<li>lorsque l’entreprise a bénéficié d’une aide au sauvetage et n’a pas encore remboursé le prêt ou mis fin à la garantie, ou a bénéficié d’une aide à la restructuration et est toujours soumise à un plan de restructuration;</li>
+<li>dans le cas d’une entreprise autre qu’une PME, lorsque depuis les deux exercices précédents le ratio emprunts/capitaux propres de l’entreprise est supérieur à 7,5 et le ratio de couverture des intérêts de l’entreprise, calculé sur la base de l’EBITDA, est inférieur à 1,0;</li>
+</ol> </li>
+<li> <p> <span style="li_symbol"> <mod class="mod-start" for="#pm2"/>2.</span> </p>les entreprises faisant l’objet d’une injonction de récupération non exécutée, émise dans une décision antérieure de la Commission déclarant une aide octroyée par le Grand-Duché de Luxembourg illégale et incompatible avec le marché intérieur ;<mod class="mod-end" for="#pm2"/> <noteRef href="#M2" marker="2"/> </li>
+<li style="del"> <p> <span style="’"/> <span style="li_symbol"> <mod class="mod-start" for="#pm3"/>3.</span> </p> <del>les bénéficiaires ayant cessé une activité identique ou similaire dans l’Espace économique européen dans les deux ans qui précèdent la demande d’aide à l’investissement à finalité régionale ou qui, au moment de la demande d’aide à l’investissement à finalité régionale, envisagent concrètement de cesser une telle activité dans les deux ans suivant l’achèvement de l’investissement initial pour lequel l’aide est demandée</del>.<mod class="mod-end" for="#pm3"/> <noteRef href="#M3" marker="3"/> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p> <mod class="mod-start" for="#pm7"/>Du 1<sup>er</sup> janvier 2020 au 30 juin 2021, par dérogation à l’alinéa 1<sup>er</sup>, les entreprises en difficulté qui n’étaient pas en difficulté au 31 décembre 2019 peuvent bénéficier des aides à l’investissement à finalité régionale, pour autant qu’elles ne fassent pas l’objet d’une procédure collective d’insolvabilité ou ne remplissent pas, selon le droit national qui leur est applicable, les conditions de soumission à une procédure collective d’insolvabilité à la demande de leurs créanciers.<mod class="mod-end" for="#pm7"/> <noteRef href="#M7" marker="7"/> </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les grandes entreprises ne peuvent bénéficier des aides à l’investissement à finalité régionale que pour un investissement initial en faveur d’une nouvelle activité économique dans la région concernée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un investissement initial en faveur d’une nouvelle activité économique se définit comme :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>tout investissement dans des actifs corporels et incorporels se rapportant à la création d’un établissement ou à la diversification de l’activité d’un établissement, à la condition que la nouvelle activité ne soit pas identique ni similaire à celle exercée précédemment au sein de l’établissement;</li>
+<li>l’acquisition des actifs appartenant à un établissement qui a fermé, ou aurait fermé sans cette acquisition, et qui est racheté par un investisseur non lié au vendeur, à la condition que la nouvelle activité exercée grâce aux actifs acquis ne soit pas identique ni similaire à celle exercée au sein de l’établissement avant l’acquisition.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_3/20201221</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3. Procédure de la demande d’aide.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2020-12-21</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<heading> <b>Procédure de la demande d’aide.</b> </heading>
+<paragraph id="paragraph_5">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’aide à l’investissement à finalité régionale doit avoir un effet incitatif. Une aide est réputée avoir un effet incitatif si le bénéficiaire a présenté une demande d’aide écrite au ministre ayant l’Economie dans ses attributions avant le début des travaux liés au projet en question.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_6">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La demande d’aide doit contenir au moins les informations suivantes:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>nom et taille de l’entreprise;</li>
+<li>description du projet, y compris date de début et de fin;</li>
+<li>localisation du projet;</li>
+<li>liste des coûts du projet;</li>
+<li>subvention publique nécessaire pour le projet.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_30">
+<num> <mod class="mod-start" for="#pm4"/>(3)</num>
+<alinea>
+<content>
+<p>Le bénéficiaire doit confirmer qu’il n’a pas procédé à une délocalisation vers l’établissement dans lequel doit avoir lieu l’investissement initial pour lequel l’aide est demandée, dans les deux années précédant la demande d’aide, et doit s’engager à ne pas le faire dans les deux ans à compter de l’achèvement de l’investissement initial pour lequel l’aide est demandée.<mod class="mod-end" for="#pm4"/> <noteRef href="#M4" marker="4"/> </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p> <mod class="mod-start" for="#pm8"/>Par dérogation à l’alinéa 1<sup>er</sup>, en ce qui concerne les engagements pris avant le 31 décembre 2019, le bénéficiaire qui, dans la période allant du 1<sup>er</sup> janvier 2020 au 30 juin 2021, a, temporairement ou définitivement, supprimé des emplois dans une activité identique ou similaire d’un de ses établissements situés dans l’Espace économique européen en raison de la pandémie de Covid-19, n’est pas considéré comme ayant procédé à une délocalisation en infraction de l’alinéa 1<sup>er</sup>.<mod class="mod-end" for="#pm8"/> <noteRef href="#M8" marker="8"/> </p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_4/20201221</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4. Délimitation des régions.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2020-12-21</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> <u> <mod class="mod-start" for="#pm9"/>Art. 4.</u>
+</num>
+<heading> <u>Dé</u> <u>limitation des régions.</u> </heading>
+<alinea>
+<content>
+<p>Afin de pouvoir bénéficier d’une aide à l’investissement à finalité régionale, l’investissement initial est réalisé :</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>en ce qui concerne les aides octroyées jusqu’au 31 décembre 2021, sur le territoire d’une des régions suivantes : <ol ns3727365:symbol="a)">
+<li>la région « Sud-Est » comprenant la commune de Dudelange ;</li>
+<li>la région « Sud-Ouest » comprenant la commune de Differdange ;</li>
+</ol> </li>
+<li>en ce qui concerne les aides octroyées après le 31 décembre 2021, sur les zones situées sur le territoire du Grand-Duché figurant sur la carte des aides à finalité régionale approuvée par la Commission européenne en application de l’article 107, paragraphe 3, points a) et c), du traité sur le fonctionnement de l’Union européenne pour la période allant du 1<sup>er</sup> janvier 2022 au 31 décembre 2027.<mod class="mod-end" for="#pm9"/> <noteRef href="#M9" marker="9"/> </li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_5/20170728</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5. Intensité de l’aide à l’investissement à finalité régionale.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-07-28</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<heading> <b> Intensité de l’aide à l’investissement à finalité régionale.</b> </heading>
+<paragraph id="paragraph_7">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le plafond de l’aide à l’investissement à finalité régionale est de 10 pour cent des coûts admissibles définis à l’article 8.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_8">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’intensité d’aide maximale peut être augmentée de 20 points de pourcentage au maximum pour les petites entreprises et de 10 points de pourcentage au maximum pour les moyennes entreprises. L’intensité de l’aide correspond au montant brut de l’aide exprimé en pourcentage des coûts admissibles, avant impôts ou autres prélèvements.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les intensités d’aide majorées en faveur des petites ou moyennes entreprises ne sont pas applicables aux grands projets d’investissement dont les coûts admissibles sont supérieurs à 50.000.000 euros.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(4)</num>
+<alinea>
+<content>
+<p scl:space-after="15">Pour les grands projets d’investissement, l’aide à l’investissement à finalité régionale ne peut pas dépasser un montant maximal ajusté calculé selon la formule:</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:align="center" scl:space-after="15">R × (A + 0,50 × B + 0 × C)</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p> <def scl:width="10">où: </def> R est l’intensité d’aide maximale applicable; </p>
+<p scl:space-tab="29">A est la première tranche des coûts admissibles de 50.000.000 euros,</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:space-tab="29">B est la tranche des coûts admissibles comprise entre 50.000.000 euros et 100.000.000 euros </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:space-tab="29">et</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p scl:space-tab="29">C est la part des coûts admissibles supérieure à 100.000.000 euros.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_11">
+<num>(5)</num>
+<alinea>
+<content>
+<p>Pour les grandes entreprises, les coûts des actifs incorporels ne sont admissibles que jusqu’à concurrence de 50 pour cent des coûts d’investissement totaux admissibles pour l’investissement initial;</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num>(6)</num>
+<alinea>
+<content>
+<p>L’aide à l’investissement à finalité régionale attribuée pour un projet d’investissement ne peut pas dépasser 7.500.000 euros.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_6/20170728</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6. Règles de cumul.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-07-28</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<heading> <b>Règles de cumul.</b> </heading>
+<paragraph id="paragraph_13">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le plafond de l’aide établi à l’article 5 s’applique à la totalité des aides accordées pour un même projet d’investissement initial. Tout investissement initial engagé par le même bénéficiaire, au niveau d’un groupe, au cours d’une période de trois ans à partir de la date de début des travaux réalisés dans le cadre d’un autre investissement ayant bénéficié d’une aide dans la même région est considéré comme faisant partie d’un projet d’investissement unique.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_14">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Lorsque les dépenses pouvant bénéficier d’aides à l’investissement à finalité régionale sont totalement ou partiellement admissibles au bénéfices d’aides à d’autres finalités, la partie commune est soumise au plafond le plus favorable résultant des règles applicables.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les aides à l’investissement à finalité régionale ne sont pas cumulables avec des aides de minimis concernant les mêmes coûts admissibles.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(4)</num>
+<alinea>
+<content>
+<p>On entend par aide de minimis une aide conforme au <ref href="/eli/reg_ue/2013/1407/jo" id="5a55f87b-5155-4c19-968f-a60356713547">règlement (UE) n° 1407/2013</ref> de la Commission du 18 décembre 2013 concernant l’application des articles 107 et 108 du traité sur le fonctionnement de l’Union européenne aux aides de minimis.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_7/20170728</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7. Subvention en capital.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-07-28</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<heading> <b>Subvention en capital.</b> </heading>
+<alinea>
+<content>
+<p>Après avoir demandé l’avis de la commission consultative prévue à l’article 9, les ministres ayant dans leurs attributions respectives l’Economie et les Finances, ci-après dénommés les ministres compétents, peuvent accorder à un établissement une aide à l’investissement à finalité régionale sous forme d’une subvention en capital couvrant une partie des coûts liés à l’investissement initial.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_8/20171225</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8. Coûts admissibles.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-12-25</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<heading> <b>Coûts admissibles.</b> </heading>
+<paragraph id="paragraph_17">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les coûts admissibles sont:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="custom">
+<li> <p> <span style="li_symbol"> <mod class="mod-start" for="#pm5"/>1.</span> </p>le coût des investissements en actifs corporels et en actifs incorporels relatifs à l’investissement initial ou en faveur d’une nouvelle activité économique, ou ;<mod class="mod-end" for="#pm5"/> <noteRef href="#M5" marker="5"/> </li>
+<li ns3727365:symbol="2.">les coûts salariaux estimés liés à la création d’emplois à la suite de l’investissement initial, calculés sur une période de deux ans, ou;</li>
+<li ns3727365:symbol="3.">une combinaison des coûts visés aux points 1. et 2., pour autant que le montant cumulé n’excède pas le montant le plus élevé des deux.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_18">
+<num>(2)</num>
+<alinea>
+<content>
+<p>On entend par coûts salariaux les montants totaux effectivement à la charge du bénéficiaire de l’aide à l’investissement à finalité régionale pour l’emploi considéré, comprenant, sur une période de temps définie, le salaire brut et les cotisations obligatoires telles que les cotisations de sécurité sociale.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_19">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les conditions dans le cas des coûts éligibles calculés sur base des coûts d’investissement en actifs corporels et en actifs incorporels sont les suivantes:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>les actifs acquis doivent être neufs, excepté lorsqu’ils sont acquis par une petite ou moyenne entreprise ou lorsqu’il s’agit de l’acquisition d’un établissement existant;</li>
+<li>en cas d’acquisition des actifs d’un établissement, seuls les coûts d’acquisition des actifs n’ayant pas déjà bénéficié d’une aide et acquis aux conditions de marché auprès d’un tiers non lié à l’acheteur sont pris en considération;</li>
+<li>les coûts liés à l’acquisition d’actifs corporels sous forme de crédit-bail sont pris en compte à condition que le contrat de crédit-bail prévoie l’obligation pour le bénéficiaire de l’aide d’acheter le bien à l’expiration du contrat de bail;</li>
+<li>les actifs incorporels doivent remplir les conditions suivantes:<ol ns3727365:start="1" ns3727365:symbol="a)">
+<li>être exploités uniquement dans l’établissement bénéficiaire de l’aide;</li>
+<li>être amortissables;</li>
+<li>être acquis au prix du marché auprès d’un tiers non lié à l’acheteur;</li>
+<li>être inclus dans les actifs du bénéficiaire et rester associés au projet pour lequel l’aide est octroyée pendant au moins cinq ans, ou trois ans pour les petites ou moyennes entreprises ;</li>
+<li>avoir un contenu directement technologique. Des actifs incorporels tels que marques, modèles ou « goodwill » qui n’ont pas de contenu directement technologique sont exclus des coûts admissibles.</li>
+</ol> </li>
+<li>les investissements de simple remplacement et les dépenses de fonctionnement ne sont pas des coûts admissibles;</li>
+<li>dans le cas des aides à l’investissement à finalité régionale accordées pour un changement fondamental dans le processus de production, les coûts admissibles doivent excéder l’amortissement cumulé au cours des trois exercices précédents pour les actifs liés à l’activité à moderniser;</li>
+<li>dans le cas des aides à l’investissement à finalité régionale accordées en vue de la diversification des activités d’un établissement existant, les coûts admissibles doivent excéder d’au moins 200 pour cent la valeur comptable des actifs réutilisés, telle qu’enregistrée au cours de l’exercice précédant le début des travaux.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_20">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les coûts salariaux estimés sont admissibles s’ils remplissent les conditions suivantes:</p>
+<ol xmlns:ns3727365="http://www.scl.lu" ns3727365:start="1" ns3727365:symbol="1.">
+<li>le projet d’investissement initial doit conduire à une augmentation nette du nombre de salariés dans l’établissement. On entend par augmentation nette du nombre de salariés toute augmentation nette du nombre de salariés dans l’établissement concerné par rapport à la moyenne au cours d’une période de douze mois. Tout poste supprimé au cours de cette période est à déduire et le nombre de personnes employées à temps plein, à temps partiel et sous contrat saisonnier est à prendre en compte selon les fractions d’unités de travail annuel;</li>
+<li>chaque poste est pourvu dans un délai de trois ans à compter de l’achèvement des travaux;</li>
+<li>chaque emploi créé grâce à l’investissement est maintenu dans la région concernée pendant une période minimale de cinq ans à compter de la date à laquelle le poste a été pourvu pour la première fois, ou pendant une période de trois ans dans le cas de petites ou moyennes entreprises.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_9/20260104</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9. Commission consultative.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-04</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<heading> <b>Commission consultative.</b> </heading>
+<paragraph id="paragraph_21">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est institué une commission consultative qui a pour mission de donner, sur base des critères établis par la présente loi et les règlements grand-ducaux pris en son exécution, un avis sur les demandes d’aide à l’investissement à finalité régionale présentées aux ministres compétents.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_22">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Elle peut s’entourer de tous renseignements utiles, et se faire assister par des experts.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_23" style="del">
+<num>
+<mod class="mod-start" for="#pm10"/>
+<del>(3)</del>
+</num>
+<alinea>
+<content>
+<p>
+<del>Sa composition et son fonctionnement sont déterminés par règlement grand-ducal.</del>
+<mod class="mod-end" for="#pm10"/>
+<noteRef href="#M10" marker="10"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_10/20170728</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10. Restitution des aides perçues et sanctions administratives.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-07-28</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<heading> <b>Restitution des aides perçues et sanctions administratives.</b> </heading>
+<paragraph id="paragraph_24">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L’investissement initial doit être maintenu dans la région concernée pour une période de cinq ans au moins après son achèvement. Dans le cas d’une petite ou moyenne entreprise cette période est ramenée à un minimum de trois ans. Cette condition n’empêche pas le remplacement d’une installation ou d’un équipement devenu obsolète ou endommagé au cours de cette période, pour autant que l’activité économique soit maintenue dans la région considérée pendant la période minimale applicable.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_25">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Chacun des emplois créés grâce à l’investissement doit être maintenu dans la région considérée pour une période de cinq ans à compter de la date à laquelle l’emploi a été pourvu pour la première fois. Dans le cas d’une petite ou moyenne entreprise, cette période est ramenée à un minimum de trois ans.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_26">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le bénéficiaire de l’aide à l’investissement à finalité régionale perd l’avantage lui consenti s’il ne respecte pas les conditions des deux paragraphes précédents. Le bénéficiaire doit rembourser les subventions en capital afférentes aux investissements aliénés, qu’il n’utilise pas ou qu’il cesse d’utiliser aux fins et conditions prévues et celles touchées au titre des emplois non maintenus, qui ont été perçues depuis moins de cinq ans, ou depuis moins de trois ans pour les petites ou moyennes entreprises.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_27">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les employeurs qui ont été condamnés à au moins deux reprises pour contravention aux dispositions interdisant le travail clandestin ou aux dispositions interdisant l’emploi de ressortissants de pays tiers en séjour irrégulier, au cours des quatre dernières années précédant le jugement de la juridiction compétente, sont exclus du bénéfice de la présente loi pendant une durée de trois années à compter de la date de ce jugement.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_11/20170728</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11. Obligations en cas de cessation d’affaires</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-07-28</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11. </num>
+<heading> <b>Obligations en cas de cessation d’affaires</b> </heading>
+<alinea>
+<content>
+<p>Lorsqu’un établissement bénéficiaire d’une aide à l’investissement à finalité régionale cesse volontairement les affaires au cours d’une période de dix ans à partir de l’octroi de l’aide à l’investissement à finalité régionale, que la cession soit totale ou partielle, il doit en informer incessamment les ministres ayant l’Economie et le Travail dans leurs attributions, les délégations du personnel et la commune intéressée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_12/20170728</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12. Dispositions diverses.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-07-28</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<heading> <b>Dispositions diverses.</b> </heading>
+<paragraph id="paragraph_28">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Sous peine de forclusion, les demandes d’aide à l’investissement à finalité régionale doivent être introduites avant le début des travaux et le ministre ayant dans ses attributions l’Economie doit confirmer par écrit avant le début des travaux si, sous réserve de vérifications plus détaillées, le projet remplit en principe les conditions d’admissibilité.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_29">
+<num>(2)</num>
+<alinea>
+<content>
+<p>L’aide à l’investissement à finalité régionale est accordée dans les limites des crédits budgétaires.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_13">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_13</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_13/20170728</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 13. Dispositions pénales.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-07-28</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 13.</num>
+<heading> <b>Dispositions pénales.</b> </heading>
+<alinea>
+<content>
+<p>Les personnes qui ont obtenu un des avantages prévus par la présente loi sur base de renseignements sciemment inexacts ou incomplets sont passibles des peines prévues à l’article 496 du <ref href="/eli/etat/leg/code/penal" id="2b6fdb8d-4b13-4c4d-906c-eddb5620db1e">code pénal</ref>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665/art_14/20170728</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2017/07/12/a665</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14. Durée d’application.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2017-07-28</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<heading> <b>Durée d’application.</b> </heading>
+<alinea>
+<content>
+<p>Les aides à finalité régionale peuvent être accordées aux conditions prévues dans la présente loi jusqu’au 31 décembre 2020.</p>
+</content>
+</alinea>
+</article>
+</body>
+</act>
+</akomaNtoso>

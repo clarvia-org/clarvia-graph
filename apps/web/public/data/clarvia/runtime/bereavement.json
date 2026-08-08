@@ -1,0 +1,1330 @@
+{
+  "life_event": "bereavement",
+  "conditions": [
+    {
+      "id": "condition.lu.bereavement.employment.survivor_is_employee",
+      "title": "Survivor is an employee or apprentice",
+      "expression_language": "jsonlogic",
+      "expression": {
+        "in": [
+          {
+            "var": "survivor.employment_status"
+          },
+          [
+            "employee",
+            "apprentice"
+          ]
+        ]
+      },
+      "missing_fact_behavior": "unknown"
+    },
+    {
+      "id": "condition.lu.bereavement.survivor_pension.relationship_eligible_survivor",
+      "title": "Survivor relationship may be eligible for CNAP survivor pension",
+      "expression_language": "jsonlogic",
+      "expression": {
+        "in": [
+          {
+            "var": "relationship.to_deceased"
+          },
+          [
+            "surviving_spouse",
+            "registered_partner",
+            "child"
+          ]
+        ]
+      },
+      "missing_fact_behavior": "unknown"
+    },
+    {
+      "id": "condition.lu.bereavement.estate_assets.deceased_was_tenant",
+      "title": "Deceased was a tenant",
+      "expression_language": "jsonlogic",
+      "expression": {
+        "==": [
+          {
+            "var": "deceased.housing.was_tenant"
+          },
+          true
+        ]
+      },
+      "missing_fact_behavior": "unknown"
+    },
+    {
+      "id": "condition.lu.bereavement.employment.deceased_was_self_employed",
+      "title": "Deceased was self-employed or a business owner",
+      "expression_language": "jsonlogic",
+      "expression": {
+        "or": [
+          {
+            "in": [
+              "self_employed",
+              {
+                "var": "deceased.employment_status"
+              }
+            ]
+          },
+          {
+            "in": [
+              "business_owner",
+              {
+                "var": "deceased.employment_status"
+              }
+            ]
+          }
+        ]
+      },
+      "missing_fact_behavior": "unknown"
+    },
+    {
+      "id": "condition.lu.bereavement.survivor_pension.deceased_was_lu_insured",
+      "title": "Deceased was insured or pensioned in Luxembourg",
+      "expression_language": "jsonlogic",
+      "expression": {
+        "==": [
+          {
+            "var": "deceased.last_social_security_affiliation.country"
+          },
+          "LU"
+        ]
+      },
+      "missing_fact_behavior": "unknown"
+    },
+    {
+      "id": "condition.lu.bereavement.health_insurance.deceased_was_lu_health_insured",
+      "title": "Deceased was covered by Luxembourg health insurance",
+      "expression_language": "jsonlogic",
+      "expression": {
+        "==": [
+          {
+            "var": "deceased.last_social_security_affiliation.country"
+          },
+          "LU"
+        ]
+      },
+      "missing_fact_behavior": "unknown"
+    },
+    {
+      "id": "condition.lu.bereavement.estate_assets.deceased_owned_vehicle",
+      "title": "Deceased owned a vehicle",
+      "expression_language": "jsonlogic",
+      "expression": {
+        "==": [
+          {
+            "var": "deceased.owned_vehicle"
+          },
+          true
+        ]
+      },
+      "missing_fact_behavior": "unknown"
+    },
+    {
+      "id": "condition.lu.bereavement.death_registration.death_occurred_in_lu",
+      "title": "Death occurred in Luxembourg",
+      "expression_language": "jsonlogic",
+      "expression": {
+        "==": [
+          {
+            "var": "death.place.country"
+          },
+          "LU"
+        ]
+      },
+      "missing_fact_behavior": "unknown"
+    },
+    {
+      "id": "condition.lu.bereavement.inheritance_tax.aed_declaration_may_be_required",
+      "title": "AED declaration may be required",
+      "expression_language": "jsonlogic",
+      "expression": {
+        "or": [
+          {
+            "==": [
+              {
+                "var": "deceased.habitual_residence.country"
+              },
+              "LU"
+            ]
+          },
+          {
+            "in": [
+              "LU",
+              {
+                "var": "estate.asset_location.country"
+              }
+            ]
+          }
+        ]
+      },
+      "missing_fact_behavior": "unknown"
+    }
+  ],
+  "consequences": [
+    {
+      "id": "consequence.lu.bereavement.estate_assets.understand_housing_rights",
+      "title": "Understand housing and lease rights",
+      "consequence_type": "routing_decision",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": [
+          "condition.lu.bereavement.estate_assets.deceased_was_tenant"
+        ]
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.estate_assets.understand_housing_rights"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.legilux_lu.bail_habitation"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.succession.understand_applicable_succession_law",
+      "title": "Understand which succession law may apply",
+      "consequence_type": "routing_decision",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": []
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.succession.understand_applicable_succession_law"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.eu.ejustice_succession"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.estate_assets.transfer_vehicle_registration",
+      "title": "Transfer or handle inherited vehicle registration",
+      "consequence_type": "administrative_step",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": [
+          "condition.lu.bereavement.estate_assets.deceased_owned_vehicle"
+        ]
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.estate_assets.transfer_vehicle_registration"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.lu.snca_inherit_vehicle"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.death_registration.obtain_medical_death_certificate",
+      "title": "Obtain the medical certificate of death",
+      "consequence_type": "administrative_step",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": []
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.death_registration.obtain_medical_death_certificate"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.guichet_lu.declaration_deces"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.employment.notify_ccss_business_matters",
+      "title": "Notify CCSS and handle business matters",
+      "consequence_type": "administrative_step",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": [
+          "condition.lu.bereavement.employment.deceased_was_self_employed"
+        ]
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.employment.notify_ccss_business_matters"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.lu.ccss_cessation"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.estate_assets.notify_banks_trace_assets",
+      "title": "Notify banks and trace financial assets",
+      "consequence_type": "administrative_step",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": []
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.estate_assets.notify_banks_trace_assets"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.lu.cssf_tracing_assets"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.succession.file_inheritance_declaration",
+      "title": "File the AED succession declaration and handle inheritance tax",
+      "consequence_type": "obligation",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": [
+          "condition.lu.bereavement.inheritance_tax.aed_declaration_may_be_required"
+        ]
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.inheritance_tax.file_aed_declaration"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.guichet_lu.inheritance_tax",
+        "source.guichet_lu.declaration_succession",
+        "source.lu.aed_successions"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.inheritance_tax.file_final_income_tax_return",
+      "title": "File the final income tax return if required",
+      "consequence_type": "administrative_step",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": []
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.inheritance_tax.file_final_income_tax_return"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.guichet_lu.income_tax_return"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.succession.engage_notary",
+      "title": "Engage a notary for inheritance evidence",
+      "consequence_type": "administrative_step",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": []
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.succession.engage_notary"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.guichet_lu.declaration_succession"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.death_registration.declare_death",
+      "title": "Declare the death to the commune civil registrar",
+      "consequence_type": "administrative_step",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": [
+          "condition.lu.bereavement.death_registration.death_occurred_in_lu"
+        ]
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.death_registration.file_death_declaration"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.guichet_lu.bereavement"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.succession.decide_accept_or_renounce",
+      "title": "Decide whether to accept, contest, or renounce the inheritance",
+      "consequence_type": "routing_decision",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": []
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.succession.decide_accept_renounce"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.guichet_lu.accept_renounce_succession"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.survivor_pension.claim_survivor_pension",
+      "title": "Apply for CNAP survivor pension",
+      "consequence_type": "right_or_benefit",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": [
+          "condition.lu.bereavement.survivor_pension.deceased_was_lu_insured",
+          "condition.lu.bereavement.survivor_pension.relationship_eligible_survivor"
+        ]
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.survivor_pension.file_cnap_claim"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.lu.cnap_survivor_pension",
+        "source.guichet_lu.bereavement"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.health_insurance.claim_funeral_allowance",
+      "title": "Claim the CNS funeral allowance",
+      "consequence_type": "right_or_benefit",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": [
+          "condition.lu.bereavement.health_insurance.deceased_was_lu_health_insured"
+        ]
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.health_insurance.claim_funeral_allowance"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.guichet_lu.funeral_allowance",
+        "source.cns_lu.death_funeral_costs"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.employment.claim_bereavement_leave",
+      "title": "Claim statutory bereavement leave",
+      "consequence_type": "right_or_benefit",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": [
+          "condition.lu.bereavement.employment.survivor_is_employee"
+        ]
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.employment.claim_bereavement_leave"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.guichet_lu.bereavement_leave"
+      ]
+    },
+    {
+      "id": "consequence.lu.bereavement.funeral.arrange_funeral_or_cremation",
+      "title": "Arrange burial or cremation",
+      "consequence_type": "administrative_step",
+      "jurisdiction": "LU",
+      "distribution_status": "public_open",
+      "trigger": {
+        "condition_refs": []
+      },
+      "task_template_refs": [
+        "task_template.lu.bereavement.funeral.arrange_funeral_or_cremation"
+      ],
+      "confidence": "medium",
+      "source_refs": [
+        "source.guichet_lu.funeral_cremation"
+      ]
+    }
+  ],
+  "task_templates": [
+    {
+      "id": "task_template.lu.bereavement.estate_assets.understand_housing_rights",
+      "title": "Understand housing and lease rights",
+      "action_type": "verify_eligibility",
+      "authority_refs": [
+        "authority.lu.district_court_registry"
+      ],
+      "deadline_refs": [],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.estate_assets.understand_housing_rights.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.lu.proof_cohabitation",
+              "evidence_type.global.death_certificate"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "estate_and_inheritance",
+        "urgency_score": 55,
+        "dependency_rank": 11,
+        "user_visible_caveat": "Lease transfer rules are fact-sensitive; ask landlord/tenant-advice service or legal professional for contested cases."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.succession.understand_applicable_succession_law",
+      "title": "Understand which succession law may apply",
+      "action_type": "gather_information",
+      "authority_refs": [
+        "authority.eu.ejustice_portal"
+      ],
+      "deadline_refs": [],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": []
+      },
+      "rendering": {
+        "checklist_group": "cross_border_issues",
+        "urgency_score": 40,
+        "dependency_rank": 16,
+        "user_visible_caveat": "Display as an information card, not a checkbox. This is not cross-border routing logic for v0.1."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.estate_assets.transfer_vehicle_registration",
+      "title": "Transfer or handle vehicle registration",
+      "action_type": "submit_application",
+      "authority_refs": [
+        "authority.lu.snca",
+        "authority.lu.aed"
+      ],
+      "deadline_refs": [],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.estate_assets.transfer_vehicle_registration.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.lu.aed_attestation_succession",
+              "evidence_type.lu.vehicle_registration_certificate_part1",
+              "evidence_type.lu.vehicle_registration_certificate_part2",
+              "evidence_type.lu.valid_insurance_certificate",
+              "evidence_type.lu.valid_technical_inspection",
+              "evidence_type.lu.transfer_agreement_heirs"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "estate_and_inheritance",
+        "urgency_score": 45,
+        "dependency_rank": 14,
+        "user_visible_caveat": "SNCA uses AED attestation of succession; do not model this as always requiring a notarial acte de notoriété."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.death_registration.obtain_medical_death_certificate",
+      "title": "Obtain the medical certificate of death",
+      "action_type": "obtain_document",
+      "authority_refs": [
+        "authority.lu.bureau_etat_civil"
+      ],
+      "deadline_refs": [],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": []
+      },
+      "rendering": {
+        "checklist_group": "immediate_formalities",
+        "urgency_score": 100,
+        "dependency_rank": 1
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.employment.notify_ccss_business_matters",
+      "title": "Notify CCSS and handle business matters",
+      "action_type": "notify_authority",
+      "authority_refs": [
+        "authority.lu.ccss",
+        "authority.lu.ministry_economy_business_permits"
+      ],
+      "deadline_refs": [],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": []
+      },
+      "rendering": {
+        "checklist_group": "employment_and_tax",
+        "urgency_score": 78,
+        "dependency_rank": 5,
+        "user_visible_caveat": "Treat the Ministry of Economy 1-month deadline as TODO until the source anchor is reviewed."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.estate_assets.notify_banks_trace_assets",
+      "title": "Notify banks and trace financial assets",
+      "action_type": "notify_authority",
+      "authority_refs": [
+        "authority.lu.cssf"
+      ],
+      "deadline_refs": [],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.estate_assets.notify_banks_trace_assets.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.global.death_certificate",
+              "evidence_type.global.identity_document",
+              "evidence_type.lu.acte_de_notoriete"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "estate_and_inheritance",
+        "urgency_score": 75,
+        "dependency_rank": 7,
+        "user_visible_caveat": "Bank-freeze and fee details vary by institution; do not quote amounts until bank-specific official sources are captured."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.inheritance_tax.file_aed_declaration",
+      "title": "File the AED succession declaration and handle inheritance tax",
+      "action_type": "file_declaration",
+      "authority_refs": [
+        "authority.lu.aed"
+      ],
+      "deadline_refs": [
+        "deadline.lu.bereavement.inheritance_tax.succession_declaration_6mo"
+      ],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.inheritance_tax.file_aed_declaration.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.global.death_certificate",
+              "evidence_type.lu.succession_declaration"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "estate_and_inheritance",
+        "urgency_score": 58,
+        "dependency_rank": 13,
+        "user_visible_caveat": "Direct line and qualifying spouse/partner legal shares can be exempt; extra-legal shares and other heirs need tax review."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.inheritance_tax.file_final_income_tax_return",
+      "title": "File the final income tax return if required",
+      "action_type": "submit_application",
+      "authority_refs": [
+        "authority.lu.acd"
+      ],
+      "deadline_refs": [
+        "deadline.lu.bereavement.inheritance_tax.final_tax_return_31dec_next_year"
+      ],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.inheritance_tax.file_final_income_tax_return.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.lu.tax_return_form_100"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "employment_and_tax",
+        "urgency_score": 35,
+        "dependency_rank": 15,
+        "user_visible_caveat": "Corrected from the prompt: current official guidance says 31 December of the year following the tax year, not 31 March."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.succession.engage_notary",
+      "title": "Engage a notary where inheritance evidence or complex estate handling is needed",
+      "action_type": "contact_professional",
+      "authority_refs": [
+        "authority.lu.chambre_notaires",
+        "authority.lu.aed"
+      ],
+      "deadline_refs": [],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.succession.engage_notary.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.global.death_certificate",
+              "evidence_type.global.identity_document",
+              "evidence_type.lu.acte_de_notoriete"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "estate_and_inheritance",
+        "urgency_score": 62,
+        "dependency_rank": 10,
+        "user_visible_caveat": "Do not show notary fee estimates until official tariff/fee sources are captured."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.death_registration.file_death_declaration",
+      "title": "Register the death at the commune and request death-certificate copies",
+      "action_type": "file_declaration",
+      "authority_refs": [
+        "authority.lu.bureau_etat_civil",
+        "authority.lu.vdl_bierger_center"
+      ],
+      "deadline_refs": [
+        "deadline.lu.bereavement.death_registration.declaration_deadline"
+      ],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.death_registration.file_death_declaration.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.lu.medical_death_certificate",
+              "evidence_type.lu.identity_document_deceased",
+              "evidence_type.lu.livret_de_famille"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "immediate_formalities",
+        "urgency_score": 100,
+        "dependency_rank": 2,
+        "user_visible_caveat": "Request 10–15 multilingual copies if available; commune copy fees still need municipality-level verification."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.succession.decide_accept_renounce",
+      "title": "Decide whether to accept, contest, or renounce the inheritance",
+      "action_type": "verify_eligibility",
+      "authority_refs": [
+        "authority.lu.district_court_registry",
+        "authority.lu.aed"
+      ],
+      "deadline_refs": [
+        "deadline.lu.bereavement.succession.inventory_3mo",
+        "deadline.lu.bereavement.succession.reflection_40d"
+      ],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": []
+      },
+      "rendering": {
+        "checklist_group": "estate_and_inheritance",
+        "urgency_score": 60,
+        "dependency_rank": 12,
+        "user_visible_caveat": "This is legal-choice information, not advice; recommend professional review if debts, disputes, or minors are involved."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.survivor_pension.file_cnap_claim",
+      "title": "Apply for the CNAP survivor pension",
+      "action_type": "submit_application",
+      "authority_refs": [
+        "authority.lu.cnap"
+      ],
+      "deadline_refs": [],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.survivor_pension.file_cnap_claim.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.global.death_certificate",
+              "evidence_type.global.marriage_certificate",
+              "evidence_type.global.rib",
+              "evidence_type.global.school_certificate"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "money_and_benefits",
+        "urgency_score": 68,
+        "dependency_rank": 9,
+        "user_visible_caveat": "Processing-time and trimestre de faveur details still need exact CNAP/legal-source anchoring before display."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.health_insurance.claim_funeral_allowance",
+      "title": "Claim the CNS funeral allowance",
+      "action_type": "submit_application",
+      "authority_refs": [
+        "authority.lu.cns"
+      ],
+      "deadline_refs": [],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.health_insurance.claim_funeral_allowance.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.lu.funeral_invoice_paid",
+              "evidence_type.global.death_certificate",
+              "evidence_type.global.rib",
+              "evidence_type.global.proof_of_payment"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "money_and_benefits",
+        "urgency_score": 70,
+        "dependency_rank": 8,
+        "user_visible_caveat": "Amount source conflict: use the newer Guichet amount (1,289.91 EUR) for alpha display, but keep CNS amount assertion in review."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.employment.claim_bereavement_leave",
+      "title": "Claim bereavement leave from your employer",
+      "action_type": "submit_application",
+      "authority_refs": [
+        "authority.lu.employer"
+      ],
+      "deadline_refs": [
+        "deadline.lu.bereavement.employment.bereavement_leave_at_event"
+      ],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": []
+      },
+      "rendering": {
+        "checklist_group": "employment_and_tax",
+        "urgency_score": 85,
+        "dependency_rank": 4,
+        "user_visible_caveat": "Leave is normally taken at the time of the event; duration depends on relationship."
+      }
+    },
+    {
+      "id": "task_template.lu.bereavement.funeral.arrange_funeral_or_cremation",
+      "title": "Arrange burial or cremation",
+      "action_type": "contact_professional",
+      "authority_refs": [
+        "authority.lu.bureau_etat_civil",
+        "authority.lu.medecin_inspecteur_sante"
+      ],
+      "deadline_refs": [
+        "deadline.lu.bereavement.funeral.funeral_cremation_72h"
+      ],
+      "evidence_requirements": {
+        "satisfy_if": "any_set_satisfied",
+        "sets": [
+          {
+            "id": "evidence_set.lu.bereavement.funeral.arrange_funeral_or_cremation.standard",
+            "operator": "all",
+            "evidence_type_refs": [
+              "evidence_type.lu.burial_or_cremation_authorisation",
+              "evidence_type.lu.cremation_intent_proof",
+              "evidence_type.lu.non_violent_death_certificate",
+              "evidence_type.lu.pacemaker_certificate"
+            ]
+          }
+        ]
+      },
+      "rendering": {
+        "checklist_group": "immediate_formalities",
+        "urgency_score": 95,
+        "dependency_rank": 3,
+        "user_visible_caveat": "Burial/cremation is normally within 24–72 hours; extensions need a médecin-inspecteur certificate."
+      }
+    }
+  ],
+  "authorities": [
+    {
+      "id": "authority.lu.district_court_registry",
+      "name": "Greffe du tribunal d'arrondissement",
+      "name_en": "District court registry",
+      "name_de": "Geschäftsstelle des Bezirksgerichts"
+    },
+    {
+      "id": "authority.eu.ejustice_portal",
+      "name": "Portail européen e-Justice",
+      "name_en": "European e-Justice Portal",
+      "name_de": "Europäisches Justizportal"
+    },
+    {
+      "id": "authority.lu.snca",
+      "name": "Société nationale de circulation automobile",
+      "name_en": "National Society of Automotive Traffic",
+      "name_de": "Nationale Gesellschaft für Kraftfahrzeugverkehr"
+    },
+    {
+      "id": "authority.lu.aed",
+      "name": "Administration de l'enregistrement, des domaines et de la TVA",
+      "name_en": "Registration Duties, Estates and VAT Authority",
+      "name_de": "Einregistrierungs-, Domänen- und Mehrwertsteuerverwaltung"
+    },
+    {
+      "id": "authority.lu.bureau_etat_civil",
+      "name": "Bureau de l'état civil",
+      "name_en": "Civil registrar's office",
+      "name_de": "Standesamt"
+    },
+    {
+      "id": "authority.lu.ccss",
+      "name": "Centre commun de la sécurité sociale",
+      "name_en": "Joint Social Security Centre",
+      "name_de": "Gemeinsames Zentrum der Sozialversicherung"
+    },
+    {
+      "id": "authority.lu.ministry_economy_business_permits",
+      "name": "Ministère de l'Économie — autorisations d'établissement",
+      "name_en": "Ministry of the Economy — business permits",
+      "name_de": "Wirtschaftsministerium — Niederlassungsgenehmigungen"
+    },
+    {
+      "id": "authority.lu.cssf",
+      "name": "Commission de Surveillance du Secteur Financier",
+      "name_en": "Financial Sector Supervisory Commission",
+      "name_de": "Finanzaufsichtskommission"
+    },
+    {
+      "id": "authority.lu.acd",
+      "name": "Administration des contributions directes",
+      "name_en": "Luxembourg Inland Revenue",
+      "name_de": "Verwaltung der direkten Steuern"
+    },
+    {
+      "id": "authority.lu.chambre_notaires",
+      "name": "Chambre des Notaires du Grand-Duché de Luxembourg",
+      "name_en": "Chamber of Notaries of Luxembourg",
+      "name_de": "Notarkammer Luxemburg"
+    },
+    {
+      "id": "authority.lu.vdl_bierger_center",
+      "name": "Bierger-Center — Ville de Luxembourg",
+      "name_en": "Bierger-Center — City of Luxembourg",
+      "name_de": "Bierger-Center — Stadt Luxemburg"
+    },
+    {
+      "id": "authority.lu.cnap",
+      "name": "Caisse nationale d'assurance pension",
+      "name_en": "National Pension Insurance Fund",
+      "name_de": "Nationale Pensionsversicherungsanstalt"
+    },
+    {
+      "id": "authority.lu.cns",
+      "name": "Caisse nationale de santé",
+      "name_en": "National Health Fund",
+      "name_de": "Nationale Gesundheitskasse"
+    },
+    {
+      "id": "authority.lu.employer",
+      "name": "Employeur",
+      "name_en": "Employer",
+      "name_de": "Arbeitgeber"
+    },
+    {
+      "id": "authority.lu.medecin_inspecteur_sante",
+      "name": "Médecin-inspecteur — Direction de la santé",
+      "name_en": "Medical inspector — Health Directorate",
+      "name_de": "Amtsarzt — Gesundheitsdirektion"
+    }
+  ],
+  "deadlines": [
+    {
+      "id": "deadline.lu.bereavement.inheritance_tax.succession_declaration_6mo",
+      "title": "File succession declaration within 6 months",
+      "deadline_type": "filing_deadline",
+      "calculation": {
+        "kind": "relative",
+        "duration": "P6M",
+        "starts_from_fact": "death.date",
+        "calendar": "civil",
+        "if_weekend_or_holiday": "unknown"
+      }
+    },
+    {
+      "id": "deadline.lu.bereavement.inheritance_tax.final_tax_return_31dec_next_year",
+      "title": "File income tax return by 31 December of following year",
+      "deadline_type": "filing_deadline",
+      "calculation": {
+        "kind": "conditional",
+        "calendar": "civil"
+      }
+    },
+    {
+      "id": "deadline.lu.bereavement.death_registration.declaration_deadline",
+      "title": "Declare death within 24 hours",
+      "deadline_type": "filing_deadline",
+      "calculation": {
+        "kind": "relative",
+        "duration": "PT24H",
+        "starts_from_fact": "death.datetime",
+        "calendar": "civil",
+        "if_weekend_or_holiday": "unknown"
+      }
+    },
+    {
+      "id": "deadline.lu.bereavement.succession.inventory_3mo",
+      "title": "Make inventory within 3 months",
+      "deadline_type": "filing_deadline",
+      "calculation": {
+        "kind": "relative",
+        "duration": "P3M",
+        "starts_from_fact": "death.date",
+        "calendar": "civil",
+        "if_weekend_or_holiday": "unknown"
+      }
+    },
+    {
+      "id": "deadline.lu.bereavement.succession.reflection_40d",
+      "title": "Reflect for 40 days after inventory period",
+      "deadline_type": "validity_period",
+      "calculation": {
+        "kind": "relative",
+        "duration": "P40D",
+        "starts_from_fact": "succession.inventory_period_end_date",
+        "calendar": "civil",
+        "if_weekend_or_holiday": "unknown"
+      }
+    },
+    {
+      "id": "deadline.lu.bereavement.employment.bereavement_leave_at_event",
+      "title": "Take bereavement leave at the event",
+      "deadline_type": "validity_period",
+      "calculation": {
+        "kind": "relative",
+        "duration": "P0D",
+        "starts_from_fact": "death.date",
+        "calendar": "civil",
+        "if_weekend_or_holiday": "unknown"
+      }
+    },
+    {
+      "id": "deadline.lu.bereavement.funeral.funeral_cremation_72h",
+      "title": "Complete burial/cremation handling within 72 hours",
+      "deadline_type": "filing_deadline",
+      "calculation": {
+        "kind": "relative",
+        "duration": "PT72H",
+        "starts_from_fact": "death.datetime",
+        "calendar": "civil",
+        "if_weekend_or_holiday": "unknown"
+      }
+    }
+  ],
+  "evidence_types": [
+    {
+      "id": "evidence_type.lu.proof_cohabitation",
+      "canonical_name": "Preuve de cohabitation",
+      "synonyms": [
+        "proof of living together",
+        "domestic community evidence"
+      ]
+    },
+    {
+      "id": "evidence_type.global.death_certificate",
+      "canonical_name": "Death certificate",
+      "synonyms": [
+        "acte de décès",
+        "Sterbeurkunde",
+        "death-certificate extract"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.aed_attestation_succession",
+      "canonical_name": "Attestation de succession AED",
+      "synonyms": [
+        "AED certificate of succession",
+        "attestation of succession"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.vehicle_registration_certificate_part1",
+      "canonical_name": "Certificat d'immatriculation — partie 1",
+      "synonyms": [
+        "vehicle registration certificate part 1",
+        "car logbook part 1"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.vehicle_registration_certificate_part2",
+      "canonical_name": "Certificat d'immatriculation — partie 2",
+      "synonyms": [
+        "vehicle registration certificate part 2",
+        "car logbook part 2"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.valid_insurance_certificate",
+      "canonical_name": "Certificat d'assurance valable",
+      "synonyms": [
+        "valid insurance certificate",
+        "proof of insurance"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.valid_technical_inspection",
+      "canonical_name": "Contrôle technique valable",
+      "synonyms": [
+        "valid MOT",
+        "valid technical inspection"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.transfer_agreement_heirs",
+      "canonical_name": "Accord de cession signé par les héritiers",
+      "synonyms": [
+        "signed transfer agreement",
+        "agreement of heirs"
+      ]
+    },
+    {
+      "id": "evidence_type.global.identity_document",
+      "canonical_name": "Identity document",
+      "synonyms": [
+        "document d'identité",
+        "pièce d'identité",
+        "Ausweisdokument",
+        "passport",
+        "ID card"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.acte_de_notoriete",
+      "canonical_name": "Acte de notoriété",
+      "synonyms": [
+        "certificate of inheritance",
+        "Erbschein / Erbnachweis",
+        "notarial certificate of inheritance"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.succession_declaration",
+      "canonical_name": "Déclaration de succession ou de mutation par décès",
+      "synonyms": [
+        "inheritance declaration",
+        "succession declaration"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.tax_return_form_100",
+      "canonical_name": "Déclaration impôt sur le revenu — Modèle 100",
+      "synonyms": [
+        "Form 100",
+        "income tax return form"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.medical_death_certificate",
+      "canonical_name": "Attestation médicale de décès",
+      "synonyms": [
+        "déclaration de décès",
+        "certificat médical de décès",
+        "medical certificate of death"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.identity_document_deceased",
+      "canonical_name": "Document d'identité du défunt",
+      "synonyms": [
+        "identity document of the deceased",
+        "Ausweisdokument des Verstorbenen"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.livret_de_famille",
+      "canonical_name": "Livret de famille",
+      "synonyms": [
+        "family record book",
+        "Familienstammbuch"
+      ]
+    },
+    {
+      "id": "evidence_type.global.marriage_certificate",
+      "canonical_name": "Marriage certificate",
+      "synonyms": [
+        "acte de mariage",
+        "Heiratsurkunde"
+      ]
+    },
+    {
+      "id": "evidence_type.global.rib",
+      "canonical_name": "Bank-account details / RIB",
+      "synonyms": [
+        "relevé d'identité bancaire",
+        "RIB",
+        "IBAN statement"
+      ]
+    },
+    {
+      "id": "evidence_type.global.school_certificate",
+      "canonical_name": "School certificate",
+      "synonyms": [
+        "certificat scolaire",
+        "Schulbescheinigung"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.funeral_invoice_paid",
+      "canonical_name": "Factures funéraires acquittées",
+      "synonyms": [
+        "paid funeral invoices",
+        "original paid funeral invoices",
+        "quittierte Bestattungsrechnungen"
+      ]
+    },
+    {
+      "id": "evidence_type.global.proof_of_payment",
+      "canonical_name": "Proof of payment",
+      "synonyms": [
+        "preuve de paiement",
+        "payment proof",
+        "Zahlungsnachweis"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.burial_or_cremation_authorisation",
+      "canonical_name": "Autorisation d'inhumation ou de dépôt des cendres",
+      "synonyms": [
+        "burial permit",
+        "cremation/burial authorisation",
+        "Bestattungsgenehmigung"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.cremation_intent_proof",
+      "canonical_name": "Preuve de la volonté d'être incinéré",
+      "synonyms": [
+        "written proof of intent to be cremated",
+        "crémation volonté défunt"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.non_violent_death_certificate",
+      "canonical_name": "Attestation médicale de mort non violente",
+      "synonyms": [
+        "medical certificate of non-violent death",
+        "Bescheinigung eines nicht gewaltsamen Todes"
+      ]
+    },
+    {
+      "id": "evidence_type.lu.pacemaker_certificate",
+      "canonical_name": "Certificat pacemaker",
+      "synonyms": [
+        "pace-maker certificate",
+        "pacemaker certificate"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source.legilux_lu.bail_habitation",
+      "title": "Modified law of 21 September 2006 on residential leases",
+      "url": "https://legilux.public.lu/eli/etat/leg/loi/2006/09/21/n1/consolide/20240801",
+      "publisher": "Service central de législation"
+    },
+    {
+      "id": "source.eu.ejustice_succession",
+      "title": "Succession",
+      "url": "https://e-justice.europa.eu/166/EN/succession",
+      "publisher": "European e-Justice Portal"
+    },
+    {
+      "id": "source.lu.snca_inherit_vehicle",
+      "title": "Inherit a vehicle",
+      "url": "https://snca.public.lu/fr/vehicules/immatriculation/heriter-vehicule.html",
+      "publisher": "SNCA (Soci├®t├® Nationale de Circulation Automobile)"
+    },
+    {
+      "id": "source.guichet_lu.declaration_deces",
+      "title": "Reporting the death of a loved one",
+      "url": "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/declaration-deces.html",
+      "publisher": "Guichet.lu (Luxembourg Government)"
+    },
+    {
+      "id": "source.lu.ccss_cessation",
+      "title": "Self-employed cessation of activity",
+      "url": "https://ccss.public.lu/fr/independants/commencer-arreter-activite/suspendre-arreter-activite.html",
+      "publisher": "CCSS (Centre Commun de la S├®curit├® Sociale)"
+    },
+    {
+      "id": "source.lu.cssf_tracing_assets",
+      "title": "Tracing assets",
+      "url": "https://www.cssf.lu/en/tracing-assets/",
+      "publisher": "CSSF (Commission de Surveillance du Secteur Financier)"
+    },
+    {
+      "id": "source.guichet_lu.inheritance_tax",
+      "title": "Inheritance and succession tax",
+      "url": "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/droits-succession-heritage.html",
+      "publisher": "Guichet.lu (Luxembourg Government)"
+    },
+    {
+      "id": "source.guichet_lu.declaration_succession",
+      "title": "Declaration of inheritance or transfer on death",
+      "url": "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/declaration-succession.html",
+      "publisher": "Guichet.lu (Luxembourg Government)"
+    },
+    {
+      "id": "source.lu.aed_successions",
+      "title": "Successions",
+      "url": "https://pfi.public.lu/fr/citoyen/successions.html",
+      "publisher": "AED (Administration de l'Enregistrement, des Domaines et de la TVA)"
+    },
+    {
+      "id": "source.guichet_lu.income_tax_return",
+      "title": "Income tax return",
+      "url": "https://guichet.public.lu/fr/citoyens/fiscalite/declaration-impot-decompte/activite-professionnelle/declaration-revenus/declaration-impot.html",
+      "publisher": "Guichet.lu (Luxembourg Government)"
+    },
+    {
+      "id": "source.guichet_lu.bereavement",
+      "title": "Dealing with the death of a loved one",
+      "url": "https://guichet.public.lu/en/citoyens/life-event/famille-education/deces-proche.html",
+      "publisher": "Guichet.lu (Luxembourg Government)"
+    },
+    {
+      "id": "source.guichet_lu.accept_renounce_succession",
+      "title": "Accept or renounce a succession",
+      "url": "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/acceptation-refus-succession.html",
+      "publisher": "Guichet.lu (Luxembourg Government)"
+    },
+    {
+      "id": "source.lu.cnap_survivor_pension",
+      "title": "Survivor pension",
+      "url": "https://cnap.public.lu/fr/pensions/pension-survie.html",
+      "publisher": "CNAP (Caisse Nationale d'Assurance Pension)"
+    },
+    {
+      "id": "source.guichet_lu.funeral_allowance",
+      "title": "Funeral allowance",
+      "url": "https://guichet.public.lu/fr/citoyens/aides/sante/prestations-survivants/indemnite-funeraire.html",
+      "publisher": "Guichet.lu (Luxembourg Government)"
+    },
+    {
+      "id": "source.cns_lu.death_funeral_costs",
+      "title": "Death and funeral costs",
+      "url": "https://cns.public.lu/fr/assure/droits-demarches/dossiers-thematiques/famille/deces-frais-funeraires.html",
+      "publisher": "CNS (Caisse Nationale de Sant├®)"
+    },
+    {
+      "id": "source.guichet_lu.bereavement_leave",
+      "title": "Extraordinary leave for personal reasons",
+      "url": "https://guichet.public.lu/fr/citoyens/sante/fin-vie/deces/conge-extraordinaire.html",
+      "publisher": "Guichet.lu (Luxembourg Government)"
+    },
+    {
+      "id": "source.guichet_lu.funeral_cremation",
+      "title": "Burial or cremation",
+      "url": "https://guichet.public.lu/fr/citoyens/famille-education/succession/deces/enterrement-incineration.html",
+      "publisher": "Guichet.lu (Luxembourg Government)"
+    }
+  ]
+}

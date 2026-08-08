@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-04-01" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MEN"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-04-01" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2011-04-01" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2015-06-09</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2011-04-01</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1546</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo/fr</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2011-04-15</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a66</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2011A1108A</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2011-04-11</scl:jolux>
+						<scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://www.w3.org/ns/prov#Entity</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="draft">/eli/etat/proj/pr/20100281</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 09/06/2015 : Règlement grand-ducal du 1er avril 2011 déterminant les critères de classement ainsi que les modalités des procédures d'affectation et de réaffectation des éducateurs gradués et des éducateurs de l'enseignement fondamental.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/2009/02/06/n4/jo</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2011-66-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a66/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2011-04-01-n12-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2011-66-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2011/a66/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2011/a66/fr/pdf/eli-etat-leg-memorial-2011-a66-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2011-04-01" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2015-06-09" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2015/05/31/n14/jo"/>
+						<destination href="#art_7"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2011/04/01/n12/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2015/05/31/n14/jo" id="rp2" showAs="Règlement grand-ducal du 31 mai 2015 modifiant le règlement grand-ducal du 1er avril 2011 déterminant les critères de classement ainsi que les modalités des procédures d'affectation et de réaffectation des éducateurs gradués et des éducateurs de l'enseignement fondamental."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2015-06-05|2015-05-31|RGD|98">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/05/31/n14/jo">Règlement grand-ducal du 31 mai 2015 modifiant le règlement grand-ducal du 1er avril 2011 déterminant les critères de classement ainsi que les modalités des procédures d'affectation et de réaffectation des éducateurs gradués et des éducateurs de l'enseignement fondamental.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 09/06/2015 : Règlement grand-ducal du 1<sup>er</sup> avril 2011 déterminant les critères de classement ainsi que les modalités des procédures d’affectation et de réaffectation des éducateurs gradués et des éducateurs de l’enseignement fondamental.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_1er">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_1er</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_1er/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 1<sup>er</sup>.</num>
+				<alinea>
+					<content>
+						<p>Le membre du Gouvernement ayant l’Éducation nationale dans ses attributions, désigné ci-après par le terme «le ministre», procède annuellement aux réaffectations des fonctionnaires et employés de l’État des carrières de l’éducateur gradué et de l’éducateur ainsi qu’aux affectations des fonctionnaires-stagiaires et employés de l’État des mêmes carrières aux postes vacants dans l’enseignement fondamental dans le cadre de deux listes de postes vacants.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>La publication des listes de postes vacants d’éducateur gradué et d’éducateur se fait sur le site Internet du ministère de l’Éducation nationale, désigné ci-après par le terme «le ministère», ou par tout autre moyen approprié.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Aux fins de l’établissement de ces deux listes, les autorités communales font parvenir à l’inspecteur d’arrondissement concerné les informations relatives aux postes vacants, tels qu’ils se dégagent de leur proposition d’organisation scolaire pour l’année scolaire subséquente. L’inspecteur d’arrondissement les transmet avec son avis au ministre.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_2">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_2</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_2/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 2.</num>
+				<alinea>
+					<content>
+						<p>Sur la première liste des postes vacants, le ministre publie les postes autorisés dans le cadre de la planification des besoins en personnel éducatif en vertu de l’article 33 de la <ref href="/eli/etat/leg/loi/2009/02/06/n4/jo" id="48b68879-8c1a-4100-8447-afc3a6d9322f">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental, pour les communes, les syndicats scolaires, les écoles et les classes de l’État ainsi que les bureaux d’inspection. La première liste des postes vacants paraîtra annuellement pour le 1<sup>er</sup> juin au plus tard.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Seuls les fonctionnaires de l’État des carrières de l’éducateur et de l’éducateur gradué désireux de se faire réaffecter peuvent postuler pour les postes vacants énumérés sur cette première liste.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_3">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_3</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_3/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 3.</num>
+				<alinea>
+					<content>
+						<p>Les candidats à la réaffectation adressent leur demande soit à l’inspecteur d’arrondissement concerné s’ils briguent un poste dans une commune ou un syndicat scolaire, soit au ministre s’ils briguent un poste dans une école ou une classe de l’État ou bien à un bureau d’inspection.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_4">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_4</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_4/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 4.</num>
+				<alinea>
+					<content>
+						<p>Les candidats à la réaffectation doivent présenter une demande séparée pour chaque poste pour lequel ils se portent candidat. Toute demande de poste se fait sur formulaire dont la forme est arrêtée par le ministre.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les candidats joignent à chaque demande les pièces à l’appui suivantes:</p>
+						<ol scl:space-item="5" scl:space-num="5" scl:start="1" scl:symbol="1.">
+							<li>la copie de leur diplôme d’éducateur gradué ou d’éducateur, tel que défini à l’article 13 de la <ref href="/eli/etat/leg/loi/2009/02/06/n4/jo" id="890ba7fc-e262-4a4e-90b1-64dadc246f79">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental;</li>
+							<li>les notes d’inspection des deux dernières années scolaires précédant la date de la candidature ou une copie de ces notes. Celles-ci sont communiquées au candidat sur demande par l’inspecteur d’arrondissement qui les a établies. Les candidats qui ne sont en fonction que depuis une année présentent les notes de l’année courante;</li>
+							<li>les certificats, ou une copie de ces certificats justifiant les années de service prestées auprès de l’État;</li>
+							<li>la liste de l’ordre de leurs préférences, qui est identique pour chaque demande, et qui est jointe en triple exemplaire à chaque demande.</li>
+						</ol>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les demandes avec pièces à l’appui doivent parvenir respectivement à l’inspecteur et au ministre dans le délai prescrit lors de la publication de la liste.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Respectivement l’inspecteur et le ministre vérifient la recevabilité de chaque demande reçue. Les candidatures qui parviennent après le délai prescrit ne sont pas prises en considération.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>L’inspecteur transmet les demandes de postes relevant de communes ou de syndicats scolaires, munies de la liste de l’ordre des préférences des candidats, aux autorités concernées. L’inspecteur garde un exemplaire de chaque liste de préférences et en transmet un autre au ministre.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_5">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_5</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_5/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 5.</num>
+				<alinea>
+					<content>
+						<p>Pour chaque poste vacant, respectivement l’inspecteur d’arrondissement et le ministre établissent le classement des candidats d’après le total des points attribués selon les critères suivants:</p>
+						<ol scl:space-item="5" scl:space-num="5" scl:start="1" scl:symbol="1.">
+							<li>une note d’inspection qui résulte de la somme de deux notes qui portent d’un côté sur les compétences professionnelles de l’éducateur gradué ou bien de l’éducateur et de l’autre sur l’engagement professionnel dont il fait preuve. Chacun des deux domaines est coté sur une échelle allant de 5 à 10 points; la moyenne des points répondant aux notes d’inspection des deux dernières années précédant la date de la candidature est à prendre en compte; si le candidat n’est en service que depuis une année, les notes d’inspection de cette seule année sont prises en compte;</li>
+							<li>l’ancienneté de service auprès de l’État pour laquelle il sera compté un point par année de service.</li>
+						</ol>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Si le total des points attribués à un candidat conformément aux points 1 et 2 ci-dessus renferme une fraction de points, celle-ci n’est pas à arrondir.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Le fonctionnaire de la carrière de l’éducateur gradué ou de l’éducateur qui interrompt son service est censé demander et conserver les notes d’inspection. Le fonctionnaire qui reprend son service présente les notes de sa dernière année de service.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>S’il ne peut pas présenter ces notes, il lui est attribué une note d’inspection de 10 points.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_6">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_6</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_6/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 6.</num>
+				<alinea>
+					<content>
+						<p>Respectivement les conseils communaux et les comités des syndicats scolaires procèdent aux propositions de réaffectation des candidats au plus tôt trois jours francs après le délai fixé par le ministre pour le dépôt des candidatures, en opérant leur choix entre tous les candidats ayant postulé pour un même poste. Ils transmettent au ministre et avant le 20 juin, pour chaque poste vacant, copie de la délibération consignant leur proposition munie des pièces à l’appui de la candidature retenue.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Le ministre réaffecte les candidats qui lui ont été proposés par les autorités des communes et des syndicats scolaires. Au cas où plusieurs communes ou syndicats scolaires auraient proposé le même candidat, celui-ci est réaffecté à la commune ou au syndicat scolaire pour lequel il a exprimé un choix prioritaire. Les communes et les syndicats scolaires, ainsi que les candidats réaffectés, sont informés sans délai de la décision ministérielle.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Le ministre procède aux réaffectations des candidats aux postes vacants des écoles ou classes de l’État et des bureaux d’inspection avant le 20 juin.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_7">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_7</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_7/20150609</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2015-06-09</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 7.</num>
+				<alinea>
+					<content>
+						<p>
+							<mod class="mod-start" for="#pm1"/>Si à l’expiration du terme découlant d’un congé sans traitement ou d’un congé pour travail à mi-temps, il n’y a pas de vacance de poste correspondant à sa qualification dans sa commune ou son syndicat scolaire d’affectation, le fonctionnaire de la carrière de l’éducateur gradué ou de l’éducateur concerné, suite à sa demande et après avoir été entendu par le ministre ou son délégué en ses observations, est réaffecté d’office dans une commune, un syndicat scolaire, dans une école ou une classe de l’État ou à un bureau d’inspection du même arrondissement d’inspection ou, si aucun poste n’est vacant dans cet arrondissement, dans une commune ou un syndicat scolaire, dans une école ou une classe de l’État ou à un bureau d’inspection d’un arrondissement d’inspection avoisinant.<mod class="mod-end" for="#pm1"/>
+							<noteRef href="#M1" marker="1"/>
+						</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Si le nombre d’agents de la carrière de l’éducateur gradué ou de l’éducateur affectés à une commune ou un syndicat scolaire est diminué et qu’il n’y ait pas de demande de réaffectation volontaire de la part d’un agent concerné de la carrière de l’éducateur gradué ou de l’éducateur, l’agent dont l’ancienneté de service, acquise dans l’enseignement auprès de l’État et auprès d’une commune ou d’un syndicat scolaire, le cas échéant, est la moins élevée sera réaffecté d’office selon la procédure arrêtée à l’alinéa ci-dessus.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_8">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_8</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_8/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 8.</num>
+				<alinea>
+					<content>
+						<p>À l’issue des réaffectations effectuées pour occuper les vacances énumérées sur la première liste, le ministre constate, pour chaque commune ou syndicat scolaire et pour les écoles ou les classes de l’État ainsi que pour les bureaux d’inspection, les besoins subsistant en postes.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Il fait publier sur une deuxième liste les postes qui restent vacants. La deuxième liste des postes vacants est publiée pour le 5 juillet au plus tard sur le site Internet du ministère ou par tout autre moyen approprié.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les demandes sont faites sur formulaire dont la forme est arrêtée par le ministre. Elles doivent parvenir au ministre, qui en vérifie la recevabilité, dans le délai prescrit lors de la publication des vacances de poste d’éducateur gradué ou d’éducateur avec les pièces à l’appui requises, mentionnées à l’article 9 ci-dessous.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_9">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_9</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_9/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 9.</num>
+				<alinea>
+					<content>
+						<p>Peuvent présenter une demande d’affectation ou de réaffectation après la publication de la deuxième liste des postes vacants d’éducateur gradué ou d’éducateur:</p>
+						<ol scl:space-item="5" scl:space-num="5" scl:start="1" scl:symbol="1.">
+							<li>les éducateurs gradués ou éducateurs nouvellement admis au stage de ces fonctions auprès de l’État;</li>
+							<li>les employés de l’État de la carrière de l’éducateur gradué ou de l’éducateur dans l’enseignement fondamental;</li>
+							<li>des détenteurs d’un diplôme d’éducateur gradué ou d’éducateur, postulant une admission comme employé au service de l’État dans la carrière respective.</li>
+						</ol>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Tous les candidats sub 1, 2 et 3 doivent joindre à leur demande, faite sur un formulaire dont la forme est arrêtée par le ministre, une liste précisant l’ordre de leurs préférences pour les différents postes vacants qu’ils briguent.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les postulants sub 1 joignent à leur demande copie de leur diplôme d’éducateur gradué ou d’éducateur tel que défini à l’article 13 de la <ref href="/eli/etat/leg/loi/2009/02/06/n4/jo" id="2de7026a-64bd-4172-b904-222846dddef3">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental ainsi qu’une pièce attestant leur rang au classement établi au concours de recrutement de l’État.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les postulants sub 2 joignent à leur demande les notes d’inspection des deux dernières années scolaires précédant la date de la candidature ou une copie de ces notes. Celles-ci sont communiquées au candidat sur demande par l’inspecteur d’arrondissement qui les a établies. Les candidats qui ne sont en fonction que depuis une année présentent les notes de l’année courante.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les postulants sub 3 joignent à leur demande une copie de leur diplôme d’éducateur gradué ou d’éducateur tel que défini à l’article 13 de la <ref href="/eli/etat/leg/loi/2009/02/06/n4/jo" id="9abf20b0-5a57-48b1-9a54-e37a48a61cf9">loi modifiée du 6 février 2009</ref> concernant le personnel de l’enseignement fondamental, un extrait de l’acte de naissance, une copie de la carte d’identité ou du passeport, un extrait récent du casier judiciaire, un certificat d’inscription aux listes électorales, un certificat de réussite relative aux épreuves concernant le contrôle de la connaissance des trois langues administratives le cas échéant.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Les demandes avec pièces à l’appui doivent parvenir au ministre dans le délai prescrit lors de la publication de la deuxième liste des vacances des postes d’éducateur gradué ou d’éducateur.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_10">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_10</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_10/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 10.</num>
+				<alinea>
+					<content>
+						<p>Les affectations et réaffectations aux postes déclarés vacants sur la deuxième liste des postes vacants se font par le ministre, dans le respect de l’ordre de prioritésainsi que des critères de classement définis ci-dessous:</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Priorité 1: Les éducateurs gradués et éducateurs nouvellement admis au stage sont classés en fonction de leur rang au classement établi au concours de recrutement de l’État;</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Priorité 2: Les employés de l’État de la carrière de l’éducateur gradué ou de l’éducateur en service dansl’enseignement fondamental sont classés d’après le total des points attribués selon les critères suivants:</p>
+						<ul scl:space-item="5" scl:space-num="5" scl:symbol="custom">
+							<li scl:symbol="–">une note d’inspection qui résulte de la somme de deux notes qui portent d’un côté sur les compétences professionnelles de l’éducateur gradué ou de l’éducateur et, de l’autre, sur l’engagement professionnel dont il fait preuve. Chacun des deux domaines est coté sur une échelle allant de 5 à 10 points; la moyenne des points répondant aux notes d’inspection des deux dernières années précédant la date de la candidature est à prendre en compte; si le candidat n’est en service que depuis une année, les notes d’inspection de cette seule année sont prises en compte;</li>
+							<li scl:symbol="–">l’ancienneté de service auprès de l’État pour laquelle il sera compté un point par année de service.</li>
+						</ul>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Si le total des points attribués à un candidat conformément aux deux paragraphes ci-dessus renferme une fraction de points, celle-ci n’est pas à arrondir. L’éducateur gradué ou l’éducateur qui interrompt son service est censé demander et conserver les notes d’inspection. L’éducateur gradué ou l’éducateur qui reprend son service présente les notes de sa dernière année de service. Si l’éducateur gradué ou l’éducateur ne peut pas présenter ces notes, il lui est attribué une note d’inspection de 10 points.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Priorité 3: Les détenteurs d’un diplôme d’éducateur gradué ou d’éducateur, postulant une admission comme employéau service de l’État, sont classés suivant le nombre d’années de service prestées comme éducateur gradué ou éducateur.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Un candidat d’une priorité subséquente n’est affecté ou réaffecté que dans le cas où il n’y a plus de candidat de la priorité antérieure.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_11">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_11</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_11/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 11.</num>
+				<alinea>
+					<content>
+						<p>Les décisions d’affectation et de réaffectation à des postes d’éducateurs gradués et d’éducateurs sont communiquées sans délai aux autorités des communes et des syndicats scolaires, aux inspecteurs d’arrondissements ainsi qu’aux candidats concernés.</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_12">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_12</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_12/20110415</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 12.</num>
+				<alinea>
+					<content>
+						<p>Les agents des carrières de l’éducateur gradué et de l’éducateur qui désirent démissionner de leur fonction à partir ou au cours de l’année scolaire à venir signalent leur intention au ministre ainsi qu’aux autorités des communes et des syndicats scolaires concernés dans les meilleurs délais et en tout cas avant le 15 avril de l’année scolaire en cours.</p>
+					</content>
+				</alinea>
+			</article>
+			<part id="part_1" wId="part_1">
+				<heading scl:align="left">
+					<b>Dispositions transitoires</b>
+				</heading>
+				<article id="art_13">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_13</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_13/20110415</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 13.</num>
+					<alinea>
+						<content>
+							<p>Par dérogation à l’article 4, alinéa 2 ci-dessus, les éducateurs gradués et les éducateurs, fonctionnaires dans l’enseignement fondamental, qui présentent une demande de réaffectation en juin 2011 joignent à leur demande les notes d’inspection de l’année scolaire 2010/2011.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Par dérogation à l’article 10, alinéa 2 ci-dessus les éducateurs gradués et les éducateurs, employés de l’État dans l’enseignement fondamental, qui présentent une demande de réaffectation en juillet 2011 joignent à leur demande les notes d’inspection de l’année scolaire 2010/2011.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_14">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_14</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12/art_14/20110415</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2011/04/01/n12</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2011-04-15</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 14.</num>
+					<alinea>
+						<content>
+							<p>Notre Ministre de l’Éducation nationale et de la Formation professionnelle est chargée de l’exécution du présent règlement qui sera publié au Mémorial.</p>
+						</content>
+					</alinea>
+				</article>
+			</part>
+		</body>
+	</act>
+</akomaNtoso>

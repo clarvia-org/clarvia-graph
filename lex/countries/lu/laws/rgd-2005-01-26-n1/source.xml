@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#casemates">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2005-01-26" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MAE"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2005-01-26" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2005-01-26" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2015-02-16</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2005-01-26</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2005A04141</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MAE</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/982</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/548</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1</scl:jolux>
+						<scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo/fr</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2005-02-08</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2005/a20</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2005-02-04</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo/fr</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo/fr/html</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="cites">/eli/etat/leg/agd/1934/05/31/n1/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:name="title">Version consolidée applicable au 16/02/2015 : Règlement grand-ducal du 26 janvier 2005 fixant les modalités pour l'obtention d'un titre de voyage pour étrangers.</scl:jolux>
+					<scl:jolux scl:name="basedOn">/eli/etat/leg/loi/1934/04/14/n3/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2005-20-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2005/a20/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2005-01-26-n1-jo-fr-xml.xml</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2005-20-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://data.legilux.public.lu/resource/authority/license/licenceSCL</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2005/a20/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2005/a20/fr/pdf/eli-etat-leg-memorial-2005-a20-fr-pdf.pdf</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2005-01-26" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2006-08-14" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+				<eventRef date="2008-02-01" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+				<eventRef date="2013-01-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+				<eventRef date="2013-06-29" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2015-02-16" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2006/07/31/n1/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2008/01/25/n1/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2008/01/25/n1/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm4" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2012/11/22/n1/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm6" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_2_conditions_pour_pouvoir_pretendre_a_l_obtention_d_un_titre_de_voyage_pour_etrangers"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_2_conditions_pour_pouvoir_pretendre_a_l_obtention_d_un_titre_de_voyage_pour_etrangers"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_2_conditions_pour_pouvoir_pretendre_a_l_obtention_d_un_titre_de_voyage_pour_etrangers"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_2_conditions_pour_pouvoir_pretendre_a_l_obtention_d_un_titre_de_voyage_pour_etrangers"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm15" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_3"/>
+					</textualMod>
+					<textualMod id="pm16" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm17" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm18" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_4"/>
+					</textualMod>
+					<textualMod id="pm19" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2013/06/19/n2/jo"/>
+						<destination href="#art_5"/>
+					</textualMod>
+					<textualMod id="pm20" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2015/02/12/n1/jo"/>
+						<destination href="#article_1bis"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2005/01/26/n1/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2015/02/12/n1/jo" id="rp2" showAs="Règlement grand-ducal du 12 février 2015 portant exécution de la loi modifiée du 14 avril 1934, fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés et établissant un droit de chancellerie pour légalisations d'actes."/>
+				<passiveRef href="/eli/etat/leg/rgd/2013/06/19/n2/jo" id="rp3" showAs="Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers."/>
+				<passiveRef href="/eli/etat/leg/rgd/2012/11/22/n1/jo" id="rp4" showAs="Règlement grand-ducal du 22 novembre 2012 modifiant  - le règlement grand-ducal du 11 avril 2011 modifiant le règlement grand-ducal du 25 janvier 2008 fixant les modalités d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés ainsi que pour l'obtention de légalisations  - le règlement grand-ducal du 25 janvier 2008 fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés ainsi que pour l'obtention de légalisations  - le règlement grand-ducal du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers."/>
+				<passiveRef href="/eli/etat/leg/rgd/2008/01/25/n1/jo" id="rp5" showAs="Règlement grand-ducal du 25 janvier 2008 fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés ainsi que pour l'obtention de légalisations."/>
+				<passiveRef href="/eli/etat/leg/rgd/2006/07/31/n1/jo" id="rp6" showAs="Règlement grand-ducal du 31 juillet 2006 portant règlement d'exécution de la loi du 14 avril 1934, concernant les passeports biométriques, les titres de voyage pour étrangers, apatrides et réfugiés et l'établissement d'un droit de chancellerie pour légalisations d'actes."/>
+			</references>
+			<notes scl:type="modification" source="#rp6">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2006-08-10|2006-07-31|RGD|134">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2006/07/31/n1/jo">Règlement grand-ducal du 31 juillet 2006 portant règlement d'exécution de la loi du 14 avril 1934, concernant les passeports biométriques, les titres de voyage pour étrangers, apatrides et réfugiés et l'établissement d'un droit de chancellerie pour légalisations d'actes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp5">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2008-01-28|2008-01-25|RGD|10">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2008/01/25/n1/jo">Règlement grand-ducal du 25 janvier 2008 fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés ainsi que pour l'obtention de légalisations.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp5">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2008-01-28|2008-01-25|RGD|10">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2008/01/25/n1/jo">Règlement grand-ducal du 25 janvier 2008 fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés ainsi que pour l'obtention de légalisations.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp4">
+				<note id="M4" marker="4" refersTo="pm4" title="A|2012-11-30|2012-11-22|RGD|247">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2012/11/22/n1/jo">Règlement grand-ducal du 22 novembre 2012 modifiant - le règlement grand-ducal du 11 avril 2011 modifiant le règlement grand-ducal du 25 janvier 2008 fixant les modalités d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés ainsi que pour l'obtention de légalisations - le règlement grand-ducal du 25 janvier 2008 fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés ainsi que pour l'obtention de légalisations - le règlement grand-ducal du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M5" marker="5" refersTo="pm5" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M6" marker="6" refersTo="pm6" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M7" marker="7" refersTo="pm7" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M8" marker="8" refersTo="pm8" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M9" marker="9" refersTo="pm9" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M10" marker="10" refersTo="pm10" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:border="50" scl:delim-left="(" scl:delim-right=")" scl:page-footer="true" scl:type="document" source="#eli-etat-leg-rgd-2005-01-26-n4-consolide-2013-06-29-fr-xml">
+				<note id="note_0_0_0">
+					<p>En vertu du règlement grand-ducal du 19 juin 2013, Mémorial A106, l'article 1<sup>er</sup> dispose que l'article 2, paragraphe (1), troisième tiret et paragraphe (2), premier tiret, les termes « Ministère des affaires étrangères » du règlement grand-ducal du 26 janvier 2005 sont remplacés par ceux de « ministre ayant l'Immigration dans ses attributions ». Cependant les termes « et de l'Immigration » doivent également être remplacés. - En cours de rectification.</p>
+				</note>
+				<note id="note_0_0_1">
+					<p>En vertu du règlement grand-ducal du 19 juin 2013, Mémorial A106, l'article 1<sup>er</sup> dispose qu'à l'article 5, paragraphe (3) du règlement grand-ducal du 26 janvier 2005 les termes « Ministre compétent en matière d'entrée et de séjour au Luxembourg » sont remplacés par ceux de « ministre ayant l'Immigration dans ses attributions ». Or, les termes « Ministre compétent en matière d'entrée et de séjour au Luxembourg » n'y figurent pas. - En cours de rectification.</p>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M11" marker="11" refersTo="pm11" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M12" marker="12" refersTo="pm12" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M13" marker="13" refersTo="pm13" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M14" marker="14" refersTo="pm14" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M15" marker="15" refersTo="pm15" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M16" marker="16" refersTo="pm16" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M17" marker="17" refersTo="pm17" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M18" marker="18" refersTo="pm18" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp3">
+				<note id="M19" marker="19" refersTo="pm19" title="A|2013-06-25|2013-06-19|RGD|106">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2013/06/19/n2/jo">Règlement grand-ducal du 19 juin 2013 modifiant le règlement grand-ducal modifié du 26 janvier 2005 fixant les modalités d'un titre de voyage pour étrangers.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M20" marker="20" refersTo="pm20" title="A|2015-02-16|2015-02-12|RGD|27">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2015/02/12/n1/jo">Règlement grand-ducal du 12 février 2015 portant exécution de la loi modifiée du 14 avril 1934, fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés et établissant un droit de chancellerie pour légalisations d'actes.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 16/02/2015 : Règlement grand-ducal du 26 janvier 2005 fixant les modalités pour l'obtention d'un titre de voyage pour étrangers. </p>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_1er">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_1er_definition_et_champ_d_application</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_1er_definition_et_champ_d_application/20130629</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1er. Définition et champ d'application</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2013-06-29</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 1<sup>er</sup>.</num><heading>Définition et champ d'application</heading>
+				<paragraph id="paragraph_1">
+					<num>1.</num>
+					<alinea>
+						<content>
+							<p>Le titre de voyage pour étrangers est un document de voyage délivré à des personnes résidant <mod class="mod-start" for="#pm5"/>
+								<del>régulièrement<mod class="mod-end" for="#pm5"/>
+								</del>
+								<noteRef href="#M5" marker="5"/> sur le territoire du Grand-Duché de Luxembourg et dont l'identité et la nationalité sont établies, mais qui ne sont pas en mesure d'obtenir un passeport national de la part des autorités de leur pays d'origine <mod class="mod-start" for="#pm6"/>ou auxquelles il est impossible de demander l'établissement ou la prolongation d'un titre de voyage en raison de circonstances exceptionnelles<mod class="mod-end" for="#pm6"/>
+								<noteRef href="#M6" marker="6"/>.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_2">
+					<num>2.</num>
+					<alinea>
+						<content>
+							<p>Dans des cas exceptionnels, un tel titre de voyage peut également être délivré lorsque la procédure de délivrance d'un passeport national est excessivement longue <mod class="mod-start" for="#pm7"/>ou difficile, de sorte à dépasser les limites du raisonnable<mod class="mod-end" for="#pm7"/>
+								<noteRef href="#M7" marker="7"/>.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_3">
+					<num>3.</num>
+					<alinea>
+						<content>
+							<p>Ne tombent pas sous le champ d'application des présentes dispositions, les personnes qui bénéficient du statut de réfugié conféré en conformité avec la Convention de Genève, du 28 juillet 1951, ou du statut d'apatride conféré en conformité avec la Convention de New York, du 28 septembre 1954.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="article_1bis">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_1bis</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_1bis/20150216</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Article 1bis.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2015-02-16</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm3"/>
+					<mod class="mod-start" for="#pm20"/>Article 1<i>bis</i>
+				</num>
+				<heading>
+					<b>- Descriptif du Titre de Voyage</b>
+				</heading>
+				<paragraph id="paragraph_15">
+					<num>1.</num>
+					<alinea>
+						<content>
+							<p>Par rapport aux passeports biométriques décrits à l'article 2, paragraphe 1<sup>er</sup> du règlement grand-ducal portant exécution de la <ref href="/eli/etat/leg/loi/1934/04/14/n3/jo" id="407fc0f2-336d-4723-b3f9-ebb6e594dac4">loi modifiée du 14 avril 1934</ref>, fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés et établissant un droit de chancellerie pour légalisations d'actes, le couvercle est de couleur verte portant l'inscription: Titre de Voyage pour étrangers, Grand-Duché de Luxembourg. La version anglaise de ces inscriptions y figure également.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_16">
+					<num>2.</num>
+					<alinea>
+						<content>
+							<p>Par rapport aux passeports biométriques décrits à l'article 2, paragraphe 4 du règlement grand-ducal portant exécution de la <ref href="https://legilux.public.lu/eli/etat/leg/loi/1934/04/14/n3/jo" id="7c3ef859-8b5a-47ba-9f85-45317cde8fa9">loi modifiée du 14 avril 1934</ref>, fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés et établissant un droit de chancellerie pour légalisations d'actes, figurent au recto de la carte en plastique dans l'ordre les mentions suivantes:</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Titre de Voyage pour Etrangers,</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>ainsi qu'un texte reprenant les conditions à respecter en cas de remise de ce document. Ces mentions sont rédigées en langues française et anglaise.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_17">
+					<num>3.</num>
+					<alinea>
+						<content>
+							<p>Par rapport aux passeports biométriques décrits à l'article 2, paragraphe 6 du règlement grand-ducal portant exécution de la <ref href="https://legilux.public.lu/eli/etat/leg/loi/1934/04/14/n3/jo" id="7815a191-13b3-4897-980a-5de715df558e">loi modifiée du 14 avril 1934</ref>, fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés et établissant un droit de chancellerie pour légalisations d'actes, figurent au verso de la carte en plastique dotée d'une zone de lecture optique, en langues française et anglaise la mention suivante: Grand-Duché de Luxembourg. Y figurent également en langues française et anglaise les mentions suivantes: Titre de Voyage, type, code du pays, numéro de passeport, nom, prénoms, taille, nationalité, date de naissance, sexe, lieu de naissance, autorité, date de délivrance, date d'expiration, la signature du titulaire et le numéro CAN. La photo numérisée de ce dernier est engravée sur cette page.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_18">
+					<num>4.</num>
+					<alinea>
+						<content>
+							<p>Par rapport aux passeports biométriques décrits à l'article 2, paragraphe 8 du règlement grand-ducal portant exécution de la <ref href="https://legilux.public.lu/eli/etat/leg/loi/1934/04/14/n3/jo" id="99f2c646-cdc6-4f5f-a4bf-a645b514116e">loi modifiée du 14 avril 1934</ref>, fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés et établissant un droit de chancellerie pour légalisations d'actes, figurent à la deuxième page numérotée, en langues française et anglaise, les mentions suivantes:</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Page réservée aux autorités compétentes pour délivrer le titre de voyage,</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Numéro de registre...</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_19">
+					<num>5.</num>
+					<alinea>
+						<content>
+							<p>Par rapport aux passeports biométriques décrits à l'article 2, paragraphe 9 du règlement grand-ducal portant exécution de la <ref href="https://legilux.public.lu/eli/etat/leg/loi/1934/04/14/n3/jo" id="97ec7ef6-c33b-4c8c-9812-d693c5e293ac">loi modifiée du 14 avril 1934</ref>, fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés et établissant un droit de chancellerie pour légalisations d'actes, les troisième et quatrième pages numérotées sont réservées à l'apposition de visas.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_20">
+					<num>6.</num>
+					<alinea>
+						<content>
+							<p>Par rapport aux passeports biométriques décrits à l'article 2, paragraphe 11 du règlement grand-ducal portant exécution de la <ref href="https://legilux.public.lu/eli/etat/leg/loi/1934/04/14/n3/jo" id="961bb711-5756-4a48-a3b8-b4e66020a637">loi modifiée du 14 avril 1934</ref>, fixant les modalités pour l'obtention d'un passeport biométrique, titre de voyage biométrique pour étrangers, apatrides et réfugiés et établissant un droit de chancellerie pour légalisations d'actes, figurent à la dernière page numérotée, en langues française et anglaise, des informations utiles en relation avec le passeport.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>La même page comporte en bas, en langues française et anglaise, l'inscription suivante:</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Ce passeport contient 32 pages</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>This passport contains 32 pages.<mod class="mod-end" for="#pm20"/>
+								<noteRef href="#M20" marker="20"/>
+								<mod class="mod-end" for="#pm3"/>
+								<noteRef href="#M3" marker="3"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_2">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_2_conditions_pour_pouvoir_pretendre_a_l_obtention_d_un_titre_de_voyage_pour_etrangers</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_2_conditions_pour_pouvoir_pretendre_a_l_obtention_d_un_titre_de_voyage_pour_etrangers/20130629</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 2. Conditions pour pouvoir prétendre à l'obtention d'un titre de voyage pour étrangers</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2013-06-29</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm8"/>Art. 2.</num><heading>Conditions pour pouvoir prétendre à l'obtention d'un titre de voyage pour étrangers</heading>
+				<paragraph id="paragraph_4">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Pour pouvoir prétendre à l'obtention d'un titre de voyage pour étrangers, le requérant doit remplir les conditions suivantes:</p>
+							<ul scl:symbol="dash">
+								<li>être titulaire d'une autorisation de séjour, ou avoir obtenu de la part du ministre ayant l'Immigration dans ses attributions l'accord pour l'octroi d'une telle autorisation;</li>
+								<li>apporter la preuve qu'il se trouve dans l'une des hypothèses visées à l'article 1<sup>er</sup>, paragraphes (1) et (2).<mod class="mod-end" for="#pm8"/>
+									<noteRef href="#M8" marker="8"/>
+								</li>
+								<li>autoriser le <mod class="mod-start" for="#pm10"/>ministre ayant l'Immigration dans ses attributions<mod class="mod-end" for="#pm10"/>
+									<noteRef href="#M10" marker="10"/> et de l'Immigration<noteRef href="#note_0_0_0"/> à s'enquérir auprès de l'Ambassade du pays d'origine sur les raisons qui sont à la base du refus de la délivrance d'un passeport national ou, le cas échéant, de la procédure de délivrance excessivement longue <mod class="mod-start" for="#pm9"/>ou difficile<mod class="mod-end" for="#pm9"/>
+									<noteRef href="#M9" marker="9"/>.</li>
+							</ul>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_5">
+					<num>2.</num>
+					<alinea>
+						<content>
+							<p>Aucun titre de voyage pour étrangers ne sera délivré:</p>
+							<ul scl:symbol="dash">
+								<li>lorsqu'il appert que le requérant a été condamné dans son pays d'origine ou dans tout autre pays pour des crimes contre l'humanité ou pour toute autre infraction pénale, ou qu'il est recherché pour ces mêmes faits. Il appartient au <mod class="mod-start" for="#pm11"/>ministre ayant l'Immigration dans ses attributions<mod class="mod-end" for="#pm11"/>
+									<noteRef href="#M11" marker="11"/> de juger de la gravité des faits reprochés;</li>
+								<li>lorsque le requérant est susceptible de compromettre la sécurité et l'ordre publics.</li>
+							</ul>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_3">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_3_procedure_de_delivrance_prolongation_et_taxes</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_3_procedure_de_delivrance_prolongation_et_taxes/20130629</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 3. Procédure de délivrance, prolongation et taxes</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2013-06-29</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 3.</num><heading>Procédure de délivrance, prolongation et taxes</heading>
+				<paragraph id="paragraph_6">
+					<num>
+						<mod class="mod-start" for="#pm12"/>(1)</num>
+					<alinea>
+						<content>
+							<p>Les demandes en obtention d'un titre de voyage pour étrangers sont à présenter au ministre ayant l'Immigration dans ses attributions. Elles doivent être accompagnées des pièces justificatives mentionnées à l'article 2, paragraphe (1).<mod class="mod-end" for="#pm12"/>
+								<noteRef href="#M12" marker="12"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_7">
+					<num>
+						<mod class="mod-start" for="#pm1"/>
+						<mod class="mod-start" for="#pm2"/>2.</num>
+					<alinea>
+						<content>
+							<p>Le titre de voyage délivré à un majeur et à un mineur de quatre ans révolus est valable pour une durée <mod class="mod-start" for="#pm13"/>maximale<mod class="mod-end" for="#pm13"/>
+								<noteRef href="#M13" marker="13"/> de cinq ans.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Les mineurs de moins de quatre ans révolus se voient délivrés un titre de voyage valable pour une durée <mod class="mod-start" for="#pm14"/>maximale<mod class="mod-end" for="#pm14"/>
+								<noteRef href="#M14" marker="14"/> de deux ans.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Aucun titre de voyage ne peut être prorogé au-delà des durées de validité définies ci-dessus.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_8">
+					<num>3.</num>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm4"/>Le montant à régler pour la délivrance d'un titre de voyage est fixé à 50 (cinquante) euros. <mod class="mod-start" for="#pm15"/>Pour les titres de voyage d'une validité maximale de deux ans, ce montant est de 30 (trente) euros.<mod class="mod-end" for="#pm15"/>
+								<noteRef href="#M15" marker="15"/>
+								<mod class="mod-end" for="#pm2">
+									<mod class="mod-end" for="#pm4"/>
+									<noteRef href="#M4" marker="4"/>
+								</mod>
+								<noteRef href="#M2" marker="2"/>
+								<mod class="mod-end" for="#pm1"/>
+								<noteRef href="#M1" marker="1"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_4">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_4_retrait_et_restitution</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_4_retrait_et_restitution/20130629</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 4. Retrait et restitution</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2013-06-29</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 4.</num><heading>Retrait et restitution</heading>
+				<paragraph id="paragraph_9">
+					<num>1.</num>
+					<alinea>
+						<content>
+							<p>Le titre de voyage pour étrangers peut être retiré à son détenteur</p>
+							<ul scl:symbol="dash">
+								<li>lorsqu'il a été constaté que sa délivrance a eu lieu sur base de fausses déclarations du titulaire;</li>
+								<li>lorsque les faits énumérés à l'article 2. par. 2. ci-dessus viennent à la connaissance du <mod class="mod-start" for="#pm16"/>ministre ayant l'Immigration dans ses attributions<mod class="mod-end" for="#pm16"/>
+									<noteRef href="#M16" marker="16"/> après la délivrance du titre de voyage pour étrangers;</li>
+								<li>lorsque son titulaire a été condamné à une peine d'emprisonnement ferme d'un an ou plus;</li>
+								<li>lorsque le <mod class="mod-start" for="#pm17"/>ministre ayant l'Immigration dans ses attributions<mod class="mod-end" for="#pm17"/>
+									<noteRef href="#M17" marker="17"/> a signifié à l'intéressé un ordre de quitter le territoire.</li>
+							</ul>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_10">
+					<num>2.</num>
+					<alinea>
+						<content>
+							<p>Le titre de voyage pour étrangers devra être restitué au <mod class="mod-start" for="#pm18"/>ministre ayant l'Immigration dans ses attributions<mod class="mod-end" for="#pm18"/>
+								<noteRef href="#M18" marker="18"/>
+							</p>
+							<ul scl:symbol="dash">
+								<li>lorsqu'un passeport national a été délivré à son titulaire;</li>
+								<li>lorsque le titulaire a pris résidence dans un autre pays;</li>
+								<li>lorsque le titulaire a acquis la nationalité luxembourgeoise ou toute autre nationalité.</li>
+							</ul>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_5">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_5_dispositions_generales</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_5_dispositions_generales/20130629</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 5. Dispositions générales</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2013-06-29</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 5.</num><heading>Dispositions générales</heading>
+				<paragraph id="paragraph_11">
+					<num>1.</num>
+					<alinea>
+						<content>
+							<p>Le titulaire d'un titre de voyage pour étrangers reste soumis aux règles générales de la législation luxembourgeoise régissant l'entrée, le séjour et l'admissibilité au travail des étrangers au Grand-Duché de Luxembourg.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_12">
+					<num>2.</num>
+					<alinea>
+						<content>
+							<p>Le titre de voyage pour étrangers est délivré pour permettre à son détenteur de se déplacer en dehors du territoire luxembourgeois dans les pays qui ont reconnu ce titre de voyage pour l'entrée et le séjour sur leur territoire. Il ne dispense pas du visa si celui-ci est requis.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_13">
+					<num>3.</num>
+					<alinea>
+						<content>
+							<p>Le titre de voyage permet seulement le retour au Grand-Duché dans la limite de la validité du <mod class="mod-start" for="#pm19"/>titre de séjour<mod class="mod-end" for="#pm19"/>
+								<noteRef href="#M19" marker="19"/>. Dans tous les cas, le retour au Grand-Duché n'est plus possible après un séjour de six mois consécutifs à l'étranger, sauf dérogation spéciale accordée, avant le départ, par le Ministre<noteRef href="#note_0_0_1"/> ayant dans ses attributions l'entrée et le séjour des étrangers sur le territoire du Grand-Duché de Luxembourg.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_14">
+					<num>4.</num>
+					<alinea>
+						<content>
+							<p>Le titre de voyage pour étrangers ne donne pas automatiquement droit à l'assistance consulaire des autorités luxembourgeoises en cas de difficultés à l'étranger.</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_6">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_6</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1/art_6/20050207</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2005/01/26/n1</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2005-02-07</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 6.</num>
+				<alinea>
+					<content>
+						<p>Notre Ministre des Affaires Etrangères et de l'Immigration est chargé de l'exécution du présent règlement qui sera publié au Mémorial.</p>
+					</content>
+				</alinea>
+			</article>
+		</body>
+	</act>
+</akomaNtoso>

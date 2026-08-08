@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2014-07-12" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MFI"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2014-07-12" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2014-07-12" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux><scl:jolux scl:name="dateDocument">2014-07-12</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/1585</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr</scl:jolux><scl:jolux scl:name="transpositionProcess">http://data.legilux.public.lu/event/etat/trans/2011/85</scl:jolux><scl:jolux scl:name="dateEntryInForce">2014-07-19</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a122</scl:jolux><scl:jolux scl:name="historicalLegalId">2014A1766A</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">2014-07-15</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MFI</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="transposes">/eli/dir_ue/2011/85/jo</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20130128</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1957/11/30/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/2013/03/29/n4/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/1997/1466/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/2009/479/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/reg_ue/2013/473/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1999/06/08/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1969/03/10/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 01/01/2026 : Loi du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques et modifiant:\n a) la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l'Etat\n b) la loi modifiée du 10 mars 1969 portant institution d'une inspection générale des finances.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2014-122-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a122/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2014-07-12-n2-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2014-122-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2014/a122/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2014/a122/fr/pdf/eli-etat-leg-memorial-2014-a122-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2014-07-19" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2017-01-01" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2018-01-01" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2026-01-01" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2016/12/23/n12/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm2" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2017/12/15/a1097/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm4" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2017/12/15/a1097/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm5" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2017/12/15/a1097/jo"/>
+<destination href="#art_8"/>
+</textualMod>
+<textualMod id="pm6" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2017/12/15/a1097/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm7" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2017/12/15/a1097/jo"/>
+<destination href="#art_9"/>
+</textualMod>
+<textualMod id="pm8" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2017/12/15/a1097/jo"/>
+<destination/>
+</textualMod>
+<textualMod id="pm9" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a591/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm10" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/12/19/a591/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm11" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a591/jo"/>
+<destination href="#art_3"/>
+</textualMod>
+<textualMod id="pm12" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/12/19/a591/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm13" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a591/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm14" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a591/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm15" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a591/jo"/>
+<destination href="#art_7"/>
+</textualMod>
+<textualMod id="pm16" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a591/jo"/>
+<destination href="#art_8"/>
+</textualMod>
+<textualMod id="pm17" incomplete="false" type="insertion">
+<source href="/eli/etat/leg/loi/2025/12/19/a591/jo"/>
+<destination href="#art_8"/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2014/07/12/n2/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2025/12/19/a591/jo" id="rp2" showAs="Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable. "/>
+<passiveRef href="/eli/etat/leg/loi/2017/12/15/a1097/jo" id="rp3" showAs="Loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2018 et modifiant : 1° le Code de la sécurité sociale ; 2° le Code du Travail ; 3° la loi modifiée du 27 décembre 1817 sur le droit de succession ; 4° la loi modifiée du 16 octobre 1934 sur l’évaluation des biens et valeurs ; 5° la loi modifiée du 16 octobre 1934 concernant l’impôt sur la fortune ; 6° la loi modifiée d’adaptation fiscale du 16 octobre 1934 ; 7° la loi modifiée du 1er décembre 1936 concernant l’impôt commercial ; 8° la loi modifiée du 17 avril 1964 portant réorganisation de l’administration des contributions directes ; 9° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 10° la loi modifiée du 10 mars 1969 portant institution d’une inspection générale des finances ; 11° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 12° la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre ;  13° la loi modifiée du 23 décembre 1998 portant création de deux établissements publics dénommés 1) Centres, foyers et services pour personnes âgées ; 2) Centres de gériatrie ; 14° la loi modifiée du 9 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 15° la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2002 ; 16° la loi modifiée du 4 juillet 2008 sur la jeunesse; 17° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 18° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 19° la loi du 25 novembre 2014 prévoyant la procédure applicable à l’échange de renseignements sur demande en matière fiscale ; 20° la loi modifiée du 27 juin 2016 concernant le soutien au développement durable des zones rurales ; 21° la loi du 29 juin 2016 portant modification d’une disposition en matière d’impôts directs ; 22° la loi du 14 décembre 2016 portant création d’un Fonds de dotation globale des communes."/>
+<passiveRef href="/eli/etat/leg/loi/2016/12/23/n12/jo" id="rp4" showAs="Loi du 23 décembre 2016 concernant le budget des recettes et des dépenses de l'État pour l'exercice 2017 et modifiant:  1) la loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu;  2) la loi modifiée du 1er décembre 1936 sur l'impôt foncier;  3) la loi modifiée du 27 novembre 1933 concernant le recouvrement des contributions directes, des droits d'accise sur l'eau-de-vie et des cotisations d'assurance sociale;  4) la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée;  5) la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs;  6) la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l'État pour l'exercice 2002;  7) le Code de la sécurité sociale;  8) la loi modifiée du 25 février 1979 concernant l'aide au logement;  9) la loi modifiée du 18 février 2010 relative à un régime d'aides à la protection de l'environnement et à l'utilisation rationnelle des ressources naturelles;  10) la loi modifiée du 5 juin 2009 relative à la promotion de la recherche, du développement et de l'innovation;  11) la loi du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques;  12) la loi modifiée du 13 juin 2003 concernant les relations entre l'Etat et l'enseignement privé."/>
+</references>
+<notes scl:type="modification" source="#rp4">
+<note id="M1" marker="1" refersTo="pm1" title="A|2016-12-27|2016-12-23|L|276">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2016/12/23/n12/jo">Loi du 23 décembre 2016 concernant le budget des recettes et des dépenses de l'État pour l'exercice 2017 et modifiant: 1) la loi modifiée du 4 décembre 1967 concernant l'impôt sur le revenu; 2) la loi modifiée du 1er décembre 1936 sur l'impôt foncier; 3) la loi modifiée du 27 novembre 1933 concernant le recouvrement des contributions directes, des droits d'accise sur l'eau-de-vie et des cotisations d'assurance sociale; 4) la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée; 5) la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs; 6) la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l'État pour l'exercice 2002; 7) le Code de la sécurité sociale; 8) la loi modifiée du 25 février 1979 concernant l'aide au logement; 9) la loi modifiée du 18 février 2010 relative à un régime d'aides à la protection de l'environnement et à l'utilisation rationnelle des ressources naturelles; 10) la loi modifiée du 5 juin 2009 relative à la promotion de la recherche, du développement et de l'innovation; 11) la loi du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques; 12) la loi modifiée du 13 juin 2003 concernant les relations entre l'Etat et l'enseignement privé.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M2" marker="2" refersTo="pm2" title="A|2017-12-20|2017-12-15|L|1097">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1097/jo">Loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2018 et modifiant : 1° le Code de la sécurité sociale ; 2° le Code du Travail ; 3° la loi modifiée du 27 décembre 1817 sur le droit de succession ; 4° la loi modifiée du 16 octobre 1934 sur l’évaluation des biens et valeurs ; 5° la loi modifiée du 16 octobre 1934 concernant l’impôt sur la fortune ; 6° la loi modifiée d’adaptation fiscale du 16 octobre 1934 ; 7° la loi modifiée du 1er décembre 1936 concernant l’impôt commercial ; 8° la loi modifiée du 17 avril 1964 portant réorganisation de l’administration des contributions directes ; 9° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 10° la loi modifiée du 10 mars 1969 portant institution d’une inspection générale des finances ; 11° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 12° la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre ; 13° la loi modifiée du 23 décembre 1998 portant création de deux établissements publics dénommés 1) Centres, foyers et services pour personnes âgées ; 2) Centres de gériatrie ; 14° la loi modifiée du 9 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 15° la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2002 ; 16° la loi modifiée du 4 juillet 2008 sur la jeunesse; 17° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 18° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 19° la loi du 25 novembre 2014 prévoyant la procédure applicable à l’échange de renseignements sur demande en matière fiscale ; 20° la loi modifiée du 27 juin 2016 concernant le soutien au développement durable des zones rurales ; 21° la loi du 29 juin 2016 portant modification d’une disposition en matière d’impôts directs ; 22° la loi du 14 décembre 2016 portant création d’un Fonds de dotation globale des communes.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M4" marker="4" refersTo="pm4" title="A|2017-12-20|2017-12-15|L|1097">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1097/jo">Loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2018 et modifiant : 1° le Code de la sécurité sociale ; 2° le Code du Travail ; 3° la loi modifiée du 27 décembre 1817 sur le droit de succession ; 4° la loi modifiée du 16 octobre 1934 sur l’évaluation des biens et valeurs ; 5° la loi modifiée du 16 octobre 1934 concernant l’impôt sur la fortune ; 6° la loi modifiée d’adaptation fiscale du 16 octobre 1934 ; 7° la loi modifiée du 1er décembre 1936 concernant l’impôt commercial ; 8° la loi modifiée du 17 avril 1964 portant réorganisation de l’administration des contributions directes ; 9° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 10° la loi modifiée du 10 mars 1969 portant institution d’une inspection générale des finances ; 11° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 12° la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre ; 13° la loi modifiée du 23 décembre 1998 portant création de deux établissements publics dénommés 1) Centres, foyers et services pour personnes âgées ; 2) Centres de gériatrie ; 14° la loi modifiée du 9 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 15° la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2002 ; 16° la loi modifiée du 4 juillet 2008 sur la jeunesse; 17° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 18° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 19° la loi du 25 novembre 2014 prévoyant la procédure applicable à l’échange de renseignements sur demande en matière fiscale ; 20° la loi modifiée du 27 juin 2016 concernant le soutien au développement durable des zones rurales ; 21° la loi du 29 juin 2016 portant modification d’une disposition en matière d’impôts directs ; 22° la loi du 14 décembre 2016 portant création d’un Fonds de dotation globale des communes.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M5" marker="5" refersTo="pm5" title="A|2017-12-20|2017-12-15|L|1097">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1097/jo">Loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2018 et modifiant : 1° le Code de la sécurité sociale ; 2° le Code du Travail ; 3° la loi modifiée du 27 décembre 1817 sur le droit de succession ; 4° la loi modifiée du 16 octobre 1934 sur l’évaluation des biens et valeurs ; 5° la loi modifiée du 16 octobre 1934 concernant l’impôt sur la fortune ; 6° la loi modifiée d’adaptation fiscale du 16 octobre 1934 ; 7° la loi modifiée du 1er décembre 1936 concernant l’impôt commercial ; 8° la loi modifiée du 17 avril 1964 portant réorganisation de l’administration des contributions directes ; 9° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 10° la loi modifiée du 10 mars 1969 portant institution d’une inspection générale des finances ; 11° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 12° la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre ; 13° la loi modifiée du 23 décembre 1998 portant création de deux établissements publics dénommés 1) Centres, foyers et services pour personnes âgées ; 2) Centres de gériatrie ; 14° la loi modifiée du 9 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 15° la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2002 ; 16° la loi modifiée du 4 juillet 2008 sur la jeunesse; 17° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 18° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 19° la loi du 25 novembre 2014 prévoyant la procédure applicable à l’échange de renseignements sur demande en matière fiscale ; 20° la loi modifiée du 27 juin 2016 concernant le soutien au développement durable des zones rurales ; 21° la loi du 29 juin 2016 portant modification d’une disposition en matière d’impôts directs ; 22° la loi du 14 décembre 2016 portant création d’un Fonds de dotation globale des communes.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M6" marker="6" refersTo="pm6" title="A|2017-12-20|2017-12-15|L|1097">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1097/jo">Loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2018 et modifiant : 1° le Code de la sécurité sociale ; 2° le Code du Travail ; 3° la loi modifiée du 27 décembre 1817 sur le droit de succession ; 4° la loi modifiée du 16 octobre 1934 sur l’évaluation des biens et valeurs ; 5° la loi modifiée du 16 octobre 1934 concernant l’impôt sur la fortune ; 6° la loi modifiée d’adaptation fiscale du 16 octobre 1934 ; 7° la loi modifiée du 1er décembre 1936 concernant l’impôt commercial ; 8° la loi modifiée du 17 avril 1964 portant réorganisation de l’administration des contributions directes ; 9° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 10° la loi modifiée du 10 mars 1969 portant institution d’une inspection générale des finances ; 11° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 12° la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre ; 13° la loi modifiée du 23 décembre 1998 portant création de deux établissements publics dénommés 1) Centres, foyers et services pour personnes âgées ; 2) Centres de gériatrie ; 14° la loi modifiée du 9 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 15° la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2002 ; 16° la loi modifiée du 4 juillet 2008 sur la jeunesse; 17° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 18° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 19° la loi du 25 novembre 2014 prévoyant la procédure applicable à l’échange de renseignements sur demande en matière fiscale ; 20° la loi modifiée du 27 juin 2016 concernant le soutien au développement durable des zones rurales ; 21° la loi du 29 juin 2016 portant modification d’une disposition en matière d’impôts directs ; 22° la loi du 14 décembre 2016 portant création d’un Fonds de dotation globale des communes.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M7" marker="7" refersTo="pm7" title="A|2017-12-20|2017-12-15|L|1097">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1097/jo">Loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2018 et modifiant : 1° le Code de la sécurité sociale ; 2° le Code du Travail ; 3° la loi modifiée du 27 décembre 1817 sur le droit de succession ; 4° la loi modifiée du 16 octobre 1934 sur l’évaluation des biens et valeurs ; 5° la loi modifiée du 16 octobre 1934 concernant l’impôt sur la fortune ; 6° la loi modifiée d’adaptation fiscale du 16 octobre 1934 ; 7° la loi modifiée du 1er décembre 1936 concernant l’impôt commercial ; 8° la loi modifiée du 17 avril 1964 portant réorganisation de l’administration des contributions directes ; 9° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 10° la loi modifiée du 10 mars 1969 portant institution d’une inspection générale des finances ; 11° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 12° la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre ; 13° la loi modifiée du 23 décembre 1998 portant création de deux établissements publics dénommés 1) Centres, foyers et services pour personnes âgées ; 2) Centres de gériatrie ; 14° la loi modifiée du 9 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 15° la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2002 ; 16° la loi modifiée du 4 juillet 2008 sur la jeunesse; 17° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 18° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 19° la loi du 25 novembre 2014 prévoyant la procédure applicable à l’échange de renseignements sur demande en matière fiscale ; 20° la loi modifiée du 27 juin 2016 concernant le soutien au développement durable des zones rurales ; 21° la loi du 29 juin 2016 portant modification d’une disposition en matière d’impôts directs ; 22° la loi du 14 décembre 2016 portant création d’un Fonds de dotation globale des communes.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp3">
+<note id="M8" marker="8" refersTo="pm8" title="A|2017-12-20|2017-12-15|L|1097">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2017/12/15/a1097/jo">Loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2018 et modifiant : 1° le Code de la sécurité sociale ; 2° le Code du Travail ; 3° la loi modifiée du 27 décembre 1817 sur le droit de succession ; 4° la loi modifiée du 16 octobre 1934 sur l’évaluation des biens et valeurs ; 5° la loi modifiée du 16 octobre 1934 concernant l’impôt sur la fortune ; 6° la loi modifiée d’adaptation fiscale du 16 octobre 1934 ; 7° la loi modifiée du 1er décembre 1936 concernant l’impôt commercial ; 8° la loi modifiée du 17 avril 1964 portant réorganisation de l’administration des contributions directes ; 9° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 10° la loi modifiée du 10 mars 1969 portant institution d’une inspection générale des finances ; 11° la loi modifiée du 12 février 1979 concernant la taxe sur la valeur ajoutée ; 12° la loi modifiée du 13 juin 1984 portant révision de certaines dispositions législatives régissant la perception des droits d’enregistrement, de succession et de timbre ; 13° la loi modifiée du 23 décembre 1998 portant création de deux établissements publics dénommés 1) Centres, foyers et services pour personnes âgées ; 2) Centres de gériatrie ; 14° la loi modifiée du 9 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 15° la loi modifiée du 21 décembre 2001 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2002 ; 16° la loi modifiée du 4 juillet 2008 sur la jeunesse; 17° la loi modifiée du 17 décembre 2010 fixant les droits d’accise et les taxes assimilées sur les produits énergétiques, l’électricité, les produits de tabacs manufacturés, l’alcool et les boissons alcooliques ; 18° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 19° la loi du 25 novembre 2014 prévoyant la procédure applicable à l’échange de renseignements sur demande en matière fiscale ; 20° la loi modifiée du 27 juin 2016 concernant le soutien au développement durable des zones rurales ; 21° la loi du 29 juin 2016 portant modification d’une disposition en matière d’impôts directs ; 22° la loi du 14 décembre 2016 portant création d’un Fonds de dotation globale des communes.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M9" marker="9" refersTo="pm9" title="A|2025-12-19|2025-12-19|L|591">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a591/jo">Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M10" marker="10" refersTo="pm10" title="A|2025-12-19|2025-12-19|L|591">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a591/jo">Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M11" marker="11" refersTo="pm11" title="A|2025-12-19|2025-12-19|L|591">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a591/jo">Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M12" marker="12" refersTo="pm12" title="A|2025-12-19|2025-12-19|L|591">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a591/jo">Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M13" marker="13" refersTo="pm13" title="A|2025-12-19|2025-12-19|L|591">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a591/jo">Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M14" marker="14" refersTo="pm14" title="A|2025-12-19|2025-12-19|L|591">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a591/jo">Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M15" marker="15" refersTo="pm15" title="A|2025-12-19|2025-12-19|L|591">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a591/jo">Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M16" marker="16" refersTo="pm16" title="A|2025-12-19|2025-12-19|L|591">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a591/jo">Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable.</ref> </p>
+</content>
+</note>
+</notes>
+<notes scl:type="modification" source="#rp2">
+<note id="M17" marker="17" refersTo="pm17" title="A|2025-12-19|2025-12-19|L|591">
+<content>
+<p>
+<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/12/19/a591/jo">Loi du 19 décembre 2025 concernant le budget des recettes et des dépenses de l’État pour l’exercice 2026 et modifiant : 1° le Code de la sécurité sociale ; 2° la loi modifiée du 4 décembre 1967 concernant l’impôt sur le revenu ; 3° la loi modifiée du 21 décembre 1998 concernant le budget des recettes et des dépenses de l’État pour l’exercice 1999 ; 4° la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l’État ; 5° la loi du 19 décembre 2003 portant réactivation du fonds d’équipement militaire ; 6° la loi modifiée du 4 juillet 2008 sur la jeunesse ; 7° la loi modifiée du 19 décembre 2008 relative à l’eau ; 8° la loi modifiée du 17 décembre 2010 fixant les droits d'accise et les taxes assimilées sur les produits énergétiques, l'électricité, les produits de tabacs manufacturés, l'alcool et les boissons alcooliques ; 9° la loi modifiée du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques ; 10° la loi modifiée du 24 avril 2017 portant réorganisation de l’établissement public nommé « Fonds du Logement » ; 11° la loi modifiée relative à la gestion, à l’accès, à l’utilisation de l’infrastructure ferroviaire et à la régulation du marché ferroviaire ; 12° la loi modifiée du 7 août 2023 relative au logement abordable.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 01/01/2026 : Loi du 12 juillet 2014 relative à la coordination et à la gouvernance des finances publiques et modifiant: </p>
+<ol scl:symbol="a)">
+<li>la loi modifiée du 8 juin 1999 sur le budget, la comptabilité et la trésorerie de l'Etat</li>
+<li>la loi modifiée du 10 mars 1969 portant institution d'une inspection générale des finances.</li>
+</ol>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_1er">
+<num> <b>Chapitre 1<sup>er</sup> </b> </num>
+<heading scl:separator="– " scl:style-format="b"> <b> <i>Champ d'application</i> </b> </heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_1er/20140719</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2014-07-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Au sens de la présente loi, le terme «administrations publiques» désigne, suivant les définitions du système européen des comptes nationaux et régionaux, ci-après dénommé «SEC», le secteur des administrations publiques comportant les sous-secteurs de l'administration centrale, des administrations locales et de la sécurité sociale.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_2">
+<num> <b>Chapitre 2</b> </num>
+<heading scl:separator="–" scl:style-format="b"> <b> <i>Cadre budgétaire à moyen terme</i> </b> </heading>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_2/20140719</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2014-07-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2.</num>
+<alinea>
+<content>
+<p>La situation budgétaire des administrations publiques respecte l'objectif d'équilibre des comptes tel qu'il est défini à l'article 3, paragraphe 1<sup>er</sup> du <ref href="/eli/etat/leg/loi/2013/03/29/n4/jo">traité sur la stabilité</ref>, la coordination et la gouvernance au sein de l'Union économique et monétaire, signé à Bruxelles, le 2 mars 2012, dénommé «traité» ci-après.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_3/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3.</num>
+<paragraph id="paragraph_1">
+<num>(1)</num>
+<alinea>
+<content>
+<p>L'objectif budgétaire à moyen terme du Luxembourg tel que défini par le <ref href="/eli/reg_ue/1997/1466/jo">règlement (CE) n° 1466/97</ref> du Conseil du 7 juillet 1997 relatif au renforcement de la surveillance des positions budgétaires ainsi que de la surveillance et de la coordination des politiques économiques et la trajectoire d'ajustement propre à permettre sa réalisation sont fixés par la loi de programmation financière pluriannuelle.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_2">
+<num>(2)</num>
+<alinea>
+<content>
+<p>La loi de programmation financière pluriannuelle couvre une période de cinq ans comprenant l'année en cours et les quatre années suivantes.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_3">
+<num>(3)</num>
+<alinea>
+<content>
+<p>La loi de programmation financière pluriannuelle détermine les trajectoires des soldes nominaux et structurels annuels successifs des comptes des administrations publiques ainsi que l'évolution de la dette publique et la décomposition des soldes nominaux annuels par sous-secteur des administrations publiques conformément aux dispositions du SEC.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_4">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les orientations pluriannuelles des finances publiques qui sont définies par la loi de programmation financière pluriannuelle comprennent pour chacun des exercices auxquels elle se rapporte, le montant maximal des dépenses de l'administration centrale.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_5">
+<num>(5)</num>
+<alinea>
+<content>
+<p>La loi de programmation financière pluriannuelle est accompagnée d'annexes explicatives présentant:</p>
+<ul scl:space-tab="0" scl:symbol="custom">
+<li scl:symbol="–">les calculs permettant le passage des soldes nominaux aux soldes structurels;</li>
+<li scl:symbol="–">les projections <mod class="mod-start" for="#pm2"/>à politiques inchangées<mod class="mod-end" for="#pm2"/> <noteRef href="#M2" marker="2"/>, pour la période pluriannuelle couverte, pour chaque poste majeur de dépenses et de recettes des administrations publiques, avec davantage de précisions au niveau de l'administration centrale et des administrations de sécurité sociale;</li>
+<li scl:symbol="–">la description des politiques ayant un impact sur les finances des administrations publiques <mod class="mod-start" for="#pm9"/>et la croissance durable et inclusive<mod class="mod-end" for="#pm9"/>
+<noteRef href="#M9" marker="9"/>, ventilées par postes de dépenses et de recettes importants, qui montre comment l'ajustement permet d'atteindre les objectifs budgétaires à moyen terme en comparaison des projections à politiques inchangées;<mod class="mod-start" for="#pm10"/>
+</li>
+<li scl:symbol="–">une évaluation de l’effet que, à la lumière de leur impact direct à moyen et à long terme sur les finances des administrations publiques, les politiques envisagées sont susceptibles d’avoir sur la soutenabilité à moyen et à long terme des finances publiques ainsi que sur la croissance durable et inclusive, en tenant compte des risques macrobudgétaires dus au changement climatique, de leur impact sur l’environnement et de leurs effets distributifs ;<mod class="mod-end" for="#pm10"/>
+<noteRef href="#M10" marker="10"/>
+<mod class="mod-start" for="#pm11"/>
+</li>
+<li scl:symbol="–">des informations pertinentes sur les engagements conditionnels susceptibles d’avoir un impact élevé sur les budgets publics, y compris les garanties publiques, les prêts improductifs et les passifs découlant de l’activité d’entreprises publiques, y compris leur étendue ;</li>
+<li scl:symbol="–">des informations sur les engagements conditionnels et, le cas échéant, des coûts de chocs liés aux catastrophes et au climat ;</li>
+<li scl:symbol="–">des informations sur les participations des administrations publiques au capital de sociétés privées et publiques pour des montants économiquement significatifs.<mod class="mod-end" for="#pm11"/>
+<noteRef href="#M11" marker="11"/> <mod class="mod-start" for="#pm4"/> </li>
+<li scl:symbol="–">des explications concernant des écarts entre deux lois de programmation financière pluriannuelle successives.<mod class="mod-end" for="#pm4"/> <noteRef href="#M4" marker="4"/> </li>
+</ul>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_4/20140719</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2014-07-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4.</num>
+<paragraph id="paragraph_6">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le solde structurel annuel des administrations publiques est au moins égal à l'objectif à moyen terme tel que défini à l'article 3 du <ref href="/eli/etat/leg/loi/2013/03/29/n4/jo" id="24282225-9503-44d5-a6cb-e9383db11c67">traité</ref>, ou converge rapidement vers cet objectif sur base d'une trajectoire d'ajustement propre à permettre sa réalisation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_7">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le solde structurel est le solde nominal corrigé des variations conjoncturelles, et déduction faite des mesures ponctuelles et temporaires.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_5/20140719</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2014-07-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5.</num>
+<alinea>
+<content>
+<p>La sécurité sociale et les administrations locales contribuent au respect des règles énoncées aux articles 2 à 4, selon des modalités à l'élaboration desquelles elles sont associées. Les contributions de ces secteurs sont précisées dans le cadre de la loi de programmation financière pluriannuelle.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_3">
+<num> <b>Chapitre 3</b> </num>
+<heading scl:separator="–" scl:style-format="b"> <i> <b>Mécanisme de correction en cas d'écart constaté</b> </i> </heading>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_6/20140719</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2014-07-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6.</num>
+<paragraph id="paragraph_8">
+<num>(1)</num>
+<alinea>
+<content>
+<p>Si les comptes annuels du secteur des administrations publiques présentent un écart important par rapport à l'objectif à moyen terme ou par rapport à la trajectoire d'ajustement, et sauf dans les circonstances exceptionnelles visées à l'article 3, paragraphe 3 du <ref href="/eli/etat/leg/loi/2013/03/29/n4/jo" id="8b0f8077-4c89-444e-9110-8b3d7042bef2">traité</ref>, le Gouvernement inscrit au plus tard dans le projet de budget pour l'année à venir, des mesures pour rétablir la trajectoire telle que prévue dans la loi de programmation pluriannuelle en l'absence de déviations.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_9">
+<num>(2)</num>
+<alinea>
+<content>
+<p>Un écart est considéré comme important s'il est supérieur ou égal à 0,5 pour cent du produit intérieur brut aux prix du marché sur une année donnée, ou à 0,25 pour cent du produit intérieur brut en moyenne sur deux années consécutives.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_10">
+<num>(3)</num>
+<alinea>
+<content>
+<p>L'écart est déterminé par la prise en compte des données qui figurent au titre de l'année écoulée dans la notification à fournir le 1<sup>er</sup> avril et le 1<sup>er</sup> octobre aux termes du <ref href="/eli/reg_ue/2009/479/jo">règlement (CE) n° 479/2009</ref> du Conseil du 25 mai 2009 relatif à l'application du protocole sur la procédure concernant les déficits excessifs annexés au <ref href="/eli/etat/leg/loi/2013/03/29/n4/jo" id="2dffd46b-dfd6-4ce4-add3-7ff581d6d830">traité</ref> instituant la Communauté européenne.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_4">
+<num> <b>Chapitre 4</b> </num>
+<heading scl:separator="–" scl:style-format="b"> <i> <b>Surveillance de l'application des règles par un organisme indépendant</b> </i> </heading>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_7/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7.</num>
+<paragraph id="paragraph_11">
+<num>
+<mod class="mod-start" for="#pm12"/>(1)</num>
+<alinea>
+<content>
+<p>Il est instauré un organisme indépendant sous la dénomination « Conseil national des finances publiques », ci-après « Conseil ».<mod class="mod-end" for="#pm12"/>
+<noteRef href="#M12" marker="12"/> </p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_12">
+<num> <mod class="mod-start" for="#pm1"/>(2)</num>
+<alinea>
+<content>
+<p>Le Conseil national des finances publiques se compose des membres suivants, reconnus pour leur compétence en matière financière et économique:</p>
+<ul scl:space-tab="0" scl:symbol="custom">
+<li scl:symbol="–">deux membres proposés par la Chambre des députés parmi des personnalités du secteur privé; </li>
+<li scl:symbol="–">un membre proposé par la Cour des comptes;</li>
+<li scl:symbol="–">un membre proposé par la Chambre de commerce, la Chambre des métiers et la Chambre d’agriculture; </li>
+<li scl:symbol="–">un membre proposé par la Chambre des fonctionnaires et employés publics et par la Chambre des salariés; </li>
+<li scl:symbol="–">deux membres proposés par le Gouvernement.<mod class="mod-end" for="#pm1"/> <noteRef href="#M1" marker="1"/> </li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du Conseil sont nommés et révoqués par le Grand-Duc. Ils sont nommés pour une durée renouvelable de quatre ans. En cas de vacance de poste, il est pourvu, dans le délai d'un mois, à la nomination d'un nouveau membre qui achève le mandat du membre qu'il remplace.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du Conseil exercent leur mission en toute neutralité et indépendance <mod class="mod-start" for="#pm13"/>et ne reçoivent ni ne sollicitent d’instructions d’aucun organisme public ou privé<mod class="mod-end" for="#pm13"/>
+<noteRef href="#M13" marker="13"/>. Le président est élu par les membres du Conseil, à la majorité absolue des voix.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_13">
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le Conseil est présidé par son président, ou, en cas d'absence, par le membre le plus âgé. Le Conseil se réunit sur convocation de son président aussi souvent que les intérêts du Conseil l'exigent. Le Conseil délibère valablement s'il réunit au moins quatre de ses membres. Il décide à la majorité simple des voix des membres présents. En cas d'égalité de voix, celle du président est prépondérante.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du Conseil sont tenus au secret des délibérations.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le Conseil élabore un règlement d'ordre intérieur qui arrête ses modalités de fonctionnement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_14">
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le Conseil est assisté par un secrétariat permanent qui est assuré par des fonctionnaires et employés de l'Etat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces personnes peuvent être détachées de leur administration d'origine.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_15">
+<num>(5)</num>
+<alinea>
+<content>
+<p>
+<mod class="mod-start" for="#pm14"/>Le Conseil est habilité à demander des informations économiques, financières et budgétaires auprès des organes, administrations et services de l’État.<mod class="mod-end" for="#pm14"/>
+<noteRef href="#M14" marker="14"/> Le Conseil peut procéder à l'audition des représentants des administrations compétentes dans le domaine des finances publiques, de la statistique et de la prévision économique. Le Conseil a également la possibilité de faire appel à des organismes ou à des experts du secteur privé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_16">
+<num>(6)</num>
+<alinea>
+<content>
+<p>Les indemnités et jetons de présence des membres du Conseil sont fixés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph id="paragraph_17">
+<num>(7)</num>
+<alinea>
+<content>
+<p>Les frais de fonctionnement du Conseil sont à charge du budget de l'Etat.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>
+<mod class="mod-start" for="#pm15"/>(8)</num>
+<alinea>
+<content>
+<p>Le Conseil fait régulièrement l’objet d’évaluations externes réalisées par des évaluateurs indépendants.<mod class="mod-end" for="#pm15"/>
+<noteRef href="#M15" marker="15"/>
+</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_8/20260101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2026-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8.</num>
+<alinea>
+<content>
+<p>Le Conseil national des finances publiques est chargé des missions suivantes: </p>
+<ol scl:symbol="a)">
+<li>surveillance du respect des règles énoncées aux articles 2 à 4 ci-avant, ainsi que de l'application du mécanisme de correction défini à l'article 6;</li>
+<li>évaluation <mod class="mod-start" for="#pm5"/>régulière et reposant sur des critères objectifs<mod class="mod-end" for="#pm5"/> <noteRef href="#M5" marker="5"/> des prévisions macroéconomiques et budgétaires établies aux fins de programmation financière budgétaire des administrations publiques;</li>
+<li>toutes autres évaluations découlant du paragraphe 2 de l'article 5 du <ref href="/eli/reg_ue/2013/473/jo" id="1b5dfc7f-7e27-4f35-8093-daa5ec4d5393" scl:verify="true">règlement (UE) n° 473/2013</ref> du Parlement européen et du Conseil établissant des dispositions communes pour le suivi et l'évaluation des projets de plans budgétaires et pour la correction des déficits excessifs dans les Etats membres de la zone euro.<mod class="mod-start" for="#pm16"/>
+</li>
+<li>évaluation de l’homogénéité, de la cohérence et de l’efficacité du cadre budgétaire national ;</li>
+<li>évaluation du plan budgétaire et structurel national à moyen terme, ci-après « PBSN » et des rapports d’avancements concernant le PBSN, y compris une évaluation de la conformité de la trajectoire des dépenses nettes avec les résultats budgétaires.<mod class="mod-end" for="#pm16"/>
+<noteRef href="#M16" marker="16"/>
+</li>
+</ol>
+<p>Le Conseil national des finances publiques rend publics ses constats et évaluations <mod class="mod-start" for="#pm17"/>et les présente au Gouvernement et à la Chambre des députés<mod class="mod-end" for="#pm17"/>
+<noteRef href="#M17" marker="17"/>.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_8bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_8bis/20180101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> <mod class="mod-start" for="#pm6"/>Art. 8<i>bis</i>.</num>
+<alinea>
+<content>
+<p>Au cas où l’évaluation réalisée au titre de l’article 8, point b), met à jour une importante distorsion affectant les prévisions macroéconomiques sur une période d’au moins quatre années consécutives, le STATEC prend les mesures nécessaires et les rend publiques.<mod class="mod-end" for="#pm6"/> <noteRef href="#M6" marker="6"/> </p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_5">
+<num> <b>Chapitre 5</b> </num>
+<heading scl:separator=" –" scl:style-format="b"> <i> <b>Transparence, statistiques et coordination en matière de finances publiques</b> </i> </heading>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_9/20180101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9.</num>
+<alinea>
+<content>
+<p>Au-delà des dispositions prévues <mod class="mod-start" for="#pm7"/>aux articles 9<i>bis </i>et 10<mod class="mod-end" for="#pm7"/> <noteRef href="#M7" marker="7"/> de la présente loi, les conditions et les modalités d'application des obligations suivantes énumérées aux articles 3, paragraphe 2, article 4, paragraphe 4, article 4, paragraphe 5, articles 12, ainsi que 13, paragraphes 1<sup>er</sup> et 2, pour autant qu'elles relèvent de la coordination administrative et sans préjudice de l'article 5 de la présente loi, article 14, paragraphes 1<sup>er</sup> et 3 de la directive <ref href="/eli/dir_ue/2011/85/jo">2011/85/UE</ref> du Conseil du 8 novembre 2011 sur les exigences applicables aux cadres budgétaires des Etats membres peuvent être précisées par règlement grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_9bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_9bis/20180101</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2018-01-01</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num> <mod class="mod-start" for="#pm8"/>Art. 9<i>bis</i>.</num>
+<alinea>
+<content>
+<p>Les départements ministériels communiquent à l’inspection générale des finances, endéans les dix premiers jours ouvrables du mois suivant, un état mensuel exhaustif des dépenses et des recettes des organismes relevant de leur compétence et faisant partie du périmètre de l’administration centrale telle que définie par le système européen des comptes (SEC).<mod class="mod-end" for="#pm8"/> <noteRef href="#M8" marker="8"/> </p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_6">
+<num> <b>Chapitre 6</b> </num>
+<heading scl:separator="–" scl:style-format="b"> <i> <b>Modification de la loi modifiée du 8 juin 1999 <br/>sur le budget et la comptabilité de l'Etat</b> </i> </heading>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_10/20140719</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2014-07-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10.</num>
+<alinea>
+<content>
+<p>La <ref href="/eli/etat/leg/loi/1999/06/08/n2/jo" id="d41f23ed-d3b3-43f3-af36-450cc0ba9199" scl:verify="true">loi modifiée du 8 juin 1999</ref> sur le budget, la comptabilité et la trésorerie de l'Etat est modifiée comme suit:</p>
+<ol scl:symbol="(1)">
+<li> <p>A l'article 2 il est ajouté un paragraphe 2 nouveau qui prend la teneur suivante: <mod> <quotedText> <embeddedStructure>
+<alinea>
+<content>
+<p>Au cas où le budget n'est pas voté avant le premier janvier de l'exercice auquel il s'applique, le Gouvernement présente un projet de loi l'autorisant à: </p>
+<ol scl:space-tab="0" scl:symbol="a)">
+<li>recouvrer les impôts existant au 31 décembre de l'année précédant l'exercice;</li>
+<li>rendre applicables pour un ou plusieurs mois d'autres dispositions;</li>
+<li>effectuer, pendant la même période, les dépenses figurant dans des tableaux annexés.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les recettes perçues ainsi que les dépenses engagées au cours de cette période et liquidées au cours de l'exercice sont reprises dans le budget voté de l'exercice.</p>
+</content>
+</alinea>
+</embeddedStructure> </quotedText> </mod> </p> </li>
+<li>L'article 6 est remplacé comme suit:<mod> <quotedText> <embeddedStructure>
+<alinea>
+<content>
+<p>Le projet de budget de l'année est accompagné d'un rapport sur la situation financière et budgétaire et ses perspectives d'évolution dans le cadre économique général ainsi que d'annexes explicatives faisant connaître notamment: </p>
+<ol scl:space-tab="0" scl:symbol="a)">
+<li>la situation financière des services de l'Etat à gestion séparée;</li>
+<li>l'encours des garanties accordées par l'Etat;</li>
+<li>la situation financière des fonds spéciaux, indiquant pour chaque fonds spécial son évolution pluriannuelle passée et prospective;</li>
+<li>des indications détaillées concernant l'impact des dépenses fiscales sur les recettes;</li>
+<li>les principaux paramètres des projets de budgets des sous-secteurs des administrations publiques;</li>
+<li>les informations prévues par l'article 6 du <ref href="/eli/reg_ue/2013/473/jo">règlement (UE) n° 473/2013</ref> du Parlement européen et du Conseil établissant des dispositions communes pour le suivi et l'évaluation des projets de plans budgétaires et pour la correction des déficits excessifs dans les Etats membres de la zone euro;</li>
+<li>les calculs permettant le passage du budget tel qu'il est établi selon les règles de la présente loi, vers une présentation des recettes, des dépenses et de la capacité ou du besoin de financement de l'ensemble des administrations publiques, détaillée par sous-secteurs et exprimée selon les règles de la comptabilité nationale et de l'Union européenne;</li>
+<li>l'évolution pluriannuelle des recettes et des dépenses de l'Etat sur une période mobile de cinq ans, comprenant l'année en cours, l'année auquel se rapporte le projet de budget ainsi que les trois exercices financiers qui suivent.</li>
+</ol>
+</content>
+</alinea>
+</embeddedStructure> </quotedText> </mod> </li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_7">
+<num> <b>Chapitre 7</b> </num>
+<heading scl:separator="–" scl:style-format="b"> <b> <i>Modification de la loi modifiée du 10 mars 1969 <br/>portant institution d'une inspection générale des finances</i> </b> </heading>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_11/20140719</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2014-07-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11.</num>
+<alinea>
+<content>
+<p>L'article 9, paragraphe 2 de la <ref href="/eli/etat/leg/loi/1969/03/10/n1/jo" id="0e8507d5-0e13-449b-aec2-2c68c64481e2" scl:verify="true">loi modifiée du 10 mars 1969</ref> portant institution d'une inspection générale des finances est modifié comme suit:<mod> <quotedText> <embeddedStructure>
+<alinea>
+<content>
+<p>Au paragraphe 2, deuxième alinéa, le mot «onze» est remplacé par le mot «quinze».</p>
+</content>
+</alinea>
+</embeddedStructure> </quotedText> </mod>
+</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_8">
+<num> <b>Chapitre 8</b> </num>
+<heading scl:separator="–" scl:style-format="b"> <b> <i>Intitulé</i> </b> </heading>
+<article id="art_12">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_12</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2/art_12/20140719</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2014/07/12/n2</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2014-07-19</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 12.</num>
+<alinea>
+<content>
+<p>La référence à la présente loi pourra se faire sous une forme abrégée en utilisant les termes «<ref href="???" scl:verify="true">loi du 12 juillet 2014</ref> relative à la coordination et à la gouvernance des finances publiques».</p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

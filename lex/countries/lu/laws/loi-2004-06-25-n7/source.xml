@@ -1,0 +1,1471 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="">
+		<meta>
+			<identification source="#2004A17981">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2004-06-25" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MAC"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2004-06-25" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2004-06-25" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2004-06-25</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2004-07-15</scl:jolux>
+						<scl:jolux scl:name="historicalLegalId">2004A17981</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2004-07-19</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2004/120</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MAC</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/854</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#BaseAct</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 23/12/2022 : Loi du 25 juin 2004 portant réorganisation des instituts culturels de l’Etat.</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Loi du 25 juin 2004 portant réorganisation des instituts culturels de l’Etat.</scl:jolux>
+					<scl:jolux scl:name="draft">http://data.legilux.public.lu/eli/etat/proj/PL/20030235</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/rgd/2000/07/28/n5/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1987/03/09/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1986/03/28/n3/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1979/04/16/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1963/06/17/n1/jo</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1991/11/14/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/loi/1989/05/18/n1/jo</scl:jolux>
+					<scl:jolux scl:name="repeals">http://data.legilux.public.lu/eli/etat/leg/loi/1988/12/28/n1/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo/fr</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2004/120/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="memorialPage">1798</scl:jolux>
+					<scl:jolux scl:name="memorialSequence">1</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2004-06-25-n7-jo-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/jo/fr</scl:jolux>
+					<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2004/120/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="memorialPage">1798</scl:jolux>
+					<scl:jolux scl:name="memorialSequence">1</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2004/a120/fr/pdf/eli-etat-leg-memorial-2004-a120-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2004-06-25" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2022-12-23" id="e12" originatingExpression="true" source="#rp12" type="amendment"/>
+				<eventRef date="2022-12-23" id="e11" originatingExpression="true" source="#rp11" type="amendment"/>
+				<eventRef date="2022-12-23" id="e10" originatingExpression="true" source="#rp10" type="amendment"/>
+				<eventRef date="2022-12-23" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+				<eventRef date="2022-12-23" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+				<eventRef date="2022-12-23" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+				<eventRef date="2022-12-23" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+				<eventRef date="2022-12-23" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+				<eventRef date="2022-12-23" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+				<eventRef date="2022-12-23" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+				<eventRef date="2022-12-23" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/loi/2022/12/16/a637/jo"/>
+						<destination/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/loi/2004/06/25/n7/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/loi/2022/12/16/a637/jo" id="rp2" showAs="Loi du 16 décembre 2022 portant modification de la loi modifiée du 25 juin 2004 portant réorganisation des instituts culturels de l’État."/>
+				<passiveRef href="/eli/etat/leg/loi/2022/02/25/a80/jo" id="rp3" showAs="Loi du 25 février 2022 relative au patrimoine culturel et modifiant : 1° la loi modifiée du 4 mars 1982 a) portant création d’un Fonds culturel national ; b) modifiant et complétant les dispositions fiscales tendant à promouvoir le mécénat et la philanthropie ; 2° la loi modifiée du 25 juin 2004 portant réorganisation des instituts culturels de l’État ; 3° la loi modifiée du 18 juillet 2018 concernant la protection de la nature et des ressources naturelles ; 4° la loi du 17 août 2018 relative à l’archivage."/>
+				<passiveRef href="/eli/etat/leg/loi/2018/08/17/a706/jo" id="rp4" showAs="Loi du 17 août 2018 sur l’archivage et portant modification 1° de la loi modifiée du 25 juin 2004 portant réorganisation des instituts culturels de l’État ; 2° de la loi électorale modifiée du 18 février 2003 ; 3° du décret modifié du 18 juin 1811 contenant règlement pour l’administration de la justice en matière criminelle, de police correctionnelle, et de simple police, et tarif général des frais."/>
+				<passiveRef href="/eli/etat/leg/loi/2018/07/20/a646/jo" id="rp5" showAs="Loi du 20 juillet 2018 relative à la promotion de la langue luxembourgeoise et portant modification 1° de la loi modifiée du 25 juin 2004 portant réorganisation des instituts culturels de l'État ; 2° de la loi modifiée du 9 décembre 2005 déterminant les conditions et modalités de nomination de certains fonctionnaires occupant des fonctions dirigeantes dans les administrations et services de l'État ; 3° de la loi modifiée du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d'avancement des fonctionnaires de l'État ; 4° de la loi du 15 décembre 2017 concernant le budget des recettes et des dépenses de l’État pour l'exercice 2018."/>
+				<passiveRef href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="rp6" showAs="Loi du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d'avancement des fonctionnaires de l'Etat."/>
+				<passiveRef href="/eli/etat/leg/rgd/2014/09/17/n1/jo" id="rp7" showAs="Règlement grand-ducal du 17 septembre 2014 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+				<passiveRef href="/eli/etat/leg/rgd/2012/10/15/n1/jo" id="rp8" showAs="Règlement grand-ducal du 15 octobre 2012 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l’Etat."/>
+				<passiveRef href="/eli/etat/leg/rgd/2010/09/14/n5/jo" id="rp9" showAs="Règlement grand-ducal du 14 septembre 2010 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l’Etat."/>
+				<passiveRef href="/eli/etat/leg/loi/2010/06/24/n1/jo" id="rp10" showAs="Loi du 24 juin 2010 relative aux bibliothèques publiques."/>
+				<passiveRef href="/eli/etat/leg/rgd/2007/07/24/n10/jo" id="rp11" showAs="Règlement grand-ducal du 24 juillet 2007 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+				<passiveRef href="/eli/etat/leg/rgd/2005/09/30/n1/jo" id="rp12" showAs="Règlement grand-ducal du 30 septembre 2005 fixant le nombre des emplois des différentes fonctions du cadre fermé pour les diverses carrières dans les administrations et services de l'Etat."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2022-12-19|2022-12-16|L|637">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2022/12/16/a637/jo">Loi du 16 décembre 2022 portant modification de la loi modifiée du 25 juin 2004 portant réorganisation des instituts culturels de l’État.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle>
+				<p>Version consolidée applicable au 23/12/2022 : Loi du 25 juin 2004 portant réorganisation des instituts culturels de l’Etat.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<chapter id="chapitre_1er">
+				<num>
+					<mod class="mod-start" for="#pm1"/>Chapitre 1<sup>er</sup>.-</num>
+				<heading scl:separator=" " scl:style-format="b">Généralités</heading>
+				<article id="art_1er">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_1er</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_1er/20040719</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 1<sup>er</sup>.</num>
+					<alinea>
+						<content>
+							<p>Les instituts culturels de l’État comprennent les Archives nationales, la Bibliothèque nationale du Luxembourg, le Centre national de l’audiovisuel, le Centre national de littérature, l’Institut national pour le patrimoine architectural, l’Institut national de recherches archéologiques, le Musée national d’archéologie, d’histoire et d’art et le Musée national d’histoire naturelle. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_2">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_2</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_2/20040719</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 2.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 2.</num>
+					<alinea>
+						<content>
+							<p>Les instituts culturels de l’Etat sont placés sous la tutelle du ministre ayant dans ses attributions la Culture, désigné ci-après par le terme «ministre».</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_3">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_3</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_3/20040719</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 3.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 3.</num>
+					<paragraph id="paragraph_30">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>Sans préjudice des missions spécifiques définies pour chaque institut, les missions générales des instituts culturels de l’État, dans le domaine propre à chacun, sont la collecte, la description et la documentation, l’étude scientifique, l’enrichissement, la conservation, la préservation et la valorisation du patrimoine culturel ainsi que l’éducation et la formation y relatives, par tous les moyens et méthodes nécessaires, y compris les technologies du numérique.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_31">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>Les instituts culturels de l’État peuvent : </p>
+								<ol scl:start="1" scl:symbol="1°">
+									<li>rechercher la collaboration d’instituts similaires au niveau national et international ;</li>
+									<li>faire appel à des experts et chercheurs ;</li>
+									<li>publier des ouvrages scientifiques et didactiques sans préjudice des dispositions légales en vigueur.</li>
+								</ol>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_32">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>Les instituts culturels sont des instituts de recherche entreprenant, dans les domaines qui les concernent, des activités de recherche au sens de l’article 3, paragraphe 8, point 3, de la <ref href="/eli/etat/leg/loi/1999/05/31/n8/jo" id="4921c5c9-4f4b-408d-998d-7c3b19341cb3" scl:verify="true">loi modifiée du 31 mai 1999</ref> portant création d’un fonds national de la recherche dans le secteur public et contribuent aux efforts nationaux de recherche et de développement.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_33">
+						<num>(4)</num>
+						<alinea>
+							<content>
+								<p>Les instituts culturels de l’État constituent et entretiennent des collections publiques.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Ils établissent et tiennent à jour un inventaire de leurs collections publiques au sens de la <ref href="/eli/etat/leg/loi/2022/02/25/a80/jo" id="1ac2aa7d-f30a-41a9-9ba1-2b7d9b10d377" scl:verify="true">loi du 25 février 2022</ref> relative au patrimoine culturel.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Ils peuvent accepter des prêts et, avec l’approbation du ministre, prendre en dépôt des objets et des collections et accepter des dons et des legs faits au profit de l’État, sous réserve des conditions prévues à l’article 910 du <ref href="/eli/etat/leg/code/civil" id="f69ce2cf-d3c8-4573-b8e3-4ee5c1c2ad2a">Code civil</ref>.</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_34">
+						<num>(5)</num>
+						<alinea>
+							<content>
+								<p>Chaque institut culturel publie annuellement un rapport d’activités.</p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_4">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_4</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_4/20040719</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 4.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 4.</num>
+					<alinea>
+						<content>
+							<p>La direction de chacun des instituts culturels de l’Etat est confiée à un directeur qui a sous ses ordres le personnel de son institut. Il dirige, coordonne et surveille les activités des services et sections qui lui soumettront chaque année un rapport d’activité et un projet de programme pour l’année suivante.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p> Le directeur peut être assisté d’un nombre maximal de deux directeurs adjoints auxquels il peut déléguer certaines de ses attributions et qui le remplacent en cas d’absence.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>A la demande du ministre, les directeurs des instituts culturels de l’Etat se réunissent en conférence des directeurs pour délibérer de problèmes communs aux différents instituts.</p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_5">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_5</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_5/20040719</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 5.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 5.</num>
+					<alinea>
+						<content>
+							<p>Il peut être institué une commission d’accompagnement auprès de chaque institut culturel de l’Etat, ceci afin de conseiller la direction en ce qui concerne le fonctionnement de leur institut. La composition, les attributions et le fonctionnement des commissions d’accompagnement sont arrêtés par règlement grand-ducal. Les membres des commissions d’accompagnement ont droit à un jeton de présence dont le montant est fixé par le Gouvernement en Conseil.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Afin de guider et d’accompagner l’institut culturel dans ses missions, un comité scientifique peut être mis en place. Ce comité, composé d’experts dans le domaine du patrimoine culturel ou naturel géré par l’institut culturel en question, est nommé par le ministre sur avis du directeur. Les experts ont droit à un jeton de présence dont le montant est déterminé par règlement grand-ducal. </p>
+						</content>
+					</alinea>
+				</article>
+				<article id="art_6">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_6</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_6/20040719</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 6.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 6.</num>
+					<alinea>
+						<content>
+							<p>Sans préjudice des dispositions des articles qui suivent et qui ont trait aux missions spécifiques de chaque institut, les attributions des instituts culturels de l’Etat, les modalités de leur fonctionnement ainsi que leurs relations avec les tiers peuvent être précisées par des règlements grand-ducaux.</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Des règlements grand-ducaux peuvent créer des sections, départements, divisions, services et centres auprès des instituts culturels de l’Etat.</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+			<chapter id="chapitre_2">
+				<num>Chapitre 2.-</num>
+				<heading scl:separator=" " scl:style-format="b">Les différents instituts culturels de l’Etat</heading>
+				<section id="chapitre_2.section_i">
+					<num scl:align="left">
+						<i>I</i>.</num>
+					<heading scl:separator=" – " scl:style-format="n">
+						<i>Archives nationales</i>
+					</heading>
+					<article id="art_7">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_7</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_7/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 7.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 7.</num>
+						<alinea>
+							<content>
+								<p>Les Archives nationales ont pour missions :</p>
+								<ol scl:start="1" scl:symbol="1.">
+									<li>de collecter, de réunir, de conserver, de classer, d’inventorier, d’étudier et de communiquer des documents d’intérêt historique, scientifique, économique, sociétal et culturel national ;</li>
+									<li>de conseiller les producteurs ou détenteurs d’archives, publiques ou privées, sur le classement, l’inventorisation et la conservation de leurs archives ; </li>
+									<li>d’assurer l’encadrement et d’élaborer des recommandations sur la manière d’organiser, de gérer, de conserver les archives publiques et de les verser aux Archives nationales ;</li>
+									<li>d’accepter des archives privées par don, legs ou dépôt en vue de leur intégration ou de leur mise en dépôt aux Archives nationales et d’acquérir au profit de l’État des archives privées d’intérêt historique, scientifique, économique, sociétal ou culturel ;</li>
+									<li>d’assurer la protection et la préservation des archives publiques et des archives privées classées conformément à la loi sur l’archivage ;</li>
+									<li>d’organiser des expositions temporaires, des colloques, des conférences ainsi que des activités pédagogiques qui sont en rapport avec ses activités dans le but de valoriser le patrimoine archivistique national et de sensibiliser le public à l’importance de la conservation de ce patrimoine ; </li>
+									<li>de sensibiliser les institutions, administrations et services publics aux techniques de l’archivage et à la conservation des documents d’intérêt historique, scientifique, économique, sociétal et culturel national ;</li>
+									<li>de contribuer au développement de l’archivistique au niveau national et au niveau international.</li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_8">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_8</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_8/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 8.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 8.</num>
+						<heading>(abrogé)</heading>
+                        <alinea>
+                            <content>
+                                <p/>
+                            </content>
+                        </alinea>
+					</article>
+				</section>
+				<section id="chapitre_2.section_ii">
+					<num>
+						<i>II</i>.</num>
+					<heading scl:separator=" – " scl:style-format="n">
+						<i>Bibliothèque nationale du Luxembourg</i>
+					</heading>
+					<article id="art_9">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_9</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_9/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 9.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 9.</num>
+						<alinea>
+							<content>
+								<p>La Bibliothèque nationale du Luxembourg a pour missions :</p>
+								<ol scl:start="1" scl:symbol="1°">
+									<li>en sa qualité de bibliothèque patrimoniale, de collecter, de décrire, de documenter, d’étudier, d’enrichir, de conserver, de préserver, de valoriser et de rendre accessible au public le patrimoine culturel par tous les moyens et méthodes nécessaires, y compris les technologies du numérique ; à ce titre :<ol scl:start="1" scl:symbol="a)">
+											<li>elle exerce ses missions relatives au dépôt légal tel que défini à l’article 10 et gère les fonds, constituant les collections de la Bibliothèque nationale du Luxembourg, qui en sont issus ;</li>
+											<li>elle complète ces fonds par l’acquisition des publications, imprimées ou produites par un autre procédé que l’imprimerie, anciennes ou contemporaines, parues à l’étranger et se rapportant au Grand-Duché de Luxembourg, à ses ressortissants ou à ses habitants, ou créées par des auteurs luxembourgeois ou liés au Grand-Duché ;</li>
+											<li>elle constitue et diffuse la bibliographie nationale des publications entrées par dépôt légal et acquis en complément du dépôt légal ;</li>
+											<li>elle gère les fonds spéciaux des manuscrits, des imprimés rares et précieux, des documents musicaux, des documents iconographiques (gravures, estampes, livres illustrés et d’artiste), des cartes, plans, atlas et vues, des affiches, des cartes postales, des documents éphémères et de l’histoire des bibliothèques et du livre au Luxembourg.</li>
+										</ol>
+									</li>
+									<li>en sa qualité de bibliothèque scientifique et de recherche, de collecter, de décrire, de documenter, d’étudier, d’enrichir, de conserver et de valoriser des collections d’origine non luxembourgeoise d’imprimés, de publications numériques, de bases de données, et de documents audiovisuels et sonores ;</li>
+									<li>d’assurer l’accès du plus grand nombre aux collections, y compris par le prêt, la consultation en salles de lecture et à distance, en utilisant les technologies les plus modernes de transmission de données ;</li>
+									<li>de gérer les systèmes informatiques de bibliothèques et les outils de gestion connexes utilisés en commun par les bibliothèques membres du réseau national des bibliothèques luxembourgeoises et par les bibliothèques membres du consortium luxembourgeois pour l’acquisition et la gestion de publications numériques ;</li>
+									<li>de gérer et de publier le fichier national des données fondées sur la description en entités (personnes, collectivités, œuvres et expressions) ;</li>
+									<li>de coordonner le réseau national des bibliothèques luxembourgeoises et le consortium luxembourgeois pour l’acquisition et la gestion de publications numériques ;</li>
+									<li>de coordonner la gestion des métadonnées (catalogage, indexation, autorités) et de mettre en application les standards, normes et protocoles bibliothéconomiques homogènes, compatibles avec les standards internationaux, en vue de gérer le catalogue collectif national de ces bibliothèques ;</li>
+									<li>d’assurer la formation permanente des membres du réseau national des bibliothèques luxembourgeoises en rapport avec l’utilisation des outils et services informatiques et bibliothéconomiques du réseau ;</li>
+									<li>de gérer les agences nationales ISBN, ISSN, ISMN et d’assurer l’enregistrement et la gestion d’identifiants numériques, y compris ISNI et ARK ;</li>
+									<li>de contribuer au développement de la bibliothéconomie au niveau national et au niveau international ;</li>
+									<li>de gérer le service de bibliothèque circulante ;</li>
+									<li>de mener des projets de recherches scientifiques sur ses propres collections et activités en relation avec ses missions par la publication d’ouvrages scientifiques, par l’organisation de colloques et d’expositions temporaires, ou encore par la création de bourses d’études ; </li>
+									<li>d’organiser des conférences ainsi que des activités pédagogiques et culturelles.</li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_10">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_10</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_10/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 10.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 10.</num>
+						<alinea>
+							<content>
+								<p>Les publications avec support matériel de toute nature, imprimées ou produites par un procédé autre que l’imprimerie, quels que soient leur procédé technique de production, leur support, leur procédé d’édition ou de diffusion, à l’exception des publications audiovisuelles et sonores visées à l’article 19, mais y compris les bases de données, les logiciels et progiciels, les systèmes experts et autres produits de l’intelligence artificielle, éditées sur le territoire national et mises à disposition du public par la vente ou par la distribution gratuite ou par la location, sont soumises à la formalité du dépôt légal en faveur de la Bibliothèque nationale du Luxembourg.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Sont également soumises à la formalité du dépôt légal, les publications sans support matériel mises à disposition du public par un procédé de communication électronique. En sont exclues les publications privées ayant lieu dans un réseau fermé.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Le nombre des exemplaires à déposer par la personne physique ou morale responsable des publications visées à l’alinéa précédent est de cinq unités au maximum. </p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Au moins un exemplaire des ouvrages ayant trait à la langue et à la littérature luxembourgeoises et collecté au titre du dépôt légal, doit être transféré dans le mois de son dépôt au Centre national de littérature visé à l’article 21 et suivants.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Un règlement grand-ducal détermine tout ce qui a trait à la mise en oeuvre du dépôt légal et à la distribution des publications ainsi collectées. Il définit notamment la nature des publications soumises au dépôt légal, les personnes physiques ou morales devant effectuer le dépôt ainsi que les délais endéans lesquels le dépôt doit être effectué.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_11">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_11</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_11/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 11.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 11. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_2.section_iii">
+					<num>
+						<i>III</i>.</num>
+					<heading scl:separator=" " scl:style-format="n">
+						<i>Musée national d’archéologie, d’histoire et d’art</i>
+					</heading>
+					<article id="art_12">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_12</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_12/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 12.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 12.</num>
+						<alinea>
+							<content>
+								<p>Le Musée national d’archéologie, d’histoire et d’art a pour missions :</p>
+								<ol scl:start="1" scl:symbol="1°">
+									<li>de réunir, d’étudier, de conserver, de développer, d’exposer, de publier et de valoriser des collections nationales et internationales dans les domaines des beaux-arts, des arts appliqués, de l’archéologie, de la numismatique et de l’histoire ;</li>
+									<li>d’organiser sur les différents sites muséaux qu’il gère des expositions temporaires, des colloques, des conférences ainsi que des activités scientifiques, pédagogiques et éducatives en rapport avec ses activités ;</li>
+									<li>de réunir et de conserver des archives ainsi que des bibliothèques thématiques en rapport avec ses activités ;</li>
+									<li> de mener des recherches scientifiques en relation avec les collections qui lui sont confiées ;</li>
+									<li>dans le cadre du Centre de documentation sur la Forteresse de Luxembourg, de mener des recherches scientifiques ayant trait à la forteresse, à l’histoire moderne et à l’identité nationale du Luxembourg valorisées au sein du Musée de la Forteresse dénommé « Musée Dräi Eechelen » ;</li>
+									<li>dans le cadre du Centre de documentation sur les arts plastiques dénommé « Lëtzebuerger Konschtarchiv », de documenter et de répertorier la production dans le domaine des arts plastiques, de mener des recherches scientifiques sur les arts plastiques au Luxembourg et de développer un dictionnaire des arts plastiques au Luxembourg ;</li>
+									<li> de collaborer à la création et à la gestion de musées régionaux et locaux d’histoire, d’archéologie et d’art ; </li>
+									<li> de coopérer avec la Commission pour le patrimoine culturel ainsi que la Commission de circulation des biens culturels ; </li>
+									<li> de gérer les sites, le « Nationalmusée Um Fëschmaart - Archéologie, Histoire, Art » à Luxembourg-Ville-Haute, le Musée de la Forteresse dénommé « Musée Dräi Eechelen - Forteresse, Histoire, Identités » à Luxembourg-Kirchberg et la Villa romaine à Echternach ainsi que d’autres dépendances muséales, éducatives, scientifiques et techniques.</li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_13">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_13</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_13/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 13.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 13. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_2.section_iv">
+					<num>
+						<i>IV</i>.</num>
+					<heading scl:separator=" – " scl:style-format="n">
+						<i>Musée national d’histoire naturelle</i>
+					</heading>
+					<article id="art_14">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_14</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_14/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 14.</num>
+						<alinea>
+							<content>
+								<p>Le Musée national d’histoire naturelle a pour missions : </p>
+								<ol scl:start="1" scl:symbol="1°">
+									<li>d’étudier et de documenter le patrimoine naturel et de contribuer à la conservation de la biodiversité et de la géodiversité ;</li>
+									<li>de gérer, de conserver, de préserver et de développer les collections nationales du patrimoine naturel et la base nationale de données scientifiques sur la biodiversité et de les rendre accessibles au public ;</li>
+									<li>d’effectuer des inventaires, d’entreprendre des prospections et de procéder à des fouilles paléontologiques, minéralogiques et géologiques, de surveiller de telles fouilles pratiquées par des organismes publics ou privés et des particuliers en collaboration étroite avec l’Institut national de recherches archéologiques ;</li>
+									<li>d’initier, de réaliser et de soutenir des travaux de recherche et des publications scientifiques et de collaborer avec des particuliers, des organismes publics ou privés concernés ;</li>
+									<li>de contribuer à la promotion de la culture scientifique et de sensibiliser le public à la connaissance et à la conservation du patrimoine naturel national et international par l’exploitation d’un musée et par la présentation de thèmes de sciences naturelles grâce à des expositions, des publications, des formations, des conférences, des colloques et des activités éducatives ;</li>
+									<li>de collaborer avec des musées régionaux et locaux ;</li>
+									<li>de gérer des dépendances scientifiques, muséales, éducatives et techniques.</li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_15">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_15</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_15/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 15.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 15. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_2.section_v">
+					<num>
+						<i>V</i>.</num>
+					<heading scl:separator=" " scl:style-format="n">
+						<i>Institut national pour le patrimoine architectural</i>
+					</heading>
+					<article id="art_16">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_16</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_16/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 16.</num>
+						<alinea>
+							<content>
+								<p>L’Institut national pour le patrimoine architectural a pour missions : </p>
+								<ul scl:symbol="dash">
+									<li>l’étude, la conservation, la protection et la mise en valeur du patrimoine architectural et du patrimoine industriel mobilier et des biens culturels meublant les édifices religieux ; </li>
+									<li>l’établissement et la tenue à jour d’un inventaire du patrimoine architectural au sens de l’article 23 de la <ref href="/eli/etat/leg/loi/2022/02/25/a80/jo" id="23e5feb3-974b-421f-a979-b467d13db8d0" scl:verify="true">loi du 25 février 2022</ref> relative au patrimoine culturel ; </li>
+									<li>de proposer la création des secteurs protégés d’intérêt national ; </li>
+									<li>de surveiller l’exécution des travaux réalisés sur des immeubles classés comme patrimoine culturel national et de conseiller et d’assister les maîtres d’ouvrages ; </li>
+									<li>d’organiser des campagnes de sensibilisation, des expositions et des conférences sur le patrimoine architectural ; </li>
+									<li>de coordonner et de surveiller les initiatives publiques en matière de restauration du patrimoine architectural ;</li>
+								</ul>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_17">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_17</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_17/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 17. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_2.section_vi">
+					<num>
+						<i>VI</i>.</num>
+					<heading scl:separator=" – " scl:style-format="n">
+						<i>Centre national de l’audiovisuel</i>
+					</heading>
+					<article id="art_18">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_18</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_18/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 18.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 18.</num>
+						<alinea>
+							<content>
+								<p>Le Centre national de l’audiovisuel a pour missions : </p>
+								<ol scl:start="1" scl:symbol="1°">
+									<li>de collecter, de conserver, de cataloguer, d’enrichir, de numériser, de pérenniser et de rendre accessible au public, dans le respect de la politique de collecte du Centre national de l’audiovisuel, les documents ayant trait au patrimoine audiovisuel, photographique et sonore national auxquels peuvent être joints des documents produits à l’étranger et notamment ceux présentant une importance significative pour ce même patrimoine ;</li>
+									<li>de mener des recherches scientifiques en relation avec les collections qui lui sont confiées ; </li>
+									<li>de mener, en collaboration avec les instances concernées, des activités de sensibilisation, d’éducation et de formation à l’image et aux médias pour le public, les enseignants et les professionnels ;</li>
+									<li>de produire ou faire produire des œuvres et publications relevant des domaines audiovisuel, photographique et sonore présentant un intérêt culturel significatif pour la communauté nationale et internationale ou qui s’avèrent nécessaires pour l’accomplissement des missions dévolues à l’établissement ; </li>
+									<li>de soutenir la création et la diffusion de projets, œuvres et publications relevant des domaines audiovisuel, photographique et sonore ;</li>
+									<li>d’organiser ou promouvoir des manifestations publiques à caractère artistique et éducatif qui relèvent des domaines audiovisuel, photographique et sonore ; </li>
+									<li>d’organiser sur les différents sites de l’institut et sur d’autres établissements de l’État et d’institutions ou organismes culturels au niveau national et international des expositions temporaires ou permanentes, des colloques, des projections, des conférences ainsi que d’autres manifestations en rapport avec ses activités ;</li>
+									<li>d’acquérir et de rendre accessibles au grand public et à un public spécialisé une documentation nationale et internationale relative aux domaines de l’audiovisuel, de la photographie et du sonore sur différents supports, physiques et numériques ;</li>
+									<li>de documenter, sans distinction de langue, la production et la diffusion audiovisuelle, photographique et sonore au Luxembourg ; </li>
+									<li>de gérer les différents sites se composant d’un bâtiment principal à Dudelange, le site du château d’eau à Dudelange, l’ancienne Brasserie de Lannoy, appelée « Brahaus », à Clervaux ainsi que la partie du château de Clervaux mis à sa disposition ;</li>
+									<li>de conseiller les administrations publiques et communales sur les procédés de collecte, de circulation, de traitement et d’archivage des documents audiovisuels, photographiques et sonores ;</li>
+									<li>de collaborer, dans l’exécution des travaux courants, avec les établissements de l’État et des communes et de coordonner ses activités avec celles des autres institutions culturelles dans l’intérêt de la mise en valeur du patrimoine national ;</li>
+									<li>de collaborer avec des instituts et associations au niveau national et international.</li>
+								</ol>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>La Médiathèque du Centre national de l’audiovisuel a un rôle de promotion de l’audiovisuel, de la photographie et du son. La Médiathèque est intégrée au réseau national des bibliothèques luxembourgeoises et fait partie du conseil supérieur des bibliothèques.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_19">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_19</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_19/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 19.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 19.</num>
+						<alinea>
+							<content>
+								<p>Les documents audiovisuels et sonores, à l’exception des documents photographiques, produits sur le territoire national, quel que soit leur procédé technique de production, d’édition ou de diffusion et mis à disposition du public par la vente ou par la distribution ou par la location à titre gratuit ou onéreux ou cédés pour la reproduction ou diffusés sur le territoire national, sur support matériel ou sans support matériel, sont soumis au dépôt légal en faveur du Centre national de l’audiovisuel. Il en est de même pour les œuvres audiovisuelles multimédias, groupant divers supports, notamment des ensembles qui ne peuvent être dissociés.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Un règlement grand-ducal détermine la mise en œuvre du dépôt légal. Il définit la nature des documents soumis au dépôt légal, les personnes physiques ou morales devant effectuer le dépôt, ainsi que le nombre d’exemplaires et les délais endéans lesquels le dépôt doit être effectué.</p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_20">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_20</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_20/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 20. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_2.section_vii">
+					<num>
+						<i>VII</i>.</num>
+					<heading scl:separator=" – " scl:style-format="n">
+						<i>Centre national de littérature</i>
+					</heading>
+					<article id="art_21">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_21</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_21/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 21.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 21.</num>
+						<alinea>
+							<content>
+								<p>Le Centre national de littérature a pour missions : </p>
+								<ol scl:start="1" scl:symbol="1°">
+									<li>de collecter, de conserver, de cataloguer, de numériser et de rendre accessible au public tout ce qui a trait au patrimoine national de la littérature et des arts du spectacle ;</li>
+									<li>d’assurer, sans distinction de langue, la documentation et la recherche sur la littérature, les arts du spectacle et la vie littéraire du Luxembourg, notamment : <ol scl:start="1" scl:symbol="a)">
+											<li>par la recherche fondamentale et appliquée sur les auteurs et professionnels du théâtre, l’histoire et les genres littéraires ;</li>
+											<li>par le biais de publications ;</li>
+											<li>par le biais d’expositions ;</li>
+											<li>par le biais de projets d’édition ;</li>
+											<li>par des projets dans le domaine des humanités numériques ;</li>
+											<li>par la mise à la disposition de chercheurs luxembourgeois et étrangers des informations nécessaires et en les assistant dans leurs travaux.</li>
+										</ol>
+									</li>
+									<li>de promouvoir la création, la traduction, la diffusion ainsi que la réception d’œuvres littéraires luxembourgeoises ;</li>
+									<li>de proposer son expertise en matière de questions de littérature et des arts du spectacle ; </li>
+									<li>de soutenir les initiatives visant à la promotion de la littérature luxembourgeoise, de la lecture et du théâtre au Luxembourg et à l’étranger, notamment :<ol scl:start="1" scl:symbol="a)">
+											<li>en conseillant et en assistant dans le domaine en question les organismes publics et privés ainsi que les particuliers qui en font la demande ;</li>
+											<li>en collaborant à des manifestations et à des projets liés au domaine littéraire ;</li>
+											<li>en soutenant la concertation publique en matière de littérature multilingue ;</li>
+										</ol>
+									</li>
+									<li>d’offrir au public un programme d’animation socioculturelle, notamment en organisant des expositions et des représentations publiques ainsi que des conférences, des colloques et des manifestations à caractère scientifique et culturel en rapport avec ses missions ;</li>
+									<li>d’assurer, en collaboration avec les instances concernées, un programme éducatif et pédagogique, dont la formation continue pour enseignants et acteurs du secteur littéraire, théâtral et archivistique ainsi que des activités spécifiques pour des groupes d’étudiants, d’élèves et de jeunes en visite.</li>
+								</ol>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_22">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_22</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_22/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 22.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 22. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_23">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_23</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_23/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 23.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 23.</num>
+						<alinea>
+							<content>
+								<p>Il est créé auprès du Centre national de littérature un Conseil national du livre, qui, en tant qu’organe consultatif, a pour mission d’analyser les demandes d’aide et de subvention adressées au ministre ayant la Culture dans ses attributions, selon leur objectif de promouvoir la création littéraire et sa diffusion. Il a en outre pour mission d’étudier les dossiers lui soumis par ledit ministre en rapport avec la création littéraire, les prix littéraires nationaux ou le domaine de l’édition.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Il est composé d’un maximum de quinze personnes représentant les différents domaines de la culture littéraire au Luxembourg, nommées par arrêté grand-ducal pour une durée renouvelable de trois ans. Des experts peuvent lui être adjoints.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les membres du Conseil national du livre ont droit à un jeton de présence dont le montant est fixé par le Gouvernement en Conseil</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Un règlement grand-ducal détermine les modalités de fonctionnement du Conseil national du livre. </p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_24">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_24</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_24/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 24.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 24. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_2.section_viii">
+					<num>
+						<i>VIII</i>.</num>
+					<heading scl:separator=" –" scl:style-format="n">
+						<i>Institut national de recherches archéologiques</i>
+					</heading>
+					<article id="art_24bis">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_24bis</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_24bis/20221223</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 24bis.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 24bis.</num>
+						<paragraph id="paragraph_35">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>L’Institut national de recherches archéologiques a pour missions :</p>
+									<ol scl:start="1" scl:symbol="1°">
+										<li>d’étudier, de protéger, de conserver et de valoriser le patrimoine archéologique national ;</li>
+										<li>d’organiser et de promouvoir toutes formes de recherches scientifiques en archéologie ;</li>
+										<li>de traiter les dossiers relatifs à l’archéologie préventive et les demandes d’évaluation archéologique qui lui sont adressées dans le cadre de la <ref href="/eli/etat/leg/loi/2022/02/25/a80/jo" id="9eff7699-cc45-45b0-92d4-303510ff675e" scl:verify="true">loi du 25 février 2022</ref> relative au patrimoine culturel ; </li>
+										<li>d’aviser le ministre dans l’exécution des articles 5 et 6 de la <ref href="/eli/etat/leg/loi/2022/02/25/a80/jo" id="d48873f0-de69-4abb-9c76-0dca5b033321" scl:verify="true">loi du 25 février 2022</ref> relative au patrimoine culturel;</li>
+										<li>d’entreprendre des recherches, des prospections et des fouilles archéologiques ;</li>
+										<li>d’assurer le contrôle scientifique et technique d’organismes privés agréés et publics effectuant des opérations ou recherches archéologiques ;</li>
+										<li>de veiller à la protection, à l’entretien et à la mise en valeur des sites archéologiques conservés antérieurs à l’époque médiévale, et de conseiller l’Institut national pour le patrimoine architectural ce qui concerne l’entretien et la mise en valeur des sites archéologiques d’époque médiévale et moderne ;</li>
+										<li>d’instruire les demandes d’autorisation de recherche archéologique préventive et programmée adressées au ministre ;</li>
+										<li>de réaliser un inventaire du patrimoine archéologique, de gérer et actualiser le recensement cartographié du patrimoine archéologique ;</li>
+										<li>d’assurer les analyses post-fouilles, la gestion et la conservation du mobilier archéologique issu de toutes investigations archéologiques ;</li>
+										<li>de soutenir et conseiller les initiatives bénévoles et associatives visant à promouvoir et protéger le patrimoine archéologique ;</li>
+										<li>de gérer des dépendances scientifiques, didactiques et techniques en relation avec le patrimoine archéologique et de collaborer à la création et à la gestion d’infrastructures régionales et locales concernant le patrimoine archéologique ;</li>
+										<li>de coopérer avec le Musée national d’archéologie, d’histoire et d’art et plus particulièrement en ce qui concerne les collections archéologiques ;</li>
+										<li> de coopérer avec l’Institut national pour le patrimoine architectural et la Commission pour le patrimoine culturel ainsi que la Commission de circulation des biens culturels au cas où leurs activités concerneraient aussi le patrimoine archéologique ;</li>
+										<li>de coopérer avec le Musée national d’histoire naturelle pour la sauvegarde et la valorisation du patrimoine qu’il a en charge et toutes autres entités chargées de l’archéologie nationale</li>
+									</ol>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_36">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>(abrogé)</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+			<chapter id="chapitre_3">
+				<num>Chapitre 3.-</num>
+				<heading scl:separator=" " scl:style-format="b">Personnel des instituts culturels de l’Etat</heading>
+				<section id="chapitre_3.section_i">
+					<num>
+						<i>Section I.</i>
+					</num>
+					<heading scl:separator=" – " scl:style-format="n">
+						<i>Dispositions communes concernant le personnel des instituts culturels</i>
+					</heading>
+					<article id="art_25">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_25</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_25/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 25.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 25.</num>
+						<alinea>
+							<content>
+								<p>Le cadre du personnel de chaque institut culturel de l’État comprend un directeur, le cas échéant, un ou deux directeurs adjoints et des fonctionnaires des différentes catégories de traitement telles que prévues par la <ref href="/eli/etat/leg/loi/2015/03/25/n3/jo" id="4da1320e-5fd0-44cf-8d8c-33ceb64a0a2c" scl:verify="true">loi modifiée du 25 mars 2015</ref> fixant le régime des traitements et les conditions et modalités d’avancement des fonctionnaires de l’État. </p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les cadres du personnel peuvent être complétés par des stagiaires, des employés et des salariés de l’État suivant les besoins du service et dans les limites des crédits budgétaires.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Les directeurs et directeurs adjoints sont nommés par le Grand-Duc, sur proposition du Gouvernement en conseil.</p>
+							</content>
+						</alinea>
+						<alinea>
+							<content>
+								<p>Sans préjudice des conditions générales d’admission au service de l’État, les conditions particulières d’études, de formation, d’admission au stage, de nomination et de promotion sont déterminées par règlement grand-ducal. </p>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_26">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_26</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_26/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 26.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 26. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_3.section_ii">
+					<num>
+						<i>Section II.</i>
+					</num>
+					<heading scl:separator=" – " scl:style-format="n">
+						<i> Dispositions concernant les agents des carrières supérieures et moyenne des instituts culturels</i>
+					</heading>
+					<article id="art_27">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_27</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_27/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 27.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 27. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+					<article id="art_28">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_28</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_28/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 28.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 28. </num>
+						<heading>(abrogé)</heading>
+						<alinea>
+							<content>
+								<p/>
+							</content>
+						</alinea>
+					</article>
+				</section>
+				<section id="chapitre_3.section_iii">
+					<num>
+						<i>Section III.</i>
+					</num>
+					<heading scl:separator=" – " scl:style-format="n">
+						<i> Du personnel auxiliaire et des collaborateurs bénévoles</i>
+					</heading>
+					<article id="art_29">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_29</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_29/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 29.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 29.</num>
+						<paragraph id="paragraph_14">
+							<num>(1)</num>
+							<alinea>
+								<content>
+									<p>Le ministre peut faire appel au concours de spécialistes luxembourgeois ou étrangers pour la réalisation de tâches particulières sur base de conventions contractuelles. Les contrats ainsi établis fixent la nature, les modalités et l’étendue des prestations à fournir, la durée des relations contractuelles ainsi que les rémunérations à attribuer du chef de ces prestations.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_15">
+							<num>(2)</num>
+							<alinea>
+								<content>
+									<p>Les instituts culturels de l’Etat sont autorisés à s’adjoindre des collaborateurs bénévoles lorsque des travaux particuliers peuvent en profiter. L’engagement de ces collaborateurs est fait sur approbation expresse du ministre qui porte à la fois sur la nature et la durée des prestations bénévoles. Le titre de « collaborateur scientifique » peut leur être conféré par le ministre sur proposition du directeur compétent. Un règlement grand-ducal peut déterminer la durée du mandat des collaborateurs scientifiques des différents instituts culturels.</p>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+				<section id="chapitre_3.section_iv">
+					<num>
+						<i>Section IV.</i>
+					</num>
+					<heading scl:separator=" – " scl:style-format="n">
+						<i> Dispositions transitoires</i>
+					</heading>
+					<article id="art_30">
+						<scl:JOLUXWork>
+							<scl:JOLUXComplexWork>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_30</scl:jolux>
+							</scl:JOLUXComplexWork>
+							<scl:JOLUXLegalResource>
+								<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_30/20040719</scl:jolux>
+								<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+								<scl:jolux scl:lg="fra" scl:name="title">Art. 30.</scl:jolux>
+								<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+								<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+							</scl:JOLUXLegalResource>
+						</scl:JOLUXWork>
+						<num>Art. 30.</num>
+						<paragraph id="paragraph_16">
+							<num>
+								<i>(1)</i>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<i>Archives nationales:</i>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>a) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="95065091-732e-45e6-ab8d-2de0fd53fdc4" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employée de l’Etat de la carrière C, âgée de plus de quarante-trois ans, au service de l’Etat depuis le 15 septembre 1993, peut obtenir une nomination à la fonction de commis adjoint hors cadre, avec dispense de l’examen d’admission au stage, du stage, de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>b) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="452900ba-549b-4399-bd92-fd13f263985e" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employé de l’Etat de la carrière C, âgé de plus de quarante-deux ans, en service depuis le 1<sup>er</sup> janvier 1990 aux Archives Nationales, détenteur du diplôme de fin d’études moyennes, peut obtenir une nomination à la fonction de commis adjoint hors cadre avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_17">
+							<num>
+								<i>(2)</i>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<i>Bibliothèque nationale du Luxembourg:</i>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>a) l’employée de l’Etat de la carrière S, âgée de plus de cinquante-six ans, en service depuis le 1<sup>er</sup> novembre 1974 à la Bibliothèque nationale du Luxembourg, détentrice d’un doctorat en philosophie et lettres, peut obtenir une nomination à la fonction de conservateur hors cadre au grade 14 échelon 10 avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>b) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="17f5d443-bdb1-4963-8b62-36807ba96e1e" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employée de l’Etat de la carrière C, âgée de plus de trente-six ans, en service depuis le 1<sup>er</sup> avril 1988 à la Bibliothèque nationale du Luxembourg, détentrice d’un CATP d’employée de bureau, option secrétariat, peut obtenir une nomination à la fonction de commis adjoint hors cadre avec dispense des conditions et de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>c) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="a163a7fa-6c48-406b-9833-c6e1a636f2c2" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employé de l’Etat de la carrière D, âgé de plus de trente-sept ans, en service depuis le 2 avril 1990 à la Bibliothèque nationale du Luxembourg, détenteur du certificat d’enseignement secondaire supérieur, ainsi que du diplôme d’aptitude à accéder à l’enseignement supérieur, délivrés par l’Athénée Royal à Neufchâteau et reconnus équivalents au diplôme de fin d’études secondaires luxembourgeois, peut obtenir une nomination à la fonction de rédacteur principal hors cadre avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>d) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="49ca2a49-4e1f-40e4-b434-522a7b8dc0d8" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employée de l’Etat de la carrière D, dont la carrière a été reconstituée par arrêté ministériel du 4 août 1989, âgée de plus de quarante-sept ans, en service depuis le 2 janvier 1979 à la Bibliothèque nationale du Luxembourg, détentrice d’un diplôme d’aptitude aux fonctions de bibliothécaire-documentaliste de l’Ecole de Bibliothécaires-documentalistes de l’Institut Catholique à Paris, consacrant deux années d’études universitaires, occupée à raison de 20 heures par semaine, peut obtenir une nomination à la fonction de bibliothécaire au grade 13 échelon 8 hors cadre occupée à mi-temps, avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>e) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="99970e1f-5deb-4132-84fa-c4aebd78c53f" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employée de l’Etat de la carrière D, âgée de plus de quarante-deux ans, en service depuis le 15 mars 1994, détentrice du certificat d’études littéraires du Centre universitaire de Luxembourg et détentrice d’un «Zwischenprüfungszeugnis» en histoire et en sciences politiques à l’Université de Trèves, consacrant deux années d’études universitaires, peut obtenir une nomination à la fonction d’assistant scientifique hors cadre au grade 9 échelon 7, avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal; </p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_18">
+							<num>
+								<i>(3)</i>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<i>Musée national d’archéologie, d’histoire et d’art:</i>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>a) l’assistant scientifique, âgé de plus de trente-neuf ans, en service depuis le 1<sup>er</sup> janvier 1991 au Musée national d’archéologie, d’histoire et d’art, détenteur d’une maîtrise en histoire de l’art, peut obtenir une nomination à la fonction de conservateur avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>b) l’assistant scientifique, âgé de plus de trente-huit ans, en service depuis le 1<sup>er</sup> juillet 1990 au Musée national d’archéologie, d’histoire et d’art, détenteur d’une maîtrise en histoire d’archéologie romaine, peut obtenir une nomination à la fonction de conservateur avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>c) l’assistant scientifique, âgé de plus de cinquante-quatre ans, ayant accompli avec succès trois années d’études à la «Ludwig-Maximilian Universität» de Munich, en service depuis le 1<sup>er</sup> avril 1978 au Musée national d’archéologie, d’histoire et d’art, peut obtenir une nomination à la fonction d’archiviste avec dispense des conditions et de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>d) l’ingénieur technicien inspecteur principal au Musée national d’archéologie, d’histoire et d’art, âgé de plus de quarante-six ans et détenteur du diplôme d’ingénieur industriel, en service depuis le 15 septembre 1979, peut obtenir une nomination à la fonction d’assistant scientifique avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>e) l’ingénieur inspecteur principal premier en rang, âgé de plus de quarante-neuf ans, détenteur du diplôme d’ingénieur gradué de la «Fachhochschule des Landes Rheinland-Pfalz», en service depuis le 14 septembre 1981 au Musée national d’archéologie, d’histoire et d’art, peut obtenir une nomination à la fonction d’assistant scientifique avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>f) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="b6496cd3-906b-49c8-933f-50576235cf5e" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employée de l’Etat de la carrière D, âgée de plus de quarante-sept ans, détentrice d’un diplôme d’ingénieur technicien en génie civil, en service au Musée national d’archéologie, d’histoire et d’art depuis le 1<sup>er</sup> juillet 1991, peut obtenir une nomination à la fonction d’assistant scientifique hors cadre au grade 9 échelon 8 avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal; </p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>g) l’employé de l’Etat de la carrière S, détenteur d’une maîtrise en archéologie gallo-romaine, âgé de plus de quarante-trois ans, en service au service archéologique de l’Administration des Ponts et Chaussées depuis le 1<sup>er</sup> avril 1990, peut obtenir une nomination à la fonction de conservateur hors cadre au grade 14 échelon 10 auprès du Musée national d’archéologie, d’histoire et d’art, avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>h) le premier surveillant dirigeant, âgé de plus de cinquante-sept ans, au service de l’Etat depuis le 1<sup>er</sup> avril 1978, pouvant se prévaloir d’études reconnues équivalentes à un certificat d’aptitude technique et professionnelle, peut obtenir une nomination à la fonction d’artisan principal avec dispense de l’examen d’admission au stage, du stage, de l’examen de fin de stage et de l’examen de promotion, la reconstitution de sa carrière étant faite par la prise en considération du grade de premier artisan;</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_19">
+							<num>
+								<i>(4)</i>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<i>Musée national d’histoire naturelle:</i>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>a) l’assistant scientifique, âgé de plus de trente-neuf ans, en service depuis le 1<sup>er</sup> janvier 1998 au Musée national d’histoire naturelle, détenteur d’une maîtrise en biologie et d’un diplôme d’études universitaires approfondies, peut obtenir une nomination à la fonction de conservateur avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>b) l’assistante scientifique, âgée de plus de vingt-huit ans, en service depuis le 1<sup>er</sup> septembre 2000 au Musée national d’histoire naturelle, détentrice d’un diplôme de maîtrise en sciences de l’environnement et d’un diplôme de maîtrise en écologie, peut obtenir une nomination à la fonction de conservateur avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>c) l’instituteur de l’enseignement préparatoire du Lycée technique du Centre, âgé de plus de cinquante-quatre ans, détaché au Musée national d’histoire naturelle depuis le 1<sup>er</sup> juillet 1979, détenteur du certificat d’études pédagogiques et du certificat de perfectionnement, peut obtenir une nomination à la fonction d’assistant scientifique avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage, la reconstitution de sa carrière étant faite en prenant en considération l’échelon correspondant à son ancien traitement;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>d) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="6d5ac098-a73b-43f9-af9d-ec1d85e0b169" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employé de l’Etat de la carrière C, âgé de plus de trente-quatre ans, en service au Musée national d’histoire naturelle depuis le 1<sup>er</sup> mars 1991, peut obtenir une nomination à la fonction de commis adjoint hors cadre avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_20">
+							<num>
+								<i>(5)</i>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<i>Institut national pour le patrimoine architectural:</i>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>a) le professeur de l’enseignement secondaire classique, âgé de plus de cinquante et un ans, détenteur d’une maîtrise en théologie, option histoire, entré en service de l’Etat le 1<sup>er</sup> septembre 1977, détaché à l’Institut national pour le patrimoine architectural depuis le 1<sup>er</sup> janvier 1994, peut obtenir une nomination à la fonction de conservateur avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>b) l’ingénieur inspecteur principal premier en rang, âgé de plus de soixante ans et détenteur d’un diplôme d’ingénieur industriel, au service de l’Etat depuis le 1<sup>er</sup> août 1965, peut obtenir une nomination à la fonction d’assistant scientifique avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage; </p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>c) l’inspecteur principal premier en rang hors cadre, âgé de plus de cinquante-six ans, au service de l’Etat depuis le 1<sup>er</sup> février 1968, nommé auprès de l’Institut national pour le patrimoine architectural par arrêté grand-ducal du 19 décembre 1989, est intégré dans le cadre de l’Institut national pour le patrimoine architectural; </p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>d) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="6f4abeb7-0c70-4d2e-994d-0fdd3ea81703" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employée de l’Etat de la carrière D, âgée de plus de trente-six ans, détentrice d’un diplôme de fin d’études secondaires techniques et d’un brevet de technicien supérieur, option secrétariat, engagée à l’Institut national pour le patrimoine architectural depuis le 13 avril 1992, peut obtenir une nomination à la fonction de rédacteur principal hors cadre avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_21">
+							<num>
+								<i>(6)</i>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<i>Centre national de l’audiovisuel:</i>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>a) l’inspecteur principal hors cadre, âgé de plus de quarante-neuf ans, au service de l’Etat depuis le 1<sup>er</sup> février 1976, détenteur d’un diplôme de fin d’études secondaires, assurant la fonction de chargé de direction du Centre national de l’audiovisuel depuis le 9 octobre 1989, peut obtenir une nomination à la fonction de directeur du Centre national de l’audiovisuel à condition de passer avec succès l’examen-concours conformément à la <ref href="/eli/etat/leg/loi/1991/11/14/n1/jo" id="84b6433d-4812-4b9d-a76e-3fec7289901a" scl:verify="true">loi du 14 novembre 1991</ref> fixant les conditions et les modalités de l’accès du fonctionnaire à une carrière supérieure à la sienne; la réussite à l’examen-concours précité aura comme effet sa nomination hors cadre au grade 13 à la fonction de l’attaché de Gouvernement 1<sup>er</sup> en rang; il avancera au grade 14 à la fonction de conseiller de direction adjoint trois années après avoir été nommé au grade 13; il avancera aux grades 15 et 16 après des intervalles successifs d’une année; il bénéficiera d’une nomination au grade 17 à la fonction du directeur du Centre national de l’audiovisuel une année après avoir été classé au grade 16;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>b) le professeur-attaché d’enseignement secondaire classique, âgé de plus de cinquante-deux ans, détenteur d’un diplôme de Bachelor of Arts, détaché au Centre national de l’audiovisuel depuis le 1<sup>er</sup> septembre 1990, peut obtenir une nomination à la fonction de conservateur avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>c) l’ingénieur technicien, âgé de plus de quarante-neuf ans, au service de l’Etat depuis le 1<sup>er</sup> septembre 1977, détenteur du diplôme d’ingénieur industriel, peut obtenir une nomination à la fonction d’assistant scientifique avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>d) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="4ff3cc35-9965-4535-b00f-b5294e1857d0" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employée de l’Etat de la carrière B1, âgée de plus de quarante-trois ans, au service de l’Etat depuis le 1<sup>er</sup> janvier 1991, occupée à raison de 20 heures par semaine, détentrice d’un CAP, peut obtenir une nomination à la fonction de commis adjoint hors cadre avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>e) sous réserve d’avoir passé avec succès l’examen de sa carrière prévu par le <ref href="/eli/etat/leg/rgd/2000/07/28/n5/jo" id="6abada4a-b8bd-4e93-8421-ceefe40a9776" scl:verify="true">règlement grand-ducal modifié du 28 juillet 2000</ref> fixant le régime des indemnités des employés occupés dans les administrations et services de l’Etat, l’employé de l’Etat de la carrière C, âgé de plus de cinquante-quatre ans, au service de l’Etat depuis le 1<sup>er</sup> juin 1989, détenteur d’un certificat d’études moyennes et du brevet des cours professionnelles du cycle secondaire supérieur, peut obtenir une nomination à la fonction de commis adjoint hors cadre avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage sous condition d’avoir passé avec succès un examen spécial dont les conditions et modalités sont à fixer par règlement grand-ducal; </p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_22">
+							<num>
+								<i>(7)</i>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<i>Centre national de littérature:</i>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>a) le professeur de l’enseignement secondaire à l’Athénée de Luxembourg, âgée de plus de cinquante-cinq ans, détachée par arrêté grand-ducal du 30 mai 1996 au Ministère de la Culture et chargée de la direction du Centre national de littérature, peut obtenir une nomination à la fonction de directeur du Centre national de littérature, avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage; </p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>b) le professeur du Centre de langues, âgé de plus de trente-neuf ans et détenteur d’une maîtrise en lettres, au service de l’Etat depuis le 1<sup>er</sup> septembre 1989, détaché au Centre national de littérature depuis plus de deux ans, peut obtenir une nomination à la fonction de conservateur avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage; </p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>c) l’archiviste aux Archives nationales, âgée de plus de trente ans, au service de l’Etat depuis le 1<sup>er</sup> mars 1995, détentrice d’un diplôme de bibliothécaire-documentaliste graduée, peut obtenir une nomination à la fonction de bibliothécaire au Centre national de littérature avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage;</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>d) le commis principal hors cadre aux Archives nationales, âgée de plus de quarante-deux ans, au service de l’Etat depuis le 1<sup>er</sup> mars 1986, ayant opéré un changement d’administration depuis l’Administration du cadastre et de la topographie aux Archives nationales depuis le 1<sup>er</sup> septembre 1995, peut obtenir une nomination à la fonction de commis principal au Centre national de littérature sur son propre poste budgétaire, avec dispense de l’examen d’admission au stage, du stage et de l’examen de fin de stage.</p>
+								</content>
+							</alinea>
+						</paragraph>
+						<paragraph id="paragraph_23">
+							<num>
+								<i>(8)</i>
+							</num>
+							<alinea>
+								<content>
+									<p>
+										<i>Dispositions applicables à certains agents-fonctionnaires nommés avant l’entrée en vigueur de la présente loi:</i>
+									</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p>a) Pour le calcul des traitements des agents fonctionnarisés et des fonctionnaires reclassés dans une autre carrière par la présente loi, les dispositions de l’article 7, paragraphe 6 de la <ref href="/eli/etat/leg/loi/1963/06/22/n1/jo" id="38cf7ca8-030c-4baf-a4fd-d9f760a1aa73" scl:verify="true">loi modifiée du 22 juin 1963</ref> fixant le régime des traitements des fonctionnaires de l’Etat, ne sont pas applicables et les années passées au service de l’Etat à tâche complète, déduction faite d’une période de deux respectivement trois ans sont mises en compte aux intéressés pour l’application des dispositions de l’article 8 de la même loi et celles de l’article 5 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="dc92c9d5-c3c6-4318-a20f-5949e68a14a2" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l’Etat ainsi que pour tous les avancements automatiques prévus par d’autres lois et règlements grand-ducaux. Pour l’application des dispositions de la présente loi est considéré comme tâche complète un degré d’occupation d’au moins trente heures par semaine. Les années passées au service de l’Etat dans une autre carrière de fonctionnaire ou d’employé respectivement sur la base d’un engagement contractuel autre, sont computées sur la période de stage et pour l’application des dispositions de l’article 8 de la <ref href="/eli/etat/leg/loi/1963/06/22/n1/jo" id="1af44900-44b4-48bc-a43b-cd2a7b8eb237" scl:verify="true">loi modifiée du 22 juin 1963</ref>. Un délai uniforme d’une année est cependant à observer entre les différentes promotions résultant de l’application de ces dispositions, sauf dispense expresse et motivée à prendre par le gouvernement en conseil.</p>
+								</content>
+							</alinea>
+							<alinea>
+								<content>
+									<p/>
+								</content>
+							</alinea>
+						</paragraph>
+					</article>
+				</section>
+			</chapter>
+			<chapter id="chapitre_4">
+				<num>Chapitre 4.-</num>
+				<heading scl:separator=" " scl:style-format="b">Dispositions pénales et abrogatoires</heading>
+				<article id="art_31">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_31</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_31/20040719</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 31.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 31.</num>
+					<paragraph id="paragraph_24">
+						<num>(1)</num>
+						<alinea>
+							<content>
+								<p>(abrogé)</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_25">
+						<num>(2)</num>
+						<alinea>
+							<content>
+								<p>(abrogé)</p>
+							</content>
+						</alinea>
+					</paragraph>
+					<paragraph id="paragraph_26">
+						<num>(3)</num>
+						<alinea>
+							<content>
+								<p>La non-restitution et la restitution tardive par les emprunteurs des documents rendus accessibles par les Archives nationales, la Bibliothèque nationale du Luxembourg, le Centre national de l’audiovisuel et le Centre national de littérature sont punies d’une amende de 500 euros au moins et de 10.000 euros au plus. </p>
+							</content>
+						</alinea>
+					</paragraph>
+				</article>
+				<article id="art_32">
+					<scl:JOLUXWork>
+						<scl:JOLUXComplexWork>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_32</scl:jolux>
+						</scl:JOLUXComplexWork>
+						<scl:JOLUXLegalResource>
+							<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7/art_32/20040719</scl:jolux>
+							<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n7</scl:jolux>
+							<scl:jolux scl:lg="fra" scl:name="title">Art. 32.</scl:jolux>
+							<scl:jolux scl:name="dateApplicability">2022-12-23</scl:jolux>
+							<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+						</scl:JOLUXLegalResource>
+					</scl:JOLUXWork>
+					<num>Art. 32.</num>
+					<alinea>
+						<content>
+							<p>Sont abrogées les lois du 28 décembre 1988 portant réorganisation des instituts culturels de l’Etat et du 18 mai 1989 portant création d’un Centre National de l’Audiovisuel.<mod class="mod-end" for="#pm1"/>
+								<noteRef href="#M1" marker="1"/>
+							</p>
+						</content>
+					</alinea>
+				</article>
+			</chapter>
+		</body>
+	</act>
+</akomaNtoso>

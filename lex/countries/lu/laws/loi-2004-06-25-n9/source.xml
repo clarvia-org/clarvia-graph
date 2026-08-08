@@ -1,0 +1,2917 @@
+<?xml version="1.0" encoding="UTF-8"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo"/>
+<FRBRuri value=""/>
+<FRBRdate date="2004-06-25" name="document"/>
+<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MEN"/>
+<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr"/>
+<FRBRuri value=""/>
+<FRBRdate date="2004-06-25" name="document"/>
+<FRBRauthor as="#author" href=""/>
+<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr/xml"/>
+<FRBRuri value=""/>
+<FRBRdate date="2004-06-25" name="document"/>
+<FRBRauthor as="#author" href=""/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo</scl:jolux><scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux><scl:jolux scl:name="dateDocument">2004-06-25</scl:jolux><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1297</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/5</scl:jolux><scl:jolux scl:name="urgentEvent">0</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/805</scl:jolux><scl:jolux scl:name="isRealizedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr</scl:jolux><scl:jolux scl:name="dateEntryInForce">2004-07-20</scl:jolux><scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2004/a126</scl:jolux><scl:jolux scl:name="historicalLegalId">2004A18561</scl:jolux><scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/LOI</scl:jolux><scl:jolux scl:name="publicationDate">2004-07-16</scl:jolux><scl:jolux scl:name="initiatedBy">http://data.legilux.public.lu/resource/authority/legal-institution/MEN</scl:jolux><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf><scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr/xml</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr/docx</scl:jolux>
+<scl:jolux scl:name="isEmbodiedBy">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr/html</scl:jolux>
+<scl:jolux scl:name="draft">/eli/etat/proj/pl/20030022</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1988/03/19/n1/jo</scl:jolux>
+<scl:jolux scl:name="cites">/eli/etat/leg/loi/1999/06/08/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1968/05/10/n1/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1989/06/22/n2/jo</scl:jolux>
+<scl:jolux scl:name="modifies">/eli/etat/leg/loi/1990/09/04/n1/jo</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+<scl:jolux scl:name="title">Version consolidée applicable au 23/02/2025 : Loi du 25 juin 2004 portant organisation des lycées.</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr/xml</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2004-126-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2004/a126/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-loi-2004-06-25-n9-jo-fr-xml.xml</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/jo/fr/pdf</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’Etat – Service central de législation – du Grand-Duché de Luxembourg</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="previousIsExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-memorial-2004-126-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+<scl:jolux scl:name="userFormat">http://data.legilux.public.lu/resource/authority/user-format/pdf</scl:jolux>
+<scl:jolux scl:name="rights">Copyright : Ministère d'État du Grand-Duché de Luxembourg - Service central de législation</scl:jolux>
+<scl:jolux scl:name="publishedIn">http://data.legilux.public.lu/eli/etat/leg/memorial/2004/a126/fr/pdf</scl:jolux>
+<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/filestore/eli/etat/leg/memorial/2004/a126/fr/pdf/eli-etat-leg-memorial-2004-a126-fr-pdf.pdf</scl:jolux>
+<scl:jolux scl:name="publisher">http://data.legilux.public.lu/resource/authority/legal-institution/ME</scl:jolux>
+<scl:jolux scl:name="legalValue">http://data.legilux.public.lu/resource/authority/statut-version/officiel</scl:jolux>
+</scl:JOLUXManifestation>
+</identification>
+<lifecycle source="#">
+<eventRef date="2004-07-20" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+<eventRef date="2025-02-23" id="e12" originatingExpression="true" source="#rp12" type="amendment"/>
+<eventRef date="2025-02-23" id="e11" originatingExpression="true" source="#rp11" type="amendment"/>
+<eventRef date="2025-02-23" id="e10" originatingExpression="true" source="#rp10" type="amendment"/>
+<eventRef date="2025-02-23" id="e9" originatingExpression="true" source="#rp9" type="amendment"/>
+<eventRef date="2025-02-23" id="e8" originatingExpression="true" source="#rp8" type="amendment"/>
+<eventRef date="2025-02-23" id="e7" originatingExpression="true" source="#rp7" type="amendment"/>
+<eventRef date="2025-02-23" id="e6" originatingExpression="true" source="#rp6" type="amendment"/>
+<eventRef date="2025-02-23" id="e5" originatingExpression="true" source="#rp5" type="amendment"/>
+<eventRef date="2025-02-23" id="e4" originatingExpression="true" source="#rp4" type="amendment"/>
+<eventRef date="2025-02-23" id="e3" originatingExpression="true" source="#rp3" type="amendment"/>
+<eventRef date="2025-02-23" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+</lifecycle>
+<analysis source="#">
+<passiveModifications>
+<textualMod id="pm1" incomplete="false" type="replacement">
+<source href="/eli/etat/leg/loi/2025/02/13/a53/jo"/>
+<destination/>
+</textualMod>
+</passiveModifications>
+</analysis>
+<references source="#">
+<original href="/eli/etat/leg/loi/2004/06/25/n9/jo" id="ro1" showAs="Original"/>
+<passiveRef href="/eli/etat/leg/loi/2025/02/13/a53/jo" id="rp2" showAs="Loi du 13 février 2025 portant modification de la loi modifiée du 25 juin 2004 portant organisation des lycées."/>
+<passiveRef href="/eli/etat/leg/loi/2023/07/20/a462/jo" id="rp3" showAs="Loi du 20 juillet 2023 portant création de l’Administration assurant le service public de restauration collective dénommée « Restopolis » et portant modification de : 1° la loi modifiée du 25 juin 2004 portant organisation des lycées ; 2° la loi du 20 juillet 2018 portant création de Centres de compétences en psycho-pédagogie spécialisée en faveur de l’inclusion scolaire. "/>
+<passiveRef href="/eli/etat/leg/loi/2023/07/14/a424/jo" id="rp4" showAs="Loi du 14 juillet 2023 relative à l’accueil, à l’orientation, à l’intégration, à l’accompagnement scolaires des élèves nouvellement arrivés et à la création du Service de l’intégration et de l’accueil scolaires et modifiant : 1°la loi modifiée du 25 juin 2004 portant organisation des lycées ; 2°la loi modifiée du 6 février 2009 portant organisation de l’enseignement fondamental. "/>
+<passiveRef href="/eli/etat/leg/loi/2023/06/30/a401/jo" id="rp5" showAs="Loi du 30 juin 2023 portant 1° modification a) de la loi modifiée du 25 juin 2004 portant organisation des lycées ; b) de la loi modifiée du 13 juillet 2006 portant organisation du Centre psychosocial et d’accompagnement scolaires ; c) de la loi modifiée du 6 février 2009 portant organisation de l’enseignement fondamental ; d) de la loi du 20 juillet 2018 portant création de Centres de compétences en psycho-pédagogie spécialisée en faveur de l’inclusion scolaire ; 2° abrogation de la loi modifiée du 15 juillet 2011 visant l’accès aux qualifications scolaires et professionnelles des élèves à besoins éducatifs particuliers. "/>
+<passiveRef href="/eli/etat/leg/loi/2017/08/29/a789/jo" id="rp6" showAs="Loi du 29 août 2017 portant sur l’enseignement secondaire et modifiant 1. la loi modifiée du 25 juin 2004 portant organisation des lycées et lycées techniques ; 2. la loi modifiée du 4 septembre 1990 portant réforme de l'enseignement secondaire technique et de la formation professionnelle continue ; 3. la loi modifiée du 10 mai 1968 portant réforme de l'enseignement (Titre VI : de l'enseignement secondaire) ; 4. la loi modifiée du 14 mars 1973 portant création d'instituts et de services d'éducation différenciée ; 5. la loi modifiée du 10 juin 1980 portant planification des besoins en personnel enseignant de l'enseignement postprimaire ; 6. la loi modifiée du 29 juin 2005 fixant les cadres du personnel des établissements d'enseignement secondaire et secondaire technique ; 7. la loi modifiée du 25 juillet 2005 portant création d'un lycée-pilote ; 8. la loi modifiée du 13 juillet 2006 portant réorganisation du centre de psychologie et d’orientation scolaires (CPOS) ; 9. la loi du 16 mars 2007 portant - 1. organisation des cours de formation professionnelle au Centre national de formation professionnelle continue - 2. création d'une aide à la formation, d'une prime de formation et d'une indemnité de formation ; 10. la loi modifiée du 19 décembre 2008 portant réforme de la formation professionnelle ; 11. la loi du 6 février 2009 relative à l'obligation scolaire ; 12. la loi modifiée du 6 février 2009 portant organisation de l'enseignement fondamental ; 13. la loi modifiée du 12 mai 2009 portant création d'une École de la 2e Chance ; 14. la loi modifiée du 29 juin 2010 portant création d'une réserve nationale de chargés d'enseignement pour les lycées et les lycées techniques ; 15. la loi modifiée du 15 juillet 2011 visant l'accès aux qualifications scolaires et professionnelles des élèves à besoins éducatifs particuliers ; 16. la loi du 30 juillet 2015 portant création d'un Institut de formation de l'éducation nationale ; 17. la loi du 24 août 2016 portant introduction du cours commun « vie et société » dans l'enseignement secondaire et secondaire technique ; 18. la loi du 22 juin 2017 ayant pour objet l'organisation de la Maison de l'orientation."/>
+<passiveRef href="/eli/etat/leg/loi/2017/06/22/a605/jo" id="rp7" showAs="Loi du 22 juin 2017 ayant pour objet l’organisation de la Maison de l’orientation et modifiant 1) la loi modifiée du 13 juillet 2006 portant réorganisation du Centre de psychologie et d’orientation scolaires, 2) la loi modifiée du 25 juin 2004 portant organisation des lycées et lycées techniques, 3) la loi modifiée du 10 mai 1968 portant réforme de l’enseignement (Titre VI: De l’enseignement secondaire), 4) la loi modifiée du 14 mars 1973 portant création d’instituts et de services d’éducation différenciée, 5) la loi modifiée du 2 décembre 1987 portant réglementation de la médecine scolaire, 6) la loi modifiée du 4 septembre 1990 portant réforme de l’enseignement secondaire technique et de la formation professionnelle continue, 7) la loi modifiée du 25 juillet 2005 portant création d’un lycée-pilote, 8) la loi modifiée du 19 décembre 2008 portant réforme de la formation professionnelle, 9) la loi modifiée du 6 février 2009 portant organisation de l’enseignement fondamental, 10) la loi modifiée du 15 juillet 2011 visant l’accès aux qualifications scolaires et professionnelles des élèves à besoins éducatifs particuliers, 11) la loi du 21 juillet 2012 portant création du Sportlycée, 12) la loi modifiée du 30 juillet 2015 portant création d’un Institut de formation de l’éducation nationale, 13) l’article L.622-18 du Code du travail."/>
+<passiveRef href="/eli/etat/leg/loi/2016/12/15/n1/jo" id="rp8" showAs="Loi du 15 décembre 2016 portant modification  1. de la loi modifiée du 16 août 1968 portant création d'un centre de logopédie et de services audiométrique et orthophonique;  2. de la loi modifiée du 14 mars 1973 portant création d'instituts et de services d'éducation différenciée;  3. de la loi modifiée du 10 juin 1980 portant planification des besoins en personnel enseignant de l'enseignement postprimaire;  4. de la loi modifiée du 1er décembre 1992 portant 1. création d'un établissement public pour le développement de la formation professionnelle continue et 2. fixation des cadres du personnel des Centres de formation professionnelle continue;  5. de la loi modifiée du 25 juin 2004 portant organisation des lycées et lycées techniques;  6. de la loi modifiée du 6 février 2009 portant organisation de l'enseignement fondamental;  7. de la loi modifiée du 22 mai 2009 portant a) création d'un Institut national des langues; b) de la fonction de professeur de langue luxembourgeoise;  8. de la loi modifiée du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d'avancement des fonctionnaires de l'Etat."/>
+<passiveRef href="/eli/etat/leg/loi/2015/07/30/n2/jo" id="rp9" showAs="Loi du 30 juillet 2015 portant création d'un Institut de formation de l'éducation nationale et modifiant  1) la loi modifiée du 7 octobre 1993 ayant pour objet a) la création d'un Service de Coordination de la Recherche et de l'Innovation pédagogiques et technologiques b) la création d'un Centre de Gestion Informatique de l'Éducation c) l'institution d'un Conseil scientifique,  2) la loi modifiée du 25 juin 2004 portant organisation des lycées et lycées techniques,  3) la loi modifiée du 6 février 2009 concernant le personnel de l'enseignement fondamental,  4) la loi modifiée du 6 février 2009 portant organisation de l'enseignement fondamental,  5) la loi modifiée du 12 mai 2009 portant création d'une École de la 2e Chance,  6) la loi du 15 juillet 2011 visant l'accès aux qualifications scolaires et professionnelles des élèves à besoins éducatifs particuliers,  7) la loi du 25 mars 2015 fixant le régime des traitements et les conditions et modalités d'avancement des fonctionnaires de l'État,  8) le Code de la sécurité sociale, et abrogeant la loi modifiée du 21 mai 1999 concernant la fonction de candidat dans les carrières enseignantes de l'enseignement postprimaire."/>
+<passiveRef href="/eli/etat/leg/loi/2011/07/15/n1/jo" id="rp10" showAs="Loi du 15 juillet 2011 visant l'accès aux qualifications scolaires et professionnelles des élèves à besoins éducatifs particuliers et portant modification  a) de la loi modifiée du 14 mars 1973 portant création d'instituts et de services d'éducation différenciée;  b) de la loi modifiée du 25 juin 2004 portant organisation des lycées et lycées techniques."/>
+<passiveRef href="/eli/etat/leg/loi/2009/02/06/n1/jo" id="rp11" showAs="Loi du 6 février 2009 portant modification  1) de la loi du 7 octobre 1993 ayant pour objet  a) la création d'un Service de Coordination de la Recherche et de l'Innovation pédagogiques et technologiques;  b) la création d'un Centre de Technologie de l'Éducation;  c) l'institution d'une Commission d'Innovation et de Recherche en Éducation;  2) de la loi modifiée du 25 juin 2004 portant organisation des lycées et lycées techniques;  3) de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l'État."/>
+<passiveRef href="/eli/etat/leg/loi/2005/06/29/n1/jo" id="rp12" showAs="Loi du 29 juin 2005 portant a) fixation des cadres du personnel des établissements d'enseignement secondaire et secondaire technique; b) modification de la loi modifiée du 22 juin 1963 fixant le régime des traitements des fonctionnaires de l'Etat; c) modification de la loi modifiée du 10 mai 1968 portant réforme de l'enseignement; d) abrogation de la loi du 25 août 1971 portant création de la fonction de professeur de sciences économiques et sociales aux établissements d'enseignement secondaire; e) modification de la loi du 22 juin 1989 portant modification de la loi modfiée du 10 mai 1968 portant réforme de l'enseignement; f) modification de la loi modifiée du 4 septembre 1990 portant réforme de l'enseignement secondaire technique et de la formation professionnelle continue; g) modification de la loi du 25 juin 2004 portant organisation des lycées et lycées techniques; h) modification de la loi modifiée du 24 mai 1989 sur le contrat de travail."/>
+</references>
+<notes scl:type="modification" source="#rp2">
+<note id="M1" marker="1" refersTo="pm1" title="A|2025-02-19|2025-02-13|L|53">
+<content>
+<p> <ref href="http://data.legilux.public.lu/eli/etat/leg/loi/2025/02/13/a53/jo">Loi du 13 février 2025 portant modification de la loi modifiée du 25 juin 2004 portant organisation des lycées.</ref> </p>
+</content>
+</note>
+</notes>
+</meta>
+<preface>
+<longTitle>
+<p>Version consolidée applicable au 23/02/2025 :<mod class="mod-start" for="#pm1"/> Loi du 25 juin 2004 portant organisation des lycées.</p>
+</longTitle>
+</preface>
+<body>
+<chapter id="chapitre_1">
+<num>Chapitre 1.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Définitions</heading>
+<article id="art_1er">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_1er</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_1er/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<sup>er</sup>.</num>
+<alinea>
+<content>
+<p>Au sens de la présente loi, on entend par:</p>
+<ol scl:symbol="custom">
+<li scl:symbol="a)"> <p>«classe»: un ensemble d'élèves placés sous l'autorité d'un même régent;</p> </li>
+<li scl:symbol="b)"> <p>«communauté scolaire»: les élèves, les enseignants, les membres de la direction, les membres des différents services du lycée, tels que définis au chapitre 8 et les parents des élèves;</p> </li>
+<li scl:symbol="c)"> <p>«enseignant»: la personne qui est chargée d'une tâche d'enseignement dans un lycée;</p> </li>
+<li scl:symbol="e)"> <p>«ministre»: le ministre ayant l'éducation nationale dans ses attributions;</p> </li>
+<li scl:symbol="f)"> <p>«parents»: la ou les personne(s) investie(s) du droit d'éducation de l'élève.</p> </li>
+<li scl:symbol="g)"> <p>«élève à besoins éducatifs spécifiques» : un enfant ou un jeune qui selon les classifications internationales présente des déficiences ou difficultés ou qui a, de manière significative, plus de mal à apprendre que la majorité des enfants ou jeunes du même âge. Est également un élève à besoins éducatifs spécifiques, un enfant ou un jeune à haut potentiel qui nécessite une prise en charge spécialisée lui permettant de déployer au maximum ses facultés ou son potentiel.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans la suite du texte, le masculin du nom désigne indistinctement les personnes de sexe féminin et de sexe masculin de la communauté scolaire.</p>
+</content>
+</alinea>
+</article>
+<article id="art_1bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_1bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_1bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 1bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 1<i>bis</i>.</num>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>L'enseignement secondaire fait suite à l'enseignement fondamental et se compose des ordres d'enseignement suivants :</p>
+<ol scl:symbol="1.">
+<li> <p>l'enseignement secondaire classique qui prépare aux études supérieures et qui est régi par la <ref href="/eli/etat/leg/loi/1968/05/10/n1/jo" id="7035b404-e6b2-4ace-b216-21ba041e6687" scl:verify="true">loi modifiée du 10 mai 1968</ref> portant réforme de l'enseignement (Titre VI: de l'enseignement secondaire) ;</p> </li>
+<li> <p>l'enseignement secondaire général qui prépare aux études supérieures et à la formation professionnelle et qui est régi par la <ref href="/eli/etat/leg/loi/1990/09/04/n1/jo" id="67193c53-8fe9-46b0-8f77-9636d63a11ed" scl:verify="true">loi modifiée du 4 septembre 1990</ref> portant réforme de l'enseignement secondaire technique et de la formation professionnelle continue ;</p> </li>
+<li> <p>la formation professionnelle, régie par la <ref href="/eli/etat/leg/loi/2008/12/19/n19/jo" id="77031026-7b0f-4aef-978b-44ec80336069" scl:verify="true">loi modifiée du 19 décembre 2008</ref> portant réforme de la formation professionnelle.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'enseignement secondaire classique et l'enseignement secondaire général comprennent chacun sept années d'études numérotées de 7<sup>e</sup>, 6<sup>e</sup>, 5<sup>e</sup>, 4<sup>e</sup>, 3<sup>e</sup>, 2<sup>e</sup> et 1<sup>re</sup>, appelées aussi classe de 7<sup>e</sup>, classe de 6<sup>e</sup>, classe de 5<sup>e</sup>, classe de 4<sup>e</sup>, classe de 3<sup>e</sup>, classe de 2<sup>e</sup> et classe de 1<sup>re</sup>, et se soldent par un examen de fin d'études secondaires sanctionné en cas de réussite par le diplôme de fin d'études secondaires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les classes de 7<sup>e</sup>, 6<sup>e</sup> et 5<sup>e</sup> sont appelées « classes inférieures », les classes de 4<sup>e</sup>, 3<sup>e</sup>, 2<sup>e</sup> et 1<sup>re</sup> « classes supérieures ».</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>L'enseignement secondaire est offert dans les lycées. Chaque lycée est créé par une loi. Une dénomination particulière lui est conférée par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaque lycée peut offrir des classes inférieures et supérieures de l'enseignement secondaire classique, des classes inférieures et supérieures de l'enseignement secondaire général et des classes de la formation professionnelle.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'enseignement secondaire peut être offert en formation des adultes et à l'École de la 2<sup>e</sup> chance. Il peut également être offert dans les écoles privées selon les conditions fixées par la <ref href="/eli/etat/leg/loi/2003/06/13/n1/jo" id="4ed89c50-98cd-47da-9149-2c3a90b8a1af" scl:verify="true">loi modifiée du 13 juin 2003</ref> concernant les relations entre l'État et l'enseignement privé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les horaires des leçons d'enseignement par année d'études de l'enseignement secondaire classique et de l'enseignement secondaire général sont définis par des grilles horaires hebdomadaires structurées selon les disciplines portant chacune sur un domaine d'enseignement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>L'enseignement secondaire est commun aux filles et aux garçons.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'enseignement secondaire dans les lycées est gratuit pour chaque élève habitant le Grand-Duché de Luxembourg. La restauration scolaire est exploitée par et sous la régie de Restopolis.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les repas pris au restaurant scolaire sont payants. Les heures d'encadrement qu'un lycée organise en dehors de l'enseignement sont payantes. Le montant de ces contributions est fixé par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les élèves ayant accompli à l'étranger un niveau d'études correspondant au niveau d'études des classes mentionnées au paragraphe 1<sup>er</sup> peuvent obtenir une équivalence par le ministre ayant l'Éducation nationale dans ses attributions, appelé ci-après « ministre », à charge de payer une taxe d'un montant de 75 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les diplômes ou certificats étrangers sanctionnant la fin des études de l'enseignement secondaire et correspondant au diplôme de fin d'études secondaires luxembourgeois peuvent être reconnus équivalents à celui-ci par le ministre, à charge de payer une taxe. La taxe n'est pas due si l'élève a accompli dans un lycée public du Luxembourg la classe terminale qui prépare à ce diplôme ou certificat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les certificats de reconnaissance d'équivalence de diplômes étrangers de fin d'études secondaires issus de pays appartenant à l'Union européenne et de pays ayant ratifié la Convention européenne relative à l'équivalence des diplômes donnant accès aux établissements universitaires, signée à Paris le 11 décembre 1953 et approuvée par la <ref href="/eli/etat/leg/loi/1954/12/13/n6/jo" id="ba7ca8c4-d257-428d-b434-e4b88592e8ba" scl:verify="true">loi du 13 décembre 1954</ref>, la Convention sur la reconnaissance des qualifications relatives à l'enseignement supérieur dans la région européenne, signée à Lisbonne le 11 avril 1997 et approuvée par la <ref href="/eli/etat/leg/loi/2000/08/14/n7/jo" id="4e5aa4fb-3076-44cc-9e5a-a716ee8a0867" scl:verify="true">loi du 14 août 2000</ref> et la Convention mondiale sur la reconnaissance des qualifications relatives à l'enseignement supérieur, faite à Paris, le 25 novembre 2019, et approuvée par la <ref href="/eli/etat/leg/loi/2024/03/29/a144/jo" id="32841b2e-0dea-4522-b33d-8f081d20b480" scl:verify="true">loi du 29 mars 2024</ref>, ainsi que pour le baccalauréat européen, le montant de la taxe est fixé à 75 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour les certificats de reconnaissance d'équivalence de diplômes étrangers de fin d'études secondaires de pays n'ayant pas ratifié la Convention européenne relative à l'équivalence des diplômes donnant accès aux établissements universitaires, signée à Paris le 11 décembre 1953 et approuvée par la <ref href="/eli/etat/leg/loi/1954/12/13/n6/jo" id="181a41b4-cc83-429e-9129-2a4cc978913b" scl:verify="true">loi du 13 décembre 1954</ref>, la Convention sur la reconnaissance des qualifications relatives à l'enseignement supérieur dans la région européenne, signée à Lisbonne le 11 avril 1997 et approuvée par la <ref href="/eli/etat/leg/loi/2000/08/14/n7/jo" id="15649672-104f-4ec8-a8bb-5e5d21c35e85" scl:verify="true">loi du 14 août 2000</ref>, la Convention mondiale sur la reconnaissance des qualifications relatives à l'enseignement supérieur, faite à Paris, le 25 novembre 2019, et approuvée par la <ref href="/eli/etat/leg/loi/2024/03/29/a144/jo" id="7439e379-9494-423d-8522-8664c7bcd7ab" scl:verify="true">loi du 29 mars 2024</ref> et du baccalauréat international, le montant de la taxe est fixé à 125 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Tout intéressé peut se voir délivrer un duplicata du certificat d'équivalence à charge de payer une taxe d'un montant de 10 euros.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La taxe est à acquitter moyennant un versement ou un virement sur un compte bancaire de l'Administration de l'enregistrement et des domaines, comprenant indication de l'identité du requérant ainsi que l'objet du virement ou versement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La preuve de paiement est à joindre à la demande et constitue une pièce obligatoire du dossier.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+</chapter>
+<chapter id="chapitre_2">
+<num>Chapitre 2.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Les lycées</heading>
+<article id="art_2">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_2</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_2/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 2. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 2. </num>
+<heading> <b>La mission des lycées</b> </heading>
+<alinea>
+<content>
+<p>Les lycées ont pour mission d'assurer la formation scolaire et, en complément à l'action des familles, l'éducation des élèves suivant les lois et règlements régissant l'enseignement secondaire classique.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'élève y reçoit un enseignement qui a pour objectif de le conduire à une certification reconnue, de lui permettre d'acquérir une culture générale, de le préparer à la vie active et à l'exercice de ses responsabilités d'homme et de citoyen. L'élève y est aidé dans son développement personnel et son orientation.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3. </num>
+<heading> <b>Les domaines d'autonomie des lycées</b> </heading>
+<alinea>
+<content>
+<p>Dans les limites fixées par la présente loi, les lycées peuvent engager des actions autonomes dans le domaine pédagogique, dans le domaine de l'organisation administrative et dans le domaine financier afin d'adapter l'enseignement du lycée à des besoins et des priorités qui lui sont propres, tels qu'exprimés par la communauté scolaire. Le conseil d'éducation tel que défini à l'article 36 donne son accord pour ces actions et fait des propositions y relatives. Elles sont consignées sous forme de profil du lycée. Elles font l'objet d'une évaluation interne par le lycée et d'une évaluation externe par le ministre. Le directeur met en place la cellule de développement scolaire définie à l'article 36bis qui permet de gérer ces actions et d'organiser le développement scolaire, notamment la communication, la concertation et la formation continue des enseignants nécessaires pour atteindre les objectifs visés par ces actions.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3<i>bis</i>.</num>
+<alinea>
+<content>
+<p>Le plan de développement scolaire</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>(1) Dans chaque lycée, un plan de développement de l'établissement scolaire, ci-après désigné par «PDS», est élaboré.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le PDS est une démarche de la communauté scolaire qui porte prioritairement sur le développement du profil du lycée tel que défini à l'article 3, en se fondant sur une analyse des besoins de la communauté scolaire ainsi que sur l'offre scolaire et parascolaire existantes. Le PDS définit les objectifs à atteindre, les moyens à engager, les échéances à respecter et les indicateurs de réussite.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le PDS porte sur trois années scolaires.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le PDS est élaboré par la cellule de développement scolaire en concertation avec le conseil d'éducation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La proposition commune de la cellule de développement scolaire et du conseil d'éducation est soumise pour avis à la conférence du lycée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas d'avis positif, le PDS est approuvé par le directeur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas d'avis négatif, le PDS est revu par la cellule de développement scolaire en concertation avec le conseil d'éducation et soumis une deuxième fois à la conférence du lycée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas d'avis positif, le PDS est approuvé par le directeur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas d'un deuxième avis négatif, le directeur constate l'incapacité de la communauté scolaire de se mettre d'accord sur le PDS et il approuve définitivement un PDS.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le PDS approuvé est arrêté par le ministre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le PDS est réexaminé annuellement par la cellule de développement scolaire et, le cas échéant actualisé, sans que les finalités et les objectifs à atteindre ne puissent être remis en question. La cellule de développement scolaire rapporte au conseil d'éducation et à la conférence du lycée l'état d'avancement du PDS.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3ter/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3ter. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3<i>ter</i>. - </num>
+<heading> <b>La démarche des lycées</b> </heading>
+<alinea>
+<content>
+<p>Les lycées assurent une démarche commune et cohérente, documentée dans le PDS, qui répond aux spécificités locales de la population scolaire dans les domaines suivants :</p>
+<ol scl:symbol="1°">
+<li>l'organisation de l'appui scolaire tel que défini à l'article 14 ;</li>
+<li>l'encadrement des élèves à besoins éducatifs spécifiques ;</li>
+<li>l'accompagnement psycho-social des élèves ;</li>
+<li>l'orientation et l'intégration scolaires des élèves, conformément à l'article 12, paragraphe 2 ;</li>
+<li>la coopération avec les parents d'élèves ;</li>
+<li>l'intégration des technologies de l'information et de communication ;</li>
+<li>l'éducation non-formelle et l'offre périscolaire ;</li>
+<li>la participation des élèves.</li>
+<li>le développement de compétences interculturelles et l'encadrement les élèves issus d'un contexte migratoire.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>À la rentrée scolaire, les lycées portent à la connaissance des parents et élèves leurs démarches.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un règlement grand-ducal fixe les modalités et les finalités de l'élaboration et de la mise en œuvre du PDS.</p>
+</content>
+</alinea>
+</article>
+<article id="art_3quater">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3quater</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3quater/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3quater. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3<i>quater</i>. </num>
+<heading> <b>L'élaboration et la mise en œuvre de la démarche des lycées</b> </heading>
+<alinea>
+<content>
+<p>La promotion, le soutien et la coordination de l'élaboration et de la mise en œuvre de la démarche des lycées incombe, selon le domaine concerné, aux services suivants :</p>
+<ol scl:symbol="1°">
+<li>au service psycho-social et d'accompagnement scolaires du lycée prévue à l'article 28<i>bis</i>, pour le domaine de l'accompagnement psycho-social des élèves ;</li>
+<li>au service socio-éducatif du lycée prévu à l'article 28<i>ter</i>, pour le domaine de la participation des élèves ;</li>
+<li>au service socio-éducatif du lycée prévu à l'article 28<i>ter</i> et à l'internat prévu à l'article 32, pour les domaines de l'éducation non-formelle et de l'offre périscolaire ;</li>
+<li>à l'équipe de soutien des élèves à besoins éducatifs spécifiques, ci-après « ESEB » prévue à l'article 28<i>quater</i>, pour le domaine de l'encadrement des élèves à besoins éducatifs spécifiques ;</li>
+<li>à la cellule d'orientation et d'intégration scolaires prévue à l'article 28<i>quinquies</i>, pour les domaines de l'orientation et de l'intégration scolaires des élèves.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_3quinquies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3quinquies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_3quinquies/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 3quinquies. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 3<i>quinquies</i>. </num>
+<heading> <b>Les services-ressources des services du lycée</b> </heading>
+<alinea>
+<content>
+<p>Les services du lycée sont soutenus dans leurs missions relatives à l'élaboration et la mise en œuvre de la démarche des lycées par les services-ressources suivants :</p>
+<ol scl:symbol="1°">
+<li>le service psycho-social et d'accompagnement scolaires et le service socio-éducatif et l'internat, par le Centre psycho-social et d'accompagnement scolaires ;</li>
+<li>l'ESEB par le Service national de l'éducation inclusive ;</li>
+<li>la cellule d'orientation et d'intégration scolaires par le Service de coordination de la Maison de l'orientation concernant le volet de l'orientation et par le service en charge de l'intégration et de l'accueil scolaires concernant le volet de l'intégration.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_4">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_4</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_4/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 4. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 4. </num>
+<heading> <b>La charte scolaire</b> </heading>
+<alinea>
+<content>
+<p>Afin de créer un milieu d'apprentissage empreint de respect et de promouvoir la coopération entre les différents partenaires, la communauté scolaire se donne des règles de conduite fondées sur les droits et devoirs de ses membres qui sont fixés dans une charte scolaire. Ces règles peuvent aller au-delà des règles de comportement prévues par le règlement grand-ducal concernant les règles de conduite.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La charte scolaire décrit, entre autres, le profil que la communauté scolaire souhaite donner au lycée, l'organisation interne du lycée et les relations avec le monde socio-économique du pays et de la région d'implantation du lycée. La charte scolaire est adoptée par le conseil d'éducation.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_3">
+<num>Chapitre 3.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">L'organisation des enseignements</heading>
+<article id="art_5">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_5</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_5/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 5. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 5. </num>
+<heading> <b>La mise en œuvre des programmes</b> </heading>
+<alinea>
+<content>
+<p>L'organisation des enseignements se fait conformément aux programmes et aux grilles des horaires hebdomadaires fixés par règlement grand-ducal. L'assistance aux cours déterminés par les programmes est obligatoire pour les élèves. Ils doivent accomplir les travaux scolaires qui leur sont demandés par les enseignants et se soumettre aux épreuves de contrôle des connaissances qui leur sont imposées.</p>
+</content>
+</alinea>
+</article>
+<article id="art_6">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_6</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_6/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 6. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 6. </num>
+<heading> <b>L'action autonome des lycées dans le domaine pédagogique</b> </heading>
+<alinea>
+<content>
+<p>En vue de répondre à des besoins et à des situations spécifiques, les lycées peuvent adapter les grilles des horaires hebdomadaires arrêtées par règlement grand-ducal, dans une marge ne pouvant toutefois pas dépasser trois leçons hebdomadaires, sans pour autant modifier la durée totale d'enseignement déterminée par la grille des horaires. Ces adaptations se font suivant accord du Conseil d'éducation qui est soumis à l'approbation du ministre.</p>
+</content>
+</alinea>
+</article>
+<article id="art_7">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_7</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_7/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 7. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 7. </num>
+<heading> <b>Le projet d'établissement</b> </heading>
+<alinea>
+<content>
+<p>Chaque lycée peut établir un projet d'établissement. Celui-ci définit, dans le respect des dispositions légales, réglementaires et administratives, les objectifs propres à l'établissement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il a pour objet:</p>
+<ul scl:symbol="dash">
+<li> <p>de promouvoir des initiatives pédagogiques et d'action éducative;</p> </li>
+<li> <p>d'organiser des activités périscolaires, notamment celles à caractère culturel et sportif;</p> </li>
+<li> <p>d'engager des actions facilitant l'accès à la formation professionnelle, la transition à la vie active et la réinsertion professionnelle, notamment celles qui comportent le travail en entreprise ou le partenariat avec une entreprise ou une collectivité, ainsi que des initiatives qui, à des fins pédagogiques, développent des activités à caractère économique.</p> </li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le projet d'établissement est adopté par le Conseil d'éducation, soumis à l'avis du Centre de coordination des projets d'établissement et arrêté par le ministre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il fait l'objet d'une évaluation par le ministre.</p>
+</content>
+</alinea>
+</article>
+<article id="art_8">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_8</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_8/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 8. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 8. </num>
+<heading> <b>Le projet d'innovation pédagogique</b> </heading>
+<alinea>
+<content>
+<p>Un projet d'innovation pédagogique peut être mis en œuvre par le lycée, à la demande des partenaires scolaires et après approbation du ministre. Pour chaque projet, les objectifs, les modalités de réalisation et la durée doivent être indiqués. Dans le cadre du projet, une dérogation aux dispositions des programmes en vigueur et de la grille des horaires peut être prévue par règlement grand-ducal. Les projets font l'objet d'une évaluation par le ministre.</p>
+</content>
+</alinea>
+</article>
+<article id="art_9">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_9</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_9/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 9. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 9. </num>
+<heading> <b>Les classes à objectifs spéciaux et les classes spécialisées</b> </heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Un lycée peut être autorisé à organiser des classes à objectifs spéciaux, à savoir:</p>
+<ul scl:symbol="dash">
+<li> <p>des classes sportives;</p> </li>
+<li> <p>des classes musicales et artistiques;</p> </li>
+<li> <p>des classes pour prévenir l'exclusion scolaire ;</p> </li>
+<li> <p>des classes pour élèves qui ont des facilités d'apprentissage particulières;</p> </li>
+<li> <p>des classes d'inclusion pour des élèves à besoins éducatifs spécifiques ;</p> </li>
+<li> <p>des classes d'intégration pour des élèves nouvellement arrivés tels que visés par la <ref href="/eli/etat/leg/loi/2023/07/14/a424/jo" id="6aebe2bc-6711-4500-a32f-0d9ec96b84d2" scl:verify="true">loi du 14 juillet 2023</ref> relative à l'accueil, à l'orientation, à l'intégration et à l'accompagnement scolaires des élèves nouvellement arrivés préparant à l'offre scolaire du lycée ;</p> </li>
+<li> <p>des classes à régime linguistique spécifique;</p> </li>
+<li> <p>des classes pour jeunes adultes, offertes sur base contractuelle à des élèves majeurs avec un enseignement adapté à leur maturité;</p> </li>
+<li> <p>des classes de réintégration, offertes à des élèves qui se trouvent exclus de l'école, pour leur donner la possibilité d'accéder à une formation.</p> </li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'organisation de ces classes peut déroger aux grilles des horaires et aux programmes d'enseignement en vigueur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au besoin, d'autres institutions, publiques ou privées, peuvent être chargées par le ministre, sur base d'une convention, d'une partie ou de l'intégralité de la formation.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le ministre est autorisé à créer des classes spécialisées de l'enseignement secondaire en dehors des lycées, accueillant des enfants ou jeunes à besoins éducatifs spécifiques, des élèves hospitalisés ou accueillis dans une institution spécialisée ou des jeunes ayant décroché du système éducatif.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les élèves des classes spécialisées et les enseignants, durant leur enseignement dans ces classes, sont placés sous l'autorité administrative du directeur de l'institution qui les accueille, ou d'un chargé de direction nommé par le ministre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les élèves des classes spécialisées restent inscrits dans leur lycée d'origine qui émet les bulletins, certificats et diplômes. Si l'élève n'a pas été inscrit dans un lycée, les bulletins, certificats et diplômes sont émis par un lycée désigné par le ministre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre affecte les enseignants aux classes spécialisées en collaboration avec le directeur de l'institution ou le chargé de direction.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La supervision pédagogique est exercée par un directeur ou par des directeurs de lycée désignés par le ministre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Les classes à objectifs spéciaux et les classes spécialisées peuvent accueillir des élèves de l'enseignement fondamental âgés d'au moins 12 ans qui y sont orientés avec l'accord de la Commission nationale d'inclusion et des parents.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le rythme de l'enseignement des classes à objectifs spéciaux et des classes spécialisées est adapté aux capacités et besoins des élèves, sur la décision des enseignants avec l'accord du directeur de l'institution ou du chargé de direction.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Dans l'intérêt de l'organisation des classes à objectifs spéciaux et des classes spécialisées, l'État peut conclure des conventions pour la mise à disposition de structures et d'infrastructures d'encadrement adéquates avec des personnes de droit public ou privé.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(6)</num>
+<alinea>
+<content>
+<p>Le cadre du personnel des lycées et classes spécialisées de l'enseignement secondaire pour les classes à régime linguistique spécifique et des classes de réintégration peut être complété par des employés enseignants et socio-éducatifs suivant les besoins du service et dans les limites des crédits budgétaires, sous les conditions suivantes:</p>
+<ol scl:symbol="1°">
+<li>avoir eu accès à la fonction enseignante dans un pays européen ;</li>
+<li>se prévaloir d'une expérience professionnelle d'au moins cinq ans dans la fonction enseignante ;</li>
+<li>démontrer un niveau de connaissances suffisant dans une des trois langues administratives du pays telles que définies par la <ref href="/eli/etat/leg/loi/1984/02/24/n1/jo" id="dec32938-a01a-4220-ba44-9eb44eee25a9" scl:verify="true">loi du 24 février 1984</ref> sur le régime des langues et</li>
+<li>se soumettre à cet effet à une épreuve vérifiant ces connaissances.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour bénéficier d'un classement dans la catégorie A, groupe d'indemnité A1, sous-groupe de l'enseignement tel que prévu à l'article 43, paragraphe 4 de la <ref href="/eli/etat/leg/loi/2015/03/25/n8/jo" id="bb6f125c-82f0-4a84-ba96-979146d8d38e" scl:verify="true">loi modifiée du 25 mars 2015</ref> déterminant le régime et les indemnités des employés de l'État, l'employé doit remplir les conditions de diplôme pour l'admission au concours de recrutement pour une fonction enseignante du groupe de traitement correspondant du régime de traitement des fonctionnaires de l'État ou pour l'admission au stage de cette fonction.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour bénéficier d'un classement dans la catégorie A, groupe d'indemnité A2, sous-groupe de l'enseignement tel que prévu à l'article 44, paragraphe 3 de la <ref href="/eli/etat/leg/loi/2015/03/25/n8/jo" id="de6ec7eb-60e4-4ddb-a5c5-2566a6c76bd7" scl:verify="true">loi modifiée du 25 mars 2015</ref> déterminant le régime et les indemnités des employés de l'État, l'employé doit soit être détenteur du diplôme du bachelor, soit présenter un certificat sanctionnant des études reconnues équivalentes correspondant à la formation exigée pour la vacance de poste sollicitée.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_10">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_10</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_10/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 10. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 10. </num>
+<heading> <b>L'organisation des horaires</b> </heading>
+<alinea>
+<content>
+<p>Les dates des vacances scolaires, la date de la rentrée des classes et la date de la fin des cours sont fixées par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre fixe la durée des leçons. Les classes fonctionnent soit pendant six jours, soit pendant cinq jours par semaine. Les lycées sont libres d'organiser les horaires dans le respect des dispositions du règlement prévu à l'alinéa 1<sup>er</sup> et sous réserve de l'accord du conseil d'éducation et du ministre.</p>
+</content>
+</alinea>
+</article>
+<article id="art_11">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_11</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_11/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 11. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 11. </num>
+<heading> <b>L'évaluation des enseignements</b> </heading>
+<alinea>
+<content>
+<p>L'organisation et les résultats des enseignements des différents lycées peuvent faire l'objet d'une évaluation par le ministre. Les lycées mettent à disposition les informations et données nécessaires à cet effet. Les évaluations prennent en compte les expériences pédagogiques afin de faire connaître les pratiques innovantes.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_4">
+<num>Chapitre 4.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">La prise en charge éducative des élèves</heading>
+<article id="art_14">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_14</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_14/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14.</num>
+<alinea>
+<content>
+<p>Les objectifs et les mesures de l'encadrement de l'élève dont les résultats scolaires risquent de compromettre la réussite en fin d'année scolaire</p>
+</content>
+</alinea>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le directeur du lycée prend les mesures nécessaires pour que l'élève dont les résultats scolaires risquent de compromettre la réussite en fin d'année scolaire puisse :</p>
+<ol scl:symbol="1°">
+<li>soit réaliser les objectifs prévus par les programmes en bénéficiant de mesures d'appui ou d'aménagements raisonnables ;</li>
+<li>soit réaliser une partie des objectifs prévus, par un plan individualisé permettant l'accès à certaines formations.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>L'appui peut être déclaré obligatoire par le conseil de classe. Le refus de réaliser les travaux et l'absence injustifiée aux cours et études surveillées imposés dans le cadre de l'appui obligatoire est passible des mêmes sanctions que l'absence non justifiée aux cours telles que prévues au règlement grand-ducal concernant les règles de conduite.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'appui consiste en :</p>
+<ol scl:symbol="1°">
+<li>des mesures de remédiation ou d'approfondissement individualisées, organisées au lycée ;</li>
+<li>la participation à des cours de remédiation, de mise à niveau ou d'approfondissement ;</li>
+<li>la participation à des cours de méthodes d'apprentissage ;</li>
+<li>des études surveillées au lycée ;</li>
+<li>des travaux à réaliser à domicile.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le conseil de classe peut autoriser l'élève à remplacer l'appui obligatoire par des activités pédagogiques extrascolaires.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>L'appui facultatif est une offre qui peut consister en :</p>
+<ol scl:symbol="1°">
+<li>la participation à des cours de répétition, de mise à niveau ou d'approfondissement ;</li>
+<li>l'inscription à des études surveillées.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'élève qui ne réalise pas les travaux qui lui sont indiqués et qui s'absente de manière injustifiée des cours et études auxquels il s'est inscrit, peut être exclu de l'appui facultatif.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Un élève des classes supérieures peut être chargé, à sa demande, par le directeur de mesures d'appui scolaire et personnel en tant que parrain d'un élève des classes inférieures ou de la classe de 4 e.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur désigne un enseignant appelé à superviser le parrainage.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette mesure d'appui de la part d'un élève parrain est inscrite à son bulletin et le complément au diplôme de fin d'études secondaires si le conseil de classe, ou la commission d'examen sur proposition du conseil de classe, le décide.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Un règlement grand-ducal précise l'offre de mesures d'appui scolaire.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_14bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_14bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14bis. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14<i>bis</i>. - </num>
+<heading> <b>La commission d'inclusion de l'enseignement secondaire</b> </heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est créé, dans chaque lycée, une commission d'inclusion de l'enseignement secondaire, ci-après « commission d'inclusion », comprenant les membres suivants, nommés par le ministre pour un mandat renouvelable d'une durée de trois ans :</p>
+<ol scl:symbol="1°">
+<li>un membre de la direction, proposé par le directeur ;</li>
+<li>le chef du département éducatif et psycho-social du lycée ;</li>
+<li>un membre du personnel du lycée comme secrétaire ;</li>
+<li>un psychologue du lycée ;</li>
+<li>un assistant social du lycée ;</li>
+<li>un membre de l'ESEB ;</li>
+<li>deux enseignants, proposés par le directeur ;</li>
+<li>un représentant des Centres de compétences en psycho-pédagogie spécialisée ;</li>
+<li>le médecin scolaire ou son délégué, désigné par le ministre ayant la Santé dans ses attributions.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre charge le membre de la direction de la présidence. Le président peut inviter des experts à assister aux séances de la commission d'inclusion.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le fonctionnement de la commission d'inclusion est fixé par règlement grand-ducal.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>La commission d'inclusion a les missions suivantes :</p>
+<ol scl:symbol="1°">
+<li>définir soit à la demande des parents ou de l'élève majeur, soit à la demande du directeur, soit de l'un des services mentionnés à l'article 28<i>bi</i>s et à l'article 28<i>quater</i> et pour autant que les parents ou l'élève majeur aient marqué leur accord, les mesures mentionnées à l'article 14<i>ter</i>, paragraphe 1<sup>er</sup> ;</li>
+<li>désigner, pour chaque élève pour lequel elle est saisie, une personne de référence qui est l'interlocuteur entre l'élève, ses parents et les personnes chargées de la mise en œuvre du plan de formation individualisé ;</li>
+<li>charger l'ESEB de l'établissement d'un diagnostic des besoins de l'élève concerné, si, au vu des informations contenues dans la demande mentionnée sous le point 1°, elle ne peut pas se prononcer sur la suite à lui réserver ;</li>
+<li>veiller à la mise en œuvre du plan de formation individualisé de l'élève et charger l'ESEB de la réévaluation des besoins de l'élève lorsqu'elle l'estime nécessaire ;</li>
+<li>saisir la Commission des aménagements raisonnables, pour autant que les parents ou l'élève majeur aient marqué leur accord, si elle estime que l'élève requiert des aménagements raisonnables, autres que ceux visés à l'article 14<i>ter</i>, paragraphe 1<sup>er</sup> et veiller à la mise en œuvre des aménagements raisonnables décidés ;</li>
+<li>saisir la Commission nationale d'inclusion, pour autant que les parents ou l'élève majeur aient marqué leur accord, si elle estime que l'élève requiert une prise en charge spécialisée conformément à la <ref href="/eli/etat/leg/loi/2018/07/20/a664/jo" id="0d5b6869-2342-4182-b5af-22b043ffa646" scl:verify="true">loi modifiée du 20 juillet 2018</ref> en faveur de l'inclusion scolaire.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2<i>bis</i>)</num>
+<alinea>
+<content>
+<p> La commission d'inclusion établit un dossier personnel pour l'élève concerné qui comprend les éléments suivants :</p>
+<ol scl:symbol="1°">
+<li>le diagnostic des besoins de l'élève, et le cas échéant ;</li>
+<li>le plan de formation individualisé ;</li>
+<li>la description des aménagements raisonnables ;</li>
+<li>le dossier élaboré par la commission d'inclusion de l'enseignement fondamental.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Pour chaque élève orienté vers la voie de préparation sans avoir passé deux années au quatrième cycle de l'école fondamentale, le directeur ou un membre de la direction délégué par le directeur invite le régent de l'élève et le titulaire de l'enseignement fondamental concerné à une réunion. Si les parents le souhaitent, un psychologue du lycée assiste à la réunion et, le cas échéant, soumet l'élève à des tests afin d'établir ou de préciser ses besoins éducatifs spécifiques.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Cette réunion a lieu au premier trimestre de la scolarisation de l'élève au lycée. Le directeur ou un membre de la direction désigné comme délégué y obtient les informations utiles concernant l'élève et peut décider de saisir la commission d'inclusion de l'enseignement secondaire du lycée.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_14ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_14ter/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14ter. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14<i>ter</i>. - </num>
+<heading> <b>Le plan de formation individualisé</b> </heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les mesures qui font l'objet d'un plan de formation individualisé peuvent consister en :</p>
+<ol scl:symbol="1°">
+<li>l'appui scolaire tel que défini à l'article 14, paragraphe 2 ;</li>
+<li>l'adaptation de l'enseignement en classe assuré par le régent et les autres enseignants en collaboration avec les membres de l'équipe de soutien des élèves à besoins éducatifs spécifiques ;</li>
+<li>l'adaptation du contenu de l'enseignement pour l'élève ne pouvant pas suivre le rythme scolaire de sa voie de formation ;</li>
+<li>la prise en charge de l'élève par des membres de l'équipe de soutien des élèves à besoins éducatifs spécifiques ;</li>
+<li>la réorientation partielle ou totale vers d'autres voies de formation ou des classes spécialisées, prévues à l'article 9 ;</li>
+<li> <p>l'obtention, la modification et la suspension des aménagements raisonnables suivants :</p> <ol scl:symbol="a)">
+<li> <p>l'aménagement de la salle de classe et de la place de l'élève,</p> </li>
+<li> <p>la mise à disposition d'une salle séparée pour passer des épreuves ou des examens,</p> </li>
+<li> <p>une présentation adaptée des questionnaires ;</p> </li>
+</ol> </li>
+<li> <p>en concertation avec le conseil de classe, l'obtention, la modification et la suspension des aménagements raisonnables suivants :</p> <ol scl:symbol="a)">
+<li> <p>la dispense d'une partie des épreuves prévues par un trimestre ou semestre,</p> </li>
+<li> <p>le remplacement d'une partie des épreuves prévues par une seule épreuve de fin de trimestre ou de semestre,</p> </li>
+<li> <p>la prise en considération, pour les résultats annuels, des résultats scolaires portant uniquement sur un ou deux trimestres ou sur un semestre.</p> </li>
+</ol> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>L'élève et ses parents sont invités par la personne de référence à participer à une réunion de concertation préalable, afin de leur expliquer les différentes mesures, ainsi que de les informer sur l'impact éventuel des différentes mesures sur le parcours scolaire de l'élève.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le plan de formation individualisé est adopté, d'un commun accord, entre la commission d'inclusion et les parents ou l'élève majeur.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>La commission d'inclusion évalue, annuellement, le plan de formation individualisé et y intègre les adaptations jugées nécessaires pour assurer l'adéquation des mesures aux besoins de l'élève.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Elle se prononce sur la fin des mesures, la personne de référence, les parents et l'élève demandés en leur avis.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_14quater">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_14quater</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_14quater/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 14quater. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 14<i>quater</i>. </num>
+<heading> <b>Le complément au bulletin</b> </heading>
+<alinea>
+<content>
+<p>Pour les élèves disposant d'un plan de formation individualisé et n'ayant pas réussi à toutes les épreuves, le conseil de classe élabore un complément au bulletin de l'élève qui renseigne sur :</p>
+<ol scl:symbol="1°">
+<li>les acquis de l'élève ;</li>
+<li>les performances et les progrès de l'élève ;</li>
+<li>les cours facultatifs, les activités périscolaires et les stages auxquels a participé l'élève ;</li>
+<li>l'attitude face au travail et les compétences sociales et personnelles de l'élève.</li>
+</ol>
+</content>
+</alinea>
+</article>
+<article id="art_15">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_15</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_15/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 15. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 15. </num>
+<heading> <b>La surveillance</b> </heading>
+<alinea>
+<content>
+<p>La surveillance s'exerce dans le souci d'assurer le bon déroulement des cours, ainsi que de maintenir le respect des règles de civilité et le respect de l'environnement scolaire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du corps enseignant et les membres des services du lycée tels que définis au chapitre 8 concourent à assurer la surveillance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La surveillance doit être assurée pendant toute la durée où l'élève est confié à l'établissement scolaire, y compris les récréations. Les déplacements des élèves des classes inférieures pendant la durée des cours entre l'enceinte scolaire et le lieu d'une activité se trouvant en dehors de l'enceinte doivent être encadrés par une personne adulte que le directeur charge de la surveillance de ces élèves.</p>
+</content>
+</alinea>
+</article>
+<article id="art_16">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_16</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_16/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 16.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 16.</num>
+<heading> <b> Les activités périscolaires</b> </heading>
+<alinea>
+<content>
+<p>Chaque lycée offre un encadrement périscolaire. L'encadrement périscolaire comprend des activités d'apprentissage, culturelles et sportives, et des activités visant à faire connaître à l'élève les lieux et les acteurs de la vie culturelle, politique, professionnelle et sociale du pays. Cet encadrement est assuré par le lycée dans la limite des moyens mis à sa disposition à cet effet. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La participation aux activités périscolaires est facultative. La présence et l'obligation d'assiduité de l'élève s'imposent dès lors qu'il est inscrit.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un lycée peut organiser les activités d'encadrement périscolaire dans un horaire scolaire aménagé visant la mise en place de la journée continue, en alternant des séquences d'apprentissage scolaire et des séquences d'encadrement.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Plusieurs lycées peuvent s'associer pour organiser les activités d'encadrement périscolaire.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_5">
+<num>Chapitre 5.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">L'administration des lycées</heading>
+<article id="art_17">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_17</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_17/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 17.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 17.</num>
+<heading> <b> L'organisation des classes</b> </heading>
+<alinea>
+<content>
+<p>Pour chaque lycée un contingent de leçons d'enseignement et d'heures d'activité est mis à disposition. Ce contingent est établi sur la base des grilles des horaires et des effectifs des élèves des différentes classes. Il doit permettre l'organisation des classes et la prise en charge éducative des élèves telle que définie au chapitre précédent.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur du lycée organise les classes des formations que le lycée est autorisé à offrir, les activités de surveillance, de prise en charge éducative, d'appui et les activités périscolaires dans les limites du contingent de leçons d'enseignement et d'heures d'activités mis à disposition du lycée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Une commission ministérielle de cinq membres nommés par le ministre lui soumet une proposition relative au contingent prévu à l'alinéa 1 et lui fait rapport sur la gestion du contingent accordé.</p>
+</content>
+</alinea>
+</article>
+<article id="art_18">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_18</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_18/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 18. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 18. </num>
+<heading> <b>La gestion financière du lycée</b> </heading>
+<alinea>
+<content>
+<p>Un lycée peut être constitué en service de l'État à gestion séparée par la loi budgétaire en conformité avec l'article 74 de la <ref href="/eli/etat/leg/loi/1999/06/08/n2/jo" id="42843e77-b3bf-4288-948d-293e5b8fd43b" scl:verify="true">loi modifiée du 8 juin 1999</ref> sur le budget, la comptabilité et la trésorerie de l'État.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_6">
+<num>Chapitre 6.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Les structures des lycées</heading>
+<article id="art_19">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_19</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_19/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 19. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 19. </num>
+<heading> <b>La classe</b> </heading>
+<alinea>
+<content>
+<p>Les élèves des lycées sont répartis en classes.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Chaque classe est placée sous l'autorité d'un régent de classe, à désigner par le directeur parmi les enseignants de la classe. La tâche et les attributions du régent de classe sont fixées par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Au début de l'année scolaire, les élèves de chaque classe élisent deux délégués de classe qui les représentent auprès des enseignants, du régent de classe et du directeur du lycée. Les délégués sont les porte-parole des élèves de la classe. Ils assurent la liaison avec le comité des élèves.</p>
+</content>
+</alinea>
+</article>
+<article id="art_20">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_20</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_20/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 20.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 20.</num>
+<heading> <b> Le conseil de classe</b> </heading>
+<alinea>
+<content>
+<p>Pour chaque classe il est institué un conseil de classe.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il est composé du directeur ou de son délégué et de tous les titulaires des cours qui figurent au programme de la classe. Il s'adjoint, avec voix consultative, un membre du service psycho-social et d'accompagnement scolaires du lycée et, le cas échéant, un membre du service chargé de l'assistance en classe d'un enfant ou jeune à besoins éducatifs spécifiques. Il peut s'adjoindre, avec voix consultative, un membre du service socio-éducatif du lycée, un membre du service de la médecine scolaire ou un membre de la cellule d'orientation. Pour les classes concomitantes, le conseiller à l'apprentissage assiste au conseil de classe avec voix consultative.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le conseil de classe a notamment les attributions suivantes:</p>
+<ul scl:symbol="dash">
+<li> <p>il se concerte sur la mise en œuvre des enseignements;</p> </li>
+<li> <p>il délibère sur les progrès des élèves;</p> </li>
+<li> <p>il surveille l'attitude au travail et la discipline des élèves;</p> </li>
+<li> <p>il décide de la promotion des élèves;</p> </li>
+<li> <p>il donne un avis d'orientation;</p> </li>
+<li> <p>il recommande ou impose des appuis en cas de difficultés scolaires;</p> </li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lorsque le conseil de classe délibère et statue sur des questions relatives à un élève dans le cadre de ses compétences telles qu'énumérées à l'alinéa précédent, les seuls enseignants titulaires de l'élève concerné, outre le directeur ou son délégué, peuvent participer à une prise de décision avec une voix délibérative.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du conseil de classe se réunissent chaque fois que le bon fonctionnement de l'enseignement et le maintien de la discipline dans la classe l'exigent.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres des conseils des classes inférieures se réunissent également avec les parents des élèves de la classe au moins une fois par année scolaire, au plus tard avant la fin du premier trimestre et chaque fois que la majorité des parents des élèves de la classe le demande.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans les classes inférieures, le conseil de classe restreint regroupe les enseignants désignés par le directeur. Le régent convoque le conseil de classe restreint et le préside. Il peut y inviter d'autres membres du conseil de classe. Le conseil de classe restreint a les attributions suivantes :</p>
+<ol scl:symbol="1.">
+<li> <p>il se concerte sur la mise en œuvre des enseignements ;</p> </li>
+<li> <p>il suit les progrès des élèves et les informe sur les progrès réalisés ;</p> </li>
+<li> <p>il surveille l'attitude au travail et la discipline des élèves ;</p> </li>
+<li> <p>il recommande ou impose des appuis en cas de difficultés scolaires.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les délégués des classes supérieures ou de la formation professionnelle peuvent être consultés par le conseil de classe à leur demande ou à l'initiative du conseil de classe pour ce qui est de la délibération sur les progrès des élèves, sur l'attitude au travail et la discipline des élèves.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un règlement grand-ducal détermine les modalités de fonctionnement et d'organisation du conseil de classe.</p>
+</content>
+</alinea>
+</article>
+<article id="art_21">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_21</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_21/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 21. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 21. - </num>
+<heading> <b>Le conseil de discipline</b> </heading>
+<alinea>
+<content>
+<p>Il est créé auprès de chaque lycée un conseil de discipline appelé à statuer sur des infractions susceptibles d'entraîner le renvoi de l'élève conformément aux dispositions des articles 43 et 43<i>bis</i>.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le conseil de discipline est composé de deux membres de la direction désignés par le directeur ainsi que de trois enseignants nommés au lycée, d'un membre du département éducatif et psycho-social et d'un représentant des parents.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour chaque membre de la direction et pour le membre du service psycho-social et d'accompagnement scolaires, le directeur désigne un suppléant. Un des deux membres de la direction assume la présidence.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les enseignants ainsi que leurs suppléants sont désignés par la conférence du lycée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le représentant des parents et son suppléant sont désignés par une assemblée générale des parents convoquée par le directeur. Le mandat des membres porte sur un terme de trois ans et est renouvelable. Le conseil de discipline peut s'adjoindre une personne de son choix avec voix consultative.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Aucun membre du conseil de classe, à l'exception du directeur, aucun parent ou allié de l'élève jusqu'au quatrième degré inclus ni leur conjoint ou partenaire au titre de la <ref href="/eli/etat/leg/loi/2004/07/09/n3/jo" id="4d3ac40d-fecc-4a65-9047-03684abd9d0e" scl:verify="true">loi modifiée du 9 juillet 2004</ref> relative aux effets légaux de certains partenariats, ne peut siéger au conseil de discipline.</p>
+</content>
+</alinea>
+</article>
+<article id="art_22">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_22</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_22/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 22. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 22. </num>
+<heading> <b>La conférence du lycée</b> </heading>
+<alinea>
+<content>
+<p>La conférence du lycée réunit les membres du corps enseignant du lycée et les membres des services du lycée. Elle est convoquée par le directeur de sa propre initiative ou lorsqu'un quart des enseignants et des membres des services le demandent.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La conférence du lycée donne son avis sur tous les sujets qui lui sont soumis par le ministre ou par le directeur. Elle délibère de sa propre initiative sur toutes les questions importantes concernant l'enseignement et l'éducation au sein du lycée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres des services du lycée assistent avec voix délibérative à la conférence du lycée pour chaque sujet qui les concerne figurant à l'ordre du jour.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La conférence de chaque lycée se donne un règlement interne de fonctionnement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_22bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_22bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_22bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 22bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 22<i>bis</i>. </num>
+<heading> <b>Les délégués à la formation continue</b> </heading>
+<alinea>
+<content>
+<p>Dans chaque lycée où sont mis en œuvre des dispositifs de formation continue en coopération avec Institut de formation de l'éducation nationale sont nommés deux délégués à la formation continue.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les délégués à la formation continue assurent la coordination de la formation continue au sein de leur établissement scolaire selon les modalités de fonctionnement fixées par l'Institut.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les délégués sont nommés par le ministre pour un mandat renouvelable de trois ans sur proposition commune de l'Institut de formation de l'éducation nationale et de la direction de l'établissement scolaire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'institut garantit la formation, le suivi et l'échange de pratiques des délégués à la formation continue.</p>
+</content>
+</alinea>
+</article>
+<article id="art_23">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_23</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_23/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 23. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 23. - </num>
+<heading> <b>La gestion des salles spéciales, des laboratoires et des ateliers</b> </heading>
+<alinea>
+<content>
+<p>Le directeur désigne une ou plusieurs personnes chargées de la gestion des salles spéciales, des laboratoires et des ateliers.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La gestion porte sur l'infrastructure et l'équipement des salles spéciales, des laboratoires et des ateliers, ainsi que sur le matériel qui y est entreposé.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il est de la responsabilité des gestionnaires de signaler sans délai et par écrit au directeur et au délégué à la sécurité, prévu par la <ref href="/eli/etat/leg/loi/1988/03/19/n1/jo" id="ab21c80f-fd02-4b4f-b4ca-4c5be772b215" scl:verify="true">loi modifiée du 19 mars 1988</ref> concernant la sécurité dans la fonction publique, tout dégât et toute situation non conforme à la <ref href="/eli/etat/leg/loi/1988/03/19/n1/jo" id="72669078-efc5-49fe-9272-d6391daae882" scl:verify="true">loi modifiée du 19 mars 1988</ref> concernant la sécurité dans la fonction publique et à la <ref href="/eli/etat/leg/loi/1999/06/10/n5/jo" id="2a295c95-819f-49ed-94f8-10ed0f1e6764" scl:verify="true">loi modifiée du 10 juin 1999</ref> relative aux établissements classés, ainsi qu'aux prescriptions complémentaires du comité de sécurité.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_7">
+<num>Chapitre 7.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">La direction des lycées</heading>
+<article id="art_24">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_24</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_24/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 24. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 24. </num>
+<heading> <b>Le directeur</b> </heading>
+<alinea>
+<content>
+<p>Le directeur est chargé du bon fonctionnement du lycée dans l'accomplissement de ses missions. Il est le chef hiérarchique du personnel affecté au lycée. Il coordonne les relations de travail et assure le développement scolaire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En tant que responsable pédagogique, il inspecte les cours et contrôle la mise en œuvre des programmes d'études. Il évalue les résultats des enseignements sur les élèves et en informe le ministre. Il conduit les projets et actions pédagogiques spécifiques du lycée. Il dirige les activités visant à assurer la prise en charge éducative, la surveillance et la sécurité des élèves.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En tant que responsable administratif, il organise les enseignements dans le respect des dispositions de la présente loi et des instructions du ministre. Il veille au bon fonctionnement de l'établissement dans ses aspects administratifs, techniques et matériels. Il est responsable du bon déroulement de la formation à la pratique professionnelle et de l'initiation dans le lycée des stagiaires enseignants et du personnel éducatif et psycho-social affectés à son établissement. Il établit le projet de budget.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur peut être nommé comptable extraordinaire.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur est nommé par le Grand-Duc dans les conditions et modalités de nomination des fonctionnaires occupant des fonctions dirigeantes dans les administrations et services de l'État.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il représente l'autorité supérieure auprès de la communauté scolaire. Il représente la communauté scolaire envers les tiers.</p>
+</content>
+</alinea>
+</article>
+<article id="art_24bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_24bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_24bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 24bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 24<i>bis</i>. </num>
+<heading> <b>L'entretien collectif avec les agents du lycée</b> </heading>
+<alinea>
+<content>
+<p>Pour l'application des dispositions de l'article 4 de la <ref href="/eli/etat/leg/loi/1979/04/16/n1/jo" id="a1698152-8f12-4356-9e06-ed9264b6688f" scl:verify="true">loi modifiée du 16 avril 1979</ref> fixant le statut général des fonctionnaires de l'Etat, les entretiens individuels avec les membres du personnel enseignant, et administratif sont remplacés par un entretien collectif avec le directeur ayant lieu pendant la dernière année scolaire de la réalisation du plan de développement scolaire.</p>
+</content>
+</alinea>
+</article>
+<article id="art_25">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_25</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_25/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 25. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 25. </num>
+<heading> <b>Le directeur-adjoint</b> </heading>
+<alinea>
+<content>
+<p>Le directeur-adjoint assiste le directeur suivant les attributions qui lui sont déléguées par ce dernier. Il remplace le directeur en cas d'absence.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur-adjoint est nommé par le Grand-Duc dans les conditions et modalités de nomination des fonctionnaires occupant des fonctions dirigeantes dans les administrations et services de l'État.</p>
+</content>
+</alinea>
+</article>
+<article id="art_25bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_25bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_25bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 25bis. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 25<i>bis</i>. - </num>
+<heading> <b>Collège(s) des directeurs de l'enseignement secondaire</b> </heading>
+<alinea>
+<content>
+<p>Les directeurs et les directeurs adjoints des lycées publics se réunissent en collège(s) dont les modalités de fonctionnement et les missions sont définies par règlement grand-ducal.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le ministre met à la disposition du collège ou des collèges de l'enseignement secondaire un secrétaire administratif.</p>
+</content>
+</alinea>
+</article>
+<article id="art_27">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_27</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_27/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 27. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 27. - </num>
+<heading> <b>L'attaché à la direction</b> </heading>
+<alinea>
+<content>
+<p>Le directeur peut se faire assister dans la gestion de l'organisation des enseignements et la mise en œuvre de l'autonomie du lycée par des attachés à la direction à tâche partielle ou complète.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les attachés à la direction suivent des formations décidées par le ministre sur proposition du directeur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'attaché à la direction peut, en tant que délégué du directeur, assurer le contact avec les parents et les élèves, la coordination des conférences spéciales ainsi que la gestion administrative et pédagogique des départements sectoriels du lycée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'attaché à la direction est membre du personnel du lycée et nommé par le ministre sur proposition du directeur pour un mandat renouvelable de trois ans.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_8">
+<num>Chapitre 8.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Les services des lycées</heading>
+<article id="art_28">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28. </num>
+<heading> <b>Le département éducatif et psycho-social</b> </heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est créé, dans chaque lycée, un département éducatif et psycho-social. Le département se compose des services suivants qui collaborent étroitement :</p>
+<ol scl:symbol="1°">
+<li>du service psycho-social et d'accompagnement scolaires ;</li>
+<li>du service socio-éducatif ;</li>
+<li>de l'ESEB ;</li>
+<li>de la cellule d'orientation et d'intégration scolaires ; et s'il y a lieu </li>
+<li> de l'internat.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Un chef de département, nommé par le ministre sur proposition du directeur, est chargé de diriger le département éducatif et psycho-social. Le chef de département est nommé parmi les fonctionnaires et employés de l'État du sous-groupe éducatif et psycho-social des catégories de traitement ou d'indemnité A ou B.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le chef de département a les missions suivantes :</p>
+<ol scl:symbol="1°">
+<li>diriger et coordonner les services du département dans le respect des missions qui leur sont attribuées par la loi ;</li>
+<li>définir les concepts d'intervention des services en fonction des cadres de référence respectifs, en collaboration avec les acteurs de la communauté scolaire ;</li>
+<li>gérer les services respectifs sur un plan administratif et établir les plans de travail individuels des agents des services ;</li>
+<li>être l'interlocuteur des services auprès de la direction du lycée ;</li>
+<li>favoriser les échanges entre les services du département.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Des coordinateurs de service peuvent être désignés par le directeur parmi les fonctionnaires et employés de l'État du sous-groupe éducatif et psycho-social. Pour la cellule d'orientation et d'intégration scolaires, les coordinateurs peuvent également être désignés parmi les fonctionnaires et employés de l'État du sous-groupe enseignement.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les services visés au paragraphe 1<sup>er</sup> sont accessibles à tout membre de la communauté scolaire ainsi qu'aux parents. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'élève mineur est en droit de s'adresser sur simple demande, sans l'autorisation des parents, aux services en question.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Parmi le personnel du service psycho-social et d'accompagnement scolaires ou parmi le personnel du service socio-éducatif, le directeur désigne des délégués à la protection des élèves, ci-après « DPE », dont les missions sont les suivantes :</p>
+<ol scl:symbol="1°">
+<li>promouvoir le respect des droits de l'élève et la prévention et la protection contre toute forme de maltraitance et de danger allant à l'encontre du bien-être de l'élève ;</li>
+<li>être l'interlocuteur privilégié qui soutient et conseille la communauté scolaire et les parents des élèves, en matière de protection des élèves contre toute forme de maltraitance et de danger allant à l'encontre du bien-être de l'élève ;</li>
+<li>informer et conseiller l'ensemble des professionnels de la communauté scolaire sur la gestion d'informations relatives à des situations susceptibles d'aller à l'encontre du bien-être des élèves ou de mettre en danger les droits des élèves, ainsi que sur le transfert de ces informations aux autorités judiciaires ;</li>
+<li>développer et organiser des formations continues pour les membres du personnel du lycée portant sur le respect des droits de l'élève, la prévention et la protection contre toute forme de maltraitance et de danger allant à l'encontre du bien-être de l'élève.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les DPE ne peuvent siéger au sein du conseil de discipline du lycée.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_28bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28bis. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28<i>bis</i>. </num>
+<heading> <b>Le service psycho-social et d'accompagnement scolaires</b> </heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est créé, dans chaque lycée, au sein du département éducatif et psycho-social, un service psycho-social et d'accompagnement scolaires.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le service a les missions suivantes :</p>
+<ol scl:symbol="1°">
+<li>informer les élèves sur les offres proposées ;</li>
+<li>assurer la guidance psychologique et sociale des élèves et de leur entourage familial et soutenir le développement de leur résilience dans le contexte de situations psycho-sociales difficiles ;</li>
+<li>assister les élèves en situation de vulnérabilité, de discrimination ou d'harcèlement et contribuer à la promotion du respect des droits des élèves ;</li>
+<li>mettre en place un accompagnement des élèves en risque de décrochage scolaire, en promouvant leurs ressources personnelles, favorables à un apprentissage et à la réussite scolaire ;</li>
+<li>contribuer à améliorer les conditions de vie socio-économiques de l'entourage familial des élèves, afin qu'elles soient favorables à la réussite scolaire et accompagner les élèves dans les démarches relatives aux subventions scolaires, telles que prévues à l'article 2 de la <ref href="/eli/etat/leg/loi/2006/07/13/n2/jo" id="4f1d2b28-4bab-4d43-b53c-c35985c08384" scl:verify="true">loi modifiée du 13 juillet 2006</ref> portant organisation du Centre psycho-social et d'accompagnement scolaires ;</li>
+<li> <p>mettre en place, en collaboration avec le service socio-éducatif, des activités :</p> <ol scl:symbol="a)">
+<li> <p>de prévention, visant le développement des compétences socio-émotionnelles des élèves dans le but de favoriser une bonne santé mentale ;</p> </li>
+<li> <p>de prévention, visant la réduction des dangers liés aux médias sociaux ;</p> </li>
+<li> <p>de promotion de la gestion des risques et de réduction des addictions ;</p> </li>
+<li> <p>de promotion d'une santé affective et sexuelle positive ;</p> </li>
+<li> <p>de promotion de la communication non-violente pour réduire la violence et le harcèlement.</p> </li>
+</ol> </li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le cadre de référence, élaboré par le Centre psycho-social et d'accompagnement scolaires et arrêté par le ministre, décrit les orientations d'action générales et les programmes d'activités des services. La mise en œuvre des programmes est évaluée par le Centre psycho-social et d'accompagnement scolaires. </p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_28ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28ter/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28ter. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28<i>ter</i>. </num>
+<heading> <b>Le service socio-éducatif</b> </heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est créé, dans chaque lycée, au sein du département éducatif et psycho-social, un service socio-éducatif.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le service a les missions suivantes :</p>
+<ol scl:symbol="1°">
+<li>proposer des activités d'éducation non-formelle, en collaboration avec des organisations de jeunes, des organisations agissant en faveur de la jeunesse et des services pour jeunes, tels que définis à l'article 3 de la <ref href="/eli/etat/leg/loi/2008/07/04/n1/jo" id="3d2dde6a-9340-4f20-ba5f-1f9751acb54d" scl:verify="true">loi modifiée du 4 juillet 2008</ref> sur la jeunesse, et des tiers ;</li>
+<li>encadrer les élèves au sein du « Jugendtreff », espace de rencontre et d'éducation non-formelle et y proposer des activités éducatives de manière régulière ;</li>
+<li>coordonner et mettre en œuvre, en collaboration avec les autres services du département et le personnel enseignant, une offre périscolaire, y compris les séjours pédagogiques avec et sans nuitées ;</li>
+<li>coordonner les activités liées à la participation des élèves à la vie du lycée, aux décisions les concernant et promouvoir la culture démocratique en milieu scolaire ;</li>
+<li>accompagner la mise en place des activités des comités d'élèves, des délégués de classe et veiller au bon fonctionnement de ces structures de représentation ;</li>
+<li> <p>mettre en place, en collaboration avec le service psycho-social et d'accompagnement scolaires, des activités :</p> <ol scl:symbol="a)">
+<li> <p>de prévention visant le développement des compétences socio-émotionnelles des élèves dans le but de favoriser une bonne santé mentale ;</p> </li>
+<li> <p>de prévention visant la réduction des dangers liés aux médias sociaux ;</p> </li>
+<li> <p>de promotion de la gestion des risques et de la réduction des addictions ;</p> </li>
+<li> <p>de promotion d'une santé affective et sexuelle positive ;</p> </li>
+<li> <p>de promotion de la communication non-violente pour réduire la violence et le harcèlement. </p> </li>
+</ol> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ces activités ont lieu pendant ou en dehors des heures de classe.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>Le « Jugendtreff » est encadré par les membres du personnel du service socio-éducatif et géré par les élèves.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_28quater">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28quater</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28quater/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28quater.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28<i>quater</i>.</num>
+<heading> <b>L'équipe de soutien des élèves à besoins éducatifs spécifiques</b> </heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est créé, dans chaque lycée, au sein du département éducatif et psycho-social, le service de l'ESEB.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le service a les missions suivantes :</p>
+<ol scl:symbol="1°">
+<li>assurer le conseil et la guidance psychologique, personnelle et sociale des élèves à besoins éducatifs spécifiques, afin de favoriser leur bien-être, leur autonomie, leur épanouissement personnel et leur participation à la vie scolaire ;</li>
+<li>établir, sur demande de la commission d'inclusion, endéans quatre semaines de période scolaire à partir de la demande, un diagnostic qui renseigne sur les besoins des élèves en question et les mesures à mettre en œuvre et qui tient compte des contributions des parents, des enseignants et, le cas échéant, des membres d'organismes agréés œuvrant dans le domaine social, familial et thérapeutique ayant assuré ou assurant une prise en charge de l'élève ;</li>
+<li>assurer la prise en charge des élèves à besoins éducatifs spécifiques, en collaboration avec les enseignants et les parents des élèves concernés, telle que définie par la commission d'inclusion ;</li>
+<li>contribuer à l'adaptation du matériel didactique des élèves à besoins éducatifs spécifiques ;</li>
+<li>procéder à une réévaluation des besoins éducatifs spécifiques des élèves, sur demande de la commission d'inclusion, qu'il présente dans les quatre semaines calendriers de la période scolaire suivant la date de la décision de la commission d'inclusion ;</li>
+<li>conseiller les membres de la communauté scolaire, ainsi que les parents des élèves à besoins éducatifs spécifiques, sur la mise en œuvre du plan de formation individualisé, tel que défini par la commission d'inclusion ;</li>
+<li>collaborer étroitement, tant avec les enseignants, les membres de la direction et les membres des autres services de la communauté scolaire du lycée, qu'avec les Centres de compétences en psycho-pédagogie spécialisée, l'Office national de l'enfance, d'autres entités étatiques et les organismes agréés œuvrant dans les domaines social, familial et thérapeutique ;</li>
+<li>promouvoir, soutenir et coordonner l'élaboration et la mise en œuvre de la démarche relative à l'encadrement des élèves à besoins éducatifs spécifiques du lycée ;</li>
+<li>conceptualiser et initier des actions d'information et de sensibilisation sur la thématique de la psycho-pédagogie spécialisée et des disciplines adjuvantes ;</li>
+<li>s'impliquer dans la mise en réseau des ESEB de l'enseignement secondaire.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_28quinquies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28quinquies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_28quinquies/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 28quinquies.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 28<i>quinquies</i>.</num>
+<heading> <b>La cellule d'orientation et d'intégration scolaires</b> </heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Il est créé, dans chaque lycée, au sein du département éducatif et psycho-social, un service dénommé « cellule d'orientation et d'intégration scolaires ».</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le service a les missions suivantes :</p>
+<ol scl:start="1" scl:symbol="1°">
+<li>mettre en place, à l'intention de tous les élèves, des activités permettant :<ol scl:start="1" scl:symbol="a)">
+<li> <p>d'apprendre à prendre des décisions et planifier les projets professionnels, afin de réussir son parcours scolaire ;</p> </li>
+<li> <p>de connaître le monde du travail et de découvrir les études et formations ;</p> </li>
+</ol> </li>
+<li>soutenir l'intégration scolaire des élèves.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>La cellule d'orientation et d'intégration scolaires est chargée de la mise en œuvre de la démarche d'orientation et d'intégration scolaires selon le cadre de référence.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ce cadre de référence décrit :</p>
+<ol scl:symbol="1°">
+<li> les objectifs à atteindre par l'orientation et l'intégration scolaires ;</li>
+<li> les mesures à prendre pour atteindre ces objectifs ;</li>
+<li> les services spécialisés ou intervenants externes sollicités pour informer sur le monde socio-économique ;</li>
+<li> l'implication des membres de la communauté scolaire dans la démarche d'orientation et d'intégration scolaires.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le cadre de référence pour l'orientation et l'intégration scolaires, est élaboré par le Service de coordination de la Maison de l'orientation, conjointement avec le Service de Coordination de la Recherche et de l'Innovation pédagogiques et technologiques et le service en charge de l'intégration et de l'accueil scolaires et est arrêté par le ministre.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Le personnel enseignant et socio-éducatif assurant des cours d'accueil et intervenant dans des classes d'intégration pour élèves nouvellement arrivés, tels que visés par la <ref href="/eli/etat/leg/loi/2023/07/14/a424/jo" id="da2060fb-a412-498c-81c9-59ebcc009fc3" scl:verify="true">loi du 14 juillet 2023</ref> relative à l'accueil, à l'orientation, à l'intégration et à l'accompagnement scolaires des élèves nouvellement arrivés, constitue l'équipe pédagogique en charge de l'intégration et de l'accueil scolaires des élèves nouvellement arrivés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur du lycée désigne, au sein de l'équipe pédagogique en charge de l'intégration et de l'accueil scolaires des élèves nouvellement arrivés, un coordinateur de l'équipe pédagogique en charge de l'intégration et de l'accueil scolaires des élèves nouvellement arrivés. Ce dernier suit des modules de formation continue d'au moins huit heures par an, organisés par le Service de l'intégration et de l'accueil scolaires, ci-après « SIA », en collaboration avec l'institut de formation de l'Éducation nationale.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_29">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_29</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_29/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 29. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 29. </num>
+<heading> <b>Le centre de documentation et d'information</b> </heading>
+<alinea>
+<content>
+<p>Il est créé auprès de chaque lycée un centre de documentation et d'information. Le centre de documentation et d'information fait partie intégrante de l'organisation pédagogique du lycée. Le bibliothécaire-documentaliste et tout autre gestionnaire du centre travaillent en étroite collaboration avec les enseignants. La mission du centre consiste notamment à:</p>
+<ul scl:symbol="dash">
+<li> <p>apprendre aux élèves à utiliser les instruments de recherche de l'information, plus particulièrement par les technologies de l'information et de la communication;</p> </li>
+<li> <p>promouvoir la lecture;</p> </li>
+<li> <p>proposer des ouvrages dans les langues les plus utilisées par les élèves ;</p> </li>
+<li> <p>assurer l'accueil et l'appui des élèves qui travaillent pendant les heures où ils n'ont pas cours;</p> </li>
+<li> <p>mettre à disposition la documentation pour la mise en œuvre des actions engagées dans le cadre de l'autonomie pédagogique du lycée.</p> </li>
+</ul>
+</content>
+</alinea>
+</article>
+<article id="art_30">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_30</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_30/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 30. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 30. </num>
+<heading> <b>Les services administratifs, techniques et informatiques</b> </heading>
+<alinea>
+<content>
+<p>Tous les personnels affectés aux services administratif, technique et informatique du lycée sont membres de la communauté scolaire. Ils concourent directement aux missions du service public de l'éducation et contribuent à assurer le fonctionnement du lycée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Ils contribuent à la qualité de l'accueil et du cadre de vie et assurent la sécurité, la veille technologique et, le cas échéant, la restauration et l'hébergement des élèves.</p>
+</content>
+</alinea>
+</article>
+<article id="art_31">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_31</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_31/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 31. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 31. </num>
+<heading> <b>La restauration scolaire</b> </heading>
+<alinea>
+<content>
+<p>Tout lycée doit offrir une possibilité de restauration pour les élèves. Un restaurant scolaire peut être rattaché à un lycée.</p>
+</content>
+</alinea>
+</article>
+<article id="art_32">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_32</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_32/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 32. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 32. </num>
+<heading> <b>L'internat</b> </heading>
+<alinea>
+<content>
+<p>Un internat peut être rattaché à un lycée. Ce service accueille, dans le cadre de l'établissement, des élèves internes ou semi-internes. Les élèves d'un lycée peuvent être hébergés dans un internat annexé à un autre lycée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'internat a les missions suivantes :</p>
+<ol scl:symbol="1°">
+<li>offrir des conditions de logement et de vie commune favorables à la réussite scolaire ;</li>
+<li>accompagner la transition vers la vie adulte et l'acquisition des compétences transversales, nécessaires à la gestion de la vie quotidienne.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'hébergement à l'internat est payant. Un règlement grand-ducal détermine les conditions de l'encadrement des élèves hébergés à l'internat, le fonctionnement de l'internat et le montant de la contribution due pour l'hébergement d'un élève à l'internat.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La restauration de l'internat est assurée par Restopolis.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_9">
+<num>Chapitre 9.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Les structures de représentation</heading>
+<article id="art_33">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_33</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_33/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 33. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 33. </num>
+<heading> <b>Le comité de la conférence du lycée</b> </heading>
+<alinea>
+<content>
+<p>Il est créé auprès de chaque lycée un comité de la conférence du lycée. Il a pour attributions:</p>
+<ul scl:symbol="dash">
+<li> <p>de représenter les enseignants auprès de la direction, auprès du ministre et auprès du comité des élèves et du comité des parents d'élèves;</p> </li>
+<li> <p>de soumettre au directeur des propositions sur toutes les questions en relation avec l'enseignement et l'éducation au sein du lycée;</p> </li>
+<li> <p>de faire des propositions concernant la formation continue du personnel;</p> </li>
+<li> <p>d'émettre des recommandations d'ordre général pour la répartition des tâches d'enseignement, de surveillance et de prise en charge des élèves;</p> </li>
+<li> <p>de préparer les prises de position de ses représentants au conseil d'éducation</p> </li>
+<li> <p>d'organiser des activités culturelles et sociales.</p> </li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur se réunit avec le comité de la conférence du lycée chaque fois que celui-ci en fait la demande. Il lui communique toutes les informations en relation avec ses diverses attributions, ainsi que les informations concernant la formation continue du personnel.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le comité de la conférence du lycée est élu par la conférence du lycée. Il délègue quatre de ses représentants au conseil d'éducation. Le comité de la conférence du lycée se donne un règlement interne de fonctionnement.</p>
+</content>
+</alinea>
+</article>
+<article id="art_34_le_comité_des_élèves">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_34_le_comité_des_élèves</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_34_le_comité_des_élèves/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 34. Le comité des élèves</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 34. Le comité des élèves</num>
+<alinea>
+<content>
+<p>Il est créé auprès de chaque lycée un comité des élèves. Il a pour attributions:</p>
+<ul scl:symbol="dash">
+<li> <p>de représenter les élèves auprès de la direction et auprès du comité des parents et du comité de la conférence du lycée ;</p> </li>
+<li> <p>d'informer les élèves sur leurs droits et leurs devoirs au sein de la communauté scolaire, notamment par l'intermédiaire des délégués de classe;</p> </li>
+<li> <p>de préparer les prises de position de ses représentants au conseil d'éducation;</p> </li>
+<li> <p>d'organiser des activités culturelles, sociales ou sportives;</p> </li>
+<li> <p>de formuler des propositions concernant la vie scolaire et le travail des élèves.</p> </li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur met à la disposition du comité des élèves une salle pour ses réunions et le matériel nécessaire à l'information des élèves du lycée. Il désigne un accompagnateur du comité des élèves choisi parmi le personnel du service socio-éducatif.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur se réunit avec le comité des élèves chaque fois que celui-ci en fait la demande.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le comité des élèves délègue les représentants des élèves à la conférence nationale des élèves et au conseil d'éducation. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les modalités d'élection, la composition et le fonctionnement du comité des élèves sont déterminés par règlement grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_34bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_34bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_34bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 34bis. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 34<i>bis</i>. - </num>
+<heading> <b>La conférence nationale des élèves</b> </heading>
+<alinea>
+<content>
+<p>Il est constitué une conférence nationale des élèves comprenant un délégué par comité d'élèves d'un lycée.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La conférence nationale des élèves a pour mission de représenter les élèves et les comités des élèves auprès du ministre, d'émettre un avis sur les questions qui lui sont soumises par le ministre, de formuler des propositions concernant la vie scolaire et le travail des élèves et de créer des commissions spéciales consultatives.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Afin d'assurer que la conférence nationale des élèves puisse travailler de façon autonome et indépendante, le ministre met à sa disposition, dans la limite des crédits budgétaires, les ressources nécessaires à son fonctionnement ainsi qu'un secrétaire administratif.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un règlement grand-ducal détermine les modalités de fonctionnement de la conférence nationale des élèves.</p>
+</content>
+</alinea>
+</article>
+<article id="art_35">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_35</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_35/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 35. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 35. </num>
+<heading> <b>Le comité des parents d'élève</b> </heading>
+<alinea>
+<content>
+<p>Il est créé auprès de chaque lycée un comité des parents d'élèves. Il a pour attributions:</p>
+<ul scl:symbol="dash">
+<li> <p>de représenter les parents des élèves auprès de la direction et auprès des comités formés respectivement par la conférence du lycée et les élèves;</p> </li>
+<li> <p>d'informer les parents d'élèves sur toutes les questions en relation avec l'enseignement au sein du lycée;</p> </li>
+<li> <p>de préparer les prises de position de ses représentants au conseil d'éducation;</p> </li>
+<li> <p>d'organiser des activités culturelles et sociales et de formuler toutes les propositions concernant l'organisation de l'enseignement et du travail des élèves au sein de l'établissement.</p> </li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le directeur se réunit avec le comité des parents d'élèves chaque fois que celui-ci en fait la demande.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Dans chaque lycée, le comité sortant convoque l'assemblée générale des parents d'élèves inscrits au lycée avant le 1<sup>er</sup> novembre de l'année scolaire en cours. A défaut, le directeur procède à la convocation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'assemblée détermine la composition et les modalités d'élection du comité des parents d'élèves. Le comité délègue les représentants des parents d'élèves au conseil d'éducation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Lors de votes à l'assemblée générale des parents d'élèves d'un lycée, chaque parent d'un ou plusieurs enfants scolarisés au lycée dispose d'une voix. Si un seul parent est présent, il dispose des deux voix. L'assemblée détermine la composition et les modalités d'élection des membres du comité des parents d'élèves. Elle désigne le représentant au conseil de discipline et son suppléant. Le comité délègue les représentants des parents d'élèves au conseil d'éducation.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un règlement grand-ducal détermine les modalités du fonctionnement du comité des parents d'élèves.</p>
+</content>
+</alinea>
+</article>
+<article id="art_36">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_36</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_36/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 36. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 36. </num>
+<heading> <b>Le conseil d'éducation</b> </heading>
+<alinea>
+<content>
+<p>Il est créé auprès de chaque lycée un conseil d'éducation. Le conseil d'éducation comprend neuf membres: le directeur de l'établissement, quatre délégués de la conférence du lycée, deux délégués du comité des élèves et deux délégués du comité des parents d'élèves désignés par les comités respectifs tous les trois ans au mois d'octobre de l'année scolaire en cours. Le conseil d'éducation peut s'adjoindre jusqu'à quatre représentants des autorités locales, du monde économique, associatif ou culturel ayant des relations avec le lycée; ils assistent avec voix consultative au conseil d'éducation. Le conseil d'éducation est convoqué au moins une fois par trimestre par le directeur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si le nombre de candidats aux postes de délégués au conseil d'éducation ne dépasse pas le nombre de mandats prévus, les candidats sont élus d'office. Si le nombre de candidats est inférieur aux mandats prévus, le directeur décide si ces mandats restent vacants ou s'il y nomme des personnes de son choix. Si le nombre de candidats est supérieur aux mandats prévus et qu'il n'y a pas de comité de la conférence du lycée, de comité des élèves ou de comité des parents, les élections sont faites par la conférence des professeurs, une assemblée de tous les élèves ou une assemblée de tous les parents convoquée par le directeur.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le conseil d'éducation a pour attributions:</p>
+<ul scl:symbol="dash">
+<li> <p>d'adopter la charte scolaire;</p> </li>
+<li> <p>de donner son accord pour les actions autonomes dans le domaine pédagogique, dans le domaine de l'organisation administrative et de faire des propositions y relatives;</p> </li>
+<li> <p>d'adopter le projet d'établissement;</p> </li>
+<li> <p>de participer à l'élaboration du plan de développement scolaire;</p> </li>
+<li> <p>d'aviser le projet de budget de l'établissement et de donner son accord sur la répartition du budget alloué à l'établissement;</p> </li>
+<li> <p>de donner son accord sur l'organisation des horaires hebdomadaires;</p> </li>
+<li> <p>d'aviser les rapports d'évaluation internes et externes du lycée;</p> </li>
+<li> <p>d'organiser les réunions et manifestations communes des partenaires scolaires;</p> </li>
+<li> <p>de stimuler et d'organiser des activités culturelles;</p> </li>
+<li> <p>de formuler des propositions sur toutes les questions intéressant la vie scolaire et l'organisation de l'établissement.</p> </li>
+</ul>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>En cas de désaccord du directeur avec une décision prise par le conseil d'éducation, le directeur et les autres membres du conseil d'éducation disposent d'un mois pour régler le différend à l'intérieur de l'établissement. Si le différend subsiste au-delà de ce délai, le directeur décide.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les modalités de fonctionnement du conseil d'éducation sont fixées par règlement grand-ducal.</p>
+</content>
+</alinea>
+</article>
+<article id="art_36bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_36bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_36bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 36bis.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 36<i>bis</i>.</num>
+<heading> <b> La cellule de développement scolaire</b> </heading>
+<alinea>
+<content>
+<p>Il est créé une cellule de développement scolaire dans chaque lycée. Les missions de la cellule de développement scolaire sont les suivantes:</p>
+<ol scl:symbol="1)">
+<li> <p>analyser et interpréter les données scolaires du lycée;</p> </li>
+<li> <p>identifier les besoins prioritaires du lycée;</p> </li>
+<li> <p>définir des stratégies de développement scolaire;</p> </li>
+<li> <p>élaborer la charte scolaire, le profil et le plan de développement scolaire en concertation avec le conseil d'éducation;</p> </li>
+<li> <p>assurer la communication interne et externe;</p> </li>
+<li> <p>élaborer, en concertation avec les délégués à la formation du lycée, un plan trisannuel de la formation continue du personnel du lycée, actualisé chaque année.</p> </li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La cellule de développement scolaire est composée de membres de la direction et de membres de la conférence du lycée désignés par le directeur pour une durée de trois ans renouvelables. La cellule de développement scolaire est présidée par le directeur ou un directeur adjoint.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_10">
+<num>Chapitre 10.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">L'admission à un lycée</heading>
+<article id="art_37">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_37</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_37/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 37. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 37. </num>
+<heading> <b>La procédure d'inscription</b> </heading>
+<alinea>
+<content>
+<p>Dans les limites des capacités d'accueil, l'élève admis à une classe inférieure de l'enseignement secondaire est inscrit en priorité à un lycée situé à proximité du lieu de résidence. L'élève bénéficie d'une priorité d'inscription dans un lycée où un autre enfant faisant partie du même ménage est inscrit.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Suite à la demande des personnes investies de l'autorité parentale à l'égard de l'élève, du directeur du lycée ou de la Commission des aménagements raisonnables, l'élève peut être inscrit à un autre lycée si les capacités d'accueil de ce lycée le permettent ou si le lycée propose des aménagements raisonnables adaptés aux besoins particuliers de l'élève.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les élèves admis à une classe supérieure de l'enseignement secondaire ou à la formation professionnelle initiale s'inscrivent en fonction des formations offertes par les lycées et de leurs capacités d'accueil.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le lycée accueillant un élève en provenance d'un autre lycée est tenu d'en informer celui-ci et il se voit remettre une copie du dossier de l'élève.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les délais d'inscription sont fixés par le ministre.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Avant la rentrée scolaire, le lycée porte à la connaissance de l'élève nouvellement inscrit ainsi qu'à celle de ses parents:</p>
+<ul scl:symbol="dash">
+<li> <p>le règlement de discipline et d'ordre intérieur de l'établissement;</p> </li>
+<li> <p>le profil et les orientations de l'établissement;</p> </li>
+<li> <p>la charte scolaire.</p> </li>
+</ul>
+</content>
+</alinea>
+</article>
+<article id="art_38">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_38</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_38/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 38. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 38. </num>
+<heading> <b>L'admission d'un élève majeur</b> </heading>
+<alinea>
+<content>
+<p>L'admission d'un élève majeur à un lycée est subordonnée à la condition qu'il souscrive, au préalable, aux droits et obligations figurant dans règlement grand-ducal concernant la conduite, ainsi qu'à la charte scolaire du lycée. L'inscription est précédée d'un entretien d'orientation. Un lycée n'est pas tenu d'inscrire un élève qui a été renvoyé d'un établissement scolaire alors qu'il était majeur.</p>
+</content>
+</alinea>
+</article>
+<article id="art_39">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_39</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_39/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 39. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 39. </num>
+<heading> <b>L'admission conditionnelle</b> </heading>
+<alinea>
+<content>
+<p>L'admission conditionnelle concerne les élèves admis sur dossier par le directeur qui n'ont pas suivi l'année précédente la classe qui donne accès à la classe visée et les élèves inscrits en cours d'année. Le conseil de classe décide à la fin du trimestre ou à la fin du semestre au cours duquel l'inscription conditionnelle a eu lieu, sur base des résultats scolaires, si cette inscription est à confirmer à titre définitif ou si l'élève est orienté vers une autre classe.</p>
+</content>
+</alinea>
+</article>
+<article id="art_40">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_40</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_40/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 40. </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 40. </num>
+<heading> <b>L'absence et l'incapacité prolongée de l'élève</b> </heading>
+<alinea>
+<content>
+<p>Le directeur veille que des élèves en situation exceptionnelle entraînant une absence prolongée dûment excusée ou une incapacité dûment certifiée, notamment des élèves atteints de troubles de santé évoluant sur une longue période, des élèves enceintes, des élèves engagés sur le plan sportif ou musical dans un cadre de haut niveau, puissent poursuivre leur scolarité.</p>
+</content>
+</alinea>
+</article>
+<article id="art_40bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_40bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_40bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 40bis. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 40<i>bis</i>. - </num>
+<heading> <b>L'accès au lycée</b> </heading>
+<alinea>
+<content>
+<p>L'accès à l'enceinte du lycée est réservé aux élèves du lycée, aux membres du personnel du lycée, aux personnes exerçant au sein du lycée une mission prévue par la loi et aux personnes y autorisées par le directeur du lycée.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_11">
+<num>Chapitre 11.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Les règles de conduite</heading>
+<article id="art_41">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_41</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_41/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 41. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 41. - </num>
+<heading> <b>La communauté scolaire</b> </heading>
+<alinea>
+<content>
+<p>La communauté scolaire comprend le directeur, les membres du personnel du lycée se trouvant sous l'autorité hiérarchique du directeur, les élèves et les parents.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres de la communauté scolaire collaborent dans le respect mutuel et dans l'intérêt de l'élève.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Tout événement grave touchant à l'ordre, à la discipline ou à la sécurité de la communauté et tout acte de violence doit être porté immédiatement à la connaissance du directeur ou de son délégué. Celui-ci peut confisquer tout objet qu'il estime dangereux.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Un règlement grand-ducal détermine les dispositions concernant les règles de conduite communes à tous les lycées. Chaque lycée met en œuvre des règles spécifiques complémentaires d'ordre intérieur.</p>
+</content>
+</alinea>
+</article>
+<article id="art_42">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_42</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_42/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 42. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 42. - </num>
+<heading> <b>Les mesures éducatives</b> </heading>
+<alinea>
+<content>
+<p>En cas de manquements aux règles de conduite, l'élève peut faire l'objet de mesures éducatives qui doivent être proportionnées à la gravité du manquement et tenir compte de l'âge de l'élève, de sa maturité, de son comportement général ainsi que, le cas échéant, de ses besoins éducatifs spécifiques et de la récidive des faits reprochés.</p>
+</content>
+</alinea>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Les mesures éducatives suivantes peuvent être prises par un enseignant, un membre de la direction ou une personne exerçant la surveillance :</p>
+<ol scl:symbol="1°">
+<li>le rappel à l'ordre ou le blâme ;</li>
+<li>le travail d'intérêt pédagogique ;</li>
+<li>l'exclusion temporaire de la leçon avec une surveillance adéquate ;</li>
+<li>la retenue en dehors des heures de classe, sous surveillance, et avec l'obligation de faire un devoir imposé par l'enseignant ou le surveillant ;</li>
+<li>la confiscation temporaire d'un objet qui est interdit dans l'enceinte du lycée ou au cours. L'objet est rendu après le cours à l'intéressé ou remis au directeur qui le rend au parent ou à l'élève majeur qui se présente dans son bureau.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Les mesures éducatives suivantes peuvent être prises par le directeur, le conseil de classe et pour les élèves à besoins éducatifs spécifiques, la commission d'inclusion demandés en leur avis :</p>
+<ol scl:symbol="1°">
+<li>une activité dans l'intérêt de la communauté scolaire, en relation avec le manquement ;</li>
+<li>le transfert temporaire ou définitif à une autre classe du même établissement ;</li>
+<li>l'exclusion de tous les cours pendant une durée de un jour à deux semaines. Pour l'élève mineur, elle est accompagnée, pendant l'horaire normal de la classe de l'élève sanctionné, de mesures destinées à garantir la poursuite de la scolarité de l'élève.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(3)</num>
+<alinea>
+<content>
+<p>La mesure éducative est inscrite au livre de classe. Une mesure éducative décidée par le directeur ainsi que la retenue en dehors des heures de classe sont notifiées, par lettre motivée, à l'élève majeur ou aux parents de l'élève mineur et, le cas échéant, au patron formateur et aux chambres professionnelles concernées.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(4)</num>
+<alinea>
+<content>
+<p>Les mesures éducatives sont prises suite aux manquements suivants :</p>
+<ol scl:symbol="1°">
+<li>les actes d'incivilité et d'impertinence commis à l'égard des membres de la communauté scolaire ;</li>
+<li>le refus d'obéissance ;</li>
+<li>le refus d'assister aux cours ou de composer ;</li>
+<li>l'absence injustifiée des cours durant au plus soixante leçons au cours d'une même année scolaire, ou au plus trente leçons pour les élèves des classes concomitantes, et les retards réitérés ainsi que l'absence injustifiée à l'appui auquel l'élève s'est inscrit ou la non-réalisation des travaux qui lui sont indiqués ;</li>
+<li>la présence au lycée en état d'ébriété ou sous l'emprise de stupéfiants prohibés ;</li>
+<li>la détention ou la consommation d'alcool dans l'enceinte du lycée ;</li>
+<li>la consommation de tabac à l'intérieur du lycée et dans son enceinte ;</li>
+<li>la fraude ;</li>
+<li>l'incitation au désordre ou à un manquement ;</li>
+<li>l'organisation, dans l'enceinte du lycée, de manifestations non autorisées par le directeur ;</li>
+<li>les infractions visées à l'article 43 qui ne justifient pas le renvoi.</li>
+</ol>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(5)</num>
+<alinea>
+<content>
+<p>Le directeur peut fixer un rendez-vous pour l'élève avec le service psycho-social et d'accompagnement scolaires ou l'ESEB du lycée ou avec un service extérieur compétent. L'élève majeur ou les parents de l'élève mineur en sont informés par écrit.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'élève et les parents de l'élève mineur sont tenus de s'y présenter.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_43">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 43. -</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 43. -</num>
+<heading> <b> La mesure disciplinaire du renvoi</b> </heading>
+<alinea>
+<content>
+<p>Le conseil de discipline peut prononcer la sanction du renvoi à l'encontre d'un élève. Au cas où le conseil de discipline ne prononcerait pas le renvoi, il peut décider une des mesures éducatives prévues à l'article 42. Lors de cette décision, il est tenu compte de la gravité du manquement, de l'âge de l'élève, de sa maturité, de son comportement général ainsi que, le cas échéant, de la récidive des faits reprochés.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Le conseil de discipline peut prononcer la sanction du renvoi pour les faits suivants :</p>
+<ol scl:symbol="1°">
+<li>les voies de fait, l'incitation à la violence, la menace et les actes de violence commis à l'égard d'un membre de la communauté scolaire ;</li>
+<li>l'insulte grave ;</li>
+<li>l'enregistrement ou la diffusion de scènes de violence ou d'humiliation concernant les personnes de la communauté scolaire ;</li>
+<li>l'atteinte aux bonnes mœurs ;</li>
+<li>le port d'armes ;</li>
+<li>les incitations et agissements discriminatoires, de nature xénophobe ou envers l'appartenance ethnique, le sexe ou l'identité du genre, le handicap, l'âge, l'orientation sexuelle, la religion ;</li>
+<li>le harcèlement moral ou sexuel ;</li>
+<li>la dégradation ou la destruction de propriétés au détriment soit de l'Etat, soit de particuliers ;</li>
+<li>le vol dans l'enceinte du lycée ou lors d'un déplacement scolaire ou d'une activité périscolaire ;</li>
+<li>le faux en écriture, la falsification de documents ;</li>
+<li>le refus d'observer les mesures de sécurité ;</li>
+<li>le déclenchement d'une fausse alerte ou l'annonce d'un danger inexistant avec l'intention de déclencher une fausse alerte ;</li>
+<li>la présence répétée au lycée en état d'ébriété ou sous l'emprise de stupéfiants prohibés ;</li>
+<li>la détention ou la consommation ou le trafic, dans l'enceinte du lycée, de stupéfiants prohibés ;</li>
+<li>l'absence injustifiée des cours durant plus de soixante leçons au cours d'une même année scolaire ou plus de trente leçons pour les élèves des classes concomitantes ;</li>
+<li>trois exclusions, pendant une même année scolaire, de tous les cours pour chaque fois au moins une journée; à la suite de la deuxième exclusion, l'élève majeur ou les parents de l'élève mineur sont avertis par écrit qu'en cas de récidive le renvoi est possible.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La décision du conseil de discipline est motivée et arrêtée par écrit. Elle est notifiée à l'élève majeur ou aux parents de l'élève mineur ainsi que, le cas échéant, au patron formateur et aux chambres professionnelles concernées, par lettre recommandée. La décision du renvoi mentionne les voies de recours.</p>
+</content>
+</alinea>
+</article>
+<article id="art_43bis">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43bis</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43bis/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 43bis. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 43<i>bis</i>. - </num>
+<heading> <b>La procédure disciplinaire</b> </heading>
+<paragraph>
+<num>(1)</num>
+<alinea>
+<content>
+<p>Le conseil de discipline est saisi par le directeur qui fixe la date de la séance et convoque le conseil de discipline, ce au moins sept jours de calendrier avant le jour fixé pour la séance.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Il convoque également à la séance et en respectant les mêmes délais :</p>
+<ol scl:symbol="1°">
+<li>par lettre recommandée l'élève majeur ou l'élève mineur et ses parents ;</li>
+<li>le régent de la classe de l'élève ;</li>
+<li>le cas échéant, la personne de référence ;</li>
+<li>le cas échéant, le conseiller à l'apprentissage pour les élèves des classes à enseignement concomitant de la formation professionnelle ;</li>
+<li>toute personne susceptible d'éclairer le conseil de discipline sur la situation de l'élève ou sur les faits reprochés à l'élève. Ces personnes peuvent être entendues au préalable. Un rapport écrit est joint au dossier de l'élève soumis au conseil de discipline.</li>
+</ol>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La convocation doit contenir une description des faits et des infractions qui sont reprochés à l'élève.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'élève majeur ou les parents de l'élève mineur peuvent se faire accompagner par une personne de leur choix.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si l'élève compromet la sécurité de membres de la communauté scolaire, le directeur peut l'exclure des cours jusqu'à la séance du conseil de discipline. Pour l'élève mineur, cette exclusion est accompagnée de mesures destinées à garantir la poursuite de la scolarité de l'élève.</p>
+</content>
+</alinea>
+</paragraph>
+<paragraph>
+<num>(2)</num>
+<alinea>
+<content>
+<p>Le conseil de discipline ne peut pas délibérer si plus d'un des membres est absent. Il siège sous la présidence d'un des deux membres de la direction</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Toutes les personnes convoquées ont le droit de s'exprimer.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>L'élève ou les parents de l'élève mineur ont le droit de s'exprimer en dernier. La procédure suit son cours, même en l'absence de l'élève ou des parents de l'élève mineur ou d'autres personnes convoquées, sauf cas de force majeure.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>À la fin de la séance, le conseil de discipline se retire pour délibérer. Les décisions du conseil de discipline sont arrêtées à la majorité des voix, l'abstention n'étant pas permise. En cas de partage, la voix du président l'emporte. Il est dressé un rapport des décisions prises.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres du conseil de discipline sont astreints au secret du délibéré et du vote.</p>
+</content>
+</alinea>
+</paragraph>
+</article>
+<article id="art_43ter">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43ter</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43ter/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 43ter. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 43<i>ter</i>. - </num>
+<heading> <b>Les suites du renvoi</b> </heading>
+<alinea>
+<content>
+<p>En cas de renvoi, le directeur veille à ce que l'élève et les parents de l'élève mineur soient informés des possibilités de continuation de ses études.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si l'élève renvoyé est soumis à l'obligation scolaire, le directeur veille à ce qu'il soit scolarisé dans un autre lycée dans la semaine qui suit ce renvoi.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Si l'élève renvoyé n'est plus soumis à l'obligation scolaire, le directeur fixe un rendez-vous pour l'élève concerné et les parents de l'élève mineur, avec le Centre psycho-social et d'accompagnement scolaires afin qu'ils y soient conseillés sur les perspectives scolaires ou professionnelles.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Pour un élève renvoyé qui est réinscrit au même lycée ou inscrit à un autre lycée, le directeur fixe les conditions de l'inscription; l'élève majeur ou les parents de l'élève mineur y souscrivent par écrit. En cas de non-observation de ces conditions dans les douze mois suivant l'inscription, le directeur peut renvoyer l'élève, le conseil de classe ayant été entendu en son avis.</p>
+</content>
+</alinea>
+</article>
+<article id="art_43quater">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43quater</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43quater/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 43quater. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 43<i>quater</i>. - </num>
+<heading> <b>Le recours en matière disciplinaire</b> </heading>
+<alinea>
+<content>
+<p>L'élève majeur ou les parents de l'élève mineur peuvent introduire par lettre recommandée un recours motivé contre un renvoi auprès de la commission de recours en matière disciplinaire, ci-après « la commission de recours », instituée par le ministre, dans un délai de huit jours après la notification de la décision. Ils peuvent demander dans cette lettre à être entendus par la commission de recours. L'inscription au lycée et le contrat d'apprentissage restent en vigueur jusqu'à la décision finale de la commission de recours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La commission de recours statue dans les quinze jours.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La commission de recours est composée de cinq membres nommés par le ministre pour un terme de cinq ans. Pour chaque membre est nommé un suppléant. Nul ne peut prendre part à une réunion de la commission de recours si le recours concerne l'un de ses parents ou alliés jusques et y compris le quatrième degré ou s'il a siégé au conseil de discipline ayant renvoyé l'élève.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La commission de recours convoque et entend la personne ou les personnes qui ont introduit le recours au cas où ces derniers l'ont demandé ou si la commission de recours le juge nécessaire. Elle se fait communiquer une copie du dossier disciplinaire par la direction du lycée et entend le président du conseil de discipline concerné.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La commission de recours ne peut délibérer que si cinq membres effectifs ou suppléants sont présents. La commission de recours statue à la majorité des voix, l'abstention n'étant pas permise.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>Les membres de la commission de recours sont astreints au secret du délibéré et du vote.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La commission de recours peut soit confirmer la décision du conseil de discipline, soit l'annuler. </p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La décision de la commission de recours est motivée, arrêtée par écrit et notifiée aux requérants.</p>
+</content>
+</alinea>
+<alinea>
+<content>
+<p>La direction du lycée et l'organisme de formation en sont informés. La décision est susceptible d'un recours en réformation devant le tribunal administratif à intenter dans un délai de trois mois à partir de la notification.</p>
+</content>
+</alinea>
+</article>
+<article id="art_43quinquies">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43quinquies</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_43quinquies/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 43quinquies. - </scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 43<i>quinquies</i>. - </num>
+<heading> <b>Les écoles privées</b> </heading>
+<alinea>
+<content>
+<p>Les dispositions du chapitre 11 s'appliquent également aux écoles privées qui bénéficient d'une autorisation de fonctionnement délivrée selon les dispositions de la <ref href="/eli/etat/leg/loi/2003/06/13/n1/jo" id="76891a43-21b4-43c9-bb31-7f8f8b85ff1f" scl:verify="true">loi modifiée du 13 juin 2003</ref> concernant les relations entre l'État et l'enseignement privé.</p>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_12">
+<num>Chapitre 12.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Dispositions abrogatoires et modificatives</heading>
+<article id="art_44">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_44</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_44/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 44.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 44.</num>
+<alinea>
+<content>
+<p>Sont abrogées toutes les dispositions légales contraires à la présente loi et notamment:</p>
+<ol scl:symbol="1.">
+<li> <p>en ce qui concerne la <ref href="/eli/etat/leg/loi/1968/05/10/n1/jo" id="27a57913-6d9e-4fba-a262-a0104e331afc" scl:verify="true">loi modifiée du 10 mai 1968</ref> portant réforme de l'enseignement (Titre VI: de l'enseignement secondaire classique)</p> <p>l'article 45, dernier alinéa (conseil de classe)</p> <p>l'article 54, alinéa 1 (conseil d'éducation)</p> <p>l'article 54, alinéa 2 (conférence des professeurs)</p> </li>
+<li> <p>en ce qui concerne la <ref href="/eli/etat/leg/loi/1989/06/22/n2/jo" id="1f646e13-28cb-4c88-b804-bccdea1df075" scl:verify="true">loi du 22 juin 1989</ref> portant modification de la <ref href="/eli/etat/leg/loi/1968/05/10/n1/jo" id="1dfdc758-8df2-4fbe-a452-bf269462aca9" scl:verify="true">loi modifiée du 10 mai 1968</ref> portant réforme de l'enseignement (Titre VI: de l'enseignement secondaire classique)</p> <p>l'article 3, paragraphe 6, alinéa 2 (directeur)</p> <p>l'article 3, paragraphe 6, alinéa 4 (directeur adjoint)</p> </li>
+<li> <p>en ce qui concerne la <ref href="/eli/etat/leg/loi/1990/09/04/n1/jo" id="fa0aeb6a-6507-422b-9ae9-b84addb3f570" scl:verify="true">loi modifiée du 4 septembre 1990</ref> portant réforme de l'enseignement secondaire général et de la formation professionnelle continue</p> <p>l'article 6, paragraphe 2, alinéa 2 (inscriptions)</p> <p>l'article 28, dernier alinéa (conseil de classe)</p> <p>l'article 30 (classes spéciales)</p> <p>l'article 35 (conférence des professeurs)</p> <p>l'article 39 (conseil d'éducation)</p> <p>l'article 41 (projet d'établissement)</p> <p>l'article 45 bis (comité des élèves)</p> <p>l'article 55, alinéa 2 (directeur)</p> <p>l'article 55, alinéa 4 (directeur-adjoint).</p> </li>
+</ol>
+</content>
+</alinea>
+</article>
+</chapter>
+<chapter id="chapitre_13">
+<num>Chapitre 13.</num>
+<heading scl:align="center" scl:separator=" - " scl:style-format="b">Disposition transitoire</heading>
+<article id="art_46">
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_46</scl:jolux>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource>
+<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9/art_46/20250223</scl:jolux>
+<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/loi/2004/06/25/n9</scl:jolux>
+<scl:jolux scl:lg="fra" scl:name="title">Art. 46.</scl:jolux>
+<scl:jolux scl:name="dateApplicability">2025-02-23</scl:jolux>
+<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+</scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<num>Art. 46.</num>
+<alinea>
+<content>
+<p>Les lycées créés après l'entrée en vigueur de la présente loi et qui offrent également l'enseignement secondaire général sont appelés lycées.<mod class="mod-end" for="#pm1"/> <noteRef href="#M1" marker="1"/> </p>
+</content>
+</alinea>
+</article>
+</chapter>
+</body>
+</act>
+</akomaNtoso>

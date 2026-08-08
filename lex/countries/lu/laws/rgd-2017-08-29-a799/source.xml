@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+	<act contains="originalVersion" name="" scl:page-proof="many">
+		<meta>
+			<identification source="#somebody">
+				<FRBRWork>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2017-08-29" name="document"/>
+					<FRBRauthor as="#author" href="http://data.legilux.public.lu/resource/authority/legal-institution/MDDI"/>
+					<FRBRcountry value="http://publications.europa.eu/resource/authority/country/LUX"/>
+				</FRBRWork>
+				<FRBRExpression>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524/fr"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2017-08-29" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+					<FRBRlanguage language="http://publications.europa.eu/resource/authority/language/FRA"/>
+				</FRBRExpression>
+				<FRBRManifestation>
+					<FRBRthis value="http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524/fr/xml"/>
+					<FRBRuri value=""/>
+					<FRBRdate date="2017-08-29" name="document"/>
+					<FRBRauthor as="#author" href=""/>
+				</FRBRManifestation>
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524</scl:jolux>
+						<scl:jolux scl:name="publicationDate">2021-01-20</scl:jolux>
+						<scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/RGD</scl:jolux>
+						<scl:jolux scl:name="dateDocument">2017-08-29</scl:jolux>
+						<scl:jolux scl:name="basicAct">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799</scl:jolux>
+						<scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MDDI</scl:jolux>
+						<scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/962</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1107</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1276</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/557</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1504</scl:jolux>
+						<scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/122</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2019-05-24</scl:jolux>
+						<scl:jolux scl:name="dateEntryInForce">2019-05-24</scl:jolux>
+						<scl:jolux scl:name="isPartOf">http://data.legilux.public.lu/eli/etat/leg/memorial/2017/a799</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Consolidation</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Act</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Work</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#LegalResource</scl:rdf>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#NationalLegalResource</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<scl:JOLUXExpression>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524/fr</scl:jolux>
+					<scl:jolux scl:name="realizes">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524</scl:jolux>
+					<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="title">Version consolidée applicable au 24/05/2019 : Règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</scl:jolux>
+					<scl:jolux scl:name="cites">http://data.legilux.public.lu/eli/etat/leg/loi/1973/07/28/n1/jo</scl:jolux>
+					<scl:jolux scl:name="basedOn">http://data.legilux.public.lu/eli/etat/leg/loi/2016/12/23/n19/jo</scl:jolux>
+				</scl:JOLUXExpression>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524/fr/xml</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">1</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/xml-akomantoso</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/XML</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2017-08-29-a799-consolide-20190524-fr-xml.xml</scl:jolux>
+				</scl:JOLUXManifestation>
+				<scl:JOLUXManifestation>
+					<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524/fr/pdf</scl:jolux>
+					<scl:jolux scl:name="embodies">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/consolide/20190524/fr</scl:jolux>
+					<scl:jolux scl:name="memorialPage">1</scl:jolux>
+					<scl:jolux scl:name="publisher">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:lg="fra" scl:name="rights">Copyright : Ministère d’État du Grand-Duché de Luxembourg – Service central de législation</scl:jolux>
+					<scl:jolux scl:name="rightsHolder">http://data.legilux.public.lu/authority/legal-institution/ME</scl:jolux>
+					<scl:jolux scl:name="license">http://creativecommons.org/licenses/by/4.0/</scl:jolux>
+					<scl:jolux scl:name="userFormat">http://data.legilux.lu/resource/authority/user-format/pdf</scl:jolux>
+					<scl:jolux scl:name="format">http://publications.europa.eu/resource/authority/file-type/PDF</scl:jolux>
+					<scl:jolux scl:name="isExemplifiedBy">http://data.legilux.public.lu/file/eli-etat-leg-rgd-2017-08-29-a799-consolide-20190524-fr-pdf.pdf</scl:jolux>
+				</scl:JOLUXManifestation>
+			</identification>
+			<lifecycle source="#">
+				<eventRef date="2017-08-29" id="e1" originatingExpression="true" source="#ro1" type="generation"/>
+				<eventRef date="2019-05-24" id="e2" originatingExpression="true" source="#rp2" type="amendment"/>
+			</lifecycle>
+			<analysis source="#">
+				<passiveModifications>
+					<textualMod id="pm1" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm2" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm3" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm5" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm7" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm8" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm9" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm10" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm11" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm12" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm13" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+					<textualMod id="pm14" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm15" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination/>
+					</textualMod>
+					<textualMod id="pm16" incomplete="false" type="substitution">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm17" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm18" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm19" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm20" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm21" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm22" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm23" incomplete="false" type="insertion">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_2"/>
+					</textualMod>
+					<textualMod id="pm24" incomplete="false" type="replacement">
+						<source href="/eli/etat/leg/rgd/2019/05/16/a323/jo"/>
+						<destination href="#art_1er"/>
+					</textualMod>
+				</passiveModifications>
+			</analysis>
+			<references source="#">
+				<original href="/eli/etat/leg/rgd/2017/08/29/a799/jo" id="ro1" showAs="Original"/>
+				<passiveRef href="/eli/etat/leg/rgd/2019/05/16/a323/jo" id="rp2" showAs="Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial."/>
+			</references>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M1" marker="1" refersTo="pm1" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M2" marker="2" refersTo="pm2" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M3" marker="3" refersTo="pm3" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M5" marker="4" refersTo="pm5" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M7" marker="5" refersTo="pm7" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M8" marker="6" refersTo="pm8" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M9" marker="7" refersTo="pm9" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M10" marker="8" refersTo="pm10" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M11" marker="9" refersTo="pm11" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M12" marker="10" refersTo="pm12" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M13" marker="11" refersTo="pm13" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M14" marker="12" refersTo="pm14" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M15" marker="13" refersTo="pm15" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M16" marker="14" refersTo="pm16" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M17" marker="15" refersTo="pm17" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M18" marker="16" refersTo="pm18" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M19" marker="17" refersTo="pm19" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M20" marker="18" refersTo="pm20" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M21" marker="19" refersTo="pm21" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M22" marker="20" refersTo="pm22" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M23" marker="21" refersTo="pm23" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+			<notes scl:type="modification" source="#rp2">
+				<note id="M24" marker="22" refersTo="pm24" title="A|2019-05-20|2019-05-16|RGD|323">
+					<content>
+						<p>
+							<ref href="http://data.legilux.public.lu/eli/etat/leg/rgd/2019/05/16/a323/jo">Règlement grand-ducal du 16 mai 2019 modifiant le règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</ref>
+						</p>
+					</content>
+				</note>
+			</notes>
+		</meta>
+		<preface>
+			<longTitle style="11">
+				<p>Version consolidée applicable au 24/05/2019 : Règlement grand-ducal du 29 août 2017 déterminant le montant et la perception des taxes et redevances relatives à l’utilisation du domaine public fluvial.</p>
+			</longTitle>
+		</preface>
+		<body>
+			<article id="art_1er">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_1er</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_1er/20190524</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1er.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2019-05-24</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 1<sup>er</sup>.</num>
+				<alinea>
+					<content>
+						<p>Les montants des taxes et redevances relatives à l’occupation ou l’utilisation du domaine publique fluvial sont fixés comme suit :</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<table id="table_1" scl:cols="3 72 XX" scl:cols-align="center left center" scl:cols-nb="3" width="100">
+							<tr>
+								<td colspan="3">
+									<p scl:align="center" scl:space-after="15" scl:space-before="15">
+										<b>Taxes uniques</b>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p scl:space-after="30">a)</p>
+								</td>
+								<td>
+									<p>Taxe d'établissement de dossier perçue lors de la présentation d'une demande d'autorisation pour une occupation privative d’une parcelle déterminée du domaine public fluvial.</p>
+								</td>
+								<td>
+									<p>50 euros</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>b)</p>
+								</td>
+								<td>
+									<p>Taxe pour la prorogation ou la modification d’une autorisation d’occupation privative d’une parcelle déterminée du domaine public. </p>
+								</td>
+								<td>
+									<p>30 euros</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>c)</p>
+								</td>
+								<td>
+									<p>Taxe d’établissement de dossier perçue lors de la présentation d’une demande d’autorisation pour une utilisation privative ou privilégié d’éléments ou de parcelles déterminées du domaine public fluvial. (y compris les demandes d'éclusage prioritaires).</p>
+								</td>
+								<td>
+									<p>50 euros</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>d)</p>
+								</td>
+								<td>
+									<p>Taxe pour la modification ou l'extension d’une autorisation d'utilisation privative ou privilégié d’éléments ou de parcelles déterminées du domaine public fluvial. (y compris les demandes d'éclusage prioritaires).</p>
+								</td>
+								<td>
+									<p>30 euros</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p scl:align="center" scl:space-after="15" scl:space-before="15">
+										<eop/>
+										<b>Redevances domaniales</b>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p scl:align="left" scl:space-after="15">
+										<b>Redevances annuelles pour le droit d’occupation privatif en rapport avec des occupations de surfaces sur ou bordant la voie navigable :</b> </p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>e)</p>
+								</td>
+								<td>
+									<p>Occupations en rapport avec des activités nautiques et de transport </p>
+								</td>
+								<td>
+									<p scl:space-before="40">10 euros par m de longueur de rive concédée (Au minimum 75 euros par année)</p>
+									<p>Un abattement de 50% est accordé sur la longueur dépassant 100 m.</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash">
+										<li/>
+									</ul>
+								</td>
+								<td>
+									<p>Occupations en rapport avec des activités nautiques et de transport et utilisées à des fins lucratives </p>
+								</td>
+								<td>
+									<p scl:space-before="20">15 euros par m de longueur de rive concédée et par année <mod class="mod-start" for="#pm1"/>
+										<del>augmentée de 2% de la valeur de l’objet autorisé</del>
+										<mod class="mod-end" for="#pm1"/>
+										<noteRef href="#M1" marker="1"/>. (Au minimum 150 euros par année) Un abattement de 50% est accordé sur la longueur dépassant 100 m.</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>f)</p>
+								</td>
+								<td>
+									<p>Occupations en rapport avec des activités autres que nautiques et de transport </p>
+								</td>
+								<td>
+									<p scl:space-after="10" scl:space-before="40">50 euros par m de longueur de rive concédée. (Au minimum 200 euros par année) </p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash">
+										<li/>
+									</ul>
+								</td>
+								<td>
+									<p>Occupations en rapport avec des activités autres que nautiques et de transport et utilisées à des fins lucratives </p>
+								</td>
+								<td>
+									<p>75 euros par m de longueur de rive concédée <mod class="mod-start" for="#pm2"/>
+										<del>augmentée de 2% de la valeur de l’objet autorisé</del>
+										<mod class="mod-end" for="#pm2"/>
+										<noteRef href="#M2" marker="2"/>. (Au minimum 400 euros par année)</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3" rowspan="1">
+									<p scl:align="left" scl:space-after="15" scl:space-before="15">
+										<b>
+											<eop/>Redevances annuelles pour le droit d’occupation privatif en rapport avec des occupations de surfaces ne bordant pas directement la voie navigable :</b>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>g)</p>
+								</td>
+								<td>
+									<p>Occupations en rapport avec des activités diverses :</p>
+								</td>
+								<td>
+									<p scl:space-after="5" scl:space-before="45">2 euros par m² de surface concédée. (Au minimum 150 euros par année)</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash">
+										<li/>
+									</ul>
+								</td>
+								<td>
+									<p scl:space-after="15">Occupations en rapport avec des activités diverses utilisées à des fins lucratives </p>
+								</td>
+								<td>
+									<p>3 euros par m² de surface concédée </p>
+									<p>(Au minimum 150 euros par année)</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>h)</p>
+								</td>
+								<td>
+									<p>Occupations pour la mise en place de dépôts ou de bâtiment</p>
+								</td>
+								<td>
+									<p scl:space-before="5">10 euros par m² de surface concédée.</p>
+									<p scl:space-after="10">(Au minimum 150 euros par année)</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash" scl:space-before="13">
+										<li/>
+									</ul>
+								</td>
+								<td>
+									<p scl:space-before="13">Occupations pour la mise en place de dépôts ou de bâtiment et utilisées à des fins lucratives</p>
+								</td>
+								<td>
+									<p scl:space-after="15">15 euros par m² de surface concédée <mod class="mod-start" for="#pm3"/>
+										<del>augmentée de 2% de la valeur de l’objet autorisé</del>
+										<mod class="mod-end" for="#pm3"/>
+										<noteRef href="#M3" marker="3"/>. (Au minimum 300 euros par année)</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p scl:space-before="13">i)</p>
+								</td>
+								<td>
+									<p scl:space-before="13">Occupations utilisées pour l’aménagement d’aire de stationnement</p>
+								</td>
+								<td>
+									<p scl:space-after="15">2,5 euros par m² de surface concédée (Au minimum 150 euros par année) Un abattement de 50% est accordé sur une surface dépassant 100 m².</p>
+									<p/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<ul xmlns:ns3727365="http://www.scl.lu" ns3727365:symbol="dash">
+										<li/>
+									</ul>
+								</td>
+								<td>
+									<p>Occupations utilisées pour l’aménagement d’aire de stationnement et utilisées à des fins lucratives </p>
+								</td>
+								<td>
+									<p scl:space-after="20">4 euros par m² de surface concédée et par année. (Au minimum 150 euros par année) Un abattement de 50% est accordé sur une surface dépassant 100 m².</p>
+									<p/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>
+										<eop/>j)</p>
+								</td>
+								<td>
+									<p>Occupations utilisées pour l’aménagement d’aire de jeux </p>
+								</td>
+								<td>
+									<p scl:space-before="15">2,5 euros par m² de surface concédée. (Au minimum 150 euros par année) Un abattement de 50% est accordé sur une surface dépassant 100 m².</p>
+									<p/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>k)</p>
+								</td>
+								<td>
+									<p>Occupations utilisées à des fins agricoles </p>
+								</td>
+								<td>
+									<p scl:space-before="10">0,5 euros par m² de surface concédée. (Au minimum 150 euros par année) Un abattement de 50% est accordé sur une surface dépassant 100 m².</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>l)</p>
+								</td>
+								<td>
+									<p>Occupations des pylônes appartenant au domaine public fluvial</p>
+								</td>
+								<td>
+									<p scl:space-before="20">500 euros par équipement.</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p scl:align="left" scl:space-before="15">
+										<b>Redevances horaires pour le droit d’usage temporaire de surfaces</b>
+									</p>
+									<p scl:align="left" scl:space-after="15">
+										<b>du domaine public fluvial</b>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>m)</p>
+								</td>
+								<td>
+									<p>
+										<mod class="mod-start" for="#pm24"/>Redevance pour un usage temporaire privilégié d’éléments déterminés sur la terre ferme du domaine public fluvial par m² et par heure.</p>
+									<p>Un taux dérogatoire de 0,001 euros/m² est applicable pour les surfaces concédées dépassant 1000 m².<mod class="mod-end" for="#pm24"/>
+										<noteRef href="#M24" marker="22"/>
+									</p>
+								</td>
+								<td>
+									<p>
+										<mod class="mod-start" for="#pm5"/>0,01 euros/m²<mod class="mod-end" for="#pm5"/>
+										<noteRef href="#M5" marker="4"/>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>n)</p>
+								</td>
+								<td>
+									<p>Redevance pour un usage temporaire privatif des infrastructures publiques de stationnement par longueur de quai et par heure</p>
+								</td>
+								<td>
+									<p>0,005 euros/m</p>
+									<p/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>o)</p>
+								</td>
+								<td>
+									<p>Redevance pour l'attribution d'un créneau d'accostage prioritaire des infrastructures publiques de stationnement par longueur de quai <mod class="mod-start" for="#pm7"/>occupé<mod class="mod-end" for="#pm7"/>
+										<noteRef href="#M7" marker="5"/> et par heure</p>
+								</td>
+								<td>
+									<p>0,10 euros/m</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>p)</p>
+								</td>
+								<td>
+									<p>Redevance pour un usage temporaire privilégié du plan d’eau sans interruption pour la navigation, par longueur de parcours <mod class="mod-start" for="#pm8"/>(5 km)<mod class="mod-end" for="#pm8"/>
+										<noteRef href="#M8" marker="6"/> et par heure</p>
+								</td>
+								<td>
+									<p>
+										<mod class="mod-start" for="#pm10"/>80 euros/5km<mod class="mod-end" for="#pm10"/>
+										<noteRef href="#M10" marker="8"/>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>q)</p>
+								</td>
+								<td>
+									<p>Redevance pour usage privatif du plan d’eau avec interruption de la navigation par longueur de parcours <mod class="mod-start" for="#pm9"/>(5 km)<mod class="mod-end" for="#pm9"/>
+										<noteRef href="#M9" marker="7"/> et par heure</p>
+								</td>
+								<td>
+									<p>
+										<mod class="mod-start" for="#pm11"/>200 euros/5km<mod class="mod-end" for="#pm11"/>
+										<noteRef href="#M11" marker="9"/>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<p scl:align="left" scl:space-after="15" scl:space-before="15">
+										<b>Redevances pour prestations spécifiques</b>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>r)</p>
+								</td>
+								<td>
+									<p>Mise à disposition temporaire de matériel ou prestation de services spécifiques <mod class="mod-start" for="#pm12"/>
+										<del>de sécurisation ou</del>
+										<mod class="mod-end" for="#pm12"/>
+										<noteRef href="#M12" marker="10"/> d'assistance et de sauvetage nautique</p>
+								</td>
+								<td>
+									<p>suivant frais réels<br/> exposés</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>s)</p>
+								</td>
+								<td>
+									<p>Plan de situation (support papier ou informatique) de la voie navigable :</p>
+									<p>format A4 ou A3 </p>
+									<p>autre format</p>
+								</td>
+								<td>
+									<p scl:space-before="12">10 euros</p>
+									<p>15 euros</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>t)</p>
+								</td>
+								<td>
+									<p>Profil en travers de la voie navigable, format A3 </p>
+								</td>
+								<td>
+									<p>10 euros</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>u)</p>
+								</td>
+								<td>
+									<p>Plan bathymétrique de la voie navigable (support papier ou informatique) de la voie navigable, format A4 ou A3</p>
+									<p>autre format</p>
+								</td>
+								<td>
+									<p scl:space-before="12">50 euros</p>
+									<p>80 euros</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>v)</p>
+								</td>
+								<td>
+									<p>Données hydrométriques de la Moselle <mod class="mod-start" for="#pm13"/>par fichier et par année<mod class="mod-end" for="#pm13"/>
+										<noteRef href="#M13" marker="11"/>
+									</p>
+								</td>
+								<td>
+									<p>40 euros</p>
+								</td>
+							</tr>
+						</table>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_1erbis">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_1erbis</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_1erbis/20190524</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1erbis.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2019-05-24</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm14"/>Art. 1<sup>er</sup>
+					<i>bis</i>.</num>
+				<alinea>
+					<content>
+						<p>En cas d’une demande d’autorisation d’occupation ou d’utilisation du domaine public fluvial par un club ou une association, affilié à une fédération luxembourgeoise agréée par le ministre ayant les Sports dans ses attributions, comme organisateur principal et exclusif, le montant de la redevance est plafonné à 500 euros.</p>
+					</content>
+				</alinea>
+				<alinea>
+					<content>
+						<p>Un certificat d’affiliation auprès d’une fédération sportive agréée ainsi qu’une autorisation d’organisation émise par la fédération concernée sont à présenter au Service de la navigation lors de toute nouvelle demande d’occupation ou d’utilisation du domaine public fluvial.<mod class="mod-end" for="#pm14"/>
+							<noteRef href="#M14" marker="12"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_1erter">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_1erter</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_1erter/20190524</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 1erter.</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2019-05-24</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>
+					<mod class="mod-start" for="#pm15"/>Art. 1<sup>er</sup>
+					<i>ter</i>.</num>
+				<alinea>
+					<content>
+						<p>Toute occupation de faible envergure est exemptée du paiement d’une redevance domaniale lorsque le montant de ladite redevance est inférieure ou égal à 15 euros.<mod class="mod-end" for="#pm15"/>
+							<noteRef href="#M15" marker="13"/>
+						</p>
+					</content>
+				</alinea>
+			</article>
+			<article id="art_2">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_2_modalites_de_perception_des_taxes_et_redevances</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_2_modalites_de_perception_des_taxes_et_redevances/20190524</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 2. - Modalités de perception des taxes et redevances</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2019-05-24</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 2.</num><heading scl:separator=" - "><b>Modalités de perception des taxes et redevances</b>
+				</heading>
+				<paragraph id="paragraph_1">
+					<num>(1)</num>
+					<alinea>
+						<content>
+							<p>Les taxes, qui ont la nature d’un droit de timbre, sont acquittées avant l’acte administratif auquel elles se rapportent. Les redevances pour prestations spécifiques doivent être acquittées avant l’exécution des prestations sollicitées. Les redevances domaniales doivent être payées avant le début de la jouissance du droit afférent.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_2">
+					<num>(2)</num>
+					<alinea>
+						<content>
+							<p>Les taxes sont à acquitter par virement sur le compte bancaire <mod class="mod-start" for="#pm16"/>
+								<del>de la direction</del>
+								<mod class="mod-end" for="#pm16"/>
+								<noteRef href="#M16" marker="14"/> de l’Administration de l’enregistrement et des domaines. <mod class="mod-start" for="#pm17"/>La preuve de paiement doit être jointe à la demande d’autorisation.<mod class="mod-end" for="#pm17"/>
+								<noteRef href="#M17" marker="15"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm18"/>Les redevances sont à acquitter par virement sur le compte bancaire de l’Administration de l’enregistrement, des domaines et de la TVA.<mod class="mod-end" for="#pm18"/>
+								<noteRef href="#M18" marker="16"/> À cet effet le Service de la navigation adressera un ordre de paiement aux bénéficiaires d’une prestation ou d’une autorisation. <mod class="mod-start" for="#pm19"/>La prestation ou l’autorisation sera délivrée au bénéficiaire au moment de la réception du paiement de la redevance.<mod class="mod-end" for="#pm19"/>
+								<noteRef href="#M19" marker="17"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm20"/>Les redevances annuelles visées à l’article 1<sup>er</sup>, lettres e) à l) sont à acquitter par virement sur le compte bancaire de l’Administration de l’enregistrement, des domaines et de la TVA.<mod class="mod-end" for="#pm20"/>
+								<noteRef href="#M20" marker="18"/> À cet effet le Service de la navigation adressera un ordre de paiement aux bénéficiaires d’une autorisation d’occupation du domaine public fluvial. <mod class="mod-start" for="#pm21"/>Les redevances sont payables dans le mois de leur notification par ordre de paiement, sur le compte bancaire de l’Administration de l’enregistrement, des domaines et de la TVA.<mod class="mod-end" for="#pm21"/>
+								<noteRef href="#M21" marker="19"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>
+								<mod class="mod-start" for="#pm22"/>Les redevances relatives à l’utilisation d’une borne de distribution énergétique sont à acquitter par virement sur le compte bancaire de l’Administration de l’enregistrement, des domaines et de la TVA. Un ordre de paiement est adressé par le Service de la navigation fluviale aux usagers respectifs. La redevance est payable endéans un délai de 15 jours.<mod class="mod-end" for="#pm22"/>
+								<noteRef href="#M22" marker="20"/>
+							</p>
+						</content>
+					</alinea>
+					<alinea>
+						<content>
+							<p>Pour le cas où les redevances ne concernent pas une année entière, elles sont dues en fonction du temps écoulé.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_3">
+					<num>(3)</num>
+					<alinea>
+						<content>
+							<p>Les taxes précitées sont non-remboursables et restent acquises au Trésor dans tous les cas où l’acte administratif a été préparé, même si les activités envisagées par le demandeur et pour lesquelles la prestation avait été demandée, n’ont pas eu lieu.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_4">
+					<num>(4)</num>
+					<alinea>
+						<content>
+							<p>Le non-paiement d’une taxe ou d’une redevance visée à l’article 1<sup>er</sup> m) à v) fera obstacle à la délivrance des autorisations demandées ou l’exécution des prestations sollicitées. Le non-paiement d’une redevance annuelle visée à l’article 1<sup>er</sup> e) à l) endéans le délai figurant dans l’ordre de paiement entraîne le retrait du titre.</p>
+						</content>
+					</alinea>
+				</paragraph>
+				<paragraph id="paragraph_5">
+					<num>
+						<mod class="mod-start" for="#pm23"/>(5)</num>
+					<alinea>
+						<content>
+							<p>Les redevances sont non-remboursables et restent acquises au Trésor sauf pour le cas où l’annulation du droit accordé est imputable à une décision du gestionnaire de la voie navigable.<mod class="mod-end" for="#pm23"/>
+								<noteRef href="#M23" marker="21"/>
+							</p>
+						</content>
+					</alinea>
+				</paragraph>
+			</article>
+			<article id="art_3">
+				<scl:JOLUXWork>
+					<scl:JOLUXComplexWork>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_3_disposition_finale</scl:jolux>
+					</scl:JOLUXComplexWork>
+					<scl:JOLUXLegalResource>
+						<scl:jolux scl:name="uriThis">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799/art_3_disposition_finale/20170915</scl:jolux>
+						<scl:jolux scl:name="isMemberOf">http://data.legilux.public.lu/eli/etat/leg/rgd/2017/08/29/a799</scl:jolux>
+						<scl:jolux scl:lg="fra" scl:name="title">Art. 3. - Disposition finale</scl:jolux>
+						<scl:jolux scl:name="dateApplicability">2017-09-15</scl:jolux>
+						<scl:rdf scl:name="type">http://data.legilux.public.lu/resource/ontology/jolux#Article</scl:rdf>
+					</scl:JOLUXLegalResource>
+				</scl:JOLUXWork>
+				<num>Art. 3.</num><heading scl:separator=" - "><b>Disposition finale</b>
+				</heading>
+				<alinea>
+					<content>
+						<p>Notre Ministre du Développement durable et des Infrastructures est chargé de l’exécution du présent règlement qui sera publié au Journal officiel du Grand-Duché de Luxembourg.</p>
+					</content>
+				</alinea>
+			</article>
+		</body>
+	</act>
+</akomaNtoso>

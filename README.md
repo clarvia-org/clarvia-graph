@@ -50,6 +50,11 @@ This repository contains:
 
 ```
 clarvia-graph/
+├── apps/
+│   └── web/          # Next.js site (clarvia.org) — Coolify/GCE
+├── services/
+│   └── lex/          # Lex email service (public-safe)
+├── lex/              # Legislation dataset + CLI
 ├── schemas/          # JSON Schema definitions (v0.1)
 ├── vocab/            # Controlled vocabularies
 ├── graph/            # Consequence graph data (YAML)
@@ -65,11 +70,11 @@ clarvia-graph/
 ├── packages/         # Workspace packages
 │   ├── cli/          #   @clarvia/cli — validation, build, and export tooling
 │   └── generator/    #   @clarvia/generator — checklist generation engine
-├── docs/             # Foundation specification and guides
+├── docs/             # Foundation specification and guides (see MONOREPO.md)
 └── build/            # Build output (git-ignored)
 ```
 
-The root `package.json` is a [pnpm workspace](https://pnpm.io/workspaces) that orchestrates the packages above. Run `pnpm install` from the root to set up all dependencies.
+The root `package.json` is a [pnpm workspace](https://pnpm.io/workspaces) that orchestrates `packages/*` and `apps/*`. Run `pnpm install` from the root to set up all dependencies. Website checklist data is synced in-repo via `pnpm export-and-sync-web` (not a cross-repo release pin).
 
 ## Status
 
