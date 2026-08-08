@@ -1,8 +1,11 @@
 # Clarvia Graph
 
-**Open consequence graph for source-backed administrative workflows**
+**Open consequence graph and public Clarvia monorepo for source-backed administrative workflows**
 
 [![CI](https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml/badge.svg)](https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml)
+[![Web](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-web.yml/badge.svg)](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-web.yml)
+[![Lex data](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex.yml/badge.svg)](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex.yml)
+[![Lex email](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex-email.yml/badge.svg)](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex-email.yml)
 [![License: EUPL-1.2](https://img.shields.io/badge/Code-EUPL--1.2-blue.svg)](LICENSE)
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/13112/badge)](https://www.bestpractices.dev/projects/13112)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/clarvia-org/clarvia-graph/badge)](https://scorecard.dev/#/projects/github.com/clarvia-org/clarvia-graph)
@@ -18,6 +21,8 @@
 > **Status:** CI passing · [OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112) · [OpenSSF Scorecard](https://scorecard.dev/#/projects/github.com/clarvia-org/clarvia-graph) · [REUSE compliant](https://api.reuse.software/info/github.com/clarvia-org/clarvia-graph) · [Codecov](https://codecov.io/gh/clarvia-org/clarvia-graph) · [SonarCloud](https://sonarcloud.io/summary/new_code?id=clarvia-org_clarvia-graph) · Code: EUPL-1.2 · Data: CC-BY-4.0 · [DOI: 10.5281/zenodo.20572455](https://doi.org/10.5281/zenodo.20572455) · [FAIR: 4/5](https://fair-software.eu)
 
 Clarvia Graph is reusable public-interest digital infrastructure. While it serves as the technical engine behind the consumer-facing checklist at [clarvia.org](https://clarvia.org), it is designed as an open, source-backed administrative workflow repository. It structures official rules, deadlines, and requirements for bereavement paperwork so that any application, civic-tech portal, research project, or public service can consume and adapt them automatically.
+
+This repository is Clarvia’s **public monorepo**: the consequence graph, the clarvia.org website, legislation data for agents (`lex/`), and the public-safe Lex email service (`services/lex/`) live here under path-filtered CI. See [`docs/MONOREPO.md`](docs/MONOREPO.md) for layout, licenses, and deploy boundaries.
 
 ## Digital Public Good readiness
 
@@ -38,13 +43,14 @@ Clarvia Graph is being prepared for submission to the Digital Public Goods Allia
 
 Technically, Clarvia Graph is a structured, versioned, source-backed knowledge graph for cross-border administrative consequences. It models what happens after a life event (starting with bereavement), what steps may be required, which authorities are involved, what documents are needed, and where the official source says so.
 
-This repository contains:
-- **Schemas** — JSON Schema definitions for all canonical record types
-- **Vocabularies** — Controlled vocabularies for jurisdictions, domains, claim types, etc.
-- **Graph data** — Source-backed consequences, task templates, conditions, and deadlines
-- **Sources** — Official source registry, captured snapshots, and extracted assertions
-- **Validation** — CLI tooling to validate, build, and test the graph
-- **Exports** — Generated JSON for web consumers ([example](exports/example-bereavement-lu.json)), plus JSON-LD, CPSV-AP, and web runtime bundles
+**In this monorepo:**
+
+| Path | Role | Runtime |
+|---|---|---|
+| `graph/`, `schemas/`, `vocab/`, `sources/`, `packages/*` | Consequence graph + validation/export tooling | Git + CI exports |
+| [`apps/web`](apps/web/) | Public website (clarvia.org) | Coolify / GCE |
+| [`lex/`](lex/) | Normalized national legislation for AI agents | Git + local CLI |
+| [`services/lex/`](services/lex/) | Lex email automation (public-safe code) | Cloud Run (`europe-west1`) |
 
 ## Repository structure
 
@@ -53,7 +59,7 @@ clarvia-graph/
 ├── apps/
 │   └── web/          # Next.js site (clarvia.org) — Coolify/GCE
 ├── services/
-│   └── lex/          # Lex email service (public-safe)
+│   └── lex/          # Lex email service (public-safe; Cloud Run)
 ├── lex/              # Legislation dataset + CLI
 ├── schemas/          # JSON Schema definitions (v0.1)
 ├── vocab/            # Controlled vocabularies
@@ -74,7 +80,7 @@ clarvia-graph/
 └── build/            # Build output (git-ignored)
 ```
 
-The root `package.json` is a [pnpm workspace](https://pnpm.io/workspaces) that orchestrates `packages/*` and `apps/*`. Run `pnpm install` from the root to set up all dependencies. Website checklist data is synced in-repo via `pnpm export-and-sync-web` (not a cross-repo release pin).
+The root `package.json` is a [pnpm workspace](https://pnpm.io/workspaces) for `packages/*` and `apps/*`. Run `pnpm install` from the repository root. Website checklist data is synced in-repo via `pnpm export-and-sync-web` (not a cross-repo release pin). Python projects under `lex/` and `services/lex/` use their own `uv` / `pip` workflows.
 
 ## Status
 
@@ -110,10 +116,11 @@ Every checklist item traces back to an official source. No legal consequence pub
 - **Cross-border**: Jurisdiction roles (death_place, habitual_residence, work_state, asset_situs) compose layered checklists
 - **Static exports**: Consumer apps load generated JSON at build time — no runtime API dependency
 - **Privacy-first**: Client-side condition evaluation, no user data sent to servers
+- **Public/private fence**: Production secrets and live Lex prompts stay out of this repository (see [`docs/MONOREPO.md`](docs/MONOREPO.md))
 
 ## Software quality and reproducibility
 
-This repository uses automated quality checks for tests, linting, static analysis, dependency and security scanning, documented installation, reproducible examples, citation metadata, licensing information, and archived releases. These checks run in CI on every pull request and release.
+This repository uses automated quality checks for tests, linting, static analysis, dependency and security scanning, documented installation, reproducible examples, citation metadata, licensing information, and archived releases. Path-filtered CI runs graph, web, legislation, and Lex email checks on every relevant pull request and release.
 
 ## Standards
 
@@ -149,26 +156,37 @@ Current priority: an adoption-ready first release covering stable versioning, do
 
 ## License
 
-- **Code & tooling:** [EUPL-1.2](LICENSE)
-- **Graph data:** [CC-BY-4.0](LICENSE-DATA)
-- **Schemas & vocabularies:** CC0 or Apache-2.0
-- **Source snapshots:** Not relicensed (follow original source terms)
+Licenses are **path-scoped** (REUSE-compliant):
+
+| Area | License |
+|---|---|
+| Graph code & tooling (`packages/`, most root tooling) | [EUPL-1.2](LICENSE) |
+| Graph data, vocab, schemas, docs | [CC-BY-4.0](LICENSE-DATA) (see REUSE.toml) |
+| Website (`apps/web`) | [Apache-2.0](apps/web/LICENSE) |
+| Legislation project code (`lex/` authored code) | [Apache-2.0](lex/LICENSE) |
+| Official legislation corpus files | Source-specific (not relicensed; see `lex/NOTICE`) |
+| Lex email public-safe code (`services/lex/`) | Apache-2.0 |
+| Captured government HTML snapshots | LicenseRef-Gov-PublicDomain |
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get involved.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to get involved. Package-level notes live under `apps/web/`, `lex/`, and `services/lex/`.
 
 ## Supporters and Pilot Partners
 
 We are grateful for the support of ecosystem partners who have endorsed Clarvia’s public-interest mission, including **[Trauerwee ASBL](https://trauerwee.lu/)**, which has expressed its intention to support a future pilot, and **[TSC Real Estate](https://www.tsc-realestate.de/en/)**, which has endorsed our public-interest goals.
 
-## Related repositories
+## Related material
 
-- [lex](https://github.com/clarvia-org/lex) — Open legal-data infrastructure — normalized national legislation for AI agents
-- [workflow-web](https://github.com/clarvia-org/workflow-web) — Consumer web application at [clarvia.org](https://clarvia.org)
-- [workflow-data](https://github.com/clarvia-org/workflow-data) — Archived. Cross-border source, authority, and corridor data migrated into this graph in June 2026.
+| Path / link | Role |
+|---|---|
+| [`docs/MONOREPO.md`](docs/MONOREPO.md) | Monorepo map, CI, deploy boundaries |
+| [`apps/web`](apps/web/) | Website package (formerly `workflow-web`) |
+| [`lex/`](lex/) | Legislation dataset + CLI (formerly standalone `clarvia-org/lex`) |
+| [`services/lex/`](services/lex/) | Lex email service (public-safe) |
+| [workflow-data](https://github.com/clarvia-org/workflow-data) | **Archived** — legacy checklist data superseded by this graph |
+| [clarvia-org/.github](https://github.com/clarvia-org/.github) | Organization community health files |
 
 ## Acknowledgements
 
 [HirenGajjar](https://github.com/HirenGajjar) built the original cross-border bereavement dataset in `workflow-data` — source records, institution registries, and corridor documentation for Belgium, France, Germany, and Portugal. That work materially accelerated the graph's cross-border coverage and now lives here as migrated authority, source, and condition records.
-

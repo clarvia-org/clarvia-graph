@@ -1,8 +1,12 @@
-name: Propose New Country
-description: Propose adding a new country to lex
-title: "[Country]: "
-labels: ["new-country"]
+name: Propose new country (lex)
+description: Propose adding a country to the legislation corpus under lex/
+title: "[lex/country]: "
+labels: ["new-country", "lex"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Legislation lives under `lex/` in this monorepo. See `lex/README.md` and `lex/COUNTRY_ADAPTER.md`.
   - type: input
     id: official_source
     attributes:

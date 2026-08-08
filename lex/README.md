@@ -1,6 +1,6 @@
 # lex
 
-> **Monorepo location:** legislation dataset in [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph) under `lex/`. Lex email service is `services/lex/`. See [`docs/MONOREPO.md`](../docs/MONOREPO.md).
+> **Monorepo path:** [`clarvia-graph/lex`](https://github.com/clarvia-org/clarvia-graph/tree/main/lex). Lex **email** is a different package at [`services/lex/`](../services/lex/). See [`docs/MONOREPO.md`](../docs/MONOREPO.md).
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.12+-blue.svg)](https://python.org)
@@ -14,9 +14,9 @@ uv run lex get lu/code-civil --provision art-13
 
 ---
 
-Every country publishes law differently — Angular SPAs, PDFs, SPARQL endpoints, XML dumps, proprietary APIs. An AI agent that needs to look up a single provision must first reverse-engineer how that specific country works.
+Every country publishes law differently — Angular SPAs, PDFs, SPARQL endpoints, XML dumps, proprietary APIs. An agent that needs a single provision must first reverse-engineer that country’s publishing system.
 
-**lex fixes this.** One repository. One format. Every country.
+**lex fixes this.** One dataset tree. One format. Every supported country.
 
 Each law is a directory containing:
 
@@ -27,13 +27,13 @@ No database. No API keys. No scraping. Just Git.
 
 ## Use it
 
-**Browse** any law directly on GitHub — the Markdown renders natively.
+**Browse** any law on GitHub — Markdown renders natively under [`lex/countries/`](countries/).
 
-**Clone** and install the CLI from source:
+**Clone the monorepo** and install the CLI from this directory:
 
 ```bash
-git clone https://github.com/clarvia-org/lex.git
-cd lex
+git clone https://github.com/clarvia-org/clarvia-graph.git
+cd clarvia-graph/lex
 uv sync --frozen
 ```
 
@@ -48,7 +48,7 @@ uv run lex check
 `lex check` validates frontmatter, retained-source SHA-256, unique anchors, **and Markdown↔source fidelity** (empty/truncated articles and dropped lists).
 
 ```bash
-# Whole repo
+# Whole corpus under this directory
 uv run lex check
 
 # One law directory (fidelity only — fast offline review)

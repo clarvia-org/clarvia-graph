@@ -1,12 +1,33 @@
 # SPDX-FileCopyrightText: 2025-2026 CLARVIA ASBL, Luxembourg
 # SPDX-License-Identifier: EUPL-1.2
 
-# .github/CODEOWNERS
+# CODEOWNERS — clarvia-graph monorepo
 #
-# Repository ownership
-#
-# The maintainer is the default code owner for all files.
-# Community contributions are reviewed by the maintainer before merge.
-# Maintainer-authored pull requests request async external review via GitHub Actions.
+# Default owner for all paths. Path entries document ownership areas for reviewers
+# and grant due diligence; the same maintainer currently owns each area.
 
 * @TommiLindfors
+
+# Graph foundation
+/graph/ @TommiLindfors
+/schemas/ @TommiLindfors
+/vocab/ @TommiLindfors
+/sources/ @TommiLindfors
+/packages/ @TommiLindfors
+/exports/ @TommiLindfors
+
+# Website
+/apps/web/ @TommiLindfors
+
+# Legislation corpus + CLI
+/lex/ @TommiLindfors
+
+# Lex email (public-safe)
+/services/lex/ @TommiLindfors
+
+# Governance / CI
+/.github/ @TommiLindfors
+/docs/ @TommiLindfors
+/SECURITY.md @TommiLindfors
+/CONTRIBUTING.md @TommiLindfors
+/REUSE.toml @TommiLindfors

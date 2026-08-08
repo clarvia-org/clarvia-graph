@@ -10,6 +10,36 @@ updates:
     commit-message:
       prefix: "deps"
 
+  - package-ecosystem: npm
+    directory: /apps/web
+    schedule:
+      interval: weekly
+    labels:
+      - "type: ci"
+      - "trust: maintainer-only"
+    commit-message:
+      prefix: "deps(web)"
+
+  - package-ecosystem: pip
+    directory: /lex
+    schedule:
+      interval: weekly
+    labels:
+      - "type: ci"
+      - "trust: maintainer-only"
+    commit-message:
+      prefix: "deps(lex)"
+
+  - package-ecosystem: pip
+    directory: /services/lex
+    schedule:
+      interval: weekly
+    labels:
+      - "type: ci"
+      - "trust: maintainer-only"
+    commit-message:
+      prefix: "deps(lex-email)"
+
   - package-ecosystem: github-actions
     directory: /
     schedule:
