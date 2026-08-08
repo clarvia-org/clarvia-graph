@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 from datetime import UTC, datetime
+from pathlib import Path
+import tempfile
 
 import pytest
 from app.conversation import (
@@ -66,6 +68,15 @@ _LONG_WRITER_BODY = (
     "support will be organised.[1][2]"
 )
 
+# Synthetic prompts so public CI never needs runtime-private/ live prompt files.
+_SYNTHETIC_PROMPT_DIR = Path(tempfile.mkdtemp(prefix="lex-two-pass-"))
+(_SYNTHETIC_PROMPT_DIR / "research.txt").write_text(
+    "SYNTHETIC RESEARCH PROMPT\nLex.\n", encoding="utf-8"
+)
+(_SYNTHETIC_PROMPT_DIR / "writer.txt").write_text(
+    "SYNTHETIC WRITER PROMPT\nLex.\n", encoding="utf-8"
+)
+
 
 def _parsed(
     *,
@@ -93,8 +104,8 @@ def _parsed(
 def _settings():
     return build_settings(
         generation_pipeline="two_pass",
-        research_prompt_path="runtime-private/prompts/lex-research-v1.txt",
-        writer_prompt_path="runtime-private/prompts/lex-writer-v1.txt",
+        research_prompt_path=str(_SYNTHETIC_PROMPT_DIR / "research.txt"),
+        writer_prompt_path=str(_SYNTHETIC_PROMPT_DIR / "writer.txt"),
     )
 
 

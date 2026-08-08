@@ -305,7 +305,7 @@ class Processor:
                 pipeline_version = prepared.pipeline_version
                 writer_fallback_used = prepared.used_fallback_renderer
             else:
-                system_prompt = load_prompt()
+                system_prompt = load_prompt(self._settings.prompt_path)
                 history = prior_thread_history(
                     thread_messages,
                     latest_message_id=parsed.message_id,
