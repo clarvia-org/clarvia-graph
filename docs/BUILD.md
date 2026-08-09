@@ -3,7 +3,7 @@
 > Part of the [Clarvia Graph Foundation Specification](FOUNDATION.md).
 
 This document explains how to run the Clarvia build and export pipeline,
-what each command produces, how the outputs are consumed by workflow-web,
+what each command produces, how the outputs are consumed by apps/web,
 and how to verify everything works from a clean checkout.
 
 ---
@@ -53,7 +53,7 @@ All commands run from the repo root via pnpm:
 | `pnpm test-scenarios` | Run scenario regression tests |
 | `pnpm build-checklist` | Generate checklist output for test scenarios |
 | `pnpm export-json` | Export full graph as a single JSON file |
-| `pnpm export-web` | Export web runtime bundle for workflow-web |
+| `pnpm export-web` | Export web runtime bundle for apps/web |
 | `pnpm capture <url>` | Fetch a source URL and save a snapshot |
 | `pnpm extract` | Scaffold an assertion batch from a snapshot |
 | `pnpm test` | Run all unit and integration tests |
@@ -107,7 +107,7 @@ Use this export for:
 
 ### `pnpm export-web` — Web runtime bundle
 
-Produces a structured bundle consumed by workflow-web:
+Produces a structured bundle consumed by apps/web:
 
 ```
 build/exports/web/
@@ -124,7 +124,7 @@ restricted records are excluded regardless of their `authoring_status`.
 
 #### `manifest.json`
 
-Index of available life events and jurisdictions. workflow-web loads this
+Index of available life events and jurisdictions. apps/web loads this
 first to know what data is available.
 
 ```json
@@ -151,7 +151,7 @@ Questions the UI must ask the user before generating a checklist. Includes
 multilingual labels (`label_en`, `label_fr`, `label_de`) and options for
 controlled-value fields such as jurisdiction dropdowns.
 
-workflow-web loads this file lazily when a user selects a life event.
+apps/web loads this file lazily when a user selects a life event.
 
 #### `runtime/<life_event>.json`
 
@@ -159,15 +159,15 @@ Pre-compiled runtime data for client-side evaluation. Contains conditions
 (with JsonLogic expressions), consequences, task templates, authorities,
 deadlines, and evidence types — all resolved and filtered to public records.
 
-workflow-web loads this lazily alongside the intake file. The client-side
+apps/web loads this lazily alongside the intake file. The client-side
 `LocalResolver` evaluates conditions against user-provided facts and generates
 the checklist without sending any data to a server.
 
 ---
 
-## How workflow-web consumes the exports
+## How apps/web consumes the exports
 
-workflow-web (see [workflow-web repo](https://github.com/clarvia-org/workflow-web))
+apps/web (see [apps/web package](../apps/web/))
 loads the web export at build time via a static fetch:
 
 ```
@@ -179,9 +179,14 @@ runtime/bereavement.json   → loaded alongside intake to enable evaluation
 The client evaluates conditions locally using the JsonLogic expressions in
 `runtime/<life_event>.json`. No user data leaves the browser.
 
-To update workflow-web with new graph data: run `pnpm export-web` from the
-graph repo, then copy (or publish via CI) the `build/exports/web/` directory
-to the workflow-web static assets.
+To update apps/web with new graph data from the monorepo root:
+
+```bash
+pnpm export-and-sync-web
+```
+
+That exports the web bundle and syncs it into `apps/web/public/data/clarvia/`.
+You can still run `pnpm export-web` alone if you only need `build/exports/web/`.
 
 ---
 

@@ -1,4 +1,6 @@
-# Governance for workflow-web
+# Governance for apps/web
+
+Governance for the Clarvia website package in the [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph) monorepo (`apps/web`).
 
 This repository contains the public web layer for Clarvia.
 
@@ -12,7 +14,7 @@ It does not provide individualized legal advice.
 
 ## Purpose
 
-The purpose of `workflow-web` is to publish source-backed workflow data in accessible public formats.
+The purpose of `apps/web` is to publish source-backed workflow data in accessible public formats.
 
 The repository should support:
 
@@ -28,7 +30,7 @@ The repository should support:
 
 ## Source of truth
 
-`workflow-web` is not the source of truth for workflow facts.
+`apps/web` is not the source of truth for workflow facts.
 
 Workflow facts should be maintained in:
 

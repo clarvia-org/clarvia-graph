@@ -87,13 +87,13 @@ export default function FooterSection({ lang }: { lang: Lang }) {
               />
             </a>
             <a 
-              href="https://github.com/clarvia-org/workflow-web/actions/workflows/validate.yml" 
+              href="https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-web.yml" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               <img 
-                src="https://github.com/clarvia-org/workflow-web/actions/workflows/validate.yml/badge.svg" 
+                src="https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-web.yml/badge.svg" 
                 alt="CI (web)" 
                 className="h-6 w-auto"
                 width={90}
@@ -222,7 +222,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
               />
             </a>
             <a 
-              href="https://github.com/clarvia-org/workflow-web/blob/main/LICENSE" 
+              href="https://github.com/clarvia-org/clarvia-graph/blob/main/apps/web/LICENSE" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-block transition-transform hover:scale-[1.02] active:scale-[0.98]"
