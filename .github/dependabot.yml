@@ -1,51 +1,6 @@
+# Dependabot version updates are disabled.
+# Security alerts and automated security PRs remain active via
+# GitHub Settings → Security → Dependabot (separate from this file).
+# Dependency upgrades are handled manually or in scheduled triage runs.
 version: 2
-updates:
-  - package-ecosystem: npm
-    directory: /
-    schedule:
-      interval: weekly
-    labels:
-      - "type: ci"
-      - "trust: maintainer-only"
-    commit-message:
-      prefix: "deps"
-
-  - package-ecosystem: npm
-    directory: /apps/web
-    schedule:
-      interval: weekly
-    labels:
-      - "type: ci"
-      - "trust: maintainer-only"
-    commit-message:
-      prefix: "deps(web)"
-
-  - package-ecosystem: pip
-    directory: /lex
-    schedule:
-      interval: weekly
-    labels:
-      - "type: ci"
-      - "trust: maintainer-only"
-    commit-message:
-      prefix: "deps(lex)"
-
-  - package-ecosystem: pip
-    directory: /services/lex
-    schedule:
-      interval: weekly
-    labels:
-      - "type: ci"
-      - "trust: maintainer-only"
-    commit-message:
-      prefix: "deps(lex-email)"
-
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: weekly
-    labels:
-      - "type: ci"
-      - "trust: maintainer-only"
-    commit-message:
-      prefix: "ci"
+updates: []
