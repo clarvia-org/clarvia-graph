@@ -57,7 +57,8 @@ Your pull request must include the exact 5 checkboxes from the PR template:
 
 ## CLA / DCO
 
-No CLA or DCO is required. Contributions are accepted under Apache-2.0 for project-authored material through the license's inbound-contribution terms. 
-Source-specific legislative material remains under its recorded source terms.
+This monorepo uses the [Developer Certificate of Origin (DCO)](https://developercertificate.org/). Sign off commits with `git commit -s`. See the root [`CONTRIBUTING.md`](../CONTRIBUTING.md).
 
-`BLUEPRINT.md` governs all architectural choices.
+Project-authored material under `lex/` is accepted under Apache-2.0. Source-specific legislative material remains under its recorded source terms.
+
+`BLUEPRINT.md` governs all architectural choices for this package.
