@@ -102,7 +102,7 @@ export default async function ContributePage({
         {/* ── CTAs ── */}
         <div className="flex flex-col sm:flex-row gap-4 mb-16">
           <a
-            href="https://github.com/clarvia-org/workflow-web/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
+            href="https://github.com/clarvia-org/clarvia-graph/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex items-center justify-center gap-2 px-6 py-3 text-base flex-grow text-center"

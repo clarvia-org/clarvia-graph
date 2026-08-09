@@ -1,5 +1,6 @@
 name: Validate web
 
+# Path-filtered; include this file in paths so edits re-run the suite.
 on:
   pull_request:
     paths:

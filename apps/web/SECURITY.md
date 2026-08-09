@@ -2,7 +2,7 @@
 
 ## Supported repositories
 
-This policy applies to `workflow-web`.
+This policy applies to the Clarvia website package at `apps/web` in [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph).
 
 ---
 

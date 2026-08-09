@@ -104,7 +104,7 @@ describe("stripe handlers", () => {
           created: 1720000000,
         },
       },
-    } as Stripe.Event;
+    } as unknown as Stripe.Event;
 
     const result = await handleCheckoutSessionCompleted(
       baseContext(tx, event),
@@ -183,7 +183,7 @@ describe("stripe handlers", () => {
           created: 1720000000,
         },
       },
-    } as Stripe.Event;
+    } as unknown as Stripe.Event;
 
     const ctx = baseContext(tx, event);
     ctx.stripe = stripe;
@@ -254,7 +254,7 @@ describe("stripe handlers", () => {
           status_transitions: { paid_at: 1720000000 },
         },
       },
-    } as Stripe.Event;
+    } as unknown as Stripe.Event;
 
     const ctx = baseContext(tx, event);
     ctx.stripe = stripe;

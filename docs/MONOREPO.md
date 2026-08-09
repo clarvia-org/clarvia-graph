@@ -66,8 +66,8 @@ git sparse-checkout set apps/web packages graph schemas vocab exports docs
 
 | Former repo | Status |
 |---|---|
-| `workflow-web` | Merged into `apps/web` — legacy repo kept read-only for reference |
-| `clarvia-org/lex` | Merged into `lex/` — legacy repo kept read-only for reference |
+| `workflow-web` | **Archived** — merged into `apps/web` |
+| `clarvia-org/lex` | **Archived** — merged into `lex/` |
 | `workflow-data` | **Archived** — superseded by this graph |
 | `ops-private` | **Archived** — private operations stay outside this public monorepo |
 

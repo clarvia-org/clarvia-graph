@@ -93,8 +93,7 @@ export default async function LangLayout({
                 "sameAs": [
                   "https://clarvia.eu",
                   "https://github.com/clarvia-org",
-                  "https://github.com/clarvia-org/clarvia-graph",
-                  "https://github.com/clarvia-org/workflow-web"
+                  "https://github.com/clarvia-org/clarvia-graph"
                 ],
                 "address": {
                   "@type": "PostalAddress",
@@ -145,24 +144,13 @@ export default async function LangLayout({
                 "programmingLanguage": ["TypeScript", "JavaScript", "Python", "YAML", "JSON"],
                 "license": [
                   "https://www.apache.org/licenses/LICENSE-2.0",
-                  "https://creativecommons.org/licenses/by/4.0/"
+                  "https://creativecommons.org/licenses/by/4.0/",
+                  "https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12"
                 ],
                 "isPartOf": {
                   "@id": "https://clarvia.org/#organization"
                 },
-                "description": "Core consequence graph containing schema, rules, validation, tests, and source-backed workflow data for Clarvia's open bereavement workflow infrastructure."
-              },
-              {
-                "@type": "SoftwareSourceCode",
-                "@id": "https://github.com/clarvia-org/workflow-web#sourcecode",
-                "name": "workflow-web",
-                "codeRepository": "https://github.com/clarvia-org/workflow-web",
-                "programmingLanguage": ["TypeScript", "React", "Next.js"],
-                "license": "https://www.apache.org/licenses/LICENSE-2.0",
-                "isPartOf": {
-                  "@id": "https://clarvia.org/#organization"
-                },
-                "description": "Thin multilingual web layer for publishing Clarvia bereavement checklists, workflow views, and generated API views."
+                "description": "Clarvia public monorepo: consequence graph, clarvia.org website (apps/web), legislation dataset (lex/), and public-safe Lex email service (services/lex/)."
               },
               {
                 "@type": "CreativeWork",
