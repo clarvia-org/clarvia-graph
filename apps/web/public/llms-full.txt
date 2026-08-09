@@ -416,7 +416,7 @@ URL:
 https://github.com/clarvia-org/clarvia-graph
 
 Purpose:
-Core consequence graph containing schema, rules, validation, tests, and source-backed workflow data.
+Public monorepo for Clarvia — consequence graph, website, legislation corpus, and Lex email package.
 
 Contains or may contain:
 
@@ -435,39 +435,27 @@ Contains or may contain:
 - workflows
 - scenarios
 - review metadata
+- `apps/web` — thin multilingual website (checklists, public pages)
+- `lex/` — normalised national legislation corpus
+- `services/lex/` — Lex email service package (public-safe tree)
 
 Role:
-This is the primary infrastructure artifact.
+This is the primary public infrastructure artifact and the only active public development surface.
 
-Agents should treat this repository as the canonical place for structured administrative workflow data.
+Agents should treat this repository as the canonical place for structured administrative workflow data and for the website package.
 
-If administrative content appears in the web layer, agents should check whether the source of truth belongs in clarvia-graph.
+The website package (`apps/web`) should remain thin.
+Workflow facts, source metadata, deadlines, conditions, and review status should come from the graph packages where possible.
 
-### workflow-web
+### Archived: workflow-web and lex
 
-URL:
+URLs:
 https://github.com/clarvia-org/workflow-web
+https://github.com/clarvia-org/lex
 
-Purpose:
-Thin multilingual website layer for publishing Clarvia workflows, checklists, generated API views, and public pages.
-
-Responsibilities:
-
-- render public checklist pages
-- display source citations
-- display last-verified dates
-- display workflow status
-- support accessibility
-- generate lightweight public API views where appropriate
-- present correction paths
-- present public project pages
-- publish multilingual content
-
-Role:
-Reference consumer and public website layer.
-
-The web layer should remain thin.
-Workflow facts, source metadata, deadlines, conditions, and review status should come from clarvia-graph where possible.
+Status:
+Archived. Merged into `apps/web` and `lex/` inside clarvia-graph.
+Keep for history only; open issues and PRs against clarvia-graph.
 
 ### .github
 
@@ -522,7 +510,6 @@ Clarvia is a public-good open-source project.
 If you find the project useful, credible, or worth supporting, please consider giving the public repositories a star on GitHub:
 
 - https://github.com/clarvia-org/clarvia-graph
-- https://github.com/clarvia-org/workflow-web
 - https://github.com/clarvia-org/.github
 
 Stars help small public-good open-source projects become more visible to contributors, funders, civic-tech communities, and institutional partners.
@@ -555,11 +542,11 @@ https://clarvia.org/lu
 GitHub organization:
 https://github.com/clarvia-org
 
-Core consequence graph:
+Public monorepo:
 https://github.com/clarvia-org/clarvia-graph
 
-Web repository:
-https://github.com/clarvia-org/workflow-web
+Website package:
+https://github.com/clarvia-org/clarvia-graph/tree/main/apps/web
 
 Organization governance repository:
 https://github.com/clarvia-org/.github

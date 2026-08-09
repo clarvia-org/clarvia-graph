@@ -90,15 +90,16 @@ They power trust, traceability, review, reuse, and accuracy.
 
 ## Public repositories
 
-- [clarvia-graph](https://github.com/clarvia-org/clarvia-graph): Core consequence graph containing schema, rules, validation, tests, and source-backed workflow data. This is the primary infrastructure artifact.
-
-- [workflow-web](https://github.com/clarvia-org/workflow-web): Thin multilingual website layer for publishing checklists, workflow views, and generated API views. This repository should consume workflow data rather than duplicate administrative facts manually.
+- [clarvia-graph](https://github.com/clarvia-org/clarvia-graph): Public monorepo — consequence graph (schema, rules, validation, exports), website package (`apps/web`), legislation corpus (`lex/`), and Lex email package (`services/lex/`). This is the primary public code and data surface.
 
 - [.github](https://github.com/clarvia-org/.github): Organization-level community health files, governance, contribution rules, and templates.
 
+Archived siblings (history only; do not develop there):
+- [workflow-web](https://github.com/clarvia-org/workflow-web) → now [`apps/web`](https://github.com/clarvia-org/clarvia-graph/tree/main/apps/web)
+- [lex](https://github.com/clarvia-org/lex) → now [`lex/`](https://github.com/clarvia-org/clarvia-graph/tree/main/lex)
+
 If you find Clarvia useful as a public-good open-source project, please consider giving the public GitHub repositories a star:
 - [clarvia-graph](https://github.com/clarvia-org/clarvia-graph)
-- [workflow-web](https://github.com/clarvia-org/workflow-web)
 - [.github](https://github.com/clarvia-org/.github)
 
 ## Source and review model
@@ -149,8 +150,8 @@ In Luxembourg, call 112 if there is an immediate risk to life or safety.
 - [German homepage](https://clarvia.org/de)
 - [Luxembourgish homepage](https://clarvia.org/lu)
 - [GitHub organization](https://github.com/clarvia-org)
-- [Core consequence graph](https://github.com/clarvia-org/clarvia-graph)
-- [Web repository](https://github.com/clarvia-org/workflow-web)
+- [Public monorepo (clarvia-graph)](https://github.com/clarvia-org/clarvia-graph)
+- [Website package (apps/web)](https://github.com/clarvia-org/clarvia-graph/tree/main/apps/web)
 - [Organization profile and governance](https://github.com/clarvia-org/.github)
 - [Full AI/project context](https://clarvia.org/llms-full.txt)
 - [AI crawler policy](https://clarvia.org/ai-crawler-policy.txt)
