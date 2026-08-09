@@ -2,7 +2,7 @@
 
 Public monorepo: [`clarvia-org/clarvia-graph`](https://github.com/clarvia-org/clarvia-graph).
 
-This document is the map for humans, grant reviewers, and agents. The consequence graph remains the primary Digital Public Good artifact; sibling products live in clearly named paths with their own licenses and deploy targets.
+This document is the map for humans, contributors, and agents. The consequence graph remains the primary Digital Public Good artifact; sibling products live in clearly named paths with their own licenses and deploy targets.
 
 ## Layout
 
@@ -66,9 +66,9 @@ git sparse-checkout set apps/web packages graph schemas vocab exports docs
 
 | Former repo | Status |
 |---|---|
-| `workflow-web` | Merged into `apps/web` — keep until soak, then archive |
-| `clarvia-org/lex` | Merged into `lex/` — keep until soak, then archive |
+| `workflow-web` | Merged into `apps/web` — legacy repo kept read-only for reference |
+| `clarvia-org/lex` | Merged into `lex/` — legacy repo kept read-only for reference |
 | `workflow-data` | **Archived** — superseded by this graph |
-| `ops-private` | **Archived** — stays out of the public monorepo; unarchive later if needed |
+| `ops-private` | **Archived** — private operations stay outside this public monorepo |
 
 Org profile and community templates remain in [`clarvia-org/.github`](https://github.com/clarvia-org/.github).

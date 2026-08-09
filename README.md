@@ -24,6 +24,21 @@ Clarvia Graph is reusable public-interest digital infrastructure. While it serve
 
 This repository is Clarvia’s **public monorepo**: the consequence graph, the clarvia.org website, legislation data for agents (`lex/`), and the public-safe Lex email service (`services/lex/`) live here under path-filtered CI. See [`docs/MONOREPO.md`](docs/MONOREPO.md) for layout, licenses, and deploy boundaries.
 
+## Quick start
+
+Requires **Node 22+** and **pnpm 9.x** (see root `packageManager` / `.node-version`). Python 3.12+ is needed for `lex/` and `services/lex/`.
+
+```bash
+git clone https://github.com/clarvia-org/clarvia-graph.git
+cd clarvia-graph
+pnpm install
+pnpm validate                 # graph
+pnpm export-and-sync-web      # refresh website checklist data
+pnpm web:dev                  # clarvia.org locally
+```
+
+Working on one area only? See sparse-checkout notes in [`docs/MONOREPO.md`](docs/MONOREPO.md) and [`CONTRIBUTING.md`](CONTRIBUTING.md). Package READMEs: [`apps/web`](apps/web/), [`lex/`](lex/), [`services/lex/`](services/lex/).
+
 ## Digital Public Good readiness
 
 Clarvia Graph is being prepared for submission to the Digital Public Goods Alliance Registry as open, source-backed administrative workflow infrastructure for bereavement administration. See [DPG.md](DPG.md) for the DPG Standard mapping, open-license information, privacy and do-no-harm boundaries, SDG alignment, and reuse documentation.

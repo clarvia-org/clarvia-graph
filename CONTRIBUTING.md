@@ -4,6 +4,19 @@ Thank you for your interest in contributing to Clarvia! This project builds open
 
 This repository is a **monorepo**. See [`docs/MONOREPO.md`](docs/MONOREPO.md) for where graph, website, legislation, and Lex email code live.
 
+### Working on one area only
+
+You can clone a subset of the tree with sparse checkout (optional):
+
+```bash
+git clone --filter=blob:none --sparse https://github.com/clarvia-org/clarvia-graph.git
+cd clarvia-graph
+git sparse-checkout set docs packages graph schemas vocab exports apps/web
+# or: lex   /   services/lex   /   apps/web
+```
+
+Full clone is fine for most contributors. Details: [`docs/MONOREPO.md`](docs/MONOREPO.md).
+
 ## Where to contribute
 
 | Area | Path | Typical work |

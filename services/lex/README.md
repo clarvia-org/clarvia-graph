@@ -57,7 +57,8 @@ In scope: practical and administrative process after a death, and end-of-life pr
 Requires Python 3.12+.
 
 ```bash
-cd services/lex
+git clone https://github.com/clarvia-org/clarvia-graph.git
+cd clarvia-graph/services/lex
 uv sync --extra dev
 # or: python -m venv .venv && pip install -e ".[dev]"
 cp .env.example .env   # no secrets in .env for shared machines

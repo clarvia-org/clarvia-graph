@@ -31,6 +31,8 @@ Production (Coolify) builds this package with Base Directory `apps/web`. Synced 
 
 ## Develop
 
+Requires **Node 22+** and **pnpm 9.x** (see `packageManager` in this `package.json`).
+
 From the **monorepo root** (preferred):
 
 ```bash
@@ -47,8 +49,6 @@ Or from this directory after a root install:
 pnpm dev
 pnpm build
 ```
-
-Requires Node 22+ and pnpm 9.x (see `packageManager` in this `package.json`).
 
 ## Deploy
 
