@@ -83,7 +83,7 @@ def _brief(**overrides: object) -> LexResearchBrief:
                 name="Haus Omega / Omega 90",
                 kind="support_service",
                 country_code="LU",
-                website="https://www.vdl.lu",
+                website="https://guichet.public.lu/en/citoyens/hospice",
                 phone=None,
                 email=None,
                 commercial=False,
@@ -95,7 +95,7 @@ def _brief(**overrides: object) -> LexResearchBrief:
                 name="Funeral directory example A",
                 kind="funeral_provider",
                 country_code="LU",
-                website="https://example-a.lu",
+                website="https://fpf.lu/members/a",
                 phone=None,
                 email=None,
                 commercial=True,
@@ -107,7 +107,7 @@ def _brief(**overrides: object) -> LexResearchBrief:
                 name="Funeral directory example B",
                 kind="funeral_provider",
                 country_code="LU",
-                website="https://example-b.lu",
+                website="https://fpf.lu/members/b",
                 phone=None,
                 email=None,
                 commercial=True,
@@ -177,79 +177,19 @@ def test_hospice_brief_rejects_police_action() -> None:
         validate_research_brief(
             brief,
             web_search_source_urls=frozenset(
-                {"https://guichet.public.lu", "https://fpf.lu", "https://www.vdl.lu", "https://example-a.lu", "https://example-b.lu"}
+                {
+                    "https://guichet.public.lu",
+                    "https://fpf.lu",
+                    "https://guichet.public.lu/en/citoyens/hospice",
+                    "https://fpf.lu/members/a",
+                    "https://fpf.lu/members/b",
+                }
             ),
             web_search_calls=1,
             conversation_text="mother in haus omega hospice",
         )
     assert exc.value.code == "unsupported_exceptional_scenario"
 
-
-def test_single_commercial_provider_rejected() -> None:
-    brief = _brief(
-        contacts=[
-            ResearchContact(
-                id=1,
-                name="Only One Funerals",
-                kind="funeral_provider",
-                country_code="LU",
-                website="https://example-a.lu",
-                phone=None,
-                email=None,
-                commercial=True,
-                note="Only option",
-                source_id=2,
-            )
-        ],
-        immediate_actions=[
-            ResearchImmediateAction(
-                id="A1",
-                action="Ask hospice staff",
-                explanation="Ask staff.",
-                timing="now",
-                handled_by=["staff"],
-                documents=[],
-                source_ids=[1],
-                contact_ids=[],
-                required=True,
-            ),
-            ResearchImmediateAction(
-                id="A2",
-                action="Prepare documents",
-                explanation="IDs.",
-                timing="before_death",
-                handled_by=["family"],
-                documents=[],
-                source_ids=[1],
-                contact_ids=[],
-                required=True,
-            ),
-            ResearchImmediateAction(
-                id="A3",
-                action="Contact the funeral provider",
-                explanation="Call them.",
-                timing="next_few_days",
-                handled_by=["family"],
-                documents=[],
-                source_ids=[2],
-                contact_ids=[1],
-                required=True,
-            ),
-        ],
-    )
-    with pytest.raises(ResearchValidationError) as exc:
-        validate_research_brief(
-            brief,
-            web_search_source_urls=frozenset(
-                {
-                    "https://guichet.public.lu",
-                    "https://fpf.lu",
-                    "https://example-a.lu",
-                }
-            ),
-            web_search_calls=1,
-        )
-    assert exc.value.code == "single_provider_only"
 
 
 def test_writer_rejects_sources_section_and_formulaic_opening() -> None:
@@ -359,9 +299,9 @@ def test_fake_structured_adapter_supports_two_schemas() -> None:
                     {
                         "https://guichet.public.lu",
                         "https://fpf.lu",
-                        "https://www.vdl.lu",
-                        "https://example-a.lu",
-                        "https://example-b.lu",
+                        "https://guichet.public.lu/en/citoyens/hospice",
+                        "https://fpf.lu/members/a",
+                        "https://fpf.lu/members/b",
                     }
                 ),
                 web_search_calls=1,

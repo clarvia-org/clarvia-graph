@@ -62,13 +62,13 @@ class LexContact(BaseModel):
     email: Annotated[str, Field(min_length=3, max_length=254)] | None
     commercial: bool
     note: str = Field(min_length=1, max_length=400)
-    source_id: int = Field(ge=1, le=8)
+    source_id: int = Field(ge=1, le=16)
 
 
 class LexSource(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
-    id: int = Field(ge=1, le=8)
+    id: int = Field(ge=1, le=16)
     title: str = Field(min_length=1, max_length=300)
     publisher: str = Field(min_length=1, max_length=200)
     url: HttpsUrl
@@ -87,7 +87,7 @@ class LexResponse(BaseModel):
     jurisdictions: list[LexJurisdiction] = Field(max_length=10)
     body_markdown: str = Field(min_length=1, max_length=18000)
     contacts: list[LexContact] = Field(max_length=12)
-    sources: list[LexSource] = Field(max_length=8)
+    sources: list[LexSource] = Field(max_length=16)
     research_status: Literal["not_needed", "adequate", "insufficient"]
 
 
@@ -205,19 +205,19 @@ LEX_RESPONSE_JSON_SCHEMA: dict[str, Any] = {
                     },
                     "commercial": {"type": "boolean"},
                     "note": {"type": "string", "minLength": 1, "maxLength": 400},
-                    "source_id": {"type": "integer", "minimum": 1, "maximum": 8},
+                    "source_id": {"type": "integer", "minimum": 1, "maximum": 16},
                 },
             },
         },
         "sources": {
             "type": "array",
-            "maxItems": 8,
+            "maxItems": 16,
             "items": {
                 "type": "object",
                 "additionalProperties": False,
                 "required": ["id", "title", "publisher", "url"],
                 "properties": {
-                    "id": {"type": "integer", "minimum": 1, "maximum": 8},
+                    "id": {"type": "integer", "minimum": 1, "maximum": 16},
                     "title": {"type": "string", "minLength": 1, "maxLength": 300},
                     "publisher": {"type": "string", "minLength": 1, "maxLength": 200},
                     "url": {

@@ -31,7 +31,7 @@ ENV LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-v1.txt \
     LEX_WRITER_PROMPT_PATH=/app/runtime-private/prompts/lex-writer-v1.txt \
     LEX_GENERATION_PIPELINE=two_pass \
     GCP_REGION=europe-west1 \
-    OPENAI_MODEL=gpt-5-mini \
+    OPENAI_MODEL=gpt-5.6-luna \
     PROCESSING_MODE=disabled
 
 EXPOSE 8080

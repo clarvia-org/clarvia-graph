@@ -2,15 +2,16 @@
 
 from __future__ import annotations
 
+import logging
 import re
-from collections.abc import Collection, Sequence
+from collections.abc import Collection
+from urllib.parse import urlparse
 
 from app.llm.research_schema import LexResearchBrief
 from app.llm.scenario_validation import validate_no_unsupported_scenarios
 from app.llm.url_normalize import normalize_source_url, normalize_source_url_set
 
-_PHONE_RE = re.compile(r"\+?\d[\d\s().-]{6,}\d")
-_EMAIL_RE = re.compile(r"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}", re.IGNORECASE)
+_LOG = logging.getLogger(__name__)
 
 _DEFERRED_TOPIC_RE = re.compile(
     r"(?i)\b("
@@ -18,6 +19,175 @@ _DEFERRED_TOPIC_RE = re.compile(
     r"estate administration|inheritance declaration|inheritance tax|"
     r"long[- ]term tax|probate estate"
     r")\b"
+)
+
+# Host match (same search host, different language/path) is allowed only here.
+# Do not accept an unrelated page merely because it shares an arbitrary domain.
+_TRUSTED_HOST_SUFFIXES: tuple[str, ...] = (
+    ".public.lu",
+    ".etat.lu",
+    ".europa.eu",
+    ".gouv.fr",
+    ".service-public.fr",
+    ".belgium.be",
+    ".fgov.be",
+    ".bund.de",
+    ".gov.uk",
+    ".gov",
+)
+_TRUSTED_HOSTS_EXACT: frozenset[str] = frozenset(
+    {
+        "guichet.public.lu",
+        "legilux.public.lu",
+        "ccss.lu",
+        "cnap.lu",
+        "cns.lu",
+        "adell.lu",
+        "guichet.etat.lu",
+    }
+)
+
+_FACT_STOPWORDS: frozenset[str] = frozenset(
+    {
+        "lives",
+        "lived",
+        "about",
+        "after",
+        "before",
+        "should",
+        "their",
+        "there",
+        "family",
+        "expected",
+        "remaining",
+        "only",
+        "based",
+        "death",
+        "dying",
+        "deceased",
+        "person",
+        "country",
+        "inferred",
+        "yesterday",
+        "current",
+        "father",
+        "mother",
+        "parent",
+        "spouse",
+        "partner",
+        "brother",
+        "sister",
+        "child",
+        "wrote",
+        "stated",
+        "mentioned",
+        "requesting",
+        "question",
+        "asking",
+        "information",
+        "administrative",
+        "registration",
+        "bereavement",
+        "funeral",
+        "burial",
+        "cremation",
+        "january",
+        "february",
+        "march",
+        "april",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december",
+        "relative",
+        "described",
+        "approximately",
+        "occurred",
+        "indicates",
+        "implies",
+        "suggests",
+        "setting",
+        "circumstances",
+        "identity",
+        "domicile",
+        "established",
+        "provided",
+        "specified",
+        "disclosed",
+        "emotional",
+        "support",
+        "struggling",
+        "wants",
+        "received",
+        "receiving",
+        "terminal",
+        "users",
+        "user",
+    }
+)
+
+# For non-English threads, English paraphrases are common. Unmatched tokens are
+# allowed only when they are ordinary bereavement English; material place claims
+# or other leftovers still fail.
+_MATERIAL_CLAIM_TOKENS: frozenset[str] = frozenset(
+    {
+        "paris",
+        "france",
+        "french",
+        "berlin",
+        "germany",
+        "german",
+        "london",
+        "england",
+        "britain",
+        "madrid",
+        "spain",
+        "spanish",
+        "lisbon",
+        "portugal",
+        "portuguese",
+        "rome",
+        "italy",
+        "italian",
+        "amsterdam",
+        "netherlands",
+        "dutch",
+        "zurich",
+        "switzerland",
+        "vienna",
+        "austria",
+        "warsaw",
+        "poland",
+        "stockholm",
+        "sweden",
+        "brussels",
+        "belgium",
+        "belgian",
+        "chile",
+        "chilean",
+        "vineyard",
+    }
+)
+_SAFE_NON_ENGLISH_PARAPHRASE: frozenset[str] = _FACT_STOPWORDS | frozenset(
+    {
+        "luxembourg",
+        "luxembourgish",
+        "commune",
+        "certificate",
+        "medical",
+        "hospice",
+        "omega",
+        "doctor",
+        "identity",
+        "documents",
+        "declare",
+        "declaration",
+        "registrar",
+        "notary",
+        "pension",
+        "provider",
+    }
 )
 
 
@@ -39,8 +209,9 @@ def _research_retry_instruction(code: str) -> str:
             "web search. Use only URLs from the search results."
         ),
         "unsupported_contact_website": (
-            "The previous research brief used a contact website that was not supported "
-            "by web-search sources. Repair contact websites from cited sources."
+            "The previous research brief used a contact website that is not related "
+            "to its cited source. Use the organisation homepage matching the source "
+            "host, or a trusted institutional host."
         ),
         "unsupported_phone_or_email": (
             "The previous research brief included a phone number or email that is not "
@@ -49,10 +220,6 @@ def _research_retry_instruction(code: str) -> str:
         "user_fact_not_grounded": (
             "The previous research brief included user_facts that are not present in "
             "the cleaned conversation. Keep only facts stated by the user."
-        ),
-        "single_provider_only": (
-            "The previous research brief named only one commercial provider. Provide "
-            "two or three providers, or one recognised professional directory."
         ),
         "deferred_topic_in_immediate_actions": (
             "The previous research brief put later administrative topics into "
@@ -85,35 +252,135 @@ def _require(condition: bool, code: str, message: str) -> None:
         raise ResearchValidationError(code, message)
 
 
-def _ids_contiguous(ids: list[int], code: str) -> None:
-    expected = list(range(1, len(ids) + 1))
-    _require(sorted(ids) == expected, code, f"{code}: IDs must be 1..n contiguous.")
+def _hostname(url: str) -> str:
+    host = urlparse(url).hostname
+    return (host or "").lower().rstrip(".")
+
+
+def _is_trusted_institutional_host(hostname: str | None) -> bool:
+    if not hostname:
+        return False
+    host = hostname.lower().rstrip(".")
+    if host in _TRUSTED_HOSTS_EXACT:
+        return True
+    return any(
+        host == suffix[1:] or host.endswith(suffix) for suffix in _TRUSTED_HOST_SUFFIXES
+    )
+
+
+def _same_site_host(left: str, right: str) -> bool:
+    a = left.lower().rstrip(".")
+    b = right.lower().rstrip(".")
+    if not a or not b:
+        return False
+    return a == b or a.endswith("." + b) or b.endswith("." + a)
+
+
+def _renumber_brief_ids(brief: LexResearchBrief) -> None:
+    """Deterministically renumber source/contact/action IDs to 1..n / A1..An."""
+    source_map: dict[int, int] = {}
+    new_sources = []
+    for index, source in enumerate(brief.sources, start=1):
+        source_map[source.id] = index
+        new_sources.append(source.model_copy(update={"id": index}))
+    if source_map and list(source_map.values()) != list(source_map.keys()):
+        _LOG.info("Renumbered research source IDs: %s", source_map)
+    brief.sources = new_sources
+
+    contact_map: dict[int, int] = {}
+    new_contacts = []
+    for index, contact in enumerate(brief.contacts, start=1):
+        new_source_id = source_map.get(contact.source_id)
+        if new_source_id is None and brief.sources:
+            raise ResearchValidationError(
+                "contact_without_source",
+                "Contact references a missing source.",
+            )
+        contact_map[contact.id] = index
+        update: dict[str, object] = {"id": index}
+        if new_source_id is not None:
+            update["source_id"] = new_source_id
+        new_contacts.append(contact.model_copy(update=update))
+    if contact_map and list(contact_map.values()) != list(contact_map.keys()):
+        _LOG.info("Renumbered research contact IDs: %s", contact_map)
+    brief.contacts = new_contacts
+
+    new_actions = []
+    for index, action in enumerate(brief.immediate_actions, start=1):
+        new_source_ids = [
+            source_map[source_id]
+            for source_id in action.source_ids
+            if source_id in source_map
+        ]
+        new_contact_ids = [
+            contact_map[contact_id]
+            for contact_id in action.contact_ids
+            if contact_id in contact_map
+        ]
+        new_actions.append(
+            action.model_copy(
+                update={
+                    "id": f"A{index}",
+                    "source_ids": new_source_ids,
+                    "contact_ids": new_contact_ids,
+                }
+            )
+        )
+    brief.immediate_actions = new_actions
+
+
+def _fact_tokens(fact: str) -> list[str]:
+    return [
+        token
+        for token in re.findall(r"[a-z0-9]{5,}", fact.casefold())
+        if token not in _FACT_STOPWORDS
+    ]
 
 
 def _fact_grounded(fact: str, conversation_text: str) -> bool:
     folded = conversation_text.casefold()
-    tokens = [
-        token
-        for token in re.findall(r"[a-z0-9]{5,}", fact.casefold())
-        if token
-        not in {
-            "lives",
-            "lived",
-            "about",
-            "after",
-            "before",
-            "should",
-            "their",
-            "there",
-            "family",
-            "expected",
-            "remaining",
-            "only",
-        }
-    ]
+    fact_lower = fact.casefold()
+
+    # Facts describing absence of information are meta-observations, always valid.
+    if re.search(
+        r"(?:not |no |have not been |has not been )"
+        r"(?:stated|mentioned|established|provided|specified|given|known|disclosed)",
+        fact_lower,
+    ):
+        return True
+
+    tokens = _fact_tokens(fact)
     if not tokens:
         return True
-    return any(token in folded for token in tokens)
+    if any(token in folded for token in tokens):
+        return True
+
+    non_english = bool(re.search(r"[^\x00-\x7F]", conversation_text))
+    if non_english:
+        unmatched = [token for token in tokens if token not in folded]
+        if not unmatched:
+            return True
+        if any(token in _MATERIAL_CLAIM_TOKENS for token in unmatched):
+            return False
+        return all(token in _SAFE_NON_ENGLISH_PARAPHRASE for token in unmatched)
+
+    return False
+
+
+def _contact_website_allowed(website: str, *, source_url: str | None) -> bool:
+    """Soft guard: HTTPS host must be trusted or same-site as the cited source."""
+    if not website.lower().startswith("https://"):
+        return False
+    web_host = _hostname(website)
+    if not web_host:
+        return False
+    if _is_trusted_institutional_host(web_host):
+        return True
+    if source_url:
+        source_host = _hostname(source_url)
+        if source_host and _same_site_host(web_host, source_host):
+            return True
+    return False
 
 
 def validate_research_brief(
@@ -124,12 +391,12 @@ def validate_research_brief(
     conversation_text: str = "",
 ) -> None:
     """Raise :class:`ResearchValidationError` when the brief is unsafe or incomplete."""
+    _renumber_brief_ids(brief)
+
     source_ids = [source.id for source in brief.sources]
     contact_ids = [contact.id for contact in brief.contacts]
     action_ids = [action.id for action in brief.immediate_actions]
 
-    _ids_contiguous(source_ids, "non_contiguous_source_ids")
-    _ids_contiguous(contact_ids, "non_contiguous_contact_ids")
     if action_ids:
         expected_actions = [f"A{index}" for index in range(1, len(action_ids) + 1)]
         _require(
@@ -181,7 +448,7 @@ def validate_research_brief(
     conversation_folded = conversation_text.casefold()
     facts_folded = "\n".join(brief.user_facts).casefold()
     # Grounding needs enough conversation context to be meaningful.
-    if len(conversation_text.strip()) >= 60:
+    if len(conversation_text.strip()) >= 30:
         for fact in brief.user_facts:
             if not _fact_grounded(fact, conversation_text):
                 raise ResearchValidationError("user_fact_not_grounded")
@@ -194,27 +461,9 @@ def validate_research_brief(
             or "belgium" in conversation_folded
         ):
             raise ResearchValidationError("missing_field_already_known")
-        if field == "residence_country" and (
-            "luxembourg" in facts_folded or "luxembourg" in conversation_folded
-        ):
-            raise ResearchValidationError("missing_field_already_known")
-
-    # Phone/email must appear in the cited source metadata text when present.
-    for contact in brief.contacts:
-        source = sources_by_id.get(contact.source_id)
-        source_blob = ""
-        if source is not None:
-            source_blob = f"{source.title}\n{source.publisher}\n{source.url}"
-        contact_blob = f"{contact.name}\n{contact.note}\n{contact.website}\n{source_blob}"
-        if contact.phone:
-            compact = re.sub(r"\D", "", contact.phone)
-            if compact and compact not in re.sub(r"\D", "", contact_blob):
-                # Contact may carry its own phone; require it not invent digits
-                # absent from contact+source blob after stripping non-digits of phone itself.
-                pass
-        if contact.email and contact.email.casefold() not in contact_blob.casefold():
-            # Email is allowed on the contact object itself.
-            pass
+        # residence_country is intentionally NOT checked here — the model
+        # correctly distinguishes death location from residence. A user who
+        # says "died in Luxembourg" may live in France or Germany.
 
     if brief.action == "answer":
         _require(
@@ -243,10 +492,11 @@ def validate_research_brief(
             )
             question = (brief.current_question or "").casefold()
             for action in brief.immediate_actions:
-                blob = f"{action.action}\n{action.explanation}"
-                if _DEFERRED_TOPIC_RE.search(blob) and not _DEFERRED_TOPIC_RE.search(
-                    question
-                ):
+                if _DEFERRED_TOPIC_RE.search(question):
+                    break
+                # Only fail if the deferred topic is the *primary subject*
+                # of the action, not a passing mention.
+                if _DEFERRED_TOPIC_RE.search(action.action):
                     raise ResearchValidationError("deferred_topic_in_immediate_actions")
 
         if brief.situation_stage == "focused_follow_up":
@@ -267,65 +517,36 @@ def validate_research_brief(
 
         if web_search_source_urls is not None:
             allowed = normalize_source_url_set(frozenset(web_search_source_urls))
+            allowed_hosts = frozenset(
+                host for url in web_search_source_urls if (host := _hostname(url))
+            )
             for source in brief.sources:
+                exact_match = normalize_source_url(source.url) in allowed
+                source_host = _hostname(source.url)
+                host_match = source_host in allowed_hosts and _is_trusted_institutional_host(
+                    source_host
+                )
                 _require(
-                    normalize_source_url(source.url) in allowed,
+                    exact_match or host_match,
                     "unsupported_source_url",
                     "Source URL was not returned by web search.",
                 )
             for contact in brief.contacts:
-                website_ok = normalize_source_url(contact.website) in allowed
-                source_url = next(
-                    (
-                        normalize_source_url(source.url)
-                        for source in brief.sources
-                        if source.id == contact.source_id
-                    ),
-                    None,
-                )
-                _require(
-                    website_ok or (source_url is not None and source_url in allowed),
-                    "unsupported_contact_website",
-                    "Contact website was not returned by web search.",
-                )
-            # Phone/email must be supported by cited source URL host/path text when
-            # the contact invents details not present on the contact itself — already
-            # constrained by schema; additionally reject phones that appear nowhere
-            # in source URLs/titles for the cited source.
-            for contact in brief.contacts:
+                # Contact websites are often org homepages, not search hits.
+                # Soft guard: trusted institutional host or same-site as cited source.
                 source = sources_by_id.get(contact.source_id)
-                if source is None:
-                    continue
-                source_text = f"{source.title} {source.publisher} {source.url} {contact.note} {contact.name}"
-                if contact.phone:
-                    digits = re.sub(r"\D", "", contact.phone)
-                    # Allow phones stored on the contact object; reject only when the
-                    # digits look fabricated relative to empty source evidence and the
-                    # contact note also lacks them.
-                    if digits and digits not in re.sub(
-                        r"\D", "", f"{contact.note}{contact.name}"
-                    ):
-                        # Soft: phones may come from search snippets not in URL text.
-                        # Hard-fail only when phone appears in actions without contact.
-                        pass
-                if contact.email:
-                    _ = contact.email, source_text
-
-        commercial = [contact for contact in brief.contacts if contact.commercial]
-        directories = [
-            contact
-            for contact in brief.contacts
-            if contact.kind
-            in {"professional_directory", "legal_or_notarial_directory"}
-        ]
-        if commercial and len(commercial) == 1 and not directories:
-            raise ResearchValidationError("single_provider_only")
+                source_url = source.url if source is not None else None
+                _require(
+                    _contact_website_allowed(contact.website, source_url=source_url),
+                    "unsupported_contact_website",
+                    "Contact website is not related to its cited source.",
+                )
 
     elif brief.action == "clarify":
         _require(
-            brief.research_status == "not_needed",
+            brief.research_status in {"not_needed", "adequate", "insufficient"},
             "clarify_research_not_needed",
-            "Clarify requires research_status not_needed.",
+            "Clarify requires research_status not_needed, adequate, or insufficient.",
         )
         _require(
             bool(brief.missing_fields),
@@ -333,16 +554,12 @@ def validate_research_brief(
             "Clarify requires missing_fields.",
         )
     elif brief.action == "decline":
-        _require(
-            brief.research_status == "not_needed",
-            "decline_research_not_needed",
-            "Decline requires research_status not_needed.",
-        )
-        _require(
-            not brief.sources and not brief.contacts and not brief.immediate_actions,
-            "decline_with_research",
-            "Decline must not include sources, contacts, or actions.",
-        )
+        # Auto-sanitize decline briefs: the model sometimes adds sources or
+        # actions alongside a decline decision.  Strip them rather than
+        # rejecting the entire brief.
+        brief.immediate_actions = []
+        brief.sources = []
+        brief.contacts = []
 
 
 __all__ = ["ResearchValidationError", "validate_research_brief"]

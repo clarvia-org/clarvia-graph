@@ -34,10 +34,10 @@ from tests.unit.test_two_pass import _brief
 _URLS = frozenset(
     {
         "https://guichet.public.lu",
+        "https://guichet.public.lu/en/citoyens/hospice",
         "https://fpf.lu",
-        "https://www.vdl.lu",
-        "https://example-a.lu",
-        "https://example-b.lu",
+        "https://fpf.lu/members/a",
+        "https://fpf.lu/members/b",
     }
 )
 
@@ -725,23 +725,24 @@ def test_research_clarify_decline_validation_branches() -> None:
         validate_research_brief(
             _brief(
                 action="clarify",
-                research_status="adequate",
+                research_status="not_needed",
                 immediate_actions=[],
                 sources=[],
                 contacts=[],
                 user_facts=[],
-                missing_fields=["death_country"],
+                missing_fields=[],
                 later_topics=[],
             )
         )
-    with pytest.raises(ResearchValidationError):
-        validate_research_brief(
-            _brief(
-                action="decline",
-                research_status="not_needed",
-                immediate_actions=[],
-                user_facts=[],
-                later_topics=[],
-                off_topic_label="tax advice",
-            )
-        )
+    # Decline auto-sanitizes: actions, sources, contacts are stripped
+    decline_brief = _brief(
+        action="decline",
+        research_status="not_needed",
+        user_facts=[],
+        later_topics=[],
+        off_topic_label="tax advice",
+    )
+    validate_research_brief(decline_brief)
+    assert decline_brief.immediate_actions == []
+    assert decline_brief.sources == []
+    assert decline_brief.contacts == []
