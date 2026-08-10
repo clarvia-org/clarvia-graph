@@ -46,7 +46,7 @@ class Settings(BaseSettings):
     gcp_project_id: str = "fleet-garage-502110-g6"
     gcp_region: str = REQUIRED_REGION
     lex_mailbox: str = "lex@clarvia.org"
-    openai_model: str = "gpt-5-mini"
+    openai_model: str = "gpt-5.6-luna"
     openai_api_key: str = ""
     max_output_tokens: int = 2400
     research_max_output_tokens: int = 12000

@@ -17,7 +17,7 @@ def test_defaults_match_blueprint() -> None:
     assert settings.environment == "development"
     assert settings.gcp_region == "europe-west1"
     assert settings.lex_mailbox == "lex@clarvia.org"
-    assert settings.openai_model == "gpt-5-mini"
+    assert settings.openai_model == "gpt-5.6-luna"
     assert settings.prompt_version == "lex-v1"
     assert settings.prompt_path == "runtime-private/prompts/lex-v1.txt"
     assert settings.schema_version == "lex_response_v1"

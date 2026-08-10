@@ -133,19 +133,18 @@ def _expected_actions(row: dict[str, Any]) -> set[str]:
     return set()
 
 
-def _load_dotenv_key() -> None:
+def _load_dotenv_key(env_path: Path | None = None) -> None:
     if os.environ.get("OPENAI_API_KEY"):
         return
-    env_path = SERVICE_ROOT / ".env"
-    if not env_path.exists():
-        return
-    for line in env_path.read_text(encoding="utf-8").splitlines():
-        if not line.strip() or line.strip().startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        if key.strip() == "OPENAI_API_KEY" and value.strip():
-            os.environ["OPENAI_API_KEY"] = value.strip().strip('"').strip("'")
-            return
+    candidates = [p for p in [env_path, SERVICE_ROOT / ".env"] if p and p.exists()]
+    for candidate in candidates:
+        for line in candidate.read_text(encoding="utf-8").splitlines():
+            if not line.strip() or line.strip().startswith("#") or "=" not in line:
+                continue
+            key, value = line.split("=", 1)
+            if key.strip() == "OPENAI_API_KEY" and value.strip():
+                os.environ["OPENAI_API_KEY"] = value.strip().strip('"').strip("'")
+                return
 
 
 def run_case(
@@ -437,13 +436,46 @@ def main() -> int:
     parser.add_argument("--ids", default="", help="Comma-separated case ids")
     parser.add_argument("--limit", type=int, default=20)
     parser.add_argument("--model", default="gpt-5-mini")
+    parser.add_argument(
+        "--research-prompt",
+        type=Path,
+        default=None,
+        help="Absolute path to lex-research-v1.txt",
+    )
+    parser.add_argument(
+        "--writer-prompt",
+        type=Path,
+        default=None,
+        help="Absolute path to lex-writer-v1.txt",
+    )
+    parser.add_argument(
+        "--dotenv",
+        type=Path,
+        default=None,
+        help="Path to .env file containing OPENAI_API_KEY",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=8,
+        help="Parallel workers for running cases (default: 8)",
+    )
     args = parser.parse_args()
 
-    _load_dotenv_key()
+    _load_dotenv_key(env_path=args.dotenv)
     api_key = os.environ.get("OPENAI_API_KEY", "").strip()
     if not api_key:
         print("ERROR: OPENAI_API_KEY not set", file=sys.stderr)
         return 2
+
+    research_prompt_path = str(
+        args.research_prompt
+        or SERVICE_ROOT / "runtime-private" / "prompts" / "lex-research-v1.txt"
+    )
+    writer_prompt_path = str(
+        args.writer_prompt
+        or SERVICE_ROOT / "runtime-private" / "prompts" / "lex-writer-v1.txt"
+    )
 
     rows = [
         row
@@ -458,38 +490,50 @@ def main() -> int:
 
     settings = build_settings(
         generation_pipeline="two_pass",
-        research_prompt_path="runtime-private/prompts/lex-research-v1.txt",
-        writer_prompt_path="runtime-private/prompts/lex-writer-v1.txt",
+        research_prompt_path=research_prompt_path,
+        writer_prompt_path=writer_prompt_path,
         research_max_output_tokens=12000,
         writer_max_output_tokens=4000,
         max_writer_history_chars=20_000,
     )
-    llm = RecordingLlmAdapter(
-        OpenAIResponsesAdapter(
-            api_key=api_key,
-            model=args.model,
-            max_output_tokens=12000,
-        )
+    inner_llm = OpenAIResponsesAdapter(
+        api_key=api_key,
+        model=args.model,
+        max_output_tokens=12000,
     )
 
-    print(f"Running {len(rows)} two-pass live cases (model={args.model})...")
-    results: list[CaseResult] = []
-    dumps: list[dict[str, Any]] = []
-    for row in rows:
-        print(f"  -> {row['id']} ...", flush=True)
-        result, dump = run_case(row, llm=llm, settings=settings)
-        results.append(result)
-        dumps.append(dump)
-        status = "PASS" if result.passed else "FAIL"
-        print(
-            f"  [{status}] {result.id} action={result.action} "
-            f"fallback={result.used_fallback} "
-            f"r={result.research_calls}/w={result.writer_calls} "
-            f"({result.latency_s}s)",
-            flush=True,
-        )
-        if result.reasons:
-            print(f"       reasons: {'; '.join(result.reasons)}", flush=True)
+    print(
+        f"Running {len(rows)} two-pass live cases "
+        f"(model={args.model}, workers={args.workers})..."
+    )
+
+    def _run_one(row: dict[str, Any]) -> tuple[CaseResult, dict[str, Any]]:
+        thread_llm = RecordingLlmAdapter(inner_llm)
+        return run_case(row, llm=thread_llm, settings=settings)
+
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    ordered: dict[str, tuple[CaseResult, dict[str, Any]]] = {}
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        futures = {pool.submit(_run_one, row): row["id"] for row in rows}
+        for future in as_completed(futures):
+            case_id = futures[future]
+            result, dump = future.result()
+            ordered[case_id] = (result, dump)
+            status = "PASS" if result.passed else "FAIL"
+            print(
+                f"  [{status}] {result.id} action={result.action} "
+                f"fallback={result.used_fallback} "
+                f"r={result.research_calls}/w={result.writer_calls} "
+                f"({result.latency_s}s)",
+                flush=True,
+            )
+            if result.reasons:
+                print(f"       reasons: {'; '.join(result.reasons)}", flush=True)
+
+    # Restore original scenario order for reports
+    results = [ordered[row["id"]][0] for row in rows if row["id"] in ordered]
+    dumps = [ordered[row["id"]][1] for row in rows if row["id"] in ordered]
 
     json_path, md_path, review_md, review_jsonl = write_outputs(
         results,
