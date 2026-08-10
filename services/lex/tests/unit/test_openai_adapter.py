@@ -71,7 +71,7 @@ def test_openai_adapter_builds_tool_choice_for_forced_search() -> None:
 
     adapter = OpenAIResponsesAdapter(
         api_key="test-key",
-        model="gpt-5-mini",
+        model="gpt-5.6-luna",
         max_output_tokens=2400,
         client=Client(),
     )

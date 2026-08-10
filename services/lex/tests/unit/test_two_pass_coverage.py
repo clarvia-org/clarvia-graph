@@ -34,10 +34,10 @@ from tests.unit.test_two_pass import _brief
 _URLS = frozenset(
     {
         "https://guichet.public.lu",
+        "https://guichet.public.lu/en/citoyens/hospice",
         "https://fpf.lu",
-        "https://www.vdl.lu",
-        "https://example-a.lu",
-        "https://example-b.lu",
+        "https://fpf.lu/members/a",
+        "https://fpf.lu/members/b",
     }
 )
 

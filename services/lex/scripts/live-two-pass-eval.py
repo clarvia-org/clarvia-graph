@@ -435,7 +435,7 @@ def main() -> int:
     parser.add_argument("--basename", default="two-pass-live")
     parser.add_argument("--ids", default="", help="Comma-separated case ids")
     parser.add_argument("--limit", type=int, default=20)
-    parser.add_argument("--model", default="gpt-5-mini")
+    parser.add_argument("--model", default="gpt-5.6-luna")
     parser.add_argument(
         "--research-prompt",
         type=Path,

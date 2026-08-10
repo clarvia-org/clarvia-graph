@@ -464,7 +464,7 @@ def main() -> int:
     parser.add_argument("--basename", default="live-eval")
     parser.add_argument("--ids", default="", help="Comma-separated case ids")
     parser.add_argument("--limit", type=int, default=0, help="Max cases per selected track")
-    parser.add_argument("--model", default="gpt-5-mini")
+    parser.add_argument("--model", default="gpt-5.6-luna")
     parser.add_argument("--max-output-tokens", type=int, default=16000)
     args = parser.parse_args()
 

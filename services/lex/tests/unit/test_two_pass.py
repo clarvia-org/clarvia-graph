@@ -83,7 +83,7 @@ def _brief(**overrides: object) -> LexResearchBrief:
                 name="Haus Omega / Omega 90",
                 kind="support_service",
                 country_code="LU",
-                website="https://www.vdl.lu",
+                website="https://guichet.public.lu/en/citoyens/hospice",
                 phone=None,
                 email=None,
                 commercial=False,
@@ -95,7 +95,7 @@ def _brief(**overrides: object) -> LexResearchBrief:
                 name="Funeral directory example A",
                 kind="funeral_provider",
                 country_code="LU",
-                website="https://example-a.lu",
+                website="https://fpf.lu/members/a",
                 phone=None,
                 email=None,
                 commercial=True,
@@ -107,7 +107,7 @@ def _brief(**overrides: object) -> LexResearchBrief:
                 name="Funeral directory example B",
                 kind="funeral_provider",
                 country_code="LU",
-                website="https://example-b.lu",
+                website="https://fpf.lu/members/b",
                 phone=None,
                 email=None,
                 commercial=True,
@@ -177,7 +177,13 @@ def test_hospice_brief_rejects_police_action() -> None:
         validate_research_brief(
             brief,
             web_search_source_urls=frozenset(
-                {"https://guichet.public.lu", "https://fpf.lu", "https://www.vdl.lu", "https://example-a.lu", "https://example-b.lu"}
+                {
+                    "https://guichet.public.lu",
+                    "https://fpf.lu",
+                    "https://guichet.public.lu/en/citoyens/hospice",
+                    "https://fpf.lu/members/a",
+                    "https://fpf.lu/members/b",
+                }
             ),
             web_search_calls=1,
             conversation_text="mother in haus omega hospice",
@@ -293,9 +299,9 @@ def test_fake_structured_adapter_supports_two_schemas() -> None:
                     {
                         "https://guichet.public.lu",
                         "https://fpf.lu",
-                        "https://www.vdl.lu",
-                        "https://example-a.lu",
-                        "https://example-b.lu",
+                        "https://guichet.public.lu/en/citoyens/hospice",
+                        "https://fpf.lu/members/a",
+                        "https://fpf.lu/members/b",
                     }
                 ),
                 web_search_calls=1,
