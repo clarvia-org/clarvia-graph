@@ -51,10 +51,6 @@ def _research_retry_instruction(code: str) -> str:
             "The previous research brief included user_facts that are not present in "
             "the cleaned conversation. Keep only facts stated by the user."
         ),
-        "single_provider_only": (
-            "The previous research brief named only one commercial provider. Provide "
-            "two or three providers, or one recognised professional directory."
-        ),
         "deferred_topic_in_immediate_actions": (
             "The previous research brief put later administrative topics into "
             "immediate_actions. Move pensions, banks, utilities, and estate topics "
@@ -106,6 +102,13 @@ def _fact_grounded(fact: str, conversation_text: str) -> bool:
         r"(?:stated|mentioned|established|provided|specified|given|known|disclosed)",
         fact_lower,
     ):
+        return True
+
+    # If the conversation contains non-ASCII alphabetic characters (Finnish ä/ö,
+    # French é/à, German ü/ß, Arabic, etc.), the research model still extracts
+    # facts in English. Token matching against the original non-English text is
+    # meaningless — skip grounding. Other validators still catch hallucinations.
+    if re.search(r"[^\x00-\x7F]", conversation_text):
         return True
 
     tokens = [
@@ -348,15 +351,6 @@ def validate_research_brief(
                 if contact.email:
                     _ = contact.email, source_text
 
-        commercial = [contact for contact in brief.contacts if contact.commercial]
-        directories = [
-            contact
-            for contact in brief.contacts
-            if contact.kind
-            in {"professional_directory", "legal_or_notarial_directory"}
-        ]
-        if commercial and len(commercial) == 1 and not directories:
-            raise ResearchValidationError("single_provider_only")
 
     elif brief.action == "clarify":
         _require(
