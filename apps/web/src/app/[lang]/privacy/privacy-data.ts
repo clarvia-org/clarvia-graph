@@ -18,7 +18,7 @@ export type PolicyData = {
 export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
   en: {
     title: "Privacy & Cookie Policy",
-    lastUpdated: "Last updated: 24 July 2026",
+    lastUpdated: "Last updated: 11 August 2026",
     sections: [
       {
         heading: "1. What Clarvia.org collects",
@@ -63,17 +63,14 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
         ]
       },
       {
-        heading: "5. Contact and support requests",
+        heading: "5. Lex, contact and support requests",
         body: [
-          "When you contact us by email or through a form for free bereavement administrative guidance or support, we process the personal data you choose to share. This may include your name, contact details, preferred language, the contents of your message, and any documents or other information you provide.",
-          "We use this information only to understand your request, communicate with you, and provide helpful assistance.",
-          "To help us respond accurately and in the appropriate language, we may use artificial intelligence tools, including large language models, to:",
-          "• translate messages;",
-          "• assist with research and information gathering; and",
-          "• prepare draft reply suggestions for review by a Clarvia volunteer.",
-          "These AI service providers act as processors on Clarvia’s behalf and under Clarvia’s instructions. We use only providers that offer appropriate data-processing agreements. Under our arrangements with them, they are not permitted to use the content you send us to train their general-purpose models.",
-          "AI tools may assist our volunteers, but a Clarvia volunteer remains responsible for the response sent to you.",
-          "Lawful basis: Clarvia’s legitimate interests under Article 6(1)(f) of the GDPR—specifically, providing the free guidance or support you requested and doing so accurately and efficiently.",
+          "When you use Lex, contact us by email, or submit a support form, we process the information needed to respond. This includes your email address, preferred language, message content, email thread history, and the addresses of anyone you include in the conversation.",
+          "Please do not include names or other identifying information about living people in a Lex question. If your loved one is terminally ill, describe their circumstances without identifying them. Although the GDPR generally does not apply to deceased people, information about a death may still identify or concern living people, so please share only what is necessary.",
+          "Lex is Clarvia’s automated end-of-life and bereavement information service. We use artificial intelligence tools, including large language models, to translate messages, research relevant information, and prepare conversational replies with sources and suggested next steps.",
+          "Lex replies may be sent automatically without prior review by a Clarvia volunteer. Authorised Clarvia volunteers may review conversations afterward for safety, quality, or support purposes.",
+          "Our AI and infrastructure providers process information on Clarvia’s behalf and under Clarvia’s instructions. We use providers with appropriate data-processing agreements. Under our arrangements with them, they are not permitted to use message content to train their general-purpose models.",
+          "Lawful basis: Clarvia’s legitimate interests under Article 6(1)(f) of the GDPR, specifically providing the free information or support requested and doing so accurately and efficiently.",
           "Retention: We keep correspondence for as long as reasonably necessary to provide the guidance or support you requested and to maintain continuity, including where a matter remains unresolved or may require follow-up over an extended period. We periodically review requests to determine whether the correspondence is still needed. Once a matter is concluded and related follow-up is no longer reasonably expected, we delete or anonymise the correspondence unless continued retention is required by law or necessary to establish, exercise, or defend legal claims.",
           "Access: Human access is limited to authorised Clarvia volunteers handling your request. Our contracted service providers may process the data only as needed to provide their services to Clarvia and in accordance with our instructions.",
           "Please share only the information needed for us to help you. In particular, avoid sending unnecessary sensitive family, health, financial, identification, or bereavement details."
