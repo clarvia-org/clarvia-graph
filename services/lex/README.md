@@ -2,7 +2,7 @@
 
 [![Lex email CI](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex-email.yml/badge.svg)](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex-email.yml)
 
-Automated bereavement and end-of-life information service for `lex@clarvia.org`. People email a question; Lex replies with an LLM-generated answer plus an application-composed continuation note and approved footer.
+Automated bereavement and end-of-life information service for `lex@clarvia.org`. People email a question; Lex replies with an LLM-generated answer plus an application-composed continuation note and approved footer. Production personal-data handling is described in Clarvia’s [Privacy & Cookie Policy](https://clarvia.org/en/privacy).
 
 > **Monorepo path:** [`services/lex/`](https://github.com/clarvia-org/clarvia-graph/tree/main/services/lex) inside [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph).  
 > **Not this package:** legislation data lives at repo-root [`lex/`](../../lex/).  
