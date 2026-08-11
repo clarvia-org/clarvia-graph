@@ -189,9 +189,8 @@ def test_missing_sign_off_rejected() -> None:
         validate_response_body("No sign off here.")
 
 
-def test_em_dash_rejected() -> None:
-    with pytest.raises(EmailCompositionError):
-        validate_response_body("Body with em dash \u2014 here.\n\nLex.")
+def test_em_dash_allowed() -> None:
+    validate_response_body("Body with em dash \u2014 here.\n\nLex.")
 
 
 def test_forbidden_footer_fragment_in_body_rejected() -> None:

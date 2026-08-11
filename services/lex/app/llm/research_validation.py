@@ -9,7 +9,11 @@ from urllib.parse import urlparse
 
 from app.llm.research_schema import LexResearchBrief
 from app.llm.scenario_validation import validate_no_unsupported_scenarios
-from app.llm.url_normalize import normalize_source_url, normalize_source_url_set
+from app.llm.url_normalize import (
+    is_http_or_https_url,
+    match_search_url,
+    same_site_host,
+)
 
 _LOG = logging.getLogger(__name__)
 
@@ -21,31 +25,12 @@ _DEFERRED_TOPIC_RE = re.compile(
     r")\b"
 )
 
-# Host match (same search host, different language/path) is allowed only here.
-# Do not accept an unrelated page merely because it shares an arbitrary domain.
-_TRUSTED_HOST_SUFFIXES: tuple[str, ...] = (
-    ".public.lu",
-    ".etat.lu",
-    ".europa.eu",
-    ".gouv.fr",
-    ".service-public.fr",
-    ".belgium.be",
-    ".fgov.be",
-    ".bund.de",
-    ".gov.uk",
-    ".gov",
-)
-_TRUSTED_HOSTS_EXACT: frozenset[str] = frozenset(
-    {
-        "guichet.public.lu",
-        "legilux.public.lu",
-        "ccss.lu",
-        "cnap.lu",
-        "cns.lu",
-        "adell.lu",
-        "guichet.etat.lu",
-    }
-)
+_MISSING_FIELD_JURISDICTION_ROLE: dict[str, str] = {
+    "death_country": "death_location",
+    "residence_country": "habitual_residence",
+    "care_country": "care_location",
+    "asset_country": "asset_location",
+}
 
 _FACT_STOPWORDS: frozenset[str] = frozenset(
     {
@@ -171,8 +156,6 @@ _MATERIAL_CLAIM_TOKENS: frozenset[str] = frozenset(
 )
 _SAFE_NON_ENGLISH_PARAPHRASE: frozenset[str] = _FACT_STOPWORDS | frozenset(
     {
-        "luxembourg",
-        "luxembourgish",
         "commune",
         "certificate",
         "medical",
@@ -210,8 +193,8 @@ def _research_retry_instruction(code: str) -> str:
         ),
         "unsupported_contact_website": (
             "The previous research brief used a contact website that is not related "
-            "to its cited source. Use the organisation homepage matching the source "
-            "host, or a trusted institutional host."
+            "to its cited source or web-search results. Use a same-site organisation "
+            "URL from the search evidence."
         ),
         "unsupported_phone_or_email": (
             "The previous research brief included a phone number or email that is not "
@@ -257,23 +240,77 @@ def _hostname(url: str) -> str:
     return (host or "").lower().rstrip(".")
 
 
-def _is_trusted_institutional_host(hostname: str | None) -> bool:
-    if not hostname:
-        return False
-    host = hostname.lower().rstrip(".")
-    if host in _TRUSTED_HOSTS_EXACT:
-        return True
-    return any(
-        host == suffix[1:] or host.endswith(suffix) for suffix in _TRUSTED_HOST_SUFFIXES
-    )
+def _resolve_contact_website(
+    website: str,
+    *,
+    source_url: str | None,
+    search_urls: Collection[str] | None,
+) -> str | None:
+    """Return a search-grounded http(s) website to emit, or None."""
+    if not is_http_or_https_url(website):
+        return None
+    web_host = _hostname(website)
+    if not web_host:
+        return None
+
+    candidates: list[str] = []
+    if search_urls:
+        matched = match_search_url(website, search_urls)
+        if matched:
+            return matched
+        candidates.extend(
+            url for url in search_urls if same_site_host(_hostname(url), web_host)
+        )
+    if source_url and same_site_host(_hostname(source_url), web_host):
+        if search_urls:
+            source_match = match_search_url(source_url, search_urls)
+            if source_match:
+                candidates.append(source_match)
+        candidates.append(source_url)
+    if not candidates:
+        return None
+    # Prefer https search URLs when available.
+    https = [url for url in candidates if url.lower().startswith("https://")]
+    return https[0] if https else candidates[0]
 
 
-def _same_site_host(left: str, right: str) -> bool:
-    a = left.lower().rstrip(".")
-    b = right.lower().rstrip(".")
-    if not a or not b:
-        return False
-    return a == b or a.endswith("." + b) or b.endswith("." + a)
+def _canonicalise_brief_urls(
+    brief: LexResearchBrief,
+    *,
+    web_search_source_urls: Collection[str] | None,
+) -> None:
+    """Rewrite source/contact URLs to matched search URLs when evidence exists."""
+    if web_search_source_urls is None:
+        return
+    search_list = list(web_search_source_urls)
+    new_sources = []
+    for source in brief.sources:
+        matched = match_search_url(source.url, search_list)
+        if matched is None:
+            raise ResearchValidationError(
+                "unsupported_source_url",
+                "Source URL was not returned by web search.",
+            )
+        new_sources.append(source.model_copy(update={"url": matched}))
+    brief.sources = new_sources
+
+    sources_by_id = {source.id: source for source in brief.sources}
+    new_contacts = []
+    for contact in brief.contacts:
+        source = sources_by_id.get(contact.source_id)
+        source_url = source.url if source is not None else None
+        resolved = _resolve_contact_website(
+            contact.website,
+            source_url=source_url,
+            search_urls=search_list,
+        )
+        if resolved is None:
+            raise ResearchValidationError(
+                "unsupported_contact_website",
+                "Contact website is not related to its cited source.",
+            )
+        new_contacts.append(contact.model_copy(update={"website": resolved}))
+    brief.contacts = new_contacts
 
 
 def _renumber_brief_ids(brief: LexResearchBrief) -> None:
@@ -367,22 +404,6 @@ def _fact_grounded(fact: str, conversation_text: str) -> bool:
     return False
 
 
-def _contact_website_allowed(website: str, *, source_url: str | None) -> bool:
-    """Soft guard: HTTPS host must be trusted or same-site as the cited source."""
-    if not website.lower().startswith("https://"):
-        return False
-    web_host = _hostname(website)
-    if not web_host:
-        return False
-    if _is_trusted_institutional_host(web_host):
-        return True
-    if source_url:
-        source_host = _hostname(source_url)
-        if source_host and _same_site_host(web_host, source_host):
-            return True
-    return False
-
-
 def validate_research_brief(
     brief: LexResearchBrief,
     *,
@@ -445,8 +466,6 @@ def validate_research_brief(
         if action.action.casefold() in completed_folded:
             raise ResearchValidationError("completed_action_repeated")
 
-    conversation_folded = conversation_text.casefold()
-    facts_folded = "\n".join(brief.user_facts).casefold()
     # Grounding needs enough conversation context to be meaningful.
     if len(conversation_text.strip()) >= 30:
         for fact in brief.user_facts:
@@ -454,16 +473,12 @@ def validate_research_brief(
                 raise ResearchValidationError("user_fact_not_grounded")
 
     for field in brief.missing_fields:
-        if field == "death_country" and (
-            "luxembourg" in facts_folded
-            or "belgium" in facts_folded
-            or "luxembourg" in conversation_folded
-            or "belgium" in conversation_folded
+        role = _MISSING_FIELD_JURISDICTION_ROLE.get(field)
+        if role and any(
+            jurisdiction.role == role and jurisdiction.country_code != "ZZ"
+            for jurisdiction in brief.jurisdictions
         ):
             raise ResearchValidationError("missing_field_already_known")
-        # residence_country is intentionally NOT checked here — the model
-        # correctly distinguishes death location from residence. A user who
-        # says "died in Luxembourg" may live in France or Germany.
 
     if brief.action == "answer":
         _require(
@@ -515,32 +530,9 @@ def validate_research_brief(
                     "Focused follow-up actions must address current_question.",
                 )
 
-        if web_search_source_urls is not None:
-            allowed = normalize_source_url_set(frozenset(web_search_source_urls))
-            allowed_hosts = frozenset(
-                host for url in web_search_source_urls if (host := _hostname(url))
-            )
-            for source in brief.sources:
-                exact_match = normalize_source_url(source.url) in allowed
-                source_host = _hostname(source.url)
-                host_match = source_host in allowed_hosts and _is_trusted_institutional_host(
-                    source_host
-                )
-                _require(
-                    exact_match or host_match,
-                    "unsupported_source_url",
-                    "Source URL was not returned by web search.",
-                )
-            for contact in brief.contacts:
-                # Contact websites are often org homepages, not search hits.
-                # Soft guard: trusted institutional host or same-site as cited source.
-                source = sources_by_id.get(contact.source_id)
-                source_url = source.url if source is not None else None
-                _require(
-                    _contact_website_allowed(contact.website, source_url=source_url),
-                    "unsupported_contact_website",
-                    "Contact website is not related to its cited source.",
-                )
+        _canonicalise_brief_urls(
+            brief, web_search_source_urls=web_search_source_urls
+        )
 
     elif brief.action == "clarify":
         _require(

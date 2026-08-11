@@ -90,9 +90,6 @@ def validate_response_body(body_markdown: str) -> str:
             "Response body must end with 'Lex.' on its own line."
         )
 
-    if "\u2014" in body:
-        raise EmailCompositionError("Response body contains an em dash.")
-
     for fragment in _FORBIDDEN_BODY_FRAGMENTS:
         if fragment.casefold() in body.casefold():
             raise EmailCompositionError(

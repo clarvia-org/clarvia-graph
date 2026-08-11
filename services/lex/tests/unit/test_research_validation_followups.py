@@ -1,14 +1,18 @@
-"""Unit tests for research-validation follow-ups (trusted hosts, grounding, IDs)."""
+"""Unit tests for research-validation follow-ups (search grounding, IDs)."""
 
 from __future__ import annotations
 
 import pytest
-from app.llm.research_schema import ResearchContact, ResearchSource
+from app.llm.research_schema import (
+    ResearchContact,
+    ResearchJurisdiction,
+    ResearchSource,
+)
 from app.llm.research_validation import ResearchValidationError, validate_research_brief
 from tests.unit.test_two_pass import _brief
 
 
-def test_trusted_host_allows_language_path_variant() -> None:
+def test_same_site_language_path_variant_emits_search_url() -> None:
     brief = _brief(
         sources=[
             ResearchSource(
@@ -63,23 +67,103 @@ def test_trusted_host_allows_language_path_variant() -> None:
             ),
         ],
     )
+    search_en = "https://guichet.public.lu/en/citoyens/famille/deces.html"
     validate_research_brief(
         brief,
-        web_search_source_urls=frozenset(
-            {
-                "https://guichet.public.lu/en/citoyens/famille/deces.html",
-                "https://fpf.lu",
-            }
-        ),
+        web_search_source_urls=frozenset({search_en, "https://fpf.lu"}),
         web_search_calls=1,
         conversation_text=(
             "My mother is in Haus Omega hospice in Luxembourg with only a few days "
             "remaining. What should we prepare after she dies?"
         ),
     )
+    assert brief.sources[0].url == search_en
+    assert brief.contacts[0].website == search_en
+    assert brief.contacts[1].website == "https://fpf.lu"
+    assert brief.contacts[2].website == "https://fpf.lu"
 
 
-def test_untrusted_host_match_rejected() -> None:
+def test_http_and_non_lu_host_grounded_in_search() -> None:
+    search_http = "http://www.moh.gov.zw/palliative-care"
+    brief = _brief(
+        jurisdictions=[
+            ResearchJurisdiction(
+                country_code="ZW", subdivision=None, role="care_location"
+            )
+        ],
+        user_facts=[
+            "Mother is in palliative care in Harare, Zimbabwe",
+            "Only a few days of expected life remaining",
+        ],
+        sources=[
+            ResearchSource(
+                id=1,
+                title="Palliative care guidance",
+                publisher="Ministry of Health",
+                url="https://www.moh.gov.zw/palliative-care",
+            ),
+            ResearchSource(
+                id=2,
+                title="Funeral guidance",
+                publisher="City of Harare",
+                url="http://www.hararecity.co.zw/funerals",
+            ),
+        ],
+        contacts=[
+            ResearchContact(
+                id=1,
+                name="Ministry of Health",
+                kind="support_service",
+                country_code="ZW",
+                website="http://www.moh.gov.zw",
+                phone=None,
+                email=None,
+                commercial=False,
+                note="National guidance",
+                source_id=1,
+            ),
+            ResearchContact(
+                id=2,
+                name="City funeral desk A",
+                kind="funeral_provider",
+                country_code="ZW",
+                website="http://www.hararecity.co.zw/funerals",
+                phone=None,
+                email=None,
+                commercial=False,
+                note="Local orientation",
+                source_id=2,
+            ),
+            ResearchContact(
+                id=3,
+                name="City funeral desk B",
+                kind="funeral_provider",
+                country_code="ZW",
+                website="http://www.hararecity.co.zw/funerals",
+                phone=None,
+                email=None,
+                commercial=False,
+                note="Local orientation",
+                source_id=2,
+            ),
+        ],
+    )
+    validate_research_brief(
+        brief,
+        web_search_source_urls=frozenset(
+            {search_http, "http://www.hararecity.co.zw/funerals"}
+        ),
+        web_search_calls=1,
+        conversation_text=(
+            "My mother is in palliative care in Harare, Zimbabwe with only a few days "
+            "remaining. What should we prepare after she dies?"
+        ),
+    )
+    assert brief.sources[0].url == search_http
+    assert brief.contacts[0].website == search_http
+
+
+def test_ungrounded_host_rejected() -> None:
     brief = _brief(
         sources=[
             ResearchSource(
@@ -100,7 +184,7 @@ def test_untrusted_host_match_rejected() -> None:
         validate_research_brief(
             brief,
             web_search_source_urls=frozenset(
-                {"https://medium.com/other-post", "https://fpf.lu"}
+                {"https://example.org/other-post", "https://fpf.lu"}
             ),
             web_search_calls=1,
             conversation_text=(

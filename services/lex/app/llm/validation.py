@@ -11,7 +11,7 @@ import re
 from collections.abc import Collection
 
 from app.llm.schema import LexResponse
-from app.llm.url_normalize import normalize_source_url, normalize_source_url_set
+from app.llm.url_normalize import match_search_url
 
 _SIGN_OFF_RE = re.compile(r"(?:^|\n)Lex\.\s*$")
 _CITATION_RE = re.compile(r"\[(\d+)\]")
@@ -106,7 +106,6 @@ def _validate_body_text(body: str) -> None:
         "missing_sign_off",
         "body_markdown must end with 'Lex.' on its own line.",
     )
-    _require("\u2014" not in body, "em_dash", "body_markdown contains an em dash.")
     _require(
         _CODE_FENCE_RE.search(body) is None,
         "code_fence",
@@ -211,19 +210,25 @@ def _validate_search_evidence(
         "An answer requires a completed web_search_call.",
     )
 
-    normalised = normalize_source_url_set(frozenset(web_search_source_urls))
+    search_list = list(web_search_source_urls)
     for source in response.sources:
+        matched = match_search_url(source.url, search_list)
         _require(
-            normalize_source_url(source.url) in normalised,
+            matched is not None,
             "unsupported_source_url",
             "A source URL was not returned by web search.",
         )
+        if matched is not None and matched != source.url:
+            source.url = matched
     for contact in response.contacts:
+        matched = match_search_url(contact.website, search_list)
         _require(
-            normalize_source_url(contact.website) in normalised,
+            matched is not None,
             "unsupported_contact_website",
             "A contact website was not returned by web search.",
         )
+        if matched is not None and matched != contact.website:
+            contact.website = matched
 
 
 def _validate_action_rules(response: LexResponse) -> None:

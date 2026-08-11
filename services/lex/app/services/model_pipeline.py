@@ -7,7 +7,7 @@ from dataclasses import dataclass
 
 from app.domain.ports import LlmGenerationResult, LlmPort
 from app.llm.schema import LexContact, LexResponse, LexSource
-from app.llm.url_normalize import normalize_source_url, normalize_source_url_set
+from app.llm.url_normalize import match_search_url
 from app.llm.validation import LexValidationError, validate_lex_response
 
 _CITATION_RE = re.compile(r"\[(\d+)\]")
@@ -75,18 +75,6 @@ def run_model_pipeline(
         )
         return first
     except LexValidationError as first_error:
-        # If normalize left a forbidden dash, strip again hard before retrying.
-        if first_error.code == "em_dash":
-            first = _force_strip_em_dash(first)
-            try:
-                validate_lex_response(
-                    first.response,
-                    web_search_source_urls=first.web_search_source_urls,
-                    web_search_calls=first.web_search_calls,
-                )
-                return first
-            except LexValidationError:
-                pass
         force_search = _should_force_search_on_retry(first_error, first)
         second = llm.generate(
             system_prompt=system_prompt,
@@ -94,7 +82,6 @@ def run_model_pipeline(
             force_web_search=force_search,
         )
         second = _normalize_model_response(second)
-        second = _force_strip_em_dash(second)
         try:
             validate_lex_response(
                 second.response,
@@ -106,45 +93,6 @@ def run_model_pipeline(
             raise ModelPipelineFailure(
                 second_error.code, attempt_count=2
             ) from second_error
-
-
-def _force_strip_em_dash(result: LlmGenerationResult) -> LlmGenerationResult:
-    """Last-resort removal of U+2014 from body and contact notes."""
-    response = result.response
-    body = response.body_markdown.replace("\u2014", " - ")
-    contacts = [
-        contact.model_copy(
-            update={"note": contact.note.replace("\u2014", " - ")}
-        )
-        for contact in response.contacts
-    ]
-    sources = [
-        source.model_copy(
-            update={
-                "title": source.title.replace("\u2014", " - "),
-                "publisher": source.publisher.replace("\u2014", " - "),
-            }
-        )
-        for source in response.sources
-    ]
-    if (
-        body == response.body_markdown
-        and contacts == list(response.contacts)
-        and sources == list(response.sources)
-    ):
-        return result
-    return LlmGenerationResult(
-        response=response.model_copy(
-            update={
-                "body_markdown": body,
-                "contacts": contacts,
-                "sources": sources,
-            }
-        ),
-        openai_response_id=result.openai_response_id,
-        web_search_source_urls=result.web_search_source_urls,
-        web_search_calls=result.web_search_calls,
-    )
 
 
 def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResult:
@@ -171,9 +119,11 @@ def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResul
     ]
 
     if response.action == "answer" and result.web_search_source_urls:
-        allowed = normalize_source_url_set(result.web_search_source_urls)
         body, sources, contacts = _repair_search_evidence(
-            body, sources, contacts, allowed
+            body,
+            sources,
+            contacts,
+            search_urls=list(result.web_search_source_urls),
         )
 
     body_folded = body.casefold()
@@ -215,16 +165,19 @@ def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResul
 
 
 def _normalize_dashes(text: str) -> str:
-    """Replace dash-like Unicode so validation never sees U+2014."""
+    """Normalise awkward hyphen variants; leave em dashes in place."""
     import unicodedata
 
     pieces: list[str] = []
     for char in text:
-        if char in {"-", "_"}:
+        if char in {"-", "_", "\u2014"}:
             pieces.append(char)
             continue
         category = unicodedata.category(char)
         name = unicodedata.name(char, "")
+        if "EM DASH" in name:
+            pieces.append(char)
+            continue
         is_dash_like = (
             category == "Pd"
             or char in _DASH_CHARS
@@ -234,31 +187,32 @@ def _normalize_dashes(text: str) -> str:
             or name == "MINUS SIGN"
         )
         if is_dash_like:
-            if ord(char) >= 0x2014 or "EM DASH" in name or "HORIZONTAL BAR" in name:
+            if "HORIZONTAL BAR" in name or ord(char) >= 0x2015:
                 pieces.append(" - ")
             else:
                 pieces.append("-")
         else:
             pieces.append(char)
-    # Final hard strip of the forbidden code point.
-    return "".join(pieces).replace("\u2014", " - ")
+    return "".join(pieces)
 
 
 def _repair_search_evidence(
     body: str,
     sources: list[LexSource],
     contacts: list[LexContact],
-    allowed: frozenset[str],
+    *,
+    search_urls: list[str],
 ) -> tuple[str, list[LexSource], list[LexContact]]:
-    """Drop/remap sources and contacts that cite URLs outside the search set."""
+    """Rewrite or drop sources/contacts using search-grounded URLs."""
     kept_sources: list[LexSource] = []
     old_to_new: dict[int, int] = {}
     for source in sources:
-        if normalize_source_url(source.url) not in allowed:
+        matched = match_search_url(source.url, search_urls)
+        if matched is None:
             continue
         new_id = len(kept_sources) + 1
         old_to_new[source.id] = new_id
-        kept_sources.append(source.model_copy(update={"id": new_id}))
+        kept_sources.append(source.model_copy(update={"id": new_id, "url": matched}))
 
     # Remap citation markers; drop markers whose sources were removed.
     def _rewrite_marker(match: re.Match[str]) -> str:
@@ -276,17 +230,17 @@ def _repair_search_evidence(
         new_source_id = old_to_new.get(contact.source_id)
         if new_source_id is None:
             continue
-        website = contact.website
-        if normalize_source_url(website) not in allowed:
+        website = match_search_url(contact.website, search_urls)
+        if website is None:
             website = source_by_new[new_source_id].url
-        if normalize_source_url(website) not in allowed:
+        if match_search_url(website, search_urls) is None:
             continue
         kept_contacts.append(
             contact.model_copy(
                 update={
                     "id": len(kept_contacts) + 1,
                     "source_id": new_source_id,
-                    "website": website,
+                    "website": match_search_url(website, search_urls) or website,
                 }
             )
         )

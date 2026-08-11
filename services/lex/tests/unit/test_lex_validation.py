@@ -54,11 +54,13 @@ def test_missing_sign_off() -> None:
     _assert_code(exc, "missing_sign_off")
 
 
-def test_em_dash_rejected() -> None:
-    resp = make_answer_response(body_markdown="Text \u2014 more [1].\n\nLex.")
-    with pytest.raises(LexValidationError) as exc:
-        validate_lex_response(resp)
-    _assert_code(exc, "em_dash")
+def test_em_dash_allowed() -> None:
+    resp = make_answer_response(
+        body_markdown=(
+            "Text \u2014 more. Contact the Commune office [1].\n\nLex."
+        )
+    )
+    validate_lex_response(resp)
 
 
 def test_code_fence_rejected() -> None:
