@@ -276,6 +276,20 @@ def test_genuine_immediate_risk_allowed() -> None:
     )
 
 
+def test_conversation_accident_supports_exceptional_without_user_facts() -> None:
+    assert (
+        validate_no_unsupported_scenarios(
+            text="Contact the police station handling the accident for the file number.",
+            safety_status="ordinary",
+            user_facts=["Children are currently in Luxembourg"],
+            conversation_text=(
+                "They had a car accident in Germany last night and the husband died."
+            ),
+        )
+        is None
+    )
+
+
 def test_fake_structured_adapter_supports_two_schemas() -> None:
     brief = _brief()
     written = LexWrittenResponse(

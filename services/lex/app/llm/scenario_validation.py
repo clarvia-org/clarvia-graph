@@ -101,14 +101,28 @@ def facts_support_exceptional_scenario(user_facts: Sequence[str]) -> bool:
     return bool(exceptional_scenario_hits(joined))
 
 
+def conversation_supports_exceptional_scenario(conversation_text: str) -> bool:
+    """True when the cleaned conversation already establishes an exceptional scenario."""
+    return bool(exceptional_scenario_hits(conversation_text or ""))
+
+
 def validate_no_unsupported_scenarios(
     *,
     text: str,
     safety_status: str,
     user_facts: Sequence[str],
+    conversation_text: str = "",
 ) -> str | None:
-    """Return an error code when exceptional scenarios are invented."""
+    """Return an error code when exceptional scenarios are invented.
+
+    Support is ``conversation ∪ user_facts`` (plus ``immediate_risk``). Conversation
+    is always consulted so repaired/dropped facts cannot erase user-stated accidents.
+    This is anti-hallucination for ordinary bereavement — not a second content-safety
+    stack on top of the LLM provider guardrails.
+    """
     if safety_status == "immediate_risk":
+        return None
+    if conversation_supports_exceptional_scenario(conversation_text):
         return None
     if facts_support_exceptional_scenario(user_facts):
         return None
@@ -121,5 +135,6 @@ def validate_no_unsupported_scenarios(
 __all__ = [
     "exceptional_scenario_hits",
     "facts_support_exceptional_scenario",
+    "conversation_supports_exceptional_scenario",
     "validate_no_unsupported_scenarios",
 ]
