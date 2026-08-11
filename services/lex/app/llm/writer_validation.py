@@ -268,10 +268,6 @@ def validate_written_response(
         if any(
             token in lowered
             for token in (
-                "luxembourg",
-                "belgium",
-                "france",
-                "germany",
                 "monday",
                 "tuesday",
                 "wednesday",
@@ -297,9 +293,11 @@ def validate_written_response(
         ).casefold():
             if "certificate" in body_folded and "commune" in body_folded and "burial" in body_folded:
                 raise WriterValidationError("focused_follow_up_dump")
-        facts_blob = "\n".join(brief.user_facts).casefold()
         if re.search(r"(?i)\b(which country|what country|where (?:did|does)|do you live)\b", body):
-            if "luxembourg" in facts_blob or "belgium" in facts_blob:
+            if any(
+                jurisdiction.country_code != "ZZ"
+                for jurisdiction in brief.jurisdictions
+            ):
                 raise WriterValidationError("asks_known_user_fact")
         _ = latest_user_message
 

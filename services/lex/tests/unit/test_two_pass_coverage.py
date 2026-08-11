@@ -19,7 +19,7 @@ from app.domain.ports import StructuredLlmResult
 from app.infrastructure.openai import FakeLlmAdapter
 from app.llm.clarify_decline import render_clarification_body
 from app.llm.deterministic_renderer import render_research_brief_fallback
-from app.llm.research_schema import ResearchImmediateAction
+from app.llm.research_schema import ResearchImmediateAction, ResearchJurisdiction
 from app.llm.research_validation import ResearchValidationError, validate_research_brief
 from app.llm.writer_schema import LexWrittenResponse
 from app.llm.writer_validation import WriterValidationError, validate_written_response
@@ -473,7 +473,16 @@ def test_research_focused_follow_up_and_missing_field_conflicts() -> None:
 
     with pytest.raises(ResearchValidationError) as exc:
         validate_research_brief(
-            _brief(missing_fields=["death_country"]),
+            _brief(
+                missing_fields=["death_country"],
+                jurisdictions=[
+                    ResearchJurisdiction(
+                        country_code="LU",
+                        subdivision="Luxembourg",
+                        role="death_location",
+                    )
+                ],
+            ),
             web_search_source_urls=_URLS,
             web_search_calls=1,
             conversation_text="Death was in Luxembourg at the hospice.",

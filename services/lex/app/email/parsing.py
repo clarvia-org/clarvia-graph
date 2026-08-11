@@ -23,12 +23,10 @@ _TRUNCATION_MARKER = "[Earlier thread messages omitted due to length.]"
 
 _RELEVANCE_RE = re.compile(
     r"(?i)\b("
-    r"luxembourg|belgium|france|germany|netherlands|portugal|spain|italy|"
-    r"lu\b|be\b|fr\b|de\b|"
     r"mother|father|spouse|husband|wife|partner|son|daughter|parent|brother|"
     r"sister|family|relative|"
     r"died|death|dying|deceased|hospice|palliative|funeral|burial|cremation|"
-    r"repatriation|certificate|declaration|commune|guichet|notary|"
+    r"repatriation|certificate|declaration|commune|notary|"
     r"nationality|citizen|passport|residence|resident|"
     r"bank|pension|estate|inheritance|will|asset|property|"
     r"already|completed|done|obtained|contacted|arranged"

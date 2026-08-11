@@ -33,7 +33,7 @@ def test_extract_urls_from_nested_web_search_payload() -> None:
     }
     urls = extract_web_search_source_urls(payload)
     assert "https://guichet.public.lu/guide" in urls
-    assert "https://example.lu/page" in urls
+    assert "http://example.lu/page" in urls
     assert count_web_search_calls(payload) == 1
 
 

@@ -37,7 +37,7 @@ MissingField = Literal[
 ]
 
 CountryCode = Annotated[str, Field(pattern=r"^([A-Z]{2}|ZZ)$")]
-HttpsUrl = Annotated[str, Field(min_length=9, max_length=2000, pattern=r"^https://")]
+HttpsUrl = Annotated[str, Field(min_length=9, max_length=2000, pattern=r"^https?://")]
 
 JurisdictionRole = Literal[
     "death_location",
@@ -381,7 +381,7 @@ LEX_RESEARCH_BRIEF_JSON_SCHEMA: dict[str, Any] = {
                         "type": "string",
                         "minLength": 9,
                         "maxLength": 2000,
-                        "pattern": "^https://",
+                        "pattern": "^https?://",
                     },
                     "phone": {
                         "anyOf": [
@@ -424,7 +424,7 @@ LEX_RESEARCH_BRIEF_JSON_SCHEMA: dict[str, Any] = {
                         "type": "string",
                         "minLength": 9,
                         "maxLength": 2000,
-                        "pattern": "^https://",
+                        "pattern": "^https?://",
                     },
                 },
             },

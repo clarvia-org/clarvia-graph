@@ -46,7 +46,30 @@ def test_body_markdown_length_bounds() -> None:
         make_answer_response(body_markdown="x" * 18_001)
 
 
-def test_source_url_must_be_https() -> None:
+def test_source_url_allows_http() -> None:
+    response = LexResponse.model_validate(
+        {
+            "response_version": "lex_response_v1",
+            "action": "answer",
+            "language": "en",
+            "jurisdictions": [],
+            "body_markdown": "Body [1].\n\nLex.",
+            "contacts": [],
+            "sources": [
+                {
+                    "id": 1,
+                    "title": "t",
+                    "publisher": "p",
+                    "url": "http://insecure.example",
+                }
+            ],
+            "research_status": "adequate",
+        }
+    )
+    assert response.sources[0].url.startswith("http://")
+
+
+def test_source_url_rejects_non_web_scheme() -> None:
     with pytest.raises(ValidationError):
         LexResponse.model_validate(
             {
@@ -61,7 +84,7 @@ def test_source_url_must_be_https() -> None:
                         "id": 1,
                         "title": "t",
                         "publisher": "p",
-                        "url": "http://insecure.example",
+                        "url": "javascript:alert(1)",
                     }
                 ],
                 "research_status": "adequate",
