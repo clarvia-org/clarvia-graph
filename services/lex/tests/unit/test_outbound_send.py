@@ -12,7 +12,7 @@ import pytest
 from app.domain.errors import GmailSendUncertainError
 from app.domain.ids import outbound_message_id, request_id_for_message
 from app.domain.models import ParsedMessage, ReplyRecipients
-from app.email.templates import CONTINUATION_TEXT
+from app.email.templates import THREAD_LAST_REPLY_NOTE
 from app.email.threading import reply_subject
 from app.infrastructure.memory import InMemoryGmail
 from app.llm.source_render import insert_sources_before_signoff
@@ -124,7 +124,7 @@ def test_no_bcc_header() -> None:
     assert all(name.lower() != "bcc" for name in message.keys())  # noqa: SIM118
 
 
-def test_multipart_alternative_with_continuation_and_footer_once() -> None:
+def test_multipart_alternative_with_footer_once() -> None:
     gmail = InMemoryGmail()
     send_lex_reply(
         gmail=gmail,
@@ -136,10 +136,32 @@ def test_multipart_alternative_with_continuation_and_footer_once() -> None:
     message = _load_message(gmail)
     assert message.get_content_type() == "multipart/alternative"
     plain, html = _alternatives(message)
-    assert plain.count(CONTINUATION_TEXT) == 1
+    assert "We're happy to help with anything else." not in plain
     assert plain.count("Clarvia is a nonprofit.") == 1
-    assert html.count("We're happy to help with anything else.") == 1
     assert html.count("Clarvia is a nonprofit.") == 1
+    assert "five replies in the same email thread" in plain
+
+
+def test_stand_alone_rate_limit_send_has_no_thread() -> None:
+    gmail = InMemoryGmail()
+    from app.email.templates import RATE_LIMIT_BODY, RATE_LIMIT_SUBJECT
+
+    send_lex_reply(
+        gmail=gmail,
+        settings=build_settings(),
+        parsed=_parsed(),
+        recipients=_recipients(),
+        response_body_markdown=RATE_LIMIT_BODY,
+        stand_alone=True,
+        subject_override=RATE_LIMIT_SUBJECT,
+    )
+    raw, thread_id = gmail.sent_messages[-1]
+    assert thread_id == ""
+    message = _load_message(gmail)
+    assert message["Subject"] == RATE_LIMIT_SUBJECT
+    assert message.get("In-Reply-To") is None
+    assert message.get("X-Lex-Stand-Alone") == "1"
+    _ = THREAD_LAST_REPLY_NOTE
 
 
 def test_timeout_recovery_does_not_duplicate() -> None:

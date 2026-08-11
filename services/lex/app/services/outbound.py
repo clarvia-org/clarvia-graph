@@ -1,8 +1,8 @@
 """Unified outbound Lex reply send path (Phase 5).
 
 Every production reply — model answers and template gate replies — flows through
-:func:`send_lex_reply` so threading, MIME composition, and send idempotency are
-applied consistently.
+:func:`send_lex_reply` so MIME composition and send idempotency are applied
+consistently. Stand-alone sends (daily limit) omit Gmail thread joining.
 """
 
 from __future__ import annotations
@@ -40,6 +40,8 @@ def _find_existing_outbound(
     outbound_id: str,
     request_id: str,
 ) -> str | None:
+    if not thread_id:
+        return None
     return gmail.find_outbound_in_thread(
         thread_id=thread_id,
         outbound_message_id=outbound_id,
@@ -57,61 +59,79 @@ def send_lex_reply(
     sources: Sequence[LexSource] | None = None,
     prompt_version: str | None = None,
     pipeline_version: str | None = None,
+    after_body_note: str | None = None,
+    thread_quote_plain: str | None = None,
+    thread_quote_html: str | None = None,
+    stand_alone: bool = False,
+    subject_override: str | None = None,
 ) -> SendResult:
-    """Compose, thread, and send a Lex reply with send idempotency."""
+    """Compose and send a Lex reply (threaded) or stand-alone notice."""
     message_key = parsed.message_id
     outbound_id = outbound_message_id(message_key)
     request_id = request_id_for_message(message_key)
+    thread_id = "" if stand_alone else parsed.thread_id
 
-    existing = _find_existing_outbound(
-        gmail,
-        thread_id=parsed.thread_id,
-        outbound_id=outbound_id,
-        request_id=request_id,
-    )
-    if existing is not None:
-        return SendResult(
-            sent_gmail_message_id=existing,
-            outbound_message_id=outbound_id,
+    if not stand_alone:
+        existing = _find_existing_outbound(
+            gmail,
+            thread_id=thread_id,
+            outbound_id=outbound_id,
             request_id=request_id,
-            already_sent=True,
         )
+        if existing is not None:
+            return SendResult(
+                sent_gmail_message_id=existing,
+                outbound_message_id=outbound_id,
+                request_id=request_id,
+                already_sent=True,
+            )
 
+    subject = subject_override if subject_override else reply_subject(parsed.subject)
     composed = compose_lex_email(
         response_body_markdown=response_body_markdown,
         to_addresses=recipients.to_addresses,
-        cc_addresses=recipients.cc_addresses,
-        subject=reply_subject(parsed.subject),
+        cc_addresses=() if stand_alone else recipients.cc_addresses,
+        subject=subject,
         outbound_message_id=outbound_id,
-        in_reply_to=in_reply_to_header(parsed),
-        references=build_references(parsed),
+        in_reply_to="" if stand_alone else in_reply_to_header(parsed),
+        references=() if stand_alone else build_references(parsed),
         request_id=request_id,
         prompt_version=prompt_version or settings.prompt_version,
         pipeline_version=pipeline_version,
         sources=sources,
+        after_body_note=after_body_note,
+        thread_quote_plain=thread_quote_plain,
+        thread_quote_html=thread_quote_html,
+        stand_alone=stand_alone,
     )
     raw = encode_for_gmail_api(composed)
 
-    existing = _find_existing_outbound(
-        gmail,
-        thread_id=parsed.thread_id,
-        outbound_id=outbound_id,
-        request_id=request_id,
-    )
-    if existing is not None:
-        return SendResult(
-            sent_gmail_message_id=existing,
-            outbound_message_id=outbound_id,
+    if not stand_alone:
+        existing = _find_existing_outbound(
+            gmail,
+            thread_id=thread_id,
+            outbound_id=outbound_id,
             request_id=request_id,
-            already_sent=True,
         )
+        if existing is not None:
+            return SendResult(
+                sent_gmail_message_id=existing,
+                outbound_message_id=outbound_id,
+                request_id=request_id,
+                already_sent=True,
+            )
 
     try:
-        sent_id = gmail.send_reply(raw_message=raw, thread_id=parsed.thread_id)
+        sent_id = gmail.send_reply(
+            raw_message=raw,
+            thread_id=None if stand_alone else thread_id,
+        )
     except GmailSendUncertainError:
+        if stand_alone:
+            raise
         recovered = _find_existing_outbound(
             gmail,
-            thread_id=parsed.thread_id,
+            thread_id=thread_id,
             outbound_id=outbound_id,
             request_id=request_id,
         )

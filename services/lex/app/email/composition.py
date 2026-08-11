@@ -2,14 +2,15 @@
 
 This is the only production path for outgoing Lex email. The model body is
 rendered from Markdown with raw HTML disabled and sanitised with bleach. The
-approved continuation note and footer are appended afterwards and are never
-passed through the model-body sanitiser. The composer deliberately has no BCC
-parameter.
+approved footer is appended afterwards and is never passed through the
+model-body sanitiser. Optional thread-limit notes and quoted history are
+application-owned. The composer deliberately has no BCC parameter.
 """
 
 from __future__ import annotations
 
 import base64
+import html
 import re
 from collections.abc import Sequence
 from email.message import EmailMessage
@@ -20,23 +21,25 @@ import bleach
 from markdown_it import MarkdownIt
 
 from app.email.templates import (
-    CONTINUATION_HTML,
-    CONTINUATION_TEXT,
     FOOTER_HTML,
     FOOTER_TEXT,
     LEX_FROM_ADDRESS,
     LEX_FROM_NAME,
+    THREAD_LAST_REPLY_NOTE,
+    THREAD_LAST_REPLY_NOTE_HTML,
 )
 from app.llm.schema import LexSource
 from app.llm.source_render import linkify_citation_markers_html
 from app.ops.alerts import emit_alert
 
 _FORBIDDEN_BODY_FRAGMENTS = (
-    CONTINUATION_TEXT,
+    "We're happy to help with anything else",
     "Clarvia is a nonprofit. If you found this helpful",
     "Clarvia does not provide emergency, legal",
     "Lex may produce incomplete or incorrect information",
+    "Tip: Lex can continue a conversation for up to",
     "Tip: long conversation threads can become difficult for Lex",
+    THREAD_LAST_REPLY_NOTE,
 )
 
 _ALLOWED_TAGS = {
@@ -139,11 +142,15 @@ def compose_lex_email(
     prompt_version: str,
     pipeline_version: str | None = None,
     sources: Sequence[LexSource] | None = None,
+    after_body_note: str | None = None,
+    thread_quote_plain: str | None = None,
+    thread_quote_html: str | None = None,
+    stand_alone: bool = False,
 ) -> EmailMessage:
     """Build the complete outgoing Lex email.
 
-    This function deliberately has no BCC parameter. Lex never reconstructs
-    or sends to hidden BCC recipients.
+    Assembly: body → optional thread-limit note → footer → optional quote.
+    This function deliberately has no BCC parameter.
     """
     body = validate_response_body(response_body_markdown)
 
@@ -153,33 +160,54 @@ def compose_lex_email(
     if len(to_addresses) + len(cc_addresses) > 10:
         raise EmailCompositionError("Visible To and CC recipient limit exceeded.")
 
-    plain_text = (
-        "\n\n".join(
-            (
-                body,
-                CONTINUATION_TEXT,
-                FOOTER_TEXT,
+    note_plain = ""
+    note_html = ""
+    if after_body_note:
+        note = after_body_note.strip()
+        if note == THREAD_LAST_REPLY_NOTE:
+            note_plain = note
+            note_html = THREAD_LAST_REPLY_NOTE_HTML
+        else:
+            note_plain = note
+            note_html = (
+                '<p style="margin:24px 0 0;font-family:sans-serif;'
+                'font-size:14px;color:#222">'
+                f"{html.escape(note).replace(chr(10), '<br>')}"
+                "</p>"
             )
-        )
-        + "\n"
-    )
 
-    html_body = "\n".join(
-        (
-            "<!doctype html>",
-            '<html lang="en">',
-            "<head>",
-            '<meta charset="utf-8">',
-            '<meta name="viewport" content="width=device-width,initial-scale=1">',
-            "</head>",
-            "<body>",
-            render_response_html(body, sources=sources),
-            CONTINUATION_HTML,
-            FOOTER_HTML,
-            "</body>",
-            "</html>",
+    quote_plain = (thread_quote_plain or "").strip()
+    quote_html = (thread_quote_html or "").strip()
+    if bool(quote_plain) != bool(quote_html):
+        raise EmailCompositionError(
+            "thread_quote_plain and thread_quote_html must both be set or both empty."
         )
-    )
+
+    plain_parts = [body]
+    if note_plain:
+        plain_parts.append(note_plain)
+    plain_parts.append(FOOTER_TEXT)
+    if quote_plain:
+        plain_parts.append(quote_plain)
+    plain_text = "\n\n".join(plain_parts) + "\n"
+
+    html_parts = [
+        "<!doctype html>",
+        '<html lang="en">',
+        "<head>",
+        '<meta charset="utf-8">',
+        '<meta name="viewport" content="width=device-width,initial-scale=1">',
+        "</head>",
+        "<body>",
+        render_response_html(body, sources=sources),
+    ]
+    if note_html:
+        html_parts.append(note_html)
+    html_parts.append(FOOTER_HTML)
+    if quote_html:
+        html_parts.append(quote_html)
+    html_parts.extend(["</body>", "</html>"])
+    html_body = "\n".join(html_parts)
 
     message = EmailMessage(policy=SMTP)
     message["From"] = formataddr((LEX_FROM_NAME, LEX_FROM_ADDRESS))
@@ -190,10 +218,12 @@ def compose_lex_email(
 
     message["Subject"] = subject
     message["Message-ID"] = outbound_message_id
-    message["In-Reply-To"] = in_reply_to
 
-    if references:
-        message["References"] = " ".join(references)
+    if not stand_alone:
+        if in_reply_to:
+            message["In-Reply-To"] = in_reply_to
+        if references:
+            message["References"] = " ".join(references)
 
     message["Auto-Submitted"] = "auto-replied"
     message["X-Auto-Response-Suppress"] = "All"
@@ -202,6 +232,8 @@ def compose_lex_email(
     message["X-Lex-Prompt-Version"] = prompt_version
     if pipeline_version:
         message["X-Lex-Pipeline-Version"] = pipeline_version
+    if stand_alone:
+        message["X-Lex-Stand-Alone"] = "1"
 
     message.set_content(
         plain_text,
@@ -257,28 +289,18 @@ def _verify_composed_email(message: EmailMessage) -> None:
         )
 
     plain = plain_part.get_content()
-    html = html_part.get_content()
-
-    if plain.count(CONTINUATION_TEXT) != 1:
-        raise EmailCompositionError(
-            "Plain-text continuation note is missing or duplicated."
-        )
+    html_content = html_part.get_content()
 
     if plain.count("Clarvia is a nonprofit.") != 1:
         raise EmailCompositionError("Plain-text footer is missing or duplicated.")
 
-    if html.count("We're happy to help with anything else.") != 1:
-        raise EmailCompositionError("HTML continuation note is missing or duplicated.")
-
-    if html.count("Clarvia is a nonprofit.") != 1:
+    if html_content.count("Clarvia is a nonprofit.") != 1:
         raise EmailCompositionError("HTML footer is missing or duplicated.")
 
-    if html.index("We're happy to help with anything else.") > html.index(
-        "Clarvia is a nonprofit."
-    ):
-        raise EmailCompositionError(
-            "HTML continuation note and footer are out of order."
-        )
+    if "We're happy to help with anything else." in plain:
+        raise EmailCompositionError("Legacy continuation note must not appear.")
+    if "We're happy to help with anything else." in html_content:
+        raise EmailCompositionError("Legacy continuation note must not appear.")
 
     if "Bcc" in message:
         raise EmailCompositionError("The composer must not create a Bcc header.")

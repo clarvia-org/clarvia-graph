@@ -60,13 +60,16 @@ class GmailPort(Protocol):
         self,
         *,
         raw_message: str,
-        thread_id: str,
+        thread_id: str | None,
     ) -> str:
         """Send a MIME message via Gmail API ``users.messages.send``.
 
         ``raw_message`` must be the base64url string returned by
         :func:`app.email.composition.encode_for_gmail_api` — it is passed to
         the API ``raw`` field without further encoding.
+
+        When ``thread_id`` is ``None`` or empty, the message is sent as a
+        stand-alone mail (no Gmail ``threadId``), used for daily-limit notices.
         """
         ...
 

@@ -20,7 +20,6 @@ from typing import Any, cast
 from app.config import SERVICE_ROOT, Settings
 from app.domain.models import GmailMessageRef, ParsedMessage, new_queued_record
 from app.email.composition import verify_composed_email
-from app.email.templates import CONTINUATION_TEXT
 from app.infrastructure.clock import FakeClock
 from app.infrastructure.daily_usage import InMemoryDailyUsage
 from app.infrastructure.memory import InMemoryGmail, InMemoryMessageState
@@ -128,7 +127,7 @@ class PilotSuiteResult:
 class FailingGmail(InMemoryGmail):
     """Gmail double that simulates send API failure."""
 
-    def send_reply(self, *, raw_message: str, thread_id: str) -> str:
+    def send_reply(self, *, raw_message: str, thread_id: str | None) -> str:
         raise RuntimeError("gmail_send_failed")
 
 
@@ -402,7 +401,7 @@ def check_outbound_formatting(gmail: InMemoryGmail) -> tuple[bool, bool]:
         if part.get_content_type() == "text/plain":
             plain = part.get_content()
     footer_ok = "Clarvia is a nonprofit." in plain
-    continuation_ok = CONTINUATION_TEXT in plain
+    continuation_ok = "five replies in the same email thread" in plain
     return footer_ok, continuation_ok
 
 

@@ -103,7 +103,16 @@ class Settings(BaseSettings):
     processing_mode: ProcessingMode = "disabled"
     processing_enabled: bool = False
     max_visible_recipients: int = 10
-    max_sender_requests_per_day: int = 10
+    max_sender_requests_per_day: int = 5
+    max_thread_lex_replies: int = 5
+    include_thread_quote: bool = Field(
+        default=True,
+        validation_alias=AliasChoices(
+            "LEX_INCLUDE_THREAD_QUOTE", "include_thread_quote"
+        ),
+    )
+    thread_quote_max_chars_per_message: int = 2000
+    thread_quote_max_total_chars: int = 40_000
     max_body_chars: int = 100_000
     max_thread_chars: int = 120_000
     max_writer_history_chars: int = 20_000
@@ -168,6 +177,9 @@ class Settings(BaseSettings):
     @field_validator(
         "max_visible_recipients",
         "max_sender_requests_per_day",
+        "max_thread_lex_replies",
+        "thread_quote_max_chars_per_message",
+        "thread_quote_max_total_chars",
         "max_body_chars",
         "max_thread_chars",
         "poll_max_results",

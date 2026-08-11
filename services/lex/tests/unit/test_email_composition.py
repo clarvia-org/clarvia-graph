@@ -17,7 +17,7 @@ from app.email.composition import (
     validate_response_body,
     verify_composed_email,
 )
-from app.email.templates import CONTINUATION_TEXT, FOOTER_HTML, FOOTER_TEXT
+from app.email.templates import FOOTER_HTML, FOOTER_TEXT, THREAD_LAST_REPLY_NOTE
 
 _BODY = (
     "Here is practical guidance for registering the death.\n\n"
@@ -65,30 +65,53 @@ def test_both_content_types_present() -> None:
     assert html
 
 
-def test_three_part_order_plain_and_html() -> None:
+def test_body_then_footer_order() -> None:
     message = _compose()
     plain, html = _alternatives(message)
 
     body_marker = "practical guidance"
-    continuation_marker = "We're happy to help with anything else."
     footer_marker = "Clarvia is a nonprofit."
 
     for text in (plain, html):
-        assert text.index(body_marker) < text.index(continuation_marker)
-        assert text.index(continuation_marker) < text.index(footer_marker)
-
-
-def test_continuation_appears_once_in_each_alternative() -> None:
-    plain, html = _alternatives(_compose())
-    marker = "We're happy to help with anything else."
-    assert plain.count(marker) == 1
-    assert html.count(marker) == 1
+        assert text.index(body_marker) < text.index(footer_marker)
+    assert "We're happy to help with anything else." not in plain
+    assert "We're happy to help with anything else." not in html
 
 
 def test_footer_appears_once_in_each_alternative() -> None:
     plain, html = _alternatives(_compose())
     assert plain.count("Clarvia is a nonprofit.") == 1
     assert html.count("Clarvia is a nonprofit.") == 1
+
+
+def test_thread_last_note_before_footer() -> None:
+    plain, html = _alternatives(
+        _compose(after_body_note=THREAD_LAST_REPLY_NOTE)
+    )
+    assert plain.index("Lex.") < plain.index(THREAD_LAST_REPLY_NOTE)
+    assert plain.index(THREAD_LAST_REPLY_NOTE) < plain.index("Clarvia is a nonprofit.")
+    assert "last Lex reply" in html
+
+
+def test_quote_after_footer() -> None:
+    quote_plain = (
+        "────────────────────────────────\n"
+        "Previous messages in this conversation\n\n"
+        "user@example.com wrote:\nHello"
+    )
+    quote_html = (
+        "<div>Previous messages in this conversation"
+        "<blockquote>Hello</blockquote></div>"
+    )
+    plain, html = _alternatives(
+        _compose(thread_quote_plain=quote_plain, thread_quote_html=quote_html)
+    )
+    assert plain.index("Clarvia is a nonprofit.") < plain.index(
+        "Previous messages in this conversation"
+    )
+    assert html.index("Clarvia is a nonprofit.") < html.index(
+        "Previous messages in this conversation"
+    )
 
 
 def test_all_approved_links_exist() -> None:
@@ -104,10 +127,10 @@ def test_all_approved_links_exist() -> None:
         assert link in html
 
 
-def test_eight_exchange_tip_present() -> None:
+def test_five_reply_tip_present() -> None:
     plain, html = _alternatives(_compose())
-    assert "8 or more exchanges" in plain
-    assert "8 or more exchanges" in html
+    assert "five replies in the same email thread" in plain
+    assert "five replies in the same email thread" in html
 
 
 def test_no_bcc_header() -> None:
@@ -115,6 +138,13 @@ def test_no_bcc_header() -> None:
     assert "Bcc" not in message
     assert message.get("Bcc") is None
     assert all(name.lower() != "bcc" for name in message.keys())  # noqa: SIM118
+
+
+def test_stand_alone_omits_threading_headers() -> None:
+    message = _compose(stand_alone=True)
+    assert message.get("In-Reply-To") is None
+    assert message.get("References") is None
+    assert message.get("X-Lex-Stand-Alone") == "1"
 
 
 def test_two_pass_prompt_and_pipeline_headers() -> None:
@@ -139,7 +169,6 @@ def test_malicious_raw_html_does_not_survive() -> None:
         "<script>alert('x')</script> and <img src=x onerror=alert(1)>.\n\nLex."
     )
     html = render_response_html(body)
-    # Dangerous tags are stripped/escaped, never emitted as live markup.
     assert "<script" not in html
     assert "<img" not in html
 
@@ -151,7 +180,7 @@ def test_gmail_encoding_round_trips() -> None:
     reparsed = message_from_bytes(decoded, policy=default_policy)  # type: ignore[arg-type]
     assert reparsed.get_content_type() == "multipart/alternative"
     combined = decoded.decode("utf-8")
-    assert "We're happy to help with anything else." in combined
+    assert "We're happy to help with anything else." not in combined
     assert "Clarvia is a nonprofit." in combined
 
 
@@ -185,9 +214,8 @@ def test_more_than_ten_recipients_rejected() -> None:
         )
 
 
-_CONT_HTML = "<p>We're happy to help with anything else.</p>"
-_VALID_PLAIN = "Body.\n\nLex.\n\n" + CONTINUATION_TEXT + "\n\n" + FOOTER_TEXT
-_VALID_HTML = _CONT_HTML + "\n" + FOOTER_HTML
+_VALID_PLAIN = "Body.\n\nLex.\n\n" + FOOTER_TEXT
+_VALID_HTML = FOOTER_HTML
 
 
 def _mk(plain: str, html: str) -> EmailMessage:
@@ -223,37 +251,22 @@ def test_verify_rejects_missing_html_alternative() -> None:
         verify_composed_email(message)
 
 
-def test_verify_rejects_duplicate_plain_continuation() -> None:
-    plain = _VALID_PLAIN + "\n\n" + CONTINUATION_TEXT
+def test_verify_rejects_legacy_continuation() -> None:
+    plain = (
+        "Body.\n\nLex.\n\nWe're happy to help with anything else.\n\n" + FOOTER_TEXT
+    )
     with pytest.raises(EmailCompositionError):
         verify_composed_email(_mk(plain, _VALID_HTML))
 
 
 def test_verify_rejects_missing_plain_footer() -> None:
-    plain = "Body.\n\nLex.\n\n" + CONTINUATION_TEXT
+    plain = "Body.\n\nLex."
     with pytest.raises(EmailCompositionError):
         verify_composed_email(_mk(plain, _VALID_HTML))
 
 
-def test_verify_rejects_duplicate_html_continuation() -> None:
-    html = _CONT_HTML + _CONT_HTML + FOOTER_HTML
-    with pytest.raises(EmailCompositionError):
-        verify_composed_email(_mk(_VALID_PLAIN, html))
-
-
-def test_verify_rejects_missing_html_continuation() -> None:
-    with pytest.raises(EmailCompositionError):
-        verify_composed_email(_mk(_VALID_PLAIN, FOOTER_HTML))
-
-
 def test_verify_rejects_duplicate_html_footer() -> None:
-    html = _CONT_HTML + FOOTER_HTML + FOOTER_HTML
-    with pytest.raises(EmailCompositionError):
-        verify_composed_email(_mk(_VALID_PLAIN, html))
-
-
-def test_verify_rejects_html_out_of_order() -> None:
-    html = FOOTER_HTML + _CONT_HTML
+    html = FOOTER_HTML + FOOTER_HTML
     with pytest.raises(EmailCompositionError):
         verify_composed_email(_mk(_VALID_PLAIN, html))
 

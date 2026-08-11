@@ -110,7 +110,7 @@ def _retry_instruction(code: str) -> str:
         ),
         "later_topics_too_detailed": (
             "The previous draft explained later topics in too much detail. Mention "
-            "later_topics in at most one short paragraph."
+            "them briefly and ask only for the facts needed to help next."
         ),
         "unsupported_organisation_name": (
             "The previous draft named an organisation that is not in the verified "
@@ -304,11 +304,6 @@ def validate_written_response(
         _ = latest_user_message
 
     if brief.situation_stage in {"imminent_death", "recent_death"}:
-        later_hits = sum(
-            1 for topic in brief.later_topics if topic.casefold()[:24] in body_folded
-        )
-        if later_hits >= 3:
-            raise WriterValidationError("later_topics_too_detailed")
         words = _word_count(body)
         if words < 180:
             raise WriterValidationError("body_too_short")
