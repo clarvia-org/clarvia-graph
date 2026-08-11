@@ -38,7 +38,7 @@ For the full data model, see the [JSON Schema definitions](../schemas/v0.1).
 - **Three-valued logic** — conditions evaluate to `true`, `false`, or `unknown`; uncertainty is never hidden
 - **Cross-border composition** — jurisdiction roles (death place, habitual residence, work state, asset situs) compose layered checklists
 - **Static exports** — consumer apps load generated JSON at build time with no runtime API dependency
-- **Privacy-first** — condition evaluation happens client-side; no user data is sent to servers
+- **Privacy-first checklist** — condition evaluation happens client-side, so personal circumstances are not sent to Clarvia’s servers for checklist generation. This does not apply to separate communication services such as Lex.
 
 ---
 

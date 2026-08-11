@@ -130,7 +130,7 @@ Every checklist item traces back to an official source. No legal consequence pub
 - **Three-valued logic**: Conditions evaluate to `true`, `false`, or `unknown` — never hides uncertainty
 - **Cross-border**: Jurisdiction roles (death_place, habitual_residence, work_state, asset_situs) compose layered checklists
 - **Static exports**: Consumer apps load generated JSON at build time — no runtime API dependency
-- **Privacy-first**: Client-side condition evaluation, no user data sent to servers
+- **Privacy-first checklist**: Checklist conditions are evaluated client-side, so personal circumstances are not sent to Clarvia’s servers for checklist generation. Separate services such as Lex process information as described in Clarvia’s [Privacy & Cookie Policy](https://clarvia.org/en/privacy).
 - **Public/private fence**: Production secrets and live Lex prompts stay out of this repository (see [`docs/MONOREPO.md`](docs/MONOREPO.md))
 
 ## Software quality and reproducibility

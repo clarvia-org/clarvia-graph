@@ -74,11 +74,13 @@ The repository integrates and targets alignment with the following standards:
 
 ## Privacy and data protection
 
-Clarvia Graph does not require personal bereavement case data to be submitted to operate the public workflow infrastructure. Phase one is based on official sources, structured source metadata, workflow definitions, and non-personal administrative guidance.
+Clarvia Graph’s core data and static checklist do not require personal case information to be submitted to Clarvia. They operate using official sources, structured metadata, workflow definitions, and client-side condition evaluation.
 
-- **Client-side evaluation**: Circumstance and conditional rules are evaluated client-side in the user's browser or local application via `@clarvia/generator`.
-- **No data harvesting**: Personal circumstances, dates, or identities do not need to be sent to Clarvia servers for the core workflow logic. The graph/data layer is designed to avoid collecting personal case files.
-- **Privacy review**: Any future feature involving personal data or server-side synchronization must go through privacy and security impact review before deployment.
+* **Client-side checklist evaluation**: Circumstance and conditional rules are evaluated in the user’s browser or local application through `@clarvia/generator`.
+* **Lex service boundary**: Lex is a separate automated email service. It processes email addresses, message content, thread history, and recipient information as needed to provide and continue responses.
+* **Data minimisation**: Lex users are asked not to include names or other identifying information about living people in their questions and to share only what is necessary.
+* **Privacy information**: Personal-data handling by Lex and other Clarvia services is described in Clarvia’s existing [Privacy & Cookie Policy](https://clarvia.org/en/privacy).
+* **Privacy review**: Features involving personal data or server-side processing must undergo privacy and security review before deployment.
 
 ## Do no harm and safety boundaries
 
