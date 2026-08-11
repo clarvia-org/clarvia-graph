@@ -26,7 +26,8 @@ from app.domain.models import (
 )
 from app.domain.ports import ClockPort, GmailPort, LlmPort, MessageStatePort
 from app.email.recipients import build_reply_recipients
-from app.email.templates import TECHNICAL_FAILURE_BODY
+from app.email.templates import TECHNICAL_FAILURE_BODY, THREAD_LAST_REPLY_NOTE
+from app.email.thread_quote import build_thread_quote, count_lex_replies
 from app.infrastructure.daily_usage import DailyUsagePort
 from app.infrastructure.rate_limit import RateLimitPort
 from app.llm.envelope import build_runtime_envelope
@@ -44,6 +45,7 @@ from app.services.gates import (
     evaluate_circuit_gate,
     evaluate_rate_limit_gate,
     evaluate_recipient_gate,
+    evaluate_thread_closed_gate,
     send_template_reply,
 )
 from app.services.model_pipeline import ModelPipelineFailure, run_model_pipeline
@@ -210,6 +212,31 @@ class Processor:
                     attempt_count=attempt_count,
                 )
 
+        lex_addresses = frozenset(
+            {
+                self._settings.lex_mailbox.lower(),
+                *self._settings.resolved_lex_aliases,
+            }
+        )
+        thread_messages = list(
+            self._gmail.fetch_thread_parsed_messages(thread_id=parsed.thread_id)
+        )
+        prior_lex_replies = count_lex_replies(
+            thread_messages, lex_addresses=lex_addresses
+        )
+        thread_gate = evaluate_thread_closed_gate(
+            parsed=parsed,
+            settings=self._settings,
+            prior_lex_replies=prior_lex_replies,
+        )
+        if thread_gate is not None:
+            return self._finish_gate(
+                key,
+                parsed=parsed,
+                gate=thread_gate,
+                attempt_count=attempt_count,
+            )
+
         rate_decision = self._rate_limit.try_accept_model_eligible(
             sender_hmac=sender_hmac,
             now=self._clock.now(),
@@ -236,12 +263,7 @@ class Processor:
             reply_to=parsed.reply_to,
             to_addresses=parsed.to_addresses,
             cc_addresses=parsed.cc_addresses,
-            lex_addresses=frozenset(
-                {
-                    self._settings.lex_mailbox.lower(),
-                    *self._settings.resolved_lex_aliases,
-                }
-            ),
+            lex_addresses=lex_addresses,
         )
         self._state.update_metadata(
             key,
@@ -276,6 +298,9 @@ class Processor:
             parsed=parsed,
             recipients=recipients,
             attempt_count=attempt_count,
+            thread_messages=thread_messages,
+            prior_lex_replies=prior_lex_replies,
+            lex_addresses=lex_addresses,
         )
 
     def _run_model_and_send(
@@ -285,11 +310,11 @@ class Processor:
         parsed: ParsedMessage,
         recipients: ReplyRecipients,
         attempt_count: int,
+        thread_messages: list[ParsedMessage],
+        prior_lex_replies: int,
+        lex_addresses: frozenset[str],
     ) -> ProcessResult:
         try:
-            thread_messages = self._gmail.fetch_thread_parsed_messages(
-                thread_id=parsed.thread_id
-            )
             if getattr(self._settings, "generation_pipeline", "single_pass") == "two_pass":
                 prepared = run_two_pass_pipeline(
                     self._llm,
@@ -350,6 +375,24 @@ class Processor:
             lex_response.body_markdown,
             lex_response,
         )
+        after_body_note = None
+        if prior_lex_replies + 1 >= self._settings.max_thread_lex_replies:
+            after_body_note = THREAD_LAST_REPLY_NOTE
+
+        quote_plain = None
+        quote_html = None
+        if self._settings.include_thread_quote:
+            quote_plain, quote_html = build_thread_quote(
+                thread_messages,
+                latest_message_id=parsed.message_id,
+                lex_addresses=lex_addresses,
+                max_chars_per_message=self._settings.thread_quote_max_chars_per_message,
+                max_total_chars=self._settings.thread_quote_max_total_chars,
+            )
+            if not quote_plain:
+                quote_plain = None
+                quote_html = None
+
         send_result = send_lex_reply(
             gmail=self._gmail,
             settings=self._settings,
@@ -359,6 +402,9 @@ class Processor:
             sources=lex_response.sources,
             prompt_version=prompt_version,
             pipeline_version=pipeline_version,
+            after_body_note=after_body_note,
+            thread_quote_plain=quote_plain,
+            thread_quote_html=quote_html,
         )
         self._gmail.add_label(message_id=key, label=LEX_PROCESSED)
         self._state.record_successful_send(
@@ -445,6 +491,8 @@ class Processor:
                 parsed=parsed,
                 recipients=gate.recipients,
                 template_body=gate.template_body,
+                stand_alone=gate.stand_alone,
+                subject_override=gate.subject_override,
             )
         if gate.label:
             self._gmail.add_label(message_id=key, label=gate.label)

@@ -120,16 +120,58 @@ def test_recipient_limit_sends_template_without_model(harness: Harness) -> None:
     assert LEX_IGNORED in harness.gmail.labels_for("m1")
 
 
-def test_rate_limit_blocks_eleventh_request(harness: Harness) -> None:
-    for index in range(11):
+def test_rate_limit_blocks_sixth_request(harness: Harness) -> None:
+    import base64
+    from email import message_from_bytes
+    from email.policy import default
+
+    for index in range(6):
         message_id = f"m{index}"
-        harness.seed_eligible(message_id=message_id, thread_id="t1")
+        harness.seed_eligible(message_id=message_id, thread_id=f"t{index}")
         result = harness.processor.run(gmail_message_id=message_id)
-        if index < 10:
+        if index < 5:
             assert result.status == PROCESS_STATUS_SENT
         else:
             assert result.status == "rate_limited"
-    assert LEX_RATE_LIMITED in harness.gmail.labels_for("m10")
+    assert LEX_RATE_LIMITED in harness.gmail.labels_for("m5")
+    raw, thread_id = harness.gmail.sent_messages[-1]
+    assert thread_id == ""
+    padding = "=" * (-len(raw) % 4)
+    message = message_from_bytes(
+        base64.urlsafe_b64decode(raw + padding), policy=default
+    )
+    assert message["Subject"] == "Lex daily limit reached"
+    assert message.get("In-Reply-To") is None
+    assert message.get("X-Lex-Stand-Alone") == "1"
+
+
+def test_thread_closed_after_five_lex_replies(harness: Harness) -> None:
+    import base64
+    from email import message_from_bytes
+    from email.policy import default
+
+    for index in range(5):
+        message_id = f"u{index}"
+        harness.seed_eligible(message_id=message_id, thread_id="thread-long")
+        result = harness.processor.run(gmail_message_id=message_id)
+        assert result.status == PROCESS_STATUS_SENT
+
+    harness.seed_eligible(message_id="u5", thread_id="thread-long")
+    closed = harness.processor.run(gmail_message_id="u5")
+    assert closed.status == "thread_closed"
+    raw = harness.gmail.last_sent_raw
+    assert raw is not None
+    padding = "=" * (-len(raw) % 4)
+    message = message_from_bytes(
+        base64.urlsafe_b64decode(raw + padding), policy=default
+    )
+    body = ""
+    for part in message.walk():
+        if part.get_content_type() == "text/plain":
+            body = part.get_content()
+    assert "five replies in the same email thread" in body
+    assert "Clarvia is a nonprofit." in body
+
 
 
 def test_attachment_only_sends_template_without_reading_bytes(

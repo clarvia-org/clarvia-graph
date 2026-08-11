@@ -553,7 +553,7 @@ def test_select_relevant_writer_history_skips_truncation_marker() -> None:
     assert "Luxembourg" in selected[0].text
 
 
-def test_writer_later_topics_and_focused_follow_up_dump() -> None:
+def test_writer_later_topics_allowed_in_brief_ask() -> None:
     brief = _brief(
         later_topics=[
             "pension claims",
@@ -562,22 +562,22 @@ def test_writer_later_topics_and_focused_follow_up_dump() -> None:
             "utility cancellations",
         ]
     )
-    bloated = (
+    with_ask = (
         _LONG_WRITER_BODY
-        + " Also handle pension claims, bank notifications, and estate declaration now."
+        + " Once those are underway, I can also help with pension claims, "
+        + "bank notifications, and estate declaration - reply with the pension "
+        + "scheme name and country if you want that next."
     )
-    with pytest.raises(WriterValidationError) as exc:
-        validate_written_response(
-            LexWrittenResponse(
-                response_version="lex_written_response_v1",
-                body_markdown=bloated,
-                used_action_ids=["A1", "A2", "A3"],
-                used_source_ids=[1, 2],
-                used_contact_ids=[1, 2, 3],
-            ),
-            brief,
-        )
-    assert exc.value.code == "later_topics_too_detailed"
+    validate_written_response(
+        LexWrittenResponse(
+            response_version="lex_written_response_v1",
+            body_markdown=with_ask,
+            used_action_ids=["A1", "A2", "A3"],
+            used_source_ids=[1, 2],
+            used_contact_ids=[1, 2, 3],
+        ),
+        brief,
+    )
 
     follow = _brief(
         situation_stage="focused_follow_up",

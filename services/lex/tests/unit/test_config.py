@@ -26,7 +26,9 @@ def test_defaults_match_blueprint() -> None:
     assert settings.adapter_backend == "memory"
     assert settings.lease_duration_seconds == 600
     assert settings.max_visible_recipients == 10
-    assert settings.max_sender_requests_per_day == 10
+    assert settings.max_sender_requests_per_day == 5
+    assert settings.max_thread_lex_replies == 5
+    assert settings.include_thread_quote is True
     assert settings.max_body_chars == 100_000
     assert settings.max_thread_chars == 120_000
     assert settings.generation_pipeline == "two_pass"

@@ -1,29 +1,15 @@
 """Approved, application-owned email text.
 
 Every constant here is reviewed content that the model must never generate. The
-continuation note and footer are reproduced verbatim from blueprint sections 19
-and 20 and must not be paraphrased. The deterministic operational bodies each
-end with the required ``Lex.`` sign-off so they pass through the same composer.
+footer is reproduced from the approved composition templates and must not be
+paraphrased. Deterministic operational bodies each end with the required
+``Lex.`` sign-off so they pass through the same composer.
 """
 
 from __future__ import annotations
 
 LEX_FROM_NAME = "Lex from Clarvia"
 LEX_FROM_ADDRESS = "lex@clarvia.org"
-
-CONTINUATION_TEXT = (
-    "We're happy to help with anything else. Just reply to this email for "
-    "follow-up questions on this topic, or send a fresh email to "
-    "lex@clarvia.org for a different matter."
-)
-
-CONTINUATION_HTML = """
-<p style="margin:24px 0 0;font-family:sans-serif;font-size:14px;color:#222">
-We're happy to help with anything else. Just reply to this email for follow-up
-questions on this topic, or send a fresh email to
-<a href="mailto:lex@clarvia.org">lex@clarvia.org</a> for a different matter.
-</p>
-""".strip()
 
 FOOTER_HTML = """
 <div style="font-size:13px;color:#555;font-family:sans-serif;border-top:1px solid #ddd;padding-top:12px;margin-top:24px">
@@ -43,9 +29,9 @@ official authority or a qualified professional.</p>
 <p style="margin:0 0 6px;font-size:12px;color:#888">Lex may produce incomplete or incorrect
 information. To report an issue or contact Clarvia, please use the
 <a href="https://clarvia.org/en#contact" style="color:#888">contact form</a> on our website.</p>
-<p style="margin:0 0 6px;font-size:12px;color:#888">Tip: long conversation threads can become
-difficult for Lex to follow. For the best results, send a new message
-rather than replying after 8 or more exchanges in the same thread.</p>
+<p style="margin:0 0 6px;font-size:12px;color:#888">Tip: Lex can continue a conversation for up to
+five replies in the same email thread. For further help after that, send a new email to
+<a href="mailto:lex@clarvia.org" style="color:#888">lex@clarvia.org</a> with a short summary.</p>
 <p style="margin:0;font-size:12px;color:#888">
 <a href="https://clarvia.org/en/privacy" style="color:#888">Privacy Policy</a> &middot;
 <a href="https://clarvia.org/en#contact" style="color:#888">Contact Clarvia</a> &middot;
@@ -67,28 +53,48 @@ Clarvia does not provide emergency, legal, tax, medical, psychological, notarial
 Lex may produce incomplete or incorrect information. To report an issue or contact Clarvia, please use the contact form on our website:
 https://clarvia.org/en#contact
 
-Tip: long conversation threads can become difficult for Lex to follow. For the best results, send a new message rather than replying after 8 or more exchanges in the same thread.
+Tip: Lex can continue a conversation for up to five replies in the same email thread. For further help after that, send a new email to lex@clarvia.org with a short summary.
 
 Privacy Policy: https://clarvia.org/en/privacy
 Contact Clarvia: https://clarvia.org/en#contact
 Website: https://clarvia.org/en
 """.strip()
 
-# Deterministic operational response bodies. Each is a complete response body,
-# signed "Lex.", passed through the same continuation + footer composer.
+# Appended after the LLM body (which already ends with Lex.) on the 5th reply.
+THREAD_LAST_REPLY_NOTE = (
+    "Note: This is the last Lex reply in this thread. Further replies here will "
+    "not be processed. For more help, send a new email to lex@clarvia.org with a "
+    "short summary of your situation."
+)
+
+THREAD_LAST_REPLY_NOTE_HTML = (
+    '<p style="margin:24px 0 0;font-family:sans-serif;font-size:14px;color:#222">'
+    "Note: This is the last Lex reply in this thread. Further replies here will "
+    "not be processed. For more help, send a new email to "
+    '<a href="mailto:lex@clarvia.org">lex@clarvia.org</a> with a short summary '
+    "of your situation."
+    "</p>"
+)
+
+THREAD_CLOSED_BODY = (
+    "Lex can only continue a conversation for five replies in the same email "
+    "thread. This thread has reached that limit, so further replies here are "
+    "not processed.\n\n"
+    "To keep going, send a new email to lex@clarvia.org with a short summary of "
+    "your situation and what you need next.\n\n"
+    "Lex."
+)
 
 RATE_LIMIT_BODY = (
-    "Our service is currently limited to 10 requests per day from the same "
-    "address. This limit helps us keep the service free and available for "
-    "everyone. Please try again tomorrow.\n\nLex."
+    "Lex can answer up to five emails per day from the same address. Today's "
+    "limit has been reached, so this message was not processed.\n\n"
+    "Your full daily quota of five will be available again tomorrow. If you "
+    "still need help then, reply in your existing thread (if it still has Lex "
+    "replies left) or send a new email to lex@clarvia.org.\n\n"
+    "Lex."
 )
 
-RATE_LIMIT_BODY_EMERGENCY = (
-    "Our service is currently limited to 10 requests per day from the same "
-    "address. This limit helps us keep the service free and available for "
-    "everyone. Please try again tomorrow. If someone is in immediate danger, "
-    "contact the local emergency services where they are now.\n\nLex."
-)
+RATE_LIMIT_SUBJECT = "Lex daily limit reached"
 
 RECIPIENT_LIMIT_BODY = (
     "Lex can only process a request when no more than 10 people would receive "
@@ -117,12 +123,13 @@ TEMPORARY_UNAVAILABILITY_BODY = (
 __all__ = [
     "LEX_FROM_NAME",
     "LEX_FROM_ADDRESS",
-    "CONTINUATION_TEXT",
-    "CONTINUATION_HTML",
     "FOOTER_HTML",
     "FOOTER_TEXT",
+    "THREAD_LAST_REPLY_NOTE",
+    "THREAD_LAST_REPLY_NOTE_HTML",
+    "THREAD_CLOSED_BODY",
     "RATE_LIMIT_BODY",
-    "RATE_LIMIT_BODY_EMERGENCY",
+    "RATE_LIMIT_SUBJECT",
     "RECIPIENT_LIMIT_BODY",
     "ATTACHMENT_ONLY_BODY",
     "TECHNICAL_FAILURE_BODY",

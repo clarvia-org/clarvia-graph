@@ -196,14 +196,17 @@ class GoogleGmailAdapter:
             )
         return parsed
 
-    def send_reply(self, *, raw_message: str, thread_id: str) -> str:
+    def send_reply(self, *, raw_message: str, thread_id: str | None) -> str:
         """Send base64url MIME from encode_for_gmail_api without re-encoding."""
+        body: dict[str, str] = {"raw": raw_message}
+        if thread_id:
+            body["threadId"] = thread_id
         try:
             response = (
                 self._messages()
                 .send(
                     userId=USER_ID,
-                    body={"raw": raw_message, "threadId": thread_id},
+                    body=body,
                 )
                 .execute()
             )

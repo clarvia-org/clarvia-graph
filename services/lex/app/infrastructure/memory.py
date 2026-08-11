@@ -167,22 +167,30 @@ class InMemoryGmail:
             for message_id in message_ids
         ]
 
-    def send_reply(self, *, raw_message: str, thread_id: str) -> str:
+    def send_reply(self, *, raw_message: str, thread_id: str | None) -> str:
         with self._lock:
             self.send_reply_calls += 1
             self.last_sent_raw = raw_message
-            self.sent_messages.append((raw_message, thread_id))
+            resolved_thread = thread_id or ""
+            self.sent_messages.append((raw_message, resolved_thread))
             sent_id = f"sent-{self.send_reply_calls}"
             message_id, request_id = _extract_outbound_headers(raw_message)
             self._sent_outbound.append(
                 SentOutboundMessage(
                     gmail_message_id=sent_id,
-                    thread_id=thread_id,
+                    thread_id=resolved_thread,
                     message_id=message_id,
                     request_id=request_id,
                     raw=raw_message,
                 )
             )
+            if resolved_thread:
+                padding = "=" * (-len(raw_message) % 4)
+                self._raw_messages[sent_id] = base64.urlsafe_b64decode(
+                    raw_message + padding
+                )
+                self._threads[sent_id] = resolved_thread
+                self._labels.setdefault(sent_id, set())
             if self.simulate_timeout_after_accept:
                 raise GmailSendUncertainError()
         return sent_id

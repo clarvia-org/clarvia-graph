@@ -6,12 +6,12 @@ import pytest
 from app.email.composition import compose_lex_email, validate_response_body
 from app.email.templates import (
     ATTACHMENT_ONLY_BODY,
-    CONTINUATION_TEXT,
     FOOTER_HTML,
     FOOTER_TEXT,
     RATE_LIMIT_BODY,
     RECIPIENT_LIMIT_BODY,
     TECHNICAL_FAILURE_BODY,
+    THREAD_CLOSED_BODY,
 )
 
 _DETERMINISTIC_BODIES = (
@@ -19,15 +19,14 @@ _DETERMINISTIC_BODIES = (
     RECIPIENT_LIMIT_BODY,
     ATTACHMENT_ONLY_BODY,
     TECHNICAL_FAILURE_BODY,
+    THREAD_CLOSED_BODY,
 )
 
 
 def test_rate_limit_exact_wording() -> None:
-    assert RATE_LIMIT_BODY.startswith(
-        "Our service is currently limited to 10 requests per day from the same "
-        "address. This limit helps us keep the service free and available for "
-        "everyone. Please try again tomorrow."
-    )
+    assert "up to five emails per day" in RATE_LIMIT_BODY
+    assert "full daily quota of five" in RATE_LIMIT_BODY
+    assert "immediate danger" not in RATE_LIMIT_BODY.casefold()
 
 
 def test_rate_limit_avoids_punitive_language() -> None:
@@ -36,11 +35,11 @@ def test_rate_limit_avoids_punitive_language() -> None:
         assert word not in lowered
 
 
-def test_continuation_and_footer_constants_present() -> None:
-    assert "reply to this email" in CONTINUATION_TEXT
+def test_footer_constants_present() -> None:
     assert "Clarvia is a nonprofit." in FOOTER_TEXT
     assert "Clarvia is a nonprofit." in FOOTER_HTML
-    assert "8 or more exchanges" in FOOTER_TEXT
+    assert "five replies in the same email thread" in FOOTER_TEXT
+    assert "We're happy to help with anything else" not in FOOTER_TEXT
 
 
 @pytest.mark.parametrize("body", _DETERMINISTIC_BODIES)
