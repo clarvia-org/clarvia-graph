@@ -116,7 +116,7 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
 
   fr: {
     title: "Politique de confidentialité et de cookies",
-    lastUpdated: "Dernière mise à jour : 24 juillet 2026",
+    lastUpdated: "Dernière mise à jour : 11 août 2026",
     sections: [
       {
         heading: "1. Ce que Clarvia.org collecte",
@@ -161,17 +161,14 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
         ]
       },
       {
-        heading: "5. Demandes de contact et d'assistance",
+        heading: "5. Lex, demandes de contact et d'assistance",
         body: [
-          "Lorsque vous nous contactez par e-mail ou via un formulaire pour obtenir des conseils administratifs ou une assistance gratuite suite à un décès, nous traitons les données personnelles que vous choisissez de partager. Cela peut inclure votre nom, vos coordonnées, votre langue préférée, le contenu de votre message et tous les documents ou autres informations que vous fournissez.",
-          "Nous utilisons ces informations uniquement pour comprendre votre demande, communiquer avec vous et vous apporter une aide utile.",
-          "Pour nous aider à répondre avec précision et dans la langue appropriée, nous pouvons utiliser des outils d’intelligence artificielle, notamment de grands modèles linguistiques, pour :",
-          "• traduire les messages ;",
-          "• aider à la recherche et à la collecte d’informations ; et",
-          "• préparer des propositions de réponses rédigées pour examen par un bénévole de Clarvia.",
-          "Ces prestataires de services d'IA agissent en tant que sous-traitants pour le compte de Clarvia et selon les instructions de Clarvia. Nous faisons appel uniquement à des prestataires proposant des accords de traitement de données appropriés. Conformément aux accords conclus avec eux, ils ne sont pas autorisés à utiliser le contenu que vous nous envoyez pour entraîner leurs modèles généraux.",
-          "Les outils d'IA peuvent assister nos bénévoles, mais un bénévole de Clarvia reste responsable de la réponse qui vous est envoyée.",
-          "Base légale : Les intérêts légitimes de Clarvia en vertu de l'article 6(1)(f) du RGPD, plus précisément : fournir les conseils ou l'assistance gratuits que vous avez demandés, de manière exacte et efficace.",
+          "Lorsque vous utilisez Lex, nous contactez par e-mail ou envoyez un formulaire d’assistance, nous traitons les informations nécessaires pour vous répondre. Cela comprend votre adresse e-mail, votre langue préférée, le contenu de votre message, l’historique de la conversation par e-mail et les adresses de toute personne que vous incluez dans la conversation.",
+          "Veuillez ne pas inclure le nom ou d’autres informations permettant d’identifier des personnes vivantes dans une question adressée à Lex. Si votre proche est atteint d’une maladie en phase terminale, décrivez sa situation sans permettre de l’identifier. Bien que le RGPD ne s’applique généralement pas aux personnes décédées, les informations relatives à un décès peuvent néanmoins identifier ou concerner des personnes vivantes. Veuillez donc partager uniquement ce qui est nécessaire.",
+          "Lex est le service automatisé d’information de Clarvia consacré à la fin de vie et au deuil. Nous utilisons des outils d’intelligence artificielle, notamment de grands modèles linguistiques, pour traduire les messages, rechercher des informations pertinentes et préparer des réponses conversationnelles comprenant des sources et des prochaines étapes suggérées.",
+          "Les réponses de Lex peuvent être envoyées automatiquement sans examen préalable par un bénévole de Clarvia. Des bénévoles autorisés de Clarvia peuvent examiner les conversations ultérieurement à des fins de sécurité, de qualité ou d’assistance.",
+          "Nos prestataires d’intelligence artificielle et d’infrastructure traitent les informations pour le compte de Clarvia et selon ses instructions. Nous faisons appel à des prestataires proposant des accords de traitement des données appropriés. Conformément aux accords conclus avec eux, ils ne sont pas autorisés à utiliser le contenu des messages pour entraîner leurs modèles généraux.",
+          "Base légale : les intérêts légitimes de Clarvia en vertu de l’article 6(1)(f) du RGPD, plus précisément la fourniture exacte et efficace des informations ou de l’assistance gratuites demandées.",
           "Conservation : Nous conservons la correspondance aussi longtemps que raisonnablement nécessaire pour fournir les conseils ou l'assistance demandés et assurer la continuité, y compris lorsqu'une affaire reste non résolue ou peut nécessiter un suivi sur une période prolongée. Nous révisons périodiquement les demandes pour déterminer si la correspondance est toujours nécessaire. Une fois l'affaire conclue et qu'aucun suivi ultérieur n'est raisonnablement attendu, nous supprimons ou anonymisons la correspondance, sauf si une conservation prolongée est requise par la loi ou nécessaire pour constater, exercer ou défendre des droits en justice.",
           "Accès : L'accès humain est limité aux bénévoles autorisés de Clarvia traitant votre demande. Nos prestataires sous contrat ne peuvent traiter les données que dans la mesure nécessaire à la fourniture de leurs services à Clarvia et conformément à nos instructions.",
           "Veuillez partager uniquement les informations nécessaires pour nous permettre de vous aider. En particulier, évitez d'envoyer des informations sensibles inutiles concernant la famille, la santé, les finances, l'identification ou un deuil."
@@ -217,7 +214,7 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
 
   de: {
     title: "Datenschutz- und Cookie-Richtlinie",
-    lastUpdated: "Zuletzt aktualisiert: 24. Juli 2026",
+    lastUpdated: "Zuletzt aktualisiert: 11. August 2026",
     sections: [
       {
         heading: "1. Was Clarvia.org erhebt",
@@ -262,17 +259,14 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
         ]
       },
       {
-        heading: "5. Kontakt- und Unterstützungsanfragen",
+        heading: "5. Lex, Kontakt- und Unterstützungsanfragen",
         body: [
-          "Wenn Sie uns per E-Mail oder über ein Formular für eine kostenlose administrative Beratung oder Unterstützung im Trauerfall kontaktieren, verarbeiten wir die personenbezogenen Daten, die Sie uns mitteilen. Dies kann Ihren Namen, Ihre Kontaktdaten, Ihre bevorzugte Sprache, den Inhalt Ihrer Nachricht sowie alle von Ihnen bereitgestellten Dokumente oder sonstigen Informationen umfassen.",
-          "Wir verwenden diese Informationen ausschließlich, um Ihre Anfrage zu verstehen, mit Ihnen zu kommunizieren und Ihnen hilfreiche Unterstützung zu bieten.",
-          "Um eine genaue und sprachlich passende Antwort zu gewährleisten, können wir Werkzeuge der künstlichen Intelligenz, einschließlich großer Sprachmodelle (LLMs), verwenden, um:",
-          "• Nachrichten zu übersetzen;",
-          "• bei der Recherche und Informationsbeschaffung zu unterstützen; und",
-          "• Entwürfe für Antwortvorschläge zur Prüfung durch ein ehrenamtliches Mitglied von Clarvia zu erstellen.",
-          "Diese KI-Dienstanbieter handeln als Auftragsverarbeiter im Auftrag und nach Weisung von Clarvia. Wir nutzen nur Anbieter, die angemessene Auftragsverarbeitungsverträge anbieten. Gemäß unseren Vereinbarungen mit ihnen ist es ihnen nicht gestattet, die von Ihnen übermittelten Inhalte zum Training ihrer allgemeinen Modelle zu verwenden.",
-          "KI-Werkzeuge können unsere Ehrenamtlichen unterstützen, aber ein ehrenamtliches Mitglied von Clarvia bleibt für die an Sie gesendete Antwort verantwortlich.",
-          "Rechtsgrundlage: Die berechtigten Interessen von Clarvia gemäß Artikel 6 Abs. 1 lit. f DSGVO – konkret die präzise und effiziente Erbringung der von Ihnen angeforderten kostenlosen Beratung oder Unterstützung.",
+          "Wenn Sie Lex nutzen, uns per E-Mail kontaktieren oder ein Unterstützungsformular absenden, verarbeiten wir die Informationen, die für eine Antwort erforderlich sind. Dazu gehören Ihre E-Mail-Adresse, Ihre bevorzugte Sprache, der Inhalt Ihrer Nachricht, der bisherige E-Mail-Verlauf und die Adressen aller Personen, die Sie in die Unterhaltung einbeziehen.",
+          "Bitte nennen Sie in einer Frage an Lex keine Namen oder anderen identifizierenden Informationen über lebende Personen. Wenn ein Ihnen nahestehender Mensch unheilbar krank ist, beschreiben Sie die Situation, ohne die Person identifizierbar zu machen. Obwohl die DSGVO grundsätzlich nicht für verstorbene Personen gilt, können Informationen über einen Todesfall dennoch lebende Personen identifizieren oder betreffen. Teilen Sie daher bitte nur die notwendigen Informationen mit.",
+          "Lex ist Clarvias automatisierter Informationsdienst für Fragen rund um das Lebensende und die Zeit nach einem Todesfall. Wir verwenden Werkzeuge der künstlichen Intelligenz, einschließlich großer Sprachmodelle, um Nachrichten zu übersetzen, relevante Informationen zu recherchieren und verständliche Antworten mit Quellen und möglichen nächsten Schritten zu erstellen.",
+          "Antworten von Lex können automatisch und ohne vorherige Prüfung durch ein ehrenamtliches Mitglied von Clarvia versendet werden. Autorisierte Ehrenamtliche von Clarvia können Unterhaltungen anschließend zu Sicherheits-, Qualitäts- oder Unterstützungszwecken überprüfen.",
+          "Unsere KI- und Infrastruktur-Anbieter verarbeiten Informationen im Auftrag und nach Weisung von Clarvia. Wir nutzen Anbieter mit angemessenen Auftragsverarbeitungsverträgen. Gemäß unseren Vereinbarungen ist es ihnen nicht gestattet, Nachrichteninhalte zum Training ihrer allgemeinen Modelle zu verwenden.",
+          "Rechtsgrundlage: Die berechtigten Interessen von Clarvia gemäß Artikel 6 Absatz 1 Buchstabe f DSGVO, konkret die genaue und effiziente Bereitstellung der angeforderten kostenlosen Informationen oder Unterstützung.",
           "Speicherdauer: Wir bewahren die Korrespondenz so lange auf, wie es für die Erbringung der angeforderten Beratung oder Unterstützung und zur Gewährleistung der Kontinuität erforderlich ist, einschließlich der Fälle, in denen eine Angelegenheit ungelöst bleibt oder ein Weiterverfolgen über einen längeren Zeitraum erfordern kann. Wir überprüfen Anfragen regelmäßig, um festzustellen, ob die Korrespondenz noch benötigt wird. Sobald eine Angelegenheit abgeschlossen ist und keine weitere Nachverfolgung mehr zu erwarten ist, löschen oder anonymisieren wir die Korrespondenz, es sei denn, eine längere Aufbewahrung ist gesetzlich vorgeschrieben oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich.",
           "Zugriff: Der menschliche Zugriff ist auf autorisierte ehrenamtliche Mitarbeiter von Clarvia beschränkt, die Ihre Anfrage bearbeiten. Unsere vertraglich gebundenen Dienstanbieter dürfen die Daten nur soweit verarbeiten, wie dies zur Erbringung ihrer Dienstleistungen für Clarvia und gemäß unseren Anweisungen erforderlich ist.",
           "Bitte teilen Sie nur die Informationen mit, die für unsere Hilfe erforderlich sind. Vermeiden Sie insbesondere die Angabe unnötiger sensibler Familien-, Gesundheits-, Finanz-, Identifikations- oder Trauerfalldetails."
