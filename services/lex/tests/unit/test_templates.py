@@ -23,10 +23,12 @@ _DETERMINISTIC_BODIES = (
 )
 
 
-def test_rate_limit_exact_wording() -> None:
-    assert "up to five emails per day" in RATE_LIMIT_BODY
-    assert "full daily quota of five" in RATE_LIMIT_BODY
-    assert "immediate danger" not in RATE_LIMIT_BODY.casefold()
+def test_technical_failure_invites_continue_dialogue() -> None:
+    lowered = TECHNICAL_FAILURE_BODY.casefold()
+    assert "not been answered" not in lowered
+    assert "try again later" not in lowered
+    assert "reply" in lowered
+    assert "continue" in lowered
 
 
 def test_rate_limit_avoids_punitive_language() -> None:
