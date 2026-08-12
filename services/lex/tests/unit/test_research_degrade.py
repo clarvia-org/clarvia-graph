@@ -1,0 +1,90 @@
+"""Unit tests for research degrade (dialogue ladder)."""
+
+from __future__ import annotations
+
+from app.llm.research_degrade import degrade_failed_research_brief
+from app.llm.research_schema import ResearchImmediateAction, ResearchSource
+from tests.unit.test_two_pass import _brief
+
+
+def test_degrade_empty_answer_becomes_clarify() -> None:
+    brief = _brief(sources=[], immediate_actions=[], contacts=[])
+    degraded = degrade_failed_research_brief(
+        brief,
+        conversation_text=(
+            "My mother is in hospice in Luxembourg with only a few days remaining."
+        ),
+        last_error="answer_without_source",
+    )
+    assert degraded is not None
+    assert degraded.action == "clarify"
+    assert degraded.missing_fields
+    assert not degraded.sources
+    assert not degraded.immediate_actions
+
+
+def test_degrade_restores_answer_after_dropping_material_ungrounded_fact() -> None:
+    conversation = (
+        "My mother is in Haus Omega hospice in Luxembourg with only a few days "
+        "remaining. What should we prepare after she dies?"
+    )
+    brief = _brief(
+        user_facts=[
+            "Mother lives in Haus Omega hospice in Luxembourg",
+            "The family owns a vineyard in Chile",
+        ]
+    )
+    degraded = degrade_failed_research_brief(
+        brief,
+        conversation_text=conversation,
+        last_error="user_fact_not_grounded",
+        web_search_source_urls=frozenset(
+            {"https://guichet.public.lu", "https://fpf.lu"}
+        ),
+        web_search_calls=1,
+    )
+    assert degraded is not None
+    assert degraded.action == "answer"
+    assert "Chile" not in "\n".join(degraded.user_facts)
+    assert any("Luxembourg" in fact for fact in degraded.user_facts)
+
+
+def test_degrade_sets_explicit_clarify_action() -> None:
+    brief = _brief(
+        sources=[
+            ResearchSource(
+                id=1,
+                title="Guide",
+                publisher="X",
+                url="https://invented.example/nope",
+            )
+        ],
+        immediate_actions=[
+            ResearchImmediateAction(
+                id="A1",
+                action="Do something",
+                explanation="Ungrounded source only.",
+                timing="now",
+                handled_by=["family"],
+                documents=[],
+                source_ids=[1],
+                contact_ids=[],
+                required=True,
+            )
+        ],
+        contacts=[],
+    )
+    degraded = degrade_failed_research_brief(
+        brief,
+        conversation_text=(
+            "Father died yesterday after a car accident in Germany. What now?"
+        ),
+        last_error="unsupported_source_url",
+        web_search_source_urls=frozenset({"https://guichet.public.lu"}),
+        web_search_calls=1,
+    )
+    assert degraded is not None
+    assert degraded.action == "clarify"
+    assert "subdivision" in degraded.missing_fields or "death_country" in (
+        degraded.missing_fields
+    )

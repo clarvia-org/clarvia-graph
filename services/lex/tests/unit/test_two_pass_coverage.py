@@ -24,7 +24,6 @@ from app.llm.research_validation import ResearchValidationError, validate_resear
 from app.llm.writer_schema import LexWrittenResponse
 from app.llm.writer_validation import WriterValidationError, validate_written_response
 from app.pipeline.two_pass import (
-    TwoPassPipelineFailure,
     prepared_to_lex_response,
     run_two_pass_pipeline,
 )
@@ -268,7 +267,7 @@ def test_two_pass_writer_fallback_after_validation_failures() -> None:
     assert "Lex." in prepared.body_markdown
 
 
-def test_two_pass_research_failure_raises_after_retry() -> None:
+def test_two_pass_research_failure_degrades_to_clarify() -> None:
     bad = _brief(sources=[], immediate_actions=[])
     llm = FakeLlmAdapter(
         structured_responses=[
@@ -276,14 +275,16 @@ def test_two_pass_research_failure_raises_after_retry() -> None:
             _structured(bad.model_dump(mode="json"), response_id="r2"),
         ]
     )
-    with pytest.raises(TwoPassPipelineFailure):
-        run_two_pass_pipeline(
-            llm,
-            settings=_settings(),
-            parsed=_parsed(),
-            thread_messages=[_parsed()],
-            current_date_utc=datetime(2026, 7, 25, tzinfo=UTC),
-        )
+    prepared = run_two_pass_pipeline(
+        llm,
+        settings=_settings(),
+        parsed=_parsed(),
+        thread_messages=[_parsed()],
+        current_date_utc=datetime(2026, 7, 25, tzinfo=UTC),
+    )
+    assert prepared.action == "clarify"
+    assert prepared.body_markdown.rstrip().endswith("Lex.")
+    assert "sorry" in prepared.body_markdown.casefold()
 
 
 def test_valid_long_writer_body_passes() -> None:

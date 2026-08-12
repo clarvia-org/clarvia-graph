@@ -17,6 +17,7 @@ from app.domain.ports import LlmPort
 from app.llm.clarify_decline import render_clarification_body, render_decline_body
 from app.llm.deterministic_renderer import render_research_brief_fallback
 from app.llm.prompt_loader import load_prompt
+from app.llm.research_degrade import degrade_failed_research_brief
 from app.llm.research_schema import (
     LEX_RESEARCH_BRIEF_JSON_SCHEMA,
     RESEARCH_SCHEMA_VERSION,
@@ -254,6 +255,11 @@ def _run_research_with_retry(
     force_search = False
     correction: str | None = None
     max_tokens = int(_settings_value(settings, "research_max_output_tokens", 3200))
+    last_brief: LexResearchBrief | None = None
+    last_response_id: str | None = None
+    last_search_urls: frozenset[str] | None = None
+    last_search_calls: int | None = None
+    conversation_text = cleaned.conversation_text  # type: ignore[attr-defined]
     for _attempt in range(2):
         envelope = build_research_envelope(
             cleaned=cleaned,  # type: ignore[arg-type]
@@ -274,11 +280,15 @@ def _run_research_with_retry(
                 max_output_tokens=max_tokens,
             )
             brief = LexResearchBrief.model_validate(result.data)
+            last_brief = brief
+            last_response_id = result.openai_response_id
+            last_search_urls = result.web_search_source_urls
+            last_search_calls = result.web_search_calls
             validate_research_brief(
                 brief,
                 web_search_source_urls=result.web_search_source_urls,
                 web_search_calls=result.web_search_calls,
-                conversation_text=cleaned.conversation_text,  # type: ignore[attr-defined]
+                conversation_text=conversation_text,
             )
             return brief, result.openai_response_id
         except ResearchValidationError as exc:
@@ -295,6 +305,18 @@ def _run_research_with_retry(
                 "The previous research brief failed. Correct it using only the "
                 "cleaned conversation and verified web-search sources."
             )
+
+    if last_brief is not None:
+        degraded = degrade_failed_research_brief(
+            last_brief,
+            conversation_text=conversation_text,
+            last_error=last_error,
+            web_search_source_urls=last_search_urls,
+            web_search_calls=last_search_calls,
+        )
+        if degraded is not None:
+            return degraded, last_response_id
+
     raise TwoPassPipelineFailure(str(last_error), attempt_count=2)
 
 
