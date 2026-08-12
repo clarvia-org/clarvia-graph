@@ -172,6 +172,7 @@ def validate_written_response(
     brief: LexResearchBrief,
     *,
     latest_user_message: str = "",
+    conversation_text: str = "",
 ) -> None:
     body = written.body_markdown
     action_ids = {action.id for action in brief.immediate_actions}
@@ -224,6 +225,7 @@ def validate_written_response(
         text=body,
         safety_status=brief.safety_status,
         user_facts=brief.user_facts,
+        conversation_text=conversation_text or latest_user_message,
     )
     if scenario_code:
         raise WriterValidationError(scenario_code)

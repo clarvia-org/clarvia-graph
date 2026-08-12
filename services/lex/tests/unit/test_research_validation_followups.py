@@ -5,11 +5,24 @@ from __future__ import annotations
 import pytest
 from app.llm.research_schema import (
     ResearchContact,
+    ResearchImmediateAction,
     ResearchJurisdiction,
     ResearchSource,
 )
-from app.llm.research_validation import ResearchValidationError, validate_research_brief
+from app.llm.research_validation import (
+    ResearchValidationError,
+    fact_is_material,
+    validate_research_brief,
+)
 from tests.unit.test_two_pass import _brief
+
+
+def test_fact_is_material_place_and_exceptional() -> None:
+    assert fact_is_material("The family owns a vineyard in Chile")
+    assert fact_is_material("There was a car accident last night")
+    assert not fact_is_material(
+        "Relatives are coordinating privately about paperwork tonight"
+    )
 
 
 def test_same_site_language_path_variant_emits_search_url() -> None:
@@ -353,3 +366,139 @@ def test_non_contiguous_ids_are_renumbered() -> None:
     assert brief.contacts[0].source_id == 1
     assert brief.contacts[1].source_id == 2
     assert [action.id for action in brief.immediate_actions] == ["A1", "A2", "A3"]
+
+
+def test_drops_ungrounded_non_material_user_facts() -> None:
+    conversation = (
+        "My mother is in Haus Omega hospice in Luxembourg with only a few days "
+        "remaining. What should we prepare after she dies?"
+    )
+    brief = _brief(
+        user_facts=[
+            "Mother lives in Haus Omega hospice in Luxembourg",
+            "Relatives are coordinating privately about paperwork tonight",
+        ]
+    )
+    validate_research_brief(
+        brief,
+        web_search_source_urls=frozenset(
+            {"https://guichet.public.lu", "https://fpf.lu"}
+        ),
+        web_search_calls=1,
+        conversation_text=conversation,
+    )
+    assert brief.user_facts == [
+        "Mother lives in Haus Omega hospice in Luxembourg",
+    ]
+
+
+def test_accident_in_conversation_allows_exceptional_actions_without_fact_copy() -> None:
+    conversation = (
+        "A luxembourgish/polish couple had a car accident in germany last evening. "
+        "The husband died on the spot. What should we do first for the children "
+        "in Luxembourg?"
+    )
+    brief = _brief(
+        situation_stage="recent_death",
+        user_facts=[
+            "Luxembourgish husband died after a crash in Germany",
+            "Children are currently in Luxembourg",
+        ],
+        immediate_actions=[
+            ResearchImmediateAction(
+                id="A1",
+                action="Contact the police station handling the accident for the reference number",
+                explanation="German police hold the case file for the crash.",
+                timing="now",
+                handled_by=["family"],
+                documents=[],
+                source_ids=[1],
+                contact_ids=[],
+                required=True,
+            ),
+            ResearchImmediateAction(
+                id="A2",
+                action="Ask Luxembourg child support services about temporary care",
+                explanation="Children need a lawful care arrangement.",
+                timing="now",
+                handled_by=["family"],
+                documents=[],
+                source_ids=[1],
+                contact_ids=[1],
+                required=True,
+            ),
+            ResearchImmediateAction(
+                id="A3",
+                action="Contact the Luxembourg consular service in Germany",
+                explanation="Consular help after a death abroad.",
+                timing="now",
+                handled_by=["family"],
+                documents=[],
+                source_ids=[1],
+                contact_ids=[],
+                required=True,
+            ),
+        ],
+    )
+    validate_research_brief(
+        brief,
+        web_search_source_urls=frozenset(
+            {"https://guichet.public.lu", "https://fpf.lu"}
+        ),
+        web_search_calls=1,
+        conversation_text=conversation,
+    )
+
+
+def test_hospice_still_rejects_invented_police_actions() -> None:
+    conversation = (
+        "My mother is in Haus Omega hospice in Luxembourg with only a few days "
+        "remaining. What should we prepare after she dies?"
+    )
+    brief = _brief(
+        immediate_actions=[
+            ResearchImmediateAction(
+                id="A1",
+                action="Call the police to report the expected death",
+                explanation="Invented exceptional step.",
+                timing="now",
+                handled_by=["family"],
+                documents=[],
+                source_ids=[1],
+                contact_ids=[],
+                required=True,
+            ),
+            ResearchImmediateAction(
+                id="A2",
+                action="Prepare identity documents for the death declaration",
+                explanation="The commune will need ID documents soon after death.",
+                timing="before_death",
+                handled_by=["family"],
+                documents=["ID cards"],
+                source_ids=[1],
+                contact_ids=[],
+                required=True,
+            ),
+            ResearchImmediateAction(
+                id="A3",
+                action="Compare funeral directors or use a recognised directory",
+                explanation="A funeral director can handle many formalities.",
+                timing="next_few_days",
+                handled_by=["family"],
+                documents=[],
+                source_ids=[2],
+                contact_ids=[2, 3],
+                required=True,
+            ),
+        ]
+    )
+    with pytest.raises(ResearchValidationError) as exc:
+        validate_research_brief(
+            brief,
+            web_search_source_urls=frozenset(
+                {"https://guichet.public.lu", "https://fpf.lu"}
+            ),
+            web_search_calls=1,
+            conversation_text=conversation,
+        )
+    assert exc.value.code == "unsupported_exceptional_scenario"

@@ -8,7 +8,10 @@ from collections.abc import Collection
 from urllib.parse import urlparse
 
 from app.llm.research_schema import LexResearchBrief
-from app.llm.scenario_validation import validate_no_unsupported_scenarios
+from app.llm.scenario_validation import (
+    exceptional_scenario_hits,
+    validate_no_unsupported_scenarios,
+)
 from app.llm.url_normalize import (
     is_http_or_https_url,
     match_search_url,
@@ -201,8 +204,9 @@ def _research_retry_instruction(code: str) -> str:
             "supported by its cited source. Remove unsupported contact details."
         ),
         "user_fact_not_grounded": (
-            "The previous research brief included user_facts that are not present in "
-            "the cleaned conversation. Keep only facts stated by the user."
+            "The previous research brief included material user_facts that are not "
+            "present in the cleaned conversation. Keep only facts stated by the user; "
+            "do not invent places, accidents, or other material claims."
         ),
         "deferred_topic_in_immediate_actions": (
             "The previous research brief put later administrative topics into "
@@ -212,7 +216,8 @@ def _research_retry_instruction(code: str) -> str:
         ),
         "unsupported_exceptional_scenario": (
             "The previous research brief introduced police, emergency services, or "
-            "another exceptional scenario unsupported by user_facts. Remove it."
+            "another exceptional scenario unsupported by the conversation or "
+            "user_facts. Remove it unless the user already described that situation."
         ),
         "missing_field_already_known": (
             "The previous research brief listed a missing_field that is already known "
@@ -374,6 +379,19 @@ def _fact_tokens(fact: str) -> list[str]:
     ]
 
 
+def fact_is_material(fact: str) -> bool:
+    """True when an ungegrounded fact must not be silently dropped.
+
+    Material means place/jurisdiction claims (``_MATERIAL_CLAIM_TOKENS``) or
+    exceptional-scenario invention claims (accident/police/…). This is not a
+    content-safety refusal layer.
+    """
+    tokens = set(_fact_tokens(fact))
+    if tokens & _MATERIAL_CLAIM_TOKENS:
+        return True
+    return bool(exceptional_scenario_hits(fact))
+
+
 def _fact_grounded(fact: str, conversation_text: str) -> bool:
     folded = conversation_text.casefold()
     fact_lower = fact.casefold()
@@ -404,6 +422,28 @@ def _fact_grounded(fact: str, conversation_text: str) -> bool:
     return False
 
 
+def _repair_user_facts(brief: LexResearchBrief, conversation_text: str) -> None:
+    """Drop ungegrounded non-material facts; raise on ungegrounded material facts."""
+    if len(conversation_text.strip()) < 30:
+        return
+    kept: list[str] = []
+    dropped_non_material: list[str] = []
+    for fact in brief.user_facts:
+        if _fact_grounded(fact, conversation_text):
+            kept.append(fact)
+            continue
+        if fact_is_material(fact):
+            raise ResearchValidationError("user_fact_not_grounded")
+        dropped_non_material.append(fact)
+    if dropped_non_material:
+        _LOG.info(
+            "Dropped %s ungegrounded non-material user_facts: %s",
+            len(dropped_non_material),
+            dropped_non_material,
+        )
+    brief.user_facts = kept
+
+
 def validate_research_brief(
     brief: LexResearchBrief,
     *,
@@ -428,7 +468,6 @@ def validate_research_brief(
 
     source_id_set = set(source_ids)
     contact_id_set = set(contact_ids)
-    sources_by_id = {source.id: source for source in brief.sources}
     for contact in brief.contacts:
         _require(
             contact.source_id in source_id_set,
@@ -449,6 +488,9 @@ def validate_research_brief(
                 "Action references a missing contact.",
             )
 
+    # Repair facts before exceptional gating so drops cannot erase conversation truth.
+    _repair_user_facts(brief, conversation_text)
+
     action_blob = "\n".join(
         f"{item.action}\n{item.explanation}" for item in brief.immediate_actions
     )
@@ -456,6 +498,7 @@ def validate_research_brief(
         text=action_blob,
         safety_status=brief.safety_status,
         user_facts=brief.user_facts,
+        conversation_text=conversation_text,
     )
     if scenario_code:
         raise ResearchValidationError(scenario_code)
@@ -465,12 +508,6 @@ def validate_research_brief(
     for action in brief.immediate_actions:
         if action.action.casefold() in completed_folded:
             raise ResearchValidationError("completed_action_repeated")
-
-    # Grounding needs enough conversation context to be meaningful.
-    if len(conversation_text.strip()) >= 30:
-        for fact in brief.user_facts:
-            if not _fact_grounded(fact, conversation_text):
-                raise ResearchValidationError("user_fact_not_grounded")
 
     for field in brief.missing_fields:
         role = _MISSING_FIELD_JURISDICTION_ROLE.get(field)
@@ -554,4 +591,8 @@ def validate_research_brief(
         brief.contacts = []
 
 
-__all__ = ["ResearchValidationError", "validate_research_brief"]
+__all__ = [
+    "ResearchValidationError",
+    "fact_is_material",
+    "validate_research_brief",
+]

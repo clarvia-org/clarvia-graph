@@ -205,6 +205,7 @@ def run_two_pass_pipeline(
         settings=settings,
         system_prompt=writer_prompt,
         latest_user_message=cleaned.latest_user_message,
+        conversation_text=cleaned.conversation_text,
         relevant_history=relevant,
         brief=brief,
     )
@@ -303,6 +304,7 @@ def _run_writer_with_retry(
     settings: object,
     system_prompt: str,
     latest_user_message: str,
+    conversation_text: str,
     relevant_history: list,
     brief: LexResearchBrief,
 ) -> tuple[LexWrittenResponse, bool, str | None]:
@@ -332,6 +334,7 @@ def _run_writer_with_retry(
                 written,
                 brief,
                 latest_user_message=latest_user_message,
+                conversation_text=conversation_text,
             )
             return written, False, result.openai_response_id
         except WriterValidationError as exc:
