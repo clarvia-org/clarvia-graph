@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from app.llm.research_degrade import degrade_failed_research_brief
 from app.llm.research_schema import ResearchImmediateAction, ResearchSource
+from app.llm.research_validation import validate_research_brief
 from tests.unit.test_two_pass import _brief
 
 
@@ -88,3 +89,48 @@ def test_degrade_sets_explicit_clarify_action() -> None:
     assert "subdivision" in degraded.missing_fields or "death_country" in (
         degraded.missing_fields
     )
+
+
+def test_sparse_first_turn_degrades_to_clarify_with_asks() -> None:
+    """Weak input still yields a dialogue move, not silence."""
+    brief = _brief(
+        sources=[],
+        contacts=[],
+        immediate_actions=[],
+        user_facts=[],
+        jurisdictions=[],
+    )
+    degraded = degrade_failed_research_brief(
+        brief,
+        conversation_text="My father died. What do I do?",
+        last_error="answer_without_source",
+    )
+    assert degraded is not None
+    assert degraded.action == "clarify"
+    assert degraded.missing_fields
+    assert "death_country" in degraded.missing_fields
+
+
+def test_second_turn_facts_allow_answer_path() -> None:
+    """After clarify asks are answered, a grounded brief can answer."""
+    conversation = (
+        "My father died in Luxembourg yesterday. He lived in Luxembourg City. "
+        "What should we do first?"
+    )
+    brief = _brief(
+        situation_stage="recent_death",
+        user_facts=[
+            "Father died in Luxembourg yesterday",
+            "He lived in Luxembourg City",
+        ],
+    )
+    validate_research_brief(
+        brief,
+        web_search_source_urls=frozenset(
+            {"https://guichet.public.lu", "https://fpf.lu"}
+        ),
+        web_search_calls=1,
+        conversation_text=conversation,
+    )
+    assert brief.action == "answer"
+    assert len(brief.immediate_actions) >= 3

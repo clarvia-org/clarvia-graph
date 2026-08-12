@@ -176,7 +176,7 @@ def test_http_and_non_lu_host_grounded_in_search() -> None:
     assert brief.contacts[0].website == search_http
 
 
-def test_ungrounded_host_rejected() -> None:
+def test_ungrounded_host_rejected_when_no_source_remains() -> None:
     brief = _brief(
         sources=[
             ResearchSource(
@@ -187,9 +187,9 @@ def test_ungrounded_host_rejected() -> None:
             ),
             ResearchSource(
                 id=2,
-                title="Funeral federation members",
-                publisher="FPF",
-                url="https://fpf.lu",
+                title="Other blog",
+                publisher="Example",
+                url="https://medium.com/other-post",
             ),
         ]
     )
@@ -208,7 +208,46 @@ def test_ungrounded_host_rejected() -> None:
     assert exc.value.code == "unsupported_source_url"
 
 
-def test_invented_contact_website_rejected() -> None:
+def test_soft_strips_partial_ungrounded_sources() -> None:
+    brief = _brief(
+        sources=[
+            ResearchSource(
+                id=1,
+                title="Declaring a death",
+                publisher="Guichet.lu",
+                url="https://guichet.public.lu",
+            ),
+            ResearchSource(
+                id=2,
+                title="Blog post",
+                publisher="Medium",
+                url="https://medium.com/some-bereavement-post",
+            ),
+        ]
+    )
+    # Remap funeral contacts onto the grounded source so soft-strip can keep them.
+    brief.contacts = [
+        contact.model_copy(update={"source_id": 1}) for contact in brief.contacts
+    ]
+    brief.immediate_actions = [
+        action.model_copy(update={"source_ids": [1], "contact_ids": []})
+        for action in brief.immediate_actions
+    ]
+    validate_research_brief(
+        brief,
+        web_search_source_urls=frozenset({"https://guichet.public.lu"}),
+        web_search_calls=1,
+        conversation_text=(
+            "My mother is in Haus Omega hospice in Luxembourg with only a few days "
+            "remaining. What should we prepare after she dies?"
+        ),
+    )
+    assert len(brief.sources) == 1
+    assert brief.sources[0].url == "https://guichet.public.lu"
+    assert len(brief.immediate_actions) == 3
+
+
+def test_soft_strips_invented_contact_website() -> None:
     brief = _brief(
         contacts=[
             ResearchContact(
@@ -249,19 +288,21 @@ def test_invented_contact_website_rejected() -> None:
             ),
         ]
     )
-    with pytest.raises(ResearchValidationError) as exc:
-        validate_research_brief(
-            brief,
-            web_search_source_urls=frozenset(
-                {"https://guichet.public.lu", "https://fpf.lu"}
-            ),
-            web_search_calls=1,
-            conversation_text=(
-                "My mother is in Haus Omega hospice in Luxembourg with only a few days "
-                "remaining. What should we prepare after she dies?"
-            ),
-        )
-    assert exc.value.code == "unsupported_contact_website"
+    validate_research_brief(
+        brief,
+        web_search_source_urls=frozenset(
+            {"https://guichet.public.lu", "https://fpf.lu"}
+        ),
+        web_search_calls=1,
+        conversation_text=(
+            "My mother is in Haus Omega hospice in Luxembourg with only a few days "
+            "remaining. What should we prepare after she dies?"
+        ),
+    )
+    assert all(
+        "totally-invented" not in contact.website for contact in brief.contacts
+    )
+    assert len(brief.contacts) == 2
 
 
 def test_non_english_rejects_material_english_hallucination() -> None:
@@ -347,6 +388,41 @@ def test_non_contiguous_ids_are_renumbered() -> None:
                 commercial=True,
                 note="Orientation only",
                 source_id=7,
+            ),
+        ],
+        immediate_actions=[
+            ResearchImmediateAction(
+                id="A1",
+                action="Ask hospice staff what they arrange at the time of death",
+                explanation="Hospice teams usually involve the treating doctor.",
+                timing="now",
+                handled_by=["Haus Omega staff", "treating doctor"],
+                documents=[],
+                source_ids=[4],
+                contact_ids=[9],
+                required=True,
+            ),
+            ResearchImmediateAction(
+                id="A2",
+                action="Prepare identity documents for the death declaration",
+                explanation="The commune will need ID documents soon after death.",
+                timing="before_death",
+                handled_by=["family"],
+                documents=["ID cards"],
+                source_ids=[4],
+                contact_ids=[],
+                required=True,
+            ),
+            ResearchImmediateAction(
+                id="A3",
+                action="Compare funeral directors or use a recognised directory",
+                explanation="A funeral director can handle many formalities.",
+                timing="next_few_days",
+                handled_by=["family", "funeral director"],
+                documents=[],
+                source_ids=[7],
+                contact_ids=[2, 3],
+                required=True,
             ),
         ],
     )

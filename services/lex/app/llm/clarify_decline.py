@@ -8,24 +8,29 @@ _CLARIFY_TEMPLATES: dict[str, str] = {
     "death_country+residence_country": (
         "I'm very sorry. Which country did the person die in, and in which country "
         "did they normally live?\n\n"
-        "Those details determine the authorities, documents and deadlines."
+        "Those details determine the authorities, documents and deadlines. "
+        "Reply with what you know and we can take the next steps from there."
     ),
     "death_country": (
         "I'm very sorry. Which country did the death occur in?\n\n"
-        "That determines which authorities handle the declaration and certificates."
+        "That determines which authorities handle the declaration and certificates. "
+        "Reply when you can and I'll continue."
     ),
     "residence_country": (
         "I'm very sorry. In which country did the person normally live?\n\n"
-        "That helps identify the right authorities and next steps."
+        "That helps identify the right authorities and next steps. "
+        "Reply with that detail and I'll continue."
     ),
     "death_or_planning_status": (
         "I'm very sorry. Has the person already died, or are you preparing for an "
         "expected death?\n\n"
-        "The first steps differ in those situations."
+        "The first steps differ in those situations. Reply with which applies and "
+        "I'll continue."
     ),
     "default": (
         "I'm very sorry. I need one or two details before I can give accurate next "
-        "steps: {fields}."
+        "steps: {fields}.\n\n"
+        "Reply in this thread when you can — we can take this step by step."
     ),
 }
 

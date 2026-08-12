@@ -108,9 +108,10 @@ ATTACHMENT_ONLY_BODY = (
 )
 
 TECHNICAL_FAILURE_BODY = (
-    "I\u2019m sorry, but Lex could not prepare a reliable response to this "
-    "request. Please try again later. Your question has not been answered."
-    "\n\nLex."
+    "I\u2019m sorry \u2014 this is a lot to hold at once, and I couldn\u2019t finish "
+    "a full verified answer in one pass. Reply with the country (or countries) "
+    "involved, the city or commune if you know it, and the main thing you need "
+    "help with first. I\u2019ll continue from there.\n\nLex."
 )
 
 TEMPORARY_UNAVAILABILITY_BODY = (

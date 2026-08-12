@@ -284,38 +284,99 @@ def _canonicalise_brief_urls(
     *,
     web_search_source_urls: Collection[str] | None,
 ) -> None:
-    """Rewrite source/contact URLs to matched search URLs when evidence exists."""
+    """Rewrite matched URLs; drop ungegrounded sources/contacts (soft strip).
+
+    Keeps the dialogue alive when some cites are grounded. Raises only when no
+    grounded source remains.
+    """
     if web_search_source_urls is None:
         return
     search_list = list(web_search_source_urls)
-    new_sources = []
+    kept_sources = []
+    dropped_source_urls: list[str] = []
+    old_to_new: dict[int, int] = {}
     for source in brief.sources:
         matched = match_search_url(source.url, search_list)
         if matched is None:
-            raise ResearchValidationError(
-                "unsupported_source_url",
-                "Source URL was not returned by web search.",
-            )
-        new_sources.append(source.model_copy(update={"url": matched}))
-    brief.sources = new_sources
+            dropped_source_urls.append(source.url)
+            continue
+        new_id = len(kept_sources) + 1
+        old_to_new[source.id] = new_id
+        kept_sources.append(source.model_copy(update={"id": new_id, "url": matched}))
+    if dropped_source_urls:
+        _LOG.info(
+            "Soft-stripped %s ungegrounded source URLs: %s",
+            len(dropped_source_urls),
+            dropped_source_urls,
+        )
+    if not kept_sources:
+        raise ResearchValidationError(
+            "unsupported_source_url",
+            "Source URL was not returned by web search.",
+        )
+    brief.sources = kept_sources
 
-    sources_by_id = {source.id: source for source in brief.sources}
-    new_contacts = []
+    kept_contacts = []
+    dropped_contacts = 0
+    old_contact_to_new: dict[int, int] = {}
     for contact in brief.contacts:
-        source = sources_by_id.get(contact.source_id)
-        source_url = source.url if source is not None else None
+        new_source_id = old_to_new.get(contact.source_id)
+        if new_source_id is None:
+            dropped_contacts += 1
+            continue
+        source = next(s for s in brief.sources if s.id == new_source_id)
         resolved = _resolve_contact_website(
             contact.website,
-            source_url=source_url,
+            source_url=source.url,
             search_urls=search_list,
         )
         if resolved is None:
-            raise ResearchValidationError(
-                "unsupported_contact_website",
-                "Contact website is not related to its cited source.",
+            dropped_contacts += 1
+            continue
+        new_id = len(kept_contacts) + 1
+        old_contact_to_new[contact.id] = new_id
+        kept_contacts.append(
+            contact.model_copy(
+                update={
+                    "id": new_id,
+                    "source_id": new_source_id,
+                    "website": resolved,
+                }
             )
-        new_contacts.append(contact.model_copy(update={"website": resolved}))
-    brief.contacts = new_contacts
+        )
+    if dropped_contacts:
+        _LOG.info("Soft-stripped %s ungegrounded contacts", dropped_contacts)
+    brief.contacts = kept_contacts
+
+    kept_actions = []
+    for action in brief.immediate_actions:
+        new_source_ids = [
+            old_to_new[source_id]
+            for source_id in action.source_ids
+            if source_id in old_to_new
+        ]
+        if not new_source_ids:
+            continue
+        new_contact_ids = [
+            old_contact_to_new[contact_id]
+            for contact_id in action.contact_ids
+            if contact_id in old_contact_to_new
+        ]
+        kept_actions.append(
+            action.model_copy(
+                update={
+                    "id": f"A{len(kept_actions) + 1}",
+                    "source_ids": new_source_ids,
+                    "contact_ids": new_contact_ids,
+                }
+            )
+        )
+    if len(kept_actions) < len(brief.immediate_actions):
+        _LOG.info(
+            "Soft-stripped %s actions that lost all grounded sources",
+            len(brief.immediate_actions) - len(kept_actions),
+        )
+    brief.immediate_actions = kept_actions
 
 
 def _renumber_brief_ids(brief: LexResearchBrief) -> None:
@@ -523,18 +584,22 @@ def validate_research_brief(
             "answer_research_not_adequate",
             "Answer requires adequate research.",
         )
-        _require(bool(brief.sources), "answer_without_source", "Answer needs sources.")
-        _require(
-            bool(brief.immediate_actions),
-            "answer_without_action",
-            "Answer needs immediate actions.",
-        )
         if web_search_calls is not None:
             _require(
                 web_search_calls >= 1,
                 "answer_without_search",
                 "Answer requires web search.",
             )
+        # Soft-strip ungegrounded URLs before emptiness / count checks.
+        _canonicalise_brief_urls(
+            brief, web_search_source_urls=web_search_source_urls
+        )
+        _require(bool(brief.sources), "answer_without_source", "Answer needs sources.")
+        _require(
+            bool(brief.immediate_actions),
+            "answer_without_action",
+            "Answer needs immediate actions.",
+        )
         if brief.situation_stage in {"imminent_death", "recent_death"}:
             count = len(brief.immediate_actions)
             _require(
@@ -566,10 +631,6 @@ def validate_research_brief(
                     "focused_follow_up_irrelevant",
                     "Focused follow-up actions must address current_question.",
                 )
-
-        _canonicalise_brief_urls(
-            brief, web_search_source_urls=web_search_source_urls
-        )
 
     elif brief.action == "clarify":
         _require(
