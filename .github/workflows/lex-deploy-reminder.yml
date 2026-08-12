@@ -1,0 +1,57 @@
+# SPDX-FileCopyrightText: 2025-2026 CLARVIA ASBL, Luxembourg
+# SPDX-License-Identifier: EUPL-1.2
+
+# Reminder only — does not deploy. Lex images include private prompts and
+# must be built locally, then pushed to Artifact Registry / Cloud Run.
+name: Lex deploy reminder
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "services/lex/**"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  remind:
+    name: Open Cloud Run deploy checklist
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create or update deploy reminder issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA: ${{ github.sha }}
+          COMMIT_URL: ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}
+        run: |
+          set -euo pipefail
+          SHORT="${SHA:0:7}"
+          TITLE="Deploy Lex to Cloud Run — ${SHORT}"
+          BODY=$(cat <<EOF
+          Commit [\`${SHORT}\`](${COMMIT_URL}) touched \`services/lex/\` and is now on \`main\`.
+
+          This workflow **does not deploy**. Build locally (private prompts) then push the image.
+
+          Runbook: \`services/lex/docs/runbooks/deploy.md\`
+
+          **Deploy checklist** (from \`services/lex/\`):
+          - [ ] \`uv run pytest\` (or \`make check\`)
+          - [ ] \`IMAGE_TAG=\$(date -u +%Y%m%d-%H%M%S)\` then \`./scripts/build-image.sh\`
+          - [ ] \`./scripts/push-image.sh\`
+          - [ ] Deploy **image only** — do not run \`deploy-cloud-run.sh\` as-is (it resets \`PROCESSING_MODE=disabled\`)
+          - [ ] \`gcloud run deploy lex-email-service --region=europe-west1 --image=… --no-allow-unauthenticated\`
+          - [ ] Confirm new revision is Ready and \`PROCESSING_MODE=public\` is still set
+          - [ ] Authenticated \`GET /health\`
+          - [ ] Close this issue
+          EOF
+          )
+          # Strip the common leading indent from the YAML block.
+          BODY=$(printf '%s\n' "$BODY" | sed 's/^          //')
+          EXISTING=$(gh issue list --repo "${{ github.repository }}" --state open --label lex-deploy --json number,title --jq '[.[] | select(.title | startswith("Deploy Lex to Cloud Run —")) | .number] | first // empty')
+          if [ -n "${EXISTING}" ]; then
+            gh issue comment "${EXISTING}" --repo "${{ github.repository }}" --body "Another Lex change landed on \`main\`: [\`${SHORT}\`](${COMMIT_URL}). Keep one open checklist; deploy the latest image after this commit."
+          else
+            gh issue create --repo "${{ github.repository }}" --title "${TITLE}" --label ops --label lex-deploy --body "${BODY}"
+          fi
