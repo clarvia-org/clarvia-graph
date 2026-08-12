@@ -38,6 +38,27 @@ _IAM_SIGN_SCOPES: tuple[str, ...] = (
 #: Gmail addresses the delegated mailbox as "me" once impersonation is set up.
 USER_ID = "me"
 
+_TRANSIENT_GMAIL_ERRORS = (
+    BrokenPipeError,
+    ConnectionError,
+    TimeoutError,
+    OSError,
+)
+
+
+def _execute_with_transient_retry(operation: Any, *, attempts: int = 3) -> Any:
+    """Retry Gmail/auth transport blips (BrokenPipe during token refresh)."""
+    last_exc: BaseException | None = None
+    for attempt in range(attempts):
+        try:
+            return operation()
+        except _TRANSIENT_GMAIL_ERRORS as exc:
+            last_exc = exc
+            if attempt + 1 >= attempts:
+                raise
+    assert last_exc is not None
+    raise last_exc
+
 
 def build_gmail_service(settings: Settings) -> Any:  # pragma: no cover - needs GCP
     """Build a domain-delegated Gmail client for the configured mailbox.
@@ -202,8 +223,8 @@ class GoogleGmailAdapter:
         if thread_id:
             body["threadId"] = thread_id
         try:
-            response = (
-                self._messages()
+            response = _execute_with_transient_retry(
+                lambda: self._messages()
                 .send(
                     userId=USER_ID,
                     body=body,
@@ -226,8 +247,8 @@ class GoogleGmailAdapter:
         outbound_message_id: str,
         request_id: str,
     ) -> str | None:
-        thread = (
-            self.service.users()
+        thread = _execute_with_transient_retry(
+            lambda: self.service.users()
             .threads()
             .get(
                 userId=USER_ID,

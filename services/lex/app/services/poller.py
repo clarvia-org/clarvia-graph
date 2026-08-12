@@ -42,6 +42,7 @@ class PollResult:
     enqueued: int = 0
     already_pending: int = 0
     failed: int = 0
+    recovered: int = 0
 
     def as_dict(self) -> dict[str, int | str]:
         return {
@@ -50,6 +51,7 @@ class PollResult:
             "enqueued": self.enqueued,
             "already_pending": self.already_pending,
             "failed": self.failed,
+            "recovered": self.recovered,
         }
 
 
@@ -113,15 +115,55 @@ class Poller:
             else:
                 already_pending += 1
 
+        recovered = self._recover_expired_leases()
+
         result = PollResult(
             status=POLL_STATUS_COMPLETED,
             discovered=len(refs),
             enqueued=enqueued,
             already_pending=already_pending,
             failed=failed,
+            recovered=recovered,
         )
         log_event(_logger, "poll_completed", status=POLL_STATUS_COMPLETED)
         return result
+
+    def _recover_expired_leases(self) -> int:
+        """Re-enqueue messages stuck in processing after an expired lease.
+
+        Covers the failure mode where a worker crashes after lease acquire and
+        Cloud Tasks stops retrying (e.g. earlier lease_held returned HTTP 200).
+        """
+        recovered = 0
+        now = self._clock.now()
+        for record in self._state.list_expired_processing_leases(now=now):
+            ref = GmailMessageRef(
+                message_id=record.message_key, thread_id=record.thread_id
+            )
+            try:
+                outcome = self._tasks.enqueue_process(ref)
+            except Exception:
+                log_event(
+                    _logger,
+                    "poll_recovery_failed",
+                    gmail_message_id=record.message_key,
+                    gmail_thread_id=record.thread_id,
+                    error_code="poll_recovery_failed",
+                )
+                continue
+            recovered += 1
+            log_event(
+                _logger,
+                "message_recovered",
+                gmail_message_id=record.message_key,
+                gmail_thread_id=record.thread_id,
+                status=(
+                    "enqueued"
+                    if outcome is EnqueueOutcome.CREATED
+                    else "already_pending"
+                ),
+            )
+        return recovered
 
     def _discover(self, ref: GmailMessageRef) -> EnqueueOutcome:
         key = message_key(ref.message_id)

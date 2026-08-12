@@ -68,6 +68,7 @@ PROCESS_STATUS_LEASE_HELD = "lease_held"
 PROCESS_STATUS_ALREADY_DONE = "already_done"
 PROCESS_STATUS_SENT = "sent"
 PROCESS_STATUS_FAILED = "failed"
+PROCESS_STATUS_QUEUED = "queued"
 
 
 @dataclass(frozen=True, slots=True)
@@ -158,10 +159,63 @@ class Processor:
             )
 
         attempt_count = decision.record.attempt_count if decision.record else 0
+        try:
+            return self._run_after_lease(
+                key,
+                thread_id=thread_id,
+                attempt_count=attempt_count,
+            )
+        except Exception as exc:
+            # Clear the lease so Cloud Tasks retries can acquire immediately
+            # instead of waiting out lease_duration_seconds.
+            code = getattr(exc, "code", None) or type(exc).__name__
+            self._state.mark_status(
+                key,
+                ProcessingStatus.QUEUED,
+                error_code=f"crash:{code}"[:120],
+            )
+            log_event(
+                _logger,
+                "process_crash_requeued",
+                gmail_message_id=key,
+                status=PROCESS_STATUS_QUEUED,
+                error_code=str(code)[:80],
+            )
+            raise
+
+    def _run_after_lease(
+        self,
+        key: str,
+        *,
+        thread_id: str | None,
+        attempt_count: int,
+    ) -> ProcessResult:
         record = self._state.get_record(key)
         resolved_thread = thread_id or (record.thread_id if record else "")
         ref = GmailMessageRef(message_id=key, thread_id=resolved_thread)
         parsed = self._gmail.fetch_parsed_message(ref)
+
+        if attempt_count > self._settings.max_process_attempts:
+            lex_addresses = frozenset(
+                {
+                    self._settings.lex_mailbox.lower(),
+                    *self._settings.resolved_lex_aliases,
+                }
+            )
+            recipients = build_reply_recipients(
+                from_address=parsed.from_address,
+                reply_to=parsed.reply_to,
+                to_addresses=parsed.to_addresses,
+                cc_addresses=parsed.cc_addresses,
+                lex_addresses=lex_addresses,
+            )
+            return self._send_technical_failure(
+                key,
+                parsed=parsed,
+                recipients=recipients,
+                attempt_count=attempt_count,
+                error_code="max_process_attempts",
+            )
 
         auto = check_auto_ignore(parsed, self._settings)
         if auto.should_ignore:
