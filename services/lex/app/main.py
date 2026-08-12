@@ -128,11 +128,25 @@ def create_app(
         return poller.run().as_dict()
 
     @app.post("/internal/process", dependencies=[Depends(require_internal_token)])
-    async def internal_process(payload: ProcessRequest) -> dict[str, int | str]:
+    async def internal_process(payload: ProcessRequest) -> JSONResponse:
+        """Process one message.
+
+        ``lease_held`` must not return HTTP 200: Cloud Tasks treats 2xx as
+        success and stops retrying, which permanently strands a message when the
+        first worker crashes after acquiring the lease.
+        """
+        from app.services.processor import PROCESS_STATUS_LEASE_HELD
+
         result = processor.run(
             gmail_message_id=payload.gmail_message_id, thread_id=payload.thread_id
         )
-        return result.as_dict()
+        body = result.as_dict()
+        if result.status == PROCESS_STATUS_LEASE_HELD:
+            return JSONResponse(
+                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                content=body,
+            )
+        return JSONResponse(status_code=status.HTTP_200_OK, content=body)
 
     @app.post("/internal/retention", dependencies=[Depends(require_internal_token)])
     async def internal_retention() -> dict[str, int]:

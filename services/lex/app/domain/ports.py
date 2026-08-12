@@ -151,6 +151,16 @@ class MessageStatePort(Protocol):
         """Delete metadata records whose ``expires_at`` is in the past."""
         ...
 
+    def list_expired_processing_leases(
+        self, *, now: datetime, limit: int = 50
+    ) -> list[ProcessingRecord]:
+        """Return non-terminal processing records whose lease has expired.
+
+        Used to re-enqueue work that crashed after acquiring a lease when Cloud
+        Tasks stopped retrying (for example after a mistaken 2xx on lease_held).
+        """
+        ...
+
 
 @dataclass(frozen=True, slots=True)
 class LlmGenerationResult:

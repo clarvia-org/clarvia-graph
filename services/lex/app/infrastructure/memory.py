@@ -397,6 +397,21 @@ class InMemoryMessageState:
                 del self._records[key]
             return len(expired)
 
+    def list_expired_processing_leases(
+        self, *, now: datetime, limit: int = 50
+    ) -> list[ProcessingRecord]:
+        with self._lock:
+            recovered: list[ProcessingRecord] = []
+            for record in self._records.values():
+                if record.status is not ProcessingStatus.PROCESSING:
+                    continue
+                if record.lease_until is None or record.lease_until > now:
+                    continue
+                recovered.append(record)
+                if len(recovered) >= limit:
+                    break
+            return recovered
+
 
 __all__ = [
     "SentOutboundMessage",

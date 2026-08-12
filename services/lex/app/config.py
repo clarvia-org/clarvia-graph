@@ -124,6 +124,7 @@ class Settings(BaseSettings):
     adapter_backend: AdapterBackend = "memory"
     poll_max_results: int = 50
     lease_duration_seconds: int = 600
+    max_process_attempts: int = 8
     cloud_tasks_queue: str = "lex-process"
     cloud_tasks_location: str = REQUIRED_REGION
     cloud_tasks_target_url: str = ""
@@ -184,6 +185,7 @@ class Settings(BaseSettings):
         "max_thread_chars",
         "poll_max_results",
         "lease_duration_seconds",
+        "max_process_attempts",
         "max_output_tokens",
         "research_max_output_tokens",
         "writer_max_output_tokens",

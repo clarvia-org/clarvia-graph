@@ -315,6 +315,26 @@ class FirestoreMessageState:
             deleted += 1
         return deleted
 
+    def list_expired_processing_leases(
+        self, *, now: datetime, limit: int = 50
+    ) -> list[ProcessingRecord]:
+        collection = self.client.collection(
+            f"{ENVIRONMENTS_COLLECTION}/{self._settings.environment}"
+            f"/{MESSAGES_COLLECTION}"
+        )
+        # Filter in Python to avoid requiring a composite index for
+        # status + lease_until. Volume of in-flight processing is small.
+        recovered: list[ProcessingRecord] = []
+        query = collection.where("status", "==", ProcessingStatus.PROCESSING.value)
+        for snapshot in query.stream():
+            record = document_to_record(snapshot.id, snapshot.to_dict() or {})
+            if record.lease_until is None or record.lease_until > now:
+                continue
+            recovered.append(record)
+            if len(recovered) >= limit:
+                break
+        return recovered
+
 
 __all__ = [
     "document_path",
