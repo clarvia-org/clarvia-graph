@@ -3,6 +3,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { NextRequest, NextResponse } from "next/server";
 import { signPayload } from "@/lib/donation-engine/internal-auth";
+import { isPlausibleEmail } from "@/lib/email";
 import { rateLimit } from "@/lib/rate-limit";
 
 const DATA_DIR = path.join(process.cwd(), ".data");
@@ -13,7 +14,6 @@ export const MIN_QUESTION_CHARS = 20;
 export const MAX_QUESTION_CHARS = 100_000;
 
 const limiter = rateLimit("ask", 3, 60 * 60 * 1000);
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 interface ConsentLedgerEntry {
   timestamp: string;
@@ -112,7 +112,7 @@ export async function POST(req: NextRequest) {
     if (!consent) {
       return NextResponse.json({ error: "Consent is required." }, { status: 400 });
     }
-    if (!EMAIL_RE.test(email)) {
+    if (!isPlausibleEmail(email)) {
       return NextResponse.json({ error: "Please enter a valid email address." }, { status: 400 });
     }
     if (question.length < MIN_QUESTION_CHARS) {

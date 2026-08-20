@@ -49,6 +49,19 @@ describe("POST /api/ask", () => {
     expect(json.error).toMatch(/consent/i);
   });
 
+  it("returns 400 for an invalid email", async () => {
+    const res = await POST(
+      askRequest({
+        email: "not-an-email",
+        question: QUESTION,
+        consent: true,
+      })
+    );
+    expect(res.status).toBe(400);
+    const json = await res.json();
+    expect(json.error).toMatch(/email/i);
+  });
+
   it("returns 400 for a short question", async () => {
     const res = await POST(
       askRequest({

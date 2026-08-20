@@ -3,11 +3,11 @@
 import { useMemo, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { type Lang, l } from "@/lib/i18n";
+import { isPlausibleEmail } from "@/lib/email";
 import Turnstile from "@/components/Turnstile";
 import { headlineStyle } from "../data";
 
 const MIN_QUESTION_CHARS = 20;
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PLACE_HINT_RE = /\b(in|at|from|near|within)\s+\S{2,}|\blive[sd]?\s+in\b/i;
 const ASK_OK_KEY = "clarvia-ask-submitted";
 
@@ -36,7 +36,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
   const [turnstileKey, setTurnstileKey] = useState(0);
 
   const trimmedQuestion = question.trim();
-  const validEmail = EMAIL_RE.test(email.trim());
+  const validEmail = isPlausibleEmail(email.trim().toLowerCase());
   const longEnough = trimmedQuestion.length >= MIN_QUESTION_CHARS;
   const showMinHint = trimmedQuestion.length > 0 && !longEnough;
   const showPlaceHint = longEnough && !PLACE_HINT_RE.test(trimmedQuestion);
