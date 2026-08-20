@@ -54,6 +54,47 @@ def test_send_reply_passes_base64url_raw_unchanged() -> None:
     assert captured[0]["raw"] == encoded
 
 
+def test_insert_inbound_uses_inbox_unread_and_raw() -> None:
+    captured: list[dict[str, object]] = []
+
+    class MessagesApi:
+        def insert(
+            self,
+            *,
+            userId: str,
+            body: dict[str, object],
+            internalDateSource: str,
+        ) -> object:
+            captured.append(
+                {"userId": userId, "body": body, "source": internalDateSource}
+            )
+            return SimpleNamespace(
+                execute=lambda: {"id": "inserted-1", "threadId": "thread-ask"}
+            )
+
+    class UsersApi:
+        def messages(self) -> MessagesApi:
+            return MessagesApi()
+
+        def threads(self) -> object:
+            raise AssertionError("threads not used in this test")
+
+    class Service:
+        def users(self) -> UsersApi:
+            return UsersApi()
+
+    adapter = GoogleGmailAdapter(settings=build_settings(), service=Service())
+    ref = adapter.insert_inbound(raw_message="YWJj")
+    assert ref.message_id == "inserted-1"
+    assert ref.thread_id == "thread-ask"
+    assert captured[0]["userId"] == "me"
+    assert captured[0]["source"] == "dateHeader"
+    body = captured[0]["body"]
+    assert isinstance(body, dict)
+    assert body["raw"] == "YWJj"
+    assert body["labelIds"] == ["INBOX", "UNREAD"]
+
+
 def test_find_outbound_in_thread_matches_headers() -> None:
     class ThreadsApi:
         def get(

@@ -103,6 +103,7 @@ class ParsedMessage:
     list_id: str | None = None
     return_path: str | None = None
     precedence: str | None = None
+    delivery_channel: str = "email"
 
 
 # Alias used by parsing helpers that build partial records before freezing.

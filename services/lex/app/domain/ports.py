@@ -56,6 +56,14 @@ class GmailPort(Protocol):
         """Return thread messages in chronological order (Gmail source of truth)."""
         ...
 
+    def insert_inbound(self, *, raw_message: str) -> GmailMessageRef:
+        """Insert base64url MIME into the Lex mailbox as a new inbound message.
+
+        ``raw_message`` is Gmail API ``raw`` (same encoding as send). Used for
+        clarvia.org Ask us intake. Does not send SMTP as the visitor.
+        """
+        ...
+
     def send_reply(
         self,
         *,

@@ -55,6 +55,7 @@ class InMemoryGmail:
         self._known_labels: set[str] = set()
         self._raw_messages: dict[str, bytes] = {}
         self._parsed_overrides: dict[str, ParsedMessage] = {}
+        self._insert_count = 0
         self.send_reply_calls = 0
         self.last_sent_raw: str | None = None
         self.sent_messages: list[tuple[str, str]] = []
@@ -166,6 +167,19 @@ class InMemoryGmail:
             )
             for message_id in message_ids
         ]
+
+    def insert_inbound(self, *, raw_message: str) -> GmailMessageRef:
+        with self._lock:
+            self._insert_count += 1
+            message_id = f"ask-{self._insert_count}"
+            thread_id = f"ask-thread-{self._insert_count}"
+            padding = "=" * (-len(raw_message) % 4)
+            self._raw_messages[message_id] = base64.urlsafe_b64decode(
+                raw_message + padding
+            )
+            self._threads[message_id] = thread_id
+            self._labels[message_id] = {INBOX_LABEL, "UNREAD"}
+            return GmailMessageRef(message_id=message_id, thread_id=thread_id)
 
     def send_reply(self, *, raw_message: str, thread_id: str | None) -> str:
         with self._lock:

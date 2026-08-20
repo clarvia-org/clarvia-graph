@@ -395,6 +395,7 @@ class Processor:
                     conversation_history=history,
                     current_date_utc=self._clock.now(),
                     prompt_version=self._settings.prompt_version,
+                    delivery_channel=parsed.delivery_channel,
                 )
                 generation = run_model_pipeline(
                     self._llm,
@@ -442,6 +443,7 @@ class Processor:
                 lex_addresses=lex_addresses,
                 max_chars_per_message=self._settings.thread_quote_max_chars_per_message,
                 max_total_chars=self._settings.thread_quote_max_total_chars,
+                include_latest=parsed.delivery_channel == "web",
             )
             if not quote_plain:
                 quote_plain = None

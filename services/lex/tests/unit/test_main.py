@@ -2,10 +2,14 @@
 
 from __future__ import annotations
 
+import base64
+from datetime import UTC, datetime
+
 import pytest
 from app import __version__
 from app.domain.ids import task_name_for_message
 from app.domain.labels import LEX_PENDING, LEX_PROCESSED
+from app.domain.models import GmailMessageRef
 from app.infrastructure.clock import FakeClock
 from app.infrastructure.daily_usage import InMemoryDailyUsage
 from app.infrastructure.factory import Adapters
@@ -16,10 +20,16 @@ from app.infrastructure.memory import (
 )
 from app.infrastructure.rate_limit import InMemoryRateLimit
 from app.main import create_app
+from app.services.ask_auth import SIGNATURE_HEADER, TIMESTAMP_HEADER, sign_ask_payload
 from app.services.processor import PROCESS_STATUS_SENT
 from fastapi.testclient import TestClient
 
 from .conftest import build_settings, fake_llm_for_responses, make_answer_response
+
+ASK_SECRET = "ask-test-secret"
+ASK_QUESTION = (
+    "My father died last week in Paris. I live in France. What do I need to do first?"
+)
 
 
 def _build_client(
@@ -28,6 +38,7 @@ def _build_client(
     processing_mode: str = "public",
     internal_auth_token: str = "",
     prompt_path: str | None = None,
+    website_hmac_secret: str = ASK_SECRET,
 ) -> tuple[TestClient, InMemoryGmail, InMemoryTaskQueue, InMemoryMessageState]:
     clock = FakeClock()
     gmail = InMemoryGmail()
@@ -39,6 +50,7 @@ def _build_client(
         "adapter_backend": "memory",
         "internal_auth_token": internal_auth_token,
         "hmac_secret": "main-test-secret",
+        "website_hmac_secret": website_hmac_secret,
     }
     if prompt_path is not None:
         settings_kwargs["prompt_path"] = prompt_path
@@ -183,3 +195,107 @@ def test_internal_retention_endpoint() -> None:
 def test_no_openapi_docs_exposed(client: TestClient) -> None:
     assert client.get("/openapi.json").status_code == 404
     assert client.get("/docs").status_code == 404
+
+
+def _ask_body(*, consent: bool = True) -> str:
+    flag = "true" if consent else "false"
+    return (
+        '{"email":"user@example.com","question":"'
+        + ASK_QUESTION
+        + '","consent":'
+        + flag
+        + "}"
+    )
+
+
+def _ask_headers(body: str) -> dict[str, str]:
+    timestamp = datetime.now(UTC).isoformat()
+    return {
+        "Content-Type": "application/json",
+        TIMESTAMP_HEADER: timestamp,
+        SIGNATURE_HEADER: sign_ask_payload(ASK_SECRET, timestamp, body),
+    }
+
+
+def test_ask_ingest_inserts_and_enqueues() -> None:
+    client, gmail, tasks, state = _build_client()
+    body = _ask_body()
+
+    response = client.post("/v1/ask", content=body, headers=_ask_headers(body))
+
+    assert response.status_code == 202
+    assert response.json() == {"status": "accepted"}
+    assert tasks.task_names == [task_name_for_message("ask-1")]
+    record = state.get_record("ask-1")
+    assert record is not None
+    parsed = gmail.fetch_parsed_message(
+        GmailMessageRef(message_id="ask-1", thread_id="ask-thread-1")
+    )
+    assert parsed.from_address == "user@example.com"
+    assert parsed.delivery_channel == "web"
+    assert "Paris" in parsed.body_text
+
+
+def test_ask_ingest_fails_closed_when_website_secret_unset() -> None:
+    client, *_ = _build_client(website_hmac_secret="")
+    body = _ask_body()
+    response = client.post("/v1/ask", content=body, headers=_ask_headers(body))
+    assert response.status_code == 401
+
+
+def test_ask_ingest_rejects_missing_hmac() -> None:
+    client, *_ = _build_client()
+    body = _ask_body()
+    response = client.post(
+        "/v1/ask", content=body, headers={"Content-Type": "application/json"}
+    )
+    assert response.status_code == 401
+
+
+def test_ask_ingest_does_not_accept_internal_token() -> None:
+    client, *_ = _build_client(internal_auth_token="secret")
+    body = _ask_body()
+    response = client.post(
+        "/v1/ask",
+        content=body,
+        headers={"Content-Type": "application/json", "X-Lex-Internal-Token": "secret"},
+    )
+    assert response.status_code == 401
+
+
+def test_ask_ingest_disabled_does_not_insert() -> None:
+    client, gmail, tasks, _state = _build_client(processing_enabled=False)
+    body = _ask_body()
+    response = client.post("/v1/ask", content=body, headers=_ask_headers(body))
+    assert response.status_code == 503
+    assert response.json()["code"] == "processing_disabled"
+    assert tasks.task_names == []
+    assert gmail.list_eligible_message_refs(max_results=10) == []
+
+
+def test_ask_ingest_requires_consent() -> None:
+    client, *_ = _build_client()
+    body = _ask_body(consent=False)
+    response = client.post("/v1/ask", content=body, headers=_ask_headers(body))
+    assert response.status_code == 400
+    assert response.json() == {"status": "invalid", "code": "consent_required"}
+
+
+def test_ask_ingest_then_process_quotes_question(
+    synthetic_prompt: str,
+) -> None:
+    client, gmail, _tasks, _state = _build_client(prompt_path=synthetic_prompt)
+    body = _ask_body()
+    accepted = client.post("/v1/ask", content=body, headers=_ask_headers(body))
+    assert accepted.status_code == 202
+
+    processed = client.post(
+        "/internal/process",
+        json={"gmail_message_id": "ask-1", "thread_id": "ask-thread-1"},
+    )
+    assert processed.status_code == 200
+    assert processed.json()["status"] == PROCESS_STATUS_SENT
+    assert gmail.last_sent_raw is not None
+    padding = "=" * (-len(gmail.last_sent_raw) % 4)
+    decoded = base64.urlsafe_b64decode(gmail.last_sent_raw + padding).decode("utf-8")
+    assert "Paris" in decoded

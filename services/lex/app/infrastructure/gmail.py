@@ -217,6 +217,27 @@ class GoogleGmailAdapter:
             )
         return parsed
 
+    def insert_inbound(self, *, raw_message: str) -> GmailMessageRef:
+        """Insert base64url MIME into the Lex mailbox (no SMTP as the visitor)."""
+        body: dict[str, Any] = {
+            "raw": raw_message,
+            "labelIds": ["INBOX", "UNREAD"],
+        }
+        response = _execute_with_transient_retry(
+            lambda: self._messages()
+            .insert(
+                userId=USER_ID,
+                body=body,
+                internalDateSource="dateHeader",
+            )
+            .execute()
+        )
+        message_id = response.get("id")
+        thread_id = response.get("threadId")
+        if not message_id or not thread_id:
+            raise NotImplementedForPhase("gmail.insert_inbound")
+        return GmailMessageRef(message_id=str(message_id), thread_id=str(thread_id))
+
     def send_reply(self, *, raw_message: str, thread_id: str | None) -> str:
         """Send base64url MIME from encode_for_gmail_api without re-encoding."""
         body: dict[str, str] = {"raw": raw_message}

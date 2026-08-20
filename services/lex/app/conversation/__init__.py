@@ -89,7 +89,7 @@ def build_research_envelope(
         "<SYSTEM_CONTROLLED_CONTEXT>\n"
         f"current_date_utc: {current_date_utc.strftime('%Y-%m-%d')}\n"
         "service_timezone: Europe/Luxembourg\n"
-        "delivery_channel: email\n"
+        f"delivery_channel: {parsed.delivery_channel}\n"
         f"research_prompt_version: {research_prompt_version}\n"
         f"conversation_id: {parsed.thread_id}\n"
         f"latest_message_id: {parsed.message_id}\n"

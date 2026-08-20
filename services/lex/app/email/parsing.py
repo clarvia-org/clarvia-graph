@@ -16,6 +16,7 @@ from app.domain.models import (
     ConversationRole,
     ParsedMessage,
 )
+from app.email.ask_inbound import DELIVERY_CHANNEL_HEADER, DELIVERY_CHANNEL_WEB
 
 MAX_MIME_PARTS = 100
 MAX_ATTACHMENTS_RECORDED = 25
@@ -243,6 +244,12 @@ def _normalise_date_header(value: str | None) -> str | None:
         return value.strip()[:32] or None
 
 
+def _delivery_channel(value: str | None) -> str:
+    if (value or "").strip().lower() == DELIVERY_CHANNEL_WEB:
+        return DELIVERY_CHANNEL_WEB
+    return "email"
+
+
 def parse_raw_message(
     raw: bytes,
     *,
@@ -304,6 +311,7 @@ def parse_raw_message(
         list_id=message.get("List-Id"),
         return_path=message.get("Return-Path"),
         precedence=message.get("Precedence"),
+        delivery_channel=_delivery_channel(message.get(DELIVERY_CHANNEL_HEADER)),
     )
 
 
