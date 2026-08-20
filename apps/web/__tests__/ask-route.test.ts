@@ -76,13 +76,15 @@ describe("POST /api/ask", () => {
   });
 
   it("forwards a signed payload to Lex", async () => {
-    const fetchMock = vi.fn(async (url: string | URL) => {
-      const href = String(url);
-      if (href.includes("metadata.google.internal")) {
-        return new Response("missing", { status: 404 });
+    const fetchMock = vi.fn(
+      async (url: string | URL, _init?: RequestInit): Promise<Response> => {
+        const href = String(url);
+        if (href.includes("metadata.google.internal")) {
+          return new Response("missing", { status: 404 });
+        }
+        return new Response(JSON.stringify({ status: "accepted" }), { status: 202 });
       }
-      return new Response(JSON.stringify({ status: "accepted" }), { status: 202 });
-    });
+    );
     vi.stubGlobal("fetch", fetchMock);
 
     const res = await POST(
