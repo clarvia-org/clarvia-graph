@@ -62,7 +62,6 @@ class GmailPort(Protocol):
         ``raw_message`` is Gmail API ``raw`` (same encoding as send). Used for
         clarvia.org Ask us intake. Does not send SMTP as the visitor.
         """
-        ...
 
     def send_reply(
         self,
