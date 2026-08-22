@@ -256,13 +256,22 @@ export default function FooterSection({ lang }: { lang: Lang }) {
 
         <div className="text-xs text-calm-blue-500 leading-relaxed space-y-3 pt-6 border-t border-calm-blue-200/50">
           <p>
-            {l(lang, "Clarvia provides practical guidance and signposting. We do not provide emergency, legal, tax, medical, psychological, notarial, banking, financial, or succession advice. Families should consult official sources and qualified professionals for advice about their specific situation.", "Clarvia fournit des informations pratiques et oriente les familles vers les bons interlocuteurs. Nous ne proposons pas d'aide d'urgence ni de conseils juridiques, fiscaux, médicaux, psychologiques, notariaux, bancaires, financiers ou successoraux. Les familles doivent consulter les sources officielles et des professionnels qualifiés pour obtenir des conseils adaptés à leur situation.", "Clarvia bietet praktische Orientierung und verweist auf passende Anlaufstellen. Wir leisten keine Notfallhilfe und keine rechtliche, steuerliche, medizinische, psychologische, notarielle, bankfachliche, finanzielle oder nachlassbezogene Beratung. Familien sollten für ihre konkrete Situation offizielle Quellen und qualifizierte Fachleute konsultieren.", "Clarvia bitt praktesch Orientéierung a weist op déi richteg Ulafstellen hin. Mir bidden keng Nouthëllef a keng juristesch, steierlech, medezinesch, psychologesch, notariell, bankfachlech, finanziell oder successiounsbezunnen Berodung. Famillje solle fir hir konkret Situatioun offiziell Quellen a qualifizéiert Fachleit consultéieren.")}
+            {l(
+              lang,
+              "Clarvia ASBL is an independent non-profit association. Clarvia provides practical guidance and signposting. We do not provide emergency, legal, tax, medical, psychological, notarial, banking, financial, or succession advice. Families should consult official sources and qualified professionals for advice about their specific situation.",
+              "Clarvia ASBL est une association indépendante à but non lucratif. Clarvia propose des informations pratiques et oriente les familles vers les services compétents. Nous n’assurons pas de service d’urgence et ne fournissons aucun conseil juridique, fiscal, médical, psychologique, notarial, bancaire, financier ou successoral. Pour toute question liée à leur situation personnelle, les familles sont invitées à consulter les sources officielles et à s’adresser à des professionnels qualifiés.",
+              "Clarvia ASBL ist ein unabhängiger, gemeinnütziger Verein. Clarvia bietet praktische Orientierung und verweist an die zuständigen Anlaufstellen. Wir leisten keine Notfallhilfe und bieten keine Rechts-, Steuer-, medizinische, psychologische, notarielle, Bank-, Finanz- oder Erbrechtsberatung an. Familien sollten sich bei Fragen zu ihrer persönlichen Situation an offizielle Stellen und entsprechend qualifizierte Fachleute wenden.",
+              "Clarvia ASBL ass en onofhängegen, net gewënnorientéierte Veräin. Clarvia bitt praktesch Orientéierung a weist Familljen un déi zoustänneg Servicer an Ulafstellen weider. Mir sinn keen Noutdéngscht a bidden och keng juristesch, steierlech, medezinesch, psychologesch, notariell, Bank-, Finanz- oder Ierfschaftsberodung un. Bei Froen zu hirer perséinlecher Situatioun solle Familljen offiziell Informatiounsquellen consultéieren a sech u qualifizéiert Fachleit wenden."
+            )}
           </p>
           <p className="font-medium">
-            {l(lang, "Clarvia is not an emergency service. If there is an immediate risk to life or safety, call 112 in Luxembourg.", "Clarvia n'est pas un service d'urgence. En cas de risque immédiat pour la vie ou la sécurité, appelez le 112 au Luxembourg.", "Clarvia ist kein Notfalldienst. Bei unmittelbarer Gefahr für Leben oder Sicherheit rufen Sie 112 in Luxemburg an.", "Clarvia ass keen Noutdéngscht. Wann et eng direkt Gefor fir Liewen oder Sécherheet gëtt, rufft zu Lëtzebuerg den 112 un.")}
-          </p>
-          <p>
-            {l(lang, "Clarvia is currently built for Luxembourg and planned European jurisdictions. It is not offered in the United States.", "Clarvia est actuellement conçu pour le Luxembourg et des juridictions européennes à venir. Il n'est pas proposé aux États-Unis.", "Clarvia ist derzeit für Luxemburg und geplante europäische Rechtsordnungen entwickelt. Es wird nicht in den Vereinigten Staaten angeboten.", "Clarvia ass de Moment fir Lëtzebuerg a geplangten europäesch Juridictioune gebaut. Et gëtt net an den USA ugebueden.")}
+            {l(
+              lang,
+              "Clarvia is not an emergency service. If there is an immediate risk to life or safety, please contact your local emergency services immediately.",
+              "Clarvia n’est pas un service d’urgence. En cas de danger immédiat pour la vie ou la sécurité d’une personne, veuillez contacter sans délai les services d’urgence locaux.",
+              "Clarvia ist kein Notfalldienst. Besteht eine unmittelbare Gefahr für Leben oder Sicherheit, wenden Sie sich bitte sofort an die örtlichen Rettungsdienste.",
+              "Clarvia ass keen Noutdéngscht. Wann eng Persoun direkt a Liewensgefor ass oder hir Sécherheet akut menacéiert ass, kontaktéiert wgl. direkt déi lokal Noutdéngschter."
+            )}
           </p>
         </div>
 
