@@ -10,7 +10,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
           <div>
             <Image src="/clarvia-logo.webp" alt="Clarvia logo" width={96} height={48} className="h-12 w-auto mb-4" />
             <p className="text-sm text-calm-blue-600 leading-relaxed">
-              {l(lang, "Free bereavement guidance for families in Luxembourg.", "Un accompagnement gratuit pour les familles au Luxembourg après un décès.", "Kostenlose Orientierung im Trauerfall für Familien in Luxemburg.", "Gratis Orientéierung am Trauerfall fir Familljen zu Lëtzebuerg.")}
+              {l(lang, "Free bereavement guidance for families.", "Un accompagnement gratuit pour les familles au Luxembourg après un décès.", "Kostenlose Orientierung im Trauerfall für Familien in Luxemburg.", "Gratis Orientéierung am Trauerfall fir Familljen zu Lëtzebuerg.")}
             </p>
           </div>
           <div>

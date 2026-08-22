@@ -1,8 +1,7 @@
 import { type Metadata } from "next";
-import { type Lang, l, LANGUAGES } from "@/lib/i18n";
+import { type Lang, LANGUAGES } from "@/lib/i18n";
 import Header from "@/components/Header";
 import HeroSection from "./sections/HeroSection";
-import ProblemSection from "./sections/ProblemSection";
 import TestimonialsSection from "./sections/TestimonialsSection";
 import FormsSection from "./sections/FormsSection";
 import FooterSection from "./sections/FooterSection";
@@ -13,7 +12,7 @@ const HOME_META: Record<Lang, { title: string; description: string }> = {
   en: {
     title: "Not sure what to do when a loved one is terminally ill or has died? — Clarvia",
     description:
-      "Free guidance from a terminal diagnosis through the practical questions that can still arise years after a death.",
+      "Free, source-linked guidance from a terminal diagnosis through the practical questions that can arise years after a death.",
   },
   fr: {
     title: "Clarvia — Accompagner les familles dans ce qui suit",
@@ -76,19 +75,7 @@ export default async function LandingPage({
 
       <main id="main-content" className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         <HeroSection lang={lang} />
-        <ProblemSection lang={lang} />
         <TestimonialsSection lang={lang} />
-        <p className="text-center text-base text-calm-blue-600 mb-20">
-          <a href={`/${lang}/checklist`} className="underline hover:text-calm-blue-800">
-            {l(
-              lang,
-              "Looking for step-by-step Luxembourg guidance? See the free bereavement checklist.",
-              "Looking for step-by-step Luxembourg guidance? See the free bereavement checklist.",
-              "Looking for step-by-step Luxembourg guidance? See the free bereavement checklist.",
-              "Looking for step-by-step Luxembourg guidance? See the free bereavement checklist."
-            )}
-          </a>
-        </p>
         <FormsSection lang={lang} showFeedback={false} showContact />
       </main>
 
