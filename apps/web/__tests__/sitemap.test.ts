@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import sitemap from "@/app/sitemap";
-import { hreflangLanguages } from "@/lib/i18n";
+import { ADS_FINAL_URLS, LANGUAGE_REDIRECTS, hreflangLanguages } from "@/lib/i18n";
 
 describe("sitemap", () => {
   it("includes an indexable contact page for every language", () => {
@@ -29,5 +29,26 @@ describe("hreflangLanguages", () => {
       lb: "https://clarvia.org/lu",
       "x-default": "https://clarvia.org/en",
     });
+  });
+});
+
+describe("ads landing URLs", () => {
+  it("sends Luxembourgish ads to /lu, not /en or /lb", () => {
+    expect(ADS_FINAL_URLS.ask).toEqual({
+      en: "https://clarvia.org/en",
+      fr: "https://clarvia.org/fr",
+      de: "https://clarvia.org/de",
+      lb: "https://clarvia.org/lu",
+    });
+    expect(ADS_FINAL_URLS.support.lb).toBe("https://clarvia.org/lu/support");
+    expect(ADS_FINAL_URLS.ask.lb).not.toContain("/en");
+    expect(ADS_FINAL_URLS.ask.lb).not.toMatch(/\/lb$/);
+  });
+
+  it("redirects Google’s lb path onto the Luxembourgish site", () => {
+    expect(LANGUAGE_REDIRECTS).toEqual([
+      { source: "/lb", destination: "/lu", permanent: true },
+      { source: "/lb/:path*", destination: "/lu/:path*", permanent: true },
+    ]);
   });
 });

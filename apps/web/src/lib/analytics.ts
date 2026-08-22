@@ -53,11 +53,13 @@ export function trackPageView(path: string): void {
   });
 }
 
-export function trackAskSubmitted(params: { source_page: string }): void {
-  trackEvent("generate_lead", {
+export function trackAskSubmitted(params: { source_page: string; language?: string }): void {
+  const leadParams: Record<string, unknown> = {
     lead_source: "ask_clarvia",
     source_page: params.source_page,
-  });
+  };
+  if (params.language) leadParams.language = params.language;
+  trackEvent("generate_lead", leadParams);
   trackEvent("ask_submitted", {
     event_category: "engagement",
     event_label: "Ask Clarvia submit",

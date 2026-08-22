@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ASK_SUBMITTED_STORAGE_KEY, trackAskSubmitted } from "@/lib/analytics";
-import { type Lang, l } from "@/lib/i18n";
+import { type Lang, adsLanguageCode, l } from "@/lib/i18n";
 
 function notice(lang: Lang, showAddress: boolean): string {
   const withAddress = l(
@@ -28,7 +28,7 @@ export default function AskSentTracker({ lang }: { lang: Lang }) {
     }
     if (!submitted) return;
     setShowAddress(true);
-    trackAskSubmitted({ source_page: `/${lang}` });
+    trackAskSubmitted({ source_page: `/${lang}`, language: adsLanguageCode(lang) });
   }, [lang]);
 
   return (

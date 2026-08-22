@@ -63,10 +63,11 @@ describe("Google Ads / GA4 helpers", () => {
     });
 
     it("fires generate_lead for Ask Clarvia, keeping ask_submitted as an extra event", () => {
-      trackAskSubmitted({ source_page: "/en" });
+      trackAskSubmitted({ source_page: "/en", language: "en" });
       expect(gtag).toHaveBeenCalledWith("event", "generate_lead", {
         lead_source: "ask_clarvia",
         source_page: "/en",
+        language: "en",
       });
       expect(gtag).toHaveBeenCalledWith(
         "event",
@@ -74,6 +75,15 @@ describe("Google Ads / GA4 helpers", () => {
         expect.objectContaining({ source_page: "/en" })
       );
       expect(gtag.mock.calls.some((call) => call[1] === "conversion")).toBe(false);
+    });
+
+    it("tags Luxembourgish Ask conversions as lb, not en", () => {
+      trackAskSubmitted({ source_page: "/lu", language: "lb" });
+      expect(gtag).toHaveBeenCalledWith("event", "generate_lead", {
+        lead_source: "ask_clarvia",
+        source_page: "/lu",
+        language: "lb",
+      });
     });
 
     it("fires a Google Ads conversion for Ask when the env send_to is set", () => {
