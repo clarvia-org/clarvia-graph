@@ -5,11 +5,11 @@ import { useRouter } from "next/navigation";
 import { type Lang, l } from "@/lib/i18n";
 import { isPlausibleEmail } from "@/lib/email";
 import Turnstile from "@/components/Turnstile";
+import { ASK_SUBMITTED_STORAGE_KEY } from "@/lib/analytics";
 import { headlineStyle } from "../data";
 
 const MIN_QUESTION_CHARS = 20;
 const PLACE_HINT_RE = /\b(in|at|from|near|within)\s+\S{2,}|\blive[sd]?\s+in\b/i;
-const ASK_OK_KEY = "clarvia-ask-submitted";
 
 const EXAMPLES: Record<Lang, readonly string[]> = {
   en: [
@@ -171,7 +171,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
         );
       }
       try {
-        sessionStorage.setItem(ASK_OK_KEY, "1");
+        sessionStorage.setItem(ASK_SUBMITTED_STORAGE_KEY, "1");
       } catch {
         /* private mode */
       }

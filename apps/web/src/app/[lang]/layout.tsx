@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { LANGUAGES, type Lang, hreflangLanguages } from "@/lib/i18n";
+import AnalyticsRouteTracker from "@/components/AnalyticsRouteTracker";
 import CookieConsent from "@/components/CookieConsent";
 
 
@@ -171,6 +172,7 @@ export default async function LangLayout({
       />
 
       {children}
+      <AnalyticsRouteTracker />
       <CookieConsent lang={lang as Lang} />
     </>
   );

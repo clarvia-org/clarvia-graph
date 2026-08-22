@@ -1,5 +1,6 @@
 import { useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import { trackDonationComplete } from "@/lib/analytics";
 import { type Lang, l } from "@/lib/i18n";
 
 export interface DonationSuccessTrackerProps {
@@ -31,16 +32,11 @@ function SuccessTrackerInner({ lang }: DonationSuccessTrackerProps) {
 
         // Ensure payment status is paid/complete
         if (data.payment_status === "paid" || data.status === "complete") {
-          // Fire GA4 Event
-          if (typeof window !== "undefined" && typeof window.gtag === "function") {
-            window.gtag("event", "donation_complete", {
-              event_category: "engagement",
-              event_label: "Stripe Donation Success",
-              value: data.amount || undefined,
-              currency: data.currency || "EUR",
-              transaction_id: sessionId,
-            });
-          }
+          trackDonationComplete({
+            value: data.amount,
+            currency: data.currency || "EUR",
+            transaction_id: sessionId,
+          });
 
           // Save tracking state to prevent duplicate hits
           try {

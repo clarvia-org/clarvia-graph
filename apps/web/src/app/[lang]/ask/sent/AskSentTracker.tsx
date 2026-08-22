@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { ASK_SUBMITTED_STORAGE_KEY, trackAskSubmitted } from "@/lib/analytics";
 import { type Lang, l } from "@/lib/i18n";
-
-const ASK_OK_KEY = "clarvia-ask-submitted";
 
 function notice(lang: Lang, showAddress: boolean): string {
   const withAddress = l(
@@ -22,19 +21,14 @@ export default function AskSentTracker({ lang }: { lang: Lang }) {
   useEffect(() => {
     let submitted = false;
     try {
-      submitted = sessionStorage.getItem(ASK_OK_KEY) === "1";
-      if (submitted) sessionStorage.removeItem(ASK_OK_KEY);
+      submitted = sessionStorage.getItem(ASK_SUBMITTED_STORAGE_KEY) === "1";
+      if (submitted) sessionStorage.removeItem(ASK_SUBMITTED_STORAGE_KEY);
     } catch {
       return;
     }
     if (!submitted) return;
     setShowAddress(true);
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "ask_submitted", {
-        source_page: `/${lang}`,
-        consent_type: "ask-consent-v1",
-      });
-    }
+    trackAskSubmitted({ source_page: `/${lang}` });
   }, [lang]);
 
   return (
