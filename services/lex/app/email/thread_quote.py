@@ -38,15 +38,18 @@ def build_thread_quote(
     lex_addresses: frozenset[str],
     max_chars_per_message: int = 2000,
     max_total_chars: int = 40_000,
+    include_latest: bool = False,
 ) -> tuple[str, str]:
     """Return ``(plain, html)`` quote block, or empty strings when nothing to quote.
 
-    Quotes prior cleaned turns only (excludes the inbound message being answered).
+    Quotes prior cleaned turns only (excludes the inbound message being answered)
+    unless ``include_latest`` is true — required for clarvia.org asks, because the
+    visitor never received the inserted inbound copy.
     Lex continuation/footer boilerplate is stripped from quoted Lex turns.
     """
     entries: list[tuple[str, str]] = []
     for parsed in thread_messages:
-        if parsed.message_id == latest_message_id:
+        if parsed.message_id == latest_message_id and not include_latest:
             continue
         body = strip_lex_boilerplate(parsed.body_text).strip()
         if not body:

@@ -15,6 +15,7 @@ RUNTIME_SERVICE_ACCOUNT="${RUNTIME_SERVICE_ACCOUNT:-lex-email@fleet-garage-50211
 # Secret Manager references (names, not values).
 OPENAI_API_KEY_SECRET="${OPENAI_API_KEY_SECRET:-lex-openai-api-key:latest}"
 HMAC_SECRET_SECRET="${HMAC_SECRET_SECRET:-lex-hmac-secret:latest}"
+WEBSITE_HMAC_SECRET_SECRET="${WEBSITE_HMAC_SECRET_SECRET:-lex-website-hmac-secret:latest}"
 
 if [ "${REGION}" != "europe-west1" ]; then
   echo "ERROR: REGION must be europe-west1 for Phase 1 (got '${REGION}')." >&2
@@ -43,7 +44,7 @@ gcloud run deploy "${SERVICE_NAME}" \
   --service-account="${RUNTIME_SERVICE_ACCOUNT}" \
   --no-allow-unauthenticated \
   --set-env-vars="ENVIRONMENT=production,ADAPTER_BACKEND=gcp,GCP_PROJECT_ID=${PROJECT_ID},GCP_REGION=${REGION},LEX_MAILBOX=lex@clarvia.org,OPENAI_MODEL=gpt-5.6-luna,PROMPT_VERSION=lex-v1,SCHEMA_VERSION=lex_response_v1,LEX_GENERATION_PIPELINE=two_pass,RESEARCH_PROMPT_VERSION=lex-research-v1,WRITER_PROMPT_VERSION=lex-writer-v1,RESEARCH_SCHEMA_VERSION=lex_research_brief_v1,WRITER_SCHEMA_VERSION=lex_written_response_v1,RESEARCH_MAX_OUTPUT_TOKENS=12000,WRITER_MAX_OUTPUT_TOKENS=4000,PROCESSING_MODE=disabled,PROCESSING_ENABLED=false,GLOBAL_DAILY_LLM_LIMIT=500,FORCE_CIRCUIT_OPEN=false,RETENTION_TRASH_GMAIL=false,LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-v1.txt,LEX_RESEARCH_PROMPT_PATH=/app/runtime-private/prompts/lex-research-v1.txt,LEX_WRITER_PROMPT_PATH=/app/runtime-private/prompts/lex-writer-v1.txt" \
-  --set-secrets="OPENAI_API_KEY=${OPENAI_API_KEY_SECRET},HMAC_SECRET=${HMAC_SECRET_SECRET}"
+  --set-secrets="OPENAI_API_KEY=${OPENAI_API_KEY_SECRET},HMAC_SECRET=${HMAC_SECRET_SECRET},LEX_WEBSITE_HMAC_SECRET=${WEBSITE_HMAC_SECRET_SECRET}"
 
 echo "Deploy submitted. Keep PROCESSING_MODE=disabled until smoke tests pass."
 echo ""

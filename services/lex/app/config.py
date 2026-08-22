@@ -132,6 +132,12 @@ class Settings(BaseSettings):
     firestore_database: str = "(default)"
     internal_auth_token: str = ""
     hmac_secret: str = ""
+    website_hmac_secret: str = Field(
+        default="",
+        validation_alias=AliasChoices(
+            "LEX_WEBSITE_HMAC_SECRET", "website_hmac_secret"
+        ),
+    )
     lex_aliases: str = ""
     global_daily_llm_limit: int = 500
     force_circuit_open: bool = False

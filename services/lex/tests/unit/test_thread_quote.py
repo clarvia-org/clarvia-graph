@@ -56,3 +56,21 @@ def test_build_thread_quote_after_truncation() -> None:
     assert "Follow up" not in plain  # latest excluded
     assert "Previous messages in this conversation" in html
     assert "Clarvia is a nonprofit" not in plain
+
+
+def test_include_latest_quotes_the_current_question() -> None:
+    msgs = [
+        _msg(
+            "1",
+            from_address="user@example.com",
+            body="My father died last week in Paris. What should I do first?",
+        )
+    ]
+    plain, _html = build_thread_quote(
+        msgs,
+        latest_message_id="1",
+        lex_addresses=frozenset({"lex@clarvia.org"}),
+        include_latest=True,
+    )
+    assert "Paris" in plain
+    assert "Previous messages in this conversation" in plain

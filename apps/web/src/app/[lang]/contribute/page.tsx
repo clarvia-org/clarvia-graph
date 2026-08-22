@@ -5,6 +5,7 @@ import FooterSection from "../sections/FooterSection";
 import AccessSection from "../sections/AccessSection";
 import PublicInterestSection from "../sections/PublicInterestSection";
 import TrustSection from "../sections/TrustSection";
+import FormsSection from "../sections/FormsSection";
 
 export default async function ContributePage({
   params,
@@ -123,6 +124,10 @@ export default async function ContributePage({
           <AccessSection lang={lang} />
           <PublicInterestSection lang={lang} />
           <TrustSection lang={lang} />
+        </div>
+
+        <div className="mt-16">
+          <FormsSection lang={lang} showContact={false} showFeedback />
         </div>
 
       </main>

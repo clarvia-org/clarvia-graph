@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { headlineStyle } from "../data";
 import { UPDATES } from "./updates-data";
 import FooterSection from "../sections/FooterSection";
+import VideoSection from "../sections/VideoSection";
 
 function formatDate(dateStr: string, lang: Lang): string {
   const date = new Date(dateStr + "T00:00:00");
@@ -38,6 +39,8 @@ export default async function UpdatesPage({
         <p className="text-base text-calm-blue-500 mb-12">
           {l(lang, "Milestones and news from the Clarvia project.", "Étapes clés et actualités du projet Clarvia.", "Meilensteine und Neuigkeiten aus dem Clarvia-Projekt.", "Meilesteng an Neiegkeeten aus dem Clarvia-Projet.")}
         </p>
+
+        <VideoSection lang={lang} />
 
         {/* ── Timeline ── */}
         <div className="space-y-0">

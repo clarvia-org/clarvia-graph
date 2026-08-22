@@ -10,6 +10,7 @@ traces.
 
 from __future__ import annotations
 
+import json
 from typing import TYPE_CHECKING
 
 from fastapi import Depends, FastAPI, Header, HTTPException, Request, status
@@ -21,6 +22,18 @@ from app.config import Settings, get_settings
 from app.domain.errors import MissingDependencyError, NotImplementedForPhase
 from app.infrastructure.factory import build_adapters
 from app.logging import configure_logging
+from app.services.ask_auth import (
+    SIGNATURE_HEADER,
+    TIMESTAMP_HEADER,
+    AskAuthError,
+    verify_ask_signature,
+)
+from app.services.ask_intake import (
+    STATUS_ACCEPTED,
+    STATUS_DISABLED,
+    STATUS_INVALID,
+    AskIntake,
+)
 from app.services.poller import Poller
 from app.services.processor import Processor
 from app.services.retention import RetentionWorker
@@ -76,6 +89,12 @@ def create_app(
         daily_usage=resolved.daily_usage,
         gmail=resolved.gmail,
         clock=resolved.clock,
+    )
+
+    ask_intake = AskIntake(
+        settings=settings,
+        gmail=resolved.gmail,
+        poller=poller,
     )
 
     def require_internal_token(
@@ -151,6 +170,55 @@ def create_app(
     @app.post("/internal/retention", dependencies=[Depends(require_internal_token)])
     async def internal_retention() -> dict[str, int]:
         return retention.run().as_dict()
+
+    @app.post("/v1/ask")
+    async def ask_ingest(request: Request) -> JSONResponse:
+        """Accept a clarvia.org Ask us submission.
+
+        Authenticated with ``LEX_WEBSITE_HMAC_SECRET``. This secret cannot call
+        ``/internal/*``. Fail closed when the secret is unset.
+        """
+        raw = (await request.body()).decode("utf-8")
+        try:
+            verify_ask_signature(
+                secret=settings.website_hmac_secret,
+                timestamp=request.headers.get(TIMESTAMP_HEADER, ""),
+                body=raw,
+                signature=request.headers.get(SIGNATURE_HEADER, ""),
+            )
+        except AskAuthError:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED, detail="unauthorized"
+            ) from None
+        try:
+            payload = json.loads(raw)
+        except json.JSONDecodeError:
+            return JSONResponse(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                content={"status": STATUS_INVALID, "code": "invalid_json"},
+            )
+        if not isinstance(payload, dict):
+            return JSONResponse(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                content={"status": STATUS_INVALID, "code": "invalid_json"},
+            )
+        result = ask_intake.submit(
+            email=str(payload.get("email") or ""),
+            question=str(payload.get("question") or ""),
+            consent=payload.get("consent") is True,
+        )
+        if result.status == STATUS_ACCEPTED:
+            return JSONResponse(
+                status_code=status.HTTP_202_ACCEPTED, content=result.as_dict()
+            )
+        if result.status == STATUS_DISABLED:
+            return JSONResponse(
+                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                content=result.as_dict(),
+            )
+        return JSONResponse(
+            status_code=status.HTTP_400_BAD_REQUEST, content=result.as_dict()
+        )
 
     return app
 

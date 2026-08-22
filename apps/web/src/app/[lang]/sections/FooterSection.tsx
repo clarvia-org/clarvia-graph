@@ -26,8 +26,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
                 { label: l(lang, "Updates", "Actualités", "Aktuelles", "Neiegkeeten"), href: `/${lang}/updates` },
                 { label: l(lang, "Presentation Brochure", "Brochure de présentation", "Präsentationsbroschüre", "Presentatiounsbroschür"), href: `/${lang}/brochure` },
                 { label: l(lang, "Privacy Policy", "Politique de confidentialité", "Datenschutzerklärung", "Dateschutzerklärung"), href: `/${lang}/privacy` },
-                { label: l(lang, "Share your experience", "Partager votre expérience", "Erfahrung teilen", "Deelt Är Erfarung"), href: "#experience" },
-                { label: l(lang, "Contact", "Contact", "Kontakt", "Kontakt"), href: "#contact" },
+                { label: l(lang, "Share your experience", "Partager votre expérience", "Erfahrung teilen", "Deelt Är Erfarung"), href: `/${lang}/contribute#experience` },
+                { label: l(lang, "Contact", "Contact", "Kontakt", "Kontakt"), href: `/${lang}#contact` },
               ].map((link) => (
                 <a key={link.label} href={link.href} className="text-sm text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
                   {link.label}

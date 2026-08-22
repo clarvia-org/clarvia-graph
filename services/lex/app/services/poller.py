@@ -96,7 +96,7 @@ class Poller:
         failed = 0
         for ref in refs:
             try:
-                outcome = self._discover(ref)
+                outcome = self.enqueue_message(ref)
             except Exception:
                 # One unhealthy message must not stop discovery of the rest.
                 # The exception text may contain provider detail, so only a
@@ -165,7 +165,12 @@ class Poller:
             )
         return recovered
 
-    def _discover(self, ref: GmailMessageRef) -> EnqueueOutcome:
+    def enqueue_message(self, ref: GmailMessageRef) -> EnqueueOutcome:
+        """Create state, enqueue the process task, and mark the message pending.
+
+        Used by inbox poll and by clarvia.org Ask us ingest so both paths share
+        the same deterministic task name.
+        """
         key = message_key(ref.message_id)
         if self._state.get_record(key) is None:
             self._state.create_record(
