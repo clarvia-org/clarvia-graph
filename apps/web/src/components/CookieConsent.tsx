@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { type Lang, l } from "@/lib/i18n";
 import { saveConsentPreference, updateGoogleConsent, CONSENT_STORAGE_KEY, CONSENT_VERSION } from "@/lib/consent";
 
 export default function CookieConsent({ lang }: { lang: Lang }) {
   const [isVisible, setIsVisible] = useState(false);
   const [isRendered, setIsRendered] = useState(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const previousFocusRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     let showBanner = true;
@@ -42,6 +44,48 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
     return () => window.removeEventListener("clarvia-open-cookie-settings", handleOpen);
   }, []);
 
+  useEffect(() => {
+    if (!isVisible) return;
+
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    previousFocusRef.current =
+      document.activeElement instanceof HTMLElement ? document.activeElement : null;
+
+    const focusable = dialog.querySelectorAll<HTMLElement>(
+      'button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    const focusFrame = requestAnimationFrame(() => first?.focus());
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== "Tab" || focusable.length === 0) return;
+
+      if (!dialog.contains(document.activeElement)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first)?.focus();
+        return;
+      }
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last?.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first?.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      cancelAnimationFrame(focusFrame);
+      document.removeEventListener("keydown", handleKeyDown);
+      previousFocusRef.current?.focus();
+    };
+  }, [isVisible]);
+
   const handleChoice = (status: "granted" | "denied") => {
     saveConsentPreference(status);
     updateGoogleConsent(status);
@@ -55,7 +99,11 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
 
   return (
     <div
+      ref={dialogRef}
       role="dialog"
+      aria-modal="true"
+      aria-hidden={!isVisible}
+      inert={!isVisible}
       aria-labelledby="consent-title"
       aria-describedby="consent-description"
       className={`fixed bottom-4 left-4 right-4 md:left-auto md:right-8 md:max-w-md z-50 transition-all duration-500 ease-in-out ${
@@ -64,9 +112,9 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
     >
       <div className="glass-panel shadow-2xl border border-calm-blue-200/50 rounded-2xl p-5 md:p-6 text-sm flex flex-col gap-4">
         <div>
-          <h4 id="consent-title" className="font-semibold text-base text-[#2b3a67] mb-1">
+          <h2 id="consent-title" className="font-semibold text-base text-[#2b3a67] mb-1">
             {l(lang, "Privacy preferences", "Préférences de confidentialité", "Datenschutzeinstellungen", "Dateschutz-Astellungen")}
-          </h4>
+          </h2>
           <p id="consent-description" className="text-xs text-calm-blue-600 leading-relaxed">
             {l(lang, "We are a non-profit building a free bereavement service. To help us understand site performance and improve our checklists, we use Google Analytics. Accepting optional measurement directly helps our mission — or you can continue with essential-only settings.", "Nous sommes une association sans but lucratif qui développe un service d'accompagnement gratuit. Pour nous aider à comprendre les performances du site et à améliorer nos listes de démarches, nous utilisons Google Analytics. Accepter ces mesures facultatives soutient directement notre mission — ou vous pouvez continuer avec les paramètres essentiels uniquement.", "Wir sind ein gemeinnütziger Verein, der eine kostenlose Orientierungshilfe im Trauerfall entwickelt. Um die Leistung unserer Website besser zu verstehen und unsere Checklisten zu verbessern, nutzen wir Google Analytics. Wenn Sie diesen optionalen Messungen zustimmen, unterstützen Sie unsere Arbeit direkt — oder Sie können nur mit den erforderlichen Einstellungen fortfahren.", "Mir sinn eng ASBL, déi e gratis Service fir Begleedung am Trauerfall opbaut. Fir besser ze verstoen, wéi eis Websäit funktionéiert, an eis Checklëschten ze verbesseren, benotze mir Google Analytics. Wann Dir déi fakultativ Miessungen akzeptéiert, ënnerstëtzt Dir direkt eis Missioun — oder Dir kënnt mat nëmmen den néidegen Astellunge weiderfueren.")}
           </p>
@@ -74,12 +122,14 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
 
         <div className="flex flex-row gap-2">
           <button
+            type="button"
             onClick={() => handleChoice("denied")}
             className="flex-1 py-2 px-3 border border-calm-blue-200 hover:border-calm-blue-300 text-calm-blue-800 font-medium text-xs rounded-xl bg-white hover:bg-calm-blue-50 transition-all cursor-pointer text-center"
           >
             {l(lang, "Decline / Essential only", "Refuser / Essentiel uniquement", "Ablehnen / Nur erforderlich", "Refuséieren / nëmmen dat Noutwendegt")}
           </button>
           <button
+            type="button"
             onClick={() => handleChoice("granted")}
             className="flex-1 py-2 px-3 bg-calm-blue-100 hover:bg-calm-blue-200 hover:border-calm-blue-300 border border-transparent text-calm-blue-900 font-semibold text-xs rounded-xl transition-all cursor-pointer text-center"
           >
