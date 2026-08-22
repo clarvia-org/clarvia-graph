@@ -18,7 +18,7 @@ export type PolicyData = {
 export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
   en: {
     title: "Privacy & Cookie Policy",
-    lastUpdated: "Last updated: 20 August 2026",
+    lastUpdated: "Last updated: 22 August 2026",
     sections: [
       {
         heading: "1. What Clarvia.org collects",
@@ -65,7 +65,7 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
       {
         heading: "5. Lex, contact and support requests",
         body: [
-          "The Ask us form on the Clarvia.org home page starts the same automated email guidance as writing to Clarvia. Replies may be sent automatically and are signed Lex at Clarvia (lex@clarvia.org). You can also contact us by email or submit a support or contact form. We process the information needed to respond, including your email address, preferred language, message content, email thread history, and the addresses of anyone you include in the conversation.",
+          "The Ask us form on the Clarvia.org home page starts the same automated email guidance as writing to Clarvia. Replies may be sent automatically and are signed Lex at Clarvia. You can also contact us by email or submit a support or contact form. We process the information needed to respond, including your email address, preferred language, message content, email thread history, and the addresses of anyone you include in the conversation.",
           "Please do not include identification numbers, bank details, or names of living people unless they are needed for us to answer. Although the GDPR generally does not apply to deceased people, information about a death may still identify or concern living people, so please share only what is necessary.",
           "Lex is the name used to sign Clarvia’s automated end-of-life and bereavement information emails. We use artificial intelligence tools, including large language models, to translate messages, research relevant information, and prepare conversational replies with sources and suggested next steps.",
           "Lex replies may be sent automatically without prior review by a Clarvia volunteer. Authorised Clarvia volunteers may review conversations afterward for safety, quality, or support purposes.",
