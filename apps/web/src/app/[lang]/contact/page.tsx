@@ -15,19 +15,19 @@ const META: Record<Lang, { title: string; description: string }> = {
       "Contact Clarvia ASBL, a Luxembourg nonprofit (RCS F15680). Use this form for partnerships, press, volunteering, and general questions.",
   },
   fr: {
-    title: "Contact Clarvia ASBL",
+    title: "Contacter Clarvia ASBL",
     description:
-      "Contact Clarvia ASBL, a Luxembourg nonprofit (RCS F15680). Use this form for partnerships, press, volunteering, and general questions.",
+      "Contactez Clarvia ASBL, une association luxembourgeoise à but non lucratif (RCS F15680). Utilisez ce formulaire pour les partenariats, les demandes de presse, le bénévolat et les questions générales.",
   },
   de: {
-    title: "Contact Clarvia ASBL",
+    title: "Clarvia ASBL kontaktieren",
     description:
-      "Contact Clarvia ASBL, a Luxembourg nonprofit (RCS F15680). Use this form for partnerships, press, volunteering, and general questions.",
+      "Kontaktieren Sie Clarvia ASBL, einen gemeinnützigen Verein aus Luxemburg (RCS F15680). Nutzen Sie dieses Formular für Partnerschaften, Presseanfragen, ehrenamtliche Mitarbeit und allgemeine Fragen.",
   },
   lu: {
-    title: "Contact Clarvia ASBL",
+    title: "Clarvia ASBL kontaktéieren",
     description:
-      "Contact Clarvia ASBL, a Luxembourg nonprofit (RCS F15680). Use this form for partnerships, press, volunteering, and general questions.",
+      "Kontaktéiert Clarvia ASBL, en net gewënnorientéierte Veräin aus Lëtzebuerg (RCS F15680). Benotzt dëse Formulaire fir Partnerschaften, Presseufroen, Benevolat an allgemeng Froen.",
   },
 };
 
@@ -76,15 +76,15 @@ export default async function ContactPage({
           className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6 text-center"
           style={headlineStyle}
         >
-          {l(lang, "Contact Clarvia", "Contact Clarvia", "Contact Clarvia", "Contact Clarvia")}
+          {l(lang, "Contact Clarvia", "Contacter Clarvia", "Clarvia kontaktieren", "Clarvia kontaktéieren")}
         </h1>
         <p className="text-lg text-calm-blue-700 leading-relaxed text-center max-w-2xl mx-auto mb-10">
           {l(
             lang,
             "If someone you love is terminally ill or has died, please use Ask us on the homepage. Lex replies by email. This page is for everything else: partnerships, press, volunteering, and general questions.",
-            "If someone you love is terminally ill or has died, please use Ask us on the homepage. Lex replies by email. This page is for everything else: partnerships, press, volunteering, and general questions.",
-            "If someone you love is terminally ill or has died, please use Ask us on the homepage. Lex replies by email. This page is for everything else: partnerships, press, volunteering, and general questions.",
-            "If someone you love is terminally ill or has died, please use Ask us on the homepage. Lex replies by email. This page is for everything else: partnerships, press, volunteering, and general questions."
+            "Si l’un de vos proches est en phase terminale ou est décédé, veuillez utiliser « Posez-nous votre question » sur la page d’accueil. Lex vous répondra par e-mail. Cette page est destinée à toutes les autres demandes : partenariats, presse, bénévolat et questions générales.",
+            "Wenn ein geliebter Mensch unheilbar krank ist oder verstorben ist, nutzen Sie bitte „Fragen Sie uns“ auf der Startseite. Lex antwortet Ihnen per E-Mail. Diese Seite ist für alle anderen Anliegen gedacht: Partnerschaften, Presseanfragen, ehrenamtliche Mitarbeit und allgemeine Fragen.",
+            "Wann eng Persoun, déi Iech nosteet, onheelbar krank ass oder gestuerwen ass, benotzt wgl. „Frot eis“ op der Startsäit. De Lex äntwert Iech per E-Mail. Dës Säit ass fir all aner Uleies geduecht: Partnerschaften, Presseufroen, Benevolat an allgemeng Froen."
           )}
         </p>
         <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -92,13 +92,13 @@ export default async function ContactPage({
             href={`/${lang}#ask-us`}
             className="btn-primary inline-flex items-center justify-center px-6 py-2.5 text-sm"
           >
-            {l(lang, "Ask us", "Ask us", "Ask us", "Ask us")}
+            {l(lang, "Ask us", "Posez-nous votre question", "Fragen Sie uns", "Frot eis")}
           </Link>
           <Link
             href={`/${lang}/support`}
             className="btn-secondary inline-flex items-center justify-center px-6 py-2.5 text-sm"
           >
-            {l(lang, "Donate", "Donate", "Donate", "Donate")}
+            {l(lang, "Donate", "Faire un don", "Spenden", "Spenden")}
           </Link>
         </div>
 
@@ -108,7 +108,7 @@ export default async function ContactPage({
             className="text-2xl font-semibold text-calm-blue-800 mb-4 text-center"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
-            {l(lang, "Organisation", "Organisation", "Organisation", "Organisation")}
+            {l(lang, "Organisation", "L’association", "Organisation", "Organisatioun")}
           </h2>
           <div className="glass-panel p-6 space-y-2 text-sm text-calm-blue-600 max-w-xl mx-auto">
             <p>
@@ -148,13 +148,13 @@ export default async function ContactPage({
           lang={lang}
           showFeedback={false}
           showContact
-          contactHeading={l(lang, "Write to us", "Write to us", "Write to us", "Write to us")}
+          contactHeading={l(lang, "Write to us", "Écrivez-nous", "Schreiben Sie uns", "Schreift eis")}
           contactIntro={l(
             lang,
             "We welcome contact from:",
-            "We welcome contact from:",
-            "We welcome contact from:",
-            "We welcome contact from:"
+            "Nous sommes heureux d’échanger avec :",
+            "Wir freuen uns über Nachrichten von:",
+            "Mir freeën eis iwwer Noriichte vun:"
           )}
         />
       </main>

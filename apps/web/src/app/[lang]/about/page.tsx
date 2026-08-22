@@ -187,9 +187,9 @@ export default async function AboutPage({
               {l(
                 lang,
                 "Donations keep our free services running. We do not show ads. Payments are processed through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates. Our 2026 accounts have not yet been filed — live income and eligible expenses are on Open Collective.",
-                "Donations keep our free services running. We do not show ads. Payments are processed through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates. Our 2026 accounts have not yet been filed — live income and eligible expenses are on Open Collective.",
-                "Donations keep our free services running. We do not show ads. Payments are processed through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates. Our 2026 accounts have not yet been filed — live income and eligible expenses are on Open Collective.",
-                "Donations keep our free services running. We do not show ads. Payments are processed through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates. Our 2026 accounts have not yet been filed — live income and eligible expenses are on Open Collective."
+                "Les dons permettent de maintenir nos services gratuits. Nous n’affichons aucune publicité. Les paiements sont traités par Stripe, Open Collective et GitHub Sponsors. Nous ne délivrons actuellement aucun certificat fiscal. Nos comptes pour 2026 n’ont pas encore été déposés. Nos recettes et les dépenses admissibles peuvent être consultées en temps réel sur Open Collective.",
+                "Spenden sichern den Betrieb unserer kostenlosen Angebote. Wir zeigen keine Werbung. Zahlungen werden über Stripe, Open Collective und GitHub Sponsors abgewickelt. Derzeit stellen wir keine Spendenbescheinigungen aus. Unser Jahresabschluss für 2026 wurde noch nicht eingereicht. Laufende Einnahmen und anerkannte Ausgaben können auf Open Collective eingesehen werden.",
+                "Spenden halen eis gratis Servicer um Lafen. Mir weise keng Reklammen. D’Bezuelunge ginn iwwer Stripe, Open Collective a GitHub Sponsors ofgewéckelt. De Moment stelle mir keng Steierbescheinegungen aus. Eis Konte fir 2026 sinn nach net agereecht ginn. Déi aktuell Recetten an eligible Ausgabe kënnen op Open Collective nogekuckt ginn."
               )}{" "}
               <a
                 href="https://opencollective.com/clarvia-org"

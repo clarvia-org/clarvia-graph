@@ -243,18 +243,18 @@ export default function HeroSection({ lang }: { lang: Lang }) {
             {l(
               lang,
               "Free worldwide guidance from a Luxembourg nonprofit. We do not show ads.",
-              "Free worldwide guidance from a Luxembourg nonprofit. We do not show ads.",
-              "Free worldwide guidance from a Luxembourg nonprofit. We do not show ads.",
-              "Free worldwide guidance from a Luxembourg nonprofit. We do not show ads."
+              "Un accompagnement gratuit dans le monde entier, proposé par une association luxembourgeoise à but non lucratif. Nous n’affichons aucune publicité.",
+              "Kostenlose Orientierung weltweit von einem gemeinnützigen Verein aus Luxemburg. Wir zeigen keine Werbung.",
+              "Gratis Orientéierung weltwäit vun engem net gewënnorientéierte Veräin aus Lëtzebuerg. Mir weise keng Reklammen."
             )}
           </p>
           <p className="text-sm text-calm-blue-600 mt-2 leading-relaxed">
             {l(
               lang,
               "Two programs: Ask us by email (worldwide), and a Luxembourg checklist in public alpha.",
-              "Two programs: Ask us by email (worldwide), and a Luxembourg checklist in public alpha.",
-              "Two programs: Ask us by email (worldwide), and a Luxembourg checklist in public alpha.",
-              "Two programs: Ask us by email (worldwide), and a Luxembourg checklist in public alpha."
+              "Deux services : Posez-nous votre question par e-mail, partout dans le monde, et une checklist pour le Luxembourg en version alpha publique.",
+              "Zwei Angebote: Fragen Sie uns per E-Mail, weltweit verfügbar, und eine Luxemburg-Checkliste in der öffentlichen Alpha-Version.",
+              "Zwee Servicer: Frot eis per E-Mail, weltwäit disponibel, an eng Lëtzebuerg-Checklëscht an der ëffentlecher Alpha-Versioun."
             )}
           </p>
           <div className="flex flex-wrap gap-3 mt-4">
@@ -262,7 +262,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
               href={`/${lang}/support`}
               className="btn-secondary inline-flex items-center justify-center px-5 py-2.5 text-sm"
             >
-              {l(lang, "Donate", "Donate", "Donate", "Donate")}
+              {l(lang, "Donate", "Faire un don", "Spenden", "Spenden")}
             </Link>
             <Link
               href={`/${lang}/contact`}

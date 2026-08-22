@@ -134,9 +134,9 @@ export default function FormsSection({
             l(
               lang,
               "We welcome contact from:",
-              "We welcome contact from:",
-              "We welcome contact from:",
-              "We welcome contact from:"
+              "Nous sommes heureux d’échanger avec :",
+              "Wir freuen uns über Nachrichten von:",
+              "Mir freeën eis iwwer Noriichte vun:"
             )}
         </p>
         {showContactAudience && (

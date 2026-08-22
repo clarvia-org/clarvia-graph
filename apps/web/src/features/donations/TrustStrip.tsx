@@ -12,36 +12,36 @@ export default function TrustStrip({ lang }: TrustStripProps) {
           {l(
             lang,
             "How we use donations",
-            "How we use donations",
-            "How we use donations",
-            "How we use donations"
+            "Comment nous utilisons les dons",
+            "Wie wir Spenden verwenden",
+            "Wéi mir Spende benotzen"
           )}
         </h2>
         <p>
           {l(
             lang,
             "Donations fund our free services: worldwide email guidance and the Luxembourg checklist. We do not show ads, and we do not sell data.",
-            "Donations fund our free services: worldwide email guidance and the Luxembourg checklist. We do not show ads, and we do not sell data.",
-            "Donations fund our free services: worldwide email guidance and the Luxembourg checklist. We do not show ads, and we do not sell data.",
-            "Donations fund our free services: worldwide email guidance and the Luxembourg checklist. We do not show ads, and we do not sell data."
+            "Les dons financent nos services gratuits : notre accompagnement par e-mail dans le monde entier et la checklist Luxembourg. Nous n’affichons aucune publicité et ne vendons aucune donnée.",
+            "Spenden finanzieren unsere kostenlosen Angebote: weltweite Orientierung per E-Mail und die Luxemburg-Checkliste. Wir zeigen keine Werbung und verkaufen keine Daten.",
+            "Spende finanzéieren eis gratis Servicer: Orientéierung per E-Mail weltwäit an d’Lëtzebuerg-Checklëscht. Mir weise keng Reklammen a verkafe keng Daten."
           )}
         </p>
         <p>
           {l(
             lang,
             "Payments are processed through Stripe, Open Collective, and GitHub Sponsors. Clarvia ASBL does not currently issue tax certificates.",
-            "Payments are processed through Stripe, Open Collective, and GitHub Sponsors. Clarvia ASBL does not currently issue tax certificates.",
-            "Payments are processed through Stripe, Open Collective, and GitHub Sponsors. Clarvia ASBL does not currently issue tax certificates.",
-            "Payments are processed through Stripe, Open Collective, and GitHub Sponsors. Clarvia ASBL does not currently issue tax certificates."
+            "Les paiements sont traités par Stripe, Open Collective et GitHub Sponsors. Clarvia ASBL ne délivre actuellement aucun certificat fiscal.",
+            "Zahlungen werden über Stripe, Open Collective und GitHub Sponsors abgewickelt. Clarvia ASBL stellt derzeit keine Spendenbescheinigungen aus.",
+            "D’Bezuelunge ginn iwwer Stripe, Open Collective a GitHub Sponsors ofgewéckelt. Clarvia ASBL stellt de Moment keng Steierbescheinegungen aus."
           )}
         </p>
         <p>
           {l(
             lang,
             "Our 2026 accounts have not yet been filed. Open Collective shows live income and eligible expenses:",
-            "Our 2026 accounts have not yet been filed. Open Collective shows live income and eligible expenses:",
-            "Our 2026 accounts have not yet been filed. Open Collective shows live income and eligible expenses:",
-            "Our 2026 accounts have not yet been filed. Open Collective shows live income and eligible expenses:"
+            "Nos comptes pour 2026 n’ont pas encore été déposés. Open Collective présente en temps réel nos recettes et les dépenses admissibles :",
+            "Unser Jahresabschluss für 2026 wurde noch nicht eingereicht. Auf Open Collective können Sie unsere laufenden Einnahmen und die anerkannten Ausgaben einsehen:",
+            "Eis Konte fir 2026 sinn nach net agereecht ginn. Op Open Collective kënnt Dir eis aktuell Recetten an déi eligible Ausgaben gesinn:"
           )}{" "}
           <a
             href="https://opencollective.com/clarvia-org"

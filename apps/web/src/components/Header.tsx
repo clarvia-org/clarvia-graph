@@ -84,23 +84,23 @@ export default function Header({ lang }: { lang: Lang }) {
               href={`/${lang}#ask-us`}
               className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
-              {l(lang, "Ask us", "Ask us", "Ask us", "Ask us")}
+              {l(lang, "Ask us", "Posez-nous votre question", "Fragen Sie uns", "Frot eis")}
             </Link>
             <Link
               href={`/${lang}/checklist`}
               aria-label={l(
                 lang,
                 "Luxembourg checklist (public alpha)",
-                "Luxembourg checklist (public alpha)",
-                "Luxembourg checklist (public alpha)",
-                "Luxembourg checklist (public alpha)"
+                "Checklist Luxembourg (version alpha publique)",
+                "Luxemburg-Checkliste (öffentliche Alpha-Version)",
+                "Lëtzebuerg-Checklëscht (ëffentlech Alpha-Versioun)"
               )}
               className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
               <span className="inline-flex items-baseline gap-1">
                 {l(lang, "Checklist", "Checklist", "Checkliste", "Checklëscht")}
                 <span className="text-[11px] font-medium text-calm-blue-400">
-                  {l(lang, "LU alpha", "LU alpha", "LU alpha", "LU alpha")}
+                  {l(lang, "LU alpha", "LU alpha", "LU Alpha", "LU Alpha")}
                 </span>
               </span>
             </Link>
@@ -212,7 +212,7 @@ export default function Header({ lang }: { lang: Lang }) {
             onClick={toggleMenu}
             className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
           >
-            {l(lang, "Ask us", "Ask us", "Ask us", "Ask us")}
+            {l(lang, "Ask us", "Posez-nous votre question", "Fragen Sie uns", "Frot eis")}
           </Link>
           <Link
             href={`/${lang}/checklist`}
@@ -222,9 +222,9 @@ export default function Header({ lang }: { lang: Lang }) {
             {l(
               lang,
               "Luxembourg checklist (alpha)",
-              "Luxembourg checklist (alpha)",
-              "Luxembourg checklist (alpha)",
-              "Luxembourg checklist (alpha)"
+              "Checklist Luxembourg (alpha)",
+              "Luxemburg-Checkliste (Alpha-Version)",
+              "Lëtzebuerg-Checklëscht (Alpha-Versioun)"
             )}
           </Link>
           <Link
