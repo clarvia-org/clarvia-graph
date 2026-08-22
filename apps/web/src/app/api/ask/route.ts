@@ -154,14 +154,18 @@ export async function POST(req: NextRequest) {
     });
 
     if (lexRes.status === 202) {
-      await appendConsent({
-        timestamp,
-        consent_text_version: CONSENT_TEXT_VERSION,
-        channel: "web",
-        sender_hmac: hmacHex(websiteHmacSecret, email),
-        turnstile_passed: true,
-        ip_hmac: hmacHex(websiteHmacSecret, ip),
-      });
+      try {
+        await appendConsent({
+          timestamp,
+          consent_text_version: CONSENT_TEXT_VERSION,
+          channel: "web",
+          sender_hmac: hmacHex(websiteHmacSecret, email),
+          turnstile_passed: true,
+          ip_hmac: hmacHex(websiteHmacSecret, ip),
+        });
+      } catch (err: unknown) {
+        console.error("Ask consent ledger write failed:", err);
+      }
       return NextResponse.json({ ok: true });
     }
 

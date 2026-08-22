@@ -1,4 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
+import { promises as fs } from "fs";
 import { NextRequest } from "next/server";
 
 vi.mock("fs", () => ({
@@ -34,6 +35,9 @@ describe("POST /api/ask", () => {
     vi.stubEnv("LEX_ASK_URL", "https://lex.example.test/v1/ask");
     vi.stubEnv("LEX_WEBSITE_HMAC_SECRET", "ask-test-secret");
     vi.stubEnv("TURNSTILE_SECRET", "");
+    vi.mocked(fs.mkdir).mockResolvedValue(undefined);
+    vi.mocked(fs.readFile).mockRejectedValue(new Error("missing"));
+    vi.mocked(fs.writeFile).mockResolvedValue(undefined);
   });
 
   it("returns 400 without consent", async () => {
@@ -120,5 +124,28 @@ describe("POST /api/ask", () => {
     expect(sent.email).toBe("user@example.com");
     expect(sent.question).toBe(QUESTION);
     expect(sent.consent).toBe(true);
+  });
+
+  it("still returns 200 if the consent ledger write fails after Lex 202", async () => {
+    vi.mocked(fs.writeFile).mockRejectedValueOnce(new Error("disk full"));
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (url: string | URL): Promise<Response> => {
+        if (String(url).includes("metadata.google.internal")) {
+          return new Response("missing", { status: 404 });
+        }
+        return new Response(JSON.stringify({ status: "accepted" }), { status: 202 });
+      })
+    );
+
+    const res = await POST(
+      askRequest({
+        email: "user@example.com",
+        question: QUESTION,
+        consent: true,
+      })
+    );
+    expect(res.status).toBe(200);
+    expect(await res.json()).toEqual({ ok: true });
   });
 });
