@@ -18,7 +18,7 @@ export type PolicyData = {
 export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
   en: {
     title: "Privacy & Cookie Policy",
-    lastUpdated: "Last updated: 20 August 2026",
+    lastUpdated: "Last updated: 22 August 2026",
     sections: [
       {
         heading: "1. What Clarvia.org collects",
