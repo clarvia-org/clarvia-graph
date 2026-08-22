@@ -14,9 +14,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang: rawLang } = await params;
   const lang = (LANGUAGES.includes(rawLang as Lang) ? rawLang : "en") as Lang;
+  const titles: Record<Lang, string> = {
+    en: "We’re on it. — Clarvia",
+    fr: "Nous nous en occupons. | Clarvia",
+    de: "Wir kümmern uns darum. | Clarvia",
+    lu: "Mir këmmeren eis drëm. | Clarvia",
+  };
 
   return {
-    title: "We're on it. — Clarvia",
+    title: titles[lang],
     robots: { index: false, follow: false, nocache: true },
     alternates: {
       canonical: `${BASE_URL}/${lang}/ask/sent`,
@@ -38,15 +44,15 @@ export default async function AskSentPage({
       <main id="main-content" className="flex-grow w-full max-w-2xl mx-auto px-4 sm:px-6 py-20 relative z-10 text-center">
         <AskSentTracker lang={lang} />
         <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6" style={headlineStyle}>
-          {l(lang, "We’re on it.", "We’re on it.", "We’re on it.", "We’re on it.")}
+          {l(lang, "We’re on it.", "Nous nous en occupons.", "Wir kümmern uns darum.", "Mir këmmeren eis drëm.")}
         </h1>
         <p className="text-base sm:text-lg text-calm-blue-600 leading-relaxed">
           {l(
             lang,
             "Look for an email from Lex at Clarvia (lex@clarvia.org). Check your spam folder if it doesn’t arrive within a few minutes.",
-            "Look for an email from Lex at Clarvia (lex@clarvia.org). Check your spam folder if it doesn’t arrive within a few minutes.",
-            "Look for an email from Lex at Clarvia (lex@clarvia.org). Check your spam folder if it doesn’t arrive within a few minutes.",
-            "Look for an email from Lex at Clarvia (lex@clarvia.org). Check your spam folder if it doesn’t arrive within a few minutes."
+            "Vous allez recevoir un e-mail de Lex, de l’équipe Clarvia (lex@clarvia.org). Vérifiez votre dossier de courriers indésirables s’il n’arrive pas dans les prochaines minutes.",
+            "Halten Sie Ausschau nach einer E-Mail von Lex bei Clarvia (lex@clarvia.org). Prüfen Sie Ihren Spam-Ordner, falls sie nicht innerhalb weniger Minuten eintrifft.",
+            "Kuckt no enger E-Mail vum Lex bei Clarvia (lex@clarvia.org). Kontrolléiert Äre Spam-Dossier, wann se net bannent e puer Minutten ukënnt."
           )}
         </p>
       </main>

@@ -15,19 +15,19 @@ const HOME_META: Record<Lang, { title: string; description: string }> = {
       "Free, source-linked guidance from a terminal diagnosis through the practical questions that can arise years after a death.",
   },
   fr: {
-    title: "Clarvia — Accompagner les familles dans ce qui suit",
+    title: "Vous ne savez pas quoi faire lorsqu’un proche est en phase terminale ou est décédé ? | Clarvia",
     description:
-      "Un guide gratuit et multilingue pour chaque démarche administrative après un décès au Luxembourg. Des délais clairs, des priorités claires. Aucune famille laissée seule.",
+      "Des informations pratiques gratuites, accompagnées de leurs sources, depuis le diagnostic d’une maladie en phase terminale jusqu’aux questions qui peuvent encore se poser des années après un décès.",
   },
   de: {
-    title: "Clarvia — Familien durch das begleiten, was als Nächstes kommt",
+    title: "Sie wissen nicht, was zu tun ist, wenn ein geliebter Mensch unheilbar krank ist oder verstorben ist? | Clarvia",
     description:
-      "Ein kostenloser, mehrsprachiger Leitfaden für jeden Verwaltungsschritt nach einem Verlust in Luxemburg. Klare Fristen, klare Prioritäten. Keine Familie allein gelassen.",
+      "Kostenlose Orientierung mit Links zu den Quellen, von der Diagnose einer unheilbaren Erkrankung bis zu praktischen Fragen, die noch Jahre nach einem Todesfall auftreten können.",
   },
   lu: {
-    title: "Clarvia — Familljen duerch dat begleeden, wat als Nächstes kënnt",
+    title: "Wësst Dir net, wat Dir maache sollt, wann eng Persoun, déi Iech nosteet, onheelbar krank ass oder gestuerwen ass? | Clarvia",
     description:
-      "E gratis, méisproochege Guide fir all administrative Schrëtt no engem Doudesfall zu Lëtzebuerg. Kloer Fristen, kloer Prioritéiten. Keng Famill gëtt eleng gelooss.",
+      "Gratis praktesch Orientéierung mat Linken op d’Quellen, vun der Diagnos vun enger onheelbarer Krankheet bis bei Froen, déi nach Joren no engem Doudesfall opkomme kënnen.",
   },
 };
 
