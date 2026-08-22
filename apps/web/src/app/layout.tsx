@@ -82,7 +82,7 @@ export default function RootLayout({
         {children}
         <Script
           id="gtag-js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-K67M5B4932"
         />
       </body>
