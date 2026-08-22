@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { headlineStyle } from "../data";
 import FooterSection from "../sections/FooterSection";
 import FoundingSection from "../sections/FoundingSection";
+import ProblemSection from "../sections/ProblemSection";
 
 const BASE_URL = "https://clarvia.org";
 
@@ -109,6 +110,8 @@ export default async function AboutPage({
             </p>
           </div>
         </section>
+
+        <ProblemSection lang={lang} />
 
         {/* ═══ Active Programs & Services ═══ */}
         <section className="mb-16" aria-labelledby="programs-heading">

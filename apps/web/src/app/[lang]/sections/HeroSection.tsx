@@ -13,10 +13,10 @@ const ASK_OK_KEY = "clarvia-ask-submitted";
 
 const EXAMPLES = [
   "My father died last week in Paris. I live in France. What do I need to do first?",
-  "My partner has a terminal diagnosis and we live in Luxembourg. What should we organise while we still can?",
-  "My mother died in Germany two years ago. I still have questions about pension and paperwork in Luxembourg.",
-  "Someone I love died abroad. They lived in Luxembourg. How do we handle the death certificate and funeral?",
-  "I need to tell banks and the commune after a death in Luxembourg. Where do I start?",
+  "My partner has a terminal diagnosis. What should we organise while we still can?",
+  "My mother died two years ago. I still have questions about pension and paperwork.",
+  "Someone I love died in another country. How do we handle the death certificate and funeral?",
+  "I need to tell banks and local authorities after a death. Where do I start?",
   "We are not sure who should handle the funeral and the first official steps.",
 ] as const;
 
@@ -96,15 +96,20 @@ export default function HeroSection({ lang }: { lang: Lang }) {
         <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-4">
           {t(
             lang,
-            "Free guidance from a terminal diagnosis through the practical questions that can still arise years after a death."
+            "Free, source-linked guidance from a terminal diagnosis through the practical questions that can arise years after a death."
+          )}
+        </p>
+        <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-4">
+          {t(
+            lang,
+            "Type what happened in your own language, from anywhere. Include where your loved one lived, where the death occurred, or where things stand today. The more context you share, the better we can help."
           )}
         </p>
         <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-10">
-          {t(lang, "Type what happened. Include")}{" "}
-          <strong>{t(lang, "where your loved one lived")}</strong>
-          {t(lang, ", and")}{" "}
-          <strong>{t(lang, "where they are now or where the death occurred")}</strong>
-          {t(lang, ". You’ll get a thoughtful email, usually within a few minutes.")}
+          {t(
+            lang,
+            "Clarvia will send a carefully researched reply to your email, usually within a few minutes."
+          )}
         </p>
 
         <form onSubmit={onSubmit} className="glass-panel p-6 sm:p-8 max-w-2xl mx-auto text-left">
@@ -168,7 +173,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
               disabled={!canSubmit}
               className="btn-primary px-8 py-3 text-base whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed sm:self-end"
             >
-              {status === "sending" ? t(lang, "Sending...") : t(lang, "Ask us")}
+              {status === "sending" ? t(lang, "Sending...") : t(lang, "Send")}
             </button>
           </div>
 
@@ -189,6 +194,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
             )}
           </p>
         </form>
+        <div id="cookie-consent-slot" className="max-w-2xl mx-auto mt-4" />
       </section>
 
       <section className="mb-16">
@@ -226,7 +232,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
         </h2>
         <ul className="max-w-3xl mx-auto space-y-4 text-base text-calm-blue-700 leading-relaxed">
           <li>
-            <strong>{t(lang, "Researched, not guessed.")}</strong>{" "}
+            <strong>{t(lang, "Researched with cited sources.")}</strong>{" "}
             {t(
               lang,
               "We use reliable online sources and, where available, Clarvia’s maintained official information and current laws. You get links so you can check."
@@ -250,13 +256,10 @@ export default function HeroSection({ lang }: { lang: Lang }) {
             <strong>{t(lang, "Made by Clarvia.")}</strong>{" "}
             {t(
               lang,
-              "A free service from a registered Luxembourg nonprofit (Clarvia ASBL, RCS F15680), for people who need a next step in a difficult time."
+              "A free service from a registered nonprofit (Clarvia ASBL, RCS F15680), for people who need a next step in a difficult time."
             )}
           </li>
         </ul>
-        <p className="text-sm text-calm-blue-500 text-center mt-8">
-          {t(lang, "This is information, not medical or legal advice.")}
-        </p>
       </section>
     </>
   );

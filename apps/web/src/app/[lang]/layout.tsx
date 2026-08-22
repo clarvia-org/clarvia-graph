@@ -9,7 +9,7 @@ const META: Record<Lang, { title: string; description: string }> = {
   en: {
     title: "Clarvia — Guiding families through what comes next",
     description:
-      "Open workflow infrastructure for bereavement administration in Luxembourg and across Europe. Free, multilingual, source-backed guidance to help families navigate every administrative step after a loss.",
+      "Free, source-linked guidance from a terminal diagnosis through the practical questions that can arise years after a death.",
   },
   fr: {
     title: "Clarvia — Accompagner les familles dans ce qui suit",
@@ -104,7 +104,7 @@ export default async function LangLayout({
                 },
                 "foundingDate": "2026-05",
 
-                "description": "Clarvia is a Luxembourgish non-profit building open, source-backed workflow infrastructure for bereavement administration across Europe, starting with a free multilingual bereavement checklist for families in Luxembourg.",
+                "description": "Clarvia is an independent non-profit providing free, source-linked bereavement and end-of-life guidance for families worldwide.",
                 "knowsAbout": [
                   "bereavement administration",
                   "life-event consequence modeling",
@@ -117,12 +117,7 @@ export default async function LangLayout({
                   "CPSV-AP",
                   "CCCEV",
                   "ELI",
-                  "PROV-O",
-                  "Luxembourg",
-                  "France",
-                  "Germany",
-                  "Belgium",
-                  "Portugal"
+                  "PROV-O"
                 ]
               },
               {
@@ -134,7 +129,7 @@ export default async function LangLayout({
                   "@id": "https://clarvia.org/#organization"
                 },
                 "inLanguage": ["en", "fr", "de", "lu"],
-                "description": "Free multilingual bereavement guidance for families in Luxembourg, backed by open workflow infrastructure."
+                "description": "Free multilingual bereavement guidance for families worldwide, backed by open workflow infrastructure."
               },
               {
                 "@type": "SoftwareSourceCode",
@@ -159,12 +154,11 @@ export default async function LangLayout({
                 "creator": {
                   "@id": "https://clarvia.org/#organization"
                 },
-                "description": "Clarvia combines an infrastructure layer and an application layer. The infrastructure layer is open, standards-compatible consequence graph infrastructure for EU life events. The application layer is a free bereavement checklist for real people in Luxembourg and cross-border family situations.",
+                "description": "Clarvia combines an infrastructure layer and an application layer. The infrastructure layer is open, standards-compatible consequence graph infrastructure for life events. The application layer is free bereavement guidance for families worldwide.",
                 "about": [
                   "open workflow infrastructure",
                   "bereavement checklist",
                   "life-event consequence graph",
-                  "European administrative interoperability",
                   "source-backed guidance"
                 ]
               }

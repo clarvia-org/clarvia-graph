@@ -48,6 +48,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  padding-bottom: var(--cookie-banner-height, 0px);
 }
 
 @media (min-width: 768px) {
