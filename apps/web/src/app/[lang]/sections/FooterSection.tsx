@@ -20,14 +20,15 @@ export default function FooterSection({ lang }: { lang: Lang }) {
             <nav className="flex flex-col gap-2" aria-label={l(lang, "Footer navigation", "Navigation du pied de page", "Fußzeilennavigation", "Navigatioun am Foussberäich")} >
               {[
                 { label: l(lang, "Home", "Accueil", "Startseite", "Startsäit"), href: `/${lang}` },
+                { label: l(lang, "Ask us", "Posez-nous votre question", "Fragen Sie uns", "Frot eis"), href: `/${lang}#ask-us` },
+                { label: l(lang, "Contact", "Contact", "Kontakt", "Kontakt"), href: `/${lang}/contact` },
                 { label: l(lang, "Support", "Soutenir", "Unterstützen", "Ënnerstëtzen"), href: `/${lang}/support` },
-                { label: l(lang, "Checklist", "Liste de démarches", "Checkliste", "Checklëscht"), href: `/${lang}/checklist` },
+                { label: l(lang, "Luxembourg checklist", "Checklist Luxembourg", "Luxemburg-Checkliste", "Lëtzebuerg-Checklëscht"), href: `/${lang}/checklist` },
                 { label: l(lang, "About", "À propos", "Über uns", "Iwwer eis"), href: `/${lang}/about` },
                 { label: l(lang, "Updates", "Actualités", "Aktuelles", "Neiegkeeten"), href: `/${lang}/updates` },
                 { label: l(lang, "Presentation Brochure", "Brochure de présentation", "Präsentationsbroschüre", "Presentatiounsbroschür"), href: `/${lang}/brochure` },
                 { label: l(lang, "Privacy Policy", "Politique de confidentialité", "Datenschutzerklärung", "Dateschutzerklärung"), href: `/${lang}/privacy` },
                 { label: l(lang, "Share your experience", "Partager votre expérience", "Erfahrung teilen", "Deelt Är Erfarung"), href: `/${lang}/contribute#experience` },
-                { label: l(lang, "Contact", "Contact", "Kontakt", "Kontakt"), href: `/${lang}#contact` },
               ].map((link) => (
                 <a key={link.label} href={link.href} className="text-sm text-calm-blue-600 hover:text-calm-blue-800 transition-colors">
                   {link.label}

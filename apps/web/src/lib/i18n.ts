@@ -16,3 +16,16 @@ export function l(lang: Lang, en: string, fr: string, de: string, lu?: string): 
   return lang === "fr" ? fr : lang === "de" ? de : en;
 }
 
+const SITE_URL = "https://clarvia.org";
+
+/** hreflang map for a path after the language prefix (`""` for home, `"contact"` for /{lang}/contact). */
+export function hreflangLanguages(pathAfterLang = ""): Record<string, string> {
+  const suffix = pathAfterLang ? `/${pathAfterLang}` : "";
+  const languages: Record<string, string> = {};
+  for (const code of LANGUAGES) {
+    languages[code === "lu" ? "lb" : code] = `${SITE_URL}/${code}${suffix}`;
+  }
+  languages["x-default"] = `${SITE_URL}/en${suffix}`;
+  return languages;
+}
+

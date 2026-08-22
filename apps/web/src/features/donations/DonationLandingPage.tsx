@@ -290,6 +290,56 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
                 </ul>
               )}
             </div>
+
+            <div className="glass-panel p-5 space-y-3 text-sm text-calm-blue-600 leading-relaxed">
+              <h2
+                className="text-xl font-semibold text-calm-blue-800"
+                style={{ fontFamily: headlineStyle.fontFamily }}
+              >
+                {l(
+                  lang,
+                  "How we use donations",
+                  "Comment nous utilisons les dons",
+                  "Wie wir Spenden verwenden",
+                  "Wéi mir Spende benotzen"
+                )}
+              </h2>
+              <p>
+                {l(
+                  lang,
+                  "Your gift keeps Clarvia’s free services running: Ask us by email for families worldwide, and the Luxembourg checklist now in public alpha. We do not show ads.",
+                  "Votre don permet à Clarvia de maintenir ses services gratuits : des réponses par e-mail pour les familles du monde entier et la checklist Luxembourg, actuellement en version alpha publique. Nous n’affichons aucune publicité.",
+                  "Mit Ihrer Spende sichern Sie den Betrieb der kostenlosen Angebote von Clarvia: Antworten per E-Mail für Familien weltweit und die Luxemburg-Checkliste, die derzeit als öffentliche Alpha-Version verfügbar ist. Wir zeigen keine Werbung.",
+                  "Mat Ärem Don hëlleft Dir, dem Clarvia seng gratis Servicer um Lafen ze halen: Äntwerten per E-Mail fir Famillje weltwäit an d’Lëtzebuerg-Checklëscht, déi elo an der ëffentlecher Alpha-Versioun disponibel ass. Mir weise keng Reklammen."
+                )}
+              </p>
+              <p>
+                {l(
+                  lang,
+                  "We receive donations through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates.",
+                  "Nous recevons des dons par l’intermédiaire de Stripe, Open Collective et GitHub Sponsors. Nous ne délivrons actuellement aucun certificat fiscal.",
+                  "Wir erhalten Spenden über Stripe, Open Collective und GitHub Sponsors. Derzeit stellen wir keine Spendenbescheinigungen aus.",
+                  "Mir kréien Spenden iwwer Stripe, Open Collective a GitHub Sponsors. De Moment stelle mir keng Steierbescheinegungen aus."
+                )}
+              </p>
+              <p>
+                {l(
+                  lang,
+                  "Our 2026 accounts have not yet been filed. For live transparency, see Open Collective.",
+                  "Nos comptes pour 2026 n’ont pas encore été déposés. Pour consulter nos données financières actualisées, rendez-vous sur Open Collective.",
+                  "Unser Jahresabschluss für 2026 wurde noch nicht eingereicht. Aktuelle Finanzdaten finden Sie auf Open Collective.",
+                  "Eis Konte fir 2026 sinn nach net agereecht ginn. Aktuell Finanzdate fannt Dir op Open Collective."
+                )}{" "}
+                <a
+                  href="https://opencollective.com/clarvia-org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-calm-lilac-500 hover:text-calm-lilac-600 underline underline-offset-2"
+                >
+                  opencollective.com/clarvia-org
+                </a>
+              </p>
+            </div>
           </div>
 
           {/* RIGHT COLUMN: Donation Selector Card */}

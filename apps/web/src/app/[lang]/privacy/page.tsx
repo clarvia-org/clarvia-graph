@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { LANGUAGES, type Lang } from "@/lib/i18n";
+import { LANGUAGES, type Lang, hreflangLanguages } from "@/lib/i18n";
 import PrivacyPage from "./PrivacyPage";
 
 const BASE_URL = "https://clarvia.org";
@@ -39,9 +39,7 @@ export async function generateMetadata({
     description: meta.description,
     alternates: {
       canonical: `${BASE_URL}/${lang}/privacy`,
-      languages: Object.fromEntries(
-        LANGUAGES.map((l) => [l, `${BASE_URL}/${l}/privacy`])
-      ),
+      languages: hreflangLanguages("privacy"),
     },
     openGraph: {
       title: meta.title,
