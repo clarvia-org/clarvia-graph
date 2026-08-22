@@ -20,6 +20,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
             <nav className="flex flex-col gap-2" aria-label={l(lang, "Footer navigation", "Navigation du pied de page", "Fußzeilennavigation", "Navigatioun am Foussberäich")} >
               {[
                 { label: l(lang, "Home", "Accueil", "Startseite", "Startsäit"), href: `/${lang}` },
+                { label: l(lang, "Ask us", "Posez-nous votre question", "Fragen Sie uns", "Frot eis"), href: `/${lang}#ask-us` },
                 { label: l(lang, "Contact", "Contact", "Kontakt", "Kontakt"), href: `/${lang}/contact` },
                 { label: l(lang, "Support", "Soutenir", "Unterstützen", "Ënnerstëtzen"), href: `/${lang}/support` },
                 { label: l(lang, "Luxembourg checklist", "Checklist Luxembourg", "Luxemburg-Checkliste", "Lëtzebuerg-Checklëscht"), href: `/${lang}/checklist` },

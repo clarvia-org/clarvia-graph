@@ -187,7 +187,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
 
   return (
     <>
-      <section id="ask-us" className="text-center py-12 sm:py-20 scroll-mt-24">
+      <section className="text-center py-12 sm:py-20">
         <h1
           className="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-tight mb-6 drop-shadow-sm max-w-4xl mx-auto"
           style={headlineStyle}
@@ -228,7 +228,11 @@ export default function HeroSection({ lang }: { lang: Lang }) {
           )}
         </p>
 
-        <form onSubmit={onSubmit} className="glass-panel p-6 sm:p-8 max-w-2xl mx-auto text-left">
+        <form
+          id="ask-us"
+          onSubmit={onSubmit}
+          className="glass-panel p-6 sm:p-8 max-w-2xl mx-auto text-left scroll-mt-24"
+        >
           <label htmlFor="ask-question" className="block text-sm font-semibold text-calm-blue-800 mb-1.5">
             {l(lang, "Your situation", "Votre situation", "Ihre Situation", "Är Situatioun")}
           </label>
