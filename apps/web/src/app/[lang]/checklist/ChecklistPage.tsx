@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { type Lang, l } from "@/lib/i18n";
@@ -293,10 +293,57 @@ export default function ChecklistPage() {
   const [unknownQuestions, setUnknownQuestions] = useState<IntakeQuestion[]>([]);
   const [loading, setLoading] = useState(true);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const lightboxDialogRef = useRef<HTMLDivElement>(null);
+  const lightboxTriggerRef = useRef<HTMLButtonElement>(null);
 
   const imgLang = lang === "lu" ? "fr" : lang;
   const previewThumb = `/checklist-preview-${imgLang}-thumb-v2.jpg`;
   const previewFull = `/checklist-preview-${imgLang}-v2.jpg`;
+
+  useEffect(() => {
+    if (!lightboxOpen) return;
+
+    const dialog = lightboxDialogRef.current;
+    if (!dialog) return;
+
+    const focusable = dialog.querySelectorAll<HTMLElement>(
+      'button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    const focusFrame = requestAnimationFrame(() => first?.focus());
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setLightboxOpen(false);
+        return;
+      }
+
+      if (event.key !== "Tab" || focusable.length === 0) return;
+
+      if (!dialog.contains(document.activeElement)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first)?.focus();
+        return;
+      }
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last?.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first?.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      cancelAnimationFrame(focusFrame);
+      document.removeEventListener("keydown", handleKeyDown);
+      lightboxTriggerRef.current?.focus();
+    };
+  }, [lightboxOpen]);
 
   // Load data
   useEffect(() => {
@@ -503,12 +550,14 @@ export default function ChecklistPage() {
           {/* Checklist preview card */}
           <div className="glass-panel p-4 sm:p-5 rounded-xl">
             <div className="text-sm font-semibold mb-2" style={{ color: "#2b3a67" }}>
-              {l(lang, "What the checklist is being built to look like", "Ce que la liste de démarches est conçue pour devenir", "Wie die Checkliste aussehen soll", "Wéi d'Checklëscht soll ausgesinn")}
+              {l(lang, "A preview of what we're building", "Ce que la liste de démarches est conçue pour devenir", "Wie die Checkliste aussehen soll", "Wéi d'Checklëscht soll ausgesinn")}
             </div>
             <p className="text-[11px] text-calm-blue-500 leading-relaxed mb-3">
-              {l(lang, "The image illustrates the type of step-by-step guidance Clarvia is working to deliver. It is not a finished product — the content, design, and features are still being developed and validated.", "L'image illustre le type d'accompagnement étape par étape que Clarvia travaille à offrir. Il ne s'agit pas d'un produit finalisé — le contenu, le design et les fonctionnalités sont encore en cours de développement et de validation.", "Das Bild zeigt, welche Art von schrittweiser Orientierung Clarvia entwickeln möchte. Es handelt sich nicht um ein fertiges Produkt — Inhalte, Design und Funktionen werden noch entwickelt und geprüft.", "D'Bild weist déi Zort Schrëtt-fir-Schrëtt-Orientéierung, un där Clarvia schafft. Et ass nach kee fäerdege Produit — Inhalt, Design a Funktioune ginn nach entwéckelt a validéiert.")}
+              {l(lang, "This image shows the kind of step-by-step guidance Clarvia is working towards. It is not a finished product — the content, design, and features are still being developed and validated.", "L'image illustre le type d'accompagnement étape par étape que Clarvia travaille à offrir. Il ne s'agit pas d'un produit finalisé — le contenu, le design et les fonctionnalités sont encore en cours de développement et de validation.", "Das Bild zeigt, welche Art von schrittweiser Orientierung Clarvia entwickeln möchte. Es handelt sich nicht um ein fertiges Produkt — Inhalte, Design und Funktionen werden noch entwickelt und geprüft.", "D'Bild weist déi Zort Schrëtt-fir-Schrëtt-Orientéierung, un där Clarvia schafft. Et ass nach kee fäerdege Produit — Inhalt, Design a Funktioune ginn nach entwéckelt a validéiert.")}
             </p>
             <button
+              ref={lightboxTriggerRef}
+              type="button"
               onClick={() => setLightboxOpen(true)}
               className="group relative w-full rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 cursor-zoom-in border border-calm-blue-200/60"
               aria-label={l(lang, "View full checklist preview", "Voir l'aperçu complet de la liste de démarches", "Vollständige Vorschau der Checkliste anzeigen", "Déi komplett Virschau vun der Checklëscht kucken")}
@@ -535,6 +584,7 @@ export default function ChecklistPage() {
         {/* ── Lightbox ── */}
         {lightboxOpen && (
           <div
+            ref={lightboxDialogRef}
             className="fixed inset-0 z-[9999] bg-black/70 backdrop-blur-sm flex items-start justify-center overflow-y-auto"
             onClick={() => setLightboxOpen(false)}
             role="dialog"
@@ -542,6 +592,7 @@ export default function ChecklistPage() {
             aria-label={l(lang, "Checklist preview", "Aperçu de la liste de démarches", "Vorschau der Checkliste", "Virschau vun der Checklëscht")}
           >
             <button
+              type="button"
               onClick={() => setLightboxOpen(false)}
               className="fixed top-4 right-4 z-[10000] bg-white/90 backdrop-blur-sm text-calm-blue-700 w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-colors text-xl font-bold"
               aria-label={l(lang, "Close", "Fermer", "Schließen", "Zoumaachen")}
@@ -571,7 +622,7 @@ export default function ChecklistPage() {
             {l(lang, "Bereavement Checklist", "Liste de démarches en cas de décès", "Checkliste im Trauerfall", "Checklëscht am Trauerfall")}
           </h1>
           <p className="text-calm-blue-500 text-sm mb-8">
-            {l(lang, "Answer a few questions to get a personalised list of administrative steps.", "Répondez à quelques questions pour obtenir une liste personnalisée de démarches administratives.", "Beantworten Sie einige Fragen, um eine personalisierte Liste der Verwaltungsschritte zu erhalten.", "Beäntwert e puer Froen, fir eng personaliséiert Lëscht vun administrativen Démarchen ze kréien.")}
+            {l(lang, "Answer a few questions and we'll show you the steps that apply to your situation.", "Répondez à quelques questions pour obtenir une liste personnalisée de démarches administratives.", "Beantworten Sie einige Fragen, um eine personalisierte Liste der Verwaltungsschritte zu erhalten.", "Beäntwert e puer Froen, fir eng personaliséiert Lëscht vun administrativen Démarchen ze kréien.")}
           </p>
 
         {step === "intake" && intake && (
@@ -626,6 +677,10 @@ function IntakeWizard({
   return (
     <div className="space-y-6">
       {questions.map((q, idx) => {
+        const questionLabelId = `question-${q.id}-label`;
+        const questionLabel =
+          lang === "fr" ? q.label_fr : lang === "de" ? q.label_de : q.label_en;
+
         // Build options based on question type
         const options = q.options && q.options.length > 0
           ? q.options
@@ -638,17 +693,20 @@ function IntakeWizard({
             : null;
 
         return (
-          <div
+          <fieldset
             key={q.id}
             className="glass-panel p-6 rounded-xl transition-all"
             style={{ animationDelay: `${idx * 100}ms` }}
           >
-            <label className="block text-sm font-semibold text-calm-blue-800 mb-3">
+            <legend
+              id={questionLabelId}
+              className="block text-sm font-semibold text-calm-blue-800 mb-3"
+            >
               <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-calm-blue-100 text-calm-blue-600 text-xs font-bold mr-2">
                 {idx + 1}
               </span>
-              {lang === "fr" ? q.label_fr : lang === "de" ? q.label_de : q.label_en}
-            </label>
+              {questionLabel}
+            </legend>
 
             {options ? (
               /* Button-grid for jurisdiction_code, boolean, and enum with options */
@@ -658,7 +716,9 @@ function IntakeWizard({
                   return (
                     <button
                       key={opt.value}
+                      type="button"
                       onClick={() => onAnswer(q.id, opt.value)}
+                      aria-pressed={selected}
                       className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all border ${
                         selected
                           ? "bg-calm-blue-800 text-white border-calm-blue-800 shadow-md"
@@ -680,13 +740,16 @@ function IntakeWizard({
                 <input
                   type="number"
                   min="0"
+                  aria-labelledby={questionLabelId}
                   value={answers[q.id] && answers[q.id] !== "UNKNOWN" ? answers[q.id] : ""}
                   onChange={(e) => onAnswer(q.id, e.target.value || "UNKNOWN")}
                   placeholder="0"
                   className="w-32 px-4 py-2.5 rounded-lg text-sm border border-calm-blue-200 bg-white/60 text-calm-blue-800 focus:outline-none focus:border-calm-blue-400 focus:ring-1 focus:ring-calm-blue-400"
                 />
                 <button
+                  type="button"
                   onClick={() => onAnswer(q.id, "UNKNOWN")}
+                  aria-pressed={answers[q.id] === "UNKNOWN"}
                   className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all border ${
                     answers[q.id] === "UNKNOWN"
                       ? "bg-calm-blue-800 text-white border-calm-blue-800 shadow-md"
@@ -701,13 +764,16 @@ function IntakeWizard({
               <div className="flex gap-2 items-center">
                 <input
                   type="text"
+                  aria-labelledby={questionLabelId}
                   value={answers[q.id] && answers[q.id] !== "UNKNOWN" ? answers[q.id] : ""}
                   onChange={(e) => onAnswer(q.id, e.target.value || "UNKNOWN")}
                   placeholder={l(lang, "Enter value…", "Saisir une valeur…", "Wert eingeben…", "Wäert aginn…")}
                   className="flex-grow px-4 py-2.5 rounded-lg text-sm border border-calm-blue-200 bg-white/60 text-calm-blue-800 focus:outline-none focus:border-calm-blue-400 focus:ring-1 focus:ring-calm-blue-400"
                 />
                 <button
+                  type="button"
                   onClick={() => onAnswer(q.id, "UNKNOWN")}
+                  aria-pressed={answers[q.id] === "UNKNOWN"}
                   className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-all border ${
                     answers[q.id] === "UNKNOWN"
                       ? "bg-calm-blue-800 text-white border-calm-blue-800 shadow-md"
@@ -718,11 +784,12 @@ function IntakeWizard({
                 </button>
               </div>
             )}
-          </div>
+          </fieldset>
         );
       })}
 
       <button
+        type="button"
         onClick={onGenerate}
         disabled={!allAnswered}
         className={`w-full py-3.5 rounded-xl text-base font-semibold transition-all ${
@@ -769,7 +836,7 @@ function ChecklistResults({
         </div>
         <p className="text-sm text-calm-blue-500">
           {appliesCount > 0 &&
-            l(lang, `${appliesCount} item${appliesCount > 1 ? "s" : ""} applicable`, `${appliesCount} élément${appliesCount > 1 ? "s" : ""} applicable${appliesCount > 1 ? "s" : ""}`, `${appliesCount} zutreffende${appliesCount > 1 ? "r" : ""} Punkt${appliesCount > 1 ? "e" : ""}`, `${appliesCount} Element${appliesCount > 1 ? "er" : ""} uwendbar`)}
+            l(lang, `${appliesCount} step${appliesCount > 1 ? "s" : ""} for your situation`, `${appliesCount} élément${appliesCount > 1 ? "s" : ""} applicable${appliesCount > 1 ? "s" : ""}`, `${appliesCount} zutreffende${appliesCount > 1 ? "r" : ""} Punkt${appliesCount > 1 ? "e" : ""}`, `${appliesCount} Element${appliesCount > 1 ? "er" : ""} uwendbar`)}
         </p>
       </div>
 
@@ -778,7 +845,7 @@ function ChecklistResults({
         <div className="space-y-3">
           <h3 className="text-sm font-bold text-amber-700 uppercase tracking-wide flex items-center gap-2">
             <span className="w-8 h-px bg-amber-300" />
-            {l(lang, "More information needed", "Informations supplémentaires nécessaires", "Weitere Informationen erforderlich", "Méi Informatiounen néideg")}
+            {l(lang, "What we still need to know", "Informations supplémentaires nécessaires", "Weitere Informationen erforderlich", "Méi Informatiounen néideg")}
           </h3>
           {unknownQuestions.map((q) => (
             <div
@@ -792,7 +859,7 @@ function ChecklistResults({
                     {lang === "fr" ? q.label_fr : lang === "de" ? q.label_de : q.label_en}
                   </p>
                   <p className="text-xs text-amber-700 mt-1">
-                    {l(lang, "Your checklist may be incomplete because this answer is unknown. Once you have this information, come back and generate a new checklist.", "Votre liste pourrait être incomplète car cette réponse est inconnue. Une fois cette information obtenue, revenez générer une nouvelle liste.", "Ihre Checkliste ist möglicherweise unvollständig, da diese Antwort unbekannt ist. Sobald Sie diese Information haben, erstellen Sie eine neue Checkliste.", "Är Checklëscht ka onvollstänneg sinn, well dës Äntwert onbekannt ass. Wann Dir dës Informatioun hutt, kommt zréck a generéiert eng nei Checklëscht.")}
+                    {l(lang, "Without this answer, your checklist may be missing some steps. When you have it, come back and generate the checklist again.", "Votre liste pourrait être incomplète car cette réponse est inconnue. Une fois cette information obtenue, revenez générer une nouvelle liste.", "Ihre Checkliste ist möglicherweise unvollständig, da diese Antwort unbekannt ist. Sobald Sie diese Information haben, erstellen Sie eine neue Checkliste.", "Är Checklëscht ka onvollstänneg sinn, well dës Äntwert onbekannt ass. Wann Dir dës Informatioun hutt, kommt zréck a generéiert eng nei Checklëscht.")}
                   </p>
                 </div>
               </div>
@@ -823,7 +890,7 @@ function ChecklistResults({
       {items.length === 0 && unknownQuestions.length === 0 && (
         <div className="glass-panel p-8 rounded-xl text-center">
           <p className="text-calm-blue-500 text-sm">
-            {l(lang, "No items match your situation based on the answers provided. This may be because the alpha prototype has very limited coverage.", "Aucun élément ne correspond à votre situation sur la base des réponses fournies. Cela peut être dû à la couverture très limitée du prototype alpha.", "Keine Einträge passen zu Ihrer Situation basierend auf den gegebenen Antworten. Dies kann daran liegen, dass der Alpha-Prototyp eine sehr begrenzte Abdeckung hat.", "Keng Elementer passen op Basis vun den uginnene Äntwerten zu Ärer Situatioun. Dat kann dorunner leien, datt den Alpha-Prototyp nach eng ganz limitéiert Ofdeckung huet.")}
+            {l(lang, "Nothing in the checklist matches your answers. This is an early prototype and its coverage is still very limited, so there may be steps it does not know about yet.", "Aucun élément ne correspond à votre situation sur la base des réponses fournies. Cela peut être dû à la couverture très limitée du prototype alpha.", "Keine Einträge passen zu Ihrer Situation basierend auf den gegebenen Antworten. Dies kann daran liegen, dass der Alpha-Prototyp eine sehr begrenzte Abdeckung hat.", "Keng Elementer passen op Basis vun den uginnene Äntwerten zu Ärer Situatioun. Dat kann dorunner leien, datt den Alpha-Prototyp nach eng ganz limitéiert Ofdeckung huet.")}
           </p>
         </div>
       )}
@@ -856,6 +923,7 @@ function ChecklistItemCard({
   lang: Lang;
 }) {
   const [expanded, setExpanded] = useState(false);
+  const detailsId = `checklist-item-${item.id}-details`;
 
   const statusConfig = {
     applies: {
@@ -887,13 +955,20 @@ function ChecklistItemCard({
   };
 
   return (
-    <div
-      className={`rounded-xl border p-4 transition-all cursor-pointer hover:shadow-sm ${s.bg}`}
-      onClick={() => setExpanded(!expanded)}
-    >
-      <div className="flex items-start gap-3">
-        <span className={`text-lg mt-0.5 ${s.color} font-bold`}>{s.icon}</span>
-        <div className="flex-grow min-w-0">
+    <div className={`rounded-xl border p-4 transition-all hover:shadow-sm ${s.bg}`}>
+      <button
+        type="button"
+        aria-expanded={expanded}
+        aria-controls={detailsId}
+        onClick={() => setExpanded((isExpanded) => !isExpanded)}
+        className="w-full text-left rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-calm-blue-500"
+      >
+        <div className="flex items-start gap-3">
+          <span className="sr-only">{s.label}. </span>
+          <span aria-hidden="true" className={`text-lg mt-0.5 ${s.color} font-bold`}>
+            {s.icon}
+          </span>
+          <div className="flex-grow min-w-0">
           <div className="flex items-start justify-between gap-2">
             <h4 className="text-sm font-semibold text-calm-blue-800 leading-snug">
               {item.title}
@@ -942,10 +1017,16 @@ function ChecklistItemCard({
               </span>
             )}
           </div>
+          </div>
+        </div>
+      </button>
 
-          {/* Expanded details */}
-          {expanded && (
-            <div className="mt-3 pt-3 border-t border-calm-blue-200/50 space-y-2 text-xs text-calm-blue-600">
+      {/* Expanded details */}
+      <div
+        id={detailsId}
+        hidden={!expanded}
+        className="mt-3 pt-3 border-t border-calm-blue-200/50 space-y-2 text-xs text-calm-blue-600"
+      >
               {item.evidence && item.evidence.length > 0 && (
                 <div>
                   <span className="font-semibold">
@@ -973,7 +1054,6 @@ function ChecklistItemCard({
                             target="_blank"
                             rel="noopener noreferrer"
                             className="underline text-calm-blue-600 hover:text-calm-blue-800"
-                            onClick={(e) => e.stopPropagation()}
                           >
                             {s.title}
                           </a>
@@ -990,12 +1070,9 @@ function ChecklistItemCard({
               )}
               {item.status === "needs_fact" && item.missing_facts && (
                 <p className="text-amber-600">
-                  {l(lang, "We need more information to determine if this applies to your situation.", "Nous avons besoin de plus d'informations pour déterminer si cela s'applique à votre situation.", "Wir benötigen weitere Informationen, um festzustellen, ob dies auf Ihre Situation zutrifft.", "Mir brauchen nach méi Informatiounen, fir ze bestëmmen, ob dat op Är Situatioun zoutrëfft.")}
+                  {l(lang, "We need a bit more information before we can tell you whether this applies to you.", "Nous avons besoin de plus d'informations pour déterminer si cela s'applique à votre situation.", "Wir benötigen weitere Informationen, um festzustellen, ob dies auf Ihre Situation zutrifft.", "Mir brauchen nach méi Informatiounen, fir ze bestëmmen, ob dat op Är Situatioun zoutrëfft.")}
                 </p>
               )}
-            </div>
-          )}
-        </div>
       </div>
     </div>
   );

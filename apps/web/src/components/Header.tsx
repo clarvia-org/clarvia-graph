@@ -8,8 +8,9 @@ import { type Lang, l, LANGUAGES } from "@/lib/i18n";
 export default function Header({ lang }: { lang: Lang }) {
   const [isOpen, setIsOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen((open) => !open);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -22,8 +23,18 @@ export default function Header({ lang }: { lang: Lang }) {
     const last = focusable[focusable.length - 1];
     first?.focus();
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") { setIsOpen(false); return; }
+      if (e.key === "Escape") {
+        e.preventDefault();
+        setIsOpen(false);
+        menuButtonRef.current?.focus();
+        return;
+      }
       if (e.key !== "Tab") return;
+      if (!drawer.contains(document.activeElement)) {
+        e.preventDefault();
+        (e.shiftKey ? last : first)?.focus();
+        return;
+      }
       if (e.shiftKey && document.activeElement === first) {
         e.preventDefault();
         last?.focus();
@@ -121,9 +132,12 @@ export default function Header({ lang }: { lang: Lang }) {
 
           {/* Mobile Hamburger Menu Button */}
           <button
+            ref={menuButtonRef}
+            type="button"
             onClick={toggleMenu}
             className="md:hidden p-2 rounded-xl text-calm-blue-600 hover:bg-white/40 transition-colors focus:outline-none focus:ring-2 focus:ring-calm-lilac-400 z-50 relative"
             aria-expanded={isOpen}
+            aria-controls="mobile-navigation-menu"
             aria-label={l(lang, "Toggle menu", "Menu", "Menü ein-/ausblenden", "Menü op- an zouklappen")}
           >
             <svg
@@ -146,16 +160,23 @@ export default function Header({ lang }: { lang: Lang }) {
       {/* Mobile Drawer Backdrop */}
       {isOpen && (
         <div
-          onClick={toggleMenu}
+          aria-hidden="true"
+          onClick={() => {
+            setIsOpen(false);
+            menuButtonRef.current?.focus();
+          }}
           className="fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-40 md:hidden transition-opacity"
         />
       )}
 
       {/* Mobile Drawer (Calm/Glass aesthetic) */}
       <div
+        id="mobile-navigation-menu"
         ref={drawerRef}
         role="dialog"
         aria-modal="true"
+        aria-hidden={!isOpen}
+        inert={!isOpen}
         aria-label={l(lang, "Navigation menu", "Menu de navigation", "Navigationsmenü")}
         className={`fixed top-0 right-0 h-full w-72 max-w-[80vw] bg-white/80 backdrop-blur-xl border-l border-white/50 shadow-2xl z-40 transform transition-transform duration-300 ease-out md:hidden flex flex-col p-6 pt-24 ${
           isOpen ? "translate-x-0" : "translate-x-full"
