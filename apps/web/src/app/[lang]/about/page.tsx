@@ -128,16 +128,16 @@ export default async function AboutPage({
             {/* Program 1 */}
             <div className="glass-panel p-6">
               <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
-                {l(lang, "1. Ask Clarvia", "1. Ask Clarvia", "1. Ask Clarvia", "1. Ask Clarvia")}
+                {l(lang, "1. Ask Clarvia", "1. Demandez à Clarvia", "1. Clarvia fragen", "1. Frot Clarvia")}
               </h3>
               <div className="space-y-3 text-base text-calm-blue-600 leading-relaxed">
                 <p>
                   {l(
                     lang,
                     "Ask Clarvia is our live email service for families worldwide. Describe what happened in your own language. Lex at Clarvia replies by email, usually within a few minutes, with cited sources. The service is free.",
-                    "Ask Clarvia is our live email service for families worldwide. Describe what happened in your own language. Lex at Clarvia replies by email, usually within a few minutes, with cited sources. The service is free.",
-                    "Ask Clarvia is our live email service for families worldwide. Describe what happened in your own language. Lex at Clarvia replies by email, usually within a few minutes, with cited sources. The service is free.",
-                    "Ask Clarvia is our live email service for families worldwide. Describe what happened in your own language. Lex at Clarvia replies by email, usually within a few minutes, with cited sources. The service is free."
+                    "Demandez à Clarvia est notre service de réponse par e-mail destiné aux familles du monde entier. Décrivez ce qui s’est passé dans votre propre langue. Lex, de l’équipe Clarvia, vous répond par e-mail, généralement en quelques minutes, en indiquant les sources utilisées. Le service est gratuit.",
+                    "Clarvia fragen ist unser E-Mail-Service für Familien weltweit. Schildern Sie in Ihrer eigenen Sprache, was passiert ist. Lex bei Clarvia antwortet Ihnen per E-Mail, in der Regel innerhalb weniger Minuten und mit Angaben zu den verwendeten Quellen. Der Service ist kostenlos.",
+                    "Frot Clarvia ass eisen E-Mail-Service fir Famillje weltwäit. Beschreift an Ärer eegener Sprooch, wat geschitt ass. De Lex bei Clarvia äntwert Iech per E-Mail, normalerweis bannent e puer Minutten a mat Linken op déi benotzte Quellen. De Service ass gratis."
                   )}
                 </p>
                 <p>
