@@ -90,17 +90,17 @@ export default function Header({ lang }: { lang: Lang }) {
               href={`/${lang}/checklist`}
               aria-label={l(
                 lang,
-                "Luxembourg checklist (public alpha)",
-                "Checklist Luxembourg (version alpha publique)",
-                "Luxemburg-Checkliste (öffentliche Alpha-Version)",
-                "Lëtzebuerg-Checklëscht (ëffentlech Alpha-Versioun)"
+                "Checklist (public alpha)",
+                "Checklist (version alpha publique)",
+                "Checkliste (öffentliche Alpha-Version)",
+                "Checklëscht (ëffentlech Alpha-Versioun)"
               )}
               className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
               <span className="inline-flex items-baseline gap-1">
                 {l(lang, "Checklist", "Checklist", "Checkliste", "Checklëscht")}
                 <span className="text-[11px] font-medium text-calm-blue-400">
-                  {l(lang, "LU alpha", "LU alpha", "LU Alpha", "LU Alpha")}
+                  {l(lang, "alpha", "alpha", "Alpha", "Alpha")}
                 </span>
               </span>
             </Link>
@@ -221,10 +221,10 @@ export default function Header({ lang }: { lang: Lang }) {
           >
             {l(
               lang,
-              "Luxembourg checklist (alpha)",
-              "Checklist Luxembourg (alpha)",
-              "Luxemburg-Checkliste (Alpha-Version)",
-              "Lëtzebuerg-Checklëscht (Alpha-Versioun)"
+              "Checklist (alpha)",
+              "Checklist (alpha)",
+              "Checkliste (Alpha-Version)",
+              "Checklëscht (Alpha-Versioun)"
             )}
           </Link>
           <Link

@@ -70,7 +70,7 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
           "Lex is the name used to sign Clarvia’s automated end-of-life and bereavement information emails. We use artificial intelligence tools, including large language models, to translate messages, research relevant information, and prepare conversational replies with sources and suggested next steps.",
           "Lex replies may be sent automatically without prior review by a Clarvia volunteer. Authorised Clarvia volunteers may review conversations afterward for safety, quality, or support purposes.",
           "Our AI and infrastructure providers process information on Clarvia’s behalf and under Clarvia’s instructions. We use providers with appropriate data-processing agreements. Under our arrangements with them, they are not permitted to use message content to train their general-purpose models.",
-          "Lawful basis for the Ask us form: your consent under Article 6(1)(a) of the GDPR. If you choose to include health information in your question, we process that special-category data under Article 9(2)(a) (explicit consent). You can withdraw consent at any time by contacting us using the contact form on the homepage. Withdrawal does not affect the lawfulness of processing carried out before you withdrew consent. We will then stop using that information to send further automated guidance, and you may also request deletion as described in section 6.",
+          "Lawful basis for the Ask us form: your consent under Article 6(1)(a) of the GDPR. If you choose to include health information in your question, we process that special-category data under Article 9(2)(a) (explicit consent). You can withdraw consent at any time by contacting us using the contact form. Withdrawal does not affect the lawfulness of processing carried out before you withdrew consent. We will then stop using that information to send further automated guidance, and you may also request deletion as described in section 6.",
           "Lawful basis for other correspondence (including when you email Clarvia or use a contact or support form): Clarvia’s legitimate interests under Article 6(1)(f) of the GDPR, specifically providing the free information or support requested and doing so accurately and efficiently.",
           "Retention: We keep correspondence for as long as reasonably necessary to provide the guidance or support you requested and to maintain continuity, including where a matter remains unresolved or may require follow-up over an extended period. We periodically review requests to determine whether the correspondence is still needed. Once a matter is concluded and related follow-up is no longer reasonably expected, we delete or anonymise the correspondence unless continued retention is required by law or necessary to establish, exercise, or defend legal claims.",
           "Access: Human access is limited to authorised Clarvia volunteers handling your request. Our contracted service providers may process the data only as needed to provide their services to Clarvia and in accordance with our instructions."
@@ -102,7 +102,7 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
         heading: "8. Contact details",
         body: [
           "Clarvia ASBL, registered with the Luxembourg RCS under number F15680, is the controller of your data for Clarvia.org.",
-          "For privacy questions or to exercise your data-protection rights, please contact us using the “Contact Us” form available on our homepage at clarvia.org."
+          "For privacy questions or to exercise your data-protection rights, please contact us using the contact form on our Contact page.",
         ]
       },
       {
@@ -200,7 +200,7 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
         heading: "8. Coordonnées",
         body: [
           "Clarvia ASBL, inscrite au RCS Luxembourg sous le numéro F15680, est le responsable du traitement de vos données pour Clarvia.org.",
-          "Pour toute question relative à la confidentialité ou pour exercer vos droits en matière de protection des données, veuillez nous contacter au moyen du formulaire « Contact Us » disponible sur notre page d’accueil à clarvia.org."
+          "Pour toute question relative à la confidentialité ou pour exercer vos droits en matière de protection des données, veuillez nous contacter au moyen du formulaire de contact disponible sur notre page Contact.",
         ]
       },
       {
@@ -298,7 +298,7 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
         heading: "8. Kontaktdaten",
         body: [
           "Clarvia ASBL, eingetragen im RCS Luxemburg unter der Nummer F15680, ist für Clarvia.org der Verantwortliche für die Verarbeitung Ihrer Daten.",
-          "Bei Fragen zum Datenschutz oder zur Ausübung Ihrer Datenschutzrechte kontaktieren Sie uns bitte über das Formular „Contact Us“ auf unserer Homepage unter clarvia.org."
+          "Bei Fragen zum Datenschutz oder zur Ausübung Ihrer Datenschutzrechte kontaktieren Sie uns bitte über das Kontaktformular auf unserer Contact-Seite.",
         ]
       },
       {

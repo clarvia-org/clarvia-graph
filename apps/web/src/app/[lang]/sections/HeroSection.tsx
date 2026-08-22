@@ -2,7 +2,6 @@
 
 import { useMemo, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import { type Lang, l } from "@/lib/i18n";
 import { isPlausibleEmail } from "@/lib/email";
 import Turnstile from "@/components/Turnstile";
@@ -188,7 +187,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
 
   return (
     <>
-      <section id="ask-us" className="text-center py-12 sm:py-20 scroll-mt-24">
+      <section className="text-center py-12 sm:py-20">
         <h1
           className="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-tight mb-6 drop-shadow-sm max-w-4xl mx-auto"
           style={headlineStyle}
@@ -219,7 +218,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
             "Beschreift an Ärer eegener Sprooch, wat geschitt ass, egal wou Dir sidd. Gitt wa méiglech un, wou déi Persoun gelieft huet, wou den Doudesfall geschitt ass oder wou Dir haut mat den Demarchë stitt. Wat Dir eis méi Kontext gitt, wat mir Iech méi geziilt hëllefe kënnen."
           )}
         </p>
-        <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-8">
+        <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-10">
           {l(
             lang,
             "Clarvia will send a carefully researched reply to your email, usually within a few minutes.",
@@ -229,51 +228,11 @@ export default function HeroSection({ lang }: { lang: Lang }) {
           )}
         </p>
 
-        <div className="glass-panel max-w-2xl mx-auto mb-8 p-5 sm:p-6 text-left">
-          <p className="text-sm font-semibold text-calm-blue-800">
-            {l(
-              lang,
-              "Clarvia ASBL · RCS Luxembourg F15680",
-              "Clarvia ASBL · RCS Luxembourg F15680",
-              "Clarvia ASBL · RCS Luxembourg F15680",
-              "Clarvia ASBL · RCS Luxembourg F15680"
-            )}
-          </p>
-          <p className="text-sm text-calm-blue-600 mt-2 leading-relaxed">
-            {l(
-              lang,
-              "Free worldwide guidance from a Luxembourg nonprofit. We do not show ads.",
-              "Un accompagnement gratuit dans le monde entier, proposé par une association luxembourgeoise à but non lucratif. Nous n’affichons aucune publicité.",
-              "Kostenlose Orientierung weltweit von einem gemeinnützigen Verein aus Luxemburg. Wir zeigen keine Werbung.",
-              "Gratis Orientéierung weltwäit vun engem net gewënnorientéierte Veräin aus Lëtzebuerg. Mir weise keng Reklammen."
-            )}
-          </p>
-          <p className="text-sm text-calm-blue-600 mt-2 leading-relaxed">
-            {l(
-              lang,
-              "Two programs: Ask us by email (worldwide), and a Luxembourg checklist in public alpha.",
-              "Deux services : Posez-nous votre question par e-mail, partout dans le monde, et une checklist pour le Luxembourg en version alpha publique.",
-              "Zwei Angebote: Fragen Sie uns per E-Mail, weltweit verfügbar, und eine Luxemburg-Checkliste in der öffentlichen Alpha-Version.",
-              "Zwee Servicer: Frot eis per E-Mail, weltwäit disponibel, an eng Lëtzebuerg-Checklëscht an der ëffentlecher Alpha-Versioun."
-            )}
-          </p>
-          <div className="flex flex-wrap gap-3 mt-4">
-            <Link
-              href={`/${lang}/support`}
-              className="btn-secondary inline-flex items-center justify-center px-5 py-2.5 text-sm"
-            >
-              {l(lang, "Donate", "Faire un don", "Spenden", "Spenden")}
-            </Link>
-            <Link
-              href={`/${lang}/contact`}
-              className="btn-secondary inline-flex items-center justify-center px-5 py-2.5 text-sm"
-            >
-              {l(lang, "Contact", "Contact", "Kontakt", "Kontakt")}
-            </Link>
-          </div>
-        </div>
-
-        <form onSubmit={onSubmit} className="glass-panel p-6 sm:p-8 max-w-2xl mx-auto text-left">
+        <form
+          id="ask-us"
+          onSubmit={onSubmit}
+          className="glass-panel p-6 sm:p-8 max-w-2xl mx-auto text-left scroll-mt-24"
+        >
           <label htmlFor="ask-question" className="block text-sm font-semibold text-calm-blue-800 mb-1.5">
             {l(lang, "Your situation", "Votre situation", "Ihre Situation", "Är Situatioun")}
           </label>

@@ -121,14 +121,37 @@ export default async function AboutPage({
             {l(lang, "Active Programs & Services", "Programmes et services actifs", "Aktive Programme und Angebote", "Aktiv Programmer a Servicer")}
           </h2>
           <p className="text-base text-calm-blue-600 mb-6">
-            {l(lang, "Clarvia operates three free, public-interest programs:", "Clarvia gère trois programmes gratuits d'intérêt public :", "Clarvia betreibt drei kostenlose Programme im öffentlichen Interesse:", "Clarvia bedreift dräi gratis Programmer am ëffentlechen Interessi:")}
+            {l(lang, "Clarvia operates four free, public-interest programs:", "Clarvia gère quatre programmes gratuits d'intérêt public :", "Clarvia betreibt vier kostenlose Programme im öffentlichen Interesse:", "Clarvia bedreift véier gratis Programmer am ëffentlechen Interessi:")}
           </p>
 
           <div className="space-y-6">
             {/* Program 1 */}
             <div className="glass-panel p-6">
               <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
-                {l(lang, "1. Bereavement Guidance Service", "1. Service d'accompagnement après un décès", "1. Orientierungshilfe nach einem Todesfall", "1. Begleedung nom Doudesfall")}
+                {l(lang, "1. Ask Clarvia", "1. Ask Clarvia", "1. Ask Clarvia", "1. Ask Clarvia")}
+              </h3>
+              <div className="space-y-3 text-base text-calm-blue-600 leading-relaxed">
+                <p>
+                  {l(
+                    lang,
+                    "Ask Clarvia is our live email service for families worldwide. Describe what happened in your own language. Lex at Clarvia replies by email, usually within a few minutes, with cited sources. The service is free.",
+                    "Ask Clarvia is our live email service for families worldwide. Describe what happened in your own language. Lex at Clarvia replies by email, usually within a few minutes, with cited sources. The service is free.",
+                    "Ask Clarvia is our live email service for families worldwide. Describe what happened in your own language. Lex at Clarvia replies by email, usually within a few minutes, with cited sources. The service is free.",
+                    "Ask Clarvia is our live email service for families worldwide. Describe what happened in your own language. Lex at Clarvia replies by email, usually within a few minutes, with cited sources. The service is free."
+                  )}
+                </p>
+                <p>
+                  <Link href={`/${lang}#ask-us`} className="text-calm-blue-700 font-medium hover:text-calm-blue-900 underline underline-offset-2 transition-colors">
+                    {l(lang, "Ask us →", "Posez-nous votre question →", "Fragen Sie uns →", "Frot eis →")}
+                  </Link>
+                </p>
+              </div>
+            </div>
+
+            {/* Program 2 */}
+            <div className="glass-panel p-6">
+              <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
+                {l(lang, "2. Bereavement Guidance Service", "2. Service d'accompagnement après un décès", "2. Orientierungshilfe nach einem Todesfall", "2. Begleedung nom Doudesfall")}
               </h3>
               <div className="space-y-3 text-base text-calm-blue-600 leading-relaxed">
                 <p>
@@ -145,20 +168,20 @@ export default async function AboutPage({
               </div>
             </div>
 
-            {/* Program 2 */}
+            {/* Program 3 */}
             <div className="glass-panel p-6">
               <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
-                {l(lang, "2. Government Source Registry", "2. Registre des sources officielles", "2. Register offizieller Quellen", "2. Register vun offiziellen Quellen")}
+                {l(lang, "3. Government Source Registry", "3. Registre des sources officielles", "3. Register offizieller Quellen", "3. Register vun offiziellen Quellen")}
               </h3>
               <p className="text-base text-calm-blue-600 leading-relaxed">
                 {l(lang, "Every administrative step in our checklists is mapped back to its official government source. We maintain a structured, openly licensed registry of these sources so that families and professionals can verify the accuracy of every recommendation.", "Chaque démarche administrative figurant dans nos checklists est reliée à sa source gouvernementale officielle. Nous maintenons un registre structuré, publié sous licence ouverte, afin que les familles et les professionnels puissent vérifier l'exactitude de chaque recommandation.", "Jeder administrative Schritt in unseren Checklisten ist mit der jeweiligen offiziellen staatlichen Quelle verknüpft. Wir pflegen ein strukturiertes Register dieser Quellen unter einer offenen Lizenz, damit Familien und Fachpersonen die Genauigkeit jeder Empfehlung überprüfen können.", "All administrativen Schrëtt an eise Checklëschte gëtt op seng offiziell staatlech Quell zeréckgefouert. Mir féieren e strukturéierten, oppen lizenzéierte Register vun dëse Quellen, fir datt Familljen a Fachleit d'Genauegkeet vun all Recommandatioun iwwerpréiwe kënnen.")}
               </p>
             </div>
 
-            {/* Program 3 */}
+            {/* Program 4 */}
             <div className="glass-panel p-6">
               <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
-                {l(lang, "3. Cross-Border Support", "3. Accompagnement transfrontalier", "3. Grenzüberschreitende Unterstützung", "3. Grenziwwerschreidend Ënnerstëtzung")}
+                {l(lang, "4. Cross-Border Support", "4. Accompagnement transfrontalier", "4. Grenzüberschreitende Unterstützung", "4. Grenziwwerschreidend Ënnerstëtzung")}
               </h3>
               <p className="text-base text-calm-blue-600 leading-relaxed">
                 {l(lang, "Our initial focus is Luxembourg, but we extend into critical cross-border corridors, including France, Germany, Belgium, and Portugal, to support migrant workers and cross-border families who face obligations in more than one country.", "Notre premier champ d'action est le Luxembourg, mais nous couvrons également les principaux contextes transfrontaliers, notamment avec la France, l'Allemagne, la Belgique et le Portugal, afin d'aider les travailleurs migrants et les familles concernées par des obligations dans plusieurs pays.", "Unser erster Schwerpunkt liegt auf Luxemburg. Gleichzeitig berücksichtigen wir wichtige grenzüberschreitende Situationen, insbesondere mit Frankreich, Deutschland, Belgien und Portugal, um Grenzgängerinnen und Grenzgänger, Migrantinnen und Migranten sowie Familien zu unterstützen, die Pflichten in mehr als einem Land erfüllen müssen.", "Eise Startpunkt ass Lëtzebuerg. Gläichzäiteg berécksiichtege mir wichteg grenziwwerschreidend Situatiounen, ënner anerem mat Frankräich, Däitschland, der Belsch a Portugal, fir Migrantenaarbechter a grenziwwerschreidend Familljen z'ënnerstëtzen, déi Obligatiounen a méi wéi engem Land hunn.")}

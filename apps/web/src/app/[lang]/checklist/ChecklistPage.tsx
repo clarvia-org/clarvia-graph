@@ -695,18 +695,19 @@ function IntakeWizard({
         return (
           <fieldset
             key={q.id}
+            aria-labelledby={questionLabelId}
             className="glass-panel p-6 rounded-xl transition-all"
             style={{ animationDelay: `${idx * 100}ms` }}
           >
-            <legend
+            <div
               id={questionLabelId}
-              className="block text-sm font-semibold text-calm-blue-800 mb-3"
+              className="text-sm font-semibold text-calm-blue-800 mb-3"
             >
               <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-calm-blue-100 text-calm-blue-600 text-xs font-bold mr-2">
                 {idx + 1}
               </span>
               {questionLabel}
-            </legend>
+            </div>
 
             {options ? (
               /* Button-grid for jurisdiction_code, boolean, and enum with options */
