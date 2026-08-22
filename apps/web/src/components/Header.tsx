@@ -81,12 +81,6 @@ export default function Header({ lang }: { lang: Lang }) {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4 lg:gap-6 text-sm font-semibold">
             <Link
-              href={`/${lang}#ask-us`}
-              className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
-            >
-              {l(lang, "Ask us", "Posez-nous votre question", "Fragen Sie uns", "Frot eis")}
-            </Link>
-            <Link
               href={`/${lang}/checklist`}
               aria-label={l(
                 lang,
@@ -207,13 +201,6 @@ export default function Header({ lang }: { lang: Lang }) {
         }`}
       >
         <nav className="flex flex-col gap-5 text-lg font-semibold flex-grow">
-          <Link
-            href={`/${lang}#ask-us`}
-            onClick={toggleMenu}
-            className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
-          >
-            {l(lang, "Ask us", "Posez-nous votre question", "Fragen Sie uns", "Frot eis")}
-          </Link>
           <Link
             href={`/${lang}/checklist`}
             onClick={toggleMenu}
