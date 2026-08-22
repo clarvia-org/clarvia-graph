@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { LANGUAGES, type Lang } from "@/lib/i18n";
+import { LANGUAGES, type Lang, hreflangLanguages } from "@/lib/i18n";
 import CookieConsent from "@/components/CookieConsent";
 
 
@@ -46,9 +46,7 @@ export async function generateMetadata({
     description: meta.description,
     alternates: {
       canonical: `${BASE_URL}/${lang}`,
-      languages: Object.fromEntries(
-        LANGUAGES.map((l) => [l === "lu" ? "lb" : l, `${BASE_URL}/${l}`])
-      ),
+      languages: hreflangLanguages(),
     },
     openGraph: {
       title: meta.title,
@@ -101,6 +99,11 @@ export default async function LangLayout({
                   "postalCode": "1923",
                   "addressLocality": "Luxembourg",
                   "addressCountry": "LU"
+                },
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "url": "https://clarvia.org/en/contact",
+                  "contactType": "customer support"
                 },
                 "foundingDate": "2026-05",
 

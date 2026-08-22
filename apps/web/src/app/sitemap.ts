@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { LANGUAGES } from "@/lib/i18n";
+import { LANGUAGES, hreflangLanguages } from "@/lib/i18n";
 
 const BASE_URL = "https://clarvia.org";
 
@@ -15,6 +15,7 @@ const localizedPages: SitemapPage[] = [
   { path: "updates", changeFrequency: "weekly", priority: 0.8 },
   { path: "contribute", changeFrequency: "monthly", priority: 0.7 },
   { path: "support", changeFrequency: "weekly", priority: 0.7 },
+  { path: "contact", changeFrequency: "monthly", priority: 0.6 },
   { path: "privacy", changeFrequency: "yearly", priority: 0.2 },
 ];
 
@@ -33,15 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: page.changeFrequency,
         priority: page.priority,
         alternates: {
-          languages: Object.fromEntries(
-            LANGUAGES.map((alternateLang) => {
-              const alternatePath = page.path
-                ? `/${alternateLang}/${page.path}`
-                : `/${alternateLang}`;
-
-              return [alternateLang === "lu" ? "lb" : alternateLang, `${BASE_URL}${alternatePath}`];
-            })
-          ),
+          languages: hreflangLanguages(page.path),
         },
       });
     }

@@ -290,6 +290,56 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
                 </ul>
               )}
             </div>
+
+            <div className="glass-panel p-5 space-y-3 text-sm text-calm-blue-600 leading-relaxed">
+              <h2
+                className="text-xl font-semibold text-calm-blue-800"
+                style={{ fontFamily: headlineStyle.fontFamily }}
+              >
+                {l(
+                  lang,
+                  "How we use donations",
+                  "How we use donations",
+                  "How we use donations",
+                  "How we use donations"
+                )}
+              </h2>
+              <p>
+                {l(
+                  lang,
+                  "Your gift keeps Clarvia’s free services running: Ask us by email for families worldwide, and the Luxembourg checklist now in public alpha. We do not show ads.",
+                  "Your gift keeps Clarvia’s free services running: Ask us by email for families worldwide, and the Luxembourg checklist now in public alpha. We do not show ads.",
+                  "Your gift keeps Clarvia’s free services running: Ask us by email for families worldwide, and the Luxembourg checklist now in public alpha. We do not show ads.",
+                  "Your gift keeps Clarvia’s free services running: Ask us by email for families worldwide, and the Luxembourg checklist now in public alpha. We do not show ads."
+                )}
+              </p>
+              <p>
+                {l(
+                  lang,
+                  "We receive donations through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates.",
+                  "We receive donations through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates.",
+                  "We receive donations through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates.",
+                  "We receive donations through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates."
+                )}
+              </p>
+              <p>
+                {l(
+                  lang,
+                  "Our 2026 accounts have not yet been filed. For live transparency, see Open Collective.",
+                  "Our 2026 accounts have not yet been filed. For live transparency, see Open Collective.",
+                  "Our 2026 accounts have not yet been filed. For live transparency, see Open Collective.",
+                  "Our 2026 accounts have not yet been filed. For live transparency, see Open Collective."
+                )}{" "}
+                <a
+                  href="https://opencollective.com/clarvia-org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-calm-lilac-500 hover:text-calm-lilac-600 underline underline-offset-2"
+                >
+                  opencollective.com/clarvia-org
+                </a>
+              </p>
+            </div>
           </div>
 
           {/* RIGHT COLUMN: Donation Selector Card */}

@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { type Lang, l, LANGUAGES } from "@/lib/i18n";
+import { type Lang, l, LANGUAGES, hreflangLanguages } from "@/lib/i18n";
 import Header from "@/components/Header";
 import { headlineStyle } from "../data";
 import FooterSection from "../sections/FooterSection";
@@ -46,9 +46,7 @@ export async function generateMetadata({
     description: meta.description,
     alternates: {
       canonical: `${BASE_URL}/${lang}/about`,
-      languages: Object.fromEntries(
-        LANGUAGES.map((code) => [code, `${BASE_URL}/${code}/about`])
-      ),
+      languages: hreflangLanguages("about"),
     },
     openGraph: {
       title: meta.title,
@@ -183,7 +181,24 @@ export default async function AboutPage({
               {l(lang, "Clarvia is a non-profit association. We do not charge fees, display advertisements, or monetise personal data. There are no premium tiers or paid features. All services are free for every family.", "Clarvia est une association sans but lucratif. Nous ne facturons aucun frais, n'affichons pas de publicité et ne monétisons pas les données personnelles. Il n'existe ni offre premium ni fonctionnalité payante : tous les services sont gratuits pour toutes les familles.", "Clarvia ist ein gemeinnütziger Verein. Wir erheben keine Gebühren, schalten keine Werbung und monetarisieren keine personenbezogenen Daten. Es gibt keine Premium-Stufen und keine kostenpflichtigen Funktionen. Alle Angebote sind für jede Familie kostenlos.", "Clarvia ass eng Associatioun ouni Gewënnzweck. Mir froe keng Fraisen, weisen keng Reklammen a verdéngen net un perséinlechen Donnéeën. Et gëtt keng Premium-Offeren a keng bezuelte Funktiounen. All Servicer si fir all Famill gratis.")}
             </p>
             <p>
-              {l(lang, "Our operations are supported by corporate sponsors, grant funding, and volunteer contributions. Our tools, data, and source code are all freely available to the public.", "Nos activités sont soutenues par des sponsors d'entreprise, des financements sous forme de subventions et des contributions bénévoles. Nos outils, nos données et notre code source sont librement accessibles au public.", "Unsere Arbeit wird durch Unternehmenssponsoren, Fördermittel und ehrenamtliche Beiträge ermöglicht. Unsere Werkzeuge, Daten und unser Quellcode sind der Öffentlichkeit frei zugänglich.", "Eis Aarbecht gëtt duerch Entreprisesponsoren, Subventiounen a fräiwëlleg Bäiträg ënnerstëtzt. Eis Tools, Donnéeën an eise Quellcode si fir de Public fräi zougänglech.")}
+              {l(lang, "Our operations are supported by donations, corporate sponsors, grant funding, and volunteer contributions. Our tools, data, and source code are all freely available to the public.", "Nos activités sont soutenues par des sponsors d'entreprise, des financements sous forme de subventions et des contributions bénévoles. Nos outils, nos données et notre code source sont librement accessibles au public.", "Unsere Arbeit wird durch Unternehmenssponsoren, Fördermittel und ehrenamtliche Beiträge ermöglicht. Unsere Werkzeuge, Daten und unser Quellcode sind der Öffentlichkeit frei zugänglich.", "Eis Aarbecht gëtt duerch Entreprisesponsoren, Subventiounen a fräiwëlleg Bäiträg ënnerstëtzt. Eis Tools, Donnéeën an eise Quellcode si fir de Public fräi zougänglech.")}
+            </p>
+            <p>
+              {l(
+                lang,
+                "Donations keep our free services running. We do not show ads. Payments are processed through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates. Our 2026 accounts have not yet been filed — live income and eligible expenses are on Open Collective.",
+                "Donations keep our free services running. We do not show ads. Payments are processed through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates. Our 2026 accounts have not yet been filed — live income and eligible expenses are on Open Collective.",
+                "Donations keep our free services running. We do not show ads. Payments are processed through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates. Our 2026 accounts have not yet been filed — live income and eligible expenses are on Open Collective.",
+                "Donations keep our free services running. We do not show ads. Payments are processed through Stripe, Open Collective, and GitHub Sponsors. We do not currently issue tax certificates. Our 2026 accounts have not yet been filed — live income and eligible expenses are on Open Collective."
+              )}{" "}
+              <a
+                href="https://opencollective.com/clarvia-org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-calm-blue-700 font-medium hover:text-calm-blue-900 underline underline-offset-2"
+              >
+                opencollective.com/clarvia-org
+              </a>
             </p>
           </div>
         </section>

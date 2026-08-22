@@ -119,7 +119,7 @@ def test_all_approved_links_exist() -> None:
     for link in (
         "https://clarvia.org/en/support",
         "https://github.com/clarvia-org",
-        "https://clarvia.org/en#contact",
+        "https://clarvia.org/en/contact",
         "https://clarvia.org/en/privacy",
         "https://clarvia.org/en",
         "mailto:lex@clarvia.org",

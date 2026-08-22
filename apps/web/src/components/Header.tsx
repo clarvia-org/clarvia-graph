@@ -79,12 +79,30 @@ export default function Header({ lang }: { lang: Lang }) {
           className="flex items-center gap-6"
         >
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
+          <div className="hidden md:flex items-center gap-4 lg:gap-6 text-sm font-semibold">
             <Link
-              href={`/${lang}/checklist`}
+              href={`/${lang}#ask-us`}
               className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
-              {l(lang, "Checklist", "Checklist", "Checkliste", "Checklëscht")}
+              {l(lang, "Ask us", "Ask us", "Ask us", "Ask us")}
+            </Link>
+            <Link
+              href={`/${lang}/checklist`}
+              aria-label={l(
+                lang,
+                "Luxembourg checklist (public alpha)",
+                "Luxembourg checklist (public alpha)",
+                "Luxembourg checklist (public alpha)",
+                "Luxembourg checklist (public alpha)"
+              )}
+              className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
+            >
+              <span className="inline-flex items-baseline gap-1">
+                {l(lang, "Checklist", "Checklist", "Checkliste", "Checklëscht")}
+                <span className="text-[11px] font-medium text-calm-blue-400">
+                  {l(lang, "LU alpha", "LU alpha", "LU alpha", "LU alpha")}
+                </span>
+              </span>
             </Link>
             <Link
               href={`/${lang}/about`}
@@ -93,14 +111,20 @@ export default function Header({ lang }: { lang: Lang }) {
               {l(lang, "About", "À propos", "Über uns", "Iwwer eis")}
             </Link>
             <Link
-              href={`/${lang}/updates`}
+              href={`/${lang}/contact`}
               className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
+            >
+              {l(lang, "Contact", "Contact", "Kontakt", "Kontakt")}
+            </Link>
+            <Link
+              href={`/${lang}/updates`}
+              className="hidden lg:inline text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
               {l(lang, "Updates", "Actualités", "Aktuelles", "Neiegkeeten")}
             </Link>
             <Link
               href={`/${lang}/contribute`}
-              className="text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
+              className="hidden lg:inline text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
             >
               {l(lang, "Contribute", "Contribuer", "Mitwirken", "Matmaachen")}
             </Link>
@@ -184,11 +208,24 @@ export default function Header({ lang }: { lang: Lang }) {
       >
         <nav className="flex flex-col gap-5 text-lg font-semibold flex-grow">
           <Link
+            href={`/${lang}#ask-us`}
+            onClick={toggleMenu}
+            className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
+          >
+            {l(lang, "Ask us", "Ask us", "Ask us", "Ask us")}
+          </Link>
+          <Link
             href={`/${lang}/checklist`}
             onClick={toggleMenu}
             className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
           >
-            {l(lang, "Checklist", "Checklist", "Checkliste", "Checklëscht")}
+            {l(
+              lang,
+              "Luxembourg checklist (alpha)",
+              "Luxembourg checklist (alpha)",
+              "Luxembourg checklist (alpha)",
+              "Luxembourg checklist (alpha)"
+            )}
           </Link>
           <Link
             href={`/${lang}/about`}
@@ -196,6 +233,13 @@ export default function Header({ lang }: { lang: Lang }) {
             className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
           >
             {l(lang, "About", "À propos", "Über uns", "Iwwer eis")}
+          </Link>
+          <Link
+            href={`/${lang}/contact`}
+            onClick={toggleMenu}
+            className="text-calm-blue-700 hover:text-calm-blue-900 transition-colors py-1.5 border-b border-calm-blue-100/50"
+          >
+            {l(lang, "Contact", "Contact", "Kontakt", "Kontakt")}
           </Link>
           <Link
             href={`/${lang}/updates`}

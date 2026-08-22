@@ -1,5 +1,5 @@
 import { type Metadata } from "next";
-import { type Lang, LANGUAGES } from "@/lib/i18n";
+import { type Lang, LANGUAGES, hreflangLanguages } from "@/lib/i18n";
 import Header from "@/components/Header";
 import HeroSection from "./sections/HeroSection";
 import TestimonialsSection from "./sections/TestimonialsSection";
@@ -45,9 +45,7 @@ export async function generateMetadata({
     description: meta.description,
     alternates: {
       canonical: `${BASE_URL}/${lang}`,
-      languages: Object.fromEntries(
-        LANGUAGES.map((code) => [code === "lu" ? "lb" : code, `${BASE_URL}/${code}`])
-      ),
+      languages: hreflangLanguages(),
     },
     openGraph: {
       title: meta.title,

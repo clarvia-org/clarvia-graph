@@ -7,6 +7,53 @@ export interface TrustStripProps {
 export default function TrustStrip({ lang }: TrustStripProps) {
   return (
     <div className="space-y-8">
+      <div className="glass-panel p-6 border border-white/60 space-y-3 text-sm text-calm-blue-600 leading-relaxed">
+        <h2 className="text-base font-semibold text-calm-blue-800">
+          {l(
+            lang,
+            "How we use donations",
+            "How we use donations",
+            "How we use donations",
+            "How we use donations"
+          )}
+        </h2>
+        <p>
+          {l(
+            lang,
+            "Donations fund our free services: worldwide email guidance and the Luxembourg checklist. We do not show ads, and we do not sell data.",
+            "Donations fund our free services: worldwide email guidance and the Luxembourg checklist. We do not show ads, and we do not sell data.",
+            "Donations fund our free services: worldwide email guidance and the Luxembourg checklist. We do not show ads, and we do not sell data.",
+            "Donations fund our free services: worldwide email guidance and the Luxembourg checklist. We do not show ads, and we do not sell data."
+          )}
+        </p>
+        <p>
+          {l(
+            lang,
+            "Payments are processed through Stripe, Open Collective, and GitHub Sponsors. Clarvia ASBL does not currently issue tax certificates.",
+            "Payments are processed through Stripe, Open Collective, and GitHub Sponsors. Clarvia ASBL does not currently issue tax certificates.",
+            "Payments are processed through Stripe, Open Collective, and GitHub Sponsors. Clarvia ASBL does not currently issue tax certificates.",
+            "Payments are processed through Stripe, Open Collective, and GitHub Sponsors. Clarvia ASBL does not currently issue tax certificates."
+          )}
+        </p>
+        <p>
+          {l(
+            lang,
+            "Our 2026 accounts have not yet been filed. Open Collective shows live income and eligible expenses:",
+            "Our 2026 accounts have not yet been filed. Open Collective shows live income and eligible expenses:",
+            "Our 2026 accounts have not yet been filed. Open Collective shows live income and eligible expenses:",
+            "Our 2026 accounts have not yet been filed. Open Collective shows live income and eligible expenses:"
+          )}{" "}
+          <a
+            href="https://opencollective.com/clarvia-org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-calm-lilac-500 hover:text-calm-lilac-600 underline underline-offset-2"
+          >
+            opencollective.com/clarvia-org
+          </a>
+        </p>
+      </div>
+
       {/* Legal, Privacy and Transparency Grid */}
       <div
         className="border-t border-calm-blue-200/50 pt-8 space-y-6 text-xs text-calm-blue-500 leading-relaxed"

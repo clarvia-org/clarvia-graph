@@ -10,10 +10,16 @@ export default function FormsSection({
   lang,
   showFeedback = true,
   showContact = true,
+  contactHeading,
+  contactIntro,
+  showContactAudience = true,
 }: {
   lang: Lang;
   showFeedback?: boolean;
   showContact?: boolean;
+  contactHeading?: string;
+  contactIntro?: string;
+  showContactAudience?: boolean;
 }) {
   const feedbackForm = useForm();
   const [fbHardest, setFbHardest] = useState("");
@@ -121,11 +127,19 @@ export default function FormsSection({
       {/* ═══ Contact ═══ */}
       <section id="contact" className="mb-10 scroll-mt-24">
         <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-4" style={headlineStyle}>
-          {l(lang, "Work with us", "Travailler avec nous", "Mit uns zusammenarbeiten", "Mat eis zesummeschaffen")}
+          {contactHeading ?? l(lang, "Work with us", "Travailler avec nous", "Mit uns zusammenarbeiten", "Mat eis zesummeschaffen")}
         </h2>
         <p className="text-base text-calm-blue-600 text-center max-w-2xl mx-auto mb-3 leading-relaxed">
-          {l(lang, "We welcome contact from:", "Clarvia est actuellement en phase de construction et de validation. Nous sommes ouverts aux échanges avec :", "Clarvia befindet sich derzeit in der Aufbau- und Validierungsphase. Wir freuen uns über Kontakt von:", "Clarvia ass de Moment an der Opbau- a Validéierungsphas. Mir freeën eis iwwer Kontakt vun:")}
+          {contactIntro ??
+            l(
+              lang,
+              "We welcome contact from:",
+              "We welcome contact from:",
+              "We welcome contact from:",
+              "We welcome contact from:"
+            )}
         </p>
+        {showContactAudience && (
         <ul className="text-sm text-calm-blue-500 max-w-md mx-auto mb-8 leading-relaxed space-y-1.5">
           {[
             { en: "families willing to share practical experience", fr: "familles souhaitant partager leur expérience pratique", de: "Familien, die ihre praktische Erfahrung teilen möchten" },
@@ -142,6 +156,7 @@ export default function FormsSection({
             </li>
           ))}
         </ul>
+        )}
 
         <div className="glass-panel p-6 sm:p-8 max-w-xl mx-auto">
           {contactForm.status === "sent" ? (
