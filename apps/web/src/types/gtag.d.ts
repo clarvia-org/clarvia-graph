@@ -1,4 +1,4 @@
 interface Window {
-  gtag?: (command: string, ...args: unknown[]) => void;
+  gtag?: (...args: unknown[]) => void;
   dataLayer?: unknown[];
 }

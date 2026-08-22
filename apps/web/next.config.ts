@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { LANGUAGE_REDIRECTS } from "./src/lib/i18n";
 
 const securityHeaders = [
   {
@@ -47,6 +48,9 @@ const nextConfig: NextConfig = {
         headers: securityHeaders,
       },
     ];
+  },
+  async redirects() {
+    return [...LANGUAGE_REDIRECTS];
   },
 };
 

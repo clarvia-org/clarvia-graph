@@ -1,5 +1,6 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import { trackBeginCheckout } from "@/lib/analytics";
 import { type Lang, l } from "@/lib/i18n";
 import DonationAmountSelector from "./DonationAmountSelector";
 import MarketingConsent from "./MarketingConsent";
@@ -64,6 +65,12 @@ function DonationFormInner({ lang, landingVariant, config }: DonationFormProps) 
       });
       const data = await res.json();
       if (data.url) {
+        trackBeginCheckout({
+          value: amount,
+          currency: "EUR",
+          frequency,
+          landing_variant: landingVariant,
+        });
         window.location.href = data.url;
       } else {
         alert(

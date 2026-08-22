@@ -14,6 +14,26 @@ export interface StoredConsent {
   };
 }
 
+/** Consent Mode flags after “Accept all”. Ads measurement is on; remarketing is not. */
+export const CONSENT_GRANTED_UPDATE = {
+  ad_storage: "granted",
+  ad_user_data: "granted",
+  ad_personalization: "denied",
+  analytics_storage: "granted",
+  personalization_storage: "denied",
+} as const;
+
+/** Consent Mode flags after “Decline / Essential only”. */
+export const CONSENT_DENIED_UPDATE = {
+  ad_storage: "denied",
+  ad_user_data: "denied",
+  ad_personalization: "denied",
+  analytics_storage: "denied",
+  personalization_storage: "denied",
+  functionality_storage: "granted",
+  security_storage: "granted",
+} as const;
+
 /**
  * Update the Google Consent state dynamically.
  */
@@ -21,23 +41,9 @@ export function updateGoogleConsent(status: ConsentStatus) {
   if (typeof window === "undefined" || !window.gtag) return;
 
   if (status === "granted") {
-    window.gtag("consent", "update", {
-      ad_storage: "granted",
-      ad_user_data: "granted",
-      ad_personalization: "granted",
-      analytics_storage: "granted",
-      personalization_storage: "granted",
-    });
+    window.gtag("consent", "update", { ...CONSENT_GRANTED_UPDATE });
   } else {
-    window.gtag("consent", "update", {
-      ad_storage: "denied",
-      ad_user_data: "denied",
-      ad_personalization: "denied",
-      analytics_storage: "denied",
-      personalization_storage: "denied",
-      functionality_storage: "granted",
-      security_storage: "granted",
-    });
+    window.gtag("consent", "update", { ...CONSENT_DENIED_UPDATE });
   }
 }
 

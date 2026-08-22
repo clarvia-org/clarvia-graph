@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
+import { GA_MEASUREMENT_ID, adsMeasurementId, googleTagBootstrapScript } from "@/lib/analytics";
 import "./globals.css";
 
 const inter = Inter({
@@ -41,40 +42,7 @@ export default function RootLayout({
         {/* Google Consent Mode v2 — must fire before gtag.js loads */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              
-              var consentState = {
-                ad_storage: 'denied',
-                ad_user_data: 'denied',
-                ad_personalization: 'denied',
-                analytics_storage: 'denied',
-                functionality_storage: 'granted',
-                security_storage: 'granted',
-                personalization_storage: 'denied',
-                wait_for_update: 500
-              };
-              
-              try {
-                var saved = localStorage.getItem('clarvia-consent');
-                if (saved) {
-                  var parsed = JSON.parse(saved);
-                  if (parsed && parsed.version === '2026-07-clarvia-consent-v1' && parsed.status === 'granted') {
-                    consentState.analytics_storage = 'granted';
-                    consentState.ad_storage = 'granted';
-                    consentState.ad_user_data = 'granted';
-                    consentState.ad_personalization = 'granted';
-                    consentState.personalization_storage = 'granted';
-                  }
-                }
-              } catch (e) {}
-              
-              gtag('consent', 'default', consentState);
-              gtag('set', 'ads_data_redaction', true);
-              gtag('js', new Date());
-              gtag('config', 'G-K67M5B4932');
-            `,
+            __html: googleTagBootstrapScript({ adsId: adsMeasurementId() }),
           }}
         />
       </head>
@@ -83,7 +51,7 @@ export default function RootLayout({
         <Script
           id="gtag-js"
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-K67M5B4932"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
         />
       </body>
     </html>

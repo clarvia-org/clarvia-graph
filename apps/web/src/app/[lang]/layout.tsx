@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { LANGUAGES, type Lang, hreflangLanguages } from "@/lib/i18n";
+import AnalyticsRouteTracker from "@/components/AnalyticsRouteTracker";
 import CookieConsent from "@/components/CookieConsent";
 
 
@@ -31,6 +32,8 @@ const META: Record<Lang, { title: string; description: string }> = {
 export async function generateStaticParams() {
   return LANGUAGES.map((lang) => ({ lang }));
 }
+
+export const dynamicParams = false;
 
 export async function generateMetadata({
   params,
@@ -171,6 +174,7 @@ export default async function LangLayout({
       />
 
       {children}
+      <AnalyticsRouteTracker />
       <CookieConsent lang={lang as Lang} />
     </>
   );

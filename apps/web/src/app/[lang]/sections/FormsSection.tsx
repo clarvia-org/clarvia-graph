@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 import { type Lang, l } from "@/lib/i18n";
 import { useForm } from "@/lib/useForm";
 import Turnstile from "@/components/Turnstile";
@@ -69,12 +70,10 @@ export default function FormsSection({
                   "/api/feedback",
                   { hardest: fbHardest, wishExisted: fbWish, email: fbEmail, turnstileToken: feedbackToken ?? "" },
                   () => {
-                    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-                      window.gtag("event", "feedback_submit", {
-                        event_category: "engagement",
-                        event_label: "Feedback Form Submit",
-                      });
-                    }
+                    trackEvent("feedback_submit", {
+                      event_category: "engagement",
+                      event_label: "Feedback Form Submit",
+                    });
                   }
                 );
               }}
@@ -174,12 +173,10 @@ export default function FormsSection({
                   "/api/contact",
                   { name: ctName, email: ctEmail, subject: ctSubject, message: ctMessage, turnstileToken: contactToken ?? "" },
                   () => {
-                    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-                      window.gtag("event", "contact_submit", {
-                        event_category: "engagement",
-                        event_label: "Contact Form Submit",
-                      });
-                    }
+                    trackEvent("contact_submit", {
+                      event_category: "engagement",
+                      event_label: "Contact Form Submit",
+                    });
                   }
                 );
               }}
