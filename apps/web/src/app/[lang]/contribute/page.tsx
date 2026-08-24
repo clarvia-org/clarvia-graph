@@ -1,4 +1,5 @@
-import { type Lang, l } from "@/lib/i18n";
+import { type Metadata } from "next";
+import { type Lang, l, LANGUAGES, hreflangLanguages } from "@/lib/i18n";
 import Header from "@/components/Header";
 import { headlineStyle } from "../data";
 import FooterSection from "../sections/FooterSection";
@@ -6,6 +7,59 @@ import AccessSection from "../sections/AccessSection";
 import PublicInterestSection from "../sections/PublicInterestSection";
 import TrustSection from "../sections/TrustSection";
 import FormsSection from "../sections/FormsSection";
+
+const BASE_URL = "https://clarvia.org";
+
+const META: Record<Lang, { title: string; description: string }> = {
+  en: {
+    title: "Help Clarvia help families",
+    description:
+      "Clarvia is a Luxembourg non-profit building a free, multilingual bereavement guide for families after the loss of a loved one. Every contribution — however small — makes that guidance more accurate, more accessible, and more trustworthy.",
+  },
+  fr: {
+    title: "Contribuez à Clarvia pour aider les familles",
+    description:
+      "Clarvia est une association sans but lucratif luxembourgeoise qui développe un guide gratuit et multilingue pour accompagner les familles en deuil. Chaque contribution, même modeste, rend ce guide plus précis, plus accessible et plus fiable.",
+  },
+  de: {
+    title: "Helfen Sie Clarvia, Familien zu unterstützen",
+    description:
+      "Clarvia ist ein gemeinnütziger Verein in Luxemburg, der einen kostenlosen, mehrsprachigen Leitfaden für trauernde Familien aufbaut. Jeder Beitrag – noch so klein – macht diesen Leitfaden präziser, zugänglicher und vertrauenswürdiger.",
+  },
+  lu: {
+    title: "Hëlleft Clarvia, Familljen ze hëllefen",
+    description:
+      "Clarvia ass eng lëtzebuergesch Associatioun ouni Gewënnzweck, déi e gratis, méisproochege Guide fir Familljen nom Verloscht vun engem nooste Mënsch opbaut. All Bäitrag – egal wéi kleng – mécht dës Orientéierung méi genee, méi zougänglech a méi vertrauenswierdeg.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang: rawLang } = await params;
+  const lang = (LANGUAGES.includes(rawLang as Lang) ? rawLang : "en") as Lang;
+  const meta = META[lang];
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `${BASE_URL}/${lang}/contribute`,
+      languages: hreflangLanguages("contribute"),
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `${BASE_URL}/${lang}/contribute`,
+      siteName: "Clarvia",
+      locale: lang,
+      type: "website",
+      images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630 }],
+    },
+  };
+}
 
 export default async function ContributePage({
   params,

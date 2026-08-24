@@ -1,11 +1,61 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { type Lang, l } from "@/lib/i18n";
+import { type Lang, l, LANGUAGES, hreflangLanguages } from "@/lib/i18n";
 import Header from "@/components/Header";
 import { headlineStyle } from "../data";
 import { UPDATES } from "./updates-data";
 import FooterSection from "../sections/FooterSection";
 import VideoSection from "../sections/VideoSection";
+
+const BASE_URL = "https://clarvia.org";
+
+const META: Record<Lang, { title: string; description: string }> = {
+  en: {
+    title: "Updates — Clarvia",
+    description: "Milestones and news from the Clarvia project.",
+  },
+  fr: {
+    title: "Actualités | Clarvia",
+    description: "Étapes clés et actualités du projet Clarvia.",
+  },
+  de: {
+    title: "Aktuelles | Clarvia",
+    description: "Meilensteine und Neuigkeiten aus dem Clarvia-Projekt.",
+  },
+  lu: {
+    title: "Neiegkeeten | Clarvia",
+    description: "Meilesteng an Neiegkeeten aus dem Clarvia-Projet.",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang: rawLang } = await params;
+  const lang = (LANGUAGES.includes(rawLang as Lang) ? rawLang : "en") as Lang;
+  const meta = META[lang];
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `${BASE_URL}/${lang}/updates`,
+      languages: hreflangLanguages("updates"),
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `${BASE_URL}/${lang}/updates`,
+      siteName: "Clarvia",
+      locale: lang,
+      type: "website",
+      images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630 }],
+    },
+  };
+}
 
 function formatDate(dateStr: string, lang: Lang): string {
   const date = new Date(dateStr + "T00:00:00");

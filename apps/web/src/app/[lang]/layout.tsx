@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { LANGUAGES, type Lang, hreflangLanguages } from "@/lib/i18n";
+import { LANGUAGES, type Lang } from "@/lib/i18n";
 import AnalyticsRouteTracker from "@/components/AnalyticsRouteTracker";
 import CookieConsent from "@/components/CookieConsent";
 
@@ -47,10 +47,6 @@ export async function generateMetadata({
   return {
     title: meta.title,
     description: meta.description,
-    alternates: {
-      canonical: `${BASE_URL}/${lang}`,
-      languages: hreflangLanguages(),
-    },
     openGraph: {
       title: meta.title,
       description: meta.description,
