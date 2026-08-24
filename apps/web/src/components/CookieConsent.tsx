@@ -26,7 +26,10 @@ export default function CookieConsent({ lang }: { lang: Lang }) {
       console.error("Error reading consent from localStorage", e);
     }
 
-    setSlot(document.getElementById("cookie-consent-slot"));
+    setSlot(
+      document.getElementById("cookie-consent-slot") ??
+        document.getElementById("cookie-consent-slot-footer")
+    );
 
     if (showBanner) {
       const t1 = setTimeout(() => setIsRendered(true), 50);
