@@ -9,6 +9,102 @@ export type Update = {
 /* Newest first — sorted by date descending */
 export const UPDATES: Update[] = [
   {
+    date: "2026-08-22",
+    headline: {
+      en: "Clarvia launches 'Ask Clarvia' to provide direct, automated guidance from the homepage",
+      fr: "Clarvia lance « Demandez à Clarvia », un service d’orientation directe et automatisée accessible depuis la page d’accueil",
+      de: "Clarvia startet „Clarvia fragen“ für direkte, automatisierte Orientierung über die Startseite",
+    },
+    body: {
+      en:
+        "Clarvia has introduced \"Ask Clarvia\", a direct interactive service on the clarvia.org homepage designed to help families and individuals quickly navigate administrative procedures following a loss.\n\nVisitors can describe their current situation or question directly on the website. The query is securely processed by our automated guidance pipeline, and a detailed, structured reply is sent back by email signed by \"Lex from Clarvia\". The response provides clear next steps, applicable deadlines, relevant public authorities to contact, and verified official sources.\n\nAsk Clarvia is completely free to use, requires no account registration, and complements our structured open-source legal database (lex) and interactive checklist tools.",
+      fr:
+        "Clarvia a lancé « Demandez à Clarvia », un service interactif directement accessible depuis la page d’accueil de clarvia.org. Il aide les familles et les particuliers à s’orienter rapidement dans les démarches administratives qui suivent un décès.\n\nLes visiteurs peuvent décrire leur situation ou poser leur question directement sur le site. La demande est traitée de manière sécurisée par notre système automatisé d’orientation. Une réponse détaillée et structurée, signée « Lex de Clarvia », leur est ensuite envoyée par e-mail. Elle présente clairement les prochaines étapes, les délais applicables, les autorités publiques compétentes à contacter et des sources officielles vérifiées.\n\nDemandez à Clarvia est entièrement gratuit, ne nécessite aucune création de compte et complète notre base de données juridique structurée et open source (lex), ainsi que nos outils de checklist interactifs.",
+      de:
+        "Clarvia hat mit „Clarvia fragen“ einen interaktiven Service eingeführt, der direkt über die Startseite von clarvia.org erreichbar ist. Er hilft Familien und Einzelpersonen, sich nach einem Todesfall schnell in den erforderlichen Verwaltungsverfahren zurechtzufinden.\n\nBesucherinnen und Besucher können ihre aktuelle Situation oder ihre Frage direkt auf der Website beschreiben. Die Anfrage wird sicher durch unser automatisiertes Orientierungssystem verarbeitet. Anschließend wird eine ausführliche, strukturierte und mit „Lex von Clarvia“ unterzeichnete Antwort per E-Mail versendet. Sie enthält klare nächste Schritte, geltende Fristen, die zuständigen Behörden und geprüfte amtliche Quellen.\n\nClarvia fragen ist vollständig kostenlos, erfordert keine Registrierung und ergänzt unsere strukturierte, quelloffene Rechtsdatenbank (lex) sowie unsere interaktiven Checklisten.",
+    },
+  },
+  {
+    date: "2026-08-21",
+    headline: {
+      en: "Open-source community contributors help improve Clarvia",
+      fr: "La communauté open source contribue à améliorer Clarvia",
+      de: "Mitwirkende aus der Open-Source-Community helfen, Clarvia zu verbessern",
+    },
+    body: {
+      en:
+        "As an open-source public-interest project, Clarvia relies on community collaboration to make essential public guidance more accessible. We are excited to highlight recent contributions from open-source developers who have helped enhance the clarvia-graph codebase.\n\nCommunity contributions have brought important refinements across our repository, including plain-language review of our English checklist instructions, improved empty states, and web accessibility enhancements. These improvements ensure that our tools remain clear, welcoming, and easy to navigate for everyone.\n\nWe welcome developers, researchers, and translators to explore our open issues and collaborate with us on GitHub: https://github.com/clarvia-org/clarvia-graph",
+      fr:
+        "En tant que projet open source d’intérêt général, Clarvia s’appuie sur la collaboration de sa communauté pour rendre les informations publiques essentielles plus accessibles. Nous sommes heureux de mettre en lumière les récentes contributions de développeurs open source qui ont participé à l’amélioration de la base de code de clarvia-graph.\n\nCes contributions ont permis d’apporter d’importantes améliorations à notre dépôt, notamment une révision en langage clair des instructions de notre checklist en anglais, de meilleurs états vides et une accessibilité web renforcée. Grâce à ces changements, nos outils restent clairs, accueillants et faciles à utiliser pour tout le monde.\n\nNous invitons les développeurs, les chercheurs et les traducteurs à consulter nos tickets ouverts et à collaborer avec nous sur GitHub : https://github.com/clarvia-org/clarvia-graph",
+      de:
+        "Als gemeinwohlorientiertes Open-Source-Projekt ist Clarvia auf die Zusammenarbeit mit der Community angewiesen, um wichtige öffentliche Informationen leichter zugänglich zu machen. Wir freuen uns, aktuelle Beiträge von Open-Source-Entwicklerinnen und -Entwicklern hervorzuheben, die zur Verbesserung der Codebasis von clarvia-graph beigetragen haben.\n\nDie Beiträge aus der Community haben wichtige Verbesserungen in unserem Repository ermöglicht. Dazu gehören eine Überarbeitung der englischen Checklistenanweisungen in verständlicher Sprache, verbesserte Leerzustände und eine höhere Barrierefreiheit im Web. Diese Änderungen tragen dazu bei, dass unsere Werkzeuge für alle klar, einladend und einfach zu bedienen bleiben.\n\nWir laden Entwicklerinnen und Entwickler, Forschende sowie Übersetzerinnen und Übersetzer ein, unsere offenen Issues anzusehen und auf GitHub mit uns zusammenzuarbeiten: https://github.com/clarvia-org/clarvia-graph",
+    },
+  },
+  {
+    date: "2026-08-18",
+    headline: {
+      en: "Alpha checklist updated with enhanced accessibility and clearer guidance",
+      fr: "La checklist alpha bénéficie d’une meilleure accessibilité et d’indications plus claires",
+      de: "Alpha-Checkliste mit verbesserter Barrierefreiheit und klareren Hinweisen aktualisiert",
+    },
+    body: {
+      en:
+        "We have released an update to the preliminary alpha checklist on the Clarvia website (/checklist), focusing on accessibility standards and plain-language communication.\n\nThe update introduces refined ARIA attributes, improved keyboard navigation, and enhanced contrast across interactive checklist items. In addition, the introductory sections and guidance notes have undergone a plain-language pass to ensure complex administrative procedures and legal requirements are simple and stress-free to understand.\n\nThese updates help ensure that our dynamic consequence graph remains fully usable across all devices and assistive technologies as we continue expanding our coverage of European jurisdictions.",
+      fr:
+        "Nous avons publié une mise à jour de la checklist en version alpha préliminaire sur le site de Clarvia (/checklist), en mettant l’accent sur les normes d’accessibilité et la communication en langage clair.\n\nCette mise à jour affine les attributs ARIA, améliore la navigation au clavier et renforce les contrastes des éléments interactifs de la checklist. Les sections d’introduction et les notes explicatives ont également été réécrites en langage clair afin de rendre les procédures administratives complexes et les obligations légales plus simples à comprendre et aussi peu stressantes que possible.\n\nCes améliorations permettent à notre graphe dynamique des conséquences de rester pleinement utilisable sur tous les appareils et avec les technologies d’assistance, tandis que nous continuons à étendre notre couverture à d’autres juridictions européennes.",
+      de:
+        "Wir haben die vorläufige Alpha-Version der Checkliste auf der Clarvia-Website (/checklist) aktualisiert. Im Mittelpunkt stehen die Einhaltung von Barrierefreiheitsstandards und eine leicht verständliche Sprache.\n\nDas Update umfasst überarbeitete ARIA-Attribute, eine verbesserte Tastaturnavigation und stärkere Kontraste bei den interaktiven Elementen der Checkliste. Außerdem wurden die einleitenden Abschnitte und Hinweise sprachlich überarbeitet, damit komplexe Verwaltungsverfahren und rechtliche Anforderungen einfach und ohne unnötige Belastung verständlich sind.\n\nDiese Verbesserungen tragen dazu bei, dass unser dynamischer Folgegraph auf allen Geräten und mit assistiven Technologien vollständig nutzbar bleibt, während wir die Abdeckung weiterer europäischer Rechtsordnungen ausbauen.",
+    },
+  },
+  {
+    date: "2026-08-11",
+    headline: {
+      en: "Privacy by design: How Clarvia automatically redacts sensitive personal data under GDPR",
+      fr: "Protection des données dès la conception : comment Clarvia masque automatiquement les données personnelles sensibles conformément au RGPD",
+      de: "Datenschutz von Anfang an: Wie Clarvia sensible personenbezogene Daten gemäß DSGVO automatisch entfernt",
+    },
+    body: {
+      en:
+        "When navigating bereavement or end-of-life administration, people frequently handle documents and questions containing highly sensitive personal data. To protect user confidentiality in full alignment with GDPR principles, Clarvia has implemented a deterministic, privacy-by-design redaction pipeline.\n\nBefore any automated processing or language model evaluation occurs, our systems automatically identify and strip sensitive identifiers, including email addresses, phone numbers, IBANs, bank account numbers, payment cards, national identity numbers, passport numbers, and medical or insurance policy identifiers.\n\nIn addition, user IP addresses and sender email addresses are never stored in plain text in our persistent application databases. By anonymising input data at the application boundary, Clarvia ensures that families receive practical, verified guidance without compromising their personal privacy.",
+      fr:
+        "Lorsqu’une personne doit gérer des démarches liées à un décès ou à une fin de vie, elle manipule souvent des documents et pose des questions contenant des données personnelles particulièrement sensibles. Afin de protéger la confidentialité des utilisateurs dans le plein respect des principes du RGPD, Clarvia a mis en place un processus déterministe de masquage des données, fondé sur la protection des données dès la conception.\n\nAvant tout traitement automatisé ou toute analyse par un modèle de langage, nos systèmes détectent et suppriment automatiquement les identifiants sensibles. Cela comprend notamment les adresses e-mail, les numéros de téléphone, les IBAN, les numéros de compte bancaire, les cartes de paiement, les numéros nationaux d’identification, les numéros de passeport ainsi que les identifiants médicaux ou de contrats d’assurance.\n\nPar ailleurs, les adresses IP des utilisateurs et les adresses e-mail des expéditeurs ne sont jamais conservées en clair dans les bases de données permanentes de notre application. En anonymisant les données dès leur entrée dans l’application, Clarvia permet aux familles de recevoir des informations pratiques et vérifiées sans compromettre la confidentialité de leurs données personnelles.",
+      de:
+        "Bei Verwaltungsangelegenheiten rund um einen Todesfall oder das Lebensende arbeiten Menschen häufig mit Dokumenten und Fragen, die besonders sensible personenbezogene Daten enthalten. Um die Vertraulichkeit der Nutzerinnen und Nutzer vollständig im Einklang mit den Grundsätzen der DSGVO zu schützen, hat Clarvia einen deterministischen Prozess zur Datenbereinigung nach dem Prinzip „Datenschutz von Anfang an“ eingeführt.\n\nBevor eine automatisierte Verarbeitung oder Auswertung durch ein Sprachmodell stattfindet, erkennen und entfernen unsere Systeme automatisch sensible Identifikationsmerkmale. Dazu gehören E-Mail-Adressen, Telefonnummern, IBANs, Bankkontonummern, Zahlungskarten, nationale Identifikationsnummern, Reisepassnummern sowie medizinische Kennnummern und Versicherungsnummern.\n\nDarüber hinaus werden die IP-Adressen der Nutzerinnen und Nutzer sowie die E-Mail-Adressen der Absender niemals im Klartext in unseren dauerhaft genutzten Anwendungsdatenbanken gespeichert. Indem Clarvia eingegebene Daten bereits beim Eingang in die Anwendung anonymisiert, erhalten Familien praktische und geprüfte Orientierung, ohne dass die Vertraulichkeit ihrer persönlichen Daten beeinträchtigt wird.",
+    },
+  },
+  {
+    date: "2026-08-10",
+    headline: {
+      en: "Clarvia upgrades automated guidance engine to two-pass verification architecture",
+      fr: "Clarvia dote son moteur d’orientation automatisée d’une architecture de vérification en deux étapes",
+      de: "Clarvia stellt automatisiertes Orientierungssystem auf eine zweistufige Prüfarchitektur um",
+    },
+    body: {
+      en:
+        "Clarvia has upgraded the core intelligence engine behind its automated information services to a robust two-pass verification architecture powered by GPT-5.6 Luna.\n\nUnder this new architecture, queries are processed in two separate stages. First, a research pass performs live, search-grounded discovery across official government portals and legal registers, producing a strictly validated structured factual brief with verified citations. Second, a dedicated writing pass translates that validated brief into empathetic, clear, and plain language without external browsing.\n\nThis separation of factual verification from text composition eliminates hallucinations, ensures every cited deadline and public contact is grounded in official sources, and significantly improves response clarity for users in distress.",
+      fr:
+        "Clarvia a fait évoluer le moteur intelligent au cœur de ses services d’information automatisés vers une architecture robuste de vérification en deux étapes, reposant sur GPT-5.6 Luna.\n\nAvec cette nouvelle architecture, les demandes sont traitées en deux étapes distinctes. La première effectue une recherche en temps réel sur les portails officiels des administrations et les registres juridiques. Elle produit une synthèse factuelle structurée, soumise à une validation stricte et accompagnée de références vérifiées. La seconde transforme cette synthèse validée en une réponse empathique, claire et rédigée en langage simple, sans effectuer de nouvelle recherche en ligne.\n\nCette séparation entre la vérification des faits et la rédaction écarte les hallucinations, garantit que chaque délai et chaque contact public mentionnés reposent sur des sources officielles et améliore nettement la clarté des réponses destinées aux personnes en situation difficile.",
+      de:
+        "Clarvia hat das zentrale Intelligenzsystem hinter seinen automatisierten Informationsdiensten auf eine robuste zweistufige Prüfarchitektur umgestellt, die von GPT-5.6 Luna unterstützt wird.\n\nIn dieser neuen Architektur werden Anfragen in zwei getrennten Schritten bearbeitet. Zunächst werden offizielle Behördenportale und Rechtsregister in Echtzeit durchsucht. Daraus entsteht eine streng geprüfte, strukturierte Zusammenfassung der Fakten mit verifizierten Quellenangaben. Anschließend überführt ein eigener Schreibschritt diese geprüfte Zusammenfassung in eine einfühlsame, klare und leicht verständliche Antwort, ohne eine weitere externe Websuche durchzuführen.\n\nDie Trennung von Faktenprüfung und Textformulierung verhindert Halluzinationen, stellt sicher, dass jede genannte Frist und jede öffentliche Kontaktstelle auf amtlichen Quellen beruht, und verbessert die Verständlichkeit der Antworten für Menschen in belastenden Situationen erheblich.",
+    },
+  },
+  {
+    date: "2026-07-30",
+    headline: {
+      en: "Clarvia approved for GitHub's \"For Good First Issue\" program",
+      fr: "Clarvia rejoint officiellement le programme « For Good First Issue » de GitHub",
+      de: "Clarvia in das GitHub-Programm „For Good First Issue“ aufgenommen",
+    },
+    body: {
+      en:
+        "Clarvia has been officially accepted into GitHub's \"For Good First Issue\" program, an initiative by GitHub Social Impact that connects social-impact open-source projects with dedicated teams of volunteer developers, designers, and project managers.\n\nClarvia's project listing will be featured on forgoodfirstissue.github.com, allowing volunteer teams from around the world to discover our repositories and contribute to building free, open-source public-interest infrastructure for bereavement guidance.\n\nWe are grateful to GitHub Social Impact for supporting our mission and look forward to collaborating with talented contributors to accelerate our open-source tools.",
+      fr:
+        "Clarvia a été officiellement accepté dans le programme « For Good First Issue » de GitHub. Cette initiative de GitHub Social Impact met en relation des projets open source à impact social avec des équipes engagées de développeurs, de designers et de chefs de projet bénévoles.\n\nLa fiche du projet Clarvia sera publiée sur forgoodfirstissue.github.com. Des équipes bénévoles du monde entier pourront ainsi découvrir nos dépôts et contribuer à la création d’une infrastructure gratuite, open source et d’intérêt général pour accompagner les démarches liées au deuil.\n\nNous remercions GitHub Social Impact de soutenir notre mission et nous réjouissons de collaborer avec des contributeurs talentueux afin d’accélérer le développement de nos outils open source.",
+      de:
+        "Clarvia wurde offiziell in das GitHub-Programm „For Good First Issue“ aufgenommen. Diese Initiative von GitHub Social Impact bringt gemeinwohlorientierte Open-Source-Projekte mit engagierten Teams aus ehrenamtlichen Entwicklerinnen und Entwicklern, Designerinnen und Designern sowie Projektmanagerinnen und Projektmanagern zusammen.\n\nDas Clarvia-Projekt wird auf forgoodfirstissue.github.com vorgestellt. Dadurch können ehrenamtliche Teams aus aller Welt unsere Repositories entdecken und zum Aufbau einer kostenlosen, quelloffenen und gemeinwohlorientierten Infrastruktur für die Orientierung nach einem Todesfall beitragen.\n\nWir danken GitHub Social Impact für die Unterstützung unserer Mission und freuen uns auf die Zusammenarbeit mit talentierten Mitwirkenden, um die Entwicklung unserer Open-Source-Werkzeuge zu beschleunigen.",
+    },
+  },
+  {
     date: "2026-07-21",
     headline: {
       en: "Clarvia launches lex - an open-source framework standardising national legislation",
