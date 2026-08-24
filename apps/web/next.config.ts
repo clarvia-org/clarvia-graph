@@ -3,10 +3,6 @@ import { LANGUAGE_REDIRECTS } from "./src/lib/i18n";
 
 const securityHeaders = [
   {
-    key: "X-Frame-Options",
-    value: "DENY",
-  },
-  {
     key: "X-Content-Type-Options",
     value: "nosniff",
   },
@@ -24,7 +20,7 @@ const securityHeaders = [
   },
   {
     key: "Content-Security-Policy",
-    value: "frame-ancestors 'none'",
+    value: "frame-ancestors 'self' https://*.google.com https://*.googleusercontent.com",
   },
 ];
 

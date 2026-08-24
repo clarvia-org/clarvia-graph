@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import Image from "next/image";
-import { type Lang, l, LANGUAGES } from "@/lib/i18n";
+import { type Lang, l } from "@/lib/i18n";
 import { headlineStyle, TESTIMONIALS } from "@/app/[lang]/data";
 import FooterSection from "@/app/[lang]/sections/FooterSection";
 import Header from "@/components/Header";
@@ -76,56 +76,7 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
 
   return (
     <>
-      {config.showFullNavigation ? (
-        <Header lang={lang} />
-      ) : (
-        /* Simplified ad landing page header */
-        <header className="py-5 px-6 sm:px-12 flex items-center justify-between z-50 relative">
-          <Link
-            href={`/${lang}/checklist`}
-            aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite", "Clarvia Startsäit")}
-            className="block relative w-40 h-20 transition-transform duration-200 hover:scale-[1.02]"
-          >
-            <Image
-              src="/clarvia-logo.webp"
-              alt="Clarvia logo"
-              fill
-              sizes="160px"
-              priority
-              className="object-contain"
-            />
-          </Link>
-          <div className="flex items-center gap-6">
-            <Link
-              href={`/${lang}/checklist`}
-              className="text-sm font-semibold text-calm-blue-600 hover:text-calm-blue-800 transition-colors"
-            >
-              {l(
-                lang,
-                "View free checklist",
-                "Voir la liste gratuite",
-                "Kostenlose Checkliste ansehen",
-                "Gratis Checklëscht uweisen"
-              )}
-            </Link>
-            <div className="flex items-center gap-2">
-              {LANGUAGES.map((code) => (
-                <Link
-                  key={code}
-                  href={`/${code}/support`}
-                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
-                    lang === code
-                      ? "bg-white text-calm-blue-800 shadow-sm border border-calm-blue-200"
-                      : "text-calm-blue-500 hover:bg-white/40"
-                  }`}
-                >
-                  {code.toUpperCase()}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </header>
-      )}
+      <Header lang={lang} />
 
       <main
         id="main-content"
@@ -307,10 +258,10 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
               <p>
                 {l(
                   lang,
-                  "Your gift keeps Clarvia’s free services running: Ask us by email for families worldwide, and the Luxembourg checklist now in public alpha. We do not show ads.",
-                  "Votre don permet à Clarvia de maintenir ses services gratuits : des réponses par e-mail pour les familles du monde entier et la checklist Luxembourg, actuellement en version alpha publique. Nous n’affichons aucune publicité.",
-                  "Mit Ihrer Spende sichern Sie den Betrieb der kostenlosen Angebote von Clarvia: Antworten per E-Mail für Familien weltweit und die Luxemburg-Checkliste, die derzeit als öffentliche Alpha-Version verfügbar ist. Wir zeigen keine Werbung.",
-                  "Mat Ärem Don hëlleft Dir, dem Clarvia seng gratis Servicer um Lafen ze halen: Äntwerten per E-Mail fir Famillje weltwäit an d’Lëtzebuerg-Checklëscht, déi elo an der ëffentlecher Alpha-Versioun disponibel ass. Mir weise keng Reklammen."
+                  "Your gift keeps Clarvia’s free services running: Ask Clarvia by email for families worldwide, and the Luxembourg checklist we are building. We do not show ads.",
+                  "Votre don permet à Clarvia de maintenir ses services gratuits : « Demandez à Clarvia » par e-mail pour les familles du monde entier et la checklist Luxembourg que nous développons actuellement. Nous n’affichons aucune publicité.",
+                  "Mit Ihrer Spende sichern Sie den Betrieb der kostenlosen Angebote von Clarvia: „Clarvia fragen“ per E-Mail für Familien weltweit und die Luxemburg-Checkliste, die wir derzeit entwickeln. Wir zeigen keine Werbung.",
+                  "Mat Ärem Don hëlleft Dir, dem Clarvia seng gratis Servicer um Lafen ze halen: „Frot Clarvia“ per E-Mail fir Famillje weltwäit an d’Lëtzebuerg-Checklëscht, déi mir amgaang sinn ze entwéckelen. Mir weise keng Reklammen."
                 )}
               </p>
               <p>

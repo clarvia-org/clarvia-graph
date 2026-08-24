@@ -307,7 +307,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
             >
               {status === "sending"
                 ? l(lang, "Sending...", "Envoi...", "Senden...", "Gëtt geschéckt...")
-                : l(lang, "Send", "Envoyer", "Senden", "Schécken")}
+                : l(lang, "Ask Clarvia", "Demandez à Clarvia", "Clarvia fragen", "Frot Clarvia")}
             </button>
           </div>
 

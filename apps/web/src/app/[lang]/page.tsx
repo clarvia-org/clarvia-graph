@@ -2,7 +2,10 @@ import { type Metadata } from "next";
 import { type Lang, LANGUAGES, hreflangLanguages } from "@/lib/i18n";
 import Header from "@/components/Header";
 import HeroSection from "./sections/HeroSection";
+import HomeMissionSection from "./sections/HomeMissionSection";
+import HomeActionsSection from "./sections/HomeActionsSection";
 import TestimonialsSection from "./sections/TestimonialsSection";
+import LatestUpdatesSection from "./sections/LatestUpdatesSection";
 import FooterSection from "./sections/FooterSection";
 
 const BASE_URL = "https://clarvia.org";
@@ -72,7 +75,10 @@ export default async function LandingPage({
 
       <main id="main-content" className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         <HeroSection lang={lang} />
+        <HomeMissionSection lang={lang} />
+        <HomeActionsSection lang={lang} />
         <TestimonialsSection lang={lang} />
+        <LatestUpdatesSection lang={lang} omitAlphaHeadlines />
       </main>
 
       <FooterSection lang={lang} />

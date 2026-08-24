@@ -155,15 +155,13 @@ export default async function AboutPage({
               </h3>
               <div className="space-y-3 text-base text-calm-blue-600 leading-relaxed">
                 <p>
-                  {l(lang, "We operate a free public service at clarvia.org that provides families with a personalised, step-by-step checklist of administrative steps following a death. An early alpha version is already available for public use.", "Nous proposons, sur clarvia.org, un service public gratuit qui fournit aux familles une liste personnalisée et étape par étape des démarches administratives à effectuer après un décès. Une première version alpha est déjà accessible au public.", "Auf clarvia.org bieten wir einen kostenlosen öffentlichen Dienst an, der Familien eine personalisierte Schritt-für-Schritt-Checkliste für die administrativen Aufgaben nach einem Todesfall bereitstellt. Eine erste Alpha-Version ist bereits öffentlich nutzbar.", "Op clarvia.org bidde mir e gratis ëffentleche Service un, deen de Familljen eng personaliséiert Schrëtt-fir-Schrëtt-Checklëscht mat administrativen Demarchen nom Doudesfall gëtt. Eng fréi Alpha-Versioun ass schonn ëffentlech verfügbar.")}
-                </p>
-                <p>
-                  <Link href={`/${lang}/checklist`} className="text-calm-blue-700 font-medium hover:text-calm-blue-900 underline underline-offset-2 transition-colors">
-                    {l(lang, "Try the checklist →", "Essayer la checklist →", "Checkliste ausprobieren →", "Checklëscht ausprobéieren →")}
-                  </Link>
-                </p>
-                <p className="text-sm text-calm-blue-500">
-                  {l(lang, "The service is designed to protect family privacy: it does not collect, store, or share personal data.", "Le service est conçu pour protéger la vie privée des familles : il ne collecte, ne conserve et ne partage aucune donnée personnelle.", "Der Dienst ist so gestaltet, dass die Privatsphäre der Familien geschützt bleibt: Es werden keine personenbezogenen Daten erhoben, gespeichert oder weitergegeben.", "De Service ass esou opgebaut, datt d'Privatsphär vun de Famillje geschützt bleift: et gi keng perséinlech Donnéeë gesammelt, gespäichert oder weiderginn.")}
+                  {l(
+                    lang,
+                    "Luxembourg checklist. We are building a free, source-linked checklist of administrative steps after a death in Luxembourg. It is not the public entry point yet. Families should use Ask us.",
+                    "Checklist Luxembourg. Nous développons une checklist gratuite, accompagnée de liens vers les sources, qui présente les démarches administratives à effectuer après un décès au Luxembourg. Elle n’est pas encore destinée à servir de point d’entrée au public. Les familles doivent utiliser « Posez-nous votre question ».",
+                    "Luxemburg-Checkliste. Wir entwickeln eine kostenlose Checkliste mit Links zu den Quellen, die durch die Verwaltungsschritte nach einem Todesfall in Luxemburg führt. Sie ist noch nicht als öffentlicher Einstiegspunkt vorgesehen. Familien sollten „Fragen Sie uns“ nutzen.",
+                    "Lëtzebuerg-Checklëscht. Mir entwéckelen eng gratis Checklëscht mat Linken op d’Quellen, déi duerch déi administrativ Schrëtt no engem Doudesfall zu Lëtzebuerg féiert. Si ass nach net als ëffentlechen Zougangspunkt geduecht. Famillje sollen „Frot eis“ benotzen."
+                  )}
                 </p>
               </div>
             </div>

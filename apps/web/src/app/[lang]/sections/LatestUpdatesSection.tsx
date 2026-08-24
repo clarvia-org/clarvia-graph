@@ -11,8 +11,16 @@ function formatDate(dateStr: string, lang: Lang): string {
   );
 }
 
-export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
-  const latest = UPDATES.slice(0, 3);
+export default function LatestUpdatesSection({
+  lang,
+  omitAlphaHeadlines = false,
+}: {
+  lang: Lang;
+  omitAlphaHeadlines?: boolean;
+}) {
+  const latest = UPDATES.filter((update) =>
+    omitAlphaHeadlines ? !/alpha/i.test(update.headline.en) : true
+  ).slice(0, 3);
 
   return (
     <section className="py-16">
