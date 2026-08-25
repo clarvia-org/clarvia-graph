@@ -2,6 +2,7 @@ import Link from "next/link";
 import { type Lang, l } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 import { UPDATES } from "../updates/updates-data";
+import { FEATURED_UPDATE_DATES, FEATURED_UPDATE_SLUGS } from "@/content/featured-updates";
 
 function formatDate(dateStr: string, lang: Lang): string {
   const date = new Date(dateStr + "T00:00:00");
@@ -11,41 +12,31 @@ function formatDate(dateStr: string, lang: Lang): string {
   );
 }
 
-export default function LatestUpdatesSection({
-  lang,
-  omitAlphaHeadlines = false,
-}: {
-  lang: Lang;
-  omitAlphaHeadlines?: boolean;
-}) {
-  const latest = UPDATES.filter((update) =>
-    omitAlphaHeadlines ? !/alpha/i.test(update.headline.en) : true
-  ).slice(0, 3);
+export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
+  const featured = FEATURED_UPDATE_SLUGS.flatMap((slug) => {
+    const date = FEATURED_UPDATE_DATES[slug];
+    const update = UPDATES.find((entry) => entry.date === date);
+    return update ? [{ slug, update }] : [];
+  });
 
   return (
     <section className="py-16">
-      <h2
-        className="text-2xl sm:text-3xl font-semibold tracking-tight mb-8"
-        style={headlineStyle}
-      >
+      <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-8" style={headlineStyle}>
         {l(lang, "Latest", "Dernières nouvelles", "Aktuelles", "Neist")}
       </h2>
 
-      <div className="space-y-4">
-        {latest.map((update) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {featured.map(({ slug, update }) => (
           <Link
-            key={update.date}
-            href={`/${lang}/updates`}
-            className="flex items-baseline gap-4 group py-3 px-4 -mx-4 rounded-xl hover:bg-white/40 transition-colors"
+            key={slug}
+            href={`/${lang}/updates/${slug}`}
+            className="glass-panel p-5 hover:shadow-md transition-shadow"
           >
-            <time
-              dateTime={update.date}
-              className="text-xs font-medium text-calm-blue-400 whitespace-nowrap min-w-[90px] tabular-nums"
-            >
+            <time dateTime={update.date} className="text-xs font-medium text-calm-blue-400 tabular-nums">
               {formatDate(update.date, lang)}
             </time>
-            <span className="text-base text-calm-blue-700 font-medium group-hover:text-calm-blue-900 transition-colors leading-snug">
-              {update.headline[lang]}
+            <span className="block mt-2 text-base text-calm-blue-800 font-medium leading-snug">
+              {update.headline[lang] || update.headline.en}
             </span>
           </Link>
         ))}
@@ -56,7 +47,9 @@ export default function LatestUpdatesSection({
         className="inline-flex items-center gap-1.5 mt-6 text-sm font-medium text-calm-blue-600 hover:text-calm-blue-800 transition-colors group"
       >
         {l(lang, "View all updates", "Voir toutes les actualités", "Alle Neuigkeiten anzeigen", "All Neiegkeeten uweisen")}
-        <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+        <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">
+          &rarr;
+        </span>
       </Link>
     </section>
   );

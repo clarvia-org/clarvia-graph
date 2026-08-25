@@ -29,6 +29,22 @@ export function l(lang: Lang, en: string, fr: string, de: string, lu?: string): 
   return lang === "fr" ? fr : lang === "de" ? de : en;
 }
 
+/** Stage 1 new copy: English on every locale until translations are added. */
+export function s1(en: string): string {
+  return en;
+}
+
+/** hreflang only for locales whose page body is actually translated. */
+export function hreflangForLocales(pathAfterLang: string, locales: readonly Lang[]): Record<string, string> {
+  const suffix = pathAfterLang ? `/${pathAfterLang}` : "";
+  const languages: Record<string, string> = {};
+  for (const code of locales) {
+    languages[code === "lu" ? "lb" : code] = `${SITE_URL}/${code}${suffix}`;
+  }
+  languages["x-default"] = `${SITE_URL}/en${suffix}`;
+  return languages;
+}
+
 const SITE_URL = "https://clarvia.org";
 
 export type AdsCampaignKind = "ask" | "support";

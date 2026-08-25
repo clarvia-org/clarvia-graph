@@ -1,37 +1,17 @@
 import { type Metadata } from "next";
-import { type Lang, LANGUAGES, hreflangLanguages } from "@/lib/i18n";
+import { type Lang, LANGUAGES, s1 } from "@/lib/i18n";
+import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
+import MissionHero from "./sections/MissionHero";
+import ProgramCardsSection from "./sections/ProgramCardsSection";
 import HeroSection from "./sections/HeroSection";
+import GuidancePreviewSection from "./sections/GuidancePreviewSection";
 import HomeMissionSection from "./sections/HomeMissionSection";
-import HomeActionsSection from "./sections/HomeActionsSection";
+import HowTrustWorksSection from "./sections/HowTrustWorksSection";
+import OrgSupportSection from "./sections/OrgSupportSection";
 import TestimonialsSection from "./sections/TestimonialsSection";
 import LatestUpdatesSection from "./sections/LatestUpdatesSection";
 import FooterSection from "./sections/FooterSection";
-
-const BASE_URL = "https://clarvia.org";
-
-const HOME_META: Record<Lang, { title: string; description: string }> = {
-  en: {
-    title: "Not sure what to do when a loved one is terminally ill or has died? — Clarvia",
-    description:
-      "Free, source-linked guidance from a terminal diagnosis through the practical questions that can arise years after a death.",
-  },
-  fr: {
-    title: "Vous ne savez pas quoi faire lorsqu’un proche est en phase terminale ou est décédé ? | Clarvia",
-    description:
-      "Des informations pratiques gratuites, accompagnées de leurs sources, depuis le diagnostic d’une maladie en phase terminale jusqu’aux questions qui peuvent encore se poser des années après un décès.",
-  },
-  de: {
-    title: "Sie wissen nicht, was zu tun ist, wenn ein geliebter Mensch unheilbar krank ist oder verstorben ist? | Clarvia",
-    description:
-      "Kostenlose Orientierung mit Links zu den Quellen, von der Diagnose einer unheilbaren Erkrankung bis zu praktischen Fragen, die noch Jahre nach einem Todesfall auftreten können.",
-  },
-  lu: {
-    title: "Wësst Dir net, wat Dir maache sollt, wann eng Persoun, déi Iech nosteet, onheelbar krank ass oder gestuerwen ass? | Clarvia",
-    description:
-      "Gratis praktesch Orientéierung mat Linken op d’Quellen, vun der Diagnos vun enger onheelbarer Krankheet bis bei Froen, déi nach Joren no engem Doudesfall opkomme kënnen.",
-  },
-};
 
 export async function generateMetadata({
   params,
@@ -40,25 +20,14 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang: rawLang } = await params;
   const lang = (LANGUAGES.includes(rawLang as Lang) ? rawLang : "en") as Lang;
-  const meta = HOME_META[lang];
-
-  return {
-    title: meta.title,
-    description: meta.description,
-    alternates: {
-      canonical: `${BASE_URL}/${lang}`,
-      languages: hreflangLanguages(),
-    },
-    openGraph: {
-      title: meta.title,
-      description: meta.description,
-      url: `${BASE_URL}/${lang}`,
-      siteName: "Clarvia",
-      locale: lang,
-      type: "website",
-      images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630 }],
-    },
-  };
+  return pageMetadata({
+    lang,
+    pathAfterLang: "",
+    title: s1("Clear next steps after someone dies. — Clarvia"),
+    description: s1(
+      "Free, source-linked bereavement guidance from Clarvia ASBL. Ask Clarvia, read published guides, or use the checklist."
+    ),
+  });
 }
 
 export default async function LandingPage({
@@ -74,11 +43,15 @@ export default async function LandingPage({
       <Header lang={lang} />
 
       <main id="main-content" className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+        <MissionHero lang={lang} />
+        <ProgramCardsSection lang={lang} />
         <HeroSection lang={lang} />
+        <GuidancePreviewSection lang={lang} />
         <HomeMissionSection lang={lang} />
-        <HomeActionsSection lang={lang} />
+        <HowTrustWorksSection lang={lang} />
+        <OrgSupportSection lang={lang} />
         <TestimonialsSection lang={lang} />
-        <LatestUpdatesSection lang={lang} omitAlphaHeadlines />
+        <LatestUpdatesSection lang={lang} />
       </main>
 
       <FooterSection lang={lang} />

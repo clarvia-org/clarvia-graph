@@ -12,7 +12,7 @@ export default function HomeMissionSection({ lang }: { lang: Lang }) {
       >
         {l(
           lang,
-          "A free public service from Clarvia ASBL",
+          "Why Clarvia exists",
           "Un service gratuit d’intérêt général proposé par Clarvia ASBL",
           "Ein kostenloses gemeinnütziges Angebot von Clarvia ASBL",
           "E gratis Service am Déngscht vun der Allgemengheet vu Clarvia ASBL"
