@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { type Lang, l, LANGUAGES, hreflangLanguages } from "@/lib/i18n";
+import { type Lang, l, LANGUAGES, hreflangLanguages, s1 } from "@/lib/i18n";
 import Header from "@/components/Header";
 import { headlineStyle } from "../data";
 import FooterSection from "../sections/FooterSection";
@@ -128,7 +128,7 @@ export default async function AboutPage({
             {/* Program 1 */}
             <div className="glass-panel p-6">
               <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
-                {l(lang, "1. Ask Clarvia", "1. Demandez à Clarvia", "1. Clarvia fragen", "1. Frot Clarvia")}
+                {s1("1. Ask Clarvia")}
               </h3>
               <div className="space-y-3 text-base text-calm-blue-600 leading-relaxed">
                 <p>
@@ -148,42 +148,40 @@ export default async function AboutPage({
               </div>
             </div>
 
-            {/* Program 2 */}
             <div className="glass-panel p-6">
-              <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
-                {l(lang, "2. Bereavement Guidance Service", "2. Service d'accompagnement après un décès", "2. Orientierungshilfe nach einem Todesfall", "2. Begleedung nom Doudesfall")}
-              </h3>
-              <div className="space-y-3 text-base text-calm-blue-600 leading-relaxed">
-                <p>
-                  {l(
-                    lang,
-                    "Luxembourg checklist. We are building a free, source-linked checklist of administrative steps after a death in Luxembourg. It is not the public entry point yet. Families should use Ask us.",
-                    "Checklist Luxembourg. Nous développons une checklist gratuite, accompagnée de liens vers les sources, qui présente les démarches administratives à effectuer après un décès au Luxembourg. Elle n’est pas encore destinée à servir de point d’entrée au public. Les familles doivent utiliser « Posez-nous votre question ».",
-                    "Luxemburg-Checkliste. Wir entwickeln eine kostenlose Checkliste mit Links zu den Quellen, die durch die Verwaltungsschritte nach einem Todesfall in Luxemburg führt. Sie ist noch nicht als öffentlicher Einstiegspunkt vorgesehen. Familien sollten „Fragen Sie uns“ nutzen.",
-                    "Lëtzebuerg-Checklëscht. Mir entwéckelen eng gratis Checklëscht mat Linken op d’Quellen, déi duerch déi administrativ Schrëtt no engem Doudesfall zu Lëtzebuerg féiert. Si ass nach net als ëffentlechen Zougangspunkt geduecht. Famillje sollen „Frot eis“ benotzen."
-                  )}
-                </p>
-              </div>
+              <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">{s1("2. Published guidance")}</h3>
+              <p className="text-base text-calm-blue-600 leading-relaxed mb-3">
+                {s1(
+                  "Families can read source-linked guides organised by country, and use the bereavement checklist, which turns reviewed task data into a practical list evaluated in the visitor's browser. If a guide or task does not match the country or facts, use Ask Clarvia."
+                )}
+              </p>
+              <Link href={`/${lang}/guidance`} className="text-calm-blue-700 font-medium underline">
+                {s1("Browse guidance →")}
+              </Link>
             </div>
 
-            {/* Program 3 */}
             <div className="glass-panel p-6">
-              <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
-                {l(lang, "3. Government Source Registry", "3. Registre des sources officielles", "3. Register offizieller Quellen", "3. Register vun offiziellen Quellen")}
-              </h3>
-              <p className="text-base text-calm-blue-600 leading-relaxed">
-                {l(lang, "Every administrative step in our checklists is mapped back to its official government source. We maintain a structured, openly licensed registry of these sources so that families and professionals can verify the accuracy of every recommendation.", "Chaque démarche administrative figurant dans nos checklists est reliée à sa source gouvernementale officielle. Nous maintenons un registre structuré, publié sous licence ouverte, afin que les familles et les professionnels puissent vérifier l'exactitude de chaque recommandation.", "Jeder administrative Schritt in unseren Checklisten ist mit der jeweiligen offiziellen staatlichen Quelle verknüpft. Wir pflegen ein strukturiertes Register dieser Quellen unter einer offenen Lizenz, damit Familien und Fachpersonen die Genauigkeit jeder Empfehlung überprüfen können.", "All administrativen Schrëtt an eise Checklëschte gëtt op seng offiziell staatlech Quell zeréckgefouert. Mir féieren e strukturéierten, oppen lizenzéierte Register vun dëse Quellen, fir datt Familljen a Fachleit d'Genauegkeet vun all Recommandatioun iwwerpréiwe kënnen.")}
+              <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">{s1("3. How answers are sourced")}</h3>
+              <p className="text-base text-calm-blue-600 leading-relaxed mb-3">
+                {s1(
+                  "Clarvia publishes how official sources, maintained legislation, human review, and AI are used for Ask Clarvia and for guidance pages, including where those methods differ."
+                )}
               </p>
+              <Link href={`/${lang}/how-it-works`} className="text-calm-blue-700 font-medium underline">
+                {s1("How it works →")}
+              </Link>
             </div>
 
-            {/* Program 4 */}
             <div className="glass-panel p-6">
-              <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
-                {l(lang, "4. Cross-Border Support", "4. Accompagnement transfrontalier", "4. Grenzüberschreitende Unterstützung", "4. Grenziwwerschreidend Ënnerstëtzung")}
-              </h3>
-              <p className="text-base text-calm-blue-600 leading-relaxed">
-                {l(lang, "Our initial focus is Luxembourg, but we extend into critical cross-border corridors, including France, Germany, Belgium, and Portugal, to support migrant workers and cross-border families who face obligations in more than one country.", "Notre premier champ d'action est le Luxembourg, mais nous couvrons également les principaux contextes transfrontaliers, notamment avec la France, l'Allemagne, la Belgique et le Portugal, afin d'aider les travailleurs migrants et les familles concernées par des obligations dans plusieurs pays.", "Unser erster Schwerpunkt liegt auf Luxemburg. Gleichzeitig berücksichtigen wir wichtige grenzüberschreitende Situationen, insbesondere mit Frankreich, Deutschland, Belgien und Portugal, um Grenzgängerinnen und Grenzgänger, Migrantinnen und Migranten sowie Familien zu unterstützen, die Pflichten in mehr als einem Land erfüllen müssen.", "Eise Startpunkt ass Lëtzebuerg. Gläichzäiteg berécksiichtege mir wichteg grenziwwerschreidend Situatiounen, ënner anerem mat Frankräich, Däitschland, der Belsch a Portugal, fir Migrantenaarbechter a grenziwwerschreidend Familljen z'ënnerstëtzen, déi Obligatiounen a méi wéi engem Land hunn.")}
+              <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">{s1("4. For institutions")}</h3>
+              <p className="text-base text-calm-blue-600 leading-relaxed mb-3">
+                {s1(
+                  "Clarvia publishes open, source-backed guidance infrastructure that public-interest teams can inspect, reuse, and adapt."
+                )}
               </p>
+              <Link href={`/${lang}/for-institutions`} className="text-calm-blue-700 font-medium underline">
+                {s1("Explore reuse →")}
+              </Link>
             </div>
           </div>
         </section>
@@ -285,50 +283,14 @@ export default async function AboutPage({
             className="text-2xl font-semibold text-calm-blue-800 mb-4"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
-            {l(lang, "How it works", "Comment ça fonctionne", "So funktioniert es", "Wéi et funktionéiert")}
+            {s1("How it works")}
           </h2>
-          <ul className="space-y-4">
-            {([
-              {
-                en: "Structured workflow data from official sources",
-                fr: "Données de workflow structurées à partir de sources officielles",
-                de: "Strukturierte Workflow-Daten aus offiziellen Quellen",
-                en_d: "Every administrative step, deadline, and document requirement is extracted directly from official government sources and encoded in a validated, open data model.",
-                fr_d: "Chaque démarche administrative, délai et exigence documentaire est extrait directement de sources gouvernementales officielles et encodé dans un modèle de données ouvert et validé.",
-                de_d: "Jeder Verwaltungsschritt, jede Frist und jede Dokumentenanforderung wird direkt aus offiziellen Regierungsquellen entnommen und in einem validierten, offenen Datenmodell erfasst.",
-              },
-              {
-                en: "Multilingual checklists from verified data",
-                fr: "Listes de démarches multilingues issues de données vérifiées",
-                de: "Mehrsprachige Checklisten aus verifizierten Daten",
-                en_d: "The guidance families receive is generated from verified data, available in English, French, and German to reflect Luxembourg's multilingual reality.",
-                fr_d: "L'accompagnement fourni aux familles est généré à partir de données vérifiées, disponibles en anglais, français et allemand pour refléter la réalité multilingue du Luxembourg.",
-                de_d: "Die Orientierung für Familien wird aus verifizierten Daten generiert, verfügbar auf Englisch, Französisch und Deutsch, um der mehrsprachigen Realität Luxemburgs gerecht zu werden.",
-              },
-              {
-                en: "Open-source infrastructure designed for Europe",
-                fr: "Infrastructure open source conçue pour l'Europe",
-                de: "Open-Source-Infrastruktur für Europa",
-                en_d: "Everything Clarvia builds, including the data model, validation logic, and publishing layer, is open source and designed to be reused across European jurisdictions.",
-                fr_d: "Tout ce que Clarvia construit - le modèle de données, la logique de validation et la couche de publication - est open source et conçu pour être réutilisé dans d'autres juridictions européennes.",
-                de_d: "Alles, was Clarvia aufbaut - das Datenmodell, die Validierungslogik und die Veröffentlichungsschicht - ist Open Source und für die Wiederverwendung in europäischen Rechtsordnungen konzipiert.",
-              },
-            ] as const).map((item) => (
-              <li
-                key={item.en}
-                className="flex gap-4 p-4 rounded-xl bg-white/40 border border-calm-blue-100"
-              >
-                <div>
-                  <p className="font-semibold text-calm-blue-800 mb-1">
-                    {l(lang, item.en, item.fr, item.de)}
-                  </p>
-                  <p className="text-sm text-calm-blue-500">
-                    {l(lang, item.en_d, item.fr_d, item.de_d)}
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <p className="text-base text-calm-blue-600 leading-relaxed">
+            {s1("See How it works for sourcing, human review, AI, and privacy.")}{" "}
+            <Link href={`/${lang}/how-it-works`} className="font-medium underline text-calm-blue-700">
+              {s1("How it works →")}
+            </Link>
+          </p>
         </section>
 
         {/* ═══ Governance & Transparency ═══ */}

@@ -1,13 +1,10 @@
 "use client";
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { type Lang, l } from "@/lib/i18n";
+import { type Lang, l, s1 } from "@/lib/i18n";
 import { headlineStyle } from "../data";
-import FooterSection from "../sections/FooterSection";
-import Header from "@/components/Header";
-import Image from "next/image";
 
 /* ── Types ── */
 interface IntakeQuestion {
@@ -292,60 +289,7 @@ export default function ChecklistPage() {
   const [items, setItems] = useState<ChecklistItem[]>([]);
   const [unknownQuestions, setUnknownQuestions] = useState<IntakeQuestion[]>([]);
   const [loading, setLoading] = useState(true);
-  const [lightboxOpen, setLightboxOpen] = useState(false);
-  const lightboxDialogRef = useRef<HTMLDivElement>(null);
-  const lightboxTriggerRef = useRef<HTMLButtonElement>(null);
 
-  const imgLang = lang === "lu" ? "fr" : lang;
-  const previewThumb = `/checklist-preview-${imgLang}-thumb-v2.jpg`;
-  const previewFull = `/checklist-preview-${imgLang}-v2.jpg`;
-
-  useEffect(() => {
-    if (!lightboxOpen) return;
-
-    const dialog = lightboxDialogRef.current;
-    if (!dialog) return;
-
-    const focusable = dialog.querySelectorAll<HTMLElement>(
-      'button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    );
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-    const focusFrame = requestAnimationFrame(() => first?.focus());
-
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        event.preventDefault();
-        setLightboxOpen(false);
-        return;
-      }
-
-      if (event.key !== "Tab" || focusable.length === 0) return;
-
-      if (!dialog.contains(document.activeElement)) {
-        event.preventDefault();
-        (event.shiftKey ? last : first)?.focus();
-        return;
-      }
-
-      if (event.shiftKey && document.activeElement === first) {
-        event.preventDefault();
-        last?.focus();
-      } else if (!event.shiftKey && document.activeElement === last) {
-        event.preventDefault();
-        first?.focus();
-      }
-    };
-
-    document.addEventListener("keydown", handleKeyDown);
-    return () => {
-      cancelAnimationFrame(focusFrame);
-      document.removeEventListener("keydown", handleKeyDown);
-      lightboxTriggerRef.current?.focus();
-    };
-  }, [lightboxOpen]);
-
-  // Load data
   useEffect(() => {
     Promise.all([
       fetch("/data/clarvia/intake/bereavement.json").then((r) => r.json()),
@@ -495,166 +439,43 @@ export default function ChecklistPage() {
     setStep("results");
   }, [runtime, intake, answers]);
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-calm-blue-500 animate-pulse">
-          {l(lang, "Loading…", "Chargement…", "Wird geladen…", "Lued…")}
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <>
-      <Header lang={lang} />
+    <div className="max-w-2xl mx-auto">
+      <h2 className="text-2xl font-semibold tracking-tight mb-2" style={headlineStyle}>
+        {s1("Start the checklist")}
+      </h2>
+      {loading ? (
+        <p className="text-calm-blue-500">
+          {l(lang, "Loading the questions…", "Chargement…", "Wird geladen…", "Lued…")}
+        </p>
+      ) : null}
 
-      <main id="main-content" className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-8 relative z-10">
-        {/* ═══ Alpha banner + Preview side by side ═══ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10 items-start">
-          {/* Alpha prototype notice */}
-          <div className="p-4 rounded-xl border-2 border-amber-300 bg-amber-50/80 backdrop-blur-sm">
-            <div className="flex items-start gap-3">
-              <span className="text-xl mt-0.5">⚠️</span>
-              <div className="space-y-3">
-                <div>
-                  <p className="font-bold text-amber-950 text-sm">
-                    {l(lang, "Alpha Prototype - Not Legal Advice", "Prototype Alpha - Ceci n'est pas un avis juridique", "Alpha-Prototyp - Keine Rechtsberatung", "Alpha-Prototyp – keng juristesch Berodung")}
-                  </p>
-                  <p className="text-amber-900 text-xs mt-1 leading-relaxed">
-                    {l(lang, "This is an early alpha prototype of the Clarvia Bereavement Checklist, provided for testing and demonstration only. It dynamically pulls content from the open-source clarvia-graph repository (https://github.com/clarvia-org/clarvia-graph) on GitHub. No sensitive or personal data is included.", "Il s'agit d'un premier prototype alpha de la liste de contrôle de deuil Clarvia, fourni uniquement à des fins de test et de démonstration. Il récupère dynamiquement le contenu du dépôt open-source clarvia-graph (https://github.com/clarvia-org/clarvia-graph) sur GitHub. Aucune donnée sensible ou personnelle n'est incluse.", "Dies ist ein früher Alpha-Prototyp der Clarvia-Trauer-Checkliste, der nur zu Test- und Demonstrationszwecken bereitgestellt wird. Er lädt Inhalte dynamisch aus dem Open-Source-Repository clarvia-graph (https://github.com/clarvia-org/clarvia-graph) auf GitHub. Es sind keine sensiblen oder persönlichen Daten enthalten.", "Dëst ass en éischten Alpha-Prototyp vun der Clarvia-Checklëscht am Trauerfall, nëmme fir Test- an Demonstratiounszwecker. En zitt den Inhalt dynamesch aus dem Open-Source-Repository clarvia-graph (https://github.com/clarvia-org/clarvia-graph) op GitHub. Keng sensibel oder perséinlech Donnéeë sinn enthalen.")}
-                  </p>
-                </div>
+      {step === "intake" && intake && (
+        <IntakeWizard
+          lang={lang}
+          questions={intake.questions}
+          answers={answers}
+          onAnswer={(qId, value) =>
+            setAnswers((prev) => ({ ...prev, [qId]: value }))
+          }
+          onGenerate={generateChecklist}
+        />
+      )}
 
-                <div>
-                  <p className="font-semibold text-amber-950 text-xs">
-                    {l(lang, "Standards & Licenses", "Normes & Licences", "Standards & Lizenzen", "Standarden & Lizenzen")}
-                  </p>
-                  <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
-                    {l(lang, "Uses native schemas compatible with: CPSV-AP, CCCEV, ELI (planned), PROV-O (planned). Licenses: Code & tooling - EUPL-1.2; Graph data - CC-BY-4.0; Schemas & vocabularies - CC0 or Apache-2.0.", "Utilise des schémas natifs compatibles avec : CPSV-AP, CCCEV, ELI (prévu), PROV-O (prévu). Licences : Code & outils - EUPL-1.2 ; Données du graphe - CC-BY-4.0 ; Schémas & vocabulaires - CC0 ou Apache-2.0.", "Verwendet native Schemata, die kompatibel sind mit: CPSV-AP, CCCEV, ELI (geplant), PROV-O (geplant). Lizenzen: Code & Werkzeuge - EUPL-1.2; Graphendaten - CC-BY-4.0; Schemata & Vokabulare - CC0 oder Apache-2.0.", "Benotzt natierlech Schemata, déi kompatibel si mat: CPSV-AP, CCCEV, ELI (geplangt), PROV-O (geplangt). Lizenzen: Code & Tools - EUPL-1.2; Graph-Donnéeën - CC-BY-4.0; Schemata & Vokabulairen - CC0 oder Apache-2.0.")}
-                  </p>
-                </div>
-
-                <div>
-                  <p className="font-semibold text-amber-950 text-xs">
-                    {l(lang, "Important", "Important", "Wichtig", "Wichteg")}
-                  </p>
-                  <p className="text-amber-900 text-xs mt-0.5 leading-relaxed">
-                    {l(lang, "For informational purposes only. Not legal, tax, or professional advice. Always consult qualified professionals. Data provided \"as is\" with no warranties.", "Uniquement à des fins d'information. Ceci ne constitue pas un conseil juridique, fiscal ou professionnel. Consultez toujours des professionnels qualifiés. Données fournies « en l'état » sans aucune garantie.", "Nur zu Informationszwecken. Keine Rechts-, Steuer- oder sonstige Fachberatung. Konsultieren Sie immer qualifizierte Fachleute. Die Daten werden ohne Mängelgewähr und ohne Gewährleistungen bereitgestellt.", "Nëmme fir Informatiounszwecker. Keng juristesch, steierlech oder professionell Berodung. Consultéiert ëmmer qualifizéiert Fachleit. D'Donnéeë ginn \"wéi se sinn\" geliwwert, ouni Garantie.")}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Checklist preview card */}
-          <div className="glass-panel p-4 sm:p-5 rounded-xl">
-            <div className="text-sm font-semibold mb-2" style={{ color: "#2b3a67" }}>
-              {l(lang, "A preview of what we're building", "Ce que la liste de démarches est conçue pour devenir", "Wie die Checkliste aussehen soll", "Wéi d'Checklëscht soll ausgesinn")}
-            </div>
-            <p className="text-[11px] text-calm-blue-500 leading-relaxed mb-3">
-              {l(lang, "This image shows the kind of step-by-step guidance Clarvia is working towards. It is not a finished product — the content, design, and features are still being developed and validated.", "L'image illustre le type d'accompagnement étape par étape que Clarvia travaille à offrir. Il ne s'agit pas d'un produit finalisé — le contenu, le design et les fonctionnalités sont encore en cours de développement et de validation.", "Das Bild zeigt, welche Art von schrittweiser Orientierung Clarvia entwickeln möchte. Es handelt sich nicht um ein fertiges Produkt — Inhalte, Design und Funktionen werden noch entwickelt und geprüft.", "D'Bild weist déi Zort Schrëtt-fir-Schrëtt-Orientéierung, un där Clarvia schafft. Et ass nach kee fäerdege Produit — Inhalt, Design a Funktioune ginn nach entwéckelt a validéiert.")}
-            </p>
-            <button
-              ref={lightboxTriggerRef}
-              type="button"
-              onClick={() => setLightboxOpen(true)}
-              className="group relative w-full rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 cursor-zoom-in border border-calm-blue-200/60"
-              aria-label={l(lang, "View full checklist preview", "Voir l'aperçu complet de la liste de démarches", "Vollständige Vorschau der Checkliste anzeigen", "Déi komplett Virschau vun der Checklëscht kucken")}
-            >
-              <Image
-                src={previewThumb}
-                alt={l(lang, "Illustrative preview of the Clarvia bereavement checklist for Luxembourg", "Aperçu illustratif de la liste de démarches Clarvia pour le Luxembourg", "Illustrative Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg", "Illustrativ Virschau vun der Clarvia-Checklëscht am Trauerfall fir Lëtzebuerg")}
-                width={600}
-                height={338}
-                className="w-full block"
-              />
-              <div className="absolute inset-0 bg-calm-blue-900/0 group-hover:bg-calm-blue-900/10 transition-colors duration-300 flex items-center justify-center">
-                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm text-calm-blue-700 text-xs font-medium px-3 py-1.5 rounded-full shadow-md">
-                  🔍 {l(lang, "Click to enlarge", "Cliquer pour agrandir", "Klicken zum Vergrößern", "Klicke fir ze vergréisseren")}
-                </span>
-              </div>
-              <span className="absolute top-2 right-2 bg-calm-lilac-100/90 backdrop-blur-sm text-calm-lilac-600 text-[10px] font-semibold px-2 py-0.5 rounded-full border border-calm-lilac-200/60 uppercase tracking-wider">
-                {l(lang, "Illustrative", "Illustratif", "Illustrativ", "Illustrativ")}
-              </span>
-            </button>
-          </div>
-        </div>
-
-        {/* ── Lightbox ── */}
-        {lightboxOpen && (
-          <div
-            ref={lightboxDialogRef}
-            className="fixed inset-0 z-[9999] bg-black/70 backdrop-blur-sm flex items-start justify-center overflow-y-auto"
-            onClick={() => setLightboxOpen(false)}
-            role="dialog"
-            aria-modal="true"
-            aria-label={l(lang, "Checklist preview", "Aperçu de la liste de démarches", "Vorschau der Checkliste", "Virschau vun der Checklëscht")}
-          >
-            <button
-              type="button"
-              onClick={() => setLightboxOpen(false)}
-              className="fixed top-4 right-4 z-[10000] bg-white/90 backdrop-blur-sm text-calm-blue-700 w-10 h-10 rounded-full flex items-center justify-center shadow-lg hover:bg-white transition-colors text-xl font-bold"
-              aria-label={l(lang, "Close", "Fermer", "Schließen", "Zoumaachen")}
-            >
-              ✕
-            </button>
-            <div className="fixed top-4 left-4 z-[10000] bg-calm-lilac-100/95 backdrop-blur-sm text-calm-lilac-600 text-xs sm:text-sm font-medium px-4 py-2 rounded-full border border-calm-lilac-200/60 shadow-sm">
-              {l(lang, "Illustrative preview — not a finished product", "Aperçu illustratif — il ne s'agit pas d'un produit finalisé", "Illustrative Vorschau — kein fertiges Produkt", "Illustrativ Virschau — nach kee fäerdege Produit")}
-            </div>
-            <Image
-              src={previewFull}
-              alt={l(lang, "Full preview of the Clarvia bereavement checklist for Luxembourg", "Aperçu complet de la liste de démarches Clarvia pour le Luxembourg", "Vollständige Vorschau der Clarvia-Checkliste im Trauerfall für Luxemburg", "Komplett Virschau vun der Clarvia-Checklëscht am Trauerfall fir Lëtzebuerg")}
-              width={1200}
-              height={7446}
-              className="max-w-4xl w-full my-16 mx-4 rounded-xl shadow-2xl"
-              onClick={(e) => e.stopPropagation()}
-            />
-          </div>
-        )}
-
-        {/* ═══ Checklist content (centered, narrower) ═══ */}
-        <div className="max-w-2xl mx-auto">
-          <h1
-            className="text-3xl sm:text-4xl font-semibold tracking-tight mb-2"
-            style={headlineStyle}
-          >
-            {l(lang, "Bereavement Checklist", "Liste de démarches en cas de décès", "Checkliste im Trauerfall", "Checklëscht am Trauerfall")}
-          </h1>
-          <p className="text-calm-blue-500 text-sm mb-8">
-            {l(lang, "Answer a few questions and we'll show you the steps that apply to your situation.", "Répondez à quelques questions pour obtenir une liste personnalisée de démarches administratives.", "Beantworten Sie einige Fragen, um eine personalisierte Liste der Verwaltungsschritte zu erhalten.", "Beäntwert e puer Froen, fir eng personaliséiert Lëscht vun administrativen Démarchen ze kréien.")}
-          </p>
-
-        {step === "intake" && intake && (
-          <IntakeWizard
-            lang={lang}
-            questions={intake.questions}
-            answers={answers}
-            onAnswer={(qId, value) =>
-              setAnswers((prev) => ({ ...prev, [qId]: value }))
-            }
-            onGenerate={generateChecklist}
-          />
-        )}
-
-        {step === "results" && (
-          <ChecklistResults
-            lang={lang}
-            items={items}
-            unknownQuestions={unknownQuestions}
-            onReset={() => {
-              setStep("intake");
-              setAnswers({});
-              setItems([]);
-              setUnknownQuestions([]);
-            }}
-          />
-        )}
-        </div>{/* end max-w-2xl centering wrapper */}
-      </main>
-
-      <FooterSection lang={lang} />
-    </>
+      {step === "results" && (
+        <ChecklistResults
+          lang={lang}
+          items={items}
+          unknownQuestions={unknownQuestions}
+          onReset={() => {
+            setStep("intake");
+            setAnswers({});
+            setItems([]);
+            setUnknownQuestions([]);
+          }}
+        />
+      )}
+    </div>
   );
 }
 
@@ -891,7 +712,7 @@ function ChecklistResults({
       {items.length === 0 && unknownQuestions.length === 0 && (
         <div className="glass-panel p-8 rounded-xl text-center">
           <p className="text-calm-blue-500 text-sm">
-            {l(lang, "Nothing in the checklist matches your answers. This is an early prototype and its coverage is still very limited, so there may be steps it does not know about yet.", "Aucun élément ne correspond à votre situation sur la base des réponses fournies. Cela peut être dû à la couverture très limitée du prototype alpha.", "Keine Einträge passen zu Ihrer Situation basierend auf den gegebenen Antworten. Dies kann daran liegen, dass der Alpha-Prototyp eine sehr begrenzte Abdeckung hat.", "Keng Elementer passen op Basis vun den uginnene Äntwerten zu Ärer Situatioun. Dat kann dorunner leien, datt den Alpha-Prototyp nach eng ganz limitéiert Ofdeckung huet.")}
+            {s1("Nothing in the published task list matches your answers. If the country or facts do not match, use Ask Clarvia.")}
           </p>
         </div>
       )}

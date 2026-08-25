@@ -187,28 +187,14 @@ export default function HeroSection({ lang }: { lang: Lang }) {
 
   return (
     <>
-      <section className="text-center py-12 sm:py-20">
-        <h1
-          className="text-3xl sm:text-5xl lg:text-6xl font-semibold tracking-tight mb-6 drop-shadow-sm max-w-4xl mx-auto"
+      <section className="text-center py-8 sm:py-12 mb-16" aria-labelledby="ask-heading">
+        <h2
+          id="ask-heading"
+          className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4"
           style={headlineStyle}
         >
-          {l(
-            lang,
-            "Not sure what to do when a loved one is terminally ill or has died?",
-            "Vous ne savez pas quoi faire lorsqu’un proche est en phase terminale ou est décédé ?",
-            "Sie wissen nicht, was zu tun ist, wenn ein geliebter Mensch unheilbar krank ist oder verstorben ist?",
-            "Wësst Dir net, wat Dir maache sollt, wann eng Persoun, déi Iech nosteet, onheelbar krank ass oder gestuerwen ass?"
-          )}
-        </h1>
-        <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-4">
-          {l(
-            lang,
-            "Free, source-linked guidance from a terminal diagnosis through the practical questions that can arise years after a death.",
-            "Des informations pratiques gratuites, accompagnées de leurs sources, depuis le diagnostic d’une maladie en phase terminale jusqu’aux questions qui peuvent encore se poser des années après un décès.",
-            "Kostenlose Orientierung mit Links zu den Quellen, von der Diagnose einer unheilbaren Erkrankung bis zu praktischen Fragen, die noch Jahre nach einem Todesfall auftreten können.",
-            "Gratis praktesch Orientéierung mat Linken op d’Quellen, vun der Diagnos vun enger onheelbarer Krankheet bis bei Froen, déi nach Joren no engem Doudesfall opkomme kënnen."
-          )}
-        </p>
+          {l(lang, "Ask Clarvia", "Demandez à Clarvia", "Clarvia fragen", "Frot Clarvia")}
+        </h2>
         <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-4">
           {l(
             lang,

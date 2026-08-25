@@ -3,18 +3,18 @@ import sitemap from "@/app/sitemap";
 import { ADS_FINAL_URLS, LANGUAGE_REDIRECTS, hreflangLanguages } from "@/lib/i18n";
 
 describe("sitemap", () => {
-  it("includes an indexable contact page for every language", () => {
+  it("includes guidance, how-it-works, checklist, and guide URLs", () => {
     const urls = sitemap().map((entry) => entry.url);
-    expect(urls).toContain("https://clarvia.org/en/contact");
-    expect(urls).toContain("https://clarvia.org/fr/contact");
-    expect(urls).toContain("https://clarvia.org/de/contact");
-    expect(urls).toContain("https://clarvia.org/lu/contact");
+    expect(urls).toContain("https://clarvia.org/en/how-it-works");
+    expect(urls).toContain("https://clarvia.org/fr/guidance");
+    expect(urls).toContain("https://clarvia.org/en/checklist");
+    expect(urls).toContain(
+      "https://clarvia.org/en/guidance/lu/registering-a-death"
+    );
+    expect(urls).toContain("https://clarvia.org/en/updates/ask-clarvia-launches");
   });
 
-  it("sets hreflang x-default to the English URL", () => {
-    const home = sitemap().find((entry) => entry.url === "https://clarvia.org/en");
-    expect(home?.alternates?.languages?.["x-default"]).toBe("https://clarvia.org/en");
-
+  it("sets hreflang x-default to the English URL on translated pages", () => {
     const contact = sitemap().find((entry) => entry.url === "https://clarvia.org/en/contact");
     expect(contact?.alternates?.languages?.["x-default"]).toBe("https://clarvia.org/en/contact");
   });
