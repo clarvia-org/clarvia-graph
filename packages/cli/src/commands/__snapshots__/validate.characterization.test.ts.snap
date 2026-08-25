@@ -425,6 +425,11 @@ exports[`runValidate characterization against real graph > pins schema assignmen
     "valid": true,
   },
   {
+    "file": "graph/evidence_types/lu/identity_document_declarant.yml",
+    "schema": "evidence_type.schema.json",
+    "valid": true,
+  },
+  {
     "file": "graph/evidence_types/lu/livret_de_famille.yml",
     "schema": "evidence_type.schema.json",
     "valid": true,
@@ -910,8 +915,8 @@ exports[`runValidate characterization against real graph > pins schema assignmen
 exports[`runValidate characterization against real graph > pins total file count and pass/fail breakdown 1`] = `
 {
   "invalid": 0,
-  "total": 180,
-  "valid": 180,
+  "total": 181,
+  "valid": 181,
 }
 `;
 

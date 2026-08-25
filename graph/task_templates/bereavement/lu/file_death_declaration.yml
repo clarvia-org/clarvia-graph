@@ -27,17 +27,24 @@ evidence_requirements:
     - id: evidence_set.lu.bereavement.death_registration.file_death_declaration.standard
       operator: all
       evidence_type_refs:
+        - evidence_type.lu.identity_document_declarant
         - evidence_type.lu.medical_death_certificate
-        - evidence_type.lu.identity_document_deceased
-        - evidence_type.lu.livret_de_famille
 source_assertion_refs:
   - assertion.guichet_lu.bereavement.death_must_be_declared
   - assertion.guichet_lu.bereavement.declaration_within_24h
+  - assertion.guichet_lu.bereavement.who_may_declare
+  - assertion.guichet_lu.bereavement.declarant_identity_required
+  - assertion.guichet_lu.bereavement.medical_certificate_required
+  - assertion.guichet_lu.bereavement.family_book_if_possible
 rendering:
   checklist_group: immediate_formalities
   urgency_score: 100
   dependency_rank: 2
-  user_visible_caveat: Request 10–15 multilingual copies if available; commune copy fees still need municipality-level verification.
+  user_visible_caveat: >
+    If possible, also present the deceased person's family record book, a
+    certificate of identity, or another civil-status document (for example a
+    marriage certificate). Ask the commune which death-certificate extracts
+    are available and whether fees apply.
 dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
@@ -50,4 +57,4 @@ provenance:
   extracted_by: software.extractor.v0.1
   extracted_at: "2026-06-04T08:00:00Z"
   reviewed_by: reviewer.founder.001
-  reviewed_at: "2026-06-05T10:00:00Z"
+  reviewed_at: "2026-08-25T12:00:00Z"

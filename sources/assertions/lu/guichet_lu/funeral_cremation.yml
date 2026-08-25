@@ -5,7 +5,7 @@ assertions:
   schema_version: "0.1.0"
   claim_type: legal_scope
   claim_text: >-
-    A burial or deposit of ashes may take place only on the basis of written authorisation from the civil registrar of the commune where the death occurred.
+    A burial or laying of ashes can only be performed with the written authorisation of the civil registrar of the commune where the death occurred.
   claim_scope:
     jurisdiction: LU
     life_event: bereavement
@@ -25,7 +25,7 @@ assertions:
   schema_version: "0.1.0"
   claim_type: deadline
   claim_text: >-
-    The burial of a human body, and removal of remains for cremation, must take place no later than the 72nd hour after death unless an extension is granted.
+    The burial of a human body must take place between the 24th and the 72nd hour following the death. Further to a substantiated request, this time limit may be extended beyond the 72nd hour on production of a certificate issued by the medical examiner. This also applies for human remains that will be cremated. They may not be removed for cremation before the 24th hour, but must be removed before the 72nd hour.
   claim_scope:
     jurisdiction: LU
     life_event: bereavement
@@ -47,7 +47,7 @@ assertions:
   schema_version: "0.1.0"
   claim_type: procedural_step
   claim_text: >-
-    Cremation of a person who died in Luxembourg requires authorisation from the civil registrar of the place of death.
+    The cremation of a deceased person in Luxembourg can only take place with the authorisation of the civil registrar for the district in which the death occurred.
   claim_scope:
     jurisdiction: LU
     life_event: bereavement
@@ -67,7 +67,7 @@ assertions:
   schema_version: "0.1.0"
   claim_type: document_required
   claim_text: >-
-    For cremation, a medical certificate must attest that there is no sign or indication of violent death.
+    For cremation authorisation, a medical certificate must attest that there was no sign or indication of a violent death.
   claim_scope:
     jurisdiction: LU
     life_event: bereavement

@@ -17,7 +17,7 @@ describe("runCheckAnchors characterization", () => {
 
   it("pins the total result count", () => {
     // Will fail on first run — update with actual value
-    expect(results.length).toMatchInlineSnapshot(`82`);
+    expect(results.length).toMatchInlineSnapshot(`86`);
   });
 
   it("pins the error count", () => {
@@ -29,7 +29,7 @@ describe("runCheckAnchors characterization", () => {
     const notFound = results.filter((r) => !r.found).length;
     expect({ found, notFound }).toMatchInlineSnapshot(`
       {
-        "found": 82,
+        "found": 86,
         "notFound": 0,
       }
     `);
@@ -55,8 +55,12 @@ describe("runCheckAnchors characterization", () => {
         "assertion.guichet_lu.accept_renounce_succession.reflection_forty_days",
         "assertion.guichet_lu.accept_renounce_succession.renunciation_at_court_registry",
         "assertion.guichet_lu.bereavement.death_must_be_declared",
+        "assertion.guichet_lu.bereavement.declarant_identity_required",
         "assertion.guichet_lu.bereavement.declaration_within_24h",
+        "assertion.guichet_lu.bereavement.family_book_if_possible",
+        "assertion.guichet_lu.bereavement.medical_certificate_required",
         "assertion.guichet_lu.bereavement.survivor_pension_available",
+        "assertion.guichet_lu.bereavement.who_may_declare",
         "assertion.guichet_lu.bereavement_leave.employee_entitled_to_extraordinary_leave",
         "assertion.guichet_lu.bereavement_leave.employee_must_request_leave",
         "assertion.guichet_lu.bereavement_leave.first_degree_relative_three_days",

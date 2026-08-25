@@ -27,13 +27,19 @@ evidence_requirements:
         - evidence_type.global.identity_document
         - evidence_type.lu.acte_de_notoriete
 source_assertion_refs:
+  - assertion.lu.cssf_tracing_assets.cssf_not_competent_for_asset_tracing
   - assertion.lu.cssf_tracing_assets.heirs_contact_banks_directly
   - assertion.lu.cssf_tracing_assets.death_certificate_for_asset_search
+  - assertion.lu.cssf_tracing_assets.id_card_and_legal_document_for_asset_search
+  - assertion.lu.cssf_tracing_assets.representative_proxy_required
 rendering:
   checklist_group: estate_and_inheritance
   urgency_score: 75
   dependency_rank: 7
-  user_visible_caveat: Bank-freeze and fee details vary by institution; do not quote amounts until bank-specific official sources are captured.
+  user_visible_caveat: >
+    The CSSF lists a death certificate, a certified copy of the heir's identity
+    card, and a legal document evidencing their rights; a proxy if someone acts
+    for the heirs. Account handling, freezes, and fees vary by institution.
 dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
@@ -41,9 +47,9 @@ authoring_status: approved
 distribution_status: public_open
 record_valid_from: "2026-06-05"
 provenance:
-  derived_from_snapshot_ref: snapshot.guichet_lu.declaration_succession.2026_06_05
+  derived_from_snapshot_ref: snapshot.lu.cssf_tracing_assets.2026_06_10
   extraction_method: ai_assisted
   extracted_by: software.extractor.v0.1
   extracted_at: "2026-06-04T08:00:00Z"
   reviewed_by: reviewer.founder.001
-  reviewed_at: "2026-06-05T10:00:00Z"
+  reviewed_at: "2026-08-25T12:00:00Z"

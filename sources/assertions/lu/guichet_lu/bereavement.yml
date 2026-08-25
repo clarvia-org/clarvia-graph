@@ -5,8 +5,8 @@ assertions:
     schema_version: "0.1.0"
     claim_type: legal_scope
     claim_text: >
-      When a death occurs in Luxembourg, the family must declare the death to
-      the Bureau de l'état civil of the commune where the death took place.
+      When a death occurs in Luxembourg, it must be declared to the civil
+      registrar's office in the commune where it occurred.
     claim_scope:
       jurisdiction: LU
       life_event: bereavement
@@ -66,3 +66,89 @@ assertions:
       extraction_method: ai_assisted
       extracted_at: "2026-06-03T12:00:00Z"
 
+  - id: assertion.guichet_lu.bereavement.who_may_declare
+    schema_version: "0.1.0"
+    claim_type: procedural_step
+    claim_text: >
+      The death declaration can be carried out by a member of the deceased's
+      family, the funeral home appointed by the family, or any other person
+      authorised to do so.
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: death_registration
+    anchor:
+      selector_type: text_quote
+      text_quote: "funeral home appointed by the family"
+    source_tier: official_guidance
+    record_valid_from: "2026-08-25"
+    review_status: approved
+    confidence: high
+    provenance:
+      extraction_method: manual
+      extracted_at: "2026-08-25T12:00:00Z"
+
+  - id: assertion.guichet_lu.bereavement.declarant_identity_required
+    schema_version: "0.1.0"
+    claim_type: document_required
+    claim_text: >
+      The person making the declaration of death must present a valid identity
+      document.
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: death_registration
+    anchor:
+      selector_type: text_quote
+      text_quote: "a valid identity document"
+    source_tier: official_guidance
+    record_valid_from: "2026-08-25"
+    review_status: approved
+    confidence: high
+    provenance:
+      extraction_method: manual
+      extracted_at: "2026-08-25T12:00:00Z"
+
+  - id: assertion.guichet_lu.bereavement.medical_certificate_required
+    schema_version: "0.1.0"
+    claim_type: document_required
+    claim_text: >
+      The person making the declaration of death must present the medical
+      certificate attesting to the death.
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: death_registration
+    anchor:
+      selector_type: text_quote
+      text_quote: "medical certificate attesting"
+    source_tier: official_guidance
+    record_valid_from: "2026-08-25"
+    review_status: approved
+    confidence: high
+    provenance:
+      extraction_method: manual
+      extracted_at: "2026-08-25T12:00:00Z"
+
+  - id: assertion.guichet_lu.bereavement.family_book_if_possible
+    schema_version: "0.1.0"
+    claim_type: document_required
+    claim_text: >
+      If possible, the person making the declaration of death should also
+      present the deceased person's family record book, a certificate of
+      identity, or any document attesting to their civil status (for example a
+      marriage certificate).
+    claim_scope:
+      jurisdiction: LU
+      life_event: bereavement
+      domain: death_registration
+    anchor:
+      selector_type: text_quote
+      text_quote: "family record book"
+    source_tier: official_guidance
+    record_valid_from: "2026-08-25"
+    review_status: approved
+    confidence: high
+    provenance:
+      extraction_method: manual
+      extracted_at: "2026-08-25T12:00:00Z"
