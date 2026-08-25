@@ -2,9 +2,10 @@ id: deadline.lu.bereavement.death_registration.declaration_deadline
 schema_version: "0.1.0"
 title: "Declare death within 24 hours"
 description: >
-  A death occurring in Luxembourg must be declared to the Bureau de l'état civil
-  within 24 hours. In practice, hospitals and funeral homes often handle the
-  declaration, but the legal obligation rests with the family.
+  A death occurring in Luxembourg must be declared within 24 hours to the civil
+  registrar's office in the commune where it occurred. Guichet.lu states that
+  the procedure can be carried out by a member of the deceased's family, the
+  funeral home appointed by the family, or any other person authorised to do so.
 deadline_type: filing_deadline
 jurisdiction: LU
 life_event: bereavement
@@ -17,6 +18,7 @@ calculation:
   if_weekend_or_holiday: unknown
 source_assertion_refs:
   - assertion.guichet_lu.bereavement.declaration_within_24h
+  - assertion.guichet_lu.bereavement.who_may_declare
 record_valid_from: "2026-06-03"
 authoring_status: approved
 distribution_status: public_open

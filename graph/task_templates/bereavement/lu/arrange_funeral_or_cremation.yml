@@ -27,17 +27,22 @@ evidence_requirements:
       operator: all
       evidence_type_refs:
         - evidence_type.lu.burial_or_cremation_authorisation
-        - evidence_type.lu.cremation_intent_proof
-        - evidence_type.lu.non_violent_death_certificate
-        - evidence_type.lu.pacemaker_certificate
 source_assertion_refs:
   - assertion.guichet_lu.funeral_cremation.written_authorisation_required
   - assertion.guichet_lu.funeral_cremation.burial_or_cremation_before_72h
+  - assertion.guichet_lu.funeral_cremation.cremation_authorisation_required
+  - assertion.guichet_lu.funeral_cremation.cremation_medical_certificate_required
 rendering:
   checklist_group: immediate_formalities
   urgency_score: 95
   dependency_rank: 3
-  user_visible_caveat: "Burial/cremation is normally within 24\u201372 hours; extensions need a m\u00E9decin-inspecteur certificate."
+  user_visible_caveat: >
+    The cited burial/cremation page states burial between the 24th and 72nd
+    hour, with remains for cremation not removed before the 24th hour and
+    removed before the 72nd hour, unless extended with a medical examiner
+    certificate. Cremation also requires proof of the deceased's wish or a
+    declaration by the closest family member, a medical certificate of
+    non-violent death, and a pacemaker certificate.
 dedupe:
   default_strategy: do_not_merge_across_jurisdictions
   dedupe_key_template: "{action_type}.{target.object_type}.{jurisdiction}.{target.primary_authority_ref}"
@@ -45,9 +50,9 @@ authoring_status: approved
 distribution_status: public_open
 record_valid_from: "2026-06-05"
 provenance:
-  derived_from_snapshot_ref: snapshot.guichet_lu.bereavement.2026_06_03
+  derived_from_snapshot_ref: snapshot.guichet_lu.funeral_cremation.2026_06_10
   extraction_method: ai_assisted
   extracted_by: software.extractor.v0.1
   extracted_at: "2026-06-04T08:00:00Z"
   reviewed_by: reviewer.founder.001
-  reviewed_at: "2026-06-05T10:00:00Z"
+  reviewed_at: "2026-08-25T12:00:00Z"

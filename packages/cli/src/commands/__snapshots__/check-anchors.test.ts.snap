@@ -150,6 +150,13 @@ exports[`runCheckAnchors characterization > snapshots the full results array for
     "textQuote": "declared within 24 hours to the civil registrar's office",
   },
   {
+    "assertionId": "assertion.guichet_lu.bereavement.declarant_identity_required",
+    "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.bereavement.2026_06_03",
+    "textQuote": "a valid identity document",
+  },
+  {
     "assertionId": "assertion.guichet_lu.bereavement.declaration_within_24h",
     "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
     "found": true,
@@ -157,11 +164,32 @@ exports[`runCheckAnchors characterization > snapshots the full results array for
     "textQuote": "within 24 hours",
   },
   {
+    "assertionId": "assertion.guichet_lu.bereavement.family_book_if_possible",
+    "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.bereavement.2026_06_03",
+    "textQuote": "family record book",
+  },
+  {
+    "assertionId": "assertion.guichet_lu.bereavement.medical_certificate_required",
+    "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.bereavement.2026_06_03",
+    "textQuote": "medical certificate attesting",
+  },
+  {
     "assertionId": "assertion.guichet_lu.bereavement.survivor_pension_available",
     "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
     "found": true,
     "snapshotId": "snapshot.guichet_lu.bereavement.2026_06_03",
     "textQuote": "survivor's pension",
+  },
+  {
+    "assertionId": "assertion.guichet_lu.bereavement.who_may_declare",
+    "file": "sources/assertions/lu/guichet_lu/bereavement.yml",
+    "found": true,
+    "snapshotId": "snapshot.guichet_lu.bereavement.2026_06_03",
+    "textQuote": "funeral home appointed by the family",
   },
   {
     "assertionId": "assertion.guichet_lu.declaration_deces.medical_attestation_required",
