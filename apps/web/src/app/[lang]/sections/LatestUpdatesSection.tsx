@@ -7,8 +7,8 @@ import { FEATURED_UPDATE_DATES, FEATURED_UPDATE_SLUGS } from "@/content/featured
 function formatDate(dateStr: string, lang: Lang): string {
   const date = new Date(dateStr + "T00:00:00");
   return date.toLocaleDateString(
-    lang === "fr" ? "fr-FR" : lang === "de" ? "de-DE" : "en-GB",
-    { day: "numeric", month: "short", year: "numeric" }
+    lang === "fr" ? "fr-FR" : lang === "de" ? "de-DE" : lang === "lu" ? "lb-LU" : "en-GB",
+    { day: "numeric", month: "short", year: "numeric" },
   );
 }
 
@@ -32,7 +32,10 @@ export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
             href={`/${lang}/updates/${slug}`}
             className="glass-panel p-5 hover:shadow-md transition-shadow"
           >
-            <time dateTime={update.date} className="text-xs font-medium text-calm-blue-400 tabular-nums">
+            <time
+              dateTime={update.date}
+              className="text-xs font-medium text-calm-blue-400 tabular-nums"
+            >
               {formatDate(update.date, lang)}
             </time>
             <span className="block mt-2 text-base text-calm-blue-800 font-medium leading-snug">
@@ -46,7 +49,13 @@ export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
         href={`/${lang}/updates`}
         className="inline-flex items-center gap-1.5 mt-6 text-sm font-medium text-calm-blue-600 hover:text-calm-blue-800 transition-colors group"
       >
-        {l(lang, "View all updates", "Voir toutes les actualités", "Alle Neuigkeiten anzeigen", "All Neiegkeeten uweisen")}
+        {l(
+          lang,
+          "View all updates",
+          "Voir toutes les actualités",
+          "Alle Neuigkeiten anzeigen",
+          "All Neiegkeeten uweisen",
+        )}
         <span aria-hidden="true" className="group-hover:translate-x-0.5 transition-transform">
           &rarr;
         </span>

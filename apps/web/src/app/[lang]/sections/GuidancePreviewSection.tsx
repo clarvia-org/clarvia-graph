@@ -1,9 +1,15 @@
 import Link from "next/link";
-import { type Lang, s1 } from "@/lib/i18n";
+import { type Lang, tr } from "@/lib/i18n";
 import { headlineStyle } from "../data";
-import { GUIDANCE_COUNTRY, GUIDES, guidePath } from "@/content/guidance";
+import {
+  GUIDANCE_COUNTRY,
+  guidanceCountryLabel,
+  guidesForLanguage,
+  guidePath,
+} from "@/content/guidance";
 
 export default function GuidancePreviewSection({ lang }: { lang: Lang }) {
+  const guides = guidesForLanguage(lang);
   return (
     <section className="mb-16" aria-labelledby="published-guidance-heading">
       <h2
@@ -11,28 +17,32 @@ export default function GuidancePreviewSection({ lang }: { lang: Lang }) {
         className="text-2xl sm:text-3xl font-semibold text-center mb-4"
         style={headlineStyle}
       >
-        {s1("Published guidance")}
+        {tr(lang, "Published guidance")}
       </h2>
       <p className="text-base text-calm-blue-600 text-center max-w-3xl mx-auto leading-relaxed mb-8">
-        {s1(
-          "Ask Clarvia works worldwide. Published guides are organised by country. Select a country to read the reviewed pages for that place. If your situation involves another country or the facts do not match a guide, ask Clarvia instead."
+        {tr(
+          lang,
+          "Ask Clarvia works worldwide. Published guides are organised by country. Select a country to read the reviewed pages for that place. If your situation involves another country or the facts do not match a guide, ask Clarvia instead.",
         )}
       </p>
       <div className="max-w-xl mx-auto mb-8">
-        <label htmlFor="home-guidance-country" className="block text-sm font-semibold text-calm-blue-800 mb-2">
-          {s1("Country")}
+        <label
+          htmlFor="home-guidance-country"
+          className="block text-sm font-semibold text-calm-blue-800 mb-2"
+        >
+          {tr(lang, "Country")}
         </label>
         <select
           id="home-guidance-country"
           className="w-full px-4 py-3 rounded-xl border border-calm-blue-200 bg-white text-base text-calm-blue-800"
           defaultValue={GUIDANCE_COUNTRY.code}
-          aria-label={s1("Country")}
+          aria-label={tr(lang, "Country")}
         >
-          <option value={GUIDANCE_COUNTRY.code}>{GUIDANCE_COUNTRY.label}</option>
+          <option value={GUIDANCE_COUNTRY.code}>{guidanceCountryLabel(lang)}</option>
         </select>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-        {GUIDES.map((guide) => (
+        {guides.map((guide) => (
           <Link
             key={guide.slug}
             href={guidePath(lang, guide.slug)}

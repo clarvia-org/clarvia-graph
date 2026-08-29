@@ -3,7 +3,8 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { type Lang, l, s1 } from "@/lib/i18n";
+import { type Lang, l, tr } from "@/lib/i18n";
+import { checklistTaskText, intakeOptionText, intakeQuestionText } from "@/content/checklist-copy";
 import { headlineStyle } from "../data";
 
 /* ── Types ── */
@@ -129,49 +130,69 @@ interface ChecklistItem {
 const GROUP_ORDER = [
   "immediate_formalities",
   "money_and_benefits",
+  "employment_and_tax",
   "cross_border_issues",
   "legal_and_succession",
+  "estate_and_inheritance",
   "housing_and_utilities",
   "personal_and_memorial",
 ];
 
-const GROUP_LABELS: Record<string, { en: string; fr: string; de: string }> = {
+const GROUP_LABELS: Record<string, Record<Lang, string>> = {
   immediate_formalities: {
     en: "Immediate formalities",
     fr: "Formalités immédiates",
     de: "Sofortige Formalitäten",
+    lu: "Direkt Formalitéiten",
   },
   money_and_benefits: {
     en: "Money and benefits",
     fr: "Argent et prestations",
     de: "Geld und Leistungen",
+    lu: "Suen a Leeschtungen",
   },
   cross_border_issues: {
     en: "Cross-border issues",
     fr: "Questions transfrontalières",
     de: "Grenzüberschreitende Fragen",
+    lu: "Grenziwwerschreidend Froen",
   },
   legal_and_succession: {
     en: "Legal and succession",
     fr: "Juridique et succession",
     de: "Recht und Erbschaft",
+    lu: "Recht an Ierfschaft",
   },
   housing_and_utilities: {
     en: "Housing and utilities",
     fr: "Logement et services",
     de: "Wohnung und Versorgung",
+    lu: "Wunnen a Versuergung",
   },
   personal_and_memorial: {
     en: "Personal and memorial",
     fr: "Personnel et commémoratif",
     de: "Persönliches und Gedenken",
+    lu: "Perséinleches an Erënnerung",
+  },
+  estate_and_inheritance: {
+    en: "Estate and inheritance",
+    fr: "Succession et patrimoine",
+    de: "Nachlass und Erbschaft",
+    lu: "Ierfschaft a Verméigen",
+  },
+  employment_and_tax: {
+    en: "Employment and tax",
+    fr: "Emploi et fiscalité",
+    de: "Arbeit und Steuern",
+    lu: "Aarbecht a Steieren",
   },
 };
 
 /* ── Client-side JsonLogic evaluator (minimal) ── */
 function evaluateJsonLogic(
   expression: Record<string, unknown>,
-  data: Record<string, unknown>
+  data: Record<string, unknown>,
 ): boolean | null {
   const keys = Object.keys(expression);
   if (keys.length !== 1) return null;
@@ -258,8 +279,10 @@ function buildNestedData(facts: Record<string, string>): Record<string, unknown>
 }
 
 /* ── ISO 8601 duration formatter ── */
-function formatDuration(duration: string): string {
-  const match = duration.match(/^P(?:(\d+)Y)?(?:(\d+)M)?(?:(\d+)W)?(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?)?$/);
+function formatDuration(duration: string, lang: Lang): string {
+  const match = duration.match(
+    /^P(?:(\d+)Y)?(?:(\d+)M)?(?:(\d+)W)?(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?)?$/,
+  );
   if (!match) return duration;
   const years = match[1] ? parseInt(match[1]) : 0;
   const months = match[2] ? parseInt(match[2]) : 0;
@@ -268,13 +291,61 @@ function formatDuration(duration: string): string {
   const hours = match[5] ? parseInt(match[5]) : 0;
   const minutes = match[6] ? parseInt(match[6]) : 0;
   const parts: string[] = [];
-  if (years) parts.push(`${years} year${years > 1 ? "s" : ""}`);
-  if (months) parts.push(`${months} month${months > 1 ? "s" : ""}`);
-  if (weeks) parts.push(`${weeks} week${weeks > 1 ? "s" : ""}`);
-  if (days) parts.push(`${days} day${days > 1 ? "s" : ""}`);
-  if (hours) parts.push(`${hours} hour${hours > 1 ? "s" : ""}`);
-  if (minutes) parts.push(`${minutes} minute${minutes > 1 ? "s" : ""}`);
-  return parts.length ? `within ${parts.join(" ")}` : duration;
+  const unit = (
+    count: number,
+    en: [string, string],
+    fr: [string, string],
+    de: [string, string],
+    lu: [string, string],
+  ) =>
+    `${count} ${l(lang, en[count === 1 ? 0 : 1], fr[count === 1 ? 0 : 1], de[count === 1 ? 0 : 1], lu[count === 1 ? 0 : 1])}`;
+  if (years)
+    parts.push(unit(years, ["year", "years"], ["an", "ans"], ["Jahr", "Jahren"], ["Joer", "Joer"]));
+  if (months)
+    parts.push(
+      unit(months, ["month", "months"], ["mois", "mois"], ["Monat", "Monaten"], ["Mount", "Méint"]),
+    );
+  if (weeks)
+    parts.push(
+      unit(
+        weeks,
+        ["week", "weeks"],
+        ["semaine", "semaines"],
+        ["Woche", "Wochen"],
+        ["Woch", "Wochen"],
+      ),
+    );
+  if (days)
+    parts.push(unit(days, ["day", "days"], ["jour", "jours"], ["Tag", "Tagen"], ["Dag", "Deeg"]));
+  if (hours)
+    parts.push(
+      unit(
+        hours,
+        ["hour", "hours"],
+        ["heure", "heures"],
+        ["Stunde", "Stunden"],
+        ["Stonn", "Stonnen"],
+      ),
+    );
+  if (minutes)
+    parts.push(
+      unit(
+        minutes,
+        ["minute", "minutes"],
+        ["minute", "minutes"],
+        ["Minute", "Minuten"],
+        ["Minutt", "Minutten"],
+      ),
+    );
+  return parts.length
+    ? l(
+        lang,
+        `within ${parts.join(" ")}`,
+        `dans les ${parts.join(" ")}`,
+        `innerhalb von ${parts.join(" ")}`,
+        `bannent ${parts.join(" ")}`,
+      )
+    : duration;
 }
 
 /* ── The page component ── */
@@ -337,7 +408,7 @@ export default function ChecklistPage() {
       conditionResults.set(condition.id, result);
     }
 
-    // Build checklist items — but only include items whose conditions
+    // Build checklist items, but only include items whose conditions
     // are definitively true. Items that are "needs_fact" because of an
     // UNKNOWN answer are NOT shown as individual tasks (that would show
     // every possible alternative). Instead we show a single prompt card.
@@ -349,7 +420,12 @@ export default function ChecklistPage() {
 
     for (const consequence of runtime.consequences) {
       // Publication gate: skip non-public consequences (safety filter)
-      if (consequence.distribution_status && consequence.distribution_status !== 'public_open' && consequence.distribution_status !== 'public_metadata_only') continue;
+      if (
+        consequence.distribution_status &&
+        consequence.distribution_status !== "public_open" &&
+        consequence.distribution_status !== "public_metadata_only"
+      )
+        continue;
 
       // Check all conditions
       const conditionRefs = consequence.trigger.condition_refs ?? [];
@@ -376,7 +452,7 @@ export default function ChecklistPage() {
       // Skip items that don't apply
       if (status === "does_not_apply") continue;
 
-      // Skip needs_fact items — we handle these with prompt cards instead
+      // Skip needs_fact items. We handle these with prompt cards instead.
       if (status === "needs_fact") continue;
 
       // Expand task templates (only for items that definitively apply)
@@ -402,22 +478,34 @@ export default function ChecklistPage() {
           .map((id) => sourceMap.get(id))
           .filter(Boolean) as Source[];
 
+        const taskCopy = checklistTaskText(
+          lang,
+          template.id,
+          template.title,
+          template.rendering.user_visible_caveat || consequence.title || template.title,
+        );
+
         generated.push({
           id: `${consequence.id}::${template.id}`,
-          title: template.title,
+          title: taskCopy.title,
           status,
           consequence_type: consequence.consequence_type,
           checklist_group: template.rendering.checklist_group,
           urgency: {
             score: template.rendering.urgency_score ?? template.rendering.urgency?.score ?? 50,
-            label: template.rendering.urgency?.label ??
-              ((template.rendering.urgency_score ?? 50) >= 90 ? "urgent" :
-               (template.rendering.urgency_score ?? 50) >= 70 ? "important" : "normal"),
+            label:
+              template.rendering.urgency?.label ??
+              ((template.rendering.urgency_score ?? 50) >= 90
+                ? "urgent"
+                : (template.rendering.urgency_score ?? 50) >= 70
+                  ? "important"
+                  : "normal"),
           },
           authority,
-          deadline_label: deadline?.calculation?.label ??
+          deadline_label:
+            deadline?.calculation?.label ??
             (deadline?.calculation?.duration
-              ? formatDuration(deadline.calculation.duration)
+              ? formatDuration(deadline.calculation.duration, lang)
               : deadline?.title),
           evidence,
           missing_facts: missingFacts.length > 0 ? missingFacts : undefined,
@@ -437,12 +525,12 @@ export default function ChecklistPage() {
     setItems(generated);
     setUnknownQuestions(unknownQuestions);
     setStep("results");
-  }, [runtime, intake, answers]);
+  }, [runtime, intake, answers, lang]);
 
   return (
     <div className="max-w-2xl mx-auto">
       <h2 className="text-2xl font-semibold tracking-tight mb-2" style={headlineStyle}>
-        {s1("Start the checklist")}
+        {tr(lang, "Start the checklist")}
       </h2>
       {loading ? (
         <p className="text-calm-blue-500">
@@ -455,9 +543,7 @@ export default function ChecklistPage() {
           lang={lang}
           questions={intake.questions}
           answers={answers}
-          onAnswer={(qId, value) =>
-            setAnswers((prev) => ({ ...prev, [qId]: value }))
-          }
+          onAnswer={(qId, value) => setAnswers((prev) => ({ ...prev, [qId]: value }))}
           onGenerate={generateChecklist}
         />
       )}
@@ -499,19 +585,24 @@ function IntakeWizard({
     <div className="space-y-6">
       {questions.map((q, idx) => {
         const questionLabelId = `question-${q.id}-label`;
-        const questionLabel =
-          lang === "fr" ? q.label_fr : lang === "de" ? q.label_de : q.label_en;
+        const questionLabel = intakeQuestionText(lang, q.path, q);
 
         // Build options based on question type
-        const options = q.options && q.options.length > 0
-          ? q.options
-          : q.value_type === "boolean"
-            ? [
-                { value: "true", label_en: "Yes", label_fr: "Oui", label_de: "Ja" },
-                { value: "false", label_en: "No", label_fr: "Non", label_de: "Nein" },
-                { value: "UNKNOWN", label_en: "I don't know", label_fr: "Je ne sais pas", label_de: "Ich weiß nicht" },
-              ]
-            : null;
+        const options =
+          q.options && q.options.length > 0
+            ? q.options
+            : q.value_type === "boolean"
+              ? [
+                  { value: "true", label_en: "Yes", label_fr: "Oui", label_de: "Ja" },
+                  { value: "false", label_en: "No", label_fr: "Non", label_de: "Nein" },
+                  {
+                    value: "UNKNOWN",
+                    label_en: "I don't know",
+                    label_fr: "Je ne sais pas",
+                    label_de: "Ich weiß nicht",
+                  },
+                ]
+              : null;
 
         return (
           <fieldset
@@ -520,10 +611,7 @@ function IntakeWizard({
             className="glass-panel p-6 rounded-xl transition-all"
             style={{ animationDelay: `${idx * 100}ms` }}
           >
-            <div
-              id={questionLabelId}
-              className="text-sm font-semibold text-calm-blue-800 mb-3"
-            >
+            <div id={questionLabelId} className="text-sm font-semibold text-calm-blue-800 mb-3">
               <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-calm-blue-100 text-calm-blue-600 text-xs font-bold mr-2">
                 {idx + 1}
               </span>
@@ -547,11 +635,7 @@ function IntakeWizard({
                           : "bg-white/60 text-calm-blue-700 border-calm-blue-200 hover:border-calm-blue-400 hover:bg-white"
                       }`}
                     >
-                      {lang === "fr"
-                        ? opt.label_fr
-                        : lang === "de"
-                          ? opt.label_de
-                          : opt.label_en}
+                      {intakeOptionText(lang, opt.value, opt)}
                     </button>
                   );
                 })}
@@ -589,7 +673,13 @@ function IntakeWizard({
                   aria-labelledby={questionLabelId}
                   value={answers[q.id] && answers[q.id] !== "UNKNOWN" ? answers[q.id] : ""}
                   onChange={(e) => onAnswer(q.id, e.target.value || "UNKNOWN")}
-                  placeholder={l(lang, "Enter value…", "Saisir une valeur…", "Wert eingeben…", "Wäert aginn…")}
+                  placeholder={l(
+                    lang,
+                    "Enter value…",
+                    "Saisir une valeur…",
+                    "Wert eingeben…",
+                    "Wäert aginn…",
+                  )}
                   className="flex-grow px-4 py-2.5 rounded-lg text-sm border border-calm-blue-200 bg-white/60 text-calm-blue-800 focus:outline-none focus:border-calm-blue-400 focus:ring-1 focus:ring-calm-blue-400"
                 />
                 <button
@@ -620,7 +710,13 @@ function IntakeWizard({
             : "bg-calm-blue-100 text-calm-blue-400 cursor-not-allowed"
         }`}
       >
-        {l(lang, "Generate checklist", "Générer la liste de démarches", "Checkliste erstellen", "Checklëscht erstellen")}
+        {l(
+          lang,
+          "Generate checklist",
+          "Générer la liste de démarches",
+          "Checkliste erstellen",
+          "Checklëscht erstellen",
+        )}
       </button>
     </div>
   );
@@ -653,12 +749,24 @@ function ChecklistResults({
             className="text-lg font-semibold text-calm-blue-800"
             style={{ fontFamily: headlineStyle.fontFamily }}
           >
-            {l(lang, "Your checklist", "Votre liste de démarches", "Ihre Checkliste", "Är Checklëscht")}
+            {l(
+              lang,
+              "Your checklist",
+              "Votre liste de démarches",
+              "Ihre Checkliste",
+              "Är Checklëscht",
+            )}
           </h2>
         </div>
         <p className="text-sm text-calm-blue-500">
           {appliesCount > 0 &&
-            l(lang, `${appliesCount} step${appliesCount > 1 ? "s" : ""} for your situation`, `${appliesCount} élément${appliesCount > 1 ? "s" : ""} applicable${appliesCount > 1 ? "s" : ""}`, `${appliesCount} zutreffende${appliesCount > 1 ? "r" : ""} Punkt${appliesCount > 1 ? "e" : ""}`, `${appliesCount} Element${appliesCount > 1 ? "er" : ""} uwendbar`)}
+            l(
+              lang,
+              `${appliesCount} step${appliesCount > 1 ? "s" : ""} for your situation`,
+              `${appliesCount} élément${appliesCount > 1 ? "s" : ""} applicable${appliesCount > 1 ? "s" : ""}`,
+              `${appliesCount} zutreffende${appliesCount > 1 ? "r" : ""} Punkt${appliesCount > 1 ? "e" : ""}`,
+              `${appliesCount} Element${appliesCount > 1 ? "er" : ""} uwendbar`,
+            )}
         </p>
       </div>
 
@@ -667,7 +775,13 @@ function ChecklistResults({
         <div className="space-y-3">
           <h3 className="text-sm font-bold text-amber-700 uppercase tracking-wide flex items-center gap-2">
             <span className="w-8 h-px bg-amber-300" />
-            {l(lang, "What we still need to know", "Informations supplémentaires nécessaires", "Weitere Informationen erforderlich", "Méi Informatiounen néideg")}
+            {l(
+              lang,
+              "What we still need to know",
+              "Informations supplémentaires nécessaires",
+              "Weitere Informationen erforderlich",
+              "Méi Informatiounen néideg",
+            )}
           </h3>
           {unknownQuestions.map((q) => (
             <div
@@ -678,10 +792,16 @@ function ChecklistResults({
                 <span className="text-lg mt-0.5">❓</span>
                 <div>
                   <p className="text-sm font-semibold text-amber-900">
-                    {lang === "fr" ? q.label_fr : lang === "de" ? q.label_de : q.label_en}
+                    {intakeQuestionText(lang, q.path, q)}
                   </p>
                   <p className="text-xs text-amber-700 mt-1">
-                    {l(lang, "Without this answer, your checklist may be missing some steps. When you have it, come back and generate the checklist again.", "Votre liste pourrait être incomplète car cette réponse est inconnue. Une fois cette information obtenue, revenez générer une nouvelle liste.", "Ihre Checkliste ist möglicherweise unvollständig, da diese Antwort unbekannt ist. Sobald Sie diese Information haben, erstellen Sie eine neue Checkliste.", "Är Checklëscht ka onvollstänneg sinn, well dës Äntwert onbekannt ass. Wann Dir dës Informatioun hutt, kommt zréck a generéiert eng nei Checklëscht.")}
+                    {l(
+                      lang,
+                      "Without this answer, your checklist may be missing some steps. When you have it, come back and generate the checklist again.",
+                      "Votre liste pourrait être incomplète car cette réponse est inconnue. Une fois cette information obtenue, revenez générer une nouvelle liste.",
+                      "Ihre Checkliste ist möglicherweise unvollständig, da diese Antwort unbekannt ist. Sobald Sie diese Information haben, erstellen Sie eine neue Checkliste.",
+                      "Är Checklëscht ka onvollstänneg sinn, well dës Äntwert onbekannt ass. Wann Dir dës Informatioun hutt, kommt zréck a generéiert eng nei Checklëscht.",
+                    )}
                   </p>
                 </div>
               </div>
@@ -693,13 +813,13 @@ function ChecklistResults({
       {/* Items by group */}
       {groups.map((group) => {
         const groupItems = items.filter((i) => i.checklist_group === group);
-        const groupLabel = GROUP_LABELS[group] ?? { en: group, fr: group, de: group };
+        const groupLabel = GROUP_LABELS[group] ?? { en: group, fr: group, de: group, lu: group };
 
         return (
           <section key={group} className="space-y-3">
             <h3 className="text-sm font-bold text-calm-blue-600 uppercase tracking-wide flex items-center gap-2">
               <span className="w-8 h-px bg-calm-blue-200" />
-              {l(lang, groupLabel.en, groupLabel.fr, groupLabel.de)}
+              {l(lang, groupLabel.en, groupLabel.fr, groupLabel.de, groupLabel.lu)}
             </h3>
 
             {groupItems.map((item) => (
@@ -712,24 +832,30 @@ function ChecklistResults({
       {items.length === 0 && unknownQuestions.length === 0 && (
         <div className="glass-panel p-8 rounded-xl text-center">
           <p className="text-calm-blue-500 text-sm">
-            {s1("Nothing in the published task list matches your answers. If the country or facts do not match, use Ask Clarvia.")}
+            {tr(
+              lang,
+              "Nothing in the published task list matches your answers. If the country or facts do not match, use Ask Clarvia.",
+            )}
           </p>
         </div>
       )}
 
       {/* Actions */}
       <div className="flex gap-3 pt-4">
-        <button
-          onClick={onReset}
-          className="btn-secondary px-6 py-2.5 text-sm rounded-xl"
-        >
+        <button onClick={onReset} className="btn-secondary px-6 py-2.5 text-sm rounded-xl">
           {l(lang, "Start over", "Recommencer", "Neu starten", "Nei ufänken")}
         </button>
         <Link
           href={`/${lang}`}
           className="btn-secondary px-6 py-2.5 text-sm rounded-xl inline-flex items-center"
         >
-          {l(lang, "Back to home", "Retour à l'accueil", "Zurück zur Startseite", "Zréck op d'Startsäit")}
+          {l(
+            lang,
+            "Back to home",
+            "Retour à l'accueil",
+            "Zurück zur Startseite",
+            "Zréck op d'Startsäit",
+          )}
         </Link>
       </div>
     </div>
@@ -737,13 +863,7 @@ function ChecklistResults({
 }
 
 /* ── Single checklist item card ── */
-function ChecklistItemCard({
-  item,
-  lang,
-}: {
-  item: ChecklistItem;
-  lang: Lang;
-}) {
+function ChecklistItemCard({ item, lang }: { item: ChecklistItem; lang: Lang }) {
   const [expanded, setExpanded] = useState(false);
   const detailsId = `checklist-item-${item.id}-details`;
 
@@ -758,7 +878,13 @@ function ChecklistItemCard({
       icon: "?",
       color: "text-amber-600",
       bg: "bg-amber-50 border-amber-200",
-      label: l(lang, "More info needed", "Informations supplémentaires nécessaires", "Weitere Informationen nötig", "Méi Infoen néideg"),
+      label: l(
+        lang,
+        "More info needed",
+        "Informations supplémentaires nécessaires",
+        "Weitere Informationen nötig",
+        "Méi Infoen néideg",
+      ),
     },
     does_not_apply: {
       icon: "✘",
@@ -791,54 +917,76 @@ function ChecklistItemCard({
             {s.icon}
           </span>
           <div className="flex-grow min-w-0">
-          <div className="flex items-start justify-between gap-2">
-            <h4 className="text-sm font-semibold text-calm-blue-800 leading-snug">
-              {item.title}
-            </h4>
-            <span
-              className={`shrink-0 px-2 py-0.5 rounded-full text-xs font-medium ${
-                urgencyColors[item.urgency.label] ?? urgencyColors.normal
-              }`}
-            >
-              {l(
-                lang,
-                item.urgency.label,
-                item.urgency.label === "urgent"
-                  ? "urgent"
-                  : item.urgency.label === "important"
-                    ? "important"
-                    : "normal",
-                item.urgency.label === "urgent"
-                  ? "dringend"
-                  : item.urgency.label === "important"
-                    ? "wichtig"
-                    : "normal"
-              )}
-            </span>
-          </div>
-
-          {/* Compact info */}
-          <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-calm-blue-500">
-            {item.authority && (
-              <span>→ {item.authority.name_en}</span>
-            )}
-            {item.deadline_label && (
-              <span>⏰ {item.deadline_label}</span>
-            )}
-            {item.consequence_type && (
-              <span className="capitalize">
-                {item.consequence_type === "obligation"
-                  ? l(lang, "Obligation", "Obligation", "Pflicht", "Flicht")
-                  : item.consequence_type === "right_or_benefit" || item.consequence_type === "right"
-                    ? l(lang, "Right / Benefit", "Droit / Prestation", "Recht / Leistung", "Recht / Leeschtung")
-                    : item.consequence_type === "administrative_step"
-                      ? l(lang, "Administrative step", "Démarche administrative", "Verwaltungsschritt", "Administrativ Démarche")
-                      : item.consequence_type === "routing_decision"
-                        ? l(lang, "Decision point", "Point de décision", "Entscheidungspunkt", "Decisiounspunkt")
-                        : l(lang, item.consequence_type, item.consequence_type, item.consequence_type)}
+            <div className="flex items-start justify-between gap-2">
+              <h4 className="text-sm font-semibold text-calm-blue-800 leading-snug">
+                {item.title}
+              </h4>
+              <span
+                className={`shrink-0 px-2 py-0.5 rounded-full text-xs font-medium ${
+                  urgencyColors[item.urgency.label] ?? urgencyColors.normal
+                }`}
+              >
+                {l(
+                  lang,
+                  item.urgency.label,
+                  item.urgency.label === "urgent"
+                    ? "urgent"
+                    : item.urgency.label === "important"
+                      ? "important"
+                      : "normal",
+                  item.urgency.label === "urgent"
+                    ? "dringend"
+                    : item.urgency.label === "important"
+                      ? "wichtig"
+                      : "normal",
+                )}
               </span>
-            )}
-          </div>
+            </div>
+
+            {/* Compact info */}
+            <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-calm-blue-500">
+              {item.authority && (
+                <span>→ {lang === "en" ? item.authority.name_en : item.authority.name}</span>
+              )}
+              {item.deadline_label && <span>⏰ {item.deadline_label}</span>}
+              {item.consequence_type && (
+                <span className="capitalize">
+                  {item.consequence_type === "obligation"
+                    ? l(lang, "Obligation", "Obligation", "Pflicht", "Flicht")
+                    : item.consequence_type === "right_or_benefit" ||
+                        item.consequence_type === "right"
+                      ? l(
+                          lang,
+                          "Right / Benefit",
+                          "Droit / Prestation",
+                          "Recht / Leistung",
+                          "Recht / Leeschtung",
+                        )
+                      : item.consequence_type === "administrative_step"
+                        ? l(
+                            lang,
+                            "Administrative step",
+                            "Démarche administrative",
+                            "Verwaltungsschritt",
+                            "Administrativ Démarche",
+                          )
+                        : item.consequence_type === "routing_decision"
+                          ? l(
+                              lang,
+                              "Decision point",
+                              "Point de décision",
+                              "Entscheidungspunkt",
+                              "Decisiounspunkt",
+                            )
+                          : l(
+                              lang,
+                              item.consequence_type,
+                              item.consequence_type,
+                              item.consequence_type,
+                            )}
+                </span>
+              )}
+            </div>
           </div>
         </div>
       </button>
@@ -849,52 +997,62 @@ function ChecklistItemCard({
         hidden={!expanded}
         className="mt-3 pt-3 border-t border-calm-blue-200/50 space-y-2 text-xs text-calm-blue-600"
       >
-              {item.evidence && item.evidence.length > 0 && (
-                <div>
-                  <span className="font-semibold">
-                    {l(lang, "Documents needed:", "Documents nécessaires :", "Benötigte Dokumente:", "Néideg Dokumenter:")}
-                  </span>
-                  <ul className="list-disc list-inside mt-1 ml-1">
-                    {item.evidence.map((e) => (
-                      <li key={e.id}>{e.canonical_name}</li>
-                    ))}
-                  </ul>
-                </div>
+        {item.evidence && item.evidence.length > 0 && (
+          <div>
+            <span className="font-semibold">
+              {l(
+                lang,
+                "Documents needed:",
+                "Documents nécessaires :",
+                "Benötigte Dokumente:",
+                "Néideg Dokumenter:",
               )}
-              {item.sources && item.sources.length > 0 && (
-                <div>
-                  <span className="font-semibold">
-                    {l(lang, "Sources:", "Sources :", "Quellen:", "Quellen:")}
-                  </span>
-                  <ul className="mt-1 ml-1 space-y-0.5">
-                    {item.sources.map((s) => (
-                      <li key={s.id} className="flex items-center gap-1">
-                        <span className="text-calm-blue-400">🔗</span>
-                        {s.url ? (
-                          <a
-                            href={s.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-calm-blue-600 hover:text-calm-blue-800"
-                          >
-                            {s.title}
-                          </a>
-                        ) : (
-                          <span>{s.title}</span>
-                        )}
-                        {s.publisher && (
-                          <span className="text-calm-blue-400">— {s.publisher}</span>
-                        )}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-              {item.status === "needs_fact" && item.missing_facts && (
-                <p className="text-amber-600">
-                  {l(lang, "We need a bit more information before we can tell you whether this applies to you.", "Nous avons besoin de plus d'informations pour déterminer si cela s'applique à votre situation.", "Wir benötigen weitere Informationen, um festzustellen, ob dies auf Ihre Situation zutrifft.", "Mir brauchen nach méi Informatiounen, fir ze bestëmmen, ob dat op Är Situatioun zoutrëfft.")}
-                </p>
-              )}
+            </span>
+            <ul className="list-disc list-inside mt-1 ml-1">
+              {item.evidence.map((e) => (
+                <li key={e.id}>{e.canonical_name}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {item.sources && item.sources.length > 0 && (
+          <div>
+            <span className="font-semibold">
+              {l(lang, "Sources:", "Sources :", "Quellen:", "Quellen:")}
+            </span>
+            <ul className="mt-1 ml-1 space-y-0.5">
+              {item.sources.map((s) => (
+                <li key={s.id} className="flex items-center gap-1">
+                  <span className="text-calm-blue-400">🔗</span>
+                  {s.url ? (
+                    <a
+                      href={s.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline text-calm-blue-600 hover:text-calm-blue-800"
+                    >
+                      {s.title}
+                    </a>
+                  ) : (
+                    <span>{s.title}</span>
+                  )}
+                  {s.publisher && <span className="text-calm-blue-400">· {s.publisher}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {item.status === "needs_fact" && item.missing_facts && (
+          <p className="text-amber-600">
+            {l(
+              lang,
+              "We need a bit more information before we can tell you whether this applies to you.",
+              "Nous avons besoin de plus d'informations pour déterminer si cela s'applique à votre situation.",
+              "Wir benötigen weitere Informationen, um festzustellen, ob dies auf Ihre Situation zutrifft.",
+              "Mir brauchen nach méi Informatiounen, fir ze bestëmmen, ob dat op Är Situatioun zoutrëfft.",
+            )}
+          </p>
+        )}
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+import { NEW_COPY_TRANSLATIONS } from "@/content/new-copy-translations";
+
 export const LANGUAGES = ["en", "fr", "de", "lu"] as const;
 export type Lang = (typeof LANGUAGES)[number];
 
@@ -29,13 +31,17 @@ export function l(lang: Lang, en: string, fr: string, de: string, lu?: string): 
   return lang === "fr" ? fr : lang === "de" ? de : en;
 }
 
-/** Stage 1 new copy: English on every locale until translations are added. */
-export function s1(en: string): string {
-  return en;
+/** Copy introduced with the Ad Grants information architecture. */
+export function tr(lang: Lang, en: string): string {
+  if (lang === "en") return en;
+  return NEW_COPY_TRANSLATIONS[en]?.[lang] ?? en;
 }
 
 /** hreflang only for locales whose page body is actually translated. */
-export function hreflangForLocales(pathAfterLang: string, locales: readonly Lang[]): Record<string, string> {
+export function hreflangForLocales(
+  pathAfterLang: string,
+  locales: readonly Lang[],
+): Record<string, string> {
   const suffix = pathAfterLang ? `/${pathAfterLang}` : "";
   const languages: Record<string, string> = {};
   for (const code of locales) {
