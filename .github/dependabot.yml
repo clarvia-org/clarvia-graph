@@ -1,6 +1,28 @@
-# Dependabot version updates are disabled.
-# Security alerts and automated security PRs remain active via
-# GitHub Settings → Security → Dependabot (separate from this file).
-# Dependency upgrades are handled manually or in scheduled triage runs.
+# Grouped monthly dependency updates.
+# Each ecosystem produces one PR per month instead of one PR per package.
+# Security alerts remain active via GitHub Settings (separate from this file).
 version: 2
-updates: []
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      all-npm:
+        patterns: ["*"]
+
+  - package-ecosystem: "pip"
+    directory: "/services/lex"
+    schedule:
+      interval: "monthly"
+    groups:
+      all-pip:
+        patterns: ["*"]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      all-actions:
+        patterns: ["*"]
