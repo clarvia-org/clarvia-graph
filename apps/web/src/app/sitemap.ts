@@ -13,12 +13,12 @@ type SitemapPage = {
 };
 
 const localizedPages: SitemapPage[] = [
-  { path: "", changeFrequency: "weekly", priority: 1.0, translated: false },
+  { path: "", changeFrequency: "weekly", priority: 1.0, translated: true },
   { path: "about", changeFrequency: "monthly", priority: 0.8, translated: true },
-  { path: "how-it-works", changeFrequency: "monthly", priority: 0.8, translated: false },
-  { path: "guidance", changeFrequency: "weekly", priority: 0.8, translated: false },
-  { path: "checklist", changeFrequency: "weekly", priority: 0.7, translated: false },
-  { path: "for-institutions", changeFrequency: "monthly", priority: 0.6, translated: false },
+  { path: "how-it-works", changeFrequency: "monthly", priority: 0.8, translated: true },
+  { path: "guidance", changeFrequency: "weekly", priority: 0.8, translated: true },
+  { path: "checklist", changeFrequency: "weekly", priority: 0.7, translated: true },
+  { path: "for-institutions", changeFrequency: "monthly", priority: 0.6, translated: true },
   { path: "updates", changeFrequency: "weekly", priority: 0.8, translated: true },
   { path: "contribute", changeFrequency: "monthly", priority: 0.7, translated: true },
   { path: "support", changeFrequency: "weekly", priority: 0.7, translated: true },
@@ -38,9 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: page.changeFrequency,
         priority: page.priority,
-        ...(page.translated
-          ? { alternates: { languages: hreflangLanguages(page.path) } }
-          : {}),
+        ...(page.translated ? { alternates: { languages: hreflangLanguages(page.path) } } : {}),
       });
     }
   }
@@ -52,6 +50,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.7,
+        alternates: {
+          languages: hreflangLanguages(`guidance/${GUIDANCE_COUNTRY.code}/${guide.slug}`),
+        },
       });
     }
   }
@@ -63,6 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.6,
+        alternates: { languages: hreflangLanguages(`updates/${slug}`) },
       });
     }
   }
@@ -85,7 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.2,
-    }
+    },
   );
 
   return entries;

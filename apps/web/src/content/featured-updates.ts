@@ -1,3 +1,5 @@
+import { type Lang, l } from "@/lib/i18n";
+
 export const FEATURED_UPDATE_SLUGS = [
   "ask-clarvia-launches",
   "checklist-accessibility-update",
@@ -20,3 +22,13 @@ export const FEATURED_UPDATE_CATEGORIES: Record<FeaturedUpdateSlug, string> = {
   "privacy-by-design": "Trust",
   "trauerwee-supports-clarvia": "Organization",
 };
+
+export function featuredUpdateCategory(lang: Lang, slug: FeaturedUpdateSlug): string {
+  const category = FEATURED_UPDATE_CATEGORIES[slug];
+  if (category === "Guidance")
+    return l(lang, "Guidance", "Orientation", "Orientierung", "Orientéierung");
+  if (category === "Trust") return l(lang, "Trust", "Confiance", "Vertrauen", "Vertrauen");
+  if (category === "Organization")
+    return l(lang, "Organization", "Organisation", "Organisation", "Organisatioun");
+  return "Service";
+}

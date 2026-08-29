@@ -1,12 +1,12 @@
 import { type Metadata } from "next";
 import Link from "next/link";
-import { type Lang, LANGUAGES, s1 } from "@/lib/i18n";
+import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
 import FooterSection from "../sections/FooterSection";
 import CountrySelector from "@/components/CountrySelector";
 import { headlineStyle } from "../data";
-import { GUIDES, guidePath } from "@/content/guidance";
+import { guidesForLanguage, guidePath } from "@/content/guidance";
 
 export async function generateMetadata({
   params,
@@ -18,34 +18,42 @@ export async function generateMetadata({
   return pageMetadata({
     lang,
     pathAfterLang: "guidance",
-    title: s1("Published bereavement guidance — Clarvia"),
-    description: s1("Read source-linked bereavement guidance organised by country."),
+    title: tr(lang, "Published bereavement guidance | Clarvia"),
+    description: tr(
+      lang,
+      "Read bereavement guidance organised by country, with links to the official sources used.",
+    ),
+    translated: true,
   });
 }
 
-export default async function GuidanceHubPage({
-  params,
-}: {
-  params: Promise<{ lang: string }>;
-}) {
+export default async function GuidanceHubPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: rawLang } = await params;
   const lang = (rawLang as Lang) || "en";
+  const guides = guidesForLanguage(lang);
 
   return (
     <>
       <Header lang={lang} />
-      <main id="main-content" className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-16 relative z-10">
-        <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6" style={headlineStyle}>
-          {s1("Published bereavement guidance")}
+      <main
+        id="main-content"
+        className="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 py-16 relative z-10"
+      >
+        <h1
+          className="text-4xl sm:text-5xl font-semibold tracking-tight mb-6"
+          style={headlineStyle}
+        >
+          {tr(lang, "Published bereavement guidance")}
         </h1>
         <p className="text-lg text-calm-blue-700 leading-relaxed mb-8">
-          {s1(
-            "Ask Clarvia is available worldwide. This library is organised by country. Select a country to read guidance Clarvia has prepared from reviewed, source-backed task data. If your situation involves another country, several countries, or facts that do not match a guide, ask Clarvia instead."
+          {tr(
+            lang,
+            "Ask Clarvia is available worldwide. This library is organised by country. Select a country to read guidance Clarvia has prepared from reviewed, source-backed task data. If your situation involves another country, several countries, or facts that do not match a guide, ask Clarvia instead.",
           )}
         </p>
         <CountrySelector lang={lang} id="guidance-country" />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {GUIDES.map((guide) => (
+          {guides.map((guide) => (
             <Link
               key={guide.slug}
               href={guidePath(lang, guide.slug)}
@@ -58,7 +66,7 @@ export default async function GuidanceHubPage({
         </div>
         <p className="mt-10">
           <Link href={`/${lang}#ask-us`} className="text-calm-blue-700 font-medium underline">
-            {s1("Ask Clarvia")}
+            {tr(lang, "Ask Clarvia")}
           </Link>
         </p>
       </main>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { type Lang, l, LANGUAGES, s1 } from "@/lib/i18n";
+import { type Lang, l, LANGUAGES, tr } from "@/lib/i18n";
 
 const LINK_CLASS =
   "text-sm font-semibold text-calm-blue-600 hover:text-calm-blue-800 transition-colors min-h-11 inline-flex items-center px-1";
@@ -22,15 +22,24 @@ export default function Header({ lang }: { lang: Lang }) {
 
   const askHref = `/${lang}#ask-us`;
   const nav = [
-    { href: `/${lang}/how-it-works`, label: s1("How it works") },
-    { href: `/${lang}/guidance`, label: s1("Guidance") },
-    { href: `/${lang}/updates`, label: l(lang, "Latest", "Actualités", "Aktuelles", "Neiegkeeten") },
+    { href: `/${lang}/how-it-works`, label: tr(lang, "How it works") },
+    { href: `/${lang}/guidance`, label: tr(lang, "Guidance") },
+    {
+      href: `/${lang}/updates`,
+      label: l(lang, "Latest", "Actualités", "Aktuelles", "Neiegkeeten"),
+    },
     { href: `/${lang}/about`, label: l(lang, "About", "À propos", "Über uns", "Iwwer eis") },
   ];
 
   return (
     <header
-      aria-label={l(lang, "Site header", "En-tête du site", "Seitenkopf", "Kappberäich vun der Websäit")}
+      aria-label={l(
+        lang,
+        "Site header",
+        "En-tête du site",
+        "Seitenkopf",
+        "Kappberäich vun der Websäit",
+      )}
       className="py-4 px-4 sm:px-8 lg:px-12 flex items-center justify-between gap-x-4 z-50 relative"
     >
       <a
@@ -41,10 +50,23 @@ export default function Header({ lang }: { lang: Lang }) {
       </a>
       <Link
         href={`/${lang}`}
-        aria-label={l(lang, "Clarvia home", "Accueil Clarvia", "Clarvia Startseite", "Clarvia Startsäit")}
+        aria-label={l(
+          lang,
+          "Clarvia home",
+          "Accueil Clarvia",
+          "Clarvia Startseite",
+          "Clarvia Startsäit",
+        )}
         className="block relative w-32 h-14 sm:w-40 sm:h-20 transition-transform duration-200 hover:scale-[1.02] shrink-0"
       >
-        <Image src="/clarvia-logo.webp" alt="Clarvia" fill sizes="160px" priority className="object-contain" />
+        <Image
+          src="/clarvia-logo.webp"
+          alt="Clarvia"
+          fill
+          sizes="160px"
+          priority
+          className="object-contain"
+        />
       </Link>
 
       <div className="flex items-center gap-2 sm:gap-3">
@@ -52,7 +74,7 @@ export default function Header({ lang }: { lang: Lang }) {
           href={askHref}
           className="btn-primary text-sm px-4 py-2 min-h-11 inline-flex items-center"
         >
-          {s1("Ask Clarvia")}
+          {tr(lang, "Ask Clarvia")}
         </Link>
 
         <div className="flex items-center gap-1">
@@ -65,7 +87,7 @@ export default function Header({ lang }: { lang: Lang }) {
                 `Switch to ${code.toUpperCase()}`,
                 `Passer en ${code.toUpperCase()}`,
                 `Zu ${code.toUpperCase()} wechseln`,
-                `Op ${code.toUpperCase()} wiesselen`
+                `Op ${code.toUpperCase()} wiesselen`,
               )}
               aria-current={lang === code ? "page" : undefined}
               className={`px-2.5 py-1.5 rounded-full text-sm font-medium transition-all min-h-11 inline-flex items-center ${
@@ -86,17 +108,28 @@ export default function Header({ lang }: { lang: Lang }) {
           aria-controls="site-menu"
           onClick={() => setOpen((value) => !value)}
         >
-          <span className="sr-only">{s1("Menu")}</span>
+          <span className="sr-only">{tr(lang, "Menu")}</span>
           <span aria-hidden="true">{open ? "✕" : "☰"}</span>
         </button>
 
         <nav
           id="site-menu"
-          aria-label={l(lang, "Site navigation", "Navigation du site", "Seiten-Navigation", "Navigatioun vun der Websäit")}
+          aria-label={l(
+            lang,
+            "Site navigation",
+            "Navigation du site",
+            "Seiten-Navigation",
+            "Navigatioun vun der Websäit",
+          )}
           className={`${open ? "flex" : "hidden"} lg:flex absolute lg:static top-full right-4 left-4 lg:left-auto mt-2 lg:mt-0 flex-col lg:flex-row items-stretch lg:items-center gap-1 lg:gap-4 bg-white lg:bg-transparent border lg:border-0 border-calm-blue-200 rounded-xl lg:rounded-none p-3 lg:p-0 shadow-lg lg:shadow-none`}
         >
           {nav.map((item) => (
-            <Link key={item.href} href={item.href} className={LINK_CLASS} onClick={() => setOpen(false)}>
+            <Link
+              key={item.href}
+              href={item.href}
+              className={LINK_CLASS}
+              onClick={() => setOpen(false)}
+            >
               {item.label}
             </Link>
           ))}
