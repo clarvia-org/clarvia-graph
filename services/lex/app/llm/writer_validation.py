@@ -6,6 +6,7 @@ import re
 from collections.abc import Sequence
 
 from app.llm.research_schema import LexResearchBrief
+from app.llm.research_validation import requires_full_immediate_checklist
 from app.llm.scenario_validation import validate_no_unsupported_scenarios
 from app.llm.writer_schema import LexWrittenResponse
 
@@ -125,8 +126,8 @@ def _retry_instruction(code: str) -> str:
             "adds it."
         ),
         "body_too_short": (
-            "The previous draft was too short for an imminent or recent-death answer. "
-            "Expand to roughly 250-600 words using the verified actions."
+            "The previous draft was too short for a full imminent or recent-death "
+            "answer. Expand to roughly 250-600 words using the verified actions."
         ),
         "body_too_long": (
             "The previous draft was too long. Tighten to roughly 250-600 words."
@@ -303,7 +304,11 @@ def validate_written_response(
                 raise WriterValidationError("asks_known_user_fact")
         _ = latest_user_message
 
-    if brief.situation_stage in {"imminent_death", "recent_death"}:
+    if (
+        brief.action == "answer"
+        and requires_full_immediate_checklist(brief)
+        and len(brief.immediate_actions) >= 3
+    ):
         words = _word_count(body)
         if words < 180:
             raise WriterValidationError("body_too_short")
