@@ -1,4 +1,4 @@
-import { NEW_COPY_TRANSLATIONS } from "@/content/new-copy-translations";
+import { NEW_COPY_TRANSLATIONS } from "../content/new-copy-translations";
 
 export const LANGUAGES = ["en", "fr", "de", "lu"] as const;
 export type Lang = (typeof LANGUAGES)[number];
