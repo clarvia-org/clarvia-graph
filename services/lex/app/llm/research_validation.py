@@ -224,8 +224,9 @@ def _research_retry_instruction(code: str) -> str:
             "from the conversation. Remove known facts from missing_fields."
         ),
         "immediate_action_count": (
-            "Imminent or recent-death answers need between three and five immediate "
-            "actions."
+            "A general imminent or recent-death next-steps answer needs between "
+            "three and five immediate actions. Single-topic or partial answers may "
+            "use fewer."
         ),
     }
     return mapping.get(
@@ -440,6 +441,58 @@ def _fact_tokens(fact: str) -> list[str]:
     ]
 
 
+_PARTIAL_ANSWER_STAGES: frozenset[str] = frozenset(
+    {
+        "focused_follow_up",
+        "planning_ahead",
+        "later_administration",
+        "unknown",
+        "cross_border",
+    }
+)
+
+_GENERAL_NEXT_STEPS_RE = re.compile(
+    r"(?i)(?:"
+    r"what should (?:we|i|the family) (?:do|prepare)|"
+    r"what do (?:i|we) (?:do|need)|"
+    r"what (?:are )?the (?:first|next) (?:steps|administrative)|"
+    r"first (?:administrative )?steps|"
+    r"prepare to do after|"
+    r"what happens now|"
+    r"\bwhat now\b"
+    r")"
+)
+
+_SINGLE_TOPIC_RE = re.compile(
+    r"(?i)\b(?:"
+    r"ashes|scatter(?:ing|ed)?|repatriat(?:e|ion)|transport|"
+    r"palliative|hospice options?|advance directive|"
+    r"cremat(?:e|ion)|burial at sea|at sea|"
+    r"pension"
+    r")\b"
+)
+
+
+def requires_full_immediate_checklist(brief: LexResearchBrief) -> bool:
+    """True when a general imminent/recent-death next-steps answer needs 3–5 actions.
+
+    Exploratory, single-topic, partial-info, and non-crisis stages may answer
+    with fewer (or no) immediate_actions.
+    """
+    if brief.action != "answer":
+        return False
+    if brief.situation_stage in _PARTIAL_ANSWER_STAGES:
+        return False
+    if brief.situation_stage not in {"imminent_death", "recent_death"}:
+        return False
+    if brief.missing_fields:
+        return False
+    question = brief.current_question or ""
+    if _SINGLE_TOPIC_RE.search(question) and not _GENERAL_NEXT_STEPS_RE.search(question):
+        return False
+    return True
+
+
 def fact_is_material(fact: str) -> bool:
     """True when an ungegrounded fact must not be silently dropped.
 
@@ -595,12 +648,12 @@ def validate_research_brief(
             brief, web_search_source_urls=web_search_source_urls
         )
         _require(bool(brief.sources), "answer_without_source", "Answer needs sources.")
-        _require(
-            bool(brief.immediate_actions),
-            "answer_without_action",
-            "Answer needs immediate actions.",
-        )
-        if brief.situation_stage in {"imminent_death", "recent_death"}:
+        if requires_full_immediate_checklist(brief):
+            _require(
+                bool(brief.immediate_actions),
+                "answer_without_action",
+                "Answer needs immediate actions.",
+            )
             count = len(brief.immediate_actions)
             _require(
                 3 <= count <= 5,
@@ -655,5 +708,6 @@ def validate_research_brief(
 __all__ = [
     "ResearchValidationError",
     "fact_is_material",
+    "requires_full_immediate_checklist",
     "validate_research_brief",
 ]

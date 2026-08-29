@@ -135,7 +135,7 @@ def run_two_pass_pipeline(
     thread_messages: list[ParsedMessage],
     current_date_utc: datetime,
 ) -> PreparedLexResponse:
-    """Research → validate → (clarify/decline template | writer) → compose body."""
+    """Research → validate → writer (answer/clarify/decline) → compose body."""
     research_prompt_version = str(
         _settings_value(settings, "research_prompt_version", "lex-research-v1")
     )
@@ -170,34 +170,6 @@ def run_two_pass_pipeline(
         research_prompt_version=research_prompt_version,
     )
 
-    if brief.action == "clarify":
-        body = ensure_lex_signoff(render_clarification_body(brief))
-        return PreparedLexResponse(
-            body_markdown=body,
-            language=brief.language,
-            action="clarify",
-            sources=(),
-            contacts=(),
-            openai_response_id=research_response_id,
-            schema_version=research_schema,
-            prompt_version=combined_prompt,
-            pipeline_version=pipeline_version,
-        )
-
-    if brief.action == "decline":
-        body = ensure_lex_signoff(render_decline_body(brief))
-        return PreparedLexResponse(
-            body_markdown=body,
-            language=brief.language,
-            action="decline",
-            sources=(),
-            contacts=(),
-            openai_response_id=research_response_id,
-            schema_version=research_schema,
-            prompt_version=combined_prompt,
-            pipeline_version=pipeline_version,
-        )
-
     writer_prompt = load_prompt(settings.resolved_writer_prompt_path)  # type: ignore[attr-defined]
     max_writer_chars = int(_settings_value(settings, "max_writer_history_chars", 20_000))
     relevant = select_relevant_writer_history(cleaned, max_chars=max_writer_chars)
@@ -212,7 +184,10 @@ def run_two_pass_pipeline(
     )
 
     body = ensure_lex_signoff(written.body_markdown)
-    if used_fallback:
+    if brief.action == "decline" or (used_fallback and brief.action == "clarify"):
+        sources = ()
+        contacts = ()
+    elif used_fallback:
         sources = _to_lex_sources(brief)
         contacts = _to_lex_contacts(brief)
     else:
@@ -230,7 +205,7 @@ def run_two_pass_pipeline(
     return PreparedLexResponse(
         body_markdown=body,
         language=brief.language,
-        action="answer",
+        action=brief.action,
         sources=sources,
         contacts=contacts,
         openai_response_id=writer_response_id or research_response_id,
@@ -368,7 +343,7 @@ def _run_writer_with_retry(
                 "The previous draft failed. Rewrite using only the verified "
                 "research brief."
             )
-    fallback_body = render_research_brief_fallback(brief)
+    fallback_body = _writer_fallback_body(brief)
     written = LexWrittenResponse(
         response_version="lex_written_response_v1",
         body_markdown=fallback_body,
@@ -378,6 +353,15 @@ def _run_writer_with_retry(
     )
     _ = last_error
     return written, True, None
+
+
+def _writer_fallback_body(brief: LexResearchBrief) -> str:
+    """Last-resort body when both Writer attempts fail."""
+    if brief.action == "clarify":
+        return render_clarification_body(brief)
+    if brief.action == "decline":
+        return render_decline_body(brief)
+    return render_research_brief_fallback(brief)
 
 
 def prepared_to_lex_response(prepared: PreparedLexResponse) -> LexResponse:

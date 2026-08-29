@@ -82,7 +82,6 @@ def _to_clarify_brief(
             "immediate_actions": [],
             "sources": [],
             "contacts": [],
-            "later_topics": [],
             "missing_fields": fields[:5],
             "off_topic_label": None,
         }

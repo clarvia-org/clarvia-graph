@@ -69,6 +69,7 @@ _LANG_MARKERS: dict[str, tuple[str, ...]] = {
     "de": ("und ", "die ", "der ", "Sterbe", "Anmeldung", "Behörd", "müssen", "sollten"),
     "fr": ("les ", "des ", "une ", "décès", "démarches", "acte ", "pouvez", "commune"),
     "pt": ("os ", "das ", "uma ", "óbito", "certidão", "passos", "deve ", "Portugal"),
+    "uk": (" та ", " на ", " про ", "смерт", "похован", "Україн", "можна", "попіл"),
 }
 _EN_MARKERS = (" the ", " and ", " you ", " should ", " contact ", " death ", " certificate ")
 

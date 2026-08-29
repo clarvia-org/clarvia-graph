@@ -197,7 +197,7 @@ def test_two_pass_answer_path_uses_writer_and_headers() -> None:
     assert lex.sources
 
 
-def test_two_pass_clarify_and_decline_skip_writer() -> None:
+def test_two_pass_clarify_and_decline_use_writer() -> None:
     clarify = _brief(
         action="clarify",
         research_status="not_needed",
@@ -218,10 +218,41 @@ def test_two_pass_clarify_and_decline_skip_writer() -> None:
         later_topics=[],
         off_topic_label="a divorce petition",
     )
-    for payload, expected in ((clarify, "clarify"), (decline, "decline")):
+    clarify_written = LexWrittenResponse(
+        response_version="lex_written_response_v1",
+        body_markdown=(
+            "I'm sorry this is so much at once. I can help with the first "
+            "practical steps after a death, but I need to know which country "
+            "this is in. Reply with the country if you know it, and the city "
+            "or commune if you have it."
+        ),
+        used_action_ids=[],
+        used_source_ids=[],
+        used_contact_ids=[],
+    )
+    decline_written = LexWrittenResponse(
+        response_version="lex_written_response_v1",
+        body_markdown=(
+            "I'm Lex, Clarvia's bereavement and end-of-life information service. "
+            "I can help with practical steps after a death, but I can't help "
+            "with a divorce petition. If something you need is connected to a "
+            "death or to planning ahead, reply with that part."
+        ),
+        used_action_ids=[],
+        used_source_ids=[],
+        used_contact_ids=[],
+    )
+    cases = (
+        (clarify, clarify_written, "clarify", "country"),
+        (decline, decline_written, "decline", "divorce"),
+    )
+    for payload, written, expected, needle in cases:
         llm = FakeLlmAdapter(
             structured_responses=[
-                _structured(payload.model_dump(mode="json"), response_id="r1")
+                _structured(payload.model_dump(mode="json"), response_id="r1"),
+                _structured(
+                    written.model_dump(mode="json"), response_id="w1", search=False
+                ),
             ]
         )
         prepared = run_two_pass_pipeline(
@@ -233,6 +264,56 @@ def test_two_pass_clarify_and_decline_skip_writer() -> None:
         )
         assert prepared.action == expected
         assert prepared.body_markdown.rstrip().endswith("Lex.")
+        assert prepared.used_fallback_renderer is False
+        assert needle in prepared.body_markdown.casefold()
+        assert "Which country did the person die in" not in prepared.body_markdown
+        writer_calls = [
+            call
+            for call in llm.calls
+            if call.get("schema_name") == "lex_written_response_v1"
+        ]
+        assert len(writer_calls) == 1
+
+
+def test_two_pass_clarify_writer_fail_uses_template_fallback() -> None:
+    clarify = _brief(
+        action="clarify",
+        research_status="not_needed",
+        immediate_actions=[],
+        sources=[],
+        contacts=[],
+        user_facts=[],
+        missing_fields=["death_country"],
+        later_topics=[],
+    )
+    bad_writer = LexWrittenResponse(
+        response_version="lex_written_response_v1",
+        body_markdown="Below is a short, practical checklist.\n\nLex.",
+        used_action_ids=[],
+        used_source_ids=[],
+        used_contact_ids=[],
+    )
+    llm = FakeLlmAdapter(
+        structured_responses=[
+            _structured(clarify.model_dump(mode="json"), response_id="r1"),
+            _structured(
+                bad_writer.model_dump(mode="json"), response_id="w1", search=False
+            ),
+            _structured(
+                bad_writer.model_dump(mode="json"), response_id="w2", search=False
+            ),
+        ]
+    )
+    prepared = run_two_pass_pipeline(
+        llm,
+        settings=_settings(),
+        parsed=_parsed(body="Someone died. What should I do?"),
+        thread_messages=[],
+        current_date_utc=datetime(2026, 7, 25, tzinfo=UTC),
+    )
+    assert prepared.action == "clarify"
+    assert prepared.used_fallback_renderer is True
+    assert "Which country did the death occur in" in prepared.body_markdown
 
 
 def test_two_pass_writer_fallback_after_validation_failures() -> None:
@@ -269,10 +350,24 @@ def test_two_pass_writer_fallback_after_validation_failures() -> None:
 
 def test_two_pass_research_failure_degrades_to_clarify() -> None:
     bad = _brief(sources=[], immediate_actions=[])
+    written = LexWrittenResponse(
+        response_version="lex_written_response_v1",
+        body_markdown=(
+            "I'm sorry this is a lot to hold. I can still help if you tell me "
+            "the country, and the city or commune if you know it. Reply with "
+            "what you have and I'll continue from there."
+        ),
+        used_action_ids=[],
+        used_source_ids=[],
+        used_contact_ids=[],
+    )
     llm = FakeLlmAdapter(
         structured_responses=[
             _structured(bad.model_dump(mode="json"), response_id="r1"),
             _structured(bad.model_dump(mode="json"), response_id="r2"),
+            _structured(
+                written.model_dump(mode="json"), response_id="w1", search=False
+            ),
         ]
     )
     prepared = run_two_pass_pipeline(
@@ -284,7 +379,9 @@ def test_two_pass_research_failure_degrades_to_clarify() -> None:
     )
     assert prepared.action == "clarify"
     assert prepared.body_markdown.rstrip().endswith("Lex.")
-    assert "sorry" in prepared.body_markdown.casefold()
+    assert prepared.used_fallback_renderer is False
+    assert "Which country did the person die in" not in prepared.body_markdown
+    assert "country" in prepared.body_markdown.casefold()
 
 
 def test_valid_long_writer_body_passes() -> None:
