@@ -10,6 +10,10 @@ updates:
     groups:
       all-npm:
         patterns: ["*"]
+    ignore:
+      # typescript-eslint does not support TS 7.0; remove when TS 7.1 lands
+      - dependency-name: "typescript"
+        versions: [">=7.0.0 <7.1.0"]
 
   - package-ecosystem: "pip"
     directory: "/services/lex"
