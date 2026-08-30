@@ -47,6 +47,20 @@ rejects any other `GCP_REGION` at startup.
   input up to 120,000 characters.
 - Automatic messages, bounces, loops, and list mail are ignored.
 
+## Generation
+
+In-scope model-eligible mail uses **one** OpenAI Responses API call with web
+search and structured schema `lex_response_v1`. The application then keeps
+only this-turn search URLs, coerces a parsed body if remaining schema checks
+fail, and composes sources, `Lex.` sign-off, continuation, and footer.
+
+The reply body is written in the same language as the latest user message, or
+in a language the user asked for. No country graph or legislation files are
+injected.
+
+If the provider is unavailable, the worker requeues. The English technical-failure
+template is used only after `max_process_attempts` (see ADR 0007).
+
 ## Application-composed multipart email
 
 Every outgoing email — including deterministic operational responses — goes

@@ -1,8 +1,8 @@
 """Processing worker — Phase 4: lease, gates, model pipeline, and send.
 
 After a lease is acquired the worker parses the inbound message, applies
-deterministic gates, and when all gates pass runs the model pipeline, renders
-sources, composes the outbound email, and sends via Gmail.
+deterministic gates, and when all gates pass runs one search-enabled model
+call, renders sources, composes the outbound email, and sends via Gmail.
 """
 
 from __future__ import annotations
@@ -48,12 +48,7 @@ from app.services.gates import (
     evaluate_thread_closed_gate,
     send_template_reply,
 )
-from app.services.model_pipeline import ModelPipelineFailure, run_model_pipeline
-from app.pipeline.two_pass import (
-    TwoPassPipelineFailure,
-    prepared_to_lex_response,
-    run_two_pass_pipeline,
-)
+from app.services.model_pipeline import run_model_pipeline
 from app.services.outbound import send_lex_reply
 from app.services.thread_context import prior_thread_history
 
@@ -183,7 +178,7 @@ class Processor:
             )
             raise
 
-    def _run_after_lease(
+    def _run_after_lease(  # noqa: PLR0911
         self,
         key: str,
         *,
@@ -368,63 +363,30 @@ class Processor:
         prior_lex_replies: int,
         lex_addresses: frozenset[str],
     ) -> ProcessResult:
-        try:
-            if getattr(self._settings, "generation_pipeline", "single_pass") == "two_pass":
-                prepared = run_two_pass_pipeline(
-                    self._llm,
-                    settings=self._settings,
-                    parsed=parsed,
-                    thread_messages=list(thread_messages),
-                    current_date_utc=self._clock.now(),
-                )
-                lex_response = prepared_to_lex_response(prepared)
-                openai_response_id = prepared.openai_response_id
-                prompt_version = prepared.prompt_version
-                schema_version = prepared.schema_version
-                pipeline_version = prepared.pipeline_version
-                writer_fallback_used = prepared.used_fallback_renderer
-            else:
-                system_prompt = load_prompt(self._settings.prompt_path)
-                history = prior_thread_history(
-                    thread_messages,
-                    latest_message_id=parsed.message_id,
-                    settings=self._settings,
-                )
-                envelope = build_runtime_envelope(
-                    parsed=parsed,
-                    conversation_history=history,
-                    current_date_utc=self._clock.now(),
-                    prompt_version=self._settings.prompt_version,
-                    delivery_channel=parsed.delivery_channel,
-                )
-                generation = run_model_pipeline(
-                    self._llm,
-                    system_prompt=system_prompt,
-                    runtime_envelope=envelope,
-                )
-                lex_response = generation.response
-                openai_response_id = generation.openai_response_id
-                prompt_version = self._settings.prompt_version
-                schema_version = SCHEMA_VERSION
-                pipeline_version = None
-                writer_fallback_used = None
-        except (ModelPipelineFailure, TwoPassPipelineFailure) as exc:
-            return self._send_technical_failure(
-                key,
-                parsed=parsed,
-                recipients=recipients,
-                attempt_count=attempt_count,
-                error_code=exc.code,
-            )
-        except Exception as exc:
-            code = getattr(exc, "code", "model_pipeline_error")
-            return self._send_technical_failure(
-                key,
-                parsed=parsed,
-                recipients=recipients,
-                attempt_count=attempt_count,
-                error_code=str(code),
-            )
+        system_prompt = load_prompt(self._settings.prompt_path)
+        history = prior_thread_history(
+            thread_messages,
+            latest_message_id=parsed.message_id,
+            settings=self._settings,
+        )
+        envelope = build_runtime_envelope(
+            parsed=parsed,
+            conversation_history=history,
+            current_date_utc=self._clock.now(),
+            prompt_version=self._settings.prompt_version,
+            delivery_channel=parsed.delivery_channel,
+        )
+        generation = run_model_pipeline(
+            self._llm,
+            system_prompt=system_prompt,
+            runtime_envelope=envelope,
+        )
+        lex_response = generation.response
+        openai_response_id = generation.openai_response_id
+        prompt_version = self._settings.prompt_version
+        schema_version = SCHEMA_VERSION
+        pipeline_version = self._settings.pipeline_version
+        writer_fallback_used = None
 
         body_with_sources = insert_sources_before_signoff(
             lex_response.body_markdown,

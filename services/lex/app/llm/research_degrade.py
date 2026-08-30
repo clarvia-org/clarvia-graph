@@ -9,6 +9,7 @@ from app.llm.research_schema import LexResearchBrief, MissingField
 from app.llm.research_validation import (
     ResearchValidationError,
     _fact_grounded,
+    drop_already_known_missing_fields,
     validate_research_brief,
 )
 
@@ -47,7 +48,8 @@ def _infer_missing_fields(
     if not fields:
         fields.append("other")
     # Cap to schema max_length 5; prefer the first useful asks.
-    return fields[:3]
+    usable = drop_already_known_missing_fields(fields[:3], brief.jurisdictions)
+    return usable or ["other"]
 
 
 def _drop_all_ungrounded_facts(
@@ -70,9 +72,11 @@ def _drop_all_ungrounded_facts(
 def _to_clarify_brief(
     brief: LexResearchBrief, conversation_text: str
 ) -> LexResearchBrief:
-    fields = list(brief.missing_fields) or _infer_missing_fields(
-        brief, conversation_text
+    fields = drop_already_known_missing_fields(
+        list(brief.missing_fields), brief.jurisdictions
     )
+    if not fields:
+        fields = _infer_missing_fields(brief, conversation_text)
     if not fields:
         fields = ["other"]
     return brief.model_copy(

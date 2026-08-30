@@ -183,13 +183,29 @@ def test_pipeline_retries_once_when_answer_lacks_search() -> None:
     assert llm.calls[1]["force_web_search"] is True
 
 
-def test_pipeline_raises_after_second_failure() -> None:
+def test_pipeline_coerces_after_second_failure() -> None:
     bad = generation_result_from_response(
         make_answer_response(),
         source_urls=frozenset(),
         web_search_calls=0,
     )
     llm = FakeLlmAdapter(responses=[bad, bad])
+
+    result = run_model_pipeline(
+        llm,
+        system_prompt="prompt",
+        runtime_envelope="envelope",
+    )
+
+    assert result.response.action == "clarify"
+    assert result.response.body_markdown.strip().endswith("Lex.")
+    assert "Commune" in result.response.body_markdown or "commune" in (
+        result.response.body_markdown.casefold()
+    )
+
+
+def test_pipeline_requeues_when_both_generates_fail() -> None:
+    llm = FakeLlmAdapter(default_error=ValueError("missing_structured_output"))
 
     with pytest.raises(ModelPipelineFailure) as exc:
         run_model_pipeline(
@@ -198,7 +214,22 @@ def test_pipeline_raises_after_second_failure() -> None:
             runtime_envelope="envelope",
         )
 
+    assert exc.value.code == "missing_structured_output"
     assert exc.value.attempt_count == 2
+
+
+def test_pipeline_does_not_swallow_provider_outage() -> None:
+    class _Upstream(RuntimeError):
+        status_code = 503
+
+    llm = FakeLlmAdapter(default_error=_Upstream("unavailable"))
+
+    with pytest.raises(_Upstream):
+        run_model_pipeline(
+            llm,
+            system_prompt="prompt",
+            runtime_envelope="envelope",
+        )
 
 
 def test_clarify_without_search_passes_pipeline() -> None:

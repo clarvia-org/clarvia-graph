@@ -58,4 +58,5 @@ def test_envelope_contains_controlled_context_and_redacted_body() -> None:
     assert "latest_message_id: m1" in envelope
     assert "Death registration" in envelope
     assert "Luxembourg" in envelope
+    assert "reply_language:" in envelope
     assert "user@example.com" not in envelope

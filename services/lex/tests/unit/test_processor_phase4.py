@@ -5,14 +5,16 @@ from __future__ import annotations
 import base64
 import itertools
 
-from app.domain.labels import LEX_FAILED, LEX_PROCESSED
+import pytest
+from app.domain.labels import LEX_PROCESSED
 from app.domain.models import ParsedMessage, ProcessingStatus
 from app.infrastructure.clock import FakeClock
 from app.infrastructure.daily_usage import InMemoryDailyUsage
 from app.infrastructure.memory import InMemoryGmail, InMemoryMessageState
 from app.infrastructure.openai import FakeLlmAdapter, generation_result_from_response
 from app.infrastructure.rate_limit import InMemoryRateLimit
-from app.services.processor import PROCESS_STATUS_FAILED, PROCESS_STATUS_SENT, Processor
+from app.services.model_pipeline import ModelPipelineFailure
+from app.services.processor import PROCESS_STATUS_SENT, Processor
 
 from .conftest import (
     build_settings,
@@ -127,7 +129,7 @@ def test_answer_without_search_retries_then_sends(synthetic_prompt: str) -> None
     assert llm.calls[1]["force_web_search"] is True
 
 
-def test_double_validation_failure_sends_technical_failure(
+def test_double_validation_failure_still_sends(
     synthetic_prompt: str,
 ) -> None:
     bad = generation_result_from_response(
@@ -141,11 +143,44 @@ def test_double_validation_failure_sends_technical_failure(
 
     result = harness.processor.run(gmail_message_id="m1")
 
-    assert result.status == PROCESS_STATUS_FAILED
-    assert LEX_FAILED in harness.gmail.labels_for("m1")
+    assert result.status == PROCESS_STATUS_SENT
     record = harness.state.get_record("m1")
     assert record is not None
-    assert record.status is ProcessingStatus.FAILED
+    assert record.status is ProcessingStatus.SENT
+    assert LEX_PROCESSED in harness.gmail.labels_for("m1")
+    assert harness.gmail.last_sent_raw is not None
+    decoded = base64.urlsafe_b64decode(harness.gmail.last_sent_raw).decode("utf-8")
+    assert "full verified answer in one pass" not in decoded
+
+
+def test_unparseable_model_output_requeues(synthetic_prompt: str) -> None:
+    llm = FakeLlmAdapter(default_error=ValueError("missing_structured_output"))
+    harness = Harness(llm=llm, prompt_path=synthetic_prompt)
+    harness.seed_eligible()
+
+    with pytest.raises(ModelPipelineFailure) as exc:
+        harness.processor.run(gmail_message_id="m1")
+
+    assert exc.value.code == "missing_structured_output"
+    record = harness.state.get_record("m1")
+    assert record is not None
+    assert record.status is ProcessingStatus.QUEUED
+
+
+def test_provider_outage_requeues(synthetic_prompt: str) -> None:
+    class _Upstream(RuntimeError):
+        status_code = 503
+
+    llm = FakeLlmAdapter(default_error=_Upstream("unavailable"))
+    harness = Harness(llm=llm, prompt_path=synthetic_prompt)
+    harness.seed_eligible()
+
+    with pytest.raises(_Upstream):
+        harness.processor.run(gmail_message_id="m1")
+
+    record = harness.state.get_record("m1")
+    assert record is not None
+    assert record.status is ProcessingStatus.QUEUED
 
 
 def test_clarify_without_search_is_sent(synthetic_prompt: str) -> None:

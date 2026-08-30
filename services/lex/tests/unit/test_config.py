@@ -31,13 +31,14 @@ def test_defaults_match_blueprint() -> None:
     assert settings.include_thread_quote is True
     assert settings.max_body_chars == 100_000
     assert settings.max_thread_chars == 120_000
-    assert settings.generation_pipeline == "two_pass"
+    assert settings.generation_pipeline == "single_pass"
     assert settings.research_prompt_version == "lex-research-v1"
     assert settings.writer_prompt_version == "lex-writer-v1"
     assert settings.research_max_output_tokens == 12000
     assert settings.writer_max_output_tokens == 4000
     assert settings.max_writer_history_chars == 20_000
-    assert settings.pipeline_version == "two-pass-v1"
+    assert settings.pipeline_version == "single-pass-v1"
+    assert settings.max_output_tokens == 12000
 
 
 @pytest.mark.usefixtures("clean_env")
