@@ -13,6 +13,26 @@ from app.llm.validation import LexValidationError, validate_lex_response
 
 _LOG = logging.getLogger(__name__)
 _CITATION_RE = re.compile(r"\[(\d+)\]")
+_SIGN_OFF_RE = re.compile(r"(?:\n|^)Lex\.\s*$")
+# Schema/URL failures we can still send as a sourced answer after repair.
+# Any other validation code (neutrality, HTML, donation, unknown future
+# content-quality codes) is demoted to clarify so we do not stamp "adequate".
+_KEEP_SOURCED_ANSWER_CODES = frozenset(
+    {
+        "answer_without_search",
+        "unsupported_source_url",
+        "unsupported_contact_website",
+        "answer_without_source",
+        "answer_research_not_adequate",
+        "citation_without_source",
+        "uncited_source",
+        "contact_without_source",
+        "contact_not_in_body",
+        "non_contiguous_source_ids",
+        "non_contiguous_contact_ids",
+        "missing_sign_off",
+    }
+)
 _DASH_CHARS = (
     "\u2010",  # hyphen
     "\u2011",  # non-breaking hyphen
@@ -88,6 +108,13 @@ def _try_generate(
     except Exception as exc:  # noqa: BLE001 — empty JSON vs provider outage
         if _is_retryable_provider_error(exc):
             raise
+        _LOG.warning(
+            "lex_generate_unusable force_web_search=%s error_type=%s error=%s",
+            force_web_search,
+            type(exc).__name__,
+            str(exc)[:200],
+            exc_info=True,
+        )
         return None
     return _normalize_model_response(result)
 
@@ -136,44 +163,52 @@ def run_model_pipeline(
         return candidate
     except LexValidationError as error:
         _LOG.info("lex_response_coerced code=%s", error.code)
-        return _coerce_sendable(candidate)
+        return _coerce_sendable(candidate, reason=error.code)
+
+
+def _normalize_newlines(text: str) -> str:
+    return text.replace("\r\n", "\n").replace("\r", "\n")
 
 
 def _ensure_lex_signoff(body: str) -> str:
-    stripped = body.rstrip()
-    if re.search(r"(?:\n|^)Lex\.\s*$", stripped):
+    stripped = _normalize_newlines(body).rstrip()
+    if _SIGN_OFF_RE.search(stripped):
         return stripped
     return f"{stripped}\n\nLex."
 
 
-def _coerce_sendable(result: LlmGenerationResult) -> LlmGenerationResult:
+def _strip_answer_grounding(body: str) -> str:
+    body = _CITATION_RE.sub("", body)
+    body = re.sub(r"[ \t]+\n", "\n", body)
+    return re.sub(r" {2,}", " ", body)
+
+
+def _coerce_sendable(
+    result: LlmGenerationResult, *, reason: str
+) -> LlmGenerationResult:
     """Drop ungrounded extras so a parsed body can still be mailed."""
     response = result.response
-    body = _normalize_dashes(response.body_markdown)
+    body = _normalize_dashes(_normalize_newlines(response.body_markdown))
     sources = list(response.sources)
     contacts = list(response.contacts)
     action = response.action
     research_status = response.research_status
 
-    if action == "answer" and result.web_search_source_urls:
-        body, sources, contacts = _repair_search_evidence(
-            body,
-            sources,
-            contacts,
-            search_urls=list(result.web_search_source_urls),
-        )
-
-    if action == "answer":
-        if result.web_search_calls < 1 or not sources:
-            action = "clarify"
-            research_status = "not_needed"
-            sources = []
-            contacts = []
-            body = _CITATION_RE.sub("", body)
-            body = re.sub(r"[ \t]+\n", "\n", body)
-            body = re.sub(r" {2,}", " ", body)
-        else:
-            research_status = "adequate"
+    keep_sourced_answer = (
+        action == "answer"
+        and reason in _KEEP_SOURCED_ANSWER_CODES
+        and result.web_search_calls >= 1
+        and bool(result.web_search_source_urls)
+        and bool(sources)
+    )
+    if action == "answer" and not keep_sourced_answer:
+        action = "clarify"
+        research_status = "not_needed"
+        sources = []
+        contacts = []
+        body = _strip_answer_grounding(body)
+    elif action == "answer":
+        research_status = "adequate"
     if action == "clarify":
         research_status = "not_needed"
     if action == "decline":
@@ -205,7 +240,7 @@ def _coerce_sendable(result: LlmGenerationResult) -> LlmGenerationResult:
 def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResult:
     """Deterministic fixes so common model slips pass blueprint validation."""
     response = result.response
-    body = _normalize_dashes(response.body_markdown)
+    body = _normalize_dashes(_normalize_newlines(response.body_markdown))
     sources = [
         source.model_copy(
             update={

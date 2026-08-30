@@ -13,7 +13,7 @@ from collections.abc import Collection
 from app.llm.schema import LexResponse
 from app.llm.url_normalize import match_search_url
 
-_SIGN_OFF_RE = re.compile(r"(?:^|\n)Lex\.\s*$")
+_SIGN_OFF_RE = re.compile(r"(?:^|\n|\r)Lex\.\s*$")
 _CITATION_RE = re.compile(r"\[(\d+)\]")
 _CODE_FENCE_RE = re.compile(r"```|~~~")
 _HTML_TAG_RE = re.compile(

@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import logging
+
 import pytest
 from app.infrastructure.openai import FakeLlmAdapter, generation_result_from_response
 from app.llm.validation import LexValidationError, validate_lex_response
@@ -94,9 +96,7 @@ def test_pipeline_repairs_unsupported_contact_website() -> None:
     assert exc.value.code == "unsupported_contact_website"
 
     llm = FakeLlmAdapter(
-        responses=[
-            generation_result_from_response(broken, source_urls=allowed)
-        ]
+        responses=[generation_result_from_response(broken, source_urls=allowed)]
     )
     result = run_model_pipeline(
         llm,
@@ -113,13 +113,9 @@ def test_pipeline_repairs_unsupported_contact_website() -> None:
 
 def test_pipeline_preserves_em_dash_in_contact_names() -> None:
     response = make_answer_response()
-    contact = response.contacts[0].model_copy(
-        update={"name": "Commune\u2014office"}
-    )
+    contact = response.contacts[0].model_copy(update={"name": "Commune\u2014office"})
     body = response.body_markdown.replace("Commune office", "Commune\u2014office")
-    dashed = response.model_copy(
-        update={"body_markdown": body, "contacts": [contact]}
-    )
+    dashed = response.model_copy(update={"body_markdown": body, "contacts": [contact]})
     llm = FakeLlmAdapter(
         responses=[
             generation_result_from_response(
@@ -204,10 +200,65 @@ def test_pipeline_coerces_after_second_failure() -> None:
     )
 
 
-def test_pipeline_requeues_when_both_generates_fail() -> None:
+def test_pipeline_demotes_content_quality_failure_to_clarify() -> None:
+    response = make_answer_response(
+        body_markdown="We recommend Commune office for families [1].\n\nLex."
+    )
+    bad = generation_result_from_response(response)
+    llm = FakeLlmAdapter(responses=[bad, bad])
+
+    result = run_model_pipeline(
+        llm,
+        system_prompt="prompt",
+        runtime_envelope="envelope",
+    )
+
+    assert result.response.action == "clarify"
+    assert result.response.research_status == "not_needed"
+    assert result.response.sources == []
+    assert result.response.contacts == []
+    assert "[1]" not in result.response.body_markdown
+    assert "Commune office" in result.response.body_markdown
+
+
+def test_pipeline_keeps_answer_when_only_research_status_is_wrong() -> None:
+    response = make_answer_response(research_status="insufficient")
+    result = run_model_pipeline(
+        FakeLlmAdapter(responses=[generation_result_from_response(response)] * 2),
+        system_prompt="prompt",
+        runtime_envelope="envelope",
+    )
+
+    assert result.response.action == "answer"
+    assert result.response.research_status == "adequate"
+    assert result.response.sources
+
+
+def test_pipeline_does_not_duplicate_crlf_signoff() -> None:
+    response = make_answer_response(
+        body_markdown=(
+            "Contact the Commune office for registration [1].\r\n\r\nLex.\r\n"
+        )
+    )
+    result = run_model_pipeline(
+        FakeLlmAdapter(responses=[generation_result_from_response(response)]),
+        system_prompt="prompt",
+        runtime_envelope="envelope",
+    )
+
+    assert result.response.body_markdown.count("Lex.") == 1
+    assert "\r" not in result.response.body_markdown
+
+
+def test_pipeline_requeues_when_both_generates_fail(
+    caplog: pytest.LogCaptureFixture,
+) -> None:
     llm = FakeLlmAdapter(default_error=ValueError("missing_structured_output"))
 
-    with pytest.raises(ModelPipelineFailure) as exc:
+    with (
+        caplog.at_level(logging.WARNING),
+        pytest.raises(ModelPipelineFailure) as exc,
+    ):
         run_model_pipeline(
             llm,
             system_prompt="prompt",
@@ -216,6 +267,8 @@ def test_pipeline_requeues_when_both_generates_fail() -> None:
 
     assert exc.value.code == "missing_structured_output"
     assert exc.value.attempt_count == 2
+    assert "lex_generate_unusable" in caplog.text
+    assert "ValueError" in caplog.text
 
 
 def test_pipeline_does_not_swallow_provider_outage() -> None:
