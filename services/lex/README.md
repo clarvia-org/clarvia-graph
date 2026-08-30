@@ -45,6 +45,7 @@ In scope: practical and administrative process after a death, and end-of-life pr
 - Cloud Run (FastAPI) · Cloud Scheduler → `/internal/poll` · Cloud Tasks → `/internal/process`
 - Gmail is conversation source of truth; Firestore holds operational metadata only (no bodies/subjects/addresses)
 - Outbound mail is application-composed `multipart/alternative` (body → continuation → footer)
+- Generation: one search-enabled Responses API call (`lex-v1` / `lex_response_v1`); application strips off-search URLs (ADR 0007)
 - Details: `docs/architecture.md` and `docs/adr/`
 
 ### Public / private boundary

@@ -344,3 +344,18 @@ def test_fake_structured_adapter_supports_two_schemas() -> None:
     )
     assert first.data["action"] == "answer"
     assert "hospice" in str(second.data["body_markdown"]).casefold()
+
+
+def test_error_code_prefers_structured_message_over_class_name() -> None:
+    from app.pipeline.two_pass import _error_code_from_exception
+
+    assert (
+        _error_code_from_exception(
+            ValueError("missing_structured_output:status=incomplete")
+        )
+        == "missing_structured_output"
+    )
+    assert (
+        _error_code_from_exception(ResearchValidationError("user_fact_not_grounded"))
+        == "user_fact_not_grounded"
+    )

@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import logging
 import re
-from collections.abc import Collection
+from collections.abc import Collection, Sequence
+from typing import TypeVar
 from urllib.parse import urlparse
 
 from app.llm.research_schema import LexResearchBrief
@@ -28,12 +29,31 @@ _DEFERRED_TOPIC_RE = re.compile(
     r")\b"
 )
 
+_FieldT = TypeVar("_FieldT", bound=str)
+
 _MISSING_FIELD_JURISDICTION_ROLE: dict[str, str] = {
     "death_country": "death_location",
     "residence_country": "habitual_residence",
     "care_country": "care_location",
     "asset_country": "asset_location",
 }
+
+
+def drop_already_known_missing_fields(
+    fields: Sequence[_FieldT],
+    jurisdictions: Collection[object],
+) -> list[_FieldT]:
+    """Drop missing_fields whose jurisdiction role is already known."""
+    known_roles = {
+        getattr(item, "role", None)
+        for item in jurisdictions
+        if getattr(item, "country_code", "ZZ") != "ZZ"
+    }
+    return [
+        field
+        for field in fields
+        if _MISSING_FIELD_JURISDICTION_ROLE.get(field) not in known_roles
+    ]
 
 _FACT_STOPWORDS: frozenset[str] = frozenset(
     {
@@ -623,13 +643,15 @@ def validate_research_brief(
         if action.action.casefold() in completed_folded:
             raise ResearchValidationError("completed_action_repeated")
 
-    for field in brief.missing_fields:
-        role = _MISSING_FIELD_JURISDICTION_ROLE.get(field)
-        if role and any(
-            jurisdiction.role == role and jurisdiction.country_code != "ZZ"
-            for jurisdiction in brief.jurisdictions
-        ):
-            raise ResearchValidationError("missing_field_already_known")
+    cleaned_missing = drop_already_known_missing_fields(
+        list(brief.missing_fields), brief.jurisdictions
+    )
+    if cleaned_missing != list(brief.missing_fields):
+        _LOG.info(
+            "Stripped already-known missing_fields: %s",
+            [field for field in brief.missing_fields if field not in cleaned_missing],
+        )
+        brief.missing_fields = cleaned_missing
 
     if brief.action == "answer":
         _require(
@@ -707,6 +729,7 @@ def validate_research_brief(
 
 __all__ = [
     "ResearchValidationError",
+    "drop_already_known_missing_fields",
     "fact_is_material",
     "requires_full_immediate_checklist",
     "validate_research_brief",

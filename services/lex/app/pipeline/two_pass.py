@@ -37,6 +37,19 @@ _SIGN_OFF_RE = re.compile(r"(?:\n|^)Lex\.\s*$")
 PIPELINE_VERSION = "two-pass-v1"
 
 
+def _error_code_from_exception(exc: BaseException) -> str:
+    """Prefer a stable code over a Python exception class name."""
+    code = getattr(exc, "code", None)
+    if isinstance(code, str) and code.strip():
+        return code.strip()
+    text = str(exc).strip()
+    if text:
+        token = text.split(":", 1)[0].strip()
+        if token and " " not in token and len(token) <= 80:
+            return token
+    return type(exc).__name__
+
+
 @dataclass(frozen=True, slots=True)
 class TwoPassPipelineFailure(Exception):
     code: str
@@ -149,9 +162,7 @@ def run_two_pass_pipeline(
     writer_schema = str(
         _settings_value(settings, "writer_schema_version", WRITER_SCHEMA_VERSION)
     )
-    pipeline_version = str(
-        _settings_value(settings, "pipeline_version", PIPELINE_VERSION)
-    )
+    pipeline_version = PIPELINE_VERSION
 
     cleaned = prepare_cleaned_conversation(
         parsed=parsed,
@@ -275,7 +286,7 @@ def _run_research_with_retry(
                 "unsupported_contact_website",
             }
         except Exception as exc:  # noqa: BLE001
-            last_error = getattr(exc, "code", type(exc).__name__)
+            last_error = _error_code_from_exception(exc)
             correction = (
                 "The previous research brief failed. Correct it using only the "
                 "cleaned conversation and verified web-search sources."
@@ -338,7 +349,7 @@ def _run_writer_with_retry(
             last_error = exc.code
             correction = exc.safe_retry_instruction
         except Exception as exc:  # noqa: BLE001
-            last_error = getattr(exc, "code", type(exc).__name__)
+            last_error = _error_code_from_exception(exc)
             correction = (
                 "The previous draft failed. Rewrite using only the verified "
                 "research brief."

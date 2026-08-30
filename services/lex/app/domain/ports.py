@@ -136,6 +136,7 @@ class MessageStatePort(Protocol):
         *,
         sender_hmac: str | None = None,
         visible_recipient_count: int | None = None,
+        llm_call_count: int | None = None,
     ) -> ProcessingRecord | None: ...
 
     def record_successful_send(

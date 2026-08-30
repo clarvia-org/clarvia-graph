@@ -48,7 +48,7 @@ class Settings(BaseSettings):
     lex_mailbox: str = "lex@clarvia.org"
     openai_model: str = "gpt-5.6-luna"
     openai_api_key: str = ""
-    max_output_tokens: int = 2400
+    max_output_tokens: int = 12000
     research_max_output_tokens: int = 12000
     writer_max_output_tokens: int = 4000
     prompt_version: str = "lex-v1"
@@ -81,12 +81,12 @@ class Settings(BaseSettings):
         ),
     )
     generation_pipeline: GenerationPipeline = Field(
-        default="two_pass",
+        default="single_pass",
         validation_alias=AliasChoices(
             "LEX_GENERATION_PIPELINE", "generation_pipeline"
         ),
     )
-    pipeline_version: str = "two-pass-v1"
+    pipeline_version: str = "single-pass-v1"
     schema_version: str = "lex_response_v1"
     research_schema_version: str = Field(
         default="lex_research_brief_v1",
@@ -125,6 +125,7 @@ class Settings(BaseSettings):
     poll_max_results: int = 50
     lease_duration_seconds: int = 600
     max_process_attempts: int = 8
+    max_llm_calls_per_message: int = 2
     cloud_tasks_queue: str = "lex-process"
     cloud_tasks_location: str = REQUIRED_REGION
     cloud_tasks_target_url: str = ""
@@ -192,6 +193,7 @@ class Settings(BaseSettings):
         "poll_max_results",
         "lease_duration_seconds",
         "max_process_attempts",
+        "max_llm_calls_per_message",
         "max_output_tokens",
         "research_max_output_tokens",
         "writer_max_output_tokens",

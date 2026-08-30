@@ -3,8 +3,13 @@
 from __future__ import annotations
 
 from app.llm.research_degrade import degrade_failed_research_brief
-from app.llm.research_schema import ResearchImmediateAction, ResearchSource
+from app.llm.research_schema import (
+    ResearchImmediateAction,
+    ResearchJurisdiction,
+    ResearchSource,
+)
 from app.llm.research_validation import validate_research_brief
+
 from tests.unit.test_two_pass import _brief
 
 
@@ -134,3 +139,45 @@ def test_second_turn_facts_allow_answer_path() -> None:
     )
     assert brief.action == "answer"
     assert len(brief.immediate_actions) >= 3
+
+
+def test_degrade_strips_already_known_missing_fields() -> None:
+    """Conflicting missing_fields must not abort the last-resort clarify."""
+    brief = _brief(
+        missing_fields=["death_country", "care_country"],
+        jurisdictions=[
+            ResearchJurisdiction(
+                country_code="LU",
+                subdivision="Luxembourg",
+                role="death_location",
+            ),
+            ResearchJurisdiction(
+                country_code="LU",
+                subdivision=None,
+                role="care_location",
+            ),
+        ],
+        sources=[],
+        contacts=[],
+        immediate_actions=[],
+    )
+    degraded = degrade_failed_research_brief(
+        brief,
+        conversation_text=(
+            "मेरो आमा लक्जेम्बर्गको अस्पतालमा हुनुहुन्छ। उहाँको मृत्यु नजिक छ। "
+            "अब परिवारले के गर्नुपर्छ?"
+        ),
+        last_error="missing_field_already_known",
+    )
+    assert degraded is not None
+    assert degraded.action == "clarify"
+    assert "death_country" not in degraded.missing_fields
+    assert "care_country" not in degraded.missing_fields
+    assert degraded.missing_fields
+    validate_research_brief(
+        degraded,
+        conversation_text=(
+            "मेरो आमा लक्जेम्बर्गको अस्पतालमा हुनुहुन्छ। उहाँको मृत्यु नजिक छ। "
+            "अब परिवारले के गर्नुपर्छ?"
+        ),
+    )

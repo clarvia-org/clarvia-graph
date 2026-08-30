@@ -127,7 +127,7 @@ def test_answer_without_search_retries_then_sends(synthetic_prompt: str) -> None
     assert llm.calls[1]["force_web_search"] is True
 
 
-def test_double_validation_failure_sends_technical_failure(
+def test_double_validation_failure_still_sends(
     synthetic_prompt: str,
 ) -> None:
     bad = generation_result_from_response(
@@ -141,11 +141,68 @@ def test_double_validation_failure_sends_technical_failure(
 
     result = harness.processor.run(gmail_message_id="m1")
 
+    assert result.status == PROCESS_STATUS_SENT
+    record = harness.state.get_record("m1")
+    assert record is not None
+    assert record.status is ProcessingStatus.SENT
+    assert LEX_PROCESSED in harness.gmail.labels_for("m1")
+    assert harness.gmail.last_sent_raw is not None
+    decoded = base64.urlsafe_b64decode(harness.gmail.last_sent_raw).decode("utf-8")
+    assert "full verified answer in one pass" not in decoded
+
+
+def test_unparseable_model_output_sends_technical_failure(
+    synthetic_prompt: str,
+) -> None:
+    llm = FakeLlmAdapter(default_error=ValueError("missing_structured_output"))
+    harness = Harness(llm=llm, prompt_path=synthetic_prompt)
+    harness.seed_eligible()
+
+    result = harness.processor.run(gmail_message_id="m1")
+
     assert result.status == PROCESS_STATUS_FAILED
-    assert LEX_FAILED in harness.gmail.labels_for("m1")
+    assert len(llm.calls) == 1
     record = harness.state.get_record("m1")
     assert record is not None
     assert record.status is ProcessingStatus.FAILED
+    assert record.llm_call_count == 1
+    assert LEX_FAILED in harness.gmail.labels_for("m1")
+    assert harness.gmail.last_sent_raw is not None
+    decoded = base64.urlsafe_b64decode(harness.gmail.last_sent_raw).decode("utf-8")
+    assert "full verified answer in one pass" in decoded
+
+
+def test_provider_outage_sends_technical_failure(synthetic_prompt: str) -> None:
+    class _Upstream(RuntimeError):
+        status_code = 503
+
+    llm = FakeLlmAdapter(default_error=_Upstream("unavailable"))
+    harness = Harness(llm=llm, prompt_path=synthetic_prompt)
+    harness.seed_eligible()
+
+    result = harness.processor.run(gmail_message_id="m1")
+
+    assert result.status == PROCESS_STATUS_FAILED
+    assert len(llm.calls) == 1
+    record = harness.state.get_record("m1")
+    assert record is not None
+    assert record.llm_call_count == 1
+    assert LEX_FAILED in harness.gmail.labels_for("m1")
+
+
+def test_spent_llm_budget_does_not_call_the_model(synthetic_prompt: str) -> None:
+    llm = fake_llm_for_responses(make_clarify_response())
+    harness = Harness(llm=llm, prompt_path=synthetic_prompt)
+    harness.seed_eligible()
+    record = harness.state.get_record("m1")
+    assert record is not None
+    harness.state.update_metadata("m1", llm_call_count=2)
+
+    result = harness.processor.run(gmail_message_id="m1")
+
+    assert result.status == PROCESS_STATUS_FAILED
+    assert llm.calls == []
+    assert LEX_FAILED in harness.gmail.labels_for("m1")
 
 
 def test_clarify_without_search_is_sent(synthetic_prompt: str) -> None:

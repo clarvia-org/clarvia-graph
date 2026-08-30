@@ -569,23 +569,23 @@ def test_research_focused_follow_up_and_missing_field_conflicts() -> None:
         ),
     )
 
-    with pytest.raises(ResearchValidationError) as exc:
-        validate_research_brief(
-            _brief(
-                missing_fields=["death_country"],
-                jurisdictions=[
-                    ResearchJurisdiction(
-                        country_code="LU",
-                        subdivision="Luxembourg",
-                        role="death_location",
-                    )
-                ],
-            ),
-            web_search_source_urls=_URLS,
-            web_search_calls=1,
-            conversation_text="Death was in Luxembourg at the hospice.",
-        )
-    assert exc.value.code == "missing_field_already_known"
+    known = _brief(
+        missing_fields=["death_country"],
+        jurisdictions=[
+            ResearchJurisdiction(
+                country_code="LU",
+                subdivision="Luxembourg",
+                role="death_location",
+            )
+        ],
+    )
+    validate_research_brief(
+        known,
+        web_search_source_urls=_URLS,
+        web_search_calls=1,
+        conversation_text="Death was in Luxembourg at the hospice.",
+    )
+    assert "death_country" not in known.missing_fields
 
 
 def test_clarify_template_fallback_and_deterministic_renderer_branches() -> None:

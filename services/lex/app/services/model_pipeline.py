@@ -1,16 +1,38 @@
-"""Model generation, validation, and bounded retry (blueprint section 18.5)."""
+"""One search-enabled generation call, then repair or coerce to a sendable body."""
 
 from __future__ import annotations
 
+import logging
 import re
 from dataclasses import dataclass
 
-from app.domain.ports import LlmGenerationResult, LlmPort
-from app.llm.schema import LexContact, LexResponse, LexSource
+from app.domain.ports import LlmGenerationResult, LlmPort, StructuredLlmResult
+from app.llm.schema import LexContact, LexSource
 from app.llm.url_normalize import match_search_url
 from app.llm.validation import LexValidationError, validate_lex_response
 
+_LOG = logging.getLogger(__name__)
 _CITATION_RE = re.compile(r"\[(\d+)\]")
+_SIGN_OFF_RE = re.compile(r"(?:\n|^)Lex\.\s*$")
+# Schema/URL failures we can still send as a sourced answer after repair.
+# Any other validation code (neutrality, HTML, donation, unknown future
+# content-quality codes) is demoted to clarify so we do not stamp "adequate".
+_KEEP_SOURCED_ANSWER_CODES = frozenset(
+    {
+        "answer_without_search",
+        "unsupported_source_url",
+        "unsupported_contact_website",
+        "answer_without_source",
+        "answer_research_not_adequate",
+        "citation_without_source",
+        "uncited_source",
+        "contact_without_source",
+        "contact_not_in_body",
+        "non_contiguous_source_ids",
+        "non_contiguous_contact_ids",
+        "missing_sign_off",
+    }
+)
 _DASH_CHARS = (
     "\u2010",  # hyphen
     "\u2011",  # non-breaking hyphen
@@ -27,7 +49,7 @@ _DASH_CHARS = (
 
 @dataclass(frozen=True, slots=True)
 class ModelPipelineFailure(Exception):
-    """Raised after one regeneration attempt still fails validation."""
+    """Raised when generation cannot produce a usable body."""
 
     code: str
     attempt_count: int
@@ -54,19 +76,112 @@ def _should_force_search_on_retry(
     )
 
 
+def _is_retryable_provider_error(exc: BaseException) -> bool:
+    """True when Cloud Tasks should retry (outage / 5xx / rate limit)."""
+    status = getattr(exc, "status_code", None)
+    if isinstance(status, int) and (status == 429 or status >= 500):
+        return True
+    name = type(exc).__name__
+    if name in {
+        "APIConnectionError",
+        "APITimeoutError",
+        "RateLimitError",
+        "InternalServerError",
+    }:
+        return True
+    return isinstance(exc, TimeoutError | ConnectionError | OSError)
+
+
+@dataclass(slots=True)
+class CountingLlmAdapter:
+    """Count ``generate`` calls so one inbound mail cannot exceed the budget."""
+
+    inner: LlmPort
+    remaining: int
+    used: int = 0
+
+    def generate(
+        self,
+        *,
+        system_prompt: str,
+        runtime_envelope: str,
+        force_web_search: bool = False,
+    ) -> LlmGenerationResult:
+        if self.used >= self.remaining:
+            raise ModelPipelineFailure("llm_call_budget", attempt_count=self.used)
+        self.used += 1
+        return self.inner.generate(
+            system_prompt=system_prompt,
+            runtime_envelope=runtime_envelope,
+            force_web_search=force_web_search,
+        )
+
+    def generate_structured(
+        self,
+        *,
+        system_prompt: str,
+        runtime_envelope: str,
+        json_schema: dict[str, object],
+        schema_name: str,
+        enable_web_search: bool,
+        force_web_search: bool = False,
+        reasoning_effort: str | None = None,
+        max_output_tokens: int | None = None,
+    ) -> StructuredLlmResult:
+        return self.inner.generate_structured(
+            system_prompt=system_prompt,
+            runtime_envelope=runtime_envelope,
+            json_schema=json_schema,
+            schema_name=schema_name,
+            enable_web_search=enable_web_search,
+            force_web_search=force_web_search,
+            reasoning_effort=reasoning_effort,
+            max_output_tokens=max_output_tokens,
+        )
+
+
+def _try_generate(
+    llm: LlmPort,
+    *,
+    system_prompt: str,
+    runtime_envelope: str,
+    force_web_search: bool,
+) -> LlmGenerationResult | None:
+    try:
+        result = llm.generate(
+            system_prompt=system_prompt,
+            runtime_envelope=runtime_envelope,
+            force_web_search=force_web_search,
+        )
+    except Exception as exc:  # noqa: BLE001 — empty JSON vs provider outage
+        if _is_retryable_provider_error(exc):
+            raise
+        _LOG.warning(
+            "lex_generate_unusable force_web_search=%s error_type=%s error=%s",
+            force_web_search,
+            type(exc).__name__,
+            str(exc)[:200],
+            exc_info=True,
+        )
+        return None
+    return _normalize_model_response(result)
+
+
 def run_model_pipeline(
     llm: LlmPort,
     *,
     system_prompt: str,
     runtime_envelope: str,
 ) -> LlmGenerationResult:
-    """Generate, validate, retry once on failure, then fail closed."""
-    first = llm.generate(
+    """Generate once; retry only when a parsed body failed validation."""
+    first = _try_generate(
+        llm,
         system_prompt=system_prompt,
         runtime_envelope=runtime_envelope,
         force_web_search=False,
     )
-    first = _normalize_model_response(first)
+    if first is None:
+        raise ModelPipelineFailure("missing_structured_output", attempt_count=1)
     try:
         validate_lex_response(
             first.response,
@@ -76,29 +191,101 @@ def run_model_pipeline(
         return first
     except LexValidationError as first_error:
         force_search = _should_force_search_on_retry(first_error, first)
-        second = llm.generate(
-            system_prompt=system_prompt,
-            runtime_envelope=runtime_envelope,
-            force_web_search=force_search,
+
+    second = _try_generate(
+        llm,
+        system_prompt=system_prompt,
+        runtime_envelope=runtime_envelope,
+        force_web_search=force_search,
+    )
+    candidate = second if second is not None else first
+    try:
+        validate_lex_response(
+            candidate.response,
+            web_search_source_urls=candidate.web_search_source_urls,
+            web_search_calls=candidate.web_search_calls,
         )
-        second = _normalize_model_response(second)
-        try:
-            validate_lex_response(
-                second.response,
-                web_search_source_urls=second.web_search_source_urls,
-                web_search_calls=second.web_search_calls,
-            )
-            return second
-        except LexValidationError as second_error:
-            raise ModelPipelineFailure(
-                second_error.code, attempt_count=2
-            ) from second_error
+        return candidate
+    except LexValidationError as error:
+        _LOG.info("lex_response_coerced code=%s", error.code)
+        return _coerce_sendable(candidate, reason=error.code)
+
+
+def _normalize_newlines(text: str) -> str:
+    return text.replace("\r\n", "\n").replace("\r", "\n")
+
+
+def _ensure_lex_signoff(body: str) -> str:
+    stripped = _normalize_newlines(body).rstrip()
+    if _SIGN_OFF_RE.search(stripped):
+        return stripped
+    return f"{stripped}\n\nLex."
+
+
+def _strip_answer_grounding(body: str) -> str:
+    body = _CITATION_RE.sub("", body)
+    body = re.sub(r"[ \t]+\n", "\n", body)
+    return re.sub(r" {2,}", " ", body)
+
+
+def _coerce_sendable(
+    result: LlmGenerationResult, *, reason: str
+) -> LlmGenerationResult:
+    """Drop ungrounded extras so a parsed body can still be mailed."""
+    response = result.response
+    body = _normalize_dashes(_normalize_newlines(response.body_markdown))
+    sources = list(response.sources)
+    contacts = list(response.contacts)
+    action = response.action
+    research_status = response.research_status
+
+    keep_sourced_answer = (
+        action == "answer"
+        and reason in _KEEP_SOURCED_ANSWER_CODES
+        and result.web_search_calls >= 1
+        and bool(result.web_search_source_urls)
+        and bool(sources)
+    )
+    if action == "answer" and not keep_sourced_answer:
+        action = "clarify"
+        research_status = "not_needed"
+        sources = []
+        contacts = []
+        body = _strip_answer_grounding(body)
+    elif action == "answer":
+        research_status = "adequate"
+    if action == "clarify":
+        research_status = "not_needed"
+    if action == "decline":
+        sources = []
+        contacts = []
+        research_status = "not_needed"
+
+    body = _ensure_lex_signoff(body)
+    if not body.replace("Lex.", "").strip():
+        raise ModelPipelineFailure("empty_body", attempt_count=2)
+
+    repaired = response.model_copy(
+        update={
+            "action": action,
+            "research_status": research_status,
+            "body_markdown": body,
+            "sources": sources,
+            "contacts": contacts,
+        }
+    )
+    return LlmGenerationResult(
+        response=repaired,
+        openai_response_id=result.openai_response_id,
+        web_search_source_urls=result.web_search_source_urls,
+        web_search_calls=result.web_search_calls,
+    )
 
 
 def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResult:
     """Deterministic fixes so common model slips pass blueprint validation."""
     response = result.response
-    body = _normalize_dashes(response.body_markdown)
+    body = _normalize_dashes(_normalize_newlines(response.body_markdown))
     sources = [
         source.model_copy(
             update={
@@ -263,4 +450,4 @@ def _repair_search_evidence(
     return body, kept_sources, kept_contacts
 
 
-__all__ = ["ModelPipelineFailure", "run_model_pipeline"]
+__all__ = ["CountingLlmAdapter", "ModelPipelineFailure", "run_model_pipeline"]

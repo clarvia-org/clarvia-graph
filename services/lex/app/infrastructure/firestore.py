@@ -49,6 +49,7 @@ def record_to_document(record: ProcessingRecord) -> dict[str, Any]:
         "lease_until": record.lease_until,
         "lease_owner": record.lease_owner,
         "attempt_count": record.attempt_count,
+        "llm_call_count": record.llm_call_count,
         "sender_hmac": record.sender_hmac,
         "visible_recipient_count": record.visible_recipient_count,
         "action": record.action.value if record.action else None,
@@ -85,6 +86,7 @@ def document_to_record(message_key: str, data: dict[str, Any]) -> ProcessingReco
         lease_until=_as_datetime(data.get("lease_until")),
         lease_owner=data.get("lease_owner"),
         attempt_count=int(data.get("attempt_count", 0)),
+        llm_call_count=int(data.get("llm_call_count", 0)),
         sender_hmac=str(data.get("sender_hmac") or ""),
         visible_recipient_count=int(data.get("visible_recipient_count", 0)),
         action=LexAction(action_value) if action_value else None,
@@ -238,6 +240,7 @@ class FirestoreMessageState:
         *,
         sender_hmac: str | None = None,
         visible_recipient_count: int | None = None,
+        llm_call_count: int | None = None,
     ) -> ProcessingRecord | None:
         document = self.document(message_key)
         existing = self._snapshot_to_record(message_key, document.get())
@@ -249,6 +252,8 @@ class FirestoreMessageState:
             updates["sender_hmac"] = sender_hmac
         if visible_recipient_count is not None:
             updates["visible_recipient_count"] = visible_recipient_count
+        if llm_call_count is not None:
+            updates["llm_call_count"] = llm_call_count
         document.update(updates)
         return document_to_record(
             message_key, {**record_to_document(existing), **updates}

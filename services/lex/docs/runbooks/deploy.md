@@ -8,8 +8,10 @@ Actions, Workload Identity Federation, or Terraform.
 - Authenticated `gcloud` with the `clarvia` configuration active
 - Docker with `buildx` (linux/amd64)
 - Approved private runtime material present locally:
-  - `runtime-private/prompts/lex-v1.txt`
+  - `runtime-private/prompts/lex-v1.txt` (the live send-path prompt)
   - Optional operator file: `runtime-private/deploy/env.production.yaml`
+- Production generation: `LEX_GENERATION_PIPELINE=single_pass`,
+  `MAX_OUTPUT_TOKENS=12000`, prompt path `lex-v1.txt` (see ADR 0007)
 - Secret Manager secrets already provisioned (names only):
   - `lex-openai-api-key` → Cloud Run env `OPENAI_API_KEY`
   - `lex-hmac-secret` → Cloud Run env `HMAC_SECRET`

@@ -14,8 +14,9 @@ from app.llm.schema import LexContact, LexJurisdiction, LexResponse, LexSource
 def build_settings(**overrides: Any) -> Settings:
     """Construct Settings without reading a local .env, for deterministic tests.
 
-    Processor fixtures still use the legacy single-pass FakeLlm ``generate``
-    path unless a test opts into ``generation_pipeline="two_pass"``.
+    Processor fixtures use the live single-pass ``generate`` path.
+    Two-pass tests set ``generation_pipeline="two_pass"`` when they call
+    ``run_two_pass_pipeline`` directly.
     """
     values = {"generation_pipeline": "single_pass", **overrides}
     return Settings(_env_file=None, **values)  # type: ignore[call-arg]
@@ -55,6 +56,9 @@ _CONFIG_ENV_VARS = (
     "MAX_BODY_CHARS",
     "MAX_THREAD_CHARS",
     "LEX_GENERATION_PIPELINE",
+    "PIPELINE_VERSION",
+    "MAX_OUTPUT_TOKENS",
+    "MAX_LLM_CALLS_PER_MESSAGE",
     "RESEARCH_PROMPT_VERSION",
     "WRITER_PROMPT_VERSION",
     "RESEARCH_SCHEMA_VERSION",
