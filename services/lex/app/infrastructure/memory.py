@@ -340,6 +340,7 @@ class InMemoryMessageState:
         *,
         sender_hmac: str | None = None,
         visible_recipient_count: int | None = None,
+        llm_call_count: int | None = None,
     ) -> ProcessingRecord | None:
         with self._lock:
             existing = self._records.get(message_key)
@@ -354,6 +355,11 @@ class InMemoryMessageState:
                     visible_recipient_count
                     if visible_recipient_count is not None
                     else existing.visible_recipient_count
+                ),
+                llm_call_count=(
+                    llm_call_count
+                    if llm_call_count is not None
+                    else existing.llm_call_count
                 ),
                 updated_at=self._clock.now(),
             )

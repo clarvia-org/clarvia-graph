@@ -5,16 +5,14 @@ from __future__ import annotations
 import base64
 import itertools
 
-import pytest
-from app.domain.labels import LEX_PROCESSED
+from app.domain.labels import LEX_FAILED, LEX_PROCESSED
 from app.domain.models import ParsedMessage, ProcessingStatus
 from app.infrastructure.clock import FakeClock
 from app.infrastructure.daily_usage import InMemoryDailyUsage
 from app.infrastructure.memory import InMemoryGmail, InMemoryMessageState
 from app.infrastructure.openai import FakeLlmAdapter, generation_result_from_response
 from app.infrastructure.rate_limit import InMemoryRateLimit
-from app.services.model_pipeline import ModelPipelineFailure
-from app.services.processor import PROCESS_STATUS_SENT, Processor
+from app.services.processor import PROCESS_STATUS_FAILED, PROCESS_STATUS_SENT, Processor
 
 from .conftest import (
     build_settings,
@@ -153,21 +151,28 @@ def test_double_validation_failure_still_sends(
     assert "full verified answer in one pass" not in decoded
 
 
-def test_unparseable_model_output_requeues(synthetic_prompt: str) -> None:
+def test_unparseable_model_output_sends_technical_failure(
+    synthetic_prompt: str,
+) -> None:
     llm = FakeLlmAdapter(default_error=ValueError("missing_structured_output"))
     harness = Harness(llm=llm, prompt_path=synthetic_prompt)
     harness.seed_eligible()
 
-    with pytest.raises(ModelPipelineFailure) as exc:
-        harness.processor.run(gmail_message_id="m1")
+    result = harness.processor.run(gmail_message_id="m1")
 
-    assert exc.value.code == "missing_structured_output"
+    assert result.status == PROCESS_STATUS_FAILED
+    assert len(llm.calls) == 1
     record = harness.state.get_record("m1")
     assert record is not None
-    assert record.status is ProcessingStatus.QUEUED
+    assert record.status is ProcessingStatus.FAILED
+    assert record.llm_call_count == 1
+    assert LEX_FAILED in harness.gmail.labels_for("m1")
+    assert harness.gmail.last_sent_raw is not None
+    decoded = base64.urlsafe_b64decode(harness.gmail.last_sent_raw).decode("utf-8")
+    assert "full verified answer in one pass" in decoded
 
 
-def test_provider_outage_requeues(synthetic_prompt: str) -> None:
+def test_provider_outage_sends_technical_failure(synthetic_prompt: str) -> None:
     class _Upstream(RuntimeError):
         status_code = 503
 
@@ -175,12 +180,29 @@ def test_provider_outage_requeues(synthetic_prompt: str) -> None:
     harness = Harness(llm=llm, prompt_path=synthetic_prompt)
     harness.seed_eligible()
 
-    with pytest.raises(_Upstream):
-        harness.processor.run(gmail_message_id="m1")
+    result = harness.processor.run(gmail_message_id="m1")
 
+    assert result.status == PROCESS_STATUS_FAILED
+    assert len(llm.calls) == 1
     record = harness.state.get_record("m1")
     assert record is not None
-    assert record.status is ProcessingStatus.QUEUED
+    assert record.llm_call_count == 1
+    assert LEX_FAILED in harness.gmail.labels_for("m1")
+
+
+def test_spent_llm_budget_does_not_call_the_model(synthetic_prompt: str) -> None:
+    llm = fake_llm_for_responses(make_clarify_response())
+    harness = Harness(llm=llm, prompt_path=synthetic_prompt)
+    harness.seed_eligible()
+    record = harness.state.get_record("m1")
+    assert record is not None
+    harness.state.update_metadata("m1", llm_call_count=2)
+
+    result = harness.processor.run(gmail_message_id="m1")
+
+    assert result.status == PROCESS_STATUS_FAILED
+    assert llm.calls == []
+    assert LEX_FAILED in harness.gmail.labels_for("m1")
 
 
 def test_clarify_without_search_is_sent(synthetic_prompt: str) -> None:

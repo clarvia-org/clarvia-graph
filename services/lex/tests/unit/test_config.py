@@ -39,6 +39,7 @@ def test_defaults_match_blueprint() -> None:
     assert settings.max_writer_history_chars == 20_000
     assert settings.pipeline_version == "single-pass-v1"
     assert settings.max_output_tokens == 12000
+    assert settings.max_llm_calls_per_message == 2
 
 
 @pytest.mark.usefixtures("clean_env")

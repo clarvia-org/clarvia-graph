@@ -28,9 +28,15 @@ For in-scope mail that has passed operational gates:
 4. Compose the outbound mail in application code (body, sources block,
    sign-off, continuation, footer).
 
-If both generate attempts return no parseable body, or the provider returns
-5xx / timeout / rate-limit, **requeue** (Cloud Tasks). The English
-`TECHNICAL_FAILURE_BODY` is used only after `max_process_attempts`.
+If a parsed body fails validation, retry the model **once**. Empty structured
+output and provider 5xx do not get a second paid call (those failures are not
+typical transient API flake). At most **two** `generate` calls per inbound
+message, persisted as `llm_call_count`. Further worker retries (Gmail blips)
+must not call the model again once that budget is spent; they send
+`TECHNICAL_FAILURE_BODY`.
+
+Worker `max_process_attempts` remains a crash/Gmail recovery cap, not an LLM
+budget.
 
 Operational gates are unchanged: allowlist, rate limit, attachment-only,
 recipient limit, thread closed, circuit / kill switch. Those templates stay

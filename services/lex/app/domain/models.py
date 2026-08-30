@@ -139,6 +139,7 @@ class ProcessingRecord:
     lease_until: datetime | None = None
     lease_owner: str | None = None
     attempt_count: int = 0
+    llm_call_count: int = 0
     sender_hmac: str = ""
     visible_recipient_count: int = 0
     action: LexAction | None = None

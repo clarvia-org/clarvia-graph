@@ -58,8 +58,10 @@ The reply body is written in the same language as the latest user message, or
 in a language the user asked for. No country graph or legislation files are
 injected.
 
-If the provider is unavailable, the worker requeues. The English technical-failure
-template is used only after `max_process_attempts` (see ADR 0007).
+If the provider is unavailable or structured output is empty, Lex does not keep
+paying for retries of the same mail. At most two model calls per inbound
+message; the English technical-failure template is used when that budget is
+spent (see ADR 0007).
 
 ## Application-composed multipart email
 

@@ -48,7 +48,12 @@ from app.services.gates import (
     evaluate_thread_closed_gate,
     send_template_reply,
 )
-from app.services.model_pipeline import run_model_pipeline
+from app.services.model_pipeline import (
+    CountingLlmAdapter,
+    ModelPipelineFailure,
+    _is_retryable_provider_error,
+    run_model_pipeline,
+)
 from app.services.outbound import send_lex_reply
 from app.services.thread_context import prior_thread_history
 
@@ -363,6 +368,18 @@ class Processor:
         prior_lex_replies: int,
         lex_addresses: frozenset[str],
     ) -> ProcessResult:
+        record = self._state.get_record(key)
+        spent = record.llm_call_count if record is not None else 0
+        remaining = self._settings.max_llm_calls_per_message - spent
+        if remaining <= 0:
+            return self._send_technical_failure(
+                key,
+                parsed=parsed,
+                recipients=recipients,
+                attempt_count=attempt_count,
+                error_code="llm_call_budget",
+            )
+
         system_prompt = load_prompt(self._settings.prompt_path)
         history = prior_thread_history(
             thread_messages,
@@ -376,11 +393,34 @@ class Processor:
             prompt_version=self._settings.prompt_version,
             delivery_channel=parsed.delivery_channel,
         )
-        generation = run_model_pipeline(
-            self._llm,
-            system_prompt=system_prompt,
-            runtime_envelope=envelope,
-        )
+        counter = CountingLlmAdapter(inner=self._llm, remaining=remaining)
+        try:
+            generation = run_model_pipeline(
+                counter,
+                system_prompt=system_prompt,
+                runtime_envelope=envelope,
+            )
+        except ModelPipelineFailure as exc:
+            self._add_llm_calls(key, counter.used)
+            return self._send_technical_failure(
+                key,
+                parsed=parsed,
+                recipients=recipients,
+                attempt_count=attempt_count,
+                error_code=exc.code,
+            )
+        except Exception as exc:
+            self._add_llm_calls(key, counter.used)
+            if _is_retryable_provider_error(exc):
+                return self._send_technical_failure(
+                    key,
+                    parsed=parsed,
+                    recipients=recipients,
+                    attempt_count=attempt_count,
+                    error_code=type(exc).__name__,
+                )
+            raise
+        self._add_llm_calls(key, counter.used)
         lex_response = generation.response
         openai_response_id = generation.openai_response_id
         prompt_version = self._settings.prompt_version
@@ -482,6 +522,14 @@ class Processor:
             gmail_message_id=key,
             attempt_count=attempt_count,
         )
+
+    def _add_llm_calls(self, key: str, count: int) -> None:
+        if count <= 0:
+            return
+        record = self._state.get_record(key)
+        if record is None:
+            return
+        self._state.update_metadata(key, llm_call_count=record.llm_call_count + count)
 
     def _sender_hmac(self, from_address: str) -> str:
         secret = self._settings.hmac_secret

@@ -6,7 +6,7 @@ import logging
 import re
 from dataclasses import dataclass
 
-from app.domain.ports import LlmGenerationResult, LlmPort
+from app.domain.ports import LlmGenerationResult, LlmPort, StructuredLlmResult
 from app.llm.schema import LexContact, LexSource
 from app.llm.url_normalize import match_search_url
 from app.llm.validation import LexValidationError, validate_lex_response
@@ -49,7 +49,7 @@ _DASH_CHARS = (
 
 @dataclass(frozen=True, slots=True)
 class ModelPipelineFailure(Exception):
-    """Raised when generation cannot produce a usable body (worker requeues)."""
+    """Raised when generation cannot produce a usable body."""
 
     code: str
     attempt_count: int
@@ -92,6 +92,54 @@ def _is_retryable_provider_error(exc: BaseException) -> bool:
     return isinstance(exc, TimeoutError | ConnectionError | OSError)
 
 
+@dataclass(slots=True)
+class CountingLlmAdapter:
+    """Count ``generate`` calls so one inbound mail cannot exceed the budget."""
+
+    inner: LlmPort
+    remaining: int
+    used: int = 0
+
+    def generate(
+        self,
+        *,
+        system_prompt: str,
+        runtime_envelope: str,
+        force_web_search: bool = False,
+    ) -> LlmGenerationResult:
+        if self.used >= self.remaining:
+            raise ModelPipelineFailure("llm_call_budget", attempt_count=self.used)
+        self.used += 1
+        return self.inner.generate(
+            system_prompt=system_prompt,
+            runtime_envelope=runtime_envelope,
+            force_web_search=force_web_search,
+        )
+
+    def generate_structured(
+        self,
+        *,
+        system_prompt: str,
+        runtime_envelope: str,
+        json_schema: dict[str, object],
+        schema_name: str,
+        enable_web_search: bool,
+        force_web_search: bool = False,
+        reasoning_effort: str | None = None,
+        max_output_tokens: int | None = None,
+    ) -> StructuredLlmResult:
+        return self.inner.generate_structured(
+            system_prompt=system_prompt,
+            runtime_envelope=runtime_envelope,
+            json_schema=json_schema,
+            schema_name=schema_name,
+            enable_web_search=enable_web_search,
+            force_web_search=force_web_search,
+            reasoning_effort=reasoning_effort,
+            max_output_tokens=max_output_tokens,
+        )
+
+
 def _try_generate(
     llm: LlmPort,
     *,
@@ -125,25 +173,24 @@ def run_model_pipeline(
     system_prompt: str,
     runtime_envelope: str,
 ) -> LlmGenerationResult:
-    """Generate, repair, retry once, then still send a usable body when possible."""
+    """Generate once; retry only when a parsed body failed validation."""
     first = _try_generate(
         llm,
         system_prompt=system_prompt,
         runtime_envelope=runtime_envelope,
         force_web_search=False,
     )
-    if first is not None:
-        try:
-            validate_lex_response(
-                first.response,
-                web_search_source_urls=first.web_search_source_urls,
-                web_search_calls=first.web_search_calls,
-            )
-            return first
-        except LexValidationError as first_error:
-            force_search = _should_force_search_on_retry(first_error, first)
-    else:
-        force_search = True
+    if first is None:
+        raise ModelPipelineFailure("missing_structured_output", attempt_count=1)
+    try:
+        validate_lex_response(
+            first.response,
+            web_search_source_urls=first.web_search_source_urls,
+            web_search_calls=first.web_search_calls,
+        )
+        return first
+    except LexValidationError as first_error:
+        force_search = _should_force_search_on_retry(first_error, first)
 
     second = _try_generate(
         llm,
@@ -152,8 +199,6 @@ def run_model_pipeline(
         force_web_search=force_search,
     )
     candidate = second if second is not None else first
-    if candidate is None:
-        raise ModelPipelineFailure("missing_structured_output", attempt_count=2)
     try:
         validate_lex_response(
             candidate.response,
@@ -405,4 +450,4 @@ def _repair_search_evidence(
     return body, kept_sources, kept_contacts
 
 
-__all__ = ["ModelPipelineFailure", "run_model_pipeline"]
+__all__ = ["CountingLlmAdapter", "ModelPipelineFailure", "run_model_pipeline"]

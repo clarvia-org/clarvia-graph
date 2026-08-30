@@ -250,7 +250,7 @@ def test_pipeline_does_not_duplicate_crlf_signoff() -> None:
     assert "\r" not in result.response.body_markdown
 
 
-def test_pipeline_requeues_when_both_generates_fail(
+def test_pipeline_fails_after_unusable_generate(
     caplog: pytest.LogCaptureFixture,
 ) -> None:
     llm = FakeLlmAdapter(default_error=ValueError("missing_structured_output"))
@@ -266,7 +266,8 @@ def test_pipeline_requeues_when_both_generates_fail(
         )
 
     assert exc.value.code == "missing_structured_output"
-    assert exc.value.attempt_count == 2
+    assert exc.value.attempt_count == 1
+    assert len(llm.calls) == 1
     assert "lex_generate_unusable" in caplog.text
     assert "ValueError" in caplog.text
 
