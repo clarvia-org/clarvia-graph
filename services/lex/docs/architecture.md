@@ -51,8 +51,9 @@ rejects any other `GCP_REGION` at startup.
 
 In-scope model-eligible mail uses **one** OpenAI Responses API call with web
 search and structured schema `lex_response_v1`. The application then keeps
-only this-turn search URLs, coerces a parsed body if remaining schema checks
-fail, and composes sources, `Lex.` sign-off, continuation, and footer.
+only this-turn search URLs, drops source URLs that are gone (HTTP 404/410,
+DNS failure, or connection refused), coerces a parsed body if remaining schema
+checks fail, and composes sources, `Lex.` sign-off, continuation, and footer.
 
 The reply body is written in the same language as the latest user message, or
 in a language the user asked for. No country graph or legislation files are

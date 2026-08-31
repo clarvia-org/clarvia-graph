@@ -69,6 +69,15 @@ _CONFIG_ENV_VARS = (
 )
 
 
+@pytest.fixture(autouse=True)
+def _keep_source_urls_in_unit_tests(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Do not issue live HTTP from the dead-link strip during unit tests."""
+    monkeypatch.setattr(
+        "app.llm.url_liveness.probe_url",
+        lambda *_args, **_kwargs: True,
+    )
+
+
 @pytest.fixture
 def clean_env(monkeypatch: pytest.MonkeyPatch) -> None:
     """Remove Lex config environment variables for deterministic defaults."""

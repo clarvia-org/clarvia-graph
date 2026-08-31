@@ -22,7 +22,9 @@ For in-scope mail that has passed operational gates:
 1. Call OpenAI Responses once with `web_search` enabled and schema
    `lex_response_v1` (prompt `lex-v1` at `runtime-private/prompts/lex-v1.txt`).
 2. Keep only source and contact URLs that appear in this-turn search results.
-   Drop citation markers that no longer resolve.
+   Drop citation markers that no longer resolve. Then drop remaining URLs that
+   are gone (HTTP 404/410, DNS failure, or connection refused). Keep 403, 429,
+   5xx, and timeouts. If the checker errors, keep the URL.
 3. If validation still fails, coerce: keep the prose, drop ungrounded sources
    and contacts, and send as `clarify` when an `answer` has no search evidence.
 4. Compose the outbound mail in application code (body, sources block,
