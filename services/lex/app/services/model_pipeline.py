@@ -8,6 +8,7 @@ from dataclasses import dataclass
 
 from app.domain.ports import LlmGenerationResult, LlmPort, StructuredLlmResult
 from app.llm.schema import LexContact, LexSource
+from app.llm.url_liveness import strip_dead_urls
 from app.llm.url_normalize import match_search_url
 from app.llm.validation import LexValidationError, validate_lex_response
 
@@ -312,6 +313,9 @@ def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResul
             contacts,
             search_urls=list(result.web_search_source_urls),
         )
+
+    if sources or contacts:
+        body, sources, contacts = strip_dead_urls(body, sources, contacts)
 
     body_folded = body.casefold()
     missing_names = [
