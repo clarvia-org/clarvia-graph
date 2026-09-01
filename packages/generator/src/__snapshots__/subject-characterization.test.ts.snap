@@ -1,0 +1,68 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`characterization: item id / resolved_subject_id table per scenario > scenario: lu/core_bereavement 1`] = `
+[
+  {
+    "id": "checklist_item.f4207d2c20e0.4aa7f7dc45f7",
+    "resolved_subject_id": "person.deceased",
+    "title": "Register the death at the commune and request death-certificate copies",
+  },
+]
+`;
+
+exports[`characterization: item id / resolved_subject_id table per scenario > scenario: lu/core_married_employed_vehicle 1`] = `
+[
+  {
+    "id": "checklist_item.fa1b787bb2ac.4aa7f7dc45f7",
+    "resolved_subject_id": "person.deceased",
+    "title": "Register the death at the commune and request death-certificate copies",
+  },
+]
+`;
+
+exports[`characterization: item id / resolved_subject_id table per scenario > scenario: lu/minimal_unknown 1`] = `
+[
+  {
+    "id": "checklist_item.42651bca300f.4aa7f7dc45f7",
+    "resolved_subject_id": "person.deceased",
+    "title": "Register the death at the commune and request death-certificate copies",
+  },
+]
+`;
+
+exports[`characterization: item id / resolved_subject_id table per scenario > scenario: lu/self_employed_property 1`] = `
+[
+  {
+    "id": "checklist_item.f987a0e5aac0.4aa7f7dc45f7",
+    "resolved_subject_id": "person.deceased",
+    "title": "Register the death at the commune and request death-certificate copies",
+  },
+]
+`;
+
+exports[`characterization: item id / resolved_subject_id table per scenario > scenario: lu/self_employed_property_not_married 1`] = `
+[
+  {
+    "id": "checklist_item.f987a0e5aac0.4aa7f7dc45f7",
+    "resolved_subject_id": "person.deceased",
+    "title": "Register the death at the commune and request death-certificate copies",
+  },
+]
+`;
+
+exports[`characterization: item id / resolved_subject_id table per scenario > scenario: xborder/lu_resident_de_death 1`] = `[]`;
+
+exports[`characterization: subject_role → resolved_subject_id for every role in the graph > pins the mapping for every subject_role used in graph task templates 1`] = `
+{
+  "deceased": "person.deceased",
+  "declarant": "person.deceased",
+  "heir": "person.deceased",
+  "heir_or_business_successor": "person.deceased",
+  "heir_or_legatee": "person.deceased",
+  "heir_or_surviving_spouse": "person.deceased",
+  "heir_or_tax_representative": "person.deceased",
+  "person_who_advanced_funeral_costs": "person.deceased",
+  "survivor": "person.survivor",
+  "survivor_or_heir": "person.deceased",
+}
+`;
