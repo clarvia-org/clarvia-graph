@@ -70,9 +70,15 @@ def _http_status(url: str, *, method: str, timeout: float) -> int:
 
 
 def probe_url(url: str, *, timeout: float = PER_URL_TIMEOUT) -> bool:
-    """True = keep (live or uncertain). False = drop (gone)."""
+    """True = keep (live or uncertain). False = drop (gone).
+
+    Plain HTTP government pages are probed the same way as HTTPS. Schema
+    ``HttpsUrl`` already allows ``http://``. mailto, tel, and schemeless
+    strings are not HEAD-able; keep them (fail open). Phone and email live
+    on contact fields, not ``website``.
+    """
     if not is_http_or_https_url(url):
-        return False
+        return True
     try:
         status = _http_status(url, method="HEAD", timeout=timeout)
         if status in _RETRY_GET_STATUS:

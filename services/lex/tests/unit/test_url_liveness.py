@@ -15,9 +15,40 @@ from app.llm.url_liveness import (
     keep_after_status,
     strip_dead_urls,
 )
+from app.llm.url_liveness import (
+    probe_url as _real_probe_url,
+)
 from app.services.model_pipeline import run_model_pipeline
 
 from .conftest import make_answer_response
+
+
+def test_probe_keeps_schemes_it_cannot_head() -> None:
+    assert _real_probe_url("mailto:lex@clarvia.org") is True
+    assert _real_probe_url("tel:+352123456") is True
+    assert _real_probe_url("not-a-url") is True
+
+
+def test_probe_checks_plain_http_government_urls(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    seen: list[str] = []
+
+    def fake_status(url: str, *, method: str, timeout: float) -> int:
+        seen.append(f"{method}:{url}")
+        return 200
+
+    monkeypatch.setattr("app.llm.url_liveness._http_status", fake_status)
+    assert _real_probe_url("http://www.moh.gov.zw/palliative-care") is True
+    assert seen[0].startswith("HEAD:http://")
+
+
+def test_probe_drops_gone_http_pages(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(
+        "app.llm.url_liveness._http_status",
+        lambda *_args, **_kwargs: 404,
+    )
+    assert _real_probe_url("http://example.gov/gone") is False
 
 
 def test_keep_after_status_drops_only_gone_pages() -> None:
