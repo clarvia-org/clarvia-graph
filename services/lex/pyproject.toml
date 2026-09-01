@@ -14,7 +14,7 @@ authors = [{ name = "Clarvia" }]
 dependencies = [
     "fastapi==0.141.1",
     "uvicorn[standard]==0.52.4",
-    "pydantic==2.13.4",
+    "pydantic==2.13.5",
     "pydantic-settings==2.15.0",
     "markdown-it-py==4.2.0",
     "bleach==6.4.0",
@@ -24,7 +24,7 @@ dependencies = [
     "google-auth==2.57.0",
     "google-cloud-firestore==2.29.0",
     "google-cloud-tasks==2.24.0",
-    "openai==3.4.0",
+    "openai==3.6.0",
 ]
 
 [project.optional-dependencies]
@@ -32,7 +32,7 @@ dev = [
     "pytest==9.1.1",
     "pytest-cov==7.1.0",
     "mypy==2.3.1",
-    "ruff==0.16.4",
+    "ruff==0.16.5",
     "httpx==0.28.1",
     "types-bleach==6.4.0.20260728",
 ]
