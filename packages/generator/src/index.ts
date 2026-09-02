@@ -16,3 +16,6 @@ export type { ChecklistOutput, ChecklistItem, GenerateOptions, ItemStatus } from
 
 export { evaluateCondition, buildFactData } from "./evaluator.js";
 export type { Fact, TriValue } from "./evaluator.js";
+
+export { resolveSubjects } from "./subjects.js";
+export type { ResolvedSubject } from "./subjects.js";

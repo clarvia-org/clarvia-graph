@@ -36,6 +36,7 @@ import {
   type ExplanationTrace,
 } from "./explanation.js";
 import { recordApplies, type TemporalContext } from "./temporal.js";
+import { resolveSubjects, type ResolvedSubject } from "./subjects.js";
 
 // Re-export types for convenience
 export type { Fact } from "./evaluator.js";
@@ -52,6 +53,8 @@ export type ItemStatus =
 export interface ChecklistItem {
   id: string;
   resolved_subject_id: string;
+  /** Neutral, non-personal label for the subject (e.g. "survivor", "child 2"). */
+  subject_label: string;
   status: ItemStatus;
   title: string;
   description: string | null;
@@ -160,30 +163,9 @@ function makeItemId(
   return `checklist_item.${scenarioHash}.${hash}`;
 }
 
-// ── Resolved subject ID ─────────────────────────────────────────────
-// Alpha deterministic mapping from task_template.target.subject_role.
-// Fallback for bereavement: person.deceased.
-
-const SUBJECT_ROLE_MAP: Record<string, string> = {
-  deceased: "person.deceased",
-  survivor: "person.survivor",
-  surviving_spouse: "person.survivor",
-  surviving_partner: "person.survivor",
-  child: "person.child",
-  dependant: "person.dependant",
-  estate: "estate.primary",
-};
-
-function resolveSubjectId(
-  template: TaskTemplate | null,
-): string {
-  const role = template?.target?.subject_role;
-  if (role && SUBJECT_ROLE_MAP[role]) {
-    return SUBJECT_ROLE_MAP[role];
-  }
-  // Bereavement alpha fallback
-  return "person.deceased";
-}
+// ── Resolved subject ─────────────────────────────────────────────────
+// Subject resolution (role mapping, multi-person fan-out from scenario
+// facts, bereavement fallback) lives in subjects.ts.
 
 // ── Deduplication and Merging helpers ────────────────────────────────
 
@@ -349,6 +331,7 @@ interface CandidateItem {
   item: ChecklistItem;
   consequence: Consequence;
   template: TaskTemplate | null;
+  subject: ResolvedSubject;
   trace: ExplanationTrace | null;
   dedupeKey: string;
   strategy: string;
@@ -458,39 +441,23 @@ interface ExpandContext {
   scenarioHash: string;
   graph: LoadedGraph;
   temporalCtx: TemporalContext;
+  facts: Fact[];
 }
 
 function expandConsequenceToItems(ctx: ExpandContext): CandidateItem[] {
-  const { consequence, overallResult, allMissingFacts, conditionRefs, conditionResultCache, scenarioHash, graph, temporalCtx } = ctx;
+  const { consequence, overallResult, allMissingFacts, conditionRefs, conditionResultCache, scenarioHash, graph, temporalCtx, facts } = ctx;
   const taskRefs = consequence.task_template_refs ?? [];
   const results: CandidateItem[] = [];
 
-  if (taskRefs.length === 0) {
-    const item = makeItem(scenarioHash, consequence, null, overallResult, allMissingFacts, graph, temporalCtx);
-    let trace: ExplanationTrace | null = null;
-    if (item.status !== "does_not_apply") {
-      trace = buildExplanationTrace(
-        `trace.${item.id}`,
-        consequence.id,
-        conditionRefs,
-        conditionResultCache,
-        graph,
-        temporalCtx,
-      );
-      item.explanation_trace_id = trace.id;
-    }
-    const { key, strategy } = resolveDedupeKey(null, consequence);
-    results.push({ item, consequence, template: null, trace, dedupeKey: key, strategy });
-  } else {
-    for (const taskRef of taskRefs) {
-      const template = graph.taskTemplates.get(taskRef);
-      if (template && !recordApplies(template, temporalCtx)) {
-        continue;
-      }
+  const expandForTemplate = (template: TaskTemplate | null) => {
+    // One candidate per resolved subject. Single-subject scenarios resolve
+    // to exactly one subject with the legacy ID, preserving alpha behavior.
+    for (const subject of resolveSubjects(template, facts)) {
       const item = makeItem(
         scenarioHash,
         consequence,
-        template ?? null,
+        template,
+        subject,
         overallResult,
         allMissingFacts,
         graph,
@@ -509,8 +476,30 @@ function expandConsequenceToItems(ctx: ExpandContext): CandidateItem[] {
         );
         item.explanation_trace_id = trace.id;
       }
-      const { key, strategy } = resolveDedupeKey(template ?? null, consequence);
-      results.push({ item, consequence, template: template ?? null, trace, dedupeKey: key, strategy });
+      const { key, strategy } = resolveDedupeKey(template, consequence);
+      // The resolved subject is always part of the dedupe key: items for
+      // different subjects never merge (issue #36 decision).
+      results.push({
+        item,
+        consequence,
+        template,
+        subject,
+        trace,
+        dedupeKey: `${key}::${subject.id}`,
+        strategy,
+      });
+    }
+  };
+
+  if (taskRefs.length === 0) {
+    expandForTemplate(null);
+  } else {
+    for (const taskRef of taskRefs) {
+      const template = graph.taskTemplates.get(taskRef);
+      if (template && !recordApplies(template, temporalCtx)) {
+        continue;
+      }
+      expandForTemplate(template ?? null);
     }
   }
 
@@ -580,10 +569,16 @@ function mergeCandidateGroup(
 
   const mergedStatus = mergeStatuses(statuses);
 
+  // All candidates in a group share the same subject (it is part of the
+  // dedupe key). First-ordinal subjects keep the pre-#36 merged identity so
+  // existing merged item IDs stay stable; additional subjects append their
+  // ID so per-subject merged groups cannot collide.
+  const subject = subList[0].subject;
+  const subjectSuffix = subject.ordinal === 1 ? "" : `|subject:${subject.id}`;
   const mergedIdentity = subList
     .map(c => `${c.consequence.id}::${c.template?.id ?? c.consequence.id}`)
     .sort((a, b) => a.localeCompare(b))
-    .join("|");
+    .join("|") + subjectSuffix;
   const mergedGroupHash = createHash("sha256")
     .update(mergedIdentity)
     .digest("hex")
@@ -768,7 +763,7 @@ export function generateChecklist(opts: GenerateOptions): ChecklistOutput {
     );
     candidatesList.push(...expandConsequenceToItems({
       consequence, overallResult, allMissingFacts, conditionRefs,
-      conditionResultCache, scenarioHash, graph, temporalCtx,
+      conditionResultCache, scenarioHash, graph, temporalCtx, facts,
     }));
   }
 
@@ -833,6 +828,7 @@ function makeItem(
   scenarioHash: string,
   consequence: Consequence,
   template: TaskTemplate | null,
+  subject: ResolvedSubject,
   conditionResult: TriValue,
   missingFacts: string[],
   graph: LoadedGraph,
@@ -872,18 +868,17 @@ function makeItem(
     return !ass || recordApplies(ass, temporalCtx);
   });
 
-  const resolvedSubjectId = resolveSubjectId(template);
-
   return {
     id: makeItemId(
       scenarioHash,
       template?.id ?? consequence.id,
-      resolvedSubjectId,
+      subject.id,
       consequence.jurisdiction,
       template?.authority_refs?.[0] ?? null,
       null,
     ),
-    resolved_subject_id: resolvedSubjectId,
+    resolved_subject_id: subject.id,
+    subject_label: subject.label,
     status,
     title: template?.title ?? consequence.title,
     description: template?.description ?? null,
