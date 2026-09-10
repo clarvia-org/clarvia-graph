@@ -7,14 +7,14 @@ const BASE_URL = "https://clarvia.org";
 export const metadata: Metadata = {
   title: "Ask Clarvia | Clarvia",
   description:
-    "Describe what happened in your own language. Clarvia replies by email with source-linked next steps. Free, no account.",
+    "Free bereavement guidance. If someone you love is terminally ill or has died, ask Clarvia in your own language. Lex replies by email.",
   alternates: {
     canonical: `${BASE_URL}/ask`,
   },
   openGraph: {
     title: "Ask Clarvia | Clarvia",
     description:
-      "Describe what happened in your own language. Clarvia replies by email with source-linked next steps. Free, no account.",
+      "Free bereavement guidance. If someone you love is terminally ill or has died, ask Clarvia in your own language. Lex replies by email.",
     url: `${BASE_URL}/ask`,
     siteName: "Clarvia",
     type: "website",

@@ -68,6 +68,12 @@ describe("ask entry locales", () => {
     expect(askCopy("uk", "title")).toBe("Ask Clarvia");
     expect(askCopy("fr", "title")).toBe("Demandez à Clarvia");
   });
+
+  it("states that Ask is for terminal illness and bereavement", () => {
+    expect(askCopy("en", "eyebrow")).toMatch(/bereavement/i);
+    expect(askCopy("en", "blurb")).toMatch(/terminally ill or has died/i);
+    expect(askCopy("fr", "blurb")).toMatch(/phase terminale|décédé/i);
+  });
 });
 
 describe("ask attribution slugs", () => {
