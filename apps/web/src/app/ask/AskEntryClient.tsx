@@ -142,6 +142,9 @@ export default function AskEntryClient() {
         className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 relative z-10"
       >
         <section className="text-center py-8 sm:py-12" aria-labelledby="ask-heading">
+          <p className="text-sm font-semibold tracking-wide uppercase text-calm-blue-500 mb-4">
+            {askCopy(locale, "eyebrow")}
+          </p>
           <h1
             id="ask-heading"
             className="text-2xl sm:text-3xl font-semibold tracking-tight mb-4"
