@@ -53,18 +53,27 @@ export function trackPageView(path: string): void {
   });
 }
 
-export function trackAskSubmitted(params: { source_page: string; language?: string }): void {
+export function trackAskSubmitted(params: {
+  source_page: string;
+  language?: string;
+  ref?: string;
+  market?: string;
+}): void {
   const leadParams: Record<string, unknown> = {
     lead_source: "ask_clarvia",
     source_page: params.source_page,
   };
   if (params.language) leadParams.language = params.language;
+  if (params.ref) leadParams.ref = params.ref;
+  if (params.market) leadParams.market = params.market;
   trackEvent("generate_lead", leadParams);
   trackEvent("ask_submitted", {
     event_category: "engagement",
     event_label: "Ask Clarvia submit",
     source_page: params.source_page,
     consent_type: "ask-consent-v1",
+    ...(params.ref ? { ref: params.ref } : {}),
+    ...(params.market ? { market: params.market } : {}),
   });
   const sendTo = adsAskConversionSendTo();
   if (sendTo) {

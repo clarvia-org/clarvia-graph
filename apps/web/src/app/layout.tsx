@@ -5,7 +5,7 @@ import { GA_MEASUREMENT_ID, adsMeasurementId, googleTagBootstrapScript } from "@
 import "./globals.css";
 
 const inter = Inter({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext", "cyrillic"],
   variable: "--font-inter",
   weight: ["400", "500", "600"],
   display: "swap",

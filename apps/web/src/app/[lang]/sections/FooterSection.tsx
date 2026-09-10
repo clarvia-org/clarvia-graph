@@ -47,6 +47,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
           label: l(lang, "Contribute", "Contribuer", "Mitwirken", "Matmaachen"),
         },
         { href: `/${lang}/for-institutions`, label: tr(lang, "For institutions") },
+        { href: `/${lang}/partners`, label: tr(lang, "For organisations") },
       ],
     },
     {

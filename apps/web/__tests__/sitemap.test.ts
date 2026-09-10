@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import sitemap from "@/app/sitemap";
-import { ADS_FINAL_URLS, LANGUAGE_REDIRECTS, hreflangLanguages } from "@/lib/i18n";
+import { ADS_FINAL_URLS, ASK_PATH_REDIRECTS, LANGUAGE_REDIRECTS, hreflangLanguages } from "@/lib/i18n";
 
 describe("sitemap", () => {
   it("includes guidance, how-it-works, checklist, and guide URLs", () => {
@@ -12,6 +12,8 @@ describe("sitemap", () => {
       "https://clarvia.org/en/guidance/lu/registering-a-death"
     );
     expect(urls).toContain("https://clarvia.org/en/updates/ask-clarvia-launches");
+    expect(urls).toContain("https://clarvia.org/ask");
+    expect(urls).toContain("https://clarvia.org/en/partners");
   });
 
   it("sets hreflang x-default to the English URL on translated pages", () => {
@@ -50,5 +52,17 @@ describe("ads landing URLs", () => {
       { source: "/lb", destination: "/lu", permanent: true },
       { source: "/lb/:path*", destination: "/lu/:path*", permanent: true },
     ]);
+  });
+
+  it("sends /en/ask onto the canonical family entry without touching /ask/sent", () => {
+    expect(ASK_PATH_REDIRECTS.map((row) => row.source)).toEqual([
+      "/en/ask",
+      "/fr/ask",
+      "/de/ask",
+      "/lu/ask",
+    ]);
+    expect(ASK_PATH_REDIRECTS.find((row) => row.source === "/lu/ask")?.destination).toBe(
+      "/ask?lang=lb",
+    );
   });
 });

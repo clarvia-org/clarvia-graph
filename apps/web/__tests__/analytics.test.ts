@@ -86,6 +86,22 @@ describe("Google Ads / GA4 helpers", () => {
       });
     });
 
+    it("includes partner ref and market on /ask submissions only as analytics fields", () => {
+      trackAskSubmitted({
+        source_page: "/ask",
+        language: "fr",
+        ref: "pallialux",
+        market: "be",
+      });
+      expect(gtag).toHaveBeenCalledWith("event", "generate_lead", {
+        lead_source: "ask_clarvia",
+        source_page: "/ask",
+        language: "fr",
+        ref: "pallialux",
+        market: "be",
+      });
+    });
+
     it("fires a Google Ads conversion for Ask when the env send_to is set", () => {
       vi.stubEnv("NEXT_PUBLIC_GOOGLE_ADS_ASK_CONVERSION", "AW-111/asklabel");
       trackAskSubmitted({ source_page: "/fr" });
