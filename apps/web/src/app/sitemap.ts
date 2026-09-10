@@ -19,6 +19,7 @@ const localizedPages: SitemapPage[] = [
   { path: "guidance", changeFrequency: "weekly", priority: 0.8, translated: true },
   { path: "checklist", changeFrequency: "weekly", priority: 0.7, translated: true },
   { path: "for-institutions", changeFrequency: "monthly", priority: 0.6, translated: true },
+  { path: "partners", changeFrequency: "monthly", priority: 0.6, translated: false },
   { path: "updates", changeFrequency: "weekly", priority: 0.8, translated: true },
   { path: "contribute", changeFrequency: "monthly", priority: 0.7, translated: true },
   { path: "support", changeFrequency: "weekly", priority: 0.7, translated: true },
@@ -70,6 +71,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   entries.push(
+    {
+      url: `${BASE_URL}/ask`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
     {
       url: `${BASE_URL}/llms.txt`,
       lastModified: now,

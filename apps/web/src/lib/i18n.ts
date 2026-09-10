@@ -85,6 +85,14 @@ export const LANGUAGE_REDIRECTS = [
   { source: "/lb/:path*", destination: "/lu/:path*", permanent: true },
 ] as const;
 
+/** Exact /{site-lang}/ask → canonical family entry. Does not match /{lang}/ask/sent. */
+export const ASK_PATH_REDIRECTS = [
+  { source: "/en/ask", destination: "/ask?lang=en", permanent: false },
+  { source: "/fr/ask", destination: "/ask?lang=fr", permanent: false },
+  { source: "/de/ask", destination: "/ask?lang=de", permanent: false },
+  { source: "/lu/ask", destination: "/ask?lang=lb", permanent: false },
+] as const;
+
 /** hreflang map for a path after the language prefix (`""` for home, `"contact"` for /{lang}/contact). */
 export function hreflangLanguages(pathAfterLang = ""): Record<string, string> {
   const suffix = pathAfterLang ? `/${pathAfterLang}` : "";
