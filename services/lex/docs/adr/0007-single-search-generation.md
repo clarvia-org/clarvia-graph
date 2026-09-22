@@ -12,7 +12,7 @@ application already composes continuation and footer (ADR 0004). The model
 must return a usable body; the worker must not substitute the English
 technical-failure template because structured fields were imperfect.
 
-The live model family is `gpt-5.6-luna`. One Responses API call with web
+The live model family is `gpt-6-luna`. One Responses API call with web
 search is the generation contract.
 
 ## Decision
