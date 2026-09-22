@@ -13,6 +13,7 @@ import {
   ASK_LOCALE_STORAGE_KEY,
   ASK_MARKET_STORAGE_KEY,
   ASK_REF_STORAGE_KEY,
+  applyAskHtmlLocale,
   isRtlAskLocale,
   parseAskLocale,
   resolveAskLocale,
@@ -69,19 +70,7 @@ export default function AskEntryClient() {
     );
   }, [linkHint]);
 
-  useEffect(() => {
-    const html = document.documentElement;
-    const previousDir = html.getAttribute("dir");
-    const previousLang = html.getAttribute("lang");
-    html.setAttribute("dir", isRtlAskLocale(locale) ? "rtl" : "ltr");
-    html.setAttribute("lang", locale);
-    return () => {
-      if (previousDir) html.setAttribute("dir", previousDir);
-      else html.removeAttribute("dir");
-      if (previousLang) html.setAttribute("lang", previousLang);
-      else html.removeAttribute("lang");
-    };
-  }, [locale]);
+  useEffect(() => applyAskHtmlLocale(document.documentElement, locale), [locale]);
 
   const copy = useMemo(() => askFormCopy(locale), [locale]);
   const siteLang = siteLangForAskLocale(locale);
@@ -162,7 +151,17 @@ export default function AskEntryClient() {
           <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-10">
             {askCopy(locale, "reply_timing")}
           </p>
-          <AskForm copy={copy} onSuccess={() => router.push(`/ask/sent?lang=${locale}`)} />
+          <AskForm
+            copy={copy}
+            onSuccess={() => {
+              try {
+                localStorage.setItem(ASK_LOCALE_STORAGE_KEY, locale);
+              } catch {
+                /* private mode */
+              }
+              router.push(`/ask/sent?lang=${locale}`);
+            }}
+          />
           <div id="cookie-consent-slot" className="max-w-2xl mx-auto mt-4" />
           <p className="text-sm text-calm-blue-500 max-w-2xl mx-auto mt-6 leading-relaxed">
             {askCopy(locale, "operator_line")}{" "}

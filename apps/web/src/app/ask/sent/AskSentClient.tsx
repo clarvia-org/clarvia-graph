@@ -10,9 +10,10 @@ import {
   ASK_LOCALE_STORAGE_KEY,
   ASK_MARKET_STORAGE_KEY,
   ASK_REF_STORAGE_KEY,
+  applyAskHtmlLocale,
   isRtlAskLocale,
   parseAskLocale,
-  resolveAskLocale,
+  resolveAskSentLocale,
   sanitizeAskSlug,
   siteLangForAskLocale,
   type AskLocale,
@@ -40,14 +41,12 @@ export default function AskSentClient() {
   const [showAddress, setShowAddress] = useState(false);
 
   useEffect(() => {
-    const next = resolveAskLocale({
+    const next = resolveAskSentLocale({
       saved: readSavedLocale(),
       browserLanguages: readBrowserLanguages(),
       linkHint,
     });
     setLocale(next);
-    document.documentElement.setAttribute("dir", isRtlAskLocale(next) ? "rtl" : "ltr");
-    document.documentElement.setAttribute("lang", next);
 
     let submitted = false;
     let ref: string | undefined;
@@ -69,6 +68,8 @@ export default function AskSentClient() {
       market,
     });
   }, [linkHint]);
+
+  useEffect(() => applyAskHtmlLocale(document.documentElement, locale), [locale]);
 
   const siteLang = siteLangForAskLocale(locale);
 

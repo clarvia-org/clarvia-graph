@@ -2,10 +2,12 @@ import { describe, expect, it } from "vitest";
 import translations from "@/content/ask-entry-translations.json";
 import {
   ASK_LOCALES,
+  applyAskHtmlLocale,
   buildPartnerAskUrl,
   isRtlAskLocale,
   parseAskLocale,
   resolveAskLocale,
+  resolveAskSentLocale,
   sanitizeAskSlug,
   siteLangForAskLocale,
 } from "@/lib/ask-entry";
@@ -56,6 +58,51 @@ describe("ask entry locales", () => {
         linkHint: "xx",
       }),
     ).toBe("en");
+  });
+
+  it("lets a forwarded Ask sent lang beat the ambient browser language", () => {
+    expect(
+      resolveAskSentLocale({
+        saved: null,
+        browserLanguages: ["en-US", "en"],
+        linkHint: "ar",
+      }),
+    ).toBe("ar");
+    expect(
+      resolveAskSentLocale({
+        saved: "de",
+        browserLanguages: ["en"],
+        linkHint: "ar",
+      }),
+    ).toBe("de");
+    expect(
+      resolveAskSentLocale({
+        saved: null,
+        browserLanguages: ["fr-BE"],
+        linkHint: null,
+      }),
+    ).toBe("fr");
+  });
+
+  it("restores html dir and lang after an Arabic Ask view unmounts", () => {
+    const attrs: Record<string, string> = { lang: "en" };
+    const html = {
+      getAttribute(name: string) {
+        return attrs[name] ?? null;
+      },
+      setAttribute(name: string, value: string) {
+        attrs[name] = value;
+      },
+      removeAttribute(name: string) {
+        delete attrs[name];
+      },
+    };
+    const restore = applyAskHtmlLocale(html, "ar");
+    expect(attrs.dir).toBe("rtl");
+    expect(attrs.lang).toBe("ar");
+    restore();
+    expect(attrs.dir).toBeUndefined();
+    expect(attrs.lang).toBe("en");
   });
 
   it("marks Arabic as RTL and maps Luxembourgish onto the site /lu prefix", () => {
