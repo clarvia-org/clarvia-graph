@@ -16,11 +16,13 @@ export default function AskForm({
   onSuccess,
   formId = "ask-us",
   fillQuestionRef,
+  locale = "en",
 }: {
   copy: AskFormCopy;
   onSuccess: () => void;
   formId?: string;
   fillQuestionRef?: MutableRefObject<AskFormHandle | null>;
+  locale?: string;
 }) {
   const [question, setQuestion] = useState("");
   const [email, setEmail] = useState("");
@@ -60,6 +62,7 @@ export default function AskForm({
           question: trimmedQuestion,
           consent: true,
           turnstileToken: token ?? "",
+          locale,
         }),
       });
       if (!res.ok) {

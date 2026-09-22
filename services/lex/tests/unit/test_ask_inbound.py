@@ -6,6 +6,7 @@ from email.policy import default as default_policy
 
 import pytest
 from app.email.ask_inbound import (
+    ASK_LOCALE_HEADER,
     ASK_SUBJECT,
     DELIVERY_CHANNEL_HEADER,
     DELIVERY_CHANNEL_WEB,
@@ -55,7 +56,29 @@ def test_parsed_delivery_channel_is_web() -> None:
     )
     assert parsed.delivery_channel == "web"
     assert parsed.from_address == "user@example.com"
+    assert parsed.ask_locale == "en"
     assert "Paris" in parsed.body_text
+
+
+def test_inbound_locale_localises_subject_and_header() -> None:
+    message = build_ask_inbound_message(
+        from_address="user@example.com",
+        question="Mon père est décédé la semaine dernière à Paris. Que faire ?",
+        mailbox="lex@clarvia.org",
+        locale="fr-FR",
+    )
+    assert message[ASK_LOCALE_HEADER] == "fr"
+    assert message["Subject"] == "Question envoyée depuis clarvia.org"
+    assert message["Subject"] != ASK_SUBJECT
+    raw = message.as_bytes(policy=default_policy)
+    parsed = parse_raw_message(
+        raw,
+        message_id="m1",
+        thread_id="t1",
+        limits=ParseLimits(max_body_chars=10_000, max_thread_chars=12_000),
+    )
+    assert parsed.ask_locale == "fr"
+    assert parsed.delivery_channel == "web"
 
 
 def test_encode_produces_gmail_raw() -> None:

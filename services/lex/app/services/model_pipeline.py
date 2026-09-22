@@ -7,6 +7,7 @@ import re
 from dataclasses import dataclass
 
 from app.domain.ports import LlmGenerationResult, LlmPort, StructuredLlmResult
+from app.email.copy import email_copy, inbound_locale
 from app.llm.schema import LexContact, LexSource
 from app.llm.url_liveness import strip_dead_urls
 from app.llm.url_normalize import match_search_url
@@ -325,7 +326,10 @@ def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResul
     ]
     if missing_names:
         bullets = "\n".join(f"- {name}" for name in missing_names)
-        insert = f"\n\nOrganisations and contacts:\n{bullets}\n"
+        heading = email_copy(inbound_locale(response.language))[
+            "organisations_and_contacts"
+        ]
+        insert = f"\n\n{heading}\n{bullets}\n"
         stripped = body.rstrip()
         if stripped.endswith("Lex."):
             body = stripped[:-4].rstrip() + insert + "\nLex."

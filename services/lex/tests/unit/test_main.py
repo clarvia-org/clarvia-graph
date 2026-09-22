@@ -233,7 +233,24 @@ def test_ask_ingest_inserts_and_enqueues() -> None:
     )
     assert parsed.from_address == "user@example.com"
     assert parsed.delivery_channel == "web"
+    assert parsed.ask_locale == "en"
     assert "Paris" in parsed.body_text
+
+
+def test_ask_ingest_passes_locale_into_inbound_mime() -> None:
+    client, gmail, _tasks, _state = _build_client()
+    body = (
+        '{"email":"user@example.com","question":"'
+        + ASK_QUESTION
+        + '","consent":true,"locale":"nl"}'
+    )
+    response = client.post("/v1/ask", content=body, headers=_ask_headers(body))
+    assert response.status_code == 202
+    parsed = gmail.fetch_parsed_message(
+        GmailMessageRef(message_id="ask-1", thread_id="ask-thread-1")
+    )
+    assert parsed.ask_locale == "nl"
+    assert parsed.subject == "Vraag via clarvia.org"
 
 
 def test_ask_ingest_fails_closed_when_website_secret_unset() -> None:

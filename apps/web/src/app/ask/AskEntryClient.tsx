@@ -153,6 +153,7 @@ export default function AskEntryClient() {
           </p>
           <AskForm
             copy={copy}
+            locale={locale}
             onSuccess={() => {
               try {
                 localStorage.setItem(ASK_LOCALE_STORAGE_KEY, locale);

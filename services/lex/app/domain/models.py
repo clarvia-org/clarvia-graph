@@ -104,6 +104,7 @@ class ParsedMessage:
     return_path: str | None = None
     precedence: str | None = None
     delivery_channel: str = "email"
+    ask_locale: str | None = None
 
 
 # Alias used by parsing helpers that build partial records before freezing.

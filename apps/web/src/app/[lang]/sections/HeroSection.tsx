@@ -4,6 +4,7 @@ import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { type Lang, l } from "@/lib/i18n";
 import AskForm, { type AskFormHandle } from "@/components/AskForm";
+import { siteLangToAskLocale } from "@/lib/ask-entry";
 import { homepageAskFormCopy } from "@/lib/ask-entry-copy";
 import { headlineStyle } from "../data";
 
@@ -85,6 +86,7 @@ export default function HeroSection({ lang }: { lang: Lang }) {
 
         <AskForm
           copy={copy}
+          locale={siteLangToAskLocale(lang)}
           fillQuestionRef={fillQuestionRef}
           onSuccess={() => router.push(`/${lang}/ask/sent`)}
         />

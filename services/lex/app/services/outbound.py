@@ -16,6 +16,7 @@ from app.domain.ids import outbound_message_id, request_id_for_message
 from app.domain.models import ParsedMessage, ReplyRecipients
 from app.domain.ports import GmailPort
 from app.email.composition import compose_lex_email, encode_for_gmail_api
+from app.email.copy import inbound_locale
 from app.email.threading import build_references, in_reply_to_header, reply_subject
 from app.llm.schema import LexSource
 
@@ -64,6 +65,7 @@ def send_lex_reply(
     thread_quote_html: str | None = None,
     stand_alone: bool = False,
     subject_override: str | None = None,
+    locale: str | None = None,
 ) -> SendResult:
     """Compose and send a Lex reply (threaded) or stand-alone notice."""
     message_key = parsed.message_id
@@ -86,7 +88,12 @@ def send_lex_reply(
                 already_sent=True,
             )
 
-    subject = subject_override if subject_override else reply_subject(parsed.subject)
+    resolved = inbound_locale(locale)
+    subject = (
+        subject_override
+        if subject_override
+        else reply_subject(parsed.subject, locale=resolved)
+    )
     composed = compose_lex_email(
         response_body_markdown=response_body_markdown,
         to_addresses=recipients.to_addresses,
@@ -103,6 +110,7 @@ def send_lex_reply(
         thread_quote_plain=thread_quote_plain,
         thread_quote_html=thread_quote_html,
         stand_alone=stand_alone,
+        locale=resolved,
     )
     raw = encode_for_gmail_api(composed)
 

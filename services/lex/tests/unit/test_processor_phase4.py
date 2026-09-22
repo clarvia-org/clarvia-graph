@@ -109,6 +109,25 @@ def test_eligible_mail_with_search_sources_is_sent(
     assert "Sources checked:" in decoded
 
 
+def test_answer_language_localises_footer_and_source_heading(
+    synthetic_prompt: str,
+) -> None:
+    llm = fake_llm_for_responses(make_answer_response(language="fr"))
+    harness = Harness(llm=llm, prompt_path=synthetic_prompt)
+    harness.seed_eligible()
+
+    result = harness.processor.run(gmail_message_id="m1")
+
+    assert result.status == PROCESS_STATUS_SENT
+    assert harness.gmail.last_sent_raw is not None
+    decoded = base64.urlsafe_b64decode(harness.gmail.last_sent_raw).decode("utf-8")
+    assert "Sources consultées :" in decoded
+    assert "Clarvia est une organisation à but non lucratif." in decoded
+    assert "Clarvia is a nonprofit." not in decoded
+    assert "https://clarvia.org/fr/support" in decoded
+    assert "Sources checked:" not in decoded
+
+
 def test_answer_without_search_retries_then_sends(synthetic_prompt: str) -> None:
     bad = generation_result_from_response(
         make_answer_response(),

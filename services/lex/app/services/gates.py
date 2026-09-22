@@ -14,6 +14,7 @@ from app.email.recipients import (
     exceeds_recipient_limit,
     sender_only_recipients,
 )
+from app.email.copy import email_copy, inbound_locale
 from app.email.templates import (
     ATTACHMENT_ONLY_BODY,
     RATE_LIMIT_BODY,
@@ -53,6 +54,34 @@ PROCESS_STATUS_ALLOWLIST_REJECTED = "allowlist_rejected"
 PROCESS_STATUS_THREAD_CLOSED = "thread_closed"
 PROCESS_STATUS_READY_FOR_MODEL = "ready_for_model"
 
+_GATE_BODY_KEYS: dict[str, tuple[str, str | None]] = {
+    PROCESS_STATUS_RECIPIENT_LIMITED: ("recipient_limit_body", None),
+    PROCESS_STATUS_ATTACHMENT_ONLY: ("attachment_only_body", None),
+    PROCESS_STATUS_RATE_LIMITED: ("rate_limit_body", "rate_limit_subject"),
+    PROCESS_STATUS_THREAD_CLOSED: ("thread_closed", None),
+    PROCESS_STATUS_CIRCUIT_OPEN: ("temporary_unavailability_body", None),
+}
+
+
+def localize_gate_content(
+    gate: GateOutcome,
+    locale: str | None,
+) -> tuple[str, str | None]:
+    """Return ``(body, subject_override)`` for ``locale``, keeping English as fallback."""
+    resolved = inbound_locale(locale)
+    keys = _GATE_BODY_KEYS.get(gate.status)
+    if keys is None:
+        return gate.template_body, gate.subject_override
+    copy = email_copy(resolved)
+    body_key, subject_key = keys
+    body = str(copy[body_key]) if gate.template_body else ""  # type: ignore[literal-required]
+    subject = (
+        str(copy[subject_key])  # type: ignore[literal-required]
+        if subject_key and gate.subject_override
+        else None
+    )
+    return body, subject
+
 
 def _lex_address_set(settings: Settings) -> frozenset[str]:
     return frozenset({settings.lex_mailbox.lower(), *settings.resolved_lex_aliases})
@@ -79,6 +108,7 @@ def send_template_reply(
     template_body: str,
     stand_alone: bool = False,
     subject_override: str | None = None,
+    locale: str | None = None,
 ) -> None:
     send_lex_reply(
         gmail=gmail,
@@ -88,6 +118,7 @@ def send_template_reply(
         response_body_markdown=template_body,
         stand_alone=stand_alone,
         subject_override=subject_override,
+        locale=locale or inbound_locale(parsed.ask_locale),
     )
 
 
@@ -250,4 +281,5 @@ __all__ = [
     "evaluate_thread_closed_gate",
     "evaluate_allowlist_gate",
     "evaluate_circuit_gate",
+    "localize_gate_content",
 ]

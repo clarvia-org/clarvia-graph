@@ -124,6 +124,65 @@ describe("POST /api/ask", () => {
     expect(sent.email).toBe("user@example.com");
     expect(sent.question).toBe(QUESTION);
     expect(sent.consent).toBe(true);
+    expect(sent.locale).toBe("en");
+  });
+
+  it("forwards a selected Ask locale to Lex", async () => {
+    const fetchMock = vi.fn(
+      async (url: string | URL, _init?: RequestInit): Promise<Response> => {
+        const href = String(url);
+        if (href.includes("metadata.google.internal")) {
+          return new Response("missing", { status: 404 });
+        }
+        return new Response(JSON.stringify({ status: "accepted" }), { status: 202 });
+      }
+    );
+    vi.stubGlobal("fetch", fetchMock);
+
+    const res = await POST(
+      askRequest({
+        email: "user@example.com",
+        question: QUESTION,
+        consent: true,
+        locale: "nl",
+      })
+    );
+    expect(res.status).toBe(200);
+    const lexCalls = fetchMock.mock.calls.filter(([url]) =>
+      String(url).includes("/v1/ask")
+    );
+    const init = lexCalls[0][1] as RequestInit;
+    const sent = JSON.parse(String(init.body));
+    expect(sent.locale).toBe("nl");
+  });
+
+  it("falls back to English for an unknown locale", async () => {
+    const fetchMock = vi.fn(
+      async (url: string | URL, _init?: RequestInit): Promise<Response> => {
+        const href = String(url);
+        if (href.includes("metadata.google.internal")) {
+          return new Response("missing", { status: 404 });
+        }
+        return new Response(JSON.stringify({ status: "accepted" }), { status: 202 });
+      }
+    );
+    vi.stubGlobal("fetch", fetchMock);
+
+    const res = await POST(
+      askRequest({
+        email: "user@example.com",
+        question: QUESTION,
+        consent: true,
+        locale: "zh",
+      })
+    );
+    expect(res.status).toBe(200);
+    const lexCalls = fetchMock.mock.calls.filter(([url]) =>
+      String(url).includes("/v1/ask")
+    );
+    const init = lexCalls[0][1] as RequestInit;
+    const sent = JSON.parse(String(init.body));
+    expect(sent.locale).toBe("en");
   });
 
   it("still returns 200 if the consent ledger write fails after Lex 202", async () => {
