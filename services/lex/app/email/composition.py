@@ -20,27 +20,23 @@ from email.utils import formataddr
 import bleach
 from markdown_it import MarkdownIt
 
-from app.email.templates import (
-    FOOTER_HTML,
-    FOOTER_TEXT,
-    LEX_FROM_ADDRESS,
-    LEX_FROM_NAME,
-    THREAD_LAST_REPLY_NOTE,
-    THREAD_LAST_REPLY_NOTE_HTML,
+from app.email.copy import (
+    chrome_locale,
+    email_copy,
+    footer_html,
+    footer_text,
+    footer_verify_token,
+    forbidden_body_fragments,
+    is_rtl_email_locale,
+    last_reply_note,
+    last_reply_note_html,
 )
+from app.email.templates import LEX_FROM_ADDRESS
 from app.llm.schema import LexSource
 from app.llm.source_render import linkify_citation_markers_html
 from app.ops.alerts import emit_alert
 
-_FORBIDDEN_BODY_FRAGMENTS = (
-    "We're happy to help with anything else",
-    "Clarvia is a nonprofit. If you found this helpful",
-    "Clarvia does not provide emergency, legal",
-    "Lex may produce incomplete or incorrect information",
-    "Tip: Lex can continue a conversation for up to",
-    "Tip: long conversation threads can become difficult for Lex",
-    THREAD_LAST_REPLY_NOTE,
-)
+_FORBIDDEN_BODY_FRAGMENTS = forbidden_body_fragments()
 
 _ALLOWED_TAGS = {
     "p",
@@ -90,8 +86,9 @@ def validate_response_body(body_markdown: str) -> str:
             "Response body must end with 'Lex.' on its own line."
         )
 
+    lowered = body.casefold()
     for fragment in _FORBIDDEN_BODY_FRAGMENTS:
-        if fragment.casefold() in body.casefold():
+        if fragment.casefold() in lowered:
             raise EmailCompositionError(
                 "Response body contains application-managed content."
             )
@@ -126,7 +123,7 @@ def render_response_html(
     )
 
 
-def compose_lex_email(
+def compose_lex_email(  # noqa: PLR0912, PLR0915
     *,
     response_body_markdown: str,
     to_addresses: Sequence[str],
@@ -143,6 +140,7 @@ def compose_lex_email(
     thread_quote_plain: str | None = None,
     thread_quote_html: str | None = None,
     stand_alone: bool = False,
+    locale: str | None = None,
 ) -> EmailMessage:
     """Build the complete outgoing Lex email.
 
@@ -150,6 +148,12 @@ def compose_lex_email(
     This function deliberately has no BCC parameter.
     """
     body = validate_response_body(response_body_markdown)
+    resolved = chrome_locale(locale)
+    copy = email_copy(resolved)
+    approved_footer_text = footer_text(resolved)
+    approved_footer_html = footer_html(resolved)
+    approved_note = last_reply_note(resolved)
+    approved_note_html = last_reply_note_html(resolved)
 
     if not to_addresses:
         raise EmailCompositionError("At least one To recipient is required.")
@@ -161,9 +165,9 @@ def compose_lex_email(
     note_html = ""
     if after_body_note:
         note = after_body_note.strip()
-        if note == THREAD_LAST_REPLY_NOTE:
+        if note == approved_note:
             note_plain = note
-            note_html = THREAD_LAST_REPLY_NOTE_HTML
+            note_html = approved_note_html
         else:
             note_plain = note
             note_html = (
@@ -183,14 +187,16 @@ def compose_lex_email(
     plain_parts = [body]
     if note_plain:
         plain_parts.append(note_plain)
-    plain_parts.append(FOOTER_TEXT)
+    plain_parts.append(approved_footer_text)
     if quote_plain:
         plain_parts.append(quote_plain)
     plain_text = "\n\n".join(plain_parts) + "\n"
 
+    html_lang = resolved
+    html_dir = "rtl" if is_rtl_email_locale(resolved) else "ltr"
     html_parts = [
         "<!doctype html>",
-        '<html lang="en">',
+        f'<html lang="{html_lang}" dir="{html_dir}">',
         "<head>",
         '<meta charset="utf-8">',
         '<meta name="viewport" content="width=device-width,initial-scale=1">',
@@ -200,14 +206,14 @@ def compose_lex_email(
     ]
     if note_html:
         html_parts.append(note_html)
-    html_parts.append(FOOTER_HTML)
+    html_parts.append(approved_footer_html)
     if quote_html:
         html_parts.append(quote_html)
     html_parts.extend(["</body>", "</html>"])
     html_body = "\n".join(html_parts)
 
     message = EmailMessage(policy=SMTP)
-    message["From"] = formataddr((LEX_FROM_NAME, LEX_FROM_ADDRESS))
+    message["From"] = formataddr((copy["from_name"], LEX_FROM_ADDRESS))
     message["To"] = ", ".join(to_addresses)
 
     if cc_addresses:
@@ -227,6 +233,7 @@ def compose_lex_email(
     message["X-Lex-Version"] = "1"
     message["X-Lex-Request-ID"] = request_id
     message["X-Lex-Prompt-Version"] = prompt_version
+    message["X-Lex-Locale"] = resolved
     if pipeline_version:
         message["X-Lex-Pipeline-Version"] = pipeline_version
     if stand_alone:
@@ -287,11 +294,17 @@ def _verify_composed_email(message: EmailMessage) -> None:
 
     plain = plain_part.get_content()
     html_content = html_part.get_content()
+    token = footer_verify_token(chrome_locale(message.get("X-Lex-Locale")))
+    if not token:
+        token = footer_verify_token("en")
 
-    if plain.count("Clarvia is a nonprofit.") != 1:
+    if plain.count(token) != 1:
         raise EmailCompositionError("Plain-text footer is missing or duplicated.")
 
-    if html_content.count("Clarvia is a nonprofit.") != 1:
+    # html.escape() turns apostrophes into &#x27;, so the raw token is absent
+    # from HTML even though the footer is present (Italian "un'organizzazione").
+    html_token = html.escape(token)
+    if html_content.count(html_token) != 1 and html_content.count(token) != 1:
         raise EmailCompositionError("HTML footer is missing or duplicated.")
 
     if "We're happy to help with anything else." in plain:

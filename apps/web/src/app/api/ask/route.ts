@@ -2,6 +2,7 @@ import { createHmac } from "node:crypto";
 import { promises as fs } from "fs";
 import path from "path";
 import { NextRequest, NextResponse } from "next/server";
+import { parseAskLocale } from "@/lib/ask-entry";
 import { signPayload } from "@/lib/donation-engine/internal-auth";
 import { isPlausibleEmail } from "@/lib/email";
 import { rateLimit } from "@/lib/rate-limit";
@@ -108,6 +109,7 @@ export async function POST(req: NextRequest) {
     const question = typeof body.question === "string" ? body.question.trim() : "";
     const consent = body.consent === true;
     const turnstileToken = typeof body.turnstileToken === "string" ? body.turnstileToken : "";
+    const locale = parseAskLocale(typeof body.locale === "string" ? body.locale : "") ?? "en";
 
     if (!consent) {
       return NextResponse.json({ error: "Consent is required." }, { status: 400 });
@@ -132,7 +134,7 @@ export async function POST(req: NextRequest) {
       if (!ok) return NextResponse.json({ error: "Bot check failed" }, { status: 403 });
     }
 
-    const payload = JSON.stringify({ email, question, consent: true });
+    const payload = JSON.stringify({ email, question, consent: true, locale });
     const timestamp = new Date().toISOString();
     const signature = signPayload(websiteHmacSecret, timestamp, payload);
     const audience = new URL(lexAskUrl).origin;

@@ -40,6 +40,9 @@ dev = [
 [tool.hatch.build.targets.wheel]
 packages = ["app"]
 
+[tool.hatch.build.targets.wheel.force-include]
+"app/email/email-copy.json" = "app/email/email-copy.json"
+
 [tool.ruff]
 line-length = 88
 target-version = "py312"
@@ -54,6 +57,7 @@ ignore = ["PLR2004", "PLR0913"]
 # Approved email constants are reproduced verbatim from the blueprint and must
 # not be reflowed; long lines are intentional.
 "app/email/templates.py" = ["E501"]
+"app/email/copy.py" = ["E501"]
 
 [tool.mypy]
 python_version = "3.12"

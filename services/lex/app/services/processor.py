@@ -25,8 +25,8 @@ from app.domain.models import (
     new_queued_record,
 )
 from app.domain.ports import ClockPort, GmailPort, LlmPort, MessageStatePort
+from app.email.copy import chrome_locale, email_copy, inbound_locale, last_reply_note
 from app.email.recipients import build_reply_recipients
-from app.email.templates import TECHNICAL_FAILURE_BODY, THREAD_LAST_REPLY_NOTE
 from app.email.thread_quote import build_thread_quote, count_lex_replies
 from app.infrastructure.daily_usage import DailyUsagePort
 from app.infrastructure.rate_limit import RateLimitPort
@@ -46,6 +46,7 @@ from app.services.gates import (
     evaluate_rate_limit_gate,
     evaluate_recipient_gate,
     evaluate_thread_closed_gate,
+    localize_gate_content,
     send_template_reply,
 )
 from app.services.model_pipeline import (
@@ -433,8 +434,9 @@ class Processor:
             lex_response,
         )
         after_body_note = None
+        chrome = chrome_locale(lex_response.language, parsed.ask_locale)
         if prior_lex_replies + 1 >= self._settings.max_thread_lex_replies:
-            after_body_note = THREAD_LAST_REPLY_NOTE
+            after_body_note = last_reply_note(chrome)
 
         quote_plain = None
         quote_html = None
@@ -446,6 +448,7 @@ class Processor:
                 max_chars_per_message=self._settings.thread_quote_max_chars_per_message,
                 max_total_chars=self._settings.thread_quote_max_total_chars,
                 include_latest=parsed.delivery_channel == "web",
+                locale=chrome,
             )
             if not quote_plain:
                 quote_plain = None
@@ -463,6 +466,7 @@ class Processor:
             after_body_note=after_body_note,
             thread_quote_plain=quote_plain,
             thread_quote_html=quote_html,
+            locale=chrome,
         )
         self._gmail.add_label(message_id=key, label=LEX_PROCESSED)
         self._state.record_successful_send(
@@ -501,12 +505,14 @@ class Processor:
         attempt_count: int,
         error_code: str,
     ) -> ProcessResult:
+        locale = inbound_locale(parsed.ask_locale)
         send_template_reply(
             gmail=self._gmail,
             settings=self._settings,
             parsed=parsed,
             recipients=recipients,
-            template_body=TECHNICAL_FAILURE_BODY,
+            template_body=email_copy(locale)["technical_failure_body"],
+            locale=locale,
         )
         self._gmail.add_label(message_id=key, label=LEX_FAILED)
         self._state.mark_status(key, ProcessingStatus.FAILED, error_code=error_code)
@@ -551,14 +557,17 @@ class Processor:
         attempt_count: int,
     ) -> ProcessResult:
         if gate.send_template and gate.recipients and gate.template_body:
+            locale = inbound_locale(parsed.ask_locale)
+            template_body, subject_override = localize_gate_content(gate, locale)
             send_template_reply(
                 gmail=self._gmail,
                 settings=self._settings,
                 parsed=parsed,
                 recipients=gate.recipients,
-                template_body=gate.template_body,
+                template_body=template_body,
                 stand_alone=gate.stand_alone,
-                subject_override=gate.subject_override,
+                subject_override=subject_override,
+                locale=locale,
             )
         if gate.label:
             self._gmail.add_label(message_id=key, label=gate.label)

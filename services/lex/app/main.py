@@ -206,6 +206,9 @@ def create_app(
             email=str(payload.get("email") or ""),
             question=str(payload.get("question") or ""),
             consent=payload.get("consent") is True,
+            locale=str(payload["locale"])
+            if isinstance(payload.get("locale"), str)
+            else None,
         )
         if result.status == STATUS_ACCEPTED:
             return JSONResponse(

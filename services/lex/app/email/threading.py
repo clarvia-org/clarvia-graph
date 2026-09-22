@@ -5,12 +5,14 @@ from __future__ import annotations
 import re
 
 from app.domain.models import ParsedMessage
+from app.email.copy import email_copy, inbound_locale
 
 
-def reply_subject(subject: str) -> str:
+def reply_subject(subject: str, *, locale: str | None = None) -> str:
     cleaned = subject.strip()
     if not cleaned:
-        return "Re: Your message to Lex"
+        fallback = email_copy(inbound_locale(locale))["re_your_message"]
+        return f"Re: {fallback}"
     if re.match(r"^re:\s", cleaned, re.IGNORECASE):
         return cleaned
     return f"Re: {cleaned}"

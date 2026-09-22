@@ -54,7 +54,9 @@ class AskIntake:
             and self._settings.processing_mode != "disabled"
         )
 
-    def submit(self, *, email: str, question: str, consent: bool) -> AskIntakeResult:
+    def submit(
+        self, *, email: str, question: str, consent: bool, locale: str | None = None
+    ) -> AskIntakeResult:
         if not self.enabled:
             log_event(_logger, "ask_intake_skipped", status=STATUS_DISABLED)
             return AskIntakeResult(status=STATUS_DISABLED, code="processing_disabled")
@@ -72,6 +74,7 @@ class AskIntake:
                 from_address=sender,
                 question=body,
                 mailbox=self._settings.lex_mailbox,
+                locale=locale,
             )
         except AskInboundError as exc:
             return AskIntakeResult(status=STATUS_INVALID, code=exc.code)

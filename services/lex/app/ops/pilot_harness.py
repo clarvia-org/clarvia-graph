@@ -15,11 +15,12 @@ from email import message_from_bytes
 from email.message import EmailMessage
 from email.policy import SMTP
 from pathlib import Path
-from typing import Any, cast
+from typing import Any
 
 from app.config import SERVICE_ROOT, Settings
 from app.domain.models import GmailMessageRef, ParsedMessage, new_queued_record
 from app.email.composition import verify_composed_email
+from app.email.copy import EMAIL_LOCALES, email_copy
 from app.infrastructure.clock import FakeClock
 from app.infrastructure.daily_usage import InMemoryDailyUsage
 from app.infrastructure.memory import InMemoryGmail, InMemoryMessageState
@@ -389,10 +390,7 @@ def check_outbound_formatting(gmail: InMemoryGmail) -> tuple[bool, bool]:
         return True, True
     try:
         decoded = base64.urlsafe_b64decode(gmail.last_sent_raw.encode("ascii"))
-        loaded = cast(
-            EmailMessage,
-            message_from_bytes(decoded, policy=SMTP),  # type: ignore[arg-type]
-        )
+        loaded = message_from_bytes(decoded, policy=SMTP)
         verify_composed_email(loaded)
     except Exception:  # noqa: BLE001
         return False, False
@@ -400,8 +398,12 @@ def check_outbound_formatting(gmail: InMemoryGmail) -> tuple[bool, bool]:
     for part in loaded.walk():
         if part.get_content_type() == "text/plain":
             plain = part.get_content()
-    footer_ok = "Clarvia is a nonprofit." in plain
-    continuation_ok = "five replies in the same email thread" in plain
+    footer_ok = any(
+        email_copy(locale)["footer_donate"] in plain for locale in EMAIL_LOCALES
+    )
+    continuation_ok = any(
+        email_copy(locale)["footer_tip"] in plain for locale in EMAIL_LOCALES
+    )
     return footer_ok, continuation_ok
 
 

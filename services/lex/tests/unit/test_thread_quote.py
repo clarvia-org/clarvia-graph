@@ -58,6 +58,24 @@ def test_build_thread_quote_after_truncation() -> None:
     assert "Clarvia is a nonprofit" not in plain
 
 
+def test_thread_quote_uses_locale_labels() -> None:
+    msgs = [
+        _msg("1", from_address="user@example.com", body="Bonjour"),
+        _msg("2", from_address="lex@clarvia.org", body="Réponse\n\nLex."),
+        _msg("3", from_address="user@example.com", body="Merci"),
+    ]
+    plain, html = build_thread_quote(
+        msgs,
+        latest_message_id="3",
+        lex_addresses=frozenset({"lex@clarvia.org"}),
+        locale="fr",
+    )
+    assert "Messages précédents de cette conversation" in plain
+    assert "Messages précédents de cette conversation" in html
+    assert "a écrit" in plain
+    assert "Previous messages in this conversation" not in plain
+
+
 def test_include_latest_quotes_the_current_question() -> None:
     msgs = [
         _msg(

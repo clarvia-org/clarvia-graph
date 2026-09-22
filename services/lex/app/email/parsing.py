@@ -16,7 +16,12 @@ from app.domain.models import (
     ConversationRole,
     ParsedMessage,
 )
-from app.email.ask_inbound import DELIVERY_CHANNEL_HEADER, DELIVERY_CHANNEL_WEB
+from app.email.ask_inbound import (
+    ASK_LOCALE_HEADER,
+    DELIVERY_CHANNEL_HEADER,
+    DELIVERY_CHANNEL_WEB,
+)
+from app.email.copy import boilerplate_markers, parse_email_locale
 
 MAX_MIME_PARTS = 100
 MAX_ATTACHMENTS_RECORDED = 25
@@ -91,15 +96,14 @@ def strip_quoted_history(text: str) -> str:
 
 def strip_lex_boilerplate(text: str) -> str:
     """Remove prior Lex continuation/footer blocks when quoted back."""
-    patterns = (
-        r"(?is)\nWe're happy to help with anything else\..*$",
-        r"(?is)\nClarvia is a nonprofit\..*$",
-        r"(?is)\n-{3,}\s*\nClarvia is a nonprofit\..*$",
-    )
-    cleaned = text
-    for pattern in patterns:
-        cleaned = re.sub(pattern, "", cleaned)
-    return cleaned.rstrip()
+    cut_at: int | None = None
+    for marker in boilerplate_markers():
+        idx = text.find(marker)
+        if idx != -1 and (cut_at is None or idx < cut_at):
+            cut_at = idx
+    if cut_at is None:
+        return text.rstrip()
+    return text[:cut_at].rstrip()
 
 
 def strip_signature(text: str) -> str:
@@ -312,6 +316,7 @@ def parse_raw_message(
         return_path=message.get("Return-Path"),
         precedence=message.get("Precedence"),
         delivery_channel=_delivery_channel(message.get(DELIVERY_CHANNEL_HEADER)),
+        ask_locale=parse_email_locale(message.get(ASK_LOCALE_HEADER)),
     )
 
 

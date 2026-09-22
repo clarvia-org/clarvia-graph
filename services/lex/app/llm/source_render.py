@@ -6,6 +6,7 @@ import html as html_module
 import re
 from collections.abc import Sequence
 
+from app.email.copy import email_copy, inbound_locale
 from app.llm.schema import LexResponse, LexSource
 
 _SIGN_OFF_RE = re.compile(r"(?:^|\n)Lex\.\s*$")
@@ -16,7 +17,8 @@ def render_sources_block(response: LexResponse) -> str:
     """Build the plain-text ``Sources checked`` section from structured sources."""
     if not response.sources:
         return ""
-    lines = ["Sources checked:"]
+    heading = email_copy(inbound_locale(response.language))["sources_checked"]
+    lines = [heading]
     for source in response.sources:
         label = source.publisher.strip()
         title = source.title.strip()
