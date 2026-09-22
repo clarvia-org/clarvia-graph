@@ -148,15 +148,11 @@ def parse_email_locale(raw: str | None) -> EmailLocale | None:
     lower = raw.strip().replace("_", "-").lower()
     if not lower:
         return None
-    if lower in _ALIASES:
-        return _ALIASES[lower]
-    if is_email_locale(lower):
-        return cast(EmailLocale, lower)
-    primary = lower.split("-", 1)[0]
-    if primary in _ALIASES:
-        return _ALIASES[primary]
-    if is_email_locale(primary):
-        return cast(EmailLocale, primary)
+    for token in (lower, lower.split("-", 1)[0]):
+        if token in _ALIASES:
+            return _ALIASES[token]
+        if is_email_locale(token):
+            return cast(EmailLocale, token)
     return None
 
 
@@ -169,9 +165,7 @@ def chrome_locale(
     ask_locale: str | None = None,
 ) -> EmailLocale:
     return (
-        parse_email_locale(response_language)
-        or parse_email_locale(ask_locale)
-        or "en"
+        parse_email_locale(response_language) or parse_email_locale(ask_locale) or "en"
     )
 
 
@@ -333,7 +327,7 @@ def forbidden_body_fragments() -> tuple[str, ...]:
     for locale in EMAIL_LOCALES:
         copy = email_copy(locale)
         for key in keys:
-            value = copy[key].strip()
+            value = _field(copy, key).strip()
             snippet = value[:48].strip() if len(value) > 48 else value
             if snippet and snippet not in seen:
                 seen.add(snippet)
@@ -364,9 +358,13 @@ def operational_bodies_end_with_lex() -> bool:
     for locale in EMAIL_LOCALES:
         copy = email_copy(locale)
         for key in _SIGN_OFF_KEYS:
-            if not copy[key].rstrip().endswith("Lex."):
+            if not _field(copy, key).rstrip().endswith("Lex."):
                 return False
     return True
+
+
+def _field(copy: EmailCopy, key: str) -> str:
+    return str(copy[key])  # type: ignore[literal-required]
 
 
 def _linkify_label(text: str, label: str, href: str, style: str) -> str:

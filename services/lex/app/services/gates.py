@@ -8,13 +8,13 @@ from typing import TYPE_CHECKING
 from app.domain.labels import LEX_IGNORED, LEX_RATE_LIMITED
 from app.domain.models import ParsedMessage, ProcessingStatus, ReplyRecipients
 from app.email.auto_detect import AutoDetectResult, detect_automatic_message
+from app.email.copy import email_copy, inbound_locale
 from app.email.parsing import is_substantive_body
 from app.email.recipients import (
     build_reply_recipients,
     exceeds_recipient_limit,
     sender_only_recipients,
 )
-from app.email.copy import email_copy, inbound_locale
 from app.email.templates import (
     ATTACHMENT_ONLY_BODY,
     RATE_LIMIT_BODY,
@@ -67,7 +67,7 @@ def localize_gate_content(
     gate: GateOutcome,
     locale: str | None,
 ) -> tuple[str, str | None]:
-    """Return ``(body, subject_override)`` for ``locale``, keeping English as fallback."""
+    """Return body and subject override for locale, with English as fallback."""
     resolved = inbound_locale(locale)
     keys = _GATE_BODY_KEYS.get(gate.status)
     if keys is None:

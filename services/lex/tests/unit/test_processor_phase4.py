@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import base64
 import itertools
+from email import message_from_bytes
+from email.policy import SMTP
 
 from app.domain.labels import LEX_FAILED, LEX_PROCESSED
 from app.domain.models import ParsedMessage, ProcessingStatus
@@ -120,12 +122,26 @@ def test_answer_language_localises_footer_and_source_heading(
 
     assert result.status == PROCESS_STATUS_SENT
     assert harness.gmail.last_sent_raw is not None
-    decoded = base64.urlsafe_b64decode(harness.gmail.last_sent_raw).decode("utf-8")
-    assert "Sources consultées :" in decoded
-    assert "Clarvia est une organisation à but non lucratif." in decoded
-    assert "Clarvia is a nonprofit." not in decoded
-    assert "https://clarvia.org/fr/support" in decoded
-    assert "Sources checked:" not in decoded
+    loaded = message_from_bytes(
+        base64.urlsafe_b64decode(harness.gmail.last_sent_raw),
+        policy=SMTP,  # type: ignore[arg-type]
+    )
+    assert loaded["From"] is not None
+    assert "Lex de Clarvia" in loaded["From"]
+    assert loaded["X-Lex-Locale"] == "fr"
+    plain = ""
+    html = ""
+    for part in loaded.iter_parts():
+        if part.get_content_type() == "text/plain":
+            plain = part.get_content()
+        elif part.get_content_type() == "text/html":
+            html = part.get_content()
+    assert "Sources consultées :" in plain
+    assert "Clarvia est une organisation à but non lucratif." in plain
+    assert "Clarvia is a nonprofit." not in plain
+    assert "https://clarvia.org/fr/support" in plain
+    assert "https://clarvia.org/fr/support" in html
+    assert "Sources checked:" not in plain
 
 
 def test_answer_without_search_retries_then_sends(synthetic_prompt: str) -> None:

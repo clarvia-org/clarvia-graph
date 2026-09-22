@@ -15,7 +15,7 @@ from email import message_from_bytes
 from email.message import EmailMessage
 from email.policy import SMTP
 from pathlib import Path
-from typing import Any, cast
+from typing import Any
 
 from app.config import SERVICE_ROOT, Settings
 from app.domain.models import GmailMessageRef, ParsedMessage, new_queued_record
@@ -390,10 +390,7 @@ def check_outbound_formatting(gmail: InMemoryGmail) -> tuple[bool, bool]:
         return True, True
     try:
         decoded = base64.urlsafe_b64decode(gmail.last_sent_raw.encode("ascii"))
-        loaded = cast(
-            EmailMessage,
-            message_from_bytes(decoded, policy=SMTP),  # type: ignore[arg-type]
-        )
+        loaded = message_from_bytes(decoded, policy=SMTP)
         verify_composed_email(loaded)
     except Exception:  # noqa: BLE001
         return False, False

@@ -119,7 +119,8 @@ def test_existing_lex_footer_is_stripped() -> None:
 def test_localised_lex_footer_is_stripped() -> None:
     body = (
         "Suite de la question.\n\n"
-        "Clarvia est une organisation à but non lucratif. Si ce service vous a été utile"
+        "Clarvia est une organisation à but non lucratif. "
+        "Si ce service vous a été utile"
     )
     cleaned = clean_body_text(body)
     assert cleaned == "Suite de la question."

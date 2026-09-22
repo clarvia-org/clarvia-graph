@@ -123,7 +123,7 @@ def render_response_html(
     )
 
 
-def compose_lex_email(
+def compose_lex_email(  # noqa: PLR0912, PLR0915
     *,
     response_body_markdown: str,
     to_addresses: Sequence[str],

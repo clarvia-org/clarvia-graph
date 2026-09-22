@@ -101,17 +101,12 @@ def build_thread_quote(
         selected = [(header, _truncate(body, budget, truncated))]
         packed = _pack(selected)
 
-    plain = (
-        "────────────────────────────────\n"
-        f"{previous}\n\n"
-        f"{packed}"
-    )
+    plain = f"────────────────────────────────\n{previous}\n\n{packed}"
 
     html_blocks = [
         '<div style="margin-top:28px;padding-top:16px;border-top:1px solid #ddd;'
         'font-family:sans-serif;font-size:13px;color:#555">',
-        '<p style="margin:0 0 12px;font-weight:600;color:#333">'
-        f"{escape(previous)}</p>",
+        f'<p style="margin:0 0 12px;font-weight:600;color:#333">{escape(previous)}</p>',
     ]
     for header, body in selected:
         html_blocks.append(
