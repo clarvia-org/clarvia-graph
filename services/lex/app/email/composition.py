@@ -301,7 +301,10 @@ def _verify_composed_email(message: EmailMessage) -> None:
     if plain.count(token) != 1:
         raise EmailCompositionError("Plain-text footer is missing or duplicated.")
 
-    if html_content.count(token) != 1:
+    # html.escape() turns apostrophes into &#x27;, so the raw token is absent
+    # from HTML even though the footer is present (Italian "un'organizzazione").
+    html_token = html.escape(token)
+    if html_content.count(html_token) != 1 and html_content.count(token) != 1:
         raise EmailCompositionError("HTML footer is missing or duplicated.")
 
     if "We're happy to help with anything else." in plain:

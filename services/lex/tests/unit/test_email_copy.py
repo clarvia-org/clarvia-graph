@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+import html as html_module
+
+import pytest
 from app.email.composition import compose_lex_email, validate_response_body
 from app.email.copy import (
     EMAIL_COPY_KEYS,
@@ -183,3 +186,58 @@ def test_sources_heading_follows_response_language() -> None:
     )
     assert email_copy("fr")["sources_checked"] in rendered
     assert "Sources checked:" not in rendered
+
+
+def test_link_labels_are_substrings_of_prose() -> None:
+    for locale in EMAIL_LOCALES:
+        copy = email_copy(locale)
+        assert copy["footer_donate_link"] in copy["footer_donate"], locale
+        assert copy["footer_contact_form_link"] in copy["footer_accuracy"], locale
+        markup = footer_html(locale)
+        donate_anchor = f">{html_module.escape(copy['footer_donate_link'])}</a>"
+        contact_anchor = f">{html_module.escape(copy['footer_contact_form_link'])}</a>"
+        assert donate_anchor in markup, locale
+        assert contact_anchor in markup, locale
+
+
+@pytest.mark.parametrize("locale", EMAIL_LOCALES)
+def test_compose_succeeds_for_every_locale(locale: str) -> None:
+    message = compose_lex_email(
+        response_body_markdown="Ecco la risposta.\n\nLex.",
+        to_addresses=["user@example.com"],
+        cc_addresses=[],
+        subject="Re: question",
+        outbound_message_id="<out@clarvia.org>",
+        in_reply_to="<in@example.com>",
+        references=[],
+        request_id="req",
+        prompt_version="lex-v1",
+        locale=locale,
+    )
+    assert message["X-Lex-Locale"] == locale
+    plain, html_content = _alternatives(message)
+    token = footer_verify_token(locale)
+    assert plain.count(token) == 1
+    escaped = html_module.escape(token)
+    assert html_content.count(escaped) == 1 or html_content.count(token) == 1
+
+
+def test_italian_apostrophe_is_html_escaped_but_still_verifies() -> None:
+    message = compose_lex_email(
+        response_body_markdown="Ecco la risposta.\n\nLex.",
+        to_addresses=["user@example.com"],
+        cc_addresses=[],
+        subject="Domanda",
+        outbound_message_id="<out@clarvia.org>",
+        in_reply_to="<in@example.com>",
+        references=[],
+        request_id="req-1",
+        prompt_version="lex-v1",
+        locale="it",
+    )
+    _plain, html_content = _alternatives(message)
+    token = footer_verify_token("it")
+    assert "un'organizzazione" in token
+    assert "un&#x27;organizzazione" in html_content
+    assert html_content.count(token) == 0
+    assert html_content.count(html_module.escape(token)) == 1
