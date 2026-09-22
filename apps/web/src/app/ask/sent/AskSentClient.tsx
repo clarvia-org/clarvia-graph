@@ -3,47 +3,50 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { ASK_SUBMITTED_STORAGE_KEY, trackAskSubmitted } from "@/lib/analytics";
 import { headlineStyle } from "@/app/[lang]/data";
 import {
   ASK_LOCALE_STORAGE_KEY,
   ASK_MARKET_STORAGE_KEY,
   ASK_REF_STORAGE_KEY,
+  applyAskHtmlLocale,
   isRtlAskLocale,
-  resolveAskLocale,
+  parseAskLocale,
+  resolveAskSentLocale,
   sanitizeAskSlug,
   siteLangForAskLocale,
   type AskLocale,
 } from "@/lib/ask-entry";
 import { askCopy } from "@/lib/ask-entry-copy";
 
-function readStoredLocale(): AskLocale {
-  let saved: string | null = null;
+function readSavedLocale(): string | null {
   try {
-    saved = localStorage.getItem(ASK_LOCALE_STORAGE_KEY);
+    return localStorage.getItem(ASK_LOCALE_STORAGE_KEY);
   } catch {
-    saved = null;
+    return null;
   }
-  const browser =
-    typeof navigator !== "undefined"
-      ? navigator.languages?.length
-        ? [...navigator.languages]
-        : navigator.language
-          ? [navigator.language]
-          : []
-      : [];
-  return resolveAskLocale({ saved, browserLanguages: browser, linkHint: null });
+}
+
+function readBrowserLanguages(): string[] {
+  if (typeof navigator === "undefined") return [];
+  if (navigator.languages?.length) return [...navigator.languages];
+  return navigator.language ? [navigator.language] : [];
 }
 
 export default function AskSentClient() {
-  const [locale, setLocale] = useState<AskLocale>("en");
+  const searchParams = useSearchParams();
+  const linkHint = searchParams.get("lang");
+  const [locale, setLocale] = useState<AskLocale>(parseAskLocale(linkHint) ?? "en");
   const [showAddress, setShowAddress] = useState(false);
 
   useEffect(() => {
-    const next = readStoredLocale();
+    const next = resolveAskSentLocale({
+      saved: readSavedLocale(),
+      browserLanguages: readBrowserLanguages(),
+      linkHint,
+    });
     setLocale(next);
-    document.documentElement.setAttribute("dir", isRtlAskLocale(next) ? "rtl" : "ltr");
-    document.documentElement.setAttribute("lang", next);
 
     let submitted = false;
     let ref: string | undefined;
@@ -64,12 +67,18 @@ export default function AskSentClient() {
       ref,
       market,
     });
-  }, []);
+  }, [linkHint]);
+
+  useEffect(() => applyAskHtmlLocale(document.documentElement, locale), [locale]);
 
   const siteLang = siteLangForAskLocale(locale);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div
+      className="flex flex-col min-h-screen"
+      dir={isRtlAskLocale(locale) ? "rtl" : "ltr"}
+      lang={locale}
+    >
       <header className="py-4 px-4 sm:px-8 lg:px-12">
         <Link
           href={`/${siteLang}`}

@@ -86,8 +86,42 @@ export function resolveAskLocale(opts: {
   );
 }
 
+/** After submit, the forwarded form language beats ambient browser language. */
+export function resolveAskSentLocale(opts: {
+  saved?: string | null;
+  browserLanguages?: readonly string[] | null;
+  linkHint?: string | null;
+}): AskLocale {
+  const hint = parseAskLocale(opts.linkHint);
+  return resolveAskLocale({
+    saved: opts.saved,
+    browserLanguages: hint ? [] : opts.browserLanguages,
+    linkHint: opts.linkHint,
+  });
+}
+
 export function isRtlAskLocale(locale: AskLocale): boolean {
   return locale === "ar";
+}
+
+type AskHtmlElement = {
+  getAttribute(name: string): string | null;
+  setAttribute(name: string, value: string): void;
+  removeAttribute(name: string): void;
+};
+
+/** Sets html dir/lang for an Ask locale and returns a restore function for unmount. */
+export function applyAskHtmlLocale(html: AskHtmlElement, locale: AskLocale): () => void {
+  const previousDir = html.getAttribute("dir");
+  const previousLang = html.getAttribute("lang");
+  html.setAttribute("dir", isRtlAskLocale(locale) ? "rtl" : "ltr");
+  html.setAttribute("lang", locale);
+  return () => {
+    if (previousDir) html.setAttribute("dir", previousDir);
+    else html.removeAttribute("dir");
+    if (previousLang) html.setAttribute("lang", previousLang);
+    else html.removeAttribute("lang");
+  };
 }
 
 export function siteLangForAskLocale(locale: AskLocale): "en" | "fr" | "de" | "lu" {
