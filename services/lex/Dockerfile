@@ -32,7 +32,7 @@ ENV LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-v1.txt \
     LEX_GENERATION_PIPELINE=single_pass \
     MAX_OUTPUT_TOKENS=12000 \
     GCP_REGION=europe-west1 \
-    OPENAI_MODEL=gpt-5.6-luna \
+    OPENAI_MODEL=gpt-6-luna \
     PROCESSING_MODE=disabled
 
 EXPOSE 8080
