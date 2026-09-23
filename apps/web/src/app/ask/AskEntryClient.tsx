@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import AskForm from "@/components/AskForm";
 import CookieConsent from "@/components/CookieConsent";
 import { headlineStyle } from "@/app/[lang]/data";
@@ -40,15 +40,21 @@ function persistAttribution(ref: string | undefined, market: string | undefined)
   }
 }
 
-export default function AskEntryClient() {
+export default function AskEntryClient({
+  linkHint,
+  refHint,
+  marketHint,
+}: {
+  linkHint: string | null;
+  refHint: string | null;
+  marketHint: string | null;
+}) {
   const router = useRouter();
-  const searchParams = useSearchParams();
-  const linkHint = searchParams.get("lang");
   const initialLocale = parseAskLocale(linkHint) ?? "en";
   const [locale, setLocale] = useState<AskLocale>(initialLocale);
 
-  const ref = sanitizeAskSlug(searchParams.get("ref"));
-  const market = sanitizeAskSlug(searchParams.get("market"));
+  const ref = sanitizeAskSlug(refHint);
+  const market = sanitizeAskSlug(marketHint);
 
   useEffect(() => {
     persistAttribution(ref, market);

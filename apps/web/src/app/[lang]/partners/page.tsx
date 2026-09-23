@@ -64,7 +64,7 @@ export default async function PartnersPage({
               "Use the canonical link https://clarvia.org/ask. Optional parameters are ref (your organisation slug), market (aggregate geography only), and lang (a language hint). Language on the Ask page is chosen by a saved user choice, then the browser language, then your lang hint, then English. Do not treat language or market as the family’s country or legal situation.",
             )}
           </p>
-          <PartnerLinkBuilder />
+          <PartnerLinkBuilder siteLang={lang} />
         </section>
 
         <section className="mb-10">
@@ -111,7 +111,7 @@ export default async function PartnersPage({
             <li>
               {tr(
                 lang,
-                "Until translations of this sentence are approved, the paste text is English. Families still get a translated Ask page when their browser or the lang hint matches a supported language.",
+                "Paste text is available in English, French and German. Choose the text language separately from the Ask page language hint. Families see the Ask page in a supported language when their saved choice, browser or link hint matches.",
               )}
             </li>
           </ul>
@@ -124,7 +124,7 @@ export default async function PartnersPage({
           <p className="text-base text-calm-blue-600 leading-relaxed">
             {tr(
               lang,
-              "Ask Clarvia currently accepts up to three questions per hour from the same network address, uses a bot check, and requires consent. Replies come from Lex at Clarvia, usually within a few minutes. If you plan to send the link to a large mailing list or a clinical network, contact Clarvia first.",
+              "Ask Clarvia currently accepts up to ten questions per hour from the same network address, uses a bot check, and requires consent. Replies come from Lex at Clarvia, usually within a few minutes. If you plan to send the link to a large mailing list or a clinical network, contact Clarvia first.",
             )}
           </p>
         </section>

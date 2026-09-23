@@ -14,7 +14,7 @@ export const CONSENT_TEXT_VERSION = "ask-consent-v1";
 export const MIN_QUESTION_CHARS = 20;
 export const MAX_QUESTION_CHARS = 100_000;
 
-const limiter = rateLimit("ask", 3, 60 * 60 * 1000);
+const limiter = rateLimit("ask", 10, 60 * 60 * 1000);
 
 interface ConsentLedgerEntry {
   timestamp: string;
@@ -82,18 +82,6 @@ export async function POST(req: NextRequest) {
 
   const forwarded = req.headers.get("x-forwarded-for");
   const ip = forwarded?.split(",")[0]?.trim() || "unknown";
-  const { allowed, retryAfterMs } = limiter(ip);
-  if (!allowed) {
-    return Response.json(
-      { error: "Please wait a bit before asking again." },
-      {
-        status: 429,
-        headers: retryAfterMs
-          ? { "Retry-After": String(Math.ceil(retryAfterMs / 1000)) }
-          : undefined,
-      }
-    );
-  }
 
   if (!lexAskUrl || !websiteHmacSecret) {
     console.error("Ask ingest is not configured (LEX_ASK_URL / LEX_WEBSITE_HMAC_SECRET).");
@@ -132,6 +120,19 @@ export async function POST(req: NextRequest) {
     if (turnstileSecret) {
       const ok = await verifyTurnstile(turnstileSecret, turnstileToken);
       if (!ok) return NextResponse.json({ error: "Bot check failed" }, { status: 403 });
+    }
+
+    const { allowed, retryAfterMs } = limiter(ip);
+    if (!allowed) {
+      return Response.json(
+        { error: "Please wait a bit before asking again." },
+        {
+          status: 429,
+          headers: retryAfterMs
+            ? { "Retry-After": String(Math.ceil(retryAfterMs / 1000)) }
+            : undefined,
+        }
+      );
     }
 
     const payload = JSON.stringify({ email, question, consent: true, locale });

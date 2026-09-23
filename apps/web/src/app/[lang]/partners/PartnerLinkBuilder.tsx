@@ -5,11 +5,30 @@ import {
   ASK_LOCALES,
   ASK_LOCALE_NAMES,
   buildPartnerAskUrl,
+  siteLangToAskLocale,
   type AskLocale,
 } from "@/lib/ask-entry";
+import type { Lang } from "@/lib/i18n";
 
-const PASTE_SENTENCE =
-  "If you need practical next steps after a death or during a terminal illness, you can ask Clarvia for free, source-linked guidance by email:";
+const PASTE_COPY = {
+  en: {
+    before: "If you need practical next steps after a death or during a terminal illness, you can",
+    link: "ask Clarvia",
+    after: " for free, source-linked guidance by email",
+  },
+  fr: {
+    before: "Si vous avez besoin de conseils pratiques après un décès ou pendant la maladie en phase terminale d’un proche, vous pouvez",
+    link: "poser gratuitement votre question à Clarvia",
+    after: " et recevoir par e-mail une réponse avec des liens vers ses sources",
+  },
+  de: {
+    before: "Wenn Sie nach einem Todesfall oder während der unheilbaren Erkrankung eines Angehörigen praktische Orientierung benötigen, können Sie",
+    link: "Clarvia kostenlos fragen",
+    after: " und eine Antwort mit Quellenlinks per E-Mail erhalten",
+  },
+} as const;
+
+type PasteLanguage = keyof typeof PASTE_COPY;
 
 function CopyField({
   label,
@@ -52,17 +71,21 @@ function CopyField({
   );
 }
 
-export default function PartnerLinkBuilder() {
+export default function PartnerLinkBuilder({ siteLang }: { siteLang: Lang }) {
   const [ref, setRef] = useState("");
   const [market, setMarket] = useState("");
-  const [lang, setLang] = useState<AskLocale>("en");
+  const [lang, setLang] = useState<AskLocale>(siteLangToAskLocale(siteLang));
+  const [pasteLanguage, setPasteLanguage] = useState<PasteLanguage>(
+    siteLang === "fr" || siteLang === "de" ? siteLang : "en",
+  );
 
   const url = useMemo(
     () => buildPartnerAskUrl({ ref, market, lang }),
     [ref, market, lang],
   );
-  const sentence = `${PASTE_SENTENCE} ${url}`;
-  const html = `<p>If you need practical next steps after a death or during a terminal illness, you can <a href="${url}">ask Clarvia</a> for free, source-linked guidance by email.</p>`;
+  const paste = PASTE_COPY[pasteLanguage];
+  const sentence = `${paste.before} ${paste.link}${paste.after}: ${url}`;
+  const html = `<p>${paste.before} <a href="${url}">${paste.link}</a>${paste.after}.</p>`;
 
   return (
     <div className="glass-panel p-6 sm:p-8">
@@ -102,6 +125,18 @@ export default function PartnerLinkBuilder() {
           </select>
         </label>
       </div>
+      <label className="block text-sm font-semibold text-calm-blue-800 mb-4">
+        <span className="block mb-1.5">Paste text language</span>
+        <select
+          value={pasteLanguage}
+          onChange={(e) => setPasteLanguage(e.target.value as PasteLanguage)}
+          className="min-h-11 rounded-lg border border-calm-blue-200 bg-white px-3 py-2 text-calm-blue-800"
+        >
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+        </select>
+      </label>
       <CopyField label="Sentence and link" value={sentence} />
       <CopyField label="Link only" value={url} />
       <CopyField label="HTML" value={html} />
