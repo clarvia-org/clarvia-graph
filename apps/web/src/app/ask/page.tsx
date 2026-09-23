@@ -1,5 +1,4 @@
 import { type Metadata } from "next";
-import { Suspense } from "react";
 import AskEntryClient from "./AskEntryClient";
 
 const BASE_URL = "https://clarvia.org";
@@ -22,10 +21,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AskPage() {
+export default async function AskPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ lang?: string | string[]; ref?: string | string[]; market?: string | string[] }>;
+}) {
+  const params = await searchParams;
+  const first = (value: string | string[] | undefined) =>
+    typeof value === "string" ? value : Array.isArray(value) ? value[0] ?? null : null;
   return (
-    <Suspense fallback={null}>
-      <AskEntryClient />
-    </Suspense>
+    <AskEntryClient
+      linkHint={first(params.lang)}
+      refHint={first(params.ref)}
+      marketHint={first(params.market)}
+    />
   );
 }

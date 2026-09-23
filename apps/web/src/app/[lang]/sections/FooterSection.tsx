@@ -20,7 +20,6 @@ export default function FooterSection({ lang }: { lang: Lang }) {
       links: [
         { href: `/${lang}#ask-us`, label: tr(lang, "Ask Clarvia") },
         { href: `/${lang}/guidance`, label: tr(lang, "Guidance") },
-        { href: `/${lang}/checklist`, label: tr(lang, "Checklist") },
       ],
     },
     {
