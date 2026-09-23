@@ -153,10 +153,10 @@ function DonationFormInner({ lang, landingVariant, config }: DonationFormProps) 
         <p>
           {l(
             lang,
-            "The checklist is free whether or not you donate.",
-            "La liste de démarches reste gratuite, que vous fassiez un don ou non.",
-            "Die Checkliste bleibt kostenlos, unabhängig davon, ob Sie spenden oder nicht.",
-            "D'Checklëscht ass gratis, egal ob Dir spend oder net."
+            "Ask Clarvia is free whether or not you donate.",
+            "Ask Clarvia reste gratuit, que vous fassiez un don ou non.",
+            "Ask Clarvia bleibt kostenlos, unabhängig davon, ob Sie spenden oder nicht.",
+            "Ask Clarvia ass gratis, egal ob Dir spend oder net."
           )}
         </p>
         <p>
