@@ -13,6 +13,8 @@ function formatDate(dateStr: string, lang: Lang): string {
 }
 
 export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
+  const featuredDates = new Set(Object.values(FEATURED_UPDATE_DATES));
+  const recent = UPDATES.filter((update) => !featuredDates.has(update.date)).slice(0, 4);
   const featured = FEATURED_UPDATE_SLUGS.flatMap((slug) => {
     const date = FEATURED_UPDATE_DATES[slug];
     const update = UPDATES.find((entry) => entry.date === date);
@@ -24,6 +26,25 @@ export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
       <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-8" style={headlineStyle}>
         {l(lang, "Latest", "Dernières nouvelles", "Aktuelles", "Neist")}
       </h2>
+
+      <ul
+        aria-label={l(lang, "Recent updates", "Actualités récentes", "Neueste Meldungen", "Rezent Neiegkeeten")}
+        className="space-y-3 mb-8"
+      >
+        {recent.map((update) => (
+          <li key={update.date} className="text-sm text-calm-blue-700">
+            <time dateTime={update.date} className="text-calm-blue-400 mr-2 tabular-nums">
+              {formatDate(update.date, lang)}
+            </time>
+            <Link
+              href={`/${lang}/updates#update-${update.date}`}
+              className="hover:text-calm-blue-900 underline-offset-2 hover:underline"
+            >
+              {update.headline[lang] || update.headline.en}
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {featured.map(({ slug, update }) => (

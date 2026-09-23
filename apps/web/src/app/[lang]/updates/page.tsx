@@ -8,7 +8,18 @@ import { headlineStyle } from "../data";
 import { UPDATES } from "./updates-data";
 import { FEATURED_UPDATE_DATES, FEATURED_UPDATE_SLUGS } from "@/content/featured-updates";
 
-const MORE_SERVICE_DATES = new Set(["2026-08-21", "2026-07-13", "2026-06-28"]);
+const MORE_SERVICE_DATES = new Set([
+  "2026-09-22",
+  "2026-09-18",
+  "2026-09-10",
+  "2026-09-03",
+  "2026-09-01",
+  "2026-08-25",
+  "2026-08-23",
+  "2026-08-21",
+  "2026-07-13",
+  "2026-06-28",
+]);
 
 function formatDate(dateStr: string, lang: Lang): string {
   const date = new Date(dateStr + "T00:00:00");
@@ -124,6 +135,7 @@ export default async function UpdatesPage({ params }: { params: Promise<{ lang: 
           <ul className="space-y-3">
             {more.map((update) => (
               <li
+                id={`update-${update.date}`}
                 key={`${update.date}-${update.headline.en}`}
                 className="text-base text-calm-blue-700"
               >
@@ -146,7 +158,7 @@ export default async function UpdatesPage({ params }: { params: Promise<{ lang: 
           </h2>
           <ul className="space-y-2">
             {notes.map((update, index) => (
-              <li key={`${update.date}-${index}`} className="text-sm text-calm-blue-600">
+              <li id={`update-${update.date}`} key={`${update.date}-${index}`} className="text-sm text-calm-blue-600">
                 <time dateTime={update.date} className="text-calm-blue-400 mr-2 tabular-nums">
                   {update.date}
                 </time>
