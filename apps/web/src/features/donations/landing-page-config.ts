@@ -148,10 +148,10 @@ export const DEFAULT_CONFIG: DonationLandingVariant = {
     {
       icon: "\u{1F4C4}",
       text: {
-        en: "keep the checklists free for everyone",
-        fr: "garder les listes de démarches gratuites pour tous",
-        de: "die Checklisten für alle kostenlos halten",
-        lu: "d'Checklëschte fir jiddereen gratis halen",
+        en: "keep Ask Clarvia free for everyone",
+        fr: "garder Ask Clarvia gratuit pour tout le monde",
+        de: "Ask Clarvia für alle kostenlos halten",
+        lu: "Ask Clarvia fir jidderee gratis halen",
       },
     },
     {
@@ -220,10 +220,10 @@ export const ADS_KEEP_FREE_V1: DonationLandingVariant = {
     lu: "Praktesch Orientéierung am Trauerfall gratis halen",
   },
   summary: {
-    en: "Clarvia turns scattered official information into free, open-source checklists for families handling administration after a death.",
-    fr: "Clarvia transforme les informations officielles éparpillées en listes d'étapes gratuites pour les familles après un décès.",
-    de: "Clarvia macht aus verstreuten offiziellen Informationen kostenlose Open-Source-Checklisten für Familien.",
-    lu: "Clarvia mécht aus verstreeten offiziellen Informatiounen gratis Open-Source-Checklëschten fir Familljen.",
+    en: "Ask Clarvia gives families free, source-linked guidance by email when they have questions after a death.",
+    fr: "Ask Clarvia répond gratuitement par e-mail aux questions des familles après un décès, avec des liens vers les sources.",
+    de: "Ask Clarvia beantwortet Fragen von Familien nach einem Todesfall kostenlos per E-Mail und verlinkt die verwendeten Quellen.",
+    lu: "Ask Clarvia beäntwert d'Froe vu Familljen no engem Doudesfall gratis per E-Mail a verlinkt déi benotzte Quellen.",
   },
   impactPoints: [
     {

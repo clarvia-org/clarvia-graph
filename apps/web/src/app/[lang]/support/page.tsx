@@ -15,19 +15,19 @@ export async function generateMetadata({
   const META = {
     en: {
       title: "Support Clarvia - Help us keep bereavement guidance free",
-      description: "Clarvia is a Luxembourg non-profit. Your donation helps us maintain our free, trilingual bereavement checklists and support families when they need it most.",
+      description: "Your donation keeps Ask Clarvia free for families worldwide and helps us improve source-linked bereavement guidance.",
     },
     fr: {
       title: "Soutenir Clarvia - Aidez-nous à garder notre guide de deuil gratuit",
-      description: "Clarvia est une ASBL luxembourgeoise. Votre don nous aide à maintenir nos listes de démarches de deuil gratuites et trilingues pour toutes les familles.",
+      description: "Votre don permet de garder Ask Clarvia gratuit pour les familles du monde entier et d'améliorer nos réponses avec des liens vers les sources.",
     },
     de: {
       title: "Clarvia unterstützen - Helfen Sie uns, die Trauerbegleitung kostenlos zu halten",
-      description: "Clarvia ist ein luxemburgischer gemeinnütziger Verein. Ihre Spende hilft uns, unsere kostenlosen, dreisprachigen Checklisten für Familien zu pflegen.",
+      description: "Ihre Spende hält Ask Clarvia für Familien weltweit kostenlos und hilft uns, unsere quellenbasierte Orientierung zu verbessern.",
     },
     lu: {
       title: "Clarvia ënnerstëtzen - Hëlleft eis, de Guide fir de Trauerfall gratis ze halen",
-      description: "Clarvia ass eng lëtzebuergesch A.s.b.l. Är Spend hëlleft eis, eis gratis, méisproocheg Checklëschten ze pflegen an d'Familljen z'ënnerstëtzen, wa si se am meeschte brauchen.",
+      description: "Ären Don hält Ask Clarvia fir Famillje weltwäit gratis an hëlleft eis, eis Orientéierung op Basis vu Quellen ze verbesseren.",
     },
   };
 
