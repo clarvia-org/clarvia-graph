@@ -17,7 +17,7 @@ export default function MissionHero({ lang }: { lang: Lang }) {
       <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-8">
         {tr(
           lang,
-          "Clarvia helps families worldwide find free, source-linked guidance through Ask Clarvia, published guides, and a growing bereavement checklist.",
+          "Clarvia helps families worldwide find free, source-linked guidance through Ask Clarvia and published guides.",
         )}
       </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
