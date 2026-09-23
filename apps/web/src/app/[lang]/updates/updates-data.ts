@@ -8,6 +8,69 @@ export type Update = {
 /* Newest first — sorted by date descending */
 export const UPDATES: Update[] = [
   {
+    date: "2026-09-22",
+    headline: {
+      en: "Ask Clarvia is now available in 14 languages on the web and by email",
+      fr: "Ask Clarvia est désormais disponible en 14 langues sur le site et par e-mail",
+      de: "Ask Clarvia ist auf der Website und per E-Mail jetzt in 14 Sprachen verfügbar",
+      lu: "Ask Clarvia ass elo op der Websäit an per E-Mail a 14 Sprooche verfügbar",
+    },
+  },
+  {
+    date: "2026-09-18",
+    headline: {
+      en: "Ask Clarvia exceeds initial expectations, helping families in 10 countries in its first month",
+      fr: "Ask Clarvia dépasse les attentes initiales et aide des familles dans 10 pays dès son premier mois",
+      de: "Ask Clarvia übertrifft im ersten Monat die Erwartungen und hilft Familien in zehn Ländern",
+      lu: "Ask Clarvia iwwertrëfft am éischte Mount d’Erwaardungen an hëlleft Familljen an zéng Länner",
+    },
+  },
+  {
+    date: "2026-09-10",
+    headline: {
+      en: "Clarvia launches a partner toolkit for hospices, charities, and healthcare teams",
+      fr: "Clarvia lance un kit pour les hospices, les associations caritatives et les équipes soignantes",
+      de: "Clarvia stellt ein Partnerpaket für Hospize, Hilfsorganisationen und Gesundheitsteams bereit",
+      lu: "Clarvia stellt en Toolkit fir Hospicer, Hëllefsorganisatiounen a Gesondheetsteams zur Verfügung",
+    },
+  },
+  {
+    date: "2026-09-03",
+    headline: {
+      en: "Clarvia demonstrates cross-border bereavement guidance with palliative care partners in Belgium",
+      fr: "Clarvia présente son accompagnement transfrontalier après un décès à des partenaires des soins palliatifs en Belgique",
+      de: "Clarvia führt Partnern aus der Palliativversorgung in Belgien grenzüberschreitende Orientierung nach einem Todesfall vor",
+      lu: "Clarvia weist Partner aus der Palliativfleeg an der Belsch, wéi grenziwwerschreidend Orientéierung no engem Doudesfall funktionéiert",
+    },
+  },
+  {
+    date: "2026-09-01",
+    headline: {
+      en: "Ask Clarvia now verifies links to official sources in real time",
+      fr: "Ask Clarvia vérifie désormais en temps réel les liens vers les sources officielles",
+      de: "Ask Clarvia prüft Links zu offiziellen Quellen jetzt in Echtzeit",
+      lu: "Ask Clarvia iwwerpréift Linken op offiziell Quellen elo an Echtzäit",
+    },
+  },
+  {
+    date: "2026-08-25",
+    headline: {
+      en: "Clarvia publishes structured guides and aligns its Luxembourg consequence graph with current official registers",
+      fr: "Clarvia publie des guides structurés et aligne son graphe des conséquences pour le Luxembourg sur les registres officiels à jour",
+      de: "Clarvia veröffentlicht strukturierte Leitfäden und gleicht seinen Luxemburger Graphen zu Verwaltungsfolgen mit aktuellen amtlichen Registern ab",
+      lu: "Clarvia publizéiert strukturéiert Guiden a stëmmt säi Lëtzebuerger Graph iwwer administrativ Konsequenze mat aktuellen offizielle Regësteren of",
+    },
+  },
+  {
+    date: "2026-08-23",
+    headline: {
+      en: "First family receives completed guidance from Ask Clarvia",
+      fr: "Une première famille reçoit une réponse complète d’Ask Clarvia",
+      de: "Die erste Familie erhält eine vollständige Antwort von Ask Clarvia",
+      lu: "Déi éischt Famill kritt eng komplett Äntwert vun Ask Clarvia",
+    },
+  },
+  {
     date: "2026-08-22",
     headline: {
       en: "Clarvia launches 'Ask Clarvia' to provide direct, automated guidance from the homepage",

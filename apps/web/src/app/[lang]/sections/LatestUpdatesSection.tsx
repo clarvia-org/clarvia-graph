@@ -2,7 +2,7 @@ import Link from "next/link";
 import { type Lang, l } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 import { UPDATES } from "../updates/updates-data";
-import { FEATURED_UPDATE_DATES, FEATURED_UPDATE_SLUGS } from "@/content/featured-updates";
+import { HIGHLIGHT_UPDATE_DATES } from "@/content/featured-updates";
 
 function formatDate(dateStr: string, lang: Lang): string {
   const date = new Date(dateStr + "T00:00:00");
@@ -13,10 +13,9 @@ function formatDate(dateStr: string, lang: Lang): string {
 }
 
 export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
-  const featured = FEATURED_UPDATE_SLUGS.flatMap((slug) => {
-    const date = FEATURED_UPDATE_DATES[slug];
+  const featured = HIGHLIGHT_UPDATE_DATES.flatMap((date) => {
     const update = UPDATES.find((entry) => entry.date === date);
-    return update ? [{ slug, update }] : [];
+    return update ? [update] : [];
   });
 
   return (
@@ -26,12 +25,8 @@ export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {featured.map(({ slug, update }) => (
-          <Link
-            key={slug}
-            href={`/${lang}/updates/${slug}`}
-            className="glass-panel p-5 hover:shadow-md transition-shadow"
-          >
+        {featured.map((update) => (
+          <div key={update.date} className="glass-panel p-5">
             <time
               dateTime={update.date}
               className="text-xs font-medium text-calm-blue-400 tabular-nums"
@@ -41,7 +36,7 @@ export default function LatestUpdatesSection({ lang }: { lang: Lang }) {
             <span className="block mt-2 text-base text-calm-blue-800 font-medium leading-snug">
               {update.headline[lang] || update.headline.en}
             </span>
-          </Link>
+          </div>
         ))}
       </div>
 

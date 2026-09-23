@@ -1,14 +1,24 @@
 import { type Metadata } from "next";
-import Link from "next/link";
 import { type Lang, LANGUAGES, l, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
 import FooterSection from "../sections/FooterSection";
 import { headlineStyle } from "../data";
 import { UPDATES } from "./updates-data";
-import { FEATURED_UPDATE_DATES, FEATURED_UPDATE_SLUGS } from "@/content/featured-updates";
+import { HIGHLIGHT_UPDATE_DATES } from "@/content/featured-updates";
 
-const MORE_SERVICE_DATES = new Set(["2026-08-21", "2026-07-13", "2026-06-28"]);
+const MORE_SERVICE_DATES = new Set([
+  "2026-09-22",
+  "2026-09-18",
+  "2026-09-10",
+  "2026-09-03",
+  "2026-09-01",
+  "2026-08-25",
+  "2026-08-23",
+  "2026-08-21",
+  "2026-07-13",
+  "2026-06-28",
+]);
 
 function formatDate(dateStr: string, lang: Lang): string {
   const date = new Date(dateStr + "T00:00:00");
@@ -49,13 +59,11 @@ export async function generateMetadata({
 export default async function UpdatesPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: rawLang } = await params;
   const lang = (rawLang as Lang) || "en";
-  const featuredDates = new Set(Object.values(FEATURED_UPDATE_DATES));
-
-  const featured = FEATURED_UPDATE_SLUGS.map((slug) => {
-    const date = FEATURED_UPDATE_DATES[slug];
+  const featuredDates = new Set<string>(HIGHLIGHT_UPDATE_DATES);
+  const featured = HIGHLIGHT_UPDATE_DATES.flatMap((date) => {
     const update = UPDATES.find((entry) => entry.date === date);
-    return update ? { slug, update } : null;
-  }).filter((item): item is NonNullable<typeof item> => item !== null);
+    return update ? [update] : [];
+  });
 
   const more = UPDATES.filter(
     (update) => MORE_SERVICE_DATES.has(update.date) && !featuredDates.has(update.date),
@@ -96,19 +104,15 @@ export default async function UpdatesPage({ params }: { params: Promise<{ lang: 
             {tr(lang, "Latest from Clarvia")}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {featured.map(({ slug, update }) => (
-              <Link
-                key={slug}
-                href={`/${lang}/updates/${slug}`}
-                className="glass-panel p-5 hover:shadow-md transition-shadow"
-              >
+            {featured.map((update) => (
+              <div key={update.date} className="glass-panel p-5">
                 <time dateTime={update.date} className="text-xs font-medium text-calm-blue-400">
                   {formatDate(update.date, lang)}
                 </time>
                 <span className="block mt-2 font-medium text-calm-blue-800 leading-snug">
                   {update.headline[lang] || update.headline.en}
                 </span>
-              </Link>
+              </div>
             ))}
           </div>
         </section>
@@ -124,6 +128,7 @@ export default async function UpdatesPage({ params }: { params: Promise<{ lang: 
           <ul className="space-y-3">
             {more.map((update) => (
               <li
+                id={`update-${update.date}`}
                 key={`${update.date}-${update.headline.en}`}
                 className="text-base text-calm-blue-700"
               >
@@ -146,7 +151,7 @@ export default async function UpdatesPage({ params }: { params: Promise<{ lang: 
           </h2>
           <ul className="space-y-2">
             {notes.map((update, index) => (
-              <li key={`${update.date}-${index}`} className="text-sm text-calm-blue-600">
+              <li id={`update-${update.date}`} key={`${update.date}-${index}`} className="text-sm text-calm-blue-600">
                 <time dateTime={update.date} className="text-calm-blue-400 mr-2 tabular-nums">
                   {update.date}
                 </time>

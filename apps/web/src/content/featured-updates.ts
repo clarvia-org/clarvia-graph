@@ -1,5 +1,14 @@
 import { type Lang, l } from "@/lib/i18n";
 
+/** Curated headline-only highlights. Change these dates to rotate the four cards. */
+export const HIGHLIGHT_UPDATE_DATES = [
+  "2026-09-22", // language access
+  "2026-09-18", // families reached in 10 countries
+  "2026-09-03", // Belgian palliative care partnership
+  "2026-09-01", // official source verification
+] as const;
+
+/** Historical article routes remain available for existing links. */
 export const FEATURED_UPDATE_SLUGS = [
   "ask-clarvia-launches",
   "checklist-accessibility-update",
