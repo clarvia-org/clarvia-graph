@@ -105,10 +105,10 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
                   <p className="text-base text-calm-blue-500 leading-relaxed">
                     {l(
                       lang,
-                      "The information exists, but it is scattered across official websites, different jurisdictions, and unclear procedures. Clarvia turns that complexity into free, open-source checklists that show what to do first, what each step unlocks, and what deadlines matter most.",
-                      "Les informations existent, mais elles sont dispersées sur des sites officiels, dans différentes administrations et dans des procédures souvent peu claires. Clarvia transforme cette complexité en listes d’étapes gratuites et open source, qui expliquent quoi faire en premier, quelles démarches en débloquent d’autres et quels délais sont les plus importants.",
-                      "Die Informationen gibt es, aber sie sind über offizielle Websites, verschiedene Zuständigkeiten und oft unklare Abläufe verstreut. Clarvia macht daraus kostenlose Open-Source-Checklisten, die zeigen, was zuerst zu tun ist, welche Schritte andere ermöglichen und welche Fristen besonders wichtig sind.",
-                      "D'Informatioune ginn et, mee se sinn iwwer offiziell Websäiten, verschidde Verwaltungen an dacks onkloer Prozedure verstreet. Clarvia mécht aus där Komplexitéit gratis Open-Source-Checklëschten, déi weisen, wat als Éischt ze maachen ass, wéi eng Schrëtt aner Démarchen erméiglechen a wéi eng Fristen am wichtegste sinn."
+                      "The information exists, but it is scattered across official websites, different jurisdictions, and unclear procedures. Ask Clarvia brings it together in a free, source-linked reply with practical next steps, tailored to the family's question and sent by email.",
+                      "Ces informations existent, mais elles sont dispersées entre sites officiels, juridictions et procédures peu claires. Ask Clarvia les rassemble dans une réponse gratuite, avec des liens vers les sources et des étapes concrètes adaptées à la question de la famille, envoyée par e-mail.",
+                      "Die Informationen sind vorhanden, aber über offizielle Websites, verschiedene Länder und unklare Verfahren verstreut. Ask Clarvia führt sie in einer kostenlosen Antwort mit Quellenlinks und praktischen nächsten Schritten zusammen, abgestimmt auf die Frage der Familie und per E-Mail versendet.",
+                      "D'Informatioune sinn do, mee se sinn iwwer offiziell Websäiten, verschidde Länner an onkloer Prozedure verspreet. Ask Clarvia bréngt se an enger gratis Äntwert mat Quellelinken a prakteschen nächste Schrëtt zesummen, op d'Fro vun der Famill zougeschnidden a per E-Mail geschéckt."
                     )}
                   </p>
                   <p className="text-base text-calm-blue-500 leading-relaxed">
@@ -141,6 +141,7 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
                   alt={localizedHeadline}
                   width={800}
                   height={450}
+                  priority
                   className="w-full h-auto object-cover aspect-[16/9]"
                 />
               </div>
@@ -258,10 +259,10 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
               <p>
                 {l(
                   lang,
-                  "Your gift keeps Clarvia’s free services running: Ask Clarvia by email for families worldwide, and the Luxembourg checklist we are building. We do not show ads.",
-                  "Votre don permet à Clarvia de maintenir ses services gratuits : « Demandez à Clarvia » par e-mail pour les familles du monde entier et la checklist Luxembourg que nous développons actuellement. Nous n’affichons aucune publicité.",
-                  "Mit Ihrer Spende sichern Sie den Betrieb der kostenlosen Angebote von Clarvia: „Clarvia fragen“ per E-Mail für Familien weltweit und die Luxemburg-Checkliste, die wir derzeit entwickeln. Wir zeigen keine Werbung.",
-                  "Mat Ärem Don hëlleft Dir, dem Clarvia seng gratis Servicer um Lafen ze halen: „Frot Clarvia“ per E-Mail fir Famillje weltwäit an d’Lëtzebuerg-Checklëscht, déi mir amgaang sinn ze entwéckelen. Mir weise keng Reklammen."
+                  "Your gift keeps Ask Clarvia free for families worldwide and supports the source-backed guidance and jurisdiction data we use to improve it. We do not show ads.",
+                  "Votre don permet de garder Ask Clarvia gratuit pour les familles du monde entier et soutient les ressources fondées sur des sources et les données locales que nous utilisons pour l'améliorer. Nous n'affichons aucune publicité.",
+                  "Ihre Spende hält Ask Clarvia für Familien weltweit kostenlos und unterstützt die quellenbasierte Orientierung und länderspezifischen Daten, mit denen wir den Dienst verbessern. Wir zeigen keine Werbung.",
+                  "Ären Don hält Ask Clarvia fir Famillje weltwäit gratis an ënnerstëtzt d'Orientéierung op Basis vu Quellen an d'Donnéeë fir eenzel Länner, mat deene mir de Service verbesseren. Mir weise keng Reklammen."
                 )}
               </p>
               <p>
