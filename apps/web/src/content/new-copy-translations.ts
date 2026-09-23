@@ -383,11 +383,11 @@ export const NEW_COPY_TRANSLATIONS: Record<string, NewCopyTranslation> = {
       de: "Erfahren Sie, wie Clarvia amtliche Quellen, gepflegte Gesetzestexte, menschliche Prüfung und KI nutzt und wo die Grenzen der einzelnen Ansätze liegen.",
       lu: "Kuckt, wéi Clarvia offiziell Quellen, aktuell gehalen Gesetzestexter, mënschlech Kontroll a KI asetzt a wou d'Grenze vun deenen eenzele Methoden leien.",
     },
-  "Clarvia helps families worldwide find free, source-linked guidance through Ask Clarvia, published guides, and a growing bereavement checklist.":
+  "Clarvia helps families worldwide find free, source-linked guidance through Ask Clarvia and published guides.":
     {
-      fr: "Clarvia aide gratuitement les familles partout dans le monde grâce au service Demandez à Clarvia, à des guides publiés avec leurs sources et à une liste de démarches après un décès qui s'enrichit progressivement.",
-      de: "Clarvia unterstützt Familien weltweit kostenlos mit Clarvia fragen, veröffentlichten Orientierungshilfen mit Quellenangaben und einer wachsenden Checkliste nach einem Todesfall.",
-      lu: "Clarvia hëlleft Famillje weltwäit gratis mat Clarvia froen, verëffentlechten Orientéierungshëllefe mat Linken op d'Quellen an enger Checklëscht no engem Doudesfall, déi lues a lues ausgebaut gëtt.",
+      fr: "Clarvia aide gratuitement les familles partout dans le monde grâce au service Demandez à Clarvia et à des guides publiés avec leurs sources.",
+      de: "Clarvia unterstützt Familien weltweit kostenlos mit Clarvia fragen und veröffentlichten Orientierungshilfen mit Quellenangaben.",
+      lu: "Clarvia hëlleft Famillje weltwäit gratis mat Clarvia froen a verëffentlechten Orientéierungshëllefe mat Linken op d'Quellen.",
     },
   "AI and human review": {
     fr: "IA et validation humaine",
