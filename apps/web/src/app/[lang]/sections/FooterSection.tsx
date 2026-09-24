@@ -28,14 +28,8 @@ export default function FooterSection({ lang }: { lang: Lang }) {
         { href: `/${lang}/about`, label: l(lang, "About", "À propos", "Über uns", "Iwwer eis") },
         { href: `/${lang}/how-it-works`, label: tr(lang, "How it works") },
         {
-          href: "/brochure.html",
-          label: l(
-            lang,
-            "Brochure (English)",
-            "Brochure (en anglais)",
-            "Broschüre (Englisch)",
-            "Broschür (Englesch)",
-          ),
+          href: { en: "/brochure.html", fr: "/brochure-fr.html", de: "/brochure-de.html", lu: "/brochure-lb.html" }[lang],
+          label: l(lang, "Brochure", "Brochure", "Broschüre", "Broschür"),
         },
         {
           href: `/${lang}/updates`,
