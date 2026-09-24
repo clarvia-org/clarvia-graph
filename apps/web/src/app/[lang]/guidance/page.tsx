@@ -6,7 +6,8 @@ import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
 import FooterSection from "../sections/FooterSection";
 import { headlineStyle } from "../data";
-import { guidanceCountryLabel, guidesForLanguage, guidePath } from "@/content/guidance";
+import { guidesForLanguage } from "@/content/guidance";
+import GuidanceBrowser from "./GuidanceBrowser";
 
 export async function generateMetadata({
   params,
@@ -51,21 +52,7 @@ export default async function GuidanceHubPage({ params }: { params: Promise<{ la
             "Browse practical guides prepared from reviewed information, with links to the official sources used. You can also ask Clarvia about your own situation.",
           )}
         </p>
-        <h2 className="text-2xl font-semibold text-calm-blue-800 mb-5" style={headlineStyle}>
-          {guidanceCountryLabel(lang)}
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {guides.map((guide) => (
-            <Link
-              key={guide.slug}
-              href={guidePath(lang, guide.slug)}
-              className="glass-panel p-6 hover:shadow-md transition-shadow"
-            >
-              <h2 className="text-lg font-semibold text-calm-blue-800 mb-2">{guide.title}</h2>
-              <p className="text-base text-calm-blue-600 leading-relaxed">{guide.card}</p>
-            </Link>
-          ))}
-        </div>
+        <GuidanceBrowser lang={lang} guides={guides} />
         <p className="mt-10">
           <Link href={siteAskHref(lang)} className="text-calm-blue-700 font-medium underline">
             {tr(lang, "Ask Clarvia")}
