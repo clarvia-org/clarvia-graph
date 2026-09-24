@@ -2,7 +2,7 @@ import { CONSENT_STORAGE_KEY, CONSENT_VERSION } from "@/lib/consent";
 
 export const GA_MEASUREMENT_ID = "G-K67M5B4932";
 
-/** sessionStorage flag: homepage Ask us succeeded; thank-you page may fire the conversion. */
+/** sessionStorage flag: Ask question succeeded; thank-you page may fire the conversion. */
 export const ASK_SUBMITTED_STORAGE_KEY = "clarvia-ask-submitted";
 
 const ADS_ID_PATTERN = /^AW-\d+$/;

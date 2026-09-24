@@ -2,9 +2,7 @@ import translations from "@/content/ask-entry-translations.json";
 import {
   type AskLocale,
   siteLangForAskLocale,
-  siteLangToAskLocale,
 } from "@/lib/ask-entry";
-import type { Lang } from "@/lib/i18n";
 
 export type AskCopyId = keyof (typeof translations)["en"];
 
@@ -62,8 +60,4 @@ export function askFormCopy(locale: AskLocale): AskFormCopy {
     formFooter: askCopy(locale, "form_footer"),
     error: (raw) => askErrorCopy(locale, raw),
   };
-}
-
-export function homepageAskFormCopy(lang: Lang): AskFormCopy {
-  return askFormCopy(siteLangToAskLocale(lang));
 }

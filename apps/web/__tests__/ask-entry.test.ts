@@ -9,6 +9,7 @@ import {
   resolveAskLocale,
   resolveAskSentLocale,
   sanitizeAskSlug,
+  siteAskHref,
   siteLangForAskLocale,
 } from "@/lib/ask-entry";
 import { askCopy, type AskCopyId } from "@/lib/ask-entry-copy";
@@ -29,7 +30,7 @@ describe("ask entry locales", () => {
     expect(parseAskLocale("ja")).toBeNull();
   });
 
-  it("resolves saved choice, then browser, then link hint, then English", () => {
+  it("resolves saved choice, then link hint, then browser, then English", () => {
     expect(
       resolveAskLocale({
         saved: "de",
@@ -43,7 +44,7 @@ describe("ask entry locales", () => {
         browserLanguages: ["nl-BE", "en"],
         linkHint: "fr",
       }),
-    ).toBe("nl");
+    ).toBe("fr");
     expect(
       resolveAskLocale({
         saved: "not-a-locale",
@@ -58,6 +59,13 @@ describe("ask entry locales", () => {
         linkHint: "xx",
       }),
     ).toBe("en");
+  });
+
+  it("sends each site language to the matching Ask interface", () => {
+    expect(siteAskHref("en")).toBe("/ask?lang=en");
+    expect(siteAskHref("fr")).toBe("/ask?lang=fr");
+    expect(siteAskHref("de")).toBe("/ask?lang=de");
+    expect(siteAskHref("lu")).toBe("/ask?lang=lb");
   });
 
   it("lets a forwarded Ask sent lang beat the ambient browser language", () => {

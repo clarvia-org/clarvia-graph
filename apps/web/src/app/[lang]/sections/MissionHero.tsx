@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, tr } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 
@@ -22,7 +23,7 @@ export default function MissionHero({ lang }: { lang: Lang }) {
       </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
         <Link
-          href={`/${lang}#ask-us`}
+          href={siteAskHref(lang)}
           className="btn-primary px-8 py-3 text-base min-h-11 inline-flex items-center"
         >
           {tr(lang, "Ask Clarvia")}

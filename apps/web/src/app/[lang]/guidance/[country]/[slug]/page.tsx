@@ -1,6 +1,7 @@
 import { type Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
@@ -90,7 +91,7 @@ export default async function GuidePage({
         <GuideTrustBlock lang={lang} lastReviewed={guide.lastReviewed} />
 
         <p id="ask-bridge" className="mt-8 scroll-mt-24">
-          <Link href={`/${lang}#ask-us`} className="btn-primary px-6 py-3 inline-flex items-center">
+          <Link href={siteAskHref(lang)} className="btn-primary px-6 py-3 inline-flex items-center">
             {tr(lang, "Ask Clarvia")}
           </Link>
         </p>
