@@ -154,8 +154,11 @@ export default function AskEntryClient({
           <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-4">
             {askCopy(locale, "blurb")}
           </p>
-          <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-10">
+          <p className="text-base sm:text-lg text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-4">
             {askCopy(locale, "reply_timing")}
+          </p>
+          <p className="text-sm text-calm-blue-600 max-w-3xl mx-auto leading-relaxed mb-8">
+            {askCopy(locale, "language_scope")}
           </p>
           <AskForm
             copy={copy}

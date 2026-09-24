@@ -1,5 +1,6 @@
 import { type Metadata } from "next";
 import Link from "next/link";
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
@@ -253,7 +254,7 @@ export default async function HowItWorksPage({ params }: { params: Promise<{ lan
         </section>
 
         <p className="mt-12">
-          <Link href={`/${lang}#ask-us`} className="btn-primary px-6 py-3 inline-flex items-center">
+          <Link href={siteAskHref(lang)} className="btn-primary px-6 py-3 inline-flex items-center">
             {tr(lang, "Ask Clarvia")}
           </Link>
         </p>

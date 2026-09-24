@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, tr } from "@/lib/i18n";
 import { headlineStyle } from "../data";
 
 export default function ProgramCardsSection({ lang }: { lang: Lang }) {
   const cards = [
     {
-      href: `/${lang}#ask-us`,
+      href: siteAskHref(lang),
       title: tr(lang, "Ask Clarvia"),
       body: tr(
         lang,

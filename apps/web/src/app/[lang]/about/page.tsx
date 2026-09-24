@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, l, LANGUAGES, hreflangLanguages, tr } from "@/lib/i18n";
 import Header from "@/components/Header";
 import { headlineStyle } from "../data";
@@ -182,7 +183,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
                 </p>
                 <p>
                   <Link
-                    href={`/${lang}#ask-us`}
+                    href={siteAskHref(lang)}
                     className="text-calm-blue-700 font-medium hover:text-calm-blue-900 underline underline-offset-2 transition-colors"
                   >
                     {l(

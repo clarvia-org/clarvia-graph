@@ -1,5 +1,6 @@
 import { type Metadata } from "next";
 import Link from "next/link";
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
@@ -103,7 +104,7 @@ export default async function ChecklistRoute({ params }: { params: Promise<{ lan
 
         <p className="mt-10 text-sm text-calm-blue-600">
           {tr(lang, "If these tasks do not match your country or facts,")}{" "}
-          <Link href={`/${lang}#ask-us`} className="underline font-medium">
+          <Link href={siteAskHref(lang)} className="underline font-medium">
             {tr(lang, "Ask Clarvia")}
           </Link>
           .

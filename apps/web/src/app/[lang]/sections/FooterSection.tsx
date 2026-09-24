@@ -1,3 +1,4 @@
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, l, tr } from "@/lib/i18n";
 import CookieSettingsTrigger from "@/components/CookieSettingsTrigger";
 import Image from "next/image";
@@ -18,7 +19,7 @@ export default function FooterSection({ lang }: { lang: Lang }) {
     {
       title: tr(lang, "Get help"),
       links: [
-        { href: `/${lang}#ask-us`, label: tr(lang, "Ask Clarvia") },
+        { href: siteAskHref(lang), label: tr(lang, "Ask Clarvia") },
         { href: `/${lang}/guidance`, label: tr(lang, "Guidance") },
       ],
     },

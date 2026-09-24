@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, l, LANGUAGES, tr } from "@/lib/i18n";
 
 const LINK_CLASS =
@@ -20,7 +21,7 @@ export default function Header({ lang }: { lang: Lang }) {
   const pathname = usePathname() || `/${lang}`;
   const [open, setOpen] = useState(false);
 
-  const askHref = `/${lang}#ask-us`;
+  const askHref = siteAskHref(lang);
   const nav = [
     { href: `/${lang}/how-it-works`, label: tr(lang, "How it works") },
     { href: `/${lang}/guidance`, label: tr(lang, "Guidance") },

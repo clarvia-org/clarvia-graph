@@ -1,5 +1,6 @@
 import { type Metadata } from "next";
 import Link from "next/link";
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, l, LANGUAGES, hreflangLanguages } from "@/lib/i18n";
 import Header from "@/components/Header";
 import { headlineStyle } from "../data";
@@ -89,7 +90,7 @@ export default async function ContactPage({
         </p>
         <div className="flex flex-wrap justify-center gap-3 mb-12">
           <Link
-            href={`/${lang}#ask-us`}
+            href={siteAskHref(lang)}
             className="btn-primary inline-flex items-center justify-center px-6 py-2.5 text-sm"
           >
             {l(lang, "Ask us", "Posez-nous votre question", "Fragen Sie uns", "Frot eis")}

@@ -80,8 +80,8 @@ export function resolveAskLocale(opts: {
 }): AskLocale {
   return (
     parseAskLocale(opts.saved) ??
-    matchBrowserLanguages(opts.browserLanguages ?? []) ??
     parseAskLocale(opts.linkHint) ??
+    matchBrowserLanguages(opts.browserLanguages ?? []) ??
     "en"
   );
 }
@@ -132,6 +132,10 @@ export function siteLangForAskLocale(locale: AskLocale): "en" | "fr" | "de" | "l
 
 export function siteLangToAskLocale(lang: "en" | "fr" | "de" | "lu"): AskLocale {
   return lang === "lu" ? "lb" : lang;
+}
+
+export function siteAskHref(lang: "en" | "fr" | "de" | "lu"): string {
+  return `/ask?lang=${siteLangToAskLocale(lang)}`;
 }
 
 /** Attribution slugs only. Rejects anything that is not a short lowercase token. */

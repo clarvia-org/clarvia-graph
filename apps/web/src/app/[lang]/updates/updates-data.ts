@@ -10,10 +10,10 @@ export const UPDATES: Update[] = [
   {
     date: "2026-09-22",
     headline: {
-      en: "Ask Clarvia is now available in 14 languages on the web and by email",
-      fr: "Ask Clarvia est désormais disponible en 14 langues sur le site et par e-mail",
-      de: "Ask Clarvia ist auf der Website und per E-Mail jetzt in 14 Sprachen verfügbar",
-      lu: "Ask Clarvia ass elo op der Websäit an per E-Mail a 14 Sprooche verfügbar",
+      en: "Ask Clarvia’s question page is now available in 14 languages",
+      fr: "La page de questions d’Ask Clarvia est désormais disponible en 14 langues",
+      de: "Die Frageseite von Ask Clarvia ist jetzt in 14 Sprachen verfügbar",
+      lu: "D’Froesäit vun Ask Clarvia gëtt et elo a 14 Sproochen",
     },
   },
   {

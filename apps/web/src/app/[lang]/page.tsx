@@ -1,5 +1,5 @@
 import { type Metadata } from "next";
-import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
+import { type Lang, LANGUAGES, l, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
 import MissionHero from "./sections/MissionHero";
@@ -24,9 +24,12 @@ export async function generateMetadata({
     lang,
     pathAfterLang: "",
     title: tr(lang, "Clear next steps after someone dies. | Clarvia"),
-    description: tr(
+    description: l(
       lang,
-      "Free bereavement guidance from Clarvia ASBL, with links to the sources used. Ask Clarvia, read a published guide, or use the checklist.",
+      "Free bereavement guidance from Clarvia ASBL, with links to the sources used. Ask Clarvia or read a published guide.",
+      "Une aide gratuite de Clarvia ASBL pour les familles confrontées à la fin de vie ou au décès d’un proche. Posez une question à Ask Clarvia ou consultez nos guides publiés.",
+      "Kostenlose Orientierung von Clarvia ASBL bei schwerer Krankheit und nach einem Todesfall. Fragen Sie Ask Clarvia oder lesen Sie unsere veröffentlichten Leitfäden.",
+      "Gratis Orientéierung vu Clarvia ASBL bei schwéierer Krankheet an no engem Doudesfall. Stellt Ask Clarvia eng Fro oder liest eis publizéiert Guiden.",
     ),
     translated: true,
   });

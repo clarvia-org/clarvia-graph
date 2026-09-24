@@ -1,5 +1,6 @@
 import { type Metadata } from "next";
 import Link from "next/link";
+import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
@@ -65,7 +66,7 @@ export default async function GuidanceHubPage({ params }: { params: Promise<{ la
           ))}
         </div>
         <p className="mt-10">
-          <Link href={`/${lang}#ask-us`} className="text-calm-blue-700 font-medium underline">
+          <Link href={siteAskHref(lang)} className="text-calm-blue-700 font-medium underline">
             {tr(lang, "Ask Clarvia")}
           </Link>
         </p>
