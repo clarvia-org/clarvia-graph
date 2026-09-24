@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import MissionHero from "./sections/MissionHero";
 import ProgramCardsSection from "./sections/ProgramCardsSection";
 import HeroSection from "./sections/HeroSection";
-import GuidancePreviewSection from "./sections/GuidancePreviewSection";
 import HomeMissionSection from "./sections/HomeMissionSection";
 import HowTrustWorksSection from "./sections/HowTrustWorksSection";
 import OrgSupportSection from "./sections/OrgSupportSection";
@@ -50,7 +49,6 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
         <MissionHero lang={lang} />
         <ProgramCardsSection lang={lang} />
         <HeroSection lang={lang} />
-        <GuidancePreviewSection lang={lang} />
         <HomeMissionSection lang={lang} />
         <HowTrustWorksSection lang={lang} />
         <OrgSupportSection lang={lang} />

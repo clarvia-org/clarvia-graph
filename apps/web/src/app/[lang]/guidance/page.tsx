@@ -5,9 +5,8 @@ import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
 import FooterSection from "../sections/FooterSection";
-import CountrySelector from "@/components/CountrySelector";
 import { headlineStyle } from "../data";
-import { guidesForLanguage, guidePath } from "@/content/guidance";
+import { guidanceCountryLabel, guidesForLanguage, guidePath } from "@/content/guidance";
 
 export async function generateMetadata({
   params,
@@ -49,10 +48,12 @@ export default async function GuidanceHubPage({ params }: { params: Promise<{ la
         <p className="text-lg text-calm-blue-700 leading-relaxed mb-8">
           {tr(
             lang,
-            "Ask Clarvia is available worldwide. This library is organised by country. Select a country to read guidance Clarvia has prepared from reviewed, source-backed task data. If your situation involves another country, several countries, or facts that do not match a guide, ask Clarvia instead.",
+            "Browse practical guides prepared from reviewed information, with links to the official sources used. You can also ask Clarvia about your own situation.",
           )}
         </p>
-        <CountrySelector lang={lang} id="guidance-country" />
+        <h2 className="text-2xl font-semibold text-calm-blue-800 mb-5" style={headlineStyle}>
+          {guidanceCountryLabel(lang)}
+        </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {guides.map((guide) => (
             <Link

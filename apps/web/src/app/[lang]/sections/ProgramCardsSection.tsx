@@ -19,7 +19,7 @@ export default function ProgramCardsSection({ lang }: { lang: Lang }) {
       title: tr(lang, "Published guidance"),
       body: tr(
         lang,
-        "Read practical, source-linked pages based on guidance Clarvia has reviewed and approved for publication. Choose a country to see the guides for that place.",
+        "Read practical, source-linked guides prepared from information Clarvia has reviewed for publication.",
       ),
       action: tr(lang, "Browse guidance"),
     },
