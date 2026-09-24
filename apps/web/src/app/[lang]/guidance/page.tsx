@@ -5,9 +5,9 @@ import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
 import FooterSection from "../sections/FooterSection";
-import CountrySelector from "@/components/CountrySelector";
 import { headlineStyle } from "../data";
-import { guidesForLanguage, guidePath } from "@/content/guidance";
+import { guidesForLanguage } from "@/content/guidance";
+import GuidanceBrowser from "./GuidanceBrowser";
 
 export async function generateMetadata({
   params,
@@ -49,22 +49,10 @@ export default async function GuidanceHubPage({ params }: { params: Promise<{ la
         <p className="text-lg text-calm-blue-700 leading-relaxed mb-8">
           {tr(
             lang,
-            "Ask Clarvia is available worldwide. This library is organised by country. Select a country to read guidance Clarvia has prepared from reviewed, source-backed task data. If your situation involves another country, several countries, or facts that do not match a guide, ask Clarvia instead.",
+            "Browse practical guides prepared from reviewed information, with links to the official sources used. You can also ask Clarvia about your own situation.",
           )}
         </p>
-        <CountrySelector lang={lang} id="guidance-country" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          {guides.map((guide) => (
-            <Link
-              key={guide.slug}
-              href={guidePath(lang, guide.slug)}
-              className="glass-panel p-6 hover:shadow-md transition-shadow"
-            >
-              <h2 className="text-lg font-semibold text-calm-blue-800 mb-2">{guide.title}</h2>
-              <p className="text-base text-calm-blue-600 leading-relaxed">{guide.card}</p>
-            </Link>
-          ))}
-        </div>
+        <GuidanceBrowser lang={lang} guides={guides} />
         <p className="mt-10">
           <Link href={siteAskHref(lang)} className="text-calm-blue-700 font-medium underline">
             {tr(lang, "Ask Clarvia")}

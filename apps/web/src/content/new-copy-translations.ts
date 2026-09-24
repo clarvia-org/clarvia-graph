@@ -278,17 +278,11 @@ export const NEW_COPY_TRANSLATIONS: Record<string, NewCopyTranslation> = {
     de: "Clarvia fragen ist ein weltweiter E-Mail-Service.",
     lu: "Clarvia froen ass e weltwäiten E-Mail-Service.",
   },
-  "Ask Clarvia is available worldwide. This library is organised by country. Select a country to read guidance Clarvia has prepared from reviewed, source-backed task data. If your situation involves another country, several countries, or facts that do not match a guide, ask Clarvia instead.":
+  "Browse practical guides prepared from reviewed information, with links to the official sources used. You can also ask Clarvia about your own situation.":
     {
-      fr: "Demandez à Clarvia est disponible partout dans le monde. Cette bibliothèque est organisée par pays. Choisissez un pays pour consulter les guides que Clarvia a préparés à partir de démarches vérifiées et étayées par des sources. Si votre situation concerne un autre pays, plusieurs pays ou ne correspond pas à un guide, posez plutôt votre question à Clarvia.",
-      de: "Clarvia fragen ist weltweit verfügbar. Diese Sammlung ist nach Ländern geordnet. Wählen Sie ein Land, um Orientierungshilfen zu lesen, die Clarvia aus geprüften und durch Quellen belegten Aufgabendaten erstellt hat. Wenn Ihre Situation ein anderes oder mehrere Länder betrifft oder nicht zu einer Orientierungshilfe passt, fragen Sie stattdessen Clarvia.",
-      lu: "Clarvia froen ass weltwäit disponibel. Dës Sammlung ass no Länner agedeelt. Wielt e Land, fir Orientéierungshëllefen ze liesen, déi Clarvia op Basis vun iwwerpréiften a mat Quelle beluechten Donnéeën ausgeschafft huet. Wann Är Situatioun en anert oder méi Länner betrëfft oder net bei eng Orientéierungshëllef passt, frot léiwer Clarvia.",
-    },
-  "Ask Clarvia works worldwide. Published guides are organised by country. Select a country to read the reviewed pages for that place. If your situation involves another country or the facts do not match a guide, ask Clarvia instead.":
-    {
-      fr: "Demandez à Clarvia fonctionne partout dans le monde. Les guides publiés sont classés par pays. Choisissez un pays pour consulter les pages vérifiées qui s'y rapportent. Si votre situation concerne un autre pays ou ne correspond pas à un guide, posez plutôt votre question à Clarvia.",
-      de: "Clarvia fragen ist weltweit verfügbar. Die veröffentlichten Orientierungshilfen sind nach Ländern geordnet. Wählen Sie ein Land, um die dafür geprüften Seiten zu lesen. Wenn Ihre Situation ein anderes Land betrifft oder nicht zu einer Orientierungshilfe passt, fragen Sie stattdessen Clarvia.",
-      lu: "Clarvia froen ass weltwäit disponibel. Déi verëffentlecht Orientéierungshëllefe sinn no Länner agedeelt. Wielt e Land, fir déi iwwerpréifte Säiten dozou ze liesen. Wann Är Situatioun en anert Land betrëfft oder net bei eng Orientéierungshëllef passt, frot léiwer Clarvia.",
+      fr: "Consultez des guides pratiques préparés à partir d’informations vérifiées, avec des liens vers les sources officielles utilisées. Vous pouvez aussi poser à Clarvia une question sur votre situation.",
+      de: "Lesen Sie praktische Leitfäden, die auf geprüften Informationen beruhen und auf die verwendeten amtlichen Quellen verweisen. Sie können Clarvia auch zu Ihrer eigenen Situation fragen.",
+      lu: "Liest praktesch Guiden op Basis vun iwwerpréiften Informatiounen, mat Linken op déi benotzten offiziell Quellen. Dir kënnt Clarvia och eng Fro zu Ärer eegener Situatioun stellen.",
     },
   "Checklist conditions are evaluated in your browser, so the personal facts used to generate the checklist are not sent to Clarvia for that generation.":
     {
@@ -341,11 +335,11 @@ export const NEW_COPY_TRANSLATIONS: Record<string, NewCopyTranslation> = {
     de: "Veröffentlichte Aufgaben",
     lu: "Verëffentlecht Aufgaben",
   },
-  "Read practical, source-linked pages based on guidance Clarvia has reviewed and approved for publication. Choose a country to see the guides for that place.":
+  "Read practical, source-linked guides prepared from information Clarvia has reviewed for publication.":
     {
-      fr: "Consultez des pages pratiques avec des liens vers les sources, préparées à partir d'informations que Clarvia a vérifiées et approuvées pour publication. Choisissez un pays pour voir les guides disponibles.",
-      de: "Lesen Sie praktische Seiten mit Quellenangaben, die auf von Clarvia geprüften und zur Veröffentlichung freigegebenen Informationen beruhen. Wählen Sie ein Land, um die verfügbaren Orientierungshilfen zu sehen.",
-      lu: "Liest praktesch Säite mat Linken op d'Quellen, déi op Informatioune baséieren, déi Clarvia iwwerpréift a fir d'Verëffentlechung fräiginn huet. Wielt e Land, fir déi disponibel Orientéierungshëllefen ze gesinn.",
+      fr: "Consultez des guides pratiques avec des liens vers les sources, préparés à partir d’informations vérifiées par Clarvia avant publication.",
+      de: "Lesen Sie praktische Leitfäden mit Quellenlinks, die Clarvia vor der Veröffentlichung anhand geprüfter Informationen erstellt hat.",
+      lu: "Liest praktesch Guidë mat Linken op d’Quellen, déi Clarvia op Basis vun iwwerpréiften Informatiounen ausgeschafft huet.",
     },
   "Read bereavement guidance organised by country, with links to the official sources used.": {
     fr: "Consultez des guides après un décès classés par pays, avec des liens vers les sources officielles utilisées.",
