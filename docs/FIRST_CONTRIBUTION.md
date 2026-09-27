@@ -10,8 +10,8 @@
 | Path | Skills needed | Time | Issue to reference |
 |---|---|---|---|
 | [Path 1 — Source capture (no-code)](#path-1--source-capture-no-code) | Browser only | ~10 min | [#46](https://github.com/clarvia-org/clarvia-graph/issues/46) |
-| [Path 2 — Website (`apps/web`)](#path-2--website-appsweb) | JS / React / Next.js | ~30–60 min | [#241](https://github.com/clarvia-org/clarvia-graph/issues/241) |
-| [Path 3 — Graph YAML drafts](#path-3--graph-yaml-drafts) | YAML + attention to detail | ~30 min | [#48](https://github.com/clarvia-org/clarvia-graph/issues/48) |
+| [Path 2 — Website (`apps/web`)](#path-2--website-appsweb) | JS / React / Next.js | ~30–60 min | [#245](https://github.com/clarvia-org/clarvia-graph/issues/245) |
+| [Path 3 — Graph YAML drafts](#path-3--graph-yaml-drafts) | YAML + attention to detail | ~30 min | [#344](https://github.com/clarvia-org/clarvia-graph/issues/344) |
 
 All paths share the same [fork → branch → PR](#fork-branch-pr-the-common-workflow) flow at the end.
 
@@ -78,11 +78,20 @@ Check `sources/snapshots/html/lu/` for existing slugs before creating a new one.
 
 ### CLI shortcut (if you have Node.js)
 
+If the source you want to capture already has an entry in
+[`sources/register.yml`](../sources/register.yml), you can use the CLI instead
+of saving manually:
+
 ```bash
-pnpm run capture <url>
+pnpm run capture <source_id>
 ```
 
-This handles file naming and hashing automatically.
+Where `<source_id>` is the `id` field from `sources/register.yml`
+(e.g. `source.guichet_lu.bereavement`). The CLI fetches the registered URL,
+handles file naming, and writes both the HTML and YAML sidecar automatically.
+
+For **unregistered URLs** (pages not yet in the register), use the manual
+File → Save As method described above.
 
 ---
 
@@ -91,7 +100,7 @@ This handles file naming and hashing automatically.
 The public site at [clarvia.org](https://clarvia.org) is a Next.js app. The most-wanted
 contributions are **accessibility improvements** and **i18n copy fixes** — no graph knowledge needed.
 
-**Starter issue:** [#241 — Keyboard + screen-reader audit](https://github.com/clarvia-org/clarvia-graph/issues/241)
+**Starter issue:** [#245 — First-24-hours print layout](https://github.com/clarvia-org/clarvia-graph/issues/245)
 
 ### Prerequisites
 
@@ -121,7 +130,7 @@ pnpm web:dev        # start Next.js dev server at http://localhost:3000
 ### Before you open a PR
 
 ```bash
-pnpm web:lint       # ESLint — must pass
+pnpm web:lint       # ESLint — advisory (CI continues on lint error; fix what you can)
 pnpm web:test       # unit/component tests — must pass
 pnpm web:build      # production build — must succeed
 ```
@@ -131,7 +140,8 @@ pnpm web:build      # production build — must succeed
 | What | Path |
 |---|---|
 | Pages and components | `apps/web/` |
-| Translation strings | `translations/en/`, `translations/fr/`, `translations/de/` |
+| Translation strings | `apps/web/data/translations/` (EN / FR / DE JSON) |
+| Component-level copy | `apps/web/src/content/` |
 | Data fed to the site | `apps/web/public/data/clarvia/` (generated — do not edit by hand) |
 
 > **Never duplicate checklist logic here.** Workflow facts live in the graph
@@ -145,7 +155,7 @@ The consequence graph captures legal facts (tasks, deadlines, conditions) as str
 As an external contributor you can **draft** new records; a maintainer will review them before
 they are approved.
 
-**Issue:** [#48 — Create assertion batches from captured snapshots](https://github.com/clarvia-org/clarvia-graph/issues/48)
+**Starter issues:** [#344](https://github.com/clarvia-org/clarvia-graph/issues/344) · [#345](https://github.com/clarvia-org/clarvia-graph/issues/345)
 
 ### Mandatory status fields
 
@@ -168,7 +178,7 @@ authoring_status: draft
 ### What a consequence record looks like
 
 ```yaml
-id: consequence.lu.bereavement.civil.declare_death
+id: consequence.lu.bereavement.death_registration.declare_death
 schema_version: "0.1.0"
 title: Declare the death at the civil registry
 description: >
@@ -177,14 +187,16 @@ description: >
 consequence_type: administrative_step
 jurisdiction: LU
 life_event: bereavement
-domain: civil
+domain: death_registration          # use a value from graph/consequences/bereavement/lu/
 trigger:
   condition_refs: []
 task_template_refs:
-  - task_template.lu.bereavement.civil.declare_death
+  - task_template.lu.bereavement.death_registration.declare_death
 source_assertion_refs:
   - assertion.guichet_lu.declaration_deces.must_be_declared_within_24h
-authoring_status: draft   # ← always draft for volunteer contributions
+authoring_status: draft             # ← always draft for volunteer contributions
+distribution_status: restricted_source  # ← required; use restricted_source for drafts
+record_valid_from: "2026-01-01"     # ← required; ISO date, use today's date
 ```
 
 See `graph/consequences/bereavement/lu/` for real examples.
