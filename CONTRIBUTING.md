@@ -4,6 +4,8 @@ Thank you for your interest in contributing to Clarvia! This project builds open
 
 This repository is a **monorepo**. See [`docs/MONOREPO.md`](docs/MONOREPO.md) for where graph, website, legislation, and Lex email code live.
 
+> **New here?** See [`docs/FIRST_CONTRIBUTION.md`](docs/FIRST_CONTRIBUTION.md) for a step-by-step first-hour walkthrough across three contribution paths.
+
 ### Working on one area only
 
 You can clone a subset of the tree with sparse checkout (optional):
