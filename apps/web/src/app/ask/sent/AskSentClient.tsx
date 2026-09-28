@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { LinkedInFollowLine, LinkedInLogoLink } from "@/components/LinkedInLink";
 import { ASK_SUBMITTED_STORAGE_KEY, trackAskSubmitted } from "@/lib/analytics";
 import { headlineStyle } from "@/app/[lang]/data";
 import {
@@ -108,7 +109,11 @@ export default function AskSentClient() {
         <p className="text-base sm:text-lg text-calm-blue-600 leading-relaxed">
           {askCopy(locale, showAddress ? "sent_body_with_address" : "sent_body")}
         </p>
+        <LinkedInFollowLine text={askCopy(locale, "linkedin_follow")} />
       </main>
+      <footer className="py-8 px-4 text-center">
+        <LinkedInLogoLink />
+      </footer>
     </div>
   );
 }

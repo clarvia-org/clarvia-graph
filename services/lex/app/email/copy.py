@@ -54,6 +54,8 @@ EMAIL_COPY_KEYS: tuple[str, ...] = (
     "footer_donate",
     "footer_donate_link",
     "footer_volunteer",
+    "footer_linkedin",
+    "footer_linkedin_link",
     "footer_lex_identity",
     "footer_disclaimer",
     "footer_accuracy",
@@ -93,6 +95,7 @@ _CATALOG_PATH = Path(__file__).with_name("email-copy.json")
 _LINK_STYLE = "color:#1a73e8"
 _MUTED_LINK_STYLE = "color:#888"
 _GITHUB_URL = "https://github.com/clarvia-org"
+_LINKEDIN_URL = "https://www.linkedin.com/company/clarvia-org"
 _LEX_ADDRESS = "lex@clarvia.org"
 _SITE_ORIGIN = "https://clarvia.org"
 
@@ -114,6 +117,8 @@ class EmailCopy(TypedDict):
     footer_donate: str
     footer_donate_link: str
     footer_volunteer: str
+    footer_linkedin: str
+    footer_linkedin_link: str
     footer_lex_identity: str
     footer_disclaimer: str
     footer_accuracy: str
@@ -231,6 +236,9 @@ def footer_text(locale: EmailLocale | str | None = "en") -> str:
             copy["footer_volunteer"],
             _GITHUB_URL,
             "",
+            copy["footer_linkedin"],
+            _LINKEDIN_URL,
+            "",
             copy["footer_lex_identity"],
             "",
             copy["footer_disclaimer"],
@@ -266,6 +274,12 @@ def footer_html(locale: EmailLocale | str | None = "en") -> str:
         _GITHUB_URL,
         _LINK_STYLE,
     )
+    linkedin = _linkify_label(
+        copy["footer_linkedin"],
+        copy["footer_linkedin_link"],
+        _LINKEDIN_URL,
+        _LINK_STYLE,
+    )
     accuracy = _linkify_label(
         copy["footer_accuracy"],
         copy["footer_contact_form_link"],
@@ -278,6 +292,7 @@ def footer_html(locale: EmailLocale | str | None = "en") -> str:
         'border-top:1px solid #ddd;padding-top:12px;margin-top:24px">'
         f'<p style="margin:0 0 10px">{_rstrip_colon(donate)}</p>'
         f'<p style="margin:0 0 14px">{_rstrip_colon(volunteer)}</p>'
+        f'<p style="margin:0 0 14px">{_rstrip_colon(linkedin)}</p>'
         f'<p style="margin:0 0 6px;font-size:12px;color:#888">'
         f"{html.escape(copy['footer_lex_identity'])}</p>"
         f'<p style="margin:0 0 6px;font-size:12px;color:#888">'
@@ -317,6 +332,7 @@ def forbidden_body_fragments() -> tuple[str, ...]:
     ]
     keys = (
         "footer_donate",
+        "footer_linkedin",
         "footer_lex_identity",
         "footer_disclaimer",
         "footer_accuracy",
@@ -351,6 +367,10 @@ def boilerplate_markers() -> tuple[str, ...]:
         if snippet and snippet not in seen:
             seen.add(snippet)
             markers.append(snippet)
+        follow = email_copy(locale)["footer_linkedin"]
+        if follow and follow not in seen:
+            seen.add(follow)
+            markers.append(follow)
     return tuple(markers)
 
 

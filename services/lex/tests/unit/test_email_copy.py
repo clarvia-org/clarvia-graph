@@ -193,7 +193,10 @@ def test_link_labels_are_substrings_of_prose() -> None:
         copy = email_copy(locale)
         assert copy["footer_donate_link"] in copy["footer_donate"], locale
         assert copy["footer_contact_form_link"] in copy["footer_accuracy"], locale
+        assert copy["footer_linkedin_link"] in copy["footer_linkedin"], locale
+        assert "https://www.linkedin.com/company/clarvia-org" in footer_text(locale)
         markup = footer_html(locale)
+        assert "https://www.linkedin.com/company/clarvia-org" in markup
         donate_anchor = f">{html_module.escape(copy['footer_donate_link'])}</a>"
         contact_anchor = f">{html_module.escape(copy['footer_contact_form_link'])}</a>"
         assert donate_anchor in markup, locale

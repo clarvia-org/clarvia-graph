@@ -1,6 +1,7 @@
 import { siteAskHref } from "@/lib/ask-entry";
 import { type Lang, l, tr } from "@/lib/i18n";
 import CookieSettingsTrigger from "@/components/CookieSettingsTrigger";
+import { LinkedInLogoLink } from "@/components/LinkedInLink";
 import Image from "next/image";
 
 function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -178,6 +179,9 @@ export default function FooterSection({ lang }: { lang: Lang }) {
             )}
             {" · "}
             <CookieSettingsTrigger lang={lang} />
+          </p>
+          <p className="pt-2">
+            <LinkedInLogoLink />
           </p>
         </div>
       </div>

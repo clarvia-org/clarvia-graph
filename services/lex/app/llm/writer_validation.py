@@ -50,6 +50,7 @@ _CONTINUATION_FOOTER_MARKERS: tuple[str, ...] = (
     "clarvia is a nonprofit",
     "lex is clarvia's ai-powered information",
     "making a donation",
+    "follow us on linkedin",
 )
 
 _SIGN_OFF_RE = re.compile(r"(?:\n|^)Lex\.\s*$")

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import AskForm from "@/components/AskForm";
 import CookieConsent from "@/components/CookieConsent";
+import { LinkedInLogoLink } from "@/components/LinkedInLink";
 import { headlineStyle } from "@/app/[lang]/data";
 import {
   ASK_LOCALES,
@@ -192,6 +193,9 @@ export default function AskEntryClient({
           <Link href={`/${siteLang}/partners`} className="underline hover:text-calm-blue-800">
             {askCopy(locale, "partners_link")}
           </Link>
+        </p>
+        <p className="mt-2">
+          <LinkedInLogoLink />
         </p>
       </footer>
       <CookieConsent lang={siteLang} />
