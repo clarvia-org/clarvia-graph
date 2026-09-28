@@ -32,6 +32,7 @@ _FOOTER_MARKERS = (
     "clarvia is a nonprofit",
     "lex is clarvia's ai-powered information service",
     "we're also looking for volunteers",
+    "follow us on linkedin",
     "long conversation threads can become difficult",
 )
 _DONATION_MARKERS = (

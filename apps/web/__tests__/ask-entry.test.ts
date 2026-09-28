@@ -132,6 +132,7 @@ describe("ask entry locales", () => {
       expect(askCopy(locale, "operator_line")).toContain("Clarvia ASBL");
       expect(askCopy(locale, "operator_line")).toContain("RCS F15680");
       expect(askCopy(locale, "sent_body_with_address")).toContain("lex@clarvia.org");
+      expect(askCopy(locale, "linkedin_follow")).toContain("LinkedIn");
     }
   });
 

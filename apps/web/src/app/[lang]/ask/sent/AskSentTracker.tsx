@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { LinkedInFollowLine } from "@/components/LinkedInLink";
 import { ASK_SUBMITTED_STORAGE_KEY, trackAskSubmitted } from "@/lib/analytics";
 import { type Lang, adsLanguageCode, l } from "@/lib/i18n";
 
@@ -32,8 +33,19 @@ export default function AskSentTracker({ lang }: { lang: Lang }) {
   }, [lang]);
 
   return (
-    <p className="text-base sm:text-lg text-calm-blue-600 leading-relaxed">
-      {notice(lang, showAddress)}
-    </p>
+    <>
+      <p className="text-base sm:text-lg text-calm-blue-600 leading-relaxed">
+        {notice(lang, showAddress)}
+      </p>
+      <LinkedInFollowLine
+        text={l(
+          lang,
+          "Follow us on LinkedIn.",
+          "Suivez-nous sur LinkedIn.",
+          "Folgen Sie uns auf LinkedIn.",
+          "Follegt eis op LinkedIn.",
+        )}
+      />
+    </>
   );
 }
