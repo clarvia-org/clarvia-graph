@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
+from app.domain.labels import ASK_SOURCE_GOOGLE_ADS, ASK_SOURCE_UNKNOWN
 from app.email.ask_inbound import AskInboundError, encode_ask_inbound
 from app.email.recipients import is_valid_address, normalize_address
 from app.logging import get_logger, log_event
@@ -55,7 +56,13 @@ class AskIntake:
         )
 
     def submit(
-        self, *, email: str, question: str, consent: bool, locale: str | None = None
+        self,
+        *,
+        email: str,
+        question: str,
+        consent: bool,
+        locale: str | None = None,
+        source: str = "unknown",
     ) -> AskIntakeResult:
         if not self.enabled:
             log_event(_logger, "ask_intake_skipped", status=STATUS_DISABLED)
@@ -75,6 +82,7 @@ class AskIntake:
                 question=body,
                 mailbox=self._settings.lex_mailbox,
                 locale=locale,
+                source=source,
             )
         except AskInboundError as exc:
             return AskIntakeResult(status=STATUS_INVALID, code=exc.code)
@@ -82,6 +90,18 @@ class AskIntake:
         self._gmail.ensure_labels()
         ref = self._gmail.insert_inbound(raw_message=raw)
         self._poller.enqueue_message(ref)
+        # Attribution must never stop an accepted question from being processed.
+        try:
+            self._gmail.add_label(
+                message_id=ref.message_id,
+                label=ASK_SOURCE_GOOGLE_ADS
+                if source == "google_ads"
+                else ASK_SOURCE_UNKNOWN,
+            )
+        except Exception:
+            log_event(
+                _logger, "ask_source_label_failed", gmail_message_id=ref.message_id
+            )
         log_event(
             _logger,
             "ask_intake_accepted",

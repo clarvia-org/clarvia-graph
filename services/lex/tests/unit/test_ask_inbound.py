@@ -89,3 +89,18 @@ def test_encode_produces_gmail_raw() -> None:
     )
     assert isinstance(encoded, str)
     assert len(encoded) > 20
+
+
+@pytest.mark.parametrize("source", ["google_ads", "unknown", "bad\r\nInjected: value"])
+def test_source_is_internal_allowlisted_header(source: str) -> None:
+    question = "My father died last week in Paris. What should I do first?"
+    message = build_ask_inbound_message(
+        from_address="user@example.com",
+        question=question,
+        mailbox="lex@clarvia.org",
+        source=source,
+    )
+    expected = "google_ads" if source == "google_ads" else "unknown"
+    assert message["X-Lex-Ask-Source"] == expected
+    assert message.get_content().strip() == question
+    assert message["Subject"] == ASK_SUBJECT

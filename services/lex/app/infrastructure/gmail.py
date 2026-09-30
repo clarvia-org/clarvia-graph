@@ -14,7 +14,7 @@ from datetime import datetime
 from typing import TYPE_CHECKING, Any
 
 from app.domain.errors import GmailSendUncertainError, NotImplementedForPhase
-from app.domain.labels import LEX_LABELS, eligible_message_query
+from app.domain.labels import ASK_SOURCE_LABELS, LEX_LABELS, eligible_message_query
 from app.domain.models import GmailMessageRef, ParsedMessage
 from app.email.parsing import ParseLimits, parse_raw_message
 from app.infrastructure.dependencies import require_module
@@ -132,7 +132,7 @@ class GoogleGmailAdapter:
             for label in listed
             if label.get("name") and label.get("id")
         }
-        for name in LEX_LABELS:
+        for name in (*LEX_LABELS, *ASK_SOURCE_LABELS):
             if name in known:
                 continue
             created = labels_api.create(

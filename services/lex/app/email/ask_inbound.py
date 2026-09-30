@@ -16,6 +16,7 @@ from app.email.recipients import is_valid_address, normalize_address
 DELIVERY_CHANNEL_HEADER = "X-Lex-Delivery-Channel"
 DELIVERY_CHANNEL_WEB = "web"
 ASK_LOCALE_HEADER = "X-Lex-Ask-Locale"
+ASK_SOURCE_HEADER = "X-Lex-Ask-Source"
 ASK_SUBJECT = email_copy("en")["ask_subject"]
 MIN_QUESTION_CHARS = 20
 
@@ -34,6 +35,7 @@ def build_ask_inbound_message(
     question: str,
     mailbox: str,
     locale: str | None = None,
+    source: str = "unknown",
 ) -> EmailMessage:
     """Return a plain-text inbound message From the visitor To the Lex mailbox."""
     sender = normalize_address(from_address)
@@ -55,6 +57,7 @@ def build_ask_inbound_message(
     message["Message-ID"] = make_msgid(domain="clarvia.org")
     message[DELIVERY_CHANNEL_HEADER] = DELIVERY_CHANNEL_WEB
     message[ASK_LOCALE_HEADER] = resolved
+    message[ASK_SOURCE_HEADER] = "google_ads" if source == "google_ads" else "unknown"
     message.set_content(body)
     return message
 
@@ -65,6 +68,7 @@ def encode_ask_inbound(
     question: str,
     mailbox: str,
     locale: str | None = None,
+    source: str = "unknown",
 ) -> str:
     """Base64url raw MIME for Gmail ``users.messages.insert``."""
     return encode_for_gmail_api(
@@ -73,6 +77,7 @@ def encode_ask_inbound(
             question=question,
             mailbox=mailbox,
             locale=locale,
+            source=source,
         )
     )
 
@@ -81,6 +86,7 @@ __all__ = [
     "DELIVERY_CHANNEL_HEADER",
     "DELIVERY_CHANNEL_WEB",
     "ASK_LOCALE_HEADER",
+    "ASK_SOURCE_HEADER",
     "ASK_SUBJECT",
     "MIN_QUESTION_CHARS",
     "AskInboundError",

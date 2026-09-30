@@ -69,3 +69,28 @@ uv run pytest
 ## License
 
 Public-safe code in this directory: Apache-2.0.
+
+
+### Ask mailbox source labels
+
+Website submissions are labelled `Ask source/Google Ads` when a Google ad click
+marker (`gclid`, `gbraid`, `wbraid`) or paid Google UTM tag is detected; otherwise
+`Ask source/Unknown`. Unknown includes organic search, direct visits, referrals,
+and visits whose attribution was lost. Source labels are separate from lifecycle
+labels and do not exclude a question from processing. The inbound MIME also has
+an internal `X-Lex-Ask-Source` header. Neither the question nor the reply subject
+or body is modified; follow-up emails are not newly classified.
+
+The website forwards only `google_ads`/`unknown`, never click IDs or campaign names.
+It retains the coarse marker in page-lifetime memory for client navigation, without
+new cookies or browser storage. Reloads or return visits without a URL marker may
+be unknown; a shared tagged link may also carry an ad marker. This is operational
+source attribution, not proof of a billable click. Google measurement and consent
+settings remain unchanged, and Ask remains usable without optional cookie consent.
+
+Deployment: deploy this Lex service revision and the web revision. Older web
+clients default to unknown; older Lex revisions ignore the optional source field.
+Keep Google Ads auto-tagging enabled. As an optional account-wide fallback, set
+Final URL suffix to `utm_source=google&utm_medium=cpc` once in Google Ads account
+tracking settings (preserve any existing suffix). No campaign-specific tags are
+needed. New labels appear automatically after the first submission on this revision.

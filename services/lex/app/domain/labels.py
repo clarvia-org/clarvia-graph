@@ -22,6 +22,10 @@ LEX_LABELS: tuple[str, ...] = (
     LEX_RATE_LIMITED,
 )
 
+ASK_SOURCE_GOOGLE_ADS = "Ask source/Google Ads"
+ASK_SOURCE_UNKNOWN = "Ask source/Unknown"
+ASK_SOURCE_LABELS = (ASK_SOURCE_GOOGLE_ADS, ASK_SOURCE_UNKNOWN)
+
 INBOX_LABEL = "INBOX"
 
 
@@ -38,6 +42,9 @@ __all__ = [
     "LEX_FAILED",
     "LEX_RATE_LIMITED",
     "LEX_LABELS",
+    "ASK_SOURCE_GOOGLE_ADS",
+    "ASK_SOURCE_UNKNOWN",
+    "ASK_SOURCE_LABELS",
     "INBOX_LABEL",
     "eligible_message_query",
 ]
