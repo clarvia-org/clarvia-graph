@@ -206,6 +206,7 @@ def create_app(
             email=str(payload.get("email") or ""),
             question=str(payload.get("question") or ""),
             consent=payload.get("consent") is True,
+            source="google_ads" if payload.get("source") == "google_ads" else "unknown",
             locale=str(payload["locale"])
             if isinstance(payload.get("locale"), str)
             else None,

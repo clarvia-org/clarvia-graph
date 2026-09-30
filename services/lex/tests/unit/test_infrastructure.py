@@ -313,6 +313,8 @@ def test_google_gmail_list_and_label_with_injected_service() -> None:
         "LEX_IGNORED",
         "LEX_FAILED",
         "LEX_RATE_LIMITED",
+        "Ask source/Google Ads",
+        "Ask source/Unknown",
     }
     refs = adapter.list_eligible_message_refs(max_results=10)
     assert refs == [GmailMessageRef(message_id="m1", thread_id="t1")]
@@ -563,3 +565,15 @@ def test_is_already_exists_recognises_common_shapes() -> None:
 def test_require_module_missing() -> None:
     with pytest.raises(MissingDependencyError):
         require_module("lex_email_missing_module_xyz")
+
+
+def test_source_label_does_not_exclude_an_unprocessed_question() -> None:
+    gmail = InMemoryGmail()
+    gmail.add_inbox_message(
+        message_id="source-only",
+        thread_id="t-source",
+        labels={"Ask source/Google Ads"},
+    )
+    assert gmail.list_eligible_message_refs(max_results=10) == [
+        GmailMessageRef(message_id="source-only", thread_id="t-source")
+    ]

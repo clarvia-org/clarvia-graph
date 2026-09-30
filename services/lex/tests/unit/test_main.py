@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import base64
+import json
 from datetime import UTC, datetime
 
 import pytest
@@ -233,6 +234,7 @@ def test_ask_ingest_inserts_and_enqueues() -> None:
     )
     assert parsed.from_address == "user@example.com"
     assert parsed.delivery_channel == "web"
+    assert "Ask source/Unknown" in gmail.labels_for("ask-1")
     assert parsed.ask_locale == "en"
     assert "Paris" in parsed.body_text
 
@@ -316,3 +318,41 @@ def test_ask_ingest_then_process_quotes_question(
     padding = "=" * (-len(gmail.last_sent_raw) % 4)
     decoded = base64.urlsafe_b64decode(gmail.last_sent_raw + padding).decode("utf-8")
     assert "Paris" in decoded
+
+
+@pytest.mark.parametrize("source", ["google_ads", "unknown", "invalid"])
+def test_ask_source_is_labelled_without_changing_question(source: str) -> None:
+    client, gmail, _tasks, _state = _build_client()
+    payload = json.loads(_ask_body())
+    payload["source"] = source
+    body = json.dumps(payload)
+    response = client.post("/v1/ask", content=body, headers=_ask_headers(body))
+    assert response.status_code == 202
+    expected = "Google Ads" if source == "google_ads" else "Unknown"
+    assert f"Ask source/{expected}" in gmail.labels_for("ask-1")
+    assert LEX_PENDING in gmail.labels_for("ask-1")
+    assert gmail.list_eligible_message_refs(max_results=10) == []
+    parsed = gmail.fetch_parsed_message(
+        GmailMessageRef(message_id="ask-1", thread_id="ask-thread-1")
+    )
+    assert parsed.body_text.strip() == ASK_QUESTION
+    assert "Ask source/" not in parsed.subject
+
+
+def test_source_label_failure_does_not_fail_accepted_question(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    client, gmail, tasks, _state = _build_client()
+    original = gmail.add_label
+
+    def fail_source_label(*, message_id: str, label: str) -> None:
+        if label.startswith("Ask source/"):
+            raise RuntimeError("temporary label error")
+        original(message_id=message_id, label=label)
+
+    monkeypatch.setattr(gmail, "add_label", fail_source_label)
+    body = _ask_body()
+    response = client.post("/v1/ask", content=body, headers=_ask_headers(body))
+    assert response.status_code == 202
+    assert tasks.task_names == [task_name_for_message("ask-1")]
+    assert LEX_PENDING in gmail.labels_for("ask-1")

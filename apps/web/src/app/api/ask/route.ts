@@ -135,7 +135,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const payload = JSON.stringify({ email, question, consent: true, locale });
+    // Accept only the coarse source enum; never forward click IDs or URL data.
+    const source = body.source === "google_ads" ? "google_ads" : "unknown";
+    const payload = JSON.stringify({ email, question, consent: true, locale, source });
     const timestamp = new Date().toISOString();
     const signature = signPayload(websiteHmacSecret, timestamp, payload);
     const audience = new URL(lexAskUrl).origin;

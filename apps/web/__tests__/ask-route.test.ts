@@ -125,6 +125,7 @@ describe("POST /api/ask", () => {
     expect(sent.question).toBe(QUESTION);
     expect(sent.consent).toBe(true);
     expect(sent.locale).toBe("en");
+    expect(sent.source).toBe("unknown");
   });
 
   it("forwards a selected Ask locale to Lex", async () => {
@@ -145,6 +146,8 @@ describe("POST /api/ask", () => {
         question: QUESTION,
         consent: true,
         locale: "nl",
+        source: "google_ads",
+        gclid: "must-not-be-forwarded",
       })
     );
     expect(res.status).toBe(200);
@@ -154,6 +157,8 @@ describe("POST /api/ask", () => {
     const init = lexCalls[0][1] as RequestInit;
     const sent = JSON.parse(String(init.body));
     expect(sent.locale).toBe("nl");
+    expect(sent.source).toBe("google_ads");
+    expect(sent.gclid).toBeUndefined();
   });
 
   it("falls back to English for an unknown locale", async () => {
@@ -174,6 +179,7 @@ describe("POST /api/ask", () => {
         question: QUESTION,
         consent: true,
         locale: "zh",
+        source: "invalid-source",
       })
     );
     expect(res.status).toBe(200);
@@ -183,6 +189,7 @@ describe("POST /api/ask", () => {
     const init = lexCalls[0][1] as RequestInit;
     const sent = JSON.parse(String(init.body));
     expect(sent.locale).toBe("en");
+    expect(sent.source).toBe("unknown");
   });
 
   it("still returns 200 if the consent ledger write fails after Lex 202", async () => {

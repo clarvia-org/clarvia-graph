@@ -76,7 +76,7 @@ def test_discovered_message_is_labelled_pending(harness: Harness) -> None:
     harness.poller.run()
 
     assert LEX_PENDING in harness.gmail.labels_for("m1")
-    assert harness.gmail.created_labels == set(LEX_LABELS)
+    assert set(LEX_LABELS) <= harness.gmail.created_labels
 
 
 def test_repeat_poll_creates_no_further_work(harness: Harness) -> None:

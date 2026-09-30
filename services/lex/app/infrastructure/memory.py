@@ -19,7 +19,7 @@ from email.policy import default as default_policy
 
 from app.domain.errors import GmailSendUncertainError
 from app.domain.ids import task_name_for_message
-from app.domain.labels import INBOX_LABEL, LEX_LABELS
+from app.domain.labels import ASK_SOURCE_LABELS, INBOX_LABEL, LEX_LABELS
 from app.domain.lease import LeaseDecision, LeaseOutcome, evaluate_lease
 from app.domain.models import (
     GmailMessageRef,
@@ -109,7 +109,7 @@ class InMemoryGmail:
     # -- GmailPort ----------------------------------------------------------
     def ensure_labels(self) -> None:
         with self._lock:
-            self._known_labels.update(LEX_LABELS)
+            self._known_labels.update((*LEX_LABELS, *ASK_SOURCE_LABELS))
 
     def list_eligible_message_refs(self, *, max_results: int) -> list[GmailMessageRef]:
         with self._lock:

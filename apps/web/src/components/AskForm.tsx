@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, type FormEvent, type MutableRefObject } from "react";
+import { currentAskSource } from "@/lib/ask-source";
 import { isPlausibleEmail } from "@/lib/email";
 import Turnstile from "@/components/Turnstile";
 import { ASK_SUBMITTED_STORAGE_KEY } from "@/lib/analytics";
@@ -63,6 +64,7 @@ export default function AskForm({
           consent: true,
           turnstileToken: token ?? "",
           locale,
+          source: currentAskSource(),
         }),
       });
       if (!res.ok) {
