@@ -13,18 +13,18 @@ authors = [{ name = "Clarvia" }]
 
 dependencies = [
     "fastapi==0.141.1",
-    "uvicorn[standard]==0.52.4",
+    "uvicorn[standard]==0.54.0",
     "pydantic==2.13.5",
     "pydantic-settings==2.15.0",
     "markdown-it-py==4.2.0",
     "bleach==6.4.0",
     "tzdata>=2024.1",
     # Google SDKs are imported lazily; the unit suite never needs credentials.
-    "google-api-python-client==2.199.0",
-    "google-auth==2.57.0",
-    "google-cloud-firestore==2.29.0",
-    "google-cloud-tasks==2.24.0",
-    "openai==3.6.0",
+    "google-api-python-client==2.200.0",
+    "google-auth==2.58.1",
+    "google-cloud-firestore==2.32.0",
+    "google-cloud-tasks==2.25.0",
+    "openai==3.19.2",
 ]
 
 [project.optional-dependencies]
@@ -32,7 +32,7 @@ dev = [
     "pytest==9.1.1",
     "pytest-cov==7.1.0",
     "mypy==2.3.1",
-    "ruff==0.16.5",
+    "ruff==0.16.9",
     "httpx==0.28.1",
     "types-bleach==6.4.0.20260728",
 ]
