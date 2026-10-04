@@ -9,6 +9,7 @@ import HomeMissionSection from "./sections/HomeMissionSection";
 import HowTrustWorksSection from "./sections/HowTrustWorksSection";
 import OrgSupportSection from "./sections/OrgSupportSection";
 import TestimonialsSection from "./sections/TestimonialsSection";
+import CommentarySection from "./sections/CommentarySection";
 import LatestUpdatesSection from "./sections/LatestUpdatesSection";
 import FooterSection from "./sections/FooterSection";
 
@@ -53,6 +54,7 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
         <HowTrustWorksSection lang={lang} />
         <OrgSupportSection lang={lang} />
         <TestimonialsSection lang={lang} />
+        <CommentarySection lang={lang} />
         <LatestUpdatesSection lang={lang} />
       </main>
 
