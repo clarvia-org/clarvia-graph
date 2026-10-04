@@ -21,6 +21,7 @@ const localizedPages: SitemapPage[] = [
   { path: "for-institutions", changeFrequency: "monthly", priority: 0.6, translated: true },
   { path: "partners", changeFrequency: "monthly", priority: 0.6, translated: false },
   { path: "updates", changeFrequency: "weekly", priority: 0.8, translated: true },
+  { path: "voices/uwe-schneider", changeFrequency: "yearly", priority: 0.6, translated: true },
   { path: "contribute", changeFrequency: "monthly", priority: 0.7, translated: true },
   { path: "support", changeFrequency: "weekly", priority: 0.7, translated: true },
   { path: "contact", changeFrequency: "monthly", priority: 0.6, translated: true },
@@ -72,12 +73,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   entries.push(
     {
-      url: `${BASE_URL}/de/voices/uwe-schneider`,
-      lastModified: new Date("2026-10-04T00:00:00Z"),
-      changeFrequency: "yearly",
-      priority: 0.6,
-    },
-    {
       url: `${BASE_URL}/ask`,
       lastModified: now,
       changeFrequency: "weekly",
@@ -105,3 +100,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return entries;
 }
+
