@@ -72,6 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   entries.push(
     {
+      url: `${BASE_URL}/de/voices/uwe-schneider`,
+      lastModified: new Date("2026-10-04T00:00:00Z"),
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
       url: `${BASE_URL}/ask`,
       lastModified: now,
       changeFrequency: "weekly",
