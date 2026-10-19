@@ -14,6 +14,16 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
     "scripts/postinstall.js",
   ]),
+  {
+    settings: {
+      react: {
+        version: "19.2",
+      },
+    },
+    rules: {
+      "react-hooks/set-state-in-effect": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;

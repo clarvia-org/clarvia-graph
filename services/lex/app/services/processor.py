@@ -427,7 +427,6 @@ class Processor:
         prompt_version = self._settings.prompt_version
         schema_version = SCHEMA_VERSION
         pipeline_version = self._settings.pipeline_version
-        writer_fallback_used = None
 
         body_with_sources = insert_sources_before_signoff(
             lex_response.body_markdown,
@@ -480,7 +479,6 @@ class Processor:
             prompt_version=prompt_version,
             schema_version=schema_version,
             pipeline_version=pipeline_version,
-            writer_fallback_used=writer_fallback_used,
         )
         self._daily_usage.record_email_sent(now=self._clock.now())
         log_event(

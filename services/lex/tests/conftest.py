@@ -7,6 +7,15 @@ from collections.abc import Iterator
 import pytest
 
 
+@pytest.fixture(autouse=True)
+def _keep_source_urls_in_tests(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Do not issue live HTTP from the dead-link strip during tests."""
+    monkeypatch.setattr(
+        "app.llm.url_liveness.probe_url",
+        lambda *_args, **_kwargs: True,
+    )
+
+
 @pytest.fixture
 def synthetic_prompt(tmp_path: object) -> Iterator[str]:
     """Yield a path to a small synthetic prompt file (never the real prompt)."""

@@ -27,9 +27,6 @@ RUN useradd --create-home --uid 10001 lex \
 USER lex
 
 ENV LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-v1.txt \
-    LEX_RESEARCH_PROMPT_PATH=/app/runtime-private/prompts/lex-research-v1.txt \
-    LEX_WRITER_PROMPT_PATH=/app/runtime-private/prompts/lex-writer-v1.txt \
-    LEX_GENERATION_PIPELINE=single_pass \
     MAX_OUTPUT_TOKENS=12000 \
     GCP_REGION=europe-west1 \
     OPENAI_MODEL=gpt-6-luna \
@@ -40,7 +37,7 @@ EXPOSE 8080
 # Container-native health probe without requiring curl in the slim image.
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
     CMD python -c "import os,urllib.request,sys; \
-url='http://127.0.0.1:'+os.environ.get('PORT','8080')+'/healthz'; \
+url='http://127.0.0.1:'+os.environ.get('PORT','8080')+'/health'; \
 sys.exit(0) if urllib.request.urlopen(url, timeout=4).status==200 else sys.exit(1)"
 
 CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080}"]

@@ -12,14 +12,8 @@ from app.llm.schema import LexContact, LexJurisdiction, LexResponse, LexSource
 
 
 def build_settings(**overrides: Any) -> Settings:
-    """Construct Settings without reading a local .env, for deterministic tests.
-
-    Processor fixtures use the live single-pass ``generate`` path.
-    Two-pass tests set ``generation_pipeline="two_pass"`` when they call
-    ``run_two_pass_pipeline`` directly.
-    """
-    values = {"generation_pipeline": "single_pass", **overrides}
-    return Settings(_env_file=None, **values)  # type: ignore[call-arg]
+    """Construct Settings without reading a local .env, for deterministic tests."""
+    return Settings(_env_file=None, **overrides)  # type: ignore[call-arg]
 
 
 _CONFIG_ENV_VARS = (
@@ -55,27 +49,11 @@ _CONFIG_ENV_VARS = (
     "MAX_SENDER_REQUESTS_PER_DAY",
     "MAX_BODY_CHARS",
     "MAX_THREAD_CHARS",
-    "LEX_GENERATION_PIPELINE",
     "PIPELINE_VERSION",
     "MAX_OUTPUT_TOKENS",
     "MAX_LLM_CALLS_PER_MESSAGE",
-    "RESEARCH_PROMPT_VERSION",
-    "WRITER_PROMPT_VERSION",
-    "RESEARCH_SCHEMA_VERSION",
-    "WRITER_SCHEMA_VERSION",
-    "LEX_RESEARCH_PROMPT_PATH",
-    "LEX_WRITER_PROMPT_PATH",
     "LOG_LEVEL",
 )
-
-
-@pytest.fixture(autouse=True)
-def _keep_source_urls_in_unit_tests(monkeypatch: pytest.MonkeyPatch) -> None:
-    """Do not issue live HTTP from the dead-link strip during unit tests."""
-    monkeypatch.setattr(
-        "app.llm.url_liveness.probe_url",
-        lambda *_args, **_kwargs: True,
-    )
 
 
 @pytest.fixture

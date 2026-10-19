@@ -99,8 +99,51 @@ def test_source_is_internal_allowlisted_header(source: str) -> None:
         question=question,
         mailbox="lex@clarvia.org",
         source=source,
+        consent_version="ask-consent-v1\r\nInjected: x",
     )
     expected = "google_ads" if source == "google_ads" else "unknown"
     assert message["X-Lex-Ask-Source"] == expected
+    assert message["X-Lex-Consent-Version"] == "ask-consent-v1Injectedx"
     assert message.get_content().strip() == question
     assert message["Subject"] == ASK_SUBJECT
+
+
+def test_ask_intake_persists_consent_metadata_in_state_store() -> None:
+    from app.infrastructure.clock import FakeClock
+    from app.infrastructure.memory import (
+        InMemoryGmail,
+        InMemoryMessageState,
+        InMemoryTaskQueue,
+    )
+    from app.services.ask_intake import STATUS_ACCEPTED, AskIntake
+    from app.services.poller import Poller
+
+    from .conftest import build_settings
+
+    settings = build_settings(
+        processing_enabled=True,
+        processing_mode="public",
+        hmac_secret="test-hmac-secret",
+    )
+    gmail = InMemoryGmail()
+    tasks = InMemoryTaskQueue()
+    clock = FakeClock()
+    state = InMemoryMessageState(clock=clock)
+    poller = Poller(
+        settings=settings, gmail=gmail, tasks=tasks, state=state, clock=clock
+    )
+    intake = AskIntake(settings=settings, gmail=gmail, poller=poller)
+    result = intake.submit(
+        email="user@example.com",
+        question="My father died last week in Paris. What should I do first?",
+        consent=True,
+        locale="en",
+        source="google_ads",
+        consent_version="ask-consent-v1",
+    )
+    assert result.status == STATUS_ACCEPTED
+    record = state.get_record("ask-1")
+    assert record is not None
+    assert record.delivery_channel == "web"
+    assert record.consent_version == "ask-consent-v1"
+    assert len(record.sender_hmac) == 64

@@ -152,7 +152,6 @@ class MessageStatePort(Protocol):
         prompt_version: str,
         schema_version: str,
         pipeline_version: str | None = None,
-        writer_fallback_used: bool | None = None,
     ) -> ProcessingRecord | None: ...
 
     def sweep_expired(self, *, now: datetime) -> int:

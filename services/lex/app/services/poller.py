@@ -165,7 +165,14 @@ class Poller:
             )
         return recovered
 
-    def enqueue_message(self, ref: GmailMessageRef) -> EnqueueOutcome:
+    def enqueue_message(
+        self,
+        ref: GmailMessageRef,
+        *,
+        delivery_channel: str = "email",
+        consent_version: str | None = None,
+        sender_hmac: str = "",
+    ) -> EnqueueOutcome:
         """Create state, enqueue the process task, and mark the message pending.
 
         Used by inbox poll and by clarvia.org Ask us ingest so both paths share
@@ -178,6 +185,9 @@ class Poller:
                     message_key=key,
                     thread_id=ref.thread_id,
                     now=self._clock.now(),
+                    delivery_channel=delivery_channel,
+                    consent_version=consent_version,
+                    sender_hmac=sender_hmac,
                 )
             )
         outcome = self._tasks.enqueue_process(ref)

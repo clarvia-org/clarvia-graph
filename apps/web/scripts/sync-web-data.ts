@@ -18,19 +18,19 @@ const DEST_MANIFEST = path.join(DEST, "manifest.json");
 const SRC_MANIFEST = path.join(SRC, "manifest.json");
 
 function main(): void {
+  if (fs.existsSync(DEST_MANIFEST)) {
+    console.log(
+      "[sync-web-data] Existing apps/web/public/data/clarvia/ found — skipping prebuild overwrite (use `pnpm sync:web-data` to refresh)"
+    );
+    return;
+  }
+
   if (fs.existsSync(SRC_MANIFEST)) {
     console.log("[sync-web-data] Found build/exports/web — running monorepo sync-web-export");
     execSync("pnpm exec tsx scripts/sync-web-export.ts", {
       cwd: MONOREPO_ROOT,
       stdio: "inherit",
     });
-    return;
-  }
-
-  if (fs.existsSync(DEST_MANIFEST)) {
-    console.log(
-      "[sync-web-data] No build/exports/web; using existing apps/web/public/data/clarvia/"
-    );
     return;
   }
 

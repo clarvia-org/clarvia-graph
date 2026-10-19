@@ -43,14 +43,13 @@ gcloud run deploy "${SERVICE_NAME}" \
   --image="${IMAGE_URI}" \
   --service-account="${RUNTIME_SERVICE_ACCOUNT}" \
   --no-allow-unauthenticated \
-  --set-env-vars="ENVIRONMENT=production,ADAPTER_BACKEND=gcp,GCP_PROJECT_ID=${PROJECT_ID},GCP_REGION=${REGION},LEX_MAILBOX=lex@clarvia.org,OPENAI_MODEL=gpt-6-luna,PROMPT_VERSION=lex-v1,SCHEMA_VERSION=lex_response_v1,LEX_GENERATION_PIPELINE=single_pass,PIPELINE_VERSION=single-pass-v1,MAX_OUTPUT_TOKENS=12000,RESEARCH_PROMPT_VERSION=lex-research-v1,WRITER_PROMPT_VERSION=lex-writer-v1,RESEARCH_SCHEMA_VERSION=lex_research_brief_v1,WRITER_SCHEMA_VERSION=lex_written_response_v1,RESEARCH_MAX_OUTPUT_TOKENS=12000,WRITER_MAX_OUTPUT_TOKENS=4000,PROCESSING_MODE=disabled,PROCESSING_ENABLED=false,GLOBAL_DAILY_LLM_LIMIT=500,FORCE_CIRCUIT_OPEN=false,RETENTION_TRASH_GMAIL=false,LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-v1.txt,LEX_RESEARCH_PROMPT_PATH=/app/runtime-private/prompts/lex-research-v1.txt,LEX_WRITER_PROMPT_PATH=/app/runtime-private/prompts/lex-writer-v1.txt" \
-  --set-secrets="OPENAI_API_KEY=${OPENAI_API_KEY_SECRET},HMAC_SECRET=${HMAC_SECRET_SECRET},LEX_WEBSITE_HMAC_SECRET=${WEBSITE_HMAC_SECRET_SECRET}"
+  --update-env-vars="ENVIRONMENT=production,ADAPTER_BACKEND=gcp,GCP_PROJECT_ID=${PROJECT_ID},GCP_REGION=${REGION},LEX_MAILBOX=lex@clarvia.org,OPENAI_MODEL=gpt-6-luna,PROMPT_VERSION=lex-v1,SCHEMA_VERSION=lex_response_v1,PIPELINE_VERSION=single-pass-v1,MAX_OUTPUT_TOKENS=12000,GLOBAL_DAILY_LLM_LIMIT=500,FORCE_CIRCUIT_OPEN=false,RETENTION_TRASH_GMAIL=false,LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-v1.txt" \
+  --update-secrets="OPENAI_API_KEY=${OPENAI_API_KEY_SECRET},HMAC_SECRET=${HMAC_SECRET_SECRET},LEX_WEBSITE_HMAC_SECRET=${WEBSITE_HMAC_SECRET_SECRET}"
 
-echo "Deploy submitted. Keep PROCESSING_MODE=disabled until smoke tests pass."
+echo "Deploy submitted (existing PROCESSING_MODE and PROCESSING_ENABLED preserved)."
 echo ""
-echo "Allowlist pilot (after smoke): update env only — no rebuild:"
-echo "  PROCESSING_MODE=allowlist PROCESSING_ENABLED=true ALLOWLIST_SENDERS=... \\"
-echo "    ./scripts/set-processing-mode.sh"
+echo "To change processing mode without rebuilding:"
+echo "  PROCESSING_MODE=public PROCESSING_ENABLED=true ./scripts/set-processing-mode.sh"
 echo ""
 echo "Kill switch (no redeploy): PROCESSING_ENABLED=false or PROCESSING_MODE=disabled"
 echo "  See docs/runbooks/controlled-launch.md"

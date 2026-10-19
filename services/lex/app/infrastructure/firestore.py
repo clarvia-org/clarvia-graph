@@ -58,7 +58,8 @@ def record_to_document(record: ProcessingRecord) -> dict[str, Any]:
         "prompt_version": record.prompt_version,
         "schema_version": record.schema_version,
         "pipeline_version": record.pipeline_version,
-        "writer_fallback_used": record.writer_fallback_used,
+        "delivery_channel": record.delivery_channel,
+        "consent_version": record.consent_version,
         "openai_response_id": record.openai_response_id,
         "outbound_message_id": record.outbound_message_id,
         "sent_gmail_message_id": record.sent_gmail_message_id,
@@ -95,7 +96,8 @@ def document_to_record(message_key: str, data: dict[str, Any]) -> ProcessingReco
         prompt_version=data.get("prompt_version"),
         schema_version=data.get("schema_version"),
         pipeline_version=data.get("pipeline_version"),
-        writer_fallback_used=data.get("writer_fallback_used"),
+        delivery_channel=str(data.get("delivery_channel") or "email"),
+        consent_version=data.get("consent_version"),
         openai_response_id=data.get("openai_response_id"),
         outbound_message_id=data.get("outbound_message_id"),
         sent_gmail_message_id=data.get("sent_gmail_message_id"),
@@ -272,7 +274,6 @@ class FirestoreMessageState:
         prompt_version: str,
         schema_version: str,
         pipeline_version: str | None = None,
-        writer_fallback_used: bool | None = None,
     ) -> ProcessingRecord | None:
         document = self.document(message_key)
         existing = self._snapshot_to_record(message_key, document.get())
@@ -290,7 +291,6 @@ class FirestoreMessageState:
             "prompt_version": prompt_version,
             "schema_version": schema_version,
             "pipeline_version": pipeline_version,
-            "writer_fallback_used": writer_fallback_used,
             "updated_at": now,
             "lease_until": None,
             "lease_owner": None,

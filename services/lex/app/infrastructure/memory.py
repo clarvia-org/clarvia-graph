@@ -379,7 +379,6 @@ class InMemoryMessageState:
         prompt_version: str,
         schema_version: str,
         pipeline_version: str | None = None,
-        writer_fallback_used: bool | None = None,
     ) -> ProcessingRecord | None:
         with self._lock:
             existing = self._records.get(message_key)
@@ -397,7 +396,6 @@ class InMemoryMessageState:
                 prompt_version=prompt_version,
                 schema_version=schema_version,
                 pipeline_version=pipeline_version,
-                writer_fallback_used=writer_fallback_used,
                 updated_at=self._clock.now(),
                 lease_until=None,
                 lease_owner=None,

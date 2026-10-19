@@ -31,15 +31,13 @@ def test_defaults_match_blueprint() -> None:
     assert settings.include_thread_quote is True
     assert settings.max_body_chars == 100_000
     assert settings.max_thread_chars == 120_000
-    assert settings.generation_pipeline == "single_pass"
-    assert settings.research_prompt_version == "lex-research-v1"
-    assert settings.writer_prompt_version == "lex-writer-v1"
-    assert settings.research_max_output_tokens == 12000
-    assert settings.writer_max_output_tokens == 4000
-    assert settings.max_writer_history_chars == 20_000
     assert settings.pipeline_version == "single-pass-v1"
     assert settings.max_output_tokens == 12000
     assert settings.max_llm_calls_per_message == 2
+    assert settings.resolved_lex_aliases == frozenset()
+    with_aliases = build_settings(lex_aliases="info@clarvia.org, Support@Clarvia.org")
+    assert "info@clarvia.org" in with_aliases.resolved_lex_aliases
+    assert "support@clarvia.org" in with_aliases.resolved_lex_aliases
 
 
 @pytest.mark.usefixtures("clean_env")

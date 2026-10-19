@@ -17,6 +17,8 @@ DELIVERY_CHANNEL_HEADER = "X-Lex-Delivery-Channel"
 DELIVERY_CHANNEL_WEB = "web"
 ASK_LOCALE_HEADER = "X-Lex-Ask-Locale"
 ASK_SOURCE_HEADER = "X-Lex-Ask-Source"
+CONSENT_VERSION_HEADER = "X-Lex-Consent-Version"
+DEFAULT_CONSENT_VERSION = "ask-consent-v1"
 ASK_SUBJECT = email_copy("en")["ask_subject"]
 MIN_QUESTION_CHARS = 20
 
@@ -29,6 +31,14 @@ class AskInboundError(ValueError):
         super().__init__(code)
 
 
+def normalize_consent_version(value: str | None) -> str:
+    """Return a clean header-safe consent version identifier."""
+    cleaned = "".join(
+        ch for ch in (value or "").strip() if ch.isalnum() or ch in {"-", "_", "."}
+    )
+    return cleaned[:64] or DEFAULT_CONSENT_VERSION
+
+
 def build_ask_inbound_message(
     *,
     from_address: str,
@@ -36,6 +46,7 @@ def build_ask_inbound_message(
     mailbox: str,
     locale: str | None = None,
     source: str = "unknown",
+    consent_version: str | None = None,
 ) -> EmailMessage:
     """Return a plain-text inbound message From the visitor To the Lex mailbox."""
     sender = normalize_address(from_address)
@@ -58,6 +69,7 @@ def build_ask_inbound_message(
     message[DELIVERY_CHANNEL_HEADER] = DELIVERY_CHANNEL_WEB
     message[ASK_LOCALE_HEADER] = resolved
     message[ASK_SOURCE_HEADER] = "google_ads" if source == "google_ads" else "unknown"
+    message[CONSENT_VERSION_HEADER] = normalize_consent_version(consent_version)
     message.set_content(body)
     return message
 
@@ -69,6 +81,7 @@ def encode_ask_inbound(
     mailbox: str,
     locale: str | None = None,
     source: str = "unknown",
+    consent_version: str | None = None,
 ) -> str:
     """Base64url raw MIME for Gmail ``users.messages.insert``."""
     return encode_for_gmail_api(
@@ -78,6 +91,7 @@ def encode_ask_inbound(
             mailbox=mailbox,
             locale=locale,
             source=source,
+            consent_version=consent_version,
         )
     )
 
@@ -87,9 +101,12 @@ __all__ = [
     "DELIVERY_CHANNEL_WEB",
     "ASK_LOCALE_HEADER",
     "ASK_SOURCE_HEADER",
+    "CONSENT_VERSION_HEADER",
+    "DEFAULT_CONSENT_VERSION",
     "ASK_SUBJECT",
     "MIN_QUESTION_CHARS",
     "AskInboundError",
+    "normalize_consent_version",
     "build_ask_inbound_message",
     "encode_ask_inbound",
 ]
