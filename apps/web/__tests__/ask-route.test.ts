@@ -81,8 +81,8 @@ describe("POST /api/ask", () => {
   });
 
   it("forwards a signed payload with consent_version to Lex", async () => {
-    const fetchMock = vi.fn(
-      async (url: string | URL): Promise<Response> => {
+    const fetchMock = vi.fn<(url: string | URL, init?: RequestInit) => Promise<Response>>(
+      async (url): Promise<Response> => {
         const href = String(url);
         if (href.includes("metadata.google.internal")) {
           return new Response("missing", { status: 404 });
@@ -118,8 +118,8 @@ describe("POST /api/ask", () => {
   });
 
   it("forwards a selected Ask locale to Lex", async () => {
-    const fetchMock = vi.fn(
-      async (url: string | URL): Promise<Response> => {
+    const fetchMock = vi.fn<(url: string | URL, init?: RequestInit) => Promise<Response>>(
+      async (url): Promise<Response> => {
         const href = String(url);
         if (href.includes("metadata.google.internal")) {
           return new Response("missing", { status: 404 });
@@ -151,8 +151,8 @@ describe("POST /api/ask", () => {
   });
 
   it("falls back to English for an unknown locale", async () => {
-    const fetchMock = vi.fn(
-      async (url: string | URL): Promise<Response> => {
+    const fetchMock = vi.fn<(url: string | URL, init?: RequestInit) => Promise<Response>>(
+      async (url): Promise<Response> => {
         const href = String(url);
         if (href.includes("metadata.google.internal")) {
           return new Response("missing", { status: 404 });
