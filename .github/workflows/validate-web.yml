@@ -46,7 +46,6 @@ jobs:
           fi
 
       - name: Lint
-        continue-on-error: true
         run: pnpm web:lint
 
       - name: Test

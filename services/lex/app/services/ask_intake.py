@@ -5,8 +5,14 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
+from app.domain.hmac_sender import compute_sender_hmac
 from app.domain.labels import ASK_SOURCE_GOOGLE_ADS, ASK_SOURCE_UNKNOWN
-from app.email.ask_inbound import AskInboundError, encode_ask_inbound
+from app.email.ask_inbound import (
+    DELIVERY_CHANNEL_WEB,
+    AskInboundError,
+    encode_ask_inbound,
+    normalize_consent_version,
+)
 from app.email.recipients import is_valid_address, normalize_address
 from app.logging import get_logger, log_event
 
@@ -63,6 +69,7 @@ class AskIntake:
         consent: bool,
         locale: str | None = None,
         source: str = "unknown",
+        consent_version: str | None = None,
     ) -> AskIntakeResult:
         if not self.enabled:
             log_event(_logger, "ask_intake_skipped", status=STATUS_DISABLED)
@@ -76,6 +83,7 @@ class AskIntake:
         if len(body) > self._settings.max_body_chars:
             return AskIntakeResult(status=STATUS_INVALID, code="question_too_long")
 
+        resolved_consent_version = normalize_consent_version(consent_version)
         try:
             raw = encode_ask_inbound(
                 from_address=sender,
@@ -83,13 +91,22 @@ class AskIntake:
                 mailbox=self._settings.lex_mailbox,
                 locale=locale,
                 source=source,
+                consent_version=resolved_consent_version,
             )
         except AskInboundError as exc:
             return AskIntakeResult(status=STATUS_INVALID, code=exc.code)
 
+        hmac_secret = self._settings.hmac_secret or self._settings.website_hmac_secret
+        sender_hmac = compute_sender_hmac(sender, hmac_secret) if hmac_secret else ""
+
         self._gmail.ensure_labels()
         ref = self._gmail.insert_inbound(raw_message=raw)
-        self._poller.enqueue_message(ref)
+        self._poller.enqueue_message(
+            ref,
+            delivery_channel=DELIVERY_CHANNEL_WEB,
+            consent_version=resolved_consent_version,
+            sender_hmac=sender_hmac,
+        )
         # Attribution must never stop an accepted question from being processed.
         try:
             self._gmail.add_label(

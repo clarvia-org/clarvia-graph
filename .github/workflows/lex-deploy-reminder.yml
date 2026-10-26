@@ -38,10 +38,8 @@ jobs:
 
           **Deploy checklist** (from \`services/lex/\`):
           - [ ] \`uv run pytest\` (or \`make check\`)
-          - [ ] \`IMAGE_TAG=\$(date -u +%Y%m%d-%H%M%S)\` then \`./scripts/build-image.sh\`
-          - [ ] \`./scripts/push-image.sh\`
-          - [ ] Deploy **image only** — do not run \`deploy-cloud-run.sh\` as-is (it resets \`PROCESSING_MODE=disabled\`)
-          - [ ] \`gcloud run deploy lex-email-service --region=europe-west1 --image=… --no-allow-unauthenticated\`
+          - [ ] \`export IMAGE_TAG=\$(date -u +%Y%m%d-%H%M%S)\`
+          - [ ] \`./scripts/build-image.sh && ./scripts/push-image.sh && ./scripts/deploy-cloud-run.sh\`
           - [ ] Confirm new revision is Ready and \`PROCESSING_MODE=public\` is still set
           - [ ] Authenticated \`GET /health\`
           - [ ] Close this issue

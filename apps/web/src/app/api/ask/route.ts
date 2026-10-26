@@ -1,29 +1,14 @@
-import { createHmac } from "node:crypto";
-import { promises as fs } from "fs";
-import path from "path";
 import { NextRequest, NextResponse } from "next/server";
 import { parseAskLocale } from "@/lib/ask-entry";
 import { signPayload } from "@/lib/donation-engine/internal-auth";
 import { isPlausibleEmail } from "@/lib/email";
 import { rateLimit } from "@/lib/rate-limit";
 
-const DATA_DIR = path.join(process.cwd(), ".data");
-const CONSENT_FILE = path.join(DATA_DIR, "ask-consent.json");
-
 export const CONSENT_TEXT_VERSION = "ask-consent-v1";
 export const MIN_QUESTION_CHARS = 20;
 export const MAX_QUESTION_CHARS = 100_000;
 
 const limiter = rateLimit("ask", 10, 60 * 60 * 1000);
-
-interface ConsentLedgerEntry {
-  timestamp: string;
-  consent_text_version: string;
-  channel: "web";
-  sender_hmac: string;
-  turnstile_passed: boolean;
-  ip_hmac: string;
-}
 
 async function verifyTurnstile(secret: string, token: string): Promise<boolean> {
   if (!secret) return true;
@@ -34,10 +19,6 @@ async function verifyTurnstile(secret: string, token: string): Promise<boolean> 
   });
   const data = await res.json();
   return data.success === true;
-}
-
-function hmacHex(secret: string, value: string): string {
-  return createHmac("sha256", secret).update(value).digest("hex");
 }
 
 async function googleIdentityToken(audience: string): Promise<string | undefined> {
@@ -59,20 +40,6 @@ async function googleIdentityToken(audience: string): Promise<string | undefined
     /* Local runs and hosts without the GCE metadata server. */
   }
   return undefined;
-}
-
-async function appendConsent(entry: ConsentLedgerEntry): Promise<void> {
-  await fs.mkdir(DATA_DIR, { recursive: true });
-  let entries: ConsentLedgerEntry[] = [];
-  try {
-    const raw = await fs.readFile(CONSENT_FILE, "utf-8");
-    const parsed = JSON.parse(raw);
-    if (Array.isArray(parsed)) entries = parsed;
-  } catch {
-    /* file doesn't exist yet */
-  }
-  entries.push(entry);
-  await fs.writeFile(CONSENT_FILE, JSON.stringify(entries, null, 2));
 }
 
 export async function POST(req: NextRequest) {
@@ -137,7 +104,14 @@ export async function POST(req: NextRequest) {
 
     // Accept only the coarse source enum; never forward click IDs or URL data.
     const source = body.source === "google_ads" ? "google_ads" : "unknown";
-    const payload = JSON.stringify({ email, question, consent: true, locale, source });
+    const payload = JSON.stringify({
+      email,
+      question,
+      consent: true,
+      consent_version: CONSENT_TEXT_VERSION,
+      locale,
+      source,
+    });
     const timestamp = new Date().toISOString();
     const signature = signPayload(websiteHmacSecret, timestamp, payload);
     const audience = new URL(lexAskUrl).origin;
@@ -159,18 +133,6 @@ export async function POST(req: NextRequest) {
     });
 
     if (lexRes.status === 202) {
-      try {
-        await appendConsent({
-          timestamp,
-          consent_text_version: CONSENT_TEXT_VERSION,
-          channel: "web",
-          sender_hmac: hmacHex(websiteHmacSecret, email),
-          turnstile_passed: true,
-          ip_hmac: hmacHex(websiteHmacSecret, ip),
-        });
-      } catch (err: unknown) {
-        console.error("Ask consent ledger write failed:", err);
-      }
       return NextResponse.json({ ok: true });
     }
 

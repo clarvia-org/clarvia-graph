@@ -1,16 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { promises as fs } from "fs";
 import { NextRequest } from "next/server";
 
-vi.mock("fs", () => ({
-  promises: {
-    mkdir: vi.fn().mockResolvedValue(undefined),
-    readFile: vi.fn().mockRejectedValue(new Error("missing")),
-    writeFile: vi.fn().mockResolvedValue(undefined),
-  },
-}));
-
-import { POST } from "@/app/api/ask/route";
+import { CONSENT_TEXT_VERSION, POST } from "@/app/api/ask/route";
 
 const QUESTION =
   "My father died last week in Paris. I live in France. What do I need to do first?";
@@ -35,9 +26,6 @@ describe("POST /api/ask", () => {
     vi.stubEnv("LEX_ASK_URL", "https://lex.example.test/v1/ask");
     vi.stubEnv("LEX_WEBSITE_HMAC_SECRET", "ask-test-secret");
     vi.stubEnv("TURNSTILE_SECRET", "");
-    vi.mocked(fs.mkdir).mockResolvedValue(undefined);
-    vi.mocked(fs.readFile).mockRejectedValue(new Error("missing"));
-    vi.mocked(fs.writeFile).mockResolvedValue(undefined);
   });
 
   it("returns 400 without consent", async () => {
@@ -92,9 +80,9 @@ describe("POST /api/ask", () => {
     expect(res.status).toBe(503);
   });
 
-  it("forwards a signed payload to Lex", async () => {
-    const fetchMock = vi.fn(
-      async (url: string | URL, _init?: RequestInit): Promise<Response> => {
+  it("forwards a signed payload with consent_version to Lex", async () => {
+    const fetchMock = vi.fn<(url: string | URL, init?: RequestInit) => Promise<Response>>(
+      async (url): Promise<Response> => {
         const href = String(url);
         if (href.includes("metadata.google.internal")) {
           return new Response("missing", { status: 404 });
@@ -124,13 +112,14 @@ describe("POST /api/ask", () => {
     expect(sent.email).toBe("user@example.com");
     expect(sent.question).toBe(QUESTION);
     expect(sent.consent).toBe(true);
+    expect(sent.consent_version).toBe(CONSENT_TEXT_VERSION);
     expect(sent.locale).toBe("en");
     expect(sent.source).toBe("unknown");
   });
 
   it("forwards a selected Ask locale to Lex", async () => {
-    const fetchMock = vi.fn(
-      async (url: string | URL, _init?: RequestInit): Promise<Response> => {
+    const fetchMock = vi.fn<(url: string | URL, init?: RequestInit) => Promise<Response>>(
+      async (url): Promise<Response> => {
         const href = String(url);
         if (href.includes("metadata.google.internal")) {
           return new Response("missing", { status: 404 });
@@ -162,8 +151,8 @@ describe("POST /api/ask", () => {
   });
 
   it("falls back to English for an unknown locale", async () => {
-    const fetchMock = vi.fn(
-      async (url: string | URL, _init?: RequestInit): Promise<Response> => {
+    const fetchMock = vi.fn<(url: string | URL, init?: RequestInit) => Promise<Response>>(
+      async (url): Promise<Response> => {
         const href = String(url);
         if (href.includes("metadata.google.internal")) {
           return new Response("missing", { status: 404 });
@@ -190,28 +179,5 @@ describe("POST /api/ask", () => {
     const sent = JSON.parse(String(init.body));
     expect(sent.locale).toBe("en");
     expect(sent.source).toBe("unknown");
-  });
-
-  it("still returns 200 if the consent ledger write fails after Lex 202", async () => {
-    vi.mocked(fs.writeFile).mockRejectedValueOnce(new Error("disk full"));
-    vi.stubGlobal(
-      "fetch",
-      vi.fn(async (url: string | URL): Promise<Response> => {
-        if (String(url).includes("metadata.google.internal")) {
-          return new Response("missing", { status: 404 });
-        }
-        return new Response(JSON.stringify({ status: "accepted" }), { status: 202 });
-      })
-    );
-
-    const res = await POST(
-      askRequest({
-        email: "user@example.com",
-        question: QUESTION,
-        consent: true,
-      })
-    );
-    expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ ok: true });
   });
 });

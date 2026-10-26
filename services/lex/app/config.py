@@ -23,7 +23,6 @@ REQUIRED_REGION = "europe-west1"
 ProcessingMode = Literal["disabled", "allowlist", "public"]
 Environment = Literal["development", "staging", "production"]
 AdapterBackend = Literal["memory", "gcp"]
-GenerationPipeline = Literal["single_pass", "two_pass"]
 
 
 class Settings(BaseSettings):
@@ -49,57 +48,13 @@ class Settings(BaseSettings):
     openai_model: str = "gpt-6-luna"
     openai_api_key: str = ""
     max_output_tokens: int = 12000
-    research_max_output_tokens: int = 12000
-    writer_max_output_tokens: int = 4000
     prompt_version: str = "lex-v1"
-    research_prompt_version: str = Field(
-        default="lex-research-v1",
-        validation_alias=AliasChoices(
-            "RESEARCH_PROMPT_VERSION", "research_prompt_version"
-        ),
-    )
-    writer_prompt_version: str = Field(
-        default="lex-writer-v1",
-        validation_alias=AliasChoices(
-            "WRITER_PROMPT_VERSION", "writer_prompt_version"
-        ),
-    )
     prompt_path: str = Field(
         default="runtime-private/prompts/lex-v1.txt",
         validation_alias=AliasChoices("LEX_PROMPT_PATH", "prompt_path"),
     )
-    research_prompt_path: str = Field(
-        default="runtime-private/prompts/lex-research-v1.txt",
-        validation_alias=AliasChoices(
-            "LEX_RESEARCH_PROMPT_PATH", "research_prompt_path"
-        ),
-    )
-    writer_prompt_path: str = Field(
-        default="runtime-private/prompts/lex-writer-v1.txt",
-        validation_alias=AliasChoices(
-            "LEX_WRITER_PROMPT_PATH", "writer_prompt_path"
-        ),
-    )
-    generation_pipeline: GenerationPipeline = Field(
-        default="single_pass",
-        validation_alias=AliasChoices(
-            "LEX_GENERATION_PIPELINE", "generation_pipeline"
-        ),
-    )
     pipeline_version: str = "single-pass-v1"
     schema_version: str = "lex_response_v1"
-    research_schema_version: str = Field(
-        default="lex_research_brief_v1",
-        validation_alias=AliasChoices(
-            "RESEARCH_SCHEMA_VERSION", "research_schema_version"
-        ),
-    )
-    writer_schema_version: str = Field(
-        default="lex_written_response_v1",
-        validation_alias=AliasChoices(
-            "WRITER_SCHEMA_VERSION", "writer_schema_version"
-        ),
-    )
     processing_mode: ProcessingMode = "disabled"
     processing_enabled: bool = False
     max_visible_recipients: int = 10
@@ -115,9 +70,6 @@ class Settings(BaseSettings):
     thread_quote_max_total_chars: int = 40_000
     max_body_chars: int = 100_000
     max_thread_chars: int = 120_000
-    max_writer_history_chars: int = 20_000
-    research_daily_call_limit: int = 500
-    writer_daily_call_limit: int = 500
     log_level: str = "INFO"
 
     # Phase 2: discovery, durable tasks, and worker leases.
@@ -166,12 +118,8 @@ class Settings(BaseSettings):
         "lex_mailbox",
         "openai_model",
         "prompt_version",
-        "research_prompt_version",
-        "writer_prompt_version",
         "prompt_path",
         "schema_version",
-        "research_schema_version",
-        "writer_schema_version",
         "pipeline_version",
         "cloud_tasks_queue",
         "firestore_database",
@@ -195,11 +143,6 @@ class Settings(BaseSettings):
         "max_process_attempts",
         "max_llm_calls_per_message",
         "max_output_tokens",
-        "research_max_output_tokens",
-        "writer_max_output_tokens",
-        "max_writer_history_chars",
-        "research_daily_call_limit",
-        "writer_daily_call_limit",
         "global_daily_llm_limit",
     )
     @classmethod
@@ -256,14 +199,6 @@ class Settings(BaseSettings):
     def resolved_prompt_path(self) -> Path:
         """Absolute prompt path resolved from the service root when relative."""
         return self._resolve_service_path(self.prompt_path)
-
-    @property
-    def resolved_research_prompt_path(self) -> Path:
-        return self._resolve_service_path(self.research_prompt_path)
-
-    @property
-    def resolved_writer_prompt_path(self) -> Path:
-        return self._resolve_service_path(self.writer_prompt_path)
 
 
 @lru_cache(maxsize=1)

@@ -82,3 +82,84 @@ def test_openai_adapter_builds_tool_choice_for_forced_search() -> None:
     )
     assert captured["tool_choice"] == {"type": "web_search"}
     assert captured["store"] is False
+
+
+def test_fake_llm_structured_exhaustion_and_error() -> None:
+    import pytest
+
+    llm = FakeLlmAdapter(structured_responses=[])
+    with pytest.raises(RuntimeError):
+        llm.generate_structured(
+            system_prompt="s",
+            runtime_envelope="e",
+            json_schema={},
+            schema_name="x",
+            enable_web_search=False,
+        )
+    llm_err = FakeLlmAdapter(default_error=RuntimeError("boom"))
+    with pytest.raises(RuntimeError):
+        llm_err.generate_structured(
+            system_prompt="s",
+            runtime_envelope="e",
+            json_schema={},
+            schema_name="x",
+            enable_web_search=False,
+        )
+
+
+def test_eval_report_helpers(tmp_path: object) -> None:
+    from pathlib import Path
+
+    from app.ops.eval_report import (
+        default_report_dir,
+        load_report_json,
+        render_markdown_report,
+        write_report,
+    )
+    from app.ops.pilot_harness import PilotRunResult, PilotSuiteResult
+
+    assert isinstance(tmp_path, Path)
+    assert "runtime-private" in str(default_report_dir(private=True))
+    assert "tests" in str(default_report_dir(private=False))
+
+    suite = PilotSuiteResult(
+        results=[
+            PilotRunResult(
+                case_id="c1",
+                category="english",
+                expected_status="sent",
+                actual_status="failed",
+                send_count=0,
+                llm_call_count=0,
+                footer_ok=True,
+                continuation_ok=True,
+                duplicate_send=False,
+            )
+        ]
+    )
+    json_path, md_path = write_report(suite, tmp_path, basename="cov")
+    assert json_path.exists() and md_path.exists()
+    payload = load_report_json(json_path)
+    assert payload["failed"] == 1
+    md = render_markdown_report(payload)
+    assert "Failed cases" in md
+
+
+def test_relevance_truncation_keeps_material_facts() -> None:
+    from app.domain.models import ConversationRole
+    from app.email.parsing import build_conversation_thread
+
+    messages = [
+        (
+            ConversationRole.USER,
+            "First message about mother in Luxembourg hospice. " * 20,
+        ),
+        (ConversationRole.ASSISTANT, "Thanks, I will look into that. " * 20),
+        (ConversationRole.USER, "Weather is nice today. " * 20),
+        (ConversationRole.USER, "She already obtained the family booklet. " * 5),
+        (ConversationRole.USER, "Latest question about the commune declaration."),
+    ]
+    thread = build_conversation_thread(messages, max_thread_chars=350)
+    text = "\n".join(item.text for item in thread)
+    assert "omitted" in text
+    assert "family booklet" in text or "Luxembourg" in text or "Latest question" in text

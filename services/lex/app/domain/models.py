@@ -149,7 +149,8 @@ class ProcessingRecord:
     prompt_version: str | None = None
     schema_version: str | None = None
     pipeline_version: str | None = None
-    writer_fallback_used: bool | None = None
+    delivery_channel: str = "email"
+    consent_version: str | None = None
     openai_response_id: str | None = None
     outbound_message_id: str | None = None
     sent_gmail_message_id: str | None = None
@@ -172,6 +173,9 @@ def new_queued_record(
     thread_id: str,
     now: datetime,
     expires_at: datetime | None = None,
+    delivery_channel: str = "email",
+    consent_version: str | None = None,
+    sender_hmac: str = "",
 ) -> ProcessingRecord:
     """Build the initial record created at discovery time."""
     return ProcessingRecord(
@@ -180,6 +184,9 @@ def new_queued_record(
         status=ProcessingStatus.QUEUED,
         discovered_at=now,
         updated_at=now,
+        sender_hmac=sender_hmac,
+        delivery_channel=delivery_channel,
+        consent_version=consent_version,
         expires_at=expires_at,
     )
 

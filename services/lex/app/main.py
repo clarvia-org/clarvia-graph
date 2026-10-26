@@ -210,6 +210,9 @@ def create_app(
             locale=str(payload["locale"])
             if isinstance(payload.get("locale"), str)
             else None,
+            consent_version=str(payload["consent_version"])
+            if isinstance(payload.get("consent_version"), str)
+            else None,
         )
         if result.status == STATUS_ACCEPTED:
             return JSONResponse(

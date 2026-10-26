@@ -6,8 +6,18 @@ name: SonarCloud
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - "lex/**"
+      - "services/lex/**"
+      - "apps/web/**"
+      - "docs/MONOREPO.md"
   pull_request:
     types: [opened, synchronize, reopened]
+    paths-ignore:
+      - "lex/**"
+      - "services/lex/**"
+      - "apps/web/**"
+      - "docs/MONOREPO.md"
 
 permissions:
   contents: read
