@@ -45,7 +45,8 @@ def test_provider_neutrality_allows_does_not_recommend_disclaimer() -> None:
         system_prompt="prompt",
         runtime_envelope="envelope",
     )
-    assert "\u2014" in result.response.body_markdown
+    assert "\u2014" not in result.response.body_markdown
+    assert "Contact the Commune office - then register" in result.response.body_markdown
     validate_lex_response(
         result.response,
         web_search_source_urls=frozenset({"https://guichet.public.lu"}),
@@ -111,10 +112,10 @@ def test_pipeline_repairs_unsupported_contact_website() -> None:
     )
 
 
-def test_pipeline_preserves_em_dash_in_contact_names() -> None:
+def test_pipeline_normalizes_em_dash_in_contact_names() -> None:
     response = make_answer_response()
     contact = response.contacts[0].model_copy(update={"name": "Commune\u2014office"})
-    body = response.body_markdown.replace("Commune office", "Commune\u2014office")
+    body = response.body_markdown.replace("Commune office", "Commune \u2014 office")
     dashed = response.model_copy(update={"body_markdown": body, "contacts": [contact]})
     llm = FakeLlmAdapter(
         responses=[
@@ -129,8 +130,9 @@ def test_pipeline_preserves_em_dash_in_contact_names() -> None:
         system_prompt="prompt",
         runtime_envelope="envelope",
     )
-    assert "\u2014" in result.response.body_markdown
-    assert "\u2014" in result.response.contacts[0].name
+    assert "\u2014" not in result.response.body_markdown
+    assert "\u2014" not in result.response.contacts[0].name
+    assert result.response.contacts[0].name == "Commune - office"
     validate_lex_response(
         result.response,
         web_search_source_urls=frozenset({"https://guichet.public.lu"}),
