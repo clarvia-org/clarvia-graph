@@ -382,6 +382,10 @@ class Processor:
             )
 
         system_prompt = load_prompt(self._settings.prompt_path)
+        prompt_version = load_prompt_version(
+            self._settings.prompt_path,
+            fallback=self._settings.prompt_version,
+        )
         history = prior_thread_history(
             thread_messages,
             latest_message_id=parsed.message_id,
@@ -391,10 +395,7 @@ class Processor:
             parsed=parsed,
             conversation_history=history,
             current_date_utc=self._clock.now(),
-            prompt_version=load_prompt_version(
-                self._settings.prompt_path,
-                fallback=self._settings.prompt_version,
-            ),
+            prompt_version=prompt_version,
             delivery_channel=parsed.delivery_channel,
         )
         counter = CountingLlmAdapter(inner=self._llm, remaining=remaining)
@@ -427,7 +428,6 @@ class Processor:
         self._add_llm_calls(key, counter.used)
         lex_response = generation.response
         openai_response_id = generation.openai_response_id
-        prompt_version = self._settings.prompt_version
         schema_version = SCHEMA_VERSION
         pipeline_version = self._settings.pipeline_version
 
