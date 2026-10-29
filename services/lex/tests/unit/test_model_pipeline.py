@@ -10,7 +10,9 @@ from app.llm.url_normalize import (
     match_search_url,
     normalize_source_url,
     normalize_source_url_set,
+    repair_email_domain_typos,
     same_site_host,
+    source_dedup_key,
     url_compare_key,
 )
 from app.llm.validation import LexValidationError, validate_lex_response
@@ -435,4 +437,118 @@ def test_pipeline_strips_inline_backticks_and_upgrades_root_citations() -> None:
     assert (
         result.response.sources[0].url
         == "https://guichet.public.lu/fr/citoyens/famille/deces.html"
+    )
+
+
+def test_pipeline_deduplicates_alias_sources_and_repairs_email_typos() -> None:
+    assert source_dedup_key("https://justice.gov.uk/a/b") != source_dedup_key(
+        "https://justice.uk/a/b"
+    )
+    assert source_dedup_key("https://guichet.public.lu") == source_dedup_key(
+        "https://guichet.public.lu/"
+    )
+    assert (
+        repair_email_domain_typos(
+            "info@counseling.co.uk", ["https://counseling.gov.uk/"]
+        )
+        == "info@counseling.co.uk"
+    )
+    assert (
+        match_search_url(
+            "https://doh.gov.ph/permits",
+            ["https://djrmh.doh.gov.ph/images/COVID-19/DM2020-0067.pdf"],
+        )
+        is None
+    )
+    assert (
+        match_search_url(
+            "https://doh.gov.ph/",
+            ["https://djrmh.doh.gov.ph/images/COVID-19/DM2020-0067.pdf"],
+        )
+        is None
+    )
+    assert (
+        match_search_url(
+            "https://guichet.public.lu/",
+            ["https://www.guichet.public.lu/"],
+        )
+        == "https://www.guichet.public.lu/"
+    )
+
+    base = make_answer_response()
+    src1 = base.sources[0].model_copy(
+        update={
+            "id": 1,
+            "url": "https://service-public.fr/particuliers/vosdroits/F16507",
+        }
+    )
+    src2 = base.sources[0].model_copy(
+        update={
+            "id": 2,
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16507",
+        }
+    )
+    contact = base.contacts[0].model_copy(
+        update={
+            "source_id": 2,
+            "website": "https://federation-fnf.fr/mentions-legales",
+            "email": "contact@federation-nf.fr",
+            "note": "Email contact@federation-nf.fr for directory support.",
+        }
+    )
+    dup_and_typo = base.model_copy(
+        update={
+            "body_markdown": (
+                "Contact the Commune office at contact@federation-nf.fr [1][2].\n\nLex."
+            ),
+            "sources": [src1, src2],
+            "contacts": [contact],
+        }
+    )
+    with pytest.raises(LexValidationError) as exc:
+        validate_lex_response(dup_and_typo)
+    assert exc.value.code == "duplicate_source_url"
+
+    typo_only = dup_and_typo.model_copy(
+        update={
+            "body_markdown": (
+                "Contact the Commune office at contact@federation-nf.fr [1].\n\nLex."
+            ),
+            "sources": [src1],
+            "contacts": [contact.model_copy(update={"source_id": 1})],
+        }
+    )
+    with pytest.raises(LexValidationError) as exc2:
+        validate_lex_response(typo_only)
+    assert exc2.value.code == "contact_email_domain_typo"
+
+    allowed = frozenset(
+        {
+            "https://service-public.fr/particuliers/vosdroits/F16507",
+            "https://www.service-public.gouv.fr/particuliers/vosdroits/F16507",
+            "https://federation-fnf.fr/mentions-legales",
+        }
+    )
+    llm = FakeLlmAdapter(
+        responses=[generation_result_from_response(dup_and_typo, source_urls=allowed)]
+    )
+    result = run_model_pipeline(
+        llm,
+        system_prompt="prompt",
+        runtime_envelope="envelope",
+    )
+    assert len(result.response.sources) == 1
+    assert "[2]" not in result.response.body_markdown
+    assert "[1][1]" not in result.response.body_markdown
+    assert "contact@federation-fnf.fr" in result.response.body_markdown
+    assert "contact@federation-fnf.fr" in result.response.contacts[0].note
+    assert result.response.contacts[0].email == "contact@federation-fnf.fr"
+    validate_lex_response(
+        result.response,
+        web_search_source_urls=allowed,
+        web_search_calls=1,
+    )
+    assert (
+        result.response.sources[0].url
+        == "https://service-public.fr/particuliers/vosdroits/F16507"
     )
