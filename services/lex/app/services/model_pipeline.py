@@ -4,13 +4,18 @@ from __future__ import annotations
 
 import logging
 import re
+import unicodedata
 from dataclasses import dataclass
 
 from app.domain.ports import LlmGenerationResult, LlmPort, StructuredLlmResult
 from app.email.copy import email_copy, inbound_locale
 from app.llm.schema import LexContact, LexSource
 from app.llm.url_liveness import strip_dead_urls
-from app.llm.url_normalize import match_search_url
+from app.llm.url_normalize import (
+    match_search_url,
+    repair_email_domain_typos,
+    source_dedup_key,
+)
 from app.llm.validation import LexValidationError, validate_lex_response
 
 _LOG = logging.getLogger(__name__)
@@ -33,6 +38,8 @@ _KEEP_SOURCED_ANSWER_CODES = frozenset(
         "non_contiguous_source_ids",
         "non_contiguous_contact_ids",
         "missing_sign_off",
+        "duplicate_source_url",
+        "contact_email_domain_typo",
     }
 )
 _DASH_CHARS = (
@@ -318,6 +325,24 @@ def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResul
     if sources or contacts:
         body, sources, contacts = strip_dead_urls(body, sources, contacts)
 
+    if contacts:
+        contact_websites = [contact.website for contact in contacts]
+        known_urls = [
+            *result.web_search_source_urls,
+            *(source.url for source in sources),
+        ]
+        body = repair_email_domain_typos(body, contact_websites, known_urls=known_urls)
+        contacts = [
+            contact.model_copy(
+                update={
+                    "note": repair_email_domain_typos(
+                        contact.note, contact_websites, known_urls=known_urls
+                    )
+                }
+            )
+            for contact in contacts
+        ]
+
     body_folded = body.casefold()
     missing_names = [
         contact.name
@@ -361,7 +386,6 @@ def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResul
 
 def _normalize_dashes(text: str) -> str:
     """Normalise dash-like Unicode and strip em dashes (U+2014)."""
-    import unicodedata
 
     pieces: list[str] = []
     for char in text:
@@ -400,11 +424,18 @@ def _repair_search_evidence(
     """Rewrite or drop sources/contacts using search-grounded URLs."""
     kept_sources: list[LexSource] = []
     old_to_new: dict[int, int] = {}
+    seen_dedup: dict[str, int] = {}
     for source in sources:
         matched = match_search_url(source.url, search_urls)
         if matched is None:
             continue
+        dedup_key = source_dedup_key(matched)
+        existing_id = seen_dedup.get(dedup_key)
+        if existing_id is not None:
+            old_to_new[source.id] = existing_id
+            continue
         new_id = len(kept_sources) + 1
+        seen_dedup[dedup_key] = new_id
         old_to_new[source.id] = new_id
         kept_sources.append(source.model_copy(update={"id": new_id, "url": matched}))
 
@@ -415,6 +446,7 @@ def _repair_search_evidence(
         return f"[{new_id}]" if new_id is not None else ""
 
     body = _CITATION_RE.sub(_rewrite_marker, body)
+    body = re.sub(r"(\[\d+\])(?:\s*\1)+", r"\1", body)
     body = re.sub(r"[ \t]+\n", "\n", body)
     body = re.sub(r" {2,}", " ", body)
 

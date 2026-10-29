@@ -11,7 +11,11 @@ import re
 from collections.abc import Collection
 
 from app.llm.schema import LexResponse
-from app.llm.url_normalize import match_search_url
+from app.llm.url_normalize import (
+    find_email_domain_typo,
+    match_search_url,
+    source_dedup_key,
+)
 
 _SIGN_OFF_RE = re.compile(r"(?:^|\n|\r)Lex\.\s*$")
 _CITATION_RE = re.compile(r"\[(\d+)\]")
@@ -161,6 +165,15 @@ def _validate_citations(response: LexResponse) -> None:
         )
 
     cited_by_contact = {contact.source_id for contact in response.contacts}
+    seen_dedup_keys: set[str] = set()
+    for source in response.sources:
+        dedup_key = source_dedup_key(source.url)
+        _require(
+            dedup_key not in seen_dedup_keys,
+            "duplicate_source_url",
+            "Duplicate source URLs are not allowed.",
+        )
+        seen_dedup_keys.add(dedup_key)
     for source in response.sources:
         _require(
             source.id in marker_ids or source.id in cited_by_contact,
@@ -170,6 +183,25 @@ def _validate_citations(response: LexResponse) -> None:
 
 
 def _validate_contacts(response: LexResponse) -> None:
+    contact_websites = [contact.website for contact in response.contacts]
+    known_urls = [source.url for source in response.sources]
+    _require(
+        find_email_domain_typo(
+            response.body_markdown, contact_websites, known_urls=known_urls
+        )
+        is None,
+        "contact_email_domain_typo",
+        "body_markdown contains an email domain that is a typo of a contact website.",
+    )
+    for contact in response.contacts:
+        _require(
+            find_email_domain_typo(
+                contact.note, contact_websites, known_urls=known_urls
+            )
+            is None,
+            "contact_email_domain_typo",
+            "contact.note contains a near-miss contact website email domain.",
+        )
     source_ids = {source.id for source in response.sources}
     body_folded = response.body_markdown.casefold()
     for contact in response.contacts:
