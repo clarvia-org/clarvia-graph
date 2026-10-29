@@ -26,7 +26,7 @@ RUN useradd --create-home --uid 10001 lex \
     && chown -R lex:lex /app
 USER lex
 
-ENV LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-v1.txt \
+ENV LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-prompt.txt \
     MAX_OUTPUT_TOKENS=12000 \
     GCP_REGION=europe-west1 \
     OPENAI_MODEL=gpt-6-luna \

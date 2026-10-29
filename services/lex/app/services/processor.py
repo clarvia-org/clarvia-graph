@@ -31,7 +31,7 @@ from app.email.thread_quote import build_thread_quote, count_lex_replies
 from app.infrastructure.daily_usage import DailyUsagePort
 from app.infrastructure.rate_limit import RateLimitPort
 from app.llm.envelope import build_runtime_envelope
-from app.llm.prompt_loader import load_prompt
+from app.llm.prompt_loader import load_prompt, load_prompt_version
 from app.llm.schema import SCHEMA_VERSION
 from app.llm.source_render import insert_sources_before_signoff
 from app.logging import get_logger, log_event
@@ -391,7 +391,10 @@ class Processor:
             parsed=parsed,
             conversation_history=history,
             current_date_utc=self._clock.now(),
-            prompt_version=self._settings.prompt_version,
+            prompt_version=load_prompt_version(
+                self._settings.prompt_path,
+                fallback=self._settings.prompt_version,
+            ),
             delivery_channel=parsed.delivery_channel,
         )
         counter = CountingLlmAdapter(inner=self._llm, remaining=remaining)

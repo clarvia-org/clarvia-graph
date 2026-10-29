@@ -1,29 +1,33 @@
-# runtime-private/
+# Private operational material (`runtime-private/`)
 
-Local-only operational material for the Lex email service.
+This directory holds local-only operational files that must **never** be
+committed to the public repository. Everything under `runtime-private/` except
+this `README.md` is ignored by `.gitignore`.
 
-**Nothing in this directory except this `README.md` may be committed to any Git
-repository.** The live production prompt, deployment environment files,
-evaluation cases, and any user or incident data are private runtime material.
+## Prompt Versioning System (Single Live File + Header + Archive)
 
-## Contents
+To prevent version drift between filenames, code defaults, and Cloud Run env vars:
+
+1. **Single live file (`prompts/lex-prompt.txt`):**
+   - `runtime-private/prompts/` contains **only one file**: `lex-prompt.txt`.
+   - Never put a version number (like `-v1` or `-v2`) in the live filename in `prompts/`.
+2. **Version header on line 1 (`# prompt_version: lex-vX.Y`):**
+   - Line 1 of `prompts/lex-prompt.txt` defines the active prompt version:
+     ```text
+     # prompt_version: lex-v2.1
+     ```
+   - `load_prompt()` strips this line before sending the prompt to the LLM.
+   - `load_prompt_version()` reads this line directly so `/health`, the runtime envelope, and `X-Lex-Prompt-Version` always reflect the file without relying on a manual Cloud Run env var.
+3. **Chronological snapshots (`prompt-archive/lex-vX.Y.txt`):**
+   - Whenever you update `prompts/lex-prompt.txt`, increment `# prompt_version: lex-vX.Y` on line 1 and save a matching copy to `runtime-private/prompt-archive/lex-vX.Y.txt` (`lex-v1.0.txt` -> `lex-v1.1.txt` -> `lex-v2.0.txt` -> `lex-v2.1.txt` -> ...).
+
+## Layout
 
 | Path | Purpose | Committed? |
-|---|---|---|
-| `README.md` | This file — the only public-safe file here | Yes |
-| `prompts/lex-v1.txt` | Live approved Lex system prompt | No (gitignored) |
-| `deploy/env.production.yaml.example` | Template for the private deploy env file | No (gitignored) |
-| `deploy/env.production.yaml` | Real deploy env values (operator-created) | No (gitignored) |
-| `evals/` | Real-user evaluation cases (future) | No (gitignored) |
-| `data/` | Any user or incident data (future) | No (gitignored) |
-
-## Rules
-
-- Never place credentials or service-account keys anywhere in the repository.
-- Never copy `runtime-private/evals`, `runtime-private/data`, or `.env` into a
-  Docker build context (see `.dockerignore`).
-- The prompt is read through `LEX_PROMPT_PATH` (default
-  `runtime-private/prompts/lex-v1.txt`). Its contents are never logged and never
-  returned by `/health`.
-- For a deploy operator build, only `runtime-private/prompts/` may be packaged
-  into the image as approved private runtime material.
+| --- | --- | --- |
+| `README.md` | This explanation | Yes |
+| `prompts/lex-prompt.txt` | The single live Lex system prompt (starts with `# prompt_version: lex-vX.Y`) | No (gitignored) |
+| `prompt-archive/lex-v*.txt` | Chronological snapshots of every prompt version | No (gitignored) |
+| `evals/` | Local evaluation scratch outputs and reports | No (gitignored) |
+| `logs/` | Local runtime debug logs | No (gitignored) |
+| `deploy/` | Local operator deploy scratch files | No (gitignored) |

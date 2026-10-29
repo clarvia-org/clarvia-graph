@@ -27,8 +27,8 @@ See also:
 
 4. Confirm Artifact Registry repository `lex-services` exists in `europe-west1`.
 
-5. Confirm `runtime-private/prompts/lex-v1.txt` is baked into the deploy image or mounted
-   at `LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-v1.txt`.
+5. Confirm `runtime-private/prompts/lex-prompt.txt` is baked into the deploy image or mounted
+   at `LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-prompt.txt`.
 
 ## 2. Deploy with allowlist pilot defaults
 

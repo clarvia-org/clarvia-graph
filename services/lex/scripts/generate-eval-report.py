@@ -21,7 +21,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--prompt-path",
-        default=str(SERVICE_ROOT / "runtime-private" / "prompts" / "lex-v1.txt"),
+        default=str(SERVICE_ROOT / "runtime-private" / "prompts" / "lex-prompt.txt"),
         help="Prompt path for harness runs (use synthetic path in CI)",
     )
     parser.add_argument(

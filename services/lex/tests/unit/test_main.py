@@ -53,8 +53,11 @@ def _build_client(
         "hmac_secret": "main-test-secret",
         "website_hmac_secret": website_hmac_secret,
     }
-    if prompt_path is not None:
-        settings_kwargs["prompt_path"] = prompt_path
+    settings_kwargs["prompt_path"] = (
+        prompt_path
+        if prompt_path is not None
+        else "tests/fixtures/synthetic_prompt.txt"
+    )
     settings = build_settings(**settings_kwargs)
     app = create_app(
         settings,

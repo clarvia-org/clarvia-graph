@@ -20,7 +20,7 @@ search is the generation contract.
 For in-scope mail that has passed operational gates:
 
 1. Call OpenAI Responses once with `web_search` enabled and schema
-   `lex_response_v1` (prompt `lex-v1` at `runtime-private/prompts/lex-v1.txt`).
+   `lex_response_v1` (prompt `lex-v1` at `runtime-private/prompts/lex-prompt.txt`).
 2. Keep only source and contact URLs that appear in this-turn search results.
    Drop citation markers that no longer resolve. Then drop remaining URLs that
    are gone (HTTP 404/410, DNS failure, or connection refused). Keep 403, 429,
@@ -51,6 +51,6 @@ Country mapping, graph YAML, and `lex/` legislation files are not inputs.
 - Live mail does not depend on a research-then-writer split.
 - A letter may be weaker than a fully sourced answer; it still goes out in
   the user’s language.
-- Operators must ship `lex-v1.txt` in the image (not the research/writer pair)
+- Operators must ship `lex-prompt.txt` in the image (not the research/writer pair)
   and set `LEX_GENERATION_PIPELINE=single_pass`.
 - `app/pipeline/two_pass.py` remains for unit tests and eval scripts only.
