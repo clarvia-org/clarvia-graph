@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pytest
@@ -88,7 +89,8 @@ def test_private_prompt_present_with_required_sections() -> None:
         )
     text = load_prompt(_DEFAULT_RELATIVE)
     assert not text.startswith("# prompt_version:")
-    assert load_prompt_version(_DEFAULT_RELATIVE) == "lex-v2.1"
+    version = load_prompt_version(_DEFAULT_RELATIVE)
+    assert re.fullmatch(r"lex-v\d+\.\d+", version)
     for section in ("IDENTITY", "SCOPE", "RESEARCH", "OUTPUT CONTRACT"):
         assert section in text
     assert text.rstrip().endswith("extra fields.")

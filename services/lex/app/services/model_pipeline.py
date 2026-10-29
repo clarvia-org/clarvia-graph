@@ -386,6 +386,7 @@ def _normalize_dashes(text: str) -> str:
         else:
             pieces.append(char)
     normalized = "".join(pieces)
+    normalized = re.sub(r"`([^`\n]+)`", r"\1", normalized)
     return re.sub(r"[ \t]*\u2014[ \t]*", " - ", normalized)
 
 

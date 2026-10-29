@@ -59,7 +59,9 @@ def prefer_https_url(candidates: Sequence[str]) -> str:
     return https[0] if https else candidates[0]
 
 
-def match_search_url(cited: str, search_urls: Collection[str]) -> str | None:
+def match_search_url(  # noqa: PLR0911
+    cited: str, search_urls: Collection[str]
+) -> str | None:
     """Return the search URL to emit for a cited URL, or None if ungrounded.
 
     Match order:
@@ -75,11 +77,11 @@ def match_search_url(cited: str, search_urls: Collection[str]) -> str | None:
         return None
 
     normalised_search = [normalize_source_url(url) for url in search_urls]
+    cited_path = urlparse(normalised_cited).path.rstrip("/") or "/"
     key = url_compare_key(normalised_cited)
     exact = [url for url in normalised_search if url_compare_key(url) == key]
-    if exact:
+    if exact and cited_path != "/":
         return prefer_https_url(exact)
-
     cited_host = _hostname(normalised_cited)
     if not cited_host:
         return None
@@ -87,9 +89,17 @@ def match_search_url(cited: str, search_urls: Collection[str]) -> str | None:
         url for url in normalised_search if same_site_host(_hostname(url), cited_host)
     ]
     if not same_site:
-        return None
-
-    cited_path = urlparse(normalised_cited).path.rstrip("/") or "/"
+        return prefer_https_url(exact) if exact else None
+    # When the model cites a bare homepage ("/") but search retrieved deep page(s)
+    # on that host, upgrade to the retrieved deep page when unambiguous (1 deep URL).
+    if cited_path == "/":
+        deep_same_site = [
+            url for url in same_site if (urlparse(url).path.rstrip("/") or "/") != "/"
+        ]
+        if len(deep_same_site) == 1:
+            return deep_same_site[0]
+        if exact:
+            return prefer_https_url(exact)
 
     def path_score(url: str) -> tuple[int, int]:
         path = urlparse(url).path.rstrip("/") or "/"

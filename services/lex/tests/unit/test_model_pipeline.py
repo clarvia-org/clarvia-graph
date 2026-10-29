@@ -312,3 +312,98 @@ def test_provider_neutrality_rejected() -> None:
             web_search_calls=1,
         )
     assert exc.value.code == "provider_not_neutral"
+
+
+def test_pipeline_strips_inline_backticks_and_upgrades_root_citations() -> None:
+    from app.llm.url_normalize import (
+        match_search_url,
+        normalize_source_url,
+        normalize_source_url_set,
+        same_site_host,
+        url_compare_key,
+    )
+
+    assert not same_site_host("", "guichet.public.lu")
+    assert normalize_source_url("mailto:lex@clarvia.org") == "mailto:lex@clarvia.org"
+    assert (
+        normalize_source_url("https://guichet.public.lu:8443/fr/")
+        == "https://guichet.public.lu:8443/fr"
+    )
+    assert normalize_source_url_set({"https://guichet.public.lu/fr/"}) == frozenset(
+        {"https://guichet.public.lu/fr"}
+    )
+    assert url_compare_key("https://guichet.public.lu/fr/") == "guichet.public.lu|/fr|"
+    assert match_search_url("", ["https://guichet.public.lu/"]) is None
+    assert (
+        match_search_url("ftp://guichet.public.lu/", ["https://guichet.public.lu/"])
+        is None
+    )
+    assert match_search_url("https:///path", ["https://guichet.public.lu/"]) is None
+    assert (
+        match_search_url(
+            "https://other.example/page",
+            ["https://guichet.public.lu/fr/citoyens/famille/deces.html"],
+        )
+        is None
+    )
+    assert (
+        match_search_url(
+            "https://guichet.public.lu/fr/citoyens/old.html",
+            [
+                "https://guichet.public.lu/de/buerger/deces.html",
+                "https://guichet.public.lu/fr/citoyens/deces.html",
+            ],
+        )
+        == "https://guichet.public.lu/fr/citoyens/deces.html"
+    )
+
+    assert (
+        match_search_url(
+            "https://guichet.public.lu/",
+            ["https://guichet.public.lu/fr/citoyens/famille/deces.html"],
+        )
+        == "https://guichet.public.lu/fr/citoyens/famille/deces.html"
+    )
+    assert (
+        match_search_url(
+            "https://guichet.public.lu/",
+            [
+                "https://guichet.public.lu/",
+                "https://guichet.public.lu/fr/a.html",
+                "https://guichet.public.lu/fr/b.html",
+            ],
+        )
+        == "https://guichet.public.lu/"
+    )
+    assert (
+        match_search_url(
+            "https://guichet.public.lu/fr/a.html",
+            ["https://guichet.public.lu/fr/a.html"],
+        )
+        == "https://guichet.public.lu/fr/a.html"
+    )
+
+    response = make_answer_response(
+        body_markdown="Contact the `Commune office` using form `E104` [1].\n\nLex."
+    )
+    llm = FakeLlmAdapter(
+        responses=[
+            generation_result_from_response(
+                response,
+                source_urls=frozenset(
+                    {"https://guichet.public.lu/fr/citoyens/famille/deces.html"}
+                ),
+            )
+        ]
+    )
+    result = run_model_pipeline(
+        llm,
+        system_prompt="prompt",
+        runtime_envelope="envelope",
+    )
+    assert "`" not in result.response.body_markdown
+    assert "form E104" in result.response.body_markdown
+    assert (
+        result.response.sources[0].url
+        == "https://guichet.public.lu/fr/citoyens/famille/deces.html"
+    )
