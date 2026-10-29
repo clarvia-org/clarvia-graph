@@ -6,6 +6,13 @@ import logging
 
 import pytest
 from app.infrastructure.openai import FakeLlmAdapter, generation_result_from_response
+from app.llm.url_normalize import (
+    match_search_url,
+    normalize_source_url,
+    normalize_source_url_set,
+    same_site_host,
+    url_compare_key,
+)
 from app.llm.validation import LexValidationError, validate_lex_response
 from app.services.model_pipeline import ModelPipelineFailure, run_model_pipeline
 
@@ -315,14 +322,36 @@ def test_provider_neutrality_rejected() -> None:
 
 
 def test_pipeline_strips_inline_backticks_and_upgrades_root_citations() -> None:
-    from app.llm.url_normalize import (
-        match_search_url,
-        normalize_source_url,
-        normalize_source_url_set,
-        same_site_host,
-        url_compare_key,
+    assert (
+        match_search_url(
+            "https://guichet.public.lu/?lang=de",
+            [
+                "https://guichet.public.lu/?lang=de",
+                "https://guichet.public.lu/fr/citoyens/famille/deces.html",
+            ],
+        )
+        == "https://guichet.public.lu/?lang=de"
     )
-
+    assert (
+        match_search_url(
+            "https://sub.guichet.public.lu/",
+            [
+                "https://sub.guichet.public.lu/",
+                "https://guichet.public.lu/fr/citoyens/famille/deces.html",
+            ],
+        )
+        == "https://sub.guichet.public.lu/"
+    )
+    assert (
+        match_search_url(
+            "https://guichet.public.lu/",
+            [
+                "http://guichet.public.lu/fr/citoyens/famille/deces.html",
+                "https://guichet.public.lu/fr/citoyens/famille/deces.html",
+            ],
+        )
+        == "https://guichet.public.lu/fr/citoyens/famille/deces.html"
+    )
     assert not same_site_host("", "guichet.public.lu")
     assert normalize_source_url("mailto:lex@clarvia.org") == "mailto:lex@clarvia.org"
     assert (
