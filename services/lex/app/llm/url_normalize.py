@@ -6,7 +6,44 @@ import re
 from collections.abc import Collection, Sequence
 from urllib.parse import urlparse, urlunparse
 
-_GOV_SECOND_LEVEL_LABELS = frozenset({"gov", "gouv", "gob", "go", "gv", "govt"})
+_KNOWN_HOST_ALIASES: dict[str, str] = {
+    "service-public.gouv.fr": "service-public.fr",
+}
+_PUBLIC_SECOND_LEVEL_SUFFIXES = frozenset(
+    {
+        "ac",
+        "asso",
+        "biz",
+        "cie",
+        "co",
+        "com",
+        "edu",
+        "gc",
+        "gen",
+        "go",
+        "gob",
+        "gov",
+        "govt",
+        "gouv",
+        "gv",
+        "ind",
+        "info",
+        "jus",
+        "leg",
+        "ltd",
+        "me",
+        "mil",
+        "ne",
+        "net",
+        "nic",
+        "nom",
+        "or",
+        "org",
+        "plc",
+        "pro",
+        "res",
+    }
+)
 _EMAIL_RE = re.compile(r"\b([A-Za-z0-9._%+-]+)@([A-Za-z0-9.-]+\.[A-Za-z]{2,})\b")
 
 
@@ -20,15 +57,24 @@ def _strip_www(host: str) -> str:
     return h[4:] if h.startswith("www.") and len(h) > 4 else h
 
 
-def _canonical_article_host(host: str, path_segments: list[str]) -> str:
-    """Normalise host for deep-article deduplication across gov domain aliases."""
+def _canonical_article_host(host: str) -> str:
+    """Normalise host across www and explicit known domain aliases."""
     stripped = _strip_www(host)
-    if len(path_segments) < 2:
-        return stripped
-    labels = stripped.split(".")
-    if len(labels) >= 3 and labels[-2] in _GOV_SECOND_LEVEL_LABELS:
-        return ".".join([*labels[:-2], labels[-1]])
-    return stripped
+    return _KNOWN_HOST_ALIASES.get(stripped, stripped)
+
+
+def _split_domain_suffix(domain: str) -> tuple[str, str]:
+    """Split a lowercase domain into (registrable_head, public_suffix)."""
+    labels = [label for label in domain.split(".") if label]
+    if len(labels) < 2:
+        return domain, ""
+    if (
+        len(labels) >= 3
+        and len(labels[-1]) == 2
+        and labels[-2] in _PUBLIC_SECOND_LEVEL_SUFFIXES
+    ):
+        return ".".join(labels[:-2]), f"{labels[-2]}.{labels[-1]}"
+    return ".".join(labels[:-1]), labels[-1]
 
 
 def same_site_host(left: str, right: str) -> bool:
@@ -74,14 +120,11 @@ def url_compare_key(url: str) -> str:
 
 
 def source_dedup_key(url: str) -> str:
-    """Key for deduplicating sources (handles scheme, www, and gov-alias hosts)."""
+    """Key for deduplicating sources across scheme, www, root '/', and aliases."""
     parsed = urlparse(normalize_source_url(url))
     host = (parsed.hostname or "").lower().rstrip(".")
-    path = parsed.path or ""
-    if path.endswith("/") and path != "/":
-        path = path.rstrip("/")
-    segments = [seg for seg in path.split("/") if seg]
-    canon_host = _canonical_article_host(host, segments)
+    path = (parsed.path or "").rstrip("/") or "/"
+    canon_host = _canonical_article_host(host)
     return f"{canon_host}|{path}|{parsed.query}"
 
 
@@ -229,14 +272,14 @@ def match_typo_email_domain(
     } | set(contact_domains)
     if edom in known_domains:
         return None
-    e_head, e_tld = edom.rsplit(".", 1)
-    if len(e_head) < 5:
+    e_head, e_suffix = _split_domain_suffix(edom)
+    if len(e_head) < 5 or not e_suffix:
         return None
     for cdom in contact_domains:
         if "." not in cdom:
             continue
-        c_head, c_tld = cdom.rsplit(".", 1)
-        if e_tld != c_tld or len(c_head) < 5:
+        c_head, c_suffix = _split_domain_suffix(cdom)
+        if e_suffix != c_suffix or len(c_head) < 5:
             continue
         max_dist = 2 if min(len(e_head), len(c_head)) >= 12 else 1
         if 1 <= _levenshtein(e_head, c_head) <= max_dist:

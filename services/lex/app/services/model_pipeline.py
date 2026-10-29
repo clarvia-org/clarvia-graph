@@ -335,9 +335,16 @@ def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResul
         contacts = [
             contact.model_copy(
                 update={
+                    "email": (
+                        repair_email_domain_typos(
+                            contact.email, contact_websites, known_urls=known_urls
+                        )
+                        if contact.email is not None
+                        else None
+                    ),
                     "note": repair_email_domain_typos(
                         contact.note, contact_websites, known_urls=known_urls
-                    )
+                    ),
                 }
             )
             for contact in contacts

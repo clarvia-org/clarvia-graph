@@ -182,9 +182,16 @@ def _validate_citations(response: LexResponse) -> None:
         )
 
 
-def _validate_contacts(response: LexResponse) -> None:
+def _validate_contacts(
+    response: LexResponse,
+    *,
+    web_search_source_urls: Collection[str] | None = None,
+) -> None:
     contact_websites = [contact.website for contact in response.contacts]
-    known_urls = [source.url for source in response.sources]
+    known_urls = [
+        *(web_search_source_urls or ()),
+        *(source.url for source in response.sources),
+    ]
     _require(
         find_email_domain_typo(
             response.body_markdown, contact_websites, known_urls=known_urls
@@ -202,6 +209,15 @@ def _validate_contacts(response: LexResponse) -> None:
             "contact_email_domain_typo",
             "contact.note contains a near-miss contact website email domain.",
         )
+        if contact.email:
+            _require(
+                find_email_domain_typo(
+                    contact.email, contact_websites, known_urls=known_urls
+                )
+                is None,
+                "contact_email_domain_typo",
+                "contact.email contains a near-miss contact website email domain.",
+            )
     source_ids = {source.id for source in response.sources}
     body_folded = response.body_markdown.casefold()
     for contact in response.contacts:
@@ -325,7 +341,7 @@ def validate_lex_response(
     )
     _validate_action_rules(response)
     _validate_citations(response)
-    _validate_contacts(response)
+    _validate_contacts(response, web_search_source_urls=web_search_source_urls)
     _validate_provider_neutrality(response.body_markdown)
 
     if web_search_source_urls is not None and web_search_calls is not None:

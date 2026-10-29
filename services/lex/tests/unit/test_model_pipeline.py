@@ -10,7 +10,9 @@ from app.llm.url_normalize import (
     match_search_url,
     normalize_source_url,
     normalize_source_url_set,
+    repair_email_domain_typos,
     same_site_host,
+    source_dedup_key,
     url_compare_key,
 )
 from app.llm.validation import LexValidationError, validate_lex_response
@@ -439,6 +441,18 @@ def test_pipeline_strips_inline_backticks_and_upgrades_root_citations() -> None:
 
 
 def test_pipeline_deduplicates_alias_sources_and_repairs_email_typos() -> None:
+    assert source_dedup_key("https://justice.gov.uk/a/b") != source_dedup_key(
+        "https://justice.uk/a/b"
+    )
+    assert source_dedup_key("https://guichet.public.lu") == source_dedup_key(
+        "https://guichet.public.lu/"
+    )
+    assert (
+        repair_email_domain_typos(
+            "info@counseling.co.uk", ["https://counseling.gov.uk/"]
+        )
+        == "info@counseling.co.uk"
+    )
     assert (
         match_search_url(
             "https://doh.gov.ph/permits",
@@ -478,6 +492,7 @@ def test_pipeline_deduplicates_alias_sources_and_repairs_email_typos() -> None:
         update={
             "source_id": 2,
             "website": "https://federation-fnf.fr/mentions-legales",
+            "email": "contact@federation-nf.fr",
             "note": "Email contact@federation-nf.fr for directory support.",
         }
     )
@@ -527,6 +542,7 @@ def test_pipeline_deduplicates_alias_sources_and_repairs_email_typos() -> None:
     assert "[1][1]" not in result.response.body_markdown
     assert "contact@federation-fnf.fr" in result.response.body_markdown
     assert "contact@federation-fnf.fr" in result.response.contacts[0].note
+    assert result.response.contacts[0].email == "contact@federation-fnf.fr"
     validate_lex_response(
         result.response,
         web_search_source_urls=allowed,
