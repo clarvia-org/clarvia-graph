@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 from pathlib import Path
 
 from app.config import SERVICE_ROOT
@@ -60,15 +61,59 @@ def test_no_terraform_files() -> None:
 def test_runtime_private_is_gitignored() -> None:
     gitignore = (SERVICE_ROOT / ".gitignore").read_text(encoding="utf-8")
     assert "runtime-private/prompts/*" in gitignore
+    assert "runtime-private/prompt-archive/*" in gitignore
     assert "runtime-private/deploy/*" in gitignore
     assert "runtime-private/evals/*" in gitignore
     assert "runtime-private/data/*" in gitignore
 
 
+def test_no_prompt_files_tracked_in_git() -> None:
+    """Ensure no file under prompts or prompt-archive is ever tracked by git."""
+    result = subprocess.run(
+        [
+            "git",
+            "ls-files",
+            "runtime-private/prompts",
+            "runtime-private/prompt-archive",
+        ],
+        cwd=SERVICE_ROOT,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode == 0:
+        tracked = [line.strip() for line in result.stdout.splitlines() if line.strip()]
+        assert tracked == [], f"Private prompt files tracked in git: {tracked}"
+
+
 def test_dockerignore_excludes_sensitive_material() -> None:
     dockerignore = (SERVICE_ROOT / ".dockerignore").read_text(encoding="utf-8")
-    for needle in (".env", "-sa-key.json", "credentials.json", "logs/", "data/"):
+    for needle in (
+        ".env",
+        "-sa-key.json",
+        "credentials.json",
+        "logs/",
+        "data/",
+        "runtime-private/prompt-archive/",
+    ):
         assert needle in dockerignore
+
+
+def test_gcloudignore_excludes_sensitive_material() -> None:
+    gcloudignore = (SERVICE_ROOT / ".gcloudignore").read_text(encoding="utf-8")
+    for needle in (
+        ".env",
+        "-sa-key.json",
+        "credentials.json",
+        "logs/",
+        "data/",
+        "runtime-private/prompt-archive/",
+        "runtime-private/evals/",
+        "runtime-private/data/",
+        "runtime-private/deploy/",
+    ):
+        assert needle in gcloudignore
+    assert "runtime-private/prompts" not in gcloudignore
 
 
 def test_env_example_exists_and_dotenv_is_ignored() -> None:
