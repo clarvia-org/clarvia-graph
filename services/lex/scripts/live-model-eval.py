@@ -40,7 +40,7 @@ from app.infrastructure.openai import (  # noqa: E402
 )
 from app.infrastructure.rate_limit import InMemoryRateLimit  # noqa: E402
 from app.llm.envelope import build_runtime_envelope  # noqa: E402
-from app.llm.prompt_loader import load_prompt  # noqa: E402
+from app.llm.prompt_loader import load_prompt, load_prompt_version  # noqa: E402
 from app.llm.validation import LexValidationError, validate_lex_response  # noqa: E402
 from app.ops.pilot_harness import (  # noqa: E402
     PilotCase,
@@ -60,7 +60,7 @@ from tests.evals.pilot_runner import (  # noqa: E402
 DEFAULT_SCENARIOS = (
     SERVICE_ROOT / "tests" / "fixtures" / "live_eval" / "scenarios.jsonl"
 )
-DEFAULT_PROMPT = SERVICE_ROOT / "runtime-private" / "prompts" / "lex-v1.txt"
+DEFAULT_PROMPT = SERVICE_ROOT / "runtime-private" / "prompts" / "lex-prompt.txt"
 DEFAULT_REPORT_DIR = SERVICE_ROOT / "runtime-private" / "evals" / "reports"
 
 # Soft language heuristics: fail only when expected non-EN body looks clearly English-only.
@@ -151,7 +151,7 @@ def run_live_case(
         parsed=parsed,
         conversation_history=history,
         current_date_utc=datetime.now(tz=UTC),
-        prompt_version="lex-v1",
+        prompt_version=load_prompt_version(DEFAULT_PROMPT),
     )
     reasons: list[str] = []
     action: str | None = None

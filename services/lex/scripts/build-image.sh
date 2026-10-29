@@ -24,16 +24,8 @@ ROOT_DIR="$(dirname "${SCRIPT_DIR}")"
 cd "${ROOT_DIR}"
 
 # Approved private runtime material must be present for a deploy-operator build.
-if [ ! -f "runtime-private/prompts/lex-v1.txt" ]; then
-  echo "ERROR: runtime-private/prompts/lex-v1.txt is missing." >&2
-  exit 1
-fi
-if [ ! -f "runtime-private/prompts/lex-research-v1.txt" ]; then
-  echo "ERROR: runtime-private/prompts/lex-research-v1.txt is missing." >&2
-  exit 1
-fi
-if [ ! -f "runtime-private/prompts/lex-writer-v1.txt" ]; then
-  echo "ERROR: runtime-private/prompts/lex-writer-v1.txt is missing." >&2
+if [ ! -f "runtime-private/prompts/lex-prompt.txt" ]; then
+  echo "ERROR: runtime-private/prompts/lex-prompt.txt is missing." >&2
   exit 1
 fi
 

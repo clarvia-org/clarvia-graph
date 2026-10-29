@@ -50,7 +50,7 @@ class Settings(BaseSettings):
     max_output_tokens: int = 12000
     prompt_version: str = "lex-v1"
     prompt_path: str = Field(
-        default="runtime-private/prompts/lex-v1.txt",
+        default="runtime-private/prompts/lex-prompt.txt",
         validation_alias=AliasChoices("LEX_PROMPT_PATH", "prompt_path"),
     )
     pipeline_version: str = "single-pass-v1"
@@ -87,9 +87,7 @@ class Settings(BaseSettings):
     hmac_secret: str = ""
     website_hmac_secret: str = Field(
         default="",
-        validation_alias=AliasChoices(
-            "LEX_WEBSITE_HMAC_SECRET", "website_hmac_secret"
-        ),
+        validation_alias=AliasChoices("LEX_WEBSITE_HMAC_SECRET", "website_hmac_secret"),
     )
     lex_aliases: str = ""
     global_daily_llm_limit: int = 500

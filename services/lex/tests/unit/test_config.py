@@ -19,7 +19,7 @@ def test_defaults_match_blueprint() -> None:
     assert settings.lex_mailbox == "lex@clarvia.org"
     assert settings.openai_model == "gpt-6-luna"
     assert settings.prompt_version == "lex-v1"
-    assert settings.prompt_path == "runtime-private/prompts/lex-v1.txt"
+    assert settings.prompt_path == "runtime-private/prompts/lex-prompt.txt"
     assert settings.schema_version == "lex_response_v1"
     assert settings.processing_mode == "disabled"
     assert settings.processing_enabled is False

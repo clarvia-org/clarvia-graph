@@ -43,7 +43,7 @@ gcloud run deploy "${SERVICE_NAME}" \
   --image="${IMAGE_URI}" \
   --service-account="${RUNTIME_SERVICE_ACCOUNT}" \
   --no-allow-unauthenticated \
-  --update-env-vars="ENVIRONMENT=production,ADAPTER_BACKEND=gcp,GCP_PROJECT_ID=${PROJECT_ID},GCP_REGION=${REGION},LEX_MAILBOX=lex@clarvia.org,OPENAI_MODEL=gpt-6-luna,PROMPT_VERSION=lex-v1,SCHEMA_VERSION=lex_response_v1,PIPELINE_VERSION=single-pass-v1,MAX_OUTPUT_TOKENS=12000,GLOBAL_DAILY_LLM_LIMIT=500,FORCE_CIRCUIT_OPEN=false,RETENTION_TRASH_GMAIL=false,LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-v1.txt" \
+  --update-env-vars="ENVIRONMENT=production,ADAPTER_BACKEND=gcp,GCP_PROJECT_ID=${PROJECT_ID},GCP_REGION=${REGION},LEX_MAILBOX=lex@clarvia.org,OPENAI_MODEL=gpt-6-luna,PROMPT_VERSION=lex-v1,SCHEMA_VERSION=lex_response_v1,PIPELINE_VERSION=single-pass-v1,MAX_OUTPUT_TOKENS=12000,GLOBAL_DAILY_LLM_LIMIT=500,FORCE_CIRCUIT_OPEN=false,RETENTION_TRASH_GMAIL=false,LEX_PROMPT_PATH=/app/runtime-private/prompts/lex-prompt.txt" \
   --update-secrets="OPENAI_API_KEY=${OPENAI_API_KEY_SECRET},HMAC_SECRET=${HMAC_SECRET_SECRET},LEX_WEBSITE_HMAC_SECRET=${WEBSITE_HMAC_SECRET_SECRET}"
 
 echo "Deploy submitted (existing PROCESSING_MODE and PROCESSING_ENABLED preserved)."

@@ -21,6 +21,7 @@ from app import __version__
 from app.config import Settings, get_settings
 from app.domain.errors import MissingDependencyError, NotImplementedForPhase
 from app.infrastructure.factory import build_adapters
+from app.llm.prompt_loader import load_prompt_version
 from app.logging import configure_logging
 from app.services.ask_auth import (
     SIGNATURE_HEADER,
@@ -138,7 +139,9 @@ def create_app(
         return {
             "status": "ok",
             "version": __version__,
-            "prompt_version": settings.prompt_version,
+            "prompt_version": load_prompt_version(
+                settings.prompt_path, fallback=settings.prompt_version
+            ),
             "schema_version": settings.schema_version,
         }
 

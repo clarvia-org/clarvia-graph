@@ -360,19 +360,16 @@ def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResul
 
 
 def _normalize_dashes(text: str) -> str:
-    """Normalise awkward hyphen variants; leave em dashes in place."""
+    """Normalise dash-like Unicode and strip em dashes (U+2014)."""
     import unicodedata
 
     pieces: list[str] = []
     for char in text:
-        if char in {"-", "_", "\u2014"}:
+        if char in {"-", "_"}:
             pieces.append(char)
             continue
         category = unicodedata.category(char)
         name = unicodedata.name(char, "")
-        if "EM DASH" in name:
-            pieces.append(char)
-            continue
         is_dash_like = (
             category == "Pd"
             or char in _DASH_CHARS
@@ -382,13 +379,14 @@ def _normalize_dashes(text: str) -> str:
             or name == "MINUS SIGN"
         )
         if is_dash_like:
-            if "HORIZONTAL BAR" in name or ord(char) >= 0x2015:
-                pieces.append(" - ")
+            if ord(char) >= 0x2014 or "EM DASH" in name or "HORIZONTAL BAR" in name:
+                pieces.append("\u2014")
             else:
                 pieces.append("-")
         else:
             pieces.append(char)
-    return "".join(pieces)
+    normalized = "".join(pieces)
+    return re.sub(r"[ \t]*\u2014[ \t]*", " - ", normalized)
 
 
 def _repair_search_evidence(

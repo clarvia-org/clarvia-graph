@@ -6,9 +6,10 @@ import base64
 import itertools
 from email import message_from_bytes
 from email.policy import SMTP
+from pathlib import Path
 
 from app.domain.labels import LEX_FAILED, LEX_PROCESSED
-from app.domain.models import ParsedMessage, ProcessingStatus
+from app.domain.models import ParsedMessage, ProcessingStatus, new_queued_record
 from app.infrastructure.clock import FakeClock
 from app.infrastructure.daily_usage import InMemoryDailyUsage
 from app.infrastructure.memory import InMemoryGmail, InMemoryMessageState
@@ -57,8 +58,6 @@ class Harness:
         )
 
     def seed_queued(self, message_id: str = "m1", thread_id: str = "t1") -> None:
-        from app.domain.models import new_queued_record
-
         self.state.create_record(
             new_queued_record(
                 message_key=message_id, thread_id=thread_id, now=self.clock.now()
@@ -124,7 +123,7 @@ def test_answer_language_localises_footer_and_source_heading(
     assert harness.gmail.last_sent_raw is not None
     loaded = message_from_bytes(
         base64.urlsafe_b64decode(harness.gmail.last_sent_raw),
-        policy=SMTP,  # type: ignore[arg-type]
+        policy=SMTP,
     )
     assert loaded["From"] is not None
     assert "Lex de Clarvia" in loaded["From"]
@@ -250,3 +249,29 @@ def test_clarify_without_search_is_sent(synthetic_prompt: str) -> None:
     assert result.status == PROCESS_STATUS_SENT
     assert len(llm.calls) == 1
     assert llm.calls[0]["force_web_search"] is False
+
+
+def test_sent_header_and_state_record_use_prompt_header_version(
+    tmp_path: Path,
+) -> None:
+    prompt_file = tmp_path / "versioned-prompt.txt"
+    prompt_file.write_text(
+        "# prompt_version: lex-v2.1\n\nYou are Lex.\nLex.\n",
+        encoding="utf-8",
+    )
+    llm = fake_llm_for_responses(make_answer_response())
+    harness = Harness(llm=llm, prompt_path=str(prompt_file))
+    harness.seed_eligible()
+
+    result = harness.processor.run(gmail_message_id="m1")
+
+    assert result.status == PROCESS_STATUS_SENT
+    record = harness.state.get_record("m1")
+    assert record is not None
+    assert record.prompt_version == "lex-v2.1"
+    assert harness.gmail.last_sent_raw is not None
+    loaded = message_from_bytes(
+        base64.urlsafe_b64decode(harness.gmail.last_sent_raw),
+        policy=SMTP,
+    )
+    assert loaded["X-Lex-Prompt-Version"] == "lex-v2.1"
