@@ -59,7 +59,9 @@ def prefer_https_url(candidates: Sequence[str]) -> str:
     return https[0] if https else candidates[0]
 
 
-def match_search_url(cited: str, search_urls: Collection[str]) -> str | None:
+def match_search_url(  # noqa: PLR0911
+    cited: str, search_urls: Collection[str]
+) -> str | None:
     """Return the search URL to emit for a cited URL, or None if ungrounded.
 
     Match order:
@@ -70,16 +72,18 @@ def match_search_url(cited: str, search_urls: Collection[str]) -> str | None:
     if not cited.strip() or not search_urls:
         return None
     normalised_cited = normalize_source_url(cited)
-    scheme = (urlparse(normalised_cited).scheme or "").lower()
+    parsed_cited = urlparse(normalised_cited)
+    scheme = (parsed_cited.scheme or "").lower()
     if scheme not in {"http", "https"}:
         return None
 
     normalised_search = [normalize_source_url(url) for url in search_urls]
+    cited_path = parsed_cited.path.rstrip("/") or "/"
+    is_bare_homepage = cited_path == "/" and not parsed_cited.query
     key = url_compare_key(normalised_cited)
     exact = [url for url in normalised_search if url_compare_key(url) == key]
-    if exact:
+    if exact and not is_bare_homepage:
         return prefer_https_url(exact)
-
     cited_host = _hostname(normalised_cited)
     if not cited_host:
         return None
@@ -87,9 +91,23 @@ def match_search_url(cited: str, search_urls: Collection[str]) -> str | None:
         url for url in normalised_search if same_site_host(_hostname(url), cited_host)
     ]
     if not same_site:
-        return None
-
-    cited_path = urlparse(normalised_cited).path.rstrip("/") or "/"
+        return prefer_https_url(exact) if exact else None
+    # When the model cites a bare homepage ("/") but search retrieved deep page(s)
+    # on that exact host, upgrade to the retrieved deep page when unambiguous.
+    if is_bare_homepage:
+        deep_same_host = [
+            url
+            for url in same_site
+            if _hostname(url) == cited_host
+            and (
+                (urlparse(url).path.rstrip("/") or "/") != "/"
+                or bool(urlparse(url).query)
+            )
+        ]
+        if len({url_compare_key(url) for url in deep_same_host}) == 1:
+            return prefer_https_url(deep_same_host)
+        if exact:
+            return prefer_https_url(exact)
 
     def path_score(url: str) -> tuple[int, int]:
         path = urlparse(url).path.rstrip("/") or "/"
