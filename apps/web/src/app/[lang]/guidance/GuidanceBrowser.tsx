@@ -404,6 +404,9 @@ export default function GuidanceBrowser({
               countryMatchScore(a, normalizedQuery);
             if (scoreDiff !== 0) return scoreDiff;
           }
+          const aNative = a.targetLang === lang ? 0 : 1;
+          const bNative = b.targetLang === lang ? 0 : 1;
+          if (aNative !== bNative) return aNative - bNative;
           const cmp = a.countryOfDeath.localeCompare(b.countryOfDeath, lang);
           if (cmp !== 0) return cmp;
           return a.category === "domestic-bereavement" ? -1 : 1;

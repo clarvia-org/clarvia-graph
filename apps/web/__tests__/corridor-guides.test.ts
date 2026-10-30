@@ -268,4 +268,19 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
     expect(search("UAE").length).toBe(8);
     expect(search("Holland").length).toBeGreaterThanOrEqual(8);
   });
+
+  it("prioritizes selected site language (fr, de, lu) across Phase 3 multi-locale guides", () => {
+    const frPublished = publishedCorridorGuides("fr");
+    const dePublished = publishedCorridorGuides("de");
+    const luPublished = publishedCorridorGuides("lu");
+
+    expect(frPublished.length).toBe(98);
+    expect(dePublished.length).toBe(49);
+    expect(luPublished.length).toBe(2);
+
+    // Phase 3 L2 translations resolve natively on /fr, /de, and /lu
+    expect(getCorridorGuideBySlug("spain-france-bereavement-checklist", "fr")?.title).toContain("Espagne");
+    expect(getCorridorGuideBySlug("france-germany-bereavement-checklist", "de")?.title).toContain("Frankreich");
+    expect(getCorridorGuideBySlug("luxembourg-bereavement-checklist", "lu")?.title).toContain("Lëtzebuerg");
+  });
 });
