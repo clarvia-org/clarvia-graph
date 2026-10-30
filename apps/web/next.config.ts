@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
-import { ASK_PATH_REDIRECTS, LANGUAGE_REDIRECTS } from "./src/lib/i18n";
+import {
+  ASK_PATH_REDIRECTS,
+  LANGUAGE_REDIRECTS,
+  LEGACY_GUIDANCE_REDIRECTS,
+} from "./src/lib/i18n";
 
 const securityHeaders = [
   {
@@ -46,7 +50,11 @@ const nextConfig: NextConfig = {
     ];
   },
   async redirects() {
-    return [...LANGUAGE_REDIRECTS, ...ASK_PATH_REDIRECTS];
+    return [
+      ...LANGUAGE_REDIRECTS,
+      ...ASK_PATH_REDIRECTS,
+      ...LEGACY_GUIDANCE_REDIRECTS,
+    ];
   },
 };
 

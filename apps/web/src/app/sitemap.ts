@@ -1,6 +1,5 @@
 import { MetadataRoute } from "next";
 import { LANGUAGES, hreflangLanguages } from "@/lib/i18n";
-import { GUIDES, GUIDANCE_COUNTRY } from "@/content/guidance";
 import {
   corridorGuideHreflangAlternates,
   corridorGuidePath,
@@ -46,20 +45,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: page.changeFrequency,
         priority: page.priority,
         ...(page.translated ? { alternates: { languages: hreflangLanguages(page.path) } } : {}),
-      });
-    }
-  }
-
-  for (const guide of GUIDES) {
-    for (const lang of LANGUAGES) {
-      entries.push({
-        url: `${BASE_URL}/${lang}/guidance/${GUIDANCE_COUNTRY.code}/${guide.slug}`,
-        lastModified: now,
-        changeFrequency: "monthly",
-        priority: 0.7,
-        alternates: {
-          languages: hreflangLanguages(`guidance/${GUIDANCE_COUNTRY.code}/${guide.slug}`),
-        },
       });
     }
   }
