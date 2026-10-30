@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import sitemap from "@/app/sitemap";
+import { GUIDE_UI_COPY } from "@/content/corridor-guide-ui";
 import {
   allCorridorGuides,
   allCorridorGuideStaticParams,
@@ -10,6 +11,11 @@ import {
   publishedCorridorGuideStaticParams,
 } from "@/content/corridor-guides";
 import { MIN_QUESTION_CHARS, PLACE_HINT_RE } from "@/lib/ask-entry";
+
+const FIRST_PERSON_SINGULAR_EN_RE =
+  /\b(I|I'm|I’m|I've|I’ve|I'll|I’ll|my|me|myself)\b/;
+const BEREAVEMENT_CONDOLENCE_RE =
+  /\b(sorry for your loss|sorry for the loss|condolence|condolences|passed away|passing of your|bereavement|deceased)\b/i;
 
 describe("corridor-guides (full 250-guide dual-locale dataset + Wave 1 live preview gate)", () => {
   it("compiles all 390 guide pages in the dataset (250 EN + 140 L1) with 5 steps, deep live sources, contacts, and clean HTML", () => {
@@ -127,6 +133,36 @@ describe("corridor-guides (full 250-guide dual-locale dataset + Wave 1 live prev
       expect(guide.relatedSlugs.length).toBeGreaterThan(0);
       for (const relSlug of guide.relatedSlugs) {
         expect(getCorridorGuideBySlug(relSlug, "en")).toBeDefined();
+      }
+    }
+  });
+
+  it("enforces institutional 'we' voice, hides lex@clarvia.org, and never offers bereavement condolences on pre-death guides", () => {
+    expect(JSON.stringify(GUIDE_UI_COPY).toLowerCase()).not.toContain("lex@");
+    expect(JSON.stringify(allCorridorGuides()).toLowerCase()).not.toContain(
+      "lex@clarvia.org",
+    );
+
+    for (const guide of allCorridorGuides()) {
+      const enGuide = getAnyCorridorGuideBySlug(guide.slug, "en")!;
+      const introText = enGuide.introHtml.replace(/<[^>]+>/g, " ");
+      expect(
+        FIRST_PERSON_SINGULAR_EN_RE.test(introText),
+        `${guide.id} introHtml has 1p singular: ${introText}`,
+      ).toBe(false);
+      expect(
+        FIRST_PERSON_SINGULAR_EN_RE.test(enGuide.closingQuestion),
+        `${guide.id} closingQuestion has 1p singular: ${enGuide.closingQuestion}`,
+      ).toBe(false);
+
+      if (
+        guide.category === "cross-border-terminal-illness" ||
+        guide.category === "terminal-illness-admin"
+      ) {
+        expect(
+          BEREAVEMENT_CONDOLENCE_RE.test(introText),
+          `${guide.id} pre-death guide has bereavement condolence: ${introText}`,
+        ).toBe(false);
       }
     }
   });

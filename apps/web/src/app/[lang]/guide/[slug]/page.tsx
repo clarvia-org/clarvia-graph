@@ -82,7 +82,6 @@ export default async function CorridorGuidePage({
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   const canonicalUrl = `${BASE_URL}${corridorGuidePath(guide.slug, lang)}`;
-  const mailtoQuick = `mailto:lex@clarvia.org?subject=${encodeURIComponent(guide.mailtoSubject)}&body=${encodeURIComponent(guide.prefillQuestion)}`;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -291,12 +290,6 @@ export default async function CorridorGuidePage({
             >
               {ui.midCtaPrimary}
             </a>
-            <a
-              href={mailtoQuick}
-              className="btn-secondary text-sm px-4 py-2 min-h-11 inline-flex items-center"
-            >
-              {ui.midCtaSecondary}
-            </a>
           </div>
         </div>
 
@@ -386,12 +379,11 @@ export default async function CorridorGuidePage({
           </ol>
         </section>
 
-        {/* Prominent Pre-Filled Ask Clarvia Web-Form & Email Funnel */}
+        {/* Prominent Pre-Filled Ask Clarvia Web-Form Funnel */}
         <GuideCtaClient
           slug={guide.slug}
           lang={lang}
           prefillQuestion={guide.prefillQuestion}
-          mailtoSubject={guide.mailtoSubject}
           closingQuestion={guide.closingQuestion}
           caseDependentItems={guide.caseDependentItems}
         />
