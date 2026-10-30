@@ -17,14 +17,12 @@ export default function GuideCtaClient({
   slug,
   lang = "en",
   prefillQuestion,
-  mailtoSubject,
   closingQuestion,
   caseDependentItems,
 }: {
   slug: string;
   lang?: string;
   prefillQuestion: string;
-  mailtoSubject: string;
   closingQuestion: string;
   caseDependentItems: string[];
 }) {
@@ -45,12 +43,6 @@ export default function GuideCtaClient({
       fillRef.current.fillQuestion(prefillQuestion);
     }
   }, [slug, prefillQuestion]);
-
-  const mailtoHref = useMemo(() => {
-    const subject = encodeURIComponent(mailtoSubject);
-    const body = encodeURIComponent(`${prefillQuestion}\n\n${ui.ctaMailtoBodyHint}`);
-    return `mailto:lex@clarvia.org?subject=${subject}&body=${body}`;
-  }, [mailtoSubject, prefillQuestion, ui.ctaMailtoBodyHint]);
 
   function selectFocusItem(itemText: string) {
     const prompt = `${prefillQuestion.trim()} ${ui.ctaSpecificPrefix} ${itemText}. `;
@@ -125,18 +117,6 @@ export default function GuideCtaClient({
           router.push(`/ask/sent?lang=${askLocale}`);
         }}
       />
-
-      <div className="max-w-2xl mx-auto mt-5 pt-4 border-t border-calm-blue-100 text-center">
-        <p className="text-sm text-calm-blue-600">
-          {ui.ctaBottomPrompt}{" "}
-          <a
-            href={mailtoHref}
-            className="font-semibold text-calm-blue-800 underline hover:text-calm-blue-900"
-          >
-            {ui.ctaBottomLink}
-          </a>
-        </p>
-      </div>
     </section>
   );
 }

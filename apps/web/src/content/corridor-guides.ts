@@ -44,7 +44,6 @@ export type CorridorGuideLocalization = {
   closingQuestion: string;
   caseDependentItems: string[];
   prefillQuestion: string;
-  mailtoSubject: string;
   contacts: CorridorGuideContact[];
   sources: CorridorGuideSource[];
 };
@@ -74,7 +73,6 @@ export type CorridorGuide = {
   closingQuestion: string;
   caseDependentItems: string[];
   prefillQuestion: string;
-  mailtoSubject: string;
   contacts: CorridorGuideContact[];
   sources: CorridorGuideSource[];
   localizations?: Record<string, CorridorGuideLocalization>;
@@ -127,7 +125,6 @@ function localizeGuide(
     closingQuestion: loc.closingQuestion,
     caseDependentItems: loc.caseDependentItems,
     prefillQuestion: loc.prefillQuestion,
-    mailtoSubject: loc.mailtoSubject,
     contacts: loc.contacts,
     sources: loc.sources,
     relatedSlugs,
