@@ -235,7 +235,7 @@ export default async function GuidanceHubPage({
 
   const items: GuidanceCardItem[] = enGuides.map((enGuide) => {
     const preferredTargetLang =
-      (lang === "fr" || lang === "de") && enGuide.locales.includes(lang)
+      lang !== "en" && enGuide.locales.includes(lang)
         ? lang
         : "en";
     const localizedGuide =
@@ -270,11 +270,13 @@ export default async function GuidanceHubPage({
       });
     }
 
-    const localCode = enGuide.locales.find((c) => c !== "en");
-    const localLabel = localCode
-      ? (GUIDE_LOCALE_LABELS[localCode as GuideLocale] ??
-        localCode.toUpperCase())
-      : null;
+    const nonEnLabels = enGuide.locales
+      .filter((c) => c !== "en")
+      .map(
+        (c) =>
+          GUIDE_LOCALE_LABELS[c as GuideLocale] ?? c.toUpperCase(),
+      );
+    const localLabel = nonEnLabels.length > 0 ? nonEnLabels.join(" + ") : null;
 
     return {
       slug: enGuide.slug,

@@ -245,10 +245,15 @@ function languageBadgeInfo(
   item: GuidanceCardItem,
   siteLang: Lang,
 ): { text: string; isNativeMatch: boolean } | null {
-  if (siteLang === "fr" || siteLang === "de") {
+  if (siteLang === "fr" || siteLang === "de" || siteLang === "lu") {
     if (item.targetLang === siteLang) {
       return {
-        text: siteLang === "fr" ? "Français" : "Deutsch",
+        text:
+          siteLang === "fr"
+            ? "Français"
+            : siteLang === "de"
+              ? "Deutsch"
+              : "Lëtzebuergesch",
         isNativeMatch: true,
       };
     }
@@ -397,6 +402,9 @@ export default function GuidanceBrowser({
               countryMatchScore(a, normalizedQuery);
             if (scoreDiff !== 0) return scoreDiff;
           }
+          const aNative = a.targetLang === lang ? 0 : 1;
+          const bNative = b.targetLang === lang ? 0 : 1;
+          if (aNative !== bNative) return aNative - bNative;
           const cmp = a.countryOfDeath.localeCompare(b.countryOfDeath, lang);
           if (cmp !== 0) return cmp;
           return a.category === "domestic-bereavement" ? -1 : 1;
