@@ -67,7 +67,7 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
   en: {
     breadcrumbGuidance: "Guidance",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Cross-Border Corridor: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Cross-Border: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Jurisdiction: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `${count} Official Sources Verified (${date})`,
     languageSwitchLabel: "Language:",
@@ -111,14 +111,14 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     abroadHubCtaPrompt: (country) =>
       `Coordinating between ${country} and another country not listed above?`,
     abroadHubCtaButton: "Ask Clarvia for Your Exact Two-Country Roadmap →",
-    parentHubsHeading: "National Hub Checklists for These Two Jurisdictions",
-    relatedHeading: "Related Corridor & Situation Checklists",
+    parentHubsHeading: "National Checklists for Each Country",
+    relatedHeading: "Related Checklists & Guides",
     backToGuidance: "← Back to all published guidance",
   },
   de: {
     breadcrumbGuidance: "Orientierungshilfen",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Grenzüberschreitender Korridor: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Grenzüberschreitend: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Rechtsraum: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `${count} amtliche Quellen geprüft (${date})`,
     languageSwitchLabel: "Sprache:",
@@ -158,18 +158,18 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
       `Internationales Erbrecht & Zuständigkeit: Leben Erben im Ausland oder befindet sich Vermögen in mehreren Staaten, bestimmen Kollisionsnormen (wie die EU-Erbrechtsverordnung Nr. 650/2012 oder das Belegenheitsrecht bei Immobilien), welches Gericht oder Notariat zuständig ist.`,
     ],
     abroadHubCorridorsLabel: (country) =>
-      `Spezifische Länder-Korridor-Checklisten mit Bezug zu ${country}:`,
+      `Grenzüberschreitende Checklisten mit Bezug zu ${country}:`,
     abroadHubCtaPrompt: (country) =>
       `Besteht eine Verbindung zwischen ${country} und einem weiteren Land?`,
     abroadHubCtaButton: "Individuellen Zwei-Länder-Leitfaden bei Ask Clarvia anfordern →",
-    parentHubsHeading: "Nationale Haupt-Checklisten für diese beiden Länder",
+    parentHubsHeading: "Nationale Checklisten für diese beiden Länder",
     relatedHeading: "Verwandte Länder- & Situations-Checklisten",
     backToGuidance: "← Zurück zu allen veröffentlichten Orientierungshilfen",
   },
   es: {
     breadcrumbGuidance: "Guías prácticas",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Corredor transfronterizo: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Internacional: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Jurisdicción: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `${count} fuentes oficiales verificadas (${date})`,
     languageSwitchLabel: "Idioma:",
@@ -220,7 +220,7 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
   fr: {
     breadcrumbGuidance: "Guides pratiques",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Corridor transfrontalier : ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `International : ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Juridiction : ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `${count} sources officielles vérifiées (${date})`,
     languageSwitchLabel: "Langue :",
@@ -271,7 +271,7 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
   pt: {
     breadcrumbGuidance: "Guias práticos",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Corredor transfronteiriço: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Internacional: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Jurisdição: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `${count} fontes oficiais verificadas (${date})`,
     languageSwitchLabel: "Idioma:",
@@ -322,7 +322,7 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
   it: {
     breadcrumbGuidance: "Guide pratiche",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Corridoio transfrontaliero: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Internazionale: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Giurisdizione: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `${count} fonti ufficiali verificate (${date})`,
     languageSwitchLabel: "Lingua:",
@@ -373,7 +373,7 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
   nl: {
     breadcrumbGuidance: "Praktische gidsen",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Grensoverschrijdende corridor: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Grensoverschrijdend: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Rechtsgebied: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `${count} officiële bronnen gecontroleerd (${date})`,
     languageSwitchLabel: "Taal:",
@@ -424,7 +424,7 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
   tr: {
     breadcrumbGuidance: "Rehberler",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Ülkeler Arası Koridor: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Ülkeler Arası: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Yetki Alanı: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `${count} Resmi Kaynak Doğrulandı (${date})`,
     languageSwitchLabel: "Dil:",
@@ -475,7 +475,7 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
   pl: {
     breadcrumbGuidance: "Poradniki",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Korytarz transgraniczny: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Międzynarodowe: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Jurysdykcja: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `Zweryfikowane źródła oficjalne: ${count} (${date})`,
     languageSwitchLabel: "Język:",
@@ -526,7 +526,7 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
   ro: {
     breadcrumbGuidance: "Ghiduri practice",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Coridor transfrontalier: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Transfrontalier: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Jurisdicție: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `${count} surse oficiale verificate (${date})`,
     languageSwitchLabel: "Limbă:",
@@ -577,7 +577,7 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
   uk: {
     breadcrumbGuidance: "Практичні посібники",
     crossBorderBadge: (c1, code1, c2, code2) =>
-      `Транскордонний коридор: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+      `Міжнародний випадок: ${c1} (${code1}) ↔ ${c2} (${code2})`,
     jurisdictionBadge: (c1, code1) => `Юрисдикція: ${c1} (${code1})`,
     sourcesVerifiedBadge: (count, date) => `Перевірено офіційних джерел: ${count} (${date})`,
     languageSwitchLabel: "Мова:",

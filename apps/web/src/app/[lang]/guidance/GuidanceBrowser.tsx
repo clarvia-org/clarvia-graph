@@ -38,7 +38,12 @@ export type GuidanceCountryOption = {
 
 type SituationFilter = "all" | "bereavement" | "terminal" | "cross_border";
 
-const QUICK_COUNTRY_CODES = ["LU", "FR", "DE", "BE", "PT", "GB", "US", "ES"] as const;
+const QUICK_COUNTRY_CODES_BY_LANG: Record<Lang, readonly string[]> = {
+  en: ["US", "GB", "CA", "AU", "IN", "FR", "DE", "ES", "IT", "MX"],
+  fr: ["FR", "CA", "US", "GB", "DE", "ES", "IT", "AU", "IN", "MX"],
+  de: ["DE", "US", "GB", "FR", "ES", "IT", "CA", "AU", "IN", "MX"],
+  lu: ["LU", "FR", "DE", "GB", "US", "ES", "IT", "CA", "AU", "IN"],
+};
 
 export const COUNTRY_SEARCH_ALIASES: Record<string, string> = {
   AE: "uae u.a.e. united arab emirates dubai abu dhabi emirats arabes unis vereinigte arabische emirate",
@@ -51,7 +56,7 @@ export const COUNTRY_SEARCH_ALIASES: Record<string, string> = {
   CV: "cape verde cabo verde cap-vert kap verde",
   CZ: "czechia czech republic tchequie tschechien",
   DE: "germany deutschland allemagne daitschland",
-  DK: "denmark danemark danemark",
+  DK: "denmark danemark",
   ES: "spain espagne spanien spuenien",
   FR: "france frankreich frankraich",
   GB: "uk u.k. united kingdom great britain britain england scotland wales northern ireland royaume-uni grande-bretagne angleterre grossbritannien",
@@ -90,6 +95,15 @@ const INTL_FORMATTERS =
       )
     : [];
 
+export function foldSearchText(value: string): string {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[’‘`]/g, "'")
+    .toLowerCase()
+    .trim();
+}
+
 function getMultilingualCountryAliases(code: string): string {
   const cached = DISPLAY_NAMES_CACHE[code];
   if (cached !== undefined) return cached;
@@ -107,13 +121,12 @@ function getMultilingualCountryAliases(code: string): string {
   return built;
 }
 
-export function foldSearchText(value: string): string {
-  return value
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[’‘`]/g, "'")
-    .toLowerCase()
-    .trim();
+function matchesTokenInText(tok: string, text: string): boolean {
+  if (tok.length <= 3) {
+    const escaped = tok.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return new RegExp(`(?:^|[^a-z0-9])${escaped}(?:$|[^a-z0-9])`).test(text);
+  }
+  return text.includes(tok);
 }
 
 export function matchesGuidanceSearch(
@@ -128,15 +141,26 @@ export function matchesGuidanceSearch(
   );
 
   const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
-  return tokens.every((tok) => {
-    if (tok.length <= 3) {
-      const escaped = tok.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-      return new RegExp(`(?:^|[^a-z0-9])${escaped}(?:$|[^a-z0-9])`).test(
-        haystack,
-      );
+  return tokens.every((tok) => matchesTokenInText(tok, haystack));
+}
+
+/**
+ * Returns how many search tokens match the item's country names/codes/aliases directly
+ * (so country hits rank ahead of incidental summary text hits).
+ */
+function countryMatchScore(item: GuidanceCardItem, normalizedQuery: string): number {
+  if (!normalizedQuery) return 0;
+  const countryHaystack = foldSearchText(
+    `${item.countryOfDeath} ${item.countryOfDeathEn} ${item.countryOfDeathCode} ${getMultilingualCountryAliases(item.countryOfDeathCode)} ${item.citizenshipCountry} ${item.citizenshipCountryEn} ${item.citizenshipCountryCode} ${getMultilingualCountryAliases(item.citizenshipCountryCode)}`,
+  );
+  const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
+  let score = 0;
+  for (const tok of tokens) {
+    if (matchesTokenInText(tok, countryHaystack)) {
+      score += 1;
     }
-    return haystack.includes(tok);
-  });
+  }
+  return score;
 }
 
 const MACRO_REGION_ORDER: MacroRegion[] = [
@@ -185,8 +209,8 @@ function categoryBadgeLabel(
     case "domestic-bereavement":
       return l(
         lang,
-        "After a death (Bereavement)",
-        "Après un décès (Succession & démarches)",
+        "After a death",
+        "Après un décès",
         "Nach einem Todesfall",
         "No engem Doudesfall",
       );
@@ -194,27 +218,52 @@ function categoryBadgeLabel(
       return l(
         lang,
         "Serious or terminal illness",
-        "Maladie grave ou en phase terminale",
+        "Maladie grave ou fin de vie",
         "Schwere Krankheit & Vorsorge",
         "Schwéier Krankheet & Virsuerg",
       );
     case "cross-border-bereavement":
       return l(
         lang,
-        "Cross-border bereavement",
-        "Décès transfrontalier",
-        "Grenzüberschreitender Todesfall",
-        "Grenzüberschreidenden Doudesfall",
+        "Cross-border · After a death",
+        "International · Après un décès",
+        "Grenzüberschreitend · Todesfall",
+        "Grenzüberschreidend · Doudesfall",
       );
     case "cross-border-terminal-illness":
       return l(
         lang,
-        "Cross-border terminal illness",
-        "Maladie grave transfrontalière",
-        "Grenzüberschreitende Vorsorge",
-        "Grenzüberschreidend Virsuerg",
+        "Cross-border · Serious illness",
+        "International · Maladie grave",
+        "Grenzüberschreitend · Vorsorge",
+        "Grenzüberschreidend · Virsuerg",
       );
   }
+}
+
+function languageBadgeInfo(
+  item: GuidanceCardItem,
+  siteLang: Lang,
+): { text: string; isNativeMatch: boolean } | null {
+  if (siteLang === "fr" || siteLang === "de") {
+    if (item.targetLang === siteLang) {
+      return {
+        text: siteLang === "fr" ? "Français" : "Deutsch",
+        isNativeMatch: true,
+      };
+    }
+    return {
+      text: l(siteLang, "English", "En anglais", "Auf Englisch", "Op Englesch"),
+      isNativeMatch: false,
+    };
+  }
+  if (item.localLabel) {
+    return {
+      text: `EN + ${item.localLabel}`,
+      isNativeMatch: false,
+    };
+  }
+  return null;
 }
 
 function matchesSituation(
@@ -242,6 +291,7 @@ function GuideCard({ item, lang }: { item: GuidanceCardItem; lang: Lang }) {
   const isTerminal =
     item.category === "terminal-illness-admin" ||
     item.category === "cross-border-terminal-illness";
+  const langBadge = languageBadgeInfo(item, lang);
 
   return (
     <Link
@@ -265,9 +315,15 @@ function GuideCard({ item, lang }: { item: GuidanceCardItem; lang: Lang }) {
             >
               {categoryBadgeLabel(item.category, lang)}
             </span>
-            {item.localLabel ? (
-              <span className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-white/80 text-calm-blue-700 border border-calm-blue-200">
-                EN + {item.localLabel}
+            {langBadge ? (
+              <span
+                className={`text-[11px] font-medium px-2 py-0.5 rounded-full border ${
+                  langBadge.isNativeMatch
+                    ? "bg-emerald-50/90 text-emerald-800 border-emerald-200 font-semibold"
+                    : "bg-white/80 text-calm-blue-600 border-calm-blue-200"
+                }`}
+              >
+                {langBadge.text}
               </span>
             ) : null}
           </div>
@@ -304,13 +360,12 @@ export default function GuidanceBrowser({
     [countries, selectedCountryCode],
   );
 
-  const quickCountries = useMemo(
-    () =>
-      QUICK_COUNTRY_CODES.map((code) =>
-        countries.find((c) => c.code === code),
-      ).filter((c): c is GuidanceCountryOption => Boolean(c)),
-    [countries],
-  );
+  const quickCountries = useMemo(() => {
+    const codes = QUICK_COUNTRY_CODES_BY_LANG[lang] ?? QUICK_COUNTRY_CODES_BY_LANG.en;
+    return codes
+      .map((code) => countries.find((c) => c.code === code))
+      .filter((c): c is GuidanceCountryOption => Boolean(c));
+  }, [countries, lang]);
 
   const normalizedQuery = foldSearchText(searchQuery);
 
@@ -336,19 +391,48 @@ export default function GuidanceBrowser({
       filteredItems
         .filter((i) => i.countryOfDeathCode === i.citizenshipCountryCode)
         .sort((a, b) => {
+          if (normalizedQuery) {
+            const scoreDiff =
+              countryMatchScore(b, normalizedQuery) -
+              countryMatchScore(a, normalizedQuery);
+            if (scoreDiff !== 0) return scoreDiff;
+          }
           const cmp = a.countryOfDeath.localeCompare(b.countryOfDeath, lang);
           if (cmp !== 0) return cmp;
           return a.category === "domestic-bereavement" ? -1 : 1;
         }),
-    [filteredItems, lang],
+    [filteredItems, lang, normalizedQuery],
   );
 
   const crossBorderItems = useMemo(
     () =>
-      filteredItems.filter(
-        (i) => i.countryOfDeathCode !== i.citizenshipCountryCode,
-      ),
-    [filteredItems],
+      filteredItems
+        .filter((i) => i.countryOfDeathCode !== i.citizenshipCountryCode)
+        .sort((a, b) => {
+          const aNative = a.targetLang === lang ? 0 : 1;
+          const bNative = b.targetLang === lang ? 0 : 1;
+          if (aNative !== bNative) return aNative - bNative;
+
+          if (normalizedQuery) {
+            const scoreDiff =
+              countryMatchScore(b, normalizedQuery) -
+              countryMatchScore(a, normalizedQuery);
+            if (scoreDiff !== 0) return scoreDiff;
+          }
+
+          if (selectedCountryCode !== "all") {
+            const aOutbound = a.countryOfDeathCode === selectedCountryCode ? 0 : 1;
+            const bOutbound = b.countryOfDeathCode === selectedCountryCode ? 0 : 1;
+            if (aOutbound !== bOutbound) return aOutbound - bOutbound;
+          }
+
+          const aBereavement = a.category.includes("bereavement") ? 0 : 1;
+          const bBereavement = b.category.includes("bereavement") ? 0 : 1;
+          if (aBereavement !== bBereavement) return aBereavement - bBereavement;
+
+          return a.countryOfDeath.localeCompare(b.countryOfDeath, lang);
+        }),
+    [filteredItems, lang, normalizedQuery, selectedCountryCode],
   );
 
   const hasActiveFilter =
@@ -390,10 +474,10 @@ export default function GuidanceBrowser({
               <option value="all">
                 {l(
                   lang,
-                  `All countries (${countries.length} jurisdictions)`,
-                  `Tous les pays (${countries.length} juridictions)`,
-                  `Alle Länder (${countries.length} Rechtsordnungen)`,
-                  `All Länner (${countries.length} Jurisdiktiounen)`,
+                  `All countries (${countries.length})`,
+                  `Tous les pays (${countries.length})`,
+                  `Alle Länder (${countries.length})`,
+                  `All Länner (${countries.length})`,
                 )}
               </option>
               {countries.map((item) => (
@@ -412,10 +496,10 @@ export default function GuidanceBrowser({
             >
               {l(
                 lang,
-                "Search by country, corridor, or topic",
-                "Rechercher par pays, corridor ou sujet",
-                "Suche nach Land, Korridor oder Thema",
-                "Sich no Land, Korridor oder Thema",
+                "Search by country or topic",
+                "Rechercher par pays ou par sujet",
+                "Suche nach Land oder Thema",
+                "Sich no Land oder Thema",
               )}
             </label>
             <div className="relative">
@@ -426,9 +510,9 @@ export default function GuidanceBrowser({
                 onChange={(event) => setSearchQuery(event.target.value)}
                 placeholder={l(
                   lang,
-                  "e.g. Luxembourg, France, UK Spain, probate, pension…",
-                  "ex. Luxembourg, France, Maroc, succession, pension…",
-                  "z. B. Luxemburg, Deutschland, Nachlass, Rente…",
+                  "e.g. United States, UK Spain, probate, pension…",
+                  "ex. France, Maroc, Royaume-Uni, succession, pension…",
+                  "z. B. Deutschland, Österreich, Nachlass, Rente…",
                   "z. B. Lëtzebuerg, Frankräich, Ierfschaft, Pensioun…",
                 )}
                 className="w-full px-4 py-3 rounded-xl border border-calm-blue-200 bg-white text-base text-calm-blue-800 placeholder:text-calm-blue-400 focus:outline-none focus:ring-2 focus:ring-calm-blue-400"
@@ -437,7 +521,7 @@ export default function GuidanceBrowser({
           </div>
         </div>
 
-        {/* Quick-Jump Country Chips */}
+        {/* Quick-Jump Country Chips (Major Global Jurisdictions) */}
         <div className="mt-4 flex flex-wrap items-center gap-2">
           <span className="text-xs font-medium text-calm-blue-500 mr-1">
             {l(
@@ -489,17 +573,17 @@ export default function GuidanceBrowser({
                   id: "all",
                   label: l(
                     lang,
-                    "All checklists",
+                    "All guides",
                     "Tous les guides",
-                    "Alle Checklisten",
-                    "All Checklëschten",
+                    "Alle Leitfäden",
+                    "All Guiden",
                   ),
                 },
                 {
                   id: "bereavement",
                   label: l(
                     lang,
-                    "After a death (Bereavement)",
+                    "After a death",
                     "Après un décès",
                     "Nach einem Todesfall",
                     "No engem Doudesfall",
@@ -519,10 +603,10 @@ export default function GuidanceBrowser({
                   id: "cross_border",
                   label: l(
                     lang,
-                    "Cross-border corridors only",
-                    "Corridors transfrontaliers",
-                    "Nur grenzüberschreitende Korridore",
-                    "Nëmme grenzüberschreidend Korridoren",
+                    "Cross-border (two countries)",
+                    "International (deux pays)",
+                    "Grenzüberschreitend (zwei Länder)",
+                    "Grenzüberschreidend (zwee Länner)",
                   ),
                 },
               ] as const
@@ -581,10 +665,10 @@ export default function GuidanceBrowser({
             <span className="text-sm text-calm-blue-600">
               {l(
                 lang,
-                `${filteredItems.length} published checklist${filteredItems.length === 1 ? "" : "s"}`,
+                `${filteredItems.length} published guide${filteredItems.length === 1 ? "" : "s"}`,
                 `${filteredItems.length} guide${filteredItems.length === 1 ? "" : "s"} publié${filteredItems.length === 1 ? "" : "s"}`,
-                `${filteredItems.length} veröffentlichte Checkliste${filteredItems.length === 1 ? "" : "n"}`,
-                `${filteredItems.length} publizéiert Checklëscht${filteredItems.length === 1 ? "" : "en"}`,
+                `${filteredItems.length} veröffentlichte Leitfäden`,
+                `${filteredItems.length} publizéiert Guiden`,
               )}
             </span>
           </div>
@@ -594,10 +678,10 @@ export default function GuidanceBrowser({
               <h3 className="text-lg font-semibold text-calm-blue-800 mb-3">
                 {l(
                   lang,
-                  `National Administrative Checklists for ${selectedCountry.label}`,
-                  `Guides administratifs nationaux — ${selectedCountry.label}`,
-                  `Nationale Behörden-Checklisten — ${selectedCountry.label}`,
-                  `National administrativ Checklëschten — ${selectedCountry.label}`,
+                  `National Checklists for ${selectedCountry.label}`,
+                  `Guides nationaux — ${selectedCountry.label}`,
+                  `Nationale Checklisten — ${selectedCountry.label}`,
+                  `National Checklëschten — ${selectedCountry.label}`,
                 )}
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -612,10 +696,10 @@ export default function GuidanceBrowser({
             <h3 className="text-lg font-semibold text-calm-blue-800 mb-2">
               {l(
                 lang,
-                `Cross-Border Corridors Involving ${selectedCountry.label}`,
-                `Corridors transfrontaliers impliquant ${selectedCountry.label}`,
-                `Grenzüberschreitende Korridore mit Bezug zu ${selectedCountry.label}`,
-                `Grenzüberschreidend Korridore mat Bezug op ${selectedCountry.label}`,
+                `Cross-Border Guides Involving ${selectedCountry.label}`,
+                `Guides internationaux impliquant ${selectedCountry.label}`,
+                `Grenzüberschreitende Leitfäden mit Bezug zu ${selectedCountry.label}`,
+                `Grenzüberschreidend Guide mat Bezug op ${selectedCountry.label}`,
               )}
             </h3>
             {crossBorderItems.length > 0 ? (
@@ -629,8 +713,8 @@ export default function GuidanceBrowser({
                 <p className="text-sm text-calm-blue-700 leading-relaxed mb-3">
                   {l(
                     lang,
-                    `Need cross-border guidance connecting ${selectedCountry.label} with another country (repatriation, foreign death certificate recognition, or cross-border estate settlement)? Start with the ${selectedCountry.label} checklist above or ask Clarvia directly about your two-country situation.`,
-                    `Vous avez besoin d'informations transfrontalières reliant ${selectedCountry.label} à un autre pays (rapatriement, reconnaissance d'acte de décès étranger ou succession internationale) ? Consultez le guide national ci-dessus ou posez votre question à Ask Clarvia.`,
+                    `Need cross-border guidance connecting ${selectedCountry.label} with another country (repatriation, foreign death certificate recognition, or international estate settlement)? Start with the ${selectedCountry.label} checklist above or ask Clarvia directly about your two-country situation.`,
+                    `Vous avez besoin d'informations internationales reliant ${selectedCountry.label} à un autre pays (rapatriement, reconnaissance d'acte de décès étranger ou succession internationale) ? Consultez le guide national ci-dessus ou posez votre question à Ask Clarvia.`,
                     `Benötigen Sie grenzüberschreitende Orientierung zwischen ${selectedCountry.label} und einem anderen Staat (Überführung, Anerkennung ausländischer Sterbeurkunden oder internationaler Nachlass)? Nutzen Sie die obige nationale Checkliste oder wenden Sie sich direkt an Ask Clarvia.`,
                     `Braucht Dir grenzüberschreidend Orientéierung tëscht ${selectedCountry.label} an engem anere Land? Kuckt d'national Checklëscht hei uewen oder stellt Är Fro direkt un Ask Clarvia.`,
                   )}
@@ -655,10 +739,10 @@ export default function GuidanceBrowser({
             >
               {l(
                 lang,
-                `Matching Checklists (${filteredItems.length})`,
+                `Matching Guides (${filteredItems.length})`,
                 `Guides correspondants (${filteredItems.length})`,
-                `Passende Checklisten (${filteredItems.length})`,
-                `Passend Checklëschten (${filteredItems.length})`,
+                `Passende Leitfäden (${filteredItems.length})`,
+                `Passend Guiden (${filteredItems.length})`,
               )}
             </h2>
           </div>
@@ -688,10 +772,10 @@ export default function GuidanceBrowser({
                   <h3 className="text-lg font-semibold text-calm-blue-800 mb-3">
                     {l(
                       lang,
-                      `Single-Country Checklists (${singleCountryItems.length})`,
-                      `Guides nationaux par pays (${singleCountryItems.length})`,
-                      `Nationale Länder-Checklisten (${singleCountryItems.length})`,
-                      `National Länner-Checklëschten (${singleCountryItems.length})`,
+                      `National Checklists (${singleCountryItems.length})`,
+                      `Guides nationaux (${singleCountryItems.length})`,
+                      `Nationale Checklisten (${singleCountryItems.length})`,
+                      `National Checklëschten (${singleCountryItems.length})`,
                     )}
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -707,10 +791,10 @@ export default function GuidanceBrowser({
                   <h3 className="text-lg font-semibold text-calm-blue-800 mb-3">
                     {l(
                       lang,
-                      `Cross-Border Corridors (${crossBorderItems.length})`,
-                      `Corridors transfrontaliers (${crossBorderItems.length})`,
-                      `Grenzüberschreitende Korridore (${crossBorderItems.length})`,
-                      `Grenzüberschreidend Korridoren (${crossBorderItems.length})`,
+                      `Cross-Border Guides (${crossBorderItems.length})`,
+                      `Guides internationaux (${crossBorderItems.length})`,
+                      `Grenzüberschreitende Leitfäden (${crossBorderItems.length})`,
+                      `Grenzüberschreidend Guiden (${crossBorderItems.length})`,
                     )}
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -737,18 +821,18 @@ export default function GuidanceBrowser({
             >
               {l(
                 lang,
-                "Browse All 196 Jurisdictions & Cross-Border Corridors by Region",
-                "Parcourir les 196 juridictions et corridors transfrontaliers par région",
-                "Alle 196 Rechtsordnungen & grenzüberschreitenden Korridore nach Region",
-                "All 196 Jurisdiktiounen & grenzüberschreidend Korridoren no Regioun",
+                "Browse All 196 Countries & Cross-Border Guides by Region",
+                "Parcourir les 196 pays et guides internationaux par région",
+                "Alle 196 Länder & grenzüberschreitenden Leitfäden nach Region",
+                "All 196 Länner & grenzüberschreidend Guiden no Regioun",
               )}
             </h2>
             <p className="text-sm text-calm-blue-600 leading-relaxed">
               {l(
                 lang,
-                "Select a country above for instant access, or expand a region below to browse national hub checklists and bilateral cross-border corridors.",
-                "Sélectionnez un pays ci-dessus pour un accès immédiat, ou ouvrez une région ci-dessous pour parcourir les guides nationaux et les corridors bilatéraux.",
-                "Wählen Sie oben ein Land für den Direktzugriff oder klappen Sie unten eine Region auf, um nationale Checklisten und bilaterale Korridore zu durchsuchen.",
+                "Select a country above for instant access, or expand a region below to browse national checklists and two-country cross-border guides.",
+                "Sélectionnez un pays ci-dessus pour un accès immédiat, ou ouvrez une région ci-dessous pour parcourir les guides nationaux et internationaux.",
+                "Wählen Sie oben ein Land für den Direktzugriff oder klappen Sie unten eine Region auf, um nationale Checklisten und grenzüberschreitende Leitfäden zu durchsuchen.",
                 "Wielt uewen e Land fir den direkten Zougrëff oder klappt ënnen eng Regioun op.",
               )}
             </p>
@@ -784,10 +868,10 @@ export default function GuidanceBrowser({
                     <p className="text-xs sm:text-sm text-calm-blue-600 mt-0.5">
                       {l(
                         lang,
-                        `${regionCountryCount} countries (${regionSingle.length} national hub checklists + ${regionCorridors.length} cross-border corridors)`,
-                        `${regionCountryCount} pays (${regionSingle.length} guides nationaux + ${regionCorridors.length} corridors transfrontaliers)`,
-                        `${regionCountryCount} Länder (${regionSingle.length} nationale Checklisten + ${regionCorridors.length} grenzüberschreitende Korridore)`,
-                        `${regionCountryCount} Länner (${regionSingle.length} national Checklëschten + ${regionCorridors.length} grenzüberschreidend Korridoren)`,
+                        `${regionCountryCount} countries (${regionSingle.length} national checklists + ${regionCorridors.length} cross-border guides)`,
+                        `${regionCountryCount} pays (${regionSingle.length} guides nationaux + ${regionCorridors.length} guides internationaux)`,
+                        `${regionCountryCount} Länder (${regionSingle.length} nationale Checklisten + ${regionCorridors.length} grenzüberschreitende Leitfäden)`,
+                        `${regionCountryCount} Länner (${regionSingle.length} national Checklëschten + ${regionCorridors.length} grenzüberschreidend Guiden)`,
                       )}
                     </p>
                   </div>
@@ -820,10 +904,10 @@ export default function GuidanceBrowser({
                       <h4 className="text-base font-semibold text-calm-blue-800 mb-3">
                         {l(
                           lang,
-                          `Cross-Border Corridors (${regionCorridors.length})`,
-                          `Corridors transfrontaliers (${regionCorridors.length})`,
-                          `Grenzüberschreitende Korridore (${regionCorridors.length})`,
-                          `Grenzüberschreidend Korridoren (${regionCorridors.length})`,
+                          `Cross-Border Guides (${regionCorridors.length})`,
+                          `Guides internationaux (${regionCorridors.length})`,
+                          `Grenzüberschreitende Leitfäden (${regionCorridors.length})`,
+                          `Grenzüberschreidend Guiden (${regionCorridors.length})`,
                         )}
                       </h4>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
