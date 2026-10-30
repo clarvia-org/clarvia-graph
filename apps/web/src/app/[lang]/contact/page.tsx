@@ -164,3 +164,5 @@ export default async function ContactPage({
     </>
   );
 }
+export const dynamicParams = false;
+export { generateSiteLangStaticParams as generateStaticParams } from '@/lib/i18n';

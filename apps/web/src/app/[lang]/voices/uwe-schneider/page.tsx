@@ -74,3 +74,5 @@ export default async function CommentaryPage({
     </>
   );
 }
+export const dynamicParams = false;
+export { generateSiteLangStaticParams as generateStaticParams } from '@/lib/i18n';

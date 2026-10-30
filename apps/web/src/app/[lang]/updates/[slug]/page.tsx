@@ -18,8 +18,12 @@ function isFeaturedSlug(value: string): value is FeaturedUpdateSlug {
   return (FEATURED_UPDATE_SLUGS as readonly string[]).includes(value);
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return FEATURED_UPDATE_SLUGS.map((slug) => ({ slug }));
+  return LANGUAGES.flatMap((lang) =>
+    FEATURED_UPDATE_SLUGS.map((slug) => ({ lang, slug })),
+  );
 }
 
 export async function generateMetadata({

@@ -62,3 +62,5 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
     </>
   );
 }
+export const dynamicParams = false;
+export { generateSiteLangStaticParams as generateStaticParams } from '@/lib/i18n';

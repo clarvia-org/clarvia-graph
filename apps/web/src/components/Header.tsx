@@ -13,7 +13,12 @@ const LINK_CLASS =
 function switchLangPath(pathname: string, nextLang: Lang): string {
   const parts = pathname.split("/").filter(Boolean);
   if (parts.length === 0) return `/${nextLang}`;
-  const rest = LANGUAGES.includes(parts[0] as Lang) ? parts.slice(1) : parts;
+  const isFirstLocale =
+    LANGUAGES.includes(parts[0] as Lang) || /^[a-z]{2}$/.test(parts[0]);
+  const rest = isFirstLocale ? parts.slice(1) : parts;
+  if (rest[0] === "guide" && nextLang !== "en") {
+    return `/${nextLang}/guidance`;
+  }
   return rest.length ? `/${nextLang}/${rest.join("/")}` : `/${nextLang}`;
 }
 

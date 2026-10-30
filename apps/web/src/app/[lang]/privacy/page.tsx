@@ -56,3 +56,5 @@ export async function generateMetadata({
 export default function Page() {
   return <PrivacyPage />;
 }
+export const dynamicParams = false;
+export { generateSiteLangStaticParams as generateStaticParams } from '@/lib/i18n';

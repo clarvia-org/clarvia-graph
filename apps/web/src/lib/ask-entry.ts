@@ -45,7 +45,8 @@ const ALIASES: Record<string, AskLocale> = {
 };
 
 export const MIN_QUESTION_CHARS = 20;
-export const PLACE_HINT_RE = /\b(in|at|from|near|within)\s+\S{2,}|\blive[sd]?\s+in\b/i;
+export const PLACE_HINT_RE =
+  /\b(in|at|from|near|within|en|au|aux|dans|em|no|na|w|we|din|da|di|a|aus|bei|nach|uit|van)\s+\S{2,}|(?:^|\s)(?:у|в|în)\s+\S{2,}|\blive[sd]?\s+in\b|['’](?:da|de|ta|te)\b/i;
 
 const SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$/;
 

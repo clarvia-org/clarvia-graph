@@ -226,3 +226,5 @@ export default async function ContributePage({ params }: { params: Promise<{ lan
     </>
   );
 }
+export const dynamicParams = false;
+export { generateSiteLangStaticParams as generateStaticParams } from '@/lib/i18n';

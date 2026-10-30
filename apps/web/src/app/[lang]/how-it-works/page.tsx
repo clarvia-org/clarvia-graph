@@ -263,3 +263,5 @@ export default async function HowItWorksPage({ params }: { params: Promise<{ lan
     </>
   );
 }
+export const dynamicParams = false;
+export { generateSiteLangStaticParams as generateStaticParams } from '@/lib/i18n';
