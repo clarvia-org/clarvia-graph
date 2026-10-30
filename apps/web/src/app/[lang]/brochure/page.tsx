@@ -21,3 +21,5 @@ export default async function BrochurePage({ params }: { params: Promise<{ lang:
   const { lang } = await params;
   redirect(brochureUrls[lang as Lang] ?? brochureUrls.en);
 }
+export const dynamicParams = false;
+export { generateSiteLangStaticParams as generateStaticParams } from '@/lib/i18n';

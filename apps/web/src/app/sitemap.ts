@@ -1,6 +1,11 @@
 import { MetadataRoute } from "next";
 import { LANGUAGES, hreflangLanguages } from "@/lib/i18n";
 import { GUIDES, GUIDANCE_COUNTRY } from "@/content/guidance";
+import {
+  corridorGuideHreflangAlternates,
+  corridorGuidePath,
+  publishedCorridorGuides,
+} from "@/content/corridor-guides";
 import { FEATURED_UPDATE_SLUGS } from "@/content/featured-updates";
 
 const BASE_URL = "https://clarvia.org";
@@ -59,6 +64,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  for (const corridorGuide of publishedCorridorGuides("en")) {
+    const languages = corridorGuideHreflangAlternates(corridorGuide);
+    for (const guideLang of corridorGuide.locales) {
+      entries.push({
+        url: `${BASE_URL}${corridorGuidePath(corridorGuide.slug, guideLang)}`,
+        lastModified: new Date(corridorGuide.lastReviewed),
+        changeFrequency: "monthly",
+        priority: 0.8,
+        ...(languages ? { alternates: { languages } } : {}),
+      });
+    }
+  }
+
   for (const slug of FEATURED_UPDATE_SLUGS) {
     for (const lang of LANGUAGES) {
       entries.push({
@@ -100,4 +118,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return entries;
 }
-

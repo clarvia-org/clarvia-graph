@@ -140,3 +140,5 @@ export default async function PartnersPage({
     </>
   );
 }
+export const dynamicParams = false;
+export { generateSiteLangStaticParams as generateStaticParams } from '@/lib/i18n';

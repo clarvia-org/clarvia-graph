@@ -17,8 +17,16 @@ import {
 } from "@/content/guidance";
 import { guideBodyForLanguage } from "@/content/guide-bodies";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return GUIDES.map((guide) => ({ country: GUIDANCE_COUNTRY.code, slug: guide.slug }));
+  return LANGUAGES.flatMap((lang) =>
+    GUIDES.map((guide) => ({
+      lang,
+      country: GUIDANCE_COUNTRY.code,
+      slug: guide.slug,
+    })),
+  );
 }
 
 export async function generateMetadata({

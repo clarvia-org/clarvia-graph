@@ -31,12 +31,6 @@ const META: Record<Lang, { title: string; description: string }> = {
   },
 };
 
-export async function generateStaticParams() {
-  return LANGUAGES.map((lang) => ({ lang }));
-}
-
-export const dynamicParams = false;
-
 export async function generateMetadata({
   params,
 }: {
@@ -69,6 +63,7 @@ export default async function LangLayout({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
+  const siteLang = (LANGUAGES.includes(lang as Lang) ? lang : "en") as Lang;
 
   return (
     <>
@@ -177,7 +172,7 @@ export default async function LangLayout({
 
       {children}
       <AnalyticsRouteTracker />
-      <CookieConsent lang={lang as Lang} />
+      <CookieConsent lang={siteLang} />
     </>
   );
 }

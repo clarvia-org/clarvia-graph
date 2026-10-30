@@ -21,6 +21,10 @@ export function isLang(value: string): value is Lang {
   return (LANGUAGES as readonly string[]).includes(value);
 }
 
+export function generateSiteLangStaticParams(): Array<{ lang: Lang }> {
+  return LANGUAGES.map((lang) => ({ lang }));
+}
+
 /** Google Ads / HTML language code for a site prefix (`lu` → `lb`). */
 export function adsLanguageCode(lang: Lang): AdsLanguage {
   return lang === "lu" ? "lb" : lang;
