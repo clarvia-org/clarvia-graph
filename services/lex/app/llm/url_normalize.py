@@ -57,6 +57,13 @@ def _strip_www(host: str) -> str:
     return h[4:] if h.startswith("www.") and len(h) > 4 else h
 
 
+def is_blog_subdomain(url_or_host: str) -> bool:
+    """Return True if the URL or hostname is on a blog.* subdomain."""
+    host = _hostname(url_or_host) if "://" in url_or_host else url_or_host
+    stripped = _strip_www(host)
+    return stripped.startswith("blog.") and len(stripped) > 5
+
+
 def _canonical_article_host(host: str) -> str:
     """Normalise host across www and explicit known domain aliases."""
     stripped = _strip_www(host)
@@ -81,6 +88,10 @@ def same_site_host(left: str, right: str) -> bool:
     a = left.lower().rstrip(".")
     b = right.lower().rstrip(".")
     if not a or not b:
+        return False
+    if _strip_www(a) != _strip_www(b) and (
+        is_blog_subdomain(a) or is_blog_subdomain(b)
+    ):
         return False
     return a == b or a.endswith("." + b) or b.endswith("." + a)
 
@@ -162,17 +173,23 @@ def match_search_url(  # noqa: PLR0911, PLR0912
     scheme = (parsed_cited.scheme or "").lower()
     if scheme not in {"http", "https"}:
         return None
+    cited_host = _hostname(normalised_cited)
+    if not cited_host or is_blog_subdomain(cited_host):
+        return None
 
-    normalised_search = [normalize_source_url(url) for url in search_urls]
+    normalised_search = [
+        normalize_source_url(url)
+        for url in search_urls
+        if not is_blog_subdomain(_hostname(url))
+    ]
+    if not normalised_search:
+        return None
     cited_path = parsed_cited.path.rstrip("/") or "/"
     is_bare_homepage = cited_path == "/" and not parsed_cited.query
     key = url_compare_key(normalised_cited)
     exact = [url for url in normalised_search if url_compare_key(url) == key]
     if exact and not is_bare_homepage:
         return prefer_https_url(exact)
-    cited_host = _hostname(normalised_cited)
-    if not cited_host:
-        return None
     same_site = [
         url for url in normalised_search if same_site_host(_hostname(url), cited_host)
     ]
@@ -332,6 +349,7 @@ def is_http_or_https_url(url: str) -> bool:
 
 
 __all__ = [
+    "is_blog_subdomain",
     "same_site_host",
     "url_compare_key",
     "source_dedup_key",

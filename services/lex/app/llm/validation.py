@@ -13,6 +13,7 @@ from collections.abc import Collection
 from app.llm.schema import LexResponse
 from app.llm.url_normalize import (
     find_email_domain_typo,
+    is_blog_subdomain,
     match_search_url,
     source_dedup_key,
 )
@@ -164,9 +165,13 @@ def _validate_citations(response: LexResponse) -> None:
             "A citation marker has no matching source.",
         )
 
-    cited_by_contact = {contact.source_id for contact in response.contacts}
     seen_dedup_keys: set[str] = set()
     for source in response.sources:
+        _require(
+            not is_blog_subdomain(source.url),
+            "unsupported_source_url",
+            "Blog subdomains are not allowed as official sources.",
+        )
         dedup_key = source_dedup_key(source.url)
         _require(
             dedup_key not in seen_dedup_keys,
@@ -176,9 +181,9 @@ def _validate_citations(response: LexResponse) -> None:
         seen_dedup_keys.add(dedup_key)
     for source in response.sources:
         _require(
-            source.id in marker_ids or source.id in cited_by_contact,
+            source.id in marker_ids,
             "uncited_source",
-            "A source is neither cited in the body nor used by a contact.",
+            "Every source must be cited as [id] in body_markdown.",
         )
 
 

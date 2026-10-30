@@ -552,3 +552,146 @@ def test_pipeline_deduplicates_alias_sources_and_repairs_email_typos() -> None:
         result.response.sources[0].url
         == "https://service-public.fr/particuliers/vosdroits/F16507"
     )
+
+
+def test_pipeline_reconciles_contacts_and_strips_redundant_parentheticals() -> None:
+    assert not same_site_host("blog.registrocivil.org.br", "registrocivil.org.br")
+    assert (
+        match_search_url(
+            "https://blog.registrocivil.org.br/post",
+            ["https://blog.registrocivil.org.br/post"],
+        )
+        is None
+    )
+    assert (
+        match_search_url(
+            "https://registrocivil.org.br/portal",
+            [
+                "https://blog.registrocivil.org.br/portal",
+                "https://www.registrocivil.org.br/portal",
+            ],
+        )
+        == "https://www.registrocivil.org.br/portal"
+    )
+
+    base = make_answer_response()
+    src1 = base.sources[0].model_copy(
+        update={"id": 1, "url": "https://www.exteriores.gob.es/es/Servicios"}
+    )
+    src2 = base.sources[0].model_copy(
+        update={"id": 2, "url": "https://www.notar.at/informationen"}
+    )
+    contact1 = base.contacts[0].model_copy(
+        update={
+            "id": 1,
+            "name": "Ministerio de Asuntos Exteriores, Unión Europea y Cooperación",
+            "source_id": 1,
+            "website": "https://www.exteriores.gob.es/es/Servicios",
+        }
+    )
+    contact2 = base.contacts[0].model_copy(
+        update={
+            "id": 2,
+            "name": "Österreichische Notariatskammer",
+            "source_id": 2,
+            "website": "https://www.notar.at/informationen",
+        }
+    )
+    raw = base.model_copy(
+        update={
+            "body_markdown": (
+                "Contact the Ministerio de Asuntos Exteriores [1]. "
+                "See die österreichische Notariatskammer "
+                "(Österreichische Notariatskammer) "
+                "and ulusal sosyal güvenlik kurumu (Sosyal Güvenlik Kurumu) "
+                "or Instituto da Segurança Social (Segurança Social).\n\nLex."
+            ),
+            "sources": [src1, src2],
+            "contacts": [contact1, contact2],
+        }
+    )
+    with pytest.raises(LexValidationError) as exc:
+        validate_lex_response(raw)
+    assert exc.value.code == "uncited_source"
+
+    allowed = frozenset(
+        {
+            "https://www.exteriores.gob.es/es/Servicios",
+            "https://www.notar.at/informationen",
+        }
+    )
+    llm = FakeLlmAdapter(
+        responses=[generation_result_from_response(raw, source_urls=allowed)]
+    )
+    result = run_model_pipeline(
+        llm,
+        system_prompt="prompt",
+        runtime_envelope="envelope",
+    )
+    body = result.response.body_markdown
+    assert "Organisations and contacts" not in body
+    assert "(Österreichische Notariatskammer)" not in body
+    assert "die Österreichische Notariatskammer" in body
+    assert "ulusal Sosyal Güvenlik Kurumu" in body
+    assert "(Segurança Social)" not in body
+    assert "Instituto da Segurança Social" in body
+    assert "[2]" in body
+    assert result.response.contacts[0].name == "Ministerio de Asuntos Exteriores"
+    validate_lex_response(
+        result.response,
+        web_search_source_urls=allowed,
+        web_search_calls=1,
+    )
+
+    # Non-redundant parentheticals are preserved, diacritic-folded contact
+    # prefixes reconcile, and uncited non-contact sources get cited before Lex.
+    src3 = base.sources[0].model_copy(
+        update={"id": 3, "url": "https://www.justiz.gv.at/service"}
+    )
+    contact_diacritic = contact1.model_copy(
+        update={
+            "id": 1,
+            "name": "Ministério da Justiça, Direção-Geral",
+            "source_id": 1,
+        }
+    )
+    contact_missing = contact2.model_copy(
+        update={
+            "id": 2,
+            "name": "Portal Gov",
+            "source_id": 2,
+        }
+    )
+    raw2 = base.model_copy(
+        update={
+            "body_markdown": (
+                "Contact the Ministerio da Justica (MJ) [1].\n\nLex."
+            ),
+            "sources": [src1, src2, src3],
+            "contacts": [contact_diacritic, contact_missing],
+        }
+    )
+    allowed2 = frozenset(
+        {
+            "https://www.exteriores.gob.es/es/Servicios",
+            "https://www.notar.at/informationen",
+            "https://www.justiz.gv.at/service",
+        }
+    )
+    res2 = run_model_pipeline(
+        FakeLlmAdapter(
+            responses=[generation_result_from_response(raw2, source_urls=allowed2)]
+        ),
+        system_prompt="prompt",
+        runtime_envelope="envelope",
+    )
+    assert "(MJ)" in res2.response.body_markdown
+    assert res2.response.contacts[0].name == "Ministerio da Justica"
+    assert "Portal Gov" in res2.response.body_markdown
+    assert "[2]" in res2.response.body_markdown
+    assert "[3]" in res2.response.body_markdown
+    validate_lex_response(
+        res2.response,
+        web_search_source_urls=allowed2,
+        web_search_calls=1,
+    )
