@@ -257,12 +257,10 @@ function languageBadgeInfo(
         isNativeMatch: true,
       };
     }
-    if (siteLang === "fr" || siteLang === "de") {
-      return {
-        text: l(siteLang, "English", "En anglais", "Auf Englisch", "Op Englesch"),
-        isNativeMatch: false,
-      };
-    }
+    return {
+      text: l(siteLang, "English", "En anglais", "Auf Englisch", "Op Englesch"),
+      isNativeMatch: false,
+    };
   }
   if (item.localLabel) {
     return {
