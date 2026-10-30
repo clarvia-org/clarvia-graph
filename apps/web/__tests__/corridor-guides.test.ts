@@ -89,17 +89,10 @@ describe("corridor-guides (full 250-guide dual-locale dataset + Wave 1 live prev
     }
   });
 
-  it("publishes the Wave 1 preview (1 English-only + 1 Bilingual EN/ES = 3 pages) in sitemap.xml with exact hreflang alternates", () => {
+  it("publishes all 250 guides (390 localized pages: 250 EN + 140 L1) in sitemap.xml with exact hreflang alternates", () => {
     const published = publishedCorridorGuides("en");
-    expect(published.map((g) => g.slug)).toEqual([
-      "mexico-us-bereavement-checklist",
-      "uae-india-bereavement-checklist",
-    ]);
-    expect(publishedCorridorGuideStaticParams()).toEqual([
-      { lang: "en", slug: "mexico-us-bereavement-checklist" },
-      { lang: "es", slug: "mexico-us-bereavement-checklist" },
-      { lang: "en", slug: "uae-india-bereavement-checklist" },
-    ]);
+    expect(published.length).toBe(250);
+    expect(publishedCorridorGuideStaticParams().length).toBe(390);
 
     const entries = sitemap();
     const byUrl = new Map(entries.map((e) => [e.url, e]));

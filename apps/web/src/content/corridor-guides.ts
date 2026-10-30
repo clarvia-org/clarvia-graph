@@ -5,7 +5,7 @@ import rawGuides from "./corridor-guides.json";
  * - Wave 1: 2 preview guides (1 English-only + 1 Bilingual EN/ES = 3 pages) for live visual review
  * - Wave 2: Full 250 guides (250 EN + 140 L1 = 390 pages)
  */
-export const MAX_PUBLISHED_WAVE = 1;
+export const MAX_PUBLISHED_WAVE = 2;
 
 export type CorridorGuideStep = {
   stepNumber: number;
