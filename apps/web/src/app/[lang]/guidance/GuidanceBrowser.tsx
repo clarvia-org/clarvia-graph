@@ -40,6 +40,105 @@ type SituationFilter = "all" | "bereavement" | "terminal" | "cross_border";
 
 const QUICK_COUNTRY_CODES = ["LU", "FR", "DE", "BE", "PT", "GB", "US", "ES"] as const;
 
+export const COUNTRY_SEARCH_ALIASES: Record<string, string> = {
+  AE: "uae u.a.e. united arab emirates dubai abu dhabi emirats arabes unis vereinigte arabische emirate",
+  AT: "austria autriche osterreich",
+  BE: "belgium belgique belgien belsch",
+  CH: "switzerland suisse schweiz confederation helvetique",
+  CI: "cote d'ivoire cote divoire ivory coast elfenbeinkuste",
+  CD: "drc dr congo democratic republic of the congo congo-kinshasa rdc",
+  CG: "republic of the congo congo-brazzaville",
+  CV: "cape verde cabo verde cap-vert kap verde",
+  CZ: "czechia czech republic tchequie tschechien",
+  DE: "germany deutschland allemagne daitschland",
+  DK: "denmark danemark danemark",
+  ES: "spain espagne spanien spuenien",
+  FR: "france frankreich frankraich",
+  GB: "uk u.k. united kingdom great britain britain england scotland wales northern ireland royaume-uni grande-bretagne angleterre grossbritannien",
+  GR: "greece grece griechenland",
+  IT: "italy italie italien",
+  KP: "north korea dprk coree du nord nordkorea",
+  KR: "south korea rok republic of korea coree du sud sudkorea",
+  LU: "luxembourg luxemburg letzebuerg",
+  MA: "morocco maroc marokko",
+  MK: "north macedonia macedonia macedoine du nord nordmazedonien",
+  MM: "myanmar burma birmanie",
+  NL: "holland netherlands the netherlands pays-bas niederlande",
+  NZ: "new zealand nz nouvelle-zelande neuseeland",
+  PL: "poland pologne polen",
+  PT: "portugal",
+  RO: "romania roumanie rumanien",
+  RU: "russia russian federation russie russland",
+  SA: "saudi arabia ksa arabie saoudite saudi-arabien",
+  SE: "sweden suede schweden",
+  SZ: "eswatini swaziland",
+  TL: "timor-leste east timor timor oriental osttimor",
+  TR: "turkey turkiye turquie turkei",
+  TW: "taiwan roc",
+  UA: "ukraine",
+  US: "usa u.s. u.s.a. united states united states of america america etats-unis etats unis vereinigte staaten amerika",
+  VN: "vietnam viet nam",
+  ZA: "south africa rsa afrique du sud sudafrika",
+};
+
+const DISPLAY_NAMES_CACHE: Record<string, string> = {};
+const INTL_LOCALES = ["en", "fr", "de"] as const;
+const INTL_FORMATTERS =
+  typeof Intl !== "undefined" && typeof Intl.DisplayNames !== "undefined"
+    ? INTL_LOCALES.map(
+        (loc) => new Intl.DisplayNames([loc], { type: "region" }),
+      )
+    : [];
+
+function getMultilingualCountryAliases(code: string): string {
+  const cached = DISPLAY_NAMES_CACHE[code];
+  if (cached !== undefined) return cached;
+  const parts: string[] = [COUNTRY_SEARCH_ALIASES[code] ?? ""];
+  for (const fmt of INTL_FORMATTERS) {
+    try {
+      const name = fmt.of(code);
+      if (name && name !== code) parts.push(name);
+    } catch {
+      // Ignore unsupported region code
+    }
+  }
+  const built = foldSearchText(parts.join(" "));
+  DISPLAY_NAMES_CACHE[code] = built;
+  return built;
+}
+
+export function foldSearchText(value: string): string {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[’‘`]/g, "'")
+    .toLowerCase()
+    .trim();
+}
+
+export function matchesGuidanceSearch(
+  item: GuidanceCardItem,
+  rawQuery: string,
+): boolean {
+  const normalizedQuery = foldSearchText(rawQuery);
+  if (!normalizedQuery) return true;
+
+  const haystack = foldSearchText(
+    `${item.countryOfDeath} ${item.countryOfDeathEn} ${item.countryOfDeathCode} ${getMultilingualCountryAliases(item.countryOfDeathCode)} ${item.citizenshipCountry} ${item.citizenshipCountryEn} ${item.citizenshipCountryCode} ${getMultilingualCountryAliases(item.citizenshipCountryCode)} ${item.title} ${item.cardSummary}`,
+  );
+
+  const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
+  return tokens.every((tok) => {
+    if (tok.length <= 3) {
+      const escaped = tok.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp(`(?:^|[^a-z0-9])${escaped}(?:$|[^a-z0-9])`).test(
+        haystack,
+      );
+    }
+    return haystack.includes(tok);
+  });
+}
+
 const MACRO_REGION_ORDER: MacroRegion[] = [
   "europe",
   "americas",
@@ -213,7 +312,7 @@ export default function GuidanceBrowser({
     [countries],
   );
 
-  const normalizedQuery = searchQuery.trim().toLowerCase();
+  const normalizedQuery = foldSearchText(searchQuery);
 
   const filteredItems = useMemo(() => {
     return items.filter((item) => {
@@ -228,9 +327,7 @@ export default function GuidanceBrowser({
 
       if (!normalizedQuery) return true;
 
-      const haystack = `${item.countryOfDeath} ${item.countryOfDeathEn} ${item.countryOfDeathCode} ${item.citizenshipCountry} ${item.citizenshipCountryEn} ${item.citizenshipCountryCode} ${item.title} ${item.cardSummary}`.toLowerCase();
-      const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
-      return tokens.every((tok) => haystack.includes(tok));
+      return matchesGuidanceSearch(item, normalizedQuery);
     });
   }, [items, normalizedQuery, selectedCountryCode, situation]);
 
@@ -357,6 +454,7 @@ export default function GuidanceBrowser({
               <button
                 key={c.code}
                 type="button"
+                aria-pressed={active}
                 onClick={() =>
                   setSelectedCountryCode(active ? "all" : c.code)
                 }
@@ -434,6 +532,7 @@ export default function GuidanceBrowser({
                 <button
                   key={tab.id}
                   type="button"
+                  aria-pressed={active}
                   onClick={() => setSituation(tab.id)}
                   className={`text-xs sm:text-sm font-medium px-3.5 py-1.5 rounded-full border transition-colors ${
                     active

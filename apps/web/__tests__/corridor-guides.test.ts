@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
 import sitemap from "@/app/sitemap";
+import {
+  matchesGuidanceSearch,
+  type GuidanceCardItem,
+} from "@/app/[lang]/guidance/GuidanceBrowser";
 import { GUIDE_UI_COPY } from "@/content/corridor-guide-ui";
 import {
   allCorridorGuides,
@@ -222,5 +226,37 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
         corridor.citizenshipCountryCode,
       ]);
     }
+  });
+
+  it("folds accents and matches multilingual country aliases in GuidanceBrowser search", () => {
+    const cards: GuidanceCardItem[] = publishedCorridorGuides("en").map((g) => ({
+      slug: g.slug,
+      href: corridorGuidePath(g.slug, "en"),
+      targetLang: "en",
+      localLabel: null,
+      category: g.category,
+      macroRegion: "europe",
+      countryOfDeath: g.countryOfDeath,
+      countryOfDeathEn: g.countryOfDeath,
+      countryOfDeathCode: g.countryOfDeathCode,
+      citizenshipCountry: g.citizenshipCountry,
+      citizenshipCountryEn: g.citizenshipCountry,
+      citizenshipCountryCode: g.citizenshipCountryCode,
+      title: g.title,
+      cardSummary: g.cardSummary,
+    }));
+
+    const search = (q: string) =>
+      cards.filter((item) => matchesGuidanceSearch(item, q));
+
+    expect(search("cote d'ivoire").length).toBeGreaterThanOrEqual(2);
+    expect(search("etats-unis").length).toBe(44);
+    expect(search("suede").length).toBeGreaterThanOrEqual(2);
+    expect(search("letzebuerg").length).toBeGreaterThanOrEqual(3);
+    expect(search("USA").length).toBe(44);
+    expect(search("UK").length).toBe(51);
+    expect(search("UK Spain").length).toBeGreaterThanOrEqual(2);
+    expect(search("UAE").length).toBe(8);
+    expect(search("Holland").length).toBeGreaterThanOrEqual(8);
   });
 });
