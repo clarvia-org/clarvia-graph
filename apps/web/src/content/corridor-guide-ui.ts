@@ -52,6 +52,13 @@ export type GuideUiCopy = {
   ctaSpecificPrefix: string;
   trustHeading: string;
   trustBody: (date: string) => string;
+  abroadHubHeading: string;
+  abroadHubIntro: (country: string) => string;
+  abroadHubTriggers: (country: string) => [string, string, string];
+  abroadHubCorridorsLabel: (country: string) => string;
+  abroadHubCtaPrompt: (country: string) => string;
+  abroadHubCtaButton: string;
+  parentHubsHeading: string;
   relatedHeading: string;
   backToGuidance: string;
 };
@@ -91,6 +98,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "How this page was prepared",
     trustBody: (date) =>
       `This page is based on Clarvia task data that passed the publication gate. Last reviewed: ${date}. Check the linked official sources for the latest wording. Clarvia provides practical information and signposting, not professional legal, tax, medical, or notarial advice.`,
+    abroadHubHeading: "If the Deceased or an Heir Lives Abroad",
+    abroadHubIntro: (country) =>
+      `The 5 steps above cover domestic procedures within ${country}. When the person held foreign citizenship, died outside their country of habitual residence, or left heirs, bank accounts, or property in another country, additional cross-border requirements apply:`,
+    abroadHubTriggers: (country) => [
+      `Consular Death Registration & Repatriation Permits: Before mortal remains or cremated ashes can cross an international border (or before a foreign estate can be opened), the death must be reported to the relevant foreign embassy or consulate alongside the civil registry in ${country}.`,
+      `Apostille or Consular Legalization & Certified Translations: Official death certificates, wills, and powers of attorney issued in ${country} generally require a Hague Apostille (or diplomatic legalization) and certified translation to be accepted by foreign courts, registries, and banks.`,
+      `Cross-Border Succession & Conflict-of-Law Rules: When an heir lives abroad or assets span ${country} and another jurisdiction, private international law rules (such as EU Succession Regulation 650/2012 or lex rei sitae for real estate) determine which court or notary handles each asset.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Dedicated Cross-Border Checklists Involving ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `Coordinating between ${country} and another country not listed above?`,
+    abroadHubCtaButton: "Ask Clarvia for Your Exact Two-Country Roadmap →",
+    parentHubsHeading: "National Hub Checklists for These Two Jurisdictions",
     relatedHeading: "Related Corridor & Situation Checklists",
     backToGuidance: "← Back to all published guidance",
   },
@@ -128,6 +149,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Wie diese Seite erstellt wurde",
     trustBody: (date) =>
       `Diese Seite beruht auf geprüften Clarvia-Daten. Zuletzt geprüft: ${date}. Den aktuellen Wortlaut finden Sie in den verlinkten amtlichen Quellen. Clarvia bietet praktische Orientierung und verweist an zuständige Stellen, ersetzt aber keine Rechts-, Steuer-, medizinische oder notarielle Beratung.`,
+    abroadHubHeading: "Wenn die verstorbene Person oder ein Erbe im Ausland lebt (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Die obigen 5 Schritte beschreiben das innerstaatliche Verfahren in ${country}. Wenn eine ausländische Staatsangehörigkeit vorlag, der gewöhnliche Aufenthalt im Ausland lag oder Erben bzw. Vermögenswerte in einem anderen Staat betroffen sind, greifen zusätzliche grenzüberschreitende Vorgaben:`,
+    abroadHubTriggers: (country) => [
+      `Konsularische Meldung & Leichenpass / Überführung: Für eine internationale Überführung oder die Nachlassabwicklung im Ausland muss neben dem Standesamt in ${country} regelmäßig das zuständige Konsulat eingeschaltet werden.`,
+      `Apostille oder Legalisation & beglaubigte Übersetzung: Urkunden, Vollmachten und Erbnachweise aus ${country} benötigen für ausländische Gerichte, Grundbuchämter und Banken meist eine Haager Apostille (oder mehrsprachige Formulare) sowie eine beglaubigte Übersetzung.`,
+      `Internationales Erbrecht & Zuständigkeit: Leben Erben im Ausland oder befindet sich Vermögen in mehreren Staaten, bestimmen Kollisionsnormen (wie die EU-Erbrechtsverordnung Nr. 650/2012 oder das Belegenheitsrecht bei Immobilien), welches Gericht oder Notariat zuständig ist.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Spezifische Länder-Korridor-Checklisten mit Bezug zu ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `Besteht eine Verbindung zwischen ${country} und einem weiteren Land?`,
+    abroadHubCtaButton: "Individuellen Zwei-Länder-Leitfaden bei Ask Clarvia anfordern →",
+    parentHubsHeading: "Nationale Haupt-Checklisten für diese beiden Länder",
     relatedHeading: "Verwandte Länder- & Situations-Checklisten",
     backToGuidance: "← Zurück zu allen veröffentlichten Orientierungshilfen",
   },
@@ -165,6 +200,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Cómo se ha elaborado esta página",
     trustBody: (date) =>
       `Esta página se basa en datos revisados de Clarvia. Última revisión: ${date}. Consulte las fuentes oficiales enlazadas para verificar la normativa vigente. Clarvia ofrece información práctica y orientación hacia organismos oficiales, no asesoramiento jurídico, fiscal, médico ni notarial.`,
+    abroadHubHeading: "Si la persona fallecida o un heredero reside en el extranjero (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Los 5 pasos anteriores cubren el procedimiento interno en ${country}. Cuando la persona tenía otra nacionalidad, residía habitualmente en otro país o existen herederos, cuentas bancarias o inmuebles en el extranjero, se activan requisitos transfronterizos adicionales:`,
+    abroadHubTriggers: (country) => [
+      `Inscripción consular y permisos de repatriación: Para trasladar restos mortales o cenizas a través de una frontera internacional (o abrir una sucesión en otro país), debe coordinarse el Registro Civil de ${country} con el consulado correspondiente.`,
+      `Apostilla de La Haya o legalización y traducción jurada: Las actas de defunción, testamentos y poderes emitidos en ${country} suelen requerir Apostilla de La Haya (o legalización diplomática) y traducción oficial para surtir efectos ante tribunales, registros y bancos extranjeros.`,
+      `Sucesión internacional y ley aplicable: Cuando un heredero vive en el extranjero o el patrimonio se reparte entre ${country} y otro Estado, las normas de derecho internacional privado determinan qué juzgado o notaría es competente para cada bien.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Guías transfronterizas específicas vinculadas con ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `¿Necesita coordinar trámites entre ${country} y otro país?`,
+    abroadHubCtaButton: "Solicitar hoja de ruta binacional en Ask Clarvia →",
+    parentHubsHeading: "Guías nacionales principales de ambos países",
     relatedHeading: "Guías y listas de control relacionadas",
     backToGuidance: "← Volver a todas las guías publicadas",
   },
@@ -202,6 +251,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Comment cette page a été préparée",
     trustBody: (date) =>
       `Cette page repose sur des données vérifiées de Clarvia. Dernière révision : ${date}. Consultez les sources officielles liées pour vérifier les textes en vigueur. Clarvia fournit des informations pratiques et oriente vers les services compétents, sans remplacer un conseil juridique, fiscal, médical ou notarial.`,
+    abroadHubHeading: "Si le défunt ou un héritier réside à l’étranger (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Les 5 étapes ci-dessus couvrent les démarches nationales (${country}). Lorsque la personne possédait une nationalité étrangère, résidait dans un autre pays ou laisse des héritiers, des comptes bancaires ou des biens immobiliers à l’étranger, des formalités transfrontalières supplémentaires s’appliquent :`,
+    abroadHubTriggers: (country) => [
+      `Transcription consulaire et laissez-passer mortuaire : Tout rapatriement international de corps ou de cendres, ainsi que la reconnaissance du décès à l’étranger, nécessite de coordonner l’état civil local (${country}) et le consulat compétent.`,
+      `Apostille ou légalisation et traduction assermentée : Les actes de décès, procurations et actes notariés délivrés (${country}) requièrent généralement une apostille de La Haye (ou une légalisation consulaire) et une traduction certifiée pour être reconnus par les banques et juridictions étrangères.`,
+      `Règlement successoral international : Lorsqu’un héritier vit à l’étranger ou que le patrimoine s’étend sur plusieurs États, les règles de conflit de lois (comme le Règlement européen n° 650/2012 ou la loi du lieu de situation de l’immeuble) déterminent l’autorité compétente.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Guides transfrontaliers dédiés impliquant ${country} :`,
+    abroadHubCtaPrompt: (country) =>
+      `Votre situation implique ${country} et un autre pays ?`,
+    abroadHubCtaButton: "Demander votre feuille de route binationale à Ask Clarvia →",
+    parentHubsHeading: "Guides nationaux de référence pour ces deux pays",
     relatedHeading: "Guides et listes de contrôle connexes",
     backToGuidance: "← Retour à tous les guides publiés",
   },
@@ -239,6 +302,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Como esta página foi elaborada",
     trustBody: (date) =>
       `Esta página baseia-se em dados revistos pela Clarvia. Última revisão: ${date}. Consulte as fontes oficiais associadas para confirmar a redação mais recente. A Clarvia presta informação prática e encaminhamento institucional, não substituindo aconselhamento jurídico, fiscal, médico ou notarial.`,
+    abroadHubHeading: "Se a pessoa falecida ou um herdeiro residir no estrangeiro (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Os 5 passos acima abrangem os procedimentos internos (${country}). Quando a pessoa tinha nacionalidade estrangeira, residia habitualmente noutro país ou deixa herdeiros, contas bancárias ou imóveis no exterior, aplicam-se exigências transfronteiriças adicionais:`,
+    abroadHubTriggers: (country) => [
+      `Registo consular e autorização de trasladação internacional: O transporte internacional de corpo ou cinzas e o reconhecimento do óbito no exterior exigem articulação entre o registo civil local (${country}) e o consulado competente.`,
+      `Apostila de Haia ou legalização e tradução certificada: Certidões de óbito, procurações e testamentos emitidos (${country}) necessitam geralmente de Apostila de Haia (ou legalização consular) e tradução oficial para produzirem efeitos junto de tribunais e bancos estrangeiros.`,
+      `Sucessão internacional e conflito de leis: Quando um herdeiro vive no estrangeiro ou existem bens em mais de um país, as normas de direito internacional privado determinam qual o tribunal, conservatória ou cartório competente.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Guias transfronteiriços específicos envolvendo ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `Precisa de articular procedimentos entre ${country} e outro país?`,
+    abroadHubCtaButton: "Pedir roteiro binacional personalizado à Ask Clarvia →",
+    parentHubsHeading: "Guias nacionais principais destes dois países",
     relatedHeading: "Guias e listas de verificação relacionados",
     backToGuidance: "← Voltar a todos os guias publicados",
   },
@@ -276,6 +353,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Come è stata preparata questa pagina",
     trustBody: (date) =>
       `Questa pagina si basa su dati verificati da Clarvia. Ultima revisione: ${date}. Consulta le fonti ufficiali collegate per verificare le disposizioni vigenti. Clarvia fornisce informazioni pratiche e orientamento verso gli enti competenti, non consulenza legale, fiscale, medica o notarile.`,
+    abroadHubHeading: "Se la persona deceduta o un erede vive all’estero (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `I 5 passi sopra indicati riguardano le procedure interne (${country}). Se la persona aveva cittadinanza straniera, risiedeva abitualmente all’estero o lascia eredi, conti bancari o immobili in un altro Stato, si applicano ulteriori adempimenti transfrontalieri:`,
+    abroadHubTriggers: (country) => [
+      `Trascrizione consolare e passaporto mortuario: Il rimpatrio internazionale della salma o delle ceneri e la registrazione del decesso all’estero richiedono il coordinamento tra l’ufficio di stato civile (${country}) e l’autorità consolare competente.`,
+      `Apostille o legalizzazione e traduzione certificata: Gli atti di morte, le procure e gli atti notarili formati (${country}) necessitano di norma di Apostille dell’Aia (o modulo plurilingue) e traduzione ufficiale per banche, tribunali e registri esteri.`,
+      `Successione internazionale e legge applicabile: Quando un erede risiede all’estero o il patrimonio è diviso tra più Stati, le norme di diritto internazionale privato (come il Regolamento UE n. 650/2012) stabiliscono l’autorità competente.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Guide transfrontaliere specifiche relative a ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `Devi coordinare pratiche tra ${country} e un altro Paese?`,
+    abroadHubCtaButton: "Richiedi a Ask Clarvia la guida per i tuoi due Paesi →",
+    parentHubsHeading: "Guide nazionali di riferimento per questi due Paesi",
     relatedHeading: "Guide e checklist correlate",
     backToGuidance: "← Torna a tutte le guide pubblicate",
   },
@@ -313,6 +404,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Hoe deze pagina tot stand is gekomen",
     trustBody: (date) =>
       `Deze pagina is gebaseerd op gecontroleerde gegevens van Clarvia. Laatst gecontroleerd: ${date}. Raadpleeg de gelinkte officiële bronnen voor de meest actuele regelgeving. Clarvia biedt praktische informatie en doorverwijzing naar bevoegde instanties, geen juridisch, fiscaal, medisch of notarieel advies.`,
+    abroadHubHeading: "Als de overledene of een erfgenaam in het buitenland woont (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `De 5 bovenstaande stappen beschrijven de binnenlandse procedure in ${country}. Wanneer de persoon een buitenlandse nationaliteit had, in het buitenland woonde of erfgenamen, bankrekeningen of onroerend goed in een ander land nalaat, gelden aanvullende grensoverschrijdende regels:`,
+    abroadHubTriggers: (country) => [
+      `Consulaire registratie & laissez-passer voor overbrenging: Voor internationaal vervoer van een lichaam of asbus en erkenning in het buitenland is afstemming nodig tussen de burgerlijke stand in ${country} en het bevoegde consulaat.`,
+      `Apostille of legalisatie & beëdigde vertaling: Overlijdensakten, volmachten en verklaringen van erfrecht uit ${country} vereisen doorgaans een Haags apostille (of meertalig uittreksel) en beëdigde vertaling voor buitenlandse banken en rechtbanken.`,
+      `Internationaal erfrecht: Wanneer een erfgenaam in het buitenland woont of vermogen in meerdere landen ligt, bepalen regels van internationaal privaatrecht (zoals de Europese Erfrechtverordening) welke notaris of rechter bevoegd is.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Specifieke grensoverschrijdende checklists met ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `Te maken met zowel ${country} als een ander land?`,
+    abroadHubCtaButton: "Vraag uw persoonlijke twee-landenstappenplan aan bij Ask Clarvia →",
+    parentHubsHeading: "Nationale overzichtsgidsen voor deze twee landen",
     relatedHeading: "Gerelateerde landen- & situatiechecklists",
     backToGuidance: "← Terug naar alle gepubliceerde gidsen",
   },
@@ -350,6 +455,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Bu sayfa nasıl hazırlandı",
     trustBody: (date) =>
       `Bu sayfa, Clarvia'nın doğrulama sürecinden geçmiş resmi verilere dayanmaktadır. Son inceleme: ${date}. En güncel mevzuat için bağlantılı resmi kaynakları kontrol edin. Clarvia pratik bilgi ve resmi kurumlara yönlendirme sunar; hukuki, vergisel, tıbbi veya noterlik danışmanlığı vermez.`,
+    abroadHubHeading: "Vefat Eden Kişi veya Bir Mirasçı Yurt Dışında Yaşıyorsa (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Yukarıdaki 5 adım ${country} içindeki ulusal işlemleri kapsar. Kişinin yabancı vatandaşlığı varsa, mutat meskeni başka bir ülkedeyse veya mirasçılar, banka hesapları ya da taşınmazlar başka bir ülkede bulunuyorsa ek uluslararası prosedürler devreye girer:`,
+    abroadHubTriggers: (country) => [
+      `Konsolosluk Bildirimi ve Uluslararası Cenaze Nakil İzni: Cenazenin veya küllerin uluslararası sınır geçişi ve yabancı ülkede nüfus tescili için ${country} makamları ile ilgili başkonsolosluk/büyükelçilik koordinasyonu gerekir.`,
+      `Apostil / Tasdik Şerhi ve Yeminli Tercüme: ${country} makamlarınca düzenlenen ölüm belgeleri, vekaletnameler ve mirasçılık belgelerinin yabancı mahkeme, tapu ve bankalarda geçerli olması için Lahey Apostili (veya konsolosluk tasdiki) ve onaylı tercüme gerekir.`,
+      `Uluslararası Miras ve Yetkili Mahkeme Kuralları: Mirasçılardan biri yurt dışında yaşadığında veya malvarlığı birden fazla ülkeye yayıldığında, milletlerarası özel hukuk kuralları (özellikle taşınmazlarda bulunduğu ülke hukuku) hangi makamın yetkili olduğunu belirler.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `${country} Bağlantılı Ülkeler Arası Rehberler:`,
+    abroadHubCtaPrompt: (country) =>
+      `${country} ile listede yer almayan başka bir ülke arasında işlem mi yürütüyorsunuz?`,
+    abroadHubCtaButton: "Ask Clarvia'dan İki Ülkeli Özel Yol Haritanızı İsteyin →",
+    parentHubsHeading: "Bu İki Ülke İçin Ulusal Ana Rehberler",
     relatedHeading: "İlgili Ülke ve Durum Rehberleri",
     backToGuidance: "← Yayınlanan tüm rehberlere dön",
   },
@@ -387,6 +506,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Jak powstała ta strona",
     trustBody: (date) =>
       `Ta strona opiera się na zweryfikowanych danych Clarvia. Ostatni przegląd: ${date}. Sprawdź podlinkowane oficjalne źródła, aby upewnić się co do aktualnych przepisów. Clarvia zapewnia praktyczne informacje i wskazuje właściwe instytucje, ale nie świadczy porad prawnych, podatkowych, medycznych ani notarialnych.`,
+    abroadHubHeading: "Gdy osoba zmarła lub spadkobierca mieszka za granicą (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Powyższe 5 kroków obejmuje procedury krajowe (${country}). Jeżeli osoba posiadała obce obywatelstwo, mieszkała na stałe za granicą lub pozostawiła spadkobierców, rachunki bankowe bądź nieruchomości w innym państwie, zastosowanie mają dodatkowe wymogi transgraniczne:`,
+    abroadHubTriggers: (country) => [
+      `Rejestracja konsularna i przewóz zwłok lub prochów: Międzynarodowy transport ciała lub urny oraz umiejscowienie aktu zgonu za granicą wymagają współdziałania urzędu stanu cywilnego (${country}) oraz właściwego konsulatu.`,
+      `Apostille lub legalizacja oraz tłumaczenie przysięgłe: Akty zgonu, pełnomocnictwa i dokumenty spadkowe wydane (${country}) wymagają co do zasady klauzuli Apostille (lub wielojęzycznego odpisu) oraz tłumaczenia uwierzytelnionego dla zagranicznych sądów i banków.`,
+      `Międzynarodowe postępowanie spadkowe: Gdy spadkobierca mieszka za granicą lub majątek znajduje się w więcej niż jednym kraju, przepisy prawa prywatnego międzynarodowego (np. rozporządzenie spadkowe UE nr 650/2012) określają właściwy sąd lub notariusza.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Dedykowane poradniki transgraniczne obejmujące ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `Sprawa dotyczy ${country} oraz innego kraju spoza powyższej listy?`,
+    abroadHubCtaButton: "Poproś Ask Clarvia o plan działania dla obu krajów →",
+    parentHubsHeading: "Krajowe poradniki główne dla tych dwóch państw",
     relatedHeading: "Powiązane listy kontrolne i poradniki",
     backToGuidance: "← Powrót do wszystkich opublikowanych poradników",
   },
@@ -424,6 +557,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Cum a fost pregătită această pagină",
     trustBody: (date) =>
       `Această pagină se bazează pe date verificate de Clarvia. Ultima verificare: ${date}. Consultați sursele oficiale asociate pentru a verifica prevederile în vigoare. Clarvia oferă informații practice și îndrumare către instituțiile competente, nu consultanță juridică, fiscală, medicală sau notarială.`,
+    abroadHubHeading: "Dacă persoana decedată sau un moștenitor locuiește în străinătate (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Cei 5 pași de mai sus acoperă procedurile interne din ${country}. Când persoana avea cetățenie străină, reședința obișnuită într-un alt stat sau există moștenitori, conturi bancare ori bunuri imobile în străinătate, se aplică cerințe transfrontaliere suplimentare:`,
+    abroadHubTriggers: (country) => [
+      `Înregistrarea consulară și pașaportul mortuar: Repatrierea internațională a corpului neînsuflețit sau a urnei și transcrierea decesului în străinătate presupun coordonarea între starea civilă din ${country} și consulatul competent.`,
+      `Apostila de la Haga sau supralegalizarea și traducerea autorizată: Certificatele de deces, procurile și actele succesorale emise în ${country} necesită, de regulă, Apostila de la Haga (sau extras multilingv) și traducere legalizată pentru băncile și instanțele străine.`,
+      `Succesiunea internațională și conflictul de legi: Când un moștenitor locuiește în străinătate sau patrimoniul este împărțit între mai multe țări, normele de drept internațional privat (precum Regulamentul UE nr. 650/2012) stabilesc notarul sau instanța competentă.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Ghiduri transfrontaliere dedicate care implică ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `Gestionați demersuri între ${country} și o altă țară?`,
+    abroadHubCtaButton: "Solicitați de la Ask Clarvia planul pentru cele două țări →",
+    parentHubsHeading: "Ghiduri naționale principale pentru aceste două țări",
     relatedHeading: "Ghiduri și liste de verificare conexe",
     backToGuidance: "← Înapoi la toate ghidurile publicate",
   },
@@ -461,6 +608,20 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     trustHeading: "Як було підготовлено цю сторінку",
     trustBody: (date) =>
       `Ця сторінка базується на перевірених даних Clarvia. Остання перевірка: ${date}. Перевіряйте актуальні формулювання за посиланнями на офіційні джерела. Clarvia надає практичну інформацію та контакти компетентних установ, але не надає юридичних, податкових, медичних чи нотаріальних консультацій.`,
+    abroadHubHeading: "Якщо померла особа або спадкоємець проживає за кордоном (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Наведені вище 5 кроків охоплюють внутрішні процедури (${country}). Якщо особа мала іноземне громадянство, постійно проживала в іншій державі або залишила спадкоємців, банківські рахунки чи нерухомість за кордоном, застосовуються додаткові транскордонні правила:`,
+    abroadHubTriggers: (country) => [
+      `Консульський облік та дозвіл на міжнародне перевезення: Для репатріації тіла чи урни з прахом через кордон та визнання факту смерті за кордоном необхідна взаємодія між органами реєстрації актів цивільного стану (${country}) та відповідним консульством.`,
+      `Апостиль або консульська легалізація та засвідчений переклад: Свідоцтва про смерть, нотаріальні довіреності та спадкові документи, видані (${country}), зазвичай потребують апостиля (або легалізації) і офіційного перекладу для іноземних судів, реєстрів та банків.`,
+      `Міжнародне спадкування та колізійні норми: Коли спадкоємець проживає за кордоном або майно розташоване в кількох державах, норми міжнародного приватного права визначають компетентний нотаріат або суд щодо кожного активу.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Спеціальні транскордонні посібники, пов’язані з країною (${country}):`,
+    abroadHubCtaPrompt: (country) =>
+      `Ваша ситуація пов’язана з країною (${country}) та іншою державою?`,
+    abroadHubCtaButton: "Запитати в Ask Clarvia покроковий план для двох країн →",
+    parentHubsHeading: "Національні базові посібники для цих двох країн",
     relatedHeading: "Пов’язані чек-листи та посібники",
     backToGuidance: "← Назад до всіх опублікованих посібників",
   },

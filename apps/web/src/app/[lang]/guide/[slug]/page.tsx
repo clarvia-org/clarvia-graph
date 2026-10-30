@@ -14,6 +14,8 @@ import {
   corridorGuideHreflangAlternates,
   corridorGuidePath,
   getCorridorGuideBySlug,
+  getCrossBorderSpokesForCountry,
+  getParentSingleCountryHubsForCorridor,
   publishedCorridorGuideStaticParams,
 } from "@/content/corridor-guides";
 import GuideCtaClient from "./GuideCtaClient";
@@ -124,6 +126,13 @@ export default async function CorridorGuidePage({
 
   const isCrossBorder =
     guide.countryOfDeathCode !== guide.citizenshipCountryCode;
+
+  const crossBorderSpokes = !isCrossBorder
+    ? getCrossBorderSpokesForCountry(guide.countryOfDeathCode, guide.category, lang)
+    : [];
+  const parentCountryHubs = isCrossBorder
+    ? getParentSingleCountryHubsForCorridor(guide, lang)
+    : [];
 
   const alternateLocales = guide.locales.filter((code) => code !== lang);
 
@@ -273,6 +282,69 @@ export default async function CorridorGuidePage({
           </ol>
         </section>
 
+        {/* Structural SEO Hub Section: 'If the Deceased or an Heir Lives Abroad' (on all Single-Country Hub Pages) */}
+        {!isCrossBorder ? (
+          <section
+            id="if-deceased-or-heir-lives-abroad"
+            aria-labelledby="abroad-hub-heading"
+            className="mb-10 rounded-2xl border border-calm-blue-200 bg-white/85 p-5 sm:p-6 shadow-sm"
+          >
+            <h2
+              id="abroad-hub-heading"
+              className="text-xl sm:text-2xl font-semibold text-calm-blue-800 mb-3"
+              style={headlineStyle}
+            >
+              {ui.abroadHubHeading}
+            </h2>
+            <p className="text-sm sm:text-base text-calm-blue-700 leading-relaxed mb-4">
+              {ui.abroadHubIntro(guide.countryOfDeath)}
+            </p>
+            <ul className="space-y-2.5 text-sm text-calm-blue-700 mb-5 list-disc pl-5">
+              {ui.abroadHubTriggers(guide.countryOfDeath).map((trigger, idx) => (
+                <li key={idx} className="leading-relaxed">
+                  {trigger}
+                </li>
+              ))}
+            </ul>
+
+            {crossBorderSpokes.length > 0 ? (
+              <div className="mb-5">
+                <h3 className="text-sm font-semibold text-calm-blue-800 mb-2.5">
+                  {ui.abroadHubCorridorsLabel(guide.countryOfDeath)}
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  {crossBorderSpokes.map(({ guide: spoke, targetLang }) => (
+                    <Link
+                      key={`${targetLang}-${spoke.slug}`}
+                      href={corridorGuidePath(spoke.slug, targetLang)}
+                      className="rounded-xl border border-calm-blue-200 bg-calm-blue-50/60 hover:bg-calm-blue-100/70 px-3.5 py-2.5 transition-colors block"
+                    >
+                      <span className="text-xs font-semibold text-calm-blue-500 block">
+                        {spoke.countryOfDeathCode} ↔ {spoke.citizenshipCountryCode}
+                      </span>
+                      <span className="text-sm font-semibold text-calm-blue-800 leading-snug block">
+                        {spoke.title.split(":")[0]}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            <div className="pt-3 border-t border-calm-blue-100 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <span className="text-xs font-medium text-calm-blue-600">
+                {ui.abroadHubCtaPrompt(guide.countryOfDeath)}
+              </span>
+              <a
+                href="#ask-bridge"
+                className="text-xs font-semibold text-calm-blue-800 underline hover:text-calm-blue-900"
+              >
+                {ui.abroadHubCtaButton}
+              </a>
+            </div>
+          </section>
+        ) : null}
+
         {/* Mid-Page Institutional & Family Referral Banner */}
         <div className="my-8 rounded-xl border border-calm-blue-200 bg-calm-blue-50/70 p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
@@ -397,6 +469,35 @@ export default async function CorridorGuidePage({
             {ui.trustBody(guide.lastReviewed)}
           </p>
         </div>
+
+        {/* Parent Single-Country Hub Links (on Cross-Border Spoke Pages) */}
+        {isCrossBorder && parentCountryHubs.length > 0 ? (
+          <section aria-labelledby="parent-hubs-heading" className="mt-10">
+            <h2
+              id="parent-hubs-heading"
+              className="text-lg font-semibold text-calm-blue-800 mb-3"
+              style={headlineStyle}
+            >
+              {ui.parentHubsHeading}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {parentCountryHubs.map(({ guide: hub, targetLang }) => (
+                <Link
+                  key={`hub-${targetLang}-${hub.slug}`}
+                  href={corridorGuidePath(hub.slug, targetLang)}
+                  className="glass-panel p-4 hover:shadow-md transition-shadow block"
+                >
+                  <p className="text-xs font-semibold text-calm-blue-500 mb-1">
+                    {hub.countryOfDeath} ({hub.countryOfDeathCode})
+                  </p>
+                  <p className="text-sm font-semibold text-calm-blue-800 leading-snug">
+                    {hub.title.split(":")[0]}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         {/* Hub-and-Spoke Related Corridor & Situation Guides */}
         {relatedGuides.length > 0 ? (

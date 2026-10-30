@@ -217,3 +217,95 @@ export function corridorGuideHreflangAlternates(
   languages["x-default"] = `${SITE_URL}${corridorGuidePath(guide.slug, "en")}`;
   return languages;
 }
+
+/**
+ * Returns all published cross-border corridor guides (spokes) involving `countryCode`
+ * (either as countryOfDeathCode or citizenshipCountryCode) so every single-country guide
+ * acts as an SEO Hub Page linking down into its cross-border corridor pages.
+ */
+export function getCrossBorderSpokesForCountry(
+  countryCode: string,
+  preferredCategory: CorridorGuide["category"],
+  lang = "en",
+): Array<{ guide: CorridorGuide; targetLang: string }> {
+  const base = ALL_CORRIDOR_GUIDES.filter(
+    (item) => item.wave <= MAX_PUBLISHED_WAVE,
+  );
+  const publishedSlugSet = new Set(base.map((g) => g.slug));
+  const isBereavementHub = preferredCategory.includes("bereavement");
+
+  const matching = base.filter(
+    (item) =>
+      item.countryOfDeathCode !== item.citizenshipCountryCode &&
+      (item.countryOfDeathCode === countryCode ||
+        item.citizenshipCountryCode === countryCode),
+  );
+
+  matching.sort((a, b) => {
+    const aSameTheme = a.category.includes("bereavement") === isBereavementHub ? 0 : 1;
+    const bSameTheme = b.category.includes("bereavement") === isBereavementHub ? 0 : 1;
+    if (aSameTheme !== bSameTheme) return aSameTheme - bSameTheme;
+    const aOutbound = a.countryOfDeathCode === countryCode ? 0 : 1;
+    const bOutbound = b.countryOfDeathCode === countryCode ? 0 : 1;
+    return aOutbound - bOutbound;
+  });
+
+  return matching.map((item) => {
+    if (lang !== "en" && item.locales.includes(lang)) {
+      return {
+        guide: localizeGuide(item, lang, publishedSlugSet),
+        targetLang: lang,
+      };
+    }
+    return {
+      guide: localizeGuide(item, "en", publishedSlugSet),
+      targetLang: "en",
+    };
+  });
+}
+
+/**
+ * Returns the published single-country Hub guides for the two countries of a cross-border corridor guide.
+ */
+export function getParentSingleCountryHubsForCorridor(
+  guide: CorridorGuide,
+  lang = "en",
+): Array<{ guide: CorridorGuide; targetLang: string }> {
+  if (guide.countryOfDeathCode === guide.citizenshipCountryCode) {
+    return [];
+  }
+  const base = ALL_CORRIDOR_GUIDES.filter(
+    (item) => item.wave <= MAX_PUBLISHED_WAVE,
+  );
+  const publishedSlugSet = new Set(base.map((g) => g.slug));
+  const targetCat = guide.category.includes("bereavement")
+    ? "domestic-bereavement"
+    : "terminal-illness-admin";
+
+  const codes = [guide.countryOfDeathCode, guide.citizenshipCountryCode];
+  const results: Array<{ guide: CorridorGuide; targetLang: string }> = [];
+
+  for (const code of codes) {
+    const hub =
+      base.find(
+        (item) =>
+          item.countryOfDeathCode === code &&
+          item.citizenshipCountryCode === code &&
+          item.category === targetCat,
+      ) ??
+      base.find(
+        (item) =>
+          item.countryOfDeathCode === code &&
+          item.citizenshipCountryCode === code,
+      );
+    if (hub) {
+      const targetLang =
+        lang !== "en" && hub.locales.includes(lang) ? lang : "en";
+      results.push({
+        guide: localizeGuide(hub, targetLang, publishedSlugSet),
+        targetLang,
+      });
+    }
+  }
+  return results;
+}

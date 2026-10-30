@@ -7,6 +7,8 @@ import {
   corridorGuidePath,
   getAnyCorridorGuideBySlug,
   getCorridorGuideBySlug,
+  getCrossBorderSpokesForCountry,
+  getParentSingleCountryHubsForCorridor,
   publishedCorridorGuides,
   publishedCorridorGuideStaticParams,
 } from "@/content/corridor-guides";
@@ -17,12 +19,12 @@ const FIRST_PERSON_SINGULAR_EN_RE =
 const BEREAVEMENT_CONDOLENCE_RE =
   /\b(sorry for your loss|sorry for the loss|condolence|condolences|passed away|passing of your|bereavement|deceased)\b/i;
 
-describe("corridor-guides (full 250-guide dual-locale dataset + Wave 1 live preview gate)", () => {
-  it("compiles all 390 guide pages in the dataset (250 EN + 140 L1) with 5 steps, deep live sources, contacts, and clean HTML", () => {
-    expect(allCorridorGuides().length).toBe(250);
+describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke architecture)", () => {
+  it("compiles all 844 guide pages in the dataset (592 EN + 252 L1) with 5 steps, deep live sources, contacts, and clean HTML", () => {
+    expect(allCorridorGuides().length).toBe(592);
 
     const allParams = allCorridorGuideStaticParams();
-    expect(allParams.length).toBe(390);
+    expect(allParams.length).toBe(844);
 
     for (const { lang, slug } of allParams) {
       const guide = getAnyCorridorGuideBySlug(slug, lang);
@@ -75,7 +77,7 @@ describe("corridor-guides (full 250-guide dual-locale dataset + Wave 1 live prev
     }
   });
 
-  it("ensures prefillQuestion satisfies MIN_QUESTION_CHARS and PLACE_HINT_RE across all 390 localized guide pages", () => {
+  it("ensures prefillQuestion satisfies MIN_QUESTION_CHARS and PLACE_HINT_RE across all 844 localized guide pages", () => {
     for (const { lang, slug } of allCorridorGuideStaticParams()) {
       const guide = getAnyCorridorGuideBySlug(slug, lang)!;
       expect(
@@ -89,10 +91,10 @@ describe("corridor-guides (full 250-guide dual-locale dataset + Wave 1 live prev
     }
   });
 
-  it("publishes all 250 guides (390 localized pages: 250 EN + 140 L1) in sitemap.xml with exact hreflang alternates", () => {
+  it("publishes all 592 guides (844 localized pages: 592 EN + 252 L1) in sitemap.xml with exact hreflang alternates", () => {
     const published = publishedCorridorGuides("en");
-    expect(published.length).toBe(250);
-    expect(publishedCorridorGuideStaticParams().length).toBe(390);
+    expect(published.length).toBe(592);
+    expect(publishedCorridorGuideStaticParams().length).toBe(844);
 
     const entries = sitemap();
     const byUrl = new Map(entries.map((e) => [e.url, e]));
@@ -157,6 +159,68 @@ describe("corridor-guides (full 250-guide dual-locale dataset + Wave 1 live prev
           `${guide.id} pre-death guide has bereavement condolence: ${introText}`,
         ).toBe(false);
       }
+    }
+  });
+
+  it("wires the SEO Hub-and-Spoke architecture across all 392 single-country hubs (196 jurisdictions) and 200 cross-border corridors", () => {
+    expect(GUIDE_UI_COPY.en.abroadHubHeading).toBe(
+      "If the Deceased or an Heir Lives Abroad",
+    );
+    for (const copy of Object.values(GUIDE_UI_COPY)) {
+      expect(copy.abroadHubHeading.length).toBeGreaterThan(10);
+      expect(copy.abroadHubIntro("France").length).toBeGreaterThan(20);
+      expect(copy.abroadHubTriggers("France")).toHaveLength(3);
+      expect(copy.abroadHubCorridorsLabel("France").length).toBeGreaterThan(10);
+      expect(copy.abroadHubCtaPrompt("France").length).toBeGreaterThan(20);
+      expect(copy.abroadHubCtaButton.length).toBeGreaterThan(5);
+      expect(copy.parentHubsHeading.length).toBeGreaterThan(10);
+    }
+
+    const guides = publishedCorridorGuides("en");
+    const singleCountryHubs = guides.filter(
+      (g) => g.countryOfDeathCode === g.citizenshipCountryCode,
+    );
+    const crossBorderCorridors = guides.filter(
+      (g) => g.countryOfDeathCode !== g.citizenshipCountryCode,
+    );
+
+    expect(singleCountryHubs.length).toBe(392);
+    expect(crossBorderCorridors.length).toBe(200);
+
+    const distinctHubCountryCodes = new Set(
+      singleCountryHubs.map((g) => g.countryOfDeathCode),
+    );
+    expect(distinctHubCountryCodes.size).toBe(196);
+
+    let hubsWithSpokes = 0;
+    for (const hub of singleCountryHubs) {
+      const spokes = getCrossBorderSpokesForCountry(
+        hub.countryOfDeathCode,
+        hub.category,
+        "en",
+      );
+      if (spokes.length > 0) {
+        hubsWithSpokes += 1;
+        for (const { guide: spoke } of spokes) {
+          expect(spoke.countryOfDeathCode).not.toBe(
+            spoke.citizenshipCountryCode,
+          );
+          expect(
+            spoke.countryOfDeathCode === hub.countryOfDeathCode ||
+              spoke.citizenshipCountryCode === hub.countryOfDeathCode,
+          ).toBe(true);
+        }
+      }
+    }
+    expect(hubsWithSpokes).toBeGreaterThanOrEqual(50);
+
+    for (const corridor of crossBorderCorridors) {
+      const parentHubs = getParentSingleCountryHubsForCorridor(corridor, "en");
+      expect(parentHubs.length, corridor.slug).toBe(2);
+      expect(parentHubs.map((h) => h.guide.countryOfDeathCode)).toEqual([
+        corridor.countryOfDeathCode,
+        corridor.citizenshipCountryCode,
+      ]);
     }
   });
 });
