@@ -9,7 +9,10 @@ export type GuideLocale =
   | "tr"
   | "pl"
   | "ro"
-  | "uk";
+  | "uk"
+  | "ar"
+  | "ru"
+  | "lu";
 
 export const GUIDE_LOCALE_LABELS: Record<GuideLocale, string> = {
   en: "English",
@@ -23,6 +26,9 @@ export const GUIDE_LOCALE_LABELS: Record<GuideLocale, string> = {
   pl: "Polski",
   ro: "Română",
   uk: "Українська",
+  ar: "العربية",
+  ru: "Русский",
+  lu: "Lëtzebuergesch",
 };
 
 export type GuideUiCopy = {
@@ -624,6 +630,159 @@ export const GUIDE_UI_COPY: Record<GuideLocale, GuideUiCopy> = {
     parentHubsHeading: "Національні базові посібники для цих двох країн",
     relatedHeading: "Пов’язані чек-листи та посібники",
     backToGuidance: "← Назад до всіх опублікованих посібників",
+  },
+  ar: {
+    breadcrumbGuidance: "الأدلة الإرشادية",
+    crossBorderBadge: (c1, code1, c2, code2) =>
+      `عابر للحدود: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+    jurisdictionBadge: (c1, code1) => `الاختصاص القانوني: ${c1} (${code1})`,
+    sourcesVerifiedBadge: (count, date) => `${count} مصادر رسمية موثقة (${date})`,
+    languageSwitchLabel: "اللغة:",
+    readInOtherLang: (langName) => `اقرأ باللغة ${langName} ←`,
+    topCtaTitle:
+      "هل تحتاج إلى خارطة طريق مفصلة خطوة بخطوة تناسب بلديتك أو وضع عائلتك الدقيق؟",
+    topCtaSubtitle:
+      "خدمة مجانية غير ربحية من Clarvia ASBL · ردود عبر البريد الإلكتروني بأكثر من 100 لغة مع مصادر رسمية.",
+    topCtaButton: "اسأل Clarvia (مُعبأ مسبقاً)",
+    fiveStepHeading: "القائمة المرجعية الرسمية الملخصة في 5 خطوات",
+    fiveStepSublabel: "دليل مرجعي عام",
+    stepPrefix: "الخطوة",
+    midCtaTitle:
+      "غير متأكد من كيفية تطبيق هذه الخطوات الخمس لدى مكتب الأحوال المدنية أو القنصلية أو شركة التأمين؟",
+    midCtaSubtitle:
+      "اشرح أدناه ما تم إنجازه حتى الآن. تقوم خدمة Ask Clarvia بتجميع الخطوات التالية الدقيقة وجهات الاتصال الرسمية لحالتك.",
+    midCtaPrimary: "احصل على الخطوات التالية المخصصة لحالتك",
+    contactsHeading: "الجهات الرسمية وجهات الاتصال المعتمدة",
+    phoneLabel: "الهاتف",
+    emailLabel: "البريد الإلكتروني",
+    sourcesHeading: "المصادر الرسمية التي تحققت منها Clarvia",
+    ctaEyebrow: "إرشاد شخصي مجاني · Clarvia ASBL",
+    ctaHeading: "احصل عبر البريد الإلكتروني على الخطوات المتبقية المخصصة لوضعك الدقيق",
+    ctaIntro:
+      "يغطي الملخص الرسمي المكون من 5 خطوات أعلاه الإطار الوطني العام. وتعتمد الخطوات التالية على تفاصيل حالتك. انقر على أي موضوع أدناه لتعبئة سؤالك تلقائياً، أو اكتب وضعك مباشرة:",
+    ctaFocusLabel: "ما تتحقق منه خدمة Ask Clarvia لحالتك المحددة (انقر للتعبئة):",
+    ctaSpecificPrefix: "وتحديداً بخصوص:",
+    trustHeading: "كيف أُعدّت هذه الصفحة",
+    trustBody: (date) =>
+      `تستند هذه الصفحة إلى بيانات Clarvia الموثقة. آخر مراجعة: ${date}. يُرجى الرجوع إلى المصادر الرسمية المرتبطة للتحقق من أحدث النصوص القانونية. تقدم Clarvia معلومات عملية وتوجيهاً إلى الجهات المختصة، ولا تقدم استشارات قانونية أو ضريبية أو طبية أو توثيقية.`,
+    abroadHubHeading: "إذا كان المتوفى أو أحد الورثة مقيماً في الخارج (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `تغطي الخطوات الخمس أعلاه الإجراءات الداخلية في ${country}. وعندما يحمل الشخص جنسية أجنبية، أو يقيم عادةً خارج البلاد، أو يترك ورثة أو حسابات بنكية أو عقارات في دولة أخرى، تنطبق متطلبات إضافية عابرة للحدود:`,
+    abroadHubTriggers: (country) => [
+      `التسجيل القنصلي وتصاريح نقل الجثمان: يتطلب نقل الجثمان أو الرفات عبر الحدود الدولية أو فتح التركة في الخارج التنسيق بين مكتب الأحوال المدنية في ${country} والسفارة أو القنصلية المختصة.`,
+      `تصديق الأبوستيل أو التصديق القنصلي والترجمة المعتمدة: تتطلب شهادات الوفاة والوكالات وحجج حصر الإرث الصادرة في ${country} عادةً ختم الأبوستيل (أو التصديق الدبلوماسي) وترجمة محلفة للاعتراف بها لدى المحاكم والبنوك الأجنبية.`,
+      `الميراث الدولي وتنازع القوانين: عندما يقيم أحد الورثة في الخارج أو تتوزع الأصول بين ${country} ودولة أخرى، تحدد قواعد القانون الدولي الخاص المحكمة أو الجهة التوثيقية المختصة لكل أصل.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `أدلة الإجراءات العابرة للحدود المرتبطة بـ ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `هل تنسق إجراءات بين ${country} ودولة أخرى غير مدرجة أعلاه؟`,
+    abroadHubCtaButton: "اطلب خارطة الطريق الثنائية الخاصة بك من Ask Clarvia ←",
+    parentHubsHeading: "الأدلة الوطنية الرئيسية لهاتين الدولتين",
+    relatedHeading: "أدلة وقوائم مرجعية ذات صلة",
+    backToGuidance: "→ العودة إلى جميع الأدلة المنشورة",
+  },
+  ru: {
+    breadcrumbGuidance: "Практические руководства",
+    crossBorderBadge: (c1, code1, c2, code2) =>
+      `Международный случай: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+    jurisdictionBadge: (c1, code1) => `Юрисдикция: ${c1} (${code1})`,
+    sourcesVerifiedBadge: (count, date) => `Проверено официальных источников: ${count} (${date})`,
+    languageSwitchLabel: "Язык:",
+    readInOtherLang: (langName) => `Читать на языке: ${langName} →`,
+    topCtaTitle:
+      "Нужен пошаговый план действий с учётом конкретного города или ситуации вашей семьи?",
+    topCtaSubtitle:
+      "Бесплатная некоммерческая служба Clarvia ASBL · Ответы по электронной почте более чем на 100 языках со ссылками на официальные источники.",
+    topCtaButton: "Спросить Clarvia (предзаполнено)",
+    fiveStepHeading: "Официальный краткий чек-лист в 5 шагов",
+    fiveStepSublabel: "Публичное справочное руководство",
+    stepPrefix: "Шаг",
+    midCtaTitle:
+      "Не уверены, как эти 5 шагов применяются в вашем отделе ЗАГС, консульстве или страховой компании?",
+    midCtaSubtitle:
+      "Опишите ниже, что уже сделано. Ask Clarvia подготовит точные следующие шаги и контакты ведомств для вашей ситуации.",
+    midCtaPrimary: "Получить персональные следующие шаги",
+    contactsHeading: "Официальные ведомства и проверенные контакты",
+    phoneLabel: "Телефон",
+    emailLabel: "Эл. почта",
+    sourcesHeading: "Официальные источники, проверенные Clarvia",
+    ctaEyebrow: "Бесплатная персональная помощь · Clarvia ASBL",
+    ctaHeading: "Получите дальнейшие шаги для вашей ситуации по электронной почте",
+    ctaIntro:
+      "Приведённый выше обзор из 5 шагов охватывает общий порядок. Дальнейшие действия зависят от обстоятельств вашего дела. Нажмите на любую тему ниже, чтобы подставить её в вопрос, или опишите вашу ситуацию напрямую:",
+    ctaFocusLabel: "Что именно Ask Clarvia проверяет для вашего случая (нажмите для заполнения):",
+    ctaSpecificPrefix: "В частности по вопросу:",
+    trustHeading: "Как была подготовлена эта страница",
+    trustBody: (date) =>
+      `Эта страница основана на проверенных данных Clarvia. Последняя проверка: ${date}. Сверяйте актуальные формулировки по ссылкам на официальные источники. Clarvia предоставляет практическую информацию и контакты компетентных органов, но не оказывает юридических, налоговых, медицинских или нотариальных консультаций.`,
+    abroadHubHeading: "Если умерший или наследник проживает за рубежом (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Приведённые выше 5 шагов описывают внутренний порядок (${country}). Если у человека было иностранное гражданство, постоянное место жительства за границей или остались наследники, банковские счета либо недвижимость в другом государстве, применяются дополнительные трансграничные правила:`,
+    abroadHubTriggers: (country) => [
+      `Консульский учёт и разрешение на репатриацию: Для международной перевозки тела или урны с прахом и признания факта смерти за рубежом необходимо взаимодействие органов ЗАГС (${country}) и соответствующего консульства.`,
+      `Апостиль или консульская легализация и нотариальный перевод: Свидетельства о смерти, доверенности и документы о наследстве, выданные в стране (${country}), как правило, требуют штампа «Апостиль» (или консульской легализации) и заверенного перевода для иностранных судов и банков.`,
+      `Международное наследование и коллизионные нормы: Когда наследник проживает за рубежом или имущество находится в нескольких государствах, нормы международного частного права определяют компетентного нотариуса или суд по каждому активу.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Специальные трансграничные руководства (${country}):`,
+    abroadHubCtaPrompt: (country) =>
+      `Ваша ситуация связана со страной (${country}) и другим государством?`,
+    abroadHubCtaButton: "Запросить у Ask Clarvia маршрут для двух стран →",
+    parentHubsHeading: "Национальные базовые руководства для этих двух стран",
+    relatedHeading: "Связанные чек-листы и руководства",
+    backToGuidance: "← Назад ко всем опубликованным руководствам",
+  },
+  lu: {
+    breadcrumbGuidance: "Orientéierungshëllefen",
+    crossBorderBadge: (c1, code1, c2, code2) =>
+      `Grenzüberschreidend: ${c1} (${code1}) ↔ ${c2} (${code2})`,
+    jurisdictionBadge: (c1, code1) => `Juridictioun: ${c1} (${code1})`,
+    sourcesVerifiedBadge: (count, date) => `${count} offiziell Quelle gepréift (${date})`,
+    languageSwitchLabel: "Sprooch:",
+    readInOtherLang: (langName) => `Op ${langName} liesen →`,
+    topCtaTitle:
+      "Braucht Dir e Schrëtt-fir-Schrëtt-Plang, deen op Är Gemeng oder Är genee Familljesituatioun ugepasst ass?",
+    topCtaSubtitle:
+      "Gratis Service ouni Gewënnzweck vu Clarvia ASBL · Äntwerten per E-Mail an iwwer 100 Sprooche mat offizielle Quellen.",
+    topCtaButton: "Clarvia froen (virausgefëllt)",
+    fiveStepHeading: "Offiziell 5-Schrëtt-Checklëscht",
+    fiveStepSublabel: "Ëffentleche Referenzguide",
+    stepPrefix: "Schrëtt",
+    midCtaTitle:
+      "Onsécher, wéi dës 5 Schrëtt fir Är Gemeng, Äert Konsulat oder Är Versécherung gëllen?",
+    midCtaSubtitle:
+      "Beschreift hei ënnen kuerz Är Situatioun. Ask Clarvia stellt déi genee nächst Schrëtt a Kontakter fir Äre Fall zesummen.",
+    midCtaPrimary: "Perséinlech nächst Schrëtt kréien",
+    contactsHeading: "Offiziell Autoritéiten & gepréift Kontaktstellen",
+    phoneLabel: "Telefon",
+    emailLabel: "E-Mail",
+    sourcesHeading: "Vu Clarvia gepréift offiziell Quellen",
+    ctaEyebrow: "Gratis perséinlech Orientéierung · Clarvia ASBL",
+    ctaHeading: "Kritt déi weider Schrëtt passend zu Ärer Situatioun per E-Mail",
+    ctaIntro:
+      "D'Iwwersiicht a 5 Schrëtt hei uewen deckt den nationale Kader of. Déi weider Schrëtt hänke vun Ärem konkrete Fall of. Klickt op en Thema fir Är Fro virauszefëllen oder beschreift Är Situatioun direkt:",
+    ctaFocusLabel: "Wat Ask Clarvia fir Äre konkrete Fall préift (klickt fir virauszefëllen):",
+    ctaSpecificPrefix: "Besonnesch betreffend:",
+    trustHeading: "Wéi dës Säit erstallt gouf",
+    trustBody: (date) =>
+      `Dës Säit baséiert op gepréiften Date vu Clarvia. Lescht Iwwerpréiwung: ${date}. Kuckt déi verlinkt offiziell Quelle fir déi aktuellst Texter. Clarvia bitt praktesch Informatioun an Orientéierung, awer keng juristesch, steierlech, medezinesch oder notariell Berodung.`,
+    abroadHubHeading: "Wann déi verstuerwe Persoun oder en Ierwen am Ausland wunnt (If the Deceased or an Heir Lives Abroad)",
+    abroadHubIntro: (country) =>
+      `Déi 5 Schrëtt hei uewen decken d'national Prozeduren zu ${country} of. Wann eng auslännesch Nationalitéit virlouch, de gewéinleche Wunnsëtz am Ausland war oder Ierwen, Bankkonten oder Immobilien an engem anere Land betraff sinn, gëllen zousätzlech grenzüberschreidend Reegelen:`,
+    abroadHubTriggers: (country) => [
+      `Konsularesch Meldung & Laissez-passer mortuaire: Fir eng international Iwwerféierung oder d'Noloossregelung am Ausland muss nieft dem État civil zu ${country} och dat zoustännegt Konsulat kontaktéiert ginn.`,
+      `Apostille oder Legalisatioun & vereedegt Iwwersetzung: Akten, Vollmaachten an Ierfschaftsdokumenter aus ${country} brauchen am Ausland dacks eng Haager Apostille (oder e méisproochege Formulaire C) an eng zertifiéiert Iwwersetzung.`,
+      `Internationalt Ierfrecht & Zoustännegkeet: Wann Ierwen am Ausland wunnen oder Verméigen a méi Länner läit, bestëmmen d'EU-Ierfrechtsveruerdnung Nr. 650/2012 an d'internationalt Privatrecht, wéi een Notaire oder Geriicht zoustänneg ass.`,
+    ],
+    abroadHubCorridorsLabel: (country) =>
+      `Grenzüberschreidend Checklëschte mat Bezug op ${country}:`,
+    abroadHubCtaPrompt: (country) =>
+      `Betrëfft Är Situatioun ${country} an en anert Land?`,
+    abroadHubCtaButton: "Perséinlechen Zwee-Länner-Plang bei Ask Clarvia ufroen →",
+    parentHubsHeading: "National Haaptchecklëschte fir dës zwee Länner",
+    relatedHeading: "Verwandte Checklëschten & Guiden",
+    backToGuidance: "← Zréck bei all publizéiert Orientéierungshëllefen",
   },
 };
 

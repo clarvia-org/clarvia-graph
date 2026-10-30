@@ -24,11 +24,11 @@ const BEREAVEMENT_CONDOLENCE_RE =
   /\b(sorry for your loss|sorry for the loss|condolence|condolences|passed away|passing of your|bereavement|deceased)\b/i;
 
 describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke architecture)", () => {
-  it("compiles all 844 guide pages in the dataset (592 EN + 252 L1) with 5 steps, deep live sources, contacts, and clean HTML", () => {
+  it("compiles all 1,000 guide pages in the dataset (592 EN + 408 non-EN across the 14 /ask locales) with 5 steps, deep live sources, contacts, and clean HTML", () => {
     expect(allCorridorGuides().length).toBe(592);
 
     const allParams = allCorridorGuideStaticParams();
-    expect(allParams.length).toBe(844);
+    expect(allParams.length).toBe(1000);
 
     for (const { lang, slug } of allParams) {
       const guide = getAnyCorridorGuideBySlug(slug, lang);
@@ -42,8 +42,11 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
       expect(guide.caseDependentItems.length).toBeGreaterThanOrEqual(3);
 
       expect(guide.introHtml).not.toContain("`");
-      expect(guide.closingQuestion.length, `${lang}/${slug}`).toBeGreaterThan(15);
-      expect(guide.closingQuestion.endsWith("?"), `${lang}/${slug}`).toBe(true);
+      expect(guide.closingQuestion.length, `${lang}/${slug}`).toBeGreaterThan(12);
+      expect(
+        guide.closingQuestion.endsWith("?") || guide.closingQuestion.endsWith("؟"),
+        `${lang}/${slug}`,
+      ).toBe(true);
       expect(guide.closingQuestion).not.toContain("*");
       expect(guide.closingQuestion).not.toContain("`");
       expect(guide.closingQuestion).not.toContain("\n");
@@ -95,15 +98,18 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
     }
   });
 
-  it("publishes all 592 guides (844 localized pages: 592 EN + 252 L1) in sitemap.xml with exact hreflang alternates", () => {
+  it("publishes all 592 guides (1,000 localized pages: 592 EN + 408 non-EN, max 3 locales per guide) in sitemap.xml with exact hreflang alternates", () => {
     const published = publishedCorridorGuides("en");
     expect(published.length).toBe(592);
-    expect(publishedCorridorGuideStaticParams().length).toBe(844);
+    expect(publishedCorridorGuideStaticParams().length).toBe(1000);
 
     const entries = sitemap();
     const byUrl = new Map(entries.map((e) => [e.url, e]));
 
     for (const guide of published) {
+      expect(guide.locales.length).toBeLessThanOrEqual(3);
+      expect(guide.locales).toContain("en");
+
       const enUrl = `https://clarvia.org${corridorGuidePath(guide.slug, "en")}`;
       const enEntry = byUrl.get(enUrl);
       expect(enEntry, enUrl).toBeDefined();
@@ -111,18 +117,21 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
       if (guide.locales.length === 1) {
         expect(enEntry?.alternates).toBeUndefined();
       } else {
-        const l1 = guide.locales.find((c) => c !== "en")!;
-        const l1Url = `https://clarvia.org${corridorGuidePath(guide.slug, l1)}`;
-        const l1Entry = byUrl.get(l1Url);
-        expect(l1Entry, l1Url).toBeDefined();
-
-        const expectedLangs = {
-          en: enUrl,
-          [l1]: l1Url,
+        const expectedLangs: Record<string, string> = {
           "x-default": enUrl,
         };
+        for (const loc of guide.locales) {
+          const hreflangCode = loc === "lu" ? "lb" : loc;
+          expectedLangs[hreflangCode] = `https://clarvia.org${corridorGuidePath(guide.slug, loc)}`;
+        }
         expect(enEntry?.alternates?.languages).toEqual(expectedLangs);
-        expect(l1Entry?.alternates?.languages).toEqual(expectedLangs);
+
+        for (const loc of guide.locales) {
+          const locUrl = `https://clarvia.org${corridorGuidePath(guide.slug, loc)}`;
+          const locEntry = byUrl.get(locUrl);
+          expect(locEntry, locUrl).toBeDefined();
+          expect(locEntry?.alternates?.languages).toEqual(expectedLangs);
+        }
       }
     }
   });

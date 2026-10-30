@@ -212,7 +212,8 @@ export function corridorGuideHreflangAlternates(
   }
   const languages: Record<string, string> = {};
   for (const code of guide.locales) {
-    languages[code] = `${SITE_URL}${corridorGuidePath(guide.slug, code)}`;
+    const hreflangCode = code === "lu" ? "lb" : code;
+    languages[hreflangCode] = `${SITE_URL}${corridorGuidePath(guide.slug, code)}`;
   }
   languages["x-default"] = `${SITE_URL}${corridorGuidePath(guide.slug, "en")}`;
   return languages;

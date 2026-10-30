@@ -109,7 +109,7 @@ export default async function CorridorGuidePage({
         "@type": "HowTo",
         name: guide.title,
         description: guide.cardSummary,
-        inLanguage: lang,
+        inLanguage: lang === "lu" ? "lb" : lang,
         dateModified: guide.lastReviewed,
         publisher: {
           "@id": "https://clarvia.org/#organization",
@@ -141,7 +141,8 @@ export default async function CorridorGuidePage({
       <Header lang={siteLang} />
       <main
         id="main-content"
-        lang={lang}
+        lang={lang === "lu" ? "lb" : lang}
+        dir={lang === "ar" ? "rtl" : undefined}
         className="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 relative z-10"
       >
         <script

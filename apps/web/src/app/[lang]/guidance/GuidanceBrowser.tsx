@@ -245,17 +245,24 @@ function languageBadgeInfo(
   item: GuidanceCardItem,
   siteLang: Lang,
 ): { text: string; isNativeMatch: boolean } | null {
-  if (siteLang === "fr" || siteLang === "de") {
+  if (siteLang === "fr" || siteLang === "de" || siteLang === "lu") {
     if (item.targetLang === siteLang) {
       return {
-        text: siteLang === "fr" ? "Français" : "Deutsch",
+        text:
+          siteLang === "fr"
+            ? "Français"
+            : siteLang === "de"
+              ? "Deutsch"
+              : "Lëtzebuergesch",
         isNativeMatch: true,
       };
     }
-    return {
-      text: l(siteLang, "English", "En anglais", "Auf Englisch", "Op Englesch"),
-      isNativeMatch: false,
-    };
+    if (siteLang === "fr" || siteLang === "de") {
+      return {
+        text: l(siteLang, "English", "En anglais", "Auf Englisch", "Op Englesch"),
+        isNativeMatch: false,
+      };
+    }
   }
   if (item.localLabel) {
     return {
