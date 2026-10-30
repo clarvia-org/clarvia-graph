@@ -5,10 +5,10 @@ from __future__ import annotations
 import logging
 import re
 import unicodedata
+from collections.abc import Sequence
 from dataclasses import dataclass
 
 from app.domain.ports import LlmGenerationResult, LlmPort, StructuredLlmResult
-from app.email.copy import email_copy, inbound_locale
 from app.llm.schema import LexContact, LexSource
 from app.llm.url_liveness import strip_dead_urls
 from app.llm.url_normalize import (
@@ -21,6 +21,8 @@ from app.llm.validation import LexValidationError, validate_lex_response
 _LOG = logging.getLogger(__name__)
 _CITATION_RE = re.compile(r"\[(\d+)\]")
 _SIGN_OFF_RE = re.compile(r"(?:\n|^)Lex\.\s*$")
+_PAREN_SPAN_RE = re.compile(r"([ \t]+)\(([^()\n]{2,120})\)")
+_WORD_TOKEN_RE = re.compile(r"\S+")
 # Schema/URL failures we can still send as a sourced answer after repair.
 # Any other validation code (neutrality, HTML, donation, unknown future
 # content-quality codes) is demoted to clarify so we do not stamp "adequate".
@@ -225,7 +227,7 @@ def _normalize_newlines(text: str) -> str:
 
 
 def _ensure_lex_signoff(body: str) -> str:
-    stripped = _normalize_newlines(body).rstrip()
+    stripped = body.rstrip()
     if _SIGN_OFF_RE.search(stripped):
         return stripped
     return f"{stripped}\n\nLex."
@@ -235,6 +237,140 @@ def _strip_answer_grounding(body: str) -> str:
     body = _CITATION_RE.sub("", body)
     body = re.sub(r"[ \t]+\n", "\n", body)
     return re.sub(r" {2,}", " ", body)
+
+
+def _fold_text(text: str) -> str:
+    """Case- and diacritic-insensitive fold (including Turkish dotted/dotless i)."""
+    decomposed = unicodedata.normalize("NFD", text.replace("ı", "i").replace("İ", "i"))
+    stripped = "".join(
+        ch for ch in decomposed if unicodedata.category(ch) != "Mn"
+    )
+    return unicodedata.normalize("NFC", stripped).casefold()
+
+
+def _strip_redundant_parentheticals(body: str) -> str:
+    """Collapse redundant 'x y (X Y)' or 'Prefix X Y (X Y)' parentheticals."""
+    out_lines: list[str] = []
+    for line in body.split("\n"):
+        pos = 0
+        rebuilt: list[str] = []
+        for match in _PAREN_SPAN_RE.finditer(line):
+            inner = match.group(2).strip()
+            inner_words = inner.split()
+            before = line[pos : match.start()]
+            prev_tokens = list(_WORD_TOKEN_RE.finditer(before))
+            k = len(inner_words)
+            if k >= 1 and len(prev_tokens) >= k:
+                first_tok = prev_tokens[-k]
+                candidate_span = before[first_tok.start() :]
+                cleaned_candidate = candidate_span.lstrip("(\"'«„[")
+                leading_punct = candidate_span[
+                    : len(candidate_span) - len(cleaned_candidate)
+                ]
+                if _fold_text(cleaned_candidate) == _fold_text(inner):
+                    rebuilt.append(before[: first_tok.start()] + leading_punct + inner)
+                    pos = match.end()
+                    continue
+            rebuilt.append(line[pos : match.end()])
+            pos = match.end()
+        rebuilt.append(line[pos:])
+        out_lines.append("".join(rebuilt))
+    return "\n".join(out_lines)
+
+
+def _find_matching_span_in_body(target: str, body: str) -> str | None:
+    """Find a verbatim substring in body matching target after diacritic folding."""
+    target_words = target.split()
+    k = len(target_words)
+    if k == 0:
+        return None
+    target_folded = _fold_text(" ".join(target_words))
+    tokens = list(_WORD_TOKEN_RE.finditer(body))
+    if len(tokens) < k:
+        return None
+    for idx in range(len(tokens) - k + 1):
+        raw_span = body[tokens[idx].start() : tokens[idx + k - 1].end()]
+        trimmed = raw_span.strip(".,;:!?()[]\"'«»„“”")
+        if (
+            "\n" not in trimmed
+            and _fold_text(" ".join(trimmed.split())) == target_folded
+        ):
+            return trimmed
+    return None
+
+
+def _reconcile_contact_name(name: str, body: str) -> str | None:
+    """Return an existing substring of body that represents this contact name."""
+    if not name.strip():
+        return None
+    if name.casefold() in body.casefold():
+        return name
+    direct = _find_matching_span_in_body(name, body)
+    if direct is not None:
+        return direct
+    for sep in (", ", " (", " - ", " / "):
+        if sep in name:
+            prefix = name.split(sep, 1)[0].strip()
+            if len(prefix) >= 8:
+                if prefix.casefold() in body.casefold():
+                    return prefix
+                matched = _find_matching_span_in_body(prefix, body)
+                if matched is not None:
+                    return matched
+    return None
+
+
+def _insert_contact_name_inline(body: str, name: str, source_id: int) -> str:
+    """Weave a missing contact name inline before its [source_id] citation."""
+    marker_pattern = re.compile(rf"(?:[ \t]*\[\d+\])*?[ \t]*\[{source_id}\]")
+    match = marker_pattern.search(body)
+    if match is not None:
+        idx = match.start()
+        return f"{body[:idx]} ({name}){body[idx:]}"
+    stripped = body.rstrip()
+    if stripped.endswith("Lex."):
+        return f"{stripped[:-4].rstrip()} ({name}) [{source_id}]\n\nLex."
+    return f"{stripped} ({name}) [{source_id}]\n\nLex."
+
+
+def _ensure_all_sources_cited(
+    body: str,
+    sources: Sequence[LexSource],
+    contacts: Sequence[LexContact],
+) -> str:
+    """Ensure every source.id appears at least once as [id] in body_markdown."""
+    cited_markers = {int(match) for match in _CITATION_RE.findall(body)}
+    for source in sources:
+        if source.id in cited_markers:
+            continue
+        inserted = False
+        for contact in contacts:
+            if contact.source_id == source.id and contact.name.strip():
+                pos = body.casefold().find(contact.name.casefold())
+                if pos != -1:
+                    end_pos = pos + len(contact.name)
+                    line_end = body.find("\n", end_pos)
+                    if line_end == -1:
+                        line_end = len(body)
+                    clause = body[end_pos:line_end]
+                    punct_match = re.search(r"[.;!?]", clause)
+                    insert_at = (
+                        end_pos + punct_match.start()
+                        if punct_match is not None
+                        else end_pos
+                    )
+                    body = f"{body[:insert_at]} [{source.id}]{body[insert_at:]}"
+                    inserted = True
+                    break
+        if not inserted:
+            insert = f" [{source.id}]"
+            stripped = body.rstrip()
+            if stripped.endswith("Lex."):
+                body = stripped[:-4].rstrip() + insert + "\n\nLex."
+            else:
+                body = stripped + insert + "\n\nLex."
+        cited_markers.add(source.id)
+    return body
 
 
 def _coerce_sendable(
@@ -294,7 +430,9 @@ def _coerce_sendable(
 def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResult:
     """Deterministic fixes so common model slips pass blueprint validation."""
     response = result.response
-    body = _normalize_dashes(_normalize_newlines(response.body_markdown))
+    body = _strip_redundant_parentheticals(
+        _normalize_dashes(_normalize_newlines(response.body_markdown))
+    )
     sources = [
         source.model_copy(
             update={
@@ -350,23 +488,25 @@ def _normalize_model_response(result: LlmGenerationResult) -> LlmGenerationResul
             for contact in contacts
         ]
 
-    body_folded = body.casefold()
-    missing_names = [
-        contact.name
-        for contact in contacts
-        if contact.name.strip() and contact.name.casefold() not in body_folded
-    ]
-    if missing_names:
-        bullets = "\n".join(f"- {name}" for name in missing_names)
-        heading = email_copy(inbound_locale(response.language))[
-            "organisations_and_contacts"
-        ]
-        insert = f"\n\n{heading}\n{bullets}\n"
-        stripped = body.rstrip()
-        if stripped.endswith("Lex."):
-            body = stripped[:-4].rstrip() + insert + "\nLex."
+    reconciled_contacts: list[LexContact] = []
+    for contact in contacts:
+        if not contact.name.strip():
+            reconciled_contacts.append(contact)
+            continue
+        matched_name = _reconcile_contact_name(contact.name, body)
+        if matched_name is not None:
+            reconciled_contacts.append(
+                contact.model_copy(update={"name": matched_name})
+                if matched_name != contact.name
+                else contact
+            )
         else:
-            body = stripped + insert + "\n\nLex."
+            body = _insert_contact_name_inline(body, contact.name, contact.source_id)
+            reconciled_contacts.append(contact)
+    contacts = reconciled_contacts
+
+    if sources:
+        body = _ensure_all_sources_cited(body, sources, contacts)
 
     body = _normalize_dashes(body)
 
@@ -478,20 +618,7 @@ def _repair_search_evidence(
             )
         )
 
-    # Ensure every remaining source is cited or used by a contact.
-    cited_markers = {int(match) for match in _CITATION_RE.findall(body)}
-    used_by_contact = {contact.source_id for contact in kept_contacts}
-    for source in kept_sources:
-        if source.id in cited_markers or source.id in used_by_contact:
-            continue
-        # Append a citation before sign-off.
-        insert = f" [{source.id}]"
-        stripped = body.rstrip()
-        if stripped.endswith("Lex."):
-            body = stripped[:-4].rstrip() + insert + "\n\nLex."
-        else:
-            body = stripped + insert + "\n\nLex."
-        cited_markers.add(source.id)
+    body = _ensure_all_sources_cited(body, kept_sources, kept_contacts)
 
     return body, kept_sources, kept_contacts
 
