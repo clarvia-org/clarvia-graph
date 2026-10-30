@@ -97,6 +97,33 @@ export const ASK_PATH_REDIRECTS = [
   { source: "/lu/ask", destination: "/ask?lang=lb", permanent: false },
 ] as const;
 
+/**
+ * Permanent 308 redirects from the retired June 2026 `/[lang]/guidance/lu/[slug]` pages
+ * to the comprehensive Luxembourg Single-Country Bereavement Hub (`/fr/guide/...` or `/en/guide/...`).
+ */
+export const LEGACY_GUIDANCE_REDIRECTS = [
+  {
+    source: "/fr/guidance/lu/:slug*",
+    destination: "/fr/guide/luxembourg-bereavement-checklist",
+    permanent: true,
+  },
+  {
+    source: "/en/guidance/lu/:slug*",
+    destination: "/en/guide/luxembourg-bereavement-checklist",
+    permanent: true,
+  },
+  {
+    source: "/de/guidance/lu/:slug*",
+    destination: "/en/guide/luxembourg-bereavement-checklist",
+    permanent: true,
+  },
+  {
+    source: "/lu/guidance/lu/:slug*",
+    destination: "/en/guide/luxembourg-bereavement-checklist",
+    permanent: true,
+  },
+] as const;
+
 /** hreflang map for a path after the language prefix (`""` for home, `"contact"` for /{lang}/contact). */
 export function hreflangLanguages(pathAfterLang = ""): Record<string, string> {
   const suffix = pathAfterLang ? `/${pathAfterLang}` : "";

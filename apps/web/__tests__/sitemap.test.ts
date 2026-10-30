@@ -1,6 +1,12 @@
 import { describe, expect, it } from "vitest";
 import sitemap from "@/app/sitemap";
-import { ADS_FINAL_URLS, ASK_PATH_REDIRECTS, LANGUAGE_REDIRECTS, hreflangLanguages } from "@/lib/i18n";
+import {
+  ADS_FINAL_URLS,
+  ASK_PATH_REDIRECTS,
+  LANGUAGE_REDIRECTS,
+  LEGACY_GUIDANCE_REDIRECTS,
+  hreflangLanguages,
+} from "@/lib/i18n";
 
 describe("sitemap", () => {
   it("includes guidance, how-it-works, checklist, and guide URLs", () => {
@@ -9,11 +15,42 @@ describe("sitemap", () => {
     expect(urls).toContain("https://clarvia.org/fr/guidance");
     expect(urls).toContain("https://clarvia.org/en/checklist");
     expect(urls).toContain(
-      "https://clarvia.org/en/guidance/lu/registering-a-death"
+      "https://clarvia.org/en/guide/luxembourg-bereavement-checklist",
+    );
+    expect(urls).toContain(
+      "https://clarvia.org/fr/guide/luxembourg-bereavement-checklist",
+    );
+    expect(urls).not.toContain(
+      "https://clarvia.org/en/guidance/lu/registering-a-death",
     );
     expect(urls).toContain("https://clarvia.org/en/updates/ask-clarvia-launches");
     expect(urls).toContain("https://clarvia.org/ask");
     expect(urls).toContain("https://clarvia.org/en/partners");
+  });
+
+  it("redirects retired /guidance/lu/* URLs permanently to the Luxembourg bereavement hub", () => {
+    expect(LEGACY_GUIDANCE_REDIRECTS).toEqual([
+      {
+        source: "/fr/guidance/lu/:slug*",
+        destination: "/fr/guide/luxembourg-bereavement-checklist",
+        permanent: true,
+      },
+      {
+        source: "/en/guidance/lu/:slug*",
+        destination: "/en/guide/luxembourg-bereavement-checklist",
+        permanent: true,
+      },
+      {
+        source: "/de/guidance/lu/:slug*",
+        destination: "/en/guide/luxembourg-bereavement-checklist",
+        permanent: true,
+      },
+      {
+        source: "/lu/guidance/lu/:slug*",
+        destination: "/en/guide/luxembourg-bereavement-checklist",
+        permanent: true,
+      },
+    ]);
   });
 
   it("sets hreflang x-default to the English URL on translated pages", () => {
