@@ -2,10 +2,10 @@ import { type Lang, l } from "@/lib/i18n";
 
 /** Curated headline-only highlights. Change these dates to rotate the four cards. */
 export const HIGHLIGHT_UPDATE_DATES = [
-  "2026-09-22", // language access
+  "2026-10-30", // 1,000 guidance pages across 196 countries & 14 languages
+  "2026-10-28", // Ask Clarvia offered to Spanish officials after train crash
+  "2026-10-27", // first full-time team member in Luxembourg
   "2026-09-18", // families reached in 10 countries
-  "2026-09-03", // Belgian palliative care partnership
-  "2026-09-01", // official source verification
 ] as const;
 
 /** Historical article routes remain available for existing links. */

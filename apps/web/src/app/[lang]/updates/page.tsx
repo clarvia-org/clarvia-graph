@@ -8,11 +8,17 @@ import { UPDATES } from "./updates-data";
 import { HIGHLIGHT_UPDATE_DATES } from "@/content/featured-updates";
 
 const MORE_SERVICE_DATES = new Set([
+  "2026-10-30",
+  "2026-10-28",
+  "2026-10-27",
+  "2026-10-04",
+  "2026-09-27",
   "2026-09-22",
   "2026-09-18",
   "2026-09-10",
   "2026-09-03",
   "2026-09-01",
+  "2026-08-30",
   "2026-08-25",
   "2026-08-23",
   "2026-08-21",
