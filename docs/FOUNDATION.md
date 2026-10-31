@@ -1670,8 +1670,8 @@ known_related_sources:
 
 | Phase | Who | Assertion review | Graph record review |
 |---|---|---|---|
-| Solo founder | 1 person | Self-review with **24h mandatory delay** between extraction and approval | Self-review |
-| First reviewer | 2–3 people | Legal reviewer approves assertions. High-risk assertions require founder + legal reviewer | Founder approves modeling |
+| Founding directors | 2 co-founders | Review with **24h mandatory delay** when extraction and approval are by the same founder | Co-founder review |
+| Co-founders & core staff (current) | 2 co-founders + first FTE | Staff or legal reviewer approves assertions. High-risk assertions require co-founder + reviewer | Co-founder / staff approves modeling |
 | Mature | 5+ people | Jurisdiction reviewer approves. Cross-border items require jurisdiction + cross-border reviewer | Role-based with CODEOWNERS |
 
 **Review operates at the assertion level.** A source batch file can contain mixed statuses. Unapproved assertions may exist in main only if no public graph record references them.

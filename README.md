@@ -20,7 +20,7 @@
 
 > **Status:** CI passing · [OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112) · [OpenSSF Scorecard](https://scorecard.dev/#/projects/github.com/clarvia-org/clarvia-graph) · [REUSE compliant](https://api.reuse.software/info/github.com/clarvia-org/clarvia-graph) · [Codecov](https://codecov.io/gh/clarvia-org/clarvia-graph) · [SonarCloud](https://sonarcloud.io/summary/new_code?id=clarvia-org_clarvia-graph) · Code: EUPL-1.2 · Data: CC-BY-4.0 · [DOI: 10.5281/zenodo.20572455](https://doi.org/10.5281/zenodo.20572455) · [FAIR: 4/5](https://fair-software.eu)
 
-Clarvia Graph is reusable public-interest digital infrastructure. While it serves as the technical engine behind the consumer-facing checklist at [clarvia.org](https://clarvia.org), it is designed as an open, source-backed administrative workflow repository. It structures official rules, deadlines, and requirements for bereavement paperwork so that any application, civic-tech portal, research project, or public service can consume and adapt them automatically.
+Clarvia Graph is reusable public-interest digital infrastructure. Together with the consumer-facing website at [clarvia.org](https://clarvia.org) — which hosts **Ask Clarvia** (`/ask`), a **1,000-page multilingual guidance library across 196 countries and 14 languages** (`/guidance`) covering terminal illness and bereavement administration, and the **interactive bereavement checklist** (`/checklist`) — it provides an open, source-backed administrative workflow repository. It structures official rules, deadlines, and requirements so that any application, civic-tech portal, research project, or public service can consume and adapt them automatically.
 
 This repository is Clarvia’s **public monorepo**: the consequence graph, the clarvia.org website, legislation data for agents (`lex/`), and the public-safe Lex email service (`services/lex/`) live here under path-filtered CI. See [`docs/MONOREPO.md`](docs/MONOREPO.md) for layout, licenses, and deploy boundaries.
 
@@ -63,7 +63,7 @@ Technically, Clarvia Graph is a structured, versioned, source-backed knowledge g
 | Path | Role | Runtime |
 |---|---|---|
 | `graph/`, `schemas/`, `vocab/`, `sources/`, `packages/*` | Consequence graph + validation/export tooling | Git + CI exports |
-| [`apps/web`](apps/web/) | Public website (clarvia.org) | Coolify / GCE |
+| [`apps/web`](apps/web/) | Public website (`clarvia.org`: Ask Clarvia, 1,000-page guidance library across 196 countries & 14 languages, and alpha checklist) | Coolify / GCE |
 | [`lex/`](lex/) | Normalized national legislation for AI agents | Git + local CLI |
 | [`services/lex/`](services/lex/) | Lex email automation (public-safe code) | Cloud Run (`europe-west1`) |
 

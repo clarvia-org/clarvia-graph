@@ -128,7 +128,7 @@ export default async function HowItWorksPage({ params }: { params: Promise<{ lan
           <p>
             {tr(
               lang,
-              "Your question is processed to research relevant official sources and prepare a reply with links. AI is used and a reply may be sent automatically. Maintained Clarvia data and legislation may be used when relevant, but an individual email reply is not the same as a human-approved checklist record. Do not assume that each reply has been reviewed by a person or lawyer before it reaches you.",
+              "You can ask about any step from a terminal illness diagnosis through death and final post-death administration. Your question is processed by our automated guidance pipeline, which uses AI and verification scripts to research relevant official sources and compile a structured email reply with links. Maintained Clarvia data and legislation may be used when relevant, but an individual email reply is not the same as a human-approved checklist record. Do not assume that each reply has been reviewed by a person or lawyer before it reaches you.",
             )}
           </p>
         </Block>
@@ -140,7 +140,7 @@ export default async function HowItWorksPage({ params }: { params: Promise<{ lan
           <p>
             {tr(
               lang,
-              "Clarvia captures an official source, records a supported assertion, models the consequence and task, and publishes a checklist item only after the required review states pass. In plain language: official source → saved version → checked claim → practical consequence → task → checklist item.",
+              "Clarvia's published guidance library covers 196 countries and cross-border situations across 14 languages, linking each guide to verified official national and consular sources. For the interactive checklist, Clarvia captures an official source, records a supported assertion, models the consequence and task, and publishes a checklist item only after the required review states pass (official source → saved version → checked claim → practical consequence → task → checklist item).",
             )}
           </p>
         </Block>
@@ -149,7 +149,7 @@ export default async function HowItWorksPage({ params }: { params: Promise<{ lan
           <p>
             {tr(
               lang,
-              "AI may help discover sources and draft structured records. A human reviewer checks the source anchor and decides whether an assertion can be approved. AI-assisted records remain labelled as AI-assisted after approval. Clarvia's public review policy sets the publication gate; current founder review requires a delay between extracting and approving a source assertion.",
+              "AI helps discover official sources, draft structured records, and prepare multilingual guides. We continuously improve our published guidance using automated validation gates, hallucination-prevention checks, staff review, and open-source contributors on GitHub. For the consequence graph, a human reviewer checks the source anchor and approves each assertion under Clarvia's public review policy, and AI-assisted records remain labelled as AI-assisted after approval.",
             )}
           </p>
         </Block>
@@ -158,7 +158,7 @@ export default async function HowItWorksPage({ params }: { params: Promise<{ lan
           <p>
             {tr(
               lang,
-              "Clarvia Graph organizes source-backed administrative tasks. lex stores current official legislation in a consistent, checksummed format for answering systems. lex is not the official publisher and is not itself a family guide. Clarvia cites the official source.",
+              "Clarvia Graph organizes source-backed administrative tasks into a formal consequence graph, and lex stores current official legislation in a consistent, checksummed format for answering systems. Both remain active development areas that continue to expand to additional jurisdictions as dedicated resources and funding allow. lex is not the official publisher and is not itself a family guide; Clarvia always cites the official source.",
             )}
           </p>
         </Block>
@@ -182,7 +182,7 @@ export default async function HowItWorksPage({ params }: { params: Promise<{ lan
           <p>
             {tr(
               lang,
-              "Clarvia ASBL is governed by its unpaid directors, Günther Schriver and Tommi Lindfors. Published graph records carry review information and follow Clarvia's public review policy. This governance does not turn Clarvia into an emergency, legal, tax, medical, psychological, notarial, banking, financial, or succession adviser.",
+              "Clarvia ASBL was founded and is governed by its two unpaid co-founders and directors, Günther Schriver and Tommi Lindfors, with day-to-day validation, guide improvements, and operations supported by Clarvia's staff and open-source contributors. Published records follow Clarvia's public review policy. This governance does not turn Clarvia into an emergency, legal, tax, medical, psychological, notarial, banking, financial, or succession adviser.",
             )}
           </p>
         </Block>

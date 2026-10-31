@@ -98,10 +98,10 @@ export default function FooterSection({ lang }: { lang: Lang }) {
             <p className="text-sm text-calm-blue-600 leading-relaxed">
               {l(
                 lang,
-                "Free bereavement guidance for families.",
-                "Un accompagnement gratuit pour les familles au Luxembourg après un décès.",
-                "Kostenlose Orientierung im Trauerfall für Familien in Luxemburg.",
-                "Gratis Orientéierung am Trauerfall fir Familljen zu Lëtzebuerg.",
+                "Free terminal-illness and bereavement guidance for families.",
+                "Un accompagnement administratif gratuit pour les familles face à la maladie grave ou au décès d'un proche.",
+                "Kostenlose Orientierung bei schwerer Krankheit und im Trauerfall für Familien.",
+                "Gratis Orientéierung bei schwéierer Krankheet an am Trauerfall fir Familljen.",
               )}
             </p>
           </div>
