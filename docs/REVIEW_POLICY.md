@@ -20,22 +20,22 @@ This document defines how content is reviewed, approved, and published in the Cl
 
 The review model evolves with the size of the team:
 
-### Phase 1: Solo Founder (current)
+### Phase 1: Founding Directors (initial launch)
 
 | What | Who reviews | Rule |
 |---|---|---|
-| Source assertions | Founder | Self-review with **mandatory 24-hour delay** between extraction and approval |
-| Graph records | Founder | Self-review, no delay required |
-| Scenario tests | Founder | Self-review |
+| Source assertions | Co-founders | Review with **mandatory 24-hour delay** between extraction and approval when reviewed by the extracting founder |
+| Graph records | Co-founders | Review by a co-founder |
+| Scenario tests | Co-founders | Review by a co-founder |
 
-The 24-hour delay for assertions ensures the reviewer comes back with fresh eyes. Extraction and approval should not happen in the same session.
+The 24-hour delay for self-reviewed assertions ensures the reviewer comes back with fresh eyes. Extraction and approval should not happen in the same session.
 
-### Phase 2: First Reviewer (2–3 people)
+### Phase 2: Co-Founders & Core Staff (current — 2 co-founders + first FTE)
 
 | What | Who reviews | Rule |
 |---|---|---|
-| Source assertions | Legal reviewer | Approves assertions. **High-risk assertions** require founder + legal reviewer |
-| Graph records | Founder | Approves modeling decisions |
+| Source assertions | Staff reviewer or co-founder | Approves assertions against official source anchors. **High-risk assertions** require co-founder + staff/legal reviewer |
+| Graph records & guides | Co-founders & staff | Approves modeling decisions, validation checks, and guide updates |
 | Scenario tests | Any team member | Reviews test logic |
 
 ### Phase 3: Mature (5+ people)

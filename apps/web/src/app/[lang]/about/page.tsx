@@ -91,10 +91,10 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         <p className="text-lg text-calm-blue-700 leading-relaxed text-center max-w-2xl mx-auto mb-16">
           {l(
             lang,
-            "Clarvia ASBL is a registered non-profit association in Luxembourg (RCS F15680), dedicated to helping families navigate the administrative burden that follows the death of a loved one. All of our services are free, multilingual, and open to the public.",
-            "Clarvia ASBL est une association sans but lucratif enregistrée au Luxembourg (RCS F15680). Elle aide les familles à faire face aux démarches administratives qui suivent le décès d'un proche. Tous nos services sont gratuits, multilingues et accessibles au public.",
-            "Clarvia ASBL ist ein in Luxemburg eingetragener gemeinnütziger Verein (RCS F15680). Wir unterstützen Familien dabei, die administrativen Aufgaben zu bewältigen, die nach dem Tod eines nahestehenden Menschen entstehen. Alle unsere Angebote sind kostenlos, mehrsprachig und öffentlich zugänglich.",
-            "Clarvia ASBL ass eng zu Lëtzebuerg registréiert Associatioun ouni Gewënnzweck (RCS F15680). Si hëlleft Familljen, sech an den administrativen Demarchen nom Doud vun engem nooste Mënsch zurechtzefannen. All eis Servicer si gratis, méisproocheg an ëffentlech zougänglech.",
+            "Clarvia ASBL is a registered non-profit association in Luxembourg (RCS F15680), dedicated to helping families navigate the administrative burden of a terminal illness diagnosis or the death of a loved one. All of our services are free, multilingual, and open to the public.",
+            "Clarvia ASBL est une association sans but lucratif enregistrée au Luxembourg (RCS F15680). Elle aide les familles à faire face aux démarches administratives liées au diagnostic d'une maladie grave ou au décès d'un proche. Tous nos services sont gratuits, multilingues et accessibles au public.",
+            "Clarvia ASBL ist ein in Luxemburg eingetragener gemeinnütziger Verein (RCS F15680). Wir unterstützen Familien dabei, die administrativen Aufgaben bei einer schweren Krankheitsdiagnose oder nach dem Tod eines nahestehenden Menschen zu bewältigen. Alle unsere Angebote sind kostenlos, mehrsprachig und öffentlich zugänglich.",
+            "Clarvia ASBL ass eng zu Lëtzebuerg registréiert Associatioun ouni Gewënnzweck (RCS F15680). Si hëlleft Familljen, sech an den administrativen Demarchen bei enger schwéierer Krankheetsdiagnos oder nom Doud vun engem nooste Mënsch zurechtzefannen. All eis Servicer si gratis, méisproocheg an ëffentlech zougänglech.",
           )}
         </p>
 
@@ -175,10 +175,10 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
                 <p>
                   {l(
                     lang,
-                    "Ask Clarvia is our live email service for families worldwide. Describe what happened in your own language. Lex at Clarvia replies by email, usually within a few minutes, with cited sources. The service is free.",
-                    "Demandez à Clarvia est notre service de réponse par e-mail destiné aux familles du monde entier. Décrivez ce qui s’est passé dans votre propre langue. Lex, de l’équipe Clarvia, vous répond par e-mail, généralement en quelques minutes, en indiquant les sources utilisées. Le service est gratuit.",
-                    "Clarvia fragen ist unser E-Mail-Service für Familien weltweit. Schildern Sie in Ihrer eigenen Sprache, was passiert ist. Lex bei Clarvia antwortet Ihnen per E-Mail, in der Regel innerhalb weniger Minuten und mit Angaben zu den verwendeten Quellen. Der Service ist kostenlos.",
-                    "Frot Clarvia ass eisen E-Mail-Service fir Famillje weltwäit. Beschreift an Ärer eegener Sprooch, wat geschitt ass. De Lex bei Clarvia äntwert Iech per E-Mail, normalerweis bannent e puer Minutten a mat Linken op déi benotzte Quellen. De Service ass gratis.",
+                    "Ask Clarvia is our live email service for families worldwide facing a terminal illness diagnosis or the death of a loved one. Describe your situation in your own language—from terminal diagnosis through final post-death administrative tasks. Lex at Clarvia replies by email, usually within a few minutes, with cited official sources. The service is free.",
+                    "Demandez à Clarvia est notre service de réponse par e-mail destiné aux familles du monde entier confrontées au diagnostic d’une maladie grave ou au décès d’un proche. Décrivez votre situation dans votre propre langue, du diagnostic jusqu’aux dernières démarches administratives après le décès. Lex, de l’équipe Clarvia, vous répond par e-mail, généralement en quelques minutes, en citant les sources officielles utilisées. Le service est gratuit.",
+                    "Clarvia fragen ist unser E-Mail-Service für Familien weltweit, die mit einer schweren Krankheitsdiagnose oder dem Tod eines nahestehenden Menschen konfrontiert sind. Schildern Sie Ihre Situation in Ihrer eigenen Sprache – von der Diagnose bis zur letzten administrativen Aufgabe im Trauerfall. Lex bei Clarvia antwortet Ihnen per E-Mail, in der Regel innerhalb weniger Minuten und mit Angaben zu den offiziellen Quellen. Der Service ist kostenlos.",
+                    "Frot Clarvia ass eisen E-Mail-Service fir Famillje weltwäit, déi mat enger schwéierer Krankheetsdiagnos oder dem Doud vun engem nooste Mënsch konfrontéiert sinn. Beschreift Är Situatioun an Ärer eegener Sprooch – vun der Diagnos bis zur leschter administrativer Demarche nom Doud. De Lex bei Clarvia äntwert Iech per E-Mail, normalerweis bannent e puer Minutten a mat Linken op déi offiziell Quellen. De Service ass gratis.",
                   )}
                 </p>
                 <p>
@@ -205,7 +205,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
               <p className="text-base text-calm-blue-600 leading-relaxed mb-3">
                 {tr(
                   lang,
-                  "Families can read source-linked guides organised by country, and use the bereavement checklist, which turns reviewed task data into a practical list evaluated in the visitor's browser. If a guide or task does not match the country or facts, use Ask Clarvia.",
+                  "Families can read source-linked guides across 196 countries and 14 languages covering terminal illness and bereavement administration, and use the interactive checklist evaluated in the visitor's browser. If a guide or task does not match the country or facts, use Ask Clarvia.",
                 )}
               </p>
               <Link href={`/${lang}/guidance`} className="text-calm-blue-700 font-medium underline">
@@ -355,7 +355,19 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
               <span className="font-semibold text-calm-blue-800">
                 {l(lang, "Founded by", "Fondée par", "Gegründet von", "Gegrënnt vun")}:
               </span>{" "}
-              Gunther Schriver {l(lang, "and", "et", "und", "an")} Tommi Lindfors
+              Günther Schriver {l(lang, "and", "et", "und", "an")} Tommi Lindfors
+            </p>
+            <p>
+              <span className="font-semibold text-calm-blue-800">
+                {l(lang, "Team", "Équipe", "Team", "Ekipp")}:
+              </span>{" "}
+              {l(
+                lang,
+                "2 unpaid co-founders & directors, core staff (1 FTE), and open-source contributors",
+                "2 cofondateurs et administrateurs bénévoles, équipe salariée (1 ETP) et contributeurs open-source",
+                "2 ehrenamtliche Mitgründer und Vorstandsmitglieder, hauptamtliches Kernteam (1 VZÄ) sowie Open-Source-Mitwirkende",
+                "2 benevole Matgrënner an Administrateuren, haaptamtlecht Team (1 VZÄ) an Open-Source-Contributeuren",
+              )}
             </p>
             <p>
               <span className="font-semibold text-calm-blue-800">

@@ -3,7 +3,7 @@
 [![Web CI](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-web.yml/badge.svg)](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-web.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
 
-Public Next.js site for [clarvia.org](https://clarvia.org) — the thin web layer that turns Clarvia Graph exports into multilingual bereavement checklists.
+Public Next.js site for [clarvia.org](https://clarvia.org) — hosting **Ask Clarvia** (`/ask`), the **1,000-page multilingual guidance library across 196 countries and 14 languages** (`/[lang]/guidance` and `/[lang]/guide/[slug]`) covering terminal illness and bereavement administration, and the **interactive bereavement checklist** (`/[lang]/checklist`) powered by Clarvia Graph exports.
 
 > Part of the [`clarvia-graph`](https://github.com/clarvia-org/clarvia-graph) monorepo. See [`docs/MONOREPO.md`](../../docs/MONOREPO.md).
 
@@ -11,7 +11,7 @@ Public Next.js site for [clarvia.org](https://clarvia.org) — the thin web laye
 
 ## Role
 
-- Render public checklist and information pages (EN / FR / DE)
+- Render public pages in EN / FR / DE / LU, plus 1,000 localized guidance pages across 196 countries and 14 languages (`/[lang]/guidance` and `/[lang]/guide/[slug]`)
 - Show source citations and verification status from graph exports
 - Host Turnstile-protected feedback, subscribe, and contact forms
 - Stay thin: **workflow facts live in the graph**, not duplicated here
