@@ -8,6 +8,51 @@ export type Update = {
 /* Newest first — sorted by date descending */
 export const UPDATES: Update[] = [
   {
+    date: "2026-10-30",
+    headline: {
+      en: "Clarvia publishes 1,000 source-linked guidance pages covering 196 countries across 14 languages",
+      fr: "Clarvia publie 1 000 pages de guides sourcés couvrant 196 pays en 14 langues",
+      de: "Clarvia veröffentlicht 1.000 quellenbasierte Leitfadenseiten für 196 Länder in 14 Sprachen",
+      lu: "Clarvia publizéiert 1.000 quellenbaséiert Guidesäite fir 196 Länner a 14 Sproochen",
+    },
+  },
+  {
+    date: "2026-10-28",
+    headline: {
+      en: "Clarvia offers Ask Clarvia to Spanish officials to support bereaved families following the lethal train crash",
+      fr: "Clarvia met Ask Clarvia à la disposition des autorités espagnoles pour accompagner les familles endeuillées après l'accident ferroviaire",
+      de: "Clarvia bietet den spanischen Behörden nach dem schweren Zugunglück Unterstützung über Ask Clarvia für betroffene Familien an",
+      lu: "Clarvia bitt de spueneschen Autoritéiten nom schwéieren Zuchongléck Ënnerstëtzung iwwer Ask Clarvia fir betraffe Familljen un",
+    },
+  },
+  {
+    date: "2026-10-27",
+    headline: {
+      en: "Clarvia welcomes its first full-time team member in Luxembourg to support guidance quality and partner outreach",
+      fr: "Clarvia accueille son premier collaborateur à temps plein au Luxembourg pour renforcer la qualité des guides et les partenariats",
+      de: "Clarvia begrüßt erstes Vollzeit-Teammitglied in Luxemburg zur Stärkung der Leitfadenqualität und Partnerarbeit",
+      lu: "Clarvia begréisst säin éischte Vollzäit-Mataarbechter zu Lëtzebuerg fir d'Qualitéit vun de Guiden an d'Partneraarbecht ze stäerken",
+    },
+  },
+  {
+    date: "2026-10-04",
+    headline: {
+      en: "Palliative care specialist Uwe Schneider contributes guest commentary on the administrative burden families face after a death",
+      fr: "Le spécialiste en soins palliatifs Uwe Schneider signe une tribune invitée sur la charge administrative après un décès",
+      de: "Palliativfachkraft Uwe Schneider veröffentlicht Gastbeitrag zur administrativen Belastung von Familien nach einem Todesfall",
+      lu: "De Palliativspezialist Uwe Schneider publizéiert e Gaaschtbäitrag iwwer déi administrativ Belaaschtung vu Familljen no engem Doudesfall",
+    },
+  },
+  {
+    date: "2026-09-27",
+    headline: {
+      en: "Clarvia publishes a first-hour contributor guide to help new volunteers verify sources and improve translations",
+      fr: "Clarvia publie un guide de démarrage pour aider les nouveaux bénévoles à vérifier les sources et améliorer les traductions",
+      de: "Clarvia veröffentlicht einen Einstiegsleitfaden für neue Freiwillige zur Quellenprüfung und Übersetzungsarbeit",
+      lu: "Clarvia publizéiert en Einstiegsguide fir nei Benevollen, fir Quellen ze kontrolléieren an Iwwersetzungen ze verbesseren",
+    },
+  },
+  {
     date: "2026-09-22",
     headline: {
       en: "Ask Clarvia’s question page is now available in 14 languages",
@@ -50,6 +95,15 @@ export const UPDATES: Update[] = [
       fr: "Ask Clarvia vérifie désormais en temps réel les liens vers les sources officielles",
       de: "Ask Clarvia prüft Links zu offiziellen Quellen jetzt in Echtzeit",
       lu: "Ask Clarvia iwwerpréift Linken op offiziell Quellen elo an Echtzäit",
+    },
+  },
+  {
+    date: "2026-08-30",
+    headline: {
+      en: "Clarvia offers Ask Clarvia to Nepalese officials in Nepali and English following the devastating flash floods",
+      fr: "Clarvia met Ask Clarvia à la disposition des autorités népalaises en népalais et en anglais après les graves inondations",
+      de: "Clarvia bietet den nepalesischen Behörden nach den schweren Sturzfluten Unterstützung über Ask Clarvia auf Nepali und Englisch an",
+      lu: "Clarvia bitt den nepaleeseschen Autoritéiten no de schwéiere Stuerzfluten Ënnerstëtzung iwwer Ask Clarvia op Nepaleesesch an Englesch un",
     },
   },
   {
