@@ -305,16 +305,18 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
       "https://www.testamentsregister.de/en",
     ]);
 
+    const ENTITY_MAP: Record<string, string> = {
+      "&amp;": "&",
+      "&quot;": '"',
+      "&#39;": "'",
+      "&apos;": "'",
+      "&nbsp;": " ",
+    };
+
     const unescapeHtml = (html: string) =>
       html
         .replace(/<[^>]+>/g, " ")
-        .replace(/&amp;/g, "&")
-        .replace(/&quot;/g, '"')
-        .replace(/&#39;/g, "'")
-        .replace(/&apos;/g, "'")
-        .replace(/&lt;/g, "<")
-        .replace(/&gt;/g, ">")
-        .replace(/&nbsp;/g, " ")
+        .replace(/&(?:amp|quot|#39|apos|nbsp);/g, (m) => ENTITY_MAP[m] ?? m)
         .replace(/\s+/g, " ")
         .trim();
 
@@ -413,6 +415,18 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
         expect(view.closingQuestion, `${prefix} closingQuestion em-dash`).not.toContain(
           "\u2014",
         );
+        expect(combinedHtml, `${prefix} truncated (.S.`).not.toContain("(.S.");
+        expect(combinedHtml, `${prefix} unclosed ALO)`).not.toMatch(/<(?:strong|em)>ALO\)/);
+
+        for (const tag of ["strong", "em", "span", "a", "p", "ul", "li"]) {
+          const openCount = Array.from(
+            combinedHtml.matchAll(new RegExp(`<${tag}\\b[^>]*>`, "gi")),
+          ).length;
+          const closeCount = Array.from(
+            combinedHtml.matchAll(new RegExp(`</${tag}\\s*>`, "gi")),
+          ).length;
+          expect(openCount, `${prefix} balanced <${tag}> tags`).toBe(closeCount);
+        }
 
         const sourceMap = new Map(view.sources.map((s) => [s.id, s.url]));
         for (const m of combinedHtml.matchAll(/<a\s+href="([^"]+)"[^>]*>\[(\d+)\]<\/a>/g)) {
