@@ -54,15 +54,15 @@ pnpm test
 npx tsx packages/cli/src/index.ts scenario tests/scenarios/lu-fr-bank-account.yml
 
 # 4. Generate web runtime and EU interoperability (JSON-LD) exports
-pnpm export:web
-pnpm export:interoperability
+pnpm export-web
+pnpm export-json
 ```
 
 **Expected output:**
 - `pnpm validate` prints `Validation passed (0 errors)` across all 9 validation layers.
 - `pnpm test` passes all unit, scenario, exporter, and contradiction tests.
 - `scenario` outputs the matched consequences, computed deadlines, and required task templates for a Luxembourg resident with a French bank account.
-- `export:web` and `export:interoperability` write deterministic JSON / JSON-LD bundles to `exports/`.
+- `export-web` and `export-json` write deterministic JSON bundles to `build/exports/`.
 
 **Optional — other monorepo surfaces:**
 
@@ -144,8 +144,8 @@ clarvia-graph/
 pnpm build                    # Build all packages
 pnpm test                     # Run all unit and scenario tests
 pnpm validate                 # Run 9-layer validation pipeline
-pnpm export:web               # Generate web runtime export
-pnpm export:interoperability  # Generate CPSV-AP/CCCEV/ELI/PROV-O export
+pnpm export-web               # Generate web runtime export
+pnpm export-json  # Generate CPSV-AP/CCCEV/ELI/PROV-O export
 pnpm typecheck                # TypeScript type checking
 ```
 
@@ -154,13 +154,12 @@ pnpm typecheck                # TypeScript type checking
 - [Monorepo Guide](docs/MONOREPO.md) — Subtrees, commands, sparse checkout, licensing
 - [DPG Compliance](DPG.md) — How Clarvia Graph meets the 9 Digital Public Goods Standard indicators
 - [First Contribution Guide](docs/FIRST_CONTRIBUTION.md) — Your first contribution in under an hour (3 paths)
-- [Ontology](docs/ONTOLOGY.md) — Core objects and relationships
-- [ID Grammar](docs/ID_GRAMMAR.md) — Deterministic identifier conventions
-- [Authoring Playbook](docs/AUTHORING_PLAYBOOK.md) — How to add sources, assertions, and consequences
-- [Validation Rules](docs/VALIDATION_RULES.md) — What the 9-layer validator checks
-- [Standards Mapping](docs/STANDARDS_MAPPING.md) — CPSV-AP, CCCEV, ELI, PROV-O alignment
-- [Governance](docs/GOVERNANCE.md) — Roles, review gates, and contribution rules
-- [Release Checklist](docs/RELEASE_CHECKLIST.md) — Pre-release verification steps
+- [Foundation Specification](docs/FOUNDATION.md) — Core domain model, ontology, ID grammar, and EU standards mapping (CPSV-AP, CCCEV, ELI, PROV-O)
+- [Conventions](docs/CONVENTIONS.md) — Naming, YAML formatting, and deterministic identifier conventions
+- [Adding a Jurisdiction](docs/ADDING_A_JURISDICTION.md) & [Adding a Life Event](docs/ADDING_A_LIFE_EVENT.md) — How to add sources, assertions, and consequences
+- [Review Policy](docs/REVIEW_POLICY.md) — Roles, review gates, AI boundaries, and validation rules
+- [Build & Export Pipeline](docs/BUILD.md) — CLI commands, validation pipeline, and export verification
+- [Translations](docs/TRANSLATIONS.md) — Multilingual overlays and locale support
 
 ## Contributing
 

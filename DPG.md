@@ -41,16 +41,15 @@ Clarvia Graph has zero proprietary dependencies. It runs entirely on open-source
 - **Validation & Testing:** Ajv (JSON Schema draft 2020-12), YAML, Vitest, Pytest
 - **Data format:** Human-readable YAML files (`graph/`, `sources/`, `vocab/`) and standard JSON / JSON-LD (`schemas/`, `exports/`, `apps/web/src/content/corridor-guides.json`)
 
-All build, validation, test, and export steps run locally or in any standard Linux/macOS/Windows environment via `pnpm validate`, `pnpm test`, and `pnpm export:web`.
+All build, validation, test, and export steps run locally or in any standard Linux/macOS/Windows environment via `pnpm validate`, `pnpm test`, and `pnpm export-web`.
 
 ## 5. Documentation
 
 Comprehensive documentation is maintained in the repository under [`docs/`](docs/):
 - [`README.md`](README.md) — Quick start, architecture overview, repository structure, and CLI usage
-- [`docs/ONTOLOGY.md`](docs/ONTOLOGY.md) — Core domain model and entity relationships
-- [`docs/AUTHORING_PLAYBOOK.md`](docs/AUTHORING_PLAYBOOK.md) — Step-by-step guide for adding sources, assertions, and consequences
-- [`docs/VALIDATION_RULES.md`](docs/VALIDATION_RULES.md) — Specification of the 9-layer validation pipeline
-- [`docs/STANDARDS_MAPPING.md`](docs/STANDARDS_MAPPING.md) — Alignment with EU standards (CPSV-AP, CCCEV, ELI, PROV-O)
+- [`docs/FOUNDATION.md`](docs/FOUNDATION.md) — Core domain model, ontology, ID grammar, and EU standards alignment (CPSV-AP, CCCEV, ELI, PROV-O)
+- [`docs/ADDING_A_JURISDICTION.md`](docs/ADDING_A_JURISDICTION.md) & [`docs/FIRST_CONTRIBUTION.md`](docs/FIRST_CONTRIBUTION.md) — Step-by-step guides for adding sources, assertions, and consequences
+- [`docs/REVIEW_POLICY.md`](docs/REVIEW_POLICY.md) & [`docs/BUILD.md`](docs/BUILD.md) — Specification of the validation pipeline, review gates, and export commands
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — Contribution workflow, status rules, and DCO sign-off
 
 ## 6. Mechanism for Extracting Data
@@ -58,8 +57,8 @@ Comprehensive documentation is maintained in the repository under [`docs/`](docs
 Data is stored natively in open, non-proprietary formats (YAML and JSON) in the repository and can be extracted at any time:
 - **Raw graph data:** Directly readable YAML files in [`graph/`](graph/) and [`sources/`](sources/)
 - **Global guidance corpus:** Directly readable JSON in [`apps/web/src/content/corridor-guides.json`](apps/web/src/content/corridor-guides.json) (`592` canonical guides / `1,000` localized pages across `196` countries and `14` languages)
-- **Web runtime export:** `pnpm export:web` generates a deterministic, self-contained JSON bundle in [`exports/web/`](exports/web/)
-- **EU interoperability export:** `pnpm export:interoperability` generates a JSON-LD bundle mapped to CPSV-AP, CCCEV, ELI, and PROV-O vocabularies
+- **Web runtime export:** `pnpm export-web` generates a deterministic, self-contained JSON bundle in [`apps/web/public/data/clarvia/`](apps/web/public/data/clarvia/)
+- **EU interoperability export:** `pnpm export-json` generates a JSON-LD bundle mapped to CPSV-AP, CCCEV, ELI, and PROV-O vocabularies
 
 ## 7. Adherence to Privacy and Applicable Laws
 
@@ -69,7 +68,7 @@ Data is stored natively in open, non-proprietary formats (YAML and JSON) in the 
 
 ## 8. Adherence to Standards & Best Practices
 
-- **EU Semantic Interoperability Standards:** Explicitly aligned with the European Commission's Core Public Service Vocabulary Application Profile (**CPSV-AP**), Core Criterion and Core Evidence Vocabulary (**CCCEV**), European Legislation Identifier (**ELI**), and W3C Provenance Ontology (**PROV-O**). See [`docs/STANDARDS_MAPPING.md`](docs/STANDARDS_MAPPING.md).
+- **EU Semantic Interoperability Standards:** Explicitly aligned with the European Commission's Core Public Service Vocabulary Application Profile (**CPSV-AP**), Core Criterion and Core Evidence Vocabulary (**CCCEV**), European Legislation Identifier (**ELI**), and W3C Provenance Ontology (**PROV-O**). See [`docs/FOUNDATION.md`](docs/FOUNDATION.md).
 - **Data Schemas:** Formal JSON Schema (Draft 2020-12) definitions in [`schemas/`](schemas/).
 - **Software Quality & Security:**
   - 9-layer automated graph validation pipeline (`pnpm validate`) and 4-layer guidance corpus verification suite (`corridor-guides.test.ts`)
@@ -82,7 +81,7 @@ Data is stored natively in open, non-proprietary formats (YAML and JSON) in the 
 
 Bereavement and terminal illness are high-vulnerability life events where inaccurate legal or procedural information can cause financial loss, missed statutory deadlines, or severe distress. Clarvia is engineered around strict "Do No Harm" safeguards:
 
-1. **No Unverified Claims in Production:** The exporter (`pnpm export:web`) strictly filters out any record where `authoring_status !== "approved"` or where backing source assertions do not have `review_status === "approved"`.
+1. **No Unverified Claims in Production:** The exporter (`pnpm export-web`) strictly filters out any record where `authoring_status !== "approved"` or where backing source assertions do not have `review_status === "approved"`.
 2. **4-Layer Guidance Corpus Verification:** The 1,000-page guidance corpus (`corridor-guides.json`) is validated across 4 layers: (1) HTTP/URL reachability and soft-404 removal, (2) institutional domain authority verification, (3) statutory/numeric claim verification against live official sources, and (4) contact phone/email verification against source pages.
 3. **Maintainer Gatekeeping:** External contributors can submit records only in `draft` status. CI automatically rejects pull requests that attempt to self-approve assertions or graph records without maintainer review.
 4. **Contradiction Detection:** Layer 6 of the validator (`checkContradictions`) automatically detects conflicting deadlines or requirements across assertions before they can be merged.
