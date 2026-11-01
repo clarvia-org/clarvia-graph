@@ -53,7 +53,7 @@ pnpm test
 # 3. Evaluate a real-world scenario (e.g., cross-border death in Luxembourg)
 npx tsx packages/cli/src/index.ts scenario tests/scenarios/lu-fr-bank-account.yml
 
-# 4. Generate web runtime and EU interoperability (JSON-LD) exports
+# 4. Generate web runtime and full-graph JSON exports
 pnpm export-web
 pnpm export-json
 ```
@@ -144,8 +144,8 @@ clarvia-graph/
 pnpm build                    # Build all packages
 pnpm test                     # Run all unit and scenario tests
 pnpm validate                 # Run 9-layer validation pipeline
-pnpm export-web               # Generate web runtime export
-pnpm export-json  # Generate CPSV-AP/CCCEV/ELI/PROV-O export
+pnpm export-web               # Generate web runtime export (build/exports/web/)
+pnpm export-json              # Generate full-graph JSON export (build/exports/json/graph-export.json)
 pnpm typecheck                # TypeScript type checking
 ```
 

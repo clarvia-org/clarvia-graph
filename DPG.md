@@ -39,7 +39,7 @@ Clarvia Graph has zero proprietary dependencies. It runs entirely on open-source
 - **Package manager:** pnpm
 - **Language:** TypeScript (strict mode) and Python
 - **Validation & Testing:** Ajv (JSON Schema draft 2020-12), YAML, Vitest, Pytest
-- **Data format:** Human-readable YAML files (`graph/`, `sources/`, `vocab/`) and standard JSON / JSON-LD (`schemas/`, `exports/`, `apps/web/src/content/corridor-guides.json`)
+- **Data format:** Human-readable YAML files (`graph/`, `sources/`, `vocab/`) and standard JSON (`schemas/`, `apps/web/src/content/corridor-guides.json`, and generated bundles in `build/exports/`, with JSON-LD interoperability export planned)
 
 All build, validation, test, and export steps run locally or in any standard Linux/macOS/Windows environment via `pnpm validate`, `pnpm test`, and `pnpm export-web`.
 
@@ -57,8 +57,8 @@ Comprehensive documentation is maintained in the repository under [`docs/`](docs
 Data is stored natively in open, non-proprietary formats (YAML and JSON) in the repository and can be extracted at any time:
 - **Raw graph data:** Directly readable YAML files in [`graph/`](graph/) and [`sources/`](sources/)
 - **Global guidance corpus:** Directly readable JSON in [`apps/web/src/content/corridor-guides.json`](apps/web/src/content/corridor-guides.json) (`592` canonical guides / `1,000` localized pages across `196` countries and `14` languages)
-- **Web runtime export:** `pnpm export-web` generates a deterministic, self-contained JSON bundle in [`apps/web/public/data/clarvia/`](apps/web/public/data/clarvia/)
-- **EU interoperability export:** `pnpm export-json` generates a JSON-LD bundle mapped to CPSV-AP, CCCEV, ELI, and PROV-O vocabularies
+- **Web runtime export:** `pnpm export-web` generates a deterministic, self-contained JSON bundle in `build/exports/web/` (and `pnpm export-and-sync-web` syncs it to [`apps/web/public/data/clarvia/`](apps/web/public/data/clarvia/))
+- **Full-graph JSON export:** `pnpm export-json` generates a complete graph JSON bundle in `build/exports/json/graph-export.json` (JSON-LD export mapped to CPSV-AP, CCCEV, ELI, and PROV-O vocabularies is planned work)
 
 ## 7. Adherence to Privacy and Applicable Laws
 
