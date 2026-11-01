@@ -2,7 +2,7 @@
 
 **Open consequence graph, global 1,000-page guidance library (196 countries, 14 languages), Ask Clarvia, and legislation corpus**
 
-[![Ask Clarvia](https://img.shields.io/badge/✉️_Ask_Clarvia-clarvia.org%2Fask-0f766e?style=for-the-badge)](https://clarvia.org/en/ask)
+[![Ask Clarvia](https://img.shields.io/badge/✉️_Ask_Clarvia-clarvia.org%2Fask-0f766e?style=for-the-badge)](https://clarvia.org/ask)
 [![1,000-Page Global Guidance](https://img.shields.io/badge/🌍_1,000--Page_Global_Guidance-196_Countries_·_14_Languages-1d4ed8?style=for-the-badge)](https://clarvia.org/en/guidance)
 [![Interactive Checklist](https://img.shields.io/badge/🧪_Interactive_Checklist-clarvia.org%2Fchecklist-blue?style=for-the-badge)](https://clarvia.org/en/checklist)
 
@@ -21,7 +21,7 @@
 [![License: Apache-2.0](https://img.shields.io/badge/Code_(lex)-Apache--2.0-blue.svg)](lex/LICENSE)
 [![License: CC-BY-4.0](https://img.shields.io/badge/Data-CC--BY--4.0-green.svg)](LICENSE-DATA)
 
-> **Status:** [CI (graph): passing](https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml) · [CI (web): passing](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-web.yml) · [CI (lex): passing](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex.yml) · [OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112) · [OpenSSF Scorecard](https://scorecard.dev/#/projects/github.com/clarvia-org/clarvia-graph) · [REUSE compliant](https://api.reuse.software/info/github.com/clarvia-org/clarvia-graph) · [Codecov](https://codecov.io/gh/clarvia-org/clarvia-graph) · [SonarCloud](https://sonarcloud.io/summary/new_code?id=clarvia-org_clarvia-graph) · [Ask Clarvia live](https://clarvia.org/en/ask) · [1,000-page global guidance](https://clarvia.org/en/guidance) · [Interactive checklist live](https://clarvia.org/en/checklist) · [DOI: 10.5281/zenodo.20572455](https://doi.org/10.5281/zenodo.20572455) · [FAIR: 4/5](https://fair-software.eu) · Graph code: EUPL-1.2 · Web / Lex code: Apache-2.0 · Data: CC-BY-4.0
+> **Status:** [CI (graph): passing](https://github.com/clarvia-org/clarvia-graph/actions/workflows/ci.yml) · [CI (web): passing](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-web.yml) · [CI (lex): passing](https://github.com/clarvia-org/clarvia-graph/actions/workflows/validate-lex.yml) · [OpenSSF Best Practices: passing](https://www.bestpractices.dev/projects/13112) · [OpenSSF Scorecard](https://scorecard.dev/#/projects/github.com/clarvia-org/clarvia-graph) · [REUSE compliant](https://api.reuse.software/info/github.com/clarvia-org/clarvia-graph) · [Codecov](https://codecov.io/gh/clarvia-org/clarvia-graph) · [SonarCloud](https://sonarcloud.io/summary/new_code?id=clarvia-org_clarvia-graph) · [Ask Clarvia live](https://clarvia.org/ask) · [1,000-page global guidance](https://clarvia.org/en/guidance) · [Interactive checklist live](https://clarvia.org/en/checklist) · [DOI: 10.5281/zenodo.20572455](https://doi.org/10.5281/zenodo.20572455) · [FAIR: 4/5](https://fair-software.eu) · Graph code: EUPL-1.2 · Web / Lex code: Apache-2.0 · Data: CC-BY-4.0
 
 ## Monorepo layout
 
@@ -101,7 +101,7 @@ Every claim in the graph traces back to an official government source with a ver
 Clarvia Graph is the technical foundation for source-backed terminal illness and bereavement guidance, checklists, and administrative workflows across jurisdictions.
 
 Today, [clarvia.org](https://clarvia.org) serves families globally through:
-- **[Ask Clarvia](https://clarvia.org/en/ask)** — free, source-cited email answers to specific terminal illness, bereavement, and cross-border administrative questions in 100+ languages.
+- **[Ask Clarvia](https://clarvia.org/ask)** — free, source-cited email answers to specific terminal illness, bereavement, and cross-border administrative questions in 100+ languages.
 - **[1,000-page global guidance library](https://clarvia.org/en/guidance)** — `592` canonical guides (`392` single-country terminal illness and bereavement guides across all **196 countries** plus **200 cross-border corridors**) published across **14 languages** (`1,000` localized pages).
 - **[Interactive bereavement checklist](https://clarvia.org/en/checklist)** — step-by-step interactive checklist launched first in Luxembourg, where Clarvia ASBL is founded.
 

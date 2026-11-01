@@ -37,7 +37,7 @@ Full clone is fine for most contributors. Details: [`docs/MONOREPO.md`](docs/MON
 - **Report staleness** — Flag when official guidance, forms, or deadlines have changed
 - **Add authority metadata** — Name, jurisdiction, function, official website
 - **Suggest scenario tests** — Describe a real-world situation and expected outcomes
-- **Draft or review translations** — Help review translations across our 4 core UI locales (`EN`, `FR`, `DE`, `LU`) and 14 guidance languages (`EN`, `FR`, `DE`, `LU`, `PT`, `ES`, `IT`, `NL`, `PL`, `RO`, `UK`, `AR`, `ZH`, `HI`)
+- **Draft or review translations** — Help review translations across our 4 core UI locales (`EN`, `FR`, `DE`, `LU`) and 14 guidance languages (`EN`, `FR`, `DE`, `LU`, `PT`, `ES`, `IT`, `NL`, `PL`, `RO`, `UK`, `AR`, `TR`, `RU`)
 - **Fix typos** — In documentation, labels, or descriptions
 - **Website UX** — Accessibility and clarity improvements under `apps/web/`
 
