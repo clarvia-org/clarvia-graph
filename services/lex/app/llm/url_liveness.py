@@ -32,7 +32,7 @@ MAX_WORKERS: Final[int] = 6
 
 
 class _LimitedRedirect(urllib.request.HTTPRedirectHandler):
-    max_redirections = 1
+    max_redirections = 5
 
 
 def keep_after_status(status: int) -> bool:

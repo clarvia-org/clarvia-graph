@@ -283,4 +283,198 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
     expect(getCorridorGuideBySlug("france-germany-bereavement-checklist", "de")?.title).toContain("Frankreich");
     expect(getCorridorGuideBySlug("luxembourg-bereavement-checklist", "lu")?.title).toContain("Lëtzebuerg");
   });
+
+  it("enforces all 4 factual validation layers (treaty signatory matrix, statutory thresholds, multi-locale citation/contact parity, and zero dead/soft-404/wrong-audience URLs)", () => {
+    const STRASBOURG_1973 = new Set([
+      "AD", "AT", "BE", "CY", "CZ", "EE", "FI", "FR", "GR", "IS",
+      "LV", "LT", "LU", "MD", "NL", "NO", "PT", "SK", "SI", "ES",
+      "SE", "CH", "TR", "UA",
+    ]);
+    const BERLIN_1937 = new Set([
+      "AT", "BE", "CL", "CZ", "DK", "EG", "FR", "DE", "IT", "MX",
+      "NL", "PT", "RO", "SK", "CH", "TR", "CD",
+    ]);
+    const NEGATION_RE =
+      /\b(not a (?:party|signatory|contracting|member)|not party|non-party|non-signatory|not bound by|opted out|opt-out|neither .* nor|do not apply|does not apply|not issued|not applicable|cannot be apostilled|does not issue apostilles|rather than an apostille|instead of an apostille|no apostille|not yet issuing)\b/i;
+
+    const FORBIDDEN_DEAD_OR_WRONG_URLS = new Set([
+      "https://consumer.ftc.gov/articles/ftc-funeral-rule",
+      "https://www.mea.gov.in/apostille.htm",
+      "https://www.pv.at/web/pflege-betreuung/pflegegeld",
+      "https://www.testamentsregister.de/de/sterbefallmitteilung",
+      "https://www.testamentsregister.de/en",
+    ]);
+
+    const ENTITY_MAP: Record<string, string> = {
+      "&amp;": "&",
+      "&quot;": '"',
+      "&#39;": "'",
+      "&apos;": "'",
+      "&nbsp;": " ",
+    };
+
+    const unescapeHtml = (html: string) =>
+      html
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&(?:amp|quot|#39|apos|nbsp);/g, (m) => ENTITY_MAP[m] ?? m)
+        .replace(/\s+/g, " ")
+        .trim();
+
+    for (const enGuide of allCorridorGuides()) {
+      const c1 = enGuide.countryOfDeathCode;
+      const c2 = enGuide.citizenshipCountryCode;
+      const enFullText = unescapeHtml(
+        `${enGuide.introHtml}. ${enGuide.steps.map((s) => `${s.title}. ${s.html}`).join(" ")}`,
+      );
+
+      // Layer 1: Treaty & Convention Signatory Matrix
+      expect(enFullText.toLowerCase(), `${enGuide.id} 1975 Strasbourg`).not.toContain(
+        "1975 strasbourg",
+      );
+      const sentences = enFullText.split(/(?<=[.;])\s+/);
+      for (const sent of sentences) {
+        if (NEGATION_RE.test(sent)) continue;
+        const low = sent.toLowerCase();
+        if (
+          low.includes("strasbourg") &&
+          (low.includes("agreement") ||
+            low.includes("convention") ||
+            low.includes("laissez-passer") ||
+            low.includes("leichenpass"))
+        ) {
+          if (c1 !== c2) {
+            expect(
+              STRASBOURG_1973.has(c1) && STRASBOURG_1973.has(c2),
+              `${enGuide.id} (${c1}->${c2}) positive Strasbourg 1973 claim: ${sent}`,
+            ).toBe(true);
+          } else {
+            expect(
+              STRASBOURG_1973.has(c1),
+              `${enGuide.id} (${c1}) positive Strasbourg 1973 claim: ${sent}`,
+            ).toBe(true);
+          }
+        }
+        if (
+          low.includes("berlin") &&
+          (low.includes("agreement") ||
+            low.includes("convention") ||
+            low.includes("arrangement"))
+        ) {
+          if (c1 !== c2) {
+            expect(
+              BERLIN_1937.has(c1) && BERLIN_1937.has(c2),
+              `${enGuide.id} (${c1}->${c2}) positive Berlin 1937 claim: ${sent}`,
+            ).toBe(true);
+          } else {
+            expect(
+              BERLIN_1937.has(c1),
+              `${enGuide.id} (${c1}) positive Berlin 1937 claim: ${sent}`,
+            ).toBe(true);
+          }
+        }
+      }
+
+      // Layer 2: Statutory Thresholds & Fees
+      if (
+        [
+          "p34_new_zealand_bereavement_checklist",
+          "p55_terminal_illness_admin_new_zealand",
+          "p131_new_zealand_us_bereavement",
+          "p178_new_zealand_uk_bereavement",
+          "p179_uk_new_zealand_bereavement",
+        ].includes(enGuide.id)
+      ) {
+        expect(enFullText, `${enGuide.id} NZD 40,000`).toContain("40,000");
+        expect(enFullText, `${enGuide.id} outdated NZD 15,000`).not.toContain("15,000");
+      }
+      if (enGuide.id === "p24_germany_poland_bereavement") {
+        expect(enFullText.toLowerCase(), `${enGuide.id} outdated 50 EUR`).not.toContain(
+          "50 eur",
+        );
+      }
+
+      // Layer 3 & Layer 4 across all locales of this guide
+      const enStepCites = enGuide.steps.map((s) =>
+        Array.from(new Set(Array.from(s.html.matchAll(/\[(\d+)\]/g), (m) => m[1]))).sort(),
+      );
+      const enContactMeta = enGuide.contacts.map((c) => ({
+        id: c.id,
+        source_id: c.source_id,
+        website: c.website,
+        phone: c.phone,
+        email: c.email,
+      }));
+
+      for (const loc of enGuide.locales) {
+        const view = getAnyCorridorGuideBySlug(enGuide.slug, loc)!;
+        const prefix = `${enGuide.id}:${loc}`;
+        const combinedHtml = `${view.introHtml} ${view.steps.map((s) => s.html).join(" ")}`;
+        const combinedPlain = unescapeHtml(combinedHtml);
+
+        expect(combinedHtml, `${prefix} em-dash`).not.toContain("\u2014");
+        expect(view.closingQuestion, `${prefix} closingQuestion em-dash`).not.toContain(
+          "\u2014",
+        );
+        expect(combinedHtml, `${prefix} truncated (.S.`).not.toContain("(.S.");
+        expect(combinedHtml, `${prefix} unclosed ALO)`).not.toMatch(/<(?:strong|em)>ALO\)/);
+
+        for (const tag of ["strong", "em", "span", "a", "p", "ul", "li"]) {
+          const openCount = Array.from(
+            combinedHtml.matchAll(new RegExp(`<${tag}\\b[^>]*>`, "gi")),
+          ).length;
+          const closeCount = Array.from(
+            combinedHtml.matchAll(new RegExp(`</${tag}\\s*>`, "gi")),
+          ).length;
+          expect(openCount, `${prefix} balanced <${tag}> tags`).toBe(closeCount);
+        }
+
+        const sourceMap = new Map(view.sources.map((s) => [s.id, s.url]));
+        for (const m of combinedHtml.matchAll(/<a\s+href="([^"]+)"[^>]*>\[(\d+)\]<\/a>/g)) {
+          const hrefUrl = m[1].replace(/&amp;/g, "&");
+          const citeId = Number(m[2]);
+          expect(hrefUrl, `${prefix} citation [${citeId}] href`).toBe(
+            sourceMap.get(citeId),
+          );
+        }
+
+        for (const c of view.contacts) {
+          expect(
+            combinedPlain.toLowerCase().includes(c.name.trim().toLowerCase()),
+            `${prefix} contact ${c.name} in prose`,
+          ).toBe(true);
+          expect(FORBIDDEN_DEAD_OR_WRONG_URLS.has(c.website), `${prefix} dead contact URL`).toBe(
+            false,
+          );
+        }
+
+        for (const s of view.sources) {
+          expect(FORBIDDEN_DEAD_OR_WRONG_URLS.has(s.url), `${prefix} dead source URL`).toBe(
+            false,
+          );
+          expect(s.url, `${prefix} physician-only URL`).not.toContain(
+            "/medecin/exercice-liberal/",
+          );
+        }
+
+        if (loc !== "en") {
+          const locStepCites = view.steps.map((s) =>
+            Array.from(new Set(Array.from(s.html.matchAll(/\[(\d+)\]/g), (m) => m[1]))).sort(),
+          );
+          expect(locStepCites, `${prefix} step citation parity vs EN`).toEqual(
+            enStepCites,
+          );
+          const locContactMeta = view.contacts.map((c) => ({
+            id: c.id,
+            source_id: c.source_id,
+            website: c.website,
+            phone: c.phone,
+            email: c.email,
+          }));
+          expect(locContactMeta, `${prefix} contact metadata parity vs EN`).toEqual(
+            enContactMeta,
+          );
+        }
+      }
+    }
+  });
 });
