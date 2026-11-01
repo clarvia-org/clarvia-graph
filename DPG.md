@@ -1,125 +1,90 @@
-# Digital Public Good readiness
+# Digital Public Good Compliance — Clarvia Graph
 
-This document maps **Clarvia Graph** to the Digital Public Goods Standard, outlining open licensing, stewardship, standards compliance, privacy protections, and Sustainable Development Goal (SDG) alignment.
+This document maps the Clarvia Graph project to the 9 indicators of the [DPG Standard](https://digitalpublicgoods.net/standard/) maintained by the Digital Public Goods Alliance (DPGA).
 
-## Summary
+## 1. Relevance to Sustainable Development Goals
 
-Clarvia Graph is free, open-source public-interest infrastructure for administrative life-event navigation, starting with bereavement administration in Luxembourg. It provides structured, source-backed workflow data, schemas, validation tooling, exports, and reusable public-interest infrastructure that can be used by individuals, nonprofits, civic-tech builders, researchers, and public-interest organizations.
+Clarvia Graph is an open-source knowledge graph, validation engine, and global multilingual guidance platform for life-event administrative workflows — covering **terminal illness and bereavement administration** across **196 countries and 200 cross-border corridors in 14 languages** (`1,000` localized pages), alongside **Ask Clarvia** and an interactive bereavement checklist launched first in Luxembourg.
 
-Clarvia.org is the first public-facing implementation of this infrastructure. The nominated DPG is the reusable graph/data/workflow infrastructure, not only the website.
+**SDG 16 — Peace, Justice and Strong Institutions:**
+- **Target 16.6** (Develop effective, accountable and transparent institutions): Clarvia structures fragmented, multi-agency administrative procedures into a verifiable, machine-readable graph where every claim is backed by an official government source with full provenance tracking.
+- **Target 16.10** (Ensure public access to information): Families facing a terminal illness diagnosis or bereavement often struggle to navigate scattered obligations across tax, social security, civil registry, health, and pension authorities — especially in cross-border and multilingual situations. Clarvia makes this public information structured, multilingual (14 languages), and freely accessible.
 
-## DPG asset type
+**SDG 10 — Reduced Inequalities:**
+- **Target 10.2** (Promote universal social, economic and political inclusion): Cross-border workers, immigrants, and families without legal resources are disproportionately harmed by opaque administrative requirements and missed deadlines. Clarvia provides equal access to verified procedural knowledge regardless of language, country, or socioeconomic status.
 
-Clarvia Graph combines:
-- **Open-source software**: CLI validation, build, and export tooling under [`packages/cli/`](packages/cli/) and the checklist generator engine under [`packages/generator/`](packages/generator/).
-- **Open data**: Consequence records under [`graph/`](graph/) and controlled vocabularies under [`vocab/`](vocab/).
-- **Open standards-based workflow/schema infrastructure**: JSON Schemas under [`schemas/`](schemas/).
-- **Open public-interest content**: Derived metadata and assertions from official government sources under [`sources/`](sources/).
+**SDG 3 — Good Health and Well-Being:**
+- Reducing acute administrative stress during terminal illness and bereavement supports mental health and well-being at one of the most vulnerable moments in a family's life.
 
-## Ownership and stewardship
+## 2. Use of Approved Open Licenses
 
-Clarvia Graph is maintained by **Clarvia ASBL**, a registered Luxembourg non-profit association (*association sans but lucratif*), under registration number **F15680**. 
+All components of Clarvia Graph use OSI-approved or Creative Commons open licenses, enforced via [`REUSE.toml`](REUSE.toml) and verified in CI on every commit:
 
-The repository's operational boundaries and review lifecycles are governed by:
-- [Review and governance policy](docs/REVIEW_POLICY.md)
-- [Editorial conventions](docs/CONVENTIONS.md)
+| Component | License | File |
+|---|---|---|
+| Source code, validators, exporters (`packages/`) | **EUPL-1.2** (OSI-approved) | [`LICENSE`](LICENSE) |
+| Website (`apps/web/`), legislation (`lex/`), Lex email (`services/lex/`) | **Apache-2.0** (OSI-approved) | [`apps/web/LICENSE`](apps/web/LICENSE), [`lex/LICENSE`](lex/LICENSE) |
+| Graph data (`graph/`), 1,000-page guidance corpus (`corridor-guides.json`), vocabularies (`vocab/`), schemas (`schemas/`), documentation (`docs/`), exports (`exports/`) | **CC-BY-4.0** | [`LICENSE-DATA`](LICENSE-DATA) |
+| Archived government HTML snapshots (`sources/snapshots/html/`) | Public domain (national law) | [`LICENSES/LicenseRef-Gov-PublicDomain.txt`](LICENSES/LicenseRef-Gov-PublicDomain.txt) |
 
-The project is designed and maintained as public-interest digital commons, not as a commercial SaaS dependency or proprietary platform lock-in.
+## 3. Clear Ownership
 
-## Open licenses
+- **Legal entity:** CLARVIA ASBL, a non-profit association (*association sans but lucratif*) registered in Luxembourg.
+- **Copyright and trademark:** All original work is copyright `2025-2026 CLARVIA ASBL, Luxembourg`, explicitly declared in [`REUSE.toml`](REUSE.toml), [`LICENSE`](LICENSE), [`LICENSE-DATA`](LICENSE-DATA), and [`CITATION.cff`](CITATION.cff).
 
-The repository uses a split licensing model depending on the type of asset, fully documented in [REUSE.toml](REUSE.toml):
+## 4. Platform Independence
 
-- **Software / code & tooling**: [EUPL-1.2](LICENSE) (European Union Public Licence v1.2), covering validators, exporters, package setups, and test suites.
-- **Graph data & controlled vocabularies**: [CC-BY-4.0](LICENSE-DATA) (Creative Commons Attribution 4.0 International).
-- **Schemas**: [CC-BY-4.0](LICENSE-DATA).
-- **Documentation & exports**: [CC-BY-4.0](LICENSE-DATA).
-- **Source assertions & snapshot metadata**: [EUPL-1.2](LICENSE) (for original analytical classifications).
-- **Captured HTML snapshots**: Publicly available government pages, archived copies governed under `LicenseRef-Gov-PublicDomain`.
+Clarvia Graph has zero proprietary dependencies. It runs entirely on open-source software:
+- **Runtime:** Node.js (v22+) and Python (3.12+ for `lex/`)
+- **Package manager:** pnpm
+- **Language:** TypeScript (strict mode) and Python
+- **Validation & Testing:** Ajv (JSON Schema draft 2020-12), YAML, Vitest, Pytest
+- **Data format:** Human-readable YAML files (`graph/`, `sources/`, `vocab/`) and standard JSON / JSON-LD (`schemas/`, `exports/`, `apps/web/src/content/corridor-guides.json`)
 
-## Open data and reuse evidence
+All build, validation, test, and export steps run locally or in any standard Linux/macOS/Windows environment via `pnpm validate`, `pnpm test`, and `pnpm export:web`.
 
-Clarvia's first open dataset is published on Luxembourg's national open data portal:
-- **Dataset name**: [Bereavement Source Register — Luxembourg](https://data.public.lu/en/datasets/bereavement-source-register-luxembourg/)
-- **Portal**: data.public.lu
-- **License**: CC-BY-4.0
-- **Publisher**: Clarvia ASBL
+## 5. Documentation
 
-This dataset provides a structured, machine-readable registry of official government sources related to bereavement administration in Luxembourg, compiling verified URLs, issuing authorities, and legislation references from Guichet.lu, Centre des pensions (CNAP), Caisse nationale de santé (CNS), and cross-border corridors.
+Comprehensive documentation is maintained in the repository under [`docs/`](docs/):
+- [`README.md`](README.md) — Quick start, architecture overview, repository structure, and CLI usage
+- [`docs/ONTOLOGY.md`](docs/ONTOLOGY.md) — Core domain model and entity relationships
+- [`docs/AUTHORING_PLAYBOOK.md`](docs/AUTHORING_PLAYBOOK.md) — Step-by-step guide for adding sources, assertions, and consequences
+- [`docs/VALIDATION_RULES.md`](docs/VALIDATION_RULES.md) — Specification of the 9-layer validation pipeline
+- [`docs/STANDARDS_MAPPING.md`](docs/STANDARDS_MAPPING.md) — Alignment with EU standards (CPSV-AP, CCCEV, ELI, PROV-O)
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — Contribution workflow, status rules, and DCO sign-off
 
-## Documentation and reuse
+## 6. Mechanism for Extracting Data
 
-Developers, public-interest builders, and researchers can find reuse guides and exports as follows:
-- **Data model / schema documentation**: JSON Schema definitions in the [`schemas/`](schemas/) directory and architecture overviews in [`docs/FOUNDATION.md`](docs/FOUNDATION.md).
-- **Source register structure**: Registry and snapshots in [`sources/`](sources/) and guidelines in [`docs/FOUNDATION.md`](docs/FOUNDATION.md#core-architecture).
-- **Validation process**: Build instructions in [`docs/BUILD.md`](docs/BUILD.md) and tool CLI scripts in [`packages/cli/`](packages/cli/).
-- **Generated exports**: Standalone JSON exports in [`exports/`](exports/) (e.g. [`exports/example-bereavement-lu.json`](exports/example-bereavement-lu.json)).
-- **JSON / JSON-LD / CPSV-AP outputs**: Generated views in the [`exports/`](exports/) directory.
-- **Tests or quality checks**: Scenario-based assertion verifications in [`tests/`](tests/).
-- **Contribution process**: Guide for external builders in [CONTRIBUTING.md](CONTRIBUTING.md).
-- **Security / contact process**: Reporting vulnerabilities path in [SECURITY.md](SECURITY.md).
+Data is stored natively in open, non-proprietary formats (YAML and JSON) in the repository and can be extracted at any time:
+- **Raw graph data:** Directly readable YAML files in [`graph/`](graph/) and [`sources/`](sources/)
+- **Global guidance corpus:** Directly readable JSON in [`apps/web/src/content/corridor-guides.json`](apps/web/src/content/corridor-guides.json) (`592` canonical guides / `1,000` localized pages across `196` countries and `14` languages)
+- **Web runtime export:** `pnpm export:web` generates a deterministic, self-contained JSON bundle in [`exports/web/`](exports/web/)
+- **EU interoperability export:** `pnpm export:interoperability` generates a JSON-LD bundle mapped to CPSV-AP, CCCEV, ELI, and PROV-O vocabularies
 
-## Standards and best practices
+## 7. Adherence to Privacy and Applicable Laws
 
-The repository integrates and targets alignment with the following standards:
-- **JSON Schema**: Used to validate all canonical consequence, authority, and task template definitions.
-- **JSON-LD**: Used to map structured relationships into semantic graph exports.
-- **CPSV-AP** (Core Public Service Vocabulary Application Profile): Compatibility views are mapped to support European interoperability standards.
-- **CCCEV** (Core Criterion and Core Evidence Vocabulary): Used to define required evidence and certificates.
-- **ELI** (European Legislation Identifier): Links source assertions to formal EU/national legislative acts.
-- **PROV-O** (W3C Provenance Ontology): Traces validation history and source extraction steps. (Planned integration: see TODO in [`docs/FOUNDATION.md`](docs/FOUNDATION.md#standards-alignment)).
-- **FAIR data principles**: Follows the fair-software.eu recommendations (self-assessed 4/5 as of June 2026; status should be revalidated periodically).
-- **REUSE licensing practice**: Full REUSE compliance with strict machine-readable file headers.
-- **OpenSSF Best Practices**: Registered with the OpenSSF Best Practices badge program (passing).
+- **No personal data in the graph or guidance corpus:** This repository contains only public administrative rules, institutional metadata, and government source references. It collects, stores, or processes zero personal data or PII.
+- **Client-side evaluation for checklists:** The interactive checklist evaluates user conditions client-side in the browser without tracking cookies.
+- **GDPR compliance:** Operated by CLARVIA ASBL under Luxembourg and EU law (GDPR), with a clear privacy policy published at [`https://clarvia.org/en/privacy`](https://clarvia.org/en/privacy).
 
-## Privacy and data protection
+## 8. Adherence to Standards & Best Practices
 
-Clarvia Graph’s core data and static checklist do not require personal case information to be submitted to Clarvia. They operate using official sources, structured metadata, workflow definitions, and client-side condition evaluation.
+- **EU Semantic Interoperability Standards:** Explicitly aligned with the European Commission's Core Public Service Vocabulary Application Profile (**CPSV-AP**), Core Criterion and Core Evidence Vocabulary (**CCCEV**), European Legislation Identifier (**ELI**), and W3C Provenance Ontology (**PROV-O**). See [`docs/STANDARDS_MAPPING.md`](docs/STANDARDS_MAPPING.md).
+- **Data Schemas:** Formal JSON Schema (Draft 2020-12) definitions in [`schemas/`](schemas/).
+- **Software Quality & Security:**
+  - 9-layer automated graph validation pipeline (`pnpm validate`) and 4-layer guidance corpus verification suite (`corridor-guides.test.ts`)
+  - Unit and scenario test suites (`pnpm test`, `pnpm web:test`) with Codecov coverage tracking
+  - CodeQL static analysis, SonarCloud quality gates, and OpenSSF Scorecard in CI
+  - REUSE 3.0 license compliance verified in CI
+  - [`publiccode.yml`](publiccode.yml) metadata for EU public sector software catalogues
 
-* **Client-side checklist evaluation**: Circumstance and conditional rules are evaluated in the user’s browser or local application through `@clarvia/generator`.
-* **Lex service boundary**: Lex is a separate automated email service. It processes email addresses, message content, thread history, and recipient information as needed to provide and continue responses.
-* **Data minimisation**: Lex users are asked not to include names or other identifying information about living people in their questions and to share only what is necessary.
-* **Privacy information**: Personal-data handling by Lex and other Clarvia services is described in Clarvia’s existing [Privacy & Cookie Policy](https://clarvia.org/en/privacy).
-* **Privacy review**: Features involving personal data or server-side processing must undergo privacy and security review before deployment.
+## 9. Do No Harm by Design
 
-## Do no harm and safety boundaries
+Bereavement and terminal illness are high-vulnerability life events where inaccurate legal or procedural information can cause financial loss, missed statutory deadlines, or severe distress. Clarvia is engineered around strict "Do No Harm" safeguards:
 
-> [!IMPORTANT]
-> Clarvia provides practical guidance and signposting. It does not provide emergency, legal, tax, medical, psychological, notarial, banking, financial, or succession advice. Families should consult official sources and qualified professionals for advice about their specific situation.
->
-> Clarvia is not an emergency service. If there is an immediate risk to life or safety, call 112 in Luxembourg.
-
-This boundary exists because bereavement administration is highly sensitive and administrative or procedural mistakes can have binding legal, financial, or emotional consequences for families during a time of acute grief. Therefore, Clarvia Graph models official routing and signposting as reference information, rather than replacement for qualified professional counsel.
-
-## SDG alignment
-
-### Primary SDG: SDG 16 — Peace, justice and strong institutions
-Clarvia supports access to public information, administrative transparency, and more inclusive interaction with public institutions by transforming official guidance into structured, source-backed workflows and reusable open data.
-
-### Secondary SDG: SDG 10 — Reduced inequalities
-Clarvia reduces inequality in access to administrative support by making complex procedures easier to understand, multilingual, reusable, and available as free public-interest infrastructure.
-
-### Tertiary SDG: SDG 9 — Industry, innovation and infrastructure
-Clarvia contributes open digital infrastructure that can be reused by nonprofits, civic-tech builders, researchers, and public-interest organizations.
-
-## Platform independence
-
-The core data, schemas, and exports are designed to be reusable outside Clarvia.org. The outputs in the [`exports/`](exports/) directory are distributed as flat, static JSON/JSON-LD files. The data and schemas are openly reusable and not locked to one hosted service, allowing any third-party portal, mobile app, or case-management system to consume them independently.
-
-## Known limitations
-
-- **Initial jurisdiction focus is Luxembourg**: The first validated dataset targets Luxembourg.
-- **Bereavement focus**: Bereavement is the first life-event domain; other domains are not yet defined.
-- **Official source dependency**: Workflows depend on official-source availability and update cadence.
-- **Not professional advice**: Clarvia does not replace official sources or qualified professional advice.
-- **Local validation required**: Further jurisdictional expansion requires local validation.
-
-## Review checklist
-
-- [x] README links to DPG.md
-- [x] License files are present and referenced correctly
-- [x] Dataset link to data.public.lu is included
-- [x] Privacy and do-no-harm boundaries are documented
-- [x] SDG alignment is documented
-- [x] Reuse/export documentation is linked
-- [x] Contribution and security paths are linked
+1. **No Unverified Claims in Production:** The exporter (`pnpm export:web`) strictly filters out any record where `authoring_status !== "approved"` or where backing source assertions do not have `review_status === "approved"`.
+2. **4-Layer Guidance Corpus Verification:** The 1,000-page guidance corpus (`corridor-guides.json`) is validated across 4 layers: (1) HTTP/URL reachability and soft-404 removal, (2) institutional domain authority verification, (3) statutory/numeric claim verification against live official sources, and (4) contact phone/email verification against source pages.
+3. **Maintainer Gatekeeping:** External contributors can submit records only in `draft` status. CI automatically rejects pull requests that attempt to self-approve assertions or graph records without maintainer review.
+4. **Contradiction Detection:** Layer 6 of the validator (`checkContradictions`) automatically detects conflicting deadlines or requirements across assertions before they can be merged.
+5. **Provenance & Staleness Tracking:** Every source assertion records the exact government URL, access date, `review_by` expiration date, and verbatim quote or section reference, ensuring full auditability and timely re-verification.
+6. **Non-Legal-Advice Boundary:** All outputs clearly distinguish between structured public administrative information and individualized legal or notarial advice.

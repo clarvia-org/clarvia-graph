@@ -30,82 +30,90 @@ description:
   en:
     localisedName: Clarvia Graph
     shortDescription: >-
-      Open consequence graph for source-backed administrative workflows across
-      European jurisdictions.
+      Open consequence graph and global 1,000-page multilingual guidance corpus
+      (196 countries, 14 languages) for terminal illness and bereavement
+      administration.
     longDescription: >-
-      Clarvia Graph is an open-source knowledge graph that models the legal
-      and administrative consequences of life events — starting with
-      bereavement in Luxembourg. It encodes who must do what, when, where,
-      and why, backed by verifiable government sources.
+      Clarvia Graph is an open-source knowledge graph and public-interest
+      platform that models the legal and administrative consequences of major
+      life events — covering terminal illness and bereavement administration.
+      It encodes who must do what, when, where, and why, backed by verifiable
+      government sources.
 
 
-      The graph produces structured, machine-readable checklists that guide
-      bereaved families through complex cross-border bureaucracy. Every
-      obligation is linked to its source legislation, official deadline, and
-      responsible authority.
+      The monorepo powers clarvia.org, including Ask Clarvia (live source-cited
+      email guidance), a 1,000-page multilingual guidance library covering 592
+      guides across all 196 countries and 200 cross-border corridors in 14
+      languages, an interactive bereavement checklist launched first in
+      Luxembourg, and the normalized legislation corpus (lex/).
 
 
-      Built on EU interoperability standards (CPSV-AP, CCCEV, ELI), the
-      graph is designed for multi-jurisdiction, multi-language composition.
-      It includes a 9-layer CI validation pipeline, scenario testing,
-      contradiction detection, and automated web export generation.
+      Built on EU interoperability standards (CPSV-AP, CCCEV, ELI, PROV-O), the
+      platform includes a 9-layer graph CI validation pipeline, 4-layer factual
+      and URL verification gates for the global guidance corpus, scenario
+      testing, contradiction detection, and machine-readable exports.
     features:
+      - Global guidance library: 1,000 localized pages (592 guides across 196 countries and 200 cross-border corridors) in 14 languages
+      - Ask Clarvia source-cited email service for terminal illness and bereavement inquiries
       - Source-backed consequence graph with verifiable government citations
-      - 9-layer CI validation pipeline (schema, ID grammar, references, contradictions, scenarios)
-      - Cross-border jurisdiction composition (Luxembourg, with EU expansion planned)
-      - Automated checklist generation with computed deadlines
-      - Trilingual support (English, French, German)
-      - Web runtime export for static site consumption
-      - Built on EU standards (CPSV-AP, CCCEV, ELI, Once-Only Principle)
+      - 9-layer graph CI validation pipeline and 4-layer guidance corpus factual verification
+      - Automated interactive checklist generation with computed deadlines
+      - 14-language guidance support and 4-language core UI (English, French, German, Luxembourgish)
+      - Built on EU standards (CPSV-AP, CCCEV, ELI, PROV-O, Once-Only Principle)
   fr:
     localisedName: Clarvia Graph
     shortDescription: >-
-      Graphe de conséquences ouvert pour des flux administratifs sourcés à
-      travers les juridictions européennes.
+      Graphe de conséquences ouvert et bibliothèque mondiale de 1 000 pages de
+      guides multilingues (196 pays, 14 langues) pour les démarches liées à la
+      maladie grave et au deuil.
     longDescription: >-
-      Clarvia Graph est un graphe de connaissances open source qui modélise
-      les conséquences juridiques et administratives des événements de vie —
-      en commençant par le deuil au Luxembourg. Il encode qui doit faire
-      quoi, quand, où et pourquoi, en s'appuyant sur des sources
-      gouvernementales vérifiables.
+      Clarvia Graph est un graphe de connaissances open source et une
+      plateforme d'intérêt général qui modélise les conséquences juridiques et
+      administratives des événements de vie — couvrant la maladie grave et le
+      deuil. Il encode qui doit faire quoi, quand, où et pourquoi, en
+      s'appuyant sur des sources gouvernementales vérifiables.
 
 
-      Le graphe produit des listes de contrôle structurées et lisibles par
-      machine qui guident les familles endeuillées à travers la bureaucratie
-      transfrontalière complexe. Chaque obligation est liée à sa
-      législation source, son délai officiel et l'autorité responsable.
+      Le monorepo propulse clarvia.org, notamment Ask Clarvia (réponses par
+      e-mail sourcées), une bibliothèque mondiale de 1 000 pages (592 guides
+      couvrant 196 pays et 200 corridors transfrontaliers en 14 langues), une
+      liste de contrôle interactive lancée d'abord au Luxembourg, et le corpus
+      législatif normalisé (lex/).
     features:
+      - Bibliothèque mondiale de 1 000 pages (592 guides dans 196 pays et 200 corridors transfrontaliers) en 14 langues
+      - Service e-mail sourcé Ask Clarvia pour les démarches liées à la maladie grave et au deuil
       - Graphe de conséquences sourcé avec citations gouvernementales vérifiables
-      - Pipeline de validation CI à 9 couches
-      - Composition juridictionnelle transfrontalière
+      - Pipeline de validation CI à 9 couches et vérification factuelle à 4 couches
       - Génération automatique de listes de contrôle avec délais calculés
-      - Support trilingue (anglais, français, allemand)
-      - Export web pour consommation par site statique
-      - Basé sur les standards UE (CPSV-AP, CCCEV, ELI)
+      - Support en 14 langues pour les guides et interface principale en 4 langues (EN, FR, DE, LU)
+      - Basé sur les standards UE (CPSV-AP, CCCEV, ELI, PROV-O)
   de:
     localisedName: Clarvia Graph
     shortDescription: >-
-      Offener Konsequenzgraph für quellengestützte Verwaltungsabläufe in
-      europäischen Rechtsordnungen.
+      Offener Konsequenzgraph und weltweite mehrsprachige Leitfaden-Bibliothek
+      mit 1.000 Seiten (196 Länder, 14 Sprachen) für Verwaltungswege bei
+      schwerer Krankheit und im Trauerfall.
     longDescription: >-
-      Clarvia Graph ist ein Open-Source-Wissensgraph, der die rechtlichen
-      und administrativen Konsequenzen von Lebensereignissen modelliert —
-      beginnend mit dem Trauerfall in Luxemburg. Er kodiert, wer was wann,
-      wo und warum tun muss, gestützt auf überprüfbare Regierungsquellen.
+      Clarvia Graph ist ein Open-Source-Wissensgraph und eine gemeinnützige
+      Plattform, die die rechtlichen und administrativen Konsequenzen von
+      Lebensereignissen modelliert — bei schwerer unheilbarer Krankheit und im
+      Trauerfall. Er kodiert, wer was wann, wo und warum tun muss, gestützt auf
+      überprüfbare Regierungsquellen.
 
 
-      Der Graph erzeugt strukturierte, maschinenlesbare Checklisten, die
-      trauernde Familien durch die komplexe grenzüberschreitende Bürokratie
-      führen. Jede Verpflichtung ist mit ihrer Quellengesetzgebung,
-      offiziellen Frist und zuständigen Behörde verknüpft.
+      Das Monorepo betreibt clarvia.org, einschließlich Ask Clarvia
+      (quellengestützte E-Mail-Auskunft), einer weltweiten Bibliothek mit 1.000
+      Seiten (592 Leitfäden für 196 Länder und 200 grenzüberschreitende
+      Korridore in 14 Sprachen), einer interaktiven Checkliste (zuerst in
+      Luxemburg gestartet) sowie des normalisierten Gesetzeskorpus (lex/).
     features:
+      - Weltweite Leitfaden-Bibliothek mit 1.000 Seiten (592 Leitfäden für 196 Länder und 200 Korridore) in 14 Sprachen
+      - Quellengestützter E-Mail-Dienst Ask Clarvia bei schwerer Krankheit und Trauerfall
       - Quellengestützter Konsequenzgraph mit überprüfbaren Regierungszitaten
-      - 9-Schichten-CI-Validierungspipeline
-      - Grenzüberschreitende Jurisdiktionskomposition
+      - 9-Schichten-CI-Validierungspipeline und 4-stufige Faktenprüfung
       - Automatische Checklistenerstellung mit berechneten Fristen
-      - Dreisprachige Unterstützung (Englisch, Französisch, Deutsch)
-      - Web-Runtime-Export für statische Seitennutzung
-      - Basierend auf EU-Standards (CPSV-AP, CCCEV, ELI)
+      - 14 Sprachen für Leitfäden und 4-sprachige Hauptoberfläche (EN, FR, DE, LU)
+      - Basierend auf EU-Standards (CPSV-AP, CCCEV, ELI, PROV-O)
 
 legal:
   license: EUPL-1.2
@@ -115,7 +123,7 @@ legal:
 maintenance:
   type: internal
   contacts:
-    - name: Tommi Rihola
+    - name: Tommi Lindfors
       email: opensource@clarvia.org
       affiliation: CLARVIA ASBL
 
@@ -134,6 +142,17 @@ localisation:
     - en
     - fr
     - de
+    - lb
+    - pt
+    - es
+    - it
+    - nl
+    - pl
+    - ro
+    - uk
+    - ar
+    - zh
+    - hi
 
 dependsOn:
   open:
