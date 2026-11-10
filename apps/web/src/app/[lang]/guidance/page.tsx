@@ -286,10 +286,14 @@ export default async function GuidanceHubPage({
       category: enGuide.category,
       macroRegion,
       countryOfDeath: codLabel,
-      countryOfDeathEn: enGuide.countryOfDeath,
+      ...(codLabel !== enGuide.countryOfDeath
+        ? { countryOfDeathEn: enGuide.countryOfDeath }
+        : {}),
       countryOfDeathCode: enGuide.countryOfDeathCode,
       citizenshipCountry: citLabel,
-      citizenshipCountryEn: enGuide.citizenshipCountry,
+      ...(citLabel !== enGuide.citizenshipCountry
+        ? { citizenshipCountryEn: enGuide.citizenshipCountry }
+        : {}),
       citizenshipCountryCode: enGuide.citizenshipCountryCode,
       title: localizedGuide.title,
       cardSummary: localizedGuide.cardSummary,

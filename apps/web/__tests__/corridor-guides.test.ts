@@ -271,6 +271,9 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
     expect(search("UK Spain").length).toBeGreaterThanOrEqual(2);
     expect(search("UAE").length).toBe(8);
     expect(search("Holland").length).toBeGreaterThanOrEqual(8);
+    expect(search("pension").length).toBeGreaterThan(0);
+    expect(search("burial").length).toBeGreaterThan(0);
+    expect(search("probate").length).toBeGreaterThan(0);
   });
 
   it("prioritizes selected site language (fr, de, lu) across Phase 3 multi-locale guides", () => {
