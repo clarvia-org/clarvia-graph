@@ -44,7 +44,8 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/((?!api|_next/static|_next/image).*)",
+        source:
+          "/((?!api(?:/|$)|ask(?:/|$)|[a-z]{2}/ask(?:/|$)|[a-z]{2}/checklist(?:/|$)|_next/static|_next/image).*)",
         headers: [
           {
             key: "CDN-Cache-Control",

@@ -12,7 +12,6 @@ import {
 } from "@/content/corridor-guide-ui";
 import {
   corridorGuidePath,
-  formatGuideSeoDescription,
   getCorridorGuideBySlug,
   publishedCorridorGuides,
 } from "@/content/corridor-guides";
@@ -297,10 +296,7 @@ export default async function GuidanceHubPage({
         : {}),
       citizenshipCountryCode: enGuide.citizenshipCountryCode,
       title: localizedGuide.title,
-      cardSummary: formatGuideSeoDescription(
-        localizedGuide,
-        preferredTargetLang,
-      ),
+      cardSummary: localizedGuide.cardSummary,
     };
   });
 
