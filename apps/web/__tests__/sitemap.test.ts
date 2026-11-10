@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import sitemap from "@/app/sitemap";
 import {
@@ -101,5 +103,19 @@ describe("ads landing URLs", () => {
     expect(ASK_PATH_REDIRECTS.find((row) => row.source === "/lu/ask")?.destination).toBe(
       "/ask?lang=lb",
     );
+  });
+});
+
+describe("llms.txt Lighthouse Agentic Browsing compliance", () => {
+  it("starts with an H1, includes a blockquote summary, and formats resource lists as Markdown links", () => {
+    const llmsPath = path.join(__dirname, "..", "public", "llms.txt");
+    const content = fs.readFileSync(llmsPath, "utf8");
+
+    expect(content).toMatch(/^# .+/m);
+    expect(content).toMatch(/^> .+/m);
+    const mdLinks = Array.from(
+      content.matchAll(/^- \[[^\]]+\]\(https:\/\/[^)]+\)/gm),
+    );
+    expect(mdLinks.length).toBeGreaterThanOrEqual(15);
   });
 });
