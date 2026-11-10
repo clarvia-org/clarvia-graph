@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
+  EEA_UK_CH_REGIONS,
   GA_MEASUREMENT_ID,
   googleTagBootstrapScript,
   sanitizeAdsConversion,
@@ -7,6 +8,7 @@ import {
   trackAskSubmitted,
   trackBeginCheckout,
   trackDonationComplete,
+  trackOfficialSourceClick,
   trackPageView,
 } from "@/lib/analytics";
 import { CONSENT_STORAGE_KEY, CONSENT_VERSION } from "@/lib/consent";
@@ -35,7 +37,7 @@ describe("Google Ads / GA4 helpers", () => {
     expect(sanitizeAdsConversion("AW-123456789")).toBeUndefined();
   });
 
-  it("bootstraps Consent Mode without ad personalization, with page_view off", () => {
+  it("bootstraps regional Consent Mode v2 without ad personalization, with page_view off", () => {
     const script = googleTagBootstrapScript({ adsId: "AW-999" });
     expect(script).toContain(GA_MEASUREMENT_ID);
     expect(script).toContain(CONSENT_STORAGE_KEY);
@@ -45,7 +47,39 @@ describe("Google Ads / GA4 helpers", () => {
     expect(script).toContain("ad_personalization:'denied'");
     expect(script).not.toMatch(/ad_personalization:'granted'/);
     expect(script).not.toMatch(/personalization_storage:'granted'/);
+    expect(script).toContain(JSON.stringify(EEA_UK_CH_REGIONS));
     expect(script).toContain("gtag('config','AW-999',{send_page_view:false})");
+  });
+
+  it("applies EEA denied default and non-EEA measurement granted default when executed", () => {
+    const dataLayer: unknown[][] = [];
+    const store = new Map<string, string>();
+    const fn = new Function(
+      "window",
+      "localStorage",
+      googleTagBootstrapScript({ adsId: "AW-18472344537" })
+    );
+    const win: Record<string, unknown> = { dataLayer };
+    fn(win, {
+      getItem: (k: string) => store.get(k) ?? null,
+    });
+    const consentDefaults = dataLayer
+      .map((entry) => Array.from(entry as ArrayLike<unknown>))
+      .filter((args) => args[0] === "consent" && args[1] === "default");
+    expect(consentDefaults).toHaveLength(2);
+    expect(consentDefaults[0][2]).toMatchObject({
+      ad_storage: "denied",
+      analytics_storage: "denied",
+      ad_personalization: "denied",
+      region: EEA_UK_CH_REGIONS,
+    });
+    expect(consentDefaults[1][2]).toMatchObject({
+      ad_storage: "granted",
+      ad_user_data: "granted",
+      analytics_storage: "granted",
+      ad_personalization: "denied",
+      personalization_storage: "denied",
+    });
   });
 
   it("omits an invalid Ads ID from the bootstrap script", () => {
@@ -164,6 +198,25 @@ describe("Google Ads / GA4 helpers", () => {
         page_path: "/en/ask/sent",
         page_location: "https://clarvia.org/en",
         page_title: "Clarvia",
+      });
+    });
+
+    it("records official source clicks on corridor guides without PII and fires optional Ads conversion", () => {
+      vi.stubEnv("NEXT_PUBLIC_GOOGLE_ADS_GUIDE_CONVERSION", "AW-18472344537/guidelbl");
+      trackOfficialSourceClick({
+        slug: "spain-uk-bereavement-checklist",
+        language: "en",
+        destination: "https://www.gov.uk/after-a-death/death-abroad?foo=bar",
+        link_kind: "source",
+      });
+      expect(gtag).toHaveBeenCalledWith("event", "official_source_click", {
+        guide_slug: "spain-uk-bereavement-checklist",
+        link_kind: "source",
+        destination_host: "www.gov.uk",
+        language: "en",
+      });
+      expect(gtag).toHaveBeenCalledWith("event", "conversion", {
+        send_to: "AW-18472344537/guidelbl",
       });
     });
   });

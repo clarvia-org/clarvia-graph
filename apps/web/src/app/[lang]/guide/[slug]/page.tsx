@@ -21,6 +21,7 @@ import {
   publishedCorridorGuideStaticParams,
   shortGuideCardTitle,
 } from "@/content/corridor-guides";
+import GuideOutboundTracker from "@/components/GuideOutboundTracker";
 import GuideCtaClient from "./GuideCtaClient";
 
 const BASE_URL = "https://clarvia.org";
@@ -618,6 +619,7 @@ export default async function CorridorGuidePage({
           </Link>
         </p>
       </main>
+      <GuideOutboundTracker slug={guide.slug} lang={lang} />
       <FooterSection lang={siteLang} />
     </>
   );

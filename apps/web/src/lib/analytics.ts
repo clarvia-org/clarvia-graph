@@ -30,6 +30,18 @@ export function adsDonateConversionSendTo(): string | undefined {
   return sanitizeAdsConversion(process.env.NEXT_PUBLIC_GOOGLE_ADS_DONATE_CONVERSION);
 }
 
+export function adsGuideConversionSendTo(): string | undefined {
+  return sanitizeAdsConversion(process.env.NEXT_PUBLIC_GOOGLE_ADS_GUIDE_CONVERSION);
+}
+
+/** EEA (EU-27 + IS, LI, NO) + UK + Switzerland require prior opt-in for analytics/ads cookies. */
+export const EEA_UK_CH_REGIONS = [
+  "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR",
+  "DE", "GR", "HU", "IS", "IE", "IT", "LV", "LI", "LT", "LU",
+  "MT", "NL", "NO", "PL", "PT", "RO", "SK", "SI", "ES", "SE",
+  "GB", "CH",
+] as const;
+
 function gtag(...args: unknown[]): void {
   if (typeof window === "undefined") return;
   window.dataLayer = window.dataLayer || [];
@@ -121,9 +133,35 @@ export function trackDonationComplete(params: {
   }
 }
 
+export function trackOfficialSourceClick(params: {
+  slug: string;
+  language?: string;
+  destination: string;
+  link_kind: "authority" | "source";
+}): void {
+  let destinationHost = "";
+  try {
+    destinationHost = new URL(params.destination).hostname;
+  } catch {
+    destinationHost = "";
+  }
+  const payload: Record<string, unknown> = {
+    guide_slug: params.slug.slice(0, 80),
+    link_kind: params.link_kind,
+    ...(destinationHost ? { destination_host: destinationHost } : {}),
+    ...(params.language ? { language: params.language } : {}),
+  };
+  trackEvent("official_source_click", payload);
+  const sendTo = adsGuideConversionSendTo();
+  if (sendTo) {
+    trackEvent("conversion", { send_to: sendTo });
+  }
+}
+
 /**
  * Consent Mode v2 + Google tag bootstrap. Must run in <head> before gtag.js.
- * Accept-all restores analytics and ads *measurement* only — not ad personalization.
+ * EEA/UK/CH default to denied until opt-in; rest-of-world defaults to measurement
+ * granted unless user opted out. Ad personalization / remarketing is always denied globally.
  */
 export function googleTagBootstrapScript(options?: { adsId?: string | null }): string {
   const adsId = sanitizeAdsId(options?.adsId);
@@ -133,30 +171,40 @@ export function googleTagBootstrapScript(options?: { adsId?: string | null }): s
 
   return `(function(){
 window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
+function gtag(){window.dataLayer.push(arguments);}
 window.gtag=window.gtag||gtag;
-var consentState={
-  ad_storage:'denied',
-  ad_user_data:'denied',
-  ad_personalization:'denied',
-  analytics_storage:'denied',
-  functionality_storage:'granted',
-  security_storage:'granted',
-  personalization_storage:'denied',
-  wait_for_update:500
-};
+var savedChoice=null;
 try{
   var saved=localStorage.getItem(${JSON.stringify(CONSENT_STORAGE_KEY)});
   if(saved){
     var parsed=JSON.parse(saved);
-    if(parsed&&parsed.version===${JSON.stringify(CONSENT_VERSION)}&&parsed.status==='granted'){
-      consentState.analytics_storage='granted';
-      consentState.ad_storage='granted';
-      consentState.ad_user_data='granted';
+    if(parsed&&parsed.version===${JSON.stringify(CONSENT_VERSION)}&&(parsed.status==='granted'||parsed.status==='denied')){
+      savedChoice=parsed.status;
     }
   }
 }catch(e){}
-gtag('consent','default',consentState);
+var eeaMeasure=savedChoice==='granted'?'granted':'denied';
+var globalMeasure=savedChoice==='denied'?'denied':'granted';
+gtag('consent','default',{
+  ad_storage:eeaMeasure,
+  ad_user_data:eeaMeasure,
+  ad_personalization:'denied',
+  analytics_storage:eeaMeasure,
+  functionality_storage:'granted',
+  security_storage:'granted',
+  personalization_storage:'denied',
+  wait_for_update:500,
+  region:${JSON.stringify(EEA_UK_CH_REGIONS)}
+});
+gtag('consent','default',{
+  ad_storage:globalMeasure,
+  ad_user_data:globalMeasure,
+  ad_personalization:'denied',
+  analytics_storage:globalMeasure,
+  functionality_storage:'granted',
+  security_storage:'granted',
+  personalization_storage:'denied'
+});
 gtag('set','ads_data_redaction',true);
 gtag('set','url_passthrough',true);
 gtag('js',new Date());
