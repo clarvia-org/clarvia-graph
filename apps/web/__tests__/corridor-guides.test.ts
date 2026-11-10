@@ -8,13 +8,17 @@ import { GUIDE_UI_COPY } from "@/content/corridor-guide-ui";
 import {
   allCorridorGuides,
   allCorridorGuideStaticParams,
+  corridorGuidePageHreflangAlternates,
   corridorGuidePath,
+  formatGuideSeoDescription,
+  formatGuideSeoTitle,
   getAnyCorridorGuideBySlug,
   getCorridorGuideBySlug,
   getCrossBorderSpokesForCountry,
   getParentSingleCountryHubsForCorridor,
   publishedCorridorGuides,
   publishedCorridorGuideStaticParams,
+  shortGuideCardTitle,
 } from "@/content/corridor-guides";
 import { MIN_QUESTION_CHARS, PLACE_HINT_RE } from "@/lib/ask-entry";
 
@@ -476,5 +480,56 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
         }
       }
     }
+  });
+
+  it("optimizes SERP titles, meta descriptions, self-referencing hreflang, and 196/196 same-country sibling cross-links", () => {
+    const guides = publishedCorridorGuides("en");
+    const domestic = guides.filter((g) => g.category === "domestic-bereavement");
+    const terminal = guides.filter((g) => g.category === "terminal-illness-admin");
+
+    for (const d of domestic) {
+      const sibling = terminal.find(
+        (t) => t.countryOfDeathCode === d.countryOfDeathCode,
+      )!;
+      expect(d.relatedSlugs, d.slug).toContain(sibling.slug);
+      expect(sibling.relatedSlugs, sibling.slug).toContain(d.slug);
+    }
+
+    const titleLengths: number[] = [];
+    for (const { lang, slug } of publishedCorridorGuideStaticParams()) {
+      const guide = getCorridorGuideBySlug(slug, lang)!;
+      const seoTitle = formatGuideSeoTitle(guide, lang);
+      const seoDesc = formatGuideSeoDescription(guide, lang);
+      const pageAlternates = corridorGuidePageHreflangAlternates(guide);
+
+      expect(seoTitle.endsWith(" | Clarvia"), `${lang}/${slug}: ${seoTitle}`).toBe(
+        true,
+      );
+      titleLengths.push(seoTitle.length);
+
+      expect(seoDesc.length, `${lang}/${slug}: ${seoDesc}`).toBeGreaterThanOrEqual(
+        110,
+      );
+      expect(seoDesc.length, `${lang}/${slug}: ${seoDesc}`).toBeLessThanOrEqual(158);
+
+      expect(pageAlternates["en"]).toBe(
+        `https://clarvia.org${corridorGuidePath(guide.slug, "en")}`,
+      );
+      expect(pageAlternates["x-default"]).toBe(
+        `https://clarvia.org${corridorGuidePath(guide.slug, "en")}`,
+      );
+    }
+
+    titleLengths.sort((a, b) => a - b);
+    const medianTitleLen = titleLengths[Math.floor(titleLengths.length / 2)];
+    expect(medianTitleLen).toBeLessThanOrEqual(65);
+
+    const ukFranceTerminal = getCorridorGuideBySlug(
+      "uk-france-terminal-illness-checklist",
+      "en",
+    )!;
+    expect(shortGuideCardTitle(ukFranceTerminal)).toBe(
+      "Terminal Illness & Advance Care: UK & France",
+    );
   });
 });

@@ -11,16 +11,26 @@ import {
   getGuideUiCopy,
 } from "@/content/corridor-guide-ui";
 import {
-  corridorGuideHreflangAlternates,
+  corridorGuidePageHreflangAlternates,
   corridorGuidePath,
+  formatGuideSeoDescription,
+  formatGuideSeoTitle,
   getCorridorGuideBySlug,
   getCrossBorderSpokesForCountry,
   getParentSingleCountryHubsForCorridor,
   publishedCorridorGuideStaticParams,
+  shortGuideCardTitle,
 } from "@/content/corridor-guides";
 import GuideCtaClient from "./GuideCtaClient";
 
 const BASE_URL = "https://clarvia.org";
+
+function stripHtmlTags(html: string): string {
+  return html
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
 export const dynamicParams = false;
 
@@ -38,9 +48,9 @@ export async function generateMetadata({
   if (!guide) return {};
 
   const canonical = `${BASE_URL}${corridorGuidePath(guide.slug, lang)}`;
-  const languages = corridorGuideHreflangAlternates(guide);
-  const title = `${guide.title} | Clarvia`;
-  const description = guide.cardSummary;
+  const languages = corridorGuidePageHreflangAlternates(guide);
+  const title = formatGuideSeoTitle(guide, lang);
+  const description = formatGuideSeoDescription(guide, lang);
 
   return {
     title,
@@ -48,15 +58,15 @@ export async function generateMetadata({
     robots: { index: true, follow: true },
     alternates: {
       canonical,
-      ...(languages ? { languages } : {}),
+      languages,
     },
     openGraph: {
       title,
       description,
       url: canonical,
       siteName: "Clarvia",
-      locale: lang,
-      type: "website",
+      locale: lang === "lu" ? "lb" : lang,
+      type: "article",
       images: [{ url: `${BASE_URL}/og-image.png`, width: 1200, height: 630 }],
     },
   };
@@ -73,6 +83,8 @@ export default async function CorridorGuidePage({
 
   const siteLang = siteLangForAskLocale(parseAskLocale(lang) ?? "en");
   const ui = getGuideUiCopy(lang);
+  const bcp47Lang = lang === "lu" ? "lb" : lang;
+  const seoDescription = formatGuideSeoDescription(guide, lang);
 
   const relatedGuides = guide.relatedSlugs
     .map((relSlug) => {
@@ -106,10 +118,39 @@ export default async function CorridorGuidePage({
         ],
       },
       {
+        "@type": "Article",
+        "@id": `${canonicalUrl}#article`,
+        headline: guide.title,
+        description: seoDescription,
+        url: canonicalUrl,
+        inLanguage: bcp47Lang,
+        datePublished: guide.lastReviewed,
+        dateModified: guide.lastReviewed,
+        author: {
+          "@id": "https://clarvia.org/#organization",
+        },
+        publisher: {
+          "@id": "https://clarvia.org/#organization",
+        },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": canonicalUrl,
+        },
+        citation: guide.sources.map((s) => ({
+          "@type": "CreativeWork",
+          name: s.title,
+          publisher: {
+            "@type": "Organization",
+            name: s.publisher,
+          },
+          url: s.url,
+        })),
+      },
+      {
         "@type": "HowTo",
         name: guide.title,
-        description: guide.cardSummary,
-        inLanguage: lang === "lu" ? "lb" : lang,
+        description: seoDescription,
+        inLanguage: bcp47Lang,
         dateModified: guide.lastReviewed,
         publisher: {
           "@id": "https://clarvia.org/#organization",
@@ -118,6 +159,7 @@ export default async function CorridorGuidePage({
           "@type": "HowToStep",
           position: s.stepNumber,
           name: `${ui.stepPrefix} ${s.stepNumber}: ${s.title}`,
+          text: stripHtmlTags(s.html),
           url: `${canonicalUrl}#step-${s.stepNumber}`,
         })),
       },
@@ -181,9 +223,12 @@ export default async function CorridorGuidePage({
                   guide.countryOfDeathCode,
                 )}
           </span>
-          <span className="inline-flex items-center rounded-full bg-white/80 border border-calm-blue-200 px-3 py-1 text-xs font-medium text-calm-blue-600">
+          <time
+            dateTime={guide.lastReviewed}
+            className="inline-flex items-center rounded-full bg-white/80 border border-calm-blue-200 px-3 py-1 text-xs font-medium text-calm-blue-600"
+          >
             {ui.sourcesVerifiedBadge(guide.sources.length, guide.lastReviewed)}
-          </span>
+          </time>
 
           {alternateLocales.map((altCode) => {
             const altLabel =
@@ -243,7 +288,7 @@ export default async function CorridorGuidePage({
 
         {/* 5-Step Official Summary Checklist */}
         <section aria-labelledby="five-step-heading" className="mb-10">
-          <div className="flex items-baseline justify-between mb-5 border-b border-calm-blue-200 pb-3">
+          <div className="flex items-baseline justify-between mb-4 border-b border-calm-blue-200 pb-3">
             <h2
               id="five-step-heading"
               className="text-xl sm:text-2xl font-semibold text-calm-blue-800"
@@ -255,6 +300,39 @@ export default async function CorridorGuidePage({
               {ui.fiveStepSublabel}
             </span>
           </div>
+
+          {/* Compact Jump-Link TOC for Google SERP Inline Sitelinks & Quick Navigation */}
+          <nav
+            aria-label={ui.fiveStepHeading}
+            className="mb-5 flex flex-wrap gap-2"
+          >
+            {guide.steps.map((step) => (
+              <a
+                key={`jump-${step.stepNumber}`}
+                href={`#step-${step.stepNumber}`}
+                className="inline-flex items-center gap-1.5 rounded-lg border border-calm-blue-200 bg-white/80 hover:bg-calm-blue-50 px-2.5 py-1.5 text-xs font-medium text-calm-blue-800 transition-colors"
+              >
+                <span className="font-semibold text-calm-blue-600">
+                  {step.stepNumber}.
+                </span>
+                <span>{step.title}</span>
+              </a>
+            ))}
+            {guide.contacts.length > 0 ? (
+              <a
+                href="#official-contacts-heading"
+                className="inline-flex items-center rounded-lg border border-calm-blue-200 bg-calm-blue-50/70 hover:bg-calm-blue-100/70 px-2.5 py-1.5 text-xs font-semibold text-calm-blue-800 transition-colors"
+              >
+                {ui.contactsHeading}
+              </a>
+            ) : null}
+            <a
+              href="#official-sources-heading"
+              className="inline-flex items-center rounded-lg border border-calm-blue-200 bg-calm-blue-50/70 hover:bg-calm-blue-100/70 px-2.5 py-1.5 text-xs font-semibold text-calm-blue-800 transition-colors"
+            >
+              {ui.sourcesHeading} ({guide.sources.length})
+            </a>
+          </nav>
 
           <ol className="space-y-6">
             {guide.steps.map((step) => (
@@ -324,7 +402,7 @@ export default async function CorridorGuidePage({
                         {spoke.countryOfDeathCode} ↔ {spoke.citizenshipCountryCode}
                       </span>
                       <span className="text-sm font-semibold text-calm-blue-800 leading-snug block">
-                        {spoke.title.split(":")[0]}
+                        {shortGuideCardTitle(spoke)}
                       </span>
                     </Link>
                   ))}
@@ -492,7 +570,7 @@ export default async function CorridorGuidePage({
                     {hub.countryOfDeath} ({hub.countryOfDeathCode})
                   </p>
                   <p className="text-sm font-semibold text-calm-blue-800 leading-snug">
-                    {hub.title.split(":")[0]}
+                    {shortGuideCardTitle(hub)}
                   </p>
                 </Link>
               ))}
@@ -523,7 +601,7 @@ export default async function CorridorGuidePage({
                       : rel.countryOfDeathCode}
                   </p>
                   <p className="text-sm font-semibold text-calm-blue-800 leading-snug">
-                    {rel.title.split(":")[0]}
+                    {shortGuideCardTitle(rel)}
                   </p>
                 </Link>
               ))}
