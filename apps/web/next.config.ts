@@ -44,6 +44,15 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: "/((?!api|_next/static|_next/image).*)",
+        headers: [
+          {
+            key: "CDN-Cache-Control",
+            value: "public, s-maxage=3600, stale-while-revalidate=86400",
+          },
+        ],
+      },
+      {
         source: "/(.*)",
         headers: securityHeaders,
       },

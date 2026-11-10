@@ -71,6 +71,7 @@ export default function Header({ lang }: { lang: Lang }) {
           fill
           sizes="160px"
           priority
+          unoptimized
           className="object-contain"
         />
       </Link>

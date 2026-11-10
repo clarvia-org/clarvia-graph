@@ -41,14 +41,20 @@ body {
   font-family: var(--font-sans);
   font-size: 18px;            /* baseline bump for accessibility */
   line-height: 1.6;
-  background:
-    linear-gradient(rgba(235, 240, 245, 0.45), rgba(235, 240, 245, 0.25)),
-    url('/sky-bg.webp') center/cover no-repeat scroll;
+  background: linear-gradient(180deg, #dce7f5 0%, #ebf0f7 50%, #e4eaf4 100%);
   color: var(--color-calm-blue-800); /* Darkened from 700 for better contrast */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   padding-bottom: var(--cookie-banner-height, 0px);
+}
+
+@media (min-width: 640px) {
+  body {
+    background:
+      linear-gradient(rgba(235, 240, 245, 0.45), rgba(235, 240, 245, 0.25)),
+      url('/sky-bg.webp') center/cover no-repeat scroll;
+  }
 }
 
 @media (min-width: 768px) {
@@ -115,14 +121,22 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── Glass Card ── */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.7); /* Slightly more opaque for contrast */
-  backdrop-filter: blur(32px); /* Increased blur */
-  -webkit-backdrop-filter: blur(32px);
+  background: rgba(255, 255, 255, 0.78); /* Slightly more opaque for contrast */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.8);
   box-shadow: 
     0 10px 40px -10px rgba(31, 38, 135, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.9); /* Inner top highlight */
   border-radius: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+  }
 }
 
 /* ── Smooth transitions for interactive elements ── */

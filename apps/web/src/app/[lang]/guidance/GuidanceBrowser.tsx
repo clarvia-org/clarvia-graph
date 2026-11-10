@@ -20,10 +20,10 @@ export type GuidanceCardItem = {
     | "cross-border-terminal-illness";
   macroRegion: MacroRegion;
   countryOfDeath: string;
-  countryOfDeathEn: string;
+  countryOfDeathEn?: string;
   countryOfDeathCode: string;
   citizenshipCountry: string;
-  citizenshipCountryEn: string;
+  citizenshipCountryEn?: string;
   citizenshipCountryCode: string;
   title: string;
   cardSummary: string;
@@ -137,7 +137,7 @@ export function matchesGuidanceSearch(
   if (!normalizedQuery) return true;
 
   const haystack = foldSearchText(
-    `${item.countryOfDeath} ${item.countryOfDeathEn} ${item.countryOfDeathCode} ${getMultilingualCountryAliases(item.countryOfDeathCode)} ${item.citizenshipCountry} ${item.citizenshipCountryEn} ${item.citizenshipCountryCode} ${getMultilingualCountryAliases(item.citizenshipCountryCode)} ${item.title} ${item.cardSummary}`,
+    `${item.countryOfDeath} ${item.countryOfDeathEn ?? ""} ${item.countryOfDeathCode} ${getMultilingualCountryAliases(item.countryOfDeathCode)} ${item.citizenshipCountry} ${item.citizenshipCountryEn ?? ""} ${item.citizenshipCountryCode} ${getMultilingualCountryAliases(item.citizenshipCountryCode)} ${item.title} ${item.cardSummary}`,
   );
 
   const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
@@ -151,7 +151,7 @@ export function matchesGuidanceSearch(
 function countryMatchScore(item: GuidanceCardItem, normalizedQuery: string): number {
   if (!normalizedQuery) return 0;
   const countryHaystack = foldSearchText(
-    `${item.countryOfDeath} ${item.countryOfDeathEn} ${item.countryOfDeathCode} ${getMultilingualCountryAliases(item.countryOfDeathCode)} ${item.citizenshipCountry} ${item.citizenshipCountryEn} ${item.citizenshipCountryCode} ${getMultilingualCountryAliases(item.citizenshipCountryCode)}`,
+    `${item.countryOfDeath} ${item.countryOfDeathEn ?? ""} ${item.countryOfDeathCode} ${getMultilingualCountryAliases(item.countryOfDeathCode)} ${item.citizenshipCountry} ${item.citizenshipCountryEn ?? ""} ${item.citizenshipCountryCode} ${getMultilingualCountryAliases(item.citizenshipCountryCode)}`,
   );
   const tokens = normalizedQuery.split(/\s+/).filter(Boolean);
   let score = 0;

@@ -12,6 +12,7 @@ import {
 } from "@/content/corridor-guide-ui";
 import {
   corridorGuidePath,
+  formatGuideSeoDescription,
   getCorridorGuideBySlug,
   publishedCorridorGuides,
 } from "@/content/corridor-guides";
@@ -286,13 +287,20 @@ export default async function GuidanceHubPage({
       category: enGuide.category,
       macroRegion,
       countryOfDeath: codLabel,
-      countryOfDeathEn: enGuide.countryOfDeath,
+      ...(codLabel !== enGuide.countryOfDeath
+        ? { countryOfDeathEn: enGuide.countryOfDeath }
+        : {}),
       countryOfDeathCode: enGuide.countryOfDeathCode,
       citizenshipCountry: citLabel,
-      citizenshipCountryEn: enGuide.citizenshipCountry,
+      ...(citLabel !== enGuide.citizenshipCountry
+        ? { citizenshipCountryEn: enGuide.citizenshipCountry }
+        : {}),
       citizenshipCountryCode: enGuide.citizenshipCountryCode,
       title: localizedGuide.title,
-      cardSummary: localizedGuide.cardSummary,
+      cardSummary: formatGuideSeoDescription(
+        localizedGuide,
+        preferredTargetLang,
+      ),
     };
   });
 
