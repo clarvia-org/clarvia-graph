@@ -291,7 +291,7 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
     expect(getCorridorGuideBySlug("luxembourg-bereavement-checklist", "lu")?.title).toContain("Lëtzebuerg");
   });
 
-  it("enforces all 4 factual validation layers (treaty signatory matrix, statutory thresholds, multi-locale citation/contact parity, and zero dead/soft-404/wrong-audience URLs)", () => {
+  it("enforces all 5 factual validation layers (treaty signatory matrix, statutory thresholds, multi-locale citation/contact parity, zero dead/soft-404/wrong-audience URLs, and zero generic WHO/WB/UNICEF/UNDP/SSA-SSPTW proxy sources)", () => {
     const STRASBOURG_1973 = new Set([
       "AD", "AT", "BE", "CY", "CZ", "EE", "FI", "FR", "GR", "IS",
       "LV", "LT", "LU", "MD", "NL", "NO", "PT", "SK", "SI", "ES",
@@ -311,6 +311,42 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
       "https://www.testamentsregister.de/de/sterbefallmitteilung",
       "https://www.testamentsregister.de/en",
     ]);
+
+    const FORBIDDEN_PROXY_HOSTS = new Set([
+      "www.who.int",
+      "who.int",
+      "iris.who.int",
+      "www.afro.who.int",
+      "afro.who.int",
+      "www.emro.who.int",
+      "emro.who.int",
+      "www.paho.org",
+      "paho.org",
+      "searo.who.int",
+      "www.searo.who.int",
+      "wpro.who.int",
+      "www.wpro.who.int",
+      "euro.who.int",
+      "www.euro.who.int",
+      "data.worldbank.org",
+      "www.worldbank.org",
+      "worldbank.org",
+      "documents.worldbank.org",
+      "databank.worldbank.org",
+      "data.unicef.org",
+      "www.unicef.org",
+      "unicef.org",
+      "hdr.undp.org",
+      "www.undp.org",
+      "undp.org",
+    ]);
+    const isForbiddenProxyUrl = (rawUrl: string): boolean => {
+      const host = new URL(rawUrl).hostname.toLowerCase();
+      return (
+        FORBIDDEN_PROXY_HOSTS.has(host) ||
+        rawUrl.toLowerCase().includes("ssa.gov/policy/docs/progdesc/ssptw")
+      );
+    };
 
     const ENTITY_MAP: Record<string, string> = {
       "&amp;": "&",
@@ -399,6 +435,15 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
           "50 eur",
         );
       }
+      if (enGuide.id === "p531_fiji_bereavement_checklist") {
+        expect(enFullText.toLowerCase(), `${enGuide.id} 7-day statutory death deadline`).toContain(
+          "7 days",
+        );
+        expect(
+          enFullText.toLowerCase(),
+          `${enGuide.id} must not apply 60-day birth rule to death registration`,
+        ).not.toMatch(/register(?:ed|ing)?\s+(?:the\s+)?death\s+within\s+(?:2\s+months|two\s+months|60\s+days)/);
+      }
 
       // Layer 3 & Layer 4 across all locales of this guide
       const enStepCites = enGuide.steps.map((s) =>
@@ -452,12 +497,20 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
           expect(FORBIDDEN_DEAD_OR_WRONG_URLS.has(c.website), `${prefix} dead contact URL`).toBe(
             false,
           );
+          expect(
+            isForbiddenProxyUrl(c.website),
+            `${prefix} forbidden proxy contact URL: ${c.website}`,
+          ).toBe(false);
         }
 
         for (const s of view.sources) {
           expect(FORBIDDEN_DEAD_OR_WRONG_URLS.has(s.url), `${prefix} dead source URL`).toBe(
             false,
           );
+          expect(
+            isForbiddenProxyUrl(s.url),
+            `${prefix} forbidden proxy source URL: ${s.url}`,
+          ).toBe(false);
           expect(s.url, `${prefix} physician-only URL`).not.toContain(
             "/medecin/exercice-liberal/",
           );
