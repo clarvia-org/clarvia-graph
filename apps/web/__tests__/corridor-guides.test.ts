@@ -379,8 +379,15 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
         FORBIDDEN_PROXY_PATH_SUBSTRINGS.some((sub) => lowerUrl.includes(sub))
       );
     };
-    const isNfcNormalizedUrl = (rawUrl: string): boolean =>
-      rawUrl.normalize("NFC") === rawUrl;
+    const isNfcNormalizedUrl = (rawUrl: string): boolean => {
+      let decoded = rawUrl;
+      try {
+        decoded = decodeURIComponent(rawUrl);
+      } catch (err) {
+        if (!(err instanceof URIError)) throw err;
+      }
+      return decoded.normalize("NFC") === decoded;
+    };
 
     expect(isForbiddenProxyUrl("https://apps.who.int/iris/handle/10665/123")).toBe(true);
     expect(isForbiddenProxyUrl("https://en.wikipedia.org/wiki/Fiji")).toBe(true);
@@ -397,6 +404,9 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
     expect(
       isForbiddenProxyUrl("https://www.gov.uk/guidance/when-someone-dies-in-myanmar"),
     ).toBe(false);
+    expect(isNfcNormalizedUrl("https://example.gov/cafe%CC%81")).toBe(false);
+    expect(isNfcNormalizedUrl("https://example.gov/caf%C3%A9")).toBe(true);
+    expect(isNfcNormalizedUrl("https://example.gov/%E0%A4%A")).toBe(true);
 
     const ENTITY_MAP: Record<string, string> = {
       "&amp;": "&",
