@@ -312,41 +312,91 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
       "https://www.testamentsregister.de/en",
     ]);
 
-    const FORBIDDEN_PROXY_HOSTS = new Set([
-      "www.who.int",
-      "who.int",
-      "iris.who.int",
-      "www.afro.who.int",
-      "afro.who.int",
-      "www.emro.who.int",
-      "emro.who.int",
-      "www.paho.org",
+    const FORBIDDEN_PROXY_DOMAINS = [
+      "academia.edu",
+      "aljazeera.com",
+      "amnesty.org",
+      "baochinhphu.vn",
+      "bbc.co.uk",
+      "bbc.com",
+      "bham.ac.uk",
+      "britannica.com",
+      "brookings.edu",
+      "chinadaily.com.cn",
+      "clientearth.fr",
+      "clientearth.org",
+      "cnn.com",
+      "cornell.edu",
+      "crin.org",
+      "droitcamerounais.info",
+      "dw.com",
+      "ecoi.net",
+      "france24.com",
+      "hrw.org",
+      "icj.org",
+      "jafbase.fr",
+      "jstor.org",
+      "lefaso.net",
+      "nationalityforall.org",
+      "nrc.no",
+      "nytimes.com",
+      "oceaniacommons.net",
       "paho.org",
-      "searo.who.int",
-      "www.searo.who.int",
-      "wpro.who.int",
-      "www.wpro.who.int",
-      "euro.who.int",
-      "www.euro.who.int",
-      "data.worldbank.org",
-      "www.worldbank.org",
-      "worldbank.org",
-      "documents.worldbank.org",
-      "databank.worldbank.org",
-      "data.unicef.org",
-      "www.unicef.org",
-      "unicef.org",
-      "hdr.undp.org",
-      "www.undp.org",
+      "reliefweb.int",
+      "researchgate.net",
+      "reuters.com",
+      "scmp.com",
+      "scribd.com",
+      "southsudanngoforum.org",
+      "ssrn.com",
+      "theguardian.com",
+      "uliege.be",
       "undp.org",
-    ]);
+      "unicef.org",
+      "unife.it",
+      "who.int",
+      "wikidata.org",
+      "wikimedia.org",
+      "wikipedia.org",
+      "worldbank.org",
+      "xinhuanet.com",
+    ];
+    const FORBIDDEN_PROXY_HOST_PREFIXES = ["etheses.", "orbi.", "dspace."];
+    const FORBIDDEN_PROXY_PATH_SUBSTRINGS = [
+      "ssa.gov/policy/docs/progdesc/ssptw",
+      "ilovepdf",
+      "smallpdf",
+      "/detail.aspx/detail.aspx",
+    ];
     const isForbiddenProxyUrl = (rawUrl: string): boolean => {
+      const lowerUrl = rawUrl.toLowerCase();
       const host = new URL(rawUrl).hostname.toLowerCase();
       return (
-        FORBIDDEN_PROXY_HOSTS.has(host) ||
-        rawUrl.toLowerCase().includes("ssa.gov/policy/docs/progdesc/ssptw")
+        FORBIDDEN_PROXY_DOMAINS.some(
+          (dom) => host === dom || host.endsWith(`.${dom}`),
+        ) ||
+        FORBIDDEN_PROXY_HOST_PREFIXES.some((pfx) => host.startsWith(pfx)) ||
+        FORBIDDEN_PROXY_PATH_SUBSTRINGS.some((sub) => lowerUrl.includes(sub))
       );
     };
+    const isNfcNormalizedUrl = (rawUrl: string): boolean =>
+      rawUrl.normalize("NFC") === rawUrl;
+
+    expect(isForbiddenProxyUrl("https://apps.who.int/iris/handle/10665/123")).toBe(true);
+    expect(isForbiddenProxyUrl("https://en.wikipedia.org/wiki/Fiji")).toBe(true);
+    expect(isForbiddenProxyUrl("https://www.chinadaily.com.cn/a/2020/01/01.html")).toBe(true);
+    expect(isForbiddenProxyUrl("https://www.nrc.no/resources/reports/example")).toBe(true);
+    expect(isForbiddenProxyUrl("https://reliefweb.int/report/world/example")).toBe(true);
+    expect(isForbiddenProxyUrl("https://etheses.bham.ac.uk/id/eprint/1234")).toBe(true);
+    expect(isForbiddenProxyUrl("https://jafbase.fr/docAfrica/Burundi/code.pdf")).toBe(true);
+    expect(
+      isForbiddenProxyUrl(
+        "https://www.ssa.gov/policy/docs/progdesc/ssptw/2018-2019/asia/fiji.html",
+      ),
+    ).toBe(true);
+    expect(
+      isForbiddenProxyUrl("https://www.gov.uk/guidance/when-someone-dies-in-myanmar"),
+    ).toBe(false);
 
     const ENTITY_MAP: Record<string, string> = {
       "&amp;": "&",
@@ -445,6 +495,21 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
         ).not.toMatch(/register(?:ed|ing)?\s+(?:the\s+)?death\s+within\s+(?:2\s+months|two\s+months|60\s+days)/);
       }
 
+      if (enGuide.id === "p538_terminal_illness_admin_kazakhstan") {
+        expect(
+          enGuide.steps[4]?.html.toLowerCase(),
+          `${enGuide.id} step 5 Hague Apostille`,
+        ).toContain("apostille");
+        expect(
+          enGuide.steps[4]?.html,
+          `${enGuide.id} step 5 cites HCCH [6]`,
+        ).toContain(">[6]</a>");
+        expect(
+          enGuide.steps[1]?.html,
+          `${enGuide.id} step 2 does not mis-cite HCCH [6]`,
+        ).not.toContain(">[6]</a>");
+      }
+
       // Layer 3 & Layer 4 across all locales of this guide
       const enStepCites = enGuide.steps.map((s) =>
         Array.from(new Set(Array.from(s.html.matchAll(/\[(\d+)\]/g), (m) => m[1]))).sort(),
@@ -480,6 +545,14 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
           expect(openCount, `${prefix} balanced <${tag}> tags`).toBe(closeCount);
         }
 
+        if (enGuide.id === "p538_terminal_illness_admin_kazakhstan" && loc === "ru") {
+          expect(
+            view.steps[4]?.html.toLowerCase(),
+            `${prefix} step 5 Hague Apostille`,
+          ).toContain("апостил");
+        }
+
+        const isRemediated20261114 = enGuide.lastReviewed === "2026-11-14";
         const sourceMap = new Map(view.sources.map((s) => [s.id, s.url]));
         for (const m of combinedHtml.matchAll(/<a\s+href="([^"]+)"[^>]*>\[(\d+)\]<\/a>/g)) {
           const hrefUrl = m[1].replace(/&amp;/g, "&");
@@ -487,6 +560,23 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
           expect(hrefUrl, `${prefix} citation [${citeId}] href`).toBe(
             sourceMap.get(citeId),
           );
+        }
+        for (const m of combinedHtml.matchAll(/<a\s+[^>]*href="(https?:\/\/[^"]+)"/gi)) {
+          const inlineUrl = m[1].replace(/&amp;/g, "&");
+          expect(
+            isForbiddenProxyUrl(inlineUrl),
+            `${prefix} forbidden proxy inline URL: ${inlineUrl}`,
+          ).toBe(false);
+          expect(
+            isNfcNormalizedUrl(inlineUrl),
+            `${prefix} non-NFC inline URL: ${inlineUrl}`,
+          ).toBe(true);
+          if (isRemediated20261114) {
+            expect(
+              inlineUrl.startsWith("https://"),
+              `${prefix} non-HTTPS inline URL: ${inlineUrl}`,
+            ).toBe(true);
+          }
         }
 
         for (const c of view.contacts) {
@@ -501,6 +591,29 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
             isForbiddenProxyUrl(c.website),
             `${prefix} forbidden proxy contact URL: ${c.website}`,
           ).toBe(false);
+          expect(
+            isNfcNormalizedUrl(c.website),
+            `${prefix} non-NFC contact URL: ${c.website}`,
+          ).toBe(true);
+          if (isRemediated20261114) {
+            expect(
+              c.website.startsWith("https://"),
+              `${prefix} non-HTTPS contact URL: ${c.website}`,
+            ).toBe(true);
+            const linkedSource = view.sources.find((s) => s.id === c.source_id);
+            expect(
+              linkedSource,
+              `${prefix} contact ${c.name} missing source_id=${c.source_id}`,
+            ).toBeDefined();
+            const contactHost = new URL(c.website).hostname.toLowerCase().replace(/^www\./, "");
+            const sourceHost = new URL(linkedSource!.url).hostname
+              .toLowerCase()
+              .replace(/^www\./, "");
+            expect(
+              contactHost,
+              `${prefix} contact ${c.name} host mismatch with source [${c.source_id}]`,
+            ).toBe(sourceHost);
+          }
         }
 
         for (const s of view.sources) {
@@ -511,6 +624,16 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
             isForbiddenProxyUrl(s.url),
             `${prefix} forbidden proxy source URL: ${s.url}`,
           ).toBe(false);
+          expect(
+            isNfcNormalizedUrl(s.url),
+            `${prefix} non-NFC source URL: ${s.url}`,
+          ).toBe(true);
+          if (isRemediated20261114) {
+            expect(
+              s.url.startsWith("https://"),
+              `${prefix} non-HTTPS source URL: ${s.url}`,
+            ).toBe(true);
+          }
           expect(s.url, `${prefix} physician-only URL`).not.toContain(
             "/medecin/exercice-liberal/",
           );
