@@ -13,6 +13,43 @@ import { askFormCopy } from "@/lib/ask-entry-copy";
 import { getGuideUiCopy } from "@/content/corridor-guide-ui";
 import { headlineStyle } from "@/app/[lang]/data";
 
+export function formatInitialGuidePrefill(prefillQuestion: string): string {
+  return `${prefillQuestion.trim().replace(/[:;]+$/, ".")} `;
+}
+
+export function buildGuideFocusPrompt(
+  prefillQuestion: string,
+  ctaSpecificPrefix: string,
+  itemText: string,
+): string {
+  const base = prefillQuestion.trim().replace(/[:;]+$/, ".");
+  const cleanItem = itemText.trim().replace(/[.?!:;]+$/, "");
+  return `${base} ${ctaSpecificPrefix.trim()} ${cleanItem}. `;
+}
+
+export function applyFocusItemSelection(opts: {
+  prefillQuestion: string;
+  ctaSpecificPrefix: string;
+  itemText: string;
+  fillHandle: AskFormHandle | null;
+  questionElement?: {
+    scrollIntoView: (arg: ScrollIntoViewOptions) => void;
+    focus: () => void;
+  } | null;
+}): string {
+  const prompt = buildGuideFocusPrompt(
+    opts.prefillQuestion,
+    opts.ctaSpecificPrefix,
+    opts.itemText,
+  );
+  opts.fillHandle?.fillQuestion(prompt);
+  if (opts.questionElement) {
+    opts.questionElement.scrollIntoView({ behavior: "smooth", block: "center" });
+    opts.questionElement.focus();
+  }
+  return prompt;
+}
+
 export default function GuideCtaClient({
   slug,
   lang = "en",
@@ -40,21 +77,19 @@ export default function GuideCtaClient({
       /* private mode */
     }
     if (fillRef.current) {
-      fillRef.current.fillQuestion(`${prefillQuestion.trim()} `);
+      fillRef.current.fillQuestion(formatInitialGuidePrefill(prefillQuestion));
     }
   }, [slug, prefillQuestion]);
 
   function selectFocusItem(itemText: string) {
-    const base = prefillQuestion.trim().replace(/[:;]+$/, ".");
-    const prompt = `${base} ${ui.ctaSpecificPrefix} ${itemText}. `;
-    if (fillRef.current) {
-      fillRef.current.fillQuestion(prompt);
-    }
-    const el = document.getElementById("ask-question");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "center" });
-      el.focus();
-    }
+    applyFocusItemSelection({
+      prefillQuestion,
+      ctaSpecificPrefix: ui.ctaSpecificPrefix,
+      itemText,
+      fillHandle: fillRef.current,
+      questionElement:
+        typeof document !== "undefined" ? document.getElementById("ask-question") : null,
+    });
   }
 
   return (
