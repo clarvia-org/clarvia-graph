@@ -4,7 +4,7 @@ import {
   matchesGuidanceSearch,
   type GuidanceCardItem,
 } from "@/app/[lang]/guidance/GuidanceBrowser";
-import { GUIDE_UI_COPY } from "@/content/corridor-guide-ui";
+import { GUIDE_UI_COPY, getGuideUiCopy } from "@/content/corridor-guide-ui";
 import {
   allCorridorGuides,
   allCorridorGuideStaticParams,
@@ -20,6 +20,8 @@ import {
   publishedCorridorGuideStaticParams,
   shortGuideCardTitle,
 } from "@/content/corridor-guides";
+import { MAX_QUESTION_CHARS } from "@/app/api/ask/route";
+import { buildGuideFocusPrompt } from "@/app/[lang]/guide/[slug]/GuideCtaClient";
 import { MIN_QUESTION_CHARS, PLACE_HINT_RE } from "@/lib/ask-entry";
 
 const FIRST_PERSON_SINGULAR_EN_RE =
@@ -88,17 +90,239 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
     }
   });
 
-  it("ensures prefillQuestion satisfies MIN_QUESTION_CHARS and PLACE_HINT_RE across all 844 localized guide pages", () => {
+  it("ensures prefillQuestion and focus chips satisfy length bounds, PLACE_HINT_RE, uniqueness, disambiguation, and zero clarify-bait across all 1,000 localized guide pages", () => {
+    const EN_CLIFFHANGER_RE =
+      /\btailored to\b|\bwhether\b|^(?:exact|specific)\b|\b(?:exact|specific)\s+(?:[a-z.]+\s+){0,2}(?:municipality|city|city\/municipality|province|state|emirate|county|commune|d[ée]partement|bundesland|consular district)\b/i;
+    const NON_EN_CLIFFHANGERS = [
+      "notre commune",
+      "dans notre région",
+      "notre région",
+      "adaptées à",
+      "adaptés à",
+      "unsere genaue gemeinde",
+      "für unsere region",
+      "unsere region",
+      "zugeschnitten auf",
+      "nuestro municipio",
+      "nuestra región",
+      "nuestra provincia",
+      "adaptada a",
+      "adaptadas a",
+      "nostro comune",
+      "nella nostra regione",
+      "nostra regione",
+      "adattate a",
+      "onze gemeente",
+      "in onze regio",
+      "onze regio",
+      "afgestemd op",
+      "naszej miejscowości",
+      "w naszym regionie",
+      "w naszym województwie",
+      "dopasowanych do",
+      "dopasowane do",
+      "nosso município",
+      "na nossa região",
+      "nossa região",
+      "adaptada ao",
+      "adaptadas ao",
+      "localitatea noastră",
+      "în județul nostru",
+      "județul nostru",
+      "adaptate localității",
+      "нашего города",
+      "в нашем регионе",
+      "нашого міста",
+      "у нашому регіоні",
+      "مدينتنا",
+      "بلديتنا",
+      "في منطقتنا",
+      "منطقتنا",
+      "خاصة بـ",
+      "خاصة ببلديتنا",
+      "خاصة بمدينتنا",
+      "eis gemeng",
+      "ugeschnidden op",
+      "il/belediye işlemlerimiz",
+      "il/ilçe belediye işlemleri",
+      "bulunduğumuz ilde",
+      "bulunduğumuz ilçede",
+    ];
+    const DISAMBIGUATED_COUNTRY_NAMES: Record<string, Partial<Record<string, string>>> = {
+      FM: {
+        en: "Federated States of Micronesia",
+        de: "Föderierte Staaten von Mikronesien",
+        es: "Estados Federados de Micronesia",
+        fr: "États fédérés de Micronésie",
+        it: "Stati Federati di Micronesia",
+        nl: "Federale Staten van Micronesië",
+        pl: "Sfederowane Stany Mikronezji",
+        pt: "Estados Federados da Micronésia",
+        ro: "Statele Federate ale Microneziei",
+        tr: "Mikronezya Federal Devletleri",
+        uk: "Федеративні Штати Мікронезії",
+        ru: "Федеративные Штаты Микронезии",
+        ar: "ولايات ميكرونيزيا الموحدة",
+        lu: "Federéiert Staate vu Mikronesien",
+      },
+      GE: {
+        en: "country of Georgia",
+        de: "Georgien",
+        es: "Georgia",
+        fr: "Géorgie",
+        it: "Georgia",
+        nl: "Georgië",
+        pl: "Gruzj",
+        pt: "Geórgia",
+        ro: "Georgia",
+        tr: "Gürcistan",
+        uk: "Грузі",
+        ru: "Грузи",
+        ar: "جورجيا",
+        lu: "Georgien",
+      },
+      DM: {
+        en: "Commonwealth of Dominica",
+        de: "Commonwealth Dominica",
+        es: "Mancomunidad de Dominica",
+        fr: "Commonwealth de la Dominique",
+        it: "Commonwealth di Dominica",
+        nl: "Gemenebest Dominica",
+        pl: "Wspólnota Dominiki",
+        pt: "Comunidade da Dominica",
+        ro: "Commonwealth-ul Dominica",
+        tr: "Dominika Topluluğu",
+        uk: "Співдружність Домініки",
+        ru: "Содружество Доминики",
+        ar: "كومنولث دومينيكا",
+        lu: "Commonwealth vu Dominica",
+      },
+      WS: {
+        en: "Independent State of Samoa",
+        de: "Unabhängiger Staat Samoa",
+        es: "Estado Independiente de Samoa",
+        fr: "État indépendant des Samoa",
+        it: "Stato Indipendente di Samoa",
+        nl: "Onafhankelijke Staat Samoa",
+        pl: "Niezależne Państwo Samoa",
+        pt: "Estado Independente de Samoa",
+        ro: "Statul Independent Samoa",
+        tr: "Bağımsız Samoa Devleti",
+        uk: "Незалежна Держава Самоа",
+        ru: "Независимое Государство Самоа",
+        ar: "دولة ساموا المستقلة",
+        lu: "Onofhängege Staat Samoa",
+      },
+      GN: {
+        en: "Republic of Guinea",
+        de: "Republik Guinea",
+        es: "República de Guinea",
+        fr: "République de Guinée",
+        it: "Repubblica di Guinea",
+        nl: "Republiek Guinee",
+        pl: "Republika Gwinei",
+        pt: "República da Guiné",
+        ro: "Republica Guineea",
+        tr: "Gine Cumhuriyeti",
+        uk: "Гвінейськ",
+        ru: "Гвинейск",
+        ar: "جمهورية غينيا",
+        lu: "Republik Guinea",
+      },
+      IE: {
+        en: "Republic of Ireland",
+        de: "Republik Irland",
+        es: "República de Irlanda",
+        fr: "République d'Irlande",
+        it: "Repubblica d'Irlanda",
+        nl: "Republiek Ierland",
+        pl: "Republika Irlandii",
+        pt: "República da Irlanda",
+        ro: "Republica Irlanda",
+        tr: "İrlanda Cumhuriyeti",
+        uk: "Республік",
+        ru: "Республик",
+        ar: "جمهورية أيرلندا",
+        lu: "Republik Irland",
+      },
+    };
+    const seenPrefills = new Map<string, string>();
+
     for (const { lang, slug } of allCorridorGuideStaticParams()) {
       const guide = getAnyCorridorGuideBySlug(slug, lang)!;
-      expect(
-        guide.prefillQuestion.trim().length,
-        `${lang}/${slug}`,
-      ).toBeGreaterThanOrEqual(MIN_QUESTION_CHARS);
-      expect(
-        PLACE_HINT_RE.test(guide.prefillQuestion),
-        `${lang}/${slug}: ${guide.prefillQuestion}`,
-      ).toBe(true);
+      const pf = guide.prefillQuestion;
+      const idLabel = `${lang}/${slug}`;
+      const ui = getGuideUiCopy(lang);
+
+      expect(seenPrefills.has(pf), `${idLabel} duplicates ${seenPrefills.get(pf)}`).toBe(false);
+      seenPrefills.set(pf, idLabel);
+
+      expect(pf, idLabel).toBe(pf.trim());
+      expect(pf.normalize("NFC"), idLabel).toBe(pf);
+      expect(pf.length, idLabel).toBeGreaterThanOrEqual(MIN_QUESTION_CHARS);
+      expect(pf.length, idLabel).toBeLessThanOrEqual(MAX_QUESTION_CHARS);
+      expect(PLACE_HINT_RE.test(pf), `${idLabel}: ${pf}`).toBe(true);
+      expect(pf.endsWith("."), `${idLabel}: ${pf}`).toBe(true);
+      expect(/[?:؟\u2014]/.test(pf), `${idLabel}: ${pf}`).toBe(false);
+
+      for (const [code, localeMap] of Object.entries(DISAMBIGUATED_COUNTRY_NAMES)) {
+        if (guide.countryOfDeathCode === code || guide.citizenshipCountryCode === code) {
+          const expectedName = localeMap[lang];
+          expect(expectedName, `missing disambiguation map for ${code}/${lang}`).toBeDefined();
+          expect(pf, `${idLabel} (${code})`).toContain(expectedName!);
+        }
+      }
+
+      if (lang === "en") {
+        expect(EN_CLIFFHANGER_RE.test(pf), `${idLabel}: ${pf}`).toBe(false);
+        expect(FIRST_PERSON_SINGULAR_EN_RE.test(pf), `${idLabel}: ${pf}`).toBe(false);
+        if (guide.category === "domestic-bereavement") {
+          expect(/\brepatriation\b/i.test(pf), `${idLabel}: ${pf}`).toBe(false);
+          if (/^p(?:3[1-9]|4\d|5[01])_/.test(guide.id)) {
+            expect(pf, idLabel).toContain("estate probate or succession requirements");
+          }
+        }
+        if (
+          guide.category === "terminal-illness-admin" ||
+          guide.category === "cross-border-terminal-illness"
+        ) {
+          expect(BEREAVEMENT_CONDOLENCE_RE.test(pf), `${idLabel}: ${pf}`).toBe(false);
+        }
+      } else {
+        const lowerPf = pf.toLowerCase();
+        for (const phrase of NON_EN_CLIFFHANGERS) {
+          expect(lowerPf.includes(phrase), `${idLabel} (${phrase}): ${pf}`).toBe(false);
+        }
+      }
+
+      for (const item of guide.caseDependentItems) {
+        expect(/[?:؟\u2014]/.test(item), `${idLabel} chip: ${item}`).toBe(false);
+        const combined = buildGuideFocusPrompt(pf, ui.ctaSpecificPrefix, item).trim();
+        expect(combined.length, idLabel).toBeGreaterThanOrEqual(MIN_QUESTION_CHARS);
+        expect(combined.length, idLabel).toBeLessThanOrEqual(MAX_QUESTION_CHARS);
+        expect(PLACE_HINT_RE.test(combined), `${idLabel}: ${combined}`).toBe(true);
+        expect(combined.endsWith("."), `${idLabel}: ${combined}`).toBe(true);
+        expect(/[?؟\u2014]/.test(combined), `${idLabel}: ${combined}`).toBe(false);
+        expect(combined.includes(`: ${ui.ctaSpecificPrefix}`), idLabel).toBe(false);
+
+        if (lang === "en") {
+          expect(EN_CLIFFHANGER_RE.test(item), `${idLabel} chip: ${item}`).toBe(false);
+          expect(FIRST_PERSON_SINGULAR_EN_RE.test(combined), `${idLabel}: ${combined}`).toBe(false);
+          if (
+            guide.category === "terminal-illness-admin" ||
+            guide.category === "cross-border-terminal-illness"
+          ) {
+            expect(BEREAVEMENT_CONDOLENCE_RE.test(combined), `${idLabel}: ${combined}`).toBe(false);
+          }
+        } else {
+          const lowerItem = item.toLowerCase();
+          const lowerCombined = combined.toLowerCase();
+          for (const phrase of NON_EN_CLIFFHANGERS) {
+            expect(lowerItem.includes(phrase), `${idLabel} chip (${phrase}): ${item}`).toBe(false);
+            expect(lowerCombined.includes(phrase), `${idLabel} combined (${phrase}): ${combined}`).toBe(false);
+          }
+        }
+      }
     }
   });
 
