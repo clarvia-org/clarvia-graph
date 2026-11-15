@@ -4,7 +4,7 @@ import {
   matchesGuidanceSearch,
   type GuidanceCardItem,
 } from "@/app/[lang]/guidance/GuidanceBrowser";
-import { GUIDE_UI_COPY } from "@/content/corridor-guide-ui";
+import { GUIDE_UI_COPY, getGuideUiCopy } from "@/content/corridor-guide-ui";
 import {
   allCorridorGuides,
   allCorridorGuideStaticParams,
@@ -88,17 +88,75 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
     }
   });
 
-  it("ensures prefillQuestion satisfies MIN_QUESTION_CHARS and PLACE_HINT_RE across all 844 localized guide pages", () => {
+  it("ensures prefillQuestion satisfies MIN_QUESTION_CHARS, PLACE_HINT_RE, complete sentence punctuation, and no clarify-bait across all 1,000 localized guide pages", () => {
+    const EN_CLIFFHANGER_RE =
+      /\btailored to\b|\bspecific (?:municipality|city|province|state|emirate|county|commune|d[ée]partement|bundesland)\b|\bwhether (?:we|the person|care|burial|the funeral|next of kin)\b/i;
+    const NON_EN_CLIFFHANGERS = [
+      "notre commune",
+      "unsere genaue Gemeinde",
+      "nuestro municipio",
+      "nostro comune",
+      "onze gemeente",
+      "naszej miejscowości",
+      "nosso município",
+      "localitatea noastră",
+      "нашего города",
+      "нашого міста",
+      "مدينتنا",
+      "بلديتنا",
+      "eis Gemeng",
+      "il/belediye işlemlerimiz",
+      "il/ilçe belediye işlemleri",
+    ];
+    const DISAMBIGUATED_EN_NAMES: Record<string, string> = {
+      FM: "Federated States of Micronesia",
+      GE: "country of Georgia",
+      DM: "Commonwealth of Dominica",
+      WS: "Independent State of Samoa",
+      GN: "Republic of Guinea",
+      IE: "Republic of Ireland",
+    };
+
     for (const { lang, slug } of allCorridorGuideStaticParams()) {
       const guide = getAnyCorridorGuideBySlug(slug, lang)!;
-      expect(
-        guide.prefillQuestion.trim().length,
-        `${lang}/${slug}`,
-      ).toBeGreaterThanOrEqual(MIN_QUESTION_CHARS);
-      expect(
-        PLACE_HINT_RE.test(guide.prefillQuestion),
-        `${lang}/${slug}: ${guide.prefillQuestion}`,
-      ).toBe(true);
+      const pf = guide.prefillQuestion;
+      const idLabel = `${lang}/${slug}`;
+      const ui = getGuideUiCopy(lang);
+
+      expect(pf, idLabel).toBe(pf.trim());
+      expect(pf.normalize("NFC"), idLabel).toBe(pf);
+      expect(pf.length, idLabel).toBeGreaterThanOrEqual(MIN_QUESTION_CHARS);
+      expect(PLACE_HINT_RE.test(pf), `${idLabel}: ${pf}`).toBe(true);
+      expect(pf.endsWith("."), `${idLabel}: ${pf}`).toBe(true);
+      expect(pf.includes(":"), `${idLabel}: ${pf}`).toBe(false);
+      expect(pf.includes("\u2014"), `${idLabel}: ${pf}`).toBe(false);
+
+      expect(EN_CLIFFHANGER_RE.test(pf), `${idLabel}: ${pf}`).toBe(false);
+      for (const phrase of NON_EN_CLIFFHANGERS) {
+        expect(pf.includes(phrase), `${idLabel} (${phrase}): ${pf}`).toBe(false);
+      }
+
+      if (lang === "en") {
+        for (const [code, expectedName] of Object.entries(DISAMBIGUATED_EN_NAMES)) {
+          if (guide.countryOfDeathCode === code || guide.citizenshipCountryCode === code) {
+            expect(pf, `${idLabel} (${code})`).toContain(expectedName);
+          }
+        }
+        expect(FIRST_PERSON_SINGULAR_EN_RE.test(pf), `${idLabel}: ${pf}`).toBe(false);
+        if (
+          guide.category === "terminal-illness-admin" ||
+          guide.category === "cross-border-terminal-illness"
+        ) {
+          expect(BEREAVEMENT_CONDOLENCE_RE.test(pf), `${idLabel}: ${pf}`).toBe(false);
+        }
+      }
+
+      for (const item of guide.caseDependentItems) {
+        const combined = `${pf.trim()} ${ui.ctaSpecificPrefix} ${item}.`;
+        expect(combined.length, idLabel).toBeGreaterThanOrEqual(MIN_QUESTION_CHARS);
+        expect(PLACE_HINT_RE.test(combined), `${idLabel}: ${combined}`).toBe(true);
+        expect(combined.includes(`: ${ui.ctaSpecificPrefix}`), idLabel).toBe(false);
+      }
     }
   });
 

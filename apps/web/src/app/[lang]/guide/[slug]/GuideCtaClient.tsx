@@ -40,12 +40,13 @@ export default function GuideCtaClient({
       /* private mode */
     }
     if (fillRef.current) {
-      fillRef.current.fillQuestion(prefillQuestion);
+      fillRef.current.fillQuestion(`${prefillQuestion.trim()} `);
     }
   }, [slug, prefillQuestion]);
 
   function selectFocusItem(itemText: string) {
-    const prompt = `${prefillQuestion.trim()} ${ui.ctaSpecificPrefix} ${itemText}. `;
+    const base = prefillQuestion.trim().replace(/[:;]+$/, ".");
+    const prompt = `${base} ${ui.ctaSpecificPrefix} ${itemText}. `;
     if (fillRef.current) {
       fillRef.current.fillQuestion(prompt);
     }
