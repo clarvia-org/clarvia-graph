@@ -156,6 +156,11 @@ export default function CountryRegistrationAtlasTable({
     if (propSelectRef.current) propSelectRef.current.value = "all";
     if (legalSelectRef.current) legalSelectRef.current.value = "all";
     applyFilters(true);
+    queryRef.current?.focus();
+  }, [applyFilters]);
+
+  useEffect(() => {
+    applyFilters(false);
   }, [applyFilters]);
 
   useEffect(() => {
@@ -410,10 +415,21 @@ export default function CountryRegistrationAtlasTable({
           >
             <option value="all">All notification models</option>
             <option value="automated_or_one_stop">
-              Automated / one-stop (37)
+              Automated / one-stop (
+              {
+                rows.filter((r) => r.agencyPropagation === "automated_or_one_stop")
+                  .length
+              }
+              )
             </option>
             <option value="manual_agency_by_agency">
-              Manual agency-by-agency (159)
+              Manual agency-by-agency (
+              {
+                rows.filter(
+                  (r) => r.agencyPropagation === "manual_agency_by_agency",
+                ).length
+              }
+              )
             </option>
           </select>
         </div>

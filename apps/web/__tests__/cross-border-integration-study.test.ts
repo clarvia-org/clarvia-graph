@@ -234,8 +234,8 @@ describe("Cross-Border Bereavement & Serious Illness Administrative Integration 
       "cross-border-integration-index-2026.json",
     );
 
-    const diskCsv = fs.readFileSync(csvPath, "utf8");
-    const diskJson = fs.readFileSync(jsonPath, "utf8");
+    const diskCsv = fs.readFileSync(csvPath, "utf8").replace(/\r\n/g, "\n");
+    const diskJson = fs.readFileSync(jsonPath, "utf8").replace(/\r\n/g, "\n");
 
     expect(diskCsv).toBe(serializeCrossBorderStudyCsv(study));
     expect(diskJson).toBe(serializeCrossBorderStudyJson(study));
