@@ -1,6 +1,6 @@
 import { type Metadata } from "next";
 import Link from "next/link";
-import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
+import { type Lang, LANGUAGES, l, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
 import FooterSection from "../sections/FooterSection";
@@ -89,7 +89,16 @@ export default async function ForInstitutionsPage({
           </p>
         </section>
 
-        <div className="flex flex-col sm:flex-row gap-3">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3">
+          <Link href="/en/research" className="btn-secondary px-6 py-3 text-base text-center">
+            {l(
+              lang,
+              "Read cross-border research",
+              "Études transfrontalières (EN)",
+              "Grenzüberschreitende Studien (EN)",
+              "Grenziwwerschreidend Fuerschung (EN)",
+            )}
+          </Link>
           <a
             href="https://data.public.lu/en/organizations/clarvia-asbl/"
             target="_blank"

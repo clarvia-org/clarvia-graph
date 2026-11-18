@@ -3,6 +3,7 @@ import {
   ASK_PATH_REDIRECTS,
   LANGUAGE_REDIRECTS,
   LEGACY_GUIDANCE_REDIRECTS,
+  RESEARCH_REDIRECTS,
 } from "./src/lib/i18n";
 
 const securityHeaders = [
@@ -64,6 +65,7 @@ const nextConfig: NextConfig = {
       ...LANGUAGE_REDIRECTS,
       ...ASK_PATH_REDIRECTS,
       ...LEGACY_GUIDANCE_REDIRECTS,
+      ...RESEARCH_REDIRECTS,
     ];
   },
 };

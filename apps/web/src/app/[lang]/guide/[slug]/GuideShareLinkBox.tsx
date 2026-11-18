@@ -152,12 +152,22 @@ export default function GuideShareLinkBox({
   siteLang,
   canonicalUrl,
   anchorTitle,
+  boxId = "link-this-guide",
+  heading,
+  body,
+  snippetSuffix,
+  plainTextOverride,
 }: {
   slug: string;
   lang: string;
   siteLang: Lang;
   canonicalUrl: string;
   anchorTitle: string;
+  boxId?: string;
+  heading?: string;
+  body?: string;
+  snippetSuffix?: string;
+  plainTextOverride?: string;
 }) {
   const ui = useMemo(() => getGuideUiCopy(lang), [lang]);
   const baseId = useId();
@@ -166,6 +176,11 @@ export default function GuideShareLinkBox({
   const htmlCaptionId = `${baseId}-html-caption`;
   const textCodeId = `${baseId}-text`;
   const textCaptionId = `${baseId}-text-caption`;
+
+  const resolvedSuffix = snippetSuffix ?? ui.shareSnippetSuffix;
+  const resolvedHeading = heading ?? ui.shareBoxHeading;
+  const resolvedBody = body ?? ui.shareBoxBody;
+  const headingId = `${boxId}-heading`;
 
   const containerRef = useRef<HTMLDivElement | null>(null);
   const timersRef = useRef<WeakMap<HTMLButtonElement, number>>(new WeakMap());
@@ -178,19 +193,20 @@ export default function GuideShareLinkBox({
       buildGuideHtmlSnippet({
         canonicalUrl,
         anchorTitle,
-        suffix: ui.shareSnippetSuffix,
+        suffix: resolvedSuffix,
       }),
-    [canonicalUrl, anchorTitle, ui.shareSnippetSuffix],
+    [canonicalUrl, anchorTitle, resolvedSuffix],
   );
 
   const textSnippet = useMemo(
     () =>
+      plainTextOverride ??
       buildGuideTextSnippet({
         canonicalUrl,
         anchorTitle,
-        suffix: ui.shareSnippetSuffix,
+        suffix: resolvedSuffix,
       }),
-    [canonicalUrl, anchorTitle, ui.shareSnippetSuffix],
+    [plainTextOverride, canonicalUrl, anchorTitle, resolvedSuffix],
   );
 
   useEffect(() => {
@@ -333,18 +349,18 @@ export default function GuideShareLinkBox({
   return (
     <div
       ref={containerRef}
-      id="link-this-guide"
+      id={boxId}
       className="mt-8 p-5 sm:p-6 rounded-xl bg-white/65 border border-calm-blue-200"
     >
       <h2
-        id="link-this-guide-heading"
+        id={headingId}
         className="text-base sm:text-lg font-semibold text-calm-blue-800 mb-1.5"
         style={headlineStyle}
       >
-        {ui.shareBoxHeading}
+        {resolvedHeading}
       </h2>
       <p className="text-sm text-calm-blue-600 leading-relaxed mb-4">
-        {ui.shareBoxBody}
+        {resolvedBody}
       </p>
 
       <label

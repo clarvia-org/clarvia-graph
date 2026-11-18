@@ -6,6 +6,10 @@ import {
   publishedCorridorGuides,
 } from "@/content/corridor-guides";
 import { FEATURED_UPDATE_SLUGS } from "@/content/featured-updates";
+import {
+  STUDY_1_CANONICAL_URL,
+  STUDY_1_PUBLISHED_DATE,
+} from "@/content/research/cross-border-integration-study";
 
 const BASE_URL = "https://clarvia.org";
 
@@ -75,6 +79,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   entries.push(
+    {
+      url: `${BASE_URL}/en/research`,
+      lastModified: new Date(STUDY_1_PUBLISHED_DATE),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: STUDY_1_CANONICAL_URL,
+      lastModified: new Date(STUDY_1_PUBLISHED_DATE),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     {
       url: `${BASE_URL}/ask`,
       lastModified: now,

@@ -7,15 +7,23 @@ import {
   ASK_PATH_REDIRECTS,
   LANGUAGE_REDIRECTS,
   LEGACY_GUIDANCE_REDIRECTS,
+  RESEARCH_REDIRECTS,
   hreflangLanguages,
 } from "@/lib/i18n";
 
 describe("sitemap", () => {
-  it("includes guidance, how-it-works, checklist, and guide URLs", () => {
-    const urls = sitemap().map((entry) => entry.url);
+  it("includes guidance, how-it-works, checklist, guide, and EN research URLs", () => {
+    const entries = sitemap();
+    const urls = entries.map((entry) => entry.url);
+    expect(entries).toHaveLength(1074);
     expect(urls).toContain("https://clarvia.org/en/how-it-works");
     expect(urls).toContain("https://clarvia.org/fr/guidance");
     expect(urls).toContain("https://clarvia.org/en/checklist");
+    expect(urls).toContain("https://clarvia.org/en/research");
+    expect(urls).toContain(
+      "https://clarvia.org/en/research/cross-border-bereavement-integration-index",
+    );
+    expect(urls).not.toContain("https://clarvia.org/fr/research");
     expect(urls).toContain(
       "https://clarvia.org/en/guide/luxembourg-bereavement-checklist",
     );
@@ -52,6 +60,19 @@ describe("sitemap", () => {
         destination: "/en/guide/luxembourg-bereavement-checklist",
         permanent: true,
       },
+    ]);
+  });
+
+  it("redirects /research and non-EN /:lang/research paths permanently to /en/research", () => {
+    expect(RESEARCH_REDIRECTS).toEqual([
+      { source: "/research", destination: "/en/research", permanent: true },
+      { source: "/research/:slug*", destination: "/en/research/:slug*", permanent: true },
+      { source: "/fr/research", destination: "/en/research", permanent: true },
+      { source: "/fr/research/:slug*", destination: "/en/research/:slug*", permanent: true },
+      { source: "/de/research", destination: "/en/research", permanent: true },
+      { source: "/de/research/:slug*", destination: "/en/research/:slug*", permanent: true },
+      { source: "/lu/research", destination: "/en/research", permanent: true },
+      { source: "/lu/research/:slug*", destination: "/en/research/:slug*", permanent: true },
     ]);
   });
 
