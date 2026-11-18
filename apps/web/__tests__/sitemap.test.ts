@@ -15,7 +15,7 @@ describe("sitemap", () => {
   it("includes guidance, how-it-works, checklist, guide, and EN research URLs", () => {
     const entries = sitemap();
     const urls = entries.map((entry) => entry.url);
-    expect(entries).toHaveLength(1075);
+    expect(entries).toHaveLength(1076);
     expect(urls).toContain("https://clarvia.org/en/how-it-works");
     expect(urls).toContain("https://clarvia.org/fr/guidance");
     expect(urls).toContain("https://clarvia.org/en/checklist");
@@ -25,6 +25,9 @@ describe("sitemap", () => {
     );
     expect(urls).toContain(
       "https://clarvia.org/en/research/global-post-death-civil-registration-atlas",
+    );
+    expect(urls).toContain(
+      "https://clarvia.org/en/research/global-advance-directives-incapacity-mandates-atlas",
     );
     expect(urls).not.toContain("https://clarvia.org/fr/research");
     expect(urls).toContain(
@@ -160,6 +163,7 @@ describe("llms.txt Lighthouse Agentic Browsing compliance", () => {
       "https://clarvia.org/en/research",
       "https://clarvia.org/en/research/cross-border-bereavement-integration-index",
       "https://clarvia.org/en/research/global-post-death-civil-registration-atlas",
+      "https://clarvia.org/en/research/global-advance-directives-incapacity-mandates-atlas",
       "10.5281/zenodo.24245341",
     ]) {
       expect(llmsTxt).toContain(url);

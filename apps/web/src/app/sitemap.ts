@@ -14,6 +14,10 @@ import {
   STUDY_2_CANONICAL_URL,
   STUDY_2_PUBLISHED_DATE,
 } from "@/content/research/post-death-civil-registration-study";
+import {
+  STUDY_3_CANONICAL_URL,
+  STUDY_3_PUBLISHED_DATE,
+} from "@/content/research/advance-directives-incapacity-study";
 
 const BASE_URL = "https://clarvia.org";
 
@@ -98,6 +102,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: STUDY_2_CANONICAL_URL,
       lastModified: new Date(STUDY_2_PUBLISHED_DATE),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: STUDY_3_CANONICAL_URL,
+      lastModified: new Date(STUDY_3_PUBLISHED_DATE),
       changeFrequency: "monthly",
       priority: 0.8,
     },

@@ -28,6 +28,13 @@ import {
   STUDY_2_PUBLISHED_DATE,
   getPostDeathCivilRegistrationStudy,
 } from "@/content/research/post-death-civil-registration-study";
+import {
+  STUDY_3_CANONICAL_URL,
+  STUDY_3_CSV_PATH,
+  STUDY_3_JSON_PATH,
+  STUDY_3_PUBLISHED_DATE,
+  getAdvanceDirectivesIncapacityStudy,
+} from "@/content/research/advance-directives-incapacity-study";
 
 export const dynamicParams = false;
 
@@ -62,6 +69,7 @@ export default async function ResearchHubPage({
 
   const study = getCrossBorderIntegrationStudy();
   const study2 = getPostDeathCivilRegistrationStudy();
+  const study3 = getAdvanceDirectivesIncapacityStudy();
   const canonicalUrl = "https://clarvia.org/en/research";
 
   const jsonLd = {
@@ -105,6 +113,13 @@ export default async function ResearchHubPage({
             headline:
               "Global Post-Death Civil Registration & Estate Administration Atlas (2026)",
             datePublished: STUDY_2_PUBLISHED_DATE,
+          },
+          {
+            "@type": "ScholarlyArticle",
+            url: STUDY_3_CANONICAL_URL,
+            headline:
+              "Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border Portability (2026)",
+            datePublished: STUDY_3_PUBLISHED_DATE,
           },
         ],
       },
@@ -365,6 +380,111 @@ export default async function ResearchHubPage({
               </a>
               <a
                 href={STUDY_2_JSON_PATH}
+                download
+                className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
+              >
+                Download JSON
+              </a>
+            </div>
+          </article>
+
+          <article className="glass-panel p-6 sm:p-8 border border-calm-blue-200 mt-6">
+            <div className="flex flex-wrap items-center gap-2 text-xs text-calm-blue-600 mb-3">
+              <span className="inline-flex items-center rounded-full bg-calm-blue-50 border border-calm-blue-200 px-2.5 py-0.5 font-semibold text-calm-blue-800">
+                Report
+              </span>
+              <time dateTime={STUDY_3_PUBLISHED_DATE}>18 November 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>Treaty snapshot: {study3.verifySnapshot}</span>
+              <span aria-hidden="true">·</span>
+              <span>
+                {study3.totalCountries} countries · {study3.totalCorridors}{" "}
+                corridors
+              </span>
+            </div>
+
+            <h3
+              className="text-2xl sm:text-3xl font-semibold text-calm-blue-900 mb-3"
+              style={headlineStyle}
+            >
+              <Link
+                href="/en/research/global-advance-directives-incapacity-mandates-atlas"
+                className="hover:underline"
+              >
+                Global Atlas of Advance Directives, Incapacity Mandates &amp;
+                Cross-Border Portability (2026)
+              </Link>
+            </h3>
+
+            <p className="text-base text-calm-blue-700 leading-relaxed mb-6">
+              A 196-country and 40-corridor comparative atlas examining binding
+              advance healthcare directives ({study3.bindingStatutoryAhdPct.toFixed(1)}%
+              statutory reach; {study3.nationalAhdRegisterPct.toFixed(1)}% with
+              a national registry or e-health lookup), incapacity mandate
+              continuity ({study3.continuingPoaPct.toFixed(1)}% continuing PoAs
+              and {study3.voluntaryGuardianOrSupportPct.toFixed(1)}% voluntary
+              guardianship or CRPD support deeds vs.{" "}
+              {study3.ordinaryPoaLapsesPct.toFixed(1)}% where ordinary mandates
+              lapse), family caregiver leave ({study3.paidCaregiverLeavePct.toFixed(1)}%
+              paid), and the {study3.corridorApostilleVsPortabilityGapPts.toFixed(1)}
+              -percentage-point gap between Hague Apostille authentication (
+              {study3.corridorMutualApostillePct.toFixed(1)}%) and mutual
+              nationwide HCCH #35 recognition (
+              {study3.corridorMutualHcch35Pct.toFixed(1)}%).
+            </p>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+              <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-3.5">
+                <div className="text-xl font-semibold text-calm-blue-900 tabular-nums">
+                  {study3.nationalAhdRegisterCount} / {study3.totalCountries}
+                </div>
+                <div className="text-xs text-calm-blue-600 mt-0.5">
+                  National AHD registry ({study3.nationalAhdRegisterPct.toFixed(1)}%)
+                </div>
+              </div>
+              <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-3.5">
+                <div className="text-xl font-semibold text-calm-blue-900 tabular-nums">
+                  {study3.ordinaryPoaLapsesPct.toFixed(1)}%
+                </div>
+                <div className="text-xs text-calm-blue-600 mt-0.5">
+                  Ordinary PoA lapses on incapacity ({study3.ordinaryPoaLapsesCount}/
+                  {study3.totalCountries})
+                </div>
+              </div>
+              <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-3.5">
+                <div className="text-xl font-semibold text-calm-blue-900 tabular-nums">
+                  {study3.corridorMutualHcch35Count} / {study3.totalCorridors}
+                </div>
+                <div className="text-xs text-calm-blue-600 mt-0.5">
+                  Mutual nationwide HCCH #35 ({study3.corridorMutualHcch35Pct.toFixed(1)}%)
+                </div>
+              </div>
+              <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-3.5">
+                <div className="text-xl font-semibold text-calm-blue-900 tabular-nums">
+                  {study3.totalVerifiedCitationsCombined.toLocaleString("en-US")}
+                </div>
+                <div className="text-xs text-calm-blue-600 mt-0.5">
+                  Official citations across 236 guides
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/en/research/global-advance-directives-incapacity-mandates-atlas"
+                className="btn-primary px-6 py-3 text-sm sm:text-base inline-flex items-center"
+              >
+                Read report &amp; inspect all 196 countries
+              </Link>
+              <a
+                href={STUDY_3_CSV_PATH}
+                download
+                className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
+              >
+                Download CSV
+              </a>
+              <a
+                href={STUDY_3_JSON_PATH}
                 download
                 className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
               >

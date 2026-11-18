@@ -6,6 +6,8 @@ import FooterSection from "../../sections/FooterSection";
 import { headlineStyle } from "../../data";
 import GuideShareLinkBox from "../../guide/[slug]/GuideShareLinkBox";
 import CorridorIntegrationTable from "./CorridorIntegrationTable";
+import { STUDY_2_CANONICAL_URL } from "@/content/research/post-death-civil-registration-study";
+import { STUDY_3_CANONICAL_URL } from "@/content/research/advance-directives-incapacity-study";
 import {
   CORPUS_STATS,
   GITHUB_STUDY_SOURCE_URL,
@@ -858,6 +860,57 @@ export default async function CrossBorderIntegrationIndexPage({
             ))}
           </ol>
         </section>
+
+        {/* Companion Study Cards */}
+        <div className="max-w-3xl mb-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-5 flex flex-col justify-between gap-3">
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-calm-blue-500">
+                Companion Study 2 · 196 Countries
+              </div>
+              <p className="font-semibold text-calm-blue-900 mt-0.5">
+                Global Post-Death Civil Registration &amp; Estate Administration
+                Atlas (2026)
+              </p>
+              <p className="text-sm text-calm-blue-600 mt-1">
+                Statutory death registration windows, digital filing, once-only
+                propagation, and probate models.
+              </p>
+            </div>
+            <div>
+              <Link
+                href={STUDY_2_CANONICAL_URL.replace("https://clarvia.org", "")}
+                className="btn-secondary px-4 py-2 text-xs font-semibold inline-flex items-center"
+              >
+                Read Study 2
+              </Link>
+            </div>
+          </div>
+
+          <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-5 flex flex-col justify-between gap-3">
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-calm-blue-500">
+                Companion Study 3 · 196 Countries &amp; 40 Corridors
+              </div>
+              <p className="font-semibold text-calm-blue-900 mt-0.5">
+                Global Atlas of Advance Directives, Incapacity Mandates &amp;
+                Cross-Border Portability (2026)
+              </p>
+              <p className="text-sm text-calm-blue-600 mt-1">
+                Advance healthcare directives, continuing powers of attorney,
+                caregiver leave, and HCCH #35 reach.
+              </p>
+            </div>
+            <div>
+              <Link
+                href={STUDY_3_CANONICAL_URL.replace("https://clarvia.org", "")}
+                className="btn-secondary px-4 py-2 text-xs font-semibold inline-flex items-center"
+              >
+                Read Study 3
+              </Link>
+            </div>
+          </div>
+        </div>
 
         {/* 1-Click Citation Box */}
         <div className="max-w-3xl">

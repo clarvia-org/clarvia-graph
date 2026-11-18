@@ -23,6 +23,7 @@ import {
   getPostDeathCivilRegistrationStudy,
 } from "@/content/research/post-death-civil-registration-study";
 import { STUDY_1_CANONICAL_URL } from "@/content/research/cross-border-integration-study";
+import { STUDY_3_CANONICAL_URL } from "@/content/research/advance-directives-incapacity-study";
 
 const PAGE_TITLE =
   "Global Post-Death Civil Registration & Estate Administration Atlas (2026) | Clarvia";
@@ -1010,27 +1011,55 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
           </ol>
         </section>
 
-        {/* Companion Study Card */}
-        <div className="max-w-3xl mb-10 rounded-xl border border-calm-blue-200 bg-white/80 p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <div className="text-xs font-semibold uppercase tracking-wide text-calm-blue-500">
-              Companion Study · 200 Bilateral Corridors
+        {/* Companion Study Cards */}
+        <div className="max-w-3xl mb-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-5 flex flex-col justify-between gap-3">
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-calm-blue-500">
+                Companion Study 1 · 200 Corridors
+              </div>
+              <p className="font-semibold text-calm-blue-900 mt-0.5">
+                Cross-Border Bereavement &amp; Serious Illness Integration Index
+                (2026)
+              </p>
+              <p className="text-sm text-calm-blue-600 mt-1">
+                Explore how treaties score across 200 cross-border corridors in
+                38 countries.
+              </p>
             </div>
-            <p className="font-semibold text-calm-blue-900 mt-0.5">
-              Cross-Border Bereavement &amp; Serious Illness Administrative
-              Integration Index (2026)
-            </p>
-            <p className="text-sm text-calm-blue-600 mt-0.5">
-              Explore how treaties score across 200 cross-border corridors in 38
-              countries.
-            </p>
+            <div>
+              <Link
+                href={STUDY_1_CANONICAL_URL.replace("https://clarvia.org", "")}
+                className="btn-secondary px-4 py-2 text-xs font-semibold inline-flex items-center"
+              >
+                Read Study 1
+              </Link>
+            </div>
           </div>
-          <Link
-            href={STUDY_1_CANONICAL_URL.replace("https://clarvia.org", "")}
-            className="btn-secondary px-4 py-2.5 text-sm inline-flex items-center shrink-0"
-          >
-            Read Study 1
-          </Link>
+
+          <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-5 flex flex-col justify-between gap-3">
+            <div>
+              <div className="text-xs font-semibold uppercase tracking-wide text-calm-blue-500">
+                Companion Study 3 · 196 Countries &amp; 40 Corridors
+              </div>
+              <p className="font-semibold text-calm-blue-900 mt-0.5">
+                Global Atlas of Advance Directives, Incapacity Mandates &amp;
+                Cross-Border Portability (2026)
+              </p>
+              <p className="text-sm text-calm-blue-600 mt-1">
+                Advance healthcare directives, continuing powers of attorney,
+                caregiver leave, and HCCH #35 reach.
+              </p>
+            </div>
+            <div>
+              <Link
+                href={STUDY_3_CANONICAL_URL.replace("https://clarvia.org", "")}
+                className="btn-secondary px-4 py-2 text-xs font-semibold inline-flex items-center"
+              >
+                Read Study 3
+              </Link>
+            </div>
+          </div>
         </div>
 
         {/* 1-Click Citation Box */}
