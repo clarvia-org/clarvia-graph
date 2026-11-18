@@ -135,6 +135,11 @@ export default function CorridorIntegrationTable({
     if (countryRef.current) countryRef.current.value = "all";
     if (bridgeRef.current) bridgeRef.current.value = "all";
     applyFilters(true);
+    queryRef.current?.focus();
+  }, [applyFilters]);
+
+  useEffect(() => {
+    applyFilters(false);
   }, [applyFilters]);
 
   useEffect(() => {

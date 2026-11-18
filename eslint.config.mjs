@@ -6,9 +6,9 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   {
     ignores: [
-      "dist/",
-      "build/",
-      "coverage/",
+      "**/dist/**",
+      "**/build/**",
+      "**/coverage/**",
       "node_modules/",
       "apps/",
       "lex/",

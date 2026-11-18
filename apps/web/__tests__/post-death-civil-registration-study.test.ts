@@ -270,8 +270,8 @@ describe("Global Post-Death Civil Registration & Estate Administration Atlas (19
       "global-post-death-civil-registration-2026.json",
     );
 
-    const diskCsv = fs.readFileSync(csvPath, "utf8");
-    const diskJson = fs.readFileSync(jsonPath, "utf8");
+    const diskCsv = fs.readFileSync(csvPath, "utf8").replace(/\r\n/g, "\n");
+    const diskJson = fs.readFileSync(jsonPath, "utf8").replace(/\r\n/g, "\n");
 
     expect(diskCsv).toBe(serializeStudy2RowsToCsv(study));
     expect(diskJson).toBe(serializeStudy2ToJson(study));

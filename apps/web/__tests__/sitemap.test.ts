@@ -142,4 +142,28 @@ describe("llms.txt Lighthouse Agentic Browsing compliance", () => {
     );
     expect(mdLinks.length).toBeGreaterThanOrEqual(15);
   });
+
+  it("keeps llms.txt and llms-full.txt canonical URL counts and research links synced with sitemap.ts", () => {
+    const expectedCount = sitemap().length.toLocaleString("en-US");
+    const llmsTxt = fs.readFileSync(
+      path.join(__dirname, "..", "public", "llms.txt"),
+      "utf8",
+    );
+    const llmsFullTxt = fs.readFileSync(
+      path.join(__dirname, "..", "public", "llms-full.txt"),
+      "utf8",
+    );
+
+    expect(llmsTxt).toContain(`${expectedCount} canonical URLs`);
+    expect(llmsFullTxt).toContain(`${expectedCount} canonical URLs`);
+    for (const url of [
+      "https://clarvia.org/en/research",
+      "https://clarvia.org/en/research/cross-border-bereavement-integration-index",
+      "https://clarvia.org/en/research/global-post-death-civil-registration-atlas",
+      "10.5281/zenodo.24245341",
+    ]) {
+      expect(llmsTxt).toContain(url);
+      expect(llmsFullTxt).toContain(url);
+    }
+  });
 });
