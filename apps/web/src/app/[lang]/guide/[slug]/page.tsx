@@ -23,6 +23,7 @@ import {
 } from "@/content/corridor-guides";
 import GuideOutboundTracker from "@/components/GuideOutboundTracker";
 import GuideCtaClient from "./GuideCtaClient";
+import GuideShareLinkBox from "./GuideShareLinkBox";
 
 const BASE_URL = "https://clarvia.org";
 
@@ -549,6 +550,14 @@ export default async function CorridorGuidePage({
             {ui.trustBody(guide.lastReviewed)}
           </p>
         </div>
+
+        <GuideShareLinkBox
+          slug={guide.slug}
+          lang={lang}
+          siteLang={siteLang}
+          canonicalUrl={canonicalUrl}
+          anchorTitle={shortGuideCardTitle(guide)}
+        />
 
         {/* Parent Single-Country Hub Links (on Cross-Border Spoke Pages) */}
         {isCrossBorder && parentCountryHubs.length > 0 ? (

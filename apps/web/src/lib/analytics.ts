@@ -158,6 +158,18 @@ export function trackOfficialSourceClick(params: {
   }
 }
 
+export function trackGuideShareCopy(params: {
+  slug: string;
+  language?: string;
+  copy_format: "url" | "html" | "text";
+}): void {
+  trackEvent("guide_share_copy", {
+    guide_slug: params.slug.slice(0, 80),
+    copy_format: params.copy_format,
+    ...(params.language ? { language: params.language } : {}),
+  });
+}
+
 /**
  * Consent Mode v2 + Google tag bootstrap. Must run in <head> before gtag.js.
  * EEA/UK/CH default to denied until opt-in; rest-of-world defaults to measurement
