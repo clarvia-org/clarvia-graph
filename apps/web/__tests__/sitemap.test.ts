@@ -15,13 +15,16 @@ describe("sitemap", () => {
   it("includes guidance, how-it-works, checklist, guide, and EN research URLs", () => {
     const entries = sitemap();
     const urls = entries.map((entry) => entry.url);
-    expect(entries).toHaveLength(1074);
+    expect(entries).toHaveLength(1075);
     expect(urls).toContain("https://clarvia.org/en/how-it-works");
     expect(urls).toContain("https://clarvia.org/fr/guidance");
     expect(urls).toContain("https://clarvia.org/en/checklist");
     expect(urls).toContain("https://clarvia.org/en/research");
     expect(urls).toContain(
       "https://clarvia.org/en/research/cross-border-bereavement-integration-index",
+    );
+    expect(urls).toContain(
+      "https://clarvia.org/en/research/global-post-death-civil-registration-atlas",
     );
     expect(urls).not.toContain("https://clarvia.org/fr/research");
     expect(urls).toContain(

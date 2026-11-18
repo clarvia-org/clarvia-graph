@@ -21,6 +21,13 @@ import {
   ZENODO_STUDY_CORPUS_DOI,
   getCrossBorderIntegrationStudy,
 } from "@/content/research/cross-border-integration-study";
+import {
+  STUDY_2_CANONICAL_URL,
+  STUDY_2_CSV_PATH,
+  STUDY_2_JSON_PATH,
+  STUDY_2_PUBLISHED_DATE,
+  getPostDeathCivilRegistrationStudy,
+} from "@/content/research/post-death-civil-registration-study";
 
 export const dynamicParams = false;
 
@@ -54,6 +61,7 @@ export default async function ResearchHubPage({
   if (lang !== "en") notFound();
 
   const study = getCrossBorderIntegrationStudy();
+  const study2 = getPostDeathCivilRegistrationStudy();
   const canonicalUrl = "https://clarvia.org/en/research";
 
   const jsonLd = {
@@ -90,6 +98,13 @@ export default async function ResearchHubPage({
             headline:
               "Cross-Border Bereavement & Serious Illness Administrative Integration Index (2026)",
             datePublished: STUDY_1_PUBLISHED_DATE,
+          },
+          {
+            "@type": "ScholarlyArticle",
+            url: STUDY_2_CANONICAL_URL,
+            headline:
+              "Global Post-Death Civil Registration & Estate Administration Atlas (2026)",
+            datePublished: STUDY_2_PUBLISHED_DATE,
           },
         ],
       },
@@ -247,6 +262,109 @@ export default async function ResearchHubPage({
               </a>
               <a
                 href={STUDY_1_JSON_PATH}
+                download
+                className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
+              >
+                Download JSON
+              </a>
+            </div>
+          </article>
+
+          <article className="glass-panel p-6 sm:p-8 border border-calm-blue-200 mt-6">
+            <div className="flex flex-wrap items-center gap-2 text-xs text-calm-blue-600 mb-3">
+              <span className="inline-flex items-center rounded-full bg-calm-blue-50 border border-calm-blue-200 px-2.5 py-0.5 font-semibold text-calm-blue-800">
+                Report
+              </span>
+              <time dateTime={STUDY_2_PUBLISHED_DATE}>18 November 2026</time>
+              <span aria-hidden="true">·</span>
+              <span>Corpus snapshot: {study2.verifySnapshot}</span>
+              <span aria-hidden="true">·</span>
+              <span>
+                {study2.totalCountries} countries · {study2.macroRegionCount}{" "}
+                regions
+              </span>
+            </div>
+
+            <h3
+              className="text-2xl sm:text-3xl font-semibold text-calm-blue-900 mb-3"
+              style={headlineStyle}
+            >
+              <Link
+                href="/en/research/global-post-death-civil-registration-atlas"
+                className="hover:underline"
+              >
+                Global Post-Death Civil Registration &amp; Estate Administration
+                Atlas (2026)
+              </Link>
+            </h3>
+
+            <p className="text-base text-calm-blue-700 leading-relaxed mb-6">
+              A 196-country comparative atlas examining statutory death
+              registration deadlines, electronic health-to-registry reporting (
+              {study2.automaticDigitalCount} states with fully automatic entry;{" "}
+              {study2.digitalFilingPct.toFixed(1)}% offering digital or e-portal
+              filing), once-only agency propagation (
+              {study2.automatedPropagationPct.toFixed(1)}% vs.{" "}
+              {study2.manualPropagationPct.toFixed(1)}% manual), estate
+              gatekeeper models, and 1961 Hague Apostille reach (
+              {study2.apostilleInForcePct.toFixed(1)}%).
+            </p>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+              <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-3.5">
+                <div className="text-xl font-semibold text-calm-blue-900 tabular-nums">
+                  {study2.automaticDigitalCount} / {study2.totalCountries}
+                </div>
+                <div className="text-xs text-calm-blue-600 mt-0.5">
+                  Automatic digital registration ({study2.automaticDigitalPct.toFixed(1)}%)
+                </div>
+              </div>
+              <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-3.5">
+                <div className="text-xl font-semibold text-calm-blue-900 tabular-nums">
+                  {study2.manualPropagationPct.toFixed(1)}%
+                </div>
+                <div className="text-xs text-calm-blue-600 mt-0.5">
+                  Manual agency notifications ({study2.manualPropagationCount}/
+                  {study2.totalCountries})
+                </div>
+              </div>
+              <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-3.5">
+                <div className="text-xl font-semibold text-calm-blue-900 tabular-nums">
+                  {study2.apostilleInForcePct.toFixed(1)}%
+                </div>
+                <div className="text-xs text-calm-blue-600 mt-0.5">
+                  1961 Hague Apostille in force ({study2.apostilleInForceCount}/
+                  {study2.totalCountries})
+                </div>
+              </div>
+              <div className="rounded-xl border border-calm-blue-200 bg-white/80 p-3.5">
+                <div className="text-xl font-semibold text-calm-blue-900 tabular-nums">
+                  {study2.totalVerifiedCitationsIn196Guides.toLocaleString(
+                    "en-US",
+                  )}
+                </div>
+                <div className="text-xs text-calm-blue-600 mt-0.5">
+                  Official citations across 196 guides
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/en/research/global-post-death-civil-registration-atlas"
+                className="btn-primary px-6 py-3 text-sm sm:text-base inline-flex items-center"
+              >
+                Read report &amp; inspect all 196 countries
+              </Link>
+              <a
+                href={STUDY_2_CSV_PATH}
+                download
+                className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
+              >
+                Download CSV
+              </a>
+              <a
+                href={STUDY_2_JSON_PATH}
                 download
                 className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
               >
