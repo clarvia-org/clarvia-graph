@@ -69,6 +69,10 @@ export default function FooterSection({ lang }: { lang: Lang }) {
           ),
         },
         {
+          href: "/en/research",
+          label: l(lang, "Research", "Recherche (EN)", "Forschung (EN)", "Fuerschung (EN)"),
+        },
+        {
           href: "https://data.public.lu/en/organizations/clarvia-asbl/",
           label: tr(lang, "Open data"),
           external: true,

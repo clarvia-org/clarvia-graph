@@ -19,6 +19,9 @@ function switchLangPath(pathname: string, nextLang: Lang): string {
   if (rest[0] === "guide" && nextLang !== "en") {
     return `/${nextLang}/guidance`;
   }
+  if (rest[0] === "research" && nextLang !== "en") {
+    return `/${nextLang}/for-institutions`;
+  }
   return rest.length ? `/${nextLang}/${rest.join("/")}` : `/${nextLang}`;
 }
 

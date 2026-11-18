@@ -124,6 +124,21 @@ export const LEGACY_GUIDANCE_REDIRECTS = [
   },
 ] as const;
 
+/**
+ * Research publications are canonical in English under `/en/research/*`.
+ * Redirect bare `/research*` and localized `/fr|de|lu/research*` permanently to `/en/research*`.
+ */
+export const RESEARCH_REDIRECTS = [
+  { source: "/research", destination: "/en/research", permanent: true },
+  { source: "/research/:slug*", destination: "/en/research/:slug*", permanent: true },
+  { source: "/fr/research", destination: "/en/research", permanent: true },
+  { source: "/fr/research/:slug*", destination: "/en/research/:slug*", permanent: true },
+  { source: "/de/research", destination: "/en/research", permanent: true },
+  { source: "/de/research/:slug*", destination: "/en/research/:slug*", permanent: true },
+  { source: "/lu/research", destination: "/en/research", permanent: true },
+  { source: "/lu/research/:slug*", destination: "/en/research/:slug*", permanent: true },
+] as const;
+
 /** hreflang map for a path after the language prefix (`""` for home, `"contact"` for /{lang}/contact). */
 export function hreflangLanguages(pathAfterLang = ""): Record<string, string> {
   const suffix = pathAfterLang ? `/${pathAfterLang}` : "";

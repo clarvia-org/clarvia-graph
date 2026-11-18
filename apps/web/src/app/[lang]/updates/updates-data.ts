@@ -8,6 +8,15 @@ export type Update = {
 /* Newest first — sorted by date descending */
 export const UPDATES: Update[] = [
   {
+    date: "2026-11-18",
+    headline: {
+      en: "Clarvia publishes the 200-corridor Cross-Border Administrative Integration Index (/en/research), archives the 592-guide statutory source dataset on CERN Zenodo (10.5281/zenodo.24245341), and joins the European Commission's Interoperable Europe Open Source Observatory (OSOR)",
+      fr: "Clarvia publie l'indice d'intégration administrative transfrontalière sur 200 corridors (/en/research), archive le jeu de données des 592 guides sur CERN Zenodo (10.5281/zenodo.24245341) et rejoint l'Observatoire de l'open source Interoperable Europe (OSOR) de la Commission européenne",
+      de: "Clarvia veröffentlicht den grenzüberschreitenden Verwaltungsintegrationsindex über 200 Korridore (/en/research), archiviert den 592-Leitfaden-Quellendatensatz auf CERN Zenodo (10.5281/zenodo.24245341) und wird im Interoperable Europe Open Source Observatory (OSOR) der EU-Kommission gelistet",
+      lu: "Clarvia publizéiert den Index iwwer grenziwwerschreidend administrativ Integratioun fir 200 Korridoren (/en/research), archivéiert den Dataset vun den 592 Guiden op CERN Zenodo (10.5281/zenodo.24245341) a gëtt am Interoperable Europe Open Source Observatory (OSOR) vun der EU-Kommissioun gefouert",
+    },
+  },
+  {
     date: "2026-10-30",
     headline: {
       en: "Clarvia publishes 1,000 source-linked guidance pages covering 196 countries across 14 languages",
