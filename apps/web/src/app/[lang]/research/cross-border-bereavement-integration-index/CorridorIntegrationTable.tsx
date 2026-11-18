@@ -341,7 +341,7 @@ export default function CorridorIntegrationTable({
           >
             <option value="all">All {rows.length} corridors</option>
             <option value="cross-border-bereavement">
-              After a death — Bereavement
+              After a death (Bereavement)
             </option>
             <option value="cross-border-terminal-illness">
               Serious or terminal illness
@@ -432,7 +432,7 @@ export default function CorridorIntegrationTable({
             id={captionId}
             className="px-4 py-3 text-left text-sm font-semibold text-calm-blue-800 border-b border-calm-blue-200 bg-calm-blue-50/70"
           >
-            <span>Cross-Border Administrative Integration Index (November 2026) — </span>
+            <span>Cross-Border Administrative Integration Index (November 2026): </span>
             <span ref={countRef} className="font-normal text-calm-blue-600">
               Showing {rows.length} of {rows.length} bilateral corridors
             </span>

@@ -8,8 +8,15 @@ import GuideShareLinkBox from "../../guide/[slug]/GuideShareLinkBox";
 import CorridorIntegrationTable from "./CorridorIntegrationTable";
 import {
   CORPUS_STATS,
+  GITHUB_STUDY_SOURCE_URL,
   STUDY_1_CANONICAL_URL,
+  STUDY_1_CSV_PATH,
+  STUDY_1_JSON_PATH,
   STUDY_1_PUBLISHED_DATE,
+  ZENODO_RECORD_URL,
+  ZENODO_SOFTWARE_DOI,
+  ZENODO_SOFTWARE_RECORD_URL,
+  ZENODO_STUDY_CORPUS_DOI,
   ZENODO_STUDY_CORPUS_DOI_URL,
   getCrossBorderIntegrationStudy,
 } from "@/content/research/cross-border-integration-study";
@@ -17,7 +24,7 @@ import {
 const PAGE_TITLE =
   "Cross-Border Bereavement & Serious Illness Administrative Integration Index (2026) | Clarvia";
 const PAGE_DESCRIPTION =
-  "Empirical 4-bridge treaty analysis of 200 bilateral corridors across 38 countries showing how multilateral and bilateral integration spares families duplicate formalities.";
+  "A 4-bridge treaty analysis of 200 bilateral corridors across 38 countries showing how multilateral and bilateral integration reduces duplicate family formalities.";
 
 export const dynamicParams = false;
 
@@ -142,10 +149,23 @@ export default async function CrossBorderIntegrationIndexPage({
         "@id": `${STUDY_1_CANONICAL_URL}#dataset`,
         name: "Clarvia 200-Corridor Cross-Border Bereavement & Serious Illness Administrative Integration Dataset (November 2026)",
         description:
-          "Deterministic 4-bridge treaty interoperability scoring across 200 bilateral corridors (160 bereavement and 40 serious/terminal illness corridors) covering 38 jurisdictions.",
+          "4-bridge treaty interoperability scoring across 200 bilateral corridors (160 bereavement and 40 serious/terminal illness corridors) covering 38 jurisdictions.",
         url: STUDY_1_CANONICAL_URL,
         license: "https://creativecommons.org/licenses/by/4.0/",
         isBasedOn: ZENODO_STUDY_CORPUS_DOI_URL,
+        sameAs: [ZENODO_RECORD_URL, ZENODO_STUDY_CORPUS_DOI_URL],
+        distribution: [
+          {
+            "@type": "DataDownload",
+            encodingFormat: "text/csv",
+            contentUrl: `https://clarvia.org${STUDY_1_CSV_PATH}`,
+          },
+          {
+            "@type": "DataDownload",
+            encodingFormat: "application/json",
+            contentUrl: `https://clarvia.org${STUDY_1_JSON_PATH}`,
+          },
+        ],
         creator: { "@id": "https://clarvia.org/#organization" },
         temporalCoverage: "2026-11",
       },
@@ -177,10 +197,10 @@ export default async function CrossBorderIntegrationIndexPage({
           </span>
         </nav>
 
-        <header className="max-w-3xl mb-10">
+        <header className="max-w-3xl mb-8">
           <div className="flex flex-wrap items-center gap-2 mb-4">
             <span className="inline-flex items-center rounded-full bg-white/85 border border-calm-blue-200 px-3 py-1 text-xs font-semibold text-calm-blue-800">
-              Empirical Study 1 · {study.totalCorridors} Corridors ·{" "}
+              Research Report · {study.totalCorridors} Corridors ·{" "}
               {study.uniqueCountryCount} Countries
             </span>
             <time
@@ -191,12 +211,12 @@ export default async function CrossBorderIntegrationIndexPage({
               {study.verifySnapshot}
             </time>
             <a
-              href={ZENODO_STUDY_CORPUS_DOI_URL}
+              href={ZENODO_RECORD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-calm-blue-50 border border-calm-blue-200 px-3 py-1 text-xs font-semibold text-calm-blue-700 hover:bg-calm-blue-100"
             >
-              DOI: 10.5281/zenodo.24245341 · CC BY 4.0
+              Dataset DOI: {ZENODO_STUDY_CORPUS_DOI} · CC BY 4.0
             </a>
           </div>
 
@@ -211,19 +231,61 @@ export default async function CrossBorderIntegrationIndexPage({
           <p className="text-lg text-calm-blue-700 leading-relaxed">
             How bilateral and multilateral treaties spare families duplicate
             legalizations, parallel court proceedings, and border delays across{" "}
-            {study.totalCorridors} international corridors—and where cross-border
-            legal integration remains unfinished.
+            {study.totalCorridors} international corridors, and where
+            cross-border legal integration remains unfinished.
           </p>
         </header>
 
-        {/* Key Empirical Findings */}
+        {/* Direct Raw Data Downloads & Open Verification */}
+        <div
+          aria-label="Reproducible dataset downloads and source code"
+          className="mb-10 rounded-xl border border-calm-blue-200 bg-white/80 p-4 flex flex-wrap items-center justify-between gap-3"
+        >
+          <span className="text-xs sm:text-sm font-semibold text-calm-blue-800">
+            Inspect or verify all {study.totalCorridors} corridor rows directly:
+          </span>
+          <div className="flex flex-wrap items-center gap-2">
+            <a
+              href={STUDY_1_CSV_PATH}
+              download
+              className="inline-flex items-center min-h-11 rounded-lg border border-calm-blue-300 bg-white hover:bg-calm-blue-50 px-3 py-2 text-xs font-semibold text-calm-blue-800"
+            >
+              Download CSV ({study.totalCorridors} rows)
+            </a>
+            <a
+              href={STUDY_1_JSON_PATH}
+              download
+              className="inline-flex items-center min-h-11 rounded-lg border border-calm-blue-300 bg-white hover:bg-calm-blue-50 px-3 py-2 text-xs font-semibold text-calm-blue-800"
+            >
+              Download JSON
+            </a>
+            <a
+              href={GITHUB_STUDY_SOURCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center min-h-11 rounded-lg border border-calm-blue-200 bg-calm-blue-50/70 hover:bg-calm-blue-100 px-3 py-2 text-xs font-semibold text-calm-blue-800"
+            >
+              View scoring code on GitHub
+            </a>
+            <a
+              href={ZENODO_RECORD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center min-h-11 rounded-lg border border-calm-blue-200 bg-calm-blue-50/70 hover:bg-calm-blue-100 px-3 py-2 text-xs font-semibold text-calm-blue-800"
+            >
+              592-guide Zenodo archive
+            </a>
+          </div>
+        </div>
+
+        {/* Key Findings */}
         <section aria-labelledby="key-findings-heading" className="mb-12">
           <h2
             id="key-findings-heading"
             className="text-xl sm:text-2xl font-semibold text-calm-blue-800 mb-4"
             style={headlineStyle}
           >
-            Key Empirical Findings ({study.verifySnapshot})
+            Key Findings ({study.verifySnapshot})
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -238,11 +300,8 @@ export default async function CrossBorderIntegrationIndexPage({
                 {intraEuCohort?.count} Intra-EU/Switzerland corridors average{" "}
                 <strong>{intraEuCohort?.meanScore.toFixed(2)}</strong> vs.{" "}
                 <strong>{otherGlobalCohort?.meanScore.toFixed(2)}</strong> across{" "}
-                {otherGlobalCohort?.count} non-regional corridors—a{" "}
-                {intraEuCohort && otherGlobalCohort && otherGlobalCohort.meanScore > 0
-                  ? (intraEuCohort.meanScore / otherGlobalCohort.meanScore).toFixed(1)
-                  : "3.1"}
-                × difference driven by mutual treaties.
+                {otherGlobalCohort?.count} non-regional corridors, reflecting
+                stacked multilateral treaties in force.
               </p>
             </div>
 
@@ -272,7 +331,7 @@ export default async function CrossBorderIntegrationIndexPage({
               <p className="text-xs text-calm-blue-600 mt-2 leading-relaxed">
                 On {study.terminalGapCount} of {study.terminalCount} serious &amp;
                 terminal illness corridors, Powers of Attorney lack mutual
-                HCCH 2000 coverage—compared with{" "}
+                HCCH 2000 coverage, compared with{" "}
                 {study.bereavementParallelEstatePct.toFixed(1)}% (
                 {study.bereavementParallelEstateCount}/{study.bereavementCount})
                 of bereavement corridors needing parallel domestic probate.
@@ -522,7 +581,7 @@ export default async function CrossBorderIntegrationIndexPage({
                       className="px-4 py-2.5 font-normal text-calm-blue-800"
                     >
                       <span className="font-semibold">
-                        Bridge 2 (Estate — Bereavement):
+                        Bridge 2 (Estate, Bereavement):
                       </span>{" "}
                       {b.label}
                     </th>
@@ -544,7 +603,7 @@ export default async function CrossBorderIntegrationIndexPage({
                       className="px-4 py-2.5 font-normal text-calm-blue-800"
                     >
                       <span className="font-semibold">
-                        Bridge 2 (Incapacity — Serious Illness):
+                        Bridge 2 (Incapacity, Serious Illness):
                       </span>{" "}
                       {b.label}
                     </th>
@@ -626,13 +685,37 @@ export default async function CrossBorderIntegrationIndexPage({
           </h2>
 
           <p>
-            Every row in this study is deterministically derived in build-time
-            TypeScript from Clarvia’s verified guide registry and verified
-            treaty depositary status tables as of{" "}
-            <strong>{study.verifySnapshot}</strong>, cross-validated in CI
-            against all {study.totalCorridors} bilateral guides (spanning{" "}
+            Each corridor is scored directly from primary international treaty
+            status tables as of <strong>{study.verifySnapshot}</strong> and
+            Clarvia’s verified statutory guide registry (across{" "}
             {study.uniqueCountryCount} unique jurisdictions and{" "}
-            {study.uniquePairCount} unique country pairs):
+            {study.uniquePairCount} unique country pairs), with every row
+            exported to the{" "}
+            <a
+              href={STUDY_1_CSV_PATH}
+              download
+              className="underline font-medium text-calm-blue-800"
+            >
+              downloadable CSV
+            </a>{" "}
+            and{" "}
+            <a
+              href={STUDY_1_JSON_PATH}
+              download
+              className="underline font-medium text-calm-blue-800"
+            >
+              JSON files
+            </a>{" "}
+            and checked by automated tests in the{" "}
+            <a
+              href={GITHUB_STUDY_SOURCE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline font-medium text-calm-blue-800"
+            >
+              public repository
+            </a>
+            :
           </p>
 
           <ul className="list-disc pl-5 space-y-2">
@@ -645,9 +728,22 @@ export default async function CrossBorderIntegrationIndexPage({
               status death certificates from Apostilles, whereas private Powers
               of Attorney and Advance Directives prepared during serious illness
               generally still rely on notarization, the 1961 Hague Apostille,
-              or separate local execution—so terminal illness corridors carry
-              their own Bridge 2 framework under the 2000 Hague Protection of
-              Adults Convention (HCCH #35).
+              or separate local execution. Accordingly, serious and terminal
+              illness corridors carry their own Bridge 2 framework under the
+              2000 Hague Protection of Adults Convention (HCCH #35).
+            </li>
+            <li>
+              <strong>
+                Non-cremated remains vs. cremated ashes and serious-illness
+                contingency planning:
+              </strong>{" "}
+              Both the 1973 Strasbourg Agreement (ETS No. 080, Art. 1(2)) and the
+              1937 Berlin Arrangement govern international transport of
+              non-cremated human remains (sealed coffins), while cremated ashes
+              follow lighter national border rules. Serious and terminal illness
+              guides ({study.terminalCount} corridors) retain Bridge 3 scoring
+              because Step 5 of each guide covers advance funeral and
+              repatriation planning.
             </li>
             <li>
               <strong>
@@ -660,6 +756,18 @@ export default async function CrossBorderIntegrationIndexPage({
               <strong>Ireland</strong> did not opt in to Regulation (EU) No
               650/2012, and Commonwealth probate resealing reflects common-law
               provinces/states (civil-law Quebec follows separate validation rules).
+            </li>
+            <li>
+              <strong>
+                Formal treaty status vs. administrative practice:
+              </strong>{" "}
+              Scores measure binding international instruments in force rather
+              than informal administrative discretion. For example, between the
+              United Kingdom and Ireland outside the EU, the 1961 Hague Apostille
+              Convention (<code>0.5</code>) is the formal public-document treaty
+              in force, even though registries and banks across the Common
+              Travel Area routinely accept original English-language civil
+              certificates without requesting an Apostille.
             </li>
             <li>
               <strong>
@@ -684,6 +792,31 @@ export default async function CrossBorderIntegrationIndexPage({
               corridors alongside the United Arab Emirates and Egypt). Germany
               withdrew its Article 12(2) objection to Ukraine in 2010, leaving
               Apostilles active on <code>DE ↔ UA</code> corridors.
+            </li>
+            <li>
+              <strong>Clarvia’s two CERN Zenodo identifiers:</strong> Clarvia
+              maintains two distinct Zenodo archives: the open-source monorepo
+              software release archive{" "}
+              <a
+                href={ZENODO_SOFTWARE_RECORD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline font-medium text-calm-blue-800"
+              >
+                {ZENODO_SOFTWARE_DOI}
+              </a>{" "}
+              (archived June 2026) and the global 592-guide, 5,396-citation
+              statutory source dataset{" "}
+              <a
+                href={ZENODO_RECORD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline font-medium text-calm-blue-800"
+              >
+                {ZENODO_STUDY_CORPUS_DOI}
+              </a>{" "}
+              (archived 15 November 2026). Both identifiers are cross-referenced
+              below.
             </li>
             <li>
               <strong>Administrative guidance boundary:</strong> This index
@@ -717,7 +850,7 @@ export default async function CrossBorderIntegrationIndexPage({
                 >
                   {src.title}
                 </a>{" "}
-                <span className="text-calm-blue-600">— {src.issuer}.</span>{" "}
+                <span className="text-calm-blue-600">({src.issuer}).</span>{" "}
                 <span className="block text-xs text-calm-blue-500 mt-0.5">
                   {src.scope}
                 </span>
@@ -737,8 +870,8 @@ export default async function CrossBorderIntegrationIndexPage({
             boxId="cite-this-study"
             heading="Cite or link to this study"
             body="Policy teams, consulates, researchers, civil-society partners, and journalists may freely cite, link to, or reuse this CC BY 4.0 study and 200-corridor dataset."
-            snippetSuffix="Clarvia ASBL (CC BY 4.0, DOI: 10.5281/zenodo.24245341)"
-            plainTextOverride="Clarvia ASBL (2026). Cross-Border Bereavement & Serious Illness Administrative Integration Index: Treaty Interoperability Across 200 Bilateral Corridors. https://clarvia.org/en/research/cross-border-bereavement-integration-index (Dataset DOI: https://doi.org/10.5281/zenodo.24245341)"
+            snippetSuffix="Clarvia ASBL (CC BY 4.0, Dataset DOI: 10.5281/zenodo.24245341)"
+            plainTextOverride="Clarvia ASBL (2026). Cross-Border Bereavement & Serious Illness Administrative Integration Index: Treaty Interoperability Across 200 Bilateral Corridors. https://clarvia.org/en/research/cross-border-bereavement-integration-index (Dataset: https://zenodo.org/records/24245341; Software archive: https://zenodo.org/records/20572455)"
           />
         </div>
 

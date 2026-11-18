@@ -12,9 +12,13 @@ import {
   EC_OSOR_URL,
   GITHUB_REPO_URL,
   STUDY_1_CANONICAL_URL,
+  STUDY_1_CSV_PATH,
+  STUDY_1_JSON_PATH,
   STUDY_1_PUBLISHED_DATE,
   ZENODO_RECORD_URL,
-  ZENODO_STUDY_CORPUS_DOI_URL,
+  ZENODO_SOFTWARE_DOI,
+  ZENODO_SOFTWARE_RECORD_URL,
+  ZENODO_STUDY_CORPUS_DOI,
   getCrossBorderIntegrationStudy,
 } from "@/content/research/cross-border-integration-study";
 
@@ -140,13 +144,13 @@ export default async function ResearchHubPage({
             className="text-2xl font-semibold text-calm-blue-800 mb-5"
             style={headlineStyle}
           >
-            Published Empirical Studies
+            Published Research
           </h2>
 
           <article className="glass-panel p-6 sm:p-8 border border-calm-blue-200">
             <div className="flex flex-wrap items-center gap-2 text-xs text-calm-blue-600 mb-3">
               <span className="inline-flex items-center rounded-full bg-calm-blue-50 border border-calm-blue-200 px-2.5 py-0.5 font-semibold text-calm-blue-800">
-                Study 1
+                Report
               </span>
               <time dateTime={STUDY_1_PUBLISHED_DATE}>18 November 2026</time>
               <span aria-hidden="true">·</span>
@@ -172,13 +176,13 @@ export default async function ResearchHubPage({
             </h3>
 
             <p className="text-base text-calm-blue-700 leading-relaxed mb-6">
-              A deterministic 4-bridge treaty evaluation across{" "}
-              {study.bereavementCount} bereavement corridors and{" "}
-              {study.terminalCount} serious &amp; terminal illness corridors. Shows
-              where the 1961 Hague Apostille Convention ({study.apostilleOrExemptPct}%
-              reach today) already relieves families, and how targeted mutual
-              treaties—succession rules, 2000 Hague Adult Protection, and corpse
-              laissez-passer agreements—lift corridor integration from{" "}
+              A 4-bridge treaty evaluation across {study.bereavementCount}{" "}
+              bereavement corridors and {study.terminalCount} serious &amp;
+              terminal illness corridors. Documents where the 1961 Hague
+              Apostille Convention ({study.apostilleOrExemptPct}% reach today)
+              already relieves families, and how targeted mutual treaties
+              (succession rules, 2000 Hague Adult Protection, and corpse
+              laissez-passer agreements) lift corridor integration from{" "}
               {study.cohorts
                 .find((c) => c.id === "other_global")
                 ?.meanScore.toFixed(2)}{" "}
@@ -232,15 +236,21 @@ export default async function ResearchHubPage({
                 href="/en/research/cross-border-bereavement-integration-index"
                 className="btn-primary px-6 py-3 text-sm sm:text-base inline-flex items-center"
               >
-                Read Study 1 &amp; inspect all 200 corridors
+                Read report &amp; inspect all 200 corridors
               </Link>
               <a
-                href={ZENODO_STUDY_CORPUS_DOI_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary px-5 py-3 text-sm sm:text-base inline-flex items-center"
+                href={STUDY_1_CSV_PATH}
+                download
+                className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
               >
-                Cite corpus dataset (Zenodo DOI)
+                Download CSV
+              </a>
+              <a
+                href={STUDY_1_JSON_PATH}
+                download
+                className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
+              >
+                Download JSON
               </a>
             </div>
           </article>
@@ -263,7 +273,7 @@ export default async function ResearchHubPage({
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <li className="rounded-xl border border-calm-blue-200 bg-white/75 p-4">
               <div className="text-xs font-semibold uppercase tracking-wide text-calm-blue-500 mb-1">
-                CERN Zenodo (DOI 10.5281/zenodo.24245341)
+                CERN Zenodo (Dataset {ZENODO_STUDY_CORPUS_DOI})
               </div>
               <a
                 href={ZENODO_RECORD_URL}
@@ -274,8 +284,17 @@ export default async function ResearchHubPage({
                 Clarvia Global Statutory Source &amp; Reference Dataset (CC BY 4.0)
               </a>
               <p className="text-xs text-calm-blue-600 mt-1">
-                Full archived JSON &amp; CSV dataset covering all 592 canonical
-                guides and 5,396 official citations.
+                Archived JSON &amp; CSV dataset covering 592 canonical guides and
+                5,396 official citations (separate from Clarvia’s software archive{" "}
+                <a
+                  href={ZENODO_SOFTWARE_RECORD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-calm-blue-800"
+                >
+                  {ZENODO_SOFTWARE_DOI}
+                </a>
+                ).
               </p>
             </li>
             <li className="rounded-xl border border-calm-blue-200 bg-white/75 p-4">
@@ -305,7 +324,7 @@ export default async function ResearchHubPage({
                 rel="noopener noreferrer"
                 className="font-semibold text-calm-blue-800 underline hover:text-calm-blue-900"
               >
-                data.europa.eu — Bereavement Source Register (DCAT-AP)
+                data.europa.eu: Bereavement Source Register (DCAT-AP)
               </a>
               <p className="text-xs text-calm-blue-600 mt-1">
                 Harvested via{" "}

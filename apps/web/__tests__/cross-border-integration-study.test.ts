@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
@@ -11,6 +13,8 @@ import {
   CIEC_VIENNA_1976_FORM_C,
   STRASBOURG_1973_CORPSE_TRANSIT,
   getCrossBorderIntegrationStudy,
+  serializeCrossBorderStudyCsv,
+  serializeCrossBorderStudyJson,
 } from "@/content/research/cross-border-integration-study";
 
 const APOSTILLE_NEGATION_RE =
@@ -208,6 +212,64 @@ describe("Cross-Border Bereavement & Serious Illness Administrative Integration 
     // All 200 /en/guide/[slug] hrefs are present in initial static HTML
     for (const row of study.rows) {
       expect(html).toContain(`href="${row.guideHref}"`);
+    }
+    expect(html).not.toContain("—");
+  });
+
+  it("keeps public downloadable CSV and JSON exports byte-for-byte synced and free of em-dashes", () => {
+    const study = getCrossBorderIntegrationStudy();
+    const researchDataDir = path.join(
+      __dirname,
+      "..",
+      "public",
+      "data",
+      "research",
+    );
+    const csvPath = path.join(
+      researchDataDir,
+      "cross-border-integration-index-2026.csv",
+    );
+    const jsonPath = path.join(
+      researchDataDir,
+      "cross-border-integration-index-2026.json",
+    );
+
+    const diskCsv = fs.readFileSync(csvPath, "utf8");
+    const diskJson = fs.readFileSync(jsonPath, "utf8");
+
+    expect(diskCsv).toBe(serializeCrossBorderStudyCsv(study));
+    expect(diskJson).toBe(serializeCrossBorderStudyJson(study));
+
+    const nonEmptyCsvLines = diskCsv.trimEnd().split("\n");
+    expect(nonEmptyCsvLines).toHaveLength(201);
+
+    const parsedJson = JSON.parse(diskJson) as {
+      summary: {
+        totalCorridors: number;
+        totalVerifiedCitationsInStudyCorridors: number;
+      };
+      rows: unknown[];
+    };
+    expect(parsedJson.summary.totalCorridors).toBe(200);
+    expect(parsedJson.summary.totalVerifiedCitationsInStudyCorridors).toBe(
+      study.totalVerifiedCitationsInStudyCorridors,
+    );
+    expect(parsedJson.summary.totalVerifiedCitationsInStudyCorridors).toBe(
+      2423,
+    );
+    expect(parsedJson.rows).toHaveLength(200);
+
+    for (const relPath of [
+      "src/content/research/cross-border-integration-study.ts",
+      "src/app/[lang]/research/page.tsx",
+      "src/app/[lang]/research/cross-border-bereavement-integration-index/page.tsx",
+      "src/app/[lang]/research/cross-border-bereavement-integration-index/CorridorIntegrationTable.tsx",
+    ]) {
+      const content = fs.readFileSync(
+        path.join(__dirname, "..", relPath),
+        "utf8",
+      );
+      expect(content, `Unexpected em-dash in ${relPath}`).not.toContain("—");
     }
   });
 });

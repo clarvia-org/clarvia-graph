@@ -8,8 +8,16 @@ export const STUDY_1_PUBLISHED_DATE = "2026-11-18";
 export const STUDY_1_VERIFY_SNAPSHOT = "November 2026";
 export const STUDY_1_CANONICAL_URL =
   "https://clarvia.org/en/research/cross-border-bereavement-integration-index";
-export const ZENODO_STUDY_CORPUS_DOI_URL = "https://doi.org/10.5281/zenodo.24245341";
+export const STUDY_1_CSV_PATH =
+  "/data/research/cross-border-integration-index-2026.csv";
+export const STUDY_1_JSON_PATH =
+  "/data/research/cross-border-integration-index-2026.json";
+export const ZENODO_STUDY_CORPUS_DOI = "10.5281/zenodo.24245341";
+export const ZENODO_STUDY_CORPUS_DOI_URL =
+  "https://doi.org/10.5281/zenodo.24245341";
 export const ZENODO_RECORD_URL = "https://zenodo.org/records/24245341";
+export const ZENODO_SOFTWARE_DOI = "10.5281/zenodo.20572455";
+export const ZENODO_SOFTWARE_RECORD_URL = "https://zenodo.org/records/20572455";
 export const EC_OSOR_URL =
   "https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/solution/clarvia-cross-border-life-event-guidance-cpsv-ap-consequence-graph";
 export const DATA_EUROPA_URL =
@@ -17,6 +25,8 @@ export const DATA_EUROPA_URL =
 export const DATA_PUBLIC_LU_URL =
   "https://data.public.lu/en/organizations/clarvia-asbl/";
 export const GITHUB_REPO_URL = "https://github.com/clarvia-org/clarvia-graph";
+export const GITHUB_STUDY_SOURCE_URL =
+  "https://github.com/clarvia-org/clarvia-graph/blob/main/apps/web/src/content/research/cross-border-integration-study.ts";
 
 export const CORPUS_STATS = {
   canonicalGuides: 592,
@@ -59,7 +69,7 @@ export const EU_SUCCESSION_650_2012 = new Set([
   "RO",
 ]);
 
-/** Contracting States in force under CIEC Convention No. 16 (Vienna, 8 Sep 1976 — Form C). */
+/** Contracting States in force under CIEC Convention No. 16 (Vienna, 8 Sep 1976, Form C). */
 export const CIEC_VIENNA_1976_FORM_C = new Set([
   "AT",
   "BE",
@@ -335,57 +345,64 @@ export const DEPOSITARY_SOURCES: readonly DepositarySource[] = [
     id: "hcch-12",
     title: "Convention of 5 October 1961 Abolishing the Requirement of Legalisation (HCCH #12 Status Table)",
     issuer: "Hague Conference on Private International Law (HCCH)",
-    scope: "Bridge 1 — Hague Apostille status, Art. 12(2) objections, and Thailand accession (28 Feb 2027 entry into force)",
+    scope: "Bridge 1: Hague Apostille status, Art. 12(2) objections, and Thailand accession (28 Feb 2027 entry into force)",
     url: "https://www.hcch.net/en/instruments/conventions/status-table/?cid=41",
   },
   {
     id: "hcch-35",
     title: "Convention of 13 January 2000 on the International Protection of Adults (HCCH #35 Status Table)",
     issuer: "Hague Conference on Private International Law (HCCH)",
-    scope: "Bridge 2 (Serious & Terminal Illness) — Contracting Parties in force and UK territorial extension to Scotland only",
+    scope: "Bridge 2 (Serious & Terminal Illness): Contracting Parties in force and UK territorial extension to Scotland only",
     url: "https://www.hcch.net/en/instruments/conventions/status-table/?cid=71",
   },
   {
     id: "eu-2016-1191",
     title: "Regulation (EU) 2016/1191 on Promoting the Free Movement of Public Documents",
     issuer: "Official Journal of the European Union (EUR-Lex)",
-    scope: "Bridges 1 & 4 — Intra-EU apostille exemption and Multilingual Standard Forms for civil-status certificates",
+    scope: "Bridges 1 & 4: Intra-EU apostille exemption and Multilingual Standard Forms for civil-status certificates",
     url: "https://eur-lex.europa.eu/eli/reg/2016/1191/oj",
   },
   {
     id: "eu-650-2012",
     title: "Regulation (EU) No 650/2012 on Succession and the European Certificate of Succession",
     issuer: "Official Journal of the European Union (EUR-Lex)",
-    scope: "Bridge 2 (Bereavement) — Unified succession jurisdiction, professio juris, and European Certificate of Succession",
+    scope: "Bridge 2 (Bereavement): Unified succession jurisdiction, professio juris, and European Certificate of Succession",
     url: "https://eur-lex.europa.eu/eli/reg/2012/650/oj",
   },
   {
     id: "ciec-16",
-    title: "CIEC Convention No. 16 on Multilingual Extracts from Civil-Status Records (Vienna, 1976 — Form C)",
+    title: "CIEC Convention No. 16 on Multilingual Extracts from Civil-Status Records (Vienna, 1976, Form C)",
     issuer: "International Commission on Civil Status (ICCS / CIEC)",
-    scope: "Bridges 1 & 4 — Contracting states issuing translation-exempt and apostille-exempt Form C death extracts",
+    scope: "Bridges 1 & 4: Contracting states issuing translation-exempt and apostille-exempt Form C death extracts",
     url: "https://ciec1.org/convention/convention-n16-relative-a-la-delivrance-dextraits-plurilingues-dactes-de-letat-civil/",
   },
   {
     id: "coe-080",
-    title: "Agreement on the Transfer of Corpses (Strasbourg, 1973 — ETS No. 080)",
+    title: "Agreement on the Transfer of Corpses (Strasbourg, 1973, ETS No. 080)",
     issuer: "Council of Europe Treaty Office",
-    scope: "Bridge 3 — Multilateral laissez-passer for international repatriation of human remains",
+    scope: "Bridge 3: Multilateral laissez-passer for international repatriation of human remains",
     url: "https://rm.coe.int/168007617d",
   },
   {
     id: "uk-colonial-probates",
     title: "Colonial Probates Act 1892 (and reciprocal Commonwealth probate resealing framework)",
     issuer: "Legislation.gov.uk (UK National Archives)",
-    scope: "Bridge 2 (Bereavement) — Reciprocal probate grant resealing across UK, Australia, New Zealand, Canada, Singapore, South Africa",
+    scope: "Bridge 2 (Bereavement): Reciprocal probate grant resealing across UK, Australia, New Zealand, Canada, Singapore, South Africa",
     url: "https://www.legislation.gov.uk/ukpga/Vict/55-56/6/contents",
   },
   {
     id: "zenodo-corpus",
-    title: "Clarvia Global Statutory Source & Administrative Reference Dataset (592 Guides, 5,396 Citations)",
+    title: `Clarvia Global Statutory Source & Administrative Reference Dataset (592 Guides, 5,396 Citations; DOI: ${ZENODO_STUDY_CORPUS_DOI})`,
     issuer: "Clarvia ASBL (archived on CERN Zenodo, CC-BY-4.0)",
     scope: "Underlying 200 cross-border and 392 single-country verified reference corpus",
-    url: ZENODO_STUDY_CORPUS_DOI_URL,
+    url: ZENODO_RECORD_URL,
+  },
+  {
+    id: "zenodo-software",
+    title: `Clarvia Graph Open Consequence Graph & Software Archive (DOI: ${ZENODO_SOFTWARE_DOI})`,
+    issuer: "Clarvia ASBL (archived on CERN Zenodo, EUPL-1.2 / Apache-2.0 / CC-BY-4.0)",
+    scope: "Monorepo release archive containing the open-source scoring module, schemas, and automated verification suite",
+    url: ZENODO_SOFTWARE_RECORD_URL,
   },
 ];
 
@@ -961,4 +978,138 @@ export function getCrossBorderIntegrationStudy(): CrossBorderIntegrationStudy {
   };
 
   return cachedStudy;
+}
+
+function csvCell(value: string | number | boolean): string {
+  const str = String(value);
+  if (/[",\n\r]/.test(str)) {
+    return `"${str.replace(/"/g, '""')}"`;
+  }
+  return str;
+}
+
+/** Serialize the 200-corridor integration index as RFC-4180 UTF-8 CSV for direct download and verification. */
+export function serializeCrossBorderStudyCsv(
+  study: CrossBorderIntegrationStudy = getCrossBorderIntegrationStudy(),
+): string {
+  const header = [
+    "id",
+    "slug",
+    "guide_url",
+    "lifecycle_track",
+    "country_1_code",
+    "country_1_name",
+    "country_2_code",
+    "country_2_name",
+    "cohort",
+    "composite_score",
+    "doc_bridge_score",
+    "doc_bridge_code",
+    "doc_bridge_instrument",
+    "continuity_bridge_score",
+    "continuity_bridge_code",
+    "continuity_bridge_instrument",
+    "repatriation_bridge_score",
+    "repatriation_bridge_code",
+    "repatriation_bridge_instrument",
+    "language_bridge_score",
+    "language_bridge_code",
+    "language_bridge_instrument",
+    "verified_official_sources",
+    "thailand_feb_2027_transition",
+    "last_reviewed",
+  ];
+
+  const lines = [header.join(",")];
+  for (const r of study.rows) {
+    lines.push(
+      [
+        csvCell(r.id),
+        csvCell(r.slug),
+        csvCell(`https://clarvia.org${r.guideHref}`),
+        csvCell(r.category),
+        csvCell(r.countryOfDeathCode),
+        csvCell(r.countryOfDeath),
+        csvCell(r.citizenshipCountryCode),
+        csvCell(r.citizenshipCountry),
+        csvCell(r.cohort),
+        csvCell(r.compositeScore.toFixed(2)),
+        csvCell(r.docBridge.score.toFixed(1)),
+        csvCell(r.docBridge.code),
+        csvCell(r.docBridge.instrument),
+        csvCell(r.continuityBridge.score.toFixed(1)),
+        csvCell(r.continuityBridge.code),
+        csvCell(r.continuityBridge.instrument),
+        csvCell(r.repatriationBridge.score.toFixed(1)),
+        csvCell(r.repatriationBridge.code),
+        csvCell(r.repatriationBridge.instrument),
+        csvCell(r.languageBridge.score.toFixed(1)),
+        csvCell(r.languageBridge.code),
+        csvCell(r.languageBridge.instrument),
+        csvCell(r.sourceCount),
+        csvCell(r.thailandFeb2027Transition),
+        csvCell(r.lastReviewed),
+      ].join(","),
+    );
+  }
+  return `${lines.join("\n")}\n`;
+}
+
+/** Serialize the full study metadata, aggregates, depositary sources, and 200 rows as reproducible JSON. */
+export function serializeCrossBorderStudyJson(
+  study: CrossBorderIntegrationStudy = getCrossBorderIntegrationStudy(),
+): string {
+  const payload = {
+    title:
+      "Cross-Border Bereavement & Serious Illness Administrative Integration Index (2026)",
+    publisher: "Clarvia ASBL (RCS Luxembourg F15680)",
+    license: "CC-BY-4.0",
+    publishedDate: study.publishedDate,
+    verifySnapshot: study.verifySnapshot,
+    canonicalUrl: STUDY_1_CANONICAL_URL,
+    csvUrl: `https://clarvia.org${STUDY_1_CSV_PATH}`,
+    jsonUrl: `https://clarvia.org${STUDY_1_JSON_PATH}`,
+    zenodoDatasetDoi: ZENODO_STUDY_CORPUS_DOI,
+    zenodoDatasetRecordUrl: ZENODO_RECORD_URL,
+    zenodoSoftwareDoi: ZENODO_SOFTWARE_DOI,
+    zenodoSoftwareRecordUrl: ZENODO_SOFTWARE_RECORD_URL,
+    scoringCodeUrl: GITHUB_STUDY_SOURCE_URL,
+    summary: {
+      totalCorridors: study.totalCorridors,
+      bereavementCount: study.bereavementCount,
+      terminalCount: study.terminalCount,
+      uniqueCountryCount: study.uniqueCountryCount,
+      uniquePairCount: study.uniquePairCount,
+      totalVerifiedCitationsInStudyCorridors:
+        study.totalVerifiedCitationsInStudyCorridors,
+      fullCorpusCanonicalGuides: CORPUS_STATS.canonicalGuides,
+      fullCorpusLocalizedPages: CORPUS_STATS.localizedPages,
+      fullCorpusVerifiedOfficialCitations:
+        CORPUS_STATS.verifiedOfficialCitations,
+      overallMeanScore: study.overallMeanScore,
+      bereavementMeanScore: study.bereavementMeanScore,
+      terminalMeanScore: study.terminalMeanScore,
+      fullScoreCount: study.fullScoreCount,
+      zeroScoreCount: study.zeroScoreCount,
+      apostilleOrExemptCount: study.apostilleOrExemptCount,
+      apostilleOrExemptPct: study.apostilleOrExemptPct,
+      thailandFeb2027Count: study.thailandFeb2027Count,
+      postFeb2027ApostilleOrExemptPct: study.postFeb2027ApostilleOrExemptPct,
+      bereavementParallelEstateCount: study.bereavementParallelEstateCount,
+      bereavementParallelEstatePct: study.bereavementParallelEstatePct,
+      terminalGapCount: study.terminalGapCount,
+      terminalGapPct: study.terminalGapPct,
+      repatriationGapCount: study.repatriationGapCount,
+      repatriationGapPct: study.repatriationGapPct,
+    },
+    cohorts: study.cohorts,
+    bridge1Distribution: study.bridge1Distribution,
+    bridge2BereavementDistribution: study.bridge2BereavementDistribution,
+    bridge2TerminalDistribution: study.bridge2TerminalDistribution,
+    bridge3Distribution: study.bridge3Distribution,
+    bridge4Distribution: study.bridge4Distribution,
+    depositarySources: study.depositarySources,
+    rows: study.rows,
+  };
+  return `${JSON.stringify(payload, null, 2)}\n`;
 }
