@@ -10,10 +10,10 @@ export const UPDATES: Update[] = [
   {
     date: "2026-11-18",
     headline: {
-      en: "Clarvia publishes the 200-corridor Cross-Border Administrative Integration Index (/en/research), archives the 592-guide statutory source dataset on CERN Zenodo (10.5281/zenodo.24245341), and joins the European Commission's Interoperable Europe Open Source Observatory (OSOR)",
-      fr: "Clarvia publie l'indice d'intégration administrative transfrontalière sur 200 corridors (/en/research), archive le jeu de données des 592 guides sur CERN Zenodo (10.5281/zenodo.24245341) et rejoint l'Observatoire de l'open source Interoperable Europe (OSOR) de la Commission européenne",
-      de: "Clarvia veröffentlicht den grenzüberschreitenden Verwaltungsintegrationsindex über 200 Korridore (/en/research), archiviert den 592-Leitfaden-Quellendatensatz auf CERN Zenodo (10.5281/zenodo.24245341) und wird im Interoperable Europe Open Source Observatory (OSOR) der EU-Kommission gelistet",
-      lu: "Clarvia publizéiert den Index iwwer grenziwwerschreidend administrativ Integratioun fir 200 Korridoren (/en/research), archivéiert den Dataset vun den 592 Guiden op CERN Zenodo (10.5281/zenodo.24245341) a gëtt am Interoperable Europe Open Source Observatory (OSOR) vun der EU-Kommissioun gefouert",
+      en: "Clarvia publishes two open empirical studies under /en/research (the 200-corridor Cross-Border Integration Index and the 196-country Post-Death Civil Registration Atlas), archives the 592-guide dataset on CERN Zenodo (10.5281/zenodo.24245341), and joins the European Commission's Interoperable Europe Open Source Observatory (OSOR)",
+      fr: "Clarvia publie deux études empiriques ouvertes sous /en/research (l'indice transfrontalier sur 200 corridors et l'atlas mondial d'enregistrement civil sur 196 pays), archive le jeu de données des 592 guides sur CERN Zenodo (10.5281/zenodo.24245341) et rejoint l'Observatoire de l'open source Interoperable Europe (OSOR) de la Commission européenne",
+      de: "Clarvia veröffentlicht unter /en/research zwei offene empirische Studien (den grenzüberschreitenden Integrationsindex über 200 Korridore und den 196-Länder-Atlas zur Sterbefallregistrierung), archiviert den 592-Leitfaden-Datensatz auf CERN Zenodo (10.5281/zenodo.24245341) und wird im Interoperable Europe Open Source Observatory (OSOR) der EU-Kommission gelistet",
+      lu: "Clarvia publizéiert op /en/research zwou oppen empiresch Etüden (den grenziwwerschreidenden Index fir 200 Korridoren an den 196-Länner-Atlas fir d'Doudesregistréierung), archivéiert den Dataset vun den 592 Guiden op CERN Zenodo (10.5281/zenodo.24245341) a gëtt am Interoperable Europe Open Source Observatory (OSOR) vun der EU-Kommissioun gefouert",
     },
   },
   {
