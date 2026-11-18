@@ -8,6 +8,7 @@ import {
   trackAskSubmitted,
   trackBeginCheckout,
   trackDonationComplete,
+  trackGuideShareCopy,
   trackOfficialSourceClick,
   trackPageView,
 } from "@/lib/analytics";
@@ -218,6 +219,23 @@ describe("Google Ads / GA4 helpers", () => {
       expect(gtag).toHaveBeenCalledWith("event", "conversion", {
         send_to: "AW-18472344537/guidelbl",
       });
+    });
+
+    it("records informational guide_share_copy event without firing official_source_click or Ads conversion", () => {
+      vi.stubEnv("NEXT_PUBLIC_GOOGLE_ADS_GUIDE_CONVERSION", "AW-18472344537/guidelbl");
+      trackGuideShareCopy({
+        slug: "spain-uk-bereavement-checklist",
+        language: "lb",
+        copy_format: "html",
+      });
+      expect(gtag).toHaveBeenCalledTimes(1);
+      expect(gtag).toHaveBeenCalledWith("event", "guide_share_copy", {
+        guide_slug: "spain-uk-bereavement-checklist",
+        copy_format: "html",
+        language: "lb",
+      });
+      expect(gtag.mock.calls.some((call) => call[1] === "official_source_click")).toBe(false);
+      expect(gtag.mock.calls.some((call) => call[1] === "conversion")).toBe(false);
     });
   });
 });
