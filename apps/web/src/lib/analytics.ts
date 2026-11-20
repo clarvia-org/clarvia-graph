@@ -136,73 +136,29 @@ export function trackBeginCheckout(params: {
   item_category?: "donation" | "associate_membership";
 }): Promise<void> {
   const currency = (params.currency || "EUR").toUpperCase();
-  const baseCheckoutParams = {
+  trackEvent("begin_checkout", {
     currency,
     value: params.value,
     item_category: params.item_category || "donation",
     frequency: params.frequency,
     landing_variant: params.landing_variant,
-    transport_type: "beacon",
-  };
+  });
   // Scope Ads checkout ping strictly to Associate Membership so donation flows stay isolated.
-  const sendTo =
-    params.item_category === "associate_membership"
-      ? adsMembershipCheckoutConversionSendTo()
-      : undefined;
-  const hasLiveGtag =
-    typeof window !== "undefined" && typeof window.gtag === "function";
-
-  if (!hasLiveGtag) {
-    trackEvent("begin_checkout", baseCheckoutParams);
+  if (params.item_category === "associate_membership") {
+    const sendTo = adsMembershipCheckoutConversionSendTo();
     if (sendTo) {
       trackEvent("conversion", {
         send_to: sendTo,
         value: params.value,
         currency,
-        transport_type: "beacon",
       });
     }
+  }
+  if (typeof window === "undefined" || typeof window.gtag !== "function") {
     return Promise.resolve();
   }
-
   return new Promise<void>((resolve) => {
-    let settled = false;
-    let remaining = sendTo ? 2 : 1;
-
-    const finish = () => {
-      if (settled) return;
-      settled = true;
-      clearTimeout(timer);
-      resolve();
-    };
-
-    const timer = setTimeout(finish, CHECKOUT_BEACON_TIMEOUT_MS);
-
-    const makeStepCallback = () => {
-      let stepDone = false;
-      return () => {
-        if (stepDone || settled) return;
-        stepDone = true;
-        remaining -= 1;
-        if (remaining <= 0) finish();
-      };
-    };
-
-    trackEvent("begin_checkout", {
-      ...baseCheckoutParams,
-      event_callback: makeStepCallback(),
-      event_timeout: CHECKOUT_BEACON_TIMEOUT_MS,
-    });
-    if (sendTo) {
-      trackEvent("conversion", {
-        send_to: sendTo,
-        value: params.value,
-        currency,
-        transport_type: "beacon",
-        event_callback: makeStepCallback(),
-        event_timeout: CHECKOUT_BEACON_TIMEOUT_MS,
-      });
-    }
+    setTimeout(resolve, CHECKOUT_BEACON_TIMEOUT_MS);
   });
 }
 
