@@ -12,10 +12,14 @@ import {
   MACRO_REGION_ORDER,
   STUDY_3_CANONICAL_URL,
   STUDY_3_CSV_PATH,
+  STUDY_3_DATA_PUBLIC_LU_URL,
   STUDY_3_JSON_PATH,
   STUDY_3_PDF_PATH,
   STUDY_3_PUBLISHED_DATE,
   STUDY_3_SLUG,
+  STUDY_3_ZENODO_DOI,
+  STUDY_3_ZENODO_DOI_URL,
+  STUDY_3_ZENODO_RECORD_URL,
   ZENODO_RECORD_URL,
   ZENODO_SOFTWARE_DOI,
   ZENODO_SOFTWARE_RECORD_URL,
@@ -71,6 +75,7 @@ export async function generateMetadata({
       citation_author: ["Tommi Lindfors", "Clarvia ASBL"],
       citation_author_institution: "Clarvia ASBL",
       citation_publication_date: "2026/11/18",
+      citation_doi: STUDY_3_ZENODO_DOI,
       citation_pdf_url: `https://clarvia.org${STUDY_3_PDF_PATH}`,
       citation_public_url: STUDY_3_CANONICAL_URL,
       citation_publisher: "Clarvia ASBL",
@@ -142,7 +147,7 @@ export default async function GlobalAdvanceDirectivesIncapacityMandatesAtlasPage
         dateModified: study.publishedDate,
         license: "https://creativecommons.org/licenses/by/4.0/",
         isBasedOn: ZENODO_STUDY_CORPUS_DOI_URL,
-        sameAs: ZENODO_STUDY_CORPUS_DOI_URL,
+        sameAs: [STUDY_3_ZENODO_DOI_URL, STUDY_3_ZENODO_RECORD_URL],
         author: { "@id": "https://clarvia.org/#organization" },
         publisher: { "@id": "https://clarvia.org/#organization" },
         encoding: {
@@ -170,7 +175,11 @@ export default async function GlobalAdvanceDirectivesIncapacityMandatesAtlasPage
         url: STUDY_3_CANONICAL_URL,
         license: "https://creativecommons.org/licenses/by/4.0/",
         isBasedOn: ZENODO_STUDY_CORPUS_DOI_URL,
-        sameAs: [ZENODO_RECORD_URL, ZENODO_STUDY_CORPUS_DOI_URL],
+        sameAs: [
+          STUDY_3_ZENODO_RECORD_URL,
+          STUDY_3_ZENODO_DOI_URL,
+          STUDY_3_DATA_PUBLIC_LU_URL,
+        ],
         distribution: [
           {
             "@type": "DataDownload",
@@ -235,12 +244,12 @@ export default async function GlobalAdvanceDirectivesIncapacityMandatesAtlasPage
               {study.verifySnapshot}
             </time>
             <a
-              href={ZENODO_RECORD_URL}
+              href={STUDY_3_ZENODO_RECORD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-calm-blue-50 border border-calm-blue-200 px-3 py-1 text-xs font-semibold text-calm-blue-700 hover:bg-calm-blue-100"
             >
-              Dataset DOI: {ZENODO_STUDY_CORPUS_DOI} · CC BY 4.0
+              Study DOI: {STUDY_3_ZENODO_DOI} · CC BY 4.0
             </a>
           </div>
 
@@ -302,12 +311,20 @@ export default async function GlobalAdvanceDirectivesIncapacityMandatesAtlasPage
               View classification code on GitHub
             </a>
             <a
-              href={ZENODO_RECORD_URL}
+              href={STUDY_3_ZENODO_RECORD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center min-h-11 rounded-lg border border-calm-blue-200 bg-calm-blue-50/70 hover:bg-calm-blue-100 px-3 py-2 text-xs font-semibold text-calm-blue-800"
             >
-              592-guide Zenodo archive
+              Zenodo record ({STUDY_3_ZENODO_DOI})
+            </a>
+            <a
+              href={STUDY_3_DATA_PUBLIC_LU_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center min-h-11 rounded-lg border border-calm-blue-200 bg-calm-blue-50/70 hover:bg-calm-blue-100 px-3 py-2 text-xs font-semibold text-calm-blue-800"
+            >
+              data.public.lu open dataset
             </a>
           </div>
         </section>
@@ -1173,8 +1190,8 @@ export default async function GlobalAdvanceDirectivesIncapacityMandatesAtlasPage
             boxId="cite-this-study"
             heading="Cite or link to this atlas"
             body="Policy teams, ministries of health and justice, notariats, palliative care networks, researchers, and journalists may freely cite, link to, or reuse this CC BY 4.0 study and open dataset."
-            snippetSuffix="Clarvia ASBL (CC BY 4.0, Dataset DOI: 10.5281/zenodo.24245341)"
-            plainTextOverride="Clarvia ASBL (2026). Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border Portability: 196-Country & 40-Corridor Comparative Study. https://clarvia.org/en/research/global-advance-directives-incapacity-mandates-atlas (Dataset: https://zenodo.org/records/24245341; Software archive: https://zenodo.org/records/20572455)"
+            snippetSuffix="Clarvia ASBL (CC BY 4.0, Study DOI: 10.5281/zenodo.24388599)"
+            plainTextOverride="Clarvia ASBL & Lindfors, T. (2026). Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border Portability: 196-Country & 40-Corridor Comparative Study. https://clarvia.org/en/research/global-advance-directives-incapacity-mandates-atlas (Study DOI: https://doi.org/10.5281/zenodo.24388599; Corpus Dataset: https://zenodo.org/records/24245341; Software archive: https://zenodo.org/records/20572455)"
           />
         </div>
 

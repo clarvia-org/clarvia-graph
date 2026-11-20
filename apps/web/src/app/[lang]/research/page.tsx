@@ -13,9 +13,13 @@ import {
   GITHUB_REPO_URL,
   STUDY_1_CANONICAL_URL,
   STUDY_1_CSV_PATH,
+  STUDY_1_DATA_PUBLIC_LU_URL,
   STUDY_1_JSON_PATH,
   STUDY_1_PDF_PATH,
   STUDY_1_PUBLISHED_DATE,
+  STUDY_1_ZENODO_DOI,
+  STUDY_1_ZENODO_DOI_URL,
+  STUDY_1_ZENODO_RECORD_URL,
   ZENODO_RECORD_URL,
   ZENODO_SOFTWARE_DOI,
   ZENODO_SOFTWARE_RECORD_URL,
@@ -25,17 +29,25 @@ import {
 import {
   STUDY_2_CANONICAL_URL,
   STUDY_2_CSV_PATH,
+  STUDY_2_DATA_PUBLIC_LU_URL,
   STUDY_2_JSON_PATH,
   STUDY_2_PDF_PATH,
   STUDY_2_PUBLISHED_DATE,
+  STUDY_2_ZENODO_DOI,
+  STUDY_2_ZENODO_DOI_URL,
+  STUDY_2_ZENODO_RECORD_URL,
   getPostDeathCivilRegistrationStudy,
 } from "@/content/research/post-death-civil-registration-study";
 import {
   STUDY_3_CANONICAL_URL,
   STUDY_3_CSV_PATH,
+  STUDY_3_DATA_PUBLIC_LU_URL,
   STUDY_3_JSON_PATH,
   STUDY_3_PDF_PATH,
   STUDY_3_PUBLISHED_DATE,
+  STUDY_3_ZENODO_DOI,
+  STUDY_3_ZENODO_DOI_URL,
+  STUDY_3_ZENODO_RECORD_URL,
   getAdvanceDirectivesIncapacityStudy,
 } from "@/content/research/advance-directives-incapacity-study";
 
@@ -106,6 +118,7 @@ export default async function ResearchHubPage({
           {
             "@type": "ScholarlyArticle",
             url: STUDY_1_CANONICAL_URL,
+            sameAs: [STUDY_1_ZENODO_DOI_URL, STUDY_1_ZENODO_RECORD_URL],
             headline:
               "Cross-Border Bereavement & Serious Illness Administrative Integration Index (2026)",
             datePublished: STUDY_1_PUBLISHED_DATE,
@@ -113,6 +126,7 @@ export default async function ResearchHubPage({
           {
             "@type": "ScholarlyArticle",
             url: STUDY_2_CANONICAL_URL,
+            sameAs: [STUDY_2_ZENODO_DOI_URL, STUDY_2_ZENODO_RECORD_URL],
             headline:
               "Global Post-Death Civil Registration & Estate Administration Atlas (2026)",
             datePublished: STUDY_2_PUBLISHED_DATE,
@@ -120,6 +134,7 @@ export default async function ResearchHubPage({
           {
             "@type": "ScholarlyArticle",
             url: STUDY_3_CANONICAL_URL,
+            sameAs: [STUDY_3_ZENODO_DOI_URL, STUDY_3_ZENODO_RECORD_URL],
             headline:
               "Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border Portability (2026)",
             datePublished: STUDY_3_PUBLISHED_DATE,
@@ -565,7 +580,34 @@ export default async function ResearchHubPage({
                 >
                   {ZENODO_SOFTWARE_DOI}
                 </a>
-                ).
+                ). Individual Working Paper &amp; dataset DOIs:{" "}
+                <a
+                  href={STUDY_1_ZENODO_RECORD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-calm-blue-800"
+                >
+                  Study 1 ({STUDY_1_ZENODO_DOI})
+                </a>
+                ,{" "}
+                <a
+                  href={STUDY_2_ZENODO_RECORD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-calm-blue-800"
+                >
+                  Study 2 ({STUDY_2_ZENODO_DOI})
+                </a>
+                , and{" "}
+                <a
+                  href={STUDY_3_ZENODO_RECORD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-calm-blue-800"
+                >
+                  Study 3 ({STUDY_3_ZENODO_DOI})
+                </a>
+                .
               </p>
             </li>
             <li className="rounded-xl border border-calm-blue-200 bg-white/75 p-4">
@@ -607,7 +649,35 @@ export default async function ResearchHubPage({
                 >
                   Luxembourg Open Data (data.public.lu)
                 </a>{" "}
-                across official European portals.
+                across official European portals. Comparative study datasets on
+                data.public.lu:{" "}
+                <a
+                  href={STUDY_1_DATA_PUBLIC_LU_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-calm-blue-800"
+                >
+                  Study 1
+                </a>
+                ,{" "}
+                <a
+                  href={STUDY_2_DATA_PUBLIC_LU_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-calm-blue-800"
+                >
+                  Study 2
+                </a>
+                , and{" "}
+                <a
+                  href={STUDY_3_DATA_PUBLIC_LU_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-calm-blue-800"
+                >
+                  Study 3
+                </a>
+                .
               </p>
             </li>
             <li className="rounded-xl border border-calm-blue-200 bg-white/75 p-4">

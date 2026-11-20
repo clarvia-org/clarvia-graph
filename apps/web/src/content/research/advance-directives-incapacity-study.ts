@@ -51,6 +51,11 @@ export const STUDY_3_JSON_PATH =
   "/data/research/global-advance-directives-incapacity-mandates-2026.json";
 export const STUDY_3_PDF_PATH =
   "/data/research/global-advance-directives-incapacity-mandates-2026.pdf";
+export const STUDY_3_ZENODO_DOI = "10.5281/zenodo.24388599";
+export const STUDY_3_ZENODO_DOI_URL = "https://doi.org/10.5281/zenodo.24388599";
+export const STUDY_3_ZENODO_RECORD_URL = "https://zenodo.org/records/24388599";
+export const STUDY_3_DATA_PUBLIC_LU_URL =
+  "https://data.public.lu/fr/datasets/global-atlas-of-advance-directives-incapacity-mandates-cross-border-portability-2026/";
 export const GITHUB_STUDY_3_SOURCE_URL =
   "https://github.com/clarvia-org/clarvia-graph/blob/main/apps/web/src/content/research/advance-directives-incapacity-study.ts";
 

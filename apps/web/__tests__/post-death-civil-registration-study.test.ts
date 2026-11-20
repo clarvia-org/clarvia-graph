@@ -4,7 +4,9 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import CountryRegistrationAtlasTable from "@/app/[lang]/research/global-post-death-civil-registration-atlas/CountryRegistrationAtlasTable";
-import { generateMetadata as generateStudy2Metadata } from "@/app/[lang]/research/global-post-death-civil-registration-atlas/page";
+import Study2Page, {
+  generateMetadata as generateStudy2Metadata,
+} from "@/app/[lang]/research/global-post-death-civil-registration-atlas/page";
 import {
   allCorridorGuides,
   getCorridorGuideBySlug,
@@ -326,6 +328,7 @@ describe("Global Post-Death Civil Registration & Estate Administration Atlas (19
     expect(meta.other?.citation_title).toBe(
       "Global Post-Death Civil Registration & Estate Administration Atlas (2026)",
     );
+    expect(meta.other?.citation_doi).toBe("10.5281/zenodo.24388597");
     expect(meta.other?.citation_pdf_url).toBe(
       "https://clarvia.org/data/research/global-post-death-civil-registration-2026.pdf",
     );
@@ -333,5 +336,43 @@ describe("Global Post-Death Civil Registration & Estate Administration Atlas (19
       "Tommi Lindfors",
       "Clarvia ASBL",
     ]);
+
+    const pageHtml = renderToStaticMarkup(
+      await Study2Page({ params: Promise.resolve({ lang: "en" }) }),
+    );
+    const jsonLdMatch = pageHtml.match(
+      /<script type="application\/ld\+json">([\s\S]*?)<\/script>/,
+    );
+    expect(jsonLdMatch).not.toBeNull();
+    const jsonLd = JSON.parse(jsonLdMatch![1]) as {
+      "@graph": Array<{
+        "@type"?: string;
+        isBasedOn?: string;
+        sameAs?: string | string[];
+      }>;
+    };
+    const articleNode = jsonLd["@graph"].find(
+      (node) => node["@type"] === "ScholarlyArticle",
+    );
+    const datasetNode = jsonLd["@graph"].find(
+      (node) => node["@type"] === "Dataset",
+    );
+    expect(articleNode?.isBasedOn).toBe("https://doi.org/10.5281/zenodo.24245341");
+    expect(articleNode?.sameAs).toEqual([
+      "https://doi.org/10.5281/zenodo.24388597",
+      "https://zenodo.org/records/24388597",
+    ]);
+    expect(datasetNode?.isBasedOn).toBe("https://doi.org/10.5281/zenodo.24245341");
+    expect(datasetNode?.sameAs).toEqual([
+      "https://zenodo.org/records/24388597",
+      "https://doi.org/10.5281/zenodo.24388597",
+      "https://data.public.lu/fr/datasets/global-post-death-civil-registration-estate-administration-atlas-2026/",
+    ]);
+    expect(datasetNode?.sameAs).not.toContain(
+      "https://doi.org/10.5281/zenodo.24245341",
+    );
+    expect(datasetNode?.sameAs).not.toContain(
+      "https://zenodo.org/records/24245341",
+    );
   });
 });

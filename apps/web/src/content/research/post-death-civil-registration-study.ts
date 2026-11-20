@@ -40,6 +40,11 @@ export const STUDY_2_JSON_PATH =
   "/data/research/global-post-death-civil-registration-2026.json";
 export const STUDY_2_PDF_PATH =
   "/data/research/global-post-death-civil-registration-2026.pdf";
+export const STUDY_2_ZENODO_DOI = "10.5281/zenodo.24388597";
+export const STUDY_2_ZENODO_DOI_URL = "https://doi.org/10.5281/zenodo.24388597";
+export const STUDY_2_ZENODO_RECORD_URL = "https://zenodo.org/records/24388597";
+export const STUDY_2_DATA_PUBLIC_LU_URL =
+  "https://data.public.lu/fr/datasets/global-post-death-civil-registration-estate-administration-atlas-2026/";
 export const GITHUB_STUDY_2_SOURCE_URL =
   "https://github.com/clarvia-org/clarvia-graph/blob/main/apps/web/src/content/research/post-death-civil-registration-study.ts";
 

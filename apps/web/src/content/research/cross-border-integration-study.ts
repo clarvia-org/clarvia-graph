@@ -14,6 +14,11 @@ export const STUDY_1_JSON_PATH =
   "/data/research/cross-border-integration-index-2026.json";
 export const STUDY_1_PDF_PATH =
   "/data/research/cross-border-integration-index-2026.pdf";
+export const STUDY_1_ZENODO_DOI = "10.5281/zenodo.24388595";
+export const STUDY_1_ZENODO_DOI_URL = "https://doi.org/10.5281/zenodo.24388595";
+export const STUDY_1_ZENODO_RECORD_URL = "https://zenodo.org/records/24388595";
+export const STUDY_1_DATA_PUBLIC_LU_URL =
+  "https://data.public.lu/fr/datasets/cross-border-bereavement-serious-illness-administrative-integration-index-2026/";
 export const ZENODO_STUDY_CORPUS_DOI = "10.5281/zenodo.24245341";
 export const ZENODO_STUDY_CORPUS_DOI_URL =
   "https://doi.org/10.5281/zenodo.24245341";
