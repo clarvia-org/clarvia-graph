@@ -136,6 +136,62 @@ describe("associate-members helpers", () => {
     expect(kitSource).toContain("CLARVIA_LINKEDIN_URL");
     expect(kitSource).not.toContain("linkedin.com/company/clarvia/");
   });
+
+  it("enforces clean editorial invariants across membership UI (no em-dashes, no RCS/Matricule/Account-7200 jargon, clear non-profit framing, 96px portraits)", () => {
+    const uiFiles = [
+      "AssociateMembershipPage.tsx",
+      "CohortShowcase.tsx",
+      "MembershipForm.tsx",
+      "MembershipSuccessKit.tsx",
+      "membership-copy.ts",
+    ];
+    for (const file of uiFiles) {
+      const content = fs.readFileSync(
+        path.join(__dirname, "..", "src", "features", "membership", file),
+        "utf8",
+      );
+      expect(content, `${file} must not contain em-dash`).not.toContain("\u2014");
+      expect(content, `${file} must not contain en-dash`).not.toContain("\u2013");
+      expect(content, `${file} must not repeat RCS number`).not.toMatch(
+        /RCS|F15680|Matricule/i,
+      );
+      expect(content, `${file} must not expose accounting code 7200`).not.toContain(
+        "7200",
+      );
+      expect(content, `${file} must not contain AI disclaimer`).not.toMatch(
+        /synthetic|AI-generated/i,
+      );
+      expect(content, `${file} must leave tax note to TrustStrip`).not.toMatch(
+        /tax-deductible|tax certificate|certificat fiscal|Spendenbescheinigung|Steierzertifikat/i,
+      );
+    }
+
+    const pageSource = fs.readFileSync(
+      path.join(
+        __dirname,
+        "..",
+        "src",
+        "features",
+        "membership",
+        "AssociateMembershipPage.tsx",
+      ),
+      "utf8",
+    );
+    expect(pageSource).toContain("Registered European Non-Profit");
+
+    const showcaseSource = fs.readFileSync(
+      path.join(
+        __dirname,
+        "..",
+        "src",
+        "features",
+        "membership",
+        "CohortShowcase.tsx",
+      ),
+      "utf8",
+    );
+    expect(showcaseSource).toContain("w-24 h-24");
+  });
 });
 
 describe("/api/donate associate_membership branch", () => {
