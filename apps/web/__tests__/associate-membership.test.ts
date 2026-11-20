@@ -28,7 +28,7 @@ vi.mock("@/lib/stripe", () => ({
 import { GET, POST } from "@/app/api/donate/route";
 
 describe("associate-members helpers", () => {
-  it("normalizes personal LinkedIn profile URLs and strips tracking parameters", () => {
+  it("normalizes personal and organization LinkedIn URLs and strips tracking parameters", () => {
     expect(
       normalizeLinkedInProfileUrl("https://www.linkedin.com/in/jane-doe/"),
     ).toBe("https://www.linkedin.com/in/jane-doe");
@@ -41,11 +41,23 @@ describe("associate-members helpers", () => {
     expect(
       normalizeLinkedInProfileUrl("HTTPS://www.linkedin.com/in/jane-doe"),
     ).toBe("https://www.linkedin.com/in/jane-doe");
-  });
-
-  it("rejects company pages, non-LinkedIn domains, credentials, and malformed handles", () => {
     expect(
       normalizeLinkedInProfileUrl("https://www.linkedin.com/company/clarvia/"),
+    ).toBe("https://www.linkedin.com/company/clarvia");
+    expect(
+      normalizeLinkedInProfileUrl("linkedin.com/company/ey?trk=x"),
+    ).toBe("https://www.linkedin.com/company/ey");
+    expect(
+      normalizeLinkedInProfileUrl("https://www.linkedin.com/school/insead/"),
+    ).toBe("https://www.linkedin.com/school/insead");
+  });
+
+  it("rejects feed/post URLs, non-LinkedIn domains, credentials, and malformed handles", () => {
+    expect(
+      normalizeLinkedInProfileUrl("https://www.linkedin.com/posts/update-123"),
+    ).toBeNull();
+    expect(
+      normalizeLinkedInProfileUrl("https://www.linkedin.com/feed/"),
     ).toBeNull();
     expect(
       normalizeLinkedInProfileUrl("https://evil-linkedin.com/in/jane-doe"),
@@ -55,6 +67,9 @@ describe("associate-members helpers", () => {
     ).toBeNull();
     expect(
       normalizeLinkedInProfileUrl("https://www.linkedin.com/in/ab"),
+    ).toBeNull();
+    expect(
+      normalizeLinkedInProfileUrl("https://www.linkedin.com/company/a"),
     ).toBeNull();
     expect(
       normalizeLinkedInProfileUrl("https://www.linkedin.com/in/jane/extra"),
@@ -164,6 +179,12 @@ describe("associate-members helpers", () => {
       expect(content, `${file} must leave tax note to TrustStrip`).not.toMatch(
         /tax-deductible|tax certificate|certificat fiscal|Spendenbescheinigung|Steierzertifikat/i,
       );
+      expect(
+        content,
+        `${file} must stay globally positioned without European/Luxembourg in main sections`,
+      ).not.toMatch(
+        /European|européen|europäisch|europäesch|Luxembourg|Luxemburg|Lëtzebuerg/i,
+      );
     }
 
     const pageSource = fs.readFileSync(
@@ -177,7 +198,20 @@ describe("associate-members helpers", () => {
       ),
       "utf8",
     );
-    expect(pageSource).toContain("Registered European Non-Profit");
+    expect(pageSource).toContain("Registered Non-Profit");
+
+    const formSource = fs.readFileSync(
+      path.join(
+        __dirname,
+        "..",
+        "src",
+        "features",
+        "membership",
+        "MembershipForm.tsx",
+      ),
+      "utf8",
+    );
+    expect(formSource).not.toContain("MarketingConsent");
 
     const showcaseSource = fs.readFileSync(
       path.join(
@@ -284,6 +318,38 @@ describe("/api/donate associate_membership branch", () => {
     expect(arg.metadata.linkedin_url).toBeUndefined();
   });
 
+  it("creates an organization €480 Stripe subscription with normalized company LinkedIn URL", async () => {
+    const res = await POST(
+      makePostRequest(
+        {
+          program: "associate_membership",
+          memberKind: "organization",
+          type: "annual",
+          lang: "en",
+          memberName: "Nordisk Care Partners",
+          ambassadorAgreed: true,
+          publishMember: true,
+          linkedinUrl: "linkedin.com/company/nordisk-care?trk=org",
+        },
+        "198.51.100.16",
+      ),
+    );
+
+    expect(res.status).toBe(200);
+    const arg = mockSessionCreate.mock.calls[0][0];
+    expect(arg.metadata).toMatchObject({
+      program: "associate_membership",
+      accounting_code: "7200",
+      member_kind: "organization",
+      billing_interval: "year",
+      member_display_name: "Nordisk Care Partners",
+      publish_member: "true",
+      linkedin_url: "https://www.linkedin.com/company/nordisk-care",
+    });
+    expect(arg.metadata.marketing_opt_in).toBeUndefined();
+    expect(arg.subscription_data.metadata).toEqual(arg.metadata);
+  });
+
   it("rejects missing ambassador agreement or invalid LinkedIn URL when publishMember is true", async () => {
     const noCharter = await POST(
       makePostRequest(
@@ -306,7 +372,7 @@ describe("/api/donate associate_membership branch", () => {
           memberName: "Jean Dupont",
           ambassadorAgreed: true,
           publishMember: true,
-          linkedinUrl: "https://www.linkedin.com/company/acme",
+          linkedinUrl: "https://www.linkedin.com/posts/update-123",
         },
         "198.51.100.14",
       ),

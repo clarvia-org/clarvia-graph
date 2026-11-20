@@ -147,6 +147,7 @@ export async function POST(req: NextRequest) {
 
   let body: {
     program?: string;
+    memberKind?: string;
     amount?: number;
     type?: string;
     lang?: string;
@@ -196,7 +197,12 @@ export async function POST(req: NextRequest) {
     const cleanMemberName = sanitizeDisplayName(body.memberName);
     if (!cleanMemberName) {
       return NextResponse.json(
-        { error: "Please enter your full name (2 to 120 characters)." },
+        {
+          error:
+            body.memberKind === "organization"
+              ? "Please enter the company name or designated contact (2 to 120 characters)."
+              : "Please enter your full name (2 to 120 characters).",
+        },
         { status: 400 },
       );
     }
@@ -207,12 +213,17 @@ export async function POST(req: NextRequest) {
       normalizedLinkedIn = normalizeLinkedInProfileUrl(body.linkedinUrl ?? "");
       if (!normalizedLinkedIn) {
         return NextResponse.json(
-          { error: "Please enter a valid personal LinkedIn profile URL (linkedin.com/in/...)." },
+          {
+            error:
+              "Please enter a valid LinkedIn URL (linkedin.com/in/... or linkedin.com/company/...).",
+          },
           { status: 400 },
         );
       }
     }
 
+    const memberKind =
+      body.memberKind === "organization" ? "organization" : "individual";
     const billingInterval: "month" | "year" =
       body.type === "annual" ? "year" : "month";
     const amount =
@@ -222,6 +233,7 @@ export async function POST(req: NextRequest) {
     const metadata: Record<string, string> = {
       program: "associate_membership",
       accounting_code: "7200",
+      member_kind: memberKind,
       billing_interval: billingInterval,
       locale: lang,
       member_display_name: cleanMemberName,

@@ -7,6 +7,7 @@ import {
   localizeMemberCopy,
   PUBLISHED_ASSOCIATE_MEMBERS,
   type CohortArchetypeSlot,
+  type MemberKind,
 } from "@/content/associate-members";
 import { type Lang, l } from "@/lib/i18n";
 
@@ -14,6 +15,7 @@ export interface CohortShowcaseProps {
   lang: Lang;
   previewName: string;
   previewPublish: boolean;
+  previewKind?: MemberKind;
 }
 
 function ArchetypeEmblem({ id }: { id: CohortArchetypeSlot["id"] }) {
@@ -70,21 +72,21 @@ export default function CohortShowcase({
   lang,
   previewName,
   previewPublish,
+  previewKind = "individual",
 }: CohortShowcaseProps) {
   const remainingSlots = getRemainingArchetypeSlots(PUBLISHED_ASSOCIATE_MEMBERS.length);
   const trimmedName = previewName.trim();
+  const isOrg = previewKind === "organization";
   const displayPreviewName =
     trimmedName ||
-    l(
-      lang,
-      "Your Name",
-      "Votre nom",
-      "Ihr Name",
-      "Ären Numm",
-    );
+    (isOrg
+      ? l(lang, "Your Company", "Votre entreprise", "Ihr Unternehmen", "Är Entreprise")
+      : l(lang, "Your Name", "Votre nom", "Ihr Name", "Ären Numm"));
   const previewInitials = trimmedName
     ? computeMemberInitials(trimmedName)
-    : l(lang, "YN", "VN", "IN", "ÄN");
+    : isOrg
+      ? "CO"
+      : l(lang, "YN", "VN", "IN", "ÄN");
 
   return (
     <section
@@ -109,29 +111,29 @@ export default function CohortShowcase({
           {l(
             lang,
             "Associate Members & Mission Ambassadors",
-            "Membres adhérents et ambassadeurs de la mission",
-            "Assoziierte Mitglieder & Botschafter der Mission",
-            "Assoziéiert Memberen & Ambassadeure vun der Missioun",
+            "Membres adhérents et ambassadeurs",
+            "Assoziierte Mitglieder & Botschafter",
+            "Assoziéiert Memberen & Ambassadeuren",
           )}
         </h2>
         <p className="text-base text-calm-blue-600 leading-relaxed text-pretty">
           {l(
             lang,
-            "Leaders, practitioners, and philanthropists supporting Clarvia's non-profit mission for families worldwide.",
-            "Dirigeants, praticiens et philanthropes engagés aux côtés de la mission à but non lucratif de Clarvia.",
-            "Führungskräfte, Fachleute und Fördernde, die Clarvias gemeinnützige Mission für Familien weltweit unterstützen.",
-            "Verantwortlecher, Fachleit a Philanthropen, déi d'Non-Profit-Missioun vu Clarvia fir Famillje weltwäit ënnerstëtzen.",
+            "Individuals and companies supporting Clarvia's free guidance for families worldwide.",
+            "Particuliers et entreprises soutenant l'accompagnement gratuit de Clarvia dans le monde.",
+            "Einzelpersonen und Unternehmen, die Clarvias kostenlose Orientierung weltweit stärken.",
+            "Privatpersounen an Entreprisen, déi d'gratis Orientéierung vu Clarvia weltwäit stäerken.",
           )}
         </p>
       </div>
 
-      {/* Founding Board Stewards Anchor (Large 96px portraits) */}
+      {/* Founding Board Stewards (96px portraits) */}
       <div className="glass-panel p-6 mb-6 border border-white/80">
         <p className="text-xs font-semibold uppercase tracking-wider text-calm-blue-600 mb-4">
           {l(
             lang,
             "Stewarded by Clarvia's Unpaid Founding Board",
-            "Porté par le conseil d'administration fondateur bénévole de Clarvia",
+            "Porté par le conseil fondateur bénévole de Clarvia",
             "Getragen vom ehrenamtlichen Gründungsvorstand von Clarvia",
             "Gedroe vum benevole Grënnungsverwaltungsrot vu Clarvia",
           )}
@@ -170,33 +172,33 @@ export default function CohortShowcase({
         </div>
       </div>
 
-      {/* Interactive Specimen Preview Card (Large 88px portrait preview) */}
+      {/* Interactive Specimen Preview Card (96px portrait/logo medallion) */}
       <div className="glass-panel p-6 mb-6 border-2 border-calm-lilac-300/80 bg-white/85">
         <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
           <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-calm-lilac-600 bg-calm-lilac-100 px-2.5 py-1 rounded-full">
             {l(
               lang,
               "Live Preview · Your Recognition Card",
-              "Aperçu en direct · Votre carte publique",
-              "Live-Vorschau · Ihre öffentliche Karte",
-              "Live-Virschau · Är ëffentlech Kaart",
+              "Aperçu · Votre carte publique",
+              "Vorschau · Ihre öffentliche Karte",
+              "Virschau · Är ëffentlech Kaart",
             )}
           </span>
           <span className="text-xs text-calm-blue-600">
             {previewPublish
               ? l(
                   lang,
-                  "Public listing enabled (LinkedIn portrait + link)",
-                  "Publication activée (photo + lien LinkedIn)",
-                  "Öffentliche Nennung aktiv (LinkedIn-Porträt + Link)",
-                  "Ëffentlech Ernimmung aktiv (LinkedIn-Foto + Link)",
+                  "Public listing enabled",
+                  "Publication activée",
+                  "Öffentliche Nennung aktiv",
+                  "Ëffentlech Ernimmung aktiv",
                 )
               : l(
                   lang,
-                  "Optional: check the recognition box in the form to publish",
-                  "Facultatif : cochez la case dédiée dans le formulaire pour publier",
-                  "Optional: im Formular aktivieren, um öffentlich genannt zu werden",
-                  "Optional: am Formulaire aktivéieren, fir ëffentlech genannt ze ginn",
+                  "Optional: tick the recognition box in the form",
+                  "Facultatif : cochez la case dédiée dans le formulaire",
+                  "Optional: im Formular aktivieren",
+                  "Optional: am Formulaire aktivéieren",
                 )}
           </span>
         </div>
@@ -212,7 +214,9 @@ export default function CohortShowcase({
             >
               <span className="text-xl leading-none">{previewInitials}</span>
               <span className="text-[9px] uppercase tracking-wider opacity-85 mt-1">
-                {l(lang, "Portrait", "Photo", "Porträt", "Foto")}
+                {isOrg
+                  ? l(lang, "Logo", "Logo", "Logo", "Logo")
+                  : l(lang, "Portrait", "Photo", "Porträt", "Foto")}
               </span>
             </div>
             <div className="min-w-0">
@@ -228,15 +232,6 @@ export default function CohortShowcase({
                   `Assoziéierte Member · Grënnerkohort (${FOUNDING_COHORT_YEARS})`,
                 )}
               </p>
-              <p className="text-xs text-calm-blue-600 mt-0.5">
-                {l(
-                  lang,
-                  "Displays your LinkedIn portrait and headline upon admission",
-                  "Affiche votre photo et votre titre LinkedIn après admission",
-                  "Zeigt nach Aufnahme Ihr LinkedIn-Porträt und Ihre Funktion",
-                  "Weist no der Opnam Är LinkedIn-Foto an Ären Titel",
-                )}
-              </p>
             </div>
           </div>
           <span className="self-start sm:self-center inline-flex items-center gap-1.5 text-xs font-semibold text-calm-blue-700 bg-calm-blue-50 border border-calm-blue-200 px-3 py-1.5 rounded-full shrink-0">
@@ -246,7 +241,7 @@ export default function CohortShowcase({
         </div>
       </div>
 
-      {/* Cohort Grid: Prominent 96px Centered Portrait Cards */}
+      {/* Cohort Grid: Prominent 96px Centered Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {PUBLISHED_ASSOCIATE_MEMBERS.map((member) => (
           <div
@@ -293,10 +288,10 @@ export default function CohortShowcase({
                 <span>
                   {l(
                     lang,
-                    "LinkedIn profile",
-                    "Profil LinkedIn",
-                    "LinkedIn-Profil",
-                    "LinkedIn-Profil",
+                    "LinkedIn",
+                    "LinkedIn",
+                    "LinkedIn",
+                    "LinkedIn",
                   )}
                 </span>
               </a>
@@ -321,10 +316,10 @@ export default function CohortShowcase({
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-calm-blue-600">
                   {l(
                     lang,
-                    `Cohort Seat ${seatNum}`,
+                    `Seat ${seatNum}`,
                     `Siège ${seatNum}`,
-                    `Kohortenplatz ${seatNum}`,
-                    `Kohorteplaz ${seatNum}`,
+                    `Platz ${seatNum}`,
+                    `Plaz ${seatNum}`,
                   )}
                 </p>
                 <p className="text-sm font-semibold text-calm-blue-800 leading-snug mt-1">
@@ -343,10 +338,10 @@ export default function CohortShowcase({
       <p className="mt-4 text-xs text-calm-blue-600 leading-relaxed text-pretty">
         {l(
           lang,
-          "* Open Founding Cohort seats show illustrative professional fields until filled. Each placeholder is replaced by a member's portrait, name, and LinkedIn link when an Associate Member opts in to public recognition.",
-          "* Les sièges ouverts de la cohorte fondatrice illustrent les domaines représentés jusqu'à leur attribution. Chaque emplacement est remplacé par la photo, le nom et le lien LinkedIn des membres adhérents qui choisissent la publication.",
-          "* Offene Plätze der Gründerkohorte zeigen beispielhafte Berufsfelder bis zur Vergabe. Jeder Platzhalter wird durch Porträt, Namen und LinkedIn-Link aufgenommener Mitglieder ersetzt, die der Veröffentlichung zustimmen.",
-          "* Oppen Plazen an der Grënnerkohort weisen illustrativ Beruffsfelder bis zu hirer Vergab. All Plazhalter gëtt duerch d'Foto, den Numm an de LinkedIn-Link vun opgeholle Memberen ersat, déi der Verëffentlechung zoustëmmen.",
+          "* Open seats show illustrative fields and are replaced one-for-one as opted-in individuals or companies join.",
+          "* Les sièges ouverts illustrent les domaines et sont remplacés au fil des adhésions publiées (particuliers ou entreprises).",
+          "* Offene Plätze zeigen beispielhafte Bereiche und werden durch aufgenommene Einzelpersonen oder Unternehmen ersetzt.",
+          "* Oppen Plazen weisen illustrativ Beräicher a ginn duerch opgeholle Privatpersounen oder Entreprisen ersat.",
         )}
       </p>
     </section>

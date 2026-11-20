@@ -4,6 +4,8 @@ export const ASSOCIATE_MONTHLY_EUR = 40;
 export const ASSOCIATE_ANNUAL_EUR = 480;
 export const FOUNDING_COHORT_YEARS = "2026-2027";
 
+export type MemberKind = "individual" | "organization";
+
 export type LocalisedMemberCopy = {
   en: string;
   fr: string;
@@ -14,8 +16,9 @@ export type LocalisedMemberCopy = {
 export interface AssociateMember {
   slug: string;
   name: string;
+  memberKind?: MemberKind;
   headline?: LocalisedMemberCopy;
-  /** Local WebP path under public/ (e.g. "/members/jane-doe.webp"). Falls back to initials if omitted. */
+  /** Local WebP portrait or logo path under public/ (e.g. "/members/jane-doe.webp"). */
   photo?: string;
   linkedinUrl: string;
   cohort: string;
@@ -35,101 +38,78 @@ export interface CohortArchetypeSlot {
 }
 
 /**
- * Curated Associate Members who opted in to public recognition on clarvia.org.
- * Each entry added here replaces one illustrative Founding Cohort slot automatically.
+ * Curated Associate Members (individuals and companies) who opted in to public recognition.
+ * Each entry replaces one illustrative Founding Cohort slot automatically.
  */
 export const PUBLISHED_ASSOCIATE_MEMBERS: readonly AssociateMember[] = [];
+
+const OPEN_SEAT_DESCRIPTOR: LocalisedMemberCopy = {
+  en: "Open Founding Seat*",
+  fr: "Siège fondateur ouvert*",
+  de: "Offener Kohortenplatz*",
+  lu: "Oppen Grënnerplaz*",
+};
 
 export const COHORT_ARCHETYPE_SLOTS: readonly CohortArchetypeSlot[] = [
   {
     id: "legal-estate",
     sector: {
       en: "Cross-Border Law & Estate Practice",
-      fr: "Droit transfrontalier et successions",
-      de: "Grenzüberschreitendes Recht & Nachlass",
-      lu: "Grenziwwerschreidend Recht & Successiounen",
+      fr: "Droit international et successions",
+      de: "Internationales Recht & Nachlass",
+      lu: "Internationalt Recht & Successiounen",
     },
-    descriptor: {
-      en: "Founding Cohort Seat · Open for admission*",
-      fr: "Siège de la cohorte fondatrice · Ouvert*",
-      de: "Platz der Gründerkohorte · Offen*",
-      lu: "Plaz an der Grënnerkohort · Oppen*",
-    },
+    descriptor: OPEN_SEAT_DESCRIPTOR,
   },
   {
     id: "healthcare-palliative",
     sector: {
-      en: "Healthcare & Palliative Care Leadership",
-      fr: "Direction hospitalière et soins palliatifs",
-      de: "Gesundheitswesen & Palliativversorgung",
+      en: "Healthcare & Palliative Care",
+      fr: "Santé et soins palliatifs",
+      de: "Gesundheitswesen & Palliativpflege",
       lu: "Gesondheetswiesen & Palliativfleeg",
     },
-    descriptor: {
-      en: "Founding Cohort Seat · Open for admission*",
-      fr: "Siège de la cohorte fondatrice · Ouvert*",
-      de: "Platz der Gründerkohorte · Offen*",
-      lu: "Plaz an der Grënnerkohort · Oppen*",
-    },
+    descriptor: OPEN_SEAT_DESCRIPTOR,
   },
   {
     id: "civic-tech",
     sector: {
-      en: "European Civic Tech & Open Data",
-      fr: "Civic tech européenne et données ouvertes",
-      de: "Europäische Civic Tech & Open Data",
-      lu: "Europäesch Civic Tech & Open Data",
+      en: "Civic Tech & Open Data",
+      fr: "Civic tech et données ouvertes",
+      de: "Civic Tech & Open Data",
+      lu: "Civic Tech & Open Data",
     },
-    descriptor: {
-      en: "Founding Cohort Seat · Open for admission*",
-      fr: "Siège de la cohorte fondatrice · Ouvert*",
-      de: "Platz der Gründerkohorte · Offen*",
-      lu: "Plaz an der Grënnerkohort · Oppen*",
-    },
+    descriptor: OPEN_SEAT_DESCRIPTOR,
   },
   {
     id: "global-mobility",
     sector: {
-      en: "Expatriate & Global Mobility Advisory",
+      en: "Global Mobility & Expat Advisory",
       fr: "Mobilité internationale et expatriation",
-      de: "Internationale Mobilität & Expat-Beratung",
-      lu: "International Mobilitéit & Expat-Berodung",
+      de: "Globale Mobilität & Expat-Beratung",
+      lu: "Global Mobilitéit & Expat-Berodung",
     },
-    descriptor: {
-      en: "Founding Cohort Seat · Open for admission*",
-      fr: "Siège de la cohorte fondatrice · Ouvert*",
-      de: "Platz der Gründerkohorte · Offen*",
-      lu: "Plaz an der Grënnerkohort · Oppen*",
-    },
+    descriptor: OPEN_SEAT_DESCRIPTOR,
   },
   {
     id: "philanthropy",
     sector: {
-      en: "Philanthropic & Family Stewardship",
-      fr: "Philanthropie et mécénat d'intérêt général",
-      de: "Philanthropie & gemeinnütziges Engagement",
-      lu: "Philanthropie & Engagement am ëffentlechen Interessi",
+      en: "Corporate & Philanthropic Partners",
+      fr: "Entreprises et mécénat",
+      de: "Unternehmen & Philanthropie",
+      lu: "Entreprisen & Philanthropie",
     },
-    descriptor: {
-      en: "Founding Cohort Seat · Open for admission*",
-      fr: "Siège de la cohorte fondatrice · Ouvert*",
-      de: "Platz der Gründerkohorte · Offen*",
-      lu: "Plaz an der Grënnerkohort · Oppen*",
-    },
+    descriptor: OPEN_SEAT_DESCRIPTOR,
   },
   {
     id: "workplace-hr",
     sector: {
-      en: "Workplace Wellbeing & People Leadership",
-      fr: "Ressources humaines et soutien aux salariés",
-      de: "Personalwesen & Mitarbeitendenfürsorge",
-      lu: "Personalwiesen & Ënnerstëtzung um Aarbechtsplaz",
+      en: "Workplace & People Leadership",
+      fr: "Ressources humaines et employeurs",
+      de: "Personalwesen & Arbeitgeber",
+      lu: "Personalwiesen & Employeuren",
     },
-    descriptor: {
-      en: "Founding Cohort Seat · Open for admission*",
-      fr: "Siège de la cohorte fondatrice · Ouvert*",
-      de: "Platz der Gründerkohorte · Offen*",
-      lu: "Plaz an der Grënnerkohort · Oppen*",
-    },
+    descriptor: OPEN_SEAT_DESCRIPTOR,
   },
 ];
 
@@ -137,9 +117,6 @@ export function localizeMemberCopy(lang: Lang, copy: LocalisedMemberCopy): strin
   return l(lang, copy.en, copy.fr, copy.de, copy.lu);
 }
 
-/**
- * Returns remaining illustrative cohort slots after subtracting published members.
- */
 export function getRemainingArchetypeSlots(
   publishedCount: number = PUBLISHED_ASSOCIATE_MEMBERS.length,
 ): readonly CohortArchetypeSlot[] {
@@ -148,7 +125,6 @@ export function getRemainingArchetypeSlots(
 }
 
 function isAllowedHandleChar(code: number): boolean {
-  // ASCII letters, digits, hyphen, underscore, percent-encoding, or non-ASCII Unicode letters
   return (
     (code >= 48 && code <= 57) || // 0-9
     (code >= 65 && code <= 90) || // A-Z
@@ -165,7 +141,6 @@ function isPlausibleLinkedInHost(hostname: string): boolean {
   if (host === "linkedin.com" || host === "www.linkedin.com") return true;
   if (!host.endsWith(".linkedin.com")) return false;
   const sub = host.slice(0, -".linkedin.com".length);
-  // Allow 2-3 letter country subdomains such as lu.linkedin.com, de.linkedin.com, uk.linkedin.com
   if (sub.length < 2 || sub.length > 3) return false;
   for (let i = 0; i < sub.length; i++) {
     const c = sub.charCodeAt(i);
@@ -174,10 +149,12 @@ function isPlausibleLinkedInHost(hostname: string): boolean {
   return true;
 }
 
+const ALLOWED_LINKEDIN_SECTIONS = new Set(["in", "company", "school"]);
+
 /**
- * Linear, non-backtracking validator and normalizer for personal LinkedIn profile URLs.
- * Accepts https://(www|<cc>).linkedin.com/in/<handle> (with or without leading https://)
- * and strips tracking query strings/fragments into canonical https://www.linkedin.com/in/<handle>.
+ * Linear, non-backtracking validator and normalizer for LinkedIn personal (/in/)
+ * and organization (/company/, /school/) URLs.
+ * Strips tracking query strings/fragments into canonical https://www.linkedin.com/<kind>/<handle>.
  */
 export function normalizeLinkedInProfileUrl(raw: string): string | null {
   const trimmed = raw.trim();
@@ -201,12 +178,14 @@ export function normalizeLinkedInProfileUrl(raw: string): string | null {
   if (!isPlausibleLinkedInHost(parsed.hostname)) return null;
 
   const segments = parsed.pathname.split("/").filter(Boolean);
-  if (segments.length !== 2 || segments[0].toLowerCase() !== "in") {
-    return null;
-  }
+  if (segments.length !== 2) return null;
+
+  const section = segments[0].toLowerCase();
+  if (!ALLOWED_LINKEDIN_SECTIONS.has(section)) return null;
 
   const handle = segments[1];
-  if (handle.length < 3 || handle.length > 100) return null;
+  const minLen = section === "in" ? 3 : 2;
+  if (handle.length < minLen || handle.length > 100) return null;
   if (handle === "." || handle === "..") return null;
 
   for (let i = 0; i < handle.length; i++) {
@@ -216,7 +195,7 @@ export function normalizeLinkedInProfileUrl(raw: string): string | null {
     }
   }
 
-  return `https://www.linkedin.com/in/${handle}`;
+  return `https://www.linkedin.com/${section}/${handle}`;
 }
 
 const HONORIFIC_PREFIXES = new Set([
@@ -237,9 +216,6 @@ const HONORIFIC_PREFIXES = new Set([
   "mme",
 ]);
 
-/**
- * Extracts 1-2 uppercase initials from a person's display name, skipping common honorifics.
- */
 export function computeMemberInitials(rawName: string): string {
   const parts = rawName
     .trim()
@@ -258,11 +234,6 @@ export type MembershipVerificationOutcome =
   | { kind: "pending_settlement" }
   | { kind: "rejected" };
 
-/**
- * Classifies a `GET /api/donate?session_id=...` payload for `/[lang]/membership`.
- * Rejects non-200 responses, general `/support` donation sessions, and incomplete checkouts;
- * separates settled (`payment_status === "paid"`) from async pending settlement (`status === "complete"`).
- */
 export function classifyMembershipSessionResponse(
   resOk: boolean,
   data: Record<string, unknown> | null | undefined,

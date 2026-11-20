@@ -554,10 +554,10 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
                 <p className="text-sm text-calm-blue-600 leading-relaxed mb-3">
                   {l(
                     lang,
-                    "Individuals who want to stand behind Clarvia's free non-profit guidance across 196 countries and share our mission in their professional networks may join as Associate Members (€40/month or €480/year, zero personal liability, optional LinkedIn recognition).",
-                    "Les personnes souhaitant soutenir durablement la mission gratuite à but non lucratif de Clarvia dans 196 pays et la faire connaître dans leur réseau peuvent adhérer comme membres adhérents (40 €/mois ou 480 €/an, aucune responsabilité personnelle, mention LinkedIn facultative).",
-                    "Persönlichkeiten, die Clarvias kostenlose gemeinnützige Orientierung in 196 Ländern dauerhaft fördern und in ihrem beruflichen Netzwerk bekannt machen möchten, können als assoziiertes Mitglied beitreten (40 €/Monat oder 480 €/Jahr, keine persönliche Haftung, optionale LinkedIn-Nennung).",
-                    "Persounen, déi d'gratis Non-Profit-Orientéierung vu Clarvia an 196 Länner dauerhaft ënnerstëtzen an an hirem berufflechen Netzwierk bekannt maache wëllen, kënnen als assoziéierte Member bäitrieden (40 €/Mount oder 480 €/Joer, keng perséinlech Haftung, optional LinkedIn-Ernimmung).",
+                    "Individuals and companies sustaining Clarvia's live, free non-profit guidance across 196 countries and sharing our mission in their networks may join as Associate Members (€40/month or €480/year, zero liability, optional LinkedIn recognition).",
+                    "Particuliers et entreprises soutenant durablement le service gratuit à but non lucratif de Clarvia dans 196 pays et le relayant dans leur réseau peuvent adhérer comme membres adhérents (40 €/mois ou 480 €/an, sans responsabilité, mention LinkedIn facultative).",
+                    "Einzelpersonen und Unternehmen, die Clarvias kostenlosen Non-Profit-Dienst in 196 Ländern dauerhaft fördern und in ihrem Netzwerk teilen möchten, können als assoziiertes Mitglied beitreten (40 €/Monat oder 480 €/Jahr, ohne Haftung, optionale LinkedIn-Nennung).",
+                    "Privatpersounen an Entreprisen, déi de gratis Non-Profit-Service vu Clarvia an 196 Länner dauerhaft ënnerstëtzen an an hirem Netzwierk deele wëllen, kënnen als assoziéierte Member bäitrieden (40 €/Mount oder 480 €/Joer, ouni Haftung, optional LinkedIn-Ernimmung).",
                   )}
                 </p>
                 <Link
