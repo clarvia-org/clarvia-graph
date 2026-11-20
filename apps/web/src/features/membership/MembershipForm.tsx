@@ -6,8 +6,8 @@ import {
   ASSOCIATE_ANNUAL_EUR,
   ASSOCIATE_MONTHLY_EUR,
   normalizeLinkedInProfileUrl,
+  type MemberKind,
 } from "@/content/associate-members";
-import MarketingConsent from "@/features/donations/MarketingConsent";
 import { trackBeginCheckout } from "@/lib/analytics";
 import { type Lang, l } from "@/lib/i18n";
 
@@ -15,12 +15,14 @@ export interface MembershipFormProps {
   lang: Lang;
   onNameChange?: (name: string) => void;
   onPublishChange?: (publish: boolean) => void;
+  onMemberKindChange?: (kind: MemberKind) => void;
 }
 
 function MembershipFormInner({
   lang,
   onNameChange,
   onPublishChange,
+  onMemberKindChange,
 }: MembershipFormProps) {
   const searchParams = useSearchParams();
   const baseId = useId();
@@ -33,12 +35,12 @@ function MembershipFormInner({
   const linkedinHintId = `${baseId}-linkedin-hint`;
   const linkedinErrorId = `${baseId}-linkedin-error`;
 
+  const [memberKind, setMemberKind] = useState<MemberKind>("individual");
   const [frequency, setFrequency] = useState<"monthly" | "annual">("monthly");
   const [memberName, setMemberName] = useState("");
   const [ambassadorAgreed, setAmbassadorAgreed] = useState(false);
   const [publishMember, setPublishMember] = useState(false);
   const [linkedinUrl, setLinkedinUrl] = useState("");
-  const [marketingOptIn, setMarketingOptIn] = useState(false);
   const [isProcessing, setIsProcessing] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
 
@@ -78,19 +80,28 @@ function MembershipFormInner({
     };
   }, []);
 
+  const isOrg = memberKind === "organization";
   const isNameValid =
     memberName.trim().length >= 2 && memberName.trim().length <= 120;
   const normalizedLinkedIn = normalizeLinkedInProfileUrl(linkedinUrl);
   const isLinkedinValid = !publishMember || normalizedLinkedIn !== null;
 
   const errorLabelWord = l(lang, "Error", "Erreur", "Fehler", "Feeler");
-  const nameErrorText = l(
-    lang,
-    "Please enter your full name (2 to 120 characters).",
-    "Veuillez saisir votre nom complet (2 à 120 caractères).",
-    "Bitte geben Sie Ihren vollständigen Namen (2 bis 120 Zeichen) ein.",
-    "Gitt wgl. Äre ganzen Numm (2 bis 120 Zeechen) un.",
-  );
+  const nameErrorText = isOrg
+    ? l(
+        lang,
+        "Please enter the company name or designated contact (2 to 120 characters).",
+        "Veuillez saisir le nom de l'entreprise ou du contact désigné (2 à 120 caractères).",
+        "Bitte geben Sie den Unternehmensnamen oder die Kontaktperson (2 bis 120 Zeichen) ein.",
+        "Gitt wgl. den Numm vun der Entreprise oder der Kontaktpersoun (2 bis 120 Zeechen) un.",
+      )
+    : l(
+        lang,
+        "Please enter your full name (2 to 120 characters).",
+        "Veuillez saisir votre nom complet (2 à 120 caractères).",
+        "Bitte geben Sie Ihren vollständigen Namen (2 bis 120 Zeichen) ein.",
+        "Gitt wgl. Äre ganzen Numm (2 bis 120 Zeechen) un.",
+      );
   const charterErrorText = l(
     lang,
     "Please confirm the Associate Member and Ambassador agreement before continuing.",
@@ -100,10 +111,10 @@ function MembershipFormInner({
   );
   const linkedinErrorText = l(
     lang,
-    "Enter a personal LinkedIn profile URL in the format https://www.linkedin.com/in/your-name.",
-    "Saisissez une URL de profil LinkedIn personnel au format https://www.linkedin.com/in/votre-nom.",
-    "Geben Sie eine persönliche LinkedIn-Profil-URL im Format https://www.linkedin.com/in/ihr-name ein.",
-    "Gitt eng perséinlech LinkedIn-Profil-URL am Format https://www.linkedin.com/in/aeren-numm un.",
+    "Enter a LinkedIn URL in the format https://www.linkedin.com/in/name or https://www.linkedin.com/company/name.",
+    "Saisissez une URL LinkedIn au format https://www.linkedin.com/in/nom ou https://www.linkedin.com/company/nom.",
+    "Geben Sie eine LinkedIn-URL im Format https://www.linkedin.com/in/name oder https://www.linkedin.com/company/name ein.",
+    "Gitt eng LinkedIn-URL am Format https://www.linkedin.com/in/numm oder https://www.linkedin.com/company/numm un.",
   );
 
   function schedulePoliteAnnouncement(message: string) {
@@ -157,14 +168,14 @@ function MembershipFormInner({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           program: "associate_membership",
+          memberKind,
           type: frequency,
           lang,
           memberName: memberName.trim(),
           ambassadorAgreed: true,
           publishMember,
           linkedinUrl: publishMember ? normalizedLinkedIn : undefined,
-          marketingOptIn,
-          consentTextVersion: "associate-member-v1",
+          consentTextVersion: "associate-member-v2",
           landingVariant: "membership",
           attribution,
         }),
@@ -223,19 +234,68 @@ function MembershipFormInner({
       noValidate
       onSubmit={handleSubmit}
       aria-labelledby="membership-form-heading"
-      className="space-y-5"
+      className="space-y-4"
     >
       <div aria-live="polite" className="visually-hidden">
         {liveAnnouncement}
       </div>
 
+      {/* Member Kind Selector: Individual vs Company / Organisation */}
+      <fieldset>
+        <legend className="sr-only">
+          {l(lang, "Member type", "Type de membre", "Mitgliedsart", "Memberstyp")}
+        </legend>
+        <div className="grid grid-cols-2 gap-1.5 p-1 rounded-xl bg-calm-blue-100/70 border border-calm-blue-200/80">
+          <div>
+            <input
+              type="radio"
+              id={`${baseId}-kind-ind`}
+              name="memberKind"
+              value="individual"
+              checked={memberKind === "individual"}
+              onChange={() => {
+                setMemberKind("individual");
+                onMemberKindChange?.("individual");
+              }}
+              className="peer sr-only"
+            />
+            <label
+              htmlFor={`${baseId}-kind-ind`}
+              className="flex items-center justify-center min-h-10 px-3 py-1.5 rounded-lg text-xs font-semibold text-calm-blue-700 cursor-pointer select-none peer-checked:bg-white peer-checked:text-calm-blue-900 peer-checked:shadow-sm peer-focus-visible:outline-2 peer-focus-visible:outline-calm-blue-500"
+            >
+              {l(lang, "Individual", "Particulier", "Einzelperson", "Privatpersoun")}
+            </label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id={`${baseId}-kind-org`}
+              name="memberKind"
+              value="organization"
+              checked={memberKind === "organization"}
+              onChange={() => {
+                setMemberKind("organization");
+                onMemberKindChange?.("organization");
+              }}
+              className="peer sr-only"
+            />
+            <label
+              htmlFor={`${baseId}-kind-org`}
+              className="flex items-center justify-center min-h-10 px-3 py-1.5 rounded-lg text-xs font-semibold text-calm-blue-700 cursor-pointer select-none peer-checked:bg-white peer-checked:text-calm-blue-900 peer-checked:shadow-sm peer-focus-visible:outline-2 peer-focus-visible:outline-calm-blue-500"
+            >
+              {l(lang, "Company / Org", "Entreprise / Org.", "Unternehmen", "Entreprise")}
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
       {/* Membership contribution frequency radio fieldset */}
-      <fieldset className="space-y-2.5">
+      <fieldset className="space-y-2">
         <legend className="text-xs font-semibold uppercase tracking-wider text-calm-blue-600 mb-1">
           {l(
             lang,
             "Membership Contribution",
-            "Cotisation de membre adhérent",
+            "Cotisation",
             "Mitgliedsbeitrag",
             "Membersbäitrag",
           )}
@@ -314,19 +374,27 @@ function MembershipFormInner({
         </div>
       </fieldset>
 
-      {/* Single Full Name field */}
+      {/* Name or Company Name field */}
       <div className="space-y-1">
         <label
           htmlFor={nameId}
           className="block text-sm font-semibold text-calm-blue-800"
         >
-          {l(
-            lang,
-            "Full name",
-            "Nom complet",
-            "Vollständiger Name",
-            "Ganzen Numm",
-          )}{" "}
+          {isOrg
+            ? l(
+                lang,
+                "Company name (or designated contact)",
+                "Nom de l'entreprise (ou contact désigné)",
+                "Unternehmensname (oder Kontaktperson)",
+                "Numm vun der Entreprise (oder Kontaktpersoun)",
+              )
+            : l(
+                lang,
+                "Full name",
+                "Nom complet",
+                "Vollständiger Name",
+                "Ganzen Numm",
+              )}{" "}
           <span className="text-calm-blue-600 font-normal" aria-hidden="true">
             *
           </span>
@@ -336,7 +404,7 @@ function MembershipFormInner({
           type="text"
           id={nameId}
           name="memberName"
-          autoComplete="name"
+          autoComplete={isOrg ? "organization" : "name"}
           enterKeyHint="next"
           required
           minLength={2}
@@ -360,13 +428,23 @@ function MembershipFormInner({
               schedulePoliteAnnouncement(nameErrorText);
             }
           }}
-          placeholder={l(
-            lang,
-            "e.g. Dr. Claire Martin",
-            "ex. Dr Claire Martin",
-            "z. B. Dr. Claire Martin",
-            "z. B. Dr. Claire Martin",
-          )}
+          placeholder={
+            isOrg
+              ? l(
+                  lang,
+                  "e.g. Nordisk Care Group",
+                  "ex. Groupe Nordisk Care",
+                  "z. B. Nordisk Care GmbH",
+                  "z. B. Nordisk Care S.A.",
+                )
+              : l(
+                  lang,
+                  "e.g. Dr. Claire Martin",
+                  "ex. Dr Claire Martin",
+                  "z. B. Dr. Claire Martin",
+                  "z. B. Dr. Claire Martin",
+                )
+          }
           className={`w-full min-h-12 px-3.5 py-2.5 rounded-xl border text-base text-calm-blue-800 bg-white focus-visible:outline-2 focus-visible:outline-calm-blue-500 focus-visible:outline-offset-1 ${
             nameInvalidActive
               ? "border-red-600 bg-red-50/60"
@@ -419,8 +497,8 @@ function MembershipFormInner({
           >
             {l(
               lang,
-              "I apply to join Clarvia as a non-voting Associate Member and agree to be a positive ambassador helping spread awareness of Clarvia's free non-profit mission worldwide.",
-              "Je demande mon admission à Clarvia comme membre adhérent sans droit de vote et m'engage à être un ambassadeur positif faisant connaître la mission gratuite de Clarvia dans le monde.",
+              "I apply to join Clarvia as a non-voting Associate Member and agree to act as a positive ambassador helping spread awareness of Clarvia's free non-profit mission worldwide.",
+              "Je demande l'admission à Clarvia comme membre adhérent sans droit de vote et m'engage à être un ambassadeur positif faisant connaître la mission gratuite de Clarvia dans le monde.",
               "Ich beantrage die Aufnahme als stimmrechtsloses assoziiertes Mitglied von Clarvia und erkläre mich bereit, als positiver Botschafter auf Clarvias kostenlose gemeinnützige Mission weltweit aufmerksam zu machen.",
               "Ech froen d'Opnam als assoziéierte Member ouni Stëmmrecht bei Clarvia un an erklären mech bereet, als positiven Ambassadeur op d'gratis Non-Profit-Missioun vu Clarvia weltwäit opmierksam ze maachen.",
             )}{" "}
@@ -439,7 +517,7 @@ function MembershipFormInner({
         )}
       </div>
 
-      {/* Optional Checkbox: Publish Membership + LinkedIn Portrait & URL */}
+      {/* Optional Checkbox: Publish Membership + LinkedIn URL */}
       <div className="p-3.5 rounded-xl border border-calm-blue-200 bg-white/65 shadow-sm space-y-3">
         <div className="flex items-start gap-3">
           <div className="flex items-center h-5 mt-0.5">
@@ -464,13 +542,21 @@ function MembershipFormInner({
             htmlFor={publishId}
             className="text-xs text-calm-blue-700 leading-relaxed select-none cursor-pointer"
           >
-            {l(
-              lang,
-              "Publish my membership on clarvia.org with my name, LinkedIn profile photo, headline, and LinkedIn profile link (optional).",
-              "Publier mon adhésion sur clarvia.org avec mon nom, ma photo LinkedIn, mon titre et le lien vers mon profil LinkedIn (facultatif).",
-              "Meine Mitgliedschaft auf clarvia.org mit Namen, LinkedIn-Profilbild, Funktion und LinkedIn-Profillink veröffentlichen (optional).",
-              "Meng Memberschaft op clarvia.org mat Numm, LinkedIn-Profilfoto, Titel a LinkedIn-Link verëffentlechen (optional).",
-            )}
+            {isOrg
+              ? l(
+                  lang,
+                  "Publish our membership on clarvia.org with our logo or contact portrait, headline, and LinkedIn link (optional).",
+                  "Publier notre adhésion sur clarvia.org avec notre logo ou portrait, titre et lien LinkedIn (facultatif).",
+                  "Unsere Mitgliedschaft auf clarvia.org mit Logo oder Porträt, Kurzprofil und LinkedIn-Link veröffentlichen (optional).",
+                  "Eis Memberschaft op clarvia.org mat Logo oder Portrait, Titel a LinkedIn-Link verëffentlechen (optional).",
+                )
+              : l(
+                  lang,
+                  "Publish my membership on clarvia.org with my name, LinkedIn portrait, headline, and LinkedIn link (optional).",
+                  "Publier mon adhésion sur clarvia.org avec mon nom, ma photo LinkedIn, mon titre et mon lien LinkedIn (facultatif).",
+                  "Meine Mitgliedschaft auf clarvia.org mit Namen, LinkedIn-Porträt, Funktion und LinkedIn-Link veröffentlichen (optional).",
+                  "Meng Memberschaft op clarvia.org mat Numm, LinkedIn-Foto, Titel a LinkedIn-Link verëffentlechen (optional).",
+                )}
           </label>
         </div>
 
@@ -480,13 +566,21 @@ function MembershipFormInner({
               htmlFor={linkedinId}
               className="block text-xs font-semibold text-calm-blue-800"
             >
-              {l(
-                lang,
-                "Personal LinkedIn profile URL",
-                "URL de votre profil LinkedIn personnel",
-                "Persönliche LinkedIn-Profil-URL",
-                "Perséinlech LinkedIn-Profil-URL",
-              )}{" "}
+              {isOrg
+                ? l(
+                    lang,
+                    "Company or contact LinkedIn URL",
+                    "URL LinkedIn de l'entreprise ou du contact",
+                    "LinkedIn-URL des Unternehmens oder Kontakts",
+                    "LinkedIn-URL vun der Entreprise oder Kontaktpersoun",
+                  )
+                : l(
+                    lang,
+                    "LinkedIn profile URL",
+                    "URL de votre profil LinkedIn",
+                    "LinkedIn-Profil-URL",
+                    "LinkedIn-Profil-URL",
+                  )}{" "}
               <span className="text-calm-blue-600 font-normal" aria-hidden="true">
                 *
               </span>
@@ -495,13 +589,21 @@ function MembershipFormInner({
               id={linkedinHintId}
               className="block text-[11px] text-calm-blue-600 pb-0.5"
             >
-              {l(
-                lang,
-                "Format: https://www.linkedin.com/in/your-name (the only source we use)",
-                "Format : https://www.linkedin.com/in/votre-nom (seule source utilisée)",
-                "Format: https://www.linkedin.com/in/ihr-name (einzige verwendete Quelle)",
-                "Format: https://www.linkedin.com/in/aeren-numm (eenzeg benotzte Quell)",
-              )}
+              {isOrg
+                ? l(
+                    lang,
+                    "Format: linkedin.com/company/your-company or linkedin.com/in/contact",
+                    "Format : linkedin.com/company/entreprise ou linkedin.com/in/contact",
+                    "Format: linkedin.com/company/unternehmen oder linkedin.com/in/kontakt",
+                    "Format: linkedin.com/company/entreprise oder linkedin.com/in/kontakt",
+                  )
+                : l(
+                    lang,
+                    "Format: https://www.linkedin.com/in/your-name",
+                    "Format : https://www.linkedin.com/in/votre-nom",
+                    "Format: https://www.linkedin.com/in/ihr-name",
+                    "Format: https://www.linkedin.com/in/aeren-numm",
+                  )}
             </span>
             <input
               ref={linkedinRef}
@@ -535,7 +637,11 @@ function MembershipFormInner({
                   schedulePoliteAnnouncement(linkedinErrorText);
                 }
               }}
-              placeholder="https://www.linkedin.com/in/..."
+              placeholder={
+                isOrg
+                  ? "https://www.linkedin.com/company/..."
+                  : "https://www.linkedin.com/in/..."
+              }
               className={`w-full min-h-12 px-3.5 py-2.5 rounded-xl border text-base text-calm-blue-800 bg-white focus-visible:outline-2 focus-visible:outline-calm-blue-500 focus-visible:outline-offset-1 ${
                 linkedinInvalidActive
                   ? "border-red-600 bg-red-50/60"
@@ -553,13 +659,6 @@ function MembershipFormInner({
           </div>
         )}
       </div>
-
-      {/* Optional occasional updates consent */}
-      <MarketingConsent
-        lang={lang}
-        checked={marketingOptIn}
-        onChange={setMarketingOptIn}
-      />
 
       {serverError && (
         <div

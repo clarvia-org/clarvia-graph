@@ -227,10 +227,10 @@ export default async function ContributePage({ params }: { params: Promise<{ lan
             <p className="text-sm text-calm-blue-600">
               {l(
                 lang,
-                "Prefer to support our non-profit mission financially and through your professional network? Join our Founding Cohort (€40/month or €480/year, zero personal liability).",
-                "Vous préférez soutenir notre mission à but non lucratif et la relayer dans votre réseau professionnel ? Rejoignez notre cohorte fondatrice (40 €/mois ou 480 €/an, sans responsabilité).",
-                "Möchten Sie unsere gemeinnützige Non-Profit-Mission finanziell und über Ihr Netzwerk stärken? Werden Sie Teil unserer Gründerkohorte (40 €/Monat oder 480 €/Jahr, ohne Haftung).",
-                "Wëllt Dir eis Non-Profit-Missioun finanziell an iwwer Äert Netzwierk stäerken? Gitt Deel vun eiser Grënnerkohort (40 €/Mount oder 480 €/Joer, ouni Haftung).",
+                "Individuals and companies can also sustain our live non-profit service financially and share it across their networks by joining our Founding Cohort (€40/month or €480/year, zero liability).",
+                "Particuliers et entreprises peuvent également soutenir financièrement notre service à but non lucratif et le relayer dans leur réseau au sein de notre cohorte fondatrice (40 €/mois ou 480 €/an, sans responsabilité).",
+                "Einzelpersonen und Unternehmen können unseren laufenden Non-Profit-Dienst auch finanziell und über ihr Netzwerk in unserer Gründerkohorte stärken (40 €/Monat oder 480 €/Jahr, ohne Haftung).",
+                "Privatpersounen an Entreprisen kënnen eise lafende Non-Profit-Service och finanziell an iwwer hiert Netzwierk an eiser Grënnerkohort stäerken (40 €/Mount oder 480 €/Joer, ouni Haftung).",
               )}
             </p>
           </div>

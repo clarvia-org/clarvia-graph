@@ -10,6 +10,7 @@ import {
   ASSOCIATE_ANNUAL_EUR,
   ASSOCIATE_MONTHLY_EUR,
   FOUNDING_COHORT_YEARS,
+  type MemberKind,
 } from "@/content/associate-members";
 import { type Lang, l } from "@/lib/i18n";
 import CohortShowcase from "./CohortShowcase";
@@ -87,6 +88,7 @@ function DisclosureChevron() {
 export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
   const [previewName, setPreviewName] = useState("");
   const [previewPublish, setPreviewPublish] = useState(false);
+  const [previewKind, setPreviewKind] = useState<MemberKind>("individual");
   const [copiedField, setCopiedField] = useState<string | null>(null);
 
   const benefits = getMembershipBenefits(lang);
@@ -113,14 +115,14 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
         <MembershipSuccessKit lang={lang} />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start no-print">
-          {/* LEFT COLUMN: Clear Non-Profit Mission & Concise Prestige Benefits */}
+          {/* LEFT COLUMN: Live Global Non-Profit Mission & Benefits */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
               <span className="badge badge-build">
                 {l(
                   lang,
-                  `Registered European Non-Profit · Founding Cohort ${FOUNDING_COHORT_YEARS}`,
-                  `Association européenne à but non lucratif · Cohorte ${FOUNDING_COHORT_YEARS}`,
+                  `Registered Non-Profit · Founding Cohort ${FOUNDING_COHORT_YEARS}`,
+                  `Association à but non lucratif · Cohorte ${FOUNDING_COHORT_YEARS}`,
                   `Gemeinnützige Non-Profit-Organisation · Kohorte ${FOUNDING_COHORT_YEARS}`,
                   `Registréiert Non-Profit-Organisatioun · Kohort ${FOUNDING_COHORT_YEARS}`,
                 )}
@@ -142,25 +144,24 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
               <p className="text-lg text-calm-blue-700 leading-relaxed font-semibold text-pretty">
                 {l(
                   lang,
-                  "Clarvia is an independent non-profit providing 100% free, official-source-cited guidance for families navigating terminal illness and bereavement across 196 countries.",
-                  "Clarvia est une organisation indépendante à but non lucratif qui fournit gratuitement un accompagnement administratif sourcé aux familles confrontées à la maladie grave ou au décès d'un proche dans 196 pays.",
-                  "Clarvia ist eine unabhängige gemeinnützige Non-Profit-Organisation, die Familien bei schwerer Krankheit und im Trauerfall in 196 Ländern kostenlos mit quellenbasierter Orientierung unterstützt.",
-                  "Clarvia ass eng onofhängeg Non-Profit-Organisatioun, déi Familljen bei schwéierer Krankheet an am Trauerfall an 196 Länner gratis mat op offiziellen Quelle baséierter Orientéierung hëlleft.",
+                  `Clarvia's free, official-source guidance for terminal illness and bereavement is live across 196 countries and 14 languages. Individuals and companies join our Founding Cohort (€${ASSOCIATE_MONTHLY_EUR}/month or €${ASSOCIATE_ANNUAL_EUR}/year) to sustain this non-profit service and extend its global reach.`,
+                  `L'accompagnement gratuit et sourcé de Clarvia face à la maladie grave et au décès est aujourd'hui actif dans 196 pays et 14 langues. Particuliers et entreprises rejoignent notre cohorte fondatrice (${ASSOCIATE_MONTHLY_EUR} €/mois ou ${ASSOCIATE_ANNUAL_EUR} €/an) pour pérenniser ce service à but non lucratif et étendre sa portée.`,
+                  `Clarvias kostenlose, quellenbasierte Orientierung bei schwerer Krankheit und im Trauerfall ist heute in 196 Ländern und 14 Sprachen live. Einzelpersonen und Unternehmen treten unserer Gründerkohorte (${ASSOCIATE_MONTHLY_EUR} €/Monat oder ${ASSOCIATE_ANNUAL_EUR} €/Jahr) bei, um diesen gemeinnützigen Dienst dauerhaft zu tragen und bekannter zu machen.`,
+                  `Déi gratis, op offiziellen Quelle baséiert Orientéierung vu Clarvia ass haut an 196 Länner a 14 Sproochen aktiv. Privatpersounen an Entreprisen trieden eiser Grënnerkohort (${ASSOCIATE_MONTHLY_EUR} €/Mount oder ${ASSOCIATE_ANNUAL_EUR} €/Joer) bäi, fir dëse Non-Profit-Service ze stäerken a weltwäit bekannt ze maachen.`,
                 )}
               </p>
 
               <p className="text-base text-calm-blue-600 leading-relaxed text-pretty">
                 {l(
                   lang,
-                  `Join our Founding Cohort as an Associate Member (€${ASSOCIATE_MONTHLY_EUR}/month or €${ASSOCIATE_ANNUAL_EUR}/year) to help sustain this free public service and introduce Clarvia across your professional network. The position is philanthropic and honorary, carrying zero personal liability and zero time obligations.`,
-                  `Rejoignez notre cohorte fondatrice en tant que membre adhérent (${ASSOCIATE_MONTHLY_EUR} €/mois ou ${ASSOCIATE_ANNUAL_EUR} €/an) pour soutenir durablement ce service public gratuit et faire connaître Clarvia dans votre réseau professionnel. Ce rôle philanthropique et honorifique n'implique aucune responsabilité personnelle ni obligation de temps.`,
-                  `Werden Sie als assoziiertes Mitglied (${ASSOCIATE_MONTHLY_EUR} €/Monat oder ${ASSOCIATE_ANNUAL_EUR} €/Jahr) Teil unserer Gründerkohorte, um diesen kostenlosen Dienst mitzutragen und Clarvia in Ihrem beruflichen Netzwerk bekannt zu machen. Die Stellung ist rein ideell und ehrenvoll, ohne persönliche Haftung und ohne Zeitverpflichtung.`,
-                  `Gitt als assoziéierte Member (${ASSOCIATE_MONTHLY_EUR} €/Mount oder ${ASSOCIATE_ANNUAL_EUR} €/Joer) Deel vun eiser Grënnerkohort, fir dëse gratis Service matzedroen a Clarvia an Ärem berufflechen Netzwierk bekannt ze maachen. Dës Roll ass reng philanthropesch an honorifesch, ouni perséinlech Haftung an ouni Zäitverpflichtung.`,
+                  "Ambassadorship is light-touch and self-directed: list Clarvia on your personal or company LinkedIn page, share an optional post from our welcome kit, or point colleagues, HR teams, or families to clarvia.org when needed, with zero quotas, meetings, or liabilities.",
+                  "Le rôle d'ambassadeur reste libre et léger : mentionner Clarvia sur votre profil LinkedIn personnel ou d'entreprise, partager un message facultatif du kit d'accueil, ou orienter collègues, équipes RH et familles vers clarvia.org, sans réunion ni responsabilité.",
+                  "Die Botschafterrolle bleibt leicht und selbstbestimmt: Clarvia auf Ihrem persönlichen LinkedIn-Profil oder Ihrer Unternehmensseite nennen, optional eine Vorlage teilen oder Kolleginnen, HR-Teams und Familien auf clarvia.org hinweisen, ohne Termine oder Haftung.",
+                  "D'Ambassadeursroll bleift ganz fräi: Clarvia op Ärem perséinlechen oder Firmen-LinkedIn-Profil nennen, optional e Post deelen oder Kollegen, HR-Ekippen a Familljen op clarvia.org hiweisen, ouni Versammlungen oder Haftung.",
                 )}
               </p>
             </div>
 
-            {/* 6 Concise Prestige & Zero-Burden Benefits */}
             <div>
               <h2
                 className="text-xl font-semibold text-calm-blue-800 mb-4 text-balance"
@@ -217,10 +218,10 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
               <p className="text-xs text-calm-blue-600 mb-4">
                 {l(
                   lang,
-                  "100% non-profit contribution · Instant online admission",
-                  "Cotisation 100 % à but non lucratif · Admission immédiate",
-                  "100 % gemeinnütziger Beitrag · Direkte Online-Aufnahme",
-                  "100 % Non-Profit-Bäitrag · Direkt Online-Opnam",
+                  "For individuals & companies · Instant online admission",
+                  "Particuliers et entreprises · Admission immédiate",
+                  "Für Einzelpersonen & Unternehmen · Sofortige Aufnahme",
+                  "Fir Privatpersounen & Entreprisen · Direkt Opnam",
                 )}
               </p>
 
@@ -228,6 +229,7 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                 lang={lang}
                 onNameChange={setPreviewName}
                 onPublishChange={setPreviewPublish}
+                onMemberKindChange={setPreviewKind}
               />
 
               <div className="mt-4 pt-3 border-t border-calm-blue-100/70 text-center">
@@ -387,6 +389,7 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
           lang={lang}
           previewName={previewName}
           previewPublish={previewPublish}
+          previewKind={previewKind}
         />
 
         <section
