@@ -165,6 +165,15 @@ export default async function LangLayout({
                   "source-backed guidance",
                 ],
               },
+              {
+                "@type": "Person",
+                "@id": "https://clarvia.org/#tommi-lindfors",
+                name: "Tommi Lindfors",
+                jobTitle: "Co-Founder & President",
+                url: "https://orcid.org/0009-0002-2467-4045",
+                sameAs: ["https://orcid.org/0009-0002-2467-4045"],
+                affiliation: { "@id": "https://clarvia.org/#organization" },
+              },
             ],
           }),
         }}

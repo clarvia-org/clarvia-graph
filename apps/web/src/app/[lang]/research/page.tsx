@@ -7,6 +7,7 @@ import { headlineStyle } from "../data";
 import { pageMetadata } from "@/lib/page-meta";
 import {
   CORPUS_STATS,
+  STUDY_AUTHORS_JSONLD,
   DATA_EUROPA_URL,
   DATA_PUBLIC_LU_URL,
   EC_OSOR_URL,
@@ -122,6 +123,7 @@ export default async function ResearchHubPage({
             headline:
               "Cross-Border Bereavement & Serious Illness Administrative Integration Index (2026)",
             datePublished: STUDY_1_PUBLISHED_DATE,
+            author: STUDY_AUTHORS_JSONLD,
           },
           {
             "@type": "ScholarlyArticle",
@@ -130,6 +132,7 @@ export default async function ResearchHubPage({
             headline:
               "Global Post-Death Civil Registration & Estate Administration Atlas (2026)",
             datePublished: STUDY_2_PUBLISHED_DATE,
+            author: STUDY_AUTHORS_JSONLD,
           },
           {
             "@type": "ScholarlyArticle",
@@ -138,6 +141,7 @@ export default async function ResearchHubPage({
             headline:
               "Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border Portability (2026)",
             datePublished: STUDY_3_PUBLISHED_DATE,
+            author: STUDY_AUTHORS_JSONLD,
           },
         ],
       },
