@@ -1,0 +1,233 @@
+import { NextRequest } from "next/server";
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import {
+  COHORT_ARCHETYPE_SLOTS,
+  computeMemberInitials,
+  getRemainingArchetypeSlots,
+  normalizeLinkedInProfileUrl,
+} from "@/content/associate-members";
+
+const mockSessionCreate = vi.fn();
+const mockSessionRetrieve = vi.fn();
+
+vi.mock("@/lib/stripe", () => ({
+  getStripe: () => ({
+    checkout: {
+      sessions: {
+        create: mockSessionCreate,
+        retrieve: mockSessionRetrieve,
+      },
+    },
+  }),
+}));
+
+import { GET, POST } from "@/app/api/donate/route";
+
+describe("associate-members helpers", () => {
+  it("normalizes personal LinkedIn profile URLs and strips tracking parameters", () => {
+    expect(
+      normalizeLinkedInProfileUrl("https://www.linkedin.com/in/jane-doe/"),
+    ).toBe("https://www.linkedin.com/in/jane-doe");
+    expect(
+      normalizeLinkedInProfileUrl("linkedin.com/in/jean_dupont-lu?trk=public_profile"),
+    ).toBe("https://www.linkedin.com/in/jean_dupont-lu");
+    expect(
+      normalizeLinkedInProfileUrl("https://lu.linkedin.com/in/claire-martin#experience"),
+    ).toBe("https://www.linkedin.com/in/claire-martin");
+  });
+
+  it("rejects company pages, non-LinkedIn domains, credentials, and malformed handles", () => {
+    expect(
+      normalizeLinkedInProfileUrl("https://www.linkedin.com/company/clarvia/"),
+    ).toBeNull();
+    expect(
+      normalizeLinkedInProfileUrl("https://evil-linkedin.com/in/jane-doe"),
+    ).toBeNull();
+    expect(
+      normalizeLinkedInProfileUrl("https://user:pass@www.linkedin.com/in/jane-doe"),
+    ).toBeNull();
+    expect(
+      normalizeLinkedInProfileUrl("https://www.linkedin.com/in/ab"),
+    ).toBeNull();
+    expect(
+      normalizeLinkedInProfileUrl("https://www.linkedin.com/in/jane/extra"),
+    ).toBeNull();
+    expect(normalizeLinkedInProfileUrl("")).toBeNull();
+  });
+
+  it("computes initials cleanly while skipping honorifics", () => {
+    expect(computeMemberInitials("Dr. Claire Martin")).toBe("CM");
+    expect(computeMemberInitials("Günther Schriver")).toBe("GS");
+    expect(computeMemberInitials("   ")).toBe("AM");
+  });
+
+  it("replaces illustrative cohort archetype slots 1-for-1 as members publish", () => {
+    expect(getRemainingArchetypeSlots(0)).toHaveLength(
+      COHORT_ARCHETYPE_SLOTS.length,
+    );
+    expect(getRemainingArchetypeSlots(2)).toHaveLength(
+      COHORT_ARCHETYPE_SLOTS.length - 2,
+    );
+    expect(getRemainingArchetypeSlots(99)).toHaveLength(0);
+  });
+});
+
+describe("/api/donate associate_membership branch", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockSessionCreate.mockResolvedValue({
+      url: "https://checkout.stripe.com/c/pay/cs_test_123",
+    });
+  });
+
+  function makePostRequest(body: Record<string, unknown>, ip = "198.51.100.10") {
+    return new NextRequest("https://clarvia.org/api/donate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-forwarded-for": ip,
+      },
+      body: JSON.stringify(body),
+    });
+  }
+
+  it("creates an annual €480 Stripe subscription tagged with Account 7200 and subscription_data metadata", async () => {
+    const res = await POST(
+      makePostRequest(
+        {
+          program: "associate_membership",
+          type: "annual",
+          lang: "fr",
+          memberName: "Dr. Claire Martin",
+          ambassadorAgreed: true,
+          publishMember: true,
+          linkedinUrl: "fr.linkedin.com/in/claire-martin?utm_source=share",
+          marketingOptIn: true,
+          amount: 1, // Tampered client amount must be ignored
+        },
+        "198.51.100.11",
+      ),
+    );
+
+    expect(res.status).toBe(200);
+    const json = await res.json();
+    expect(json.url).toBe("https://checkout.stripe.com/c/pay/cs_test_123");
+
+    expect(mockSessionCreate).toHaveBeenCalledTimes(1);
+    const arg = mockSessionCreate.mock.calls[0][0];
+    expect(arg.mode).toBe("subscription");
+    expect(arg.line_items[0].price_data.unit_amount).toBe(48000);
+    expect(arg.line_items[0].price_data.recurring.interval).toBe("year");
+    expect(arg.success_url).toBe(
+      "https://clarvia.org/fr/membership?joined=true&session_id={CHECKOUT_SESSION_ID}",
+    );
+    expect(arg.metadata).toMatchObject({
+      program: "associate_membership",
+      accounting_code: "7200",
+      billing_interval: "year",
+      member_display_name: "Dr. Claire Martin",
+      ambassador_agreed: "true",
+      publish_member: "true",
+      linkedin_url: "https://www.linkedin.com/in/claire-martin",
+      marketing_opt_in: "true",
+    });
+    expect(arg.metadata.donation_type).toBeUndefined();
+    expect(arg.subscription_data.metadata).toEqual(arg.metadata);
+  });
+
+  it("creates a monthly €40 Stripe subscription for private registration without LinkedIn URL", async () => {
+    const res = await POST(
+      makePostRequest(
+        {
+          program: "associate_membership",
+          type: "monthly",
+          lang: "../../evil", // Unsafe lang must sanitize to "en"
+          memberName: "Jean Dupont",
+          ambassadorAgreed: true,
+          publishMember: false,
+        },
+        "198.51.100.12",
+      ),
+    );
+
+    expect(res.status).toBe(200);
+    const arg = mockSessionCreate.mock.calls[0][0];
+    expect(arg.line_items[0].price_data.unit_amount).toBe(4000);
+    expect(arg.line_items[0].price_data.recurring.interval).toBe("month");
+    expect(arg.success_url).toBe(
+      "https://clarvia.org/en/membership?joined=true&session_id={CHECKOUT_SESSION_ID}",
+    );
+    expect(arg.metadata.donation_type).toBe("monthly");
+    expect(arg.metadata.publish_member).toBe("false");
+    expect(arg.metadata.linkedin_url).toBeUndefined();
+  });
+
+  it("rejects missing ambassador agreement or invalid LinkedIn URL when publishMember is true", async () => {
+    const noCharter = await POST(
+      makePostRequest(
+        {
+          program: "associate_membership",
+          type: "monthly",
+          memberName: "Jean Dupont",
+          ambassadorAgreed: false,
+        },
+        "198.51.100.13",
+      ),
+    );
+    expect(noCharter.status).toBe(400);
+
+    const badLinkedIn = await POST(
+      makePostRequest(
+        {
+          program: "associate_membership",
+          type: "monthly",
+          memberName: "Jean Dupont",
+          ambassadorAgreed: true,
+          publishMember: true,
+          linkedinUrl: "https://www.linkedin.com/company/acme",
+        },
+        "198.51.100.14",
+      ),
+    );
+    expect(badLinkedIn.status).toBe(400);
+  });
+
+  it("returns non-PII verification metadata from GET /api/donate", async () => {
+    mockSessionRetrieve.mockResolvedValue({
+      id: "cs_test_verified",
+      payment_status: "paid",
+      status: "complete",
+      amount_total: 48000,
+      currency: "eur",
+      created: 1795132800,
+      customer_details: {
+        name: "Dr. Secret Name",
+        email: "secret@example.org",
+      },
+      metadata: {
+        program: "associate_membership",
+        billing_interval: "year",
+      },
+    });
+
+    const req = new NextRequest(
+      "https://clarvia.org/api/donate?session_id=cs_test_verified",
+      { headers: { "x-forwarded-for": "198.51.100.15" } },
+    );
+    const res = await GET(req);
+    expect(res.status).toBe(200);
+    const data = await res.json();
+    expect(data).toEqual({
+      id: "cs_test_verified",
+      payment_status: "paid",
+      status: "complete",
+      amount: 480,
+      currency: "EUR",
+      program: "associate_membership",
+      billing_interval: "year",
+      created_date: "2026-11-20",
+    });
+    expect(data.name).toBeUndefined();
+    expect(data.email).toBeUndefined();
+  });
+});

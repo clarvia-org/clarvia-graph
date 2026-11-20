@@ -96,13 +96,14 @@ export function trackAskSubmitted(params: {
 export function trackBeginCheckout(params: {
   value: number;
   currency?: string;
-  frequency: "monthly" | "onetime";
+  frequency: "monthly" | "annual" | "onetime";
   landing_variant?: string;
+  item_category?: "donation" | "associate_membership";
 }): void {
   trackEvent("begin_checkout", {
     currency: (params.currency || "EUR").toUpperCase(),
     value: params.value,
-    item_category: "donation",
+    item_category: params.item_category || "donation",
     frequency: params.frequency,
     landing_variant: params.landing_variant,
   });

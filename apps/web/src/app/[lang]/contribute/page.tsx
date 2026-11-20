@@ -211,6 +211,42 @@ export default async function ContributePage({ params }: { params: Promise<{ lan
           </a>
         </div>
 
+        {/* ── Associate Membership & Ambassador Path ── */}
+        <div className="glass-panel p-6 mb-16 border border-white/75 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="space-y-1">
+            <h2 className="text-lg font-semibold text-calm-blue-800">
+              {l(
+                lang,
+                "Become an Associate Member & Mission Ambassador",
+                "Devenir membre adhérent et ambassadeur",
+                "Assoziiertes Mitglied & Botschafter werden",
+                "Assoziéierte Member & Ambassadeur ginn",
+              )}
+            </h2>
+            <p className="text-sm text-calm-blue-600">
+              {l(
+                lang,
+                "Prefer to support Clarvia through philanthropy and your professional network? Join our Founding Cohort (€40/month or €480/year, zero liability).",
+                "Vous préférez soutenir Clarvia par le mécénat et votre réseau professionnel ? Rejoignez notre cohorte fondatrice (40 €/mois ou 480 €/an, sans responsabilité).",
+                "Möchten Sie Clarvia ideell, finanziell und über Ihr Netzwerk stärken? Werden Sie Teil unserer Gründerkohorte (40 €/Monat oder 480 €/Jahr, ohne Haftung).",
+                "Wëllt Dir Clarvia philanthropesch an iwwer Äert Netzwierk stäerken? Gitt Deel vun eiser Grënnerkohort (40 €/Mount oder 480 €/Joer, ouni Haftung).",
+              )}
+            </p>
+          </div>
+          <a
+            href={`/${lang}/membership`}
+            className="btn-secondary inline-flex items-center justify-center px-5 py-2.5 text-sm shrink-0"
+          >
+            {l(
+              lang,
+              "Learn more →",
+              "En savoir plus →",
+              "Mehr erfahren →",
+              "Méi gewuer ginn →",
+            )}
+          </a>
+        </div>
+
         <div className="space-y-16">
           <AccessSection lang={lang} />
           <PublicInterestSection lang={lang} />

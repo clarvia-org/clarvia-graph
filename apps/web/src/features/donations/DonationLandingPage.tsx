@@ -531,50 +531,90 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
           </section>
         )}
 
-        {/* Corporate sponsors block */}
+        {/* Associate Membership & Corporate sponsors blocks */}
         {config.showCorporateSponsors && (
           <section
-            className="mt-16 pt-12 border-t border-calm-blue-200/50"
+            className="mt-16 pt-12 border-t border-calm-blue-200/50 space-y-10"
             aria-labelledby="corporate-heading"
           >
-            <h2
-              id="corporate-heading"
-              className="text-xl font-semibold text-calm-blue-800 mb-4"
-              style={{ fontFamily: headlineStyle.fontFamily }}
-            >
-              {l(
-                lang,
-                "Corporate sponsors",
-                "Partenaires entreprises",
-                "Unternehmenssponsoren",
-                "Firmesponsoren"
-              )}
-            </h2>
-            <div className="glass-panel p-6 border border-white/60">
-              <p className="text-sm text-calm-blue-600 leading-relaxed mb-3">
-                {l(
-                  lang,
-                  "Companies supporting Clarvia help build public-interest infrastructure for families after the loss of a loved one.",
-                  "Les entreprises qui soutiennent Clarvia contribuent à créer une infrastructure d’intérêt public pour les familles après la perte d’un proche.",
-                  "Unternehmen, die Clarvia unterstützen, helfen beim Aufbau einer gemeinwohlorientierten Infrastruktur für Familien nach dem Verlust eines nahestehenden Menschen.",
-                  "Entreprisen, déi Clarvia ënnerstëtzen, hëllefen eng Infrastruktur am ëffentlechen Interessi fir Familljen nom Verloscht vun engem nooste Mënsch opzebauen."
-                )}
-              </p>
-              <p className="text-[11px] text-calm-blue-500 leading-relaxed mb-4">
-                {l(
-                  lang,
-                  "Sponsors may receive acknowledgement, but sponsorship does not provide influence over guidance, access to user data, referrals, preferential placement, exclusivity, or endorsement.",
-                  "Les sponsors peuvent être remerciés publiquement, mais leur soutien ne leur donne aucune influence sur les conseils fournis, aucun accès aux données des utilisateurs, aucune recommandation, aucun placement préférentiel, aucune exclusivité et aucune forme d’approbation.",
-                  "Sponsoren können öffentlich genannt werden, erhalten durch ihr Sponsoring jedoch keinen Einfluss auf die Inhalte, keinen Zugang zu Nutzerdaten, keine Vermittlungen, keine bevorzugte Platzierung, keine Exklusivität und keine Empfehlung.",
-                  "Sponsore kënne fir hir Ënnerstëtzung genannt ginn, mee Sponsoring gëtt keen Afloss op d'Orientéierung, keen Zougang zu Benotzerdonnéeën, keng Recommandatiounen, keng bevorzugt Plazéierung, keng Exklusivitéit a keng Ënnerstëtzungsempfehlung."
-                )}
-              </p>
-              <Link
-                href={`/${lang}/contact`}
-                className="btn-secondary inline-flex items-center gap-2 px-5 py-2.5 text-sm"
+            <div>
+              <h2
+                className="text-xl font-semibold text-calm-blue-800 mb-4"
+                style={{ fontFamily: headlineStyle.fontFamily }}
               >
-                {l(lang, "Get in touch", "Nous contacter", "Kontakt aufnehmen", "Mellt Iech bei eis")}
-              </Link>
+                {l(
+                  lang,
+                  "Associate Membership & Mission Ambassadors",
+                  "Membres adhérents et ambassadeurs de la mission",
+                  "Assoziierte Mitgliedschaft & Botschafter",
+                  "Assoziéiert Memberschaft & Ambassadeuren",
+                )}
+              </h2>
+              <div className="glass-panel p-6 border border-white/60">
+                <p className="text-sm text-calm-blue-600 leading-relaxed mb-3">
+                  {l(
+                    lang,
+                    "Individuals who want to stand behind Clarvia's free 196-country guidance and help spread awareness across their professional networks may join Clarvia ASBL as statutory Associate Members (€40/month or €480/year, zero personal liability, optional LinkedIn profile recognition).",
+                    "Les personnes souhaitant soutenir durablement la mission gratuite de Clarvia dans 196 pays et la faire connaître dans leur réseau peuvent adhérer à Clarvia ASBL en tant que membres adhérents statutaires (40 €/mois ou 480 €/an, aucune responsabilité personnelle, mention LinkedIn facultative).",
+                    "Persönlichkeiten, die Clarvias kostenlose Orientierung in 196 Ländern dauerhaft fördern und in ihrem beruflichen Netzwerk bekannt machen möchten, können Clarvia ASBL als satzungsmäßiges assoziiertes Mitglied beitreten (40 €/Monat oder 480 €/Jahr, keine persönliche Haftung, optionale LinkedIn-Nennung).",
+                    "Persounen, déi d'gratis Orientéierung vu Clarvia an 196 Länner dauerhaft ënnerstëtzen an an hirem berufflechen Netzwierk bekannt maache wëllen, kënne Clarvia ASBL als statutaire assoziéierte Member bäitrieden (40 €/Mount oder 480 €/Joer, keng perséinlech Haftung, optional LinkedIn-Ernimmung).",
+                  )}
+                </p>
+                <Link
+                  href={`/${lang}/membership`}
+                  className="btn-secondary inline-flex items-center gap-2 px-5 py-2.5 text-sm"
+                >
+                  {l(
+                    lang,
+                    "Explore Associate Membership →",
+                    "Découvrir le statut de membre adhérent →",
+                    "Assoziierte Mitgliedschaft ansehen →",
+                    "Assoziéiert Memberschaft entdecken →",
+                  )}
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <h2
+                id="corporate-heading"
+                className="text-xl font-semibold text-calm-blue-800 mb-4"
+                style={{ fontFamily: headlineStyle.fontFamily }}
+              >
+                {l(
+                  lang,
+                  "Corporate sponsors",
+                  "Partenaires entreprises",
+                  "Unternehmenssponsoren",
+                  "Firmesponsoren"
+                )}
+              </h2>
+              <div className="glass-panel p-6 border border-white/60">
+                <p className="text-sm text-calm-blue-600 leading-relaxed mb-3">
+                  {l(
+                    lang,
+                    "Companies supporting Clarvia help build public-interest infrastructure for families after the loss of a loved one.",
+                    "Les entreprises qui soutiennent Clarvia contribuent à créer une infrastructure d’intérêt public pour les familles après la perte d’un proche.",
+                    "Unternehmen, die Clarvia unterstützen, helfen beim Aufbau einer gemeinwohlorientierten Infrastruktur für Familien nach dem Verlust eines nahestehenden Menschen.",
+                    "Entreprisen, déi Clarvia ënnerstëtzen, hëllefen eng Infrastruktur am ëffentlechen Interessi fir Familljen nom Verloscht vun engem nooste Mënsch opzebauen."
+                  )}
+                </p>
+                <p className="text-[11px] text-calm-blue-500 leading-relaxed mb-4">
+                  {l(
+                    lang,
+                    "Sponsors may receive acknowledgement, but sponsorship does not provide influence over guidance, access to user data, referrals, preferential placement, exclusivity, or endorsement.",
+                    "Les sponsors peuvent être remerciés publiquement, mais leur soutien ne leur donne aucune influence sur les conseils fournis, aucun accès aux données des utilisateurs, aucune recommandation, aucun placement préférentiel, aucune exclusivité et aucune forme d’approbation.",
+                    "Sponsoren können öffentlich genannt werden, erhalten durch ihr Sponsoring jedoch keinen Einfluss auf die Inhalte, keinen Zugang zu Nutzerdaten, keine Vermittlungen, keine bevorzugte Platzierung, keine Exklusivität und keine Empfehlung.",
+                    "Sponsore kënne fir hir Ënnerstëtzung genannt ginn, mee Sponsoring gëtt keen Afloss op d'Orientéierung, keen Zougang zu Benotzerdonnéeën, keng Recommandatiounen, keng bevorzugt Plazéierung, keng Exklusivitéit a keng Ënnerstëtzungsempfehlung."
+                  )}
+                </p>
+                <Link
+                  href={`/${lang}/contact`}
+                  className="btn-secondary inline-flex items-center gap-2 px-5 py-2.5 text-sm"
+                >
+                  {l(lang, "Get in touch", "Nous contacter", "Kontakt aufnehmen", "Mellt Iech bei eis")}
+                </Link>
+              </div>
             </div>
           </section>
         )}

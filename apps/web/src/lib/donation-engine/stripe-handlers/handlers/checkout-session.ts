@@ -74,11 +74,21 @@ export async function processCheckoutSession(
   const donatedAt = donatedAtFromUnix(session.created);
   const donationType =
     metadataDonationType(session.metadata) ??
-    (session.mode === "subscription" ? "monthly" : "onetime");
+    (session.mode === "subscription"
+      ? session.metadata?.billing_interval === "year"
+        ? null
+        : "monthly"
+      : "onetime");
+
+  const metadataMemberName =
+    typeof session.metadata?.member_display_name === "string" &&
+    session.metadata.member_display_name.trim().length > 0
+      ? session.metadata.member_display_name.trim()
+      : null;
 
   const contactId = await upsertContact(ctx.tx, {
     email,
-    displayName: session.customer_details?.name ?? null,
+    displayName: metadataMemberName ?? session.customer_details?.name ?? null,
     preferredLocale: normalizeLocale(session.locale ?? undefined),
   });
 

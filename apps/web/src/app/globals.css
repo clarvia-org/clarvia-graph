@@ -266,6 +266,75 @@ a, button, input, textarea, select {
   animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* ── Accessible visually-hidden utility (keeps live regions in accessibility tree) ── */
+.visually-hidden:where(:not(:focus-within, :active)) {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* ── Native <details> / <summary> disclosure styling ── */
+.disclosure-summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.disclosure-summary::-webkit-details-marker {
+  display: none;
+}
+
+.disclosure-chevron {
+  display: inline-block;
+  flex-shrink: 0;
+  rotate: -90deg;
+}
+
+details[open] > .disclosure-summary .disclosure-chevron {
+  rotate: 0deg;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .disclosure-chevron {
+    transition: rotate 0.2s ease;
+  }
+}
+
+/* ── Print-ready Associate Member Admission Certificate ── */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    padding-bottom: 0 !important;
+  }
+
+  header,
+  footer,
+  .no-print,
+  #cookie-consent-slot-footer {
+    display: none !important;
+  }
+
+  .membership-certificate-print {
+    display: block !important;
+    box-shadow: none !important;
+    border: 2px solid #2b3a67 !important;
+    background: #ffffff !important;
+    margin: 0 auto !important;
+    padding: 2.5cm 2cm !important;
+    max-width: 100% !important;
+    break-inside: avoid;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn-primary:hover {
     transform: none;

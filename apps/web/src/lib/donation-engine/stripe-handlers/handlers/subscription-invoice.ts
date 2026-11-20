@@ -188,6 +188,12 @@ export async function handleInvoicePaymentSucceeded(
     sourceWebhookEventId: ctx.webhookEvent.id,
     metadata: {
       billing_reason: invoice.billing_reason,
+      ...(typeof subscription.metadata?.program === "string"
+        ? { program: subscription.metadata.program }
+        : {}),
+      ...(typeof subscription.metadata?.accounting_code === "string"
+        ? { accounting_code: subscription.metadata.accounting_code }
+        : {}),
     },
   });
 

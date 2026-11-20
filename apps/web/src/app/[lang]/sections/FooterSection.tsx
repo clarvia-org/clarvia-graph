@@ -48,6 +48,16 @@ export default function FooterSection({ lang }: { lang: Lang }) {
           label: l(lang, "Donate", "Faire un don", "Spenden", "Spenden"),
         },
         {
+          href: `/${lang}/membership`,
+          label: l(
+            lang,
+            "Associate Membership",
+            "Membre adhérent",
+            "Assoziierte Mitgliedschaft",
+            "Assoziéiert Memberschaft",
+          ),
+        },
+        {
           href: `/${lang}/contribute`,
           label: l(lang, "Contribute", "Contribuer", "Mitwirken", "Matmaachen"),
         },
