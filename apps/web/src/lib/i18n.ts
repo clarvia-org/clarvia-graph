@@ -57,12 +57,14 @@ export function hreflangForLocales(
 
 const SITE_URL = "https://clarvia.org";
 
-export type AdsCampaignKind = "ask" | "support";
+export type AdsCampaignKind = "ask" | "support" | "membership";
 
 /** Final URLs to paste into Google Ads. Luxembourgish campaigns must use `/lu`, not `/en` or `/lb`. */
 export function adsFinalUrl(kind: AdsCampaignKind, adsLanguage: AdsLanguage): string {
   const pathLang = adsLanguage === "lb" ? "lu" : adsLanguage;
-  return kind === "support" ? `${SITE_URL}/${pathLang}/support` : `${SITE_URL}/${pathLang}`;
+  if (kind === "support") return `${SITE_URL}/${pathLang}/support`;
+  if (kind === "membership") return `${SITE_URL}/${pathLang}/membership`;
+  return `${SITE_URL}/${pathLang}`;
 }
 
 export const ADS_FINAL_URLS = {
@@ -77,6 +79,12 @@ export const ADS_FINAL_URLS = {
     fr: adsFinalUrl("support", "fr"),
     de: adsFinalUrl("support", "de"),
     lb: adsFinalUrl("support", "lb"),
+  },
+  membership: {
+    en: adsFinalUrl("membership", "en"),
+    fr: adsFinalUrl("membership", "fr"),
+    de: adsFinalUrl("membership", "de"),
+    lb: adsFinalUrl("membership", "lb"),
   },
 } as const;
 

@@ -15,8 +15,12 @@ describe("sitemap", () => {
   it("includes guidance, how-it-works, checklist, guide, and EN research URLs", () => {
     const entries = sitemap();
     const urls = entries.map((entry) => entry.url);
-    expect(entries).toHaveLength(1076);
+    expect(entries).toHaveLength(1080);
     expect(urls).toContain("https://clarvia.org/en/how-it-works");
+    expect(urls).toContain("https://clarvia.org/en/membership");
+    expect(urls).toContain("https://clarvia.org/fr/membership");
+    expect(urls).toContain("https://clarvia.org/de/membership");
+    expect(urls).toContain("https://clarvia.org/lu/membership");
     expect(urls).toContain("https://clarvia.org/fr/guidance");
     expect(urls).toContain("https://clarvia.org/en/checklist");
     expect(urls).toContain("https://clarvia.org/en/research");
@@ -109,6 +113,12 @@ describe("ads landing URLs", () => {
       lb: "https://clarvia.org/lu",
     });
     expect(ADS_FINAL_URLS.support.lb).toBe("https://clarvia.org/lu/support");
+    expect(ADS_FINAL_URLS.membership).toEqual({
+      en: "https://clarvia.org/en/membership",
+      fr: "https://clarvia.org/fr/membership",
+      de: "https://clarvia.org/de/membership",
+      lb: "https://clarvia.org/lu/membership",
+    });
     expect(ADS_FINAL_URLS.ask.lb).not.toContain("/en");
     expect(ADS_FINAL_URLS.ask.lb).not.toMatch(/\/lb$/);
   });

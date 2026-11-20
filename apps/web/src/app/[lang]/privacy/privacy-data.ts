@@ -18,7 +18,7 @@ export type PolicyData = {
 export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
   en: {
     title: "Privacy & Cookie Policy",
-    lastUpdated: "Last updated: 22 August 2026",
+    lastUpdated: "Last updated: 20 November 2026",
     sections: [
       {
         heading: "1. What Clarvia.org collects",
@@ -75,10 +75,12 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
         },
       },
       {
-        heading: "4. External donation services",
+        heading: "4. Donations, Associate Membership, and external payment services",
         body: [
-          "Clarvia.org may link to or redirect you to external donation services, such as Stripe, GitHub Sponsors, or Open Collective.",
+          "Clarvia.org may link to or redirect you to external payment and donation services, such as Stripe, GitHub Sponsors, or Open Collective.",
           "Those services are separate from Clarvia.org and operate under their own privacy and cookie policies. Clarvia ASBL is not responsible for cookies or tracking used on external websites.",
+          "If you apply to join Clarvia ASBL as an Associate Member, we record your full name, email address, admission date, billing interval, and membership status in our internal Register of Associate Members as required under our Articles of Association and Luxembourg non-profit law (Articles 6(1)(b) and 6(1)(c) GDPR).",
+          "Public recognition in the Associate Members directory (displaying your name, LinkedIn profile photo, professional headline, and personal LinkedIn profile link) is strictly optional and processed only with your explicit opt-in consent (Article 6(1)(a) GDPR). You may withdraw publication consent and request removal of your public card at any time via our Contact form without affecting your membership.",
           "Please do not include sensitive family, health, or bereavement details in payment references or donation messages.",
         ],
       },
@@ -136,7 +138,7 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
 
   fr: {
     title: "Politique de confidentialité et de cookies",
-    lastUpdated: "Dernière mise à jour : 11 août 2026",
+    lastUpdated: "Dernière mise à jour : 20 novembre 2026",
     sections: [
       {
         heading: "1. Ce que Clarvia.org collecte",
@@ -193,10 +195,12 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
         },
       },
       {
-        heading: "4. Services de don externes",
+        heading: "4. Dons, adhésion de membres adhérents et services de paiement externes",
         body: [
-          "Clarvia.org peut contenir des liens vers des services de don externes ou vous y rediriger, notamment Stripe, GitHub Sponsors ou Open Collective.",
+          "Clarvia.org peut contenir des liens vers des services de paiement et de don externes ou vous y rediriger, notamment Stripe, GitHub Sponsors ou Open Collective.",
           "Ces services sont distincts de Clarvia.org et fonctionnent selon leurs propres politiques de confidentialité et de cookies. Clarvia ASBL n’est pas responsable des cookies ou du suivi utilisés sur des sites externes.",
+          "Si vous adhérez à Clarvia ASBL en tant que membre adhérent, nous inscrivons votre nom complet, votre adresse e-mail, la date d’admission, la périodicité de cotisation et votre statut dans notre registre interne des membres adhérents conformément à nos statuts et au droit luxembourgeois des associations (articles 6(1)(b) et 6(1)(c) du RGPD).",
+          "La publication dans le répertoire des membres adhérents sur Clarvia.org (nom, photo de profil LinkedIn, titre professionnel et lien vers votre profil LinkedIn personnel) est strictement facultative et repose sur votre consentement explicite (article 6(1)(a) du RGPD). Vous pouvez retirer ce consentement et demander le retrait de votre mention publique à tout moment via notre formulaire de contact.",
           "Veuillez ne pas inclure d’informations sensibles concernant votre famille, votre santé ou un deuil dans les références de paiement ou les messages de don.",
         ],
       },
@@ -254,7 +258,7 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
 
   de: {
     title: "Datenschutz- und Cookie-Richtlinie",
-    lastUpdated: "Zuletzt aktualisiert: 11. August 2026",
+    lastUpdated: "Zuletzt aktualisiert: 20. November 2026",
     sections: [
       {
         heading: "1. Was Clarvia.org erhebt",
@@ -311,10 +315,12 @@ export const privacyCookiePolicy: Record<Exclude<Lang, "lu">, PolicyData> = {
         },
       },
       {
-        heading: "4. Externe Spendendienste",
+        heading: "4. Spenden, assoziierte Mitgliedschaft und externe Zahlungsdienste",
         body: [
-          "Clarvia.org kann auf externe Spendendienste wie Stripe, GitHub Sponsors oder Open Collective verlinken oder Sie dorthin weiterleiten.",
+          "Clarvia.org kann auf externe Zahlungs- und Spendendienste wie Stripe, GitHub Sponsors oder Open Collective verlinken oder Sie dorthin weiterleiten.",
           "Diese Dienste sind von Clarvia.org getrennt und unterliegen ihren eigenen Datenschutz- und Cookie-Richtlinien. Clarvia ASBL ist nicht verantwortlich für Cookies oder Tracking auf externen Websites.",
+          "Wenn Sie Clarvia ASBL als assoziiertes Mitglied beitreten, erfassen wir Ihren vollständigen Namen, Ihre E-Mail-Adresse, das Aufnahmedatum, das Abrechnungsintervall und Ihren Mitgliedsstatus im internen Register der assoziierten Mitglieder gemäß unserer Satzung und dem luxemburgischen Vereinsrecht (Artikel 6 Absatz 1 Buchstaben b und c DSGVO).",
+          "Die öffentliche Nennung im Verzeichnis auf Clarvia.org (Name, LinkedIn-Profilbild, Berufsbezeichnung und Link zu Ihrem persönlichen LinkedIn-Profil) ist freiwillig und erfolgt ausschließlich auf Grundlage Ihrer ausdrücklichen Einwilligung (Artikel 6 Absatz 1 Buchstabe a DSGVO). Sie können diese Einwilligung jederzeit über unser Kontaktformular widerrufen.",
           "Bitte geben Sie keine sensiblen Informationen zu Familie, Gesundheit oder Trauerfällen in Zahlungsreferenzen oder Spendennachrichten an.",
         ],
       },

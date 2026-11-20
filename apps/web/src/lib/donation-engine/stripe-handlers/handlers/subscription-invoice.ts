@@ -45,17 +45,30 @@ export async function upsertSubscriptionCommitment(
       ? (customer.email ?? null)
       : null;
 
+  const metadataMemberName =
+    typeof subscription.metadata?.member_display_name === "string" &&
+    subscription.metadata.member_display_name.trim().length > 0
+      ? subscription.metadata.member_display_name.trim()
+      : null;
+
+  const customerName =
+    !("deleted" in customer && customer.deleted)
+      ? (customer.name ?? null)
+      : null;
+
+  const preferredLocale = normalizeLocale(
+    (typeof subscription.metadata?.locale === "string"
+      ? subscription.metadata.locale
+      : undefined) ??
+      (!("deleted" in customer && customer.deleted)
+        ? (customer.preferred_locales?.[0] ?? undefined)
+        : undefined),
+  );
+
   const contactId = await upsertContact(ctx.tx, {
     email,
-    displayName:
-      !("deleted" in customer && customer.deleted)
-        ? (customer.name ?? null)
-        : null,
-    preferredLocale: normalizeLocale(
-      !("deleted" in customer && customer.deleted)
-        ? (customer.preferred_locales?.[0] ?? undefined)
-        : undefined,
-    ),
+    displayName: metadataMemberName ?? customerName,
+    preferredLocale,
   });
 
   if (!contactId) {
@@ -188,6 +201,12 @@ export async function handleInvoicePaymentSucceeded(
     sourceWebhookEventId: ctx.webhookEvent.id,
     metadata: {
       billing_reason: invoice.billing_reason,
+      ...(typeof subscription.metadata?.program === "string"
+        ? { program: subscription.metadata.program }
+        : {}),
+      ...(typeof subscription.metadata?.accounting_code === "string"
+        ? { accounting_code: subscription.metadata.accounting_code }
+        : {}),
     },
   });
 

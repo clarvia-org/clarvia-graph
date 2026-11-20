@@ -37,6 +37,7 @@ const REDACTED_QUERY_PARAMS = new Set([
   "token",
   "email",
   "donated",
+  "joined",
   "payment_intent",
   "payment_intent_client_secret",
 ]);

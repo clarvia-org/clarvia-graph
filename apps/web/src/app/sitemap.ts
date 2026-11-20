@@ -39,6 +39,7 @@ const localizedPages: SitemapPage[] = [
   { path: "updates", changeFrequency: "weekly", priority: 0.8, translated: true },
   { path: "voices/uwe-schneider", changeFrequency: "yearly", priority: 0.6, translated: true },
   { path: "contribute", changeFrequency: "monthly", priority: 0.7, translated: true },
+  { path: "membership", changeFrequency: "monthly", priority: 0.7, translated: true },
   { path: "support", changeFrequency: "weekly", priority: 0.7, translated: true },
   { path: "contact", changeFrequency: "monthly", priority: 0.6, translated: true },
   { path: "privacy", changeFrequency: "yearly", priority: 0.2, translated: true },

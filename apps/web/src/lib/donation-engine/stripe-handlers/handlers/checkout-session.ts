@@ -74,12 +74,30 @@ export async function processCheckoutSession(
   const donatedAt = donatedAtFromUnix(session.created);
   const donationType =
     metadataDonationType(session.metadata) ??
-    (session.mode === "subscription" ? "monthly" : "onetime");
+    (session.mode === "subscription"
+      ? session.metadata?.billing_interval === "year"
+        ? null
+        : "monthly"
+      : "onetime");
+
+  const metadataMemberName =
+    typeof session.metadata?.member_display_name === "string" &&
+    session.metadata.member_display_name.trim().length > 0
+      ? session.metadata.member_display_name.trim()
+      : null;
+
+  const resolvedLocale = normalizeLocale(
+    (typeof session.metadata?.locale === "string"
+      ? session.metadata.locale
+      : undefined) ??
+      session.locale ??
+      undefined,
+  );
 
   const contactId = await upsertContact(ctx.tx, {
     email,
-    displayName: session.customer_details?.name ?? null,
-    preferredLocale: normalizeLocale(session.locale ?? undefined),
+    displayName: metadataMemberName ?? session.customer_details?.name ?? null,
+    preferredLocale: resolvedLocale,
   });
 
   if (contactId && stripeCustomerId) {
@@ -108,7 +126,7 @@ export async function processCheckoutSession(
       typeof session.metadata?.consent_text_version === "string"
         ? session.metadata.consent_text_version
         : null,
-    locale: normalizeLocale(session.locale ?? undefined),
+    locale: resolvedLocale,
     landingVariant:
       typeof session.metadata?.landing_variant === "string"
         ? session.metadata.landing_variant

@@ -279,11 +279,23 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             <p>
               {l(
                 lang,
-                "Our operations are supported by donations, corporate sponsors, grant funding, and volunteer contributions. Our tools, data, and source code are all freely available to the public.",
-                "Nos activités sont soutenues par des sponsors d'entreprise, des financements sous forme de subventions et des contributions bénévoles. Nos outils, nos données et notre code source sont librement accessibles au public.",
-                "Unsere Arbeit wird durch Unternehmenssponsoren, Fördermittel und ehrenamtliche Beiträge ermöglicht. Unsere Werkzeuge, Daten und unser Quellcode sind der Öffentlichkeit frei zugänglich.",
-                "Eis Aarbecht gëtt duerch Entreprisesponsoren, Subventiounen a fräiwëlleg Bäiträg ënnerstëtzt. Eis Tools, Donnéeën an eise Quellcode si fir de Public fräi zougänglech.",
-              )}
+                "Our operations are supported by donations, Associate Members, corporate sponsors, grant funding, and volunteer contributions. Our tools, data, and source code are all freely available to the public.",
+                "Nos activités sont soutenues par les dons, les membres adhérents, les sponsors d'entreprise, les subventions et les contributions bénévoles. Nos outils, nos données et notre code source sont librement accessibles au public.",
+                "Unsere Arbeit wird durch Spenden, assoziierte Mitglieder, Unternehmenssponsoren, Fördermittel und ehrenamtliche Beiträge ermöglicht. Unsere Werkzeuge, Daten und unser Quellcode sind der Öffentlichkeit frei zugänglich.",
+                "Eis Aarbecht gëtt duerch Spenden, assoziéiert Memberen, Entreprisesponsoren, Subventiounen a fräiwëlleg Bäiträg ënnerstëtzt. Eis Tools, Donnéeën an eise Quellcode si fir de Public fräi zougänglech.",
+              )}{" "}
+              <Link
+                href={`/${lang}/membership`}
+                className="text-calm-blue-700 font-medium hover:text-calm-blue-900 underline underline-offset-2"
+              >
+                {l(
+                  lang,
+                  "Associate Membership →",
+                  "Adhérer comme membre adhérent →",
+                  "Assoziierte Mitgliedschaft →",
+                  "Assoziéiert Memberschaft →",
+                )}
+              </Link>
             </p>
             <p>
               {l(
