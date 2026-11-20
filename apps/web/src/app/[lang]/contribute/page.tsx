@@ -1,4 +1,5 @@
 import { type Metadata } from "next";
+import Link from "next/link";
 import { type Lang, l, LANGUAGES, hreflangLanguages } from "@/lib/i18n";
 import Header from "@/components/Header";
 import { headlineStyle } from "../data";
@@ -233,18 +234,18 @@ export default async function ContributePage({ params }: { params: Promise<{ lan
               )}
             </p>
           </div>
-          <a
+          <Link
             href={`/${lang}/membership`}
             className="btn-secondary inline-flex items-center justify-center px-5 py-2.5 text-sm shrink-0"
           >
             {l(
               lang,
-              "Learn more →",
-              "En savoir plus →",
-              "Mehr erfahren →",
-              "Méi gewuer ginn →",
+              "Explore Associate Membership →",
+              "Découvrir le statut de membre adhérent →",
+              "Assoziierte Mitgliedschaft ansehen →",
+              "Assoziéiert Memberschaft entdecken →",
             )}
-          </a>
+          </Link>
         </div>
 
         <div className="space-y-16">

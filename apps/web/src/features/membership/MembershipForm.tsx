@@ -10,7 +10,6 @@ import {
 import MarketingConsent from "@/features/donations/MarketingConsent";
 import { trackBeginCheckout } from "@/lib/analytics";
 import { type Lang, l } from "@/lib/i18n";
-import { MEMBERSHIP_PENDING_STORAGE_KEY } from "./membership-copy";
 
 export interface MembershipFormProps {
   lang: Lang;
@@ -34,9 +33,7 @@ function MembershipFormInner({
   const linkedinHintId = `${baseId}-linkedin-hint`;
   const linkedinErrorId = `${baseId}-linkedin-error`;
 
-  const [billingInterval, setBillingInterval] = useState<"monthly" | "annual">(
-    "monthly",
-  );
+  const [frequency, setFrequency] = useState<"monthly" | "annual">("monthly");
   const [memberName, setMemberName] = useState("");
   const [ambassadorAgreed, setAmbassadorAgreed] = useState(false);
   const [publishMember, setPublishMember] = useState(false);
@@ -152,7 +149,7 @@ function MembershipFormInner({
     }
 
     const amount =
-      billingInterval === "annual" ? ASSOCIATE_ANNUAL_EUR : ASSOCIATE_MONTHLY_EUR;
+      frequency === "annual" ? ASSOCIATE_ANNUAL_EUR : ASSOCIATE_MONTHLY_EUR;
     setIsProcessing(true);
 
     try {
@@ -161,7 +158,7 @@ function MembershipFormInner({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           program: "associate_membership",
-          type: billingInterval,
+          type: frequency,
           lang,
           memberName: memberName.trim(),
           ambassadorAgreed: true,
@@ -176,23 +173,10 @@ function MembershipFormInner({
 
       const data = await res.json();
       if (res.ok && data.url) {
-        try {
-          sessionStorage.setItem(
-            MEMBERSHIP_PENDING_STORAGE_KEY,
-            JSON.stringify({
-              memberName: memberName.trim(),
-              billingInterval,
-              publishMember,
-            }),
-          );
-        } catch {
-          // Ignore private-mode storage restrictions
-        }
-
         trackBeginCheckout({
           value: amount,
           currency: "EUR",
-          frequency: billingInterval,
+          frequency,
           landing_variant: "membership",
           item_category: "associate_membership",
         });
@@ -231,7 +215,7 @@ function MembershipFormInner({
   const linkedinInvalidActive =
     publishMember && linkedinShowError && !isLinkedinValid;
   const displayAmount =
-    billingInterval === "annual" ? ASSOCIATE_ANNUAL_EUR : ASSOCIATE_MONTHLY_EUR;
+    frequency === "annual" ? ASSOCIATE_ANNUAL_EUR : ASSOCIATE_MONTHLY_EUR;
 
   return (
     <form
@@ -246,7 +230,7 @@ function MembershipFormInner({
         {liveAnnouncement}
       </div>
 
-      {/* Billing interval radio fieldset (2 options -> visible radios per modern-web-guidance) */}
+      {/* Membership contribution frequency radio fieldset */}
       <fieldset className="space-y-2.5">
         <legend className="text-xs font-semibold uppercase tracking-wider text-calm-blue-600 mb-1">
           {l(
@@ -263,15 +247,15 @@ function MembershipFormInner({
             <input
               type="radio"
               id={`${baseId}-freq-monthly`}
-              name="billingInterval"
+              name="frequency"
               value="monthly"
-              checked={billingInterval === "monthly"}
-              onChange={() => setBillingInterval("monthly")}
+              checked={frequency === "monthly"}
+              onChange={() => setFrequency("monthly")}
               className="peer sr-only"
             />
             <label
               htmlFor={`${baseId}-freq-monthly`}
-              className="flex flex-col justify-between min-h-14 p-3.5 rounded-xl border-1.5 border-calm-blue-200 bg-white/70 cursor-pointer select-none peer-checked:border-calm-blue-700 peer-checked:bg-white peer-checked:shadow-sm peer-focus-visible:outline-2 peer-focus-visible:outline-calm-blue-500 peer-focus-visible:outline-offset-2"
+              className="flex flex-col justify-between min-h-14 p-3.5 rounded-xl border-2 border-calm-blue-200 bg-white/75 cursor-pointer select-none peer-checked:border-calm-blue-700 peer-checked:bg-white peer-checked:shadow-sm peer-focus-visible:outline-2 peer-focus-visible:outline-calm-blue-500 peer-focus-visible:outline-offset-2"
             >
               <span className="text-base font-semibold text-calm-blue-800">
                 {l(
@@ -282,7 +266,7 @@ function MembershipFormInner({
                   `${ASSOCIATE_MONTHLY_EUR} € / Mount`,
                 )}
               </span>
-              <span className="text-xs text-calm-blue-500 mt-0.5">
+              <span className="text-xs text-calm-blue-600 mt-0.5">
                 {l(
                   lang,
                   "Flexible monthly billing",
@@ -298,15 +282,15 @@ function MembershipFormInner({
             <input
               type="radio"
               id={`${baseId}-freq-annual`}
-              name="billingInterval"
+              name="frequency"
               value="annual"
-              checked={billingInterval === "annual"}
-              onChange={() => setBillingInterval("annual")}
+              checked={frequency === "annual"}
+              onChange={() => setFrequency("annual")}
               className="peer sr-only"
             />
             <label
               htmlFor={`${baseId}-freq-annual`}
-              className="flex flex-col justify-between min-h-14 p-3.5 rounded-xl border-1.5 border-calm-blue-200 bg-white/70 cursor-pointer select-none peer-checked:border-calm-blue-700 peer-checked:bg-white peer-checked:shadow-sm peer-focus-visible:outline-2 peer-focus-visible:outline-calm-blue-500 peer-focus-visible:outline-offset-2"
+              className="flex flex-col justify-between min-h-14 p-3.5 rounded-xl border-2 border-calm-blue-200 bg-white/75 cursor-pointer select-none peer-checked:border-calm-blue-700 peer-checked:bg-white peer-checked:shadow-sm peer-focus-visible:outline-2 peer-focus-visible:outline-calm-blue-500 peer-focus-visible:outline-offset-2"
             >
               <span className="text-base font-semibold text-calm-blue-800">
                 {l(
@@ -317,7 +301,7 @@ function MembershipFormInner({
                   `${ASSOCIATE_ANNUAL_EUR} € / Joer`,
                 )}
               </span>
-              <span className="text-xs text-calm-blue-500 mt-0.5">
+              <span className="text-xs text-calm-blue-600 mt-0.5">
                 {l(
                   lang,
                   "Single annual receipt (€40/mo)",
@@ -331,7 +315,7 @@ function MembershipFormInner({
         </div>
       </fieldset>
 
-      {/* Single Full Name field (global name support, autocomplete="name") */}
+      {/* Single Full Name field */}
       <div className="space-y-1">
         <label
           htmlFor={nameId}
@@ -344,7 +328,7 @@ function MembershipFormInner({
             "Vollständiger Name",
             "Ganzen Numm",
           )}{" "}
-          <span className="text-calm-blue-500 font-normal" aria-hidden="true">
+          <span className="text-calm-blue-600 font-normal" aria-hidden="true">
             *
           </span>
         </label>
@@ -457,7 +441,7 @@ function MembershipFormInner({
       </div>
 
       {/* Optional Checkbox: Publish Membership + LinkedIn Portrait & URL */}
-      <div className="p-3.5 rounded-xl border border-calm-blue-100 bg-white/60 shadow-sm space-y-3">
+      <div className="p-3.5 rounded-xl border border-calm-blue-200 bg-white/65 shadow-sm space-y-3">
         <div className="flex items-start gap-3">
           <div className="flex items-center h-5 mt-0.5">
             <input
@@ -504,13 +488,13 @@ function MembershipFormInner({
                 "Persönliche LinkedIn-Profil-URL",
                 "Perséinlech LinkedIn-Profil-URL",
               )}{" "}
-              <span className="text-calm-blue-500 font-normal" aria-hidden="true">
+              <span className="text-calm-blue-600 font-normal" aria-hidden="true">
                 *
               </span>
             </label>
             <span
               id={linkedinHintId}
-              className="block text-[11px] text-calm-blue-500 pb-0.5"
+              className="block text-[11px] text-calm-blue-600 pb-0.5"
             >
               {l(
                 lang,
@@ -590,7 +574,7 @@ function MembershipFormInner({
         </div>
       )}
 
-      {/* Primary Submit Button (never disabled prior to submission per modern-web-guidance) */}
+      {/* Primary Submit Button */}
       <div className="pt-1">
         <button
           type="submit"
@@ -610,23 +594,23 @@ function MembershipFormInner({
             : l(
                 lang,
                 `Join as Associate Member — €${displayAmount}${
-                  billingInterval === "annual" ? "/year" : "/month"
+                  frequency === "annual" ? "/year" : "/month"
                 }`,
                 `Devenir membre adhérent — ${displayAmount} €${
-                  billingInterval === "annual" ? "/an" : "/mois"
+                  frequency === "annual" ? "/an" : "/mois"
                 }`,
                 `Mitglied werden — ${displayAmount} €${
-                  billingInterval === "annual" ? "/Jahr" : "/Monat"
+                  frequency === "annual" ? "/Jahr" : "/Monat"
                 }`,
                 `Member ginn — ${displayAmount} €${
-                  billingInterval === "annual" ? "/Joer" : "/Mount"
+                  frequency === "annual" ? "/Joer" : "/Mount"
                 }`,
               )}
         </button>
       </div>
 
       {/* Reassurance Micro-Copy */}
-      <div className="text-center text-xs text-calm-blue-500 space-y-1">
+      <div className="text-center text-xs text-calm-blue-600 space-y-1">
         <p>
           {l(
             lang,

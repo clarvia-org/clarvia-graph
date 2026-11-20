@@ -228,7 +228,7 @@ export default function CohortShowcase({
                   `Assoziéierte Member · Grënnerkohort (${FOUNDING_COHORT_YEARS})`,
                 )}
               </p>
-              <p className="text-[11px] text-calm-blue-400 mt-0.5">
+              <p className="text-[11px] text-calm-blue-600 mt-0.5">
                 {l(
                   lang,
                   "Displays your LinkedIn profile portrait & professional headline upon admission",
@@ -330,7 +330,7 @@ export default function CohortShowcase({
                   <ArchetypeEmblem id={slot.id} />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-calm-blue-400">
+                  <p className="text-[11px] font-semibold uppercase tracking-wider text-calm-blue-600">
                     {l(
                       lang,
                       `Cohort Seat ${seatNum}`,

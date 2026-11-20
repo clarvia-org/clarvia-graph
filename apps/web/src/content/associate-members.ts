@@ -183,8 +183,9 @@ export function normalizeLinkedInProfileUrl(raw: string): string | null {
   const trimmed = raw.trim();
   if (!trimmed || trimmed.length > 250) return null;
 
+  const lower = trimmed.toLowerCase();
   const withScheme =
-    trimmed.startsWith("http://") || trimmed.startsWith("https://")
+    lower.startsWith("http://") || lower.startsWith("https://")
       ? trimmed
       : `https://${trimmed}`;
 
@@ -250,4 +251,44 @@ export function computeMemberInitials(rawName: string): string {
   if (parts.length === 1) return first.toUpperCase();
   const last = Array.from(parts[parts.length - 1])[0] ?? "";
   return `${first}${last}`.toUpperCase();
+}
+
+export type MembershipVerificationOutcome =
+  | { kind: "paid"; amount: number | null; currency: string; admittedDate: string }
+  | { kind: "pending_settlement" }
+  | { kind: "rejected" };
+
+/**
+ * Classifies a `GET /api/donate?session_id=...` payload for `/[lang]/membership`.
+ * Rejects non-200 responses, general `/support` donation sessions, and incomplete checkouts;
+ * separates settled (`payment_status === "paid"`) from async pending settlement (`status === "complete"`).
+ */
+export function classifyMembershipSessionResponse(
+  resOk: boolean,
+  data: Record<string, unknown> | null | undefined,
+): MembershipVerificationOutcome {
+  if (!resOk || !data || data.program !== "associate_membership") {
+    return { kind: "rejected" };
+  }
+
+  if (data.payment_status === "paid") {
+    return {
+      kind: "paid",
+      amount: typeof data.amount === "number" ? data.amount : null,
+      currency:
+        typeof data.currency === "string" && data.currency
+          ? data.currency
+          : "EUR",
+      admittedDate:
+        typeof data.created_date === "string" && data.created_date
+          ? data.created_date
+          : new Date().toISOString().slice(0, 10),
+    };
+  }
+
+  if (data.status === "complete") {
+    return { kind: "pending_settlement" };
+  }
+
+  return { kind: "rejected" };
 }

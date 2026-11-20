@@ -352,6 +352,135 @@ describe("stripe handlers", () => {
     expect(String(commitmentInsert?.values?.[14])).toContain("7200");
   });
 
+  it("preserves member_display_name and lu locale across checkout.session.completed and invoice.payment_succeeded even when customer.name is a company", async () => {
+    const tx = createMockTx();
+    const subMetadata = {
+      program: "associate_membership",
+      accounting_code: "7200",
+      billing_interval: "year",
+      member_display_name: "Dr. Claire Martin",
+      locale: "lu",
+    };
+
+    const checkoutEvent = {
+      id: "evt_lu_checkout",
+      type: "checkout.session.completed",
+      data: {
+        object: {
+          id: "cs_lu_1",
+          mode: "subscription",
+          payment_status: "paid",
+          status: "complete",
+          amount_total: 48000,
+          currency: "eur",
+          customer: "cus_corp_1",
+          customer_details: {
+            email: "claire@example.lu",
+            name: "ACME Holding S.A.",
+          },
+          subscription: {
+            id: "sub_lu_1",
+            customer: "cus_corp_1",
+            status: "active",
+            livemode: false,
+            current_period_start: 1720000000,
+            current_period_end: 1751536000,
+            cancel_at_period_end: false,
+            items: {
+              data: [
+                {
+                  price: {
+                    unit_amount: 48000,
+                    currency: "eur",
+                    recurring: { interval: "year", interval_count: 1 },
+                  },
+                },
+              ],
+            },
+            metadata: subMetadata,
+          },
+          metadata: subMetadata,
+          livemode: false,
+          created: 1720000000,
+          locale: "fr",
+        },
+      },
+    } as unknown as Stripe.Event;
+
+    await handleCheckoutSessionCompleted(baseContext(tx, checkoutEvent));
+
+    const invoiceStripe = {
+      subscriptions: {
+        retrieve: vi.fn(async () => ({
+          id: "sub_lu_1",
+          customer: "cus_corp_1",
+          status: "active",
+          livemode: false,
+          current_period_start: 1720000000,
+          current_period_end: 1751536000,
+          cancel_at_period_end: false,
+          items: {
+            data: [
+              {
+                price: {
+                  unit_amount: 48000,
+                  currency: "eur",
+                  recurring: { interval: "year", interval_count: 1 },
+                },
+              },
+            ],
+          },
+          metadata: subMetadata,
+        })),
+      },
+      customers: {
+        retrieve: vi.fn(async () => ({
+          id: "cus_corp_1",
+          email: "claire@example.lu",
+          name: "ACME Holding S.A.",
+          preferred_locales: ["fr"],
+          deleted: false,
+        })),
+      },
+      checkout: { sessions: { retrieve: vi.fn() } },
+    } as unknown as Stripe;
+
+    const invoiceEvent = {
+      id: "evt_lu_inv",
+      type: "invoice.payment_succeeded",
+      data: {
+        object: {
+          id: "in_lu_1",
+          currency: "eur",
+          amount_paid: 48000,
+          subscription: "sub_lu_1",
+          customer: "cus_corp_1",
+          billing_reason: "subscription_create",
+          created: 1720000000,
+          status_transitions: { paid_at: 1720000000 },
+        },
+      },
+    } as unknown as Stripe.Event;
+
+    const invCtx = baseContext(tx, invoiceEvent);
+    invCtx.stripe = invoiceStripe;
+    await handleInvoicePaymentSucceeded(invCtx);
+
+    const contactInserts = tx.calls.filter((c) =>
+      c.sql.includes("INSERT INTO clarvia.contacts"),
+    );
+    expect(contactInserts).toHaveLength(2);
+    for (const call of contactInserts) {
+      expect(call.values?.[1]).toBe("Dr. Claire Martin");
+      expect(call.values?.[2]).toBe("lu");
+    }
+
+    const sessionInsert = tx.calls.find((c) =>
+      c.sql.includes("INSERT INTO clarvia.stripe_checkout_sessions"),
+    );
+    expect(sessionInsert?.values?.[13]).toBe("lu");
+  });
+
   it("invoice.payment_succeeded propagates program and accounting_code=7200 from subscription metadata", async () => {
     const tx = createMockTx();
     const stripe = {

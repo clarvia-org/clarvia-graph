@@ -86,10 +86,18 @@ export async function processCheckoutSession(
       ? session.metadata.member_display_name.trim()
       : null;
 
+  const resolvedLocale = normalizeLocale(
+    (typeof session.metadata?.locale === "string"
+      ? session.metadata.locale
+      : undefined) ??
+      session.locale ??
+      undefined,
+  );
+
   const contactId = await upsertContact(ctx.tx, {
     email,
     displayName: metadataMemberName ?? session.customer_details?.name ?? null,
-    preferredLocale: normalizeLocale(session.locale ?? undefined),
+    preferredLocale: resolvedLocale,
   });
 
   if (contactId && stripeCustomerId) {
@@ -118,7 +126,7 @@ export async function processCheckoutSession(
       typeof session.metadata?.consent_text_version === "string"
         ? session.metadata.consent_text_version
         : null,
-    locale: normalizeLocale(session.locale ?? undefined),
+    locale: resolvedLocale,
     landingVariant:
       typeof session.metadata?.landing_variant === "string"
         ? session.metadata.landing_variant

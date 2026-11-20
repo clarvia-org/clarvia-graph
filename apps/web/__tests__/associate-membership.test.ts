@@ -1,6 +1,10 @@
+import fs from "node:fs";
+import path from "node:path";
 import { NextRequest } from "next/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import { CLARVIA_LINKEDIN_URL } from "@/components/LinkedInLink";
 import {
+  classifyMembershipSessionResponse,
   COHORT_ARCHETYPE_SLOTS,
   computeMemberInitials,
   getRemainingArchetypeSlots,
@@ -34,6 +38,9 @@ describe("associate-members helpers", () => {
     expect(
       normalizeLinkedInProfileUrl("https://lu.linkedin.com/in/claire-martin#experience"),
     ).toBe("https://www.linkedin.com/in/claire-martin");
+    expect(
+      normalizeLinkedInProfileUrl("HTTPS://www.linkedin.com/in/jane-doe"),
+    ).toBe("https://www.linkedin.com/in/jane-doe");
   });
 
   it("rejects company pages, non-LinkedIn domains, credentials, and malformed handles", () => {
@@ -69,6 +76,65 @@ describe("associate-members helpers", () => {
       COHORT_ARCHETYPE_SLOTS.length - 2,
     );
     expect(getRemainingArchetypeSlots(99)).toHaveLength(0);
+  });
+
+  it("classifies membership session verification strictly by program and settlement status", () => {
+    expect(
+      classifyMembershipSessionResponse(true, {
+        program: "associate_membership",
+        payment_status: "paid",
+        status: "complete",
+        amount: 480,
+        currency: "EUR",
+        created_date: "2026-11-20",
+      }),
+    ).toEqual({
+      kind: "paid",
+      amount: 480,
+      currency: "EUR",
+      admittedDate: "2026-11-20",
+    });
+
+    expect(
+      classifyMembershipSessionResponse(true, {
+        program: "associate_membership",
+        payment_status: "unpaid",
+        status: "complete",
+      }),
+    ).toEqual({ kind: "pending_settlement" });
+
+    // Rejects general /support donations even when paid
+    expect(
+      classifyMembershipSessionResponse(true, {
+        program: "donation",
+        payment_status: "paid",
+        status: "complete",
+      }),
+    ).toEqual({ kind: "rejected" });
+
+    // Rejects failed HTTP or missing payloads
+    expect(classifyMembershipSessionResponse(false, null)).toEqual({
+      kind: "rejected",
+    });
+  });
+
+  it("wires MembershipSuccessKit to canonical CLARVIA_LINKEDIN_URL", () => {
+    expect(CLARVIA_LINKEDIN_URL).toBe(
+      "https://www.linkedin.com/company/clarvia-org",
+    );
+    const kitSource = fs.readFileSync(
+      path.join(
+        __dirname,
+        "..",
+        "src",
+        "features",
+        "membership",
+        "MembershipSuccessKit.tsx",
+      ),
+      "utf8",
+    );
+    expect(kitSource).toContain("CLARVIA_LINKEDIN_URL");
+    expect(kitSource).not.toContain("linkedin.com/company/clarvia/");
   });
 });
 

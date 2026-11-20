@@ -1,7 +1,5 @@
 import { type Lang, l } from "@/lib/i18n";
 
-export const MEMBERSHIP_PENDING_STORAGE_KEY = "clarvia-membership-pending";
-
 export interface MembershipBenefitItem {
   id: string;
   icon: "linkedin" | "portrait" | "cohort" | "certificate" | "shield" | "globe";
