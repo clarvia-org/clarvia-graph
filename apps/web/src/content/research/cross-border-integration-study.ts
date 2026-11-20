@@ -4,6 +4,20 @@ import {
   type CorridorGuide,
 } from "@/content/corridor-guides";
 
+export const AUTHOR_TOMMI_ORCID = "0009-0002-2467-4045";
+export const AUTHOR_TOMMI_ORCID_URL =
+  "https://orcid.org/0009-0002-2467-4045";
+export const STUDY_AUTHORS_JSONLD = [
+  {
+    "@type": "Person",
+    "@id": "https://clarvia.org/#tommi-lindfors",
+    name: "Tommi Lindfors",
+    url: AUTHOR_TOMMI_ORCID_URL,
+    sameAs: AUTHOR_TOMMI_ORCID_URL,
+    affiliation: { "@id": "https://clarvia.org/#organization" },
+  },
+  { "@id": "https://clarvia.org/#organization" },
+] as const;
 export const STUDY_1_PUBLISHED_DATE = "2026-11-18";
 export const STUDY_1_VERIFY_SNAPSHOT = "November 2026";
 export const STUDY_1_CANONICAL_URL =

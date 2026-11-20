@@ -407,6 +407,8 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
         "@type"?: string;
         isBasedOn?: string;
         sameAs?: string | string[];
+        author?: Array<{ "@id"?: string; url?: string; sameAs?: string }>;
+        creator?: Array<{ "@id"?: string; url?: string; sameAs?: string }>;
       }>;
     };
     const articleNode = jsonLd["@graph"].find(
@@ -419,6 +421,14 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
     expect(articleNode?.sameAs).toEqual([
       "https://doi.org/10.5281/zenodo.24388599",
       "https://zenodo.org/records/24388599",
+    ]);
+    expect(articleNode?.author?.map((a) => a.sameAs ?? a["@id"])).toEqual([
+      "https://orcid.org/0009-0002-2467-4045",
+      "https://clarvia.org/#organization",
+    ]);
+    expect(datasetNode?.creator?.map((c) => c.url ?? c["@id"])).toEqual([
+      "https://orcid.org/0009-0002-2467-4045",
+      "https://clarvia.org/#organization",
     ]);
     expect(datasetNode?.isBasedOn).toBe("https://doi.org/10.5281/zenodo.24245341");
     expect(datasetNode?.sameAs).toEqual([
