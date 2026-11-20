@@ -1,7 +1,13 @@
 "use client";
 
-import Link from "next/link";
-import { type HTMLAttributes, useCallback, useEffect, useId, useRef } from "react";
+import {
+  type HTMLAttributes,
+  useCallback,
+  useEffect,
+  useId,
+  useMemo,
+  useRef,
+} from "react";
 import { headlineStyle } from "../../data";
 import type {
   AdvanceDirectiveRegime,
@@ -12,6 +18,17 @@ import type {
   IncapacityMandateRegime,
   MacroRegion,
 } from "@/content/research/advance-directives-incapacity-study";
+import {
+  AHD_META,
+  APOSTILLE_SHORT_LABEL,
+  CARER_META,
+  type CompactAdvanceDirectivesRow,
+  HCCH35_META,
+  MANDATE_META,
+  buildCompactRowSearchText,
+  expandCompactGuideHref,
+  toCompactAdvanceDirectivesRows,
+} from "./compact-atlas-rows";
 
 interface InvokerCommandEvent extends Event {
   command?: string;
@@ -100,12 +117,19 @@ function matchesCombinedFilter(
 }
 
 export default function AdvanceDirectivesAtlasTable({
+  compactRows,
   rows,
   regions,
 }: {
-  rows: readonly AdvanceDirectivesCountryRow[];
+  compactRows?: readonly CompactAdvanceDirectivesRow[];
+  rows?: readonly AdvanceDirectivesCountryRow[];
   regions: readonly MacroRegion[];
 }) {
+  const normalizedRows = useMemo(
+    () => compactRows ?? (rows ? toCompactAdvanceDirectivesRows(rows) : []),
+    [compactRows, rows],
+  );
+
   const baseId = useId();
   const tableId = `${baseId}-table`;
   const captionId = `${baseId}-caption`;
@@ -128,6 +152,10 @@ export default function AdvanceDirectivesAtlasTable({
   const regionRef = useRef<HTMLDivElement | null>(null);
   const statusRef = useRef<HTMLParagraphElement | null>(null);
   const lastAnnouncementRef = useRef("");
+  const searchIndexRef = useRef<{
+    rows: readonly CompactAdvanceDirectivesRow[];
+    map: Map<string, string>;
+  } | null>(null);
 
   const announce = useCallback((message: string) => {
     const status = statusRef.current;
@@ -149,12 +177,28 @@ export default function AdvanceDirectivesAtlasTable({
       const mandateVal = mandateSelectRef.current?.value ?? "all";
       const combinedVal = combinedSelectRef.current?.value ?? "all";
 
+      let searchMap: Map<string, string> | null = null;
+      if (query) {
+        if (
+          !searchIndexRef.current ||
+          searchIndexRef.current.rows !== normalizedRows
+        ) {
+          const map = new Map<string, string>();
+          for (const row of normalizedRows) {
+            map.set(row[0], buildCompactRowSearchText(row));
+          }
+          searchIndexRef.current = { rows: normalizedRows, map };
+        }
+        searchMap = searchIndexRef.current.map;
+      }
+
       const trs = Array.from(tbody.querySelectorAll("tr"));
       let visible = 0;
 
       for (const tr of trs) {
         const matchesQuery =
-          !query || (tr.dataset.search ?? "").includes(query);
+          !query ||
+          (searchMap?.get(tr.dataset.code ?? "") ?? "").includes(query);
         const matchesRegion =
           regionVal === "all" || tr.dataset.region === regionVal;
         const matchesAhd = ahdVal === "all" || tr.dataset.ahd === ahdVal;
@@ -173,7 +217,7 @@ export default function AdvanceDirectivesAtlasTable({
       }
 
       if (countRef.current) {
-        countRef.current.textContent = `Showing ${visible} of ${rows.length} countries`;
+        countRef.current.textContent = `Showing ${visible} of ${normalizedRows.length} countries`;
       }
       if (emptyRef.current) {
         emptyRef.current.hidden = visible > 0;
@@ -182,10 +226,10 @@ export default function AdvanceDirectivesAtlasTable({
         regionRef.current.hidden = visible === 0;
       }
       if (shouldAnnounce) {
-        announce(`Showing ${visible} of ${rows.length} countries`);
+        announce(`Showing ${visible} of ${normalizedRows.length} countries`);
       }
     },
-    [announce, rows.length],
+    [announce, normalizedRows],
   );
 
   const handleReset = useCallback(() => {
@@ -199,6 +243,20 @@ export default function AdvanceDirectivesAtlasTable({
   }, [applyFilters]);
 
   useEffect(() => {
+    const query = (queryRef.current?.value ?? "").trim();
+    const regionVal = regionSelectRef.current?.value ?? "all";
+    const ahdVal = ahdSelectRef.current?.value ?? "all";
+    const mandateVal = mandateSelectRef.current?.value ?? "all";
+    const combinedVal = combinedSelectRef.current?.value ?? "all";
+    if (
+      !query &&
+      regionVal === "all" &&
+      ahdVal === "all" &&
+      mandateVal === "all" &&
+      combinedVal === "all"
+    ) {
+      return;
+    }
     applyFilters(false);
   }, [applyFilters]);
 
@@ -345,17 +403,48 @@ export default function AdvanceDirectivesAtlasTable({
     { label: "Hague Apostille", type: "text", defaultOrder: "ascending" },
   ];
 
-  const countAhd = (r: AdvanceDirectiveRegime) =>
-    rows.filter((x) => x.advanceDirectiveRegime === r).length;
-  const countMandate = (r: IncapacityMandateRegime) =>
-    rows.filter((x) => x.incapacityMandateRegime === r).length;
-  const countCarer = (r: CaregiverProtectionRegime) =>
-    rows.filter((x) => x.caregiverProtectionRegime === r).length;
-  const countHcch35 = (s: Hcch35Status) =>
-    rows.filter((x) => x.hcch35Status === s).length;
+  const ahdCounts: Record<AdvanceDirectiveRegime, number> = {
+    statute_with_national_register: 0,
+    binding_statute_local_or_subnational: 0,
+    patients_rights_or_clinical_framework: 0,
+    general_consent_or_family_consultation: 0,
+  };
+  const mandateCounts: Record<IncapacityMandateRegime, number> = {
+    continuing_or_lasting_poa: 0,
+    advance_guardian_or_support_designation: 0,
+    ordinary_poa_court_guardianship: 0,
+  };
+  const carerCounts: Record<CaregiverProtectionRegime, number> = {
+    paid_caregiver_or_palliative_leave: 0,
+    carer_allowance_or_job_protected_leave: 0,
+    patient_sick_or_invalidity_only: 0,
+  };
+  const hcch35Counts: Record<Hcch35Status, number> = {
+    in_force_nationwide: 0,
+    in_force_scotland_only: 0,
+    acceded_eif_aug_2027: 0,
+    signed_not_ratified: 0,
+    non_party: 0,
+  };
+  const regionCounts = new Map<string, number>();
+
+  for (const row of normalizedRows) {
+    ahdCounts[row[4]] += 1;
+    mandateCounts[row[6]] += 1;
+    carerCounts[row[8]] += 1;
+    hcch35Counts[row[9]] += 1;
+    regionCounts.set(row[2], (regionCounts.get(row[2]) ?? 0) + 1);
+  }
 
   return (
-    <section aria-labelledby={headingId} className="mb-14">
+    <section
+      aria-labelledby={headingId}
+      className="mb-14"
+      style={{
+        contentVisibility: "auto",
+        containIntrinsicSize: "auto none auto 240rem",
+      }}
+    >
       <div className="max-w-3xl mb-5">
         <h2
           id={headingId}
@@ -408,10 +497,10 @@ export default function AdvanceDirectivesAtlasTable({
             onChange={() => applyFilters(true)}
             className="w-full min-h-11 rounded-lg border border-calm-blue-200 bg-white px-3 py-2 text-sm text-calm-blue-800 focus-visible:outline-2 focus-visible:outline-calm-blue-500"
           >
-            <option value="all">All {rows.length} countries</option>
+            <option value="all">All {normalizedRows.length} countries</option>
             {regions.map((region) => (
               <option key={region} value={region}>
-                {region} ({rows.filter((r) => r.macroRegion === region).length})
+                {region} ({regionCounts.get(region) ?? 0})
               </option>
             ))}
           </select>
@@ -434,19 +523,19 @@ export default function AdvanceDirectivesAtlasTable({
             <option value="all">All 4 directive models</option>
             <option value="statute_with_national_register">
               Statute + national registry (
-              {countAhd("statute_with_national_register")})
+              {ahdCounts.statute_with_national_register})
             </option>
             <option value="binding_statute_local_or_subnational">
               Binding statute, local/state (
-              {countAhd("binding_statute_local_or_subnational")})
+              {ahdCounts.binding_statute_local_or_subnational})
             </option>
             <option value="patients_rights_or_clinical_framework">
               Patients&apos; rights / clinical (
-              {countAhd("patients_rights_or_clinical_framework")})
+              {ahdCounts.patients_rights_or_clinical_framework})
             </option>
             <option value="general_consent_or_family_consultation">
               Consent &amp; family consult (
-              {countAhd("general_consent_or_family_consultation")})
+              {ahdCounts.general_consent_or_family_consultation})
             </option>
           </select>
         </div>
@@ -467,14 +556,16 @@ export default function AdvanceDirectivesAtlasTable({
           >
             <option value="all">All mandate models</option>
             <option value="continuing_or_lasting_poa">
-              Continuing / lasting PoA ({countMandate("continuing_or_lasting_poa")})
+              Continuing / lasting PoA ({mandateCounts.continuing_or_lasting_poa}
+              )
             </option>
             <option value="advance_guardian_or_support_designation">
               Voluntary guardian / support (
-              {countMandate("advance_guardian_or_support_designation")})
+              {mandateCounts.advance_guardian_or_support_designation})
             </option>
             <option value="ordinary_poa_court_guardianship">
-              Ordinary PoA lapses ({countMandate("ordinary_poa_court_guardianship")})
+              Ordinary PoA lapses ({mandateCounts.ordinary_poa_court_guardianship}
+              )
             </option>
           </select>
         </div>
@@ -496,30 +587,32 @@ export default function AdvanceDirectivesAtlasTable({
             <option value="all">All carer &amp; treaty tiers</option>
             <option value="carer:paid_caregiver_or_palliative_leave">
               Carer: Paid caregiver leave (
-              {countCarer("paid_caregiver_or_palliative_leave")})
+              {carerCounts.paid_caregiver_or_palliative_leave})
             </option>
             <option value="carer:carer_allowance_or_job_protected_leave">
               Carer: Allowance / protected leave (
-              {countCarer("carer_allowance_or_job_protected_leave")})
+              {carerCounts.carer_allowance_or_job_protected_leave})
             </option>
             <option value="carer:patient_sick_or_invalidity_only">
               Carer: Patient sick/invalidity only (
-              {countCarer("patient_sick_or_invalidity_only")})
+              {carerCounts.patient_sick_or_invalidity_only})
             </option>
             <option value="hcch35:in_force_nationwide">
-              HCCH #35: Nationwide in force ({countHcch35("in_force_nationwide")})
+              HCCH #35: Nationwide in force ({hcch35Counts.in_force_nationwide})
             </option>
             <option value="hcch35:in_force_scotland_only">
-              HCCH #35: UK Scotland only ({countHcch35("in_force_scotland_only")})
+              HCCH #35: UK Scotland only ({hcch35Counts.in_force_scotland_only})
             </option>
             <option value="hcch35:acceded_eif_aug_2027">
-              HCCH #35: Montenegro Aug 2027 ({countHcch35("acceded_eif_aug_2027")})
+              HCCH #35: Montenegro Aug 2027 ({hcch35Counts.acceded_eif_aug_2027}
+              )
             </option>
             <option value="hcch35:signed_not_ratified">
-              HCCH #35: Signed, not ratified ({countHcch35("signed_not_ratified")})
+              HCCH #35: Signed, not ratified ({hcch35Counts.signed_not_ratified}
+              )
             </option>
             <option value="hcch35:non_party">
-              HCCH #35: Non-party ({countHcch35("non_party")})
+              HCCH #35: Non-party ({hcch35Counts.non_party})
             </option>
             <option value="apostille:in_force_2026">
               HCCH #12: Apostille in force
@@ -565,7 +658,8 @@ export default function AdvanceDirectivesAtlasTable({
               Portability Atlas (November 2026):{" "}
             </span>
             <span ref={countRef} className="font-normal text-calm-blue-600">
-              Showing {rows.length} of {rows.length} countries
+              Showing {normalizedRows.length} of {normalizedRows.length}{" "}
+              countries
             </span>
           </caption>
           <thead className="sticky top-0 z-10 bg-calm-blue-50 border-b border-calm-blue-200 text-calm-blue-800">
@@ -604,101 +698,129 @@ export default function AdvanceDirectivesAtlasTable({
             </tr>
           </thead>
           <tbody ref={tbodyRef}>
-            {rows.map((row) => (
-              <tr
-                key={row.id}
-                data-region={row.macroRegion}
-                data-ahd={row.advanceDirectiveRegime}
-                data-mandate={row.incapacityMandateRegime}
-                data-carer={row.caregiverProtectionRegime}
-                data-hcch35={row.hcch35Status}
-                data-apostille={row.apostilleStatus}
-                data-search={row.searchText}
-                className="hover:bg-calm-blue-50/50 transition-colors"
-              >
-                <th
-                  scope="row"
-                  data-sort-value={row.countryName}
-                  className="md:sticky md:left-0 bg-white px-3 py-3 align-top font-normal text-calm-blue-800 min-w-[13rem] border-b border-calm-blue-100"
-                >
-                  <Link
-                    href={row.guideHref}
-                    className="font-semibold text-calm-blue-800 underline decoration-calm-blue-300 hover:decoration-calm-blue-700 hover:text-calm-blue-900"
+            {normalizedRows.map(
+              ([
+                countryCode,
+                countryName,
+                macroRegion,
+                guideSlugSuffix,
+                ahdRegime,
+                ahdCustomSummary,
+                mandateRegime,
+                mandateCustomSummary,
+                carerRegime,
+                hcch35Status,
+                apostilleStatus,
+                verifiedSourcesCount,
+                primarySourceUrl,
+              ]) => {
+                const ahdInfo = AHD_META[ahdRegime];
+                const mandateInfo = MANDATE_META[mandateRegime];
+                const carerInfo = CARER_META[carerRegime];
+                const hcch35Info = HCCH35_META[hcch35Status];
+                const ahdSummary = ahdCustomSummary || ahdInfo.defaultSummary;
+                const mandateSummary =
+                  mandateCustomSummary || mandateInfo.defaultSummary;
+                const apostilleLabel = APOSTILLE_SHORT_LABEL[apostilleStatus];
+                const guideHref = expandCompactGuideHref(guideSlugSuffix);
+
+                return (
+                  <tr
+                    key={countryCode}
+                    data-code={countryCode}
+                    data-region={macroRegion}
+                    data-ahd={ahdRegime}
+                    data-mandate={mandateRegime}
+                    data-carer={carerRegime}
+                    data-hcch35={hcch35Status}
+                    data-apostille={apostilleStatus}
+                    className="hover:bg-calm-blue-50/50 transition-colors"
                   >
-                    {row.countryName}
-                  </Link>
-                  <div className="text-[11px] text-calm-blue-500 mt-0.5 tabular-nums">
-                    {row.countryCode} · {row.macroRegion}
-                  </div>
-                  <div className="text-[11px] text-calm-blue-600 mt-0.5">
-                    <a
-                      href={row.primarySourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline hover:text-calm-blue-900"
+                    <th
+                      scope="row"
+                      data-sort-value={countryName}
+                      className="md:sticky md:left-0 bg-white px-3 py-3 align-top font-normal text-calm-blue-800 min-w-[13rem] border-b border-calm-blue-100"
                     >
-                      Primary authority ({row.verifiedSourcesCount} sources)
-                    </a>
-                  </div>
-                </th>
-                <td
-                  data-value={row.advanceDirectiveRank}
-                  className="px-3 py-3 align-top text-calm-blue-800 min-w-[14rem] border-b border-calm-blue-100"
-                >
-                  <span
-                    className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${AHD_BADGE_CLASS(row.advanceDirectiveRegime)}`}
-                  >
-                    {row.advanceDirectiveLabel}
-                  </span>
-                  <div className="text-[11px] text-calm-blue-600 mt-1 leading-snug">
-                    {row.advanceDirectiveSummary}
-                  </div>
-                </td>
-                <td
-                  data-value={row.incapacityMandateRank}
-                  className="px-3 py-3 align-top text-calm-blue-800 min-w-[14rem] border-b border-calm-blue-100"
-                >
-                  <span
-                    className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${MANDATE_BADGE_CLASS(row.incapacityMandateRegime)}`}
-                  >
-                    {row.incapacityMandateLabel}
-                  </span>
-                  <div className="text-[11px] text-calm-blue-600 mt-1 leading-snug">
-                    {row.incapacityMandateSummary}
-                  </div>
-                </td>
-                <td
-                  data-value={row.caregiverProtectionRank}
-                  className="px-3 py-3 align-top text-calm-blue-700 min-w-[11rem] border-b border-calm-blue-100"
-                >
-                  <span
-                    className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${CAREGIVER_BADGE_CLASS(row.caregiverProtectionRegime)}`}
-                  >
-                    {row.caregiverProtectionLabel}
-                  </span>
-                </td>
-                <td
-                  data-value={row.hcch35Rank}
-                  className="px-3 py-3 align-top text-calm-blue-700 min-w-[10rem] border-b border-calm-blue-100 whitespace-nowrap"
-                >
-                  <span
-                    className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${HCCH35_BADGE_CLASS(row.hcch35Status)}`}
-                  >
-                    {row.hcch35StatusLabel}
-                  </span>
-                </td>
-                <td
-                  data-sort-value={row.apostilleStatusLabel}
-                  className="px-3 py-3 align-top text-calm-blue-700 min-w-[9.5rem] border-b border-calm-blue-100 whitespace-nowrap"
-                >
-                  <span
-                    className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${APOSTILLE_BADGE_CLASS(row.apostilleStatus)}`}
-                  >
-                    {row.apostilleStatusLabel}
-                  </span>
-                </td>
-              </tr>
-            ))}
+                      <a
+                        href={guideHref}
+                        className="font-semibold text-calm-blue-800 underline decoration-calm-blue-300 hover:decoration-calm-blue-700 hover:text-calm-blue-900"
+                      >
+                        {countryName}
+                      </a>
+                      <div className="text-[11px] text-calm-blue-500 mt-0.5 tabular-nums">
+                        {countryCode} · {macroRegion}
+                      </div>
+                      <div className="text-[11px] text-calm-blue-600 mt-0.5">
+                        <a
+                          href={primarySourceUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-calm-blue-900"
+                        >
+                          Primary authority ({verifiedSourcesCount} sources)
+                        </a>
+                      </div>
+                    </th>
+                    <td
+                      data-value={ahdInfo.rank}
+                      className="px-3 py-3 align-top text-calm-blue-800 min-w-[14rem] border-b border-calm-blue-100"
+                    >
+                      <span
+                        className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${AHD_BADGE_CLASS(ahdRegime)}`}
+                      >
+                        {ahdInfo.shortLabel}
+                      </span>
+                      <div className="text-[11px] text-calm-blue-600 mt-1 leading-snug">
+                        {ahdSummary}
+                      </div>
+                    </td>
+                    <td
+                      data-value={mandateInfo.rank}
+                      className="px-3 py-3 align-top text-calm-blue-800 min-w-[14rem] border-b border-calm-blue-100"
+                    >
+                      <span
+                        className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${MANDATE_BADGE_CLASS(mandateRegime)}`}
+                      >
+                        {mandateInfo.shortLabel}
+                      </span>
+                      <div className="text-[11px] text-calm-blue-600 mt-1 leading-snug">
+                        {mandateSummary}
+                      </div>
+                    </td>
+                    <td
+                      data-value={carerInfo.rank}
+                      className="px-3 py-3 align-top text-calm-blue-700 min-w-[11rem] border-b border-calm-blue-100"
+                    >
+                      <span
+                        className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${CAREGIVER_BADGE_CLASS(carerRegime)}`}
+                      >
+                        {carerInfo.shortLabel}
+                      </span>
+                    </td>
+                    <td
+                      data-value={hcch35Info.rank}
+                      className="px-3 py-3 align-top text-calm-blue-700 min-w-[10rem] border-b border-calm-blue-100 whitespace-nowrap"
+                    >
+                      <span
+                        className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${HCCH35_BADGE_CLASS(hcch35Status)}`}
+                      >
+                        {hcch35Info.shortLabel}
+                      </span>
+                    </td>
+                    <td
+                      data-sort-value={apostilleLabel}
+                      className="px-3 py-3 align-top text-calm-blue-700 min-w-[9.5rem] border-b border-calm-blue-100 whitespace-nowrap"
+                    >
+                      <span
+                        className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[11px] font-semibold ${APOSTILLE_BADGE_CLASS(apostilleStatus)}`}
+                      >
+                        {apostilleLabel}
+                      </span>
+                    </td>
+                  </tr>
+                );
+              },
+            )}
           </tbody>
         </table>
       </div>
@@ -716,7 +838,7 @@ export default function AdvanceDirectivesAtlasTable({
         >
           Reset filters
         </button>{" "}
-        to restore all {rows.length} countries.
+        to restore all {normalizedRows.length} countries.
       </p>
 
       <p ref={statusRef} role="status" className="sr-only" />

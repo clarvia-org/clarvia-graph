@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { type HTMLAttributes, useCallback, useEffect, useId, useRef } from "react";
 import { headlineStyle } from "../../data";
 import type {
@@ -160,6 +159,20 @@ export default function CountryRegistrationAtlasTable({
   }, [applyFilters]);
 
   useEffect(() => {
+    const query = (queryRef.current?.value ?? "").trim();
+    const regionVal = regionSelectRef.current?.value ?? "all";
+    const windowVal = windowSelectRef.current?.value ?? "all";
+    const propVal = propSelectRef.current?.value ?? "all";
+    const legalVal = legalSelectRef.current?.value ?? "all";
+    if (
+      !query &&
+      regionVal === "all" &&
+      windowVal === "all" &&
+      propVal === "all" &&
+      legalVal === "all"
+    ) {
+      return;
+    }
     applyFilters(false);
   }, [applyFilters]);
 
@@ -307,7 +320,14 @@ export default function CountryRegistrationAtlasTable({
   ];
 
   return (
-    <section aria-labelledby={headingId} className="mb-14">
+    <section
+      aria-labelledby={headingId}
+      className="mb-14"
+      style={{
+        contentVisibility: "auto",
+        containIntrinsicSize: "auto none auto 220rem",
+      }}
+    >
       <div className="max-w-3xl mb-5">
         <h2
           id={headingId}
@@ -564,12 +584,12 @@ export default function CountryRegistrationAtlasTable({
                   data-sort-value={row.countryName}
                   className="md:sticky md:left-0 bg-white px-3 py-3 align-top font-normal text-calm-blue-800 min-w-[13rem] border-b border-calm-blue-100"
                 >
-                  <Link
+                  <a
                     href={row.guideHref}
                     className="font-semibold text-calm-blue-800 underline decoration-calm-blue-300 hover:decoration-calm-blue-700 hover:text-calm-blue-900"
                   >
                     {row.countryName}
-                  </Link>
+                  </a>
                   <div className="text-[11px] text-calm-blue-500 mt-0.5 tabular-nums">
                     {row.countryCode} · {row.macroRegion}
                   </div>

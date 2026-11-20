@@ -6,6 +6,7 @@ import FooterSection from "../../sections/FooterSection";
 import { headlineStyle } from "../../data";
 import GuideShareLinkBox from "../../guide/[slug]/GuideShareLinkBox";
 import AdvanceDirectivesAtlasTable from "./AdvanceDirectivesAtlasTable";
+import { toCompactAdvanceDirectivesRows } from "./compact-atlas-rows";
 import {
   CORPUS_STATS,
   GITHUB_STUDY_3_SOURCE_URL,
@@ -922,7 +923,7 @@ export default async function GlobalAdvanceDirectivesIncapacityMandatesAtlasPage
 
         {/* Interactive 196-Country Atlas Table */}
         <AdvanceDirectivesAtlasTable
-          rows={study.rows}
+          compactRows={toCompactAdvanceDirectivesRows(study.rows)}
           regions={MACRO_REGION_ORDER}
         />
 

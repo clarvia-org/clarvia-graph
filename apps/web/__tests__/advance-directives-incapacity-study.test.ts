@@ -4,6 +4,10 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import AdvanceDirectivesAtlasTable from "@/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/AdvanceDirectivesAtlasTable";
+import {
+  buildCompactRowSearchText,
+  toCompactAdvanceDirectivesRows,
+} from "@/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/compact-atlas-rows";
 import Study3Page, {
   generateMetadata as generateStudy3Metadata,
 } from "@/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/page";
@@ -273,6 +277,35 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
       expect(html).toContain(`href="${row.guideHref}"`);
     }
     expect(html).not.toContain("—");
+
+    const compact = toCompactAdvanceDirectivesRows(study.rows);
+    expect(compact).toHaveLength(study.rows.length);
+    for (let i = 0; i < study.rows.length; i += 1) {
+      expect(buildCompactRowSearchText(compact[i]!)).toBe(
+        study.rows[i]!.searchText,
+      );
+    }
+
+    for (const q of [
+      "lpa",
+      "amd",
+      "dss",
+      "authority",
+      "primary authority",
+      "germany de",
+      "non-party consular",
+      "statute + national registry binding",
+    ]) {
+      const expectedCodes = study.rows
+        .filter((r) => r.searchText.includes(q))
+        .map((r) => r.countryCode);
+      const compactCodes = compact
+        .filter((row) => buildCompactRowSearchText(row).includes(q))
+        .map((row) => row[0]);
+      expect(compactCodes, `Compact search mismatch for "${q}"`).toEqual(
+        expectedCodes,
+      );
+    }
   });
 
   it("keeps public downloadable CSV and JSON exports byte-for-byte synced and free of em-dashes", () => {
@@ -322,6 +355,7 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
       "src/app/[lang]/research/page.tsx",
       "src/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/page.tsx",
       "src/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/AdvanceDirectivesAtlasTable.tsx",
+      "src/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/compact-atlas-rows.ts",
     ]) {
       const content = fs.readFileSync(
         path.join(__dirname, "..", relPath),
