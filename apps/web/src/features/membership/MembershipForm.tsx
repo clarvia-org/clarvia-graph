@@ -183,7 +183,7 @@ function MembershipFormInner({
 
       const data = await res.json();
       if (res.ok && data.url) {
-        trackBeginCheckout({
+        await trackBeginCheckout({
           value: amount,
           currency: "EUR",
           frequency,

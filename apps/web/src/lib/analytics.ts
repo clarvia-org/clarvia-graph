@@ -12,6 +12,7 @@ export const DEFAULT_ADS_MEMBERSHIP_PAID_CONVERSION =
   "AW-18472344537/zv56CIq4pbwdENm3puhE";
 export const DEFAULT_ADS_MEMBERSHIP_CHECKOUT_CONVERSION =
   "AW-18472344537/oxOBCPrwq7wdENm3puhE";
+export const CHECKOUT_BEACON_TIMEOUT_MS = 350;
 
 export function sanitizeAdsId(raw: string | undefined | null): string | undefined {
   const id = raw?.trim();
@@ -133,26 +134,76 @@ export function trackBeginCheckout(params: {
   frequency: "monthly" | "annual" | "onetime";
   landing_variant?: string;
   item_category?: "donation" | "associate_membership";
-}): void {
+}): Promise<void> {
   const currency = (params.currency || "EUR").toUpperCase();
-  trackEvent("begin_checkout", {
+  const baseCheckoutParams = {
     currency,
     value: params.value,
     item_category: params.item_category || "donation",
     frequency: params.frequency,
     landing_variant: params.landing_variant,
-  });
+    transport_type: "beacon",
+  };
   // Scope Ads checkout ping strictly to Associate Membership so donation flows stay isolated.
-  if (params.item_category === "associate_membership") {
-    const sendTo = adsMembershipCheckoutConversionSendTo();
+  const sendTo =
+    params.item_category === "associate_membership"
+      ? adsMembershipCheckoutConversionSendTo()
+      : undefined;
+  const hasLiveGtag =
+    typeof window !== "undefined" && typeof window.gtag === "function";
+
+  if (!hasLiveGtag) {
+    trackEvent("begin_checkout", baseCheckoutParams);
     if (sendTo) {
       trackEvent("conversion", {
         send_to: sendTo,
         value: params.value,
         currency,
+        transport_type: "beacon",
       });
     }
+    return Promise.resolve();
   }
+
+  return new Promise<void>((resolve) => {
+    let settled = false;
+    let remaining = sendTo ? 2 : 1;
+
+    const finish = () => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      resolve();
+    };
+
+    const timer = setTimeout(finish, CHECKOUT_BEACON_TIMEOUT_MS);
+
+    const makeStepCallback = () => {
+      let stepDone = false;
+      return () => {
+        if (stepDone || settled) return;
+        stepDone = true;
+        remaining -= 1;
+        if (remaining <= 0) finish();
+      };
+    };
+
+    trackEvent("begin_checkout", {
+      ...baseCheckoutParams,
+      event_callback: makeStepCallback(),
+      event_timeout: CHECKOUT_BEACON_TIMEOUT_MS,
+    });
+    if (sendTo) {
+      trackEvent("conversion", {
+        send_to: sendTo,
+        value: params.value,
+        currency,
+        transport_type: "beacon",
+        event_callback: makeStepCallback(),
+        event_timeout: CHECKOUT_BEACON_TIMEOUT_MS,
+      });
+    }
+  });
 }
 
 export function trackDonationComplete(params: {
