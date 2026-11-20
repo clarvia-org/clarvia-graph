@@ -14,6 +14,7 @@ import {
   STUDY_1_CANONICAL_URL,
   STUDY_1_CSV_PATH,
   STUDY_1_JSON_PATH,
+  STUDY_1_PDF_PATH,
   STUDY_1_PUBLISHED_DATE,
   ZENODO_RECORD_URL,
   ZENODO_SOFTWARE_DOI,
@@ -25,6 +26,7 @@ import {
   STUDY_2_CANONICAL_URL,
   STUDY_2_CSV_PATH,
   STUDY_2_JSON_PATH,
+  STUDY_2_PDF_PATH,
   STUDY_2_PUBLISHED_DATE,
   getPostDeathCivilRegistrationStudy,
 } from "@/content/research/post-death-civil-registration-study";
@@ -32,6 +34,7 @@ import {
   STUDY_3_CANONICAL_URL,
   STUDY_3_CSV_PATH,
   STUDY_3_JSON_PATH,
+  STUDY_3_PDF_PATH,
   STUDY_3_PUBLISHED_DATE,
   getAdvanceDirectivesIncapacityStudy,
 } from "@/content/research/advance-directives-incapacity-study";
@@ -269,8 +272,17 @@ export default async function ResearchHubPage({
                 Read report &amp; inspect all 200 corridors
               </Link>
               <a
+                href={STUDY_1_PDF_PATH}
+                download
+                aria-label="Download PDF: Cross-Border Bereavement and Serious Illness Integration Index (2026)"
+                className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
+              >
+                Download PDF
+              </a>
+              <a
                 href={STUDY_1_CSV_PATH}
                 download
+                aria-label="Download CSV: Cross-Border Bereavement and Serious Illness Integration Index (2026)"
                 className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
               >
                 Download CSV
@@ -278,6 +290,7 @@ export default async function ResearchHubPage({
               <a
                 href={STUDY_1_JSON_PATH}
                 download
+                aria-label="Download JSON: Cross-Border Bereavement and Serious Illness Integration Index (2026)"
                 className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
               >
                 Download JSON
@@ -372,8 +385,17 @@ export default async function ResearchHubPage({
                 Read report &amp; inspect all 196 countries
               </Link>
               <a
+                href={STUDY_2_PDF_PATH}
+                download
+                aria-label="Download PDF: Global Post-Death Civil Registration and Estate Administration Atlas (2026)"
+                className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
+              >
+                Download PDF
+              </a>
+              <a
                 href={STUDY_2_CSV_PATH}
                 download
+                aria-label="Download CSV: Global Post-Death Civil Registration and Estate Administration Atlas (2026)"
                 className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
               >
                 Download CSV
@@ -381,6 +403,7 @@ export default async function ResearchHubPage({
               <a
                 href={STUDY_2_JSON_PATH}
                 download
+                aria-label="Download JSON: Global Post-Death Civil Registration and Estate Administration Atlas (2026)"
                 className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
               >
                 Download JSON
@@ -477,8 +500,17 @@ export default async function ResearchHubPage({
                 Read report &amp; inspect all 196 countries
               </Link>
               <a
+                href={STUDY_3_PDF_PATH}
+                download
+                aria-label="Download PDF: Global Atlas of Advance Directives, Incapacity Mandates and Cross-Border Portability (2026)"
+                className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
+              >
+                Download PDF
+              </a>
+              <a
                 href={STUDY_3_CSV_PATH}
                 download
+                aria-label="Download CSV: Global Atlas of Advance Directives, Incapacity Mandates and Cross-Border Portability (2026)"
                 className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
               >
                 Download CSV
@@ -486,6 +518,7 @@ export default async function ResearchHubPage({
               <a
                 href={STUDY_3_JSON_PATH}
                 download
+                aria-label="Download JSON: Global Atlas of Advance Directives, Incapacity Mandates and Cross-Border Portability (2026)"
                 className="btn-secondary px-4 py-3 text-sm inline-flex items-center"
               >
                 Download JSON

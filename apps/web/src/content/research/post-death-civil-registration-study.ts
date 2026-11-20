@@ -38,6 +38,8 @@ export const STUDY_2_CSV_PATH =
   "/data/research/global-post-death-civil-registration-2026.csv";
 export const STUDY_2_JSON_PATH =
   "/data/research/global-post-death-civil-registration-2026.json";
+export const STUDY_2_PDF_PATH =
+  "/data/research/global-post-death-civil-registration-2026.pdf";
 export const GITHUB_STUDY_2_SOURCE_URL =
   "https://github.com/clarvia-org/clarvia-graph/blob/main/apps/web/src/content/research/post-death-civil-registration-study.ts";
 

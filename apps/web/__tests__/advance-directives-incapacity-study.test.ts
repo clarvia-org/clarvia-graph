@@ -4,6 +4,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import AdvanceDirectivesAtlasTable from "@/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/AdvanceDirectivesAtlasTable";
+import { generateMetadata as generateStudy3Metadata } from "@/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/page";
 import {
   allCorridorGuides,
   getCorridorGuideBySlug,
@@ -328,5 +329,33 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
     }
     expect(diskCsv).not.toContain("—");
     expect(diskJson).not.toContain("—");
+  });
+
+  it("publishes valid PDF working paper and Highwire Press scholar metadata", async () => {
+    const pdfPath = path.join(
+      __dirname,
+      "..",
+      "public",
+      "data",
+      "research",
+      "global-advance-directives-incapacity-mandates-2026.pdf",
+    );
+    const bytes = fs.readFileSync(pdfPath);
+    expect(bytes.subarray(0, 5).toString("ascii")).toBe("%PDF-");
+    expect(bytes.byteLength).toBeGreaterThan(50_000);
+
+    const meta = await generateStudy3Metadata({
+      params: Promise.resolve({ lang: "en" }),
+    });
+    expect(meta.other?.citation_title).toBe(
+      "Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border Portability (2026)",
+    );
+    expect(meta.other?.citation_pdf_url).toBe(
+      "https://clarvia.org/data/research/global-advance-directives-incapacity-mandates-2026.pdf",
+    );
+    expect(meta.other?.citation_author).toEqual([
+      "Tommi Lindfors",
+      "Clarvia ASBL",
+    ]);
   });
 });

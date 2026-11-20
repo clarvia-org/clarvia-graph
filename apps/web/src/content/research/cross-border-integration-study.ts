@@ -12,6 +12,8 @@ export const STUDY_1_CSV_PATH =
   "/data/research/cross-border-integration-index-2026.csv";
 export const STUDY_1_JSON_PATH =
   "/data/research/cross-border-integration-index-2026.json";
+export const STUDY_1_PDF_PATH =
+  "/data/research/cross-border-integration-index-2026.pdf";
 export const ZENODO_STUDY_CORPUS_DOI = "10.5281/zenodo.24245341";
 export const ZENODO_STUDY_CORPUS_DOI_URL =
   "https://doi.org/10.5281/zenodo.24245341";

@@ -49,6 +49,8 @@ export const STUDY_3_CSV_PATH =
   "/data/research/global-advance-directives-incapacity-mandates-2026.csv";
 export const STUDY_3_JSON_PATH =
   "/data/research/global-advance-directives-incapacity-mandates-2026.json";
+export const STUDY_3_PDF_PATH =
+  "/data/research/global-advance-directives-incapacity-mandates-2026.pdf";
 export const GITHUB_STUDY_3_SOURCE_URL =
   "https://github.com/clarvia-org/clarvia-graph/blob/main/apps/web/src/content/research/advance-directives-incapacity-study.ts";
 
