@@ -215,57 +215,16 @@ describe("Google Ads / GA4 helpers", () => {
           item_category: "associate_membership",
           frequency: "monthly",
           landing_variant: "membership",
-          transport_type: "beacon",
-          event_callback: expect.any(Function),
-          event_timeout: CHECKOUT_BEACON_TIMEOUT_MS,
         })
       );
-      expect(gtag).toHaveBeenCalledWith(
-        "event",
-        "conversion",
-        expect.objectContaining({
-          send_to: DEFAULT_ADS_MEMBERSHIP_CHECKOUT_CONVERSION,
-          value: 40,
-          currency: "EUR",
-          transport_type: "beacon",
-          event_callback: expect.any(Function),
-          event_timeout: CHECKOUT_BEACON_TIMEOUT_MS,
-        })
-      );
+      expect(gtag).toHaveBeenCalledWith("event", "conversion", {
+        send_to: DEFAULT_ADS_MEMBERSHIP_CHECKOUT_CONVERSION,
+        value: 40,
+        currency: "EUR",
+      });
     });
 
-    it("resolves trackBeginCheckout immediately once both event_callbacks fire (ignoring duplicate invocations)", async () => {
-      const callbacks: Array<() => void> = [];
-      const customGtag = vi.fn((...args: unknown[]) => {
-        const params = args[2] as Record<string, unknown> | undefined;
-        if (typeof params?.event_callback === "function") {
-          callbacks.push(params.event_callback as () => void);
-        }
-      });
-      installWindow(customGtag);
-
-      let resolved = false;
-      const pending = trackBeginCheckout({
-        value: 480,
-        frequency: "annual",
-        landing_variant: "membership",
-        item_category: "associate_membership",
-      }).then(() => {
-        resolved = true;
-      });
-
-      expect(callbacks).toHaveLength(2);
-      callbacks[0]();
-      callbacks[0]();
-      await Promise.resolve();
-      expect(resolved).toBe(false);
-
-      callbacks[1]();
-      await pending;
-      expect(resolved).toBe(true);
-    });
-
-    it("resolves trackBeginCheckout via timeout fallback or immediately when window.gtag is absent", async () => {
+    it("waits CHECKOUT_BEACON_TIMEOUT_MS when window.gtag is present and resolves immediately when absent", async () => {
       vi.useFakeTimers();
       let timedOutResolved = false;
       const pending = trackBeginCheckout({
