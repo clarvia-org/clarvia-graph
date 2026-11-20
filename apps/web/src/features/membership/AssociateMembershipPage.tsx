@@ -110,21 +110,19 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
         id="main-content"
         className="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 relative z-10"
       >
-        {/* Post-checkout confirmation + printable certificate + LinkedIn ambassador kit */}
         <MembershipSuccessKit lang={lang} />
 
-        {/* Two-column layout (no-print during certificate printing) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start no-print">
-          {/* LEFT COLUMN: Mission Value Proposition & Prestige Benefits */}
+          {/* LEFT COLUMN: Clear Non-Profit Mission & Concise Prestige Benefits */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
               <span className="badge badge-build">
                 {l(
                   lang,
-                  `Clarvia ASBL · Founding Cohort ${FOUNDING_COHORT_YEARS}`,
-                  `Clarvia ASBL · Cohorte fondatrice ${FOUNDING_COHORT_YEARS}`,
-                  `Clarvia ASBL · Gründerkohorte ${FOUNDING_COHORT_YEARS}`,
-                  `Clarvia ASBL · Grënnerkohort ${FOUNDING_COHORT_YEARS}`,
+                  `Registered European Non-Profit · Founding Cohort ${FOUNDING_COHORT_YEARS}`,
+                  `Association européenne à but non lucratif · Cohorte ${FOUNDING_COHORT_YEARS}`,
+                  `Gemeinnützige Non-Profit-Organisation · Kohorte ${FOUNDING_COHORT_YEARS}`,
+                  `Registréiert Non-Profit-Organisatioun · Kohort ${FOUNDING_COHORT_YEARS}`,
                 )}
               </span>
 
@@ -144,25 +142,25 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
               <p className="text-lg text-calm-blue-700 leading-relaxed font-semibold text-pretty">
                 {l(
                   lang,
-                  "Stand behind free, official-source-cited administrative guidance for families navigating terminal illness and bereavement across 196 countries — and help make Clarvia known across your professional network.",
-                  "Soutenez un accompagnement administratif gratuit et sourcé pour les familles confrontées à la maladie grave ou au décès d'un proche dans 196 pays — et faites connaître Clarvia au sein de votre réseau professionnel.",
-                  "Stärken Sie kostenlose, quellenbasierte Orientierung für Familien bei schwerer Krankheit und im Trauerfall in 196 Ländern – und tragen Sie die Mission von Clarvia in Ihr berufliches Netzwerk.",
-                  "Stäerkt gratis, op offiziellen Quelle baséiert Orientéierung fir Familljen bei schwéierer Krankheet an am Trauerfall an 196 Länner – an hëlleft Clarvia an Ärem berufflechen Netzwierk bekannt ze maachen.",
+                  "Clarvia is an independent non-profit providing 100% free, official-source-cited guidance for families navigating terminal illness and bereavement across 196 countries.",
+                  "Clarvia est une organisation indépendante à but non lucratif qui fournit gratuitement un accompagnement administratif sourcé aux familles confrontées à la maladie grave ou au décès d'un proche dans 196 pays.",
+                  "Clarvia ist eine unabhängige gemeinnützige Non-Profit-Organisation, die Familien bei schwerer Krankheit und im Trauerfall in 196 Ländern kostenlos mit quellenbasierter Orientierung unterstützt.",
+                  "Clarvia ass eng onofhängeg Non-Profit-Organisatioun, déi Familljen bei schwéierer Krankheet an am Trauerfall an 196 Länner gratis mat op offiziellen Quelle baséierter Orientéierung hëlleft.",
                 )}
               </p>
 
               <p className="text-base text-calm-blue-600 leading-relaxed text-pretty">
                 {l(
                   lang,
-                  `Pursuant to Articles 7 and 8 of Clarvia ASBL's Articles of Association (RCS Luxembourg F15680), individuals who believe in accessible public-interest infrastructure may join as Contributing Associate Members (€${ASSOCIATE_MONTHLY_EUR}/month or €${ASSOCIATE_ANNUAL_EUR}/year). The role is honorary and philanthropic: it carries zero personal liability, zero committee obligations, and zero commercial ties.`,
-                  `Conformément aux articles 7 et 8 des statuts de Clarvia ASBL (RCS Luxembourg F15680), les personnes souhaitant soutenir une infrastructure d'intérêt général peuvent adhérer en qualité de membre adhérent cotisant (${ASSOCIATE_MONTHLY_EUR} €/mois ou ${ASSOCIATE_ANNUAL_EUR} €/an). Ce statut honorifique et philanthropique n'implique aucune responsabilité personnelle, aucune réunion obligatoire et aucun lien commercial.`,
-                  `Gemäß Artikel 7 und 8 der Satzung von Clarvia ASBL (RCS Luxemburg F15680) können Persönlichkeiten, die gemeinnützige Infrastruktur fördern möchten, als beitragende assoziierte Mitglieder (${ASSOCIATE_MONTHLY_EUR} €/Monat oder ${ASSOCIATE_ANNUAL_EUR} €/Jahr) beitreten. Die Stellung ist ideell und ehrenvoll: ohne persönliche Haftung, ohne Gremienpflichten und ohne kommerzielle Verflechtung.`,
-                  `Geméiss Artikel 7 an 8 vun de Statute vu Clarvia ASBL (RCS Lëtzebuerg F15680) kënne Persounen als assoziéierte Member (${ASSOCIATE_MONTHLY_EUR} €/Mount oder ${ASSOCIATE_ANNUAL_EUR} €/Joer) bäitrieden. Dëse Status ass honorifesch a philanthropesch: ouni perséinlech Haftung, ouni Versammlungspflichten an ouni kommerziell Verflechtung.`,
+                  `Join our Founding Cohort as an Associate Member (€${ASSOCIATE_MONTHLY_EUR}/month or €${ASSOCIATE_ANNUAL_EUR}/year) to help sustain this free public service and introduce Clarvia across your professional network. The position is philanthropic and honorary, carrying zero personal liability and zero time obligations.`,
+                  `Rejoignez notre cohorte fondatrice en tant que membre adhérent (${ASSOCIATE_MONTHLY_EUR} €/mois ou ${ASSOCIATE_ANNUAL_EUR} €/an) pour soutenir durablement ce service public gratuit et faire connaître Clarvia dans votre réseau professionnel. Ce rôle philanthropique et honorifique n'implique aucune responsabilité personnelle ni obligation de temps.`,
+                  `Werden Sie als assoziiertes Mitglied (${ASSOCIATE_MONTHLY_EUR} €/Monat oder ${ASSOCIATE_ANNUAL_EUR} €/Jahr) Teil unserer Gründerkohorte, um diesen kostenlosen Dienst mitzutragen und Clarvia in Ihrem beruflichen Netzwerk bekannt zu machen. Die Stellung ist rein ideell und ehrenvoll, ohne persönliche Haftung und ohne Zeitverpflichtung.`,
+                  `Gitt als assoziéierte Member (${ASSOCIATE_MONTHLY_EUR} €/Mount oder ${ASSOCIATE_ANNUAL_EUR} €/Joer) Deel vun eiser Grënnerkohort, fir dëse gratis Service matzedroen a Clarvia an Ärem berufflechen Netzwierk bekannt ze maachen. Dës Roll ass reng philanthropesch an honorifesch, ouni perséinlech Haftung an ouni Zäitverpflichtung.`,
                 )}
               </p>
             </div>
 
-            {/* 6 Prestige & Zero-Burden Benefits Grid */}
+            {/* 6 Concise Prestige & Zero-Burden Benefits */}
             <div>
               <h2
                 className="text-xl font-semibold text-calm-blue-800 mb-4 text-balance"
@@ -198,52 +196,9 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                 ))}
               </div>
             </div>
-
-            {/* Accounting & Independence Clarity Panel */}
-            <div className="glass-panel p-5 space-y-3 text-sm text-calm-blue-600 leading-relaxed">
-              <h2
-                className="text-xl font-semibold text-calm-blue-800 text-balance"
-                style={{ fontFamily: headlineStyle.fontFamily }}
-              >
-                {l(
-                  lang,
-                  "Governance, accounting, and editorial independence",
-                  "Gouvernance, comptabilité et indépendance éditoriale",
-                  "Governance, Buchhaltung und redaktionelle Unabhängigkeit",
-                  "Governance, Comptabilitéit a redaktionell Onofhängegkeet",
-                )}
-              </h2>
-              <p className="text-pretty">
-                {l(
-                  lang,
-                  "Clarvia ASBL records Associate Member contributions as statutory non-profit membership fees (Account 7200) under Luxembourg's Law of 7 August 2023. Every euro funds open, source-backed guidance infrastructure and multilingual maintenance — we display zero advertisements and never monetise personal data.",
-                  "Clarvia ASBL comptabilise les versements des membres adhérents en tant que cotisations statutaires (compte 7200) conformément à la loi luxembourgeoise du 7 août 2023. Chaque euro finance l'infrastructure ouverte et la maintenance multilingue — nous n'affichons aucune publicité et ne monétisons aucune donnée personnelle.",
-                  "Clarvia ASBL verbucht Beiträge assoziierter Mitglieder als satzungsmäßige Mitgliedsbeiträge (Konto 7200) nach dem luxemburgischen Gesetz vom 7. August 2023. Jeder Euro fließt in unsere offene, quellenbasierte Infrastruktur – wir zeigen keine Werbung und monetarisieren keine personenbezogenen Daten.",
-                  "Clarvia ASBL verbucht d'Cotisatiounen als statutaire Membersbäiträg (Kont 7200) no dem Lëtzebuerger Gesetz vum 7. August 2023. All Euro fléisst an eis oppen Infrastruktur – mir weise keng Reklammen a verdéngen net u perséinlechen Donnéeën.",
-                )}
-              </p>
-              <p className="text-xs text-calm-blue-500 text-pretty">
-                {l(
-                  lang,
-                  "Clarvia ASBL does not currently issue tax-deductible certificates. Associate Membership confers no voting rights, no influence over guidance content, no referrals, and no access to user data. Live financial transparency is published on ",
-                  "Clarvia ASBL ne délivre pas actuellement de certificats fiscaux. Le statut de membre adhérent ne confère aucun droit de vote, aucune influence éditoriale, aucune recommandation et aucun accès aux données des utilisateurs. Suivez notre transparence financière sur ",
-                  "Clarvia ASBL stellt derzeit keine steuerlichen Spendenbescheinigungen aus. Die Mitgliedschaft gewährt kein Stimmrecht, keinen Einfluss auf Inhalte, keine Empfehlungen und keinen Zugang zu Nutzerdaten. Laufende Finanztransparenz auf ",
-                  "Clarvia ASBL stellt de Moment keng Steierzertifikater aus. D'Memberschaft gëtt kee Stëmmrecht, keen Afloss op d'Inhalter a keen Zougang zu Benotzerdonnéeën. Lafend Finanztransparenz op ",
-                )}
-                <a
-                  href="https://opencollective.com/clarvia-org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-calm-lilac-600 hover:text-calm-lilac-600 underline underline-offset-2 font-medium"
-                >
-                  opencollective.com/clarvia-org
-                </a>
-                .
-              </p>
-            </div>
           </div>
 
-          {/* RIGHT COLUMN: Sticky Membership Enrollment Form & Bank Transfer */}
+          {/* RIGHT COLUMN: Sticky Enrollment Card & SEPA Bank Transfer */}
           <div className="lg:col-span-5 space-y-5 lg:sticky lg:top-8">
             <div className="glass-panel p-6 border border-white/85 shadow-lg">
               <h2
@@ -259,13 +214,13 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                   "Als assoziéierte Member bäitrieden",
                 )}
               </h2>
-              <p className="text-xs text-calm-blue-500 mb-4">
+              <p className="text-xs text-calm-blue-600 mb-4">
                 {l(
                   lang,
-                  "Instant electronic admission under Board Resolution 2026-01",
-                  "Admission électronique immédiate (résolution 2026-01)",
-                  "Direkte elektronische Aufnahme (Vorstandsbeschluss 2026-01)",
-                  "Direkt elektronesch Opnam (Resolutioun 2026-01)",
+                  "100% non-profit contribution · Instant online admission",
+                  "Cotisation 100 % à but non lucratif · Admission immédiate",
+                  "100 % gemeinnütziger Beitrag · Direkte Online-Aufnahme",
+                  "100 % Non-Profit-Bäitrag · Direkt Online-Opnam",
                 )}
               </p>
 
@@ -276,7 +231,7 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
               />
 
               <div className="mt-4 pt-3 border-t border-calm-blue-100/70 text-center">
-                <p className="text-xs text-calm-blue-500">
+                <p className="text-xs text-calm-blue-600">
                   {l(
                     lang,
                     "Already an Associate Member?",
@@ -302,7 +257,6 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
               </div>
             </div>
 
-            {/* Native <details>/<summary> Bank Transfer Option */}
             <details className="glass-panel p-4 border border-white/65">
               <summary className="disclosure-summary text-sm font-medium text-calm-blue-700 hover:text-calm-blue-900">
                 <DisclosureChevron />
@@ -380,7 +334,7 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                       <span className="font-medium text-calm-blue-500">
                         {l(lang, "Holder:", "Titulaire :", "Inhaber:", "Kontohalter:")}
                       </span>{" "}
-                      Clarvia ASBL (RCS Luxembourg F15680)
+                      Clarvia ASBL
                     </p>
                     <p>
                       <span className="font-medium text-calm-blue-500">
@@ -391,27 +345,26 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                   </div>
                 </div>
 
-                <p className="text-[11px] text-calm-blue-500 leading-snug">
+                <p className="text-[11px] text-calm-blue-600 leading-snug">
                   {l(
                     lang,
-                    "Include CLARVIA-MEMBER as the payment reference and notify us via the Contact form with your LinkedIn URL if you wish to be listed publicly.",
-                    "Indiquez CLARVIA-MEMBER en référence et écrivez-nous via le formulaire de contact avec votre URL LinkedIn si vous souhaitez être publié(e).",
-                    "Geben Sie CLARVIA-MEMBER als Verwendungszweck an und senden Sie uns über das Kontaktformular Ihre LinkedIn-URL, falls Sie öffentlich genannt werden möchten.",
+                    "Use CLARVIA-MEMBER as the reference and send us your LinkedIn URL via the Contact form if you want to be listed publicly.",
+                    "Indiquez CLARVIA-MEMBER en référence et envoyez-nous votre URL LinkedIn via le formulaire de contact si vous souhaitez être publié(e).",
+                    "Geben Sie CLARVIA-MEMBER als Referenz an und senden Sie uns über das Kontaktformular Ihre LinkedIn-URL, falls Sie öffentlich genannt werden möchten.",
                     "Gitt CLARVIA-MEMBER als Referenz un a schéckt eis iwwer de Kontaktformulaire Är LinkedIn-URL, wann Dir ëffentlech genannt wëllt ginn.",
                   )}
                 </p>
               </div>
             </details>
 
-            {/* Alternative general donation link */}
             <div className="text-center px-2">
-              <p className="text-xs text-calm-blue-500">
+              <p className="text-xs text-calm-blue-600">
                 {l(
                   lang,
-                  "Prefer a general one-time or custom donation without membership?",
-                  "Vous préférez effectuer un don libre sans adhésion ?",
-                  "Lieber eine freie Einzel- oder Monatsspende ohne Mitgliedschaft?",
-                  "Léiwer en einfachen Don ouni Memberschaft?",
+                  "Prefer a custom one-time or smaller monthly donation?",
+                  "Vous préférez un don libre ponctuel ou mensuel ?",
+                  "Lieber eine freie Einzel- oder kleinere Monatsspende?",
+                  "Léiwer e fräien Don ouni Memberschaft?",
                 )}{" "}
                 <Link
                   href={`/${lang}/support`}
@@ -430,14 +383,12 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
           </div>
         </div>
 
-        {/* Founding Cohort Showcase (Board Stewards + Live Preview + Members / Archetype Slots) */}
         <CohortShowcase
           lang={lang}
           previewName={previewName}
           previewPublish={previewPublish}
         />
 
-        {/* Statutory & Governance FAQ Accordion */}
         <section
           aria-labelledby="membership-faq-heading"
           className="mt-14 pt-12 border-t border-calm-blue-200/50 no-print"

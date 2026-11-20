@@ -2,7 +2,7 @@ import { type Lang, l } from "@/lib/i18n";
 
 export const ASSOCIATE_MONTHLY_EUR = 40;
 export const ASSOCIATE_ANNUAL_EUR = 480;
-export const FOUNDING_COHORT_YEARS = "2026–2027";
+export const FOUNDING_COHORT_YEARS = "2026-2027";
 
 export type LocalisedMemberCopy = {
   en: string;

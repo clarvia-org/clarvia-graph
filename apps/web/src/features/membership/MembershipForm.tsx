@@ -42,7 +42,6 @@ function MembershipFormInner({
   const [isProcessing, setIsProcessing] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
 
-  // Interaction tracking so errors only display after blur/change or submit attempt
   const [nameEdited, setNameEdited] = useState(false);
   const [nameShowError, setNameShowError] = useState(false);
   const [charterShowError, setCharterShowError] = useState(false);
@@ -87,15 +86,15 @@ function MembershipFormInner({
   const errorLabelWord = l(lang, "Error", "Erreur", "Fehler", "Feeler");
   const nameErrorText = l(
     lang,
-    "Please enter your full name (2 to 120 characters) for Clarvia ASBL's Associate Member register.",
-    "Veuillez saisir votre nom complet (2 à 120 caractères) pour le registre des membres adhérents.",
-    "Bitte geben Sie Ihren vollständigen Namen (2 bis 120 Zeichen) für das Mitgliederregister ein.",
-    "Gitt wgl. Äre ganzen Numm (2 bis 120 Zeechen) fir de Membersregister un.",
+    "Please enter your full name (2 to 120 characters).",
+    "Veuillez saisir votre nom complet (2 à 120 caractères).",
+    "Bitte geben Sie Ihren vollständigen Namen (2 bis 120 Zeichen) ein.",
+    "Gitt wgl. Äre ganzen Numm (2 bis 120 Zeechen) un.",
   );
   const charterErrorText = l(
     lang,
-    "Please confirm the Associate Member & Mission Ambassador agreement before continuing.",
-    "Veuillez accepter l'engagement de membre adhérent et d'ambassadeur avant de continuer.",
+    "Please confirm the Associate Member and Ambassador agreement before continuing.",
+    "Veuillez confirmer l'engagement de membre adhérent et d'ambassadeur avant de continuer.",
     "Bitte bestätigen Sie die Erklärung für assoziierte Mitglieder und Botschafter, um fortzufahren.",
     "Bestätegt wgl. d'Erklärung fir assoziéiert Memberen an Ambassadeuren, ier Dir weidergitt.",
   );
@@ -235,10 +234,10 @@ function MembershipFormInner({
         <legend className="text-xs font-semibold uppercase tracking-wider text-calm-blue-600 mb-1">
           {l(
             lang,
-            "Statutory Membership Contribution",
-            "Cotisation statutaire de membre adhérent",
-            "Satzungsmäßiger Mitgliedsbeitrag",
-            "Statutaire Membersbäitrag",
+            "Membership Contribution",
+            "Cotisation de membre adhérent",
+            "Mitgliedsbeitrag",
+            "Membersbäitrag",
           )}
         </legend>
 
@@ -269,9 +268,9 @@ function MembershipFormInner({
               <span className="text-xs text-calm-blue-600 mt-0.5">
                 {l(
                   lang,
-                  "Flexible monthly billing",
+                  "Monthly subscription",
                   "Prélèvement mensuel",
-                  "Monatliche Abrechnung",
+                  "Monatlich kündbar",
                   "Monatlech Ofrechnung",
                 )}
               </span>
@@ -304,10 +303,10 @@ function MembershipFormInner({
               <span className="text-xs text-calm-blue-600 mt-0.5">
                 {l(
                   lang,
-                  "Single annual receipt (€40/mo)",
-                  "Un seul reçu annuel (40 €/mois)",
-                  "Ein Jahresbeleg (40 €/Monat)",
-                  "Een Joresbeleg (40 €/Mount)",
+                  "Single annual payment",
+                  "Un seul versement annuel",
+                  "Jährliche Zahlung",
+                  "Jährlech Bezuelung",
                 )}
               </span>
             </label>
@@ -384,7 +383,7 @@ function MembershipFormInner({
         )}
       </div>
 
-      {/* Required Checkbox: Positive Ambassador & Statutory Charter */}
+      {/* Required Checkbox: Positive Ambassador Agreement */}
       <div className="space-y-1.5">
         <div
           className={`flex items-start gap-3 p-3.5 rounded-xl border bg-white/75 shadow-sm ${
@@ -420,10 +419,10 @@ function MembershipFormInner({
           >
             {l(
               lang,
-              "I apply to join Clarvia ASBL as a non-voting Associate Member (Art. 7 AoA, zero personal liability) and agree to act as a positive ambassador helping spread knowledge of Clarvia's mission to help families worldwide for free. I understand membership confers no editorial influence or commercial endorsement.",
-              "Je demande mon admission à Clarvia ASBL en tant que membre adhérent sans droit de vote (art. 7 des statuts, aucune responsabilité personnelle) et m'engage à être un ambassadeur positif faisant connaître la mission gratuite de Clarvia auprès des familles dans le monde, sans droit de regard éditorial ni recommandation commerciale.",
-              "Ich beantrage die Aufnahme als nicht stimmberechtigtes assoziiertes Mitglied von Clarvia ASBL (Art. 7 der Satzung, keine persönliche Haftung) und erkläre mich bereit, als positiver Botschafter auf Clarvias kostenlose Hilfe für Familien weltweit aufmerksam zu machen – ohne redaktionellen Einfluss oder kommerzielle Empfehlung.",
-              "Ech froen d'Opnam als assoziéierte Member ouni Stëmmrecht bei Clarvia ASBL un (Art. 7 vun de Statuten, keng perséinlech Haftung) an erklären mech bereet, als positiven Ambassadeur op d'gratis Missioun vu Clarvia fir Famillje weltwäit opmierksam ze maachen – ouni redaktionellen Afloss oder kommerziell Recommandatioun.",
+              "I apply to join Clarvia as a non-voting Associate Member and agree to be a positive ambassador helping spread awareness of Clarvia's free non-profit mission worldwide.",
+              "Je demande mon admission à Clarvia comme membre adhérent sans droit de vote et m'engage à être un ambassadeur positif faisant connaître la mission gratuite de Clarvia dans le monde.",
+              "Ich beantrage die Aufnahme als stimmrechtsloses assoziiertes Mitglied von Clarvia und erkläre mich bereit, als positiver Botschafter auf Clarvias kostenlose gemeinnützige Mission weltweit aufmerksam zu machen.",
+              "Ech froen d'Opnam als assoziéierte Member ouni Stëmmrecht bei Clarvia un an erklären mech bereet, als positiven Ambassadeur op d'gratis Non-Profit-Missioun vu Clarvia weltwäit opmierksam ze maachen.",
             )}{" "}
             <span className="font-semibold text-calm-blue-800" aria-hidden="true">
               *
@@ -467,10 +466,10 @@ function MembershipFormInner({
           >
             {l(
               lang,
-              "Publish my Associate Membership on clarvia.org — displaying my name, LinkedIn profile photo, professional headline, and a link to my LinkedIn profile (optional; leave unchecked to remain private).",
-              "Publier mon adhésion sur clarvia.org — avec mon nom, la photo et le titre de mon profil LinkedIn ainsi qu'un lien vers mon profil LinkedIn (facultatif ; laissez décoché pour rester privé).",
-              "Meine assoziierte Mitgliedschaft auf clarvia.org veröffentlichen – mit meinem Namen, meinem LinkedIn-Profilbild, meiner Berufsbezeichnung und einem Link zu meinem LinkedIn-Profil (optional; ohne Häkchen privat).",
-              "Meng assoziéiert Memberschaft op clarvia.org verëffentlechen – mat mengem Numm, menger LinkedIn-Profilfoto, mengem Titel an engem Link op mäi LinkedIn-Profil (optional; ouni Haischen privat).",
+              "Publish my membership on clarvia.org with my name, LinkedIn profile photo, headline, and LinkedIn profile link (optional).",
+              "Publier mon adhésion sur clarvia.org avec mon nom, ma photo LinkedIn, mon titre et le lien vers mon profil LinkedIn (facultatif).",
+              "Meine Mitgliedschaft auf clarvia.org mit Namen, LinkedIn-Profilbild, Funktion und LinkedIn-Profillink veröffentlichen (optional).",
+              "Meng Memberschaft op clarvia.org mat Numm, LinkedIn-Profilfoto, Titel a LinkedIn-Link verëffentlechen (optional).",
             )}
           </label>
         </div>
@@ -593,43 +592,31 @@ function MembershipFormInner({
               )
             : l(
                 lang,
-                `Join as Associate Member — €${displayAmount}${
+                `Join as Associate Member: €${displayAmount}${
                   frequency === "annual" ? "/year" : "/month"
                 }`,
-                `Devenir membre adhérent — ${displayAmount} €${
+                `Devenir membre adhérent : ${displayAmount} €${
                   frequency === "annual" ? "/an" : "/mois"
                 }`,
-                `Mitglied werden — ${displayAmount} €${
+                `Mitglied werden: ${displayAmount} €${
                   frequency === "annual" ? "/Jahr" : "/Monat"
                 }`,
-                `Member ginn — ${displayAmount} €${
+                `Member ginn: ${displayAmount} €${
                   frequency === "annual" ? "/Joer" : "/Mount"
                 }`,
               )}
         </button>
       </div>
 
-      {/* Reassurance Micro-Copy */}
-      <div className="text-center text-xs text-calm-blue-600 space-y-1">
-        <p>
-          {l(
-            lang,
-            "Secure subscription checkout via Stripe · Cancel anytime in 1 click.",
-            "Paiement sécurisé via Stripe · Résiliable en 1 clic à tout moment.",
-            "Sichere Zahlung über Stripe · Jederzeit mit 1 Klick kündbar.",
-            "Séchert Bezuele mat Stripe · Zu all Moment mat 1 Klick kënnegbar.",
-          )}
-        </p>
-        <p>
-          {l(
-            lang,
-            "Zero personal liability (Art. 5 AoA) · Clarvia's family services remain free for everyone.",
-            "Aucune responsabilité personnelle (art. 5 des statuts) · Les services aux familles restent gratuits.",
-            "Keine persönliche Haftung (Art. 5 der Satzung) · Alle Angebote für Familien bleiben kostenlos.",
-            "Keng perséinlech Haftung (Art. 5 vun de Statuten) · All Servicer fir Famillje bleiwe gratis.",
-          )}
-        </p>
-      </div>
+      <p className="text-center text-xs text-calm-blue-600">
+        {l(
+          lang,
+          "Secure payment via Stripe · Cancel anytime in 1 click.",
+          "Paiement sécurisé via Stripe · Résiliable en 1 clic à tout moment.",
+          "Sichere Zahlung über Stripe · Jederzeit mit 1 Klick kündbar.",
+          "Séchert Bezuele mat Stripe · Zu all Moment mat 1 Klick kënnegbar.",
+        )}
+      </p>
     </form>
   );
 }

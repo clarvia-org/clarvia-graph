@@ -227,10 +227,10 @@ export default async function ContributePage({ params }: { params: Promise<{ lan
             <p className="text-sm text-calm-blue-600">
               {l(
                 lang,
-                "Prefer to support Clarvia through philanthropy and your professional network? Join our Founding Cohort (€40/month or €480/year, zero liability).",
-                "Vous préférez soutenir Clarvia par le mécénat et votre réseau professionnel ? Rejoignez notre cohorte fondatrice (40 €/mois ou 480 €/an, sans responsabilité).",
-                "Möchten Sie Clarvia ideell, finanziell und über Ihr Netzwerk stärken? Werden Sie Teil unserer Gründerkohorte (40 €/Monat oder 480 €/Jahr, ohne Haftung).",
-                "Wëllt Dir Clarvia philanthropesch an iwwer Äert Netzwierk stäerken? Gitt Deel vun eiser Grënnerkohort (40 €/Mount oder 480 €/Joer, ouni Haftung).",
+                "Prefer to support our non-profit mission financially and through your professional network? Join our Founding Cohort (€40/month or €480/year, zero personal liability).",
+                "Vous préférez soutenir notre mission à but non lucratif et la relayer dans votre réseau professionnel ? Rejoignez notre cohorte fondatrice (40 €/mois ou 480 €/an, sans responsabilité).",
+                "Möchten Sie unsere gemeinnützige Non-Profit-Mission finanziell und über Ihr Netzwerk stärken? Werden Sie Teil unserer Gründerkohorte (40 €/Monat oder 480 €/Jahr, ohne Haftung).",
+                "Wëllt Dir eis Non-Profit-Missioun finanziell an iwwer Äert Netzwierk stäerken? Gitt Deel vun eiser Grënnerkohort (40 €/Mount oder 480 €/Joer, ouni Haftung).",
               )}
             </p>
           </div>

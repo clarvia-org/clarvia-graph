@@ -20,38 +20,38 @@ function ArchetypeEmblem({ id }: { id: CohortArchetypeSlot["id"] }) {
   switch (id) {
     case "legal-estate":
       return (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-current" fill="none" strokeWidth="1.75" aria-hidden="true">
+        <svg viewBox="0 0 24 24" className="w-9 h-9 stroke-current" fill="none" strokeWidth="1.6" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18M5 7h14M7 7l-3 6h6L7 7zm10 0l-3 6h6l-3-6zM8 21h8" />
         </svg>
       );
     case "healthcare-palliative":
       return (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-current" fill="none" strokeWidth="1.75" aria-hidden="true">
+        <svg viewBox="0 0 24 24" className="w-9 h-9 stroke-current" fill="none" strokeWidth="1.6" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 21s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.6-7 10-7 10z" />
         </svg>
       );
     case "civic-tech":
       return (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-current" fill="none" strokeWidth="1.75" aria-hidden="true">
+        <svg viewBox="0 0 24 24" className="w-9 h-9 stroke-current" fill="none" strokeWidth="1.6" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M8 9l-3 3 3 3m8-6l3 3-3 3M13.5 6l-3 12" />
         </svg>
       );
     case "global-mobility":
       return (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-current" fill="none" strokeWidth="1.75" aria-hidden="true">
+        <svg viewBox="0 0 24 24" className="w-9 h-9 stroke-current" fill="none" strokeWidth="1.6" aria-hidden="true">
           <circle cx="12" cy="12" r="9" />
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.6 9h16.8M3.6 15h16.8M12 3a14.5 14.5 0 000 18M12 3a14.5 14.5 0 010 18" />
         </svg>
       );
     case "philanthropy":
       return (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-current" fill="none" strokeWidth="1.75" aria-hidden="true">
+        <svg viewBox="0 0 24 24" className="w-9 h-9 stroke-current" fill="none" strokeWidth="1.6" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8-4.3-4.1 5.9-.9L12 3z" />
         </svg>
       );
     case "workplace-hr":
       return (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 stroke-current" fill="none" strokeWidth="1.75" aria-hidden="true">
+        <svg viewBox="0 0 24 24" className="w-9 h-9 stroke-current" fill="none" strokeWidth="1.6" aria-hidden="true">
           <path strokeLinecap="round" strokeLinejoin="round" d="M16 11a4 4 0 10-8 0 4 4 0 008 0zM4 20a8 8 0 0116 0" />
         </svg>
       );
@@ -117,34 +117,34 @@ export default function CohortShowcase({
         <p className="text-base text-calm-blue-600 leading-relaxed text-pretty">
           {l(
             lang,
-            "Leaders, practitioners, and philanthropists standing behind free, source-backed bereavement and terminal-illness guidance for families worldwide.",
-            "Dirigeants, praticiens et philanthropes engagés pour maintenir un accompagnement administratif gratuit et sourcé pour les familles du monde entier.",
-            "Führungskräfte, Fachleute und Fördernde, die sich für kostenlose, quellenbasierte Orientierung für Familien weltweit einsetzen.",
-            "Verantwortlecher, Fachleit a Philanthropen, déi sech fir gratis, op offiziellen Quelle baséiert Orientéierung fir Famillje weltwäit asetzen.",
+            "Leaders, practitioners, and philanthropists supporting Clarvia's non-profit mission for families worldwide.",
+            "Dirigeants, praticiens et philanthropes engagés aux côtés de la mission à but non lucratif de Clarvia.",
+            "Führungskräfte, Fachleute und Fördernde, die Clarvias gemeinnützige Mission für Familien weltweit unterstützen.",
+            "Verantwortlecher, Fachleit a Philanthropen, déi d'Non-Profit-Missioun vu Clarvia fir Famillje weltwäit ënnerstëtzen.",
           )}
         </p>
       </div>
 
-      {/* Founding Board Stewards Anchor */}
-      <div className="glass-panel p-5 mb-6 border border-white/80">
-        <p className="text-xs font-semibold uppercase tracking-wider text-calm-blue-500 mb-3">
+      {/* Founding Board Stewards Anchor (Large 96px portraits) */}
+      <div className="glass-panel p-6 mb-6 border border-white/80">
+        <p className="text-xs font-semibold uppercase tracking-wider text-calm-blue-600 mb-4">
           {l(
             lang,
-            "Stewarded by Clarvia ASBL's Founding Board",
-            "Porté par le conseil d'administration fondateur de Clarvia ASBL",
-            "Getragen vom Gründungsvorstand von Clarvia ASBL",
-            "Gedroe vum Grënnungsverwaltungsrot vu Clarvia ASBL",
+            "Stewarded by Clarvia's Unpaid Founding Board",
+            "Porté par le conseil d'administration fondateur bénévole de Clarvia",
+            "Getragen vom ehrenamtlichen Gründungsvorstand von Clarvia",
+            "Gedroe vum benevole Grënnungsverwaltungsrot vu Clarvia",
           )}
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {FOUNDING_STORIES.map((founder) => (
-            <div key={founder.name} className="flex items-center gap-3.5">
+            <div key={founder.name} className="flex items-center gap-4">
               <Image
                 src={founder.photo}
                 alt={founder.name}
-                width={48}
-                height={48}
-                className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm shrink-0"
+                width={96}
+                height={96}
+                className="w-24 h-24 rounded-full object-cover border-[3px] border-white shadow-md shrink-0"
                 style={
                   founder.photo.includes("gunther")
                     ? { objectPosition: "center 20%" }
@@ -152,10 +152,10 @@ export default function CohortShowcase({
                 }
               />
               <div className="min-w-0">
-                <p className="text-sm font-semibold text-calm-blue-800 truncate">
+                <p className="text-base font-semibold text-calm-blue-800">
                   {founder.name}
                 </p>
-                <p className="text-xs text-calm-blue-500">
+                <p className="text-sm text-calm-blue-600">
                   {l(
                     lang,
                     founder.title.en,
@@ -170,9 +170,9 @@ export default function CohortShowcase({
         </div>
       </div>
 
-      {/* Interactive Specimen Preview Card */}
-      <div className="glass-panel p-5 mb-6 border-2 border-calm-lilac-300/80 bg-white/85">
-        <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+      {/* Interactive Specimen Preview Card (Large 88px portrait preview) */}
+      <div className="glass-panel p-6 mb-6 border-2 border-calm-lilac-300/80 bg-white/85">
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
           <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-calm-lilac-600 bg-calm-lilac-100 px-2.5 py-1 rounded-full">
             {l(
               lang,
@@ -182,7 +182,7 @@ export default function CohortShowcase({
               "Live-Virschau · Är ëffentlech Kaart",
             )}
           </span>
-          <span className="text-xs text-calm-blue-500">
+          <span className="text-xs text-calm-blue-600">
             {previewPublish
               ? l(
                   lang,
@@ -193,33 +193,33 @@ export default function CohortShowcase({
                 )
               : l(
                   lang,
-                  "Optional — check the recognition box in the form to publish",
-                  "Facultatif — cochez la case dédiée dans le formulaire pour publier",
-                  "Optional — im Formular aktivieren, um öffentlich genannt zu werden",
-                  "Optional — am Formulaire aktivéieren, fir ëffentlech genannt ze ginn",
+                  "Optional: check the recognition box in the form to publish",
+                  "Facultatif : cochez la case dédiée dans le formulaire pour publier",
+                  "Optional: im Formular aktivieren, um öffentlich genannt zu werden",
+                  "Optional: am Formulaire aktivéieren, fir ëffentlech genannt ze ginn",
                 )}
           </span>
         </div>
 
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3.5 min-w-0">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-center gap-4 min-w-0">
             <div
-              className="w-14 h-14 rounded-full flex flex-col items-center justify-center shrink-0 border-2 border-white shadow-sm text-white font-semibold"
+              className="w-24 h-24 rounded-full flex flex-col items-center justify-center shrink-0 border-[3px] border-white shadow-md text-white font-semibold"
               style={{
                 background: "linear-gradient(135deg, #2b3a67, #7162ae)",
               }}
               aria-hidden="true"
             >
-              <span className="text-sm leading-none">{previewInitials}</span>
-              <span className="text-[8px] uppercase tracking-tight opacity-80 mt-0.5">
-                {l(lang, "Photo", "Photo", "Foto", "Foto")}
+              <span className="text-xl leading-none">{previewInitials}</span>
+              <span className="text-[9px] uppercase tracking-wider opacity-85 mt-1">
+                {l(lang, "Portrait", "Photo", "Porträt", "Foto")}
               </span>
             </div>
             <div className="min-w-0">
-              <p className="text-base font-semibold text-calm-blue-800 truncate">
+              <p className="text-lg font-semibold text-calm-blue-800 truncate">
                 {displayPreviewName}
               </p>
-              <p className="text-xs text-calm-blue-600">
+              <p className="text-sm text-calm-blue-600">
                 {l(
                   lang,
                   `Associate Member · Founding Cohort (${FOUNDING_COHORT_YEARS})`,
@@ -228,72 +228,61 @@ export default function CohortShowcase({
                   `Assoziéierte Member · Grënnerkohort (${FOUNDING_COHORT_YEARS})`,
                 )}
               </p>
-              <p className="text-[11px] text-calm-blue-600 mt-0.5">
+              <p className="text-xs text-calm-blue-600 mt-0.5">
                 {l(
                   lang,
-                  "Displays your LinkedIn profile portrait & professional headline upon admission",
-                  "Affiche votre photo de profil et votre titre LinkedIn après admission",
-                  "Zeigt nach Aufnahme Ihr LinkedIn-Profilbild und Ihre Berufsbezeichnung",
-                  "Weist no der Opnam Är LinkedIn-Profilfoto an Ären Titel",
+                  "Displays your LinkedIn portrait and headline upon admission",
+                  "Affiche votre photo et votre titre LinkedIn après admission",
+                  "Zeigt nach Aufnahme Ihr LinkedIn-Porträt und Ihre Funktion",
+                  "Weist no der Opnam Är LinkedIn-Foto an Ären Titel",
                 )}
               </p>
             </div>
           </div>
-          <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-calm-blue-700 bg-calm-blue-50 border border-calm-blue-200 px-3 py-1.5 rounded-full shrink-0">
+          <span className="self-start sm:self-center inline-flex items-center gap-1.5 text-xs font-semibold text-calm-blue-700 bg-calm-blue-50 border border-calm-blue-200 px-3 py-1.5 rounded-full shrink-0">
             <LinkedInBadgeIcon />
             <span>LinkedIn</span>
           </span>
         </div>
       </div>
 
-      {/* Cohort Grid: Published Members + Remaining Illustrative Cohort Archetype Slots */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {/* Cohort Grid: Prominent 96px Centered Portrait Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {PUBLISHED_ASSOCIATE_MEMBERS.map((member) => (
           <div
             key={member.slug}
-            className="glass-panel p-5 flex flex-col justify-between border border-white/80"
+            className="glass-panel p-6 flex flex-col items-center text-center justify-between border border-white/80"
           >
-            <div className="flex items-start gap-3.5">
+            <div className="flex flex-col items-center">
               {member.photo ? (
                 <Image
                   src={member.photo}
                   alt={member.name}
-                  width={56}
-                  height={56}
-                  className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-sm shrink-0"
+                  width={96}
+                  height={96}
+                  className="w-24 h-24 rounded-full object-cover border-[3px] border-white shadow-md mb-3.5"
                 />
               ) : (
                 <div
-                  className="w-14 h-14 rounded-full flex items-center justify-center shrink-0 border-2 border-white shadow-sm bg-calm-blue-800 text-white text-sm font-semibold"
+                  className="w-24 h-24 rounded-full flex items-center justify-center border-[3px] border-white shadow-md bg-calm-blue-800 text-white text-xl font-semibold mb-3.5"
                   aria-hidden="true"
                 >
                   {computeMemberInitials(member.name)}
                 </div>
               )}
-              <div className="min-w-0">
-                <p className="text-base font-semibold text-calm-blue-800 leading-snug">
-                  {member.name}
+              <p className="text-base font-semibold text-calm-blue-800 leading-snug">
+                {member.name}
+              </p>
+              {member.headline && (
+                <p className="text-xs text-calm-blue-600 mt-1 leading-snug">
+                  {localizeMemberCopy(lang, member.headline)}
                 </p>
-                {member.headline && (
-                  <p className="text-xs text-calm-blue-600 mt-0.5 leading-snug">
-                    {localizeMemberCopy(lang, member.headline)}
-                  </p>
-                )}
-                <p className="text-[11px] font-medium text-calm-lilac-600 mt-1">
-                  {member.cohort} · {member.admittedYear}
-                </p>
-              </div>
+              )}
+              <p className="text-[11px] font-medium text-calm-lilac-600 mt-1.5">
+                {member.cohort} · {member.admittedYear}
+              </p>
             </div>
-            <div className="mt-4 pt-3 border-t border-calm-blue-100/70 flex items-center justify-between">
-              <span className="text-[11px] text-calm-blue-500">
-                {l(
-                  lang,
-                  "Associate Member",
-                  "Membre adhérent",
-                  "Assoziiertes Mitglied",
-                  "Assoziéierte Member",
-                )}
-              </span>
+            <div className="w-full mt-4 pt-3 border-t border-calm-blue-100/70 flex items-center justify-center">
               <a
                 href={member.linkedinUrl}
                 target="_blank"
@@ -323,28 +312,26 @@ export default function CohortShowcase({
           return (
             <div
               key={slot.id}
-              className="rounded-2xl p-5 bg-white/50 border border-dashed border-calm-blue-300/90 flex flex-col justify-between"
+              className="rounded-2xl p-6 bg-white/50 border border-dashed border-calm-blue-300/90 flex flex-col items-center text-center justify-between"
             >
-              <div className="flex items-start gap-3.5">
-                <div className="w-14 h-14 rounded-full bg-calm-blue-100/80 border border-calm-blue-200 text-calm-blue-600 flex items-center justify-center shrink-0">
+              <div className="flex flex-col items-center">
+                <div className="w-24 h-24 rounded-full bg-calm-blue-100/80 border border-calm-blue-200 text-calm-blue-600 flex items-center justify-center mb-3.5">
                   <ArchetypeEmblem id={slot.id} />
                 </div>
-                <div className="min-w-0">
-                  <p className="text-[11px] font-semibold uppercase tracking-wider text-calm-blue-600">
-                    {l(
-                      lang,
-                      `Cohort Seat ${seatNum}`,
-                      `Siège ${seatNum}`,
-                      `Kohortenplatz ${seatNum}`,
-                      `Kohorteplaz ${seatNum}`,
-                    )}
-                  </p>
-                  <p className="text-sm font-semibold text-calm-blue-800 leading-snug mt-0.5">
-                    {localizeMemberCopy(lang, slot.sector)}
-                  </p>
-                </div>
+                <p className="text-[11px] font-semibold uppercase tracking-wider text-calm-blue-600">
+                  {l(
+                    lang,
+                    `Cohort Seat ${seatNum}`,
+                    `Siège ${seatNum}`,
+                    `Kohortenplatz ${seatNum}`,
+                    `Kohorteplaz ${seatNum}`,
+                  )}
+                </p>
+                <p className="text-sm font-semibold text-calm-blue-800 leading-snug mt-1">
+                  {localizeMemberCopy(lang, slot.sector)}
+                </p>
               </div>
-              <p className="mt-4 pt-3 border-t border-calm-blue-200/50 text-xs text-calm-blue-500">
+              <p className="w-full mt-4 pt-3 border-t border-calm-blue-200/50 text-xs text-calm-blue-600">
                 {localizeMemberCopy(lang, slot.descriptor)}
               </p>
             </div>
@@ -352,14 +339,14 @@ export default function CohortShowcase({
         })}
       </div>
 
-      {/* Explicit Asterisk Transparency Note */}
-      <p className="mt-4 text-xs text-calm-blue-500 leading-relaxed text-pretty">
+      {/* Concise Asterisk Footnote */}
+      <p className="mt-4 text-xs text-calm-blue-600 leading-relaxed text-pretty">
         {l(
           lang,
-          "* Unfilled Founding Cohort seats display illustrative sector placeholders representing the professional community supporting Clarvia's mission. No synthetic or AI-generated people are shown. Each placeholder slot is replaced one-for-one by an admitted Associate Member's portrait, name, and LinkedIn profile link when they opt in to public recognition; members who choose private registration are recorded solely in Clarvia ASBL's internal statutory register.",
-          "* Les sièges non pourvus de la cohorte fondatrice présentent à titre illustratif les domaines professionnels soutenant la mission de Clarvia. Aucune personne fictive ou générée par IA n'est affichée. Chaque emplacement est remplacé au fur et à mesure par la photo, le nom et le lien LinkedIn des membres adhérents admis ayant choisi la publication ; les membres optant pour la confidentialité figurent uniquement dans le registre statutaire interne de Clarvia ASBL.",
-          "* Offene Plätze der Gründerkohorte zeigen exemplarische Fachbereiche der Gemeinschaft, die Clarvias Mission trägt. Es werden keine fiktiven oder KI-generierten Personen dargestellt. Jeder Platzhalter wird eins zu eins durch Porträt, Namen und LinkedIn-Link aufgenommener assoziierter Mitglieder ersetzt, sofern diese der Veröffentlichung zustimmen; ohne Veröffentlichungswunsch erfolgt ausschließlich der Eintrag im internen Mitgliederregister von Clarvia ASBL.",
-          "* Oppen Plazen an der Grënnerkohort weisen illustrativ Fachberäicher vun der Gemeinschaft, déi Clarvia ënnerstëtzt. Et gi keng fiktiv oder KI-generéiert Persoune gewisen. All Plazhalter gëtt een nom aneren duerch d'Foto, den Numm an de LinkedIn-Link vun opgehollen assoziéierte Memberen ersat, wann si der Verëffentlechung zoustëmmen; ouni Verëffentlechungswonsch bleift den Andrag eleng am interne Register vu Clarvia ASBL.",
+          "* Open Founding Cohort seats show illustrative professional fields until filled. Each placeholder is replaced by a member's portrait, name, and LinkedIn link when an Associate Member opts in to public recognition.",
+          "* Les sièges ouverts de la cohorte fondatrice illustrent les domaines représentés jusqu'à leur attribution. Chaque emplacement est remplacé par la photo, le nom et le lien LinkedIn des membres adhérents qui choisissent la publication.",
+          "* Offene Plätze der Gründerkohorte zeigen beispielhafte Berufsfelder bis zur Vergabe. Jeder Platzhalter wird durch Porträt, Namen und LinkedIn-Link aufgenommener Mitglieder ersetzt, die der Veröffentlichung zustimmen.",
+          "* Oppen Plazen an der Grënnerkohort weisen illustrativ Beruffsfelder bis zu hirer Vergab. All Plazhalter gëtt duerch d'Foto, den Numm an de LinkedIn-Link vun opgeholle Memberen ersat, déi der Verëffentlechung zoustëmmen.",
         )}
       </p>
     </section>

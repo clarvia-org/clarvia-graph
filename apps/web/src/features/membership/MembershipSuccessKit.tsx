@@ -43,7 +43,6 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
     let isMounted = true;
     setViewState({ status: "verifying" });
 
-    // Shared deduplication key with DonationSuccessTracker to prevent duplicate conversions
     const trackingKey = `clarvia-donation-tracked-${sessionId}`;
 
     fetch(`/api/donate?session_id=${encodeURIComponent(sessionId)}`)
@@ -131,10 +130,10 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
         <p className="font-semibold text-calm-blue-800">
           {l(
             lang,
-            "Associate Membership application received — awaiting payment settlement",
-            "Demande d'adhésion enregistrée — en attente de compensation bancaire",
-            "Aufnahmeantrag eingegangen – Zahlungsausgleich ausstehend",
-            "Opnamufro registréiert – Bezuelung gëtt nach ofgewéckelt",
+            "Associate Membership application received: awaiting payment settlement",
+            "Demande d'adhésion enregistrée : en attente de compensation bancaire",
+            "Aufnahmeantrag eingegangen: Zahlungsausgleich ausstehend",
+            "Opnamufro registréiert: Bezuelung gëtt nach ofgewéckelt",
           )}
         </p>
         <p className="text-pretty">
@@ -170,18 +169,18 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
 
   const linkedinProfileBio = l(
     lang,
-    "Admitted Associate Member (Membre adhérent) of Clarvia ASBL (RCS Luxembourg F15680), supporting free, official-source-cited terminal illness and bereavement guidance for families across 196 countries and 14 languages (https://clarvia.org).",
-    "Membre adhérent admis de Clarvia ASBL (RCS Luxembourg F15680), soutenant l'accès gratuit à un accompagnement administratif sourcé face à la maladie grave et au décès dans 196 pays et 14 langues (https://clarvia.org).",
-    "Aufgenommenes assoziiertes Mitglied von Clarvia ASBL (RCS Luxemburg F15680) zur Förderung kostenloser, quellenbasierter Orientierung bei schwerer Krankheit und im Trauerfall in 196 Ländern und 14 Sprachen (https://clarvia.org).",
-    "Opgehollen assoziéierte Member vu Clarvia ASBL (RCS Lëtzebuerg F15680) fir d'Ënnerstëtzung vu gratis, op offiziellen Quelle baséierter Orientéierung bei schwéierer Krankheet an am Trauerfall an 196 Länner a 14 Sproochen (https://clarvia.org).",
+    "Associate Member of Clarvia, a European non-profit providing free, official-source-cited terminal illness and bereavement guidance for families across 196 countries and 14 languages (https://clarvia.org).",
+    "Membre adhérent de Clarvia, organisation européenne à but non lucratif offrant un accompagnement administratif gratuit et sourcé face à la maladie grave et au décès dans 196 pays et 14 langues (https://clarvia.org).",
+    "Assoziiertes Mitglied von Clarvia, einer europäischen gemeinnützigen Non-Profit-Organisation für kostenlose, quellenbasierte Orientierung bei schwerer Krankheit und im Trauerfall in 196 Ländern und 14 Sprachen (https://clarvia.org).",
+    "Assoziéierte Member vu Clarvia, enger europäescher Non-Profit-Organisatioun fir gratis, op offiziellen Quelle baséiert Orientéierung bei schwéierer Krankheet an am Trauerfall an 196 Länner a 14 Sproochen (https://clarvia.org).",
   );
 
   const postDraftOne = l(
     lang,
-    "When a family faces a terminal illness diagnosis or a death — especially across borders and languages — the administrative steps arrive immediately while people are least equipped to navigate scattered official rules.\n\nI have joined Clarvia ASBL (RCS Luxembourg F15680) as an Associate Member in its Founding Cohort to help keep its 196-country guidance library and Ask Clarvia service 100% free and ad-free for families worldwide: https://clarvia.org/en/membership",
-    "Lorsqu'une famille fait face au diagnostic d'une maladie grave ou au décès d'un proche — a fortiori entre plusieurs pays ou langues — les démarches administratives s'imposent immédiatement.\n\nJ'ai rejoint Clarvia ASBL (RCS Luxembourg F15680) en tant que membre adhérent au sein de sa cohorte fondatrice afin de contribuer à maintenir ses guides couvrant 196 pays et son service Ask Clarvia 100 % gratuits et sans publicité : https://clarvia.org/fr/membership",
-    "Wenn eine Familie mit einer schweren Diagnose oder einem Todesfall konfrontiert wird – besonders über Ländergrenzen und Sprachbarrieren hinweg –, beginnen die behördlichen Fristen sofort.\n\nIch bin Clarvia ASBL (RCS Luxemburg F15680) als assoziiertes Mitglied der Gründerkohorte beigetreten, um mitzuhelfen, die Leitfäden für 196 Länder und den Dienst Ask Clarvia dauerhaft kostenlos und werbefrei für alle Familien zu halten: https://clarvia.org/de/membership",
-    "Wann eng Famill mat enger schwéierer Diagnos oder engem Doudesfall konfrontéiert gëtt – besonnesch iwwer Landesgrenzen a Sproochen ewech – fänken déi administrativ Fristen direkt un.\n\nEch sinn Clarvia ASBL (RCS Lëtzebuerg F15680) als assoziéierte Member an der Grënnerkohort bäigetrueden, fir ze hëllefen, d'Guiden fir 196 Länner an Ask Clarvia fir all Famill gratis ze halen: https://clarvia.org/lu/membership",
+    "When a family faces a terminal illness diagnosis or a death, especially across borders and languages, the administrative deadlines begin immediately while people are grieving.\n\nI have joined Clarvia, an independent European non-profit, as an Associate Member in its Founding Cohort to help keep its 196-country guidance library and Ask Clarvia service 100% free and ad-free for families worldwide: https://clarvia.org/en/membership",
+    "Lorsqu'une famille fait face au diagnostic d'une maladie grave ou au décès d'un proche, en particulier entre plusieurs pays ou langues, les démarches administratives s'imposent immédiatement.\n\nJ'ai rejoint l'organisation européenne à but non lucratif Clarvia en tant que membre adhérent au sein de sa cohorte fondatrice afin de contribuer à maintenir ses guides couvrant 196 pays et son service Ask Clarvia 100 % gratuits et sans publicité : https://clarvia.org/fr/membership",
+    "Wenn eine Familie mit einer schweren Diagnose oder einem Todesfall konfrontiert wird, besonders über Ländergrenzen und Sprachbarrieren hinweg, beginnen die behördlichen Fristen sofort.\n\nIch bin der europäischen gemeinnützigen Non-Profit-Organisation Clarvia als assoziiertes Mitglied der Gründerkohorte beigetreten, um mitzuhelfen, die Leitfäden für 196 Länder und den Dienst Ask Clarvia dauerhaft kostenlos und werbefrei für alle Familien zu halten: https://clarvia.org/de/membership",
+    "Wann eng Famill mat enger schwéierer Diagnos oder engem Doudesfall konfrontéiert gëtt, besonnesch iwwer Landesgrenzen a Sproochen ewech, fänken déi administrativ Fristen direkt un.\n\nEch sinn der europäescher Non-Profit-Organisatioun Clarvia als assoziéierte Member an der Grënnerkohort bäigetrueden, fir ze hëllefen, d'Guiden fir 196 Länner an Ask Clarvia fir all Famill gratis ze halen: https://clarvia.org/lu/membership",
   );
 
   const displayMemberName =
@@ -204,10 +203,10 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-green-100 text-green-900 border border-green-300 mb-3">
           {l(
             lang,
-            "Admission Confirmed · Clarvia ASBL",
-            "Admission confirmée · Clarvia ASBL",
-            "Aufnahme bestätigt · Clarvia ASBL",
-            "Opnam bestätegt · Clarvia ASBL",
+            "Admission Confirmed · Clarvia Non-Profit",
+            "Admission confirmée · Clarvia",
+            "Aufnahme bestätigt · Clarvia Non-Profit",
+            "Opnam bestätegt · Clarvia Non-Profit",
           )}
         </span>
         <h2
@@ -217,42 +216,42 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
         >
           {l(
             lang,
-            "Welcome to Clarvia ASBL's Founding Cohort",
-            "Bienvenue au sein de la cohorte fondatrice de Clarvia ASBL",
-            "Willkommen in der Gründerkohorte von Clarvia ASBL",
-            "Wëllkomm an der Grënnerkohort vu Clarvia ASBL",
+            "Welcome to Clarvia's Founding Cohort",
+            "Bienvenue au sein de la cohorte fondatrice de Clarvia",
+            "Willkommen in der Gründerkohorte von Clarvia",
+            "Wëllkomm an der Grënnerkohort vu Clarvia",
           )}
         </h2>
         <p className="text-sm sm:text-base text-calm-blue-600 leading-relaxed text-pretty">
           {l(
             lang,
-            "Thank you for standing behind free administrative guidance for families worldwide. Stripe has emailed your payment receipt. If you opted in to public recognition, your LinkedIn portrait and profile link will replace an open Founding Cohort slot shortly.",
-            "Merci de soutenir un accompagnement administratif gratuit pour les familles du monde entier. Stripe vous a envoyé votre reçu par e-mail. Si vous avez choisi la publication sur le site, votre photo et votre lien LinkedIn remplaceront prochainement un emplacement ouvert.",
+            "Thank you for supporting free administrative guidance for families worldwide. Stripe has emailed your receipt, and if you opted in to public recognition, your LinkedIn portrait and link will replace an open cohort seat shortly.",
+            "Merci de soutenir un accompagnement administratif gratuit pour les familles du monde entier. Stripe vous a envoyé votre reçu par e-mail, et si vous avez choisi la publication, votre photo et votre lien LinkedIn remplaceront prochainement un siège ouvert.",
             "Vielen Dank, dass Sie kostenlose Orientierung für Familien weltweit mittragen. Stripe hat Ihnen Ihren Beleg per E-Mail gesendet. Falls Sie der Veröffentlichung zugestimmt haben, werden Ihr LinkedIn-Porträt und Profillink in Kürze freigeschaltet.",
             "Merci datt Dir gratis Orientéierung fir Famillje weltwäit ënnerstëtzt. Stripe huet Iech Är Quittung per E-Mail geschéckt. Wann Dir der Verëffentlechung zougestëmmt hutt, ginn Är LinkedIn-Foto an Äre Link an Kürze opgeschalt.",
           )}
         </p>
 
-        {/* Member Ambassador Kit: LinkedIn Profile Credential + Ready-to-Post Announcement */}
+        {/* Member Ambassador Kit */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
           <div className="rounded-xl border border-calm-blue-200 bg-calm-blue-50/60 p-4 flex flex-col justify-between">
             <div>
               <h3 className="text-sm font-semibold text-calm-blue-800 mb-1">
                 {l(
                   lang,
-                  "1. Add Clarvia ASBL to Your LinkedIn Profile",
-                  "1. Ajouter Clarvia ASBL à votre profil LinkedIn",
-                  "1. Clarvia ASBL im LinkedIn-Profil ergänzen",
-                  "1. Clarvia ASBL op Ärem LinkedIn-Profil derbäisetzen",
+                  "1. Add Clarvia to Your LinkedIn Profile",
+                  "1. Ajouter Clarvia à votre profil LinkedIn",
+                  "1. Clarvia im LinkedIn-Profil ergänzen",
+                  "1. Clarvia op Ärem LinkedIn-Profil derbäisetzen",
                 )}
               </h3>
               <p className="text-xs text-calm-blue-600 mb-2">
                 {l(
                   lang,
-                  "Authorized entry under LinkedIn Volunteering or Organizations (Organization: Clarvia ASBL):",
-                  "Mention autorisée dans la rubrique Bénévolat ou Organisations sur LinkedIn (Organisation : Clarvia ASBL) :",
-                  "Freigegebener Eintrag unter Ehrenamt oder Organisationen auf LinkedIn (Organisation: Clarvia ASBL):",
-                  "Autoriséierten Andrag ënner Benevolat oder Organisatiounen op LinkedIn (Organisatioun: Clarvia ASBL):",
+                  "Authorized entry under LinkedIn Volunteering or Organizations (Organization: Clarvia):",
+                  "Mention autorisée sous Bénévolat ou Organisations sur LinkedIn (Organisation : Clarvia) :",
+                  "Freigegebener Eintrag unter Ehrenamt oder Organisationen auf LinkedIn (Organisation: Clarvia):",
+                  "Autoriséierten Andrag ënner Benevolat oder Organisatiounen op LinkedIn (Organisatioun: Clarvia):",
                 )}
               </p>
               <div className="rounded-lg bg-white border border-calm-blue-200/80 p-2.5 text-xs text-calm-blue-700 space-y-1">
@@ -267,7 +266,7 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
                 type="button"
                 onClick={() =>
                   copySnippet(
-                    `${linkedinRoleTitle}\nClarvia ASBL\n\n${linkedinProfileBio}`,
+                    `${linkedinRoleTitle}\nClarvia\n\n${linkedinProfileBio}`,
                     "credential",
                   )
                 }
@@ -336,7 +335,7 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
         </div>
       </div>
 
-      {/* Printable Official Certificate of Admission (Board Resolution 2026-01 §2) */}
+      {/* Printable Official Certificate of Admission */}
       <div className="space-y-3">
         <div className="flex flex-wrap items-end justify-between gap-3 no-print">
           <div className="flex-grow max-w-sm">
@@ -388,16 +387,24 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
           <div className="flex items-center justify-between border-b border-calm-blue-200 pb-4 mb-6">
             <Image
               src="/clarvia-logo.webp"
-              alt="Clarvia ASBL"
+              alt="Clarvia"
               width={128}
               height={56}
               unoptimized
               className="h-11 w-auto object-contain"
             />
             <div className="text-right text-xs text-calm-blue-600">
-              <p className="font-semibold text-calm-blue-800">CLARVIA A.S.B.L.</p>
-              <p>RCS Luxembourg F15680 · Matricule 20266102373</p>
-              <p>46, Rue de la Lavande · L-1923 Luxembourg</p>
+              <p className="font-semibold text-calm-blue-800">CLARVIA ASBL</p>
+              <p>
+                {l(
+                  lang,
+                  "Registered Non-Profit · Grand Duchy of Luxembourg",
+                  "Association à but non lucratif · Grand-Duché de Luxembourg",
+                  "Gemeinnützige Non-Profit-Organisation · Luxemburg",
+                  "Registréiert Non-Profit-Organisatioun · Lëtzebuerg",
+                )}
+              </p>
+              <p>clarvia.org</p>
             </div>
           </div>
 
@@ -419,10 +426,10 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
           <p className="text-sm text-calm-blue-700 leading-relaxed mb-6">
             {l(
               lang,
-              "is hereby admitted as a Contributing Associate Member (Membre adhérent / Beitragendes assoziiertes Mitglied) of Clarvia ASBL pursuant to Articles 7 and 8 of the Articles of Association and Written Resolution 2026-01 of the Board of Directors, in support of free, multilingual administrative guidance for families worldwide.",
-              "est admis(e) en qualité de membre adhérent cotisant de Clarvia ASBL conformément aux articles 7 et 8 des statuts et à la résolution écrite 2026-01 du conseil d'administration, en soutien à la diffusion gratuite d'une orientation administrative multilingue pour les familles dans le monde entier.",
-              "wird hiermit gemäß Artikel 7 und 8 der Satzung sowie dem schriftlichen Vorstandsbeschluss 2026-01 als beitragendes assoziiertes Mitglied (Membre adhérent) von Clarvia ASBL aufgenommen, zur Förderung kostenloser, mehrsprachiger Orientierung für Familien weltweit.",
-              "gëtt heimat geméiss Artikel 7 an 8 vun de Statuten an der schrëftlecher Resolutioun 2026-01 vum Verwaltungsrot als assoziéierte Member (Membre adhérent) vu Clarvia ASBL opgeholl, fir gratis méisproocheg Orientéierung fir Famillje weltwäit z'ënnerstëtzen.",
+              "is hereby admitted as a Contributing Associate Member of Clarvia pursuant to Articles 7 and 8 of the Articles of Association, in support of free, multilingual administrative guidance for families worldwide.",
+              "est admis(e) en qualité de membre adhérent cotisant de Clarvia conformément aux articles 7 et 8 des statuts, en soutien à la diffusion gratuite d'une orientation administrative multilingue pour les familles dans le monde entier.",
+              "wird hiermit gemäß Artikel 7 und 8 der Satzung als beitragendes assoziiertes Mitglied von Clarvia aufgenommen, zur Förderung kostenloser, mehrsprachiger Orientierung für Familien weltweit.",
+              "gëtt heimat geméiss Artikel 7 an 8 vun de Statuten als assoziéierte Member vu Clarvia opgeholl, fir gratis méisproocheg Orientéierung fir Famillje weltwäit z'ënnerstëtzen.",
             )}
           </p>
 
@@ -444,8 +451,8 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
                 <span className="font-semibold text-calm-blue-800">
                   {l(
                     lang,
-                    "Statutory category:",
-                    "Catégorie statutaire :",
+                    "Membership category:",
+                    "Catégorie :",
                     "Kategorie:",
                     "Kategorie:",
                   )}
@@ -464,19 +471,10 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
               <p>
                 {l(
                   lang,
-                  "President & Director, Clarvia ASBL",
-                  "Président et administrateur, Clarvia ASBL",
-                  "Präsident & Vorstandsmitglied, Clarvia ASBL",
-                  "President & Direkter, Clarvia ASBL",
-                )}
-              </p>
-              <p className="text-[11px] text-calm-blue-600">
-                {l(
-                  lang,
-                  "Issued electronically pursuant to Board Resolution 2026-01 §2",
-                  "Émis électroniquement en vertu de la résolution 2026-01 §2",
-                  "Elektronisch ausgestellt gemäß Vorstandsbeschluss 2026-01 §2",
-                  "Elektronesch ausgestallt geméiss Resolutioun 2026-01 §2",
+                  "President & Co-Founder, Clarvia",
+                  "Président et cofondateur, Clarvia",
+                  "Präsident & Mitgründer, Clarvia",
+                  "President & Matgrënner, Clarvia",
                 )}
               </p>
             </div>

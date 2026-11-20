@@ -554,10 +554,10 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
                 <p className="text-sm text-calm-blue-600 leading-relaxed mb-3">
                   {l(
                     lang,
-                    "Individuals who want to stand behind Clarvia's free 196-country guidance and help spread awareness across their professional networks may join Clarvia ASBL as statutory Associate Members (€40/month or €480/year, zero personal liability, optional LinkedIn profile recognition).",
-                    "Les personnes souhaitant soutenir durablement la mission gratuite de Clarvia dans 196 pays et la faire connaître dans leur réseau peuvent adhérer à Clarvia ASBL en tant que membres adhérents statutaires (40 €/mois ou 480 €/an, aucune responsabilité personnelle, mention LinkedIn facultative).",
-                    "Persönlichkeiten, die Clarvias kostenlose Orientierung in 196 Ländern dauerhaft fördern und in ihrem beruflichen Netzwerk bekannt machen möchten, können Clarvia ASBL als satzungsmäßiges assoziiertes Mitglied beitreten (40 €/Monat oder 480 €/Jahr, keine persönliche Haftung, optionale LinkedIn-Nennung).",
-                    "Persounen, déi d'gratis Orientéierung vu Clarvia an 196 Länner dauerhaft ënnerstëtzen an an hirem berufflechen Netzwierk bekannt maache wëllen, kënne Clarvia ASBL als statutaire assoziéierte Member bäitrieden (40 €/Mount oder 480 €/Joer, keng perséinlech Haftung, optional LinkedIn-Ernimmung).",
+                    "Individuals who want to stand behind Clarvia's free non-profit guidance across 196 countries and share our mission in their professional networks may join as Associate Members (€40/month or €480/year, zero personal liability, optional LinkedIn recognition).",
+                    "Les personnes souhaitant soutenir durablement la mission gratuite à but non lucratif de Clarvia dans 196 pays et la faire connaître dans leur réseau peuvent adhérer comme membres adhérents (40 €/mois ou 480 €/an, aucune responsabilité personnelle, mention LinkedIn facultative).",
+                    "Persönlichkeiten, die Clarvias kostenlose gemeinnützige Orientierung in 196 Ländern dauerhaft fördern und in ihrem beruflichen Netzwerk bekannt machen möchten, können als assoziiertes Mitglied beitreten (40 €/Monat oder 480 €/Jahr, keine persönliche Haftung, optionale LinkedIn-Nennung).",
+                    "Persounen, déi d'gratis Non-Profit-Orientéierung vu Clarvia an 196 Länner dauerhaft ënnerstëtzen an an hirem berufflechen Netzwierk bekannt maache wëllen, kënnen als assoziéierte Member bäitrieden (40 €/Mount oder 480 €/Joer, keng perséinlech Haftung, optional LinkedIn-Ernimmung).",
                   )}
                 </p>
                 <Link

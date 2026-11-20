@@ -48,28 +48,28 @@ function getMembershipProductCopy(
 ): { name: string; description: string } {
   if (lang === "fr" || lang === "lu") {
     return {
-      name: "Clarvia ASBL \u2013 Cotisation de membre adh\u00e9rent",
+      name: "Clarvia (association \u00e0 but non lucratif) : Membre adh\u00e9rent",
       description:
         interval === "year"
-          ? `${amount} \u20AC/an \u00b7 Membre adh\u00e9rent sans droit de vote (art. 7 des statuts)`
-          : `${amount} \u20AC/mois \u00b7 Membre adh\u00e9rent sans droit de vote (art. 7 des statuts)`,
+          ? `${amount} \u20AC/an \u00b7 Cotisation de membre adh\u00e9rent sans droit de vote`
+          : `${amount} \u20AC/mois \u00b7 Cotisation de membre adh\u00e9rent sans droit de vote`,
     };
   }
   if (lang === "de") {
     return {
-      name: "Clarvia ASBL \u2013 Beitrag assoziiertes Mitglied",
+      name: "Clarvia Non-Profit: Assoziiertes Mitglied",
       description:
         interval === "year"
-          ? `${amount} \u20AC/Jahr \u00b7 Assoziiertes Mitglied ohne Stimmrecht (Art. 7 der Satzung)`
-          : `${amount} \u20AC/Monat \u00b7 Assoziiertes Mitglied ohne Stimmrecht (Art. 7 der Satzung)`,
+          ? `${amount} \u20AC/Jahr \u00b7 Satzungsm\u00e4\u00dfiger Beitrag ohne Stimmrecht`
+          : `${amount} \u20AC/Monat \u00b7 Satzungsm\u00e4\u00dfiger Beitrag ohne Stimmrecht`,
     };
   }
   return {
-    name: "Clarvia ASBL \u2013 Associate Membership",
+    name: "Clarvia Non-Profit: Associate Membership",
     description:
       interval === "year"
-        ? `\u20AC${amount}/year \u00b7 Non-voting Associate Member contribution (Art. 7 AoA)`
-        : `\u20AC${amount}/month \u00b7 Non-voting Associate Member contribution (Art. 7 AoA)`,
+        ? `\u20AC${amount}/year \u00b7 Non-voting Associate Member contribution`
+        : `\u20AC${amount}/month \u00b7 Non-voting Associate Member contribution`,
   };
 }
 
