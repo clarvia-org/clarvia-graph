@@ -502,5 +502,18 @@ describe("/api/donate associate_membership branch", () => {
     );
     expect(kitSource).toContain("trackMembershipComplete");
     expect(kitSource).not.toContain("trackDonationComplete");
+
+    const formSource = fs.readFileSync(
+      path.join(
+        __dirname,
+        "..",
+        "src",
+        "features",
+        "membership",
+        "MembershipForm.tsx",
+      ),
+      "utf8",
+    );
+    expect(formSource).toContain("await trackBeginCheckout(");
   });
 });
