@@ -8,6 +8,11 @@ export const ASK_SUBMITTED_STORAGE_KEY = "clarvia-ask-submitted";
 const ADS_ID_PATTERN = /^AW-\d+$/;
 const ADS_CONVERSION_PATTERN = /^AW-\d+\/[A-Za-z0-9_-]+$/;
 
+export const DEFAULT_ADS_MEMBERSHIP_PAID_CONVERSION =
+  "AW-18472344537/zv56CIq4pbwdENm3puhE";
+export const DEFAULT_ADS_MEMBERSHIP_CHECKOUT_CONVERSION =
+  "AW-18472344537/oxOBCPrwq7wdENm3puhE";
+
 export function sanitizeAdsId(raw: string | undefined | null): string | undefined {
   const id = raw?.trim();
   return id && ADS_ID_PATTERN.test(id) ? id : undefined;
@@ -32,6 +37,20 @@ export function adsDonateConversionSendTo(): string | undefined {
 
 export function adsGuideConversionSendTo(): string | undefined {
   return sanitizeAdsConversion(process.env.NEXT_PUBLIC_GOOGLE_ADS_GUIDE_CONVERSION);
+}
+
+export function adsMembershipPaidConversionSendTo(): string | undefined {
+  return sanitizeAdsConversion(
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_MEMBERSHIP_PAID_CONVERSION ||
+      DEFAULT_ADS_MEMBERSHIP_PAID_CONVERSION,
+  );
+}
+
+export function adsMembershipCheckoutConversionSendTo(): string | undefined {
+  return sanitizeAdsConversion(
+    process.env.NEXT_PUBLIC_GOOGLE_ADS_MEMBERSHIP_CHECKOUT_CONVERSION ||
+      DEFAULT_ADS_MEMBERSHIP_CHECKOUT_CONVERSION,
+  );
 }
 
 /** EEA (EU-27 + IS, LI, NO) + UK + Switzerland require prior opt-in for analytics/ads cookies. */
@@ -93,27 +112,11 @@ export function trackAskSubmitted(params: {
   }
 }
 
-export function trackBeginCheckout(params: {
-  value: number;
-  currency?: string;
-  frequency: "monthly" | "annual" | "onetime";
-  landing_variant?: string;
-  item_category?: "donation" | "associate_membership";
-}): void {
-  trackEvent("begin_checkout", {
-    currency: (params.currency || "EUR").toUpperCase(),
-    value: params.value,
-    item_category: params.item_category || "donation",
-    frequency: params.frequency,
-    landing_variant: params.landing_variant,
-  });
-}
-
-export function trackDonationComplete(params: {
+function buildPaymentPayload(params: {
   value?: number | null;
   currency?: string | null;
   transaction_id: string;
-}): void {
+}): Record<string, unknown> {
   const payload: Record<string, unknown> = {
     currency: (params.currency || "EUR").toUpperCase(),
     transaction_id: params.transaction_id,
@@ -121,6 +124,43 @@ export function trackDonationComplete(params: {
   if (typeof params.value === "number" && Number.isFinite(params.value)) {
     payload.value = params.value;
   }
+  return payload;
+}
+
+export function trackBeginCheckout(params: {
+  value: number;
+  currency?: string;
+  frequency: "monthly" | "annual" | "onetime";
+  landing_variant?: string;
+  item_category?: "donation" | "associate_membership";
+}): void {
+  const currency = (params.currency || "EUR").toUpperCase();
+  trackEvent("begin_checkout", {
+    currency,
+    value: params.value,
+    item_category: params.item_category || "donation",
+    frequency: params.frequency,
+    landing_variant: params.landing_variant,
+  });
+  // Scope Ads checkout ping strictly to Associate Membership so donation flows stay isolated.
+  if (params.item_category === "associate_membership") {
+    const sendTo = adsMembershipCheckoutConversionSendTo();
+    if (sendTo) {
+      trackEvent("conversion", {
+        send_to: sendTo,
+        value: params.value,
+        currency,
+      });
+    }
+  }
+}
+
+export function trackDonationComplete(params: {
+  value?: number | null;
+  currency?: string | null;
+  transaction_id: string;
+}): void {
+  const payload = buildPaymentPayload(params);
 
   trackEvent("donate", payload);
   trackEvent("donation_complete", {
@@ -129,6 +169,23 @@ export function trackDonationComplete(params: {
     ...payload,
   });
   const sendTo = adsDonateConversionSendTo();
+  if (sendTo) {
+    trackEvent("conversion", { send_to: sendTo, ...payload });
+  }
+}
+
+export function trackMembershipComplete(params: {
+  value?: number | null;
+  currency?: string | null;
+  transaction_id: string;
+}): void {
+  const payload = buildPaymentPayload(params);
+
+  trackEvent("purchase", {
+    ...payload,
+    item_category: "associate_membership",
+  });
+  const sendTo = adsMembershipPaidConversionSendTo();
   if (sendTo) {
     trackEvent("conversion", { send_to: sendTo, ...payload });
   }

@@ -418,4 +418,89 @@ describe("/api/donate associate_membership branch", () => {
     expect(data.name).toBeUndefined();
     expect(data.email).toBeUndefined();
   });
+
+  it("preserves valid gclid across Stripe success_url and cancel_url without encoding CHECKOUT_SESSION_ID", async () => {
+    const gclid = "EAIaIQobChMI1234567890_abc-XYZ";
+    const membershipRes = await POST(
+      makePostRequest(
+        {
+          program: "associate_membership",
+          type: "annual",
+          lang: "de",
+          memberName: "Dr. Lukas Weber",
+          ambassadorAgreed: true,
+          publishMember: false,
+          attribution: { gclid },
+        },
+        "198.51.100.16",
+      ),
+    );
+    expect(membershipRes.status).toBe(200);
+    const membershipArg = mockSessionCreate.mock.calls[0][0];
+    expect(membershipArg.success_url).toBe(
+      `https://clarvia.org/de/membership?joined=true&session_id={CHECKOUT_SESSION_ID}&gclid=${gclid}`,
+    );
+    expect(membershipArg.cancel_url).toBe(
+      `https://clarvia.org/de/membership?gclid=${gclid}`,
+    );
+
+    const donationRes = await POST(
+      makePostRequest(
+        {
+          amount: 25,
+          type: "onetime",
+          lang: "en",
+          attribution: { gclid },
+        },
+        "198.51.100.17",
+      ),
+    );
+    expect(donationRes.status).toBe(200);
+    const donationArg = mockSessionCreate.mock.calls[1][0];
+    expect(donationArg.success_url).toBe(
+      `https://clarvia.org/en/support?donated=true&session_id={CHECKOUT_SESSION_ID}&gclid=${gclid}`,
+    );
+    expect(donationArg.cancel_url).toBe(
+      `https://clarvia.org/en/support?gclid=${gclid}`,
+    );
+  });
+
+  it("drops malformed attribution gclid from Stripe redirect URLs", async () => {
+    const res = await POST(
+      makePostRequest(
+        {
+          program: "associate_membership",
+          type: "monthly",
+          lang: "en",
+          memberName: "Marie Claire",
+          ambassadorAgreed: true,
+          publishMember: false,
+          attribution: { gclid: "bad&next=https://evil.example" },
+        },
+        "198.51.100.18",
+      ),
+    );
+    expect(res.status).toBe(200);
+    const arg = mockSessionCreate.mock.calls[0][0];
+    expect(arg.success_url).toBe(
+      "https://clarvia.org/en/membership?joined=true&session_id={CHECKOUT_SESSION_ID}",
+    );
+    expect(arg.cancel_url).toBe("https://clarvia.org/en/membership");
+  });
+
+  it("wires trackMembershipComplete rather than trackDonationComplete in MembershipSuccessKit", async () => {
+    const kitSource = fs.readFileSync(
+      path.join(
+        __dirname,
+        "..",
+        "src",
+        "features",
+        "membership",
+        "MembershipSuccessKit.tsx",
+      ),
+      "utf8",
+    );
+    expect(kitSource).toContain("trackMembershipComplete");
+    expect(kitSource).not.toContain("trackDonationComplete");
+  });
 });

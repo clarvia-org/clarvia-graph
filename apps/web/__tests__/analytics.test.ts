@@ -1,5 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
+  DEFAULT_ADS_MEMBERSHIP_CHECKOUT_CONVERSION,
+  DEFAULT_ADS_MEMBERSHIP_PAID_CONVERSION,
   EEA_UK_CH_REGIONS,
   GA_MEASUREMENT_ID,
   googleTagBootstrapScript,
@@ -9,6 +11,7 @@ import {
   trackBeginCheckout,
   trackDonationComplete,
   trackGuideShareCopy,
+  trackMembershipComplete,
   trackOfficialSourceClick,
   trackPageView,
 } from "@/lib/analytics";
@@ -191,6 +194,71 @@ describe("Google Ads / GA4 helpers", () => {
           landing_variant: "support",
         })
       );
+      expect(gtag.mock.calls.some((call) => call[1] === "conversion")).toBe(false);
+    });
+
+    it("fires secondary Google Ads checkout conversion strictly for associate_membership", () => {
+      trackBeginCheckout({
+        value: 40,
+        frequency: "monthly",
+        landing_variant: "membership",
+        item_category: "associate_membership",
+      });
+      expect(gtag).toHaveBeenCalledWith(
+        "event",
+        "begin_checkout",
+        expect.objectContaining({
+          currency: "EUR",
+          value: 40,
+          item_category: "associate_membership",
+          frequency: "monthly",
+          landing_variant: "membership",
+        })
+      );
+      expect(gtag).toHaveBeenCalledWith("event", "conversion", {
+        send_to: DEFAULT_ADS_MEMBERSHIP_CHECKOUT_CONVERSION,
+        value: 40,
+        currency: "EUR",
+      });
+    });
+
+    it("fires purchase and primary Google Ads conversion for completed associate membership", () => {
+      trackMembershipComplete({
+        value: 480,
+        currency: "eur",
+        transaction_id: "cs_mem_480",
+      });
+      expect(gtag).toHaveBeenCalledWith("event", "purchase", {
+        currency: "EUR",
+        value: 480,
+        transaction_id: "cs_mem_480",
+        item_category: "associate_membership",
+      });
+      expect(gtag).toHaveBeenCalledWith("event", "conversion", {
+        send_to: DEFAULT_ADS_MEMBERSHIP_PAID_CONVERSION,
+        currency: "EUR",
+        value: 480,
+        transaction_id: "cs_mem_480",
+      });
+      expect(gtag.mock.calls.some((call) => call[1] === "donate")).toBe(false);
+      expect(gtag.mock.calls.some((call) => call[1] === "donation_complete")).toBe(false);
+    });
+
+    it("allows overriding membership Ads conversion via env and omits null value", () => {
+      vi.stubEnv(
+        "NEXT_PUBLIC_GOOGLE_ADS_MEMBERSHIP_PAID_CONVERSION",
+        "AW-999/custommem"
+      );
+      trackMembershipComplete({
+        value: null,
+        currency: "EUR",
+        transaction_id: "cs_mem_null",
+      });
+      expect(gtag).toHaveBeenCalledWith("event", "conversion", {
+        send_to: "AW-999/custommem",
+        currency: "EUR",
+        transaction_id: "cs_mem_null",
+      });
     });
 
     it("records client route page views with the current URL", () => {
