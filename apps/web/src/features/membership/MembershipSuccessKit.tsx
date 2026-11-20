@@ -9,7 +9,7 @@ import {
   classifyMembershipSessionResponse,
   FOUNDING_COHORT_YEARS,
 } from "@/content/associate-members";
-import { trackDonationComplete } from "@/lib/analytics";
+import { trackMembershipComplete } from "@/lib/analytics";
 import { type Lang, l } from "@/lib/i18n";
 
 export interface MembershipSuccessKitProps {
@@ -67,7 +67,7 @@ function MembershipSuccessKitInner({ lang }: MembershipSuccessKitProps) {
           }
 
           if (!alreadyTracked) {
-            trackDonationComplete({
+            trackMembershipComplete({
               value: outcome.amount,
               currency: outcome.currency,
               transaction_id: sessionId,

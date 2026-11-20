@@ -12,6 +12,20 @@ import { getStripe } from "@/lib/stripe";
 const limiter = rateLimit("donate", 10, 60_000);
 const verifyLimiter = rateLimit("donate-verify", 30, 60_000);
 
+const GCLID_PATTERN = /^[A-Za-z0-9_-]{8,160}$/;
+
+function sanitizeGclid(raw: unknown): string | null {
+  if (typeof raw !== "string") return null;
+  const trimmed = raw.trim();
+  return GCLID_PATTERN.test(trimmed) ? trimmed : null;
+}
+
+function appendGclid(url: string, gclid: string | null): string {
+  if (!gclid) return url;
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}gclid=${encodeURIComponent(gclid)}`;
+}
+
 function sanitizeDisplayName(raw: unknown): string | null {
   if (typeof raw !== "string") return null;
   let cleaned = "";
@@ -175,6 +189,7 @@ export async function POST(req: NextRequest) {
 
   const lang: Lang = body.lang && isLang(body.lang) ? body.lang : "en";
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://clarvia.org";
+  const gclid = sanitizeGclid(body.attribution?.gclid);
   const stripeLocale: Stripe.Checkout.SessionCreateParams["locale"] =
     lang === "fr" || lang === "lu" ? "fr" : lang === "de" ? "de" : "en";
 
@@ -256,8 +271,11 @@ export async function POST(req: NextRequest) {
 
     const { name: productName, description: productDesc } =
       getMembershipProductCopy(billingInterval, lang, amount);
-    const successUrl = `${baseUrl}/${lang}/membership?joined=true&session_id={CHECKOUT_SESSION_ID}`;
-    const cancelUrl = `${baseUrl}/${lang}/membership`;
+    const successUrl = appendGclid(
+      `${baseUrl}/${lang}/membership?joined=true&session_id={CHECKOUT_SESSION_ID}`,
+      gclid,
+    );
+    const cancelUrl = appendGclid(`${baseUrl}/${lang}/membership`, gclid);
 
     try {
       const session = await stripe.checkout.sessions.create({
@@ -314,8 +332,11 @@ export async function POST(req: NextRequest) {
   }
 
   const amountCents = Math.round(amount * 100);
-  const successUrl = `${baseUrl}/${lang}/support?donated=true&session_id={CHECKOUT_SESSION_ID}`;
-  const cancelUrl = `${baseUrl}/${lang}/support`;
+  const successUrl = appendGclid(
+    `${baseUrl}/${lang}/support?donated=true&session_id={CHECKOUT_SESSION_ID}`,
+    gclid,
+  );
+  const cancelUrl = appendGclid(`${baseUrl}/${lang}/support`, gclid);
 
   const productName =
     type === "monthly"
