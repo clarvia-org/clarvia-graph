@@ -4,6 +4,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import CorridorIntegrationTable from "@/app/[lang]/research/cross-border-bereavement-integration-index/CorridorIntegrationTable";
+import { generateMetadata as generateStudy1Metadata } from "@/app/[lang]/research/cross-border-bereavement-integration-index/page";
 import {
   allCorridorGuides,
   getCorridorGuideBySlug,
@@ -271,5 +272,33 @@ describe("Cross-Border Bereavement & Serious Illness Administrative Integration 
       );
       expect(content, `Unexpected em-dash in ${relPath}`).not.toContain("—");
     }
+  });
+
+  it("publishes valid PDF working paper and Highwire Press scholar metadata", async () => {
+    const pdfPath = path.join(
+      __dirname,
+      "..",
+      "public",
+      "data",
+      "research",
+      "cross-border-integration-index-2026.pdf",
+    );
+    const bytes = fs.readFileSync(pdfPath);
+    expect(bytes.subarray(0, 5).toString("ascii")).toBe("%PDF-");
+    expect(bytes.byteLength).toBeGreaterThan(50_000);
+
+    const meta = await generateStudy1Metadata({
+      params: Promise.resolve({ lang: "en" }),
+    });
+    expect(meta.other?.citation_title).toBe(
+      "Cross-Border Bereavement & Serious Illness Administrative Integration Index (2026)",
+    );
+    expect(meta.other?.citation_pdf_url).toBe(
+      "https://clarvia.org/data/research/cross-border-integration-index-2026.pdf",
+    );
+    expect(meta.other?.citation_author).toEqual([
+      "Tommi Lindfors",
+      "Clarvia ASBL",
+    ]);
   });
 });

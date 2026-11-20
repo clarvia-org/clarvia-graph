@@ -6,3 +6,6 @@ sources/snapshots/html/** -diff -merge binary
 sources/snapshots/html/** linguist-vendored=true
 exports/** linguist-generated=true
 *.json linguist-generated=true
+
+# Public website static PDFs must be regular Git blobs (not LFS pointers) for CI and Coolify builds
+apps/web/public/data/research/*.pdf !filter !diff !merge binary

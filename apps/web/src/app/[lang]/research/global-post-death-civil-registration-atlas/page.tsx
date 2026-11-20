@@ -13,6 +13,7 @@ import {
   STUDY_2_CANONICAL_URL,
   STUDY_2_CSV_PATH,
   STUDY_2_JSON_PATH,
+  STUDY_2_PDF_PATH,
   STUDY_2_PUBLISHED_DATE,
   STUDY_2_SLUG,
   ZENODO_RECORD_URL,
@@ -27,6 +28,8 @@ import { STUDY_3_CANONICAL_URL } from "@/content/research/advance-directives-inc
 
 const PAGE_TITLE =
   "Global Post-Death Civil Registration & Estate Administration Atlas (2026) | Clarvia";
+const STUDY_HEADLINE =
+  "Global Post-Death Civil Registration & Estate Administration Atlas (2026)";
 const PAGE_DESCRIPTION =
   "A 196-country comparative atlas of statutory death registration windows, digital health-to-registry reporting, once-only agency notifications, succession gatekeepers, and Hague Apostille reach.";
 
@@ -62,6 +65,16 @@ export async function generateMetadata({
       images: [
         { url: "https://clarvia.org/og-image.png", width: 1200, height: 630 },
       ],
+    },
+    other: {
+      citation_title: STUDY_HEADLINE,
+      citation_author: ["Tommi Lindfors", "Clarvia ASBL"],
+      citation_author_institution: "Clarvia ASBL",
+      citation_publication_date: "2026/11/18",
+      citation_pdf_url: `https://clarvia.org${STUDY_2_PDF_PATH}`,
+      citation_public_url: STUDY_2_CANONICAL_URL,
+      citation_publisher: "Clarvia ASBL",
+      citation_language: "en",
     },
   };
 }
@@ -138,6 +151,11 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
         sameAs: ZENODO_STUDY_CORPUS_DOI_URL,
         author: { "@id": "https://clarvia.org/#organization" },
         publisher: { "@id": "https://clarvia.org/#organization" },
+        encoding: {
+          "@type": "MediaObject",
+          encodingFormat: "application/pdf",
+          contentUrl: `https://clarvia.org${STUDY_2_PDF_PATH}`,
+        },
         mainEntityOfPage: {
           "@type": "WebPage",
           "@id": STUDY_2_CANONICAL_URL,
@@ -160,6 +178,11 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
         isBasedOn: ZENODO_STUDY_CORPUS_DOI_URL,
         sameAs: [ZENODO_RECORD_URL, ZENODO_STUDY_CORPUS_DOI_URL],
         distribution: [
+          {
+            "@type": "DataDownload",
+            encodingFormat: "application/pdf",
+            contentUrl: `https://clarvia.org${STUDY_2_PDF_PATH}`,
+          },
           {
             "@type": "DataDownload",
             encodingFormat: "text/csv",
@@ -243,7 +266,7 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
         </header>
 
         {/* Direct Raw Data Downloads & Open Verification */}
-        <div
+        <section
           aria-label="Reproducible dataset downloads and source code"
           className="mb-10 rounded-xl border border-calm-blue-200 bg-white/80 p-4 flex flex-wrap items-center justify-between gap-3"
         >
@@ -251,6 +274,13 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
             Inspect or verify all {study.totalCountries} country rows directly:
           </span>
           <div className="flex flex-wrap items-center gap-2">
+            <a
+              href={STUDY_2_PDF_PATH}
+              download
+              className="inline-flex items-center min-h-11 rounded-lg border border-calm-blue-300 bg-white hover:bg-calm-blue-50 px-3 py-2 text-xs font-semibold text-calm-blue-800"
+            >
+              Download PDF (Working Paper)
+            </a>
             <a
               href={STUDY_2_CSV_PATH}
               download
@@ -282,7 +312,7 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
               592-guide Zenodo archive
             </a>
           </div>
-        </div>
+        </section>
 
         {/* Key Findings */}
         <section aria-labelledby="key-findings-heading" className="mb-12">
