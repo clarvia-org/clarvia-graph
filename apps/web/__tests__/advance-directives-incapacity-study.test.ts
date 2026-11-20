@@ -350,6 +350,7 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
     expect(meta.other?.citation_title).toBe(
       "Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border Portability (2026)",
     );
+    expect(meta.other?.citation_doi).toBe("10.5281/zenodo.24388599");
     expect(meta.other?.citation_pdf_url).toBe(
       "https://clarvia.org/data/research/global-advance-directives-incapacity-mandates-2026.pdf",
     );

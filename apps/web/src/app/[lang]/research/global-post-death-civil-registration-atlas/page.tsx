@@ -12,10 +12,14 @@ import {
   MACRO_REGION_ORDER,
   STUDY_2_CANONICAL_URL,
   STUDY_2_CSV_PATH,
+  STUDY_2_DATA_PUBLIC_LU_URL,
   STUDY_2_JSON_PATH,
   STUDY_2_PDF_PATH,
   STUDY_2_PUBLISHED_DATE,
   STUDY_2_SLUG,
+  STUDY_2_ZENODO_DOI,
+  STUDY_2_ZENODO_DOI_URL,
+  STUDY_2_ZENODO_RECORD_URL,
   ZENODO_RECORD_URL,
   ZENODO_SOFTWARE_DOI,
   ZENODO_SOFTWARE_RECORD_URL,
@@ -71,6 +75,7 @@ export async function generateMetadata({
       citation_author: ["Tommi Lindfors", "Clarvia ASBL"],
       citation_author_institution: "Clarvia ASBL",
       citation_publication_date: "2026/11/18",
+      citation_doi: STUDY_2_ZENODO_DOI,
       citation_pdf_url: `https://clarvia.org${STUDY_2_PDF_PATH}`,
       citation_public_url: STUDY_2_CANONICAL_URL,
       citation_publisher: "Clarvia ASBL",
@@ -148,7 +153,7 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
         dateModified: study.publishedDate,
         license: "https://creativecommons.org/licenses/by/4.0/",
         isBasedOn: ZENODO_STUDY_CORPUS_DOI_URL,
-        sameAs: ZENODO_STUDY_CORPUS_DOI_URL,
+        sameAs: [STUDY_2_ZENODO_DOI_URL, STUDY_2_ZENODO_RECORD_URL],
         author: { "@id": "https://clarvia.org/#organization" },
         publisher: { "@id": "https://clarvia.org/#organization" },
         encoding: {
@@ -176,7 +181,13 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
         url: STUDY_2_CANONICAL_URL,
         license: "https://creativecommons.org/licenses/by/4.0/",
         isBasedOn: ZENODO_STUDY_CORPUS_DOI_URL,
-        sameAs: [ZENODO_RECORD_URL, ZENODO_STUDY_CORPUS_DOI_URL],
+        sameAs: [
+          STUDY_2_ZENODO_RECORD_URL,
+          STUDY_2_ZENODO_DOI_URL,
+          STUDY_2_DATA_PUBLIC_LU_URL,
+          ZENODO_RECORD_URL,
+          ZENODO_STUDY_CORPUS_DOI_URL,
+        ],
         distribution: [
           {
             "@type": "DataDownload",
@@ -240,12 +251,12 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
               {study.verifySnapshot}
             </time>
             <a
-              href={ZENODO_RECORD_URL}
+              href={STUDY_2_ZENODO_RECORD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full bg-calm-blue-50 border border-calm-blue-200 px-3 py-1 text-xs font-semibold text-calm-blue-700 hover:bg-calm-blue-100"
             >
-              Dataset DOI: {ZENODO_STUDY_CORPUS_DOI} · CC BY 4.0
+              Study DOI: {STUDY_2_ZENODO_DOI} · CC BY 4.0
             </a>
           </div>
 
@@ -304,12 +315,20 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
               View classification code on GitHub
             </a>
             <a
-              href={ZENODO_RECORD_URL}
+              href={STUDY_2_ZENODO_RECORD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center min-h-11 rounded-lg border border-calm-blue-200 bg-calm-blue-50/70 hover:bg-calm-blue-100 px-3 py-2 text-xs font-semibold text-calm-blue-800"
             >
-              592-guide Zenodo archive
+              Zenodo record ({STUDY_2_ZENODO_DOI})
+            </a>
+            <a
+              href={STUDY_2_DATA_PUBLIC_LU_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center min-h-11 rounded-lg border border-calm-blue-200 bg-calm-blue-50/70 hover:bg-calm-blue-100 px-3 py-2 text-xs font-semibold text-calm-blue-800"
+            >
+              data.public.lu open dataset
             </a>
           </div>
         </section>
@@ -1103,8 +1122,8 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
             boxId="cite-this-study"
             heading="Cite or link to this atlas"
             body="Policy teams, registries, researchers, civil-society partners, and journalists may freely cite, link to, or reuse this CC BY 4.0 study and 196-country dataset."
-            snippetSuffix="Clarvia ASBL (CC BY 4.0, Dataset DOI: 10.5281/zenodo.24245341)"
-            plainTextOverride="Clarvia ASBL (2026). Global Post-Death Civil Registration & Estate Administration Atlas: 196-Country Comparative Study. https://clarvia.org/en/research/global-post-death-civil-registration-atlas (Dataset: https://zenodo.org/records/24245341; Software archive: https://zenodo.org/records/20572455)"
+            snippetSuffix="Clarvia ASBL (CC BY 4.0, Study DOI: 10.5281/zenodo.24388597)"
+            plainTextOverride="Clarvia ASBL & Lindfors, T. (2026). Global Post-Death Civil Registration & Estate Administration Atlas: 196-Country Comparative Study. https://clarvia.org/en/research/global-post-death-civil-registration-atlas (Study DOI: https://doi.org/10.5281/zenodo.24388597; Corpus Dataset: https://zenodo.org/records/24245341; Software archive: https://zenodo.org/records/20572455)"
           />
         </div>
 

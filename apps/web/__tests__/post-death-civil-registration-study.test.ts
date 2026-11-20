@@ -326,6 +326,7 @@ describe("Global Post-Death Civil Registration & Estate Administration Atlas (19
     expect(meta.other?.citation_title).toBe(
       "Global Post-Death Civil Registration & Estate Administration Atlas (2026)",
     );
+    expect(meta.other?.citation_doi).toBe("10.5281/zenodo.24388597");
     expect(meta.other?.citation_pdf_url).toBe(
       "https://clarvia.org/data/research/global-post-death-civil-registration-2026.pdf",
     );

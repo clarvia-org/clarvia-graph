@@ -293,6 +293,7 @@ describe("Cross-Border Bereavement & Serious Illness Administrative Integration 
     expect(meta.other?.citation_title).toBe(
       "Cross-Border Bereavement & Serious Illness Administrative Integration Index (2026)",
     );
+    expect(meta.other?.citation_doi).toBe("10.5281/zenodo.24388595");
     expect(meta.other?.citation_pdf_url).toBe(
       "https://clarvia.org/data/research/cross-border-integration-index-2026.pdf",
     );
