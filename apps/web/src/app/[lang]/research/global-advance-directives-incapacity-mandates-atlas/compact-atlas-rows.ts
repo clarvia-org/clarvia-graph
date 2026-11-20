@@ -169,3 +169,42 @@ export function toCompactAdvanceDirectivesRows(
 export function expandCompactGuideHref(suffix: string): string {
   return suffix.startsWith("/") ? suffix : `${GUIDE_HREF_PREFIX}${suffix}`;
 }
+
+export function buildCompactRowSearchText(
+  row: CompactAdvanceDirectivesRow,
+): string {
+  const [
+    countryCode,
+    countryName,
+    macroRegion,
+    ,
+    ahdRegime,
+    ahdCustomSummary,
+    mandateRegime,
+    mandateCustomSummary,
+    carerRegime,
+    hcch35Status,
+    apostilleStatus,
+    ,
+    ,
+    extraSearch,
+  ] = row;
+  const ahdInfo = AHD_META[ahdRegime];
+  const mandateInfo = MANDATE_META[mandateRegime];
+  return [
+    countryName,
+    countryCode,
+    macroRegion,
+    ahdInfo.shortLabel,
+    ahdCustomSummary || ahdInfo.defaultSummary,
+    mandateInfo.shortLabel,
+    mandateCustomSummary || mandateInfo.defaultSummary,
+    CARER_META[carerRegime].shortLabel,
+    HCCH35_META[hcch35Status].shortLabel,
+    APOSTILLE_SHORT_LABEL[apostilleStatus],
+    extraSearch,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}

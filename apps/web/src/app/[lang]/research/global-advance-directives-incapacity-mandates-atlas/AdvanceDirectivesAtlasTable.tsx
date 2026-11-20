@@ -5,6 +5,7 @@ import {
   useCallback,
   useEffect,
   useId,
+  useMemo,
   useRef,
 } from "react";
 import { headlineStyle } from "../../data";
@@ -24,6 +25,7 @@ import {
   type CompactAdvanceDirectivesRow,
   HCCH35_META,
   MANDATE_META,
+  buildCompactRowSearchText,
   expandCompactGuideHref,
   toCompactAdvanceDirectivesRows,
 } from "./compact-atlas-rows";
@@ -123,8 +125,10 @@ export default function AdvanceDirectivesAtlasTable({
   rows?: readonly AdvanceDirectivesCountryRow[];
   regions: readonly MacroRegion[];
 }) {
-  const normalizedRows =
-    compactRows ?? (rows ? toCompactAdvanceDirectivesRows(rows) : []);
+  const normalizedRows = useMemo(
+    () => compactRows ?? (rows ? toCompactAdvanceDirectivesRows(rows) : []),
+    [compactRows, rows],
+  );
 
   const baseId = useId();
   const tableId = `${baseId}-table`;
@@ -148,6 +152,10 @@ export default function AdvanceDirectivesAtlasTable({
   const regionRef = useRef<HTMLDivElement | null>(null);
   const statusRef = useRef<HTMLParagraphElement | null>(null);
   const lastAnnouncementRef = useRef("");
+  const searchIndexRef = useRef<{
+    rows: readonly CompactAdvanceDirectivesRow[];
+    map: Map<string, string>;
+  } | null>(null);
 
   const announce = useCallback((message: string) => {
     const status = statusRef.current;
@@ -169,16 +177,28 @@ export default function AdvanceDirectivesAtlasTable({
       const mandateVal = mandateSelectRef.current?.value ?? "all";
       const combinedVal = combinedSelectRef.current?.value ?? "all";
 
+      let searchMap: Map<string, string> | null = null;
+      if (query) {
+        if (
+          !searchIndexRef.current ||
+          searchIndexRef.current.rows !== normalizedRows
+        ) {
+          const map = new Map<string, string>();
+          for (const row of normalizedRows) {
+            map.set(row[0], buildCompactRowSearchText(row));
+          }
+          searchIndexRef.current = { rows: normalizedRows, map };
+        }
+        searchMap = searchIndexRef.current.map;
+      }
+
       const trs = Array.from(tbody.querySelectorAll("tr"));
       let visible = 0;
 
       for (const tr of trs) {
         const matchesQuery =
           !query ||
-          (tr.dataset.cachedSearch ??=
-            `${tr.textContent ?? ""} ${tr.dataset.extra ?? ""}`.toLowerCase()).includes(
-            query,
-          );
+          (searchMap?.get(tr.dataset.code ?? "") ?? "").includes(query);
         const matchesRegion =
           regionVal === "all" || tr.dataset.region === regionVal;
         const matchesAhd = ahdVal === "all" || tr.dataset.ahd === ahdVal;
@@ -209,7 +229,7 @@ export default function AdvanceDirectivesAtlasTable({
         announce(`Showing ${visible} of ${normalizedRows.length} countries`);
       }
     },
-    [announce, normalizedRows.length],
+    [announce, normalizedRows],
   );
 
   const handleReset = useCallback(() => {
@@ -693,7 +713,6 @@ export default function AdvanceDirectivesAtlasTable({
                 apostilleStatus,
                 verifiedSourcesCount,
                 primarySourceUrl,
-                extraSearch,
               ]) => {
                 const ahdInfo = AHD_META[ahdRegime];
                 const mandateInfo = MANDATE_META[mandateRegime];
@@ -708,13 +727,13 @@ export default function AdvanceDirectivesAtlasTable({
                 return (
                   <tr
                     key={countryCode}
+                    data-code={countryCode}
                     data-region={macroRegion}
                     data-ahd={ahdRegime}
                     data-mandate={mandateRegime}
                     data-carer={carerRegime}
                     data-hcch35={hcch35Status}
                     data-apostille={apostilleStatus}
-                    data-extra={extraSearch || undefined}
                     className="hover:bg-calm-blue-50/50 transition-colors"
                   >
                     <th
