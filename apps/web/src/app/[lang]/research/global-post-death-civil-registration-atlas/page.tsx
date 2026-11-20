@@ -185,8 +185,6 @@ export default async function GlobalPostDeathCivilRegistrationAtlasPage({
           STUDY_2_ZENODO_RECORD_URL,
           STUDY_2_ZENODO_DOI_URL,
           STUDY_2_DATA_PUBLIC_LU_URL,
-          ZENODO_RECORD_URL,
-          ZENODO_STUDY_CORPUS_DOI_URL,
         ],
         distribution: [
           {

@@ -179,8 +179,6 @@ export default async function GlobalAdvanceDirectivesIncapacityMandatesAtlasPage
           STUDY_3_ZENODO_RECORD_URL,
           STUDY_3_ZENODO_DOI_URL,
           STUDY_3_DATA_PUBLIC_LU_URL,
-          ZENODO_RECORD_URL,
-          ZENODO_STUDY_CORPUS_DOI_URL,
         ],
         distribution: [
           {

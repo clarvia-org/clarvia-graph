@@ -182,8 +182,6 @@ export default async function CrossBorderIntegrationIndexPage({
           STUDY_1_ZENODO_RECORD_URL,
           STUDY_1_ZENODO_DOI_URL,
           STUDY_1_DATA_PUBLIC_LU_URL,
-          ZENODO_RECORD_URL,
-          ZENODO_STUDY_CORPUS_DOI_URL,
         ],
         distribution: [
           {
@@ -845,9 +843,8 @@ export default async function CrossBorderIntegrationIndexPage({
               Apostilles active on <code>DE ↔ UA</code> corridors.
             </li>
             <li>
-              <strong>Clarvia’s two CERN Zenodo identifiers:</strong> Clarvia
-              maintains two distinct Zenodo archives: the open-source monorepo
-              software release archive{" "}
+              <strong>Underlying CERN Zenodo provenance:</strong> Clarvia’s
+              underlying open-source monorepo software release archive{" "}
               <a
                 href={ZENODO_SOFTWARE_RECORD_URL}
                 target="_blank"
@@ -866,8 +863,17 @@ export default async function CrossBorderIntegrationIndexPage({
               >
                 {ZENODO_STUDY_CORPUS_DOI}
               </a>{" "}
-              (archived 15 November 2026). Both identifiers are cross-referenced
-              below.
+              (archived 15 November 2026) are archived separately from this
+              study’s own Working Paper and dataset record{" "}
+              <a
+                href={STUDY_1_ZENODO_RECORD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline font-medium text-calm-blue-800"
+              >
+                {STUDY_1_ZENODO_DOI}
+              </a>
+              .
             </li>
             <li>
               <strong>Administrative guidance boundary:</strong> This index

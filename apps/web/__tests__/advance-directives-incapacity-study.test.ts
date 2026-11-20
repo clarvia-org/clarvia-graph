@@ -4,7 +4,9 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import AdvanceDirectivesAtlasTable from "@/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/AdvanceDirectivesAtlasTable";
-import { generateMetadata as generateStudy3Metadata } from "@/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/page";
+import Study3Page, {
+  generateMetadata as generateStudy3Metadata,
+} from "@/app/[lang]/research/global-advance-directives-incapacity-mandates-atlas/page";
 import {
   allCorridorGuides,
   getCorridorGuideBySlug,
@@ -358,5 +360,43 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
       "Tommi Lindfors",
       "Clarvia ASBL",
     ]);
+
+    const pageHtml = renderToStaticMarkup(
+      await Study3Page({ params: Promise.resolve({ lang: "en" }) }),
+    );
+    const jsonLdMatch = pageHtml.match(
+      /<script type="application\/ld\+json">([\s\S]*?)<\/script>/,
+    );
+    expect(jsonLdMatch).not.toBeNull();
+    const jsonLd = JSON.parse(jsonLdMatch![1]) as {
+      "@graph": Array<{
+        "@type"?: string;
+        isBasedOn?: string;
+        sameAs?: string | string[];
+      }>;
+    };
+    const articleNode = jsonLd["@graph"].find(
+      (node) => node["@type"] === "ScholarlyArticle",
+    );
+    const datasetNode = jsonLd["@graph"].find(
+      (node) => node["@type"] === "Dataset",
+    );
+    expect(articleNode?.isBasedOn).toBe("https://doi.org/10.5281/zenodo.24245341");
+    expect(articleNode?.sameAs).toEqual([
+      "https://doi.org/10.5281/zenodo.24388599",
+      "https://zenodo.org/records/24388599",
+    ]);
+    expect(datasetNode?.isBasedOn).toBe("https://doi.org/10.5281/zenodo.24245341");
+    expect(datasetNode?.sameAs).toEqual([
+      "https://zenodo.org/records/24388599",
+      "https://doi.org/10.5281/zenodo.24388599",
+      "https://data.public.lu/fr/datasets/global-atlas-of-advance-directives-incapacity-mandates-cross-border-portability-2026/",
+    ]);
+    expect(datasetNode?.sameAs).not.toContain(
+      "https://doi.org/10.5281/zenodo.24245341",
+    );
+    expect(datasetNode?.sameAs).not.toContain(
+      "https://zenodo.org/records/24245341",
+    );
   });
 });

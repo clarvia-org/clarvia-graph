@@ -4,7 +4,9 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import CorridorIntegrationTable from "@/app/[lang]/research/cross-border-bereavement-integration-index/CorridorIntegrationTable";
-import { generateMetadata as generateStudy1Metadata } from "@/app/[lang]/research/cross-border-bereavement-integration-index/page";
+import Study1Page, {
+  generateMetadata as generateStudy1Metadata,
+} from "@/app/[lang]/research/cross-border-bereavement-integration-index/page";
 import {
   allCorridorGuides,
   getCorridorGuideBySlug,
@@ -301,5 +303,43 @@ describe("Cross-Border Bereavement & Serious Illness Administrative Integration 
       "Tommi Lindfors",
       "Clarvia ASBL",
     ]);
+
+    const pageHtml = renderToStaticMarkup(
+      await Study1Page({ params: Promise.resolve({ lang: "en" }) }),
+    );
+    const jsonLdMatch = pageHtml.match(
+      /<script type="application\/ld\+json">([\s\S]*?)<\/script>/,
+    );
+    expect(jsonLdMatch).not.toBeNull();
+    const jsonLd = JSON.parse(jsonLdMatch![1]) as {
+      "@graph": Array<{
+        "@type"?: string;
+        isBasedOn?: string;
+        sameAs?: string | string[];
+      }>;
+    };
+    const articleNode = jsonLd["@graph"].find(
+      (node) => node["@type"] === "ScholarlyArticle",
+    );
+    const datasetNode = jsonLd["@graph"].find(
+      (node) => node["@type"] === "Dataset",
+    );
+    expect(articleNode?.isBasedOn).toBe("https://doi.org/10.5281/zenodo.24245341");
+    expect(articleNode?.sameAs).toEqual([
+      "https://doi.org/10.5281/zenodo.24388595",
+      "https://zenodo.org/records/24388595",
+    ]);
+    expect(datasetNode?.isBasedOn).toBe("https://doi.org/10.5281/zenodo.24245341");
+    expect(datasetNode?.sameAs).toEqual([
+      "https://zenodo.org/records/24388595",
+      "https://doi.org/10.5281/zenodo.24388595",
+      "https://data.public.lu/fr/datasets/cross-border-bereavement-serious-illness-administrative-integration-index-2026/",
+    ]);
+    expect(datasetNode?.sameAs).not.toContain(
+      "https://doi.org/10.5281/zenodo.24245341",
+    );
+    expect(datasetNode?.sameAs).not.toContain(
+      "https://zenodo.org/records/24245341",
+    );
   });
 });
