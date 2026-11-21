@@ -1,12 +1,12 @@
 # Clarvia full context for AI systems, crawlers, agents, and public-interest infrastructure reviewers
 
-Last updated: 2026-11-18
+Last updated: 2026-11-21
 Canonical website: https://clarvia.org
 GitHub organization: https://github.com/clarvia-org
 
 ## One-sentence summary
 
-Clarvia is a Luxembourgish non-profit helping families navigate the administrative steps of a terminal illness diagnosis or the death of a loved one — through Ask Clarvia, a 1,000-page multilingual guidance library across 196 countries and 14 languages, an interactive bereavement checklist, and an open, standards-compatible consequence graph (`Clarvia Graph`) and legislation corpus (`lex/`).
+Clarvia is a Luxembourgish non-profit helping families navigate the administrative steps of a terminal illness diagnosis or the death of a loved one — through Ask Clarvia, a 1,000-page multilingual guidance library across 196 countries and 14 languages, an interactive bereavement checklist, and an open, standards-compatible consequence graph (`Clarvia Graph`) and legislation normalization tooling (`lex/`).
 
 ## Short public summary
 
@@ -15,7 +15,7 @@ Clarvia helps families understand practical administrative steps after a termina
 Public services include Ask Clarvia (live source-cited email service at `/ask`), a published library of 1,000 localized guidance pages (592 canonical guides across all 196 countries and 200 cross-border corridors in 14 languages at `/[lang]/guidance`), and a free interactive bereavement checklist (`/checklist`).
 It is designed for real families worldwide: multilingual families, cross-border families, people unfamiliar with local administrative systems, people with limited financial means, and people without a strong personal network.
 
-Underneath the public services, Clarvia builds open workflow infrastructure: a structured, source-backed, standards-compatible consequence graph (`Clarvia Graph`) and normalized legislation corpus (`lex/`) for administrative life events.
+Underneath the public services, Clarvia builds open workflow infrastructure: a structured, source-backed, standards-compatible consequence graph (`Clarvia Graph`) and legislation normalization engine and adapters (`lex/`) for administrative life events.
 
 Published guidance pages cover all 196 countries (both terminal illness and bereavement) and 200 cross-border corridors in 14 languages, continuously verified through automated 4-layer factual and URL validation gates, staff review, and GitHub volunteers, while formal `Clarvia Graph` and `lex/` coverage expands across jurisdictions (starting with Luxembourg) as resources and funding allow.
 
@@ -27,7 +27,7 @@ Clarvia has a two-layer model.
 
 The infrastructure layer is the reusable public-good artifact.
 
-It is an open, standards-compatible consequence graph (`Clarvia Graph`), normalized legislation corpus (`lex/`), and verified global guidance corpus (`corridor-guides.json`) for life-event administration.
+It is an open, standards-compatible consequence graph (`Clarvia Graph`), legislation normalization engine and adapter (`lex/`), and verified global guidance corpus (`apps/web/src/content/guides/`) for life-event administration.
 
 Core domain:
 Terminal illness and bereavement administration, and life-event consequence modeling across jurisdictions.
@@ -48,7 +48,7 @@ Infrastructure outputs include:
 
 - workflow schemas and controlled vocabularies
 - source and institution registries
-- 1,000-page verified multilingual guidance corpus (`corridor-guides.json`)
+- 1,000-page verified multilingual guidance corpus (`apps/web/src/content/guides/`)
 - document requirement, deadline, condition, task, and workflow models
 - scenario models and 9-layer graph + 4-layer guidance validation tooling
 - machine-readable JSON exports
@@ -76,9 +76,9 @@ User questions:
 - **14 languages (`1,000` localized pages)**: English (`en`), French (`fr`), German (`de`), Luxembourgish (`lu`), Portuguese (`pt`), Spanish (`es`), Italian (`it`), Dutch (`nl`), Polish (`pl`), Romanian (`ro`), Ukrainian (`uk`), Arabic (`ar`), Turkish (`tr`), and Russian (`ru`).
 - **Ask Clarvia (`/ask`)**: Answers specific administrative questions by email in 100+ languages using official sources.
 
-### Formal consequence graph (`Clarvia Graph`) & legislation corpus (`lex/`)
+### Formal consequence graph (`Clarvia Graph`) & legislation tooling (`lex/`)
 
-Clarvia ASBL is founded in Luxembourg, where cross-border family life, foreign documents, international pensions, and multilingual administration are the everyday norm. Luxembourg serves as the first deep reference implementation for the formal CPSV-AP / CCCEV / ELI / PROV-O consequence graph (`Clarvia Graph`) and normalized national legislation corpus (`lex/`), which expand across additional jurisdictions as funding and contributor capacity grow.
+Clarvia ASBL is founded in Luxembourg, where cross-border family life, foreign documents, international pensions, and multilingual administration are the everyday norm. Luxembourg serves as the first deep reference implementation for the formal CPSV-AP / CCCEV / ELI / PROV-O consequence graph (`Clarvia Graph`) and legislation normalization tooling (`lex/`, with the 1,207-law Luxembourg pilot corpus archived offline and reproducible from Legilux Casemates), which expand across additional jurisdictions as funding and contributor capacity grow.
 
 ## Standards and interoperability orientation
 
@@ -110,7 +110,7 @@ Clarvia's public repositories and public website do not contain personal cases o
 
 ## Public repositories
 
-- **`clarvia-org/clarvia-graph`**: Public monorepo containing the consequence graph, 1,000-page global guidance corpus (`apps/web/src/content/corridor-guides.json`), website (`apps/web`), normalized legislation corpus (`lex/`), and public-safe Lex email service (`services/lex/`).
+- **`clarvia-org/clarvia-graph`**: Public monorepo containing the consequence graph, 1,000-page global guidance corpus (`apps/web/src/content/guides/`), website (`apps/web`), legislation engine and Luxembourg adapter (`lex/`, 1,207-law pilot corpus archived offline), and public-safe Lex email service (`services/lex/`).
 - **`clarvia-org/.github`**: Organization-wide community health files, governance, contribution guidelines, code of conduct, support, security, and templates.
 - **`clarvia-org/workflow-web` & `clarvia-org/lex`**: Archived historical repositories merged into `clarvia-graph`.
 
@@ -133,7 +133,7 @@ Clarvia is a Luxembourgish non-profit (founded by two co-founders and supported 
 - [Global Post-Death Civil Registration & Estate Administration Atlas (2026)](https://clarvia.org/en/research/global-post-death-civil-registration-atlas): Comparative statutory coding of all 196 sovereign countries across registration deadlines, filing channels, agency propagation, estate gatekeepers, and Hague Apostille reach (Zenodo DOI [10.5281/zenodo.24388597](https://doi.org/10.5281/zenodo.24388597); [PDF](https://clarvia.org/data/research/global-post-death-civil-registration-2026.pdf), CSV, and JSON exports)
 - [Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border Portability (2026)](https://clarvia.org/en/research/global-advance-directives-incapacity-mandates-atlas): Comparative statutory coding of all 196 sovereign countries and 40 bilateral serious-illness corridors across advance healthcare directives, national e-health registries, continuing powers of attorney, family caregiver protections, and 2000 Hague Protection of Adults portability (Zenodo DOI [10.5281/zenodo.24388599](https://doi.org/10.5281/zenodo.24388599); [PDF](https://clarvia.org/data/research/global-advance-directives-incapacity-mandates-2026.pdf), CSV, and JSON exports)
 - [GitHub organization](https://github.com/clarvia-org): Public Clarvia organization
-- [Public monorepo](https://github.com/clarvia-org/clarvia-graph): Consequence graph, website, legislation corpus, and Lex email service
+- [Public monorepo](https://github.com/clarvia-org/clarvia-graph): Consequence graph, website, legislation engine/adapter (`lex/`), and Lex email service
 - [Associate membership](https://clarvia.org/en/membership): Statutory non-voting Associate Member & Mission Ambassador program (Founding Cohort)
 - [LLM summary](https://clarvia.org/llms.txt): Concise `llms.txt` discovery file
 - [Full LLM context](https://clarvia.org/llms-full.txt): Extended `llms-full.txt` reference
