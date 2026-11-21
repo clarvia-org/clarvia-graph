@@ -31,6 +31,7 @@ from app.email.thread_quote import build_thread_quote, count_lex_replies
 from app.infrastructure.daily_usage import DailyUsagePort
 from app.infrastructure.rate_limit import RateLimitPort
 from app.llm.envelope import build_runtime_envelope
+from app.llm.language import resolve_expected_reply_language
 from app.llm.prompt_loader import load_prompt, load_prompt_version
 from app.llm.schema import SCHEMA_VERSION
 from app.llm.source_render import insert_sources_before_signoff
@@ -391,12 +392,17 @@ class Processor:
             latest_message_id=parsed.message_id,
             settings=self._settings,
         )
+        expected_language = resolve_expected_reply_language(
+            parsed.body_text,
+            history,
+        )
         envelope = build_runtime_envelope(
             parsed=parsed,
             conversation_history=history,
             current_date_utc=self._clock.now(),
             prompt_version=prompt_version,
             delivery_channel=parsed.delivery_channel,
+            expected_language=expected_language,
         )
         counter = CountingLlmAdapter(inner=self._llm, remaining=remaining)
         try:
@@ -404,6 +410,7 @@ class Processor:
                 counter,
                 system_prompt=system_prompt,
                 runtime_envelope=envelope,
+                expected_language=expected_language,
             )
         except ModelPipelineFailure as exc:
             self._add_llm_calls(key, counter.used)

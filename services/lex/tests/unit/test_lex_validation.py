@@ -56,9 +56,7 @@ def test_missing_sign_off() -> None:
 
 def test_em_dash_allowed() -> None:
     resp = make_answer_response(
-        body_markdown=(
-            "Text \u2014 more. Contact the Commune office [1].\n\nLex."
-        )
+        body_markdown=("Text \u2014 more. Contact the Commune office [1].\n\nLex.")
     )
     validate_lex_response(resp)
 
@@ -272,3 +270,47 @@ def test_clarify_requires_not_needed_research() -> None:
     with pytest.raises(LexValidationError) as exc:
         validate_lex_response(resp)
     _assert_code(exc, "clarify_research_not_needed")
+
+
+def test_language_mismatch_rejected_for_declared_language() -> None:
+    resp = make_answer_response(language="es")
+    with pytest.raises(LexValidationError) as exc:
+        validate_lex_response(resp, expected_language="en")
+    _assert_code(exc, "response_language_mismatch")
+
+
+def test_language_mismatch_rejected_for_detected_body_language() -> None:
+    resp = make_answer_response(
+        language="en",
+        body_markdown=(
+            "Mi padre falleció en Madrid ayer y debe solicitar el certificado "
+            "de defunción ante el registro civil [1].\n\nLex."
+        ),
+        contacts=[],
+    )
+    with pytest.raises(LexValidationError) as exc:
+        validate_lex_response(resp, expected_language="en")
+    _assert_code(exc, "response_language_mismatch")
+
+
+def test_language_validation_allows_subtags_aliases_and_none() -> None:
+    resp_en = make_answer_response(
+        language="en-US",
+        body_markdown=(
+            "Contact the Commune office to request the official death "
+            "certificate in Luxembourg [1].\n\nLex."
+        ),
+    )
+    validate_lex_response(resp_en, expected_language="en")
+
+    resp_lb = make_answer_response(
+        language="lu",
+        body_markdown=(
+            "Kontaktéiert d'Gemeng zu Lëtzebuerg fir den Doudesakt [1].\n\nLex."
+        ),
+        contacts=[],
+    )
+    validate_lex_response(resp_lb, expected_language="lb")
+
+    resp_es = make_answer_response(language="es")
+    validate_lex_response(resp_es, expected_language=None)

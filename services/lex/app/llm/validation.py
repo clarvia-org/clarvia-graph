@@ -10,6 +10,7 @@ from __future__ import annotations
 import re
 from collections.abc import Collection
 
+from app.llm.language import detect_language, normalize_language_code
 from app.llm.schema import LexResponse
 from app.llm.url_normalize import (
     find_email_domain_typo,
@@ -321,17 +322,44 @@ def _validate_action_rules(response: LexResponse) -> None:
         )
 
 
+def _validate_language(
+    response: LexResponse,
+    *,
+    expected_language: str | None,
+) -> None:
+    expected = normalize_language_code(expected_language)
+    if expected is None:
+        return
+
+    declared = normalize_language_code(response.language)
+    if declared != expected:
+        raise LexValidationError(
+            "response_language_mismatch",
+            f"Declared language {response.language!r} does not match {expected!r}",
+        )
+
+    detected = detect_language(response.body_markdown)
+    if detected is not None and detected != expected:
+        raise LexValidationError(
+            "response_language_mismatch",
+            f"Response body detected as {detected!r} instead of {expected!r}",
+        )
+
+
 def validate_lex_response(
     response: LexResponse,
     *,
     web_search_source_urls: Collection[str] | None = None,
     web_search_calls: int | None = None,
+    expected_language: str | None = None,
 ) -> None:
     """Validate a parsed response, raising :class:`LexValidationError`.
 
     When ``web_search_source_urls`` and ``web_search_calls`` are supplied,
     answer responses must show evidence of a completed web search and every
-    source or contact website must appear in that set.
+    source or contact website must appear in that set. When
+    ``expected_language`` is supplied, the declared language and detected prose
+    language must match it.
     """
     _validate_body_text(response.body_markdown)
     _validate_ids_contiguous(
@@ -355,6 +383,8 @@ def validate_lex_response(
             web_search_source_urls=web_search_source_urls,
             web_search_calls=web_search_calls,
         )
+
+    _validate_language(response, expected_language=expected_language)
 
 
 __all__ = ["LexValidationError", "validate_lex_response"]

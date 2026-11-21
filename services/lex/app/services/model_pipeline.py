@@ -9,6 +9,8 @@ from collections.abc import Sequence
 from dataclasses import dataclass
 
 from app.domain.ports import LlmGenerationResult, LlmPort, StructuredLlmResult
+from app.llm.envelope import append_language_retry_instruction
+from app.llm.language import detect_language, normalize_language_code
 from app.llm.schema import LexContact, LexSource
 from app.llm.url_liveness import strip_dead_urls
 from app.llm.url_normalize import (
@@ -42,6 +44,7 @@ _KEEP_SOURCED_ANSWER_CODES = frozenset(
         "missing_sign_off",
         "duplicate_source_url",
         "contact_email_domain_typo",
+        "response_language_mismatch",
     }
 )
 _DASH_CHARS = (
@@ -178,11 +181,24 @@ def _try_generate(
     return _normalize_model_response(result)
 
 
+def _observed_mismatch_language(
+    result: LlmGenerationResult,
+    *,
+    expected_language: str,
+) -> str:
+    expected = normalize_language_code(expected_language) or expected_language
+    detected = detect_language(result.response.body_markdown)
+    if detected is not None and detected != expected:
+        return detected
+    return normalize_language_code(result.response.language) or result.response.language
+
+
 def run_model_pipeline(
     llm: LlmPort,
     *,
     system_prompt: str,
     runtime_envelope: str,
+    expected_language: str | None = None,
 ) -> LlmGenerationResult:
     """Generate once; retry only when a parsed body failed validation."""
     first = _try_generate(
@@ -198,15 +214,37 @@ def run_model_pipeline(
             first.response,
             web_search_source_urls=first.web_search_source_urls,
             web_search_calls=first.web_search_calls,
+            expected_language=expected_language,
         )
         return first
     except LexValidationError as first_error:
+        first_error_code = first_error.code
         force_search = _should_force_search_on_retry(first_error, first)
+
+    retry_envelope = runtime_envelope
+    if (
+        first_error_code == "response_language_mismatch"
+        and expected_language is not None
+    ):
+        observed = _observed_mismatch_language(
+            first,
+            expected_language=expected_language,
+        )
+        _LOG.info(
+            "lex_language_mismatch_retry expected=%s observed=%s",
+            expected_language,
+            observed,
+        )
+        retry_envelope = append_language_retry_instruction(
+            runtime_envelope,
+            expected_language=expected_language,
+            observed_language=observed,
+        )
 
     second = _try_generate(
         llm,
         system_prompt=system_prompt,
-        runtime_envelope=runtime_envelope,
+        runtime_envelope=retry_envelope,
         force_web_search=force_search,
     )
     candidate = second if second is not None else first
@@ -215,6 +253,7 @@ def run_model_pipeline(
             candidate.response,
             web_search_source_urls=candidate.web_search_source_urls,
             web_search_calls=candidate.web_search_calls,
+            expected_language=expected_language,
         )
         return candidate
     except LexValidationError as error:
@@ -242,9 +281,7 @@ def _strip_answer_grounding(body: str) -> str:
 def _fold_text(text: str) -> str:
     """Case- and diacritic-insensitive fold (including Turkish dotted/dotless i)."""
     decomposed = unicodedata.normalize("NFD", text.replace("ı", "i").replace("İ", "i"))
-    stripped = "".join(
-        ch for ch in decomposed if unicodedata.category(ch) != "Mn"
-    )
+    stripped = "".join(ch for ch in decomposed if unicodedata.category(ch) != "Mn")
     return unicodedata.normalize("NFC", stripped).casefold()
 
 

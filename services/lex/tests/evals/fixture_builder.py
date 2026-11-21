@@ -136,6 +136,13 @@ FIXTURE_RESPONSES: dict[str, LexResponse] = {
         language="de",
         body_markdown="Wenden Sie sich an die Commune office [1].\n\nLex.",
     ),
+    "answer_lb_language": make_answer_response(
+        language="lb",
+        body_markdown=(
+            "Kontaktéiert d'Gemeng an Commune office zu Lëtzebuerg fir den "
+            "Doudesakt [1].\n\nLex."
+        ),
+    ),
     "follow_up_thread": _answer(
         "Following your earlier question, contact Commune office again [1].\n\nLex."
     ),
