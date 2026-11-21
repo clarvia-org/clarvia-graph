@@ -1,4 +1,4 @@
-"""Retention worker sweeps expired metadata."""
+"""Retention worker and TTL expiration helper tests."""
 
 from __future__ import annotations
 
@@ -9,7 +9,11 @@ from app.infrastructure.clock import FakeClock
 from app.infrastructure.daily_usage import InMemoryDailyUsage
 from app.infrastructure.memory import InMemoryGmail, InMemoryMessageState
 from app.infrastructure.rate_limit import InMemoryRateLimit
-from app.ops.ttl import message_expires_at, rate_limit_expires_at
+from app.ops.ttl import (
+    daily_usage_expires_at,
+    message_expires_at,
+    rate_limit_expires_at,
+)
 from app.services.retention import RetentionWorker
 
 from .conftest import build_settings
@@ -53,3 +57,16 @@ def test_retention_sweeps_expired_message_and_rate_limit_records() -> None:
     assert result.messages_deleted == 1
     assert result.rate_limits_deleted == 1
     assert state.get_record("old") is None
+
+
+def test_message_expires_at_differs_for_failures() -> None:
+    now = datetime(2026, 7, 25, 12, 0, tzinfo=UTC)
+    success = message_expires_at(now, ProcessingStatus.SENT)
+    failure = message_expires_at(now, ProcessingStatus.FAILED)
+    assert failure < success
+
+
+def test_rate_and_daily_usage_expires_at() -> None:
+    now = datetime(2026, 7, 25, 12, 0, tzinfo=UTC)
+    assert rate_limit_expires_at(now) > now
+    assert daily_usage_expires_at(now) > now

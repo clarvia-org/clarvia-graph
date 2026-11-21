@@ -10,6 +10,8 @@ on:
     branches: [main]
     paths:
       - "services/lex/**"
+      - "!services/lex/tests/**"
+      - "!services/lex/docs/**"
 
 permissions:
   contents: read
