@@ -132,7 +132,7 @@ describe("Cross-Border Bereavement & Serious Illness Administrative Integration 
     });
   });
 
-  it("cross-validates treaty scores against corridor-guides.json prose", () => {
+  it("cross-validates treaty scores against corridor-guides prose", () => {
     const study = getCrossBorderIntegrationStudy();
     const guidesBySlug = new Map(
       allCorridorGuides().map((g) => [g.slug, g]),

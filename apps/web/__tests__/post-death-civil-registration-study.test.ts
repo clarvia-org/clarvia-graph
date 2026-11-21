@@ -132,7 +132,7 @@ describe("Global Post-Death Civil Registration & Estate Administration Atlas (19
     expect(Object.values(regionMap).reduce((a, b) => a + b, 0)).toBe(196);
   });
 
-  it("cross-validates classifications, clickable citations, and HCCH #12 claims against corridor-guides.json", () => {
+  it("cross-validates classifications, clickable citations, and HCCH #12 claims against the corridor-guides corpus", () => {
     const study = getPostDeathCivilRegistrationStudy();
     const guidesBySlug = new Map(
       allCorridorGuides().map((g) => [g.slug, g]),

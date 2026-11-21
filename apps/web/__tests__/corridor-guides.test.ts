@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import { describe, expect, it } from "vitest";
 import sitemap from "@/app/sitemap";
 import {
@@ -944,5 +946,22 @@ describe("corridor-guides (full 592-guide global dataset + SEO Hub-and-Spoke arc
     expect(shortGuideCardTitle(ukFranceTerminal)).toBe(
       "Terminal Illness & Advance Care: UK & France",
     );
+  });
+
+  it("keeps sharded guides/index.json and per-slug JSON files in exact 1:1 sync", () => {
+    const guidesDir = path.join(process.cwd(), "src", "content", "guides");
+    const index = JSON.parse(
+      fs.readFileSync(path.join(guidesDir, "index.json"), "utf8"),
+    ) as Array<{ slug: string }>;
+    const diskFiles = fs
+      .readdirSync(guidesDir)
+      .filter((f) => f.endsWith(".json") && f !== "index.json")
+      .sort();
+
+    expect(index).toHaveLength(592);
+    expect(diskFiles).toHaveLength(592);
+    const expectedFiles = index.map((e) => `${e.slug}.json`).sort();
+    expect(diskFiles).toEqual(expectedFiles);
+    expect(getCorridorGuideBySlug("../package", "en")).toBeUndefined();
   });
 });

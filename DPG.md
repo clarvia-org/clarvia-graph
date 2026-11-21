@@ -24,7 +24,7 @@ All components of Clarvia Graph use OSI-approved or Creative Commons open licens
 |---|---|---|
 | Source code, validators, exporters (`packages/`) | **EUPL-1.2** (OSI-approved) | [`LICENSE`](LICENSE) |
 | Website (`apps/web/`), legislation (`lex/`), Lex email (`services/lex/`) | **Apache-2.0** (OSI-approved) | [`apps/web/LICENSE`](apps/web/LICENSE), [`lex/LICENSE`](lex/LICENSE) |
-| Graph data (`graph/`), 1,000-page guidance corpus (`corridor-guides.json`), vocabularies (`vocab/`), schemas (`schemas/`), documentation (`docs/`), exports (`exports/`) | **CC-BY-4.0** | [`LICENSE-DATA`](LICENSE-DATA) |
+| Graph data (`graph/`), 1,000-page guidance corpus (`apps/web/src/content/guides/`), vocabularies (`vocab/`), schemas (`schemas/`), documentation (`docs/`), exports (`exports/`) | **CC-BY-4.0** | [`LICENSE-DATA`](LICENSE-DATA) |
 | Archived government HTML snapshots (`sources/snapshots/html/`) | Public domain (national law) | [`LICENSES/LicenseRef-Gov-PublicDomain.txt`](LICENSES/LicenseRef-Gov-PublicDomain.txt) |
 
 ## 3. Clear Ownership
@@ -39,7 +39,7 @@ Clarvia Graph has zero proprietary dependencies. It runs entirely on open-source
 - **Package manager:** pnpm
 - **Language:** TypeScript (strict mode) and Python
 - **Validation & Testing:** Ajv (JSON Schema draft 2020-12), YAML, Vitest, Pytest
-- **Data format:** Human-readable YAML files (`graph/`, `sources/`, `vocab/`) and standard JSON (`schemas/`, `apps/web/src/content/corridor-guides.json`, and generated bundles in `build/exports/`, with JSON-LD interoperability export planned)
+- **Data format:** Human-readable YAML files (`graph/`, `sources/`, `vocab/`) and standard JSON (`schemas/`, `apps/web/src/content/guides/`, and generated bundles in `build/exports/`, with JSON-LD interoperability export planned)
 
 All build, validation, test, and export steps run locally or in any standard Linux/macOS/Windows environment via `pnpm validate`, `pnpm test`, and `pnpm export-web`.
 
@@ -56,7 +56,7 @@ Comprehensive documentation is maintained in the repository under [`docs/`](docs
 
 Data is stored natively in open, non-proprietary formats (YAML and JSON) in the repository and can be extracted at any time:
 - **Raw graph data:** Directly readable YAML files in [`graph/`](graph/) and [`sources/`](sources/)
-- **Global guidance corpus:** Directly readable JSON in [`apps/web/src/content/corridor-guides.json`](apps/web/src/content/corridor-guides.json) (`592` canonical guides / `1,000` localized pages across `196` countries and `14` languages)
+- **Global guidance corpus:** Directly readable per-guide JSON files in [`apps/web/src/content/guides/`](apps/web/src/content/guides/) (`592` canonical guides / `1,000` localized pages across `196` countries and `14` languages)
 - **Web runtime export:** `pnpm export-web` generates a deterministic, self-contained JSON bundle in `build/exports/web/` (and `pnpm export-and-sync-web` syncs it to [`apps/web/public/data/clarvia/`](apps/web/public/data/clarvia/))
 - **Full-graph JSON export:** `pnpm export-json` generates a complete graph JSON bundle in `build/exports/json/graph-export.json` (JSON-LD export mapped to CPSV-AP, CCCEV, ELI, and PROV-O vocabularies is planned work)
 
@@ -82,7 +82,7 @@ Data is stored natively in open, non-proprietary formats (YAML and JSON) in the 
 Bereavement and terminal illness are high-vulnerability life events where inaccurate legal or procedural information can cause financial loss, missed statutory deadlines, or severe distress. Clarvia is engineered around strict "Do No Harm" safeguards:
 
 1. **No Unverified Claims in Production:** The exporter (`pnpm export-web`) strictly filters out any record where `authoring_status !== "approved"` or where backing source assertions do not have `review_status === "approved"`.
-2. **4-Layer Guidance Corpus Verification:** The 1,000-page guidance corpus (`corridor-guides.json`) is validated across 4 layers: (1) HTTP/URL reachability and soft-404 removal, (2) institutional domain authority verification, (3) statutory/numeric claim verification against live official sources, and (4) contact phone/email verification against source pages.
+2. **4-Layer Guidance Corpus Verification:** The 1,000-page guidance corpus (`apps/web/src/content/guides/`) is validated across 4 layers: (1) HTTP/URL reachability and soft-404 removal, (2) institutional domain authority verification, (3) statutory/numeric claim verification against live official sources, and (4) contact phone/email verification against source pages.
 3. **Maintainer Gatekeeping:** External contributors can submit records only in `draft` status. CI automatically rejects pull requests that attempt to self-approve assertions or graph records without maintainer review.
 4. **Contradiction Detection:** Layer 6 of the validator (`checkContradictions`) automatically detects conflicting deadlines or requirements across assertions before they can be merged.
 5. **Provenance & Staleness Tracking:** Every source assertion records the exact government URL, access date, `review_by` expiration date, and verbatim quote or section reference, ensuring full auditability and timely re-verification.
