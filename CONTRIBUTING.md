@@ -24,7 +24,7 @@ Full clone is fine for most contributors. Details: [`docs/MONOREPO.md`](docs/MON
 | Area | Path | Typical work |
 |---|---|---|
 | Consequence graph | `graph/`, `sources/`, `schemas/` | Sources, assertions, conditions, translations |
-| Website & global guidance | `apps/web/` | 1,000-page guidance corpus (`corridor-guides.json` across 196 countries & 14 languages), UI, accessibility, forms, i18n copy |
+| Website & global guidance | `apps/web/` | 1,000-page guidance corpus (`apps/web/src/content/guides/` across 196 countries & 14 languages), UI, accessibility, forms, i18n copy |
 | Legislation | `lex/` | Country adapters, law records, CLI |
 | Lex email | `services/lex/` | Public-safe service code and tests only — never secrets or live prompts |
 
@@ -44,7 +44,7 @@ Full clone is fine for most contributors. Details: [`docs/MONOREPO.md`](docs/MON
 ### What requires review before merging
 
 - Source assertions (legal claims extracted from official sources)
-- Guidance corpus factual or citation updates (`apps/web/src/content/corridor-guides.json`)
+- Guidance corpus factual or citation updates (`apps/web/src/content/guides/*.json`)
 - Consequence and task template records
 - Condition expressions
 - Deadline values

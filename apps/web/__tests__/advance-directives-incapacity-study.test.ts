@@ -147,7 +147,7 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
     expect(study.corridorApostilleVsPortabilityGapPts).toBe(85);
   });
 
-  it("cross-validates classifications, clickable citations, and treaty claims against corridor-guides.json", () => {
+  it("cross-validates classifications, clickable citations, and treaty claims against the corridor-guides corpus", () => {
     const study = getAdvanceDirectivesIncapacityStudy();
     const guidesBySlug = new Map(
       allCorridorGuides().map((g) => [g.slug, g]),

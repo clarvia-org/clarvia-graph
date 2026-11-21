@@ -1,4 +1,5 @@
-import rawGuides from "./corridor-guides.json";
+import fs from "node:fs";
+import path from "node:path";
 
 /**
  * Graduated rollout gate:
@@ -79,35 +80,126 @@ export type CorridorGuide = {
   relatedSlugs: string[];
 };
 
-const ALL_CORRIDOR_GUIDES = rawGuides as CorridorGuide[];
-const SITE_URL = "https://clarvia.org";
+export type CorridorGuideIndexEntry = Pick<
+  CorridorGuide,
+  | "id"
+  | "slug"
+  | "wave"
+  | "masterLang"
+  | "locales"
+  | "category"
+  | "region"
+  | "countryOfDeath"
+  | "countryOfDeathCode"
+  | "citizenshipCountry"
+  | "citizenshipCountryCode"
+  | "title"
+  | "titleEn"
+  | "lastReviewed"
+  | "relatedSlugs"
+>;
 
-const SINGLE_COUNTRY_SIBLING_BY_SLUG: ReadonlyMap<string, string> = (() => {
-  const map = new Map<string, string>();
-  const singleByCountry = new Map<string, CorridorGuide[]>();
-  for (const g of ALL_CORRIDOR_GUIDES) {
-    if (g.countryOfDeathCode === g.citizenshipCountryCode) {
-      const arr = singleByCountry.get(g.countryOfDeathCode) ?? [];
-      arr.push(g);
-      singleByCountry.set(g.countryOfDeathCode, arr);
+type GuideIndexState = {
+  guidesDir: string;
+  entries: CorridorGuideIndexEntry[];
+  bySlug: Map<string, CorridorGuideIndexEntry>;
+  publishedEntries: CorridorGuideIndexEntry[];
+  publishedSlugSet: Set<string>;
+  singleCountrySiblingBySlug: ReadonlyMap<string, string>;
+};
+
+const SITE_URL = "https://clarvia.org";
+const SAFE_SLUG_RE = /^[a-z0-9-]+$/;
+
+let guideIndexCache: GuideIndexState | null = null;
+const guideBySlugCache = new Map<string, CorridorGuide>();
+let allGuidesCache: CorridorGuide[] | null = null;
+
+function resolveGuidesDir(): string {
+  const candidates = [
+    path.join(process.cwd(), "src", "content", "guides"),
+    path.join(process.cwd(), "apps", "web", "src", "content", "guides"),
+  ];
+  for (const dir of candidates) {
+    if (fs.existsSync(path.join(dir, "index.json"))) {
+      return dir;
     }
   }
+  throw new Error(
+    `Missing sharded guides directory (checked: ${candidates.join(", ")})`,
+  );
+}
+
+function getGuideIndex(): GuideIndexState {
+  if (guideIndexCache) return guideIndexCache;
+
+  const guidesDir = resolveGuidesDir();
+  const entries = JSON.parse(
+    fs.readFileSync(path.join(guidesDir, "index.json"), "utf8"),
+  ) as CorridorGuideIndexEntry[];
+
+  const bySlug = new Map<string, CorridorGuideIndexEntry>();
+  const singleByCountry = new Map<string, CorridorGuideIndexEntry[]>();
+  const publishedEntries: CorridorGuideIndexEntry[] = [];
+  const publishedSlugSet = new Set<string>();
+
+  for (const entry of entries) {
+    bySlug.set(entry.slug, entry);
+    if (entry.wave <= MAX_PUBLISHED_WAVE) {
+      publishedEntries.push(entry);
+      publishedSlugSet.add(entry.slug);
+    }
+    if (entry.countryOfDeathCode === entry.citizenshipCountryCode) {
+      const arr = singleByCountry.get(entry.countryOfDeathCode) ?? [];
+      arr.push(entry);
+      singleByCountry.set(entry.countryOfDeathCode, arr);
+    }
+  }
+
+  const singleCountrySiblingBySlug = new Map<string, string>();
   for (const pair of singleByCountry.values()) {
     if (pair.length === 2) {
-      map.set(pair[0].slug, pair[1].slug);
-      map.set(pair[1].slug, pair[0].slug);
+      singleCountrySiblingBySlug.set(pair[0].slug, pair[1].slug);
+      singleCountrySiblingBySlug.set(pair[1].slug, pair[0].slug);
     }
   }
-  return map;
-})();
+
+  guideIndexCache = {
+    guidesDir,
+    entries,
+    bySlug,
+    publishedEntries,
+    publishedSlugSet,
+    singleCountrySiblingBySlug,
+  };
+  return guideIndexCache;
+}
+
+function loadGuideBySlug(slug: string): CorridorGuide {
+  const cached = guideBySlugCache.get(slug);
+  if (cached) return cached;
+
+  const idx = getGuideIndex();
+  const entry = idx.bySlug.get(slug);
+  if (!entry || !SAFE_SLUG_RE.test(entry.slug)) {
+    throw new Error(`Unknown or invalid corridor guide slug: ${slug}`);
+  }
+  const guidePath = path.join(idx.guidesDir, `${entry.slug}.json`);
+  const parsed = JSON.parse(
+    fs.readFileSync(guidePath, "utf8"),
+  ) as CorridorGuide;
+  guideBySlugCache.set(entry.slug, parsed);
+  return parsed;
+}
 
 function localizeGuide(
   guide: CorridorGuide,
   lang: string,
+  singleCountrySiblingBySlug: ReadonlyMap<string, string>,
   publishedSlugSet?: ReadonlySet<string>,
 ): CorridorGuide {
   let relatedSlugs = guide.relatedSlugs;
-  const siblingSlug = SINGLE_COUNTRY_SIBLING_BY_SLUG.get(guide.slug);
+  const siblingSlug = singleCountrySiblingBySlug.get(guide.slug);
   if (publishedSlugSet) {
     const filtered = guide.relatedSlugs.filter(
       (s) => s !== guide.slug && publishedSlugSet.has(s),
@@ -164,59 +256,86 @@ function localizeGuide(
 }
 
 export function allCorridorGuides(): CorridorGuide[] {
-  return ALL_CORRIDOR_GUIDES;
+  if (!allGuidesCache) {
+    const idx = getGuideIndex();
+    allGuidesCache = idx.entries.map((entry) => loadGuideBySlug(entry.slug));
+  }
+  return allGuidesCache;
 }
 
 export function getAnyCorridorGuideBySlug(
   slug: string,
   lang = "en",
 ): CorridorGuide | undefined {
-  const guide = ALL_CORRIDOR_GUIDES.find((item) => item.slug === slug);
-  if (!guide || !guide.locales.includes(lang)) {
+  const idx = getGuideIndex();
+  const entry = idx.bySlug.get(slug);
+  if (!entry || !entry.locales.includes(lang)) {
     return undefined;
   }
-  return localizeGuide(guide, lang);
+  return localizeGuide(
+    loadGuideBySlug(entry.slug),
+    lang,
+    idx.singleCountrySiblingBySlug,
+  );
 }
 
 export function allCorridorGuideStaticParams(): Array<{
   lang: string;
   slug: string;
 }> {
+  const idx = getGuideIndex();
   const params: Array<{ lang: string; slug: string }> = [];
-  for (const guide of ALL_CORRIDOR_GUIDES) {
-    for (const lang of guide.locales) {
-      params.push({ lang, slug: guide.slug });
+  for (const entry of idx.entries) {
+    for (const lang of entry.locales) {
+      params.push({ lang, slug: entry.slug });
     }
   }
   return params;
 }
 
 export function publishedCorridorGuides(lang = "en"): CorridorGuide[] {
-  const base = ALL_CORRIDOR_GUIDES.filter(
-    (guide) => guide.wave <= MAX_PUBLISHED_WAVE,
-  );
-  const publishedSlugSet = new Set(base.map((g) => g.slug));
+  const idx = getGuideIndex();
   if (lang === "en") {
-    return base.map((guide) => localizeGuide(guide, "en", publishedSlugSet));
+    return idx.publishedEntries.map((entry) =>
+      localizeGuide(
+        loadGuideBySlug(entry.slug),
+        "en",
+        idx.singleCountrySiblingBySlug,
+        idx.publishedSlugSet,
+      ),
+    );
   }
-  return base
-    .filter((guide) => guide.locales.includes(lang))
-    .map((guide) => localizeGuide(guide, lang, publishedSlugSet));
+  return idx.publishedEntries
+    .filter((entry) => entry.locales.includes(lang))
+    .map((entry) =>
+      localizeGuide(
+        loadGuideBySlug(entry.slug),
+        lang,
+        idx.singleCountrySiblingBySlug,
+        idx.publishedSlugSet,
+      ),
+    );
 }
 
 export function getCorridorGuideBySlug(
   slug: string,
   lang = "en",
 ): CorridorGuide | undefined {
-  const base = ALL_CORRIDOR_GUIDES.filter(
-    (item) => item.wave <= MAX_PUBLISHED_WAVE,
-  );
-  const guide = base.find((item) => item.slug === slug);
-  if (!guide || !guide.locales.includes(lang)) {
+  const idx = getGuideIndex();
+  const entry = idx.bySlug.get(slug);
+  if (
+    !entry ||
+    entry.wave > MAX_PUBLISHED_WAVE ||
+    !entry.locales.includes(lang)
+  ) {
     return undefined;
   }
-  const publishedSlugSet = new Set(base.map((g) => g.slug));
-  return localizeGuide(guide, lang, publishedSlugSet);
+  return localizeGuide(
+    loadGuideBySlug(entry.slug),
+    lang,
+    idx.singleCountrySiblingBySlug,
+    idx.publishedSlugSet,
+  );
 }
 
 export function corridorGuidePath(slug: string, lang = "en"): string {
@@ -227,10 +346,11 @@ export function publishedCorridorGuideStaticParams(): Array<{
   lang: string;
   slug: string;
 }> {
+  const idx = getGuideIndex();
   const params: Array<{ lang: string; slug: string }> = [];
-  for (const guide of publishedCorridorGuides("en")) {
-    for (const lang of guide.locales) {
-      params.push({ lang, slug: guide.slug });
+  for (const entry of idx.publishedEntries) {
+    for (const lang of entry.locales) {
+      params.push({ lang, slug: entry.slug });
     }
   }
   return params;
@@ -404,13 +524,10 @@ export function getCrossBorderSpokesForCountry(
   preferredCategory: CorridorGuide["category"],
   lang = "en",
 ): Array<{ guide: CorridorGuide; targetLang: string }> {
-  const base = ALL_CORRIDOR_GUIDES.filter(
-    (item) => item.wave <= MAX_PUBLISHED_WAVE,
-  );
-  const publishedSlugSet = new Set(base.map((g) => g.slug));
+  const idx = getGuideIndex();
   const isBereavementHub = preferredCategory.includes("bereavement");
 
-  const matching = base.filter(
+  const matching = idx.publishedEntries.filter(
     (item) =>
       item.countryOfDeathCode !== item.citizenshipCountryCode &&
       (item.countryOfDeathCode === countryCode ||
@@ -427,15 +544,15 @@ export function getCrossBorderSpokesForCountry(
   });
 
   return matching.map((item) => {
-    if (lang !== "en" && item.locales.includes(lang)) {
-      return {
-        guide: localizeGuide(item, lang, publishedSlugSet),
-        targetLang: lang,
-      };
-    }
+    const targetLang = lang !== "en" && item.locales.includes(lang) ? lang : "en";
     return {
-      guide: localizeGuide(item, "en", publishedSlugSet),
-      targetLang: "en",
+      guide: localizeGuide(
+        loadGuideBySlug(item.slug),
+        targetLang,
+        idx.singleCountrySiblingBySlug,
+        idx.publishedSlugSet,
+      ),
+      targetLang,
     };
   });
 }
@@ -450,10 +567,7 @@ export function getParentSingleCountryHubsForCorridor(
   if (guide.countryOfDeathCode === guide.citizenshipCountryCode) {
     return [];
   }
-  const base = ALL_CORRIDOR_GUIDES.filter(
-    (item) => item.wave <= MAX_PUBLISHED_WAVE,
-  );
-  const publishedSlugSet = new Set(base.map((g) => g.slug));
+  const idx = getGuideIndex();
   const targetCat = guide.category.includes("bereavement")
     ? "domestic-bereavement"
     : "terminal-illness-admin";
@@ -463,13 +577,13 @@ export function getParentSingleCountryHubsForCorridor(
 
   for (const code of codes) {
     const hub =
-      base.find(
+      idx.publishedEntries.find(
         (item) =>
           item.countryOfDeathCode === code &&
           item.citizenshipCountryCode === code &&
           item.category === targetCat,
       ) ??
-      base.find(
+      idx.publishedEntries.find(
         (item) =>
           item.countryOfDeathCode === code &&
           item.citizenshipCountryCode === code,
@@ -478,7 +592,12 @@ export function getParentSingleCountryHubsForCorridor(
       const targetLang =
         lang !== "en" && hub.locales.includes(lang) ? lang : "en";
       results.push({
-        guide: localizeGuide(hub, targetLang, publishedSlugSet),
+        guide: localizeGuide(
+          loadGuideBySlug(hub.slug),
+          targetLang,
+          idx.singleCountrySiblingBySlug,
+          idx.publishedSlugSet,
+        ),
         targetLang,
       });
     }

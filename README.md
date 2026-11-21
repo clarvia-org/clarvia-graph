@@ -83,7 +83,7 @@ cd services/lex && uv run pytest && cd ..
 
 When a person faces a terminal illness diagnosis or dies, their family must navigate dozens of administrative obligations across tax, social security, civil status, health, banking, insurance, and property — often spanning multiple countries and languages. Each obligation has its own authority, deadline, required documents, and legal basis.
 
-**Clarvia Graph** models this complexity as a structured, source-backed **consequence graph** alongside a **1,000-page global guidance corpus** (`apps/web/src/content/corridor-guides.json`):
+**Clarvia Graph** models this complexity as a structured, source-backed **consequence graph** alongside a **1,000-page global guidance corpus** (`apps/web/src/content/guides/`):
 
 ```
 Source Assertion ──supports──▶ Consequence ──generates──▶ Task Template
@@ -135,7 +135,7 @@ clarvia-graph/
 
 ## Scope
 
-- **Global guidance library (`apps/web/src/content/corridor-guides.json`)**: `592` canonical guides (`1,000` localized pages) covering **terminal illness** and **bereavement administration** across all **196 countries** (`392` single-country guides) and **200 cross-border corridors** in **14 languages**, verified across 4 automated factual and URL validation layers.
+- **Global guidance library (`apps/web/src/content/guides/`)**: `592` canonical guides (`1,000` localized pages) covering **terminal illness** and **bereavement administration** across all **196 countries** (`392` single-country guides) and **200 cross-border corridors** in **14 languages**, verified across 4 automated factual and URL validation layers.
 - **Ask Clarvia (`services/lex/` & `apps/web/src/app/[lang]/ask/`)**: Source-cited automated email guidance service in 100+ languages.
 - **Consequence graph (`graph/`, `sources/`, `lex/`)**: Formal CPSV-AP / CCCEV / ELI / PROV-O consequence graph and legislation tooling (`lex` CLI + Luxembourg Casemates adapter, with the 1,207-law pilot corpus archived offline), with Luxembourg (`LU`) as the first deep reference jurisdiction and cross-border fixtures for `FR`, `DE`, `BE`, `PT`, and `EU`.
 - **Architecture**: Jurisdiction-agnostic and life-event-agnostic by design.
@@ -187,7 +187,7 @@ Want to see your name here? Check out [good first issues](https://github.com/cla
 Path-scoped open licenses — enforced via [`REUSE.toml`](REUSE.toml):
 
 - **Graph code and tooling (`packages/`):** [EUPL-1.2](LICENSE)
-- **Graph data, guidance corpus (`corridor-guides.json`), schemas, vocabularies, documentation:** [CC-BY-4.0](LICENSE-DATA)
+- **Graph data, guidance corpus (`apps/web/src/content/guides/`), schemas, vocabularies, documentation:** [CC-BY-4.0](LICENSE-DATA)
 - **Website (`apps/web/`), legislation tooling (`lex/`), Lex email (`services/lex/`):** [Apache-2.0](apps/web/LICENSE)
 - **Legislation corpus (`lex/countries/`):** per-country official source licence (e.g. Luxembourg Legilux CC-BY-4.0)
 
