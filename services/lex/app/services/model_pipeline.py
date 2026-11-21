@@ -10,15 +10,20 @@ from dataclasses import dataclass
 
 from app.domain.ports import LlmGenerationResult, LlmPort, StructuredLlmResult
 from app.llm.envelope import append_language_retry_instruction
-from app.llm.language import detect_language, normalize_language_code
-from app.llm.schema import LexContact, LexSource
+from app.llm.language import detect_prose_language, normalize_language_code
+from app.llm.schema import LexContact, LexResponse, LexSource
 from app.llm.url_liveness import strip_dead_urls
 from app.llm.url_normalize import (
     match_search_url,
     repair_email_domain_typos,
     source_dedup_key,
 )
-from app.llm.validation import LexValidationError, validate_lex_response
+from app.llm.validation import (
+    LexValidationError,
+    response_entity_phrases,
+    validate_lex_response,
+    validate_response_language,
+)
 
 _LOG = logging.getLogger(__name__)
 _CITATION_RE = re.compile(r"\[(\d+)\]")
@@ -187,10 +192,25 @@ def _observed_mismatch_language(
     expected_language: str,
 ) -> str:
     expected = normalize_language_code(expected_language) or expected_language
-    detected = detect_language(result.response.body_markdown)
+    detected = detect_prose_language(
+        result.response.body_markdown,
+        ignored_phrases=response_entity_phrases(result.response),
+    )
     if detected is not None and detected != expected:
         return detected
     return normalize_language_code(result.response.language) or result.response.language
+
+
+def _has_language_mismatch(
+    response: LexResponse,
+    *,
+    expected_language: str,
+) -> bool:
+    try:
+        validate_response_language(response, expected_language=expected_language)
+        return False
+    except LexValidationError:
+        return True
 
 
 def run_model_pipeline(
@@ -222,9 +242,12 @@ def run_model_pipeline(
         force_search = _should_force_search_on_retry(first_error, first)
 
     retry_envelope = runtime_envelope
-    if (
+    if expected_language is not None and (
         first_error_code == "response_language_mismatch"
-        and expected_language is not None
+        or _has_language_mismatch(
+            first.response,
+            expected_language=expected_language,
+        )
     ):
         observed = _observed_mismatch_language(
             first,

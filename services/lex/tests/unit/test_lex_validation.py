@@ -314,3 +314,43 @@ def test_language_validation_allows_subtags_aliases_and_none() -> None:
 
     resp_es = make_answer_response(language="es")
     validate_lex_response(resp_es, expected_language=None)
+
+
+def test_language_validation_allows_concise_english_with_foreign_authorities() -> None:
+    base = make_answer_response()
+    contact = base.contacts[0].model_copy(
+        update={
+            "name": "Administration communale de la Ville de Luxembourg",
+        }
+    )
+    source = base.sources[0].model_copy(
+        update={
+            "title": "Service de la population - Acte de décès",
+            "publisher": "Ville de Luxembourg",
+        }
+    )
+    resp = base.model_copy(
+        update={
+            "language": "en",
+            "body_markdown": (
+                "Contact Administration communale de la Ville de Luxembourg "
+                "(Service de la population) and Ministère de la Justice for "
+                "the Acte de décès [1].\n\nLex."
+            ),
+            "contacts": [contact],
+            "sources": [source],
+        }
+    )
+    validate_lex_response(resp, expected_language="en")
+
+    resp_no_contacts = make_answer_response(
+        language="en",
+        body_markdown=(
+            "Steps in Germany:\n"
+            "- Standesamt der Stadt Berlin\n"
+            "- Amtsgericht der Stadt\n"
+            "- Bundesministerium der Justiz und des Innern [1]\n\nLex."
+        ),
+        contacts=[],
+    )
+    validate_lex_response(resp_no_contacts, expected_language="en")

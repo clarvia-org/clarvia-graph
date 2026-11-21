@@ -2,10 +2,13 @@
 
 from __future__ import annotations
 
+import unicodedata
+
 import pytest
 from app.domain.models import ConversationMessage, ConversationRole
 from app.llm.language import (
     detect_language,
+    detect_prose_language,
     has_explicit_language_request,
     normalize_language_code,
     resolve_expected_reply_language,
@@ -141,6 +144,13 @@ def test_detect_language_cross_border_english_stays_english() -> None:
         "Мој отац је умро јуче и потребно ми је упутство за документацију.",
         "Potřebuji poradit s úmrtním listem v Praze pro dědice.",
         "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do.",
+        "پدرم دیروز در تهران فوت کرد. چه مدارکی برای گواهی فوت لازم است؟",
+        "میرے والد کا کل انتقال ہو گیا۔ ڈیتھ سرٹیفکیٹ کے لیے کیا دستاویزات چاہئیں؟",
+        "Баща ми почина вчера в София. Какви документи са необходими за наследството?",
+        "Баща ми почина вчера в България. Какви документи трябват за смъртния акт?",
+        "Менің әкем кеше қайтыс болды. Қандай құжаттар қажет?",
+        "Min mor døde igår. Hvad skal vi gøre nu?",
+        "Min mor døde i går. Hva må vi gjøre nå?",
     ],
 )
 def test_detect_language_abstains_on_short_ambiguous_or_unsupported(
@@ -150,9 +160,113 @@ def test_detect_language_abstains_on_short_ambiguous_or_unsupported(
 
 
 @pytest.mark.parametrize(
+    ("expected", "sample"),
+    [
+        (
+            "fr",
+            "En cas de décès en France, quelle autorité contacter auprès de la "
+            "mairie de Bordeaux?",
+        ),
+        (
+            "fr",
+            "Suite à la perte de mon parent en France, quels actes de décès "
+            "obtenir de la mairie de Nice?",
+        ),
+        (
+            "fr",
+            "Quels documents demander à la mairie de Marseille en cas de décès "
+            "d'un parent ?",
+        ),
+        (
+            "it",
+            "Mia sorella vive a Milano e lavora a Torino e ha bisogno a casa "
+            "a Roma.",
+        ),
+        (
+            "it",
+            "Occorre andare a parlare a Roma e portare documenti a ufficio "
+            "anagrafe e banca.",
+        ),
+    ],
+)
+def test_detect_language_handles_romance_shared_prepositions(
+    expected: str, sample: str
+) -> None:
+    assert detect_language(sample) == expected
+
+
+def test_detect_language_handles_nfd_and_turkish_dotted_i() -> None:
+    french = "Ma mère est décédée hier à Paris et je dois déclarer son décès."
+    french_steps = (
+        "Ma mère est décédée récemment. Quelles démarches pour le certificat de décès?"
+    )
+    romanian = "Tatăl meu a decedat ieri și nu știu ce documente sunt necesare."
+    assert detect_language(unicodedata.normalize("NFD", french)) == "fr"
+    assert detect_language(unicodedata.normalize("NFD", french_steps)) == "fr"
+    assert detect_language(unicodedata.normalize("NFD", romanian)) == "ro"
+    assert (
+        detect_language(
+            "İyi günler. Ölüm belgesi İçin ve İle ilgili bilgi almak istiyorum."
+        )
+        == "tr"
+    )
+
+
+def test_detect_prose_language_strips_foreign_authority_names() -> None:
+    concise_english_samples = [
+        (
+            "Contact Administration communale de la Ville de Luxembourg "
+            "(Service de la population) and Ministère de la Justice for the "
+            "Acte de décès [1].\n\nLex."
+        ),
+        (
+            "Notify Conservatória do Registo Civil de Lisboa, Segurança Social, "
+            "Instituto dos Registos e do Notariado, and Autoridade Tributária "
+            "[1].\n\nLex."
+        ),
+        (
+            "Contact Comune di Roma, Agenzia delle Entrate, Istituto Nazionale "
+            "della Previdenza Sociale (INPS), and Ministero della Giustizia "
+            "[1].\n\nLex."
+        ),
+        (
+            "Steps in Germany:\n"
+            "- Standesamt der Stadt Berlin\n"
+            "- Amtsgericht der Stadt\n"
+            "- Bundesministerium der Justiz und des Innern [1]\n\nLex."
+        ),
+    ]
+    for sample in concise_english_samples:
+        assert detect_prose_language(sample) in {None, "en"}
+
+    assert (
+        detect_prose_language(
+            "Debe acudir al Registro Civil de Madrid para solicitar el "
+            "certificado literal de defunción [1].\n\nLex."
+        )
+        == "es"
+    )
+    assert (
+        detect_prose_language(
+            "Vous devez contacter la mairie de votre commune en France pour "
+            "obtenir l'acte de décès [1].\n\nLex."
+        )
+        == "fr"
+    )
+    assert (
+        detect_prose_language(
+            "Sie müssen beim Standesamt der Stadt Berlin einen Antrag stellen "
+            "und die Sterbeurkunde abholen [1].\n\nLex."
+        )
+        == "de"
+    )
+
+
+@pytest.mark.parametrize(
     "sample",
     [
         "My father died in Mexico. Please reply in Spanish.",
+        "My father died in Tokyo. Please reply in Japanese.",
         "Please write your answer in German.",
         "Could you answer me in French?",
         "Preferred language: Portuguese",

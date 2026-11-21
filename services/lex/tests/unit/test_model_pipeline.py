@@ -870,3 +870,65 @@ def test_processor_retries_spanish_drift_on_english_cross_border_inquiry(
     assert len(plain_parts) == 1
     assert isinstance(plain_parts[0], bytes)
     assert "Sources checked:" in plain_parts[0].decode("utf-8")
+
+
+def test_pipeline_injects_language_correction_when_search_also_missing() -> None:
+    class RecordingLlm(FakeLlmAdapter):
+        def __init__(self, responses: list[LlmGenerationResult]) -> None:
+            super().__init__(responses=responses)
+            self.envelopes: list[str] = []
+
+        def generate(
+            self,
+            *,
+            system_prompt: str,
+            runtime_envelope: str,
+            force_web_search: bool = False,
+        ) -> LlmGenerationResult:
+            self.envelopes.append(runtime_envelope)
+            return super().generate(
+                system_prompt=system_prompt,
+                runtime_envelope=runtime_envelope,
+                force_web_search=force_web_search,
+            )
+
+    unsearched_spanish = generation_result_from_response(
+        make_answer_response(
+            language="es",
+            body_markdown=(
+                "Debe solicitar el certificado literal de defunción ante el "
+                "registro civil correspondiente [1].\n\nLex."
+            ),
+        ),
+        source_urls=frozenset(),
+        web_search_calls=0,
+    )
+    recovered_english = generation_result_from_response(
+        make_answer_response(
+            language="en",
+            body_markdown=(
+                "To register the death abroad you should contact the Commune "
+                "office with the required documents [1].\n\nLex."
+            ),
+        )
+    )
+    llm = RecordingLlm(responses=[unsearched_spanish, recovered_english])
+    envelope = (
+        "<SYSTEM_CONTROLLED_CONTEXT>\n"
+        "expected_reply_language: en\n"
+        "</SYSTEM_CONTROLLED_CONTEXT>\n\n"
+        "<LATEST_USER_MESSAGE>\nWhat steps should I take?\n</LATEST_USER_MESSAGE>"
+    )
+
+    result = run_model_pipeline(
+        llm,
+        system_prompt="prompt",
+        runtime_envelope=envelope,
+        expected_language="en",
+    )
+
+    assert len(llm.calls) == 2
+    assert llm.calls[1]["force_web_search"] is True
+    assert "language_correction_required:" in llm.envelopes[1]
+    assert "'es' instead of 'en'" in llm.envelopes[1]
+    assert result.response.language == "en"

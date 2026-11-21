@@ -8,6 +8,8 @@ supported languages, and thread-aware expected reply language resolution.
 from __future__ import annotations
 
 import re
+import unicodedata
+from collections import Counter
 from collections.abc import Sequence
 
 from app.domain.models import ConversationMessage, ConversationRole
@@ -84,7 +86,12 @@ _LANG_NAMES_PATTERN = (
     r"finska|nederländska|polska|rumänska|turkiska|ukrainska|ryska|arabiska|"
     r"українською|українська|російською|англійською|"
     r"по-русски|на русском|на английском|по-английски|"
-    r"العربية|الإنجليزية|الفرنسية|الإسبانية|الألمانية|البرتغالية)"
+    r"العربية|الإنجليزية|الفرنسية|الإسبانية|الألمانية|البرتغالية|"
+    r"japanese|korean|chinese|mandarin|cantonese|greek|czech|hungarian|"
+    r"slovak|slovenian|bulgarian|serbian|croatian|danish|norwegian|icelandic|"
+    r"estonian|latvian|lithuanian|hebrew|persian|farsi|urdu|hindi|bengali|"
+    r"vietnamese|thai|indonesian|malay|tagalog|albanian|macedonian|georgian|"
+    r"armenian|catalan|basque|galician|irish|welsh|swahili|nepali|tamil)"
 )
 
 _EXPLICIT_REQUEST_PATTERNS: tuple[re.Pattern[str], ...] = (
@@ -269,8 +276,34 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "une",
             "des",
             "du",
+            "de",
+            "d",
+            "l",
+            "qu",
+            "n",
+            "s",
+            "c",
+            "j",
+            "m",
+            "t",
             "au",
             "aux",
+            "en",
+            "à",
+            "a",
+            "on",
+            "il",
+            "elle",
+            "ils",
+            "elles",
+            "y",
+            "si",
+            "se",
+            "ne",
+            "ce",
+            "cet",
+            "cette",
+            "ces",
             "et",
             "ou",
             "mais",
@@ -280,11 +313,14 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "qui",
             "quoi",
             "quel",
+            "quels",
             "quelle",
+            "quelles",
             "comment",
             "où",
             "quand",
             "pourquoi",
+            "dont",
             "mon",
             "ma",
             "mes",
@@ -299,6 +335,8 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "est",
             "sont",
             "ont",
+            "être",
+            "avoir",
             "peut",
             "dois",
             "faut",
@@ -306,10 +344,15 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "hier",
             "mère",
             "père",
+            "parent",
+            "parents",
             "décédé",
             "décédée",
             "décès",
             "acte",
+            "actes",
+            "certificat",
+            "documents",
             "dans",
             "pour",
             "par",
@@ -318,11 +361,25 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "sans",
             "chez",
             "sous",
-            "cette",
-            "ces",
+            "entre",
+            "après",
+            "avant",
+            "lors",
+            "auprès",
             "pas",
             "plus",
             "aussi",
+            "tout",
+            "tous",
+            "cas",
+            "suite",
+            "perte",
+            "mairie",
+            "commune",
+            "obtenir",
+            "contacter",
+            "demander",
+            "démarches",
             "merci",
             "bonjour",
             "veuillez",
@@ -358,6 +415,7 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "ich",
             "wir",
             "sie",
+            "es",
             "mein",
             "meine",
             "ihr",
@@ -371,6 +429,10 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "muss",
             "soll",
             "nicht",
+            "in",
+            "im",
+            "an",
+            "am",
             "mit",
             "für",
             "von",
@@ -387,7 +449,12 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "vater",
             "gestorben",
             "verstorben",
+            "sterbefall",
             "sterbeurkunde",
+            "dokumente",
+            "standesamt",
+            "behörde",
+            "gemeinde",
             "bitte",
             "machen",
             "tun",
@@ -399,11 +466,16 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "la",
             "los",
             "las",
+            "lo",
             "de",
             "del",
             "al",
+            "a",
+            "o",
             "en",
             "y",
+            "no",
+            "si",
             "unos",
             "unas",
             "un",
@@ -443,6 +515,10 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "murió",
             "defunción",
             "certificado",
+            "documentos",
+            "registro",
+            "civil",
+            "consulado",
             "sobre",
             "este",
             "esta",
@@ -529,8 +605,13 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
         {
             "il",
             "lo",
+            "la",
+            "i",
             "gli",
             "le",
+            "un",
+            "una",
+            "uno",
             "del",
             "della",
             "dei",
@@ -538,7 +619,12 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "delle",
             "al",
             "alla",
+            "a",
+            "e",
             "ed",
+            "o",
+            "in",
+            "si",
             "che",
             "di",
             "da",
@@ -553,6 +639,8 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "dove",
             "quando",
             "perché",
+            "quale",
+            "quali",
             "mio",
             "mia",
             "suo",
@@ -560,20 +648,40 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "nostro",
             "è",
             "sono",
+            "essere",
+            "avere",
             "ha",
             "hanno",
             "può",
             "posso",
             "devo",
+            "occorre",
+            "bisogno",
             "fare",
+            "andare",
+            "parlare",
+            "portare",
+            "richiedere",
             "ieri",
+            "dopo",
+            "prima",
+            "presso",
             "madre",
             "padre",
+            "sorella",
+            "fratello",
             "morto",
             "morta",
             "deceduto",
+            "deceduta",
             "decesso",
             "certificato",
+            "documenti",
+            "ufficio",
+            "comune",
+            "anagrafe",
+            "vive",
+            "lavora",
             "anche",
             "non",
             "questo",
@@ -597,6 +705,10 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "is",
             "nu",
             "in",
+            "op",
+            "te",
+            "er",
+            "over",
             "ook",
             "niet",
             "als",
@@ -622,6 +734,7 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "wij",
             "heb",
             "heeft",
+            "hebben",
             "wordt",
             "moet",
             "kan",
@@ -632,6 +745,7 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "overleden",
             "overlijden",
             "akte",
+            "documenten",
             "alstublieft",
             "dank",
             "hoe",
@@ -695,7 +809,9 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
     "ro": frozenset(
         {
             "și",
+            "si",
             "în",
+            "in",
             "cu",
             "de",
             "din",
@@ -710,6 +826,8 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "când",
             "unde",
             "care",
+            "un",
+            "o",
             "niște",
             "ai",
             "ale",
@@ -951,6 +1069,79 @@ _DISTINCTIVE_LATIN_CHARS: dict[str, frozenset[str]] = {
     "sv": frozenset({"å"}),
 }
 
+_STOPWORD_LANG_COUNTS: Counter[str] = Counter(
+    word for words in _LATIN_STOPWORDS.values() for word in words
+)
+
+_DA_NO_CHARS = frozenset({"ø", "æ"})
+_DA_NO_WORDS = frozenset(
+    {
+        "hvad",
+        "hva",
+        "ikke",
+        "jeg",
+        "skal",
+        "gøre",
+        "gjør",
+        "gjøre",
+        "døde",
+        "død",
+        "hvordan",
+        "hvorfor",
+        "nå",
+        "må",
+    }
+)
+
+_NON_ARABIC_PERSO_URDU_CHARS = frozenset(
+    {"پ", "چ", "ژ", "گ", "ک", "ی", "ہ", "ے", "ٹ", "ڈ", "ڑ", "ں", "ھ"}
+)
+
+_AR_STOPWORDS: frozenset[str] = frozenset(
+    {
+        "في",
+        "من",
+        "على",
+        "إلى",
+        "الى",
+        "عن",
+        "مع",
+        "هذا",
+        "هذه",
+        "التي",
+        "الذي",
+        "ما",
+        "ماذا",
+        "كيف",
+        "أين",
+        "متى",
+        "هل",
+        "أو",
+        "ثم",
+        "بعد",
+        "قبل",
+        "توفي",
+        "توفيت",
+        "الوفاة",
+        "وفاة",
+        "شهادة",
+        "والدي",
+        "والدتي",
+        "المستندات",
+        "الأوراق",
+        "الإجراءات",
+        "القانونية",
+        "القنصلية",
+        "السفارة",
+        "لدي",
+        "أحتاج",
+        "يجب",
+        "يرجى",
+        "شكرا",
+        "السلام",
+    }
+)
+
 _UK_STOPWORDS: frozenset[str] = frozenset(
     {
         "що",
@@ -1017,6 +1208,8 @@ _RU_STOPWORDS: frozenset[str] = frozenset(
         "мой",
         "моя",
         "меня",
+        "мне",
+        "вчера",
         "надо",
         "при",
         "где",
@@ -1030,9 +1223,79 @@ _RU_STOPWORDS: frozenset[str] = frozenset(
     }
 )
 
+_BG_STOPWORDS: frozenset[str] = frozenset(
+    {
+        "са",
+        "какво",
+        "какви",
+        "трябва",
+        "трябват",
+        "смърт",
+        "смъртния",
+        "смъртен",
+        "съм",
+        "българия",
+        "почина",
+        "необходими",
+        "наследството",
+        "наследство",
+        "моля",
+    }
+)
+
 _UK_CHARS = frozenset({"і", "ї", "є", "ґ"})
 _RU_CHARS = frozenset({"ы", "э", "ё", "ъ"})
-_OTHER_CYRILLIC_CHARS = frozenset({"ћ", "ђ", "љ", "њ", "џ", "ј", "ў"})
+_OTHER_CYRILLIC_CHARS = frozenset(
+    {
+        "ћ",
+        "ђ",
+        "љ",
+        "њ",
+        "џ",
+        "ј",
+        "ў",
+        "ә",
+        "қ",
+        "ң",
+        "ғ",
+        "ү",
+        "ұ",
+        "ө",
+        "һ",
+        "ҷ",
+        "ҳ",
+        "ӯ",
+        "ӣ",
+        "ҙ",
+        "ҡ",
+        "ҫ",
+        "җ",
+    }
+)
+
+_ENTITY_CONN_WORD = (
+    r"(?:de|del|la|le|les|du|des|do|da|dos|das|e|y|i|di|delle|della|degli|"
+    r"der|die|und|von|zu|communale?|civile?|nationale?|fédérale?|régionale?)"
+)
+_FOREIGN_ENTITY_SPAN_RE = re.compile(
+    rf"\b[A-ZÀ-ÖØ-Þ][^\W\d_]+"
+    rf"(?:(?:\s+[A-ZÀ-ÖØ-Þ][^\W\d_]+)*"
+    rf"(?:\s+{_ENTITY_CONN_WORD}){{1,3}}\s+[A-ZÀ-ÖØ-Þ][^\W\d_]+)+"
+    rf"(?:\s+[A-ZÀ-ÖØ-Þ][^\W\d_]+)*",
+    re.UNICODE,
+)
+_PAREN_ENTITY_RE = re.compile(
+    rf"\(\s*[A-ZÀ-ÖØ-Þ][^\W\d_]*(?:\s+{_ENTITY_CONN_WORD})+[^()\n]{{0,80}}\)",
+    re.UNICODE,
+)
+
+
+def _normalize_text(text: str) -> str:
+    return unicodedata.normalize("NFC", text)
+
+
+def _lower_text(text: str) -> str:
+    return _normalize_text(text).replace("\u0130", "i").lower()
 
 
 def normalize_language_code(value: str | None) -> str | None:
@@ -1051,15 +1314,17 @@ def normalize_language_code(value: str | None) -> str | None:
 
 def has_explicit_language_request(text: str) -> bool:
     """Return True when the text explicitly asks Lex to reply in a language."""
-    if not text.strip():
+    normalized = _normalize_text(text)
+    if not normalized.strip():
         return False
     return any(
-        pattern.search(text) is not None for pattern in _EXPLICIT_REQUEST_PATTERNS
+        pattern.search(normalized) is not None for pattern in _EXPLICIT_REQUEST_PATTERNS
     )
 
 
 def _strip_noise(text: str) -> str:
-    without_urls = _URL_RE.sub(" ", text)
+    normalized = _normalize_text(text)
+    without_urls = _URL_RE.sub(" ", normalized)
     without_emails = _EMAIL_RE.sub(" ", without_urls)
     return _CITATION_RE.sub(" ", without_emails)
 
@@ -1084,56 +1349,95 @@ def _count_scripts(cleaned: str) -> tuple[int, int, int, int]:
     return arabic, cyrillic, latin, other
 
 
+def _is_arabic_stopword(token: str) -> bool:
+    if token in _AR_STOPWORDS:
+        return True
+    if len(token) >= 4 and token[0] in {"و", "ب", "ل", "ف"}:
+        return token[1:] in _AR_STOPWORDS
+    return False
+
+
+def _detect_arabic_language(cleaned: str, tokens: list[str]) -> str | None:
+    if any(char in _NON_ARABIC_PERSO_URDU_CHARS for char in cleaned):
+        return None
+    ar_hits = sum(1 for token in tokens if _is_arabic_stopword(token))
+    return "ar" if ar_hits >= 2 else None
+
+
 def _detect_cyrillic_language(cleaned: str, tokens: list[str]) -> str | None:
-    lowered = cleaned.lower()
+    lowered = _lower_text(cleaned)
     if any(char in lowered for char in _OTHER_CYRILLIC_CHARS):
         return None
-    uk_score = sum(2 for token in tokens if token in _UK_STOPWORDS)
-    ru_score = sum(2 for token in tokens if token in _RU_STOPWORDS)
-    uk_chars = sum(1 for char in lowered if char in _UK_CHARS)
-    ru_chars = sum(1 for char in lowered if char in _RU_CHARS)
-    uk_score += min(uk_chars * 2, 6)
-    ru_score += min(ru_chars * 2, 6)
-    if uk_score < 4 and ru_score < 4:
+    bg_hits = sum(1 for token in tokens if token in _BG_STOPWORDS)
+    uk_hits = sum(1 for token in tokens if token in _UK_STOPWORDS)
+    ru_hits = sum(1 for token in tokens if token in _RU_STOPWORDS)
+    if bg_hits >= 2 or (bg_hits >= 1 and bg_hits >= max(uk_hits, ru_hits)):
         return None
-    if uk_score >= ru_score + 2:
+    uk_score = uk_hits * 2 + min(sum(1 for c in lowered if c in _UK_CHARS) * 2, 6)
+    ru_score = ru_hits * 2 + min(sum(1 for c in lowered if c in _RU_CHARS) * 2, 6)
+    if uk_hits >= 2 and uk_score >= 6 and uk_score >= ru_score + 4:
         return "uk"
-    if ru_score >= uk_score + 2:
+    if ru_hits >= 2 and ru_score >= 6 and ru_score >= uk_score + 4:
         return "ru"
     return None
 
 
+def _latin_token_weight(token: str) -> int:
+    if len(token) == 1:
+        return 1
+    lang_count = _STOPWORD_LANG_COUNTS[token]
+    if lang_count >= 3:
+        return 1
+    if lang_count == 2:
+        return 2
+    return 3
+
+
 def _score_latin_languages(
     cleaned: str, tokens: list[str]
-) -> tuple[dict[str, int], dict[str, int]]:
-    lowered = cleaned.lower()
+) -> tuple[dict[str, int], dict[str, int], dict[str, int]]:
+    lowered = _lower_text(cleaned)
     scores: dict[str, int] = {}
     hits: dict[str, int] = {}
+    strong_hits: dict[str, int] = {}
     for lang, stopwords in _LATIN_STOPWORDS.items():
         matched = [token for token in tokens if token in stopwords]
         hit_count = len(matched)
-        score = sum(2 if len(token) == 1 else 3 for token in matched)
+        weights = [_latin_token_weight(token) for token in matched]
+        score = sum(weights)
+        strong_count = sum(1 for weight in weights if weight >= 2)
         distinct_chars = _DISTINCTIVE_LATIN_CHARS.get(lang)
         if hit_count > 0 and distinct_chars:
             char_bonus = sum(1 for char in distinct_chars if char in lowered)
             score += min(char_bonus, 3)
         scores[lang] = score
         hits[lang] = hit_count
-    return scores, hits
+        strong_hits[lang] = strong_count
+    return scores, hits, strong_hits
 
 
 def _detect_latin_language(cleaned: str, tokens: list[str]) -> str | None:
-    scores, hits = _score_latin_languages(cleaned, tokens)
+    lowered = _lower_text(cleaned)
+    scores, hits, strong_hits = _score_latin_languages(cleaned, tokens)
     ranked = sorted(scores.items(), key=lambda item: item[1], reverse=True)
     top_lang, top_score = ranked[0]
     second_score = ranked[1][1]
     top_hits = hits[top_lang]
-    if top_hits < _MIN_LATIN_HITS or top_score < _MIN_LATIN_SCORE:
+    if (
+        top_hits < _MIN_LATIN_HITS
+        or strong_hits[top_lang] < 1
+        or top_score < _MIN_LATIN_SCORE
+    ):
         return None
     if (top_hits / len(tokens)) < _MIN_LATIN_DENSITY and top_hits < 5:
         return None
     gap = top_score - second_score
     if gap < _MIN_SCORE_GAP or (gap / top_score) < _MIN_SCORE_MARGIN_RATIO:
+        return None
+    if top_lang == "sv" and (
+        any(char in lowered for char in _DA_NO_CHARS)
+        or any(token in _DA_NO_WORDS for token in tokens)
+    ):
         return None
     return top_lang
 
@@ -1141,7 +1445,7 @@ def _detect_latin_language(cleaned: str, tokens: list[str]) -> str | None:
 def detect_language(text: str) -> str | None:
     """Detect the dominant prose language, or None when short or ambiguous."""
     cleaned = _strip_noise(text)
-    tokens = [token.lower() for token in _WORD_RE.findall(cleaned)]
+    tokens = _WORD_RE.findall(_lower_text(cleaned))
     if len(tokens) < _MIN_TOKENS:
         return None
 
@@ -1151,12 +1455,35 @@ def detect_language(text: str) -> str | None:
         return None
 
     if (arabic / total_alpha) >= _MIN_SCRIPT_RATIO:
-        return "ar"
+        return _detect_arabic_language(cleaned, tokens)
     if (cyrillic / total_alpha) >= _MIN_SCRIPT_RATIO:
         return _detect_cyrillic_language(cleaned, tokens)
     if (latin / total_alpha) >= _MIN_SCRIPT_RATIO:
         return _detect_latin_language(cleaned, tokens)
     return None
+
+
+def detect_prose_language(
+    text: str,
+    *,
+    ignored_phrases: Sequence[str] = (),
+) -> str | None:
+    """Detect prose language after stripping cited foreign authority names."""
+    scrubbed = _normalize_text(text)
+    phrases = sorted(
+        {
+            _normalize_text(phrase.strip())
+            for phrase in ignored_phrases
+            if len(phrase.strip()) >= 4
+        },
+        key=len,
+        reverse=True,
+    )
+    for phrase in phrases:
+        scrubbed = re.sub(re.escape(phrase), " ", scrubbed, flags=re.IGNORECASE)
+    scrubbed = _PAREN_ENTITY_RE.sub(" ", scrubbed)
+    scrubbed = _FOREIGN_ENTITY_SPAN_RE.sub(" ", scrubbed)
+    return detect_language(scrubbed)
 
 
 def resolve_expected_reply_language(
@@ -1192,6 +1519,7 @@ def resolve_expected_reply_language(
 
 __all__ = [
     "detect_language",
+    "detect_prose_language",
     "has_explicit_language_request",
     "normalize_language_code",
     "resolve_expected_reply_language",

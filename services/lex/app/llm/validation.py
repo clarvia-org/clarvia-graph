@@ -10,7 +10,7 @@ from __future__ import annotations
 import re
 from collections.abc import Collection
 
-from app.llm.language import detect_language, normalize_language_code
+from app.llm.language import detect_prose_language, normalize_language_code
 from app.llm.schema import LexResponse
 from app.llm.url_normalize import (
     find_email_domain_typo,
@@ -322,11 +322,26 @@ def _validate_action_rules(response: LexResponse) -> None:
         )
 
 
-def _validate_language(
+def response_entity_phrases(response: LexResponse) -> tuple[str, ...]:
+    """Return official contact/source strings that may appear in foreign prose."""
+    phrases: list[str] = []
+    for contact in response.contacts:
+        if contact.name.strip():
+            phrases.append(contact.name)
+    for source in response.sources:
+        if source.title.strip():
+            phrases.append(source.title)
+        if source.publisher.strip():
+            phrases.append(source.publisher)
+    return tuple(phrases)
+
+
+def validate_response_language(
     response: LexResponse,
     *,
     expected_language: str | None,
 ) -> None:
+    """Validate that declared and prose languages match ``expected_language``."""
     expected = normalize_language_code(expected_language)
     if expected is None:
         return
@@ -338,7 +353,10 @@ def _validate_language(
             f"Declared language {response.language!r} does not match {expected!r}",
         )
 
-    detected = detect_language(response.body_markdown)
+    detected = detect_prose_language(
+        response.body_markdown,
+        ignored_phrases=response_entity_phrases(response),
+    )
     if detected is not None and detected != expected:
         raise LexValidationError(
             "response_language_mismatch",
@@ -384,7 +402,12 @@ def validate_lex_response(
             web_search_calls=web_search_calls,
         )
 
-    _validate_language(response, expected_language=expected_language)
+    validate_response_language(response, expected_language=expected_language)
 
 
-__all__ = ["LexValidationError", "validate_lex_response"]
+__all__ = [
+    "LexValidationError",
+    "response_entity_phrases",
+    "validate_lex_response",
+    "validate_response_language",
+]
