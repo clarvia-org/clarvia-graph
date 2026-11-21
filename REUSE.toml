@@ -10,7 +10,8 @@ version = 1
 #   Source assertions (original Clarvia work)      -> EUPL-1.2
 #   Source snapshot metadata (YAML)                -> EUPL-1.2
 #   HTML snapshots (government websites)           -> LicenseRef-Gov-PublicDomain
-#   apps/web (former workflow-web)                 -> Apache-2.0
+#   apps/web (code & assets, former workflow-web) -> Apache-2.0
+#   apps/web guidance corpus & research datasets   -> CC-BY-4.0
 #   lex project-authored code/docs                 -> Apache-2.0
 #   lex legislation corpus (official sources)      -> CC-BY-4.0 (per-country source_license)
 #   services/lex (Lex email, public-safe)          -> Apache-2.0
@@ -208,6 +209,17 @@ path = [
 ]
 SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
 SPDX-License-Identifier = "Apache-2.0"
+
+# ── apps/web guidance corpus & research datasets (CC-BY-4.0) ─────────
+
+[[annotations]]
+path = [
+  "apps/web/src/content/guides/**",
+  "apps/web/public/data/research/**",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2025-2026 CLARVIA ASBL, Luxembourg"
+SPDX-License-Identifier = "CC-BY-4.0"
 
 # ── lex project-authored code, schemas, docs, config ─────────────────
 
