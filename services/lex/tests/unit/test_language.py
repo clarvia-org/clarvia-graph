@@ -319,6 +319,15 @@ def test_detect_prose_language_strips_foreign_authority_names() -> None:
         )
         == "lb"
     )
+    assert (
+        detect_prose_language(
+            "Pasos importantes:\n"
+            "- Certificado de defunción del registro civil\n"
+            "- Apostilla para documentos oficiales\n"
+            "- Cuenta bancaria y herencia familiar [1]\n\nLex."
+        )
+        == "es"
+    )
 
     assert (
         detect_prose_language(

@@ -1341,9 +1341,10 @@ _FOREIGN_ENTITY_SPAN_RE = re.compile(
 _AGENCY_HEAD_WORDS = (
     r"(?:Administration|Service|Caisse|Direction|Ministère|Ministerio|"
     r"Ministero|Ministerium|Instituto|Istituto|Conservatória|Ufficio|"
-    r"Registro|Agencia|Agenzia|Autoridade|Standesamt|Amtsgericht|"
-    r"Nachlassgericht|Bundesministerium)"
+    r"Registro|Agencia|Agenzia|Autoridade|Comune|Segurança|Standesamt|"
+    r"Amtsgericht|Bundesministerium)"
 )
+_AGENCY_HEAD_START_RE = re.compile(rf"^{_AGENCY_HEAD_WORDS}\b", re.UNICODE)
 _INST_TOKEN = (
     r"(?:(?:d['’]|l['’])?(?:état|assurance|enregistrement)|"
     r"de|del|la|le|les|du|des|do|da|dos|das|e|et|di|delle|"
@@ -1590,7 +1591,7 @@ def detect_language(text: str) -> str | None:
 
 def _strip_noun_bullet_line(match: re.Match[str]) -> str:
     content = match.group(1).strip()
-    if not content or not content[0].isupper():
+    if not content or _AGENCY_HEAD_START_RE.match(content) is None:
         return match.group(0)
     tokens = _WORD_RE.findall(_lower_text(content))
     if any(token in _ACTION_OR_CLAUSE_WORDS for token in tokens):
