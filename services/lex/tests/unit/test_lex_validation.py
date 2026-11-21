@@ -56,9 +56,7 @@ def test_missing_sign_off() -> None:
 
 def test_em_dash_allowed() -> None:
     resp = make_answer_response(
-        body_markdown=(
-            "Text \u2014 more. Contact the Commune office [1].\n\nLex."
-        )
+        body_markdown=("Text \u2014 more. Contact the Commune office [1].\n\nLex.")
     )
     validate_lex_response(resp)
 
@@ -272,3 +270,127 @@ def test_clarify_requires_not_needed_research() -> None:
     with pytest.raises(LexValidationError) as exc:
         validate_lex_response(resp)
     _assert_code(exc, "clarify_research_not_needed")
+
+
+def test_language_mismatch_rejected_for_declared_language() -> None:
+    resp = make_answer_response(language="es")
+    with pytest.raises(LexValidationError) as exc:
+        validate_lex_response(resp, expected_language="en")
+    _assert_code(exc, "response_language_mismatch")
+
+
+def test_language_mismatch_rejected_for_detected_body_language() -> None:
+    resp = make_answer_response(
+        language="en",
+        body_markdown=(
+            "Mi padre falleció en Madrid ayer y debe solicitar el certificado "
+            "de defunción ante el registro civil [1].\n\nLex."
+        ),
+        contacts=[],
+    )
+    with pytest.raises(LexValidationError) as exc:
+        validate_lex_response(resp, expected_language="en")
+    _assert_code(exc, "response_language_mismatch")
+
+
+def test_language_validation_allows_subtags_aliases_and_none() -> None:
+    resp_en = make_answer_response(
+        language="en-US",
+        body_markdown=(
+            "Contact the Commune office to request the official death "
+            "certificate in Luxembourg [1].\n\nLex."
+        ),
+    )
+    validate_lex_response(resp_en, expected_language="en")
+
+    resp_lb = make_answer_response(
+        language="lu",
+        body_markdown=(
+            "Kontaktéiert d'Gemeng zu Lëtzebuerg fir den Doudesakt [1].\n\nLex."
+        ),
+        contacts=[],
+    )
+    validate_lex_response(resp_lb, expected_language="lb")
+
+    resp_es = make_answer_response(language="es")
+    validate_lex_response(resp_es, expected_language=None)
+
+
+def test_language_validation_allows_concise_english_with_foreign_authorities() -> None:
+    base = make_answer_response()
+    contact = base.contacts[0].model_copy(
+        update={
+            "name": "Administration communale de la Ville de Luxembourg",
+        }
+    )
+    source = base.sources[0].model_copy(
+        update={
+            "title": "Service de la population - Acte de décès",
+            "publisher": "Ville de Luxembourg",
+        }
+    )
+    resp = base.model_copy(
+        update={
+            "language": "en",
+            "body_markdown": (
+                "Contact Administration communale de la Ville de Luxembourg "
+                "(Service de la population) and Ministère de la Justice for "
+                "the Acte de décès [1].\n\nLex."
+            ),
+            "contacts": [contact],
+            "sources": [source],
+        }
+    )
+    validate_lex_response(resp, expected_language="en")
+
+    resp_no_contacts = make_answer_response(
+        language="en",
+        body_markdown=(
+            "Steps in Germany:\n"
+            "- Standesamt der Stadt Berlin\n"
+            "- Amtsgericht der Stadt\n"
+            "- Bundesministerium der Justiz und des Innern [1]\n\nLex."
+        ),
+        contacts=[],
+    )
+    validate_lex_response(resp_no_contacts, expected_language="en")
+
+    for checklist in (
+        "In Luxembourg, contact:\n"
+        "- Service de l'état civil de la commune\n"
+        "- Caisse nationale de santé (CNS)\n"
+        "- Administration de l'enregistrement, des domaines et de la TVA [1]\n\nLex.",
+        "In Spain, contact:\n"
+        "- Registro Civil (certificado literal de defunción)\n"
+        "- Ministerio de Justicia (Certificado de Actos de Última Voluntad)\n"
+        "- Agencia Estatal de Administración Tributaria (AEAT) [1]\n\nLex.",
+        "In Portugal, contact:\n"
+        "- Conservatória do Registo Civil (certidão de óbito)\n"
+        "- Instituto dos Registos e do Notariado (IRN)\n"
+        "- Segurança Social [1]\n\nLex.",
+        "In Italy, contact:\n"
+        "- Ufficio di stato civile del comune (certificato di morte)\n"
+        "- Agenzia delle Entrate\n"
+        "- Ministero degli Affari Esteri [1]\n\nLex.",
+    ):
+        validate_lex_response(
+            make_answer_response(language="en", body_markdown=checklist, contacts=[]),
+            expected_language="en",
+        )
+
+    for wrong_body in (
+        "Schritte in Deutschland:\n"
+        "- Standesamt der Stadt München kontaktieren\n"
+        "- Sterbeurkunde und Geburtsurkunde beim Amt anfordern\n"
+        "- Nachlassgericht und Krankenkasse informieren [1]\n\nLex.",
+        "Kontaktéiert d'Gemeng zu Lëtzebuerg fir den Doudesakt unzefroen "
+        "a mellt den Doudesfall bannent 24 Stonnen [1].\n\nLex.",
+    ):
+        with pytest.raises(LexValidationError) as exc:
+            validate_lex_response(
+                make_answer_response(
+                    language="en", body_markdown=wrong_body, contacts=[]
+                ),
+                expected_language="en",
+            )
+        _assert_code(exc, "response_language_mismatch")

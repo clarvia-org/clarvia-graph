@@ -40,6 +40,7 @@ from app.infrastructure.openai import (  # noqa: E402
 )
 from app.infrastructure.rate_limit import InMemoryRateLimit  # noqa: E402
 from app.llm.envelope import build_runtime_envelope  # noqa: E402
+from app.llm.language import resolve_expected_reply_language  # noqa: E402
 from app.llm.prompt_loader import load_prompt, load_prompt_version  # noqa: E402
 from app.llm.validation import LexValidationError, validate_lex_response  # noqa: E402
 from app.ops.pilot_harness import (  # noqa: E402
@@ -147,11 +148,16 @@ def run_live_case(
         subject=str(row.get("subject") or "Lex eval"),
         body_text=str(row.get("body") or ""),
     )
+    expected_language = resolve_expected_reply_language(
+        parsed.body_text,
+        history,
+    )
     envelope = build_runtime_envelope(
         parsed=parsed,
         conversation_history=history,
         current_date_utc=datetime.now(tz=UTC),
         prompt_version=load_prompt_version(DEFAULT_PROMPT),
+        expected_language=expected_language,
     )
     reasons: list[str] = []
     action: str | None = None
@@ -164,6 +170,7 @@ def run_live_case(
             llm,
             system_prompt=system_prompt,
             runtime_envelope=envelope,
+            expected_language=expected_language,
         )
         response = generation.response
         action = response.action
@@ -177,6 +184,7 @@ def run_live_case(
                 response,
                 web_search_source_urls=generation.web_search_source_urls,
                 web_search_calls=generation.web_search_calls,
+                expected_language=expected_language,
             )
         except LexValidationError as exc:
             error_code = exc.code

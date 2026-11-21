@@ -5,7 +5,7 @@ from __future__ import annotations
 from datetime import UTC, datetime
 
 from app.domain.models import ConversationMessage, ConversationRole, ParsedMessage
-from app.llm.envelope import build_runtime_envelope
+from app.llm.envelope import append_language_retry_instruction, build_runtime_envelope
 
 
 def _parsed() -> ParsedMessage:
@@ -59,4 +59,34 @@ def test_envelope_contains_controlled_context_and_redacted_body() -> None:
     assert "Death registration" in envelope
     assert "Luxembourg" in envelope
     assert "reply_language:" in envelope
+    assert "official sources" in envelope
+    assert "expected_reply_language:" not in envelope
     assert "user@example.com" not in envelope
+
+    explicit_expected = build_runtime_envelope(
+        parsed=parsed,
+        conversation_history=[],
+        current_date_utc=datetime(2026, 7, 25, 12, 0, tzinfo=UTC),
+        prompt_version="lex-v2.4",
+        expected_language="en-US",
+    )
+    assert "expected_reply_language: en\n" in explicit_expected
+
+    retried = append_language_retry_instruction(
+        explicit_expected,
+        expected_language="en",
+        observed_language="es",
+    )
+    assert "language_correction_required:" in retried
+    assert "'es' instead of 'en'" in retried
+    assert retried.index("language_correction_required:") < retried.index(
+        "</SYSTEM_CONTROLLED_CONTEXT>"
+    )
+
+    fallback_retry = append_language_retry_instruction(
+        "plain test envelope",
+        expected_language="lu",
+        observed_language="fr",
+    )
+    assert fallback_retry.startswith("plain test envelope\n")
+    assert "'fr' instead of 'lb'" in fallback_retry

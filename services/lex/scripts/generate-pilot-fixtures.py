@@ -202,7 +202,13 @@ def build_cases() -> list[dict[str, object]]:
         body_key="pt",
         llm_fixture="answer_pt_language",
     )
-    add(category="luxembourgish", expected_status="sent", language="lb", body_key="lb")
+    add(
+        category="luxembourgish",
+        expected_status="sent",
+        language="lb",
+        body_key="lb",
+        llm_fixture="answer_lb_language",
+    )
     add(
         category="english",
         expected_status="sent",

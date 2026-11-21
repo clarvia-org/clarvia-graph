@@ -2,10 +2,18 @@
 
 from __future__ import annotations
 
+import base64
 import logging
+from email import message_from_bytes
 
 import pytest
+from app.domain.models import ParsedMessage, new_queued_record
+from app.domain.ports import LlmGenerationResult
+from app.infrastructure.clock import FakeClock
+from app.infrastructure.daily_usage import InMemoryDailyUsage
+from app.infrastructure.memory import InMemoryGmail, InMemoryMessageState
 from app.infrastructure.openai import FakeLlmAdapter, generation_result_from_response
+from app.infrastructure.rate_limit import InMemoryRateLimit
 from app.llm.url_normalize import (
     match_search_url,
     normalize_source_url,
@@ -17,8 +25,10 @@ from app.llm.url_normalize import (
 )
 from app.llm.validation import LexValidationError, validate_lex_response
 from app.services.model_pipeline import ModelPipelineFailure, run_model_pipeline
+from app.services.processor import PROCESS_STATUS_SENT, Processor
 
 from .conftest import (
+    build_settings,
     fake_llm_for_responses,
     make_answer_response,
     make_clarify_response,
@@ -664,9 +674,7 @@ def test_pipeline_reconciles_contacts_and_strips_redundant_parentheticals() -> N
     )
     raw2 = base.model_copy(
         update={
-            "body_markdown": (
-                "Contact the Ministerio da Justica (MJ) [1].\n\nLex."
-            ),
+            "body_markdown": ("Contact the Ministerio da Justica (MJ) [1].\n\nLex."),
             "sources": [src1, src2, src3],
             "contacts": [contact_diacritic, contact_missing],
         }
@@ -695,3 +703,232 @@ def test_pipeline_reconciles_contacts_and_strips_redundant_parentheticals() -> N
         web_search_source_urls=allowed2,
         web_search_calls=1,
     )
+
+
+def test_pipeline_retries_on_language_mismatch_and_recovers() -> None:
+    class RecordingLlm(FakeLlmAdapter):
+        def __init__(self, responses: list[LlmGenerationResult]) -> None:
+            super().__init__(responses=responses)
+            self.envelopes: list[str] = []
+
+        def generate(
+            self,
+            *,
+            system_prompt: str,
+            runtime_envelope: str,
+            force_web_search: bool = False,
+        ) -> LlmGenerationResult:
+            self.envelopes.append(runtime_envelope)
+            return super().generate(
+                system_prompt=system_prompt,
+                runtime_envelope=runtime_envelope,
+                force_web_search=force_web_search,
+            )
+
+    drifted = generation_result_from_response(
+        make_answer_response(
+            language="es",
+            body_markdown=(
+                "Para registrar el fallecimiento en el extranjero debe acudir al "
+                "registro civil correspondiente [1].\n\nLex."
+            ),
+        )
+    )
+    recovered = generation_result_from_response(
+        make_answer_response(
+            language="en",
+            body_markdown=(
+                "To register the death abroad you should contact the Commune "
+                "office with the required documents [1].\n\nLex."
+            ),
+        )
+    )
+    llm = RecordingLlm(responses=[drifted, recovered])
+    envelope = (
+        "<SYSTEM_CONTROLLED_CONTEXT>\n"
+        "expected_reply_language: en\n"
+        "</SYSTEM_CONTROLLED_CONTEXT>\n\n"
+        "<LATEST_USER_MESSAGE>\nWhat steps should I take?\n</LATEST_USER_MESSAGE>"
+    )
+
+    result = run_model_pipeline(
+        llm,
+        system_prompt="prompt",
+        runtime_envelope=envelope,
+        expected_language="en",
+    )
+
+    assert len(llm.calls) == 2
+    assert llm.calls[1]["force_web_search"] is False
+    assert "language_correction_required:" in llm.envelopes[1]
+    assert "'es' instead of 'en'" in llm.envelopes[1]
+    assert result.response.language == "en"
+
+
+def test_pipeline_keeps_sourced_answer_on_double_language_mismatch() -> None:
+    drifted = generation_result_from_response(
+        make_answer_response(
+            language="es",
+            body_markdown=(
+                "Debe solicitar el certificado oficial de defunción ante la "
+                "oficina consular [1].\n\nLex."
+            ),
+        )
+    )
+    llm = FakeLlmAdapter(responses=[drifted, drifted])
+
+    result = run_model_pipeline(
+        llm,
+        system_prompt="prompt",
+        runtime_envelope="envelope",
+        expected_language="en",
+    )
+
+    assert len(llm.calls) == 2
+    assert result.response.action == "answer"
+    assert result.response.research_status == "adequate"
+    assert len(result.response.sources) == 1
+
+
+def test_processor_retries_spanish_drift_on_english_cross_border_inquiry(
+    synthetic_prompt: str,
+) -> None:
+    drifted = generation_result_from_response(
+        make_answer_response(
+            language="es",
+            body_markdown=(
+                "Debe solicitar el certificado de defunción ante el consulado "
+                "para iniciar los trámites [1].\n\nLex."
+            ),
+        )
+    )
+    recovered = generation_result_from_response(
+        make_answer_response(
+            language="en",
+            body_markdown=(
+                "You should request the death certificate from the Commune "
+                "office and prepare apostilled copies for use abroad [1].\n\nLex."
+            ),
+        )
+    )
+    clock = FakeClock()
+    gmail = InMemoryGmail()
+    state = InMemoryMessageState(clock=clock)
+    llm = FakeLlmAdapter(responses=[drifted, recovered])
+    parsed = ParsedMessage(
+        message_id="m-us-mx",
+        thread_id="t-us-mx",
+        from_address="family@example.com",
+        reply_to=None,
+        to_addresses=("family@example.com",),
+        cc_addresses=(),
+        subject="Question from clarvia.org",
+        body_text=(
+            "My relative died in Mexico City last week and her spouse lives in "
+            "Chicago. What paperwork do we need in Mexico and the United States?"
+        ),
+        return_path="family@example.com",
+        delivery_channel="web",
+        ask_locale="en",
+    )
+    gmail.seed_parsed_message(parsed)
+    state.create_record(
+        new_queued_record(
+            message_key="m-us-mx",
+            thread_id="t-us-mx",
+            now=clock.now(),
+        )
+    )
+    processor = Processor(
+        settings=build_settings(
+            processing_enabled=True,
+            processing_mode="public",
+            hmac_secret="lang-e2e-secret",
+            prompt_path=synthetic_prompt,
+        ),
+        state=state,
+        gmail=gmail,
+        rate_limit=InMemoryRateLimit(),
+        daily_usage=InMemoryDailyUsage(),
+        llm=llm,
+        clock=clock,
+        worker_id_factory=lambda: "worker-lang-1",
+    )
+
+    outcome = processor.run(gmail_message_id="m-us-mx")
+
+    assert outcome.status == PROCESS_STATUS_SENT
+    assert len(llm.calls) == 2
+    assert gmail.last_sent_raw is not None
+    loaded = message_from_bytes(base64.urlsafe_b64decode(gmail.last_sent_raw))
+    assert loaded["X-Lex-Locale"] == "en"
+    plain_parts = [
+        part.get_payload(decode=True)
+        for part in loaded.walk()
+        if part.get_content_type() == "text/plain"
+    ]
+    assert len(plain_parts) == 1
+    assert isinstance(plain_parts[0], bytes)
+    assert "Sources checked:" in plain_parts[0].decode("utf-8")
+
+
+def test_pipeline_injects_language_correction_when_search_also_missing() -> None:
+    class RecordingLlm(FakeLlmAdapter):
+        def __init__(self, responses: list[LlmGenerationResult]) -> None:
+            super().__init__(responses=responses)
+            self.envelopes: list[str] = []
+
+        def generate(
+            self,
+            *,
+            system_prompt: str,
+            runtime_envelope: str,
+            force_web_search: bool = False,
+        ) -> LlmGenerationResult:
+            self.envelopes.append(runtime_envelope)
+            return super().generate(
+                system_prompt=system_prompt,
+                runtime_envelope=runtime_envelope,
+                force_web_search=force_web_search,
+            )
+
+    unsearched_spanish = generation_result_from_response(
+        make_answer_response(
+            language="es",
+            body_markdown=(
+                "Debe solicitar el certificado literal de defunción ante el "
+                "registro civil correspondiente [1].\n\nLex."
+            ),
+        ),
+        source_urls=frozenset(),
+        web_search_calls=0,
+    )
+    recovered_english = generation_result_from_response(
+        make_answer_response(
+            language="en",
+            body_markdown=(
+                "To register the death abroad you should contact the Commune "
+                "office with the required documents [1].\n\nLex."
+            ),
+        )
+    )
+    llm = RecordingLlm(responses=[unsearched_spanish, recovered_english])
+    envelope = (
+        "<SYSTEM_CONTROLLED_CONTEXT>\n"
+        "expected_reply_language: en\n"
+        "</SYSTEM_CONTROLLED_CONTEXT>\n\n"
+        "<LATEST_USER_MESSAGE>\nWhat steps should I take?\n</LATEST_USER_MESSAGE>"
+    )
+
+    result = run_model_pipeline(
+        llm,
+        system_prompt="prompt",
+        runtime_envelope=envelope,
+        expected_language="en",
+    )
+
+    assert len(llm.calls) == 2
+    assert llm.calls[1]["force_web_search"] is True
+    assert "language_correction_required:" in llm.envelopes[1]
+    assert "'es' instead of 'en'" in llm.envelopes[1]
+    assert result.response.language == "en"

@@ -115,7 +115,9 @@ def test_answer_language_localises_footer_and_source_heading(
 ) -> None:
     llm = fake_llm_for_responses(make_answer_response(language="fr"))
     harness = Harness(llm=llm, prompt_path=synthetic_prompt)
-    harness.seed_eligible()
+    harness.seed_eligible(
+        body_text="Ma mère est décédée hier au Luxembourg. Que dois-je faire ?"
+    )
 
     result = harness.processor.run(gmail_message_id="m1")
 
