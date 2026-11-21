@@ -27,7 +27,7 @@ No database. No API keys. No scraping. Just Git.
 
 ## Use it
 
-**Browse** any law on GitHub — Markdown renders natively under [`lex/countries/`](countries/).
+The Luxembourg 1,207-law pilot corpus (`countries/lu/laws/`) is currently archived offline to keep the monorepo lightweight (see [`countries/lu/laws/README.md`](countries/lu/laws/README.md)). You can regenerate any law or the full catalog locally from official Casemates endpoints.
 
 **Clone the monorepo** and install the CLI from this directory:
 
@@ -38,6 +38,7 @@ uv sync --frozen
 ```
 
 ```bash
+uv run lex update lu --id lu/code-civil   # populate a law locally from Casemates
 uv run lex list
 uv run lex search "Code civil" --country lu
 uv run lex get lu/code-civil --provision art-13
@@ -62,7 +63,7 @@ uv run lex check --id lu/loi-2000-06-29-n2
 
 | Country | Laws | Notes |
 |---|---|---|
-| Luxembourg (`lu`) | Stage 1B + Stage 2 batches 04–15 (1,207 IDs) | Partial — Casemates only; see `countries/lu/README.md` |
+| Luxembourg (`lu`) | Stage 1B + Stage 2 batches 04–15 (1,207 IDs) | Pilot corpus archived offline; reproducible via Casemates — see [`countries/lu/laws/README.md`](countries/lu/laws/README.md) |
 
 ## The contract
 

@@ -10,12 +10,12 @@ This document is the map for humans, contributors, and agents. The consequence g
 |---|---|---|---|
 | `graph/`, `schemas/`, `vocab/`, `sources/`, `packages/*` | Consequence graph + `@clarvia/cli` / `@clarvia/generator` | EUPL-1.2 / CC-BY-4.0 | Git + CI exports |
 | `apps/web` | Next.js website (clarvia.org) | Apache-2.0 | Coolify / GCE (`Base Directory: apps/web`) |
-| `lex/` | Legislation dataset + CLI | Apache-2.0 (+ source-specific corpus rights) | Git + local `uv` CLI |
+| `lex/` | Legislation CLI, schemas & Luxembourg adapter (1,207-law pilot corpus archived offline) | Apache-2.0 (+ source-specific corpus rights) | Git + local `uv` CLI |
 | `services/lex/` | Lex email service (public-safe only) | Apache-2.0 | Cloud Run, `europe-west1` |
 
 ## Path disambiguation
 
-- `lex/` — legislation corpus and `lex` CLI (formerly `clarvia-org/lex`)
+- `lex/` — legislation engine, schemas, and country adapters (formerly `clarvia-org/lex`; 1,207-law Luxembourg pilot corpus archived offline — see [`lex/countries/lu/laws/README.md`](../lex/countries/lu/laws/README.md))
 - `services/lex/` — Lex **email** automation (Gmail → Cloud Run)
 
 ## CI (path-filtered)

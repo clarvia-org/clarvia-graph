@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
 from click.testing import CliRunner
 
 from lex.cli import main
@@ -18,6 +19,10 @@ from lex.markdown import extract_provision
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 AGD = REPO_ROOT / "countries/lu/laws/agd-1946-03-30-n9/current.md"
+_SKIP_NO_CORPUS = pytest.mark.skipif(
+    not AGD.exists(),
+    reason="Full Luxembourg corpus archived offline",
+)
 
 
 def test_normalize_for_search_diacritics_and_apostrophes() -> None:
@@ -37,6 +42,7 @@ def test_heading_re_ignores_hash_lines_without_space() -> None:
     assert labels == ["Real Heading", "Spaced"]
 
 
+@_SKIP_NO_CORPUS
 def test_heading_path_agd_art3_no_invented_chapters() -> None:
     _, body = parse_frontmatter(AGD.read_text(encoding="utf-8"))
     assert provision_heading_path(body, "art-3") == ["Art. 3."]
@@ -73,6 +79,7 @@ def test_provision_plain_text_strips_anchor_and_heading_marks() -> None:
     assert "décoration" in plain
 
 
+@_SKIP_NO_CORPUS
 def test_get_provision_markdown_byte_identical_to_extract() -> None:
     """Non-JSON provision output must stay byte-for-byte identical."""
     text = AGD.read_text(encoding="utf-8")
@@ -86,6 +93,7 @@ def test_get_provision_markdown_byte_identical_to_extract() -> None:
     ).rstrip("\n")
 
 
+@_SKIP_NO_CORPUS
 def test_get_provision_json_evidence_shape() -> None:
     runner = CliRunner()
     result = runner.invoke(
@@ -129,6 +137,7 @@ def test_get_provision_json_evidence_shape() -> None:
     assert forbidden.isdisjoint(data.keys())
 
 
+@_SKIP_NO_CORPUS
 def test_get_json_without_provision_keeps_metadata_body() -> None:
     runner = CliRunner()
     result = runner.invoke(main, ["get", "lu/agd-1946-03-30-n9", "--json"])
@@ -242,6 +251,7 @@ First provision text.
     assert data["metadata"]["retrieved_at"] == "2026-07-21T21:21:12Z"
 
 
+@_SKIP_NO_CORPUS
 def test_search_diacritic_normalization_and_matched_on() -> None:
     runner = CliRunner()
     accented = runner.invoke(

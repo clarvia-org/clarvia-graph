@@ -1,6 +1,6 @@
 # Clarvia Graph
 
-**Open consequence graph, global 1,000-page guidance library (196 countries, 14 languages), Ask Clarvia, and legislation corpus**
+**Open consequence graph, global 1,000-page guidance library (196 countries, 14 languages), Ask Clarvia, and legislation tooling**
 
 [![Ask Clarvia](https://img.shields.io/badge/✉️_Ask_Clarvia-clarvia.org%2Fask-0f766e?style=for-the-badge)](https://clarvia.org/ask)
 [![1,000-Page Global Guidance](https://img.shields.io/badge/🌍_1,000--Page_Global_Guidance-196_Countries_·_14_Languages-1d4ed8?style=for-the-badge)](https://clarvia.org/en/guidance)
@@ -32,7 +32,7 @@ This repository is the single public codebase for **Clarvia**:
 |---|---|
 | `packages/`, `graph/`, `sources/`, `schemas/`, `vocab/`, `exports/` | Consequence graph engine, YAML data, validators, exports |
 | [`apps/web/`](apps/web/README.md) | Multilingual website ([clarvia.org](https://clarvia.org)): Ask Clarvia (`/ask`), 1,000-page global guidance library across 196 countries & 14 languages (`/guidance`), and interactive bereavement checklist (`/checklist`) |
-| [`lex/`](lex/README.md) | Normalised national legislation corpus and Python CLI (`lex`) |
+| [`lex/`](lex/README.md) | Legislation CLI, schemas, and Luxembourg adapter (1,207-law pilot corpus archived offline; see [`lex/countries/lu/laws/README.md`](lex/countries/lu/laws/README.md)) |
 | [`services/lex/`](services/lex/README.md) | Lex automated email service — **public-safe code and tests only** (no secrets or live prompts) |
 
 See **[`docs/MONOREPO.md`](docs/MONOREPO.md)** for commands, sparse checkout, and licensing per subtree.
@@ -128,7 +128,7 @@ clarvia-graph/
 ├── tests/            Scenario fixtures and validation test cases
 ├── packages/         TypeScript packages (schema, validator, engine, exporter, cli)
 ├── apps/web/         Next.js website + 1,000-page global guidance corpus (clarvia.org)
-├── lex/              Normalised national legislation corpus + Python CLI
+├── lex/              Legislation engine, schemas & Luxembourg adapter (pilot corpus archived offline)
 ├── services/lex/     Lex email service (public-safe code & tests)
 └── docs/             Architecture, ontology, authoring playbook, standards mapping
 ```
@@ -137,7 +137,7 @@ clarvia-graph/
 
 - **Global guidance library (`apps/web/src/content/corridor-guides.json`)**: `592` canonical guides (`1,000` localized pages) covering **terminal illness** and **bereavement administration** across all **196 countries** (`392` single-country guides) and **200 cross-border corridors** in **14 languages**, verified across 4 automated factual and URL validation layers.
 - **Ask Clarvia (`services/lex/` & `apps/web/src/app/[lang]/ask/`)**: Source-cited automated email guidance service in 100+ languages.
-- **Consequence graph (`graph/`, `sources/`, `lex/`)**: Formal CPSV-AP / CCCEV / ELI / PROV-O consequence graph and normalized legislation corpus, with Luxembourg (`LU`) as the first deep reference jurisdiction and cross-border fixtures for `FR`, `DE`, `BE`, `PT`, and `EU`.
+- **Consequence graph (`graph/`, `sources/`, `lex/`)**: Formal CPSV-AP / CCCEV / ELI / PROV-O consequence graph and legislation tooling (`lex` CLI + Luxembourg Casemates adapter, with the 1,207-law pilot corpus archived offline), with Luxembourg (`LU`) as the first deep reference jurisdiction and cross-border fixtures for `FR`, `DE`, `BE`, `PT`, and `EU`.
 - **Architecture**: Jurisdiction-agnostic and life-event-agnostic by design.
 
 ## Development commands
