@@ -1,5 +1,7 @@
 # Luxembourg Coverage
 
+> **Status:** The 1,207 normalized law payloads (`laws/`) are archived offline to keep the monorepo lightweight; `adapter.py`, `batches/`, `fixtures/`, and `source.yml` remain live in Git. See [`laws/README.md`](laws/README.md) for reproduction commands.
+
 - **Publisher**: Service central de législation
 - **Official entry point**: https://legilux.public.lu/
 - **Data access**: Casemates open-data layer (`sparqlendpoint` + filestore). See [CASEMATES.md](CASEMATES.md).

@@ -7,6 +7,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+import pytest
+
 from lex.fidelity import (
     WORD_COUNT_MARGIN,
     analyze_law_fidelity,
@@ -20,6 +22,7 @@ from lex.frontmatter import parse_frontmatter, serialize_frontmatter
 FIXTURES = Path("countries/lu/fixtures")
 LAW = Path("countries/lu/laws/loi-2000-06-29-n2")
 CODE = Path("countries/lu/laws/code-consommation")
+CODE_FP = Path("countries/lu/laws/code-fonction-publique")
 
 
 def _load_adapter() -> Any:
@@ -32,6 +35,7 @@ def _load_adapter() -> Any:
     return module.adapter
 
 
+@pytest.mark.skipif(not LAW.exists(), reason="Full Luxembourg corpus archived offline")
 def test_fidelity_fails_on_broken_projection(tmp_path: Path) -> None:
     source = (LAW / "source.xml").read_bytes()
     original = (LAW / "current.md").read_text(encoding="utf-8")
@@ -49,6 +53,7 @@ def test_fidelity_fails_on_broken_projection(tmp_path: Path) -> None:
     assert "first diff at token" in errors[0].message.casefold()
 
 
+@pytest.mark.skipif(not LAW.exists(), reason="Full Luxembourg corpus archived offline")
 def test_article_first_difference_points_at_truncation() -> None:
     from lex.fidelity import article_first_differences_xml
 
@@ -90,6 +95,7 @@ def test_boundary_equivalence_rejects_arbitrary_splits() -> None:
     assert report.unexplained_source_only_tokens == 1
 
 
+@pytest.mark.skipif(not LAW.exists(), reason="Full Luxembourg corpus archived offline")
 def test_renormalized_loi_2000_within_margin(tmp_path: Path) -> None:
     adapter = _load_adapter()
     source = (LAW / "source.xml").read_bytes()
@@ -107,6 +113,7 @@ def test_renormalized_loi_2000_within_margin(tmp_path: Path) -> None:
     assert report.unexplained_source_only_tokens == 0
 
 
+@pytest.mark.skipif(not CODE.exists(), reason="Full Luxembourg corpus archived offline")
 def test_renormalized_code_consommation_word_parity() -> None:
     adapter = _load_adapter()
     source = (CODE / "source.xml").read_bytes()
@@ -116,10 +123,10 @@ def test_renormalized_code_consommation_word_parity() -> None:
     assert report.unexplained_source_only_tokens / report.source_tokens <= WORD_COUNT_MARGIN
 
 
+@pytest.mark.skipif(not CODE_FP.exists(), reason="Full Luxembourg corpus archived offline")
 def test_renormalized_code_fonction_publique_exact_parity() -> None:
     adapter = _load_adapter()
-    law = Path("countries/lu/laws/code-fonction-publique")
-    source = (law / "source.xml").read_bytes()
+    source = (CODE_FP / "source.xml").read_bytes()
     body = adapter.normalize_bytes(source, title="Code de la fonction publique").body
     report = build_fidelity_report(xml_body_words(source), markdown_body_words(body))
     assert report.source_tokens
