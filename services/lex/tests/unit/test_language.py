@@ -151,12 +151,39 @@ def test_detect_language_cross_border_english_stays_english() -> None:
         "Менің әкем кеше қайтыс болды. Қандай құжаттар қажет?",
         "Min mor døde igår. Hvad skal vi gøre nu?",
         "Min mor døde i går. Hva må vi gjøre nå?",
+        (
+            "Съпругът ми почина вчера в Пловдив и искам да знам как да "
+            "получа документ от общината за пенсия."
+        ),
+        (
+            "Майка ми е в тежко състояние в болница в София и не знам как "
+            "и от къде да взема документи."
+        ),
+        (
+            "Баща ми е с тежко заболяване и живее в София. Как да уредим "
+            "пълномощно и документи?"
+        ),
+        (
+            "Min mor har alvorlig sykdom i Bergen og vi trenger hjelp med "
+            "testamente og arv."
+        ),
+        (
+            "Min far og min mor har brug for oplysninger om arv og testamente "
+            "i Odense."
+        ),
     ],
 )
 def test_detect_language_abstains_on_short_ambiguous_or_unsupported(
     sample: str,
 ) -> None:
     assert detect_language(sample) is None
+    assert (
+        detect_language(
+            "Min mor har avlidit i Sverige och vi behöver veta vilka handlingar "
+            "som krävs."
+        )
+        == "sv"
+    )
 
 
 @pytest.mark.parametrize(
@@ -235,9 +262,63 @@ def test_detect_prose_language_strips_foreign_authority_names() -> None:
             "- Amtsgericht der Stadt\n"
             "- Bundesministerium der Justiz und des Innern [1]\n\nLex."
         ),
+        (
+            "In Luxembourg, contact:\n"
+            "- Service de l'état civil de la commune\n"
+            "- Caisse nationale de santé (CNS)\n"
+            "- Caisse nationale d'assurance pension (CNAP)\n"
+            "- Administration de l'enregistrement, des domaines et de la TVA "
+            "[1]\n\nLex."
+        ),
+        (
+            "In France, contact:\n"
+            "- Service de l'état civil de la mairie\n"
+            "- Caisse nationale d'assurance vieillesse (CNAV)\n"
+            "- Caisse primaire d'assurance maladie (CPAM)\n"
+            "- Direction générale des finances publiques (DGFiP) [1]\n\nLex."
+        ),
+        (
+            "In Spain, contact:\n"
+            "- Registro Civil (certificado literal de defunción)\n"
+            "- Ministerio de Justicia (Certificado de Actos de Última "
+            "Voluntad)\n"
+            "- Agencia Estatal de Administración Tributaria (AEAT)\n"
+            "- Instituto Nacional de la Seguridad Social (INSS) [1]\n\nLex."
+        ),
+        (
+            "In Portugal, contact:\n"
+            "- Conservatória do Registo Civil (certidão de óbito)\n"
+            "- Instituto dos Registos e do Notariado (IRN)\n"
+            "- Segurança Social\n"
+            "- Autoridade Tributária e Aduaneira [1]\n\nLex."
+        ),
+        (
+            "In Italy, contact:\n"
+            "- Ufficio di stato civile del comune (certificato di morte)\n"
+            "- Agenzia delle Entrate\n"
+            "- Istituto Nazionale della Previdenza Sociale (INPS)\n"
+            "- Ministero degli Affari Esteri [1]\n\nLex."
+        ),
     ]
     for sample in concise_english_samples:
         assert detect_prose_language(sample) in {None, "en"}
+
+    assert (
+        detect_prose_language(
+            "Schritte in Deutschland:\n"
+            "- Standesamt der Stadt München kontaktieren\n"
+            "- Sterbeurkunde und Geburtsurkunde beim Amt anfordern\n"
+            "- Nachlassgericht und Krankenkasse informieren [1]\n\nLex."
+        )
+        == "de"
+    )
+    assert (
+        detect_prose_language(
+            "Kontaktéiert d'Gemeng zu Lëtzebuerg fir den Doudesakt unzefroen "
+            "a mellt den Doudesfall bannent 24 Stonnen [1].\n\nLex."
+        )
+        == "lb"
+    )
 
     assert (
         detect_prose_language(
@@ -291,6 +372,10 @@ def test_has_explicit_language_request_positive(sample: str) -> None:
             "in Mexico."
         ),
         "We need to contact the consulate in France about the certificate.",
+        (
+            "L'acte de décès est écrit en espagnol et nécessite une "
+            "apostille. Que dois-je faire ?"
+        ),
     ],
 )
 def test_has_explicit_language_request_negative(sample: str) -> None:

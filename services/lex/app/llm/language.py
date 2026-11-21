@@ -113,7 +113,8 @@ _EXPLICIT_REQUEST_PATTERNS: tuple[re.Pattern[str], ...] = (
         re.IGNORECASE,
     ),
     re.compile(
-        rf"\b(?:répond\w*|écri\w*|repond\w*|ecri\w*|continuer|poursuivre)"
+        rf"\b(?:répond\w*|écri(?:re|vez|s|r\w*)|repond\w*|ecri(?:re|vez|s|r\w*)|"
+        rf"continuer|poursuivre)"
         rf"(?:[-\s]+(?:moi|me|s'il vous plaît|s'il te plaît|svp))*\s+en\s+"
         rf"{_LANG_NAMES_PATTERN}\b",
         re.IGNORECASE,
@@ -444,6 +445,12 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "über",
             "unter",
             "durch",
+            "beim",
+            "vom",
+            "zum",
+            "zur",
+            "müssen",
+            "können",
             "gestern",
             "mutter",
             "vater",
@@ -451,6 +458,9 @@ _LATIN_STOPWORDS: dict[str, frozenset[str]] = {
             "verstorben",
             "sterbefall",
             "sterbeurkunde",
+            "geburtsurkunde",
+            "nachlassgericht",
+            "krankenkasse",
             "dokumente",
             "standesamt",
             "behörde",
@@ -1090,6 +1100,25 @@ _DA_NO_WORDS = frozenset(
         "hvorfor",
         "nå",
         "må",
+        "og",
+        "til",
+        "af",
+        "er",
+        "hvilke",
+        "trenger",
+        "brug",
+        "bruger",
+        "sykdom",
+        "sygdom",
+        "hjælp",
+        "hjelp",
+        "oplysninger",
+        "opplysninger",
+        "dødsattest",
+        "skifte",
+        "boet",
+        "noen",
+        "nogen",
     }
 )
 
@@ -1226,6 +1255,31 @@ _RU_STOPWORDS: frozenset[str] = frozenset(
 _BG_STOPWORDS: frozenset[str] = frozenset(
     {
         "са",
+        "е",
+        "се",
+        "ще",
+        "ми",
+        "си",
+        "след",
+        "къде",
+        "искам",
+        "знам",
+        "може",
+        "има",
+        "няма",
+        "получа",
+        "направя",
+        "общината",
+        "смъртта",
+        "съпругът",
+        "състояние",
+        "болница",
+        "майка",
+        "баща",
+        "взема",
+        "уредим",
+        "пълномощно",
+        "тежко",
         "какво",
         "какви",
         "трябва",
@@ -1244,7 +1298,7 @@ _BG_STOPWORDS: frozenset[str] = frozenset(
 )
 
 _UK_CHARS = frozenset({"і", "ї", "є", "ґ"})
-_RU_CHARS = frozenset({"ы", "э", "ё", "ъ"})
+_RU_CHARS = frozenset({"ы", "э", "ё"})
 _OTHER_CYRILLIC_CHARS = frozenset(
     {
         "ћ",
@@ -1274,19 +1328,90 @@ _OTHER_CYRILLIC_CHARS = frozenset(
 )
 
 _ENTITY_CONN_WORD = (
-    r"(?:de|del|la|le|les|du|des|do|da|dos|das|e|y|i|di|delle|della|degli|"
-    r"der|die|und|von|zu|communale?|civile?|nationale?|fédérale?|régionale?)"
+    r"(?:de|del|la|le|les|du|des|do|da|dos|das|e|et|y|i|di|delle|della|degli|"
+    r"communale?|civile?|nationale?|fédérale?|régionale?)"
 )
 _FOREIGN_ENTITY_SPAN_RE = re.compile(
     rf"\b[A-ZÀ-ÖØ-Þ][^\W\d_]+"
     rf"(?:(?:\s+[A-ZÀ-ÖØ-Þ][^\W\d_]+)*"
-    rf"(?:\s+{_ENTITY_CONN_WORD}){{1,3}}\s+[A-ZÀ-ÖØ-Þ][^\W\d_]+)+"
+    rf"(?:\s+{_ENTITY_CONN_WORD}\b){{1,3}}\s+[A-ZÀ-ÖØ-Þ][^\W\d_]+)+"
     rf"(?:\s+[A-ZÀ-ÖØ-Þ][^\W\d_]+)*",
     re.UNICODE,
 )
-_PAREN_ENTITY_RE = re.compile(
-    rf"\(\s*[A-ZÀ-ÖØ-Þ][^\W\d_]*(?:\s+{_ENTITY_CONN_WORD})+[^()\n]{{0,80}}\)",
+_AGENCY_HEAD_WORDS = (
+    r"(?:Administration|Service|Caisse|Direction|Ministère|Ministerio|"
+    r"Ministero|Ministerium|Instituto|Istituto|Conservatória|Ufficio|"
+    r"Registro|Agencia|Agenzia|Autoridade|Standesamt|Amtsgericht|"
+    r"Nachlassgericht|Bundesministerium)"
+)
+_INST_TOKEN = (
+    r"(?:(?:d['’]|l['’])?(?:état|assurance|enregistrement)|"
+    r"de|del|la|le|les|du|des|do|da|dos|das|e|et|di|delle|"
+    r"della|degli|der|und|des|civil|civile|commune|mairie|santé|"
+    r"pension|vieillesse|maladie|primaire|finances|publiques|"
+    r"générale|domaines|nationale?|fédérale?|régionale?|"
+    r"stato|comune|population|[A-ZÀ-ÖØ-Þ][^\W\d_]*)"
+)
+_AGENCY_PHRASE_RE = re.compile(
+    rf"\b{_AGENCY_HEAD_WORDS}\b(?:[\s,]+{_INST_TOKEN}\b){{1,12}}",
     re.UNICODE,
+)
+_PAREN_ENTITY_RE = re.compile(
+    r"\(\s*[^()\n]{0,40}\b(?:de|del|la|le|les|du|des|da|dos|das|di|"
+    r"delle|della|degli|der)\b[^()\n]{0,60}\)",
+    re.UNICODE | re.IGNORECASE,
+)
+_BULLET_LINE_RE = re.compile(r"^\s*[-*•]\s+(.+)$", re.MULTILINE)
+_ACTION_OR_CLAUSE_WORDS = frozenset(
+    {
+        "beim",
+        "vom",
+        "zum",
+        "zur",
+        "müssen",
+        "können",
+        "sollten",
+        "brauchen",
+        "kontaktieren",
+        "anfordern",
+        "informieren",
+        "beantragen",
+        "abholen",
+        "einreichen",
+        "prüfen",
+        "schreiben",
+        "senden",
+        "erhalten",
+        "machen",
+        "sie",
+        "wir",
+        "ich",
+        "nicht",
+        "vous",
+        "devez",
+        "pouvez",
+        "faut",
+        "contacter",
+        "obtenir",
+        "demander",
+        "debe",
+        "deben",
+        "acudir",
+        "solicitar",
+        "presentar",
+        "deve",
+        "precisa",
+        "occorre",
+        "portare",
+        "andare",
+        "richiedere",
+        "unzefroen",
+        "mellt",
+        "maachen",
+        "ech",
+        "mir",
+        "muss",
+    }
 )
 
 
@@ -1463,6 +1588,16 @@ def detect_language(text: str) -> str | None:
     return None
 
 
+def _strip_noun_bullet_line(match: re.Match[str]) -> str:
+    content = match.group(1).strip()
+    if not content or not content[0].isupper():
+        return match.group(0)
+    tokens = _WORD_RE.findall(_lower_text(content))
+    if any(token in _ACTION_OR_CLAUSE_WORDS for token in tokens):
+        return match.group(0)
+    return " "
+
+
 def detect_prose_language(
     text: str,
     *,
@@ -1482,6 +1617,8 @@ def detect_prose_language(
     for phrase in phrases:
         scrubbed = re.sub(re.escape(phrase), " ", scrubbed, flags=re.IGNORECASE)
     scrubbed = _PAREN_ENTITY_RE.sub(" ", scrubbed)
+    scrubbed = _BULLET_LINE_RE.sub(_strip_noun_bullet_line, scrubbed)
+    scrubbed = _AGENCY_PHRASE_RE.sub(" ", scrubbed)
     scrubbed = _FOREIGN_ENTITY_SPAN_RE.sub(" ", scrubbed)
     return detect_language(scrubbed)
 

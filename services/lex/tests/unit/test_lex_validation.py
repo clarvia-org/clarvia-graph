@@ -354,3 +354,43 @@ def test_language_validation_allows_concise_english_with_foreign_authorities() -
         contacts=[],
     )
     validate_lex_response(resp_no_contacts, expected_language="en")
+
+    for checklist in (
+        "In Luxembourg, contact:\n"
+        "- Service de l'état civil de la commune\n"
+        "- Caisse nationale de santé (CNS)\n"
+        "- Administration de l'enregistrement, des domaines et de la TVA [1]\n\nLex.",
+        "In Spain, contact:\n"
+        "- Registro Civil (certificado literal de defunción)\n"
+        "- Ministerio de Justicia (Certificado de Actos de Última Voluntad)\n"
+        "- Agencia Estatal de Administración Tributaria (AEAT) [1]\n\nLex.",
+        "In Portugal, contact:\n"
+        "- Conservatória do Registo Civil (certidão de óbito)\n"
+        "- Instituto dos Registos e do Notariado (IRN)\n"
+        "- Segurança Social [1]\n\nLex.",
+        "In Italy, contact:\n"
+        "- Ufficio di stato civile del comune (certificato di morte)\n"
+        "- Agenzia delle Entrate\n"
+        "- Ministero degli Affari Esteri [1]\n\nLex.",
+    ):
+        validate_lex_response(
+            make_answer_response(language="en", body_markdown=checklist, contacts=[]),
+            expected_language="en",
+        )
+
+    for wrong_body in (
+        "Schritte in Deutschland:\n"
+        "- Standesamt der Stadt München kontaktieren\n"
+        "- Sterbeurkunde und Geburtsurkunde beim Amt anfordern\n"
+        "- Nachlassgericht und Krankenkasse informieren [1]\n\nLex.",
+        "Kontaktéiert d'Gemeng zu Lëtzebuerg fir den Doudesakt unzefroen "
+        "a mellt den Doudesfall bannent 24 Stonnen [1].\n\nLex.",
+    ):
+        with pytest.raises(LexValidationError) as exc:
+            validate_lex_response(
+                make_answer_response(
+                    language="en", body_markdown=wrong_body, contacts=[]
+                ),
+                expected_language="en",
+            )
+        _assert_code(exc, "response_language_mismatch")
