@@ -219,6 +219,10 @@ describe("associate-members helpers", () => {
       "utf8",
     );
     expect(pageSource).toContain("Registered Nonprofit Organization");
+    // Ensure <dl> proof strip only wraps <dt> and <dd> inside <div> (valid HTML5 + axe definition-list)
+    const dlMatch = pageSource.match(/<dl[\s\S]*?<\/dl>/);
+    expect(dlMatch).not.toBeNull();
+    expect(dlMatch?.[0]).not.toContain("<p");
 
     const copySource = fs.readFileSync(
       path.join(
@@ -271,6 +275,9 @@ describe("associate-members helpers", () => {
       "utf8",
     );
     expect(routePageSource).toContain("robots: { index: true, follow: true }");
+    expect(routePageSource).toContain("https://clarvia.org/#organization");
+    expect(routePageSource).toContain("https://clarvia.org/#website");
+    expect(routePageSource).not.toContain("NonprofitType");
 
     const formSource = fs.readFileSync(
       path.join(

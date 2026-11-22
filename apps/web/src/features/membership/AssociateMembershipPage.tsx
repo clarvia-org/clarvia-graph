@@ -195,15 +195,14 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                 {proofStats.map((stat) => (
                   <div
                     key={stat.value}
-                    className="rounded-xl bg-white/70 border border-calm-blue-200/70 px-3 py-2.5"
+                    className="rounded-xl bg-white/70 border border-calm-blue-200/70 px-3 py-2.5 flex flex-col-reverse justify-end"
                   >
-                    <dt className="sr-only">{stat.label}</dt>
+                    <dt className="text-[11px] text-calm-blue-600 leading-snug mt-0.5">
+                      {stat.label}
+                    </dt>
                     <dd className="text-base font-semibold text-calm-blue-800 leading-tight">
                       {stat.value}
                     </dd>
-                    <p className="text-[11px] text-calm-blue-600 leading-snug mt-0.5">
-                      {stat.label}
-                    </p>
                   </div>
                 ))}
               </dl>

@@ -80,20 +80,19 @@ export default async function MembershipRoutePage({
       },
       {
         "@type": "WebPage",
+        "@id": canonicalUrl,
         name: meta.title,
         description: meta.description,
         url: canonicalUrl,
         inLanguage: bcp47Lang,
         isPartOf: {
-          "@type": "WebSite",
-          name: "Clarvia",
-          url: BASE_URL,
+          "@id": "https://clarvia.org/#website",
         },
         about: {
-          "@type": "NGO",
-          name: "Clarvia ASBL",
-          url: BASE_URL,
-          nonprofitStatus: "NonprofitType",
+          "@id": "https://clarvia.org/#organization",
+        },
+        publisher: {
+          "@id": "https://clarvia.org/#organization",
         },
       },
     ],
