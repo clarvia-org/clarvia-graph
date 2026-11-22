@@ -1,6 +1,6 @@
 import { type Metadata } from "next";
 import Link from "next/link";
-import { type Lang, LANGUAGES, tr } from "@/lib/i18n";
+import { type Lang, LANGUAGES, l, tr } from "@/lib/i18n";
 import { pageMetadata } from "@/lib/page-meta";
 import Header from "@/components/Header";
 import FooterSection from "../sections/FooterSection";
@@ -129,12 +129,36 @@ export default async function PartnersPage({
           </p>
         </section>
 
-        <p className="text-base text-calm-blue-600 leading-relaxed">
+        <p className="text-base text-calm-blue-600 leading-relaxed mb-8">
           {tr(lang, "Questions about a partnership or a ref slug:")}{" "}
           <Link href={`/${lang}/contact`} className="underline font-medium text-calm-blue-700">
             {tr(lang, "Contact Clarvia")}
           </Link>.
         </p>
+
+        <div className="glass-panel p-5 border border-white/75 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <p className="text-sm text-calm-blue-600 leading-relaxed">
+            {l(
+              lang,
+              "Organisations and CSR teams wishing to support Clarvia's free 196-country guidance library financially can also join our Founding Cohort as non-voting Associate Members (€40/month or €480/year).",
+              "Les organisations et équipes RSE souhaitant soutenir financièrement les guides gratuits de Clarvia dans 196 pays peuvent également adhérer comme membres adhérents sans droit de vote (40 €/mois ou 480 €/an).",
+              "Unternehmen und CSR-Teams, die Clarvias kostenlose Leitfäden in 196 Ländern finanziell fördern möchten, können unserer Gründerkohorte als stimmrechtslose Fördermitglieder beitreten (40 €/Monat oder 480 €/Jahr).",
+              "Organisatiounen an CSR-Ekippen, déi d'gratis Guiden vu Clarvia an 196 Länner finanziell ënnerstëtze wëllen, kënnen eiser Grënnerkohort als assoziéiert Memberen ouni Stëmmrecht bäitrieden (40 €/Mount oder 480 €/Joer).",
+            )}
+          </p>
+          <Link
+            href={`/${lang}/membership`}
+            className="btn-secondary inline-flex items-center justify-center px-5 py-2.5 text-sm shrink-0"
+          >
+            {l(
+              lang,
+              "Explore Associate Membership →",
+              "Découvrir le statut de membre adhérent →",
+              "Fördermitgliedschaft ansehen →",
+              "Assoziéiert Memberschaft entdecken →",
+            )}
+          </Link>
+        </div>
       </main>
       <FooterSection lang={lang} />
     </>
