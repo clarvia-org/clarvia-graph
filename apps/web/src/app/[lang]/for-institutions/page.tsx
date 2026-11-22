@@ -118,6 +118,15 @@ export default async function ForInstitutionsPage({
           <Link href={`/${lang}/contact`} className="btn-primary px-6 py-3 text-base text-center">
             {tr(lang, "Discuss institutional reuse")}
           </Link>
+          <Link href={`/${lang}/membership`} className="btn-secondary px-6 py-3 text-base text-center">
+            {l(
+              lang,
+              "Join as Associate Member",
+              "Devenir membre adhérent",
+              "Fördermitglied werden",
+              "Assoziéierte Member ginn",
+            )}
+          </Link>
         </div>
       </main>
       <FooterSection lang={lang} />

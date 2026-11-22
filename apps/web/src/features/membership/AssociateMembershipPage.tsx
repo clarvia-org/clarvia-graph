@@ -17,8 +17,11 @@ import CohortShowcase from "./CohortShowcase";
 import MembershipForm from "./MembershipForm";
 import MembershipSuccessKit from "./MembershipSuccessKit";
 import {
+  getMembershipAudienceSection,
   getMembershipBenefits,
   getMembershipFaqs,
+  getMembershipProofStats,
+  type MembershipAudienceCard,
   type MembershipBenefitItem,
 } from "./membership-copy";
 
@@ -71,6 +74,30 @@ function BenefitIcon({ icon }: { icon: MembershipBenefitItem["icon"] }) {
   }
 }
 
+function AudienceCardIcon({ id }: { id: MembershipAudienceCard["id"] }) {
+  switch (id) {
+    case "individuals":
+      return (
+        <svg viewBox="0 0 24 24" className="w-5 h-5 stroke-current" fill="none" strokeWidth="1.8" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M16 11a4 4 0 10-8 0 4 4 0 008 0zM4 20a8 8 0 0116 0" />
+        </svg>
+      );
+    case "corporate":
+      return (
+        <svg viewBox="0 0 24 24" className="w-5 h-5 stroke-current" fill="none" strokeWidth="1.8" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3 21h18M5 21V7l7-4 7 4v14M9 10h2m2 0h2M9 14h2m2 0h2" />
+        </svg>
+      );
+    case "governance":
+      return (
+        <svg viewBox="0 0 24 24" className="w-5 h-5 stroke-current" fill="none" strokeWidth="1.8" aria-hidden="true">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3l7 3v6c0 4.5-3 7.9-7 9-4-1.1-7-4.5-7-9V6l7-3z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+        </svg>
+      );
+  }
+}
+
 function DisclosureChevron() {
   return (
     <svg
@@ -91,7 +118,9 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
   const [previewKind, setPreviewKind] = useState<MemberKind>("individual");
   const [copiedField, setCopiedField] = useState<string | null>(null);
 
+  const proofStats = getMembershipProofStats(lang);
   const benefits = getMembershipBenefits(lang);
+  const audienceSection = getMembershipAudienceSection(lang);
   const faqs = getMembershipFaqs(lang);
 
   async function handleCopy(text: string, field: string) {
@@ -115,16 +144,16 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
         <MembershipSuccessKit lang={lang} />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start no-print">
-          {/* LEFT COLUMN: Live Global Non-Profit Mission & Benefits */}
+          {/* LEFT COLUMN: Global Nonprofit Mission, Proof Strip & Benefits */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
               <span className="badge badge-build">
                 {l(
                   lang,
-                  `Registered Non-Profit · Founding Cohort ${FOUNDING_COHORT_YEARS}`,
+                  `Registered Nonprofit Organization · Founding Cohort ${FOUNDING_COHORT_YEARS}`,
                   `Association à but non lucratif · Cohorte ${FOUNDING_COHORT_YEARS}`,
-                  `Gemeinnützige Non-Profit-Organisation · Kohorte ${FOUNDING_COHORT_YEARS}`,
-                  `Registréiert Non-Profit-Organisatioun · Kohort ${FOUNDING_COHORT_YEARS}`,
+                  `Eingetragene gemeinnützige Organisation · Kohorte ${FOUNDING_COHORT_YEARS}`,
+                  `Gemeinnëtzeg Organisatioun · Kohort ${FOUNDING_COHORT_YEARS}`,
                 )}
               </span>
 
@@ -136,7 +165,7 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                   lang,
                   "Become an Associate Member & Mission Ambassador",
                   "Devenir membre adhérent et ambassadeur de la mission",
-                  "Assoziiertes Mitglied & Botschafter werden",
+                  "Fördermitglied & Botschafter werden",
                   "Assoziéierte Member & Ambassadeur ginn",
                 )}
               </h1>
@@ -144,22 +173,39 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
               <p className="text-lg text-calm-blue-700 leading-relaxed font-semibold text-pretty">
                 {l(
                   lang,
-                  `Clarvia's free, official-source guidance for terminal illness and bereavement is live across 196 countries and 14 languages. Individuals and companies join our Founding Cohort (€${ASSOCIATE_MONTHLY_EUR}/month or €${ASSOCIATE_ANNUAL_EUR}/year) to sustain this non-profit service and extend its global reach.`,
-                  `L'accompagnement gratuit et sourcé de Clarvia face à la maladie grave et au décès est aujourd'hui actif dans 196 pays et 14 langues. Particuliers et entreprises rejoignent notre cohorte fondatrice (${ASSOCIATE_MONTHLY_EUR} €/mois ou ${ASSOCIATE_ANNUAL_EUR} €/an) pour pérenniser ce service à but non lucratif et étendre sa portée.`,
-                  `Clarvias kostenlose, quellenbasierte Orientierung bei schwerer Krankheit und im Trauerfall ist heute in 196 Ländern und 14 Sprachen live. Einzelpersonen und Unternehmen treten unserer Gründerkohorte (${ASSOCIATE_MONTHLY_EUR} €/Monat oder ${ASSOCIATE_ANNUAL_EUR} €/Jahr) bei, um diesen gemeinnützigen Dienst dauerhaft zu tragen und bekannter zu machen.`,
-                  `Déi gratis, op offiziellen Quelle baséiert Orientéierung vu Clarvia ass haut an 196 Länner a 14 Sproochen aktiv. Privatpersounen an Entreprisen trieden eiser Grënnerkohort (${ASSOCIATE_MONTHLY_EUR} €/Mount oder ${ASSOCIATE_ANNUAL_EUR} €/Joer) bäi, fir dëse Non-Profit-Service ze stäerken a weltwäit bekannt ze maachen.`,
+                  `Clarvia is an independent nonprofit organization providing 1,000+ free, official-source guides for families navigating serious illness and post-loss administration across 196 countries and 14 languages. Professionals, philanthropists, and socially responsible companies join our Founding Cohort (€${ASSOCIATE_MONTHLY_EUR}/month or €${ASSOCIATE_ANNUAL_EUR}/year) to keep this public resource 100% free and ad-free worldwide.`,
+                  `Clarvia est une association à but non lucratif indépendante qui met à disposition plus de 1 000 guides gratuits et sourcés pour accompagner les familles face à la maladie grave et aux démarches après un décès dans 196 pays et 14 langues. Professionnels, philanthropes et entreprises engagées rejoignent notre cohorte fondatrice (${ASSOCIATE_MONTHLY_EUR} €/mois ou ${ASSOCIATE_ANNUAL_EUR} €/an) pour pérenniser cette ressource d'intérêt général sans publicité.`,
+                  `Clarvia ist ein unabhängiger gemeinnütziger Verein, der über 1.000 kostenlose, amtlich belegte Leitfäden für Familien bei schwerer Krankheit und im Trauerfall in 196 Ländern und 14 Sprachen bereitstellt. Fachleute, Fördernde und verantwortungsvolle Unternehmen unterstützen den Verein in unserer Gründerkohorte (${ASSOCIATE_MONTHLY_EUR} €/Monat oder ${ASSOCIATE_ANNUAL_EUR} €/Jahr), damit dieses Angebot weltweit zu 100 % kostenlos und werbefrei bleibt.`,
+                  `Clarvia ass eng onofhängeg gemeinnëtzeg Organisatioun, déi iwwer 1.000 gratis, op offiziellen Quelle baséiert Guiden fir Familljen bei schwéierer Krankheet an no engem Doudesfall an 196 Länner a 14 Sproochen ubitt. Fachleit, Philanthropen a verantwortungsvoll Entreprisen trieden eiser Grënnerkohort (${ASSOCIATE_MONTHLY_EUR} €/Mount oder ${ASSOCIATE_ANNUAL_EUR} €/Joer) bäi, fir dës Ressource weltwäit zu 100 % gratis an ouni Reklamm ze halen.`,
                 )}
               </p>
 
               <p className="text-base text-calm-blue-600 leading-relaxed text-pretty">
                 {l(
                   lang,
-                  "Ambassadorship is light-touch and self-directed: list Clarvia on your personal or company LinkedIn page, share an optional post from our welcome kit, or point colleagues, HR teams, or families to clarvia.org when needed, with zero quotas, meetings, or liabilities.",
-                  "Le rôle d'ambassadeur reste libre et léger : mentionner Clarvia sur votre profil LinkedIn personnel ou d'entreprise, partager un message facultatif du kit d'accueil, ou orienter collègues, équipes RH et familles vers clarvia.org, sans réunion ni responsabilité.",
-                  "Die Botschafterrolle bleibt leicht und selbstbestimmt: Clarvia auf Ihrem persönlichen LinkedIn-Profil oder Ihrer Unternehmensseite nennen, optional eine Vorlage teilen oder Kolleginnen, HR-Teams und Familien auf clarvia.org hinweisen, ohne Termine oder Haftung.",
-                  "D'Ambassadeursroll bleift ganz fräi: Clarvia op Ärem perséinlechen oder Firmen-LinkedIn-Profil nennen, optional e Post deelen oder Kollegen, HR-Ekippen a Familljen op clarvia.org hiweisen, ouni Versammlungen oder Haftung.",
+                  "Unlike serving as a charity trustee or voting nonprofit board member, Associate Membership carries zero fiduciary liability, zero committee meetings, and zero time quotas. Your role is self-directed: list Clarvia on your personal or company LinkedIn page, share an optional welcome-kit post, or point colleagues, HR teams, and families to clarvia.org when it matters.",
+                  "Contrairement à un mandat d'administrateur avec droit de vote, cet engagement associatif n'implique aucune responsabilité fiduciaire, aucune réunion de comité ni quota de temps. Votre rôle reste libre : mentionner Clarvia sur votre profil LinkedIn personnel ou d'entreprise, partager un message facultatif du kit d'accueil, ou orienter collègues, équipes RH et familles vers clarvia.org.",
+                  "Anders als ein stimmberechtigtes Vorstandsmandat ist diese Fördermitgliedschaft mit keinerlei Organ- oder Vorstandshaftung, keinen Gremiensitzungen und keinen Zeitpflichten verbunden. Sie gestalten Ihre Rolle frei: Nennen Sie Clarvia auf Ihrem persönlichen LinkedIn-Profil oder Ihrer Unternehmensseite, teilen Sie optional eine Vorlage oder weisen Sie Kolleginnen, HR-Teams und Familien auf clarvia.org hin.",
+                  "Anescht wéi e stëmmberechtegt Mandat am Verwaltungsrot bréngt dës assoziéiert Memberschaft keng Haftung, keng Komiteessëtzungen a keng Zäitquoten mat sech. Är Roll bleift ganz fräi: nennt Clarvia op Ärem perséinlechen oder Firmen-LinkedIn-Profil, deelt optional e Post aus eisem Kit oder weist Kollegen, HR-Ekippen a Familljen op clarvia.org hin.",
                 )}
               </p>
+
+              {/* Compact Factual Proof Strip */}
+              <dl className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2">
+                {proofStats.map((stat) => (
+                  <div
+                    key={stat.value}
+                    className="rounded-xl bg-white/70 border border-calm-blue-200/70 px-3 py-2.5 flex flex-col-reverse justify-end"
+                  >
+                    <dt className="text-[11px] text-calm-blue-600 leading-snug mt-0.5">
+                      {stat.label}
+                    </dt>
+                    <dd className="text-base font-semibold text-calm-blue-800 leading-tight">
+                      {stat.value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
             </div>
 
             <div>
@@ -171,7 +217,7 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                   lang,
                   "What Associate Membership includes",
                   "Ce que comprend le statut de membre adhérent",
-                  "Was die assoziierte Mitgliedschaft umfasst",
+                  "Was die Fördermitgliedschaft umfasst",
                   "Wat d'assoziéiert Memberschaft ëmfaasst",
                 )}
               </h2>
@@ -211,7 +257,7 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                   lang,
                   "Apply for Associate Membership",
                   "Adhérer comme membre adhérent",
-                  "Als assoziiertes Mitglied beitreten",
+                  "Als Fördermitglied beitreten",
                   "Als assoziéierte Member bäitrieden",
                 )}
               </h2>
@@ -360,13 +406,13 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
             </details>
 
             <div className="text-center px-2">
-              <p className="text-xs text-calm-blue-600">
+              <p className="text-xs text-calm-blue-600 leading-relaxed">
                 {l(
                   lang,
-                  "Prefer a custom one-time or smaller monthly donation?",
-                  "Vous préférez un don libre ponctuel ou mensuel ?",
-                  "Lieber eine freie Einzel- oder kleinere Monatsspende?",
-                  "Léiwer e fräien Don ouni Memberschaft?",
+                  "Not ready for membership?",
+                  "Pas encore prêt(e) à adhérer ?",
+                  "Noch nicht bereit für eine Mitgliedschaft?",
+                  "Nach net prett fir eng Memberschaft?",
                 )}{" "}
                 <Link
                   href={`/${lang}/support`}
@@ -374,16 +420,71 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                 >
                   {l(
                     lang,
-                    "Visit our Support page →",
-                    "Aller sur la page Soutenir →",
-                    "Zur Spendenseite →",
-                    "Op d'Spendesäit →",
+                    "Make a custom one-time gift on our Support page →",
+                    "Faire un don libre sur la page Soutenir →",
+                    "Freie Einzelspende auf unserer Spendenseite →",
+                    "Fräien Don op eiser Spendesäit →",
+                  )}
+                </Link>{" "}
+                {l(lang, "or explore", "ou découvrir", "oder", "oder entdeckt")}{" "}
+                <Link
+                  href={`/${lang}/guidance`}
+                  className="text-calm-blue-700 hover:text-calm-blue-900 font-medium underline underline-offset-2"
+                >
+                  {l(
+                    lang,
+                    "clarvia.org/guidance",
+                    "nos guides gratuits",
+                    "unsere kostenlosen Leitfäden",
+                    "eis gratis Guiden",
                   )}
                 </Link>
+                .
               </p>
             </div>
           </div>
         </div>
+
+        {/* WHO JOINS & WHY: Individual Philanthropy, Corporate CSR/ESG, and Governance */}
+        <section
+          aria-labelledby="who-joins-heading"
+          className="mt-14 pt-12 border-t border-calm-blue-200/50 no-print"
+        >
+          <div className="max-w-3xl mb-8">
+            <span className="badge badge-build mb-3">{audienceSection.badge}</span>
+            <h2
+              id="who-joins-heading"
+              className="text-2xl sm:text-3xl font-semibold text-calm-blue-800 mb-3 text-balance"
+              style={{ fontFamily: headlineStyle.fontFamily }}
+            >
+              {audienceSection.heading}
+            </h2>
+            <p className="text-base text-calm-blue-600 leading-relaxed text-pretty">
+              {audienceSection.intro}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {audienceSection.cards.map((card) => (
+              <div
+                key={card.id}
+                className="glass-panel p-6 border border-white/80 flex flex-col gap-3"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-calm-blue-50 border border-calm-blue-200 text-calm-blue-700 flex items-center justify-center shrink-0">
+                    <AudienceCardIcon id={card.id} />
+                  </div>
+                  <h3 className="text-base font-semibold text-calm-blue-800 leading-snug text-balance">
+                    {card.title}
+                  </h3>
+                </div>
+                <p className="text-sm text-calm-blue-600 leading-relaxed text-pretty">
+                  {card.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <CohortShowcase
           lang={lang}

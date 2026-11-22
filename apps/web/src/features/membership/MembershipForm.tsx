@@ -497,10 +497,10 @@ function MembershipFormInner({
           >
             {l(
               lang,
-              "I apply to join Clarvia as a non-voting Associate Member and agree to act as a positive ambassador helping spread awareness of Clarvia's free non-profit mission worldwide.",
+              "I apply to join Clarvia as a non-voting Associate Member and agree to act as a positive ambassador helping spread awareness of Clarvia's free nonprofit mission worldwide.",
               "Je demande l'admission à Clarvia comme membre adhérent sans droit de vote et m'engage à être un ambassadeur positif faisant connaître la mission gratuite de Clarvia dans le monde.",
-              "Ich beantrage die Aufnahme als stimmrechtsloses assoziiertes Mitglied von Clarvia und erkläre mich bereit, als positiver Botschafter auf Clarvias kostenlose gemeinnützige Mission weltweit aufmerksam zu machen.",
-              "Ech froen d'Opnam als assoziéierte Member ouni Stëmmrecht bei Clarvia un an erklären mech bereet, als positiven Ambassadeur op d'gratis Non-Profit-Missioun vu Clarvia weltwäit opmierksam ze maachen.",
+              "Ich beantrage die Aufnahme als stimmrechtsloses Fördermitglied von Clarvia und erkläre mich bereit, als positiver Botschafter auf Clarvias kostenlose gemeinnützige Arbeit weltweit aufmerksam zu machen.",
+              "Ech froen d'Opnam als assoziéierte Member ouni Stëmmrecht bei Clarvia un an erklären mech bereet, als positiven Ambassadeur op d'gratis gemeinnëtzeg Missioun vu Clarvia weltwäit opmierksam ze maachen.",
             )}{" "}
             <span className="font-semibold text-calm-blue-800" aria-hidden="true">
               *
@@ -707,13 +707,13 @@ function MembershipFormInner({
         </button>
       </div>
 
-      <p className="text-center text-xs text-calm-blue-600">
+      <p className="text-center text-xs text-calm-blue-600 leading-relaxed text-pretty">
         {l(
           lang,
-          "Secure payment via Stripe · Cancel anytime in 1 click.",
-          "Paiement sécurisé via Stripe · Résiliable en 1 clic à tout moment.",
-          "Sichere Zahlung über Stripe · Jederzeit mit 1 Klick kündbar.",
-          "Séchert Bezuele mat Stripe · Zu all Moment mat 1 Klick kënnegbar.",
+          "Secure payment via Stripe · Instant certificate & LinkedIn kit · Cancel anytime in 1 click with no notice period.",
+          "Paiement sécurisé via Stripe · Certificat et kit LinkedIn immédiats · Résiliable en 1 clic sans préavis.",
+          "Sichere Zahlung über Stripe · Zertifikat & LinkedIn-Kit sofort bereit · Jederzeit mit 1 Klick ohne Frist kündbar.",
+          "Séchert Bezuele mat Stripe · Zertifikat & LinkedIn-Kit direkt verfügbar · Zu all Moment mat 1 Klick ouni Frist kënnegbar.",
         )}
       </p>
     </form>
