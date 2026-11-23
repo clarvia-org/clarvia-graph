@@ -407,8 +407,32 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
         "@type"?: string;
         isBasedOn?: string;
         sameAs?: string | string[];
-        author?: Array<{ "@id"?: string; url?: string; sameAs?: string }>;
-        creator?: Array<{ "@id"?: string; url?: string; sameAs?: string }>;
+        author?: Array<{
+          "@type"?: string;
+          "@id"?: string;
+          name?: string;
+          url?: string;
+          sameAs?: string;
+          affiliation?: {
+            "@type"?: string;
+            "@id"?: string;
+            name?: string;
+            url?: string;
+          };
+        }>;
+        creator?: Array<{
+          "@type"?: string;
+          "@id"?: string;
+          name?: string;
+          url?: string;
+          sameAs?: string;
+          affiliation?: {
+            "@type"?: string;
+            "@id"?: string;
+            name?: string;
+            url?: string;
+          };
+        }>;
       }>;
     };
     const articleNode = jsonLd["@graph"].find(
@@ -426,10 +450,28 @@ describe("Global Atlas of Advance Directives, Incapacity Mandates & Cross-Border
       "https://orcid.org/0009-0002-2467-4045",
       "https://clarvia.org/#organization",
     ]);
-    expect(datasetNode?.creator?.map((c) => c.url ?? c["@id"])).toEqual([
+    expect(datasetNode?.creator?.map((c) => c["@type"])).toEqual([
+      "Person",
+      "Organization",
+    ]);
+    expect(datasetNode?.creator?.map((c) => c.name)).toEqual([
+      "Tommi Lindfors",
+      "Clarvia ASBL",
+    ]);
+    expect(datasetNode?.creator?.map((c) => c.url)).toEqual([
       "https://orcid.org/0009-0002-2467-4045",
+      "https://clarvia.org",
+    ]);
+    expect(datasetNode?.creator?.map((c) => c["@id"])).toEqual([
+      "https://clarvia.org/#tommi-lindfors",
       "https://clarvia.org/#organization",
     ]);
+    expect(datasetNode?.creator?.[0]?.affiliation).toEqual({
+      "@type": "Organization",
+      "@id": "https://clarvia.org/#organization",
+      name: "Clarvia ASBL",
+      url: "https://clarvia.org",
+    });
     expect(datasetNode?.isBasedOn).toBe("https://doi.org/10.5281/zenodo.24245341");
     expect(datasetNode?.sameAs).toEqual([
       "https://zenodo.org/records/24388599",
