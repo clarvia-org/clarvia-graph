@@ -7,6 +7,13 @@ import {
 export const AUTHOR_TOMMI_ORCID = "0009-0002-2467-4045";
 export const AUTHOR_TOMMI_ORCID_URL =
   "https://orcid.org/0009-0002-2467-4045";
+const CLARVIA_CREATOR_ORG_JSONLD = {
+  "@type": "Organization",
+  "@id": "https://clarvia.org/#organization",
+  name: "Clarvia ASBL",
+  url: "https://clarvia.org",
+} as const;
+
 export const STUDY_AUTHORS_JSONLD = [
   {
     "@type": "Person",
@@ -14,9 +21,9 @@ export const STUDY_AUTHORS_JSONLD = [
     name: "Tommi Lindfors",
     url: AUTHOR_TOMMI_ORCID_URL,
     sameAs: AUTHOR_TOMMI_ORCID_URL,
-    affiliation: { "@id": "https://clarvia.org/#organization" },
+    affiliation: CLARVIA_CREATOR_ORG_JSONLD,
   },
-  { "@id": "https://clarvia.org/#organization" },
+  CLARVIA_CREATOR_ORG_JSONLD,
 ] as const;
 export const STUDY_1_PUBLISHED_DATE = "2026-11-18";
 export const STUDY_1_VERIFY_SNAPSHOT = "November 2026";
