@@ -7,8 +7,8 @@ name: Clarvia Graph
 applicationSuite: Clarvia
 url: "https://github.com/clarvia-org/clarvia-graph"
 landingURL: "https://clarvia.org"
-softwareVersion: "0.1.0-alpha.1"
-releaseDate: "2026-06-06"
+softwareVersion: "0.1.0-alpha.3"
+releaseDate: "2026-06-11"
 
 platforms:
   - web
@@ -49,6 +49,13 @@ description:
       platform includes a 9-layer graph CI validation pipeline, 4-layer factual
       and URL verification gates for the global guidance corpus, scenario
       testing, contradiction detection, and machine-readable JSON exports.
+
+
+      Clarvia also publishes three open-access 2026 comparative
+      interoperability research studies and open datasets
+      (https://clarvia.org/en/research, CC BY 4.0, archived with CERN Zenodo
+      DOIs).
+    documentation: "https://clarvia.org/en/how-it-works"
     features:
       - "Global guidance library: 1,000 localized pages (592 guides across 196 countries and 200 cross-border corridors) in 14 languages"
       - "Ask Clarvia source-cited email service for terminal illness and bereavement inquiries"
@@ -57,6 +64,7 @@ description:
       - "Automated interactive checklist generation with computed deadlines"
       - "14-language guidance support and 4-language core UI (English, French, German, Luxembourgish)"
       - "Built on EU standards (CPSV-AP, CCCEV, ELI, PROV-O, Once-Only Principle)"
+      - "Three open-access 2026 comparative interoperability studies and datasets (https://clarvia.org/en/research, CC BY 4.0, CERN Zenodo DOIs)"
   fr:
     localisedName: Clarvia Graph
     shortDescription: "Graphe de conséquences ouvert et 1 000 pages de guides mondiaux (196 pays, 14 langues) pour la maladie grave et le deuil."
@@ -73,6 +81,12 @@ description:
       couvrant 196 pays et 200 corridors transfrontaliers en 14 langues), une
       liste de contrôle interactive lancée d'abord au Luxembourg, et le moteur
       et adaptateur de normalisation législative (lex/).
+
+
+      Clarvia publie également trois études comparatives 2026 d'interopérabilité
+      et jeux de données en libre accès (https://clarvia.org/en/research,
+      licence CC BY 4.0, archivés avec DOI sur CERN Zenodo).
+    documentation: "https://clarvia.org/fr/how-it-works"
     features:
       - "Bibliothèque mondiale de 1 000 pages (592 guides dans 196 pays et 200 corridors transfrontaliers) en 14 langues"
       - "Service e-mail sourcé Ask Clarvia pour les démarches liées à la maladie grave et au deuil"
@@ -81,6 +95,7 @@ description:
       - "Génération automatique de listes de contrôle avec délais calculés"
       - "Support en 14 langues pour les guides et interface principale en 4 langues (EN, FR, DE, LU)"
       - "Basé sur les standards UE (CPSV-AP, CCCEV, ELI, PROV-O)"
+      - "Trois études comparatives 2026 d'interopérabilité et jeux de données en libre accès (https://clarvia.org/en/research, CC BY 4.0, DOI CERN Zenodo)"
   de:
     localisedName: Clarvia Graph
     shortDescription: "Offener Konsequenzgraph und weltweite 1.000-Seiten-Bibliothek (196 Länder, 14 Sprachen) bei schwerer Krankheit und Trauerfall."
@@ -98,6 +113,12 @@ description:
       Korridore in 14 Sprachen), einer interaktiven Checkliste (zuerst in
       Luxemburg gestartet) sowie der Gesetzes-Normalisierungs-Engine und des
       Adapters (lex/).
+
+
+      Clarvia veröffentlicht zudem drei vergleichende Interoperabilitätsstudien
+      2026 samt offenen Datensätzen im Open Access
+      (https://clarvia.org/en/research, CC BY 4.0, mit CERN-Zenodo-DOIs).
+    documentation: "https://clarvia.org/de/how-it-works"
     features:
       - "Weltweite Leitfaden-Bibliothek mit 1.000 Seiten (592 Leitfäden für 196 Länder und 200 Korridore) in 14 Sprachen"
       - "Quellengestützter E-Mail-Dienst Ask Clarvia bei schwerer Krankheit und Trauerfall"
@@ -106,6 +127,7 @@ description:
       - "Automatische Checklistenerstellung mit berechneten Fristen"
       - "14 Sprachen für Leitfäden und 4-sprachige Hauptoberfläche (EN, FR, DE, LU)"
       - "Basierend auf EU-Standards (CPSV-AP, CCCEV, ELI, PROV-O)"
+      - "Drei vergleichende Interoperabilitätsstudien 2026 und offene Datensätze im Open Access (https://clarvia.org/en/research, CC BY 4.0, CERN-Zenodo-DOIs)"
 
 legal:
   license: EUPL-1.2
@@ -124,9 +146,6 @@ intendedAudience:
     - government
     - local-authorities
     - welfare
-  countries:
-    - lu
-    - eu
 
 localisation:
   localisationReady: true
