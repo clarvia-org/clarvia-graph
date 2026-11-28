@@ -3,6 +3,7 @@ import path from "node:path";
 import { NextRequest } from "next/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { CLARVIA_LINKEDIN_URL } from "@/components/LinkedInLink";
+import { CLARVIA_BANK_ACCOUNT } from "@/features/donations/BankTransferDetails";
 import {
   classifyMembershipSessionResponse,
   COHORT_ARCHETYPE_SLOTS,
@@ -594,5 +595,42 @@ describe("/api/donate associate_membership branch", () => {
       "utf8",
     );
     expect(formSource).toContain("await trackBeginCheckout(");
+  });
+
+  it("uses POST Luxembourg bank details and comfort note without legacy Paysera references", () => {
+    expect(CLARVIA_BANK_ACCOUNT).toEqual({
+      iban: "LU21 1114 0008 4156 0000",
+      bic: "CCPLLULLXXX",
+      holder: "Clarvia ASBL",
+      rcs: "F15680",
+      bankName: "POST Luxembourg",
+      bankUrl: "https://www.post.lu/",
+    });
+
+    const bankFiles = [
+      path.join("donations", "BankTransferDetails.tsx"),
+      path.join("donations", "DonationLandingPage.tsx"),
+      path.join("membership", "AssociateMembershipPage.tsx"),
+    ];
+    for (const relPath of bankFiles) {
+      const content = fs.readFileSync(
+        path.join(__dirname, "..", "src", "features", relPath),
+        "utf8",
+      );
+      expect(content, `${relPath} must not contain Paysera`).not.toMatch(/Paysera/i);
+      expect(content, `${relPath} must not contain old BIC`).not.toContain("EVIULT2VXXX");
+      expect(content, `${relPath} must not contain old IBAN`).not.toContain("LT09 3500 0100 1903 8740");
+    }
+
+    const bankDetailsSource = fs.readFileSync(
+      path.join(__dirname, "..", "src", "features", "donations", "BankTransferDetails.tsx"),
+      "utf8",
+    );
+    expect(bankDetailsSource).toContain("We bank with ");
+    expect(bankDetailsSource).toContain(
+      ", a state-owned postal financial institution founded in 1842 that supports nonprofits and provides no-barrier banking access regardless of income.",
+    );
+    expect(bankDetailsSource).not.toContain("\u2014");
+    expect(bankDetailsSource).not.toContain("\u2013");
   });
 });
