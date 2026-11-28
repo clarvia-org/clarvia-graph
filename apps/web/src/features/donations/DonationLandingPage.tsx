@@ -8,6 +8,7 @@ import { type Lang, l } from "@/lib/i18n";
 import { headlineStyle, TESTIMONIALS } from "@/app/[lang]/data";
 import FooterSection from "@/app/[lang]/sections/FooterSection";
 import Header from "@/components/Header";
+import BankTransferDetails, { PostLuxembourgNote } from "./BankTransferDetails";
 import DonationForm from "./DonationForm";
 import DonationSuccessTracker from "./DonationSuccessTracker";
 import TrustStrip from "./TrustStrip";
@@ -28,7 +29,6 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
   const params = useParams();
   const lang = (params.lang as Lang) || "en";
   const [progress, setProgress] = useState(0);
-  const [copiedField, setCopiedField] = useState<string | null>(null);
   const [showBankDetails, setShowBankDetails] = useState(false);
 
   // Goal progress animation on load (only if progress bar is enabled)
@@ -39,24 +39,6 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
     }, 100);
     return () => clearTimeout(timer);
   }, [config.showProgressBar]);
-
-  const handleCopy = async (text: string, field: string) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopiedField(field);
-      setTimeout(() => setCopiedField(null), 2000);
-    } catch {
-      alert(
-        l(
-          lang,
-          "Could not copy to clipboard. Please copy manually.",
-          "Impossible de copier dans le presse-papiers. Veuillez copier manuellement.",
-          "Konnte nicht in die Zwischenablage kopieren. Bitte manuell kopieren.",
-          "Konnt net an de Clipboard kopéiert ginn. Kopéiert et wgl. manuell."
-        )
-      );
-    }
-  };
 
   const localizedHeadline = l(
     lang,
@@ -275,6 +257,9 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
                 )}
               </p>
               <p>
+                <PostLuxembourgNote lang={lang} />
+              </p>
+              <p>
                 {l(
                   lang,
                   "Our 2026 accounts have not yet been filed. For live transparency, see Open Collective.",
@@ -359,84 +344,19 @@ export default function DonationLandingPage({ config }: DonationLandingPageProps
 
                 {showBankDetails && (
                   <div className="mt-4 text-left border-t border-calm-blue-100/50 pt-4 animate-fadeIn">
-                    <div className="space-y-2.5 text-xs font-mono bg-white/50 border border-calm-blue-100 rounded-xl p-3.5">
-                      {/* IBAN Row */}
-                      <div className="flex justify-between items-center gap-2">
-                        <div className="overflow-x-auto scrollbar-none">
-                          <span className="font-semibold font-sans text-calm-blue-500 mr-1">IBAN:</span>
-                          <span className="tracking-wider select-all">LT09 3500 0100 1903 8740</span>
-                        </div>
-                        <button
-                          onClick={() => handleCopy("LT09 3500 0100 1903 8740", "iban")}
-                          className="flex-shrink-0 text-[10px] px-2 py-1 rounded bg-calm-blue-100 hover:bg-calm-blue-200 text-calm-blue-700 transition-colors font-sans font-medium"
-                        >
-                          {copiedField === "iban"
-                            ? l(lang, "Copied!", "Copié !", "Kopiert!", "Kopéiert!")
-                            : l(lang, "Copy", "Copier", "Kopieren", "Kopéieren")}
-                        </button>
-                      </div>
-
-                      {/* BIC Row */}
-                      <div className="flex justify-between items-center gap-2">
-                        <div>
-                          <span className="font-semibold font-sans text-calm-blue-500 mr-1">BIC/SWIFT:</span>
-                          <span className="select-all">EVIULT2VXXX</span>
-                        </div>
-                        <button
-                          onClick={() => handleCopy("EVIULT2VXXX", "bic")}
-                          className="flex-shrink-0 text-[10px] px-2 py-1 rounded bg-calm-blue-100 hover:bg-calm-blue-200 text-calm-blue-700 transition-colors font-sans font-medium"
-                        >
-                          {copiedField === "bic"
-                            ? l(lang, "Copied!", "Copié !", "Kopiert!", "Kopéiert!")
-                            : l(lang, "Copy", "Copier", "Kopieren", "Kopéieren")}
-                        </button>
-                      </div>
-
-                      {/* Suggested Reference Row */}
-                      <div className="flex justify-between items-center gap-2">
-                        <div className="overflow-x-auto scrollbar-none">
-                          <span className="font-semibold font-sans text-calm-blue-500 mr-1">Ref:</span>
-                          <span className="select-all">CLARVIA-SUPPORT</span>
-                        </div>
-                        <button
-                          onClick={() => handleCopy("CLARVIA-SUPPORT", "ref")}
-                          className="flex-shrink-0 text-[10px] px-2 py-1 rounded bg-calm-blue-100 hover:bg-calm-blue-200 text-calm-blue-700 transition-colors font-sans font-medium"
-                        >
-                          {copiedField === "ref"
-                            ? l(lang, "Copied!", "Copié !", "Kopiert!", "Kopéiert!")
-                            : l(lang, "Copy", "Copier", "Kopieren", "Kopéieren")}
-                        </button>
-                      </div>
-
-                      {/* Text values */}
-                      <div className="text-[11px] font-sans text-calm-blue-600 space-y-1 pt-1.5 border-t border-calm-blue-100/50">
-                        <p>
-                          <span className="font-medium text-calm-blue-500">
-                            {l(lang, "Holder:", "Titulaire :", "Inhaber:", "Kontohalter:")}
-                          </span>{" "}
-                          Clarvia ASBL
-                        </p>
-                        <p>
-                          <span className="font-medium text-calm-blue-500">RCS:</span> F15680
-                        </p>
-                        <p>
-                          <span className="font-medium text-calm-blue-500">
-                            {l(lang, "Bank:", "Banque :", "Bank:", "Bank:")}
-                          </span>{" "}
-                          Paysera LT, UAB
-                        </p>
-                      </div>
-                    </div>
-
-                    <p className="text-[11px] text-calm-blue-400 mt-2.5 leading-snug">
-                      {l(
+                    <BankTransferDetails
+                      lang={lang}
+                      reference="CLARVIA-SUPPORT"
+                      showRcs
+                      alertOnCopyError
+                      referenceNote={l(
                         lang,
                         "Use CLARVIA-SUPPORT and your email as the payment reference so we can send an acknowledgement.",
                         "Utilisez CLARVIA-SUPPORT et votre e-mail comme référence pour nous permettre de vous envoyer un accusé de réception.",
                         "Verwenden Sie CLARVIA-SUPPORT und Ihre E-Mail als Referenz, damit wir Ihnen eine Bestätigung senden können.",
                         "Benotzt CLARVIA-SUPPORT an Är E-Mail als Bezuelreferenz, fir datt mir Iech eng Bestätegung schécke kënnen."
                       )}
-                    </p>
+                    />
                   </div>
                 )}
               </div>

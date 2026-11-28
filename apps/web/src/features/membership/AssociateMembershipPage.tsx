@@ -6,6 +6,7 @@ import { headlineStyle } from "@/app/[lang]/data";
 import FooterSection from "@/app/[lang]/sections/FooterSection";
 import Header from "@/components/Header";
 import TrustStrip from "@/features/donations/TrustStrip";
+import BankTransferDetails from "@/features/donations/BankTransferDetails";
 import {
   ASSOCIATE_ANNUAL_EUR,
   ASSOCIATE_MONTHLY_EUR,
@@ -116,22 +117,11 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
   const [previewName, setPreviewName] = useState("");
   const [previewPublish, setPreviewPublish] = useState(false);
   const [previewKind, setPreviewKind] = useState<MemberKind>("individual");
-  const [copiedField, setCopiedField] = useState<string | null>(null);
 
   const proofStats = getMembershipProofStats(lang);
   const benefits = getMembershipBenefits(lang);
   const audienceSection = getMembershipAudienceSection(lang);
   const faqs = getMembershipFaqs(lang);
-
-  async function handleCopy(text: string, field: string) {
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopiedField(field);
-      setTimeout(() => setCopiedField(null), 2000);
-    } catch {
-      // Ignore clipboard failures
-    }
-  }
 
   return (
     <>
@@ -319,89 +309,19 @@ export default function AssociateMembershipPage({ lang }: { lang: Lang }) {
                 </span>
               </summary>
 
-              <div className="mt-3 pt-3 border-t border-calm-blue-100/60 text-left space-y-2.5">
-                <div className="space-y-2 text-xs font-mono bg-white/60 border border-calm-blue-100 rounded-xl p-3.5">
-                  <div className="flex justify-between items-center gap-2">
-                    <div className="overflow-x-auto">
-                      <span className="font-semibold font-sans text-calm-blue-500 mr-1">
-                        IBAN:
-                      </span>
-                      <span className="tracking-wider select-all">
-                        LT09 3500 0100 1903 8740
-                      </span>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => handleCopy("LT09 3500 0100 1903 8740", "iban")}
-                      className="shrink-0 text-[10px] px-2 py-1 rounded bg-calm-blue-100 hover:bg-calm-blue-200 text-calm-blue-700 font-sans font-medium"
-                    >
-                      {copiedField === "iban"
-                        ? l(lang, "Copied!", "Copié !", "Kopiert!", "Kopéiert!")
-                        : l(lang, "Copy", "Copier", "Kopieren", "Kopéieren")}
-                    </button>
-                  </div>
-
-                  <div className="flex justify-between items-center gap-2">
-                    <div>
-                      <span className="font-semibold font-sans text-calm-blue-500 mr-1">
-                        BIC/SWIFT:
-                      </span>
-                      <span className="select-all">EVIULT2VXXX</span>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => handleCopy("EVIULT2VXXX", "bic")}
-                      className="shrink-0 text-[10px] px-2 py-1 rounded bg-calm-blue-100 hover:bg-calm-blue-200 text-calm-blue-700 font-sans font-medium"
-                    >
-                      {copiedField === "bic"
-                        ? l(lang, "Copied!", "Copié !", "Kopiert!", "Kopéiert!")
-                        : l(lang, "Copy", "Copier", "Kopieren", "Kopéieren")}
-                    </button>
-                  </div>
-
-                  <div className="flex justify-between items-center gap-2">
-                    <div>
-                      <span className="font-semibold font-sans text-calm-blue-500 mr-1">
-                        Ref:
-                      </span>
-                      <span className="select-all">CLARVIA-MEMBER</span>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => handleCopy("CLARVIA-MEMBER", "ref")}
-                      className="shrink-0 text-[10px] px-2 py-1 rounded bg-calm-blue-100 hover:bg-calm-blue-200 text-calm-blue-700 font-sans font-medium"
-                    >
-                      {copiedField === "ref"
-                        ? l(lang, "Copied!", "Copié !", "Kopiert!", "Kopéiert!")
-                        : l(lang, "Copy", "Copier", "Kopieren", "Kopéieren")}
-                    </button>
-                  </div>
-
-                  <div className="text-[11px] font-sans text-calm-blue-600 space-y-0.5 pt-1.5 border-t border-calm-blue-100/60">
-                    <p>
-                      <span className="font-medium text-calm-blue-500">
-                        {l(lang, "Holder:", "Titulaire :", "Inhaber:", "Kontohalter:")}
-                      </span>{" "}
-                      Clarvia ASBL
-                    </p>
-                    <p>
-                      <span className="font-medium text-calm-blue-500">
-                        {l(lang, "Bank:", "Banque :", "Bank:", "Bank:")}
-                      </span>{" "}
-                      Paysera LT, UAB
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-[11px] text-calm-blue-600 leading-snug">
-                  {l(
+              <div className="mt-3 pt-3 border-t border-calm-blue-100/60 text-left">
+                <BankTransferDetails
+                  lang={lang}
+                  reference="CLARVIA-MEMBER"
+                  showComfortNote
+                  referenceNote={l(
                     lang,
                     "Use CLARVIA-MEMBER as the reference and send us your LinkedIn URL via the Contact form if you want to be listed publicly.",
                     "Indiquez CLARVIA-MEMBER en référence et envoyez-nous votre URL LinkedIn via le formulaire de contact si vous souhaitez être publié(e).",
                     "Geben Sie CLARVIA-MEMBER als Referenz an und senden Sie uns über das Kontaktformular Ihre LinkedIn-URL, falls Sie öffentlich genannt werden möchten.",
                     "Gitt CLARVIA-MEMBER als Referenz un a schéckt eis iwwer de Kontaktformulaire Är LinkedIn-URL, wann Dir ëffentlech genannt wëllt ginn.",
                   )}
-                </p>
+                />
               </div>
             </details>
 
